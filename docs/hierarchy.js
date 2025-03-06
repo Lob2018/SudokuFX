@@ -5,6 +5,7 @@ var hierarchy =
     ] ],
     [ "fr.softsf.sudokufx.configuration.database.ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html", null ],
     [ "fr.softsf.sudokufx.model.Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html", null ],
+    [ "fr.softsf.sudokufx.benchmark.BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", null ],
     [ "Button", null, [
       [ "fr.softsf.sudokufx.view.components.menu.MenuButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html", null ],
       [ "fr.softsf.sudokufx.view.components.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", null ]

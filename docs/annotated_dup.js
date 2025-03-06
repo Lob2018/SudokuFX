@@ -6,6 +6,9 @@ var annotated_dup =
           [ "annotations", "namespacefr_1_1softsf_1_1sudokufx_1_1annotations.html", [
             [ "ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1annotations_1_1_excluded_from_coverage_report_generated.html", null ]
           ] ],
+          [ "benchmark", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html", [
+            [ "BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master" ]
+          ] ],
           [ "common", null, [
             [ "e2e", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1e2e.html", [
               [ "MyEnumsE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1e2e_1_1_my_enums_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1e2e_1_1_my_enums_e2_e_test" ]

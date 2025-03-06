@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.benchmark.BenchGridMaster.measureSudo" name="fr.softsf.sudokufx.benchmark.BenchGridMaster.measureSudo">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,212,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#a2afe77e82860a2ce4a3656a1911b851f" title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro." alt="" coords="260,5,484,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,24,244,24,244,29,212,29"/>
+</map>

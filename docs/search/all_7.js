@@ -149,5 +149,6 @@ var searchData=
   ['gridmasterutest_2ejava_146',['GridMasterUTest.java',['../_grid_master_u_test_8java.html',1,'']]],
   ['gridrepository_147',['GridRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudokufx::repository']]],
   ['gridrepository_2ejava_148',['GridRepository.java',['../_grid_repository_8java.html',1,'']]],
-  ['gridvalue_149',['gridvalue',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5c79e3e19586a5167a9b19231ebd1135',1,'fr::softsf::sudokufx::model::Grid']]]
+  ['gridvalue_149',['gridvalue',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5c79e3e19586a5167a9b19231ebd1135',1,'fr::softsf::sudokufx::model::Grid']]],
+  ['grilleresolue_150',['grilleResolue',['../classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#acb8e5aed4ec598828926e9fdefe50014',1,'fr::softsf::sudokufx::benchmark::BenchGridMaster']]]
 ];

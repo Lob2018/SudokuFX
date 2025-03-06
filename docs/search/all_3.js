@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['cacherlescases_0',['cacherLesCases',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78',1,'fr::softsf::sudokufx::utils::sudoku::GridMaster']]],
+  ['cacherlescases_0',['cacherLesCases',['../classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#a2afe77e82860a2ce4a3656a1911b851f',1,'fr.softsf.sudokufx.benchmark.BenchGridMaster.cacherLesCases()'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78',1,'fr.softsf.sudokufx.utils.sudoku.GridMaster.cacherLesCases()']]],
   ['case_20diagrams_1',['Case Diagrams',['../index.html#Use',1,'']]],
   ['checkgithubversion_2',['checkGitHubVersion',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a1be375991ea0677ec5c0e6b8dda0a394',1,'fr::softsf::sudokufx::viewmodel::FullMenuViewModel']]],
   ['checklatestversion_3',['checkLatestVersion',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a173ad44005d94ce47a1df66650170cbf',1,'fr::softsf::sudokufx::service::VersionService']]],

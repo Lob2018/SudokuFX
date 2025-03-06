@@ -18,8 +18,9 @@ var searchData=
   ['mapplayertodto_15',['mapPlayerToDto',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a60113442b00a1c45d1b3758df12e2594',1,'fr::softsf::sudokufx::interfaces::mapper::IPlayerMapper']]],
   ['mapsoftwaredtotosoftware_16',['mapSoftwareDtoToSoftware',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#a85adc191251bde9870609d4b2cb23ee6',1,'fr::softsf::sudokufx::interfaces::mapper::ISoftwareMapper']]],
   ['mapsoftwaretodto_17',['mapSoftwareToDto',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6',1,'fr::softsf::sudokufx::interfaces::mapper::ISoftwareMapper']]],
-  ['menubutton_18',['MenuButton',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html#ac51f6ab6695d01286ca1c29da99a1090',1,'fr::softsf::sudokufx::view::components::menu::MenuButton']]],
-  ['menudto_19',['MenuDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89',1,'fr::softsf::sudokufx::dto']]],
-  ['mylogbackconfig_20',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a6f72c3e944dc4bad5ad7ebf8e60ac763',1,'fr::softsf::sudokufx::configuration::MyLogbackConfig']]],
-  ['mylogbackconfigutest_21',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html#acd909231da413267169ade8f916df0b3',1,'fr::softsf::sudokufx::configuration::MyLogbackConfigUTest']]]
+  ['measuresudo_18',['measureSudo',['../classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#a83424bf6ea858a7cc811cd70876f0a82',1,'fr::softsf::sudokufx::benchmark::BenchGridMaster']]],
+  ['menubutton_19',['MenuButton',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html#ac51f6ab6695d01286ca1c29da99a1090',1,'fr::softsf::sudokufx::view::components::menu::MenuButton']]],
+  ['menudto_20',['MenuDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89',1,'fr::softsf::sudokufx::dto']]],
+  ['mylogbackconfig_21',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a6f72c3e944dc4bad5ad7ebf8e60ac763',1,'fr::softsf::sudokufx::configuration::MyLogbackConfig']]],
+  ['mylogbackconfigutest_22',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html#acd909231da413267169ade8f916df0b3',1,'fr::softsf::sudokufx::configuration::MyLogbackConfigUTest']]]
 ];

@@ -24,6 +24,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master =
     [ "setEasyImpossiblePossibilitiesForTests", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a1a07a249ce0da60d075be1d2cf55b434", null ],
     [ "sommeDesPossibilitesDeLaGrille", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a700c8e5d20670ded6ac4b56312846839", null ],
     [ "verifierLaCoherenceEntreLaGrilleEtLesPossibilites", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5ead122504d9cd11a071e47ccd4610b3", null ],
+    [ "DEFAULT_INDICES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#aeafcef1eee40c50df59fba328874bcc4", null ],
     [ "derniereDemande", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5ef5e754cac11ccac208d4e20dd32c97", null ],
     [ "DIFFICILE_MAX_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ac498e74f962fd88ec4c8781e50d074d3", null ],
     [ "DIFFICILE_MOY_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#aca34f326170249676420a2c2645d5c44", null ],

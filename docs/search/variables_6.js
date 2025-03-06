@@ -13,5 +13,6 @@ var searchData=
   ['gridmaster_10',['gridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#ad7a6f1bb0465818a92b4284cde2748e3',1,'fr::softsf::sudokufx::utils::sudoku::GridMasterUTest']]],
   ['gridmasternormally_11',['gridMasterNormally',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#ae47a2901dbeefda5c5b20ce3c8efe884',1,'fr::softsf::sudokufx::utils::sudoku::GridMasterUTest']]],
   ['gridmasternormallylastlevel_12',['gridMasterNormallyLastLevel',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html#a4cb9a632f548574807cf5875ef6603fa',1,'fr::softsf::sudokufx::utils::sudoku::GridMasterUTest']]],
-  ['gridvalue_13',['gridvalue',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5c79e3e19586a5167a9b19231ebd1135',1,'fr::softsf::sudokufx::model::Grid']]]
+  ['gridvalue_13',['gridvalue',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5c79e3e19586a5167a9b19231ebd1135',1,'fr::softsf::sudokufx::model::Grid']]],
+  ['grilleresolue_14',['grilleResolue',['../classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#acb8e5aed4ec598828926e9fdefe50014',1,'fr::softsf::sudokufx::benchmark::BenchGridMaster']]]
 ];

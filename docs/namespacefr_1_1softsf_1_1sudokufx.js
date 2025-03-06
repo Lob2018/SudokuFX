@@ -1,6 +1,7 @@
 var namespacefr_1_1softsf_1_1sudokufx =
 [
     [ "annotations", "namespacefr_1_1softsf_1_1sudokufx_1_1annotations.html", "namespacefr_1_1softsf_1_1sudokufx_1_1annotations" ],
+    [ "benchmark", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark" ],
     [ "common", null, [
       [ "e2e", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1e2e.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1e2e" ],
       [ "integration", null, [
