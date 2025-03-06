@@ -116,6 +116,13 @@ SudokuFX is a Sudoku game that lets you create multiple player profiles, save yo
   - Run Maven configurations (in the top right corner)
     - SudoMain.java is the main class
     - Maven run configurations are saved as project files in .idea/runConfigurations
+      - Java Microbenchmark Harness (JMH) exclusively for benchmarking purposes :
+          1. Comment out `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`  
+             and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`
+          2. Run `mvn clean` and execute the `[Jmh init.]` configuration
+          3. Launch the benchmarks
+          4. **Uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`  
+             and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml` once benchmarking is complete**
 
 ## Installation
 
