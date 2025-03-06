@@ -70,6 +70,7 @@ SudokuFX is a Sudoku game that lets you create multiple player profiles, save yo
         - javafx-maven-plugin
         - spring-boot-maven-plugin (create the uber JAR)
         - exec-maven-plugin (for scripts generating the packages)
+        - jmh (for performance evaluation)
     - Test dependencies :
         - spring boot starter test (JUnit, Mockito, Hamcrest)
         - surefire
