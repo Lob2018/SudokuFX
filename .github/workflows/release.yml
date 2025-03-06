@@ -227,9 +227,9 @@ jobs:
             
             **Windows, macOS, and Linux ZIP/TAR Files:** These compressed files do not include the Java Runtime Environment (JRE). You must have the latest JRE installed on your machine. To launch the application, use the following scripts:
             
-            - **Windows**: `SudokuFX-${{ env.POM_VERSION }}_windows.zip` (Launch with .bat file)
-            - **Linux**: `SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz` (Launch with .sh file)
-            - **macOS**: `SudokuFX-${{ env.POM_VERSION }}_macos.zip` or `SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip` (Launch with .sh file)<br>
+            - **Windows**: `SudokuFX-${{ env.POM_VERSION }}_windows.zip` (launch with .bat file)
+            - **Linux**: `SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz` (launch with .sh file)
+            - **macOS**: `SudokuFX-${{ env.POM_VERSION }}_macos.zip` or `SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip` (launch with .sh file)<br>
             
             &nbsp;&nbsp;&nbsp;&nbsp;[![Windows ZIP](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}__windows.zip-Launch_with_.bat_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_windows.zip)
             &nbsp;&nbsp;&nbsp;&nbsp;[![Linux TAR](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}__linux.tar.gz-Launch_with_.sh_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz)
