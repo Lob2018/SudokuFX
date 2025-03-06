@@ -28,6 +28,8 @@ final class GridMaster implements IGridMaster {
     private static final int MOYEN_MOY_CACHEES = (MOYEN_MIN_CACHEES + MOYEN_MAX_CACHEES) / 2;
     private static final int DIFFICILE_MAX_CACHEES = 59;
     private static final int DIFFICILE_MOY_CACHEES = (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
+    private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
+
 
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     @Getter
@@ -280,13 +282,13 @@ final class GridMaster implements IGridMaster {
      * @param grilleAResoudre      Le tableau représentant la grille, où les cases sélectionnées seront mises à 0.
      */
     private void cacherLesCases(int nombreDeCasesACacher, final int[] grilleAResoudre) {
-        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, grilleAResoudre.length);
-        int[] indices = IntStream.range(0, grilleAResoudre.length).toArray();
+        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, NOMBRE_CASES);
+        int[] indices = Arrays.copyOf(DEFAULT_INDICES, NOMBRE_CASES);
         for (int i = 0; i < nombreDeCasesACacher; i++) {
-            int randomIndex = SecureRandomGenerator.INSTANCE.nextInt(grilleAResoudre.length - i);
+            int randomIndex = SecureRandomGenerator.INSTANCE.nextInt(NOMBRE_CASES - i);
             int indexToHide = indices[randomIndex];
             grilleAResoudre[indexToHide] = 0;
-            indices[randomIndex] = indices[grilleAResoudre.length - 1 - i];
+            indices[randomIndex] = indices[NOMBRE_CASES - 1 - i];
         }
     }
 
