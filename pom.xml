@@ -283,54 +283,8 @@
         <!-- Exec plugin to generate JMH benchmarks for id:jmh (see the README for instructions) -->
         <profile>
             <id>jmh</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <dependencies>
-                <!-- JMH dependencies -->
-                <dependency>
-                    <groupId>org.openjdk.jmh</groupId>
-                    <artifactId>jmh-core</artifactId>
-                    <version>1.37</version>
-                </dependency>
-                <dependency>
-                    <groupId>org.openjdk.jmh</groupId>
-                    <artifactId>jmh-generator-annprocess</artifactId>
-                    <version>1.37</version>
-                </dependency>
-            </dependencies>
             <build>
                 <plugins>
-                    <!-- Disable tests -->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-surefire-plugin</artifactId>
-                        <configuration>
-                            <skipTests>true</skipTests>
-                            <argLine>-Djava.io.tmpdir=$TempDir$</argLine> <!-- Set TMPDIR for JMH -->
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-failsafe-plugin</artifactId>
-                        <configuration>
-                            <skipTests>true</skipTests>
-                        </configuration>
-                    </plugin>
-                    <!-- Disable packaging -->
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-jar-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>disable-default-jar</id>
-                                <phase>none</phase> <!-- Prevents the creation of the JAR -->
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
                     <!-- Compilation with JMH processors -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
