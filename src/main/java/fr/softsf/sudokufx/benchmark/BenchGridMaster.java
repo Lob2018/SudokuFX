@@ -15,11 +15,11 @@ import java.util.stream.IntStream;
 @Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS)
 // 5 itérations de mesure de 10 secondes chacune pour obtenir des résultats fiables
 @Threads(1) // Exécute le benchmark avec 1 thread pour simplifier l'analyse des résultats
-@Fork(1) // Utilise 1 fork pour améliorer la fiabilité des résultats en isolant l'exécution
+@Fork(2) // Utilise 2 forks pour améliorer la fiabilité des résultats en isolant l'exécution
 public class BenchGridMaster {
 
     private static final int[] DEFAULT_INDICES = IntStream.range(0, 81).toArray();
-
+    private static final int NOMBRE_CASES = 81;
     private static final int[] grilleResolue =
             {
                     3, 5, 9, 4, 6, 7, 2, 8, 1,
@@ -33,25 +33,6 @@ public class BenchGridMaster {
                     5, 1, 2, 6, 7, 4, 3, 9, 8
             };
 
-//    /**
-//     * Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.
-//     *
-//     * @param nombreDeCasesACacher Le nombre de cases à cacher dans la grille (au maximum 81 cases).
-//     * @param grilleAResoudre      Le tableau représentant la grille, où les cases sélectionnées seront mises à 0.
-//     * @return
-//     */
-//    private Object cacherLesCases(int nombreDeCasesACacher, final int[] grilleAResoudre) {
-//        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, grilleAResoudre.length);
-//        int[] indices = Arrays.copyOf(DEFAULT_INDICES, 81);
-//        for (int i = 0; i < nombreDeCasesACacher; i++) {
-//            int randomIndex = SecureRandomGenerator.INSTANCE.nextInt(grilleAResoudre.length - i);
-//            int indexToHide = indices[randomIndex];
-//            grilleAResoudre[indexToHide] = 0;
-//            indices[randomIndex] = indices[grilleAResoudre.length - 1 - i];
-//        }
-//        return null;
-//    }
-
     /**
      * Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.
      *
@@ -59,19 +40,20 @@ public class BenchGridMaster {
      * @param grilleAResoudre      Le tableau représentant la grille, où les cases sélectionnées seront mises à 0.
      */
     private Object cacherLesCases(int nombreDeCasesACacher, final int[] grilleAResoudre) {
-        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, grilleAResoudre.length);
-        int[] indices = IntStream.range(0, grilleAResoudre.length).toArray();
+        nombreDeCasesACacher = Math.min(nombreDeCasesACacher, NOMBRE_CASES);
+        int[] indices = Arrays.copyOf(DEFAULT_INDICES, NOMBRE_CASES);
         for (int i = 0; i < nombreDeCasesACacher; i++) {
-            int randomIndex = SecureRandomGenerator.INSTANCE.nextInt(grilleAResoudre.length - i);
+            int randomIndex = SecureRandomGenerator.INSTANCE.nextInt(NOMBRE_CASES - i);
             int indexToHide = indices[randomIndex];
             grilleAResoudre[indexToHide] = 0;
-            indices[randomIndex] = indices[grilleAResoudre.length - 1 - i];
+            indices[randomIndex] = indices[NOMBRE_CASES - 1 - i];
         }
         return null;
     }
 
+
     @Benchmark
     public void measureSudo(Blackhole bh) {
-        bh.consume(cacherLesCases(50, Arrays.copyOf(grilleResolue, 81)));
+        bh.consume(cacherLesCases(50, Arrays.copyOf(grilleResolue, NOMBRE_CASES)));
     }
 }
