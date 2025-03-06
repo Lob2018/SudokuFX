@@ -5,10 +5,11 @@ var searchData=
   ['encrypt_2',['encrypt',['../interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a4a3e97d2d6e6918b31f710ceed904fd7',1,'fr.softsf.sudokufx.configuration.database.SecretKeyEncryptionServiceAESGCM.encrypt(String original)'],['../interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a8ba2eb0710f2c3807460c60588ccf0f4',1,'fr.softsf.sudokufx.configuration.database.SecretKeyEncryptionServiceAESGCM.encrypt(@NotBlank final String original)']]],
   ['english_5fbundle_3',['ENGLISH_BUNDLE',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#af7c6ea0886229e82923896468bf4ee77',1,'fr::softsf::sudokufx::enums::I18n']]],
   ['error_4',['ERROR',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#ac6c57ce2a1dea6e794847593e40776e0',1,'fr::softsf::sudokufx::enums::ToastLevels']]],
-  ['exceptiontools_5',['ExceptionTools',['../enumfr_1_1softsf_1_1sudokufx_1_1exceptions_1_1_exception_tools.html',1,'fr::softsf::sudokufx::exceptions']]],
-  ['exceptiontools_2ejava_6',['ExceptionTools.java',['../_exception_tools_8java.html',1,'']]],
-  ['exceptiontoolsutest_7',['ExceptionToolsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html',1,'fr::softsf::sudokufx::common::unit::utils']]],
-  ['exceptiontoolsutest_2ejava_8',['ExceptionToolsUTest.java',['../_exception_tools_u_test_8java.html',1,'']]],
-  ['excludedfromcoveragereportgenerated_9',['ExcludedFromCoverageReportGenerated',['../interfacefr_1_1softsf_1_1sudokufx_1_1annotations_1_1_excluded_from_coverage_report_generated.html',1,'fr::softsf::sudokufx::annotations']]],
-  ['excludedfromcoveragereportgenerated_2ejava_10',['ExcludedFromCoverageReportGenerated.java',['../_excluded_from_coverage_report_generated_8java.html',1,'']]]
+  ['evaluation_5',['Temporary performance evaluation',['../index.html#Temporary_performance_evaluation',1,'']]],
+  ['exceptiontools_6',['ExceptionTools',['../enumfr_1_1softsf_1_1sudokufx_1_1exceptions_1_1_exception_tools.html',1,'fr::softsf::sudokufx::exceptions']]],
+  ['exceptiontools_2ejava_7',['ExceptionTools.java',['../_exception_tools_8java.html',1,'']]],
+  ['exceptiontoolsutest_8',['ExceptionToolsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html',1,'fr::softsf::sudokufx::common::unit::utils']]],
+  ['exceptiontoolsutest_2ejava_9',['ExceptionToolsUTest.java',['../_exception_tools_u_test_8java.html',1,'']]],
+  ['excludedfromcoveragereportgenerated_10',['ExcludedFromCoverageReportGenerated',['../interfacefr_1_1softsf_1_1sudokufx_1_1annotations_1_1_excluded_from_coverage_report_generated.html',1,'fr::softsf::sudokufx::annotations']]],
+  ['excludedfromcoveragereportgenerated_2ejava_11',['ExcludedFromCoverageReportGenerated.java',['../_excluded_from_coverage_report_generated_8java.html',1,'']]]
 ];

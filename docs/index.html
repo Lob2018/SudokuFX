@@ -102,11 +102,10 @@ $(function(){initNavTree('index.html',''); initResizable(true); });
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="Introduction"></a>
 Introduction</h1>
-<p>SudokuFX is a Sudoku game that allows you to create multiple player profiles and save and restore their games.<br  />
- The application allows you to solve the current Sudoku grid, as well as other entries manually.</p>
+<p>SudokuFX is a Sudoku game that lets you create multiple player profiles, save your progress, and solve puzzles, including custom grids.</p>
 <p><a href="https://github.com/Lob2018/SudokuFX/releases/latest" target="_blank"><img src="https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg" alt="SudokuFX in action" class="inline"/></a></p>
-<h1><a class="anchor" id="Useful"></a>
-Links</h1>
+<h1><a class="anchor" id="Useful_links"></a>
+Useful links</h1>
 <ul>
 <li><a href="https://github.com/Lob2018/SudokuFX" target="_blank">GitHub</a></li>
 <li><a href="https://github.com/users/Lob2018/projects/4" target="_blank">Project Roadmap</a></li>
@@ -137,14 +136,27 @@ MPD</h2>
 <div class="image">
 <img src="https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/merise/MPD.png" alt=""/>
 </div>
- </div></div><!-- PageDoc -->
+<h1><a class="anchor" id="Temporary_performance_evaluation"></a>
+Temporary performance evaluation</h1>
+<p>With Java Microbenchmark Harness (JMH) :</p><ul>
+<li>Comment out the following lines in your <code>pom.xml</code>: <div class="fragment"><div class="line">&lt;<span class="keywordtype">excludeGroupIds</span>&gt;<span class="keyword">org.openjdk.jmh</span>&lt;/<span class="keywordtype">excludeGroupIds</span>&gt;</div>
+<div class="line">&lt;<span class="keywordtype">exclude</span>&gt;<span class="keyword">fr</span>/<span class="keyword">softsf</span>/<span class="keyword">sudokufx</span>/<span class="keyword">benchmark</span>/**/*.<span class="keyword">java</span>&lt;/<span class="keywordtype">exclude</span>&gt;</div>
+</div><!-- fragment --></li>
+<li>Run the following command to clean the project: <div class="fragment"><div class="line">mvn clean</div>
+</div><!-- fragment --></li>
+<li>Execute the [Jmh init.] configuration to initialize the benchmarks.</li>
+<li>Once benchmarking is complete, uncomment the lines in the <code>pom.xml</code>: <div class="fragment"><div class="line">&lt;<span class="keywordtype">excludeGroupIds</span>&gt;<span class="keyword">org.openjdk.jmh</span>&lt;/<span class="keywordtype">excludeGroupIds</span>&gt;</div>
+<div class="line">&lt;<span class="keywordtype">exclude</span>&gt;<span class="keyword">fr</span>/<span class="keyword">softsf</span>/<span class="keyword">sudokufx</span>/<span class="keyword">benchmark</span>/**/*.<span class="keyword">java</span>&lt;/<span class="keywordtype">exclude</span>&gt;</div>
+</div><!-- fragment --> </li>
+</ul>
+</div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Mar 6 2025 19:00:40 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Mar 6 2025 19:54:01 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

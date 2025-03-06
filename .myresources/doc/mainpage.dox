@@ -4,12 +4,11 @@
  *
  * \section Introduction
  *
- * SudokuFX is a Sudoku game that allows you to create multiple player profiles and save and restore their games.<br>
- * The application allows you to solve the current Sudoku grid, as well as other entries manually.
+ * SudokuFX is a Sudoku game that lets you create multiple player profiles, save your progress, and solve puzzles, including custom grids.
  *
  * [![SudokuFX in action](https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg)](https://github.com/Lob2018/SudokuFX/releases/latest)
  *
- * \section Useful Links
+ * \section Useful_links Useful links
  * - [GitHub](https://github.com/Lob2018/SudokuFX)
  * - [Project Roadmap](https://github.com/users/Lob2018/projects/4)
  * - [Application Mockup (Figma)](https://www.figma.com/design/GiSwlg2mZofXalf1Quaa5w/SudokuFX?node-id=0-1&t=smJqt7CQuD0zZuUP-1)
@@ -27,4 +26,21 @@
  * \subsection MPD
  * \image html https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/merise/MPD.png
  *
+ * \section Temporary_performance_evaluation Temporary performance evaluation
+ * With Java Microbenchmark Harness (JMH) :
+ * - Comment out the following lines in your `pom.xml`:
+ *   ```xml
+ *   <excludeGroupIds>org.openjdk.jmh</excludeGroupIds>
+ *   <exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>
+ *   ```
+ * - Run the following command to clean the project:
+ *   ```bash
+ *   mvn clean
+ *   ```
+ * - Execute the [Jmh init.] configuration to initialize the benchmarks.
+ * - Once benchmarking is complete, uncomment the lines in the `pom.xml`:
+ *   ```xml
+ *   <excludeGroupIds>org.openjdk.jmh</excludeGroupIds>
+ *   <exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>
+ *   ```
  */

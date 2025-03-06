@@ -217,9 +217,10 @@ var NAVTREEINDEX5 =
 "index.html#MCD":[0,3,0],
 "index.html#MPD":[0,3,1],
 "index.html#Merise":[0,3],
+"index.html#Temporary_performance_evaluation":[0,4],
 "index.html#UML":[0,2],
 "index.html#Use":[0,2,0],
-"index.html#Useful":[0,1],
+"index.html#Useful_links":[0,1],
 "index.html#activity-diagram-for-invalid-authorization":[0,2,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1annotations_1_1_excluded_from_coverage_report_generated.html":[1,0,0,0,0,0,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1annotations_1_1_excluded_from_coverage_report_generated.html":[2,0,0,0,0,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX5 =
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a2bf11cd440bc034da0fd092880011df4":[2,0,0,0,0,3,1,6,3],
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a2bf11cd440bc034da0fd092880011df4":[2,0,0,0,0,3,1,6,4],
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a6e9922a8593a4a1ca3f2f05189888ba9":[1,0,0,0,0,3,1,6,5],
-"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a6e9922a8593a4a1ca3f2f05189888ba9":[2,0,0,0,0,3,1,6,5],
-"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a70c5e7dcae93d1a40968b269ddd8e654":[1,0,0,0,0,3,1,6,6]
+"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a6e9922a8593a4a1ca3f2f05189888ba9":[2,0,0,0,0,3,1,6,5]
 };

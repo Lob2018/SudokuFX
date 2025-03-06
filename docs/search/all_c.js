@@ -7,7 +7,7 @@ var searchData=
   ['launcher_2ejava_4',['Launcher.java',['../_launcher_8java.html',1,'']]],
   ['level_5',['level',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a527acb3e9af15b296dcb3d20da14de29',1,'fr.softsf.sudokufx.enums.ToastLevels.level'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#abe9a074e3da1e79ca64d457940772034',1,'fr.softsf.sudokufx.model.GameLevel.level']]],
   ['levelid_6',['levelid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#afcb89b4ea6fbc6fe15d86cfec2c316ba',1,'fr.softsf.sudokufx.model.Game.levelid'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a27185e215323e1ca00cfa3b86696c28f',1,'fr.softsf.sudokufx.model.GameLevel.levelid']]],
-  ['links_7',['Links',['../index.html#Useful',1,'']]],
+  ['links_7',['Useful links',['../index.html#Useful_links',1,'']]],
   ['linux_5fbase_5fpath_8',['LINUX_BASE_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#aadca3a07fadd10abbfb13af90b584601',1,'fr::softsf::sudokufx::enums::Paths']]],
   ['linux_5fsudo_5ffx_5fbase_5fpath_9',['LINUX_SUDO_FX_BASE_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#a6f1151a3bcf9202a9acd2dd607778d17',1,'fr::softsf::sudokufx::enums::Paths']]],
   ['linux_5fsupposed_5fdata_5ffolder_5ffor_5fsudo_5ffx_10',['LINUX_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#a576c0f9eb2dad3b5eccfe9b26ecc587c',1,'fr::softsf::sudokufx::enums::Paths']]],
