@@ -212,14 +212,12 @@ jobs:
           path: output
 
       - name: GPG - Import private key
-        run: |
-          echo "$GPG_PRIVATE_KEY" | gpg --import
+        run: echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import
       - name: GPG - Sign files (excluding .txt)
         run: |
           for file in output/*; do
             if [[ ! $file == *.txt ]]; then
-              echo "Signing file: $file"
-              gpg --detach-sign --armor -o "$file.asc" "$file"
+              gpg --batch --yes --detach-sign --armor -o "$file.asc" "$file"
             fi
           done
       - name: GPG - Export public key from secrets and save to output
