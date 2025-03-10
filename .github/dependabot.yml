@@ -10,6 +10,9 @@ updates:
     directory: "/" # Location of the pom.xml file
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "org.openjfx:*"
+        versions: [ ">=24" ] # Blocks versions higher than JavaFX 23
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
