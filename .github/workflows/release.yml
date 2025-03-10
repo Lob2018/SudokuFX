@@ -182,6 +182,7 @@ jobs:
     env:
       GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
       GPG_PUBLIC_KEY: ${{ secrets.GPG_PUBLIC_KEY }}
+      GPG_PASSPHRASE : ${{ secrets.GPG_PASSPHRASE }}
     steps:
       - name: Harden Runner
         uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
@@ -220,14 +221,30 @@ jobs:
           mkdir -p ~/.gnupg
           chmod 700 ~/.gnupg
           echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import
-      - name: GPG - Sign files (excluding .txt)
+          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
+          echo "use-agent" >> ~/.gnupg/gpg.conf
+          gpgconf --reload gpg-agent
+      - name: GPG - Sign and verify files (excluding .txt)
         run: |
           export GPG_TTY=$(tty)
           for file in output/*; do
-          if [[ ! $file == *.txt ]]; then
-           echo "Signing file: \"$file\""
-           gpg --batch --yes --detach-sign --armor -o "$file.asc" "$file"
-          fi
+            if [[ ! $file == *.txt ]]; then
+              echo "Signing file: $file"
+              # Sign the file
+              gpg --batch --yes --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --detach-sign --armor -o "$file.asc" "$file"
+              if [[ $? -ne 0 ]]; then
+                echo "GPG signing failed for file: $file"
+                exit 1
+              fi
+
+              echo "Verifying signature for file: $file.asc"
+              # Verify the signature
+              gpg --verify "$file.asc" "$file"
+              if [[ $? -ne 0 ]]; then
+                echo "GPG verification failed for file: $file"
+                exit 1
+              fi
+            fi
           done
 
       - name: Create Release
