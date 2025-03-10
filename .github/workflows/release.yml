@@ -219,31 +219,28 @@ jobs:
           echo "$GPG_PUBLIC_KEY" > output/sudokufx-public-key.asc
       - name: GPG - Import private key using an isolated configuration
         run: |
-          # Use a temporary directory for GPG
+          # Create a temporary GPG home directory
           export GNUPGHOME=$(mktemp -d)
           chmod 700 $GNUPGHOME          
           # Import the private key
           echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import          
-          # Temporary configuration
+          # Configure temporary GPG agent
           echo "allow-loopback-pinentry" > $GNUPGHOME/gpg-agent.conf
-          gpgconf --homedir $GNUPGHOME --reload gpg-agent
+          gpgconf --homedir $GNUPGHOME --reload gpg-agent          
+          # Export GNUPGHOME for reuse in subsequent steps
+          echo "GNUPGHOME=$GNUPGHOME" >> $GITHUB_ENV
       - name: GPG - Sign and verify files (excluding .txt)
         run: |
           export GPG_TTY=$(tty)
-          export GNUPGHOME=$(mktemp -d)
-          chmod 700 $GNUPGHOME          
-          # Iterate over the files to sign
           for file in output/*; do
             if [[ ! $file == *.txt ]]; then
-              echo "Signing file: $file"          
-              # Sign the file
+              echo "Signing file: $file"
               gpg --batch --yes --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --detach-sign --armor -o "$file.asc" "$file"
               if [[ $? -ne 0 ]]; then
                 echo "GPG signing failed for file: $file"
                 exit 1
-              fi          
+              fi
               echo "Verifying signature for file: $file.asc"
-              # Verify the signature
               gpg --verify "$file.asc" "$file"
               if [[ $? -ne 0 ]]; then
                 echo "GPG verification failed for file: $file"
@@ -251,6 +248,8 @@ jobs:
               fi
             fi
           done
+          # Clean up GNUPGHOME after all files are processed
+          rm -rf $GNUPGHOME
 
       - name: Create Release
         uses: ncipollo/release-action@440c8c1cb0ed28b9f43e4d1d670870f059653174 # v1.16.0
