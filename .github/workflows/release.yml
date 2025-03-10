@@ -212,19 +212,31 @@ jobs:
           name: output-folder-macos-x86_64
           path: output
 
+      - name: GPG - List files in output directory
+        run: ls -l output/
       - name: GPG - Import private key
         run: |
           mkdir -p ~/.gnupg
           chmod 700 ~/.gnupg
           echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import
+      - name: GPG - Check GPG keys
+        run: |
+          gpg --list-keys
+      - name: GPG - Verify files to sign
+        run: |
+          for file in output/*; do
+            if [[ ! $file == *.txt ]]; then
+              echo "Ready to sign: $file"
+            fi
+          done
       - name: GPG - Sign files (excluding .txt)
         run: |
           export GPG_TTY=$(tty)
           for file in output/*; do
-            if [[ ! $file == *.txt ]]; then
-              echo "Signing file: $file"
-              gpg --batch --yes --detach-sign --armor -o "$file.asc" "$file"
-            fi
+          if [[ ! $file == *.txt ]]; then
+           echo "Signing file: $file"
+           gpg --batch --yes --detach-sign --armor -o "$file.asc" "$file"
+          fi
           done
       - name: GPG - Export public key from secrets and save to output
         run: |
