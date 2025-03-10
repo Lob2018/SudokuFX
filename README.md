@@ -121,9 +121,9 @@ SudokuFX is a Sudoku game that lets you create multiple player profiles, save yo
           1. Comment out `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`  
              and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`
           2. Run `mvn clean` and execute the `[Jmh init.]` configuration
-          3. Launch the benchmarks
-          4. **Uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`  
-             and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml` once benchmarking is complete**
+          3. Manage your benchmark tests in the `fr.softsf.sudokufx.benchmark` package
+          4. **Once benchmarking is complete, uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`  
+             and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`**
 
 ## Installation
 
