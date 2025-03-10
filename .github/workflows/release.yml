@@ -215,28 +215,33 @@ jobs:
 
       - name: GPG - Export public key from secrets and save to output
         run: |
+          mkdir -p output
           echo "$GPG_PUBLIC_KEY" > output/sudokufx-public-key.asc
-      - name: GPG - Import private key
+      - name: GPG - Import private key using an isolated configuration
         run: |
-          mkdir -p ~/.gnupg
-          chmod 700 ~/.gnupg
-          echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import
-          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-          echo "use-agent" >> ~/.gnupg/gpg.conf
-          gpgconf --reload gpg-agent
+          # Use a temporary directory for GPG
+          export GNUPGHOME=$(mktemp -d)
+          chmod 700 $GNUPGHOME          
+          # Import the private key
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import          
+          # Temporary configuration
+          echo "allow-loopback-pinentry" > $GNUPGHOME/gpg-agent.conf
+          gpgconf --homedir $GNUPGHOME --reload gpg-agent
       - name: GPG - Sign and verify files (excluding .txt)
         run: |
           export GPG_TTY=$(tty)
+          export GNUPGHOME=$(mktemp -d)
+          chmod 700 $GNUPGHOME          
+          # Iterate over the files to sign
           for file in output/*; do
             if [[ ! $file == *.txt ]]; then
-              echo "Signing file: $file"
+              echo "Signing file: $file"          
               # Sign the file
               gpg --batch --yes --pinentry-mode loopback --passphrase "$GPG_PASSPHRASE" --detach-sign --armor -o "$file.asc" "$file"
               if [[ $? -ne 0 ]]; then
                 echo "GPG signing failed for file: $file"
                 exit 1
-              fi
-
+              fi          
               echo "Verifying signature for file: $file.asc"
               # Verify the signature
               gpg --verify "$file.asc" "$file"
@@ -275,7 +280,7 @@ jobs:
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}__macos.zip-Launch_with_.sh_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_macos.zip)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP x86_64](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}--x86__64__macos.zip-Launch_with_.sh_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip)<br>
             
-            **File Fingerprints:** The integrity of the downloaded files can be verified using the corresponding hash files:
+            **File fingerprints:** The integrity of the downloaded files can be verified using the corresponding hash files:
             
             - `hash_windows.txt` (for Windows)
             - `hash_linux.txt` (for Linux)
@@ -286,17 +291,17 @@ jobs:
             &nbsp;&nbsp;&nbsp;&nbsp;[![hash_macos.txt](https://img.shields.io/badge/hash__macos.txt-(for_macOS)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_macos.txt)
             &nbsp;&nbsp;&nbsp;&nbsp;[![hash_macos-x86_64.txt](https://img.shields.io/badge/hash__macos--x86__64.txt-(for_macOS_x86__64)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_macos-x86_64.txt)
             
-            **File Integrity Using GPG Signatures:** Ensure the integrity of the downloaded files by verifying their signatures with the corresponding GPG public keys:
+            **File integrity using GPG signatures:** Ensure the integrity of the downloaded files by verifying their signatures with the corresponding GPG public keys:
             
             &nbsp;&nbsp;&nbsp;&nbsp;[![Public GPG (GNU Privacy Guard)](https://img.shields.io/badge/Public_GPG-sudokufx--public--key.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/sudokufx-public-key.asc)<br>
             &nbsp;&nbsp;&nbsp;&nbsp;[![Windows MSI GPG (GNU Privacy Guard)](https://img.shields.io/badge/Windows_MSI_GPG-SudokuFX__JVM--${{ env.POM_VERSION }}.msi.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX_JVM-${{ env.POM_VERSION }}.msi.asc)
             &nbsp;&nbsp;&nbsp;&nbsp;[![Linux DEB GPG (GNU Privacy Guard)](https://img.shields.io/badge/Linux_DEB_GPG-sudokufx--jvm__${{ env.POM_VERSION }}__amd64.deb.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/sudokufx-jvm_${{ env.POM_VERSION }}_amd64.deb.asc)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS DMG GPG (GNU Privacy Guard)](https://img.shields.io/badge/macOS_DMG_GPG-SudokuFX--JVM--${{ env.POM_VERSION }}.dmg.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-JVM-${{ env.POM_VERSION }}.dmg.asc)
-            &nbsp;&nbsp;&nbsp;&nbsp;[![macOS DMG x86_64 GPG (GNU Privacy Guard)](https://img.shields.io/badge/macOS_DMG_x86__64_GPG-SudokuFX--x86__64--JVM--${{ env.POM_VERSION }}.dmg.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-x86_64-JVM-${{ env.POM_VERSION }}.dmg.asc)<br>
-            &nbsp;&nbsp;&nbsp;&nbsp;[![Windows ZIP GPG (GNU Privacy Guard)](https://img.shields.io/badge/Windows.zip_GPG-SudokuFX--${{ env.POM_VERSION }}__windows.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_windows.zip.asc)
-            &nbsp;&nbsp;&nbsp;&nbsp;[![Linux TAR GPG (GNU Privacy Guard)](https://img.shields.io/badge/Linux.tar_GPG-SudokuFX--${{ env.POM_VERSION }}__linux.tar.gz.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz.asc)
-            &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP GPG (GNU Privacy Guard)](https://img.shields.io/badge/Macos.zip_GPG-SudokuFX--${{ env.POM_VERSION }}__macos.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_macos.zip.asc)
-            &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP x86_64 GPG (GNU Privacy Guard)](https://img.shields.io/badge/x86__64__macos.zip_GPG-SudokuFX--${{ env.POM_VERSION }}--x86__64__macos.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip.asc)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;[![macOS DMG x86_64 GPG (GNU Privacy Guard)](https://img.shields.io/badge/macOS_DMG_x86__64_GPG-SudokuFX--x86__64--JVM--${{ env.POM_VERSION }}.dmg.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-x86_64-JVM-${{ env.POM_VERSION }}.dmg.asc)
+            &nbsp;&nbsp;&nbsp;&nbsp;[![Windows ZIP GPG (GNU Privacy Guard)](https://img.shields.io/badge/Windows_ZIP_GPG-SudokuFX--${{ env.POM_VERSION }}__windows.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_windows.zip.asc)
+            &nbsp;&nbsp;&nbsp;&nbsp;[![Linux TAR GPG (GNU Privacy Guard)](https://img.shields.io/badge/Linux_TAR_GPG-SudokuFX--${{ env.POM_VERSION }}__linux.tar.gz.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz.asc)
+            &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP GPG (GNU Privacy Guard)](https://img.shields.io/badge/Macos_ZIP_GPG-SudokuFX--${{ env.POM_VERSION }}__macos.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_macos.zip.asc)
+            &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP x86_64 GPG (GNU Privacy Guard)](https://img.shields.io/badge/x86__64__macos_ZIP_GPG-SudokuFX--${{ env.POM_VERSION }}--x86__64__macos.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip.asc)<br>
 
           artifacts: 'output/*'
       - name: Create Tag
