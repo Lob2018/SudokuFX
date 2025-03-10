@@ -40,7 +40,7 @@ echo "# OUTPUT   : CLEAN"
 rm -rf "$6" 2>/dev/null
 
 echo "# TARGET/INPUT   : CREATE"
-cd ./target
+cd ./target || exit
 mkdir -p input
 
 echo "# TARGET/INPUT   : PASTE UBERJAR"
@@ -51,7 +51,7 @@ cd ..
 jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xmx2048m -Dapp.name=$1 -Dapp.version=$2" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
-cd ./target
+cd ./target || exit
 cat << EOF > "$1-$2.sh"
 #!/bin/bash
 echo -e "\033[0;32m"
@@ -98,14 +98,14 @@ if [[ ! -d "$1" ]]; then
     echo "Delete the SudokuFX JAR file..."
     rm "$1-$2.jar"
     echo "Training the SudokuFX application..."
-    cd "$1"
+    cd "$1" || exit
     java -Xmx2048m -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null && \
     java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null &
 fi
 
 if [[ -d "$1" ]]; then
     echo "Running the SudokuFX application..."
-    cd "$1"
+    cd "$1" || exit
     java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null &
 fi
 EOF
@@ -118,7 +118,7 @@ tar -czf "../$6/$tarName" "$1-$2.sh" "$jarName"
 
 echo "# OUTPUT   : THE HASH FILE"
 debFile="${appNameWithTheJVM,,}_${2}_amd64.deb"
-cd "../$6"
+cd "../$6" || exit
 {
     echo
     md5sum --tag "$debFile"
