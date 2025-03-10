@@ -219,6 +219,7 @@ jobs:
           echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import
       - name: GPG - Sign files (excluding .txt)
         run: |
+          export GPG_TTY=$(tty)
           for file in output/*; do
             if [[ ! $file == *.txt ]]; then
               echo "Signing file: $file"
