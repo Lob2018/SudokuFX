@@ -24,6 +24,7 @@
   - [Required Application Properties to Run](#required-application-properties-to-run)
   - [Windows how to run in IntelliJ IDEA](#windows-how-to-run-in-intellij-idea)
 - [Installation](#installation)
+  - [Verifying downloaded assets](#verifying-downloaded-assets)
 - [Security](https://github.com/Lob2018/SudokuFX?tab=security-ov-file#readme)
 - [Use](#use)
 - [Examples](#examples)
@@ -144,8 +145,6 @@ SudokuFX is a Sudoku game that lets you create multiple player profiles, save yo
     The MSI file does not have a code signing certificate (paid service), Microsoft Defender SmartScreen informs you of this
 during installation; to continue the installation click on **additional information**, then **Run anyway**.
 
-  <sub>[This other software may be useful to you to check the integrity of the downloaded file (see the version fingerprints).](https://www.clubic.com/telecharger-fiche56914-hashtab.html)</sub>
-
 - Linux
   - Application without Java Runtime Environment included ([the latest JRE must be installed on your machine](https://adoptium.net))
 
@@ -166,6 +165,10 @@ during installation; to continue the installation click on **additional informat
     - Application with Java Runtime Environment included (latest distribution with ARM64 architecture)
 
       [Download and install the latest MacOS version of the file SudokuFX-JVM-1.0.0.dmg, available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)
+
+### Verifying downloaded assets
+
+To ensure the integrity of downloaded assets, import the GPG public key with `gpg --import sudokufx-public-key.asc`, then verify the files, e.g., the MSI file, using `gpg --verify SudokuFX_JVM-v.v.v.msi.asc SudokuFX_JVM-v.v.v.msi`.
 
 ## Use
 
