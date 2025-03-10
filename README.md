@@ -168,7 +168,7 @@ during installation; to continue the installation click on **additional informat
 
 ### Verifying downloaded assets
 
-To ensure the integrity of downloaded assets, import the GPG public key with `gpg --import sudokufx-public-key.asc`, then verify the files, e.g., the MSI file, using `gpg --verify SudokuFX_JVM-v.v.v.msi.asc SudokuFX_JVM-v.v.v.msi`.
+To ensure the integrity of downloaded assets, import the GPG public key with `gpg --import sudokufx-public-key.asc`, then verify the files, e.g., the MSI file, using `gpg --verify SudokuFX_JVM-v.v.v.msi.asc SudokuFX_JVM-v.v.v.msi`. For more information, refer to the [GnuPG Manual](https://www.gnupg.org/gph/en/manual.html).
 
 ## Use
 
