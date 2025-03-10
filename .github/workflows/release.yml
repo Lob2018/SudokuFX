@@ -213,10 +213,6 @@ jobs:
           name: output-folder-macos-x86_64
           path: output
 
-      - name: GPG - Export public key from secrets and save to output
-        run: |
-          mkdir -p output
-          echo "$GPG_PUBLIC_KEY" > output/sudokufx-public-key.asc
       - name: GPG - Import private key using an isolated configuration
         run: |
           # Create a temporary GPG home directory
@@ -250,6 +246,10 @@ jobs:
           done
           # Clean up GNUPGHOME after all files are processed
           rm -rf $GNUPGHOME
+      - name: GPG - Export public key from secrets and save to output
+        run: |
+          mkdir -p output
+          echo "$GPG_PUBLIC_KEY" > output/sudokufx-public-key.asc
 
       - name: Create Release
         uses: ncipollo/release-action@440c8c1cb0ed28b9f43e4d1d670870f059653174 # v1.16.0
