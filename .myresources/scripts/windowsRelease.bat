@@ -112,6 +112,7 @@
         echo         echo Delete the SudokuFX JAR file...
         echo         del %1-%2.jar
         echo         echo Training the SudokuFX application...
+        echo         echo ▒▒ Please do not close this window ▒▒
         echo         cd %%FOLDER%%
         echo         cmd /c "java -Xmx2048m -XX:ArchiveClassesAtExit=%%FOLDER%%.jsa -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul"
         echo         cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul"
