@@ -293,23 +293,6 @@ jobs:
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}__macos.zip-Launch_with_the_.sh_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_macos.zip)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP x86_64](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}--x86__64__macos.zip-Launch_with_the_.sh_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip)<br>
             
-            ## File fingerprints
-            
-            **The integrity of the downloaded files can be verified using the corresponding hash files**
-            
-            ### File names
-            
-            - `hash_windows.txt` (for Windows)
-            - `hash_linux.txt` (for Linux)
-            - `hash_macos.txt` or `hash_macos-x86_64.txt` (for macOS)<br>
-            
-            ### File links
-            
-            &nbsp;&nbsp;&nbsp;&nbsp;[![hash_windows.txt](https://img.shields.io/badge/hash__windows.txt-(for_Windows)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_windows.txt)
-            &nbsp;&nbsp;&nbsp;&nbsp;[![hash_linux.txt](https://img.shields.io/badge/hash__linux.txt-(for_Linux)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_linux.txt)
-            &nbsp;&nbsp;&nbsp;&nbsp;[![hash_macos.txt](https://img.shields.io/badge/hash__macos.txt-(for_macOS)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_macos.txt)
-            &nbsp;&nbsp;&nbsp;&nbsp;[![hash_macos-x86_64.txt](https://img.shields.io/badge/hash__macos--x86__64.txt-(for_macOS_x86__64)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_macos-x86_64.txt)
-            
             ## File integrity verification with GPG Signatures
             
             **To ensure the integrity of downloaded files, verify their signatures using the corresponding GPG public key**
@@ -328,6 +311,23 @@ jobs:
             &nbsp;&nbsp;&nbsp;&nbsp;[![Linux TAR GPG (GNU Privacy Guard)](https://img.shields.io/badge/Linux_TAR_GPG-SudokuFX--${{ env.POM_VERSION }}__linux.tar.gz.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz.asc)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP GPG (GNU Privacy Guard)](https://img.shields.io/badge/Macos_ZIP_GPG-SudokuFX--${{ env.POM_VERSION }}__macos.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_macos.zip.asc)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP x86_64 GPG (GNU Privacy Guard)](https://img.shields.io/badge/x86__64__macos_ZIP_GPG-SudokuFX--${{ env.POM_VERSION }}--x86__64__macos.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip.asc)<br>
+            
+            ## File fingerprints
+            
+            **The integrity of the downloaded files can be verified using the corresponding hash files**
+            
+            ### File names
+            
+            - `hash_windows.txt` (for Windows)
+            - `hash_linux.txt` (for Linux)
+            - `hash_macos.txt` or `hash_macos-x86_64.txt` (for macOS)<br>
+            
+            ### File links
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;[![hash_windows.txt](https://img.shields.io/badge/hash__windows.txt-(for_Windows)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_windows.txt)
+            &nbsp;&nbsp;&nbsp;&nbsp;[![hash_linux.txt](https://img.shields.io/badge/hash__linux.txt-(for_Linux)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_linux.txt)
+            &nbsp;&nbsp;&nbsp;&nbsp;[![hash_macos.txt](https://img.shields.io/badge/hash__macos.txt-(for_macOS)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_macos.txt)
+            &nbsp;&nbsp;&nbsp;&nbsp;[![hash_macos-x86_64.txt](https://img.shields.io/badge/hash__macos--x86__64.txt-(for_macOS_x86__64)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_macos-x86_64.txt)
 
           artifacts: 'output/*'
       - name: Create Tag
