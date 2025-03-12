@@ -80,7 +80,7 @@
         echo     echo         ▒▒▒▒▒
         echo     echo.
         echo     echo.
-        echo     echo ████ Please do not close this window ████
+        echo     echo  ████ Please do not close this window ████
         echo     echo.
         echo     timeout /t 1 /nobreak ^>nul
         echo     set JAVA_VERSION=0

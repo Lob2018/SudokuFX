@@ -72,7 +72,7 @@ echo "       ▒▒▒▒▒▒▒▒▒    ▒▒▒▒▒▒"
 echo "        ▒▒▒▒▒"
 echo
 echo
-echo "████ Please do not close this window ████"
+echo " ████ Please do not close this window ████"
 echo
 echo -e "\033[0m"
 
