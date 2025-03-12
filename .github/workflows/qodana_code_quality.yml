@@ -14,11 +14,16 @@ permissions:  # added using https://github.com/step-security/secure-repo
 jobs:
   qodana:
     runs-on: ubuntu-latest
+    env:
+      QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
     permissions:
       contents: write
       pull-requests: write
       checks: write
     steps:
+      - name: Hide sensitive data for the job
+        run: |
+          echo "::add-mask::${{ secrets.QODANA_TOKEN }}"
       - name: Harden Runner
         uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
@@ -34,5 +39,3 @@ jobs:
           pr-mode: false
           push-fixes: pull-request
           cache-default-branch-only: true
-        env:
-          QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}

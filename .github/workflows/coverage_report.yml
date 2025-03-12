@@ -14,7 +14,12 @@ jobs:
   jacoco_coverage_report:
     name: JaCoCo coverage report
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
+      - name: Hide sensitive data for the job
+        run: |
+          echo "::add-mask::${{ secrets.GITHUB_TOKEN }}"
       - name: Harden Runner
         uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
@@ -45,7 +50,7 @@ jobs:
           coverage_results_path: target/site/jacoco/jacoco.xml
           coverage_report_name: Coverage
           coverage_report_title: JaCoCo
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: $GITHUB_TOKEN
           skip_check_run: false
           minimum_coverage: 80
           fail_below_threshold: true
