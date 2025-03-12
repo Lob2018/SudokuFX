@@ -96,12 +96,12 @@ fi
 
 if [[ ! -d "$1" ]]; then
     mkdir -p "$1"
+    echo "████ Please do not close this window ████"
     echo "Extracting the contents of the SudokuFX JAR file..."
     java -Djarmode=tools -jar "$1-$2.jar" extract --destination "$1"
     echo "Delete the SudokuFX JAR file..."
     rm "$1-$2.jar"
     echo "Training the SudokuFX application..."
-    echo "▒▒ Please do not close this window ▒▒"
     cd "$1" || exit
     java -Xmx2048m -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null && \
     java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null &
