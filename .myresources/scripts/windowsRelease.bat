@@ -80,6 +80,8 @@
         echo     echo         ▒▒▒▒▒
         echo     echo.
         echo     echo.
+        echo     echo ████ Please do not close this window ████
+        echo     echo.
         echo     timeout /t 1 /nobreak ^>nul
         echo     set JAVA_VERSION=0
         echo     for /f "tokens=3" %%%%g in ('java -version 2^^^>^^^&1 ^^^| findstr /i "version"'^) do (
@@ -91,7 +93,8 @@
         echo     if %%JAVA_VERSION%% EQU 0 (
         echo         echo.
         echo         echo  ██ Java minimum version %%JAVA_REQUIRED%% is required to run this application.
-        echo         echo  ██ Please install the latest Java JRE available at ▒▒ https://adoptium.net ▒▒.
+        echo         echo  ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒.
+        echo         echo  ████ You can now close this window ████
         echo         echo.
         echo         pause
         echo         exit /b 1
@@ -100,14 +103,14 @@
         echo         echo.
         echo         echo  ██ A newer version of Java is required to run this application.
         echo         echo  ██ Your Java version is %%JAVA_VERSION%%, and requires version %%JAVA_REQUIRED%%.
-        echo         echo  ██ Please install the latest Java JRE available at ▒▒ https://adoptium.net ▒▒.
+        echo         echo  ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒.
+        echo         echo  ████ You can now close this window ████
         echo         echo.
         echo         pause
         echo         exit /b 1
         echo     ^)
         echo     if not exist %%FOLDER%% (
         echo         mkdir %%FOLDER%%
-        echo         echo ████ Please do not close this window ████
         echo         echo Extracting the contents of the SudokuFX JAR file...
         echo         java -Djarmode=tools -jar %1-%2.jar extract --destination %%FOLDER%%
         echo         echo Delete the SudokuFX JAR file...
@@ -118,7 +121,6 @@
         echo         cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul"
         echo     ^)
         echo     if exist %%FOLDER%% (
-        echo         echo ████ Please do not close this window ████
         echo         echo Running the SudokuFX application...
         echo         cd %%FOLDER%%
         echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul & exit"

@@ -73,6 +73,10 @@ echo "       ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒"
 echo "       ▒▒▒▒▒▒▒▒▒▒ ▒▒▒▒▒▒▒▒▒"
 echo "       ▒▒▒▒▒▒▒▒▒    ▒▒▒▒▒▒"
 echo "        ▒▒▒▒▒"
+echo
+echo
+echo "████ Please do not close this window ████"
+echo
 echo -e "\033[0m"
 
 sleep 1
@@ -83,20 +87,21 @@ FOLDER=$1
 
 if [[ -z "\$JAVA_VERSION" ]]; then
     echo " ██ Java minimum version $5 is required to run this application."
-    echo " ██ Please install the latest Java JRE available at ▒▒ https://adoptium.net ▒▒."
+    echo " ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒."
+    echo " ████ You can now close this window ████"
     exit 1
 fi
 
 if [[ "\$JAVA_VERSION" < "$5" ]]; then
     echo " ██ A newer version of Java is required to run this application."
     echo " ██ Your Java version is \$JAVA_VERSION, and requires version $5."
-    echo " ██ Please install the latest Java JRE available at ▒▒ https://adoptium.net ▒▒."
+    echo " ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒."
+    echo " ████ You can now close this window ████"
     exit 1
 fi
 
 if [[ ! -d "$1" ]]; then
     mkdir -p "$1"
-    echo "████ Please do not close this window ████"
     echo "Extracting the contents of the SudokuFX JAR file..."
     java -Djarmode=tools -jar "$1-$2.jar" extract --destination "$1"
     echo "Delete the SudokuFX JAR file..."
@@ -108,7 +113,6 @@ if [[ ! -d "$1" ]]; then
 fi
 
 if [[ -d "$1" ]]; then
-    echo "████ Please do not close this window ████"
     echo "Running the SudokuFX application..."
     cd "$1" || exit
     java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null &
