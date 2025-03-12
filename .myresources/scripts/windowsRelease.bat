@@ -118,6 +118,7 @@
         echo         cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul"
         echo     ^)
         echo     if exist %%FOLDER%% (
+        echo         echo ████ Please do not close this window ████
         echo         echo Running the SudokuFX application...
         echo         cd %%FOLDER%%
         echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul & exit"

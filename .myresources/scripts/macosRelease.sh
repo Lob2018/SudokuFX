@@ -108,6 +108,7 @@ if [[ ! -d "$1" ]]; then
 fi
 
 if [[ -d "$1" ]]; then
+    echo "████ Please do not close this window ████"
     echo "Running the SudokuFX application..."
     cd "$1" || exit
     java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null &
