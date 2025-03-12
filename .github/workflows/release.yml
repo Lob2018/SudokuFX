@@ -12,14 +12,7 @@ jobs:
     name: Package for Linux and Analyze with SonarCloud
     runs-on: ubuntu-latest
     environment: production
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any (SonarCloud)
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
     steps:
-      - name: Hide sensitive data for the job
-        run: |
-          echo "::add-mask::${{ secrets.GITHUB_TOKEN }}"
-          echo "::add-mask::${{ secrets.SONAR_TOKEN }}"
       - name: Harden Runner
         uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
@@ -45,7 +38,19 @@ jobs:
           Xvfb :99 -screen 0 1920x1080x24 &
           echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Compile, Test, Package, and analyze with Maven profile (Linux)
-        run: mvn -B package -P linux -f pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Lob2018_SudoFX2024 -Dsonar.qualitygate.wait=true -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: |
+          # Hide sensitive data for the step
+          echo "::add-mask::$GITHUB_TOKEN"
+          echo "::add-mask::$SONAR_TOKEN"
+          # Compile, Test, Package, and analyze
+          mvn -B package -P linux -f pom.xml \
+            org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
+            -Dsonar.projectKey=Lob2018_SudoFX2024 \
+            -Dsonar.qualitygate.wait=true \
+            -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
       - name: Upload output folder (Linux)
         uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4.6.1
         with:
@@ -184,14 +189,8 @@ jobs:
     needs: [ package_for_windows, package_for_linux, package_for_macos, package_for_macos_x86_64 ]
     runs-on: ubuntu-latest
     env:
-      GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
       GPG_PUBLIC_KEY: ${{ secrets.GPG_PUBLIC_KEY }}
-      GPG_PASSPHRASE : ${{ secrets.GPG_PASSPHRASE }}
     steps:
-      - name: Hide sensitive data for the job
-        run: |
-          echo "::add-mask::${{ secrets.GPG_PRIVATE_KEY }}"
-          echo "::add-mask::${{ secrets.GPG_PASSPHRASE }}"
       - name: Harden Runner
         uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
@@ -222,7 +221,11 @@ jobs:
           path: output
 
       - name: GPG - Import private key using an isolated configuration
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
         run: |
+          # Hide sensitive data for the step
+          echo "::add-mask::$GPG_PRIVATE_KEY"
           # Create a temporary GPG home directory
           export GNUPGHOME=$(mktemp -d)
           chmod 700 $GNUPGHOME          
@@ -234,7 +237,12 @@ jobs:
           # Export GNUPGHOME for reuse in subsequent steps
           echo "GNUPGHOME=$GNUPGHOME" >> $GITHUB_ENV
       - name: GPG - Sign and verify files (excluding .txt)
+        env:
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
+          # Hide sensitive data for the step
+          echo "::add-mask::$GPG_PASSPHRASE"
+          # Sign and verify
           export GPG_TTY=$(tty)
           for file in output/*; do
             if [[ ! $file == *.txt ]]; then
@@ -252,8 +260,8 @@ jobs:
               fi
             fi
           done
-          # Clean up GNUPGHOME after all files are processed
-          rm -rf $GNUPGHOME
+      - name: GPG - Clean up GNUPGHOME
+        run: rm -rf $GNUPGHOME
       - name: GPG - Export public key from secrets and save to output
         run: |
           mkdir -p output
@@ -342,3 +350,11 @@ jobs:
         run: git tag v${{ env.POM_VERSION }}
       - name: Push Tag
         run: git push --tags
+
+      - name: Delete all artifacts and output folder after publishing
+        uses: geekyeggo/delete-artifact@f275313e70c08f6120db482d7a6b98377786765b
+        with:
+          name: |
+            output-folder-*
+      - name: Remove output directory
+        run: rm -rf output
