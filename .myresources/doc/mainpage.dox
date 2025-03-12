@@ -1,10 +1,15 @@
 /**
  * @mainpage Documentation of SudokuFX
  *
+ * # 🎲 SudokuFX
  *
- * \section Introduction
+ * Dive into the world of Sudoku with a game that offers:
+ * - 🧩 **Play challenging 9x9 puzzles**: Enjoy grids ranging from beginner to expert levels.
+ * - 🤖️ **Solve any 9x9 Sudoku grid**: Let the game solve your puzzles or input custom ones.
+ * - ✨ **Create profiles**: Save progress and manage personalized profiles for each player.
+ * - 💾 **Save anytime**: Effortlessly continue your puzzle-solving journey.
  *
- * SudokuFX is a Sudoku game that lets you create multiple player profiles, save your progress, and solve puzzles, including custom grids.
+ * Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
  *
  * [![SudokuFX in action](https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg)](https://github.com/Lob2018/SudokuFX/releases/latest)
  *

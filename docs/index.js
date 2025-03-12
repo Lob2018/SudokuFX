@@ -1,6 +1,6 @@
 var index =
 [
-    [ "Introduction", "index.html#Introduction", null ],
+    [ "🎲 SudokuFX", "index.html#autotoc_md0", null ],
     [ "Useful links", "index.html#Useful_links", null ],
     [ "UML", "index.html#UML", [
       [ "Case Diagrams", "index.html#Use", null ],

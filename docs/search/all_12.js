@@ -88,7 +88,7 @@ var searchData=
   ['sqlinvalidauthorization_85',['sqlInvalidAuthorization',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7f44ea69c674694f9ea334ec052a05b3',1,'fr::softsf::sudokufx::SudoMain']]],
   ['stage_86',['stage',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html#a24741c930f1c515d47679f2b3f7a4768',1,'fr::softsf::sudokufx::utils::DynamicFontSizeChangeE2ETest']]],
   ['start_87',['start',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ad12f6778560c28ec6b0e85dec1074a1b',1,'fr.softsf.sudokufx.SudoMain.start()'],['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1e2e_1_1_my_enums_e2_e_test.html#a24ed953cfc4b899d36873af1ec8ff8a0',1,'fr.softsf.sudokufx.common.e2e.MyEnumsE2ETest.start()'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html#a290d4a7a93021d25df188a1cf04ce16f',1,'fr.softsf.sudokufx.utils.DynamicFontSizeChangeE2ETest.start()']]],
-  ['sudokufx_88',['Documentation of SudokuFX',['../index.html',1,'']]],
+  ['sudokufx_88',['SudokuFX',['../index.html#autotoc_md0',1,'🎲 SudokuFX'],['../index.html',1,'Documentation of SudokuFX']]],
   ['sudomain_89',['SudoMain',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html',1,'fr::softsf::sudokufx']]],
   ['sudomain_2ejava_90',['SudoMain.java',['../_sudo_main_8java.html',1,'']]],
   ['suffix_91',['suffix',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#ab04a254756e5173ca75a5db5032e65c8',1,'fr::softsf::sudokufx::utils::FileSystemManagerUTest']]],
