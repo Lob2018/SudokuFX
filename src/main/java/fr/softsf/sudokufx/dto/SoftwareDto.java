@@ -14,8 +14,6 @@ public record SoftwareDto(
         @Size(max = 128)
         String lastversion,
         @NotNull
-        LocalDateTime createdat,
-        @NotNull
         LocalDateTime updatedat
 ) {
 }

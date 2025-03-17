@@ -38,7 +38,6 @@ class SoftwareServiceUTest {
                 .softwareid(1L)
                 .currentversion(currentVersion)
                 .lastversion(lastVersion)
-                .createdat(LocalDateTime.now())
                 .updatedat(LocalDateTime.now()).build();
         assert software != null;
     }

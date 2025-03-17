@@ -74,7 +74,7 @@ public class FullMenuViewModel {
                 softwareToUpdate.softwareid(),
                 "1.0.0",
                 "1.0.0",
-                softwareToUpdate.createdat(),
+//                LocalDateTime.now(),
                 LocalDateTime.now()
         );
 
@@ -123,7 +123,6 @@ public class FullMenuViewModel {
                 null,
                 "1.0.0",
                 "1.0.0",
-                LocalDateTime.now(),
                 LocalDateTime.now()
         );
 

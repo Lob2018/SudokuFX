@@ -29,9 +29,6 @@ public class Software {
     private String lastversion;
 
     @NotNull
-    private LocalDateTime createdat;
-
-    @NotNull
     @Setter
     private LocalDateTime updatedat;
 }
