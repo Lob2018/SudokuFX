@@ -22,7 +22,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.scheduling.annotation.EnableAsync;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 
@@ -35,12 +34,10 @@ import java.sql.SQLInvalidAuthorizationSpecException;
  * - Manages dynamic FXML loading and view transitions for SplashScreen CrashScreen and the DefaultScreen.
  *
  * @SpringBootApplication: Bootstraps the Spring context.
- * @EnableAsync: Enables asynchronous processing.
  * @ComponentScan: Scans specified packages for Spring components.
  */
 @Slf4j
 @SpringBootApplication
-@EnableAsync
 @ComponentScan({"com.gluonhq.ignite.spring", "fr.softsf.sudokufx.*",})
 public class SudoMain extends Application {
 
