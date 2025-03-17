@@ -33,7 +33,7 @@ final class ApplicationKeystore implements IKeystore {
     private static final String PASS_ALIAS = "db-pass-alias";
     private static final String KEYSTORE_FILE_PATH = "/SudokuFXKeyStore.p12";
     private final GenerateSecret generateSecret;
-    private IOsFolderFactory iOsFolderFactory;
+    private final IOsFolderFactory iOsFolderFactory;
     private String keystoreFilePath;
     private KeyStore ks;
     private IEncryptionService iEncryptionService;
