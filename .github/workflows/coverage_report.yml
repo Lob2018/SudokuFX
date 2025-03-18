@@ -1,4 +1,4 @@
-name: "Code coverage"
+name: "JaCoCo line covered ratio (from the pom.xml)"
 
 on:
   push:
