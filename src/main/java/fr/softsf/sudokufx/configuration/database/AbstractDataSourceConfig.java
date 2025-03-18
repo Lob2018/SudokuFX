@@ -18,7 +18,7 @@ import static fr.softsf.sudokufx.enums.Paths.DATABASE_MIGRATION_PATH;
  */
 @Setter
 @ExcludedFromCoverageReportGenerated
-abstract class DataSourceConfig {
+abstract class AbstractDataSourceConfig {
 
     private String jdbcUrl;
     private String poolName;

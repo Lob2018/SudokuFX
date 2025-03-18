@@ -15,7 +15,7 @@ import static fr.softsf.sudokufx.enums.Paths.DATABASE_NAME;
 @Profile("cds")
 @PropertySource("classpath:fr/softsf/sudokufx/application-cds.properties")
 @ExcludedFromCoverageReportGenerated
-class DataSourceConfigCds extends DataSourceConfig {
+class DataSourceConfigCds extends AbstractDataSourceConfig {
     @Bean
     @Override
     @DependsOn({"logbackInitialization"})
