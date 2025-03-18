@@ -12,13 +12,13 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudokuFX/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudokuFX)
 [![Known Vulnerabilities](https://snyk.io/test/github/Lob2018/SudokuFX/badge.svg)](https://snyk.io/test/github/Lob2018/SudokuFX)
 [![CodeQL Analysis](https://github.com/lob2018/SudokuFX/actions/workflows/codeql.yml/badge.svg)](https://github.com/lob2018/SudokuFX/actions/workflows/codeql.yml)<br>
-[![Dependabot Updates](https://github.com/Lob2018/SudokuFX/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/dependabot/dependabot-updates)<br>
+[![Dependabot Updates](https://github.com/Lob2018/SudokuFX/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/dependabot/dependabot-updates)
+[![Qodana](https://github.com/Lob2018/SudokuFX/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/qodana_code_quality.yml)<br>
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Lob2018_SudoFX2024&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Lob2018_SudoFX2024)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Lob2018_SudoFX2024&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Lob2018_SudoFX2024)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Lob2018_SudoFX2024&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Lob2018_SudoFX2024)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Lob2018_SudoFX2024&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Lob2018_SudoFX2024)
 [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Lob2018_SudoFX2024&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Lob2018_SudoFX2024)<br>
-[![Qodana](https://github.com/Lob2018/SudokuFX/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/qodana_code_quality.yml)<br>
 [![JaCoCo line covered ratio (pom.xml)](https://github.com/Lob2018/SudokuFX/actions/workflows/coverage_report.yml/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/coverage_report.yml)
 [![Open Issues](https://img.shields.io/github/issues/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/issues)
 [![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/pulls)
