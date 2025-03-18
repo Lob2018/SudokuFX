@@ -137,7 +137,7 @@ public class SudoMain extends Application {
         try {
             initializeFxmlService();
             long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
-            getPauseTransition("fullmenu-view", minimumTimelapse).play();
+            getPauseTransition("default-view", minimumTimelapse).play();
         } catch (Exception ex) {
             log.error("██ Exception caught after Spring Context initialization with FXML : {}", ex.getMessage(), ex);
             throw new RuntimeException(ex);

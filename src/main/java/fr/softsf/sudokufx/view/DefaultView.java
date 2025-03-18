@@ -5,6 +5,7 @@ import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.interfaces.IMainStageView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.view.components.menu.MenuButton;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
@@ -37,7 +38,7 @@ public final class DefaultView implements IMainStageView, ISceneProvider {
     @FXML
     private Label githubVersion;
     @FXML
-    private Button buttonHello;
+    private MenuButton button;
 
     /**
      * Configures the primary stage for the full menu view.

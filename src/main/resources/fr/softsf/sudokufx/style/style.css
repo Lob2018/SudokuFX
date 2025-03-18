@@ -2,14 +2,17 @@
     -fx-font-family: 'Luciole';
     src: url('../fonts/luciole/lucioleregular.ttf');
 }
+
 @font-face {
     -fx-font-family: 'Luciole Bold';
     src: url('../fonts/luciole/luciolebold.ttf');
 }
+
 @font-face {
     -fx-font-family: 'Luciole Italic';
     src: url('../fonts/luciole/lucioleregularitalic.ttf');
 }
+
 @font-face {
     -fx-font-family: 'Material Icons Round Regular';
     src: url('../fonts/material/materialiconsroundregular.otf');
@@ -20,65 +23,180 @@
     -fx-font-weight: bold;
     -fx-fill: #333333;
 }
+
 .italic-text {
     -fx-font-family: 'Luciole Italic';
     -fx-font-style: italic;
     -fx-fill: #333333;
 }
+
 .material {
     -fx-font-family: 'Material Icons Round Regular';
-    -fx-font-size: 1.27em;
+    -fx-font-size: 1.28em;
     -fx-line-spacing: 1.5;
-    -fx-fill: #333333;
+    -fx-fill: #000000;
 }
 
 .root {
-    -fx-background-color: #fcfcf9;
     -fx-font-family: 'Luciole';
     -fx-font-size: 1em;
     -fx-line-spacing: 1.5;
-    -fx-fill: #333333;
+    -fx-fill: #000000;
 }
 
-.button:focused,.toast:focused {
-    -fx-border-width: .2em;
-    -fx-border-radius: .25em;
-    -fx-border-insets: -.2em;
-    -fx-border-color:  radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
- }
-
+.hidden{
+    -fx-opacity: 0;
+}
 
 .button {
     -fx-cursor: hand;
 }
 
-#splashscreenvbox,#crashscreenvbox  {
-    -fx-padding: 1em;
-    -fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);
+.button:focused {
+    -fx-border-width: .2em;
+    -fx-border-insets: -.2em;
+    -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
 }
 
-#toaster  {
+.button.defaultButton:focused,
+.button.toast:focused {
+    -fx-border-radius: .25em;
+}
+
+.button.menuButton:focused {
+    -fx-border-radius: .9em;
+    -fx-background-color: #DDDDDD;
+}
+
+#toaster {
     -fx-pref-height: 0;
     -fx-max-height: 0;
     -fx-min-height: 0;
     -fx-spacing: .5em;
     -fx-padding: 1em;
 }
-.toast  {
+
+.toast {
     -fx-padding: .3em;
-    -fx-background-radius:.2em;
+    -fx-background-radius: .2em;
     -fx-pref-width: infinity;
 }
-.toast-info  {
+
+.toast-info {
     -fx-background-color: #AAFF99;
 }
-.toast-warn  {
+
+.toast-warn {
     -fx-background-color: #F1FF99;
 }
-.toast-error  {
+
+.toast-error {
     -fx-background-color: #FEBE98;
 }
 
+#splashscreenvbox,
+#crashscreenvbox {
+    -fx-padding: 1em;
+    -fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);
+}
 
+#menu {
+    -fx-spacing: 0.79em;
+    -fx-background-color: #1c2437;
+}
 
+.menuButton {
+    -fx-pref-width: 12.5em;
+    -fx-max-width: 12.5em;
+    -fx-min-width: 12.5em;
+    -fx-pref-height: 1.64em;
+    -fx-padding: 0;
+    -fx-background-radius: .8em;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+}
 
+.easyColor{
+    -fx-background-color: #AAFF99;
+}
+
+.mediumColor{
+    -fx-background-color: #F1FF99;
+}
+
+.difficultColor{
+    -fx-background-color: #FEBE98;
+}
+
+.solveColor{
+    -fx-background-color: #99FFFF;
+}
+
+.menuButtonContainer {
+    -fx-spacing: .35em;
+    -fx-padding: 0 0 0 .3em;
+    -fx-pref-width: 12.5em;
+    -fx-max-width: 12.5em;
+}
+
+.menuButtonMinimize{
+    -fx-rotate: -180;
+}
+
+.menuButtonArrowDropClosed {
+    -fx-font-size: .91em;
+    -fx-rotate: -90;
+}
+
+.menuButtonArrowDropOpened,
+.menuButtonStar {
+    -fx-font-size: .91em;
+    -fx-rotate: 0;
+}
+
+.menuButtonLevelContainerLeft {
+    -fx-spacing: .35em;
+    -fx-padding: 0 0 0 .3em;
+    -fx-pref-width: 8em;
+    -fx-max-width: 8em;
+    -fx-min-width: 8em;
+}
+
+.menuButtonLevelContainerRight {
+    -fx-pref-width: 4.5em;
+    -fx-max-width: 4.5em;
+    -fx-min-width: 4.5em;
+}
+
+.menuButtonLevelIconBackground{
+    -fx-pref-height: 1.25em;
+    -fx-max-height: 1.25em;
+    -fx-min-height: 1.25em;
+}
+
+.menuButtonLevelStar {
+    -fx-font-size: .8em;
+}
+
+.menuButtonLevelStar1 {
+    -fx-translate-x: 0;
+}
+
+.menuButtonLevelStar2 {
+    -fx-translate-x: -0.2em;
+}
+
+.menuButtonLevelStar3 {
+    -fx-translate-x: -0.4em;
+}
+
+.menuButtonLevelStar4 {
+    -fx-translate-x: -0.6em;
+}
+
+.menuButtonLevelStar5 {
+    -fx-translate-x: -0.8em;
+}
+
+.menuButtonText {
+    -fx-translate-y: .1em;
+}

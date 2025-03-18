@@ -16,8 +16,8 @@
             <Label fx:id="crashscreenvboxCenterhboxLabel2" style="-fx-font-size: 0.7em;" VBox.vgrow="ALWAYS"/>
         </VBox>
         <HBox fx:id="crashscreenvboxCenterhboxHbox" alignment="CENTER" VBox.vgrow="ALWAYS">
-            <Button fx:id="buttonReset" onAction="#resetButtonClick"/>
-            <Button fx:id="buttonClose" onAction="#closeButtonClick"/>
+            <Button fx:id="buttonReset" styleClass="defaultButton" onAction="#resetButtonClick"/>
+            <Button fx:id="buttonClose" styleClass="defaultButton" onAction="#closeButtonClick"/>
         </HBox>
         <Pane VBox.vgrow="ALWAYS"/>
     </VBox>

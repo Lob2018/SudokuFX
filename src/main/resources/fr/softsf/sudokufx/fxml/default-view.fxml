@@ -3,9 +3,152 @@
 <?import fr.softsf.sudokufx.view.components.toaster.ToasterVBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21"
+<?import fr.softsf.sudokufx.view.components.menu.MenuButton?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.Region?>
+<StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
-    <VBox alignment="CENTER" spacing="20.0">
+    <VBox fx:id="menu" alignment="CENTER">
+
+        <MenuButton fx:id="m1" styleClass="menuButton">
+            <graphic>
+                <HBox alignment="CENTER_LEFT" styleClass="menuButtonContainer">
+                    <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed,hidden"/>
+                    <Text text="&#xe9bd;" styleClass="material,menuButtonMinimize"/>
+                    <Text text="Réduire" styleClass="root,menuButtonText"/>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+        <MenuButton fx:id="m2" styleClass="menuButton">
+            <graphic>
+                <HBox alignment="CENTER_LEFT" styleClass="menuButtonContainer">
+                    <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed"/>
+                    <Text text="&#xe853;" styleClass="material"/>
+                    <Text text="Joueur" styleClass="root,bold-text,menuButtonText"/>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+        <MenuButton fx:id="m3" styleClass="menuButton">
+            <graphic>
+                <HBox>
+                    <HBox alignment="CENTER_LEFT" styleClass="menuButtonLevelContainerLeft">
+                        <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed,hidden"/>
+                        <StackPane styleClass="menuButtonLevelIconBackground,easyColor">
+                            <Text text="&#xf015;" styleClass="material"/>
+                        </StackPane>
+                        <Text text="Facile" styleClass="root,menuButtonText"/>
+                    </HBox>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <HBox alignment="CENTER_RIGHT" styleClass="menuButtonLevelContainerRight,hidden">
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
+                        <Text text="&#xe839;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
+                        <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
+                        <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
+                        <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
+                    </HBox>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+        <MenuButton fx:id="m4" styleClass="menuButton,mediumColor">
+            <graphic>
+                <HBox>
+                    <HBox alignment="CENTER_LEFT" styleClass="menuButtonLevelContainerLeft">
+                        <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed,hidden"/>
+                        <StackPane styleClass="menuButtonLevelIconBackground,mediumColor">
+                            <Text text="&#xf015;" styleClass="material"/>
+                        </StackPane>
+                        <Text text="Moyen" styleClass="root,menuButtonText"/>
+                    </HBox>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <HBox alignment="CENTER_RIGHT" styleClass="menuButtonLevelContainerRight">
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
+                        <Text text="&#xe839;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
+                        <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
+                        <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
+                    </HBox>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+        <MenuButton fx:id="m5" styleClass="menuButton">
+            <graphic>
+                <HBox>
+                    <HBox alignment="CENTER_LEFT" styleClass="menuButtonLevelContainerLeft">
+                        <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed,hidden"/>
+                        <StackPane styleClass="menuButtonLevelIconBackground,difficultColor">
+                            <Text text="&#xf015;" styleClass="material"/>
+                        </StackPane>
+                        <Text text="Difficile" styleClass="root,menuButtonText"/>
+                    </HBox>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <HBox alignment="CENTER_RIGHT" styleClass="menuButtonLevelContainerRight,hidden">
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
+                        <Text text="&#xe839;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
+                    </HBox>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+        <MenuButton fx:id="m6" styleClass="menuButton">
+            <graphic>
+                <HBox alignment="CENTER_LEFT" styleClass="menuButtonContainer">
+                    <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed"/>
+                    <Text text="&#xe161;" styleClass="material"/>
+                    <Text text="Sauvegardes" styleClass="root,menuButtonText"/>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+        <MenuButton fx:id="m7" styleClass="menuButton">
+            <graphic>
+                <HBox alignment="CENTER_LEFT" styleClass="menuButtonContainer">
+                    <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed"/>
+                    <Text text="&#xe3f4;" styleClass="material"/>
+                    <Text text="Arrière plan" styleClass="root,menuButtonText"/>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+
+        <MenuButton fx:id="m8" styleClass="menuButton">
+            <graphic>
+                <HBox alignment="CENTER_LEFT" styleClass="menuButtonContainer">
+                    <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed,hidden"/>
+                    <Text text="FR" styleClass="root,bold-text,menuButtonText"/>
+                    <Text text="Langue" styleClass="root,menuButtonText"/>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+        <MenuButton fx:id="m9" styleClass="menuButton">
+            <graphic>
+                <HBox alignment="CENTER_LEFT" styleClass="menuButtonContainer">
+                    <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed,hidden"/>
+                    <Text text="&#xe887;" styleClass="material"/>
+                    <Text text="Aide" styleClass="root,menuButtonText"/>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+        <MenuButton fx:id="m10" styleClass="menuButton">
+            <graphic>
+                <HBox alignment="CENTER_LEFT" styleClass="menuButtonContainer">
+                    <Text text="&#xe5c6;" styleClass="material,menuButtonArrowDropClosed,hidden"/>
+                    <Text text="&#xe031;" styleClass="material"/>
+                    <Text text="Nouvelle version" styleClass="root,menuButtonText"/>
+                </HBox>
+            </graphic>
+        </MenuButton>
+
+
     </VBox>
     <ToasterVBox fx:id="toaster"/>
 </StackPane>
