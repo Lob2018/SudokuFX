@@ -115,46 +115,46 @@
     -fx-background-color: rgba(255, 255, 255, 0.8);
 }
 
-.easyColor{
+.colorEasy{
     -fx-background-color: #AAFF99;
 }
 
-.mediumColor{
+.colorMedium{
     -fx-background-color: #F1FF99;
 }
 
-.difficultColor{
+.colorDifficult{
     -fx-background-color: #FEBE98;
 }
 
-.solveColor{
+.colorResolve{
     -fx-background-color: #99FFFF;
 }
 
-.menuButtonContainer {
+.menuHBoxContainer {
     -fx-spacing: .35em;
     -fx-padding: 0 0 0 .3em;
     -fx-pref-width: 12.5em;
     -fx-max-width: 12.5em;
 }
 
-.menuButtonMinimize{
+.menuClose{
     -fx-rotate: -180;
 }
 
-.menuButtonArrowDropClosed {
+.menuDropdownClose {
     -fx-translate-y: .03em;
     -fx-font-size: .91em;
     -fx-rotate: -90;
 }
 
-.menuButtonArrowDropOpened {
+.menuDropdownOpen {
     -fx-translate-y: .03em;
     -fx-font-size: .91em;
     -fx-rotate: 0;
 }
 
-.menuButtonLevelContainerLeft {
+.menuHBoxLeftContainer {
     -fx-spacing: .35em;
     -fx-padding: 0 0 0 .3em;
     -fx-pref-width: 8em;
@@ -162,13 +162,13 @@
     -fx-min-width: 8em;
 }
 
-.menuButtonLevelContainerRight {
+.menuHBoxRightContainer {
     -fx-pref-width: 4.5em;
     -fx-max-width: 4.5em;
     -fx-min-width: 4.5em;
 }
 
-.menuButtonLevelIconBackground{
+.menuButtonLevelBackground{
     -fx-pref-height: 1.25em;
     -fx-max-height: 1.25em;
     -fx-min-height: 1.25em;
