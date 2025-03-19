@@ -142,13 +142,13 @@
     -fx-rotate: -180;
 }
 
-.menuDropdownClose {
+.menuDropdownOpen {
     -fx-translate-y: .03em;
     -fx-font-size: .91em;
     -fx-rotate: -90;
 }
 
-.menuDropdownOpen {
+.menuDropdownClose {
     -fx-translate-y: .03em;
     -fx-font-size: .91em;
     -fx-rotate: 0;
