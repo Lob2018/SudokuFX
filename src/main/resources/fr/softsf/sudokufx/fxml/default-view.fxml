@@ -9,8 +9,8 @@
 <?import javafx.scene.layout.Region?>
 <StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
-
-    <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu">
+<!--Mini menu-->
+    <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu" visible="false">
         <MenuButton fx:id="m11" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
@@ -57,6 +57,16 @@
                 </HBox>
             </graphic>
         </MenuButton>
+        <MenuButton fx:id="m15" styleClass="menuMiniButton">
+            <graphic>
+                <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                    <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen,hidden"/>
+                    <StackPane styleClass="menuButtonLevelBackground,colorResolve">
+                        <Text text="&#xf015;" styleClass="material"/>
+                    </StackPane>
+                </HBox>
+            </graphic>
+        </MenuButton>
         <MenuButton fx:id="m16" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
@@ -98,10 +108,9 @@
             </graphic>
         </MenuButton>
     </VBox>
-
-
-    <VBox fx:id="menu" alignment="CENTER" styleClass="menu" visible="false">
-        <MenuButton fx:id="m1" styleClass="menuButton">
+<!--Maxi menu-->
+    <VBox fx:id="menu" alignment="CENTER" styleClass="menu">
+        <MenuButton fx:id="m0" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen,hidden"/>
@@ -110,7 +119,7 @@
                 </HBox>
             </graphic>
         </MenuButton>
-        <MenuButton fx:id="m2" styleClass="menuButton">
+        <MenuButton fx:id="m1" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -119,7 +128,7 @@
                 </HBox>
             </graphic>
         </MenuButton>
-        <MenuButton fx:id="m3" styleClass="menuButton">
+        <MenuButton fx:id="m2" styleClass="menuButton">
             <graphic>
                 <HBox>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -140,7 +149,7 @@
                 </HBox>
             </graphic>
         </MenuButton>
-        <MenuButton fx:id="m4" styleClass="menuButton,colorMedium">
+        <MenuButton fx:id="m3" styleClass="menuButton,colorMedium">
             <graphic>
                 <HBox>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -161,7 +170,7 @@
                 </HBox>
             </graphic>
         </MenuButton>
-        <MenuButton fx:id="m5" styleClass="menuButton">
+        <MenuButton fx:id="m4" styleClass="menuButton">
             <graphic>
                 <HBox>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -178,6 +187,27 @@
                         <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
                         <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
                         <Text text="&#xe839;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
+                    </HBox>
+                </HBox>
+            </graphic>
+        </MenuButton>
+        <MenuButton fx:id="m5" styleClass="menuButton">
+            <graphic>
+                <HBox>
+                    <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
+                        <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen,hidden"/>
+                        <StackPane styleClass="menuButtonLevelBackground,colorResolve">
+                            <Text text="&#xf015;" styleClass="material"/>
+                        </StackPane>
+                        <Text text="Résoudre" styleClass="root,menuButtonText"/>
+                    </HBox>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <HBox alignment="CENTER_RIGHT" styleClass="menuHBoxRightContainer">
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
+                        <Text text="&#xe838;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
+                        <Text text="&#xe839;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
+                        <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
+                        <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
                     </HBox>
                 </HBox>
             </graphic>
@@ -228,5 +258,6 @@
             </graphic>
         </MenuButton>
     </VBox>
+<!--Toaster    -->
     <ToasterVBox fx:id="toaster"/>
 </StackPane>
