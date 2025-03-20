@@ -133,11 +133,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a149c25dfa7503f608c47688cfec7e59f" id="r_a149c25dfa7503f608c47688cfec7e59f"><td class="memItemLeft" align="right" valign="top">int[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a149c25dfa7503f608c47688cfec7e59f">creerLesGrilles</a> (final int niveau)</td></tr>
 <tr class="memdesc:a149c25dfa7503f608c47688cfec7e59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.  <br /></td></tr>
 <tr class="separator:a149c25dfa7503f608c47688cfec7e59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd6d1b4f01e548bf1a1735a7a2577af" id="r_a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd6d1b4f01e548bf1a1735a7a2577af">resoudreLaGrille</a> (final int[] grille)</td></tr>
-<tr class="separator:a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dd6d1b4f01e548bf1a1735a7a2577af" id="r_a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd6d1b4f01e548bf1a1735a7a2577af">resoudreLaGrille</a> (final int[] grille)</td></tr>
-<tr class="memdesc:a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku complète à partir d'une grille vide ou partiellement remplie.  <br /></td></tr>
-<tr class="separator:a8dd6d1b4f01e548bf1a1735a7a2577af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ddda731cd64c249d2b6bf061fc5732" id="r_ad9ddda731cd64c249d2b6bf061fc5732"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9ddda731cd64c249d2b6bf061fc5732">resoudreLaGrille</a> (final int[] grille)</td></tr>
+<tr class="separator:ad9ddda731cd64c249d2b6bf061fc5732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ddda731cd64c249d2b6bf061fc5732" id="r_ad9ddda731cd64c249d2b6bf061fc5732"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9ddda731cd64c249d2b6bf061fc5732">resoudreLaGrille</a> (final int[] grille)</td></tr>
+<tr class="memdesc:ad9ddda731cd64c249d2b6bf061fc5732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Résout une grille de Sudoku en remplissant les cases vides avec des valeurs valides.  <br /></td></tr>
+<tr class="separator:ad9ddda731cd64c249d2b6bf061fc5732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
@@ -177,6 +177,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a87c5a8d088aaceea8e0ca03806e30bcf" id="r_a87c5a8d088aaceea8e0ca03806e30bcf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87c5a8d088aaceea8e0ca03806e30bcf">getPossibilitesGrilleWhileNok</a> (int[] grilleResolue, int[] grilleAResoudre, int nombreDeCasesACacher)</td></tr>
 <tr class="memdesc:a87c5a8d088aaceea8e0ca03806e30bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Masque des cases dans la grille et calcule la somme des possibilités restantes.  <br /></td></tr>
 <tr class="separator:a87c5a8d088aaceea8e0ca03806e30bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9a7f4937fa6dd8e52fb0af186958004" id="r_ac9a7f4937fa6dd8e52fb0af186958004"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9a7f4937fa6dd8e52fb0af186958004">getPourcentageDesPossibilites</a> (int sommeDesPossibilites)</td></tr>
+<tr class="memdesc:ac9a7f4937fa6dd8e52fb0af186958004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités fournies.  <br /></td></tr>
+<tr class="separator:ac9a7f4937fa6dd8e52fb0af186958004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bb14564ed4b6a7cded51e1bedc72faf" id="r_a5bb14564ed4b6a7cded51e1bedc72faf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bb14564ed4b6a7cded51e1bedc72faf">nombreAleatoire</a> (final int minInclus, final int maxExclus)</td></tr>
 <tr class="memdesc:a5bb14564ed4b6a7cded51e1bedc72faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère un nombre entier aléatoire dans un intervalle spécifié.  <br /></td></tr>
 <tr class="separator:a5bb14564ed4b6a7cded51e1bedc72faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -773,6 +776,41 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac9a7f4937fa6dd8e52fb0af186958004" name="ac9a7f4937fa6dd8e52fb0af186958004"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9a7f4937fa6dd8e52fb0af186958004">&#9670;&#160;</a></span>getPourcentageDesPossibilites()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.utils.sudoku.GridMaster.getPourcentageDesPossibilites </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sommeDesPossibilites</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités fournies. </p>
+<p>Le pourcentage est calculé selon la formule suivante : (sommeDesPossibilites - 4800) * 100 / (40000 - 4800) Le résultat est ensuite limité à une plage de 0 à 100 pour garantir qu'il représente un pourcentage valide.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sommeDesPossibilites</td><td>La somme des possibilités à partir de laquelle le pourcentage est calculé. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Le pourcentage des possibilités, compris entre 0 et 100. </dd></dl>
+
+</div>
+</div>
 <a id="ad1a85240278a682b9cf73c8d8ec6398d" name="ad1a85240278a682b9cf73c8d8ec6398d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1a85240278a682b9cf73c8d8ec6398d">&#9670;&#160;</a></span>initialiserPossibilites()</h2>
 
@@ -949,14 +987,14 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a8dd6d1b4f01e548bf1a1735a7a2577af" name="a8dd6d1b4f01e548bf1a1735a7a2577af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd6d1b4f01e548bf1a1735a7a2577af">&#9670;&#160;</a></span>resoudreLaGrille() <span class="overload">[1/2]</span></h2>
+<a id="ad9ddda731cd64c249d2b6bf061fc5732" name="ad9ddda731cd64c249d2b6bf061fc5732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9ddda731cd64c249d2b6bf061fc5732">&#9670;&#160;</a></span>resoudreLaGrille() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille </td>
+          <td class="memname">int[] fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille </td>
           <td>(</td>
           <td class="paramtype">final int[]</td>          <td class="paramname"><span class="paramname"><em>grille</em></span></td><td>)</td>
           <td></td>
@@ -968,19 +1006,19 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_a8dd6d1b4f01e548bf1a1735a7a2577af_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_ad9ddda731cd64c249d2b6bf061fc5732_cgraph.svg" width="100%" height="570"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
-<a id="a8dd6d1b4f01e548bf1a1735a7a2577af" name="a8dd6d1b4f01e548bf1a1735a7a2577af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dd6d1b4f01e548bf1a1735a7a2577af">&#9670;&#160;</a></span>resoudreLaGrille() <span class="overload">[2/2]</span></h2>
+<a id="ad9ddda731cd64c249d2b6bf061fc5732" name="ad9ddda731cd64c249d2b6bf061fc5732"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9ddda731cd64c249d2b6bf061fc5732">&#9670;&#160;</a></span>resoudreLaGrille() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille </td>
+          <td class="memname">int[] fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille </td>
           <td>(</td>
           <td class="paramtype">final int[]</td>          <td class="paramname"><span class="paramname"><em>grille</em></span></td><td>)</td>
           <td></td>
@@ -988,19 +1026,28 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Génère une grille de Sudoku complète à partir d'une grille vide ou partiellement remplie. </p>
-<p>Processus :</p><ol type="1">
-<li>Initialise ou utilise une grille existante.</li>
-<li>Prépare les possibilités pour chaque case.</li>
-<li>Remplit récursivement la grille : Trouve la case avec le moins d'options. Teste chaque valeur possible. Met à jour les possibilités des cases alentours. Continue jusqu'à ce que la grille soit complète ou pas.</li>
+<p>Résout une grille de Sudoku en remplissant les cases vides avec des valeurs valides. </p>
+<p>Le processus de résolution inclut les étapes suivantes :</p><ol type="1">
+<li>Calcule les possibilités pour chaque case de la grille.</li>
+<li>Remplit la grille en utilisant une approche récursive :<ul>
+<li>Identifie la case avec le moins d'options disponibles.</li>
+<li>Teste chaque valeur possible pour cette case.</li>
+<li>Met à jour les possibilités des cases adjacentes en fonction des valeurs placées.</li>
+<li>Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu'aucune solution ne soit trouvée.</li>
+</ul>
+</li>
 </ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grille</td><td>Tableau représentant la grille de Sudoku initiale (peut être partiellement remplie). </td></tr>
+    <tr><td class="paramname">grille</td><td>Tableau représentant la grille de Sudoku initiale, qui peut être vide ou partiellement remplie. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 si la grille est générée avec succès et cohérente, sinon -1. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Un tableau contenant deux éléments :<ul>
+<li>Le premier élément est 0 si la grille est générée avec succès et est cohérente, sinon -1.</li>
+<li>Le deuxième élément est le pourcentage des possibilités, compris entre 0 et 100, ou 0 si la grille n'est pas cohérente. </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -1481,7 +1528,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html">sudoku</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a></li>
-    <li class="footer">Generated on Wed Mar 12 2025 12:44:14 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Mar 20 2025 11:24:05 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

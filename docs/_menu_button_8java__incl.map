@@ -1,9 +1,5 @@
 <map id="src/main/java/fr/softsf/sudokufx/view/components/menu/MenuButton.java" name="src/main/java/fr/softsf/sudokufx/view/components/menu/MenuButton.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="203,5,388,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,186,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,67,139,108,137,103,229,62"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="210,112,381,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="298,64,298,96,293,96,293,64"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="406,112,556,139"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="357,62,442,103,440,107,355,67"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,190,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="7,112,188,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,64,100,96,95,96,95,64"/>
 </map>

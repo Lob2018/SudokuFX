@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.configuration.database.AbstractDataSourceConfig" name="fr.softsf.sudokufx.configuration.database.AbstractDataSourceConfig">
+<area shape="rect" id="Node000001" title="Abstract configuration class for setting up the application&#39;s data source." alt="" coords="301,5,553,251"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_cds.html" title="Overrides Abstract DataSource hikariDataSource for the CDS profile." alt="" coords="5,299,270,416"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,239,213,301,209,297,288,235"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_default.html" title="Overrides Abstract DataSource hikariDataSource for the default profile." alt="" coords="295,299,560,416"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="430,266,430,299,424,299,424,266"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_test.html" title="Overrides Abstract DataSource hikariDataSource for the test profile." alt="" coords="584,299,849,416"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="566,235,645,297,642,301,563,239"/>
+</map>

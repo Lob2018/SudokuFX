@@ -1,5 +1,10 @@
 var hierarchy =
 [
+    [ "fr.softsf.sudokufx.configuration.database.AbstractDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_abstract_data_source_config.html", [
+      [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_cds.html", null ],
+      [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigDefault", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_default.html", null ],
+      [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_test.html", null ]
+    ] ],
     [ "Application", null, [
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
     ] ],
@@ -9,11 +14,6 @@ var hierarchy =
     [ "Button", null, [
       [ "fr.softsf.sudokufx.view.components.menu.MenuButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html", null ],
       [ "fr.softsf.sudokufx.view.components.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", null ]
-    ] ],
-    [ "fr.softsf.sudokufx.configuration.database.DataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config.html", [
-      [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_cds.html", null ],
-      [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigDefault", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_default.html", null ],
-      [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_test.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.utils.DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", null ],
     [ "fr.softsf.sudokufx.exceptions.ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1exceptions_1_1_exception_tools.html", null ],

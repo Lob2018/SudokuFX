@@ -1,5 +1,7 @@
 var NAVTREEINDEX5 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html#adbfd2f7c4de2f141b51d6f2edf05f4aa":[2,0,0,0,0,4,1,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html#af884e643fe0085b4023cc5a3e9d37d39":[1,0,0,0,0,5,1,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html#af884e643fe0085b4023cc5a3e9d37d39":[2,0,0,0,0,4,1,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html":[1,0,0,0,0,5,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html":[2,0,0,0,0,4,2],
@@ -247,7 +249,5 @@ var NAVTREEINDEX5 =
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a2bf11cd440bc034da0fd092880011df4":[1,0,0,0,0,3,1,6,3],
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a2bf11cd440bc034da0fd092880011df4":[1,0,0,0,0,3,1,6,4],
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a2bf11cd440bc034da0fd092880011df4":[2,0,0,0,0,3,1,6,3],
-"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a2bf11cd440bc034da0fd092880011df4":[2,0,0,0,0,3,1,6,4],
-"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a6e9922a8593a4a1ca3f2f05189888ba9":[1,0,0,0,0,3,1,6,5],
-"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a6e9922a8593a4a1ca3f2f05189888ba9":[2,0,0,0,0,3,1,6,5]
+"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a2bf11cd440bc034da0fd092880011df4":[2,0,0,0,0,3,1,6,4]
 };

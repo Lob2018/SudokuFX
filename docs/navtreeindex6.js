@@ -1,5 +1,7 @@
 var NAVTREEINDEX6 =
 {
+"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a6e9922a8593a4a1ca3f2f05189888ba9":[1,0,0,0,0,3,1,6,5],
+"interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a6e9922a8593a4a1ca3f2f05189888ba9":[2,0,0,0,0,3,1,6,5],
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a70c5e7dcae93d1a40968b269ddd8e654":[1,0,0,0,0,3,1,6,6],
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#a70c5e7dcae93d1a40968b269ddd8e654":[2,0,0,0,0,3,1,6,6],
 "interfacefr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_windows_folder_factory.html#aa51df04a2fb2331c9c493872f8d94372":[1,0,0,0,0,3,1,6,1],

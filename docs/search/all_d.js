@@ -29,7 +29,7 @@ var searchData=
   ['measuresudo_26',['measureSudo',['../classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#a83424bf6ea858a7cc811cd70876f0a82',1,'fr::softsf::sudokufx::benchmark::BenchGridMaster']]],
   ['menu_27',['Menu',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html',1,'fr::softsf::sudokufx::model']]],
   ['menu_2ejava_28',['Menu.java',['../_menu_8java.html',1,'']]],
-  ['menubutton_29',['MenuButton',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html',1,'fr.softsf.sudokufx.view.components.menu.MenuButton'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html#ac51f6ab6695d01286ca1c29da99a1090',1,'fr.softsf.sudokufx.view.components.menu.MenuButton.MenuButton()']]],
+  ['menubutton_29',['MenuButton',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html',1,'fr.softsf.sudokufx.view.components.menu.MenuButton'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html#a6703ac6e29b716343e577084c967bedb',1,'fr.softsf.sudokufx.view.components.menu.MenuButton.MenuButton()']]],
   ['menubutton_2ejava_30',['MenuButton.java',['../_menu_button_8java.html',1,'']]],
   ['menudto_31',['MenuDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89',1,'fr::softsf::sudokufx::dto']]],
   ['menudto_2ejava_32',['MenuDto.java',['../_menu_dto_8java.html',1,'']]],

@@ -128,7 +128,7 @@
 <text text-anchor="start" x="234.75" y="-464.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="start" x="259.12" y="-452.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView</text>
 <text text-anchor="start" x="217" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.5" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button buttonHello</text>
+<text text-anchor="start" x="225.5" y="-436.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuButton button</text>
 <text text-anchor="start" x="217" y="-420.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="225.5" y="-420.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label githubVersion</text>
 <text text-anchor="start" x="217" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
