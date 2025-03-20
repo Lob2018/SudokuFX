@@ -146,6 +146,10 @@
     -fx-background-color: #99FFFF;
 }
 
+.colorError{
+    -fx-background-color: #E7CCFF;
+}
+
 .menuHBoxContainer {
     -fx-spacing: .35em;
     -fx-padding: 0 0 0 .3em;
