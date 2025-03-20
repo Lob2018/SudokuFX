@@ -44,10 +44,6 @@
     -fx-fill: #000000;
 }
 
-.hidden{
-    -fx-opacity: 0;
-}
-
 .button {
     -fx-cursor: hand;
 }
