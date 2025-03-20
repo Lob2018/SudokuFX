@@ -30,6 +30,7 @@
           </option>
           <option name="goals">
             <list>
+              <option value="clean" />
               <option value="versions:update-parent" />
               <option value="versions:update-properties" />
               <option value="-Dincludes=org.apache.maven.plugins:* -U" />

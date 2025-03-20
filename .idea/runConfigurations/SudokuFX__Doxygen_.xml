@@ -30,6 +30,7 @@
           </option>
           <option name="goals">
             <list>
+              <option value="clean" />
               <option value="prepare-package" />
               <option value="-P" />
               <option value="generate-docs" />
