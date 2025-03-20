@@ -354,11 +354,33 @@ final class GridMaster implements IGridMaster {
         return 0;
     }
 
+    /**
+     * Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités fournies.
+     * Le pourcentage est calculé selon la formule suivante :
+     * (sommeDesPossibilites - 4800) * 100 / (40000 - 4800)
+     * Le résultat est ensuite limité à une plage de 0 à 100 pour garantir qu'il représente un pourcentage valide.
+     *
+     * @param sommeDesPossibilites La somme des possibilités à partir de laquelle le pourcentage est calculé.
+     * @return Le pourcentage des possibilités, compris entre 0 et 100.
+     */
+    private int getPourcentageDesPossibilites(int sommeDesPossibilites) {
+        // le pourcentage de possibilités estimé
+        int pourcentageDesPossibilites = ((sommeDesPossibilites - 4800) * 100) / (40000 - 4800);
+        // Limiter le pourcentage entre 0 et 100
+        pourcentageDesPossibilites = pourcentageDesPossibilites < 0 ? 0 : Math.min(pourcentageDesPossibilites, 100);
+        return pourcentageDesPossibilites;
+    }
+
     @Override
-    public int resoudreLaGrille(final int[] grille) {
+    public int[] resoudreLaGrille(final int[] grille) {
+        // Calcul des possibilités pour chaque case
         int[] possibilites = getPossibilites(grille);
         remplirLaGrille(grille, possibilites);
-        return verifierLaCoherenceEntreLaGrilleEtLesPossibilites(grille, possibilites);
+        // Calcul la somme des possibilités de toutes les cases
+        int sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilites);
+        // Vérifie la cohérence de la grille
+        int coherence = verifierLaCoherenceEntreLaGrilleEtLesPossibilites(grille, possibilites);
+        return new int[]{coherence, coherence == 0 ? getPourcentageDesPossibilites(sommeDesPossibilites) : 0};
     }
 
     @Override
@@ -371,10 +393,8 @@ final class GridMaster implements IGridMaster {
         int[] grilleAResoudre = new int[NOMBRE_CASES];
         // En fonction du niveau, cacher un certain nombre de cases et tenir compte des possibilités
         int sommeDesPossibilites = genererLaGrilleAResoudre(niveau, grilleResolue, grilleAResoudre);
-        // le pourcentage de possibilités estimé
-        int pourcentageDesPossibilites = ((sommeDesPossibilites - 4800) * 100) / (40000 - 4800);
-        // Limiter le pourcentage entre 0 et 100
-        pourcentageDesPossibilites = pourcentageDesPossibilites < 0 ? 0 : Math.min(pourcentageDesPossibilites, 100);
+        // Récupérer le pourcentage de possibilités estimé
+        int pourcentageDesPossibilites = getPourcentageDesPossibilites(sommeDesPossibilites);
         return new int[][]{grilleResolue, grilleAResoudre, new int[]{pourcentageDesPossibilites}};
     }
 

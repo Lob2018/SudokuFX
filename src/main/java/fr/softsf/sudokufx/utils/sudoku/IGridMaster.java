@@ -22,18 +22,20 @@ public sealed interface IGridMaster permits GridMaster {
     int[][] creerLesGrilles(final int niveau);
 
     /**
-     * Génère une grille de Sudoku complète à partir d'une grille vide ou partiellement remplie.
-     * Processus :
-     * 1. Initialise ou utilise une grille existante.
-     * 2. Prépare les possibilités pour chaque case.
-     * 3. Remplit récursivement la grille :
-     * Trouve la case avec le moins d'options.
-     * Teste chaque valeur possible.
-     * Met à jour les possibilités des cases alentours.
-     * Continue jusqu'à ce que la grille soit complète ou pas.
+     * Résout une grille de Sudoku en remplissant les cases vides avec des valeurs valides.
+     * Le processus de résolution inclut les étapes suivantes :
+     * 1. Calcule les possibilités pour chaque case de la grille.
+     * 2. Remplit la grille en utilisant une approche récursive :
+     *    - Identifie la case avec le moins d'options disponibles.
+     *    - Teste chaque valeur possible pour cette case.
+     *    - Met à jour les possibilités des cases adjacentes en fonction des valeurs placées.
+     *    - Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu'aucune solution ne soit trouvée.
      *
-     * @param grille Tableau représentant la grille de Sudoku initiale (peut être partiellement remplie).
-     * @return 0 si la grille est générée avec succès et cohérente, sinon -1.
-     **/
-    int resoudreLaGrille(final int[] grille);
+     * @param grille Tableau représentant la grille de Sudoku initiale, qui peut être vide ou partiellement remplie.
+     * @return Un tableau contenant deux éléments :
+     *         - Le premier élément est 0 si la grille est générée avec succès et est cohérente, sinon -1.
+     *         - Le deuxième élément est le pourcentage des possibilités, compris entre 0 et 100,
+     *           ou 0 si la grille n'est pas cohérente.
+     */
+    int[] resoudreLaGrille(final int[] grille);
 }
