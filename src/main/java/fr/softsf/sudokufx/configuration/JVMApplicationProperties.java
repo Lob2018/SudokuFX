@@ -14,6 +14,7 @@ public enum JVMApplicationProperties {
 
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";
+    private static final String ON_REFRESH = "onRefresh";
     private String springContextExitOnRefresh = "spring.context.exit";
     private String appName = "";
     private String appVersion = "";
@@ -27,9 +28,9 @@ public enum JVMApplicationProperties {
     public boolean isSpringContextExitOnRefresh() {
         if (springContextExit == null) {
             springContextExit = System.getProperty(springContextExitOnRefresh);
-            return Objects.equals(springContextExit, "onRefresh");
+            return Objects.equals(springContextExit, ON_REFRESH);
         }
-        return "onRefresh".equals(springContextExit);
+        return ON_REFRESH.equals(springContextExit);
     }
 
     /**
@@ -77,7 +78,7 @@ public enum JVMApplicationProperties {
      * Sets the Spring context exit behavior to "onRefresh" for testing purposes.
      */
     void setOnRefreshSpringContextExitForTests() {
-        springContextExit = "onRefresh";
+        springContextExit = ON_REFRESH;
     }
 
     /**
