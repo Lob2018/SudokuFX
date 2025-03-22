@@ -3,7 +3,7 @@ package fr.softsf.sudokufx.interfaces;
 /**
  * Interface defining method to open the main stage.
  */
-public interface IMainStageView {
+public interface IMainView {
 
     /**
      * Opens the main stage

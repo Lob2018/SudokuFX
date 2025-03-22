@@ -3,7 +3,7 @@ package fr.softsf.sudokufx;
 import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudokufx.enums.LogBackTxt;
 import fr.softsf.sudokufx.exceptions.ExceptionTools;
-import fr.softsf.sudokufx.interfaces.IMainStageView;
+import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.enums.I18n;
@@ -44,8 +44,8 @@ public class SudoMain extends Application {
     @Getter
     private static Scene scene;
     private final SpringContext context = new SpringContext(this);
-    private ISplashScreenView isplashScreenView;
-    private IMainStageView iMainStageView;
+    private ISplashScreenView iSplashScreenView;
+    private IMainView iMainView;
     /**
      * Task to initialize the Spring context asynchronously, preventing UI blockages.
      * This runs {@code SpringApplication.run(SudoMain.class)} in a separate thread
@@ -111,7 +111,7 @@ public class SudoMain extends Application {
     public void start(final Stage splashScreenStage) {
         try {
             I18n.INSTANCE.setLanguageBasedOnTheHostEnvironment();
-            isplashScreenView = new SplashScreenView(splashScreenStage);
+            iSplashScreenView = new SplashScreenView(splashScreenStage);
             long startTime = System.currentTimeMillis();
             initScene(splashScreenStage);
             new Thread(springContextTask).start();
@@ -188,8 +188,8 @@ public class SudoMain extends Application {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(e -> {
             fxmlService.setRootByFXMLName(fxmlName);
-            iMainStageView = fxmlService.getController();
-            iMainStageView.openingMainStage(isplashScreenView);
+            iMainView = fxmlService.getController();
+            iMainView.openingMainStage(iSplashScreenView);
         });
         return pause;
     }

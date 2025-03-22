@@ -3,7 +3,7 @@ package fr.softsf.sudokufx.view;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.enums.ToastLevels;
-import fr.softsf.sudokufx.interfaces.IMainStageView;
+import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
@@ -36,7 +36,7 @@ import java.util.Objects;
  * responsible for displaying and managing the full menu UI.
  */
 @Slf4j
-public final class FullMenuView implements IMainStageView, ISceneProvider {
+public final class FullMenuView implements IMainView, ISceneProvider {
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Text text1 = new Text("Helloj! ");

@@ -41,7 +41,7 @@ import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
  * responsible for displaying and managing the crash screen UI.
  */
 @Slf4j
-public final class CrashScreenView implements IMainStageView, ISceneProvider {
+public final class CrashScreenView implements IMainView, ISceneProvider {
 
     private static final IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
     private static final IFileSystem iFileSystem = new FileSystemManager();
