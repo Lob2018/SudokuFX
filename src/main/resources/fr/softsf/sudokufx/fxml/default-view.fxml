@@ -3,66 +3,66 @@
 <?import fr.softsf.sudokufx.view.components.toaster.ToasterVBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
-<?import fr.softsf.sudokufx.view.components.menu.MenuButton?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.Button?>
 <StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
     <!---->
     <!--Hidden menu-->
     <!---->
     <VBox fx:id="menuHidden" alignment="CENTER" styleClass="menu" visible="false">
-        <MenuButton fx:id="menuHiddenButtonShow" styleClass="menuMiniButton">
+        <Button fx:id="menuHiddenButtonShow" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
                     <Text text="&#xe9bd;" styleClass="material,menuOpen"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
-        <MenuButton styleClass="menuMiniButton" visible="false">
-        </MenuButton>
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
+        <Button styleClass="menuMiniButton" visible="false">
+        </Button>
     </VBox>
     <!---->
     <!--Mini menu-->
     <!---->
     <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu" visible="false">
-        <MenuButton fx:id="menuMiniButtonShow" styleClass="menuMiniButton">
+        <Button fx:id="menuMiniButtonShow" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
                     <Text text="&#xe9bd;" styleClass="material,menuOpen"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonPlayer" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonPlayer" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
                     <Text text="&#xe853;" styleClass="material"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonEasy" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonEasy" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
@@ -71,8 +71,8 @@
                     </StackPane>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonMedium" styleClass="menuMiniButton,colorMedium">
+        </Button>
+        <Button fx:id="menuMiniButtonMedium" styleClass="menuMiniButton,colorMedium">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
@@ -81,8 +81,8 @@
                     </StackPane>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonDifficult" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonDifficult" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
@@ -91,8 +91,8 @@
                     </StackPane>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonSolve" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonSolve" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
@@ -101,53 +101,53 @@
                     </StackPane>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonBackup" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonBackup" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
                     <Text text="&#xe161;" styleClass="material"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonBackground" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonBackground" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
                     <Text text="&#xe3f4;" styleClass="material"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonLanguage" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonLanguage" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
                     <Text fx:id="menuMiniButtonLanguageIso" styleClass="root,bold-text,menuButtonText"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonHelp" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonHelp" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
                     <Text text="&#xe887;" styleClass="material"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMiniButtonNew" styleClass="menuMiniButton">
+        </Button>
+        <Button fx:id="menuMiniButtonNew" styleClass="menuMiniButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
                     <Text text="&#xe031;" styleClass="material"/>
                 </HBox>
             </graphic>
-        </MenuButton>
+        </Button>
     </VBox>
     <!---->
     <!--Maxi menu-->
     <!---->
     <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu">
-        <MenuButton fx:id="menuMaxiButtonReduce" styleClass="menuButton">
+        <Button fx:id="menuMaxiButtonReduce" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
@@ -155,8 +155,8 @@
                     <Text fx:id="menuMaxiButtonReduceText" styleClass="root,menuButtonText"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonPlayer" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonPlayer" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -164,8 +164,8 @@
                     <Text fx:id="menuMaxiButtonPlayerText" styleClass="root,bold-text,menuButtonText"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonEasy" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonEasy" styleClass="menuButton">
             <graphic>
                 <HBox>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -185,8 +185,8 @@
                     </HBox>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonMedium" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonMedium" styleClass="menuButton">
             <graphic>
                 <HBox>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -206,8 +206,8 @@
                     </HBox>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonDifficult" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonDifficult" styleClass="menuButton">
             <graphic>
                 <HBox>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -227,8 +227,8 @@
                     </HBox>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonSolve" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonSolve" styleClass="menuButton">
             <graphic>
                 <HBox>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -248,8 +248,8 @@
                     </HBox>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonBackup" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonBackup" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -257,8 +257,8 @@
                     <Text fx:id="menuMaxiButtonBackuptext" styleClass="root,menuButtonText"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonBackground" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonBackground" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -266,8 +266,8 @@
                     <Text fx:id="menuMaxiButtonBackgroundText" styleClass="root,menuButtonText"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonLanguage" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonLanguage" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
@@ -275,8 +275,8 @@
                     <Text fx:id="menuMaxiButtonLanguageText" styleClass="root,menuButtonText"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonHelp" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonHelp" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
@@ -284,8 +284,8 @@
                     <Text fx:id="menuMaxiButtonHelpText" styleClass="root,menuButtonText"/>
                 </HBox>
             </graphic>
-        </MenuButton>
-        <MenuButton fx:id="menuMaxiButtonNew" styleClass="menuButton">
+        </Button>
+        <Button fx:id="menuMaxiButtonNew" styleClass="menuButton">
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen" visible="false"/>
@@ -293,7 +293,7 @@
                     <Text fx:id="menuMaxiButtonNewText" styleClass="root,menuButtonText"/>
                 </HBox>
             </graphic>
-        </MenuButton>
+        </Button>
     </VBox>
     <!---->
     <!--Toaster-->
