@@ -35,6 +35,7 @@
     -fx-font-size: 1.28em;
     -fx-line-spacing: 1.5;
     -fx-fill: #000000;
+    -fx-text-fill: #000000;
 }
 
 .root {
@@ -42,6 +43,7 @@
     -fx-font-size: 1em;
     -fx-line-spacing: 1.5;
     -fx-fill: #000000;
+    -fx-text-fill: #000000;
 }
 
 .button {
@@ -242,6 +244,13 @@
     -fx-translate-x: -0.8em;
 }
 
-.menuButtonText {
-    -fx-translate-y: .1em;
+.menuButtonLabelIso {
+    -fx-font-size: .88em;
+}
+
+.menuButtonLabel {
+    -fx-padding:0;
+    -fx-max-width: 9em;
+    -fx-text-overrun: ellipsis;
+    -fx-background-color: transparent;
 }
