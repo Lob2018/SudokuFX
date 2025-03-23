@@ -62,10 +62,10 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html" target="_top" xlink:title="Interface defining method to open the main stage.">
+<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html" target="_top" xlink:title="Interface defining method to open the main stage.">
 <polygon fill="white" stroke="none" points="172.5,-678 0,-678 0,-590 172.5,-590 172.5,-678"/>
 <text text-anchor="start" x="23.62" y="-664.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
-<text text-anchor="start" x="50.62" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainStageView</text>
+<text text-anchor="start" x="63.38" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainView</text>
 <text text-anchor="start" x="84.75" y="-636.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <text text-anchor="start" x="4" y="-620.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-620.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>

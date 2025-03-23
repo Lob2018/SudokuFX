@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,47,65,73"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1menu_1_1_menu_button.html" title="A common menu button with Material icons and text." alt="" coords="117,5,385,48"/>
-<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="80,51,116,45,117,50,80,56"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="113,72,389,115"/>
-<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="80,64,113,69,112,75,80,69"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,65,40"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="113,5,389,48"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="80,24,112,24,112,29,80,29"/>
 </map>

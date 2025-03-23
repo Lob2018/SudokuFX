@@ -14,6 +14,7 @@ var enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properti
     [ "appName", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a19667f7eb4092cccbc99ee243ef6459a", null ],
     [ "appVersion", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a875f740b3572e5235b6de2afab977ce3", null ],
     [ "INSTANCE", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#ae68f0e29dfe4540baf00a0f1d088203f", null ],
+    [ "ON_REFRESH", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aa14e09c7581b65345f4a4f1f84b10bad", null ],
     [ "springContextExit", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a7a1add4ead1253c4fda8e9da9b8867f8", null ],
     [ "springContextExitOnRefresh", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a167b8d79d55c772b22a5bb5ca8cdb5d2", null ]
 ];

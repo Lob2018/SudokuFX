@@ -20,9 +20,9 @@
 <text text-anchor="start" x="5.5" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">FxmlService fxmlService</text>
 <text text-anchor="start" x="5.5" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainStageView iMainStageView</text>
+<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainView iMainView</text>
 <text text-anchor="start" x="5.5" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISplashScreenView isplash</text>
+<text text-anchor="start" x="14" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISplashScreenView iSplash</text>
 <text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">ScreenView</text>
 <text text-anchor="start" x="5.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Task&lt; Void &gt;</text>

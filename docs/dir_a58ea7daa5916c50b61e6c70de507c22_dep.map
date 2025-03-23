@@ -1,6 +1,5 @@
 <map id="src/main/java/fr/softsf/sudokufx/view/components" name="src/main/java/fr/softsf/sudokufx/view/components">
-<area shape="rect" id="node2" href="dir_696bbc7304a4dbe470627d185b9eb48e.html" title="menu" alt="" coords="155,64,208,91"/>
-<area shape="rect" id="node3" href="dir_e88d9e73c6e0437a7513b0750f81d5b5.html" title="toaster" alt="" coords="232,64,293,91"/>
-<area shape="rect" id="clust2" href="dir_a58ea7daa5916c50b61e6c70de507c22.html" alt="" coords="27,53,304,101"/>
-<area shape="rect" id="clust1" href="dir_664d5835105ddaaeb330d567537f6eef.html" title="view" alt="" coords="16,16,315,112"/>
+<area shape="rect" id="node2" href="dir_e88d9e73c6e0437a7513b0750f81d5b5.html" title="toaster" alt="" coords="155,64,216,91"/>
+<area shape="rect" id="clust2" href="dir_a58ea7daa5916c50b61e6c70de507c22.html" alt="" coords="27,53,227,101"/>
+<area shape="rect" id="clust1" href="dir_664d5835105ddaaeb330d567537f6eef.html" title="view" alt="" coords="16,16,237,112"/>
 </map>

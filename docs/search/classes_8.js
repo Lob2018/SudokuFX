@@ -6,7 +6,7 @@ var searchData=
   ['igamelevelmapper_3',['IGameLevelMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['igamemapper_4',['IGameMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_game_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['igridmapper_5',['IGridMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
-  ['imainstageview_6',['IMainStageView',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_stage_view.html',1,'fr::softsf::sudokufx::interfaces']]],
+  ['imainview_6',['IMainView',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html',1,'fr::softsf::sudokufx::interfaces']]],
   ['imenumapper_7',['IMenuMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['iplayerlanguagemapper_8',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
   ['iplayermapper_9',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],

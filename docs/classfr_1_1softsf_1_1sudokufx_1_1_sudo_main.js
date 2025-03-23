@@ -10,8 +10,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1_sudo_main =
     [ "start", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ad12f6778560c28ec6b0e85dec1074a1b", null ],
     [ "context", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a2f1a22f74c20256e9598246c07b7e849", null ],
     [ "fxmlService", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a157bd6259c6b80ac66f52c80860d82e1", null ],
-    [ "iMainStageView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#adc6ce5bc2ff2ef8936339a0ff7af50b5", null ],
-    [ "isplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a23e016b1db2d39f8b2ab09c12afcd958", null ],
+    [ "iMainView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5c7edddbb48f485df00edd6b29959ba4", null ],
+    [ "iSplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aebbc7ede26b016d9caa1e29247dd7180", null ],
     [ "scene", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#acd04137840e8c91a591b1401685084ee", null ],
     [ "springContextTask", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7a44ca01808ecbb7aec4a4ab17436d87", null ]
 ];
