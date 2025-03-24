@@ -38,7 +38,8 @@
     -fx-text-fill: #000000;
 }
 
-.root,.menuList .list-cell {
+.root,
+.menuList .list-cell {
     -fx-font-family: 'Luciole';
     -fx-font-size: 1em;
     -fx-line-spacing: 1.5;
@@ -46,7 +47,9 @@
     -fx-text-fill: #000000;
 }
 
-.button,.scroll-bar,.list-view {
+.button,
+.scroll-bar,
+.list-view {
     -fx-cursor: hand;
 }
 
@@ -56,19 +59,45 @@
     -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
 }
 
-.list-view {
+.menuList .scroll-bar {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menuList .scroll-bar .thumb {
+    -fx-background-radius: .9em;
+}
+
+.scroll-bar>.increment-button>.increment-arrow,
+.scroll-bar>.decrement-button>.decrement-arrow {
+    -fx-background-color: black;
+}
+
+.scroll-bar>.increment-button,
+.scroll-bar>.decrement-button {
+    -fx-padding: .4em .25em .4em .25em;
+}
+
+.menuList {
+    -fx-background-color: transparent;
+}
+
+.menuList .viewport {
+    -fx-background-color: transparent;
+}
+
+.menuList .list-view {
     -fx-background-color: transparent;
 }
 
 .menuList .list-cell {
-    -fx-background-color: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
     -fx-border-width: .2em;
     -fx-border-color: transparent;
     -fx-padding: 0.07em 0.5em 0.07em 0.5em;
 }
 
 .menuList .list-cell:focused {
-    -fx-background-color: transparent;
+    -fx-background-color: #DDDDDD;
     -fx-border-width: .2em;
     -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
 }
@@ -127,7 +156,7 @@
 
 .menu {
     -fx-spacing: 0.79em;
-    -fx-background-color: #FEBE98;
+    -fx-background-color: #00FF00;
 }
 
 .menuButton {
@@ -150,23 +179,23 @@
     -fx-background-color: rgba(255, 255, 255, 0.8);
 }
 
-.colorEasy{
+.colorEasy {
     -fx-background-color: #AAFF99;
 }
 
-.colorMedium{
+.colorMedium {
     -fx-background-color: #F1FF99;
 }
 
-.colorDifficult{
+.colorDifficult {
     -fx-background-color: #FEBE98;
 }
 
-.colorResolve{
+.colorResolve {
     -fx-background-color: #99FFFF;
 }
 
-.colorError{
+.colorError {
     -fx-background-color: #E7CCFF;
 }
 
@@ -177,14 +206,14 @@
     -fx-max-width: 12.5em;
 }
 
-.menuMaxiHBoxContainer{
+.menuMaxiHBoxContainer {
     -fx-spacing: .35em;
     -fx-pref-width: 14.5em;
     -fx-max-width: 14.5em;
     -fx-min-width: 14.5em;
 }
 
-.menuButtonCircle{
+.menuButtonCircle {
     -fx-pref-width: 1.64em;
     -fx-max-width: 1.64em;
     -fx-min-width: 1.64em;
@@ -198,7 +227,7 @@
     -fx-font-size: 1em;
 }
 
-.menuClose{
+.menuClose {
     -fx-rotate: -180;
 }
 
@@ -234,7 +263,7 @@
     -fx-min-width: 4.5em;
 }
 
-.menuButtonLevelBackground{
+.menuButtonLevelBackground {
     -fx-pref-height: 1.25em;
     -fx-max-height: 1.25em;
     -fx-min-height: 1.25em;
@@ -269,13 +298,13 @@
 }
 
 .menuButtonLabel {
-    -fx-padding:0;
+    -fx-padding: 0;
     -fx-max-width: 9em;
     -fx-text-overrun: ellipsis;
     -fx-background-color: transparent;
 }
 
-.submenuIndentation{
+.submenuIndentation {
     -fx-pref-width: 0;
     -fx-max-width: 0;
     -fx-min-width: 0;
@@ -285,7 +314,7 @@
     -fx-padding: 0;
 }
 
-.menuList{
+.menuList {
     -fx-pref-width: 13.35em;
     -fx-max-width: 13.35em;
     -fx-min-width: 13.35em;

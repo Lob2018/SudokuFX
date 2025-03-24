@@ -180,7 +180,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuPlayerButtonPlayerEdit.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.player.edit.accessibility"));
 
         for (int i = 1; i <= 20; i++) {
-            menuPlayerListView.getItems().add("Joueur " + i+1000000000+"AAAAAAAAAAAAAAAAAAAAAAAAA");
+            menuPlayerListView.getItems().add("Joueur " + i+" AAAAAAAAAAAAAAAAAAAAAAAAA");
         }
         menuPlayerListView.setCellFactory(param -> new SelectListCell(menuPlayerListView, "\uef67", "Accessibility", "Message de confirmation"));
 
