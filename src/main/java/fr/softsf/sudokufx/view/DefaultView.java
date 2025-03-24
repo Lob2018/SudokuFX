@@ -6,6 +6,7 @@ import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.view.components.list.SelectListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
@@ -13,6 +14,7 @@ import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 
 import javafx.scene.text.Text;
@@ -21,6 +23,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
+import org.hibernate.cache.spi.support.AbstractReadWriteAccess;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Objects;
@@ -112,6 +115,12 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private Button menuMaxiButtonNew;
     @FXML
     private Label menuMaxiButtonNewText;
+    @FXML
+    private Button menuPlayerButtonPlayerEdit;
+
+
+    @FXML
+    private ListView<String> menuPlayerListView;
 
 
     /**
@@ -168,6 +177,12 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuMaxiButtonHelpText.setText(I18n.INSTANCE.getValue("menu.maxi.button.help.text"));
         menuMaxiButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.new.accessibility"));
         menuMaxiButtonNewText.setText(I18n.INSTANCE.getValue("menu.maxi.button.new.text"));
+        menuPlayerButtonPlayerEdit.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.player.edit.accessibility"));
+
+        for (int i = 1; i <= 20; i++) {
+            menuPlayerListView.getItems().add("Joueur " + i+1000000000+"AAAAAAAAAAAAAAAAAAAAAAAAA");
+        }
+        menuPlayerListView.setCellFactory(param -> new SelectListCell(menuPlayerListView, "\uef67", "Accessibility", "Message de confirmation"));
 
     }
 

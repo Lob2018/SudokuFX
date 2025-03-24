@@ -38,7 +38,7 @@
     -fx-text-fill: #000000;
 }
 
-.root {
+.root,.menuList .list-cell {
     -fx-font-family: 'Luciole';
     -fx-font-size: 1em;
     -fx-line-spacing: 1.5;
@@ -46,13 +46,30 @@
     -fx-text-fill: #000000;
 }
 
-.button {
+.button,.scroll-bar,.list-view {
     -fx-cursor: hand;
 }
 
 .button:focused {
     -fx-border-width: .2em;
     -fx-border-insets: -.2em;
+    -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
+}
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.menuList .list-cell {
+    -fx-background-color: transparent;
+    -fx-border-width: .2em;
+    -fx-border-color: transparent;
+    -fx-padding: 0.07em 0.5em 0.07em 0.5em;
+}
+
+.menuList .list-cell:focused {
+    -fx-background-color: transparent;
+    -fx-border-width: .2em;
     -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
 }
 
@@ -162,6 +179,9 @@
 
 .menuMaxiHBoxContainer{
     -fx-spacing: .35em;
+    -fx-pref-width: 14.5em;
+    -fx-max-width: 14.5em;
+    -fx-min-width: 14.5em;
 }
 
 .menuButtonCircle{
@@ -253,4 +273,30 @@
     -fx-max-width: 9em;
     -fx-text-overrun: ellipsis;
     -fx-background-color: transparent;
+}
+
+.submenuIndentation{
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+    -fx-min-width: 0;
+    -fx-pref-height: 1.64em;
+    -fx-max-height: 1.64em;
+    -fx-min-height: 1.64em;
+    -fx-padding: 0;
+}
+
+.menuList{
+    -fx-pref-width: 13.35em;
+    -fx-max-width: 13.35em;
+    -fx-min-width: 13.35em;
+    -fx-pref-height: 6.55em;
+    -fx-max-height: 6.55em;
+    -fx-min-height: 6.55em;
+    -fx-padding: 0;
+}
+
+.menuListLineContainer {
+    -fx-alignment: center-left;
+    -fx-spacing: .4em;
+    -fx-padding: 0;
 }

@@ -8,6 +8,8 @@
 <?import javafx.scene.layout.Region?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
 <StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
     <!---->
@@ -18,30 +20,20 @@
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Region styleClass="menuDropdownOpen" visible="false"/>
-                    <Text text="&#xe9bd;" styleClass="material,menuOpen"/>
+                    <Text text="&#xe9bd;" styleClass="material"/>
                 </HBox>
             </graphic>
         </Button>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
-        <Region styleClass="menuMiniButton" visible="false">
-        </Region>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
     </VBox>
     <!---->
     <!--Mini menu-->
@@ -51,7 +43,7 @@
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Region styleClass="menuDropdownOpen" visible="false"/>
-                    <Text text="&#xe9bd;" styleClass="material,menuOpen"/>
+                    <Text text="&#xe9bd;" styleClass="material"/>
                 </HBox>
             </graphic>
         </Button>
@@ -123,7 +115,8 @@
             <graphic>
                 <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                     <Region styleClass="menuDropdownOpen" visible="false"/>
-                    <Label fx:id="menuMiniButtonLanguageIso" styleClass="root,bold-text,menuButtonLabel,menuButtonLabelIso"/>
+                    <Label fx:id="menuMiniButtonLanguageIso"
+                           styleClass="root,bold-text,menuButtonLabel,menuButtonLabelIso"/>
                 </HBox>
             </graphic>
         </Button>
@@ -147,7 +140,7 @@
     <!---->
     <!--Maxi menu-->
     <!---->
-    <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu">
+    <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu" visible="false">
         <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
             <Button fx:id="menuMaxiButtonReduce" styleClass="menuButton">
                 <graphic>
@@ -266,7 +259,8 @@
                     </HBox>
                 </graphic>
             </Button>
-            <Button fx:id="menuMaxiButtonSolveClear" text="&#xe16c;" styleClass="menuButtonCircle, material" visible="false"/>
+            <Button fx:id="menuMaxiButtonSolveClear" text="&#xe16c;" styleClass="menuButtonCircle, material"
+                    visible="false"/>
         </HBox>
         <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
             <Button fx:id="menuMaxiButtonBackup" styleClass="menuButton">
@@ -297,7 +291,8 @@
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
-                        <Label fx:id="menuMaxiButtonLanguageIso" styleClass="root,bold-text,menuButtonLabel,menuButtonLabelIso"/>
+                        <Label fx:id="menuMaxiButtonLanguageIso"
+                               styleClass="root,bold-text,menuButtonLabel,menuButtonLabelIso"/>
                         <Label fx:id="menuMaxiButtonLanguageText" styleClass="root,menuButtonLabel"/>
                     </HBox>
                 </graphic>
@@ -329,6 +324,61 @@
             <Region styleClass="menuButtonCircle" visible="false"/>
         </HBox>
     </VBox>
+    <!---->
+    <!--Player menu (submenu)-->
+    <!---->
+    <VBox fx:id="menuPlayer" alignment="CENTER" styleClass="menu">
+        <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+            <Button fx:id="menuPlayerButtonReduce" styleClass="menuButton">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                        <Region styleClass="menuDropdownOpen" visible="false"/>
+                        <Text text="&#xe9bd;" styleClass="material,menuClose"/>
+                        <Label fx:id="menuPlayerButtonReduceText" styleClass="root,menuButtonLabel"/>
+                    </HBox>
+                </graphic>
+            </Button>
+            <Region styleClass="menuButtonCircle" visible="false"/>
+        </HBox>
+        <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+            <Button fx:id="menuPlayerButtonPlayer" styleClass="menuButton">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                        <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
+                        <Text text="&#xe853;" styleClass="material"/>
+                        <Label fx:id="menuPlayerButtonPlayerText" styleClass="root,bold-text,menuButtonLabel"/>
+                    </HBox>
+                </graphic>
+            </Button>
+            <Button fx:id="menuPlayerButtonPlayerEdit" text="&#xe3c9;" styleClass="menuButtonCircle, material"/>
+        </HBox>
+        <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+            <Region styleClass="submenuIndentation" visible="false"/>
+            <Button fx:id="menuPlayerButtonNew" styleClass="menuButton">
+                <graphic>
+                    <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                        <Region styleClass="menuDropdownOpen" visible="false"/>
+                        <Text text="&#xef65;" styleClass="material"/>
+                        <Label fx:id="menuPlayerButtonNewText" styleClass="root,menuButtonLabel"/>
+                    </HBox>
+                </graphic>
+            </Button>
+        </HBox>
+        <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+            <Region styleClass="submenuIndentation" visible="false"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <ScrollPane styleClass="menuList">
+                <ListView fx:id="menuPlayerListView" styleClass="menuList"/>
+            </ScrollPane>
+        </HBox>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+        <Region styleClass="menuMiniButton" visible="false"/>
+    </VBox>
+
+
     <!---->
     <!--Toaster-->
     <!---->
