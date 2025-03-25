@@ -34,27 +34,19 @@ public final class ItemListCell extends ListCell<String> {
         this.listView = Objects.requireNonNull(listView, "The listView inside ItemListCell must not be null");
         this.confirmationTitle = Objects.requireNonNull(confirmationTitle, "The confirmationTitle inside ItemListCell must not be null");
         this.confirmationMessage = Objects.requireNonNull(confirmationMessage, "The confirmationMessage inside ItemListCell must not be null");
-        this.buttonAccessibleText=Objects.requireNonNull(buttonAccessibleText, "The buttonAccessibleText inside ItemListCell must not be null");
+        this.buttonAccessibleText = Objects.requireNonNull(buttonAccessibleText, "The buttonAccessibleText inside ItemListCell must not be null");
         hBox.setFocusTraversable(false);
         label.setFocusTraversable(true);
         button.setFocusTraversable(true);
-        button.getStyleClass().addAll("material", "menuButtonLabel");
+        button.getStyleClass().addAll("material", "menuListLineButton");
         button.setText(buttonText);
         label.getStyleClass().addAll("root", "menuButtonLabel");
         hBox.getStyleClass().add("menuListLineContainer");
         hBox.getChildren().addAll(label, button);
-        button.setOnAction(event -> {
-            if (getItem() != null) {
-                confirmAndRemoveItem(getItem());
-            } else {
-                log.warn("▒▒ getItem() returned null in ItemListCell button action.");
-            }
-        });
     }
 
     /**
-     * Updates the cell's content, accessibility description, and button accessibility text
-     * based on the given item.
+     * Updates the cell's content and accessibility settings based on the item.
      *
      * @param item  The item in the list.
      * @param empty Indicates whether the cell is empty.
@@ -65,6 +57,13 @@ public final class ItemListCell extends ListCell<String> {
         if (empty || item == null) {
             setGraphic(null);
         } else {
+            button.setOnAction(event -> {
+                if (getItem() != null) {
+                    confirmAndRemoveItem(getItem());
+                } else {
+                    log.warn("▒▒ getItem() returned null in ItemListCell button action.");
+                }
+            });
             label.setText(item);
             setGraphic(hBox);
             setAccessibleText(item);

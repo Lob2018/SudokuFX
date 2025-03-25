@@ -10,6 +10,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.shape.Rectangle?>
 <StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
     <!---->
@@ -368,7 +369,11 @@
             <Region styleClass="submenuIndentation" visible="false"/>
             <Region HBox.hgrow="ALWAYS"/>
             <ScrollPane styleClass="menuList">
-                <ListView fx:id="menuPlayerListView" styleClass="menuList"/>
+                <ListView fx:id="menuPlayerListView" styleClass="menuList">
+                    <clip>
+                        <Rectangle fx:id="menuPlayerClipListView"/>
+                    </clip>
+                </ListView>
             </ScrollPane>
         </HBox>
         <Region styleClass="menuMiniButton" visible="false"/>

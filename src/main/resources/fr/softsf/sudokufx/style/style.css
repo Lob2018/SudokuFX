@@ -60,7 +60,7 @@
 }
 
 .menuList .scroll-bar {
-    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-background-color: transparent;
 }
 
 .menuList .scroll-bar .thumb {
@@ -74,7 +74,15 @@
 
 .scroll-bar>.increment-button,
 .scroll-bar>.decrement-button {
-    -fx-padding: .4em .25em .4em .25em;
+    -fx-background-color: transparent;
+}
+
+.scroll-bar>.increment-button {
+    -fx-padding: 0.3em .25em 1em .25em;
+}
+
+.scroll-bar>.decrement-button {
+    -fx-padding: 1em .25em 0.3em .25em;
 }
 
 .menuList {
@@ -86,18 +94,25 @@
 }
 
 .menuList .list-view {
-    -fx-background-color: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-background-radius: 1em;
+}
+
+.menuList .list-view:focused {
+    -fx-background-insets: 0;
 }
 
 .menuList .list-cell {
-    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-background-color: transparent;
     -fx-border-width: .2em;
     -fx-border-color: transparent;
     -fx-padding: 0.07em 0.5em 0.07em 0.5em;
 }
 
 .menuList .list-cell:focused {
+    -fx-background-radius: 1em;
     -fx-background-color: #DDDDDD;
+    -fx-border-radius: .9em;
     -fx-border-width: .2em;
     -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
 }
@@ -327,5 +342,18 @@
 .menuListLineContainer {
     -fx-alignment: center-left;
     -fx-spacing: .4em;
+    -fx-padding: 0;
+}
+
+.menuListLineButton,
+.menuListLineButton:focused {
+    -fx-pref-width: 1em;
+    -fx-min-width: 1em;
+    -fx-max-width: 1em;
+    -fx-pref-height: 1em;
+    -fx-min-height: 1em;
+    -fx-max-height: 1em;
+    -fx-border-width: 0;
+    -fx-border-insets: 0;
     -fx-padding: 0;
 }

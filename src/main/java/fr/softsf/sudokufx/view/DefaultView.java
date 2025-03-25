@@ -9,6 +9,7 @@ import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import javafx.animation.FadeTransition;
+import javafx.beans.binding.DoubleBinding;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
@@ -17,6 +18,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -123,17 +125,16 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private Button menuPlayerButtonPlayer;
     @FXML
     private Label menuPlayerButtonPlayerText;
-
     @FXML
     private Button menuPlayerButtonPlayerEdit;
-
     @FXML
     private Button menuPlayerButtonNew;
     @FXML
     private Label menuPlayerButtonNewText;
-
     @FXML
     private ListView<String> menuPlayerListView;
+    @FXML
+    private Rectangle menuPlayerClipListView;
 
 
     /**
@@ -199,6 +200,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuPlayerButtonPlayerEdit.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"), playerName));
         menuPlayerButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
         menuPlayerButtonNewText.setText(I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
+        setupListViewClip(menuPlayerListView,menuPlayerClipListView);
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         for (int i = 1; i <= 20; i++) {
             menuPlayerListView.getItems().add(playerName + i + " AAAAAAAAAAAAAAAAAAAAAAAAA");
@@ -213,6 +215,20 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 )
         );
 
+    }
+
+    /**
+     * Sets up a rounded clip for a ListView.
+     *
+     * @param listView The ListView to be clipped.
+     * @param clipView The Rectangle used as the clip.
+     */
+    private void setupListViewClip(ListView<?> listView, Rectangle clipView) {
+        clipView.widthProperty().bind(listView.widthProperty());
+        clipView.heightProperty().bind(listView.heightProperty());
+        DoubleBinding radiusBinding = listView.widthProperty().divide(7);
+        clipView.arcWidthProperty().bind(radiusBinding);
+        clipView.arcHeightProperty().bind(radiusBinding);
     }
 
     /**
