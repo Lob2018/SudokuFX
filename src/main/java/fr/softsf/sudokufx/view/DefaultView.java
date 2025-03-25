@@ -196,7 +196,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuPlayerButtonPlayer.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.player.accessibility"), playerName));
         menuPlayerButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
         menuPlayerButtonPlayerText.setText(playerName);
-        menuPlayerButtonPlayerEdit.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"));
+        menuPlayerButtonPlayerEdit.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"), playerName));
         menuPlayerButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
         menuPlayerButtonNewText.setText(I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
         // for tests

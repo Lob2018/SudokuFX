@@ -15,6 +15,8 @@ import java.util.Objects;
 public final class ItemListCell extends ListCell<String> {
     private final HBox hBox = new HBox();
     private final Label label = new Label();
+    private final Button button = new Button();
+    private final String buttonAccessibleText;
     private final ListView<String> listView;
     private final String confirmationTitle;
     private final String confirmationMessage;
@@ -32,13 +34,12 @@ public final class ItemListCell extends ListCell<String> {
         this.listView = Objects.requireNonNull(listView, "The listView inside ItemListCell must not be null");
         this.confirmationTitle = Objects.requireNonNull(confirmationTitle, "The confirmationTitle inside ItemListCell must not be null");
         this.confirmationMessage = Objects.requireNonNull(confirmationMessage, "The confirmationMessage inside ItemListCell must not be null");
+        this.buttonAccessibleText=Objects.requireNonNull(buttonAccessibleText, "The buttonAccessibleText inside ItemListCell must not be null");
         hBox.setFocusTraversable(false);
         label.setFocusTraversable(true);
-        Button button = new Button();
         button.setFocusTraversable(true);
         button.getStyleClass().addAll("material", "menuButtonLabel");
         button.setText(buttonText);
-        button.setAccessibleText(buttonAccessibleText);
         label.getStyleClass().addAll("root", "menuButtonLabel");
         hBox.getStyleClass().add("menuListLineContainer");
         hBox.getChildren().addAll(label, button);
@@ -52,7 +53,8 @@ public final class ItemListCell extends ListCell<String> {
     }
 
     /**
-     * Updates the cell's content and accessibility description based on the given item.
+     * Updates the cell's content, accessibility description, and button accessibility text
+     * based on the given item.
      *
      * @param item  The item in the list.
      * @param empty Indicates whether the cell is empty.
@@ -66,6 +68,7 @@ public final class ItemListCell extends ListCell<String> {
             label.setText(item);
             setGraphic(hBox);
             setAccessibleText(item);
+            button.setAccessibleText(MessageFormat.format(buttonAccessibleText, item));
         }
     }
 
