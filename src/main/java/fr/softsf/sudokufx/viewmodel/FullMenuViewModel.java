@@ -19,6 +19,7 @@ import java.util.Optional;
  */
 @Slf4j
 @Component
+// TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
 public class FullMenuViewModel {
     private final SoftwareService softwareService;
     private final IGridMaster iGridMaster;

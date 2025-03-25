@@ -216,6 +216,7 @@ final class ApplicationKeystore implements IKeystore {
                 } else if (alias.equals(PASS_ALIAS)) {
                     password = value;
                 }
+                // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
                 System.out.println("GET alias - username - password - secret : " + alias + " - " + username + " - " + password);
             } else {
                 log.warn("▒▒ Entry is not an instance of the Keystore");
