@@ -199,7 +199,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuPlayerButtonPlayerEdit.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"), playerName));
         menuPlayerButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
         menuPlayerButtonNewText.setText(I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
-        // for tests
+        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         for (int i = 1; i <= 20; i++) {
             menuPlayerListView.getItems().add(playerName + i + " AAAAAAAAAAAAAAAAAAAAAAAAA");
         }
