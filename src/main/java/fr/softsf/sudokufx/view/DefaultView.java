@@ -6,7 +6,7 @@ import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
-import fr.softsf.sudokufx.view.components.list.SelectListCell;
+import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
@@ -17,15 +17,14 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 
-import javafx.scene.text.Text;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
-import org.hibernate.cache.spi.support.AbstractReadWriteAccess;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.text.MessageFormat;
 import java.util.Objects;
 
 /**
@@ -115,9 +114,23 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private Button menuMaxiButtonNew;
     @FXML
     private Label menuMaxiButtonNewText;
+
+    @FXML
+    private Button menuPlayerButtonReduce;
+    @FXML
+    private Label menuPlayerButtonReduceText;
+    @FXML
+    private Button menuPlayerButtonPlayer;
+    @FXML
+    private Label menuPlayerButtonPlayerText;
+
     @FXML
     private Button menuPlayerButtonPlayerEdit;
 
+    @FXML
+    private Button menuPlayerButtonNew;
+    @FXML
+    private Label menuPlayerButtonNewText;
 
     @FXML
     private ListView<String> menuPlayerListView;
@@ -146,13 +159,13 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuMiniButtonLanguageIso.setText(I18n.INSTANCE.getValue("menu.mini.button.language.iso"));
         menuMiniButtonHelp.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
         menuMiniButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
-
+        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        String playerName = "Toto";
         menuMaxiButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.accessibility"));
         menuMaxiButtonReduceText.setText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.text"));
-        menuMaxiButtonPlayer.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"));
+        menuMaxiButtonPlayer.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"), playerName));
         menuMaxiButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
-        // service is needed
-        menuMaxiButtonPlayerText.setText("PLAYERPLAYERPLAYERPLAYERPLAYERPLAYERPLAYERPLAYER");
+        menuMaxiButtonPlayerText.setText(playerName);
         menuMaxiButtonEasy.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.easy.accessibility"));
         menuMaxiButtonEasyText.setText(I18n.INSTANCE.getValue("menu.maxi.button.easy.text"));
         menuMaxiButtonMedium.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.medium.accessibility"));
@@ -177,12 +190,28 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuMaxiButtonHelpText.setText(I18n.INSTANCE.getValue("menu.maxi.button.help.text"));
         menuMaxiButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.new.accessibility"));
         menuMaxiButtonNewText.setText(I18n.INSTANCE.getValue("menu.maxi.button.new.text"));
-        menuPlayerButtonPlayerEdit.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.player.edit.accessibility"));
 
+        menuPlayerButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
+        menuPlayerButtonReduceText.setText(I18n.INSTANCE.getValue("menu.player.button.reduce.text"));
+        menuPlayerButtonPlayer.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.player.accessibility"), playerName));
+        menuPlayerButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
+        menuPlayerButtonPlayerText.setText(playerName);
+        menuPlayerButtonPlayerEdit.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"));
+        menuPlayerButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
+        menuPlayerButtonNewText.setText(I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
+        // for tests
         for (int i = 1; i <= 20; i++) {
-            menuPlayerListView.getItems().add("Joueur " + i+" AAAAAAAAAAAAAAAAAAAAAAAAA");
+            menuPlayerListView.getItems().add(playerName + i + " AAAAAAAAAAAAAAAAAAAAAAAAA");
         }
-        menuPlayerListView.setCellFactory(param -> new SelectListCell(menuPlayerListView, "\uef67", "Accessibility", "Message de confirmation"));
+        menuPlayerListView.setCellFactory(param ->
+                new ItemListCell(
+                        menuPlayerListView,
+                        "\uef67",
+                        I18n.INSTANCE.getValue("menu.player.button.new.player.cell.delete.accessibility"),
+                        I18n.INSTANCE.getValue("menu.player.button.new.player.dialog.confirmation.title"),
+                        I18n.INSTANCE.getValue("menu.player.button.new.player.dialog.confirmation.message")
+                )
+        );
 
     }
 
