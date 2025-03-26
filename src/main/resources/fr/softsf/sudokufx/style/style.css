@@ -53,6 +53,20 @@
     -fx-cursor: hand;
 }
 
+.sudokuFXContainer {
+    -fx-background-color: orange;
+}
+
+.sudokuFXGridContainer {
+    -fx-pref-width: 27.9em;
+    -fx-max-width: 27.9em;
+    -fx-min-width: 27.9em;
+    -fx-pref-height: 27.9em;
+    -fx-max-height: 27.9em;
+    -fx-min-height: 27.9em;
+    -fx-background-color: #0000FF;
+}
+
 .button:focused {
     -fx-border-width: .2em;
     -fx-border-insets: -.2em;
@@ -70,10 +84,6 @@
 .scroll-bar>.increment-button>.increment-arrow,
 .scroll-bar>.decrement-button>.decrement-arrow {
     -fx-background-color: black;
-}
-
-.scroll-bar>.increment-button,
-.scroll-bar>.decrement-button {
 }
 
 .scroll-bar>.decrement-button {
@@ -178,6 +188,12 @@
     -fx-pref-height: 27.9em;
     -fx-max-height: 27.9em;
     -fx-min-height: 27.9em;
+}
+
+.menuMini {
+    -fx-pref-width: 4em;
+    -fx-max-width: 4em;
+    -fx-min-width: 4em;
 }
 
 .menuButton {
@@ -362,18 +378,4 @@
     -fx-border-width: 0;
     -fx-border-insets: 0;
     -fx-padding: 0;
-}
-
-.sudokuContainer{
-    -fx-background-color: orange;
-}
-
-.sudokuGridContainer{
-    -fx-pref-width: 27.9em;
-    -fx-max-width: 27.9em;
-    -fx-min-width: 27.9em;
-    -fx-pref-height: 27.9em;
-    -fx-max-height: 27.9em;
-    -fx-min-height: 27.9em;
-    -fx-background-color: #0000FF;
 }

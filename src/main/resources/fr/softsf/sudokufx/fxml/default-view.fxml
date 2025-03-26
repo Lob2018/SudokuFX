@@ -15,11 +15,14 @@
 <?import javafx.scene.layout.GridPane?>
 <StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
-    <GridPane alignment="CENTER" styleClass="sudokuContainer">
+    <!---->
+    <!--SudokuFX container-->
+    <!---->
+    <GridPane alignment="CENTER" styleClass="sudokuFXContainer">
         <!---->
         <!--Hidden menu-->
         <!---->
-        <VBox fx:id="menuHidden" alignment="CENTER" styleClass="menu" visible="false">
+        <VBox fx:id="menuHidden" alignment="CENTER" styleClass="menu,menuMini" managed="false" visible="false">
             <Button fx:id="menuHiddenButtonShow" styleClass="menuMiniButton">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
@@ -42,7 +45,7 @@
         <!---->
         <!--Mini menu-->
         <!---->
-        <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu" visible="false">
+        <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu,menuMini">
             <Button fx:id="menuMiniButtonShow" styleClass="menuMiniButton">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
@@ -144,7 +147,7 @@
         <!---->
         <!--Maxi menu-->
         <!---->
-        <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu" visible="false">
+        <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu" managed="false" visible="false">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuMaxiButtonReduce" styleClass="menuButton">
                     <graphic>
@@ -331,7 +334,7 @@
         <!---->
         <!--Player menu (submenu)-->
         <!---->
-        <VBox fx:id="menuPlayer" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuPlayer" alignment="CENTER" styleClass="menu" managed="false" visible="false">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuPlayerButtonReduce" styleClass="menuButton">
                     <graphic>
@@ -385,7 +388,10 @@
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>
         </VBox>
-        <TilePane styleClass="sudokuGridContainer" GridPane.columnIndex="1">
+        <!---->
+        <!--SudokuFX grid-->
+        <!---->
+        <TilePane styleClass="sudokuFXGridContainer" GridPane.columnIndex="1">
         </TilePane>
     </GridPane>
     <!---->
