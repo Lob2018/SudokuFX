@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.view.components.list;
 
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 import lombok.extern.slf4j.Slf4j;
 
 import java.text.MessageFormat;
@@ -78,6 +79,13 @@ public final class ItemListCell extends ListCell<String> {
      */
     private void confirmAndRemoveItem(String item) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.getDialogPane().setStyle(
+                "-fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);"
+        );
+        Label contentLabel = (Label) alert.getDialogPane().lookup(".content");
+        if (contentLabel != null) {
+            contentLabel.setTextFill(Color.WHITE);
+        }
         alert.setTitle(confirmationTitle);
         alert.setHeaderText(null);
         alert.setContentText(MessageFormat.format(confirmationMessage, item));

@@ -74,15 +74,18 @@
 
 .scroll-bar>.increment-button,
 .scroll-bar>.decrement-button {
-    -fx-background-color: transparent;
-}
-
-.scroll-bar>.increment-button {
-    -fx-padding: 0.3em .25em 1em .25em;
 }
 
 .scroll-bar>.decrement-button {
-    -fx-padding: 1em .25em 0.3em .25em;
+    -fx-padding: .8em .25em 0.5em .25em;
+    -fx-background-radius: 0 1.5em 0 0;
+    -fx-translate-y: .05em;
+}
+
+.scroll-bar>.increment-button {
+    -fx-padding: 0.5em .25em .8em .25em;
+    -fx-background-radius: 0 0 1.5em 0;
+    -fx-translate-y: -.05em;
 }
 
 .menuList {
