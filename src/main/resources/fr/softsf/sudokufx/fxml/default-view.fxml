@@ -45,7 +45,7 @@
         <!---->
         <!--Mini menu-->
         <!---->
-        <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu,menuMini">
+        <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu,menuMini" managed="false" visible="false">
             <Button fx:id="menuMiniButtonShow" styleClass="menuMiniButton">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
@@ -334,7 +334,7 @@
         <!---->
         <!--Player menu (submenu)-->
         <!---->
-        <VBox fx:id="menuPlayer" alignment="CENTER" styleClass="menu" managed="false" visible="false">
+        <VBox fx:id="menuPlayer" alignment="CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuPlayerButtonReduce" styleClass="menuButton">
                     <graphic>
