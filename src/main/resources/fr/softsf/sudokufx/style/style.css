@@ -175,6 +175,9 @@
 .menu {
     -fx-spacing: 0.79em;
     -fx-background-color: #00FF00;
+    -fx-pref-height: 27.9em;
+    -fx-max-height: 27.9em;
+    -fx-min-height: 27.9em;
 }
 
 .menuButton {
@@ -359,4 +362,18 @@
     -fx-border-width: 0;
     -fx-border-insets: 0;
     -fx-padding: 0;
+}
+
+.sudokuContainer{
+    -fx-background-color: orange;
+}
+
+.sudokuGridContainer{
+    -fx-pref-width: 27.9em;
+    -fx-max-width: 27.9em;
+    -fx-min-width: 27.9em;
+    -fx-pref-height: 27.9em;
+    -fx-max-height: 27.9em;
+    -fx-min-height: 27.9em;
+    -fx-background-color: #0000FF;
 }
