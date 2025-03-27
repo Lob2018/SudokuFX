@@ -8,7 +8,7 @@ public enum Paths {
     RESOURCES_CSS_PATH("/fr/softsf/sudokufx/style/style.css"),
     I18N_PATH("fr/softsf/sudokufx/i18n/resource"),
     DATABASE_MIGRATION_PATH("/fr/softsf/sudokufx/flyway/scripts/hsqldb/migration"),
-    LOGO_SUDO_PNG_PATH("/fr/softsf/sudokufx/images/Sudoku.png"),
+    LOGO_SUDO_PNG_PATH("/fr/softsf/sudokufx/images/stage-icon.png"),
     CONFIG_LOGBACK_PATH("/fr/softsf/sudokufx/config/logback.xml"),
     CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS("/invalid/path"),
     USER_HOME(System.getProperty("user.home").replace("\\", "/")),

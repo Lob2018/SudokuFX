@@ -1,0 +1,28 @@
+1. .ico (icon.ico)
+	Inkscape from .svg :
+		export as .png
+			128*128
+			226,79 PPP
+			RVBA 8 bits (RGBA 8)
+			compression moyenne (4-6)
+			Antialias 3
+	Gimp from .png :
+		export as .ico
+			32bpp, 8-bit alpha, no palette 
+			Not compressed
+2. .png (Sudoku.png)
+	Inkscape from .svg :
+		export as .png
+			256*256
+			453,58 PPP
+			RVBA 8 bits (RGBA 8)
+			compression moyenne (4-6)
+			Antialias 3
+3. .png (stage-icon.png)
+	Inkscape from .svg :
+		export as .png
+			32*32
+			56,70 PPP
+			RVBA 8 bits (RGBA 8)
+			compression moyenne (4-6)
+			Antialias 3
