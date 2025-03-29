@@ -15,7 +15,6 @@ import static fr.softsf.sudokufx.enums.Paths.DATABASE_NAME;
 @PropertySource("classpath:fr/softsf/sudokufx/application.properties")
 @ExcludedFromCoverageReportGenerated
 class DataSourceConfigDefault extends AbstractDataSourceConfig {
-
     @Bean
     @DependsOn({"logbackInitialization"})
     @Override
