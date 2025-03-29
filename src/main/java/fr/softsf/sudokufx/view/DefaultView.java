@@ -40,7 +40,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Stage primaryStage = new Stage();
-    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED ="menu.accessibility.role.description.closed";
+    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED = "menu.accessibility.role.description.closed";
     private static final Alert CONFIRMATION_ALERT = new Alert(Alert.AlertType.CONFIRMATION);
 
     @FXML
@@ -142,8 +142,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private Rectangle menuPlayerClipListView;
 
 
-
-
     /**
      * Initializes the default view. This method is automatically called by
      * JavaFX after loading the FXML.
@@ -238,7 +236,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuPlayerButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
         menuPlayerButtonNew.getTooltip().setText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
         menuPlayerButtonNewText.setText(I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
-        setupListViewClip(menuPlayerListView,menuPlayerClipListView);
+        setupListViewClip(menuPlayerListView, menuPlayerClipListView);
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         for (int i = 1; i <= 20; i++) {
             menuPlayerListView.getItems().add(playerName + i + " AAAAAAAAAAAAAAAAAAAAAAAAA");
@@ -256,6 +254,11 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     }
 
+    /**
+     * Styles the confirmation alert dialog.
+     * - Sets a radial gradient background.
+     * - Changes content text color to white.
+     */
     private void confirmationAlertStyle() {
         CONFIRMATION_ALERT.getDialogPane().setStyle(
                 "-fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);"
