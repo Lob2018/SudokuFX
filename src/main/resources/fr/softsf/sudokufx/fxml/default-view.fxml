@@ -13,6 +13,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Tooltip?>
 <StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
     <!---->
@@ -30,6 +31,9 @@
                         <Text text="&#xe9bd;" styleClass="material"/>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>
@@ -53,6 +57,9 @@
                         <Text text="&#xe9bd;" styleClass="material"/>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonPlayer" styleClass="menuMiniButton">
                 <graphic>
@@ -61,6 +68,9 @@
                         <Text text="&#xe853;" styleClass="material"/>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonEasy" styleClass="menuMiniButton">
                 <graphic>
@@ -71,6 +81,9 @@
                         </StackPane>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonMedium" styleClass="menuMiniButton">
                 <graphic>
@@ -81,6 +94,9 @@
                         </StackPane>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonDifficult" styleClass="menuMiniButton">
                 <graphic>
@@ -91,16 +107,22 @@
                         </StackPane>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonSolve" styleClass="menuMiniButton">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
-                        <Region styleClass="menuDropdownOpen" visible="false"/>
+                        <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
                         <StackPane styleClass="menuButtonLevelBackground,colorResolve">
                             <Text text="&#xf015;" styleClass="material"/>
                         </StackPane>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonBackup" styleClass="menuMiniButton">
                 <graphic>
@@ -109,6 +131,9 @@
                         <Text text="&#xe161;" styleClass="material"/>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonBackground" styleClass="menuMiniButton">
                 <graphic>
@@ -117,6 +142,9 @@
                         <Text text="&#xe3f4;" styleClass="material"/>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonLanguage" styleClass="menuMiniButton">
                 <graphic>
@@ -126,6 +154,9 @@
                                styleClass="root,bold-text,menuButtonLabel,menuButtonLabelIso"/>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonHelp" styleClass="menuMiniButton">
                 <graphic>
@@ -134,6 +165,9 @@
                         <Text text="&#xe887;" styleClass="material"/>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
             <Button fx:id="menuMiniButtonNew" styleClass="menuMiniButton">
                 <graphic>
@@ -142,6 +176,9 @@
                         <Text text="&#xe031;" styleClass="material"/>
                     </HBox>
                 </graphic>
+                <tooltip>
+                    <Tooltip/>
+                </tooltip>
             </Button>
         </VBox>
         <!---->
@@ -157,6 +194,9 @@
                             <Label fx:id="menuMaxiButtonReduceText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -169,6 +209,9 @@
                             <Label fx:id="menuMaxiButtonPlayerText" styleClass="root,bold-text,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -193,6 +236,9 @@
                             </HBox>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -217,6 +263,9 @@
                             </HBox>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -241,6 +290,9 @@
                             </HBox>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -249,7 +301,7 @@
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
-                                <Region styleClass="menuDropdownOpen" visible="false"/>
+                                <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
                                 <StackPane styleClass="menuButtonLevelBackground,colorResolve">
                                     <Text text="&#xf015;" styleClass="material"/>
                                 </StackPane>
@@ -265,6 +317,9 @@
                             </HBox>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Button fx:id="menuMaxiButtonSolveClear" text="&#xe16c;" styleClass="menuButtonCircle, material"
                         visible="false"/>
@@ -278,6 +333,9 @@
                             <Label fx:id="menuMaxiButtonBackuptext" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -290,6 +348,9 @@
                             <Label fx:id="menuMaxiButtonBackgroundText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -303,6 +364,9 @@
                             <Label fx:id="menuMaxiButtonLanguageText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -315,6 +379,9 @@
                             <Label fx:id="menuMaxiButtonHelpText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -327,6 +394,9 @@
                             <Label fx:id="menuMaxiButtonNewText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -344,6 +414,9 @@
                             <Label fx:id="menuPlayerButtonReduceText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
@@ -356,8 +429,15 @@
                             <Label fx:id="menuPlayerButtonPlayerText" styleClass="root,bold-text,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
-                <Button fx:id="menuPlayerButtonPlayerEdit" text="&#xe3c9;" styleClass="menuButtonCircle, material"/>
+                <Button fx:id="menuPlayerButtonPlayerEdit" text="&#xe3c9;" styleClass="menuButtonCircle, material">
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Region styleClass="submenuIndentation" visible="false"/>
@@ -369,6 +449,9 @@
                             <Label fx:id="menuPlayerButtonNewText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
                 </Button>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">

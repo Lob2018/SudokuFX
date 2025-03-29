@@ -47,6 +47,10 @@
     -fx-text-fill: #000000;
 }
 
+.tooltip{
+    -fx-font-family: 'Luciole';
+}
+
 .button,
 .scroll-bar,
 .list-view {

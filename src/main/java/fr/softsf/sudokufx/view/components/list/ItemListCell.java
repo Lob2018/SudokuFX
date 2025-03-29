@@ -2,7 +2,6 @@ package fr.softsf.sudokufx.view.components.list;
 
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
-import javafx.scene.paint.Color;
 import lombok.extern.slf4j.Slf4j;
 
 import java.text.MessageFormat;
@@ -21,6 +20,7 @@ public final class ItemListCell extends ListCell<String> {
     private final ListView<String> listView;
     private final String confirmationTitle;
     private final String confirmationMessage;
+    private final Alert confirmationAlert;
 
     /**
      * Constructs a ItemListCell.
@@ -30,12 +30,15 @@ public final class ItemListCell extends ListCell<String> {
      * @param buttonAccessibleText The accessible text for screen readers.
      * @param confirmationTitle    The title displayed in the confirmation dialog.
      * @param confirmationMessage  The message displayed in the confirmation dialog.
+     * @param confirmationAlert    A shared instance of Alert displaying confirmation dialogs.
+     * @throws NullPointerException if any of the parameters is null.
      */
-    public ItemListCell(ListView<String> listView, String buttonText, String buttonAccessibleText, String confirmationTitle, String confirmationMessage) {
+    public ItemListCell(ListView<String> listView, String buttonText, String buttonAccessibleText, String confirmationTitle, String confirmationMessage, Alert confirmationAlert) {
         this.listView = Objects.requireNonNull(listView, "The listView inside ItemListCell must not be null");
         this.confirmationTitle = Objects.requireNonNull(confirmationTitle, "The confirmationTitle inside ItemListCell must not be null");
         this.confirmationMessage = Objects.requireNonNull(confirmationMessage, "The confirmationMessage inside ItemListCell must not be null");
         this.buttonAccessibleText = Objects.requireNonNull(buttonAccessibleText, "The buttonAccessibleText inside ItemListCell must not be null");
+        this.confirmationAlert = Objects.requireNonNull(confirmationAlert, "The confirmationAlert inside ItemListCell must not be null");
         hBox.setFocusTraversable(false);
         label.setFocusTraversable(true);
         button.setFocusTraversable(true);
@@ -57,7 +60,16 @@ public final class ItemListCell extends ListCell<String> {
         super.updateItem(item, empty);
         if (empty || item == null) {
             setGraphic(null);
+            setAccessibleText(null);
+            button.setAccessibleText(null);
+            button.setTooltip(null);
+            button.setOnAction(null);
         } else {
+            label.setText(item);
+            setGraphic(hBox);
+            setAccessibleText(item);
+            button.setAccessibleText(MessageFormat.format(buttonAccessibleText, item));
+            button.setTooltip(new Tooltip(MessageFormat.format(buttonAccessibleText, item)));
             button.setOnAction(event -> {
                 if (getItem() != null) {
                     confirmAndRemoveItem(getItem());
@@ -65,31 +77,19 @@ public final class ItemListCell extends ListCell<String> {
                     log.warn("▒▒ getItem() returned null in ItemListCell button action.");
                 }
             });
-            label.setText(item);
-            setGraphic(hBox);
-            setAccessibleText(item);
-            button.setAccessibleText(MessageFormat.format(buttonAccessibleText, item));
         }
     }
 
     /**
-     * Displays a confirmation dialog before removing the item from the list.
+     * Displays the confirmation dialog before removing the item from the list.
      *
      * @param item The item to be removed.
      */
     private void confirmAndRemoveItem(String item) {
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.getDialogPane().setStyle(
-                "-fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);"
-        );
-        Label contentLabel = (Label) alert.getDialogPane().lookup(".content");
-        if (contentLabel != null) {
-            contentLabel.setTextFill(Color.WHITE);
-        }
-        alert.setTitle(confirmationTitle);
-        alert.setHeaderText(null);
-        alert.setContentText(MessageFormat.format(confirmationMessage, item));
-        alert.showAndWait().ifPresent(response -> {
+        confirmationAlert.setTitle(confirmationTitle);
+        confirmationAlert.setHeaderText(null);
+        confirmationAlert.setContentText(MessageFormat.format(confirmationMessage, item));
+        confirmationAlert.showAndWait().ifPresent(response -> {
             if (response.getText().equals("OK")) {
                 listView.getItems().remove(item);
             }

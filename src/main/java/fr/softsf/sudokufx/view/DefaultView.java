@@ -13,11 +13,13 @@ import javafx.beans.binding.DoubleBinding;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.image.Image;
 
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -38,6 +40,9 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Stage primaryStage = new Stage();
+    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED ="menu.accessibility.role.description.closed";
+    private static final Alert CONFIRMATION_ALERT = new Alert(Alert.AlertType.CONFIRMATION);
+
     @FXML
     @Autowired
     private ToasterVBox toaster;
@@ -137,68 +142,101 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private Rectangle menuPlayerClipListView;
 
 
+
+
     /**
      * Initializes the default view. This method is automatically called by
      * JavaFX after loading the FXML.
      */
     @FXML
     private void initialize() {
+
+        confirmationAlertStyle();
+
         menuHiddenButtonShow.setAccessibleText(I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
+
+        menuHiddenButtonShow.getTooltip().setText(I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
         menuMiniButtonShow.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
+        menuMiniButtonShow.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
         menuMiniButtonPlayer.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.player.accessibility"));
-        menuMiniButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
+        menuMiniButtonPlayer.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.player.accessibility"));
+        menuMiniButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMiniButtonEasy.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.easy.accessibility"));
+        menuMiniButtonEasy.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.easy.accessibility"));
         menuMiniButtonMedium.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.medium.accessibility"));
+        menuMiniButtonMedium.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.medium.accessibility"));
         menuMiniButtonDifficult.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.difficult.accessibility"));
+        menuMiniButtonDifficult.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.difficult.accessibility"));
         menuMiniButtonSolve.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility"));
-        menuMiniButtonSolve.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
+        menuMiniButtonSolve.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility"));
+        menuMiniButtonSolve.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMiniButtonBackup.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility"));
-        menuMiniButtonBackup.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
+        menuMiniButtonBackup.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility"));
+        menuMiniButtonBackup.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMiniButtonBackground.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.background.accessibility"));
-        menuMiniButtonBackground.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
+        menuMiniButtonBackground.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.background.accessibility"));
+        menuMiniButtonBackground.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMiniButtonLanguage.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
+        menuMiniButtonLanguage.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
         menuMiniButtonLanguageIso.setText(I18n.INSTANCE.getValue("menu.mini.button.language.iso"));
         menuMiniButtonHelp.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
+        menuMiniButtonHelp.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
         menuMiniButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
+        menuMiniButtonNew.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         String playerName = "Toto";
         menuMaxiButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.accessibility"));
+        menuMaxiButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.accessibility"));
         menuMaxiButtonReduceText.setText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.text"));
         menuMaxiButtonPlayer.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"), playerName));
-        menuMaxiButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
+        menuMaxiButtonPlayer.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"), playerName));
+        menuMaxiButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayerText.setText(playerName);
         menuMaxiButtonEasy.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.easy.accessibility"));
+        menuMaxiButtonEasy.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.easy.accessibility"));
         menuMaxiButtonEasyText.setText(I18n.INSTANCE.getValue("menu.maxi.button.easy.text"));
         menuMaxiButtonMedium.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.medium.accessibility"));
+        menuMaxiButtonMedium.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.medium.accessibility"));
         menuMaxiButtonMediumText.setText(I18n.INSTANCE.getValue("menu.maxi.button.medium.text"));
         menuMaxiButtonDifficult.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.difficult.accessibility"));
+        menuMaxiButtonDifficult.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.difficult.accessibility"));
         menuMaxiButtonDifficultText.setText(I18n.INSTANCE.getValue("menu.maxi.button.difficult.text"));
         menuMaxiButtonSolve.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
-        menuMaxiButtonSolve.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
+        menuMaxiButtonSolve.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
+        menuMaxiButtonSolve.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonSolveText.setText(I18n.INSTANCE.getValue("menu.maxi.button.solve.text"));
         menuMaxiButtonSolveClear.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.solve.clear.accessibility"));
         menuMaxiButtonSolveClear.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.submenu.option"));
         menuMaxiButtonBackup.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.backup.accessibility"));
-        menuMaxiButtonBackup.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
+        menuMaxiButtonBackup.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.backup.accessibility"));
+        menuMaxiButtonBackup.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackuptext.setText(I18n.INSTANCE.getValue("menu.maxi.button.backup.text"));
         menuMaxiButtonBackground.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
-        menuMaxiButtonBackground.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
+        menuMaxiButtonBackground.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
+        menuMaxiButtonBackground.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackgroundText.setText(I18n.INSTANCE.getValue("menu.maxi.button.background.text"));
         menuMaxiButtonLanguage.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.language.accessibility"));
+        menuMaxiButtonLanguage.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.language.accessibility"));
         menuMaxiButtonLanguageIso.setText(I18n.INSTANCE.getValue("menu.maxi.button.language.iso"));
         menuMaxiButtonLanguageText.setText(I18n.INSTANCE.getValue("menu.maxi.button.language.text"));
         menuMaxiButtonHelp.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.help.accessibility"));
+        menuMaxiButtonHelp.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.help.accessibility"));
         menuMaxiButtonHelpText.setText(I18n.INSTANCE.getValue("menu.maxi.button.help.text"));
         menuMaxiButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.new.accessibility"));
+        menuMaxiButtonNew.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.new.accessibility"));
         menuMaxiButtonNewText.setText(I18n.INSTANCE.getValue("menu.maxi.button.new.text"));
 
         menuPlayerButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
+        menuPlayerButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
         menuPlayerButtonReduceText.setText(I18n.INSTANCE.getValue("menu.player.button.reduce.text"));
         menuPlayerButtonPlayer.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.player.accessibility"), playerName));
+        menuPlayerButtonPlayer.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.player.accessibility"), playerName));
         menuPlayerButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
         menuPlayerButtonPlayerText.setText(playerName);
         menuPlayerButtonPlayerEdit.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"), playerName));
+        menuPlayerButtonPlayerEdit.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"), playerName));
         menuPlayerButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
+        menuPlayerButtonNew.getTooltip().setText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
         menuPlayerButtonNewText.setText(I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
         setupListViewClip(menuPlayerListView,menuPlayerClipListView);
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
@@ -211,10 +249,21 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         "\uef67",
                         I18n.INSTANCE.getValue("menu.player.button.new.player.cell.delete.accessibility"),
                         I18n.INSTANCE.getValue("menu.player.button.new.player.dialog.confirmation.title"),
-                        I18n.INSTANCE.getValue("menu.player.button.new.player.dialog.confirmation.message")
+                        I18n.INSTANCE.getValue("menu.player.button.new.player.dialog.confirmation.message"),
+                        CONFIRMATION_ALERT
                 )
         );
 
+    }
+
+    private void confirmationAlertStyle() {
+        CONFIRMATION_ALERT.getDialogPane().setStyle(
+                "-fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);"
+        );
+        Label contentLabel = (Label) CONFIRMATION_ALERT.getDialogPane().lookup(".content");
+        if (contentLabel != null) {
+            contentLabel.setTextFill(Color.WHITE);
+        }
     }
 
     /**
