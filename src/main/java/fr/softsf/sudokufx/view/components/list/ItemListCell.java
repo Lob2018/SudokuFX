@@ -2,6 +2,7 @@ package fr.softsf.sudokufx.view.components.list;
 
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Priority;
 import lombok.extern.slf4j.Slf4j;
 
 import java.text.MessageFormat;
@@ -39,6 +40,7 @@ public final class ItemListCell extends ListCell<String> {
         this.confirmationMessage = Objects.requireNonNull(confirmationMessage, "The confirmationMessage inside ItemListCell must not be null");
         this.buttonAccessibleText = Objects.requireNonNull(buttonAccessibleText, "The buttonAccessibleText inside ItemListCell must not be null");
         this.confirmationAlert = Objects.requireNonNull(confirmationAlert, "The confirmationAlert inside ItemListCell must not be null");
+        HBox.setHgrow(label, Priority.ALWAYS);
         hBox.setFocusTraversable(false);
         label.setFocusTraversable(true);
         button.setFocusTraversable(true);

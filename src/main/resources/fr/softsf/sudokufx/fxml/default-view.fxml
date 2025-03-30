@@ -465,11 +465,6 @@
                     </ListView>
                 </ScrollPane>
             </HBox>
-            <Region styleClass="menuMiniButton" visible="false"/>
-            <Region styleClass="menuMiniButton" visible="false"/>
-            <Region styleClass="menuMiniButton" visible="false"/>
-            <Region styleClass="menuMiniButton" visible="false"/>
-            <Region styleClass="menuMiniButton" visible="false"/>
         </VBox>
         <!---->
         <!--SudokuFX grid-->

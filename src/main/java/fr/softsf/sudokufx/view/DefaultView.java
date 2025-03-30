@@ -238,6 +238,9 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuPlayerButtonNewText.setText(I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
         setupListViewClip(menuPlayerListView, menuPlayerClipListView);
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        menuPlayerListView.getItems().add("ANONYMOUS");
+        menuPlayerListView.getItems().add(playerName);
+        menuPlayerListView.getSelectionModel().select(playerName);
         for (int i = 1; i <= 20; i++) {
             menuPlayerListView.getItems().add(playerName + i + " AAAAAAAAAAAAAAAAAAAAAAAAA");
         }

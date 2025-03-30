@@ -359,10 +359,13 @@
     -fx-pref-width: 13.35em;
     -fx-max-width: 13.35em;
     -fx-min-width: 13.35em;
-    -fx-pref-height: 6.55em;
-    -fx-max-height: 6.55em;
-    -fx-min-height: 6.55em;
     -fx-padding: 0;
+}
+
+#menuPlayerListView{
+    -fx-pref-height: 18.75em;
+    -fx-max-height: 18.75em;
+    -fx-min-height: 18.75em;
 }
 
 .menuListLineContainer {
