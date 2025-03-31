@@ -83,6 +83,9 @@ var hierarchy =
     [ "fr.softsf.sudokufx.configuration.JVMApplicationProperties", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html", null ],
     [ "fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test.html", null ],
     [ "fr.softsf.sudokufx.Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", null ],
+    [ "ListCell", null, [
+      [ "fr.softsf.sudokufx.view.components.list.ItemListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.enums.LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html", null ],
     [ "fr.softsf.sudokufx.model.Menu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html", null ],
     [ "fr.softsf.sudokufx.utils.MyDateTime", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html", null ],

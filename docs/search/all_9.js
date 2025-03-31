@@ -57,5 +57,7 @@ var searchData=
   ['isselected_54',['isselected',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a51a571d2bcebaf3f9b79c95d2af9ddd3',1,'fr.softsf.sudokufx.model.Game.isselected'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a49ded8a7d3a97ef2970c6745e36813e0',1,'fr.softsf.sudokufx.model.Player.isselected']]],
   ['isspringcontextexitonrefresh_55',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aff54c65c6ec18575ff3b13a6c1c83ed0',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
   ['isvalidatedbyregex_56',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a75b509baad4b2f51d5c9fc3399b16408',1,'fr::softsf::sudokufx::enums::MyRegex']]],
-  ['isvalidpassword_57',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a2f6edf199ecc426e9c8895f93d3b8374',1,'fr::softsf::sudokufx::enums::MyRegex']]]
+  ['isvalidpassword_57',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a2f6edf199ecc426e9c8895f93d3b8374',1,'fr::softsf::sudokufx::enums::MyRegex']]],
+  ['itemlistcell_58',['ItemListCell',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html',1,'fr.softsf.sudokufx.view.components.list.ItemListCell'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a4f5c2fcc5acfc27b30d7d709597040b2',1,'fr.softsf.sudokufx.view.components.list.ItemListCell.ItemListCell()']]],
+  ['itemlistcell_2ejava_59',['ItemListCell.java',['../_item_list_cell_8java.html',1,'']]]
 ];

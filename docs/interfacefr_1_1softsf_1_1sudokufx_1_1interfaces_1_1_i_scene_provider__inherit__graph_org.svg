@@ -197,54 +197,67 @@
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" target="_top" xlink:title="Default view class of the Sudoku application.">
-<polygon fill="white" stroke="none" points="737.5,-534 549.25,-534 549.25,-142 737.5,-142 737.5,-534"/>
-<text text-anchor="start" x="592.38" y="-520.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
-<text text-anchor="start" x="616.75" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView</text>
-<text text-anchor="start" x="554.75" y="-492.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-492.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuHiddenButtonShow</text>
-<text text-anchor="start" x="554.75" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-476.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonBackground</text>
-<text text-anchor="start" x="554.75" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label menuMaxiButtonBackgroundText</text>
-<text text-anchor="start" x="554.75" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonBackup</text>
-<text text-anchor="start" x="554.75" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label menuMaxiButtonBackuptext</text>
-<text text-anchor="start" x="554.75" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonDifficult</text>
-<text text-anchor="start" x="554.75" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label menuMaxiButtonDifficultText</text>
-<text text-anchor="start" x="554.75" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-380.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonEasy</text>
-<text text-anchor="start" x="554.75" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label menuMaxiButtonEasyText</text>
-<text text-anchor="start" x="554.75" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-348.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonHelp</text>
-<text text-anchor="start" x="563.25" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 29 more...</text>
-<text text-anchor="start" x="554.75" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="563.25" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="563.25" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="553.25" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="563.25" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="563.25" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
-<text text-anchor="start" x="563.25" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
-<text text-anchor="start" x="554.75" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<text text-anchor="start" x="554.75" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
-<text text-anchor="start" x="554.75" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
-<text text-anchor="start" x="563.25" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
-<text text-anchor="start" x="554.75" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
-<text text-anchor="start" x="563.25" y="-164.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
-<text text-anchor="start" x="554.75" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="563.25" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
-<polygon fill="#666666" stroke="#666666" points="549.25,-504 549.25,-504 737.5,-504 737.5,-504 549.25,-504"/>
-<polygon fill="#666666" stroke="#666666" points="549.25,-288 549.25,-288 561.25,-288 561.25,-288 549.25,-288"/>
-<polygon fill="#666666" stroke="#666666" points="561.25,-288 561.25,-288 737.5,-288 737.5,-288 561.25,-288"/>
-<polygon fill="none" stroke="#666666" points="549.25,-142 549.25,-534 737.5,-534 737.5,-142 549.25,-142"/>
+<polygon fill="white" stroke="none" points="737.5,-596 549.25,-596 549.25,-80 737.5,-80 737.5,-596"/>
+<text text-anchor="start" x="592.38" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
+<text text-anchor="start" x="616.75" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView</text>
+<text text-anchor="start" x="554.75" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuHiddenButtonShow</text>
+<text text-anchor="start" x="554.75" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonBackground</text>
+<text text-anchor="start" x="554.75" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label menuMaxiButtonBackgroundText</text>
+<text text-anchor="start" x="554.75" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonBackup</text>
+<text text-anchor="start" x="554.75" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label menuMaxiButtonBackuptext</text>
+<text text-anchor="start" x="554.75" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonDifficult</text>
+<text text-anchor="start" x="554.75" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label menuMaxiButtonDifficultText</text>
+<text text-anchor="start" x="554.75" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonEasy</text>
+<text text-anchor="start" x="554.75" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">Label menuMaxiButtonEasyText</text>
+<text text-anchor="start" x="554.75" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuMaxiButtonHelp</text>
+<text text-anchor="start" x="563.25" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 38 more...</text>
+<text text-anchor="start" x="554.75" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Alert</text>
+<text text-anchor="start" x="563.25" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CONFIRMATION_ALERT</text>
+<text text-anchor="start" x="554.75" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="563.25" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="563.25" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
+<text text-anchor="start" x="554.75" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="563.25" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
+<text text-anchor="start" x="563.25" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_CLOSED</text>
+<text text-anchor="start" x="553.25" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="563.25" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="563.25" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final ISplashScreenView</text>
+<text text-anchor="start" x="563.25" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iSplashScreenView)</text>
+<text text-anchor="start" x="554.75" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">void confirmationAlertStyle()</text>
+<text text-anchor="start" x="554.75" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
+<text text-anchor="start" x="554.75" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingConfigureStage()</text>
+<text text-anchor="start" x="554.75" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingFadeIn</text>
+<text text-anchor="start" x="563.25" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Node node)</text>
+<text text-anchor="start" x="554.75" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMaximizePrimary</text>
+<text text-anchor="start" x="563.25" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage()</text>
+<text text-anchor="start" x="554.75" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingShowStage()</text>
+<text text-anchor="start" x="554.75" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="563.25" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupListViewClip</text>
+<text text-anchor="start" x="563.25" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ListView&lt;?&gt; listView,</text>
+<text text-anchor="start" x="563.25" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Rectangle clipView)</text>
+<polygon fill="#666666" stroke="#666666" points="549.25,-566 549.25,-566 737.5,-566 737.5,-566 549.25,-566"/>
+<polygon fill="#666666" stroke="#666666" points="549.25,-282 549.25,-282 561.25,-282 561.25,-282 549.25,-282"/>
+<polygon fill="#666666" stroke="#666666" points="561.25,-282 561.25,-282 737.5,-282 737.5,-282 561.25,-282"/>
+<polygon fill="none" stroke="#666666" points="549.25,-80 549.25,-596 737.5,-596 737.5,-80 549.25,-80"/>
 </a>
 </g>
 </g>
@@ -252,7 +265,7 @@
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M508.61,-705.84C520.48,-697.33 531.69,-687.38 540.38,-676 571.92,-634.66 593.88,-583.62 609.13,-533.88"/>
+<path fill="none" stroke="#63b8ff" d="M508.61,-705.84C520.48,-697.33 531.69,-687.38 540.38,-676 558.84,-651.8 574.02,-624.29 586.49,-595.65"/>
 <polygon fill="none" stroke="#63b8ff" points="506.99,-702.7 500.68,-711.21 510.92,-708.5 506.99,-702.7"/>
 </a>
 </g>

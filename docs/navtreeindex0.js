@@ -56,6 +56,7 @@ var NAVTREEINDEX0 =
 "_i_scene_provider_8java.html":[3,0,1,0,0,0,0,0,6,2],
 "_i_software_mapper_8java.html":[3,0,1,0,0,0,0,0,6,0,7],
 "_i_splash_screen_view_8java.html":[3,0,1,0,0,0,0,0,6,3],
+"_item_list_cell_8java.html":[3,0,1,0,0,0,0,0,11,0,0,0],
 "_j_v_m_application_properties_8java.html":[3,0,1,0,0,0,0,0,2,3],
 "_j_v_m_application_properties_u_test_8java.html":[3,0,1,1,0,0,0,0,1,2],
 "_launcher_8java.html":[3,0,1,0,0,0,0,0,13],
@@ -100,8 +101,8 @@ var NAVTREEINDEX0 =
 "_sudo_main_8java.html":[3,0,1,0,0,0,0,0,14],
 "_tag_dto_8java.html":[3,0,1,0,0,0,0,0,3,0,1],
 "_toast_levels_8java.html":[3,0,1,0,0,0,0,0,4,7],
-"_toaster_button_8java.html":[3,0,1,0,0,0,0,0,11,0,0,0],
-"_toaster_v_box_8java.html":[3,0,1,0,0,0,0,0,11,0,0,1],
+"_toaster_button_8java.html":[3,0,1,0,0,0,0,0,11,0,1,0],
+"_toaster_v_box_8java.html":[3,0,1,0,0,0,0,0,11,0,1,1],
 "_urls_8java.html":[3,0,1,0,0,0,0,0,4,8],
 "_version_service_8java.html":[3,0,1,0,0,0,0,0,9,2],
 "_version_service_i_test_8java.html":[3,0,1,1,0,0,0,0,2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html#a4ac6858d65efd03b07a1eed378065d2e":[2,0,0,0,0,2,2,1,0,0,0],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html#a57e431d546527dac20742cee97458c8f":[1,0,0,0,0,2,2,1,0,0,1],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html#a57e431d546527dac20742cee97458c8f":[2,0,0,0,0,2,2,1,0,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html":[1,0,0,0,0,3,2],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html":[2,0,0,0,0,3,2]
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html":[1,0,0,0,0,3,2]
 };

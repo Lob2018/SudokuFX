@@ -2,8 +2,8 @@
 <area shape="rect" id="Node000001" title="Interface defining method to open the main stage." alt="" coords="298,5,528,123"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="5,171,263,1072"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,134,278,172,265,191,261,188,274,169,308,131"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="288,360,538,883"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="416,138,416,360,410,360,410,138"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="288,277,538,965"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="416,138,416,278,410,278,410,138"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html" title="View class for the full menu screen of the Sudoku application." alt="" coords="562,344,760,899"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="519,131,553,169,576,210,596,253,627,343,621,345,591,255,571,212,548,172,515,134"/>
 </map>
