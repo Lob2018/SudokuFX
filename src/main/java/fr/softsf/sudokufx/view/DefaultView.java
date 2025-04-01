@@ -184,6 +184,23 @@ public final class DefaultView implements IMainView, ISceneProvider {
     @FXML
     private Rectangle menuSaveClipListView;
 
+    @FXML
+    private Button menuBackgroundButtonReduce;
+    @FXML
+    private Label menuBackgroundButtonReduceText;
+    @FXML
+    private Button menuBackgroundButtonBackground;
+    @FXML
+    private Label menuBackgroundButtonBackgroundText;
+    @FXML
+    private Button menuBackgroundButtonImage;
+    @FXML
+    private Label menuBackgroundButtonImageText;
+    @FXML
+    private Button menuBackgroundButtonColor;
+    @FXML
+    private Label menuBackgroundButtonColorText;
+
     /**
      * Initializes the default view. This method is automatically called by
      * JavaFX after loading the FXML.
@@ -239,7 +256,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         if (easySelected.isBlank()) {
             menuMaxiButtonEasy.setAccessibleRoleDescription(null);
             menuMaxiButtonEasy.getStyleClass().remove("colorEasy");
-        } else{
+        } else {
             menuMaxiButtonEasy.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
             menuMaxiButtonEasy.getStyleClass().add("colorEasy");
         }
@@ -253,7 +270,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         if (mediumSelected.isBlank()) {
             menuMaxiButtonMedium.setAccessibleRoleDescription(null);
             menuMaxiButtonMedium.getStyleClass().remove("colorMedium");
-        } else{
+        } else {
             menuMaxiButtonMedium.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
             menuMaxiButtonMedium.getStyleClass().add("colorMedium");
         }
@@ -267,7 +284,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         if (difficultSelected.isBlank()) {
             menuMaxiButtonDifficult.setAccessibleRoleDescription(null);
             menuMaxiButtonDifficult.getStyleClass().remove("colorDifficult");
-        } else{
+        } else {
             menuMaxiButtonDifficult.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
             menuMaxiButtonDifficult.getStyleClass().add("colorDifficult");
         }
@@ -347,8 +364,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuSolveButtonSolveClear.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuSolveButtonSolveClear.getTooltip().setText(I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
 
-
-
         menuSaveButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.save.button.reduce.accessibility"));
         menuSaveButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.save.button.reduce.accessibility"));
         menuSaveButtonReduceText.setText(I18n.INSTANCE.getValue("menu.save.button.reduce.text"));
@@ -364,13 +379,13 @@ public final class DefaultView implements IMainView, ISceneProvider {
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         String backupName = "01/03/25 14:";
         for (int i = 31; i >= 11; i--) {
-            menuSaveListView.getItems().add(backupName+i);
+            menuSaveListView.getItems().add(backupName + i);
         }
-        menuSaveListView.getItems().add(backupName+10);
-        menuSaveListView.getSelectionModel().select(backupName+10);
+        menuSaveListView.getItems().add(backupName + 10);
+        menuSaveListView.getSelectionModel().select(backupName + 10);
         Platform.runLater(() -> {
             menuSaveListView.refresh();
-            menuSaveListView.scrollTo(backupName+10);
+            menuSaveListView.scrollTo(backupName + 10);
         });
         menuSaveListView.setCellFactory(param ->
                 new ItemListCell(
@@ -383,9 +398,21 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 )
         );
 
-
-
-
+        menuBackgroundButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
+        menuBackgroundButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
+        menuBackgroundButtonReduceText.setText(I18n.INSTANCE.getValue("menu.background.button.reduce.text"));
+        menuBackgroundButtonBackground.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.background.accessibility"));
+        menuBackgroundButtonBackground.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.background.accessibility") + I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
+        menuBackgroundButtonBackground.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
+        menuBackgroundButtonBackgroundText.setText(I18n.INSTANCE.getValue("menu.background.button.background.text"));
+        menuBackgroundButtonImage.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.image.accessibility"));
+        menuBackgroundButtonImage.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.image.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        menuBackgroundButtonImage.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        menuBackgroundButtonImageText.setText(I18n.INSTANCE.getValue("menu.background.button.image.text"));
+        menuBackgroundButtonColor.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
+        menuBackgroundButtonColor.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        menuBackgroundButtonColor.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        menuBackgroundButtonColorText.setText(I18n.INSTANCE.getValue("menu.background.button.color.text"));
 
 
     }

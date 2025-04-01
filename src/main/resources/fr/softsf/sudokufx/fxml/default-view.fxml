@@ -227,7 +227,8 @@
                                 <Label fx:id="menuMaxiButtonEasyText" styleClass="root,menuButtonLabel"/>
                             </HBox>
                             <Region HBox.hgrow="ALWAYS"/>
-                            <HBox fx:id="menuMaxiHBoxEasyPossibilities" alignment="CENTER_RIGHT" styleClass="menuHBoxRightContainer">
+                            <HBox fx:id="menuMaxiHBoxEasyPossibilities" alignment="CENTER_RIGHT"
+                                  styleClass="menuHBoxRightContainer">
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
@@ -254,7 +255,8 @@
                                 <Label fx:id="menuMaxiButtonMediumText" styleClass="root,menuButtonLabel"/>
                             </HBox>
                             <Region HBox.hgrow="ALWAYS"/>
-                            <HBox fx:id="menuMaxiHBoxMediumPossibilities" alignment="CENTER_RIGHT" styleClass="menuHBoxRightContainer" visible="false">
+                            <HBox fx:id="menuMaxiHBoxMediumPossibilities" alignment="CENTER_RIGHT"
+                                  styleClass="menuHBoxRightContainer" visible="false">
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
@@ -281,7 +283,8 @@
                                 <Label fx:id="menuMaxiButtonDifficultText" styleClass="root,menuButtonLabel"/>
                             </HBox>
                             <Region HBox.hgrow="ALWAYS"/>
-                            <HBox fx:id="menuMaxiHBoxDifficultPossibilities" alignment="CENTER_RIGHT" styleClass="menuHBoxRightContainer" visible="false">
+                            <HBox fx:id="menuMaxiHBoxDifficultPossibilities" alignment="CENTER_RIGHT"
+                                  styleClass="menuHBoxRightContainer" visible="false">
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
@@ -486,7 +489,8 @@
                                 <Label fx:id="menuSolveButtonSolveText" styleClass="root,menuButtonLabel"/>
                             </HBox>
                             <Region HBox.hgrow="ALWAYS"/>
-                            <HBox fx:id="menuSolveHBoxPossibilities" alignment="CENTER_RIGHT" styleClass="menuHBoxRightContainer">
+                            <HBox fx:id="menuSolveHBoxPossibilities" alignment="CENTER_RIGHT"
+                                  styleClass="menuHBoxRightContainer">
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
                                 <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
@@ -518,7 +522,7 @@
         <!---->
         <!--Save menu (submenu)-->
         <!---->
-        <VBox fx:id="menuSave" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuSave" alignment="CENTER" styleClass="menu" managed="false" visible="false">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuSaveButtonReduce" styleClass="menuButton">
                     <graphic>
@@ -575,6 +579,79 @@
                     </ListView>
                 </ScrollPane>
             </HBox>
+        </VBox>
+        <!---->
+        <!--Background menu (submenu)-->
+        <!---->
+        <VBox fx:id="menuBackground" alignment="CENTER" styleClass="menu">
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Button fx:id="menuBackgroundButtonReduce" styleClass="menuButton">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Region styleClass="menuDropdownOpen" visible="false"/>
+                            <Text text="&#xe9bd;" styleClass="material,menuClose"/>
+                            <Label fx:id="menuBackgroundButtonReduceText" styleClass="root,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+                <Region styleClass="menuButtonCircle" visible="false"/>
+            </HBox>
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Button fx:id="menuBackgroundButtonBackground" styleClass="menuButton,submenuSelected">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
+                            <Text text="&#xe3f4;" styleClass="material"/>
+                            <Label fx:id="menuBackgroundButtonBackgroundText"
+                                   styleClass="root,bold-text,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+                <Region styleClass="menuButtonCircle" visible="false"/>
+            </HBox>
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Region styleClass="submenuIndentation" visible="false"/>
+                <Button fx:id="menuBackgroundButtonImage" styleClass="menuButton">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Region styleClass="menuDropdownOpen" visible="false"/>
+                            <Text text="&#xe43f;" styleClass="material"/>
+                            <Label fx:id="menuBackgroundButtonImageText" styleClass="root,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+            </HBox>
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Region styleClass="submenuIndentation" visible="false"/>
+                <Button fx:id="menuBackgroundButtonColor" styleClass="menuButton">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Region styleClass="menuDropdownOpen" visible="false"/>
+                            <Text text="&#xe40a;" styleClass="material"/>
+                            <Label fx:id="menuBackgroundButtonColorText" styleClass="root,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+            </HBox>
+            <Region styleClass="menuMiniButton" visible="false"/>
+            <Region styleClass="menuMiniButton" visible="false"/>
+            <Region styleClass="menuMiniButton" visible="false"/>
+            <Region styleClass="menuMiniButton" visible="false"/>
+            <Region styleClass="menuMiniButton" visible="false"/>
+            <Region styleClass="menuMiniButton" visible="false"/>
+            <Region styleClass="menuMiniButton" visible="false"/>
         </VBox>
         <!---->
         <!--SudokuFX grid-->
