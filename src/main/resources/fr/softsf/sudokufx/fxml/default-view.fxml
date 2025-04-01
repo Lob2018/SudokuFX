@@ -458,7 +458,7 @@
         <!---->
         <!--Solve menu (submenu)-->
         <!---->
-        <VBox fx:id="menuSolve" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuSolve" alignment="CENTER" styleClass="menu" managed="false" visible="false">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuSolveButtonReduce" styleClass="menuButton">
                     <graphic>
@@ -514,6 +514,67 @@
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>
+        </VBox>
+        <!---->
+        <!--Save menu (submenu)-->
+        <!---->
+        <VBox fx:id="menuSave" alignment="CENTER" styleClass="menu">
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Button fx:id="menuSaveButtonReduce" styleClass="menuButton">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Region styleClass="menuDropdownOpen" visible="false"/>
+                            <Text text="&#xe9bd;" styleClass="material,menuClose"/>
+                            <Label fx:id="menuSaveButtonReduceText" styleClass="root,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+                <Region styleClass="menuButtonCircle" visible="false"/>
+            </HBox>
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Button fx:id="menuSaveButtonSave" styleClass="menuButton,submenuSelected">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
+                            <Text text="&#xe161;" styleClass="material"/>
+                            <Label fx:id="menuSaveButtonSaveText" styleClass="root,bold-text,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+                <Region styleClass="menuButtonCircle" visible="false"/>
+            </HBox>
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Region styleClass="submenuIndentation" visible="false"/>
+                <Button fx:id="menuSaveButtonBackup" styleClass="menuButton">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Region styleClass="menuDropdownOpen" visible="false"/>
+                            <Text text="&#xeb60;" styleClass="material"/>
+                            <Label fx:id="menuSaveButtonBackupText" styleClass="root,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+            </HBox>
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Region styleClass="submenuIndentation" visible="false"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <ScrollPane styleClass="menuList">
+                    <ListView fx:id="menuSaveListView" styleClass="menuList">
+                        <clip>
+                            <Rectangle fx:id="menuSaveClipListView"/>
+                        </clip>
+                    </ListView>
+                </ScrollPane>
+            </HBox>
         </VBox>
         <!---->
         <!--SudokuFX grid-->

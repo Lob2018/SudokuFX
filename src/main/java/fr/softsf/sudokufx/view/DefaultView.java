@@ -167,6 +167,22 @@ public final class DefaultView implements IMainView, ISceneProvider {
     @FXML
     private HBox menuSolveHBoxPossibilities;
 
+    @FXML
+    private Button menuSaveButtonReduce;
+    @FXML
+    private Label menuSaveButtonReduceText;
+    @FXML
+    private Button menuSaveButtonSave;
+    @FXML
+    private Label menuSaveButtonSaveText;
+    @FXML
+    private Button menuSaveButtonBackup;
+    @FXML
+    private Label menuSaveButtonBackupText;
+    @FXML
+    private ListView<String> menuSaveListView;
+    @FXML
+    private Rectangle menuSaveClipListView;
 
     /**
      * Initializes the default view. This method is automatically called by
@@ -330,6 +346,48 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuSolveButtonSolveClear.setAccessibleText(I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility"));
         menuSolveButtonSolveClear.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuSolveButtonSolveClear.getTooltip().setText(I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+
+
+
+        menuSaveButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.save.button.reduce.accessibility"));
+        menuSaveButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.save.button.reduce.accessibility"));
+        menuSaveButtonReduceText.setText(I18n.INSTANCE.getValue("menu.save.button.reduce.text"));
+        menuSaveButtonSave.setAccessibleText(I18n.INSTANCE.getValue("menu.save.button.save.accessibility"));
+        menuSaveButtonSave.getTooltip().setText(I18n.INSTANCE.getValue("menu.save.button.save.accessibility") + I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
+        menuSaveButtonSave.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
+        menuSaveButtonSaveText.setText(I18n.INSTANCE.getValue("menu.save.button.save.text"));
+        menuSaveButtonBackup.setAccessibleText(I18n.INSTANCE.getValue("menu.save.button.backup.accessibility"));
+        menuSaveButtonBackup.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        menuSaveButtonBackup.getTooltip().setText(I18n.INSTANCE.getValue("menu.save.button.backup.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        menuSaveButtonBackupText.setText(I18n.INSTANCE.getValue("menu.save.button.backup.text"));
+        setupListViewClip(menuSaveListView, menuSaveClipListView);
+        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        String backupName = "01/03/25 14:";
+        for (int i = 31; i >= 11; i--) {
+            menuSaveListView.getItems().add(backupName+i);
+        }
+        menuSaveListView.getItems().add(backupName+10);
+        menuSaveListView.getSelectionModel().select(backupName+10);
+        Platform.runLater(() -> {
+            menuSaveListView.refresh();
+            menuSaveListView.scrollTo(backupName+10);
+        });
+        menuSaveListView.setCellFactory(param ->
+                new ItemListCell(
+                        menuSaveListView,
+                        "\ue92b",
+                        I18n.INSTANCE.getValue("menu.save.button.backup.cell.delete.accessibility"),
+                        I18n.INSTANCE.getValue("menu.save.button.backup.dialog.confirmation.title"),
+                        I18n.INSTANCE.getValue("menu.save.button.backup.dialog.confirmation.message"),
+                        CONFIRMATION_ALERT
+                )
+        );
+
+
+
+
+
+
     }
 
     /**
