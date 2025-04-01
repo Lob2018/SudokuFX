@@ -208,7 +208,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuMiniButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
         menuMiniButtonNew.getTooltip().setText(I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        String playerName = "Toto";
+        String playerName = "Tototototototototototototototo";
         menuMaxiButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.accessibility"));
         menuMaxiButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.accessibility"));
         menuMaxiButtonReduceText.setText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.text"));
@@ -222,8 +222,11 @@ public final class DefaultView implements IMainView, ISceneProvider {
         String easySelected = menuMaxiHBoxEasyPossibilities.isVisible() ? ".selected" : "";
         if (easySelected.isBlank()) {
             menuMaxiButtonEasy.setAccessibleRoleDescription(null);
-        } else
+            menuMaxiButtonEasy.getStyleClass().remove("colorEasy");
+        } else{
             menuMaxiButtonEasy.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
+            menuMaxiButtonEasy.getStyleClass().add("colorEasy");
+        }
         menuMaxiButtonEasy.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.easy.accessibility" + easySelected), maxiMenuEasyPercentage));
         menuMaxiButtonEasy.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.easy.accessibility" + easySelected), maxiMenuEasyPercentage));
         menuMaxiButtonEasyText.setText(I18n.INSTANCE.getValue("menu.maxi.button.easy.text"));
@@ -233,8 +236,11 @@ public final class DefaultView implements IMainView, ISceneProvider {
         String mediumSelected = menuMaxiHBoxMediumPossibilities.isVisible() ? ".selected" : "";
         if (mediumSelected.isBlank()) {
             menuMaxiButtonMedium.setAccessibleRoleDescription(null);
-        } else
+            menuMaxiButtonMedium.getStyleClass().remove("colorMedium");
+        } else{
             menuMaxiButtonMedium.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
+            menuMaxiButtonMedium.getStyleClass().add("colorMedium");
+        }
         menuMaxiButtonMedium.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.medium.accessibility" + mediumSelected), maxiMenuMediumPercentage));
         menuMaxiButtonMedium.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.medium.accessibility" + mediumSelected), maxiMenuMediumPercentage));
         menuMaxiButtonMediumText.setText(I18n.INSTANCE.getValue("menu.maxi.button.medium.text"));
@@ -244,8 +250,11 @@ public final class DefaultView implements IMainView, ISceneProvider {
         String difficultSelected = menuMaxiHBoxDifficultPossibilities.isVisible() ? ".selected" : "";
         if (difficultSelected.isBlank()) {
             menuMaxiButtonDifficult.setAccessibleRoleDescription(null);
-        } else
+            menuMaxiButtonDifficult.getStyleClass().remove("colorDifficult");
+        } else{
             menuMaxiButtonDifficult.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
+            menuMaxiButtonDifficult.getStyleClass().add("colorDifficult");
+        }
         menuMaxiButtonDifficult.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.difficult.accessibility" + difficultSelected), maxiMenuDifficultPercentage));
         menuMaxiButtonDifficult.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.difficult.accessibility" + difficultSelected), maxiMenuDifficultPercentage));
         menuMaxiButtonDifficultText.setText(I18n.INSTANCE.getValue("menu.maxi.button.difficult.text"));
@@ -282,11 +291,9 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuPlayerButtonPlayerEdit.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"), playerName));
         menuPlayerButtonPlayerEdit.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuPlayerButtonPlayerEdit.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"), playerName) + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-
         menuPlayerButtonNew.setAccessibleText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
         menuPlayerButtonNew.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuPlayerButtonNew.getTooltip().setText(I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-
         menuPlayerButtonNewText.setText(I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
         setupListViewClip(menuPlayerListView, menuPlayerClipListView);
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)

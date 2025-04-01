@@ -184,7 +184,7 @@
         <!---->
         <!--Maxi menu-->
         <!---->
-        <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu" managed="false" visible="false">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuMaxiButtonReduce" styleClass="menuButton">
                     <graphic>
@@ -410,7 +410,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuPlayerButtonPlayer" styleClass="menuButton">
+                <Button fx:id="menuPlayerButtonPlayer" styleClass="menuButton,submenuSelected">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
@@ -458,7 +458,7 @@
         <!---->
         <!--Solve menu (submenu)-->
         <!---->
-        <VBox fx:id="menuSolve" alignment="CENTER" styleClass="menu" managed="false" visible="false">
+        <VBox fx:id="menuSolve" alignment="CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuSolveButtonReduce" styleClass="menuButton">
                     <graphic>
@@ -475,7 +475,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSolveButtonSolve" styleClass="menuButton">
+                <Button fx:id="menuSolveButtonSolve" styleClass="menuButton,submenuSelected">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
