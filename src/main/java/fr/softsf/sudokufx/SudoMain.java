@@ -47,9 +47,8 @@ public class SudoMain extends Application {
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
     /**
-     * Task to initialize the Spring context asynchronously, preventing UI blockages.
-     * This runs {@code SpringApplication.run(SudoMain.class)} in a separate thread
-     * to keep the JavaFX Application Thread responsive.
+     * Task to initialize the Spring context asynchronously, ensuring the JavaFX Application Thread remains unblocked.
+     * This executes {@code SpringApplication.run(SudoMain.class)} in a separate thread to maintain UI responsiveness.
      */
     private final Task<Void> springContextTask = new Task<>() {
         @Override
