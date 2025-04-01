@@ -337,7 +337,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
      */
     private void setMenuHBoxPossibilitiesFromPercentage(HBox starsContainer, int percentage) {
         double stars = Math.round(percentage * 0.1) / 2.0;
-        System.out.println("Stars : " + stars);
         List<Text> listTextsStars = starsContainer.getChildren().stream()
                 .filter(Text.class::isInstance)
                 .map(Text.class::cast).toList();
