@@ -14,6 +14,7 @@
 <?import javafx.scene.layout.TilePane?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.ColorPicker?>
 <StackPane alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
     <!---->
@@ -413,7 +414,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuPlayerButtonPlayer" styleClass="menuButton,submenuSelected">
+                <Button fx:id="menuPlayerButtonPlayer" styleClass="menuButton,subMenuOpened">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
@@ -478,7 +479,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSolveButtonSolve" styleClass="menuButton,submenuSelected">
+                <Button fx:id="menuSolveButtonSolve" styleClass="menuButton,subMenuOpened">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -539,7 +540,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSaveButtonSave" styleClass="menuButton,submenuSelected">
+                <Button fx:id="menuSaveButtonSave" styleClass="menuButton,subMenuOpened">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
@@ -600,7 +601,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuBackgroundButtonBackground" styleClass="menuButton,submenuSelected">
+                <Button fx:id="menuBackgroundButtonBackground" styleClass="menuButton,subMenuOpened">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
@@ -632,18 +633,11 @@
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Region styleClass="submenuIndentation" visible="false"/>
-                <Button fx:id="menuBackgroundButtonColor" styleClass="menuButton">
-                    <graphic>
-                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
-                            <Region styleClass="menuDropdownOpen" visible="false"/>
-                            <Text text="&#xe40a;" styleClass="material"/>
-                            <Label fx:id="menuBackgroundButtonColorText" styleClass="root,menuButtonLabel"/>
-                        </HBox>
-                    </graphic>
+                <ColorPicker fx:id="menuBackgroundButtonColor" styleClass="button,menuButton">
                     <tooltip>
                         <Tooltip/>
                     </tooltip>
-                </Button>
+                </ColorPicker>
             </HBox>
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>

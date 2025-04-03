@@ -39,7 +39,8 @@
 }
 
 .root,
-.menuList .list-cell {
+.menuList .list-cell,
+.color-picker .label{
     -fx-font-family: 'Luciole';
     -fx-font-size: 1em;
     -fx-line-spacing: 1.5;
@@ -133,6 +134,45 @@
     -fx-border-width: .2em;
     -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
 }
+
+
+
+
+
+
+
+.color-picker {
+}
+.color-picker .color-picker-label .picker-color{
+    -fx-padding: 0 .56em 0 1.2em;
+    -fx-pref-width: 2.35em !important;
+    -fx-max-width: 2.35em !important;
+    -fx-min-width: 2.35em !important;
+    -fx-pref-height: 1.64em !important;
+    -fx-max-height: 1.64em !important;
+    -fx-min-height: 1.64em !important;
+        -fx-background-color:red;
+}
+.color-picker > .color-picker-label > .picker-color > .picker-color-rect {
+    -fx-scale-x: .0745em;
+    -fx-scale-y: .0745em;
+    -fx-stroke: black;
+    -fx-stroke-width: .065em;
+    -fx-arc-width: .1em;
+    -fx-arc-height: .1em;
+}
+.color-picker .color-picker-label > .text {
+    -fx-translate-y: -.13em;
+}
+
+
+
+
+
+
+
+
+
 
 .button.defaultButton:focused,
 .button.toast:focused {
@@ -232,9 +272,12 @@
     -fx-background-color: #FEBE98;
 }
 
-.colorResolve,
-.submenuSelected {
+.colorResolve {
     -fx-background-color: #99FFFF;
+}
+
+.subMenuOpened {
+    -fx-background-color: #DDDDDD;
 }
 
 .colorError {

@@ -14,10 +14,7 @@ import javafx.beans.binding.DoubleBinding;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 import javafx.scene.image.Image;
 
 import javafx.scene.layout.HBox;
@@ -197,9 +194,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
     @FXML
     private Label menuBackgroundButtonImageText;
     @FXML
-    private Button menuBackgroundButtonColor;
-    @FXML
-    private Label menuBackgroundButtonColorText;
+    private ColorPicker menuBackgroundButtonColor;
 
     /**
      * Initializes the default view. This method is automatically called by
@@ -412,7 +407,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonColor.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
         menuBackgroundButtonColor.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonColor.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuBackgroundButtonColorText.setText(I18n.INSTANCE.getValue("menu.background.button.color.text"));
 
 
     }
