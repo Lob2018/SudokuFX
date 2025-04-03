@@ -11,12 +11,17 @@ import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.beans.binding.DoubleBinding;
+import javafx.event.Event;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -31,7 +36,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.text.MessageFormat;
 import java.util.List;
 import java.util.Objects;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Default view class of the Sudoku application. This class is
@@ -52,6 +56,8 @@ public final class DefaultView implements IMainView, ISceneProvider {
     @FXML
     @Autowired
     private ToasterVBox toaster;
+    @FXML
+    private GridPane sudokuFX;
     @FXML
     private Button menuHiddenButtonShow;
     @FXML
@@ -407,6 +413,12 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonColor.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
         menuBackgroundButtonColor.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonColor.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+
+        menuBackgroundButtonColor.setOnAction(new EventHandler() {
+            public void handle(Event t) {
+                sudokuFX.setBackground(new Background(new BackgroundFill((menuBackgroundButtonColor.getValue()), null, null)));
+            }
+        });
 
 
     }

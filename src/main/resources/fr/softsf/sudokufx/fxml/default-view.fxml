@@ -20,7 +20,7 @@
     <!---->
     <!--SudokuFX container-->
     <!---->
-    <GridPane alignment="CENTER" styleClass="sudokuFXContainer">
+    <GridPane fx:id="sudokuFX"  alignment="CENTER" styleClass="sudokuFXContainer">
         <!---->
         <!--Hidden menu-->
         <!---->
