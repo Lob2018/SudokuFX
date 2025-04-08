@@ -31,7 +31,7 @@
 <text text-anchor="start" x="128.75" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="137.25" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; games</text>
 <text text-anchor="start" x="128.75" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="137.25" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isselected</text>
+<text text-anchor="start" x="137.25" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Boolean isselected</text>
 <text text-anchor="start" x="128.75" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="137.25" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">String name</text>
 <text text-anchor="start" x="128.75" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -93,7 +93,7 @@
 <text text-anchor="start" x="144" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="156" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">String imagepath</text>
 <text text-anchor="start" x="144" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="156" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isimage</text>
+<text text-anchor="start" x="156" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">Boolean isimage</text>
 <text text-anchor="start" x="191.88" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <polygon fill="#666666" stroke="#666666" points="135,-302 135,-302 251.75,-302 251.75,-302 135,-302"/>
 <polygon fill="#666666" stroke="#666666" points="135,-238 135,-238 154,-238 154,-238 135,-238"/>

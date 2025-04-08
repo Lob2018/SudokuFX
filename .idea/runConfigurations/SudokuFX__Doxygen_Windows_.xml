@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SudokuFX [Doxygen]" type="MavenRunConfiguration" factoryName="Maven">
+  <configuration default="false" name="SudokuFX [Doxygen Windows]" type="MavenRunConfiguration" factoryName="Maven">
     <MavenSettings>
       <option name="myGeneralSettings">
         <MavenGeneralSettings>
@@ -33,7 +33,7 @@
               <option value="clean" />
               <option value="prepare-package" />
               <option value="-P" />
-              <option value="generate-docs" />
+              <option value="generate-docs-windows" />
             </list>
           </option>
           <option name="multimoduleDir" />

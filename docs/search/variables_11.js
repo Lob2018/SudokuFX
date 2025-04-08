@@ -30,6 +30,7 @@ var searchData=
   ['springcontexttask_27',['springContextTask',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7a44ca01808ecbb7aec4a4ab17436d87',1,'fr::softsf::sudokufx::SudoMain']]],
   ['sql_5finvalid_5fauthorization_5fspec_5fexception_28',['SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html#a55a34e0b742e5decee70bf2701afbd3e',1,'fr::softsf::sudokufx::enums::LogBackTxt']]],
   ['stage_29',['stage',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html#a24741c930f1c515d47679f2b3f7a4768',1,'fr::softsf::sudokufx::utils::DynamicFontSizeChangeE2ETest']]],
-  ['suffix_30',['suffix',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#ab04a254756e5173ca75a5db5032e65c8',1,'fr::softsf::sudokufx::utils::FileSystemManagerUTest']]],
-  ['symmetric_5fkey_5falias_31',['SYMMETRIC_KEY_ALIAS',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a2e1d19a17c3fb39221a520f34d90d511',1,'fr::softsf::sudokufx::configuration::database::ApplicationKeystore']]]
+  ['sudokufx_30',['sudokuFX',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a899dd77c58eb346e795d1f55302dcae5',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['suffix_31',['suffix',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#ab04a254756e5173ca75a5db5032e65c8',1,'fr::softsf::sudokufx::utils::FileSystemManagerUTest']]],
+  ['symmetric_5fkey_5falias_32',['SYMMETRIC_KEY_ALIAS',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a2e1d19a17c3fb39221a520f34d90d511',1,'fr::softsf::sudokufx::configuration::database::ApplicationKeystore']]]
 ];

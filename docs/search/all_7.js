@@ -2,7 +2,7 @@ var searchData=
 [
   ['game_0',['Game',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html',1,'fr::softsf::sudokufx::model']]],
   ['game_2ejava_1',['Game.java',['../_game_8java.html',1,'']]],
-  ['gamedto_2',['GameDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af115ca634d2f50876b34c8c03ba20226',1,'fr::softsf::sudokufx::dto']]],
+  ['gamedto_2',['GameDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#ab5d2080d0c76f8058c944d91ec9a49c4',1,'fr::softsf::sudokufx::dto']]],
   ['gamedto_2ejava_3',['GameDto.java',['../_game_dto_8java.html',1,'']]],
   ['gameid_4',['gameid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#acebb48ee421ef29239fb801c42f29e89',1,'fr::softsf::sudokufx::model::Game']]],
   ['gamelevel_5',['GameLevel',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html',1,'fr::softsf::sudokufx::model']]],

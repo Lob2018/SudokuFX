@@ -11,7 +11,7 @@ var searchData=
   ['performance_20evaluation_8',['Temporary performance evaluation',['../index.html#Temporary_performance_evaluation',1,'']]],
   ['player_9',['Player',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html',1,'fr::softsf::sudokufx::model']]],
   ['player_2ejava_10',['Player.java',['../_player_8java.html',1,'']]],
-  ['playerdto_11',['PlayerDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1ec66747e8dc472d375db5495929d95e',1,'fr::softsf::sudokufx::dto']]],
+  ['playerdto_11',['PlayerDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a78c64f9aa988ddc79b6231cb035950b5',1,'fr::softsf::sudokufx::dto']]],
   ['playerdto_2ejava_12',['PlayerDto.java',['../_player_dto_8java.html',1,'']]],
   ['playerid_13',['playerid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#ad4e2afcbe4aac46cd1178829c52497e1',1,'fr.softsf.sudokufx.model.Game.playerid'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0577745d0567a7787eb3fa0e85cd895e',1,'fr.softsf.sudokufx.model.Player.playerid']]],
   ['playerlanguage_14',['PlayerLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html',1,'fr::softsf::sudokufx::model']]],

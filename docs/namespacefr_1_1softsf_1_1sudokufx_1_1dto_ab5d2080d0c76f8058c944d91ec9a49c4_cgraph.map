@@ -1,0 +1,16 @@
+<map id="fr.softsf.sudokufx.dto.GameDto" name="fr.softsf.sudokufx.dto.GameDto">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,211,99"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" title=" " alt="" coords="270,5,454,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,69,254,49,256,54,170,74"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" title=" " alt="" coords="265,72,460,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,83,249,83,249,88,211,88"/>
+<area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a78c64f9aa988ddc79b6231cb035950b5" title=" " alt="" coords="259,147,466,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="157,97,300,139,299,144,155,102"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="320,148,312,138,317,128,334,122,362,120,393,123,409,129,407,134,392,128,362,125,335,127,321,132,317,137,324,144"/>
+<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="514,96,753,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="437,143,543,123,544,129,438,149"/>
+<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title=" " alt="" coords="532,147,735,173"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="466,157,517,157,517,163,466,163"/>
+<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d" title=" " alt="" coords="540,197,727,240"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="428,171,526,193,525,198,427,177"/>
+</map>

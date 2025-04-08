@@ -6,9 +6,10 @@ var searchData=
   ['initializefolders_3',['initializeFolders',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#aa6ebde8964ea06b1974f872569b6e347',1,'fr::softsf::sudokufx::configuration::os::OsFolderInitializer']]],
   ['initializefxmlservice_4',['initializeFxmlService',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5ef977463b6da726c91c4b3d67d1f4',1,'fr::softsf::sudokufx::SudoMain']]],
   ['initscene_5',['initScene',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a574a17236a0848e4ce394ff5077a15fc',1,'fr::softsf::sudokufx::SudoMain']]],
-  ['iosfolderfactory_6',['iOsFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a1cd5afd513804cfb585cfba63809f0d9',1,'fr::softsf::sudokufx::configuration::os::OsFolderFactoryManager']]],
-  ['isspringcontextexitonrefresh_7',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aff54c65c6ec18575ff3b13a6c1c83ed0',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
-  ['isvalidatedbyregex_8',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a75b509baad4b2f51d5c9fc3399b16408',1,'fr::softsf::sudokufx::enums::MyRegex']]],
-  ['isvalidpassword_9',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a2f6edf199ecc426e9c8895f93d3b8374',1,'fr::softsf::sudokufx::enums::MyRegex']]],
-  ['itemlistcell_10',['ItemListCell',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a4f5c2fcc5acfc27b30d7d709597040b2',1,'fr::softsf::sudokufx::view::components::list::ItemListCell']]]
+  ['inttocolor_6',['intToColor',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a93a406688c5219a22f430481731edab5',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['iosfolderfactory_7',['iOsFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a1cd5afd513804cfb585cfba63809f0d9',1,'fr::softsf::sudokufx::configuration::os::OsFolderFactoryManager']]],
+  ['isspringcontextexitonrefresh_8',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aff54c65c6ec18575ff3b13a6c1c83ed0',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
+  ['isvalidatedbyregex_9',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a75b509baad4b2f51d5c9fc3399b16408',1,'fr::softsf::sudokufx::enums::MyRegex']]],
+  ['isvalidpassword_10',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a2f6edf199ecc426e9c8895f93d3b8374',1,'fr::softsf::sudokufx::enums::MyRegex']]],
+  ['itemlistcell_11',['ItemListCell',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a4f5c2fcc5acfc27b30d7d709597040b2',1,'fr::softsf::sudokufx::view::components::list::ItemListCell']]]
 ];

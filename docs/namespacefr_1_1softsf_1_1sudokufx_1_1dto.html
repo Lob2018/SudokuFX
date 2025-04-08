@@ -111,26 +111,26 @@ Packages</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab71438b60cd714ddb76aa22248390565" id="r_ab71438b60cd714ddb76aa22248390565"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab71438b60cd714ddb76aa22248390565">BackgroundDto</a> (Long backgroundid, @NotNull @Size(max=7) String hexcolor, @Size(max=260) String imagepath, @NotNull boolean isimage)</td></tr>
-<tr class="separator:ab71438b60cd714ddb76aa22248390565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af115ca634d2f50876b34c8c03ba20226" id="r_af115ca634d2f50876b34c8c03ba20226"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af115ca634d2f50876b34c8c03ba20226">GameDto</a> (Long gameid, @NotNull <a class="el" href="#a55eaa4f45339420cc86114a3d8dab18b">GridDto</a> grididDto, @NotNull <a class="el" href="#a1ec66747e8dc472d375db5495929d95e">PlayerDto</a> playeridDto, @NotNull <a class="el" href="#a82b953d912bf7621392b51e45915af32">GameLevelDto</a> levelidDto, @NotNull boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
-<tr class="separator:af115ca634d2f50876b34c8c03ba20226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a25e6890e40c0776edc15742133036" id="r_a74a25e6890e40c0776edc15742133036"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74a25e6890e40c0776edc15742133036">BackgroundDto</a> (Long backgroundid, @NotNull @Size(max=8) String hexcolor, @Size(max=260) String imagepath, @NotNull Boolean isimage)</td></tr>
+<tr class="separator:a74a25e6890e40c0776edc15742133036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5d2080d0c76f8058c944d91ec9a49c4" id="r_ab5d2080d0c76f8058c944d91ec9a49c4"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5d2080d0c76f8058c944d91ec9a49c4">GameDto</a> (Long gameid, @NotNull <a class="el" href="#a55eaa4f45339420cc86114a3d8dab18b">GridDto</a> grididDto, @NotNull <a class="el" href="#a78c64f9aa988ddc79b6231cb035950b5">PlayerDto</a> playeridDto, @NotNull <a class="el" href="#a82b953d912bf7621392b51e45915af32">GameLevelDto</a> levelidDto, @NotNull Boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
+<tr class="separator:ab5d2080d0c76f8058c944d91ec9a49c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b953d912bf7621392b51e45915af32" id="r_a82b953d912bf7621392b51e45915af32"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b953d912bf7621392b51e45915af32">GameLevelDto</a> (Byte levelid, @NotNull @Min(1) @Max(3) Byte level)</td></tr>
 <tr class="separator:a82b953d912bf7621392b51e45915af32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55eaa4f45339420cc86114a3d8dab18b" id="r_a55eaa4f45339420cc86114a3d8dab18b"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55eaa4f45339420cc86114a3d8dab18b">GridDto</a> (Long gridid, @NotNull @Size(max=81) String defaultgridvalue, @NotNull @Size(max=810) String gridvalue, @NotNull @Min(0) @Max(100) Byte possibilities)</td></tr>
 <tr class="separator:a55eaa4f45339420cc86114a3d8dab18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b93797829452798604adaaaf4b0da89" id="r_a4b93797829452798604adaaaf4b0da89"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b93797829452798604adaaaf4b0da89">MenuDto</a> (Byte menuid, @NotNull @Min(1) @Max(3) Byte mode)</td></tr>
 <tr class="separator:a4b93797829452798604adaaaf4b0da89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ec66747e8dc472d375db5495929d95e" id="r_a1ec66747e8dc472d375db5495929d95e"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ec66747e8dc472d375db5495929d95e">PlayerDto</a> (Long playerid, @NotNull <a class="el" href="#a57e3465d00d6e83a9d0fd8c03223868d">PlayerLanguageDto</a> playerlanguageidDto, @NotNull <a class="el" href="#ab71438b60cd714ddb76aa22248390565">BackgroundDto</a> backgroundidDto, @NotNull <a class="el" href="#a4b93797829452798604adaaaf4b0da89">MenuDto</a> menuidDto, @NotNull Set&lt; <a class="el" href="#af115ca634d2f50876b34c8c03ba20226">GameDto</a> &gt; gamesDto, @NotNull @Size(max=256) String name, @NotNull boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
-<tr class="separator:a1ec66747e8dc472d375db5495929d95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78c64f9aa988ddc79b6231cb035950b5" id="r_a78c64f9aa988ddc79b6231cb035950b5"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78c64f9aa988ddc79b6231cb035950b5">PlayerDto</a> (Long playerid, @NotNull <a class="el" href="#a57e3465d00d6e83a9d0fd8c03223868d">PlayerLanguageDto</a> playerlanguageidDto, @NotNull <a class="el" href="#a74a25e6890e40c0776edc15742133036">BackgroundDto</a> backgroundidDto, @NotNull <a class="el" href="#a4b93797829452798604adaaaf4b0da89">MenuDto</a> menuidDto, @NotNull Set&lt; <a class="el" href="#ab5d2080d0c76f8058c944d91ec9a49c4">GameDto</a> &gt; gamesDto, @NotNull @Size(max=256) String name, @NotNull Boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
+<tr class="separator:a78c64f9aa988ddc79b6231cb035950b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e3465d00d6e83a9d0fd8c03223868d" id="r_a57e3465d00d6e83a9d0fd8c03223868d"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57e3465d00d6e83a9d0fd8c03223868d">PlayerLanguageDto</a> (Long playerlanguageid, @NotNull @Size(max=2) String iso)</td></tr>
 <tr class="separator:a57e3465d00d6e83a9d0fd8c03223868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb837a4b352084f4dab3a4bc405d19c" id="r_a5cb837a4b352084f4dab3a4bc405d19c"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cb837a4b352084f4dab3a4bc405d19c">SoftwareDto</a> (Long softwareid, @NotNull @Size(max=128) String currentversion, @NotNull @Size(max=128) String lastversion, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
 <tr class="separator:a5cb837a4b352084f4dab3a4bc405d19c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ab71438b60cd714ddb76aa22248390565" name="ab71438b60cd714ddb76aa22248390565"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab71438b60cd714ddb76aa22248390565">&#9670;&#160;</a></span>BackgroundDto()</h2>
+<a id="a74a25e6890e40c0776edc15742133036" name="a74a25e6890e40c0776edc15742133036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a25e6890e40c0776edc15742133036">&#9670;&#160;</a></span>BackgroundDto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull @Size(max=7) String</td>          <td class="paramname"><span class="paramname"><em>hexcolor</em></span>, </td>
+          <td class="paramtype">@NotNull @Size(max=8) String</td>          <td class="paramname"><span class="paramname"><em>hexcolor</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -153,15 +153,15 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull boolean</td>          <td class="paramname"><span class="paramname"><em>isimage</em></span>&#160;)</td>
+          <td class="paramtype">@NotNull Boolean</td>          <td class="paramname"><span class="paramname"><em>isimage</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af115ca634d2f50876b34c8c03ba20226" name="af115ca634d2f50876b34c8c03ba20226"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af115ca634d2f50876b34c8c03ba20226">&#9670;&#160;</a></span>GameDto()</h2>
+<a id="ab5d2080d0c76f8058c944d91ec9a49c4" name="ab5d2080d0c76f8058c944d91ec9a49c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5d2080d0c76f8058c944d91ec9a49c4">&#9670;&#160;</a></span>GameDto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +179,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull <a class="el" href="#a1ec66747e8dc472d375db5495929d95e">PlayerDto</a></td>          <td class="paramname"><span class="paramname"><em>playeridDto</em></span>, </td>
+          <td class="paramtype">@NotNull <a class="el" href="#a78c64f9aa988ddc79b6231cb035950b5">PlayerDto</a></td>          <td class="paramname"><span class="paramname"><em>playeridDto</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -189,7 +189,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull boolean</td>          <td class="paramname"><span class="paramname"><em>isselected</em></span>, </td>
+          <td class="paramtype">@NotNull Boolean</td>          <td class="paramname"><span class="paramname"><em>isselected</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -208,7 +208,7 @@ Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1dto_af115ca634d2f50876b34c8c03ba20226_cgraph.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1dto_ab5d2080d0c76f8058c944d91ec9a49c4_cgraph.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -286,8 +286,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ec66747e8dc472d375db5495929d95e" name="a1ec66747e8dc472d375db5495929d95e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ec66747e8dc472d375db5495929d95e">&#9670;&#160;</a></span>PlayerDto()</h2>
+<a id="a78c64f9aa988ddc79b6231cb035950b5" name="a78c64f9aa988ddc79b6231cb035950b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78c64f9aa988ddc79b6231cb035950b5">&#9670;&#160;</a></span>PlayerDto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +305,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull <a class="el" href="#ab71438b60cd714ddb76aa22248390565">BackgroundDto</a></td>          <td class="paramname"><span class="paramname"><em>backgroundidDto</em></span>, </td>
+          <td class="paramtype">@NotNull <a class="el" href="#a74a25e6890e40c0776edc15742133036">BackgroundDto</a></td>          <td class="paramname"><span class="paramname"><em>backgroundidDto</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -315,7 +315,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull Set&lt; <a class="el" href="#af115ca634d2f50876b34c8c03ba20226">GameDto</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>gamesDto</em></span>, </td>
+          <td class="paramtype">@NotNull Set&lt; <a class="el" href="#ab5d2080d0c76f8058c944d91ec9a49c4">GameDto</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>gamesDto</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -325,7 +325,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@NotNull boolean</td>          <td class="paramname"><span class="paramname"><em>isselected</em></span>, </td>
+          <td class="paramtype">@NotNull Boolean</td>          <td class="paramname"><span class="paramname"><em>isselected</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -344,7 +344,7 @@ Functions</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1dto_a1ec66747e8dc472d375db5495929d95e_cgraph.svg" width="506" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1dto_a78c64f9aa988ddc79b6231cb035950b5_cgraph.svg" width="506" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -412,7 +412,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html">dto</a></li>
-    <li class="footer">Generated on Mon Mar 31 2025 11:35:54 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Apr 8 2025 16:46:53 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

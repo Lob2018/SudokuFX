@@ -319,9 +319,14 @@
                 </plugins>
             </build>
         </profile>
-        <!-- Exec plugin to generate Doxygen documentation for id:generate-docs -->
+        <!-- Exec plugin to generate Doxygen documentation and LICENSE.txt suitable for id:generate-docs-windows and id:generate-docs-unix -->
         <profile>
-            <id>generate-docs</id>
+            <id>generate-docs-windows</id>
+            <activation>
+                <os>
+                    <family>windows</family>
+                </os>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
@@ -329,6 +334,105 @@
                         <artifactId>exec-maven-plugin</artifactId>
                         <version>3.5.0</version>
                         <executions>
+                            <execution>
+                                <id>exec-generate-third-party</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>mvn</executable>
+                                    <arguments>
+                                        <argument>license:add-third-party</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>merge-license-files-windows</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>cmd</executable>
+                                    <arguments>
+                                        <argument>/c</argument>
+                                        <argument>.myresources\scripts\windowsLicense.bat</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>exec-generate-doxygen-docs</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>doxygen</executable>
+                                    <arguments>
+                                        <argument>Doxyfile</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>exec-git-add-all</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>git</executable>
+                                    <arguments>
+                                        <argument>add</argument>
+                                        <argument>-A</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>generate-docs-unix</id>
+            <activation>
+                <os>
+                    <family>unix</family>
+                </os>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>3.5.0</version>
+                        <executions>
+                            <execution>
+                                <id>exec-generate-third-party</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>mvn</executable>
+                                    <arguments>
+                                        <argument>license:add-third-party</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>merge-license-files-unix</id>
+                                <phase>prepare-package</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>bash</executable>
+                                    <arguments>
+                                        <argument>.myresources/scripts/unixLicense.sh</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
                             <execution>
                                 <id>exec-generate-doxygen-docs</id>
                                 <phase>prepare-package</phase>
