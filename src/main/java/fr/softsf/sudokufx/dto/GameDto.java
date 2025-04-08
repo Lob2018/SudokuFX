@@ -13,7 +13,7 @@ public record GameDto(
         @NotNull
         GameLevelDto levelidDto,
         @NotNull
-        boolean isselected,
+        Boolean isselected,
         @NotNull
         LocalDateTime createdat,
         @NotNull

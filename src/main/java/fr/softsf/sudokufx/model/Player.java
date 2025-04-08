@@ -67,7 +67,7 @@ public class Player {
     @Builder.Default
     @NotNull
     @Setter
-    private boolean isselected = false;
+    private Boolean isselected = false;
 
     @NotNull
     private LocalDateTime createdat;

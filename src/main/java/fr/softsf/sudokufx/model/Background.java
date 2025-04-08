@@ -19,7 +19,7 @@ public class Background {
 
     @NotNull
     @Setter
-    @Size(max = 7)
+    @Size(max = 8)
     private String hexcolor;
 
     @Size(max = 260)
@@ -29,5 +29,5 @@ public class Background {
     @Builder.Default
     @NotNull
     @Setter
-    private boolean isimage = false;
+    private Boolean isimage = false;
 }

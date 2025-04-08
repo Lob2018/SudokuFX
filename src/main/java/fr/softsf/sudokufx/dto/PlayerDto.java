@@ -21,7 +21,7 @@ public record PlayerDto(
         @Size(max = 256)
         String name,
         @NotNull
-        boolean isselected,
+        Boolean isselected,
         @NotNull
         LocalDateTime createdat,
         @NotNull

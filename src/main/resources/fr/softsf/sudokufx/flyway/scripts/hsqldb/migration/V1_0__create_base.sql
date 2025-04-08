@@ -19,7 +19,7 @@ iso VARCHAR(2) NOT NULL
 -- Création de la table "background"
 CREATE TABLE background (
 backgroundid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-hexcolor VARCHAR(7) NOT NULL,
+hexcolor VARCHAR(8) NOT NULL,
 imagepath VARCHAR(1024),
 isimage BOOLEAN DEFAULT FALSE NOT NULL,
 );
