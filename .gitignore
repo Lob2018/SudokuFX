@@ -4,6 +4,10 @@ target/
 # Ignore Maven Wrapper binary files
 .mvn/wrapper/maven-wrapper.jar
 
+### Ignore Maven configuration file ###
+### For NVD API key ###
+.mvn/maven.config
+
 ### IntelliJ IDEA ###
 .idea/modules.xml
 .idea/jarRepositories.xml
