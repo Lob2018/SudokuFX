@@ -414,14 +414,32 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonColor.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonColor.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
 
-        menuBackgroundButtonColor.setOnAction(new EventHandler() {
-            public void handle(Event t) {
-                sudokuFX.setBackground(new Background(new BackgroundFill((menuBackgroundButtonColor.getValue()), null, null)));
-            }
+        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        String colorValueFromModel = "d5d54680";
+        // Add a listener to detect changes in the selected color
+        menuBackgroundButtonColor.valueProperty().addListener((observable, oldValue, newValue) -> {
+            sudokuFX.setBackground(new Background(new BackgroundFill(newValue, null, null)));
+            System.out.println("The color to store is :"+ newValue.toString().substring(2));
         });
-
-
+        menuBackgroundButtonColor.setValue(intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16)));
     }
+
+    /**
+     * Converts a 32-bit integer (0xRRGGBBAA) into a JavaFX Color object.
+     *
+     * @param colorValue The color value in hexadecimal format with
+     *                   Red, Green, Blue, and Alpha (normalized to [0.0, 1.0]) components.
+     * @return A JavaFX Color object representing the given RGBA values.
+     */
+    public static Color intToColor(int colorValue) {
+        return Color.rgb(
+                (colorValue >> 24) & 0xFF,
+                (colorValue >> 16) & 0xFF,
+                (colorValue >> 8) & 0xFF,
+                (colorValue & 0xFF) / 255.0
+        );
+    }
+
 
     /**
      * Updates the star ratings displayed in the provided HBox container based on a percentage value.
