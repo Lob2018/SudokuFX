@@ -19,7 +19,7 @@ FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TOR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 
-This product includes software, licensed under the CC BY 4.0 licence and the Apache 2.0 license :
+This product includes software, licensed under:
 
 ---
 
@@ -45,6 +45,7 @@ Modifications made: Lob2018 - Code based on the original MicrosoftEdge/Sudoku re
 Original repository: [MicrosoftEdge/Sudoku](https://github.com/MicrosoftEdge/Sudoku/tree/master)
 
 ---
+
 Lists of 102 third-party dependencies.
      (ASF 2.0) Code Generation Library (cglib:cglib:3.1 - http://cglib.sourceforge.net/)
      (Eclipse Public License - v 1.0) (GNU Lesser General Public License) Logback Classic Module (ch.qos.logback:logback-classic:1.5.18 - http://logback.qos.ch/logback-classic)
