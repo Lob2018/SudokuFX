@@ -322,11 +322,6 @@
         <!-- Exec plugin to generate Doxygen documentation and LICENSE.txt suitable for id:generate-docs-windows and id:generate-docs-unix -->
         <profile>
             <id>generate-docs-windows</id>
-            <activation>
-                <os>
-                    <family>windows</family>
-                </os>
-            </activation>
             <build>
                 <plugins>
                     <plugin>
@@ -395,11 +390,6 @@
         </profile>
         <profile>
             <id>generate-docs-unix</id>
-            <activation>
-                <os>
-                    <family>unix</family>
-                </os>
-            </activation>
             <build>
                 <plugins>
                     <plugin>
