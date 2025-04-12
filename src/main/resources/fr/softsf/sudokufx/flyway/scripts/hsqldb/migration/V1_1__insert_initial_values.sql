@@ -7,7 +7,7 @@ INSERT INTO playerlanguage (iso) VALUES ('FR');
 INSERT INTO playerlanguage (iso) VALUES ('EN');
 
 -- Creating values for background
-INSERT INTO background (hexcolor, imagepath, isimage) VALUES ('00000000', '', FALSE);
+INSERT INTO background (hexcolor, imagepath, isimage) VALUES ('000000ff', '', FALSE);
 
 -- Creating values for menu
 INSERT INTO menu (mode) VALUES (1);
