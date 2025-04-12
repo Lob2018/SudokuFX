@@ -186,6 +186,10 @@
     -fx-background-color: #DDDDDD;
 }
 
+#sudokuFXStackPane{
+    -fx-background-color: #000000;
+}
+
 #toaster {
     -fx-pref-height: 0;
     -fx-max-height: 0;
