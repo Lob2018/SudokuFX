@@ -58,6 +58,14 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private ToasterVBox toaster;
     @FXML
     private GridPane sudokuFX;
+
+
+    @FXML
+    private GridPane spinner;
+    @FXML
+    private Text spinnerText1, spinnerText2;
+    Animation spinnerAnimation1, spinnerAnimation2;
+
     @FXML
     private Button menuHiddenButtonShow;
     @FXML
@@ -208,6 +216,13 @@ public final class DefaultView implements IMainView, ISceneProvider {
      */
     @FXML
     private void initialize() {
+
+        spinner.setMouseTransparent(true);
+        spinnerAnimation1 = createPulse(spinnerText1, Duration.seconds(0));
+        spinnerAnimation2 = createPulse(spinnerText2, Duration.seconds(.5));
+        spinner.setVisible(false);
+        spinner.setManaged(false);
+
 
         confirmationAlertStyle();
 
@@ -425,13 +440,42 @@ public final class DefaultView implements IMainView, ISceneProvider {
     }
 
     /**
+     * Creates a pulsing animation for a given text element with scaling and fading effects.
+     *
+     * @param text  the Text node to apply the animation to.
+     * @param delay the delay before the animation starts.
+     * @return a ParallelTransition combining scale and fade animations.
+     */
+    private Animation createPulse(Text text, Duration delay) {
+        ScaleTransition scale = new ScaleTransition(Duration.seconds(2), text);
+        scale.setInterpolator(Interpolator.EASE_BOTH);
+        scale.setFromX(0);
+        scale.setFromY(0);
+        scale.setToX(1);
+        scale.setToY(1);
+        scale.setCycleCount(Animation.INDEFINITE);
+        scale.setDelay(delay);
+        FadeTransition fade = new FadeTransition(Duration.seconds(2), text);
+        scale.setInterpolator(Interpolator.EASE_OUT);
+        fade.setFromValue(1);
+        fade.setToValue(0);
+        fade.setCycleCount(Animation.INDEFINITE);
+        fade.setDelay(delay);
+        ParallelTransition pulse = new ParallelTransition(scale, fade);
+        pulse.setCycleCount(Animation.INDEFINITE);
+        pulse.setDelay(delay);
+        return pulse;
+    }
+
+
+    /**
      * Converts a 32-bit integer (0xRRGGBBAA) into a JavaFX Color object.
      *
      * @param colorValue The color value in hexadecimal format with
      *                   Red, Green, Blue, and Alpha (normalized to [0.0, 1.0]) components.
      * @return A JavaFX Color object representing the given RGBA values.
      */
-    public static Color intToColor(int colorValue) {
+    private Color intToColor(int colorValue) {
         return Color.rgb(
                 (colorValue >> 24) & 0xFF,
                 (colorValue >> 16) & 0xFF,

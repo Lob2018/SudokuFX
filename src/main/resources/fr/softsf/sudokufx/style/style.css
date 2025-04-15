@@ -53,6 +53,27 @@
     -fx-text-fill: #000000;
 }
 
+
+
+
+
+#spinner{
+    -fx-background-color: transparent;
+}
+.spinner-text{
+    -fx-font-family: 'Material Icons Round Regular';
+    -fx-font-size: 10em;
+    -fx-line-spacing: 1.5;
+    -fx-fill: #FFFFFF;
+    -fx-text-fill: #FFFFFF;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 20, 0.5, 0, 8);
+}
+
+
+
+
+
+
 .tooltip {
     -fx-font-family: 'Luciole';
 }
