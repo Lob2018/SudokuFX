@@ -50,6 +50,7 @@ public final class ToasterVBox extends VBox {
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
+        toast.requestFocus();
     }
 
     /**
@@ -73,6 +74,7 @@ public final class ToasterVBox extends VBox {
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
+        toast.requestFocus();
     }
 
     /**
