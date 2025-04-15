@@ -13,6 +13,7 @@ import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.DoubleBinding;
+import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
@@ -441,6 +442,18 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     }
 
+    private void showSpinner(boolean b) {
+        spinner.setVisible(b);
+        spinner.setManaged(b);
+        if (b) {
+            spinnerAnimation1.play();
+            spinnerAnimation2.play();
+        } else {
+            spinnerAnimation1.stop();
+            spinnerAnimation2.stop();
+        }
+    }
+
     /**
      * Creates a pulsing animation for a given text element with scaling and fading effects.
      *
@@ -489,80 +502,81 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     @FXML
     private void handleFileImageChooser(ActionEvent event) {
-
-        spinner.setVisible(true);
-        spinner.setManaged(true);
-        spinnerAnimation1.play();
-        spinnerAnimation2.play();
-
-
         FileChooser fileChooser = new FileChooser();
-        //fileChooser.setTitle("Sélectionner un fichier");
-        FileChooser.ExtensionFilter imageFilter = new FileChooser.ExtensionFilter(
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(
                 "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp", "*.gif"
-        );
-        fileChooser.getExtensionFilters().add(imageFilter);
-        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-        File selectedFile = fileChooser.showOpenDialog(stage);
+        ));
+
+        File selectedFile = fileChooser.showOpenDialog(primaryStage);
+
         if (selectedFile != null) {
             String fileName = selectedFile.getName().toLowerCase();
-            if (fileName.endsWith(".jpg") || fileName.endsWith(".jpeg") || fileName.endsWith(".png") ||
-                    fileName.endsWith(".bmp") || fileName.endsWith(".gif")) {
-                toaster.addToast("Chargement en cours.", "", ToastLevels.INFO);
-                Platform.runLater(() -> {
-                    System.out.println("Fichier sélectionné : " + selectedFile.getAbsolutePath());
-                    BackgroundImage backgroundImage = setBackgroundImage(selectedFile);
-                    toaster.addToast("Chargement terminé.", "", ToastLevels.INFO);
-                    sudokuFX.setBackground(new Background(backgroundImage));
+            if (fileName.matches(".*\\.(jpg|jpeg|png|bmp|gif)$")) {
+                showSpinner(true);
+                toaster.addToast("Chargement de l'image en cours...", "", ToastLevels.INFO);
+                Task<BackgroundImage> backgroundTask = new Task<>() {
+                    @Override
+                    protected BackgroundImage call() {
+                        try {
+                            // Chargement image originale sans préchargement
+                            Image tempImage = new Image(selectedFile.toURI().toString(), false);
+                            double imageWidth = tempImage.getWidth();
+                            double imageHeight = tempImage.getHeight();
+                            double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
+                            double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
+                            double scaleFactor = Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
+                            // Redimensionnement (lourd)
+                            Image resizedImage = new Image(
+                                    selectedFile.toURI().toString(),
+                                    imageWidth * scaleFactor,
+                                    imageHeight * scaleFactor,
+                                    true, true
+                            );
+                            if (resizedImage.isError()) {
+                                System.out.println("Erreur : " + resizedImage.getException().getMessage());
+                                return null;
+                            }
+                            return new BackgroundImage(
+                                    resizedImage,
+                                    BackgroundRepeat.NO_REPEAT,
+                                    BackgroundRepeat.NO_REPEAT,
+                                    BackgroundPosition.CENTER,
+                                    new BackgroundSize(
+                                            resizedImage.getWidth() / 3,
+                                            resizedImage.getHeight() / 3,
+                                            false, false, false, false
+                                    )
+                            );
+                        } catch (Exception e) {
+                            System.out.println("Erreur dans la tâche : " + e.getMessage());
+                            return null;
+                        }
+                    }
+                };
+                backgroundTask.setOnSucceeded(e -> {
+                    BackgroundImage backgroundImage = backgroundTask.getValue();
+                    Platform.runLater(() -> {
+                        if (backgroundImage != null) {
+                            sudokuFX.setBackground(new Background(backgroundImage));
+                        } else {
+                            toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR);
+                        }
+                        showSpinner(false);
+                    });
                 });
+                backgroundTask.setOnFailed(e -> {
+                    Platform.runLater(() -> {
+                        toaster.addToast("Erreur inattendue lors du chargement.", "", ToastLevels.ERROR);
+                        showSpinner(false);
+                    });
+                    backgroundTask.getException().printStackTrace();
+                });
+                new Thread(backgroundTask).start();
             } else {
                 toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR);
-                System.out.println("Le fichier sélectionné n'est pas un format d'image valide.");
             }
         }
-
     }
-
-    private BackgroundImage setBackgroundImage(File file) {
-        try {
-            Image tempImage = new Image(file.toURI().toString(), false); // false = pas de préchargement
-            double imageWidth = tempImage.getWidth();
-            double imageHeight = tempImage.getHeight();
-            System.out.println("Dimensions originales de l'image : " + imageWidth + "x" + imageHeight);
-            double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
-            double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
-            System.out.println("Dimensions du GridPane : " + gridPaneWidth + "x" + gridPaneHeight);
-            double scaleFactor = Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
-            System.out.println("Facteur d'échelle : " + scaleFactor);
-            Image resizedImage = new Image(
-                    file.toURI().toString(),
-                    imageWidth * scaleFactor,
-                    imageHeight * scaleFactor,
-                    true, true);
-            if (resizedImage.isError()) {
-                toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR);
-                System.out.println("Erreur lors du redimensionnement de l'image : " + resizedImage.getException().getMessage());
-                return null;
-            }
-            return new BackgroundImage(resizedImage,
-                    BackgroundRepeat.NO_REPEAT,
-                    BackgroundRepeat.NO_REPEAT,
-                    BackgroundPosition.CENTER,
-                    new BackgroundSize(
-                            resizedImage.getWidth() / 3,
-                            resizedImage.getHeight() / 3,
-                            false,
-                            false,
-                            false,
-                            false
-                    )
-            );
-        } catch (Exception e) {
-            System.out.println("Exception lors de la création du BackgroundImage : " + e.getMessage());
-            return null;
-        }
-    }
-
 
     /**
      * Updates the star ratings displayed in the provided HBox container based on a percentage value.
