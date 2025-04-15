@@ -3,29 +3,28 @@ package fr.softsf.sudokufx.view;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.Paths;
+import fr.softsf.sudokufx.enums.ScreenSize;
+import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
-import javafx.animation.FadeTransition;
+import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.DoubleBinding;
-import javafx.event.Event;
-import javafx.event.EventHandler;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.GridPane;
-import javafx.scene.layout.HBox;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -33,6 +32,7 @@ import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.io.File;
 import java.text.MessageFormat;
 import java.util.List;
 import java.util.Objects;
@@ -430,13 +430,15 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonColor.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
 
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        String colorValueFromModel = "d5d54680";
+        String colorValueFromModel = "99b3ffcd";
         // Add a listener to detect changes in the selected color
         menuBackgroundButtonColor.valueProperty().addListener((observable, oldValue, newValue) -> {
             sudokuFX.setBackground(new Background(new BackgroundFill(newValue, null, null)));
-            System.out.println("The color to store is :"+ newValue.toString().substring(2));
+            System.out.println("The color to store is :" + newValue.toString().substring(2));
         });
         menuBackgroundButtonColor.setValue(intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16)));
+
+
     }
 
     /**
@@ -482,6 +484,83 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 (colorValue >> 8) & 0xFF,
                 (colorValue & 0xFF) / 255.0
         );
+    }
+
+
+    @FXML
+    private void handleFileImageChooser(ActionEvent event) {
+
+        spinner.setVisible(true);
+        spinner.setManaged(true);
+        spinnerAnimation1.play();
+        spinnerAnimation2.play();
+
+
+        FileChooser fileChooser = new FileChooser();
+        //fileChooser.setTitle("Sélectionner un fichier");
+        FileChooser.ExtensionFilter imageFilter = new FileChooser.ExtensionFilter(
+                "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp", "*.gif"
+        );
+        fileChooser.getExtensionFilters().add(imageFilter);
+        Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+        File selectedFile = fileChooser.showOpenDialog(stage);
+        if (selectedFile != null) {
+            String fileName = selectedFile.getName().toLowerCase();
+            if (fileName.endsWith(".jpg") || fileName.endsWith(".jpeg") || fileName.endsWith(".png") ||
+                    fileName.endsWith(".bmp") || fileName.endsWith(".gif")) {
+                toaster.addToast("Chargement en cours.", "", ToastLevels.INFO);
+                Platform.runLater(() -> {
+                    System.out.println("Fichier sélectionné : " + selectedFile.getAbsolutePath());
+                    BackgroundImage backgroundImage = setBackgroundImage(selectedFile);
+                    toaster.addToast("Chargement terminé.", "", ToastLevels.INFO);
+                    sudokuFX.setBackground(new Background(backgroundImage));
+                });
+            } else {
+                toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR);
+                System.out.println("Le fichier sélectionné n'est pas un format d'image valide.");
+            }
+        }
+
+    }
+
+    private BackgroundImage setBackgroundImage(File file) {
+        try {
+            Image tempImage = new Image(file.toURI().toString(), false); // false = pas de préchargement
+            double imageWidth = tempImage.getWidth();
+            double imageHeight = tempImage.getHeight();
+            System.out.println("Dimensions originales de l'image : " + imageWidth + "x" + imageHeight);
+            double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
+            double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
+            System.out.println("Dimensions du GridPane : " + gridPaneWidth + "x" + gridPaneHeight);
+            double scaleFactor = Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
+            System.out.println("Facteur d'échelle : " + scaleFactor);
+            Image resizedImage = new Image(
+                    file.toURI().toString(),
+                    imageWidth * scaleFactor,
+                    imageHeight * scaleFactor,
+                    true, true);
+            if (resizedImage.isError()) {
+                toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR);
+                System.out.println("Erreur lors du redimensionnement de l'image : " + resizedImage.getException().getMessage());
+                return null;
+            }
+            return new BackgroundImage(resizedImage,
+                    BackgroundRepeat.NO_REPEAT,
+                    BackgroundRepeat.NO_REPEAT,
+                    BackgroundPosition.CENTER,
+                    new BackgroundSize(
+                            resizedImage.getWidth() / 3,
+                            resizedImage.getHeight() / 3,
+                            false,
+                            false,
+                            false,
+                            false
+                    )
+            );
+        } catch (Exception e) {
+            System.out.println("Exception lors de la création du BackgroundImage : " + e.getMessage());
+            return null;
+        }
     }
 
 
