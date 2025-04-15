@@ -664,7 +664,7 @@
     <!---->
     <GridPane fx:id="spinner" alignment="CENTER">
         <Text fx:id="spinnerText1" text="&#xef4a;" styleClass="spinner-text"/>
-        <Text fx:id="spinnerText2" text="&#xef4a;" styleClass="spinner-text"/>
+        <Text fx:id="spinnerText2" text="&#xe836;" styleClass="spinner-text"/>
     </GridPane>
 
 </StackPane>
