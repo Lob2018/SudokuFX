@@ -569,7 +569,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         toaster.addToast("Erreur inattendue lors du chargement.", "", ToastLevels.ERROR);
                         showSpinner(false);
                     });
-                    backgroundTask.getException().printStackTrace();
+                    // TODO add error
                 });
                 new Thread(backgroundTask).start();
             } else {
