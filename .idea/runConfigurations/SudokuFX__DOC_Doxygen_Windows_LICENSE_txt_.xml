@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="SudokuFX [Doxygen Windows]" type="MavenRunConfiguration" factoryName="Maven">
+  <configuration default="false" name="SudokuFX [DOC Doxygen Windows+LICENSE.txt]" type="MavenRunConfiguration" factoryName="Maven">
     <MavenSettings>
       <option name="myGeneralSettings">
         <MavenGeneralSettings>
