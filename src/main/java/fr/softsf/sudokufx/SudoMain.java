@@ -19,9 +19,8 @@ import javafx.util.Duration;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.WebApplicationType;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.ComponentScan;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
@@ -48,23 +47,14 @@ public class SudoMain extends Application {
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
     /**
-     * Task to initialize the Spring context asynchronously, ensuring the JavaFX Application Thread remains unblocked.
-     * This executes the Spring context initialization in a separate thread to maintain UI responsiveness.
-     * - Uses {@code SpringApplicationBuilder} to configure the Spring context with:
-     *   - Lazy initialization to optimize startup performance.
-     *   - Disables the embedded web server (Tomcat) via {@code WebApplicationType.NONE}.
-     * - The context is created using Gluon Ignite's {@code SpringContext}, which is initialized with a reference to the JavaFX Application instance.
-     * This task ensures that Spring Boot is fully initialized without blocking the JavaFX UI thread.
+     * Initializes the Spring context asynchronously to avoid blocking the JavaFX Application Thread.
+     * Configuration (lazy init, no web server) is handled via application properties.
+     * Uses Gluon Ignite's {@code SpringContext} linked to the JavaFX Application instance.
      */
     private final Task<Void> springContextTask = new Task<>() {
         @Override
         protected Void call() {
-            context.init(() ->
-                    new SpringApplicationBuilder(SudoMain.class)
-                            .lazyInitialization(true)
-                            .web(WebApplicationType.NONE)
-                            .run()
-            );
+            context.init(() -> SpringApplication.run(SudoMain.class));
             return null;
         }
     };
