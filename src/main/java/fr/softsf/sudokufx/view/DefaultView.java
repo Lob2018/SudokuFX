@@ -11,6 +11,7 @@ import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
+import fr.softsf.sudokufx.viewmodel.ActiveMenuViewModel;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.DoubleBinding;
@@ -32,6 +33,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
 import java.text.MessageFormat;
@@ -54,6 +56,9 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     private static final Alert CONFIRMATION_ALERT = new Alert(Alert.AlertType.CONFIRMATION);
 
+    @Autowired
+    private ActiveMenuViewModel activeMenuViewModel;
+
     @FXML
     private ToasterVBox toaster;
     @FXML
@@ -61,6 +66,21 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     @FXML
     private GridPane sudokuFX;
+
+    @FXML
+    VBox menuHidden;
+    @FXML
+    VBox menuMini;
+    @FXML
+    VBox menuMaxi;
+    @FXML
+    VBox menuPlayer;
+    @FXML
+    VBox menuSolve;
+    @FXML
+    VBox menuSave;
+    @FXML
+    VBox menuBackground;
 
     @FXML
     private Button menuHiddenButtonShow;
@@ -428,6 +448,21 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonColor.setValue(intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16)));
 
 
+        // Managing the active menu
+        menuHidden.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.HIDDEN));
+        menuHidden.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.HIDDEN));
+        menuMini.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.MINI));
+        menuMini.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.MINI));
+        menuMaxi.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.MAXI));
+        menuMaxi.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.MAXI));
+        menuPlayer.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.PLAYER));
+        menuPlayer.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.PLAYER));
+        menuSolve.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.SOLVE));
+        menuSolve.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.SOLVE));
+        menuSave.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.BACKUP));
+        menuSave.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.BACKUP));
+        menuBackground.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.BACKGROUND));
+        menuBackground.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.BACKGROUND));
     }
 
     /**
@@ -460,7 +495,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
             String fileName = selectedFile.getName().toLowerCase();
             if (fileName.matches(".*\\.(jpg|jpeg|png|bmp)$")) {
                 spinner.showSpinner(true);
-                toaster.addToast("Chargement de l'image en cours...", selectedFile.toURI().toString(), ToastLevels.INFO,false);
+                toaster.addToast("Chargement de l'image en cours...", selectedFile.toURI().toString(), ToastLevels.INFO, false);
                 Task<BackgroundImage> backgroundTask = new Task<>() {
                     @Override
                     protected BackgroundImage call() {
@@ -507,7 +542,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         if (backgroundImage != null) {
                             sudokuFX.setBackground(new Background(backgroundImage));
                         } else {
-                            toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR,true);
+                            toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR, true);
                         }
                         spinner.showSpinner(false);
                     });
@@ -516,14 +551,14 @@ public final class DefaultView implements IMainView, ISceneProvider {
                     Throwable exception = e.getSource().getException();
                     Platform.runLater(() -> {
                         toaster.removeToast();
-                        toaster.addToast("Erreur inattendue lors du chargement.", (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR,true);
+                        toaster.addToast("Erreur inattendue lors du chargement.", (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR, true);
                         spinner.showSpinner(false);
                     });
                     // TODO add error
                 });
                 new Thread(backgroundTask).start();
             } else {
-                toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR,true);
+                toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR, true);
             }
         }
     }
@@ -583,6 +618,62 @@ public final class DefaultView implements IMainView, ISceneProvider {
         clipView.arcHeightProperty().bind(radiusBinding);
     }
 
+
+    /**
+     * Activates the MINI menu.
+     *
+     * @param actionEvent The UI action that triggered the change.
+     */
+    public void handleMenuMiniShow(ActionEvent actionEvent) {
+        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.MINI);
+    }
+
+    /**
+     * Activates the MAXI menu.
+     *
+     * @param actionEvent The UI action that triggered the change.
+     */
+    public void handleMenuMaxiShow(ActionEvent actionEvent) {
+        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.MAXI);
+    }
+
+    /**
+     * Activates the PLAYER menu.
+     *
+     * @param actionEvent The UI action that triggered the change.
+     */
+    public void handleMenuPlayerShow(ActionEvent actionEvent) {
+        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.PLAYER);
+    }
+
+    /**
+     * Activates the SOLVE menu.
+     *
+     * @param actionEvent The UI action that triggered the change.
+     */
+    public void handleMenuSolveShow(ActionEvent actionEvent) {
+        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.SOLVE);
+    }
+
+    /**
+     * Activates the BACKUP menu.
+     *
+     * @param actionEvent The UI action that triggered the change.
+     */
+    public void handleMenuBackupShow(ActionEvent actionEvent) {
+        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.BACKUP);
+    }
+
+    /**
+     * Activates the BACKGROUND menu.
+     *
+     * @param actionEvent The UI action that triggered the change.
+     */
+    public void handleMenuBackgroundShow(ActionEvent actionEvent) {
+        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.BACKGROUND);
+    }
+
+
     /**
      * Configures the primary stage for the full menu view.
      */
@@ -640,5 +731,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
         iSplashScreenView.hideSplashScreen();
         primaryStage.setAlwaysOnTop(false);
     }
+
 
 }

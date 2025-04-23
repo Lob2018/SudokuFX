@@ -26,8 +26,8 @@
         <!---->
         <!--Hidden menu-->
         <!---->
-        <VBox fx:id="menuHidden" alignment="CENTER" styleClass="menu,menuMini" managed="false" visible="false">
-            <Button fx:id="menuHiddenButtonShow" styleClass="menuMiniButton">
+        <VBox fx:id="menuHidden" alignment="CENTER" styleClass="menu,menuMini">
+            <Button fx:id="menuHiddenButtonShow" styleClass="menuMiniButton" onAction="#handleMenuMaxiShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -52,8 +52,8 @@
         <!---->
         <!--Mini menu-->
         <!---->
-        <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu,menuMini" managed="false" visible="false">
-            <Button fx:id="menuMiniButtonShow" styleClass="menuMiniButton">
+        <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu,menuMini">
+            <Button fx:id="menuMiniButtonShow" styleClass="menuMiniButton" onAction="#handleMenuMaxiShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -64,7 +64,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonPlayer" styleClass="menuMiniButton">
+            <Button fx:id="menuMiniButtonPlayer" styleClass="menuMiniButton" onAction="#handleMenuPlayerShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -114,7 +114,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonSolve" styleClass="menuMiniButton">
+            <Button fx:id="menuMiniButtonSolve" styleClass="menuMiniButton" onAction="#handleMenuSolveShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -127,7 +127,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonBackup" styleClass="menuMiniButton">
+            <Button fx:id="menuMiniButtonBackup" styleClass="menuMiniButton" onAction="#handleMenuBackupShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -138,7 +138,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonBackground" styleClass="menuMiniButton">
+            <Button fx:id="menuMiniButtonBackground" styleClass="menuMiniButton" onAction="#handleMenuBackgroundShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -187,9 +187,9 @@
         <!---->
         <!--Maxi menu-->
         <!---->
-        <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu" managed="false" visible="false">
+        <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonReduce" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -204,7 +204,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonPlayer" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonPlayer" styleClass="menuButton" onAction="#handleMenuPlayerShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -303,7 +303,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonSolve" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonSolve" styleClass="menuButton" onAction="#handleMenuSolveShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -320,7 +320,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonBackup" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonBackup" styleClass="menuButton" onAction="#handleMenuBackupShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -335,7 +335,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonBackground" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonBackground" styleClass="menuButton" onAction="#handleMenuBackgroundShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
@@ -399,9 +399,9 @@
         <!---->
         <!--Player menu (submenu)-->
         <!---->
-        <VBox fx:id="menuPlayer" alignment="CENTER" styleClass="menu" managed="false" visible="false">
+        <VBox fx:id="menuPlayer" alignment="CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuPlayerButtonReduce" styleClass="menuButton">
+                <Button fx:id="menuPlayerButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -416,7 +416,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuPlayerButtonPlayer" styleClass="menuButton,subMenuOpened">
+                <Button fx:id="menuPlayerButtonPlayer" styleClass="menuButton,subMenuOpened" onAction="#handleMenuMaxiShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
@@ -464,9 +464,9 @@
         <!---->
         <!--Solve menu (submenu)-->
         <!---->
-        <VBox fx:id="menuSolve" alignment="CENTER" styleClass="menu" managed="false" visible="false">
+        <VBox fx:id="menuSolve" alignment="CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSolveButtonReduce" styleClass="menuButton">
+                <Button fx:id="menuSolveButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -481,7 +481,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSolveButtonSolve" styleClass="menuButton,subMenuOpened">
+                <Button fx:id="menuSolveButtonSolve" styleClass="menuButton,subMenuOpened" onAction="#handleMenuMaxiShow">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -525,9 +525,9 @@
         <!---->
         <!--Save menu (submenu)-->
         <!---->
-        <VBox fx:id="menuSave" alignment="CENTER" styleClass="menu" managed="false" visible="false">
+        <VBox fx:id="menuSave" alignment="CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSaveButtonReduce" styleClass="menuButton">
+                <Button fx:id="menuSaveButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -542,7 +542,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSaveButtonSave" styleClass="menuButton,subMenuOpened">
+                <Button fx:id="menuSaveButtonSave" styleClass="menuButton,subMenuOpened" onAction="#handleMenuMaxiShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
@@ -588,7 +588,7 @@
         <!---->
         <VBox fx:id="menuBackground" alignment="CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuBackgroundButtonReduce" styleClass="menuButton">
+                <Button fx:id="menuBackgroundButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -603,7 +603,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuBackgroundButtonBackground" styleClass="menuButton,subMenuOpened">
+                <Button fx:id="menuBackgroundButtonBackground" styleClass="menuButton,subMenuOpened" onAction="#handleMenuMaxiShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>

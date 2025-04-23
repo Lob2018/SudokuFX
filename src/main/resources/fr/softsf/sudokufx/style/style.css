@@ -415,7 +415,7 @@
     -fx-padding: 0;
 }
 
-#menuPlayerListView {
+#menuPlayerListView,#menuSaveListView {
     -fx-pref-height: 18.75em;
     -fx-max-height: 18.75em;
     -fx-min-height: 18.75em;
