@@ -26,7 +26,7 @@
         <!---->
         <!--Hidden menu-->
         <!---->
-        <VBox fx:id="menuHidden" alignment="CENTER" styleClass="menu,menuMini">
+        <VBox fx:id="menuHidden" alignment="TOP_CENTER" styleClass="menu,menuMini">
             <Button fx:id="menuHiddenButtonShow" styleClass="menuMiniButton" onAction="#handleMenuMaxiShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
@@ -52,7 +52,7 @@
         <!---->
         <!--Mini menu-->
         <!---->
-        <VBox fx:id="menuMini" alignment="CENTER" styleClass="menu,menuMini">
+        <VBox fx:id="menuMini" alignment="TOP_CENTER" styleClass="menu,menuMini">
             <Button fx:id="menuMiniButtonShow" styleClass="menuMiniButton" onAction="#handleMenuMaxiShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
@@ -187,7 +187,7 @@
         <!---->
         <!--Maxi menu-->
         <!---->
-        <VBox fx:id="menuMaxi" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuMaxi" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuMaxiButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
@@ -399,7 +399,7 @@
         <!---->
         <!--Player menu (submenu)-->
         <!---->
-        <VBox fx:id="menuPlayer" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuPlayer" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuPlayerButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
@@ -464,7 +464,7 @@
         <!---->
         <!--Solve menu (submenu)-->
         <!---->
-        <VBox fx:id="menuSolve" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuSolve" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuSolveButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
@@ -525,7 +525,7 @@
         <!---->
         <!--Save menu (submenu)-->
         <!---->
-        <VBox fx:id="menuSave" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuSave" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuSaveButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
@@ -586,7 +586,7 @@
         <!---->
         <!--Background menu (submenu)-->
         <!---->
-        <VBox fx:id="menuBackground" alignment="CENTER" styleClass="menu">
+        <VBox fx:id="menuBackground" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuBackgroundButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>

@@ -236,6 +236,7 @@
 }
 
 .menu {
+    -fx-padding: 0.93em 0.65em 0.65em 0.65em;
     -fx-spacing: 0.79em;
     -fx-background-color: #00FF00;
     -fx-pref-height: 27.9em;
