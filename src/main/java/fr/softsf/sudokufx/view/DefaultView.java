@@ -323,8 +323,8 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuPlayerButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
         menuPlayerButtonReduceText.setText(I18n.INSTANCE.getValue("menu.player.button.reduce.text"));
         menuPlayerButtonPlayer.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.player.accessibility"), playerName));
-        menuPlayerButtonPlayer.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.player.accessibility"), playerName) + I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
-        menuPlayerButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
+        menuPlayerButtonPlayer.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.player.accessibility"), playerName) + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+        menuPlayerButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuPlayerButtonPlayerText.setText(playerName);
         menuPlayerButtonPlayerEdit.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"), playerName));
         menuPlayerButtonPlayerEdit.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
@@ -373,8 +373,8 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuSaveButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.save.button.reduce.accessibility"));
         menuSaveButtonReduceText.setText(I18n.INSTANCE.getValue("menu.save.button.reduce.text"));
         menuSaveButtonSave.setAccessibleText(I18n.INSTANCE.getValue("menu.save.button.save.accessibility"));
-        menuSaveButtonSave.getTooltip().setText(I18n.INSTANCE.getValue("menu.save.button.save.accessibility") + I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
-        menuSaveButtonSave.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
+        menuSaveButtonSave.getTooltip().setText(I18n.INSTANCE.getValue("menu.save.button.save.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+        menuSaveButtonSave.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuSaveButtonSaveText.setText(I18n.INSTANCE.getValue("menu.save.button.save.text"));
         menuSaveButtonBackup.setAccessibleText(I18n.INSTANCE.getValue("menu.save.button.backup.accessibility"));
         menuSaveButtonBackup.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
@@ -407,8 +407,8 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
         menuBackgroundButtonReduceText.setText(I18n.INSTANCE.getValue("menu.background.button.reduce.text"));
         menuBackgroundButtonBackground.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.background.accessibility"));
-        menuBackgroundButtonBackground.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.background.accessibility") + I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
-        menuBackgroundButtonBackground.setAccessibleRoleDescription(I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
+        menuBackgroundButtonBackground.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.background.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+        menuBackgroundButtonBackground.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuBackgroundButtonBackgroundText.setText(I18n.INSTANCE.getValue("menu.background.button.background.text"));
         menuBackgroundButtonImage.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.image.accessibility"));
         menuBackgroundButtonImage.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.image.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
