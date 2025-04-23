@@ -61,10 +61,9 @@
     -fx-font-family: 'Material Icons Round Regular';
     -fx-font-size: 12em;
     -fx-line-spacing: 1.5;
-    -fx-fill: radial-gradient(center 50% 50%, radius 117%,
-            white 35%,
-            rgba(0, 0, 0, 0.5) 36%,
-            rgba(0, 0, 0, 0.0) 100%);
+    -fx-fill: radial-gradient(center 50% 50%, radius 100%,
+            white 40%,
+            #66b6f1 41%);
 }
 
 .tooltip {
