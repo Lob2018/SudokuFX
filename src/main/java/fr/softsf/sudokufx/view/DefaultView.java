@@ -621,55 +621,43 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     /**
      * Activates the MINI menu.
-     *
-     * @param actionEvent The UI action that triggered the change.
      */
-    public void handleMenuMiniShow(ActionEvent actionEvent) {
+    public void handleMenuMiniShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.MINI);
     }
 
     /**
      * Activates the MAXI menu.
-     *
-     * @param actionEvent The UI action that triggered the change.
      */
-    public void handleMenuMaxiShow(ActionEvent actionEvent) {
+    public void handleMenuMaxiShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.MAXI);
     }
 
     /**
      * Activates the PLAYER menu.
-     *
-     * @param actionEvent The UI action that triggered the change.
      */
-    public void handleMenuPlayerShow(ActionEvent actionEvent) {
+    public void handleMenuPlayerShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.PLAYER);
     }
 
     /**
      * Activates the SOLVE menu.
-     *
-     * @param actionEvent The UI action that triggered the change.
      */
-    public void handleMenuSolveShow(ActionEvent actionEvent) {
+    public void handleMenuSolveShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.SOLVE);
     }
 
     /**
      * Activates the BACKUP menu.
-     *
-     * @param actionEvent The UI action that triggered the change.
      */
-    public void handleMenuBackupShow(ActionEvent actionEvent) {
+    public void handleMenuBackupShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.BACKUP);
     }
 
     /**
      * Activates the BACKGROUND menu.
-     *
-     * @param actionEvent The UI action that triggered the change.
      */
-    public void handleMenuBackgroundShow(ActionEvent actionEvent) {
+    public void handleMenuBackgroundShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.BACKGROUND);
     }
 
