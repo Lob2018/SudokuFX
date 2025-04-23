@@ -451,14 +451,14 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private void handleFileImageChooser(ActionEvent event) {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(
-                "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp", "*.gif"
+                "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp"
         ));
 
         File selectedFile = fileChooser.showOpenDialog(primaryStage);
 
         if (selectedFile != null) {
             String fileName = selectedFile.getName().toLowerCase();
-            if (fileName.matches(".*\\.(jpg|jpeg|png|bmp|gif)$")) {
+            if (fileName.matches(".*\\.(jpg|jpeg|png|bmp)$")) {
                 spinner.showSpinner(true);
                 toaster.addToast("Chargement de l'image en cours...", "", ToastLevels.INFO);
                 Task<BackgroundImage> backgroundTask = new Task<>() {
@@ -512,8 +512,9 @@ public final class DefaultView implements IMainView, ISceneProvider {
                     });
                 });
                 backgroundTask.setOnFailed(e -> {
+                    Throwable exception = e.getSource().getException();
                     Platform.runLater(() -> {
-                        toaster.addToast("Erreur inattendue lors du chargement.", "", ToastLevels.ERROR);
+                        toaster.addToast("Erreur inattendue lors du chargement.", (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR);
                         spinner.showSpinner(false);
                     });
                     // TODO add error
