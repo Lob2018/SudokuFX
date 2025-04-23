@@ -13,13 +13,11 @@ import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
-import org.springframework.stereotype.Component;
 
 /**
  * A custom VBox component for displaying toast notifications. This class
  * extends JavaFX's VBox and provides methods to add and manage toast messages.
  */
-@Component
 public final class ToasterVBox extends VBox {
 
     /**

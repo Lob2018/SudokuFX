@@ -46,7 +46,6 @@ public final class FullMenuView implements IMainView, ISceneProvider {
     @Autowired
     private FxmlService fxmlService;
     @FXML
-    @Autowired
     private ToasterVBox toaster;
     @FXML
     private Label welcomeText;

@@ -8,6 +8,7 @@ import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import javafx.animation.*;
@@ -31,7 +32,6 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
 import java.text.MessageFormat;
@@ -55,17 +55,12 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private static final Alert CONFIRMATION_ALERT = new Alert(Alert.AlertType.CONFIRMATION);
 
     @FXML
-    @Autowired
     private ToasterVBox toaster;
     @FXML
+    private SpinnerGridPane spinner;
+
+    @FXML
     private GridPane sudokuFX;
-
-
-    @FXML
-    private GridPane spinner;
-    @FXML
-    private Text spinnerText1, spinnerText2;
-    Animation spinnerAnimation1, spinnerAnimation2;
 
     @FXML
     private Button menuHiddenButtonShow;
@@ -217,13 +212,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
      */
     @FXML
     private void initialize() {
-
-        spinner.setMouseTransparent(true);
-        spinnerAnimation1 = createPulse(spinnerText1, Duration.seconds(0));
-        spinnerAnimation2 = createPulse(spinnerText2, Duration.seconds(.5));
-        spinner.setVisible(false);
-        spinner.setManaged(false);
-
 
         confirmationAlertStyle();
 
@@ -442,47 +430,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     }
 
-    private void showSpinner(boolean b) {
-        spinner.setVisible(b);
-        spinner.setManaged(b);
-        if (b) {
-            spinnerAnimation1.play();
-            spinnerAnimation2.play();
-        } else {
-            spinnerAnimation1.stop();
-            spinnerAnimation2.stop();
-        }
-    }
-
-    /**
-     * Creates a pulsing animation for a given text element with scaling and fading effects.
-     *
-     * @param text  the Text node to apply the animation to.
-     * @param delay the delay before the animation starts.
-     * @return a ParallelTransition combining scale and fade animations.
-     */
-    private Animation createPulse(Text text, Duration delay) {
-        ScaleTransition scale = new ScaleTransition(Duration.seconds(2), text);
-        scale.setInterpolator(Interpolator.EASE_BOTH);
-        scale.setFromX(0);
-        scale.setFromY(0);
-        scale.setToX(1);
-        scale.setToY(1);
-        scale.setCycleCount(Animation.INDEFINITE);
-        scale.setDelay(delay);
-        FadeTransition fade = new FadeTransition(Duration.seconds(2), text);
-        scale.setInterpolator(Interpolator.EASE_OUT);
-        fade.setFromValue(1);
-        fade.setToValue(0);
-        fade.setCycleCount(Animation.INDEFINITE);
-        fade.setDelay(delay);
-        ParallelTransition pulse = new ParallelTransition(scale, fade);
-        pulse.setCycleCount(Animation.INDEFINITE);
-        pulse.setDelay(delay);
-        return pulse;
-    }
-
-
     /**
      * Converts a 32-bit integer (0xRRGGBBAA) into a JavaFX Color object.
      *
@@ -512,7 +459,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         if (selectedFile != null) {
             String fileName = selectedFile.getName().toLowerCase();
             if (fileName.matches(".*\\.(jpg|jpeg|png|bmp|gif)$")) {
-                showSpinner(true);
+                spinner.showSpinner(true);
                 toaster.addToast("Chargement de l'image en cours...", "", ToastLevels.INFO);
                 Task<BackgroundImage> backgroundTask = new Task<>() {
                     @Override
@@ -561,13 +508,13 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         } else {
                             toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR);
                         }
-                        showSpinner(false);
+                        spinner.showSpinner(false);
                     });
                 });
                 backgroundTask.setOnFailed(e -> {
                     Platform.runLater(() -> {
                         toaster.addToast("Erreur inattendue lors du chargement.", "", ToastLevels.ERROR);
-                        showSpinner(false);
+                        spinner.showSpinner(false);
                     });
                     // TODO add error
                 });

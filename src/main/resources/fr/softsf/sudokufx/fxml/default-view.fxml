@@ -15,6 +15,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.control.ColorPicker?>
+<?import fr.softsf.sudokufx.view.components.SpinnerGridPane?>
 <StackPane fx:id="sudokuFXStackPane" alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1"
            xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
@@ -662,9 +663,7 @@
     <!---->
     <!--Spinner-->
     <!---->
-    <GridPane fx:id="spinner" alignment="CENTER">
-        <Text fx:id="spinnerText1" text="&#xef4a;" styleClass="spinner-text"/>
-        <Text fx:id="spinnerText2" text="&#xe836;" styleClass="spinner-text"/>
-    </GridPane>
+    <SpinnerGridPane fx:id="spinner"/>
+
 
 </StackPane>

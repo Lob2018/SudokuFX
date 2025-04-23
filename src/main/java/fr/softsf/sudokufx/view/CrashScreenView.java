@@ -50,7 +50,7 @@ public final class CrashScreenView implements IMainView, ISceneProvider {
     private final Stage crashscreenStage = new Stage();
     private final DropShadow dropShadow = new DropShadow();
     private final Stage primaryStage = new Stage();
-    // FXML injected components
+
     @FXML
     private VBox crashscreenvbox;
     @FXML
