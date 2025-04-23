@@ -37,9 +37,10 @@ public final class ToasterVBox extends VBox {
      * @param visibleText  The text content of the toast
      * @param detailedText The detailed content of the text added to the system clipboard copy
      * @param duration     The display duration of the toast in milliseconds
+     * @param requestFocus      Whether the toast should request focus upon being shown.
      */
     @FXML
-    public void addToastWithDuration(final String visibleText, final String detailedText, final ToastLevels toastLevel, final double duration) {
+    public void addToastWithDuration(final String visibleText, final String detailedText, final ToastLevels toastLevel, final double duration, final boolean requestFocus) {
         final String fullDetailText = visibleText +
                 System.lineSeparator() +
                 detailedText;
@@ -50,7 +51,7 @@ public final class ToasterVBox extends VBox {
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
-        toast.requestFocus();
+        if(requestFocus)toast.requestFocus();
     }
 
     /**
@@ -60,9 +61,10 @@ public final class ToasterVBox extends VBox {
      * @param visibleText  The text content of the toast
      * @param detailedText The detailed content of the text added to the system clipboard copy
      * @param toastLevel   The severity level of the toast (info, warn, error)
+     * @param requestFocus      Whether the toast should request focus upon being shown.
      */
     @FXML
-    public void addToast(final String visibleText, final String detailedText, final ToastLevels toastLevel) {
+    public void addToast(final String visibleText, final String detailedText, final ToastLevels toastLevel, final boolean requestFocus) {
         final String fullDetailText = visibleText +
                 System.lineSeparator() +
                 detailedText;
@@ -74,7 +76,7 @@ public final class ToasterVBox extends VBox {
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
-        toast.requestFocus();
+        if(requestFocus)toast.requestFocus();
     }
 
     /**
@@ -185,9 +187,9 @@ public final class ToasterVBox extends VBox {
     }
 
     /**
-     * Removes the currently displayed toast from the ToasterVBox, if any.
+     * Schedules the current toast for removal after a short delay.
      */
     public void removeToast() {
-        getChildren().remove(toast);
+        temporizeToast(toast, 1500);
     }
 }

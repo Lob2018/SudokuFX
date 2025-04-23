@@ -88,12 +88,13 @@ public final class FullMenuView implements IMainView, ISceneProvider {
     private void onHelloButtonClick(ActionEvent event) {
 
         switch (SecureRandomGenerator.INSTANCE.nextInt(3)) {
-            case 0 -> toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", ToastLevels.INFO, 6000);
-            case 1 -> toaster.addToast("WARN", "", ToastLevels.WARN);
+            case 0 -> toaster.addToastWithDuration("INFO 🔹 Work in progress... 🔹", "", ToastLevels.INFO, 6000,true);
+            case 1 -> toaster.addToast("WARN", "", ToastLevels.WARN,true);
             default -> toaster.addToast(
                     "VISIBLE ERROR MESSAGE",
                     "DETAILED ERROR MESSAGE ".repeat(20), // Répète le message pour éviter la duplication excessive
-                    ToastLevels.ERROR
+                    ToastLevels.ERROR,
+                    true
             );
         }
         fullMenuViewModel.test();

@@ -460,7 +460,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
             String fileName = selectedFile.getName().toLowerCase();
             if (fileName.matches(".*\\.(jpg|jpeg|png|bmp)$")) {
                 spinner.showSpinner(true);
-                toaster.addToast("Chargement de l'image en cours...", selectedFile.toURI().toString(), ToastLevels.INFO);
+                toaster.addToast("Chargement de l'image en cours...", selectedFile.toURI().toString(), ToastLevels.INFO,false);
                 Task<BackgroundImage> backgroundTask = new Task<>() {
                     @Override
                     protected BackgroundImage call() {
@@ -507,7 +507,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         if (backgroundImage != null) {
                             sudokuFX.setBackground(new Background(backgroundImage));
                         } else {
-                            toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR);
+                            toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR,true);
                         }
                         spinner.showSpinner(false);
                     });
@@ -516,14 +516,14 @@ public final class DefaultView implements IMainView, ISceneProvider {
                     Throwable exception = e.getSource().getException();
                     Platform.runLater(() -> {
                         toaster.removeToast();
-                        toaster.addToast("Erreur inattendue lors du chargement.", (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR);
+                        toaster.addToast("Erreur inattendue lors du chargement.", (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR,true);
                         spinner.showSpinner(false);
                     });
                     // TODO add error
                 });
                 new Thread(backgroundTask).start();
             } else {
-                toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR);
+                toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR,true);
             }
         }
     }
