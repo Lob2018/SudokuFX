@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a93a406688c5219a22f430481731edab5" target="_top" xlink:title="Converts a 32&#45;bit integer (0xRRGGBBAA) into a JavaFX Color object.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3109aef2552d7f2e9738a1895b5d7401" target="_top" xlink:title="Converts a 32&#45;bit integer (0xRRGGBBAA) into a JavaFX Color object.">
 <polygon fill="white" stroke="#666666" points="306.12,-144 188.12,-144 188.12,-112 306.12,-112 306.12,-144"/>
 <text text-anchor="start" x="196.12" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="middle" x="247.12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView.intToColor</text>

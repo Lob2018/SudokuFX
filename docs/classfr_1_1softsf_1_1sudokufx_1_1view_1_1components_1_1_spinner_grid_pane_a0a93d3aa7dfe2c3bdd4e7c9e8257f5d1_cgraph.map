@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.components.SpinnerGridPane.SpinnerGridPane" name="fr.softsf.sudokufx.view.components.SpinnerGridPane.SpinnerGridPane">
+<area shape="rect" id="Node000001" title="Constructs a SpinnerGridPane with two animated text icons centered in the pane." alt="" coords="5,5,238,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html#a1f501baa6fc67f397a75bfb96a505f49" title="Creates a pulsing animation for a given text element with scaling and fading effects." alt="" coords="286,5,518,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,24,270,24,270,29,238,29"/>
+</map>

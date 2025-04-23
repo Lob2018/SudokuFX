@@ -173,7 +173,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aebbc7ede26b016d9caa1e29247dd7180" id="r_aebbc7ede26b016d9caa1e29247dd7180"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html">ISplashScreenView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aebbc7ede26b016d9caa1e29247dd7180">iSplashScreenView</a></td></tr>
 <tr class="separator:aebbc7ede26b016d9caa1e29247dd7180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a44ca01808ecbb7aec4a4ab17436d87" id="r_a7a44ca01808ecbb7aec4a4ab17436d87"><td class="memItemLeft" align="right" valign="top">final Task&lt; Void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a44ca01808ecbb7aec4a4ab17436d87">springContextTask</a></td></tr>
-<tr class="memdesc:a7a44ca01808ecbb7aec4a4ab17436d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Task to initialize the Spring context asynchronously, ensuring the JavaFX Application Thread remains unblocked.  <br /></td></tr>
+<tr class="memdesc:a7a44ca01808ecbb7aec4a4ab17436d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the Spring context asynchronously to avoid blocking the JavaFX Application Thread.  <br /></td></tr>
 <tr class="separator:a7a44ca01808ecbb7aec4a4ab17436d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
@@ -622,8 +622,8 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1_sudo_main_html"><div class="ttname"><a href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html">fr.softsf.sudokufx.SudoMain</a></div><div class="ttdoc">Main entry point for the Sudo application, responsible for initializing the JavaFX interface and the ...</div><div class="ttdef"><b>Definition</b> SudoMain.java:42</div></div>
 <div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1_sudo_main_html_a2f1a22f74c20256e9598246c07b7e849"><div class="ttname"><a href="#a2f1a22f74c20256e9598246c07b7e849">fr.softsf.sudokufx.SudoMain.context</a></div><div class="ttdeci">final SpringContext context</div><div class="ttdef"><b>Definition</b> SudoMain.java:46</div></div>
 </div><!-- fragment -->
-<p>Task to initialize the Spring context asynchronously, ensuring the JavaFX Application Thread remains unblocked. </p>
-<p>This executes <code class="JavaDocCode">SpringApplication.run(SudoMain.class)</code> in a separate thread to maintain UI responsiveness. </p>
+<p>Initializes the Spring context asynchronously to avoid blocking the JavaFX Application Thread. </p>
+<p>Configuration (lazy init, no web server) is handled via application properties. Uses Gluon Ignite's <code class="JavaDocCode">SpringContext</code> linked to the JavaFX Application instance. </p>
 
 </div>
 </div>
@@ -636,7 +636,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html">SudoMain</a></li>
-    <li class="footer">Generated on Thu Apr 10 2025 15:54:58 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Apr 23 2025 08:20:13 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

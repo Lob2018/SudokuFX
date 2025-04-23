@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.interfaces.IMainView" name="fr.softsf.sudokufx.interfaces.IMainView">
 <area shape="rect" id="Node000001" title="Interface defining method to open the main stage." alt="" coords="298,5,528,123"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="5,253,263,1155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,134,278,172,232,255,228,252,273,169,307,131"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="288,171,538,1237"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="5,272,263,1173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,134,278,172,249,221,224,273,220,271,244,219,274,169,307,130"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="288,171,538,1275"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="416,137,416,171,410,171,410,137"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html" title="View class for the full menu screen of the Sudoku application." alt="" coords="562,427,760,981"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="520,131,553,169,585,229,610,294,630,360,644,426,639,427,625,361,605,296,580,232,548,172,516,134"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html" title="View class for the full menu screen of the Sudoku application." alt="" coords="562,445,760,1000"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="520,131,553,169,587,234,613,303,633,374,647,445,642,446,628,375,608,305,582,236,548,172,516,134"/>
 </map>

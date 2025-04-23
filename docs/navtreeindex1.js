@@ -1,5 +1,16 @@
 var NAVTREEINDEX1 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#ad91c051ea6cb7001a744d52e576ad192":[1,0,0,0,0,2,2,1,3,7],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#ad91c051ea6cb7001a744d52e576ad192":[2,0,0,0,0,2,2,1,3,7],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#adb3c6ae3c6ad8a13eb18a383ab187907":[1,0,0,0,0,2,2,1,3,4],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#adb3c6ae3c6ad8a13eb18a383ab187907":[2,0,0,0,0,2,2,1,3,4],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html":[1,0,0,0,0,2,2,1,0,0],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html":[2,0,0,0,0,2,2,1,0,0],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html#a4ac6858d65efd03b07a1eed378065d2e":[1,0,0,0,0,2,2,1,0,0,0],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html#a4ac6858d65efd03b07a1eed378065d2e":[2,0,0,0,0,2,2,1,0,0,0],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html#a57e431d546527dac20742cee97458c8f":[1,0,0,0,0,2,2,1,0,0,1],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html#a57e431d546527dac20742cee97458c8f":[2,0,0,0,0,2,2,1,0,0,1],
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html":[1,0,0,0,0,3,2],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html":[2,0,0,0,0,3,2],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html#a12ec4586a7664ab7de51685876e64550":[1,0,0,0,0,3,2,0],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html#a12ec4586a7664ab7de51685876e64550":[2,0,0,0,0,3,2,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX1 =
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a18fc2b42d7160413f034229f02fb3001":[1,0,0,0,0,3,1,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a18fc2b42d7160413f034229f02fb3001":[2,0,0,0,0,3,1,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a19f5c33c558c6604ef5b3a45cca23222":[1,0,0,0,0,3,1,2,11],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a19f5c33c558c6604ef5b3a45cca23222":[2,0,0,0,0,3,1,2,11],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a1cd5afd513804cfb585cfba63809f0d9":[1,0,0,0,0,3,1,2,0],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a1cd5afd513804cfb585cfba63809f0d9":[2,0,0,0,0,3,1,2,0],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a77f331f2c4fe054ba9945faf743071d2":[1,0,0,0,0,3,1,2,2],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a77f331f2c4fe054ba9945faf743071d2":[2,0,0,0,0,3,1,2,2],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a9d85823155c91fd18cc34678155e0159":[1,0,0,0,0,3,1,2,12],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a9d85823155c91fd18cc34678155e0159":[2,0,0,0,0,3,1,2,12],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#aab3d2d77ba0e116228bf6dbb60c53bb0":[1,0,0,0,0,3,1,2,4],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#aab3d2d77ba0e116228bf6dbb60c53bb0":[2,0,0,0,0,3,1,2,4],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#ab416d746efff28ede23c444fe11be16f":[1,0,0,0,0,3,1,2,3],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#ab416d746efff28ede23c444fe11be16f":[2,0,0,0,0,3,1,2,3],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#ab6055f888f89992249fe3b0c00951269":[1,0,0,0,0,3,1,2,9]
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a19f5c33c558c6604ef5b3a45cca23222":[2,0,0,0,0,3,1,2,11]
 };

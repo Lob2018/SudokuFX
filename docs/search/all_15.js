@@ -9,5 +9,7 @@ var searchData=
   ['versionservice_6',['versionService',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#ad6497b57188c8cafd1741f17a6bda380',1,'fr::softsf::sudokufx::viewmodel::FullMenuViewModel']]],
   ['versionservice_2ejava_7',['VersionService.java',['../_version_service_8java.html',1,'']]],
   ['versionserviceitest_8',['VersionServiceITest',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html',1,'fr::softsf::sudokufx::service']]],
-  ['versionserviceitest_2ejava_9',['VersionServiceITest.java',['../_version_service_i_test_8java.html',1,'']]]
+  ['versionserviceitest_2ejava_9',['VersionServiceITest.java',['../_version_service_i_test_8java.html',1,'']]],
+  ['visual_5fheight_10',['VISUAL_HEIGHT',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html#a1807eb59f57676a969447f3c6dffdfc6',1,'fr::softsf::sudokufx::enums::ScreenSize']]],
+  ['visual_5fwidth_11',['VISUAL_WIDTH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html#aeb1767166b7c58b362d570f867cc07c0',1,'fr::softsf::sudokufx::enums::ScreenSize']]]
 ];

@@ -1,8 +1,9 @@
 var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
 [
     [ "confirmationAlertStyle", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa57a89beb5b59bfa3f04ffceb23b8b80", null ],
+    [ "handleFileImageChooser", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a8404d3ff1c18c96876b64bc41dab7431", null ],
     [ "initialize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9a576a87b5eaf00c2bd1095be8e17eeb", null ],
-    [ "intToColor", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a93a406688c5219a22f430481731edab5", null ],
+    [ "intToColor", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3109aef2552d7f2e9738a1895b5d7401", null ],
     [ "openingConfigureStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a4269b183d120ae7149f854d53d35f122", null ],
     [ "openingFadeIn", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af55fdc91ebfb197196789c140b5c091a", null ],
     [ "openingMainStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab4d767b0a3c661bf47dd1e1a353bb9bc", null ],
@@ -86,6 +87,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "menuSolveButtonSolveText", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab4683155def2a58ec882933415bea80c", null ],
     [ "menuSolveHBoxPossibilities", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a0944b20b4980fe4a877ae4e0daa2eea8", null ],
     [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aacf0f46b8a606da2235f24d811c7c4ab", null ],
+    [ "spinner", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a4adcbad641ff4afc6a350ec793a129d2", null ],
     [ "sudokuFX", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a899dd77c58eb346e795d1f55302dcae5", null ],
     [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a97bc1d86e231b15045c3b93c62277935", null ]
 ];

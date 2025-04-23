@@ -27,6 +27,9 @@ var hierarchy =
     [ "fr.softsf.sudokufx.configuration.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", null ],
     [ "fr.softsf.sudokufx.utils.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", null ],
+    [ "GridPane", null, [
+      [ "fr.softsf.sudokufx.view.components.SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.configuration.HttpClientConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html", null ],
     [ "fr.softsf.sudokufx.enums.I18n", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html", null ],
     [ "fr.softsf.sudokufx.common.unit.utils.I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html", null ],

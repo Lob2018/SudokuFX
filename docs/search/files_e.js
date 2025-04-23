@@ -10,6 +10,7 @@ var searchData=
   ['softwarerepository_2ejava_7',['SoftwareRepository.java',['../_software_repository_8java.html',1,'']]],
   ['softwareservice_2ejava_8',['SoftwareService.java',['../_software_service_8java.html',1,'']]],
   ['softwareserviceutest_2ejava_9',['SoftwareServiceUTest.java',['../_software_service_u_test_8java.html',1,'']]],
-  ['splashscreenview_2ejava_10',['SplashScreenView.java',['../_splash_screen_view_8java.html',1,'']]],
-  ['sudomain_2ejava_11',['SudoMain.java',['../_sudo_main_8java.html',1,'']]]
+  ['spinnergridpane_2ejava_10',['SpinnerGridPane.java',['../_spinner_grid_pane_8java.html',1,'']]],
+  ['splashscreenview_2ejava_11',['SplashScreenView.java',['../_splash_screen_view_8java.html',1,'']]],
+  ['sudomain_2ejava_12',['SudoMain.java',['../_sudo_main_8java.html',1,'']]]
 ];
