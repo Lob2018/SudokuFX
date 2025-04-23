@@ -416,9 +416,9 @@
 }
 
 #menuPlayerListView,#menuSaveListView {
-    -fx-pref-height: 18.75em;
-    -fx-max-height: 18.75em;
-    -fx-min-height: 18.75em;
+    -fx-pref-height: 18.7495em;
+    -fx-max-height: 18.7495em;
+    -fx-min-height: 18.7495em;
 }
 
 .menuListLineContainer {
