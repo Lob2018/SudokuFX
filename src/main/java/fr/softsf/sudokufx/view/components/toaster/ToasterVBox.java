@@ -20,6 +20,8 @@ import javafx.util.Duration;
  */
 public final class ToasterVBox extends VBox {
 
+    private ToasterButton toast;
+
     /**
      * Constructor for ToasterVBox. Initializes the VBox and sets its alignment
      * to bottom center.
@@ -41,7 +43,7 @@ public final class ToasterVBox extends VBox {
         final String fullDetailText = visibleText +
                 System.lineSeparator() +
                 detailedText;
-        final ToasterButton toast = new ToasterButton(visibleText, fullDetailText);
+        toast = new ToasterButton(visibleText, fullDetailText);
         setToastStyle(toast, toastLevel);
         setAccessibility(toast, toastLevel, fullDetailText);
         toast.setAlignment(Pos.CENTER);
@@ -64,7 +66,7 @@ public final class ToasterVBox extends VBox {
         final String fullDetailText = visibleText +
                 System.lineSeparator() +
                 detailedText;
-        final ToasterButton toast = new ToasterButton(visibleText, fullDetailText);
+        toast = new ToasterButton(visibleText, fullDetailText);
         setToastStyle(toast, toastLevel);
         setAccessibility(toast, toastLevel, fullDetailText);
         toast.setAlignment(Pos.CENTER);
@@ -130,9 +132,9 @@ public final class ToasterVBox extends VBox {
      * @param event The action event triggered by clicking the toast
      */
     private void toastActions(final ActionEvent event) {
-        ToasterButton toast = (ToasterButton) event.getSource();
-        copyToClipboard(toast);
-        removeToast(toast);
+        ToasterButton thisToast = (ToasterButton) event.getSource();
+        copyToClipboard(thisToast);
+        removeThisToast(thisToast);
     }
 
     /**
@@ -174,11 +176,18 @@ public final class ToasterVBox extends VBox {
     }
 
     /**
-     * Removes a specific toast from the ToasterVBox.
+     * Removes the specified toast button from the ToasterVBox.
      *
      * @param button The toast button to be removed
      */
-    private void removeToast(final ToasterButton button) {
+    private void removeThisToast(final ToasterButton button) {
         getChildren().remove(button);
+    }
+
+    /**
+     * Removes the currently displayed toast from the ToasterVBox, if any.
+     */
+    public void removeToast() {
+        getChildren().remove(toast);
     }
 }

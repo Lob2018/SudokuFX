@@ -460,7 +460,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
             String fileName = selectedFile.getName().toLowerCase();
             if (fileName.matches(".*\\.(jpg|jpeg|png|bmp)$")) {
                 spinner.showSpinner(true);
-                toaster.addToast("Chargement de l'image en cours...", "", ToastLevels.INFO);
+                toaster.addToast("Chargement de l'image en cours...", selectedFile.toURI().toString(), ToastLevels.INFO);
                 Task<BackgroundImage> backgroundTask = new Task<>() {
                     @Override
                     protected BackgroundImage call() {
@@ -508,6 +508,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         } else {
                             toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR);
                         }
+                        toaster.removeToast();
                         spinner.showSpinner(false);
                     });
                 });
