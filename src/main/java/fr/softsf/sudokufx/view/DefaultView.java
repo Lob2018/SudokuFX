@@ -16,7 +16,6 @@ import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.DoubleBinding;
 import javafx.concurrent.Task;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
@@ -483,7 +482,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
 
     @FXML
-    private void handleFileImageChooser(ActionEvent event) {
+    private void handleFileImageChooser() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(
                 "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp"
