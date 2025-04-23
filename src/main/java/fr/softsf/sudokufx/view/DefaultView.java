@@ -503,18 +503,19 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 backgroundTask.setOnSucceeded(e -> {
                     BackgroundImage backgroundImage = backgroundTask.getValue();
                     Platform.runLater(() -> {
+                        toaster.removeToast();
                         if (backgroundImage != null) {
                             sudokuFX.setBackground(new Background(backgroundImage));
                         } else {
                             toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR);
                         }
-                        toaster.removeToast();
                         spinner.showSpinner(false);
                     });
                 });
                 backgroundTask.setOnFailed(e -> {
                     Throwable exception = e.getSource().getException();
                     Platform.runLater(() -> {
+                        toaster.removeToast();
                         toaster.addToast("Erreur inattendue lors du chargement.", (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR);
                         spinner.showSpinner(false);
                     });
