@@ -16,6 +16,7 @@ import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.DoubleBinding;
 import javafx.concurrent.Task;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
@@ -626,38 +627,54 @@ public final class DefaultView implements IMainView, ISceneProvider {
     }
 
     /**
-     * Activates the MAXI menu.
+     * Activates the MAXI menu and sets focus on the corresponding button
+     * based on the submenu source button of the event or on the reduce button.
+     *
+     * @param event the event triggered by clicking a menu button.
      */
-    public void handleMenuMaxiShow() {
+    public void handleMenuMaxiShow(ActionEvent event) {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.MAXI);
+        Object source = event.getSource();
+        if (!(source instanceof Button button)) return;
+        switch (button.getId()) {
+            case "menuPlayerButtonPlayer" -> menuMaxiButtonPlayer.requestFocus();
+            case "menuSolveButtonSolve" -> menuMaxiButtonSolve.requestFocus();
+            case "menuSaveButtonSave" -> menuMaxiButtonBackup.requestFocus();
+            case "menuBackgroundButtonBackground" -> menuMaxiButtonBackground.requestFocus();
+            default -> menuMaxiButtonReduce.requestFocus();
+        }
     }
 
     /**
-     * Activates the PLAYER menu.
+     * Activates the PLAYER menu and sets focus on the player button.
      */
     public void handleMenuPlayerShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.PLAYER);
+        menuPlayerButtonPlayer.requestFocus();
     }
 
     /**
-     * Activates the SOLVE menu.
+     * Activates the SOLVE menu and sets focus on the solve button.
      */
     public void handleMenuSolveShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.SOLVE);
+        menuSolveButtonSolve.requestFocus();
     }
 
     /**
-     * Activates the BACKUP menu.
+     * Activates the BACKUP menu and sets focus on the save button.
      */
     public void handleMenuBackupShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.BACKUP);
+        menuSaveButtonSave.requestFocus();
     }
 
     /**
-     * Activates the BACKGROUND menu.
+     * Activates the BACKGROUND menu and sets focus on the background button.
      */
     public void handleMenuBackgroundShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.BACKGROUND);
+        menuBackgroundButtonBackground.requestFocus();
     }
 
 
