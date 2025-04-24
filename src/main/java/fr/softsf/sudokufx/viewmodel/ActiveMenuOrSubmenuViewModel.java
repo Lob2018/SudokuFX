@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  */
 @Getter
 @Component
-public class ActiveMenuViewModel {
+public class ActiveMenuOrSubmenuViewModel {
 
     /**
      * Enum representing the different possible menus

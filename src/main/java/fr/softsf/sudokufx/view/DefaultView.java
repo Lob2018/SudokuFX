@@ -13,7 +13,7 @@ import fr.softsf.sudokufx.view.components.MyAlert;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
-import fr.softsf.sudokufx.viewmodel.ActiveMenuViewModel;
+import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.DoubleBinding;
@@ -66,7 +66,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private IOsFolderFactory iOsFolderFactory;
 
     @Autowired
-    private ActiveMenuViewModel activeMenuViewModel;
+    private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
 
     @FXML
     private ToasterVBox toaster;
@@ -456,20 +456,20 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
 
         // Managing the active menu
-        menuHidden.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.HIDDEN));
-        menuHidden.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.HIDDEN));
-        menuMini.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.MINI));
-        menuMini.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.MINI));
-        menuMaxi.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.MAXI));
-        menuMaxi.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.MAXI));
-        menuPlayer.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.PLAYER));
-        menuPlayer.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.PLAYER));
-        menuSolve.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.SOLVE));
-        menuSolve.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.SOLVE));
-        menuSave.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.BACKUP));
-        menuSave.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.BACKUP));
-        menuBackground.visibleProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.BACKGROUND));
-        menuBackground.managedProperty().bind(activeMenuViewModel.getActiveMenu().isEqualTo(ActiveMenuViewModel.ActiveMenu.BACKGROUND));
+        menuHidden.visibleProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN));
+        menuHidden.managedProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN));
+        menuMini.visibleProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI));
+        menuMini.managedProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI));
+        menuMaxi.visibleProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI));
+        menuMaxi.managedProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI));
+        menuPlayer.visibleProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER));
+        menuPlayer.managedProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER));
+        menuSolve.visibleProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE));
+        menuSolve.managedProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE));
+        menuSave.visibleProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP));
+        menuSave.managedProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP));
+        menuBackground.visibleProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND));
+        menuBackground.managedProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND));
     }
 
     /**
@@ -615,10 +615,10 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Activates the MINI menu and hides it after 10 seconds if still active.
      */
     public void handleMenuMiniShow() {
-        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.MINI);
+        activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI);
         Timeline hideMenuTimeline = new Timeline(new KeyFrame(Duration.millis(10000), event -> {
-            if (activeMenuViewModel.getActiveMenu().get() == ActiveMenuViewModel.ActiveMenu.MINI) {
-                activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.HIDDEN);
+            if (activeMenuOrSubmenuViewModel.getActiveMenu().get() == ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI) {
+                activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN);
             }
         }));
         hideMenuTimeline.play();
@@ -631,7 +631,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * @param event the event triggered by clicking a menu button.
      */
     public void handleMenuMaxiShow(ActionEvent event) {
-        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.MAXI);
+        activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI);
         Object source = event.getSource();
         if (!(source instanceof Button button)) return;
         switch (button.getId()) {
@@ -647,7 +647,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Activates the PLAYER menu and sets focus on the player button.
      */
     public void handleMenuPlayerShow() {
-        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.PLAYER);
+        activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER);
         menuPlayerButtonPlayer.requestFocus();
     }
 
@@ -655,7 +655,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Activates the SOLVE menu and sets focus on the solve button.
      */
     public void handleMenuSolveShow() {
-        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.SOLVE);
+        activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE);
         menuSolveButtonSolve.requestFocus();
     }
 
@@ -663,7 +663,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Activates the BACKUP menu and sets focus on the save button.
      */
     public void handleMenuBackupShow() {
-        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.BACKUP);
+        activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP);
         menuSaveButtonSave.requestFocus();
     }
 
@@ -671,7 +671,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Activates the BACKGROUND menu and sets focus on the background button.
      */
     public void handleMenuBackgroundShow() {
-        activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.BACKGROUND);
+        activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND);
         menuBackgroundButtonBackground.requestFocus();
     }
 
