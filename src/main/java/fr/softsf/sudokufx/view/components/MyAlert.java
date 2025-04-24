@@ -1,8 +1,14 @@
 package fr.softsf.sudokufx.view.components;
 
+import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.enums.Paths;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+
+import java.util.Objects;
 
 /**
  * A custom alert class that extends the standard JavaFX Alert.
@@ -26,5 +32,9 @@ public class MyAlert extends Alert {
         if (contentLabel != null) {
             contentLabel.setTextFill(Color.WHITE);
         }
+        Stage alertStage = (Stage) getDialogPane().getScene().getWindow();
+        alertStage.getIcons().add(new Image(
+                Objects.requireNonNull(SudoMain.class.getResource(Paths.LOGO_SUDO_PNG_PATH.getPath())).toExternalForm()
+        ));
     }
 }

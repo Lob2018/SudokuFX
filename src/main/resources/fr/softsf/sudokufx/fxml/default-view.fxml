@@ -161,7 +161,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonHelp" styleClass="menuMiniButton">
+            <Button fx:id="menuMiniButtonHelp" styleClass="menuMiniButton" onAction="#handleMenuHelpShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -366,7 +366,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonHelp" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonHelp" styleClass="menuButton" onAction="#handleMenuHelpShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>

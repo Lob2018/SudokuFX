@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.enums.ScreenSize;
@@ -22,6 +23,8 @@ import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 
 import javafx.scene.layout.*;
@@ -41,6 +44,7 @@ import java.text.MessageFormat;
 import java.util.List;
 import java.util.Objects;
 
+
 /**
  * Default view class of the Sudoku application. This class is
  * responsible for displaying and managing the UI.
@@ -55,7 +59,11 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED = "menu.accessibility.role.description.opened";
     public static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION = "menu.accessibility.role.description.submenu.option";
 
+    private static final MyAlert INFORMATION_ALERT = new MyAlert(Alert.AlertType.INFORMATION);
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
+
+    @Autowired
+    private IOsFolderFactory iOsFolderFactory;
 
     @Autowired
     private ActiveMenuViewModel activeMenuViewModel;
@@ -667,6 +675,19 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonBackground.requestFocus();
     }
 
+    /**
+     * Displays the HELP menu information alert containing game rules
+     * and the application log path.
+     */
+    public void handleMenuHelpShow() {
+        INFORMATION_ALERT.setTitle(I18n.INSTANCE.getValue("menu.button.help.dialog.information.title"));
+        INFORMATION_ALERT.setHeaderText(null);
+        INFORMATION_ALERT.setContentText(MessageFormat.format(
+                I18n.INSTANCE.getValue("menu.button.help.dialog.information.message"),
+                iOsFolderFactory.getOsLogsFolderPath()
+        ));
+        INFORMATION_ALERT.showAndWait();
+    }
 
     /**
      * Configures the primary stage for the full menu view.
