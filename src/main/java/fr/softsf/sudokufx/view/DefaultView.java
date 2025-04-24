@@ -8,6 +8,7 @@ import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.view.components.MyAlert;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
@@ -54,7 +55,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED = "menu.accessibility.role.description.opened";
     public static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION = "menu.accessibility.role.description.submenu.option";
 
-    private static final Alert CONFIRMATION_ALERT = new Alert(Alert.AlertType.CONFIRMATION);
+    private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
 
     @Autowired
     private ActiveMenuViewModel activeMenuViewModel;
@@ -232,8 +233,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
      */
     @FXML
     private void initialize() {
-
-        confirmationAlertStyle();
 
         menuHiddenButtonShow.setAccessibleText(I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
         menuHiddenButtonShow.getTooltip().setText(I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
@@ -586,21 +585,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
             } else {
                 listTextsStars.get(i).setText("\ue83a");
             }
-        }
-    }
-
-    /**
-     * Styles the confirmation alert dialog.
-     * - Sets a radial gradient background.
-     * - Changes content text color to white.
-     */
-    private void confirmationAlertStyle() {
-        CONFIRMATION_ALERT.getDialogPane().setStyle(
-                "-fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);"
-        );
-        Label contentLabel = (Label) CONFIRMATION_ALERT.getDialogPane().lookup(".content");
-        if (contentLabel != null) {
-            contentLabel.setTextFill(Color.WHITE);
         }
     }
 

@@ -21,7 +21,7 @@ public class ActiveMenuViewModel {
         NONE, HIDDEN, MINI, MAXI, PLAYER, SOLVE, BACKUP, BACKGROUND
     }
 
-    private final ObjectProperty<ActiveMenu> activeMenu = new SimpleObjectProperty<>(ActiveMenu.MINI);
+    private final ObjectProperty<ActiveMenu> activeMenu = new SimpleObjectProperty<>(ActiveMenu.MAXI);
 
     /**
      * Sets the active menu.
