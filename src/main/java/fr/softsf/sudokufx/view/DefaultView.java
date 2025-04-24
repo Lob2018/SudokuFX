@@ -620,7 +620,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
 
     /**
-     * Activates the MINI menu and hides it after 4 seconds if still active.
+     * Activates the MINI menu and hides it after 10 seconds if still active.
      */
     public void handleMenuMiniShow() {
         activeMenuViewModel.setActiveMenu(ActiveMenuViewModel.ActiveMenu.MINI);
