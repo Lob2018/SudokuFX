@@ -200,22 +200,22 @@ jobs:
       - name: Extract version
         run: echo "POM_VERSION=$(cat pom.xml | grep -oPm1 '(?<=<version>)[^<]+')" >> $GITHUB_ENV
       - name: Download output folder (Windows)
-        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e # v4.2.1
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: output-folder-windows
           path: output
       - name: Download output folder (Linux)
-        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e # v4.2.1
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: output-folder-linux
           path: output
       - name: Download output folder (MacOS)
-        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e # v4.2.1
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: output-folder-macos
           path: output
       - name: Download output folder (MacOS-x86_64)
-        uses: actions/download-artifact@95815c38cf2ff2164869cbab79da8d1f422bc89e # v4.2.1
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: output-folder-macos-x86_64
           path: output
