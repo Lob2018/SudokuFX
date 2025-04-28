@@ -6,7 +6,7 @@ var searchData=
   ['commit_3',['commit',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html#a58fd61886d73b8f2e1b070c3a1a700f4',1,'fr::softsf::sudokufx::service::VersionServiceITest']]],
   ['config_5flogback_5finvalid_5fpath_5ffor_5ftests_4',['CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#a4adde01cee8034db06fcd24e3924f4c0',1,'fr::softsf::sudokufx::enums::Paths']]],
   ['config_5flogback_5fpath_5',['CONFIG_LOGBACK_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#aa040fbf726d5d7cf2b3ac9384aa07bdd',1,'fr::softsf::sudokufx::enums::Paths']]],
-  ['confirmation_5falert_6',['CONFIRMATION_ALERT',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a695b14c68273fd513e84694e99de705d',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['confirmation_5falert_6',['CONFIRMATION_ALERT',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a6ead5f63faf5d862d6bf02af2d0b9fd5',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['confirmationalert_7',['confirmationAlert',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a0bd022e7d0990ea695f5a02dbb3b1460',1,'fr::softsf::sudokufx::view::components::list::ItemListCell']]],
   ['confirmationmessage_8',['confirmationMessage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a35399b742dcfb97cdf519dcfc5333076',1,'fr::softsf::sudokufx::view::components::list::ItemListCell']]],
   ['confirmationtitle_9',['confirmationTitle',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#add88b2ee8698d459fc59855621967c96',1,'fr::softsf::sudokufx::view::components::list::ItemListCell']]],

@@ -100,6 +100,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.view.components.toaster.ToasterVBox Class Reference</div></div>
 </div><!--header-->
@@ -127,12 +128,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6b21d3431b96a31e2436a058bb60334" id="r_ad6b21d3431b96a31e2436a058bb60334"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6b21d3431b96a31e2436a058bb60334">ToasterVBox</a> ()</td></tr>
 <tr class="memdesc:ad6b21d3431b96a31e2436a058bb60334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications.">ToasterVBox</a>.  <br /></td></tr>
 <tr class="separator:ad6b21d3431b96a31e2436a058bb60334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56047013284463964d5c2f6a91dfe747" id="r_a56047013284463964d5c2f6a91dfe747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56047013284463964d5c2f6a91dfe747">addToast</a> (final String visibleText, final String detailedText, final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel)</td></tr>
-<tr class="memdesc:a56047013284463964d5c2f6a91dfe747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a toast notification with an automatically calculated duration based on text length.  <br /></td></tr>
-<tr class="separator:a56047013284463964d5c2f6a91dfe747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92f55987cef65c81b086a003876edb7e" id="r_a92f55987cef65c81b086a003876edb7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92f55987cef65c81b086a003876edb7e">addToastWithDuration</a> (final String visibleText, final String detailedText, final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel, final double duration)</td></tr>
-<tr class="memdesc:a92f55987cef65c81b086a003876edb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a toast notification with a specified duration.  <br /></td></tr>
-<tr class="separator:a92f55987cef65c81b086a003876edb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac95cfb708e84f566bb41d6ca5f9d1ccf" id="r_ac95cfb708e84f566bb41d6ca5f9d1ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac95cfb708e84f566bb41d6ca5f9d1ccf">addToast</a> (final String visibleText, final String detailedText, final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel, final boolean requestFocus)</td></tr>
+<tr class="memdesc:ac95cfb708e84f566bb41d6ca5f9d1ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a toast notification with an automatically calculated duration based on text length.  <br /></td></tr>
+<tr class="separator:ac95cfb708e84f566bb41d6ca5f9d1ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528bc1905d86874ca3cda73c953d4037" id="r_a528bc1905d86874ca3cda73c953d4037"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a528bc1905d86874ca3cda73c953d4037">addToastWithDuration</a> (final String visibleText, final String detailedText, final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel, final double duration, final boolean requestFocus)</td></tr>
+<tr class="memdesc:a528bc1905d86874ca3cda73c953d4037"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a toast notification with a specified duration.  <br /></td></tr>
+<tr class="separator:a528bc1905d86874ca3cda73c953d4037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4927d5647d977b8b2e3a3a84f51bea4e" id="r_a4927d5647d977b8b2e3a3a84f51bea4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4927d5647d977b8b2e3a3a84f51bea4e">removeToast</a> ()</td></tr>
+<tr class="memdesc:a4927d5647d977b8b2e3a3a84f51bea4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Schedules the current toast for removal after a short delay.  <br /></td></tr>
+<tr class="separator:a4927d5647d977b8b2e3a3a84f51bea4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -142,21 +146,26 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a8cdb11d9f616bd6f835cafbf5f28bce7" id="r_a8cdb11d9f616bd6f835cafbf5f28bce7"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cdb11d9f616bd6f835cafbf5f28bce7">getToastInfo</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel)</td></tr>
 <tr class="memdesc:a8cdb11d9f616bd6f835cafbf5f28bce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the information text corresponding to the specified toast level.  <br /></td></tr>
 <tr class="separator:a8cdb11d9f616bd6f835cafbf5f28bce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9be1b170f4ce116ef5d1399aad1c0d" id="r_a1d9be1b170f4ce116ef5d1399aad1c0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d9be1b170f4ce116ef5d1399aad1c0d">removeToast</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> button)</td></tr>
-<tr class="memdesc:a1d9be1b170f4ce116ef5d1399aad1c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a specific toast from the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications.">ToasterVBox</a>.  <br /></td></tr>
-<tr class="separator:a1d9be1b170f4ce116ef5d1399aad1c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37d80e32206ddf4e5ea31e6205b08acd" id="r_a37d80e32206ddf4e5ea31e6205b08acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37d80e32206ddf4e5ea31e6205b08acd">setAccessibility</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> toast, final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel, final String text)</td></tr>
+<tr class="memitem:a5d6e2ac545d0be607fd1926ed7bd5206" id="r_a5d6e2ac545d0be607fd1926ed7bd5206"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d6e2ac545d0be607fd1926ed7bd5206">removeThisToast</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> button)</td></tr>
+<tr class="memdesc:a5d6e2ac545d0be607fd1926ed7bd5206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the specified toast button from the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications.">ToasterVBox</a>.  <br /></td></tr>
+<tr class="separator:a5d6e2ac545d0be607fd1926ed7bd5206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d80e32206ddf4e5ea31e6205b08acd" id="r_a37d80e32206ddf4e5ea31e6205b08acd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37d80e32206ddf4e5ea31e6205b08acd">setAccessibility</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> <a class="el" href="#a5a2b9ba93bc7c39ba99256440e3eb52b">toast</a>, final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel, final String text)</td></tr>
 <tr class="memdesc:a37d80e32206ddf4e5ea31e6205b08acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the accessibility text for the toast based on its level.  <br /></td></tr>
 <tr class="separator:a37d80e32206ddf4e5ea31e6205b08acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbc99d9f5ededd3b6a84ab864ec79171" id="r_acbc99d9f5ededd3b6a84ab864ec79171"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbc99d9f5ededd3b6a84ab864ec79171">setToastStyle</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> toast, final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel)</td></tr>
+<tr class="memitem:acbc99d9f5ededd3b6a84ab864ec79171" id="r_acbc99d9f5ededd3b6a84ab864ec79171"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbc99d9f5ededd3b6a84ab864ec79171">setToastStyle</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> <a class="el" href="#a5a2b9ba93bc7c39ba99256440e3eb52b">toast</a>, final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a> toastLevel)</td></tr>
 <tr class="memdesc:acbc99d9f5ededd3b6a84ab864ec79171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the style of the toast based on its level.  <br /></td></tr>
 <tr class="separator:acbc99d9f5ededd3b6a84ab864ec79171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd390731ca047cc6010818f5d461dbd" id="r_abbd390731ca047cc6010818f5d461dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbd390731ca047cc6010818f5d461dbd">temporizeToast</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> toast, final double duration)</td></tr>
+<tr class="memitem:abbd390731ca047cc6010818f5d461dbd" id="r_abbd390731ca047cc6010818f5d461dbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbd390731ca047cc6010818f5d461dbd">temporizeToast</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> <a class="el" href="#a5a2b9ba93bc7c39ba99256440e3eb52b">toast</a>, final double duration)</td></tr>
 <tr class="memdesc:abbd390731ca047cc6010818f5d461dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a timer to automatically remove the toast after a specified duration.  <br /></td></tr>
 <tr class="separator:abbd390731ca047cc6010818f5d461dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1886c0a4adeb229efa1bdeecbbf93254" id="r_a1886c0a4adeb229efa1bdeecbbf93254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1886c0a4adeb229efa1bdeecbbf93254">toastActions</a> (final ActionEvent event)</td></tr>
 <tr class="memdesc:a1886c0a4adeb229efa1bdeecbbf93254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles actions when a toast is clicked.  <br /></td></tr>
 <tr class="separator:a1886c0a4adeb229efa1bdeecbbf93254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a5a2b9ba93bc7c39ba99256440e3eb52b" id="r_a5a2b9ba93bc7c39ba99256440e3eb52b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a2b9ba93bc7c39ba99256440e3eb52b">toast</a></td></tr>
+<tr class="separator:a5a2b9ba93bc7c39ba99256440e3eb52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A custom VBox component for displaying toast notifications. </p>
@@ -183,8 +192,8 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a56047013284463964d5c2f6a91dfe747" name="a56047013284463964d5c2f6a91dfe747"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56047013284463964d5c2f6a91dfe747">&#9670;&#160;</a></span>addToast()</h2>
+<a id="ac95cfb708e84f566bb41d6ca5f9d1ccf" name="ac95cfb708e84f566bb41d6ca5f9d1ccf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac95cfb708e84f566bb41d6ca5f9d1ccf">&#9670;&#160;</a></span>addToast()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -202,7 +211,12 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a></td>          <td class="paramname"><span class="paramname"><em>toastLevel</em></span>&#160;)</td>
+          <td class="paramtype">final <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html">ToastLevels</a></td>          <td class="paramname"><span class="paramname"><em>toastLevel</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final boolean</td>          <td class="paramname"><span class="paramname"><em>requestFocus</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,6 +227,7 @@ Private Member Functions</h2></td></tr>
     <tr><td class="paramname">visibleText</td><td>The text content of the toast </td></tr>
     <tr><td class="paramname">detailedText</td><td>The detailed content of the text added to the system clipboard copy </td></tr>
     <tr><td class="paramname">toastLevel</td><td>The severity level of the toast (info, warn, error) </td></tr>
+    <tr><td class="paramname">requestFocus</td><td>Whether the toast should request focus upon being shown. </td></tr>
   </table>
   </dd>
 </dl>
@@ -221,13 +236,13 @@ Private Member Functions</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box_a56047013284463964d5c2f6a91dfe747_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box_ac95cfb708e84f566bb41d6ca5f9d1ccf_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
-<a id="a92f55987cef65c81b086a003876edb7e" name="a92f55987cef65c81b086a003876edb7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92f55987cef65c81b086a003876edb7e">&#9670;&#160;</a></span>addToastWithDuration()</h2>
+<a id="a528bc1905d86874ca3cda73c953d4037" name="a528bc1905d86874ca3cda73c953d4037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528bc1905d86874ca3cda73c953d4037">&#9670;&#160;</a></span>addToastWithDuration()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +265,12 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final double</td>          <td class="paramname"><span class="paramname"><em>duration</em></span>&#160;)</td>
+          <td class="paramtype">final double</td>          <td class="paramname"><span class="paramname"><em>duration</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final boolean</td>          <td class="paramname"><span class="paramname"><em>requestFocus</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -261,6 +281,7 @@ Private Member Functions</h2></td></tr>
     <tr><td class="paramname">visibleText</td><td>The text content of the toast </td></tr>
     <tr><td class="paramname">detailedText</td><td>The detailed content of the text added to the system clipboard copy </td></tr>
     <tr><td class="paramname">duration</td><td>The display duration of the toast in milliseconds </td></tr>
+    <tr><td class="paramname">requestFocus</td><td>Whether the toast should request focus upon being shown. </td></tr>
   </table>
   </dd>
 </dl>
@@ -269,7 +290,7 @@ Private Member Functions</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box_a92f55987cef65c81b086a003876edb7e_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box_a528bc1905d86874ca3cda73c953d4037_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -342,8 +363,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1d9be1b170f4ce116ef5d1399aad1c0d" name="a1d9be1b170f4ce116ef5d1399aad1c0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d9be1b170f4ce116ef5d1399aad1c0d">&#9670;&#160;</a></span>removeToast()</h2>
+<a id="a5d6e2ac545d0be607fd1926ed7bd5206" name="a5d6e2ac545d0be607fd1926ed7bd5206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6e2ac545d0be607fd1926ed7bd5206">&#9670;&#160;</a></span>removeThisToast()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +373,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.view.components.toaster.ToasterVBox.removeToast </td>
+          <td class="memname">void fr.softsf.sudokufx.view.components.toaster.ToasterVBox.removeThisToast </td>
           <td>(</td>
           <td class="paramtype">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a></td>          <td class="paramname"><span class="paramname"><em>button</em></span></td><td>)</td>
           <td></td>
@@ -365,13 +386,39 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Removes a specific toast from the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications.">ToasterVBox</a>. </p>
+<p>Removes the specified toast button from the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications.">ToasterVBox</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">button</td><td>The toast button to be removed </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a4927d5647d977b8b2e3a3a84f51bea4e" name="a4927d5647d977b8b2e3a3a84f51bea4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4927d5647d977b8b2e3a3a84f51bea4e">&#9670;&#160;</a></span>removeToast()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.components.toaster.ToasterVBox.removeToast </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Schedules the current toast for removal after a short delay. </p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box_a4927d5647d977b8b2e3a3a84f51bea4e_cgraph.svg" width="612" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -416,11 +463,11 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box_a37d80e32206ddf4e5ea31e6205b08acd_cgraph.svg" width="612" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -461,11 +508,11 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box_acbc99d9f5ededd3b6a84ab864ec79171_cgraph.svg" width="506" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -541,13 +588,36 @@ Private Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box_a1886c0a4adeb229efa1bdeecbbf93254_cgraph.svg" width="612" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a5a2b9ba93bc7c39ba99256440e3eb52b" name="a5a2b9ba93bc7c39ba99256440e3eb52b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a2b9ba93bc7c39ba99256440e3eb52b">&#9670;&#160;</a></span>toast</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html">ToasterButton</a> fr.softsf.sudokufx.view.components.toaster.ToasterVBox.toast</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -560,7 +630,7 @@ Private Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html">components</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster.html">toaster</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></li>
-    <li class="footer">Generated on Wed Apr 23 2025 08:20:13 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon Apr 28 2025 14:11:22 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

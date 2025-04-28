@@ -138,6 +138,7 @@ var annotated_dup =
                 [ "ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button" ],
                 [ "ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box" ]
               ] ],
+              [ "MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert" ],
               [ "SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane" ]
             ] ],
             [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view" ],
@@ -146,6 +147,7 @@ var annotated_dup =
             [ "SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view" ]
           ] ],
           [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html", [
+            [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
             [ "FullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model" ]
           ] ],
           [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1_launcher" ],

@@ -20,6 +20,7 @@ var searchData=
   ['mapsoftwaretodto_17',['mapSoftwareToDto',['../interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html#addc8516cb5cc6171c663e132d5fdddd6',1,'fr::softsf::sudokufx::interfaces::mapper::ISoftwareMapper']]],
   ['measuresudo_18',['measureSudo',['../classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#a83424bf6ea858a7cc811cd70876f0a82',1,'fr::softsf::sudokufx::benchmark::BenchGridMaster']]],
   ['menudto_19',['MenuDto',['../namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89',1,'fr::softsf::sudokufx::dto']]],
-  ['mylogbackconfig_20',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a6f72c3e944dc4bad5ad7ebf8e60ac763',1,'fr::softsf::sudokufx::configuration::MyLogbackConfig']]],
-  ['mylogbackconfigutest_21',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html#acd909231da413267169ade8f916df0b3',1,'fr::softsf::sudokufx::configuration::MyLogbackConfigUTest']]]
+  ['myalert_20',['MyAlert',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html#a44de9947af823d3fe06c65dba64d6890',1,'fr::softsf::sudokufx::view::components::MyAlert']]],
+  ['mylogbackconfig_21',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a6f72c3e944dc4bad5ad7ebf8e60ac763',1,'fr::softsf::sudokufx::configuration::MyLogbackConfig']]],
+  ['mylogbackconfigutest_22',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html#acd909231da413267169ade8f916df0b3',1,'fr::softsf::sudokufx::configuration::MyLogbackConfigUTest']]]
 ];

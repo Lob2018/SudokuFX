@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title="Handles actions when a toast is clicked." alt="" coords="5,39,282,81"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a69a03e2b3edcbd369e470467ecc7ab91" title="Copies the full detail text content of a toast to the system clipboard." alt="" coords="330,5,606,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,43,314,40,314,45,282,48"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a1d9be1b170f4ce116ef5d1399aad1c0d" title="Removes a specific toast from the ToasterVBox." alt="" coords="330,72,606,115"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a5d6e2ac545d0be607fd1926ed7bd5206" title="Removes the specified toast button from the ToasterVBox." alt="" coords="330,72,606,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,72,314,75,314,80,282,77"/>
 </map>

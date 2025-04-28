@@ -5,6 +5,11 @@ var hierarchy =
       [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigDefault", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_default.html", null ],
       [ "fr.softsf.sudokufx.configuration.database.DataSourceConfigTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config_test.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel.ActiveMenu", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", null ],
+    [ "Alert", null, [
+      [ "fr.softsf.sudokufx.view.components.MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html", null ]
+    ] ],
     [ "Application", null, [
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
     ] ],

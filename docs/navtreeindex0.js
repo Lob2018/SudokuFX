@@ -1,6 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "_abstract_data_source_config_8java.html":[3,0,1,0,0,0,0,0,2,0,0],
+"_active_menu_or_submenu_view_model_8java.html":[3,0,1,0,0,0,0,0,12,0],
 "_application_keystore_8java.html":[3,0,1,0,0,0,0,0,2,0,1],
 "_application_keystore_i_test_8java.html":[3,0,1,1,0,0,0,0,1,0,0],
 "_background_8java.html":[3,0,1,0,0,0,0,0,7,0],
@@ -21,7 +22,7 @@ var NAVTREEINDEX0 =
 "_file_system_manager_8java.html":[3,0,1,0,0,0,0,0,10,2],
 "_file_system_manager_u_test_8java.html":[3,0,1,1,0,0,0,0,3,2],
 "_full_menu_view_8java.html":[3,0,1,0,0,0,0,0,11,3],
-"_full_menu_view_model_8java.html":[3,0,1,0,0,0,0,0,12,0],
+"_full_menu_view_model_8java.html":[3,0,1,0,0,0,0,0,12,1],
 "_full_menu_view_model_i_test_8java.html":[3,0,1,1,0,0,0,0,0,1,0,0],
 "_fxml_service_8java.html":[3,0,1,0,0,0,0,0,9,0],
 "_game_8java.html":[3,0,1,0,0,0,0,0,7,1],
@@ -66,6 +67,7 @@ var NAVTREEINDEX0 =
 "_menu_8java.html":[3,0,1,0,0,0,0,0,7,4],
 "_menu_dto_8java.html":[3,0,1,0,0,0,0,0,3,5],
 "_menu_repository_8java.html":[3,0,1,0,0,0,0,0,8,4],
+"_my_alert_8java.html":[3,0,1,0,0,0,0,0,11,0,2],
 "_my_date_time_8java.html":[3,0,1,0,0,0,0,0,10,4],
 "_my_enums_e2_e_test_8java.html":[3,0,1,1,0,0,0,0,0,0,0],
 "_my_enums_u_test_8java.html":[3,0,1,1,0,0,0,0,0,2,1,3],
@@ -97,7 +99,7 @@ var NAVTREEINDEX0 =
 "_software_repository_8java.html":[3,0,1,0,0,0,0,0,8,7],
 "_software_service_8java.html":[3,0,1,0,0,0,0,0,9,1],
 "_software_service_u_test_8java.html":[3,0,1,1,0,0,0,0,0,2,0,0],
-"_spinner_grid_pane_8java.html":[3,0,1,0,0,0,0,0,11,0,2],
+"_spinner_grid_pane_8java.html":[3,0,1,0,0,0,0,0,11,0,3],
 "_splash_screen_view_8java.html":[3,0,1,0,0,0,0,0,11,4],
 "_sudo_main_8java.html":[3,0,1,0,0,0,0,0,14],
 "_tag_dto_8java.html":[3,0,1,0,0,0,0,0,3,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#a9a388acd198da38597b1c3ddfb5bb4f7":[1,0,0,0,0,2,2,1,3,1],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#a9a388acd198da38597b1c3ddfb5bb4f7":[2,0,0,0,0,2,2,1,3,1],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#ab453038d8017cd42208a3ae7bdd7697e":[1,0,0,0,0,2,2,1,3,6],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#ab453038d8017cd42208a3ae7bdd7697e":[2,0,0,0,0,2,2,1,3,6],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#ab84b86fc288d84dabbfda051fbf3c537":[1,0,0,0,0,2,2,1,3,3],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#ab84b86fc288d84dabbfda051fbf3c537":[2,0,0,0,0,2,2,1,3,3]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html#ab453038d8017cd42208a3ae7bdd7697e":[2,0,0,0,0,2,2,1,3,6]
 };
