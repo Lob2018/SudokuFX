@@ -36,6 +36,8 @@
 	echo # JRE version         :"%5"
 	echo # Deployment folder   :"%6"
 	echo # Build timestamp     :"%7"
+	echo # Organization        :"%8"
+	echo # License             :"%9"
     echo.
 	set "jarName=%1-%2.jar"
 	set "timestamp=%7"
@@ -54,7 +56,7 @@
 	echo.
 	echo # OUTPUT   : CREATING THE MSI FROM TARGET/INPUT...
 	cd ../
-    jpackage --input ./target/input --dest %6 --name %appNameWithTheJVM% --type msi --main-jar %jarName% --main-class org.springframework.boot.loader.launch.JarLauncher --win-shortcut --win-menu --win-menu-group %1 --java-options "-Xmx2048m -Dapp.name=%1 -Dapp.version=%2" --vendor %3 --copyright "Copyright © %year% %3" --icon src/main/resources/fr/softsf/sudokufx/images/icon.ico --app-version %2 --description "%1 %year%" --license-file LICENSE.txt --verbose
+    jpackage --input ./target/input --dest %6 --name %appNameWithTheJVM% --type msi --main-jar %jarName% --main-class org.springframework.boot.loader.launch.JarLauncher --win-shortcut --win-menu --win-menu-group %1 --java-options "-Xmx2048m -Dapp.name=%1 -Dapp.version=%2 -Dapp.organization=%8 -Dapp.license=%9" --vendor %3 --copyright "Copyright © %year% %3" --icon src/main/resources/fr/softsf/sudokufx/images/icon.ico --app-version %2 --description "%1 %year%" --license-file LICENSE.txt --verbose
     echo.
     echo # TARGET   : THE BATCH TO LAUNCH THE UBERJAR
     cd ./target
@@ -117,13 +119,13 @@
         echo         del %1-%2.jar
         echo         echo Training the SudokuFX application...
         echo         cd %%FOLDER%%
-        echo         cmd /c "java -Xmx2048m -XX:ArchiveClassesAtExit=%%FOLDER%%.jsa -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul"
-        echo         cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul"
+        echo         cmd /c "java -Xmx2048m -XX:ArchiveClassesAtExit=%%FOLDER%%.jsa -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name=%1 -Dapp.version=%2 -Dapp.organization=%8 -Dapp.license=%9 -jar %1-%2.jar > nul"
+        echo         cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -Dapp.organization=%8 -Dapp.license=%9 -jar %1-%2.jar > nul"
         echo     ^)
         echo     if exist %%FOLDER%% (
         echo         echo Running the SudokuFX application...
         echo         cd %%FOLDER%%
-        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -jar %1-%2.jar > nul & exit"
+        echo         start /min cmd /c "java -Xmx2048m -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -Dapp.organization=%8 -Dapp.license=%9 -jar %1-%2.jar > nul & exit"
         echo     ^)
         echo     exit
     ) > %1-%2.bat

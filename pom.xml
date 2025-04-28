@@ -30,6 +30,7 @@
     </developers>
     <!-- Project properties -->
     <properties>
+        <license.name>MIT</license.name>
         <deployment-folder>output</deployment-folder>
         <java.version>21</java.version>
         <javafx.version>23.0.2</javafx.version>
@@ -140,6 +141,8 @@
                     <options>
                         <option>-Dapp.name=${project.artifactId}</option>
                         <option>-Dapp.version=${project.version}</option>
+                        <option>-Dapp.organization=${project.organization.name}</option>
+                        <option>-Dapp.license=${license.name}</option>
                     </options>
                 </configuration>
             </plugin>
@@ -254,7 +257,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.3</version>
                 <configuration>
-                    <argLine>@{jacoco.argLine} -Dapp.name=${project.artifactId} -Dapp.version=${project.version}
+                    <argLine>@{jacoco.argLine} -Dapp.name=${project.artifactId} -Dapp.version=${project.version} -Dapp.organization=${project.organization.name} -Dapp.license=${license.name}
                     </argLine>
                 </configuration>
             </plugin>
@@ -267,6 +270,8 @@
                     <jvmArguments>
                         <jvmArgument>-Dapp.name=${project.artifactId}</jvmArgument>
                         <jvmArgument>-Dapp.version=${project.version}</jvmArgument>
+                        <jvmArgument>-Dapp.organization=${project.organization.name}</jvmArgument>
+                        <jvmArgument>-Dapp.license=${license.name}</jvmArgument>
                     </jvmArguments>
                     <excludeGroupIds>org.openjdk.jmh</excludeGroupIds>
                 </configuration>
@@ -490,6 +495,8 @@
                                         <argument>${java.version}</argument>
                                         <argument>${deployment-folder}</argument>
                                         <argument>${maven.build.timestamp}</argument>
+                                        <argument>${project.organization.name}</argument>
+                                        <argument>${license.name}</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
@@ -530,6 +537,8 @@
                                         <argument>${start-class}</argument>
                                         <argument>${java.version}</argument>
                                         <argument>${deployment-folder}</argument>
+                                        <argument>${project.organization.name}</argument>
+                                        <argument>${license.name}</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
@@ -572,6 +581,8 @@
                                         <argument>${java.version}</argument>
                                         <argument>${deployment-folder}</argument>
                                         <argument>${macos-package-id}</argument>
+                                        <argument>${project.organization.name}</argument>
+                                        <argument>${license.name}</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
@@ -615,6 +626,8 @@
                                         <argument>${deployment-folder}</argument>
                                         <argument>${macos-package-id}</argument>
                                         <argument>x86_64</argument>
+                                        <argument>${project.organization.name}</argument>
+                                        <argument>${license.name}</argument>
                                     </arguments>
                                 </configuration>
                             </execution>

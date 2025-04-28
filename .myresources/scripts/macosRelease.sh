@@ -32,6 +32,8 @@ echo "# Main's path          : $4"
 echo "# JRE version          : $5"
 echo "# Deployment folder    : $6"
 echo "# MacOS package ID     : $7"
+echo "# Organization         : $8"
+echo "# License              : $9"
 
 jarName="$1-$2.jar"
 year=$(date +%Y)
@@ -51,7 +53,7 @@ cp ../LICENSE.txt ./input
 
 echo "# OUTPUT   : CREATING THE APP FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type dmg --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --mac-package-identifier "$7" --java-options "-Xmx2048m -Dapp.name=$1 -Dapp.version=$2" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/SudokuFX-JVM.icns --app-version "$2" --description "$1 $year" --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type dmg --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --mac-package-name "$1" --mac-package-identifier "$7" --java-options "-Xmx2048m -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$8 -Dapp.license=$9" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/SudokuFX-JVM.icns --app-version "$2" --description "$1 $year" --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target || exit
@@ -108,14 +110,14 @@ if [[ ! -d "$1" ]]; then
     rm "$1-$2.jar"
     echo "Training the SudokuFX application..."
     cd "$1" || exit
-    java -Xmx2048m -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null && \
-    java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null &
+    java -Xmx2048m -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$8" -Dapp.license="$9" -jar "$1-$2.jar" > /dev/null && \
+    java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$8" -Dapp.license="$9" -jar "$1-$2.jar" > /dev/null &
 fi
 
 if [[ -d "$1" ]]; then
     echo "Running the SudokuFX application..."
     cd "$1" || exit
-    java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -jar "$1-$2.jar" > /dev/null &
+    java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$8" -Dapp.license="$9" -jar "$1-$2.jar" > /dev/null &
 fi
 EOF
 

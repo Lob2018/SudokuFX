@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.Paths;
@@ -41,6 +42,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
 import java.text.MessageFormat;
+import java.time.Year;
 import java.util.List;
 import java.util.Objects;
 
@@ -684,7 +686,12 @@ public final class DefaultView implements IMainView, ISceneProvider {
         INFORMATION_ALERT.setHeaderText(null);
         INFORMATION_ALERT.setContentText(MessageFormat.format(
                 I18n.INSTANCE.getValue("menu.button.help.dialog.information.message"),
-                iOsFolderFactory.getOsLogsFolderPath()
+                iOsFolderFactory.getOsLogsFolderPath(),
+                JVMApplicationProperties.INSTANCE.getAppName(),
+                JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1),
+                JVMApplicationProperties.INSTANCE.getAppOrganization(),
+                Year.now() + "",
+                JVMApplicationProperties.INSTANCE.getAppLicense()
         ));
         INFORMATION_ALERT.showAndWait();
     }

@@ -161,11 +161,13 @@ To ensure the integrity of downloaded assets, import the GPG public key with `gp
 >- app.name:This property specifies the name of the application.
 >- app.version:This property specifies the version of the application.
    >   - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
+>- app.organization: Specifies the organization responsible for the application.
+>- app.license: Specifies the license under which the application is distributed.
 
 ### Build with
 
 - Java LTS (e.g. 21)
-- JavaFX LTS (e.g. 21)
+- JavaFX
 - WiX Toolset v3.11
 - Dependencies:
     - Development

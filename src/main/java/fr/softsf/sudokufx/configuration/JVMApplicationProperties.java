@@ -6,18 +6,22 @@ import java.util.Objects;
 
 /**
  * Utility enum for managing JVM application properties.
- * This enum provides methods to retrieve the application name
- * and version from system properties.
+ * Provides methods to retrieve and validate the application name, version, organization, and license
+ * from system properties, and manage the Spring context exit behavior.
  */
 public enum JVMApplicationProperties {
     INSTANCE;
 
     private static final String APP_NAME_PROPERTY = "app.name";
     private static final String APP_VERSION_PROPERTY = "app.version";
+    private static final String APP_ORGANIZATION_PROPERTY = "app.organization";
+    private static final String APP_LICENSE_PROPERTY = "app.license";
     private static final String ON_REFRESH = "onRefresh";
     private String springContextExitOnRefresh = "spring.context.exit";
     private String appName = "";
     private String appVersion = "";
+    private String appOrganization = "";
+    private String appLicense = "";
     private String springContextExit;
 
     /**
@@ -68,6 +72,32 @@ public enum JVMApplicationProperties {
     }
 
     /**
+     * Retrieves the current application organization from system properties.
+     *
+     * @return The current application organization if valid, or an empty string if invalid or not set.
+     */
+    public String getAppOrganization() {
+        if (appOrganization.isEmpty()) {
+            String systemValue = System.getProperty(APP_ORGANIZATION_PROPERTY);
+            appOrganization = MyRegex.INSTANCE.isValidatedByRegex(systemValue, MyRegex.INSTANCE.getAlphanumericPattern()) ? systemValue : "";
+        }
+        return appOrganization;
+    }
+
+    /**
+     * Retrieves the current application license from system properties.
+     *
+     * @return The current application license if valid, or an empty string if invalid or not set.
+     */
+    public String getAppLicense() {
+        if (appLicense.isEmpty()) {
+            String systemValue = System.getProperty(APP_LICENSE_PROPERTY);
+            appLicense = MyRegex.INSTANCE.isValidatedByRegex(systemValue, MyRegex.INSTANCE.getAlphanumericPattern()) ? systemValue : "";
+        }
+        return appLicense;
+    }
+
+    /**
      * Initialize the Spring context exit behavior to null for testing purposes.
      */
     void setInitSpringContextExitForTests() {
@@ -100,5 +130,19 @@ public enum JVMApplicationProperties {
      */
     void setEmptyAppVersionPropertyForTests() {
         appVersion = "";
+    }
+
+    /**
+     * Resets the application organization for testing purposes.
+     */
+    void setEmptyAppOrganizationPropertyForTests() {
+        appOrganization = "";
+    }
+
+    /**
+     * Resets the application license for testing purposes.
+     */
+    void setEmptyAppLicensePropertyForTests() {
+        appLicense = "";
     }
 }

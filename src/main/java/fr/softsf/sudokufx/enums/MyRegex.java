@@ -50,10 +50,10 @@ public enum MyRegex {
     /**
      * Precompiled regex pattern for validating alphanumeric strings.
      * Requirements:
-     * - Only letters, digits, and spaces are allowed.
+     * - Only letters, digits, spaces, and dots are allowed.
      */
     @Getter
-    private static final Pattern alphanumericPattern = Pattern.compile("^[a-zA-Z0-9\\s]+$");
+    private static final Pattern alphanumericPattern = Pattern.compile("^[a-zA-Z0-9\\s.]+$");
 
     /**
      * Validates the given text against the specified regular expression pattern.
