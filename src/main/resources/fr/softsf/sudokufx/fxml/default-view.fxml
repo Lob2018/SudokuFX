@@ -16,6 +16,7 @@
 <?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.control.ColorPicker?>
 <?import fr.softsf.sudokufx.view.components.SpinnerGridPane?>
+<?import fr.softsf.sudokufx.view.components.PossibilityStarsHBox?>
 <StackPane fx:id="sudokuFXStackPane" alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1"
            xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
@@ -75,7 +76,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonEasy" styleClass="menuMiniButton">
+            <Button fx:id="menuMiniButtonEasy" styleClass="menuMiniButton" onAction="#handleEasyLevelShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -88,7 +89,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonMedium" styleClass="menuMiniButton">
+            <Button fx:id="menuMiniButtonMedium" styleClass="menuMiniButton" onAction="#handleMediumLevelShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -101,7 +102,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonDifficult" styleClass="menuMiniButton">
+            <Button fx:id="menuMiniButtonDifficult" styleClass="menuMiniButton" onAction="#handleDifficultLevelShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -219,7 +220,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonEasy" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonEasy" styleClass="menuButton" onAction="#handleEasyLevelShow">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -230,14 +231,7 @@
                                 <Label fx:id="menuMaxiButtonEasyText" styleClass="root,menuButtonLabel"/>
                             </HBox>
                             <Region HBox.hgrow="ALWAYS"/>
-                            <HBox fx:id="menuMaxiHBoxEasyPossibilities" alignment="CENTER_RIGHT"
-                                  styleClass="menuHBoxRightContainer">
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
-                            </HBox>
+                            <PossibilityStarsHBox fx:id="menuMaxiHBoxEasyPossibilities"/>
                         </HBox>
                     </graphic>
                     <tooltip>
@@ -247,7 +241,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonMedium" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonMedium" styleClass="menuButton" onAction="#handleMediumLevelShow">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -258,14 +252,7 @@
                                 <Label fx:id="menuMaxiButtonMediumText" styleClass="root,menuButtonLabel"/>
                             </HBox>
                             <Region HBox.hgrow="ALWAYS"/>
-                            <HBox fx:id="menuMaxiHBoxMediumPossibilities" alignment="CENTER_RIGHT"
-                                  styleClass="menuHBoxRightContainer" visible="false">
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
-                            </HBox>
+                            <PossibilityStarsHBox fx:id="menuMaxiHBoxMediumPossibilities"/>
                         </HBox>
                     </graphic>
                     <tooltip>
@@ -275,7 +262,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonDifficult" styleClass="menuButton">
+                <Button fx:id="menuMaxiButtonDifficult" styleClass="menuButton" onAction="#handleDifficultLevelShow">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -286,14 +273,7 @@
                                 <Label fx:id="menuMaxiButtonDifficultText" styleClass="root,menuButtonLabel"/>
                             </HBox>
                             <Region HBox.hgrow="ALWAYS"/>
-                            <HBox fx:id="menuMaxiHBoxDifficultPossibilities" alignment="CENTER_RIGHT"
-                                  styleClass="menuHBoxRightContainer" visible="false">
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
-                            </HBox>
+                            <PossibilityStarsHBox fx:id="menuMaxiHBoxDifficultPossibilities"/>
                         </HBox>
                     </graphic>
                     <tooltip>
@@ -494,14 +474,7 @@
                                 <Label fx:id="menuSolveButtonSolveText" styleClass="root,menuButtonLabel"/>
                             </HBox>
                             <Region HBox.hgrow="ALWAYS"/>
-                            <HBox fx:id="menuSolveHBoxPossibilities" alignment="CENTER_RIGHT"
-                                  styleClass="menuHBoxRightContainer">
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar1"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar2"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar3"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar4"/>
-                                <Text text="&#xe83a;" styleClass="material,menuButtonLevelStar,menuButtonLevelStar5"/>
-                            </HBox>
+                            <PossibilityStarsHBox fx:id="menuSolveHBoxPossibilities"/>
                         </HBox>
                     </graphic>
                     <tooltip>

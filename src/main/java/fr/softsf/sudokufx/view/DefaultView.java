@@ -3,21 +3,23 @@ package fr.softsf.sudokufx.view;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.enums.Paths;
-import fr.softsf.sudokufx.enums.ScreenSize;
-import fr.softsf.sudokufx.enums.ToastLevels;
+import fr.softsf.sudokufx.enums.*;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.view.components.MyAlert;
+import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import javafx.animation.*;
 import javafx.application.Platform;
+import javafx.beans.binding.Bindings;
 import javafx.beans.binding.DoubleBinding;
+import javafx.beans.binding.StringBinding;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.concurrent.Task;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -31,7 +33,6 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -43,7 +44,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.io.File;
 import java.text.MessageFormat;
 import java.time.Year;
-import java.util.List;
 import java.util.Objects;
 
 
@@ -67,7 +67,8 @@ public final class DefaultView implements IMainView, ISceneProvider {
     @Autowired
     private IOsFolderFactory iOsFolderFactory;
 
-    private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel=new ActiveMenuOrSubmenuViewModel();
+    private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel = new ActiveMenuOrSubmenuViewModel();
+    private final ObjectProperty<DifficultyLevel> difficultyLevel = new SimpleObjectProperty<>(null);
 
     @FXML
     private ToasterVBox toaster;
@@ -132,19 +133,19 @@ public final class DefaultView implements IMainView, ISceneProvider {
     @FXML
     private Label menuMaxiButtonEasyText;
     @FXML
-    private HBox menuMaxiHBoxEasyPossibilities;
+    private PossibilityStarsHBox menuMaxiHBoxEasyPossibilities;
     @FXML
     private Button menuMaxiButtonMedium;
     @FXML
     private Label menuMaxiButtonMediumText;
     @FXML
-    private HBox menuMaxiHBoxMediumPossibilities;
+    private PossibilityStarsHBox menuMaxiHBoxMediumPossibilities;
     @FXML
     private Button menuMaxiButtonDifficult;
     @FXML
     private Label menuMaxiButtonDifficultText;
     @FXML
-    private HBox menuMaxiHBoxDifficultPossibilities;
+    private PossibilityStarsHBox menuMaxiHBoxDifficultPossibilities;
     @FXML
     private Button menuMaxiButtonSolve;
     @FXML
@@ -202,7 +203,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
     @FXML
     private Button menuSolveButtonSolveClear;
     @FXML
-    private HBox menuSolveHBoxPossibilities;
+    private PossibilityStarsHBox menuSolveHBoxPossibilities;
 
     @FXML
     private Button menuSaveButtonReduce;
@@ -282,48 +283,39 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuMaxiButtonPlayer.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"), playerName) + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayerText.setText(playerName);
-        int maxiMenuEasyPercentage = 25;
-        setMenuHBoxPossibilitiesFromPercentage(menuMaxiHBoxEasyPossibilities, maxiMenuEasyPercentage);
-        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        String easySelected = menuMaxiHBoxEasyPossibilities.isVisible() ? ".selected" : "";
-        if (easySelected.isBlank()) {
-            menuMaxiButtonEasy.setAccessibleRoleDescription(null);
-            menuMaxiButtonEasy.getStyleClass().remove("colorEasy");
-        } else {
-            menuMaxiButtonEasy.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
-            menuMaxiButtonEasy.getStyleClass().add("colorEasy");
-        }
-        menuMaxiButtonEasy.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.easy.accessibility" + easySelected), maxiMenuEasyPercentage));
-        menuMaxiButtonEasy.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.easy.accessibility" + easySelected), maxiMenuEasyPercentage));
-        menuMaxiButtonEasyText.setText(I18n.INSTANCE.getValue("menu.maxi.button.easy.text"));
-        int maxiMenuMediumPercentage = 50;
-        setMenuHBoxPossibilitiesFromPercentage(menuMaxiHBoxMediumPossibilities, maxiMenuMediumPercentage);
-        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        String mediumSelected = menuMaxiHBoxMediumPossibilities.isVisible() ? ".selected" : "";
-        if (mediumSelected.isBlank()) {
-            menuMaxiButtonMedium.setAccessibleRoleDescription(null);
-            menuMaxiButtonMedium.getStyleClass().remove("colorMedium");
-        } else {
-            menuMaxiButtonMedium.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
-            menuMaxiButtonMedium.getStyleClass().add("colorMedium");
-        }
-        menuMaxiButtonMedium.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.medium.accessibility" + mediumSelected), maxiMenuMediumPercentage));
-        menuMaxiButtonMedium.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.medium.accessibility" + mediumSelected), maxiMenuMediumPercentage));
-        menuMaxiButtonMediumText.setText(I18n.INSTANCE.getValue("menu.maxi.button.medium.text"));
-        int maxiMenuDifficultPercentage = 75;
-        setMenuHBoxPossibilitiesFromPercentage(menuMaxiHBoxDifficultPossibilities, maxiMenuDifficultPercentage);
-        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        String difficultSelected = menuMaxiHBoxDifficultPossibilities.isVisible() ? ".selected" : "";
-        if (difficultSelected.isBlank()) {
-            menuMaxiButtonDifficult.setAccessibleRoleDescription(null);
-            menuMaxiButtonDifficult.getStyleClass().remove("colorDifficult");
-        } else {
-            menuMaxiButtonDifficult.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED));
-            menuMaxiButtonDifficult.getStyleClass().add("colorDifficult");
-        }
-        menuMaxiButtonDifficult.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.difficult.accessibility" + difficultSelected), maxiMenuDifficultPercentage));
-        menuMaxiButtonDifficult.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.difficult.accessibility" + difficultSelected), maxiMenuDifficultPercentage));
-        menuMaxiButtonDifficultText.setText(I18n.INSTANCE.getValue("menu.maxi.button.difficult.text"));
+        configureDifficultyButton(
+                DifficultyLevel.EASY,
+                menuMaxiHBoxEasyPossibilities,
+                menuMaxiButtonEasy,
+                menuMaxiButtonEasyText,
+                "menu.maxi.button.easy.accessibility",
+                "menu.maxi.button.easy.text",
+                "colorEasy",
+                menuMiniButtonEasy
+        );
+        configureDifficultyButton(
+                DifficultyLevel.MEDIUM,
+                menuMaxiHBoxMediumPossibilities,
+                menuMaxiButtonMedium,
+                menuMaxiButtonMediumText,
+                "menu.maxi.button.medium.accessibility",
+                "menu.maxi.button.medium.text",
+                "colorMedium",
+                menuMiniButtonMedium);
+        configureDifficultyButton(
+                DifficultyLevel.DIFFICULT,
+                menuMaxiHBoxDifficultPossibilities,
+                menuMaxiButtonDifficult,
+                menuMaxiButtonDifficultText,
+                "menu.maxi.button.difficult.accessibility",
+                "menu.maxi.button.difficult.text",
+                "colorDifficult",
+                menuMiniButtonDifficult);
+        // TODO : FORCE DEFAULT LEVEL
+        menuMaxiHBoxEasyPossibilities.setHBoxPossibilityStarsFromPercentage(25);
+        difficultyLevel.set(DifficultyLevel.EASY);
+
+
         menuMaxiButtonSolve.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
         menuMaxiButtonSolve.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonSolve.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
@@ -387,12 +379,16 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuSolveButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
         menuSolveButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
         menuSolveButtonReduceText.setText(I18n.INSTANCE.getValue("menu.solve.button.reduce.text"));
-        int solveMenuPercentage = 45;
-        setMenuHBoxPossibilitiesFromPercentage(menuSolveHBoxPossibilities, solveMenuPercentage);
-        menuSolveButtonSolve.setAccessibleText(MessageFormat.format(I18n.INSTANCE.getValue("menu.solve.button.solve.accessibility"), solveMenuPercentage));
-        menuSolveButtonSolve.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.solve.button.solve.accessibility"), solveMenuPercentage) + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+
+        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        menuSolveHBoxPossibilities.setVisible(true);
+        menuSolveButtonSolve.accessibleTextProperty().bind(menuSolveHBoxPossibilities.solveFormattedAccessibleText("menu.solve.button.solve.accessibility"));
+        menuSolveButtonSolve.getTooltip().textProperty().bind(menuSolveHBoxPossibilities.solveFormattedTooltipText("menu.solve.button.solve.accessibility"));
         menuSolveButtonSolve.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuSolveButtonSolveText.setText(I18n.INSTANCE.getValue("menu.solve.button.solve.text"));
+        //TODO test
+        menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(45);
+
         menuSolveButtonSolveClear.setAccessibleText(I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility"));
         menuSolveButtonSolveClear.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuSolveButtonSolveClear.getTooltip().setText(I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
@@ -572,32 +568,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
     }
 
     /**
-     * Updates the star ratings displayed in the provided HBox container based on a percentage value.
-     * The star ratings are represented by Unicode characters:
-     * - Full star: \ue838
-     * - Half star: \ue839
-     * - Empty star: \ue83a
-     *
-     * @param starsContainer The HBox container holding Text nodes representing stars.
-     * @param percentage     The percentage value used to determine the star rating (from 0 to 100).
-     */
-    private void setMenuHBoxPossibilitiesFromPercentage(HBox starsContainer, int percentage) {
-        double stars = Math.round(percentage * 0.1) / 2.0;
-        List<Text> listTextsStars = starsContainer.getChildren().stream()
-                .filter(Text.class::isInstance)
-                .map(Text.class::cast).toList();
-        for (int i = 0; i < listTextsStars.size(); i++) {
-            if (stars >= i + 1) {
-                listTextsStars.get(i).setText("\ue838");
-            } else if (stars >= i + 0.5) {
-                listTextsStars.get(i).setText("\ue839");
-            } else {
-                listTextsStars.get(i).setText("\ue83a");
-            }
-        }
-    }
-
-    /**
      * Sets up a rounded clip for a ListView.
      *
      * @param listView The ListView to be clipped.
@@ -611,6 +581,81 @@ public final class DefaultView implements IMainView, ISceneProvider {
         clipView.arcHeightProperty().bind(radiusBinding);
     }
 
+    /**
+     * Configures UI bindings and styles for a difficulty-level button.
+     * <p>
+     * Sets up visibility, accessibility text, tooltip, localized label, and dynamic styling based on the selected difficulty level.
+     *
+     * @param level            the associated difficulty level
+     * @param box              the HBox containing the possibility stars
+     * @param button           the button to configure
+     * @param textLabel        the label displaying the difficulty name
+     * @param accessibilityKey the I18n key for the accessibility text
+     * @param labelKey         the I18n key for the button label
+     * @param styleClass       the CSS class to apply when the level is selected
+     * @param miniButton       the mini button to configure
+     */
+    private void configureDifficultyButton(DifficultyLevel level,
+                                           PossibilityStarsHBox box,
+                                           Button button,
+                                           Label textLabel,
+                                           String accessibilityKey,
+                                           String labelKey,
+                                           String styleClass,
+                                           Button miniButton) {
+        box.visibleProperty().bind(
+                Bindings.createBooleanBinding(() -> difficultyLevel.get() == level, difficultyLevel)
+        );
+        button.accessibleRoleDescriptionProperty().bind(
+                Bindings.when(box.visibleProperty())
+                        .then(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
+                        .otherwise((String) null)
+        );
+        textLabel.setText(I18n.INSTANCE.getValue(labelKey));
+        difficultyLevel.addListener((obs, oldLvl, newLvl) -> {
+            button.getStyleClass().remove(styleClass);
+            miniButton.getStyleClass().remove(styleClass);
+            if (newLvl == level && !button.getStyleClass().contains(styleClass) && !miniButton.getStyleClass().contains(styleClass)) {
+                button.getStyleClass().add(styleClass);
+                miniButton.getStyleClass().add(styleClass);
+            }
+            StringBinding accessibleTextBinding = box.levelFormattedAccessibleText(accessibilityKey);
+            button.accessibleTextProperty().bind(accessibleTextBinding);
+            miniButton.accessibleTextProperty().bind(accessibleTextBinding);
+            Platform.runLater(() -> {
+                Tooltip tooltip = button.getTooltip();
+                Tooltip miniTooltip = miniButton.getTooltip();
+                if (tooltip != null && miniTooltip != null) {
+                    tooltip.textProperty().bind(accessibleTextBinding);
+                    miniTooltip.textProperty().bind(accessibleTextBinding);
+                }
+            });
+        });
+    }
+
+    /**
+     * Sets the difficulty level to EASY and updates the UI with a random percentage.
+     */
+    public void handleEasyLevelShow() {
+        difficultyLevel.set(DifficultyLevel.EASY);
+        menuMaxiHBoxEasyPossibilities.setHBoxPossibilityStarsFromPercentage(SecureRandomGenerator.INSTANCE.nextInt(10, 33));
+    }
+
+    /**
+     * Sets the difficulty level to MEDIUM and updates the UI with a random percentage.
+     */
+    public void handleMediumLevelShow() {
+        difficultyLevel.set(DifficultyLevel.MEDIUM);
+        menuMaxiHBoxMediumPossibilities.setHBoxPossibilityStarsFromPercentage(SecureRandomGenerator.INSTANCE.nextInt(34, 66));
+    }
+
+    /**
+     * Sets the difficulty level to DIFFICULT and updates the UI with a random percentage.
+     */
+    public void handleDifficultLevelShow() {
+        difficultyLevel.set(DifficultyLevel.DIFFICULT);
+        menuMaxiHBoxDifficultPossibilities.setHBoxPossibilityStarsFromPercentage(SecureRandomGenerator.INSTANCE.nextInt(67, 89));
+    }
 
     /**
      * Activates the MINI menu and hides it after 10 seconds if still active.
@@ -752,6 +797,4 @@ public final class DefaultView implements IMainView, ISceneProvider {
         iSplashScreenView.hideSplashScreen();
         primaryStage.setAlwaysOnTop(false);
     }
-
-
 }
