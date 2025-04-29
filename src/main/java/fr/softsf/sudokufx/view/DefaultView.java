@@ -620,18 +620,30 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 miniButton.getStyleClass().add(styleClass);
             }
             StringBinding accessibleTextBinding = box.levelFormattedAccessibleText(accessibilityKey);
+            button.accessibleTextProperty().unbind();
+            miniButton.accessibleTextProperty().unbind();
             button.accessibleTextProperty().bind(accessibleTextBinding);
             miniButton.accessibleTextProperty().bind(accessibleTextBinding);
             Platform.runLater(() -> {
-                Tooltip tooltip = button.getTooltip();
-                Tooltip miniTooltip = miniButton.getTooltip();
-                if (tooltip != null && miniTooltip != null) {
-                    tooltip.textProperty().bind(accessibleTextBinding);
-                    miniTooltip.textProperty().bind(accessibleTextBinding);
-                }
+                rebindTooltipText(button.getTooltip(), accessibleTextBinding);
+                rebindTooltipText(miniButton.getTooltip(), accessibleTextBinding);
             });
         });
     }
+
+    /**
+     * Helper method to rebind the text property of a tooltip safely.
+     *
+     * @param tooltip the tooltip to rebind
+     * @param binding the string binding to use
+     */
+    private void rebindTooltipText(Tooltip tooltip, StringBinding binding) {
+        if (tooltip != null) {
+            tooltip.textProperty().unbind();
+            tooltip.textProperty().bind(binding);
+        }
+    }
+
 
     /**
      * Sets the difficulty level to EASY and updates the UI with a random percentage.
