@@ -616,7 +616,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Activates the MINI menu and hides it after 10 seconds if still active.
      */
     public void handleMenuMiniShow() {
-        activeMenuOrSubmenuViewModel.setActiveMenu(null);
+        activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI);
         Timeline hideMenuTimeline = new Timeline(new KeyFrame(Duration.millis(10000), event -> {
             if (activeMenuOrSubmenuViewModel.getActiveMenu().get() == ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI) {
                 activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN);
