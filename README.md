@@ -37,6 +37,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
 - [Documentation](https://lob2018.github.io/SudokuFX/)
 - [Security](https://github.com/Lob2018/SudokuFX?tab=security-ov-file#readme)
 - [Project](#project)
+  - [Overview](#overview)
   - [Roadmap](#roadmap)
   - [Mockup](#mockup)
   - [Build with](#build-with)
@@ -143,6 +144,10 @@ To ensure the integrity of downloaded assets, import the GPG public key with `gp
 [^1]:Replace \<USERNAME\> with your currently logged-in username.
 
 ## Project
+
+### Overview
+
+Cross-platform desktop application developed in Java using JavaFX, Spring Boot, HSQLDB, Maven, and SonarCloud, following the Model-View-ViewModel (MVVM) architecture.
 
 ### Roadmap
 
