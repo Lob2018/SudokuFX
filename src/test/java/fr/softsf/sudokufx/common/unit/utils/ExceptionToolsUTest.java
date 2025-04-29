@@ -22,4 +22,14 @@ class ExceptionToolsUTest {
         SQLInvalidAuthorizationSpecException result = ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(t);
         assertNull(result);
     }
+
+    @Test
+    void givenMessage_whenLogAndThrowIllegalArgument_thenThrowsIllegalArgumentExceptionWithMessage() {
+        String message = "Invalid argument provided";
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> ExceptionTools.INSTANCE.logAndThrowIllegalArgument(message)
+        );
+        assertEquals(message, exception.getMessage());
+    }
 }

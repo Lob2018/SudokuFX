@@ -1,9 +1,9 @@
 package fr.softsf.sudokufx.viewmodel;
 
+import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import lombok.Getter;
-import org.springframework.stereotype.Component;
 
 /**
  * ViewModel responsible for managing the active menu in the application.
@@ -11,7 +11,6 @@ import org.springframework.stereotype.Component;
  * to control which menu is visible.
  */
 @Getter
-@Component
 public class ActiveMenuOrSubmenuViewModel {
 
     /**
@@ -27,8 +26,12 @@ public class ActiveMenuOrSubmenuViewModel {
      * Sets the active menu.
      *
      * @param menu The menu to set as active.
+     * @throws IllegalArgumentException if the menu is null.
      */
     public void setActiveMenu(ActiveMenu menu) {
+        if (menu == null) {
+            ExceptionTools.INSTANCE.logAndThrowIllegalArgument("ActiveMenu cannot be null. Please provide a valid menu value.");
+        }
         activeMenu.set(menu);
     }
 }
