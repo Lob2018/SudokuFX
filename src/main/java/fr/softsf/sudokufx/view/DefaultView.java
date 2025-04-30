@@ -581,14 +581,15 @@ public final class DefaultView implements IMainView, ISceneProvider {
     }
 
     /**
-     * Initializes UI bindings for a difficulty-level button, including visibility, accessibility text, tooltip,
-     * localized label, and dynamic styling based on the selected level and percentage.
+     * Configures UI bindings for a difficulty-level button with full accessibility and dynamic visual feedback.
+     * Supports screen readers and updates visibility, tooltips, labels, role description, and styling based on the selected level and percentage.
      *
      * <ul>
-     *   <li>Visibility binding: HBox is shown when the difficulty level matches.</li>
-     *   <li>Accessibility text binding: Button and mini button's accessible text are updated according to the selected level and percentage.</li>
-     *   <li>Tooltip binding: Tooltip text for button and mini button is updated with the accessibility text.</li>
-     *   <li>Button styling: Updates pseudo-class for selected state.</li>
+     *   <li><strong>Visibility binding:</strong> The HBox is visible only when the difficulty level matches the selected one.</li>
+     *   <li><strong>Accessible role description binding:</strong> Sets a localized description (e.g., "selected") on both buttons for screen readers when active.</li>
+     *   <li><strong>Accessibility text binding:</strong> Binds a computed, localized text including the difficulty level and percentage for screen readers.</li>
+     *   <li><strong>Tooltip binding:</strong> Tooltip text for both buttons is dynamically updated based on the accessibility text.</li>
+     *   <li><strong>Button styling:</strong> Applies a pseudo-class to visually indicate which difficulty level is selected.</li>
      * </ul>
      *
      * @param difficultyLevel      the difficulty level to configure
@@ -615,6 +616,11 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         .then(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
                         .otherwise((String) null)
         );
+        miniDifficultyButton.accessibleRoleDescriptionProperty().bind(
+                Bindings.when(possibilityStarsBox.visibleProperty())
+                        .then(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
+                        .otherwise((String) null)
+        );
         StringBinding accessibleTextBinding = Bindings.createStringBinding(
                 () -> possibilityStarsBox.levelFormattedAccessibleText(accessibilityKey).get(),
                 this.difficultyLevel,
@@ -630,7 +636,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
             miniDifficultyButton.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
         });
     }
-
 
     /**
      * Sets the difficulty level to EASY and updates the UI with a random percentage.
@@ -657,11 +662,11 @@ public final class DefaultView implements IMainView, ISceneProvider {
     }
 
     /**
-     * Activates the MINI menu and hides it after 10 seconds if still active.
+     * Activates the MINI menu and hides it after 15 seconds if still active.
      */
     public void handleMenuMiniShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI);
-        Timeline hideMenuTimeline = new Timeline(new KeyFrame(Duration.millis(10000), event -> {
+        Timeline hideMenuTimeline = new Timeline(new KeyFrame(Duration.millis(15000), event -> {
             if (activeMenuOrSubmenuViewModel.getActiveMenu().get() == ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI) {
                 activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN);
             }
