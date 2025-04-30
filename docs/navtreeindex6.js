@@ -1,9 +1,5 @@
 var NAVTREEINDEX6 =
 {
-"enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html":[1,0,0,0,0,3,1,4],
-"enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html":[2,0,0,0,0,3,1,4],
-"enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#a140d73845b9eb0c44fe8e28dc07cb81e":[1,0,0,0,0,3,1,4,2],
-"enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#a140d73845b9eb0c44fe8e28dc07cb81e":[2,0,0,0,0,3,1,4,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#aa6ebde8964ea06b1974f872569b6e347":[1,0,0,0,0,3,1,4,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#aa6ebde8964ea06b1974f872569b6e347":[2,0,0,0,0,3,1,4,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#aa8c593d8bc9d63063f5939fb5668269e":[1,0,0,0,0,3,1,4,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX6 =
 "functions_func_m.html":[2,3,1,10],
 "functions_func_n.html":[2,3,1,11],
 "functions_func_o.html":[2,3,1,12],
-"functions_func_p.html":[2,3,1,13]
+"functions_func_p.html":[2,3,1,13],
+"functions_func_r.html":[2,3,1,14],
+"functions_func_s.html":[2,3,1,15],
+"functions_func_t.html":[2,3,1,16],
+"functions_func_u.html":[2,3,1,17]
 };
