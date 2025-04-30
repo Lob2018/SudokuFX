@@ -70,7 +70,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel = new ActiveMenuOrSubmenuViewModel();
     private final ObjectProperty<DifficultyLevel> difficultyLevel = new SimpleObjectProperty<>(null);
-    private final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED = PseudoClass.getPseudoClass("selected");
+    private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED = PseudoClass.getPseudoClass("selected");
 
     @FXML
     private ToasterVBox toaster;
