@@ -1,5 +1,7 @@
 <map id="src/main/java/fr/softsf/sudokufx/exceptions/ExceptionTools.java" name="src/main/java/fr/softsf/sudokufx/exceptions/ExceptionTools.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="7,5,214,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,216,155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,64,113,97,108,97,108,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="86,5,294,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,167,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,66,112,111,109,107,158,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="190,112,400,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,62,264,100,260,104,219,66"/>
 </map>

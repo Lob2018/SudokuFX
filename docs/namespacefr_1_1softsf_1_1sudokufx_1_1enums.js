@@ -1,5 +1,6 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1enums =
 [
+    [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level" ],
     [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n" ],
     [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt" ],
     [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex" ],

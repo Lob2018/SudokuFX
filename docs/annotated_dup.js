@@ -62,6 +62,7 @@ var annotated_dup =
             [ "ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_object_mapper_config.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_object_mapper_config" ]
           ] ],
           [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1enums.html", [
+            [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level" ],
             [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n" ],
             [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt" ],
             [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex" ],
@@ -139,6 +140,7 @@ var annotated_dup =
                 [ "ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box" ]
               ] ],
               [ "MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert" ],
+              [ "PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box" ],
               [ "SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane" ]
             ] ],
             [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view" ],

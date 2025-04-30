@@ -1,5 +1,9 @@
 var NAVTREEINDEX2 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a02cd3a8643f3e8ef85670bf0eacc502d":[1,0,0,0,0,3,1,2,8],
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a02cd3a8643f3e8ef85670bf0eacc502d":[2,0,0,0,0,3,1,2,8],
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a18fc2b42d7160413f034229f02fb3001":[1,0,0,0,0,3,1,2,6],
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a18fc2b42d7160413f034229f02fb3001":[2,0,0,0,0,3,1,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a19f5c33c558c6604ef5b3a45cca23222":[1,0,0,0,0,3,1,2,11],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a19f5c33c558c6604ef5b3a45cca23222":[2,0,0,0,0,3,1,2,11],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a1cd5afd513804cfb585cfba63809f0d9":[1,0,0,0,0,3,1,2,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#a7310bf5cb6234dbca3c10e86de3db3df":[1,0,0,0,0,11,4,5],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#a7310bf5cb6234dbca3c10e86de3db3df":[2,0,0,0,0,10,4,5],
 "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#a87b8fc61eb005f33d51bb1aaa3f2093b":[1,0,0,0,0,11,4,2],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#a87b8fc61eb005f33d51bb1aaa3f2093b":[2,0,0,0,0,10,4,2],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#a91db4f43731d288f30e9ea9f4edaba7e":[1,0,0,0,0,11,4,8],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#a91db4f43731d288f30e9ea9f4edaba7e":[2,0,0,0,0,10,4,8],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#aa07628901caa2c2aeaef14dd9426479b":[1,0,0,0,0,11,4,1],
-"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#aa07628901caa2c2aeaef14dd9426479b":[2,0,0,0,0,10,4,1]
+"classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html#a87b8fc61eb005f33d51bb1aaa3f2093b":[2,0,0,0,0,10,4,2]
 };

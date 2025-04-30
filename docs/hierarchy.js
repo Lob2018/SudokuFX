@@ -19,6 +19,7 @@ var hierarchy =
     [ "Button", null, [
       [ "fr.softsf.sudokufx.view.components.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.enums.DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html", null ],
     [ "fr.softsf.sudokufx.utils.DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", null ],
     [ "fr.softsf.sudokufx.exceptions.ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1exceptions_1_1_exception_tools.html", null ],
     [ "fr.softsf.sudokufx.common.unit.utils.ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html", null ],
@@ -34,6 +35,9 @@ var hierarchy =
     [ "fr.softsf.sudokufx.utils.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_u_test.html", null ],
     [ "GridPane", null, [
       [ "fr.softsf.sudokufx.view.components.SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html", null ]
+    ] ],
+    [ "HBox", null, [
+      [ "fr.softsf.sudokufx.view.components.PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.configuration.HttpClientConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_http_client_config.html", null ],
     [ "fr.softsf.sudokufx.enums.I18n", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html", null ],

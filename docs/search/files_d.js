@@ -6,5 +6,6 @@ var searchData=
   ['playerlanguage_2ejava_3',['PlayerLanguage.java',['../_player_language_8java.html',1,'']]],
   ['playerlanguagedto_2ejava_4',['PlayerLanguageDto.java',['../_player_language_dto_8java.html',1,'']]],
   ['playerlanguagerepository_2ejava_5',['PlayerLanguageRepository.java',['../_player_language_repository_8java.html',1,'']]],
-  ['playerrepository_2ejava_6',['PlayerRepository.java',['../_player_repository_8java.html',1,'']]]
+  ['playerrepository_2ejava_6',['PlayerRepository.java',['../_player_repository_8java.html',1,'']]],
+  ['possibilitystarshbox_2ejava_7',['PossibilityStarsHBox.java',['../_possibility_stars_h_box_8java.html',1,'']]]
 ];

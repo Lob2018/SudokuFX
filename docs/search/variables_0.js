@@ -1,7 +1,7 @@
 var searchData=
 [
   ['activemenu_0',['activeMenu',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html#a80008cb72734384b3b45be72264578e5',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel']]],
-  ['activemenuorsubmenuviewmodel_1',['activeMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9ca4d62841a15113806fe6ecf1adab5f',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['activemenuorsubmenuviewmodel_1',['activeMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2d00aeef98aa95dece530ed23c24b6ba',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['alphanumeric_5fregex_2',['ALPHANUMERIC_REGEX',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test.html#aa82c82ce0cb7c62f7c188e46979bd787',1,'fr::softsf::sudokufx::configuration::JVMApplicationPropertiesUTest']]],
   ['alphanumericpattern_3',['alphanumericPattern',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#aa3aa9c2cf3d1c92e21b3eb1150a1bfac',1,'fr::softsf::sudokufx::enums::MyRegex']]],
   ['app_5flicense_5fproperty_4',['APP_LICENSE_PROPERTY',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#abaaf25ddc03e06618dc0acee101e117b',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],

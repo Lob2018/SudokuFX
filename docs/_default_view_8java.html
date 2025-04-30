@@ -106,22 +106,25 @@ $(function(){initNavTree('_default_view_8java.html',''); initResizable(true); })
 <div class="textblock"><code>import fr.softsf.sudokufx.SudoMain;</code><br />
 <code>import fr.softsf.sudokufx.configuration.JVMApplicationProperties;</code><br />
 <code>import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;</code><br />
-<code>import fr.softsf.sudokufx.enums.I18n;</code><br />
-<code>import fr.softsf.sudokufx.enums.Paths;</code><br />
-<code>import fr.softsf.sudokufx.enums.ScreenSize;</code><br />
-<code>import fr.softsf.sudokufx.enums.ToastLevels;</code><br />
+<code>import fr.softsf.sudokufx.enums.*;</code><br />
 <code>import fr.softsf.sudokufx.interfaces.IMainView;</code><br />
 <code>import fr.softsf.sudokufx.interfaces.ISceneProvider;</code><br />
 <code>import fr.softsf.sudokufx.interfaces.ISplashScreenView;</code><br />
 <code>import fr.softsf.sudokufx.view.components.MyAlert;</code><br />
+<code>import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;</code><br />
 <code>import fr.softsf.sudokufx.view.components.SpinnerGridPane;</code><br />
 <code>import fr.softsf.sudokufx.view.components.list.ItemListCell;</code><br />
 <code>import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;</code><br />
 <code>import javafx.animation.*;</code><br />
 <code>import javafx.application.Platform;</code><br />
+<code>import javafx.beans.binding.Bindings;</code><br />
 <code>import javafx.beans.binding.DoubleBinding;</code><br />
+<code>import javafx.beans.binding.StringBinding;</code><br />
+<code>import javafx.beans.property.ObjectProperty;</code><br />
+<code>import javafx.beans.property.SimpleObjectProperty;</code><br />
 <code>import javafx.concurrent.Task;</code><br />
+<code>import javafx.css.PseudoClass;</code><br />
 <code>import javafx.event.ActionEvent;</code><br />
 <code>import javafx.fxml.FXML;</code><br />
 <code>import javafx.geometry.Rectangle2D;</code><br />
@@ -133,7 +136,6 @@ $(function(){initNavTree('_default_view_8java.html',''); initResizable(true); })
 <code>import javafx.scene.layout.*;</code><br />
 <code>import javafx.scene.paint.Color;</code><br />
 <code>import javafx.scene.shape.Rectangle;</code><br />
-<code>import javafx.scene.text.Text;</code><br />
 <code>import javafx.stage.FileChooser;</code><br />
 <code>import javafx.stage.Screen;</code><br />
 <code>import javafx.stage.Stage;</code><br />
@@ -144,7 +146,6 @@ $(function(){initNavTree('_default_view_8java.html',''); initResizable(true); })
 <code>import java.io.File;</code><br />
 <code>import java.text.MessageFormat;</code><br />
 <code>import java.time.Year;</code><br />
-<code>import java.util.List;</code><br />
 <code>import java.util.Objects;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for DefaultView.java:</div>
@@ -171,7 +172,7 @@ Packages</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5eb159725f84c66aafd839904a4acdd0.html">main</a></li><li class="navelem"><a class="el" href="dir_fd3f6763802dee1ad875f6c80eac0bda.html">java</a></li><li class="navelem"><a class="el" href="dir_91390426c0f30a4fef59e9ae252d2f44.html">fr</a></li><li class="navelem"><a class="el" href="dir_df66706d7efa0a9fd8002f7f6346de3d.html">softsf</a></li><li class="navelem"><a class="el" href="dir_757e38ffca8cea164996faf0234210f9.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_664d5835105ddaaeb330d567537f6eef.html">view</a></li><li class="navelem"><a class="el" href="_default_view_8java.html">DefaultView.java</a></li>
-    <li class="footer">Generated on Mon Apr 28 2025 14:11:22 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Apr 30 2025 15:43:55 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

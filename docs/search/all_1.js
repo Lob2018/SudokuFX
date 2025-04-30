@@ -5,7 +5,7 @@ var searchData=
   ['activemenu_2',['ActiveMenu',['../enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel']]],
   ['activemenu_3',['activeMenu',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html#a80008cb72734384b3b45be72264578e5',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel']]],
   ['activemenuorsubmenuviewmodel_4',['ActiveMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
-  ['activemenuorsubmenuviewmodel_5',['activeMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9ca4d62841a15113806fe6ecf1adab5f',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['activemenuorsubmenuviewmodel_5',['activeMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2d00aeef98aa95dece530ed23c24b6ba',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['activemenuorsubmenuviewmodel_2ejava_6',['ActiveMenuOrSubmenuViewModel.java',['../_active_menu_or_submenu_view_model_8java.html',1,'']]],
   ['activity_20diagram_20for_20invalid_20authorization_7',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]],
   ['addgame_8',['addGame',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7690134cf62468d85216a67d1686dc7',1,'fr::softsf::sudokufx::model::Player']]],
