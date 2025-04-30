@@ -269,24 +269,24 @@
     -fx-background-color: rgba(255, 255, 255, 0.8);
 }
 
-.colorEasy {
-    -fx-background-color: #AAFF99;
+.subMenuOpened {
+    -fx-background-color: #DDDDDD;
 }
 
-.colorMedium {
-    -fx-background-color: #F1FF99;
+.colorEasy,.colorEasySelected:selected {
+    -fx-background-color: #AAFF99!important;
 }
 
-.colorDifficult {
-    -fx-background-color: #FEBE98;
+.colorMedium,.colorMediumSelected:selected {
+    -fx-background-color: #F1FF99!important;
+}
+
+.colorDifficult,.colorDifficultSelected:selected {
+    -fx-background-color: #FEBE98!important;
 }
 
 .colorResolve {
-    -fx-background-color: #99FFFF;
-}
-
-.subMenuOpened {
-    -fx-background-color: #DDDDDD;
+    -fx-background-color: #99FFFF!important;
 }
 
 .colorError {

@@ -76,7 +76,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonEasy" styleClass="menuMiniButton" onAction="#handleEasyLevelShow">
+            <Button fx:id="menuMiniButtonEasy" styleClass="menuMiniButton,colorEasySelected" onAction="#handleEasyLevelShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -89,7 +89,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonMedium" styleClass="menuMiniButton" onAction="#handleMediumLevelShow">
+            <Button fx:id="menuMiniButtonMedium" styleClass="menuMiniButton,colorMediumSelected" onAction="#handleMediumLevelShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -102,7 +102,7 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonDifficult" styleClass="menuMiniButton" onAction="#handleDifficultLevelShow">
+            <Button fx:id="menuMiniButtonDifficult" styleClass="menuMiniButton,colorDifficultSelected" onAction="#handleDifficultLevelShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -220,7 +220,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonEasy" styleClass="menuButton" onAction="#handleEasyLevelShow">
+                <Button fx:id="menuMaxiButtonEasy" styleClass="menuButton,colorEasySelected" onAction="#handleEasyLevelShow">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -241,7 +241,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonMedium" styleClass="menuButton" onAction="#handleMediumLevelShow">
+                <Button fx:id="menuMaxiButtonMedium" styleClass="menuButton,colorMediumSelected" onAction="#handleMediumLevelShow">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -262,7 +262,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonDifficult" styleClass="menuButton" onAction="#handleDifficultLevelShow">
+                <Button fx:id="menuMaxiButtonDifficult" styleClass="menuButton,colorDifficultSelected" onAction="#handleDifficultLevelShow">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">
@@ -462,7 +462,7 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSolveButtonSolve" styleClass="menuButton,subMenuOpened"
+                <Button fx:id="menuSolveButtonSolve" styleClass="menuButton,subMenuOpened,colorResolve"
                         onAction="#handleMenuMaxiShow">
                     <graphic>
                         <HBox>

@@ -8,6 +8,7 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
+import lombok.Getter;
 
 import java.text.MessageFormat;
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.List;
  */
 public class PossibilityStarsHBox extends HBox {
 
+    @Getter
     private final IntegerProperty percentage = new SimpleIntegerProperty(-1);
 
     /**
