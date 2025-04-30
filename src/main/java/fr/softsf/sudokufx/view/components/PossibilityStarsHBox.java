@@ -19,6 +19,8 @@ import java.util.List;
  * - Full star: \ue838
  * - Half star: \ue839
  * - Empty star: \ue83a
+ * This component also provides formatted accessibility and tooltip text
+ * bindings based on the current percentage and visibility.
  */
 public class PossibilityStarsHBox extends HBox {
 
@@ -34,7 +36,6 @@ public class PossibilityStarsHBox extends HBox {
         setAlignment(Pos.CENTER_RIGHT);
         getStyleClass().add("menuHBoxRightContainer");
         setVisible(false);
-
         String[] starClasses = {
                 "menuButtonLevelStar1",
                 "menuButtonLevelStar2",
@@ -42,7 +43,6 @@ public class PossibilityStarsHBox extends HBox {
                 "menuButtonLevelStar4",
                 "menuButtonLevelStar5"
         };
-
         for (String starClass : starClasses) {
             Text star = new Text("\uE83A");
             star.getStyleClass().addAll("material", "menuButtonLevelStar", starClass);
@@ -59,12 +59,10 @@ public class PossibilityStarsHBox extends HBox {
     public void setHBoxPossibilityStarsFromPercentage(int percentage) {
         this.percentage.set(percentage);
         double stars = Math.round(percentage * 0.1) / 2.0;
-
         List<Text> listTextsStars = getChildren().stream()
                 .filter(Text.class::isInstance)
                 .map(Text.class::cast)
                 .toList();
-
         for (int i = 0; i < listTextsStars.size(); i++) {
             if (stars >= i + 1) {
                 listTextsStars.get(i).setText("\ue838"); // Full star
@@ -77,45 +75,24 @@ public class PossibilityStarsHBox extends HBox {
     }
 
     /**
-     * Creates a string binding for the accessible text based on the current percentage.
-     * This will be used to set the accessible text of a button or other UI elements.
+     * Creates a string binding based on the current percentage and visibility.
+     * If the element is visible, a ".selected" suffix is added to the key.
+     * Optionally appends a role description at the end of the text.
      *
-     * @return A string binding with the formatted accessible text.
+     * @param accessibilityKey      Base i18n key for the text.
+     * @param appendRoleDescription Whether to append the role description.
+     * @return A string binding with the formatted text.
      */
-    public StringBinding solveFormattedAccessibleText(String accessibility) {
-        return Bindings.createStringBinding(() ->
-                MessageFormat.format(
-                        I18n.INSTANCE.getValue(accessibility), percentage.get()
-                ), percentage);
-    }
-
-    /**
-     * Creates a string binding for the tooltip text based on the current percentage.
-     * This will be used to set the tooltip of a button or other UI elements.
-     *
-     * @return A string binding with the formatted tooltip text.
-     */
-    public StringBinding solveFormattedTooltipText(String accessibility) {
-        return Bindings.createStringBinding(() ->
-                        MessageFormat.format(
-                                I18n.INSTANCE.getValue(accessibility), percentage.get()
-                        ) + I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"),
-                percentage);
-    }
-
-    /**
-     * Creates a string binding for the accessible text based on the current percentage and visibility (selected state).
-     * This will be used to set the accessible text of a button or other UI elements.
-     * The text is formatted with the provided accessibility key and appends the ".selected" suffix if the element is visible.
-     *
-     * @param accessibility The key for the accessibility text, which will be formatted with the current percentage and selected state.
-     * @return A string binding with the formatted accessible text based on the visibility of the element.
-     */
-    public StringBinding levelFormattedAccessibleText(String accessibility) {
-        return Bindings.createStringBinding(() ->
-                MessageFormat.format(
-                        I18n.INSTANCE.getValue(accessibility + (isVisible() ? ".selected" : "")), percentage.get()
-                ), percentage);
+    public StringBinding formattedTextBinding(String accessibilityKey, boolean appendRoleDescription) {
+        return Bindings.createStringBinding(() -> {
+            String key = isVisible() ? accessibilityKey + ".selected" : accessibilityKey;
+            String formattedText = MessageFormat.format(
+                    I18n.INSTANCE.getValue(key), percentage.get()
+            );
+            return appendRoleDescription
+                    ? formattedText + I18n.INSTANCE.getValue("menu.accessibility.role.description.opened")
+                    : formattedText;
+        }, percentage);
     }
 }
 

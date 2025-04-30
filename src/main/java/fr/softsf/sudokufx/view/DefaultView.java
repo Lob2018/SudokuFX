@@ -381,8 +381,8 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         menuSolveHBoxPossibilities.setVisible(true);
-        menuSolveButtonSolve.accessibleTextProperty().bind(menuSolveHBoxPossibilities.solveFormattedAccessibleText("menu.solve.button.solve.accessibility"));
-        menuSolveButtonSolve.getTooltip().textProperty().bind(menuSolveHBoxPossibilities.solveFormattedTooltipText("menu.solve.button.solve.accessibility"));
+        menuSolveButtonSolve.accessibleTextProperty().bind(menuSolveHBoxPossibilities.formattedTextBinding("menu.solve.button.solve.accessibility", false));
+        menuSolveButtonSolve.getTooltip().textProperty().bind(menuSolveHBoxPossibilities.formattedTextBinding("menu.solve.button.solve.accessibility", true));
         menuSolveButtonSolve.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuSolveButtonSolveText.setText(I18n.INSTANCE.getValue("menu.solve.button.solve.text"));
         //TODO test
@@ -622,7 +622,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         .otherwise((String) null)
         );
         StringBinding accessibleTextBinding = Bindings.createStringBinding(
-                () -> possibilityStarsBox.levelFormattedAccessibleText(accessibilityKey).get(),
+                () -> possibilityStarsBox.formattedTextBinding(accessibilityKey, false).get(),
                 this.difficultyLevel,
                 possibilityStarsBox.getPercentage()
         );
