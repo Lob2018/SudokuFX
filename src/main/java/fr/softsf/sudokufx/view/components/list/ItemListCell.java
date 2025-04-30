@@ -76,7 +76,7 @@ public final class ItemListCell extends ListCell<String> {
                 if (getItem() != null) {
                     confirmAndRemoveItem(getItem());
                 } else {
-                    log.warn("▒▒ getItem() returned null in ItemListCell button action.");
+                    log.warn("▓▓ getItem() returned null in ItemListCell button action.");
                 }
             });
         }

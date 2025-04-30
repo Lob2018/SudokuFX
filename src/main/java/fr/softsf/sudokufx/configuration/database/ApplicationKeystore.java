@@ -219,7 +219,7 @@ final class ApplicationKeystore implements IKeystore {
                 // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
                 System.out.println("GET alias - username - password - secret : " + alias + " - " + username + " - " + password);
             } else {
-                log.warn("▒▒ Entry is not an instance of the Keystore");
+                log.warn("▓▓ Entry is not an instance of the Keystore");
             }
         } catch (Exception e) {
             log.error("██ Exception catch inside getCredentials(alias) : {}", e.getMessage(), e);
