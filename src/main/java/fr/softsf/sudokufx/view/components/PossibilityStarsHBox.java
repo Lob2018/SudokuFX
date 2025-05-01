@@ -14,18 +14,16 @@ import java.text.MessageFormat;
 import java.util.List;
 
 /**
- * A custom HBox that displays star ratings based on a percentage value.
- * The star ratings are represented by Unicode characters:
+ * A custom HBox displaying star ratings based on a percentage value (default: 100%), with formatted accessibility and tooltip text.
+ * Stars are represented by Unicode characters:
  * - Full star: \ue838
  * - Half star: \ue839
  * - Empty star: \ue83a
- * This component also provides formatted accessibility and tooltip text
- * bindings based on the current percentage and visibility.
  */
 public class PossibilityStarsHBox extends HBox {
 
     @Getter
-    private final IntegerProperty percentage = new SimpleIntegerProperty(0);
+    private final IntegerProperty percentage = new SimpleIntegerProperty(100);
 
     /**
      * Constructor that sets the alignment, style, and visibility of the HBox.
@@ -44,7 +42,7 @@ public class PossibilityStarsHBox extends HBox {
                 "menuButtonLevelStar5"
         };
         for (String starClass : starClasses) {
-            Text star = new Text("\uE83A");
+            Text star = new Text("\uE838");
             star.getStyleClass().addAll("material", "menuButtonLevelStar", starClass);
             getChildren().add(star);
         }
