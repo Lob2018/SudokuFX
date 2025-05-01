@@ -25,7 +25,7 @@ import java.util.List;
 public class PossibilityStarsHBox extends HBox {
 
     @Getter
-    private final IntegerProperty percentage = new SimpleIntegerProperty(-1);
+    private final IntegerProperty percentage = new SimpleIntegerProperty(0);
 
     /**
      * Constructor that sets the alignment, style, and visibility of the HBox.

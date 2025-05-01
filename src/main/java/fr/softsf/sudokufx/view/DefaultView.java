@@ -310,10 +310,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 "menu.maxi.button.difficult.accessibility",
                 "menu.maxi.button.difficult.text",
                 menuMiniButtonDifficult);
-        // TODO : FORCE DEFAULT LEVEL
-        menuMaxiHBoxEasyPossibilities.setHBoxPossibilityStarsFromPercentage(25);
-        difficultyLevel.set(DifficultyLevel.EASY);
-
 
         menuMaxiButtonSolve.setAccessibleText(I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
         menuMaxiButtonSolve.getTooltip().setText(I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
@@ -385,8 +381,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuSolveButtonSolve.getTooltip().textProperty().bind(menuSolveHBoxPossibilities.formattedTextBinding("menu.solve.button.solve.accessibility", true));
         menuSolveButtonSolve.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuSolveButtonSolveText.setText(I18n.INSTANCE.getValue("menu.solve.button.solve.text"));
-        //TODO test
-        menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(45);
 
         menuSolveButtonSolveClear.setAccessibleText(I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility"));
         menuSolveButtonSolveClear.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
@@ -640,7 +634,10 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Sets the difficulty level to EASY and updates the UI with a random percentage.
      */
     public void handleEasyLevelShow() {
-        menuMaxiHBoxEasyPossibilities.setHBoxPossibilityStarsFromPercentage(SecureRandomGenerator.INSTANCE.nextInt(10, 33));
+        // TODO WITH TRUE GRID
+        int randomTest = SecureRandomGenerator.INSTANCE.nextInt(10, 33);
+        menuMaxiHBoxEasyPossibilities.setHBoxPossibilityStarsFromPercentage(randomTest);
+        menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(randomTest);
         difficultyLevel.set(DifficultyLevel.EASY);
     }
 
@@ -648,7 +645,10 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Sets the difficulty level to MEDIUM and updates the UI with a random percentage.
      */
     public void handleMediumLevelShow() {
-        menuMaxiHBoxMediumPossibilities.setHBoxPossibilityStarsFromPercentage(SecureRandomGenerator.INSTANCE.nextInt(34, 66));
+        // TODO WITH TRUE GRID
+        int randomTest = SecureRandomGenerator.INSTANCE.nextInt(34, 66);
+        menuMaxiHBoxMediumPossibilities.setHBoxPossibilityStarsFromPercentage(randomTest);
+        menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(randomTest);
         difficultyLevel.set(DifficultyLevel.MEDIUM);
     }
 
@@ -656,7 +656,10 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * Sets the difficulty level to DIFFICULT and updates the UI with a random percentage.
      */
     public void handleDifficultLevelShow() {
-        menuMaxiHBoxDifficultPossibilities.setHBoxPossibilityStarsFromPercentage(SecureRandomGenerator.INSTANCE.nextInt(67, 89));
+        // TODO WITH TRUE GRID
+        int randomTest = SecureRandomGenerator.INSTANCE.nextInt(67, 89);
+        menuMaxiHBoxDifficultPossibilities.setHBoxPossibilityStarsFromPercentage(randomTest);
+        menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(randomTest);
         difficultyLevel.set(DifficultyLevel.DIFFICULT);
     }
 
