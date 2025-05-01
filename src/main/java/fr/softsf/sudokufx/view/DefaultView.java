@@ -285,7 +285,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuMaxiButtonPlayer.getTooltip().setText(MessageFormat.format(I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"), playerName) + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayer.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayerText.setText(playerName);
-        initializeDifficultyButton(
+        initializeLevelToggle(
                 DifficultyLevel.EASY,
                 menuMaxiHBoxEasyPossibilities,
                 menuMaxiButtonEasy,
@@ -294,7 +294,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 "menu.maxi.button.easy.text",
                 menuMiniButtonEasy
         );
-        initializeDifficultyButton(
+        initializeLevelToggle(
                 DifficultyLevel.MEDIUM,
                 menuMaxiHBoxMediumPossibilities,
                 menuMaxiButtonMedium,
@@ -302,7 +302,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 "menu.maxi.button.medium.accessibility",
                 "menu.maxi.button.medium.text",
                 menuMiniButtonMedium);
-        initializeDifficultyButton(
+        initializeLevelToggle(
                 DifficultyLevel.DIFFICULT,
                 menuMaxiHBoxDifficultPossibilities,
                 menuMaxiButtonDifficult,
@@ -581,59 +581,58 @@ public final class DefaultView implements IMainView, ISceneProvider {
     }
 
     /**
-     * Configures UI bindings for a difficulty-level button with full accessibility and dynamic visual feedback.
-     * Supports screen readers and updates visibility, tooltips, labels, role description, and styling based on the selected level and percentage.
+     * Configures UI bindings for a difficulty-level toggle in both the maxi and mini menus.
+     * Applies visibility, accessibility, tooltip, and styling updates based on the selected level.
      *
      * <ul>
-     *   <li><strong>Visibility binding:</strong> The HBox is visible only when the difficulty level matches the selected one.</li>
-     *   <li><strong>Accessible role description binding:</strong> Sets a localized description (e.g., "selected") on both buttons for screen readers when active.</li>
-     *   <li><strong>Accessibility text binding:</strong> Binds a computed, localized text including the difficulty level and percentage for screen readers.</li>
-     *   <li><strong>Tooltip binding:</strong> Tooltip text for both buttons is dynamically updated based on the accessibility text.</li>
-     *   <li><strong>Button styling:</strong> Applies a pseudo-class to visually indicate which difficulty level is selected.</li>
+     *   <li><strong>Visibility:</strong> Shows stars only when this level is selected.</li>
+     *   <li><strong>Accessibility:</strong> Updates role description and accessible text for screen readers.</li>
+     *   <li><strong>Tooltips:</strong> Synced with accessible text.</li>
+     *   <li><strong>Styling:</strong> Applies selected pseudo-class to both buttons.</li>
      * </ul>
      *
-     * @param difficultyLevel      the difficulty level to configure
-     * @param possibilityStarsBox  the HBox containing the possibility stars for the difficulty level
-     * @param difficultyButton     the main button for the difficulty level
-     * @param difficultyLabel      the label displaying the difficulty level's name
-     * @param accessibilityKey     the I18n key for the accessibility text
-     * @param labelKey             the I18n key for the button's localized label text
-     * @param miniDifficultyButton the mini button associated with the difficulty level
+     * @param difficultyLevel       the difficulty level to configure
+     * @param possibilityStarsBox   container showing stars for this level
+     * @param maxiLevel             button in the maxi menu
+     * @param levelName             label showing the level's name (maxi menu)
+     * @param levelAccessibilityKey I18n key for accessibility text
+     * @param levelNameKey          I18n key for the level name
+     * @param miniLevel             button in the mini menu
      */
-    private void initializeDifficultyButton(DifficultyLevel difficultyLevel,
-                                            PossibilityStarsHBox possibilityStarsBox,
-                                            Button difficultyButton,
-                                            Label difficultyLabel,
-                                            String accessibilityKey,
-                                            String labelKey,
-                                            Button miniDifficultyButton) {
-        difficultyLabel.setText(I18n.INSTANCE.getValue(labelKey));
+    private void initializeLevelToggle(DifficultyLevel difficultyLevel,
+                                       PossibilityStarsHBox possibilityStarsBox,
+                                       Button maxiLevel,
+                                       Label levelName,
+                                       String levelAccessibilityKey,
+                                       String levelNameKey,
+                                       Button miniLevel) {
+        levelName.setText(I18n.INSTANCE.getValue(levelNameKey));
         possibilityStarsBox.visibleProperty().bind(
                 Bindings.createBooleanBinding(() -> this.difficultyLevel.get() == difficultyLevel, this.difficultyLevel)
         );
-        difficultyButton.accessibleRoleDescriptionProperty().bind(
+        maxiLevel.accessibleRoleDescriptionProperty().bind(
                 Bindings.when(possibilityStarsBox.visibleProperty())
                         .then(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
                         .otherwise((String) null)
         );
-        miniDifficultyButton.accessibleRoleDescriptionProperty().bind(
+        miniLevel.accessibleRoleDescriptionProperty().bind(
                 Bindings.when(possibilityStarsBox.visibleProperty())
                         .then(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
                         .otherwise((String) null)
         );
         StringBinding accessibleTextBinding = Bindings.createStringBinding(
-                () -> possibilityStarsBox.formattedTextBinding(accessibilityKey, false).get(),
+                () -> possibilityStarsBox.formattedTextBinding(levelAccessibilityKey, false).get(),
                 this.difficultyLevel,
                 possibilityStarsBox.getPercentage()
         );
-        difficultyButton.accessibleTextProperty().bind(accessibleTextBinding);
-        miniDifficultyButton.accessibleTextProperty().bind(accessibleTextBinding);
-        difficultyButton.getTooltip().textProperty().bind(accessibleTextBinding);
-        miniDifficultyButton.getTooltip().textProperty().bind(accessibleTextBinding);
+        maxiLevel.accessibleTextProperty().bind(accessibleTextBinding);
+        miniLevel.accessibleTextProperty().bind(accessibleTextBinding);
+        maxiLevel.getTooltip().textProperty().bind(accessibleTextBinding);
+        miniLevel.getTooltip().textProperty().bind(accessibleTextBinding);
         this.difficultyLevel.addListener((obs, oldLvl, newLvl) -> {
             boolean isThisLevel = newLvl == difficultyLevel;
-            difficultyButton.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
-            miniDifficultyButton.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
+            maxiLevel.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
+            miniLevel.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
         });
     }
 
