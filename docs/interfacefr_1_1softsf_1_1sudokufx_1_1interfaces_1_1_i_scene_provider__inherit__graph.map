@@ -1,13 +1,13 @@
 <map id="fr.softsf.sudokufx.interfaces.ISceneProvider" name="fr.softsf.sudokufx.interfaces.ISceneProvider">
 <area shape="rect" id="Node000001" title="Interface ISceneProvider." alt="" coords="496,5,673,91"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="5,875,238,1099"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,67,414,80,346,97,289,117,268,128,253,141,221,180,193,223,170,269,150,316,121,415,103,517,95,618,94,713,99,800,107,875,101,875,94,801,89,713,90,618,98,517,115,414,145,314,165,266,189,221,217,177,249,137,265,124,287,112,345,92,413,75,481,62"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="263,893,432,1080"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="485,99,463,118,445,140,419,186,397,234,363,335,340,439,327,544,323,645,324,740,336,893,331,894,318,740,317,645,322,544,335,438,358,333,392,232,415,183,441,137,459,114,482,95"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="456,536,714,1437"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="587,105,587,536,582,536,582,105"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="737,139,1029,1835"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="687,96,709,115,728,137,739,155,735,158,724,140,706,119,684,100"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html" title="View class for the full menu screen of the Sudoku application." alt="" coords="1054,709,1252,1264"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="689,53,788,63,893,79,984,103,1019,119,1044,137,1091,197,1129,264,1157,336,1177,410,1189,487,1196,563,1198,638,1195,710,1190,709,1192,638,1191,564,1184,488,1171,412,1152,337,1124,266,1087,200,1040,141,1017,123,983,108,892,85,787,68,688,58"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="5,867,238,1091"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="482,67,414,80,346,97,289,117,268,128,253,141,221,180,194,222,171,267,151,314,122,412,104,513,96,612,95,707,100,793,107,867,102,867,94,793,90,707,91,612,99,512,116,411,146,312,166,265,189,220,217,177,249,137,265,124,287,112,345,92,413,75,481,62"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="263,885,432,1072"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="485,99,463,118,445,140,420,185,398,233,363,333,341,436,328,540,323,640,324,733,336,886,331,886,319,733,318,640,323,539,336,435,358,331,393,231,415,183,441,137,459,114,482,95"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="456,528,714,1429"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="587,105,587,528,582,528,582,105"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="737,139,1029,1819"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="687,96,709,115,728,137,740,155,735,158,724,140,706,119,684,100"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html" title="View class for the full menu screen of the Sudoku application." alt="" coords="1054,701,1252,1256"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="689,53,788,63,893,79,984,103,1019,119,1044,137,1091,196,1128,262,1156,333,1175,406,1188,482,1195,557,1197,631,1195,702,1189,702,1192,631,1190,558,1183,483,1170,408,1151,334,1123,264,1086,199,1040,141,1017,123,983,108,892,85,787,68,688,58"/>
 </map>

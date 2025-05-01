@@ -12,7 +12,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "handleMenuPlayerShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a0252b73c4c4584a1e6bedefa1e01a89d", null ],
     [ "handleMenuSolveShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#abc726938d8cad6af8aec306f9b0b9a3f", null ],
     [ "initialize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9a576a87b5eaf00c2bd1095be8e17eeb", null ],
-    [ "initializeDifficultyButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af9e33f026dceb98edac035cff50f39da", null ],
+    [ "initializeLevelToggle", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a8e1b11c92e0776fffce0bbcc62e8b482", null ],
     [ "intToColor", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3109aef2552d7f2e9738a1895b5d7401", null ],
     [ "openingConfigureStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a4269b183d120ae7149f854d53d35f122", null ],
     [ "openingFadeIn", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af55fdc91ebfb197196789c140b5c091a", null ],

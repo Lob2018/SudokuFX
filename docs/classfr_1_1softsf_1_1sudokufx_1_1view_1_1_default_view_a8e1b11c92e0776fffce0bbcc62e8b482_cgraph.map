@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.DefaultView.initializeLevelToggle" name="fr.softsf.sudokufx.view.DefaultView.initializeLevelToggle">
+<area shape="rect" id="Node000001" title="Configures UI bindings for a difficulty&#45;level toggle in both the maxi and mini menus." alt="" coords="5,5,217,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#ae6fca9d929abf2f6009d615bf270fb24" title="Creates a string binding based on the current percentage and visibility." alt="" coords="265,5,537,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,24,249,24,249,29,217,29"/>
+</map>
