@@ -16,7 +16,7 @@ class ApplicationKeystoreITest {
     private static String userInit;
     private final ApplicationKeystore keystore;
 
-    @Autowired
+     @Autowired
     public ApplicationKeystoreITest(ApplicationKeystore keystore) {
         this.keystore = keystore;
     }

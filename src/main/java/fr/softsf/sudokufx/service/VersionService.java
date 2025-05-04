@@ -47,7 +47,6 @@ public class VersionService {
      * @param httpClient the HttpClient used to perform HTTP requests.
      * @param myDateTime the MyDateTime used to date and time operations.
      */
-    @Autowired
     public VersionService(HttpClient httpClient, MyDateTime myDateTime, ObjectMapper objectMapper) {
         this.httpClient = httpClient;
         this.myDateTime = myDateTime;

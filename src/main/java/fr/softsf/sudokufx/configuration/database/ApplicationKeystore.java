@@ -41,7 +41,6 @@ final class ApplicationKeystore implements IKeystore {
     private String username;
     private String password;
 
-    @Autowired
     public ApplicationKeystore(IOsFolderFactory iOsFolderFactory, GenerateSecret generateSecret) {
         this.iOsFolderFactory = iOsFolderFactory;
         this.generateSecret = generateSecret;

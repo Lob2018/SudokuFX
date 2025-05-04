@@ -28,7 +28,6 @@ public class FullMenuViewModel {
     private final StringProperty githubVersion = new SimpleStringProperty("");
     private StringProperty welcome;
 
-    @Autowired
     public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster, VersionService versionService) {
         this.softwareService = softwareService;
         this.iGridMaster = iGridMaster;

@@ -17,7 +17,6 @@ public class SoftwareService {
 
     private final SoftwareRepository softwareRepository;
 
-    @Autowired
     public SoftwareService(SoftwareRepository softwareRepository) {
         this.softwareRepository = softwareRepository;
     }
