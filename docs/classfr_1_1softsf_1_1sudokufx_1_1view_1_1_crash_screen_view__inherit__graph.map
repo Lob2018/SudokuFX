@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.view.CrashScreenView" name="fr.softsf.sudokufx.view.CrashScreenView">
-<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="105,171,363,1072"/>
+<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="105,171,363,1093"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="5,5,235,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,137,144,170,139,171,132,138"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,137,144,171,139,172,132,138"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="260,21,437,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="339,122,329,171,324,170,334,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="340,122,330,171,324,170,334,121"/>
 </map>

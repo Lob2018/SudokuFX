@@ -1,11 +1,13 @@
 <map id="src/main/java/fr/softsf/sudokufx/enums/I18n.java" name="src/main/java/fr/softsf/sudokufx/enums/I18n.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="237,5,415,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,167,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,51,135,101,134,96,269,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="190,104,299,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="309,50,268,94,264,91,305,47"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="323,96,494,139"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="347,47,381,83,377,87,343,50"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="519,104,685,131"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="392,46,549,96,547,101,390,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="283,5,462,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,116,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,51,128,99,117,102,116,96,126,93,296,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="139,104,294,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="337,51,253,98,251,94,335,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="318,104,427,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="375,48,375,88,370,88,370,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="451,96,622,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="412,46,486,86,484,91,410,51"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="647,104,813,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="457,46,665,97,663,102,456,51"/>
 </map>

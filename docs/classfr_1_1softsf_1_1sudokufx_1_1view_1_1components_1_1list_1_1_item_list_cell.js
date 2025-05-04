@@ -10,5 +10,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_ce
     [ "confirmationTitle", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#add88b2ee8698d459fc59855621967c96", null ],
     [ "hBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a2c0b7a8b542930d7b541c88f72a9683a", null ],
     [ "label", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#ae4fccf4d5c250dc8b694ad84a2166cfb", null ],
-    [ "listView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a1fa0d2a414c6c60ef71040efefacddcc", null ]
+    [ "listView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a1fa0d2a414c6c60ef71040efefacddcc", null ],
+    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#aaf89a3011d2ea44caa89bd4a00082200", null ]
 ];

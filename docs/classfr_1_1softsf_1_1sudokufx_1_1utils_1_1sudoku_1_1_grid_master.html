@@ -133,6 +133,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a149c25dfa7503f608c47688cfec7e59f" id="r_a149c25dfa7503f608c47688cfec7e59f"><td class="memItemLeft" align="right" valign="top">int[][]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a149c25dfa7503f608c47688cfec7e59f">creerLesGrilles</a> (final int niveau)</td></tr>
 <tr class="memdesc:a149c25dfa7503f608c47688cfec7e59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.  <br /></td></tr>
 <tr class="separator:a149c25dfa7503f608c47688cfec7e59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7514907cb0c869355819183796404a" id="r_a0f7514907cb0c869355819183796404a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f7514907cb0c869355819183796404a">getMoyenMaxPossibilites</a> ()</td></tr>
+<tr class="separator:a0f7514907cb0c869355819183796404a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8053f1175129c14d018cb0035b42af5b" id="r_a8053f1175129c14d018cb0035b42af5b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8053f1175129c14d018cb0035b42af5b">getMoyenMinPossibilites</a> ()</td></tr>
+<tr class="separator:a8053f1175129c14d018cb0035b42af5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ddda731cd64c249d2b6bf061fc5732" id="r_ad9ddda731cd64c249d2b6bf061fc5732"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9ddda731cd64c249d2b6bf061fc5732">resoudreLaGrille</a> (final int[] grille)</td></tr>
 <tr class="separator:ad9ddda731cd64c249d2b6bf061fc5732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9ddda731cd64c249d2b6bf061fc5732" id="r_ad9ddda731cd64c249d2b6bf061fc5732"><td class="memItemLeft" align="right" valign="top">int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9ddda731cd64c249d2b6bf061fc5732">resoudreLaGrille</a> (final int[] grille)</td></tr>
@@ -234,6 +238,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a287e5365164fdf3c0152fd46fbac7016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50d75c5f6878c2f09cf45cdb85a4f340" id="r_a50d75c5f6878c2f09cf45cdb85a4f340"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50d75c5f6878c2f09cf45cdb85a4f340">FACILE_MOY_CACHEES</a> = (<a class="el" href="#a287e5365164fdf3c0152fd46fbac7016">FACILE_MIN_CACHEES</a> + <a class="el" href="#a5a1fa080d46674f7802a342b95806f9f">MOYEN_MIN_CACHEES</a>) / 2</td></tr>
 <tr class="separator:a50d75c5f6878c2f09cf45cdb85a4f340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13623c16def618feb2b5cfee1c0dc0e2" id="r_a13623c16def618feb2b5cfee1c0dc0e2"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a13623c16def618feb2b5cfee1c0dc0e2">log</a> = LoggerFactory.getLogger(IGridMaster.class)</td></tr>
+<tr class="separator:a13623c16def618feb2b5cfee1c0dc0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ebea586bc35752cc744c208be17e984" id="r_a3ebea586bc35752cc744c208be17e984"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ebea586bc35752cc744c208be17e984">MOYEN_MAX_CACHEES</a> = 50</td></tr>
 <tr class="separator:a3ebea586bc35752cc744c208be17e984"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a1fa080d46674f7802a342b95806f9f" id="r_a5a1fa080d46674f7802a342b95806f9f"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a1fa080d46674f7802a342b95806f9f">MOYEN_MIN_CACHEES</a> = 45</td></tr>
@@ -541,6 +547,40 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_ae857c040b7e4c03981660d8cd0383f1f_cgraph.svg" width="100%" height="464"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
+
+</div>
+</div>
+<a id="a0f7514907cb0c869355819183796404a" name="a0f7514907cb0c869355819183796404a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f7514907cb0c869355819183796404a">&#9670;&#160;</a></span>getMoyenMaxPossibilites()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.utils.sudoku.GridMaster.getMoyenMaxPossibilites </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8053f1175129c14d018cb0035b42af5b" name="a8053f1175129c14d018cb0035b42af5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8053f1175129c14d018cb0035b42af5b">&#9670;&#160;</a></span>getMoyenMinPossibilites()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.utils.sudoku.GridMaster.getMoyenMinPossibilites </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1364,6 +1404,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a13623c16def618feb2b5cfee1c0dc0e2" name="a13623c16def618feb2b5cfee1c0dc0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13623c16def618feb2b5cfee1c0dc0e2">&#9670;&#160;</a></span>log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Logger fr.softsf.sudokufx.utils.sudoku.GridMaster.log = LoggerFactory.getLogger(IGridMaster.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3ebea586bc35752cc744c208be17e984" name="a3ebea586bc35752cc744c208be17e984"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ebea586bc35752cc744c208be17e984">&#9670;&#160;</a></span>MOYEN_MAX_CACHEES</h2>
 
@@ -1528,7 +1590,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html">sudoku</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a></li>
-    <li class="footer">Generated on Thu May 1 2025 11:02:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun May 4 2025 22:21:05 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

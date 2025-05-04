@@ -1,7 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/enums/SecureRandomGenerator.java" name="src/main/java/fr/softsf/sudokufx/enums/SecureRandomGenerator.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="77,5,292,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,167,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="155,66,113,103,109,100,151,62"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="190,112,379,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,62,261,100,257,104,215,66"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="109,5,324,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,116,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="167,67,97,106,95,102,165,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="139,112,294,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="219,64,219,96,214,96,214,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="318,112,507,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="281,62,372,103,370,108,279,67"/>
 </map>

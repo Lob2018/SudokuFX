@@ -26,7 +26,8 @@
 <polygon fill="#999999" stroke="none" points="204.75,-144 0,-144 0,0 204.75,0 204.75,-144"/>
 <text text-anchor="start" x="52.12" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
 <text text-anchor="start" x="58.88" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">FileSystemManager</text>
-<text text-anchor="start" x="100.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="5.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
 <text text-anchor="start" x="4" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean deleteFolderRecursively</text>
 <text text-anchor="start" x="14" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Path folderPath, final</text>
@@ -38,7 +39,8 @@
 <text text-anchor="start" x="14" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Throwable deleteFile</text>
 <text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final Path path)</text>
 <polygon fill="#666666" stroke="#666666" points="0,-114 0,-114 204.75,-114 204.75,-114 0,-114"/>
-<polygon fill="#666666" stroke="#666666" points="0,-98 0,-98 204.75,-98 204.75,-98 0,-98"/>
+<polygon fill="#666666" stroke="#666666" points="0,-98 0,-98 12,-98 12,-98 0,-98"/>
+<polygon fill="#666666" stroke="#666666" points="12,-98 12,-98 204.75,-98 204.75,-98 12,-98"/>
 <polygon fill="none" stroke="#666666" points="0,0 0,-144 204.75,-144 204.75,0 0,0"/>
 </a>
 </g>

@@ -12,6 +12,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view =
     [ "fullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#af76aab736d4e01bceefbd143da7e701b", null ],
     [ "fxmlService", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a56571fe0fac489e671acaa112b3e0e87", null ],
     [ "githubVersion", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a3e1634aecf51a729e607827461a4e6ea", null ],
+    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a7cd3f6b0a0dc0c076e37d1c82708b230", null ],
     [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ab83abbb2a428135c6727ebf7293f9ccc", null ],
     [ "text1", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a62bb4e5483fa55703a94077290310289", null ],
     [ "text2", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ae93f5b019e0e1e5bc4a396e7eb93e071", null ],

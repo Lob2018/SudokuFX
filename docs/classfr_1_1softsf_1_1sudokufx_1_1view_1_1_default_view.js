@@ -27,6 +27,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aafcfec62364da9ede2395f5e289b74a0", null ],
     [ "INFORMATION_ALERT", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a4414f534b1538e05ac1aa503f272e863", null ],
     [ "iOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a09d186a5765bcd4ff8d0f00d8f3ab527", null ],
+    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#afc777bdc926cb53a55055240675bf049", null ],
     [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a8df4c6a576470f1a4a798209b0c74989", null ],
     [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aedeb29accc3c2e7c3130af2d9b457b30", null ],
     [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2c5ac54b68441173ab4e73039cb9fdf9", null ],

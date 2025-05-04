@@ -6,10 +6,11 @@ var searchData=
   ['securerandomgenerator_3',['SecureRandomGenerator',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html',1,'fr::softsf::sudokufx::enums']]],
   ['securerandomgeneratorutest_4',['SecureRandomGeneratorUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test.html',1,'fr::softsf::sudokufx::utils']]],
   ['software_5',['Software',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html',1,'fr::softsf::sudokufx::model']]],
-  ['softwarerepository_6',['SoftwareRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html',1,'fr::softsf::sudokufx::repository']]],
-  ['softwareservice_7',['SoftwareService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html',1,'fr::softsf::sudokufx::service']]],
-  ['softwareserviceutest_8',['SoftwareServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html',1,'fr::softsf::sudokufx::common::unit::service']]],
-  ['spinnergridpane_9',['SpinnerGridPane',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html',1,'fr::softsf::sudokufx::view::components']]],
-  ['splashscreenview_10',['SplashScreenView',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html',1,'fr::softsf::sudokufx::view']]],
-  ['sudomain_11',['SudoMain',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html',1,'fr::softsf::sudokufx']]]
+  ['softwarebuilder_6',['SoftwareBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software_1_1_software_builder.html',1,'fr::softsf::sudokufx::model::Software']]],
+  ['softwarerepository_7',['SoftwareRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html',1,'fr::softsf::sudokufx::repository']]],
+  ['softwareservice_8',['SoftwareService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html',1,'fr::softsf::sudokufx::service']]],
+  ['softwareserviceutest_9',['SoftwareServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html',1,'fr::softsf::sudokufx::common::unit::service']]],
+  ['spinnergridpane_10',['SpinnerGridPane',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html',1,'fr::softsf::sudokufx::view::components']]],
+  ['splashscreenview_11',['SplashScreenView',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html',1,'fr::softsf::sudokufx::view']]],
+  ['sudomain_12',['SudoMain',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html',1,'fr::softsf::sudokufx']]]
 ];

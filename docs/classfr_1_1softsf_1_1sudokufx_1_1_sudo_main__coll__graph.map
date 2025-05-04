@@ -1,16 +1,16 @@
 <map id="fr.softsf.sudokufx.SudoMain" name="fr.softsf.sudokufx.SudoMain">
-<area shape="rect" id="Node000001" title="Main entry point for the Sudo application, responsible for initializing the JavaFX interface and the ..." alt="" coords="184,657,429,1095"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,457,80,527"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,539,94,592,139,659,187,724,182,727,134,662,90,595,61,542"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html" title="Interface defining methods to hide or show the splash screen." alt="" coords="104,439,282,545"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="211,544,240,640,235,642,206,546"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="306,433,536,551"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="407,551,379,642,374,640,402,550"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="560,391,754,593"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="568,595,443,731,439,727,564,591"/>
-<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="543,5,721,91"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="636,105,644,327,649,391,644,391,639,327,630,106"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="653,140,822,327"/>
-<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="665,102,687,139,682,141,661,105"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="711,327,696,376,691,374,706,326"/>
+<area shape="rect" id="Node000001" title="Main entry point for the Sudo application, responsible for initializing the JavaFX interface and the ..." alt="" coords="184,700,429,1180"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,489,80,559"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="64,571,94,635,139,707,187,777,182,780,134,710,90,637,59,574"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html" title="Interface defining methods to hide or show the splash screen." alt="" coords="104,471,282,577"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="210,577,239,683,234,684,205,578"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="306,465,536,583"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="408,583,380,684,375,683,403,582"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="560,412,754,636"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="566,637,442,783,438,780,562,634"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="540,5,718,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="632,106,635,218,641,348,647,412,642,413,636,348,630,218,627,106"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="650,140,838,348"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="664,102,685,139,681,141,659,105"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="715,349,700,396,694,395,709,347"/>
 </map>

@@ -1,33 +1,33 @@
 <map id="fr.softsf.sudokufx.view.FullMenuView" name="fr.softsf.sudokufx.view.FullMenuView">
-<area shape="rect" id="Node000001" title="View class for the full menu screen of the Sudoku application." alt="" coords="308,1543,506,2017"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="5,1079,235,1196"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,1209,190,1353,221,1436,256,1518,310,1621,306,1623,251,1520,216,1438,185,1355,138,1211"/>
+<area shape="rect" id="Node000001" title="View class for the full menu screen of the Sudoku application." alt="" coords="316,1564,514,2060"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="5,1100,235,1217"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,1230,190,1375,221,1458,256,1539,318,1656,314,1658,251,1541,216,1460,185,1377,138,1232"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="234,175,412,260"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,275,292,474,279,613,268,772,263,943,265,1122,277,1302,300,1478,315,1542,310,1544,295,1479,271,1303,260,1122,258,943,263,772,273,613,286,473,312,275"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="310,1036,504,1239"/>
-<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="327,275,334,476,351,732,370,892,392,1036,387,1037,365,893,346,732,328,477,321,275"/>
-<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="360,452,529,639"/>
-<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="346,273,413,451,408,453,341,275"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html" title="FullMenuViewModel with business logic (not final)" alt="" coords="528,913,790,1361"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="574,1362,509,1528,504,1526,569,1360"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="552,449,760,641"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="659,641,661,896,655,897,654,641"/>
-<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="568,167,745,268"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="659,268,659,433,654,433,654,268"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="575,5,738,91"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="659,106,659,167,654,167,654,106"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="784,359,1006,732"/>
-<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="823,733,757,899,752,897,818,731"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" title="Component working with date and time operations." alt="" coords="794,140,996,295"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="898,295,898,342,892,342,892,295"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="410,1239,410,1526,404,1526,404,1239"/>
-<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="441,638,417,1020,412,1019,436,638"/>
-<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="918,796,1184,1479"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="920,1341,864,1413,804,1481,735,1545,661,1606,521,1708,518,1704,658,1602,731,1541,800,1477,860,1410,916,1338"/>
-<area shape="rect" id="Node000013" title=" " alt="" coords="1030,511,1072,580"/>
-<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1054,595,1054,796,1048,796,1048,595"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="1097,495,1362,596"/>
-<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="1217,597,1162,780,1157,779,1212,595"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="1205,183,1254,252"/>
-<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1232,267,1232,495,1227,495,1227,267"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="318,275,295,476,283,618,274,779,270,954,273,1136,285,1320,308,1500,323,1564,317,1565,303,1500,279,1321,267,1137,265,954,269,779,278,618,290,476,312,274"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="318,1047,512,1271"/>
+<area shape="poly" id="edge10_Node000010_Node000003" title=" " alt="" coords="326,275,332,485,340,619,351,753,372,907,396,1046,391,1047,366,908,346,754,334,619,327,486,321,275"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="360,452,547,660"/>
+<area shape="poly" id="edge12_Node000011_Node000003" title=" " alt="" coords="347,273,416,451,411,453,342,275"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html" title="FullMenuViewModel with business logic (not final)" alt="" coords="544,924,806,1393"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="584,1394,522,1549,517,1548,579,1392"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html" title=" " alt="" coords="571,460,779,652"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="678,652,678,907,672,907,672,652"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html" title=" " alt="" coords="587,167,763,268"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="678,268,678,443,672,443,672,268"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="594,5,756,91"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="678,106,678,167,672,167,672,106"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="803,359,1025,753"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="838,754,777,909,772,907,833,752"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" title="Component working with date and time operations." alt="" coords="813,140,1014,295"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="916,294,916,342,911,342,911,294"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="418,1270,418,1547,412,1547,412,1270"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="450,660,426,1030,421,1030,444,660"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="937,817,1202,1500"/>
+<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="939,1360,882,1433,820,1502,748,1569,673,1632,529,1739,526,1734,669,1628,745,1565,816,1498,878,1429,935,1356"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1048,521,1091,591"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1072,606,1072,818,1067,818,1067,606"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="1116,476,1381,636"/>
+<area shape="poly" id="edge15_Node000012_Node000014" title=" " alt="" coords="1228,637,1178,802,1173,801,1222,635"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1224,183,1273,252"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1251,267,1251,476,1246,476,1246,267"/>
 </map>

@@ -11,6 +11,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model =
     [ "welcomeProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a574eda9c01df428c38524cc5acf49fbf", null ],
     [ "githubVersion", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a51402121c326893ff6b321410823b1ec", null ],
     [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a9c00f9983fab101142c8fd65a7f1940d", null ],
+    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#aafa1f96e3cfa26fb2fc9739c7b13d125", null ],
     [ "softwareService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a91c6a745fc4ebbf763c7bc5f8eb77ade", null ],
     [ "version", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#abe65b95c3ad4e11e574840180327c228", null ],
     [ "versionService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#ad6497b57188c8cafd1741f17a6bda380", null ],

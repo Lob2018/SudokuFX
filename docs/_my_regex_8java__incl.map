@@ -1,13 +1,13 @@
 <map id="src/main/java/fr/softsf/sudokufx/enums/MyRegex.java" name="src/main/java/fr/softsf/sudokufx/enums/MyRegex.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="324,5,534,48"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="327,5,536,48"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,96,197,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="353,51,193,94,192,89,351,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="221,104,325,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="394,51,310,98,307,94,391,46"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="348,104,510,131"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="432,48,432,88,426,88,426,48"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="534,104,687,131"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="473,46,572,94,570,99,470,51"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="711,104,859,131"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="513,46,720,97,719,102,512,51"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="355,51,194,94,193,89,353,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="220,104,331,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="396,51,313,98,310,94,394,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="354,104,509,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="434,48,434,88,429,88,429,48"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="532,104,686,131"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="474,46,571,94,569,99,472,51"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="710,104,858,131"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="515,46,719,97,718,102,514,51"/>
 </map>

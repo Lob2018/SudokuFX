@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.view.components.toaster.ToasterVBox" name="fr.softsf.sudokufx.view.components.toaster.ToasterVBox">
-<area shape="rect" id="Node000001" title="A custom VBox component for displaying toast notifications." alt="" coords="5,289,271,972"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="96,140,138,209"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,224,125,289,120,290,116,224"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="163,124,428,225"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,226,264,274,259,273,276,224"/>
+<area shape="rect" id="Node000001" title="A custom VBox component for displaying toast notifications." alt="" coords="5,348,271,1031"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="96,169,138,239"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,254,126,348,120,348,116,254"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="163,124,428,284"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="272,285,257,333,252,331,267,283"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="271,5,320,75"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="298,90,298,124,293,124,293,90"/>
 </map>

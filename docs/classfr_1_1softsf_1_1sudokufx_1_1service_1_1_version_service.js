@@ -7,6 +7,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service =
     [ "parseResponse", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe", null ],
     [ "CURRENT_VERSION", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a69bece1dbbb1a5cc86c38b7a12f5f71b", null ],
     [ "httpClient", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ab848493a61107602eb1217a09b15db85", null ],
+    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a1994b2074100eb06a4dc3faab790afef", null ],
     [ "myDateTime", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5fec87fc3f91c76e6e29f7746dccc528", null ],
     [ "objectMapper", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a963dbc20871e3cde236a8cb37e4f8bae", null ]
 ];

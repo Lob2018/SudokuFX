@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.view.DefaultView" name="fr.softsf.sudokufx.view.DefaultView">
-<area shape="rect" id="Node000001" title="Default view class of the Sudoku application." alt="" coords="88,171,380,1851"/>
+<area shape="rect" id="Node000001" title="Default view class of the Sudoku application." alt="" coords="88,171,380,1872"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="5,5,235,123"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,137,136,171,130,171,126,138"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="260,21,437,107"/>

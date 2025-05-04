@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.view.FullMenuView" name="fr.softsf.sudokufx.view.FullMenuView">
-<area shape="rect" id="Node000001" title="View class for the full menu screen of the Sudoku application." alt="" coords="135,171,333,725"/>
+<area shape="rect" id="Node000001" title="View class for the full menu screen of the Sudoku application." alt="" coords="135,171,333,747"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="5,5,235,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,136,154,170,149,171,139,138"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,136,153,170,148,171,139,138"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="260,21,437,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="334,122,319,172,314,170,329,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="335,122,320,172,315,170,329,120"/>
 </map>

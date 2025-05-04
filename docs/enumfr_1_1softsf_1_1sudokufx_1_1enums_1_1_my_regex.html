@@ -114,11 +114,17 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.htm
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex__coll__graph.svg" width="219" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex__coll__graph.svg" width="228" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad84ad0b48db992dc227fc3883434ddbc" id="r_ad84ad0b48db992dc227fc3883434ddbc"><td class="memItemLeft" align="right" valign="top">Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad84ad0b48db992dc227fc3883434ddbc">getAlphanumericPattern</a> ()</td></tr>
+<tr class="separator:ad84ad0b48db992dc227fc3883434ddbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8fb1cd40715778d1a9c4134c18bb2b9" id="r_ad8fb1cd40715778d1a9c4134c18bb2b9"><td class="memItemLeft" align="right" valign="top">Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8fb1cd40715778d1a9c4134c18bb2b9">getSecretPattern</a> ()</td></tr>
+<tr class="separator:ad8fb1cd40715778d1a9c4134c18bb2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8eefa50f7aaab9ab097f77fdaa035f0" id="r_ad8eefa50f7aaab9ab097f77fdaa035f0"><td class="memItemLeft" align="right" valign="top">Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8eefa50f7aaab9ab097f77fdaa035f0">getVersionPattern</a> ()</td></tr>
+<tr class="separator:ad8eefa50f7aaab9ab097f77fdaa035f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75b509baad4b2f51d5c9fc3399b16408" id="r_a75b509baad4b2f51d5c9fc3399b16408"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75b509baad4b2f51d5c9fc3399b16408">isValidatedByRegex</a> (@NotNull final String text, @NotNull final Pattern pattern)</td></tr>
 <tr class="memdesc:a75b509baad4b2f51d5c9fc3399b16408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the given text against the specified regular expression pattern.  <br /></td></tr>
 <tr class="separator:a75b509baad4b2f51d5c9fc3399b16408"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +145,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:aa3aa9c2cf3d1c92e21b3eb1150a1bfac" id="r_aa3aa9c2cf3d1c92e21b3eb1150a1bfac"><td class="memItemLeft" align="right" valign="top">static final Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3aa9c2cf3d1c92e21b3eb1150a1bfac">alphanumericPattern</a> = Pattern.compile(&quot;^[a-zA-Z0-9\\s.]+$&quot;)</td></tr>
 <tr class="memdesc:aa3aa9c2cf3d1c92e21b3eb1150a1bfac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precompiled regex pattern for validating alphanumeric strings.  <br /></td></tr>
 <tr class="separator:aa3aa9c2cf3d1c92e21b3eb1150a1bfac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1cd5c36c97ffbc09487091a03f4d96" id="r_aaa1cd5c36c97ffbc09487091a03f4d96"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa1cd5c36c97ffbc09487091a03f4d96">log</a> = LoggerFactory.getLogger(MyRegex.class)</td></tr>
+<tr class="separator:aaa1cd5c36c97ffbc09487091a03f4d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b53070cb6083076cf97e198b3c4c645" id="r_a9b53070cb6083076cf97e198b3c4c645"><td class="memItemLeft" align="right" valign="top">static final Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b53070cb6083076cf97e198b3c4c645">secretPattern</a></td></tr>
 <tr class="memdesc:a9b53070cb6083076cf97e198b3c4c645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precompiled regex pattern for validating passwords.  <br /></td></tr>
 <tr class="separator:a9b53070cb6083076cf97e198b3c4c645"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,6 +162,57 @@ Static Private Attributes</h2></td></tr>
 <p>This class includes methods for password validation, semantic versioning, alphanumeric string validation, and flexible contextual validations with error handling.</p>
 <p>The class is implemented as a Singleton using an enum to ensure a single shared instance. It uses the SLF4J logging framework for error reporting.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad84ad0b48db992dc227fc3883434ddbc" name="ad84ad0b48db992dc227fc3883434ddbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad84ad0b48db992dc227fc3883434ddbc">&#9670;&#160;</a></span>getAlphanumericPattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pattern fr.softsf.sudokufx.enums.MyRegex.getAlphanumericPattern </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8fb1cd40715778d1a9c4134c18bb2b9" name="ad8fb1cd40715778d1a9c4134c18bb2b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8fb1cd40715778d1a9c4134c18bb2b9">&#9670;&#160;</a></span>getSecretPattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pattern fr.softsf.sudokufx.enums.MyRegex.getSecretPattern </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8eefa50f7aaab9ab097f77fdaa035f0" name="ad8eefa50f7aaab9ab097f77fdaa035f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8eefa50f7aaab9ab097f77fdaa035f0">&#9670;&#160;</a></span>getVersionPattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pattern fr.softsf.sudokufx.enums.MyRegex.getVersionPattern </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a75b509baad4b2f51d5c9fc3399b16408" name="a75b509baad4b2f51d5c9fc3399b16408"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a75b509baad4b2f51d5c9fc3399b16408">&#9670;&#160;</a></span>isValidatedByRegex()</h2>
 
@@ -282,6 +341,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aaa1cd5c36c97ffbc09487091a03f4d96" name="aaa1cd5c36c97ffbc09487091a03f4d96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa1cd5c36c97ffbc09487091a03f4d96">&#9670;&#160;</a></span>log</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> final Logger fr.softsf.sudokufx.enums.MyRegex.log = LoggerFactory.getLogger(MyRegex.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9b53070cb6083076cf97e198b3c4c645" name="a9b53070cb6083076cf97e198b3c4c645"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b53070cb6083076cf97e198b3c4c645">&#9670;&#160;</a></span>secretPattern</h2>
 
@@ -304,7 +385,7 @@ Static Private Attributes</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= Pattern.compile(</div>
 <div class="line">            <span class="stringliteral">&quot;^[a-zA-Z0-9&quot;</span> + <a class="code hl_variable" href="#a70603147266fd669b95fe9739f730c74">SPECIAL_CHARACTERS</a> + <span class="stringliteral">&quot;]{24}$&quot;</span></div>
 <div class="line">    )</div>
-<div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex_html_a70603147266fd669b95fe9739f730c74"><div class="ttname"><a href="#a70603147266fd669b95fe9739f730c74">fr.softsf.sudokufx.enums.MyRegex.SPECIAL_CHARACTERS</a></div><div class="ttdeci">static final String SPECIAL_CHARACTERS</div><div class="ttdoc">Allowed special characters for password validation.</div><div class="ttdef"><b>Definition</b> MyRegex.java:26</div></div>
+<div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex_html_a70603147266fd669b95fe9739f730c74"><div class="ttname"><a href="#a70603147266fd669b95fe9739f730c74">fr.softsf.sudokufx.enums.MyRegex.SPECIAL_CHARACTERS</a></div><div class="ttdeci">static final String SPECIAL_CHARACTERS</div><div class="ttdoc">Allowed special characters for password validation.</div><div class="ttdef"><b>Definition</b> MyRegex.java:27</div></div>
 </div><!-- fragment -->
 <p>Precompiled regex pattern for validating passwords. </p>
 <p>Requirements:</p><ul>
@@ -378,7 +459,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1enums.html">enums</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html">MyRegex</a></li>
-    <li class="footer">Generated on Thu May 1 2025 11:02:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun May 4 2025 22:21:05 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
