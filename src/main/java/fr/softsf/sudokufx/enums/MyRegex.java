@@ -1,8 +1,8 @@
 package fr.softsf.sudokufx.enums;
 
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -15,10 +15,11 @@ import java.util.regex.Pattern;
  * <p>The class is implemented as a Singleton using an enum to ensure a single shared instance.
  * It uses the SLF4J logging framework for error reporting.</p>
  */
-@Slf4j
 public enum MyRegex {
 
     INSTANCE;
+
+    private static final Logger log = LoggerFactory.getLogger(MyRegex.class);
 
     /**
      * Allowed special characters for password validation.
@@ -31,10 +32,13 @@ public enum MyRegex {
      * - Only letters (lowercase/uppercase), digits, and special characters @#$%^&()! are allowed.
      * - Exactly 24 characters in total.
      */
-    @Getter
     private static final Pattern secretPattern = Pattern.compile(
             "^[a-zA-Z0-9" + SPECIAL_CHARACTERS + "]{24}$"
     );
+
+    public Pattern getSecretPattern() {
+        return secretPattern;
+    }
 
     /**
      * Precompiled regex pattern for semantic versioning (e.g., X.Y.Z format).
@@ -42,18 +46,24 @@ public enum MyRegex {
      * - Major, minor, and patch versions must be non-negative integers.
      * - Each version component must be separated by a '.' character.
      */
-    @Getter
     private static final Pattern versionPattern = Pattern.compile(
             "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$"
     );
+
+    public Pattern getVersionPattern() {
+        return versionPattern;
+    }
 
     /**
      * Precompiled regex pattern for validating alphanumeric strings.
      * Requirements:
      * - Only letters, digits, spaces, and dots are allowed.
      */
-    @Getter
     private static final Pattern alphanumericPattern = Pattern.compile("^[a-zA-Z0-9\\s.]+$");
+
+    public Pattern getAlphanumericPattern() {
+        return alphanumericPattern;
+    }
 
     /**
      * Validates the given text against the specified regular expression pattern.

@@ -26,7 +26,8 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Objects;
@@ -35,8 +36,9 @@ import java.util.Objects;
  * View class for the full menu screen of the Sudoku application. This class is
  * responsible for displaying and managing the full menu UI.
  */
-@Slf4j
 public final class FullMenuView implements IMainView, ISceneProvider {
+
+    private static final Logger log = LoggerFactory.getLogger(FullMenuView.class);
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Text text1 = new Text("Helloj! ");

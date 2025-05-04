@@ -3,6 +3,7 @@ package fr.softsf.sudokufx.view;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import fr.softsf.sudokufx.interfaces.*;
+import fr.softsf.sudokufx.service.VersionService;
 import fr.softsf.sudokufx.utils.FileSystemManager;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
@@ -25,7 +26,8 @@ import javafx.scene.shape.SVGPath;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -40,8 +42,9 @@ import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
  * View class for the crash screen without business logic. This class is
  * responsible for displaying and managing the crash screen UI.
  */
-@Slf4j
 public final class CrashScreenView implements IMainView, ISceneProvider {
+
+    private static final Logger log = LoggerFactory.getLogger(CrashScreenView.class);
 
     private static final IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
     private static final IFileSystem iFileSystem = new FileSystemManager();

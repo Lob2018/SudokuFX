@@ -5,8 +5,7 @@ import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 
@@ -22,11 +21,10 @@ import static fr.softsf.sudokufx.enums.Paths.*;
  * Configuration class for Logback logging framework. This class sets up and
  * configures Logback for the application.
  */
-@Slf4j
 @Configuration
 public class MyLogbackConfig {
 
-    @Getter
+    private static final Logger log = LoggerFactory.getLogger(MyLogbackConfig.class);
     private final String logsFolderPath;
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
@@ -40,6 +38,10 @@ public class MyLogbackConfig {
         System.setProperty("logs", logsFolderPath + "/" + LOGS_FILE_NAME.getPath());
         LoggerContext context = configureLogback();
         printLogStatus(context);
+    }
+
+    public String getLogsFolderPath() {
+        return logsFolderPath;
     }
 
     /**

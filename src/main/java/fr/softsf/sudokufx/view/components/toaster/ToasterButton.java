@@ -1,16 +1,23 @@
 package fr.softsf.sudokufx.view.components.toaster;
 
 import javafx.scene.control.Button;
-import lombok.Getter;
-import lombok.Setter;
 
 /**
  * A custom button with a display text and a full detail text.
  */
-@Getter
-@Setter
+
 public class ToasterButton extends Button {
+
+
     private String fullDetailText;
+
+    public String getFullDetailText() {
+        return fullDetailText;
+    }
+
+    public void setFullDetailText(String fullDetailText) {
+        this.fullDetailText = fullDetailText;
+    }
 
     /**
      * Creates a ToasterButton.

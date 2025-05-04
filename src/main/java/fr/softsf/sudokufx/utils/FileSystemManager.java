@@ -1,6 +1,8 @@
 package fr.softsf.sudokufx.utils;
 
-import lombok.extern.slf4j.Slf4j;
+import fr.softsf.sudokufx.service.VersionService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -11,8 +13,9 @@ import java.util.stream.Stream;
  * Manages file system operations, particularly folder deletion. This class
  * implements the IFileSystem interface.
  */
-@Slf4j
 public final class FileSystemManager implements IFileSystem {
+
+    private static final Logger log = LoggerFactory.getLogger(FileSystemManager.class);
 
     @Override
     public boolean deleteFolderRecursively(final Path folderPath, final String mustEndWithThat) {

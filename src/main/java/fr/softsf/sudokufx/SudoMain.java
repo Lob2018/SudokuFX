@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx;
 
 import com.gluonhq.ignite.spring.SpringContext;
+import fr.softsf.sudokufx.configuration.MyLogbackConfig;
 import fr.softsf.sudokufx.enums.LogBackTxt;
 import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import fr.softsf.sudokufx.interfaces.IMainView;
@@ -16,8 +17,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -36,16 +37,21 @@ import java.sql.SQLInvalidAuthorizationSpecException;
  * @SpringBootApplication: Bootstraps the Spring context.
  * @ComponentScan: Scans specified packages for Spring components.
  */
-@Slf4j
 @SpringBootApplication
 @ComponentScan({"com.gluonhq.ignite.spring", "fr.softsf.sudokufx.*",})
 public class SudoMain extends Application {
 
-    @Getter
+    private static final Logger log = LoggerFactory.getLogger(SudoMain.class);
+
     private static Scene scene;
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
+
+    public static Scene getScene() {
+        return scene;
+    }
+
     /**
      * Initializes the Spring context asynchronously to avoid blocking the JavaFX Application Thread.
      * Configuration (lazy init, no web server) is handled via application properties.

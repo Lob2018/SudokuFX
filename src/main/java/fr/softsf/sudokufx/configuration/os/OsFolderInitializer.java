@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.configuration.os;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
@@ -11,10 +12,11 @@ import java.io.File;
  * directories exist before the application proceeds.
  * This utility class is designed to be used statically and cannot be instantiated.
  */
-@Slf4j
 public enum OsFolderInitializer {
 
     INSTANCE;
+
+    private static final Logger log = LoggerFactory.getLogger(OsFolderInitializer.class);
 
     /**
      * Creates folders for data and logs. This method attempts to create the specified

@@ -3,7 +3,8 @@ package fr.softsf.sudokufx.view.components.list;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.text.MessageFormat;
 import java.util.Objects;
@@ -12,8 +13,10 @@ import java.util.Objects;
  * Custom cell for a ListView<String> that displays an item with a button
  * allowing its removal after user confirmation.
  */
-@Slf4j
 public final class ItemListCell extends ListCell<String> {
+
+    private static final Logger log = LoggerFactory.getLogger(ItemListCell.class);
+
     private final HBox hBox = new HBox();
     private final Label label = new Label();
     private final Button button = new Button();

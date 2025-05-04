@@ -39,7 +39,8 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
@@ -52,8 +53,9 @@ import java.util.Objects;
  * Default view class of the Sudoku application. This class is
  * responsible for displaying and managing the UI.
  */
-@Slf4j
 public final class DefaultView implements IMainView, ISceneProvider {
+
+    private static final Logger log = LoggerFactory.getLogger(DefaultView.class);
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Stage primaryStage = new Stage();

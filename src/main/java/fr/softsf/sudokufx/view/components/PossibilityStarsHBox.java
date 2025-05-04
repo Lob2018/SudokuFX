@@ -8,7 +8,6 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
-import lombok.Getter;
 
 import java.text.MessageFormat;
 import java.util.List;
@@ -22,9 +21,10 @@ import java.util.List;
  */
 public class PossibilityStarsHBox extends HBox {
 
-    @Getter
     private final IntegerProperty percentage = new SimpleIntegerProperty(100);
-
+    public IntegerProperty getPercentage() {
+        return percentage;
+    }
     /**
      * Constructor that sets the alignment, style, and visibility of the HBox.
      * It initializes 5 stars as Text nodes with appropriate style classes.

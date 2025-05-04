@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.enums;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Locale;
 import java.util.MissingResourceException;
@@ -11,10 +12,11 @@ import java.util.ResourceBundle;
  * language resources and provides methods to switch between languages and
  * retrieve localized strings.
  */
-@Slf4j
 public enum I18n {
 
     INSTANCE;
+
+    private static final Logger log = LoggerFactory.getLogger(I18n.class);
 
     private static final Locale LOCALE_FR = Locale.of("fr", "FR");
     private static final Locale LOCALE_EN = Locale.of("en", "US");

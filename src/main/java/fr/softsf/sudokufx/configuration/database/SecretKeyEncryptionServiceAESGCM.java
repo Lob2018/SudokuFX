@@ -2,7 +2,8 @@ package fr.softsf.sudokufx.configuration.database;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import jakarta.validation.constraints.NotBlank;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
@@ -17,8 +18,10 @@ import java.util.Base64;
  * Implementation of the ApplicationKeystore.IEncryptionService interface
  * using AES-GCM (Galois/Counter Mode) encryption.
  */
-@Slf4j
 final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
+
+    private static final Logger log = LoggerFactory.getLogger(SecretKeyEncryptionServiceAESGCM.class);
+
     private static final SecureRandom random = new SecureRandom();
     private final SecretKey secretKey;
     private Cipher cipher;

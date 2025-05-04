@@ -6,7 +6,8 @@ import fr.softsf.sudokufx.utils.DynamicFontSize;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,8 +17,9 @@ import org.springframework.stereotype.Service;
  * loading different FXML files based on the application's needs.
  */
 @Service
-@Slf4j
 public class FxmlService implements ISceneProvider {
+
+    private static final Logger log = LoggerFactory.getLogger(FxmlService.class);
 
     private final Scene scene = getScene();
 

@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.exceptions;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 
@@ -8,10 +9,11 @@ import java.sql.SQLInvalidAuthorizationSpecException;
  * Utility enum for handling and analyzing exceptions. This enum provides
  * methods to search for specific exception types within exception chains.
  */
-@Slf4j
 public enum ExceptionTools {
 
     INSTANCE;
+
+    private static final Logger log = LoggerFactory.getLogger(ExceptionTools.class);
 
     /**
      * Logs the given message and throws an {@link IllegalArgumentException} with it.

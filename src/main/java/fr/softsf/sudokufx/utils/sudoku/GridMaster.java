@@ -1,8 +1,8 @@
 package fr.softsf.sudokufx.utils.sudoku;
 
 import fr.softsf.sudokufx.enums.SecureRandomGenerator;
-import lombok.Getter;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.time.Duration;
@@ -13,9 +13,11 @@ import java.util.stream.IntStream;
 /**
  * Provides essential functionalities for generating and solving Sudoku puzzles.
  */
-@Slf4j
 @Component
 final class GridMaster implements IGridMaster {
+
+    private static final Logger log = LoggerFactory.getLogger(IGridMaster.class);
+
 
     private static final int ORDRE = 3;
     private static final int DIMENSION = ORDRE * ORDRE;
@@ -29,13 +31,19 @@ final class GridMaster implements IGridMaster {
     private static final int DIFFICILE_MAX_CACHEES = 59;
     private static final int DIFFICILE_MOY_CACHEES = (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
     private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
-
-
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
-    @Getter
     private int moyenMinPossibilites = 16533;
-    @Getter
+
+    public int getMoyenMinPossibilites() {
+        return moyenMinPossibilites;
+    }
+
     private int moyenMaxPossibilites = 28266;
+
+    public int getMoyenMaxPossibilites() {
+        return moyenMaxPossibilites;
+    }
+
     private LocalDateTime derniereDemande = LocalDateTime.now();
 
     /**

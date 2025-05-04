@@ -6,8 +6,8 @@ import fr.softsf.sudokufx.service.SoftwareService;
 import fr.softsf.sudokufx.service.VersionService;
 import javafx.beans.property.*;
 import javafx.concurrent.Task;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -17,10 +17,12 @@ import java.util.Optional;
 /**
  * FullMenuViewModel with business logic (not final)
  */
-@Slf4j
 @Component
 // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
 public class FullMenuViewModel {
+
+    private static final Logger log = LoggerFactory.getLogger(FullMenuViewModel.class);
+
     private final SoftwareService softwareService;
     private final IGridMaster iGridMaster;
     private final VersionService versionService;

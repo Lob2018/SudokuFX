@@ -5,7 +5,6 @@ import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.configuration.MyLogbackConfig;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import lombok.Setter;
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.DependsOn;
@@ -16,12 +15,19 @@ import static fr.softsf.sudokufx.enums.Paths.DATABASE_MIGRATION_PATH;
  * Abstract configuration class for setting up the application's data source.
  * This class provides configurations for different data source implementations.
  */
-@Setter
 @ExcludedFromCoverageReportGenerated
 abstract class AbstractDataSourceConfig {
 
     private String jdbcUrl;
     private String poolName;
+
+    public void setJdbcUrl(String jdbcUrl) {
+        this.jdbcUrl = jdbcUrl;
+    }
+
+    public void setPoolName(String poolName) {
+        this.poolName = poolName;
+    }
 
     /**
      * Initializes Logback logging framework.

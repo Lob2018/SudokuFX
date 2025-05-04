@@ -8,8 +8,8 @@ import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.utils.MyDateTime;
 import fr.softsf.sudokufx.enums.MyRegex;
 import javafx.concurrent.Task;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -30,9 +30,10 @@ import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
  * It retrieves the latest release tag from the GitHub API and compares it with the current version.
  * If an update is available, the result can be used to notify the user.
  */
-@Slf4j
 @Service
 public class VersionService {
+
+    private static final Logger log = LoggerFactory.getLogger(VersionService.class);
 
     private static final String CURRENT_VERSION = JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1);
     private final HttpClient httpClient;

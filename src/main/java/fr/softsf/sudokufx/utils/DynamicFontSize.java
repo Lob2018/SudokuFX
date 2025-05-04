@@ -3,7 +3,6 @@ package fr.softsf.sudokufx.utils;
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import javafx.scene.Scene;
-import lombok.Getter;
 
 /**
  * Manages dynamic font sizing based on the dimensions of a JavaFX Scene. This
@@ -18,8 +17,11 @@ public final class DynamicFontSize implements ISceneProvider {
     /**
      * The current font size calculated based on the Scene's dimensions.
      */
-    @Getter
     private double currentFontSize;
+
+    public double getCurrentFontSize() {
+        return currentFontSize;
+    }
 
     /**
      * Constructs a DynamicFontSize instance and initializes Scene listeners.

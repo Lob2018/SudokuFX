@@ -2,8 +2,8 @@ package fr.softsf.sudokufx.configuration.database;
 
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import javax.crypto.KeyGenerator;
@@ -21,9 +21,10 @@ import java.util.UUID;
  * Manages the application's keystore for the secure storage of a symmetric key and database credentials,
  * handling their creation, loading, and encryption.
  */
-@Slf4j
 @Component
 final class ApplicationKeystore implements IKeystore {
+
+    private static final Logger log = LoggerFactory.getLogger(ApplicationKeystore.class);
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";

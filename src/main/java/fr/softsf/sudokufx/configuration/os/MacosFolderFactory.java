@@ -1,13 +1,11 @@
 package fr.softsf.sudokufx.configuration.os;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * Factory class for creating and managing MACOS OS-specific folders for the SudoFX application.
  * Implements the OsDynamicFolders.IOsFoldersFactory interface.
  */
-@Slf4j
 final class MacosFolderFactory implements IOsFolderFactory {
+
     private final String logsFolderForSudoFx;
     private final String dataFolderForSudoFx;
 

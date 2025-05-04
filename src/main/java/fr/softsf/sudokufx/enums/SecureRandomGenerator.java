@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.enums;
 
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.security.SecureRandom;
 
@@ -8,9 +9,10 @@ import java.security.SecureRandom;
  * Utility enum for generating secure random numbers using Java's {@link SecureRandom} class.
  * This enum provides methods to generate random integers securely.
  */
-@Slf4j
 public enum SecureRandomGenerator {
     INSTANCE;
+
+    private static final Logger log = LoggerFactory.getLogger(SecureRandomGenerator.class);
 
     private final SecureRandom secureRandom = new SecureRandom();
 
