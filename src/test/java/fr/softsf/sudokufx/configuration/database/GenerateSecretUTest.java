@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest(classes = {SudoMain.class})
 class GenerateSecretUTest {
+
     private final GenerateSecret generateSecret;
 
     @Autowired
@@ -23,29 +24,30 @@ class GenerateSecretUTest {
     void givenPassayGenerator_whenGeneratePassaySecret_thenSecretIsValid() {
         String secret = generateSecret.generatePassaySecret();
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern));
+        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
+                "Generated secret should be valid according to secretPattern");
     }
 
     @Test
-    void givenInvalidValues_whenIsValidatedByRegex_thenFailsRegex() {
+    void givenInvalidSecrets_whenIsValidatedByRegex_thenReturnsFalse() {
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(null, null));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(null, secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("012345678910111213141516", null));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("LLLLLLLLLLLLLLLLLLLLLLLL", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("llllllllllllllllllllllll", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("@@@@@@@@@@@@@@@@@@@@@@@@", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("111111111111111111111111", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("                        ", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("LLLLLLLLLLLLLLLLLLLLLLLL", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("llllllllllllllllllllllll", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("@@@@@@@@@@@@@@@@@@@@@@@@", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("111111111111111111111111", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("uCQD1x$^UeWfn#OAb!YjYFHo", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("-CQD1x$^UeWfn#OAb!Y1YFH1", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("9uCQD1xi^UeWfntOAbmY1YFH", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("9uCQD1x$^UeWfn#OAb!Y1YFH1", secretPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("9uCQD1x$^UeWfn#OAb!Y1YF", secretPattern));
+        String[] invalidSecrets = {
+                "",
+                "LLLLLLLLLLLLLLLLLLLLLLLL",
+                "llllllllllllllllllllllll",
+                "@@@@@@@@@@@@@@@@@@@@@@@@",
+                "111111111111111111111111",
+                "                        ",
+                "uCQD1x$^UeWfn#OAb!YjYFHo",
+                "-CQD1x$^UeWfn#OAb!Y1YFH1",
+                "9uCQD1xi^UeWfntOAbmY1YFH",
+                "9uCQD1x$^UeWfn#OAb!Y1YFH1",
+                "9uCQD1x$^UeWfn#OAb!Y1YF"
+        };
+        for (String secret : invalidSecrets) {
+            assertFalse(MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
+                    "Secret should be invalid: " + secret);
+        }
     }
 }
+

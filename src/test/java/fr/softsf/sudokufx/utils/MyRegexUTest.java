@@ -1,45 +1,25 @@
 package fr.softsf.sudokufx.utils;
 
-import ch.qos.logback.classic.Logger;
-import ch.qos.logback.classic.spi.ILoggingEvent;
-import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.enums.MyRegex;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.slf4j.LoggerFactory;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import java.util.regex.Pattern;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class MyRegexUTest {
-
-    private ListAppender<ILoggingEvent> logWatcher;
-
-    @BeforeEach
-    void setup() {
-        logWatcher = new ListAppender<>();
-        logWatcher.start();
-        ((Logger) LoggerFactory.getLogger(MyRegex.class)).addAppender(logWatcher);
-    }
-
-    @AfterEach
-    void tearDown() {
-        ((Logger) LoggerFactory.getLogger(MyRegex.class)).detachAndStopAllAppenders();
-    }
-
     @Test
-    void givenNullText_whenValidateByRegex_thenFalseAndErrorLogged() {
-        boolean value = MyRegex.INSTANCE.isValidatedByRegex(null, MyRegex.INSTANCE.getAlphanumericPattern());
-        assertFalse(value, "Text is null then it returns false");
-        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught inside isValidatedByRegex, text is null, pattern is");
+    void givenNullTextOrPattern_whenIsValidatedByRegex_thenThrowsNullPointerException() {
+        Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
+        NullPointerException ex1 = assertThrows(NullPointerException.class, () ->
+                MyRegex.INSTANCE.isValidatedByRegex(null, secretPattern));
+        assertEquals("MyRegex>isValidatedByRegex : The text to validate must not be null.", ex1.getMessage());
+        NullPointerException ex2 = assertThrows(NullPointerException.class, () ->
+                MyRegex.INSTANCE.isValidatedByRegex("someText", null));
+        assertEquals("MyRegex>isValidatedByRegex : The pattern must not be null.", ex2.getMessage());
+        NullPointerException ex3 = assertThrows(NullPointerException.class, () ->
+                MyRegex.INSTANCE.isValidatedByRegex(null, null));
+        assertEquals("MyRegex>isValidatedByRegex : The text to validate must not be null.", ex3.getMessage());
     }
-
-    @Test
-    void givenNullPattern_whenValidateByRegex_thenFalseAndErrorLogged() {
-        boolean value = MyRegex.INSTANCE.isValidatedByRegex("Test", null);
-        assertFalse(value, "Pattern is null then it returns false");
-        assert (logWatcher.list.getFirst().getFormattedMessage()).contains("██ Exception caught inside isValidatedByRegex, text is Test, pattern is null");
-    }
-
-
 }

@@ -1,10 +1,9 @@
 package fr.softsf.sudokufx.enums;
 
-import jakarta.validation.constraints.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.regex.Matcher;
+import java.util.Objects;
 import java.util.regex.Pattern;
 
 /**
@@ -67,44 +66,41 @@ public enum MyRegex {
 
     /**
      * Validates the given text against the specified regular expression pattern.
-     * For stricter cases like password validation, the method delegates validation to {@code isValidPassword}.
-     * If the {@code pattern} matches the {@code secretPattern}, this method performs
-     * stricter password validation with additional rules. Otherwise, it uses the provided
-     * {@code pattern} for generic regex validation.
+     * If the provided {@code pattern} is equal to the internal {@code secretPattern},
+     * this method performs a stricter password validation by delegating to {@link #isValidPassword(String)}.
+     * Otherwise, it performs a generic regex match using the provided pattern.
      *
-     * @param text    The text to validate (must not be null).
-     * @param pattern The regular expression pattern for validation (must not be null).
-     * @return {@code true} if the text matches the regex pattern; {@code false} otherwise.
-     * @throws NullPointerException if the {@code text} to validate is null.
+     * @param text    The text to validate; must not be {@code null}.
+     * @param pattern The regular expression pattern to validate against; must not be {@code null}.
+     * @return {@code true} if the text matches the regex pattern or meets the password criteria; {@code false} otherwise.
+     * @throws NullPointerException if {@code text} or {@code pattern} is {@code null}.
      */
-    public boolean isValidatedByRegex(@NotNull final String text, @NotNull final Pattern pattern) {
-        try {
-            if (text == null) throw new NullPointerException("The text to validate must not be null.");
-            if (pattern == secretPattern) {
-                return isValidPassword(text);
-            } else {
-                Matcher matcher = pattern.matcher(text);
-                return matcher.matches();
-            }
-        } catch (Exception ex) {
-            log.error("██ Exception caught inside isValidatedByRegex, text is {}, pattern is {}, regex is {} : {}",
-                    text, pattern, (pattern == null) ? null : pattern.pattern(), ex.getMessage(), ex);
-            return false;
+    public boolean isValidatedByRegex(final String text, final Pattern pattern) {
+        Objects.requireNonNull(text, "MyRegex>isValidatedByRegex : The text to validate must not be null.");
+        Objects.requireNonNull(pattern, "MyRegex>isValidatedByRegex : The pattern must not be null.");
+        if (pattern.equals(secretPattern)) {
+            return isValidPassword(text);
         }
+        return pattern.matcher(text).matches();
     }
 
     /**
-     * Validates a secure password based on strict requirements:
-     * - At least 2 lowercase characters.
-     * - At least 2 uppercase characters.
-     * - At least 2 numeric digits.
-     * - At least 2 special characters from @#$%^&()!.
-     * - Exactly 24 characters in total.
+     * Validates a secure password against strict security criteria:
+     * <ul>
+     *   <li>Exactly 24 characters in length.</li>
+     *   <li>Contains only letters (uppercase and lowercase), digits, and allowed special characters {@code @#$%^&()!}.</li>
+     *   <li>At least 2 lowercase letters.</li>
+     *   <li>At least 2 uppercase letters.</li>
+     *   <li>At least 2 digits.</li>
+     *   <li>At least 2 special characters from {@code @#$%^&()!}.</li>
+     * </ul>
      *
-     * @param password The password to validate (must not be null).
-     * @return {@code true} if the password meets all security criteria; {@code false} otherwise.
+     * @param password The password string to validate; must not be {@code null}.
+     * @return {@code true} if the password meets all the above criteria; {@code false} otherwise.
+     * @throws NullPointerException if {@code password} is {@code null}.
      */
-    private boolean isValidPassword(@NotNull final String password) {
+    private boolean isValidPassword(final String password) {
+        Objects.requireNonNull(password, "MyRegex>isValidPassword : Password must not be null.");
         if (!secretPattern.matcher(password).matches()) return false;
         long lowerCaseCount = password.chars().filter(Character::isLowerCase).count();
         long upperCaseCount = password.chars().filter(Character::isUpperCase).count();
