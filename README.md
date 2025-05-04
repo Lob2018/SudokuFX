@@ -195,8 +195,6 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
         - maven-compiler-plugin
             - annotationProcessorPaths:
                 - MapStruct processor (for code generation)
-                - Lombok (for generating boilerplate code)
-                - Lombok MapStruct Binding (to integrate Lombok with MapStruct)
         - maven-enforcer-plugin (to define the minimum Maven version)
         - javafx-maven-plugin
         - spring-boot-maven-plugin (create the uber JAR)

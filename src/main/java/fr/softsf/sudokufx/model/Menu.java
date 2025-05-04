@@ -4,14 +4,9 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
-import lombok.*;
 
 @Entity
 @Table(name = "menu")
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Builder
 public class Menu {
 
     @Id
@@ -19,8 +14,50 @@ public class Menu {
     private Byte menuid;
 
     @NotNull
-    @Setter
     @Min(1)
     @Max(3)
     private Byte mode;
+
+    public Menu() {
+    }
+
+    public Menu(Byte menuid, Byte mode) {
+        this.menuid = menuid;
+        this.mode = mode;
+    }
+
+    public Byte getMenuid() {
+        return menuid;
+    }
+
+    public Byte getMode() {
+        return mode;
+    }
+
+    public void setMode(Byte mode) {
+        this.mode = mode;
+    }
+
+    public static MenuBuilder builder() {
+        return new MenuBuilder();
+    }
+
+    public static class MenuBuilder {
+        private Byte menuid;
+        private Byte mode;
+
+        public MenuBuilder menuid(Byte menuid) {
+            this.menuid = menuid;
+            return this;
+        }
+
+        public MenuBuilder mode(Byte mode) {
+            this.mode = mode;
+            return this;
+        }
+
+        public Menu build() {
+            return new Menu(menuid, mode);
+        }
+    }
 }

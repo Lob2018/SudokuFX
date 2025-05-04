@@ -5,14 +5,9 @@ import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-import lombok.*;
 
 @Entity
 @Table(name = "grid")
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Builder
 public class Grid {
 
     @Id
@@ -20,19 +15,88 @@ public class Grid {
     private Long gridid;
 
     @NotNull
-    @Setter
     @Size(max = 81)
     private String defaultgridvalue;
 
     @NotNull
-    @Setter
     @Size(max = 810)
     private String gridvalue;
 
     @NotNull
-    @Setter
     @Min(0)
     @Max(100)
     private Byte possibilities;
 
+    public Grid() {
+    }
+
+    public Grid(Long gridid, String defaultgridvalue, String gridvalue, Byte possibilities) {
+        this.gridid = gridid;
+        this.defaultgridvalue = defaultgridvalue;
+        this.gridvalue = gridvalue;
+        this.possibilities = possibilities;
+    }
+
+    public Long getGridid() {
+        return gridid;
+    }
+
+    public String getDefaultgridvalue() {
+        return defaultgridvalue;
+    }
+
+    public String getGridvalue() {
+        return gridvalue;
+    }
+
+    public Byte getPossibilities() {
+        return possibilities;
+    }
+
+    public void setDefaultgridvalue(String defaultgridvalue) {
+        this.defaultgridvalue = defaultgridvalue;
+    }
+
+    public void setGridvalue(String gridvalue) {
+        this.gridvalue = gridvalue;
+    }
+
+    public void setPossibilities(Byte possibilities) {
+        this.possibilities = possibilities;
+    }
+
+    public static GridBuilder builder() {
+        return new GridBuilder();
+    }
+
+    public static class GridBuilder {
+        private Long gridid;
+        private String defaultgridvalue;
+        private String gridvalue;
+        private Byte possibilities;
+
+        public GridBuilder gridid(Long gridid) {
+            this.gridid = gridid;
+            return this;
+        }
+
+        public GridBuilder defaultgridvalue(String defaultgridvalue) {
+            this.defaultgridvalue = defaultgridvalue;
+            return this;
+        }
+
+        public GridBuilder gridvalue(String gridvalue) {
+            this.gridvalue = gridvalue;
+            return this;
+        }
+
+        public GridBuilder possibilities(Byte possibilities) {
+            this.possibilities = possibilities;
+            return this;
+        }
+
+        public Grid build() {
+            return new Grid(gridid, defaultgridvalue, gridvalue, possibilities);
+        }
+    }
 }
