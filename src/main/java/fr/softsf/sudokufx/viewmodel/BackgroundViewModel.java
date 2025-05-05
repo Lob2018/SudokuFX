@@ -68,7 +68,7 @@ public class BackgroundViewModel {
             protected BackgroundImage call() {
                 try {
                     Image tempImage = new Image(fileUri, false);
-                    double scaleFactor = calculateScaleFactor(tempImage);
+                    double scaleFactor = calculateImageScaleFactor(tempImage);
                     Image resizedImage = new Image(fileUri, tempImage.getWidth() * scaleFactor, tempImage.getHeight() * scaleFactor, true, true);
                     if (resizedImage.isError()) {
                         System.out.println("Error: " + resizedImage.getException().getMessage());
@@ -82,8 +82,8 @@ public class BackgroundViewModel {
             }
         };
 
-        backgroundTask.setOnSucceeded(e -> onTaskComplete(backgroundTask, toaster, spinner, sudokuFX));
-        backgroundTask.setOnFailed(e -> onTaskError(e, toaster, spinner));
+        backgroundTask.setOnSucceeded(e -> onImageTaskComplete(backgroundTask, toaster, spinner, sudokuFX));
+        backgroundTask.setOnFailed(e -> onImageTaskError(e, toaster, spinner));
         new Thread(backgroundTask).start();
     }
 
@@ -95,7 +95,7 @@ public class BackgroundViewModel {
      * @param spinner        The spinner component for showing loading state.
      * @param sudokuFX       The GridPane where the image background will be applied.
      */
-    private void onTaskComplete(Task<BackgroundImage> backgroundTask, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
+    private void onImageTaskComplete(Task<BackgroundImage> backgroundTask, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
         Platform.runLater(() -> {
             toaster.removeToast();
             BackgroundImage backgroundImage = backgroundTask.getValue();
@@ -115,7 +115,7 @@ public class BackgroundViewModel {
      * @param toaster The toaster component for displaying notifications.
      * @param spinner The spinner component for showing loading state.
      */
-    private void onTaskError(WorkerStateEvent e, ToasterVBox toaster, SpinnerGridPane spinner) {
+    private void onImageTaskError(WorkerStateEvent e, ToasterVBox toaster, SpinnerGridPane spinner) {
         Throwable exception = e.getSource().getException();
         Platform.runLater(() -> {
             toaster.removeToast();
@@ -130,7 +130,7 @@ public class BackgroundViewModel {
      * @param tempImage The temporary image to be resized.
      * @return The scale factor.
      */
-    private double calculateScaleFactor(Image tempImage) {
+    private double calculateImageScaleFactor(Image tempImage) {
         double imageWidth = tempImage.getWidth();
         double imageHeight = tempImage.getHeight();
         double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
