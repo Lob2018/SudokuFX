@@ -147,6 +147,7 @@ public class BackgroundViewModel {
             toaster.removeToast();
             BackgroundImage backgroundImage = backgroundTask.getValue();
             if (backgroundImage != null) {
+                // TODO: SERVICE SET
                 sudokuFX.setBackground(new Background(backgroundImage));
             } else {
                 toaster.addToast("Error while loading the image.", "", ToastLevels.ERROR, true);

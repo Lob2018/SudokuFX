@@ -430,7 +430,8 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonColor.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
         menuBackgroundButtonColor.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonColor.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        backgroundViewModel.init(sudokuFX,menuBackgroundButtonColor);
+        // TODO IF ELSE FOR IMAGE OR BACKGROUND INIT
+        backgroundViewModel.init(sudokuFX, menuBackgroundButtonColor);
         menuBackgroundButtonColor.valueProperty().addListener((observable, oldValue, newValue) -> {
             backgroundViewModel.updateBackgroundColorAndApply(sudokuFX, newValue);
         });
@@ -471,12 +472,12 @@ public final class DefaultView implements IMainView, ISceneProvider {
      * @param miniLevel             The button in the mini menu corresponding to this level.
      */
     private void bindLevel(DifficultyLevel difficultyLevel,
-                                       PossibilityStarsHBox possibilityStarsBox,
-                                       Button maxiLevel,
-                                       Label levelName,
-                                       String levelAccessibilityKey,
-                                       String levelNameKey,
-                                       Button miniLevel) {
+                           PossibilityStarsHBox possibilityStarsBox,
+                           Button maxiLevel,
+                           Label levelName,
+                           String levelAccessibilityKey,
+                           String levelNameKey,
+                           Button miniLevel) {
         levelName.setText(I18n.INSTANCE.getValue(levelNameKey));
         possibilityStarsBox.visibleProperty().bind(
                 Bindings.createBooleanBinding(() -> levelViewModel.getSelectedLevelProperty().get() == difficultyLevel, levelViewModel.getSelectedLevelProperty())
@@ -514,6 +515,16 @@ public final class DefaultView implements IMainView, ISceneProvider {
                 "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp"
         ));
         File selectedFile = fileChooser.showOpenDialog(primaryStage);
+        applySelectedBackgroundImage(selectedFile);
+    }
+
+    /**
+     * Applies the selected background image to the GridPane.
+     *
+     * @param selectedFile The image file selected by the user.
+     *                     If null, no action is taken.
+     */
+    private void applySelectedBackgroundImage(File selectedFile) {
         if (selectedFile != null) {
             backgroundViewModel.handleFileImageChooser(selectedFile, toaster, spinner, sudokuFX);
         }
