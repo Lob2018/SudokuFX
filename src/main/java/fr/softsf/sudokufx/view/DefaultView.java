@@ -418,7 +418,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
                         CONFIRMATION_ALERT
                 )
         );
-
         menuBackgroundButtonReduce.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
         menuBackgroundButtonReduce.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
         menuBackgroundButtonReduceText.setText(I18n.INSTANCE.getValue("menu.background.button.reduce.text"));
@@ -433,16 +432,11 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonColor.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
         menuBackgroundButtonColor.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonColor.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-
-        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        String colorValueFromModel = "99b3ffcd";
-        // Add a listener to detect changes in the selected color
+//        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        backgroundViewModel.init(sudokuFX,menuBackgroundButtonColor);
         menuBackgroundButtonColor.valueProperty().addListener((observable, oldValue, newValue) -> {
-            sudokuFX.setBackground(new Background(new BackgroundFill(newValue, null, null)));
-            System.out.println("The color to store is :" + newValue.toString().substring(2));
+            backgroundViewModel.updateBackgroundColorAndApply(sudokuFX, newValue);
         });
-        menuBackgroundButtonColor.setValue(intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16)));
-
 
         // Managing the active menu
         menuHidden.visibleProperty().bind(activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN));
@@ -515,22 +509,6 @@ public final class DefaultView implements IMainView, ISceneProvider {
             maxiLevel.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
             miniLevel.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
         });
-    }
-
-    /**
-     * Converts a 32-bit integer (0xRRGGBBAA) into a JavaFX Color object.
-     *
-     * @param colorValue The color value in hexadecimal format with
-     *                   Red, Green, Blue, and Alpha (normalized to [0.0, 1.0]) components.
-     * @return A JavaFX Color object representing the given RGBA values.
-     */
-    private Color intToColor(int colorValue) {
-        return Color.rgb(
-                (colorValue >> 24) & 0xFF,
-                (colorValue >> 16) & 0xFF,
-                (colorValue >> 8) & 0xFF,
-                (colorValue & 0xFF) / 255.0
-        );
     }
 
     @FXML

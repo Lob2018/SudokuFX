@@ -5,8 +5,10 @@ import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import javafx.concurrent.WorkerStateEvent;
+import javafx.scene.control.ColorPicker;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -15,13 +17,56 @@ import javafx.application.Platform;
 import javafx.concurrent.Task;
 
 /**
- * ViewModel responsible for setting and applying a background image to the GridPane.
- * It handles image file validation, loading, resizing, and ensures the image fits the available space.
- * Notifications are displayed during the loading process using a toaster and spinner.
- * The image is loaded asynchronously to avoid blocking the UI thread.
+ * ViewModel for managing and applying background (color and image) to a GridPane.
+ * - Sets and applies background color.
+ * - Handles image file selection, validation, and asynchronous loading.
+ * - Resizes images to fit the available space while maintaining aspect ratio.
+ * - Displays notifications and a loading spinner during image loading.
+ * - Handles success and error cases during image loading.
  */
 @Component
 public class BackgroundViewModel {
+
+    /**
+     * Initializes the background color for the given ColorPicker and applies it to the GridPane.
+     * The color is predefined in hexadecimal format.
+     *
+     * @param sudokuFX                  The GridPane to apply the background color to.
+     * @param menuBackgroundButtonColor The ColorPicker to set the background color.
+     */
+    public void init(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor) {
+        String colorValueFromModel = "99b3ffcd";
+        Color color = intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16));
+        menuBackgroundButtonColor.setValue(color);
+        System.out.println("The color from the store is :" + color.toString().substring(2));
+        updateBackgroundColorAndApply(sudokuFX, color);
+    }
+
+    /**
+     * Sets the background color of the specified GridPane.
+     *
+     * @param sudokuFX The GridPane to update.
+     * @param color    The color to apply as the background.
+     */
+    public void updateBackgroundColorAndApply(GridPane sudokuFX, Color color) {
+        System.out.println("The color to store is :" + color.toString().substring(2));
+        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
+    }
+
+    /**
+     * Converts a 32-bit integer (0xRRGGBBAA) into a JavaFX Color object.
+     *
+     * @param colorValue The color value in hexadecimal format (0xRRGGBBAA).
+     * @return A JavaFX Color object.
+     */
+    private Color intToColor(int colorValue) {
+        return Color.rgb(
+                (colorValue >> 24) & 0xFF,
+                (colorValue >> 16) & 0xFF,
+                (colorValue >> 8) & 0xFF,
+                (colorValue & 0xFF) / 255.0
+        );
+    }
 
     /**
      * Handles image file selection, validating the file format and initiating the image loading process.
