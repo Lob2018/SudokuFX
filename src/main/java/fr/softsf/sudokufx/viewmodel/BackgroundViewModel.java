@@ -46,20 +46,6 @@ public class BackgroundViewModel {
     }
 
     /**
-     * Applies a background color to the GridPane and sets it in the ColorPicker.
-     *
-     * @param sudokuFX The GridPane to update.
-     * @param menuBackgroundButtonColor The ColorPicker to update.
-     * @param colorValueFromModel Hex color string (e.g., "99b3ffcd").
-     */
-    private void setColorFromModel(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel) {
-        Color color = intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16));
-        menuBackgroundButtonColor.setValue(color);
-        System.out.println("The color from the store is :" + color.toString().substring(2));
-        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
-    }
-
-    /**
      * Sets the background color of the specified GridPane.
      *
      * @param sudokuFX The GridPane to update.
@@ -69,21 +55,6 @@ public class BackgroundViewModel {
         // TODO: SERVICE SET
         System.out.println("The color to store is :" + color.toString().substring(2));
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
-    }
-
-    /**
-     * Converts a 32-bit integer (0xRRGGBBAA) into a JavaFX Color object.
-     *
-     * @param colorValue The color value in hexadecimal format (0xRRGGBBAA).
-     * @return A JavaFX Color object.
-     */
-    private Color intToColor(int colorValue) {
-        return Color.rgb(
-                (colorValue >> 24) & 0xFF,
-                (colorValue >> 16) & 0xFF,
-                (colorValue >> 8) & 0xFF,
-                (colorValue & 0xFF) / 255.0
-        );
     }
 
     /**
@@ -100,6 +71,35 @@ public class BackgroundViewModel {
         } else {
             toaster.addToast("The selected file is not a valid image format.", "", ToastLevels.ERROR, true);
         }
+    }
+
+    /**
+     * Applies a background color to the GridPane and sets it in the ColorPicker.
+     *
+     * @param sudokuFX The GridPane to update.
+     * @param menuBackgroundButtonColor The ColorPicker to update.
+     * @param colorValueFromModel Hex color string (e.g., "99b3ffcd").
+     */
+    private void setColorFromModel(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel) {
+        Color color = intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16));
+        menuBackgroundButtonColor.setValue(color);
+        System.out.println("The color from the store is :" + color.toString().substring(2));
+        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
+    }
+
+    /**
+     * Converts a 32-bit integer (0xRRGGBBAA) into a JavaFX Color object.
+     *
+     * @param colorValue The color value in hexadecimal format (0xRRGGBBAA).
+     * @return A JavaFX Color object.
+     */
+    private Color intToColor(int colorValue) {
+        return Color.rgb(
+                (colorValue >> 24) & 0xFF,
+                (colorValue >> 16) & 0xFF,
+                (colorValue >> 8) & 0xFF,
+                (colorValue & 0xFF) / 255.0
+        );
     }
 
     /**
