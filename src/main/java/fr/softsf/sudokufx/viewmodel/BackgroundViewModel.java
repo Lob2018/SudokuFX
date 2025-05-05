@@ -28,19 +28,35 @@ import javafx.concurrent.Task;
 public class BackgroundViewModel {
 
     /**
-     * Initializes the background color for the given ColorPicker and applies it to the GridPane.
-     * The color is predefined in hexadecimal format.
+     * Initializes the GridPane background with either a predefined color or image.
+     * If a color is defined, applies it and updates the ColorPicker.
+     * If an image path is defined, loads and applies the image asynchronously.
      *
-     * @param sudokuFX                  The GridPane to apply the background color to.
-     * @param menuBackgroundButtonColor The ColorPicker to set the background color.
+     * @param sudokuFX The GridPane to update.
+     * @param menuBackgroundButtonColor The ColorPicker to update with the color value.
+     * @param toaster The toaster for user notifications.
+     * @param spinner The spinner to show loading state.
      */
-    public void init(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor) {
-        // TODO: SERVICE GET
-        String colorValueFromModel = "99b3ffcd";
+    public void init(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, ToasterVBox toaster, SpinnerGridPane spinner) {
+        // TODO: SERVICE GET & SET COLOR OR IMAGE
+        // IF COLOR
+        setColorFromModel(sudokuFX, menuBackgroundButtonColor, "99b3ffcd");
+        // IF IMAGE
+        handleFileImageChooser(new File("C:\\Users"),toaster,spinner,sudokuFX);
+    }
+
+    /**
+     * Applies a background color to the GridPane and sets it in the ColorPicker.
+     *
+     * @param sudokuFX The GridPane to update.
+     * @param menuBackgroundButtonColor The ColorPicker to update.
+     * @param colorValueFromModel Hex color string (e.g., "99b3ffcd").
+     */
+    private void setColorFromModel(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel) {
         Color color = intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16));
         menuBackgroundButtonColor.setValue(color);
         System.out.println("The color from the store is :" + color.toString().substring(2));
-        updateBackgroundColorAndApply(sudokuFX, color);
+        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
 
     /**
@@ -109,7 +125,6 @@ public class BackgroundViewModel {
         String fileUri = selectedFile.toURI().toString();
         spinner.showSpinner(true);
         toaster.addToast("Image loading in progress...", fileUri, ToastLevels.INFO, false);
-
         Task<BackgroundImage> backgroundTask = new Task<>() {
             @Override
             protected BackgroundImage call() {
@@ -128,7 +143,6 @@ public class BackgroundViewModel {
                 }
             }
         };
-
         backgroundTask.setOnSucceeded(e -> onImageTaskComplete(backgroundTask, toaster, spinner, sudokuFX));
         backgroundTask.setOnFailed(e -> onImageTaskError(e, toaster, spinner));
         new Thread(backgroundTask).start();

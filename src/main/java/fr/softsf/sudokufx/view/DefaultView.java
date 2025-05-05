@@ -430,8 +430,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
         menuBackgroundButtonColor.setAccessibleText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
         menuBackgroundButtonColor.getTooltip().setText(I18n.INSTANCE.getValue("menu.background.button.color.accessibility") + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonColor.setAccessibleRoleDescription(I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        // TODO IF ELSE FOR IMAGE OR BACKGROUND INIT
-        backgroundViewModel.init(sudokuFX, menuBackgroundButtonColor);
+        backgroundViewModel.init(sudokuFX, menuBackgroundButtonColor,toaster, spinner);
         menuBackgroundButtonColor.valueProperty().addListener((observable, oldValue, newValue) -> {
             backgroundViewModel.updateBackgroundColorAndApply(sudokuFX, newValue);
         });
