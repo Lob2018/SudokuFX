@@ -11,6 +11,7 @@ import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
+import fr.softsf.sudokufx.viewmodel.BackgroundViewModel;
 import fr.softsf.sudokufx.viewmodel.HelpViewModel;
 import fr.softsf.sudokufx.viewmodel.LevelViewModel;
 import javafx.animation.*;
@@ -68,13 +69,14 @@ public final class DefaultView implements IMainView, ISceneProvider {
     @Autowired
     private LevelViewModel levelViewModel;
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED = PseudoClass.getPseudoClass("selected");
+    @Autowired
+    private BackgroundViewModel backgroundViewModel;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel = new ActiveMenuOrSubmenuViewModel();
 
     @FXML
     private ToasterVBox toaster;
     @FXML
     private SpinnerGridPane spinner;
-
     @FXML
     private GridPane sudokuFX;
 
@@ -531,85 +533,15 @@ public final class DefaultView implements IMainView, ISceneProvider {
         );
     }
 
-
     @FXML
     private void handleFileImageChooser() {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter(
                 "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp"
         ));
-
         File selectedFile = fileChooser.showOpenDialog(primaryStage);
-
         if (selectedFile != null) {
-            String fileName = selectedFile.getName().toLowerCase();
-            if (fileName.matches(".*\\.(jpg|jpeg|png|bmp)$")) {
-                spinner.showSpinner(true);
-                toaster.addToast("Chargement de l'image en cours...", selectedFile.toURI().toString(), ToastLevels.INFO, false);
-                Task<BackgroundImage> backgroundTask = new Task<>() {
-                    @Override
-                    protected BackgroundImage call() {
-                        try {
-                            // Chargement image originale sans préchargement
-                            Image tempImage = new Image(selectedFile.toURI().toString(), false);
-                            double imageWidth = tempImage.getWidth();
-                            double imageHeight = tempImage.getHeight();
-                            double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
-                            double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
-                            double scaleFactor = Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
-                            // Redimensionnement (lourd)
-                            Image resizedImage = new Image(
-                                    selectedFile.toURI().toString(),
-                                    imageWidth * scaleFactor,
-                                    imageHeight * scaleFactor,
-                                    true, true
-                            );
-                            if (resizedImage.isError()) {
-                                System.out.println("Erreur : " + resizedImage.getException().getMessage());
-                                return null;
-                            }
-                            return new BackgroundImage(
-                                    resizedImage,
-                                    BackgroundRepeat.NO_REPEAT,
-                                    BackgroundRepeat.NO_REPEAT,
-                                    BackgroundPosition.CENTER,
-                                    new BackgroundSize(
-                                            resizedImage.getWidth() / 3,
-                                            resizedImage.getHeight() / 3,
-                                            false, false, false, false
-                                    )
-                            );
-                        } catch (Exception e) {
-                            System.out.println("Erreur dans la tâche : " + e.getMessage());
-                            return null;
-                        }
-                    }
-                };
-                backgroundTask.setOnSucceeded(e -> {
-                    BackgroundImage backgroundImage = backgroundTask.getValue();
-                    Platform.runLater(() -> {
-                        toaster.removeToast();
-                        if (backgroundImage != null) {
-                            sudokuFX.setBackground(new Background(backgroundImage));
-                        } else {
-                            toaster.addToast("Erreur lors du chargement de l'image.", "", ToastLevels.ERROR, true);
-                        }
-                        spinner.showSpinner(false);
-                    });
-                });
-                backgroundTask.setOnFailed(e -> {
-                    Throwable exception = e.getSource().getException();
-                    Platform.runLater(() -> {
-                        toaster.removeToast();
-                        toaster.addToast("Erreur inattendue lors du chargement.", (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR, true);
-                        spinner.showSpinner(false);
-                    });
-                    // TODO add error
-                });
-                new Thread(backgroundTask).start();
-            } else {
-                toaster.addToast("Le fichier sélectionné n'est pas un format d'image valide.", "", ToastLevels.ERROR, true);
-            }
+            backgroundViewModel.handleFileImageChooser(selectedFile, toaster, spinner, sudokuFX);
         }
     }
 
