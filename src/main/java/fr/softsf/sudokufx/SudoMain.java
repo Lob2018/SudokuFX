@@ -1,7 +1,6 @@
 package fr.softsf.sudokufx;
 
 import com.gluonhq.ignite.spring.SpringContext;
-import fr.softsf.sudokufx.configuration.MyLogbackConfig;
 import fr.softsf.sudokufx.enums.LogBackTxt;
 import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import fr.softsf.sudokufx.interfaces.IMainView;
@@ -143,7 +142,7 @@ public class SudoMain extends Application {
         try {
             initializeFxmlService();
             long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
-            getPauseTransition("default-view", minimumTimelapse).play();
+            createViewTransition("default-view", minimumTimelapse).play();
         } catch (Exception ex) {
             log.error("██ Exception caught after Spring Context initialization with FXML : {}", ex.getMessage(), ex);
             throw new RuntimeException(ex);
@@ -168,7 +167,7 @@ public class SudoMain extends Application {
             Platform.exit();
         } else {
             sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
-            PauseTransition pause = getPauseTransition("crashscreen-view", 0);
+            PauseTransition pause = createViewTransition("crashscreen-view", 0);
             pause.play();
         }
     }
@@ -190,7 +189,7 @@ public class SudoMain extends Application {
      * @param minimumTimelapse The minimum time to pause
      * @return A PauseTransition object
      */
-    private PauseTransition getPauseTransition(String fxmlName, long minimumTimelapse) {
+    private PauseTransition createViewTransition(String fxmlName, long minimumTimelapse) {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(e -> {
             fxmlService.setRootByFXMLName(fxmlName);
