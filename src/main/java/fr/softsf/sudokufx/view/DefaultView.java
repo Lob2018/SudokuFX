@@ -1,8 +1,6 @@
 package fr.softsf.sudokufx.view;
 
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
-import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import fr.softsf.sudokufx.enums.*;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
@@ -13,6 +11,7 @@ import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
+import fr.softsf.sudokufx.viewmodel.HelpViewModel;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
@@ -45,7 +44,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.File;
 import java.text.MessageFormat;
-import java.time.Year;
 import java.util.Objects;
 
 
@@ -64,11 +62,10 @@ public final class DefaultView implements IMainView, ISceneProvider {
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED = "menu.accessibility.role.description.opened";
     public static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION = "menu.accessibility.role.description.submenu.option";
 
-    private static final MyAlert INFORMATION_ALERT = new MyAlert(Alert.AlertType.INFORMATION);
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
 
     @Autowired
-    private IOsFolderFactory iOsFolderFactory;
+    private HelpViewModel helpViewModel;
 
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel = new ActiveMenuOrSubmenuViewModel();
     private final ObjectProperty<DifficultyLevel> difficultyLevel = new SimpleObjectProperty<>(null);
@@ -736,22 +733,10 @@ public final class DefaultView implements IMainView, ISceneProvider {
     }
 
     /**
-     * Displays the HELP menu information alert containing game rules
-     * and the application log path.
+     * Displays the Help menu dialog with game rules and the application log path.
      */
     public void handleMenuHelpShow() {
-        INFORMATION_ALERT.setTitle(I18n.INSTANCE.getValue("menu.button.help.dialog.information.title"));
-        INFORMATION_ALERT.setHeaderText(null);
-        INFORMATION_ALERT.setContentText(MessageFormat.format(
-                I18n.INSTANCE.getValue("menu.button.help.dialog.information.message"),
-                iOsFolderFactory.getOsLogsFolderPath(),
-                JVMApplicationProperties.INSTANCE.getAppName(),
-                JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty() ? "" : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1),
-                JVMApplicationProperties.INSTANCE.getAppOrganization(),
-                Year.now() + "",
-                JVMApplicationProperties.INSTANCE.getAppLicense()
-        ));
-        INFORMATION_ALERT.showAndWait();
+        helpViewModel.showHelp();
     }
 
     /**
