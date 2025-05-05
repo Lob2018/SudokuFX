@@ -35,6 +35,7 @@ public class BackgroundViewModel {
      * @param menuBackgroundButtonColor The ColorPicker to set the background color.
      */
     public void init(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor) {
+        // TODO: SERVICE GET
         String colorValueFromModel = "99b3ffcd";
         Color color = intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16));
         menuBackgroundButtonColor.setValue(color);
@@ -49,6 +50,7 @@ public class BackgroundViewModel {
      * @param color    The color to apply as the background.
      */
     public void updateBackgroundColorAndApply(GridPane sudokuFX, Color color) {
+        // TODO: SERVICE SET
         System.out.println("The color to store is :" + color.toString().substring(2));
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
