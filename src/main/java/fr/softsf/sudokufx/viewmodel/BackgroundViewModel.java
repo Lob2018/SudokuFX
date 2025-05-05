@@ -1,5 +1,6 @@
 package fr.softsf.sudokufx.viewmodel;
 
+import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.ScreenSize;
 import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
@@ -9,6 +10,8 @@ import javafx.scene.control.ColorPicker;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -27,22 +30,24 @@ import javafx.concurrent.Task;
 @Component
 public class BackgroundViewModel {
 
+    private static final Logger log = LoggerFactory.getLogger(BackgroundViewModel.class);
+
     /**
      * Initializes the GridPane background with either a predefined color or image.
      * If a color is defined, applies it and updates the ColorPicker.
      * If an image path is defined, loads and applies the image asynchronously.
      *
-     * @param sudokuFX The GridPane to update.
+     * @param sudokuFX                  The GridPane to update.
      * @param menuBackgroundButtonColor The ColorPicker to update with the color value.
-     * @param toaster The toaster for user notifications.
-     * @param spinner The spinner to show loading state.
+     * @param toaster                   The toaster for user notifications.
+     * @param spinner                   The spinner to show loading state.
      */
     public void init(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, ToasterVBox toaster, SpinnerGridPane spinner) {
         // TODO: SERVICE GET & SET COLOR OR IMAGE
         // IF COLOR
         setColorFromModel(sudokuFX, menuBackgroundButtonColor, "99b3ffcd");
         // IF IMAGE
-        handleFileImageChooser(new File("C:\\Users"),toaster,spinner,sudokuFX);
+        handleFileImageChooser(new File("C:\\Users"), toaster, spinner, sudokuFX);
     }
 
     /**
@@ -52,8 +57,7 @@ public class BackgroundViewModel {
      * @param color    The color to apply as the background.
      */
     public void updateBackgroundColorAndApply(GridPane sudokuFX, Color color) {
-        // TODO: SERVICE SET
-        System.out.println("The color to store is :" + color.toString().substring(2));
+        // TODO: SERVICE STORE COLOR AS color.toString().substring(2)
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
 
@@ -69,21 +73,22 @@ public class BackgroundViewModel {
         if (selectedFile != null && isValidImage(selectedFile)) {
             loadImage(selectedFile, toaster, spinner, sudokuFX);
         } else {
-            toaster.addToast("The selected file is not a valid image format.", "", ToastLevels.ERROR, true);
+            String errorMessage = I18n.INSTANCE.getValue("toast.error.backgroundviewmodel.handlefileimagechooser");
+            log.error("██ Exception handleFileImageChooser : " + errorMessage);
+            toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
         }
     }
 
     /**
      * Applies a background color to the GridPane and sets it in the ColorPicker.
      *
-     * @param sudokuFX The GridPane to update.
+     * @param sudokuFX                  The GridPane to update.
      * @param menuBackgroundButtonColor The ColorPicker to update.
-     * @param colorValueFromModel Hex color string (e.g., "99b3ffcd").
+     * @param colorValueFromModel       Hex color string (e.g., "99b3ffcd").
      */
     private void setColorFromModel(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel) {
         Color color = intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16));
         menuBackgroundButtonColor.setValue(color);
-        System.out.println("The color from the store is :" + color.toString().substring(2));
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
 
@@ -124,7 +129,7 @@ public class BackgroundViewModel {
     private void loadImage(File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
         String fileUri = selectedFile.toURI().toString();
         spinner.showSpinner(true);
-        toaster.addToast("Image loading in progress...", fileUri, ToastLevels.INFO, false);
+        toaster.addToast(I18n.INSTANCE.getValue("toast.msg.backgroundviewmodel.loadImage"), fileUri, ToastLevels.INFO, false);
         Task<BackgroundImage> backgroundTask = new Task<>() {
             @Override
             protected BackgroundImage call() {
@@ -133,12 +138,12 @@ public class BackgroundViewModel {
                     double scaleFactor = calculateImageScaleFactor(tempImage);
                     Image resizedImage = new Image(fileUri, tempImage.getWidth() * scaleFactor, tempImage.getHeight() * scaleFactor, true, true);
                     if (resizedImage.isError()) {
-                        System.out.println("Error: " + resizedImage.getException().getMessage());
+                        log.error("██ Exception resizedImage.isError() : {}", resizedImage.getException().getMessage(), resizedImage.getException());
                         return null;
                     }
                     return createBackgroundImage(resizedImage);
                 } catch (Exception e) {
-                    System.out.println("Task error: " + e.getMessage());
+                    log.error("██ Exception loadImage call() : {}", e.getMessage(), e);
                     return null;
                 }
             }
@@ -164,7 +169,7 @@ public class BackgroundViewModel {
                 // TODO: SERVICE SET
                 sudokuFX.setBackground(new Background(backgroundImage));
             } else {
-                toaster.addToast("Error while loading the image.", "", ToastLevels.ERROR, true);
+                toaster.addToast(I18n.INSTANCE.getValue("toast.error.backgroundviewmodel.onimagetaskcomplete"), "", ToastLevels.ERROR, true);
             }
             spinner.showSpinner(false);
         });
@@ -181,7 +186,8 @@ public class BackgroundViewModel {
         Throwable exception = e.getSource().getException();
         Platform.runLater(() -> {
             toaster.removeToast();
-            toaster.addToast("Unexpected error during image loading.", (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR, true);
+            log.error("██ Exception onImageTaskError : {}", exception.getMessage(), exception);
+            toaster.addToast(I18n.INSTANCE.getValue("error.backgroundviewmodel.onimagetaskerror"), (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR, true);
             spinner.showSpinner(false);
         });
     }
