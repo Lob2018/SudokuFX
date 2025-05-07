@@ -1,8 +1,9 @@
 # Standard commit message template
 #
+# Please uncomment and complete the appropriate line for your commit.
+#
 # If you want to use this template, configure Git with the following command:
 # git config --global commit.template .gitmessage
-# Please uncomment the appropriate line for your commit.
 #
 # To verify that this template is applied, run the following command:
 # git config --get commit.template
