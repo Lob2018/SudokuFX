@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(ApplicationExtension.class)
-class BackgroundViewModelTest {
+class BackgroundViewModelUTest {
 
     private BackgroundViewModel viewModel;
 
