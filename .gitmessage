@@ -1,15 +1,12 @@
 # Standard commit message template
 #
-# Please uncomment and complete the appropriate line for your commit.
+# Uncomment the appropriate line and add your commit description.
 #
-# If you want to use this template, configure Git with the following command:
+# To use this template, run:
 # git config --global commit.template .gitmessage
 #
-# To verify that this template is applied, run the following command:
+# To verify the template is applied, run:
 # git config --get commit.template
-# It should return the path to this file (e.g., /path/to/.gitmessage).
-#
-# If you run `git commit` without the `-m` option, the message template should appear in your editor.
 
 # Used when introducing a new feature or functionality.
 #✨ feat:
