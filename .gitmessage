@@ -1,0 +1,45 @@
+# Standard commit message template
+#
+# If you want to use this template, configure Git with the following command:
+# git config --global commit.template .gitmessage
+# Please uncomment the appropriate line for your commit.
+#
+# To verify that this template is applied, run the following command:
+# git config --get commit.template
+# It should return the path to this file (e.g., /path/to/.gitmessage).
+#
+# If you run `git commit` without the `-m` option, the message template should appear in your editor.
+
+# Used when introducing a new feature or functionality.
+#✨ feat:
+
+# Used when fixing a bug or issue in the code.
+#🐛 fix:
+
+# Used for maintenance tasks, like dependency updates, or other changes that don't add a feature or fix a bug.
+#🔧 chore:
+
+# Used when you change the internal code structure without affecting the application behavior.
+#♻️ refactor:
+
+# Used for changes that only impact documentation files (e.g., README, API docs).
+#📚 docs:
+
+# Used when optimizing code to improve performance.
+#⚡ perf:
+
+# Used when modifying code style without affecting its functionality (e.g., fixing indentation, whitespace).
+#📝 style:
+
+# Used when adding new tests or modifying existing ones.
+#✅ test:
+
+# Used when updating CI configurations or fixing CI/CD pipeline issues.
+#👷 ci:
+
+# Used for changes to build configurations or related tools.
+#🛠️ build:
+
+# Used when you want to undo a commit (e.g., revert to a previous working state).
+#⏪ revert:
+
