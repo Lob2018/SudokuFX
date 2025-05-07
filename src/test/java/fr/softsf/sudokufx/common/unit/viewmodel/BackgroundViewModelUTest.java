@@ -41,7 +41,7 @@ class BackgroundViewModelUTest {
         spyViewModel.init(sudokuFX, colorPicker, toaster, spinner);
         Color expectedColor = Color.rgb(153, 179, 255, 0.803921568627451);
         assertEquals(expectedColor, colorPicker.getValue());
-        BackgroundFill fill = (BackgroundFill) sudokuFX.getBackground().getFills().getFirst();
+        BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
         assertEquals(expectedColor, fill.getFill());
     }
 }
