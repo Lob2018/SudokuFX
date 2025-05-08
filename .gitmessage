@@ -15,7 +15,7 @@
 #🐛 fix:
 
 # Changes that do not relate to a fix or feature and don't modify src or test files
-  (for example updating dependencies)
+# (for example updating dependencies)
 #🔧 chore:
 
 # Refactored code that neither fixes a bug nor adds a feature.
@@ -25,7 +25,7 @@
 #📚 docs:
 
 # Changes that do not affect the meaning of the code, likely related to code
-  formatting such as white-space, missing semi-colons, and so on.
+# formatting such as white-space, missing semi-colons, and so on.
 #📝 style:
 
 # Including new or correcting previous tests.
