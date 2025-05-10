@@ -1,6 +1,7 @@
 package fr.softsf.sudokufx.viewmodel.shared;
 
 import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.service.PlayerService;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import org.springframework.stereotype.Component;
