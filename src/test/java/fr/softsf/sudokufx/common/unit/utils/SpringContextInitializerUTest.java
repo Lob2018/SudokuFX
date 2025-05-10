@@ -4,13 +4,14 @@ import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudokufx.utils.SpringContextInitializer;
 import javafx.concurrent.Task;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.testfx.framework.junit5.ApplicationExtension;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-import org.testfx.framework.junit5.ApplicationTest;
-
-class SpringContextInitializerTest extends ApplicationTest {
+@ExtendWith(ApplicationExtension.class)
+class SpringContextInitializerUTest {
 
     @Test
     void givenMockedSpringContext_whenRunInitializationTask_thenInitIsCalled() {
