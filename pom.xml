@@ -154,6 +154,7 @@
                         <exclude>fr/softsf/sudokufx/dto/**</exclude>
                         <exclude>fr/softsf/sudokufx/interfaces/**</exclude>
                         <exclude>fr/softsf/sudokufx/benchmark/**</exclude>
+                        <exclude>fr/softsf/sudokufx/utils/SpringContextInitializer$*</exclude>
                     </excludes>
                 </configuration>
                 <executions>

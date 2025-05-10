@@ -7,6 +7,7 @@ import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.service.FxmlService;
 import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.utils.SpringContextInitializer;
 import fr.softsf.sudokufx.view.SplashScreenView;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
@@ -19,7 +20,6 @@ import javafx.util.Duration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
@@ -51,18 +51,6 @@ public class SudoMain extends Application {
         return scene;
     }
 
-    /**
-     * Initializes the Spring context asynchronously to avoid blocking the JavaFX Application Thread.
-     * Configuration (lazy init, no web server) is handled via application properties.
-     * Uses Gluon Ignite's {@code SpringContext} linked to the JavaFX Application instance.
-     */
-    private final Task<Void> springContextTask = new Task<>() {
-        @Override
-        protected Void call() {
-            context.init(() -> SpringApplication.run(SudoMain.class));
-            return null;
-        }
-    };
     @Autowired
     private FxmlService fxmlService;
 
@@ -100,15 +88,15 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Initializes the application by setting up the splash screen and loading
-     * the main application context asynchronously.
+     * Initializes the application by setting up the splash screen and asynchronously
+     * starting the Spring application context.
      * This method performs the following steps:
      * 1. Sets the application language based on the host environment.
      * 2. Initializes the splash screen view with the provided stage.
      * 3. Records the start time for initialization tracking.
      * 4. Sets up the main scene for the splash screen.
-     * 5. Starts a background task to initialize the Spring context, ensuring UI responsiveness.
-     * 6. Registers handlers to manage success and failure scenarios of the initialization task.
+     * 5. Delegates the Spring context initialization to a separate component to keep the UI responsive.
+     * 6. Registers callbacks to handle success and failure outcomes of the initialization.
      *
      * @param splashScreenStage The primary stage for displaying the splash screen.
      */
@@ -119,12 +107,15 @@ public class SudoMain extends Application {
             iSplashScreenView = new SplashScreenView(splashScreenStage);
             long startTime = System.currentTimeMillis();
             initScene(splashScreenStage);
-            new Thread(springContextTask).start();
-            springContextTask.setOnSucceeded(event -> handleSpringContextTaskSuccess(startTime));
-            springContextTask.setOnFailed(event -> {
-                Throwable th = springContextTask.getException();
+
+            SpringContextInitializer initializer = new SpringContextInitializer(context);
+            Task<Void> task = initializer.createInitializationTask();
+            task.setOnSucceeded(event -> handleSpringContextTaskSuccess(startTime));
+            task.setOnFailed(event -> {
+                Throwable th = task.getException();
                 handleSpringContextTaskFailed(th);
             });
+            initializer.runInitializationTask(task);
         } catch (Exception ex) {
             log.error("██ Exception catch inside start() : {}", ex.getMessage(), ex);
             throw new RuntimeException(ex);
