@@ -2,7 +2,6 @@ package fr.softsf.sudokufx.utils;
 
 import com.gluonhq.ignite.spring.SpringContext;
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import javafx.concurrent.Task;
 import org.springframework.boot.SpringApplication;
 
