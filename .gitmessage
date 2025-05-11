@@ -3,7 +3,7 @@
 # Uncomment the appropriate line and add your commit description.
 #
 # To use this template, run:
-# git config --global commit.template .gitmessage
+# git config --local commit.template .gitmessage
 #
 # To verify the template is applied, run:
 # git config --get commit.template
