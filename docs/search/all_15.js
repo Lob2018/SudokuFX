@@ -10,6 +10,7 @@ var searchData=
   ['versionservice_2ejava_7',['VersionService.java',['../_version_service_8java.html',1,'']]],
   ['versionserviceitest_8',['VersionServiceITest',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html',1,'fr::softsf::sudokufx::service']]],
   ['versionserviceitest_2ejava_9',['VersionServiceITest.java',['../_version_service_i_test_8java.html',1,'']]],
-  ['visual_5fheight_10',['VISUAL_HEIGHT',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html#a1807eb59f57676a969447f3c6dffdfc6',1,'fr::softsf::sudokufx::enums::ScreenSize']]],
-  ['visual_5fwidth_11',['VISUAL_WIDTH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html#aeb1767166b7c58b362d570f867cc07c0',1,'fr::softsf::sudokufx::enums::ScreenSize']]]
+  ['viewmodel_10',['viewModel',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_background_view_model_u_test.html#a9d2e8f7cd758ba723f4333e23ab4907a',1,'fr::softsf::sudokufx::common::unit::viewmodel::BackgroundViewModelUTest']]],
+  ['visual_5fheight_11',['VISUAL_HEIGHT',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html#a1807eb59f57676a969447f3c6dffdfc6',1,'fr::softsf::sudokufx::enums::ScreenSize']]],
+  ['visual_5fwidth_12',['VISUAL_WIDTH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html#aeb1767166b7c58b362d570f867cc07c0',1,'fr::softsf::sudokufx::enums::ScreenSize']]]
 ];

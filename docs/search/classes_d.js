@@ -7,5 +7,6 @@ var searchData=
   ['playerlanguagebuilder_4',['PlayerLanguageBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_1_1_player_language_builder.html',1,'fr::softsf::sudokufx::model::PlayerLanguage']]],
   ['playerlanguagerepository_5',['PlayerLanguageRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html',1,'fr::softsf::sudokufx::repository']]],
   ['playerrepository_6',['PlayerRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html',1,'fr::softsf::sudokufx::repository']]],
-  ['possibilitystarshbox_7',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html',1,'fr::softsf::sudokufx::view::components']]]
+  ['playerservice_7',['PlayerService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html',1,'fr::softsf::sudokufx::service']]],
+  ['possibilitystarshbox_8',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html',1,'fr::softsf::sudokufx::view::components']]]
 ];

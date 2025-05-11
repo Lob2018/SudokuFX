@@ -19,6 +19,9 @@ var annotated_dup =
               ] ]
             ] ],
             [ "unit", null, [
+              [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums.html", [
+                [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test" ]
+              ] ],
               [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service.html", [
                 [ "SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test" ]
               ] ],
@@ -28,7 +31,11 @@ var annotated_dup =
                 ] ],
                 [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test" ],
                 [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test" ],
-                [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test" ]
+                [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test" ],
+                [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_spring_context_initializer_u_test" ]
+              ] ],
+              [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel.html", [
+                [ "BackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_background_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_background_view_model_u_test" ]
               ] ]
             ] ]
           ] ],
@@ -101,6 +108,9 @@ var annotated_dup =
             [ "PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language" ],
             [ "Software", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software" ]
           ] ],
+          [ "navigation", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html", [
+            [ "Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", null ]
+          ] ],
           [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", [
             [ "BackgroundRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_background_repository.html", null ],
             [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", null ],
@@ -113,6 +123,7 @@ var annotated_dup =
           ] ],
           [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
             [ "FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service" ],
+            [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service" ],
             [ "SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service" ],
             [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service" ],
             [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test" ]
@@ -128,7 +139,8 @@ var annotated_dup =
             [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test" ],
             [ "MyDateTime", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time" ],
             [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ],
-            [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test" ]
+            [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test" ],
+            [ "SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer" ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
             [ "components", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html", [
@@ -149,8 +161,14 @@ var annotated_dup =
             [ "SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view" ]
           ] ],
           [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html", [
+            [ "shared", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared.html", [
+              [ "CurrentPlayerState", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared_1_1_current_player_state.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared_1_1_current_player_state" ]
+            ] ],
             [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
-            [ "FullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model" ]
+            [ "BackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model" ],
+            [ "FullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model" ],
+            [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],
+            [ "LevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_level_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_level_view_model" ]
           ] ],
           [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1_launcher" ],
           [ "SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main" ]

@@ -8,8 +8,10 @@ var namespacefr_1_1softsf_1_1sudokufx =
         [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1viewmodel" ]
       ] ],
       [ "unit", null, [
+        [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums" ],
         [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service" ],
-        [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils" ]
+        [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils" ],
+        [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel" ]
       ] ]
     ] ],
     [ "configuration", "namespacefr_1_1softsf_1_1sudokufx_1_1configuration.html", "namespacefr_1_1softsf_1_1sudokufx_1_1configuration" ],
@@ -18,6 +20,7 @@ var namespacefr_1_1softsf_1_1sudokufx =
     [ "exceptions", "namespacefr_1_1softsf_1_1sudokufx_1_1exceptions.html", "namespacefr_1_1softsf_1_1sudokufx_1_1exceptions" ],
     [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces.html", "namespacefr_1_1softsf_1_1sudokufx_1_1interfaces" ],
     [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", "namespacefr_1_1softsf_1_1sudokufx_1_1model" ],
+    [ "navigation", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation" ],
     [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", "namespacefr_1_1softsf_1_1sudokufx_1_1repository" ],
     [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1service" ],
     [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1utils.html", "namespacefr_1_1softsf_1_1sudokufx_1_1utils" ],

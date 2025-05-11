@@ -1,0 +1,6 @@
+var classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test =
+[
+    [ "givenEnumValues_whenAccessed_thenCorrectLengthAndValues", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test.html#ace720cd4e10f4ed673ee1d9d99109153", null ],
+    [ "givenInvalidEnumString_whenValueOfCalled_thenThrowsException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test.html#a7b1a64beed106dcc84c160da75620acf", null ],
+    [ "givenValidEnumString_whenValueOfCalled_thenCorrectEnum", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test.html#a1fa9d5839d54042da83cecabb37f72e0", null ]
+];

@@ -4,5 +4,6 @@ var dir_482b4657db61503fe15b7ae1f26e885d =
     [ "DynamicFontSize.java", "_dynamic_font_size_8java.html", "_dynamic_font_size_8java" ],
     [ "FileSystemManager.java", "_file_system_manager_8java.html", "_file_system_manager_8java" ],
     [ "IFileSystem.java", "_i_file_system_8java.html", "_i_file_system_8java" ],
-    [ "MyDateTime.java", "_my_date_time_8java.html", "_my_date_time_8java" ]
+    [ "MyDateTime.java", "_my_date_time_8java.html", "_my_date_time_8java" ],
+    [ "SpringContextInitializer.java", "_spring_context_initializer_8java.html", "_spring_context_initializer_8java" ]
 ];

@@ -1,0 +1,17 @@
+<map id="fr.softsf.sudokufx.common.unit.viewmodel.BackgroundViewModelUTest" name="fr.softsf.sudokufx.common.unit.viewmodel.BackgroundViewModelUTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="270,1127,531,1287"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html" title="ViewModel for managing and applying background (color and image) to a GridPane." alt="" coords="5,348,243,1063"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,1042,257,1061,298,1113,294,1116,253,1064,241,1045"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="268,364,533,1047"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="403,1047,403,1110,398,1110,398,1047"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="240,169,283,239"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="278,253,308,364,303,365,272,254"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="308,124,573,284"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="437,284,432,348,426,347,431,284"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="416,5,465,75"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="443,90,443,124,438,124,438,90"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html" title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons." alt="" coords="558,615,779,796"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="652,797,636,858,613,927,584,998,548,1064,507,1116,503,1113,543,1061,579,995,608,925,631,857,647,795"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="636,169,701,239"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="671,253,671,615,666,615,666,253"/>
+</map>

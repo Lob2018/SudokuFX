@@ -12,5 +12,7 @@ var searchData=
   ['softwareserviceutest_9',['SoftwareServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html',1,'fr::softsf::sudokufx::common::unit::service']]],
   ['spinnergridpane_10',['SpinnerGridPane',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html',1,'fr::softsf::sudokufx::view::components']]],
   ['splashscreenview_11',['SplashScreenView',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html',1,'fr::softsf::sudokufx::view']]],
-  ['sudomain_12',['SudoMain',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html',1,'fr::softsf::sudokufx']]]
+  ['springcontextinitializer_12',['SpringContextInitializer',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html',1,'fr::softsf::sudokufx::utils']]],
+  ['springcontextinitializerutest_13',['SpringContextInitializerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_spring_context_initializer_u_test.html',1,'fr::softsf::sudokufx::common::unit::utils']]],
+  ['sudomain_14',['SudoMain',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html',1,'fr::softsf::sudokufx']]]
 ];

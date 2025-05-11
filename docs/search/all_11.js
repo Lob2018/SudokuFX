@@ -10,5 +10,6 @@ var searchData=
   ['resetbuttonclick_7',['resetButtonClick',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeaffcff3e73ba2d59ecaf2df0dc1573f',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
   ['resoudrelagrille_8',['resoudreLaGrille',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad9ddda731cd64c249d2b6bf061fc5732',1,'fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille(final int[] grille)'],['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad9ddda731cd64c249d2b6bf061fc5732',1,'fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille(final int[] grille)']]],
   ['resources_5fcss_5fpath_9',['RESOURCES_CSS_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#a2e64ef551f6783dd3f6df8ade03b68f6',1,'fr::softsf::sudokufx::enums::Paths']]],
-  ['resources_5ffxml_5fpath_10',['RESOURCES_FXML_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#a98d1294fc013e2c71558e29ef0125d59',1,'fr::softsf::sudokufx::enums::Paths']]]
+  ['resources_5ffxml_5fpath_10',['RESOURCES_FXML_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html#a98d1294fc013e2c71558e29ef0125d59',1,'fr::softsf::sudokufx::enums::Paths']]],
+  ['runinitializationtask_11',['runInitializationTask',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html#a102ea76a7ffe8f69b1a4f8bcb6841fec',1,'fr::softsf::sudokufx::utils::SpringContextInitializer']]]
 ];

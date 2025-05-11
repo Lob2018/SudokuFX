@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.interfaces.IMainView" name="fr.softsf.sudokufx.interfaces.IMainView">
 <area shape="rect" id="Node000001" title="Interface defining method to open the main stage." alt="" coords="318,5,548,123"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="5,560,263,1483"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,134,292,152,277,172,227,262,190,359,163,460,144,561,139,560,158,458,185,357,223,260,272,169,288,148,308,130"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="287,171,579,1872"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="5,525,263,1448"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,134,292,152,277,172,231,254,196,342,169,434,150,526,145,525,164,433,191,340,226,252,272,169,288,148,308,130"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="287,171,579,1803"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="436,138,436,171,430,171,430,138"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html" title="View class for the full menu screen of the Sudoku application." alt="" coords="603,733,801,1309"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="560,130,578,149,594,169,630,234,658,304,681,375,698,449,711,522,719,595,725,733,720,734,714,595,706,523,693,450,676,377,653,305,625,237,589,172,574,152,556,134"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html" title="View class for the full menu screen of the Sudoku application." alt="" coords="603,699,801,1275"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="560,130,578,148,594,169,628,230,655,295,677,362,694,431,706,500,715,568,723,699,717,699,710,569,701,501,689,432,672,364,650,297,623,233,589,172,574,152,556,134"/>
 </map>

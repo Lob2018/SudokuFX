@@ -24,9 +24,10 @@ var searchData=
   ['applicationkeystoreitest_21',['ApplicationKeystoreITest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html',1,'fr.softsf.sudokufx.configuration.database.ApplicationKeystoreITest'],['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#acc1f7ef8772e47d22777115b8db60872',1,'fr.softsf.sudokufx.configuration.database.ApplicationKeystoreITest.ApplicationKeystoreITest()']]],
   ['applicationkeystoreitest_2ejava_22',['ApplicationKeystoreITest.java',['../_application_keystore_i_test_8java.html',1,'']]],
   ['applicense_23',['appLicense',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#ad9fb75459d3ae502f187532e4656f421',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
-  ['appname_24',['appName',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a19667f7eb4092cccbc99ee243ef6459a',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
-  ['apporganization_25',['appOrganization',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#ab2cc3130483923dde076644921289fae',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
-  ['appversion_26',['appVersion',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a875f740b3572e5235b6de2afab977ce3',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
-  ['ascii_5flogo_27',['ASCII_LOGO',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html#a5dbee34f9f17dbccdfcc7b7990f208bb',1,'fr::softsf::sudokufx::enums::LogBackTxt']]],
-  ['authorization_28',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]]
+  ['applyselectedbackgroundimage_24',['applySelectedBackgroundImage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa3a20fc1375df0c6c0d09eac69d7d5b3',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['appname_25',['appName',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a19667f7eb4092cccbc99ee243ef6459a',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
+  ['apporganization_26',['appOrganization',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#ab2cc3130483923dde076644921289fae',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
+  ['appversion_27',['appVersion',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a875f740b3572e5235b6de2afab977ce3',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
+  ['ascii_5flogo_28',['ASCII_LOGO',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html#a5dbee34f9f17dbccdfcc7b7990f208bb',1,'fr::softsf::sudokufx::enums::LogBackTxt']]],
+  ['authorization_29',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]]
 ];

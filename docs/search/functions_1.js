@@ -6,5 +6,6 @@ var searchData=
   ['addtokeystore_3',['addToKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a1632efeaf8085ba148777459a03da030',1,'fr::softsf::sudokufx::configuration::database::ApplicationKeystore']]],
   ['animateflowersvg_4',['animateFlowerSvg',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a05ceacbaf9b2149100b85aa1915a98a2',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['applicationkeystore_5',['ApplicationKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#abce9f9aac60543056baea6f639dfb0ff',1,'fr::softsf::sudokufx::configuration::database::ApplicationKeystore']]],
-  ['applicationkeystoreitest_6',['ApplicationKeystoreITest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#acc1f7ef8772e47d22777115b8db60872',1,'fr::softsf::sudokufx::configuration::database::ApplicationKeystoreITest']]]
+  ['applicationkeystoreitest_6',['ApplicationKeystoreITest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore_i_test.html#acc1f7ef8772e47d22777115b8db60872',1,'fr::softsf::sudokufx::configuration::database::ApplicationKeystoreITest']]],
+  ['applyselectedbackgroundimage_7',['applySelectedBackgroundImage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa3a20fc1375df0c6c0d09eac69d7d5b3',1,'fr::softsf::sudokufx::view::DefaultView']]]
 ];

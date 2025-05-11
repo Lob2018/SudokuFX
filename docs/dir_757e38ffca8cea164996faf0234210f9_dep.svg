@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1026;
+var viewWidth = 1104;
 var viewHeight = 96;
 var sectionId = 'dynsection-0';
 </script>
@@ -58,15 +58,15 @@ var sectionId = 'dynsection-0';
 <g id="clust1" class="cluster">
 <title>clusterdir_df66706d7efa0a9fd8002f7f6346de3d</title>
 <g id="a_clust1"><a xlink:href="dir_df66706d7efa0a9fd8002f7f6346de3d.html" target="_top" xlink:title="softsf">
-<polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-8 8,-80 1010,-80 1010,-8 8,-8"/>
-<text text-anchor="middle" x="509" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">softsf</text>
+<polygon fill="#edf0f7" stroke="#7f7f7f" stroke-dasharray="5,2" points="8,-8 8,-80 1088,-80 1088,-8 8,-8"/>
+<text text-anchor="middle" x="548" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00">softsf</text>
 </a>
 </g>
 </g>
 <g id="clust2" class="cluster">
 <title>clusterdir_757e38ffca8cea164996faf0234210f9</title>
 <g id="a_clust2"><a xlink:href="dir_757e38ffca8cea164996faf0234210f9.html" target="_top">
-<polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="16,-16 16,-52 1002,-52 1002,-16 16,-16"/>
+<polygon fill="#edf0f7" stroke="#404040" stroke-width="2" points="16,-16 16,-52 1080,-52 1080,-16 16,-16"/>
 </a>
 </g>
 </g>
@@ -147,48 +147,57 @@ var sectionId = 'dynsection-0';
 </a>
 </g>
 </g>
-<!-- dir_13f5623da1adebc733daf34fff753157 -->
+<!-- dir_38691298a2a63be893da4057acb6677a -->
 <g id="node10" class="node">
+<title>dir_38691298a2a63be893da4057acb6677a</title>
+<g id="a_node10"><a xlink:href="dir_38691298a2a63be893da4057acb6677a.html" target="_top" xlink:title="navigation">
+<polygon fill="#a2b4d6" stroke="#404040" points="743.12,-44 682.88,-44 682.88,-24 743.12,-24 743.12,-44"/>
+<text text-anchor="middle" x="713" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">navigation</text>
+</a>
+</g>
+</g>
+<!-- dir_13f5623da1adebc733daf34fff753157 -->
+<g id="node11" class="node">
 <title>dir_13f5623da1adebc733daf34fff753157</title>
-<g id="a_node10"><a xlink:href="dir_13f5623da1adebc733daf34fff753157.html" target="_top" xlink:title="repository">
-<polygon fill="#a2b4d6" stroke="#404040" points="742.38,-44 683.62,-44 683.62,-24 742.38,-24 742.38,-44"/>
-<text text-anchor="middle" x="713" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">repository</text>
+<g id="a_node11"><a xlink:href="dir_13f5623da1adebc733daf34fff753157.html" target="_top" xlink:title="repository">
+<polygon fill="#a2b4d6" stroke="#404040" points="820.38,-44 761.62,-44 761.62,-24 820.38,-24 820.38,-44"/>
+<text text-anchor="middle" x="791" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">repository</text>
 </a>
 </g>
 </g>
 <!-- dir_1a3c94203ddb35bf8a6cccc0d80c7ad5 -->
-<g id="node11" class="node">
+<g id="node12" class="node">
 <title>dir_1a3c94203ddb35bf8a6cccc0d80c7ad5</title>
-<g id="a_node11"><a xlink:href="dir_1a3c94203ddb35bf8a6cccc0d80c7ad5.html" target="_top" xlink:title="service">
-<polygon fill="#a2b4d6" stroke="#404040" points="807.75,-44 760.25,-44 760.25,-24 807.75,-24 807.75,-44"/>
-<text text-anchor="middle" x="784" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">service</text>
+<g id="a_node12"><a xlink:href="dir_1a3c94203ddb35bf8a6cccc0d80c7ad5.html" target="_top" xlink:title="service">
+<polygon fill="#a2b4d6" stroke="#404040" points="885.75,-44 838.25,-44 838.25,-24 885.75,-24 885.75,-44"/>
+<text text-anchor="middle" x="862" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">service</text>
 </a>
 </g>
 </g>
 <!-- dir_482b4657db61503fe15b7ae1f26e885d -->
-<g id="node12" class="node">
+<g id="node13" class="node">
 <title>dir_482b4657db61503fe15b7ae1f26e885d</title>
-<g id="a_node12"><a xlink:href="dir_482b4657db61503fe15b7ae1f26e885d.html" target="_top" xlink:title="utils">
-<polygon fill="#a2b4d6" stroke="#404040" points="860,-44 826,-44 826,-24 860,-24 860,-44"/>
-<text text-anchor="middle" x="843" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">utils</text>
+<g id="a_node13"><a xlink:href="dir_482b4657db61503fe15b7ae1f26e885d.html" target="_top" xlink:title="utils">
+<polygon fill="#a2b4d6" stroke="#404040" points="938,-44 904,-44 904,-24 938,-24 938,-44"/>
+<text text-anchor="middle" x="921" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">utils</text>
 </a>
 </g>
 </g>
 <!-- dir_664d5835105ddaaeb330d567537f6eef -->
-<g id="node13" class="node">
+<g id="node14" class="node">
 <title>dir_664d5835105ddaaeb330d567537f6eef</title>
-<g id="a_node13"><a xlink:href="dir_664d5835105ddaaeb330d567537f6eef.html" target="_top" xlink:title="view">
-<polygon fill="#a2b4d6" stroke="#404040" points="914.12,-44 877.88,-44 877.88,-24 914.12,-24 914.12,-44"/>
-<text text-anchor="middle" x="896" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">view</text>
+<g id="a_node14"><a xlink:href="dir_664d5835105ddaaeb330d567537f6eef.html" target="_top" xlink:title="view">
+<polygon fill="#a2b4d6" stroke="#404040" points="992.12,-44 955.88,-44 955.88,-24 992.12,-24 992.12,-44"/>
+<text text-anchor="middle" x="974" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">view</text>
 </a>
 </g>
 </g>
 <!-- dir_b56e19f1982a33341ef13b7017338f1f -->
-<g id="node14" class="node">
+<g id="node15" class="node">
 <title>dir_b56e19f1982a33341ef13b7017338f1f</title>
-<g id="a_node14"><a xlink:href="dir_b56e19f1982a33341ef13b7017338f1f.html" target="_top" xlink:title="viewmodel">
-<polygon fill="#a2b4d6" stroke="#404040" points="994.25,-44 931.75,-44 931.75,-24 994.25,-24 994.25,-44"/>
-<text text-anchor="middle" x="963" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">viewmodel</text>
+<g id="a_node15"><a xlink:href="dir_b56e19f1982a33341ef13b7017338f1f.html" target="_top" xlink:title="viewmodel">
+<polygon fill="#a2b4d6" stroke="#404040" points="1072.25,-44 1009.75,-44 1009.75,-24 1072.25,-24 1072.25,-44"/>
+<text text-anchor="middle" x="1041" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">viewmodel</text>
 </a>
 </g>
 </g>

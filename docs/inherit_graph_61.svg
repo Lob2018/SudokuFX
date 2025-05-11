@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_1_1_menu_builder.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="124.75,-32 0,-32 0,0 124.75,0 124.75,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="middle" x="62.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage</text>
+<text text-anchor="middle" x="62.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu.MenuBuilder</text>
 </a>
 </g>
 </g>

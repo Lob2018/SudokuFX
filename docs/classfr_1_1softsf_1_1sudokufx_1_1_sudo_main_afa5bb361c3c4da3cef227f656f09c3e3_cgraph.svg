@@ -32,10 +32,10 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f9601381fd0f35bc4a5c90205958aec" target="_top" xlink:title="Creates a PauseTransition to delay loading of the next view.">
-<polygon fill="white" stroke="#666666" points="372.88,-82 217.38,-82 217.38,-50 372.88,-50 372.88,-82"/>
-<text text-anchor="start" x="225.38" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.get</text>
-<text text-anchor="middle" x="295.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PauseTransition</text>
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b" target="_top" xlink:title="Creates a PauseTransition to delay loading of the next view.">
+<polygon fill="white" stroke="#666666" points="379.62,-82 210.62,-82 210.62,-50 379.62,-50 379.62,-82"/>
+<text text-anchor="start" x="218.62" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.create</text>
+<text text-anchor="middle" x="295.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewTransition</text>
 </a>
 </g>
 </g>
@@ -43,8 +43,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M170.8,-51.17C182.27,-52.55 194.06,-53.97 205.59,-55.35"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="205.17,-58.83 215.51,-56.55 206,-51.88 205.17,-58.83"/>
+<path fill="none" stroke="#63b8ff" d="M170.8,-51.17C180.07,-52.28 189.55,-53.42 198.94,-54.55"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="198.47,-58.02 208.82,-55.74 199.31,-51.07 198.47,-58.02"/>
 </a>
 </g>
 </g>

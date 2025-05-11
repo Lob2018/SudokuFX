@@ -7,5 +7,6 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1utils =
     [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test" ],
     [ "MyDateTime", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time" ],
     [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ],
-    [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test" ]
+    [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test" ],
+    [ "SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer" ]
 ];
