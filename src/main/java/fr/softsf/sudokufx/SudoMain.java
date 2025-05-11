@@ -108,14 +108,14 @@ public class SudoMain extends Application {
             long startTime = System.currentTimeMillis();
             initScene(splashScreenStage);
 
-            SpringContextInitializer initializer = new SpringContextInitializer(context);
-            Task<Void> task = initializer.createInitializationTask();
-            task.setOnSucceeded(event -> handleSpringContextTaskSuccess(startTime));
-            task.setOnFailed(event -> {
-                Throwable th = task.getException();
+            SpringContextInitializer SpringInitializer = new SpringContextInitializer(context);
+            Task<Void> springInitializeTask = SpringInitializer.createInitializationTask();
+            springInitializeTask.setOnSucceeded(event -> handleSpringContextTaskSuccess(startTime));
+            springInitializeTask.setOnFailed(event -> {
+                Throwable th = springInitializeTask.getException();
                 handleSpringContextTaskFailed(th);
             });
-            initializer.runInitializationTask(task);
+            SpringInitializer.runInitializationTask(springInitializeTask);
         } catch (Exception ex) {
             log.error("██ Exception catch inside start() : {}", ex.getMessage(), ex);
             throw new RuntimeException(ex);
