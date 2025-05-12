@@ -183,7 +183,10 @@ public class SudoMain extends Application {
         }
     }
 
-    /** Initializes the Coordinator if needed, and sets the default scene and DynamicFontSize. */
+    /**
+     * Initializes the Coordinator only if Spring initialization failed. Creates a new Coordinator
+     * with FXMLLoader if coordinator is null, then sets the default scene and dynamic font size.
+     */
     private void initializeCoordinator() {
         if (coordinator == null) {
             coordinator = new Coordinator(new FXMLLoader());
