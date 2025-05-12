@@ -876,6 +876,12 @@ public final class DefaultView implements IMainView {
         helpViewModel.showHelp();
     }
 
+    /** Toggles the language between French and English and reloads the default view. */
+    public void handleToggleLanguage() {
+        I18n.INSTANCE.setLocaleBundle(I18n.INSTANCE.getLanguage().equals("fr") ? "EN" : "FR");
+        coordinator.setRootByFXMLName("default-view");
+    }
+
     /** Configures the primary stage for the full menu view. */
     private void openingConfigureStage() {
         primaryStage
