@@ -228,11 +228,11 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
         - SudoMain.java is the main class
         - Maven run configurations are saved as project files in .idea/runConfigurations
             - Temporary performance evaluation with Java Microbenchmark Harness (JMH):
-                1. Comment out `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`  
+                1. Comment out `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`
                    and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`
                 2. Run `mvn clean` and execute the `[Jmh init.]` configuration
                 3. Manage your benchmark tests in the `fr.softsf.sudokufx.benchmark` package
-                4. **Once benchmarking is complete, uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`  
+                4. **Once benchmarking is complete, uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`
                    and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`**
 
 ## Contributors

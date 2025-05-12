@@ -184,12 +184,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Main entry point for the Sudo application, responsible for initializing the JavaFX interface and the Spring context. </p>
-<p>This class handles the splash screen, Spring context initialization, and transitions between views.</p><ul>
-<li>Initializes the splash screen and Spring context asynchronously.</li>
-<li>Handles errors such as SQL authorization exceptions during startup.</li>
-<li>Manages dynamic FXML loading and view transitions for SplashScreen CrashScreen and the DefaultScreen.</li>
-</ul>
-<p>@SpringBootApplication: Bootstraps the Spring context. @ComponentScan: Scans specified packages for Spring components. </p>
+<p>This class handles the splash screen, Spring context initialization, and transitions between views. - Initializes the splash screen and Spring context asynchronously. - Handles errors such as SQL authorization exceptions during startup. - Manages dynamic FXML loading and view transitions for SplashScreen CrashScreen and the DefaultScreen. @SpringBootApplication: Bootstraps the Spring context. @ComponentScan: Scans specified packages for Spring components. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a704995783c20421c9b428d357752c06b" name="a704995783c20421c9b428d357752c06b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a704995783c20421c9b428d357752c06b">&#9670;&#160;</a></span>createViewTransition()</h2>
@@ -484,14 +479,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the application by setting up the splash screen and asynchronously starting the Spring application context. </p>
-<p>This method performs the following steps:</p><ol type="1">
-<li>Sets the application language based on the host environment.</li>
-<li>Initializes the splash screen view with the provided stage.</li>
-<li>Records the start time for initialization tracking.</li>
-<li>Sets up the main scene for the splash screen.</li>
-<li>Delegates the Spring context initialization to a separate component to keep the UI responsive.</li>
-<li>Registers callbacks to handle success and failure outcomes of the initialization.</li>
-</ol>
+<p>This method performs the following steps: 1. Sets the application language based on the host environment. 2. Initializes the splash screen view with the provided stage. 3. Records the start time for initialization tracking. 4. Sets up the main scene for the splash screen. 5. Delegates the Spring context initialization to a separate component to keep the UI responsive. 6. Registers callbacks to handle success and failure outcomes of the initialization.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">splashScreenStage</td><td>The primary stage for displaying the splash screen. </td></tr>
@@ -650,7 +638,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html">SudoMain</a></li>
-    <li class="footer">Generated on Sun May 11 2025 13:23:38 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon May 12 2025 10:57:41 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

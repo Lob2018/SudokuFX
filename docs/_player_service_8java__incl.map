@@ -1,7 +1,7 @@
 <map id="src/main/java/fr/softsf/sudokufx/service/PlayerService.java" name="src/main/java/fr/softsf/sudokufx/service/PlayerService.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="106,5,344,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,213,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,51,139,97,136,93,196,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="237,96,445,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,46,303,84,300,88,250,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,5,344,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,214,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,51,150,88,147,84,197,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="238,104,445,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,46,315,93,312,97,251,51"/>
 </map>
