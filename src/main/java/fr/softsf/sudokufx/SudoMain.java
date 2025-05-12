@@ -7,7 +7,6 @@ import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -29,13 +28,24 @@ import fr.softsf.sudokufx.utils.SpringContextInitializer;
 import fr.softsf.sudokufx.view.SplashScreenView;
 
 /**
- * Main entry point for the Sudo application, responsible for initializing the JavaFX interface and
- * the Spring context. This class handles the splash screen, Spring context initialization, and
- * transitions between views. - Initializes the splash screen and Spring context asynchronously. -
- * Handles errors such as SQL authorization exceptions during startup. - Manages dynamic FXML
- * loading and view transitions for SplashScreen CrashScreen and the
- * DefaultScreen. @SpringBootApplication: Bootstraps the Spring context. @ComponentScan: Scans
- * specified packages for Spring components.
+ * Entry point of the Sudo application. Responsible for initializing the JavaFX UI and the Spring
+ * context.
+ *
+ * <p>This class orchestrates the application startup process, including:
+ *
+ * <ul>
+ *   <li>Displaying a splash screen
+ *   <li>Initializing the Spring context asynchronously
+ *   <li>Handling startup exceptions, including SQL authorization errors
+ *   <li>Managing FXML view transitions (e.g., SplashScreen, CrashScreen, DefaultScreen)
+ * </ul>
+ *
+ * <p>Annotations:
+ *
+ * <ul>
+ *   <li>{@code @SpringBootApplication} – Bootstraps the Spring context.
+ *   <li>{@code @ComponentScan} – Scans the specified packages for Spring components.
+ * </ul>
  */
 @SpringBootApplication
 @ComponentScan({
@@ -46,15 +56,10 @@ public class SudoMain extends Application {
 
     private static final Logger log = LoggerFactory.getLogger(SudoMain.class);
 
-    private static Scene scene;
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
     private Stage stage;
-
-    public static Scene getScene() {
-        return scene;
-    }
 
     @Autowired private Coordinator coordinator;
 
@@ -90,24 +95,17 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Initializes the main scene.
+     * Initializes the application by:
      *
-     * @param splashScreenStage The stage used for the splash screen
-     */
-    private static void initScene(Stage splashScreenStage) {
-        scene = splashScreenStage.getScene();
-    }
-
-    /**
-     * Initializes the application by setting up the splash screen and asynchronously starting the
-     * Spring application context. This method performs the following steps: 1. Sets the application
-     * language based on the host environment. 2. Initializes the splash screen view with the
-     * provided stage. 3. Records the start time for initialization tracking. 4. Sets up the main
-     * scene for the splash screen. 5. Delegates the Spring context initialization to a separate
-     * component to keep the UI responsive. 6. Registers callbacks to handle success and failure
-     * outcomes of the initialization.
+     * <ol>
+     *   <li>Setting the UI language based on the host system
+     *   <li>Displaying the splash screen
+     *   <li>Recording the initialization start time
+     *   <li>Asynchronously launching the Spring context initialization task
+     *   <li>Handling success or failure outcomes via registered callbacks
+     * </ol>
      *
-     * @param stage The primary stage for displaying the splash screen.
+     * @param stage the primary JavaFX stage used to display the UI
      */
     @Override
     public void start(final Stage stage) {
@@ -116,7 +114,6 @@ public class SudoMain extends Application {
             I18n.INSTANCE.setLanguageBasedOnTheHostEnvironment();
             iSplashScreenView = new SplashScreenView(stage);
             long startTime = System.currentTimeMillis();
-            initScene(stage);
 
             SpringContextInitializer springInitializer = new SpringContextInitializer(context);
             Task<Void> springInitializeTask = springInitializer.createInitializationTask();
@@ -142,7 +139,7 @@ public class SudoMain extends Application {
      */
     private void handleSpringContextTaskSuccess(long startTime) {
         try {
-            initializeFxmlService();
+            initializeCoordinator();
             long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
             createViewTransition("default-view", minimumTimelapse).play();
         } catch (Exception ex) {
@@ -155,16 +152,21 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Handles errors that occur during the Spring context initialization task. This method is
-     * called when the initialization task fails. It attempts to initialize the FXML service, logs
-     * the error, and manages the response based on the type of exception encountered. If the
-     * exception is related to SQL authorization, it displays an appropriate error screen;
-     * otherwise, it exits the application.
+     * Called when the Spring context initialization task fails.
      *
-     * @param throwable The exception that occurred during the initialization process.
+     * <p>Performs the following:
+     *
+     * <ul>
+     *   <li>Attempts to initialize the Coordinator
+     *   <li>Logs the exception
+     *   <li>If the error is related to SQL authorization, displays an error screen
+     *   <li>Otherwise, exits the application
+     * </ul>
+     *
+     * @param throwable the exception thrown during initialization
      */
     private void handleSpringContextTaskFailed(Throwable throwable) {
-        initializeFxmlService();
+        initializeCoordinator();
         log.error(
                 "██ Error in splash screen initialization thread : {}",
                 throwable.getMessage(),
@@ -180,8 +182,8 @@ public class SudoMain extends Application {
         }
     }
 
-    /** Initialize the FxmlService if needed and set his DynamicFontSize */
-    private void initializeFxmlService() {
+    /** Initialize the Coordinator if needed and set his DynamicFontSize */
+    private void initializeCoordinator() {
         if (coordinator == null) {
             coordinator = new Coordinator(new FXMLLoader());
         }

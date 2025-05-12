@@ -9,7 +9,6 @@ import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
@@ -43,7 +42,7 @@ import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
  * View class for the crash screen without business logic. This class is responsible for displaying
  * and managing the crash screen UI.
  */
-public final class CrashScreenView implements IMainView, ISceneProvider {
+public final class CrashScreenView implements IMainView {
 
     private static final Logger log = LoggerFactory.getLogger(CrashScreenView.class);
 
@@ -114,7 +113,8 @@ public final class CrashScreenView implements IMainView, ISceneProvider {
      */
     @Override
     public void openingMainStage(ISplashScreenView iSplashScreenView) {
-        fadeIn(getScene().getRoot());
+        // TODO NOW
+        //        fadeIn(getScene().getRoot());
         showcrashscreen();
         iSplashScreenView.hideSplashScreen();
     }
@@ -173,12 +173,13 @@ public final class CrashScreenView implements IMainView, ISceneProvider {
 
     /** Shows the crash screen stage. */
     private void showcrashscreen() {
-        final Scene s = getScene();
-        crashscreenStage.setScene(s);
+        // TODO NOW
+        //        final Scene s = getScene();
+        //        crashscreenStage.setScene(s);
         crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize() * .7);
         crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize() * .7);
         crashscreenStage.show();
-        s.getRoot().setStyle("-fx-font-size: " + crashScreenFontSize + "px;");
+        //        s.getRoot().setStyle("-fx-font-size: " + crashScreenFontSize + "px;");
         buttonClose.requestFocus();
     }
 

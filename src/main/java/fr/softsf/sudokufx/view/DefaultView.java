@@ -33,8 +33,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.enums.*;
 import fr.softsf.sudokufx.interfaces.IMainView;
-import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.view.components.MyAlert;
 import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
@@ -49,7 +49,7 @@ import fr.softsf.sudokufx.viewmodel.LevelViewModel;
  * Default view class of the Sudoku application. This class is responsible for displaying and
  * managing the UI.
  */
-public final class DefaultView implements IMainView, ISceneProvider {
+public final class DefaultView implements IMainView {
 
     private static final Logger log = LoggerFactory.getLogger(DefaultView.class);
 
@@ -66,6 +66,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
 
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
 
+    @Autowired private Coordinator coordinator;
     @Autowired private HelpViewModel helpViewModel;
     @Autowired private LevelViewModel levelViewModel;
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
@@ -807,7 +808,8 @@ public final class DefaultView implements IMainView, ISceneProvider {
                                         if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
                                                         == ActiveMenuOrSubmenuViewModel.ActiveMenu
                                                                 .MINI
-                                                && getScene()
+                                                && coordinator
+                                                        .getScene()
                                                         .getFocusOwner()
                                                         .getId()
                                                         .equals("menuMiniButtonShow")) {
@@ -885,7 +887,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
                                                         Paths.LOGO_SUDO_PNG_PATH.getPath())))
                                         .toExternalForm()));
         primaryStage.initStyle(StageStyle.DECORATED);
-        primaryStage.setScene(getScene());
+        primaryStage.setScene(coordinator.getScene());
         primaryStage.centerOnScreen();
     }
 
@@ -927,7 +929,7 @@ public final class DefaultView implements IMainView, ISceneProvider {
     public void openingMainStage(final ISplashScreenView iSplashScreenView) {
         openingConfigureStage();
         openingMaximizePrimaryStage();
-        openingFadeIn(getScene().getRoot());
+        openingFadeIn(coordinator.getScene().getRoot());
         openingShowStage();
         iSplashScreenView.hideSplashScreen();
         primaryStage.setAlwaysOnTop(false);

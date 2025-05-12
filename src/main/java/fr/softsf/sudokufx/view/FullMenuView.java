@@ -28,7 +28,6 @@ import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.interfaces.IMainView;
-import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
@@ -38,15 +37,15 @@ import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
  * View class for the full menu screen of the Sudoku application. This class is responsible for
  * displaying and managing the full menu UI.
  */
-public final class FullMenuView implements IMainView, ISceneProvider {
+public final class FullMenuView implements IMainView {
 
     private static final Logger log = LoggerFactory.getLogger(FullMenuView.class);
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Text text1 = new Text("Helloj! ");
     private final Stage primaryStage = new Stage();
-    @Autowired private FullMenuViewModel fullMenuViewModel;
     @Autowired private Coordinator coordinator;
+    @Autowired private FullMenuViewModel fullMenuViewModel;
     @FXML private ToasterVBox toaster;
     @FXML private Label welcomeText;
     @FXML private Label version;
@@ -116,7 +115,7 @@ public final class FullMenuView implements IMainView, ISceneProvider {
                                                         Paths.LOGO_SUDO_PNG_PATH.getPath())))
                                         .toExternalForm()));
         primaryStage.initStyle(StageStyle.DECORATED);
-        primaryStage.setScene(getScene());
+        primaryStage.setScene(coordinator.getScene());
         primaryStage.centerOnScreen();
     }
 
@@ -158,7 +157,7 @@ public final class FullMenuView implements IMainView, ISceneProvider {
     public void openingMainStage(final ISplashScreenView iSplashScreenView) {
         openingConfigureStage();
         openingMaximizePrimaryStage();
-        openingFadeIn(getScene().getRoot());
+        openingFadeIn(coordinator.getScene().getRoot());
         openingShowStage();
         iSplashScreenView.hideSplashScreen();
         primaryStage.setAlwaysOnTop(false);

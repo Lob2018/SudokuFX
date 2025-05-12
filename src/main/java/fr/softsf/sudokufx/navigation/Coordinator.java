@@ -24,7 +24,6 @@ public class Coordinator {
 
     private static final Logger log = LoggerFactory.getLogger(Coordinator.class);
 
-
     private Scene scene;
     private final FXMLLoader fxmlLoader;
     private DynamicFontSize dynamicFontSize;
@@ -52,7 +51,7 @@ public class Coordinator {
      * #setRootByFXMLName(String)} if dynamic resizing is needed.
      */
     public void setDynamicFontSize() {
-        this.dynamicFontSize = new DynamicFontSize();
+        this.dynamicFontSize = new DynamicFontSize(scene);
     }
 
     /**
@@ -61,7 +60,7 @@ public class Coordinator {
      *
      * @param fxml the base name of the FXML file to load (excluding the .fxml extension)
      * @throws IllegalArgumentException if the FXML file is not found
-     * @throws RuntimeException         exits the application if loading fails
+     * @throws RuntimeException exits the application if loading fails
      */
     public void setRootByFXMLName(final String fxml) {
         String path = Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml";
