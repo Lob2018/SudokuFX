@@ -1,25 +1,26 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.Configuration;
 
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Configuration;
-
-import java.io.IOException;
-import java.io.InputStream;
 
 import static fr.softsf.sudokufx.enums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.enums.LogBackTxt.OPTIMIZING;
 import static fr.softsf.sudokufx.enums.Paths.*;
 
-
 /**
- * Configuration class for Logback logging framework. This class sets up and
- * configures Logback for the application.
+ * Configuration class for Logback logging framework. This class sets up and configures Logback for
+ * the application.
  */
 @Configuration
 public class MyLogbackConfig {
@@ -55,9 +56,8 @@ public class MyLogbackConfig {
     }
 
     /**
-     * Prints the application's ASCII logo to the log as an entry message.
-     * If the Spring context is set to exit on refresh,
-     * it also logs an optimizing startup message.
+     * Prints the application's ASCII logo to the log as an entry message. If the Spring context is
+     * set to exit on refresh, it also logs an optimizing startup message.
      */
     public void printLogEntryMessage() {
         log.info(ASCII_LOGO.getLogBackMessage());
@@ -85,8 +85,8 @@ public class MyLogbackConfig {
     }
 
     /**
-     * Sets an invalid logback configuration path for testing purposes. This
-     * method should only be used in test scenarios.
+     * Sets an invalid logback configuration path for testing purposes. This method should only be
+     * used in test scenarios.
      */
     void setLogBackPathForTests() {
         logBackPath = CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS.getPath();

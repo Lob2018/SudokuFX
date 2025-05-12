@@ -1,3 +1,4 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.model;
 
 import jakarta.persistence.*;
@@ -12,12 +13,9 @@ public class PlayerLanguage {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long playerlanguageid;
 
-    @NotNull
-    @Size(max = 2)
-    private String iso;
+    @NotNull @Size(max = 2) private String iso;
 
-    public PlayerLanguage() {
-    }
+    public PlayerLanguage() {}
 
     public PlayerLanguage(Long playerlanguageid, String iso) {
         this.playerlanguageid = playerlanguageid;
@@ -59,4 +57,3 @@ public class PlayerLanguage {
         }
     }
 }
-

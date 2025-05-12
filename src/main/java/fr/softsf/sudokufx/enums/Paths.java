@@ -1,8 +1,7 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.enums;
 
-/**
- * Utility enum for various application-specific paths.
- */
+/** Utility enum for various application-specific paths. */
 public enum Paths {
     RESOURCES_FXML_PATH("/fr/softsf/sudokufx/fxml/"),
     RESOURCES_CSS_PATH("/fr/softsf/sudokufx/style/style.css"),
@@ -22,12 +21,18 @@ public enum Paths {
     WINDOWS_SUDO_FX_BASE_PATH(USER_HOME.getPath() + WINDOWS_BASE_PATH.getPath()),
     LINUX_SUDO_FX_BASE_PATH(USER_HOME.getPath() + LINUX_BASE_PATH.getPath()),
     MACOS_SUDO_FX_BASE_PATH(USER_HOME.getPath() + MACOS_BASE_PATH.getPath()),
-    WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX(WINDOWS_SUDO_FX_BASE_PATH.getPath() + DATA_FOLDER.getPath()),
-    LINUX_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX(LINUX_SUDO_FX_BASE_PATH.getPath() + DATA_FOLDER.getPath()),
-    MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX(MACOS_SUDO_FX_BASE_PATH.getPath() + DATA_FOLDER.getPath()),
-    WINDOWS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX(WINDOWS_SUDO_FX_BASE_PATH.getPath() + LOGS_FOLDER.getPath()),
-    LINUX_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX(LINUX_SUDO_FX_BASE_PATH.getPath() + LOGS_FOLDER.getPath()),
-    MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX(MACOS_SUDO_FX_BASE_PATH.getPath() + LOGS_FOLDER.getPath());
+    WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX(
+            WINDOWS_SUDO_FX_BASE_PATH.getPath() + DATA_FOLDER.getPath()),
+    LINUX_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX(
+            LINUX_SUDO_FX_BASE_PATH.getPath() + DATA_FOLDER.getPath()),
+    MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX(
+            MACOS_SUDO_FX_BASE_PATH.getPath() + DATA_FOLDER.getPath()),
+    WINDOWS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX(
+            WINDOWS_SUDO_FX_BASE_PATH.getPath() + LOGS_FOLDER.getPath()),
+    LINUX_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX(
+            LINUX_SUDO_FX_BASE_PATH.getPath() + LOGS_FOLDER.getPath()),
+    MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX(
+            MACOS_SUDO_FX_BASE_PATH.getPath() + LOGS_FOLDER.getPath());
 
     private final String path;
 

@@ -1,12 +1,13 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.utils.sudoku;
+
+import java.util.concurrent.TimeUnit;
 
 import org.awaitility.Awaitility;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import java.util.concurrent.TimeUnit;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -46,7 +47,10 @@ class GridMasterUTest {
         }
         assertNotEquals(0, countForToBeResolvedGrid);
         // The possibilities
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 33, "The unknown level is set as easy and must be between 0 and 33 percent of possibilities");
+        assertTrue(
+                grids[2][0] >= 0 && grids[2][0] <= 33,
+                "The unknown level is set as easy and must be between 0 and 33 percent of"
+                        + " possibilities");
     }
 
     @ParameterizedTest
@@ -72,13 +76,14 @@ class GridMasterUTest {
         }
         assertNotEquals(0, countForToBeResolvedGrid);
         // The possibilities
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100,
+        assertTrue(
+                grids[2][0] >= 0 && grids[2][0] <= 100,
                 "The possibilities must be between 0 and 100 for level : " + level);
     }
 
     /**
-     * Tests grid generation for different difficulty levels.
-     * Introduces a 600ms delay when the level changes to simulate processing time.
+     * Tests grid generation for different difficulty levels. Introduces a 600ms delay when the
+     * level changes to simulate processing time.
      *
      * @param level The difficulty level.
      */
@@ -105,7 +110,8 @@ class GridMasterUTest {
         }
         assertNotEquals(0, countForToBeResolvedGrid);
         // The possibilities
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100,
+        assertTrue(
+                grids[2][0] >= 0 && grids[2][0] <= 100,
                 "The possibilities must be between 0 and 100 for level : " + level);
         if (gridMasterNormallyLastLevel != level) {
             gridMasterNormallyLastLevel = level;
@@ -118,46 +124,50 @@ class GridMasterUTest {
 
     @Test
     void givenValidGrid_whenResolveGrid_thenGridResolvedSuccessfully() {
-        int[] toBeResolvedGrid = new int[]{
-                5, 3, 4, 6, 7, 8, 9, 0, 2,
-                6, 7, 2, 1, 9, 5, 3, 4, 8,
-                1, 9, 8, 3, 4, 2, 5, 6, 7,
-                8, 5, 9, 7, 6, 1, 4, 2, 3,
-                4, 2, 6, 8, 5, 3, 0, 0, 1,
-                7, 1, 3, 9, 2, 4, 8, 5, 6,
-                9, 6, 1, 5, 3, 7, 2, 8, 4,
-                2, 8, 7, 4, 1, 9, 6, 3, 5,
-                3, 4, 5, 2, 8, 6, 0, 0, 9
-        };
+        int[] toBeResolvedGrid =
+                new int[] {
+                    5, 3, 4, 6, 7, 8, 9, 0, 2,
+                    6, 7, 2, 1, 9, 5, 3, 4, 8,
+                    1, 9, 8, 3, 4, 2, 5, 6, 7,
+                    8, 5, 9, 7, 6, 1, 4, 2, 3,
+                    4, 2, 6, 8, 5, 3, 0, 0, 1,
+                    7, 1, 3, 9, 2, 4, 8, 5, 6,
+                    9, 6, 1, 5, 3, 7, 2, 8, 4,
+                    2, 8, 7, 4, 1, 9, 6, 3, 5,
+                    3, 4, 5, 2, 8, 6, 0, 0, 9
+                };
         int[] result = iGridMaster.resoudreLaGrille(toBeResolvedGrid);
         assertEquals(0, result[0]);
         assertEquals(0, result[1]);
-        assertArrayEquals(new int[]{
-                5, 3, 4, 6, 7, 8, 9, 1, 2,
-                6, 7, 2, 1, 9, 5, 3, 4, 8,
-                1, 9, 8, 3, 4, 2, 5, 6, 7,
-                8, 5, 9, 7, 6, 1, 4, 2, 3,
-                4, 2, 6, 8, 5, 3, 7, 9, 1,
-                7, 1, 3, 9, 2, 4, 8, 5, 6,
-                9, 6, 1, 5, 3, 7, 2, 8, 4,
-                2, 8, 7, 4, 1, 9, 6, 3, 5,
-                3, 4, 5, 2, 8, 6, 1, 7, 9
-        }, toBeResolvedGrid);
+        assertArrayEquals(
+                new int[] {
+                    5, 3, 4, 6, 7, 8, 9, 1, 2,
+                    6, 7, 2, 1, 9, 5, 3, 4, 8,
+                    1, 9, 8, 3, 4, 2, 5, 6, 7,
+                    8, 5, 9, 7, 6, 1, 4, 2, 3,
+                    4, 2, 6, 8, 5, 3, 7, 9, 1,
+                    7, 1, 3, 9, 2, 4, 8, 5, 6,
+                    9, 6, 1, 5, 3, 7, 2, 8, 4,
+                    2, 8, 7, 4, 1, 9, 6, 3, 5,
+                    3, 4, 5, 2, 8, 6, 1, 7, 9
+                },
+                toBeResolvedGrid);
     }
 
     @Test
     void givenInvalidGrid_whenResolveGrid_thenResolutionFails() {
-        int[] toBeResolvedGrid = new int[]{
-                0, 0, 4, 6, 7, 8, 9, 0, 0,
-                6, 0, 2, 1, 9, 5, 0, 4, 0,
-                1, 9, 0, 3, 4, 2, 5, 6, 0,
-                8, 5, 9, 7, 0, 1, 4, 2, 0,
-                4, 0, 6, 8, 0, 3, 0, 0, 0,
-                0, 1, 3, 9, 0, 4, 8, 5, 0,
-                0, 6, 1, 5, 3, 7, 2, 8, 0,
-                2, 0, 7, 4, 1, 9, 6, 3, 0,
-                0, 4, 5, 2, 8, 6, 0, 8, 0
-        };
+        int[] toBeResolvedGrid =
+                new int[] {
+                    0, 0, 4, 6, 7, 8, 9, 0, 0,
+                    6, 0, 2, 1, 9, 5, 0, 4, 0,
+                    1, 9, 0, 3, 4, 2, 5, 6, 0,
+                    8, 5, 9, 7, 0, 1, 4, 2, 0,
+                    4, 0, 6, 8, 0, 3, 0, 0, 0,
+                    0, 1, 3, 9, 0, 4, 8, 5, 0,
+                    0, 6, 1, 5, 3, 7, 2, 8, 0,
+                    2, 0, 7, 4, 1, 9, 6, 3, 0,
+                    0, 4, 5, 2, 8, 6, 0, 8, 0
+                };
         int[] result = iGridMaster.resoudreLaGrille(toBeResolvedGrid);
         assertEquals(-1, result[0]);
         assertEquals(0, result[1]);
@@ -207,8 +217,8 @@ class GridMasterUTest {
         }
         assertNotEquals(0, countForToBeResolvedGrid);
         // The possibilities
-        assertTrue(grids[2][0] >= 0 && grids[2][0] <= 100,
+        assertTrue(
+                grids[2][0] >= 0 && grids[2][0] <= 100,
                 "The possibilities must be between 0 and 100 for level : " + level);
     }
-
 }

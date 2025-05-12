@@ -1,13 +1,14 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration;
-
-import fr.softsf.sudokufx.enums.MyRegex;
 
 import java.util.Objects;
 
+import fr.softsf.sudokufx.enums.MyRegex;
+
 /**
- * Utility enum for managing JVM application properties.
- * Provides methods to retrieve and validate the application name, version, organization, and license
- * from system properties, and manage the Spring context exit behavior.
+ * Utility enum for managing JVM application properties. Provides methods to retrieve and validate
+ * the application name, version, organization, and license from system properties, and manage the
+ * Spring context exit behavior.
  */
 public enum JVMApplicationProperties {
     INSTANCE;
@@ -38,8 +39,8 @@ public enum JVMApplicationProperties {
     }
 
     /**
-     * Sets the system property key to determine if the Spring context should exit on refresh.
-     * Used for testing purposes.
+     * Sets the system property key to determine if the Spring context should exit on refresh. Used
+     * for testing purposes.
      */
     void setSpringContextExitInRefresh() {
         springContextExitOnRefresh = APP_NAME_PROPERTY;
@@ -53,7 +54,11 @@ public enum JVMApplicationProperties {
     public String getAppName() {
         if (appName.isEmpty()) {
             String systemValue = System.getProperty(APP_NAME_PROPERTY);
-            appName = MyRegex.INSTANCE.isValidatedByRegex(systemValue, MyRegex.INSTANCE.getAlphanumericPattern()) ? systemValue : "";
+            appName =
+                    MyRegex.INSTANCE.isValidatedByRegex(
+                                    systemValue, MyRegex.INSTANCE.getAlphanumericPattern())
+                            ? systemValue
+                            : "";
         }
         return appName;
     }
@@ -61,12 +66,17 @@ public enum JVMApplicationProperties {
     /**
      * Retrieves the current application version from system properties.
      *
-     * @return The current application version prefixed with 'v' if valid, or an empty string if invalid or not set.
+     * @return The current application version prefixed with 'v' if valid, or an empty string if
+     *     invalid or not set.
      */
     public String getAppVersion() {
         if (appVersion.isEmpty()) {
             String systemValue = System.getProperty(APP_VERSION_PROPERTY);
-            appVersion = MyRegex.INSTANCE.isValidatedByRegex(systemValue, MyRegex.INSTANCE.getVersionPattern()) ? "v" + systemValue : "";
+            appVersion =
+                    MyRegex.INSTANCE.isValidatedByRegex(
+                                    systemValue, MyRegex.INSTANCE.getVersionPattern())
+                            ? "v" + systemValue
+                            : "";
         }
         return appVersion;
     }
@@ -74,12 +84,17 @@ public enum JVMApplicationProperties {
     /**
      * Retrieves the current application organization from system properties.
      *
-     * @return The current application organization if valid, or an empty string if invalid or not set.
+     * @return The current application organization if valid, or an empty string if invalid or not
+     *     set.
      */
     public String getAppOrganization() {
         if (appOrganization.isEmpty()) {
             String systemValue = System.getProperty(APP_ORGANIZATION_PROPERTY);
-            appOrganization = MyRegex.INSTANCE.isValidatedByRegex(systemValue, MyRegex.INSTANCE.getAlphanumericPattern()) ? systemValue : "";
+            appOrganization =
+                    MyRegex.INSTANCE.isValidatedByRegex(
+                                    systemValue, MyRegex.INSTANCE.getAlphanumericPattern())
+                            ? systemValue
+                            : "";
         }
         return appOrganization;
     }
@@ -92,56 +107,46 @@ public enum JVMApplicationProperties {
     public String getAppLicense() {
         if (appLicense.isEmpty()) {
             String systemValue = System.getProperty(APP_LICENSE_PROPERTY);
-            appLicense = MyRegex.INSTANCE.isValidatedByRegex(systemValue, MyRegex.INSTANCE.getAlphanumericPattern()) ? systemValue : "";
+            appLicense =
+                    MyRegex.INSTANCE.isValidatedByRegex(
+                                    systemValue, MyRegex.INSTANCE.getAlphanumericPattern())
+                            ? systemValue
+                            : "";
         }
         return appLicense;
     }
 
-    /**
-     * Initialize the Spring context exit behavior to null for testing purposes.
-     */
+    /** Initialize the Spring context exit behavior to null for testing purposes. */
     void setInitSpringContextExitForTests() {
         springContextExit = null;
     }
 
-    /**
-     * Sets the Spring context exit behavior to "onRefresh" for testing purposes.
-     */
+    /** Sets the Spring context exit behavior to "onRefresh" for testing purposes. */
     void setOnRefreshSpringContextExitForTests() {
         springContextExit = ON_REFRESH;
     }
 
-    /**
-     * Sets the Spring context exit behavior to "never" for testing purposes.
-     */
+    /** Sets the Spring context exit behavior to "never" for testing purposes. */
     void setNeverSpringContextExitForTests() {
         springContextExit = "never";
     }
 
-    /**
-     * Resets the application name for testing purposes.
-     */
+    /** Resets the application name for testing purposes. */
     void setEmptyAppNamePropertyForTests() {
         appName = "";
     }
 
-    /**
-     * Resets the application version for testing purposes.
-     */
+    /** Resets the application version for testing purposes. */
     void setEmptyAppVersionPropertyForTests() {
         appVersion = "";
     }
 
-    /**
-     * Resets the application organization for testing purposes.
-     */
+    /** Resets the application organization for testing purposes. */
     void setEmptyAppOrganizationPropertyForTests() {
         appOrganization = "";
     }
 
-    /**
-     * Resets the application license for testing purposes.
-     */
+    /** Resets the application license for testing purposes. */
     void setEmptyAppLicensePropertyForTests() {
         appLicense = "";
     }

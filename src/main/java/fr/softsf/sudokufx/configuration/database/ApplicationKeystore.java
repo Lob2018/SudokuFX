@@ -1,32 +1,35 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.database;
 
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
-
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.SecretKeySpec;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.security.*;
 import java.security.cert.CertificateException;
+import java.security.*;
 import java.util.UUID;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 
 /**
- * Manages the application's keystore for the secure storage of a symmetric key and database credentials,
- * handling their creation, loading, and encryption.
+ * Manages the application's keystore for the secure storage of a symmetric key and database
+ * credentials, handling their creation, loading, and encryption.
  */
 @Component
 final class ApplicationKeystore implements IKeystore {
 
     private static final Logger log = LoggerFactory.getLogger(ApplicationKeystore.class);
 
-    private static final String KEYSTORE_PASSWORD_FROM_UUID = String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
+    private static final String KEYSTORE_PASSWORD_FROM_UUID =
+            String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
     private static final char[] pwdArray = KEYSTORE_PASSWORD_FROM_UUID.toCharArray();
     private static final String SYMMETRIC_KEY_ALIAS = "db-encryption-secret";
@@ -50,12 +53,13 @@ final class ApplicationKeystore implements IKeystore {
     /**
      * Write data to the keystore file
      *
-     * @param ks               The Keystore
+     * @param ks The Keystore
      * @param keystoreFileName The Keystore filename
-     * @param pwdArray         The keystore password
+     * @param pwdArray The keystore password
      */
     @ExcludedFromCoverageReportGenerated
-    private static void writeTheKeystore(final KeyStore ks, final String keystoreFileName, final char[] pwdArray) {
+    private static void writeTheKeystore(
+            final KeyStore ks, final String keystoreFileName, final char[] pwdArray) {
         try (FileOutputStream fos = new FileOutputStream(keystoreFileName)) {
             ks.store(fos, pwdArray);
         } catch (Exception e) {
@@ -64,8 +68,8 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Configures the keystore by managing the entire process of creating, loading,
-     * and encrypting the necessary keys and credentials.
+     * Configures the keystore by managing the entire process of creating, loading, and encrypting
+     * the necessary keys and credentials.
      */
     public void setupApplicationKeystore() {
         log.info("\n▓▓ ApplicationKeystore starts");
@@ -78,39 +82,43 @@ final class ApplicationKeystore implements IKeystore {
             credentials(USERNAME_ALIAS);
             credentials(PASS_ALIAS);
         } catch (Exception e) {
-            log.error("██ Exception catch inside ApplicationKeystore setupApplicationKeystore() : {}", e.getMessage(), e);
+            log.error(
+                    "██ Exception catch inside ApplicationKeystore setupApplicationKeystore() : {}",
+                    e.getMessage(),
+                    e);
         }
         log.info("\n▓▓ ApplicationKeystore is ready");
     }
 
-    /**
-     * Create or update the Keystore
-     */
+    /** Create or update the Keystore */
     @ExcludedFromCoverageReportGenerated
     private void createOrUpdateKeystore() {
         try (FileOutputStream fos = new FileOutputStream(keystoreFilePath, true)) {
             ks.load(null, pwdArray);
             ks.store(fos, pwdArray);
-        } catch (IOException | NoSuchAlgorithmException | CertificateException | KeyStoreException e) {
+        } catch (IOException
+                | NoSuchAlgorithmException
+                | CertificateException
+                | KeyStoreException e) {
             log.error("██ Exception catch inside createOrUpdateKeystore() : {}", e.getMessage(), e);
         }
     }
 
-    /**
-     * Load the Keystore
-     */
+    /** Load the Keystore */
     @ExcludedFromCoverageReportGenerated
     private void loadKeyStore() {
         try (FileInputStream fileInputStream = new FileInputStream(keystoreFilePath)) {
             ks.load(fileInputStream, pwdArray);
         } catch (Exception e) {
-            log.error("██ Exception catch inside loadKeyStore() - JVM doesn't support type OR password is wrong : {}", e.getMessage(), e);
+            log.error(
+                    "██ Exception catch inside loadKeyStore() - JVM doesn't support type OR"
+                            + " password is wrong : {}",
+                    e.getMessage(),
+                    e);
         }
     }
 
-    /**
-     * Check the symmetric key presence
-     */
+    /** Check the symmetric key presence */
     @ExcludedFromCoverageReportGenerated
     private void symmetricKey() {
         try {
@@ -120,28 +128,35 @@ final class ApplicationKeystore implements IKeystore {
                 symmetricKeyNotInKeystore();
             }
         } catch (KeyStoreException e) {
-            log.error("██ Exception catch inside symmetricKey/ks.containsAlias(SYMMETRIC_KEY_ALIAS) : {}", e.getMessage(), e);
+            log.error(
+                    "██ Exception catch inside symmetricKey/ks.containsAlias(SYMMETRIC_KEY_ALIAS) :"
+                            + " {}",
+                    e.getMessage(),
+                    e);
         }
     }
 
-    /**
-     * Get the symmetric key and set encryption service
-     */
+    /** Get the symmetric key and set encryption service */
     @ExcludedFromCoverageReportGenerated
     private void symmetricKeyIsInKeystore() {
         try {
-            KeyStore.SecretKeyEntry entry = (KeyStore.SecretKeyEntry) ks.getEntry(SYMMETRIC_KEY_ALIAS, new KeyStore.PasswordProtection(pwdArray));
+            KeyStore.SecretKeyEntry entry =
+                    (KeyStore.SecretKeyEntry)
+                            ks.getEntry(
+                                    SYMMETRIC_KEY_ALIAS, new KeyStore.PasswordProtection(pwdArray));
             if (entry != null) {
                 iEncryptionService = new SecretKeyEncryptionServiceAESGCM(entry.getSecretKey());
             }
         } catch (NoSuchAlgorithmException | UnrecoverableEntryException | KeyStoreException e) {
-            log.error("██ Exception catch inside symmetricKeyIsNotInKeystore/ks.getEntry(SYMMETRIC_KEY_ALIAS :{}", e.getMessage(), e);
+            log.error(
+                    "██ Exception catch inside"
+                            + " symmetricKeyIsNotInKeystore/ks.getEntry(SYMMETRIC_KEY_ALIAS :{}",
+                    e.getMessage(),
+                    e);
         }
     }
 
-    /**
-     * Set the symmetric key and set encryption service
-     */
+    /** Set the symmetric key and set encryption service */
     @ExcludedFromCoverageReportGenerated
     private void symmetricKeyNotInKeystore() {
         try {
@@ -151,7 +166,11 @@ final class ApplicationKeystore implements IKeystore {
             iEncryptionService = new SecretKeyEncryptionServiceAESGCM(symmetricKey);
             addToKeystore(SYMMETRIC_KEY_ALIAS, symmetricKey);
         } catch (NoSuchAlgorithmException e) {
-            log.error("██ Exception catch inside symmetricKeyIsInKeystore/keyGen = KeyGenerator.getInstance : {}", e.getMessage(), e);
+            log.error(
+                    "██ Exception catch inside symmetricKeyIsInKeystore/keyGen ="
+                            + " KeyGenerator.getInstance : {}",
+                    e.getMessage(),
+                    e);
         }
     }
 
@@ -169,7 +188,10 @@ final class ApplicationKeystore implements IKeystore {
                 setCredentials(alias);
             }
         } catch (KeyStoreException e) {
-            log.error("██ Exception catch inside credentials/ks.containsAlias(alias) : {}", e.getMessage(), e);
+            log.error(
+                    "██ Exception catch inside credentials/ks.containsAlias(alias) : {}",
+                    e.getMessage(),
+                    e);
         }
     }
 
@@ -181,17 +203,18 @@ final class ApplicationKeystore implements IKeystore {
     @ExcludedFromCoverageReportGenerated
     private void setCredentials(final String alias) {
         try {
-            String secret = switch (alias) {
-                case USERNAME_ALIAS -> {
-                    username = generateSecret.generatePassaySecret();
-                    yield iEncryptionService.encrypt(username);
-                }
-                case PASS_ALIAS -> {
-                    password = generateSecret.generatePassaySecret();
-                    yield iEncryptionService.encrypt(password);
-                }
-                default -> "";
-            };
+            String secret =
+                    switch (alias) {
+                        case USERNAME_ALIAS -> {
+                            username = generateSecret.generatePassaySecret();
+                            yield iEncryptionService.encrypt(username);
+                        }
+                        case PASS_ALIAS -> {
+                            password = generateSecret.generatePassaySecret();
+                            yield iEncryptionService.encrypt(password);
+                        }
+                        default -> "";
+                    };
             SecretKey secretKey = new SecretKeySpec(secret.getBytes(), "AES");
             addToKeystore(alias, secretKey);
         } catch (Exception e) {
@@ -210,14 +233,21 @@ final class ApplicationKeystore implements IKeystore {
             KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(pwdArray));
             if (entry instanceof KeyStore.SecretKeyEntry secretEntry) {
                 byte[] keyBytes = secretEntry.getSecretKey().getEncoded();
-                String value = iEncryptionService.decrypt(new String(keyBytes, StandardCharsets.UTF_8));
+                String value =
+                        iEncryptionService.decrypt(new String(keyBytes, StandardCharsets.UTF_8));
                 if (alias.equals(USERNAME_ALIAS)) {
                     username = value;
                 } else if (alias.equals(PASS_ALIAS)) {
                     password = value;
                 }
                 // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-                System.out.println("GET alias - username - password - secret : " + alias + " - " + username + " - " + password);
+                System.out.println(
+                        "GET alias - username - password - secret : "
+                                + alias
+                                + " - "
+                                + username
+                                + " - "
+                                + password);
             } else {
                 log.warn("▓▓ Entry is not an instance of the Keystore");
             }
@@ -229,7 +259,7 @@ final class ApplicationKeystore implements IKeystore {
     /**
      * Add alias:secret in the Keystore
      *
-     * @param alias     The alias
+     * @param alias The alias
      * @param secretKey The secret
      */
     @ExcludedFromCoverageReportGenerated
@@ -239,7 +269,11 @@ final class ApplicationKeystore implements IKeystore {
         try {
             ks.setEntry(alias, secret, entryPassword);
         } catch (KeyStoreException e) {
-            log.error("██ Exception catch inside addToKeystore/ks.setEntry(alias, secret, entryPassword) : {}", e.getMessage(), e);
+            log.error(
+                    "██ Exception catch inside addToKeystore/ks.setEntry(alias, secret,"
+                            + " entryPassword) : {}",
+                    e.getMessage(),
+                    e);
         }
         writeTheKeystore(ks, keystoreFilePath, pwdArray);
     }
@@ -254,4 +288,3 @@ final class ApplicationKeystore implements IKeystore {
         return password;
     }
 }
-

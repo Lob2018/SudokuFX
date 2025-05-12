@@ -1,5 +1,8 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.enums;
 
 public enum DifficultyLevel {
-    EASY, MEDIUM, DIFFICULT;
+    EASY,
+    MEDIUM,
+    DIFFICULT;
 }

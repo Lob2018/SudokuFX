@@ -1,22 +1,23 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.interfaces.mapper;
 
-import fr.softsf.sudokufx.model.Game;
-import fr.softsf.sudokufx.dto.GameDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
+import fr.softsf.sudokufx.dto.GameDto;
+import fr.softsf.sudokufx.model.Game;
+
 /**
- * This interface defines methods for mapping objects of type
- * {@link Game} to objects of type {@link GameDto} and vice versa.
- * It uses MapStruct to automatically generate the implementations of
- * these mapping methods.
+ * This interface defines methods for mapping objects of type {@link Game} to objects of type {@link
+ * GameDto} and vice versa. It uses MapStruct to automatically generate the implementations of these
+ * mapping methods.
  */
 @Mapper(uses = {IPlayerMapper.class, IGridMapper.class, IGameLevelMapper.class})
 public interface IGameMapper {
     /**
-     * This instance is created by MapStruct and provides access to the
-     * mapping methods defined in this interface.
+     * This instance is created by MapStruct and provides access to the mapping methods defined in
+     * this interface.
      */
     IGameMapper INSTANCE = Mappers.getMapper(IGameMapper.class);
 
@@ -24,8 +25,7 @@ public interface IGameMapper {
      * Maps a Game object to a GameDto object.
      *
      * @param game the Game object to be mapped.
-     * @return a GameDto object representing the data of the
-     * provided Game object.
+     * @return a GameDto object representing the data of the provided Game object.
      */
     @Mapping(target = "gameid", source = "game.gameid")
     @Mapping(target = "grididDto", source = "game.gridid")
@@ -37,8 +37,7 @@ public interface IGameMapper {
      * Maps a GameDto object to a Game object.
      *
      * @param dto the GameDto object to be mapped.
-     * @return a Game object representing the data of the
-     * provided GameDto object.
+     * @return a Game object representing the data of the provided GameDto object.
      */
     @Mapping(target = "gameid", source = "dto.gameid")
     @Mapping(target = "gridid", source = "dto.grididDto")

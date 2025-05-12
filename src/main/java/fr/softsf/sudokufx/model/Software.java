@@ -1,10 +1,11 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.model;
+
+import java.time.LocalDateTime;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
-
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "software")
@@ -14,24 +15,22 @@ public class Software {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long softwareid;
 
-    @NotNull
-    @Size(max = 128)
-    private String currentversion;
+    @NotNull @Size(max = 128) private String currentversion;
 
-    @NotNull
-    @Size(max = 128)
-    private String lastversion;
+    @NotNull @Size(max = 128) private String lastversion;
 
-    @NotNull
-    private LocalDateTime createdat;
+    @NotNull private LocalDateTime createdat;
 
-    @NotNull
-    private LocalDateTime updatedat;
+    @NotNull private LocalDateTime updatedat;
 
-    public Software() {
-    }
+    public Software() {}
 
-    public Software(Long softwareid, String currentversion, String lastversion, LocalDateTime createdat, LocalDateTime updatedat) {
+    public Software(
+            Long softwareid,
+            String currentversion,
+            String lastversion,
+            LocalDateTime createdat,
+            LocalDateTime updatedat) {
         this.softwareid = softwareid;
         this.currentversion = currentversion;
         this.lastversion = lastversion;

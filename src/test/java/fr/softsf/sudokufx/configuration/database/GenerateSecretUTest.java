@@ -1,12 +1,14 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.database;
 
-import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.enums.MyRegex;
+import java.util.regex.Pattern;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.regex.Pattern;
+import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.enums.MyRegex;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,7 +26,8 @@ class GenerateSecretUTest {
     void givenPassayGenerator_whenGeneratePassaySecret_thenSecretIsValid() {
         String secret = generateSecret.generatePassaySecret();
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
+        assertTrue(
+                MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
                 "Generated secret should be valid according to secretPattern");
     }
 
@@ -32,22 +35,22 @@ class GenerateSecretUTest {
     void givenInvalidSecrets_whenIsValidatedByRegex_thenReturnsFalse() {
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
         String[] invalidSecrets = {
-                "",
-                "LLLLLLLLLLLLLLLLLLLLLLLL",
-                "llllllllllllllllllllllll",
-                "@@@@@@@@@@@@@@@@@@@@@@@@",
-                "111111111111111111111111",
-                "                        ",
-                "uCQD1x$^UeWfn#OAb!YjYFHo",
-                "-CQD1x$^UeWfn#OAb!Y1YFH1",
-                "9uCQD1xi^UeWfntOAbmY1YFH",
-                "9uCQD1x$^UeWfn#OAb!Y1YFH1",
-                "9uCQD1x$^UeWfn#OAb!Y1YF"
+            "",
+            "LLLLLLLLLLLLLLLLLLLLLLLL",
+            "llllllllllllllllllllllll",
+            "@@@@@@@@@@@@@@@@@@@@@@@@",
+            "111111111111111111111111",
+            "                        ",
+            "uCQD1x$^UeWfn#OAb!YjYFHo",
+            "-CQD1x$^UeWfn#OAb!Y1YFH1",
+            "9uCQD1xi^UeWfntOAbmY1YFH",
+            "9uCQD1x$^UeWfn#OAb!Y1YFH1",
+            "9uCQD1x$^UeWfn#OAb!Y1YF"
         };
         for (String secret : invalidSecrets) {
-            assertFalse(MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
+            assertFalse(
+                    MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
                     "Secret should be invalid: " + secret);
         }
     }
 }
-

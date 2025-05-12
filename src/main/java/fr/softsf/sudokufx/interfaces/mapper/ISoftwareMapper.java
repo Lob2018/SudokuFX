@@ -1,21 +1,22 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.interfaces.mapper;
 
-import fr.softsf.sudokufx.dto.SoftwareDto;
-import fr.softsf.sudokufx.model.Software;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+import fr.softsf.sudokufx.dto.SoftwareDto;
+import fr.softsf.sudokufx.model.Software;
+
 /**
- * This interface defines methods for mapping objects of type
- * {@link Software} to objects of type {@link SoftwareDto} and vice versa.
- * It uses MapStruct to automatically generate the implementations
- * of these mapping methods.
+ * This interface defines methods for mapping objects of type {@link Software} to objects of type
+ * {@link SoftwareDto} and vice versa. It uses MapStruct to automatically generate the
+ * implementations of these mapping methods.
  */
 @Mapper
 public interface ISoftwareMapper {
     /**
-     * This instance is created by MapStruct and provides access to the
-     * mapping methods defined in this interface.
+     * This instance is created by MapStruct and provides access to the mapping methods defined in
+     * this interface.
      */
     ISoftwareMapper INSTANCE = Mappers.getMapper(ISoftwareMapper.class);
 
@@ -23,8 +24,7 @@ public interface ISoftwareMapper {
      * Maps a Software object to a SoftwareDto object.
      *
      * @param software the Software object to be mapped.
-     * @return a SoftwareDto object representing the data of the
-     * provided Software object.
+     * @return a SoftwareDto object representing the data of the provided Software object.
      */
     SoftwareDto mapSoftwareToDto(Software software);
 
@@ -32,9 +32,7 @@ public interface ISoftwareMapper {
      * Maps a SoftwareDto object to a Software object.
      *
      * @param dto the SoftwareDto object to be mapped.
-     * @return a Software object representing the data of the
-     * provided SoftwareDto object.
+     * @return a Software object representing the data of the provided SoftwareDto object.
      */
     Software mapSoftwareDtoToSoftware(SoftwareDto dto);
 }
-

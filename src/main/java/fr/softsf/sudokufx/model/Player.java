@@ -1,16 +1,18 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.model;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import java.time.LocalDateTime;
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-import java.time.LocalDateTime;
-import java.util.LinkedHashSet;
-import java.util.Set;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "player")
@@ -43,27 +45,30 @@ public class Player {
     @OrderBy("updatedat")
     private Set<Game> games;
 
-    @NotNull
-    @Size(max = 256)
-    @Column(nullable = false, unique = true)
+    @NotNull @Size(max = 256) @Column(nullable = false, unique = true)
     private String name;
 
-    @NotNull
-    private Boolean isselected = false;
+    @NotNull private Boolean isselected = false;
 
-    @NotNull
-    private LocalDateTime createdat;
+    @NotNull private LocalDateTime createdat;
 
-    @NotNull
-    private LocalDateTime updatedat;
+    @NotNull private LocalDateTime updatedat;
 
     public Player() {
         this.games = new LinkedHashSet<>();
         this.isselected = false;
     }
 
-    public Player(Long playerid, PlayerLanguage playerlanguageid, Background backgroundid, Menu menuid,
-                  Set<Game> games, String name, Boolean isselected, LocalDateTime createdat, LocalDateTime updatedat) {
+    public Player(
+            Long playerid,
+            PlayerLanguage playerlanguageid,
+            Background backgroundid,
+            Menu menuid,
+            Set<Game> games,
+            String name,
+            Boolean isselected,
+            LocalDateTime createdat,
+            LocalDateTime updatedat) {
         this.playerid = playerid;
         this.playerlanguageid = playerlanguageid;
         this.backgroundid = backgroundid;
@@ -213,7 +218,16 @@ public class Player {
         }
 
         public Player build() {
-            return new Player(playerid, playerlanguageid, backgroundid, menuid, games, name, isselected, createdat, updatedat);
+            return new Player(
+                    playerid,
+                    playerlanguageid,
+                    backgroundid,
+                    menuid,
+                    games,
+                    name,
+                    isselected,
+                    createdat,
+                    updatedat);
         }
     }
 }

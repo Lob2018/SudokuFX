@@ -1,24 +1,32 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.viewmodel;
 
-import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
+import fr.softsf.sudokufx.exceptions.ExceptionTools;
+
 /**
- * ViewModel responsible for managing the active menu in the application.
- * It provides functionality to set and retrieve the active menu, which can be bound to the UI
- * to control which menu is visible.
+ * ViewModel responsible for managing the active menu in the application. It provides functionality
+ * to set and retrieve the active menu, which can be bound to the UI to control which menu is
+ * visible.
  */
 public class ActiveMenuOrSubmenuViewModel {
 
-    /**
-     * Enum representing the different possible menus
-     */
+    /** Enum representing the different possible menus */
     public enum ActiveMenu {
-        NONE, HIDDEN, MINI, MAXI, PLAYER, SOLVE, BACKUP, BACKGROUND
+        NONE,
+        HIDDEN,
+        MINI,
+        MAXI,
+        PLAYER,
+        SOLVE,
+        BACKUP,
+        BACKGROUND
     }
 
-    private final ObjectProperty<ActiveMenu> activeMenu = new SimpleObjectProperty<>(ActiveMenu.MAXI);
+    private final ObjectProperty<ActiveMenu> activeMenu =
+            new SimpleObjectProperty<>(ActiveMenu.MAXI);
 
     public ObjectProperty<ActiveMenu> getActiveMenu() {
         return activeMenu;
@@ -32,10 +40,9 @@ public class ActiveMenuOrSubmenuViewModel {
      */
     public void setActiveMenu(ActiveMenu menu) {
         if (menu == null) {
-            ExceptionTools.INSTANCE.logAndThrowIllegalArgument("ActiveMenu cannot be null. Please provide a valid menu value.");
+            ExceptionTools.INSTANCE.logAndThrowIllegalArgument(
+                    "ActiveMenu cannot be null. Please provide a valid menu value.");
         }
         activeMenu.set(menu);
     }
 }
-
-

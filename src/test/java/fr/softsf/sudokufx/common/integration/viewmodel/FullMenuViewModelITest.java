@@ -1,17 +1,19 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.common.integration.viewmodel;
 
-import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.configuration.database.DataSourceConfigTest;
-import fr.softsf.sudokufx.dto.SoftwareDto;
-import fr.softsf.sudokufx.service.SoftwareService;
-import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
+import java.util.Optional;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ActiveProfiles;
 
-import java.util.Optional;
+import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.configuration.database.DataSourceConfigTest;
+import fr.softsf.sudokufx.dto.SoftwareDto;
+import fr.softsf.sudokufx.service.SoftwareService;
+import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -21,19 +23,20 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @Import(DataSourceConfigTest.class)
 class FullMenuViewModelITest {
 
-    @Autowired
-    private SoftwareService softwareService;
+    @Autowired private SoftwareService softwareService;
 
-    @Autowired
-    private FullMenuViewModel fullMenuViewModel;
+    @Autowired private FullMenuViewModel fullMenuViewModel;
 
     @Test
     void givenSoftware_whenGetSoftware_thenVersionMatch() {
         fullMenuViewModel.test();
         Optional<SoftwareDto> software = softwareService.getSoftware();
         assertTrue(software.isPresent(), "The software should be found.");
-        assertEquals("1.0.0", software.get().currentversion(), "The current version should be '1.0.0'");
+        assertEquals(
+                "1.0.0", software.get().currentversion(), "The current version should be '1.0.0'");
         assertEquals("1.0.0", software.get().lastversion(), "The latest version should be '1.0.0'");
-        assertTrue(fullMenuViewModel.welcomeProperty().get().contains("Version : 1.0.0"), "The message should contain the version.");
+        assertTrue(
+                fullMenuViewModel.welcomeProperty().get().contains("Version : 1.0.0"),
+                "The message should contain the version.");
     }
 }

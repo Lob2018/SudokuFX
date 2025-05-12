@@ -141,7 +141,7 @@
         <artifactId>spotless-maven-plugin</artifactId>
         <version>2.44.4</version>
         <configuration>
-          <ratchetFrom>origin/main</ratchetFrom>
+          <!--          <ratchetFrom>origin/main</ratchetFrom>-->
           <skip>${spotless-maven-plugin.skip}</skip>
           <formats>
             <!-- independent formats -->
@@ -242,7 +242,7 @@
                              optionally, Spotless can set copyright years by digging
                              through git history (see "license" section below) -->
             <licenseHeader>
-              <content>/* (C)$YEAR */</content>
+              <content>/* SudokuFX © $YEAR Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */</content>
               <!-- or <file>${project.basedir}/license-header</file> -->
             </licenseHeader>
           </java>

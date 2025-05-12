@@ -1,14 +1,13 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.common.unit.utils;
 
 import org.junit.jupiter.api.Test;
-
 
 import static fr.softsf.sudokufx.enums.Paths.*;
 import static fr.softsf.sudokufx.enums.ToastLevels.*;
 import static fr.softsf.sudokufx.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
 import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-
 
 class MyEnumsUTest {
 
@@ -70,5 +69,4 @@ class MyEnumsUTest {
         assertNotNull(GITHUB_REPOSITORY_RELEASES_URL.getUrl());
         assertNotNull(GITHUB_API_REPOSITORY_TAGS_URL.getUrl());
     }
-
 }

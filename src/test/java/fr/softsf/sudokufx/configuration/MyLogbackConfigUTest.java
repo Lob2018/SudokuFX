@@ -1,9 +1,9 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration;
 
-import ch.qos.logback.classic.spi.ILoggingEvent;
-import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudokufx.configuration.os.OsFolderFactoryManager;
-import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,8 +14,10 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.nio.file.Files;
-import java.nio.file.Path;
+import ch.qos.logback.classic.spi.ILoggingEvent;
+import ch.qos.logback.core.read.ListAppender;
+import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
+import fr.softsf.sudokufx.configuration.os.OsFolderFactoryManager;
 
 import static fr.softsf.sudokufx.enums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.enums.LogBackTxt.OPTIMIZING;
@@ -39,17 +41,21 @@ class MyLogbackConfigUTest {
     void setup() {
         logWatcher = new ListAppender<>();
         logWatcher.start();
-        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MyLogbackConfig.class)).addAppender(logWatcher);
+        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MyLogbackConfig.class))
+                .addAppender(logWatcher);
     }
 
     @AfterEach
     void tearDown() {
-        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MyLogbackConfig.class)).detachAndStopAllAppenders();
+        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(MyLogbackConfig.class))
+                .detachAndStopAllAppenders();
     }
 
     @Test
     void givenLogbackConfig_whenGetLogsFolderPath_thenCorrectPathReturned() {
-        assertEquals(myLogbackConfig.getLogsFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
+        assertEquals(
+                myLogbackConfig.getLogsFolderPath(),
+                iCurrentIOsFolderFactory.getOsLogsFolderPath());
     }
 
     @Test
@@ -77,7 +83,8 @@ class MyLogbackConfigUTest {
         JVMApplicationProperties.INSTANCE.setOnRefreshSpringContextExitForTests();
         myLogbackConfig.printLogEntryMessage();
         assertTrue(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
-        assert (logWatcher.list.getLast().getFormattedMessage()).contains(OPTIMIZING.getLogBackMessage());
+        assert (logWatcher.list.getLast().getFormattedMessage())
+                .contains(OPTIMIZING.getLogBackMessage());
     }
 
     @Test
@@ -85,10 +92,7 @@ class MyLogbackConfigUTest {
         JVMApplicationProperties.INSTANCE.setInitSpringContextExitForTests();
         myLogbackConfig.printLogEntryMessage();
         assertFalse(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
-        assert (logWatcher.list.getLast().getFormattedMessage()).contains(ASCII_LOGO.getLogBackMessage());
+        assert (logWatcher.list.getLast().getFormattedMessage())
+                .contains(ASCII_LOGO.getLogBackMessage());
     }
-
-
 }
-
-

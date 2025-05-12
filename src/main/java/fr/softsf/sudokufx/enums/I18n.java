@@ -1,19 +1,18 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.enums;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
- * Utility enum for internationalization (i18n) support. This enum manages
- * language resources and provides methods to switch between languages and
- * retrieve localized strings.
+ * Utility enum for internationalization (i18n) support. This enum manages language resources and
+ * provides methods to switch between languages and retrieve localized strings.
  */
 public enum I18n {
-
     INSTANCE;
 
     private static final Logger log = LoggerFactory.getLogger(I18n.class);
@@ -33,11 +32,10 @@ public enum I18n {
     }
 
     /**
-     * Sets the application's locale based on the provided language code.
-     * This method updates the resource bundle used for translations and sets the
-     * default locale for the application. If the provided language code is "EN",
-     * the locale is set to English (United States). Any other value defaults to
-     * French (France).
+     * Sets the application's locale based on the provided language code. This method updates the
+     * resource bundle used for translations and sets the default locale for the application. If the
+     * provided language code is "EN", the locale is set to English (United States). Any other value
+     * defaults to French (France).
      *
      * @param i18n The language code ("EN" for English, any other value defaults to French).
      * @return The singleton instance of {@code I18n}.
@@ -73,8 +71,7 @@ public enum I18n {
     /**
      * Gets the current language of the application.
      *
-     * @return The language code as a String (e.g., "fr" for French, "en" for
-     * English)
+     * @return The language code as a String (e.g., "fr" for French, "en" for English)
      */
     public String getLanguage() {
         Locale locale = bundle.getLocale();
@@ -82,8 +79,8 @@ public enum I18n {
     }
 
     /**
-     * Gets the language code of the host environment.
-     * Uses the default locale to return the language code (e.g., "en" for English, "fr" for French).
+     * Gets the language code of the host environment. Uses the default locale to return the
+     * language code (e.g., "en" for English, "fr" for French).
      *
      * @return The language code as a String.
      */
@@ -92,12 +89,11 @@ public enum I18n {
     }
 
     /**
-     * Sets the locale bundle based on the host environment's language.
-     * If the host environment's language is French ("fr"), uses the default locale bundle.
-     * Otherwise, uses the English locale bundle ("EN").
+     * Sets the locale bundle based on the host environment's language. If the host environment's
+     * language is French ("fr"), uses the default locale bundle. Otherwise, uses the English locale
+     * bundle ("EN").
      */
     public void setLanguageBasedOnTheHostEnvironment() {
         setLocaleBundle("fr".equals(getHostEnvironmentLanguageCode()) ? "" : "EN");
     }
-
 }

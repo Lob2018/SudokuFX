@@ -1,22 +1,22 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.viewmodel;
-
-import fr.softsf.sudokufx.dto.SoftwareDto;
-import fr.softsf.sudokufx.utils.sudoku.IGridMaster;
-import fr.softsf.sudokufx.service.SoftwareService;
-import fr.softsf.sudokufx.service.VersionService;
-import javafx.beans.property.*;
-import javafx.concurrent.Task;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Optional;
+import javafx.beans.property.*;
+import javafx.concurrent.Task;
 
-/**
- * FullMenuViewModel with business logic (not final)
- */
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import fr.softsf.sudokufx.dto.SoftwareDto;
+import fr.softsf.sudokufx.service.SoftwareService;
+import fr.softsf.sudokufx.service.VersionService;
+import fr.softsf.sudokufx.utils.sudoku.IGridMaster;
+
+/** FullMenuViewModel with business logic (not final) */
 @Component
 // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
 public class FullMenuViewModel {
@@ -30,7 +30,10 @@ public class FullMenuViewModel {
     private final StringProperty githubVersion = new SimpleStringProperty("");
     private StringProperty welcome;
 
-    public FullMenuViewModel(SoftwareService softwareService, IGridMaster iGridMaster, VersionService versionService) {
+    public FullMenuViewModel(
+            SoftwareService softwareService,
+            IGridMaster iGridMaster,
+            VersionService versionService) {
         this.softwareService = softwareService;
         this.iGridMaster = iGridMaster;
         this.versionService = versionService;
@@ -68,17 +71,15 @@ public class FullMenuViewModel {
 
     private void updateSoftware(SoftwareDto softwareToUpdate) {
 
-
         checkGitHubVersion();
 
-
-        SoftwareDto softwareDto = new SoftwareDto(
-                softwareToUpdate.softwareid(),
-                "1.0.0",
-                "1.0.0",
-                softwareToUpdate.createdat(),
-                LocalDateTime.now()
-        );
+        SoftwareDto softwareDto =
+                new SoftwareDto(
+                        softwareToUpdate.softwareid(),
+                        "1.0.0",
+                        "1.0.0",
+                        softwareToUpdate.createdat(),
+                        LocalDateTime.now());
 
         Optional<SoftwareDto> updatedSoftwareOptional = softwareService.updateSoftware(softwareDto);
         if (updatedSoftwareOptional.isPresent()) {
@@ -98,11 +99,20 @@ public class FullMenuViewModel {
                 }
             }
             System.out.println("###### UPDATED ####### " + updatedSoftwareOptional.get());
-            setWelcome("Version : " + updatedSoftwareOptional.get().currentversion() +
-                    "\nMise à jour : " + updatedSoftwareOptional.get().updatedat() +
-                    "\n" + formattedGrilleResolue +
-                    "\n" + formattedGrilleAResoudre +
-                    "\n\n Niveau " + niveau + "/3 avec " + grilles[2][0] + "% de difficuté");
+            setWelcome(
+                    "Version : "
+                            + updatedSoftwareOptional.get().currentversion()
+                            + "\nMise à jour : "
+                            + updatedSoftwareOptional.get().updatedat()
+                            + "\n"
+                            + formattedGrilleResolue
+                            + "\n"
+                            + formattedGrilleAResoudre
+                            + "\n\n Niveau "
+                            + niveau
+                            + "/3 avec "
+                            + grilles[2][0]
+                            + "% de difficuté");
 
         } else {
             System.out.println("Erreur lors de la mise à jour du logiciel.");
@@ -112,22 +122,18 @@ public class FullMenuViewModel {
     private void checkGitHubVersion() {
         Task<Boolean> task = versionService.checkLatestVersion();
         githubVersion.bind(task.messageProperty());
-        task.setOnSucceeded(event -> {
-            version.set(task.getValue());
-            githubVersion.unbind();
-        });
+        task.setOnSucceeded(
+                event -> {
+                    version.set(task.getValue());
+                    githubVersion.unbind();
+                });
         task.setOnFailed(event -> githubVersion.unbind());
         new Thread(task).start();
     }
 
     private void createSoftware() {
-        SoftwareDto softwareDto = new SoftwareDto(
-                null,
-                "1.0.0",
-                "1.0.0",
-                LocalDateTime.now(),
-                LocalDateTime.now()
-        );
+        SoftwareDto softwareDto =
+                new SoftwareDto(null, "1.0.0", "1.0.0", LocalDateTime.now(), LocalDateTime.now());
 
         Optional<SoftwareDto> createdSoftware = softwareService.updateSoftware(softwareDto);
         System.out.println("###### CREATED ####### " + createdSoftware);

@@ -1,13 +1,15 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.model;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.NotNull;
+import java.time.LocalDateTime;
+
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
-import java.time.LocalDateTime;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "game")
@@ -35,20 +37,24 @@ public class Game {
     @JoinColumn(name = "levellevelid")
     private GameLevel levelid;
 
-    @NotNull
-    private Boolean isselected = false;
+    @NotNull private Boolean isselected = false;
 
-    @NotNull
-    private LocalDateTime createdat;
+    @NotNull private LocalDateTime createdat;
 
-    @NotNull
-    private LocalDateTime updatedat;
+    @NotNull private LocalDateTime updatedat;
 
     public Game() {
         this.isselected = false;
     }
 
-    public Game(Long gameid, Grid gridid, Player playerid, GameLevel levelid, Boolean isselected, LocalDateTime createdat, LocalDateTime updatedat) {
+    public Game(
+            Long gameid,
+            Grid gridid,
+            Player playerid,
+            GameLevel levelid,
+            Boolean isselected,
+            LocalDateTime createdat,
+            LocalDateTime updatedat) {
         this.gameid = gameid;
         this.gridid = gridid;
         this.playerid = playerid;

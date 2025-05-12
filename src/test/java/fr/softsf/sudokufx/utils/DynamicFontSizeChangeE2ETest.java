@@ -1,9 +1,10 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.utils;
 
 import java.util.concurrent.TimeoutException;
-
-import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
-import static org.junit.jupiter.api.Assertions.*;
+import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -13,10 +14,8 @@ import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
-import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
-
+import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
+import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(ApplicationExtension.class)
 class DynamicFontSizeChangeE2ETest {
@@ -35,10 +34,11 @@ class DynamicFontSizeChangeE2ETest {
 
     @Test
     void givenStageResized_whenUpdateFontSize_thenFontSizeAdjustedCorrectly(FxRobot robot) {
-        robot.interact(() -> {
-            stage.setWidth(300);
-            stage.setHeight(350);
-        });
+        robot.interact(
+                () -> {
+                    stage.setWidth(300);
+                    stage.setHeight(350);
+                });
         assertTrue(Double.isFinite(DISPOSABLE_SIZE.getSize()));
         assertEquals(6.57, dynamicFontSize.getCurrentFontSize(), 0.01);
     }

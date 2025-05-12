@@ -1,21 +1,22 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.interfaces.mapper;
 
-import fr.softsf.sudokufx.model.Grid;
-import fr.softsf.sudokufx.dto.GridDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+import fr.softsf.sudokufx.dto.GridDto;
+import fr.softsf.sudokufx.model.Grid;
+
 /**
- * This interface defines methods for mapping objects of type
- * {@link Grid} to objects of type {@link GridDto} and vice versa.
- * It uses MapStruct to automatically generate the implementations of
- * these mapping methods.
+ * This interface defines methods for mapping objects of type {@link Grid} to objects of type {@link
+ * GridDto} and vice versa. It uses MapStruct to automatically generate the implementations of these
+ * mapping methods.
  */
 @Mapper
 public interface IGridMapper {
     /**
-     * This instance is created by MapStruct and provides access to the
-     * mapping methods defined in this interface.
+     * This instance is created by MapStruct and provides access to the mapping methods defined in
+     * this interface.
      */
     IGridMapper INSTANCE = Mappers.getMapper(IGridMapper.class);
 
@@ -23,8 +24,7 @@ public interface IGridMapper {
      * Maps a Grid object to a GridDto object.
      *
      * @param grid the Grid object to be mapped.
-     * @return a GridDto object representing the data of the
-     * provided Grid object.
+     * @return a GridDto object representing the data of the provided Grid object.
      */
     GridDto mapGridToDto(Grid grid);
 
@@ -32,9 +32,7 @@ public interface IGridMapper {
      * Maps a GridDto object to a Grid object.
      *
      * @param dto the GridDto object to be mapped.
-     * @return a Grid object representing the data of the
-     * provided GridDto object.
+     * @return a Grid object representing the data of the provided GridDto object.
      */
     Grid mapGridDtoToGrid(GridDto dto);
 }
-

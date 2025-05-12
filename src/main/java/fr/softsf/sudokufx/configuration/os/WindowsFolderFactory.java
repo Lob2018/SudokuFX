@@ -1,3 +1,4 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.os;
 
 /**
@@ -15,9 +16,8 @@ final class WindowsFolderFactory implements IOsFolderFactory {
      * @param logsFolderPath The intended path for the logs folder
      */
     public WindowsFolderFactory(String dataFolderPath, String logsFolderPath) {
-        final String[] folders = OsFolderInitializer.INSTANCE.initializeFolders(
-                dataFolderPath, logsFolderPath
-        );
+        final String[] folders =
+                OsFolderInitializer.INSTANCE.initializeFolders(dataFolderPath, logsFolderPath);
         dataFolderForSudoFx = folders[0];
         logsFolderForSudoFx = folders[1];
     }

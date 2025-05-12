@@ -61,7 +61,7 @@ jobs:
       - name: Start Xvfb
         run: |
           Xvfb :99 -screen 0 1920x1080x24 &
-          echo "DISPLAY=:99" >> $GITHUB_ENV        
+          echo "DISPLAY=:99" >> $GITHUB_ENV
 
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL

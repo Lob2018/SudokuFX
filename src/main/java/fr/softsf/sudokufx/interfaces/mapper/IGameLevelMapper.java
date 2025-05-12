@@ -1,21 +1,22 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.interfaces.mapper;
 
-import fr.softsf.sudokufx.model.GameLevel;
-import fr.softsf.sudokufx.dto.GameLevelDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+import fr.softsf.sudokufx.dto.GameLevelDto;
+import fr.softsf.sudokufx.model.GameLevel;
+
 /**
- * This interface defines methods for mapping objects of type
- * {@link GameLevel} to objects of type {@link GameLevelDto} and vice versa.
- * It uses MapStruct to automatically generate the implementations of
- * these mapping methods.
+ * This interface defines methods for mapping objects of type {@link GameLevel} to objects of type
+ * {@link GameLevelDto} and vice versa. It uses MapStruct to automatically generate the
+ * implementations of these mapping methods.
  */
 @Mapper
 public interface IGameLevelMapper {
     /**
-     * This instance is created by MapStruct and provides access to the
-     * mapping methods defined in this interface.
+     * This instance is created by MapStruct and provides access to the mapping methods defined in
+     * this interface.
      */
     IGameLevelMapper INSTANCE = Mappers.getMapper(IGameLevelMapper.class);
 
@@ -23,8 +24,7 @@ public interface IGameLevelMapper {
      * Maps a GameLevel object to a GameLevelDto object.
      *
      * @param gameLevel the Background object to be mapped.
-     * @return a GameLevelDto object representing the data of the
-     * provided GameLevel object.
+     * @return a GameLevelDto object representing the data of the provided GameLevel object.
      */
     GameLevelDto mapGameLevelToDto(GameLevel gameLevel);
 
@@ -32,8 +32,7 @@ public interface IGameLevelMapper {
      * Maps a GameLevelDto object to a GameLevel object.
      *
      * @param dto the GameLevelDto object to be mapped.
-     * @return a GameLevel object representing the data of the
-     * provided GameLevelDto object.
+     * @return a GameLevel object representing the data of the provided GameLevelDto object.
      */
     GameLevel mapGameLevelDtoToGameLevel(GameLevelDto dto);
 }

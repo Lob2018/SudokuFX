@@ -1,11 +1,12 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.database;
-
-import fr.softsf.sudokufx.SudoMain;
 
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import fr.softsf.sudokufx.SudoMain;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -16,7 +17,7 @@ class ApplicationKeystoreITest {
     private static String userInit;
     private final ApplicationKeystore keystore;
 
-     @Autowired
+    @Autowired
     public ApplicationKeystoreITest(ApplicationKeystore keystore) {
         this.keystore = keystore;
     }

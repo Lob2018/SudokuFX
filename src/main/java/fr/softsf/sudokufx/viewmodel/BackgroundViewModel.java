@@ -1,31 +1,31 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.viewmodel;
+
+import java.io.File;
+import javafx.application.Platform;
+import javafx.concurrent.Task;
+import javafx.concurrent.WorkerStateEvent;
+import javafx.scene.control.ColorPicker;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
+import javafx.scene.paint.Color;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.ScreenSize;
 import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
-import javafx.concurrent.WorkerStateEvent;
-import javafx.scene.control.ColorPicker;
-import javafx.scene.image.Image;
-import javafx.scene.layout.*;
-import javafx.scene.paint.Color;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
-
-import java.io.File;
-
-import javafx.application.Platform;
-import javafx.concurrent.Task;
 
 /**
- * ViewModel for managing and applying background (color and image) to a GridPane.
- * - Sets and applies background color.
- * - Handles image file selection, validation, and asynchronous loading.
- * - Resizes images to fit the available space while maintaining aspect ratio.
- * - Displays notifications and a loading spinner during image loading.
- * - Handles success and error cases during image loading.
+ * ViewModel for managing and applying background (color and image) to a GridPane. - Sets and
+ * applies background color. - Handles image file selection, validation, and asynchronous loading. -
+ * Resizes images to fit the available space while maintaining aspect ratio. - Displays
+ * notifications and a loading spinner during image loading. - Handles success and error cases
+ * during image loading.
  */
 @Component
 public class BackgroundViewModel {
@@ -33,16 +33,20 @@ public class BackgroundViewModel {
     private static final Logger log = LoggerFactory.getLogger(BackgroundViewModel.class);
 
     /**
-     * Initializes the GridPane background with either a predefined color or image.
-     * If a color is defined, applies it and updates the ColorPicker.
-     * If an image path is defined, loads and applies the image asynchronously.
+     * Initializes the GridPane background with either a predefined color or image. If a color is
+     * defined, applies it and updates the ColorPicker. If an image path is defined, loads and
+     * applies the image asynchronously.
      *
-     * @param sudokuFX                  The GridPane to update.
+     * @param sudokuFX The GridPane to update.
      * @param menuBackgroundButtonColor The ColorPicker to update with the color value.
-     * @param toaster                   The toaster for user notifications.
-     * @param spinner                   The spinner to show loading state.
+     * @param toaster The toaster for user notifications.
+     * @param spinner The spinner to show loading state.
      */
-    public void init(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, ToasterVBox toaster, SpinnerGridPane spinner) {
+    public void init(
+            GridPane sudokuFX,
+            ColorPicker menuBackgroundButtonColor,
+            ToasterVBox toaster,
+            SpinnerGridPane spinner) {
         // TODO: SERVICE GET & SET COLOR OR IMAGE
         // IF COLOR
         setColorFromModel(sudokuFX, menuBackgroundButtonColor, "99b3ffcd");
@@ -54,7 +58,7 @@ public class BackgroundViewModel {
      * Sets the background color of the specified GridPane.
      *
      * @param sudokuFX The GridPane to update.
-     * @param color    The color to apply as the background.
+     * @param color The color to apply as the background.
      */
     public void updateBackgroundColorAndApply(GridPane sudokuFX, Color color) {
         // TODO: SERVICE STORE COLOR AS color.toString().substring(2)
@@ -62,18 +66,22 @@ public class BackgroundViewModel {
     }
 
     /**
-     * Handles image file selection, validating the file format and initiating the image loading process.
+     * Handles image file selection, validating the file format and initiating the image loading
+     * process.
      *
      * @param selectedFile The selected image file.
-     * @param toaster      The toaster component for displaying notifications.
-     * @param spinner      The spinner component for showing loading state.
-     * @param sudokuFX     The GridPane where the image background will be applied.
+     * @param toaster The toaster component for displaying notifications.
+     * @param spinner The spinner component for showing loading state.
+     * @param sudokuFX The GridPane where the image background will be applied.
      */
-    public void handleFileImageChooser(File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
+    public void handleFileImageChooser(
+            File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
         if (selectedFile != null && isValidImage(selectedFile)) {
             loadImage(selectedFile, toaster, spinner, sudokuFX);
         } else {
-            String errorMessage = I18n.INSTANCE.getValue("toast.error.backgroundviewmodel.handlefileimagechooser");
+            String errorMessage =
+                    I18n.INSTANCE.getValue(
+                            "toast.error.backgroundviewmodel.handlefileimagechooser");
             log.error("██ Exception handleFileImageChooser : " + errorMessage);
             toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
         }
@@ -82,11 +90,12 @@ public class BackgroundViewModel {
     /**
      * Applies a background color to the GridPane and sets it in the ColorPicker.
      *
-     * @param sudokuFX                  The GridPane to update.
+     * @param sudokuFX The GridPane to update.
      * @param menuBackgroundButtonColor The ColorPicker to update.
-     * @param colorValueFromModel       Hex color string (e.g., "99b3ffcd").
+     * @param colorValueFromModel Hex color string (e.g., "99b3ffcd").
      */
-    private void setColorFromModel(GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel) {
+    private void setColorFromModel(
+            GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel) {
         Color color = intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16));
         menuBackgroundButtonColor.setValue(color);
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
@@ -103,8 +112,7 @@ public class BackgroundViewModel {
                 (colorValue >> 24) & 0xFF,
                 (colorValue >> 16) & 0xFF,
                 (colorValue >> 8) & 0xFF,
-                (colorValue & 0xFF) / 255.0
-        );
+                (colorValue & 0xFF) / 255.0);
     }
 
     /**
@@ -115,40 +123,59 @@ public class BackgroundViewModel {
      */
     private boolean isValidImage(File file) {
         String fileName = file.getName().toLowerCase();
-        return fileName.endsWith(".jpg") || fileName.endsWith(".jpeg") || fileName.endsWith(".png") || fileName.endsWith(".bmp");
+        return fileName.endsWith(".jpg")
+                || fileName.endsWith(".jpeg")
+                || fileName.endsWith(".png")
+                || fileName.endsWith(".bmp");
     }
 
     /**
      * Initiates the image loading and resizing process in a background task.
      *
      * @param selectedFile The selected image file.
-     * @param toaster      The toaster component for displaying notifications.
-     * @param spinner      The spinner component for showing loading state.
-     * @param sudokuFX     The GridPane where the image background will be applied.
+     * @param toaster The toaster component for displaying notifications.
+     * @param spinner The spinner component for showing loading state.
+     * @param sudokuFX The GridPane where the image background will be applied.
      */
-    private void loadImage(File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
+    private void loadImage(
+            File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
         String fileUri = selectedFile.toURI().toString();
         spinner.showSpinner(true);
-        toaster.addToast(I18n.INSTANCE.getValue("toast.msg.backgroundviewmodel.loadImage"), fileUri, ToastLevels.INFO, false);
-        Task<BackgroundImage> backgroundTask = new Task<>() {
-            @Override
-            protected BackgroundImage call() {
-                try {
-                    Image tempImage = new Image(fileUri, false);
-                    double scaleFactor = calculateImageScaleFactor(tempImage);
-                    Image resizedImage = new Image(fileUri, tempImage.getWidth() * scaleFactor, tempImage.getHeight() * scaleFactor, true, true);
-                    if (resizedImage.isError()) {
-                        log.error("██ Exception resizedImage.isError() : {}", resizedImage.getException().getMessage(), resizedImage.getException());
-                        return null;
+        toaster.addToast(
+                I18n.INSTANCE.getValue("toast.msg.backgroundviewmodel.loadImage"),
+                fileUri,
+                ToastLevels.INFO,
+                false);
+        Task<BackgroundImage> backgroundTask =
+                new Task<>() {
+                    @Override
+                    protected BackgroundImage call() {
+                        try {
+                            Image tempImage = new Image(fileUri, false);
+                            double scaleFactor = calculateImageScaleFactor(tempImage);
+                            Image resizedImage =
+                                    new Image(
+                                            fileUri,
+                                            tempImage.getWidth() * scaleFactor,
+                                            tempImage.getHeight() * scaleFactor,
+                                            true,
+                                            true);
+                            if (resizedImage.isError()) {
+                                log.error(
+                                        "██ Exception resizedImage.isError() : {}",
+                                        resizedImage.getException().getMessage(),
+                                        resizedImage.getException());
+                                return null;
+                            }
+                            return createBackgroundImage(resizedImage);
+                        } catch (Exception e) {
+                            log.error("██ Exception loadImage call() : {}", e.getMessage(), e);
+                            return null;
+                        }
                     }
-                    return createBackgroundImage(resizedImage);
-                } catch (Exception e) {
-                    log.error("██ Exception loadImage call() : {}", e.getMessage(), e);
-                    return null;
-                }
-            }
-        };
-        backgroundTask.setOnSucceeded(e -> onImageTaskComplete(backgroundTask, toaster, spinner, sudokuFX));
+                };
+        backgroundTask.setOnSucceeded(
+                e -> onImageTaskComplete(backgroundTask, toaster, spinner, sudokuFX));
         backgroundTask.setOnFailed(e -> onImageTaskError(e, toaster, spinner));
         new Thread(backgroundTask).start();
     }
@@ -157,39 +184,58 @@ public class BackgroundViewModel {
      * Handles the success case of the image loading task.
      *
      * @param backgroundTask The background task.
-     * @param toaster        The toaster component for displaying notifications.
-     * @param spinner        The spinner component for showing loading state.
-     * @param sudokuFX       The GridPane where the image background will be applied.
+     * @param toaster The toaster component for displaying notifications.
+     * @param spinner The spinner component for showing loading state.
+     * @param sudokuFX The GridPane where the image background will be applied.
      */
-    private void onImageTaskComplete(Task<BackgroundImage> backgroundTask, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
-        Platform.runLater(() -> {
-            toaster.removeToast();
-            BackgroundImage backgroundImage = backgroundTask.getValue();
-            if (backgroundImage != null) {
-                // TODO: SERVICE SET
-                sudokuFX.setBackground(new Background(backgroundImage));
-            } else {
-                toaster.addToast(I18n.INSTANCE.getValue("toast.error.backgroundviewmodel.onimagetaskcomplete"), "", ToastLevels.ERROR, true);
-            }
-            spinner.showSpinner(false);
-        });
+    private void onImageTaskComplete(
+            Task<BackgroundImage> backgroundTask,
+            ToasterVBox toaster,
+            SpinnerGridPane spinner,
+            GridPane sudokuFX) {
+        Platform.runLater(
+                () -> {
+                    toaster.removeToast();
+                    BackgroundImage backgroundImage = backgroundTask.getValue();
+                    if (backgroundImage != null) {
+                        // TODO: SERVICE SET
+                        sudokuFX.setBackground(new Background(backgroundImage));
+                    } else {
+                        toaster.addToast(
+                                I18n.INSTANCE.getValue(
+                                        "toast.error.backgroundviewmodel.onimagetaskcomplete"),
+                                "",
+                                ToastLevels.ERROR,
+                                true);
+                    }
+                    spinner.showSpinner(false);
+                });
     }
 
     /**
      * Handles the failure case of the image loading task.
      *
-     * @param e       The event that contains the failure information.
+     * @param e The event that contains the failure information.
      * @param toaster The toaster component for displaying notifications.
      * @param spinner The spinner component for showing loading state.
      */
-    private void onImageTaskError(WorkerStateEvent e, ToasterVBox toaster, SpinnerGridPane spinner) {
+    private void onImageTaskError(
+            WorkerStateEvent e, ToasterVBox toaster, SpinnerGridPane spinner) {
         Throwable exception = e.getSource().getException();
-        Platform.runLater(() -> {
-            toaster.removeToast();
-            log.error("██ Exception onImageTaskError : {}", exception.getMessage(), exception);
-            toaster.addToast(I18n.INSTANCE.getValue("error.backgroundviewmodel.onimagetaskerror"), (exception == null ? "" : exception.getMessage()), ToastLevels.ERROR, true);
-            spinner.showSpinner(false);
-        });
+        Platform.runLater(
+                () -> {
+                    toaster.removeToast();
+                    log.error(
+                            "██ Exception onImageTaskError : {}",
+                            exception.getMessage(),
+                            exception);
+                    toaster.addToast(
+                            I18n.INSTANCE.getValue("error.backgroundviewmodel.onimagetaskerror"),
+                            (exception == null ? "" : exception.getMessage()),
+                            ToastLevels.ERROR,
+                            true);
+                    spinner.showSpinner(false);
+                });
     }
 
     /**
@@ -221,8 +267,9 @@ public class BackgroundViewModel {
                 new BackgroundSize(
                         resizedImage.getWidth() / 3,
                         resizedImage.getHeight() / 3,
-                        false, false, false, false
-                )
-        );
+                        false,
+                        false,
+                        false,
+                        false));
     }
 }

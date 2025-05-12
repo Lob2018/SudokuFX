@@ -1,23 +1,22 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.utils.sudoku;
-
-import fr.softsf.sudokufx.enums.SecureRandomGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-/**
- * Provides essential functionalities for generating and solving Sudoku puzzles.
- */
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import fr.softsf.sudokufx.enums.SecureRandomGenerator;
+
+/** Provides essential functionalities for generating and solving Sudoku puzzles. */
 @Component
 final class GridMaster implements IGridMaster {
 
     private static final Logger log = LoggerFactory.getLogger(IGridMaster.class);
-
 
     private static final int ORDRE = 3;
     private static final int DIMENSION = ORDRE * ORDRE;
@@ -29,7 +28,8 @@ final class GridMaster implements IGridMaster {
     private static final int MOYEN_MAX_CACHEES = 50;
     private static final int MOYEN_MOY_CACHEES = (MOYEN_MIN_CACHEES + MOYEN_MAX_CACHEES) / 2;
     private static final int DIFFICILE_MAX_CACHEES = 59;
-    private static final int DIFFICILE_MOY_CACHEES = (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
+    private static final int DIFFICILE_MOY_CACHEES =
+            (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
     private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     private int moyenMinPossibilites = 16533;
@@ -75,7 +75,7 @@ final class GridMaster implements IGridMaster {
     /**
      * Initialise le tableau des possibilités pour chaque case.
      *
-     * @param grille       Grille Sudoku actuelle.
+     * @param grille Grille Sudoku actuelle.
      * @param possibilites Tableau à initialiser avec les possibilités.
      */
     private static void initialiserPossibilites(final int[] grille, final int[] possibilites) {
@@ -94,11 +94,12 @@ final class GridMaster implements IGridMaster {
      * Élimine la valeur des possibilités des cases alentours.
      *
      * @param possibilites Tableau des possibilités.
-     * @param ligne        Ligne de la case.
-     * @param colonne      Colonne de la case.
-     * @param valeur       Valeur à éliminer.
+     * @param ligne Ligne de la case.
+     * @param colonne Colonne de la case.
+     * @param valeur Valeur à éliminer.
      */
-    private static void eliminerPossibilite(final int[] possibilites, final int ligne, final int colonne, final int valeur) {
+    private static void eliminerPossibilite(
+            final int[] possibilites, final int ligne, final int colonne, final int valeur) {
         int masque = ~(1 << (valeur - 1));
         int sauvegarde = possibilites[ligne * DIMENSION + colonne];
         // Élimination de la valeur sur la ligne
@@ -123,15 +124,16 @@ final class GridMaster implements IGridMaster {
 
     /**
      * Vérifie la cohérence entre la grille et les possibilités.
-     * <p>
-     * Cette méthode s'assure que chaque valeur non nulle dans la grille
-     * est bien présente dans les possibilités correspondantes.
      *
-     * @param grille       La grille Sudoku actuelle.
+     * <p>Cette méthode s'assure que chaque valeur non nulle dans la grille est bien présente dans
+     * les possibilités correspondantes.
+     *
+     * @param grille La grille Sudoku actuelle.
      * @param possibilites Le tableau des possibilités pour chaque case.
      * @return 0 si la vérification est réussie, -1 si une incohérence est détectée.
      */
-    private static int verifierLaCoherenceEntreLaGrilleEtLesPossibilites(final int[] grille, final int[] possibilites) {
+    private static int verifierLaCoherenceEntreLaGrilleEtLesPossibilites(
+            final int[] grille, final int[] possibilites) {
         for (int i = 0; i < NOMBRE_CASES; i++) {
             int valeur = grille[i];
             if (valeur != 0 && (possibilites[i] & (1 << (valeur - 1))) == 0) {
@@ -144,11 +146,12 @@ final class GridMaster implements IGridMaster {
     /**
      * Trouve la case vide avec le moins de possibilités.
      *
-     * @param grille       Grille Sudoku actuelle.
+     * @param grille Grille Sudoku actuelle.
      * @param possibilites Tableau des possibilités.
      * @return L'index de la case trouvée, ou -1 si la grille est complète.
      */
-    private static int laCaseVideAvecLeMoinsDePossibilites(final int[] grille, final int[] possibilites) {
+    private static int laCaseVideAvecLeMoinsDePossibilites(
+            final int[] grille, final int[] possibilites) {
         int meilleurIndex = -1;
         int meilleurScore = Integer.MAX_VALUE;
         for (int i = 0; i < NOMBRE_CASES; i++) {
@@ -178,20 +181,24 @@ final class GridMaster implements IGridMaster {
 
     /**
      * Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté.
-     * La stratégie de génération ajuste le nombre de cases masquées en fonction du temps écoulé depuis
-     * la dernière génération. Si une nouvelle grille est demandée très rapidement (moins de 500ms),
-     * le nombre de cases masquées est intentionnellement ajusté pour standardiser la grille.
+     * La stratégie de génération ajuste le nombre de cases masquées en fonction du temps écoulé
+     * depuis la dernière génération. Si une nouvelle grille est demandée très rapidement (moins de
+     * 500ms), le nombre de cases masquées est intentionnellement ajusté pour standardiser la
+     * grille.
      *
-     * @param niveau          Le niveau de difficulté : 1 (et autres valeurs) : facile, 2 : moyen, 3 : difficile).
-     * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
-     * @param grilleAResoudre La grille à résoudre, avec ses cases masquées à 0.
-     *                        IMPORTANT : Ce tableau est modifié directement par la fonction.
-     * @return La somme du nombre de possibilités pour chaque case non résolue dans la grille à résoudre.
-     * @implNote La méthode utilise une approche itérative pour masquer des cases et évaluer les possibilités
-     * de la grille résultante jusqu'à ce qu'elle corresponde au niveau de difficulté souhaité. Elle met
-     * également à jour l'horodatage interne derniereDemande.
+     * @param niveau Le niveau de difficulté : 1 (et autres valeurs) : facile, 2 : moyen, 3 :
+     *     difficile).
+     * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
+     * @param grilleAResoudre La grille à résoudre, avec ses cases masquées à 0. IMPORTANT : Ce
+     *     tableau est modifié directement par la fonction.
+     * @return La somme du nombre de possibilités pour chaque case non résolue dans la grille à
+     *     résoudre.
+     * @implNote La méthode utilise une approche itérative pour masquer des cases et évaluer les
+     *     possibilités de la grille résultante jusqu'à ce qu'elle corresponde au niveau de
+     *     difficulté souhaité. Elle met également à jour l'horodatage interne derniereDemande.
      */
-    private int genererLaGrilleAResoudre(final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
+    private int genererLaGrilleAResoudre(
+            final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
         return switch (niveau) {
             case 2 -> getPossibilitesGrilleAResoudreMoyenne(grilleResolue, grilleAResoudre);
             case 3 -> getPossibilitesGrilleAresoudreDifficile(grilleResolue, grilleAResoudre);
@@ -200,18 +207,25 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku de niveau facile (sinon une grille par défaut est retournée après une seconde).
+     * Génère une grille de Sudoku de niveau facile (sinon une grille par défaut est retournée après
+     * une seconde).
      *
-     * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
+     * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités restantes).
+     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités
+     *     restantes).
      */
     private int getPossibilitesGrilleAResoudreFacile(int[] grilleResolue, int[] grilleAResoudre) {
         int sommeDesPossibilites;
-        int nombreDeCasesACacher = dureeEnMs() < 500 ? FACILE_MOY_CACHEES : nombreAleatoire(FACILE_MIN_CACHEES, MOYEN_MIN_CACHEES);
+        int nombreDeCasesACacher =
+                dureeEnMs() < 500
+                        ? FACILE_MOY_CACHEES
+                        : nombreAleatoire(FACILE_MIN_CACHEES, MOYEN_MIN_CACHEES);
         derniereDemande = LocalDateTime.now();
         do {
-            sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
+            sommeDesPossibilites =
+                    getPossibilitesGrilleWhileNok(
+                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
         } while (sommeDesPossibilites > moyenMinPossibilites);
         derniereDemande = LocalDateTime.now();
@@ -219,37 +233,53 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku de niveau moyen (sinon une grille par défaut est retournée après une seconde).
+     * Génère une grille de Sudoku de niveau moyen (sinon une grille par défaut est retournée après
+     * une seconde).
      *
-     * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
+     * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités restantes).
+     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités
+     *     restantes).
      */
     private int getPossibilitesGrilleAResoudreMoyenne(int[] grilleResolue, int[] grilleAResoudre) {
         int sommeDesPossibilites;
-        int nombreDeCasesACacher = dureeEnMs() < 500 ? MOYEN_MOY_CACHEES : nombreAleatoire(MOYEN_MIN_CACHEES, MOYEN_MAX_CACHEES);
+        int nombreDeCasesACacher =
+                dureeEnMs() < 500
+                        ? MOYEN_MOY_CACHEES
+                        : nombreAleatoire(MOYEN_MIN_CACHEES, MOYEN_MAX_CACHEES);
         derniereDemande = LocalDateTime.now();
         do {
-            sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
+            sommeDesPossibilites =
+                    getPossibilitesGrilleWhileNok(
+                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites < moyenMinPossibilites || sommeDesPossibilites > moyenMaxPossibilites);
+        } while (sommeDesPossibilites < moyenMinPossibilites
+                || sommeDesPossibilites > moyenMaxPossibilites);
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
     }
 
     /**
-     * Génère une grille de Sudoku de niveau difficile (sinon une grille par défaut est retournée après une seconde).
+     * Génère une grille de Sudoku de niveau difficile (sinon une grille par défaut est retournée
+     * après une seconde).
      *
-     * @param grilleResolue   La grille résolue à partir de laquelle les cases seront cachées.
+     * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités restantes).
+     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités
+     *     restantes).
      */
-    private int getPossibilitesGrilleAresoudreDifficile(int[] grilleResolue, int[] grilleAResoudre) {
+    private int getPossibilitesGrilleAresoudreDifficile(
+            int[] grilleResolue, int[] grilleAResoudre) {
         int sommeDesPossibilites;
-        int nombreDeCasesACacher = dureeEnMs() < 500 ? DIFFICILE_MOY_CACHEES : nombreAleatoire(MOYEN_MAX_CACHEES, DIFFICILE_MAX_CACHEES);
+        int nombreDeCasesACacher =
+                dureeEnMs() < 500
+                        ? DIFFICILE_MOY_CACHEES
+                        : nombreAleatoire(MOYEN_MAX_CACHEES, DIFFICILE_MAX_CACHEES);
         derniereDemande = LocalDateTime.now();
         do {
-            sommeDesPossibilites = getPossibilitesGrilleWhileNok(grilleResolue, grilleAResoudre, nombreDeCasesACacher);
+            sommeDesPossibilites =
+                    getPossibilitesGrilleWhileNok(
+                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > 1000) break;
         } while (sommeDesPossibilites < moyenMaxPossibilites);
         derniereDemande = LocalDateTime.now();
@@ -257,24 +287,27 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Masque des cases dans la grille et calcule la somme des possibilités restantes.
-     * Copie la grille résolue, masque un nombre de cases spécifié, puis calcule la somme des
-     * possibilités pour la grille à résoudre.
+     * Masque des cases dans la grille et calcule la somme des possibilités restantes. Copie la
+     * grille résolue, masque un nombre de cases spécifié, puis calcule la somme des possibilités
+     * pour la grille à résoudre.
      *
-     * @param grilleResolue        La grille de Sudoku résolue (source).
-     * @param grilleAResoudre      La grille de Sudoku à résoudre (destination), MODIFIÉE par la méthode.
+     * @param grilleResolue La grille de Sudoku résolue (source).
+     * @param grilleAResoudre La grille de Sudoku à résoudre (destination), MODIFIÉE par la méthode.
      * @param nombreDeCasesACacher Nombre de cases à masquer.
      * @return La somme des possibilités après masquage des cases.
-     * @implNote Méthode utilisée dans une boucle pour ajuster la difficulté de la grille en fonction des possibilités.
+     * @implNote Méthode utilisée dans une boucle pour ajuster la difficulté de la grille en
+     *     fonction des possibilités.
      */
-    private int getPossibilitesGrilleWhileNok(int[] grilleResolue, int[] grilleAResoudre, int nombreDeCasesACacher) {
+    private int getPossibilitesGrilleWhileNok(
+            int[] grilleResolue, int[] grilleAResoudre, int nombreDeCasesACacher) {
         System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
         cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
         return sommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
     }
 
     /**
-     * Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en millisecondes
+     * Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en
+     * millisecondes
      *
      * @return Durée en millisecondes
      */
@@ -287,7 +320,8 @@ final class GridMaster implements IGridMaster {
      * Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.
      *
      * @param nombreDeCasesACacher Le nombre de cases à cacher dans la grille (au maximum 81 cases).
-     * @param grilleAResoudre      Le tableau représentant la grille, où les cases sélectionnées seront mises à 0.
+     * @param grilleAResoudre Le tableau représentant la grille, où les cases sélectionnées seront
+     *     mises à 0.
      */
     private void cacherLesCases(int nombreDeCasesACacher, final int[] grilleAResoudre) {
         nombreDeCasesACacher = Math.min(nombreDeCasesACacher, NOMBRE_CASES);
@@ -314,7 +348,7 @@ final class GridMaster implements IGridMaster {
     /**
      * Remplit récursivement la grille Sudoku (backtracking).
      *
-     * @param grille       Grille Sudoku à remplir.
+     * @param grille Grille Sudoku à remplir.
      * @param possibilites Tableau des possibilités pour chaque case.
      * @return true si la grille est remplie avec succès, false sinon.
      */
@@ -332,7 +366,8 @@ final class GridMaster implements IGridMaster {
             // Crée une copie des possibilités pour la récursion
             int[] nouvellesPossibilites = Arrays.copyOf(possibilites, NOMBRE_CASES);
             // Élimine la valeur choisie des possibilités des cases affectées
-            eliminerPossibilite(nouvellesPossibilites, index / DIMENSION, index % DIMENSION, valeur);
+            eliminerPossibilite(
+                    nouvellesPossibilites, index / DIMENSION, index % DIMENSION, valeur);
             // Appel récursif pour remplir le reste de la grille
             if (remplirLaGrille(grille, nouvellesPossibilites)) return true;
         }
@@ -363,19 +398,21 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités fournies.
-     * Le pourcentage est calculé selon la formule suivante :
-     * (sommeDesPossibilites - 4800) * 100 / (40000 - 4800)
-     * Le résultat est ensuite limité à une plage de 0 à 100 pour garantir qu'il représente un pourcentage valide.
+     * Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités
+     * fournies. Le pourcentage est calculé selon la formule suivante : (sommeDesPossibilites -
+     * 4800) * 100 / (40000 - 4800) Le résultat est ensuite limité à une plage de 0 à 100 pour
+     * garantir qu'il représente un pourcentage valide.
      *
-     * @param sommeDesPossibilites La somme des possibilités à partir de laquelle le pourcentage est calculé.
+     * @param sommeDesPossibilites La somme des possibilités à partir de laquelle le pourcentage est
+     *     calculé.
      * @return Le pourcentage des possibilités, compris entre 0 et 100.
      */
     private int getPourcentageDesPossibilites(int sommeDesPossibilites) {
         // le pourcentage de possibilités estimé
         int pourcentageDesPossibilites = ((sommeDesPossibilites - 4800) * 100) / (40000 - 4800);
         // Limiter le pourcentage entre 0 et 100
-        pourcentageDesPossibilites = pourcentageDesPossibilites < 0 ? 0 : Math.min(pourcentageDesPossibilites, 100);
+        pourcentageDesPossibilites =
+                pourcentageDesPossibilites < 0 ? 0 : Math.min(pourcentageDesPossibilites, 100);
         return pourcentageDesPossibilites;
     }
 
@@ -388,7 +425,9 @@ final class GridMaster implements IGridMaster {
         int sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilites);
         // Vérifie la cohérence de la grille
         int coherence = verifierLaCoherenceEntreLaGrilleEtLesPossibilites(grille, possibilites);
-        return new int[]{coherence, coherence == 0 ? getPourcentageDesPossibilites(sommeDesPossibilites) : 0};
+        return new int[] {
+            coherence, coherence == 0 ? getPourcentageDesPossibilites(sommeDesPossibilites) : 0
+        };
     }
 
     @Override
@@ -403,20 +442,20 @@ final class GridMaster implements IGridMaster {
         int sommeDesPossibilites = genererLaGrilleAResoudre(niveau, grilleResolue, grilleAResoudre);
         // Récupérer le pourcentage de possibilités estimé
         int pourcentageDesPossibilites = getPourcentageDesPossibilites(sommeDesPossibilites);
-        return new int[][]{grilleResolue, grilleAResoudre, new int[]{pourcentageDesPossibilites}};
+        return new int[][] {grilleResolue, grilleAResoudre, new int[] {pourcentageDesPossibilites}};
     }
 
     /**
-     * Définit une possibilité facile inaccessible, pour générer une grille par défaut après une seconde.
-     * Cette méthode est uniquement utilisée pour les tests.
+     * Définit une possibilité facile inaccessible, pour générer une grille par défaut après une
+     * seconde. Cette méthode est uniquement utilisée pour les tests.
      */
     void setEasyImpossiblePossibilitiesForTests() {
         this.moyenMinPossibilites = -1;
     }
 
     /**
-     * Définit une possibilité moyenne inaccessible, pour générer une grille par défaut après une seconde.
-     * Cette méthode est uniquement utilisée pour les tests.
+     * Définit une possibilité moyenne inaccessible, pour générer une grille par défaut après une
+     * seconde. Cette méthode est uniquement utilisée pour les tests.
      */
     void setAverageImpossiblePossibilitiesForTests() {
         this.moyenMinPossibilites = 50000;
@@ -424,11 +463,10 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Définit une possibilité difficile inaccessible, pour générer une grille par défaut après une seconde.
-     * Cette méthode est uniquement utilisée pour les tests.
+     * Définit une possibilité difficile inaccessible, pour générer une grille par défaut après une
+     * seconde. Cette méthode est uniquement utilisée pour les tests.
      */
     void setDifficultImpossiblePossibilitiesForTests() {
         this.moyenMaxPossibilites = 50000;
     }
 }
-

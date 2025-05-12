@@ -1,8 +1,9 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.os;
 
-import org.junit.jupiter.api.Test;
-
 import java.io.File;
+
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -25,10 +26,15 @@ class OsFolderInitializerUTest {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenReturn(false);
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
-        });
-        assertEquals("Error when creating needed folder: " + mockFolder.getPath(), exception.getMessage());
+        RuntimeException exception =
+                assertThrows(
+                        RuntimeException.class,
+                        () -> {
+                            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
+                        });
+        assertEquals(
+                "Error when creating needed folder: " + mockFolder.getPath(),
+                exception.getMessage());
     }
 
     @Test
@@ -45,10 +51,15 @@ class OsFolderInitializerUTest {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new SecurityException("Security violation"));
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
-        });
-        assertEquals("Security error when creating needed folder: " + mockFolder.getPath(), exception.getMessage());
+        RuntimeException exception =
+                assertThrows(
+                        RuntimeException.class,
+                        () -> {
+                            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
+                        });
+        assertEquals(
+                "Security error when creating needed folder: " + mockFolder.getPath(),
+                exception.getMessage());
     }
 
     @Test
@@ -56,10 +67,14 @@ class OsFolderInitializerUTest {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new RuntimeException("General error"));
-        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
-            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
-        });
-        assertEquals("Error when creating needed folder: " + mockFolder.getPath(), exception.getMessage());
+        RuntimeException exception =
+                assertThrows(
+                        RuntimeException.class,
+                        () -> {
+                            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
+                        });
+        assertEquals(
+                "Error when creating needed folder: " + mockFolder.getPath(),
+                exception.getMessage());
     }
-
 }

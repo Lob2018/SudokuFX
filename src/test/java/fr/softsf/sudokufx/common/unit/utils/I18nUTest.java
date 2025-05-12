@@ -1,15 +1,16 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.common.unit.utils;
 
-import fr.softsf.sudokufx.enums.I18n;
+import java.util.Locale;
+
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
-import java.util.Locale;
+import fr.softsf.sudokufx.enums.I18n;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class I18nUTest {
@@ -27,7 +28,6 @@ class I18nUTest {
         String testFR = I18n.INSTANCE.getValue("test");
         assertEquals("testFR", testFR);
     }
-
 
     @Test
     @Order(2)
@@ -83,5 +83,4 @@ class I18nUTest {
         String result = I18n.INSTANCE.getValue("missingKey");
         assertEquals("???missing:missingKey???", result);
     }
-
 }

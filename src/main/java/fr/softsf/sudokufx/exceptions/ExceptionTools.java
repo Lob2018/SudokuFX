@@ -1,16 +1,16 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.exceptions;
+
+import java.sql.SQLInvalidAuthorizationSpecException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.SQLInvalidAuthorizationSpecException;
-
 /**
- * Utility enum for handling and analyzing exceptions. This enum provides
- * methods to search for specific exception types within exception chains.
+ * Utility enum for handling and analyzing exceptions. This enum provides methods to search for
+ * specific exception types within exception chains.
  */
 public enum ExceptionTools {
-
     INSTANCE;
 
     private static final Logger log = LoggerFactory.getLogger(ExceptionTools.class);
@@ -28,19 +28,20 @@ public enum ExceptionTools {
     }
 
     /**
-     * Recursively searches for a SQLInvalidAuthorizationSpecException in the
-     * exception chain. This method traverses the exception hierarchy starting
-     * from the given Throwable, looking for an instance of
-     * SQLInvalidAuthorizationSpecException.
+     * Recursively searches for a SQLInvalidAuthorizationSpecException in the exception chain. This
+     * method traverses the exception hierarchy starting from the given Throwable, looking for an
+     * instance of SQLInvalidAuthorizationSpecException.
      *
-     * @param e The Throwable to start the search from. This can be any
-     *          exception or error.
-     * @return The first SQLInvalidAuthorizationSpecException found in the
-     * exception chain, or null if no such exception is found.
+     * @param e The Throwable to start the search from. This can be any exception or error.
+     * @return The first SQLInvalidAuthorizationSpecException found in the exception chain, or null
+     *     if no such exception is found.
      */
-    public SQLInvalidAuthorizationSpecException getSQLInvalidAuthorizationSpecException(Throwable e) {
+    public SQLInvalidAuthorizationSpecException getSQLInvalidAuthorizationSpecException(
+            Throwable e) {
         while (e != null) {
-            if (e instanceof SQLInvalidAuthorizationSpecException sqlinvalidauthorizationspecexception) {
+            if (e
+                    instanceof
+                    SQLInvalidAuthorizationSpecException sqlinvalidauthorizationspecexception) {
                 return sqlinvalidauthorizationspecexception;
             }
             e = e.getCause();
@@ -48,4 +49,3 @@ public enum ExceptionTools {
         return null;
     }
 }
-

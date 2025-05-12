@@ -1,17 +1,17 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.utils;
-
-import fr.softsf.sudokufx.service.VersionService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Comparator;
 import java.util.stream.Stream;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
- * Manages file system operations, particularly folder deletion. This class
- * implements the IFileSystem interface.
+ * Manages file system operations, particularly folder deletion. This class implements the
+ * IFileSystem interface.
  */
 public final class FileSystemManager implements IFileSystem {
 
@@ -22,8 +22,7 @@ public final class FileSystemManager implements IFileSystem {
         if (folderPath.endsWith(mustEndWithThat)) {
             log.info("▓▓▓▓ The directory path is correct :{}", folderPath);
             try (Stream<Path> stream = Files.walk(folderPath)) {
-                stream.sorted(Comparator.reverseOrder())
-                        .forEach(this::deleteFile);
+                stream.sorted(Comparator.reverseOrder()).forEach(this::deleteFile);
                 return true;
             } catch (Exception e) {
                 log.error("██ Exception catch from deleteFolder : {}", e.getMessage(), e);
@@ -38,8 +37,8 @@ public final class FileSystemManager implements IFileSystem {
      * Attempts to delete a single file or directory.
      *
      * @param path The path of the file or directory to be deleted.
-     * @return null if the file was successfully deleted, otherwise returns the
-     * Exception that occurred.
+     * @return null if the file was successfully deleted, otherwise returns the Exception that
+     *     occurred.
      */
     Throwable deleteFile(final Path path) {
         try {

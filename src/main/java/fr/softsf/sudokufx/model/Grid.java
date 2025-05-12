@@ -1,3 +1,4 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.model;
 
 import jakarta.persistence.*;
@@ -14,21 +15,13 @@ public class Grid {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long gridid;
 
-    @NotNull
-    @Size(max = 81)
-    private String defaultgridvalue;
+    @NotNull @Size(max = 81) private String defaultgridvalue;
 
-    @NotNull
-    @Size(max = 810)
-    private String gridvalue;
+    @NotNull @Size(max = 810) private String gridvalue;
 
-    @NotNull
-    @Min(0)
-    @Max(100)
-    private Byte possibilities;
+    @NotNull @Min(0) @Max(100) private Byte possibilities;
 
-    public Grid() {
-    }
+    public Grid() {}
 
     public Grid(Long gridid, String defaultgridvalue, String gridvalue, Byte possibilities) {
         this.gridid = gridid;

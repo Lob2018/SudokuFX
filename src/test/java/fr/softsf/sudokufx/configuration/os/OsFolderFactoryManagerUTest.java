@@ -1,12 +1,13 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.os;
+
+import java.util.stream.Stream;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
-
-import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -27,9 +28,12 @@ class OsFolderFactoryManagerUTest {
     @Test
     void givenInvalidOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionThrown() {
         osFolderFactoryManager.setWrongOsForTests();
-        assertThrows(IllegalArgumentException.class, () -> {
-            osFolderFactoryManager.iOsFolderFactory();
-        }, "Unsupported OS: ");
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> {
+                    osFolderFactoryManager.iOsFolderFactory();
+                },
+                "Unsupported OS: ");
     }
 
     @ParameterizedTest
@@ -40,7 +44,9 @@ class OsFolderFactoryManagerUTest {
         } else if (os.isEmpty()) {
             osFolderFactoryManager.setEmptyOsForTests();
         }
-        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, osFolderFactoryManager::iOsFolderFactory);
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class, osFolderFactoryManager::iOsFolderFactory);
         assertTrue(exception.getMessage().contains("Operating system is not specified or null."));
     }
 
@@ -48,18 +54,18 @@ class OsFolderFactoryManagerUTest {
     @ValueSource(strings = {"Windows", "Linux", "MacOS"})
     void givenValidOs_whenCreateOsFolderFactory_thenCorrectPathsReturned(String osType) {
         switch (osType) {
-            case "Windows" -> osFolderFactoryManager.setWindowsOsForTests(
-                    iCurrentIOsFolderFactory.getOsDataFolderPath(),
-                    iCurrentIOsFolderFactory.getOsLogsFolderPath()
-            );
-            case "Linux" -> osFolderFactoryManager.setLinuxOsForTests(
-                    iCurrentIOsFolderFactory.getOsDataFolderPath(),
-                    iCurrentIOsFolderFactory.getOsLogsFolderPath()
-            );
-            case "MacOS" -> osFolderFactoryManager.setMacOSForTests(
-                    iCurrentIOsFolderFactory.getOsDataFolderPath(),
-                    iCurrentIOsFolderFactory.getOsLogsFolderPath()
-            );
+            case "Windows" ->
+                    osFolderFactoryManager.setWindowsOsForTests(
+                            iCurrentIOsFolderFactory.getOsDataFolderPath(),
+                            iCurrentIOsFolderFactory.getOsLogsFolderPath());
+            case "Linux" ->
+                    osFolderFactoryManager.setLinuxOsForTests(
+                            iCurrentIOsFolderFactory.getOsDataFolderPath(),
+                            iCurrentIOsFolderFactory.getOsLogsFolderPath());
+            case "MacOS" ->
+                    osFolderFactoryManager.setMacOSForTests(
+                            iCurrentIOsFolderFactory.getOsDataFolderPath(),
+                            iCurrentIOsFolderFactory.getOsLogsFolderPath());
             default -> throw new IllegalArgumentException("Unknown OS type: " + osType);
         }
         IOsFolderFactory factory = osFolderFactoryManager.iOsFolderFactory();
@@ -67,5 +73,3 @@ class OsFolderFactoryManagerUTest {
         assertEquals(factory.getOsLogsFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
     }
 }
-
-

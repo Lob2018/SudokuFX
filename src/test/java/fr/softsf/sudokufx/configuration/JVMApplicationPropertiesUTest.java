@@ -1,9 +1,11 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration;
 
-import fr.softsf.sudokufx.enums.MyRegex;
+import java.util.regex.Pattern;
+
 import org.junit.jupiter.api.Test;
 
-import java.util.regex.Pattern;
+import fr.softsf.sudokufx.enums.MyRegex;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -18,10 +20,17 @@ class JVMApplicationPropertiesUTest {
         String validVersion = "0.0.1";
         String validOrganization = "Soft64.fr";
         String validLicense = "MIT License";
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validName, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validOrganization, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validLicense, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validVersion, Pattern.compile(VERSION_REGEX)));
+        assertTrue(
+                MyRegex.INSTANCE.isValidatedByRegex(
+                        validName, Pattern.compile(ALPHANUMERIC_REGEX)));
+        assertTrue(
+                MyRegex.INSTANCE.isValidatedByRegex(
+                        validOrganization, Pattern.compile(ALPHANUMERIC_REGEX)));
+        assertTrue(
+                MyRegex.INSTANCE.isValidatedByRegex(
+                        validLicense, Pattern.compile(ALPHANUMERIC_REGEX)));
+        assertTrue(
+                MyRegex.INSTANCE.isValidatedByRegex(validVersion, Pattern.compile(VERSION_REGEX)));
     }
 
     @Test
@@ -30,10 +39,18 @@ class JVMApplicationPropertiesUTest {
         String invalidVersion = "0.0.";
         String invalidOrganization = "Soft64.fr!";
         String invalidLicense = "MIT License!";
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(invalidName, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(invalidOrganization, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(invalidLicense, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(invalidVersion, Pattern.compile(VERSION_REGEX)));
+        assertFalse(
+                MyRegex.INSTANCE.isValidatedByRegex(
+                        invalidName, Pattern.compile(ALPHANUMERIC_REGEX)));
+        assertFalse(
+                MyRegex.INSTANCE.isValidatedByRegex(
+                        invalidOrganization, Pattern.compile(ALPHANUMERIC_REGEX)));
+        assertFalse(
+                MyRegex.INSTANCE.isValidatedByRegex(
+                        invalidLicense, Pattern.compile(ALPHANUMERIC_REGEX)));
+        assertFalse(
+                MyRegex.INSTANCE.isValidatedByRegex(
+                        invalidVersion, Pattern.compile(VERSION_REGEX)));
         assertFalse(MyRegex.INSTANCE.isValidatedByRegex("", Pattern.compile(VERSION_REGEX)));
     }
 
@@ -46,7 +63,8 @@ class JVMApplicationPropertiesUTest {
     }
 
     @Test
-    void givenEmptyNameVersionOrganizationLicenseWithOnRefreshSpringContext_whenGetProperties_thenDefaultValuesAndExitOnRefresh() {
+    void
+            givenEmptyNameVersionOrganizationLicenseWithOnRefreshSpringContext_whenGetProperties_thenDefaultValuesAndExitOnRefresh() {
         JVMApplicationProperties.INSTANCE.setEmptyAppVersionPropertyForTests();
         JVMApplicationProperties.INSTANCE.setEmptyAppNamePropertyForTests();
         JVMApplicationProperties.INSTANCE.setEmptyAppOrganizationPropertyForTests();
@@ -55,9 +73,9 @@ class JVMApplicationPropertiesUTest {
         assertEquals("SudokuFX", JVMApplicationProperties.INSTANCE.getAppName());
         assertFalse(JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty());
 
-        System.out.println("Organization :"+JVMApplicationProperties.INSTANCE.getAppOrganization());
-        System.out.println("License :"+JVMApplicationProperties.INSTANCE.getAppLicense());
-
+        System.out.println(
+                "Organization :" + JVMApplicationProperties.INSTANCE.getAppOrganization());
+        System.out.println("License :" + JVMApplicationProperties.INSTANCE.getAppLicense());
 
         assertFalse(JVMApplicationProperties.INSTANCE.getAppOrganization().isEmpty());
         assertFalse(JVMApplicationProperties.INSTANCE.getAppLicense().isEmpty());

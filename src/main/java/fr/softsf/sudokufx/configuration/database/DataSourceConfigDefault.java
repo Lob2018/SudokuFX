@@ -1,15 +1,16 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.database;
 
+import org.springframework.context.annotation.*;
+
 import com.zaxxer.hikari.HikariDataSource;
+
 import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import org.springframework.context.annotation.*;
 
 import static fr.softsf.sudokufx.enums.Paths.DATABASE_NAME;
 
-/**
- * Overrides Abstract DataSource hikariDataSource for the default profile.
- */
+/** Overrides Abstract DataSource hikariDataSource for the default profile. */
 @Configuration
 @Profile("default")
 @PropertySource("classpath:fr/softsf/sudokufx/application.properties")
@@ -18,8 +19,14 @@ class DataSourceConfigDefault extends AbstractDataSourceConfig {
     @Bean
     @DependsOn({"logbackInitialization"})
     @Override
-    HikariDataSource hikariDataSource(final IKeystore iKeystore, final IOsFolderFactory iOsFolderFactory) {
-        this.setJdbcUrl("jdbc:hsqldb:file:" + iOsFolderFactory.getOsDataFolderPath() + "/" + DATABASE_NAME.getPath() + ";shutdown=true");
+    HikariDataSource hikariDataSource(
+            final IKeystore iKeystore, final IOsFolderFactory iOsFolderFactory) {
+        this.setJdbcUrl(
+                "jdbc:hsqldb:file:"
+                        + iOsFolderFactory.getOsDataFolderPath()
+                        + "/"
+                        + DATABASE_NAME.getPath()
+                        + ";shutdown=true");
         this.setPoolName("SudokuFXHikariConnection");
         return super.hikariDataSource(iKeystore, iOsFolderFactory);
     }

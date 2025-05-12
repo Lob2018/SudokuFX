@@ -1,15 +1,17 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.service;
 
-import fr.softsf.sudokufx.dto.SoftwareDto;
-import fr.softsf.sudokufx.interfaces.mapper.ISoftwareMapper;
-import fr.softsf.sudokufx.model.Software;
-import fr.softsf.sudokufx.repository.SoftwareRepository;
+import java.util.Optional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
+import fr.softsf.sudokufx.dto.SoftwareDto;
+import fr.softsf.sudokufx.interfaces.mapper.ISoftwareMapper;
+import fr.softsf.sudokufx.model.Software;
+import fr.softsf.sudokufx.repository.SoftwareRepository;
 
 @Service
 public class SoftwareService {
@@ -24,12 +26,14 @@ public class SoftwareService {
 
     public Optional<SoftwareDto> getSoftware() {
         try {
-            return softwareRepository.findFirstSoftware()
+            return softwareRepository
+                    .findFirstSoftware()
                     .map(ISoftwareMapper.INSTANCE::mapSoftwareToDto)
-                    .or(() -> {
-                        log.error("██ No software found.");
-                        return Optional.empty();
-                    });
+                    .or(
+                            () -> {
+                                log.error("██ No software found.");
+                                return Optional.empty();
+                            });
         } catch (Exception e) {
             log.error("██ Exception retrieving software : {}", e.getMessage(), e);
             return Optional.empty();

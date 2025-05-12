@@ -1,3 +1,4 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.view.components;
 
 import javafx.animation.*;
@@ -7,19 +8,18 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 
 /**
- * A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons.
- * The spinner consists of two overlapping Text nodes with pulsing animations, creating
- * a visual loading indicator.
- * By default, the spinner is hidden and not managed by the layout. It can be shown or hidden
- * using the {@link #showSpinner(boolean)} method.
+ * A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons. The
+ * spinner consists of two overlapping Text nodes with pulsing animations, creating a visual loading
+ * indicator. By default, the spinner is hidden and not managed by the layout. It can be shown or
+ * hidden using the {@link #showSpinner(boolean)} method.
  */
 public final class SpinnerGridPane extends GridPane {
 
     private final Animation spinnerAnimation1, spinnerAnimation2;
 
     /**
-     * Constructs a SpinnerGridPane with two animated text icons centered in the pane.
-     * Initializes pulsing animations with staggered delays for a dynamic effect.
+     * Constructs a SpinnerGridPane with two animated text icons centered in the pane. Initializes
+     * pulsing animations with staggered delays for a dynamic effect.
      */
     public SpinnerGridPane() {
         super();
@@ -38,8 +38,8 @@ public final class SpinnerGridPane extends GridPane {
     }
 
     /**
-     * Shows or hides the spinner. When visible, animations are started;
-     * otherwise, they are stopped.
+     * Shows or hides the spinner. When visible, animations are started; otherwise, they are
+     * stopped.
      *
      * @param b true to show and play the spinner, false to hide and stop it.
      */
@@ -58,7 +58,7 @@ public final class SpinnerGridPane extends GridPane {
     /**
      * Creates a pulsing animation for a given text element with scaling and fading effects.
      *
-     * @param text  the Text node to apply the animation to.
+     * @param text the Text node to apply the animation to.
      * @param delay the delay before the animation starts.
      * @return a ParallelTransition combining scale and fade animations.
      */

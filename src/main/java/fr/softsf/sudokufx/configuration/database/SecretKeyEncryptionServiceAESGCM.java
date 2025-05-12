@@ -1,34 +1,37 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.database;
 
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import jakarta.validation.constraints.NotBlank;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import javax.crypto.Cipher;
-import javax.crypto.NoSuchPaddingException;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.GCMParameterSpec;
 import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Base64;
+import javax.crypto.Cipher;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.GCMParameterSpec;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
+import jakarta.validation.constraints.NotBlank;
 
 /**
- * Implementation of the ApplicationKeystore.IEncryptionService interface
- * using AES-GCM (Galois/Counter Mode) encryption.
+ * Implementation of the ApplicationKeystore.IEncryptionService interface using AES-GCM
+ * (Galois/Counter Mode) encryption.
  */
 final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
 
-    private static final Logger log = LoggerFactory.getLogger(SecretKeyEncryptionServiceAESGCM.class);
+    private static final Logger log =
+            LoggerFactory.getLogger(SecretKeyEncryptionServiceAESGCM.class);
 
     private static final SecureRandom random = new SecureRandom();
     private final SecretKey secretKey;
     private Cipher cipher;
 
     /**
-     * Constructor for the SecretKeyEncryptionServiceAESGCM.
-     * Initializes the cipher with AES/GCM/NoPadding algorithm.
+     * Constructor for the SecretKeyEncryptionServiceAESGCM. Initializes the cipher with
+     * AES/GCM/NoPadding algorithm.
      *
      * @param secretKeyP The SecretKey to be used for encryption and decryption
      */
@@ -38,7 +41,11 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
         try {
             cipher = Cipher.getInstance("AES/GCM/NoPadding");
         } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
-            log.error("██ Exception catch inside SecretKeyEncryptionServiceAESGCM(SecretKey) constructor : {}", e.getMessage(), e);
+            log.error(
+                    "██ Exception catch inside SecretKeyEncryptionServiceAESGCM(SecretKey)"
+                            + " constructor : {}",
+                    e.getMessage(),
+                    e);
         }
     }
 

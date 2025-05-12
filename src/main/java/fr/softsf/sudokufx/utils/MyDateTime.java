@@ -1,15 +1,13 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.utils;
-
-
-import org.springframework.stereotype.Component;
 
 import java.time.Clock;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * Component working with date and time operations.
- */
+import org.springframework.stereotype.Component;
+
+/** Component working with date and time operations. */
 @Component
 public final class MyDateTime {
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");

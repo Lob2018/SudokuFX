@@ -1,18 +1,18 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration.database;
-
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import org.passay.CharacterData;
-import org.passay.*;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.passay.CharacterData;
+import org.passay.*;
+import org.springframework.stereotype.Component;
+
+import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
+
 import static org.passay.IllegalCharacterRule.ERROR_CODE;
 
-/**
- * Utility class for generating secure passwords using the Passay library.
- */
+/** Utility class for generating secure passwords using the Passay library. */
 @Component
 final class GenerateSecret {
 

@@ -228,12 +228,12 @@ jobs:
           echo "::add-mask::$GPG_PRIVATE_KEY"
           # Create a temporary GPG home directory
           export GNUPGHOME=$(mktemp -d)
-          chmod 700 $GNUPGHOME          
+          chmod 700 $GNUPGHOME
           # Import the private key
-          echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import          
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import
           # Configure temporary GPG agent
           echo "allow-loopback-pinentry" > $GNUPGHOME/gpg-agent.conf
-          gpgconf --homedir $GNUPGHOME --reload gpg-agent          
+          gpgconf --homedir $GNUPGHOME --reload gpg-agent
           # Export GNUPGHOME for reuse in subsequent steps
           echo "GNUPGHOME=$GNUPGHOME" >> $GITHUB_ENV
       - name: GPG - Sign and verify files (excluding .txt)
@@ -274,51 +274,51 @@ jobs:
           tag: v${{ env.POM_VERSION }}
           body: |
             ## MSI, DMG, and DEB Files
-            
+
             **These installation packages include the Java Runtime Environment (JRE) and will automatically install the application on your machine**
-            
+
             ### File names
-            
+
             - **Windows MSI**:`SudokuFX_JVM-${{ env.POM_VERSION }}.msi`
             - **Linux DEB**:`sudokufx-jvm_${{ env.POM_VERSION }}_amd64.deb`
             - **macOS DMG**:`SudokuFX-JVM-${{ env.POM_VERSION }}.dmg` or `SudokuFX-x86_64-JVM-${{ env.POM_VERSION }}.dmg`<br>
-            
+
             ### File links
-            
+
             &nbsp;&nbsp;&nbsp;&nbsp;[![Windows MSI](https://img.shields.io/badge/Windows_MSI-SudokuFX__JVM--${{ env.POM_VERSION }}.msi-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX_JVM-${{ env.POM_VERSION }}.msi)
             &nbsp;&nbsp;&nbsp;&nbsp;[![Linux DEB](https://img.shields.io/badge/Linux_DEB-sudokufx--jvm__${{ env.POM_VERSION }}__amd64.deb-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/sudokufx-jvm_${{ env.POM_VERSION }}_amd64.deb)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS DMG](https://img.shields.io/badge/macOS_DMG-SudokuFX--JVM--${{ env.POM_VERSION }}.dmg-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-JVM-${{ env.POM_VERSION }}.dmg)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS DMG x86_64](https://img.shields.io/badge/macOS_DMG_x86__64-SudokuFX--x86__64--JVM--${{ env.POM_VERSION }}.dmg-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-x86_64-JVM-${{ env.POM_VERSION }}.dmg)<br>
-            
+
             ## Windows, macOS, and Linux ZIP/TAR Files
-            
+
             **These compressed files do not include the Java Runtime Environment (JRE)**
             **Ensure you have the latest [Adoptium Temurin JRE](https://adoptium.net/temurin/releases/?package=jre) installed and the `JAVA_HOME` environment variable properly configured on your machine.**
             **To launch the application, use the corresponding script**
-            
+
             ### File names
-            
+
             - **Windows**:`SudokuFX-${{ env.POM_VERSION }}_windows.zip` (launch with the .bat file)
             - **Linux**:`SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz` (launch with the .sh file)
             - **macOS**:`SudokuFX-${{ env.POM_VERSION }}_macos.zip` or `SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip` (launch with the .sh file)<br>
-            
+
             ### File links
-            
+
             &nbsp;&nbsp;&nbsp;&nbsp;[![Windows ZIP](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}__windows.zip-Launch_with_the_.bat_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_windows.zip)
             &nbsp;&nbsp;&nbsp;&nbsp;[![Linux TAR](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}__linux.tar.gz-Launch_with_the_.sh_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}__macos.zip-Launch_with_the_.sh_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_macos.zip)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP x86_64](https://img.shields.io/badge/SudokuFX--${{ env.POM_VERSION }}--x86__64__macos.zip-Launch_with_the_.sh_file-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip)<br>
-            
+
             ## File integrity verification with GPG Signatures
-            
+
             **To ensure the integrity of downloaded files, verify their signatures using the corresponding GPG public key**
-            
+
             ### Link to GPG public key
-            
+
             &nbsp;&nbsp;&nbsp;&nbsp;[![Public GPG (GNU Privacy Guard)](https://img.shields.io/badge/Public_GPG-sudokufx--public--key.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/sudokufx-public-key.asc)<br>
-            
+
             ### Links to available GPG signatures
-            
+
             &nbsp;&nbsp;&nbsp;&nbsp;[![Windows MSI GPG (GNU Privacy Guard)](https://img.shields.io/badge/Windows_MSI_GPG-SudokuFX__JVM--${{ env.POM_VERSION }}.msi.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX_JVM-${{ env.POM_VERSION }}.msi.asc)
             &nbsp;&nbsp;&nbsp;&nbsp;[![Linux DEB GPG (GNU Privacy Guard)](https://img.shields.io/badge/Linux_DEB_GPG-sudokufx--jvm__${{ env.POM_VERSION }}__amd64.deb.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/sudokufx-jvm_${{ env.POM_VERSION }}_amd64.deb.asc)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS DMG GPG (GNU Privacy Guard)](https://img.shields.io/badge/macOS_DMG_GPG-SudokuFX--JVM--${{ env.POM_VERSION }}.dmg.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-JVM-${{ env.POM_VERSION }}.dmg.asc)
@@ -327,19 +327,19 @@ jobs:
             &nbsp;&nbsp;&nbsp;&nbsp;[![Linux TAR GPG (GNU Privacy Guard)](https://img.shields.io/badge/Linux_TAR_GPG-SudokuFX--${{ env.POM_VERSION }}__linux.tar.gz.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_linux.tar.gz.asc)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP GPG (GNU Privacy Guard)](https://img.shields.io/badge/Macos_ZIP_GPG-SudokuFX--${{ env.POM_VERSION }}__macos.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}_macos.zip.asc)
             &nbsp;&nbsp;&nbsp;&nbsp;[![macOS ZIP x86_64 GPG (GNU Privacy Guard)](https://img.shields.io/badge/x86__64__macos_ZIP_GPG-SudokuFX--${{ env.POM_VERSION }}--x86__64__macos.zip.asc-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/SudokuFX-${{ env.POM_VERSION }}-x86_64_macos.zip.asc)<br>
-            
+
             ## File fingerprints
-            
+
             **The integrity of the downloaded files can be verified using the corresponding hash files**
-            
+
             ### File names
-            
+
             - `hash_windows.txt` (for Windows)
             - `hash_linux.txt` (for Linux)
             - `hash_macos.txt` or `hash_macos-x86_64.txt` (for macOS)<br>
-            
+
             ### File links
-            
+
             &nbsp;&nbsp;&nbsp;&nbsp;[![hash_windows.txt](https://img.shields.io/badge/hash__windows.txt-(for_Windows)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_windows.txt)
             &nbsp;&nbsp;&nbsp;&nbsp;[![hash_linux.txt](https://img.shields.io/badge/hash__linux.txt-(for_Linux)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_linux.txt)
             &nbsp;&nbsp;&nbsp;&nbsp;[![hash_macos.txt](https://img.shields.io/badge/hash__macos.txt-(for_macOS)-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/releases/download/v${{ env.POM_VERSION }}/hash_macos.txt)

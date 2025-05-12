@@ -1,18 +1,18 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.configuration;
 
-import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-import javax.net.ssl.SSLContext;
 import java.net.http.HttpClient;
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;
 import java.time.Duration;
+import javax.net.ssl.SSLContext;
 
-/**
- * Configures a secure HttpClient bean with TLS 1.2, no redirects, and a 5-second timeout.
- */
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated;
+
+/** Configures a secure HttpClient bean with TLS 1.2, no redirects, and a 5-second timeout. */
 @Configuration
 @ExcludedFromCoverageReportGenerated
 public class HttpClientConfig {
@@ -22,7 +22,7 @@ public class HttpClientConfig {
      *
      * @return Configured HttpClient instance.
      * @throws NoSuchAlgorithmException if TLS 1.2 is unsupported.
-     * @throws KeyManagementException   if SSL context initialization fails.
+     * @throws KeyManagementException if SSL context initialization fails.
      */
     @Bean
     HttpClient httpClient() throws KeyManagementException, NoSuchAlgorithmException {
@@ -35,4 +35,3 @@ public class HttpClientConfig {
                 .build();
     }
 }
-

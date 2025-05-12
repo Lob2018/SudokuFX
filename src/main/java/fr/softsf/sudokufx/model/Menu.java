@@ -1,3 +1,4 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.model;
 
 import jakarta.persistence.*;
@@ -13,13 +14,9 @@ public class Menu {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Byte menuid;
 
-    @NotNull
-    @Min(1)
-    @Max(3)
-    private Byte mode;
+    @NotNull @Min(1) @Max(3) private Byte mode;
 
-    public Menu() {
-    }
+    public Menu() {}
 
     public Menu(Byte menuid, Byte mode) {
         this.menuid = menuid;

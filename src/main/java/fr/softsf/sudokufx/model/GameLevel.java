@@ -1,3 +1,4 @@
+/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
 package fr.softsf.sudokufx.model;
 
 import jakarta.persistence.*;
@@ -13,13 +14,9 @@ public class GameLevel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Byte levelid;
 
-    @NotNull
-    @Min(1)
-    @Max(3)
-    private Byte level;
+    @NotNull @Min(1) @Max(3) private Byte level;
 
-    public GameLevel() {
-    }
+    public GameLevel() {}
 
     public GameLevel(Byte levelid, Byte level) {
         this.levelid = levelid;
