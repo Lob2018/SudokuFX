@@ -5,6 +5,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view =
     [ "createSVG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a5d7017836e704c8e6db24f7d677041ba", null ],
     [ "fxmlLikeStructure", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#abe063bf7b79bce818e0d42c0c9b9d229", null ],
     [ "getLoadingOrOptimizingMessage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#ad126ac2f2a90b2422490ca0d896fa398", null ],
+    [ "getSplashScreenScene", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a68c0252bb356f891537ac34e32292b50", null ],
     [ "hideSplashScreen", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a076cb7a2a145466aad00f8c175a3c043", null ],
     [ "nestingOfNodes", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a0af4ab414c9c917edc9975bfd5c63fbd", null ],
     [ "nodesConfiguration", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#acddefac20ee4e90165233cb342d56fe0", null ],

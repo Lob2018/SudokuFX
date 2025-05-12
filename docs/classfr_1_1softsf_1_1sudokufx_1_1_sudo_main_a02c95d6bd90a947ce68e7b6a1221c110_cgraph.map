@@ -1,0 +1,19 @@
+<map id="fr.softsf.sudokufx.SudoMain.start" name="fr.softsf.sudokufx.SudoMain.start">
+<area shape="rect" id="Node000001" title="Initializes the application by:" alt="" coords="5,129,221,156"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html#a909638af7104aee627c05820e31d8864" title="Creates a JavaFX Task that initializes the Spring context." alt="" coords="308,5,504,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,126,268,74,293,65,294,70,270,78,145,131"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f0246399e65a32405abe1ed415219ee" title="Called when the Spring context initialization task fails." alt="" coords="293,155,520,197"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,152,278,159,277,164,221,158"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5bb361c3c4da3cef227f656f09c3e3" title="Handles the success of the Spring context initialization task." alt="" coords="293,88,520,131"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="221,128,277,121,278,127,222,133"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html#a102ea76a7ffe8f69b1a4f8bcb6841fec" title="Starts the given JavaFX Task in a new background thread." alt="" coords="269,221,544,264"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="143,154,201,180,270,207,293,214,291,219,268,212,199,185,141,159"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b" title="Creates a PauseTransition to delay loading of the next view." alt="" coords="598,155,823,197"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="520,173,582,173,582,179,520,179"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a82b89e0e97248236a98e8bd95f897c20" title="Initialize the Coordinator if needed and set his DynamicFontSize." alt="" coords="592,88,828,131"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="506,151,594,132,595,137,507,157"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7f44ea69c674694f9ea334ec052a05b3" title="Handles SQL invalid authorization exceptions." alt="" coords="607,221,813,264"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="507,195,595,215,594,220,506,201"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="507,129,595,148,594,153,506,134"/>
+<area shape="poly" id="edge8_Node000007_Node000005" title=" " alt="" coords="520,107,576,107,576,112,520,112"/>
+</map>

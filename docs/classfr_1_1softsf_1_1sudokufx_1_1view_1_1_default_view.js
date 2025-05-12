@@ -23,6 +23,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "activeMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2d00aeef98aa95dece530ed23c24b6ba", null ],
     [ "backgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a75e23a8562c652311671eb08fa160920", null ],
     [ "CONFIRMATION_ALERT", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a6ead5f63faf5d862d6bf02af2d0b9fd5", null ],
+    [ "coordinator", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a0fc3fbbd447447300bc84bae6ae85d25", null ],
     [ "DIFFICULTY_LEVEL_PSEUDO_SELECTED", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ac3e119654adf42fbfea7358757021cbc", null ],
     [ "FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aafcfec62364da9ede2395f5e289b74a0", null ],
     [ "helpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab6e90d0822c7bf337711385d9df63dfc", null ],

@@ -55,8 +55,5 @@ var searchData=
   ['fullmenuviewmodelitest_2ejava_52',['FullMenuViewModelITest.java',['../_full_menu_view_model_i_test_8java.html',1,'']]],
   ['fx_5ffont_5fsize_5f0_5f8_5fem_53',['FX_FONT_SIZE_0_8_EM',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#abf917fd760e0f30aeef7318058fc3358',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['fxmllikestructure_54',['fxmlLikeStructure',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#abe063bf7b79bce818e0d42c0c9b9d229',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
-  ['fxmlloader_55',['fxmlLoader',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html#ab1b39a67b0e4c359071dfb326aa08a2b',1,'fr::softsf::sudokufx::service::FxmlService']]],
-  ['fxmlservice_56',['FxmlService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html',1,'fr.softsf.sudokufx.service.FxmlService'],['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html#a396a6cd43294838f1dc4b8e44e4b1310',1,'fr.softsf.sudokufx.service.FxmlService.FxmlService()']]],
-  ['fxmlservice_57',['fxmlService',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a157bd6259c6b80ac66f52c80860d82e1',1,'fr.softsf.sudokufx.SudoMain.fxmlService'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a56571fe0fac489e671acaa112b3e0e87',1,'fr.softsf.sudokufx.view.FullMenuView.fxmlService']]],
-  ['fxmlservice_2ejava_58',['FxmlService.java',['../_fxml_service_8java.html',1,'']]]
+  ['fxmlloader_55',['fxmlLoader',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#abcaae859838b7d23fb19c4cded75d16a',1,'fr::softsf::sudokufx::navigation::Coordinator']]]
 ];

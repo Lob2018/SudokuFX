@@ -1,18 +1,16 @@
 var classfr_1_1softsf_1_1sudokufx_1_1_sudo_main =
 [
     [ "createViewTransition", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b", null ],
-    [ "getScene", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#adbf47e9a56e3bad163a0906283250ad8", null ],
     [ "handleSpringContextTaskFailed", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f0246399e65a32405abe1ed415219ee", null ],
     [ "handleSpringContextTaskSuccess", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5bb361c3c4da3cef227f656f09c3e3", null ],
-    [ "initializeFxmlService", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5ef977463b6da726c91c4b3d67d1f4", null ],
-    [ "initScene", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a574a17236a0848e4ce394ff5077a15fc", null ],
+    [ "initializeCoordinator", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a82b89e0e97248236a98e8bd95f897c20", null ],
     [ "main", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aba1c3ad97432396d58d7f157ddaa0e4d", null ],
     [ "sqlInvalidAuthorization", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7f44ea69c674694f9ea334ec052a05b3", null ],
-    [ "start", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ad12f6778560c28ec6b0e85dec1074a1b", null ],
+    [ "start", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a02c95d6bd90a947ce68e7b6a1221c110", null ],
     [ "context", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a2f1a22f74c20256e9598246c07b7e849", null ],
-    [ "fxmlService", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a157bd6259c6b80ac66f52c80860d82e1", null ],
+    [ "coordinator", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aa4cf1d2493d70cd889064148b7af4509", null ],
     [ "iMainView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5c7edddbb48f485df00edd6b29959ba4", null ],
     [ "iSplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aebbc7ede26b016d9caa1e29247dd7180", null ],
     [ "log", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aa42788a88f300897f6c1910772137f9f", null ],
-    [ "scene", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#acd04137840e8c91a591b1401685084ee", null ]
+    [ "stage", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a930416594df6fe160c9722805261e444", null ]
 ];

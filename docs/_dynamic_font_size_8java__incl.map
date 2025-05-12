@@ -1,9 +1,5 @@
 <map id="src/main/java/fr/softsf/sudokufx/utils/DynamicFontSize.java" name="src/main/java/fr/softsf/sudokufx/utils/DynamicFontSize.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="175,5,417,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,142,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,51,120,100,119,95,243,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="166,96,426,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="299,48,299,81,294,81,294,48"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="450,96,638,139"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="355,46,472,88,471,93,353,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,248,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="58,96,195,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,49,129,80,124,80,124,49"/>
 </map>

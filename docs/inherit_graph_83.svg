@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html" target="_top" xlink:title="FullMenuViewModel with business logic (not final)">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html" target="_top" xlink:title="ViewModel for managing and applying background (color and image) to a GridPane.">
 <polygon fill="white" stroke="#666666" points="145,-32 0,-32 0,0 145,0 145,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="72.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">FullMenuViewModel</text>
+<text text-anchor="middle" x="72.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundViewModel</text>
 </a>
 </g>
 </g>

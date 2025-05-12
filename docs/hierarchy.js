@@ -26,6 +26,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.viewmodel.shared.CurrentPlayerState", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared_1_1_current_player_state.html", null ],
     [ "fr.softsf.sudokufx.enums.DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html", null ],
     [ "fr.softsf.sudokufx.common.unit.enums.DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test.html", null ],
+    [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],
     [ "fr.softsf.sudokufx.utils.DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", null ],
     [ "fr.softsf.sudokufx.exceptions.ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1exceptions_1_1_exception_tools.html", null ],
     [ "fr.softsf.sudokufx.common.unit.utils.ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html", null ],
@@ -81,13 +82,6 @@ var hierarchy =
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", null ],
-    [ "fr.softsf.sudokufx.interfaces.ISceneProvider", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html", [
-      [ "fr.softsf.sudokufx.service.FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", null ],
-      [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],
-      [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
-      [ "fr.softsf.sudokufx.view.DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ],
-      [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
-    ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.ISoftwareMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html", null ],
     [ "fr.softsf.sudokufx.interfaces.ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", [
       [ "fr.softsf.sudokufx.view.SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", null ]

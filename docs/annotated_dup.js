@@ -95,7 +95,6 @@ var annotated_dup =
               [ "ISoftwareMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper" ]
             ] ],
             [ "IMainView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view" ],
-            [ "ISceneProvider", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider" ],
             [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view" ]
           ] ],
           [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", [
@@ -109,7 +108,7 @@ var annotated_dup =
             [ "Software", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software" ]
           ] ],
           [ "navigation", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html", [
-            [ "Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", null ]
+            [ "Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator" ]
           ] ],
           [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", [
             [ "BackgroundRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_background_repository.html", null ],
@@ -122,7 +121,6 @@ var annotated_dup =
             [ "SoftwareRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository" ]
           ] ],
           [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
-            [ "FxmlService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_fxml_service" ],
             [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service" ],
             [ "SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service" ],
             [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service" ],
