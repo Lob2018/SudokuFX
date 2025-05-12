@@ -50,6 +50,7 @@ public class SudoMain extends Application {
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
+    private Stage stage;
 
     public static Scene getScene() {
         return scene;
@@ -106,15 +107,16 @@ public class SudoMain extends Application {
      * component to keep the UI responsive. 6. Registers callbacks to handle success and failure
      * outcomes of the initialization.
      *
-     * @param splashScreenStage The primary stage for displaying the splash screen.
+     * @param stage The primary stage for displaying the splash screen.
      */
     @Override
-    public void start(final Stage splashScreenStage) {
+    public void start(final Stage stage) {
         try {
+            this.stage = stage;
             I18n.INSTANCE.setLanguageBasedOnTheHostEnvironment();
-            iSplashScreenView = new SplashScreenView(splashScreenStage);
+            iSplashScreenView = new SplashScreenView(stage);
             long startTime = System.currentTimeMillis();
-            initScene(splashScreenStage);
+            initScene(stage);
 
             SpringContextInitializer springInitializer = new SpringContextInitializer(context);
             Task<Void> springInitializeTask = springInitializer.createInitializationTask();
@@ -183,6 +185,7 @@ public class SudoMain extends Application {
         if (coordinator == null) {
             coordinator = new Coordinator(new FXMLLoader());
         }
+        coordinator.setScene(stage.getScene());
         coordinator.setDynamicFontSize();
     }
 

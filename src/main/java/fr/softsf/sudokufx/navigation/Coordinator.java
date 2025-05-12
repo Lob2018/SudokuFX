@@ -10,7 +10,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.enums.Paths;
-import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.utils.DynamicFontSize;
 
 /**
@@ -21,11 +20,12 @@ import fr.softsf.sudokufx.utils.DynamicFontSize;
  * applies dynamic font resizing through the DynamicFontSize utility.
  */
 @Component
-public class Coordinator implements ISceneProvider {
+public class Coordinator {
 
     private static final Logger log = LoggerFactory.getLogger(Coordinator.class);
 
-    private final Scene scene = getScene();
+
+    private Scene scene;
     private final FXMLLoader fxmlLoader;
     private DynamicFontSize dynamicFontSize;
 
@@ -37,6 +37,14 @@ public class Coordinator implements ISceneProvider {
      */
     public Coordinator(FXMLLoader fxmlLoader) {
         this.fxmlLoader = fxmlLoader;
+    }
+
+    public Scene getScene() {
+        return scene;
+    }
+
+    public void setScene(Scene scene) {
+        this.scene = scene;
     }
 
     /**
@@ -53,7 +61,7 @@ public class Coordinator implements ISceneProvider {
      *
      * @param fxml the base name of the FXML file to load (excluding the .fxml extension)
      * @throws IllegalArgumentException if the FXML file is not found
-     * @throws RuntimeException exits the application if loading fails
+     * @throws RuntimeException         exits the application if loading fails
      */
     public void setRootByFXMLName(final String fxml) {
         String path = Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml";
