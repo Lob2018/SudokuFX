@@ -9,6 +9,7 @@ import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.effect.DropShadow;
@@ -54,6 +55,8 @@ public final class CrashScreenView implements IMainView {
     private final Stage crashscreenStage = new Stage();
     private final DropShadow dropShadow = new DropShadow();
     private final Stage primaryStage = new Stage();
+
+    private ISplashScreenView iSplashScreenView;
 
     @FXML private VBox crashscreenvbox;
     @FXML private Region crashscreenvboxTophboxRegionsudosvg;
@@ -113,8 +116,8 @@ public final class CrashScreenView implements IMainView {
      */
     @Override
     public void openingMainStage(ISplashScreenView iSplashScreenView) {
-        // TODO NOW
-        //        fadeIn(getScene().getRoot());
+        this.iSplashScreenView = iSplashScreenView;
+        fadeIn(iSplashScreenView.getSplashScreenScene().getRoot());
         showcrashscreen();
         iSplashScreenView.hideSplashScreen();
     }
@@ -173,13 +176,11 @@ public final class CrashScreenView implements IMainView {
 
     /** Shows the crash screen stage. */
     private void showcrashscreen() {
-        // TODO NOW
-        //        final Scene s = getScene();
-        //        crashscreenStage.setScene(s);
-        crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize() * .7);
-        crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize() * .7);
+        Scene s = iSplashScreenView.getSplashScreenScene();
+        crashscreenStage.setScene(s);
+        crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize());
+        crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize());
         crashscreenStage.show();
-        //        s.getRoot().setStyle("-fx-font-size: " + crashScreenFontSize + "px;");
         buttonClose.requestFocus();
     }
 

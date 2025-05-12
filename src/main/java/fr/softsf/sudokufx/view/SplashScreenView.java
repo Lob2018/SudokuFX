@@ -304,4 +304,9 @@ public final class SplashScreenView implements ISplashScreenView {
         splashScreenStage.show();
         scene.getRoot().setStyle("-fx-font-size: " + splashScreenFontSize + "px;");
     }
+
+    @Override
+    public Scene getSplashScreenScene() {
+        return scene;
+    }
 }
