@@ -1,16 +1,19 @@
+/* (C)2025 */
 package fr.softsf.sudokufx.common.unit.viewmodel;
 
-import fr.softsf.sudokufx.view.components.SpinnerGridPane;
-import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
-import fr.softsf.sudokufx.viewmodel.BackgroundViewModel;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
+
+import fr.softsf.sudokufx.view.components.SpinnerGridPane;
+import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
+import fr.softsf.sudokufx.viewmodel.BackgroundViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
@@ -45,4 +48,3 @@ class BackgroundViewModelUTest {
         assertEquals(expectedColor, fill.getFill());
     }
 }
-

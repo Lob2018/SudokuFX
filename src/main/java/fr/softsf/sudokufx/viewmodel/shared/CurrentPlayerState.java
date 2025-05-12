@@ -1,10 +1,13 @@
+/* (C)2025 */
 package fr.softsf.sudokufx.viewmodel.shared;
+
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
+
+import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.PlayerService;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import org.springframework.stereotype.Component;
 
 @Component
 public class CurrentPlayerState {
@@ -38,4 +41,3 @@ public class CurrentPlayerState {
         return currentPlayer.get();
     }
 }
-

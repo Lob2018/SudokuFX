@@ -1,9 +1,13 @@
+/* (C)2025 */
 package fr.softsf.sudokufx.utils;
 
-import com.gluonhq.ignite.spring.SpringContext;
-import fr.softsf.sudokufx.SudoMain;
 import javafx.concurrent.Task;
+
 import org.springframework.boot.SpringApplication;
+
+import com.gluonhq.ignite.spring.SpringContext;
+
+import fr.softsf.sudokufx.SudoMain;
 
 /**
  * Handles asynchronous initialization of the Spring application context using a JavaFX Task.
