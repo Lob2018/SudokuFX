@@ -30,7 +30,7 @@ import fr.softsf.sudokufx.enums.ToastLevels;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISceneProvider;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
-import fr.softsf.sudokufx.service.FxmlService;
+import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 
@@ -46,7 +46,7 @@ public final class FullMenuView implements IMainView, ISceneProvider {
     private final Text text1 = new Text("Helloj! ");
     private final Stage primaryStage = new Stage();
     @Autowired private FullMenuViewModel fullMenuViewModel;
-    @Autowired private FxmlService fxmlService;
+    @Autowired private Coordinator coordinator;
     @FXML private ToasterVBox toaster;
     @FXML private Label welcomeText;
     @FXML private Label version;

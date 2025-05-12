@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.service.FxmlService" name="fr.softsf.sudokufx.service.FxmlService">
+<map id="fr.softsf.sudokufx.navigation.Coordinator" name="fr.softsf.sudokufx.navigation.Coordinator">
 <area shape="rect" id="Node000001" title="FxmlService is a Spring service that manages the loading of FXML files and updating the root of the J..." alt="" coords="5,412,199,636"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html" title="Interface ISceneProvider." alt="" coords="8,5,186,91"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,106,104,412,98,412,95,106"/>

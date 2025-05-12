@@ -24,7 +24,7 @@ import fr.softsf.sudokufx.enums.LogBackTxt;
 import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
-import fr.softsf.sudokufx.service.FxmlService;
+import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.utils.SpringContextInitializer;
 import fr.softsf.sudokufx.view.SplashScreenView;
 
@@ -55,7 +55,7 @@ public class SudoMain extends Application {
         return scene;
     }
 
-    @Autowired private FxmlService fxmlService;
+    @Autowired private Coordinator coordinator;
 
     /**
      * Main entry point for the application.
@@ -180,10 +180,10 @@ public class SudoMain extends Application {
 
     /** Initialize the FxmlService if needed and set his DynamicFontSize */
     private void initializeFxmlService() {
-        if (fxmlService == null) {
-            fxmlService = new FxmlService(new FXMLLoader());
+        if (coordinator == null) {
+            coordinator = new Coordinator(new FXMLLoader());
         }
-        fxmlService.setDynamicFontSize();
+        coordinator.setDynamicFontSize();
     }
 
     /**
@@ -197,8 +197,8 @@ public class SudoMain extends Application {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(
                 e -> {
-                    fxmlService.setRootByFXMLName(fxmlName);
-                    iMainView = fxmlService.getController();
+                    coordinator.setRootByFXMLName(fxmlName);
+                    iMainView = coordinator.getController();
                     iMainView.openingMainStage(iSplashScreenView);
                 });
         return pause;
