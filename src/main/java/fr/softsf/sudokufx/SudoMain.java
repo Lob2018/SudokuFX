@@ -24,6 +24,7 @@ import fr.softsf.sudokufx.exceptions.ExceptionTools;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.navigation.Coordinator;
+import fr.softsf.sudokufx.utils.DynamicFontSize;
 import fr.softsf.sudokufx.utils.SpringContextInitializer;
 import fr.softsf.sudokufx.view.SplashScreenView;
 
@@ -182,13 +183,13 @@ public class SudoMain extends Application {
         }
     }
 
-    /** Initialize the Coordinator if needed and set his DynamicFontSize */
+    /** Initializes the Coordinator if needed, and sets the default scene and DynamicFontSize. */
     private void initializeCoordinator() {
         if (coordinator == null) {
             coordinator = new Coordinator(new FXMLLoader());
         }
         coordinator.setDefaultScene(stage.getScene());
-        coordinator.setDynamicFontSize();
+        coordinator.setDynamicFontSize(new DynamicFontSize(stage.getScene()));
     }
 
     /**

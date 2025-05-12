@@ -77,8 +77,8 @@ public class Coordinator {
      * <p>The font size handler adjusts the font size of UI elements based on the current size of
      * the scene. This allows for a more responsive and adaptable user interface.
      */
-    public void setDynamicFontSize() {
-        this.dynamicFontSize = new DynamicFontSize(defaultScene);
+    public void setDynamicFontSize(DynamicFontSize dynamicFontSize) {
+        this.dynamicFontSize = dynamicFontSize;
     }
 
     /**
