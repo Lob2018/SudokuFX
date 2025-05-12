@@ -147,7 +147,7 @@ To ensure the integrity of downloaded assets, import the GPG public key with `gp
 
 ### Overview
 
-Cross-platform desktop application developed in Java using JavaFX, Spring Boot, HSQLDB, Maven, and SonarCloud, following the Model-View-ViewModel (MVVM) architecture.
+Cross-platform desktop application developed in Java using JavaFX, Spring Boot, HSQLDB, Maven, and SonarCloud, following the Model-View-ViewModel-Coordinator (MVVM-C) architecture.
 
 ### Roadmap
 
