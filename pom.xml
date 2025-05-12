@@ -345,6 +345,7 @@
             <exclude>fr/softsf/sudokufx/interfaces/**</exclude>
             <exclude>fr/softsf/sudokufx/benchmark/**</exclude>
             <exclude>fr/softsf/sudokufx/utils/SpringContextInitializer$*</exclude>
+            <exclude>fr/softsf/sudokufx/service/VersionService$*</exclude>
           </excludes>
         </configuration>
         <executions>
