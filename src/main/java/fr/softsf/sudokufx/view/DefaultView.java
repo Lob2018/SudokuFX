@@ -809,7 +809,7 @@ public final class DefaultView implements IMainView {
                                                         == ActiveMenuOrSubmenuViewModel.ActiveMenu
                                                                 .MINI
                                                 && coordinator
-                                                        .getScene()
+                                                        .getDefaultScene()
                                                         .getFocusOwner()
                                                         .getId()
                                                         .equals("menuMiniButtonShow")) {
@@ -887,7 +887,7 @@ public final class DefaultView implements IMainView {
                                                         Paths.LOGO_SUDO_PNG_PATH.getPath())))
                                         .toExternalForm()));
         primaryStage.initStyle(StageStyle.DECORATED);
-        primaryStage.setScene(coordinator.getScene());
+        primaryStage.setScene(coordinator.getDefaultScene());
         primaryStage.centerOnScreen();
     }
 
@@ -929,7 +929,7 @@ public final class DefaultView implements IMainView {
     public void openingMainStage(final ISplashScreenView iSplashScreenView) {
         openingConfigureStage();
         openingMaximizePrimaryStage();
-        openingFadeIn(coordinator.getScene().getRoot());
+        openingFadeIn(coordinator.getDefaultScene().getRoot());
         openingShowStage();
         iSplashScreenView.hideSplashScreen();
         primaryStage.setAlwaysOnTop(false);

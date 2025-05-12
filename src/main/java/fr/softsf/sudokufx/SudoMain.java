@@ -187,7 +187,7 @@ public class SudoMain extends Application {
         if (coordinator == null) {
             coordinator = new Coordinator(new FXMLLoader());
         }
-        coordinator.setScene(stage.getScene());
+        coordinator.setDefaultScene(stage.getScene());
         coordinator.setDynamicFontSize();
     }
 
