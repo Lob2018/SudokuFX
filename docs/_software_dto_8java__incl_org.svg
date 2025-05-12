@@ -5,16 +5,16 @@
  -->
 <!-- Title: src/main/java/fr/softsf/sudokufx/dto/SoftwareDto.java Pages: 1 -->
 <svg width="475pt" height="108pt"
- viewBox="0.00 0.00 475.12 108.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 474.88 108.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 104)">
 <title>src/main/java/fr/softsf/sudokufx/dto/SoftwareDto.java</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="319.75,-100 165.75,-100 165.75,-68 319.75,-68 319.75,-100"/>
-<text text-anchor="start" x="173.75" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
-<text text-anchor="middle" x="242.75" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/dto/SoftwareDto.java</text>
+<polygon fill="#999999" stroke="#666666" points="291.38,-100 137.38,-100 137.38,-68 291.38,-68 291.38,-100"/>
+<text text-anchor="start" x="145.38" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
+<text text-anchor="middle" x="214.38" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/dto/SoftwareDto.java</text>
 </a>
 </g>
 </g>
@@ -22,9 +22,8 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="143.5,-32 0,-32 0,0 143.5,0 143.5,-32"/>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.</text>
-<text text-anchor="middle" x="71.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">NotNull</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="124.75,-26 0,-26 0,-6 124.75,-6 124.75,-26"/>
+<text text-anchor="middle" x="62.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.time.LocalDateTime</text>
 </a>
 </g>
 </g>
@@ -32,8 +31,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M202.66,-67.53C178.73,-58.29 148.12,-46.48 122.52,-36.6"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="123.89,-33.37 113.3,-33.04 121.37,-39.9 123.89,-33.37"/>
+<path fill="none" stroke="#63b8ff" d="M178.74,-67.53C153.21,-56.44 119.12,-41.64 94.44,-30.92"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="96.12,-27.84 85.55,-27.06 93.33,-34.26 96.12,-27.84"/>
 </a>
 </g>
 </g>
@@ -41,8 +40,9 @@
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="324.25,-26 161.25,-26 161.25,-6 324.25,-6 324.25,-26"/>
-<text text-anchor="middle" x="242.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.Size</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="286.12,-32 142.62,-32 142.62,0 286.12,0 286.12,-32"/>
+<text text-anchor="start" x="150.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.</text>
+<text text-anchor="middle" x="214.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">NotNull</text>
 </a>
 </g>
 </g>
@@ -50,8 +50,8 @@
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M242.75,-67.69C242.75,-58.8 242.75,-47.46 242.75,-37.77"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="246.25,-37.83 242.75,-27.83 239.25,-37.83 246.25,-37.83"/>
+<path fill="none" stroke="#63b8ff" d="M214.38,-67.69C214.38,-60.53 214.38,-51.79 214.38,-43.59"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="217.88,-43.74 214.38,-33.74 210.88,-43.74 217.88,-43.74"/>
 </a>
 </g>
 </g>
@@ -59,8 +59,8 @@
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="467.12,-26 342.38,-26 342.38,-6 467.12,-6 467.12,-26"/>
-<text text-anchor="middle" x="404.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.time.LocalDateTime</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="466.88,-26 303.88,-26 303.88,-6 466.88,-6 466.88,-26"/>
+<text text-anchor="middle" x="385.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.Size</text>
 </a>
 </g>
 </g>
@@ -68,8 +68,8 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M280.73,-67.53C308.06,-56.39 344.6,-41.51 370.93,-30.78"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="372.19,-34.05 380.13,-27.03 369.55,-27.56 372.19,-34.05"/>
+<path fill="none" stroke="#63b8ff" d="M254.47,-67.53C283.57,-56.29 322.57,-41.24 350.42,-30.49"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="351.38,-33.87 359.45,-27.01 348.86,-27.34 351.38,-33.87"/>
 </a>
 </g>
 </g>

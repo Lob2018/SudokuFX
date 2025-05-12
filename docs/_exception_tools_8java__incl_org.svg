@@ -5,17 +5,17 @@
  -->
 <!-- Title: src/main/java/fr/softsf/sudokufx/exceptions/ExceptionTools.java Pages: 1 -->
 <svg width="400pt" height="120pt"
- viewBox="0.00 0.00 400.25 120.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 399.75 120.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 116)">
 <title>src/main/java/fr/softsf/sudokufx/exceptions/ExceptionTools.java</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="236.12,-112 80.62,-112 80.62,-68 236.12,-68 236.12,-112"/>
-<text text-anchor="start" x="88.62" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
-<text text-anchor="start" x="88.62" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/exceptions/Exception</text>
-<text text-anchor="middle" x="158.38" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tools.java</text>
+<polygon fill="#999999" stroke="#666666" points="294.62,-112 139.12,-112 139.12,-68 294.62,-68 294.62,-112"/>
+<text text-anchor="start" x="147.12" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
+<text text-anchor="start" x="147.12" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/exceptions/Exception</text>
+<text text-anchor="middle" x="216.88" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">Tools.java</text>
 </a>
 </g>
 </g>
@@ -23,8 +23,9 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="82.75,-26 0,-26 0,-6 82.75,-6 82.75,-26"/>
-<text text-anchor="middle" x="41.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.slf4j.Logger</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="157.75,-32 0,-32 0,0 157.75,0 157.75,-32"/>
+<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.sql.SQLInvalidAuthorization</text>
+<text text-anchor="middle" x="78.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpecException</text>
 </a>
 </g>
 </g>
@@ -32,8 +33,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M123.59,-67.59C105.18,-56.26 83,-42.62 66.32,-32.35"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="68.37,-29.5 58.02,-27.24 64.7,-35.46 68.37,-29.5"/>
+<path fill="none" stroke="#63b8ff" d="M175.84,-67.59C157.78,-58.17 136.64,-47.14 118.71,-37.78"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="120.4,-34.72 109.92,-33.2 117.16,-40.92 120.4,-34.72"/>
 </a>
 </g>
 </g>
@@ -41,8 +42,8 @@
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="216.25,-26 100.5,-26 100.5,-6 216.25,-6 216.25,-26"/>
-<text text-anchor="middle" x="158.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.slf4j.LoggerFactory</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="258.25,-26 175.5,-26 175.5,-6 258.25,-6 258.25,-26"/>
+<text text-anchor="middle" x="216.88" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.slf4j.Logger</text>
 </a>
 </g>
 </g>
@@ -50,8 +51,8 @@
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M158.38,-67.79C158.38,-58.32 158.38,-47.2 158.38,-37.78"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="161.88,-37.82 158.38,-27.82 154.88,-37.82 161.88,-37.82"/>
+<path fill="none" stroke="#63b8ff" d="M216.88,-67.79C216.88,-58.32 216.88,-47.2 216.88,-37.78"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="220.38,-37.82 216.88,-27.82 213.38,-37.82 220.38,-37.82"/>
 </a>
 </g>
 </g>
@@ -59,9 +60,8 @@
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="392.25,-32 234.5,-32 234.5,0 392.25,0 392.25,-32"/>
-<text text-anchor="start" x="242.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.sql.SQLInvalidAuthorization</text>
-<text text-anchor="middle" x="313.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpecException</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="391.75,-26 276,-26 276,-6 391.75,-6 391.75,-26"/>
+<text text-anchor="middle" x="333.88" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.slf4j.LoggerFactory</text>
 </a>
 </g>
 </g>
@@ -69,8 +69,8 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M204.46,-67.59C225.13,-57.99 249.39,-46.72 269.76,-37.26"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="271.05,-40.52 278.64,-33.13 268.1,-34.17 271.05,-40.52"/>
+<path fill="none" stroke="#63b8ff" d="M251.66,-67.59C270.07,-56.26 292.25,-42.62 308.93,-32.35"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="310.55,-35.46 317.23,-27.24 306.88,-29.5 310.55,-35.46"/>
 </a>
 </g>
 </g>

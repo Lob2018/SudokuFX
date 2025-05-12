@@ -59,10 +59,10 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="421.5,-112 292.25,-112 292.25,-68 421.5,-68 421.5,-112"/>
-<text text-anchor="start" x="300.25" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
-<text text-anchor="start" x="300.25" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/configuration</text>
-<text text-anchor="middle" x="356.88" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ObjectMapperConfig.java</text>
+<polygon fill="#999999" stroke="#666666" points="487.25,-112 358,-112 358,-68 487.25,-68 487.25,-112"/>
+<text text-anchor="start" x="366" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
+<text text-anchor="start" x="366" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/configuration</text>
+<text text-anchor="middle" x="422.62" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ObjectMapperConfig.java</text>
 </a>
 </g>
 </g>
@@ -70,9 +70,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="157.75,-32 0,-32 0,0 157.75,0 157.75,-32"/>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">com.fasterxml.jackson.databind.</text>
-<text text-anchor="middle" x="78.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectMapper</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="213.25,-26 0,-26 0,-6 213.25,-6 213.25,-26"/>
+<text text-anchor="middle" x="106.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.Bean</text>
 </a>
 </g>
 </g>
@@ -80,8 +79,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M292.05,-72.21C249.3,-61.14 193.32,-46.64 149.45,-35.28"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="150.6,-31.96 140.04,-32.84 148.85,-38.74 150.6,-31.96"/>
+<path fill="none" stroke="#63b8ff" d="M357.53,-74.17C298.83,-60.79 213.6,-41.37 159.14,-28.97"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="160.01,-25.57 149.49,-26.77 158.46,-32.4 160.01,-25.57"/>
 </a>
 </g>
 </g>
@@ -89,9 +88,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="333.75,-32 176,-32 176,0 333.75,0 333.75,-32"/>
-<text text-anchor="start" x="184" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">com.fasterxml.jackson.databind.</text>
-<text text-anchor="middle" x="254.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SerializationFeature</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="422,-32 231.25,-32 231.25,0 422,0 422,-32"/>
+<text text-anchor="start" x="239.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.</text>
+<text text-anchor="middle" x="326.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Configuration</text>
 </a>
 </g>
 </g>
@@ -99,8 +98,8 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M326.55,-67.59C313.82,-58.61 299.02,-48.16 286.19,-39.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="288.25,-36.28 278.06,-33.37 284.21,-41.99 288.25,-36.28"/>
+<path fill="none" stroke="#63b8ff" d="M394.08,-67.59C382.22,-58.7 368.45,-48.37 356.45,-39.37"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="358.6,-36.6 348.5,-33.4 354.4,-42.2 358.6,-36.6"/>
 </a>
 </g>
 </g>
@@ -108,8 +107,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="565.5,-26 352.25,-26 352.25,-6 565.5,-6 565.5,-26"/>
-<text text-anchor="middle" x="458.88" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.Bean</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="597.5,-32 439.75,-32 439.75,0 597.5,0 597.5,-32"/>
+<text text-anchor="start" x="447.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">com.fasterxml.jackson.databind.</text>
+<text text-anchor="middle" x="518.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectMapper</text>
 </a>
 </g>
 </g>
@@ -117,8 +117,8 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M387.2,-67.59C402.95,-56.48 421.86,-43.13 436.3,-32.94"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="438.1,-35.95 444.25,-27.32 434.07,-30.23 438.1,-35.95"/>
+<path fill="none" stroke="#63b8ff" d="M451.17,-67.59C463.03,-58.7 476.8,-48.37 488.8,-39.37"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="490.85,-42.2 496.75,-33.4 486.65,-36.6 490.85,-42.2"/>
 </a>
 </g>
 </g>
@@ -126,9 +126,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="774.25,-32 583.5,-32 583.5,0 774.25,0 774.25,-32"/>
-<text text-anchor="start" x="591.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.</text>
-<text text-anchor="middle" x="678.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Configuration</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="773.5,-32 615.75,-32 615.75,0 773.5,0 773.5,-32"/>
+<text text-anchor="start" x="623.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">com.fasterxml.jackson.databind.</text>
+<text text-anchor="middle" x="694.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SerializationFeature</text>
 </a>
 </g>
 </g>
@@ -136,8 +136,8 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M421.65,-74.52C472.68,-63.11 544.08,-47.14 598.71,-34.93"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="599.28,-38.38 608.27,-32.79 597.75,-31.55 599.28,-38.38"/>
+<path fill="none" stroke="#63b8ff" d="M487.43,-71.85C528.97,-60.85 582.86,-46.59 625.26,-35.36"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="626.1,-38.76 634.87,-32.82 624.31,-31.99 626.1,-38.76"/>
 </a>
 </g>
 </g>

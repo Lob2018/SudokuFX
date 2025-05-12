@@ -1,11 +1,9 @@
 <map id="fr.softsf.sudokufx.view.DefaultView.initialize" name="fr.softsf.sudokufx.view.DefaultView.initialize">
-<area shape="rect" id="Node000001" title="Initializes the default view." alt="" coords="5,72,163,115"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a835e8933493835532e24cca7217170eb" title="Binds UI components for a difficulty&#45;level toggle in both the maxi and mini menus." alt="" coords="232,39,390,81"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,79,217,71,217,76,163,84"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9b219ba0d98d4df2edb74918b2766d16" title="Sets up a rounded clip for a ListView." alt="" coords="211,105,411,148"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="163,102,196,107,195,112,163,108"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#ae6fca9d929abf2f6009d615bf270fb24" title="Creates a string binding based on the current percentage and visibility." alt="" coords="459,5,731,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,48,443,42,444,47,390,53"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#a1b3c68f479c79fd4b696a0accebbb014" title=" " alt="" coords="478,72,712,115"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="390,67,463,75,463,80,390,72"/>
+<area shape="rect" id="Node000001" title="Initializes the default view." alt="" coords="5,39,163,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a835e8933493835532e24cca7217170eb" title="Binds UI components for a difficulty&#45;level toggle in both the maxi and mini menus." alt="" coords="232,5,390,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,46,217,38,217,43,163,51"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9b219ba0d98d4df2edb74918b2766d16" title="Sets up a rounded clip for a ListView." alt="" coords="211,72,411,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,69,196,74,195,79,163,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#a1b3c68f479c79fd4b696a0accebbb014" title=" " alt="" coords="459,5,692,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,24,443,24,443,29,390,29"/>
 </map>

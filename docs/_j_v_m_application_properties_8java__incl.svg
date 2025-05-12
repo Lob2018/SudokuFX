@@ -23,10 +23,10 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="202.12,-112 49.62,-112 49.62,-68 202.12,-68 202.12,-112"/>
-<text text-anchor="start" x="57.62" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
-<text text-anchor="start" x="57.62" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/configuration</text>
-<text text-anchor="middle" x="125.88" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JVMApplicationProperties.java</text>
+<polygon fill="#999999" stroke="#666666" points="181.5,-112 29,-112 29,-68 181.5,-68 181.5,-112"/>
+<text text-anchor="start" x="37" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
+<text text-anchor="start" x="37" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/configuration</text>
+<text text-anchor="middle" x="105.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/JVMApplicationProperties.java</text>
 </a>
 </g>
 </g>
@@ -34,9 +34,8 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="127.75,-32 0,-32 0,0 127.75,0 127.75,-32"/>
-<text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.</text>
-<text text-anchor="middle" x="63.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="86.5,-26 0,-26 0,-6 86.5,-6 86.5,-26"/>
+<text text-anchor="middle" x="43.25" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.util.Objects</text>
 </a>
 </g>
 </g>
@@ -44,8 +43,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M107.61,-67.79C100.29,-59.29 91.83,-49.46 84.31,-40.73"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="87.07,-38.57 77.89,-33.27 81.76,-43.13 87.07,-38.57"/>
+<path fill="none" stroke="#63b8ff" d="M86.98,-67.79C78,-57.35 67.28,-44.91 58.71,-34.95"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="61.43,-32.75 52.26,-27.46 56.13,-37.32 61.43,-32.75"/>
 </a>
 </g>
 </g>
@@ -53,8 +52,9 @@
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="232.12,-26 145.62,-26 145.62,-6 232.12,-6 232.12,-26"/>
-<text text-anchor="middle" x="188.88" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.util.Objects</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="232.12,-32 104.38,-32 104.38,0 232.12,0 232.12,-32"/>
+<text text-anchor="start" x="112.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.</text>
+<text text-anchor="middle" x="168.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex</text>
 </a>
 </g>
 </g>
@@ -62,8 +62,8 @@
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M144.44,-67.79C153.57,-57.35 164.46,-44.91 173.17,-34.95"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="175.78,-37.28 179.73,-27.45 170.51,-32.67 175.78,-37.28"/>
+<path fill="none" stroke="#63b8ff" d="M123.81,-67.79C131.25,-59.29 139.85,-49.46 147.49,-40.73"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="150.07,-43.1 154.02,-33.27 144.8,-38.49 150.07,-43.1"/>
 </a>
 </g>
 </g>

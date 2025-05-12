@@ -105,10 +105,11 @@ $(function(){initNavTree('_version_service_i_test_8java.html',''); initResizable
   <div class="headertitle"><div class="title">VersionServiceITest.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import ch.qos.logback.classic.spi.ILoggingEvent;</code><br />
-<code>import ch.qos.logback.core.read.ListAppender;</code><br />
-<code>import com.fasterxml.jackson.databind.ObjectMapper;</code><br />
-<code>import fr.softsf.sudokufx.utils.MyDateTime;</code><br />
+<div class="textblock"><code>import java.io.IOException;</code><br />
+<code>import java.net.http.HttpClient;</code><br />
+<code>import java.net.http.HttpRequest;</code><br />
+<code>import java.net.http.HttpResponse;</code><br />
+<code>import java.util.concurrent.ExecutionException;</code><br />
 <code>import javafx.concurrent.Task;</code><br />
 <code>import org.junit.jupiter.api.AfterEach;</code><br />
 <code>import org.junit.jupiter.api.BeforeEach;</code><br />
@@ -121,11 +122,10 @@ $(function(){initNavTree('_version_service_i_test_8java.html',''); initResizable
 <code>import org.mockito.MockitoAnnotations;</code><br />
 <code>import org.slf4j.LoggerFactory;</code><br />
 <code>import org.testfx.framework.junit5.ApplicationExtension;</code><br />
-<code>import java.io.IOException;</code><br />
-<code>import java.net.http.HttpClient;</code><br />
-<code>import java.net.http.HttpRequest;</code><br />
-<code>import java.net.http.HttpResponse;</code><br />
-<code>import java.util.concurrent.ExecutionException;</code><br />
+<code>import com.fasterxml.jackson.databind.ObjectMapper;</code><br />
+<code>import ch.qos.logback.classic.spi.ILoggingEvent;</code><br />
+<code>import ch.qos.logback.core.read.ListAppender;</code><br />
+<code>import fr.softsf.sudokufx.utils.MyDateTime;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />
 <code>import org.mockito.ArgumentMatchers.any;</code><br />
 <code>import org.mockito.Mockito.*;</code><br />
@@ -187,7 +187,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li><li class="navelem"><a class="el" href="dir_97debbc39e3b917fca663601bb2b0709.html">java</a></li><li class="navelem"><a class="el" href="dir_8d7deeaf7546933b8f2dc85f32ff302b.html">fr</a></li><li class="navelem"><a class="el" href="dir_306a5b3cb699d06afc248376b3d7d66a.html">softsf</a></li><li class="navelem"><a class="el" href="dir_a649969fb0ce802377fa0d754848ffcd.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_e750aab36d43a747687e10a289bead43.html">service</a></li><li class="navelem"><a class="el" href="_version_service_i_test_8java.html">VersionServiceITest.java</a></li>
-    <li class="footer">Generated on Mon May 12 2025 10:57:41 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon May 12 2025 12:02:07 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

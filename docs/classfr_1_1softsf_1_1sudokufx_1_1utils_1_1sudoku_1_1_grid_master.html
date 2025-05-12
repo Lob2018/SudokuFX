@@ -230,7 +230,7 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:aeafcef1eee40c50df59fba328874bcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac498e74f962fd88ec4c8781e50d074d3" id="r_ac498e74f962fd88ec4c8781e50d074d3"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac498e74f962fd88ec4c8781e50d074d3">DIFFICILE_MAX_CACHEES</a> = 59</td></tr>
 <tr class="separator:ac498e74f962fd88ec4c8781e50d074d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca34f326170249676420a2c2645d5c44" id="r_aca34f326170249676420a2c2645d5c44"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca34f326170249676420a2c2645d5c44">DIFFICILE_MOY_CACHEES</a> = (<a class="el" href="#a3ebea586bc35752cc744c208be17e984">MOYEN_MAX_CACHEES</a> + <a class="el" href="#ac498e74f962fd88ec4c8781e50d074d3">DIFFICILE_MAX_CACHEES</a>) / 2</td></tr>
+<tr class="memitem:aca34f326170249676420a2c2645d5c44" id="r_aca34f326170249676420a2c2645d5c44"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca34f326170249676420a2c2645d5c44">DIFFICILE_MOY_CACHEES</a></td></tr>
 <tr class="separator:aca34f326170249676420a2c2645d5c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1284fab4c8c6372cb09bee56bda96590" id="r_a1284fab4c8c6372cb09bee56bda96590"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1284fab4c8c6372cb09bee56bda96590">DIMENSION</a> = <a class="el" href="#a22b34c19f87bdd82645147af3b5ddb74">ORDRE</a> * <a class="el" href="#a22b34c19f87bdd82645147af3b5ddb74">ORDRE</a></td></tr>
 <tr class="separator:a1284fab4c8c6372cb09bee56bda96590"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1067,27 +1067,14 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Résout une grille de Sudoku en remplissant les cases vides avec des valeurs valides. </p>
-<p>Le processus de résolution inclut les étapes suivantes :</p><ol type="1">
-<li>Calcule les possibilités pour chaque case de la grille.</li>
-<li>Remplit la grille en utilisant une approche récursive :<ul>
-<li>Identifie la case avec le moins d'options disponibles.</li>
-<li>Teste chaque valeur possible pour cette case.</li>
-<li>Met à jour les possibilités des cases adjacentes en fonction des valeurs placées.</li>
-<li>Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu'aucune solution ne soit trouvée.</li>
-</ul>
-</li>
-</ol>
+<p>Le processus de résolution inclut les étapes suivantes : 1. Calcule les possibilités pour chaque case de la grille. 2. Remplit la grille en utilisant une approche récursive : - Identifie la case avec le moins d'options disponibles. - Teste chaque valeur possible pour cette case. - Met à jour les possibilités des cases adjacentes en fonction des valeurs placées. - Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu'aucune solution ne soit trouvée.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">grille</td><td>Tableau représentant la grille de Sudoku initiale, qui peut être vide ou partiellement remplie. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Un tableau contenant deux éléments :<ul>
-<li>Le premier élément est 0 si la grille est générée avec succès et est cohérente, sinon -1.</li>
-<li>Le deuxième élément est le pourcentage des possibilités, compris entre 0 et 100, ou 0 si la grille n'est pas cohérente. </li>
-</ul>
-</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Un tableau contenant deux éléments : - Le premier élément est 0 si la grille est générée avec succès et est cohérente, sinon -1. - Le deuxième élément est le pourcentage des possibilités, compris entre 0 et 100, ou 0 si la grille n'est pas cohérente. </dd></dl>
 
 </div>
 </div>
@@ -1326,7 +1313,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.utils.sudoku.GridMaster.DIFFICILE_MOY_CACHEES = (<a class="el" href="#a3ebea586bc35752cc744c208be17e984">MOYEN_MAX_CACHEES</a> + <a class="el" href="#ac498e74f962fd88ec4c8781e50d074d3">DIFFICILE_MAX_CACHEES</a>) / 2</td>
+          <td class="memname">final int fr.softsf.sudokufx.utils.sudoku.GridMaster.DIFFICILE_MOY_CACHEES</td>
         </tr>
       </table>
   </td>
@@ -1335,7 +1322,11 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            (<a class="code hl_variable" href="#a3ebea586bc35752cc744c208be17e984">MOYEN_MAX_CACHEES</a> + <a class="code hl_variable" href="#ac498e74f962fd88ec4c8781e50d074d3">DIFFICILE_MAX_CACHEES</a>) / 2</div>
+<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_html_a3ebea586bc35752cc744c208be17e984"><div class="ttname"><a href="#a3ebea586bc35752cc744c208be17e984">fr.softsf.sudokufx.utils.sudoku.GridMaster.MOYEN_MAX_CACHEES</a></div><div class="ttdeci">static final int MOYEN_MAX_CACHEES</div><div class="ttdef"><b>Definition</b> GridMaster.java:28</div></div>
+<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master_html_ac498e74f962fd88ec4c8781e50d074d3"><div class="ttname"><a href="#ac498e74f962fd88ec4c8781e50d074d3">fr.softsf.sudokufx.utils.sudoku.GridMaster.DIFFICILE_MAX_CACHEES</a></div><div class="ttdeci">static final int DIFFICILE_MAX_CACHEES</div><div class="ttdef"><b>Definition</b> GridMaster.java:30</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1284fab4c8c6372cb09bee56bda96590" name="a1284fab4c8c6372cb09bee56bda96590"></a>
@@ -1590,7 +1581,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils.html">utils</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku.html">sudoku</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html">GridMaster</a></li>
-    <li class="footer">Generated on Mon May 12 2025 10:57:41 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon May 12 2025 12:02:07 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
