@@ -24,8 +24,13 @@ public class Coordinator {
 
     private static final Logger log = LoggerFactory.getLogger(Coordinator.class);
 
+    /** The main JavaFX Scene managed by the Coordinator. */
     private Scene scene;
+
+    /** Shared FXMLLoader used to load and inject FXML views and controllers. */
     private final FXMLLoader fxmlLoader;
+
+    /** Utility for dynamically resizing font sizes based on the scene dimensions. */
     private DynamicFontSize dynamicFontSize;
 
     /**
@@ -38,10 +43,20 @@ public class Coordinator {
         this.fxmlLoader = fxmlLoader;
     }
 
+    /**
+     * Returns the current JavaFX Scene.
+     *
+     * @return the JavaFX Scene
+     */
     public Scene getScene() {
         return scene;
     }
 
+    /**
+     * Sets the JavaFX Scene managed by the Coordinator.
+     *
+     * @param scene the Scene to set
+     */
     public void setScene(Scene scene) {
         this.scene = scene;
     }
