@@ -71,13 +71,15 @@ public class Coordinator {
     }
 
     /**
-     * Sets the dynamic font size handler for the scene.
-     * This method should be called before {@link #setRootByFXMLName(String)} if dynamic font resizing is required.
+     * Sets the dynamic font size handler for the scene. This method should be called before {@link
+     * #setRootByFXMLName(String)} if dynamic font resizing is required.
      *
-     * <p>The font size handler adjusts the font size of UI elements based on the current size of the scene.
-     * This allows for a more responsive and adaptable user interface by scaling the font size as the scene size changes.
+     * <p>The font size handler adjusts the font size of UI elements based on the current size of
+     * the scene. This allows for a more responsive and adaptable user interface by scaling the font
+     * size as the scene size changes.
      *
-     * @param dynamicFontSize The {@link DynamicFontSize} object that manages the dynamic resizing of font sizes.
+     * @param dynamicFontSize The {@link DynamicFontSize} object that manages the dynamic resizing
+     *     of font sizes.
      */
     public void setDynamicFontSize(DynamicFontSize dynamicFontSize) {
         this.dynamicFontSize = dynamicFontSize;
