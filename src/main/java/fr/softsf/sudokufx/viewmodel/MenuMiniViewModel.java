@@ -20,9 +20,6 @@ public class MenuMiniViewModel {
     // Accessible texts
     private final StringProperty menuMiniButtonShowAccessibleText = new SimpleStringProperty();
     private final StringProperty menuMiniButtonPlayerAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonEasyAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonMediumAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonDifficultAccessibleText = new SimpleStringProperty();
     private final StringProperty menuMiniButtonSolveAccessibleText = new SimpleStringProperty();
     private final StringProperty menuMiniButtonBackupAccessibleText = new SimpleStringProperty();
     private final StringProperty menuMiniButtonBackgroundAccessibleText =
@@ -35,9 +32,6 @@ public class MenuMiniViewModel {
     // Tooltips
     private final StringProperty menuMiniButtonShowTooltip = new SimpleStringProperty();
     private final StringProperty menuMiniButtonPlayerTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonEasyTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonMediumTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonDifficultTooltip = new SimpleStringProperty();
     private final StringProperty menuMiniButtonSolveTooltip = new SimpleStringProperty();
     private final StringProperty menuMiniButtonBackupTooltip = new SimpleStringProperty();
     private final StringProperty menuMiniButtonBackgroundTooltip = new SimpleStringProperty();
@@ -55,12 +49,6 @@ public class MenuMiniViewModel {
                 I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
         menuMiniButtonPlayerAccessibleText.set(
                 I18n.INSTANCE.getValue("menu.mini.button.player.accessibility"));
-        menuMiniButtonEasyAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.easy.accessibility"));
-        menuMiniButtonMediumAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.medium.accessibility"));
-        menuMiniButtonDifficultAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.difficult.accessibility"));
         menuMiniButtonSolveAccessibleText.set(
                 I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility"));
         menuMiniButtonBackupAccessibleText.set(
@@ -80,12 +68,6 @@ public class MenuMiniViewModel {
         menuMiniButtonPlayerTooltip.set(
                 I18n.INSTANCE.getValue("menu.mini.button.player.accessibility")
                         + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonEasyTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.easy.accessibility"));
-        menuMiniButtonMediumTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.medium.accessibility"));
-        menuMiniButtonDifficultTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.difficult.accessibility"));
         menuMiniButtonSolveTooltip.set(
                 I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility")
                         + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
@@ -109,18 +91,6 @@ public class MenuMiniViewModel {
 
     public StringProperty menuMiniButtonPlayerAccessibleTextProperty() {
         return menuMiniButtonPlayerAccessibleText;
-    }
-
-    public StringProperty menuMiniButtonEasyAccessibleTextProperty() {
-        return menuMiniButtonEasyAccessibleText;
-    }
-
-    public StringProperty menuMiniButtonMediumAccessibleTextProperty() {
-        return menuMiniButtonMediumAccessibleText;
-    }
-
-    public StringProperty menuMiniButtonDifficultAccessibleTextProperty() {
-        return menuMiniButtonDifficultAccessibleText;
     }
 
     public StringProperty menuMiniButtonSolveAccessibleTextProperty() {
@@ -158,18 +128,6 @@ public class MenuMiniViewModel {
 
     public StringProperty menuMiniButtonPlayerTooltipProperty() {
         return menuMiniButtonPlayerTooltip;
-    }
-
-    public StringProperty menuMiniButtonEasyTooltipProperty() {
-        return menuMiniButtonEasyTooltip;
-    }
-
-    public StringProperty menuMiniButtonMediumTooltipProperty() {
-        return menuMiniButtonMediumTooltip;
-    }
-
-    public StringProperty menuMiniButtonDifficultTooltipProperty() {
-        return menuMiniButtonDifficultTooltip;
     }
 
     public StringProperty menuMiniButtonSolveTooltipProperty() {

@@ -8,16 +8,18 @@ package fr.softsf.sudokufx.viewmodel;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
+import org.springframework.stereotype.Component;
+
 import fr.softsf.sudokufx.exceptions.ExceptionTools;
 
 /**
- * ViewModel responsible for managing the active menu in the application. It provides functionality
- * to set and retrieve the active menu, which can be bound to the UI to control which menu is
- * visible.
+ * ViewModel component managing the currently active menu or submenu. Provides observable state for
+ * UI bindings and enforces non-null values.
  */
+@Component
 public class ActiveMenuOrSubmenuViewModel {
 
-    /** Enum representing the different possible menus */
+    /** Enumeration of all possible menus or submenus. */
     public enum ActiveMenu {
         NONE,
         HIDDEN,
@@ -32,15 +34,16 @@ public class ActiveMenuOrSubmenuViewModel {
     private final ObjectProperty<ActiveMenu> activeMenu =
             new SimpleObjectProperty<>(ActiveMenu.MAXI);
 
+    /** Returns the observable property representing the active menu. */
     public ObjectProperty<ActiveMenu> getActiveMenu() {
         return activeMenu;
     }
 
     /**
-     * Sets the active menu.
+     * Updates the active menu.
      *
-     * @param menu The menu to set as active.
-     * @throws IllegalArgumentException if the menu is null.
+     * @param menu the menu to activate
+     * @throws IllegalArgumentException if menu is null
      */
     public void setActiveMenu(ActiveMenu menu) {
         if (menu == null) {
