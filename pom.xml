@@ -6,7 +6,7 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>3.4.5</version>
-    <relativePath></relativePath>
+    <relativePath/>
     <!-- lookup parent from repository -->
   </parent>
   <!-- Project information -->
@@ -141,7 +141,7 @@
         <artifactId>spotless-maven-plugin</artifactId>
         <version>2.44.4</version>
         <configuration>
-          <!--          <ratchetFrom>origin/main</ratchetFrom>-->
+          <ratchetFrom>NONE</ratchetFrom>
           <skip>${spotless-maven-plugin.skip}</skip>
           <formats>
             <!-- independent formats -->
@@ -163,8 +163,8 @@
                 <exclude>setup/**</exclude>
               </excludes>
               <!-- steps to apply to those files -->
-              <trimTrailingWhitespace></trimTrailingWhitespace>
-              <endWithNewline></endWithNewline>
+              <trimTrailingWhitespace/>
+              <endWithNewline/>
               <indent>
                 <spaces>true</spaces>
                 <spacesPerTab>4</spacesPerTab>
@@ -182,7 +182,7 @@
               <!-- The encoding of the pom files -->
               <lineSeparator>${line.separator}</lineSeparator>
               <!-- line separator to use -->
-              <expandEmptyElements>true</expandEmptyElements>
+              <expandEmptyElements>false</expandEmptyElements>
               <!-- Should empty elements be expanded-->
               <spaceBeforeCloseEmptyElement>false</spaceBeforeCloseEmptyElement>
               <!-- Should a space be added inside self-closing elements-->
@@ -196,7 +196,7 @@
               <!-- Should schema locations be indended -->
               <predefinedSortOrder>recommended_2008_06</predefinedSortOrder>
               <!-- Sort order of elements: https://github.com/Ekryd/sortpom/wiki/PredefinedSortOrderProfiles-->
-              <sortOrderFile></sortOrderFile>
+              <sortOrderFile/>
               <!-- Custom sort order of elements: https://raw.githubusercontent.com/Ekryd/sortpom/master/sorter/src/main/resources/custom_1.xml -->
               <sortDependencies>groupId,artifactId</sortDependencies>
               <!-- Sort dependencies: https://github.com/Ekryd/sortpom/wiki/SortDependencies-->
@@ -213,37 +213,39 @@
             </sortPom>
           </pom>
           <java>
-            <!-- defaults -->
+            <!-- Included source folders -->
             <includes>
               <include>src/main/java/**/*.java</include>
               <include>src/test/java/**/*.java</include>
             </includes>
-            <!-- specific flavor of google-java-format and reflow long strings -->
+            <!-- Use Google Java Format with AOSP style and string reflow -->
             <googleJavaFormat>
               <version>1.27.0</version>
               <style>AOSP</style>
               <reflowLongStrings>true</reflowLongStrings>
             </googleJavaFormat>
+            <!-- Import ordering rules -->
             <importOrder>
-              <!-- or a custom ordering -->
+              <!-- Place wildcard imports after regular imports -->
               <wildcardsLast>true</wildcardsLast>
-              <!-- Optional, default false. Sort wildcard import after specific imports -->
               <order>java|javax,org,com,,com.abcdef,\#,\#com.abcdef</order>
-              <!-- or use <file>${project.basedir}/eclipse.importorder</file> -->
-              <!-- you can use an empty string for all the imports you didn't specify explicitly,
-                                 '|' to join group without blank line, and '\#` prefix for static imports. -->
+              <!-- Use '|' to group without line breaks, empty string for others, '\#' for static imports -->
+              <!-- Alternatively: <file>${project.basedir}/eclipse.importorder</file> -->
             </importOrder>
-            <removeUnusedImports></removeUnusedImports>
-            <!-- self-explanatory -->
-            <formatAnnotations></formatAnnotations>
-            <!-- fixes formatting of type annotations, see below -->
-
-            <!-- make sure every file has the following copyright header.
-                             optionally, Spotless can set copyright years by digging
-                             through git history (see "license" section below) -->
+            <!-- Remove unused imports -->
+            <removeUnusedImports/>
+            <!-- Format Java type annotations consistently -->
+            <formatAnnotations/>
+            <!-- Insert license header at the top of each file -->
             <licenseHeader>
-              <content>/* SudokuFX © $YEAR Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */</content>
-              <!-- or <file>${project.basedir}/license-header</file> -->
+              <content><![CDATA[
+/*
+ * SudokuFX - Copyright © 2024-present SOFT64.FR Lob2018
+ * Licensed under the MIT License (MIT).
+ * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
+ */
+]]></content>
+              <!-- Or load from external file: <file>${project.basedir}/license-header</file> -->
             </licenseHeader>
           </java>
           <sql>
@@ -251,8 +253,8 @@
             <includes>
               <include>src/main/resources/fr/softsf/sudokufx/flyway/scripts/hsqldb/migration/**/*.sql</include>
             </includes>
-            <trimTrailingWhitespace></trimTrailingWhitespace>
-            <endWithNewline></endWithNewline>
+            <trimTrailingWhitespace/>
+            <endWithNewline/>
             <indent>
               <spaces>true</spaces>
               <spacesPerTab>4</spacesPerTab>

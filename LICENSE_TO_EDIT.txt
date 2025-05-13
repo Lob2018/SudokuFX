@@ -1,7 +1,7 @@
 ## MIT license (MIT)
 
 * SudokuFX (this application)
-Copyright © 2024 - present the owner Lob2018
+Copyright © 2024-present SOFT64.FR Lob2018
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this
 software and associated documentation files (the "Software"), to deal in the Software

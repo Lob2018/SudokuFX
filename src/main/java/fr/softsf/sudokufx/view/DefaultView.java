@@ -1,4 +1,8 @@
-/* SudokuFX © 2025 Licensed under the MIT license (MIT) - present the owner Lob2018 - see https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme for details */
+/*
+ * SudokuFX - Copyright © 2024-present SOFT64.FR Lob2018
+ * Licensed under the MIT License (MIT).
+ * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
+ */
 package fr.softsf.sudokufx.view;
 
 import java.io.File;
@@ -68,6 +72,7 @@ public final class DefaultView implements IMainView {
     @Autowired private LevelViewModel levelViewModel;
     @Autowired private BackgroundViewModel backgroundViewModel;
     @Autowired private MenuHiddenViewModel menuHiddenViewModel;
+    @Autowired private MenuMiniViewModel menuMiniViewModel;
 
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
@@ -175,89 +180,179 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .textProperty()
                 .bind(menuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty());
-        //        menuHiddenButtonShow.setAccessibleText(
-        //                I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
-        //        menuHiddenButtonShow
-        //                .getTooltip()
-        //                .setText(I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
 
         // Menu mini
-        menuMiniButtonShow.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
+        menuMiniButtonShow
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonShowAccessibleTextProperty());
         menuMiniButtonShow
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
-        menuMiniButtonPlayer.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.player.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonShowTooltipProperty());
+
+        menuMiniButtonPlayer
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonPlayerAccessibleTextProperty());
         menuMiniButtonPlayer
                 .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.mini.button.player.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonPlayer.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonEasy.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.easy.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonPlayerTooltipProperty());
+
+        menuMiniButtonEasy
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonEasyAccessibleTextProperty());
         menuMiniButtonEasy
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.mini.button.easy.accessibility"));
-        menuMiniButtonMedium.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.medium.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonEasyTooltipProperty());
+
+        menuMiniButtonMedium
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonMediumAccessibleTextProperty());
         menuMiniButtonMedium
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.mini.button.medium.accessibility"));
-        menuMiniButtonDifficult.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.difficult.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonMediumTooltipProperty());
+
+        menuMiniButtonDifficult
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonDifficultAccessibleTextProperty());
         menuMiniButtonDifficult
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.mini.button.difficult.accessibility"));
-        menuMiniButtonSolve.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonDifficultTooltipProperty());
+
+        menuMiniButtonSolve
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonSolveAccessibleTextProperty());
         menuMiniButtonSolve
                 .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonSolve.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonBackup.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonSolveTooltipProperty());
+
+        menuMiniButtonBackup
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonBackupAccessibleTextProperty());
         menuMiniButtonBackup
                 .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonBackup.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonBackground.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.background.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonBackupTooltipProperty());
+
+        menuMiniButtonBackground
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonBackgroundAccessibleTextProperty());
         menuMiniButtonBackground
                 .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.mini.button.background.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonBackground.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonLanguage.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonBackgroundTooltipProperty());
+
+        menuMiniButtonLanguage
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonLanguageAccessibleTextProperty());
         menuMiniButtonLanguage
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
-        menuMiniButtonLanguageIso.setText(I18n.INSTANCE.getValue("menu.mini.button.language.iso"));
-        menuMiniButtonHelp.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonLanguageTooltipProperty());
+
+        menuMiniButtonLanguageIso
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonLanguageIsoTextProperty());
+
+        menuMiniButtonHelp
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonHelpAccessibleTextProperty());
         menuMiniButtonHelp
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
-        menuMiniButtonNew.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonHelpTooltipProperty());
+
+        menuMiniButtonNew
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonNewAccessibleTextProperty());
         menuMiniButtonNew
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonNewTooltipProperty());
+        //        menuMiniButtonShow.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
+        //        menuMiniButtonShow
+        //                .getTooltip()
+        //                .setText(I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
+        //        menuMiniButtonPlayer.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.player.accessibility"));
+        //        menuMiniButtonPlayer
+        //                .getTooltip()
+        //                .setText(
+        //                        I18n.INSTANCE.getValue("menu.mini.button.player.accessibility")
+        //                                + I18n.INSTANCE.getValue(
+        //                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMiniButtonPlayer.setAccessibleRoleDescription(
+        //                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMiniButtonEasy.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.easy.accessibility"));
+        //        menuMiniButtonEasy
+        //                .getTooltip()
+        //                .setText(I18n.INSTANCE.getValue("menu.mini.button.easy.accessibility"));
+        //        menuMiniButtonMedium.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.medium.accessibility"));
+        //        menuMiniButtonMedium
+        //                .getTooltip()
+        //                .setText(I18n.INSTANCE.getValue("menu.mini.button.medium.accessibility"));
+        //        menuMiniButtonDifficult.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.difficult.accessibility"));
+        //        menuMiniButtonDifficult
+        //                .getTooltip()
+        //
+        // .setText(I18n.INSTANCE.getValue("menu.mini.button.difficult.accessibility"));
+        //        menuMiniButtonSolve.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility"));
+        //        menuMiniButtonSolve
+        //                .getTooltip()
+        //                .setText(
+        //                        I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility")
+        //                                + I18n.INSTANCE.getValue(
+        //                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMiniButtonSolve.setAccessibleRoleDescription(
+        //                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMiniButtonBackup.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility"));
+        //        menuMiniButtonBackup
+        //                .getTooltip()
+        //                .setText(
+        //                        I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility")
+        //                                + I18n.INSTANCE.getValue(
+        //                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMiniButtonBackup.setAccessibleRoleDescription(
+        //                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMiniButtonBackground.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.background.accessibility"));
+        //        menuMiniButtonBackground
+        //                .getTooltip()
+        //                .setText(
+        //
+        // I18n.INSTANCE.getValue("menu.mini.button.background.accessibility")
+        //                                + I18n.INSTANCE.getValue(
+        //                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMiniButtonBackground.setAccessibleRoleDescription(
+        //                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMiniButtonLanguage.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
+        //        menuMiniButtonLanguage
+        //                .getTooltip()
+        //
+        // .setText(I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
+        //
+        // menuMiniButtonLanguageIso.setText(I18n.INSTANCE.getValue("menu.mini.button.language.iso"));
+        //        menuMiniButtonHelp.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
+        //        menuMiniButtonHelp
+        //                .getTooltip()
+        //                .setText(I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
+        //        menuMiniButtonNew.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
+        //        menuMiniButtonNew
+        //                .getTooltip()
+        //                .setText(I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         String playerName = "Tototototototototototototototo";
         menuMaxiButtonReduce.setAccessibleText(
@@ -887,6 +982,7 @@ public final class DefaultView implements IMainView {
     public void handleToggleLanguage() {
         coordinator.toggleLanguage();
         menuHiddenViewModel.updateTexts();
+        menuMiniViewModel.updateTexts();
     }
 
     /** Configures the primary stage for the full menu view. */
