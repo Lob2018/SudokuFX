@@ -40,10 +40,7 @@ import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.list.ItemListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
-import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
-import fr.softsf.sudokufx.viewmodel.BackgroundViewModel;
-import fr.softsf.sudokufx.viewmodel.HelpViewModel;
-import fr.softsf.sudokufx.viewmodel.LevelViewModel;
+import fr.softsf.sudokufx.viewmodel.*;
 
 /**
  * Default view class of the Sudoku application. This class is responsible for displaying and
@@ -69,9 +66,11 @@ public final class DefaultView implements IMainView {
     @Autowired private Coordinator coordinator;
     @Autowired private HelpViewModel helpViewModel;
     @Autowired private LevelViewModel levelViewModel;
+    @Autowired private BackgroundViewModel backgroundViewModel;
+    @Autowired private MenuHiddenViewModel menuHiddenViewModel;
+
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
-    @Autowired private BackgroundViewModel backgroundViewModel;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel =
             new ActiveMenuOrSubmenuViewModel();
 
@@ -168,13 +167,21 @@ public final class DefaultView implements IMainView {
      */
     @FXML
     private void initialize() {
-
-        menuHiddenButtonShow.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
+        // Menu hidden
+        menuHiddenButtonShow
+                .accessibleTextProperty()
+                .bind(menuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty());
         menuHiddenButtonShow
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
+                .textProperty()
+                .bind(menuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty());
+        //        menuHiddenButtonShow.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
+        //        menuHiddenButtonShow
+        //                .getTooltip()
+        //                .setText(I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
 
+        // Menu mini
         menuMiniButtonShow.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
         menuMiniButtonShow
@@ -876,10 +883,10 @@ public final class DefaultView implements IMainView {
         helpViewModel.showHelp();
     }
 
-    /** Toggles the language between French and English and reloads the default view. */
+    /** Switches language and refreshes all ViewModel texts. */
     public void handleToggleLanguage() {
-        I18n.INSTANCE.setLocaleBundle(I18n.INSTANCE.getLanguage().equals("fr") ? "EN" : "FR");
-        coordinator.setRootByFXMLName("default-view");
+        coordinator.toggleLanguage();
+        menuHiddenViewModel.updateTexts();
     }
 
     /** Configures the primary stage for the full menu view. */

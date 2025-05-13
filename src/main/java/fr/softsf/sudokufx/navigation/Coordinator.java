@@ -9,91 +9,80 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.utils.DynamicFontSize;
 
 /**
- * Coordinator is a Spring-managed component responsible for controlling navigation and dynamic UI
- * updates in a JavaFX application using the MVVM-C architecture.
+ * Coordinator is a Spring-managed component responsible for navigation and UI updates in a JavaFX
+ * application following the MVVM-C architecture.
  *
- * <p>It handles the loading and switching between different FXML views at runtime, and optionally
- * applies dynamic font resizing based on the dimensions of the scene through the DynamicFontSize
- * utility.
+ * <p>It handles FXML view loading, dynamic font resizing, and language switching.
  */
 @Component
 public class Coordinator {
 
     private static final Logger log = LoggerFactory.getLogger(Coordinator.class);
 
-    /** The default JavaFX Scene managed by the Coordinator. */
+    /** The default JavaFX Scene managed by this coordinator. */
     private Scene defaultScene;
 
-    /** Shared FXMLLoader used to load FXML files and inject controllers. */
+    /** Shared FXMLLoader for loading FXML files and injecting controllers. */
     private final FXMLLoader fxmlLoader;
 
-    /** Utility for dynamically resizing font sizes based on the scene dimensions. */
+    /** Utility for adjusting font sizes dynamically based on scene dimensions. */
     private DynamicFontSize dynamicFontSize;
 
     /**
-     * Constructs the Coordinator with an injected FXMLLoader instance. The Scene is expected to be
-     * set from the current JavaFX application context.
+     * Constructs the Coordinator with a shared {@code FXMLLoader}.
      *
-     * @param fxmlLoader the FXMLLoader used to load and inject FXML files and their controllers
+     * @param fxmlLoader the loader used to load FXML files and their controllers
      */
     public Coordinator(FXMLLoader fxmlLoader) {
         this.fxmlLoader = fxmlLoader;
     }
 
     /**
-     * Returns the current JavaFX default Scene managed by the Coordinator.
+     * Returns the JavaFX default scene managed by this coordinator.
      *
-     * <p>The Scene is the main container for the UI elements and serves as the root of the
-     * application. It is used to update and display different views by setting the root node using
-     * FXML files.
-     *
-     * @return the current JavaFX default Scene
+     * @return the current default scene
      */
     public Scene getDefaultScene() {
         return defaultScene;
     }
 
     /**
-     * Sets the JavaFX default Scene managed by the Coordinator.
+     * Sets the JavaFX default scene.
      *
-     * <p>This method allows the Coordinator to manage the main scene of the application. The scene
-     * is the container for all the UI elements, and this method ensures it is properly initialized
-     * and ready for loading views.
-     *
-     * @param scene the Scene to set as the default Scene
+     * @param scene the scene to set as default
      */
     public void setDefaultScene(Scene scene) {
         this.defaultScene = scene;
     }
 
     /**
-     * Sets the dynamic font size handler for the scene. This method should be called before {@link
-     * #setRootByFXMLName(String)} if dynamic font resizing is required.
+     * Sets the dynamic font resizing utility.
      *
-     * <p>The font size handler adjusts the font size of UI elements based on the current size of
-     * the scene. This allows for a more responsive and adaptable user interface by scaling the font
-     * size as the scene size changes.
-     *
-     * @param dynamicFontSize The {@link DynamicFontSize} object that manages the dynamic resizing
-     *     of font sizes.
+     * @param dynamicFontSize the utility used to update font sizes
      */
     public void setDynamicFontSize(DynamicFontSize dynamicFontSize) {
         this.dynamicFontSize = dynamicFontSize;
     }
 
     /**
-     * Loads an FXML file by its name and sets it as the root of the scene. Also triggers dynamic
-     * font size adjustment if the dynamic font size handler is initialized.
+     * Loads the given FXML view, sets it as the root of the default scene, and returns its
+     * controller.
      *
-     * @param fxml the base name of the FXML file to load (excluding the .fxml extension)
-     * @throws IllegalArgumentException if the FXML file cannot be found at the specified location
-     * @throws RuntimeException if loading the FXML fails, the application exits
+     * <p>Resets the {@code FXMLLoader}, loads the view from resources, updates the scene root, and
+     * adjusts the font size if applicable.
+     *
+     * <p>On failure, logs the error, exits the app, and returns {@code null}.
+     *
+     * @param <T> the controller type
+     * @param fxml the FXML base name (without extension)
+     * @return the controller instance, or {@code null} if loading fails
      */
-    public void setRootByFXMLName(final String fxml) {
+    public <T> T setRootByFXMLName(final String fxml) {
         String path = Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml";
         try {
             fxmlLoader.setRoot(null);
@@ -103,6 +92,7 @@ public class Coordinator {
             if (dynamicFontSize != null) {
                 dynamicFontSize.updateFontSize();
             }
+            return fxmlLoader.getController();
         } catch (Exception e) {
             log.error(
                     "██ Exception caught when setting root by FXML name: {} █ The FXML path was:"
@@ -110,22 +100,17 @@ public class Coordinator {
                     e.getMessage(),
                     path,
                     e);
-            Platform.exit();
         }
+        Platform.exit();
+        return null;
     }
 
     /**
-     * Returns the controller associated with the currently loaded FXML.
+     * Switches the application language between French and English.
      *
-     * <p>The controller manages the interactions between the UI and the underlying logic of the
-     * view. This method allows access to the controller once the FXML file has been loaded.
-     *
-     * @param <T> the expected type of the controller
-     * @return the controller instance
-     * @throws IllegalStateException if no FXML file has been loaded yet, or if the controller
-     *     cannot be found
+     * <p>Note: ViewModels must be notified manually to refresh bound properties.
      */
-    public <T> T getController() {
-        return fxmlLoader.getController();
+    public void toggleLanguage() {
+        I18n.INSTANCE.setLocaleBundle(I18n.INSTANCE.getLanguage().equals("fr") ? "EN" : "FR");
     }
 }

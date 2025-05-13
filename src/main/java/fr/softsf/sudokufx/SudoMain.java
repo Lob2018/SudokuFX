@@ -206,8 +206,7 @@ public class SudoMain extends Application {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(
                 e -> {
-                    coordinator.setRootByFXMLName(fxmlName);
-                    iMainView = coordinator.getController();
+                    iMainView = coordinator.setRootByFXMLName(fxmlName);
                     iMainView.openingMainStage(iSplashScreenView);
                 });
         return pause;
