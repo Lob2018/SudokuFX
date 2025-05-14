@@ -39,23 +39,29 @@ public class MenuLevelViewModel {
         return selectedLevel;
     }
 
-    public StringProperty getLabelText(DifficultyLevel level) {
-        return new SimpleStringProperty(I18n.INSTANCE.getValue(getLevelNameKey(level)));
+    public StringBinding getLabelText(DifficultyLevel level) {
+        //        return new SimpleStringProperty(I18n.INSTANCE.getValue(getLevelNameKey(level)));
+        return Bindings.createStringBinding(
+                () -> I18n.INSTANCE.getValue(getLevelNameKey(level)),
+                I18n.INSTANCE.localeProperty());
     }
 
     public StringBinding createAccessibleTextBinding(PossibilityStarsHBox starsBox, String key) {
         return Bindings.createStringBinding(
                 () -> starsBox.formattedTextBinding(key, false).get(),
                 selectedLevel,
-                starsBox.getPercentage());
+                starsBox.getPercentage(),
+                I18n.INSTANCE.localeProperty());
     }
 
     public BooleanBinding createVisibilityBinding(DifficultyLevel level) {
         return Bindings.createBooleanBinding(() -> selectedLevel.get() == level, selectedLevel);
     }
 
-    public String getAccessibilityRoleDescriptionSelected() {
-        return I18n.INSTANCE.getValue("menu.accessibility.selected");
+    public StringBinding getAccessibilityRoleDescriptionSelectedBinding() {
+        return Bindings.createStringBinding(
+                () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.selected"),
+                I18n.INSTANCE.localeProperty());
     }
 
     public String getLevelAccessibilityKey(DifficultyLevel level) {

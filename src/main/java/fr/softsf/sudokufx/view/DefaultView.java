@@ -736,16 +736,17 @@ public final class DefaultView implements IMainView {
         mini.accessibleTextProperty().bind(accessibleTextBinding);
         maxi.getTooltip().textProperty().bind(accessibleTextBinding);
         mini.getTooltip().textProperty().bind(accessibleTextBinding);
-        String selectedDescription = menuLevelViewModel.getAccessibilityRoleDescriptionSelected();
-        maxi.accessibleRoleDescriptionProperty()
-                .bind(
-                        Bindings.when(visibleBinding)
-                                .then(selectedDescription)
-                                .otherwise((String) null));
+        StringBinding selectedDescriptionBinding =
+                menuLevelViewModel.getAccessibilityRoleDescriptionSelectedBinding();
         mini.accessibleRoleDescriptionProperty()
                 .bind(
                         Bindings.when(visibleBinding)
-                                .then(selectedDescription)
+                                .then(selectedDescriptionBinding)
+                                .otherwise((String) null));
+        maxi.accessibleRoleDescriptionProperty()
+                .bind(
+                        Bindings.when(visibleBinding)
+                                .then(selectedDescriptionBinding)
                                 .otherwise((String) null));
         menuLevelViewModel
                 .selectedLevelProperty()
