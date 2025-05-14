@@ -40,7 +40,6 @@ public class MenuLevelViewModel {
     }
 
     public StringBinding getLabelText(DifficultyLevel level) {
-        //        return new SimpleStringProperty(I18n.INSTANCE.getValue(getLevelNameKey(level)));
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(getLevelNameKey(level)),
                 I18n.INSTANCE.localeProperty());
