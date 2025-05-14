@@ -5,8 +5,72 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.BooleanBinding;
+import javafx.beans.binding.StringBinding;
+import javafx.beans.property.*;
+
 import org.springframework.stereotype.Component;
+
+import fr.softsf.sudokufx.enums.DifficultyLevel;
+import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
 
 /** MenuLevelViewModel with business logic (not final) */
 @Component
-public class MenuLevelViewModel {}
+public class MenuLevelViewModel {
+    private final ObjectProperty<DifficultyLevel> selectedLevel = new SimpleObjectProperty<>(null);
+    private final IntegerProperty starsPercentage = new SimpleIntegerProperty(0);
+
+    public ObjectProperty<DifficultyLevel> getSelectedLevelProperty() {
+        return selectedLevel;
+    }
+
+    public IntegerProperty getStarsPercentageProperty() {
+        return starsPercentage;
+    }
+
+    public void setLevel(DifficultyLevel level, int percentage) {
+        selectedLevel.set(level);
+        starsPercentage.set(percentage);
+    }
+
+    public ObjectProperty<DifficultyLevel> selectedLevelProperty() {
+        return selectedLevel;
+    }
+
+    public StringProperty getLabelText(DifficultyLevel level) {
+        return new SimpleStringProperty(I18n.INSTANCE.getValue(getLevelNameKey(level)));
+    }
+
+    public StringBinding createAccessibleTextBinding(PossibilityStarsHBox starsBox, String key) {
+        return Bindings.createStringBinding(
+                () -> starsBox.formattedTextBinding(key, false).get(),
+                selectedLevel,
+                starsBox.getPercentage());
+    }
+
+    public BooleanBinding createVisibilityBinding(DifficultyLevel level) {
+        return Bindings.createBooleanBinding(() -> selectedLevel.get() == level, selectedLevel);
+    }
+
+    public String getAccessibilityRoleDescriptionSelected() {
+        return I18n.INSTANCE.getValue("menu.accessibility.selected");
+    }
+
+    public String getLevelAccessibilityKey(DifficultyLevel level) {
+        return switch (level) {
+            case EASY -> "menu.maxi.button.easy.accessibility";
+            case MEDIUM -> "menu.maxi.button.medium.accessibility";
+            case DIFFICULT -> "menu.maxi.button.difficult.accessibility";
+        };
+    }
+
+    private String getLevelNameKey(DifficultyLevel level) {
+        return switch (level) {
+            case EASY -> "menu.maxi.button.easy.text";
+            case MEDIUM -> "menu.maxi.button.medium.text";
+            case DIFFICULT -> "menu.maxi.button.difficult.text";
+        };
+    }
+}

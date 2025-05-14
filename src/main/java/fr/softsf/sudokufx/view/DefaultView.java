@@ -11,6 +11,7 @@ import java.util.Objects;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
+import javafx.beans.binding.BooleanBinding;
 import javafx.beans.binding.DoubleBinding;
 import javafx.beans.binding.StringBinding;
 import javafx.css.PseudoClass;
@@ -70,7 +71,7 @@ public final class DefaultView implements IMainView {
     @Autowired private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     @Autowired private Coordinator coordinator;
     @Autowired private HelpViewModel helpViewModel;
-    @Autowired private LevelViewModel levelViewModel;
+    //    @Autowired private LevelViewModel levelViewModel;
     @Autowired private BackgroundViewModel backgroundViewModel;
     @Autowired private MenuHiddenViewModel menuHiddenViewModel;
     @Autowired private MenuMiniViewModel menuMiniViewModel;
@@ -240,7 +241,26 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .textProperty()
                 .bind(menuMiniViewModel.menuMiniButtonNewTooltipProperty());
-        // Menu player
+        // Menu Levels
+        bindLevel(
+                DifficultyLevel.EASY,
+                menuMaxiHBoxEasyPossibilities,
+                menuMaxiButtonEasy,
+                menuMaxiButtonEasyText,
+                menuMiniButtonEasy);
+        bindLevel(
+                DifficultyLevel.MEDIUM,
+                menuMaxiHBoxMediumPossibilities,
+                menuMaxiButtonMedium,
+                menuMaxiButtonMediumText,
+                menuMiniButtonMedium);
+        bindLevel(
+                DifficultyLevel.DIFFICULT,
+                menuMaxiHBoxDifficultPossibilities,
+                menuMaxiButtonDifficult,
+                menuMaxiButtonDifficultText,
+                menuMiniButtonDifficult);
+        // Menu maxi
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         String playerName = "Tototototototototototototototo";
         menuMaxiButtonReduce.setAccessibleText(
@@ -265,30 +285,6 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonPlayer.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayerText.setText(playerName);
-        bindLevel(
-                DifficultyLevel.EASY,
-                menuMaxiHBoxEasyPossibilities,
-                menuMaxiButtonEasy,
-                menuMaxiButtonEasyText,
-                "menu.maxi.button.easy.accessibility",
-                "menu.maxi.button.easy.text",
-                menuMiniButtonEasy);
-        bindLevel(
-                DifficultyLevel.MEDIUM,
-                menuMaxiHBoxMediumPossibilities,
-                menuMaxiButtonMedium,
-                menuMaxiButtonMediumText,
-                "menu.maxi.button.medium.accessibility",
-                "menu.maxi.button.medium.text",
-                menuMiniButtonMedium);
-        bindLevel(
-                DifficultyLevel.DIFFICULT,
-                menuMaxiHBoxDifficultPossibilities,
-                menuMaxiButtonDifficult,
-                menuMaxiButtonDifficultText,
-                "menu.maxi.button.difficult.accessibility",
-                "menu.maxi.button.difficult.text",
-                menuMiniButtonDifficult);
         menuMaxiButtonSolve.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
         menuMaxiButtonSolve
@@ -637,85 +633,129 @@ public final class DefaultView implements IMainView {
                                 .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND));
     }
 
-    /**
-     * Binds UI components for a difficulty-level toggle in both the maxi and mini menus. This
-     * method configures visibility, accessibility, tooltips, and styling based on the selected
-     * difficulty level.
-     *
-     * <ul>
-     *   <li><strong>Visibility:</strong> Displays stars when the corresponding difficulty level is
-     *       selected.
-     *   <li><strong>Accessibility:</strong> Updates role descriptions and accessible text for
-     *       screen readers based on the level.
-     *   <li><strong>Tooltips:</strong> Binds the tooltip text to the accessible text for
-     *       consistency.
-     *   <li><strong>Styling:</strong> Applies a 'selected' pseudo-class to both buttons when the
-     *       level is active.
-     * </ul>
-     *
-     * @param difficultyLevel The difficulty level to configure.
-     * @param possibilityStarsBox The container that displays the stars for this difficulty level.
-     * @param maxiLevel The button in the maxi menu corresponding to this level.
-     * @param levelName The label showing the level's name in the maxi menu.
-     * @param levelAccessibilityKey The I18n key used to retrieve the accessibility description for
-     *     this level.
-     * @param levelNameKey The I18n key used to retrieve the display name for this level.
-     * @param miniLevel The button in the mini menu corresponding to this level.
-     */
+    //    /**
+    //     * Binds UI components for a difficulty-level toggle in both the maxi and mini menus. This
+    //     * method configures visibility, accessibility, tooltips, and styling based on the
+    // selected
+    //     * difficulty level.
+    //     *
+    //     * <ul>
+    //     *   <li><strong>Visibility:</strong> Displays stars when the corresponding difficulty
+    // level is
+    //     *       selected.
+    //     *   <li><strong>Accessibility:</strong> Updates role descriptions and accessible text for
+    //     *       screen readers based on the level.
+    //     *   <li><strong>Tooltips:</strong> Binds the tooltip text to the accessible text for
+    //     *       consistency.
+    //     *   <li><strong>Styling:</strong> Applies a 'selected' pseudo-class to both buttons when
+    // the
+    //     *       level is active.
+    //     * </ul>
+    //     *
+    //     * @param difficultyLevel The difficulty level to configure.
+    //     * @param possibilityStarsBox The container that displays the stars for this difficulty
+    // level.
+    //     * @param maxiLevel The button in the maxi menu corresponding to this level.
+    //     * @param levelName The label showing the level's name in the maxi menu.
+    //     * @param levelAccessibilityKey The I18n key used to retrieve the accessibility
+    // description for
+    //     *     this level.
+    //     * @param levelNameKey The I18n key used to retrieve the display name for this level.
+    //     * @param miniLevel The button in the mini menu corresponding to this level.
+    //     */
+    //    private void bindLevel(
+    //            DifficultyLevel difficultyLevel,
+    //            PossibilityStarsHBox possibilityStarsBox,
+    //            Button maxiLevel,
+    //            Label levelName,
+    //            String levelAccessibilityKey,
+    //            String levelNameKey,
+    //            Button miniLevel) {
+    //        levelName.setText(I18n.INSTANCE.getValue(levelNameKey));
+    //        possibilityStarsBox
+    //                .visibleProperty()
+    //                .bind(
+    //                        Bindings.createBooleanBinding(
+    //                                () ->
+    //                                        levelViewModel.getSelectedLevelProperty().get()
+    //                                                == difficultyLevel,
+    //                                levelViewModel.getSelectedLevelProperty()));
+    //        maxiLevel
+    //                .accessibleRoleDescriptionProperty()
+    //                .bind(
+    //                        Bindings.when(possibilityStarsBox.visibleProperty())
+    //                                .then(
+    //                                        I18n.INSTANCE.getValue(
+    //                                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
+    //                                .otherwise((String) null));
+    //        miniLevel
+    //                .accessibleRoleDescriptionProperty()
+    //                .bind(
+    //                        Bindings.when(possibilityStarsBox.visibleProperty())
+    //                                .then(
+    //                                        I18n.INSTANCE.getValue(
+    //                                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
+    //                                .otherwise((String) null));
+    //        StringBinding accessibleTextBinding =
+    //                Bindings.createStringBinding(
+    //                        () ->
+    //                                possibilityStarsBox
+    //                                        .formattedTextBinding(levelAccessibilityKey, false)
+    //                                        .get(),
+    //                        levelViewModel.getSelectedLevelProperty(),
+    //                        possibilityStarsBox.getPercentage());
+    //        maxiLevel.accessibleTextProperty().bind(accessibleTextBinding);
+    //        miniLevel.accessibleTextProperty().bind(accessibleTextBinding);
+    //        maxiLevel.getTooltip().textProperty().bind(accessibleTextBinding);
+    //        miniLevel.getTooltip().textProperty().bind(accessibleTextBinding);
+    //        levelViewModel
+    //                .getSelectedLevelProperty()
+    //                .addListener(
+    //                        (obs, oldLvl, newLvl) -> {
+    //                            boolean isThisLevel = newLvl == difficultyLevel;
+    //                            maxiLevel.pseudoClassStateChanged(
+    //                                    DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
+    //                            miniLevel.pseudoClassStateChanged(
+    //                                    DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
+    //                        });
+    //    }
+
     private void bindLevel(
-            DifficultyLevel difficultyLevel,
-            PossibilityStarsHBox possibilityStarsBox,
-            Button maxiLevel,
-            Label levelName,
-            String levelAccessibilityKey,
-            String levelNameKey,
-            Button miniLevel) {
-        levelName.setText(I18n.INSTANCE.getValue(levelNameKey));
-        possibilityStarsBox
-                .visibleProperty()
-                .bind(
-                        Bindings.createBooleanBinding(
-                                () ->
-                                        levelViewModel.getSelectedLevelProperty().get()
-                                                == difficultyLevel,
-                                levelViewModel.getSelectedLevelProperty()));
-        maxiLevel
-                .accessibleRoleDescriptionProperty()
-                .bind(
-                        Bindings.when(possibilityStarsBox.visibleProperty())
-                                .then(
-                                        I18n.INSTANCE.getValue(
-                                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
-                                .otherwise((String) null));
-        miniLevel
-                .accessibleRoleDescriptionProperty()
-                .bind(
-                        Bindings.when(possibilityStarsBox.visibleProperty())
-                                .then(
-                                        I18n.INSTANCE.getValue(
-                                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED))
-                                .otherwise((String) null));
+            DifficultyLevel level,
+            PossibilityStarsHBox starsBox,
+            Button maxi,
+            Label label,
+            Button mini) {
+        label.textProperty().bind(menuLevelViewModel.getLabelText(level));
+        BooleanBinding visibleBinding = menuLevelViewModel.createVisibilityBinding(level);
+        starsBox.visibleProperty().bind(visibleBinding);
+        String accessibilityKey = menuLevelViewModel.getLevelAccessibilityKey(level);
         StringBinding accessibleTextBinding =
-                Bindings.createStringBinding(
-                        () ->
-                                possibilityStarsBox
-                                        .formattedTextBinding(levelAccessibilityKey, false)
-                                        .get(),
-                        levelViewModel.getSelectedLevelProperty(),
-                        possibilityStarsBox.getPercentage());
-        maxiLevel.accessibleTextProperty().bind(accessibleTextBinding);
-        miniLevel.accessibleTextProperty().bind(accessibleTextBinding);
-        maxiLevel.getTooltip().textProperty().bind(accessibleTextBinding);
-        miniLevel.getTooltip().textProperty().bind(accessibleTextBinding);
-        levelViewModel
-                .getSelectedLevelProperty()
+                menuLevelViewModel.createAccessibleTextBinding(starsBox, accessibilityKey);
+        maxi.accessibleTextProperty().bind(accessibleTextBinding);
+        mini.accessibleTextProperty().bind(accessibleTextBinding);
+        maxi.getTooltip().textProperty().bind(accessibleTextBinding);
+        mini.getTooltip().textProperty().bind(accessibleTextBinding);
+        String selectedDescription = menuLevelViewModel.getAccessibilityRoleDescriptionSelected();
+        maxi.accessibleRoleDescriptionProperty()
+                .bind(
+                        Bindings.when(visibleBinding)
+                                .then(selectedDescription)
+                                .otherwise((String) null));
+        mini.accessibleRoleDescriptionProperty()
+                .bind(
+                        Bindings.when(visibleBinding)
+                                .then(selectedDescription)
+                                .otherwise((String) null));
+        menuLevelViewModel
+                .selectedLevelProperty()
                 .addListener(
-                        (obs, oldLvl, newLvl) -> {
-                            boolean isThisLevel = newLvl == difficultyLevel;
-                            maxiLevel.pseudoClassStateChanged(
-                                    DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
-                            miniLevel.pseudoClassStateChanged(
-                                    DIFFICULTY_LEVEL_PSEUDO_SELECTED, isThisLevel);
+                        (obs, oldVal, newVal) -> {
+                            boolean selected = newVal == level;
+                            maxi.pseudoClassStateChanged(
+                                    DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
+                            mini.pseudoClassStateChanged(
+                                    DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
                         });
     }
 
@@ -762,7 +802,7 @@ public final class DefaultView implements IMainView {
         int stars = SecureRandomGenerator.INSTANCE.nextInt(10, 33);
         menuMaxiHBoxEasyPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
         menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
-        levelViewModel.setLevel(DifficultyLevel.EASY, stars);
+        menuLevelViewModel.setLevel(DifficultyLevel.EASY, stars);
     }
 
     /** Sets the difficulty level to MEDIUM and updates the UI with a random percentage. */
@@ -771,7 +811,7 @@ public final class DefaultView implements IMainView {
         int stars = SecureRandomGenerator.INSTANCE.nextInt(34, 66);
         menuMaxiHBoxMediumPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
         menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
-        levelViewModel.setLevel(DifficultyLevel.MEDIUM, stars);
+        menuLevelViewModel.setLevel(DifficultyLevel.MEDIUM, stars);
     }
 
     /** Sets the difficulty level to DIFFICULT and updates the UI with a random percentage. */
@@ -780,7 +820,7 @@ public final class DefaultView implements IMainView {
         int stars = SecureRandomGenerator.INSTANCE.nextInt(67, 89);
         menuMaxiHBoxDifficultPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
         menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
-        levelViewModel.setLevel(DifficultyLevel.DIFFICULT, stars);
+        menuLevelViewModel.setLevel(DifficultyLevel.DIFFICULT, stars);
     }
 
     /**
