@@ -15,15 +15,16 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Singleton enum for internationalization (i18n) support.
- * Manages language resources and locale synchronization.
+ * Singleton enum for internationalization (i18n) support. Manages language resources and locale
+ * synchronization.
  */
 public enum I18n {
     INSTANCE;
 
     private static final Logger log = LoggerFactory.getLogger(I18n.class);
 
-    private static final ObjectProperty<Locale> locale = new SimpleObjectProperty<>(Locale.getDefault());
+    private static final ObjectProperty<Locale> locale =
+            new SimpleObjectProperty<>(Locale.getDefault());
 
     private static final Locale LOCALE_FR = Locale.of("fr", "FR");
     private static final Locale LOCALE_EN = Locale.of("en", "US");
@@ -41,8 +42,8 @@ public enum I18n {
     }
 
     /**
-     * Updates the current locale and bundle based on language code.
-     * "EN" sets English; any other value defaults to French.
+     * Updates the current locale and bundle based on language code. "EN" sets English; any other
+     * value defaults to French.
      *
      * @param i18n Language code.
      * @return Singleton instance.
@@ -53,7 +54,9 @@ public enum I18n {
         return INSTANCE;
     }
 
-    /** @return Observable locale property. */
+    /**
+     * @return Observable locale property.
+     */
     public ObjectProperty<Locale> localeProperty() {
         return locale;
     }
@@ -80,12 +83,16 @@ public enum I18n {
         }
     }
 
-    /** @return Current language code ("en", "fr", etc.). */
+    /**
+     * @return Current language code ("en", "fr", etc.).
+     */
     public String getLanguage() {
         return bundle.getLocale().getLanguage();
     }
 
-    /** @return Host system language code. */
+    /**
+     * @return Host system language code.
+     */
     public String getHostEnvironmentLanguageCode() {
         return Locale.getDefault().getLanguage();
     }
@@ -95,4 +102,3 @@ public enum I18n {
         setLocaleBundle("fr".equals(getHostEnvironmentLanguageCode()) ? "" : "EN");
     }
 }
-
