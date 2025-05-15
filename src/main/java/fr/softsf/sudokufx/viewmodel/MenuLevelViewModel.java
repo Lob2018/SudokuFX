@@ -36,11 +36,6 @@ public class MenuLevelViewModel {
         return selectedLevel;
     }
 
-    /** Returns the property holding the percentage of stars achieved for the selected level. */
-    public IntegerProperty starsPercentageProperty() {
-        return starsPercentage;
-    }
-
     /**
      * Updates the selected difficulty level and corresponding stars percentage.
      *
