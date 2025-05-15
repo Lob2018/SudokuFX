@@ -31,7 +31,15 @@ public class MenuLevelViewModel {
     private final ObjectProperty<DifficultyLevel> selectedLevel = new SimpleObjectProperty<>(null);
     private final IntegerProperty starsPercentage = new SimpleIntegerProperty(0);
 
-    /** Returns the property holding the currently selected difficulty level. */
+    /**
+     * Returns the property for the currently selected difficulty level.
+     *
+     * <p>Required for JavaFX bindings in {@link #isSelectedBinding(DifficultyLevel)} and {@link
+     * #accessibleTextBinding(PossibilityStarsHBox, String)}.
+     *
+     * @return the selected difficulty level property
+     */
+    @SuppressWarnings("unused")
     public ObjectProperty<DifficultyLevel> selectedLevelProperty() {
         return selectedLevel;
     }
