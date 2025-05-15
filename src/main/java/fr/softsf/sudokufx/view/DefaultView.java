@@ -120,7 +120,7 @@ public final class DefaultView implements IMainView {
     @FXML private Button menuMaxiButtonSolve;
     @FXML private Label menuMaxiButtonSolveText;
     @FXML private Button menuMaxiButtonBackup;
-    @FXML private Label menuMaxiButtonBackuptext;
+    @FXML private Label menuMaxiButtonBackupText;
     @FXML private Button menuMaxiButtonBackground;
     @FXML private Label menuMaxiButtonBackgroundText;
     @FXML private Button menuMaxiButtonLanguage;
@@ -320,7 +320,7 @@ public final class DefaultView implements IMainView {
                                         MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackup.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonBackuptext.setText(I18n.INSTANCE.getValue("menu.maxi.button.backup.text"));
+        menuMaxiButtonBackupText.setText(I18n.INSTANCE.getValue("menu.maxi.button.backup.text"));
         // menu maxi background (with submenu)
         menuMaxiButtonBackground.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));

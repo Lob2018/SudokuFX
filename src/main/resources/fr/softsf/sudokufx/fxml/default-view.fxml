@@ -305,7 +305,7 @@
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
                             <Text text="&#xe161;" styleClass="material"/>
-                            <Label fx:id="menuMaxiButtonBackuptext" styleClass="root,menuButtonLabel"/>
+                            <Label fx:id="menuMaxiButtonBackupText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
                     <tooltip>
