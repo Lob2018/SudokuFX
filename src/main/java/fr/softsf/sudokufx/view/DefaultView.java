@@ -881,10 +881,9 @@ public final class DefaultView implements IMainView {
         helpViewModel.showHelp();
     }
 
-    /** Switches language and refreshes all ViewModel texts. */
+    /** Switches language. */
     public void handleToggleLanguage() {
         coordinator.toggleLanguage();
-        menuHiddenViewModel.updateTexts();
     }
 
     /** Configures the primary stage for the full menu view. */

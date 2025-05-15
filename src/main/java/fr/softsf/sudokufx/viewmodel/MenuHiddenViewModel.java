@@ -5,8 +5,8 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.StringBinding;
 
 import org.springframework.stereotype.Component;
 
@@ -16,35 +16,31 @@ import fr.softsf.sudokufx.enums.I18n;
  * MenuHiddenViewModel (not final) handles the business logic for the "Show Menu" button's
  * accessibility text when the menu is hidden.
  *
- * <p>The accessibility text is updated based on the current language using the I18n utility and can
- * be bound to UI elements to reflect changes automatically.
+ * <p>The accessibility text is updated automatically based on the current language using the I18n
+ * utility. The property can be bound to UI elements to reflect changes reactively.
  *
  * @see I18n
  */
 @Component
 public class MenuHiddenViewModel {
 
-    /** The accessibility text for the "Show Menu" button when the menu is hidden. */
-    private final StringProperty menuHiddenButtonShowAccessibilityText = new SimpleStringProperty();
+    /** Reactive binding for the accessibility text of the "Show Menu" button when hidden. */
+    private final StringBinding menuHiddenButtonShowAccessibilityText;
 
-    /** Constructs the `MenuHiddenViewModel` and initializes the accessibility text. */
     public MenuHiddenViewModel() {
-        updateTexts();
-    }
-
-    /** Updates the accessibility text using the current language from the I18n instance. */
-    public void updateTexts() {
-        menuHiddenButtonShowAccessibilityText.set(
-                I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"));
+        menuHiddenButtonShowAccessibilityText =
+                Bindings.createStringBinding(
+                        () -> I18n.INSTANCE.getValue("menu.hidden.button.show.accessibility"),
+                        I18n.INSTANCE.localeProperty());
     }
 
     /**
-     * Returns the property for the accessibility text of the "Show Menu" button when the menu is
-     * hidden.
+     * Returns the reactive StringBinding for the accessibility text of the "Show Menu" button when
+     * the menu is hidden.
      *
-     * @return the `StringProperty` for the button's accessibility text.
+     * @return the StringBinding for the button's accessibility text.
      */
-    public StringProperty menuHiddenButtonShowAccessibilityTextProperty() {
+    public StringBinding menuHiddenButtonShowAccessibilityTextProperty() {
         return menuHiddenButtonShowAccessibilityText;
     }
 }
