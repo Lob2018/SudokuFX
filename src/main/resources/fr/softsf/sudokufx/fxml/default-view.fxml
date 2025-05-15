@@ -28,7 +28,7 @@
         <!--Hidden menu-->
         <!---->
         <VBox fx:id="menuHidden" alignment="TOP_CENTER" styleClass="menu,menuMini">
-            <Button fx:id="menuHiddenButtonShow" styleClass="menuMiniButton" onAction="#handleMenuMaxiShow">
+            <Button fx:id="menuHiddenButtonShow" styleClass="menuMiniButton" onAction="#handleMenuMiniShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Region styleClass="menuDropdownOpen" visible="false"/>
