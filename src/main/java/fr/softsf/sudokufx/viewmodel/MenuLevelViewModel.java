@@ -32,14 +32,10 @@ public class MenuLevelViewModel {
     private final IntegerProperty starsPercentage = new SimpleIntegerProperty(0);
 
     /**
-     * Returns the property for the currently selected difficulty level.
-     *
-     * <p>Required for JavaFX bindings in {@link #isSelectedBinding(DifficultyLevel)} and {@link
-     * #accessibleTextBinding(PossibilityStarsHBox, String)}.
+     * Returns the property representing the currently selected difficulty level.
      *
      * @return the selected difficulty level property
      */
-    @SuppressWarnings("unused")
     public ObjectProperty<DifficultyLevel> selectedLevelProperty() {
         return selectedLevel;
     }
@@ -47,7 +43,7 @@ public class MenuLevelViewModel {
     /**
      * Updates the selected difficulty level and corresponding stars percentage.
      *
-     * @param level the new difficulty level to select
+     * @param level      the new difficulty level to select
      * @param percentage the stars completion percentage for this level
      */
     public void updateSelectedLevel(DifficultyLevel level, int percentage) {
@@ -84,7 +80,7 @@ public class MenuLevelViewModel {
      * readers. The binding updates on changes to selected level, star percentage, or locale.
      *
      * @param starsBox the stars UI component
-     * @param key the localization key for accessibility text
+     * @param key      the localization key for accessibility text
      * @return a reactive binding to the accessibility text
      */
     public StringBinding accessibleTextBinding(PossibilityStarsHBox starsBox, String key) {

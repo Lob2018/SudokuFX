@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.view;
 import java.io.File;
 import java.text.MessageFormat;
 import java.util.Objects;
+
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
@@ -66,103 +67,189 @@ public final class DefaultView implements IMainView {
 
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
 
-    @Autowired private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
-    @Autowired private Coordinator coordinator;
-    @Autowired private HelpViewModel helpViewModel;
-    @Autowired private BackgroundViewModel backgroundViewModel;
-    @Autowired private MenuHiddenViewModel menuHiddenViewModel;
-    @Autowired private MenuMiniViewModel menuMiniViewModel;
-    @Autowired private MenuLevelViewModel menuLevelViewModel;
+    @Autowired
+    private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
+    @Autowired
+    private Coordinator coordinator;
+    @Autowired
+    private HelpViewModel helpViewModel;
+    @Autowired
+    private BackgroundViewModel backgroundViewModel;
+    @Autowired
+    private MenuHiddenViewModel menuHiddenViewModel;
+    @Autowired
+    private MenuMiniViewModel menuMiniViewModel;
+    @Autowired
+    private MenuLevelViewModel menuLevelViewModel;
 
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
 
-    @FXML private ToasterVBox toaster;
-    @FXML private SpinnerGridPane spinner;
-    @FXML private GridPane sudokuFX;
+    @FXML
+    private ToasterVBox toaster;
+    @FXML
+    private SpinnerGridPane spinner;
+    @FXML
+    private GridPane sudokuFX;
 
-    @FXML VBox menuHidden;
-    @FXML VBox menuMini;
-    @FXML VBox menuMaxi;
-    @FXML VBox menuPlayer;
-    @FXML VBox menuSolve;
-    @FXML VBox menuSave;
-    @FXML VBox menuBackground;
+    @FXML
+    VBox menuHidden;
+    @FXML
+    VBox menuMini;
+    @FXML
+    VBox menuMaxi;
+    @FXML
+    VBox menuPlayer;
+    @FXML
+    VBox menuSolve;
+    @FXML
+    VBox menuSave;
+    @FXML
+    VBox menuBackground;
 
-    @FXML private Button menuHiddenButtonShow;
-    @FXML private Button menuMiniButtonShow;
-    @FXML private Button menuMiniButtonPlayer;
-    @FXML private Button menuMiniButtonEasy;
-    @FXML private Button menuMiniButtonMedium;
-    @FXML private Button menuMiniButtonDifficult;
-    @FXML private Button menuMiniButtonSolve;
-    @FXML private Button menuMiniButtonBackup;
-    @FXML private Button menuMiniButtonBackground;
-    @FXML private Button menuMiniButtonLanguage;
-    @FXML private Label menuMiniButtonLanguageIso;
-    @FXML private Button menuMiniButtonHelp;
-    @FXML private Button menuMiniButtonNew;
+    @FXML
+    private Button menuHiddenButtonShow;
+    @FXML
+    private Button menuMiniButtonShow;
+    @FXML
+    private Button menuMiniButtonPlayer;
+    @FXML
+    private Button menuMiniButtonEasy;
+    @FXML
+    private Button menuMiniButtonMedium;
+    @FXML
+    private Button menuMiniButtonDifficult;
+    @FXML
+    private Button menuMiniButtonSolve;
+    @FXML
+    private Button menuMiniButtonBackup;
+    @FXML
+    private Button menuMiniButtonBackground;
+    @FXML
+    private Button menuMiniButtonLanguage;
+    @FXML
+    private Label menuMiniButtonLanguageIso;
+    @FXML
+    private Button menuMiniButtonHelp;
+    @FXML
+    private Button menuMiniButtonNew;
 
-    @FXML private Button menuMaxiButtonReduce;
-    @FXML private Label menuMaxiButtonReduceText;
-    @FXML private Button menuMaxiButtonPlayer;
-    @FXML private Label menuMaxiButtonPlayerText;
-    @FXML private Button menuMaxiButtonEasy;
-    @FXML private Label menuMaxiButtonEasyText;
-    @FXML private PossibilityStarsHBox menuMaxiHBoxEasyPossibilities;
-    @FXML private Button menuMaxiButtonMedium;
-    @FXML private Label menuMaxiButtonMediumText;
-    @FXML private PossibilityStarsHBox menuMaxiHBoxMediumPossibilities;
-    @FXML private Button menuMaxiButtonDifficult;
-    @FXML private Label menuMaxiButtonDifficultText;
-    @FXML private PossibilityStarsHBox menuMaxiHBoxDifficultPossibilities;
-    @FXML private Button menuMaxiButtonSolve;
-    @FXML private Label menuMaxiButtonSolveText;
-    @FXML private Button menuMaxiButtonBackup;
-    @FXML private Label menuMaxiButtonBackuptext;
-    @FXML private Button menuMaxiButtonBackground;
-    @FXML private Label menuMaxiButtonBackgroundText;
-    @FXML private Button menuMaxiButtonLanguage;
-    @FXML private Label menuMaxiButtonLanguageIso;
-    @FXML private Label menuMaxiButtonLanguageText;
-    @FXML private Button menuMaxiButtonHelp;
-    @FXML private Label menuMaxiButtonHelpText;
-    @FXML private Button menuMaxiButtonNew;
-    @FXML private Label menuMaxiButtonNewText;
+    @FXML
+    private Button menuMaxiButtonReduce;
+    @FXML
+    private Label menuMaxiButtonReduceText;
+    @FXML
+    private Button menuMaxiButtonPlayer;
+    @FXML
+    private Label menuMaxiButtonPlayerText;
+    @FXML
+    private Button menuMaxiButtonEasy;
+    @FXML
+    private Label menuMaxiButtonEasyText;
+    @FXML
+    private PossibilityStarsHBox menuMaxiHBoxEasyPossibilities;
+    @FXML
+    private Button menuMaxiButtonMedium;
+    @FXML
+    private Label menuMaxiButtonMediumText;
+    @FXML
+    private PossibilityStarsHBox menuMaxiHBoxMediumPossibilities;
+    @FXML
+    private Button menuMaxiButtonDifficult;
+    @FXML
+    private Label menuMaxiButtonDifficultText;
+    @FXML
+    private PossibilityStarsHBox menuMaxiHBoxDifficultPossibilities;
+    @FXML
+    private Button menuMaxiButtonSolve;
+    @FXML
+    private Label menuMaxiButtonSolveText;
+    @FXML
+    private Button menuMaxiButtonBackup;
+    @FXML
+    private Label menuMaxiButtonBackuptext;
+    @FXML
+    private Button menuMaxiButtonBackground;
+    @FXML
+    private Label menuMaxiButtonBackgroundText;
+    @FXML
+    private Button menuMaxiButtonLanguage;
+    @FXML
+    private Label menuMaxiButtonLanguageIso;
+    @FXML
+    private Label menuMaxiButtonLanguageText;
+    @FXML
+    private Button menuMaxiButtonHelp;
+    @FXML
+    private Label menuMaxiButtonHelpText;
+    @FXML
+    private Button menuMaxiButtonNew;
+    @FXML
+    private Label menuMaxiButtonNewText;
 
-    @FXML private Button menuPlayerButtonReduce;
-    @FXML private Label menuPlayerButtonReduceText;
-    @FXML private Button menuPlayerButtonPlayer;
-    @FXML private Label menuPlayerButtonPlayerText;
-    @FXML private Button menuPlayerButtonPlayerEdit;
-    @FXML private Button menuPlayerButtonNew;
-    @FXML private Label menuPlayerButtonNewText;
-    @FXML private ListView<String> menuPlayerListView;
-    @FXML private Rectangle menuPlayerClipListView;
+    @FXML
+    private Button menuPlayerButtonReduce;
+    @FXML
+    private Label menuPlayerButtonReduceText;
+    @FXML
+    private Button menuPlayerButtonPlayer;
+    @FXML
+    private Label menuPlayerButtonPlayerText;
+    @FXML
+    private Button menuPlayerButtonPlayerEdit;
+    @FXML
+    private Button menuPlayerButtonNew;
+    @FXML
+    private Label menuPlayerButtonNewText;
+    @FXML
+    private ListView<String> menuPlayerListView;
+    @FXML
+    private Rectangle menuPlayerClipListView;
 
-    @FXML private Button menuSolveButtonReduce;
-    @FXML private Button menuSolveButtonSolve;
-    @FXML private Label menuSolveButtonReduceText;
-    @FXML private Label menuSolveButtonSolveText;
-    @FXML private Button menuSolveButtonSolveClear;
-    @FXML private PossibilityStarsHBox menuSolveHBoxPossibilities;
+    @FXML
+    private Button menuSolveButtonReduce;
+    @FXML
+    private Button menuSolveButtonSolve;
+    @FXML
+    private Label menuSolveButtonReduceText;
+    @FXML
+    private Label menuSolveButtonSolveText;
+    @FXML
+    private Button menuSolveButtonSolveClear;
+    @FXML
+    private PossibilityStarsHBox menuSolveHBoxPossibilities;
 
-    @FXML private Button menuSaveButtonReduce;
-    @FXML private Label menuSaveButtonReduceText;
-    @FXML private Button menuSaveButtonSave;
-    @FXML private Label menuSaveButtonSaveText;
-    @FXML private Button menuSaveButtonBackup;
-    @FXML private Label menuSaveButtonBackupText;
-    @FXML private ListView<String> menuSaveListView;
-    @FXML private Rectangle menuSaveClipListView;
+    @FXML
+    private Button menuSaveButtonReduce;
+    @FXML
+    private Label menuSaveButtonReduceText;
+    @FXML
+    private Button menuSaveButtonSave;
+    @FXML
+    private Label menuSaveButtonSaveText;
+    @FXML
+    private Button menuSaveButtonBackup;
+    @FXML
+    private Label menuSaveButtonBackupText;
+    @FXML
+    private ListView<String> menuSaveListView;
+    @FXML
+    private Rectangle menuSaveClipListView;
 
-    @FXML private Button menuBackgroundButtonReduce;
-    @FXML private Label menuBackgroundButtonReduceText;
-    @FXML private Button menuBackgroundButtonBackground;
-    @FXML private Label menuBackgroundButtonBackgroundText;
-    @FXML private Button menuBackgroundButtonImage;
-    @FXML private Label menuBackgroundButtonImageText;
-    @FXML private ColorPicker menuBackgroundButtonColor;
+    @FXML
+    private Button menuBackgroundButtonReduce;
+    @FXML
+    private Label menuBackgroundButtonReduceText;
+    @FXML
+    private Button menuBackgroundButtonBackground;
+    @FXML
+    private Label menuBackgroundButtonBackgroundText;
+    @FXML
+    private Button menuBackgroundButtonImage;
+    @FXML
+    private Label menuBackgroundButtonImageText;
+    @FXML
+    private ColorPicker menuBackgroundButtonColor;
 
     /**
      * Initializes the default view. This method is automatically called by JavaFX after loading the
@@ -259,11 +346,11 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .setText(
                         MessageFormat.format(
-                                        I18n.INSTANCE.getValue(
-                                                "menu.maxi.button.player.accessibility"),
-                                        playerName)
+                                I18n.INSTANCE.getValue(
+                                        "menu.maxi.button.player.accessibility"),
+                                playerName)
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayer.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayerText.setText(playerName);
@@ -274,7 +361,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonSolve.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonSolveText.setText(I18n.INSTANCE.getValue("menu.maxi.button.solve.text"));
@@ -285,7 +372,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.maxi.button.backup.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackup.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackuptext.setText(I18n.INSTANCE.getValue("menu.maxi.button.backup.text"));
@@ -296,7 +383,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackground.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackgroundText.setText(
@@ -337,11 +424,11 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .setText(
                         MessageFormat.format(
-                                        I18n.INSTANCE.getValue(
-                                                "menu.player.button.player.accessibility"),
-                                        playerName)
+                                I18n.INSTANCE.getValue(
+                                        "menu.player.button.player.accessibility"),
+                                playerName)
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuPlayerButtonPlayer.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuPlayerButtonPlayerText.setText(playerName);
@@ -355,11 +442,11 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .setText(
                         MessageFormat.format(
-                                        I18n.INSTANCE.getValue(
-                                                "menu.player.button.edit.accessibility"),
-                                        playerName)
+                                I18n.INSTANCE.getValue(
+                                        "menu.player.button.edit.accessibility"),
+                                playerName)
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuPlayerButtonNew.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
         menuPlayerButtonNew.setAccessibleRoleDescription(
@@ -369,7 +456,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuPlayerButtonNewText.setText(
                 I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
         setupListViewClip(menuPlayerListView, menuPlayerClipListView);
@@ -431,7 +518,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
 
         menuSaveButtonReduce.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.save.button.reduce.accessibility"));
@@ -446,7 +533,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.save.button.save.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuSaveButtonSave.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuSaveButtonSaveText.setText(I18n.INSTANCE.getValue("menu.save.button.save.text"));
@@ -459,7 +546,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.save.button.backup.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuSaveButtonBackupText.setText(I18n.INSTANCE.getValue("menu.save.button.backup.text"));
         setupListViewClip(menuSaveListView, menuSaveClipListView);
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
@@ -500,7 +587,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.background.button.background.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuBackgroundButtonBackground.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
         menuBackgroundButtonBackgroundText.setText(
@@ -512,7 +599,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.background.button.image.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonImage.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonImageText.setText(
@@ -524,7 +611,7 @@ public final class DefaultView implements IMainView {
                 .setText(
                         I18n.INSTANCE.getValue("menu.background.button.color.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         menuBackgroundButtonColor.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         backgroundViewModel.init(sudokuFX, menuBackgroundButtonColor, toaster, spinner);
@@ -631,11 +718,11 @@ public final class DefaultView implements IMainView {
      *       buttons.
      * </ul>
      *
-     * @param level the difficulty level to bind
+     * @param level    the difficulty level to bind
      * @param starsBox the UI component displaying possibility stars for this level
-     * @param maxi the button in the maxi menu for this level
-     * @param label the label showing the difficulty level name in the maxi menu
-     * @param mini the button in the mini menu for this level
+     * @param maxi     the button in the maxi menu for this level
+     * @param label    the label showing the difficulty level name in the maxi menu
+     * @param mini     the button in the mini menu for this level
      */
     private void bindLevel(
             DifficultyLevel level,
@@ -663,7 +750,7 @@ public final class DefaultView implements IMainView {
     /**
      * Binds the visibility of the stars box to whether the specified difficulty level is selected.
      *
-     * @param level the difficulty level whose selection state controls visibility
+     * @param level    the difficulty level whose selection state controls visibility
      * @param starsBox the stars box to show or hide
      */
     private void bindLevelStarsVisibility(DifficultyLevel level, PossibilityStarsHBox starsBox) {
@@ -674,10 +761,10 @@ public final class DefaultView implements IMainView {
      * Binds accessibility properties (accessible text and role description) for the specified
      * difficulty level's buttons.
      *
-     * @param level the difficulty level whose accessibility properties are bound
+     * @param level    the difficulty level whose accessibility properties are bound
      * @param starsBox the stars box used for calculating accessible text
-     * @param maxi the button in the maxi menu
-     * @param mini the button in the mini menu
+     * @param maxi     the button in the maxi menu
+     * @param mini     the button in the mini menu
      */
     private void bindLevelAccessibility(
             DifficultyLevel level, PossibilityStarsHBox starsBox, Button maxi, Button mini) {
@@ -699,10 +786,10 @@ public final class DefaultView implements IMainView {
      * Binds the tooltip text properties of both buttons to the accessible text corresponding to the
      * specified difficulty level to ensure consistency and improve user experience.
      *
-     * @param level the difficulty level whose tooltip text is bound
+     * @param level    the difficulty level whose tooltip text is bound
      * @param starsBox the stars UI component used to compute accessible text
-     * @param maxi the button in the maxi menu
-     * @param mini the button in the mini menu
+     * @param maxi     the button in the maxi menu
+     * @param mini     the button in the mini menu
      */
     private void bindLevelTooltipText(
             DifficultyLevel level, PossibilityStarsHBox starsBox, Button maxi, Button mini) {
@@ -714,24 +801,21 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Binds the pseudo-class state of the given buttons to reflect the selection state of the
-     * specified difficulty level. Uses a BooleanBinding to update styling reactively and
-     * initializes the pseudo-class state immediately.
+     * Binds the pseudo-class ":selected" state of the given buttons to the specified difficulty level.
+     * Updates styling immediately and whenever the selected level changes.
      *
-     * @param level the difficulty level to bind selection styling for
-     * @param maxi the button in the maxi menu
-     * @param mini the button in the mini menu
+     * @param level the difficulty level to track
+     * @param maxi  the button in the maxi menu
+     * @param mini  the button in the mini menu
      */
     private void bindLevelSelectedStyling(DifficultyLevel level, Button maxi, Button mini) {
-        BooleanBinding isSelected = menuLevelViewModel.isSelectedBinding(level);
-        isSelected.addListener(
-                (obs, wasSelected, nowSelected) -> {
-                    maxi.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, nowSelected);
-                    mini.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, nowSelected);
+        menuLevelViewModel
+                .selectedLevelProperty()
+                .addListener((obs, oldVal, newVal) -> {
+                    boolean selected = newVal == level;
+                    maxi.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
+                    mini.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
                 });
-        boolean selected = isSelected.get();
-        maxi.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
-        mini.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
     }
 
     @FXML
@@ -771,7 +855,9 @@ public final class DefaultView implements IMainView {
         clipView.arcHeightProperty().bind(radiusBinding);
     }
 
-    /** Sets the difficulty level to EASY and updates the UI with a random percentage. */
+    /**
+     * Sets the difficulty level to EASY and updates the UI with a random percentage.
+     */
     public void handleEasyLevelShow() {
         // TODO WITH TRUE GRID
         int stars = SecureRandomGenerator.INSTANCE.nextInt(10, 33);
@@ -780,7 +866,9 @@ public final class DefaultView implements IMainView {
         menuLevelViewModel.updateSelectedLevel(DifficultyLevel.EASY, stars);
     }
 
-    /** Sets the difficulty level to MEDIUM and updates the UI with a random percentage. */
+    /**
+     * Sets the difficulty level to MEDIUM and updates the UI with a random percentage.
+     */
     public void handleMediumLevelShow() {
         // TODO WITH TRUE GRID
         int stars = SecureRandomGenerator.INSTANCE.nextInt(34, 66);
@@ -789,7 +877,9 @@ public final class DefaultView implements IMainView {
         menuLevelViewModel.updateSelectedLevel(DifficultyLevel.MEDIUM, stars);
     }
 
-    /** Sets the difficulty level to DIFFICULT and updates the UI with a random percentage. */
+    /**
+     * Sets the difficulty level to DIFFICULT and updates the UI with a random percentage.
+     */
     public void handleDifficultLevelShow() {
         // TODO WITH TRUE GRID
         int stars = SecureRandomGenerator.INSTANCE.nextInt(67, 89);
@@ -811,13 +901,13 @@ public final class DefaultView implements IMainView {
                                 event -> {
                                     try {
                                         if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
-                                                        == ActiveMenuOrSubmenuViewModel.ActiveMenu
-                                                                .MINI
+                                                == ActiveMenuOrSubmenuViewModel.ActiveMenu
+                                                .MINI
                                                 && coordinator
-                                                        .getDefaultScene()
-                                                        .getFocusOwner()
-                                                        .getId()
-                                                        .equals("menuMiniButtonShow")) {
+                                                .getDefaultScene()
+                                                .getFocusOwner()
+                                                .getId()
+                                                .equals("menuMiniButtonShow")) {
                                             activeMenuOrSubmenuViewModel.setActiveMenu(
                                                     ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN);
                                         }
@@ -851,58 +941,74 @@ public final class DefaultView implements IMainView {
         }
     }
 
-    /** Activates the PLAYER menu and sets focus on the player button. */
+    /**
+     * Activates the PLAYER menu and sets focus on the player button.
+     */
     public void handleMenuPlayerShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER);
         menuPlayerButtonPlayer.requestFocus();
     }
 
-    /** Activates the SOLVE menu and sets focus on the solve button. */
+    /**
+     * Activates the SOLVE menu and sets focus on the solve button.
+     */
     public void handleMenuSolveShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE);
         menuSolveButtonSolve.requestFocus();
     }
 
-    /** Activates the BACKUP menu and sets focus on the save button. */
+    /**
+     * Activates the BACKUP menu and sets focus on the save button.
+     */
     public void handleMenuBackupShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP);
         menuSaveButtonSave.requestFocus();
     }
 
-    /** Activates the BACKGROUND menu and sets focus on the background button. */
+    /**
+     * Activates the BACKGROUND menu and sets focus on the background button.
+     */
     public void handleMenuBackgroundShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(
                 ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND);
         menuBackgroundButtonBackground.requestFocus();
     }
 
-    /** Displays the Help menu dialog with game rules and the application log path. */
+    /**
+     * Displays the Help menu dialog with game rules and the application log path.
+     */
     public void handleMenuHelpShow() {
         helpViewModel.showHelp();
     }
 
-    /** Switches language and refreshes all ViewModel texts. */
+    /**
+     * Switches language and refreshes all ViewModel texts.
+     */
     public void handleToggleLanguage() {
         coordinator.toggleLanguage();
         menuHiddenViewModel.updateTexts();
     }
 
-    /** Configures the primary stage for the full menu view. */
+    /**
+     * Configures the primary stage for the full menu view.
+     */
     private void openingConfigureStage() {
         primaryStage
                 .getIcons()
                 .add(
                         new Image(
                                 (Objects.requireNonNull(
-                                                SudoMain.class.getResource(
-                                                        Paths.LOGO_SUDO_PNG_PATH.getPath())))
+                                        SudoMain.class.getResource(
+                                                Paths.LOGO_SUDO_PNG_PATH.getPath())))
                                         .toExternalForm()));
         primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.setScene(coordinator.getDefaultScene());
         primaryStage.centerOnScreen();
     }
 
-    /** Maximizes the primary stage to fill the primary screen. */
+    /**
+     * Maximizes the primary stage to fill the primary screen.
+     */
     private void openingMaximizePrimaryStage() {
         Rectangle2D r = Screen.getPrimary().getVisualBounds();
         primaryStage.setX(r.getMinX());
@@ -926,7 +1032,9 @@ public final class DefaultView implements IMainView {
         primaryStage.setMaximized(true);
     }
 
-    /** Shows the primary stage. */
+    /**
+     * Shows the primary stage.
+     */
     private void openingShowStage() {
         primaryStage.show();
     }
