@@ -73,6 +73,7 @@ public final class DefaultView implements IMainView {
     @Autowired private MenuHiddenViewModel menuHiddenViewModel;
     @Autowired private MenuMiniViewModel menuMiniViewModel;
     @Autowired private MenuLevelViewModel menuLevelViewModel;
+    @Autowired private MenuMaxiViewModel menuMaxiViewModel;
 
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
@@ -243,14 +244,43 @@ public final class DefaultView implements IMainView {
                 menuMaxiButtonDifficultText,
                 menuMiniButtonDifficult);
         // Menu maxi
-        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        String playerName = "Tototototototototototototototo";
-        menuMaxiButtonReduce.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.maxi.button.reduce.accessibility"));
+        menuMaxiButtonReduceText.textProperty().bind(menuMaxiViewModel.reduceTextProperty());
+        menuMaxiButtonLanguageIso.textProperty().bind(menuMaxiViewModel.languageIsoProperty());
+        menuMaxiButtonLanguageText.textProperty().bind(menuMaxiViewModel.languageTextProperty());
+        menuMaxiButtonHelpText.textProperty().bind(menuMaxiViewModel.helpTextProperty());
+        menuMaxiButtonNewText.textProperty().bind(menuMaxiViewModel.newTextProperty());
+        menuMaxiButtonReduce
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.reduceAccessibleTextProperty());
+        menuMaxiButtonLanguage
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.languageAccessibleTextProperty());
+        menuMaxiButtonHelp
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.helpAccessibleTextProperty());
+        menuMaxiButtonNew
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.newAccessibleTextProperty());
+        menuMaxiButtonReduce.setTooltip(new Tooltip());
         menuMaxiButtonReduce
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.accessibility"));
-        menuMaxiButtonReduceText.setText(I18n.INSTANCE.getValue("menu.maxi.button.reduce.text"));
+                .textProperty()
+                .bind(menuMaxiViewModel.reduceTooltipProperty());
+        menuMaxiButtonLanguage.setTooltip(new Tooltip());
+        menuMaxiButtonLanguage
+                .getTooltip()
+                .textProperty()
+                .bind(menuMaxiViewModel.languageTooltipProperty());
+        menuMaxiButtonHelp.setTooltip(new Tooltip());
+        menuMaxiButtonHelp
+                .getTooltip()
+                .textProperty()
+                .bind(menuMaxiViewModel.helpTooltipProperty());
+        menuMaxiButtonNew.setTooltip(new Tooltip());
+        menuMaxiButtonNew.getTooltip().textProperty().bind(menuMaxiViewModel.newTooltipProperty());
+        // menu maxi player (with submenu)
+        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        String playerName = "Tototototototototototototototo";
         menuMaxiButtonPlayer.setAccessibleText(
                 MessageFormat.format(
                         I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"),
@@ -267,6 +297,7 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonPlayer.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonPlayerText.setText(playerName);
+        // menu maxi solve (with submenu)
         menuMaxiButtonSolve.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
         menuMaxiButtonSolve
@@ -278,6 +309,7 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonSolve.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonSolveText.setText(I18n.INSTANCE.getValue("menu.maxi.button.solve.text"));
+        // menu maxi backup (with submenu)
         menuMaxiButtonBackup.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.backup.accessibility"));
         menuMaxiButtonBackup
@@ -289,6 +321,7 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonBackup.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackuptext.setText(I18n.INSTANCE.getValue("menu.maxi.button.backup.text"));
+        // menu maxi background (with submenu)
         menuMaxiButtonBackground.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
         menuMaxiButtonBackground
@@ -301,27 +334,7 @@ public final class DefaultView implements IMainView {
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonBackgroundText.setText(
                 I18n.INSTANCE.getValue("menu.maxi.button.background.text"));
-        menuMaxiButtonLanguage.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.maxi.button.language.accessibility"));
-        menuMaxiButtonLanguage
-                .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.maxi.button.language.accessibility"));
-        menuMaxiButtonLanguageIso.setText(I18n.INSTANCE.getValue("menu.maxi.button.language.iso"));
-        menuMaxiButtonLanguageText.setText(
-                I18n.INSTANCE.getValue("menu.maxi.button.language.text"));
-        menuMaxiButtonHelp.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.maxi.button.help.accessibility"));
-        menuMaxiButtonHelp
-                .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.maxi.button.help.accessibility"));
-        menuMaxiButtonHelpText.setText(I18n.INSTANCE.getValue("menu.maxi.button.help.text"));
-        menuMaxiButtonNew.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.maxi.button.new.accessibility"));
-        menuMaxiButtonNew
-                .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.maxi.button.new.accessibility"));
-        menuMaxiButtonNewText.setText(I18n.INSTANCE.getValue("menu.maxi.button.new.text"));
-
+        // MenuPlayer
         menuPlayerButtonReduce.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
         menuPlayerButtonReduce
@@ -397,14 +410,13 @@ public final class DefaultView implements IMainView {
                                 I18n.INSTANCE.getValue(
                                         "menu.player.button.new.player.dialog.confirmation.message"),
                                 CONFIRMATION_ALERT));
-
+        // menu solve
         menuSolveButtonReduce.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
         menuSolveButtonReduce
                 .getTooltip()
                 .setText(I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
         menuSolveButtonReduceText.setText(I18n.INSTANCE.getValue("menu.solve.button.reduce.text"));
-
         // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
         menuSolveHBoxPossibilities.setVisible(true);
         menuSolveButtonSolve
@@ -432,7 +444,7 @@ public final class DefaultView implements IMainView {
                         I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-
+        // menu save
         menuSaveButtonReduce.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.save.button.reduce.accessibility"));
         menuSaveButtonReduce
@@ -486,6 +498,7 @@ public final class DefaultView implements IMainView {
                                 I18n.INSTANCE.getValue(
                                         "menu.save.button.backup.dialog.confirmation.message"),
                                 CONFIRMATION_ALERT));
+        // menu background
         menuBackgroundButtonReduce.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
         menuBackgroundButtonReduce
