@@ -57,8 +57,6 @@ public final class DefaultView implements IMainView {
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Stage primaryStage = new Stage();
-    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED =
-            "menu.accessibility.role.description.selected";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
