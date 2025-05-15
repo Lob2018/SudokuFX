@@ -5,152 +5,157 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.binding.Bindings;
+import javafx.beans.binding.StringBinding;
 
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.enums.I18n;
 
-/** MenuMiniViewModel with business logic (not final) */
+/**
+ * ViewModel for the mini menu.
+ *
+ * <p>Provides internationalized accessible texts and tooltips for each button in the mini menu.
+ * Texts automatically update when the application's locale changes.
+ */
 @Component
 public class MenuMiniViewModel {
+
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
-    // Accessible texts
-    private final StringProperty menuMiniButtonShowAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonPlayerAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonSolveAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonBackupAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonBackgroundAccessibleText =
-            new SimpleStringProperty();
-    private final StringProperty menuMiniButtonLanguageAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonLanguageIso = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonHelpAccessibleText = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonNewAccessibleText = new SimpleStringProperty();
 
-    // Tooltips
-    private final StringProperty menuMiniButtonShowTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonPlayerTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonSolveTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonBackupTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonBackgroundTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonLanguageTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonHelpTooltip = new SimpleStringProperty();
-    private final StringProperty menuMiniButtonNewTooltip = new SimpleStringProperty();
+    private final StringBinding showAccessibleText;
+    private final StringBinding playerAccessibleText;
+    private final StringBinding solveAccessibleText;
+    private final StringBinding backupAccessibleText;
+    private final StringBinding backgroundAccessibleText;
+    private final StringBinding languageAccessibleText;
+    private final StringBinding languageIso;
+    private final StringBinding helpAccessibleText;
+    private final StringBinding newAccessibleText;
 
-    // Initialize with I18n values
+    private final StringBinding showTooltip;
+    private final StringBinding playerTooltip;
+    private final StringBinding solveTooltip;
+    private final StringBinding backupTooltip;
+    private final StringBinding backgroundTooltip;
+    private final StringBinding languageTooltip;
+    private final StringBinding helpTooltip;
+    private final StringBinding newTooltip;
+
+    /** Initializes all bindings for accessible texts and tooltips, bound to the current locale. */
     public MenuMiniViewModel() {
-        updateTexts();
+        showAccessibleText = createStringBinding("menu.mini.button.show.accessibility");
+        playerAccessibleText = createStringBinding("menu.mini.button.player.accessibility");
+        solveAccessibleText = createStringBinding("menu.mini.button.solve.accessibility");
+        backupAccessibleText = createStringBinding("menu.mini.button.backup.accessibility");
+        backgroundAccessibleText = createStringBinding("menu.mini.button.background.accessibility");
+        languageAccessibleText = createStringBinding("menu.mini.button.language.accessibility");
+        languageIso = createStringBinding("menu.mini.button.language.iso");
+        helpAccessibleText = createStringBinding("menu.mini.button.help.accessibility");
+        newAccessibleText = createStringBinding("menu.mini.button.new.accessibility");
+
+        showTooltip = showAccessibleText;
+        playerTooltip = createTooltipBinding("menu.mini.button.player.accessibility");
+        solveTooltip = createTooltipBinding("menu.mini.button.solve.accessibility");
+        backupTooltip = createTooltipBinding("menu.mini.button.backup.accessibility");
+        backgroundTooltip = createTooltipBinding("menu.mini.button.background.accessibility");
+        languageTooltip = languageAccessibleText;
+        helpTooltip = helpAccessibleText;
+        newTooltip = newAccessibleText;
     }
 
-    public void updateTexts() {
-        menuMiniButtonShowAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
-        menuMiniButtonPlayerAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.player.accessibility"));
-        menuMiniButtonSolveAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility"));
-        menuMiniButtonBackupAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility"));
-        menuMiniButtonBackgroundAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.background.accessibility"));
-        menuMiniButtonLanguageAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
-        menuMiniButtonLanguageIso.set(I18n.INSTANCE.getValue("menu.mini.button.language.iso"));
-        menuMiniButtonHelpAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
-        menuMiniButtonNewAccessibleText.set(
-                I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
-
-        menuMiniButtonShowTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.show.accessibility"));
-        menuMiniButtonPlayerTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.player.accessibility")
-                        + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonSolveTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.solve.accessibility")
-                        + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonBackupTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility")
-                        + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonBackgroundTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.background.accessibility")
-                        + I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMiniButtonLanguageTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
-        menuMiniButtonHelpTooltip.set(
-                I18n.INSTANCE.getValue("menu.mini.button.help.accessibility"));
-        menuMiniButtonNewTooltip.set(I18n.INSTANCE.getValue("menu.mini.button.new.accessibility"));
+    /**
+     * Creates a StringBinding for a given key, bound to the current locale.
+     *
+     * @param key the translation key
+     * @return the bound string
+     */
+    private StringBinding createStringBinding(String key) {
+        return Bindings.createStringBinding(
+                () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
     }
 
-    // Getter methods for binding
-    public StringProperty menuMiniButtonShowAccessibleTextProperty() {
-        return menuMiniButtonShowAccessibleText;
+    /**
+     * Creates a tooltip StringBinding by appending the default accessibility role description.
+     *
+     * @param key the base translation key
+     * @return the bound tooltip string
+     */
+    private StringBinding createTooltipBinding(String key) {
+        return Bindings.createStringBinding(
+                () ->
+                        I18n.INSTANCE.getValue(key)
+                                + I18n.INSTANCE.getValue(
+                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED),
+                I18n.INSTANCE.localeProperty());
     }
 
-    public StringProperty menuMiniButtonPlayerAccessibleTextProperty() {
-        return menuMiniButtonPlayerAccessibleText;
+    public StringBinding showAccessibleTextProperty() {
+        return showAccessibleText;
     }
 
-    public StringProperty menuMiniButtonSolveAccessibleTextProperty() {
-        return menuMiniButtonSolveAccessibleText;
+    public StringBinding playerAccessibleTextProperty() {
+        return playerAccessibleText;
     }
 
-    public StringProperty menuMiniButtonBackupAccessibleTextProperty() {
-        return menuMiniButtonBackupAccessibleText;
+    public StringBinding solveAccessibleTextProperty() {
+        return solveAccessibleText;
     }
 
-    public StringProperty menuMiniButtonBackgroundAccessibleTextProperty() {
-        return menuMiniButtonBackgroundAccessibleText;
+    public StringBinding backupAccessibleTextProperty() {
+        return backupAccessibleText;
     }
 
-    public StringProperty menuMiniButtonLanguageAccessibleTextProperty() {
-        return menuMiniButtonLanguageAccessibleText;
+    public StringBinding backgroundAccessibleTextProperty() {
+        return backgroundAccessibleText;
     }
 
-    public StringProperty menuMiniButtonHelpAccessibleTextProperty() {
-        return menuMiniButtonHelpAccessibleText;
+    public StringBinding languageAccessibleTextProperty() {
+        return languageAccessibleText;
     }
 
-    public StringProperty menuMiniButtonNewAccessibleTextProperty() {
-        return menuMiniButtonNewAccessibleText;
+    public StringBinding helpAccessibleTextProperty() {
+        return helpAccessibleText;
     }
 
-    public StringProperty menuMiniButtonLanguageIsoTextProperty() {
-        return menuMiniButtonLanguageIso;
+    public StringBinding newAccessibleTextProperty() {
+        return newAccessibleText;
     }
 
-    // Getter methods for tooltips
-    public StringProperty menuMiniButtonShowTooltipProperty() {
-        return menuMiniButtonShowTooltip;
+    public StringBinding menuMiniButtonLanguageIsoTextProperty() {
+        return languageIso;
     }
 
-    public StringProperty menuMiniButtonPlayerTooltipProperty() {
-        return menuMiniButtonPlayerTooltip;
+    public StringBinding showTooltipProperty() {
+        return showTooltip;
     }
 
-    public StringProperty menuMiniButtonSolveTooltipProperty() {
-        return menuMiniButtonSolveTooltip;
+    public StringBinding playerTooltipProperty() {
+        return playerTooltip;
     }
 
-    public StringProperty menuMiniButtonBackupTooltipProperty() {
-        return menuMiniButtonBackupTooltip;
+    public StringBinding solveTooltipProperty() {
+        return solveTooltip;
     }
 
-    public StringProperty menuMiniButtonBackgroundTooltipProperty() {
-        return menuMiniButtonBackgroundTooltip;
+    public StringBinding backupTooltipProperty() {
+        return backupTooltip;
     }
 
-    public StringProperty menuMiniButtonLanguageTooltipProperty() {
-        return menuMiniButtonLanguageTooltip;
+    public StringBinding backgroundTooltipProperty() {
+        return backgroundTooltip;
     }
 
-    public StringProperty menuMiniButtonHelpTooltipProperty() {
-        return menuMiniButtonHelpTooltip;
+    public StringBinding languageTooltipProperty() {
+        return languageTooltip;
     }
 
-    public StringProperty menuMiniButtonNewTooltipProperty() {
-        return menuMiniButtonNewTooltip;
+    public StringBinding helpTooltipProperty() {
+        return helpTooltip;
+    }
+
+    public StringBinding newTooltipProperty() {
+        return newTooltip;
     }
 }

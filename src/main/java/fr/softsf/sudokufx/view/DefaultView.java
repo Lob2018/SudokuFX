@@ -179,65 +179,50 @@ public final class DefaultView implements IMainView {
                 .textProperty()
                 .bind(menuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty());
         // Menu mini
-        menuMiniButtonShow
-                .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonShowAccessibleTextProperty());
+        menuMiniButtonShow.textProperty().bind(menuMiniViewModel.showAccessibleTextProperty());
         menuMiniButtonShow
                 .getTooltip()
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonShowTooltipProperty());
-        menuMiniButtonPlayer
-                .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonPlayerAccessibleTextProperty());
+                .bind(menuMiniViewModel.showTooltipProperty());
+        menuMiniButtonPlayer.textProperty().bind(menuMiniViewModel.playerAccessibleTextProperty());
         menuMiniButtonPlayer
                 .getTooltip()
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonPlayerTooltipProperty());
-        menuMiniButtonSolve
-                .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonSolveAccessibleTextProperty());
+                .bind(menuMiniViewModel.playerTooltipProperty());
+        menuMiniButtonSolve.textProperty().bind(menuMiniViewModel.solveAccessibleTextProperty());
         menuMiniButtonSolve
                 .getTooltip()
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonSolveTooltipProperty());
-        menuMiniButtonBackup
-                .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonBackupAccessibleTextProperty());
+                .bind(menuMiniViewModel.solveTooltipProperty());
+        menuMiniButtonBackup.textProperty().bind(menuMiniViewModel.backupAccessibleTextProperty());
         menuMiniButtonBackup
                 .getTooltip()
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonBackupTooltipProperty());
+                .bind(menuMiniViewModel.backupTooltipProperty());
         menuMiniButtonBackground
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonBackgroundAccessibleTextProperty());
+                .bind(menuMiniViewModel.backgroundAccessibleTextProperty());
         menuMiniButtonBackground
                 .getTooltip()
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonBackgroundTooltipProperty());
+                .bind(menuMiniViewModel.backgroundTooltipProperty());
         menuMiniButtonLanguage
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonLanguageAccessibleTextProperty());
+                .bind(menuMiniViewModel.languageAccessibleTextProperty());
         menuMiniButtonLanguage
                 .getTooltip()
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonLanguageTooltipProperty());
+                .bind(menuMiniViewModel.languageTooltipProperty());
         menuMiniButtonLanguageIso
                 .textProperty()
                 .bind(menuMiniViewModel.menuMiniButtonLanguageIsoTextProperty());
-        menuMiniButtonHelp
-                .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonHelpAccessibleTextProperty());
+        menuMiniButtonHelp.textProperty().bind(menuMiniViewModel.helpAccessibleTextProperty());
         menuMiniButtonHelp
                 .getTooltip()
                 .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonHelpTooltipProperty());
-        menuMiniButtonNew
-                .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonNewAccessibleTextProperty());
-        menuMiniButtonNew
-                .getTooltip()
-                .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonNewTooltipProperty());
+                .bind(menuMiniViewModel.helpTooltipProperty());
+        menuMiniButtonNew.textProperty().bind(menuMiniViewModel.newAccessibleTextProperty());
+        menuMiniButtonNew.getTooltip().textProperty().bind(menuMiniViewModel.newTooltipProperty());
         // Menu Levels
         bindLevel(
                 DifficultyLevel.EASY,
@@ -900,7 +885,6 @@ public final class DefaultView implements IMainView {
     public void handleToggleLanguage() {
         coordinator.toggleLanguage();
         menuHiddenViewModel.updateTexts();
-        menuMiniViewModel.updateTexts();
     }
 
     /** Configures the primary stage for the full menu view. */
