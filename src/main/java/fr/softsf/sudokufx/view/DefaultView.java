@@ -69,7 +69,6 @@ public final class DefaultView implements IMainView {
     @Autowired private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     @Autowired private Coordinator coordinator;
     @Autowired private HelpViewModel helpViewModel;
-    //    @Autowired private LevelViewModel levelViewModel;
     @Autowired private BackgroundViewModel backgroundViewModel;
     @Autowired private MenuHiddenViewModel menuHiddenViewModel;
     @Autowired private MenuMiniViewModel menuMiniViewModel;
