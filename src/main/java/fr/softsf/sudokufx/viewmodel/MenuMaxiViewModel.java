@@ -12,6 +12,12 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.enums.I18n;
 
+/**
+ * ViewModel for the maxi menu.
+ *
+ * <p>Provides internationalized accessible texts, tooltips, and labels for each button in the maxi
+ * menu. Texts automatically update when the application's locale changes.
+ */
 @Component
 public class MenuMaxiViewModel {
 
@@ -32,26 +38,36 @@ public class MenuMaxiViewModel {
     private final StringBinding newTooltip;
     private final StringBinding newText;
 
+    /**
+     * Initializes all bindings for accessible texts, tooltips, and labels, bound to the current
+     * locale.
+     */
     public MenuMaxiViewModel() {
-        reduceAccessibleText = createBinding("menu.maxi.button.reduce.accessibility");
-        reduceTooltip = createBinding("menu.maxi.button.reduce.accessibility");
-        reduceText = createBinding("menu.maxi.button.reduce.text");
+        reduceAccessibleText = createStringBinding("menu.maxi.button.reduce.accessibility");
+        reduceTooltip = createStringBinding("menu.maxi.button.reduce.accessibility");
+        reduceText = createStringBinding("menu.maxi.button.reduce.text");
 
-        languageAccessibleText = createBinding("menu.maxi.button.language.accessibility");
-        languageTooltip = createBinding("menu.maxi.button.language.accessibility");
-        languageIso = createBinding("menu.maxi.button.language.iso");
-        languageText = createBinding("menu.maxi.button.language.text");
+        languageAccessibleText = createStringBinding("menu.maxi.button.language.accessibility");
+        languageTooltip = createStringBinding("menu.maxi.button.language.accessibility");
+        languageIso = createStringBinding("menu.maxi.button.language.iso");
+        languageText = createStringBinding("menu.maxi.button.language.text");
 
-        helpAccessibleText = createBinding("menu.maxi.button.help.accessibility");
-        helpTooltip = createBinding("menu.maxi.button.help.accessibility");
-        helpText = createBinding("menu.maxi.button.help.text");
+        helpAccessibleText = createStringBinding("menu.maxi.button.help.accessibility");
+        helpTooltip = createStringBinding("menu.maxi.button.help.accessibility");
+        helpText = createStringBinding("menu.maxi.button.help.text");
 
-        newAccessibleText = createBinding("menu.maxi.button.new.accessibility");
-        newTooltip = createBinding("menu.maxi.button.new.accessibility");
-        newText = createBinding("menu.maxi.button.new.text");
+        newAccessibleText = createStringBinding("menu.maxi.button.new.accessibility");
+        newTooltip = createStringBinding("menu.maxi.button.new.accessibility");
+        newText = createStringBinding("menu.maxi.button.new.text");
     }
 
-    private StringBinding createBinding(String key) {
+    /**
+     * Creates a StringBinding for a given key, bound to the current locale.
+     *
+     * @param key the translation key
+     * @return the bound string
+     */
+    private StringBinding createStringBinding(String key) {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
     }
