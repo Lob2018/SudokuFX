@@ -14,60 +14,45 @@ import javafx.scene.layout.Priority;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Custom cell for a ListView<String> that displays an item with a button allowing its removal after
- * user confirmation.
- */
-public final class ItemListCell extends ListCell<String> {
+import fr.softsf.sudokufx.dto.GameDto;
+import fr.softsf.sudokufx.utils.MyDateTime;
 
-    private static final Logger log = LoggerFactory.getLogger(ItemListCell.class);
+/**
+ * Custom cell for a ListView<GameDto> that displays an item with a button allowing its removal
+ * after user confirmation.
+ */
+public final class GameDtoListCell extends ListCell<GameDto> {
+
+    private static final Logger log = LoggerFactory.getLogger(GameDtoListCell.class);
 
     private final HBox hBox = new HBox();
     private final Label label = new Label();
     private final Button button = new Button();
     private final String buttonAccessibleText;
-    private final ListView<String> listView;
+    private final ListView<GameDto> listView;
     private final String confirmationTitle;
     private final String confirmationMessage;
     private final Alert confirmationAlert;
 
-    /**
-     * Constructs a ItemListCell.
-     *
-     * @param listView The ListView associated with this cell.
-     * @param buttonText The text displayed on the button.
-     * @param buttonAccessibleText The accessible text for screen readers.
-     * @param confirmationTitle The title displayed in the confirmation dialog.
-     * @param confirmationMessage The message displayed in the confirmation dialog.
-     * @param confirmationAlert A shared instance of Alert displaying confirmation dialogs.
-     * @throws NullPointerException if any of the parameters is null.
-     */
-    public ItemListCell(
-            ListView<String> listView,
+    public GameDtoListCell(
+            ListView<GameDto> listView,
             String buttonText,
             String buttonAccessibleText,
             String confirmationTitle,
             String confirmationMessage,
             Alert confirmationAlert) {
-        this.listView =
-                Objects.requireNonNull(
-                        listView, "The listView inside ItemListCell must not be null");
+
+        this.listView = Objects.requireNonNull(listView, "listView must not be null");
         this.confirmationTitle =
-                Objects.requireNonNull(
-                        confirmationTitle,
-                        "The confirmationTitle inside ItemListCell must not be null");
+                Objects.requireNonNull(confirmationTitle, "confirmationTitle must not be null");
         this.confirmationMessage =
-                Objects.requireNonNull(
-                        confirmationMessage,
-                        "The confirmationMessage inside ItemListCell must not be null");
+                Objects.requireNonNull(confirmationMessage, "confirmationMessage must not be null");
         this.buttonAccessibleText =
                 Objects.requireNonNull(
-                        buttonAccessibleText,
-                        "The buttonAccessibleText inside ItemListCell must not be null");
+                        buttonAccessibleText, "buttonAccessibleText must not be null");
         this.confirmationAlert =
-                Objects.requireNonNull(
-                        confirmationAlert,
-                        "The confirmationAlert inside ItemListCell must not be null");
+                Objects.requireNonNull(confirmationAlert, "confirmationAlert must not be null");
+
         HBox.setHgrow(label, Priority.ALWAYS);
         hBox.setFocusTraversable(false);
         label.setFocusTraversable(true);
@@ -79,14 +64,8 @@ public final class ItemListCell extends ListCell<String> {
         hBox.getChildren().addAll(label, button);
     }
 
-    /**
-     * Updates the cell's content and accessibility settings based on the item.
-     *
-     * @param item The item in the list.
-     * @param empty Indicates whether the cell is empty.
-     */
     @Override
-    protected void updateItem(String item, boolean empty) {
+    protected void updateItem(GameDto item, boolean empty) {
         super.updateItem(item, empty);
         if (empty || item == null) {
             setGraphic(null);
@@ -95,11 +74,12 @@ public final class ItemListCell extends ListCell<String> {
             button.setTooltip(null);
             button.setOnAction(null);
         } else {
-            label.setText(item);
+            String name = MyDateTime.INSTANCE.getFormatted(item.updatedat());
+            label.setText(name);
             setGraphic(hBox);
-            setAccessibleText(item);
-            button.setAccessibleText(MessageFormat.format(buttonAccessibleText, item));
-            button.setTooltip(new Tooltip(MessageFormat.format(buttonAccessibleText, item)));
+            setAccessibleText(name);
+            button.setAccessibleText(MessageFormat.format(buttonAccessibleText, name));
+            button.setTooltip(new Tooltip(MessageFormat.format(buttonAccessibleText, name)));
             button.setOnAction(
                     event -> {
                         if (getItem() != null) {
@@ -111,15 +91,11 @@ public final class ItemListCell extends ListCell<String> {
         }
     }
 
-    /**
-     * Displays the confirmation dialog before removing the item from the list.
-     *
-     * @param item The item to be removed.
-     */
-    private void confirmAndRemoveItem(String item) {
+    private void confirmAndRemoveItem(GameDto item) {
+        String name = MyDateTime.INSTANCE.getFormatted(item.updatedat());
         confirmationAlert.setTitle(confirmationTitle);
         confirmationAlert.setHeaderText(null);
-        confirmationAlert.setContentText(MessageFormat.format(confirmationMessage, item));
+        confirmationAlert.setContentText(MessageFormat.format(confirmationMessage, name));
         confirmationAlert
                 .showAndWait()
                 .ifPresent(

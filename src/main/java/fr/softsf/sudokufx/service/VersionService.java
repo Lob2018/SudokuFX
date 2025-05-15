@@ -46,7 +46,6 @@ public class VersionService {
                     ? ""
                     : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1);
     private final HttpClient httpClient;
-    private final MyDateTime myDateTime;
     private final ObjectMapper objectMapper;
 
     /**
@@ -54,11 +53,9 @@ public class VersionService {
      * checking the latest version by making HTTP requests.
      *
      * @param httpClient the HttpClient used to perform HTTP requests.
-     * @param myDateTime the MyDateTime used to date and time operations.
      */
-    public VersionService(HttpClient httpClient, MyDateTime myDateTime, ObjectMapper objectMapper) {
+    public VersionService(HttpClient httpClient, ObjectMapper objectMapper) {
         this.httpClient = httpClient;
-        this.myDateTime = myDateTime;
         this.objectMapper = objectMapper;
     }
 
@@ -88,7 +85,7 @@ public class VersionService {
                 try {
                     updateMessage(
                             I18n.INSTANCE.getValue("githubrepositoryversion.checking")
-                                    + myDateTime.getFormattedCurrentTime()
+                                    + MyDateTime.INSTANCE.getFormattedCurrentTime()
                                     + ")");
                     HttpRequest request =
                             HttpRequest.newBuilder()
@@ -109,7 +106,7 @@ public class VersionService {
                     }
                     updateMessage(
                             I18n.INSTANCE.getValue("githubrepositoryversion.checked")
-                                    + myDateTime.getFormattedCurrentTime()
+                                    + MyDateTime.INSTANCE.getFormattedCurrentTime()
                                     + ")");
                     return parseResponse(response.body());
                 } catch (HttpTimeoutException ex) {

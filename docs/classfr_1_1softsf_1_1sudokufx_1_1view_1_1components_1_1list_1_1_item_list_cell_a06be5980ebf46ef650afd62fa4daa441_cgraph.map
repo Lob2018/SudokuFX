@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.components.list.ItemListCell.updateItem" name="fr.softsf.sudokufx.view.components.list.ItemListCell.updateItem">
+<map id="fr.softsf.sudokufx.view.components.list.PlayerDtoListCell.updateItem" name="fr.softsf.sudokufx.view.components.list.PlayerDtoListCell.updateItem">
 <area shape="rect" id="Node000001" title="Updates the cell&#39;s content and accessibility settings based on the item." alt="" coords="5,5,259,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html#a7684d974f8dce4267b5d70b1f64ee42c" title="Displays the confirmation dialog before removing the item from the list." alt="" coords="307,5,560,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,24,291,24,291,29,259,29"/>

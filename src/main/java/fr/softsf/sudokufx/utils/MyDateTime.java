@@ -8,14 +8,21 @@ package fr.softsf.sudokufx.utils;
 import java.time.Clock;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 
-import org.springframework.stereotype.Component;
+import fr.softsf.sudokufx.enums.I18n;
 
-/** Component working with date and time operations. */
-@Component
-public final class MyDateTime {
+/** Enum singleton working with date and time operations. */
+public enum MyDateTime {
+    INSTANCE;
+
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
     private static final Clock clock = Clock.systemDefaultZone();
+
+    private final DateTimeFormatter frenchFormatter =
+            DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm", Locale.FRENCH);
+    private final DateTimeFormatter englishFormatter =
+            DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a", Locale.ENGLISH);
 
     /**
      * Returns the current time formatted as "HH:mm:ss".
@@ -24,5 +31,17 @@ public final class MyDateTime {
      */
     public String getFormattedCurrentTime() {
         return LocalDateTime.now(clock).format(TIME_FORMATTER);
+    }
+
+    /**
+     * Formats the given LocalDateTime according to the current language setting.
+     *
+     * @param updatedAt The LocalDateTime object to be formatted.
+     * @return A string representing the formatted date and time based on the current locale.
+     */
+    public String getFormatted(LocalDateTime updatedAt) {
+        DateTimeFormatter formatter =
+                I18n.INSTANCE.getLanguage().equals("fr") ? frenchFormatter : englishFormatter;
+        return updatedAt.format(formatter);
     }
 }

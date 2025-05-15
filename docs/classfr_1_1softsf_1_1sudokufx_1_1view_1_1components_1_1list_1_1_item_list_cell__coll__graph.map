@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.components.list.ItemListCell" name="fr.softsf.sudokufx.view.components.list.ItemListCell">
+<map id="fr.softsf.sudokufx.view.components.list.PlayerDtoListCell" name="fr.softsf.sudokufx.view.components.list.PlayerDtoListCell">
 <area shape="rect" id="Node000001" title="Custom cell for a ListView&lt;String&gt; that displays an item with a button allowing its removal after use..." alt="" coords="5,123,248,597"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="70,5,183,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,89,129,123,124,123,124,89"/>

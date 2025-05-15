@@ -90,8 +90,7 @@ class VersionServiceITest {
 
     @Test
     void givenVersionService_whenGetGitHubLinkToRepositoryReleases_thenCorrectLink() {
-        VersionService versionService =
-                new VersionService(mockHttpClient, myDateTime, objectMapper);
+        VersionService versionService = new VersionService(mockHttpClient, objectMapper);
         assertEquals(
                 GITHUB_LINK_TO_REPOSITORY_RELEASES,
                 versionService.getGitHubLinkToRepositoryReleases(),
@@ -106,7 +105,7 @@ class VersionServiceITest {
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
-                new VersionService(mockHttpClient, myDateTime, objectMapper).checkLatestVersion();
+                new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
@@ -128,7 +127,7 @@ class VersionServiceITest {
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
-                new VersionService(mockHttpClient, myDateTime, objectMapper).checkLatestVersion();
+                new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
@@ -152,7 +151,7 @@ class VersionServiceITest {
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
-                new VersionService(mockHttpClient, myDateTime, objectMapper).checkLatestVersion();
+                new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         if (onLineVersion.equals("v2147483647.2147483647.2147483647")) {
@@ -180,7 +179,7 @@ class VersionServiceITest {
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
-                new VersionService(mockHttpClient, myDateTime, objectMapper).checkLatestVersion();
+                new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);

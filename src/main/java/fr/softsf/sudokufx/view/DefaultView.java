@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.view;
 
 import java.io.File;
-import java.text.MessageFormat;
 import java.util.Objects;
 import javafx.animation.*;
 import javafx.application.Platform;
@@ -36,6 +35,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.enums.*;
 import fr.softsf.sudokufx.interfaces.IMainView;
 import fr.softsf.sudokufx.interfaces.ISplashScreenView;
@@ -43,7 +43,7 @@ import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.view.components.MyAlert;
 import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
-import fr.softsf.sudokufx.view.components.list.ItemListCell;
+import fr.softsf.sudokufx.view.components.list.PlayerDtoListCell;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.*;
 
@@ -74,6 +74,7 @@ public final class DefaultView implements IMainView {
     @Autowired private MenuMiniViewModel menuMiniViewModel;
     @Autowired private MenuLevelViewModel menuLevelViewModel;
     @Autowired private MenuMaxiViewModel menuMaxiViewModel;
+    @Autowired private MenuPlayerViewModel menuPlayerViewModel;
 
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
@@ -138,7 +139,7 @@ public final class DefaultView implements IMainView {
     @FXML private Button menuPlayerButtonPlayerEdit;
     @FXML private Button menuPlayerButtonNew;
     @FXML private Label menuPlayerButtonNewText;
-    @FXML private ListView<String> menuPlayerListView;
+    @FXML private ListView<PlayerDto> menuPlayerListView;
     @FXML private Rectangle menuPlayerClipListView;
 
     @FXML private Button menuSolveButtonReduce;
@@ -278,25 +279,252 @@ public final class DefaultView implements IMainView {
                 .bind(menuMaxiViewModel.helpTooltipProperty());
         menuMaxiButtonNew.setTooltip(new Tooltip());
         menuMaxiButtonNew.getTooltip().textProperty().bind(menuMaxiViewModel.newTooltipProperty());
-        // menu maxi player (with submenu)
-        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        String playerName = "Tototototototototototototototo";
-        menuMaxiButtonPlayer.setAccessibleText(
-                MessageFormat.format(
-                        I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"),
-                        playerName));
+        // menu player
+        /// ///////////////////////////////////////////////////////////////////////
+        // Accessibilité et textes du bouton principal joueur
+        menuMaxiButtonPlayer
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.playerAccessibleTextProperty());
         menuMaxiButtonPlayer
                 .getTooltip()
-                .setText(
-                        MessageFormat.format(
-                                        I18n.INSTANCE.getValue(
-                                                "menu.maxi.button.player.accessibility"),
-                                        playerName)
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonPlayer.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonPlayerText.setText(playerName);
+                .textProperty()
+                .bind(menuPlayerViewModel.playerTooltipProperty());
+        menuMaxiButtonPlayer
+                .accessibleRoleDescriptionProperty()
+                .bind(menuPlayerViewModel.playerRoleDescriptionProperty());
+
+        // Texte du bouton principal joueur (affiche le nom du joueur sélectionné)
+        menuMaxiButtonPlayerText
+                .textProperty()
+                .bind(
+                        Bindings.createStringBinding(
+                                () -> {
+                                    PlayerDto selected =
+                                            menuPlayerViewModel.selectedPlayerProperty().get();
+                                    return selected != null ? selected.name() : "";
+                                },
+                                menuPlayerViewModel.selectedPlayerProperty()));
+
+        // Réduire
+        menuPlayerButtonReduce
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.reduceAccessibleTextProperty());
+        menuPlayerButtonReduce
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.reduceTooltipProperty());
+        menuPlayerButtonReduceText.textProperty().bind(menuPlayerViewModel.reduceTextProperty());
+
+        // Bouton joueur secondaire
+        menuPlayerButtonPlayer
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.playerAccessibleTextProperty());
+        menuPlayerButtonPlayer
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.playerTooltipProperty());
+        menuPlayerButtonPlayer
+                .accessibleRoleDescriptionProperty()
+                .bind(menuPlayerViewModel.playerRoleDescriptionProperty());
+        menuPlayerButtonPlayerText
+                .textProperty()
+                .bind(
+                        Bindings.createStringBinding(
+                                () -> {
+                                    PlayerDto selected =
+                                            menuPlayerViewModel.selectedPlayerProperty().get();
+                                    return selected != null ? selected.name() : "";
+                                },
+                                menuPlayerViewModel.selectedPlayerProperty()));
+
+        // Bouton d'édition
+        menuPlayerButtonPlayerEdit
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.editAccessibleTextProperty());
+        menuPlayerButtonPlayerEdit
+                .accessibleRoleDescriptionProperty()
+                .bind(menuPlayerViewModel.editRoleDescriptionProperty());
+        menuPlayerButtonPlayerEdit
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.editTooltipProperty());
+
+        // Nouveau joueur
+        menuPlayerButtonNew
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.newAccessibleTextProperty());
+        menuPlayerButtonNew
+                .accessibleRoleDescriptionProperty()
+                .bind(menuPlayerViewModel.newRoleDescriptionProperty());
+        menuPlayerButtonNew
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.newTooltipProperty());
+        menuPlayerButtonNewText.textProperty().bind(menuPlayerViewModel.newTextProperty());
+
+        // Liste des joueurs
+        setupListViewClip(menuPlayerListView, menuPlayerClipListView);
+        menuPlayerListView.setItems(menuPlayerViewModel.getPlayers());
+
+        // Cell factory personnalisée
+        menuPlayerListView.setCellFactory(
+                param ->
+                        new PlayerDtoListCell(
+                                menuPlayerListView,
+                                "\uef67",
+                                I18n.INSTANCE.getValue(
+                                        "menu.player.button.new.player.cell.delete.accessibility"),
+                                I18n.INSTANCE.getValue(
+                                        "menu.player.button.new.player.dialog.confirmation.title"),
+                                I18n.INSTANCE.getValue(
+                                        "menu.player.button.new.player.dialog.confirmation.message"),
+                                CONFIRMATION_ALERT));
+
+        // Synchronisation sélection ViewModel <-> Vue
+        menuPlayerListView
+                .getSelectionModel()
+                .selectedItemProperty()
+                .addListener(
+                        (obs, old, selected) -> {
+                            if (selected != null
+                                    && !selected.equals(
+                                            menuPlayerViewModel.selectedPlayerProperty().get())) {
+                                menuPlayerViewModel.selectedPlayerProperty().set(selected);
+                            }
+                        });
+
+        menuPlayerViewModel
+                .selectedPlayerProperty()
+                .addListener(
+                        (obs, old, selected) -> {
+                            if (selected != null
+                                    && !selected.equals(
+                                            menuPlayerListView
+                                                    .getSelectionModel()
+                                                    .getSelectedItem())) {
+                                menuPlayerListView.getSelectionModel().select(selected);
+                            }
+                        });
+        // Sélectionner joueur initial
+        menuPlayerListView
+                .getSelectionModel()
+                .select(menuPlayerViewModel.selectedPlayerProperty().get());
+
+        // Rafraîchir et scroller vers l’élément sélectionné
+        Platform.runLater(
+                () -> {
+                    menuPlayerListView.refresh();
+                    menuPlayerListView.scrollTo(menuPlayerViewModel.selectedPlayerProperty().get());
+                });
+        /// ///////////////////////////////////////////////////////////////////////
+
+        //        // menu maxi player (with submenu)
+        //        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        //        String playerName = "Tototototototototototototototo";
+        //        menuMaxiButtonPlayer.setAccessibleText(
+        //                MessageFormat.format(
+        //                        I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"),
+        //                        playerName));
+        //        menuMaxiButtonPlayer
+        //                .getTooltip()
+        //                .setText(
+        //                        MessageFormat.format(
+        //                                        I18n.INSTANCE.getValue(
+        //                                                "menu.maxi.button.player.accessibility"),
+        //                                        playerName)
+        //                                + I18n.INSTANCE.getValue(
+        //                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMaxiButtonPlayer.setAccessibleRoleDescription(
+        //                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        //        menuMaxiButtonPlayerText.setText(playerName);
+        //        // MenuPlayer
+        //        menuPlayerButtonReduce.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
+        //        menuPlayerButtonReduce
+        //                .getTooltip()
+        //
+        // .setText(I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
+        //        menuPlayerButtonReduceText.setText(
+        //                I18n.INSTANCE.getValue("menu.player.button.reduce.text"));
+        //        menuPlayerButtonPlayer.setAccessibleText(
+        //                MessageFormat.format(
+        //                        I18n.INSTANCE.getValue("menu.player.button.player.accessibility"),
+        //                        playerName));
+        //        menuPlayerButtonPlayer
+        //                .getTooltip()
+        //                .setText(
+        //                        MessageFormat.format(
+        //                                        I18n.INSTANCE.getValue(
+        //
+        // "menu.player.button.player.accessibility"),
+        //                                        playerName)
+        //                                + I18n.INSTANCE.getValue(
+        //                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+        //        menuPlayerButtonPlayer.setAccessibleRoleDescription(
+        //                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
+        //        menuPlayerButtonPlayerText.setText(playerName);
+        //        menuPlayerButtonPlayerEdit.setAccessibleText(
+        //                MessageFormat.format(
+        //                        I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"),
+        //                        playerName));
+        //        menuPlayerButtonPlayerEdit.setAccessibleRoleDescription(
+        //
+        // I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        //        menuPlayerButtonPlayerEdit
+        //                .getTooltip()
+        //                .setText(
+        //                        MessageFormat.format(
+        //                                        I18n.INSTANCE.getValue(
+        //                                                "menu.player.button.edit.accessibility"),
+        //                                        playerName)
+        //                                + I18n.INSTANCE.getValue(
+        //
+        // MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        //        menuPlayerButtonNew.setAccessibleText(
+        //                I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
+        //        menuPlayerButtonNew.setAccessibleRoleDescription(
+        //
+        // I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        //        menuPlayerButtonNew
+        //                .getTooltip()
+        //                .setText(
+        //
+        // I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility")
+        //                                + I18n.INSTANCE.getValue(
+        //
+        // MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        //        menuPlayerButtonNewText.setText(
+        //                I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
+        //        setupListViewClip(menuPlayerListView, menuPlayerClipListView);
+        //        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+        //        menuPlayerListView.getItems().add("ANONYMOUS");
+        //        for (int i = 1; i <= 20; i++) {
+        //            menuPlayerListView.getItems().add(playerName + i + "
+        // AAAAAAAAAAAAAAAAAAAAAAAAA");
+        //        }
+        //        menuPlayerListView.getItems().add(playerName);
+        //        menuPlayerListView.getSelectionModel().select(playerName);
+        //        Platform.runLater(
+        //                () -> {
+        //                    menuPlayerListView.refresh();
+        //                    menuPlayerListView.scrollTo(playerName);
+        //                });
+        //        menuPlayerListView.setCellFactory(
+        //                param ->
+        //                        new ItemListCell(
+        //                                menuPlayerListView,
+        //                                "\uef67",
+        //                                I18n.INSTANCE.getValue(
+        //
+        // "menu.player.button.new.player.cell.delete.accessibility"),
+        //                                I18n.INSTANCE.getValue(
+        //
+        // "menu.player.button.new.player.dialog.confirmation.title"),
+        //                                I18n.INSTANCE.getValue(
+        //
+        // "menu.player.button.new.player.dialog.confirmation.message"),
+        //                                CONFIRMATION_ALERT));
+
         // menu maxi solve (with submenu)
         menuMaxiButtonSolve.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
@@ -309,107 +537,6 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonSolve.setAccessibleRoleDescription(
                 I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
         menuMaxiButtonSolveText.setText(I18n.INSTANCE.getValue("menu.maxi.button.solve.text"));
-        // menu maxi backup (with submenu)
-        menuMaxiButtonBackup.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.maxi.button.backup.accessibility"));
-        menuMaxiButtonBackup
-                .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.maxi.button.backup.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonBackup.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonBackupText.setText(I18n.INSTANCE.getValue("menu.maxi.button.backup.text"));
-        // menu maxi background (with submenu)
-        menuMaxiButtonBackground.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
-        menuMaxiButtonBackground
-                .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonBackground.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonBackgroundText.setText(
-                I18n.INSTANCE.getValue("menu.maxi.button.background.text"));
-        // MenuPlayer
-        menuPlayerButtonReduce.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
-        menuPlayerButtonReduce
-                .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
-        menuPlayerButtonReduceText.setText(
-                I18n.INSTANCE.getValue("menu.player.button.reduce.text"));
-        menuPlayerButtonPlayer.setAccessibleText(
-                MessageFormat.format(
-                        I18n.INSTANCE.getValue("menu.player.button.player.accessibility"),
-                        playerName));
-        menuPlayerButtonPlayer
-                .getTooltip()
-                .setText(
-                        MessageFormat.format(
-                                        I18n.INSTANCE.getValue(
-                                                "menu.player.button.player.accessibility"),
-                                        playerName)
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
-        menuPlayerButtonPlayer.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
-        menuPlayerButtonPlayerText.setText(playerName);
-        menuPlayerButtonPlayerEdit.setAccessibleText(
-                MessageFormat.format(
-                        I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"),
-                        playerName));
-        menuPlayerButtonPlayerEdit.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuPlayerButtonPlayerEdit
-                .getTooltip()
-                .setText(
-                        MessageFormat.format(
-                                        I18n.INSTANCE.getValue(
-                                                "menu.player.button.edit.accessibility"),
-                                        playerName)
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuPlayerButtonNew.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
-        menuPlayerButtonNew.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuPlayerButtonNew
-                .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuPlayerButtonNewText.setText(
-                I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
-        setupListViewClip(menuPlayerListView, menuPlayerClipListView);
-        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        menuPlayerListView.getItems().add("ANONYMOUS");
-        for (int i = 1; i <= 20; i++) {
-            menuPlayerListView.getItems().add(playerName + i + " AAAAAAAAAAAAAAAAAAAAAAAAA");
-        }
-        menuPlayerListView.getItems().add(playerName);
-        menuPlayerListView.getSelectionModel().select(playerName);
-        Platform.runLater(
-                () -> {
-                    menuPlayerListView.refresh();
-                    menuPlayerListView.scrollTo(playerName);
-                });
-        menuPlayerListView.setCellFactory(
-                param ->
-                        new ItemListCell(
-                                menuPlayerListView,
-                                "\uef67",
-                                I18n.INSTANCE.getValue(
-                                        "menu.player.button.new.player.cell.delete.accessibility"),
-                                I18n.INSTANCE.getValue(
-                                        "menu.player.button.new.player.dialog.confirmation.title"),
-                                I18n.INSTANCE.getValue(
-                                        "menu.player.button.new.player.dialog.confirmation.message"),
-                                CONFIRMATION_ALERT));
         // menu solve
         menuSolveButtonReduce.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
@@ -444,6 +571,18 @@ public final class DefaultView implements IMainView {
                         I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
+        // menu maxi backup (with submenu)
+        menuMaxiButtonBackup.setAccessibleText(
+                I18n.INSTANCE.getValue("menu.maxi.button.backup.accessibility"));
+        menuMaxiButtonBackup
+                .getTooltip()
+                .setText(
+                        I18n.INSTANCE.getValue("menu.maxi.button.backup.accessibility")
+                                + I18n.INSTANCE.getValue(
+                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        menuMaxiButtonBackup.setAccessibleRoleDescription(
+                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        menuMaxiButtonBackupText.setText(I18n.INSTANCE.getValue("menu.maxi.button.backup.text"));
         // menu save
         menuSaveButtonReduce.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.save.button.reduce.accessibility"));
@@ -486,18 +625,35 @@ public final class DefaultView implements IMainView {
                     menuSaveListView.refresh();
                     menuSaveListView.scrollTo(backupName + 10);
                 });
-        menuSaveListView.setCellFactory(
-                param ->
-                        new ItemListCell(
-                                menuSaveListView,
-                                "\ue92b",
-                                I18n.INSTANCE.getValue(
-                                        "menu.save.button.backup.cell.delete.accessibility"),
-                                I18n.INSTANCE.getValue(
-                                        "menu.save.button.backup.dialog.confirmation.title"),
-                                I18n.INSTANCE.getValue(
-                                        "menu.save.button.backup.dialog.confirmation.message"),
-                                CONFIRMATION_ALERT));
+        // TODO !!!
+        //        menuSaveListView.setCellFactory(
+        //                param ->
+        //                        new GameDtoListCell(
+        //                                menuSaveListView,
+        //                                "\ue92b",
+        //                                I18n.INSTANCE.getValue(
+        //
+        // "menu.save.button.backup.cell.delete.accessibility"),
+        //                                I18n.INSTANCE.getValue(
+        //
+        // "menu.save.button.backup.dialog.confirmation.title"),
+        //                                I18n.INSTANCE.getValue(
+        //
+        // "menu.save.button.backup.dialog.confirmation.message"),
+        //                                CONFIRMATION_ALERT));
+        // menu maxi background (with submenu)
+        menuMaxiButtonBackground.setAccessibleText(
+                I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
+        menuMaxiButtonBackground
+                .getTooltip()
+                .setText(
+                        I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility")
+                                + I18n.INSTANCE.getValue(
+                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        menuMaxiButtonBackground.setAccessibleRoleDescription(
+                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
+        menuMaxiButtonBackgroundText.setText(
+                I18n.INSTANCE.getValue("menu.maxi.button.background.text"));
         // menu background
         menuBackgroundButtonReduce.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
