@@ -724,33 +724,30 @@ public final class DefaultView implements IMainView {
         String accessibilityKey = menuLevelViewModel.getAccessibilityKeyForLevel(level);
         StringBinding accessibleText =
                 menuLevelViewModel.accessibleTextBinding(starsBox, accessibilityKey);
-
         maxi.getTooltip().textProperty().bind(accessibleText);
         mini.getTooltip().textProperty().bind(accessibleText);
     }
 
     /**
-     * Listens to changes in the selected level property and updates the pseudo-class state on both
-     * buttons to reflect selection styling for the specified difficulty level.
+     * Binds the pseudo-class state of the given buttons to reflect the selection state of the
+     * specified difficulty level. Uses a BooleanBinding to update styling reactively and
+     * initializes the pseudo-class state immediately.
      *
-     * @param level the difficulty level to bind the styling for
+     * @param level the difficulty level to bind selection styling for
      * @param maxi the button in the maxi menu
      * @param mini the button in the mini menu
      */
     private void bindLevelSelectedStyling(DifficultyLevel level, Button maxi, Button mini) {
-        menuLevelViewModel
-                .selectedLevelProperty()
-                .addListener(
-                        (obs, oldLevel, newLevel) -> {
-                            boolean selected = newLevel == level;
-                            maxi.pseudoClassStateChanged(
-                                    DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
-                            mini.pseudoClassStateChanged(
-                                    DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
-                        });
+        BooleanBinding isSelected = menuLevelViewModel.isSelectedBinding(level);
+        isSelected.addListener(
+                (obs, wasSelected, nowSelected) -> {
+                    maxi.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, nowSelected);
+                    mini.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, nowSelected);
+                });
+        boolean selected = isSelected.get();
+        maxi.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
+        mini.pseudoClassStateChanged(DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);
     }
-
-    /// /////////////
 
     @FXML
     private void handleFileImageChooser() {
