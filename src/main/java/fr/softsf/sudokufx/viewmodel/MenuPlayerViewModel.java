@@ -65,7 +65,6 @@ public class MenuPlayerViewModel {
     private final StringBinding cellConfirmationMessage;
 
     public MenuPlayerViewModel() {
-        // Bindings using helper methods to reduce duplication
         playerAccessibleText =
                 createFormattedBinding("menu.player.button.player.accessibility", this::playerName);
         playerTooltip =
