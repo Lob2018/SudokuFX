@@ -172,225 +172,11 @@ public final class DefaultView implements IMainView {
      */
     @FXML
     private void initialize() {
-        // Menu hidden
-        menuHiddenButtonShow
-                .accessibleTextProperty()
-                .bind(menuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty());
-        menuHiddenButtonShow
-                .getTooltip()
-                .textProperty()
-                .bind(menuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty());
-        // Menu mini
-        menuMiniButtonShow.textProperty().bind(menuMiniViewModel.showAccessibleTextProperty());
-        menuMiniButtonShow
-                .getTooltip()
-                .textProperty()
-                .bind(menuMiniViewModel.showTooltipProperty());
-        menuMiniButtonPlayer.textProperty().bind(menuMiniViewModel.playerAccessibleTextProperty());
-        menuMiniButtonPlayer
-                .getTooltip()
-                .textProperty()
-                .bind(menuMiniViewModel.playerTooltipProperty());
-        menuMiniButtonSolve.textProperty().bind(menuMiniViewModel.solveAccessibleTextProperty());
-        menuMiniButtonSolve
-                .getTooltip()
-                .textProperty()
-                .bind(menuMiniViewModel.solveTooltipProperty());
-        menuMiniButtonBackup.textProperty().bind(menuMiniViewModel.backupAccessibleTextProperty());
-        menuMiniButtonBackup
-                .getTooltip()
-                .textProperty()
-                .bind(menuMiniViewModel.backupTooltipProperty());
-        menuMiniButtonBackground
-                .textProperty()
-                .bind(menuMiniViewModel.backgroundAccessibleTextProperty());
-        menuMiniButtonBackground
-                .getTooltip()
-                .textProperty()
-                .bind(menuMiniViewModel.backgroundTooltipProperty());
-        menuMiniButtonLanguage
-                .textProperty()
-                .bind(menuMiniViewModel.languageAccessibleTextProperty());
-        menuMiniButtonLanguage
-                .getTooltip()
-                .textProperty()
-                .bind(menuMiniViewModel.languageTooltipProperty());
-        menuMiniButtonLanguageIso
-                .textProperty()
-                .bind(menuMiniViewModel.menuMiniButtonLanguageIsoTextProperty());
-        menuMiniButtonHelp.textProperty().bind(menuMiniViewModel.helpAccessibleTextProperty());
-        menuMiniButtonHelp
-                .getTooltip()
-                .textProperty()
-                .bind(menuMiniViewModel.helpTooltipProperty());
-        menuMiniButtonNew.textProperty().bind(menuMiniViewModel.newAccessibleTextProperty());
-        menuMiniButtonNew.getTooltip().textProperty().bind(menuMiniViewModel.newTooltipProperty());
-        // Menu Levels
-        bindLevel(
-                DifficultyLevel.EASY,
-                menuMaxiHBoxEasyPossibilities,
-                menuMaxiButtonEasy,
-                menuMaxiButtonEasyText,
-                menuMiniButtonEasy);
-        bindLevel(
-                DifficultyLevel.MEDIUM,
-                menuMaxiHBoxMediumPossibilities,
-                menuMaxiButtonMedium,
-                menuMaxiButtonMediumText,
-                menuMiniButtonMedium);
-        bindLevel(
-                DifficultyLevel.DIFFICULT,
-                menuMaxiHBoxDifficultPossibilities,
-                menuMaxiButtonDifficult,
-                menuMaxiButtonDifficultText,
-                menuMiniButtonDifficult);
-        // Menu maxi
-        menuMaxiButtonReduceText.textProperty().bind(menuMaxiViewModel.reduceTextProperty());
-        menuMaxiButtonLanguageIso.textProperty().bind(menuMaxiViewModel.languageIsoProperty());
-        menuMaxiButtonLanguageText.textProperty().bind(menuMaxiViewModel.languageTextProperty());
-        menuMaxiButtonHelpText.textProperty().bind(menuMaxiViewModel.helpTextProperty());
-        menuMaxiButtonNewText.textProperty().bind(menuMaxiViewModel.newTextProperty());
-        menuMaxiButtonReduce
-                .accessibleTextProperty()
-                .bind(menuMaxiViewModel.reduceAccessibleTextProperty());
-        menuMaxiButtonLanguage
-                .accessibleTextProperty()
-                .bind(menuMaxiViewModel.languageAccessibleTextProperty());
-        menuMaxiButtonHelp
-                .accessibleTextProperty()
-                .bind(menuMaxiViewModel.helpAccessibleTextProperty());
-        menuMaxiButtonNew
-                .accessibleTextProperty()
-                .bind(menuMaxiViewModel.newAccessibleTextProperty());
-        menuMaxiButtonReduce.setTooltip(new Tooltip());
-        menuMaxiButtonReduce
-                .getTooltip()
-                .textProperty()
-                .bind(menuMaxiViewModel.reduceTooltipProperty());
-        menuMaxiButtonLanguage.setTooltip(new Tooltip());
-        menuMaxiButtonLanguage
-                .getTooltip()
-                .textProperty()
-                .bind(menuMaxiViewModel.languageTooltipProperty());
-        menuMaxiButtonHelp.setTooltip(new Tooltip());
-        menuMaxiButtonHelp
-                .getTooltip()
-                .textProperty()
-                .bind(menuMaxiViewModel.helpTooltipProperty());
-        menuMaxiButtonNew.setTooltip(new Tooltip());
-        menuMaxiButtonNew.getTooltip().textProperty().bind(menuMaxiViewModel.newTooltipProperty());
-        // menu player
-        menuMaxiButtonPlayer
-                .accessibleTextProperty()
-                .bind(menuPlayerViewModel.playerAccessibleTextProperty());
-        menuMaxiButtonPlayer
-                .getTooltip()
-                .textProperty()
-                .bind(menuPlayerViewModel.maxiPlayerTooltipProperty());
-        menuMaxiButtonPlayer
-                .accessibleRoleDescriptionProperty()
-                .bind(menuPlayerViewModel.maxiPlayerRoleDescriptionProperty());
-        menuMaxiButtonPlayerText
-                .textProperty()
-                .bind(
-                        Bindings.createStringBinding(
-                                () -> {
-                                    PlayerDto selected =
-                                            menuPlayerViewModel.selectedPlayerProperty().get();
-                                    return selected != null ? selected.name() : "";
-                                },
-                                menuPlayerViewModel.selectedPlayerProperty()));
-        menuPlayerButtonReduce
-                .accessibleTextProperty()
-                .bind(menuPlayerViewModel.reduceAccessibleTextProperty());
-        menuPlayerButtonReduce
-                .getTooltip()
-                .textProperty()
-                .bind(menuPlayerViewModel.reduceTooltipProperty());
-        menuPlayerButtonReduceText.textProperty().bind(menuPlayerViewModel.reduceTextProperty());
-        menuPlayerButtonPlayer
-                .accessibleTextProperty()
-                .bind(menuPlayerViewModel.playerAccessibleTextProperty());
-        menuPlayerButtonPlayer
-                .getTooltip()
-                .textProperty()
-                .bind(menuPlayerViewModel.playerTooltipProperty());
-        menuPlayerButtonPlayer
-                .accessibleRoleDescriptionProperty()
-                .bind(menuPlayerViewModel.playerRoleDescriptionProperty());
-        menuPlayerButtonPlayerText
-                .textProperty()
-                .bind(
-                        Bindings.createStringBinding(
-                                () -> {
-                                    PlayerDto selected =
-                                            menuPlayerViewModel.selectedPlayerProperty().get();
-                                    return selected != null ? selected.name() : "";
-                                },
-                                menuPlayerViewModel.selectedPlayerProperty()));
-        menuPlayerButtonPlayerEdit
-                .accessibleTextProperty()
-                .bind(menuPlayerViewModel.editAccessibleTextProperty());
-        menuPlayerButtonPlayerEdit
-                .accessibleRoleDescriptionProperty()
-                .bind(menuPlayerViewModel.editRoleDescriptionProperty());
-        menuPlayerButtonPlayerEdit
-                .getTooltip()
-                .textProperty()
-                .bind(menuPlayerViewModel.editTooltipProperty());
-        menuPlayerButtonNew
-                .accessibleTextProperty()
-                .bind(menuPlayerViewModel.newAccessibleTextProperty());
-        menuPlayerButtonNew
-                .accessibleRoleDescriptionProperty()
-                .bind(menuPlayerViewModel.newRoleDescriptionProperty());
-        menuPlayerButtonNew
-                .getTooltip()
-                .textProperty()
-                .bind(menuPlayerViewModel.newTooltipProperty());
-        menuPlayerButtonNewText.textProperty().bind(menuPlayerViewModel.newTextProperty());
-        setupListViewClip(menuPlayerListView, menuPlayerClipListView);
-        menuPlayerListView.setItems(menuPlayerViewModel.getPlayers());
-        menuPlayerListView.setCellFactory(
-                param ->
-                        new PlayerDtoListCell(
-                                menuPlayerListView,
-                                "\uef67",
-                                menuPlayerViewModel.cellButtonAccessibleTextProperty(),
-                                menuPlayerViewModel.cellConfirmationTitleProperty(),
-                                menuPlayerViewModel.cellConfirmationMessageProperty(),
-                                CONFIRMATION_ALERT));
-        menuPlayerListView
-                .getSelectionModel()
-                .selectedItemProperty()
-                .addListener(
-                        (obs, old, selected) -> {
-                            if (selected != null
-                                    && !selected.equals(
-                                            menuPlayerViewModel.selectedPlayerProperty().get())) {
-                                menuPlayerViewModel.selectedPlayerProperty().set(selected);
-                            }
-                        });
-        menuPlayerViewModel
-                .selectedPlayerProperty()
-                .addListener(
-                        (obs, old, selected) -> {
-                            if (selected != null
-                                    && !selected.equals(
-                                            menuPlayerListView
-                                                    .getSelectionModel()
-                                                    .getSelectedItem())) {
-                                menuPlayerListView.getSelectionModel().select(selected);
-                            }
-                        });
-        menuPlayerListView
-                .getSelectionModel()
-                .select(menuPlayerViewModel.selectedPlayerProperty().get());
-        Platform.runLater(
-                () -> {
-                    menuPlayerListView.refresh();
-                    menuPlayerListView.scrollTo(menuPlayerViewModel.selectedPlayerProperty().get());
-                });
+        hiddenMenuInitialization();
+        miniMenuInitialization();
+        levelsMenuInitialization();
+        maxiMenuInitialization();
+        playerMenuInitialization();
         // menu maxi solve (with submenu)
         menuMaxiButtonSolve.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
@@ -570,6 +356,15 @@ public final class DefaultView implements IMainView {
                             backgroundViewModel.updateBackgroundColorAndApply(sudokuFX, newValue);
                         });
         // Managing the active menu
+        activeMenuMangerInitialization();
+    }
+
+    /**
+     * Initializes bindings between each menu pane's visibility and managed state
+     * and the corresponding value of the active menu from ActiveMenuOrSubmenuViewModel.
+     * Ensures that only the currently active menu is visible and participates in layout calculations.
+     */
+    private void activeMenuMangerInitialization() {
         menuHidden
                 .visibleProperty()
                 .bind(
@@ -648,6 +443,257 @@ public final class DefaultView implements IMainView {
                         activeMenuOrSubmenuViewModel
                                 .getActiveMenu()
                                 .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND));
+    }
+
+    /**
+     * Initializes bindings and event listeners for the player menu components. Binds accessible
+     * texts, tooltips, and displayed texts to the ViewModel. Synchronizes selected player state
+     * between the ListView and ViewModel. Sets up the player ListView with custom cells and
+     * refreshes UI state.
+     */
+    private void playerMenuInitialization() {
+        menuMaxiButtonPlayer
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.playerAccessibleTextProperty());
+        menuMaxiButtonPlayer
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.maxiPlayerTooltipProperty());
+        menuMaxiButtonPlayer
+                .accessibleRoleDescriptionProperty()
+                .bind(menuPlayerViewModel.maxiPlayerRoleDescriptionProperty());
+        menuMaxiButtonPlayerText
+                .textProperty()
+                .bind(
+                        Bindings.createStringBinding(
+                                () -> {
+                                    PlayerDto selected =
+                                            menuPlayerViewModel.selectedPlayerProperty().get();
+                                    return selected != null ? selected.name() : "";
+                                },
+                                menuPlayerViewModel.selectedPlayerProperty()));
+        menuPlayerButtonReduce
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.reduceAccessibleTextProperty());
+        menuPlayerButtonReduce
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.reduceTooltipProperty());
+        menuPlayerButtonReduceText.textProperty().bind(menuPlayerViewModel.reduceTextProperty());
+        menuPlayerButtonPlayer
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.playerAccessibleTextProperty());
+        menuPlayerButtonPlayer
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.playerTooltipProperty());
+        menuPlayerButtonPlayer
+                .accessibleRoleDescriptionProperty()
+                .bind(menuPlayerViewModel.playerRoleDescriptionProperty());
+        menuPlayerButtonPlayerText
+                .textProperty()
+                .bind(
+                        Bindings.createStringBinding(
+                                () -> {
+                                    PlayerDto selected =
+                                            menuPlayerViewModel.selectedPlayerProperty().get();
+                                    return selected != null ? selected.name() : "";
+                                },
+                                menuPlayerViewModel.selectedPlayerProperty()));
+        menuPlayerButtonPlayerEdit
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.editAccessibleTextProperty());
+        menuPlayerButtonPlayerEdit
+                .accessibleRoleDescriptionProperty()
+                .bind(menuPlayerViewModel.editRoleDescriptionProperty());
+        menuPlayerButtonPlayerEdit
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.editTooltipProperty());
+        menuPlayerButtonNew
+                .accessibleTextProperty()
+                .bind(menuPlayerViewModel.newAccessibleTextProperty());
+        menuPlayerButtonNew
+                .accessibleRoleDescriptionProperty()
+                .bind(menuPlayerViewModel.newRoleDescriptionProperty());
+        menuPlayerButtonNew
+                .getTooltip()
+                .textProperty()
+                .bind(menuPlayerViewModel.newTooltipProperty());
+        menuPlayerButtonNewText.textProperty().bind(menuPlayerViewModel.newTextProperty());
+        setupListViewClip(menuPlayerListView, menuPlayerClipListView);
+        menuPlayerListView.setItems(menuPlayerViewModel.getPlayers());
+        menuPlayerListView.setCellFactory(
+                param ->
+                        new PlayerDtoListCell(
+                                menuPlayerListView,
+                                "\uef67",
+                                menuPlayerViewModel.cellButtonAccessibleTextProperty(),
+                                menuPlayerViewModel.cellConfirmationTitleProperty(),
+                                menuPlayerViewModel.cellConfirmationMessageProperty(),
+                                CONFIRMATION_ALERT));
+        menuPlayerListView
+                .getSelectionModel()
+                .selectedItemProperty()
+                .addListener(
+                        (obs, old, selected) -> {
+                            if (selected != null
+                                    && !selected.equals(
+                                            menuPlayerViewModel.selectedPlayerProperty().get())) {
+                                menuPlayerViewModel.selectedPlayerProperty().set(selected);
+                            }
+                        });
+        menuPlayerViewModel
+                .selectedPlayerProperty()
+                .addListener(
+                        (obs, old, selected) -> {
+                            if (selected != null
+                                    && !selected.equals(
+                                            menuPlayerListView
+                                                    .getSelectionModel()
+                                                    .getSelectedItem())) {
+                                menuPlayerListView.getSelectionModel().select(selected);
+                            }
+                        });
+        menuPlayerListView
+                .getSelectionModel()
+                .select(menuPlayerViewModel.selectedPlayerProperty().get());
+        Platform.runLater(
+                () -> {
+                    menuPlayerListView.refresh();
+                    menuPlayerListView.scrollTo(menuPlayerViewModel.selectedPlayerProperty().get());
+                });
+    }
+
+    /**
+     * Initializes the maxi menu components by binding their labels, accessible texts, and tooltips
+     * to the corresponding properties in the ViewModel.
+     */
+    private void maxiMenuInitialization() {
+        menuMaxiButtonReduceText.textProperty().bind(menuMaxiViewModel.reduceTextProperty());
+        menuMaxiButtonLanguageIso.textProperty().bind(menuMaxiViewModel.languageIsoProperty());
+        menuMaxiButtonLanguageText.textProperty().bind(menuMaxiViewModel.languageTextProperty());
+        menuMaxiButtonHelpText.textProperty().bind(menuMaxiViewModel.helpTextProperty());
+        menuMaxiButtonNewText.textProperty().bind(menuMaxiViewModel.newTextProperty());
+        menuMaxiButtonReduce
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.reduceAccessibleTextProperty());
+        menuMaxiButtonLanguage
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.languageAccessibleTextProperty());
+        menuMaxiButtonHelp
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.helpAccessibleTextProperty());
+        menuMaxiButtonNew
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.newAccessibleTextProperty());
+        menuMaxiButtonReduce.setTooltip(new Tooltip());
+        menuMaxiButtonReduce
+                .getTooltip()
+                .textProperty()
+                .bind(menuMaxiViewModel.reduceTooltipProperty());
+        menuMaxiButtonLanguage.setTooltip(new Tooltip());
+        menuMaxiButtonLanguage
+                .getTooltip()
+                .textProperty()
+                .bind(menuMaxiViewModel.languageTooltipProperty());
+        menuMaxiButtonHelp.setTooltip(new Tooltip());
+        menuMaxiButtonHelp
+                .getTooltip()
+                .textProperty()
+                .bind(menuMaxiViewModel.helpTooltipProperty());
+        menuMaxiButtonNew.setTooltip(new Tooltip());
+        menuMaxiButtonNew.getTooltip().textProperty().bind(menuMaxiViewModel.newTooltipProperty());
+    }
+
+    /**
+     * Initializes each difficulty level section in the menu by binding UI components to ViewModel
+     * properties for EASY, MEDIUM, and DIFFICULT levels.
+     */
+    private void levelsMenuInitialization() {
+        bindLevel(
+                DifficultyLevel.EASY,
+                menuMaxiHBoxEasyPossibilities,
+                menuMaxiButtonEasy,
+                menuMaxiButtonEasyText,
+                menuMiniButtonEasy);
+        bindLevel(
+                DifficultyLevel.MEDIUM,
+                menuMaxiHBoxMediumPossibilities,
+                menuMaxiButtonMedium,
+                menuMaxiButtonMediumText,
+                menuMiniButtonMedium);
+        bindLevel(
+                DifficultyLevel.DIFFICULT,
+                menuMaxiHBoxDifficultPossibilities,
+                menuMaxiButtonDifficult,
+                menuMaxiButtonDifficultText,
+                menuMiniButtonDifficult);
+    }
+
+    /**
+     * Initializes the mini menu by binding all buttons' texts and tooltips to their respective
+     * ViewModel properties.
+     */
+    private void miniMenuInitialization() {
+        menuMiniButtonShow.textProperty().bind(menuMiniViewModel.showAccessibleTextProperty());
+        menuMiniButtonShow
+                .getTooltip()
+                .textProperty()
+                .bind(menuMiniViewModel.showTooltipProperty());
+        menuMiniButtonPlayer.textProperty().bind(menuMiniViewModel.playerAccessibleTextProperty());
+        menuMiniButtonPlayer
+                .getTooltip()
+                .textProperty()
+                .bind(menuMiniViewModel.playerTooltipProperty());
+        menuMiniButtonSolve.textProperty().bind(menuMiniViewModel.solveAccessibleTextProperty());
+        menuMiniButtonSolve
+                .getTooltip()
+                .textProperty()
+                .bind(menuMiniViewModel.solveTooltipProperty());
+        menuMiniButtonBackup.textProperty().bind(menuMiniViewModel.backupAccessibleTextProperty());
+        menuMiniButtonBackup
+                .getTooltip()
+                .textProperty()
+                .bind(menuMiniViewModel.backupTooltipProperty());
+        menuMiniButtonBackground
+                .textProperty()
+                .bind(menuMiniViewModel.backgroundAccessibleTextProperty());
+        menuMiniButtonBackground
+                .getTooltip()
+                .textProperty()
+                .bind(menuMiniViewModel.backgroundTooltipProperty());
+        menuMiniButtonLanguage
+                .textProperty()
+                .bind(menuMiniViewModel.languageAccessibleTextProperty());
+        menuMiniButtonLanguage
+                .getTooltip()
+                .textProperty()
+                .bind(menuMiniViewModel.languageTooltipProperty());
+        menuMiniButtonLanguageIso
+                .textProperty()
+                .bind(menuMiniViewModel.menuMiniButtonLanguageIsoTextProperty());
+        menuMiniButtonHelp.textProperty().bind(menuMiniViewModel.helpAccessibleTextProperty());
+        menuMiniButtonHelp
+                .getTooltip()
+                .textProperty()
+                .bind(menuMiniViewModel.helpTooltipProperty());
+        menuMiniButtonNew.textProperty().bind(menuMiniViewModel.newAccessibleTextProperty());
+        menuMiniButtonNew.getTooltip().textProperty().bind(menuMiniViewModel.newTooltipProperty());
+    }
+
+    /**
+     * Initializes the hidden menu by binding its show button's accessible text and tooltip to the
+     * ViewModel.
+     */
+    private void hiddenMenuInitialization() {
+        menuHiddenButtonShow
+                .accessibleTextProperty()
+                .bind(menuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty());
+        menuHiddenButtonShow
+                .getTooltip()
+                .textProperty()
+                .bind(menuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty());
     }
 
     /**
