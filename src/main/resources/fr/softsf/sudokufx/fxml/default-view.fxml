@@ -377,7 +377,7 @@
             </HBox>
         </VBox>
         <!---->
-        <!--Player menu (submenu)-->
+        <!--Player menu (submenu opened)-->
         <!---->
         <VBox fx:id="menuPlayer" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
@@ -443,7 +443,7 @@
             </HBox>
         </VBox>
         <!---->
-        <!--Solve menu (submenu)-->
+        <!--Solve menu (submenu opened)-->
         <!---->
         <VBox fx:id="menuSolve" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
@@ -498,7 +498,7 @@
             <Region styleClass="menuMiniButton" visible="false"/>
         </VBox>
         <!---->
-        <!--Save menu (submenu)-->
+        <!--Save menu (submenu opened)-->
         <!---->
         <VBox fx:id="menuSave" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
@@ -559,7 +559,7 @@
             </HBox>
         </VBox>
         <!---->
-        <!--Background menu (submenu)-->
+        <!--Background menu (submenu opened)-->
         <!---->
         <VBox fx:id="menuBackground" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
