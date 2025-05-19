@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.view.components.list;
 
 import java.text.MessageFormat;
 import java.util.Objects;
+import javafx.beans.binding.StringBinding;
 import javafx.scene.control.*;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
@@ -17,8 +18,11 @@ import org.slf4j.LoggerFactory;
 import fr.softsf.sudokufx.dto.PlayerDto;
 
 /**
- * Custom cell for a ListView<PlayerDto> that displays an item with a button allowing its removal
- * after user confirmation.
+ * A custom {@code ListCell} for displaying a {@code PlayerDto} in a {@code ListView}, with a label
+ * and a button that removes the item from the list after user confirmation.
+ *
+ * <p>The button and confirmation dialog are fully internationalized using {@code StringBinding}.
+ * The cell updates its accessibility and tooltip text accordingly.
  */
 public final class PlayerDtoListCell extends ListCell<PlayerDto> {
 
@@ -27,28 +31,30 @@ public final class PlayerDtoListCell extends ListCell<PlayerDto> {
     private final HBox hBox = new HBox();
     private final Label label = new Label();
     private final Button button = new Button();
-    private final String buttonAccessibleText;
     private final ListView<PlayerDto> listView;
-    private final String confirmationTitle;
-    private final String confirmationMessage;
     private final Alert confirmationAlert;
+    private final StringBinding buttonAccessibleTextBinding;
+    private final StringBinding confirmationTitleBinding;
+    private final StringBinding confirmationMessageBinding;
 
     public PlayerDtoListCell(
             ListView<PlayerDto> listView,
             String buttonText,
-            String buttonAccessibleText,
-            String confirmationTitle,
-            String confirmationMessage,
+            StringBinding buttonAccessibleTextBinding,
+            StringBinding confirmationTitleBinding,
+            StringBinding confirmationMessageBinding,
             Alert confirmationAlert) {
 
         this.listView = Objects.requireNonNull(listView, "listView must not be null");
-        this.confirmationTitle =
-                Objects.requireNonNull(confirmationTitle, "confirmationTitle must not be null");
-        this.confirmationMessage =
-                Objects.requireNonNull(confirmationMessage, "confirmationMessage must not be null");
-        this.buttonAccessibleText =
+        this.confirmationTitleBinding =
                 Objects.requireNonNull(
-                        buttonAccessibleText, "buttonAccessibleText must not be null");
+                        confirmationTitleBinding, "confirmationTitle must not be null");
+        this.confirmationMessageBinding =
+                Objects.requireNonNull(
+                        confirmationMessageBinding, "confirmationMessage must not be null");
+        this.buttonAccessibleTextBinding =
+                Objects.requireNonNull(
+                        buttonAccessibleTextBinding, "buttonAccessibleText must not be null");
         this.confirmationAlert =
                 Objects.requireNonNull(confirmationAlert, "confirmationAlert must not be null");
 
@@ -63,6 +69,14 @@ public final class PlayerDtoListCell extends ListCell<PlayerDto> {
         hBox.getChildren().addAll(label, button);
     }
 
+    /**
+     * Updates the visual representation of the cell based on the given {@code PlayerDto} item. If
+     * the item is not empty, sets up the label and button with localized text and accessibility
+     * metadata.
+     *
+     * @param item the {@code PlayerDto} to display
+     * @param empty whether this cell represents data from the list
+     */
     @Override
     protected void updateItem(PlayerDto item, boolean empty) {
         super.updateItem(item, empty);
@@ -77,8 +91,9 @@ public final class PlayerDtoListCell extends ListCell<PlayerDto> {
             label.setText(name);
             setGraphic(hBox);
             setAccessibleText(name);
-            button.setAccessibleText(MessageFormat.format(buttonAccessibleText, name));
-            button.setTooltip(new Tooltip(MessageFormat.format(buttonAccessibleText, name)));
+            button.setAccessibleText(MessageFormat.format(buttonAccessibleTextBinding.get(), name));
+            button.setTooltip(
+                    new Tooltip(MessageFormat.format(buttonAccessibleTextBinding.get(), name)));
             button.setOnAction(
                     event -> {
                         if (getItem() != null) {
@@ -90,11 +105,18 @@ public final class PlayerDtoListCell extends ListCell<PlayerDto> {
         }
     }
 
+    /**
+     * Displays a confirmation dialog using localized messages. If the user confirms, removes the
+     * specified {@code PlayerDto} from the {@code ListView}.
+     *
+     * @param item the {@code PlayerDto} to remove upon confirmation
+     */
     private void confirmAndRemoveItem(PlayerDto item) {
         String name = item.name();
-        confirmationAlert.setTitle(confirmationTitle);
+        confirmationAlert.setTitle(confirmationTitleBinding.get());
         confirmationAlert.setHeaderText(null);
-        confirmationAlert.setContentText(MessageFormat.format(confirmationMessage, name));
+        confirmationAlert.setContentText(
+                MessageFormat.format(confirmationMessageBinding.get(), name));
         confirmationAlert
                 .showAndWait()
                 .ifPresent(

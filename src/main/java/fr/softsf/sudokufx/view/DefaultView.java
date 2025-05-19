@@ -280,20 +280,16 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonNew.setTooltip(new Tooltip());
         menuMaxiButtonNew.getTooltip().textProperty().bind(menuMaxiViewModel.newTooltipProperty());
         // menu player
-        /// ///////////////////////////////////////////////////////////////////////
-        // Accessibilité et textes du bouton principal joueur
         menuMaxiButtonPlayer
                 .accessibleTextProperty()
                 .bind(menuPlayerViewModel.playerAccessibleTextProperty());
         menuMaxiButtonPlayer
                 .getTooltip()
                 .textProperty()
-                .bind(menuPlayerViewModel.playerTooltipProperty());
+                .bind(menuPlayerViewModel.maxiPlayerTooltipProperty());
         menuMaxiButtonPlayer
                 .accessibleRoleDescriptionProperty()
-                .bind(menuPlayerViewModel.playerRoleDescriptionProperty());
-
-        // Texte du bouton principal joueur (affiche le nom du joueur sélectionné)
+                .bind(menuPlayerViewModel.maxiPlayerRoleDescriptionProperty());
         menuMaxiButtonPlayerText
                 .textProperty()
                 .bind(
@@ -304,8 +300,6 @@ public final class DefaultView implements IMainView {
                                     return selected != null ? selected.name() : "";
                                 },
                                 menuPlayerViewModel.selectedPlayerProperty()));
-
-        // Réduire
         menuPlayerButtonReduce
                 .accessibleTextProperty()
                 .bind(menuPlayerViewModel.reduceAccessibleTextProperty());
@@ -314,8 +308,6 @@ public final class DefaultView implements IMainView {
                 .textProperty()
                 .bind(menuPlayerViewModel.reduceTooltipProperty());
         menuPlayerButtonReduceText.textProperty().bind(menuPlayerViewModel.reduceTextProperty());
-
-        // Bouton joueur secondaire
         menuPlayerButtonPlayer
                 .accessibleTextProperty()
                 .bind(menuPlayerViewModel.playerAccessibleTextProperty());
@@ -336,8 +328,6 @@ public final class DefaultView implements IMainView {
                                     return selected != null ? selected.name() : "";
                                 },
                                 menuPlayerViewModel.selectedPlayerProperty()));
-
-        // Bouton d'édition
         menuPlayerButtonPlayerEdit
                 .accessibleTextProperty()
                 .bind(menuPlayerViewModel.editAccessibleTextProperty());
@@ -348,8 +338,6 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .textProperty()
                 .bind(menuPlayerViewModel.editTooltipProperty());
-
-        // Nouveau joueur
         menuPlayerButtonNew
                 .accessibleTextProperty()
                 .bind(menuPlayerViewModel.newAccessibleTextProperty());
@@ -361,26 +349,17 @@ public final class DefaultView implements IMainView {
                 .textProperty()
                 .bind(menuPlayerViewModel.newTooltipProperty());
         menuPlayerButtonNewText.textProperty().bind(menuPlayerViewModel.newTextProperty());
-
-        // Liste des joueurs
         setupListViewClip(menuPlayerListView, menuPlayerClipListView);
         menuPlayerListView.setItems(menuPlayerViewModel.getPlayers());
-
-        // Cell factory personnalisée
         menuPlayerListView.setCellFactory(
                 param ->
                         new PlayerDtoListCell(
                                 menuPlayerListView,
                                 "\uef67",
-                                I18n.INSTANCE.getValue(
-                                        "menu.player.button.new.player.cell.delete.accessibility"),
-                                I18n.INSTANCE.getValue(
-                                        "menu.player.button.new.player.dialog.confirmation.title"),
-                                I18n.INSTANCE.getValue(
-                                        "menu.player.button.new.player.dialog.confirmation.message"),
+                                menuPlayerViewModel.cellButtonAccessibleTextProperty(),
+                                menuPlayerViewModel.cellConfirmationTitleProperty(),
+                                menuPlayerViewModel.cellConfirmationMessageProperty(),
                                 CONFIRMATION_ALERT));
-
-        // Synchronisation sélection ViewModel <-> Vue
         menuPlayerListView
                 .getSelectionModel()
                 .selectedItemProperty()
@@ -392,7 +371,6 @@ public final class DefaultView implements IMainView {
                                 menuPlayerViewModel.selectedPlayerProperty().set(selected);
                             }
                         });
-
         menuPlayerViewModel
                 .selectedPlayerProperty()
                 .addListener(
@@ -405,126 +383,14 @@ public final class DefaultView implements IMainView {
                                 menuPlayerListView.getSelectionModel().select(selected);
                             }
                         });
-        // Sélectionner joueur initial
         menuPlayerListView
                 .getSelectionModel()
                 .select(menuPlayerViewModel.selectedPlayerProperty().get());
-
-        // Rafraîchir et scroller vers l’élément sélectionné
         Platform.runLater(
                 () -> {
                     menuPlayerListView.refresh();
                     menuPlayerListView.scrollTo(menuPlayerViewModel.selectedPlayerProperty().get());
                 });
-        /// ///////////////////////////////////////////////////////////////////////
-
-        //        // menu maxi player (with submenu)
-        //        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        //        String playerName = "Tototototototototototototototo";
-        //        menuMaxiButtonPlayer.setAccessibleText(
-        //                MessageFormat.format(
-        //                        I18n.INSTANCE.getValue("menu.maxi.button.player.accessibility"),
-        //                        playerName));
-        //        menuMaxiButtonPlayer
-        //                .getTooltip()
-        //                .setText(
-        //                        MessageFormat.format(
-        //                                        I18n.INSTANCE.getValue(
-        //                                                "menu.maxi.button.player.accessibility"),
-        //                                        playerName)
-        //                                + I18n.INSTANCE.getValue(
-        //                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        //        menuMaxiButtonPlayer.setAccessibleRoleDescription(
-        //                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        //        menuMaxiButtonPlayerText.setText(playerName);
-        //        // MenuPlayer
-        //        menuPlayerButtonReduce.setAccessibleText(
-        //                I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
-        //        menuPlayerButtonReduce
-        //                .getTooltip()
-        //
-        // .setText(I18n.INSTANCE.getValue("menu.player.button.reduce.accessibility"));
-        //        menuPlayerButtonReduceText.setText(
-        //                I18n.INSTANCE.getValue("menu.player.button.reduce.text"));
-        //        menuPlayerButtonPlayer.setAccessibleText(
-        //                MessageFormat.format(
-        //                        I18n.INSTANCE.getValue("menu.player.button.player.accessibility"),
-        //                        playerName));
-        //        menuPlayerButtonPlayer
-        //                .getTooltip()
-        //                .setText(
-        //                        MessageFormat.format(
-        //                                        I18n.INSTANCE.getValue(
-        //
-        // "menu.player.button.player.accessibility"),
-        //                                        playerName)
-        //                                + I18n.INSTANCE.getValue(
-        //                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
-        //        menuPlayerButtonPlayer.setAccessibleRoleDescription(
-        //                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
-        //        menuPlayerButtonPlayerText.setText(playerName);
-        //        menuPlayerButtonPlayerEdit.setAccessibleText(
-        //                MessageFormat.format(
-        //                        I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"),
-        //                        playerName));
-        //        menuPlayerButtonPlayerEdit.setAccessibleRoleDescription(
-        //
-        // I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        //        menuPlayerButtonPlayerEdit
-        //                .getTooltip()
-        //                .setText(
-        //                        MessageFormat.format(
-        //                                        I18n.INSTANCE.getValue(
-        //                                                "menu.player.button.edit.accessibility"),
-        //                                        playerName)
-        //                                + I18n.INSTANCE.getValue(
-        //
-        // MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        //        menuPlayerButtonNew.setAccessibleText(
-        //                I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility"));
-        //        menuPlayerButtonNew.setAccessibleRoleDescription(
-        //
-        // I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        //        menuPlayerButtonNew
-        //                .getTooltip()
-        //                .setText(
-        //
-        // I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility")
-        //                                + I18n.INSTANCE.getValue(
-        //
-        // MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        //        menuPlayerButtonNewText.setText(
-        //                I18n.INSTANCE.getValue("menu.player.button.new.player.text"));
-        //        setupListViewClip(menuPlayerListView, menuPlayerClipListView);
-        //        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        //        menuPlayerListView.getItems().add("ANONYMOUS");
-        //        for (int i = 1; i <= 20; i++) {
-        //            menuPlayerListView.getItems().add(playerName + i + "
-        // AAAAAAAAAAAAAAAAAAAAAAAAA");
-        //        }
-        //        menuPlayerListView.getItems().add(playerName);
-        //        menuPlayerListView.getSelectionModel().select(playerName);
-        //        Platform.runLater(
-        //                () -> {
-        //                    menuPlayerListView.refresh();
-        //                    menuPlayerListView.scrollTo(playerName);
-        //                });
-        //        menuPlayerListView.setCellFactory(
-        //                param ->
-        //                        new ItemListCell(
-        //                                menuPlayerListView,
-        //                                "\uef67",
-        //                                I18n.INSTANCE.getValue(
-        //
-        // "menu.player.button.new.player.cell.delete.accessibility"),
-        //                                I18n.INSTANCE.getValue(
-        //
-        // "menu.player.button.new.player.dialog.confirmation.title"),
-        //                                I18n.INSTANCE.getValue(
-        //
-        // "menu.player.button.new.player.dialog.confirmation.message"),
-        //                                CONFIRMATION_ALERT));
-
         // menu maxi solve (with submenu)
         menuMaxiButtonSolve.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
@@ -1020,9 +886,13 @@ public final class DefaultView implements IMainView {
         }
     }
 
-    /** Activates the PLAYER menu and sets focus on the player button. */
+    /**
+     * Activates the PLAYER menu, refreshes the player list to reflect potential localization
+     * changes, and sets focus on the player button to assist keyboard and accessibility navigation.
+     */
     public void handleMenuPlayerShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER);
+        menuPlayerListView.refresh();
         menuPlayerButtonPlayer.requestFocus();
     }
 

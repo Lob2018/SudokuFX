@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.viewmodel;
 import java.text.MessageFormat;
 import java.time.LocalDateTime;
 import java.util.Set;
+import java.util.function.Supplier;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;
@@ -21,21 +22,27 @@ import fr.softsf.sudokufx.dto.*;
 import fr.softsf.sudokufx.enums.I18n;
 
 /**
- * ViewModel for the player menu section.
+ * ViewModel for managing player menu UI state and accessibility texts.
  *
- * <p>Provides internationalized accessible texts, tooltips, and labels for each player-related
- * button. Texts automatically update when the application's locale or player name changes.
+ * <p>Holds an observable list of players, the currently selected player, and provides localized
+ * StringBindings for UI accessibility, tooltips, role descriptions, and button texts.
+ *
+ * <p>Uses I18n singleton for localization with automatic updates on locale or selection changes.
  */
 @Component
 public class MenuPlayerViewModel {
 
-    // Liste observable des joueurs (PlayerDto)
-    private final ObservableList<PlayerDto> players = FXCollections.observableArrayList();
+    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
+            "menu.accessibility.role.description.opened";
+    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
+            "menu.accessibility.role.description.closed";
 
-    // Joueur sélectionné (PlayerDto)
+    private final ObservableList<PlayerDto> players = FXCollections.observableArrayList();
     private final ObjectProperty<PlayerDto> selectedPlayer = new SimpleObjectProperty<>();
 
-    // Accessibility bindings
+    private final StringBinding maxiPlayerTooltip;
+    private final StringBinding maxiPlayerRoleDescription;
+
     private final StringBinding playerAccessibleText;
     private final StringBinding playerTooltip;
     private final StringBinding playerRoleDescription;
@@ -53,81 +60,38 @@ public class MenuPlayerViewModel {
     private final StringBinding reduceTooltip;
     private final StringBinding reduceText;
 
+    private final StringBinding cellButtonAccessibleText;
+    private final StringBinding cellConfirmationTitle;
+    private final StringBinding cellConfirmationMessage;
+
     public MenuPlayerViewModel() {
-        // Binding texte accessible du bouton player, utilise le nom du joueur sélectionné
+        // Bindings using helper methods to reduce duplication
         playerAccessibleText =
-                Bindings.createStringBinding(
-                        () -> {
-                            PlayerDto p = selectedPlayer.get();
-                            String name = (p != null) ? p.name() : "";
-                            return MessageFormat.format(
-                                    I18n.INSTANCE.getValue(
-                                            "menu.player.button.player.accessibility"),
-                                    name);
-                        },
-                        I18n.INSTANCE.localeProperty(),
-                        selectedPlayer);
-
+                createFormattedBinding("menu.player.button.player.accessibility", this::playerName);
         playerTooltip =
-                Bindings.createStringBinding(
-                        () -> {
-                            PlayerDto p = selectedPlayer.get();
-                            String name = (p != null) ? p.name() : "";
-                            return MessageFormat.format(
-                                            I18n.INSTANCE.getValue(
-                                                    "menu.player.button.player.accessibility"),
-                                            name)
-                                    + I18n.INSTANCE.getValue(
-                                            "menu.accessibility.role.description.opened");
-                        },
-                        I18n.INSTANCE.localeProperty(),
-                        selectedPlayer);
+                createFormattedAndConcatenatedBinding(
+                        "menu.player.button.player.accessibility",
+                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED);
+        playerRoleDescription = createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED);
 
-        playerRoleDescription = createStringBinding("menu.accessibility.role.description.opened");
+        maxiPlayerTooltip =
+                createFormattedAndConcatenatedBinding(
+                        "menu.player.button.player.accessibility",
+                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED);
+        maxiPlayerRoleDescription = createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED);
 
         editAccessibleText =
-                Bindings.createStringBinding(
-                        () -> {
-                            PlayerDto p = selectedPlayer.get();
-                            String name = (p != null) ? p.name() : "";
-                            return MessageFormat.format(
-                                    I18n.INSTANCE.getValue("menu.player.button.edit.accessibility"),
-                                    name);
-                        },
-                        I18n.INSTANCE.localeProperty(),
-                        selectedPlayer);
-
+                createFormattedBinding("menu.player.button.edit.accessibility", this::playerName);
         editTooltip =
-                Bindings.createStringBinding(
-                        () -> {
-                            PlayerDto p = selectedPlayer.get();
-                            String name = (p != null) ? p.name() : "";
-                            return MessageFormat.format(
-                                            I18n.INSTANCE.getValue(
-                                                    "menu.player.button.edit.accessibility"),
-                                            name)
-                                    + I18n.INSTANCE.getValue(
-                                            "menu.accessibility.role.description.submenu.option");
-                        },
-                        I18n.INSTANCE.localeProperty(),
-                        selectedPlayer);
-
+                createFormattedAndConcatenatedBinding(
+                        "menu.player.button.edit.accessibility",
+                        "menu.accessibility.role.description.submenu.option");
         editRoleDescription =
                 createStringBinding("menu.accessibility.role.description.submenu.option");
 
         newAccessibleText = createStringBinding("menu.player.button.new.player.accessibility");
-
-        newTooltip =
-                Bindings.createStringBinding(
-                        () ->
-                                I18n.INSTANCE.getValue(
-                                                "menu.player.button.new.player.accessibility")
-                                        + I18n.INSTANCE.getValue(
-                                                "menu.accessibility.role.description.submenu.option"),
-                        I18n.INSTANCE.localeProperty());
-
+        newTooltip = createAppendedStringBinding();
         newText = createStringBinding("menu.player.button.new.player.text");
-
         newRoleDescription =
                 createStringBinding("menu.accessibility.role.description.submenu.option");
 
@@ -135,18 +99,66 @@ public class MenuPlayerViewModel {
         reduceTooltip = createStringBinding("menu.player.button.reduce.accessibility");
         reduceText = createStringBinding("menu.player.button.reduce.text");
 
-        // Charger la liste des joueurs
+        cellButtonAccessibleText =
+                createStringBinding("menu.player.button.new.player.cell.delete.accessibility");
+        cellConfirmationTitle =
+                createStringBinding("menu.player.button.new.player.dialog.confirmation.title");
+        cellConfirmationMessage =
+                createStringBinding("menu.player.button.new.player.dialog.confirmation.message");
+
         loadPlayers();
-        // sélectionne le joueur actif
         setSelectedPlayer();
     }
 
+    /**
+     * Creates a formatted localized binding with player name argument. Updates when locale or
+     * selected player changes.
+     */
+    private StringBinding createFormattedBinding(String key, Supplier<String> argSupplier) {
+        return Bindings.createStringBinding(
+                () -> MessageFormat.format(I18n.INSTANCE.getValue(key), argSupplier.get()),
+                I18n.INSTANCE.localeProperty(),
+                selectedPlayer);
+    }
+
+    /**
+     * Creates a localized binding combining a formatted message and suffix. Updates when locale or
+     * selected player changes.
+     */
+    private StringBinding createFormattedAndConcatenatedBinding(String key, String suffixKey) {
+        return Bindings.createStringBinding(
+                () -> {
+                    String name = playerName();
+                    return MessageFormat.format(I18n.INSTANCE.getValue(key), name)
+                            + I18n.INSTANCE.getValue(suffixKey);
+                },
+                I18n.INSTANCE.localeProperty(),
+                selectedPlayer);
+    }
+
+    /** Creates a simple localized binding for a given key. Updates when locale changes. */
     private StringBinding createStringBinding(String key) {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
     }
 
-    // Charge la liste des joueurs (exemple simplifié avec PlayerDto immutables)
+    /** Creates a localized binding by concatenating two keys. Updates when locale changes. */
+    private StringBinding createAppendedStringBinding() {
+        return Bindings.createStringBinding(
+                () ->
+                        I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility")
+                                + I18n.INSTANCE.getValue(
+                                        "menu.accessibility.role.description.submenu.option"),
+                I18n.INSTANCE.localeProperty());
+    }
+
+    /** Returns the name of the currently selected player or empty if none. */
+    private String playerName() {
+        PlayerDto p = selectedPlayer.get();
+        return (p != null) ? p.name() : "";
+    }
+
+    /** Loads test players into the observable list. */
     private void loadPlayers() {
         players.clear();
         players.add(generatePlayerForTests("ANONYME", false));
@@ -156,19 +168,25 @@ public class MenuPlayerViewModel {
         }
     }
 
+    /** Sets the selected player to the one marked as selected or first in the list. */
     private void setSelectedPlayer() {
-        if (players.getFirst().isselected()) selectedPlayer.set(players.getFirst());
-        else {
-            for (PlayerDto p : players) {
-                if (p.isselected()) {
-                    selectedPlayer.set(p);
-                    break;
-                }
-            }
+        if (!players.isEmpty()) {
+            players.stream()
+                    .filter(PlayerDto::isselected)
+                    .findFirst()
+                    .ifPresentOrElse(
+                            selectedPlayer::set, () -> selectedPlayer.set(players.getFirst()));
         }
     }
 
-    PlayerDto generatePlayerForTests(String name, boolean isSelected) {
+    /**
+     * Generates a sample PlayerDto instance for testing purposes.
+     *
+     * @param name the player name
+     * @param isSelected whether the player is selected
+     * @return a PlayerDto populated with test data and the specified name and selection state
+     */
+    private PlayerDto generatePlayerForTests(String name, boolean isSelected) {
         return new PlayerDto(
                 1L,
                 new PlayerLanguageDto(1L, "FR"),
@@ -189,8 +207,6 @@ public class MenuPlayerViewModel {
                 LocalDateTime.now());
     }
 
-    // Propriétés observables
-
     public ObservableList<PlayerDto> getPlayers() {
         return players;
     }
@@ -209,6 +225,14 @@ public class MenuPlayerViewModel {
 
     public StringBinding playerRoleDescriptionProperty() {
         return playerRoleDescription;
+    }
+
+    public StringBinding maxiPlayerTooltipProperty() {
+        return maxiPlayerTooltip;
+    }
+
+    public StringBinding maxiPlayerRoleDescriptionProperty() {
+        return maxiPlayerRoleDescription;
     }
 
     public StringBinding editAccessibleTextProperty() {
@@ -249,5 +273,17 @@ public class MenuPlayerViewModel {
 
     public StringBinding reduceTextProperty() {
         return reduceText;
+    }
+
+    public StringBinding cellButtonAccessibleTextProperty() {
+        return cellButtonAccessibleText;
+    }
+
+    public StringBinding cellConfirmationTitleProperty() {
+        return cellConfirmationTitle;
+    }
+
+    public StringBinding cellConfirmationMessageProperty() {
+        return cellConfirmationMessage;
     }
 }
