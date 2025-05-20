@@ -614,22 +614,18 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonNew
                 .accessibleTextProperty()
                 .bind(menuMaxiViewModel.newAccessibleTextProperty());
-        menuMaxiButtonReduce.setTooltip(new Tooltip());
         menuMaxiButtonReduce
                 .getTooltip()
                 .textProperty()
                 .bind(menuMaxiViewModel.reduceTooltipProperty());
-        menuMaxiButtonLanguage.setTooltip(new Tooltip());
         menuMaxiButtonLanguage
                 .getTooltip()
                 .textProperty()
                 .bind(menuMaxiViewModel.languageTooltipProperty());
-        menuMaxiButtonHelp.setTooltip(new Tooltip());
         menuMaxiButtonHelp
                 .getTooltip()
                 .textProperty()
                 .bind(menuMaxiViewModel.helpTooltipProperty());
-        menuMaxiButtonNew.setTooltip(new Tooltip());
         menuMaxiButtonNew.getTooltip().textProperty().bind(menuMaxiViewModel.newTooltipProperty());
     }
 
