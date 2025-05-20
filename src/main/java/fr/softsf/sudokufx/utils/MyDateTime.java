@@ -20,9 +20,9 @@ public enum MyDateTime {
     private static final Clock clock = Clock.systemDefaultZone();
 
     private final DateTimeFormatter frenchFormatter =
-            DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm", Locale.FRENCH);
+            DateTimeFormatter.ofPattern("dd/MM/yy HH:mm", Locale.FRENCH);
     private final DateTimeFormatter englishFormatter =
-            DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm a", Locale.ENGLISH);
+            DateTimeFormatter.ofPattern("MM/dd/yy HH:mm", Locale.ENGLISH);
 
     /**
      * Returns the current time formatted as "HH:mm:ss".
