@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acb492ba79ff007cb4f65b49b32021fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the BACKGROUND menu and sets focus on the background button.  <br /></td></tr>
 <tr class="separator:acb492ba79ff007cb4f65b49b32021fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6747f353c6b5bb142d46ede70658af2" id="r_ad6747f353c6b5bb142d46ede70658af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6747f353c6b5bb142d46ede70658af2">handleMenuBackupShow</a> ()</td></tr>
-<tr class="memdesc:ad6747f353c6b5bb142d46ede70658af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the BACKUP menu and sets focus on the save button.  <br /></td></tr>
+<tr class="memdesc:ad6747f353c6b5bb142d46ede70658af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the BACKUP menu, refreshes the backup list to ensure the displayed data is up-to-date, and sets focus on the save button to facilitate keyboard navigation and accessibility.  <br /></td></tr>
 <tr class="separator:ad6747f353c6b5bb142d46ede70658af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd0a665fc7b42da2ffdaf42cdd65000" id="r_a7cd0a665fc7b42da2ffdaf42cdd65000"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cd0a665fc7b42da2ffdaf42cdd65000">handleMenuHelpShow</a> ()</td></tr>
 <tr class="memdesc:a7cd0a665fc7b42da2ffdaf42cdd65000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the Help menu dialog with game rules and the application log path.  <br /></td></tr>
@@ -153,11 +153,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a604e9a10d6a80d50ec327abdcda2209e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the MINI menu and hides it after 10 seconds if still active and the button "menuMiniButtonShow" has the focus.  <br /></td></tr>
 <tr class="separator:a604e9a10d6a80d50ec327abdcda2209e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0252b73c4c4584a1e6bedefa1e01a89d" id="r_a0252b73c4c4584a1e6bedefa1e01a89d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0252b73c4c4584a1e6bedefa1e01a89d">handleMenuPlayerShow</a> ()</td></tr>
-<tr class="memdesc:a0252b73c4c4584a1e6bedefa1e01a89d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the PLAYER menu and sets focus on the player button.  <br /></td></tr>
+<tr class="memdesc:a0252b73c4c4584a1e6bedefa1e01a89d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the PLAYER menu, refreshes the player list to reflect potential localization changes, and sets focus on the player button to assist keyboard and accessibility navigation.  <br /></td></tr>
 <tr class="separator:a0252b73c4c4584a1e6bedefa1e01a89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc726938d8cad6af8aec306f9b0b9a3f" id="r_abc726938d8cad6af8aec306f9b0b9a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc726938d8cad6af8aec306f9b0b9a3f">handleMenuSolveShow</a> ()</td></tr>
 <tr class="memdesc:abc726938d8cad6af8aec306f9b0b9a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the SOLVE menu and sets focus on the solve button.  <br /></td></tr>
 <tr class="separator:abc726938d8cad6af8aec306f9b0b9a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769e6c361cff4bc5247bd8bc8ebd6621" id="r_a769e6c361cff4bc5247bd8bc8ebd6621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a769e6c361cff4bc5247bd8bc8ebd6621">handleToggleLanguage</a> ()</td></tr>
+<tr class="memdesc:a769e6c361cff4bc5247bd8bc8ebd6621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches language.  <br /></td></tr>
+<tr class="separator:a769e6c361cff4bc5247bd8bc8ebd6621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d767b0a3c661bf47dd1e1a353bb9bc" id="r_ab4d767b0a3c661bf47dd1e1a353bb9bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4d767b0a3c661bf47dd1e1a353bb9bc">openingMainStage</a> (final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html">ISplashScreenView</a> iSplashScreenView)</td></tr>
 <tr class="memdesc:ab4d767b0a3c661bf47dd1e1a353bb9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the main stage and handles the transition from splash screen to full menu.  <br /></td></tr>
 <tr class="separator:ab4d767b0a3c661bf47dd1e1a353bb9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,17 +189,47 @@ Package Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a2c431d9359cb4450c18901efb05ae447" id="r_a2c431d9359cb4450c18901efb05ae447"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c431d9359cb4450c18901efb05ae447">activeMenuMangerInitialization</a> ()</td></tr>
+<tr class="memdesc:a2c431d9359cb4450c18901efb05ae447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes bindings between each menu pane's visibility and managed state and the corresponding value of the active menu from <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu.">ActiveMenuOrSubmenuViewModel</a>.  <br /></td></tr>
+<tr class="separator:a2c431d9359cb4450c18901efb05ae447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3a20fc1375df0c6c0d09eac69d7d5b3" id="r_aa3a20fc1375df0c6c0d09eac69d7d5b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3a20fc1375df0c6c0d09eac69d7d5b3">applySelectedBackgroundImage</a> (File selectedFile)</td></tr>
 <tr class="memdesc:aa3a20fc1375df0c6c0d09eac69d7d5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the selected background image to the GridPane.  <br /></td></tr>
 <tr class="separator:aa3a20fc1375df0c6c0d09eac69d7d5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a835e8933493835532e24cca7217170eb" id="r_a835e8933493835532e24cca7217170eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a835e8933493835532e24cca7217170eb">bindLevel</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> difficultyLevel, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a> possibilityStarsBox, Button maxiLevel, Label levelName, String levelAccessibilityKey, String levelNameKey, Button miniLevel)</td></tr>
-<tr class="memdesc:a835e8933493835532e24cca7217170eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds UI components for a difficulty-level toggle in both the maxi and mini menus.  <br /></td></tr>
-<tr class="separator:a835e8933493835532e24cca7217170eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2782545a22496fbb6185093a2737b248" id="r_a2782545a22496fbb6185093a2737b248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2782545a22496fbb6185093a2737b248">bindLevel</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a> starsBox, Button maxi, Label label, Button mini)</td></tr>
+<tr class="memdesc:a2782545a22496fbb6185093a2737b248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds UI components related to a specific difficulty level in both the maxi and mini menus.  <br /></td></tr>
+<tr class="separator:a2782545a22496fbb6185093a2737b248"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0d842dec8978f4a7f16e25027a74f3b" id="r_ad0d842dec8978f4a7f16e25027a74f3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad0d842dec8978f4a7f16e25027a74f3b">bindLevelAccessibility</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a> starsBox, Button maxi, Button mini)</td></tr>
+<tr class="memdesc:ad0d842dec8978f4a7f16e25027a74f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds accessibility properties (accessible text and role description) for the specified difficulty level's buttons.  <br /></td></tr>
+<tr class="separator:ad0d842dec8978f4a7f16e25027a74f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5d0a16240ebde5f38e53f35d7aad03" id="r_a3d5d0a16240ebde5f38e53f35d7aad03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d5d0a16240ebde5f38e53f35d7aad03">bindLevelLabelText</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, Label label)</td></tr>
+<tr class="memdesc:a3d5d0a16240ebde5f38e53f35d7aad03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the label's text to the localized name of the specified difficulty level.  <br /></td></tr>
+<tr class="separator:a3d5d0a16240ebde5f38e53f35d7aad03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e221d303609c7e310658abb1a58815" id="r_ae6e221d303609c7e310658abb1a58815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6e221d303609c7e310658abb1a58815">bindLevelSelectedStyling</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, Button maxi, Button mini)</td></tr>
+<tr class="memdesc:ae6e221d303609c7e310658abb1a58815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the pseudo-class ":selected" state of the given buttons to the specified difficulty level.  <br /></td></tr>
+<tr class="separator:ae6e221d303609c7e310658abb1a58815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c94d119491afaed311aa6eefc1234f" id="r_af9c94d119491afaed311aa6eefc1234f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9c94d119491afaed311aa6eefc1234f">bindLevelStarsVisibility</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a> starsBox)</td></tr>
+<tr class="memdesc:af9c94d119491afaed311aa6eefc1234f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the visibility of the stars box to whether the specified difficulty level is selected.  <br /></td></tr>
+<tr class="separator:af9c94d119491afaed311aa6eefc1234f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8056a23171a3cc96672893d680500815" id="r_a8056a23171a3cc96672893d680500815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8056a23171a3cc96672893d680500815">bindLevelTooltipText</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a> starsBox, Button maxi, Button mini)</td></tr>
+<tr class="memdesc:a8056a23171a3cc96672893d680500815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the tooltip text properties of both buttons to the accessible text corresponding to the specified difficulty level to ensure consistency and improve user experience.  <br /></td></tr>
+<tr class="separator:a8056a23171a3cc96672893d680500815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6412e7d21a90c98fa3b40050ec3e30a4" id="r_a6412e7d21a90c98fa3b40050ec3e30a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6412e7d21a90c98fa3b40050ec3e30a4">handleFileImageChooser</a> ()</td></tr>
 <tr class="separator:a6412e7d21a90c98fa3b40050ec3e30a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a9a05a6dbf8f7dda34e11bc1089a88" id="r_aa5a9a05a6dbf8f7dda34e11bc1089a88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5a9a05a6dbf8f7dda34e11bc1089a88">hiddenMenuInitialization</a> ()</td></tr>
+<tr class="memdesc:aa5a9a05a6dbf8f7dda34e11bc1089a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the hidden menu by binding its show button's accessible text and tooltip to the ViewModel.  <br /></td></tr>
+<tr class="separator:aa5a9a05a6dbf8f7dda34e11bc1089a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a576a87b5eaf00c2bd1095be8e17eeb" id="r_a9a576a87b5eaf00c2bd1095be8e17eeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a576a87b5eaf00c2bd1095be8e17eeb">initialize</a> ()</td></tr>
 <tr class="memdesc:a9a576a87b5eaf00c2bd1095be8e17eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the default view.  <br /></td></tr>
 <tr class="separator:a9a576a87b5eaf00c2bd1095be8e17eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f244e76c83f37d4050b585d3991815e" id="r_a8f244e76c83f37d4050b585d3991815e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f244e76c83f37d4050b585d3991815e">levelsMenuInitialization</a> ()</td></tr>
+<tr class="memdesc:a8f244e76c83f37d4050b585d3991815e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes each difficulty level section in the menu by binding UI components to ViewModel properties for EASY, MEDIUM, and DIFFICULT levels.  <br /></td></tr>
+<tr class="separator:a8f244e76c83f37d4050b585d3991815e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0dd12e7969cb6bc61d24f7a4f6ee75" id="r_abd0dd12e7969cb6bc61d24f7a4f6ee75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd0dd12e7969cb6bc61d24f7a4f6ee75">maxiMenuInitialization</a> ()</td></tr>
+<tr class="memdesc:abd0dd12e7969cb6bc61d24f7a4f6ee75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the maxi menu components by binding their labels, accessible texts, and tooltips to the corresponding properties in the ViewModel.  <br /></td></tr>
+<tr class="separator:abd0dd12e7969cb6bc61d24f7a4f6ee75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102802b83cb4b7d16ad9b5647790a805" id="r_a102802b83cb4b7d16ad9b5647790a805"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a102802b83cb4b7d16ad9b5647790a805">miniMenuInitialization</a> ()</td></tr>
+<tr class="memdesc:a102802b83cb4b7d16ad9b5647790a805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the mini menu by binding all buttons' texts and tooltips to their respective ViewModel properties.  <br /></td></tr>
+<tr class="separator:a102802b83cb4b7d16ad9b5647790a805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4269b183d120ae7149f854d53d35f122" id="r_a4269b183d120ae7149f854d53d35f122"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4269b183d120ae7149f854d53d35f122">openingConfigureStage</a> ()</td></tr>
 <tr class="memdesc:a4269b183d120ae7149f854d53d35f122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the primary stage for the full menu view.  <br /></td></tr>
 <tr class="separator:a4269b183d120ae7149f854d53d35f122"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,22 +242,26 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a7c523b99ea737199e64610465f238486" id="r_a7c523b99ea737199e64610465f238486"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c523b99ea737199e64610465f238486">openingShowStage</a> ()</td></tr>
 <tr class="memdesc:a7c523b99ea737199e64610465f238486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the primary stage.  <br /></td></tr>
 <tr class="separator:a7c523b99ea737199e64610465f238486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084dbf4edfe7c82d0eee95e6ff0ee807" id="r_a084dbf4edfe7c82d0eee95e6ff0ee807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a084dbf4edfe7c82d0eee95e6ff0ee807">playerMenuInitialization</a> ()</td></tr>
+<tr class="memdesc:a084dbf4edfe7c82d0eee95e6ff0ee807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes bindings and event listeners for the player menu components.  <br /></td></tr>
+<tr class="separator:a084dbf4edfe7c82d0eee95e6ff0ee807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac7a557b342700c44773bfd5f047bb1" id="r_a8ac7a557b342700c44773bfd5f047bb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ac7a557b342700c44773bfd5f047bb1">saveMenuInitialization</a> ()</td></tr>
+<tr class="memdesc:a8ac7a557b342700c44773bfd5f047bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes bindings and event listeners for the save menu components.  <br /></td></tr>
+<tr class="separator:a8ac7a557b342700c44773bfd5f047bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b219ba0d98d4df2edb74918b2766d16" id="r_a9b219ba0d98d4df2edb74918b2766d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b219ba0d98d4df2edb74918b2766d16">setupListViewClip</a> (ListView&lt;?&gt; listView, Rectangle clipView)</td></tr>
 <tr class="memdesc:a9b219ba0d98d4df2edb74918b2766d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up a rounded clip for a ListView.  <br /></td></tr>
 <tr class="separator:a9b219ba0d98d4df2edb74918b2766d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2d00aeef98aa95dece530ed23c24b6ba" id="r_a2d00aeef98aa95dece530ed23c24b6ba"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d00aeef98aa95dece530ed23c24b6ba">activeMenuOrSubmenuViewModel</a></td></tr>
-<tr class="separator:a2d00aeef98aa95dece530ed23c24b6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca4d62841a15113806fe6ecf1adab5f" id="r_a9ca4d62841a15113806fe6ecf1adab5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ca4d62841a15113806fe6ecf1adab5f">activeMenuOrSubmenuViewModel</a></td></tr>
+<tr class="separator:a9ca4d62841a15113806fe6ecf1adab5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e23a8562c652311671eb08fa160920" id="r_a75e23a8562c652311671eb08fa160920"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html">BackgroundViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75e23a8562c652311671eb08fa160920">backgroundViewModel</a></td></tr>
 <tr class="separator:a75e23a8562c652311671eb08fa160920"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fc3fbbd447447300bc84bae6ae85d25" id="r_a0fc3fbbd447447300bc84bae6ae85d25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html">Coordinator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fc3fbbd447447300bc84bae6ae85d25">coordinator</a></td></tr>
 <tr class="separator:a0fc3fbbd447447300bc84bae6ae85d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6e90d0822c7bf337711385d9df63dfc" id="r_ab6e90d0822c7bf337711385d9df63dfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html">HelpViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6e90d0822c7bf337711385d9df63dfc">helpViewModel</a></td></tr>
 <tr class="separator:ab6e90d0822c7bf337711385d9df63dfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a421ec86da8dbe04e782f0f0138132964" id="r_a421ec86da8dbe04e782f0f0138132964"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_level_view_model.html">LevelViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a421ec86da8dbe04e782f0f0138132964">levelViewModel</a></td></tr>
-<tr class="separator:a421ec86da8dbe04e782f0f0138132964"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8bd4136a381e98a3cfaa8e371dd4fed" id="r_af8bd4136a381e98a3cfaa8e371dd4fed"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8bd4136a381e98a3cfaa8e371dd4fed">menuBackgroundButtonBackground</a></td></tr>
 <tr class="separator:af8bd4136a381e98a3cfaa8e371dd4fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06a994984cdabb550b3c191174fe4923" id="r_a06a994984cdabb550b3c191174fe4923"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06a994984cdabb550b3c191174fe4923">menuBackgroundButtonBackgroundText</a></td></tr>
@@ -241,14 +278,18 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a43f7675242d1e9aadf56e53ae8a2328e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca6d6de30a0e2195734267900da3332f" id="r_aca6d6de30a0e2195734267900da3332f"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca6d6de30a0e2195734267900da3332f">menuHiddenButtonShow</a></td></tr>
 <tr class="separator:aca6d6de30a0e2195734267900da3332f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a112e9d1f4492d5629e16a8921f2a260a" id="r_a112e9d1f4492d5629e16a8921f2a260a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html">MenuHiddenViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112e9d1f4492d5629e16a8921f2a260a">menuHiddenViewModel</a></td></tr>
+<tr class="separator:a112e9d1f4492d5629e16a8921f2a260a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ebe478dfae090b76102a4e4697f678" id="r_a22ebe478dfae090b76102a4e4697f678"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html">MenuLevelViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22ebe478dfae090b76102a4e4697f678">menuLevelViewModel</a></td></tr>
+<tr class="separator:a22ebe478dfae090b76102a4e4697f678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74b0f6de32fa47eb108f544ffe95b826" id="r_a74b0f6de32fa47eb108f544ffe95b826"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74b0f6de32fa47eb108f544ffe95b826">menuMaxiButtonBackground</a></td></tr>
 <tr class="separator:a74b0f6de32fa47eb108f544ffe95b826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addae0f3284a7e3a58dd043db2ee6a4d1" id="r_addae0f3284a7e3a58dd043db2ee6a4d1"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addae0f3284a7e3a58dd043db2ee6a4d1">menuMaxiButtonBackgroundText</a></td></tr>
 <tr class="separator:addae0f3284a7e3a58dd043db2ee6a4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afccaab8cb3377c4cf00cda6125de693d" id="r_afccaab8cb3377c4cf00cda6125de693d"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afccaab8cb3377c4cf00cda6125de693d">menuMaxiButtonBackup</a></td></tr>
 <tr class="separator:afccaab8cb3377c4cf00cda6125de693d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f0539f646799ecc6f7bca208df44b65" id="r_a3f0539f646799ecc6f7bca208df44b65"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f0539f646799ecc6f7bca208df44b65">menuMaxiButtonBackuptext</a></td></tr>
-<tr class="separator:a3f0539f646799ecc6f7bca208df44b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89fb0e4136eb588fd2f804673fe8748f" id="r_a89fb0e4136eb588fd2f804673fe8748f"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89fb0e4136eb588fd2f804673fe8748f">menuMaxiButtonBackupText</a></td></tr>
+<tr class="separator:a89fb0e4136eb588fd2f804673fe8748f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa48228dea179b6daa143e74876e7a038" id="r_aa48228dea179b6daa143e74876e7a038"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa48228dea179b6daa143e74876e7a038">menuMaxiButtonDifficult</a></td></tr>
 <tr class="separator:aa48228dea179b6daa143e74876e7a038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab570345e389eed2709db0d2485db8343" id="r_ab570345e389eed2709db0d2485db8343"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab570345e389eed2709db0d2485db8343">menuMaxiButtonDifficultText</a></td></tr>
@@ -293,6 +334,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a86008e6a374ee4cbe1d1e0920f041fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabe457b290724026a4f38e05f3826f29" id="r_aabe457b290724026a4f38e05f3826f29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabe457b290724026a4f38e05f3826f29">menuMaxiHBoxMediumPossibilities</a></td></tr>
 <tr class="separator:aabe457b290724026a4f38e05f3826f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7666ce1b7d364e5090699a85874ab3ff" id="r_a7666ce1b7d364e5090699a85874ab3ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html">MenuMaxiViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7666ce1b7d364e5090699a85874ab3ff">menuMaxiViewModel</a></td></tr>
+<tr class="separator:a7666ce1b7d364e5090699a85874ab3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65e343f3c49897ca461e4958e52ac4c1" id="r_a65e343f3c49897ca461e4958e52ac4c1"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65e343f3c49897ca461e4958e52ac4c1">menuMiniButtonBackground</a></td></tr>
 <tr class="separator:a65e343f3c49897ca461e4958e52ac4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a012917f5be6a490cc376f20ba8e2a0cf" id="r_a012917f5be6a490cc376f20ba8e2a0cf"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a012917f5be6a490cc376f20ba8e2a0cf">menuMiniButtonBackup</a></td></tr>
@@ -317,6 +360,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab4e03160f0a5f74d3cb8b6871276612c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a3debf06dc5ba2bf8e11a46d5aac4a8" id="r_a1a3debf06dc5ba2bf8e11a46d5aac4a8"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a3debf06dc5ba2bf8e11a46d5aac4a8">menuMiniButtonSolve</a></td></tr>
 <tr class="separator:a1a3debf06dc5ba2bf8e11a46d5aac4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af98b46b6d36c05836d40359afff95b18" id="r_af98b46b6d36c05836d40359afff95b18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html">MenuMiniViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af98b46b6d36c05836d40359afff95b18">menuMiniViewModel</a></td></tr>
+<tr class="separator:af98b46b6d36c05836d40359afff95b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11b536a6d3ba4e9cd2e9dd17d554a243" id="r_a11b536a6d3ba4e9cd2e9dd17d554a243"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11b536a6d3ba4e9cd2e9dd17d554a243">menuPlayerButtonNew</a></td></tr>
 <tr class="separator:a11b536a6d3ba4e9cd2e9dd17d554a243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2665ba303360d46fe73d07beb2c2c422" id="r_a2665ba303360d46fe73d07beb2c2c422"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2665ba303360d46fe73d07beb2c2c422">menuPlayerButtonNewText</a></td></tr>
@@ -333,8 +378,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aaac5c337e0931ee8d56582a43ea2f0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ebf2fc05dce9a36caac24de07c96687" id="r_a6ebf2fc05dce9a36caac24de07c96687"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ebf2fc05dce9a36caac24de07c96687">menuPlayerClipListView</a></td></tr>
 <tr class="separator:a6ebf2fc05dce9a36caac24de07c96687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add201527455ecce3a5ed96a39fa9e7ee" id="r_add201527455ecce3a5ed96a39fa9e7ee"><td class="memItemLeft" align="right" valign="top">ListView&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add201527455ecce3a5ed96a39fa9e7ee">menuPlayerListView</a></td></tr>
-<tr class="separator:add201527455ecce3a5ed96a39fa9e7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dae7dee7493647db75884521f0c814d" id="r_a5dae7dee7493647db75884521f0c814d"><td class="memItemLeft" align="right" valign="top">ListView&lt; PlayerDto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dae7dee7493647db75884521f0c814d">menuPlayerListView</a></td></tr>
+<tr class="separator:a5dae7dee7493647db75884521f0c814d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a417079c989758ab7a06ceda9213fc5a2" id="r_a417079c989758ab7a06ceda9213fc5a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html">MenuPlayerViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a417079c989758ab7a06ceda9213fc5a2">menuPlayerViewModel</a></td></tr>
+<tr class="separator:a417079c989758ab7a06ceda9213fc5a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ec79f01f66721c49b9f97ec8e711d2d" id="r_a9ec79f01f66721c49b9f97ec8e711d2d"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ec79f01f66721c49b9f97ec8e711d2d">menuSaveButtonBackup</a></td></tr>
 <tr class="separator:a9ec79f01f66721c49b9f97ec8e711d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a194af669b5ecd4b952567eca35323bcd" id="r_a194af669b5ecd4b952567eca35323bcd"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a194af669b5ecd4b952567eca35323bcd">menuSaveButtonBackupText</a></td></tr>
@@ -349,8 +396,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aae3ecb127b497e138e26e9351b8c9678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a874a89635d8ef7beb4b227c4eb2f6989" id="r_a874a89635d8ef7beb4b227c4eb2f6989"><td class="memItemLeft" align="right" valign="top">Rectangle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a874a89635d8ef7beb4b227c4eb2f6989">menuSaveClipListView</a></td></tr>
 <tr class="separator:a874a89635d8ef7beb4b227c4eb2f6989"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab94d6f141af1b75115b01a7bcd16a5fe" id="r_ab94d6f141af1b75115b01a7bcd16a5fe"><td class="memItemLeft" align="right" valign="top">ListView&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab94d6f141af1b75115b01a7bcd16a5fe">menuSaveListView</a></td></tr>
-<tr class="separator:ab94d6f141af1b75115b01a7bcd16a5fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a836e6d656e7979441cf6bca16dff3d38" id="r_a836e6d656e7979441cf6bca16dff3d38"><td class="memItemLeft" align="right" valign="top">ListView&lt; GameDto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a836e6d656e7979441cf6bca16dff3d38">menuSaveListView</a></td></tr>
+<tr class="separator:a836e6d656e7979441cf6bca16dff3d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99beab3ecc14d76f097aaa6ac955dc6a" id="r_a99beab3ecc14d76f097aaa6ac955dc6a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html">MenuSaveViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99beab3ecc14d76f097aaa6ac955dc6a">menuSaveViewModel</a></td></tr>
+<tr class="separator:a99beab3ecc14d76f097aaa6ac955dc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9085fa81eca3fa210096312470d23ab0" id="r_a9085fa81eca3fa210096312470d23ab0"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9085fa81eca3fa210096312470d23ab0">menuSolveButtonReduce</a></td></tr>
 <tr class="separator:a9085fa81eca3fa210096312470d23ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab526d84ff66201dad9f020fca4baf4de" id="r_ab526d84ff66201dad9f020fca4baf4de"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab526d84ff66201dad9f020fca4baf4de">menuSolveButtonReduceText</a></td></tr>
@@ -386,13 +435,39 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a8df4c6a576470f1a4a798209b0c74989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedeb29accc3c2e7c3130af2d9b457b30" id="r_aedeb29accc3c2e7c3130af2d9b457b30"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedeb29accc3c2e7c3130af2d9b457b30">MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED</a></td></tr>
 <tr class="separator:aedeb29accc3c2e7c3130af2d9b457b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c5ac54b68441173ab4e73039cb9fdf9" id="r_a2c5ac54b68441173ab4e73039cb9fdf9"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c5ac54b68441173ab4e73039cb9fdf9">MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED</a></td></tr>
-<tr class="separator:a2c5ac54b68441173ab4e73039cb9fdf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default view class of the Sudoku application. </p>
 <p>This class is responsible for displaying and managing the UI. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2c431d9359cb4450c18901efb05ae447" name="a2c431d9359cb4450c18901efb05ae447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c431d9359cb4450c18901efb05ae447">&#9670;&#160;</a></span>activeMenuMangerInitialization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.activeMenuMangerInitialization </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes bindings between each menu pane's visibility and managed state and the corresponding value of the active menu from <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu.">ActiveMenuOrSubmenuViewModel</a>. </p>
+<p>Ensures that only the currently active menu is visible and participates in layout calculations. </p>
+
+</div>
+</div>
 <a id="aa3a20fc1375df0c6c0d09eac69d7d5b3" name="aa3a20fc1375df0c6c0d09eac69d7d5b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3a20fc1375df0c6c0d09eac69d7d5b3">&#9670;&#160;</a></span>applySelectedBackgroundImage()</h2>
 
@@ -426,8 +501,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a835e8933493835532e24cca7217170eb" name="a835e8933493835532e24cca7217170eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a835e8933493835532e24cca7217170eb">&#9670;&#160;</a></span>bindLevel()</h2>
+<a id="a2782545a22496fbb6185093a2737b248" name="a2782545a22496fbb6185093a2737b248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2782545a22496fbb6185093a2737b248">&#9670;&#160;</a></span>bindLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -438,37 +513,27 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void fr.softsf.sudokufx.view.DefaultView.bindLevel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>difficultyLevel</em></span>, </td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a></td>          <td class="paramname"><span class="paramname"><em>possibilityStarsBox</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a></td>          <td class="paramname"><span class="paramname"><em>starsBox</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>maxiLevel</em></span>, </td>
+          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>maxi</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Label</td>          <td class="paramname"><span class="paramname"><em>levelName</em></span>, </td>
+          <td class="paramtype">Label</td>          <td class="paramname"><span class="paramname"><em>label</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>levelAccessibilityKey</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>levelNameKey</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>miniLevel</em></span>&#160;)</td>
+          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>mini</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -478,27 +543,27 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Binds UI components for a difficulty-level toggle in both the maxi and mini menus. </p>
-<p>This method configures visibility, accessibility, tooltips, and styling based on the selected difficulty level.</p>
+<p>Binds UI components related to a specific difficulty level in both the maxi and mini menus. </p>
+<p>This method sets up the following behaviors:</p>
 <ul>
 <li>
-<b>Visibility:</b> Displays stars when the corresponding difficulty level is selected. </li>
+<b>Label:</b> Binds the level name label text to the localized difficulty name. </li>
 <li>
-<b>Accessibility:</b> Updates role descriptions and accessible text for screen readers based on the level. </li>
+<b>Visibility:</b> Shows the stars box only when the level is selected. </li>
 <li>
-<b>Tooltips:</b> Binds the tooltip text to the accessible text for consistency. </li>
+<b>Accessibility:</b> Binds accessible text and role descriptions for screen readers. </li>
 <li>
-<b>Styling:</b> Applies a 'selected' pseudo-class to both buttons when the level is active. </li>
+<b>Tooltip:</b> Synchronizes tooltip text with accessible text for consistency. </li>
+<li>
+<b>Styling:</b> Applies a pseudo-class to indicate selection state on buttons. </li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">difficultyLevel</td><td>The difficulty level to configure. </td></tr>
-    <tr><td class="paramname">possibilityStarsBox</td><td>The container that displays the stars for this difficulty level. </td></tr>
-    <tr><td class="paramname">maxiLevel</td><td>The button in the maxi menu corresponding to this level. </td></tr>
-    <tr><td class="paramname">levelName</td><td>The label showing the level's name in the maxi menu. </td></tr>
-    <tr><td class="paramname">levelAccessibilityKey</td><td>The <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html" title="Utility enum for internationalization (i18n) support.">I18n</a> key used to retrieve the accessibility description for this level. </td></tr>
-    <tr><td class="paramname">levelNameKey</td><td>The <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html" title="Utility enum for internationalization (i18n) support.">I18n</a> key used to retrieve the display name for this level. </td></tr>
-    <tr><td class="paramname">miniLevel</td><td>The button in the mini menu corresponding to this level. </td></tr>
+    <tr><td class="paramname">level</td><td>the difficulty level to bind </td></tr>
+    <tr><td class="paramname">starsBox</td><td>the UI component displaying possibility stars for this level </td></tr>
+    <tr><td class="paramname">maxi</td><td>the button in the maxi menu for this level </td></tr>
+    <tr><td class="paramname">label</td><td>the label showing the difficulty level name in the maxi menu </td></tr>
+    <tr><td class="paramname">mini</td><td>the button in the mini menu for this level </td></tr>
   </table>
   </dd>
 </dl>
@@ -507,8 +572,229 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a835e8933493835532e24cca7217170eb_cgraph.svg" width="450" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a2782545a22496fbb6185093a2737b248_cgraph.svg" width="447" height="336"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="ad0d842dec8978f4a7f16e25027a74f3b" name="ad0d842dec8978f4a7f16e25027a74f3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0d842dec8978f4a7f16e25027a74f3b">&#9670;&#160;</a></span>bindLevelAccessibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.bindLevelAccessibility </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a></td>          <td class="paramname"><span class="paramname"><em>starsBox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>maxi</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>mini</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Binds accessibility properties (accessible text and role description) for the specified difficulty level's buttons. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>the difficulty level whose accessibility properties are bound </td></tr>
+    <tr><td class="paramname">starsBox</td><td>the stars box used for calculating accessible text </td></tr>
+    <tr><td class="paramname">maxi</td><td>the button in the maxi menu </td></tr>
+    <tr><td class="paramname">mini</td><td>the button in the mini menu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3d5d0a16240ebde5f38e53f35d7aad03" name="a3d5d0a16240ebde5f38e53f35d7aad03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d5d0a16240ebde5f38e53f35d7aad03">&#9670;&#160;</a></span>bindLevelLabelText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.bindLevelLabelText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Label</td>          <td class="paramname"><span class="paramname"><em>label</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Binds the label's text to the localized name of the specified difficulty level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>the difficulty level whose label text to bind </td></tr>
+    <tr><td class="paramname">label</td><td>the label to bind </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae6e221d303609c7e310658abb1a58815" name="ae6e221d303609c7e310658abb1a58815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6e221d303609c7e310658abb1a58815">&#9670;&#160;</a></span>bindLevelSelectedStyling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.bindLevelSelectedStyling </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>maxi</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>mini</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Binds the pseudo-class ":selected" state of the given buttons to the specified difficulty level. </p>
+<p>Updates styling immediately and whenever the selected level changes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>the difficulty level to track </td></tr>
+    <tr><td class="paramname">maxi</td><td>the button in the maxi menu </td></tr>
+    <tr><td class="paramname">mini</td><td>the button in the mini menu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af9c94d119491afaed311aa6eefc1234f" name="af9c94d119491afaed311aa6eefc1234f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9c94d119491afaed311aa6eefc1234f">&#9670;&#160;</a></span>bindLevelStarsVisibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.bindLevelStarsVisibility </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a></td>          <td class="paramname"><span class="paramname"><em>starsBox</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Binds the visibility of the stars box to whether the specified difficulty level is selected. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>the difficulty level whose selection state controls visibility </td></tr>
+    <tr><td class="paramname">starsBox</td><td>the stars box to show or hide </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8056a23171a3cc96672893d680500815" name="a8056a23171a3cc96672893d680500815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8056a23171a3cc96672893d680500815">&#9670;&#160;</a></span>bindLevelTooltipText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.bindLevelTooltipText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a></td>          <td class="paramname"><span class="paramname"><em>starsBox</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>maxi</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Button</td>          <td class="paramname"><span class="paramname"><em>mini</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Binds the tooltip text properties of both buttons to the accessible text corresponding to the specified difficulty level to ensure consistency and improve user experience. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>the difficulty level whose tooltip text is bound </td></tr>
+    <tr><td class="paramname">starsBox</td><td>the stars UI component used to compute accessible text </td></tr>
+    <tr><td class="paramname">maxi</td><td>the button in the maxi menu </td></tr>
+    <tr><td class="paramname">mini</td><td>the button in the mini menu </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -635,7 +921,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Activates the BACKUP menu and sets focus on the save button. </p>
+<p>Activates the BACKUP menu, refreshes the backup list to ensure the displayed data is up-to-date, and sets focus on the save button to facilitate keyboard navigation and accessibility. </p>
 
 </div>
 </div>
@@ -717,7 +1003,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Activates the PLAYER menu and sets focus on the player button. </p>
+<p>Activates the PLAYER menu, refreshes the player list to reflect potential localization changes, and sets focus on the player button to assist keyboard and accessibility navigation. </p>
 
 </div>
 </div>
@@ -737,6 +1023,52 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Activates the SOLVE menu and sets focus on the solve button. </p>
+
+</div>
+</div>
+<a id="a769e6c361cff4bc5247bd8bc8ebd6621" name="a769e6c361cff4bc5247bd8bc8ebd6621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a769e6c361cff4bc5247bd8bc8ebd6621">&#9670;&#160;</a></span>handleToggleLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.handleToggleLanguage </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Switches language. </p>
+
+</div>
+</div>
+<a id="aa5a9a05a6dbf8f7dda34e11bc1089a88" name="aa5a9a05a6dbf8f7dda34e11bc1089a88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5a9a05a6dbf8f7dda34e11bc1089a88">&#9670;&#160;</a></span>hiddenMenuInitialization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.hiddenMenuInitialization </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the hidden menu by binding its show button's accessible text and tooltip to the ViewModel. </p>
 
 </div>
 </div>
@@ -770,8 +1102,96 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a9a576a87b5eaf00c2bd1095be8e17eeb_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a9a576a87b5eaf00c2bd1095be8e17eeb_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
+
+</div>
+</div>
+<a id="a8f244e76c83f37d4050b585d3991815e" name="a8f244e76c83f37d4050b585d3991815e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f244e76c83f37d4050b585d3991815e">&#9670;&#160;</a></span>levelsMenuInitialization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.levelsMenuInitialization </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes each difficulty level section in the menu by binding UI components to ViewModel properties for EASY, MEDIUM, and DIFFICULT levels. </p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a8f244e76c83f37d4050b585d3991815e_cgraph.svg" width="100%" height="552"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="abd0dd12e7969cb6bc61d24f7a4f6ee75" name="abd0dd12e7969cb6bc61d24f7a4f6ee75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0dd12e7969cb6bc61d24f7a4f6ee75">&#9670;&#160;</a></span>maxiMenuInitialization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.maxiMenuInitialization </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the maxi menu components by binding their labels, accessible texts, and tooltips to the corresponding properties in the ViewModel. </p>
+
+</div>
+</div>
+<a id="a102802b83cb4b7d16ad9b5647790a805" name="a102802b83cb4b7d16ad9b5647790a805"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102802b83cb4b7d16ad9b5647790a805">&#9670;&#160;</a></span>miniMenuInitialization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.miniMenuInitialization </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the mini menu by binding all buttons' texts and tooltips to their respective ViewModel properties. </p>
 
 </div>
 </div>
@@ -859,11 +1279,11 @@ Static Private Attributes</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html#a5f3d9c5f276a56420d2fdd804dd2cae5">fr.softsf.sudokufx.interfaces.IMainView</a>.</p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_ab4d767b0a3c661bf47dd1e1a353bb9bc_cgraph.svg" width="536" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -923,6 +1343,76 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a084dbf4edfe7c82d0eee95e6ff0ee807" name="a084dbf4edfe7c82d0eee95e6ff0ee807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084dbf4edfe7c82d0eee95e6ff0ee807">&#9670;&#160;</a></span>playerMenuInitialization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.playerMenuInitialization </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes bindings and event listeners for the player menu components. </p>
+<p>Binds accessible texts, tooltips, and displayed texts to the ViewModel. Synchronizes selected player state between the ListView and ViewModel. Sets up the player ListView with custom cells and refreshes UI state. </p>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a084dbf4edfe7c82d0eee95e6ff0ee807_cgraph.svg" width="491" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8ac7a557b342700c44773bfd5f047bb1" name="a8ac7a557b342700c44773bfd5f047bb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac7a557b342700c44773bfd5f047bb1">&#9670;&#160;</a></span>saveMenuInitialization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.saveMenuInitialization </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes bindings and event listeners for the save menu components. </p>
+<p>Binds accessibility texts, tooltips, and labels to the ViewModel. Synchronizes the selected backup between the ListView and the ViewModel. Sets up the ListView with custom backup cells and refreshes UI state. </p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a8ac7a557b342700c44773bfd5f047bb1_cgraph.svg" width="484" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a9b219ba0d98d4df2edb74918b2766d16" name="a9b219ba0d98d4df2edb74918b2766d16"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b219ba0d98d4df2edb74918b2766d16">&#9670;&#160;</a></span>setupListViewClip()</h2>
 
@@ -962,8 +1452,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2d00aeef98aa95dece530ed23c24b6ba" name="a2d00aeef98aa95dece530ed23c24b6ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d00aeef98aa95dece530ed23c24b6ba">&#9670;&#160;</a></span>activeMenuOrSubmenuViewModel</h2>
+<a id="a9ca4d62841a15113806fe6ecf1adab5f" name="a9ca4d62841a15113806fe6ecf1adab5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca4d62841a15113806fe6ecf1adab5f">&#9670;&#160;</a></span>activeMenuOrSubmenuViewModel</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -972,7 +1462,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a> fr.softsf.sudokufx.view.DefaultView.activeMenuOrSubmenuViewModel</td>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a> fr.softsf.sudokufx.view.DefaultView.activeMenuOrSubmenuViewModel</td>
         </tr>
       </table>
   </td>
@@ -981,10 +1471,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <span class="keyword">new</span> <a class="code hl_class" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a>()</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_html"><div class="ttname"><a href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel</a></div><div class="ttdoc">ViewModel responsible for managing the active menu in the application.</div><div class="ttdef"><b>Definition</b> ActiveMenuOrSubmenuViewModel.java:14</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a75e23a8562c652311671eb08fa160920" name="a75e23a8562c652311671eb08fa160920"></a>
@@ -1121,28 +1608,6 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a421ec86da8dbe04e782f0f0138132964" name="a421ec86da8dbe04e782f0f0138132964"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a421ec86da8dbe04e782f0f0138132964">&#9670;&#160;</a></span>levelViewModel</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_level_view_model.html">LevelViewModel</a> fr.softsf.sudokufx.view.DefaultView.levelViewModel</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="afc777bdc926cb53a55055240675bf049" name="afc777bdc926cb53a55055240675bf049"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc777bdc926cb53a55055240675bf049">&#9670;&#160;</a></span>log</h2>
 
@@ -1210,30 +1675,6 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">            <span class="stringliteral">&quot;menu.accessibility.role.description.opened&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a2c5ac54b68441173ab4e73039cb9fdf9" name="a2c5ac54b68441173ab4e73039cb9fdf9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c5ac54b68441173ab4e73039cb9fdf9">&#9670;&#160;</a></span>MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String fr.softsf.sudokufx.view.DefaultView.MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SELECTED</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <span class="stringliteral">&quot;menu.accessibility.role.description.selected&quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1481,6 +1922,50 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a112e9d1f4492d5629e16a8921f2a260a" name="a112e9d1f4492d5629e16a8921f2a260a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112e9d1f4492d5629e16a8921f2a260a">&#9670;&#160;</a></span>menuHiddenViewModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html">MenuHiddenViewModel</a> fr.softsf.sudokufx.view.DefaultView.menuHiddenViewModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a22ebe478dfae090b76102a4e4697f678" name="a22ebe478dfae090b76102a4e4697f678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22ebe478dfae090b76102a4e4697f678">&#9670;&#160;</a></span>menuLevelViewModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html">MenuLevelViewModel</a> fr.softsf.sudokufx.view.DefaultView.menuLevelViewModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac25d02267c238b0781d26e7c3fb85ba3" name="ac25d02267c238b0781d26e7c3fb85ba3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac25d02267c238b0781d26e7c3fb85ba3">&#9670;&#160;</a></span>menuMaxi</h2>
 
@@ -1569,8 +2054,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f0539f646799ecc6f7bca208df44b65" name="a3f0539f646799ecc6f7bca208df44b65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f0539f646799ecc6f7bca208df44b65">&#9670;&#160;</a></span>menuMaxiButtonBackuptext</h2>
+<a id="a89fb0e4136eb588fd2f804673fe8748f" name="a89fb0e4136eb588fd2f804673fe8748f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89fb0e4136eb588fd2f804673fe8748f">&#9670;&#160;</a></span>menuMaxiButtonBackupText</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1579,7 +2064,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Label fr.softsf.sudokufx.view.DefaultView.menuMaxiButtonBackuptext</td>
+          <td class="memname">Label fr.softsf.sudokufx.view.DefaultView.menuMaxiButtonBackupText</td>
         </tr>
       </table>
   </td>
@@ -2075,6 +2560,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7666ce1b7d364e5090699a85874ab3ff" name="a7666ce1b7d364e5090699a85874ab3ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7666ce1b7d364e5090699a85874ab3ff">&#9670;&#160;</a></span>menuMaxiViewModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html">MenuMaxiViewModel</a> fr.softsf.sudokufx.view.DefaultView.menuMaxiViewModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afcbee8c2d3546cce6fd2f0062b8b553b" name="afcbee8c2d3546cce6fd2f0062b8b553b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afcbee8c2d3546cce6fd2f0062b8b553b">&#9670;&#160;</a></span>menuMini</h2>
 
@@ -2361,6 +2868,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af98b46b6d36c05836d40359afff95b18" name="af98b46b6d36c05836d40359afff95b18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af98b46b6d36c05836d40359afff95b18">&#9670;&#160;</a></span>menuMiniViewModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html">MenuMiniViewModel</a> fr.softsf.sudokufx.view.DefaultView.menuMiniViewModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae48913e57ddc9ac64c73f777aff22564" name="ae48913e57ddc9ac64c73f777aff22564"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae48913e57ddc9ac64c73f777aff22564">&#9670;&#160;</a></span>menuPlayer</h2>
 
@@ -2559,8 +3088,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="add201527455ecce3a5ed96a39fa9e7ee" name="add201527455ecce3a5ed96a39fa9e7ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add201527455ecce3a5ed96a39fa9e7ee">&#9670;&#160;</a></span>menuPlayerListView</h2>
+<a id="a5dae7dee7493647db75884521f0c814d" name="a5dae7dee7493647db75884521f0c814d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dae7dee7493647db75884521f0c814d">&#9670;&#160;</a></span>menuPlayerListView</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2569,7 +3098,29 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ListView&lt;String&gt; fr.softsf.sudokufx.view.DefaultView.menuPlayerListView</td>
+          <td class="memname">ListView&lt;PlayerDto&gt; fr.softsf.sudokufx.view.DefaultView.menuPlayerListView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a417079c989758ab7a06ceda9213fc5a2" name="a417079c989758ab7a06ceda9213fc5a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a417079c989758ab7a06ceda9213fc5a2">&#9670;&#160;</a></span>menuPlayerViewModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html">MenuPlayerViewModel</a> fr.softsf.sudokufx.view.DefaultView.menuPlayerViewModel</td>
         </tr>
       </table>
   </td>
@@ -2757,8 +3308,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab94d6f141af1b75115b01a7bcd16a5fe" name="ab94d6f141af1b75115b01a7bcd16a5fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab94d6f141af1b75115b01a7bcd16a5fe">&#9670;&#160;</a></span>menuSaveListView</h2>
+<a id="a836e6d656e7979441cf6bca16dff3d38" name="a836e6d656e7979441cf6bca16dff3d38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836e6d656e7979441cf6bca16dff3d38">&#9670;&#160;</a></span>menuSaveListView</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2767,7 +3318,29 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ListView&lt;String&gt; fr.softsf.sudokufx.view.DefaultView.menuSaveListView</td>
+          <td class="memname">ListView&lt;GameDto&gt; fr.softsf.sudokufx.view.DefaultView.menuSaveListView</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99beab3ecc14d76f097aaa6ac955dc6a" name="a99beab3ecc14d76f097aaa6ac955dc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99beab3ecc14d76f097aaa6ac955dc6a">&#9670;&#160;</a></span>menuSaveViewModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html">MenuSaveViewModel</a> fr.softsf.sudokufx.view.DefaultView.menuSaveViewModel</td>
         </tr>
       </table>
   </td>
@@ -3030,7 +3603,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html">DefaultView</a></li>
-    <li class="footer">Generated on Mon May 12 2025 18:30:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue May 20 2025 19:27:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -7,5 +7,6 @@ var searchData=
   ['toastactions_4',['toastActions',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a1886c0a4adeb229efa1bdeecbbf93254',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],
   ['toasterbutton_5',['ToasterButton',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html#a4097b9477b7aeeeb3dcf11a28e9010ae',1,'fr::softsf::sudokufx::view::components::toaster::ToasterButton']]],
   ['toastervbox_6',['ToasterVBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#ad6b21d3431b96a31e2436a058bb60334',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],
-  ['toastlevels_7',['ToastLevels',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a1652a6bfcff60b521a4757e50c27105a',1,'fr::softsf::sudokufx::enums::ToastLevels']]]
+  ['toastlevels_7',['ToastLevels',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a1652a6bfcff60b521a4757e50c27105a',1,'fr::softsf::sudokufx::enums::ToastLevels']]],
+  ['togglelanguage_8',['toggleLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a67f2ba8f85685181dea0c4a2263a61dc',1,'fr::softsf::sudokufx::navigation::Coordinator']]]
 ];

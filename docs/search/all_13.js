@@ -9,7 +9,7 @@ var searchData=
   ['test_6',['test',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html#a2eca0432ba5e82eeea338615f06d5eea',1,'fr::softsf::sudokufx::viewmodel::FullMenuViewModel']]],
   ['text1_7',['text1',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#a62bb4e5483fa55703a94077290310289',1,'fr::softsf::sudokufx::view::FullMenuView']]],
   ['text2_8',['text2',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ae93f5b019e0e1e5bc4a396e7eb93e071',1,'fr::softsf::sudokufx::view::FullMenuView']]],
-  ['time_5fformatter_9',['TIME_FORMATTER',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html#a79f647541ab7ff352addbfe9997fc4b0',1,'fr::softsf::sudokufx::utils::MyDateTime']]],
+  ['time_5fformatter_9',['TIME_FORMATTER',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html#aaa111b3164388a0d942bd1432da7d2e6',1,'fr::softsf::sudokufx::utils::MyDateTime']]],
   ['toast_10',['toast',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a5a2b9ba93bc7c39ba99256440e3eb52b',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],
   ['toastactions_11',['toastActions',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a1886c0a4adeb229efa1bdeecbbf93254',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],
   ['toaster_12',['toaster',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a97bc1d86e231b15045c3b93c62277935',1,'fr.softsf.sudokufx.view.DefaultView.toaster'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html#ab28f3e51b95f17d3abe97acde463427c',1,'fr.softsf.sudokufx.view.FullMenuView.toaster'],['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_background_view_model_u_test.html#a9bb6e4a8205fe6f4f7ec6a289e25a80c',1,'fr.softsf.sudokufx.common.unit.viewmodel.BackgroundViewModelUTest.toaster']]],
@@ -18,5 +18,6 @@ var searchData=
   ['toastervbox_15',['ToasterVBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html',1,'fr.softsf.sudokufx.view.components.toaster.ToasterVBox'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#ad6b21d3431b96a31e2436a058bb60334',1,'fr.softsf.sudokufx.view.components.toaster.ToasterVBox.ToasterVBox()']]],
   ['toastervbox_2ejava_16',['ToasterVBox.java',['../_toaster_v_box_8java.html',1,'']]],
   ['toastlevels_17',['ToastLevels',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html',1,'fr.softsf.sudokufx.enums.ToastLevels'],['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a1652a6bfcff60b521a4757e50c27105a',1,'fr.softsf.sudokufx.enums.ToastLevels.ToastLevels()']]],
-  ['toastlevels_2ejava_18',['ToastLevels.java',['../_toast_levels_8java.html',1,'']]]
+  ['toastlevels_2ejava_18',['ToastLevels.java',['../_toast_levels_8java.html',1,'']]],
+  ['togglelanguage_19',['toggleLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a67f2ba8f85685181dea0c4a2263a61dc',1,'fr::softsf::sudokufx::navigation::Coordinator']]]
 ];

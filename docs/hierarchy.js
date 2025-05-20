@@ -99,14 +99,20 @@ var hierarchy =
     [ "fr.softsf.sudokufx.configuration.JVMApplicationProperties", "enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html", null ],
     [ "fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties_u_test.html", null ],
     [ "fr.softsf.sudokufx.Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", null ],
-    [ "fr.softsf.sudokufx.viewmodel.LevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_level_view_model.html", null ],
     [ "ListCell", null, [
-      [ "fr.softsf.sudokufx.view.components.list.ItemListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_item_list_cell.html", null ]
+      [ "fr.softsf.sudokufx.view.components.list.GameDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html", null ],
+      [ "fr.softsf.sudokufx.view.components.list.PlayerDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.enums.LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html", null ],
     [ "fr.softsf.sudokufx.model.Menu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html", null ],
     [ "fr.softsf.sudokufx.model.Menu.MenuBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_1_1_menu_builder.html", null ],
-    [ "fr.softsf.sudokufx.utils.MyDateTime", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuLevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuMiniViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", null ],
+    [ "fr.softsf.sudokufx.utils.MyDateTime", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html", null ],
     [ "fr.softsf.sudokufx.common.e2e.MyEnumsE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1e2e_1_1_my_enums_e2_e_test.html", null ],
     [ "fr.softsf.sudokufx.common.unit.utils.MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html", null ],
     [ "fr.softsf.sudokufx.configuration.MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html", null ],

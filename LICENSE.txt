@@ -88,7 +88,7 @@ Lists of 101 third-party dependencies.
      (Apache 2.0) Awaitility (org.awaitility:awaitility:4.2.2 - http://awaitility.org)
      (EDL 1.0) Angus Activation Registries (org.eclipse.angus:angus-activation:2.0.2 - https://github.com/eclipse-ee4j/angus-activation/angus-activation)
      (Apache License, Version 2.0) flyway-core (org.flywaydb:flyway-core:10.20.1 - https://flywaydb.org/flyway-core)
-     (Apache License, Version 2.0) flyway-database-hsqldb (org.flywaydb:flyway-database-hsqldb:11.8.1 - https://flywaydb.org/flyway-database-hsqldb)
+     (Apache License, Version 2.0) flyway-database-hsqldb (org.flywaydb:flyway-database-hsqldb:11.8.2 - https://flywaydb.org/flyway-database-hsqldb)
      (Eclipse Distribution License - v 1.0) JAXB Core (org.glassfish.jaxb:jaxb-core:4.0.5 - https://eclipse-ee4j.github.io/jaxb-ri/)
      (Eclipse Distribution License - v 1.0) JAXB Runtime (org.glassfish.jaxb:jaxb-runtime:4.0.5 - https://eclipse-ee4j.github.io/jaxb-ri/)
      (Eclipse Distribution License - v 1.0) TXW2 Runtime (org.glassfish.jaxb:txw2:4.0.5 - https://eclipse-ee4j.github.io/jaxb-ri/)

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Sets the locale bundle based on the host environment&#39;s language.">
+<g id="a_Node000001"><a xlink:title="Sets the language to match host system (defaulting to English if not French).">
 <polygon fill="#999999" stroke="#666666" points="171.25,-63 0,-63 0,-19 171.25,-19 171.25,-63"/>
 <text text-anchor="start" x="8" y="-49.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.</text>
 <text text-anchor="start" x="8" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.setLanguageBasedOnTheHost</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a95905bab85c6d740e72a2cadd9dde674" target="_top" xlink:title="Gets the language code of the host environment.">
+<g id="a_Node000002"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a95905bab85c6d740e72a2cadd9dde674" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="399.5,-82 207.25,-82 207.25,-50 399.5,-50 399.5,-82"/>
 <text text-anchor="start" x="215.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.</text>
 <text text-anchor="middle" x="303.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.getHostEnvironmentLanguageCode</text>
@@ -41,7 +41,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a568e9c4387340de30da4f6ba1e5e208e" target="_top" xlink:title="Sets the application&#39;s locale based on the provided language code.">
+<g id="a_Node000003"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a568e9c4387340de30da4f6ba1e5e208e" target="_top" xlink:title="Updates the current locale and bundle based on language code.">
 <polygon fill="white" stroke="#666666" points="367.25,-32 239.5,-32 239.5,0 367.25,0 367.25,-32"/>
 <text text-anchor="start" x="247.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.</text>
 <text text-anchor="middle" x="303.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.setLocaleBundle</text>

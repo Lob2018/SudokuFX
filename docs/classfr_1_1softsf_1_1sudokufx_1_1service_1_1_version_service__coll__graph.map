@@ -1,5 +1,3 @@
 <map id="fr.softsf.sudokufx.service.VersionService" name="fr.softsf.sudokufx.service.VersionService">
-<area shape="rect" id="Node000001" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="5,224,227,619"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" title="Component working with date and time operations." alt="" coords="16,5,217,160"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,160,119,207,114,207,114,160"/>
+<area shape="rect" id="Node000001" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="5,5,227,384"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.components.list.PlayerDtoListCell" name="fr.softsf.sudokufx.view.components.list.PlayerDtoListCell">
+<area shape="rect" id="Node000001" title="A custom ListCell for displaying a PlayerDto in a ListView, with a label and a button that removes th..." alt="" coords="5,123,304,629"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="86,5,223,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,90,158,123,152,123,152,90"/>
+</map>

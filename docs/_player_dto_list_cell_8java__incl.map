@@ -1,0 +1,21 @@
+<map id="src/main/java/fr/softsf/sudokufx/view/components/list/PlayerDtoListCell.java" name="src/main/java/fr/softsf/sudokufx/view/components/list/PlayerDtoListCell.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="706,5,890,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,175,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="706,48,470,75,188,115,163,119,162,114,187,109,470,69,705,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="199,120,314,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="706,50,529,76,327,115,312,118,311,113,325,109,528,71,705,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="338,112,516,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="706,63,522,110,521,105,705,57"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="540,120,688,147"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="745,67,653,115,651,110,742,62"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="712,120,884,147"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="801,64,801,104,795,104,795,64"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="908,120,1088,147"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="859,62,959,110,957,115,856,67"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1112,120,1222,147"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="891,56,1100,109,1111,113,1110,118,1099,115,890,61"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1246,120,1400,147"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="891,48,1235,109,1255,114,1254,119,1233,115,890,53"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1425,120,1632,147"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="891,43,1128,71,1413,109,1444,114,1444,120,1412,115,1127,76,890,49"/>
+</map>

@@ -5,5 +5,10 @@ var dir_b56e19f1982a33341ef13b7017338f1f =
     [ "BackgroundViewModel.java", "_background_view_model_8java.html", "_background_view_model_8java" ],
     [ "FullMenuViewModel.java", "_full_menu_view_model_8java.html", "_full_menu_view_model_8java" ],
     [ "HelpViewModel.java", "_help_view_model_8java.html", "_help_view_model_8java" ],
-    [ "LevelViewModel.java", "_level_view_model_8java.html", "_level_view_model_8java" ]
+    [ "MenuHiddenViewModel.java", "_menu_hidden_view_model_8java.html", "_menu_hidden_view_model_8java" ],
+    [ "MenuLevelViewModel.java", "_menu_level_view_model_8java.html", "_menu_level_view_model_8java" ],
+    [ "MenuMaxiViewModel.java", "_menu_maxi_view_model_8java.html", "_menu_maxi_view_model_8java" ],
+    [ "MenuMiniViewModel.java", "_menu_mini_view_model_8java.html", "_menu_mini_view_model_8java" ],
+    [ "MenuPlayerViewModel.java", "_menu_player_view_model_8java.html", "_menu_player_view_model_8java" ],
+    [ "MenuSaveViewModel.java", "_menu_save_view_model_8java.html", "_menu_save_view_model_8java" ]
 ];

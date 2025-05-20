@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" target="_top" xlink:title="Component working with date and time operations.">
+<g id="a_Node000000"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html" target="_top" xlink:title="Enum singleton working with date and time operations.">
 <polygon fill="white" stroke="#666666" points="116.5,-32 0,-32 0,0 116.5,0 116.5,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
 <text text-anchor="middle" x="58.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyDateTime</text>

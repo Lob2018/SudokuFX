@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html#a865b92fa4f733acedd8c87667d4cda10":[1,0,0,0,0,8,2,0,1],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html#a865b92fa4f733acedd8c87667d4cda10":[2,0,0,0,0,7,2,0,1],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html#a9eeee270ccbbc437f38f721e0caf7755":[1,0,0,0,0,8,2,0,3],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html#a9eeee270ccbbc437f38f721e0caf7755":[2,0,0,0,0,7,2,0,3],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html#ae6832115c6305b665df41e74fb8d2a23":[1,0,0,0,0,8,2,0,0],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html#ae6832115c6305b665df41e74fb8d2a23":[2,0,0,0,0,7,2,0,0],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html#af11974c0e7a2778d87b4463521abe942":[1,0,0,0,0,8,2,0,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html#af11974c0e7a2778d87b4463521abe942":[2,0,0,0,0,7,2,0,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html":[1,0,0,0,0,8,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#add5ef5246cddca87aaefe7e679d1c490":[1,0,0,0,0,8,7,6],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#add5ef5246cddca87aaefe7e679d1c490":[2,0,0,0,0,7,7,6],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#aded352ebc512da12882e950376f2e156":[1,0,0,0,0,8,7,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#aded352ebc512da12882e950376f2e156":[2,0,0,0,0,7,7,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#ae02efc633e8bb011cfa1b9058b148b28":[1,0,0,0,0,8,7,12],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#ae02efc633e8bb011cfa1b9058b148b28":[2,0,0,0,0,7,7,12],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software_1_1_software_builder.html":[1,0,0,0,0,8,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software_1_1_software_builder.html":[2,0,0,0,0,7,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software_1_1_software_builder.html#a00c3e3c5c1ef2893ec8853766220db95":[1,0,0,0,0,8,7,0,4],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software_1_1_software_builder.html#a00c3e3c5c1ef2893ec8853766220db95":[2,0,0,0,0,7,7,0,4]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#aded352ebc512da12882e950376f2e156":[2,0,0,0,0,7,7,3]
 };

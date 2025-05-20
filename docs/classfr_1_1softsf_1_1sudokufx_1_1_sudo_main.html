@@ -150,7 +150,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:afa5bb361c3c4da3cef227f656f09c3e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the success of the Spring context initialization task.  <br /></td></tr>
 <tr class="separator:afa5bb361c3c4da3cef227f656f09c3e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b89e0e97248236a98e8bd95f897c20" id="r_a82b89e0e97248236a98e8bd95f897c20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b89e0e97248236a98e8bd95f897c20">initializeCoordinator</a> ()</td></tr>
-<tr class="memdesc:a82b89e0e97248236a98e8bd95f897c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component responsible for controlling navigation and dynamic UI updat...">Coordinator</a> if needed and set his DynamicFontSize.  <br /></td></tr>
+<tr class="memdesc:a82b89e0e97248236a98e8bd95f897c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component responsible for navigation and UI updates in a JavaFX appli...">Coordinator</a> if it is null (i.e., if Spring initialization failed).  <br /></td></tr>
 <tr class="separator:a82b89e0e97248236a98e8bd95f897c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
@@ -265,7 +265,7 @@ Managing FXML view transitions (e.g., SplashScreen, CrashScreen, DefaultScreen) 
 <p>Performs the following:</p>
 <ul>
 <li>
-Attempts to initialize the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component responsible for controlling navigation and dynamic UI updat...">Coordinator</a> </li>
+Attempts to initialize the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component responsible for navigation and UI updates in a JavaFX appli...">Coordinator</a> </li>
 <li>
 Logs the exception </li>
 <li>
@@ -353,7 +353,8 @@ Otherwise, exits the application </li>
 </table>
 </div><div class="memdoc">
 
-<p>Initialize the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component responsible for controlling navigation and dynamic UI updat...">Coordinator</a> if needed and set his DynamicFontSize. </p>
+<p>Initializes the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component responsible for navigation and UI updates in a JavaFX appli...">Coordinator</a> if it is null (i.e., if Spring initialization failed). </p>
+<p>Regardless of initialization, sets the default scene and dynamic font size. </p>
 
 </div>
 </div>
@@ -614,7 +615,7 @@ Handling success or failure outcomes via registered callbacks </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html">SudoMain</a></li>
-    <li class="footer">Generated on Mon May 12 2025 18:30:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue May 20 2025 19:27:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.enums.I18n.setLanguageBasedOnTheHostEnvironment" name="fr.softsf.sudokufx.enums.I18n.setLanguageBasedOnTheHostEnvironment">
-<area shape="rect" id="Node000001" title="Sets the locale bundle based on the host environment&#39;s language." alt="" coords="5,31,234,89"/>
-<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a95905bab85c6d740e72a2cadd9dde674" title="Gets the language code of the host environment." alt="" coords="282,5,538,48"/>
+<area shape="rect" id="Node000001" title="Sets the language to match host system (defaulting to English if not French)." alt="" coords="5,31,234,89"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a95905bab85c6d740e72a2cadd9dde674" title=" " alt="" coords="282,5,538,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,44,266,41,266,46,234,50"/>
-<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a568e9c4387340de30da4f6ba1e5e208e" title="Sets the application&#39;s locale based on the provided language code." alt="" coords="325,72,495,115"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a568e9c4387340de30da4f6ba1e5e208e" title="Updates the current locale and bundle based on language code." alt="" coords="325,72,495,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,70,309,79,309,84,234,76"/>
 </map>

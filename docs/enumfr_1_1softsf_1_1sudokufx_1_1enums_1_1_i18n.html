@@ -107,32 +107,32 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html','
 </div><!--header-->
 <div class="contents">
 
-<p>Utility enum for internationalization (i18n) support.  
+<p>Singleton enum for internationalization (i18n) support.  
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.enums.I18n:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n__coll__graph.svg" width="214" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n__coll__graph.svg" width="214" height="571"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a95905bab85c6d740e72a2cadd9dde674" id="r_a95905bab85c6d740e72a2cadd9dde674"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95905bab85c6d740e72a2cadd9dde674">getHostEnvironmentLanguageCode</a> ()</td></tr>
-<tr class="memdesc:a95905bab85c6d740e72a2cadd9dde674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the language code of the host environment.  <br /></td></tr>
 <tr class="separator:a95905bab85c6d740e72a2cadd9dde674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af96a704a8291d528cf36540be75f15ff" id="r_af96a704a8291d528cf36540be75f15ff"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af96a704a8291d528cf36540be75f15ff">getLanguage</a> ()</td></tr>
-<tr class="memdesc:af96a704a8291d528cf36540be75f15ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current language of the application.  <br /></td></tr>
 <tr class="separator:af96a704a8291d528cf36540be75f15ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adccd81c3937de320cf676fcffb8c6c6f" id="r_adccd81c3937de320cf676fcffb8c6c6f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adccd81c3937de320cf676fcffb8c6c6f">getValue</a> (final String key)</td></tr>
-<tr class="memdesc:adccd81c3937de320cf676fcffb8c6c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the localized string value for a given key.  <br /></td></tr>
+<tr class="memdesc:adccd81c3937de320cf676fcffb8c6c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized string for the given key.  <br /></td></tr>
 <tr class="separator:adccd81c3937de320cf676fcffb8c6c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bdb186dadc686d267f32ba3a6794ae3" id="r_a2bdb186dadc686d267f32ba3a6794ae3"><td class="memItemLeft" align="right" valign="top">ObjectProperty&lt; Locale &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bdb186dadc686d267f32ba3a6794ae3">localeProperty</a> ()</td></tr>
+<tr class="separator:a2bdb186dadc686d267f32ba3a6794ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb113344ba49be51ccd1ffa5ddfd8e68" id="r_aeb113344ba49be51ccd1ffa5ddfd8e68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb113344ba49be51ccd1ffa5ddfd8e68">setLanguageBasedOnTheHostEnvironment</a> ()</td></tr>
-<tr class="memdesc:aeb113344ba49be51ccd1ffa5ddfd8e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the locale bundle based on the host environment's language.  <br /></td></tr>
+<tr class="memdesc:aeb113344ba49be51ccd1ffa5ddfd8e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the language to match host system (defaulting to English if not French).  <br /></td></tr>
 <tr class="separator:aeb113344ba49be51ccd1ffa5ddfd8e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a568e9c4387340de30da4f6ba1e5e208e" id="r_a568e9c4387340de30da4f6ba1e5e208e"><td class="memItemLeft" align="right" valign="top">synchronized <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html">I18n</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a568e9c4387340de30da4f6ba1e5e208e">setLocaleBundle</a> (final String i18n)</td></tr>
-<tr class="memdesc:a568e9c4387340de30da4f6ba1e5e208e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the application's locale based on the provided language code.  <br /></td></tr>
+<tr class="memdesc:a568e9c4387340de30da4f6ba1e5e208e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current locale and bundle based on language code.  <br /></td></tr>
 <tr class="separator:a568e9c4387340de30da4f6ba1e5e208e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -155,6 +155,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:ade85697c0162dee718271d344114c25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeca32735987d339766feb05930950bdd" id="r_aeca32735987d339766feb05930950bdd"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeca32735987d339766feb05930950bdd">I_18_N_PATH</a> = Paths.I18N_PATH.getPath()</td></tr>
 <tr class="separator:aeca32735987d339766feb05930950bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a223eaf33cac816d923bf8140421251d2" id="r_a223eaf33cac816d923bf8140421251d2"><td class="memItemLeft" align="right" valign="top">static final ObjectProperty&lt; Locale &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a223eaf33cac816d923bf8140421251d2">locale</a></td></tr>
+<tr class="separator:a223eaf33cac816d923bf8140421251d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae033470b814a4269a4cafad2c9462752" id="r_ae033470b814a4269a4cafad2c9462752"><td class="memItemLeft" align="right" valign="top">static final Locale&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae033470b814a4269a4cafad2c9462752">LOCALE_EN</a> = Locale.of(&quot;en&quot;, &quot;US&quot;)</td></tr>
 <tr class="separator:ae033470b814a4269a4cafad2c9462752"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54283c00f512c0df49d732597793f796" id="r_a54283c00f512c0df49d732597793f796"><td class="memItemLeft" align="right" valign="top">static final Locale&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54283c00f512c0df49d732597793f796">LOCALE_FR</a> = Locale.of(&quot;fr&quot;, &quot;FR&quot;)</td></tr>
@@ -163,8 +165,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a5b26a726dd15ad234e11a593cc3c75b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Utility enum for internationalization (i18n) support. </p>
-<p>This enum manages language resources and provides methods to switch between languages and retrieve localized strings. </p>
+<div class="textblock"><p>Singleton enum for internationalization (i18n) support. </p>
+<p>Manages language resources and locale synchronization. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6b822a9a2148081d5efefab6ebdd6122" name="a6b822a9a2148081d5efefab6ebdd6122"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6b822a9a2148081d5efefab6ebdd6122">&#9670;&#160;</a></span>[static initializer]()</h2>
@@ -202,10 +204,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Gets the language code of the host environment. </p>
-<p>Uses the default locale to return the language code (e.g., "en" for English, "fr" for French).</p>
-<dl class="section return"><dt>Returns</dt><dd>The language code as a String. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Host system language code. </dd></dl>
 
 </div>
 </div>
@@ -223,9 +222,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Gets the current language of the application. </p>
-<dl class="section return"><dt>Returns</dt><dd>The language code as a String (e.g., "fr" for French, "en" for English) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Current language code ("en", "fr", etc.). </dd></dl>
 
 </div>
 </div>
@@ -244,14 +241,32 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the localized string value for a given key. </p>
+<p>Returns the localized string for the given key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">key</td><td>The String key representing the desired localized string. </td></tr>
+    <tr><td class="paramname">key</td><td>Resource key. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The localized String value or a placeholder if an error occurs. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Translated value or fallback. </dd></dl>
+
+</div>
+</div>
+<a id="a2bdb186dadc686d267f32ba3a6794ae3" name="a2bdb186dadc686d267f32ba3a6794ae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bdb186dadc686d267f32ba3a6794ae3">&#9670;&#160;</a></span>localeProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectProperty&lt; Locale &gt; fr.softsf.sudokufx.enums.I18n.localeProperty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Observable locale property. </dd></dl>
 
 </div>
 </div>
@@ -270,8 +285,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the locale bundle based on the host environment's language. </p>
-<p>If the host environment's language is French ("fr"), uses the default locale bundle. Otherwise, uses the English locale bundle ("EN"). </p>
+<p>Sets the language to match host system (defaulting to English if not French). </p>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -297,15 +311,15 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the application's locale based on the provided language code. </p>
-<p>This method updates the resource bundle used for translations and sets the default locale for the application. If the provided language code is "EN", the locale is set to English (United States). Any other value defaults to French (France).</p>
+<p>Updates the current locale and bundle based on language code. </p>
+<p>"EN" sets English; any other value defaults to French.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">i18n</td><td>The language code ("EN" for English, any other value defaults to French). </td></tr>
+    <tr><td class="paramname">i18n</td><td>Language code. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The singleton instance of <code class="JavaDocCode">I18n</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Singleton instance. </dd></dl>
 
 </div>
 </div>
@@ -412,6 +426,30 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a223eaf33cac816d923bf8140421251d2" name="a223eaf33cac816d923bf8140421251d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a223eaf33cac816d923bf8140421251d2">&#9670;&#160;</a></span>locale</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> final ObjectProperty&lt;Locale&gt; fr.softsf.sudokufx.enums.I18n.locale</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="keyword">new</span> SimpleObjectProperty&lt;&gt;(Locale.getDefault())</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ae033470b814a4269a4cafad2c9462752" name="ae033470b814a4269a4cafad2c9462752"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae033470b814a4269a4cafad2c9462752">&#9670;&#160;</a></span>LOCALE_EN</h2>
 
@@ -487,7 +525,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1enums.html">enums</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html">I18n</a></li>
-    <li class="footer">Generated on Mon May 12 2025 18:30:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue May 20 2025 19:27:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

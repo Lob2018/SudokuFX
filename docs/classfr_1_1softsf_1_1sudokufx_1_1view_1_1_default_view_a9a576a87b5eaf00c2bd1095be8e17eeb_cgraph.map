@@ -1,9 +1,32 @@
 <map id="fr.softsf.sudokufx.view.DefaultView.initialize" name="fr.softsf.sudokufx.view.DefaultView.initialize">
-<area shape="rect" id="Node000001" title="Initializes the default view." alt="" coords="5,39,163,81"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a835e8933493835532e24cca7217170eb" title="Binds UI components for a difficulty&#45;level toggle in both the maxi and mini menus." alt="" coords="232,5,390,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,46,217,38,217,43,163,51"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9b219ba0d98d4df2edb74918b2766d16" title="Sets up a rounded clip for a ListView." alt="" coords="211,72,411,115"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,69,196,74,195,79,163,74"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#a1b3c68f479c79fd4b696a0accebbb014" title=" " alt="" coords="459,5,692,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="390,24,443,24,443,29,390,29"/>
+<area shape="rect" id="Node000001" title="Initializes the default view." alt="" coords="5,221,163,264"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2c431d9359cb4450c18901efb05ae447" title="Initializes bindings between each menu pane&#39;s visibility and managed state and the corresponding valu..." alt="" coords="225,5,430,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,220,138,149,171,109,209,74,215,70,218,74,212,78,174,112,142,152,98,222"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa5a9a05a6dbf8f7dda34e11bc1089a88" title="Initializes the hidden menu by binding its show button&#39;s accessible text and tooltip to the ViewModel..." alt="" coords="211,88,445,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,219,151,179,209,140,222,134,224,139,212,145,154,183,109,223"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a8f244e76c83f37d4050b585d3991815e" title="Initializes each difficulty level section in the menu by binding UI components to ViewModel propertie..." alt="" coords="213,155,443,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="162,219,232,199,233,204,164,224"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#abd0dd12e7969cb6bc61d24f7a4f6ee75" title="Initializes the maxi menu components by binding their labels, accessible texts, and tooltips to the c..." alt="" coords="216,221,440,264"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="163,240,200,240,200,245,163,245"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a102802b83cb4b7d16ad9b5647790a805" title="Initializes the mini menu by binding all buttons&#39; texts and tooltips to their respective ViewModel pr..." alt="" coords="218,288,438,331"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="164,262,233,281,232,286,162,267"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a084dbf4edfe7c82d0eee95e6ff0ee807" title="Initializes bindings and event listeners for the player menu components." alt="" coords="212,355,444,397"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="109,262,154,302,212,340,224,346,222,351,209,345,151,306,105,266"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a8ac7a557b342700c44773bfd5f047bb1" title="Initializes bindings and event listeners for the save menu components." alt="" coords="216,421,440,464"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="98,263,141,334,174,374,212,407,219,412,217,416,209,411,170,377,137,337,93,265"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2782545a22496fbb6185093a2737b248" title="Binds UI components related to a specific difficulty level in both the maxi and mini menus." alt="" coords="514,155,672,197"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="444,173,499,173,499,179,444,179"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ad0d842dec8978f4a7f16e25027a74f3b" title="Binds accessibility properties (accessible text and role description) for the specified difficulty le..." alt="" coords="744,13,969,56"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="617,152,671,109,740,66,754,59,756,64,743,70,674,113,620,156"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3d5d0a16240ebde5f38e53f35d7aad03" title="Binds the label&#39;s text to the localized name of the specified difficulty level." alt="" coords="753,80,960,123"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="671,151,763,125,765,130,672,157"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ae6e221d303609c7e310658abb1a58815" title="Binds the pseudo&#45;class &quot;:selected&quot; state of the given buttons to the specified difficulty level." alt="" coords="756,147,957,205"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="672,173,740,173,740,179,672,179"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af9c94d119491afaed311aa6eefc1234f" title="Binds the visibility of the stars box to whether the specified difficulty level is selected." alt="" coords="741,229,972,272"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="672,195,765,222,763,227,671,201"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a8056a23171a3cc96672893d680500815" title="Binds the tooltip text properties of both buttons to the accessible text corresponding to the specifi..." alt="" coords="750,296,963,339"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="620,196,674,239,743,282,756,288,754,293,740,286,671,243,617,200"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9b219ba0d98d4df2edb74918b2766d16" title="Sets up a rounded clip for a ListView." alt="" coords="493,388,693,431"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="444,388,478,392,477,397,444,393"/>
+<area shape="poly" id="edge15_Node000015_Node000014" title=" " alt="" coords="440,426,477,421,478,426,441,431"/>
 </map>

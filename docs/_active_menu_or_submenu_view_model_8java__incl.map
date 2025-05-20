@@ -1,9 +1,11 @@
 <map id="src/main/java/fr/softsf/sudokufx/viewmodel/ActiveMenuOrSubmenuViewModel.java" name="src/main/java/fr/softsf/sudokufx/viewmodel/ActiveMenuOrSubmenuViewModel.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="202,5,420,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="313,5,530,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,112,193,155"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,67,159,108,157,103,247,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,67,184,110,182,104,325,62"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="216,112,406,155"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,64,314,97,308,97,308,64"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="430,112,624,155"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="376,62,468,103,466,108,374,67"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="391,66,348,104,344,100,387,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="430,112,638,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="456,62,500,100,496,104,453,66"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="662,112,856,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="523,62,673,105,671,110,521,67"/>
 </map>

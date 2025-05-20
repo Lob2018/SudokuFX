@@ -1,5 +1,11 @@
 var NAVTREEINDEX1 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html#ae7a0da63faf21f29f20532d14056d50d":[1,0,0,0,0,2,2,2,2,0],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html#ae7a0da63faf21f29f20532d14056d50d":[2,0,0,0,0,2,2,2,2,0],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html#ae9fdbeb7c5c372151589397e9a69f586":[1,0,0,0,0,2,2,2,2,6],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html#ae9fdbeb7c5c372151589397e9a69f586":[2,0,0,0,0,2,2,2,2,6],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html#af4cd41ddd5623aded8dd8a1146d8dab7":[1,0,0,0,0,2,2,2,2,8],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html#af4cd41ddd5623aded8dd8a1146d8dab7":[2,0,0,0,0,2,2,2,2,8],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html#afc48224e456900c8cf966592deaec52e":[1,0,0,0,0,2,2,2,2,3],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_i18n_u_test.html#afc48224e456900c8cf966592deaec52e":[2,0,0,0,0,2,2,2,2,3],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html":[1,0,0,0,0,2,2,2,3],
@@ -243,11 +249,5 @@ var NAVTREEINDEX1 =
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#a5433d25d0bd37df97983d762cebbbb33":[1,0,0,0,0,3,0,7,2],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#a5433d25d0bd37df97983d762cebbbb33":[2,0,0,0,0,3,0,7,2],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#aaf41fb23adfae77ab3c8afd1b17f9044":[1,0,0,0,0,3,0,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#aaf41fb23adfae77ab3c8afd1b17f9044":[2,0,0,0,0,3,0,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#aeed6e7a4451b95e24e82614284f40bff":[1,0,0,0,0,3,0,7,1],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#aeed6e7a4451b95e24e82614284f40bff":[2,0,0,0,0,3,0,7,1],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html":[1,0,0,0,0,3,0,9],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html":[2,0,0,0,0,3,0,9],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html#a0d803d55145a78d1ea1aa5de73e8b701":[1,0,0,0,0,3,0,9,2],
-"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html#a0d803d55145a78d1ea1aa5de73e8b701":[2,0,0,0,0,3,0,9,2]
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#aaf41fb23adfae77ab3c8afd1b17f9044":[2,0,0,0,0,3,0,7,0]
 };
