@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
 import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
 import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.enums.ScreenSize;
 import fr.softsf.sudokufx.view.components.MyAlert;
 
 /**
@@ -30,7 +31,8 @@ public class HelpViewModel {
     }
 
     public void showHelp() {
-        MyAlert informationAlert = new MyAlert(Alert.AlertType.INFORMATION);
+        MyAlert informationAlert =
+                new MyAlert(Alert.AlertType.INFORMATION, ScreenSize.DISPOSABLE_SIZE.getSize() * .6);
         informationAlert.setTitle(
                 I18n.INSTANCE.getValue("menu.button.help.dialog.information.title"));
         informationAlert.setHeaderText(null);
