@@ -48,15 +48,6 @@ public class PossibilityStarsHBox extends HBox {
     }
 
     /**
-     * Sets the star rating percentage (0–100).
-     *
-     * @param value the new percentage to display
-     */
-    public void setPercentage(int value) {
-        this.percentage.set(value);
-    }
-
-    /**
      * Creates the component with right-aligned layout, 5 star icons, and default styles. Initially
      * hidden and displaying full stars.
      */
