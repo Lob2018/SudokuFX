@@ -78,6 +78,7 @@ public final class DefaultView implements IMainView {
     @Autowired private MenuMaxiViewModel menuMaxiViewModel;
     @Autowired private MenuPlayerViewModel menuPlayerViewModel;
     @Autowired private MenuSaveViewModel menuSaveViewModel;
+    @Autowired private MenuSolveViewModel menuSolveViewModel;
 
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
@@ -181,53 +182,8 @@ public final class DefaultView implements IMainView {
         maxiMenuInitialization();
         playerMenuInitialization();
         saveMenuInitialization();
+        solveMenuInitialization();
 
-        // menu maxi solve (with submenu)
-        menuMaxiButtonSolve.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
-        menuMaxiButtonSolve
-                .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonSolve.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonSolveText.setText(I18n.INSTANCE.getValue("menu.maxi.button.solve.text"));
-        // menu solve
-        menuSolveButtonReduce.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
-        menuSolveButtonReduce
-                .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
-        menuSolveButtonReduceText.setText(I18n.INSTANCE.getValue("menu.solve.button.reduce.text"));
-        // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
-        menuSolveHBoxPossibilities.setVisible(true);
-        menuSolveButtonSolve
-                .accessibleTextProperty()
-                .bind(
-                        menuSolveHBoxPossibilities.formattedTextBinding(
-                                "menu.solve.button.solve.accessibility", false));
-        menuSolveButtonSolve
-                .getTooltip()
-                .textProperty()
-                .bind(
-                        menuSolveHBoxPossibilities.formattedTextBinding(
-                                "menu.solve.button.solve.accessibility", true));
-        menuSolveButtonSolve.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
-        menuSolveButtonSolveText.setText(I18n.INSTANCE.getValue("menu.solve.button.solve.text"));
-
-        menuSolveButtonSolveClear.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility"));
-        menuSolveButtonSolveClear.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuSolveButtonSolveClear
-                .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.solve.button.solve.clear.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
         // menu maxi background (with submenu)
         menuMaxiButtonBackground.setAccessibleText(
                 I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
@@ -291,7 +247,63 @@ public final class DefaultView implements IMainView {
                             backgroundViewModel.updateBackgroundColorAndApply(sudokuFX, newValue);
                         });
         // Managing the active menu
-        activeMenuMangerInitialization();
+        activeMenuManagerInitialization();
+    }
+
+    /**
+     * Initializes bindings for the solve menu components. Binds accessibility texts, tooltips, role
+     * descriptions, and labels to the corresponding ViewModel properties. Sets visibility of UI
+     * elements and synchronizes stars percentage bidirectionally with the ViewModel.
+     */
+    private void solveMenuInitialization() {
+        menuMaxiButtonSolve
+                .accessibleTextProperty()
+                .bind(menuSolveViewModel.menuMaxiAccessibleTextProperty());
+        menuMaxiButtonSolve
+                .getTooltip()
+                .textProperty()
+                .bind(menuSolveViewModel.menuMaxiTooltipProperty());
+        menuMaxiButtonSolve
+                .accessibleRoleDescriptionProperty()
+                .bind(menuSolveViewModel.menuMaxiRoleDescriptionProperty());
+        menuMaxiButtonSolveText.textProperty().bind(menuSolveViewModel.menuMaxiTextProperty());
+        menuSolveButtonReduce
+                .accessibleTextProperty()
+                .bind(menuSolveViewModel.reduceAccessibleTextProperty());
+        menuSolveButtonReduce
+                .getTooltip()
+                .textProperty()
+                .bind(menuSolveViewModel.reduceTooltipProperty());
+        menuSolveButtonReduceText.textProperty().bind(menuSolveViewModel.reduceTextProperty());
+        menuSolveHBoxPossibilities.setVisible(true);
+        menuSolveViewModel
+                .percentageProperty()
+                .bindBidirectional(menuSolveHBoxPossibilities.getPercentage());
+        menuSolveButtonSolve
+                .accessibleTextProperty()
+                .bind(
+                        menuSolveHBoxPossibilities.formattedTextBinding(
+                                "menu.solve.button.solve.accessibility", false));
+        menuSolveButtonSolve
+                .getTooltip()
+                .textProperty()
+                .bind(
+                        menuSolveHBoxPossibilities.formattedTextBinding(
+                                "menu.solve.button.solve.accessibility", true));
+        menuSolveButtonSolve
+                .accessibleRoleDescriptionProperty()
+                .bind(menuSolveViewModel.solveRoleDescriptionProperty());
+        menuSolveButtonSolveText.textProperty().bind(menuSolveViewModel.solveTextProperty());
+        menuSolveButtonSolveClear
+                .accessibleTextProperty()
+                .bind(menuSolveViewModel.solveClearAccessibleTextProperty());
+        menuSolveButtonSolveClear
+                .accessibleRoleDescriptionProperty()
+                .bind(menuSolveViewModel.solveClearRoleDescriptionProperty());
+        menuSolveButtonSolveClear
+                .getTooltip()
+                .textProperty()
+                .bind(menuSolveViewModel.solveClearTooltipProperty());
     }
 
     /**
@@ -391,7 +403,7 @@ public final class DefaultView implements IMainView {
      * corresponding value of the active menu from ActiveMenuOrSubmenuViewModel. Ensures that only
      * the currently active menu is visible and participates in layout calculations.
      */
-    private void activeMenuMangerInitialization() {
+    private void activeMenuManagerInitialization() {
         menuHidden
                 .visibleProperty()
                 .bind(
@@ -726,6 +738,9 @@ public final class DefaultView implements IMainView {
      * <ul>
      *   <li><strong>Label:</strong> Binds the level name label text to the localized difficulty
      *       name.
+     *   <li><strong>Percentage binding:</strong> Binds the percentage property bidirectionally
+     *       between the ViewModel and the stars box, ensuring that both stay synchronized (e.g.,
+     *       for star display updates).
      *   <li><strong>Visibility:</strong> Shows the stars box only when the level is selected.
      *   <li><strong>Accessibility:</strong> Binds accessible text and role descriptions for screen
      *       readers.
@@ -747,6 +762,7 @@ public final class DefaultView implements IMainView {
             Button maxi,
             Label label,
             Button mini) {
+        menuLevelViewModel.percentageProperty().bindBidirectional(starsBox.getPercentage());
         bindLevelLabelText(level, label);
         bindLevelStarsVisibility(level, starsBox);
         bindLevelAccessibility(level, starsBox, maxi, mini);
@@ -879,8 +895,7 @@ public final class DefaultView implements IMainView {
     public void handleEasyLevelShow() {
         // TODO WITH TRUE GRID
         int stars = SecureRandomGenerator.INSTANCE.nextInt(10, 33);
-        menuMaxiHBoxEasyPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
-        menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
+        menuSolveViewModel.setPercentage(stars);
         menuLevelViewModel.updateSelectedLevel(DifficultyLevel.EASY, stars);
     }
 
@@ -888,8 +903,7 @@ public final class DefaultView implements IMainView {
     public void handleMediumLevelShow() {
         // TODO WITH TRUE GRID
         int stars = SecureRandomGenerator.INSTANCE.nextInt(34, 66);
-        menuMaxiHBoxMediumPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
-        menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
+        menuSolveViewModel.setPercentage(stars);
         menuLevelViewModel.updateSelectedLevel(DifficultyLevel.MEDIUM, stars);
     }
 
@@ -897,8 +911,7 @@ public final class DefaultView implements IMainView {
     public void handleDifficultLevelShow() {
         // TODO WITH TRUE GRID
         int stars = SecureRandomGenerator.INSTANCE.nextInt(67, 89);
-        menuMaxiHBoxDifficultPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
-        menuSolveHBoxPossibilities.setHBoxPossibilityStarsFromPercentage(stars);
+        menuSolveViewModel.setPercentage(stars);
         menuLevelViewModel.updateSelectedLevel(DifficultyLevel.DIFFICULT, stars);
     }
 
@@ -969,6 +982,7 @@ public final class DefaultView implements IMainView {
     public void handleMenuSolveShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE);
         menuSolveButtonSolve.requestFocus();
+        //        menuSolveViewModel.setPercentage(50);
     }
 
     /**

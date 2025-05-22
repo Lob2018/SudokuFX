@@ -17,13 +17,15 @@ import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
 
 /**
- * ViewModel for menu difficulty levels, managing the selected difficulty level state and related UI
- * bindings such as labels, accessibility texts, and visibility. Provides reactive properties and
- * bindings for JavaFX views, encapsulating business logic for difficulty selection.
+ * ViewModel for managing difficulty level selection in the menu.
  *
- * <p>This class is a Spring component and intended for dependency injection.
+ * <p>Manages the currently selected difficulty level and related UI bindings including labels,
+ * accessibility texts, and stars completion percentage. Provides reactive properties and bindings
+ * to facilitate JavaFX UI updates in response to state changes.
  *
- * <p>Note: implementation is not final and may evolve.
+ * <p>This class is annotated as a Spring component and designed for dependency injection.
+ *
+ * <p>Note: Implementation may evolve and is not considered final.
  */
 @Component
 public class MenuLevelViewModel {
@@ -41,7 +43,7 @@ public class MenuLevelViewModel {
     }
 
     /**
-     * Updates the selected difficulty level and corresponding stars percentage.
+     * Updates the selected difficulty level and corresponding stars completion percentage.
      *
      * @param level the new difficulty level to select
      * @param percentage the stars completion percentage for this level
@@ -52,22 +54,22 @@ public class MenuLevelViewModel {
     }
 
     /**
-     * Returns a reactive BooleanBinding that is true when the specified difficulty level is
+     * Returns a reactive BooleanBinding indicating whether the given difficulty level is currently
      * selected.
      *
-     * @param level the difficulty level to check
-     * @return a BooleanBinding reflecting selection state
+     * @param level the difficulty level to test
+     * @return a BooleanBinding reflecting the selection state of the level
      */
     public BooleanBinding isSelectedBinding(DifficultyLevel level) {
         return Bindings.createBooleanBinding(() -> selectedLevel.get() == level, selectedLevel);
     }
 
     /**
-     * Creates a StringBinding for the localized label text of the specified difficulty level,
-     * automatically updated when the locale changes.
+     * Creates a StringBinding for the localized label text of the specified difficulty level. This
+     * binding updates automatically when the application locale changes.
      *
      * @param level the difficulty level
-     * @return a reactive binding to the localized label text
+     * @return a StringBinding providing the localized label text
      */
     public StringBinding labelTextBinding(DifficultyLevel level) {
         return Bindings.createStringBinding(
@@ -76,12 +78,12 @@ public class MenuLevelViewModel {
     }
 
     /**
-     * Creates a StringBinding for accessible text describing the stars component, useful for screen
-     * readers. The binding updates on changes to selected level, star percentage, or locale.
+     * Creates a StringBinding for the accessibility text of the stars UI component associated with
+     * a difficulty level. The binding reacts to changes in selection, stars percentage, and locale.
      *
-     * @param starsBox the stars UI component
-     * @param key the localization key for accessibility text
-     * @return a reactive binding to the accessibility text
+     * @param starsBox the stars UI component providing formatted text
+     * @param key the localization key for the accessibility text
+     * @return a StringBinding providing the accessible description for screen readers
      */
     public StringBinding accessibleTextBinding(PossibilityStarsHBox starsBox, String key) {
         return Bindings.createStringBinding(
@@ -92,10 +94,10 @@ public class MenuLevelViewModel {
     }
 
     /**
-     * Returns a StringBinding with the localized role description for the selected difficulty
-     * level, useful for accessibility tools.
+     * Returns a StringBinding for the localized role description text used for accessibility,
+     * describing the selected difficulty level.
      *
-     * @return a reactive binding to the role description text
+     * @return a StringBinding providing the role description text
      */
     public StringBinding selectedRoleDescriptionBinding() {
         return Bindings.createStringBinding(
@@ -104,11 +106,10 @@ public class MenuLevelViewModel {
     }
 
     /**
-     * Returns the i18n localization key used for accessibility descriptions of the specified
-     * difficulty level.
+     * Returns the i18n key used for accessibility descriptions of a given difficulty level.
      *
      * @param level the difficulty level
-     * @return the localization key string
+     * @return the localization key string for accessibility description
      */
     public String getAccessibilityKeyForLevel(DifficultyLevel level) {
         return switch (level) {
@@ -119,11 +120,10 @@ public class MenuLevelViewModel {
     }
 
     /**
-     * Returns the i18n localization key used for the display text of the specified difficulty
-     * level.
+     * Returns the i18n key used for the display text of a given difficulty level.
      *
      * @param level the difficulty level
-     * @return the localization key string
+     * @return the localization key string for the level display text
      */
     private String getLevelNameKey(DifficultyLevel level) {
         return switch (level) {
@@ -131,5 +131,23 @@ public class MenuLevelViewModel {
             case MEDIUM -> "menu.maxi.button.medium.text";
             case DIFFICULT -> "menu.maxi.button.difficult.text";
         };
+    }
+
+    /**
+     * Returns the property representing the stars completion percentage.
+     *
+     * @return the stars completion percentage property
+     */
+    public IntegerProperty percentageProperty() {
+        return starsPercentage;
+    }
+
+    /**
+     * Sets the stars completion percentage.
+     *
+     * @param value the new percentage value to set
+     */
+    public void setPercentage(int value) {
+        this.starsPercentage.set(value);
     }
 }

@@ -18,21 +18,47 @@ import javafx.scene.text.Text;
 import fr.softsf.sudokufx.enums.I18n;
 
 /**
- * A custom HBox displaying star ratings based on a percentage value (default: 100%), with formatted
- * accessibility and tooltip text. Stars are represented by Unicode characters: - Full star: \ue838
- * - Half star: \ue839 - Empty star: \ue83a
+ * A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100).
+ *
+ * <p>Uses Unicode Material Design icons:
+ *
+ * <ul>
+ *   <li>Full star: {@code \uE838}
+ *   <li>Half star: {@code \uE839}
+ *   <li>Empty star: {@code \uE83A}
+ * </ul>
+ *
+ * <p>This component is intended to behave like a visual-only control (e.g., a ProgressBar). It
+ * encapsulates star rendering and provides dynamic, localized accessibility and tooltip bindings
+ * based on the current percentage and locale. Visibility also affects the accessible key.
+ *
+ * <p>MVVM-compliant if treated as a visual leaf component with percentage driven externally.
  */
 public class PossibilityStarsHBox extends HBox {
 
     private final IntegerProperty percentage = new SimpleIntegerProperty(100);
 
+    /**
+     * Returns the percentage property (0–100) used to calculate the star rating display.
+     *
+     * @return the percentage property
+     */
     public IntegerProperty getPercentage() {
         return percentage;
     }
 
     /**
-     * Constructor that sets the alignment, style, and visibility of the HBox. It initializes 5
-     * stars as Text nodes with appropriate style classes.
+     * Sets the star rating percentage (0–100).
+     *
+     * @param value the new percentage to display
+     */
+    public void setPercentage(int value) {
+        this.percentage.set(value);
+    }
+
+    /**
+     * Creates the component with right-aligned layout, 5 star icons, and default styles. Initially
+     * hidden and displaying full stars.
      */
     public PossibilityStarsHBox() {
         super();
@@ -51,41 +77,46 @@ public class PossibilityStarsHBox extends HBox {
             star.getStyleClass().addAll("material", "menuButtonLevelStar", starClass);
             getChildren().add(star);
         }
+        percentage.addListener(
+                (obs, oldVal, newVal) -> {
+                    setHBoxPossibilityStarsFromPercentage(newVal.intValue());
+                });
+        setHBoxPossibilityStarsFromPercentage(percentage.get());
     }
 
     /**
-     * Updates the star ratings based on the given percentage. The percentage determines the number
-     * of full, half, and empty stars displayed.
+     * Updates the star icons to reflect the given percentage (0–100), rounding to the nearest
+     * half-star.
      *
-     * @param percentage The percentage value (from 0 to 100) to set the star ratings.
+     * @param percentage the rating percentage to display
      */
-    public void setHBoxPossibilityStarsFromPercentage(int percentage) {
+    private void setHBoxPossibilityStarsFromPercentage(int percentage) {
         this.percentage.set(percentage);
         double stars = Math.round(percentage * 0.1) / 2.0;
-        List<Text> listTextsStars =
+        List<Text> starsNodes =
                 getChildren().stream()
                         .filter(Text.class::isInstance)
                         .map(Text.class::cast)
                         .toList();
-        for (int i = 0; i < listTextsStars.size(); i++) {
+        for (int i = 0; i < starsNodes.size(); i++) {
             if (stars >= i + 1) {
-                listTextsStars.get(i).setText("\ue838"); // Full star
+                starsNodes.get(i).setText("\uE838"); // full star
             } else if (stars >= i + 0.5) {
-                listTextsStars.get(i).setText("\ue839"); // Half star
+                starsNodes.get(i).setText("\uE839"); // half star
             } else {
-                listTextsStars.get(i).setText("\ue83a"); // Empty star
+                starsNodes.get(i).setText("\uE83A"); // empty star
             }
         }
     }
 
     /**
-     * Creates a string binding based on the current percentage and visibility. If the element is
-     * visible, a ".selected" suffix is added to the key. Optionally appends a role description at
-     * the end of the text.
+     * Returns a StringBinding for a localized, formatted accessibility or tooltip text.
+     * Automatically updates on percentage or locale change.
      *
-     * @param accessibilityKey Base i18n key for the text.
-     * @param appendRoleDescription Whether to append the role description.
-     * @return A string binding with the formatted text.
+     * @param accessibilityKey the base i18n key (e.g., {@code
+     *     "menu.solve.button.solve.accessibility"})
+     * @param appendRoleDescription whether to append a localized role description (e.g., "opened")
+     * @return a StringBinding with the formatted and localized text
      */
     public StringBinding formattedTextBinding(
             String accessibilityKey, boolean appendRoleDescription) {
@@ -100,6 +131,7 @@ public class PossibilityStarsHBox extends HBox {
                                             "menu.accessibility.role.description.opened")
                             : formattedText;
                 },
-                percentage);
+                percentage,
+                I18n.INSTANCE.localeProperty());
     }
 }
