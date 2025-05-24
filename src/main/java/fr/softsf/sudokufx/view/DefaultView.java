@@ -251,11 +251,13 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Initializes bindings for the solve menu components. Binds accessibility texts, tooltips, role
-     * descriptions, and labels to the corresponding ViewModel properties. Sets visibility of UI
-     * elements and binds the stars percentage from the ViewModel to the view.
+     * Sets up bindings between the solve menu UI components and menuSolveViewModel.
+     *
+     * <p>Binds accessibility texts, tooltips, role descriptions, and labels, and synchronizes stars
+     * percentage from menuLevelViewModel to menuSolveViewModel.
      */
     private void solveMenuInitialization() {
+        menuSolveViewModel.percentageProperty().bind(menuLevelViewModel.percentageProperty());
         menuMaxiButtonSolve
                 .accessibleTextProperty()
                 .bind(menuSolveViewModel.menuMaxiAccessibleTextProperty());
@@ -888,28 +890,19 @@ public final class DefaultView implements IMainView {
         clipView.arcHeightProperty().bind(radiusBinding);
     }
 
-    /** Sets the difficulty level to EASY and updates the UI with a random percentage. */
+    /** Sets the difficulty level to EASY and updates related UI state. */
     public void handleEasyLevelShow() {
-        // TODO WITH TRUE GRID
-        int stars = SecureRandomGenerator.INSTANCE.nextInt(10, 33);
-        menuSolveViewModel.setPercentage(stars);
-        menuLevelViewModel.updateSelectedLevel(DifficultyLevel.EASY, stars);
+        menuLevelViewModel.updateSelectedLevel(DifficultyLevel.EASY);
     }
 
-    /** Sets the difficulty level to MEDIUM and updates the UI with a random percentage. */
+    /** Sets the difficulty level to MEDIUM and updates related UI state. */
     public void handleMediumLevelShow() {
-        // TODO WITH TRUE GRID
-        int stars = SecureRandomGenerator.INSTANCE.nextInt(34, 66);
-        menuSolveViewModel.setPercentage(stars);
-        menuLevelViewModel.updateSelectedLevel(DifficultyLevel.MEDIUM, stars);
+        menuLevelViewModel.updateSelectedLevel(DifficultyLevel.MEDIUM);
     }
 
-    /** Sets the difficulty level to DIFFICULT and updates the UI with a random percentage. */
+    /** Sets the difficulty level to DIFFICULT and updates related UI state. */
     public void handleDifficultLevelShow() {
-        // TODO WITH TRUE GRID
-        int stars = SecureRandomGenerator.INSTANCE.nextInt(67, 89);
-        menuSolveViewModel.setPercentage(stars);
-        menuLevelViewModel.updateSelectedLevel(DifficultyLevel.DIFFICULT, stars);
+        menuLevelViewModel.updateSelectedLevel(DifficultyLevel.DIFFICULT);
     }
 
     /**

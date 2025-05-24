@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.enums.DifficultyLevel;
 import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
 
 /**
@@ -27,7 +28,7 @@ import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
 public class MenuLevelViewModel {
 
     private final ObjectProperty<DifficultyLevel> selectedLevel = new SimpleObjectProperty<>(null);
-    private final IntegerProperty starsPercentage = new SimpleIntegerProperty(0);
+    private final IntegerProperty starsPercentage = new SimpleIntegerProperty(100);
 
     /**
      * Returns the property representing the currently selected difficulty level.
@@ -42,11 +43,18 @@ public class MenuLevelViewModel {
      * Updates the selected difficulty level and corresponding stars completion percentage.
      *
      * @param level the new difficulty level to select
-     * @param percentage the stars completion percentage for this level
      */
-    public void updateSelectedLevel(DifficultyLevel level, int percentage) {
+    public void updateSelectedLevel(DifficultyLevel level) {
+        // TODO NEW GRID
+        int stars;
+        switch (level) {
+            case EASY -> stars = SecureRandomGenerator.INSTANCE.nextInt(10, 33);
+            case MEDIUM -> stars = SecureRandomGenerator.INSTANCE.nextInt(34, 66);
+            case DIFFICULT -> stars = SecureRandomGenerator.INSTANCE.nextInt(67, 89);
+            default -> stars = 100;
+        }
         selectedLevel.set(level);
-        starsPercentage.set(percentage);
+        starsPercentage.set(stars);
     }
 
     /**
