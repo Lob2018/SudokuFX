@@ -25,7 +25,6 @@ import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
  *
  * <p>This class is annotated as a Spring component and designed for dependency injection.
  *
- * <p>Note: Implementation may evolve and is not considered final.
  */
 @Component
 public class MenuLevelViewModel {
