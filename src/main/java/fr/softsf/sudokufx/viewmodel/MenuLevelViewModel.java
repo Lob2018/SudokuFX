@@ -22,9 +22,6 @@ import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
  * <p>Manages the currently selected difficulty level and related UI bindings including labels,
  * accessibility texts, and stars completion percentage. Provides reactive properties and bindings
  * to facilitate JavaFX UI updates in response to state changes.
- *
- * <p>This class is annotated as a Spring component and designed for dependency injection.
- *
  */
 @Component
 public class MenuLevelViewModel {
