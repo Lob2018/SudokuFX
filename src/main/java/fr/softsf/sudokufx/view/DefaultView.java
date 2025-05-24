@@ -253,7 +253,7 @@ public final class DefaultView implements IMainView {
     /**
      * Initializes bindings for the solve menu components. Binds accessibility texts, tooltips, role
      * descriptions, and labels to the corresponding ViewModel properties. Sets visibility of UI
-     * elements and synchronizes stars percentage bidirectionally with the ViewModel.
+     * elements and binds the stars percentage from the ViewModel to the view.
      */
     private void solveMenuInitialization() {
         menuMaxiButtonSolve
@@ -276,9 +276,7 @@ public final class DefaultView implements IMainView {
                 .bind(menuSolveViewModel.reduceTooltipProperty());
         menuSolveButtonReduceText.textProperty().bind(menuSolveViewModel.reduceTextProperty());
         menuSolveHBoxPossibilities.setVisible(true);
-        menuSolveViewModel
-                .percentageProperty()
-                .bindBidirectional(menuSolveHBoxPossibilities.getPercentage());
+        menuSolveHBoxPossibilities.getPercentage().bind(menuSolveViewModel.percentageProperty());
         menuSolveButtonSolve
                 .accessibleTextProperty()
                 .bind(
@@ -738,9 +736,8 @@ public final class DefaultView implements IMainView {
      * <ul>
      *   <li><strong>Label:</strong> Binds the level name label text to the localized difficulty
      *       name.
-     *   <li><strong>Percentage binding:</strong> Binds the percentage property bidirectionally
-     *       between the ViewModel and the stars box, ensuring that both stay synchronized (e.g.,
-     *       for star display updates).
+     *   <li><strong>Percentage binding:</strong> Binds the percentage property from the ViewModel
+     *       to the stars box, ensuring that star display updates reflect changes in the ViewModel.
      *   <li><strong>Visibility:</strong> Shows the stars box only when the level is selected.
      *   <li><strong>Accessibility:</strong> Binds accessible text and role descriptions for screen
      *       readers.
@@ -762,7 +759,7 @@ public final class DefaultView implements IMainView {
             Button maxi,
             Label label,
             Button mini) {
-        menuLevelViewModel.percentageProperty().bindBidirectional(starsBox.getPercentage());
+        starsBox.getPercentage().bind(menuLevelViewModel.percentageProperty());
         bindLevelLabelText(level, label);
         bindLevelStarsVisibility(level, starsBox);
         bindLevelAccessibility(level, starsBox, maxi, mini);

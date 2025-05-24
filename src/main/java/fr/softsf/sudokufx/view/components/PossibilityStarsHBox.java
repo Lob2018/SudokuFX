@@ -32,7 +32,8 @@ import fr.softsf.sudokufx.enums.I18n;
  * encapsulates star rendering and provides dynamic, localized accessibility and tooltip bindings
  * based on the current percentage and locale. Visibility also affects the accessible key.
  *
- * <p>MVVM-compliant if treated as a visual leaf component with percentage driven externally.
+ * <p>MVVM-compliant if the percentage property is updated externally; the component does not modify
+ * its bound value.
  */
 public class PossibilityStarsHBox extends HBox {
 
@@ -40,6 +41,8 @@ public class PossibilityStarsHBox extends HBox {
 
     /**
      * Returns the percentage property (0–100) used to calculate the star rating display.
+     *
+     * <p>This property should be updated externally to reflect star rating changes.
      *
      * @return the percentage property
      */
@@ -79,10 +82,12 @@ public class PossibilityStarsHBox extends HBox {
      * Updates the star icons to reflect the given percentage (0–100), rounding to the nearest
      * half-star.
      *
+     * <p>This method does not modify the {@code percentage} property itself. It assumes that
+     * updates to the star display are triggered via listeners on the {@code percentage} property.
+     *
      * @param percentage the rating percentage to display
      */
     private void setHBoxPossibilityStarsFromPercentage(int percentage) {
-        this.percentage.set(percentage);
         double stars = Math.round(percentage * 0.1) / 2.0;
         List<Text> starsNodes =
                 getChildren().stream()
