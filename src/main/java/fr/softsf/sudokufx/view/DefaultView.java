@@ -176,6 +176,16 @@ public final class DefaultView implements IMainView {
         saveMenuInitialization();
         solveMenuInitialization();
         backgroundMenuInitialization();
+
+        // New version
+        menuMaxiButtonNewText.textProperty().bind(menuMaxiViewModel.newTextProperty());
+        menuMaxiButtonNew
+                .accessibleTextProperty()
+                .bind(menuMaxiViewModel.newAccessibleTextProperty());
+        menuMaxiButtonNew.getTooltip().textProperty().bind(menuMaxiViewModel.newTooltipProperty());
+        menuMiniButtonNew.textProperty().bind(menuMiniViewModel.newAccessibleTextProperty());
+        menuMiniButtonNew.getTooltip().textProperty().bind(menuMiniViewModel.newTooltipProperty());
+
         activeMenuManagerInitialization();
     }
 
@@ -618,7 +628,6 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonLanguageIso.textProperty().bind(menuMaxiViewModel.languageIsoProperty());
         menuMaxiButtonLanguageText.textProperty().bind(menuMaxiViewModel.languageTextProperty());
         menuMaxiButtonHelpText.textProperty().bind(menuMaxiViewModel.helpTextProperty());
-        menuMaxiButtonNewText.textProperty().bind(menuMaxiViewModel.newTextProperty());
         menuMaxiButtonReduce
                 .accessibleTextProperty()
                 .bind(menuMaxiViewModel.reduceAccessibleTextProperty());
@@ -628,9 +637,6 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonHelp
                 .accessibleTextProperty()
                 .bind(menuMaxiViewModel.helpAccessibleTextProperty());
-        menuMaxiButtonNew
-                .accessibleTextProperty()
-                .bind(menuMaxiViewModel.newAccessibleTextProperty());
         menuMaxiButtonReduce
                 .getTooltip()
                 .textProperty()
@@ -643,7 +649,6 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .textProperty()
                 .bind(menuMaxiViewModel.helpTooltipProperty());
-        menuMaxiButtonNew.getTooltip().textProperty().bind(menuMaxiViewModel.newTooltipProperty());
     }
 
     /**
@@ -718,8 +723,6 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .textProperty()
                 .bind(menuMiniViewModel.helpTooltipProperty());
-        menuMiniButtonNew.textProperty().bind(menuMiniViewModel.newAccessibleTextProperty());
-        menuMiniButtonNew.getTooltip().textProperty().bind(menuMiniViewModel.newTooltipProperty());
     }
 
     /**
