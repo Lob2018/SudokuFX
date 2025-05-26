@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Creates a StringBinding for accessible text describing the stars component, useful for screen readers...">
+<g id="a_Node000001"><a xlink:title="Creates a StringBinding for the accessibility text of the stars UI component associated with a diffic...">
 <polygon fill="#999999" stroke="#666666" points="179.5,-63 0,-63 0,-19 179.5,-19 179.5,-63"/>
 <text text-anchor="start" x="8" y="-49.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="8" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuLevelViewModel.accessibleText</text>
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#ae6fca9d929abf2f6009d615bf270fb24" target="_top" xlink:title="Creates a string binding based on the current percentage and visibility.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#ae6fca9d929abf2f6009d615bf270fb24" target="_top" xlink:title="Returns a StringBinding for a localized, formatted accessibility or tooltip text.">
 <polygon fill="white" stroke="#666666" points="419.75,-82 215.5,-82 215.5,-50 419.75,-50 419.75,-82"/>
 <text text-anchor="start" x="223.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
 <text text-anchor="middle" x="317.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PossibilityStarsHBox.formattedTextBinding</text>
@@ -41,7 +41,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#a1b3c68f479c79fd4b696a0accebbb014" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#a1b3c68f479c79fd4b696a0accebbb014" target="_top" xlink:title="Returns the percentage property (0–100) used to calculate the star rating display.">
 <polygon fill="white" stroke="#666666" points="405.12,-32 230.12,-32 230.12,0 405.12,0 405.12,-32"/>
 <text text-anchor="start" x="238.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
 <text text-anchor="middle" x="317.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PossibilityStarsHBox.getPercentage</text>

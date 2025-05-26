@@ -1,7 +1,7 @@
 var searchData=
 [
   ['accessibletextbinding_0',['accessibleTextBinding',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a2534445f2247fda713a1b90d2e194d91',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
-  ['activemenumangerinitialization_1',['activeMenuMangerInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2c431d9359cb4450c18901efb05ae447',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['activemenumanagerinitialization_1',['activeMenuManagerInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a842f4799fbccb6507d669da06f95554c',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['addgame_2',['addGame',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7690134cf62468d85216a67d1686dc7',1,'fr::softsf::sudokufx::model::Player']]],
   ['addtoast_3',['addToast',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#ac95cfb708e84f566bb41d6ca5f9d1ccf',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],
   ['addtoastwithduration_4',['addToastWithDuration',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a528bc1905d86874ca3cda73c953d4037',1,'fr::softsf::sudokufx::view::components::toaster::ToasterVBox']]],

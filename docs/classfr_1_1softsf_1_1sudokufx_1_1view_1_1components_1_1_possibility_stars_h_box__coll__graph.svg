@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="A custom HBox displaying star ratings based on a percentage value (default: 100%),...">
+<g id="a_Node000001"><a xlink:title="A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100).">
 <polygon fill="#999999" stroke="none" points="166.25,-160 0,-160 0,0 166.25,0 166.25,-160"/>
 <text text-anchor="start" x="4" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
 <text text-anchor="start" x="36.62" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">PossibilityStarsHBox</text>
@@ -37,7 +37,7 @@
 <text text-anchor="start" x="16.12" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00"> boolean appendRoleDescription)</text>
 <text text-anchor="start" x="5.06" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="16.12" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">IntegerProperty getPercentage()</text>
-<text text-anchor="start" x="5.06" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="6.56" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="16.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHBoxPossibilityStars</text>
 <text text-anchor="start" x="16.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">FromPercentage(int percentage)</text>
 <polygon fill="#666666" stroke="#666666" points="0,-130 0,-130 166.25,-130 166.25,-130 0,-130"/>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.common.unit.viewmodel.BackgroundViewModelUTest" name="fr.softsf.sudokufx.common.unit.viewmodel.BackgroundViewModelUTest">
+<map id="fr.softsf.sudokufx.common.unit.viewmodel.MenuBackgroundViewModelUTest" name="fr.softsf.sudokufx.common.unit.viewmodel.MenuBackgroundViewModelUTest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="270,1127,531,1287"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html" title="ViewModel for managing and applying background (color and image) to a GridPane." alt="" coords="5,348,243,1063"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,1042,257,1061,298,1113,294,1116,253,1064,241,1045"/>

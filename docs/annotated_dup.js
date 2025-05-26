@@ -35,7 +35,7 @@ var annotated_dup =
                 [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_spring_context_initializer_u_test" ]
               ] ],
               [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel.html", [
-                [ "BackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_background_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_background_view_model_u_test" ]
+                [ "MenuBackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test" ]
               ] ]
             ] ]
           ] ],
@@ -135,6 +135,7 @@ var annotated_dup =
             [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size_change_e2_e_test" ],
             [ "FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager" ],
             [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test" ],
+            [ "ImageUtils", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_image_utils.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_image_utils" ],
             [ "MyDateTime", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html", "enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time" ],
             [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test" ],
             [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test" ],
@@ -164,15 +165,16 @@ var annotated_dup =
               [ "CurrentPlayerState", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared_1_1_current_player_state.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared_1_1_current_player_state" ]
             ] ],
             [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
-            [ "BackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model" ],
             [ "FullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model" ],
             [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],
+            [ "MenuBackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model" ],
             [ "MenuHiddenViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model" ],
             [ "MenuLevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model" ],
             [ "MenuMaxiViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model" ],
             [ "MenuMiniViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model" ],
             [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model" ],
-            [ "MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model" ]
+            [ "MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model" ],
+            [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ]
           ] ],
           [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1_launcher" ],
           [ "SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main" ]

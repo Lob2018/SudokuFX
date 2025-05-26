@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.common.unit.viewmodel.BackgroundViewModelUTest.givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated" name="fr.softsf.sudokufx.common.unit.viewmodel.BackgroundViewModelUTest.givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated">
+<map id="fr.softsf.sudokufx.common.unit.viewmodel.MenuBackgroundViewModelUTest.givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated" name="fr.softsf.sudokufx.common.unit.viewmodel.MenuBackgroundViewModelUTest.givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,212,336,287"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a6ac417af68b4adceb174056b41a2ac62" title="Initializes the GridPane background with either a predefined color or image." alt="" coords="384,228,577,271"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="336,247,368,247,368,252,336,252"/>

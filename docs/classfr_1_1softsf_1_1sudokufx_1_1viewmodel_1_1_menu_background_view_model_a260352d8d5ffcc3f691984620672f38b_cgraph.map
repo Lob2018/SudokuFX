@@ -1,0 +1,32 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.handleFileImageChooser" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.handleFileImageChooser">
+<area shape="rect" id="Node000001" title="Handles image file selection by validating the file format and starting the image loading process." alt="" coords="5,68,255,127"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#ac95cfb708e84f566bb41d6ca5f9d1ccf" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="945,72,1222,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,90,548,82,897,83,930,84,930,89,897,88,548,88,255,95"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a9907e8c5d60e1b4f0b748cf3dc197e1c" title="Starts the asynchronous image loading and resizing task." alt="" coords="303,135,553,177"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="256,119,302,128,301,134,255,125"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a37d80e32206ddf4e5ea31e6205b08acd" title="Sets the accessibility text for the toast based on its level." alt="" coords="1270,72,1546,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1222,91,1254,91,1254,96,1222,96"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#acbc99d9f5ededd3b6a84ab864ec79171" title="Sets the style of the toast based on its level." alt="" coords="1270,5,1546,48"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="1190,69,1285,49,1287,54,1191,74"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#abbd390731ca047cc6010818f5d461dbd" title="Sets a timer to automatically remove the toast after a specified duration." alt="" coords="1270,139,1546,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="1191,113,1287,132,1285,138,1190,118"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a8cdb11d9f616bd6f835cafbf5f28bce7" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="1594,72,1870,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1547,91,1578,91,1578,96,1547,96"/>
+<area shape="rect" id="Node000006" href="$enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a37cf79bc87b16f23dc854d3de19d331b" title=" " alt="" coords="1647,5,1817,48"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1547,24,1631,24,1631,29,1547,29"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="506,131,601,112,771,96,930,90,930,95,771,101,601,117,507,137"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#aa52464dc847a4a6e2d9141839f230037" title="Called upon successful completion of the image loading task." alt="" coords="615,127,883,185"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="553,153,599,153,599,159,553,159"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html#a51a5a2c154472ae3fd1943c7ca446cf2" title="Shows or hides the spinner." alt="" coords="967,209,1200,252"/>
+<area shape="poly" id="edge18_Node000008_Node000011" title=" " alt="" coords="455,176,519,222,559,245,602,261,652,273,703,279,806,280,904,269,988,253,989,259,905,275,807,285,703,284,651,278,600,267,557,250,516,227,452,180"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#aa381c1f7620cd458dc3f89b7e106e3e4" title="Called when the image loading task fails." alt="" coords="601,209,897,252"/>
+<area shape="poly" id="edge14_Node000008_Node000012" title=" " alt="" coords="520,175,602,195,636,203,635,208,600,200,519,181"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="883,128,951,115,952,121,884,133"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a4927d5647d977b8b2e3a3a84f51bea4e" title="Schedules the current toast for removal after a short delay." alt="" coords="945,139,1222,181"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="884,155,930,155,930,161,884,160"/>
+<area shape="poly" id="edge13_Node000009_Node000011" title=" " alt="" coords="884,183,971,203,970,208,883,189"/>
+<area shape="poly" id="edge12_Node000010_Node000007" title=" " alt="" coords="1222,157,1254,157,1254,163,1222,163"/>
+<area shape="poly" id="edge15_Node000012_Node000002" title=" " alt="" coords="876,206,896,195,911,179,919,161,927,142,944,125,950,120,953,125,947,129,931,145,924,163,916,182,899,199,878,211"/>
+<area shape="poly" id="edge16_Node000012_Node000010" title=" " alt="" coords="853,206,964,182,965,188,854,211"/>
+<area shape="poly" id="edge17_Node000012_Node000011" title=" " alt="" coords="898,228,952,228,952,233,898,233"/>
+</map>

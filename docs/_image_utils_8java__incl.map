@@ -1,0 +1,19 @@
+<map id="src/main/java/fr/softsf/sudokufx/utils/ImageUtils.java" name="src/main/java/fr/softsf/sudokufx/utils/ImageUtils.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="663,5,864,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,90,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="663,33,547,39,407,51,254,70,103,99,93,101,92,96,102,93,253,65,406,46,547,34,662,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="114,104,288,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="663,44,493,68,300,99,275,103,274,98,299,93,492,63,662,39"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="312,96,519,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="683,51,513,94,511,89,681,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="544,96,751,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="738,51,688,88,685,84,735,46"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="776,96,983,139"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="792,46,842,84,839,88,789,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1007,104,1240,131"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="849,46,1058,97,1057,102,847,51"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1264,104,1426,131"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="865,37,1046,61,1253,93,1276,98,1275,103,1252,99,1045,66,864,42"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1450,96,1621,139"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="865,32,1120,54,1276,72,1435,93,1435,98,1275,77,1119,60,864,38"/>
+</map>

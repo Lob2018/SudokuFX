@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModel.labelTextBinding" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModel.labelTextBinding">
-<area shape="rect" id="Node000001" title="Creates a StringBinding for the localized label text of the specified difficulty level,..." alt="" coords="5,5,253,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#aa1425d8463b87749afe0f822c34fe8b9" title="Returns the i18n localization key used for the display text of the specified difficulty level." alt="" coords="301,5,560,48"/>
+<area shape="rect" id="Node000001" title="Creates a StringBinding for the localized label text of the specified difficulty level." alt="" coords="5,5,253,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#aa1425d8463b87749afe0f822c34fe8b9" title="Returns the i18n key used for the display text of a given difficulty level." alt="" coords="301,5,560,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,24,285,24,285,29,253,29"/>
 </map>

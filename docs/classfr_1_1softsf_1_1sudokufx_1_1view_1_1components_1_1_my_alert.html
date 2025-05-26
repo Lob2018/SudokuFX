@@ -99,40 +99,50 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.view.components.MyAlert Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>A custom alert class that extends the standard JavaFX Alert.  
+<p>A styled JavaFX alert dialog with optional sizing and custom appearance.  
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for fr.softsf.sudokufx.view.components.MyAlert:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert__inherit__graph.svg" width="232" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert__inherit__graph.svg" width="232" height="304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.view.components.MyAlert:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert__coll__graph.svg" width="232" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert__coll__graph.svg" width="232" height="304"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a44de9947af823d3fe06c65dba64d6890" id="r_a44de9947af823d3fe06c65dba64d6890"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44de9947af823d3fe06c65dba64d6890">MyAlert</a> (AlertType alertType)</td></tr>
-<tr class="memdesc:a44de9947af823d3fe06c65dba64d6890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a custom alert dialog with specific styling.  <br /></td></tr>
+<tr class="memdesc:a44de9947af823d3fe06c65dba64d6890"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a styled alert with automatic sizing.  <br /></td></tr>
 <tr class="separator:a44de9947af823d3fe06c65dba64d6890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2f808905d83cf94696cc4bd661f3a3" id="r_a2b2f808905d83cf94696cc4bd661f3a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b2f808905d83cf94696cc4bd661f3a3">MyAlert</a> (AlertType alertType, double size)</td></tr>
+<tr class="memdesc:a2b2f808905d83cf94696cc4bd661f3a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a styled alert with a fixed size.  <br /></td></tr>
+<tr class="separator:a2b2f808905d83cf94696cc4bd661f3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6173a6b1ce018c24ee4ba0981d9edc9d" id="r_a6173a6b1ce018c24ee4ba0981d9edc9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6173a6b1ce018c24ee4ba0981d9edc9d">initDialog</a> (Double size)</td></tr>
+<tr class="memdesc:a6173a6b1ce018c24ee4ba0981d9edc9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the alert with optional size and visual styling.  <br /></td></tr>
+<tr class="separator:a6173a6b1ce018c24ee4ba0981d9edc9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A custom alert class that extends the standard JavaFX Alert. </p>
-<p>Provides additional styling to the dialog, such as: - A radial gradient background. - White text color for the content. </p>
+<div class="textblock"><p>A styled JavaFX alert dialog with optional sizing and custom appearance. </p>
+<p>Applies a radial gradient background, white text, and a custom window icon. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a44de9947af823d3fe06c65dba64d6890" name="a44de9947af823d3fe06c65dba64d6890"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44de9947af823d3fe06c65dba64d6890">&#9670;&#160;</a></span>MyAlert()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44de9947af823d3fe06c65dba64d6890">&#9670;&#160;</a></span>MyAlert() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,10 +156,88 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a custom alert dialog with specific styling. </p>
+<p>Creates a styled alert with automatic sizing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">alertType</td><td>The type of alert (e.g., INFORMATION, CONFIRMATION, etc.) </td></tr>
+    <tr><td class="paramname">alertType</td><td>the alert type (e.g., INFORMATION, CONFIRMATION) </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert_a44de9947af823d3fe06c65dba64d6890_cgraph.svg" width="524" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2b2f808905d83cf94696cc4bd661f3a3" name="a2b2f808905d83cf94696cc4bd661f3a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b2f808905d83cf94696cc4bd661f3a3">&#9670;&#160;</a></span>MyAlert() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fr.softsf.sudokufx.view.components.MyAlert.MyAlert </td>
+          <td>(</td>
+          <td class="paramtype">AlertType</td>          <td class="paramname"><span class="paramname"><em>alertType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a styled alert with a fixed size. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alertType</td><td>the alert type (e.g., INFORMATION, CONFIRMATION) </td></tr>
+    <tr><td class="paramname">size</td><td>the fixed width and height for the dialog pane </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert_a2b2f808905d83cf94696cc4bd661f3a3_cgraph.svg" width="524" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6173a6b1ce018c24ee4ba0981d9edc9d" name="a6173a6b1ce018c24ee4ba0981d9edc9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6173a6b1ce018c24ee4ba0981d9edc9d">&#9670;&#160;</a></span>initDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.components.MyAlert.initDialog </td>
+          <td>(</td>
+          <td class="paramtype">Double</td>          <td class="paramname"><span class="paramname"><em>size</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the alert with optional size and visual styling. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>the optional size; if null, the dialog uses default sizing </td></tr>
   </table>
   </dd>
 </dl>
@@ -165,7 +253,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html">components</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html">MyAlert</a></li>
-    <li class="footer">Generated on Tue May 20 2025 19:27:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon May 26 2025 13:42:35 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

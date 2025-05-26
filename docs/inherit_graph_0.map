@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" title=" " alt="" coords="5,13,54,40"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html" title="A custom alert class that extends the standard JavaFX Alert." alt="" coords="102,5,334,48"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html" title="A styled JavaFX alert dialog with optional sizing and custom appearance." alt="" coords="102,5,334,48"/>
 <area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="69,24,101,24,101,29,69,29"/>
 </map>

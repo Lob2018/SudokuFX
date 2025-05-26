@@ -5,7 +5,7 @@ var searchData=
   ['accessibletextbinding_2',['accessibleTextBinding',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a2534445f2247fda713a1b90d2e194d91',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
   ['activemenu_3',['ActiveMenu',['../enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel']]],
   ['activemenu_4',['activeMenu',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html#a80008cb72734384b3b45be72264578e5',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel']]],
-  ['activemenumangerinitialization_5',['activeMenuMangerInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2c431d9359cb4450c18901efb05ae447',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['activemenumanagerinitialization_5',['activeMenuManagerInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a842f4799fbccb6507d669da06f95554c',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['activemenuorsubmenuviewmodel_6',['ActiveMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
   ['activemenuorsubmenuviewmodel_7',['activeMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9ca4d62841a15113806fe6ecf1adab5f',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['activemenuorsubmenuviewmodel_2ejava_8',['ActiveMenuOrSubmenuViewModel.java',['../_active_menu_or_submenu_view_model_8java.html',1,'']]],

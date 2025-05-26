@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.view.components.MyAlert" name="fr.softsf.sudokufx.view.components.MyAlert">
-<area shape="rect" id="Node000001" title="A custom alert class that extends the standard JavaFX Alert." alt="" coords="5,123,227,224"/>
+<area shape="rect" id="Node000001" title="A styled JavaFX alert dialog with optional sizing and custom appearance." alt="" coords="5,123,227,299"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="97,5,135,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,90,119,123,114,123,114,90"/>
 </map>
