@@ -71,7 +71,6 @@ public final class DefaultView implements IMainView {
     @Autowired private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     @Autowired private Coordinator coordinator;
     @Autowired private HelpViewModel helpViewModel;
-    @Autowired private BackgroundViewModel backgroundViewModel;
     @Autowired private MenuHiddenViewModel menuHiddenViewModel;
     @Autowired private MenuMiniViewModel menuMiniViewModel;
     @Autowired private MenuLevelViewModel menuLevelViewModel;
@@ -79,6 +78,7 @@ public final class DefaultView implements IMainView {
     @Autowired private MenuPlayerViewModel menuPlayerViewModel;
     @Autowired private MenuSaveViewModel menuSaveViewModel;
     @Autowired private MenuSolveViewModel menuSolveViewModel;
+    @Autowired private MenuBackgroundViewModel menuBackgroundViewModel;
 
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
@@ -183,71 +183,84 @@ public final class DefaultView implements IMainView {
         playerMenuInitialization();
         saveMenuInitialization();
         solveMenuInitialization();
+        backgroundMenuInitialization();
+        activeMenuManagerInitialization();
+    }
 
-        // menu maxi background (with submenu)
-        menuMaxiButtonBackground.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
+    /**
+     * Sets up bindings between the background menu UI components and menuBackgroundViewModel.
+     *
+     * <p>Binds accessibility texts, tooltips, role descriptions, labels, and synchronizes the
+     * background color picker changes with the ViewModel to update and apply the background color
+     * dynamically.
+     */
+    private void backgroundMenuInitialization() {
+        menuMaxiButtonBackground
+                .accessibleTextProperty()
+                .bind(menuBackgroundViewModel.menuMaxiAccessibleTextProperty());
         menuMaxiButtonBackground
                 .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonBackground.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED));
-        menuMaxiButtonBackgroundText.setText(
-                I18n.INSTANCE.getValue("menu.maxi.button.background.text"));
-        // menu background
-        menuBackgroundButtonReduce.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
+                .textProperty()
+                .bind(menuBackgroundViewModel.menuMaxiTooltipProperty());
+        menuMaxiButtonBackground
+                .accessibleRoleDescriptionProperty()
+                .bind(menuBackgroundViewModel.menuMaxiRoleDescriptionProperty());
+        menuMaxiButtonBackgroundText
+                .textProperty()
+                .bind(menuBackgroundViewModel.menuMaxiTextProperty());
         menuBackgroundButtonReduce
                 .getTooltip()
-                .setText(I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
-        menuBackgroundButtonReduceText.setText(
-                I18n.INSTANCE.getValue("menu.background.button.reduce.text"));
-        menuBackgroundButtonBackground.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.background.button.background.accessibility"));
+                .textProperty()
+                .bind(menuBackgroundViewModel.reduceTooltipProperty());
+        menuBackgroundButtonReduce
+                .accessibleTextProperty()
+                .bind(menuBackgroundViewModel.reduceAccessibleTextProperty());
+        menuBackgroundButtonReduceText
+                .textProperty()
+                .bind(menuBackgroundViewModel.reduceTextProperty());
+        menuBackgroundButtonBackgroundText
+                .textProperty()
+                .bind(menuBackgroundViewModel.backgroundTextProperty());
+        menuBackgroundButtonBackground
+                .accessibleTextProperty()
+                .bind(menuBackgroundViewModel.backgroundAccessibleTextProperty());
         menuBackgroundButtonBackground
                 .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.background.button.background.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
-        menuBackgroundButtonBackground.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED));
-        menuBackgroundButtonBackgroundText.setText(
-                I18n.INSTANCE.getValue("menu.background.button.background.text"));
-        menuBackgroundButtonImage.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.background.button.image.accessibility"));
+                .textProperty()
+                .bind(menuBackgroundViewModel.backgroundTooltipProperty());
+        menuBackgroundButtonBackground
+                .accessibleRoleDescriptionProperty()
+                .bind(menuBackgroundViewModel.backgroundRoleDescriptionProperty());
+        menuBackgroundButtonImageText
+                .textProperty()
+                .bind(menuBackgroundViewModel.imageTextProperty());
+        menuBackgroundButtonImage
+                .accessibleTextProperty()
+                .bind(menuBackgroundViewModel.imageAccessibleTextProperty());
         menuBackgroundButtonImage
                 .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.background.button.image.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuBackgroundButtonImage.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuBackgroundButtonImageText.setText(
-                I18n.INSTANCE.getValue("menu.background.button.image.text"));
-        menuBackgroundButtonColor.setAccessibleText(
-                I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
+                .textProperty()
+                .bind(menuBackgroundViewModel.imageTooltipProperty());
+        menuBackgroundButtonImage
+                .accessibleRoleDescriptionProperty()
+                .bind(menuBackgroundViewModel.imageRoleDescriptionProperty());
+        menuBackgroundButtonColor
+                .accessibleTextProperty()
+                .bind(menuBackgroundViewModel.colorAccessibleTextProperty());
         menuBackgroundButtonColor
                 .getTooltip()
-                .setText(
-                        I18n.INSTANCE.getValue("menu.background.button.color.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        menuBackgroundButtonColor.setAccessibleRoleDescription(
-                I18n.INSTANCE.getValue(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION));
-        backgroundViewModel.init(sudokuFX, menuBackgroundButtonColor, toaster, spinner);
+                .textProperty()
+                .bind(menuBackgroundViewModel.colorTooltipProperty());
+        menuBackgroundButtonColor
+                .accessibleRoleDescriptionProperty()
+                .bind(menuBackgroundViewModel.colorRoleDescriptionProperty());
         menuBackgroundButtonColor
                 .valueProperty()
                 .addListener(
-                        (observable, oldValue, newValue) -> {
-                            backgroundViewModel.updateBackgroundColorAndApply(sudokuFX, newValue);
-                        });
-        // Managing the active menu
-        activeMenuManagerInitialization();
+                        (obs, oldColor, newColor) ->
+                                menuBackgroundViewModel.updateBackgroundColorAndApply(
+                                        sudokuFX, newColor));
+        menuBackgroundViewModel.init(sudokuFX, menuBackgroundButtonColor, toaster, spinner);
     }
 
     /**
@@ -872,7 +885,8 @@ public final class DefaultView implements IMainView {
      */
     private void applySelectedBackgroundImage(File selectedFile) {
         if (selectedFile != null) {
-            backgroundViewModel.handleFileImageChooser(selectedFile, toaster, spinner, sudokuFX);
+            menuBackgroundViewModel.handleFileImageChooser(
+                    selectedFile, toaster, spinner, sudokuFX);
         }
     }
 

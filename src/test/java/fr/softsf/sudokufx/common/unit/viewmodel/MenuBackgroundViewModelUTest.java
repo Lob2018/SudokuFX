@@ -17,15 +17,15 @@ import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
-import fr.softsf.sudokufx.viewmodel.BackgroundViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(ApplicationExtension.class)
-class BackgroundViewModelUTest {
+class MenuBackgroundViewModelUTest {
 
-    private BackgroundViewModel viewModel;
+    private MenuBackgroundViewModel viewModel;
 
     private GridPane sudokuFX;
     private ColorPicker colorPicker;
@@ -34,7 +34,7 @@ class BackgroundViewModelUTest {
 
     @BeforeEach
     void setUp() {
-        viewModel = new BackgroundViewModel();
+        viewModel = new MenuBackgroundViewModel();
         sudokuFX = new GridPane();
         colorPicker = new ColorPicker();
         toaster = mock(ToasterVBox.class);
@@ -43,7 +43,7 @@ class BackgroundViewModelUTest {
 
     @Test
     void givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated() {
-        BackgroundViewModel spyViewModel = spy(viewModel);
+        MenuBackgroundViewModel spyViewModel = spy(viewModel);
         doNothing().when(spyViewModel).handleFileImageChooser(any(), any(), any(), any());
         spyViewModel.init(sudokuFX, colorPicker, toaster, spinner);
         Color expectedColor = Color.rgb(153, 179, 255, 0.803921568627451);
