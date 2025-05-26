@@ -59,14 +59,9 @@ public final class DefaultView implements IMainView {
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Stage primaryStage = new Stage();
-    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
-            "menu.accessibility.role.description.closed";
-    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
-            "menu.accessibility.role.description.opened";
-    public static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION =
-            "menu.accessibility.role.description.submenu.option";
-
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
+    private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
+            PseudoClass.getPseudoClass("selected");
 
     @Autowired private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     @Autowired private Coordinator coordinator;
@@ -79,9 +74,6 @@ public final class DefaultView implements IMainView {
     @Autowired private MenuSaveViewModel menuSaveViewModel;
     @Autowired private MenuSolveViewModel menuSolveViewModel;
     @Autowired private MenuBackgroundViewModel menuBackgroundViewModel;
-
-    private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
-            PseudoClass.getPseudoClass("selected");
 
     @FXML private ToasterVBox toaster;
     @FXML private SpinnerGridPane spinner;
