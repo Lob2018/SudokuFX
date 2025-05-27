@@ -188,8 +188,8 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Initializes the Coordinator if it is null (i.e., if Spring initialization failed). Regardless
-     * of initialization, sets the default scene and dynamic font size.
+     * Ensures the Coordinator is initialized if not already (e.g., if Spring injection failed). In
+     * all cases, sets the default scene, dynamic font size handler, and HostServices.
      */
     private void initializeCoordinator() {
         if (coordinator == null) {
@@ -197,6 +197,7 @@ public class SudoMain extends Application {
         }
         coordinator.setDefaultScene(stage.getScene());
         coordinator.setDynamicFontSize(new DynamicFontSize(stage.getScene()));
+        coordinator.setHostServices(getHostServices());
     }
 
     /**

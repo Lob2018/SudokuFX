@@ -89,16 +89,6 @@ class VersionServiceITest {
     }
 
     @Test
-    void givenVersionService_whenGetGitHubLinkToRepositoryReleases_thenCorrectLink() {
-        VersionService versionService = new VersionService(mockHttpClient, objectMapper);
-        assertEquals(
-                GITHUB_LINK_TO_REPOSITORY_RELEASES,
-                versionService.getGitHubLinkToRepositoryReleases(),
-                "The GitHub link to repository releases must be "
-                        + GITHUB_LINK_TO_REPOSITORY_RELEASES);
-    }
-
-    @Test
     void givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue() throws Exception {
         when(mockResponse.statusCode()).thenReturn(200);
         when(mockResponse.body()).thenReturn("[]");

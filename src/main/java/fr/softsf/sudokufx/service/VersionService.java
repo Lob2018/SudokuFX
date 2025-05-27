@@ -29,7 +29,6 @@ import fr.softsf.sudokufx.enums.MyRegex;
 import fr.softsf.sudokufx.utils.MyDateTime;
 
 import static fr.softsf.sudokufx.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
-import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 
 /**
  * Service for checking if the application version is up to date by querying GitHub. It retrieves
@@ -57,15 +56,6 @@ public class VersionService {
     public VersionService(HttpClient httpClient, ObjectMapper objectMapper) {
         this.httpClient = httpClient;
         this.objectMapper = objectMapper;
-    }
-
-    /**
-     * Gets the GitHub link to the repository releases page.
-     *
-     * @return the URL to the repository releases page.
-     */
-    public String getGitHubLinkToRepositoryReleases() {
-        return GITHUB_REPOSITORY_RELEASES_URL.getUrl();
     }
 
     /**

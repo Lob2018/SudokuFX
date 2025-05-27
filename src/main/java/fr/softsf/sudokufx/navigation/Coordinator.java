@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.navigation;
 
+import javafx.application.HostServices;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,30 +18,36 @@ import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.Paths;
 import fr.softsf.sudokufx.utils.DynamicFontSize;
 
+import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
+
 /**
- * Coordinator is a Spring-managed component responsible for navigation and UI updates in a JavaFX
+ * Coordinator is a Spring-managed component that handles navigation and UI logic in a JavaFX
  * application following the MVVM-C architecture.
  *
- * <p>It handles FXML view loading, dynamic font resizing, and language switching.
+ * <p>Responsibilities include FXML view loading, scene switching, dynamic font scaling, and
+ * language toggling.
  */
 @Component
 public class Coordinator {
 
     private static final Logger log = LoggerFactory.getLogger(Coordinator.class);
 
-    /** The default JavaFX Scene managed by this coordinator. */
+    /** The main JavaFX scene managed by this coordinator. */
     private Scene defaultScene;
 
-    /** Shared FXMLLoader for loading FXML files and injecting controllers. */
+    /** Shared FXMLLoader for FXML view loading and controller injection. */
     private final FXMLLoader fxmlLoader;
 
-    /** Utility for adjusting font sizes dynamically based on scene dimensions. */
+    /** Utility for responsive font resizing based on scene dimensions. */
     private DynamicFontSize dynamicFontSize;
+
+    /** Provides access to system-level features like opening URLs in a browser. */
+    private HostServices hostServices;
 
     /**
      * Constructs the Coordinator with a shared {@code FXMLLoader}.
      *
-     * @param fxmlLoader the loader used to load FXML files and their controllers
+     * @param fxmlLoader shared loader for FXML views and controllers
      */
     public Coordinator(FXMLLoader fxmlLoader) {
         this.fxmlLoader = fxmlLoader;
@@ -116,5 +123,17 @@ public class Coordinator {
      */
     public void toggleLanguage() {
         I18n.INSTANCE.setLocaleBundle(I18n.INSTANCE.getLanguage().equals("fr") ? "EN" : "FR");
+    }
+
+    /** Opens the GitHub repository releases page in the user's default web browser. */
+    public void openGitHubRepositoryReleaseUrl() {
+        if (hostServices != null) {
+            hostServices.showDocument(GITHUB_REPOSITORY_RELEASES_URL.getUrl());
+        }
+    }
+
+    /** Injects the HostServices instance from the main application. */
+    public void setHostServices(HostServices hostServices) {
+        this.hostServices = hostServices;
     }
 }

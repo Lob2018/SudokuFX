@@ -5,43 +5,47 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
+import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+import javafx.concurrent.Task;
 
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.service.VersionService;
 
-/**
- * ViewModel managing menu "new version" UI state and accessibility strings.
- *
- * <p>Provides localized StringBindings for button labels and tooltips, updating automatically on
- * locale changes.
- */
 @Component
 public class MenuNewViewModel {
 
     private final StringBinding maxiNewAccessibleText;
-    private final StringBinding maxiNewTooltip;
     private final StringBinding maxiNewText;
     private final StringBinding newAccessibleText;
-    private final StringBinding newTooltip;
 
-    public MenuNewViewModel() {
+    private final VersionService versionService;
+    private final BooleanProperty isUpToDate = new SimpleBooleanProperty(true);
+    private final StringProperty statusMessage = new SimpleStringProperty();
+
+    public MenuNewViewModel(VersionService versionService) {
+        this.versionService = versionService;
+
         maxiNewAccessibleText = createStringBinding("menu.maxi.button.new.accessibility");
-        maxiNewTooltip = createStringBinding("menu.maxi.button.new.accessibility");
         maxiNewText = createStringBinding("menu.maxi.button.new.text");
         newAccessibleText = createStringBinding("menu.mini.button.new.accessibility");
-        newTooltip = newAccessibleText;
+
+        I18n.INSTANCE
+                .localeProperty()
+                .addListener(
+                        (obs, oldLocale, newLocale) -> {
+                            checkVersion();
+                        });
+        checkVersion();
     }
 
-    /**
-     * Creates a StringBinding for a given translation key, automatically updating when the locale
-     * changes.
-     *
-     * @param key the i18n translation key
-     * @return the bound localized string
-     */
     private StringBinding createStringBinding(String key) {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
@@ -49,10 +53,6 @@ public class MenuNewViewModel {
 
     public StringBinding maxiNewAccessibleTextProperty() {
         return maxiNewAccessibleText;
-    }
-
-    public StringBinding maxiNewTooltipProperty() {
-        return maxiNewTooltip;
     }
 
     public StringBinding maxiNewTextProperty() {
@@ -63,7 +63,27 @@ public class MenuNewViewModel {
         return newAccessibleText;
     }
 
-    public StringBinding newTooltipProperty() {
-        return newTooltip;
+    private void checkVersion() {
+        if (statusMessage.isBound()) {
+            statusMessage.unbind();
+        }
+        Task<Boolean> task = versionService.checkLatestVersion();
+        statusMessage.bind(task.messageProperty());
+        task.valueProperty()
+                .addListener(
+                        (obs, oldVal, newVal) -> {
+                            if (newVal != null) Platform.runLater(() -> isUpToDate.set(newVal));
+                        });
+        Thread thread = new Thread(task);
+        thread.setDaemon(true);
+        thread.start();
+    }
+
+    public BooleanProperty isUpToDateProperty() {
+        return isUpToDate;
+    }
+
+    public StringProperty statusMessageProperty() {
+        return statusMessage;
     }
 }

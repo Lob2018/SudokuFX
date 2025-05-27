@@ -182,22 +182,27 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Sets up bindings between the "New" menu UI components and the MenuNewViewModel.
+     * Initializes bindings between the "New" menu UI components and the MenuNewViewModel.
      *
-     * <p>Binds text properties, accessible texts, and tooltips of the maxi and mini "New" buttons
-     * to keep the UI synchronized with the ViewModel.
+     * <p>Binds button texts, accessible texts, visibility (based on update status), and tooltips
+     * to keep the UI responsive and synchronized with the ViewModel's state.
      */
     private void newMenuInitialization() {
         menuMaxiButtonNewText.textProperty().bind(menuNewViewModel.maxiNewTextProperty());
         menuMaxiButtonNew
                 .accessibleTextProperty()
                 .bind(menuNewViewModel.maxiNewAccessibleTextProperty());
+        menuMiniButtonNew.textProperty().bind(menuNewViewModel.newAccessibleTextProperty());
+        menuMaxiButtonNew.visibleProperty().bind(menuNewViewModel.isUpToDateProperty().not());
+        menuMiniButtonNew.visibleProperty().bind(menuNewViewModel.isUpToDateProperty().not());
         menuMaxiButtonNew
                 .getTooltip()
                 .textProperty()
-                .bind(menuNewViewModel.maxiNewTooltipProperty());
-        menuMiniButtonNew.textProperty().bind(menuNewViewModel.newAccessibleTextProperty());
-        menuMiniButtonNew.getTooltip().textProperty().bind(menuNewViewModel.newTooltipProperty());
+                .bind(menuNewViewModel.statusMessageProperty());
+        menuMiniButtonNew
+                .getTooltip()
+                .textProperty()
+                .bind(menuNewViewModel.statusMessageProperty());
     }
 
     /**
@@ -1020,6 +1025,11 @@ public final class DefaultView implements IMainView {
     /** Switches language. */
     public void handleToggleLanguage() {
         coordinator.toggleLanguage();
+    }
+
+    /** Opens GitHub releases URL via the Coordinator. */
+    public void handleMenuNewShow() {
+        coordinator.openGitHubRepositoryReleaseUrl();
     }
 
     /** Configures the primary stage for the full menu view. */
