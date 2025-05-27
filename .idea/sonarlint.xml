@@ -4,8 +4,8 @@
     <option name="bindingEnabled" value="true" />
     <option name="fileExclusions">
       <list>
-        <option value="DIRECTORY:.myresources/**" />
-        <option value="DIRECTORY:docs/**" />
+        <option value="GLOB:.myresources/**" />
+        <option value="GLOB:.docs/**" />
       </list>
     </option>
     <option name="moduleMapping">
