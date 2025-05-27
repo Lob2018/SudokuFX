@@ -103,8 +103,8 @@ public class MenuBackgroundViewModel {
     }
 
     /**
-     * Creates a StringBinding that returns the localized string for the given key,
-     * updating automatically when the locale changes.
+     * Creates a StringBinding that returns the localized string for the given key, updating
+     * automatically when the locale changes.
      *
      * @param key the i18n translation key
      * @return a StringBinding with the localized string value
@@ -115,8 +115,8 @@ public class MenuBackgroundViewModel {
     }
 
     /**
-     * Creates a StringBinding that returns the concatenation of two localized strings
-     * (main key and suffix key), updating automatically when the locale changes.
+     * Creates a StringBinding that returns the concatenation of two localized strings (main key and
+     * suffix key), updating automatically when the locale changes.
      *
      * @param key the main i18n translation key
      * @param suffixKey the suffix i18n translation key to append
