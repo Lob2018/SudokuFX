@@ -102,11 +102,26 @@ public class MenuBackgroundViewModel {
         colorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
     }
 
+    /**
+     * Creates a StringBinding that returns the localized string for the given key,
+     * updating automatically when the locale changes.
+     *
+     * @param key the i18n translation key
+     * @return a StringBinding with the localized string value
+     */
     private StringBinding createStringBinding(String key) {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
     }
 
+    /**
+     * Creates a StringBinding that returns the concatenation of two localized strings
+     * (main key and suffix key), updating automatically when the locale changes.
+     *
+     * @param key the main i18n translation key
+     * @param suffixKey the suffix i18n translation key to append
+     * @return a StringBinding with the concatenated localized string value
+     */
     private StringBinding createFormattedBinding(String key, String suffixKey) {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key) + I18n.INSTANCE.getValue(suffixKey),
