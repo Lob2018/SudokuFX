@@ -182,10 +182,8 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Initializes bindings between the "New" menu UI components and the MenuNewViewModel.
-     *
-     * <p>Binds button texts, accessible texts, visibility (based on update status), and tooltips to
-     * keep the UI responsive and synchronized with the ViewModel's state.
+     * Binds "New" menu UI elements to the ViewModel for text, accessibility, visibility, and
+     * tooltips, and shows toast notifications on status message updates.
      */
     private void newMenuInitialization() {
         menuMaxiButtonNewText.textProperty().bind(menuNewViewModel.maxiNewTextProperty());
@@ -198,11 +196,16 @@ public final class DefaultView implements IMainView {
         menuMaxiButtonNew
                 .getTooltip()
                 .textProperty()
-                .bind(menuNewViewModel.statusMessageProperty());
-        menuMiniButtonNew
-                .getTooltip()
-                .textProperty()
-                .bind(menuNewViewModel.statusMessageProperty());
+                .bind(menuNewViewModel.maxiNewTooltipProperty());
+        menuMiniButtonNew.getTooltip().textProperty().bind(menuNewViewModel.newTooltipProperty());
+        menuNewViewModel
+                .statusMessageProperty()
+                .addListener(
+                        (obs, oldMsg, newMsg) -> {
+                            if (newMsg != null && !newMsg.isEmpty()) {
+                                toaster.addToast(newMsg, newMsg, ToastLevels.INFO, false);
+                            }
+                        });
     }
 
     /**

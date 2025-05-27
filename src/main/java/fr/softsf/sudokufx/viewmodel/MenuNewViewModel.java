@@ -12,6 +12,7 @@ import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import javafx.beans.value.ChangeListener;
 import javafx.concurrent.Task;
 
 import org.springframework.stereotype.Component;
@@ -19,33 +20,49 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.service.VersionService;
 
+/**
+ * ViewModel for managing the "New" menu UI state, accessibility labels, and update status.
+ *
+ * <p>Provides localized StringBindings for button texts, accessible texts, and tooltips for both
+ * maxi and mini "New" buttons.
+ *
+ * <p>Checks asynchronously via VersionService if the application is up-to-date, exposing update
+ * status and related messages to the view.
+ *
+ * <p>Uses the I18n singleton for localization with automatic updates on locale changes.
+ */
 @Component
 public class MenuNewViewModel {
 
     private final StringBinding maxiNewAccessibleText;
     private final StringBinding maxiNewText;
     private final StringBinding newAccessibleText;
+    private final StringBinding maxiNewTooltip;
+    private final StringBinding newTooltip;
 
     private final VersionService versionService;
     private final BooleanProperty isUpToDate = new SimpleBooleanProperty(true);
     private final StringProperty statusMessage = new SimpleStringProperty();
+    private Task<Boolean> currentTask;
+    private ChangeListener<Boolean> versionListener;
 
     public MenuNewViewModel(VersionService versionService) {
         this.versionService = versionService;
-
         maxiNewAccessibleText = createStringBinding("menu.maxi.button.new.accessibility");
         maxiNewText = createStringBinding("menu.maxi.button.new.text");
         newAccessibleText = createStringBinding("menu.mini.button.new.accessibility");
-
-        I18n.INSTANCE
-                .localeProperty()
-                .addListener(
-                        (obs, oldLocale, newLocale) -> {
-                            checkVersion();
-                        });
+        maxiNewTooltip = createStringBinding("menu.maxi.button.new.accessibility");
+        newTooltip = newAccessibleText;
         checkVersion();
     }
 
+    /**
+     * Creates a localized StringBinding for the given key. Automatically updates when the locale
+     * changes.
+     *
+     * @param key the localization key
+     * @return a StringBinding providing localized text
+     */
     private StringBinding createStringBinding(String key) {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
@@ -63,26 +80,53 @@ public class MenuNewViewModel {
         return newAccessibleText;
     }
 
+    public StringBinding maxiNewTooltipProperty() {
+        return maxiNewTooltip;
+    }
+
+    public StringBinding newTooltipProperty() {
+        return newTooltip;
+    }
+
+    /**
+     * Starts an async version check, updating isUpToDate and statusMessage. Safely removes previous
+     * listeners and bindings to avoid memory leaks. Runs the check in a daemon thread.
+     */
     private void checkVersion() {
         if (statusMessage.isBound()) {
             statusMessage.unbind();
         }
-        Task<Boolean> task = versionService.checkLatestVersion();
-        statusMessage.bind(task.messageProperty());
-        task.valueProperty()
-                .addListener(
-                        (obs, oldVal, newVal) -> {
-                            if (newVal != null) Platform.runLater(() -> isUpToDate.set(newVal));
-                        });
-        Thread thread = new Thread(task);
+        if (currentTask != null && versionListener != null) {
+            currentTask.valueProperty().removeListener(versionListener);
+        }
+        currentTask = versionService.checkLatestVersion();
+        statusMessage.bind(currentTask.messageProperty());
+        versionListener =
+                (obs, oldVal, newVal) -> {
+                    if (newVal != null) {
+                        Platform.runLater(() -> isUpToDate.set(newVal));
+                    }
+                };
+        currentTask.valueProperty().addListener(versionListener);
+        Thread thread = new Thread(currentTask);
         thread.setDaemon(true);
         thread.start();
     }
 
+    /**
+     * Indicates whether the application is up-to-date.
+     *
+     * @return a BooleanProperty representing update status
+     */
     public BooleanProperty isUpToDateProperty() {
         return isUpToDate;
     }
 
+    /**
+     * Provides the current status message from the version check.
+     *
+     * @return a StringProperty with status messages
+     */
     public StringProperty statusMessageProperty() {
         return statusMessage;
     }
