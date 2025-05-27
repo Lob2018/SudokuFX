@@ -48,52 +48,65 @@ public class MenuBackgroundViewModel {
     private static final String ROLE_OPENED = "menu.accessibility.role.description.opened";
     private static final String ROLE_SUBMENU_OPTION =
             "menu.accessibility.role.description.submenu.option";
-    private final StringBinding menuMaxiAccessibleText =
-            createStringBinding("menu.maxi.button.background.accessibility");
-    private final StringBinding menuMaxiTooltip =
-            createFormattedBinding("menu.maxi.button.background.accessibility", ROLE_CLOSED);
-    private final StringBinding menuMaxiRoleDescription = createStringBinding(ROLE_CLOSED);
-    private final StringBinding menuMaxiText =
-            createStringBinding("menu.maxi.button.background.text");
-    private final StringBinding reduceAccessibleText =
-            createStringBinding("menu.background.button.reduce.accessibility");
-    private final StringBinding reduceTooltip =
-            createStringBinding("menu.background.button.reduce.accessibility");
-    private final StringBinding reduceText =
-            createStringBinding("menu.background.button.reduce.text");
-    private final StringBinding backgroundAccessibleText =
-            createStringBinding("menu.background.button.background.accessibility");
-    private final StringBinding backgroundTooltip =
-            createFormattedBinding("menu.background.button.background.accessibility", ROLE_OPENED);
-    private final StringBinding backgroundRoleDescription = createStringBinding(ROLE_OPENED);
-    private final StringBinding backgroundText =
-            createStringBinding("menu.background.button.background.text");
-    private final StringBinding imageAccessibleText =
-            createStringBinding("menu.background.button.image.accessibility");
-    private final StringBinding imageTooltip =
-            createFormattedBinding(
-                    "menu.background.button.image.accessibility", ROLE_SUBMENU_OPTION);
-    private final StringBinding imageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-    private final StringBinding imageText =
-            createStringBinding("menu.background.button.image.text");
-    private final StringBinding colorAccessibleText =
-            createStringBinding("menu.background.button.color.accessibility");
-    private final StringBinding colorTooltip =
-            createFormattedBinding(
-                    "menu.background.button.color.accessibility", ROLE_SUBMENU_OPTION);
-    private final StringBinding colorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+
+    private final StringBinding menuMaxiAccessibleText;
+    private final StringBinding menuMaxiTooltip;
+    private final StringBinding menuMaxiRoleDescription;
+    private final StringBinding menuMaxiText;
+
+    private final StringBinding reduceAccessibleText;
+    private final StringBinding reduceTooltip;
+    private final StringBinding reduceText;
+
+    private final StringBinding backgroundAccessibleText;
+    private final StringBinding backgroundTooltip;
+    private final StringBinding backgroundRoleDescription;
+    private final StringBinding backgroundText;
+
+    private final StringBinding imageAccessibleText;
+    private final StringBinding imageTooltip;
+    private final StringBinding imageRoleDescription;
+    private final StringBinding imageText;
+
+    private final StringBinding colorAccessibleText;
+    private final StringBinding colorTooltip;
+    private final StringBinding colorRoleDescription;
 
     public MenuBackgroundViewModel() {
         this.imageUtils = new ImageUtils();
+        menuMaxiAccessibleText = createStringBinding("menu.maxi.button.background.accessibility");
+        menuMaxiTooltip =
+                createFormattedBinding("menu.maxi.button.background.accessibility", ROLE_CLOSED);
+        menuMaxiRoleDescription = createStringBinding(ROLE_CLOSED);
+        menuMaxiText = createStringBinding("menu.maxi.button.background.text");
+        reduceAccessibleText = createStringBinding("menu.background.button.reduce.accessibility");
+        reduceTooltip = createStringBinding("menu.background.button.reduce.accessibility");
+        reduceText = createStringBinding("menu.background.button.reduce.text");
+        backgroundAccessibleText =
+                createStringBinding("menu.background.button.background.accessibility");
+        backgroundTooltip =
+                createFormattedBinding(
+                        "menu.background.button.background.accessibility", ROLE_OPENED);
+        backgroundRoleDescription = createStringBinding(ROLE_OPENED);
+        backgroundText = createStringBinding("menu.background.button.background.text");
+        imageAccessibleText = createStringBinding("menu.background.button.image.accessibility");
+        imageTooltip =
+                createFormattedBinding(
+                        "menu.background.button.image.accessibility", ROLE_SUBMENU_OPTION);
+        imageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        imageText = createStringBinding("menu.background.button.image.text");
+        colorAccessibleText = createStringBinding("menu.background.button.color.accessibility");
+        colorTooltip =
+                createFormattedBinding(
+                        "menu.background.button.color.accessibility", ROLE_SUBMENU_OPTION);
+        colorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
     }
 
-    /** Creates a localized StringBinding for the given key, updated on locale changes. */
     private StringBinding createStringBinding(String key) {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
     }
 
-    /** Creates a localized StringBinding by concatenating two keys, updated on locale changes. */
     private StringBinding createFormattedBinding(String key, String suffixKey) {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key) + I18n.INSTANCE.getValue(suffixKey),
@@ -171,8 +184,6 @@ public class MenuBackgroundViewModel {
     public StringBinding colorRoleDescriptionProperty() {
         return colorRoleDescription;
     }
-
-    /// ///////////////////////////////////////
 
     /**
      * Initializes the GridPane background with either a predefined color or image. If a color is
