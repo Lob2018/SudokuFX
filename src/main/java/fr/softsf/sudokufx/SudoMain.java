@@ -131,7 +131,7 @@ public class SudoMain extends Application {
             springInitializer.runInitializationTask(springInitializeTask);
         } catch (Exception ex) {
             log.error("██ Exception catch inside start() : {}", ex.getMessage(), ex);
-            throw new RuntimeException(ex);
+            Platform.exit();
         }
     }
 
@@ -152,7 +152,7 @@ public class SudoMain extends Application {
                     "██ Exception caught after Spring Context initialization with FXML : {}",
                     ex.getMessage(),
                     ex);
-            throw new RuntimeException(ex);
+            Platform.exit();
         }
     }
 
