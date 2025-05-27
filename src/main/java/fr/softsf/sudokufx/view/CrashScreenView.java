@@ -77,7 +77,7 @@ public final class CrashScreenView implements IMainView {
     /** Handles the close button click event. Logs the action and exits the application. */
     @FXML
     private void closeButtonClick() {
-        log.info("▓▓▓▓ The user choose to close the application");
+        log.info("▓▓▓▓ The user choose to close the application, triggering Platform.exit()");
         hidecrashscreen();
         Platform.exit();
     }
@@ -91,9 +91,9 @@ public final class CrashScreenView implements IMainView {
         log.info("▓▓▓▓ The user choose to reset the application data");
         Path pathToDelete = Paths.get(iOsFolderFactory.getOsDataFolderPath());
         if (iFileSystem.deleteFolderRecursively(pathToDelete, DATA_FOLDER.getPath())) {
-            log.info("▓▓▓▓ The directory is deleted");
+            log.info("▓▓▓▓ The directory is deleted, triggering Platform.exit()");
         } else {
-            log.info("▓▓▓▓ The directory isn't deleted");
+            log.info("▓▓▓▓ The directory isn't deleted, triggering Platform.exit()");
         }
         hidecrashscreen();
         Platform.exit();

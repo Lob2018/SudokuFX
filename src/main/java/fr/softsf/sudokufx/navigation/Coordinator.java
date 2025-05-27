@@ -106,8 +106,8 @@ public class Coordinator {
             return fxmlLoader.getController();
         } catch (Exception e) {
             log.error(
-                    "██ Exception caught when setting root by FXML name: {} █ The FXML path was:"
-                            + " {}",
+                    "██ Exception caught when setting root by FXML name: {} █ The FXML path was"
+                            + " (triggering Platform.exit()): {}",
                     e.getMessage(),
                     path,
                     e);

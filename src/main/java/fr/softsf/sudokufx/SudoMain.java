@@ -130,7 +130,10 @@ public class SudoMain extends Application {
                     });
             springInitializer.runInitializationTask(springInitializeTask);
         } catch (Exception ex) {
-            log.error("██ Exception catch inside start() : {}", ex.getMessage(), ex);
+            log.error(
+                    "██ Exception catch inside start() : {}, triggering Platform.exit()",
+                    ex.getMessage(),
+                    ex);
             Platform.exit();
         }
     }
@@ -149,7 +152,8 @@ public class SudoMain extends Application {
             createViewTransition("default-view", minimumTimelapse).play();
         } catch (Exception ex) {
             log.error(
-                    "██ Exception caught after Spring Context initialization with FXML : {}",
+                    "██ Exception caught after Spring Context initialization with FXML : {},"
+                            + " triggering Platform.exit()",
                     ex.getMessage(),
                     ex);
             Platform.exit();
@@ -172,15 +176,14 @@ public class SudoMain extends Application {
      */
     private void handleSpringContextTaskFailed(Throwable throwable) {
         initializeCoordinator();
-        log.error(
-                "██ Error in splash screen initialization thread : {}",
-                throwable.getMessage(),
-                throwable);
+        String msg = "██ Error in splash screen initialization thread {} : {}";
         SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException =
                 ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(throwable);
         if (sqlInvalidAuthorizationSpecException == null) {
+            log.error(msg, " – triggering Platform.exit()", throwable.getMessage(), throwable);
             Platform.exit();
         } else {
+            log.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
             sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
             PauseTransition pause = createViewTransition("crashscreen-view", 0);
             pause.play();
