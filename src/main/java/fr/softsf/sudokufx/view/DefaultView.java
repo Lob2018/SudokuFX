@@ -981,7 +981,6 @@ public final class DefaultView implements IMainView {
     public void handleMenuSolveShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE);
         menuSolveButtonSolve.requestFocus();
-        //        menuSolveViewModel.setPercentage(50);
     }
 
     /**
