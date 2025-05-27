@@ -32,7 +32,6 @@ public class MenuMiniViewModel {
     private final StringBinding languageAccessibleText;
     private final StringBinding languageIso;
     private final StringBinding helpAccessibleText;
-    private final StringBinding newAccessibleText;
 
     private final StringBinding showTooltip;
     private final StringBinding playerTooltip;
@@ -41,7 +40,6 @@ public class MenuMiniViewModel {
     private final StringBinding backgroundTooltip;
     private final StringBinding languageTooltip;
     private final StringBinding helpTooltip;
-    private final StringBinding newTooltip;
 
     /** Initializes all bindings for accessible texts and tooltips, bound to the current locale. */
     public MenuMiniViewModel() {
@@ -53,7 +51,6 @@ public class MenuMiniViewModel {
         languageAccessibleText = createStringBinding("menu.mini.button.language.accessibility");
         languageIso = createStringBinding("menu.mini.button.language.iso");
         helpAccessibleText = createStringBinding("menu.mini.button.help.accessibility");
-        newAccessibleText = createStringBinding("menu.mini.button.new.accessibility");
 
         showTooltip = showAccessibleText;
         playerTooltip = createTooltipBinding("menu.mini.button.player.accessibility");
@@ -62,7 +59,6 @@ public class MenuMiniViewModel {
         backgroundTooltip = createTooltipBinding("menu.mini.button.background.accessibility");
         languageTooltip = languageAccessibleText;
         helpTooltip = helpAccessibleText;
-        newTooltip = newAccessibleText;
     }
 
     /**
@@ -119,10 +115,6 @@ public class MenuMiniViewModel {
         return helpAccessibleText;
     }
 
-    public StringBinding newAccessibleTextProperty() {
-        return newAccessibleText;
-    }
-
     public StringBinding menuMiniButtonLanguageIsoTextProperty() {
         return languageIso;
     }
@@ -153,9 +145,5 @@ public class MenuMiniViewModel {
 
     public StringBinding helpTooltipProperty() {
         return helpTooltip;
-    }
-
-    public StringBinding newTooltipProperty() {
-        return newTooltip;
     }
 }

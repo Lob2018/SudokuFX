@@ -34,10 +34,6 @@ public class MenuMaxiViewModel {
     private final StringBinding helpTooltip;
     private final StringBinding helpText;
 
-    private final StringBinding newAccessibleText;
-    private final StringBinding newTooltip;
-    private final StringBinding newText;
-
     /**
      * Initializes all bindings for accessible texts, tooltips, and labels, bound to the current
      * locale.
@@ -55,10 +51,6 @@ public class MenuMaxiViewModel {
         helpAccessibleText = createStringBinding("menu.maxi.button.help.accessibility");
         helpTooltip = createStringBinding("menu.maxi.button.help.accessibility");
         helpText = createStringBinding("menu.maxi.button.help.text");
-
-        newAccessibleText = createStringBinding("menu.maxi.button.new.accessibility");
-        newTooltip = createStringBinding("menu.maxi.button.new.accessibility");
-        newText = createStringBinding("menu.maxi.button.new.text");
     }
 
     /**
@@ -110,17 +102,5 @@ public class MenuMaxiViewModel {
 
     public StringBinding helpTextProperty() {
         return helpText;
-    }
-
-    public StringBinding newAccessibleTextProperty() {
-        return newAccessibleText;
-    }
-
-    public StringBinding newTooltipProperty() {
-        return newTooltip;
-    }
-
-    public StringBinding newTextProperty() {
-        return newText;
     }
 }
