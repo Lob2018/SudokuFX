@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#a5433d25d0bd37df97983d762cebbbb33":[2,0,0,0,0,3,0,7,2],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#aaf41fb23adfae77ab3c8afd1b17f9044":[1,0,0,0,0,3,0,7,0],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#aaf41fb23adfae77ab3c8afd1b17f9044":[2,0,0,0,0,3,0,7,0],
 "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_generate_secret_u_test.html#aeed6e7a4451b95e24e82614284f40bff":[1,0,0,0,0,3,0,7,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ae96ae3832695c27c80bbd4be0604e8f5":[2,0,0,0,0,7,2,5],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#af5412f65db2f449e8d13496c7ca09a96":[1,0,0,0,0,8,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#af5412f65db2f449e8d13496c7ca09a96":[2,0,0,0,0,7,2,6],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html":[1,0,0,0,0,8,2,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html":[2,0,0,0,0,7,2,0]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_1_1_game_level_builder.html":[1,0,0,0,0,8,2,0]
 };

@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.MenuBackgroundViewModel" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.MenuBackgroundViewModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,297,105"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a6e9334075500cee2e1a3d5d577c33dc1" title="Creates a StringBinding that returns the concatenation of two localized strings (main key and suffix ..." alt="" coords="345,5,630,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="297,55,329,51,330,57,298,61"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a6624cfb10d25786a1bb0646e32fc5e20" title="Creates a StringBinding that returns the localized string for the given key, updating automatically w..." alt="" coords="357,88,618,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="298,91,342,97,342,102,297,97"/>
+</map>

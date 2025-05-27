@@ -170,10 +170,10 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a6e9334075500cee2e1a3d5d577c33dc1" id="r_a6e9334075500cee2e1a3d5d577c33dc1"><td class="memItemLeft" align="right" valign="top">StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e9334075500cee2e1a3d5d577c33dc1">createFormattedBinding</a> (String key, String suffixKey)</td></tr>
-<tr class="memdesc:a6e9334075500cee2e1a3d5d577c33dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a localized StringBinding by concatenating two keys, updated on locale changes.  <br /></td></tr>
+<tr class="memdesc:a6e9334075500cee2e1a3d5d577c33dc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a StringBinding that returns the concatenation of two localized strings (main key and suffix key), updating automatically when the locale changes.  <br /></td></tr>
 <tr class="separator:a6e9334075500cee2e1a3d5d577c33dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6624cfb10d25786a1bb0646e32fc5e20" id="r_a6624cfb10d25786a1bb0646e32fc5e20"><td class="memItemLeft" align="right" valign="top">StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a> (String key)</td></tr>
-<tr class="memdesc:a6624cfb10d25786a1bb0646e32fc5e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a localized StringBinding for the given key, updated on locale changes.  <br /></td></tr>
+<tr class="memdesc:a6624cfb10d25786a1bb0646e32fc5e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a StringBinding that returns the localized string for the given key, updating automatically when the locale changes.  <br /></td></tr>
 <tr class="separator:a6624cfb10d25786a1bb0646e32fc5e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9907e8c5d60e1b4f0b748cf3dc197e1c" id="r_a9907e8c5d60e1b4f0b748cf3dc197e1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9907e8c5d60e1b4f0b748cf3dc197e1c">loadImage</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, GridPane sudokuFX)</td></tr>
 <tr class="memdesc:a9907e8c5d60e1b4f0b748cf3dc197e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the asynchronous image loading and resizing task.  <br /></td></tr>
@@ -192,7 +192,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a97e4bcc6cb41b1f85546070b8127e01e" id="r_a97e4bcc6cb41b1f85546070b8127e01e"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97e4bcc6cb41b1f85546070b8127e01e">backgroundAccessibleText</a></td></tr>
 <tr class="separator:a97e4bcc6cb41b1f85546070b8127e01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99c044dec210fdf43b956c70a89df684" id="r_a99c044dec210fdf43b956c70a89df684"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c044dec210fdf43b956c70a89df684">backgroundRoleDescription</a> = <a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<a class="el" href="#ab8747771ae319cb9926118dd15f1386a">ROLE_OPENED</a>)</td></tr>
+<tr class="memitem:a99c044dec210fdf43b956c70a89df684" id="r_a99c044dec210fdf43b956c70a89df684"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99c044dec210fdf43b956c70a89df684">backgroundRoleDescription</a></td></tr>
 <tr class="separator:a99c044dec210fdf43b956c70a89df684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c9b1bbf4d26aa65acb18b4996bca048" id="r_a8c9b1bbf4d26aa65acb18b4996bca048"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c9b1bbf4d26aa65acb18b4996bca048">backgroundText</a></td></tr>
 <tr class="separator:a8c9b1bbf4d26aa65acb18b4996bca048"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,13 +200,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8cbe45a34f986396256eb61e959811c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a810c39ae078172a461cf6bee99263740" id="r_a810c39ae078172a461cf6bee99263740"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a810c39ae078172a461cf6bee99263740">colorAccessibleText</a></td></tr>
 <tr class="separator:a810c39ae078172a461cf6bee99263740"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dff9c97f6b92f2cbd8e2cbc4824a413" id="r_a4dff9c97f6b92f2cbd8e2cbc4824a413"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dff9c97f6b92f2cbd8e2cbc4824a413">colorRoleDescription</a> = <a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<a class="el" href="#aa29ab2fa3aa146a9756ed3184637e2d0">ROLE_SUBMENU_OPTION</a>)</td></tr>
+<tr class="memitem:a4dff9c97f6b92f2cbd8e2cbc4824a413" id="r_a4dff9c97f6b92f2cbd8e2cbc4824a413"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4dff9c97f6b92f2cbd8e2cbc4824a413">colorRoleDescription</a></td></tr>
 <tr class="separator:a4dff9c97f6b92f2cbd8e2cbc4824a413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab75331c484d6f59d5adaf4304ff19377" id="r_ab75331c484d6f59d5adaf4304ff19377"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab75331c484d6f59d5adaf4304ff19377">colorTooltip</a></td></tr>
 <tr class="separator:ab75331c484d6f59d5adaf4304ff19377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aeb58930b840933701b6202482b2e14" id="r_a1aeb58930b840933701b6202482b2e14"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1aeb58930b840933701b6202482b2e14">imageAccessibleText</a></td></tr>
 <tr class="separator:a1aeb58930b840933701b6202482b2e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad417776e5cc1e5aa87ca2226dcb0c397" id="r_ad417776e5cc1e5aa87ca2226dcb0c397"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad417776e5cc1e5aa87ca2226dcb0c397">imageRoleDescription</a> = <a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<a class="el" href="#aa29ab2fa3aa146a9756ed3184637e2d0">ROLE_SUBMENU_OPTION</a>)</td></tr>
+<tr class="memitem:ad417776e5cc1e5aa87ca2226dcb0c397" id="r_ad417776e5cc1e5aa87ca2226dcb0c397"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad417776e5cc1e5aa87ca2226dcb0c397">imageRoleDescription</a></td></tr>
 <tr class="separator:ad417776e5cc1e5aa87ca2226dcb0c397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a807d384c607158c81512fd3903a8fcf0" id="r_a807d384c607158c81512fd3903a8fcf0"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a807d384c607158c81512fd3903a8fcf0">imageText</a></td></tr>
 <tr class="separator:a807d384c607158c81512fd3903a8fcf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,7 +216,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a5b206dd45455fded011060b91c6a951c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab154fe90baca0c23dc308e45b9d36921" id="r_ab154fe90baca0c23dc308e45b9d36921"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab154fe90baca0c23dc308e45b9d36921">menuMaxiAccessibleText</a></td></tr>
 <tr class="separator:ab154fe90baca0c23dc308e45b9d36921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17d4c37ec1ba74e2935bad6564cb5605" id="r_a17d4c37ec1ba74e2935bad6564cb5605"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17d4c37ec1ba74e2935bad6564cb5605">menuMaxiRoleDescription</a> = <a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<a class="el" href="#a3d8eb20b89336bf4fe8cd13b2f48f4cf">ROLE_CLOSED</a>)</td></tr>
+<tr class="memitem:a17d4c37ec1ba74e2935bad6564cb5605" id="r_a17d4c37ec1ba74e2935bad6564cb5605"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17d4c37ec1ba74e2935bad6564cb5605">menuMaxiRoleDescription</a></td></tr>
 <tr class="separator:a17d4c37ec1ba74e2935bad6564cb5605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a044f9aa75c150d7352221947308320ee" id="r_a044f9aa75c150d7352221947308320ee"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a044f9aa75c150d7352221947308320ee">menuMaxiText</a></td></tr>
 <tr class="separator:a044f9aa75c150d7352221947308320ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,6 +258,13 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_a14e0a8af6138f30dbd4ae01a5f92aacd_cgraph.svg" width="636" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -408,7 +415,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a localized StringBinding by concatenating two keys, updated on locale changes. </p>
+<p>Creates a StringBinding that returns the concatenation of two localized strings (main key and suffix key), updating automatically when the locale changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the main i18n translation key </td></tr>
+    <tr><td class="paramname">suffixKey</td><td>the suffix i18n translation key to append </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a StringBinding with the concatenated localized string value </dd></dl>
 
 </div>
 </div>
@@ -435,7 +450,14 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates a localized StringBinding for the given key, updated on locale changes. </p>
+<p>Creates a StringBinding that returns the localized string for the given key, updating automatically when the locale changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>the i18n translation key </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a StringBinding with the localized string value </dd></dl>
 
 </div>
 </div>
@@ -478,11 +500,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_a260352d8d5ffcc3f691984620672f38b_cgraph.svg" width="100%" height="517"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -596,11 +618,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_aa38ef0db64c962e692b25c3bddf2ef0e_cgraph.svg" width="100%" height="517"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -653,11 +675,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_a9907e8c5d60e1b4f0b748cf3dc197e1c_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -779,11 +801,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_aa52464dc847a4a6e2d9141839f230037_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -831,11 +853,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_aa381c1f7620cd458dc3f89b7e106e3e4_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -986,10 +1008,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.background.button.background.accessibility&quot;</span>)</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_html_a6624cfb10d25786a1bb0646e32fc5e20"><div class="ttname"><a href="#a6624cfb10d25786a1bb0646e32fc5e20">fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.createStringBinding</a></div><div class="ttdeci">StringBinding createStringBinding(String key)</div><div class="ttdoc">Creates a localized StringBinding for the given key, updated on locale changes.</div><div class="ttdef"><b>Definition</b> MenuBackgroundViewModel.java:91</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a99c044dec210fdf43b956c70a89df684" name="a99c044dec210fdf43b956c70a89df684"></a>
@@ -1002,7 +1021,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.backgroundRoleDescription = <a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<a class="el" href="#ab8747771ae319cb9926118dd15f1386a">ROLE_OPENED</a>)</td>
+          <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.backgroundRoleDescription</td>
         </tr>
       </table>
   </td>
@@ -1033,9 +1052,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.background.button.background.text&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a8cbe45a34f986396256eb61e959811c1" name="a8cbe45a34f986396256eb61e959811c1"></a>
@@ -1057,11 +1074,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6e9334075500cee2e1a3d5d577c33dc1">createFormattedBinding</a>(<span class="stringliteral">&quot;menu.background.button.background.accessibility&quot;</span>, <a class="code hl_variable" href="#ab8747771ae319cb9926118dd15f1386a">ROLE_OPENED</a>)</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_html_a6e9334075500cee2e1a3d5d577c33dc1"><div class="ttname"><a href="#a6e9334075500cee2e1a3d5d577c33dc1">fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.createFormattedBinding</a></div><div class="ttdeci">StringBinding createFormattedBinding(String key, String suffixKey)</div><div class="ttdoc">Creates a localized StringBinding by concatenating two keys, updated on locale changes.</div><div class="ttdef"><b>Definition</b> MenuBackgroundViewModel.java:97</div></div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_html_ab8747771ae319cb9926118dd15f1386a"><div class="ttname"><a href="#ab8747771ae319cb9926118dd15f1386a">fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.ROLE_OPENED</a></div><div class="ttdeci">static final String ROLE_OPENED</div><div class="ttdef"><b>Definition</b> MenuBackgroundViewModel.java:48</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a810c39ae078172a461cf6bee99263740" name="a810c39ae078172a461cf6bee99263740"></a>
@@ -1083,9 +1096,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.background.button.color.accessibility&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a4dff9c97f6b92f2cbd8e2cbc4824a413" name="a4dff9c97f6b92f2cbd8e2cbc4824a413"></a>
@@ -1098,7 +1109,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.colorRoleDescription = <a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<a class="el" href="#aa29ab2fa3aa146a9756ed3184637e2d0">ROLE_SUBMENU_OPTION</a>)</td>
+          <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.colorRoleDescription</td>
         </tr>
       </table>
   </td>
@@ -1129,11 +1140,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6e9334075500cee2e1a3d5d577c33dc1">createFormattedBinding</a>(</div>
-<div class="line">                    <span class="stringliteral">&quot;menu.background.button.color.accessibility&quot;</span>, <a class="code hl_variable" href="#aa29ab2fa3aa146a9756ed3184637e2d0">ROLE_SUBMENU_OPTION</a>)</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_html_aa29ab2fa3aa146a9756ed3184637e2d0"><div class="ttname"><a href="#aa29ab2fa3aa146a9756ed3184637e2d0">fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.ROLE_SUBMENU_OPTION</a></div><div class="ttdeci">static final String ROLE_SUBMENU_OPTION</div><div class="ttdef"><b>Definition</b> MenuBackgroundViewModel.java:49</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a1aeb58930b840933701b6202482b2e14" name="a1aeb58930b840933701b6202482b2e14"></a>
@@ -1155,9 +1162,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.background.button.image.accessibility&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ad417776e5cc1e5aa87ca2226dcb0c397" name="ad417776e5cc1e5aa87ca2226dcb0c397"></a>
@@ -1170,7 +1175,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.imageRoleDescription = <a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<a class="el" href="#aa29ab2fa3aa146a9756ed3184637e2d0">ROLE_SUBMENU_OPTION</a>)</td>
+          <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.imageRoleDescription</td>
         </tr>
       </table>
   </td>
@@ -1201,9 +1206,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.background.button.image.text&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="affe702ea3df0eaa24bf096448bee5752" name="affe702ea3df0eaa24bf096448bee5752"></a>
@@ -1225,10 +1228,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6e9334075500cee2e1a3d5d577c33dc1">createFormattedBinding</a>(</div>
-<div class="line">                    <span class="stringliteral">&quot;menu.background.button.image.accessibility&quot;</span>, <a class="code hl_variable" href="#aa29ab2fa3aa146a9756ed3184637e2d0">ROLE_SUBMENU_OPTION</a>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a5b206dd45455fded011060b91c6a951c" name="a5b206dd45455fded011060b91c6a951c"></a>
@@ -1294,9 +1294,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.maxi.button.background.accessibility&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a17d4c37ec1ba74e2935bad6564cb5605" name="a17d4c37ec1ba74e2935bad6564cb5605"></a>
@@ -1309,7 +1307,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.menuMaxiRoleDescription = <a class="el" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<a class="el" href="#a3d8eb20b89336bf4fe8cd13b2f48f4cf">ROLE_CLOSED</a>)</td>
+          <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.menuMaxiRoleDescription</td>
         </tr>
       </table>
   </td>
@@ -1340,9 +1338,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.maxi.button.background.text&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a732f917fc3ae0342fd093ded7bee328f" name="a732f917fc3ae0342fd093ded7bee328f"></a>
@@ -1364,10 +1360,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6e9334075500cee2e1a3d5d577c33dc1">createFormattedBinding</a>(<span class="stringliteral">&quot;menu.maxi.button.background.accessibility&quot;</span>, <a class="code hl_variable" href="#a3d8eb20b89336bf4fe8cd13b2f48f4cf">ROLE_CLOSED</a>)</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_html_a3d8eb20b89336bf4fe8cd13b2f48f4cf"><div class="ttname"><a href="#a3d8eb20b89336bf4fe8cd13b2f48f4cf">fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.ROLE_CLOSED</a></div><div class="ttdeci">static final String ROLE_CLOSED</div><div class="ttdef"><b>Definition</b> MenuBackgroundViewModel.java:47</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="adf2b8c9969de9c7a5163540127a9d67f" name="adf2b8c9969de9c7a5163540127a9d67f"></a>
@@ -1389,9 +1382,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.background.button.reduce.accessibility&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a7f5d43dfae0a737e0f99a188a0f8de95" name="a7f5d43dfae0a737e0f99a188a0f8de95"></a>
@@ -1413,9 +1404,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.background.button.reduce.text&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a6ea80e9c45badb677dabbb4c2d3ffa1e" name="a6ea80e9c45badb677dabbb4c2d3ffa1e"></a>
@@ -1437,9 +1426,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <a class="code hl_function" href="#a6624cfb10d25786a1bb0646e32fc5e20">createStringBinding</a>(<span class="stringliteral">&quot;menu.background.button.reduce.accessibility&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="a3d8eb20b89336bf4fe8cd13b2f48f4cf" name="a3d8eb20b89336bf4fe8cd13b2f48f4cf"></a>
@@ -1519,7 +1506,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html">MenuBackgroundViewModel</a></li>
-    <li class="footer">Generated on Mon May 26 2025 13:42:35 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue May 27 2025 15:03:51 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

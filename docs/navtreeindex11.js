@@ -1,5 +1,10 @@
 var NAVTREEINDEX11 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html#a7940476f38429c6fa43009b486ae3e5b":[2,0,0,0,0,4,7,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html#a8c252c418258c5941d9d5df8185b35d8":[1,0,0,0,0,5,7,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html#a8c252c418258c5941d9d5df8185b35d8":[2,0,0,0,0,4,7,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html#ab7cfb31af2e97eb2f0b96804aa756585":[1,0,0,0,0,5,7,2],
+"enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html#ab7cfb31af2e97eb2f0b96804aa756585":[2,0,0,0,0,4,7,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html#ae5a81d66ba5357f741f44b998161e62b":[1,0,0,0,0,5,7,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html#ae5a81d66ba5357f741f44b998161e62b":[2,0,0,0,0,4,7,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html":[1,0,0,0,0,5,8],
@@ -244,10 +249,5 @@ var NAVTREEINDEX11 =
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#a3a178db16107dc3291d37129584aaea5":[2,0,0,0,0,6,0,3,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#aef5e5595f12b2a7dd75b5588e37bab85":[1,0,0,0,0,7,0,3,2],
 "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#aef5e5595f12b2a7dd75b5588e37bab85":[2,0,0,0,0,6,0,3,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html":[1,0,0,0,0,7,0,4],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html":[2,0,0,0,0,6,0,4],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html#a3ef76cbccb62f3c2b12a740a8140c216":[1,0,0,0,0,7,0,4,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html#a3ef76cbccb62f3c2b12a740a8140c216":[2,0,0,0,0,6,0,4,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html#a65f5ee71810ca364ec0cad890cb81614":[1,0,0,0,0,7,0,4,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html#a65f5ee71810ca364ec0cad890cb81614":[2,0,0,0,0,6,0,4,2]
+"interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html":[1,0,0,0,0,7,0,4]
 };
