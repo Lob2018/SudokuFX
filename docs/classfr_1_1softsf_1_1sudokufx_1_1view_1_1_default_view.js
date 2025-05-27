@@ -18,6 +18,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "handleMenuHelpShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a7cd0a665fc7b42da2ffdaf42cdd65000", null ],
     [ "handleMenuMaxiShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ad3664f0d9d41d1c7c7735bb90e0afa2a", null ],
     [ "handleMenuMiniShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a604e9a10d6a80d50ec327abdcda2209e", null ],
+    [ "handleMenuNewShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a4b032103884277ac49e9719bfed28093", null ],
     [ "handleMenuPlayerShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a0252b73c4c4584a1e6bedefa1e01a89d", null ],
     [ "handleMenuSolveShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#abc726938d8cad6af8aec306f9b0b9a3f", null ],
     [ "handleToggleLanguage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a769e6c361cff4bc5247bd8bc8ebd6621", null ],

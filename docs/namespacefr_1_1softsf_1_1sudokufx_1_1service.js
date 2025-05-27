@@ -11,7 +11,6 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1service =
     [ "givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a0dcbee3c8204985753abe451e17abf36", null ],
     [ "givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#aa558d6291b30e8ed8003e6bd66169683", null ],
     [ "givenValidGitHubVersions_whenCheckLatestVersion_thenCorrectResultReturned", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a1935d8c8136bf83fd62008228a07e5e8", null ],
-    [ "givenVersionService_whenGetGitHubLinkToRepositoryReleases_thenCorrectLink", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a824e4a0ff6a02822bb002fd7fdad5dd3", null ],
     [ "closeable", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a2f4bb1fff99df12da67edf37994567bc", null ],
     [ "logWatcher", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ae44f2ce437ffb95bb2a298f7fabf98e2", null ],
     [ "mockHttpClient", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a61a86660dac8876f7088f6c0c120edc8", null ],

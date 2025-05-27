@@ -12,7 +12,7 @@
 <area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="163,330,215,323,215,328,163,335"/>
 <area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a102802b83cb4b7d16ad9b5647790a805" title="Initializes the mini menu by binding all buttons&#39; texts and tooltips to their respective ViewModel pr..." alt="" coords="232,355,452,397"/>
 <area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="163,350,217,357,216,362,163,355"/>
-<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a364924a9e9ac437e3343ca332ae076fb" title="Sets up bindings between the &quot;New&quot; menu UI components and the MenuNewViewModel." alt="" coords="232,421,452,464"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a364924a9e9ac437e3343ca332ae076fb" title="Binds &quot;New&quot; menu UI elements to the ViewModel for text, accessibility, visibility,..." alt="" coords="232,421,452,464"/>
 <area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="122,362,164,385,212,407,231,414,229,419,210,412,162,390,120,367"/>
 <area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a084dbf4edfe7c82d0eee95e6ff0ee807" title="Initializes bindings and event listeners for the player menu components." alt="" coords="227,488,458,531"/>
 <area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="102,363,147,419,177,449,212,474,222,479,219,484,209,478,174,453,143,422,98,366"/>

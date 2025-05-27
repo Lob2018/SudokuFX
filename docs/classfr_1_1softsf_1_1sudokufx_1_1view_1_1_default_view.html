@@ -151,6 +151,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a604e9a10d6a80d50ec327abdcda2209e" id="r_a604e9a10d6a80d50ec327abdcda2209e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a604e9a10d6a80d50ec327abdcda2209e">handleMenuMiniShow</a> ()</td></tr>
 <tr class="memdesc:a604e9a10d6a80d50ec327abdcda2209e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the MINI menu and hides it after 10 seconds if still active and the button "menuMiniButtonShow" has the focus.  <br /></td></tr>
 <tr class="separator:a604e9a10d6a80d50ec327abdcda2209e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b032103884277ac49e9719bfed28093" id="r_a4b032103884277ac49e9719bfed28093"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b032103884277ac49e9719bfed28093">handleMenuNewShow</a> ()</td></tr>
+<tr class="memdesc:a4b032103884277ac49e9719bfed28093"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens GitHub releases URL via the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component that handles navigation and UI logic in a JavaFX applicatio...">Coordinator</a>.  <br /></td></tr>
+<tr class="separator:a4b032103884277ac49e9719bfed28093"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0252b73c4c4584a1e6bedefa1e01a89d" id="r_a0252b73c4c4584a1e6bedefa1e01a89d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0252b73c4c4584a1e6bedefa1e01a89d">handleMenuPlayerShow</a> ()</td></tr>
 <tr class="memdesc:a0252b73c4c4584a1e6bedefa1e01a89d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the PLAYER menu, refreshes the player list to reflect potential localization changes, and sets focus on the player button to assist keyboard and accessibility navigation.  <br /></td></tr>
 <tr class="separator:a0252b73c4c4584a1e6bedefa1e01a89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,7 +231,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a102802b83cb4b7d16ad9b5647790a805"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the mini menu by binding all buttons' texts and tooltips to their respective ViewModel properties.  <br /></td></tr>
 <tr class="separator:a102802b83cb4b7d16ad9b5647790a805"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364924a9e9ac437e3343ca332ae076fb" id="r_a364924a9e9ac437e3343ca332ae076fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a364924a9e9ac437e3343ca332ae076fb">newMenuInitialization</a> ()</td></tr>
-<tr class="memdesc:a364924a9e9ac437e3343ca332ae076fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up bindings between the "New" menu UI components and the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" title="ViewModel managing menu &quot;new version&quot; UI state and accessibility strings.">MenuNewViewModel</a>.  <br /></td></tr>
+<tr class="memdesc:a364924a9e9ac437e3343ca332ae076fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds "New" menu UI elements to the ViewModel for text, accessibility, visibility, and tooltips, and shows toast notifications on status message updates.  <br /></td></tr>
 <tr class="separator:a364924a9e9ac437e3343ca332ae076fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4269b183d120ae7149f854d53d35f122" id="r_a4269b183d120ae7149f854d53d35f122"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4269b183d120ae7149f854d53d35f122">openingConfigureStage</a> ()</td></tr>
 <tr class="memdesc:a4269b183d120ae7149f854d53d35f122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the primary stage for the full menu view.  <br /></td></tr>
@@ -1021,6 +1024,25 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4b032103884277ac49e9719bfed28093" name="a4b032103884277ac49e9719bfed28093"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b032103884277ac49e9719bfed28093">&#9670;&#160;</a></span>handleMenuNewShow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.handleMenuNewShow </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opens GitHub releases URL via the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component that handles navigation and UI logic in a JavaFX applicatio...">Coordinator</a>. </p>
+
+</div>
+</div>
 <a id="a0252b73c4c4584a1e6bedefa1e01a89d" name="a0252b73c4c4584a1e6bedefa1e01a89d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0252b73c4c4584a1e6bedefa1e01a89d">&#9670;&#160;</a></span>handleMenuPlayerShow()</h2>
 
@@ -1251,8 +1273,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets up bindings between the "New" menu UI components and the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" title="ViewModel managing menu &quot;new version&quot; UI state and accessibility strings.">MenuNewViewModel</a>. </p>
-<p>Binds text properties, accessible texts, and tooltips of the maxi and mini "New" buttons to keep the UI synchronized with the ViewModel. </p>
+<p>Binds "New" menu UI elements to the ViewModel for text, accessibility, visibility, and tooltips, and shows toast notifications on status message updates. </p>
 
 </div>
 </div>
@@ -3664,7 +3685,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html">DefaultView</a></li>
-    <li class="footer">Generated on Tue May 27 2025 15:03:50 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue May 27 2025 17:51:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

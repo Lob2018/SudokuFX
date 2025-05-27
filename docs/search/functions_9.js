@@ -19,7 +19,8 @@ var searchData=
   ['isselected_16',['isselected',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_1_1_game_builder.html#a6d78b72e5aed0b71dec466649ed8dee3',1,'fr.softsf.sudokufx.model.Game.GameBuilder.isselected()'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_1_1_player_builder.html#a178425de977f3eb65aaef2310a1b04c9',1,'fr.softsf.sudokufx.model.Player.PlayerBuilder.isselected()']]],
   ['isselectedbinding_17',['isSelectedBinding',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a526715c7454e1e8e77e7996c5b901385',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
   ['isspringcontextexitonrefresh_18',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#aff54c65c6ec18575ff3b13a6c1c83ed0',1,'fr::softsf::sudokufx::configuration::JVMApplicationProperties']]],
-  ['isvalidatedbyregex_19',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a63515972ba0da600313ea8063ee247e4',1,'fr::softsf::sudokufx::enums::MyRegex']]],
-  ['isvalidimage_20',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_image_utils.html#a04e82b88e0879cda34f134022f75e83e',1,'fr::softsf::sudokufx::utils::ImageUtils']]],
-  ['isvalidpassword_21',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a30146fb5bfaa0889c47477c19a8be157',1,'fr::softsf::sudokufx::enums::MyRegex']]]
+  ['isuptodateproperty_19',['isUpToDateProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#afbe70999a0a118d69927bea13427c056',1,'fr::softsf::sudokufx::viewmodel::MenuNewViewModel']]],
+  ['isvalidatedbyregex_20',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a63515972ba0da600313ea8063ee247e4',1,'fr::softsf::sudokufx::enums::MyRegex']]],
+  ['isvalidimage_21',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_image_utils.html#a04e82b88e0879cda34f134022f75e83e',1,'fr::softsf::sudokufx::utils::ImageUtils']]],
+  ['isvalidpassword_22',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a30146fb5bfaa0889c47477c19a8be157',1,'fr::softsf::sudokufx::enums::MyRegex']]]
 ];
