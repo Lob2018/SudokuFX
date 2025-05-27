@@ -224,7 +224,7 @@ public class MenuBackgroundViewModel {
             String errorMessage =
                     I18n.INSTANCE.getValue(
                             "toast.error.backgroundviewmodel.handlefileimagechooser");
-            log.error("██ Exception handleFileImageChooser : " + errorMessage);
+            log.error("██ Exception handleFileImageChooser : {}", errorMessage);
             toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
         }
     }
