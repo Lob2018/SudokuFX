@@ -184,8 +184,8 @@ public final class DefaultView implements IMainView {
     /**
      * Initializes bindings between the "New" menu UI components and the MenuNewViewModel.
      *
-     * <p>Binds button texts, accessible texts, visibility (based on update status), and tooltips
-     * to keep the UI responsive and synchronized with the ViewModel's state.
+     * <p>Binds button texts, accessible texts, visibility (based on update status), and tooltips to
+     * keep the UI responsive and synchronized with the ViewModel's state.
      */
     private void newMenuInitialization() {
         menuMaxiButtonNewText.textProperty().bind(menuNewViewModel.maxiNewTextProperty());
