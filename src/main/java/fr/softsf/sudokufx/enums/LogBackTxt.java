@@ -15,6 +15,7 @@ public enum LogBackTxt {
             """),
     ASCII_LOGO(
             """
+
             ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Application entry ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 
                      ▒▒▒▒▒                                                                                     \s
