@@ -55,7 +55,7 @@ import fr.softsf.sudokufx.viewmodel.*;
  */
 public final class DefaultView implements IMainView {
 
-    private static final Logger log = LoggerFactory.getLogger(DefaultView.class);
+    private static final Logger LOG = LoggerFactory.getLogger(DefaultView.class);
 
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Stage primaryStage = new Stage();
@@ -957,7 +957,7 @@ public final class DefaultView implements IMainView {
                                                     ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN);
                                         }
                                     } catch (Exception e) {
-                                        log.error(
+                                        LOG.error(
                                                 "██ DefaultView > handleMenuMiniShow exception"
                                                         + " occurred: {}",
                                                 e.getMessage(),

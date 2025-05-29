@@ -25,8 +25,6 @@ import fr.softsf.sudokufx.utils.sudoku.IGridMaster;
 // TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
 public class FullMenuViewModel {
 
-    private static final Logger log = LoggerFactory.getLogger(FullMenuViewModel.class);
-
     private final SoftwareService softwareService;
     private final IGridMaster iGridMaster;
     private final VersionService versionService;

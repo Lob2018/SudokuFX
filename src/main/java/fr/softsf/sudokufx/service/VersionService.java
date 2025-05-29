@@ -38,7 +38,7 @@ import static fr.softsf.sudokufx.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
 @Service
 public class VersionService {
 
-    private static final Logger log = LoggerFactory.getLogger(VersionService.class);
+    private static final Logger LOG = LoggerFactory.getLogger(VersionService.class);
 
     private static final String CURRENT_VERSION =
             JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty()
@@ -87,7 +87,7 @@ public class VersionService {
                     HttpResponse<String> response =
                             httpClient.send(request, HttpResponse.BodyHandlers.ofString());
                     if (response.statusCode() != 200) {
-                        log.error(
+                        LOG.error(
                                 "██ GitHub API returned non 200 status code: {}",
                                 response.statusCode());
                         updateMessage(
@@ -100,21 +100,21 @@ public class VersionService {
                                     + ")");
                     return parseResponse(response.body());
                 } catch (HttpTimeoutException ex) {
-                    log.warn("▓▓ Timeout while checking GitHub version");
+                    LOG.warn("▓▓ Timeout while checking GitHub version");
                     updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.warn.timeout"));
                 } catch (InterruptedException ex) {
-                    log.warn("▓▓ GitHub version check was interrupted", ex);
+                    LOG.warn("▓▓ GitHub version check was interrupted", ex);
                     updateMessage(
                             I18n.INSTANCE.getValue("githubrepositoryversion.warn.interrupted"));
                     Thread.currentThread().interrupt();
                 } catch (IOException ex) {
-                    log.error(
+                    LOG.error(
                             "██ Network error while retrieving GitHub version: {}",
                             ex.getMessage(),
                             ex);
                     updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.error.network"));
                 } catch (Exception ex) {
-                    log.error(
+                    LOG.error(
                             "██ Unexpected exception retrieving GitHub version: {}",
                             ex.getMessage(),
                             ex);
@@ -141,27 +141,27 @@ public class VersionService {
             String tagName =
                     list.stream().findFirst().map(TagDto::name).map(String::trim).orElse("");
             if (tagName.length() < 6) {
-                log.warn("▓▓ Invalid or too short tag received from GitHub: '{}'", tagName);
+                LOG.warn("▓▓ Invalid or too short tag received from GitHub: '{}'", tagName);
                 return true;
             }
             String lastVersion = tagName.substring(1);
             if (!MyRegex.INSTANCE.isValidatedByRegex(
                     lastVersion, MyRegex.INSTANCE.getVersionPattern())) {
-                log.warn(
+                LOG.warn(
                         "▓▓ GitHub version '{}' does not match expected semantic versioning format"
                                 + " (X.Y.Z).",
                         lastVersion);
                 return true;
             }
             boolean isLatest = compareVersions(CURRENT_VERSION, lastVersion) >= 0;
-            log.info(
+            LOG.info(
                     "▓▓ GitHub version check: currentVersion={}, lastVersion={}, result={}",
                     CURRENT_VERSION,
                     lastVersion,
                     isLatest);
             return isLatest;
         } catch (Exception e) {
-            log.error("██ Error parsing GitHub API response: {}", e.getMessage(), e);
+            LOG.error("██ Error parsing GitHub API response: {}", e.getMessage(), e);
             return true;
         }
     }

@@ -29,7 +29,7 @@ import static fr.softsf.sudokufx.enums.Paths.*;
 @Configuration
 public class MyLogbackConfig {
 
-    private static final Logger log = LoggerFactory.getLogger(MyLogbackConfig.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MyLogbackConfig.class);
     private final String logsFolderPath;
     private String logBackPath = CONFIG_LOGBACK_PATH.getPath();
 
@@ -64,9 +64,9 @@ public class MyLogbackConfig {
      * set to exit on refresh, it also logs an optimizing startup message.
      */
     public void printLogEntryMessage() {
-        log.info(ASCII_LOGO.getLogBackMessage());
+        LOG.info(ASCII_LOGO.getLogBackMessage());
         if (JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh())
-            log.info(OPTIMIZING.getLogBackMessage());
+            LOG.info(OPTIMIZING.getLogBackMessage());
     }
 
     /**

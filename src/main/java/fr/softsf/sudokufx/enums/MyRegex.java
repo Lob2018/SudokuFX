@@ -22,7 +22,7 @@ import org.slf4j.LoggerFactory;
 public enum MyRegex {
     INSTANCE;
 
-    private static final Logger log = LoggerFactory.getLogger(MyRegex.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MyRegex.class);
 
     /** Allowed special characters for password validation. */
     private static final String SPECIAL_CHARACTERS = "@#$%^&()!";

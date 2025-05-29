@@ -19,7 +19,7 @@ import fr.softsf.sudokufx.service.PlayerService;
 @Component
 public class CurrentPlayerState {
 
-    private static final Logger log = LoggerFactory.getLogger(CurrentPlayerState.class);
+    private static final Logger LOG = LoggerFactory.getLogger(CurrentPlayerState.class);
 
     private final ObjectProperty<PlayerDto> currentPlayer = new SimpleObjectProperty<>();
     private final PlayerService playerService;
@@ -48,7 +48,7 @@ public class CurrentPlayerState {
                 currentPlayer.set(player);
             }
         } catch (IllegalStateException e) {
-            log.error(
+            LOG.error(
                     "██ Error initializing player: {}, triggering Platform.exit()",
                     e.getMessage(),
                     e);

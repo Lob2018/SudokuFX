@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 public enum ExceptionTools {
     INSTANCE;
 
-    private static final Logger log = LoggerFactory.getLogger(ExceptionTools.class);
+    private static final Logger LOG = LoggerFactory.getLogger(ExceptionTools.class);
 
     /**
      * Logs the given message and throws an {@link IllegalArgumentException} with it.
@@ -27,7 +27,7 @@ public enum ExceptionTools {
      */
     public void logAndThrowIllegalArgument(String message) {
         IllegalArgumentException exception = new IllegalArgumentException(message);
-        log.error("██ Exception : {}", message, exception);
+        LOG.error("██ Exception : {}", message, exception);
         throw exception;
     }
 

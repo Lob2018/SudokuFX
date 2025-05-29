@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 public enum I18n {
     INSTANCE;
 
-    private static final Logger log = LoggerFactory.getLogger(I18n.class);
+    private static final Logger LOG = LoggerFactory.getLogger(I18n.class);
 
     private static final ObjectProperty<Locale> locale =
             new SimpleObjectProperty<>(Locale.getDefault());
@@ -69,16 +69,16 @@ public enum I18n {
      */
     public String getValue(final String key) {
         if (key == null) {
-            log.error("██ Localized string: Null key");
+            LOG.error("██ Localized string: Null key");
             return "???null???";
         }
         try {
             return bundle.getString(key);
         } catch (MissingResourceException e) {
-            log.error("██ Localized string: Missing key: {}", e.getMessage(), e);
+            LOG.error("██ Localized string: Missing key: {}", e.getMessage(), e);
             return "???missing:" + key + "???";
         } catch (ClassCastException e) {
-            log.error("██ Localized string: Invalid key: {}", e.getMessage(), e);
+            LOG.error("██ Localized string: Invalid key: {}", e.getMessage(), e);
             return "???invalid:" + key + "???";
         }
     }

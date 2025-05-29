@@ -59,7 +59,7 @@ import fr.softsf.sudokufx.view.SplashScreenView;
 })
 public class SudoMain extends Application {
 
-    private static final Logger log = LoggerFactory.getLogger(SudoMain.class);
+    private static final Logger LOG = LoggerFactory.getLogger(SudoMain.class);
 
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
@@ -85,15 +85,15 @@ public class SudoMain extends Application {
      */
     private static void sqlInvalidAuthorization(
             Exception e, SQLInvalidAuthorizationSpecException sqlException) {
-        log.error("██ SQLInvalidAuthorizationSpecException catch : {}", e.getMessage(), e);
+        LOG.error("██ SQLInvalidAuthorizationSpecException catch : {}", e.getMessage(), e);
         String sqlState = sqlException.getSQLState();
         if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
-            log.error(
+            LOG.error(
                     "██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch :"
                             + " {}",
                     e.getMessage(),
                     e);
-            log.info(
+            LOG.info(
                     "\n\n{}",
                     LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage());
         }
@@ -130,7 +130,7 @@ public class SudoMain extends Application {
                     });
             springInitializer.runInitializationTask(springInitializeTask);
         } catch (Exception ex) {
-            log.error(
+            LOG.error(
                     "██ Exception catch inside start() : {}, triggering Platform.exit()",
                     ex.getMessage(),
                     ex);
@@ -151,7 +151,7 @@ public class SudoMain extends Application {
             long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
             createViewTransition("default-view", minimumTimelapse).play();
         } catch (Exception ex) {
-            log.error(
+            LOG.error(
                     "██ Exception caught after Spring Context initialization with FXML : {},"
                             + " triggering Platform.exit()",
                     ex.getMessage(),
@@ -180,10 +180,10 @@ public class SudoMain extends Application {
         SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException =
                 ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(throwable);
         if (sqlInvalidAuthorizationSpecException == null) {
-            log.error(msg, " – triggering Platform.exit()", throwable.getMessage(), throwable);
+            LOG.error(msg, " – triggering Platform.exit()", throwable.getMessage(), throwable);
             Platform.exit();
         } else {
-            log.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
+            LOG.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
             sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
             PauseTransition pause = createViewTransition("crashscreen-view", 0);
             pause.play();

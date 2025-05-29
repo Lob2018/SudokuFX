@@ -28,7 +28,7 @@ import fr.softsf.sudokufx.utils.MyDateTime;
  */
 public final class GameDtoListCell extends ListCell<GameDto> {
 
-    private static final Logger log = LoggerFactory.getLogger(GameDtoListCell.class);
+    private static final Logger LOG = LoggerFactory.getLogger(GameDtoListCell.class);
 
     private final HBox hBox = new HBox();
     private final Label label = new Label();
@@ -104,7 +104,7 @@ public final class GameDtoListCell extends ListCell<GameDto> {
                         if (getItem() != null) {
                             confirmAndRemoveItem(getItem());
                         } else {
-                            log.warn(
+                            LOG.warn(
                                     "▓▓ getItem() returned null in GameDtoListCell button action.");
                         }
                     });

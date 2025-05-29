@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
 public enum OsFolderInitializer {
     INSTANCE;
 
-    private static final Logger log = LoggerFactory.getLogger(OsFolderInitializer.class);
+    private static final Logger LOG = LoggerFactory.getLogger(OsFolderInitializer.class);
 
     /**
      * Creates folders for data and logs. This method attempts to create the specified data and logs
@@ -44,18 +44,18 @@ public enum OsFolderInitializer {
         try {
             if (!folder.exists()) {
                 if (!folder.mkdirs()) {
-                    log.error(
+                    LOG.error(
                             "██ Failed to create folder with mkdirs(): {}",
                             folder.getAbsolutePath());
                     throw new RuntimeException(
                             "Failed to create folder with mkdirs(): {}" + folder.getAbsolutePath());
                 }
-                log.info("▓▓ Folder created successfully: {}", folder.getAbsolutePath());
+                LOG.info("▓▓ Folder created successfully: {}", folder.getAbsolutePath());
             } else {
-                log.info("▓▓ Folder already exists: {}", folder.getAbsolutePath());
+                LOG.info("▓▓ Folder already exists: {}", folder.getAbsolutePath());
             }
         } catch (SecurityException e) {
-            log.error(
+            LOG.error(
                     "██ Security error when creating needed folder: {}. █ Path: {}",
                     e.getMessage(),
                     folder.getAbsolutePath(),
@@ -63,7 +63,7 @@ public enum OsFolderInitializer {
             throw new RuntimeException(
                     "Security error when creating needed folder: " + folder.getAbsolutePath(), e);
         } catch (Exception e) {
-            log.error(
+            LOG.error(
                     "██ Error when creating needed folder: {}. █ Path: {}",
                     e.getMessage(),
                     folder.getAbsolutePath(),

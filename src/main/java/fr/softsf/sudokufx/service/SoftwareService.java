@@ -20,7 +20,7 @@ import fr.softsf.sudokufx.repository.SoftwareRepository;
 @Service
 public class SoftwareService {
 
-    private static final Logger log = LoggerFactory.getLogger(SoftwareService.class);
+    private static final Logger LOG = LoggerFactory.getLogger(SoftwareService.class);
 
     private final SoftwareRepository softwareRepository;
     private final ISoftwareMapper softwareMapper;
@@ -37,11 +37,11 @@ public class SoftwareService {
                     .map(softwareMapper::mapSoftwareToDto)
                     .or(
                             () -> {
-                                log.error("██ No software found.");
+                                LOG.error("██ No software found.");
                                 return Optional.empty();
                             });
         } catch (Exception e) {
-            log.error("██ Exception retrieving software : {}", e.getMessage(), e);
+            LOG.error("██ Exception retrieving software : {}", e.getMessage(), e);
             return Optional.empty();
         }
     }
@@ -53,7 +53,7 @@ public class SoftwareService {
             Software updatedSoftware = softwareRepository.save(software);
             return Optional.ofNullable(softwareMapper.mapSoftwareToDto(updatedSoftware));
         } catch (Exception e) {
-            log.error("██ Error updating software : {}", e.getMessage(), e);
+            LOG.error("██ Error updating software : {}", e.getMessage(), e);
             return Optional.empty();
         }
     }

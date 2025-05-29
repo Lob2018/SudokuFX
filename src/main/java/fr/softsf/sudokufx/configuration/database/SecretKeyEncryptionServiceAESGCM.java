@@ -26,7 +26,7 @@ import jakarta.validation.constraints.NotBlank;
  */
 final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
 
-    private static final Logger log =
+    private static final Logger LOG =
             LoggerFactory.getLogger(SecretKeyEncryptionServiceAESGCM.class);
 
     private static final SecureRandom random = new SecureRandom();
@@ -45,7 +45,7 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
         try {
             cipher = Cipher.getInstance("AES/GCM/NoPadding");
         } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
-            log.error(
+            LOG.error(
                     "██ Exception catch inside SecretKeyEncryptionServiceAESGCM(SecretKey)"
                             + " constructor : {}",
                     e.getMessage(),
@@ -65,7 +65,7 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
             String iv64 = encoder.encodeToString(iv);
             return encrypt64 + "#" + iv64;
         } catch (Exception e) {
-            log.error("██ Exception catch inside encrypt(original) : {}", e.getMessage(), e);
+            LOG.error("██ Exception catch inside encrypt(original) : {}", e.getMessage(), e);
             return "";
         }
     }
@@ -82,7 +82,7 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
             byte[] decryptedData = cipher.doFinal(cypherText);
             return new String(decryptedData, StandardCharsets.UTF_8);
         } catch (Exception e) {
-            log.error("██ Exception catch inside decrypt(cypher) : {}", e.getMessage(), e);
+            LOG.error("██ Exception catch inside decrypt(cypher) : {}", e.getMessage(), e);
             return "";
         }
     }

@@ -30,7 +30,7 @@ import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 @Component
 public class Coordinator {
 
-    private static final Logger log = LoggerFactory.getLogger(Coordinator.class);
+    private static final Logger LOG = LoggerFactory.getLogger(Coordinator.class);
 
     /** The main JavaFX scene managed by this coordinator. */
     private Scene defaultScene;
@@ -105,7 +105,7 @@ public class Coordinator {
             }
             return fxmlLoader.getController();
         } catch (Exception e) {
-            log.error(
+            LOG.error(
                     "██ Exception caught when setting root by FXML name: {} █ The FXML path was"
                             + " (triggering Platform.exit()): {}",
                     e.getMessage(),

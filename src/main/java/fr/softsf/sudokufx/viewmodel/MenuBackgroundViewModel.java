@@ -40,7 +40,7 @@ import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 @Component
 public class MenuBackgroundViewModel {
 
-    private static final Logger log = LoggerFactory.getLogger(MenuBackgroundViewModel.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MenuBackgroundViewModel.class);
 
     private final ImageUtils imageUtils;
 
@@ -250,7 +250,7 @@ public class MenuBackgroundViewModel {
             String errorMessage =
                     I18n.INSTANCE.getValue(
                             "toast.error.backgroundviewmodel.handlefileimagechooser");
-            log.error("██ Exception handleFileImageChooser : {}", errorMessage);
+            LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
             toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
         }
     }
@@ -301,7 +301,7 @@ public class MenuBackgroundViewModel {
                                             true,
                                             true);
                             if (resizedImage.isError()) {
-                                log.error(
+                                LOG.error(
                                         "██ Exception resizedImage.isError() : {}",
                                         resizedImage.getException().getMessage(),
                                         resizedImage.getException());
@@ -309,7 +309,7 @@ public class MenuBackgroundViewModel {
                             }
                             return imageUtils.createBackgroundImage(resizedImage);
                         } catch (Exception e) {
-                            log.error("██ Exception loadImage call() : {}", e.getMessage(), e);
+                            LOG.error("██ Exception loadImage call() : {}", e.getMessage(), e);
                             return null;
                         }
                     }
@@ -367,7 +367,7 @@ public class MenuBackgroundViewModel {
         Platform.runLater(
                 () -> {
                     toaster.removeToast();
-                    log.error(
+                    LOG.error(
                             "██ Exception onImageTaskError : {}",
                             exception.getMessage(),
                             exception);

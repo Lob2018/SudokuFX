@@ -20,8 +20,6 @@ import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 @Component
 final class GridMaster implements IGridMaster {
 
-    private static final Logger log = LoggerFactory.getLogger(IGridMaster.class);
-
     private static final int ORDRE = 3;
     private static final int DIMENSION = ORDRE * ORDRE;
     private static final int NOMBRE_CASES = DIMENSION * DIMENSION;

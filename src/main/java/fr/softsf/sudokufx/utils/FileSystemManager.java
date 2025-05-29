@@ -19,20 +19,20 @@ import org.slf4j.LoggerFactory;
  */
 public final class FileSystemManager implements IFileSystem {
 
-    private static final Logger log = LoggerFactory.getLogger(FileSystemManager.class);
+    private static final Logger LOG = LoggerFactory.getLogger(FileSystemManager.class);
 
     @Override
     public boolean deleteFolderRecursively(final Path folderPath, final String mustEndWithThat) {
         if (folderPath.endsWith(mustEndWithThat)) {
-            log.info("▓▓▓▓ The directory path is correct :{}", folderPath);
+            LOG.info("▓▓▓▓ The directory path is correct :{}", folderPath);
             try (Stream<Path> stream = Files.walk(folderPath)) {
                 stream.sorted(Comparator.reverseOrder()).forEach(this::deleteFile);
                 return true;
             } catch (Exception e) {
-                log.error("██ Exception catch from deleteFolder : {}", e.getMessage(), e);
+                LOG.error("██ Exception catch from deleteFolder : {}", e.getMessage(), e);
             }
         } else {
-            log.info("▓▓▓▓ The directory path is not correct :{}", folderPath);
+            LOG.info("▓▓▓▓ The directory path is not correct :{}", folderPath);
         }
         return false;
     }
@@ -48,7 +48,7 @@ public final class FileSystemManager implements IFileSystem {
         try {
             Files.delete(path);
         } catch (Exception e) {
-            log.error("██ Failed to delete file: {}", path, e);
+            LOG.error("██ Failed to delete file: {}", path, e);
             return e;
         }
         return null;

@@ -26,7 +26,7 @@ import fr.softsf.sudokufx.dto.PlayerDto;
  */
 public final class PlayerDtoListCell extends ListCell<PlayerDto> {
 
-    private static final Logger log = LoggerFactory.getLogger(PlayerDtoListCell.class);
+    private static final Logger LOG = LoggerFactory.getLogger(PlayerDtoListCell.class);
 
     private final HBox hBox = new HBox();
     private final Label label = new Label();
@@ -99,7 +99,7 @@ public final class PlayerDtoListCell extends ListCell<PlayerDto> {
                         if (getItem() != null) {
                             confirmAndRemoveItem(getItem());
                         } else {
-                            log.warn("▓▓ getItem() returned null in ItemListCell button action.");
+                            LOG.warn("▓▓ getItem() returned null in ItemListCell button action.");
                         }
                     });
         }

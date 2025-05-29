@@ -43,8 +43,6 @@ import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
  */
 public final class FullMenuView implements IMainView {
 
-    private static final Logger log = LoggerFactory.getLogger(FullMenuView.class);
-
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private final Text text1 = new Text("Helloj! ");
     private final Stage primaryStage = new Stage();

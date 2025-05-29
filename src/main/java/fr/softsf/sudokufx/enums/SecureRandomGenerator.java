@@ -17,7 +17,7 @@ import org.slf4j.LoggerFactory;
 public enum SecureRandomGenerator {
     INSTANCE;
 
-    private static final Logger log = LoggerFactory.getLogger(SecureRandomGenerator.class);
+    private static final Logger LOG = LoggerFactory.getLogger(SecureRandomGenerator.class);
 
     private final SecureRandom secureRandom = new SecureRandom();
 
@@ -33,7 +33,7 @@ public enum SecureRandomGenerator {
         if (bound <= 0) {
             IllegalArgumentException e =
                     new IllegalArgumentException("The nextInt bound must be positive");
-            log.error("██ Exception caught from nextInt(bound) : {}", e.getMessage(), e);
+            LOG.error("██ Exception caught from nextInt(bound) : {}", e.getMessage(), e);
             throw e;
         }
         return secureRandom.nextInt(bound);
@@ -51,7 +51,7 @@ public enum SecureRandomGenerator {
         if (origin >= bound) {
             IllegalArgumentException e =
                     new IllegalArgumentException("The nextInt origin must be less than bound");
-            log.error("██ Exception caught from nextInt(origin,bound) : {}", e.getMessage(), e);
+            LOG.error("██ Exception caught from nextInt(origin,bound) : {}", e.getMessage(), e);
             throw e;
         }
         return secureRandom.nextInt(bound - origin) + origin;

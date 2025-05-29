@@ -17,9 +17,14 @@ import fr.softsf.sudokufx.model.Player;
  * <p>Includes helper methods to map between entity IDs and partial entity instances, facilitating
  * reference mapping without full entity loading.
  */
-public class MapperUtils {
+public final class MapperUtils {
 
-    private static final Logger log = LoggerFactory.getLogger(MapperUtils.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MapperUtils.class);
+
+    private MapperUtils() {
+        LOG.error("██ Attempted to instantiate MapperUtils utility class.");
+        throw new UnsupportedOperationException("Utility class should not be instantiated");
+    }
 
     /**
      * Converts a Player ID to a Player entity instance with only the ID set.
@@ -32,7 +37,7 @@ public class MapperUtils {
     @Named("mapPlayerIdToPlayer")
     public static Player mapPlayerIdToPlayer(Long playerId) {
         if (playerId == null) {
-            log.warn("▓▓ Player ID is null, returning null Player entity.");
+            LOG.warn("▓▓ Player ID is null, returning null Player entity.");
             return null;
         }
         return Player.builder().playerid(playerId).build();

@@ -23,7 +23,7 @@ import fr.softsf.sudokufx.repository.PlayerRepository;
 @Service
 public class PlayerService {
 
-    private static final Logger log = LoggerFactory.getLogger(PlayerService.class);
+    private static final Logger LOG = LoggerFactory.getLogger(PlayerService.class);
 
     private final PlayerRepository playerRepository;
     private final IPlayerMapper playerMapper;
@@ -46,11 +46,11 @@ public class PlayerService {
                     .map(playerMapper::mapPlayerToDto)
                     .or(
                             () -> {
-                                log.error("██ No player found.");
+                                LOG.error("██ No player found.");
                                 return Optional.empty();
                             });
         } catch (Exception e) {
-            log.error("██ Exception retrieving player: {}", e.getMessage(), e);
+            LOG.error("██ Exception retrieving player: {}", e.getMessage(), e);
             return Optional.empty();
         }
     }
