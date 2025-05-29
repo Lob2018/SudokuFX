@@ -10,6 +10,7 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.interfaces.mapper.IPlayerMapper;
@@ -36,9 +37,11 @@ public class PlayerService {
     /**
      * Retrieves the first selected Player and maps it to a PlayerDto.
      *
-     * @return an Optional containing the mapped PlayerDto if a Player is found; otherwise, an empty
-     *     Optional.
+     * <p>@Transactional(readOnly = true) ensures lazy-loaded games are fetched during mapping.
+     *
+     * @return an Optional containing the mapped PlayerDto if a Player is found; otherwise, empty.
      */
+    @Transactional(readOnly = true)
     public Optional<PlayerDto> getPlayer() {
         try {
             return playerRepository

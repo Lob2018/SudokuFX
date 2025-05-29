@@ -15,6 +15,7 @@ public record PlayerDto(
         @NotNull PlayerLanguageDto playerlanguageidDto,
         @NotNull BackgroundDto backgroundidDto,
         @NotNull MenuDto menuidDto,
+        GameDto selectedGame,
         @NotNull @Size(max = 256) String name,
         @NotNull Boolean isselected,
         @NotNull LocalDateTime createdat,

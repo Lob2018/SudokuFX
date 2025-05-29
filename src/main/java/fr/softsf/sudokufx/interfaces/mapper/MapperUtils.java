@@ -5,18 +5,16 @@
  */
 package fr.softsf.sudokufx.interfaces.mapper;
 
+import java.util.Set;
+
 import org.mapstruct.Named;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fr.softsf.sudokufx.model.Game;
 import fr.softsf.sudokufx.model.Player;
 
-/**
- * Utility class providing custom mapping methods for use with MapStruct.
- *
- * <p>Includes helper methods to map between entity IDs and partial entity instances, facilitating
- * reference mapping without full entity loading.
- */
+/** Utility class providing custom mapping methods for use with MapStruct. */
 public final class MapperUtils {
 
     private static final Logger LOG = LoggerFactory.getLogger(MapperUtils.class);
@@ -41,5 +39,22 @@ public final class MapperUtils {
             return null;
         }
         return Player.builder().playerid(playerId).build();
+    }
+
+    /** Returns the first selected Game from the set, or null if none or if input is null. */
+    @Named("mapSelectedGame")
+    public static Game mapSelectedGame(Set<Game> games) {
+        if (games == null) {
+            LOG.warn("▓▓ Games Set is null, returning null Game entity.");
+            return null;
+        }
+        return games.stream()
+                .filter(game -> Boolean.TRUE.equals(game.getIsselected()))
+                .findFirst()
+                .orElseGet(
+                        () -> {
+                            LOG.warn("▓▓ No selected game found in Games set.");
+                            return null;
+                        });
     }
 }

@@ -20,13 +20,20 @@ import fr.softsf.sudokufx.model.Player;
  */
 @Mapper(
         componentModel = "spring",
-        uses = {IPlayerLanguageMapper.class, IBackgroundMapper.class, IMenuMapper.class})
+        uses = {
+            MapperUtils.class,
+            IPlayerLanguageMapper.class,
+            IBackgroundMapper.class,
+            IMenuMapper.class,
+            IGameMapper.class
+        })
 public interface IPlayerMapper {
 
     /**
      * Converts a {@link Player} entity to a {@link PlayerDto}.
      *
-     * <p>The 'games' field is explicitly ignored in the mapping.
+     * <p>The 'selectedGame' in PlayerDto is mapped from the first selected Game in the Player's
+     * 'games' set. Other games are ignored.
      *
      * @param player the Player entity to map; must not be null.
      * @return a PlayerDto representing the data of the given Player entity.
@@ -34,12 +41,13 @@ public interface IPlayerMapper {
     @Mapping(target = "playerlanguageidDto", source = "player.playerlanguageid")
     @Mapping(target = "backgroundidDto", source = "player.backgroundid")
     @Mapping(target = "menuidDto", source = "player.menuid")
+    @Mapping(target = "selectedGame", source = "player.games", qualifiedByName = "mapSelectedGame")
     PlayerDto mapPlayerToDto(Player player);
 
     /**
      * Converts a {@link PlayerDto} to a {@link Player} entity.
      *
-     * <p>The 'games' field is explicitly ignored in the mapping.
+     * <p>The 'games' field is ignored during this mapping.
      *
      * @param dto the PlayerDto to map; must not be null.
      * @return a Player entity representing the data of the given PlayerDto.

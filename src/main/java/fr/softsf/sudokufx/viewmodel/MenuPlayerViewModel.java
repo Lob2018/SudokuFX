@@ -195,6 +195,7 @@ public class MenuPlayerViewModel {
                 new PlayerLanguageDto(1L, "FR"),
                 new BackgroundDto(1L, "#3498db", null, false),
                 new MenuDto((byte) 1, (byte) 1),
+                null,
                 name,
                 false,
                 LocalDateTime.now(),
