@@ -17,7 +17,7 @@ public enum MyDateTime {
     INSTANCE;
 
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
-    private static final Clock clock = Clock.systemDefaultZone();
+    private static final Clock CLOCK = Clock.systemDefaultZone();
 
     private final DateTimeFormatter frenchFormatter =
             DateTimeFormatter.ofPattern("dd/MM/yy HH:mm", Locale.FRENCH);
@@ -30,7 +30,7 @@ public enum MyDateTime {
      * @return A string representing the current time in "HH:mm:ss" format.
      */
     public String getFormattedCurrentTime() {
-        return LocalDateTime.now(clock).format(TIME_FORMATTER);
+        return LocalDateTime.now(CLOCK).format(TIME_FORMATTER);
     }
 
     /**

@@ -19,7 +19,7 @@ class GridMasterUTest {
     private IGridMaster iGridMaster;
     private GridMaster gridMaster;
 
-    private static final GridMaster gridMasterNormally = new GridMaster();
+    private static final GridMaster GRID_MASTER_NORMALLY = new GridMaster();
     private static int gridMasterNormallyLastLevel = -1;
 
     @BeforeEach
@@ -94,7 +94,7 @@ class GridMasterUTest {
     @ParameterizedTest
     @ValueSource(ints = {1, 1, 2, 2, 3, 3})
     void givenValidLevel_whenCreateGridsNormally_thenGridsGeneratedSuccessfully(int level) {
-        int[][] grids = gridMasterNormally.creerLesGrilles(level);
+        int[][] grids = GRID_MASTER_NORMALLY.creerLesGrilles(level);
         assertNotNull(grids);
         assertNotNull(grids[0]);
         assertNotNull(grids[1]);

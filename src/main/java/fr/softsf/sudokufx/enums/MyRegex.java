@@ -32,11 +32,11 @@ public enum MyRegex {
      * (lowercase/uppercase), digits, and special characters @#$%^&()! are allowed. - Exactly 24
      * characters in total.
      */
-    private static final Pattern secretPattern =
+    private static final Pattern SECRET_PATTERN =
             Pattern.compile("^[a-zA-Z0-9" + SPECIAL_CHARACTERS + "]{24}$");
 
     public Pattern getSecretPattern() {
-        return secretPattern;
+        return SECRET_PATTERN;
     }
 
     /**
@@ -44,21 +44,21 @@ public enum MyRegex {
      * Major, minor, and patch versions must be non-negative integers. - Each version component must
      * be separated by a '.' character.
      */
-    private static final Pattern versionPattern =
+    private static final Pattern VERSION_PATTERN =
             Pattern.compile("^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$");
 
     public Pattern getVersionPattern() {
-        return versionPattern;
+        return VERSION_PATTERN;
     }
 
     /**
      * Precompiled regex pattern for validating alphanumeric strings. Requirements: - Only letters,
      * digits, spaces, and dots are allowed.
      */
-    private static final Pattern alphanumericPattern = Pattern.compile("^[a-zA-Z0-9\\s.]+$");
+    private static final Pattern ALPHANUMERIC_PATTERN = Pattern.compile("^[a-zA-Z0-9\\s.]+$");
 
     public Pattern getAlphanumericPattern() {
-        return alphanumericPattern;
+        return ALPHANUMERIC_PATTERN;
     }
 
     /**
@@ -78,7 +78,7 @@ public enum MyRegex {
                 text, "MyRegex>isValidatedByRegex : The text to validate must not be null.");
         Objects.requireNonNull(
                 pattern, "MyRegex>isValidatedByRegex : The pattern must not be null.");
-        if (pattern.equals(secretPattern)) {
+        if (pattern.equals(SECRET_PATTERN)) {
             return isValidPassword(text);
         }
         return pattern.matcher(text).matches();
@@ -103,7 +103,7 @@ public enum MyRegex {
      */
     private boolean isValidPassword(final String password) {
         Objects.requireNonNull(password, "MyRegex>isValidPassword : Password must not be null.");
-        if (!secretPattern.matcher(password).matches()) return false;
+        if (!SECRET_PATTERN.matcher(password).matches()) return false;
         long lowerCaseCount = password.chars().filter(Character::isLowerCase).count();
         long upperCaseCount = password.chars().filter(Character::isUpperCase).count();
         long digitCount = password.chars().filter(Character::isDigit).count();

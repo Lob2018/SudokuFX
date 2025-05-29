@@ -51,9 +51,9 @@ public final class CrashScreenView implements IMainView {
 
     private static final Logger LOG = LoggerFactory.getLogger(CrashScreenView.class);
 
-    private static final IOsFolderFactory iOsFolderFactory =
+    private static final IOsFolderFactory I_OS_FOLDER_FACTORY =
             new OsFolderFactoryManager().iOsFolderFactory();
-    private static final IFileSystem iFileSystem = new FileSystemManager();
+    private static final IFileSystem I_FILE_SYSTEM = new FileSystemManager();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
 
     private final Stage crashscreenStage = new Stage();
@@ -89,8 +89,8 @@ public final class CrashScreenView implements IMainView {
     @FXML
     private void resetButtonClick() {
         LOG.info("▓▓▓▓ The user choose to reset the application data");
-        Path pathToDelete = Paths.get(iOsFolderFactory.getOsDataFolderPath());
-        if (iFileSystem.deleteFolderRecursively(pathToDelete, DATA_FOLDER.getPath())) {
+        Path pathToDelete = Paths.get(I_OS_FOLDER_FACTORY.getOsDataFolderPath());
+        if (I_FILE_SYSTEM.deleteFolderRecursively(pathToDelete, DATA_FOLDER.getPath())) {
             LOG.info("▓▓▓▓ The directory is deleted, triggering Platform.exit()");
         } else {
             LOG.info("▓▓▓▓ The directory isn't deleted, triggering Platform.exit()");
@@ -159,7 +159,7 @@ public final class CrashScreenView implements IMainView {
         crashscreenvboxCenterhboxLabel2.setText(
                 I18n.INSTANCE.getValue("crashscreen.extramessage")
                         + "\n"
-                        + iOsFolderFactory.getOsDataFolderPath());
+                        + I_OS_FOLDER_FACTORY.getOsDataFolderPath());
         crashscreenvboxCenterhboxLabel2.setWrapText(true);
         crashscreenvboxCenterhboxLabel2.setTextFill(crashDefaultFontColor);
         buttonReset.setText(I18n.INSTANCE.getValue("crashscreen.reset"));

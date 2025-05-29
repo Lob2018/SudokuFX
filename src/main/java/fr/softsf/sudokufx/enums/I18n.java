@@ -23,7 +23,7 @@ public enum I18n {
 
     private static final Logger LOG = LoggerFactory.getLogger(I18n.class);
 
-    private static final ObjectProperty<Locale> locale =
+    private static final ObjectProperty<Locale> LOCALE =
             new SimpleObjectProperty<>(Locale.getDefault());
 
     private static final Locale LOCALE_FR = Locale.of("fr", "FR");
@@ -38,7 +38,7 @@ public enum I18n {
         FRENCH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_FR);
         ENGLISH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_EN);
         bundle = FRENCH_BUNDLE;
-        locale.addListener((obs, oldLocale, newLocale) -> Locale.setDefault(newLocale));
+        LOCALE.addListener((obs, oldLocale, newLocale) -> Locale.setDefault(newLocale));
     }
 
     /**
@@ -50,7 +50,7 @@ public enum I18n {
      */
     public synchronized I18n setLocaleBundle(final String i18n) {
         bundle = "EN".equals(i18n) ? ENGLISH_BUNDLE : FRENCH_BUNDLE;
-        locale.set(bundle.getLocale());
+        LOCALE.set(bundle.getLocale());
         return INSTANCE;
     }
 
@@ -58,7 +58,7 @@ public enum I18n {
      * @return Observable locale property.
      */
     public ObjectProperty<Locale> localeProperty() {
-        return locale;
+        return LOCALE;
     }
 
     /**

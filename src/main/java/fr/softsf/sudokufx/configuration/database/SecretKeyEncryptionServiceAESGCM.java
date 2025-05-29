@@ -29,7 +29,7 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     private static final Logger LOG =
             LoggerFactory.getLogger(SecretKeyEncryptionServiceAESGCM.class);
 
-    private static final SecureRandom random = new SecureRandom();
+    private static final SecureRandom RANDOM = new SecureRandom();
     private final SecretKey secretKey;
     private Cipher cipher;
 
@@ -57,7 +57,7 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     public String encrypt(@NotBlank final String original) {
         byte[] iv = new byte[16];
         try {
-            random.nextBytes(iv);
+            RANDOM.nextBytes(iv);
             cipher.init(Cipher.ENCRYPT_MODE, secretKey, new GCMParameterSpec(128, iv));
             byte[] encryptedData = cipher.doFinal(original.getBytes());
             Base64.Encoder encoder = Base64.getEncoder();
