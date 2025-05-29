@@ -10,7 +10,6 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.interfaces.mapper.IPlayerMapper;
@@ -35,12 +34,11 @@ public class PlayerService {
     }
 
     /**
-     * Retrieves the first selected Player with lazy-loaded 'gamesid' collection. Runs within a
-     * read-only transaction to enable lazy loading during mapping.
+     * Retrieves the first selected Player and maps it to a PlayerDto.
      *
-     * @return Optional<PlayerDto> if found, otherwise empty
+     * @return an Optional containing the mapped PlayerDto if a Player is found; otherwise, an empty
+     *     Optional.
      */
-    @Transactional(readOnly = true)
     public Optional<PlayerDto> getPlayer() {
         try {
             return playerRepository
@@ -52,7 +50,7 @@ public class PlayerService {
                                 return Optional.empty();
                             });
         } catch (Exception e) {
-            log.error("██ Exception retrieving software : {}", e.getMessage(), e);
+            log.error("██ Exception retrieving player: {}", e.getMessage(), e);
             return Optional.empty();
         }
     }
