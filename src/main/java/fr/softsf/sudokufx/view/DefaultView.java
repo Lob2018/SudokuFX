@@ -56,12 +56,12 @@ import fr.softsf.sudokufx.viewmodel.*;
 public final class DefaultView implements IMainView {
 
     private static final Logger LOG = LoggerFactory.getLogger(DefaultView.class);
-
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
-    private final Stage primaryStage = new Stage();
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
+
+    private final Stage primaryStage = new Stage();
 
     @Autowired private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     @Autowired private Coordinator coordinator;

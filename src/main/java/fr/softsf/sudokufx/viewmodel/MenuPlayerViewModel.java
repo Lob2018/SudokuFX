@@ -164,9 +164,9 @@ public class MenuPlayerViewModel {
     /** Loads test players into the observable list. */
     private void loadPlayers() {
         players.clear();
+        players.add(currentPlayerState.getCurrentPlayer());
         for (int i = 1; i <= 50; i++) {
-            if (i == 30) players.add(currentPlayerState.getCurrentPlayer());
-            else players.add(generatePlayerForTests(i + " AAAAAAAAAAAAAAAAAAAAAAAAA", false));
+            players.add(generatePlayerForTests(i + "AAAAAAAAAAAAAAAAAAAAAAAAA"));
         }
     }
 
@@ -187,17 +187,16 @@ public class MenuPlayerViewModel {
      * Generates a sample PlayerDto instance for testing purposes.
      *
      * @param name the player name
-     * @param isSelected whether the player is selected
-     * @return a PlayerDto populated with test data and the specified name and selection state
+     * @return a PlayerDto populated with test data and the specified name
      */
-    private PlayerDto generatePlayerForTests(String name, boolean isSelected) {
+    private PlayerDto generatePlayerForTests(String name) {
         return new PlayerDto(
                 1L,
                 new PlayerLanguageDto(1L, "FR"),
                 new BackgroundDto(1L, "#3498db", null, false),
                 new MenuDto((byte) 1, (byte) 1),
                 name,
-                isSelected,
+                false,
                 LocalDateTime.now(),
                 LocalDateTime.now());
     }
