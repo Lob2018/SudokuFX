@@ -7,7 +7,6 @@ package fr.softsf.sudokufx.viewmodel;
 
 import java.text.MessageFormat;
 import java.time.LocalDateTime;
-import java.util.Set;
 import java.util.function.Supplier;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
@@ -197,7 +196,6 @@ public class MenuPlayerViewModel {
                 new PlayerLanguageDto(1L, "FR"),
                 new BackgroundDto(1L, "#3498db", null, false),
                 new MenuDto((byte) 1, (byte) 1),
-                Set.of(1L, 2L),
                 name,
                 isSelected,
                 LocalDateTime.now(),
