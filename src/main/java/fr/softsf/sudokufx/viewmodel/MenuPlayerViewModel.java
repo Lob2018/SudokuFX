@@ -20,6 +20,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.dto.*;
 import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.viewmodel.shared.CurrentPlayerState;
 
 /**
  * ViewModel for managing player menu UI state and accessibility texts.
@@ -31,6 +32,8 @@ import fr.softsf.sudokufx.enums.I18n;
  */
 @Component
 public class MenuPlayerViewModel {
+
+    private final CurrentPlayerState currentPlayerState;
 
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
             "menu.accessibility.role.description.opened";
@@ -64,7 +67,9 @@ public class MenuPlayerViewModel {
     private final StringBinding cellConfirmationTitle;
     private final StringBinding cellConfirmationMessage;
 
-    public MenuPlayerViewModel() {
+    public MenuPlayerViewModel(CurrentPlayerState currentPlayerState) {
+        this.currentPlayerState = currentPlayerState;
+
         playerAccessibleText =
                 createFormattedBinding("menu.player.button.player.accessibility", this::playerName);
         playerTooltip =
@@ -160,9 +165,8 @@ public class MenuPlayerViewModel {
     /** Loads test players into the observable list. */
     private void loadPlayers() {
         players.clear();
-        players.add(generatePlayerForTests("ANONYME", false));
         for (int i = 1; i <= 50; i++) {
-            if (i == 30) players.add(generatePlayerForTests(i + "SELECTED !", true));
+            if (i == 30) players.add(currentPlayerState.getCurrentPlayer());
             else players.add(generatePlayerForTests(i + " AAAAAAAAAAAAAAAAAAAAAAAAA", false));
         }
     }
@@ -170,11 +174,13 @@ public class MenuPlayerViewModel {
     /** Sets the selected player to the one marked as selected or first in the list. */
     private void setSelectedPlayer() {
         if (!players.isEmpty()) {
-            players.stream()
-                    .filter(PlayerDto::isselected)
-                    .findFirst()
-                    .ifPresentOrElse(
-                            selectedPlayer::set, () -> selectedPlayer.set(players.getFirst()));
+            selectedPlayer.set(currentPlayerState.getCurrentPlayer());
+            //            players.stream()
+            //                    .filter(PlayerDto::isselected)
+            //                    .findFirst()
+            //                    .ifPresentOrElse(
+            //                            selectedPlayer::set, () ->
+            // selectedPlayer.set(players.getFirst()));
         }
     }
 
@@ -191,15 +197,7 @@ public class MenuPlayerViewModel {
                 new PlayerLanguageDto(1L, "FR"),
                 new BackgroundDto(1L, "#3498db", null, false),
                 new MenuDto((byte) 1, (byte) 1),
-                Set.of(
-                        new GameDto(
-                                1L,
-                                new GridDto(1L, "0".repeat(81), "1".repeat(810), (byte) 75),
-                                null,
-                                new GameLevelDto((byte) 1, (byte) 1),
-                                true,
-                                LocalDateTime.now(),
-                                LocalDateTime.now())),
+                Set.of(1L, 2L),
                 name,
                 isSelected,
                 LocalDateTime.now(),

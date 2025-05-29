@@ -7,45 +7,34 @@ package fr.softsf.sudokufx.interfaces.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.factory.Mappers;
 
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.model.Game;
 
-/**
- * This interface defines methods for mapping objects of type {@link Game} to objects of type {@link
- * GameDto} and vice versa. It uses MapStruct to automatically generate the implementations of these
- * mapping methods.
- */
-@Mapper(uses = {IPlayerMapper.class, IGridMapper.class, IGameLevelMapper.class})
+@Mapper(
+        componentModel = "spring",
+        uses = {MapperUtils.class, IGridMapper.class, IGameLevelMapper.class})
 public interface IGameMapper {
-    /**
-     * This instance is created by MapStruct and provides access to the mapping methods defined in
-     * this interface.
-     */
-    IGameMapper INSTANCE = Mappers.getMapper(IGameMapper.class);
 
     /**
-     * Maps a Game object to a GameDto object.
+     * Mappe un objet Game en GameDto.
      *
-     * @param game the Game object to be mapped.
-     * @return a GameDto object representing the data of the provided Game object.
+     * @param game l’objet Game à mapper.
+     * @return un GameDto représentant les données du Game.
      */
-    @Mapping(target = "gameid", source = "game.gameid")
     @Mapping(target = "grididDto", source = "game.gridid")
-    @Mapping(target = "playeridDto", source = "game.playerid")
+    @Mapping(target = "playerid", source = "game.playerid.playerid")
     @Mapping(target = "levelidDto", source = "game.levelid")
     GameDto mapGameToDto(Game game);
 
     /**
-     * Maps a GameDto object to a Game object.
+     * Mappe un GameDto en Game.
      *
-     * @param dto the GameDto object to be mapped.
-     * @return a Game object representing the data of the provided GameDto object.
+     * @param dto le GameDto à mapper.
+     * @return un Game représentant les données du GameDto.
      */
-    @Mapping(target = "gameid", source = "dto.gameid")
     @Mapping(target = "gridid", source = "dto.grididDto")
-    @Mapping(target = "playerid", source = "dto.playeridDto")
+    @Mapping(target = "playerid", source = "dto.playerid", qualifiedByName = "mapPlayerIdToPlayer")
     @Mapping(target = "levelid", source = "dto.levelidDto")
     Game mapGameDtoToGame(GameDto dto);
 }

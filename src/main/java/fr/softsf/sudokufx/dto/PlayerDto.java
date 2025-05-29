@@ -17,14 +17,14 @@ public record PlayerDto(
         @NotNull PlayerLanguageDto playerlanguageidDto,
         @NotNull BackgroundDto backgroundidDto,
         @NotNull MenuDto menuidDto,
-        @NotNull Set<GameDto> gamesDto,
+        @NotNull Set<Long> gamesid,
         @NotNull @Size(max = 256) String name,
         @NotNull Boolean isselected,
         @NotNull LocalDateTime createdat,
         @NotNull LocalDateTime updatedat) {
     public PlayerDto {
-        if (gamesDto == null) {
-            gamesDto = new LinkedHashSet<>();
+        if (gamesid == null) {
+            gamesid = new LinkedHashSet<>();
         }
     }
 }

@@ -7,7 +7,6 @@ package fr.softsf.sudokufx.interfaces.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.factory.Mappers;
 
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.model.Player;
@@ -18,18 +17,14 @@ import fr.softsf.sudokufx.model.Player;
  * of these mapping methods.
  */
 @Mapper(
+        componentModel = "spring",
         uses = {
-            IGameMapper.class,
+            MapperUtils.class,
             IPlayerLanguageMapper.class,
             IBackgroundMapper.class,
             IMenuMapper.class
         })
 public interface IPlayerMapper {
-    /**
-     * This instance is created by MapStruct and provides access to the mapping methods defined in
-     * this interface.
-     */
-    IPlayerMapper INSTANCE = Mappers.getMapper(IPlayerMapper.class);
 
     /**
      * Maps a Player object to a PlayerDto object.
@@ -37,11 +32,10 @@ public interface IPlayerMapper {
      * @param player the Player object to be mapped.
      * @return a PlayerDto object representing the data of the provided Player object.
      */
-    @Mapping(target = "playerid", source = "player.playerid")
     @Mapping(target = "playerlanguageidDto", source = "player.playerlanguageid")
     @Mapping(target = "backgroundidDto", source = "player.backgroundid")
     @Mapping(target = "menuidDto", source = "player.menuid")
-    @Mapping(target = "gamesDto", source = "player.games")
+    @Mapping(target = "gamesid", source = "player.games", qualifiedByName = "extractGameIds")
     PlayerDto mapPlayerToDto(Player player);
 
     /**
@@ -50,10 +44,9 @@ public interface IPlayerMapper {
      * @param dto the PlayerDto object to be mapped.
      * @return a Player object representing the data of the provided PlayerDto object.
      */
-    @Mapping(target = "playerid", source = "dto.playerid")
     @Mapping(target = "playerlanguageid", source = "dto.playerlanguageidDto")
     @Mapping(target = "backgroundid", source = "dto.backgroundidDto")
     @Mapping(target = "menuid", source = "dto.menuidDto")
-    @Mapping(target = "games", source = "dto.gamesDto")
+    @Mapping(target = "games", source = "dto.gamesid", qualifiedByName = "mapGameIdsToGames")
     Player mapPlayerDtoToPlayer(PlayerDto dto);
 }

@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.interfaces.mapper;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.factory.Mappers;
 
 import fr.softsf.sudokufx.dto.GameLevelDto;
 import fr.softsf.sudokufx.model.GameLevel;
@@ -16,14 +15,8 @@ import fr.softsf.sudokufx.model.GameLevel;
  * {@link GameLevelDto} and vice versa. It uses MapStruct to automatically generate the
  * implementations of these mapping methods.
  */
-@Mapper
+@Mapper(componentModel = "spring")
 public interface IGameLevelMapper {
-    /**
-     * This instance is created by MapStruct and provides access to the mapping methods defined in
-     * this interface.
-     */
-    IGameLevelMapper INSTANCE = Mappers.getMapper(IGameLevelMapper.class);
-
     /**
      * Maps a GameLevel object to a GameLevelDto object.
      *

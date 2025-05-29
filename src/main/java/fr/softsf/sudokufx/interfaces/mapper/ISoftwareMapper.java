@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.interfaces.mapper;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.factory.Mappers;
 
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.model.Software;
@@ -16,14 +15,8 @@ import fr.softsf.sudokufx.model.Software;
  * {@link SoftwareDto} and vice versa. It uses MapStruct to automatically generate the
  * implementations of these mapping methods.
  */
-@Mapper
+@Mapper(componentModel = "spring")
 public interface ISoftwareMapper {
-    /**
-     * This instance is created by MapStruct and provides access to the mapping methods defined in
-     * this interface.
-     */
-    ISoftwareMapper INSTANCE = Mappers.getMapper(ISoftwareMapper.class);
-
     /**
      * Maps a Software object to a SoftwareDto object.
      *

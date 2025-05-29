@@ -12,7 +12,7 @@ import jakarta.validation.constraints.NotNull;
 public record GameDto(
         Long gameid,
         @NotNull GridDto grididDto,
-        @NotNull PlayerDto playeridDto,
+        @NotNull Long playerid,
         @NotNull GameLevelDto levelidDto,
         @NotNull Boolean isselected,
         @NotNull LocalDateTime createdat,

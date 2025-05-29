@@ -11,7 +11,7 @@ import java.util.Optional;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.InjectMocks;
+import org.mapstruct.factory.Mappers;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -29,15 +29,17 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @ExtendWith(MockitoExtension.class)
 class SoftwareServiceUTest {
 
+    private Software software;
     private final String currentVersion = "1.0.0";
     private final String lastVersion = "1.0.1";
-    @InjectMocks private SoftwareService softwareService;
-    @Mock private SoftwareRepository softwareRepository;
 
-    private Software software;
+    private final ISoftwareMapper softwareMapper = Mappers.getMapper(ISoftwareMapper.class);
+    private SoftwareService softwareService;
+    @Mock private SoftwareRepository softwareRepository;
 
     @BeforeEach
     void setUp() {
+        softwareService = new SoftwareService(softwareRepository, softwareMapper);
         software =
                 Software.builder()
                         .softwareid(1L)
@@ -78,7 +80,7 @@ class SoftwareServiceUTest {
         software.setCurrentversion(lastVersion);
         software.setLastversion("1.0.2");
         software.setUpdatedat(LocalDateTime.now());
-        SoftwareDto softwareDto = ISoftwareMapper.INSTANCE.mapSoftwareToDto(software);
+        SoftwareDto softwareDto = softwareMapper.mapSoftwareToDto(software);
         Optional<SoftwareDto> softwareDtoUpdated = softwareService.updateSoftware(softwareDto);
         assertTrue(softwareDtoUpdated.isPresent());
         assertThat(softwareDtoUpdated.get().currentversion()).isEqualTo(lastVersion);
@@ -91,7 +93,7 @@ class SoftwareServiceUTest {
         software.setCurrentversion(lastVersion);
         software.setLastversion("1.0.2");
         software.setUpdatedat(LocalDateTime.now());
-        SoftwareDto softwareDto = ISoftwareMapper.INSTANCE.mapSoftwareToDto(software);
+        SoftwareDto softwareDto = softwareMapper.mapSoftwareToDto(software);
         Optional<SoftwareDto> softwareDtoUpdated = softwareService.updateSoftware(softwareDto);
         assertFalse(softwareDtoUpdated.isPresent());
     }

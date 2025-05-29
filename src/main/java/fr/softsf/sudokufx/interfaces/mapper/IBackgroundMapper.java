@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.interfaces.mapper;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.factory.Mappers;
 
 import fr.softsf.sudokufx.dto.BackgroundDto;
 import fr.softsf.sudokufx.model.Background;
@@ -16,14 +15,8 @@ import fr.softsf.sudokufx.model.Background;
  * {@link BackgroundDto} and vice versa. It uses MapStruct to automatically generate the
  * implementations of these mapping methods.
  */
-@Mapper
+@Mapper(componentModel = "spring")
 public interface IBackgroundMapper {
-    /**
-     * This instance is created by MapStruct and provides access to the mapping methods defined in
-     * this interface.
-     */
-    IBackgroundMapper INSTANCE = Mappers.getMapper(IBackgroundMapper.class);
-
     /**
      * Maps a Background object to a BackgroundDto object.
      *

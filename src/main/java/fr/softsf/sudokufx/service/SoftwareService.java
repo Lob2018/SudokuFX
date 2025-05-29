@@ -23,16 +23,18 @@ public class SoftwareService {
     private static final Logger log = LoggerFactory.getLogger(SoftwareService.class);
 
     private final SoftwareRepository softwareRepository;
+    private final ISoftwareMapper softwareMapper;
 
-    public SoftwareService(SoftwareRepository softwareRepository) {
+    public SoftwareService(SoftwareRepository softwareRepository, ISoftwareMapper softwareMapper) {
         this.softwareRepository = softwareRepository;
+        this.softwareMapper = softwareMapper;
     }
 
     public Optional<SoftwareDto> getSoftware() {
         try {
             return softwareRepository
                     .findFirstSoftware()
-                    .map(ISoftwareMapper.INSTANCE::mapSoftwareToDto)
+                    .map(softwareMapper::mapSoftwareToDto)
                     .or(
                             () -> {
                                 log.error("██ No software found.");
@@ -47,9 +49,9 @@ public class SoftwareService {
     @Transactional
     public Optional<SoftwareDto> updateSoftware(SoftwareDto softwareDto) {
         try {
-            Software software = ISoftwareMapper.INSTANCE.mapSoftwareDtoToSoftware(softwareDto);
+            Software software = softwareMapper.mapSoftwareDtoToSoftware(softwareDto);
             Software updatedSoftware = softwareRepository.save(software);
-            return Optional.ofNullable(ISoftwareMapper.INSTANCE.mapSoftwareToDto(updatedSoftware));
+            return Optional.ofNullable(softwareMapper.mapSoftwareToDto(updatedSoftware));
         } catch (Exception e) {
             log.error("██ Error updating software : {}", e.getMessage(), e);
             return Optional.empty();

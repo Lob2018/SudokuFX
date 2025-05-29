@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.interfaces.mapper;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.factory.Mappers;
 
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.model.PlayerLanguage;
@@ -16,14 +15,8 @@ import fr.softsf.sudokufx.model.PlayerLanguage;
  * type {@link PlayerLanguageDto} and vice versa. It uses MapStruct to automatically generate the
  * implementations of these mapping methods.
  */
-@Mapper
+@Mapper(componentModel = "spring")
 public interface IPlayerLanguageMapper {
-    /**
-     * This instance is created by MapStruct and provides access to the mapping methods defined in
-     * this interface.
-     */
-    IPlayerLanguageMapper INSTANCE = Mappers.getMapper(IPlayerLanguageMapper.class);
-
     /**
      * Maps a PlayerLanguage object to a PlayerLanguageDto object.
      *

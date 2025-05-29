@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.interfaces.mapper;
 
 import org.mapstruct.Mapper;
-import org.mapstruct.factory.Mappers;
 
 import fr.softsf.sudokufx.dto.MenuDto;
 import fr.softsf.sudokufx.model.Menu;
@@ -16,14 +15,8 @@ import fr.softsf.sudokufx.model.Menu;
  * MenuDto} and vice versa. It uses MapStruct to automatically generate the implementations of these
  * mapping methods.
  */
-@Mapper
+@Mapper(componentModel = "spring")
 public interface IMenuMapper {
-    /**
-     * This instance is created by MapStruct and provides access to the mapping methods defined in
-     * this interface.
-     */
-    IMenuMapper INSTANCE = Mappers.getMapper(IMenuMapper.class);
-
     /**
      * Maps a Menu object to a MenuDto object.
      *
