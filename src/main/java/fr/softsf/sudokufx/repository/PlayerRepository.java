@@ -15,18 +15,6 @@ import fr.softsf.sudokufx.model.Player;
 
 @Repository
 public interface PlayerRepository extends JpaRepository<Player, Long> {
-    //    @Query(value = "SELECT * FROM player WHERE isselected = true LIMIT 1", nativeQuery = true)
     @Query(value = "SELECT * FROM player WHERE isselected = true LIMIT 1", nativeQuery = true)
     Optional<Player> findFirstSelectedPlayer();
-
-    @Query(
-"""
-    select distinct p from Player p
-    left join fetch p.playerlanguageid
-    left join fetch p.backgroundid
-    left join fetch p.menuid
-    left join fetch p.games
-    where p.isselected = true
-""")
-    Optional<Player> findFirstSelectedPlayerWithAllRelations();
 }

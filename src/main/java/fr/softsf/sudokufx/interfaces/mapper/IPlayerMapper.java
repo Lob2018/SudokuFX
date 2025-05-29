@@ -12,9 +12,11 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.model.Player;
 
 /**
- * This interface defines methods for mapping objects of type {@link Player} to objects of type
- * {@link PlayerDto} and vice versa. It uses MapStruct to automatically generate the implementations
- * of these mapping methods.
+ * Mapper interface for converting between {@link Player} entity and {@link PlayerDto} data transfer
+ * object.
+ *
+ * <p>Utilizes MapStruct to generate the mapping implementations automatically and is managed as a
+ * Spring component. Additional mappers are used for nested objects and collections.
  */
 @Mapper(
         componentModel = "spring",
@@ -27,10 +29,10 @@ import fr.softsf.sudokufx.model.Player;
 public interface IPlayerMapper {
 
     /**
-     * Maps a Player object to a PlayerDto object.
+     * Converts a {@link Player} entity to a {@link PlayerDto}.
      *
-     * @param player the Player object to be mapped.
-     * @return a PlayerDto object representing the data of the provided Player object.
+     * @param player the Player entity to map; must not be null.
+     * @return a PlayerDto representing the data of the given Player entity.
      */
     @Mapping(target = "playerlanguageidDto", source = "player.playerlanguageid")
     @Mapping(target = "backgroundidDto", source = "player.backgroundid")
@@ -39,10 +41,10 @@ public interface IPlayerMapper {
     PlayerDto mapPlayerToDto(Player player);
 
     /**
-     * Maps a PlayerDto object to a Player object.
+     * Converts a {@link PlayerDto} to a {@link Player} entity.
      *
-     * @param dto the PlayerDto object to be mapped.
-     * @return a Player object representing the data of the provided PlayerDto object.
+     * @param dto the PlayerDto to map; must not be null.
+     * @return a Player entity representing the data of the given PlayerDto.
      */
     @Mapping(target = "playerlanguageid", source = "dto.playerlanguageidDto")
     @Mapping(target = "backgroundid", source = "dto.backgroundidDto")

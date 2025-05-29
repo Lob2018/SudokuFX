@@ -16,6 +16,11 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.repository.PlayerRepository;
 
+/**
+ * Service class providing business logic related to Player entities. It interacts with the
+ * PlayerRepository to retrieve Player data and uses IPlayerMapper to convert Player entities to
+ * PlayerDto objects.
+ */
 @Service
 public class PlayerService {
 
@@ -29,6 +34,12 @@ public class PlayerService {
         this.playerMapper = playerMapper;
     }
 
+    /**
+     * Retrieves the first selected Player with lazy-loaded 'gamesid' collection. Runs within a
+     * read-only transaction to enable lazy loading during mapping.
+     *
+     * @return Optional<PlayerDto> if found, otherwise empty
+     */
     @Transactional(readOnly = true)
     public Optional<PlayerDto> getPlayer() {
         try {

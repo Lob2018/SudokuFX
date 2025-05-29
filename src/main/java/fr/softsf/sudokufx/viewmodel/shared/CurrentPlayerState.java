@@ -46,9 +46,6 @@ public class CurrentPlayerState {
                                                 new IllegalStateException(
                                                         "Player not found during initialization"));
                 currentPlayer.set(player);
-                System.out.println("####################");
-                System.out.println(player);
-                System.out.println("####################");
             }
         } catch (IllegalStateException e) {
             log.error(

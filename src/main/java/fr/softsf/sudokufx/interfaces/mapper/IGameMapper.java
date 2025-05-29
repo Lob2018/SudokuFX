@@ -11,16 +11,23 @@ import org.mapstruct.Mapping;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.model.Game;
 
+/**
+ * Mapper interface for converting between {@link Game} entity and {@link GameDto} data transfer
+ * object.
+ *
+ * <p>Uses additional mappers {@link MapperUtils}, {@link IGridMapper}, {@link IGameLevelMapper} for
+ * nested or complex mappings.
+ */
 @Mapper(
         componentModel = "spring",
         uses = {MapperUtils.class, IGridMapper.class, IGameLevelMapper.class})
 public interface IGameMapper {
 
     /**
-     * Mappe un objet Game en GameDto.
+     * Converts a {@link Game} entity to a {@link GameDto}.
      *
-     * @param game l’objet Game à mapper.
-     * @return un GameDto représentant les données du Game.
+     * @param game the Game entity to convert; must not be null.
+     * @return a GameDto representing the given Game entity.
      */
     @Mapping(target = "grididDto", source = "game.gridid")
     @Mapping(target = "playerid", source = "game.playerid.playerid")
@@ -28,10 +35,10 @@ public interface IGameMapper {
     GameDto mapGameToDto(Game game);
 
     /**
-     * Mappe un GameDto en Game.
+     * Converts a {@link GameDto} to a {@link Game} entity.
      *
-     * @param dto le GameDto à mapper.
-     * @return un Game représentant les données du GameDto.
+     * @param dto the GameDto to convert; must not be null.
+     * @return a Game entity representing the given GameDto.
      */
     @Mapping(target = "gridid", source = "dto.grididDto")
     @Mapping(target = "playerid", source = "dto.playerid", qualifiedByName = "mapPlayerIdToPlayer")
