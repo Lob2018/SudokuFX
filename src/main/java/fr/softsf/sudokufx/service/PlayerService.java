@@ -44,8 +44,8 @@ public class PlayerService {
     @Transactional(readOnly = true)
     public Optional<PlayerDto> getPlayer() {
         try {
-            return playerRepository
-                    .findFirstSelectedPlayer()
+            return playerRepository.findPlayersWithSelectedGames().stream()
+                    .findFirst()
                     .map(playerMapper::mapPlayerToDto)
                     .or(
                             () -> {

@@ -46,7 +46,6 @@ public class Player {
 
     @OneToMany(mappedBy = "playerid", orphanRemoval = true)
     @Cascade(CascadeType.ALL)
-    @OrderBy("updatedat")
     private Set<Game> games;
 
     @NotNull @Size(max = 256) @Column(nullable = false, unique = true)

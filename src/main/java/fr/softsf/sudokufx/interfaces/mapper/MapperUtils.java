@@ -41,20 +41,19 @@ public final class MapperUtils {
         return Player.builder().playerid(playerId).build();
     }
 
-    /** Returns the first selected Game from the set, or null if none or if input is null. */
+    /**
+     * Returns the first Game from the given Set assumed to contain only selected games. Returns
+     * null if the Set is null or empty. Ordering is not guaranteed.
+     *
+     * @param games Set of selected Game entities, may be null or empty
+     * @return first Game in the Set, or null
+     */
     @Named("mapSelectedGame")
     public static Game mapSelectedGame(Set<Game> games) {
-        if (games == null) {
-            LOG.warn("▓▓ Games Set is null, returning null Game entity.");
+        if (games == null || games.isEmpty()) {
+            LOG.warn("▓▓ No selected games found (input is null or empty). Returning null.");
             return null;
         }
-        return games.stream()
-                .filter(game -> Boolean.TRUE.equals(game.getIsselected()))
-                .findFirst()
-                .orElseGet(
-                        () -> {
-                            LOG.warn("▓▓ No selected game found in Games set.");
-                            return null;
-                        });
+        return games.iterator().next();
     }
 }

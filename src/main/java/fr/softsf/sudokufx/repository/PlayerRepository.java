@@ -5,7 +5,7 @@
  */
 package fr.softsf.sudokufx.repository;
 
-import java.util.Optional;
+import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -15,6 +15,14 @@ import fr.softsf.sudokufx.model.Player;
 
 @Repository
 public interface PlayerRepository extends JpaRepository<Player, Long> {
-    @Query(value = "SELECT * FROM player WHERE isselected = true LIMIT 1", nativeQuery = true)
-    Optional<Player> findFirstSelectedPlayer();
+    @Query(
+            "select distinct p from Player p "
+                    + "join fetch p.games g "
+                    + "join fetch p.backgroundid "
+                    + "join fetch g.gridid "
+                    + "join fetch g.levelid "
+                    + "join fetch p.menuid "
+                    + "join fetch p.playerlanguageid "
+                    + "where p.isselected = true and g.isselected = true")
+    List<Player> findPlayersWithSelectedGames();
 }
