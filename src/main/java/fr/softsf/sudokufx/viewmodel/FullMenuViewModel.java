@@ -20,7 +20,7 @@ import fr.softsf.sudokufx.utils.sudoku.IGridMaster;
 
 /** FullMenuViewModel with business logic (not final) */
 @Component
-// TODO: À SUPPRIMER OU ADAPTER (ex. SERVICE)
+// TODO: remove in production
 public class FullMenuViewModel {
 
     private final SoftwareService softwareService;
