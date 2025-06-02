@@ -1,19 +1,3 @@
--- Creating values for software
-INSERT
-    INTO
-        software(
-            currentversion,
-            lastversion,
-            createdat,
-            updatedat
-        )
-    VALUES(
-        '1.0.0',
-        '1.0.0',
-        now(),
-        now()
-    );
-
 -- Creating values for playerlanguage
 INSERT
     INTO
@@ -84,7 +68,7 @@ INSERT
             updatedat
         )
     VALUES(
-        'anonyme',
+        '—',
         (
             SELECT
                 playerlanguageid
@@ -99,7 +83,7 @@ INSERT
             FROM
                 background
             WHERE
-                hexcolor = '#000000'
+                hexcolor = '000000ff'
         ),
         (
             SELECT
@@ -112,4 +96,59 @@ INSERT
         TRUE,
         now(),
         now()
+    );
+
+-- Creating values for initial grid
+INSERT
+    INTO
+        grid(
+            defaultgridvalue,
+            gridvalue,
+            possibilities
+        )
+    VALUES(
+        '',
+        '',
+        100
+    );
+
+-- Creating values for initial game with initial grid
+INSERT
+    INTO
+        game(
+            gridgridid,
+            playerplayerid,
+            levellevelid,
+            isselected,
+            createdat,
+            updatedat
+        )
+    VALUES(
+        (
+            SELECT
+                gridid
+            FROM
+                grid
+            ORDER BY
+                gridid DESC LIMIT 1
+        ),
+        (
+            SELECT
+                playerid
+            FROM
+                player
+            WHERE
+                name = '—' LIMIT 1
+        ),
+        (
+            SELECT
+                levelid
+            FROM
+                gamelevel
+            WHERE
+                LEVEL = 1 LIMIT 1
+        ),
+        TRUE,
+        NOW(),
+        NOW()
     );

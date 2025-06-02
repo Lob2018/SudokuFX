@@ -60,11 +60,13 @@ public class MyLogbackConfig {
     }
 
     /**
-     * Prints the application's ASCII logo to the log as an entry message. If the Spring context is
-     * set to exit on refresh, it also logs an optimizing startup message.
+     * Logs the ASCII logo (with app name and version), an optional optimization message at startup.
      */
     public void printLogEntryMessage() {
-        LOG.info(ASCII_LOGO.getLogBackMessage());
+        LOG.info(
+                ASCII_LOGO.getLogBackMessage(),
+                JVMApplicationProperties.INSTANCE.getAppName(),
+                JVMApplicationProperties.INSTANCE.getAppVersion());
         if (JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh())
             LOG.info(OPTIMIZING.getLogBackMessage());
     }

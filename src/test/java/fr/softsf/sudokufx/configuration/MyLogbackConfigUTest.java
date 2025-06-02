@@ -97,6 +97,10 @@ class MyLogbackConfigUTest {
         myLogbackConfig.printLogEntryMessage();
         assertFalse(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
         assert (logWatcher.list.getLast().getFormattedMessage())
-                .contains(ASCII_LOGO.getLogBackMessage());
+                .contains(
+                        String.format(
+                                ASCII_LOGO.getLogBackMessage().replace("{}", "%s"),
+                                JVMApplicationProperties.INSTANCE.getAppName(),
+                                JVMApplicationProperties.INSTANCE.getAppVersion()));
     }
 }

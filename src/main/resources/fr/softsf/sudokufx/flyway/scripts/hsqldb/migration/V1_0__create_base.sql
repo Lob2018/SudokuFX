@@ -1,14 +1,3 @@
--- Création de la table "software"
-CREATE
-    TABLE
-        software(
-            softwareid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-            currentversion VARCHAR(128) NOT NULL,
-            lastversion VARCHAR(128) NOT NULL,
-            createdat TIMESTAMP NOT NULL,
-            updatedat TIMESTAMP NOT NULL
-        );
-
 -- Création de la table "menu"
 CREATE
     TABLE
