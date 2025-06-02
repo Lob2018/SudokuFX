@@ -17,7 +17,6 @@ import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.configuration.database.DataSourceConfigTest;
 import fr.softsf.sudokufx.dto.SoftwareDto;
 import fr.softsf.sudokufx.service.SoftwareService;
-import fr.softsf.sudokufx.viewmodel.FullMenuViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
