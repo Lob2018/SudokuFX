@@ -1,4 +1,4 @@
--- Création de la table "menu"
+-- Creation of the "menu" table
 CREATE
     TABLE
         menu(
@@ -6,7 +6,7 @@ CREATE
             mode TINYINT NOT NULL
         );
 
--- Création de la table "playerlanguage"
+-- Creation of the "playerlanguage" table
 CREATE
     TABLE
         playerlanguage(
@@ -14,7 +14,7 @@ CREATE
             iso VARCHAR(2) NOT NULL
         );
 
--- Création de la table "background"
+-- Creation of the "background" table
 CREATE
     TABLE
         background(
@@ -24,7 +24,7 @@ CREATE
             isimage BOOLEAN DEFAULT FALSE NOT NULL,
         );
 
--- Création de la table "gamelevel"
+-- Creation of the "gamelevel" table
 CREATE
     TABLE
         gamelevel(
@@ -32,7 +32,7 @@ CREATE
             LEVEL TINYINT NOT NULL
         );
 
--- Création de la table "grid"
+-- Creation of the "grid" table
 CREATE
     TABLE
         grid(
@@ -42,7 +42,7 @@ CREATE
             possibilities TINYINT
         );
 
--- Création de la table "player"
+-- Creation of the "player" table
 CREATE
     TABLE
         player(
@@ -60,7 +60,7 @@ CREATE
     INDEX idx_player_isselected ON
     player(isselected);
 
--- Création de la table "game"
+-- Creation of the "game" table
 CREATE
     TABLE
         game(
