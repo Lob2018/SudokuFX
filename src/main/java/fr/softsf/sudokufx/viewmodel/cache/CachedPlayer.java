@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.viewmodel.shared;
+package fr.softsf.sudokufx.viewmodel.cache;
 
 import javafx.application.Platform;
 import javafx.beans.property.ObjectProperty;
@@ -17,9 +17,9 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.PlayerService;
 
 @Component
-public class CurrentPlayerState {
+public class CachedPlayer {
 
-    private static final Logger LOG = LoggerFactory.getLogger(CurrentPlayerState.class);
+    private static final Logger LOG = LoggerFactory.getLogger(CachedPlayer.class);
 
     private final ObjectProperty<PlayerDto> currentPlayer = new SimpleObjectProperty<>();
     private final PlayerService playerService;
@@ -28,7 +28,7 @@ public class CurrentPlayerState {
         return currentPlayer;
     }
 
-    public CurrentPlayerState(PlayerService playerService) {
+    public CachedPlayer(PlayerService playerService) {
         this.playerService = playerService;
         if (currentPlayer.get() == null) {
             initializePlayer();
@@ -37,16 +37,14 @@ public class CurrentPlayerState {
 
     private void initializePlayer() {
         try {
-            if (currentPlayer.get() == null) {
-                PlayerDto player =
-                        playerService
-                                .getPlayer()
-                                .orElseThrow(
-                                        () ->
-                                                new IllegalStateException(
-                                                        "Player not found during initialization"));
-                currentPlayer.set(player);
-            }
+            PlayerDto player =
+                    playerService
+                            .getPlayer()
+                            .orElseThrow(
+                                    () ->
+                                            new IllegalStateException(
+                                                    "Player not found during initialization"));
+            currentPlayer.set(player);
         } catch (IllegalStateException e) {
             LOG.error(
                     "██ Error initializing player: {}, triggering Platform.exit()",

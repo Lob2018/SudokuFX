@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.dto.*;
 import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.viewmodel.shared.CurrentPlayerState;
+import fr.softsf.sudokufx.viewmodel.cache.CachedPlayer;
 
 /**
  * ViewModel for managing player menu UI state and accessibility texts.
@@ -32,7 +32,7 @@ import fr.softsf.sudokufx.viewmodel.shared.CurrentPlayerState;
 @Component
 public class MenuPlayerViewModel {
 
-    private final CurrentPlayerState currentPlayerState;
+    private final CachedPlayer cachedPlayer;
 
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
             "menu.accessibility.role.description.opened";
@@ -66,8 +66,8 @@ public class MenuPlayerViewModel {
     private final StringBinding cellConfirmationTitle;
     private final StringBinding cellConfirmationMessage;
 
-    public MenuPlayerViewModel(CurrentPlayerState currentPlayerState) {
-        this.currentPlayerState = currentPlayerState;
+    public MenuPlayerViewModel(CachedPlayer cachedPlayer) {
+        this.cachedPlayer = cachedPlayer;
 
         playerAccessibleText =
                 createFormattedBinding("menu.player.button.player.accessibility", this::playerName);
@@ -164,7 +164,7 @@ public class MenuPlayerViewModel {
     /** Loads test players into the observable list. */
     private void loadPlayers() {
         players.clear();
-        players.add(currentPlayerState.getCurrentPlayer());
+        players.add(cachedPlayer.getCurrentPlayer());
         for (int i = 1; i <= 50; i++) {
             players.add(generatePlayerForTests(i + "AAAAAAAAAAAAAAAAAAAAAAAAA"));
         }
@@ -173,7 +173,7 @@ public class MenuPlayerViewModel {
     /** Sets the selected player to the one marked as selected or first in the list. */
     private void setSelectedPlayer() {
         if (!players.isEmpty()) {
-            selectedPlayer.set(currentPlayerState.getCurrentPlayer());
+            selectedPlayer.set(cachedPlayer.getCurrentPlayer());
             //            players.stream()
             //                    .filter(PlayerDto::isselected)
             //                    .findFirst()
