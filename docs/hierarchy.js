@@ -20,8 +20,8 @@ var hierarchy =
     [ "Button", null, [
       [ "fr.softsf.sudokufx.view.components.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.viewmodel.cache.CachedPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html", null ],
     [ "fr.softsf.sudokufx.navigation.Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", null ],
-    [ "fr.softsf.sudokufx.viewmodel.shared.CurrentPlayerState", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared_1_1_current_player_state.html", null ],
     [ "fr.softsf.sudokufx.enums.DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html", null ],
     [ "fr.softsf.sudokufx.common.unit.enums.DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test.html", null ],
     [ "fr.softsf.sudokufx.utils.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html", null ],
@@ -30,8 +30,6 @@ var hierarchy =
     [ "fr.softsf.sudokufx.common.unit.utils.ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_exception_tools_u_test.html", null ],
     [ "fr.softsf.sudokufx.annotations.ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1annotations_1_1_excluded_from_coverage_report_generated.html", null ],
     [ "fr.softsf.sudokufx.utils.FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager_u_test.html", null ],
-    [ "fr.softsf.sudokufx.viewmodel.FullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html", null ],
-    [ "fr.softsf.sudokufx.common.integration.viewmodel.FullMenuViewModelITest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html", null ],
     [ "fr.softsf.sudokufx.model.Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", null ],
     [ "fr.softsf.sudokufx.model.Game.GameBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_1_1_game_builder.html", null ],
     [ "fr.softsf.sudokufx.model.GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html", null ],
@@ -70,8 +68,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.utils.ImageUtils", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_image_utils.html", null ],
     [ "fr.softsf.sudokufx.interfaces.IMainView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html", [
       [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
-      [ "fr.softsf.sudokufx.view.DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ],
-      [ "fr.softsf.sudokufx.view.FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", null ]
+      [ "fr.softsf.sudokufx.view.DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.interfaces.mapper.IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", null ],
     [ "IOsFolderFactory", null, [
@@ -103,6 +100,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.view.components.list.PlayerDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.enums.LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html", null ],
+    [ "fr.softsf.sudokufx.interfaces.mapper.MapperUtils", "classfr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_mapper_utils.html", null ],
     [ "fr.softsf.sudokufx.model.Menu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html", null ],
     [ "fr.softsf.sudokufx.common.unit.viewmodel.MenuBackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test.html", null ],
@@ -141,8 +139,6 @@ var hierarchy =
     [ "fr.softsf.sudokufx.utils.SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Software", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html", null ],
     [ "fr.softsf.sudokufx.model.Software.SoftwareBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software_1_1_software_builder.html", null ],
-    [ "fr.softsf.sudokufx.service.SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", null ],
-    [ "fr.softsf.sudokufx.common.unit.service.SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.utils.SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html", null ],
     [ "fr.softsf.sudokufx.common.unit.utils.SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_spring_context_initializer_u_test.html", null ],
     [ "fr.softsf.sudokufx.enums.ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html", null ],

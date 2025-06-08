@@ -16,6 +16,12 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.PlayerService;
 
+/**
+ * Component responsible for caching and providing the current PlayerDto instance. It initializes
+ * the cached player on creation by fetching from PlayerService. Provides a JavaFX ObjectProperty to
+ * allow UI bindings and supports manual updates. On failure to initialize (player not found), it
+ * logs the error and terminates the application.
+ */
 @Component
 public class CachedPlayer {
 
@@ -24,10 +30,20 @@ public class CachedPlayer {
     private final ObjectProperty<PlayerDto> currentPlayer = new SimpleObjectProperty<>();
     private final PlayerService playerService;
 
+    /**
+     * Returns the currentPlayer property for JavaFX binding.
+     *
+     * @return the ObjectProperty holding the current PlayerDto.
+     */
     public ObjectProperty<PlayerDto> currentPlayerProperty() {
         return currentPlayer;
     }
 
+    /**
+     * Constructor that initializes the cached player by loading it from the PlayerService.
+     *
+     * @param playerService the service to fetch PlayerDto data.
+     */
     public CachedPlayer(PlayerService playerService) {
         this.playerService = playerService;
         if (currentPlayer.get() == null) {
@@ -35,6 +51,10 @@ public class CachedPlayer {
         }
     }
 
+    /**
+     * Loads the current player from PlayerService and sets it in the cache. If the player is not
+     * found, logs the error and exits the application.
+     */
     private void initializePlayer() {
         try {
             PlayerDto player =
@@ -54,10 +74,20 @@ public class CachedPlayer {
         }
     }
 
+    /**
+     * Updates the cached current player with the given PlayerDto.
+     *
+     * @param dto the PlayerDto to cache.
+     */
     public void setCurrentPlayer(PlayerDto dto) {
         currentPlayer.set(dto);
     }
 
+    /**
+     * Retrieves the cached current PlayerDto.
+     *
+     * @return the currently cached PlayerDto.
+     */
     public PlayerDto getCurrentPlayer() {
         return currentPlayer.get();
     }

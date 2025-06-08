@@ -25,7 +25,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_k
     [ "KEYSTORE_TYPE", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a76643b0c89dc453dc05cf41d88459db7", null ],
     [ "keystoreFilePath", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a9105f7be25410f60cb24effede0ac60a", null ],
     [ "ks", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a0fdfd470ab4c0e8b5c5610144c1d19dc", null ],
-    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#acd325633504b13f34fae40cf3585e509", null ],
+    [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a43902e2dd049a1629d809175d908b47f", null ],
     [ "PASS_ALIAS", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a4a040d2cd18f15a3766688b7c51eb203", null ],
     [ "password", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a735c42e7277d1e2d1e92c5b3812147ff", null ],
     [ "pwdArray", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_application_keystore.html#a9aa7550bdb32869cefda7d8eac45e89f", null ],

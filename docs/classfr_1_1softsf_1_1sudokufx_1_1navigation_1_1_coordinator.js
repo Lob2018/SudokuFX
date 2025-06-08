@@ -12,5 +12,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
     [ "dynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a709ac37adbaff7acbc20e18366a85239", null ],
     [ "fxmlLoader", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#abcaae859838b7d23fb19c4cded75d16a", null ],
     [ "hostServices", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#ae432bd7392bf7c1570a8b46f5c2a6141", null ],
-    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#abd3d8a6246067799307ec80a03e1efe4", null ]
+    [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a66a48328e2130c3860f656e525ca48f1", null ]
 ];

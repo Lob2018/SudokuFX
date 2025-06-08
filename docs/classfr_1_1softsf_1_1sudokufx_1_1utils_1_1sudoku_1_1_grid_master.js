@@ -34,7 +34,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master =
     [ "DIMENSION", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a1284fab4c8c6372cb09bee56bda96590", null ],
     [ "FACILE_MIN_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a287e5365164fdf3c0152fd46fbac7016", null ],
     [ "FACILE_MOY_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a50d75c5f6878c2f09cf45cdb85a4f340", null ],
-    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a13623c16def618feb2b5cfee1c0dc0e2", null ],
     [ "MOYEN_MAX_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a3ebea586bc35752cc744c208be17e984", null ],
     [ "MOYEN_MIN_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a1fa080d46674f7802a342b95806f9f", null ],
     [ "MOYEN_MOY_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a7cae40d700e2fd6e73a057f551ea1e88", null ],

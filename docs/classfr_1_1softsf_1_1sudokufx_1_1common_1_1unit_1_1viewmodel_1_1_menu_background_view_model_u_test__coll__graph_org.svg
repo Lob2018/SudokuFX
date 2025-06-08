@@ -71,7 +71,7 @@
 <text text-anchor="start" x="18.5" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00"> imageText</text>
 <text text-anchor="start" x="18.5" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
 <text text-anchor="start" x="10" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="18.5" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="18.5" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="10" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="18.5" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="18.5" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROLE_CLOSED</text>

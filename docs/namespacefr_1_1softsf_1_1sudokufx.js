@@ -4,12 +4,8 @@ var namespacefr_1_1softsf_1_1sudokufx =
     [ "benchmark", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark" ],
     [ "common", null, [
       [ "e2e", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1e2e.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1e2e" ],
-      [ "integration", null, [
-        [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1viewmodel" ]
-      ] ],
       [ "unit", null, [
         [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums" ],
-        [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service" ],
         [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils" ],
         [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel" ]
       ] ]

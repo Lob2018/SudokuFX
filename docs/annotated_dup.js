@@ -13,17 +13,9 @@ var annotated_dup =
             [ "e2e", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1e2e.html", [
               [ "MyEnumsE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1e2e_1_1_my_enums_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1e2e_1_1_my_enums_e2_e_test" ]
             ] ],
-            [ "integration", null, [
-              [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1viewmodel.html", [
-                [ "FullMenuViewModelITest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1integration_1_1viewmodel_1_1_full_menu_view_model_i_test" ]
-              ] ]
-            ] ],
             [ "unit", null, [
               [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums.html", [
                 [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1enums_1_1_difficulty_level_test" ]
-              ] ],
-              [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service.html", [
-                [ "SoftwareServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test" ]
               ] ],
               [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils.html", [
                 [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1os.html", [
@@ -92,7 +84,8 @@ var annotated_dup =
               [ "IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_menu_mapper" ],
               [ "IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper" ],
               [ "IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper" ],
-              [ "ISoftwareMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper" ]
+              [ "ISoftwareMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_software_mapper" ],
+              [ "MapperUtils", "classfr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_mapper_utils.html", "classfr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_mapper_utils" ]
             ] ],
             [ "IMainView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_main_view" ],
             [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view" ]
@@ -117,12 +110,11 @@ var annotated_dup =
             [ "GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
             [ "MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],
             [ "PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", null ],
-            [ "PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", null ],
+            [ "PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository" ],
             [ "SoftwareRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository" ]
           ] ],
           [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
             [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service" ],
-            [ "SoftwareService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service" ],
             [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service" ],
             [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test" ]
           ] ],
@@ -157,15 +149,13 @@ var annotated_dup =
             ] ],
             [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view" ],
             [ "DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view" ],
-            [ "FullMenuView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_full_menu_view" ],
             [ "SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view" ]
           ] ],
           [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html", [
-            [ "shared", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared.html", [
-              [ "CurrentPlayerState", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared_1_1_current_player_state.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1shared_1_1_current_player_state" ]
+            [ "cache", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache.html", [
+              [ "CachedPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player" ]
             ] ],
             [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
-            [ "FullMenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_full_menu_view_model" ],
             [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],
             [ "MenuBackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model" ],
             [ "MenuHiddenViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model" ],

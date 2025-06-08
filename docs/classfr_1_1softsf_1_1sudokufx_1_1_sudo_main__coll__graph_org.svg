@@ -20,7 +20,7 @@
 <text text-anchor="start" x="156.62" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="165.12" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage stage</text>
 <text text-anchor="start" x="156.62" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="165.12" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="165.12" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="155.12" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="165.12" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">void start(final Stage</text>
 <text text-anchor="start" x="165.12" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00"> stage)</text>
@@ -145,7 +145,7 @@
 <text text-anchor="start" x="445.12" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="453.62" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">HostServices hostServices</text>
 <text text-anchor="start" x="445.12" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="453.62" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="453.62" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="443.62" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="453.62" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator(FXMLLoader</text>
 <text text-anchor="start" x="453.62" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>

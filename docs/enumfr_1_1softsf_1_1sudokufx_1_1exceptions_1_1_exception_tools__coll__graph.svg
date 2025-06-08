@@ -29,7 +29,7 @@
 <text text-anchor="start" x="4" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">INSTANCE</text>
 <text text-anchor="start" x="5.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="14" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="4" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">SQLInvalidAuthorizationSpec</text>
 <text text-anchor="start" x="14" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">Exception getSQLInvalidAuthorization</text>

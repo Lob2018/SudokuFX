@@ -27,7 +27,7 @@
 <text text-anchor="start" x="5.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage stage</text>
 <text text-anchor="start" x="5.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="14" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="4" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">void start(final Stage</text>
 <text text-anchor="start" x="14" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00"> stage)</text>

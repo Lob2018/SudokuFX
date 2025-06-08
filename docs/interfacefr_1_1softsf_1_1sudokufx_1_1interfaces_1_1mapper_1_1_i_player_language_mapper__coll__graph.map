@@ -1,6 +1,3 @@
 <map id="fr.softsf.sudokufx.interfaces.mapper.IPlayerLanguageMapper" name="fr.softsf.sudokufx.interfaces.mapper.IPlayerLanguageMapper">
-<area shape="rect" id="Node000001" title="This interface defines methods for mapping objects of type PlayerLanguage to objects of type PlayerLa..." alt="" coords="5,240,230,411"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html" title="This interface defines methods for mapping objects of type PlayerLanguage to objects of type PlayerLa..." alt="" coords="5,5,230,176"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,176,120,223,115,223,115,176"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="231,69,249,77,257,90,254,99,248,106,244,102,250,97,251,91,246,81,229,74"/>
+<area shape="rect" id="Node000001" title="This interface defines methods for mapping objects of type PlayerLanguage to objects of type PlayerLa..." alt="" coords="5,5,230,176"/>
 </map>

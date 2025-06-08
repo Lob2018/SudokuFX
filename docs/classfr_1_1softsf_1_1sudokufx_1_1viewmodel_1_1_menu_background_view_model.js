@@ -40,7 +40,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model =
     [ "imageText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a807d384c607158c81512fd3903a8fcf0", null ],
     [ "imageTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#affe702ea3df0eaa24bf096448bee5752", null ],
     [ "imageUtils", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a5b206dd45455fded011060b91c6a951c", null ],
-    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a1d5b7d5357994aa413af845fef22f7f6", null ],
+    [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a4497de6f3e9d972d61e713696a43786c", null ],
     [ "menuMaxiAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#ab154fe90baca0c23dc308e45b9d36921", null ],
     [ "menuMaxiRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a17d4c37ec1ba74e2935bad6564cb5605", null ],
     [ "menuMaxiText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a044f9aa75c150d7352221947308320ee", null ],

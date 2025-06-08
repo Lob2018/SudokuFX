@@ -19,18 +19,18 @@
 <text text-anchor="start" x="14" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">INSTANCE</text>
 <text text-anchor="start" x="5.5" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Pattern</text>
-<text text-anchor="start" x="14" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> alphanumericPattern</text>
+<text text-anchor="start" x="14" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALPHANUMERIC_PATTERN</text>
 <text text-anchor="start" x="5.5" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="14" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="5.5" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Pattern</text>
-<text text-anchor="start" x="14" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> secretPattern</text>
+<text text-anchor="start" x="14" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SECRET_PATTERN</text>
 <text text-anchor="start" x="5.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="14" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SPECIAL_CHARACTERS</text>
 <text text-anchor="start" x="5.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Pattern</text>
-<text text-anchor="start" x="14" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00"> versionPattern</text>
+<text text-anchor="start" x="14" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00"> VERSION_PATTERN</text>
 <text text-anchor="start" x="4" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Pattern getAlphanumericPattern()</text>
 <text text-anchor="start" x="4" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

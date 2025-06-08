@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Maps a Game object to a GameDto object.">
+<g id="a_Node000001"><a xlink:title="Converts a Game entity to a GameDto.">
 <polygon fill="#999999" stroke="#666666" points="176.5,-32 0,-32 0,0 176.5,0 176.5,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.mapper.</text>
 <text text-anchor="middle" x="88.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGameMapper.mapGameToDto</text>

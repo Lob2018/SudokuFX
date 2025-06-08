@@ -1,4 +1,4 @@
 <map id="fr.softsf.sudokufx.interfaces.mapper.IGameMapper.mapGameToDto" name="fr.softsf.sudokufx.interfaces.mapper.IGameMapper.mapGameToDto">
-<area shape="rect" id="Node000001" title="Maps a Game object to a GameDto object." alt="" coords="5,29,241,72"/>
+<area shape="rect" id="Node000001" title="Converts a Game entity to a GameDto." alt="" coords="5,29,241,72"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="78,29,77,19,84,10,100,5,123,3,148,5,163,11,161,16,147,10,123,8,101,10,87,15,82,21,84,28"/>
 </map>

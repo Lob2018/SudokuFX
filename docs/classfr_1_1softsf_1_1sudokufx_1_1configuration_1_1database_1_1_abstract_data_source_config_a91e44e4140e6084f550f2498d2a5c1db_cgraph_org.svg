@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#abff1fed4c4636eee219c99cf8411b63e" target="_top" xlink:title="Prints the application&#39;s ASCII logo to the log as an entry message.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#abff1fed4c4636eee219c99cf8411b63e" target="_top" xlink:title="Logs the ASCII logo (with app name and version), an optional optimization message at startup.">
 <polygon fill="white" stroke="#666666" points="452.75,-32 257.5,-32 257.5,0 452.75,0 452.75,-32"/>
 <text text-anchor="start" x="265.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.configuration.</text>
 <text text-anchor="middle" x="355.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogbackConfig.printLogEntryMessage</text>

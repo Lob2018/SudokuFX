@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a660c7205f4a6c92d2cc1ea3f9d845e8b" id="r_a660c7205f4a6c92d2cc1ea3f9d845e8b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a660c7205f4a6c92d2cc1ea3f9d845e8b">getLogsFolderPath</a> ()</td></tr>
 <tr class="separator:a660c7205f4a6c92d2cc1ea3f9d845e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abff1fed4c4636eee219c99cf8411b63e" id="r_abff1fed4c4636eee219c99cf8411b63e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abff1fed4c4636eee219c99cf8411b63e">printLogEntryMessage</a> ()</td></tr>
-<tr class="memdesc:abff1fed4c4636eee219c99cf8411b63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the application's ASCII logo to the log as an entry message.  <br /></td></tr>
+<tr class="memdesc:abff1fed4c4636eee219c99cf8411b63e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the ASCII logo (with app name and version), an optional optimization message at startup.  <br /></td></tr>
 <tr class="separator:abff1fed4c4636eee219c99cf8411b63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
@@ -153,8 +153,8 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a20881a058055911d881ca3328befa72d" id="r_a20881a058055911d881ca3328befa72d"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20881a058055911d881ca3328befa72d">log</a> = LoggerFactory.getLogger(MyLogbackConfig.class)</td></tr>
-<tr class="separator:a20881a058055911d881ca3328befa72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad20fe431c6bf83524d2dcc7d514763" id="r_a9ad20fe431c6bf83524d2dcc7d514763"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ad20fe431c6bf83524d2dcc7d514763">LOG</a> = LoggerFactory.getLogger(MyLogbackConfig.class)</td></tr>
+<tr class="separator:a9ad20fe431c6bf83524d2dcc7d514763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration class for Logback logging framework. </p>
@@ -266,8 +266,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Prints the application's ASCII logo to the log as an entry message. </p>
-<p>If the Spring context is set to exit on refresh, it also logs an optimizing startup message. </p>
+<p>Logs the ASCII logo (with app name and version), an optional optimization message at startup. </p>
 
 </div>
 </div>
@@ -333,8 +332,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a20881a058055911d881ca3328befa72d" name="a20881a058055911d881ca3328befa72d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20881a058055911d881ca3328befa72d">&#9670;&#160;</a></span>log</h2>
+<a id="a9ad20fe431c6bf83524d2dcc7d514763" name="a9ad20fe431c6bf83524d2dcc7d514763"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad20fe431c6bf83524d2dcc7d514763">&#9670;&#160;</a></span>LOG</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +342,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final Logger fr.softsf.sudokufx.configuration.MyLogbackConfig.log = LoggerFactory.getLogger(MyLogbackConfig.class)</td>
+          <td class="memname">final Logger fr.softsf.sudokufx.configuration.MyLogbackConfig.LOG = LoggerFactory.getLogger(MyLogbackConfig.class)</td>
         </tr>
       </table>
   </td>
@@ -408,7 +407,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1configuration.html">configuration</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html">MyLogbackConfig</a></li>
-    <li class="footer">Generated on Tue May 27 2025 17:51:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jun 8 2025 10:59:22 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

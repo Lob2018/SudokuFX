@@ -140,7 +140,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="23.75" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="23.75" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CURRENT_VERSION</text>
 <text text-anchor="start" x="15.25" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="23.75" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="23.75" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="13.75" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="23.75" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService(HttpClient</text>
 <text text-anchor="start" x="23.75" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00"> httpClient, ObjectMapper</text>

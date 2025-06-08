@@ -117,7 +117,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-670.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
 <text text-anchor="start" x="14" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
 <text text-anchor="start" x="5.5" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="14" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="4" y="-626.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-626.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleDifficultLevel</text>
 <text text-anchor="start" x="14" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">Show()</text>

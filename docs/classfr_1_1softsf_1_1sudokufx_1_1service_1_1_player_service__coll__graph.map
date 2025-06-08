@@ -1,3 +1,9 @@
 <map id="fr.softsf.sudokufx.service.PlayerService" name="fr.softsf.sudokufx.service.PlayerService">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,168,91"/>
+<area shape="rect" id="Node000001" title="Service class providing business logic related to Player entities." alt="" coords="97,343,314,497"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="5,159,182,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,259,159,326,154,329,118,261"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="20,5,168,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,105,96,159,91,159,91,105"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" title="Mapper interface for converting between Player entity and PlayerDto data transfer object." alt="" coords="207,140,431,279"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="286,279,264,320,259,329,254,327,259,317,281,277"/>
 </map>

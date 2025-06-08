@@ -11,5 +11,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_lis
     [ "hBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html#adee9d49224783a1a186b4e3e634d0185", null ],
     [ "label", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html#a16a89548c9b1df84091d774e5bc494af", null ],
     [ "listView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html#ac30db525d4cb85bfeb60dc27d239b8f4", null ],
-    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html#a90c448ce83cd4f77b06d9f7379f647c6", null ]
+    [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html#a822062f8cc581a584f01460331e26e6f", null ]
 ];

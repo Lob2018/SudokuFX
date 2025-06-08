@@ -8,11 +8,9 @@ var searchData=
   ['software_5',['Software',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html',1,'fr::softsf::sudokufx::model']]],
   ['softwarebuilder_6',['SoftwareBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software_1_1_software_builder.html',1,'fr::softsf::sudokufx::model::Software']]],
   ['softwarerepository_7',['SoftwareRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_software_repository.html',1,'fr::softsf::sudokufx::repository']]],
-  ['softwareservice_8',['SoftwareService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_software_service.html',1,'fr::softsf::sudokufx::service']]],
-  ['softwareserviceutest_9',['SoftwareServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1service_1_1_software_service_u_test.html',1,'fr::softsf::sudokufx::common::unit::service']]],
-  ['spinnergridpane_10',['SpinnerGridPane',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html',1,'fr::softsf::sudokufx::view::components']]],
-  ['splashscreenview_11',['SplashScreenView',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html',1,'fr::softsf::sudokufx::view']]],
-  ['springcontextinitializer_12',['SpringContextInitializer',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html',1,'fr::softsf::sudokufx::utils']]],
-  ['springcontextinitializerutest_13',['SpringContextInitializerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_spring_context_initializer_u_test.html',1,'fr::softsf::sudokufx::common::unit::utils']]],
-  ['sudomain_14',['SudoMain',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html',1,'fr::softsf::sudokufx']]]
+  ['spinnergridpane_8',['SpinnerGridPane',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html',1,'fr::softsf::sudokufx::view::components']]],
+  ['splashscreenview_9',['SplashScreenView',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html',1,'fr::softsf::sudokufx::view']]],
+  ['springcontextinitializer_10',['SpringContextInitializer',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html',1,'fr::softsf::sudokufx::utils']]],
+  ['springcontextinitializerutest_11',['SpringContextInitializerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_spring_context_initializer_u_test.html',1,'fr::softsf::sudokufx::common::unit::utils']]],
+  ['sudomain_12',['SudoMain',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html',1,'fr::softsf::sudokufx']]]
 ];

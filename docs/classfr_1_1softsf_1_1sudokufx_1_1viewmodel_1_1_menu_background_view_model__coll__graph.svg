@@ -94,7 +94,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="18.5" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00"> imageText</text>
 <text text-anchor="start" x="18.5" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
 <text text-anchor="start" x="10" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="18.5" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="18.5" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="10" y="-670.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="18.5" y="-670.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="18.5" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROLE_CLOSED</text>

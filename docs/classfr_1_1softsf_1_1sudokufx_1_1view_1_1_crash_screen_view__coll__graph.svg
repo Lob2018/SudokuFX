@@ -102,12 +102,12 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="94.5" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
 <text text-anchor="start" x="86" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="94.5" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IFileSystem</text>
-<text text-anchor="start" x="94.5" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iFileSystem</text>
+<text text-anchor="start" x="94.5" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00"> I_FILE_SYSTEM</text>
 <text text-anchor="start" x="86" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="94.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IOsFolderFactory</text>
-<text text-anchor="start" x="94.5" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolderFactory</text>
+<text text-anchor="start" x="94.5" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00"> I_OS_FOLDER_FACTORY</text>
 <text text-anchor="start" x="86" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="94.5" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="94.5" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="84.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="94.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
 <text text-anchor="start" x="94.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>

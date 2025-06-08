@@ -12,8 +12,8 @@ var enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n =
     [ "FRENCH_BUNDLE", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#ade85697c0162dee718271d344114c25c", null ],
     [ "I_18_N_PATH", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#aeca32735987d339766feb05930950bdd", null ],
     [ "INSTANCE", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#aa67588523e79383d8ab8f286a16703cd", null ],
-    [ "locale", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a223eaf33cac816d923bf8140421251d2", null ],
+    [ "LOCALE", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#aa78da66738cb49f9aa19268b0d58aff3", null ],
     [ "LOCALE_EN", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#ae033470b814a4269a4cafad2c9462752", null ],
     [ "LOCALE_FR", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a54283c00f512c0df49d732597793f796", null ],
-    [ "log", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a5b26a726dd15ad234e11a593cc3c75b8", null ]
+    [ "LOG", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#ad3fc8e90f361260f2f7023aea2341eaf", null ]
 ];

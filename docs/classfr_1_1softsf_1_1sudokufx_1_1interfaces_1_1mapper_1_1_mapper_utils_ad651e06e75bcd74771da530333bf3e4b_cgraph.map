@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.interfaces.mapper.MapperUtils.mapPlayerIdToPlayer" name="fr.softsf.sudokufx.interfaces.mapper.MapperUtils.mapPlayerIdToPlayer">
+<area shape="rect" id="Node000001" title="Converts a Player ID to a Player entity instance with only the ID set." alt="" coords="5,29,241,72"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="76,29,74,19,82,10,98,5,123,3,150,5,165,11,163,16,148,10,123,8,99,10,85,15,79,21,81,28"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title=" " alt="" coords="289,29,455,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,48,273,48,273,53,241,53"/>
+</map>

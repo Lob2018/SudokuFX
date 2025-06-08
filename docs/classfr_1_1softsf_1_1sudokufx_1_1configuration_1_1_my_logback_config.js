@@ -6,7 +6,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config =
     [ "printLogEntryMessage", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#abff1fed4c4636eee219c99cf8411b63e", null ],
     [ "printLogStatus", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a764a3472e63655858b4d301df2d22520", null ],
     [ "setLogBackPathForTests", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a710fb19502e24cddcc1931b1cb3c1b15", null ],
-    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a20881a058055911d881ca3328befa72d", null ],
+    [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a9ad20fe431c6bf83524d2dcc7d514763", null ],
     [ "logBackPath", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a429f81dfce7f65de768da3c6e3b2afae", null ],
     [ "logsFolderPath", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#ac427182de9522357abf50f8ea08b3c38", null ]
 ];

@@ -1,26 +1,23 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.loadPlayers" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.loadPlayers">
-<area shape="rect" id="Node000001" title="Loads test players into the observable list." alt="" coords="5,125,232,167"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#afb4a54799b624cdda95c1563f3ca0d1f" title="Generates a sample PlayerDto instance for testing purposes." alt="" coords="280,117,525,175"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,143,264,143,264,149,232,149"/>
-<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="1082,62,1321,89"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="456,114,511,87,572,64,698,26,800,6,850,3,904,4,1034,19,1097,34,1154,53,1152,58,1096,39,1033,25,903,9,850,8,801,12,700,31,574,69,513,92,459,119"/>
-<area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#ab5d2080d0c76f8058c944d91ec9a49c4" title=" " alt="" coords="573,133,778,159"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="526,143,557,143,557,149,526,149"/>
-<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" title=" " alt="" coords="838,34,1022,77"/>
-<area shape="poly" id="edge11_Node000002_Node000005" title=" " alt="" coords="502,114,572,97,702,76,822,62,823,67,702,81,574,102,504,119"/>
-<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" title=" " alt="" coords="833,106,1027,133"/>
-<area shape="poly" id="edge12_Node000002_Node000006" title=" " alt="" coords="525,123,573,118,699,113,817,113,817,118,699,118,573,123,526,128"/>
-<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a78c64f9aa988ddc79b6231cb035950b5" title=" " alt="" coords="826,183,1034,210"/>
-<area shape="poly" id="edge14_Node000002_Node000007" title=" " alt="" coords="526,163,573,169,811,188,811,193,573,174,525,168"/>
-<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title=" " alt="" coords="1100,194,1302,221"/>
-<area shape="poly" id="edge13_Node000002_Node000008" title=" " alt="" coords="499,173,574,191,701,214,802,224,904,224,1034,219,1085,216,1085,222,1034,225,904,230,802,229,701,219,572,197,498,179"/>
-<area shape="rect" id="Node000009" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d" title=" " alt="" coords="1108,255,1294,298"/>
-<area shape="poly" id="edge15_Node000002_Node000009" title=" " alt="" coords="453,174,509,203,574,228,642,244,712,256,852,272,983,278,1093,278,1093,284,983,284,852,277,711,262,641,249,572,233,507,208,450,178"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="715,130,853,80,854,85,717,135"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="779,133,817,129,818,134,779,138"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="747,157,845,177,844,182,746,163"/>
-<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="961,180,1154,93,1157,98,963,185"/>
-<area shape="poly" id="edge9_Node000007_Node000007" title=" " alt="" coords="888,185,880,175,885,165,902,159,930,157,961,159,976,166,974,171,959,165,930,162,903,164,888,169,885,174,892,181"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="1034,198,1084,200,1084,205,1034,203"/>
-<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="979,208,1113,248,1111,253,977,213"/>
+<area shape="rect" id="Node000001" title="Loads test players into the observable list." alt="" coords="5,81,232,124"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aee456e9687b1301a3d7559374d989855" title="Generates a sample PlayerDto instance for testing purposes." alt="" coords="280,73,525,132"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,100,264,100,264,105,232,105"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="828,5,1068,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="525,73,573,64,813,30,813,36,573,69,526,78"/>
+<area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title=" " alt="" coords="847,60,1049,87"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="525,91,573,88,831,75,832,81,573,93,525,96"/>
+<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1862f40401c051e5ca0d9444152882cf" title=" " alt="" coords="573,127,780,153"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="526,117,559,121,558,127,525,122"/>
+<area shape="rect" id="Node000009" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d" title=" " alt="" coords="855,169,1041,212"/>
+<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="472,130,521,148,574,163,642,175,711,182,839,189,839,194,711,188,641,180,572,168,520,153,470,135"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="695,124,752,85,827,46,860,34,862,39,829,50,755,90,698,128"/>
+<area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="734,123,875,88,877,93,735,129"/>
+<area shape="poly" id="edge10_Node000005_Node000005" title=" " alt="" coords="632,128,623,118,629,108,647,102,677,100,709,103,726,109,724,114,708,108,677,105,648,107,632,112,629,117,636,124"/>
+<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a37aaf8c06967608e0eac24a4d458f34b" title=" " alt="" coords="845,119,1051,145"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="781,134,830,133,830,138,781,140"/>
+<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="753,151,840,168,839,173,752,157"/>
+<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" title=" " alt="" coords="1121,81,1305,124"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1051,118,1105,112,1106,117,1051,123"/>
+<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" title=" " alt="" coords="1116,148,1310,175"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="1051,141,1101,146,1100,152,1051,146"/>
 </map>

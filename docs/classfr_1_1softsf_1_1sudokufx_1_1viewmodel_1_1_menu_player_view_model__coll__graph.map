@@ -1,3 +1,13 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel">
-<area shape="rect" id="Node000001" title="ViewModel for managing player menu UI state and accessibility texts." alt="" coords="5,5,236,1227"/>
+<area shape="rect" id="Node000001" title="ViewModel for managing player menu UI state and accessibility texts." alt="" coords="90,881,321,2103"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html" title="Component responsible for caching and providing the current PlayerDto instance." alt="" coords="95,561,316,817"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,817,208,865,203,865,203,817"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" title="Service class providing business logic related to Player entities." alt="" coords="97,343,314,497"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="208,497,208,545,203,545,203,497"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="5,159,182,260"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,259,159,326,154,329,118,261"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="20,5,168,91"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="96,105,96,159,91,159,91,105"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" title="Mapper interface for converting between Player entity and PlayerDto data transfer object." alt="" coords="207,140,431,279"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="286,279,264,320,259,329,254,327,259,317,281,277"/>
 </map>

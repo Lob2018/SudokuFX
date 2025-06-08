@@ -11,5 +11,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_l
     [ "hBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html#aa316aacdf8caa15eae5002d995700a5a", null ],
     [ "label", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html#a71c9addd0795a0af13dd98301f2acd7a", null ],
     [ "listView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html#a147e37835031974ec41fb7df3a0698b5", null ],
-    [ "log", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html#a358fa381e74be54118ad82e58fa93855", null ]
+    [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html#ae21b403bd61f5c3f4026a1d8d8152991", null ]
 ];

@@ -1,3 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" title="This interface defines methods for mapping objects of type Player to objects of type PlayerDto and vi..." alt="" coords="5,5,241,48"/>
+<area shape="rect" id="Node000000" href="$classfr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_mapper_utils.html" title="Utility class providing custom mapping methods for use with MapStruct." alt="" coords="5,5,241,48"/>
 </map>

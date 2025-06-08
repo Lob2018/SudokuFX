@@ -30,7 +30,7 @@
 <text text-anchor="start" x="14" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00"> I_18_N_PATH</text>
 <text text-anchor="start" x="5.5" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final ObjectProperty</text>
-<text text-anchor="start" x="14" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Locale &gt; locale</text>
+<text text-anchor="start" x="14" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Locale &gt; LOCALE</text>
 <text text-anchor="start" x="5.5" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Locale</text>
 <text text-anchor="start" x="14" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> LOCALE_EN</text>
@@ -38,7 +38,7 @@
 <text text-anchor="start" x="14" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Locale</text>
 <text text-anchor="start" x="14" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00"> LOCALE_FR</text>
 <text text-anchor="start" x="5.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
+<text text-anchor="start" x="14" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="4" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getHostEnvironment</text>
 <text text-anchor="start" x="14" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">LanguageCode()</text>

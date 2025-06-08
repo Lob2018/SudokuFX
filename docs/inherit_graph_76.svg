@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_image_utils.html" target="_top" xlink:title="Utility class for image&#45;related operations, including color conversion, image validation,...">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="116.5,-32 0,-32 0,0 116.5,0 116.5,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
-<text text-anchor="middle" x="58.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>
+<text text-anchor="middle" x="58.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegexUTest</text>
 </a>
 </g>
 </g>

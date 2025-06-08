@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.cache.CachedPlayer.CachedPlayer" name="fr.softsf.sudokufx.viewmodel.cache.CachedPlayer.CachedPlayer">
+<area shape="rect" id="Node000001" title="Constructor that initializes the cached player by loading it from the PlayerService." alt="" coords="5,5,238,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html#adb7dd487ac890696901787fb2a9b0422" title="Loads the current player from PlayerService and sets it in the cache." alt="" coords="286,5,518,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,24,270,24,270,29,238,29"/>
+</map>
