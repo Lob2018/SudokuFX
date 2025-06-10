@@ -317,6 +317,7 @@
               <rules>
                 <requireMavenVersion>
                   <version>${maven.version}</version>
+                  <message>The version of Maven must be at least ${maven.version}. Please update your Maven installation.</message>
                 </requireMavenVersion>
               </rules>
             </configuration>
