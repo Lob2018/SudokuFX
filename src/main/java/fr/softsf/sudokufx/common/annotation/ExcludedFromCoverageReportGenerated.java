@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.common.annotations;
+package fr.softsf.sudokufx.common.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;

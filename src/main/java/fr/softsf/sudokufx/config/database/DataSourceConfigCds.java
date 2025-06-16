@@ -9,7 +9,7 @@ import org.springframework.context.annotation.*;
 
 import com.zaxxer.hikari.HikariDataSource;
 
-import fr.softsf.sudokufx.common.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 
 import static fr.softsf.sudokufx.enums.Paths.DATABASE_NAME;

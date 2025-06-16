@@ -15,7 +15,7 @@ import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.ScreenSize;
-import fr.softsf.sudokufx.view.components.MyAlert;
+import fr.softsf.sudokufx.view.component.MyAlert;
 
 /**
  * ViewModel responsible for displaying the help dialog. It retrieves application and system

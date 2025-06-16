@@ -12,7 +12,7 @@ import org.springframework.context.annotation.DependsOn;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-import fr.softsf.sudokufx.common.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.config.MyLogbackConfig;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 

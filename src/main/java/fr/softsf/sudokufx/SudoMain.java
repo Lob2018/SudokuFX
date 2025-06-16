@@ -22,7 +22,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.gluonhq.ignite.spring.SpringContext;
 
-import fr.softsf.sudokufx.common.exceptions.ExceptionTools;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.common.util.DynamicFontSize;

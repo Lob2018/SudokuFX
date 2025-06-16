@@ -14,7 +14,7 @@ import javax.net.ssl.SSLContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import fr.softsf.sudokufx.common.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 
 /** Configures a secure HttpClient bean with TLS 1.2, no redirects, and a 5-second timeout. */
 @Configuration

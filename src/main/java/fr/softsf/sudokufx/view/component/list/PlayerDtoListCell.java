@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.view.components.list;
+package fr.softsf.sudokufx.view.component.list;
 
 import java.text.MessageFormat;
 import java.util.Objects;
@@ -15,32 +15,30 @@ import javafx.scene.layout.Priority;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import fr.softsf.sudokufx.common.util.MyDateTime;
-import fr.softsf.sudokufx.dto.GameDto;
+import fr.softsf.sudokufx.dto.PlayerDto;
 
 /**
- * A custom {@code ListCell} for displaying a {@code GameDto} in a {@code ListView}, with a label
- * showing the formatted update date and a button to remove the item after user confirmation.
+ * A custom {@code ListCell} for displaying a {@code PlayerDto} in a {@code ListView}, with a label
+ * and a button that removes the item from the list after user confirmation.
  *
- * <p>The removal button and confirmation dialog texts are fully internationalized using {@code
- * StringBinding}. Accessibility and tooltip texts are updated dynamically based on the current
- * item.
+ * <p>The button and confirmation dialog are fully internationalized using {@code StringBinding}.
+ * The cell updates its accessibility and tooltip text accordingly.
  */
-public final class GameDtoListCell extends ListCell<GameDto> {
+public final class PlayerDtoListCell extends ListCell<PlayerDto> {
 
-    private static final Logger LOG = LoggerFactory.getLogger(GameDtoListCell.class);
+    private static final Logger LOG = LoggerFactory.getLogger(PlayerDtoListCell.class);
 
     private final HBox hBox = new HBox();
     private final Label label = new Label();
     private final Button button = new Button();
-    private final ListView<GameDto> listView;
+    private final ListView<PlayerDto> listView;
     private final Alert confirmationAlert;
     private final StringBinding buttonAccessibleTextBinding;
     private final StringBinding confirmationTitleBinding;
     private final StringBinding confirmationMessageBinding;
 
-    public GameDtoListCell(
-            ListView<GameDto> listView,
+    public PlayerDtoListCell(
+            ListView<PlayerDto> listView,
             String buttonText,
             StringBinding buttonAccessibleTextBinding,
             StringBinding confirmationTitleBinding,
@@ -72,15 +70,15 @@ public final class GameDtoListCell extends ListCell<GameDto> {
     }
 
     /**
-     * Updates the cell's content with the formatted update date of the {@code GameDto} item.
-     * Configures the removal button's accessibility and tooltip text, and binds its action to show
-     * a localized confirmation dialog before removing the item.
+     * Updates the visual representation of the cell based on the given {@code PlayerDto} item. If
+     * the item is not empty, sets up the label and button with localized text and accessibility
+     * metadata.
      *
-     * @param item the {@code GameDto} to display
-     * @param empty whether this cell represents data from the list or is empty
+     * @param item the {@code PlayerDto} to display
+     * @param empty whether this cell represents data from the list
      */
     @Override
-    protected void updateItem(GameDto item, boolean empty) {
+    protected void updateItem(PlayerDto item, boolean empty) {
         super.updateItem(item, empty);
         if (empty || item == null) {
             setGraphic(null);
@@ -89,45 +87,41 @@ public final class GameDtoListCell extends ListCell<GameDto> {
             button.setTooltip(null);
             button.setOnAction(null);
         } else {
-            String formattedDate = MyDateTime.INSTANCE.getFormatted(item.updatedat());
-            label.setText(formattedDate);
+            String name = item.name();
+            label.setText(name);
             setGraphic(hBox);
-            setAccessibleText(formattedDate);
-            button.setAccessibleText(
-                    MessageFormat.format(buttonAccessibleTextBinding.get(), formattedDate));
+            setAccessibleText(name);
+            button.setAccessibleText(MessageFormat.format(buttonAccessibleTextBinding.get(), name));
             button.setTooltip(
-                    new Tooltip(
-                            MessageFormat.format(
-                                    buttonAccessibleTextBinding.get(), formattedDate)));
+                    new Tooltip(MessageFormat.format(buttonAccessibleTextBinding.get(), name)));
             button.setOnAction(
                     event -> {
                         if (getItem() != null) {
                             confirmAndRemoveItem(getItem());
                         } else {
-                            LOG.warn(
-                                    "▓▓ getItem() returned null in GameDtoListCell button action.");
+                            LOG.warn("▓▓ getItem() returned null in ItemListCell button action.");
                         }
                     });
         }
     }
 
     /**
-     * Shows a confirmation dialog with localized title and message including the item's formatted
-     * date. Removes the {@code GameDto} from the {@code ListView} if the user confirms.
+     * Displays a confirmation dialog using localized messages. If the user confirms, removes the
+     * specified {@code PlayerDto} from the {@code ListView}.
      *
-     * @param item the {@code GameDto} to remove upon confirmation
+     * @param item the {@code PlayerDto} to remove upon confirmation
      */
-    private void confirmAndRemoveItem(GameDto item) {
-        String formattedDate = MyDateTime.INSTANCE.getFormatted(item.updatedat());
+    private void confirmAndRemoveItem(PlayerDto item) {
+        String name = item.name();
         confirmationAlert.setTitle(confirmationTitleBinding.get());
         confirmationAlert.setHeaderText(null);
         confirmationAlert.setContentText(
-                MessageFormat.format(confirmationMessageBinding.get(), formattedDate));
+                MessageFormat.format(confirmationMessageBinding.get(), name));
         confirmationAlert
                 .showAndWait()
                 .ifPresent(
                         response -> {
-                            if ("OK".equals(response.getText())) {
+                            if (response.getText().equals("OK")) {
                                 listView.getItems().remove(item);
                             }
                         });

@@ -15,8 +15,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
-import fr.softsf.sudokufx.view.components.SpinnerGridPane;
-import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
+import fr.softsf.sudokufx.view.component.SpinnerGridPane;
+import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

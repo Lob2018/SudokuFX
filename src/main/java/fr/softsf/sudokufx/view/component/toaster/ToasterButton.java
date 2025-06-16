@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.view.components.toaster;
+package fr.softsf.sudokufx.view.component.toaster;
 
 import javafx.scene.control.Button;
 

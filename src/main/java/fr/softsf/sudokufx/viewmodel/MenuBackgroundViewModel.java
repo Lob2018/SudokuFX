@@ -27,8 +27,8 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.common.util.ImageUtils;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.ToastLevels;
-import fr.softsf.sudokufx.view.components.SpinnerGridPane;
-import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
+import fr.softsf.sudokufx.view.component.SpinnerGridPane;
+import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 
 /**
  * ViewModel managing menu background UI state and accessibility strings.

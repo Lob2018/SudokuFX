@@ -12,7 +12,7 @@ import org.passay.CharacterData;
 import org.passay.*;
 import org.springframework.stereotype.Component;
 
-import fr.softsf.sudokufx.common.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 
 import static org.passay.IllegalCharacterRule.ERROR_CODE;
 

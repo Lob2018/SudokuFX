@@ -20,7 +20,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import fr.softsf.sudokufx.common.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 
 /**

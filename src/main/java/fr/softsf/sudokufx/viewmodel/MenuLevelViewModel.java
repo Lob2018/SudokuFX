@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.enums.DifficultyLevel;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.SecureRandomGenerator;
-import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
+import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 
 /**
  * ViewModel for managing difficulty level selection in the menu.

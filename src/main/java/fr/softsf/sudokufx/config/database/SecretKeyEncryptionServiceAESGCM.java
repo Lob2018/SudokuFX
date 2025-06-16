@@ -17,7 +17,7 @@ import javax.crypto.spec.GCMParameterSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import fr.softsf.sudokufx.common.annotations.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 import jakarta.validation.constraints.NotBlank;
 
 /**

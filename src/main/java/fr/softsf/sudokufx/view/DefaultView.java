@@ -41,12 +41,12 @@ import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.enums.*;
 import fr.softsf.sudokufx.navigation.Coordinator;
-import fr.softsf.sudokufx.view.components.MyAlert;
-import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
-import fr.softsf.sudokufx.view.components.SpinnerGridPane;
-import fr.softsf.sudokufx.view.components.list.GameDtoListCell;
-import fr.softsf.sudokufx.view.components.list.PlayerDtoListCell;
-import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
+import fr.softsf.sudokufx.view.component.MyAlert;
+import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
+import fr.softsf.sudokufx.view.component.SpinnerGridPane;
+import fr.softsf.sudokufx.view.component.list.GameDtoListCell;
+import fr.softsf.sudokufx.view.component.list.PlayerDtoListCell;
+import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.*;
 
 /**
