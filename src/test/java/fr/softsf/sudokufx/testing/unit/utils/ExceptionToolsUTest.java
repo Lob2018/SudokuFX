@@ -3,13 +3,13 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.common.unit.utils;
+package fr.softsf.sudokufx.testing.unit.utils;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 
 import org.junit.jupiter.api.Test;
 
-import fr.softsf.sudokufx.exceptions.ExceptionTools;
+import fr.softsf.sudokufx.common.exceptions.ExceptionTools;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.configuration;
+package fr.softsf.sudokufx.config;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -20,8 +20,8 @@ import org.slf4j.LoggerFactory;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import fr.softsf.sudokufx.configuration.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.config.os.IOsFolderFactory;
+import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
 
 import static fr.softsf.sudokufx.enums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.enums.LogBackTxt.OPTIMIZING;

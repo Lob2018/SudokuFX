@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.common.unit.utils;
+package fr.softsf.sudokufx.testing.unit.utils;
 
 import java.util.concurrent.CountDownLatch;
 import javafx.concurrent.Task;
@@ -14,7 +14,7 @@ import org.testfx.framework.junit5.ApplicationExtension;
 
 import com.gluonhq.ignite.spring.SpringContext;
 
-import fr.softsf.sudokufx.utils.SpringContextInitializer;
+import fr.softsf.sudokufx.common.util.SpringContextInitializer;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;

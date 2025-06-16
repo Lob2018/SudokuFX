@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.utils;
+package fr.softsf.sudokufx.common.util;
 
 import java.util.concurrent.TimeoutException;
 import javafx.scene.Scene;
