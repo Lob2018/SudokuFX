@@ -10,7 +10,7 @@ import javafx.beans.property.SimpleObjectProperty;
 
 import org.springframework.stereotype.Component;
 
-import fr.softsf.sudokufx.exceptions.ExceptionTools;
+import fr.softsf.sudokufx.common.exceptions.ExceptionTools;
 
 /**
  * ViewModel component managing the currently active menu or submenu. Provides observable state for

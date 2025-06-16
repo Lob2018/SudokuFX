@@ -22,11 +22,11 @@ import org.springframework.stereotype.Service;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
+import fr.softsf.sudokufx.common.util.MyDateTime;
+import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.MyRegex;
-import fr.softsf.sudokufx.utils.MyDateTime;
 
 import static fr.softsf.sudokufx.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
 

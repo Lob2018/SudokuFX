@@ -12,8 +12,8 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.dto.PlayerDto;
-import fr.softsf.sudokufx.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.repository.PlayerRepository;
 
 /**

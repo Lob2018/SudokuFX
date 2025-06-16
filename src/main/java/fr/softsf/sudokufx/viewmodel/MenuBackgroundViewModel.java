@@ -24,9 +24,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.util.ImageUtils;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.ToastLevels;
-import fr.softsf.sudokufx.utils.ImageUtils;
 import fr.softsf.sudokufx.view.components.SpinnerGridPane;
 import fr.softsf.sudokufx.view.components.toaster.ToasterVBox;
 

@@ -31,13 +31,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.configuration.JVMApplicationProperties;
-import fr.softsf.sudokufx.configuration.os.IOsFolderFactory;
-import fr.softsf.sudokufx.configuration.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.common.interfaces.IMainView;
+import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.common.util.FileSystemManager;
+import fr.softsf.sudokufx.common.util.IFileSystem;
+import fr.softsf.sudokufx.config.JVMApplicationProperties;
+import fr.softsf.sudokufx.config.os.IOsFolderFactory;
+import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
 import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.interfaces.*;
-import fr.softsf.sudokufx.utils.FileSystemManager;
-import fr.softsf.sudokufx.utils.IFileSystem;
 
 import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
 import static fr.softsf.sudokufx.enums.Paths.LOGO_SUDO_PNG_PATH;

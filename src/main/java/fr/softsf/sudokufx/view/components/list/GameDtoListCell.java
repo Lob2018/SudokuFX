@@ -15,8 +15,8 @@ import javafx.scene.layout.Priority;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.dto.GameDto;
-import fr.softsf.sudokufx.utils.MyDateTime;
 
 /**
  * A custom {@code ListCell} for displaying a {@code GameDto} in a {@code ListView}, with a label

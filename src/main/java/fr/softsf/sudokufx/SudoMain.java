@@ -22,14 +22,14 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.gluonhq.ignite.spring.SpringContext;
 
+import fr.softsf.sudokufx.common.exceptions.ExceptionTools;
+import fr.softsf.sudokufx.common.interfaces.IMainView;
+import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.common.util.DynamicFontSize;
+import fr.softsf.sudokufx.common.util.SpringContextInitializer;
 import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.enums.LogBackTxt;
-import fr.softsf.sudokufx.exceptions.ExceptionTools;
-import fr.softsf.sudokufx.interfaces.IMainView;
-import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.navigation.Coordinator;
-import fr.softsf.sudokufx.utils.DynamicFontSize;
-import fr.softsf.sudokufx.utils.SpringContextInitializer;
 import fr.softsf.sudokufx.view.SplashScreenView;
 
 /**

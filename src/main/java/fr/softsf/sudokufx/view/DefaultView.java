@@ -35,11 +35,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.common.interfaces.IMainView;
+import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.enums.*;
-import fr.softsf.sudokufx.interfaces.IMainView;
-import fr.softsf.sudokufx.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.view.components.MyAlert;
 import fr.softsf.sudokufx.view.components.PossibilityStarsHBox;
