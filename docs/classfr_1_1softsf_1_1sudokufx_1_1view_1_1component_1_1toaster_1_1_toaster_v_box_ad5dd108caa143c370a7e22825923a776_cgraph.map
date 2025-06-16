@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.addToast" name="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.addToast">
+<area shape="rect" id="Node000001" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="5,72,275,115"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a7df4872b0cf0eeb5cd3a04ce7ccb0fef" title="Sets the accessibility text for the toast based on its level." alt="" coords="323,5,592,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,69,337,49,338,54,245,74"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a1f7607f18913c940c16c9de28f3e7ae7" title="Sets the style of the toast based on its level." alt="" coords="323,72,592,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="275,91,307,91,307,96,275,96"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#abd2310564b394c59530d5e7b2a0d0776" title="Sets a timer to automatically remove the toast after a specified duration." alt="" coords="323,139,592,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="245,113,338,132,337,138,244,118"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a67957eac2367e7b8018ef0d2ce354bef" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="640,5,909,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="593,24,625,24,625,29,593,29"/>
+<area shape="rect" id="Node000005" href="$enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a37cf79bc87b16f23dc854d3de19d331b" title=" " alt="" coords="690,72,860,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="593,91,674,91,674,96,593,96"/>
+</map>

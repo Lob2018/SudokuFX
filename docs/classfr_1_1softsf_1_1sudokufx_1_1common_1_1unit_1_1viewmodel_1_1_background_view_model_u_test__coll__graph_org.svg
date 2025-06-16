@@ -111,7 +111,7 @@
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" target="_top" xlink:title="A custom VBox component for displaying toast notifications.">
 <polygon fill="white" stroke="none" points="395.88,-692 196.62,-692 196.62,-180 395.88,-180 395.88,-692"/>
-<text text-anchor="start" x="200.62" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="200.62" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="start" x="268.12" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox</text>
 <text text-anchor="start" x="294.75" y="-650.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <text text-anchor="start" x="214.25" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -204,7 +204,7 @@
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" target="_top" xlink:title="A custom button with a display text and a full detail text.">
 <polygon fill="white" stroke="none" points="425.88,-872 226.62,-872 226.62,-752 425.88,-752 425.88,-872"/>
-<text text-anchor="start" x="230.62" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="230.62" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="start" x="295.88" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterButton</text>
 <text text-anchor="start" x="248.94" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="274.25" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">String fullDetailText</text>
@@ -261,7 +261,7 @@
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html" target="_top" xlink:title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons.">
 <polygon fill="white" stroke="none" points="580.38,-504 414.12,-504 414.12,-368 580.38,-368 580.38,-504"/>
-<text text-anchor="start" x="418.12" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
+<text text-anchor="start" x="418.12" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
 <text text-anchor="start" x="460.5" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane</text>
 <text text-anchor="start" x="419.94" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="428.75" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Animation spinnerAnimation1</text>

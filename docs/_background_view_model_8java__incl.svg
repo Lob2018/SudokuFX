@@ -328,7 +328,7 @@ var sectionId = 'dynsection-0';
 <title>Node16</title>
 <g id="a_Node000016"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="2105.75,-32 1931.5,-32 1931.5,0 2105.75,0 2105.75,-32"/>
-<text text-anchor="start" x="1939.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
+<text text-anchor="start" x="1939.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
 <text text-anchor="middle" x="2018.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane</text>
 </a>
 </g>
@@ -347,7 +347,7 @@ var sectionId = 'dynsection-0';
 <title>Node17</title>
 <g id="a_Node000017"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="2331.25,-32 2124,-32 2124,0 2331.25,0 2331.25,-32"/>
-<text text-anchor="start" x="2132" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="2132" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="middle" x="2227.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox</text>
 </a>
 </g>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.components.list.GameDtoListCell.updateItem" name="fr.softsf.sudokufx.view.components.list.GameDtoListCell.updateItem">
+<map id="fr.softsf.sudokufx.view.component.list.GameDtoListCell.updateItem" name="fr.softsf.sudokufx.view.component.list.GameDtoListCell.updateItem">
 <area shape="rect" id="Node000001" title="Updates the cell&#39;s content with the formatted update date of the GameDto item." alt="" coords="5,5,259,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html#a326cb018afac0b9d4d6ee500aee0dbaf" title="Shows a confirmation dialog with localized title and message including the item&#39;s formatted date." alt="" coords="307,5,573,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,24,291,24,291,29,259,29"/>

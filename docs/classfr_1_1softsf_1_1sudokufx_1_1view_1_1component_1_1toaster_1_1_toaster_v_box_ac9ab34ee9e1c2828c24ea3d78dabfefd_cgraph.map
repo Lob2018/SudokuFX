@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.toastActions" name="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.toastActions">
+<area shape="rect" id="Node000001" title="Handles actions when a toast is clicked." alt="" coords="5,39,275,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a195f049dfd2a8adedb7150202b04f807" title="Copies the full detail text content of a toast to the system clipboard." alt="" coords="323,5,592,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,43,307,40,307,45,276,48"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a96c4a08476663f43ba9771b78d898954" title="Removes the specified toast button from the ToasterVBox." alt="" coords="323,72,592,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="276,72,307,75,307,80,275,77"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html#a6473f13e504fd3909801f98238760acc" title=" " alt="" coords="640,5,909,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="593,24,625,24,625,29,593,29"/>
+</map>

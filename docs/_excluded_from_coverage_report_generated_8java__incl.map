@@ -1,4 +1,4 @@
-<map id="src/main/java/fr/softsf/sudokufx/common/annotations/ExcludedFromCoverageReportGenerated.java" name="src/main/java/fr/softsf/sudokufx/common/annotations/ExcludedFromCoverageReportGenerated.java">
+<map id="src/main/java/fr/softsf/sudokufx/common/annotation/ExcludedFromCoverageReportGenerated.java" name="src/main/java/fr/softsf/sudokufx/common/annotation/ExcludedFromCoverageReportGenerated.java">
 <area shape="rect" id="Node000001" title=" " alt="" coords="410,5,702,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,120,221,147"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="425,67,187,119,185,114,423,62"/>

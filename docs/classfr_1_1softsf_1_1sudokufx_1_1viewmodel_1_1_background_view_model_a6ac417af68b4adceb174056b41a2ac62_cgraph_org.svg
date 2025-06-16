@@ -62,7 +62,7 @@
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#ac95cfb708e84f566bb41d6ca5f9d1ccf" target="_top" xlink:title="Adds a toast notification with an automatically calculated duration based on text length.">
 <polygon fill="white" stroke="#666666" points="1099.25,-176.95 892,-176.95 892,-144.95 1099.25,-144.95 1099.25,-176.95"/>
-<text text-anchor="start" x="900" y="-163.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="900" y="-163.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="middle" x="995.62" y="-151.45" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox.addToast</text>
 </a>
 </g>
@@ -119,7 +119,7 @@
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a37d80e32206ddf4e5ea31e6205b08acd" target="_top" xlink:title="Sets the accessibility text for the toast based on its level.">
 <polygon fill="white" stroke="#666666" points="1342.5,-226.95 1135.25,-226.95 1135.25,-194.95 1342.5,-194.95 1342.5,-226.95"/>
-<text text-anchor="start" x="1143.25" y="-213.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="1143.25" y="-213.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="middle" x="1238.88" y="-201.45" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox.setAccessibility</text>
 </a>
 </g>
@@ -138,7 +138,7 @@
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#acbc99d9f5ededd3b6a84ab864ec79171" target="_top" xlink:title="Sets the style of the toast based on its level.">
 <polygon fill="white" stroke="#666666" points="1342.5,-176.95 1135.25,-176.95 1135.25,-144.95 1342.5,-144.95 1342.5,-176.95"/>
-<text text-anchor="start" x="1143.25" y="-163.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="1143.25" y="-163.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="middle" x="1238.88" y="-151.45" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox.setToastStyle</text>
 </a>
 </g>
@@ -157,7 +157,7 @@
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#abbd390731ca047cc6010818f5d461dbd" target="_top" xlink:title="Sets a timer to automatically remove the toast after a specified duration.">
 <polygon fill="white" stroke="#666666" points="1342.5,-126.95 1135.25,-126.95 1135.25,-94.95 1342.5,-94.95 1342.5,-126.95"/>
-<text text-anchor="start" x="1143.25" y="-113.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="1143.25" y="-113.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="middle" x="1238.88" y="-101.45" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox.temporizeToast</text>
 </a>
 </g>
@@ -176,7 +176,7 @@
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a8cdb11d9f616bd6f835cafbf5f28bce7" target="_top" xlink:title="Retrieves the information text corresponding to the specified toast level.">
 <polygon fill="white" stroke="#666666" points="1585.75,-226.95 1378.5,-226.95 1378.5,-194.95 1585.75,-194.95 1585.75,-226.95"/>
-<text text-anchor="start" x="1386.5" y="-213.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="1386.5" y="-213.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="middle" x="1482.12" y="-201.45" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox.getToastInfo</text>
 </a>
 </g>
@@ -281,7 +281,7 @@
 <title>Node15</title>
 <g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html#a51a5a2c154472ae3fd1943c7ca446cf2" target="_top" xlink:title="Shows or hides the spinner.">
 <polygon fill="white" stroke="#666666" points="1082.75,-76.95 908.5,-76.95 908.5,-44.95 1082.75,-44.95 1082.75,-76.95"/>
-<text text-anchor="start" x="916.5" y="-63.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
+<text text-anchor="start" x="916.5" y="-63.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
 <text text-anchor="middle" x="995.62" y="-51.45" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane.showSpinner</text>
 </a>
 </g>
@@ -328,7 +328,7 @@
 <title>Node14</title>
 <g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a4927d5647d977b8b2e3a3a84f51bea4e" target="_top" xlink:title="Schedules the current toast for removal after a short delay.">
 <polygon fill="white" stroke="#666666" points="1099.25,-126.95 892,-126.95 892,-94.95 1099.25,-94.95 1099.25,-126.95"/>
-<text text-anchor="start" x="900" y="-113.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="900" y="-113.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="middle" x="995.62" y="-101.45" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox.removeToast</text>
 </a>
 </g>

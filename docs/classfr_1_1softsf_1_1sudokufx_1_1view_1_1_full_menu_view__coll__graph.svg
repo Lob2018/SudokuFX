@@ -426,7 +426,7 @@ var sectionId = 'dynsection-1';
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html" target="_top" xlink:title="A custom VBox component for displaying toast notifications.">
 <polygon fill="white" stroke="none" points="814.88,-932 615.62,-932 615.62,-420 814.88,-420 814.88,-932"/>
-<text text-anchor="start" x="619.62" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="619.62" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="start" x="687.12" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox</text>
 <text text-anchor="start" x="713.75" y="-890.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <text text-anchor="start" x="633.25" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -519,7 +519,7 @@ var sectionId = 'dynsection-1';
 <title>Node12</title>
 <g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html" target="_top" xlink:title="A custom button with a display text and a full detail text.">
 <polygon fill="white" stroke="none" points="948.88,-1168 749.62,-1168 749.62,-1048 948.88,-1048 948.88,-1168"/>
-<text text-anchor="start" x="753.62" y="-1154.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="753.62" y="-1154.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="start" x="818.88" y="-1142.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterButton</text>
 <text text-anchor="start" x="771.94" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="797.25" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00">String fullDetailText</text>

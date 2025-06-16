@@ -152,7 +152,7 @@
 <title>Node9</title>
 <g id="a_Node000009"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1364.25,-32 1169,-32 1169,0 1364.25,0 1364.25,-32"/>
-<text text-anchor="start" x="1177" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.annotations.</text>
+<text text-anchor="start" x="1177" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.annotation.</text>
 <text text-anchor="middle" x="1266.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExcludedFromCoverageReportGenerated</text>
 </a>
 </g>

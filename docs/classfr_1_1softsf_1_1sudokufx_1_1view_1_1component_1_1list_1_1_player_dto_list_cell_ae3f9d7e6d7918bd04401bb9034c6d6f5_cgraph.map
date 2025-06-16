@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.list.PlayerDtoListCell.updateItem" name="fr.softsf.sudokufx.view.component.list.PlayerDtoListCell.updateItem">
+<area shape="rect" id="Node000001" title="Updates the visual representation of the cell based on the given PlayerDto item." alt="" coords="5,5,252,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_player_dto_list_cell.html#a213500378d1fb5fd0317824dc6b12a2b" title="Displays a confirmation dialog using localized messages." alt="" coords="300,5,568,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,24,284,24,284,29,252,29"/>
+</map>

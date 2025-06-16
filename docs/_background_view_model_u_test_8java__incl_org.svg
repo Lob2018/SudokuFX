@@ -172,7 +172,7 @@
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1427.12,-32 1252.88,-32 1252.88,0 1427.12,0 1427.12,-32"/>
-<text text-anchor="start" x="1260.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
+<text text-anchor="start" x="1260.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
 <text text-anchor="middle" x="1340" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane</text>
 </a>
 </g>
@@ -191,7 +191,7 @@
 <title>Node11</title>
 <g id="a_Node000011"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1652.62,-32 1445.38,-32 1445.38,0 1652.62,0 1652.62,-32"/>
-<text text-anchor="start" x="1453.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.toaster.</text>
+<text text-anchor="start" x="1453.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
 <text text-anchor="middle" x="1549" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox</text>
 </a>
 </g>

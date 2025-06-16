@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.PossibilityStarsHBox.PossibilityStarsHBox" name="fr.softsf.sudokufx.view.component.PossibilityStarsHBox.PossibilityStarsHBox">
+<area shape="rect" id="Node000001" title="Creates the component with right&#45;aligned layout, 5 star icons, and default styles." alt="" coords="5,13,279,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#affcd974bbcfb3fd2efcdf7b59ce2dda7" title="Updates the star icons to reflect the given percentage (0–100), rounding to the nearest half&#45;star." alt="" coords="327,5,587,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,32,311,32,311,37,279,37"/>
+</map>

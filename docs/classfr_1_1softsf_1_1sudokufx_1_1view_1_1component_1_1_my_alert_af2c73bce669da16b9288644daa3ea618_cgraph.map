@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.MyAlert.MyAlert" name="fr.softsf.sudokufx.view.component.MyAlert.MyAlert">
+<area shape="rect" id="Node000001" title="Creates a styled alert with automatic sizing." alt="" coords="5,5,231,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html#ad7031bb3b9367f715a320aff5bbe1d3d" title="Initializes the alert with optional size and visual styling." alt="" coords="279,5,504,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,24,263,24,263,29,231,29"/>
+</map>

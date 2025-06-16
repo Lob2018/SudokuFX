@@ -14,10 +14,10 @@ var searchData=
   ['englishformatter_11',['englishFormatter',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ac9bf81a6125aaca1e99d8f88a4351ee2',1,'fr::softsf::sudokufx::common::util::MyDateTime']]],
   ['error_12',['ERROR',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#ac6c57ce2a1dea6e794847593e40776e0',1,'fr::softsf::sudokufx::enums::ToastLevels']]],
   ['evaluation_13',['Temporary performance evaluation',['../index.html#Temporary_performance_evaluation',1,'']]],
-  ['exceptiontools_14',['ExceptionTools',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exceptions_1_1_exception_tools.html',1,'fr::softsf::sudokufx::common::exceptions']]],
+  ['exceptiontools_14',['ExceptionTools',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html',1,'fr::softsf::sudokufx::common::exception']]],
   ['exceptiontools_2ejava_15',['ExceptionTools.java',['../_exception_tools_8java.html',1,'']]],
-  ['exceptiontoolsutest_16',['ExceptionToolsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_exception_tools_u_test.html',1,'fr::softsf::sudokufx::testing::unit::utils']]],
+  ['exceptiontoolsutest_16',['ExceptionToolsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test.html',1,'fr::softsf::sudokufx::testing::unit::util']]],
   ['exceptiontoolsutest_2ejava_17',['ExceptionToolsUTest.java',['../_exception_tools_u_test_8java.html',1,'']]],
-  ['excludedfromcoveragereportgenerated_18',['ExcludedFromCoverageReportGenerated',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotations_1_1_excluded_from_coverage_report_generated.html',1,'fr::softsf::sudokufx::common::annotations']]],
+  ['excludedfromcoveragereportgenerated_18',['ExcludedFromCoverageReportGenerated',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1_excluded_from_coverage_report_generated.html',1,'fr::softsf::sudokufx::common::annotation']]],
   ['excludedfromcoveragereportgenerated_2ejava_19',['ExcludedFromCoverageReportGenerated.java',['../_excluded_from_coverage_report_generated_8java.html',1,'']]]
 ];

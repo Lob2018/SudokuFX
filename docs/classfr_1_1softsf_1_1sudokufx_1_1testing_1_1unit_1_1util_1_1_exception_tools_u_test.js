@@ -1,0 +1,6 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test =
+[
+    [ "givenMessage_whenLogAndThrowIllegalArgument_thenThrowsIllegalArgumentExceptionWithMessage", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test.html#ab0af3258e7986dce121b8da18029bfbf", null ],
+    [ "givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsNull", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test.html#a0fc9c54553a50041d178e97a5cd05cad", null ],
+    [ "givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsSQLInvalidAuthorizationSpecException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test.html#addce9c8f5c255fdb0a557f7494aa37d4", null ]
+];

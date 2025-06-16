@@ -33,9 +33,9 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#ae6fca9d929abf2f6009d615bf270fb24" target="_top" xlink:title="Returns a StringBinding for a localized, formatted accessibility or tooltip text.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a003430d2dc35f03ae7612a3945bda717" target="_top" xlink:title="Returns a StringBinding for a localized, formatted accessibility or tooltip text.">
 <polygon fill="white" stroke="#666666" points="419.75,-82 215.5,-82 215.5,-50 419.75,-50 419.75,-82"/>
-<text text-anchor="start" x="223.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
+<text text-anchor="start" x="223.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
 <text text-anchor="middle" x="317.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PossibilityStarsHBox.formattedTextBinding</text>
 </a>
 </g>
@@ -52,9 +52,9 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#a1b3c68f479c79fd4b696a0accebbb014" target="_top" xlink:title="Returns the percentage property (0–100) used to calculate the star rating display.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a7746116cfca8394695053b9c60c076fd" target="_top" xlink:title="Returns the percentage property (0–100) used to calculate the star rating display.">
 <polygon fill="white" stroke="#666666" points="405.12,-32 230.12,-32 230.12,0 405.12,0 405.12,-32"/>
-<text text-anchor="start" x="238.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
+<text text-anchor="start" x="238.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
 <text text-anchor="middle" x="317.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PossibilityStarsHBox.getPercentage</text>
 </a>
 </g>

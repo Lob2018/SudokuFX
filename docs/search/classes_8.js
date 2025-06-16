@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i18n_0',['I18n',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html',1,'fr::softsf::sudokufx::enums']]],
-  ['i18nutest_1',['I18nUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_i18n_u_test.html',1,'fr::softsf::sudokufx::testing::unit::utils']]],
+  ['i18nutest_1',['I18nUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_i18n_u_test.html',1,'fr::softsf::sudokufx::testing::unit::util']]],
   ['ibackgroundmapper_2',['IBackgroundMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_background_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
   ['igamelevelmapper_3',['IGameLevelMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
   ['igamemapper_4',['IGameMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],

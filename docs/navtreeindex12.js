@@ -1,9 +1,9 @@
 var NAVTREEINDEX12 =
 {
 "namespacefr_1_1softsf_1_1sudokufx_1_1view.html":[1,0,0,0,0,10],
-"namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html":[1,0,0,0,0,10,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list.html":[1,0,0,0,0,10,0,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster.html":[1,0,0,0,0,10,0,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html":[1,0,0,0,0,10,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html":[1,0,0,0,0,10,0,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster.html":[1,0,0,0,0,10,0,1],
 "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html":[1,0,0,0,0,11],
 "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache.html":[1,0,0,0,0,11,0],
 "namespacemembers.html":[1,1,0],

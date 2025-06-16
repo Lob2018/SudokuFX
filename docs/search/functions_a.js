@@ -16,7 +16,7 @@ var searchData=
   ['loadkeystore_13',['loadKeyStore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a8625a13305c544c042426438064b2cb9',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
   ['loadplayers_14',['loadPlayers',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ae780866cb629a7b3fb902530ee8b4098',1,'fr::softsf::sudokufx::viewmodel::MenuPlayerViewModel']]],
   ['localeproperty_15',['localeProperty',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html#a2bdb186dadc686d267f32ba3a6794ae3',1,'fr::softsf::sudokufx::enums::I18n']]],
-  ['logandthrowillegalargument_16',['logAndThrowIllegalArgument',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exceptions_1_1_exception_tools.html#aa4ce1dc26103da5d087f5b04b8e857ef',1,'fr::softsf::sudokufx::common::exceptions::ExceptionTools']]],
+  ['logandthrowillegalargument_16',['logAndThrowIllegalArgument',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a5c86994fdbb2a3747fc08e69ad90de39',1,'fr::softsf::sudokufx::common::exception::ExceptionTools']]],
   ['logbackinitialization_17',['logbackInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a68b66896ffdaeb55ecd878967c0bd018',1,'fr::softsf::sudokufx::config::database::AbstractDataSourceConfig']]],
   ['logbacktxt_18',['LogBackTxt',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html#af884e643fe0085b4023cc5a3e9d37d39',1,'fr::softsf::sudokufx::enums::LogBackTxt']]]
 ];

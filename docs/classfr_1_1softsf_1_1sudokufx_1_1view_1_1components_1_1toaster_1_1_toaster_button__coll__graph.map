@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.components.toaster.ToasterButton" name="fr.softsf.sudokufx.view.components.toaster.ToasterButton">
+<map id="fr.softsf.sudokufx.view.component.toaster.ToasterButton" name="fr.softsf.sudokufx.view.component.toaster.ToasterButton">
 <area shape="rect" id="Node000001" title="A custom button with a display text and a full detail text." alt="" coords="5,123,271,283"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="114,5,162,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,90,141,123,136,123,136,90"/>

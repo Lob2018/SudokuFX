@@ -35,7 +35,7 @@
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#ae6fca9d929abf2f6009d615bf270fb24" target="_top" xlink:title="Creates a string binding based on the current percentage and visibility.">
 <polygon fill="white" stroke="#666666" points="385.25,-38 181,-38 181,-6 385.25,-6 385.25,-38"/>
-<text text-anchor="start" x="189" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.</text>
+<text text-anchor="start" x="189" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
 <text text-anchor="middle" x="283.12" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">PossibilityStarsHBox.formattedTextBinding</text>
 </a>
 </g>

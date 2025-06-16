@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.removeToast" name="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.removeToast">
+<area shape="rect" id="Node000001" title="Schedules the current toast for removal after a short delay." alt="" coords="5,5,275,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#abd2310564b394c59530d5e7b2a0d0776" title="Sets a timer to automatically remove the toast after a specified duration." alt="" coords="323,5,592,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,24,307,24,307,29,275,29"/>
+</map>

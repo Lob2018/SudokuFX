@@ -117,7 +117,7 @@
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1061.5,-32 866.25,-32 866.25,0 1061.5,0 1061.5,-32"/>
-<text text-anchor="start" x="874.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.annotations.</text>
+<text text-anchor="start" x="874.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.annotation.</text>
 <text text-anchor="middle" x="963.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExcludedFromCoverageReportGenerated</text>
 </a>
 </g>

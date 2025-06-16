@@ -7,11 +7,11 @@ var annotated_dup =
             [ "BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master" ]
           ] ],
           [ "common", null, [
-            [ "annotations", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotations.html", [
-              [ "ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotations_1_1_excluded_from_coverage_report_generated.html", null ]
+            [ "annotation", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation.html", [
+              [ "ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1_excluded_from_coverage_report_generated.html", null ]
             ] ],
-            [ "exceptions", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exceptions.html", [
-              [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exceptions_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exceptions_1_1_exception_tools" ]
+            [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html", [
+              [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools" ]
             ] ],
             [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html", [
               [ "mapper", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper.html", [
@@ -121,14 +121,14 @@ var annotated_dup =
               [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums.html", [
                 [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums_1_1_difficulty_level_test" ]
               ] ],
-              [ "utils", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils.html", [
-                [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1os.html", [
-                  [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1os_1_1_os_info_u_test" ]
+              [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util.html", [
+                [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1os.html", [
+                  [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1os_1_1_os_info_u_test" ]
                 ] ],
-                [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_exception_tools_u_test" ],
-                [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_i18n_u_test" ],
-                [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_my_enums_u_test" ],
-                [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_spring_context_initializer_u_test" ]
+                [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test" ],
+                [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_i18n_u_test" ],
+                [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_my_enums_u_test" ],
+                [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_spring_context_initializer_u_test" ]
               ] ],
               [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", [
                 [ "MenuBackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test" ]
@@ -136,18 +136,18 @@ var annotated_dup =
             ] ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
-            [ "components", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components.html", [
-              [ "list", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list.html", [
-                [ "GameDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell" ],
-                [ "PlayerDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell" ]
+            [ "component", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html", [
+              [ "list", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html", [
+                [ "GameDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_game_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_game_dto_list_cell" ],
+                [ "PlayerDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_player_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_player_dto_list_cell" ]
               ] ],
-              [ "toaster", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster.html", [
-                [ "ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_button" ],
-                [ "ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box" ]
+              [ "toaster", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster.html", [
+                [ "ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button" ],
+                [ "ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box" ]
               ] ],
-              [ "MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert" ],
-              [ "PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box" ],
-              [ "SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane" ]
+              [ "MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert" ],
+              [ "PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box" ],
+              [ "SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane" ]
             ] ],
             [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view" ],
             [ "DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view" ],

@@ -22,7 +22,7 @@
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_game_dto_list_cell.html" target="_top" xlink:title="A custom ListCell for displaying a GameDto in a ListView, with a label showing the formatted update d...">
 <polygon fill="white" stroke="#666666" points="275,-82 85,-82 85,-50 275,-50 275,-82"/>
-<text text-anchor="start" x="93" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.list.</text>
+<text text-anchor="start" x="93" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.list.</text>
 <text text-anchor="middle" x="180" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameDtoListCell</text>
 </a>
 </g>
@@ -41,7 +41,7 @@
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1list_1_1_player_dto_list_cell.html" target="_top" xlink:title="A custom ListCell for displaying a PlayerDto in a ListView, with a label and a button that removes th...">
 <polygon fill="white" stroke="#666666" points="275,-32 85,-32 85,0 275,0 275,-32"/>
-<text text-anchor="start" x="93" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.components.list.</text>
+<text text-anchor="start" x="93" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.list.</text>
 <text text-anchor="middle" x="180" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDtoListCell</text>
 </a>
 </g>

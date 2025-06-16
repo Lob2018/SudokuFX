@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.components.menu.MenuButton" name="fr.softsf.sudokufx.view.components.menu.MenuButton">
+<map id="fr.softsf.sudokufx.view.component.menu.MenuButton" name="fr.softsf.sudokufx.view.component.menu.MenuButton">
 <area shape="rect" id="Node000001" title="A common menu button with Material icons and text." alt="" coords="5,123,263,208"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="110,5,158,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,89,137,123,132,123,132,89"/>

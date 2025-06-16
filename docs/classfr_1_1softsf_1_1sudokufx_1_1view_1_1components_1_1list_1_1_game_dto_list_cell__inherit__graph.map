@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.components.list.GameDtoListCell" name="fr.softsf.sudokufx.view.components.list.GameDtoListCell">
+<map id="fr.softsf.sudokufx.view.component.list.GameDtoListCell" name="fr.softsf.sudokufx.view.component.list.GameDtoListCell">
 <area shape="rect" id="Node000001" title="A custom ListCell for displaying a GameDto in a ListView, with a label showing the formatted update d..." alt="" coords="5,123,285,629"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="78,5,213,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,90,148,123,143,123,143,90"/>
