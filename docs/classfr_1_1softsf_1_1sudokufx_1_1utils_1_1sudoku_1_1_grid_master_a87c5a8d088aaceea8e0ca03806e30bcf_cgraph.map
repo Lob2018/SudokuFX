@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.getPossibilitesGrilleWhileNok" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.getPossibilitesGrilleWhileNok">
+<map id="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.getPossibilitesGrilleWhileNok" name="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.getPossibilitesGrilleWhileNok">
 <area shape="rect" id="Node000001" title="Masque des cases dans la grille et calcule la somme des possibilités restantes." alt="" coords="5,72,267,115"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a89fed8ecc70b911e60ca540cca93ef78" title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro." alt="" coords="356,5,558,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,69,340,48,342,53,243,74"/>

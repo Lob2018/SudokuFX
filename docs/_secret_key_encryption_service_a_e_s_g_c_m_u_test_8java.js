@@ -1,4 +1,4 @@
 var _secret_key_encryption_service_a_e_s_g_c_m_u_test_8java =
 [
-    [ "fr.softsf.sudokufx.configuration.database.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test" ]
+    [ "fr.softsf.sudokufx.config.database.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test" ]
 ];

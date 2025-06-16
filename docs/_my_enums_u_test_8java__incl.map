@@ -1,4 +1,4 @@
-<map id="src/test/java/fr/softsf/sudokufx/common/unit/utils/MyEnumsUTest.java" name="src/test/java/fr/softsf/sudokufx/common/unit/utils/MyEnumsUTest.java">
+<map id="src/test/java/fr/softsf/sudokufx/testing/unit/utils/MyEnumsUTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/utils/MyEnumsUTest.java">
 <area shape="rect" id="Node000001" title=" " alt="" coords="489,5,664,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,128,162,155"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="489,52,341,79,175,115,136,126,134,120,174,109,340,73,488,47"/>

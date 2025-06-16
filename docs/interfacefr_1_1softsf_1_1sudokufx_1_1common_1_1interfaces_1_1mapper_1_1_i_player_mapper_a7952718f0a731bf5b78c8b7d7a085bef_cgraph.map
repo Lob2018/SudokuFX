@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper.mapPlayerToDto" name="fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper.mapPlayerToDto">
+<area shape="rect" id="Node000001" title="Converts a Player entity to a PlayerDto." alt="" coords="5,29,295,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="96,29,94,19,103,10,122,5,150,3,181,5,199,11,198,16,180,10,150,8,122,10,105,15,99,21,101,28"/>
+</map>

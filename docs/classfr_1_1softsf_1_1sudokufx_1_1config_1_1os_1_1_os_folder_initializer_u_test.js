@@ -1,0 +1,8 @@
+var classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test =
+[
+    [ "givenExistingFolder_whenCreateFolder_thenNoCreationAttempted", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#a0e29ca25f45f4b4a1c4527aaf73f53b5", null ],
+    [ "givenNoFileAndNonExistentFolder_whenCreateFolderFails_thenRuntimeExceptionThrown", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#a84b34bfdbd0f33132667bf15dba7abd5", null ],
+    [ "givenNoFileButExistentFolder_whenCreateFolder_thenFolderCreated", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#aa48cf58eac16df4e7e69d4ea83266f29", null ],
+    [ "givenNonExistentFolder_whenCreateFolder_thenRuntimeException", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#ab15e762184f5683f9e04b0be81e3f268", null ],
+    [ "givenNonExistentFolder_whenCreateFolder_thenSecurityException", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#ae6b6ff3507d3de068439cec0f9c97b42", null ]
+];

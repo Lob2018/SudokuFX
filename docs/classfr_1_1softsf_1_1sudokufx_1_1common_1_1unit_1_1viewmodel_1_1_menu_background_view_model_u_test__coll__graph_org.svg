@@ -163,7 +163,7 @@
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_image_utils.html" target="_top" xlink:title="Utility class for image&#45;related operations, including color conversion, image validation,...">
 <polygon fill="white" stroke="none" points="178.5,-1400 0,-1400 0,-1240 178.5,-1240 178.5,-1400"/>
-<text text-anchor="start" x="39" y="-1386.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="39" y="-1386.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="start" x="65.62" y="-1374.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>
 <text text-anchor="start" x="87.75" y="-1358.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <text text-anchor="start" x="4" y="-1342.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

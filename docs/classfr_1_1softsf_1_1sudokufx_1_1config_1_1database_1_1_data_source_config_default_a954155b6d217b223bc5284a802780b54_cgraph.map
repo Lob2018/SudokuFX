@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.config.database.DataSourceConfigDefault.hikariDataSource" name="fr.softsf.sudokufx.config.database.DataSourceConfigDefault.hikariDataSource">
+<area shape="rect" id="Node000001" title="Creates and configures the main DataSource for the application." alt="" coords="5,39,280,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a7627a508aed1a8ca6a8d81604045fbe0" title=" " alt="" coords="336,5,580,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,43,320,39,321,44,280,48"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aade3fbed167a40c3b5ad30c792d07539" title=" " alt="" coords="328,72,588,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="280,72,312,75,312,81,280,77"/>
+</map>

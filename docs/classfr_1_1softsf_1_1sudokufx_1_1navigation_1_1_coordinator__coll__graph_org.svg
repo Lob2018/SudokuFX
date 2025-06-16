@@ -55,27 +55,27 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" target="_top" xlink:title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene.">
-<polygon fill="white" stroke="none" points="160.5,-484 20.25,-484 20.25,-344 160.5,-344 160.5,-484"/>
-<text text-anchor="start" x="40.12" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" target="_top" xlink:title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene.">
+<polygon fill="white" stroke="none" points="162.25,-484 18.5,-484 18.5,-344 162.25,-344 162.25,-484"/>
+<text text-anchor="start" x="22.5" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
 <text text-anchor="start" x="51.38" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize</text>
-<text text-anchor="start" x="25.75" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="24.88" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="34.25" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">double currentFontSize</text>
-<text text-anchor="start" x="25.75" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="24.88" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="34.25" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Scene scene</text>
-<text text-anchor="start" x="24.25" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="23.38" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="34.25" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize(Scene</text>
 <text text-anchor="start" x="34.25" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00"> scene)</text>
-<text text-anchor="start" x="24.25" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="23.38" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="34.25" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">double getCurrentFontSize()</text>
-<text text-anchor="start" x="24.25" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="23.38" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="34.25" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateFontSize()</text>
-<text text-anchor="start" x="25.75" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="24.88" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="34.25" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<polygon fill="#666666" stroke="#666666" points="20.25,-454 20.25,-454 160.5,-454 160.5,-454 20.25,-454"/>
-<polygon fill="#666666" stroke="#666666" points="20.25,-422 20.25,-422 32.25,-422 32.25,-422 20.25,-422"/>
-<polygon fill="#666666" stroke="#666666" points="32.25,-422 32.25,-422 160.5,-422 160.5,-422 32.25,-422"/>
-<polygon fill="none" stroke="#666666" points="20.25,-344 20.25,-484 160.5,-484 160.5,-344 20.25,-344"/>
+<polygon fill="#666666" stroke="#666666" points="18.5,-454 18.5,-454 162.25,-454 162.25,-454 18.5,-454"/>
+<polygon fill="#666666" stroke="#666666" points="18.5,-422 18.5,-422 32.25,-422 32.25,-422 18.5,-422"/>
+<polygon fill="#666666" stroke="#666666" points="32.25,-422 32.25,-422 162.25,-422 162.25,-422 32.25,-422"/>
+<polygon fill="none" stroke="#666666" points="18.5,-344 18.5,-484 162.25,-484 162.25,-344 18.5,-344"/>
 </a>
 </g>
 </g>

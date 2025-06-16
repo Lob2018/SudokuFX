@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.utils.MyDateTime" name="fr.softsf.sudokufx.utils.MyDateTime">
+<map id="fr.softsf.sudokufx.common.util.MyDateTime" name="fr.softsf.sudokufx.common.util.MyDateTime">
 <area shape="rect" id="Node000001" title="Component working with date and time operations." alt="" coords="5,5,206,160"/>
 </map>

@@ -1,5 +1,5 @@
-<map id="src/main/java/fr/softsf/sudokufx/utils/IFileSystem.java" name="src/main/java/fr/softsf/sudokufx/utils/IFileSystem.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,214,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="50,96,169,123"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,49,112,80,107,80,107,49"/>
+<map id="src/main/java/fr/softsf/sudokufx/common/util/IFileSystem.java" name="src/main/java/fr/softsf/sudokufx/common/util/IFileSystem.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,159,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="23,112,141,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,64,85,96,79,96,79,64"/>
 </map>

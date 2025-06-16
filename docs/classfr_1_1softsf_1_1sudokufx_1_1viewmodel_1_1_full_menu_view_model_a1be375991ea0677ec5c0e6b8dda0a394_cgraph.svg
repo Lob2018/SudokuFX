@@ -127,7 +127,7 @@ var sectionId = 'dynsection-1';
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" target="_top" xlink:title="Validates the given text against the specified regular expression.">
 <polygon fill="white" stroke="#666666" points="780.25,-32 631.5,-32 631.5,0 780.25,0 780.25,-32"/>
-<text text-anchor="start" x="639.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="639.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="middle" x="705.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyRegex.isValidatedByRegex</text>
 </a>
 </g>

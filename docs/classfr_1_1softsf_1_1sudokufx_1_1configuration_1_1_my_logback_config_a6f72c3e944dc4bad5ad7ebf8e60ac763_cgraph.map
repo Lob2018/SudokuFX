@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.MyLogbackConfig.MyLogbackConfig" name="fr.softsf.sudokufx.configuration.MyLogbackConfig.MyLogbackConfig">
+<map id="fr.softsf.sudokufx.config.MyLogbackConfig.MyLogbackConfig" name="fr.softsf.sudokufx.config.MyLogbackConfig.MyLogbackConfig">
 <area shape="rect" id="Node000001" title="Constructor that initializes the logging configuration." alt="" coords="5,5,241,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html#a51b6ab6e355e5c60a6d3eb6a15f9dadf" title="Configures Logback using the specified configuration file." alt="" coords="289,5,521,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,33,273,33,273,38,241,38"/>

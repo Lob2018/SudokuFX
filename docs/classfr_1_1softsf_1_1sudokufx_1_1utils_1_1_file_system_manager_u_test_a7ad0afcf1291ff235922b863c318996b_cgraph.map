@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.FileSystemManagerUTest.testDeleteFolder_success" name="fr.softsf.sudokufx.utils.FileSystemManagerUTest.testDeleteFolder_success">
+<map id="fr.softsf.sudokufx.util.FileSystemManagerUTest.testDeleteFolder_success" name="fr.softsf.sudokufx.util.FileSystemManagerUTest.testDeleteFolder_success">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,242,64"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html#a89a1c35ed3d11a33b44e91549bc8db7a" title="Recursively deletes a folder and its contents if the folder path ends with the specified string." alt="" coords="290,5,502,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,32,274,32,274,37,242,37"/>

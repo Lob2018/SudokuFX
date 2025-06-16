@@ -80,7 +80,7 @@ var sectionId = 'dynsection-0';
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html" target="_top" xlink:title="Provides essential functionalities for generating and solving Sudoku puzzles.">
 <polygon fill="white" stroke="none" points="175.5,-1212 0,-1212 0,0 175.5,0 175.5,-1212"/>
-<text text-anchor="start" x="20.25" y="-1198.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
+<text text-anchor="start" x="20.25" y="-1198.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.sudoku.</text>
 <text text-anchor="start" x="63.75" y="-1186.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster</text>
 <text text-anchor="start" x="5.5" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime derniereDemande</text>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.DynamicFontSize.initialize" name="fr.softsf.sudokufx.utils.DynamicFontSize.initialize">
+<map id="fr.softsf.sudokufx.common.util.DynamicFontSize.initialize" name="fr.softsf.sudokufx.common.util.DynamicFontSize.initialize">
 <area shape="rect" id="Node000001" title="Initializes the dynamic font size functionality." alt="" coords="5,5,182,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html#acc10f950b0d6b555ba72cbac31bd9900" title="Updates the font size based on the current Scene dimensions." alt="" coords="230,5,450,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,24,214,24,214,29,182,29"/>

@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['macosfolderfactory_0',['MacosFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_macos_folder_factory.html',1,'fr::softsf::sudokufx::configuration::os']]],
-  ['mapperutils_1',['MapperUtils',['../classfr_1_1softsf_1_1sudokufx_1_1interfaces_1_1mapper_1_1_mapper_utils.html',1,'fr::softsf::sudokufx::interfaces::mapper']]],
+  ['macosfolderfactory_0',['MacosFolderFactory',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_macos_folder_factory.html',1,'fr::softsf::sudokufx::config::os']]],
+  ['mapperutils_1',['MapperUtils',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
   ['menu_2',['Menu',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html',1,'fr::softsf::sudokufx::model']]],
   ['menubackgroundviewmodel_3',['MenuBackgroundViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
-  ['menubackgroundviewmodelutest_4',['MenuBackgroundViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test.html',1,'fr::softsf::sudokufx::common::unit::viewmodel']]],
+  ['menubackgroundviewmodelutest_4',['MenuBackgroundViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel']]],
   ['menubuilder_5',['MenuBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_1_1_menu_builder.html',1,'fr::softsf::sudokufx::model::Menu']]],
   ['menuhiddenviewmodel_6',['MenuHiddenViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
   ['menulevelviewmodel_7',['MenuLevelViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
@@ -16,11 +16,11 @@ var searchData=
   ['menusaveviewmodel_13',['MenuSaveViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
   ['menusolveviewmodel_14',['MenuSolveViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
   ['myalert_15',['MyAlert',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_my_alert.html',1,'fr::softsf::sudokufx::view::components']]],
-  ['mydatetime_16',['MyDateTime',['../enumfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_date_time.html',1,'fr::softsf::sudokufx::utils']]],
-  ['myenumse2etest_17',['MyEnumsE2ETest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1e2e_1_1_my_enums_e2_e_test.html',1,'fr::softsf::sudokufx::common::e2e']]],
-  ['myenumsutest_18',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1unit_1_1utils_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::common::unit::utils']]],
-  ['mylogbackconfig_19',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::configuration']]],
-  ['mylogbackconfigutest_20',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::configuration']]],
+  ['mydatetime_16',['MyDateTime',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html',1,'fr::softsf::sudokufx::common::util']]],
+  ['myenumse2etest_17',['MyEnumsE2ETest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1_my_enums_e2_e_test.html',1,'fr::softsf::sudokufx::testing::e2e']]],
+  ['myenumsutest_18',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::testing::unit::utils']]],
+  ['mylogbackconfig_19',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::config']]],
+  ['mylogbackconfigutest_20',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::config']]],
   ['myregex_21',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html',1,'fr::softsf::sudokufx::enums']]],
-  ['myregexutest_22',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::utils']]]
+  ['myregexutest_22',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::common::util']]]
 ];

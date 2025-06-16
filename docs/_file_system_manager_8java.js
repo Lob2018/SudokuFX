@@ -1,4 +1,4 @@
 var _file_system_manager_8java =
 [
-    [ "fr.softsf.sudokufx.utils.FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager" ]
+    [ "fr.softsf.sudokufx.common.util.FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager" ]
 ];

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.os.OsFolderFactoryManagerUTest.testOsFoldersWithInvalidOs" name="fr.softsf.sudokufx.configuration.os.OsFolderFactoryManagerUTest.testOsFoldersWithInvalidOs">
+<map id="fr.softsf.sudokufx.config.os.OsFolderFactoryManagerUTest.testOsFoldersWithInvalidOs" name="fr.softsf.sudokufx.config.os.OsFolderFactoryManagerUTest.testOsFoldersWithInvalidOs">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,295,64"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a18fc2b42d7160413f034229f02fb3001" title="Sets the OS to an unsupported value for testing purposes." alt="" coords="343,13,638,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,32,327,32,327,37,295,37"/>

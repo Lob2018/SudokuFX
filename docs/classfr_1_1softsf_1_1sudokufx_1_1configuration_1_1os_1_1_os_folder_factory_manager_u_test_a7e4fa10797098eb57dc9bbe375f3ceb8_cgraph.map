@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.os.OsFolderFactoryManagerUTest.setup" name="fr.softsf.sudokufx.configuration.os.OsFolderFactoryManagerUTest.setup">
+<map id="fr.softsf.sudokufx.config.os.OsFolderFactoryManagerUTest.setup" name="fr.softsf.sudokufx.config.os.OsFolderFactoryManagerUTest.setup">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,245,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a1cd5afd513804cfb585cfba63809f0d9" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="293,5,565,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,24,277,24,277,29,245,29"/>

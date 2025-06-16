@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.os.OsFolderInitializerUTest.givenNoFileButExistentFolder_whenCreateFolder_thenFolderCreated" name="fr.softsf.sudokufx.configuration.os.OsFolderInitializerUTest.givenNoFileButExistentFolder_whenCreateFolder_thenFolderCreated">
+<map id="fr.softsf.sudokufx.config.os.OsFolderInitializerUTest.givenNoFileButExistentFolder_whenCreateFolder_thenFolderCreated" name="fr.softsf.sudokufx.config.os.OsFolderInitializerUTest.givenNoFileButExistentFolder_whenCreateFolder_thenFolderCreated">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,244,80"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#a0fab99a712c6bfc24d7025a7e667e734" title="Attempts to create a folder at the specified path and confirms its creation." alt="" coords="292,21,515,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,40,276,40,276,45,244,45"/>

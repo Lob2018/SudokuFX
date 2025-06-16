@@ -21,9 +21,9 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_splash_screen_view.html#a7d48af9841e22c4f35680b95031f07e4" target="_top" xlink:title="Hides and closes the splash screen.">
+<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html#a476806b0f70dd654a23c0fbd0678d38f" target="_top" xlink:title="Hides and closes the splash screen.">
 <polygon fill="white" stroke="#666666" points="382.25,-232 199.75,-232 199.75,-200 382.25,-200 382.25,-232"/>
-<text text-anchor="start" x="207.75" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.interfaces.</text>
+<text text-anchor="start" x="207.75" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.</text>
 <text text-anchor="middle" x="291" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISplashScreenView.hideSplashScreen</text>
 </a>
 </g>

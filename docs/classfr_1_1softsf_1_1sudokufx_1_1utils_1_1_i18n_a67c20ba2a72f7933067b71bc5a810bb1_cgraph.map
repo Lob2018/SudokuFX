@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.I18n.setLanguageBasedOnTheHostEnvironment" name="fr.softsf.sudokufx.utils.I18n.setLanguageBasedOnTheHostEnvironment">
+<map id="fr.softsf.sudokufx.util.I18n.setLanguageBasedOnTheHostEnvironment" name="fr.softsf.sudokufx.util.I18n.setLanguageBasedOnTheHostEnvironment">
 <area shape="rect" id="Node000001" title="Sets the locale bundle based on the host environment&#39;s language." alt="" coords="5,31,234,89"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#ae04bf081931205edbc3e139c7fd503f0" title="Gets the language code of the host environment." alt="" coords="282,5,538,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,44,266,41,266,46,234,50"/>

@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.configuration.HttpClientConfig" name="fr.softsf.sudokufx.configuration.HttpClientConfig">
+<map id="fr.softsf.sudokufx.config.HttpClientConfig" name="fr.softsf.sudokufx.config.HttpClientConfig">
 <area shape="rect" id="Node000001" title="Configures a secure HttpClient bean with TLS 1.2, no redirects, and a 5&#45;second timeout." alt="" coords="5,5,200,91"/>
 </map>

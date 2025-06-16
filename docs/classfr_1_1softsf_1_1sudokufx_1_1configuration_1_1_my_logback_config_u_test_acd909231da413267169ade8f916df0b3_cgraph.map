@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest.MyLogbackConfigUTest" name="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest.MyLogbackConfigUTest">
+<map id="fr.softsf.sudokufx.config.MyLogbackConfigUTest.MyLogbackConfigUTest" name="fr.softsf.sudokufx.config.MyLogbackConfigUTest.MyLogbackConfigUTest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,311,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_factory_manager.html#a1cd5afd513804cfb585cfba63809f0d9" title="Creates and returns an OS&#45;specific folder factory." alt="" coords="359,5,631,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,24,343,24,343,29,311,29"/>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.os.IMockIOsFolderFactory" name="fr.softsf.sudokufx.configuration.os.IMockIOsFolderFactory">
+<map id="fr.softsf.sudokufx.config.os.IMockIOsFolderFactory" name="fr.softsf.sudokufx.config.os.IMockIOsFolderFactory">
 <area shape="rect" id="Node000001" title="Mock interface for testing, extending the sealed IOsFolderFactory." alt="" coords="5,123,218,229"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="56,5,168,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,90,114,123,109,123,109,90"/>

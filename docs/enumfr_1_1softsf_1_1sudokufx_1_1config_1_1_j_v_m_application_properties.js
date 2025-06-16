@@ -1,0 +1,28 @@
+var enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties =
+[
+    [ "getAppLicense", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ac7b5d01e8737a501288b66cd9b16ad3a", null ],
+    [ "getAppName", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a51c0bfa1f6ee72a7a3d849bf61a897db", null ],
+    [ "getAppOrganization", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a72a94500d5d54352794c70cee90ebdfc", null ],
+    [ "getAppVersion", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#aec84ca60d9dd5a7c2d66b3b9515863bc", null ],
+    [ "isSpringContextExitOnRefresh", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a8e83f73acbc106647965ccd74951e76a", null ],
+    [ "setEmptyAppLicensePropertyForTests", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a9b47829a1cae7feed50a0b902f525226", null ],
+    [ "setEmptyAppNamePropertyForTests", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a57bff2db0919ea610ee13d3f93fb5841", null ],
+    [ "setEmptyAppOrganizationPropertyForTests", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#aef9dc63e6bd35c1588c7daa7045b78e5", null ],
+    [ "setEmptyAppVersionPropertyForTests", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a5dffc78ba1a416d7a1bceaaba60d01ad", null ],
+    [ "setInitSpringContextExitForTests", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#adf01dfe579eecaa837eb953acfe278a2", null ],
+    [ "setNeverSpringContextExitForTests", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#aa96e86c105faf2606c6c3f878ba21279", null ],
+    [ "setOnRefreshSpringContextExitForTests", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a8bab82a4f3aa8ed550436a74e292708f", null ],
+    [ "setSpringContextExitInRefresh", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a5a024f2e13af42f4f334d18ba370e1f4", null ],
+    [ "APP_LICENSE_PROPERTY", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ad0838e435f19256e609b58c9edda6819", null ],
+    [ "APP_NAME_PROPERTY", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#acc2ab4219c024bb7b4edeaaade3864ed", null ],
+    [ "APP_ORGANIZATION_PROPERTY", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a712428851c6667f7daf4abb2733ff30a", null ],
+    [ "APP_VERSION_PROPERTY", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a16d28636c82f21eb638d775933759493", null ],
+    [ "appLicense", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#aaff7c78f7ed5e311358ae521b2a8d432", null ],
+    [ "appName", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ae33227e04ab35b22a6d5802f006f53cb", null ],
+    [ "appOrganization", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ae81f3eb980c1bacca03dade9ffa57987", null ],
+    [ "appVersion", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a4ec2bcbb57929a66f25b47d4bd5d709c", null ],
+    [ "INSTANCE", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#aacaf840095a96129ca1fa0ea91e1b00f", null ],
+    [ "ON_REFRESH", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ac12c4d8dd2cdc9f76957037d73b06cfa", null ],
+    [ "springContextExit", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a6766873d3e976848f39e1d15b481f5ca", null ],
+    [ "springContextExitOnRefresh", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a2f25cf42ec719b54f0f2bc2fe0fa89a4", null ]
+];

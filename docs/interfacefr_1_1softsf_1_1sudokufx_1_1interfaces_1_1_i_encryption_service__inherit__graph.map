@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.database.IEncryptionService" name="fr.softsf.sudokufx.configuration.database.IEncryptionService">
+<map id="fr.softsf.sudokufx.config.database.IEncryptionService" name="fr.softsf.sudokufx.config.database.IEncryptionService">
 <area shape="rect" id="Node000001" title="Interface defining methods to encrypt and decrypt using AES&#45;GCM (Galois/Counter Mode) encryption." alt="" coords="69,5,247,144"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1keystore_1_1_secret_key_encryption_service_a_e_s_g_c_m.html" title="Implementation of the ApplicationKeystore.IEncryptionService interface using AES&#45;GCM (Galois/Counter ..." alt="" coords="5,192,311,427"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,159,161,192,156,192,156,159"/>

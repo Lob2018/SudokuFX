@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.resoudreLaGrille">
+<map id="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.resoudreLaGrille" name="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.resoudreLaGrille">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,163,207,205"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a46d1bfadcbb911b5a718508185da341f" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="296,5,498,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,160,179,108,215,81,253,58,280,46,282,51,256,62,218,85,183,112,129,164"/>

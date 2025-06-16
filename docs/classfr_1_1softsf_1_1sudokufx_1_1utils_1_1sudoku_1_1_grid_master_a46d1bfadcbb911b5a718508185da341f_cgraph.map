@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.getPossibilites" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.getPossibilites">
+<map id="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.getPossibilites" name="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.getPossibilites">
 <area shape="rect" id="Node000001" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="5,5,207,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#ad1a85240278a682b9cf73c8d8ec6398d" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="255,5,462,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,24,239,24,239,29,207,29"/>

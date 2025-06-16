@@ -272,7 +272,7 @@ var sectionId = 'dynsection-0';
 <title>Node13</title>
 <g id="a_Node000013"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1655.88,-32 1504.88,-32 1504.88,0 1655.88,0 1655.88,-32"/>
-<text text-anchor="start" x="1512.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.sudoku.</text>
+<text text-anchor="start" x="1512.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.sudoku.</text>
 <text text-anchor="middle" x="1580.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster</text>
 </a>
 </g>

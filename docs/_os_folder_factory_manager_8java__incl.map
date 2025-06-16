@@ -1,7 +1,7 @@
-<map id="src/main/java/fr/softsf/sudokufx/configuration/os/OsFolderFactoryManager.java" name="src/main/java/fr/softsf/sudokufx/configuration/os/OsFolderFactoryManager.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="449,5,667,64"/>
+<map id="src/main/java/fr/softsf/sudokufx/config/os/OsFolderFactoryManager.java" name="src/main/java/fr/softsf/sudokufx/config/os/OsFolderFactoryManager.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="462,5,654,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,120,290,147"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="449,64,217,119,215,113,448,59"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="462,61,217,119,215,113,461,56"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="314,112,568,155"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="525,66,479,104,476,100,522,62"/>
 <area shape="rect" id="Node000004" title=" " alt="" coords="592,112,762,155"/>

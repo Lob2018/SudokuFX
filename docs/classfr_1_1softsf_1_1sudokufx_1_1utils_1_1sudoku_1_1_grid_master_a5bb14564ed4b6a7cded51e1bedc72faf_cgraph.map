@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.nombreAleatoire" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.nombreAleatoire">
+<map id="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.nombreAleatoire" name="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.nombreAleatoire">
 <area shape="rect" id="Node000001" title="Génère un nombre entier aléatoire dans un intervalle spécifié." alt="" coords="5,5,207,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_secure_random_generator.html#a9f9536fac826d79183da75606d633e55" title="Generates a random integer between 0 (inclusive) and the specified bound (exclusive)." alt="" coords="255,5,467,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,24,239,24,239,29,207,29"/>

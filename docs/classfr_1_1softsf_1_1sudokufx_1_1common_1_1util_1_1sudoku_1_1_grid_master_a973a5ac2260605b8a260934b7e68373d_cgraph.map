@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.laCaseVideAvecLeMoinsDePossibilites" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.laCaseVideAvecLeMoinsDePossibilites">
+<area shape="rect" id="Node000001" title="Trouve la case vide avec le moins de possibilités." alt="" coords="5,5,325,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a1e8e128a955e4a42b8e690c3c3f0fd9c" title="Compte le nombre de bits à 1 dans un entier." alt="" coords="373,5,621,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="325,24,357,24,357,29,325,29"/>
+</map>

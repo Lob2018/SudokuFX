@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.initialiserPossibilites" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.initialiserPossibilites">
+<area shape="rect" id="Node000001" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="5,5,254,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeb3e9bacbc9f3e23515e88a3c887f78e" title="Élimine la valeur des possibilités des cases alentours." alt="" coords="302,5,550,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,24,286,24,286,29,254,29"/>
+</map>

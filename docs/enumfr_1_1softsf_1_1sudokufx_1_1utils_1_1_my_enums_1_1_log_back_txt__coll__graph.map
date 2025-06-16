@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.utils.MyEnums.LogBackTxt" name="fr.softsf.sudokufx.utils.MyEnums.LogBackTxt">
+<map id="fr.softsf.sudokufx.util.MyEnums.LogBackTxt" name="fr.softsf.sudokufx.util.MyEnums.LogBackTxt">
 <area shape="rect" id="Node000001" title="Enum for log messages and ASCII art." alt="" coords="5,5,230,208"/>
 </map>

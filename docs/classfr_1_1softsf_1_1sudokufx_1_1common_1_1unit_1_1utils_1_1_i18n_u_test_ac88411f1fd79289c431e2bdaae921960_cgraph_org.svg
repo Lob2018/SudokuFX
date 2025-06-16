@@ -33,7 +33,7 @@
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7095fa285a498c3f20bf33488a69d22c" target="_top" xlink:title="Retrieves the localized string value for a given key.">
 <polygon fill="white" stroke="#666666" points="369.12,-113 252.62,-113 252.62,-81 369.12,-81 369.12,-113"/>
-<text text-anchor="start" x="260.62" y="-99.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="260.62" y="-99.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="middle" x="310.88" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.getValue</text>
 </a>
 </g>
@@ -52,7 +52,7 @@
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a67c20ba2a72f7933067b71bc5a810bb1" target="_top" xlink:title="Sets the locale bundle based on the host environment&#39;s language.">
 <polygon fill="white" stroke="#666666" points="396.5,-63 225.25,-63 225.25,-19 396.5,-19 396.5,-63"/>
-<text text-anchor="start" x="233.25" y="-49.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="233.25" y="-49.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="start" x="233.25" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.setLanguageBasedOnTheHost</text>
 <text text-anchor="middle" x="310.88" y="-25.5" font-family="Helvetica,sans-Serif" font-size="10.00">Environment</text>
 </a>
@@ -72,7 +72,7 @@
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#ae04bf081931205edbc3e139c7fd503f0" target="_top" xlink:title="Gets the language code of the host environment.">
 <polygon fill="white" stroke="#666666" points="624.75,-82 432.5,-82 432.5,-50 624.75,-50 624.75,-82"/>
-<text text-anchor="start" x="440.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="440.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="middle" x="528.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.getHostEnvironmentLanguageCode</text>
 </a>
 </g>
@@ -91,7 +91,7 @@
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_i18n.html#a7b2d44cad34ffdf0fb3a297af88ee76e" target="_top" xlink:title="Sets the current language for the application.">
 <polygon fill="white" stroke="#666666" points="586.88,-32 470.38,-32 470.38,0 586.88,0 586.88,-32"/>
-<text text-anchor="start" x="478.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="478.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="middle" x="528.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n.setLocaleBundle</text>
 </a>
 </g>

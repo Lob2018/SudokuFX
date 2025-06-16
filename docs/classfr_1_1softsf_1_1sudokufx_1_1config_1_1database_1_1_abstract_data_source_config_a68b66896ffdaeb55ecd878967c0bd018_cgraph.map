@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig.logbackInitialization" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig.logbackInitialization">
+<area shape="rect" id="Node000001" title="Initializes Logback logging framework." alt="" coords="5,5,301,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#aebe58385063c387d9b27bce0ad2493fc" title="Logs the ASCII logo (with app name and version), an optional optimization message at startup." alt="" coords="349,5,609,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,24,333,24,333,29,301,29"/>
+</map>

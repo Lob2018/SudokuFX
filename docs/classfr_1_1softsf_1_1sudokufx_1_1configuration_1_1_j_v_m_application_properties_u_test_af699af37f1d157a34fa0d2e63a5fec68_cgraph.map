@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest.givenInvalidNameAndVersion_whenValidateByRegex_thenValidationFails" name="fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest.givenInvalidNameAndVersion_whenValidateByRegex_thenValidationFails">
+<map id="fr.softsf.sudokufx.config.JVMApplicationPropertiesUTest.givenInvalidNameAndVersion_whenValidateByRegex_thenValidationFails" name="fr.softsf.sudokufx.config.JVMApplicationPropertiesUTest.givenInvalidNameAndVersion_whenValidateByRegex_thenValidationFails">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,304,80"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="352,21,550,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="304,40,336,40,336,45,304,45"/>

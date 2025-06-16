@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest.givenSpringContextOnRefresh_whenPrintLogEntryMessage_thenCorrectMessageLogged" name="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest.givenSpringContextOnRefresh_whenPrintLogEntryMessage_thenCorrectMessageLogged">
+<map id="fr.softsf.sudokufx.config.MyLogbackConfigUTest.givenSpringContextOnRefresh_whenPrintLogEntryMessage_thenCorrectMessageLogged" name="fr.softsf.sudokufx.config.MyLogbackConfigUTest.givenSpringContextOnRefresh_whenPrintLogEntryMessage_thenCorrectMessageLogged">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,63,285,137"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a46753fc32c7d3156f3aed0f0c63c758e" title="Determines if the Spring context should exit on refresh." alt="" coords="333,29,601,88"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,79,317,75,317,81,285,85"/>

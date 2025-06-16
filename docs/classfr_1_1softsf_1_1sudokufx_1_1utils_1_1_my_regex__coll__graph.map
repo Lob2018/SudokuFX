@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.utils.MyRegex" name="fr.softsf.sudokufx.utils.MyRegex">
+<map id="fr.softsf.sudokufx.util.MyRegex" name="fr.softsf.sudokufx.util.MyRegex">
 <area shape="rect" id="Node000001" title="Utility class for regular expression patterns and validation." alt="" coords="5,5,187,251"/>
 </map>

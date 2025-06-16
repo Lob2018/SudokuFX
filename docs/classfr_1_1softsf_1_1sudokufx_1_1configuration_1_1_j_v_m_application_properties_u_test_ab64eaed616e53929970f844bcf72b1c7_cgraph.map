@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest.testAppNameAppVersionWithNullSpringContext_Success" name="fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest.testAppNameAppVersionWithNullSpringContext_Success">
+<map id="fr.softsf.sudokufx.config.JVMApplicationPropertiesUTest.testAppNameAppVersionWithNullSpringContext_Success" name="fr.softsf.sudokufx.config.JVMApplicationPropertiesUTest.testAppNameAppVersionWithNullSpringContext_Success">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,96,319,155"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a3f7b3c260ffbc879047a27ee9a1751f5" title="Retrieves the current application name from system properties." alt="" coords="375,5,626,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,93,366,57,393,50,395,55,367,63,253,98"/>

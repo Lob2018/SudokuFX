@@ -68,7 +68,7 @@
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" target="_top" xlink:title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene.">
 <polygon fill="white" stroke="none" points="224.88,-372 84.62,-372 84.62,-216 224.88,-216 224.88,-372"/>
-<text text-anchor="start" x="104.5" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="104.5" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="start" x="115.75" y="-346.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize</text>
 <text text-anchor="start" x="90.12" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="98.62" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">double currentFontSize</text>

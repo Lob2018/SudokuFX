@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.genererLaGrilleAResoudre" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.genererLaGrilleAResoudre">
+<map id="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.genererLaGrilleAResoudre" name="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.genererLaGrilleAResoudre">
 <area shape="rect" id="Node000001" title="Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté." alt="" coords="5,88,247,131"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a5a6f84fdb0becec787f87d0f11ce1b07" title="Génère une grille de Sudoku de niveau difficile (sinon une grille par défaut est retournée après une ..." alt="" coords="315,5,578,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,85,303,65,304,71,222,90"/>

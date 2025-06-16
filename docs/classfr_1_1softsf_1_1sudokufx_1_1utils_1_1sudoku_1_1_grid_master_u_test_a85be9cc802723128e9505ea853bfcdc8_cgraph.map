@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.createGridLevelImpossiblePossibilities_success" name="fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.createGridLevelImpossiblePossibilities_success">
+<map id="fr.softsf.sudokufx.util.sudoku.GridMasterUTest.createGridLevelImpossiblePossibilities_success" name="fr.softsf.sudokufx.util.sudoku.GridMasterUTest.createGridLevelImpossiblePossibilities_success">
 <area shape="rect" id="Node000001" title="Generate a grid anyway after 1s if the possibilities per level cannot be reached." alt="" coords="5,272,284,331"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a84921b0097e8df1b15d4ea378b1a82af" title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté." alt="" coords="375,164,576,207"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="204,269,265,242,331,216,359,207,361,213,333,221,267,247,206,274"/>

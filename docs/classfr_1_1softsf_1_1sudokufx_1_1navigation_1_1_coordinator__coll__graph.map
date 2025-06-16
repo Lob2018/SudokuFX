@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.navigation.Coordinator" name="fr.softsf.sudokufx.navigation.Coordinator">
 <area shape="rect" id="Node000001" title="Coordinator is a Spring&#45;managed component that handles navigation and UI logic in a JavaFX applicatio..." alt="" coords="5,256,246,651"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="32,5,219,192"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="30,5,222,192"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,192,128,239,123,239,123,192"/>
 </map>

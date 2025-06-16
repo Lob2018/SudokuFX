@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.utils.SecureRandomGenerator" name="fr.softsf.sudokufx.utils.SecureRandomGenerator">
+<map id="fr.softsf.sudokufx.util.SecureRandomGenerator" name="fr.softsf.sudokufx.util.SecureRandomGenerator">
 <area shape="rect" id="Node000001" title="Utility class for generating secure random numbers using Java&#39;s SecureRandom class." alt="" coords="5,5,184,181"/>
 </map>

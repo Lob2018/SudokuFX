@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.FileSystemManager" name="fr.softsf.sudokufx.utils.FileSystemManager">
+<map id="fr.softsf.sudokufx.common.util.FileSystemManager" name="fr.softsf.sudokufx.common.util.FileSystemManager">
 <area shape="rect" id="Node000001" title="Manages file system operations, particularly folder deletion." alt="" coords="5,123,278,315"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="102,5,182,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,90,144,123,139,123,139,90"/>

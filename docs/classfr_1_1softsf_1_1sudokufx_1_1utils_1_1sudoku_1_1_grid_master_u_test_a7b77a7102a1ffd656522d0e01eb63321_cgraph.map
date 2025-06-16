@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.createUnknownGrids_success" name="fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.createUnknownGrids_success">
+<map id="fr.softsf.sudokufx.util.sudoku.GridMasterUTest.createUnknownGrids_success" name="fr.softsf.sudokufx.util.sudoku.GridMasterUTest.createUnknownGrids_success">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,308,48"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#a7ae916d7f64607637b7bf5bf33fd0eb3" title="Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté." alt="" coords="356,5,544,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,24,340,24,340,29,308,29"/>

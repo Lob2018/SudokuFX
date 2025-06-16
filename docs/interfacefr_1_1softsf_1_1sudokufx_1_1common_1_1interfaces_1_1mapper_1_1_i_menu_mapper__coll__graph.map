@@ -1,0 +1,3 @@
+<map id="fr.softsf.sudokufx.common.interfaces.mapper.IMenuMapper" name="fr.softsf.sudokufx.common.interfaces.mapper.IMenuMapper">
+<area shape="rect" id="Node000001" title="This interface defines methods for mapping objects of type Menu to objects of type MenuDto and vice v..." alt="" coords="5,5,284,144"/>
+</map>

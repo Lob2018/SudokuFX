@@ -1,0 +1,19 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleAresoudreDifficile" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleAresoudreDifficile">
+<area shape="rect" id="Node000001" title="Génère une grille de Sudoku de niveau difficile (sinon une grille par défaut est retournée après une ..." alt="" coords="5,64,269,123"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aee57e1ea56d413431a806492e5bfa40f" title="Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en millisecondes." alt="" coords="323,5,572,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,62,329,49,330,54,270,68"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a7b8b865b518ad50e3d77814a16bf9634" title="Masque des cases dans la grille et calcule la somme des possibilités restantes." alt="" coords="317,72,578,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,91,301,91,301,96,269,96"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af1352e09e11008195aebe23925b02248" title="Génère un nombre entier aléatoire dans un intervalle spécifié." alt="" coords="323,139,572,181"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="270,119,330,132,329,137,269,124"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aedafc76e589c715c380e2732e0ff04d2" title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro." alt="" coords="644,5,892,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="553,69,647,49,648,54,554,74"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeed90a968624e9b7ccb44958df9ae821" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="644,72,892,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="579,91,628,91,628,96,579,96"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku." alt="" coords="626,139,910,181"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="554,113,648,132,647,138,553,118"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="958,72,1207,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="893,91,943,91,943,96,893,96"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeb3e9bacbc9f3e23515e88a3c887f78e" title="Élimine la valeur des possibilités des cases alentours." alt="" coords="1255,72,1503,115"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1207,91,1239,91,1239,96,1207,96"/>
+</map>

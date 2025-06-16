@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.FileSystemManagerUTest" name="fr.softsf.sudokufx.utils.FileSystemManagerUTest">
+<map id="fr.softsf.sudokufx.util.FileSystemManagerUTest" name="fr.softsf.sudokufx.util.FileSystemManagerUTest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="24,380,259,785"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_file_system_manager.html" title="Manages file system operations, particularly folder deletion." alt="" coords="5,124,278,316"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,316,144,363,139,363,139,316"/>

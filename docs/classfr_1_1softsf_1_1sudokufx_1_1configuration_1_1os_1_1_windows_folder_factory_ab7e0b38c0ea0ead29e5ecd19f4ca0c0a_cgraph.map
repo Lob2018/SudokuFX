@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.os.WindowsFolderFactory.WindowsFolderFactory" name="fr.softsf.sudokufx.configuration.os.WindowsFolderFactory.WindowsFolderFactory">
+<map id="fr.softsf.sudokufx.config.os.WindowsFolderFactory.WindowsFolderFactory" name="fr.softsf.sudokufx.config.os.WindowsFolderFactory.WindowsFolderFactory">
 <area shape="rect" id="Node000001" title="Constructor that initializes the data and logs folder paths." alt="" coords="5,5,298,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1os_1_1_os_folder_initializer.html#a7505afa6005e83ebe31d61016901edfd" title="Creates folders for data and logs." alt="" coords="346,5,569,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,24,330,24,330,29,298,29"/>

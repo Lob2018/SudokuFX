@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.MyRegexUTest.isValidatedByRegexWithNullText_Exception" name="fr.softsf.sudokufx.utils.MyRegexUTest.isValidatedByRegexWithNullText_Exception">
+<map id="fr.softsf.sudokufx.util.MyRegexUTest.isValidatedByRegexWithNullText_Exception" name="fr.softsf.sudokufx.util.MyRegexUTest.isValidatedByRegexWithNullText_Exception">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,239,64"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="287,13,485,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,32,271,32,271,37,239,37"/>

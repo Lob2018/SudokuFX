@@ -1,0 +1,26 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.resoudreLaGrille" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.resoudreLaGrille">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,163,254,205"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeed90a968624e9b7ccb44958df9ae821" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="320,5,568,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,160,216,108,257,81,301,58,316,51,318,56,303,62,260,86,220,113,156,164"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af7a1c9df1f82cefc39447ed221fafd76" title="Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités fournies." alt="" coords="308,72,580,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="191,160,301,124,329,116,331,122,302,129,193,165"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#ae544691a2f6f2b54de8f88d3babcc221" title="Remplit récursivement la grille Sudoku (backtracking)." alt="" coords="320,163,568,205"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="254,181,304,181,304,187,254,187"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku." alt="" coords="302,229,586,272"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="234,203,326,223,325,228,233,209"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a05e07a5ce8a23c6abf8864b8388e2e50" title="Vérifie la cohérence entre la grille et les possibilités." alt="" coords="304,296,584,355"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="164,203,227,243,303,282,318,288,315,293,301,286,224,247,161,208"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="670,13,918,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="569,27,654,29,654,34,568,32"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeb3e9bacbc9f3e23515e88a3c887f78e" title="Élimine la valeur des possibilités des cases alentours." alt="" coords="1001,63,1250,105"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="918,50,986,61,986,66,918,56"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="511,159,570,143,634,128,817,102,986,88,986,93,817,107,634,133,572,148,512,165"/>
+<area shape="poly" id="edge11_Node000006_Node000006" title=" " alt="" coords="385,163,383,153,393,143,413,138,444,136,477,138,497,145,496,150,476,144,444,141,414,143,395,148,388,154,390,161"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3f17ab078f894717a1f3dfaffed0b987" title="Choisit une valeur aléatoire parmi les possibilités données." alt="" coords="670,143,918,185"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="568,174,654,169,654,175,569,180"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a973a5ac2260605b8a260934b7e68373d" title="Trouve la case vide avec le moins de possibilités." alt="" coords="634,209,953,252"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="569,198,619,205,618,210,568,203"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a1e8e128a955e4a42b8e690c3c3f0fd9c" title="Compte le nombre de bits à 1 dans un entier." alt="" coords="1001,160,1250,203"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="918,168,986,171,986,177,918,173"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="941,206,985,199,986,205,942,211"/>
+</map>

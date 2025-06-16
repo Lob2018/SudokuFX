@@ -1,0 +1,11 @@
+var classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test =
+[
+    [ "givenEmptyNameVersionOrganizationLicenseWithOnRefreshSpringContext_whenGetProperties_thenDefaultValuesAndExitOnRefresh", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a9edf9f70f5c5310d8240831d7533f06c", null ],
+    [ "givenInvalidNameVersionOrganizationLicense_whenValidateByRegex_thenValidationFails", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#ae36f94cd98e6d480efa11f7e0df36bf1", null ],
+    [ "givenNeverSpringContextExit_whenCheckExitOnRefresh_thenExitNever", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a5e66d717bd72ec111584c3b8c4caf70e", null ],
+    [ "givenNullSpringContext_whenGetAppNameAndVersion_thenDefaultValuesReturned", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a9950ebaeca7a6222c188e5da48230390", null ],
+    [ "givenUnknownSpringContext_whenCheckExitOnRefresh_thenExitNotTriggered", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#abd9ceb195d02f692fed29c0d7ad2d9c6", null ],
+    [ "givenValidNameVersionOrganizationLicense_whenValidateByRegex_thenValidationSucceeds", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a486a9e1175c3e479573965c13fdd6b3a", null ],
+    [ "ALPHANUMERIC_REGEX", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#accebd50d7f2ba32538726e195acf76c6", null ],
+    [ "VERSION_REGEX", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a78cbe288d3467bba2f5b70266c54d92a", null ]
+];

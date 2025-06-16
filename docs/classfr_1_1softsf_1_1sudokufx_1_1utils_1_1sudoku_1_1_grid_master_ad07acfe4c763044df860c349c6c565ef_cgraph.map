@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.remplirLaGrille" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.remplirLaGrille">
+<map id="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.remplirLaGrille" name="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.remplirLaGrille">
 <area shape="rect" id="Node000001" title="Remplit récursivement la grille Sudoku (backtracking)." alt="" coords="5,72,207,115"/>
 <area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="54,72,52,62,61,53,79,47,106,45,136,48,153,54,151,59,134,53,106,51,80,53,64,57,57,63,60,71"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a95ced6119d7d08726742be7d90c37948" title="Choisit une valeur aléatoire parmi les possibilités données." alt="" coords="274,5,488,48"/>

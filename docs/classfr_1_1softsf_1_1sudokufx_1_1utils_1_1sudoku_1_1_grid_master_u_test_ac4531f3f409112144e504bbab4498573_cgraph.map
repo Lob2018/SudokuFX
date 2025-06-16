@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.resolveGrid_failed" name="fr.softsf.sudokufx.utils.sudoku.GridMasterUTest.resolveGrid_failed">
+<map id="fr.softsf.sudokufx.util.sudoku.GridMasterUTest.resolveGrid_failed" name="fr.softsf.sudokufx.util.sudoku.GridMasterUTest.resolveGrid_failed">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,234,48"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_grid_master.html#afb84090e48c5b78c25d6b2d0c034038c" title="Génère une grille de Sudoku complète à partir d&#39;une grille vide ou partiellement remplie." alt="" coords="282,5,470,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,24,266,24,266,29,234,29"/>

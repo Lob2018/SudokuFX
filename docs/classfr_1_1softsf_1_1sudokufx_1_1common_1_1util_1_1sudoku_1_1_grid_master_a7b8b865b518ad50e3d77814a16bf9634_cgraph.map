@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleWhileNok" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleWhileNok">
+<area shape="rect" id="Node000001" title="Masque des cases dans la grille et calcule la somme des possibilités restantes." alt="" coords="5,72,267,115"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aedafc76e589c715c380e2732e0ff04d2" title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro." alt="" coords="333,5,581,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,69,335,49,336,54,243,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeed90a968624e9b7ccb44958df9ae821" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="333,72,581,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,91,317,91,317,96,267,96"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku." alt="" coords="315,139,599,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="243,113,336,132,335,138,241,118"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="647,72,895,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="581,91,631,91,631,96,581,96"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeb3e9bacbc9f3e23515e88a3c887f78e" title="Élimine la valeur des possibilités des cases alentours." alt="" coords="943,72,1192,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="896,91,928,91,928,96,896,96"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="fr.softsf.sudokufx.common.interfaces.mapper.IGridMapper" name="fr.softsf.sudokufx.common.interfaces.mapper.IGridMapper">
+<area shape="rect" id="Node000001" title="This interface defines methods for mapping objects of type Grid to objects of type GridDto and vice v..." alt="" coords="5,5,284,144"/>
+</map>

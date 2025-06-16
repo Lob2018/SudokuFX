@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.configuration.JVMApplicationProperties" name="fr.softsf.sudokufx.configuration.JVMApplicationProperties">
+<map id="fr.softsf.sudokufx.config.JVMApplicationProperties" name="fr.softsf.sudokufx.config.JVMApplicationProperties">
 <area shape="rect" id="Node000001" title="Utility class for managing JVM application properties." alt="" coords="5,5,215,549"/>
 </map>

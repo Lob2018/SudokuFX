@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest.givenNeverSpringContextExit_whenCheckExitOnRefresh_thenExitNever" name="fr.softsf.sudokufx.configuration.JVMApplicationPropertiesUTest.givenNeverSpringContextExit_whenCheckExitOnRefresh_thenExitNever">
+<map id="fr.softsf.sudokufx.config.JVMApplicationPropertiesUTest.givenNeverSpringContextExit_whenCheckExitOnRefresh_thenExitNever" name="fr.softsf.sudokufx.config.JVMApplicationPropertiesUTest.givenNeverSpringContextExit_whenCheckExitOnRefresh_thenExitNever">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,63,330,137"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_j_v_m_application_properties.html#a46753fc32c7d3156f3aed0f0c63c758e" title="Determines if the Spring context should exit on refresh." alt="" coords="378,29,646,88"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="330,78,362,74,363,79,330,83"/>

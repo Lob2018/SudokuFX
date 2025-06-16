@@ -1,5 +1,5 @@
-<map id="src/main/java/fr/softsf/sudokufx/utils/SpringContextInitializer.java" name="src/main/java/fr/softsf/sudokufx/utils/SpringContextInitializer.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="271,5,464,64"/>
+<map id="src/main/java/fr/softsf/sudokufx/common/util/SpringContextInitializer.java" name="src/main/java/fr/softsf/sudokufx/common/util/SpringContextInitializer.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="273,5,462,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,120,159,147"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,67,135,117,133,112,282,62"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="182,112,355,155"/>

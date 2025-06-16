@@ -23,7 +23,7 @@
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_dynamic_font_size.html#acc10f950b0d6b555ba72cbac31bd9900" target="_top" xlink:title="Updates the font size based on the current Scene dimensions.">
 <polygon fill="white" stroke="#666666" points="374,-32 208.75,-32 208.75,0 374,0 374,-32"/>
-<text text-anchor="start" x="216.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="216.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="middle" x="291.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize.updateFontSize</text>
 </a>
 </g>

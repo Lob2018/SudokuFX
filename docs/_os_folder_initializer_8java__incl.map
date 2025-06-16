@@ -1,5 +1,5 @@
-<map id="src/main/java/fr/softsf/sudokufx/configuration/os/OsFolderInitializer.java" name="src/main/java/fr/softsf/sudokufx/configuration/os/OsFolderInitializer.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,257,64"/>
+<map id="src/main/java/fr/softsf/sudokufx/config/os/OsFolderInitializer.java" name="src/main/java/fr/softsf/sudokufx/config/os/OsFolderInitializer.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="73,5,265,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,112,90,139"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,67,78,105,75,101,128,62"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="114,112,224,139"/>

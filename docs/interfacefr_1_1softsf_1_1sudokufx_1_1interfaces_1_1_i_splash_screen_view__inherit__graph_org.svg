@@ -7,7 +7,7 @@
 <svg width="226pt" height="752pt"
  viewBox="0.00 0.00 225.50 752.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 748)">
-<title>fr.softsf.sudokufx.interfaces.ISplashScreenView</title>
+<title>fr.softsf.sudokufx.common.interfaces.ISplashScreenView</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>

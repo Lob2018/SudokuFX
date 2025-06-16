@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.utils.sudoku.GridMaster.getPossibilitesGrilleAResoudreMoyenne" name="fr.softsf.sudokufx.utils.sudoku.GridMaster.getPossibilitesGrilleAResoudreMoyenne">
+<map id="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.getPossibilitesGrilleAResoudreMoyenne" name="fr.softsf.sudokufx.common.sudoku.utils.GridMaster.getPossibilitesGrilleAResoudreMoyenne">
 <area shape="rect" id="Node000001" title="Génère une grille de Sudoku de niveau moyen (sinon une grille par défaut est retournée après une seco..." alt="" coords="5,64,275,123"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1sudoku_1_1_grid_master.html#a7cd9c1114c0d87a5341aedac86f6407a" title="Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en millisecondes." alt="" coords="353,5,554,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,62,337,49,338,54,275,67"/>

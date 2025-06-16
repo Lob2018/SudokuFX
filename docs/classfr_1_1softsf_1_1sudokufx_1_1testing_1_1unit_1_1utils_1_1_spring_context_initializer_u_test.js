@@ -1,0 +1,4 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_spring_context_initializer_u_test =
+[
+    [ "givenMockedSpringContext_whenRunInitializationTask_thenInitIsCalled", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1utils_1_1_spring_context_initializer_u_test.html#abf13f2b0f6e1a2ee9c3281c8c82271e8", null ]
+];

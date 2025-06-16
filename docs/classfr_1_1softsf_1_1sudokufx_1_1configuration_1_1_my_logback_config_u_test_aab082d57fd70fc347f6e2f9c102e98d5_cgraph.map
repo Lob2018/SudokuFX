@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest.testLogs_real_folder_path_is_correct" name="fr.softsf.sudokufx.configuration.MyLogbackConfigUTest.testLogs_real_folder_path_is_correct">
+<map id="fr.softsf.sudokufx.config.MyLogbackConfigUTest.testLogs_real_folder_path_is_correct" name="fr.softsf.sudokufx.config.MyLogbackConfigUTest.testLogs_real_folder_path_is_correct">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,221,64"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_os_folder_factory.html#a1977295e62b8132b09defe7cb7858534" title="Retrieves the path to the OS&#45;specific logs folder." alt="" coords="269,13,520,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,32,253,32,253,37,221,37"/>

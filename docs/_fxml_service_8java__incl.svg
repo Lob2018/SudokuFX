@@ -217,7 +217,7 @@ var sectionId = 'dynsection-0';
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1241,-32 1124.5,-32 1124.5,0 1241,0 1241,-32"/>
-<text text-anchor="start" x="1132.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.utils.</text>
+<text text-anchor="start" x="1132.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.util.</text>
 <text text-anchor="middle" x="1182.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize</text>
 </a>
 </g>

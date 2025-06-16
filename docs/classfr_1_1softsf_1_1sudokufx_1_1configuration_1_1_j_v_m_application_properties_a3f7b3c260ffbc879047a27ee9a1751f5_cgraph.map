@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.JVMApplicationProperties.getAppName" name="fr.softsf.sudokufx.configuration.JVMApplicationProperties.getAppName">
+<map id="fr.softsf.sudokufx.config.JVMApplicationProperties.getAppName" name="fr.softsf.sudokufx.config.JVMApplicationProperties.getAppName">
 <area shape="rect" id="Node000001" title="Retrieves the current application name from system properties." alt="" coords="5,5,257,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_my_regex.html#a981702b076ee54a416d676b6f7a182fc" title="Validates the given text against the specified regular expression." alt="" coords="305,5,503,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,24,289,24,289,29,257,29"/>

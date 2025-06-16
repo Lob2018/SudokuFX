@@ -18,7 +18,7 @@
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 108)">
-<title>fr.softsf.sudokufx.interfaces.mapper.IBackgroundMapper</title>
+<title>fr.softsf.sudokufx.common.interfaces.mapper.IBackgroundMapper</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>

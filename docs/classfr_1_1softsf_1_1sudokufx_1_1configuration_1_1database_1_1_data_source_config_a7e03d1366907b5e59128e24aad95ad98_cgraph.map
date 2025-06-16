@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.database.DataSourceConfig.flyway" name="fr.softsf.sudokufx.configuration.database.DataSourceConfig.flyway">
+<map id="fr.softsf.sudokufx.config.database.DataSourceConfig.flyway" name="fr.softsf.sudokufx.config.database.DataSourceConfig.flyway">
 <area shape="rect" id="Node000001" title="Configures Flyway with a specified location for migration scripts." alt="" coords="5,29,268,72"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="79,29,76,19,86,10,106,5,137,3,170,5,189,11,188,16,169,10,136,8,107,10,88,15,81,21,84,28"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1database_1_1_data_source_config.html#aeec3198d3b639d46c8bf715dc2e3581d" title="Creates and configures the main DataSource for the application." alt="" coords="316,29,578,72"/>

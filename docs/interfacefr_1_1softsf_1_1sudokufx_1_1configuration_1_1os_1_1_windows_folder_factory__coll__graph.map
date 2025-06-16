@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.configuration.os.WindowsFolderFactory" name="fr.softsf.sudokufx.configuration.os.WindowsFolderFactory">
+<map id="fr.softsf.sudokufx.config.os.WindowsFolderFactory" name="fr.softsf.sudokufx.config.os.WindowsFolderFactory">
 <area shape="rect" id="Node000001" title="Interface defining methods to access OS&#45;specific folder paths." alt="" coords="5,123,218,379"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="56,5,168,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,90,114,123,109,123,109,90"/>
