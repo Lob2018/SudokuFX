@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import fr.softsf.sudokufx.common.exception.SelectedPlayerWithSelectedGameNotFoundException;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.repository.PlayerRepository;
@@ -35,26 +36,27 @@ public class PlayerService {
     }
 
     /**
-     * Retrieves the first selected Player and maps it to a PlayerDto.
+     * Retrieves the first Player with a selected game and maps it to a PlayerDto.
      *
-     * <p>This method fetches all Players with selected games, returns the first one mapped to
-     * PlayerDto. If no Player is found, a NoSuchElementException is thrown with an error logged.
+     * <p>This method loads all players with selected games, then returns the first one
+     * mapped to a PlayerDto. If none is found, it logs an error and throws a
+     * SelectedPlayerWithSelectedGameNotFoundException.
      *
-     * <p>@Transactional(readOnly = true) ensures that lazy-loaded associations are properly fetched
-     * during mapping.
+     * <p>@Transactional(readOnly = true) ensures lazy-loaded associations are initialized during mapping.
      *
-     * @return the mapped PlayerDto of the first selected Player.
-     * @throws NoSuchElementException if no Player is found.
+     * @return the PlayerDto of the first selected Player with a selected game.
+     * @throws SelectedPlayerWithSelectedGameNotFoundException if no such Player is found.
      */
     @Transactional(readOnly = true)
     public PlayerDto getPlayer() {
-        return playerRepository.findPlayersWithSelectedGames().stream()
+        return playerRepository.findSelectedPlayerWithSelectedGame().stream()
                 .findFirst()
                 .map(playerMapper::mapPlayerToDto)
                 .orElseThrow(
                         () -> {
-                            LOG.error("██ No player found.");
-                            return new NoSuchElementException("No player found");
+                            LOG.error("██ No selected player with selected game found.");
+                            return new SelectedPlayerWithSelectedGameNotFoundException(
+                                    "No selected player with selected game found");
                         });
     }
 }
