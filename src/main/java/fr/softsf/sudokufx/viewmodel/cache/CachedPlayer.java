@@ -53,17 +53,11 @@ public class CachedPlayer {
 
     /**
      * Loads the current player from PlayerService and sets it in the cache. If the player is not
-     * found, logs the error and exits the application.
+     * found during initialization, logs the error and exits the application.
      */
     private void initializePlayer() {
         try {
-            PlayerDto player =
-                    playerService
-                            .getPlayer()
-                            .orElseThrow(
-                                    () ->
-                                            new IllegalStateException(
-                                                    "Player not found during initialization"));
+            PlayerDto player = playerService.getPlayer();
             currentPlayer.set(player);
         } catch (IllegalStateException e) {
             LOG.error(

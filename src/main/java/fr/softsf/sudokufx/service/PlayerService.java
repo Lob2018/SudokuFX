@@ -5,7 +5,7 @@
  */
 package fr.softsf.sudokufx.service;
 
-import java.util.Optional;
+import java.util.NoSuchElementException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,24 +37,24 @@ public class PlayerService {
     /**
      * Retrieves the first selected Player and maps it to a PlayerDto.
      *
-     * <p>@Transactional(readOnly = true) ensures lazy-loaded games are fetched during mapping.
+     * <p>This method fetches all Players with selected games, returns the first one mapped to
+     * PlayerDto. If no Player is found, a NoSuchElementException is thrown with an error logged.
      *
-     * @return an Optional containing the mapped PlayerDto if a Player is found; otherwise, empty.
+     * <p>@Transactional(readOnly = true) ensures that lazy-loaded associations are properly fetched
+     * during mapping.
+     *
+     * @return the mapped PlayerDto of the first selected Player.
+     * @throws NoSuchElementException if no Player is found.
      */
     @Transactional(readOnly = true)
-    public Optional<PlayerDto> getPlayer() {
-        try {
-            return playerRepository.findPlayersWithSelectedGames().stream()
-                    .findFirst()
-                    .map(playerMapper::mapPlayerToDto)
-                    .or(
-                            () -> {
-                                LOG.error("██ No player found.");
-                                return Optional.empty();
-                            });
-        } catch (Exception e) {
-            LOG.error("██ Exception retrieving player: {}", e.getMessage(), e);
-            return Optional.empty();
-        }
+    public PlayerDto getPlayer() {
+        return playerRepository.findPlayersWithSelectedGames().stream()
+                .findFirst()
+                .map(playerMapper::mapPlayerToDto)
+                .orElseThrow(
+                        () -> {
+                            LOG.error("██ No player found.");
+                            return new NoSuchElementException("No player found");
+                        });
     }
 }
