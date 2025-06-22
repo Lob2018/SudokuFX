@@ -5,8 +5,6 @@
  */
 package fr.softsf.sudokufx.service;
 
-import java.util.NoSuchElementException;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -38,11 +36,12 @@ public class PlayerService {
     /**
      * Retrieves the first Player with a selected game and maps it to a PlayerDto.
      *
-     * <p>This method loads all players with selected games, then returns the first one
-     * mapped to a PlayerDto. If none is found, it logs an error and throws a
+     * <p>This method loads all players with selected games, then returns the first one mapped to a
+     * PlayerDto. If none is found, it logs an error and throws a
      * SelectedPlayerWithSelectedGameNotFoundException.
      *
-     * <p>@Transactional(readOnly = true) ensures lazy-loaded associations are initialized during mapping.
+     * <p>@Transactional(readOnly = true) ensures lazy-loaded associations are initialized during
+     * mapping.
      *
      * @return the PlayerDto of the first selected Player with a selected game.
      * @throws SelectedPlayerWithSelectedGameNotFoundException if no such Player is found.
