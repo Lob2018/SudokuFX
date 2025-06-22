@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.viewmodel.cache;
+package fr.softsf.sudokufx.viewmodel.state;
 
 import javafx.application.Platform;
 import javafx.beans.property.ObjectProperty;
@@ -17,15 +17,14 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.PlayerService;
 
 /**
- * Component responsible for caching and providing the current PlayerDto instance. It initializes
- * the cached player on creation by fetching from PlayerService. Provides a JavaFX ObjectProperty to
- * allow UI bindings and supports manual updates. On failure to initialize (player not found), it
- * logs the error and terminates the application.
+ * Component responsible for holding the current PlayerDto instance in memory. Initializes the value
+ * on creation using PlayerService. Exposes a JavaFX ObjectProperty for UI bindings and allows
+ * manual updates. Terminates the application if initialization fails.
  */
 @Component
-public class CachedPlayer {
+public class InMemoryPlayer {
 
-    private static final Logger LOG = LoggerFactory.getLogger(CachedPlayer.class);
+    private static final Logger LOG = LoggerFactory.getLogger(InMemoryPlayer.class);
 
     private final ObjectProperty<PlayerDto> currentPlayer = new SimpleObjectProperty<>();
     private final PlayerService playerService;
@@ -40,21 +39,18 @@ public class CachedPlayer {
     }
 
     /**
-     * Constructor that initializes the cached player by loading it from the PlayerService.
+     * Initializes the in-memory player from the PlayerService.
      *
-     * @param playerService the service to fetch PlayerDto data.
+     * @param playerService the service used to fetch PlayerDto.
      */
-    public CachedPlayer(PlayerService playerService) {
+    public InMemoryPlayer(PlayerService playerService) {
         this.playerService = playerService;
         if (currentPlayer.get() == null) {
             initializePlayer();
         }
     }
 
-    /**
-     * Loads the current player from PlayerService and sets it in the cache. If the player is not
-     * found during initialization, logs the error and exits the application.
-     */
+    /** Loads the current player from PlayerService. Exits the app on failure. */
     private void initializePlayer() {
         try {
             PlayerDto player = playerService.getPlayer();
@@ -69,18 +65,18 @@ public class CachedPlayer {
     }
 
     /**
-     * Updates the cached current player with the given PlayerDto.
+     * Manually updates the in-memory PlayerDto.
      *
-     * @param dto the PlayerDto to cache.
+     * @param dto the new PlayerDto to store.
      */
     public void setCurrentPlayer(PlayerDto dto) {
         currentPlayer.set(dto);
     }
 
     /**
-     * Retrieves the cached current PlayerDto.
+     * Returns the currently stored PlayerDto.
      *
-     * @return the currently cached PlayerDto.
+     * @return the current PlayerDto.
      */
     public PlayerDto getCurrentPlayer() {
         return currentPlayer.get();

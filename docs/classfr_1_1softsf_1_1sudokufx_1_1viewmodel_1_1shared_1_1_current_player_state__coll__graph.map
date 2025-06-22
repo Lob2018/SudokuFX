@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.cache.CachedPlayer" name="fr.softsf.sudokufx.viewmodel.cache.CachedPlayer">
+<map id="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer" name="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,155,231,389"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" title=" " alt="" coords="37,5,200,91"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,90,121,138,116,138,116,90"/>

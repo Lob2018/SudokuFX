@@ -768,7 +768,7 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="1685.25" y="-1788.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_OPENED</text>
 <text text-anchor="start" x="1675.25" y="-1772.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="1685.25" y="-1772.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
-<text text-anchor="start" x="1685.25" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00">(CachedPlayer cachedPlayer)</text>
+<text text-anchor="start" x="1685.25" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00">(CachedPlayer inMemoryPlayer)</text>
 <text text-anchor="start" x="1675.25" y="-1744.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="1685.25" y="-1744.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellButton</text>
 <text text-anchor="start" x="1685.25" y="-1732.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
@@ -842,7 +842,7 @@ var sectionId = 'dynsection-1';
 <title>Node14</title>
 <g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html" target="_top" xlink:title="Component responsible for caching and providing the current PlayerDto instance.">
 <polygon fill="white" stroke="none" points="1841,-2516 1674.75,-2516 1674.75,-2324 1841,-2324 1841,-2516"/>
-<text text-anchor="start" x="1678.75" y="-2502.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.cache.</text>
+<text text-anchor="start" x="1678.75" y="-2502.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
 <text text-anchor="start" x="1727.12" y="-2490.5" font-family="Helvetica,sans-Serif" font-size="10.00">CachedPlayer</text>
 <text text-anchor="start" x="1685.81" y="-2474.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="1699.88" y="-2474.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
@@ -877,7 +877,7 @@ var sectionId = 'dynsection-1';
 <polygon fill="none" stroke="#63b8ff" points="1757.88,-2202.6 1753.88,-2196.6 1757.88,-2190.6 1761.88,-2196.6 1757.88,-2202.6"/>
 </a>
 </g>
-<text text-anchor="middle" x="1790.5" y="-2264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;cachedPlayer</text>
+<text text-anchor="middle" x="1790.5" y="-2264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;inMemoryPlayer</text>
 </g>
 <!-- Node15 -->
 <g id="Node000015" class="node">
