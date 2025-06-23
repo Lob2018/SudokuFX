@@ -11,7 +11,6 @@ import java.util.function.Supplier;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -22,12 +21,13 @@ import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
 
 /**
- * ViewModel for managing player menu UI state and accessibility texts.
+ * ViewModel for managing the player menu UI state and accessibility texts.
  *
- * <p>Holds an observable list of players, the currently selected player, and provides localized
+ * <p>Maintains an observable list of players and the currently selected player, providing localized
  * StringBindings for UI accessibility, tooltips, role descriptions, and button texts.
  *
- * <p>Uses I18n singleton for localization with automatic updates on locale or selection changes.
+ * <p>Utilizes the I18n singleton for localization, with automatic updates on locale or selection
+ * changes.
  */
 @Component
 public class MenuPlayerViewModel {
@@ -40,7 +40,6 @@ public class MenuPlayerViewModel {
             "menu.accessibility.role.description.closed";
 
     private final ObservableList<PlayerDto> players = FXCollections.observableArrayList();
-    private final ObjectProperty<PlayerDto> selectedPlayer = new SimpleObjectProperty<>();
 
     private final StringBinding maxiPlayerTooltip;
     private final StringBinding maxiPlayerRoleDescription;
@@ -121,7 +120,7 @@ public class MenuPlayerViewModel {
         return Bindings.createStringBinding(
                 () -> MessageFormat.format(I18n.INSTANCE.getValue(key), argSupplier.get()),
                 I18n.INSTANCE.localeProperty(),
-                selectedPlayer);
+                inMemoryPlayer.currentPlayerProperty());
     }
 
     /**
@@ -136,7 +135,7 @@ public class MenuPlayerViewModel {
                             + I18n.INSTANCE.getValue(suffixKey);
                 },
                 I18n.INSTANCE.localeProperty(),
-                selectedPlayer);
+                inMemoryPlayer.currentPlayerProperty());
     }
 
     /** Creates a simple localized binding for a given key. Updates when locale changes. */
@@ -157,11 +156,11 @@ public class MenuPlayerViewModel {
 
     /** Returns the name of the currently selected player or empty if none. */
     private String playerName() {
-        PlayerDto p = selectedPlayer.get();
+        PlayerDto p = inMemoryPlayer.currentPlayerProperty().get();
         return (p != null) ? p.name() : "";
     }
 
-    /** Loads test players into the observable list. */
+    /** Loads players into the observable list. */
     private void loadPlayers() {
         players.clear();
         players.add(inMemoryPlayer.getCurrentPlayer());
@@ -173,7 +172,7 @@ public class MenuPlayerViewModel {
     /** Sets the selected player to the one marked as selected or first in the list. */
     private void setSelectedPlayer() {
         if (!players.isEmpty()) {
-            selectedPlayer.set(inMemoryPlayer.getCurrentPlayer());
+            inMemoryPlayer.currentPlayerProperty().set(inMemoryPlayer.getCurrentPlayer());
         }
     }
 
@@ -201,7 +200,7 @@ public class MenuPlayerViewModel {
     }
 
     public ObjectProperty<PlayerDto> selectedPlayerProperty() {
-        return selectedPlayer;
+        return inMemoryPlayer.currentPlayerProperty();
     }
 
     public StringBinding playerAccessibleTextProperty() {
