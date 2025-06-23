@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.viewmodel.state;
 
+import java.util.Objects;
 import javafx.application.Platform;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -45,7 +46,7 @@ public class InMemoryPlayer {
      */
     public InMemoryPlayer(PlayerService playerService) {
         this.playerService = playerService;
-        if (currentPlayer.get() == null) {
+        if (Objects.isNull(currentPlayer.get())) {
             initializePlayer();
         }
     }
