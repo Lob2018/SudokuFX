@@ -34,6 +34,9 @@ import static fr.softsf.sudokufx.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
  * Service for checking if the application version is up to date by querying GitHub. It retrieves
  * the latest release tag from the GitHub API and compares it with the current version. If an update
  * is available, the result can be used to notify the user.
+ *
+ * <p>All method parameters and return values in this package are non-null by default, thanks to the
+ * {@code @NonNullApi} annotation at the package level.
  */
 @Service
 public class VersionService {

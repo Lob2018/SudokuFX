@@ -21,6 +21,9 @@ import io.micrometer.common.util.StringUtils;
  * Service class providing business logic related to Player entities. It interacts with the
  * PlayerRepository to retrieve Player data and uses IPlayerMapper to convert Player entities to
  * PlayerDto objects.
+ *
+ * <p>All method parameters and return values in this package are non-null by default, thanks to the
+ * {@code @NonNullApi} annotation at the package level.
  */
 @Service
 public class PlayerService {
