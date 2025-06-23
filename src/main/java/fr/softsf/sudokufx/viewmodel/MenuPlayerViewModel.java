@@ -21,13 +21,12 @@ import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
 
 /**
- * ViewModel for managing the player menu UI state and accessibility texts.
+ * ViewModel managing player menu UI state and localized accessibility texts.
  *
- * <p>Maintains an observable list of players and the currently selected player, providing localized
- * StringBindings for UI accessibility, tooltips, role descriptions, and button texts.
+ * <p>Provides observable players list and reactive StringBindings for UI labels, tooltips, and
+ * roles, updated on locale or selection changes.
  *
- * <p>Utilizes the I18n singleton for localization, with automatic updates on locale or selection
- * changes.
+ * <p>Assumes selected player has a valid non-blank name as enforced upstream.
  */
 @Component
 public class MenuPlayerViewModel {
@@ -154,10 +153,13 @@ public class MenuPlayerViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
-    /** Returns the name of the currently selected player or empty if none. */
+    /**
+     * Returns the name of the currently selected player.
+     *
+     * @return the player name, guaranteed to be non-null and not blank
+     */
     private String playerName() {
-        PlayerDto p = inMemoryPlayer.currentPlayerProperty().get();
-        return (p != null) ? p.name() : "";
+        return inMemoryPlayer.getCurrentPlayer().name();
     }
 
     /** Loads players into the observable list. */
