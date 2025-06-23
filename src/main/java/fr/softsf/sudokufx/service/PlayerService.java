@@ -34,23 +34,21 @@ public class PlayerService {
     }
 
     /**
-     * Retrieves the first Player with a selected game and maps it to a PlayerDto.
+     * Returns the first selected Player with a non-null selected game, mapped to a PlayerDto.
      *
-     * <p>This method loads all players with selected games, then returns the first one mapped to a
-     * PlayerDto. If none is found, it logs an error and throws a
-     * SelectedPlayerWithSelectedGameNotFoundException.
+     * <p>Throws an exception if no such Player is found. Logs the error before throwing.
      *
-     * <p>@Transactional(readOnly = true) ensures lazy-loaded associations are initialized during
-     * mapping.
+     * <p>@Transactional(readOnly = true) ensures proper initialization of lazy-loaded associations.
      *
-     * @return the PlayerDto of the first selected Player with a selected game.
-     * @throws SelectedPlayerWithSelectedGameNotFoundException if no such Player is found.
+     * @return the PlayerDto of the selected Player with a selected game
+     * @throws SelectedPlayerWithSelectedGameNotFoundException if no matching Player is found
      */
     @Transactional(readOnly = true)
     public PlayerDto getPlayer() {
         return playerRepository.findSelectedPlayerWithSelectedGame().stream()
                 .findFirst()
                 .map(playerMapper::mapPlayerToDto)
+                .filter(dto -> dto.selectedGame() != null)
                 .orElseThrow(
                         () -> {
                             LOG.error("██ No selected player with selected game found.");
