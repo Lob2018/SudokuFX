@@ -174,12 +174,6 @@ public class MenuPlayerViewModel {
     private void setSelectedPlayer() {
         if (!players.isEmpty()) {
             selectedPlayer.set(inMemoryPlayer.getCurrentPlayer());
-            //            players.stream()
-            //                    .filter(PlayerDto::isselected)
-            //                    .findFirst()
-            //                    .ifPresentOrElse(
-            //                            selectedPlayer::set, () ->
-            // selectedPlayer.set(players.getFirst()));
         }
     }
 
