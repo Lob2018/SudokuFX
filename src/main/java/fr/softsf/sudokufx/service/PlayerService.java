@@ -33,19 +33,18 @@ public class PlayerService {
     }
 
     /**
-     * Retrieves the first player with a selected game and a valid (non-blank) name.
+     * Retrieves the first player with a selected game and a valid name.
      *
-     * <p>Throws an {@link IllegalArgumentException} if no such player is found.
-     *
-     * @return a valid PlayerDto with a selected game
-     * @throws IllegalArgumentException if no matching player is found
+     * @return a valid PlayerDto
+     * @throws IllegalArgumentException if no player with a selected game and valid name is found
      */
     @Transactional(readOnly = true)
     public PlayerDto getPlayer() {
         return playerRepository.findSelectedPlayerWithSelectedGame().stream()
                 .findFirst()
                 .map(playerMapper::mapPlayerToDto)
-                .filter(this::hasSelectedGameAndValidName)
+                .filter(dto -> dto.selectedGame() != null)
+                .map(this::validatePlayerNameOrThrow)
                 .orElseThrow(
                         () ->
                                 ExceptionTools.INSTANCE.createAndLogIllegalArgument(
@@ -53,18 +52,15 @@ public class PlayerService {
     }
 
     /**
-     * Checks if the player has a selected game and a valid (non-blank) name.
-     *
-     * <p>Throws a {@link IllegalArgumentException} via ExceptionTools if the name is null, empty,
-     * or blank.
+     * Validates that the player's name is not null, empty, or blank.
      *
      * @param dto the PlayerDto to validate
-     * @return true if the player has a selected game and a valid name; false otherwise
+     * @return the same PlayerDto if valid
+     * @throws IllegalArgumentException if the player's name is invalid
      */
-    private boolean hasSelectedGameAndValidName(PlayerDto dto) {
-        if (dto.selectedGame() == null) return false;
+    private PlayerDto validatePlayerNameOrThrow(PlayerDto dto) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 dto.name(), "The player name cannot be null, empty or blank.");
-        return true;
+        return dto;
     }
 }
