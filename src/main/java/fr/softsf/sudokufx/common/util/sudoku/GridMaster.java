@@ -12,6 +12,7 @@ import java.util.stream.IntStream;
 
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 
 /** Provides essential functionalities for generating and solving Sudoku puzzles. */
@@ -418,6 +419,13 @@ final class GridMaster implements IGridMaster {
 
     @Override
     public int[] resoudreLaGrille(final int[] grille) {
+        // Lever une exception si la grille est null, ou si sa taille est différente de 81
+        if (grille == null || grille.length != 81) {
+            String taille = (grille == null) ? "null" : String.valueOf(grille.length);
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The grid must not be null and must contain exactly 81 cells, but was "
+                            + taille);
+        }
         // Calcul des possibilités pour chaque case
         int[] possibilites = getPossibilites(grille);
         remplirLaGrille(grille, possibilites);
@@ -432,6 +440,11 @@ final class GridMaster implements IGridMaster {
 
     @Override
     public int[][] creerLesGrilles(final int niveau) {
+        // Lever une exception si le niveau n'existe pas
+        if (niveau < 1 || niveau > 3) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The grid level must be between 1 and 3, but was " + niveau);
+        }
         // Initialiser la grille résolue
         int[] grilleResolue = new int[NOMBRE_CASES];
         // Résoudre la grille
