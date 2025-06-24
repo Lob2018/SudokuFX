@@ -5,12 +5,11 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
+import java.util.Objects;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
 import org.springframework.stereotype.Component;
-
-import java.util.Objects;
 
 /**
  * ViewModel component managing the currently active menu or submenu. Provides observable state for
@@ -40,8 +39,8 @@ public class ActiveMenuOrSubmenuViewModel {
     }
 
     /**
-     * Sets the active menu. If the provided value is {@code null},
-     * the default value {@link ActiveMenu#MAXI} is used instead.
+     * Sets the active menu. If the provided value is {@code null}, the default value {@link
+     * ActiveMenu#MAXI} is used instead.
      *
      * @param menu the menu to activate, or {@code null} to use the default
      */
