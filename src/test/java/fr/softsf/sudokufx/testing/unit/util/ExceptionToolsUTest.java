@@ -34,12 +34,19 @@ class ExceptionToolsUTest {
 
     @Test
     void
-            givenMessage_whenLogAndThrowIllegalArgument_thenThrowsIllegalArgumentExceptionWithMessage() {
+            givenMessage_whenCreateAndLogIllegalArgument_thenReturnsIllegalArgumentExceptionWithMessage() {
         String message = "Invalid argument provided";
         IllegalArgumentException exception =
+                ExceptionTools.INSTANCE.createAndLogIllegalArgument(message);
+        assertNotNull(exception);
+        assertEquals(message, exception.getMessage());
+
+        IllegalArgumentException thrown =
                 assertThrows(
                         IllegalArgumentException.class,
-                        () -> ExceptionTools.INSTANCE.logAndThrowIllegalArgument(message));
-        assertEquals(message, exception.getMessage());
+                        () -> {
+                            throw exception;
+                        });
+        assertEquals(message, thrown.getMessage());
     }
 }
