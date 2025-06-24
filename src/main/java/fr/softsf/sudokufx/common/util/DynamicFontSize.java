@@ -5,7 +5,10 @@
  */
 package fr.softsf.sudokufx.common.util;
 
+import java.util.Objects;
 import javafx.scene.Scene;
+
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /**
  * Manages dynamic font sizing based on the dimensions of a JavaFX Scene. This class automatically
@@ -25,8 +28,14 @@ public final class DynamicFontSize {
     /**
      * Constructs a DynamicFontSize instance and initializes Scene listeners for testing purposes
      * only.
+     *
+     * @param scene the JavaFX Scene to observe; must not be null
+     * @throws IllegalArgumentException if the scene is null, with logging performed via
+     *     ExceptionTools
      */
     public DynamicFontSize(Scene scene) {
+        if (Objects.isNull(scene))
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The scene mustn't be null");
         this.scene = scene;
         initialize();
     }
