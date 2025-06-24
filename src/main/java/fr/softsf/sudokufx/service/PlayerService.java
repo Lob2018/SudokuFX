@@ -5,17 +5,13 @@
  */
 package fr.softsf.sudokufx.service;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import fr.softsf.sudokufx.common.exception.PlayerNameInvalidException;
-import fr.softsf.sudokufx.common.exception.SelectedPlayerWithSelectedGameNotFoundException;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.repository.PlayerRepository;
-import io.micrometer.common.util.StringUtils;
 
 /**
  * Service class providing business logic related to Player entities. It interacts with the
@@ -28,8 +24,6 @@ import io.micrometer.common.util.StringUtils;
 @Service
 public class PlayerService {
 
-    private static final Logger LOG = LoggerFactory.getLogger(PlayerService.class);
-
     private final PlayerRepository playerRepository;
     private final IPlayerMapper playerMapper;
 
@@ -39,14 +33,12 @@ public class PlayerService {
     }
 
     /**
-     * Returns the first selected player with a selected game, mapped to a PlayerDto.
+     * Retrieves the first player with a selected game and a valid (non-blank) name.
      *
-     * <p>Validates that the player's name is non-null and not blank. Logs and throws if invalid or
-     * if no matching player is found.
+     * <p>Throws an {@link IllegalArgumentException} if no such player is found.
      *
-     * @return a valid PlayerDto with a selected game and non-blank name
-     * @throws SelectedPlayerWithSelectedGameNotFoundException if no matching player is found
-     * @throws PlayerNameInvalidException if the player's name is null, empty, or blank
+     * @return a valid PlayerDto with a selected game
+     * @throws IllegalArgumentException if no matching player is found
      */
     @Transactional(readOnly = true)
     public PlayerDto getPlayer() {
@@ -55,28 +47,24 @@ public class PlayerService {
                 .map(playerMapper::mapPlayerToDto)
                 .filter(this::hasSelectedGameAndValidName)
                 .orElseThrow(
-                        () -> {
-                            LOG.error("██ No selected player with selected game found.");
-                            return new SelectedPlayerWithSelectedGameNotFoundException(
-                                    "No selected player with selected game found");
-                        });
+                        () ->
+                                ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                                        "No selected player with selected game found."));
     }
 
     /**
-     * Checks that the player has a selected game and a valid (non-blank) name.
+     * Checks if the player has a selected game and a valid (non-blank) name.
      *
-     * <p>Logs and throws a PlayerNameInvalidException if the name is invalid.
+     * <p>Throws a {@link IllegalArgumentException} via ExceptionTools if the name is null, empty,
+     * or blank.
      *
      * @param dto the PlayerDto to validate
-     * @return true if the player has a selected game and a valid name
-     * @throws PlayerNameInvalidException if the name is null, empty, or blank
+     * @return true if the player has a selected game and a valid name; false otherwise
      */
     private boolean hasSelectedGameAndValidName(PlayerDto dto) {
         if (dto.selectedGame() == null) return false;
-        if (StringUtils.isBlank(dto.name())) {
-            LOG.error("██ The player name cannot be null, empty or blank.");
-            throw new PlayerNameInvalidException("The player name cannot be blank");
-        }
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                dto.name(), "The player name cannot be null, empty or blank.");
         return true;
     }
 }
