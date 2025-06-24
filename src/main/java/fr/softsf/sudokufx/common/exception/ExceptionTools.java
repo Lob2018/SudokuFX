@@ -10,6 +10,8 @@ import java.sql.SQLInvalidAuthorizationSpecException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import io.micrometer.common.util.StringUtils;
+
 /**
  * Utility enum for handling and analyzing exceptions. This enum provides methods to search for
  * specific exception types within exception chains.
@@ -20,15 +22,31 @@ public enum ExceptionTools {
     private static final Logger LOG = LoggerFactory.getLogger(ExceptionTools.class);
 
     /**
-     * Logs the given message and throws an {@link IllegalArgumentException} with it.
+     * Logs the given message and returns an {@link IllegalArgumentException} with it.
      *
      * @param message the error message
-     * @throws IllegalArgumentException always thrown with the given message
+     * @return the IllegalArgumentException instance (not thrown)
      */
-    public void logAndThrowIllegalArgument(String message) {
+    public IllegalArgumentException createAndLogIllegalArgument(String message) {
         IllegalArgumentException exception = new IllegalArgumentException(message);
         LOG.error("██ Exception : {}", message, exception);
-        throw exception;
+        return exception;
+    }
+
+    /**
+     * Logs the given message and throws an {@link IllegalArgumentException} if the given string is
+     * {@code null}, empty, or blank (only whitespace).
+     *
+     * @param value the string to check
+     * @param message the error message
+     * @throws IllegalArgumentException if the string is blank or null
+     */
+    public void logAndThrowIllegalArgumentIfBlank(String value, String message) {
+        if (StringUtils.isBlank(value)) {
+            IllegalArgumentException exception = new IllegalArgumentException(message);
+            LOG.error("██ Exception : {}", message, exception);
+            throw exception;
+        }
     }
 
     /**
