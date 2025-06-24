@@ -30,31 +30,12 @@ class GridMasterUTest {
 
     @ParameterizedTest
     @ValueSource(ints = {-1, -100, 300})
-    void givenUnknownLevel_whenCreateGrids_thenGridsGeneratedSuccessfully(int level) {
-        int[][] grids = iGridMaster.creerLesGrilles(level);
-        assertNotNull(grids);
-        assertNotNull(grids[0]);
-        assertNotNull(grids[1]);
-        assertNotNull(grids[2]);
-        // The resolved grid
-        assertEquals(81, grids[0].length);
-        int countForResolvedGrid = 0;
-        for (int value : grids[0]) {
-            if (value == 0) countForResolvedGrid++;
-        }
-        assertEquals(0, countForResolvedGrid);
-        // The grid to be resolved
-        assertEquals(81, grids[1].length);
-        int countForToBeResolvedGrid = 0;
-        for (int value : grids[1]) {
-            if (value == 0) countForToBeResolvedGrid++;
-        }
-        assertNotEquals(0, countForToBeResolvedGrid);
-        // The possibilities
-        assertTrue(
-                grids[2][0] >= 0 && grids[2][0] <= 33,
-                "The unknown level is set as easy and must be between 0 and 33 percent of"
-                        + " possibilities");
+    void givenInvalidLevel_whenCreateGrids_thenThrowsIllegalArgumentException(int level) {
+        IllegalArgumentException exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> iGridMaster.creerLesGrilles(level)
+        );
+        assertTrue(exception.getMessage().contains("The grid level must be between 1 and 3"));
     }
 
     @ParameterizedTest
