@@ -22,8 +22,8 @@ import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
  * Manages file system operations related to the application's data folder.
  *
  * <p>Implements {@link IFileSystem} to recursively delete the application's data directory,
- * ensuring path validation and detailed logging. Throws IllegalArgumentException via
- * ExceptionTools if input paths are null.
+ * ensuring path validation and detailed logging. Throws IllegalArgumentException via ExceptionTools
+ * if input paths are null.
  */
 public final class FileSystemManager implements IFileSystem {
 
