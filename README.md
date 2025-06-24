@@ -38,6 +38,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
 - [Security](https://github.com/Lob2018/SudokuFX?tab=security-ov-file#readme)
 - [Project](#project)
   - [Overview](#overview)
+  - [Structure](#structure)
   - [Roadmap](#roadmap)
   - [Mockup](#mockup)
   - [Build with](#build-with)
@@ -148,6 +149,36 @@ To ensure the integrity of downloaded assets, import the GPG public key with `gp
 ### Overview
 
 Cross-platform desktop application developed in Java using JavaFX, Spring Boot, HSQLDB, Maven, and SonarCloud, following the Model-View-ViewModel-Coordinator (MVVM-C) architecture.
+
+### Structure
+
+```
+.
+├── benchmark           // performance and load testing utilities
+├── common              // shared utilities, annotations, enums, exceptions, interfaces
+│   ├── annotation      // custom annotations
+│   ├── enums           // shared enums and constants
+│   ├── exception       // common exception classes
+│   ├── interfaces      // reusable interfaces
+│   │   └── mapper      // data mapping interfaces
+│   └── util            // general utility classes
+│       └── sudoku      // sudoku-related utilities
+├── config              // application configuration (database, OS settings)
+│   ├── database        // database configurations
+│   └── os              // operating system specific configs
+├── dto                 // data transfer objects
+│   └── github          // github-specific DTOs
+├── model               // domain/business models
+├── navigation          // navigation management for the Coordinator
+├── repository          // data access layer
+├── service             // business services and logic
+├── view                // UI views and components
+│   └── component       // reusable UI components
+│       ├── list        // list components
+│       └── toaster     // toaster notifications
+└── viewmodel           // view models for MVVM pattern
+    └── state           // in-memory ViewModel state
+```
 
 ### Roadmap
 
