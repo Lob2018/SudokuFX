@@ -1,0 +1,9 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test =
+[
+    [ "cleanup", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html#a47047305c049cef5b9974ecb95746b4d", null ],
+    [ "givenNullScene_whenConstructDynamicFontSize_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html#a0cf9e777a4d0282d919606cb80c95eba", null ],
+    [ "givenStageResized_whenUpdateFontSize_thenFontSizeAdjustedCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html#ab867b66afda213502edcdcc890539a32", null ],
+    [ "start", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html#a5db3e5fe16bb0a4397f793349a9a5309", null ],
+    [ "dynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html#abea292008d6c6675f7bfc0dd89b766c3", null ],
+    [ "stage", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html#a89eb67adfe2312aec0803f67571ffe52", null ]
+];

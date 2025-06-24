@@ -18,8 +18,8 @@
 <area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="1842,113,1935,132,1934,138,1841,118"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a67957eac2367e7b8018ef0d2ce354bef" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="2237,72,2506,115"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="2189,91,2221,91,2221,96,2189,96"/>
-<area shape="rect" id="Node000008" href="$enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a37cf79bc87b16f23dc854d3de19d331b" title=" " alt="" coords="2286,5,2456,48"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="2189,24,2271,24,2271,29,2189,29"/>
+<area shape="rect" id="Node000008" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a43cd66f6e8b04c4873f35e51fd57a36d" title=" " alt="" coords="2259,5,2484,48"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="2189,24,2244,24,2244,29,2189,29"/>
 <area shape="poly" id="edge10_Node000010_Node000004" title=" " alt="" coords="1163,131,1257,112,1427,96,1586,90,1587,95,1428,101,1258,117,1164,137"/>
 <area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#aa52464dc847a4a6e2d9141839f230037" title="Called upon successful completion of the image loading task." alt="" coords="1272,127,1540,185"/>
 <area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="1210,153,1256,153,1256,159,1210,159"/>

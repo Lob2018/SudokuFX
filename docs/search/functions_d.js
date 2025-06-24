@@ -9,5 +9,5 @@ var searchData=
   ['openingmainstage_6',['openingMainStage',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html#af5213ac1409a8e916a73f929188c28ad',1,'fr.softsf.sudokufx.common.interfaces.IMainView.openingMainStage()'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#acf48fcf9ca3ca27d580108d2d3e3635c',1,'fr.softsf.sudokufx.view.CrashScreenView.openingMainStage()'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab4d767b0a3c661bf47dd1e1a353bb9bc',1,'fr.softsf.sudokufx.view.DefaultView.openingMainStage(final ISplashScreenView iSplashScreenView)']]],
   ['openingmaximizeprimarystage_7',['openingMaximizePrimaryStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a948d84a7a3c687605fad17a291287d89',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['openingshowstage_8',['openingShowStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a7c523b99ea737199e64610465f238486',1,'fr::softsf::sudokufx::view::DefaultView']]],
-  ['osname_9',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_os_name.html#adc2ffcda46d2aab948a66e40f7883bbb',1,'fr::softsf::sudokufx::enums::OsName']]]
+  ['osname_9',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a',1,'fr::softsf::sudokufx::common::enums::OsName']]]
 ];

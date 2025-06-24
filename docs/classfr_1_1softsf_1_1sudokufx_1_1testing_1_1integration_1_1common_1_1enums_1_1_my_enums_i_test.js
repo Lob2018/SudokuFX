@@ -1,0 +1,11 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test =
+[
+    [ "cleanup", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html#ade555dc4f752f84a32fbef35f3e31245", null ],
+    [ "givenScreenDisposableSize_whenGetSize_thenReturnExpectedMinimumSize", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html#a4605f5a3c4636a8b887d8db24eec0922", null ],
+    [ "givenScreenMinimumSize_whenGetSize_thenReturnFiniteFloatingPointValue", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html#acea2c866e8f87d15590bd13c442f1107", null ],
+    [ "givenScreenVisualHeight_whenGetSize_thenReturnExpectedHeight", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html#a96e65eb1a12c485147255edb32f3096e", null ],
+    [ "givenScreenVisualHeight_whenGetSize_thenReturnFiniteFloatingPointValue", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html#a2e5d85830d32894f6efda1caab4832e3", null ],
+    [ "givenScreenVisualWidth_whenGetSize_thenReturnExpectedWidth", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html#a47feaceb40bcb02333a29611b9fb9480", null ],
+    [ "givenScreenVisualWidth_whenGetSize_thenReturnFiniteFloatingPointValue", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html#a7446fdcd2224147bb987382b096e1ce5", null ],
+    [ "start", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html#a0137262f2f9ca69cefda29da069a7cb3", null ]
+];

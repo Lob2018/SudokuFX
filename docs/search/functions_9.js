@@ -21,7 +21,7 @@ var searchData=
   ['isselectedbinding_18',['isSelectedBinding',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a526715c7454e1e8e77e7996c5b901385',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
   ['isspringcontextexitonrefresh_19',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a8e83f73acbc106647965ccd74951e76a',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['isuptodateproperty_20',['isUpToDateProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#afbe70999a0a118d69927bea13427c056',1,'fr::softsf::sudokufx::viewmodel::MenuNewViewModel']]],
-  ['isvalidatedbyregex_21',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a63515972ba0da600313ea8063ee247e4',1,'fr::softsf::sudokufx::enums::MyRegex']]],
+  ['isvalidatedbyregex_21',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a8e52b7027a3e57d2616e255ea0c68874',1,'fr::softsf::sudokufx::common::enums::MyRegex']]],
   ['isvalidimage_22',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
-  ['isvalidpassword_23',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html#a30146fb5bfaa0889c47477c19a8be157',1,'fr::softsf::sudokufx::enums::MyRegex']]]
+  ['isvalidpassword_23',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a3cba29299fcf22555fcd6751c1f69771',1,'fr::softsf::sudokufx::common::enums::MyRegex']]]
 ];

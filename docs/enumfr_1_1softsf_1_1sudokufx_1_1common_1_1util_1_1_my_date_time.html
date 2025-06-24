@@ -120,7 +120,7 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3483da12855a10304f3a7ea9ea1ff14" id="r_ae3483da12855a10304f3a7ea9ea1ff14"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3483da12855a10304f3a7ea9ea1ff14">getFormatted</a> (LocalDateTime updatedAt)</td></tr>
-<tr class="memdesc:ae3483da12855a10304f3a7ea9ea1ff14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the given LocalDateTime according to the current language setting.  <br /></td></tr>
+<tr class="memdesc:ae3483da12855a10304f3a7ea9ea1ff14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the given <code><a class="el" href="">LocalDateTime</a></code> based on the current locale.  <br /></td></tr>
 <tr class="separator:ae3483da12855a10304f3a7ea9ea1ff14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116a54fadfce8a8d742478d05100a886" id="r_a116a54fadfce8a8d742478d05100a886"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a116a54fadfce8a8d742478d05100a886">getFormattedCurrentTime</a> ()</td></tr>
 <tr class="memdesc:a116a54fadfce8a8d742478d05100a886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as "HH:mm:ss".  <br /></td></tr>
@@ -163,14 +163,20 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Formats the given LocalDateTime according to the current language setting. </p>
+<p>Formats the given <code><a class="el" href="">LocalDateTime</a></code> based on the current locale. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">updatedAt</td><td>The LocalDateTime object to be formatted. </td></tr>
+    <tr><td class="paramname">updatedAt</td><td>the date-time to format; must not be <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A string representing the formatted date and time based on the current locale. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the formatted date-time string </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">updatedAt</code> is <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -310,7 +316,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html">MyDateTime</a></li>
-    <li class="footer">Generated on Tue Jun 24 2025 09:59:49 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Jun 24 2025 20:14:02 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

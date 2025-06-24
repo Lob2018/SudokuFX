@@ -1,9 +1,11 @@
 var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test =
 [
-    [ "givenInvalidDirectoryPath_whenDeleteFolderRecursively_thenDeletionFails", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a0690993373bbca331f1f229ff0397eec", null ],
-    [ "givenNullPath_whenDeleteFile_thenNullPointerExceptionThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a698d92bd8cd4435b74abefbc94e83806", null ],
+    [ "givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenDeletionFails", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#acf8b1d76c763621a0d4c701e765fabc4", null ],
+    [ "givenIOException_whenDeleteFile_thenExceptionReturnedAndLogged", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#aa78f4df104a4f42b69e9c01bbb6310ef", null ],
+    [ "givenNullPath_whenDeleteDataFolderRecursively_thenIllegalArgumentExceptionThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a018b48f0ee7e805d5ae225368c9dcd1c", null ],
+    [ "givenNullPath_whenDeleteFile_thenIllegalArgumentExceptionThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a54cbf9c9aa3a0d5bb1e14d44d9f7924e", null ],
     [ "givenNullPointerException_whenFilesWalk_thenErrorHandled", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a955b7e6c928903b49037a35575b1c35d", null ],
-    [ "givenValidFolder_whenDeleteFolderRecursively_thenDeletionSucceeds", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#ae64daa45f0904fefad3dcd3fed0905d6", null ],
+    [ "givenValidFolder_whenDeleteDataFolderRecursively_thenDeletionSucceeds", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a1c85deb739a97760c6b110bbae49f478", null ],
     [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a4d4460cf804d752028ca40e0d61fb3e2", null ],
     [ "setup", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a68820d2910bde010a13a28eba4fec7a9", null ],
     [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#aed12785a3f9fe2c4a2e1a4dcf51457e3", null ],

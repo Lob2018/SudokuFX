@@ -1,0 +1,14 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test =
+[
+    [ "cleanup", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#acc28ad44ed6eef4ed3e673bbd2aebe68", null ],
+    [ "givenColorInt_whenIntToColor_thenReturnsExpectedColor", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#a1e98fc1e3f46d49c695b735862f27c9a", null ],
+    [ "givenInvalidFile_whenIsValidImage_thenReturnsFalse", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#ab2a87c74089f4b672866e1f58fa48910", null ],
+    [ "givenNullFile_whenIsValidImage_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#a76ef6989888d221fedf89f03d8c8b05f", null ],
+    [ "givenNullImage_whenCalculateImageScaleFactor_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#ad785b9ac523630dcc7a62751f5bbd295", null ],
+    [ "givenNullImage_whenCreateBackgroundImage_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#ab1ed1b4edbabdace9a1c52f91eccad5d", null ],
+    [ "givenValidFile_whenIsValidImage_thenReturnsTrueForSupportedExtensions", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#abd219a4d97c739b126c0650bb200e0f4", null ],
+    [ "givenValidImage_whenCalculateImageScaleFactor_thenReturnsPositiveScale", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#a342818c9ff6180ad5a1dc69e00c4978a", null ],
+    [ "givenValidImage_whenCreateBackgroundImage_thenReturnsNonNullBackgroundImage", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#af13123bce913e23031f9a50a1c997249", null ],
+    [ "start", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#a21e9a2a2585f174b653007f4cd59087a", null ],
+    [ "imageUtils", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html#a91af62e25f3f6d1be4a7f6ba82da297b", null ]
+];

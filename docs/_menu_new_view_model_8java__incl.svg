@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1870;
+var viewWidth = 1912;
 var viewHeight = 120;
 var sectionId = 'dynsection-0';
 </script>
@@ -257,8 +257,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000012" class="node">
 <title>Node12</title>
 <g id="a_Node000012"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="1714,-26 1567.5,-26 1567.5,-6 1714,-6 1714,-26"/>
-<text text-anchor="middle" x="1640.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.I18n</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="1755.25,-26 1568.25,-26 1568.25,-6 1755.25,-6 1755.25,-26"/>
+<text text-anchor="middle" x="1661.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.I18n</text>
 </a>
 </g>
 </g>
@@ -266,8 +266,8 @@ var sectionId = 'dynsection-0';
 <g id="edge11_Node000001_Node000012" class="edge">
 <title>Node1&#45;&gt;Node12</title>
 <g id="a_edge11_Node000001_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1030.67,-83.28C1150.83,-74.97 1371.58,-57.71 1558.75,-32 1566.26,-30.97 1574.14,-29.73 1581.91,-28.41"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1582.43,-31.87 1591.68,-26.7 1581.22,-24.98 1582.43,-31.87"/>
+<path fill="none" stroke="#63b8ff" d="M1030.8,-82.25C1150.87,-72.81 1371.28,-54.29 1558.75,-32 1568.53,-30.84 1578.81,-29.49 1588.94,-28.09"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1589.36,-31.56 1598.78,-26.7 1588.39,-24.63 1589.36,-31.56"/>
 </a>
 </g>
 </g>
@@ -275,9 +275,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000013" class="node">
 <title>Node13</title>
 <g id="a_Node000013"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="1861.75,-32 1731.75,-32 1731.75,0 1861.75,0 1861.75,-32"/>
-<text text-anchor="start" x="1739.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="middle" x="1796.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="1903.75,-32 1773.75,-32 1773.75,0 1903.75,0 1903.75,-32"/>
+<text text-anchor="start" x="1781.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="middle" x="1838.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService</text>
 </a>
 </g>
 </g>
@@ -285,8 +285,8 @@ var sectionId = 'dynsection-0';
 <g id="edge12_Node000001_Node000013" class="edge">
 <title>Node1&#45;&gt;Node13</title>
 <g id="a_edge12_Node000001_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1030.86,-86.18C1174.14,-80.84 1464.74,-66.65 1720.09,-32.25"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1720.52,-35.73 1729.96,-30.91 1719.58,-28.79 1720.52,-35.73"/>
+<path fill="none" stroke="#63b8ff" d="M1030.74,-86.65C1180.05,-81.87 1490.53,-68.33 1762.18,-32.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1762.51,-35.72 1771.96,-30.92 1761.58,-28.78 1762.51,-35.72"/>
 </a>
 </g>
 </g>

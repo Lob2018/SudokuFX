@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['paths_0',['Paths',['../enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html',1,'fr::softsf::sudokufx::enums']]],
+  ['paths_0',['Paths',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html',1,'fr::softsf::sudokufx::common::enums']]],
   ['player_1',['Player',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html',1,'fr::softsf::sudokufx::model']]],
   ['playerbuilder_2',['PlayerBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_1_1_player_builder.html',1,'fr::softsf::sudokufx::model::Player']]],
   ['playerdtolistcell_3',['PlayerDtoListCell',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_player_dto_list_cell.html',1,'fr::softsf::sudokufx::view::component::list']]],

@@ -243,9 +243,9 @@ var sectionId = 'dynsection-1';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a37cf79bc87b16f23dc854d3de19d331b" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="1838.38,-209.22 1710.62,-209.22 1710.62,-177.22 1838.38,-177.22 1838.38,-209.22"/>
-<text text-anchor="start" x="1718.62" y="-195.72" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.</text>
+<g id="a_Node000008"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a43cd66f6e8b04c4873f35e51fd57a36d" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="1858.62,-209.22 1690.38,-209.22 1690.38,-177.22 1858.62,-177.22 1858.62,-209.22"/>
+<text text-anchor="start" x="1698.38" y="-195.72" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
 <text text-anchor="middle" x="1774.5" y="-183.72" font-family="Helvetica,sans-Serif" font-size="10.00">ToastLevels.getLevel</text>
 </a>
 </g>
@@ -254,8 +254,8 @@ var sectionId = 'dynsection-1';
 <g id="edge7_Node000007_Node000008" class="edge">
 <title>Node7&#45;&gt;Node8</title>
 <g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1637.93,-193.22C1658.39,-193.22 1679.57,-193.22 1698.93,-193.22"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1698.91,-196.72 1708.91,-193.22 1698.91,-189.72 1698.91,-196.72"/>
+<path fill="none" stroke="#63b8ff" d="M1637.93,-193.22C1651.45,-193.22 1665.29,-193.22 1678.72,-193.22"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1678.37,-196.72 1688.37,-193.22 1678.37,-189.72 1678.37,-196.72"/>
 </a>
 </g>
 </g>

@@ -1,7 +1,7 @@
 <map id="src/main/java/fr/softsf/sudokufx/config/JVMApplicationProperties.java" name="src/main/java/fr/softsf/sudokufx/config/JVMApplicationProperties.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="40,5,252,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="53,5,265,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,120,121,147"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,66,86,110,82,106,119,63"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="144,112,315,155"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,63,204,99,200,102,168,66"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,66,88,111,84,107,129,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="144,112,368,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="190,62,227,99,223,103,186,66"/>
 </map>

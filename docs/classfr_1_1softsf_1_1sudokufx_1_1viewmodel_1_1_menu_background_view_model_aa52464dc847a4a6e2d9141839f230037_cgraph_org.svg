@@ -155,9 +155,9 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a37cf79bc87b16f23dc854d3de19d331b" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="878.12,-132 750.38,-132 750.38,-100 878.12,-100 878.12,-132"/>
-<text text-anchor="start" x="758.38" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.</text>
+<g id="a_Node000006"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a43cd66f6e8b04c4873f35e51fd57a36d" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="898.38,-132 730.12,-132 730.12,-100 898.38,-100 898.38,-132"/>
+<text text-anchor="start" x="738.12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
 <text text-anchor="middle" x="814.25" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToastLevels.getLevel</text>
 </a>
 </g>
@@ -166,8 +166,8 @@
 <g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
 <g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M677.68,-116C698.14,-116 719.32,-116 738.68,-116"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="738.66,-119.5 748.66,-116 738.66,-112.5 738.66,-119.5"/>
+<path fill="none" stroke="#63b8ff" d="M677.68,-116C691.2,-116 705.04,-116 718.47,-116"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="718.12,-119.5 728.12,-116 718.12,-112.5 718.12,-119.5"/>
 </a>
 </g>
 </g>

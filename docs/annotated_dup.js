@@ -10,6 +10,18 @@ var annotated_dup =
             [ "annotation", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation.html", [
               [ "ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1_excluded_from_coverage_report_generated.html", null ]
             ] ],
+            [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums.html", [
+              [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level" ],
+              [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n" ],
+              [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt" ],
+              [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex" ],
+              [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name" ],
+              [ "Paths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths" ],
+              [ "ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size" ],
+              [ "SecureRandomGenerator", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_secure_random_generator.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_secure_random_generator" ],
+              [ "ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels" ],
+              [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls" ]
+            ] ],
             [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html", [
               [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools" ]
             ] ],
@@ -34,13 +46,10 @@ var annotated_dup =
                 [ "GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test" ]
               ] ],
               [ "DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size" ],
-              [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test" ],
               [ "FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager" ],
               [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test" ],
               [ "ImageUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils" ],
               [ "MyDateTime", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time" ],
-              [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex_u_test" ],
-              [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_secure_random_generator_u_test" ],
               [ "SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer" ]
             ] ]
           ] ],
@@ -73,18 +82,6 @@ var annotated_dup =
             [ "MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test" ],
             [ "ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config" ]
           ] ],
-          [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1enums.html", [
-            [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level" ],
-            [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n" ],
-            [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_log_back_txt" ],
-            [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_my_regex" ],
-            [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_os_name.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_os_name" ],
-            [ "Paths", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_paths" ],
-            [ "ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_screen_size" ],
-            [ "SecureRandomGenerator", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_secure_random_generator" ],
-            [ "ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels" ],
-            [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_urls" ]
-          ] ],
           [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", [
             [ "Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background" ],
             [ "Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game" ],
@@ -110,25 +107,47 @@ var annotated_dup =
           ] ],
           [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
             [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service" ],
-            [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service" ],
-            [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test" ]
+            [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service" ]
           ] ],
           [ "testing", null, [
-            [ "e2e", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e.html", [
-              [ "MyEnumsE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1_my_enums_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1_my_enums_e2_e_test" ]
+            [ "e2e", null, [
+              [ "common", null, [
+                [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util.html", [
+                  [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test" ]
+                ] ]
+              ] ]
+            ] ],
+            [ "integration", null, [
+              [ "common", null, [
+                [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums.html", [
+                  [ "MyEnumsITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test" ]
+                ] ]
+              ] ],
+              [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html", [
+                [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test" ]
+              ] ]
             ] ],
             [ "unit", null, [
-              [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums.html", [
-                [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums_1_1_difficulty_level_test" ]
-              ] ],
-              [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util.html", [
-                [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1os.html", [
-                  [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1os_1_1_os_info_u_test" ]
+              [ "common", null, [
+                [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums.html", [
+                  [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test" ],
+                  [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test" ],
+                  [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test" ]
                 ] ],
-                [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_exception_tools_u_test" ],
-                [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_i18n_u_test" ],
-                [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_my_enums_u_test" ],
-                [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util_1_1_spring_context_initializer_u_test" ]
+                [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception.html", [
+                  [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1_exception_tools_u_test" ]
+                ] ],
+                [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util.html", [
+                  [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os.html", [
+                    [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test" ]
+                  ] ],
+                  [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_exception_tools_u_test" ],
+                  [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test" ],
+                  [ "ImageUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test" ],
+                  [ "MyDateTimeUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test" ],
+                  [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test" ],
+                  [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test" ]
+                ] ]
               ] ],
               [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", [
                 [ "MenuBackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test" ]

@@ -3,22 +3,35 @@ var namespacefr_1_1softsf_1_1sudokufx =
     [ "benchmark", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark" ],
     [ "common", null, [
       [ "annotation", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation" ],
+      [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums" ],
       [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception" ],
       [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces" ],
       [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util" ]
     ] ],
     [ "config", "namespacefr_1_1softsf_1_1sudokufx_1_1config.html", "namespacefr_1_1softsf_1_1sudokufx_1_1config" ],
     [ "dto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html", "namespacefr_1_1softsf_1_1sudokufx_1_1dto" ],
-    [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1enums.html", "namespacefr_1_1softsf_1_1sudokufx_1_1enums" ],
     [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", "namespacefr_1_1softsf_1_1sudokufx_1_1model" ],
     [ "navigation", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation" ],
     [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", "namespacefr_1_1softsf_1_1sudokufx_1_1repository" ],
     [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1service" ],
     [ "testing", null, [
-      [ "e2e", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e" ],
+      [ "e2e", null, [
+        [ "common", null, [
+          [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util" ]
+        ] ]
+      ] ],
+      [ "integration", null, [
+        [ "common", null, [
+          [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums" ]
+        ] ],
+        [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service" ]
+      ] ],
       [ "unit", null, [
-        [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums" ],
-        [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1util" ],
+        [ "common", null, [
+          [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums" ],
+          [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception" ],
+          [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util" ]
+        ] ],
         [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel" ]
       ] ]
     ] ],

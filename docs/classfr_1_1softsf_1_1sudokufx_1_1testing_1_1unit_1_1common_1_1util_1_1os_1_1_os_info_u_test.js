@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test =
+[
+    [ "givenOsName_whenGetOs_thenOsMatchesSystemProperty", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test.html#a0ccbbc8cb8ab0f8e1d4a012802a22547", null ],
+    [ "givenUserHomePath_whenGetPath_thenPathMatchesSystemProperty", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test.html#a7c0199e62114662d2532fa19b0534528", null ]
+];

@@ -1,0 +1,4 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test =
+[
+    [ "givenNullTextOrPattern_whenIsValidatedByRegex_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#ab9ea1a6d78bfe65d8499b2ee17fe854c", null ]
+];

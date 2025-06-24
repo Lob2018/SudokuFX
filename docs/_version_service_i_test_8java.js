@@ -1,17 +1,17 @@
 var _version_service_i_test_8java =
 [
-    [ "fr.softsf.sudokufx.service.VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service_i_test" ],
-    [ "fr.softsf.sudokufx.service.[instance initializer]", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a2247ff12de5ab684a39d55f29cf5c830", null ],
-    [ "fr.softsf.sudokufx.service.cleanup", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a38091bbe4ac7a252c372d9bac9cdff75", null ],
-    [ "fr.softsf.sudokufx.service.eachSetup", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a12f25f9bc82e97e3927e99c162dcf87f", null ],
-    [ "fr.softsf.sudokufx.service.givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a7cbb1c6d141070b6a73b4367fd3605f2", null ],
-    [ "fr.softsf.sudokufx.service.givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a0dcbee3c8204985753abe451e17abf36", null ],
-    [ "fr.softsf.sudokufx.service.givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#aa558d6291b30e8ed8003e6bd66169683", null ],
-    [ "fr.softsf.sudokufx.service.givenValidGitHubVersions_whenCheckLatestVersion_thenCorrectResultReturned", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a1935d8c8136bf83fd62008228a07e5e8", null ],
-    [ "fr.softsf.sudokufx.service.closeable", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a2f4bb1fff99df12da67edf37994567bc", null ],
-    [ "fr.softsf.sudokufx.service.logWatcher", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ae44f2ce437ffb95bb2a298f7fabf98e2", null ],
-    [ "fr.softsf.sudokufx.service.mockHttpClient", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a61a86660dac8876f7088f6c0c120edc8", null ],
-    [ "fr.softsf.sudokufx.service.mockResponse", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a12341aab00f4c4f124d41930932f6104", null ],
-    [ "fr.softsf.sudokufx.service.myDateTime", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#ad2c2eb1933aa76854ea83b691b27354d", null ],
-    [ "fr.softsf.sudokufx.service.objectMapper", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html#a2940c49270f43502e334da4828381ccd", null ]
+    [ "fr.softsf.sudokufx.testing.integration.service.VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test" ],
+    [ "fr.softsf.sudokufx.testing.integration.service.[instance initializer]", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a7bbbbe83e28267f992d4d7105d9aeb58", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.cleanup", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a092733fdcf89ce618c4bbc1cc15bf74f", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.eachSetup", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a1af6dbceb188908fcad8cafa7f3b9782", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a5e0de5f756111883f130dc38c8f5c23b", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#adff11d0359879827ec8684105d54e379", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a3fbdac2142edc62f949d835e1c4b6e65", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.givenValidGitHubVersions_whenCheckLatestVersion_thenCorrectResultReturned", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a7ccf34d0ce17de99f5526805ad07b5cc", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.closeable", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#afd3afa4ac1e2b6c1f84c524b7f669344", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.logWatcher", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a9945ab1422b692d972d2c0765c8c48c1", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.mockHttpClient", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#ae1ea3b6cc8fa5584c911b463d3214913", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.mockResponse", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a9414d683f615b8e11670cee68575dbc3", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.myDateTime", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a0fc489dda40b513d1d93e525a839dff6", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.objectMapper", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#aaeac640e43662b9bb033d9b4ae28e47c", null ]
 ];

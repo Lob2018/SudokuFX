@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Utility class for image&#45;related operations, including color conversion, image validation,...">
+<g id="a_Node000001"><a xlink:title="Utility class providing helper methods for common image&#45;related operations in JavaFX.">
 <polygon fill="#999999" stroke="none" points="178.5,-160 0,-160 0,0 178.5,0 178.5,-160"/>
 <text text-anchor="start" x="21.38" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
 <text text-anchor="start" x="65.62" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>

@@ -1,7 +1,6 @@
 <map id="src/test/java/fr/softsf/sudokufx/testing/unit" name="src/test/java/fr/softsf/sudokufx/testing/unit">
-<area shape="rect" id="node2" href="dir_57ff3a31b5f9f74b017e71a2dc8cb2cf.html" title="enums" alt="" coords="104,64,165,91"/>
-<area shape="rect" id="node3" href="dir_319d39c9073bf89e46679ed64983eab1.html" title="util" alt="" coords="189,64,227,91"/>
-<area shape="rect" id="node4" href="dir_839d54b439349e7dac0bd905e8d02e31.html" title="viewmodel" alt="" coords="252,64,335,91"/>
-<area shape="rect" id="clust2" href="dir_85131fc9f14a9f8190b09936acd1f60e.html" alt="" coords="27,53,345,101"/>
-<area shape="rect" id="clust1" href="dir_8c4f7a55155647995fd1da6533383b17.html" title="testing" alt="" coords="16,16,356,112"/>
+<area shape="rect" id="node2" href="dir_9325295c85b430a53d8fada5aae6da80.html" title="common" alt="" coords="104,64,176,91"/>
+<area shape="rect" id="node3" href="dir_839d54b439349e7dac0bd905e8d02e31.html" title="viewmodel" alt="" coords="200,64,283,91"/>
+<area shape="rect" id="clust2" href="dir_85131fc9f14a9f8190b09936acd1f60e.html" alt="" coords="27,53,293,101"/>
+<area shape="rect" id="clust1" href="dir_8c4f7a55155647995fd1da6533383b17.html" title="testing" alt="" coords="16,16,304,112"/>
 </map>

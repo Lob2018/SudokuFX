@@ -1,9 +1,9 @@
-<map id="src/test/java/fr/softsf/sudokufx/testing/unit/enums/DifficultyLevelTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/enums/DifficultyLevelTest.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="170,5,373,64"/>
+<map id="src/test/java/fr/softsf/sudokufx/testing/unit/common/enums/DifficultyLevelTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/common/enums/DifficultyLevelTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="170,5,427,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,120,162,147"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,67,123,115,120,110,214,62"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="186,112,357,155"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="274,64,274,97,269,97,269,64"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="381,120,583,147"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="335,62,442,111,440,115,333,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,67,127,116,124,111,233,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="186,112,410,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,64,301,97,296,97,296,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="434,120,637,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="370,62,492,111,490,116,368,67"/>
 </map>

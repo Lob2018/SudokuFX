@@ -106,35 +106,35 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_fi
 </div><!--header-->
 <div class="contents">
 
-<p>Manages file system operations, particularly folder deletion.  
+<p>Manages file system operations related to the application's data folder.  
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for fr.softsf.sudokufx.common.util.FileSystemManager:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager__inherit__graph.svg" width="284" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager__inherit__graph.svg" width="203" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.common.util.FileSystemManager:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager__coll__graph.svg" width="284" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager__coll__graph.svg" width="203" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c4ab0ecfa4a307ce07966bd19517d61" id="r_a1c4ab0ecfa4a307ce07966bd19517d61"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c4ab0ecfa4a307ce07966bd19517d61">deleteFolderRecursively</a> (final Path folderPath, final String mustEndWithThat)</td></tr>
-<tr class="separator:a1c4ab0ecfa4a307ce07966bd19517d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a253366d091d4d8c46e2235ba25ffd9ff" id="r_a253366d091d4d8c46e2235ba25ffd9ff"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a253366d091d4d8c46e2235ba25ffd9ff">deleteFolderRecursively</a> (Path folderPath, String mustEndWithThat)</td></tr>
-<tr class="memdesc:a253366d091d4d8c46e2235ba25ffd9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively deletes a folder and its contents if the folder path ends with the specified string.  <br /></td></tr>
-<tr class="separator:a253366d091d4d8c46e2235ba25ffd9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc9fa5d78687bd39498e8391743f4362" id="r_adc9fa5d78687bd39498e8391743f4362"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc9fa5d78687bd39498e8391743f4362">deleteDataFolderRecursively</a> (final Path folderPath)</td></tr>
+<tr class="separator:adc9fa5d78687bd39498e8391743f4362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367d0c5462de0730823809a145ffcd25" id="r_a367d0c5462de0730823809a145ffcd25"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a367d0c5462de0730823809a145ffcd25">deleteDataFolderRecursively</a> (Path folderPath)</td></tr>
+<tr class="memdesc:a367d0c5462de0730823809a145ffcd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively deletes the application's data folder and all its contents.  <br /></td></tr>
+<tr class="separator:a367d0c5462de0730823809a145ffcd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
 <tr class="memitem:abf8ac863bf9fd3d181f186e4fcbadd6e" id="r_abf8ac863bf9fd3d181f186e4fcbadd6e"><td class="memItemLeft" align="right" valign="top">Throwable&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf8ac863bf9fd3d181f186e4fcbadd6e">deleteFile</a> (final Path path)</td></tr>
-<tr class="memdesc:abf8ac863bf9fd3d181f186e4fcbadd6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to delete a single file or directory.  <br /></td></tr>
+<tr class="memdesc:abf8ac863bf9fd3d181f186e4fcbadd6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a single file or directory.  <br /></td></tr>
 <tr class="separator:abf8ac863bf9fd3d181f186e4fcbadd6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
@@ -143,11 +143,60 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:af41d09c76552eba7c86e6435295c7ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages file system operations, particularly folder deletion. </p>
-<p>Interface defining a method to recursively deletes a folder and its contents.</p>
-<p>This class implements the IFileSystem interface.</p>
-<p>The folder path must end with the specified String. </p>
+<div class="textblock"><p>Manages file system operations related to the application's data folder. </p>
+<p>Defines file system operations related to the application's data management.</p>
+<p>Implements <code><a class="el" href="">IFileSystem</a></code> to recursively delete the application's data directory, ensuring path validation and detailed logging. Throws IllegalArgumentException via <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html" title="Utility enum for handling and analyzing exceptions.">ExceptionTools</a> if input paths are null. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="adc9fa5d78687bd39498e8391743f4362" name="adc9fa5d78687bd39498e8391743f4362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc9fa5d78687bd39498e8391743f4362">&#9670;&#160;</a></span>deleteDataFolderRecursively() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean fr.softsf.sudokufx.common.util.FileSystemManager.deleteDataFolderRecursively </td>
+          <td>(</td>
+          <td class="paramtype">final Path</td>          <td class="paramname"><span class="paramname"><em>folderPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a367d0c5462de0730823809a145ffcd25" name="a367d0c5462de0730823809a145ffcd25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a367d0c5462de0730823809a145ffcd25">&#9670;&#160;</a></span>deleteDataFolderRecursively() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean fr.softsf.sudokufx.common.util.FileSystemManager.deleteDataFolderRecursively </td>
+          <td>(</td>
+          <td class="paramtype">Path</td>          <td class="paramname"><span class="paramname"><em>folderPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recursively deletes the application's data folder and all its contents. </p>
+<p>Validates the given path before deletion. Returns <code class="JavaDocCode">true</code> if deletion succeeds; <code class="JavaDocCode">false</code> otherwise.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">folderPath</td><td>the path to the application's data folder; must not be <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if the folder and its contents were successfully deleted; <code class="JavaDocCode">false</code> otherwise </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">folderPath</code> is <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="abf8ac863bf9fd3d181f186e4fcbadd6e" name="abf8ac863bf9fd3d181f186e4fcbadd6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf8ac863bf9fd3d181f186e4fcbadd6e">&#9670;&#160;</a></span>deleteFile()</h2>
 
@@ -171,66 +220,20 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Attempts to delete a single file or directory. </p>
+<p>Deletes a single file or directory. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">path</td><td>The path of the file or directory to be deleted. </td></tr>
+    <tr><td class="paramname">path</td><td>the path to delete; must not be null </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>null if the file was successfully deleted, otherwise returns the Exception that occurred. </dd></dl>
-
-</div>
-</div>
-<a id="a1c4ab0ecfa4a307ce07966bd19517d61" name="a1c4ab0ecfa4a307ce07966bd19517d61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c4ab0ecfa4a307ce07966bd19517d61">&#9670;&#160;</a></span>deleteFolderRecursively() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean fr.softsf.sudokufx.common.util.FileSystemManager.deleteFolderRecursively </td>
-          <td>(</td>
-          <td class="paramtype">final Path</td>          <td class="paramname"><span class="paramname"><em>folderPath</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final String</td>          <td class="paramname"><span class="paramname"><em>mustEndWithThat</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a253366d091d4d8c46e2235ba25ffd9ff" name="a253366d091d4d8c46e2235ba25ffd9ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a253366d091d4d8c46e2235ba25ffd9ff">&#9670;&#160;</a></span>deleteFolderRecursively() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boolean fr.softsf.sudokufx.common.util.FileSystemManager.deleteFolderRecursively </td>
-          <td>(</td>
-          <td class="paramtype">Path</td>          <td class="paramname"><span class="paramname"><em>folderPath</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>mustEndWithThat</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Recursively deletes a folder and its contents if the folder path ends with the specified string. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">folderPath</td><td>The path of the folder to be deleted. </td></tr>
-    <tr><td class="paramname">mustEndWithThat</td><td>The string that the folder path must end with for deletion to proceed. </td></tr>
+<dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">null</code> if deletion succeeded; otherwise the exception thrown </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">path</code> is null </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the folder was successfully deleted, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -267,7 +270,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html">FileSystemManager</a></li>
-    <li class="footer">Generated on Tue Jun 24 2025 09:59:49 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Jun 24 2025 20:14:02 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

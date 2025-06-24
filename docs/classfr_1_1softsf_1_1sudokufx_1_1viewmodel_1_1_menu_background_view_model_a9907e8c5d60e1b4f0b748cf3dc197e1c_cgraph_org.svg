@@ -174,9 +174,9 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_toast_levels.html#a37cf79bc87b16f23dc854d3de19d331b" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="1122.88,-182.19 995.12,-182.19 995.12,-150.19 1122.88,-150.19 1122.88,-182.19"/>
-<text text-anchor="start" x="1003.12" y="-168.69" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.</text>
+<g id="a_Node000006"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a43cd66f6e8b04c4873f35e51fd57a36d" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="1143.12,-182.19 974.88,-182.19 974.88,-150.19 1143.12,-150.19 1143.12,-182.19"/>
+<text text-anchor="start" x="982.88" y="-168.69" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
 <text text-anchor="middle" x="1059" y="-156.69" font-family="Helvetica,sans-Serif" font-size="10.00">ToastLevels.getLevel</text>
 </a>
 </g>
@@ -185,8 +185,8 @@
 <g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
 <g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M922.43,-166.19C942.89,-166.19 964.07,-166.19 983.43,-166.19"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="983.41,-169.69 993.41,-166.19 983.41,-162.69 983.41,-169.69"/>
+<path fill="none" stroke="#63b8ff" d="M922.43,-166.19C935.95,-166.19 949.79,-166.19 963.22,-166.19"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="962.87,-169.69 972.87,-166.19 962.87,-162.69 962.87,-169.69"/>
 </a>
 </g>
 </g>
