@@ -154,8 +154,8 @@ var annotated_dup =
             [ "SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view" ]
           ] ],
           [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html", [
-            [ "cache", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache.html", [
-              [ "CachedPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player" ]
+            [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html", [
+              [ "InMemoryPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player" ]
             ] ],
             [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
             [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],

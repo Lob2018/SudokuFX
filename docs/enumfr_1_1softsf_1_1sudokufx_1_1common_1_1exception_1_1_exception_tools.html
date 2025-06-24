@@ -113,17 +113,20 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools__coll__graph.svg" width="255" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools__coll__graph.svg" width="255" height="256"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a557c074ca1dae138acf84246460cb2d4" id="r_a557c074ca1dae138acf84246460cb2d4"><td class="memItemLeft" align="right" valign="top">IllegalArgumentException&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a557c074ca1dae138acf84246460cb2d4">createAndLogIllegalArgument</a> (String message)</td></tr>
+<tr class="memdesc:a557c074ca1dae138acf84246460cb2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the given message and returns an <code><a class="el" href="">IllegalArgumentException</a></code> with it.  <br /></td></tr>
+<tr class="separator:a557c074ca1dae138acf84246460cb2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec891d53a6e9877e403d9e80bab336c" id="r_a3ec891d53a6e9877e403d9e80bab336c"><td class="memItemLeft" align="right" valign="top">SQLInvalidAuthorizationSpecException&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec891d53a6e9877e403d9e80bab336c">getSQLInvalidAuthorizationSpecException</a> (Throwable e)</td></tr>
 <tr class="memdesc:a3ec891d53a6e9877e403d9e80bab336c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively searches for a SQLInvalidAuthorizationSpecException in the exception chain.  <br /></td></tr>
 <tr class="separator:a3ec891d53a6e9877e403d9e80bab336c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c86994fdbb2a3747fc08e69ad90de39" id="r_a5c86994fdbb2a3747fc08e69ad90de39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c86994fdbb2a3747fc08e69ad90de39">logAndThrowIllegalArgument</a> (String message)</td></tr>
-<tr class="memdesc:a5c86994fdbb2a3747fc08e69ad90de39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the given message and throws an <code><a class="el" href="">IllegalArgumentException</a></code> with it.  <br /></td></tr>
-<tr class="separator:a5c86994fdbb2a3747fc08e69ad90de39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d77e90c3561b0aea542126cb69de6a3" id="r_a0d77e90c3561b0aea542126cb69de6a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d77e90c3561b0aea542126cb69de6a3">logAndThrowIllegalArgumentIfBlank</a> (String value, String message)</td></tr>
+<tr class="memdesc:a0d77e90c3561b0aea542126cb69de6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the given message and throws an <code><a class="el" href="">IllegalArgumentException</a></code> if the given string is <code class="JavaDocCode">null</code>, empty, or blank (only whitespace).  <br /></td></tr>
+<tr class="separator:a0d77e90c3561b0aea542126cb69de6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -139,6 +142,32 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>Utility enum for handling and analyzing exceptions. </p>
 <p>This enum provides methods to search for specific exception types within exception chains. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a557c074ca1dae138acf84246460cb2d4" name="a557c074ca1dae138acf84246460cb2d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557c074ca1dae138acf84246460cb2d4">&#9670;&#160;</a></span>createAndLogIllegalArgument()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IllegalArgumentException fr.softsf.sudokufx.common.exception.ExceptionTools.createAndLogIllegalArgument </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs the given message and returns an <code><a class="el" href="">IllegalArgumentException</a></code> with it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>the error message </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the IllegalArgumentException instance (not thrown) </dd></dl>
+
+</div>
+</div>
 <a id="a3ec891d53a6e9877e403d9e80bab336c" name="a3ec891d53a6e9877e403d9e80bab336c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ec891d53a6e9877e403d9e80bab336c">&#9670;&#160;</a></span>getSQLInvalidAuthorizationSpecException()</h2>
 
@@ -166,31 +195,36 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5c86994fdbb2a3747fc08e69ad90de39" name="a5c86994fdbb2a3747fc08e69ad90de39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c86994fdbb2a3747fc08e69ad90de39">&#9670;&#160;</a></span>logAndThrowIllegalArgument()</h2>
+<a id="a0d77e90c3561b0aea542126cb69de6a3" name="a0d77e90c3561b0aea542126cb69de6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d77e90c3561b0aea542126cb69de6a3">&#9670;&#160;</a></span>logAndThrowIllegalArgumentIfBlank()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.common.exception.ExceptionTools.logAndThrowIllegalArgument </td>
+          <td class="memname">void fr.softsf.sudokufx.common.exception.ExceptionTools.logAndThrowIllegalArgumentIfBlank </td>
           <td>(</td>
-          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Logs the given message and throws an <code><a class="el" href="">IllegalArgumentException</a></code> with it. </p>
+<p>Logs the given message and throws an <code><a class="el" href="">IllegalArgumentException</a></code> if the given string is <code class="JavaDocCode">null</code>, empty, or blank (only whitespace). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">value</td><td>the string to check </td></tr>
     <tr><td class="paramname">message</td><td>the error message </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>always thrown with the given message </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if the string is blank or null </td></tr>
   </table>
   </dd>
 </dl>
@@ -243,7 +277,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html">exception</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html">ExceptionTools</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 13:02:57 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Jun 24 2025 09:59:49 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

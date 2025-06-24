@@ -18,7 +18,7 @@ var searchData=
   ['setcolorfrommodel_15',['setColorFromModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#abae6bf1bd0e33503185cef94b3ec339e',1,'fr::softsf::sudokufx::viewmodel::MenuBackgroundViewModel']]],
   ['setcrashscreenvboxtophboxlogosudosvg_16',['setCrashscreenvboxTophboxLogosudosvg',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a5a135e72f1765ad2dc90d69994f7b657',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
   ['setcredentials_17',['setCredentials',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a4e0c9cd1616de5732520be76f91ebd85',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
-  ['setcurrentplayer_18',['setCurrentPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html#a87c552242776ce0dcff6a123551bf855',1,'fr::softsf::sudokufx::viewmodel::cache::CachedPlayer']]],
+  ['setcurrentplayer_18',['setCurrentPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a99f3ecdaee07d31b80f3ffb7154fa0a6',1,'fr::softsf::sudokufx::viewmodel::state::InMemoryPlayer']]],
   ['setcurrentversion_19',['setCurrentversion',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html#a16548fd0d865d9e4c4397bd4f0640518',1,'fr::softsf::sudokufx::model::Software']]],
   ['setdefaultgridvalue_20',['setDefaultgridvalue',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a1c62a8f972f1e0f64de855b716bfc634',1,'fr::softsf::sudokufx::model::Grid']]],
   ['setdefaultscene_21',['setDefaultScene',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a51f623613b1cd7c8cd7cd2a10f3d420d',1,'fr::softsf::sudokufx::navigation::Coordinator']]],

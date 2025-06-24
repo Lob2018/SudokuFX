@@ -107,7 +107,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_pl
 </div><!--header-->
 <div class="contents">
 
-<p>ViewModel for managing player menu UI state and accessibility texts.  
+<p>ViewModel managing player menu UI state and localized accessibility texts.  
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel:</div>
@@ -119,8 +119,8 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_pl
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac92bade7f86feaa5644efb2ab4575a93" id="r_ac92bade7f86feaa5644efb2ab4575a93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac92bade7f86feaa5644efb2ab4575a93">MenuPlayerViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html">CachedPlayer</a> <a class="el" href="#a79ec105c9d6ca05d85204511e85900a4">inMemoryPlayer</a>)</td></tr>
-<tr class="separator:ac92bade7f86feaa5644efb2ab4575a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01acb237ab4001791933cde3047612bf" id="r_a01acb237ab4001791933cde3047612bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01acb237ab4001791933cde3047612bf">MenuPlayerViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html">InMemoryPlayer</a> <a class="el" href="#a1880b9e13c6b447983088d5813596198">inMemoryPlayer</a>)</td></tr>
+<tr class="separator:a01acb237ab4001791933cde3047612bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1ffae6b7e4a182e7e7a1eca17481a3" id="r_acc1ffae6b7e4a182e7e7a1eca17481a3"><td class="memItemLeft" align="right" valign="top">StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc1ffae6b7e4a182e7e7a1eca17481a3">cellButtonAccessibleTextProperty</a> ()</td></tr>
 <tr class="separator:acc1ffae6b7e4a182e7e7a1eca17481a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9b0ca160159d7c96f67d5a19062e99" id="r_aca9b0ca160159d7c96f67d5a19062e99"><td class="memItemLeft" align="right" valign="top">StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca9b0ca160159d7c96f67d5a19062e99">cellConfirmationMessageProperty</a> ()</td></tr>
@@ -180,10 +180,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:aee456e9687b1301a3d7559374d989855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a sample PlayerDto instance for testing purposes.  <br /></td></tr>
 <tr class="separator:aee456e9687b1301a3d7559374d989855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae780866cb629a7b3fb902530ee8b4098" id="r_ae780866cb629a7b3fb902530ee8b4098"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae780866cb629a7b3fb902530ee8b4098">loadPlayers</a> ()</td></tr>
-<tr class="memdesc:ae780866cb629a7b3fb902530ee8b4098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads test players into the observable list.  <br /></td></tr>
+<tr class="memdesc:ae780866cb629a7b3fb902530ee8b4098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads players into the observable list.  <br /></td></tr>
 <tr class="separator:ae780866cb629a7b3fb902530ee8b4098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a062c453d8d6794a32f0f8246057d0604" id="r_a062c453d8d6794a32f0f8246057d0604"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a062c453d8d6794a32f0f8246057d0604">playerName</a> ()</td></tr>
-<tr class="memdesc:a062c453d8d6794a32f0f8246057d0604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the currently selected player or empty if none.  <br /></td></tr>
+<tr class="memdesc:a062c453d8d6794a32f0f8246057d0604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the currently selected player.  <br /></td></tr>
 <tr class="separator:a062c453d8d6794a32f0f8246057d0604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add46cd4d4ea1ec7cb88a67a5f54f0a71" id="r_add46cd4d4ea1ec7cb88a67a5f54f0a71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add46cd4d4ea1ec7cb88a67a5f54f0a71">setSelectedPlayer</a> ()</td></tr>
 <tr class="memdesc:add46cd4d4ea1ec7cb88a67a5f54f0a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the selected player to the one marked as selected or first in the list.  <br /></td></tr>
@@ -191,8 +191,6 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a79ec105c9d6ca05d85204511e85900a4" id="r_a79ec105c9d6ca05d85204511e85900a4"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html">CachedPlayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79ec105c9d6ca05d85204511e85900a4">inMemoryPlayer</a></td></tr>
-<tr class="separator:a79ec105c9d6ca05d85204511e85900a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d0a7cb1b465020be2e928270563af2" id="r_a77d0a7cb1b465020be2e928270563af2"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77d0a7cb1b465020be2e928270563af2">cellButtonAccessibleText</a></td></tr>
 <tr class="separator:a77d0a7cb1b465020be2e928270563af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14cc6380770c7bd00a177a403c8887b6" id="r_a14cc6380770c7bd00a177a403c8887b6"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14cc6380770c7bd00a177a403c8887b6">cellConfirmationMessage</a></td></tr>
@@ -205,6 +203,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:af6c5b42e11c36f814dccdacba5df41e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00880e49c13258aa24e9280353ee004b" id="r_a00880e49c13258aa24e9280353ee004b"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00880e49c13258aa24e9280353ee004b">editTooltip</a></td></tr>
 <tr class="separator:a00880e49c13258aa24e9280353ee004b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1880b9e13c6b447983088d5813596198" id="r_a1880b9e13c6b447983088d5813596198"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html">InMemoryPlayer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1880b9e13c6b447983088d5813596198">inMemoryPlayer</a></td></tr>
+<tr class="separator:a1880b9e13c6b447983088d5813596198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2acc8f65105d283d4b1d7047ec556c" id="r_a5b2acc8f65105d283d4b1d7047ec556c"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b2acc8f65105d283d4b1d7047ec556c">maxiPlayerRoleDescription</a></td></tr>
 <tr class="separator:a5b2acc8f65105d283d4b1d7047ec556c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17f217482958b028bbce3b40fe608e3b" id="r_a17f217482958b028bbce3b40fe608e3b"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17f217482958b028bbce3b40fe608e3b">maxiPlayerTooltip</a></td></tr>
@@ -231,8 +231,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a7e8d516348d565fa756908f7ad2dae15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f678d5ec946be4bad3612460e3be97" id="r_a36f678d5ec946be4bad3612460e3be97"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36f678d5ec946be4bad3612460e3be97">reduceTooltip</a></td></tr>
 <tr class="separator:a36f678d5ec946be4bad3612460e3be97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af01d90acd02e8f216020610c9cb41aa0" id="r_af01d90acd02e8f216020610c9cb41aa0"><td class="memItemLeft" align="right" valign="top">final ObjectProperty&lt; PlayerDto &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af01d90acd02e8f216020610c9cb41aa0">selectedPlayer</a> = new SimpleObjectProperty&lt;&gt;()</td></tr>
-<tr class="separator:af01d90acd02e8f216020610c9cb41aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -242,12 +240,12 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a8ed723a1864b6ad561268adcf3b3f6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ViewModel for managing player menu UI state and accessibility texts. </p>
-<p>Holds an observable list of players, the currently selected player, and provides localized StringBindings for UI accessibility, tooltips, role descriptions, and button texts.</p>
-<p>Uses <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_i18n.html" title="Singleton enum for internationalization (i18n) support.">I18n</a> singleton for localization with automatic updates on locale or selection changes. </p>
+<div class="textblock"><p>ViewModel managing player menu UI state and localized accessibility texts. </p>
+<p>Provides observable players list and reactive StringBindings for UI labels, tooltips, and roles, updated on locale or selection changes.</p>
+<p>Assumes selected player has a valid non-blank name as enforced upstream. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac92bade7f86feaa5644efb2ab4575a93" name="ac92bade7f86feaa5644efb2ab4575a93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac92bade7f86feaa5644efb2ab4575a93">&#9670;&#160;</a></span>MenuPlayerViewModel()</h2>
+<a id="a01acb237ab4001791933cde3047612bf" name="a01acb237ab4001791933cde3047612bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01acb237ab4001791933cde3047612bf">&#9670;&#160;</a></span>MenuPlayerViewModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +253,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MenuPlayerViewModel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html">CachedPlayer</a></td>          <td class="paramname"><span class="paramname"><em>inMemoryPlayer</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html">InMemoryPlayer</a></td>          <td class="paramname"><span class="paramname"><em>inMemoryPlayer</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -265,7 +263,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_ac92bade7f86feaa5644efb2ab4575a93_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_a01acb237ab4001791933cde3047612bf_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -384,7 +382,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_a74c09c6a0ee599311a4d665b4e86488b_cgraph.svg" width="100%" height="454"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_a74c09c6a0ee599311a4d665b4e86488b_cgraph.svg" width="540" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -581,7 +579,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Loads test players into the observable list. </p>
+<p>Loads players into the observable list. </p>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
@@ -734,14 +732,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the name of the currently selected player or empty if none. </p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_a062c453d8d6794a32f0f8246057d0604_cgraph.svg" width="100%" height="454"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p>Returns the name of the currently selected player. </p>
+<dl class="section return"><dt>Returns</dt><dd>the player name, guaranteed to be non-null and not blank </dd></dl>
 
 </div>
 </div>
@@ -875,28 +867,6 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a79ec105c9d6ca05d85204511e85900a4" name="a79ec105c9d6ca05d85204511e85900a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79ec105c9d6ca05d85204511e85900a4">&#9670;&#160;</a></span>inMemoryPlayer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html">CachedPlayer</a> fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.inMemoryPlayerer</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a77d0a7cb1b465020be2e928270563af2" name="a77d0a7cb1b465020be2e928270563af2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77d0a7cb1b465020be2e928270563af2">&#9670;&#160;</a></span>cellButtonAccessibleText</h2>
 
@@ -1018,6 +988,28 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.editTooltip</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1880b9e13c6b447983088d5813596198" name="a1880b9e13c6b447983088d5813596198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1880b9e13c6b447983088d5813596198">&#9670;&#160;</a></span>inMemoryPlayer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html">InMemoryPlayer</a> fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.inMemoryPlayer</td>
         </tr>
       </table>
   </td>
@@ -1363,28 +1355,6 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af01d90acd02e8f216020610c9cb41aa0" name="af01d90acd02e8f216020610c9cb41aa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af01d90acd02e8f216020610c9cb41aa0">&#9670;&#160;</a></span>selectedPlayer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final ObjectProperty&lt;PlayerDto&gt; fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.selectedPlayer = new SimpleObjectProperty&lt;&gt;()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/main/java/fr/softsf/sudokufx/viewmodel/<a class="el" href="_menu_player_view_model_8java.html">MenuPlayerViewModel.java</a></li>
 </ul>
@@ -1394,7 +1364,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html">MenuPlayerViewModel</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 13:02:57 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Jun 24 2025 09:59:49 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -20,7 +20,6 @@ var hierarchy =
     [ "Button", null, [
       [ "fr.softsf.sudokufx.view.component.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html", null ]
     ] ],
-    [ "fr.softsf.sudokufx.viewmodel.cache.CachedPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player.html", null ],
     [ "fr.softsf.sudokufx.navigation.Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", null ],
     [ "fr.softsf.sudokufx.enums.DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1enums_1_1_difficulty_level.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.enums.DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1enums_1_1_difficulty_level_test.html", null ],
@@ -71,6 +70,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.view.DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html", null ],
     [ "IOsFolderFactory", null, [
       [ "fr.softsf.sudokufx.config.os.LinuxFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_linux_folder_factory.html", null ],
       [ "fr.softsf.sudokufx.config.os.MacosFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_macos_folder_factory.html", null ],

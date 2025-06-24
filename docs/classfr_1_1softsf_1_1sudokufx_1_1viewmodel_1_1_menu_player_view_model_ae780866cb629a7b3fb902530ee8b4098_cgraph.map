@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.loadPlayers" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.loadPlayers">
-<area shape="rect" id="Node000001" title="Loads test players into the observable list." alt="" coords="5,81,232,124"/>
+<area shape="rect" id="Node000001" title="Loads players into the observable list." alt="" coords="5,81,232,124"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aee456e9687b1301a3d7559374d989855" title="Generates a sample PlayerDto instance for testing purposes." alt="" coords="280,73,525,132"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,100,264,100,264,105,232,105"/>
 <area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="828,5,1068,32"/>

@@ -9,8 +9,9 @@ var searchData=
   ['imageutils_6',['ImageUtils',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html',1,'fr::softsf::sudokufx::common::util']]],
   ['imainview_7',['IMainView',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html',1,'fr::softsf::sudokufx::common::interfaces']]],
   ['imenumapper_8',['IMenuMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
-  ['iplayerlanguagemapper_9',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
-  ['iplayermapper_10',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
-  ['isoftwaremapper_11',['ISoftwareMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_software_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
-  ['isplashscreenview_12',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::common::interfaces']]]
+  ['inmemoryplayer_9',['InMemoryPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
+  ['iplayerlanguagemapper_10',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
+  ['iplayermapper_11',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
+  ['isoftwaremapper_12',['ISoftwareMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_software_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
+  ['isplashscreenview_13',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::common::interfaces']]]
 ];

@@ -119,10 +119,10 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a28815d11f193ddb38d1b35e6462bcb08" id="r_a28815d11f193ddb38d1b35e6462bcb08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28815d11f193ddb38d1b35e6462bcb08">mapPlayerIdToPlayer</a> (Long playerId)</td></tr>
-<tr class="memdesc:a28815d11f193ddb38d1b35e6462bcb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> ID to a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> entity instance with only the ID set.  <br /></td></tr>
+<tr class="memdesc:a28815d11f193ddb38d1b35e6462bcb08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> ID to a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> entity with only the ID set.  <br /></td></tr>
 <tr class="separator:a28815d11f193ddb38d1b35e6462bcb08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb13752d60864c044a0080d9522a3b65" id="r_afb13752d60864c044a0080d9522a3b65"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb13752d60864c044a0080d9522a3b65">mapSelectedGame</a> (Set&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> &gt; games)</td></tr>
-<tr class="memdesc:afb13752d60864c044a0080d9522a3b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> from the given Set assumed to contain only selected games.  <br /></td></tr>
+<tr class="memdesc:afb13752d60864c044a0080d9522a3b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> from the set or null if null/empty.  <br /></td></tr>
 <tr class="separator:afb13752d60864c044a0080d9522a3b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -187,15 +187,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Converts a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> ID to a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> entity instance with only the ID set. </p>
-<p>This is useful for mapping DTO references to entities without fetching full data.</p>
+<p>Maps a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> ID to a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> entity with only the ID set. </p>
+<p>Returns null if the ID is null.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">playerId</td><td>the ID of the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a>; may be null. </td></tr>
+    <tr><td class="paramname">playerId</td><td>the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> ID, may be null </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> entity with the given ID set, or null if the input ID is null. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> entity or null </dd></dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -229,15 +229,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the first <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> from the given Set assumed to contain only selected games. </p>
-<p>Returns null if the Set is null or empty. Ordering is not guaranteed.</p>
+<p>Returns the first <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> from the set or null if null/empty. </p>
+<p>Order is not guaranteed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">games</td><td>Set of selected <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> entities, may be null or empty </td></tr>
+    <tr><td class="paramname">games</td><td>set of <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> entities, may be null or empty </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>first <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> in the Set, or null </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>first <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html">Game</a> or null </dd></dl>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -280,7 +280,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html">interfaces</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper.html">mapper</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html">MapperUtils</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 13:02:57 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Jun 24 2025 09:59:49 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

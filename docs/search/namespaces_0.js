@@ -28,5 +28,5 @@ var searchData=
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponent_3a_3alist_25',['list',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html',1,'fr::softsf::sudokufx::view::component']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponent_3a_3atoaster_26',['toaster',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster.html',1,'fr::softsf::sudokufx::view::component']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_27',['viewmodel',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html',1,'fr::softsf::sudokufx']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_3a_3acache_28',['cache',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache.html',1,'fr::softsf::sudokufx::viewmodel']]]
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_3a_3astate_28',['state',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html',1,'fr::softsf::sudokufx::viewmodel']]]
 ];

@@ -406,14 +406,37 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté. </p>
-<p>Facile : 35-45 cases cachées, possibilités théoriques de 0 à 13797, et pratique de 4800 à 16533 Moyen : 45-39 cases cachées, possibilités théoriques de 13797 à 27594, et pratique de 16533 à 28266 Difficile : 49 à 59 cases cachées, possibilités théoriques de 27594 à 41391, et pratique de 28266 à 40000</p>
+<p>Niveaux de difficulté :</p>
+<ul>
+<li>
+<b>Facile (1)</b> : 35-45 cases cachées, possibilités théoriques de 0 à 13 797, possibilités pratiques de 4 800 à 16 533. </li>
+<li>
+<b>Moyen (2)</b> : 45-49 cases cachées, possibilités théoriques de 13 797 à 27 594, possibilités pratiques de 16 533 à 28 266. </li>
+<li>
+<b>Difficile (3)</b> : 49-59 cases cachées, possibilités théoriques de 27 594 à 41 391, possibilités pratiques de 28 266 à 40 000. </li>
+</ul>
+<p>Le pourcentage de possibilités est calculé sur la base d'une plage allant de 4 800 (0%) à 40 000 (100%), indiquant la difficulté estimée de la grille à résoudre.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">niveau</td><td>Le niveau de difficulté (1 : facile, 2 : moyen, 3 : difficile). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Un tableau à trois dimensions contenant : La grille résolue. La grille à résoudre avec les cases cachées. Le pourcentage de possibilités de la grille à résoudre (la plage retenue va de 4800 0% à 40000 100%). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Un tableau à trois dimensions contenant : <ol>
+<li>
+La grille résolue (tableau d'entiers de taille NOMBRE_CASES). </li>
+<li>
+La grille à résoudre avec les cases cachées (tableau d'entiers de taille NOMBRE_CASES). </li>
+<li>
+Un tableau d'un seul entier représentant le pourcentage des possibilités de la grille à résoudre. </li>
+</ol>
+</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>si le niveau n’est pas compris entre 1 et 3 inclus. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1065,14 +1088,44 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Résout une grille de Sudoku en remplissant les cases vides avec des valeurs valides. </p>
-<p>Le processus de résolution inclut les étapes suivantes : 1. Calcule les possibilités pour chaque case de la grille. 2. Remplit la grille en utilisant une approche récursive : - Identifie la case avec le moins d'options disponibles. - Teste chaque valeur possible pour cette case. - Met à jour les possibilités des cases adjacentes en fonction des valeurs placées. - Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu'aucune solution ne soit trouvée.</p>
+<p>Le processus de résolution inclut les étapes suivantes :</p>
+<ol>
+<li>
+Vérifie que la grille n'est pas <code class="JavaDocCode">null</code> et contient exactement 81 cases. </li>
+<li>
+Calcule les possibilités pour chaque case de la grille. </li>
+<li>
+Remplit la grille en utilisant une approche récursive : <ul>
+<li>
+Identifie la case avec le moins d'options disponibles. </li>
+<li>
+Teste chaque valeur possible pour cette case. </li>
+<li>
+Met à jour les possibilités des cases adjacentes en fonction des valeurs placées. </li>
+<li>
+Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu'aucune solution ne soit trouvée. </li>
+</ul>
+</li>
+</ol>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grille</td><td>Tableau représentant la grille de Sudoku initiale, qui peut être vide ou partiellement remplie. </td></tr>
+    <tr><td class="paramname">grille</td><td>Tableau représentant la grille initiale de Sudoku. Il doit comporter exactement 81 éléments et ne doit pas être <code class="JavaDocCode">null</code>, sous peine de lever une <code><a class="el" href="">IllegalArgumentException</a></code>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Un tableau contenant deux éléments : - Le premier élément est 0 si la grille est générée avec succès et est cohérente, sinon -1. - Le deuxième élément est le pourcentage des possibilités, compris entre 0 et 100, ou 0 si la grille n'est pas cohérente. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Un tableau contenant deux éléments : <ul>
+<li>
+Le premier élément est 0 si la grille est générée avec succès et est cohérente, sinon -1. </li>
+<li>
+Le deuxième élément est le pourcentage des possibilités, compris entre 0 et 100, ou 0 si la grille n'est pas cohérente. </li>
+</ul>
+</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>si <code class="JavaDocCode">grille</code> est <code class="JavaDocCode">null</code> ou de taille différente de 81. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1322,8 +1375,8 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">            (<a class="code hl_variable" href="#af5574e4e6eb1ae83aed307a79473e897">MOYEN_MAX_CACHEES</a> + <a class="code hl_variable" href="#a395e4852c17ef149cfff3f7d38db91a3">DIFFICILE_MAX_CACHEES</a>) / 2</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_html_a395e4852c17ef149cfff3f7d38db91a3"><div class="ttname"><a href="#a395e4852c17ef149cfff3f7d38db91a3">fr.softsf.sudokufx.common.util.sudoku.GridMaster.DIFFICILE_MAX_CACHEES</a></div><div class="ttdeci">static final int DIFFICILE_MAX_CACHEES</div><div class="ttdef"><b>Definition</b> GridMaster.java:30</div></div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_html_af5574e4e6eb1ae83aed307a79473e897"><div class="ttname"><a href="#af5574e4e6eb1ae83aed307a79473e897">fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MAX_CACHEES</a></div><div class="ttdeci">static final int MOYEN_MAX_CACHEES</div><div class="ttdef"><b>Definition</b> GridMaster.java:28</div></div>
+<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_html_a395e4852c17ef149cfff3f7d38db91a3"><div class="ttname"><a href="#a395e4852c17ef149cfff3f7d38db91a3">fr.softsf.sudokufx.common.util.sudoku.GridMaster.DIFFICILE_MAX_CACHEES</a></div><div class="ttdeci">static final int DIFFICILE_MAX_CACHEES</div><div class="ttdef"><b>Definition</b> GridMaster.java:31</div></div>
+<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_html_af5574e4e6eb1ae83aed307a79473e897"><div class="ttname"><a href="#af5574e4e6eb1ae83aed307a79473e897">fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MAX_CACHEES</a></div><div class="ttdeci">static final int MOYEN_MAX_CACHEES</div><div class="ttdef"><b>Definition</b> GridMaster.java:29</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1557,7 +1610,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html">sudoku</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html">GridMaster</a></li>
-    <li class="footer">Generated on Mon Jun 16 2025 13:02:57 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Jun 24 2025 09:59:49 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
