@@ -11,10 +11,10 @@ import java.util.Set;
 import org.mapstruct.Named;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.CollectionUtils;
 
 import fr.softsf.sudokufx.model.Game;
 import fr.softsf.sudokufx.model.Player;
-import org.springframework.util.CollectionUtils;
 
 /** Utility class providing custom mapping methods for use with MapStruct. */
 public final class MapperUtils {
@@ -27,8 +27,7 @@ public final class MapperUtils {
     }
 
     /**
-     * Maps a Player ID to a Player entity with only the ID set.
-     * Returns null if the ID is null.
+     * Maps a Player ID to a Player entity with only the ID set. Returns null if the ID is null.
      *
      * @param playerId the Player ID, may be null
      * @return Player entity or null
@@ -43,8 +42,7 @@ public final class MapperUtils {
     }
 
     /**
-     * Returns the first Game from the set or null if null/empty.
-     * Order is not guaranteed.
+     * Returns the first Game from the set or null if null/empty. Order is not guaranteed.
      *
      * @param games set of Game entities, may be null or empty
      * @return first Game or null
