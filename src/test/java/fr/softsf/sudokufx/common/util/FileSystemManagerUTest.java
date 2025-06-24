@@ -24,7 +24,6 @@ import ch.qos.logback.core.read.ListAppender;
 
 import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.mock;
 
 class FileSystemManagerUTest {
     private final String suffix = DATA_FOLDER.getPath();
@@ -87,9 +86,19 @@ class FileSystemManagerUTest {
     }
 
     @Test
-    void givenNullPath_whenDeleteFile_thenNullPointerExceptionThrown() {
-        Path mockPath = mock(Path.class);
-        Throwable returnedThrowable = fileSystemManager.deleteFile(mockPath);
-        assertInstanceOf(NullPointerException.class, returnedThrowable);
+    void givenNullPath_whenDeleteFile_thenIllegalArgumentExceptionThrown() {
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class, () -> fileSystemManager.deleteFile(null));
+        assertTrue(exception.getMessage().contains("The path mustn't be null"));
+    }
+
+    @Test
+    void givenNullPath_whenDeleteDataFolderRecursively_thenIllegalArgumentExceptionThrown() {
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> fileSystemManager.deleteDataFolderRecursively(null));
+        assertTrue(exception.getMessage().contains("The folderPath mustn't be null"));
     }
 }

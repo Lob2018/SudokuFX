@@ -7,14 +7,20 @@ package fr.softsf.sudokufx.common.util;
 
 import java.nio.file.Path;
 
-/** Defines file system operations. */
+/**
+ * Defines file system operations related to the application's data management.
+ */
 public sealed interface IFileSystem permits FileSystemManager {
 
     /**
      * Recursively deletes the application's data folder and all its contents.
      *
-     * @param folderPath the path to the application's data folder
-     * @return {@code true} if the folder was successfully deleted; {@code false} otherwise
+     * <p>Validates the given path before deletion. Returns {@code true} if deletion
+     * succeeds; {@code false} otherwise.
+     *
+     * @param folderPath the path to the application's data folder; must not be {@code null}
+     * @return {@code true} if the folder and its contents were successfully deleted; {@code false} otherwise
+     * @throws IllegalArgumentException if {@code folderPath} is {@code null}
      */
     boolean deleteDataFolderRecursively(Path folderPath);
 }
