@@ -47,6 +47,19 @@ class DynamicFontSizeChangeE2ETest {
         assertEquals(6.57, dynamicFontSize.getCurrentFontSize(), 0.01);
     }
 
+    @Test
+    void givenNullScene_whenConstructDynamicFontSize_thenThrowsIllegalArgumentException() {
+        IllegalArgumentException thrown =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> {
+                            new DynamicFontSize(null);
+                        });
+        String expectedMessage = "The scene mustn't be null";
+        String actualMessage = thrown.getMessage();
+        assert actualMessage.contains(expectedMessage);
+    }
+
     @AfterEach
     void cleanup() throws TimeoutException {
         FxToolkit.cleanupStages();
