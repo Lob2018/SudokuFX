@@ -14,7 +14,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.enums.Paths;
+import fr.softsf.sudokufx.common.enums.Paths;
 
 /**
  * A styled JavaFX alert dialog with optional sizing and custom appearance. Applies a radial

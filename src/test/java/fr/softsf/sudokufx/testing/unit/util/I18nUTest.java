@@ -9,7 +9,7 @@ import java.util.Locale;
 
 import org.junit.jupiter.api.*;
 
-import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.common.enums.I18n;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

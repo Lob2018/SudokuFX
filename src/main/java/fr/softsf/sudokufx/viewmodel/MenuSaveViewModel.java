@@ -15,10 +15,10 @@ import javafx.collections.ObservableList;
 
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.GameLevelDto;
 import fr.softsf.sudokufx.dto.GridDto;
-import fr.softsf.sudokufx.enums.I18n;
 
 /**
  * ViewModel for managing backup menu UI state and accessibility texts.

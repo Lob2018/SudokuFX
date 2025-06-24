@@ -7,7 +7,7 @@ package fr.softsf.sudokufx.testing.unit.enums;
 
 import org.junit.jupiter.api.Test;
 
-import fr.softsf.sudokufx.enums.DifficultyLevel;
+import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 
 import static org.junit.jupiter.api.Assertions.*;
 

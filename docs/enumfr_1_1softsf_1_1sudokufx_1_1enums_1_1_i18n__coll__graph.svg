@@ -18,13 +18,13 @@
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 424)">
-<title>fr.softsf.sudokufx.enums.I18n</title>
+<title>fr.softsf.sudokufx.common.enums.I18n</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Singleton enum for internationalization (i18n) support.">
 <polygon fill="#999999" stroke="none" points="151.5,-420 0,-420 0,0 151.5,0 151.5,-420"/>
-<text text-anchor="start" x="10.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.I18n</text>
+<text text-anchor="start" x="10.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.I18n</text>
 <text text-anchor="start" x="4" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">INSTANCE</text>
 <text text-anchor="start" x="5.5" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

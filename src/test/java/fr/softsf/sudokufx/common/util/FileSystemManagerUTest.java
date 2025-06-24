@@ -22,7 +22,7 @@ import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 
-import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
+import static fr.softsf.sudokufx.common.enums.Paths.DATA_FOLDER;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 

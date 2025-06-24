@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.enums.MyRegex;
+import fr.softsf.sudokufx.common.enums.MyRegex;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -16,7 +16,7 @@ import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.config.MyLogbackConfig;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 
-import static fr.softsf.sudokufx.enums.Paths.DATABASE_MIGRATION_PATH;
+import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_MIGRATION_PATH;
 
 /**
  * Abstract configuration class for setting up the application's data source. This class provides

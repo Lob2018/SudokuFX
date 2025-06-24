@@ -11,8 +11,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.util.MyDateTime;
-import fr.softsf.sudokufx.enums.I18n;
 
 import static org.junit.jupiter.api.Assertions.*;
 

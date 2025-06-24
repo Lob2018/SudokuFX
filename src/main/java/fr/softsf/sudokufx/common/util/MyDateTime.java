@@ -11,8 +11,8 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Objects;
 
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import fr.softsf.sudokufx.enums.I18n;
 
 /** Enum singleton working with date and time operations. */
 public enum MyDateTime {

@@ -15,7 +15,7 @@ import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 
-import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
  * A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100).

@@ -14,11 +14,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
-import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.enums.Paths;
 
-import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
+import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 
 /**
  * Coordinator is a Spring-managed component that handles navigation and UI logic in a JavaFX

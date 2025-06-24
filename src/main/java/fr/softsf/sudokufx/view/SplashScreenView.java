@@ -26,13 +26,13 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
-import fr.softsf.sudokufx.enums.I18n;
 
-import static fr.softsf.sudokufx.enums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudokufx.enums.Paths.RESOURCES_CSS_PATH;
-import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
+import static fr.softsf.sudokufx.common.enums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudokufx.common.enums.Paths.RESOURCES_CSS_PATH;
+import static fr.softsf.sudokufx.common.enums.ScreenSize.DISPOSABLE_SIZE;
 import static javafx.scene.layout.Priority.ALWAYS;
 
 /**

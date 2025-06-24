@@ -12,9 +12,9 @@ import javafx.beans.property.*;
 
 import org.springframework.stereotype.Component;
 
-import fr.softsf.sudokufx.enums.DifficultyLevel;
-import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.enums.SecureRandomGenerator;
+import fr.softsf.sudokufx.common.enums.DifficultyLevel;
+import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 
 /**

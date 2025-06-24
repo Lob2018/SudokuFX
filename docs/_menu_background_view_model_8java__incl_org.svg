@@ -354,7 +354,7 @@
 <title>Node20</title>
 <g id="a_Node000020"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="2782.88,-26 2636.38,-26 2636.38,-6 2782.88,-6 2782.88,-26"/>
-<text text-anchor="middle" x="2709.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.I18n</text>
+<text text-anchor="middle" x="2709.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.I18n</text>
 </a>
 </g>
 </g>

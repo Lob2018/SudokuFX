@@ -17,7 +17,7 @@ import javafx.concurrent.Task;
 
 import org.springframework.stereotype.Component;
 
-import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.service.VersionService;
 
 /**

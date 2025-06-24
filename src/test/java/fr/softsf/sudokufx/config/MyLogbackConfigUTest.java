@@ -23,8 +23,8 @@ import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
 
-import static fr.softsf.sudokufx.enums.LogBackTxt.ASCII_LOGO;
-import static fr.softsf.sudokufx.enums.LogBackTxt.OPTIMIZING;
+import static fr.softsf.sudokufx.common.enums.LogBackTxt.ASCII_LOGO;
+import static fr.softsf.sudokufx.common.enums.LogBackTxt.OPTIMIZING;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;

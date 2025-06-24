@@ -10,7 +10,7 @@ import javafx.beans.binding.StringBinding;
 
 import org.springframework.stereotype.Component;
 
-import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
  * MenuHiddenViewModel (not final) handles the business logic for the "Show Menu" button's

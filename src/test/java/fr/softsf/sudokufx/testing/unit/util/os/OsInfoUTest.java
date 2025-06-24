@@ -7,8 +7,8 @@ package fr.softsf.sudokufx.testing.unit.util.os;
 
 import org.junit.jupiter.api.Test;
 
-import static fr.softsf.sudokufx.enums.OsName.OS_NAME;
-import static fr.softsf.sudokufx.enums.Paths.USER_HOME;
+import static fr.softsf.sudokufx.common.enums.OsName.OS_NAME;
+import static fr.softsf.sudokufx.common.enums.Paths.USER_HOME;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class OsInfoUTest {

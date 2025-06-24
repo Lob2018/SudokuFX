@@ -12,7 +12,7 @@ import javafx.beans.property.SimpleIntegerProperty;
 
 import org.springframework.stereotype.Component;
 
-import fr.softsf.sudokufx.enums.I18n;
+import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
  * ViewModel for managing "solve" menu UI state and accessibility texts.

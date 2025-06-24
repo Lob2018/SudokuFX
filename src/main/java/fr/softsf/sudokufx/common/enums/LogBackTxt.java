@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.enums;
+package fr.softsf.sudokufx.common.enums;
 
 /** Utility enum for log messages and ASCII art. */
 public enum LogBackTxt {

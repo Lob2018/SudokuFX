@@ -136,7 +136,7 @@
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1078.12,-26 931.62,-26 931.62,-6 1078.12,-6 1078.12,-26"/>
-<text text-anchor="middle" x="1004.88" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.enums.I18n</text>
+<text text-anchor="middle" x="1004.88" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.I18n</text>
 </a>
 </g>
 </g>

@@ -14,8 +14,8 @@ import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.scene.paint.Color;
 
+import fr.softsf.sudokufx.common.enums.ScreenSize;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import fr.softsf.sudokufx.enums.ScreenSize;
 
 /**
  * Utility class providing helper methods for common image-related operations in JavaFX.

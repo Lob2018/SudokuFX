@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 
 import org.junit.jupiter.api.Test;
 
-import fr.softsf.sudokufx.enums.MyRegex;
+import fr.softsf.sudokufx.common.enums.MyRegex;
 
 import static org.junit.jupiter.api.Assertions.*;
 

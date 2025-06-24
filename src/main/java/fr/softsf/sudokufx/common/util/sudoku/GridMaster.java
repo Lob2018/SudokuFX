@@ -12,8 +12,8 @@ import java.util.stream.IntStream;
 
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import fr.softsf.sudokufx.enums.SecureRandomGenerator;
 
 /** Provides essential functionalities for generating and solving Sudoku puzzles. */
 @Component

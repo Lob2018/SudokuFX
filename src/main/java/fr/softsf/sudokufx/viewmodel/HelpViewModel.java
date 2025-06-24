@@ -11,10 +11,10 @@ import javafx.scene.control.Alert;
 
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.ScreenSize;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
-import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.enums.ScreenSize;
 import fr.softsf.sudokufx.view.component.MyAlert;
 
 /**

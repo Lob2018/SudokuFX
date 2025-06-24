@@ -18,7 +18,7 @@ import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
-import static fr.softsf.sudokufx.enums.ScreenSize.*;
+import static fr.softsf.sudokufx.common.enums.ScreenSize.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

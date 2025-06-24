@@ -7,10 +7,10 @@ package fr.softsf.sudokufx.testing.unit.util;
 
 import org.junit.jupiter.api.Test;
 
-import static fr.softsf.sudokufx.enums.Paths.*;
-import static fr.softsf.sudokufx.enums.ToastLevels.*;
-import static fr.softsf.sudokufx.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
-import static fr.softsf.sudokufx.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
+import static fr.softsf.sudokufx.common.enums.Paths.*;
+import static fr.softsf.sudokufx.common.enums.ToastLevels.*;
+import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
+import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 class MyEnumsUTest {

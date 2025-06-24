@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 import org.openjdk.jmh.annotations.*;
 import org.openjdk.jmh.infra.Blackhole;
 
-import fr.softsf.sudokufx.enums.SecureRandomGenerator;
+import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;
 
 @BenchmarkMode(Mode.AverageTime) // Mesure le temps moyen d'exécution de la méthode benchmarkée
 @OutputTimeUnit(

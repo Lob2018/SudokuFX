@@ -16,8 +16,8 @@ import javafx.collections.ObservableList;
 
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.dto.*;
-import fr.softsf.sudokufx.enums.I18n;
 import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
 
 /**

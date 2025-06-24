@@ -31,6 +31,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.common.util.FileSystemManager;
@@ -38,10 +39,9 @@ import fr.softsf.sudokufx.common.util.IFileSystem;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
-import fr.softsf.sudokufx.enums.I18n;
 
-import static fr.softsf.sudokufx.enums.Paths.LOGO_SUDO_PNG_PATH;
-import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
+import static fr.softsf.sudokufx.common.enums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudokufx.common.enums.ScreenSize.DISPOSABLE_SIZE;
 
 /**
  * View class for the crash screen without business logic. This class is responsible for displaying

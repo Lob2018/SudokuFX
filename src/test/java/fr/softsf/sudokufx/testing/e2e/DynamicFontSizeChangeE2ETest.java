@@ -20,7 +20,7 @@ import org.testfx.framework.junit5.Start;
 
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
 
-import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
+import static fr.softsf.sudokufx.common.enums.ScreenSize.DISPOSABLE_SIZE;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(ApplicationExtension.class)

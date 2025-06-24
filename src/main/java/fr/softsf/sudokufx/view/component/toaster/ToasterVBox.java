@@ -17,8 +17,8 @@ import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
-import fr.softsf.sudokufx.enums.I18n;
-import fr.softsf.sudokufx.enums.ToastLevels;
+import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.ToastLevels;
 
 /**
  * A custom VBox component for displaying toast notifications. This class extends JavaFX's VBox and

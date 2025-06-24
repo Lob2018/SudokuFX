@@ -8,8 +8,8 @@ package fr.softsf.sudokufx.config.os;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import fr.softsf.sudokufx.enums.OsName;
-import fr.softsf.sudokufx.enums.Paths;
+import fr.softsf.sudokufx.common.enums.OsName;
+import fr.softsf.sudokufx.common.enums.Paths;
 
 /** Configuration class for managing OS-specific dynamically. */
 @Configuration

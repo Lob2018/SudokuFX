@@ -18,9 +18,9 @@ import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 
-import static fr.softsf.sudokufx.enums.LogBackTxt.ASCII_LOGO;
-import static fr.softsf.sudokufx.enums.LogBackTxt.OPTIMIZING;
-import static fr.softsf.sudokufx.enums.Paths.*;
+import static fr.softsf.sudokufx.common.enums.LogBackTxt.ASCII_LOGO;
+import static fr.softsf.sudokufx.common.enums.LogBackTxt.OPTIMIZING;
+import static fr.softsf.sudokufx.common.enums.Paths.*;
 
 /**
  * Configuration class for Logback logging framework. This class sets up and configures Logback for
