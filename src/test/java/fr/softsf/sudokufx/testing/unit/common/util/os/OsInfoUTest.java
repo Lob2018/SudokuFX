@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.testing.unit.util.os;
+package fr.softsf.sudokufx.testing.unit.common.util.os;
 
 import org.junit.jupiter.api.Test;
 

@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.service;
+package fr.softsf.sudokufx.testing.integration.service;
 
 import java.io.IOException;
 import java.net.http.HttpClient;
@@ -29,6 +29,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.common.util.MyDateTime;
+import fr.softsf.sudokufx.service.VersionService;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;

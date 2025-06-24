@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.testing.e2e;
+package fr.softsf.sudokufx.testing.e2e.common.util;
 
 import java.util.concurrent.TimeoutException;
 import javafx.scene.Scene;

@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.testing.unit.enums;
+package fr.softsf.sudokufx.testing.unit.common.enums;
 
 import org.junit.jupiter.api.Test;
 
