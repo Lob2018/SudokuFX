@@ -31,10 +31,9 @@ class GridMasterUTest {
     @ParameterizedTest
     @ValueSource(ints = {-1, -100, 300})
     void givenInvalidLevel_whenCreateGrids_thenThrowsIllegalArgumentException(int level) {
-        IllegalArgumentException exception = assertThrows(
-                IllegalArgumentException.class,
-                () -> iGridMaster.creerLesGrilles(level)
-        );
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class, () -> iGridMaster.creerLesGrilles(level));
         assertTrue(exception.getMessage().contains("The grid level must be between 1 and 3"));
     }
 
@@ -105,6 +104,24 @@ class GridMasterUTest {
                     .pollDelay(600, TimeUnit.MILLISECONDS)
                     .until(() -> true);
         }
+    }
+
+    @Test
+    void givenNullGrid_whenResoudreLaGrille_thenThrowsIllegalArgumentException() {
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class, () -> gridMaster.resoudreLaGrille(null));
+        assertTrue(exception.getMessage().contains("null"));
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {0, 100})
+    void givenInvalidGridSize_whenResoudreLaGrille_thenThrowsIllegalArgumentException(int size) {
+        int[] grille = new int[size];
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class, () -> gridMaster.resoudreLaGrille(grille));
+        assertTrue(exception.getMessage().contains(String.valueOf(size)));
     }
 
     @Test
