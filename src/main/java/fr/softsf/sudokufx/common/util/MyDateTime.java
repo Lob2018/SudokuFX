@@ -9,7 +9,9 @@ import java.time.Clock;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
+import java.util.Objects;
 
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.enums.I18n;
 
 /** Enum singleton working with date and time operations. */
@@ -34,12 +36,17 @@ public enum MyDateTime {
     }
 
     /**
-     * Formats the given LocalDateTime according to the current language setting.
+     * Formats the given {@link LocalDateTime} based on the current locale.
      *
-     * @param updatedAt The LocalDateTime object to be formatted.
-     * @return A string representing the formatted date and time based on the current locale.
+     * @param updatedAt the date-time to format; must not be {@code null}
+     * @return the formatted date-time string
+     * @throws IllegalArgumentException if {@code updatedAt} is {@code null}
      */
     public String getFormatted(LocalDateTime updatedAt) {
+        if (Objects.isNull(updatedAt)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The updatedAt mustn't be null");
+        }
         DateTimeFormatter formatter =
                 I18n.INSTANCE.getLanguage().equals("fr") ? frenchFormatter : englishFormatter;
         return updatedAt.format(formatter);

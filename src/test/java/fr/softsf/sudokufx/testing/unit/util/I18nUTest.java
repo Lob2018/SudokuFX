@@ -7,34 +7,50 @@ package fr.softsf.sudokufx.testing.unit.util;
 
 import java.util.Locale;
 
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
+import org.junit.jupiter.api.*;
 
 import fr.softsf.sudokufx.enums.I18n;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class I18nUTest {
 
-    @Test
-    @Order(0)
-    void givenDefaultLocale_whenGetLanguage_thenReturnsFrench() {
-        String fr = I18n.INSTANCE.getLanguage();
-        assertEquals("fr", fr);
+    private String originalLang;
+    private Locale originalDefault;
+
+    @BeforeEach
+    void saveOriginalLanguageAndLocale() {
+        originalLang = I18n.INSTANCE.getLanguage();
+        originalDefault = Locale.getDefault();
+    }
+
+    @AfterEach
+    void restoreOriginalLanguageAndLocale() {
+        if ("fr".equalsIgnoreCase(originalLang)) {
+            I18n.INSTANCE.setLocaleBundle("FR");
+        } else if ("en".equalsIgnoreCase(originalLang)) {
+            I18n.INSTANCE.setLocaleBundle("EN");
+        } else {
+            I18n.INSTANCE.setLanguageBasedOnTheHostEnvironment();
+        }
+        Locale.setDefault(originalDefault);
     }
 
     @Test
-    @Order(1)
-    void givenDefaultLocale_whenGetValue_thenReturnsFrenchValue() {
+    void givenFrenchLocale_whenGetLanguage_thenReturnsFrench() {
+        I18n.INSTANCE.setLocaleBundle("FR");
+        String lang = I18n.INSTANCE.getLanguage();
+        assertEquals("fr", lang);
+    }
+
+    @Test
+    void givenFrenchLocale_whenGetValue_thenReturnsFrenchValue() {
+        I18n.INSTANCE.setLocaleBundle("FR");
         String testFR = I18n.INSTANCE.getValue("test");
         assertEquals("testFR", testFR);
     }
 
     @Test
-    @Order(2)
     void givenEnglishLocale_whenGetValue_thenReturnsEnglishValue() {
         I18n.INSTANCE.setLocaleBundle("EN");
         String testEN = I18n.INSTANCE.getValue("test");
@@ -42,14 +58,13 @@ class I18nUTest {
     }
 
     @Test
-    @Order(3)
     void givenEnglishLocale_whenGetLanguage_thenReturnsEnglish() {
-        String en = I18n.INSTANCE.getLanguage();
-        assertEquals("en", en);
+        I18n.INSTANCE.setLocaleBundle("EN");
+        String lang = I18n.INSTANCE.getLanguage();
+        assertEquals("en", lang);
     }
 
     @Test
-    @Order(4)
     void givenEmptyLocale_whenGetValue_thenReturnsFrenchValue() {
         I18n.INSTANCE.setLocaleBundle("");
         String testFR = I18n.INSTANCE.getValue("test");
@@ -57,8 +72,7 @@ class I18nUTest {
     }
 
     @Test
-    @Order(5)
-    void givenHostEnvironmentWithEnglishLocale_whenGetValue_thenReturnsEnglishValu() {
+    void givenHostEnvironmentWithEnglishLocale_whenGetValue_thenReturnsEnglishValue() {
         Locale.setDefault(Locale.ENGLISH);
         I18n.INSTANCE.setLanguageBasedOnTheHostEnvironment();
         String testEN = I18n.INSTANCE.getValue("test");
@@ -66,7 +80,6 @@ class I18nUTest {
     }
 
     @Test
-    @Order(6)
     void givenHostEnvironmentWithFrenchLocale_whenGetValue_thenReturnsFrenchValue() {
         Locale.setDefault(Locale.FRENCH);
         I18n.INSTANCE.setLanguageBasedOnTheHostEnvironment();
@@ -75,14 +88,12 @@ class I18nUTest {
     }
 
     @Test
-    @Order(7)
     void givenNullKey_whenGetValue_thenReturnsErrorString() {
         String result = I18n.INSTANCE.getValue(null);
         assertEquals("???null???", result);
     }
 
     @Test
-    @Order(8)
     void givenMissingKey_whenGetValue_thenReturnsMissingKeyString() {
         String result = I18n.INSTANCE.getValue("missingKey");
         assertEquals("???missing:missingKey???", result);

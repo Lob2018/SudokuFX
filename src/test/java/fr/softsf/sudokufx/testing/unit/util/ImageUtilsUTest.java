@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.common.util;
+package fr.softsf.sudokufx.testing.unit.util;
 
 import java.io.File;
 import java.util.concurrent.TimeoutException;
@@ -18,6 +18,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
+
+import fr.softsf.sudokufx.common.util.ImageUtils;
 
 import static org.junit.jupiter.api.Assertions.*;
 

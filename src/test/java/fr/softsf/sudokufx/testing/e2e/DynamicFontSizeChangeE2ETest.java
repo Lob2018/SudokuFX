@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.common.util;
+package fr.softsf.sudokufx.testing.e2e;
 
 import java.util.concurrent.TimeoutException;
 import javafx.scene.Scene;
@@ -17,6 +17,8 @@ import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
+
+import fr.softsf.sudokufx.common.util.DynamicFontSize;
 
 import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
 import static org.junit.jupiter.api.Assertions.*;
