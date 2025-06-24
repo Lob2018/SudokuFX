@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.common.util;
 
 import java.io.File;
+import java.util.Objects;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
@@ -13,11 +14,24 @@ import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.scene.paint.Color;
 
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.enums.ScreenSize;
 
 /**
- * Utility class for image-related operations, including color conversion, image validation,
- * resizing calculation, and creating JavaFX BackgroundImage objects.
+ * Utility class providing helper methods for common image-related operations in JavaFX.
+ *
+ * <p>Includes support for:
+ *
+ * <ul>
+ *   <li>Converting 32-bit integer colors to JavaFX {@link Color}
+ *   <li>Validating image file formats
+ *   <li>Calculating scale factors to resize images to fit layout constraints
+ *   <li>Creating {@link BackgroundImage} instances with custom layout properties
+ * </ul>
+ *
+ * <p>All methods throw {@link IllegalArgumentException} when passed {@code null} arguments.
+ *
+ * <p>This class is not instantiable and is intended to be used statically.
  */
 public class ImageUtils {
 
@@ -37,13 +51,18 @@ public class ImageUtils {
     }
 
     /**
-     * Checks whether the given file is a valid image based on its extension. Supported formats are
-     * JPG, JPEG, PNG, and BMP (case-insensitive).
+     * Determines if the given file has a supported image extension.
      *
-     * @param file The file to validate.
-     * @return {@code true} if the file has a valid image extension; {@code false} otherwise.
+     * <p>Accepted formats: JPG, JPEG, PNG, BMP (case-insensitive).
+     *
+     * @param file the file to check; must not be {@code null}
+     * @return {@code true} if the file has a valid image extension; {@code false} otherwise
+     * @throws IllegalArgumentException if {@code file} is {@code null}
      */
     public boolean isValidImage(File file) {
+        if (Objects.isNull(file)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The file mustn't be null");
+        }
         String fileName = file.getName().toLowerCase();
         return fileName.endsWith(".jpg")
                 || fileName.endsWith(".jpeg")
@@ -52,13 +71,18 @@ public class ImageUtils {
     }
 
     /**
-     * Calculates the scale factor to resize an image so that it fits within a predefined grid pane
-     * size (3 times the visual width and height).
+     * Calculates the scale factor needed to resize the given image so it fits within a predefined
+     * grid pane area (3 times the visual width and height).
      *
-     * @param tempImage The image to be resized.
-     * @return The scale factor to apply for resizing.
+     * @param tempImage the image to resize; must not be {@code null}
+     * @return the scale factor to apply for resizing the image to fit within the target grid pane
+     * @throws IllegalArgumentException if {@code tempImage} is {@code null}
      */
     public double calculateImageScaleFactor(Image tempImage) {
+        if (Objects.isNull(tempImage)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The image to be resized mustn't be null");
+        }
         double imageWidth = tempImage.getWidth();
         double imageHeight = tempImage.getHeight();
         double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
@@ -67,14 +91,20 @@ public class ImageUtils {
     }
 
     /**
-     * Creates a JavaFX {@link BackgroundImage} from the provided resized image. The background
-     * image is centered and set to not repeat, with sizing based on one-third of the image
-     * dimensions.
+     * Creates a JavaFX {@link BackgroundImage} from the provided image.
      *
-     * @param resizedImage The image to use as the background.
-     * @return A {@link BackgroundImage} configured with the given image.
+     * <p>The background image is centered, non-repeating, and sized to one-third of the original
+     * image's width and height.
+     *
+     * @param resizedImage the image to use as the background; must not be {@code null}
+     * @return a {@link BackgroundImage} configured with the given image
+     * @throws IllegalArgumentException if {@code resizedImage} is {@code null}
      */
     public BackgroundImage createBackgroundImage(Image resizedImage) {
+        if (Objects.isNull(resizedImage)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The background image mustn't be null");
+        }
         return new BackgroundImage(
                 resizedImage,
                 BackgroundRepeat.NO_REPEAT,
