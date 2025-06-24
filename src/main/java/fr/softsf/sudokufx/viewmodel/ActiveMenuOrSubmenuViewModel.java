@@ -10,7 +10,7 @@ import javafx.beans.property.SimpleObjectProperty;
 
 import org.springframework.stereotype.Component;
 
-import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import java.util.Objects;
 
 /**
  * ViewModel component managing the currently active menu or submenu. Provides observable state for
@@ -40,16 +40,12 @@ public class ActiveMenuOrSubmenuViewModel {
     }
 
     /**
-     * Updates the active menu.
+     * Sets the active menu. If the provided value is {@code null},
+     * the default value {@link ActiveMenu#MAXI} is used instead.
      *
-     * @param menu the menu to activate
-     * @throws IllegalArgumentException if menu is null
+     * @param menu the menu to activate, or {@code null} to use the default
      */
     public void setActiveMenu(ActiveMenu menu) {
-        if (menu == null) {
-            ExceptionTools.INSTANCE.logAndThrowIllegalArgument(
-                    "ActiveMenu cannot be null. Please provide a valid menu value.");
-        }
-        activeMenu.set(menu);
+        activeMenu.set(Objects.requireNonNullElse(menu, ActiveMenu.MAXI));
     }
 }
