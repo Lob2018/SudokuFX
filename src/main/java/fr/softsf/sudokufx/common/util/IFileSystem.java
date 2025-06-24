@@ -7,18 +7,14 @@ package fr.softsf.sudokufx.common.util;
 
 import java.nio.file.Path;
 
-/**
- * Interface defining a method to recursively deletes a folder and its contents. The folder path
- * must end with the specified String.
- */
+/** Defines file system operations. */
 public sealed interface IFileSystem permits FileSystemManager {
+
     /**
-     * Recursively deletes a folder and its contents if the folder path ends with the specified
-     * string.
+     * Recursively deletes the application's data folder and all its contents.
      *
-     * @param folderPath The path of the folder to be deleted.
-     * @param mustEndWithThat The string that the folder path must end with for deletion to proceed.
-     * @return true if the folder was successfully deleted, false otherwise.
+     * @param folderPath the path to the application's data folder
+     * @return {@code true} if the folder was successfully deleted; {@code false} otherwise
      */
-    boolean deleteFolderRecursively(Path folderPath, String mustEndWithThat);
+    boolean deleteDataFolderRecursively(Path folderPath);
 }

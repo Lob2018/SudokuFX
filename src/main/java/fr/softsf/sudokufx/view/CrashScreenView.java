@@ -40,7 +40,6 @@ import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
 import fr.softsf.sudokufx.enums.I18n;
 
-import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
 import static fr.softsf.sudokufx.enums.Paths.LOGO_SUDO_PNG_PATH;
 import static fr.softsf.sudokufx.enums.ScreenSize.DISPOSABLE_SIZE;
 
@@ -91,7 +90,7 @@ public final class CrashScreenView implements IMainView {
     private void resetButtonClick() {
         LOG.info("▓▓▓▓ The user choose to reset the application data");
         Path pathToDelete = Paths.get(I_OS_FOLDER_FACTORY.getOsDataFolderPath());
-        if (I_FILE_SYSTEM.deleteFolderRecursively(pathToDelete, DATA_FOLDER.getPath())) {
+        if (I_FILE_SYSTEM.deleteDataFolderRecursively(pathToDelete)) {
             LOG.info("▓▓▓▓ The directory is deleted, triggering Platform.exit()");
         } else {
             LOG.info("▓▓▓▓ The directory isn't deleted, triggering Platform.exit()");

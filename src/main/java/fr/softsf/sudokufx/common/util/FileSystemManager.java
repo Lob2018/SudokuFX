@@ -13,17 +13,21 @@ import java.util.stream.Stream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
+
 /**
- * Manages file system operations, particularly folder deletion. This class implements the
- * IFileSystem interface.
+ * Manages file system operations related to the application's data folder.
+ *
+ * <p>This implementation of {@link IFileSystem} handles recursive deletion of the application's
+ * data directory, with appropriate logging and path validation.
  */
 public final class FileSystemManager implements IFileSystem {
 
     private static final Logger LOG = LoggerFactory.getLogger(FileSystemManager.class);
 
     @Override
-    public boolean deleteFolderRecursively(final Path folderPath, final String mustEndWithThat) {
-        if (folderPath.endsWith(mustEndWithThat)) {
+    public boolean deleteDataFolderRecursively(final Path folderPath) {
+        if (folderPath.endsWith(DATA_FOLDER.getPath())) {
             LOG.info("▓▓▓▓ The directory path is correct :{}", folderPath);
             try (Stream<Path> stream = Files.walk(folderPath)) {
                 stream.sorted(Comparator.reverseOrder()).forEach(this::deleteFile);
@@ -40,9 +44,8 @@ public final class FileSystemManager implements IFileSystem {
     /**
      * Attempts to delete a single file or directory.
      *
-     * @param path The path of the file or directory to be deleted.
-     * @return null if the file was successfully deleted, otherwise returns the Exception that
-     *     occurred.
+     * @param path the path of the file or directory to delete
+     * @return {@code null} if the deletion succeeded; otherwise the exception that occurred
      */
     Throwable deleteFile(final Path path) {
         try {

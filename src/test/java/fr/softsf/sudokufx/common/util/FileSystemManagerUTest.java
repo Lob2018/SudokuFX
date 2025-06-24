@@ -22,11 +22,12 @@ import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 
+import static fr.softsf.sudokufx.enums.Paths.DATA_FOLDER;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 
 class FileSystemManagerUTest {
-    private final String suffix = "suffix";
+    private final String suffix = DATA_FOLDER.getPath();
     private final FileSystemManager fileSystemManager = new FileSystemManager();
     @TempDir Path tempDir;
     private Path path1;
@@ -56,15 +57,15 @@ class FileSystemManagerUTest {
     }
 
     @Test
-    void givenValidFolder_whenDeleteFolderRecursively_thenDeletionSucceeds() {
-        boolean result = fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix);
+    void givenValidFolder_whenDeleteDataFolderRecursively_thenDeletionSucceeds() {
+        boolean result = fileSystemManager.deleteDataFolderRecursively(path1.getParent());
         assertTrue(result);
     }
 
     @Test
-    void givenInvalidDirectoryPath_whenDeleteFolderRecursively_thenDeletionFails() {
+    void givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenDeletionFails() {
         boolean result =
-                fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix + "/toto.txt");
+                fileSystemManager.deleteDataFolderRecursively(path1.getParent().subpath(0, 5));
         assertFalse(result);
     }
 
@@ -74,7 +75,7 @@ class FileSystemManagerUTest {
         try (MockedStatic<Files> mocked = Mockito.mockStatic(Files.class)) {
             mocked.when(() -> Files.walk(path1.getParent()))
                     .thenThrow(new NullPointerException("Test NullPointerException"));
-            fileSystemManager.deleteFolderRecursively(path1.getParent(), suffix);
+            fileSystemManager.deleteDataFolderRecursively(path1.getParent());
             result =
                     logWatcher
                             .list
