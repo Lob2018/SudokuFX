@@ -55,7 +55,6 @@ class JVMApplicationPropertiesUTest {
         assertFalse(
                 MyRegex.INSTANCE.isValidatedByRegex(
                         invalidVersion, Pattern.compile(VERSION_REGEX)));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("", Pattern.compile(VERSION_REGEX)));
     }
 
     @Test

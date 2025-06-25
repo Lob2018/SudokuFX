@@ -39,12 +39,10 @@ class GenerateSecretUTest {
     void givenInvalidSecrets_whenIsValidatedByRegex_thenReturnsFalse() {
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
         String[] invalidSecrets = {
-            "",
             "LLLLLLLLLLLLLLLLLLLLLLLL",
             "llllllllllllllllllllllll",
             "@@@@@@@@@@@@@@@@@@@@@@@@",
             "111111111111111111111111",
-            "                        ",
             "uCQD1x$^UeWfn#OAb!YjYFHo",
             "-CQD1x$^UeWfn#OAb!Y1YFH1",
             "9uCQD1xi^UeWfntOAbmY1YFH",

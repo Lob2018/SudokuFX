@@ -8,13 +8,13 @@ package fr.softsf.sudokufx.common.enums;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-
-import io.micrometer.common.util.StringUtils;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import io.micrometer.common.util.StringUtils;
 
 /**
  * Singleton enum for internationalization (i18n) support. Manages language resources and locale

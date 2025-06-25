@@ -11,6 +11,8 @@ import java.util.regex.Pattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
+
 /**
  * Utility class for managing and validating text against precompiled regular expressions. This
  * class includes methods for password validation, semantic versioning, alphanumeric string
@@ -62,22 +64,23 @@ public enum MyRegex {
     }
 
     /**
-     * Validates the given text against the specified regular expression pattern. If the provided
-     * {@code pattern} is equal to the internal {@code secretPattern}, this method performs a
-     * stricter password validation by delegating to {@link #isValidPassword(String)}. Otherwise, it
-     * performs a generic regex match using the provided pattern.
+     * Validates the given text against the specified regex pattern. If {@code pattern} equals the
+     * internal secret pattern, a stricter password validation is performed via {@link
+     * #isValidPassword(String)}.
      *
-     * @param text The text to validate; must not be {@code null}.
-     * @param pattern The regular expression pattern to validate against; must not be {@code null}.
-     * @return {@code true} if the text matches the regex pattern or meets the password criteria;
-     *     {@code false} otherwise.
-     * @throws NullPointerException if {@code text} or {@code pattern} is {@code null}.
+     * @param text the text to validate; must not be {@code null} or blank
+     * @param pattern the regex pattern to validate against; must not be {@code null}
+     * @return {@code true} if the text matches the pattern or meets password criteria; {@code
+     *     false} otherwise
+     * @throws IllegalArgumentException if {@code text} is blank or {@code pattern} is {@code null}
      */
     public boolean isValidatedByRegex(final String text, final Pattern pattern) {
-        Objects.requireNonNull(
-                text, "MyRegex>isValidatedByRegex : The text to validate must not be null.");
-        Objects.requireNonNull(
-                pattern, "MyRegex>isValidatedByRegex : The pattern must not be null.");
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                text, "The text to validate must not be null or blank, but was " + text);
+        if (Objects.isNull(pattern)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The pattern must not be null");
+        }
         if (pattern.equals(SECRET_PATTERN)) {
             return isValidPassword(text);
         }
@@ -85,24 +88,25 @@ public enum MyRegex {
     }
 
     /**
-     * Validates a secure password against strict security criteria:
+     * Validates a password string against strict security rules:
      *
      * <ul>
-     *   <li>Exactly 24 characters in length.
-     *   <li>Contains only letters (uppercase and lowercase), digits, and allowed special characters
+     *   <li>Must be exactly 24 characters long.
+     *   <li>Contains only letters (uppercase and lowercase), digits, and special characters
      *       {@code @#$%^&()!}.
-     *   <li>At least 2 lowercase letters.
-     *   <li>At least 2 uppercase letters.
-     *   <li>At least 2 digits.
-     *   <li>At least 2 special characters from {@code @#$%^&()!}.
+     *   <li>Includes at least 2 lowercase letters.
+     *   <li>Includes at least 2 uppercase letters.
+     *   <li>Includes at least 2 digits.
+     *   <li>Includes at least 2 special characters from {@code @#$%^&()!}.
      * </ul>
      *
-     * @param password The password string to validate; must not be {@code null}.
-     * @return {@code true} if the password meets all the above criteria; {@code false} otherwise.
-     * @throws NullPointerException if {@code password} is {@code null}.
+     * @param password the password to validate; must not be {@code null} or blank
+     * @return {@code true} if the password meets all criteria, {@code false} otherwise
+     * @throws IllegalArgumentException if {@code password} is {@code null} or blank
      */
     private boolean isValidPassword(final String password) {
-        Objects.requireNonNull(password, "MyRegex>isValidPassword : Password must not be null.");
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                password, "Password must not be null or blank, but was " + password);
         if (!SECRET_PATTERN.matcher(password).matches()) return false;
         long lowerCaseCount = password.chars().filter(Character::isLowerCase).count();
         long upperCaseCount = password.chars().filter(Character::isUpperCase).count();
