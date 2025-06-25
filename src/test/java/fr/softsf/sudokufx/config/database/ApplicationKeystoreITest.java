@@ -5,44 +5,85 @@
  */
 package fr.softsf.sudokufx.config.database;
 
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
+import java.nio.file.Path;
+
+import org.junit.jupiter.api.io.TempDir;
+import org.junit.jupiter.api.*;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.config.os.IOsFolderFactory;
+import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 @SpringBootTest(classes = {SudoMain.class})
 class ApplicationKeystoreITest {
 
-    private static String passInit;
-    private static String userInit;
-    private final ApplicationKeystore keystore;
+    @TempDir static Path tempDir;
 
-    @Autowired
-    public ApplicationKeystoreITest(ApplicationKeystore keystore) {
-        this.keystore = keystore;
+    private ApplicationKeystore keystore;
+
+    @BeforeEach
+    void setupMocks() {
+        IOsFolderFactory iCurrentIOsFolderFactory =
+                spy(new OsFolderFactoryManager().iOsFolderFactory());
+        GenerateSecret generateSecret = spy(new GenerateSecret());
+        doReturn(tempDir.toString()).when(iCurrentIOsFolderFactory).getOsDataFolderPath();
+        doReturn("fixedUsernameSecret")
+                .doReturn("fixedPasswordSecret")
+                .when(generateSecret)
+                .generatePassaySecret();
+        keystore = new ApplicationKeystore(iCurrentIOsFolderFactory, generateSecret);
     }
 
     @Test
-    @Order(0)
+    void givenNullIOsFolderFactory_whenConstruct_thenThrowIllegalArgumentException() {
+        GenerateSecret generateSecret = new GenerateSecret();
+        IllegalArgumentException ex =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> {
+                            new ApplicationKeystore(null, generateSecret);
+                        });
+        assertEquals("The iOsFolderFactory must not be null", ex.getMessage());
+    }
+
+    @Test
+    void givenNullGenerateSecret_whenConstruct_thenThrowIllegalArgumentException() {
+        IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
+        IllegalArgumentException ex =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> {
+                            new ApplicationKeystore(iOsFolderFactory, null);
+                        });
+        assertEquals("The generateSecret must not be null", ex.getMessage());
+    }
+
+    @Test
     void givenNewKeystore_whenSetupKeystore_thenCredentialsInitialized() {
         keystore.setupApplicationKeystore();
-        passInit = keystore.getPassword();
-        userInit = keystore.getUsername();
-        assertEquals(passInit.length(), userInit.length(), 24);
+        String user = keystore.getUsername();
+        String pass = keystore.getPassword();
+        assertNotNull(user, "Username should not be null");
+        assertNotNull(pass, "Password should not be null");
+        assertEquals("fixedUsernameSecret", user, "Username should match generated secret");
+        assertEquals("fixedPasswordSecret", pass, "Password should match generated secret");
+        assertEquals(19, user.length(), "Username length should match expected");
+        assertEquals(19, pass.length(), "Password length should match expected");
     }
 
     @Test
-    @Order(1)
     void givenExistingKeystore_whenSetupKeystore_thenCredentialsMatch() {
         keystore.setupApplicationKeystore();
-        String pass = keystore.getPassword();
+        String initialUser = keystore.getUsername();
+        String initialPass = keystore.getPassword();
+        keystore.setupApplicationKeystore();
         String user = keystore.getUsername();
-        assertEquals(pass.length(), user.length(), 24);
-        assertEquals(user, userInit);
-        assertEquals(pass, passInit);
+        String pass = keystore.getPassword();
+        assertEquals(initialUser, user, "Username should be the same as initial");
+        assertEquals(initialPass, pass, "Password should be the same as initial");
     }
 }

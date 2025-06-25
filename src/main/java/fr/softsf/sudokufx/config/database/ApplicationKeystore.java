@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.security.cert.CertificateException;
 import java.security.*;
+import java.util.Objects;
 import java.util.UUID;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
@@ -19,13 +20,14 @@ import javax.crypto.spec.SecretKeySpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
+import org.springframework.util.ObjectUtils;
 
-import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 
 /**
- * Manages the application's keystore for the secure storage of a symmetric key and database
- * credentials, handling their creation, loading, and encryption.
+ * Manages the application's keystore for secure storage of a symmetric key and database
+ * credentials. Ensures dependencies are validated at construction to guarantee correct setup.
  */
 @Component
 final class ApplicationKeystore implements IKeystore {
@@ -50,22 +52,39 @@ final class ApplicationKeystore implements IKeystore {
     private String password;
 
     public ApplicationKeystore(IOsFolderFactory iOsFolderFactory, GenerateSecret generateSecret) {
+        if (Objects.isNull(iOsFolderFactory)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The iOsFolderFactory must not be null");
+        }
+        if (Objects.isNull(generateSecret)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The generateSecret must not be null");
+        }
         this.iOsFolderFactory = iOsFolderFactory;
         this.generateSecret = generateSecret;
     }
 
     /**
-     * Write data to the keystore file
+     * Writes the keystore content to a file.
      *
-     * @param ks The Keystore
-     * @param keystoreFileName The Keystore filename
-     * @param pwdArray The keystore password
+     * @param ks the keystore to save (must not be null)
+     * @param keystoreFileName the output file path (must not be null or blank)
+     * @throws IllegalArgumentException if any parameter is invalid
      */
-    @ExcludedFromCoverageReportGenerated
-    private static void writeTheKeystore(
-            final KeyStore ks, final String keystoreFileName, final char[] pwdArray) {
+    private static void writeTheKeystore(final KeyStore ks, final String keystoreFileName) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                keystoreFileName,
+                "keystoreFileName must not be null or blank, but was " + keystoreFileName);
+        if (Objects.isNull(ks)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The keystore must not be null");
+        }
+        if (ObjectUtils.isEmpty(ApplicationKeystore.pwdArray)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The pwdArray must not be null or empty");
+        }
         try (FileOutputStream fos = new FileOutputStream(keystoreFileName)) {
-            ks.store(fos, pwdArray);
+            ks.store(fos, ApplicationKeystore.pwdArray);
         } catch (Exception e) {
             LOG.error("██ Exception catch inside writeTheKeystore/fos : {}", e.getMessage(), e);
         }
@@ -95,7 +114,6 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /** Create or update the Keystore */
-    @ExcludedFromCoverageReportGenerated
     private void createOrUpdateKeystore() {
         try (FileOutputStream fos = new FileOutputStream(keystoreFilePath, true)) {
             ks.load(null, pwdArray);
@@ -109,7 +127,6 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /** Load the Keystore */
-    @ExcludedFromCoverageReportGenerated
     private void loadKeyStore() {
         try (FileInputStream fileInputStream = new FileInputStream(keystoreFilePath)) {
             ks.load(fileInputStream, pwdArray);
@@ -123,7 +140,6 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /** Check the symmetric key presence */
-    @ExcludedFromCoverageReportGenerated
     private void symmetricKey() {
         try {
             if (ks.containsAlias(SYMMETRIC_KEY_ALIAS)) {
@@ -141,7 +157,6 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /** Get the symmetric key and set encryption service */
-    @ExcludedFromCoverageReportGenerated
     private void symmetricKeyIsInKeystore() {
         try {
             KeyStore.SecretKeyEntry entry =
@@ -161,7 +176,6 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /** Set the symmetric key and set encryption service */
-    @ExcludedFromCoverageReportGenerated
     private void symmetricKeyNotInKeystore() {
         try {
             KeyGenerator keyGen = KeyGenerator.getInstance("AES");
@@ -179,12 +193,14 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Get or set credentials by alias
+     * Retrieves credentials if the alias exists in the keystore; otherwise, generates and stores
+     * them.
      *
-     * @param alias The alias to use
+     * @param alias the keystore alias for the credential
+     * @throws IllegalArgumentException if alias is null or blank
      */
-    @ExcludedFromCoverageReportGenerated
     private void credentials(final String alias) {
+        validateAliasNotBlank(alias);
         try {
             if (ks.containsAlias(alias)) {
                 getCredentials(alias);
@@ -200,11 +216,11 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Set credential by alias
+     * Generates and encrypts a credential for the given alias, then stores it securely in the
+     * keystore.
      *
-     * @param alias The alias
+     * @param alias the keystore alias for the credential
      */
-    @ExcludedFromCoverageReportGenerated
     private void setCredentials(final String alias) {
         try {
             String secret =
@@ -227,11 +243,11 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Get credential by alias
+     * Retrieves and decrypts the credential associated with the given alias from the keystore,
+     * updating the corresponding field.
      *
-     * @param alias The alias
+     * @param alias the keystore alias for the credential
      */
-    @ExcludedFromCoverageReportGenerated
     private void getCredentials(final String alias) {
         try {
             KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(pwdArray));
@@ -261,13 +277,28 @@ final class ApplicationKeystore implements IKeystore {
     }
 
     /**
-     * Add alias:secret in the Keystore
+     * Validates that the given alias is not null, empty, or blank.
      *
-     * @param alias The alias
-     * @param secretKey The secret
+     * @param alias the string to validate
+     * @throws IllegalArgumentException if alias is null, empty, or blank
      */
-    @ExcludedFromCoverageReportGenerated
+    private static void validateAliasNotBlank(String alias) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                alias, "Alias must not be null or blank, but was " + alias);
+    }
+
+    /**
+     * Stores the given secret key in the keystore under the specified alias.
+     *
+     * @param alias the alias for the secret key
+     * @param secretKey the secret key to store; must not be null
+     * @throws IllegalArgumentException if alias is null/blank or secretKey is null
+     */
     private void addToKeystore(final String alias, final SecretKey secretKey) {
+        validateAliasNotBlank(alias);
+        if (Objects.isNull(secretKey)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("SecretKey must not be null");
+        }
         KeyStore.SecretKeyEntry secret = new KeyStore.SecretKeyEntry(secretKey);
         KeyStore.ProtectionParameter entryPassword = new KeyStore.PasswordProtection(pwdArray);
         try {
@@ -279,7 +310,7 @@ final class ApplicationKeystore implements IKeystore {
                     e.getMessage(),
                     e);
         }
-        writeTheKeystore(ks, keystoreFilePath, pwdArray);
+        writeTheKeystore(ks, keystoreFilePath);
     }
 
     @Override
