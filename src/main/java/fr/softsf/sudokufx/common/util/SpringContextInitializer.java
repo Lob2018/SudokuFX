@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.common.util;
 
+import java.util.Objects;
 import javafx.concurrent.Task;
 
 import org.springframework.boot.SpringApplication;
@@ -12,24 +13,33 @@ import org.springframework.boot.SpringApplication;
 import com.gluonhq.ignite.spring.SpringContext;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /**
- * Handles asynchronous initialization of the Spring application context using a JavaFX Task.
- * Provides methods to create and run the initialization task in a background thread.
+ * Manages asynchronous initialization of the Spring application context via JavaFX Tasks, providing
+ * methods to create and run these tasks in background threads.
  */
 public class SpringContextInitializer {
     private final SpringContext context;
 
     public SpringContextInitializer(SpringContext context) {
+        if (Objects.isNull(context)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The context must not be null");
+        }
         this.context = context;
     }
 
     /**
      * Starts the given JavaFX Task in a new background thread.
      *
-     * @param task the initialization task to run
+     * @param task the initialization task to run; must not be null
+     * @throws IllegalArgumentException if {@code task} is null
      */
     public void runInitializationTask(Task<Void> task) {
+        if (Objects.isNull(task)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The task must not be null");
+        }
         new Thread(task).start();
     }
 

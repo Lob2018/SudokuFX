@@ -16,11 +16,36 @@ import com.gluonhq.ignite.spring.SpringContext;
 
 import fr.softsf.sudokufx.common.util.SpringContextInitializer;
 
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(ApplicationExtension.class)
 class SpringContextInitializerUTest {
+
+    @Test
+    void givenNullContext_whenConstructing_thenThrowsIllegalArgumentException() {
+        IllegalArgumentException thrown =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> {
+                            new SpringContextInitializer(null);
+                        });
+        assertEquals("The context must not be null", thrown.getMessage());
+    }
+
+    @Test
+    void givenNullTask_whenRunInitializationTask_thenThrowsIllegalArgumentException() {
+        SpringContext context = mock(SpringContext.class);
+        SpringContextInitializer initializer = new SpringContextInitializer(context);
+        IllegalArgumentException thrown =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> {
+                            initializer.runInitializationTask(null);
+                        });
+        assertEquals("The task must not be null", thrown.getMessage());
+    }
 
     @Test
     void givenMockedSpringContext_whenRunInitializationTask_thenInitIsCalled()
