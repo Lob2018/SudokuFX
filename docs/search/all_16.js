@@ -9,6 +9,6 @@ var searchData=
   ['windowsfolderfactory_2ejava_6',['WindowsFolderFactory.java',['../_windows_folder_factory_8java.html',1,'']]],
   ['windowsintendedpathdatafolder_7',['windowsIntendedPathDataFolder',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#aff5abd31b0bae46c90c4243612737392',1,'fr::softsf::sudokufx::config::os::OsFolderFactoryManager']]],
   ['windowsintendedpathlogsfolder_8',['windowsIntendedPathLogsFolder',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#a3fe31de18898bbe2bdd983ec771cd76d',1,'fr::softsf::sudokufx::config::os::OsFolderFactoryManager']]],
-  ['writethekeystore_9',['writeTheKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a0e501fbe6c171c85658b7600afd03470',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
+  ['writethekeystore_9',['writeTheKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a9714968659205027206115325bebd480',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
   ['wrong_5fos_5ffor_5ftests_10',['WRONG_OS_FOR_TESTS',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a0011b09c530f076b09df8213d4407098',1,'fr::softsf::sudokufx::common::enums::OsName']]]
 ];

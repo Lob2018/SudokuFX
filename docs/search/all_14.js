@@ -10,7 +10,6 @@ var searchData=
   ['urls_2ejava_7',['Urls.java',['../_urls_8java.html',1,'']]],
   ['useful_20links_8',['Useful links',['../index.html#Useful_links',1,'']]],
   ['user_5fhome_9',['USER_HOME',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a44a8d5d795ade5614fc15804cb2ee684',1,'fr::softsf::sudokufx::common::enums::Paths']]],
-  ['userinit_10',['userInit',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html#a985cbd89b434f7d6689a355296800779',1,'fr::softsf::sudokufx::config::database::ApplicationKeystoreITest']]],
-  ['username_11',['username',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aec1e881af292875cf6b72940c9753b45',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
-  ['username_5falias_12',['USERNAME_ALIAS',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a0bb7d54a1c64945bfbf4026865a57363',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]]
+  ['username_10',['username',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aec1e881af292875cf6b72940c9753b45',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
+  ['username_5falias_11',['USERNAME_ALIAS',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a0bb7d54a1c64945bfbf4026865a57363',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]]
 ];

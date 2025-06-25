@@ -56,6 +56,7 @@ var annotated_dup =
           [ "config", "namespacefr_1_1softsf_1_1sudokufx_1_1config.html", [
             [ "database", "namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1database.html", [
               [ "AbstractDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config" ],
+              [ "AbstractDataSourceConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test" ],
               [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore" ],
               [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test" ],
               [ "DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds" ],
@@ -120,7 +121,7 @@ var annotated_dup =
             [ "integration", null, [
               [ "common", null, [
                 [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums.html", [
-                  [ "MyEnumsITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test" ]
+                  [ "ScreenSizeITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test" ]
                 ] ]
               ] ],
               [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html", [
@@ -131,7 +132,7 @@ var annotated_dup =
               [ "common", null, [
                 [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums.html", [
                   [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test" ],
-                  [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test" ],
+                  [ "MyRegexTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test" ],
                   [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test" ]
                 ] ],
                 [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception.html", [

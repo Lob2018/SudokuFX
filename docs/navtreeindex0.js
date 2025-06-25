@@ -1,9 +1,10 @@
 var NAVTREEINDEX0 =
 {
 "_abstract_data_source_config_8java.html":[3,0,1,0,0,0,0,0,2,0,0],
+"_abstract_data_source_config_u_test_8java.html":[3,0,1,1,0,0,0,0,1,0,0],
 "_active_menu_or_submenu_view_model_8java.html":[3,0,1,0,0,0,0,0,9,1],
 "_application_keystore_8java.html":[3,0,1,0,0,0,0,0,2,0,1],
-"_application_keystore_i_test_8java.html":[3,0,1,1,0,0,0,0,1,0,0],
+"_application_keystore_i_test_8java.html":[3,0,1,1,0,0,0,0,1,0,1],
 "_background_8java.html":[3,0,1,0,0,0,0,0,4,0],
 "_background_dto_8java.html":[3,0,1,0,0,0,0,0,3,1],
 "_background_repository_8java.html":[3,0,1,0,0,0,0,0,6,0],
@@ -31,7 +32,7 @@ var NAVTREEINDEX0 =
 "_game_level_repository_8java.html":[3,0,1,0,0,0,0,0,6,1],
 "_game_repository_8java.html":[3,0,1,0,0,0,0,0,6,2],
 "_generate_secret_8java.html":[3,0,1,0,0,0,0,0,2,0,5],
-"_generate_secret_u_test_8java.html":[3,0,1,1,0,0,0,0,1,0,1],
+"_generate_secret_u_test_8java.html":[3,0,1,1,0,0,0,0,1,0,2],
 "_grid_8java.html":[3,0,1,0,0,0,0,0,4,3],
 "_grid_dto_8java.html":[3,0,1,0,0,0,0,0,3,4],
 "_grid_master_8java.html":[3,0,1,0,0,0,0,0,1,4,0,0],
@@ -82,7 +83,6 @@ var NAVTREEINDEX0 =
 "_my_alert_8java.html":[3,0,1,0,0,0,0,0,8,0,2],
 "_my_date_time_8java.html":[3,0,1,0,0,0,0,0,1,4,5],
 "_my_date_time_u_test_8java.html":[3,0,1,1,0,0,0,0,2,2,0,2,4],
-"_my_enums_i_test_8java.html":[3,0,1,1,0,0,0,0,2,1,0,0,0],
 "_my_enums_u_test_8java.html":[3,0,1,1,0,0,0,0,2,2,0,2,5],
 "_my_logback_config_8java.html":[3,0,1,0,0,0,0,0,2,4],
 "_my_logback_config_u_test_8java.html":[3,0,1,1,0,0,0,0,1,3],
@@ -106,8 +106,9 @@ var NAVTREEINDEX0 =
 "_player_service_8java.html":[3,0,1,0,0,0,0,0,7,1],
 "_possibility_stars_h_box_8java.html":[3,0,1,0,0,0,0,0,8,0,3],
 "_screen_size_8java.html":[3,0,1,0,0,0,0,0,1,1,6],
+"_screen_size_i_test_8java.html":[3,0,1,1,0,0,0,0,2,1,0,0,0],
 "_secret_key_encryption_service_a_e_s_g_c_m_8java.html":[3,0,1,0,0,0,0,0,2,0,8],
-"_secret_key_encryption_service_a_e_s_g_c_m_u_test_8java.html":[3,0,1,1,0,0,0,0,1,0,2],
+"_secret_key_encryption_service_a_e_s_g_c_m_u_test_8java.html":[3,0,1,1,0,0,0,0,1,0,3],
 "_secure_random_generator_8java.html":[3,0,1,0,0,0,0,0,1,1,7],
 "_secure_random_generator_u_test_8java.html":[3,0,1,1,0,0,0,0,2,2,0,0,2],
 "_software_8java.html":[3,0,1,0,0,0,0,0,4,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#afd030db3674fffb19e66a4e8a1788c3d":[2,0,0,0,0,1,4,4,0],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html":[1,0,0,0,0,1,4,6],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html":[2,0,0,0,0,1,4,6],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html#a1d70b1c8db446b32e9547d071bb6d663":[1,0,0,0,0,1,4,6,0],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html#a1d70b1c8db446b32e9547d071bb6d663":[2,0,0,0,0,1,4,6,0]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html#a1d70b1c8db446b32e9547d071bb6d663":[1,0,0,0,0,1,4,6,0]
 };

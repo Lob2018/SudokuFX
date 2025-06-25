@@ -1,5 +1,7 @@
 var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test =
 [
+    [ "givenBlankKey_whenGetValue_thenReturnsErrorString", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html#a7250d8c6f5d5229cd116b0b770163623", null ],
+    [ "givenEmptyKey_whenGetValue_thenReturnsErrorString", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html#afc03025eac4d9554481d79455462349f", null ],
     [ "givenEmptyLocale_whenGetValue_thenReturnsFrenchValue", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html#acf70ac14f3a133fe6d2a63e926e8c86f", null ],
     [ "givenEnglishLocale_whenGetLanguage_thenReturnsEnglish", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html#ade625badcd487fe5aad2dda431938dcc", null ],
     [ "givenEnglishLocale_whenGetValue_thenReturnsEnglishValue", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html#ae3107cf7bd0f7ac93e7f982846b390a3", null ],

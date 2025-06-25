@@ -1,6 +1,7 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1database =
 [
     [ "AbstractDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config" ],
+    [ "AbstractDataSourceConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test" ],
     [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore" ],
     [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test" ],
     [ "DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds" ],

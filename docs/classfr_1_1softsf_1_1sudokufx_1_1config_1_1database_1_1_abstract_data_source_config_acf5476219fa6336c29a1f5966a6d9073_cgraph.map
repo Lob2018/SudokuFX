@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig.hikariDataSource" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig.hikariDataSource">
+<area shape="rect" id="Node000001" title="Creates and configures the main DataSource for the application." alt="" coords="5,5,287,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74" title="Configure et retourne un HikariConfig avec les paramètres de connexion et pool." alt="" coords="335,5,606,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,24,319,24,319,29,287,29"/>
+</map>

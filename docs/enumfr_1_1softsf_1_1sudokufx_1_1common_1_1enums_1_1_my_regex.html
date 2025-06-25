@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a822e83233da27d21fe8f5954dd32d3" id="r_a9a822e83233da27d21fe8f5954dd32d3"><td class="memItemLeft" align="right" valign="top">Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a822e83233da27d21fe8f5954dd32d3">getVersionPattern</a> ()</td></tr>
 <tr class="separator:a9a822e83233da27d21fe8f5954dd32d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e52b7027a3e57d2616e255ea0c68874" id="r_a8e52b7027a3e57d2616e255ea0c68874"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e52b7027a3e57d2616e255ea0c68874">isValidatedByRegex</a> (final String text, final Pattern pattern)</td></tr>
-<tr class="memdesc:a8e52b7027a3e57d2616e255ea0c68874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the given text against the specified regular expression pattern.  <br /></td></tr>
+<tr class="memdesc:a8e52b7027a3e57d2616e255ea0c68874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the given text against the specified regex pattern.  <br /></td></tr>
 <tr class="separator:a8e52b7027a3e57d2616e255ea0c68874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -137,7 +137,7 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a3cba29299fcf22555fcd6751c1f69771" id="r_a3cba29299fcf22555fcd6751c1f69771"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3cba29299fcf22555fcd6751c1f69771">isValidPassword</a> (final String password)</td></tr>
-<tr class="memdesc:a3cba29299fcf22555fcd6751c1f69771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a secure password against strict security criteria:  <br /></td></tr>
+<tr class="memdesc:a3cba29299fcf22555fcd6751c1f69771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a password string against strict security rules:  <br /></td></tr>
 <tr class="separator:a3cba29299fcf22555fcd6751c1f69771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
@@ -232,19 +232,20 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Validates the given text against the specified regular expression pattern. </p>
-<p>If the provided <code class="JavaDocCode">pattern</code> is equal to the internal <code class="JavaDocCode">secretPattern</code>, this method performs a stricter password validation by delegating to <code><a class="el" href="#a3cba29299fcf22555fcd6751c1f69771">isValidPassword(String)</a></code>. Otherwise, it performs a generic regex match using the provided pattern.</p>
+<p>Validates the given text against the specified regex pattern. </p>
+<p>If <code class="JavaDocCode">pattern</code> equals the internal secret pattern, a stricter password validation is performed via <code><a class="el" href="#a3cba29299fcf22555fcd6751c1f69771">isValidPassword(String)</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>The text to validate; must not be <code class="JavaDocCode">null</code>. </td></tr>
-    <tr><td class="paramname">pattern</td><td>The regular expression pattern to validate against; must not be <code class="JavaDocCode">null</code>. </td></tr>
+    <tr><td class="paramname">text</td><td>the text to validate; must not be <code class="JavaDocCode">null</code> or blank </td></tr>
+    <tr><td class="paramname">pattern</td><td>the regex pattern to validate against; must not be <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if the text matches the regex pattern or meets the password criteria; <code class="JavaDocCode">false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if the text matches the pattern or meets password criteria; <code class="JavaDocCode"><br/>
+    false</code> otherwise </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">text</code> or <code class="JavaDocCode">pattern</code> is <code class="JavaDocCode">null</code>. </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">text</code> is blank or <code class="JavaDocCode">pattern</code> is <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -281,31 +282,31 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Validates a secure password against strict security criteria: </p>
+<p>Validates a password string against strict security rules: </p>
 <ul>
 <li>
-Exactly 24 characters in length. </li>
+Must be exactly 24 characters long. </li>
 <li>
-Contains only letters (uppercase and lowercase), digits, and allowed special characters <code class="JavaDocCode">@#$%^&amp;()!</code>. </li>
+Contains only letters (uppercase and lowercase), digits, and special characters <code class="JavaDocCode">@#$%^&amp;()!</code>. </li>
 <li>
-At least 2 lowercase letters. </li>
+Includes at least 2 lowercase letters. </li>
 <li>
-At least 2 uppercase letters. </li>
+Includes at least 2 uppercase letters. </li>
 <li>
-At least 2 digits. </li>
+Includes at least 2 digits. </li>
 <li>
-At least 2 special characters from <code class="JavaDocCode">@#$%^&amp;()!</code>. </li>
+Includes at least 2 special characters from <code class="JavaDocCode">@#$%^&amp;()!</code>. </li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">password</td><td>The password string to validate; must not be <code class="JavaDocCode">null</code>. </td></tr>
+    <tr><td class="paramname">password</td><td>the password to validate; must not be <code class="JavaDocCode">null</code> or blank </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if the password meets all the above criteria; <code class="JavaDocCode">false</code> otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if the password meets all criteria, <code class="JavaDocCode">false</code> otherwise </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">password</code> is <code class="JavaDocCode">null</code>. </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">password</code> is <code class="JavaDocCode">null</code> or blank </td></tr>
   </table>
   </dd>
 </dl>
@@ -395,7 +396,7 @@ At least 2 special characters from <code class="JavaDocCode">@#$%^&amp;()!</code
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
 <div class="line">            Pattern.compile(<span class="stringliteral">&quot;^[a-zA-Z0-9&quot;</span> + <a class="code hl_variable" href="#a61699365f8c6a077b23d5926fc3fd35e">SPECIAL_CHARACTERS</a> + <span class="stringliteral">&quot;]{24}$&quot;</span>)</div>
-<div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex_html_a61699365f8c6a077b23d5926fc3fd35e"><div class="ttname"><a href="#a61699365f8c6a077b23d5926fc3fd35e">fr.softsf.sudokufx.common.enums.MyRegex.SPECIAL_CHARACTERS</a></div><div class="ttdeci">static final String SPECIAL_CHARACTERS</div><div class="ttdoc">Allowed special characters for password validation.</div><div class="ttdef"><b>Definition</b> MyRegex.java:28</div></div>
+<div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex_html_a61699365f8c6a077b23d5926fc3fd35e"><div class="ttname"><a href="#a61699365f8c6a077b23d5926fc3fd35e">fr.softsf.sudokufx.common.enums.MyRegex.SPECIAL_CHARACTERS</a></div><div class="ttdeci">static final String SPECIAL_CHARACTERS</div><div class="ttdoc">Allowed special characters for password validation.</div><div class="ttdef"><b>Definition</b> MyRegex.java:30</div></div>
 </div><!-- fragment -->
 <p>Precompiled regex pattern for validating passwords. </p>
 <p>Requirements: - Only letters (lowercase/uppercase), digits, and special characters #$%^&amp;()! are allowed. - Exactly 24 characters in total. </p>
@@ -462,7 +463,7 @@ At least 2 special characters from <code class="JavaDocCode">@#$%^&amp;()!</code
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums.html">enums</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html">MyRegex</a></li>
-    <li class="footer">Generated on Tue Jun 24 2025 20:14:02 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Jun 25 2025 19:19:45 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

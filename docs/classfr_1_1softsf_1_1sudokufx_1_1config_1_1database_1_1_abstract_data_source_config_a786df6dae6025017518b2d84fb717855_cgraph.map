@@ -1,6 +1,8 @@
 <map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig.flyway" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig.flyway">
-<area shape="rect" id="Node000001" title="Configures Flyway with a specified location for migration scripts." alt="" coords="5,29,229,72"/>
+<area shape="rect" id="Node000001" title="Configures Flyway database migration tool." alt="" coords="5,29,229,72"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="61,29,59,19,68,10,87,5,117,3,149,5,168,11,167,16,148,10,117,8,88,10,71,15,64,21,66,28"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#acf5476219fa6336c29a1f5966a6d9073" title="Creates and configures the main DataSource for the application." alt="" coords="277,29,558,72"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="229,48,261,48,261,53,229,53"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74" title="Configure et retourne un HikariConfig avec les paramètres de connexion et pool." alt="" coords="606,29,877,72"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="558,48,590,48,590,53,558,53"/>
 </map>

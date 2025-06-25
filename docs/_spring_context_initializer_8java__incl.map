@@ -1,11 +1,15 @@
 <map id="src/main/java/fr/softsf/sudokufx/common/util/SpringContextInitializer.java" name="src/main/java/fr/softsf/sudokufx/common/util/SpringContextInitializer.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="273,5,462,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,159,147"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,67,135,117,133,112,282,62"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="182,112,355,155"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="340,66,302,103,298,100,336,62"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="379,112,553,155"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="398,62,436,100,433,103,395,66"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="577,120,763,147"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="458,62,617,112,615,117,457,67"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="413,5,601,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,121,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,56,280,82,133,115,120,118,119,113,132,109,279,77,412,50"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="145,120,298,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="423,67,274,117,273,112,421,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="322,112,494,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="480,66,442,103,438,100,476,62"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="519,112,692,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="538,62,576,100,572,103,534,66"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="717,120,902,147"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="598,62,757,112,755,117,596,67"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="926,112,1168,155"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="602,50,917,106,916,111,601,55"/>
 </map>

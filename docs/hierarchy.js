@@ -1,10 +1,12 @@
 var hierarchy =
 [
     [ "fr.softsf.sudokufx.config.database.AbstractDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html", [
+      [ "fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.TestDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test_1_1_test_data_source_config.html", null ],
       [ "fr.softsf.sudokufx.config.database.DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds.html", null ],
       [ "fr.softsf.sudokufx.config.database.DataSourceConfigDefault", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_default.html", null ],
       [ "fr.softsf.sudokufx.config.database.DataSourceConfigTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_test.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel.ActiveMenu", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", null ],
     [ "Alert", null, [
@@ -117,12 +119,11 @@ var hierarchy =
     [ "fr.softsf.sudokufx.viewmodel.MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", null ],
     [ "fr.softsf.sudokufx.common.util.MyDateTime", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.MyDateTimeUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html", null ],
-    [ "fr.softsf.sudokufx.testing.integration.common.enums.MyEnumsITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html", null ],
     [ "fr.softsf.sudokufx.config.MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html", null ],
     [ "fr.softsf.sudokufx.config.MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.enums.MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html", null ],
-    [ "fr.softsf.sudokufx.testing.unit.common.enums.MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.common.enums.MyRegexTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test.html", null ],
     [ "fr.softsf.sudokufx.config.ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html", null ],
     [ "fr.softsf.sudokufx.config.os.OsFolderFactoryManager", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html", null ],
     [ "fr.softsf.sudokufx.config.os.OsFolderFactoryManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test.html", null ],
@@ -137,6 +138,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.PlayerLanguage.PlayerLanguageBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_1_1_player_language_builder.html", null ],
     [ "fr.softsf.sudokufx.service.PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html", null ],
     [ "fr.softsf.sudokufx.common.enums.ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", null ],
+    [ "fr.softsf.sudokufx.testing.integration.common.enums.ScreenSizeITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test.html", null ],
     [ "fr.softsf.sudokufx.config.database.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.enums.SecureRandomGenerator", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_secure_random_generator.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.enums.SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html", null ],

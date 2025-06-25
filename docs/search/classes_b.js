@@ -18,10 +18,9 @@ var searchData=
   ['myalert_15',['MyAlert',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html',1,'fr::softsf::sudokufx::view::component']]],
   ['mydatetime_16',['MyDateTime',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html',1,'fr::softsf::sudokufx::common::util']]],
   ['mydatetimeutest_17',['MyDateTimeUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
-  ['myenumsitest_18',['MyEnumsITest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_my_enums_i_test.html',1,'fr::softsf::sudokufx::testing::integration::common::enums']]],
-  ['myenumsutest_19',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
-  ['mylogbackconfig_20',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::config']]],
-  ['mylogbackconfigutest_21',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::config']]],
-  ['myregex_22',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::enums']]],
-  ['myregexutest_23',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]]
+  ['myenumsutest_18',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
+  ['mylogbackconfig_19',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::config']]],
+  ['mylogbackconfigutest_20',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::config']]],
+  ['myregex_21',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::enums']]],
+  ['myregextest_22',['MyRegexTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]]
 ];

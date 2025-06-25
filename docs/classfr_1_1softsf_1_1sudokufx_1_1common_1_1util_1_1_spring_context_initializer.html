@@ -105,7 +105,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_sp
 </div><!--header-->
 <div class="contents">
 
-<p>Handles asynchronous initialization of the Spring application context using a JavaFX Task.  
+<p>Manages asynchronous initialization of the Spring application context via JavaFX Tasks, providing methods to create and run these tasks in background threads.  
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.common.util.SpringContextInitializer:</div>
@@ -132,8 +132,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a527f0898149cc382a18fc679cf0a9b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles asynchronous initialization of the Spring application context using a JavaFX Task. </p>
-<p>Provides methods to create and run the initialization task in a background thread. </p>
+<div class="textblock"><p>Manages asynchronous initialization of the Spring application context via JavaFX Tasks, providing methods to create and run these tasks in background threads. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1d70b1c8db446b32e9547d071bb6d663" name="a1d70b1c8db446b32e9547d071bb6d663"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d70b1c8db446b32e9547d071bb6d663">&#9670;&#160;</a></span>SpringContextInitializer()</h2>
@@ -191,7 +190,13 @@ Private Attributes</h2></td></tr>
 <p>Starts the given JavaFX Task in a new background thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">task</td><td>the initialization task to run </td></tr>
+    <tr><td class="paramname">task</td><td>the initialization task to run; must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">task</code> is null </td></tr>
   </table>
   </dd>
 </dl>
@@ -230,7 +235,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html">SpringContextInitializer</a></li>
-    <li class="footer">Generated on Tue Jun 24 2025 20:14:02 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Jun 25 2025 19:19:45 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
