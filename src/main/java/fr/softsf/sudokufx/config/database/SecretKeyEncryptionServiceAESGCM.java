@@ -9,6 +9,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Base64;
+import java.util.Objects;
 import javax.crypto.Cipher;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
@@ -18,7 +19,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
-import jakarta.validation.constraints.NotBlank;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /**
  * Implementation of the ApplicationKeystore.IEncryptionService interface using AES-GCM
@@ -34,13 +35,20 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     private Cipher cipher;
 
     /**
-     * Constructor for the SecretKeyEncryptionServiceAESGCM. Initializes the cipher with
-     * AES/GCM/NoPadding algorithm.
+     * Constructs a SecretKeyEncryptionServiceAESGCM instance, initializing the cipher for AES
+     * encryption/decryption using GCM mode with no padding.
      *
-     * @param secretKeyP The SecretKey to be used for encryption and decryption
+     * @param secretKeyP the {@link SecretKey} used for encryption and decryption; must not be null
+     * @throws IllegalArgumentException if {@code secretKeyP} is {@code null}
+     * @throws IllegalStateException if the cipher algorithm "AES/GCM/NoPadding" is not available,
+     *     leaving the instance unusable
      */
     @ExcludedFromCoverageReportGenerated
     public SecretKeyEncryptionServiceAESGCM(final SecretKey secretKeyP) {
+        if (Objects.isNull(secretKeyP)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The secretKeyP must not be null");
+        }
         secretKey = secretKeyP;
         try {
             cipher = Cipher.getInstance("AES/GCM/NoPadding");
@@ -54,7 +62,9 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     }
 
     @Override
-    public String encrypt(@NotBlank final String original) {
+    public String encrypt(final String original) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                original, "original must not be null or blank, but was " + original);
         byte[] iv = new byte[16];
         try {
             RANDOM.nextBytes(iv);
@@ -71,7 +81,9 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     }
 
     @Override
-    public String decrypt(@NotBlank final String cypher) {
+    public String decrypt(final String cypher) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                cypher, "cypher must not be null or blank, but was " + cypher);
         try {
             String[] split = cypher.split("#");
             Base64.Decoder decoder = Base64.getDecoder();

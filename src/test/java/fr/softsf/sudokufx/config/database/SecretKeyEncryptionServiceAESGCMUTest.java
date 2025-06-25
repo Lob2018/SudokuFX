@@ -7,8 +7,10 @@ package fr.softsf.sudokufx.config.database;
 
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.Base64;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -21,13 +23,12 @@ import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.spy;
-import static org.mockito.Mockito.verify;
 
 class SecretKeyEncryptionServiceAESGCMUTest {
 
     private static IEncryptionService iSecretKeyEncryptionServiceAESGCM;
-    private static IEncryptionService iSecretKeyEncryptionServiceAESGCMNullSecretKey;
 
     private ListAppender<ILoggingEvent> logWatcher;
 
@@ -37,8 +38,6 @@ class SecretKeyEncryptionServiceAESGCMUTest {
         keyGen.init(256, new SecureRandom());
         SecretKey symmetricKey = keyGen.generateKey();
         iSecretKeyEncryptionServiceAESGCM = spy(new SecretKeyEncryptionServiceAESGCM(symmetricKey));
-        iSecretKeyEncryptionServiceAESGCMNullSecretKey =
-                spy(new SecretKeyEncryptionServiceAESGCM(null));
     }
 
     @BeforeEach
@@ -64,18 +63,78 @@ class SecretKeyEncryptionServiceAESGCMUTest {
     }
 
     @Test
-    void givenInvalidOriginalText_whenEncrypt_thenExceptionLogged() {
-        iSecretKeyEncryptionServiceAESGCMNullSecretKey.encrypt("_");
-        verify(iSecretKeyEncryptionServiceAESGCMNullSecretKey).encrypt("_");
-        assert (logWatcher.list.getLast().getFormattedMessage())
-                .contains("██ Exception catch inside encrypt");
+    void givenNullSecretKey_whenConstruct_thenIllegalArgumentException() {
+        IllegalArgumentException thrown =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> new SecretKeyEncryptionServiceAESGCM(null));
+        assertTrue(thrown.getMessage().contains("must not be null"));
     }
 
     @Test
-    void givenInvalidCipherText_whenDecrypt_thenExceptionLogged() {
-        iSecretKeyEncryptionServiceAESGCMNullSecretKey.decrypt("_");
-        verify(iSecretKeyEncryptionServiceAESGCMNullSecretKey).decrypt("_");
-        assert (logWatcher.list.getLast().getFormattedMessage())
-                .contains("██ Exception catch inside decrypt(cypher)");
+    void givenNullOrBlankOriginal_whenEncrypt_thenIllegalArgumentException() {
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> iSecretKeyEncryptionServiceAESGCM.encrypt(null));
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> iSecretKeyEncryptionServiceAESGCM.encrypt(""));
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> iSecretKeyEncryptionServiceAESGCM.encrypt("   "));
+    }
+
+    @Test
+    void givenNullOrBlankCypher_whenDecrypt_thenIllegalArgumentException() {
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> iSecretKeyEncryptionServiceAESGCM.decrypt(null));
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> iSecretKeyEncryptionServiceAESGCM.decrypt(""));
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> iSecretKeyEncryptionServiceAESGCM.decrypt("   "));
+    }
+
+    @Test
+    void givenInvalidCipherText_whenDecrypt_thenEmptyStringReturnedAndErrorLogged() {
+        String invalidCypher = "not#validbase64";
+        String decrypted = iSecretKeyEncryptionServiceAESGCM.decrypt(invalidCypher);
+        assertEquals("", decrypted);
+        assertFalse(logWatcher.list.isEmpty());
+        assertTrue(
+                logWatcher
+                        .list
+                        .getLast()
+                        .getFormattedMessage()
+                        .contains("██ Exception catch inside decrypt(cypher)"));
+    }
+
+    @Test
+    void givenValidEncryptionOutput_whenSplit_thenContainsEncryptedDataAndIv() {
+        String secret = "TestSecret";
+        String encrypted = iSecretKeyEncryptionServiceAESGCM.encrypt(secret);
+        assertNotNull(encrypted);
+        String[] parts = encrypted.split("#");
+        assertEquals(2, parts.length);
+        Base64.getDecoder().decode(parts[0]);
+        Base64.getDecoder().decode(parts[1]);
+    }
+
+    @Test
+    void givenInvalidSecretKey_whenEncrypt_thenEmptyStringReturnedAndErrorLogged() {
+        SecretKey invalidKey = new SecretKeySpec(new byte[4], "AES");
+        IEncryptionService brokenEncryptionService =
+                new SecretKeyEncryptionServiceAESGCM(invalidKey);
+        String result = brokenEncryptionService.encrypt("failEncrypt");
+        assertEquals("", result);
+        assertFalse(logWatcher.list.isEmpty());
+        assertTrue(
+                logWatcher
+                        .list
+                        .getLast()
+                        .getFormattedMessage()
+                        .contains("██ Exception catch inside encrypt(original)"));
     }
 }

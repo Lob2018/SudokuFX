@@ -6,24 +6,27 @@
 package fr.softsf.sudokufx.config.database;
 
 /**
- * Interface defining methods to encrypt and decrypt using AES-GCM (Galois/Counter Mode) encryption.
+ * Interface defining methods to encrypt and decrypt strings using AES-GCM (Galois/Counter Mode).
  */
 sealed interface IEncryptionService permits SecretKeyEncryptionServiceAESGCM {
+
     /**
-     * Encrypts the given string using AES-GCM encryption.
+     * Encrypts the given non-null, non-blank string using AES-GCM encryption.
      *
-     * @param original The string to be encrypted
-     * @return A Base64 encoded string containing the encrypted data and Initialization Vector,
+     * @param original the plaintext string to encrypt; must not be null or blank
+     * @return a Base64 encoded string containing the encrypted data and initialization vector,
      *     separated by '#'
+     * @throws IllegalArgumentException if {@code original} is null or blank
      */
     String encrypt(String original);
 
     /**
-     * Decrypts the given cipher text using AES-GCM decryption.
+     * Decrypts the given non-null, non-blank Base64 encoded cipher text using AES-GCM decryption.
      *
-     * @param cypher The Base64 encoded string containing the encrypted data and Initialization
-     *     Vector, separated by '#'
-     * @return The decrypted string, or an empty string if decryption fails
+     * @param cypher a Base64 encoded string containing the encrypted data and initialization
+     *     vector, separated by '#'; must not be null or blank
+     * @return the decrypted plaintext string, or an empty string if decryption fails
+     * @throws IllegalArgumentException if {@code cypher} is null or blank
      */
     String decrypt(String cypher);
 }
