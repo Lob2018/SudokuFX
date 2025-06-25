@@ -8,6 +8,8 @@ package fr.softsf.sudokufx.common.enums;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
+
+import io.micrometer.common.util.StringUtils;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
@@ -68,8 +70,8 @@ public enum I18n {
      * @return Translated value or fallback.
      */
     public String getValue(final String key) {
-        if (key == null) {
-            LOG.error("██ Localized string: Null key");
+        if (StringUtils.isBlank(key)) {
+            LOG.error("██ Localized string: Null or blank key");
             return "???null???";
         }
         try {

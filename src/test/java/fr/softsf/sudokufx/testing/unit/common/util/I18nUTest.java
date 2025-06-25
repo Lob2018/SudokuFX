@@ -94,6 +94,18 @@ class I18nUTest {
     }
 
     @Test
+    void givenEmptyKey_whenGetValue_thenReturnsErrorString() {
+        String result = I18n.INSTANCE.getValue("");
+        assertEquals("???null???", result);
+    }
+
+    @Test
+    void givenBlankKey_whenGetValue_thenReturnsErrorString() {
+        String result = I18n.INSTANCE.getValue("   ");
+        assertEquals("???null???", result);
+    }
+
+    @Test
     void givenMissingKey_whenGetValue_thenReturnsMissingKeyString() {
         String result = I18n.INSTANCE.getValue("missingKey");
         assertEquals("???missing:missingKey???", result);
