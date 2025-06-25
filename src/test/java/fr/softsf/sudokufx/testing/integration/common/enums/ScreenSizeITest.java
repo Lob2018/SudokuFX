@@ -23,7 +23,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @ExtendWith(ApplicationExtension.class)
-class MyEnumsITest {
+class ScreenSizeITest {
 
     @Start
     private void start(Stage primarystage) {
