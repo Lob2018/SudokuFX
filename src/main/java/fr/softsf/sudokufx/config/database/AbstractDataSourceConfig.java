@@ -14,7 +14,6 @@ import org.springframework.context.annotation.DependsOn;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
-import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.MyLogbackConfig;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
@@ -25,7 +24,6 @@ import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_MIGRATION_PATH;
  * Abstract configuration class for setting up the application's data source. Provides configuration
  * for various data source implementations.
  */
-@ExcludedFromCoverageReportGenerated
 abstract class AbstractDataSourceConfig {
 
     private String jdbcUrl;
