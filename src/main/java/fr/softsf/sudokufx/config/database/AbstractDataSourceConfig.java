@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.config.database;
 
+import java.util.Objects;
+
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.DependsOn;
@@ -13,14 +15,15 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.MyLogbackConfig;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 
 import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_MIGRATION_PATH;
 
 /**
- * Abstract configuration class for setting up the application's data source. This class provides
- * configurations for different data source implementations.
+ * Abstract configuration class for setting up the application's data source. Provides configuration
+ * for various data source implementations.
  */
 @ExcludedFromCoverageReportGenerated
 abstract class AbstractDataSourceConfig {
@@ -29,39 +32,66 @@ abstract class AbstractDataSourceConfig {
     private String poolName;
 
     public void setJdbcUrl(String jdbcUrl) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                jdbcUrl, "JdbcUrl must not be null or blank, but was " + jdbcUrl);
         this.jdbcUrl = jdbcUrl;
     }
 
     public void setPoolName(String poolName) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                poolName, "PoolName must not be null or blank, but was " + poolName);
         this.poolName = poolName;
     }
 
     /**
      * Initializes Logback logging framework.
      *
-     * @param myLogbackConfig Custom Logback configuration bean
-     * @return Always returns 0
+     * @param myLogbackConfig Custom Logback configuration bean; must not be null
+     * @return always 0
+     * @throws IllegalArgumentException if {@code myLogbackConfig} is null
      */
     @Bean
     int logbackInitialization(final MyLogbackConfig myLogbackConfig) {
+        if (Objects.isNull(myLogbackConfig)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The myLogbackConfig must not be null");
+        }
         myLogbackConfig.printLogEntryMessage();
         return 0;
     }
 
     /**
-     * Creates and configures the main DataSource for the application. This bean depends on
-     * logbackInitialization to ensure Logback is properly set up. This method sets up a connection
-     * pool for HSQLDB database.
+     * Creates and configures the main DataSource for the application. Depends on
+     * logbackInitialization to ensure logging is set up.
      *
-     * @param iKeystore Application keystore for secure storage
-     * @param iOsFolderFactory Factory for creating OS-specific folder paths.
-     * @return Configured DataSource
+     * @param iKeystore Application keystore for secure storage; must not be null
+     * @param iOsFolderFactory Factory for OS-specific folder paths; must not be null
+     * @return configured HikariDataSource
+     * @throws IllegalArgumentException if any parameter is null
      */
     @Bean
     @DependsOn({"logbackInitialization"})
     HikariDataSource hikariDataSource(
             final IKeystore iKeystore, IOsFolderFactory iOsFolderFactory) {
+        if (Objects.isNull(iKeystore)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The iKeystore must not be null");
+        }
+        if (Objects.isNull(iOsFolderFactory)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The iOsFolderFactory must not be null");
+        }
         iKeystore.setupApplicationKeystore();
+        return new HikariDataSource(getHikariConfig(iKeystore));
+    }
+
+    /**
+     * Configure et retourne un {@link HikariConfig} avec les paramètres de connexion et pool.
+     *
+     * @param iKeystore fournit le nom d’utilisateur et mot de passe pour la base
+     * @return la configuration Hikari prête à être utilisée
+     */
+    private HikariConfig getHikariConfig(IKeystore iKeystore) {
         final HikariConfig config = new HikariConfig();
         config.setPoolName(poolName);
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
@@ -74,25 +104,22 @@ abstract class AbstractDataSourceConfig {
         config.addDataSourceProperty("cachePrepStmts", "true");
         config.addDataSourceProperty("prepStmtCacheSize", "250");
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
-        return new HikariDataSource(config);
+        return config;
     }
 
     /**
-     * Configures Flyway with a specified location for migration scripts.
+     * Configures Flyway database migration tool.
      *
-     * <p>This method initializes a Flyway instance that will manage database migrations using the
-     * provided data source. It specifies the location of the migration scripts which Flyway will
-     * execute to ensure the database schema is up-to-date.
-     *
-     * @param hikariDataSource the HikariDataSource used by Flyway to connect to the database. This
-     *     data source should be properly configured with the necessary connection details (URL,
-     *     username, password).
-     * @return a Flyway instance configured with the specified data source and migration script
-     *     location. The initMethod "migrate" will be called automatically after the bean is
-     *     created, applying any pending migrations to the database.
+     * @param hikariDataSource Data source used by Flyway; must not be null
+     * @return configured Flyway instance
+     * @throws IllegalArgumentException if {@code hikariDataSource} is null
      */
     @Bean(initMethod = "migrate")
     Flyway flyway(final HikariDataSource hikariDataSource) {
+        if (Objects.isNull(hikariDataSource)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "The hikariDataSource must not be null");
+        }
         return Flyway.configure()
                 .dataSource(hikariDataSource)
                 .locations("classpath:" + DATABASE_MIGRATION_PATH.getPath())
