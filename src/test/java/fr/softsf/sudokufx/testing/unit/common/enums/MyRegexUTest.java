@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.*;
 
-class MyRegexTest {
+class MyRegexUTest {
 
     private final Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
     private final Pattern alphaNumPattern = MyRegex.INSTANCE.getAlphanumericPattern();
