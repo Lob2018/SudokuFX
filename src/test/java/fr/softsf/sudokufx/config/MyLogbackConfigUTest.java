@@ -26,8 +26,7 @@ import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.OPTIMIZING;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class MyLogbackConfigUTest {
@@ -102,5 +101,14 @@ class MyLogbackConfigUTest {
                                 ASCII_LOGO.getLogBackMessage().replace("{}", "%s"),
                                 JVMApplicationProperties.INSTANCE.getAppName(),
                                 JVMApplicationProperties.INSTANCE.getAppVersion()));
+    }
+
+    @Test
+    void
+            givenMissingLogbackConfigResource_whenConfigureLogback_thenIllegalArgumentExceptionThrown() {
+        myLogbackConfig.setLogBackPathForTests();
+        IllegalArgumentException exception =
+                assertThrows(IllegalArgumentException.class, myLogbackConfig::configureLogback);
+        assertEquals("The inputStream must not be null", exception.getMessage());
     }
 }
