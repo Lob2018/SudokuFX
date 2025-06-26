@@ -15,10 +15,10 @@ final class WindowsFolderFactory implements IOsFolderFactory {
 
     /**
      * Constructor that initializes the data and logs folder paths.
-     * <p>
-     * Validation and folder creation are delegated to {@link OsFolderInitializer#initializeFolders(String, String)}.
-     * Exceptions will be thrown if the paths are invalid or folder creation fails.
-     * </p>
+     *
+     * <p>Validation and folder creation are delegated to {@link
+     * OsFolderInitializer#initializeFolders(String, String)}. Exceptions will be thrown if the
+     * paths are invalid or folder creation fails.
      *
      * @param dataFolderPath The intended path for the data folder
      * @param logsFolderPath The intended path for the logs folder

@@ -16,10 +16,10 @@ final class LinuxFolderFactory implements IOsFolderFactory {
 
     /**
      * Constructor that initializes the data and logs folder paths.
-     * <p>
-     * The given paths are validated and the folders created by {@link OsFolderInitializer#initializeFolders(String, String)}.
-     * This method may throw exceptions if paths are invalid or folder creation fails.
-     * </p>
+     *
+     * <p>The given paths are validated and the folders created by {@link
+     * OsFolderInitializer#initializeFolders(String, String)}. This method may throw exceptions if
+     * paths are invalid or folder creation fails.
      *
      * @param dataFolderPath The intended path for the data folder
      * @param logsFolderPath The intended path for the logs folder
