@@ -95,6 +95,7 @@ var NAVTREEINDEX0 =
 "_os_folder_initializer_u_test_8java.html":[3,0,1,1,0,0,0,0,1,1,1],
 "_os_info_u_test_8java.html":[3,0,1,1,0,0,0,0,2,2,0,2,0,0],
 "_os_name_8java.html":[3,0,1,0,0,0,0,0,1,1,4],
+"_os_name_u_test_8java.html":[3,0,1,1,0,0,0,0,2,2,0,0,2],
 "_paths_8java.html":[3,0,1,0,0,0,0,0,1,1,5],
 "_player_8java.html":[3,0,1,0,0,0,0,0,4,5],
 "_player_dto_8java.html":[3,0,1,0,0,0,0,0,3,6],
@@ -110,7 +111,7 @@ var NAVTREEINDEX0 =
 "_secret_key_encryption_service_a_e_s_g_c_m_8java.html":[3,0,1,0,0,0,0,0,2,0,8],
 "_secret_key_encryption_service_a_e_s_g_c_m_u_test_8java.html":[3,0,1,1,0,0,0,0,1,0,3],
 "_secure_random_generator_8java.html":[3,0,1,0,0,0,0,0,1,1,7],
-"_secure_random_generator_u_test_8java.html":[3,0,1,1,0,0,0,0,2,2,0,0,2],
+"_secure_random_generator_u_test_8java.html":[3,0,1,1,0,0,0,0,2,2,0,0,3],
 "_software_8java.html":[3,0,1,0,0,0,0,0,4,7],
 "_software_dto_8java.html":[3,0,1,0,0,0,0,0,3,8],
 "_software_repository_8java.html":[3,0,1,0,0,0,0,0,6,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#afd030db3674fffb19e66a4e8a1788c3d":[1,0,0,0,0,1,4,4,0],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#afd030db3674fffb19e66a4e8a1788c3d":[2,0,0,0,0,1,4,4,0],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html":[1,0,0,0,0,1,4,6],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html":[2,0,0,0,0,1,4,6],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html#a1d70b1c8db446b32e9547d071bb6d663":[1,0,0,0,0,1,4,6,0]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html":[2,0,0,0,0,1,4,6]
 };

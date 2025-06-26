@@ -1,0 +1,9 @@
+<map id="src/test/java/fr/softsf/sudokufx/testing/unit/common/enums/OsNameUTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/common/enums/OsNameUTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="159,5,396,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,142,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,67,115,115,113,110,216,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="165,112,390,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="280,64,280,97,275,97,275,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="414,120,616,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="349,62,471,111,469,116,347,67"/>
+</map>

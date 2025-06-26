@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.testing.unit.common.enums.OsNameUTest.givenUnsupportedOsName_whenDetect_thenThrowIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.common.enums.OsNameUTest.givenUnsupportedOsName_whenDetect_thenThrowIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,320,64"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a0fe209f6f8a9c6a7931358c9e60c4fec" title="Detects the current operating system by reading the system property &quot;os.name&quot;." alt="" coords="368,13,592,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,32,352,32,352,37,320,37"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a" title=" " alt="" coords="640,13,864,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="592,32,624,32,624,37,592,37"/>
+</map>

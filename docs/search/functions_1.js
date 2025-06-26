@@ -10,5 +10,5 @@ var searchData=
   ['animateflowersvg_7',['animateFlowerSvg',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a05ceacbaf9b2149100b85aa1915a98a2',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['applicationkeystore_8',['ApplicationKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ab67a293ca8a7582e7837ae51a8bdb7a2',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
   ['applyselectedbackgroundimage_9',['applySelectedBackgroundImage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa3a20fc1375df0c6c0d09eac69d7d5b3',1,'fr::softsf::sudokufx::view::DefaultView']]],
-  ['assertthrowswithmessage_10',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test.html#ad9358199db56af2560f1c2df9da57ecc',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexTest']]]
+  ['assertthrowswithmessage_10',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]]
 ];

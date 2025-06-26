@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.common.enums.MyRegexTest.givenNullPattern_whenIsValidatedByRegex_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.common.enums.MyRegexTest.givenNullPattern_whenIsValidatedByRegex_thenThrowsIllegalArgumentException">
+<map id="fr.softsf.sudokufx.testing.unit.common.enums.MyRegexUTest.givenNullPattern_whenIsValidatedByRegex_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.common.enums.MyRegexUTest.givenNullPattern_whenIsValidatedByRegex_thenThrowsIllegalArgumentException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,310,64"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test.html#ad9358199db56af2560f1c2df9da57ecc" title=" " alt="" coords="358,13,650,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,32,342,32,342,37,310,37"/>

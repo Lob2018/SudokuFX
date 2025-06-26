@@ -18,7 +18,7 @@ var searchData=
   ['addtokeystore_15',['addToKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a7b8751ac0c7de3f434f5500915e66c28',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
   ['alphanumeric_5fpattern_16',['ALPHANUMERIC_PATTERN',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a028b20a6e91971ce13ae8be9bf7697a5',1,'fr::softsf::sudokufx::common::enums::MyRegex']]],
   ['alphanumeric_5fregex_17',['ALPHANUMERIC_REGEX',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#accebd50d7f2ba32538726e195acf76c6',1,'fr::softsf::sudokufx::config::JVMApplicationPropertiesUTest']]],
-  ['alphanumpattern_18',['alphaNumPattern',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test.html#aa3558c1fdcd02bcec6fa3ba43e6d2a5a',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexTest']]],
+  ['alphanumpattern_18',['alphaNumPattern',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#a755956f0cfe6c577bd9ade54eb8a264c',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]],
   ['animateflowersvg_19',['animateFlowerSvg',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a05ceacbaf9b2149100b85aa1915a98a2',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['app_5flicense_5fproperty_20',['APP_LICENSE_PROPERTY',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ad0838e435f19256e609b58c9edda6819',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['app_5fname_5fproperty_21',['APP_NAME_PROPERTY',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#acc2ab4219c024bb7b4edeaaade3864ed',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
@@ -34,6 +34,6 @@ var searchData=
   ['apporganization_31',['appOrganization',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ae81f3eb980c1bacca03dade9ffa57987',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['appversion_32',['appVersion',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a4ec2bcbb57929a66f25b47d4bd5d709c',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['ascii_5flogo_33',['ASCII_LOGO',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ad676af3ab8af46c96474134d7079fc91',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]],
-  ['assertthrowswithmessage_34',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test.html#ad9358199db56af2560f1c2df9da57ecc',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexTest']]],
+  ['assertthrowswithmessage_34',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]],
   ['authorization_35',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]]
 ];

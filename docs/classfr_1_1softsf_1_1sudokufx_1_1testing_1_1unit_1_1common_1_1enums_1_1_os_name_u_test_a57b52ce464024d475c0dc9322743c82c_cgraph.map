@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.testing.unit.common.enums.OsNameUTest.givenMacOsName_whenDetect_thenReturnMac" name="fr.softsf.sudokufx.testing.unit.common.enums.OsNameUTest.givenMacOsName_whenDetect_thenReturnMac">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,303,64"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a0fe209f6f8a9c6a7931358c9e60c4fec" title="Detects the current operating system by reading the system property &quot;os.name&quot;." alt="" coords="351,13,575,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,32,335,32,335,37,303,37"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a" title=" " alt="" coords="623,13,847,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="575,32,607,32,607,37,575,37"/>
+</map>

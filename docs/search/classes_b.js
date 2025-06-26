@@ -22,5 +22,5 @@ var searchData=
   ['mylogbackconfig_19',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::config']]],
   ['mylogbackconfigutest_20',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::config']]],
   ['myregex_21',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::enums']]],
-  ['myregextest_22',['MyRegexTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]]
+  ['myregexutest_22',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]]
 ];

@@ -17,8 +17,8 @@ var searchData=
   ['ordre_14',['ORDRE',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a2d5f6ee38f6cfce49848aec5cb18dd45',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
   ['originaldefault_15',['originalDefault',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html#ae8a4cc70dc85895e5b86eced181821c2',1,'fr::softsf::sudokufx::testing::unit::common::util::I18nUTest']]],
   ['originallang_16',['originalLang',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html#aff37a1394fda5aec1a83acff93af6706',1,'fr.softsf.sudokufx.testing.unit.common.util.I18nUTest.originalLang'],['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html#ac4215f3dd9dee339a2830298f298b28d',1,'fr.softsf.sudokufx.testing.unit.common.util.MyDateTimeUTest.originalLang']]],
-  ['os_17',['os',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1c0e8612142224adb623240430d50947',1,'fr.softsf.sudokufx.common.enums.OsName.os'],['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#af1fadaadedea0bb808552850e2b4c604',1,'fr.softsf.sudokufx.config.os.OsFolderFactoryManager.os']]],
-  ['os_5fname_18',['OS_NAME',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#ada83f9f50fac22af59df0d5e283e595c',1,'fr::softsf::sudokufx::common::enums::OsName']]],
+  ['originalosname_17',['originalOsName',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#adfea9e9e3b2d8c15910b149b71d2617d',1,'fr::softsf::sudokufx::testing::unit::common::enums::OsNameUTest']]],
+  ['os_18',['os',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1c0e8612142224adb623240430d50947',1,'fr.softsf.sudokufx.common.enums.OsName.os'],['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#ae8d231468bbfe34bdc16bf97254ba5ac',1,'fr.softsf.sudokufx.config.os.OsFolderFactoryManager.os']]],
   ['osfolderfactorymanager_19',['OsFolderFactoryManager',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html',1,'fr::softsf::sudokufx::config::os']]],
   ['osfolderfactorymanager_20',['osFolderFactoryManager',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test.html#aaf0b91fbcb65c0fcacd3e36f97200ce1',1,'fr::softsf::sudokufx::config::os::OsFolderFactoryManagerUTest']]],
   ['osfolderfactorymanager_2ejava_21',['OsFolderFactoryManager.java',['../_os_folder_factory_manager_8java.html',1,'']]],
@@ -31,5 +31,7 @@ var searchData=
   ['osinfoutest_28',['OsInfoUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util::os']]],
   ['osinfoutest_2ejava_29',['OsInfoUTest.java',['../_os_info_u_test_8java.html',1,'']]],
   ['osname_30',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html',1,'fr.softsf.sudokufx.common.enums.OsName'],['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a',1,'fr.softsf.sudokufx.common.enums.OsName.OsName()']]],
-  ['osname_2ejava_31',['OsName.java',['../_os_name_8java.html',1,'']]]
+  ['osname_2ejava_31',['OsName.java',['../_os_name_8java.html',1,'']]],
+  ['osnameutest_32',['OsNameUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]],
+  ['osnameutest_2ejava_33',['OsNameUTest.java',['../_os_name_u_test_8java.html',1,'']]]
 ];

@@ -20,5 +20,5 @@ var searchData=
   ['possibilitystarshbox_17',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#ac1fbfe184f58bb789d80b4b6c43b2596',1,'fr::softsf::sudokufx::view::component::PossibilityStarsHBox']]],
   ['printlogentrymessage_18',['printLogEntryMessage',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#aebe58385063c387d9b27bce0ad2493fc',1,'fr::softsf::sudokufx::config::MyLogbackConfig']]],
   ['printlogstatus_19',['printLogStatus',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#accf2f4cc3c02cec1068849bd4ab833d2',1,'fr::softsf::sudokufx::config::MyLogbackConfig']]],
-  ['provideinvalidoperatingsystems_20',['provideInvalidOperatingSystems',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test.html#a1c886e54fe5d22ac04d2579849afd945',1,'fr::softsf::sudokufx::config::os::OsFolderFactoryManagerUTest']]]
+  ['provideinvalidoperatingsystems_20',['provideInvalidOperatingSystems',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test.html#a6cffcbc3faa4014b59912adbb1c16ce6',1,'fr::softsf::sudokufx::config::os::OsFolderFactoryManagerUTest']]]
 ];
