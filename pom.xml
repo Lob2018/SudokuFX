@@ -345,9 +345,9 @@
             <exclude>fr/softsf/sudokufx/view/**</exclude>
             <exclude>fr/softsf/sudokufx/model/**</exclude>
             <exclude>fr/softsf/sudokufx/dto/**</exclude>
-            <exclude>fr/softsf/sudokufx/interfaces/**</exclude>
+            <exclude>fr/softsf/sudokufx/common/interfaces/**</exclude>
+            <exclude>fr/softsf/sudokufx/common/util/SpringContextInitializer$*</exclude>
             <exclude>fr/softsf/sudokufx/benchmark/**</exclude>
-            <exclude>fr/softsf/sudokufx/utils/SpringContextInitializer$*</exclude>
             <exclude>fr/softsf/sudokufx/service/VersionService$*</exclude>
           </excludes>
         </configuration>
@@ -390,7 +390,6 @@
           </execution>
         </executions>
       </plugin>
-
       <!-- JavaFX Maven plugin -->
       <plugin>
         <groupId>org.openjfx</groupId>
