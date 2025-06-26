@@ -6,14 +6,30 @@
 package fr.softsf.sudokufx.config.os;
 
 import java.io.File;
+import java.nio.file.Path;
+import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.io.TempDir;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class OsFolderInitializerUTest {
+
+    @TempDir Path tempDir;
+
+    private static Stream<Arguments> invalidPathsProvider() {
+        return Stream.of(
+                Arguments.of(null, "validLogsPath", "DataFolderPath"),
+                Arguments.of("validDataPath", null, "LogsFolderPath"),
+                Arguments.of("   ", "validLogsPath", "DataFolderPath"),
+                Arguments.of("validDataPath", " ", "LogsFolderPath"));
+    }
 
     @Test
     void givenNoFileButExistentFolder_whenCreateFolder_thenFolderCreated() {
@@ -33,12 +49,12 @@ class OsFolderInitializerUTest {
         RuntimeException exception =
                 assertThrows(
                         RuntimeException.class,
-                        () -> {
-                            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
-                        });
+                        () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
         assertEquals(
                 "Error when creating needed folder: " + mockFolder.getPath(),
                 exception.getMessage());
+        verify(mockFolder).exists();
+        verify(mockFolder).mkdirs();
     }
 
     @Test
@@ -55,15 +71,14 @@ class OsFolderInitializerUTest {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new SecurityException("Security violation"));
+        when(mockFolder.getAbsolutePath()).thenReturn("/fake/path");
         RuntimeException exception =
                 assertThrows(
                         RuntimeException.class,
-                        () -> {
-                            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
-                        });
-        assertEquals(
-                "Security error when creating needed folder: " + mockFolder.getPath(),
-                exception.getMessage());
+                        () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
+        assertTrue(exception.getMessage().contains("Security error when creating needed folder"));
+        verify(mockFolder).exists();
+        verify(mockFolder).mkdirs();
     }
 
     @Test
@@ -71,14 +86,49 @@ class OsFolderInitializerUTest {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new RuntimeException("General error"));
+        when(mockFolder.getAbsolutePath()).thenReturn("/fake/path");
         RuntimeException exception =
                 assertThrows(
                         RuntimeException.class,
-                        () -> {
-                            OsFolderInitializer.INSTANCE.createFolder(mockFolder);
-                        });
-        assertEquals(
-                "Error when creating needed folder: " + mockFolder.getPath(),
-                exception.getMessage());
+                        () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
+        assertTrue(exception.getMessage().contains("Error when creating needed folder"));
+        verify(mockFolder).exists();
+        verify(mockFolder).mkdirs();
+    }
+
+    @Test
+    void givenNullFolder_whenCreateFolder_thenIllegalArgumentException() {
+        File nullFolder = null;
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> OsFolderInitializer.INSTANCE.createFolder(nullFolder));
+        assertTrue(exception.getMessage().contains("mustn't be null"));
+    }
+
+    @ParameterizedTest(
+            name =
+                    "given \"{0}\" and \"{1}\" when initializeFolders then IllegalArgumentException"
+                            + " on {2}")
+    @MethodSource("invalidPathsProvider")
+    void givenInvalidPaths_whenInitializeFolders_thenIllegalArgumentException(
+            String dataPath, String logsPath, String expectedInMessage) {
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> OsFolderInitializer.INSTANCE.initializeFolders(dataPath, logsPath));
+        assertTrue(exception.getMessage().contains(expectedInMessage));
+    }
+
+    @Test
+    void givenValidPaths_whenInitializeFolders_thenFoldersCreated() {
+        String dataPath = tempDir.resolve("testDataFolder").toString();
+        String logsPath = tempDir.resolve("testLogsFolder").toString();
+        String[] result = OsFolderInitializer.INSTANCE.initializeFolders(dataPath, logsPath);
+        assertEquals(2, result.length);
+        assertEquals(dataPath, result[0]);
+        assertEquals(logsPath, result[1]);
+        assertTrue(new File(dataPath).exists());
+        assertTrue(new File(logsPath).exists());
     }
 }
