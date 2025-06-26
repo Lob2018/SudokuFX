@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.InvalidPathException;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -64,8 +65,17 @@ class FileSystemManagerUTest {
 
     @Test
     void givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenDeletionFails() {
-        boolean result =
-                fileSystemManager.deleteDataFolderRecursively(path1.getParent().subpath(0, 5));
+        Path base =
+                Paths.get(
+                        "root",
+                        "segment1",
+                        "segment2",
+                        "segment3",
+                        "segment4",
+                        "segment5",
+                        "segment6");
+        Path invalidPath = base.subpath(0, 5);
+        boolean result = fileSystemManager.deleteDataFolderRecursively(invalidPath);
         assertFalse(result);
     }
 
