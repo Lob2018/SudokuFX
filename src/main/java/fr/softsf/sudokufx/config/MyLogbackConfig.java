@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.config;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Objects;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -75,11 +76,16 @@ public class MyLogbackConfig {
      * Configures Logback using the specified configuration file.
      *
      * @return The configured LoggerContext
+     * @throws IllegalArgumentException if the configuration resource cannot be found (inputStream
+     *     is null)
      * @throws RuntimeException if there's an error during configuration
      */
     LoggerContext configureLogback() {
         LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
         try (InputStream inputStream = MyLogbackConfig.class.getResourceAsStream(logBackPath)) {
+            if (Objects.isNull(inputStream)) {
+                throw new IllegalArgumentException("The inputStream must not be null");
+            }
             JoranConfigurator configurator = new JoranConfigurator();
             configurator.setContext(context);
             context.reset();
