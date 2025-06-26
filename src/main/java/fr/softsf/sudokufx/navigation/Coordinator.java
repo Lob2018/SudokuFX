@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.navigation;
 
+import java.util.Objects;
 import javafx.application.HostServices;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -16,16 +17,17 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.Paths;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 
 /**
- * Coordinator is a Spring-managed component that handles navigation and UI logic in a JavaFX
- * application following the MVVM-C architecture.
+ * Coordinator is a Spring-managed component handling navigation and UI logic in a JavaFX
+ * application following the MVVM-C pattern.
  *
- * <p>Responsibilities include FXML view loading, scene switching, dynamic font scaling, and
- * language toggling.
+ * <p>Responsibilities include loading FXML views, switching scenes, dynamic font scaling, language
+ * toggling, and integration with system services.
  */
 @Component
 public class Coordinator {
@@ -45,11 +47,16 @@ public class Coordinator {
     private HostServices hostServices;
 
     /**
-     * Constructs the Coordinator with a shared {@code FXMLLoader}.
+     * Creates a Coordinator with the given non-null FXMLLoader.
      *
-     * @param fxmlLoader shared loader for FXML views and controllers
+     * @param fxmlLoader shared FXML loader
+     * @throws IllegalArgumentException if null
      */
     public Coordinator(FXMLLoader fxmlLoader) {
+        if (Objects.isNull(fxmlLoader)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "FxmlLoader must not be null");
+        }
         this.fxmlLoader = fxmlLoader;
     }
 
@@ -63,37 +70,43 @@ public class Coordinator {
     }
 
     /**
-     * Sets the JavaFX default scene.
+     * Sets the default JavaFX scene.
      *
-     * @param scene the scene to set as default
+     * @param scene non-null scene
+     * @throws IllegalArgumentException if null
      */
     public void setDefaultScene(Scene scene) {
+        if (Objects.isNull(scene)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("Scene must not be null");
+        }
         this.defaultScene = scene;
     }
 
     /**
      * Sets the dynamic font resizing utility.
      *
-     * @param dynamicFontSize the utility used to update font sizes
+     * @param dynamicFontSize non-null font size updater
+     * @throws IllegalArgumentException if null
      */
     public void setDynamicFontSize(DynamicFontSize dynamicFontSize) {
+        if (Objects.isNull(dynamicFontSize)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "DynamicFontSize must not be null");
+        }
         this.dynamicFontSize = dynamicFontSize;
     }
 
     /**
-     * Loads the given FXML view, sets it as the root of the default scene, and returns its
-     * controller.
+     * Loads the given FXML, sets it as scene root, and returns its controller. Logs errors and
+     * exits app on failure.
      *
-     * <p>Resets the {@code FXMLLoader}, loads the view from resources, updates the scene root, and
-     * adjusts the font size if applicable.
-     *
-     * <p>On failure, logs the error, exits the app, and returns {@code null}.
-     *
-     * @param <T> the controller type
-     * @param fxml the FXML base name (without extension)
-     * @return the controller instance, or {@code null} if loading fails
+     * @param <T> controller type
+     * @param fxml FXML filename without extension
+     * @return controller instance or null if loading fails
      */
     public <T> T setRootByFXMLName(final String fxml) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                fxml, "Fxml must not be null or blank, but was " + fxml);
         String path = Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml";
         try {
             fxmlLoader.setRoot(null);
@@ -104,6 +117,13 @@ public class Coordinator {
                 dynamicFontSize.updateFontSize();
             }
             return fxmlLoader.getController();
+        } catch (NullPointerException npe) {
+            LOG.error(
+                    "██ Exception NullPointerException caught in setRootByFXMLName.Verify that"
+                            + " setDefaultScene, setDynamicFontSize, and setHostServices have been"
+                            + " called with non-null arguments. {}",
+                    npe.getMessage(),
+                    npe);
         } catch (Exception e) {
             LOG.error(
                     "██ Exception caught when setting root by FXML name: {} █ The FXML path was"
@@ -129,11 +149,24 @@ public class Coordinator {
     public void openGitHubRepositoryReleaseUrl() {
         if (hostServices != null) {
             hostServices.showDocument(GITHUB_REPOSITORY_RELEASES_URL.getUrl());
+        } else {
+            LOG.warn(
+                    "openGitHubRepositoryReleaseUrl hostServices not set yet: cannot open GitHub"
+                            + " releases URL");
         }
     }
 
-    /** Injects the HostServices instance from the main application. */
+    /**
+     * Injects the non-null {@link HostServices} instance provided by the JavaFX application.
+     *
+     * @param hostServices the non-null {@code HostServices} instance
+     * @throws IllegalArgumentException if {@code hostServices} is {@code null}
+     */
     public void setHostServices(HostServices hostServices) {
+        if (Objects.isNull(hostServices)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    "HostServices must not be null");
+        }
         this.hostServices = hostServices;
     }
 }
