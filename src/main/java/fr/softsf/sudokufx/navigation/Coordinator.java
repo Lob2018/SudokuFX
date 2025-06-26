@@ -97,12 +97,17 @@ public class Coordinator {
     }
 
     /**
-     * Loads the given FXML, sets it as scene root, and returns its controller. Logs errors and
-     * exits app on failure.
+     * Loads the specified FXML (without extension), sets it as the scene root, and returns its
+     * controller.
      *
-     * @param <T> controller type
-     * @param fxml FXML filename without extension
-     * @return controller instance or null if loading fails
+     * <p>Logs errors and calls {@link Platform#exit()} on failure.
+     *
+     * <p>If {@code dynamicFontSize} is set, updates font size after loading.
+     *
+     * @param <T> the controller type
+     * @param fxml the FXML filename without extension; must not be null or blank
+     * @return the controller instance, or null if loading fails
+     * @throws IllegalArgumentException if {@code fxml} is null or blank
      */
     public <T> T setRootByFXMLName(final String fxml) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
@@ -121,7 +126,7 @@ public class Coordinator {
             LOG.error(
                     "██ Exception NullPointerException caught in setRootByFXMLName.Verify that"
                             + " setDefaultScene, setDynamicFontSize, and setHostServices have been"
-                            + " called with non-null arguments. {}",
+                            + " called with non-null arguments (triggering Platform.exit(). {}",
                     npe.getMessage(),
                     npe);
         } catch (Exception e) {
@@ -132,7 +137,7 @@ public class Coordinator {
                     path,
                     e);
         }
-        Platform.exit();
+        exitPlatform();
         return null;
     }
 
@@ -151,7 +156,7 @@ public class Coordinator {
             hostServices.showDocument(GITHUB_REPOSITORY_RELEASES_URL.getUrl());
         } else {
             LOG.warn(
-                    "openGitHubRepositoryReleaseUrl hostServices not set yet: cannot open GitHub"
+                    "▓▓ openGitHubRepositoryReleaseUrl hostServices not set yet: cannot open GitHub"
                             + " releases URL");
         }
     }
@@ -168,5 +173,14 @@ public class Coordinator {
                     "HostServices must not be null");
         }
         this.hostServices = hostServices;
+    }
+
+    /**
+     * Package-private method to exit the JavaFX platform.
+     *
+     * <p>Overridable in tests to avoid actual exit and allow exception handling verification.
+     */
+    void exitPlatform() {
+        Platform.exit();
     }
 }
