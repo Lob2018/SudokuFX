@@ -6,15 +6,17 @@
 package fr.softsf.sudokufx.config.os;
 
 import java.io.File;
+import java.util.Objects;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
+
 /**
- * Utility enum responsible for creating the necessary folders for the application to function
- * properly. It provides methods to create data and log folders at specified paths, ensuring that
- * these essential directories exist before the application proceeds. This utility class is designed
- * to be used statically and cannot be instantiated.
+ * Utility enum to initialize required application folders (data and logs). Provides static-like
+ * methods to ensure these directories exist before usage. Designed to be non-instantiable outside
+ * the enum instance.
  */
 public enum OsFolderInitializer {
     INSTANCE;
@@ -22,25 +24,38 @@ public enum OsFolderInitializer {
     private static final Logger LOG = LoggerFactory.getLogger(OsFolderInitializer.class);
 
     /**
-     * Creates folders for data and logs. This method attempts to create the specified data and logs
-     * folder paths. If either folder cannot be created, it throws a RuntimeException.
+     * Creates data and logs folders at the specified paths. Validates that folder paths are neither
+     * null nor blank.
      *
-     * @param dataFolderPath The path to the data folder to be created.
-     * @param logsFolderPath The path to the logs folder to be created.
-     * @return An array of strings containing the paths of the created folders.
+     * @param dataFolderPath path to the data folder to create
+     * @param logsFolderPath path to the logs folder to create
+     * @return array containing the created folder paths
+     * @throws IllegalArgumentException if either folder path is null or blank
+     * @throws RuntimeException if folder creation fails
      */
     String[] initializeFolders(String dataFolderPath, String logsFolderPath) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                dataFolderPath,
+                "DataFolderPath must not be null or blank, but was " + dataFolderPath);
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                logsFolderPath,
+                "LogsFolderPath must not be null or blank, but was " + logsFolderPath);
         createFolder(new File(dataFolderPath));
         createFolder(new File(logsFolderPath));
         return new String[] {dataFolderPath, logsFolderPath};
     }
 
     /**
-     * Attempts to create a folder at the specified path and confirms its creation.
+     * Creates the specified folder if it does not already exist.
      *
-     * @param folder The folder that should be created.
+     * @param folder the folder to create; must not be null
+     * @throws IllegalArgumentException if folder is null
+     * @throws RuntimeException if folder creation fails or a security error occurs
      */
     void createFolder(final File folder) {
+        if (Objects.isNull(folder)) {
+            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The folder mustn't be null");
+        }
         try {
             if (!folder.exists()) {
                 if (!folder.mkdirs()) {
