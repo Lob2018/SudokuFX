@@ -10,12 +10,13 @@ import org.springframework.context.annotation.Configuration;
 
 import fr.softsf.sudokufx.common.enums.OsName;
 import fr.softsf.sudokufx.common.enums.Paths;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /** Configuration class for managing OS-specific dynamically. */
 @Configuration
 public class OsFolderFactoryManager {
 
-    private String os = OsName.OS_NAME.getOs();
+    private OsName os = OsName.detect();
 
     private String windowsIntendedPathDataFolder =
             Paths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
@@ -34,23 +35,24 @@ public class OsFolderFactoryManager {
      * Creates and returns an OS-specific folder factory.
      *
      * @return An implementation of IOsFoldersFactory interface
-     * @throws IllegalArgumentException if the OS is not supported
+     * @throws IllegalArgumentException if the OS is blank, or not supported
      */
     @Bean
-    public IOsFolderFactory iOsFolderFactory() throws IllegalArgumentException {
-        if (os == null || os.isEmpty()) {
-            throw new IllegalArgumentException("Operating system is not specified or null.");
-        }
-        if (os.contains("windows")) {
-            return new WindowsFolderFactory(
-                    windowsIntendedPathDataFolder, windowsIntendedPathLogsFolder);
-        } else if (os.contains("linux")) {
-            return new LinuxFolderFactory(linuxIntendedPathDataFolder, linuxIntendedPathLogsFolder);
-        } else if (os.contains("mac")) {
-            return new MacosFolderFactory(macosIntendedPathDataFolder, macosIntendedPathLogsFolder);
-        } else {
-            throw new IllegalArgumentException("Unsupported OS: " + os);
-        }
+    public IOsFolderFactory iOsFolderFactory() {
+        return switch (os) {
+            case WINDOWS ->
+                    new WindowsFolderFactory(
+                            windowsIntendedPathDataFolder, windowsIntendedPathLogsFolder);
+            case LINUX ->
+                    new LinuxFolderFactory(
+                            linuxIntendedPathDataFolder, linuxIntendedPathLogsFolder);
+            case MAC ->
+                    new MacosFolderFactory(
+                            macosIntendedPathDataFolder, macosIntendedPathLogsFolder);
+            default ->
+                    throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                            "Unsupported OS: " + os);
+        };
     }
 
     /**
@@ -58,21 +60,14 @@ public class OsFolderFactoryManager {
      * test scenarios.
      */
     void setWrongOsForTests() {
-        os = OsName.WRONG_OS_FOR_TESTS.getOs();
-    }
-
-    /**
-     * Sets the OS to null for testing purposes. This method should only be used in test scenarios.
-     */
-    void setNullOsForTests() {
-        os = null;
+        os = OsName.WRONG_OS_FOR_TESTS;
     }
 
     /**
      * Sets the OS empty for testing purposes. This method should only be used in test scenarios.
      */
     void setEmptyOsForTests() {
-        os = "";
+        os = OsName.EMPTY_OS_FOR_TESTS;
     }
 
     /**
@@ -83,7 +78,7 @@ public class OsFolderFactoryManager {
             String windowsIntendedPathDataFolder, String windowsIntendedPathLogsFolder) {
         this.windowsIntendedPathDataFolder = windowsIntendedPathDataFolder;
         this.windowsIntendedPathLogsFolder = windowsIntendedPathLogsFolder;
-        os = "windows";
+        os = OsName.WINDOWS;
     }
 
     /**
@@ -94,7 +89,7 @@ public class OsFolderFactoryManager {
             String linuxIntendedPathDataFolder, String linuxIntendedPathLogsFolder) {
         this.linuxIntendedPathDataFolder = linuxIntendedPathDataFolder;
         this.linuxIntendedPathLogsFolder = linuxIntendedPathLogsFolder;
-        os = "linux";
+        os = OsName.LINUX;
     }
 
     /**
@@ -104,6 +99,6 @@ public class OsFolderFactoryManager {
     void setMacOSForTests(String macosIntendedPathDataFolder, String macosIntendedPathLogsFolder) {
         this.macosIntendedPathDataFolder = macosIntendedPathDataFolder;
         this.macosIntendedPathLogsFolder = macosIntendedPathLogsFolder;
-        os = "mac";
+        os = OsName.MAC;
     }
 }
