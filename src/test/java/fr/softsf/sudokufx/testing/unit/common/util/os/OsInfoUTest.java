@@ -7,9 +7,11 @@ package fr.softsf.sudokufx.testing.unit.common.util.os;
 
 import org.junit.jupiter.api.Test;
 
-import static fr.softsf.sudokufx.common.enums.OsName.OS_NAME;
+import fr.softsf.sudokufx.common.enums.OsName;
+
 import static fr.softsf.sudokufx.common.enums.Paths.USER_HOME;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class OsInfoUTest {
 
@@ -21,6 +23,8 @@ class OsInfoUTest {
     @Test
     void givenOsName_whenGetOs_thenOsMatchesSystemProperty() {
         String expectedLowercaseOsName = System.getProperty("os.name").toLowerCase();
-        assertEquals(expectedLowercaseOsName, OS_NAME.getOs());
+        assertTrue(
+                expectedLowercaseOsName.contains(OsName.detect().getOs()),
+                "L'OS détecté doit contenir : " + OsName.detect().getOs());
     }
 }
