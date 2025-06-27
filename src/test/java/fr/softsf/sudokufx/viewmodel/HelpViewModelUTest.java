@@ -37,8 +37,7 @@ class HelpViewModelUTest {
 
     @Test
     void whenShowHelp_thenAlertIsBuilt_andDisplayed_nonBlocking(FxRobot robot) {
-        HelpViewModel viewModel = new HelpViewModel(iOsFolderFactory);
-        HelpViewModel spyViewModel = Mockito.spy(viewModel);
+        HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolderFactory));
         doAnswer(
                         invocation -> {
                             MyAlert alert = invocation.getArgument(0);
