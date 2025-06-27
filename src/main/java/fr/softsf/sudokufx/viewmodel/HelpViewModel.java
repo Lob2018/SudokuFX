@@ -47,6 +47,10 @@ public class HelpViewModel {
                         JVMApplicationProperties.INSTANCE.getAppOrganization(),
                         Year.now() + "",
                         JVMApplicationProperties.INSTANCE.getAppLicense()));
-        informationAlert.showAndWait();
+        displayAlert(informationAlert);
+    }
+
+    void displayAlert(Alert alert) {
+        alert.showAndWait();
     }
 }
