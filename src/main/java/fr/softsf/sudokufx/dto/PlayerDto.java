@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.dto;
 
 import java.time.LocalDateTime;
 
+import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
@@ -15,7 +16,7 @@ public record PlayerDto(
         @NotNull PlayerLanguageDto playerlanguageidDto,
         @NotNull BackgroundDto backgroundidDto,
         @NotNull MenuDto menuidDto,
-        GameDto selectedGame,
+        @Nullable GameDto selectedGame,
         @NotNull @Size(max = 256) String name,
         @NotNull Boolean isselected,
         @NotNull LocalDateTime createdat,
