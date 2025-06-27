@@ -41,7 +41,10 @@ public interface IPlayerMapper {
     @Mapping(target = "playerlanguageidDto", source = "player.playerlanguageid")
     @Mapping(target = "backgroundidDto", source = "player.backgroundid")
     @Mapping(target = "menuidDto", source = "player.menuid")
-    @Mapping(target = "selectedGame", source = "player.games", qualifiedByName = "mapSelectedGame")
+    @Mapping(
+            target = "selectedGame",
+            source = "player.games",
+            qualifiedByName = "mapSelectedGameToDto")
     PlayerDto mapPlayerToDto(Player player);
 
     /**

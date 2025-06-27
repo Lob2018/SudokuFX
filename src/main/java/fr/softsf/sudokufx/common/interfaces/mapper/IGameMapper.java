@@ -41,7 +41,10 @@ public interface IGameMapper {
      * @return a Game entity representing the given GameDto.
      */
     @Mapping(target = "gridid", source = "dto.grididDto")
-    @Mapping(target = "playerid", source = "dto.playerid", qualifiedByName = "mapPlayerIdToPlayer")
+    @Mapping(
+            target = "playerid",
+            source = "dto.playerid",
+            qualifiedByName = "mapPlayeridDtoToPlayer")
     @Mapping(target = "levelid", source = "dto.levelidDto")
     Game mapGameDtoToGame(GameDto dto);
 }

@@ -16,7 +16,12 @@ import org.springframework.util.CollectionUtils;
 import fr.softsf.sudokufx.model.Game;
 import fr.softsf.sudokufx.model.Player;
 
-/** Utility class providing custom mapping methods for use with MapStruct. */
+/**
+ * Utility class providing custom mapping methods for use with MapStruct.
+ *
+ * <p>These methods are used to simplify object mapping, particularly to avoid full graph traversal
+ * and handle reference cycles or partial entity instantiations.
+ */
 public final class MapperUtils {
 
     private static final Logger LOG = LoggerFactory.getLogger(MapperUtils.class);
@@ -27,13 +32,15 @@ public final class MapperUtils {
     }
 
     /**
-     * Maps a Player ID to a Player entity with only the ID set. Returns null if the ID is null.
+     * Maps a player ID from a DTO to a minimal Player entity with only the ID set.
+     *
+     * <p>Used by MapStruct to avoid full Player mapping and break potential circular references.
      *
      * @param playerId the Player ID, may be null
-     * @return Player entity or null
+     * @return a Player entity with only the ID set, or null if input is null
      */
-    @Named("mapPlayerIdToPlayer")
-    public static Player mapPlayerIdToPlayer(Long playerId) {
+    @Named("mapPlayeridDtoToPlayer")
+    public static Player mapPlayeridDtoToPlayer(Long playerId) {
         if (Objects.isNull(playerId)) {
             LOG.warn("▓▓ Player ID is null, returning null Player entity.");
             return null;
@@ -42,13 +49,18 @@ public final class MapperUtils {
     }
 
     /**
-     * Returns the first Game from the set or null if null/empty. Order is not guaranteed.
+     * Selects and returns the first Game from the given set, or null if the set is null or empty.
      *
-     * @param games set of Game entities, may be null or empty
-     * @return first Game or null
+     * <p>Used by MapStruct to simplify mapping of Player → PlayerDto by avoiding full game set
+     * mapping. This helps prevent circular references and reduces DTO complexity.
+     *
+     * <p>Note: The order is not guaranteed; selection is non-deterministic.
+     *
+     * @param games the set of Game entities, may be null or empty
+     * @return one Game from the set, or null if none
      */
-    @Named("mapSelectedGame")
-    public static Game mapSelectedGame(Set<Game> games) {
+    @Named("mapSelectedGameToDto")
+    public static Game mapSelectedGameToDto(Set<Game> games) {
         if (CollectionUtils.isEmpty(games)) {
             LOG.warn("▓▓ No selected games found (input is null or empty). Returning null.");
             return null;
