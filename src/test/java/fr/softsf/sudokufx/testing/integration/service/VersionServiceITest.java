@@ -29,6 +29,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.common.util.MyDateTime;
+import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.service.VersionService;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -132,32 +133,75 @@ class VersionServiceITest {
                         .contains("██ GitHub API returned non 200 status code: " + httpStatusCode));
     }
 
-    @ParameterizedTest
-    @ValueSource(strings = {"v0.0.0", "v0.0.1", "v0.1.1", "v2147483647.2147483647.2147483647"})
-    void givenValidGitHubVersions_whenCheckLatestVersion_thenCorrectResultReturned(
-            String onLineVersion) throws ExecutionException, InterruptedException, IOException {
-        when(mockResponse.statusCode()).thenReturn(200);
-        String jsonResponse = String.format(JSON, onLineVersion);
-        when(mockResponse.body()).thenReturn(jsonResponse);
-        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(mockResponse);
-        Task<Boolean> versionCheckTask =
-                new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
-        versionCheckTask.run();
-        boolean isLatestVersion = versionCheckTask.get();
-        if (onLineVersion.equals("v2147483647.2147483647.2147483647")) {
-            assertFalse(isLatestVersion);
-        } else {
-            assertTrue(isLatestVersion);
+    @Test
+    void givenRealCurrentVersion_whenCheckLatestVersion_thenCompareWithNearbyVersions()
+            throws Exception {
+        String currentVersionRaw = JVMApplicationProperties.INSTANCE.getAppVersion();
+        assertNotNull(currentVersionRaw, "Current version should not be null");
+        assertTrue(currentVersionRaw.startsWith("v"), "Version must start with 'v'");
+        String currentVersion = currentVersionRaw.substring(1);
+        String[] currentParts = currentVersion.split("\\.");
+        int currentMajor = Integer.parseInt(currentParts[0]);
+        int currentMinor = Integer.parseInt(currentParts[1]);
+        int currentPatch = Integer.parseInt(currentParts[2]);
+        for (int major = Math.max(0, currentMajor - 1); major <= currentMajor + 1; major++) {
+            for (int minor = Math.max(0, currentMinor - 1); minor <= currentMinor + 1; minor++) {
+                for (int patch = Math.max(0, currentPatch - 1);
+                        patch <= currentPatch + 1;
+                        patch++) {
+                    String onlineVersion = String.format("v%d.%d.%d", major, minor, patch);
+                    String jsonResponse = String.format(JSON, onlineVersion);
+                    when(mockResponse.statusCode()).thenReturn(200);
+                    when(mockResponse.body()).thenReturn(jsonResponse);
+                    when(mockHttpClient.send(
+                                    any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                            .thenReturn(mockResponse);
+                    Task<Boolean> versionCheckTask =
+                            new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
+                    versionCheckTask.run();
+                    boolean isLatestVersion = versionCheckTask.get();
+                    int comparison = compareVersions(currentVersion, onlineVersion.substring(1));
+                    if (comparison >= 0) {
+                        assertTrue(
+                                isLatestVersion,
+                                () ->
+                                        "Expected current version "
+                                                + currentVersionRaw
+                                                + " to be up to date compared to "
+                                                + onlineVersion);
+                    } else {
+                        assertFalse(
+                                isLatestVersion,
+                                () ->
+                                        "Expected current version "
+                                                + currentVersionRaw
+                                                + " to NOT be up to date compared to "
+                                                + onlineVersion);
+                    }
+                }
+            }
         }
-        verify(mockHttpClient, times(1))
-                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
-        assertTrue(
-                logWatcher
-                        .list
-                        .getFirst()
-                        .getFormattedMessage()
-                        .contains("▓▓ GitHub version check: currentVersion="));
+    }
+
+    /**
+     * Compares two semantic versions (major.minor.patch).
+     *
+     * @param version1 the first version
+     * @param version2 the second version
+     * @return negative if version1 < version2, positive if version1 > version2, zero if equal
+     */
+    private int compareVersions(final String version1, final String version2) {
+        String[] v1 = version1.split("\\.");
+        String[] v2 = version2.split("\\.");
+        int majorComparison = Integer.compare(Integer.parseInt(v1[0]), Integer.parseInt(v2[0]));
+        if (majorComparison != 0) {
+            return majorComparison;
+        }
+        int minorComparison = Integer.compare(Integer.parseInt(v1[1]), Integer.parseInt(v2[1]));
+        if (minorComparison != 0) {
+            return minorComparison;
+        }
+        return Integer.compare(Integer.parseInt(v1[2]), Integer.parseInt(v2[2]));
     }
 
     @ParameterizedTest
@@ -190,5 +234,25 @@ class VersionServiceITest {
             }
             default -> throw new AssertionError("Unexpected version format: " + onLineVersion);
         }
+    }
+
+    @Test
+    void givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError()
+            throws Exception {
+        when(mockResponse.statusCode()).thenReturn(200);
+        when(mockResponse.body()).thenReturn("{ invalid json }"); // JSON invalide
+        when(mockHttpClient.send(any(), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        VersionService service = new VersionService(mockHttpClient, new ObjectMapper());
+        Task<Boolean> task = service.checkLatestVersion();
+        task.run();
+        boolean result = task.get();
+        assertTrue(result);
+        assertTrue(
+                logWatcher
+                        .list
+                        .getFirst()
+                        .getFormattedMessage()
+                        .contains("██ Error parsing GitHub API response:"));
     }
 }
