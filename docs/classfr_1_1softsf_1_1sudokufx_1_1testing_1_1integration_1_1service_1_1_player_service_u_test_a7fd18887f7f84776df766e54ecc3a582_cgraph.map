@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.testing.integration.service.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException" name="fr.softsf.sudokufx.testing.integration.service.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,65,374,124"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aeb9760499a9309facaec4ff31e172f76" title=" " alt="" coords="422,81,629,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,92,406,92,406,97,374,97"/>
+<area shape="poly" id="edge7_Node000002_Node000002" title=" " alt="" coords="480,83,472,73,478,63,496,57,525,55,558,57,575,64,573,69,557,63,525,60,497,62,481,67,477,72,484,79"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="677,5,916,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="563,78,676,41,708,33,710,39,678,47,565,83"/>
+<area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a37aaf8c06967608e0eac24a4d458f34b" title=" " alt="" coords="694,56,899,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="629,82,678,78,679,83,630,88"/>
+<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title=" " alt="" coords="696,107,898,133"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="630,102,680,106,679,112,629,107"/>
+<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d" title=" " alt="" coords="704,157,890,200"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="567,106,678,143,702,150,700,155,676,148,565,111"/>
+<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" title=" " alt="" coords="969,19,1154,61"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="899,55,954,49,954,55,900,61"/>
+<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" title=" " alt="" coords="964,85,1159,112"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="900,78,949,84,949,89,899,83"/>
+</map>

@@ -94,7 +94,8 @@ var annotated_dup =
             [ "Software", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software" ]
           ] ],
           [ "navigation", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html", [
-            [ "Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator" ]
+            [ "Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator" ],
+            [ "CoordinatorUTest", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test" ]
           ] ],
           [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", [
             [ "BackgroundRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_background_repository.html", null ],
@@ -125,6 +126,7 @@ var annotated_dup =
                 ] ]
               ] ],
               [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html", [
+                [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test" ],
                 [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test" ]
               ] ]
             ] ],
@@ -152,6 +154,7 @@ var annotated_dup =
                 ] ]
               ] ],
               [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", [
+                [ "ActiveMenuOrSubmenuViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test" ],
                 [ "MenuBackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_background_view_model_u_test" ]
               ] ]
             ] ]
@@ -180,6 +183,7 @@ var annotated_dup =
             ] ],
             [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
             [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],
+            [ "HelpViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test" ],
             [ "MenuBackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model" ],
             [ "MenuHiddenViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model" ],
             [ "MenuLevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model" ],

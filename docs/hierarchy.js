@@ -9,6 +9,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel.ActiveMenu", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.viewmodel.ActiveMenuOrSubmenuViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html", null ],
     [ "Alert", null, [
       [ "fr.softsf.sudokufx.view.component.MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html", null ]
     ] ],
@@ -23,6 +24,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.view.component.toaster.ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.navigation.Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", null ],
+    [ "fr.softsf.sudokufx.navigation.CoordinatorUTest", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.enums.DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.enums.DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test.html", null ],
     [ "fr.softsf.sudokufx.common.util.DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html", null ],
@@ -48,6 +50,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.view.component.PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.viewmodel.HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.HelpViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.config.HttpClientConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_http_client_config.html", null ],
     [ "fr.softsf.sudokufx.common.enums.I18n", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html", null ],
@@ -138,6 +141,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerLanguage.PlayerLanguageBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_1_1_player_language_builder.html", null ],
     [ "fr.softsf.sudokufx.service.PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html", null ],
+    [ "fr.softsf.sudokufx.testing.integration.service.PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.enums.ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", null ],
     [ "fr.softsf.sudokufx.testing.integration.common.enums.ScreenSizeITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test.html", null ],
     [ "fr.softsf.sudokufx.config.database.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", null ],

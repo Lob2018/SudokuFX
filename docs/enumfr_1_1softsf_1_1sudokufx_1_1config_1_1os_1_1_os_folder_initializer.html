@@ -106,7 +106,7 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_fo
 </div><!--header-->
 <div class="contents">
 
-<p>Utility enum responsible for creating the necessary folders for the application to function properly.  
+<p>Utility enum to initialize required application folders (data and logs).  
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.config.os.OsFolderInitializer:</div>
@@ -119,10 +119,10 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_fo
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a519059f5adc8e7f898fc087f7a5fde0a" id="r_a519059f5adc8e7f898fc087f7a5fde0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a519059f5adc8e7f898fc087f7a5fde0a">createFolder</a> (final File folder)</td></tr>
-<tr class="memdesc:a519059f5adc8e7f898fc087f7a5fde0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to create a folder at the specified path and confirms its creation.  <br /></td></tr>
+<tr class="memdesc:a519059f5adc8e7f898fc087f7a5fde0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the specified folder if it does not already exist.  <br /></td></tr>
 <tr class="separator:a519059f5adc8e7f898fc087f7a5fde0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d37da3c1267bc5ede622348b0a53ea7" id="r_a8d37da3c1267bc5ede622348b0a53ea7"><td class="memItemLeft" align="right" valign="top">String[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d37da3c1267bc5ede622348b0a53ea7">initializeFolders</a> (String dataFolderPath, String logsFolderPath)</td></tr>
-<tr class="memdesc:a8d37da3c1267bc5ede622348b0a53ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates folders for data and logs.  <br /></td></tr>
+<tr class="memdesc:a8d37da3c1267bc5ede622348b0a53ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates data and logs folders at the specified paths.  <br /></td></tr>
 <tr class="separator:a8d37da3c1267bc5ede622348b0a53ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -136,8 +136,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:ad6d1475680e61051a63b96733ec03456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Utility enum responsible for creating the necessary folders for the application to function properly. </p>
-<p>It provides methods to create data and log folders at specified paths, ensuring that these essential directories exist before the application proceeds. This utility class is designed to be used statically and cannot be instantiated. </p>
+<div class="textblock"><p>Utility enum to initialize required application folders (data and logs). </p>
+<p>Provides static-like methods to ensure these directories exist before usage. Designed to be non-instantiable outside the enum instance. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a519059f5adc8e7f898fc087f7a5fde0a" name="a519059f5adc8e7f898fc087f7a5fde0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a519059f5adc8e7f898fc087f7a5fde0a">&#9670;&#160;</a></span>createFolder()</h2>
@@ -154,10 +154,17 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Attempts to create a folder at the specified path and confirms its creation. </p>
+<p>Creates the specified folder if it does not already exist. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">folder</td><td>The folder that should be created. </td></tr>
+    <tr><td class="paramname">folder</td><td>the folder to create; must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if folder is null </td></tr>
+    <tr><td class="paramname">RuntimeException</td><td>if folder creation fails or a security error occurs </td></tr>
   </table>
   </dd>
 </dl>
@@ -183,16 +190,23 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates folders for data and logs. </p>
-<p>This method attempts to create the specified data and logs folder paths. If either folder cannot be created, it throws a RuntimeException.</p>
+<p>Creates data and logs folders at the specified paths. </p>
+<p>Validates that folder paths are neither null nor blank.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dataFolderPath</td><td>The path to the data folder to be created. </td></tr>
-    <tr><td class="paramname">logsFolderPath</td><td>The path to the logs folder to be created. </td></tr>
+    <tr><td class="paramname">dataFolderPath</td><td>path to the data folder to create </td></tr>
+    <tr><td class="paramname">logsFolderPath</td><td>path to the logs folder to create </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An array of strings containing the paths of the created folders. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array containing the created folder paths </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if either folder path is null or blank </td></tr>
+    <tr><td class="paramname">RuntimeException</td><td>if folder creation fails </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -249,7 +263,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1config.html">config</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html">os</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html">OsFolderInitializer</a></li>
-    <li class="footer">Generated on Thu Jun 26 2025 12:26:50 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jun 29 2025 16:08:13 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

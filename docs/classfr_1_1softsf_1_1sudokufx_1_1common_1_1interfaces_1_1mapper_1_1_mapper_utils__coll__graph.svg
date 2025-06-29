@@ -29,11 +29,11 @@
 <text text-anchor="start" x="18.38" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="39.75" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="16.88" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="39.75" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Player mapPlayerId</text>
-<text text-anchor="start" x="39.75" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToPlayer(Long playerId)</text>
+<text text-anchor="start" x="39.75" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Player mapPlayerid</text>
+<text text-anchor="start" x="39.75" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">DtoToPlayer(Long playerId)</text>
 <text text-anchor="start" x="16.88" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="39.75" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Game mapSelectedGame</text>
-<text text-anchor="start" x="39.75" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Set&lt; Game &gt; games)</text>
+<text text-anchor="start" x="39.75" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToDto(Set&lt; Game &gt; games)</text>
 <text text-anchor="start" x="18.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="39.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MapperUtils()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-90 0,-90 209,-90 209,-90 0,-90"/>

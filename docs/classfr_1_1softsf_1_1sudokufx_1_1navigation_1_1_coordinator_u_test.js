@@ -1,0 +1,24 @@
+var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test =
+[
+    [ "cleanup", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a24a23c29ced2f041243d9cece9cefde4", null ],
+    [ "givenBlankFXMLName_whenSetRootByFXMLName_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ae7f6fdece18ac2cd66e6d86db50bcc6e", null ],
+    [ "givenDefaultSceneSet_whenGetDefaultScene_thenReturnsSameScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a5e00d5cafb51cb95835da7746690c202", null ],
+    [ "givenGenericException_whenLoad_thenCatchAndReturnNull", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a612ceceb60686254906437b532699bc0", null ],
+    [ "givenHostServicesSet_whenOpenGitHubRepositoryReleaseUrl_thenShowDocumentIsCalled", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a0b4fa20a5408514c187f2630ca80ba98", null ],
+    [ "givenLanguageEn_whenToggleLanguage_thenLanguageIsSwitchedToFr", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ac7d92f41dd291fa5fbb7a61e10ecc099", null ],
+    [ "givenLanguageFR_whenToggleLanguage_thenLanguageIsSwitchedToEn", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#aa3cb813f0cc069fc6dc42abf14f5ec42", null ],
+    [ "givenNoHostServicesSet_whenOpenGitHubRepositoryReleaseUrl_thenLogsWarning", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#adca220bad58b9937949ee2efcf882ae3", null ],
+    [ "givenNullDynamicFontSize_whenSetDynamicFontSize_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6edc9f68c5b029401870d56b46ccc6e3", null ],
+    [ "givenNullFXMLLoader_whenConstructCoordinator_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a73136058d71dca3c641289ed5f36ac6b", null ],
+    [ "givenNullHostServices_whenSetHostServices_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ac1c1b33947d97fe12f108bfd91344d31", null ],
+    [ "givenNullPointerException_whenLoad_thenCatchAndReturnNull", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ae165b82d9d71ea754e7d0f77c91d5dda", null ],
+    [ "givenNullScene_whenSetDefaultScene_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ae9d391865052e17a211105f3bd2cb97f", null ],
+    [ "givenValidFXMLName_whenSetRootByFXMLName_thenSetsRootAndReturnsController", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a761650dcef5c2c98d3330f3f99fae9b0", null ],
+    [ "setup", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a53a538a9a518f67ccca0b9fe7e965f39", null ],
+    [ "coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ada6da66998710ee66acbf9a61684c2ba", null ],
+    [ "dynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6467f71053ff1d307ded7648135fb648", null ],
+    [ "fxmlLoader", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a7b781263e332eccc80b123d6c383d891", null ],
+    [ "hostServices", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#acc7b9df90ce4151f4f981e00549c73ef", null ],
+    [ "logWatcher", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a3275fd30982e40d2a1fa3e4edd5b7be0", null ],
+    [ "scene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a5231725b1f22cb345d48cf82e2eed86a", null ]
+];

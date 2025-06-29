@@ -99,6 +99,8 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_f
 <div class="header">
   <div class="summary">
 <a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pac-attribs">Package Attributes</a> &#124;
+<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.config.os.OsFolderInitializerUTest Class Reference</div></div>
 </div><!--header-->
@@ -108,13 +110,15 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_f
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test__coll__graph.svg" width="295" height="310"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test__coll__graph.svg" width="295" height="539"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
 <tr class="memitem:a0e29ca25f45f4b4a1c4527aaf73f53b5" id="r_a0e29ca25f45f4b4a1c4527aaf73f53b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e29ca25f45f4b4a1c4527aaf73f53b5">givenExistingFolder_whenCreateFolder_thenNoCreationAttempted</a> ()</td></tr>
 <tr class="separator:a0e29ca25f45f4b4a1c4527aaf73f53b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80773c1307f5439f777bde382edd640f" id="r_a80773c1307f5439f777bde382edd640f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80773c1307f5439f777bde382edd640f">givenInvalidPaths_whenInitializeFolders_thenIllegalArgumentException</a> (String dataPath, String logsPath, String expectedInMessage)</td></tr>
+<tr class="separator:a80773c1307f5439f777bde382edd640f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b34bfdbd0f33132667bf15dba7abd5" id="r_a84b34bfdbd0f33132667bf15dba7abd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84b34bfdbd0f33132667bf15dba7abd5">givenNoFileAndNonExistentFolder_whenCreateFolderFails_thenRuntimeExceptionThrown</a> ()</td></tr>
 <tr class="separator:a84b34bfdbd0f33132667bf15dba7abd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa48cf58eac16df4e7e69d4ea83266f29" id="r_aa48cf58eac16df4e7e69d4ea83266f29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa48cf58eac16df4e7e69d4ea83266f29">givenNoFileButExistentFolder_whenCreateFolder_thenFolderCreated</a> ()</td></tr>
@@ -123,6 +127,20 @@ Package Functions</h2></td></tr>
 <tr class="separator:ab15e762184f5683f9e04b0be81e3f268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6b6ff3507d3de068439cec0f9c97b42" id="r_ae6b6ff3507d3de068439cec0f9c97b42"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b6ff3507d3de068439cec0f9c97b42">givenNonExistentFolder_whenCreateFolder_thenSecurityException</a> ()</td></tr>
 <tr class="separator:ae6b6ff3507d3de068439cec0f9c97b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424e16b27c37b1b2e01c956d05d68bcf" id="r_a424e16b27c37b1b2e01c956d05d68bcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a424e16b27c37b1b2e01c956d05d68bcf">givenNullFolder_whenCreateFolder_thenIllegalArgumentException</a> ()</td></tr>
+<tr class="separator:a424e16b27c37b1b2e01c956d05d68bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e1fe467d878ce57f98aa5461de33e5c" id="r_a6e1fe467d878ce57f98aa5461de33e5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e1fe467d878ce57f98aa5461de33e5c">givenValidPaths_whenInitializeFolders_thenFoldersCreated</a> ()</td></tr>
+<tr class="separator:a6e1fe467d878ce57f98aa5461de33e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-attribs" name="pac-attribs"></a>
+Package Attributes</h2></td></tr>
+<tr class="memitem:ae75299ddae4dd2603c9c217645b90dea" id="r_ae75299ddae4dd2603c9c217645b90dea"><td class="memItemLeft" align="right" valign="top">Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae75299ddae4dd2603c9c217645b90dea">tempDir</a></td></tr>
+<tr class="separator:ae75299ddae4dd2603c9c217645b90dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
+Static Private Member Functions</h2></td></tr>
+<tr class="memitem:afada16499adf536133cd156c29d06c07" id="r_afada16499adf536133cd156c29d06c07"><td class="memItemLeft" align="right" valign="top">static Stream&lt; Arguments &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afada16499adf536133cd156c29d06c07">invalidPathsProvider</a> ()</td></tr>
+<tr class="separator:afada16499adf536133cd156c29d06c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0e29ca25f45f4b4a1c4527aaf73f53b5" name="a0e29ca25f45f4b4a1c4527aaf73f53b5"></a>
@@ -147,6 +165,47 @@ Package Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80773c1307f5439f777bde382edd640f" name="a80773c1307f5439f777bde382edd640f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80773c1307f5439f777bde382edd640f">&#9670;&#160;</a></span>givenInvalidPaths_whenInitializeFolders_thenIllegalArgumentException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.config.os.OsFolderInitializerUTest.givenInvalidPaths_whenInitializeFolders_thenIllegalArgumentException </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>dataPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>logsPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>expectedInMessage</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test_a80773c1307f5439f777bde382edd640f_cgraph.svg" width="318" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -250,6 +309,104 @@ Package Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a424e16b27c37b1b2e01c956d05d68bcf" name="a424e16b27c37b1b2e01c956d05d68bcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424e16b27c37b1b2e01c956d05d68bcf">&#9670;&#160;</a></span>givenNullFolder_whenCreateFolder_thenIllegalArgumentException()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.config.os.OsFolderInitializerUTest.givenNullFolder_whenCreateFolder_thenIllegalArgumentException </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6e1fe467d878ce57f98aa5461de33e5c" name="a6e1fe467d878ce57f98aa5461de33e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e1fe467d878ce57f98aa5461de33e5c">&#9670;&#160;</a></span>givenValidPaths_whenInitializeFolders_thenFoldersCreated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.config.os.OsFolderInitializerUTest.givenValidPaths_whenInitializeFolders_thenFoldersCreated </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afada16499adf536133cd156c29d06c07" name="afada16499adf536133cd156c29d06c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afada16499adf536133cd156c29d06c07">&#9670;&#160;</a></span>invalidPathsProvider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Stream&lt; Arguments &gt; fr.softsf.sudokufx.config.os.OsFolderInitializerUTest.invalidPathsProvider </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ae75299ddae4dd2603c9c217645b90dea" name="ae75299ddae4dd2603c9c217645b90dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae75299ddae4dd2603c9c217645b90dea">&#9670;&#160;</a></span>tempDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Path fr.softsf.sudokufx.config.os.OsFolderInitializerUTest.tempDir</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/test/java/fr/softsf/sudokufx/config/os/<a class="el" href="_os_folder_initializer_u_test_8java.html">OsFolderInitializerUTest.java</a></li>
 </ul>
@@ -259,7 +416,7 @@ Package Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1config.html">config</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html">os</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html">OsFolderInitializerUTest</a></li>
-    <li class="footer">Generated on Thu Jun 26 2025 12:26:50 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jun 29 2025 16:08:13 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

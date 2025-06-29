@@ -126,6 +126,7 @@ $(function(){initNavTree('_version_service_i_test_8java.html',''); initResizable
 <code>import ch.qos.logback.classic.spi.ILoggingEvent;</code><br />
 <code>import ch.qos.logback.core.read.ListAppender;</code><br />
 <code>import fr.softsf.sudokufx.common.util.MyDateTime;</code><br />
+<code>import fr.softsf.sudokufx.config.JVMApplicationProperties;</code><br />
 <code>import fr.softsf.sudokufx.service.VersionService;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />
 <code>import org.mockito.ArgumentMatchers.any;</code><br />
@@ -154,16 +155,21 @@ Functions</h2></td></tr>
 <tr class="separator:a7bbbbe83e28267f992d4d7105d9aeb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a092733fdcf89ce618c4bbc1cc15bf74f" id="r_a092733fdcf89ce618c4bbc1cc15bf74f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a092733fdcf89ce618c4bbc1cc15bf74f">fr.softsf.sudokufx.testing.integration.service.cleanup</a> ()  throws Exception </td></tr>
 <tr class="separator:a092733fdcf89ce618c4bbc1cc15bf74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49b8dc5875a811f98d1f7fb2bc464c2" id="r_ad49b8dc5875a811f98d1f7fb2bc464c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#ad49b8dc5875a811f98d1f7fb2bc464c2">fr.softsf.sudokufx.testing.integration.service.compareVersions</a> (final String version1, final String version2)</td></tr>
+<tr class="memdesc:ad49b8dc5875a811f98d1f7fb2bc464c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two semantic versions (major.minor.patch).  <br /></td></tr>
+<tr class="separator:ad49b8dc5875a811f98d1f7fb2bc464c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1af6dbceb188908fcad8cafa7f3b9782" id="r_a1af6dbceb188908fcad8cafa7f3b9782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a1af6dbceb188908fcad8cafa7f3b9782">fr.softsf.sudokufx.testing.integration.service.eachSetup</a> ()</td></tr>
 <tr class="separator:a1af6dbceb188908fcad8cafa7f3b9782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e0de5f756111883f130dc38c8f5c23b" id="r_a5e0de5f756111883f130dc38c8f5c23b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a5e0de5f756111883f130dc38c8f5c23b">fr.softsf.sudokufx.testing.integration.service.givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue</a> ()  throws Exception </td></tr>
 <tr class="separator:a5e0de5f756111883f130dc38c8f5c23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adff11d0359879827ec8684105d54e379" id="r_adff11d0359879827ec8684105d54e379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#adff11d0359879827ec8684105d54e379">fr.softsf.sudokufx.testing.integration.service.givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue</a> (String onLineVersion)  throws ExecutionException, InterruptedException, IOException </td></tr>
 <tr class="separator:adff11d0359879827ec8684105d54e379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11892db470b9bcbcfee3523f101d37ca" id="r_a11892db470b9bcbcfee3523f101d37ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a11892db470b9bcbcfee3523f101d37ca">fr.softsf.sudokufx.testing.integration.service.givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError</a> ()  throws Exception </td></tr>
+<tr class="separator:a11892db470b9bcbcfee3523f101d37ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fbdac2142edc62f949d835e1c4b6e65" id="r_a3fbdac2142edc62f949d835e1c4b6e65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a3fbdac2142edc62f949d835e1c4b6e65">fr.softsf.sudokufx.testing.integration.service.givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue</a> (int httpStatusCode)  throws IOException, InterruptedException, ExecutionException </td></tr>
 <tr class="separator:a3fbdac2142edc62f949d835e1c4b6e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ccf34d0ce17de99f5526805ad07b5cc" id="r_a7ccf34d0ce17de99f5526805ad07b5cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a7ccf34d0ce17de99f5526805ad07b5cc">fr.softsf.sudokufx.testing.integration.service.givenValidGitHubVersions_whenCheckLatestVersion_thenCorrectResultReturned</a> (String onLineVersion)  throws ExecutionException, InterruptedException, IOException </td></tr>
-<tr class="separator:a7ccf34d0ce17de99f5526805ad07b5cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af264614a70c0e0b8aee6c86321ebd2ab" id="r_af264614a70c0e0b8aee6c86321ebd2ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#af264614a70c0e0b8aee6c86321ebd2ab">fr.softsf.sudokufx.testing.integration.service.givenRealCurrentVersion_whenCheckLatestVersion_thenCompareWithNearbyVersions</a> ()  throws Exception </td></tr>
+<tr class="separator:af264614a70c0e0b8aee6c86321ebd2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -186,7 +192,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li><li class="navelem"><a class="el" href="dir_97debbc39e3b917fca663601bb2b0709.html">java</a></li><li class="navelem"><a class="el" href="dir_8d7deeaf7546933b8f2dc85f32ff302b.html">fr</a></li><li class="navelem"><a class="el" href="dir_306a5b3cb699d06afc248376b3d7d66a.html">softsf</a></li><li class="navelem"><a class="el" href="dir_a649969fb0ce802377fa0d754848ffcd.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_8c4f7a55155647995fd1da6533383b17.html">testing</a></li><li class="navelem"><a class="el" href="dir_f7f1075d3ce4cc18cf0ed62a5e1b2887.html">integration</a></li><li class="navelem"><a class="el" href="dir_3049222cd6dfd9b6a83aa7f467061c73.html">service</a></li><li class="navelem"><a class="el" href="_version_service_i_test_8java.html">VersionServiceITest.java</a></li>
-    <li class="footer">Generated on Thu Jun 26 2025 12:26:50 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jun 29 2025 16:08:13 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -8,5 +8,5 @@ var searchData=
   ['frenchformatter_5',['frenchFormatter',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a68f77aa53053bded5a83fa4a1e952775',1,'fr::softsf::sudokufx::common::util::MyDateTime']]],
   ['fulldetailtext_6',['fullDetailText',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html#a8c44d27bc22da4d21363327f3a3473e1',1,'fr::softsf::sudokufx::view::component::toaster::ToasterButton']]],
   ['fx_5ffont_5fsize_5f0_5f8_5fem_7',['FX_FONT_SIZE_0_8_EM',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#abf917fd760e0f30aeef7318058fc3358',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
-  ['fxmlloader_8',['fxmlLoader',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#abcaae859838b7d23fb19c4cded75d16a',1,'fr::softsf::sudokufx::navigation::Coordinator']]]
+  ['fxmlloader_8',['fxmlLoader',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#abcaae859838b7d23fb19c4cded75d16a',1,'fr.softsf.sudokufx.navigation.Coordinator.fxmlLoader'],['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a7b781263e332eccc80b123d6c383d891',1,'fr.softsf.sudokufx.navigation.CoordinatorUTest.fxmlLoader']]]
 ];

@@ -6,6 +6,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test =
     [ "givenLogbackConfig_whenGetLogsFolderPath_thenCorrectPathReturned", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#ac5ada97cb8c098ce48c7a29542f0d05b", null ],
     [ "givenLogger_whenLogFatalMessage_thenMessageLoggedCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a329f19a5a4d2b42ba5c3ab609b3ea814", null ],
     [ "givenLogsFolderPath_whenCheckFolderExists_thenFolderExists", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#ade10611fbac366c85ceb66c7859d15b6", null ],
+    [ "givenMissingLogbackConfigResource_whenConfigureLogback_thenIllegalArgumentExceptionThrown", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a89803f282f05cf2a50e0249ffcf6b439", null ],
     [ "givenSpringContextOnRefresh_whenPrintLogEntryMessage_thenCorrectMessageLogged", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a8903e486fc1e2601ef1e71ef1c4f5346", null ],
     [ "setup", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a72db551c535b66d2c1aca1e7e2446e68", null ],
     [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a6aba774665b5ff3328cca63870d0a765", null ],

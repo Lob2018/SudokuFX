@@ -1,6 +1,7 @@
 var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
 [
     [ "Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa63a8ea1cf99200dbee0e27a3ce78060", null ],
+    [ "exitPlatform", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a64e23a6257dc42929da8e6ee620fdca7", null ],
     [ "getDefaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a8236a3100b3540f3c96b6b3db3042b30", null ],
     [ "openGitHubRepositoryReleaseUrl", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa12944693adf73a87865a6480b557d2f", null ],
     [ "setDefaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a51f623613b1cd7c8cd7cd2a10f3d420d", null ],

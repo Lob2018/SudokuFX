@@ -262,44 +262,46 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" target="_top" xlink:title="Coordinator is a Spring&#45;managed component that handles navigation and UI logic in a JavaFX applicatio...">
-<polygon fill="white" stroke="none" points="728.25,-1880 547.5,-1880 547.5,-1584 728.25,-1584 728.25,-1880"/>
-<text text-anchor="start" x="574.5" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.navigation.</text>
-<text text-anchor="start" x="612.75" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator</text>
-<text text-anchor="start" x="553" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="561.5" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene defaultScene</text>
-<text text-anchor="start" x="553" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="561.5" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00">final FXMLLoader fxmlLoader</text>
-<text text-anchor="start" x="553" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="561.5" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00">HostServices hostServices</text>
-<text text-anchor="start" x="553" y="-1790.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="561.5" y="-1790.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="551.5" y="-1774.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="561.5" y="-1774.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator(FXMLLoader</text>
-<text text-anchor="start" x="561.5" y="-1762.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
-<text text-anchor="start" x="551.5" y="-1746.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="561.5" y="-1746.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene getDefaultScene()</text>
-<text text-anchor="start" x="551.5" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="561.5" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openGitHubRepository</text>
-<text text-anchor="start" x="561.5" y="-1718.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReleaseUrl()</text>
-<text text-anchor="start" x="551.5" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="561.5" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDefaultScene</text>
-<text text-anchor="start" x="561.5" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Scene scene)</text>
-<text text-anchor="start" x="551.5" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="561.5" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDynamicFontSize</text>
-<text text-anchor="start" x="561.5" y="-1662.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DynamicFontSize dynamicFontSize)</text>
-<text text-anchor="start" x="551.5" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="561.5" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHostServices</text>
-<text text-anchor="start" x="561.5" y="-1634.5" font-family="Helvetica,sans-Serif" font-size="10.00">(HostServices hostServices)</text>
-<text text-anchor="start" x="551.5" y="-1618.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="561.5" y="-1618.5" font-family="Helvetica,sans-Serif" font-size="10.00">void toggleLanguage()</text>
-<text text-anchor="start" x="551.5" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="561.5" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T setRootByFXMLName</text>
-<text text-anchor="start" x="561.5" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
-<polygon fill="#666666" stroke="#666666" points="547.5,-1850 547.5,-1850 728.25,-1850 728.25,-1850 547.5,-1850"/>
-<polygon fill="#666666" stroke="#666666" points="547.5,-1786 547.5,-1786 559.5,-1786 559.5,-1786 547.5,-1786"/>
-<polygon fill="#666666" stroke="#666666" points="559.5,-1786 559.5,-1786 728.25,-1786 728.25,-1786 559.5,-1786"/>
-<polygon fill="none" stroke="#666666" points="547.5,-1584 547.5,-1880 728.25,-1880 728.25,-1584 547.5,-1584"/>
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" target="_top" xlink:title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application fo...">
+<polygon fill="white" stroke="none" points="728.25,-1888 547.5,-1888 547.5,-1576 728.25,-1576 728.25,-1888"/>
+<text text-anchor="start" x="574.5" y="-1874.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.navigation.</text>
+<text text-anchor="start" x="612.75" y="-1862.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator</text>
+<text text-anchor="start" x="553" y="-1846.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="561.5" y="-1846.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene defaultScene</text>
+<text text-anchor="start" x="553" y="-1830.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="561.5" y="-1830.5" font-family="Helvetica,sans-Serif" font-size="10.00">final FXMLLoader fxmlLoader</text>
+<text text-anchor="start" x="553" y="-1814.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="561.5" y="-1814.5" font-family="Helvetica,sans-Serif" font-size="10.00">HostServices hostServices</text>
+<text text-anchor="start" x="553" y="-1798.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="561.5" y="-1798.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="551.5" y="-1782.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="561.5" y="-1782.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator(FXMLLoader</text>
+<text text-anchor="start" x="561.5" y="-1770.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
+<text text-anchor="start" x="551.5" y="-1754.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="561.5" y="-1754.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene getDefaultScene()</text>
+<text text-anchor="start" x="551.5" y="-1738.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="561.5" y="-1738.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openGitHubRepository</text>
+<text text-anchor="start" x="561.5" y="-1726.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReleaseUrl()</text>
+<text text-anchor="start" x="551.5" y="-1710.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="561.5" y="-1710.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDefaultScene</text>
+<text text-anchor="start" x="561.5" y="-1698.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Scene scene)</text>
+<text text-anchor="start" x="551.5" y="-1682.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="561.5" y="-1682.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDynamicFontSize</text>
+<text text-anchor="start" x="561.5" y="-1670.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DynamicFontSize dynamicFontSize)</text>
+<text text-anchor="start" x="551.5" y="-1654.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="561.5" y="-1654.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHostServices</text>
+<text text-anchor="start" x="561.5" y="-1642.5" font-family="Helvetica,sans-Serif" font-size="10.00">(HostServices hostServices)</text>
+<text text-anchor="start" x="551.5" y="-1626.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="561.5" y="-1626.5" font-family="Helvetica,sans-Serif" font-size="10.00">void toggleLanguage()</text>
+<text text-anchor="start" x="551.5" y="-1610.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="561.5" y="-1610.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
+<text text-anchor="start" x="551.5" y="-1594.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="561.5" y="-1594.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T setRootByFXMLName</text>
+<text text-anchor="start" x="561.5" y="-1582.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
+<polygon fill="#666666" stroke="#666666" points="547.5,-1858 547.5,-1858 728.25,-1858 728.25,-1858 547.5,-1858"/>
+<polygon fill="#666666" stroke="#666666" points="547.5,-1794 547.5,-1794 559.5,-1794 559.5,-1794 547.5,-1794"/>
+<polygon fill="#666666" stroke="#666666" points="559.5,-1794 559.5,-1794 728.25,-1794 728.25,-1794 559.5,-1794"/>
+<polygon fill="none" stroke="#666666" points="547.5,-1576 547.5,-1888 728.25,-1888 728.25,-1576 547.5,-1576"/>
 </a>
 </g>
 </g>
@@ -307,7 +309,7 @@
 <g id="edge5_Node000001_Node000006" class="edge">
 <title>Node6&#45;&gt;Node1</title>
 <g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M639.31,-1584.06C646.5,-1476.22 669.52,-1330.01 736.88,-1220 917.52,-924.96 1283.73,-711.47 1464.32,-619.39"/>
+<path fill="none" stroke="#63b8ff" d="M639.87,-1576.06C647.65,-1469.08 671.17,-1327.32 736.88,-1220 917.52,-924.96 1283.73,-711.47 1464.32,-619.39"/>
 <polygon fill="none" stroke="#63b8ff" points="1464.43,-619.33 1467.98,-613.05 1475.14,-613.91 1471.59,-620.19 1464.43,-619.33"/>
 </a>
 </g>
@@ -344,8 +346,8 @@
 <g id="edge6_Node000006_Node000007" class="edge">
 <title>Node7&#45;&gt;Node6</title>
 <g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M637.88,-2350.08C637.88,-2243.88 637.88,-2037.37 637.88,-1892.6"/>
-<polygon fill="none" stroke="#63b8ff" points="637.88,-1892.57 633.88,-1886.57 637.88,-1880.57 641.88,-1886.57 637.88,-1892.57"/>
+<path fill="none" stroke="#63b8ff" d="M637.88,-2350.08C637.88,-2245.86 637.88,-2045.03 637.88,-1900.76"/>
+<polygon fill="none" stroke="#63b8ff" points="637.88,-1900.76 633.88,-1894.76 637.88,-1888.76 641.88,-1894.76 637.88,-1900.76"/>
 </a>
 </g>
 <text text-anchor="middle" x="678.75" y="-2264.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;dynamicFontSize</text>
@@ -354,21 +356,24 @@
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html" target="_top" xlink:title="ViewModel responsible for displaying the help dialog.">
-<polygon fill="white" stroke="none" points="883.38,-1784 746.38,-1784 746.38,-1680 883.38,-1680 883.38,-1784"/>
-<text text-anchor="start" x="750.38" y="-1770.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="780.75" y="-1758.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel</text>
-<text text-anchor="start" x="753.12" y="-1742.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="762.88" y="-1742.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolderFactory</text>
-<text text-anchor="start" x="762.88" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolderFactory</text>
-<text text-anchor="start" x="751.62" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="762.88" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel(IOsFolder</text>
-<text text-anchor="start" x="762.88" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory iOsFolderFactory)</text>
-<text text-anchor="start" x="751.62" y="-1686.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="762.88" y="-1686.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showHelp()</text>
-<polygon fill="#666666" stroke="#666666" points="746.38,-1754 746.38,-1754 883.38,-1754 883.38,-1754 746.38,-1754"/>
-<polygon fill="#666666" stroke="#666666" points="746.38,-1726 746.38,-1726 760.88,-1726 760.88,-1726 746.38,-1726"/>
-<polygon fill="#666666" stroke="#666666" points="760.88,-1726 760.88,-1726 883.38,-1726 883.38,-1726 760.88,-1726"/>
-<polygon fill="none" stroke="#666666" points="746.38,-1680 746.38,-1784 883.38,-1784 883.38,-1680 746.38,-1680"/>
+<polygon fill="white" stroke="none" points="883.38,-1798 746.38,-1798 746.38,-1666 883.38,-1666 883.38,-1798"/>
+<text text-anchor="start" x="750.38" y="-1784.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="780.75" y="-1772.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel</text>
+<text text-anchor="start" x="753.12" y="-1756.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="762.88" y="-1756.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolderFactory</text>
+<text text-anchor="start" x="762.88" y="-1744.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolderFactory</text>
+<text text-anchor="start" x="751.62" y="-1728.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="762.88" y="-1728.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel(IOsFolder</text>
+<text text-anchor="start" x="762.88" y="-1716.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory iOsFolderFactory)</text>
+<text text-anchor="start" x="751.62" y="-1700.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="762.88" y="-1700.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showHelp()</text>
+<text text-anchor="start" x="751.62" y="-1684.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="762.88" y="-1684.5" font-family="Helvetica,sans-Serif" font-size="10.00">void displayAlert(Alert</text>
+<text text-anchor="start" x="762.88" y="-1672.5" font-family="Helvetica,sans-Serif" font-size="10.00"> alert)</text>
+<polygon fill="#666666" stroke="#666666" points="746.38,-1768 746.38,-1768 883.38,-1768 883.38,-1768 746.38,-1768"/>
+<polygon fill="#666666" stroke="#666666" points="746.38,-1740 746.38,-1740 760.88,-1740 760.88,-1740 746.38,-1740"/>
+<polygon fill="#666666" stroke="#666666" points="760.88,-1740 760.88,-1740 883.38,-1740 883.38,-1740 760.88,-1740"/>
+<polygon fill="none" stroke="#666666" points="746.38,-1666 746.38,-1798 883.38,-1798 883.38,-1666 746.38,-1666"/>
 </a>
 </g>
 </g>
@@ -376,7 +381,7 @@
 <g id="edge7_Node000001_Node000008" class="edge">
 <title>Node8&#45;&gt;Node1</title>
 <g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M812.07,-1680.21C808.96,-1584.48 812.59,-1373.18 891.88,-1220 1027.99,-957.03 1311.78,-739.78 1465.51,-635.56"/>
+<path fill="none" stroke="#63b8ff" d="M811.69,-1666.03C809.47,-1564.82 816.3,-1366.01 891.88,-1220 1027.99,-957.03 1311.78,-739.78 1465.51,-635.56"/>
 <polygon fill="none" stroke="#63b8ff" points="1465.2,-635.77 1467.94,-629.1 1475.15,-629.06 1472.42,-635.73 1465.2,-635.77"/>
 </a>
 </g>

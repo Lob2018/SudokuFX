@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.navigation.Coordinator.setRootByFXMLName" name="fr.softsf.sudokufx.navigation.Coordinator.setRootByFXMLName">
+<area shape="rect" id="Node000001" title="Loads the specified FXML (without extension), sets it as the scene root, and returns its controller." alt="" coords="5,5,230,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a64e23a6257dc42929da8e6ee620fdca7" title="Package&#45;private method to exit the JavaFX platform." alt="" coords="278,5,468,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,24,262,24,262,29,230,29"/>
+</map>

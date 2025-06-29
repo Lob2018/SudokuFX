@@ -1,0 +1,24 @@
+<map id="fr.softsf.sudokufx.testing.integration.service.PlayerServiceUTest.givenBlankPlayerName_whenGetPlayer_thenThrowsException" name="fr.softsf.sudokufx.testing.integration.service.PlayerServiceUTest.givenBlankPlayerName_whenGetPlayer_thenThrowsException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,138,286,197"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="589,37,828,63"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,135,268,111,333,90,456,67,573,54,574,59,456,72,334,95,270,116,210,140"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a37aaf8c06967608e0eac24a4d458f34b" title=" " alt="" coords="606,97,811,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,135,333,115,466,104,591,103,591,108,467,110,334,121,243,140"/>
+<area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" title=" " alt="" coords="881,33,1066,75"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="185,135,252,93,292,72,333,56,405,33,468,17,524,8,577,4,688,8,829,22,866,27,866,33,828,27,688,13,577,9,524,13,469,22,407,38,335,61,294,77,255,98,188,140"/>
+<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" title=" " alt="" coords="876,154,1071,181"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="211,195,328,240,402,263,483,282,569,296,656,300,743,294,786,286,827,274,863,258,896,236,948,190,952,194,899,240,866,263,829,279,787,291,744,299,656,306,568,301,482,287,401,268,327,245,209,200"/>
+<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title=" " alt="" coords="608,163,810,190"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="286,186,334,190,437,194,541,190,592,187,592,192,541,195,437,199,333,195,286,191"/>
+<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aeb9760499a9309facaec4ff31e172f76" title=" " alt="" coords="334,154,541,181"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="286,165,318,165,318,170,286,170"/>
+<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d" title=" " alt="" coords="616,222,802,265"/>
+<area shape="poly" id="edge14_Node000001_Node000008" title=" " alt="" coords="286,192,334,199,600,231,600,236,333,205,285,197"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="775,94,865,74,867,79,776,99"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="774,121,894,148,893,153,773,127"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="459,151,516,118,588,82,635,66,637,71,590,87,519,122,462,156"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="503,151,627,125,628,130,505,156"/>
+<area shape="poly" id="edge11_Node000007_Node000006" title=" " alt="" coords="541,168,592,170,592,175,541,174"/>
+<area shape="poly" id="edge12_Node000007_Node000007" title=" " alt="" coords="392,155,384,145,390,135,408,130,437,127,470,130,487,137,485,142,469,135,437,133,409,135,393,140,389,145,396,152"/>
+<area shape="poly" id="edge13_Node000007_Node000008" title=" " alt="" coords="489,179,616,215,615,220,487,184"/>
+</map>

@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.config.os.OsFolderInitializer.initializeFolders" name="fr.softsf.sudokufx.config.os.OsFolderInitializer.initializeFolders">
-<area shape="rect" id="Node000001" title="Creates folders for data and logs." alt="" coords="5,5,226,48"/>
-<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html#a519059f5adc8e7f898fc087f7a5fde0a" title="Attempts to create a folder at the specified path and confirms its creation." alt="" coords="274,5,476,48"/>
+<area shape="rect" id="Node000001" title="Creates data and logs folders at the specified paths." alt="" coords="5,5,226,48"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html#a519059f5adc8e7f898fc087f7a5fde0a" title="Creates the specified folder if it does not already exist." alt="" coords="274,5,476,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,24,258,24,258,29,226,29"/>
 </map>

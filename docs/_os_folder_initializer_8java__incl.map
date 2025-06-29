@@ -1,9 +1,13 @@
 <map id="src/main/java/fr/softsf/sudokufx/config/os/OsFolderInitializer.java" name="src/main/java/fr/softsf/sudokufx/config/os/OsFolderInitializer.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="73,5,265,64"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,90,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,67,78,105,75,101,128,62"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="114,112,224,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,64,172,96,166,96,166,64"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="248,112,402,139"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,62,291,102,288,106,218,67"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="213,5,405,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,90,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,67,97,117,95,112,230,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="114,120,229,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,67,203,113,200,109,266,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="254,120,364,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="312,64,312,104,306,104,306,64"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="388,120,542,147"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="357,62,433,109,430,114,354,67"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="566,112,807,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="406,58,591,105,590,110,405,63"/>
 </map>
