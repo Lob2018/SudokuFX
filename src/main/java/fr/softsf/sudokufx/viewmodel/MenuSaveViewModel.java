@@ -156,7 +156,7 @@ public class MenuSaveViewModel {
         return new GameDto(
                 0L,
                 new GridDto(0L, "0".repeat(81), "1".repeat(810), (byte) 75),
-                null,
+                0L,
                 new GameLevelDto((byte) 1, (byte) 1),
                 isSelected,
                 LocalDateTime.now(),
