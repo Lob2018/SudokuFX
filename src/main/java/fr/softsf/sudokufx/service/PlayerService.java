@@ -60,7 +60,7 @@ public class PlayerService {
      */
     private PlayerDto validatePlayerNameOrThrow(PlayerDto dto) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
-                dto.name(), "The player name cannot be null, empty or blank.");
+                dto.name(), "The player name cannot be null empty or blank, but was " + dto.name());
         return dto;
     }
 }
