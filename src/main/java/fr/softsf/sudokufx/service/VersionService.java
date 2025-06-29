@@ -13,9 +13,6 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpTimeoutException;
 import java.time.Duration;
 import java.util.List;
-
-import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import io.micrometer.common.util.StringUtils;
 import javafx.concurrent.Task;
 
 import org.slf4j.Logger;
@@ -27,9 +24,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.MyRegex;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
+import io.micrometer.common.util.StringUtils;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
 
@@ -134,21 +133,22 @@ public class VersionService {
 
     /**
      * Parses the JSON response from the GitHub API to extract the latest published version.
-     * Validates the input, extracts the first tag, checks its format, and compares it with
-     * the current application version.
+     * Validates the input, extracts the first tag, checks its format, and compares it with the
+     * current application version.
      *
      * @param json The non-null, non-blank JSON response from the GitHub API.
-     * @return true if the current version is up to date or if the response is invalid or an error occurs;
-     *         false if a newer version is available.
+     * @return true if the current version is up to date or if the response is invalid or an error
+     *     occurs; false if a newer version is available.
      * @throws IllegalArgumentException if the JSON is null, empty or blank.
      */
     private boolean parseResponse(String json) {
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(json,"json must not be null or blank, but was "+json);
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                json, "json must not be null or blank, but was " + json);
         try {
             List<TagDto> list = objectMapper.readValue(json, new TypeReference<>() {});
             String tagName =
                     list.stream().findFirst().map(TagDto::name).map(String::trim).orElse("");
-            if (StringUtils.isBlank(tagName)|| tagName.length() < 6) {
+            if (StringUtils.isBlank(tagName) || tagName.length() < 6) {
                 LOG.warn("▓▓ Invalid or too short tag received from GitHub: '{}'", tagName);
                 return true;
             }
@@ -175,19 +175,22 @@ public class VersionService {
     }
 
     /**
-     * Compares two version strings in the format MAJOR.MINOR.PATCH (e.g., "1.2.3").
-     * The comparison is done based on the numeric values of major, minor, and patch components.
+     * Compares two version strings in the format MAJOR.MINOR.PATCH (e.g., "1.2.3"). The comparison
+     * is done based on the numeric values of major, minor, and patch components.
      *
      * @param version1 the first version string, non-null and non-blank.
      * @param version2 the second version string, non-null and non-blank.
-     * @return a negative integer if version1 is older, a positive integer if version1 is newer,
-     *         or 0 if both versions are equal.
+     * @return a negative integer if version1 is older, a positive integer if version1 is newer, or
+     *     0 if both versions are equal.
      * @throws IllegalArgumentException if either version string is null, empty, or blank.
-     * @throws NumberFormatException if the version strings are not properly formatted (e.g., not "X.Y.Z").
+     * @throws NumberFormatException if the version strings are not properly formatted (e.g., not
+     *     "X.Y.Z").
      */
     private int compareVersions(final String version1, final String version2) {
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(version1,"version1 must not be null or blank, but was "+version1);
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(version2,"version2 must not be null or blank, but was "+version2);
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                version1, "version1 must not be null or blank, but was " + version1);
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                version2, "version2 must not be null or blank, but was " + version2);
         String[] v1 = version1.split("\\.");
         String[] v2 = version2.split("\\.");
         int majorComparison = Integer.compare(Integer.parseInt(v1[0]), Integer.parseInt(v2[0]));
