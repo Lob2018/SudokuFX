@@ -198,7 +198,7 @@ jobs:
 
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
       - name: Extract version
-        run: echo "POM_VERSION=$(cat pom.xml | grep -oPm1 '(?<=<version>)[^<]+')" >> $GITHUB_ENV
+        run: echo "POM_VERSION=$(awk '/<parent>/,/<\/parent>/ {next} /<version>/ {gsub(/.*<version>|<\/version>.*/, ""); print; exit}' pom.xml)" >> $GITHUB_ENV
       - name: Download output folder (Windows)
         uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
