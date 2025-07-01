@@ -166,27 +166,43 @@ public class SudoMain extends Application {
      * <p>Performs the following:
      *
      * <ul>
-     *   <li>Attempts to initialize the Coordinator
-     *   <li>Logs the exception
-     *   <li>If the error is related to SQL authorization, displays an error screen
-     *   <li>Otherwise, exits the application
+     *   <li>If the provided throwable is {@code null}, logs an error and exits the application.
+     *   <li>Attempts to initialize the Coordinator.
+     *   <li>Logs the exception.
+     *   <li>If the error is related to SQL authorization, displays an error screen.
+     *   <li>Otherwise, exits the application.
      * </ul>
      *
-     * @param throwable the exception thrown during initialization
+     * @param throwable the exception thrown during initialization, can be {@code null}.
      */
     private void handleSpringContextTaskFailed(Throwable throwable) {
-        initializeCoordinator();
-        String msg = "██ Error in splash screen initialization thread {} : {}";
-        SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException =
-                ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(throwable);
-        if (sqlInvalidAuthorizationSpecException == null) {
-            LOG.error(msg, " – triggering Platform.exit()", throwable.getMessage(), throwable);
+        try {
+            if (Objects.isNull(throwable)) {
+                LOG.error("██ Task failed but no exception provided – triggering Platform.exit()");
+                Platform.exit();
+                return;
+            }
+            initializeCoordinator();
+            String msg = "██ Error in splash screen initialization thread {} : {}";
+            SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException =
+                    ExceptionTools.INSTANCE.findSQLInvalidAuthException(throwable);
+            if (sqlInvalidAuthorizationSpecException == null) {
+                LOG.error(msg, " – triggering Platform.exit()", throwable.getMessage(), throwable);
+                Platform.exit();
+            } else {
+                LOG.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
+                sqlInvalidAuthorization(
+                        (Exception) throwable, sqlInvalidAuthorizationSpecException);
+                PauseTransition pause = createViewTransition("crashscreen-view", 0);
+                pause.play();
+            }
+        } catch (Exception ex) {
+            LOG.error(
+                    "██ Exception caught while handling task failure: {}, triggering"
+                            + " Platform.exit()",
+                    ex.getMessage(),
+                    ex);
             Platform.exit();
-        } else {
-            LOG.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
-            sqlInvalidAuthorization((Exception) throwable, sqlInvalidAuthorizationSpecException);
-            PauseTransition pause = createViewTransition("crashscreen-view", 0);
-            pause.play();
         }
     }
 
