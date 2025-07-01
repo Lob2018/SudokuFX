@@ -34,24 +34,15 @@ import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.view.SplashScreenView;
 
 /**
- * Entry point of the Sudo application. Responsible for initializing the JavaFX UI and the Spring
- * context.
+ * Main JavaFX application class launching the UI and initializing the Spring context.
  *
- * <p>This class orchestrates the application startup process, including:
+ * <p>Manages the splash screen, asynchronous Spring initialization, error handling,
+ * and view transitions. Handles fatal errors by showing a crash screen or exiting.
  *
- * <ul>
- *   <li>Displaying a splash screen
- *   <li>Initializing the Spring context asynchronously
- *   <li>Handling startup exceptions, including SQL authorization errors
- *   <li>Managing FXML view transitions (e.g., SplashScreen, CrashScreen, DefaultScreen)
- * </ul>
+ * <p>Uses a Coordinator component for view management and leverages ExceptionTools
+ * for centralized exception handling.
  *
- * <p>Annotations:
- *
- * <ul>
- *   <li>{@code @SpringBootApplication} – Bootstraps the Spring context.
- *   <li>{@code @ComponentScan} – Scans the specified packages for Spring components.
- * </ul>
+ * <p>This class is the JavaFX entry point and controls the primary Stage lifecycle.
  */
 @SpringBootApplication
 @ComponentScan({
@@ -79,13 +70,26 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Handles SQL invalid authorization exceptions.
+     * Logs an SQLInvalidAuthorizationSpecException with optional authentication details.
      *
-     * @param e The general exception
-     * @param sqlException The specific SQL invalid authorization exception
+     * <p>Throws an {@link IllegalArgumentException} if any argument is {@code null}. Logs the
+     * exception, and if the SQL state is {@code "28000"} or {@code "28501"}, logs a specific
+     * authentication message.
+     *
+     * @param e the general exception (must not be {@code null})
+     * @param sqlException the SQL authorization exception (must not be {@code null})
+     * @throws IllegalArgumentException if either argument is {@code null}
      */
-    private static void sqlInvalidAuthorization(
+    private static void logSqlInvalidAuthorization(
             Exception e, SQLInvalidAuthorizationSpecException sqlException) {
+        if (Objects.isNull(e)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "sqlInvalidAuthorization argument e must not be null");
+        }
+        if (Objects.isNull(sqlException)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "sqlInvalidAuthorization argument sqlException must not be null");
+        }
         LOG.error("██ SQLInvalidAuthorizationSpecException catch : {}", e.getMessage(), e);
         String sqlState = sqlException.getSQLState();
         if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
@@ -162,26 +166,26 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Called when the Spring context initialization task fails.
+     * Handles failure of the Spring context initialization task.
      *
-     * <p>Performs the following:
-     *
+     * <p>If {@code throwable} is {@code null}, logs and throws an {@link IllegalArgumentException}.
+     * Otherwise:
      * <ul>
-     *   <li>If the provided throwable is {@code null}, logs an error and exits the application.
-     *   <li>Attempts to initialize the Coordinator.
-     *   <li>Logs the exception.
-     *   <li>If the error is related to SQL authorization, displays an error screen.
-     *   <li>Otherwise, exits the application.
+     *   <li>Initializes the Coordinator</li>
+     *   <li>Logs the exception</li>
+     *   <li>If it's an SQL authorization error, logs details and displays a crash screen</li>
+     *   <li>Otherwise, exits the application</li>
      * </ul>
      *
-     * @param throwable the exception thrown during initialization, can be {@code null}.
+     * <p>If any exception occurs during the handling itself, it is logged and the application exits.
+     *
+     * @param throwable the exception thrown during initialization (must not be {@code null})
      */
     private void handleSpringContextTaskFailed(Throwable throwable) {
         try {
             if (Objects.isNull(throwable)) {
-                LOG.error("██ Task failed but no exception provided – triggering Platform.exit()");
-                Platform.exit();
-                return;
+                throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                        "Spring context task failed but no exception provided");
             }
             initializeCoordinator();
             String msg = "██ Error in splash screen initialization thread {} : {}";
@@ -192,7 +196,7 @@ public class SudoMain extends Application {
                 Platform.exit();
             } else {
                 LOG.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
-                sqlInvalidAuthorization(
+                logSqlInvalidAuthorization(
                         (Exception) throwable, sqlInvalidAuthorizationSpecException);
                 PauseTransition pause = createViewTransition("crashscreen-view", 0);
                 pause.play();
@@ -221,13 +225,15 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Creates a PauseTransition to delay loading of the next view.
+     * Creates a pause before loading the specified FXML view.
      *
-     * @param fxmlName The name of the FXML file to load
-     * @param minimumTimelapse The minimum time to pause
-     * @return A PauseTransition object
+     * @param fxmlName the FXML file name to load (must not be null or blank)
+     * @param minimumTimelapse the pause duration in milliseconds
+     * @return the configured PauseTransition
+     * @throws IllegalArgumentException if {@code fxmlName} is null or blank
      */
     private PauseTransition createViewTransition(String fxmlName, long minimumTimelapse) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(fxmlName,"FxmlName must not be null or blank, but was "+fxmlName);
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(
                 e -> {
