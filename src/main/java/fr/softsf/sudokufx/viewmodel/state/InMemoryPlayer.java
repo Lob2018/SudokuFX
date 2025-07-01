@@ -61,7 +61,7 @@ public class InMemoryPlayer {
                     "██ Error initializing player: {}, triggering Platform.exit()",
                     e.getMessage(),
                     e);
-            Platform.exit();
+            exitPlatform();
         }
     }
 
@@ -81,5 +81,9 @@ public class InMemoryPlayer {
      */
     public PlayerDto getCurrentPlayer() {
         return currentPlayer.get();
+    }
+
+    void exitPlatform() {
+        Platform.exit();
     }
 }
