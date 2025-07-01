@@ -51,7 +51,7 @@ abstract class AbstractDataSourceConfig {
     @Bean
     int logbackInitialization(final MyLogbackConfig myLogbackConfig) {
         if (Objects.isNull(myLogbackConfig)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The myLogbackConfig must not be null");
         }
         myLogbackConfig.printLogEntryMessage();
@@ -72,11 +72,11 @@ abstract class AbstractDataSourceConfig {
     HikariDataSource hikariDataSource(
             final IKeystore iKeystore, IOsFolderFactory iOsFolderFactory) {
         if (Objects.isNull(iKeystore)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The iKeystore must not be null");
         }
         if (Objects.isNull(iOsFolderFactory)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The iOsFolderFactory must not be null");
         }
         iKeystore.setupApplicationKeystore();
@@ -115,7 +115,7 @@ abstract class AbstractDataSourceConfig {
     @Bean(initMethod = "migrate")
     Flyway flyway(final HikariDataSource hikariDataSource) {
         if (Objects.isNull(hikariDataSource)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The hikariDataSource must not be null");
         }
         return Flyway.configure()

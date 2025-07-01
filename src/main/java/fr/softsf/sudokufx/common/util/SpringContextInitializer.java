@@ -24,7 +24,7 @@ public class SpringContextInitializer {
 
     public SpringContextInitializer(SpringContext context) {
         if (Objects.isNull(context)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The context must not be null");
         }
         this.context = context;
@@ -38,7 +38,8 @@ public class SpringContextInitializer {
      */
     public void runInitializationTask(Task<Void> task) {
         if (Objects.isNull(task)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The task must not be null");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The task must not be null");
         }
         new Thread(task).start();
     }

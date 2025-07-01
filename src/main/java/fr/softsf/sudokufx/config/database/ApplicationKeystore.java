@@ -53,11 +53,11 @@ final class ApplicationKeystore implements IKeystore {
 
     public ApplicationKeystore(IOsFolderFactory iOsFolderFactory, GenerateSecret generateSecret) {
         if (Objects.isNull(iOsFolderFactory)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The iOsFolderFactory must not be null");
         }
         if (Objects.isNull(generateSecret)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The generateSecret must not be null");
         }
         this.iOsFolderFactory = iOsFolderFactory;
@@ -76,11 +76,11 @@ final class ApplicationKeystore implements IKeystore {
                 keystoreFileName,
                 "keystoreFileName must not be null or blank, but was " + keystoreFileName);
         if (Objects.isNull(ks)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The keystore must not be null");
         }
         if (ObjectUtils.isEmpty(ApplicationKeystore.pwdArray)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The pwdArray must not be null or empty");
         }
         try (FileOutputStream fos = new FileOutputStream(keystoreFileName)) {
@@ -297,7 +297,8 @@ final class ApplicationKeystore implements IKeystore {
     private void addToKeystore(final String alias, final SecretKey secretKey) {
         validateAliasNotBlank(alias);
         if (Objects.isNull(secretKey)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("SecretKey must not be null");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "SecretKey must not be null");
         }
         KeyStore.SecretKeyEntry secret = new KeyStore.SecretKeyEntry(secretKey);
         KeyStore.ProtectionParameter entryPassword = new KeyStore.PasswordProtection(pwdArray);

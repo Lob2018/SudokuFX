@@ -47,7 +47,7 @@ public class PlayerService {
                 .map(this::validatePlayerNameOrThrow)
                 .orElseThrow(
                         () ->
-                                ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                                ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                                         "No selected player with selected game found."));
     }
 

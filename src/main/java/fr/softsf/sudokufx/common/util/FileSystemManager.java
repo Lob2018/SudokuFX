@@ -32,7 +32,7 @@ public final class FileSystemManager implements IFileSystem {
     @Override
     public boolean deleteDataFolderRecursively(final Path folderPath) {
         if (Objects.isNull(folderPath)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The folderPath mustn't be null");
         }
         if (folderPath.endsWith(DATA_FOLDER.getPath())) {
@@ -58,7 +58,8 @@ public final class FileSystemManager implements IFileSystem {
      */
     Throwable deleteFile(final Path path) {
         if (Objects.isNull(path)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The path mustn't be null");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The path mustn't be null");
         }
         try {
             Files.delete(path);

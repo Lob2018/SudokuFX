@@ -50,7 +50,7 @@ public class OsFolderFactoryManager {
                     new MacosFolderFactory(
                             macosIntendedPathDataFolder, macosIntendedPathLogsFolder);
             default ->
-                    throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+                    throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                             "Unsupported OS: " + os);
         };
     }

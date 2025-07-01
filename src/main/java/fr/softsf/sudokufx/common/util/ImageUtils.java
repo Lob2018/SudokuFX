@@ -61,7 +61,8 @@ public class ImageUtils {
      */
     public boolean isValidImage(File file) {
         if (Objects.isNull(file)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The file mustn't be null");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The file mustn't be null");
         }
         String fileName = file.getName().toLowerCase();
         return fileName.endsWith(".jpg")
@@ -80,7 +81,7 @@ public class ImageUtils {
      */
     public double calculateImageScaleFactor(Image tempImage) {
         if (Objects.isNull(tempImage)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The image to be resized mustn't be null");
         }
         double imageWidth = tempImage.getWidth();
@@ -102,7 +103,7 @@ public class ImageUtils {
      */
     public BackgroundImage createBackgroundImage(Image resizedImage) {
         if (Objects.isNull(resizedImage)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The background image mustn't be null");
         }
         return new BackgroundImage(

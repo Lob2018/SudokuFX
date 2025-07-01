@@ -35,7 +35,8 @@ public final class DynamicFontSize {
      */
     public DynamicFontSize(Scene scene) {
         if (Objects.isNull(scene))
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The scene mustn't be null");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The scene mustn't be null");
         this.scene = scene;
         initialize();
     }

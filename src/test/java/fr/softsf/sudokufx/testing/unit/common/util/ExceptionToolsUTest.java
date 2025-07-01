@@ -17,27 +17,27 @@ class ExceptionToolsUTest {
 
     @Test
     void
-            givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsSQLInvalidAuthorizationSpecException() {
+            givenThrowable_whenFindSQLInvalidAuthorizationSpecException_thenReturnsSQLInvalidAuthException() {
         Throwable t = new Throwable(new SQLInvalidAuthorizationSpecException());
         SQLInvalidAuthorizationSpecException result =
-                ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(t);
+                ExceptionTools.INSTANCE.findSQLInvalidAuthException(t);
         assertInstanceOf(SQLInvalidAuthorizationSpecException.class, result);
     }
 
     @Test
-    void givenThrowable_whenGetSQLInvalidAuthorizationSpecException_thenReturnsNull() {
+    void givenThrowable_whenFindSQLInvalidAuthException_thenReturnsNull() {
         Throwable t = new Throwable(new Exception());
         SQLInvalidAuthorizationSpecException result =
-                ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(t);
+                ExceptionTools.INSTANCE.findSQLInvalidAuthException(t);
         assertNull(result);
     }
 
     @Test
     void
-            givenMessage_whenCreateAndLogIllegalArgument_thenReturnsIllegalArgumentExceptionWithMessage() {
+            givenMessage_whenLogAndInstantiateIllegalArgument_thenReturnsIllegalArgumentExceptionWithMessage() {
         String message = "Invalid argument provided";
         IllegalArgumentException exception =
-                ExceptionTools.INSTANCE.createAndLogIllegalArgument(message);
+                ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(message);
         assertNotNull(exception);
         assertEquals(message, exception.getMessage());
 

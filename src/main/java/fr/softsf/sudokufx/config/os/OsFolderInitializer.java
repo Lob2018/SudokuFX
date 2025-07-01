@@ -54,7 +54,8 @@ public enum OsFolderInitializer {
      */
     void createFolder(final File folder) {
         if (Objects.isNull(folder)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("The folder mustn't be null");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The folder mustn't be null");
         }
         try {
             if (!folder.exists()) {

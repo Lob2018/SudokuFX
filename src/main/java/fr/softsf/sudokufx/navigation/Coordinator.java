@@ -54,7 +54,7 @@ public class Coordinator {
      */
     public Coordinator(FXMLLoader fxmlLoader) {
         if (Objects.isNull(fxmlLoader)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "FxmlLoader must not be null");
         }
         this.fxmlLoader = fxmlLoader;
@@ -77,7 +77,8 @@ public class Coordinator {
      */
     public void setDefaultScene(Scene scene) {
         if (Objects.isNull(scene)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("Scene must not be null");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "Scene must not be null");
         }
         this.defaultScene = scene;
     }
@@ -90,7 +91,7 @@ public class Coordinator {
      */
     public void setDynamicFontSize(DynamicFontSize dynamicFontSize) {
         if (Objects.isNull(dynamicFontSize)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "DynamicFontSize must not be null");
         }
         this.dynamicFontSize = dynamicFontSize;
@@ -169,7 +170,7 @@ public class Coordinator {
      */
     public void setHostServices(HostServices hostServices) {
         if (Objects.isNull(hostServices)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "HostServices must not be null");
         }
         this.hostServices = hostServices;

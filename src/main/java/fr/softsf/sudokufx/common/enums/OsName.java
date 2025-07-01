@@ -38,6 +38,7 @@ public enum OsName {
         if (current.contains(WINDOWS.os)) return WINDOWS;
         if (current.contains(LINUX.os)) return LINUX;
         if (current.contains(MAC.os)) return MAC;
-        throw ExceptionTools.INSTANCE.createAndLogIllegalArgument("Unsupported OS: " + current);
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                "Unsupported OS: " + current);
     }
 }

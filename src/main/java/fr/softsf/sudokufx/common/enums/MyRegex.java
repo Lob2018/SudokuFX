@@ -78,7 +78,7 @@ public enum MyRegex {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 text, "The text to validate must not be null or blank, but was " + text);
         if (Objects.isNull(pattern)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The pattern must not be null");
         }
         if (pattern.equals(SECRET_PATTERN)) {

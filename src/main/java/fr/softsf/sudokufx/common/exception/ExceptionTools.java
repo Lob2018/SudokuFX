@@ -22,12 +22,12 @@ public enum ExceptionTools {
     private static final Logger LOG = LoggerFactory.getLogger(ExceptionTools.class);
 
     /**
-     * Logs the given message and returns an {@link IllegalArgumentException} with it.
+     * Logs the given message and returns an instance of {@link IllegalArgumentException} with it.
      *
      * @param message the error message
      * @return the IllegalArgumentException instance (not thrown)
      */
-    public IllegalArgumentException createAndLogIllegalArgument(String message) {
+    public IllegalArgumentException logAndInstantiateIllegalArgument(String message) {
         IllegalArgumentException exception = new IllegalArgumentException(message);
         LOG.error("██ Exception : {}", message, exception);
         return exception;
@@ -50,16 +50,13 @@ public enum ExceptionTools {
     }
 
     /**
-     * Recursively searches for a SQLInvalidAuthorizationSpecException in the exception chain. This
-     * method traverses the exception hierarchy starting from the given Throwable, looking for an
-     * instance of SQLInvalidAuthorizationSpecException.
+     * Searches recursively through the exception chain to find the first {@link
+     * SQLInvalidAuthorizationSpecException}, starting from the given Throwable.
      *
-     * @param e The Throwable to start the search from. This can be any exception or error.
-     * @return The first SQLInvalidAuthorizationSpecException found in the exception chain, or null
-     *     if no such exception is found.
+     * @param e the Throwable to inspect (may be null)
+     * @return the first SQLInvalidAuthorizationSpecException found, or {@code null} if not found
      */
-    public SQLInvalidAuthorizationSpecException getSQLInvalidAuthorizationSpecException(
-            Throwable e) {
+    public SQLInvalidAuthorizationSpecException findSQLInvalidAuthException(Throwable e) {
         while (e != null) {
             if (e
                     instanceof

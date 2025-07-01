@@ -16,9 +16,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class ExceptionToolsUTest {
 
     @Test
-    void givenMessage_whenCreateAndLogIllegalArgument_thenReturnsExceptionWithMessage() {
+    void givenMessage_whenLogAndInstantiateIllegalArgument_thenReturnsExceptionWithMessage() {
         String message = "Invalid argument passed";
-        IllegalArgumentException ex = ExceptionTools.INSTANCE.createAndLogIllegalArgument(message);
+        IllegalArgumentException ex =
+                ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(message);
         assertNotNull(ex);
         assertEquals(message, ex.getMessage());
     }
@@ -61,7 +62,7 @@ class ExceptionToolsUTest {
                 new SQLInvalidAuthorizationSpecException("auth failed");
         RuntimeException wrapped = new RuntimeException(new RuntimeException(target));
         SQLInvalidAuthorizationSpecException result =
-                ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(wrapped);
+                ExceptionTools.INSTANCE.findSQLInvalidAuthException(wrapped);
         assertNotNull(result);
         assertSame(target, result);
     }
@@ -71,7 +72,7 @@ class ExceptionToolsUTest {
         RuntimeException wrapped =
                 new RuntimeException(new IllegalStateException("no SQL exception"));
         SQLInvalidAuthorizationSpecException result =
-                ExceptionTools.INSTANCE.getSQLInvalidAuthorizationSpecException(wrapped);
+                ExceptionTools.INSTANCE.findSQLInvalidAuthException(wrapped);
         assertNull(result);
     }
 }

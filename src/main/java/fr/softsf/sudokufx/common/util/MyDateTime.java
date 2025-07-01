@@ -44,7 +44,7 @@ public enum MyDateTime {
      */
     public String getFormatted(LocalDateTime updatedAt) {
         if (Objects.isNull(updatedAt)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The updatedAt mustn't be null");
         }
         DateTimeFormatter formatter =

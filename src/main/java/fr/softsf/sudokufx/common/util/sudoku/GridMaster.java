@@ -422,7 +422,7 @@ final class GridMaster implements IGridMaster {
         // Lever une exception si la grille est null, ou si sa taille est différente de 81
         if (grille == null || grille.length != 81) {
             String taille = (grille == null) ? "null" : String.valueOf(grille.length);
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The grid must not be null and must contain exactly 81 cells, but was "
                             + taille);
         }
@@ -442,7 +442,7 @@ final class GridMaster implements IGridMaster {
     public int[][] creerLesGrilles(final int niveau) {
         // Lever une exception si le niveau n'existe pas
         if (niveau < 1 || niveau > 3) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The grid level must be between 1 and 3, but was " + niveau);
         }
         // Initialiser la grille résolue

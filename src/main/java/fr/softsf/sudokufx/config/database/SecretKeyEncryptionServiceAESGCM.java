@@ -46,7 +46,7 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     @ExcludedFromCoverageReportGenerated
     public SecretKeyEncryptionServiceAESGCM(final SecretKey secretKeyP) {
         if (Objects.isNull(secretKeyP)) {
-            throw ExceptionTools.INSTANCE.createAndLogIllegalArgument(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The secretKeyP must not be null");
         }
         secretKey = secretKeyP;
