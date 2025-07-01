@@ -349,6 +349,7 @@
             <exclude>fr/softsf/sudokufx/common/util/SpringContextInitializer$*</exclude>
             <exclude>fr/softsf/sudokufx/benchmark/**</exclude>
             <exclude>fr/softsf/sudokufx/service/VersionService$*</exclude>
+            <exclude>fr/softsf/sudokufx/viewmodel/MenuBackgroundViewModel$*</exclude>
           </excludes>
         </configuration>
         <executions>
