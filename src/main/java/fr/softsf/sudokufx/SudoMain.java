@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
+import java.util.Objects;
 import javafx.animation.PauseTransition;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -186,7 +187,7 @@ public class SudoMain extends Application {
             String msg = "██ Error in splash screen initialization thread {} : {}";
             SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException =
                     ExceptionTools.INSTANCE.findSQLInvalidAuthException(throwable);
-            if (sqlInvalidAuthorizationSpecException == null) {
+            if (Objects.isNull(sqlInvalidAuthorizationSpecException)) {
                 LOG.error(msg, " – triggering Platform.exit()", throwable.getMessage(), throwable);
                 Platform.exit();
             } else {
@@ -211,7 +212,7 @@ public class SudoMain extends Application {
      * all cases, sets the default scene, dynamic font size handler, and HostServices.
      */
     private void initializeCoordinator() {
-        if (coordinator == null) {
+        if (Objects.isNull(coordinator)) {
             coordinator = new Coordinator(new FXMLLoader());
         }
         coordinator.setDefaultScene(stage.getScene());
