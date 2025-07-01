@@ -123,19 +123,6 @@ class InMemoryPlayerUTest {
     }
 
     @Test
-    void givenException_whenInitializingPlayer_thenLogErrorIsProduced() {
-        when(playerServiceMock.getPlayer()).thenThrow(new IllegalStateException("DB down"));
-        new InMemoryPlayer(playerServiceMock);
-        assertTrue(
-                logWatcher
-                        .list
-                        .getLast()
-                        .getFormattedMessage()
-                        .contains("Error initializing player: DB down"),
-                "The last log message must contain the expected error");
-    }
-
-    @Test
     void givenException_whenInitializingPlayer_thenLogErrorIsProduced_withoutCallingPlatformExit() {
         when(playerServiceMock.getPlayer()).thenThrow(new IllegalStateException("DB down"));
         InMemoryPlayer playerSpy = Mockito.spy(new InMemoryPlayer(playerServiceMock));
