@@ -36,11 +36,11 @@ import fr.softsf.sudokufx.view.SplashScreenView;
 /**
  * Main JavaFX application class launching the UI and initializing the Spring context.
  *
- * <p>Manages the splash screen, asynchronous Spring initialization, error handling,
- * and view transitions. Handles fatal errors by showing a crash screen or exiting.
+ * <p>Manages the splash screen, asynchronous Spring initialization, error handling, and view
+ * transitions. Handles fatal errors by showing a crash screen or exiting.
  *
- * <p>Uses a Coordinator component for view management and leverages ExceptionTools
- * for centralized exception handling.
+ * <p>Uses a Coordinator component for view management and leverages ExceptionTools for centralized
+ * exception handling.
  *
  * <p>This class is the JavaFX entry point and controls the primary Stage lifecycle.
  */
@@ -170,14 +170,16 @@ public class SudoMain extends Application {
      *
      * <p>If {@code throwable} is {@code null}, logs and throws an {@link IllegalArgumentException}.
      * Otherwise:
+     *
      * <ul>
-     *   <li>Initializes the Coordinator</li>
-     *   <li>Logs the exception</li>
-     *   <li>If it's an SQL authorization error, logs details and displays a crash screen</li>
-     *   <li>Otherwise, exits the application</li>
+     *   <li>Initializes the Coordinator
+     *   <li>Logs the exception
+     *   <li>If it's an SQL authorization error, logs details and displays a crash screen
+     *   <li>Otherwise, exits the application
      * </ul>
      *
-     * <p>If any exception occurs during the handling itself, it is logged and the application exits.
+     * <p>If any exception occurs during the handling itself, it is logged and the application
+     * exits.
      *
      * @param throwable the exception thrown during initialization (must not be {@code null})
      */
@@ -233,7 +235,8 @@ public class SudoMain extends Application {
      * @throws IllegalArgumentException if {@code fxmlName} is null or blank
      */
     private PauseTransition createViewTransition(String fxmlName, long minimumTimelapse) {
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(fxmlName,"FxmlName must not be null or blank, but was "+fxmlName);
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                fxmlName, "FxmlName must not be null or blank, but was " + fxmlName);
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(
                 e -> {
