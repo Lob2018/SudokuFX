@@ -9,12 +9,15 @@ import javafx.beans.binding.StringBinding;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@ExtendWith(ApplicationExtension.class)
 class MenuHiddenViewModelUTest {
 
     private MenuHiddenViewModel viewModel;

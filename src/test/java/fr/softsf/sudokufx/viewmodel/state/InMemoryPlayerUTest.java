@@ -8,9 +8,10 @@ package fr.softsf.sudokufx.viewmodel.state;
 import java.time.LocalDateTime;
 import javafx.beans.property.ObjectProperty;
 
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.*;
-import org.mockito.Mockito;
 import org.slf4j.LoggerFactory;
+import org.testfx.framework.junit5.ApplicationExtension;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
@@ -23,6 +24,7 @@ import fr.softsf.sudokufx.service.PlayerService;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+@ExtendWith(ApplicationExtension.class)
 class InMemoryPlayerUTest {
 
     private PlayerService playerServiceMock;
@@ -125,9 +127,17 @@ class InMemoryPlayerUTest {
     @Test
     void givenException_whenInitializingPlayer_thenLogErrorIsProduced_withoutCallingPlatformExit() {
         when(playerServiceMock.getPlayer()).thenThrow(new IllegalStateException("DB down"));
-        InMemoryPlayer playerSpy = Mockito.spy(new InMemoryPlayer(playerServiceMock));
-        Mockito.doNothing().when(playerSpy).exitPlatform();
-        String lastLog = logWatcher.list.getLast().getFormattedMessage();
+
+        // Sous-classe anonyme qui override exitPlatform pour éviter Platform.exit() en test
+        InMemoryPlayer player =
+                new InMemoryPlayer(playerServiceMock) {
+                    @Override
+                    void exitPlatform() {
+                        // Do nothing to prevent Platform.exit() in tests
+                    }
+                };
+
+        String lastLog = logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage();
         assertTrue(
                 lastLog.contains("Error initializing player: DB down"),
                 "The last log message must contenir l’erreur attendue");
