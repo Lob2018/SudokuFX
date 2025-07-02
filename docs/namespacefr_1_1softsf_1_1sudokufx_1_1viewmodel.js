@@ -5,6 +5,7 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel =
     [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],
     [ "HelpViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test" ],
     [ "MenuBackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model" ],
+    [ "MenuBackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_u_test" ],
     [ "MenuHiddenViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model" ],
     [ "MenuLevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model" ],
     [ "MenuLevelViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test" ],

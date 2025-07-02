@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuBackgroundViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuBackgroundViewModelUTest">
+<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="266,1831,516,1991"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html" title="ViewModel managing menu background UI state and accessibility strings." alt="" coords="11,401,237,1767"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,1740,252,1765,288,1817,284,1820,247,1768,235,1743"/>

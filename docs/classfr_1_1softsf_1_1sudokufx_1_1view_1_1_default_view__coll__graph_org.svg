@@ -1263,29 +1263,29 @@
 <text text-anchor="start" x="2258.12" y="-1542.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding imageAccessible</text>
 <text text-anchor="start" x="2258.12" y="-1530.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="2258.12" y="-1514.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 12 more...</text>
-<text text-anchor="start" x="2249.62" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2258.12" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
-<text text-anchor="start" x="2258.12" y="-1486.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key, String</text>
-<text text-anchor="start" x="2258.12" y="-1474.5" font-family="Helvetica,sans-Serif" font-size="10.00"> suffixKey)</text>
-<text text-anchor="start" x="2249.62" y="-1458.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2258.12" y="-1458.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>
-<text text-anchor="start" x="2258.12" y="-1446.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key)</text>
-<text text-anchor="start" x="2249.62" y="-1430.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2258.12" y="-1430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void loadImage(File</text>
-<text text-anchor="start" x="2258.12" y="-1418.5" font-family="Helvetica,sans-Serif" font-size="10.00"> selectedFile, ToasterVBox</text>
-<text text-anchor="start" x="2258.12" y="-1406.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toaster, SpinnerGridPane</text>
-<text text-anchor="start" x="2258.12" y="-1394.5" font-family="Helvetica,sans-Serif" font-size="10.00"> spinner, GridPane sudokuFX)</text>
+<text text-anchor="start" x="2248.12" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="2258.12" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onImageTaskError</text>
+<text text-anchor="start" x="2258.12" y="-1486.5" font-family="Helvetica,sans-Serif" font-size="10.00">(WorkerStateEvent e,</text>
+<text text-anchor="start" x="2258.12" y="-1474.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterVBox toaster,</text>
+<text text-anchor="start" x="2258.12" y="-1462.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SpinnerGridPane spinner)</text>
+<text text-anchor="start" x="2249.62" y="-1446.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2258.12" y="-1446.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
+<text text-anchor="start" x="2258.12" y="-1434.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key, String</text>
+<text text-anchor="start" x="2258.12" y="-1422.5" font-family="Helvetica,sans-Serif" font-size="10.00"> suffixKey)</text>
+<text text-anchor="start" x="2249.62" y="-1406.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2258.12" y="-1406.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>
+<text text-anchor="start" x="2258.12" y="-1394.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key)</text>
 <text text-anchor="start" x="2249.62" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2258.12" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onImageTaskComplete</text>
-<text text-anchor="start" x="2258.12" y="-1366.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Task&lt; BackgroundImage</text>
-<text text-anchor="start" x="2258.12" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; backgroundTask, ToasterVBox</text>
-<text text-anchor="start" x="2258.12" y="-1342.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toaster, SpinnerGridPane spinner,</text>
-<text text-anchor="start" x="2258.12" y="-1330.5" font-family="Helvetica,sans-Serif" font-size="10.00"> GridPane sudokuFX)</text>
-<text text-anchor="start" x="2249.62" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2258.12" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onImageTaskError</text>
-<text text-anchor="start" x="2258.12" y="-1302.5" font-family="Helvetica,sans-Serif" font-size="10.00">(WorkerStateEvent e,</text>
-<text text-anchor="start" x="2258.12" y="-1290.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterVBox toaster,</text>
-<text text-anchor="start" x="2258.12" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SpinnerGridPane spinner)</text>
+<text text-anchor="start" x="2258.12" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">void loadImage(File</text>
+<text text-anchor="start" x="2258.12" y="-1366.5" font-family="Helvetica,sans-Serif" font-size="10.00"> selectedFile, ToasterVBox</text>
+<text text-anchor="start" x="2258.12" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toaster, SpinnerGridPane</text>
+<text text-anchor="start" x="2258.12" y="-1342.5" font-family="Helvetica,sans-Serif" font-size="10.00"> spinner, GridPane sudokuFX)</text>
+<text text-anchor="start" x="2249.62" y="-1326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2258.12" y="-1326.5" font-family="Helvetica,sans-Serif" font-size="10.00">void onImageTaskComplete</text>
+<text text-anchor="start" x="2258.12" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Task&lt; BackgroundImage</text>
+<text text-anchor="start" x="2258.12" y="-1302.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; backgroundTask, ToasterVBox</text>
+<text text-anchor="start" x="2258.12" y="-1290.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toaster, SpinnerGridPane spinner,</text>
+<text text-anchor="start" x="2258.12" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00"> GridPane sudokuFX)</text>
 <text text-anchor="start" x="2249.62" y="-1262.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="2258.12" y="-1262.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setColorFromModel</text>
 <text text-anchor="start" x="2258.12" y="-1250.5" font-family="Helvetica,sans-Serif" font-size="10.00">(GridPane sudokuFX, ColorPicker</text>

@@ -1,0 +1,41 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.allBindingsShouldReturnExpectedI18nValues" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.allBindingsShouldReturnExpectedI18nValues">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,708,275,767"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_u_test.html#aed134e0072a4f15303a51a2fbcf909f9" title=" " alt="" coords="323,708,566,767"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,735,307,735,307,740,275,740"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#abd534b938ea768c58f24070759a34852" title=" " alt="" coords="632,5,889,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="447,707,466,573,500,383,523,286,549,197,579,124,595,96,612,74,618,69,622,73,616,78,600,99,584,126,554,199,528,287,506,384,471,574,452,708"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a1cd4864f2f838d29416d0f796ccbce94" title=" " alt="" coords="632,88,889,147"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="442,708,446,604,454,534,467,456,488,376,518,297,559,222,584,188,612,157,618,151,621,155,616,161,588,191,563,225,523,299,493,378,472,457,459,534,451,605,448,708"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a3764fa9415e1e9c59d95ebf2dea0df12" title=" " alt="" coords="632,171,889,229"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="444,708,453,617,462,557,477,491,499,423,528,357,565,294,612,239,617,235,621,239,616,243,569,297,532,359,504,425,483,493,468,558,458,618,449,708"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a8b40b1f6d1ba95dd9b1bf67ed38704a9" title=" " alt="" coords="632,253,889,312"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="446,707,460,630,488,527,510,471,537,417,571,366,612,322,617,318,621,322,616,326,575,370,542,420,515,473,493,528,465,631,452,708"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#af658ab03ef97babf2eb999db565c057f" title=" " alt="" coords="620,336,902,395"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="450,707,468,644,500,562,521,519,547,477,577,439,612,405,616,401,620,406,616,409,581,442,551,480,526,522,504,564,473,646,455,708"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a29eba06d056f83b47906dbf8d663d9ab" title=" " alt="" coords="638,419,883,477"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="455,706,478,658,512,599,557,539,583,511,612,487,623,480,626,485,616,491,587,515,561,542,517,602,483,661,460,709"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a8336bf1eb5a1e1971390485f41f4a60d" title=" " alt="" coords="632,501,889,560"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="466,706,527,637,568,601,613,570,622,565,624,569,615,574,571,605,531,641,470,709"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a065568d98690fbfe905461a45de9c077" title=" " alt="" coords="616,584,905,643"/>
+<area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="499,705,554,678,613,652,631,646,633,651,615,657,556,683,501,710"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a60220076592a7e5a48c5168b45d184ae" title=" " alt="" coords="634,667,887,725"/>
+<area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="566,719,618,712,619,717,567,724"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#ae756decca6eaaa77ab9a46f17260ff18" title=" " alt="" coords="636,749,886,808"/>
+<area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="567,751,620,758,620,763,566,756"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#af8ec7343a5e469caff497ccb4c06147b" title=" " alt="" coords="629,832,892,891"/>
+<area shape="poly" id="edge12_Node000002_Node000013" title=" " alt="" coords="501,765,556,792,615,818,633,824,631,829,613,822,554,797,499,770"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a4f90205122b973ac1e8e887d01e92c24" title=" " alt="" coords="636,915,886,973"/>
+<area shape="poly" id="edge13_Node000002_Node000014" title=" " alt="" coords="470,765,531,833,571,870,615,900,624,905,622,910,613,905,568,874,527,837,466,769"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a4112426828e647d29b38d397d12d02aa" title=" " alt="" coords="636,997,886,1056"/>
+<area shape="poly" id="edge14_Node000002_Node000015" title=" " alt="" coords="460,766,483,814,517,873,561,933,587,960,616,983,624,989,621,993,612,987,583,963,557,936,512,876,478,816,455,768"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a7131bd578e415fc83893eb75fd0b505d" title=" " alt="" coords="636,1080,886,1139"/>
+<area shape="poly" id="edge15_Node000002_Node000016" title=" " alt="" coords="455,766,473,829,504,910,526,953,551,994,581,1033,616,1066,624,1072,621,1076,612,1070,577,1036,547,997,521,955,500,912,468,831,450,768"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a68a8a31329582c8e22ed98a83f5907bc" title=" " alt="" coords="636,1163,886,1221"/>
+<area shape="poly" id="edge16_Node000002_Node000017" title=" " alt="" coords="452,766,465,843,493,946,515,1001,542,1055,575,1105,616,1149,624,1155,620,1159,612,1153,571,1108,537,1058,510,1004,488,948,460,844,446,767"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#aea6b194d545c93d2de4b6f5f3d5e657b" title=" " alt="" coords="614,1245,907,1304"/>
+<area shape="poly" id="edge17_Node000002_Node000018" title=" " alt="" coords="449,767,458,857,468,917,483,982,504,1049,532,1116,569,1177,616,1231,619,1234,615,1238,612,1235,565,1181,528,1118,499,1051,477,983,462,918,453,858,444,767"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a98172520ae3feceed7bbdd4e512e859d" title=" " alt="" coords="634,1328,888,1387"/>
+<area shape="poly" id="edge18_Node000002_Node000019" title=" " alt="" coords="448,767,451,870,459,940,472,1017,493,1097,523,1176,563,1250,588,1283,616,1314,622,1320,619,1324,612,1318,584,1287,559,1252,518,1178,488,1099,467,1018,454,941,446,871,442,767"/>
+<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a062dbb2361c26af5eadc0047a5ef359d" title=" " alt="" coords="627,1411,894,1469"/>
+<area shape="poly" id="edge19_Node000002_Node000020" title=" " alt="" coords="452,767,471,901,506,1091,528,1188,554,1276,584,1348,600,1376,616,1397,618,1399,614,1403,612,1400,595,1379,579,1351,549,1278,523,1189,500,1092,466,902,447,767"/>
+</map>
