@@ -105,8 +105,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.config.JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html", null ],
     [ "fr.softsf.sudokufx.Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", null ],
     [ "ListCell", null, [
-      [ "fr.softsf.sudokufx.view.component.list.GameDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_game_dto_list_cell.html", null ],
-      [ "fr.softsf.sudokufx.view.component.list.PlayerDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_player_dto_list_cell.html", null ]
+      [ "fr.softsf.sudokufx.view.component.list.GenericDtoListCell< T >", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.common.enums.LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html", null ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.MapperUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html", null ],
@@ -121,11 +120,15 @@ var hierarchy =
     [ "fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuMaxiViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuMiniViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuMiniViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_mini_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuNewViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuSaveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuSolveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.util.MyDateTime", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.MyDateTimeUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html", null ],

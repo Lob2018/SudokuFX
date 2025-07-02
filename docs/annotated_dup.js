@@ -156,15 +156,18 @@ var annotated_dup =
                 ] ],
                 [ "ActiveMenuOrSubmenuViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test" ],
                 [ "MenuHiddenViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test" ],
-                [ "MenuPlayerViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test" ]
+                [ "MenuMiniViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_mini_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_mini_view_model_u_test" ],
+                [ "MenuNewViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test" ],
+                [ "MenuPlayerViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test" ],
+                [ "MenuSaveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test" ],
+                [ "MenuSolveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test" ]
               ] ]
             ] ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
             [ "component", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html", [
               [ "list", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html", [
-                [ "GameDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_game_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_game_dto_list_cell" ],
-                [ "PlayerDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_player_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_player_dto_list_cell" ]
+                [ "GenericDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell" ]
               ] ],
               [ "toaster", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster.html", [
                 [ "ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button" ],
