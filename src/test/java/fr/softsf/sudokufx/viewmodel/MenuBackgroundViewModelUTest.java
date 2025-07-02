@@ -173,26 +173,32 @@ class MenuBackgroundViewModelUTest {
     }
 
     @Test
-    void givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown() throws Exception {
+    void
+            givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown()
+                    throws Exception {
         File validImage = getValidTestImage();
         assertTrue(validImage.exists());
         GridPane grid = new GridPane();
         ToasterVBox mockToaster = mock(ToasterVBox.class);
         SpinnerGridPane mockSpinner = mock(SpinnerGridPane.class);
         CountDownLatch latch = new CountDownLatch(1);
-        Platform.runLater(() -> {
-            grid.backgroundProperty().addListener((obs, oldVal, newVal) -> {
-                if (newVal != null) {
-                    latch.countDown();
-                }
-            });
-            viewModel.handleFileImageChooser(validImage, mockToaster, mockSpinner, grid);
-        });
+        Platform.runLater(
+                () -> {
+                    grid.backgroundProperty()
+                            .addListener(
+                                    (obs, oldVal, newVal) -> {
+                                        if (newVal != null) {
+                                            latch.countDown();
+                                        }
+                                    });
+                    viewModel.handleFileImageChooser(validImage, mockToaster, mockSpinner, grid);
+                });
         assertTrue(latch.await(5, TimeUnit.SECONDS), "Timeout waiting for background to be set");
         Background background = grid.getBackground();
         assertNotNull(background, "Background should not be null");
         assertFalse(background.getImages().isEmpty(), "Background image should be set");
-        verify(mockToaster).addToast(anyString(), contains("file:"), eq(ToastLevels.INFO), eq(false));
+        verify(mockToaster)
+                .addToast(anyString(), contains("file:"), eq(ToastLevels.INFO), eq(false));
         verify(mockToaster).removeToast();
         verify(mockSpinner).showSpinner(false);
     }
@@ -206,12 +212,10 @@ class MenuBackgroundViewModelUTest {
         ToasterVBox mockToaster = mock(ToasterVBox.class);
         SpinnerGridPane mockSpinner = mock(SpinnerGridPane.class);
         viewModel = spy(new MenuBackgroundViewModel());
+        CountDownLatch taskFailedLatch = new CountDownLatch(1);
+        CountDownLatch fxRunLaterLatch = new CountDownLatch(1);
         doAnswer(
                         invocation -> {
-                            File file = invocation.getArgument(0);
-                            ToasterVBox toaster = invocation.getArgument(1);
-                            SpinnerGridPane spinner = invocation.getArgument(2);
-                            GridPane pane = invocation.getArgument(3);
                             Task<Image> failingTask =
                                     new Task<>() {
                                         @Override
@@ -221,7 +225,11 @@ class MenuBackgroundViewModelUTest {
                                     };
                             failingTask.setOnFailed(
                                     e -> {
-                                        viewModel.onImageTaskError(e, toaster, spinner);
+                                        viewModel.onImageTaskError(
+                                                e,
+                                                invocation.getArgument(1),
+                                                invocation.getArgument(2));
+                                        taskFailedLatch.countDown();
                                     });
                             Thread thread = new Thread(failingTask);
                             thread.setDaemon(true);
@@ -230,9 +238,19 @@ class MenuBackgroundViewModelUTest {
                         })
                 .when(viewModel)
                 .handleFileImageChooser(any(), any(), any(), any());
+        doAnswer(
+                        invocation -> {
+                            fxRunLaterLatch.countDown();
+                            return null;
+                        })
+                .when(mockToaster)
+                .addToast(anyString(), eq("Forced failure"), eq(ToastLevels.ERROR), eq(true));
         Platform.runLater(
                 () -> viewModel.handleFileImageChooser(validImage, mockToaster, mockSpinner, grid));
-        Thread.sleep(1000);
+        assertTrue(taskFailedLatch.await(5, TimeUnit.SECONDS), "Timeout waiting for task failure");
+        assertTrue(
+                fxRunLaterLatch.await(5, TimeUnit.SECONDS),
+                "Timeout waiting for addToast in FX thread");
         verify(mockToaster)
                 .addToast(anyString(), eq("Forced failure"), eq(ToastLevels.ERROR), eq(true));
         verify(mockSpinner).showSpinner(false);
