@@ -214,6 +214,7 @@ class MenuBackgroundViewModelUTest {
         viewModel = spy(new MenuBackgroundViewModel());
         CountDownLatch taskFailedLatch = new CountDownLatch(1);
         CountDownLatch fxRunLaterLatch = new CountDownLatch(1);
+        CountDownLatch spinnerLatch = new CountDownLatch(1); // 👈 Ajouté
         doAnswer(
                         invocation -> {
                             Task<Image> failingTask =
@@ -245,15 +246,25 @@ class MenuBackgroundViewModelUTest {
                         })
                 .when(mockToaster)
                 .addToast(anyString(), eq("Forced failure"), eq(ToastLevels.ERROR), eq(true));
+        doAnswer(
+                        invocation -> {
+                            spinnerLatch.countDown();
+                            return null;
+                        })
+                .when(mockSpinner)
+                .showSpinner(false);
         Platform.runLater(
                 () -> viewModel.handleFileImageChooser(validImage, mockToaster, mockSpinner, grid));
         assertTrue(taskFailedLatch.await(5, TimeUnit.SECONDS), "Timeout waiting for task failure");
         assertTrue(
                 fxRunLaterLatch.await(5, TimeUnit.SECONDS),
                 "Timeout waiting for addToast in FX thread");
+        assertTrue(
+                spinnerLatch.await(5, TimeUnit.SECONDS),
+                "Timeout waiting for showSpinner(false)"); // ✅
         verify(mockToaster)
                 .addToast(anyString(), eq("Forced failure"), eq(ToastLevels.ERROR), eq(true));
-        verify(mockSpinner).showSpinner(false);
+        verify(mockSpinner).showSpinner(false); // ✅
     }
 
     @Test
