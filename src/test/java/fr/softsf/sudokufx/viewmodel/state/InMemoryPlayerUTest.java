@@ -127,17 +127,11 @@ class InMemoryPlayerUTest {
     @Test
     void givenException_whenInitializingPlayer_thenLogErrorIsProduced_withoutCallingPlatformExit() {
         when(playerServiceMock.getPlayer()).thenThrow(new IllegalStateException("DB down"));
-
-        // Sous-classe anonyme qui override exitPlatform pour éviter Platform.exit() en test
-        InMemoryPlayer player =
-                new InMemoryPlayer(playerServiceMock) {
-                    @Override
-                    void exitPlatform() {
-                        // Do nothing to prevent Platform.exit() in tests
-                    }
-                };
-
-        String lastLog = logWatcher.list.get(logWatcher.list.size() - 1).getFormattedMessage();
+        new InMemoryPlayer(playerServiceMock) {
+            @Override
+            void exitPlatform() {}
+        };
+        String lastLog = logWatcher.list.getLast().getFormattedMessage();
         assertTrue(
                 lastLog.contains("Error initializing player: DB down"),
                 "The last log message must contenir l’erreur attendue");
