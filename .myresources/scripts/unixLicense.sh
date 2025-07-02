@@ -24,7 +24,7 @@ echo "#                                     GENERATING LICENSE.TXT              
 echo "##################################################################################################"
 echo ""
 
-LICENSE_EDIT="LICENSE_TO_EDIT.txt"
+LICENSE_EDIT="MY_LICENSE_TO_EDIT.txt"
 THIRD_PARTY="target/generated-sources/license/THIRD-PARTY.txt"
 OUTPUT="LICENSE.txt"
 

@@ -24,13 +24,13 @@
 	echo #                                      GENERATING LICENSE.TXT                                      #
 	echo ####################################################################################################
 	echo.
-    if not exist LICENSE_TO_EDIT.txt (
-        echo Missing: LICENSE_TO_EDIT.txt
+    if not exist MY_LICENSE_TO_EDIT.txt (
+        echo Missing: MY_LICENSE_TO_EDIT.txt
     ) else if not exist target\generated-sources\license\THIRD-PARTY.txt (
         echo Missing: THIRD-PARTY.txt
     ) else (
         del /f /q LICENSE.txt >nul 2>&1
-        copy /b LICENSE_TO_EDIT.txt + target\generated-sources\license\THIRD-PARTY.txt LICENSE.txt >nul
+        copy /b MY_LICENSE_TO_EDIT.txt + target\generated-sources\license\THIRD-PARTY.txt LICENSE.txt >nul
         echo LICENSE.txt successfully generated.
     )
 	echo.
