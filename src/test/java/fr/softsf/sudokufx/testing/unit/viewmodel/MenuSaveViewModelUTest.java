@@ -11,14 +11,12 @@ import java.util.Map;
 import java.util.function.Supplier;
 import javafx.beans.binding.StringBinding;
 import javafx.collections.ObservableList;
-import javafx.stage.Stage;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
-import org.testfx.framework.junit5.Start;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.dto.GameDto;
@@ -27,13 +25,10 @@ import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(ApplicationExtension.class)
-public class MenuSaveViewModelUTest {
+class MenuSaveViewModelUTest {
 
     private Locale originalLocale;
     private MenuSaveViewModel viewModel;
-
-    @Start
-    private void start(Stage stage) {}
 
     @BeforeEach
     void setUp() {
