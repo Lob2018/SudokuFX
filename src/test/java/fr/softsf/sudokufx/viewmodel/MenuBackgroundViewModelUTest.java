@@ -7,6 +7,8 @@ package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
 import java.net.URL;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 import java.util.*;
 import javafx.application.Platform;
@@ -171,22 +173,26 @@ class MenuBackgroundViewModelUTest {
     }
 
     @Test
-    void
-            givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown()
-                    throws Exception {
+    void givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown() throws Exception {
         File validImage = getValidTestImage();
         assertTrue(validImage.exists());
         GridPane grid = new GridPane();
         ToasterVBox mockToaster = mock(ToasterVBox.class);
         SpinnerGridPane mockSpinner = mock(SpinnerGridPane.class);
-        Platform.runLater(
-                () -> viewModel.handleFileImageChooser(validImage, mockToaster, mockSpinner, grid));
-        Thread.sleep(1000);
+        CountDownLatch latch = new CountDownLatch(1);
+        Platform.runLater(() -> {
+            grid.backgroundProperty().addListener((obs, oldVal, newVal) -> {
+                if (newVal != null) {
+                    latch.countDown();
+                }
+            });
+            viewModel.handleFileImageChooser(validImage, mockToaster, mockSpinner, grid);
+        });
+        assertTrue(latch.await(5, TimeUnit.SECONDS), "Timeout waiting for background to be set");
         Background background = grid.getBackground();
-        assertNotNull(background);
+        assertNotNull(background, "Background should not be null");
         assertFalse(background.getImages().isEmpty(), "Background image should be set");
-        verify(mockToaster)
-                .addToast(anyString(), contains("file:"), eq(ToastLevels.INFO), eq(false));
+        verify(mockToaster).addToast(anyString(), contains("file:"), eq(ToastLevels.INFO), eq(false));
         verify(mockToaster).removeToast();
         verify(mockSpinner).showSpinner(false);
     }
