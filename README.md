@@ -195,8 +195,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 >For the application to work properly, the following application properties must be set at the JVM level:
 >
 >- app.name:This property specifies the name of the application.
->- app.version:This property specifies the version of the application.
-   >   - This SemVer-like format is only numeric MAJOR.MINOR.PATCH (e.g., 1.0.0, 2.1.3).
+>- app.version:Specifies the application version in stable SemVer format with numeric MAJOR, MINOR, and PATCH only (e.g. 1.2.3; not 1.2.3-beta.1 or 1.2.3+build.5).
 >- app.organization: Specifies the organization responsible for the application.
 >- app.license: Specifies the license under which the application is distributed.
 
