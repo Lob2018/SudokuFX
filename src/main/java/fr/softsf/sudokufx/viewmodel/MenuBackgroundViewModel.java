@@ -361,8 +361,7 @@ public class MenuBackgroundViewModel {
      * @param toaster The toaster component for user notifications.
      * @param spinner The spinner component to hide loading state.
      */
-    private void onImageTaskError(
-            WorkerStateEvent e, ToasterVBox toaster, SpinnerGridPane spinner) {
+    void onImageTaskError(WorkerStateEvent e, ToasterVBox toaster, SpinnerGridPane spinner) {
         Throwable exception = e.getSource().getException();
         Platform.runLater(
                 () -> {
