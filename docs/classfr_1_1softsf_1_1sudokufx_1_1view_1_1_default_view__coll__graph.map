@@ -24,10 +24,10 @@
 <area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2101,2086,2101,2448,2096,2448,2096,2086"/>
 <area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html" title="ViewModel managing player menu UI state and localized accessibility texts." alt="" coords="2234,1060,2465,2281"/>
 <area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2264,2282,2238,2442,2229,2497,2224,2496,2233,2441,2258,2281"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html" title="Component responsible for holding the current PlayerDto instance in memory." alt="" coords="2241,625,2457,881"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="2352,881,2352,1043,2346,1043,2346,881"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html" title="Component responsible for holding the current PlayerDto instance in memory." alt="" coords="2241,615,2457,892"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="2352,892,2352,1043,2346,1043,2346,892"/>
 <area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" title="Service class providing business logic related to Player entities." alt="" coords="2241,343,2458,519"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="2352,519,2352,608,2346,608,2346,519"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="2352,519,2352,597,2346,597,2346,519"/>
 <area shape="rect" id="Node000016" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="2132,159,2314,260"/>
 <area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="2253,258,2293,327,2288,330,2249,261"/>
 <area shape="rect" id="Node000017" title=" " alt="" coords="2149,5,2296,91"/>

@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest.givenSetCurrentPlayer_whenCalled_thenPlayerIsUpdated" name="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest.givenSetCurrentPlayer_whenCalled_thenPlayerIsUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,292,123"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a35c4a2684bf2aa95aedf2c52bcda51d0" title=" " alt="" coords="340,72,589,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,91,324,91,324,96,292,96"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a21e883aa550a8f5e0391bd780ccb7396" title=" " alt="" coords="649,5,912,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="568,69,661,49,662,54,569,74"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#abc79b878a9ce003ea68068b78b4ecc72" title=" " alt="" coords="668,72,894,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="590,91,652,91,652,96,590,96"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a8adb82a964eebc6efa58f7f9691fcc07" title=" " alt="" coords="637,139,924,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="569,113,662,132,661,138,568,118"/>
+</map>

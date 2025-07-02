@@ -1,13 +1,13 @@
 <map id="fr.softsf.sudokufx.SudoMain" name="fr.softsf.sudokufx.SudoMain">
-<area shape="rect" id="Node000001" title="Entry point of the Sudo application." alt="" coords="226,736,470,1120"/>
+<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="240,736,456,1136"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,429,80,499"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,513,63,590,76,631,94,671,123,715,156,756,228,829,224,833,152,760,118,718,90,673,71,633,58,591,44,514"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,513,64,590,77,631,94,671,126,720,163,766,242,847,239,851,159,770,121,723,90,673,72,633,59,591,44,514"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="104,400,336,528"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,527,293,719,288,720,235,528"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,527,292,719,287,720,234,528"/>
 <area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="360,405,592,523"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="465,523,417,713,415,720,410,719,412,711,460,522"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="464,523,413,713,411,720,406,719,408,711,459,522"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application fo..." alt="" coords="616,256,856,672"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="618,659,606,674,547,742,484,806,480,802,543,738,602,670,613,656"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="618,658,606,674,539,752,469,824,465,821,535,748,602,670,614,655"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="640,5,832,192"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="739,192,739,239,733,239,733,192"/>
 </map>

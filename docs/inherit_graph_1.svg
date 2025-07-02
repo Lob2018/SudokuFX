@@ -20,7 +20,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html" target="_top" xlink:title="Entry point of the Sudo application.">
+<g id="a_Node000001"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html" target="_top" xlink:title="Main JavaFX application class launching the UI and initializing the Spring context.">
 <polygon fill="white" stroke="#666666" points="239,-20 100,-20 100,0 239,0 239,-20"/>
 <text text-anchor="middle" x="169.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain</text>
 </a>

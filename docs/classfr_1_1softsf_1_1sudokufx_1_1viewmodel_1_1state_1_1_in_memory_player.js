@@ -2,6 +2,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player =
 [
     [ "InMemoryPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a2b84bcf46e4ea9cf23fff05a911724fb", null ],
     [ "currentPlayerProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a329e1dc6270257e44dccb19d9d51930c", null ],
+    [ "exitPlatform", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a774ce5df312b59c49b40cac5a351c959", null ],
     [ "getCurrentPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a563f7429afe3365b5f86c129cf1ead2b", null ],
     [ "initializePlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a87f77667a76e0b42f14985c06ac5b58a", null ],
     [ "setCurrentPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a99f3ecdaee07d31b80f3ffb7154fa0a6", null ],

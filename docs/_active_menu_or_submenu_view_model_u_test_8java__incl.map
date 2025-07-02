@@ -1,11 +1,15 @@
 <map id="src/test/java/fr/softsf/sudokufx/testing/unit/viewmodel/ActiveMenuOrSubmenuViewModelUTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/viewmodel/ActiveMenuOrSubmenuViewModelUTest.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="298,5,528,80"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="493,5,722,80"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,136,205,163"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,83,158,133,156,128,304,78"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="493,70,181,135,180,130,492,65"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="228,136,384,163"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="378,82,332,127,328,123,374,78"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="408,128,631,171"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="452,78,490,115,486,119,448,82"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="656,136,858,163"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="529,76,702,128,700,134,527,81"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="502,83,358,133,356,128,501,78"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="408,128,599,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="573,82,536,119,532,115,569,78"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="623,128,803,171"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="646,78,684,115,680,119,643,82"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="827,128,1050,171"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="724,78,859,120,857,125,722,83"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1074,136,1277,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="723,62,1093,130,1092,135,722,68"/>
 </map>

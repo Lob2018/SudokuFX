@@ -1,0 +1,12 @@
+var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test =
+[
+    [ "PossibilityStarsHBoxStub", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub" ],
+    [ "givenDifficultyLevel_whenUpdateSelectedLevel_thenSelectedLevelAndStarsAreSet", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html#a54cf9965ce5c1d85f41b4d4fd8394763", null ],
+    [ "givenDifficultyLevels_whenGetAccessibilityKeyForLevel_thenReturnCorrectI18nKeys", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html#a7135e0d076210fef948d04f10f88015e", null ],
+    [ "givenDifficultyLevelsEasyMediumAndDifficult_whenLabelTextBinding_thenReturnCorrectI18nKeys", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html#af9c48e61f12ce46d8fa4d57bc840c2c7", null ],
+    [ "givenPercentageValue_whenSetPercentage_thenPercentagePropertyIsUpdated", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html#a78171f381955468c9ebceed3ab565325", null ],
+    [ "givenSelectedLevel_whenIsSelectedBinding_thenBindingReflectsSelection", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html#a39ae6352f3309f90f345833057a0b804", null ],
+    [ "givenStarsBoxAndKey_whenAccessibleTextBinding_thenReturnFormattedText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html#a83a55def725ca2188f821e7f500d4c96", null ],
+    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html#a96f060baf0c5a6ea51859a26f039008a", null ],
+    [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html#a3c45bf299f4f0f63ba161f7fa0cfb062", null ]
+];

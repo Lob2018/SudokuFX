@@ -6,6 +6,5 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1model =
     [ "Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid" ],
     [ "Menu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu" ],
     [ "Player", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player" ],
-    [ "PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language" ],
-    [ "Software", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_software" ]
+    [ "PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language" ]
 ];

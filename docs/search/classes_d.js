@@ -10,5 +10,6 @@ var searchData=
   ['playerrepository_7',['PlayerRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html',1,'fr::softsf::sudokufx::repository']]],
   ['playerservice_8',['PlayerService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html',1,'fr::softsf::sudokufx::service']]],
   ['playerserviceutest_9',['PlayerServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test.html',1,'fr::softsf::sudokufx::testing::integration::service']]],
-  ['possibilitystarshbox_10',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html',1,'fr::softsf::sudokufx::view::component']]]
+  ['possibilitystarshbox_10',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html',1,'fr::softsf::sudokufx::view::component']]],
+  ['possibilitystarshboxstub_11',['PossibilityStarsHBoxStub',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModelUTest']]]
 ];

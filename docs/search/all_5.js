@@ -21,5 +21,5 @@ var searchData=
   ['exceptiontoolsutest_2ejava_18',['ExceptionToolsUTest.java',['../exception_2_exception_tools_u_test_8java.html',1,'(Global Namespace)'],['../util_2_exception_tools_u_test_8java.html',1,'(Global Namespace)']]],
   ['excludedfromcoveragereportgenerated_19',['ExcludedFromCoverageReportGenerated',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1_excluded_from_coverage_report_generated.html',1,'fr::softsf::sudokufx::common::annotation']]],
   ['excludedfromcoveragereportgenerated_2ejava_20',['ExcludedFromCoverageReportGenerated.java',['../_excluded_from_coverage_report_generated_8java.html',1,'']]],
-  ['exitplatform_21',['exitPlatform',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a64e23a6257dc42929da8e6ee620fdca7',1,'fr::softsf::sudokufx::navigation::Coordinator']]]
+  ['exitplatform_21',['exitPlatform',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a64e23a6257dc42929da8e6ee620fdca7',1,'fr.softsf.sudokufx.navigation.Coordinator.exitPlatform()'],['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a774ce5df312b59c49b40cac5a351c959',1,'fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.exitPlatform()']]]
 ];

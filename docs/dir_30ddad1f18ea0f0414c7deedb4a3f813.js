@@ -6,6 +6,5 @@ var dir_30ddad1f18ea0f0414c7deedb4a3f813 =
     [ "Grid.java", "_grid_8java.html", "_grid_8java" ],
     [ "Menu.java", "_menu_8java.html", "_menu_8java" ],
     [ "Player.java", "_player_8java.html", "_player_8java" ],
-    [ "PlayerLanguage.java", "_player_language_8java.html", "_player_language_8java" ],
-    [ "Software.java", "_software_8java.html", "_software_8java" ]
+    [ "PlayerLanguage.java", "_player_language_8java.html", "_player_language_8java" ]
 ];

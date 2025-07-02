@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest" name="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="78,924,368,1463"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" title="Service class providing business logic related to Player entities." alt="" coords="114,343,332,519"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,519,216,583,214,746,216,907,210,907,208,746,211,583,214,518"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html" title="Component responsible for holding the current PlayerDto instance in memory." alt="" coords="344,583,560,860"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="294,517,336,570,332,573,290,520"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="5,159,187,260"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,258,167,327,162,330,122,261"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="22,5,170,91"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="99,105,99,159,94,159,94,105"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" title="Mapper interface for converting between Player entity and PlayerDto data transfer object." alt="" coords="212,140,490,279"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="314,280,285,330,280,327,309,277"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="388,861,364,910,359,908,383,859"/>
+</map>

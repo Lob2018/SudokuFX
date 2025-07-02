@@ -1,5 +1,7 @@
 <map id="fr.softsf.sudokufx.view.component.PossibilityStarsHBox" name="fr.softsf.sudokufx.view.component.PossibilityStarsHBox">
-<area shape="rect" id="Node000001" title="A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100)." alt="" coords="5,123,221,336"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="92,5,135,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,89,116,123,111,123,111,89"/>
+<area shape="rect" id="Node000001" title="A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100)." alt="" coords="16,123,232,336"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html" title=" " alt="" coords="5,384,242,592"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,351,126,384,121,384,121,351"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="102,5,146,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,89,126,123,121,123,121,89"/>
 </map>

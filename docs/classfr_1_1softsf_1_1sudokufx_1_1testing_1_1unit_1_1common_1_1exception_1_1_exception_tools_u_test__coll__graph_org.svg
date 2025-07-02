@@ -29,9 +29,9 @@
 <text text-anchor="start" x="21" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">WithSQLInvalidAuthorizationSpec</text>
 <text text-anchor="start" x="21" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">Exception_whenGet_thenReturnsIt()</text>
 <text text-anchor="start" x="7.5" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="21" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenMessage_whenCreate</text>
-<text text-anchor="start" x="21" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndLogIllegalArgument_thenReturns</text>
-<text text-anchor="start" x="21" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionWithMessage()</text>
+<text text-anchor="start" x="21" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenMessage_whenLog</text>
+<text text-anchor="start" x="21" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndInstantiateIllegalArgument</text>
+<text text-anchor="start" x="21" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenReturnsExceptionWithMessage()</text>
 <text text-anchor="start" x="7.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="21" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullString</text>
 <text text-anchor="start" x="21" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenLogAndThrowIllegalArgument</text>

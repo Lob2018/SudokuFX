@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test =
+[
+    [ "givenTestDatabase_whenInMemoryPlayerLoads_thenPlayerDtoIsNotNull", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test.html#ac7c4761b0835b70f85120fea35e17fa3", null ],
+    [ "inMemoryPlayer", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test.html#a57e0975f6826b4a631513ab9d0ae36a5", null ]
+];

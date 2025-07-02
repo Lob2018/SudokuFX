@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Called when the Spring context initialization task fails.">
+<g id="a_Node000001"><a xlink:title="Handles failure of the Spring context initialization task.">
 <polygon fill="#999999" stroke="#666666" points="170.5,-82 0,-82 0,-50 170.5,-50 170.5,-82"/>
 <text text-anchor="start" x="8" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.handle</text>
 <text text-anchor="middle" x="85.25" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpringContextTaskFailed</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b" target="_top" xlink:title="Creates a PauseTransition to delay loading of the next view.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b" target="_top" xlink:title="Creates a pause before loading the specified FXML view.">
 <polygon fill="white" stroke="#666666" points="379.62,-132 210.62,-132 210.62,-100 379.62,-100 379.62,-132"/>
 <text text-anchor="start" x="218.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.create</text>
 <text text-anchor="middle" x="295.12" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewTransition</text>
@@ -59,10 +59,10 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7f44ea69c674694f9ea334ec052a05b3" target="_top" xlink:title="Handles SQL invalid authorization exceptions.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ae8c480e4259c82f2983146fd756ce1e5" target="_top" xlink:title="Logs an SQLInvalidAuthorizationSpecException with optional authentication details.">
 <polygon fill="white" stroke="#666666" points="372.5,-32 217.75,-32 217.75,0 372.5,0 372.5,-32"/>
-<text text-anchor="start" x="225.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.sql</text>
-<text text-anchor="middle" x="295.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">InvalidAuthorization</text>
+<text text-anchor="start" x="225.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.log</text>
+<text text-anchor="middle" x="295.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqlInvalidAuthorization</text>
 </a>
 </g>
 </g>

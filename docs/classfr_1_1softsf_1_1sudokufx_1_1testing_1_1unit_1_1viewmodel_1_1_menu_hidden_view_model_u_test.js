@@ -1,0 +1,7 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test =
+[
+    [ "givenEnglishLocale_whenAccessingBinding_thenReturnsExpectedTranslation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html#a008001cef82d507356b7b7e8760c1121", null ],
+    [ "givenLocaleChange_whenAccessingBinding_thenReturnsUpdatedTranslation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html#a7fa5b00b9f30b824d5b9f9e469403993", null ],
+    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html#a90c557872585458c608a1494f18599f3", null ],
+    [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html#a4741a402a4726e7074deb1ad6c5b4d4f", null ]
+];

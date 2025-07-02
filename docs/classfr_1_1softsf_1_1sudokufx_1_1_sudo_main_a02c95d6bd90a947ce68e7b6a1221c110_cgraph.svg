@@ -86,7 +86,7 @@ var sectionId = 'dynsection-4';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f0246399e65a32405abe1ed415219ee" target="_top" xlink:title="Called when the Spring context initialization task fails.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5f0246399e65a32405abe1ed415219ee" target="_top" xlink:title="Handles failure of the Spring context initialization task.">
 <polygon fill="white" stroke="#666666" points="392.75,-82 222.25,-82 222.25,-50 392.75,-50 392.75,-82"/>
 <text text-anchor="start" x="230.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.handle</text>
 <text text-anchor="middle" x="307.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpringContextTaskFailed</text>
@@ -143,7 +143,7 @@ var sectionId = 'dynsection-4';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b" target="_top" xlink:title="Creates a PauseTransition to delay loading of the next view.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b" target="_top" xlink:title="Creates a pause before loading the specified FXML view.">
 <polygon fill="white" stroke="#666666" points="626.62,-82 457.62,-82 457.62,-50 626.62,-50 626.62,-82"/>
 <text text-anchor="start" x="465.62" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.create</text>
 <text text-anchor="middle" x="542.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewTransition</text>
@@ -181,10 +181,10 @@ var sectionId = 'dynsection-4';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a7f44ea69c674694f9ea334ec052a05b3" target="_top" xlink:title="Handles SQL invalid authorization exceptions.">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ae8c480e4259c82f2983146fd756ce1e5" target="_top" xlink:title="Logs an SQLInvalidAuthorizationSpecException with optional authentication details.">
 <polygon fill="white" stroke="#666666" points="619.5,-32 464.75,-32 464.75,0 619.5,0 619.5,-32"/>
-<text text-anchor="start" x="472.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.sql</text>
-<text text-anchor="middle" x="542.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">InvalidAuthorization</text>
+<text text-anchor="start" x="472.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain.log</text>
+<text text-anchor="middle" x="542.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SqlInvalidAuthorization</text>
 </a>
 </g>
 </g>
