@@ -40,14 +40,14 @@ import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.view.component.MyAlert;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
-import fr.softsf.sudokufx.view.component.list.GameDtoListCell;
-import fr.softsf.sudokufx.view.component.list.PlayerDtoListCell;
+import fr.softsf.sudokufx.view.component.list.GenericDtoListCell;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.*;
 
@@ -394,13 +394,14 @@ public final class DefaultView implements IMainView {
         menuSaveListView.setItems(menuSaveViewModel.getBackups());
         menuSaveListView.setCellFactory(
                 param ->
-                        new GameDtoListCell(
+                        new GenericDtoListCell<>(
                                 menuSaveListView,
                                 "\ue92b",
                                 menuSaveViewModel.cellDeleteAccessibleTextProperty(),
                                 menuSaveViewModel.cellConfirmationTitleProperty(),
                                 menuSaveViewModel.cellConfirmationMessageProperty(),
-                                CONFIRMATION_ALERT));
+                                CONFIRMATION_ALERT,
+                                gameDto -> MyDateTime.INSTANCE.getFormatted(gameDto.updatedat())));
         menuSaveListView
                 .getSelectionModel()
                 .selectedItemProperty()
@@ -600,13 +601,14 @@ public final class DefaultView implements IMainView {
         menuPlayerListView.setItems(menuPlayerViewModel.getPlayers());
         menuPlayerListView.setCellFactory(
                 param ->
-                        new PlayerDtoListCell(
+                        new GenericDtoListCell<>(
                                 menuPlayerListView,
                                 "\uef67",
                                 menuPlayerViewModel.cellButtonAccessibleTextProperty(),
                                 menuPlayerViewModel.cellConfirmationTitleProperty(),
                                 menuPlayerViewModel.cellConfirmationMessageProperty(),
-                                CONFIRMATION_ALERT));
+                                CONFIRMATION_ALERT,
+                                PlayerDto::name));
         menuPlayerListView
                 .getSelectionModel()
                 .selectedItemProperty()
