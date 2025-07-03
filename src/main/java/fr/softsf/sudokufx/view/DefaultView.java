@@ -82,13 +82,13 @@ public final class DefaultView implements IMainView {
     @FXML private SpinnerGridPane spinner;
     @FXML private GridPane sudokuFX;
 
-    @FXML VBox menuHidden;
-    @FXML VBox menuMini;
-    @FXML VBox menuMaxi;
-    @FXML VBox menuPlayer;
-    @FXML VBox menuSolve;
-    @FXML VBox menuSave;
-    @FXML VBox menuBackground;
+    @FXML private VBox menuHidden;
+    @FXML private VBox menuMini;
+    @FXML private VBox menuMaxi;
+    @FXML private VBox menuPlayer;
+    @FXML private VBox menuSolve;
+    @FXML private VBox menuSave;
+    @FXML private VBox menuBackground;
 
     @FXML private Button menuHiddenButtonShow;
     @FXML private Button menuMiniButtonShow;
