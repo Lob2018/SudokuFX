@@ -7,9 +7,9 @@ package fr.softsf.sudokufx.common.enums;
 
 /** Utility enum for toast notification levels. */
 public enum ToastLevels {
-    INFO("toast-info"),
-    WARN("toast-warn"),
-    ERROR("toast-error");
+    INFO("toastInfo"),
+    WARN("toastWarn"),
+    ERROR("toastError");
 
     private final String level;
 

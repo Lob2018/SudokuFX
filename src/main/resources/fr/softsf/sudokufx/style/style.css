@@ -217,15 +217,15 @@
     -fx-pref-width: infinity;
 }
 
-.toast-info {
+.toastInfo {
     -fx-background-color: #AAFF99;
 }
 
-.toast-warn {
+.toastWarn {
     -fx-background-color: #F1FF99;
 }
 
-.toast-error {
+.toastError {
     -fx-background-color: #FEBE98;
 }
 
