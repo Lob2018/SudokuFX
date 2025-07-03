@@ -76,7 +76,7 @@
     -fx-cursor: hand;
 }
 
-.sudokuFXGridContainer {
+.sudokuFXGridPane {
     -fx-pref-width: 27.9em;
     -fx-max-width: 27.9em;
     -fx-min-width: 27.9em;

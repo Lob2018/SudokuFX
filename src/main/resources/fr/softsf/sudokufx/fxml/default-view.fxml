@@ -628,8 +628,8 @@
         <!---->
         <!--SudokuFX grid-->
         <!---->
-        <TilePane styleClass="sudokuFXGridContainer" GridPane.columnIndex="1">
-        </TilePane>
+        <GridPane styleClass="sudokuFXGridPane" GridPane.columnIndex="1" >
+        </GridPane>
     </GridPane>
     <!---->
     <!--Toaster-->

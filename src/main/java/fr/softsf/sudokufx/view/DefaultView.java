@@ -81,6 +81,7 @@ public final class DefaultView implements IMainView {
     @FXML private ToasterVBox toaster;
     @FXML private SpinnerGridPane spinner;
     @FXML private GridPane sudokuFX;
+    @FXML private GridPane sudokuFXGridPane;
 
     @FXML private VBox menuHidden;
     @FXML private VBox menuMini;
