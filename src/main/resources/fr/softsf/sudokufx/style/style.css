@@ -87,28 +87,28 @@
 }
 
 .sudokuFXGridCell {
-    -fx-pref-width: 2.98em !important;
-    -fx-pref-height: 2.98em !important;
-    -fx-min-width: 2.98em !important;
-    -fx-min-height: 2.98em !important;
-    -fx-max-width: 2.98em !important;
-    -fx-max-height: 2.98em !important;
-    -fx-padding: 0;
+    -fx-pref-width: 3.3em !important;
+    -fx-pref-height: 3.3em !important;
+    -fx-min-width: 3.3em !important;
+    -fx-min-height: 3.3em !important;
+    -fx-max-width: 3.3em !important;
+    -fx-max-height: 3.3em !important;
     -fx-border-color: black;
-    -fx-border-width: 0em;
     -fx-border-style: solid;
     -fx-alignment: center;
     -fx-background-color: green;
     -fx-font-size: 1em;
+    -fx-text-alignment: center;
+    -fx-content-display: text-only;
+    -fx-line-spacing: -.6em !important;
+    -fx-padding: -.1em !important;
+    -fx-text-overrun: clip;
+    -fx-wrap-text: false;
+    -fx-text-alignment: center;
 }
 
 .sudokuFXGridCellLargeFont {
     -fx-font-size: 2.63em;
-}
-
-.sudokuFXGridCell .scroll-pane {
-    -fx-hbar-policy: NEVER;
-    -fx-vbar-policy: NEVER;
 }
 
 .button:focused {

@@ -17,6 +17,7 @@ import javafx.beans.binding.StringBinding;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
@@ -192,10 +193,31 @@ public final class DefaultView implements IMainView {
         int id = 1;
         for (int row = 0; row < GRID_SIZE; row++) {
             for (int col = 0; col < GRID_SIZE; col++) {
-                TextArea textArea = new TextArea();
-                textArea.getStyleClass().add("sudokuFXGridCell");
-                textArea.setId(String.valueOf(id++));
-                textArea.setWrapText(false);
+                final int cellId = id++;
+                Label label = new Label();
+                label.getStyleClass().add("sudokuFXGridCell");
+                label.setId(String.valueOf(cellId));
+                label.setText("");
+
+                // Largeurs en em (ajustez les valeurs selon rendu souhaité)
+                String thick = "0.2em";
+                String thin = "0.05em";
+                String topWidth = (row == 0) ? thick : thin;
+                String leftWidth = (col == 0) ? thick : thin;
+                String bottomWidth = ((row + 1) % 3 == 0) ? thick : thin;
+                String rightWidth = ((col + 1) % 3 == 0) ? thick : thin;
+                String borderStyle =
+                        String.format(
+                                "-fx-border-color: black black black black;"
+                                        + "-fx-border-width: %s %s %s %s;",
+                                topWidth, rightWidth, bottomWidth, leftWidth);
+                label.setStyle(borderStyle);
+
+                TextField textField = new TextField();
+                textField.getStyleClass().add("sudokuFXGridCell");
+                textField.setId("" + cellId);
+                textField.setAlignment(Pos.CENTER);
+                textField.setVisible(false);
                 UnaryOperator<TextFormatter.Change> filter =
                         change -> {
                             String newText = change.getControlNewText();
@@ -226,26 +248,103 @@ public final class DefaultView implements IMainView {
                             change.setRange(0, change.getControlText().length());
                             return change;
                         };
-                TextFormatter<String> formatter = new TextFormatter<>(filter);
-                textArea.setTextFormatter(formatter);
-                textArea.textProperty()
+                textField.setTextFormatter(new TextFormatter<>(filter));
+                label.setOnMouseClicked(
+                        event -> {
+                            if (event.getClickCount() == 2) {
+                                textField.setText(label.getText().replace("\n", ""));
+                                label.setVisible(false);
+                                textField.setVisible(true);
+                                textField.requestFocus();
+                                textField.positionCaret(textField.getText().length());
+                            }
+                        });
+                textField
+                        .focusedProperty()
+                        .addListener(
+                                (obs, wasFocused, isNowFocused) -> {
+                                    if (!isNowFocused) {
+                                        label.setText(formatText(textField.getText()));
+                                        textField.setVisible(false);
+                                        label.setVisible(true);
+                                    }
+                                });
+                textField.setOnAction(
+                        e -> {
+                            label.setText(formatText(textField.getText()));
+                            textField.setVisible(false);
+                            label.setVisible(true);
+                        });
+                label.textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
                                     if (newText != null
                                             && newText.replace("\n", "").length() == 1) {
-                                        if (!textArea.getStyleClass()
+                                        if (!label.getStyleClass()
                                                 .contains("sudokuFXGridCellLargeFont")) {
-                                            textArea.getStyleClass()
-                                                    .add("sudokuFXGridCellLargeFont");
+                                            label.getStyleClass().add("sudokuFXGridCellLargeFont");
                                         }
                                     } else {
-                                        textArea.getStyleClass()
-                                                .remove("sudokuFXGridCellLargeFont");
+                                        label.getStyleClass().remove("sudokuFXGridCellLargeFont");
                                     }
                                 });
-                sudokuFXGridPane.add(textArea, col, row);
+                sudokuFXGridPane.add(label, col, row);
+                sudokuFXGridPane.add(textField, col, row);
             }
         }
+    }
+
+    // Méthode utilitaire pour formater le texte en 3 lignes max, même logique que le filtre
+    private String formatText(String text) {
+        if (text == null) return "";
+        // Filtrer et trier les chiffres comme avant
+        String filtered =
+                text.chars()
+                        .filter(ch -> ch >= '1' && ch <= '9')
+                        .distinct()
+                        .sorted()
+                        .limit(9)
+                        .collect(
+                                StringBuilder::new,
+                                StringBuilder::appendCodePoint,
+                                StringBuilder::append)
+                        .toString();
+
+        // Découper en lignes de 3 chiffres max avec saut de ligne
+        StringBuilder sb = new StringBuilder();
+        int lineBreaks = 0;
+        for (int i = 0; i < filtered.length(); i++) {
+            sb.append(filtered.charAt(i));
+            if ((i + 1) % 3 == 0 && i != filtered.length() - 1 && lineBreaks < 2) {
+                sb.append('\n');
+                lineBreaks++;
+            }
+        }
+        String baseText = sb.toString();
+        // Ajout des espaces avant chaque chiffre sauf si ligne = 1 seul chiffre
+        String[] lines = baseText.split("\n", -1);
+        StringBuilder finalText = new StringBuilder();
+        for (int i = 0; i < lines.length; i++) {
+            String line = lines[i];
+            if (line.length() <= 1) {
+                finalText.append(line);
+            } else {
+                // Ajout espace avant chaque chiffre sauf premier
+                StringBuilder lineBuilder = new StringBuilder();
+                lineBuilder.append(line.charAt(0));
+                for (int j = 1; j < line.length(); j++) {
+                    char c = line.charAt(j);
+                    if (Character.isDigit(c)) {
+                        lineBuilder.append(' ').append(c);
+                    } else {
+                        lineBuilder.append(c);
+                    }
+                }
+                finalText.append(lineBuilder);
+            }
+            if (i < lines.length - 1) finalText.append('\n');
+        }
+        return finalText.toString();
     }
 
     /**
