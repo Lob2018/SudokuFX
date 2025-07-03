@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.view;
 
 import java.io.File;
 import java.util.Objects;
+import java.util.function.UnaryOperator;
 import javafx.animation.*;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
@@ -57,6 +58,7 @@ import fr.softsf.sudokufx.viewmodel.*;
  */
 public final class DefaultView implements IMainView {
 
+    private static final int GRID_SIZE = 9;
     private static final Logger LOG = LoggerFactory.getLogger(DefaultView.class);
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
@@ -182,6 +184,68 @@ public final class DefaultView implements IMainView {
         backgroundMenuInitialization();
         newMenuInitialization();
         activeMenuManagerInitialization();
+        // Grid
+        gridInitialization();
+    }
+
+    private void gridInitialization() {
+        int id = 1;
+        for (int row = 0; row < GRID_SIZE; row++) {
+            for (int col = 0; col < GRID_SIZE; col++) {
+                TextArea textArea = new TextArea();
+                textArea.getStyleClass().add("sudokuFXGridCell");
+                textArea.setId(String.valueOf(id++));
+                textArea.setWrapText(false);
+                UnaryOperator<TextFormatter.Change> filter =
+                        change -> {
+                            String newText = change.getControlNewText();
+                            String filtered =
+                                    newText.chars()
+                                            .filter(ch -> ch >= '1' && ch <= '9')
+                                            .distinct()
+                                            .sorted()
+                                            .limit(9)
+                                            .collect(
+                                                    StringBuilder::new,
+                                                    StringBuilder::appendCodePoint,
+                                                    StringBuilder::append)
+                                            .toString();
+                            StringBuilder sb = new StringBuilder();
+                            int lineBreaks = 0;
+                            for (int i = 0; i < filtered.length(); i++) {
+                                sb.append(filtered.charAt(i));
+                                if ((i + 1) % 3 == 0
+                                        && i != filtered.length() - 1
+                                        && lineBreaks < 2) {
+                                    sb.append('\n');
+                                    lineBreaks++;
+                                }
+                            }
+                            String finalText = sb.toString();
+                            change.setText(finalText);
+                            change.setRange(0, change.getControlText().length());
+                            return change;
+                        };
+                TextFormatter<String> formatter = new TextFormatter<>(filter);
+                textArea.setTextFormatter(formatter);
+                textArea.textProperty()
+                        .addListener(
+                                (obs, oldText, newText) -> {
+                                    if (newText != null
+                                            && newText.replace("\n", "").length() == 1) {
+                                        if (!textArea.getStyleClass()
+                                                .contains("sudokuFXGridCellLargeFont")) {
+                                            textArea.getStyleClass()
+                                                    .add("sudokuFXGridCellLargeFont");
+                                        }
+                                    } else {
+                                        textArea.getStyleClass()
+                                                .remove("sudokuFXGridCellLargeFont");
+                                    }
+                                });
+                sudokuFXGridPane.add(textArea, col, row);
+            }
+        }
     }
 
     /**

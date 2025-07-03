@@ -628,7 +628,7 @@
         <!---->
         <!--SudokuFX grid-->
         <!---->
-        <GridPane styleClass="sudokuFXGridPane" GridPane.columnIndex="1" >
+        <GridPane fx:id="sudokuFXGridPane" styleClass="sudokuFXGridPaneContainer" GridPane.columnIndex="1" >
         </GridPane>
     </GridPane>
     <!---->

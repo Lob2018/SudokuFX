@@ -76,7 +76,7 @@
     -fx-cursor: hand;
 }
 
-.sudokuFXGridPane {
+.sudokuFXGridPaneContainer {
     -fx-pref-width: 27.9em;
     -fx-max-width: 27.9em;
     -fx-min-width: 27.9em;
@@ -84,6 +84,31 @@
     -fx-max-height: 27.9em;
     -fx-min-height: 27.9em;
     -fx-background-color: yellow;
+}
+
+.sudokuFXGridCell {
+    -fx-pref-width: 2.98em !important;
+    -fx-pref-height: 2.98em !important;
+    -fx-min-width: 2.98em !important;
+    -fx-min-height: 2.98em !important;
+    -fx-max-width: 2.98em !important;
+    -fx-max-height: 2.98em !important;
+    -fx-padding: 0;
+    -fx-border-color: black;
+    -fx-border-width: 0em;
+    -fx-border-style: solid;
+    -fx-alignment: center;
+    -fx-background-color: green;
+    -fx-font-size: 1em;
+}
+
+.sudokuFXGridCellLargeFont {
+    -fx-font-size: 2.63em;
+}
+
+.sudokuFXGridCell .scroll-pane {
+    -fx-hbar-policy: NEVER;
+    -fx-vbar-policy: NEVER;
 }
 
 .button:focused {
