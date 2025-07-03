@@ -87,12 +87,12 @@
 }
 
 .sudokuFXGridCell {
-    -fx-pref-width: 3.3em !important;
-    -fx-pref-height: 3.3em !important;
-    -fx-min-width: 3.3em !important;
-    -fx-min-height: 3.3em !important;
-    -fx-max-width: 3.3em !important;
-    -fx-max-height: 3.3em !important;
+    -fx-pref-width: 3.084em !important;
+    -fx-pref-height: 3.084em !important;
+    -fx-min-width: 3.084em !important;
+    -fx-min-height: 3.084em !important;
+    -fx-max-width: 3.084em !important;
+    -fx-max-height: 3.084em !important;
     -fx-border-color: black;
     -fx-border-style: solid;
     -fx-alignment: center;
