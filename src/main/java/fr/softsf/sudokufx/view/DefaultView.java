@@ -326,20 +326,20 @@ public final class DefaultView implements IMainView {
                         });
 
                 // Adjust font size style class depending on number of digits
-                label.textProperty()
-                        .addListener(
-                                (obs, oldText, newText) -> {
-                                    if (newText != null
-                                            && newText.replace("\n", "").length() == 1) {
-                                        if (!label.getStyleClass()
-                                                .contains("sudokuFXGridCellLargeFont")) {
-                                            label.getStyleClass().add("sudokuFXGridCellLargeFont");
-                                        }
-                                    } else {
-                                        // TODO change the size only for one number
-                                        // label.getStyleClass().remove("sudokuFXGridCellLargeFont");
-                                    }
-                                });
+                // TODO change the size only for one number
+//                label.textProperty()
+//                        .addListener(
+//                                (obs, oldText, newText) -> {
+//                                    if (newText != null
+//                                            && newText.replace("\n", "").length() == 1) {
+//                                        if (!label.getStyleClass()
+//                                                .contains("sudokuFXGridCellLargeFont")) {
+//                                            label.getStyleClass().add("sudokuFXGridCellLargeFont");
+//                                        }
+//                                    } else {
+//                                         label.getStyleClass().remove("sudokuFXGridCellLargeFont");
+//                                    }
+//                                });
 
                 // Add both nodes to the same cell
                 sudokuFXGridPane.add(label, col, row);
