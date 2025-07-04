@@ -17,13 +17,13 @@ import javafx.beans.binding.StringBinding;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.Pos;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.*;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.FileChooser;
@@ -189,40 +189,65 @@ public final class DefaultView implements IMainView {
         gridInitialization();
     }
 
+    /**
+     * Initializes the Sudoku grid with Labels and hidden TextFields for editing. Each cell has a
+     * Label (display) and a TextField (edit mode).
+     */
     private void gridInitialization() {
         int id = 1;
         for (int row = 0; row < GRID_SIZE; row++) {
             for (int col = 0; col < GRID_SIZE; col++) {
                 final int cellId = id++;
+
+                // Label (read-only display)
                 Label label = new Label();
                 label.getStyleClass().add("sudokuFXGridCell");
                 label.setId(String.valueOf(cellId));
                 label.setText("");
 
-                // Largeurs en em (ajustez les valeurs selon rendu souhaité)
-                String thick = "0.2em";
-                String thin = "0.05em";
-                String topWidth = (row == 0) ? thick : thin;
-                String leftWidth = (col == 0) ? thick : thin;
-                String bottomWidth = ((row + 1) % 3 == 0) ? thick : thin;
-                String rightWidth = ((col + 1) % 3 == 0) ? thick : thin;
+                // Border setup (thick lines between 3x3 subgrids)
+                String thick = "0.2em", thin = "0.05em";
+                String top = (row == 0) ? thick : thin;
+                String left = (col == 0) ? thick : thin;
+                String bottom = ((row + 1) % 3 == 0) ? thick : thin;
+                String right = ((col + 1) % 3 == 0) ? thick : thin;
                 String borderStyle =
                         String.format(
-                                "-fx-border-color: black black black black;"
-                                        + "-fx-border-width: %s %s %s %s;",
-                                topWidth, rightWidth, bottomWidth, leftWidth);
-                label.setStyle(borderStyle);
+                                "-fx-border-color: black black black black; -fx-border-width: %s %s"
+                                        + " %s %s;",
+                                top, right, bottom, left);
 
-                TextField textField = new TextField();
-                textField.getStyleClass().add("sudokuFXGridCell");
-                textField.setId("" + cellId);
-                textField.setAlignment(Pos.CENTER);
-                textField.setVisible(false);
+                label.setStyle(borderStyle);
+                label.focusedProperty()
+                        .addListener(
+                                (obs, wasFocused, isFocused) -> {
+                                    if (isFocused) {
+                                        label.setStyle(
+                                                "-fx-border-color: radial-gradient(center 50% 150%,"
+                                                    + " radius 100%, derive(#0C8CE9, -90%),"
+                                                    + " derive(#0C8CE9, 55%)); -fx-border-width:"
+                                                    + " 0.2em;");
+                                    } else {
+                                        label.setStyle(borderStyle);
+                                    }
+                                });
+
+                // TextArea (editable)
+                TextArea textArea = new TextArea();
+                textArea.setStyle(borderStyle);
+                textArea.getStyleClass().add("sudokuFXGridCell");
+                textArea.setId(String.valueOf(cellId));
+                textArea.setWrapText(true);
+                textArea.setVisible(false);
+                textArea.setPrefRowCount(3);
+                textArea.setFocusTraversable(true);
+
+                // Input filtering (digits 1–9, unique, sorted, 3 lines max)
                 UnaryOperator<TextFormatter.Change> filter =
                         change -> {
-                            String newText = change.getControlNewText();
                             String filtered =
-                                    newText.chars()
+                                    change.getControlNewText()
+                                            .chars()
                                             .filter(ch -> ch >= '1' && ch <= '9')
                                             .distinct()
                                             .sorted()
@@ -232,6 +257,7 @@ public final class DefaultView implements IMainView {
                                                     StringBuilder::appendCodePoint,
                                                     StringBuilder::append)
                                             .toString();
+
                             StringBuilder sb = new StringBuilder();
                             int lineBreaks = 0;
                             for (int i = 0; i < filtered.length(); i++) {
@@ -243,38 +269,63 @@ public final class DefaultView implements IMainView {
                                     lineBreaks++;
                                 }
                             }
-                            String finalText = sb.toString();
-                            change.setText(finalText);
+                            change.setText(sb.toString());
                             change.setRange(0, change.getControlText().length());
                             return change;
                         };
-                textField.setTextFormatter(new TextFormatter<>(filter));
+                textArea.setTextFormatter(new TextFormatter<>(filter));
+
+                // Allow the Label to receive focus via keyboard navigation (e.g. Tab key)
+                label.setFocusTraversable(true);
+
+                // Handle mouse click on the Label to switch to edit mode
                 label.setOnMouseClicked(
                         event -> {
-                            if (event.getClickCount() == 2) {
-                                textField.setText(label.getText().replace("\n", ""));
-                                label.setVisible(false);
-                                textField.setVisible(true);
-                                textField.requestFocus();
-                                textField.positionCaret(textField.getText().length());
+                            switchToEditMode(textArea, label);
+                        });
+
+                // Handle key press events when the Label is focused
+                label.setOnKeyPressed(
+                        event -> {
+                            KeyCode code = event.getCode();
+                            String text = event.getText();
+                            if (code == KeyCode.ENTER
+                                    || code == KeyCode.SPACE
+                                    || (text.matches("[1-9]"))) {
+                                switchToEditMode(textArea, label);
+                                event.consume();
                             }
                         });
-                textField
-                        .focusedProperty()
+
+                // When TextArea loses focus, update label and hide TextArea
+                textArea.focusedProperty()
                         .addListener(
-                                (obs, wasFocused, isNowFocused) -> {
-                                    if (!isNowFocused) {
-                                        label.setText(formatText(textField.getText()));
-                                        textField.setVisible(false);
+                                (obs, oldV, newV) -> {
+                                    if (!newV) {
+                                        label.setText(formatText(textArea.getText()));
+                                        textArea.setVisible(false);
                                         label.setVisible(true);
                                     }
                                 });
-                textField.setOnAction(
+
+                // Pressing Enter confirms value and closes TextArea
+                textArea.setOnKeyPressed(
                         e -> {
-                            label.setText(formatText(textField.getText()));
-                            textField.setVisible(false);
-                            label.setVisible(true);
+                            switch (e.getCode()) {
+                                case ENTER, ESCAPE, TAB, SPACE -> {
+                                    e.consume();
+                                    label.setText(formatText(textArea.getText()));
+                                    textArea.setVisible(false);
+                                    label.setVisible(true);
+                                    label.requestFocus();
+                                }
+                                default -> {
+                                    // default behavior
+                                }
+                            }
                         });
+
+                // Adjust font size style class depending on number of digits
                 label.textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
@@ -285,19 +336,38 @@ public final class DefaultView implements IMainView {
                                             label.getStyleClass().add("sudokuFXGridCellLargeFont");
                                         }
                                     } else {
-                                        label.getStyleClass().remove("sudokuFXGridCellLargeFont");
+                                        // TODO change the size only for one number
+                                        // label.getStyleClass().remove("sudokuFXGridCellLargeFont");
                                     }
                                 });
+
+                // Add both nodes to the same cell
                 sudokuFXGridPane.add(label, col, row);
-                sudokuFXGridPane.add(textField, col, row);
+                sudokuFXGridPane.add(textArea, col, row);
             }
         }
     }
 
-    // Méthode utilitaire pour formater le texte en 3 lignes max, même logique que le filtre
+    /**
+     * Switches from label to TextArea for editing.
+     *
+     * @param textArea the editable TextArea
+     * @param label the label to switch from
+     */
+    private static void switchToEditMode(TextArea textArea, Label label) {
+        textArea.setText(label.getText().replace("\n", ""));
+        label.setVisible(false);
+        textArea.setVisible(true);
+        textArea.requestFocus();
+        textArea.positionCaret(textArea.getText().length());
+    }
+
+    /**
+     * Formats input text by filtering digits 1-9, sorting and limiting to 9 chars, splitting into
+     * max 3 lines with spaces between digits (except single digit lines).
+     */
     private String formatText(String text) {
         if (text == null) return "";
-        // Filtrer et trier les chiffres comme avant
         String filtered =
                 text.chars()
                         .filter(ch -> ch >= '1' && ch <= '9')
@@ -310,7 +380,6 @@ public final class DefaultView implements IMainView {
                                 StringBuilder::append)
                         .toString();
 
-        // Découper en lignes de 3 chiffres max avec saut de ligne
         StringBuilder sb = new StringBuilder();
         int lineBreaks = 0;
         for (int i = 0; i < filtered.length(); i++) {
@@ -321,7 +390,7 @@ public final class DefaultView implements IMainView {
             }
         }
         String baseText = sb.toString();
-        // Ajout des espaces avant chaque chiffre sauf si ligne = 1 seul chiffre
+
         String[] lines = baseText.split("\n", -1);
         StringBuilder finalText = new StringBuilder();
         for (int i = 0; i < lines.length; i++) {
@@ -329,16 +398,11 @@ public final class DefaultView implements IMainView {
             if (line.length() <= 1) {
                 finalText.append(line);
             } else {
-                // Ajout espace avant chaque chiffre sauf premier
                 StringBuilder lineBuilder = new StringBuilder();
                 lineBuilder.append(line.charAt(0));
                 for (int j = 1; j < line.length(); j++) {
                     char c = line.charAt(j);
-                    if (Character.isDigit(c)) {
-                        lineBuilder.append(' ').append(c);
-                    } else {
-                        lineBuilder.append(c);
-                    }
+                    lineBuilder.append(' ').append(c);
                 }
                 finalText.append(lineBuilder);
             }

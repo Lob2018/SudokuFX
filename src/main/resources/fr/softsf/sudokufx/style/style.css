@@ -107,9 +107,58 @@
     -fx-text-alignment: center;
 }
 
+.label.sudokuFXGridCell:focused {
+    -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
+}
+
 .sudokuFXGridCellLargeFont {
     -fx-font-size: 2.63em;
 }
+
+.text-area.sudokuFXGridCell {
+    -fx-control-inner-background: transparent;
+    -fx-background-color: turquoise;
+    -fx-padding: 0;
+    -fx-alignment: center;
+    -fx-border-color: black;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.text-area.sudokuFXGridCell .content {
+    -fx-alignment: center;
+    -fx-padding: 0.05em 0.583em 0.05em 0.583em;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.text-area.sudokuFXGridCell .scroll-pane {
+    -fx-hbar-policy: NEVER;
+    -fx-vbar-policy: NEVER;
+}
+
+.text-area.sudokuFXGridCell .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.text-area.sudokuFXGridCell:focused {
+    -fx-faint-focus-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+
+
+
+
+
+
+
+
 
 .button:focused {
     -fx-border-width: .2em;
