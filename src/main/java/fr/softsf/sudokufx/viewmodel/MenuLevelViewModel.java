@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
+import java.util.Objects;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.BooleanBinding;
 import javafx.beans.binding.StringBinding;
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 
 /**
@@ -40,18 +41,16 @@ public class MenuLevelViewModel {
     }
 
     /**
-     * Updates the selected difficulty level and corresponding stars completion percentage.
+     * Updates the selected difficulty level and its associated stars percentage.
      *
-     * @param level the new difficulty level to select
+     * @param level the new difficulty level (must not be {@code null})
+     * @param stars the completion percentage
+     * @throws IllegalArgumentException if {@code level} is {@code null}
      */
-    public void updateSelectedLevel(DifficultyLevel level) {
-        // TODO NEW GRID
-        int stars;
-        switch (level) {
-            case EASY -> stars = SecureRandomGenerator.INSTANCE.nextInt(10, 33);
-            case MEDIUM -> stars = SecureRandomGenerator.INSTANCE.nextInt(34, 66);
-            case DIFFICULT -> stars = SecureRandomGenerator.INSTANCE.nextInt(67, 89);
-            default -> stars = 100;
+    public void updateSelectedLevel(DifficultyLevel level, int stars) {
+        if (Objects.isNull(level)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "Difficulty level cannot be null");
         }
         selectedLevel.set(level);
         starsPercentage.set(stars);
