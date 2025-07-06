@@ -7,7 +7,6 @@ package fr.softsf.sudokufx.viewmodel.grid;
 
 import java.util.Locale;
 import java.util.function.UnaryOperator;
-
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.IntegerProperty;
@@ -76,14 +75,15 @@ public class GridCellViewModel {
      */
     private void setupListeners() {
         // Focus styling
-        label.focusedProperty().addListener((obs, oldV, newV) ->
-        {
-            if (newV) {
-                label.setStyle(getBorderStyle(label.getText().length(), true));
-            } else {
-                label.setStyle(getBorderStyle(label.getText().length(), false));
-            }
-        });
+        label.focusedProperty()
+                .addListener(
+                        (obs, oldV, newV) -> {
+                            if (newV) {
+                                label.setStyle(getBorderStyle(label.getText().length(), true));
+                            } else {
+                                label.setStyle(getBorderStyle(label.getText().length(), false));
+                            }
+                        });
         // Label click or key press to edit
         label.setOnMouseClicked(e -> switchToEditMode());
         label.setOnKeyPressed(
@@ -145,8 +145,7 @@ public class GridCellViewModel {
                             label.setVisible(true);
                             label.requestFocus();
                         }
-                        default -> {
-                        }
+                        default -> {}
                     }
                 });
 
@@ -167,11 +166,11 @@ public class GridCellViewModel {
     }
 
     /**
-     * Computes the dynamic CSS border style for a Sudoku grid cell based on its position,
-     * content size, and focus state.
+     * Computes the dynamic CSS border style for a Sudoku grid cell based on its position, content
+     * size, and focus state.
      *
-     * @param nbOfChar        Number of characters in the cell (used to scale the border).
-     * @param focusedBorder   Whether the cell is currently focused (affects color and thickness).
+     * @param nbOfChar Number of characters in the cell (used to scale the border).
+     * @param focusedBorder Whether the cell is currently focused (affects color and thickness).
      * @return A CSS style string for -fx-border-color and -fx-border-width.
      */
     private String getBorderStyle(int nbOfChar, boolean focusedBorder) {
@@ -181,7 +180,7 @@ public class GridCellViewModel {
         String color =
                 focusedBorder
                         ? "-fx-border-color: radial-gradient(center 50% 150%, radius"
-                        + " 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));"
+                                + " 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));"
                         : "black";
         String top = String.format(Locale.US, "%.3fem", (row == 0 ? baseThick : baseThin) * scale);
         String right =
@@ -196,9 +195,7 @@ public class GridCellViewModel {
                 color, top, right, bottom, left);
     }
 
-    /**
-     * Switches from label (read-only) to editable TextArea mode and focuses it.
-     */
+    /** Switches from label (read-only) to editable TextArea mode and focuses it. */
     private void switchToEditMode() {
         textArea.setText(rawText.get().replace("\n", ""));
         label.setVisible(false);
