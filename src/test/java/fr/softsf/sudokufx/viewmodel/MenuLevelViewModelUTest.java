@@ -33,15 +33,15 @@ class MenuLevelViewModelUTest {
 
     @Test
     void givenDifficultyLevel_whenUpdateSelectedLevel_thenSelectedLevelAndStarsAreSet() {
-        viewModel.updateSelectedLevel(DifficultyLevel.EASY,15);
+        viewModel.updateSelectedLevel(DifficultyLevel.EASY, 15);
         assertEquals(DifficultyLevel.EASY, viewModel.selectedLevelProperty().get());
         int stars = viewModel.percentageProperty().get();
         assertTrue(stars >= 10 && stars <= 33);
-        viewModel.updateSelectedLevel(DifficultyLevel.MEDIUM,40);
+        viewModel.updateSelectedLevel(DifficultyLevel.MEDIUM, 40);
         assertEquals(DifficultyLevel.MEDIUM, viewModel.selectedLevelProperty().get());
         stars = viewModel.percentageProperty().get();
         assertTrue(stars >= 34 && stars <= 66);
-        viewModel.updateSelectedLevel(DifficultyLevel.DIFFICULT,70);
+        viewModel.updateSelectedLevel(DifficultyLevel.DIFFICULT, 70);
         assertEquals(DifficultyLevel.DIFFICULT, viewModel.selectedLevelProperty().get());
         stars = viewModel.percentageProperty().get();
         assertTrue(stars >= 67 && stars <= 89);
@@ -49,7 +49,7 @@ class MenuLevelViewModelUTest {
 
     @Test
     void givenSelectedLevel_whenIsSelectedBinding_thenBindingReflectsSelection() {
-        viewModel.updateSelectedLevel(DifficultyLevel.MEDIUM,40);
+        viewModel.updateSelectedLevel(DifficultyLevel.MEDIUM, 40);
         BooleanBinding bindingMedium = viewModel.isSelectedBinding(DifficultyLevel.MEDIUM);
         assertTrue(bindingMedium.get());
         BooleanBinding bindingEasy = viewModel.isSelectedBinding(DifficultyLevel.EASY);
