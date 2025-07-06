@@ -87,12 +87,12 @@
 }
 
 .sudokuFXGridCell {
-    -fx-pref-width: 3.084em !important;
-    -fx-pref-height: 3.084em !important;
-    -fx-min-width: 3.084em !important;
-    -fx-min-height: 3.084em !important;
-    -fx-max-width: 3.084em !important;
-    -fx-max-height: 3.084em !important;
+    -fx-pref-width: 3.084em;
+    -fx-pref-height: 3.084em;
+    -fx-min-width: 3.084em;
+    -fx-min-height: 3.084em;
+    -fx-max-width: 3.084em;
+    -fx-max-height: 3.084em;
     -fx-border-color: black;
     -fx-border-style: solid;
     -fx-alignment: center;
@@ -100,8 +100,8 @@
     -fx-font-size: 1em;
     -fx-text-alignment: center;
     -fx-content-display: text-only;
-    -fx-line-spacing: -.6em !important;
-    -fx-padding: -.1em !important;
+    -fx-line-spacing: -.6em;
+    -fx-padding: -.1em;
     -fx-text-overrun: clip;
     -fx-wrap-text: false;
     -fx-text-alignment: center;
