@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
-import jakarta.annotation.PostConstruct;
 
 /**
  * ViewModel component managing a 9x9 Sudoku grid. Provides observable cell view models and methods
@@ -33,10 +32,9 @@ public class GridViewModel {
     }
 
     /**
-     * Initializes the grid by creating 81 GridCellViewModels, each with an id and coordinates.
-     * Called automatically after Spring bean construction.
+     * Creates 81 GridCellViewModels with unique ids and grid coordinates.
+     * Called once after bean construction to initialize the grid.
      */
-    @PostConstruct
     public void init() {
         int id = 1;
         for (int row = 0; row < GRID_SIZE; row++) {

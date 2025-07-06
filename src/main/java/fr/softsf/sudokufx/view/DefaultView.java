@@ -190,10 +190,11 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Adds each cell’s Label and TextArea from the ViewModel to the GridPane positioned by row and
-     * column based on the index (9x9 grid).
+     * Adds each cell's Label and TextArea to the GridPane at positions calculated
+     * from their index in a 9x9 grid, after initializing the cell view models.
      */
     private void gridInitialization() {
+        gridViewModel.init();
         int index = 0;
         for (GridCellViewModel cellVM : gridViewModel.getCellViewModels()) {
             Label label = cellVM.getLabel();
