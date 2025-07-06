@@ -83,7 +83,7 @@
     -fx-pref-height: 27.9em;
     -fx-max-height: 27.9em;
     -fx-min-height: 27.9em;
-    -fx-background-color: yellow;
+    -fx-background-color: transparent;
 }
 
 .sudokuFXGridCell {
@@ -96,7 +96,6 @@
     -fx-border-color: black;
     -fx-border-style: solid;
     -fx-alignment: center;
-    -fx-background-color: green;
     -fx-font-size: 1em;
     -fx-text-alignment: center;
     -fx-content-display: text-only;
@@ -105,6 +104,9 @@
     -fx-text-overrun: clip;
     -fx-wrap-text: false;
     -fx-text-alignment: center;
+    -fx-background-color: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-text-fill: black;
 }
 
 .label.sudokuFXGridCell:focused {
@@ -113,11 +115,17 @@
 
 .sudokuFXGridCellLargeFont {
     -fx-font-size: 2.63em;
+    -fx-pref-width: 1.174em;
+    -fx-pref-height: 1.174em;
+    -fx-min-width: 1.174em;
+    -fx-min-height: 1.174em;
+    -fx-max-width: 1.174em;
+    -fx-max-height: 1.174em;
 }
 
 .text-area.sudokuFXGridCell {
     -fx-control-inner-background: transparent;
-    -fx-background-color: turquoise;
+    -fx-background-color: white;
     -fx-padding: 0;
     -fx-alignment: center;
     -fx-border-color: black;
@@ -150,15 +158,6 @@
     -fx-background-radius: 0;
     -fx-border-radius: 0;
 }
-
-
-
-
-
-
-
-
-
 
 .button:focused {
     -fx-border-width: .2em;

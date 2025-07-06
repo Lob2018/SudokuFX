@@ -5,7 +5,9 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
+import java.util.Locale;
 import java.util.function.UnaryOperator;
+
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.IntegerProperty;
@@ -38,8 +40,6 @@ public class GridCellViewModel {
     private final int row;
     private final int col;
 
-    private final String borderStyle;
-
     public GridCellViewModel(int id, int row, int col) {
         this.id.set(id);
         this.row = row;
@@ -51,15 +51,7 @@ public class GridCellViewModel {
         textArea.getStyleClass().add("sudokuFXGridCell");
         textArea.setPrefRowCount(3);
         textArea.setWrapText(true);
-        String thick = "0.2em", thin = "0.05em";
-        String top = (row == 0) ? thick : thin;
-        String left = (col == 0) ? thick : thin;
-        String bottom = ((row + 1) % 3 == 0) ? thick : thin;
-        String right = ((col + 1) % 3 == 0) ? thick : thin;
-        this.borderStyle =
-                String.format(
-                        "-fx-border-color: black black black black; -fx-border-width: %s %s %s %s;",
-                        top, right, bottom, left);
+        String borderStyle = getBorderStyle(label.getText().length(), false);
         label.setStyle(borderStyle);
         textArea.setStyle(borderStyle);
         // Formatted display text derived from raw input (e.g., "123456789" -> multiline with
@@ -84,18 +76,14 @@ public class GridCellViewModel {
      */
     private void setupListeners() {
         // Focus styling
-        label.focusedProperty()
-                .addListener(
-                        (obs, oldV, newV) -> {
-                            if (newV) {
-                                label.setStyle(
-                                        "-fx-border-color: radial-gradient(center 50% 150%, radius"
-                                            + " 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));"
-                                            + " -fx-border-width: 0.2em;");
-                            } else {
-                                label.setStyle(borderStyle);
-                            }
-                        });
+        label.focusedProperty().addListener((obs, oldV, newV) ->
+        {
+            if (newV) {
+                label.setStyle(getBorderStyle(label.getText().length(), true));
+            } else {
+                label.setStyle(getBorderStyle(label.getText().length(), false));
+            }
+        });
         // Label click or key press to edit
         label.setOnMouseClicked(e -> switchToEditMode());
         label.setOnKeyPressed(
@@ -157,28 +145,60 @@ public class GridCellViewModel {
                             label.setVisible(true);
                             label.requestFocus();
                         }
-                        default -> {}
+                        default -> {
+                        }
                     }
                 });
 
         // Vous pouvez réactiver le listener pour la taille de police si besoin
-        //        label.textProperty()
-        //                .addListener(
-        //                        (obs, oldText, newText) -> {
-        //                            if (newText != null && newText.replace("\n", "").length() ==
-        // 1) {
-        //                                if
-        // (!label.getStyleClass().contains("sudokuFXGridCellLargeFont")) {
-        //
-        // label.getStyleClass().add("sudokuFXGridCellLargeFont");
-        //                                }
-        //                            } else {
-        //                                label.getStyleClass().remove("sudokuFXGridCellLargeFont");
-        //                            }
-        //                        });
+        label.textProperty()
+                .addListener(
+                        (obs, oldText, newText) -> {
+                            if (newText != null && newText.replace("\n", "").length() == 1) {
+                                if (!label.getStyleClass().contains("sudokuFXGridCellLargeFont")) {
+                                    label.getStyleClass().add("sudokuFXGridCellLargeFont");
+                                    label.setStyle(getBorderStyle(label.getText().length(), false));
+                                }
+                            } else {
+                                label.getStyleClass().remove("sudokuFXGridCellLargeFont");
+                                label.setStyle(getBorderStyle(label.getText().length(), false));
+                            }
+                        });
     }
 
-    /** Switches from label (read-only) to editable TextArea mode and focuses it. */
+    /**
+     * Computes the dynamic CSS border style for a Sudoku grid cell based on its position,
+     * content size, and focus state.
+     *
+     * @param nbOfChar        Number of characters in the cell (used to scale the border).
+     * @param focusedBorder   Whether the cell is currently focused (affects color and thickness).
+     * @return A CSS style string for -fx-border-color and -fx-border-width.
+     */
+    private String getBorderStyle(int nbOfChar, boolean focusedBorder) {
+        double scale = nbOfChar == 1 ? .35 : 1;
+        double baseThick = 0.2;
+        double baseThin = focusedBorder ? 0.2 : 0.05;
+        String color =
+                focusedBorder
+                        ? "-fx-border-color: radial-gradient(center 50% 150%, radius"
+                        + " 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));"
+                        : "black";
+        String top = String.format(Locale.US, "%.3fem", (row == 0 ? baseThick : baseThin) * scale);
+        String right =
+                String.format(
+                        Locale.US, "%.3fem", ((col + 1) % 3 == 0 ? baseThick : baseThin) * scale);
+        String bottom =
+                String.format(
+                        Locale.US, "%.3fem", ((row + 1) % 3 == 0 ? baseThick : baseThin) * scale);
+        String left = String.format(Locale.US, "%.3fem", (col == 0 ? baseThick : baseThin) * scale);
+        return String.format(
+                "-fx-border-color: %s; -fx-border-width: %s %s %s %s;",
+                color, top, right, bottom, left);
+    }
+
+    /**
+     * Switches from label (read-only) to editable TextArea mode and focuses it.
+     */
     private void switchToEditMode() {
         textArea.setText(rawText.get().replace("\n", ""));
         label.setVisible(false);
