@@ -32,8 +32,8 @@ public class GridViewModel {
     }
 
     /**
-     * Creates 81 GridCellViewModels with unique ids and grid coordinates.
-     * Called once after bean construction to initialize the grid.
+     * Creates 81 GridCellViewModels with unique ids and grid coordinates. Called once after bean
+     * construction to initialize the grid.
      */
     public void init() {
         int id = 1;
