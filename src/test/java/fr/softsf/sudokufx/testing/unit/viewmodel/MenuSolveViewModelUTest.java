@@ -46,9 +46,9 @@ class MenuSolveViewModelUTest {
 
     @Test
     void percentageProperty_shouldHaveInitialValue_100_and_setterShouldWork() {
-        IntegerProperty percentage = viewModel.percentageProperty();
+        IntegerProperty percentage = viewModel.solvePercentageProperty();
         assertEquals(100, percentage.get());
-        viewModel.setPercentage(42);
+        viewModel.setSolvePercentage(42);
         assertEquals(42, percentage.get());
     }
 
@@ -75,28 +75,28 @@ class MenuSolveViewModelUTest {
             MenuSolveViewModel vm) {
         Map<StringBinding, Supplier<String>> map = new HashMap<>();
         map.put(
-                vm.menuMaxiAccessibleTextProperty(),
+                vm.solveMenuMaxiAccessibleTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility"));
         map.put(
-                vm.menuMaxiTooltipProperty(),
+                vm.solveMenuMaxiTooltipProperty(),
                 () ->
                         I18n.INSTANCE.getValue("menu.maxi.button.solve.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         "menu.accessibility.role.description.closed"));
         map.put(
-                vm.menuMaxiRoleDescriptionProperty(),
+                vm.solveMenuMaxiRoleDescriptionProperty(),
                 () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
         map.put(
-                vm.menuMaxiTextProperty(),
+                vm.solveMenuMaxiTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.maxi.button.solve.text"));
         map.put(
-                vm.reduceAccessibleTextProperty(),
+                vm.solveReduceAccessibleTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
         map.put(
-                vm.reduceTooltipProperty(),
+                vm.solveReduceTooltipProperty(),
                 () -> I18n.INSTANCE.getValue("menu.solve.button.reduce.accessibility"));
         map.put(
-                vm.reduceTextProperty(),
+                vm.solveReduceTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.solve.button.reduce.text"));
         map.put(
                 vm.solveRoleDescriptionProperty(),

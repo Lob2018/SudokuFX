@@ -24,21 +24,21 @@ import fr.softsf.sudokufx.common.enums.I18n;
  */
 @Component
 public class MenuSolveViewModel {
-    private final IntegerProperty percentage = new SimpleIntegerProperty(100);
+    private final IntegerProperty solvePercentage = new SimpleIntegerProperty(100);
 
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
             "menu.accessibility.role.description.opened";
 
-    private final StringBinding menuMaxiAccessibleText;
-    private final StringBinding menuMaxiTooltip;
-    private final StringBinding menuMaxiRoleDescription;
-    private final StringBinding menuMaxiText;
+    private final StringBinding solveMenuMaxiAccessibleText;
+    private final StringBinding solveMenuMaxiTooltip;
+    private final StringBinding solveMenuMaxiRoleDescription;
+    private final StringBinding solveMenuMaxiText;
 
-    private final StringBinding reduceAccessibleText;
-    private final StringBinding reduceTooltip;
-    private final StringBinding reduceText;
+    private final StringBinding solveReduceAccessibleText;
+    private final StringBinding solveReduceTooltip;
+    private final StringBinding solveReduceText;
 
     private final StringBinding solveRoleDescription;
     private final StringBinding solveText;
@@ -48,16 +48,17 @@ public class MenuSolveViewModel {
     private final StringBinding solveClearTooltip;
 
     public MenuSolveViewModel() {
-        menuMaxiAccessibleText = createStringBinding("menu.maxi.button.solve.accessibility");
-        menuMaxiTooltip =
+        solveMenuMaxiAccessibleText = createStringBinding("menu.maxi.button.solve.accessibility");
+        solveMenuMaxiTooltip =
                 createFormattedAndConcatenatedBinding(
                         "menu.maxi.button.solve.accessibility",
                         MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED);
-        menuMaxiRoleDescription = createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED);
-        menuMaxiText = createStringBinding("menu.maxi.button.solve.text");
-        reduceAccessibleText = createStringBinding("menu.solve.button.reduce.accessibility");
-        reduceTooltip = createStringBinding("menu.solve.button.reduce.accessibility");
-        reduceText = createStringBinding("menu.solve.button.reduce.text");
+        solveMenuMaxiRoleDescription =
+                createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED);
+        solveMenuMaxiText = createStringBinding("menu.maxi.button.solve.text");
+        solveReduceAccessibleText = createStringBinding("menu.solve.button.reduce.accessibility");
+        solveReduceTooltip = createStringBinding("menu.solve.button.reduce.accessibility");
+        solveReduceText = createStringBinding("menu.solve.button.reduce.text");
         solveRoleDescription = createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED);
         solveText = createStringBinding("menu.solve.button.solve.text");
         solveClearAccessibleText =
@@ -96,32 +97,32 @@ public class MenuSolveViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
-    public StringBinding menuMaxiAccessibleTextProperty() {
-        return menuMaxiAccessibleText;
+    public StringBinding solveMenuMaxiAccessibleTextProperty() {
+        return solveMenuMaxiAccessibleText;
     }
 
-    public StringBinding menuMaxiTooltipProperty() {
-        return menuMaxiTooltip;
+    public StringBinding solveMenuMaxiTooltipProperty() {
+        return solveMenuMaxiTooltip;
     }
 
-    public StringBinding menuMaxiRoleDescriptionProperty() {
-        return menuMaxiRoleDescription;
+    public StringBinding solveMenuMaxiRoleDescriptionProperty() {
+        return solveMenuMaxiRoleDescription;
     }
 
-    public StringBinding menuMaxiTextProperty() {
-        return menuMaxiText;
+    public StringBinding solveMenuMaxiTextProperty() {
+        return solveMenuMaxiText;
     }
 
-    public StringBinding reduceAccessibleTextProperty() {
-        return reduceAccessibleText;
+    public StringBinding solveReduceAccessibleTextProperty() {
+        return solveReduceAccessibleText;
     }
 
-    public StringBinding reduceTooltipProperty() {
-        return reduceTooltip;
+    public StringBinding solveReduceTooltipProperty() {
+        return solveReduceTooltip;
     }
 
-    public StringBinding reduceTextProperty() {
-        return reduceText;
+    public StringBinding solveReduceTextProperty() {
+        return solveReduceText;
     }
 
     public StringBinding solveRoleDescriptionProperty() {
@@ -144,8 +145,8 @@ public class MenuSolveViewModel {
         return solveClearTooltip;
     }
 
-    public IntegerProperty percentageProperty() {
-        return percentage;
+    public IntegerProperty solvePercentageProperty() {
+        return solvePercentage;
     }
 
     /**
@@ -153,7 +154,7 @@ public class MenuSolveViewModel {
      *
      * @param value the new percentage value
      */
-    public void setPercentage(int value) {
-        this.percentage.set(value);
+    public void setSolvePercentage(int value) {
+        this.solvePercentage.set(value);
     }
 }

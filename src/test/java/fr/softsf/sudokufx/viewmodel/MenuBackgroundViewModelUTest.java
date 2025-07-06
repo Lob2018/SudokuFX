@@ -89,29 +89,29 @@ class MenuBackgroundViewModelUTest {
             MenuBackgroundViewModel vm) {
         Map<StringBinding, Supplier<String>> map = new HashMap<>();
         map.put(
-                vm.menuMaxiAccessibleTextProperty(),
+                vm.backgroundMenuMaxiAccessibleTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
         map.put(
-                vm.menuMaxiTooltipProperty(),
+                vm.backgroundMenuMaxiTooltipProperty(),
                 () ->
                         I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         "menu.accessibility.role.description.closed"));
         map.put(
-                vm.menuMaxiRoleDescriptionProperty(),
+                vm.backgroundMenuMaxiRoleDescriptionProperty(),
                 () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
         map.put(
-                vm.menuMaxiTextProperty(),
+                vm.backgroundMenuMaxiTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.maxi.button.background.text"));
 
         map.put(
-                vm.reduceAccessibleTextProperty(),
+                vm.backgroundReduceAccessibleTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
         map.put(
-                vm.reduceTooltipProperty(),
+                vm.backgroundReduceTooltipProperty(),
                 () -> I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
         map.put(
-                vm.reduceTextProperty(),
+                vm.backgroundReduceTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.background.button.reduce.text"));
 
         map.put(
@@ -131,32 +131,32 @@ class MenuBackgroundViewModelUTest {
                 () -> I18n.INSTANCE.getValue("menu.background.button.background.text"));
 
         map.put(
-                vm.imageAccessibleTextProperty(),
+                vm.backgroundImageAccessibleTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.background.button.image.accessibility"));
         map.put(
-                vm.imageTooltipProperty(),
+                vm.backgroundImageTooltipProperty(),
                 () ->
                         I18n.INSTANCE.getValue("menu.background.button.image.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         "menu.accessibility.role.description.submenu.option"));
         map.put(
-                vm.imageRoleDescriptionProperty(),
+                vm.backgroundImageRoleDescriptionProperty(),
                 () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.submenu.option"));
         map.put(
-                vm.imageTextProperty(),
+                vm.backgroundImageTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.background.button.image.text"));
 
         map.put(
-                vm.colorAccessibleTextProperty(),
+                vm.backgroundColorAccessibleTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
         map.put(
-                vm.colorTooltipProperty(),
+                vm.backgroundColorTooltipProperty(),
                 () ->
                         I18n.INSTANCE.getValue("menu.background.button.color.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         "menu.accessibility.role.description.submenu.option"));
         map.put(
-                vm.colorRoleDescriptionProperty(),
+                vm.backgroundColorRoleDescriptionProperty(),
                 () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.submenu.option"));
         return map;
     }

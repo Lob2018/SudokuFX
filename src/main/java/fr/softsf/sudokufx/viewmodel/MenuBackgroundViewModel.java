@@ -49,39 +49,42 @@ public class MenuBackgroundViewModel {
     private static final String ROLE_SUBMENU_OPTION =
             "menu.accessibility.role.description.submenu.option";
 
-    private final StringBinding menuMaxiAccessibleText;
-    private final StringBinding menuMaxiTooltip;
-    private final StringBinding menuMaxiRoleDescription;
-    private final StringBinding menuMaxiText;
+    private final StringBinding backgroundMenuMaxiAccessibleText;
+    private final StringBinding backgroundMenuMaxiTooltip;
+    private final StringBinding backgroundMenuMaxiRoleDescription;
+    private final StringBinding backgroundMenuMaxiText;
 
-    private final StringBinding reduceAccessibleText;
-    private final StringBinding reduceTooltip;
-    private final StringBinding reduceText;
+    private final StringBinding backgroundReduceAccessibleText;
+    private final StringBinding backgroundReduceTooltip;
+    private final StringBinding backgroundReduceText;
 
     private final StringBinding backgroundAccessibleText;
     private final StringBinding backgroundTooltip;
     private final StringBinding backgroundRoleDescription;
     private final StringBinding backgroundText;
 
-    private final StringBinding imageAccessibleText;
-    private final StringBinding imageTooltip;
-    private final StringBinding imageRoleDescription;
-    private final StringBinding imageText;
+    private final StringBinding backgroundImageAccessibleText;
+    private final StringBinding backgroundImageTooltip;
+    private final StringBinding backgroundImageRoleDescription;
+    private final StringBinding backgroundImageText;
 
-    private final StringBinding colorAccessibleText;
-    private final StringBinding colorTooltip;
-    private final StringBinding colorRoleDescription;
+    private final StringBinding backgroundColorAccessibleText;
+    private final StringBinding backgroundColorTooltip;
+    private final StringBinding backgroundColorRoleDescription;
 
     public MenuBackgroundViewModel() {
         this.imageUtils = new ImageUtils();
-        menuMaxiAccessibleText = createStringBinding("menu.maxi.button.background.accessibility");
-        menuMaxiTooltip =
+        backgroundMenuMaxiAccessibleText =
+                createStringBinding("menu.maxi.button.background.accessibility");
+        backgroundMenuMaxiTooltip =
                 createFormattedBinding("menu.maxi.button.background.accessibility", ROLE_CLOSED);
-        menuMaxiRoleDescription = createStringBinding(ROLE_CLOSED);
-        menuMaxiText = createStringBinding("menu.maxi.button.background.text");
-        reduceAccessibleText = createStringBinding("menu.background.button.reduce.accessibility");
-        reduceTooltip = createStringBinding("menu.background.button.reduce.accessibility");
-        reduceText = createStringBinding("menu.background.button.reduce.text");
+        backgroundMenuMaxiRoleDescription = createStringBinding(ROLE_CLOSED);
+        backgroundMenuMaxiText = createStringBinding("menu.maxi.button.background.text");
+        backgroundReduceAccessibleText =
+                createStringBinding("menu.background.button.reduce.accessibility");
+        backgroundReduceTooltip =
+                createStringBinding("menu.background.button.reduce.accessibility");
+        backgroundReduceText = createStringBinding("menu.background.button.reduce.text");
         backgroundAccessibleText =
                 createStringBinding("menu.background.button.background.accessibility");
         backgroundTooltip =
@@ -89,17 +92,19 @@ public class MenuBackgroundViewModel {
                         "menu.background.button.background.accessibility", ROLE_OPENED);
         backgroundRoleDescription = createStringBinding(ROLE_OPENED);
         backgroundText = createStringBinding("menu.background.button.background.text");
-        imageAccessibleText = createStringBinding("menu.background.button.image.accessibility");
-        imageTooltip =
+        backgroundImageAccessibleText =
+                createStringBinding("menu.background.button.image.accessibility");
+        backgroundImageTooltip =
                 createFormattedBinding(
                         "menu.background.button.image.accessibility", ROLE_SUBMENU_OPTION);
-        imageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-        imageText = createStringBinding("menu.background.button.image.text");
-        colorAccessibleText = createStringBinding("menu.background.button.color.accessibility");
-        colorTooltip =
+        backgroundImageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        backgroundImageText = createStringBinding("menu.background.button.image.text");
+        backgroundColorAccessibleText =
+                createStringBinding("menu.background.button.color.accessibility");
+        backgroundColorTooltip =
                 createFormattedBinding(
                         "menu.background.button.color.accessibility", ROLE_SUBMENU_OPTION);
-        colorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        backgroundColorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
     }
 
     /**
@@ -128,32 +133,32 @@ public class MenuBackgroundViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
-    public StringBinding menuMaxiAccessibleTextProperty() {
-        return menuMaxiAccessibleText;
+    public StringBinding backgroundMenuMaxiAccessibleTextProperty() {
+        return backgroundMenuMaxiAccessibleText;
     }
 
-    public StringBinding menuMaxiTooltipProperty() {
-        return menuMaxiTooltip;
+    public StringBinding backgroundMenuMaxiTooltipProperty() {
+        return backgroundMenuMaxiTooltip;
     }
 
-    public StringBinding menuMaxiRoleDescriptionProperty() {
-        return menuMaxiRoleDescription;
+    public StringBinding backgroundMenuMaxiRoleDescriptionProperty() {
+        return backgroundMenuMaxiRoleDescription;
     }
 
-    public StringBinding menuMaxiTextProperty() {
-        return menuMaxiText;
+    public StringBinding backgroundMenuMaxiTextProperty() {
+        return backgroundMenuMaxiText;
     }
 
-    public StringBinding reduceAccessibleTextProperty() {
-        return reduceAccessibleText;
+    public StringBinding backgroundReduceAccessibleTextProperty() {
+        return backgroundReduceAccessibleText;
     }
 
-    public StringBinding reduceTooltipProperty() {
-        return reduceTooltip;
+    public StringBinding backgroundReduceTooltipProperty() {
+        return backgroundReduceTooltip;
     }
 
-    public StringBinding reduceTextProperty() {
-        return reduceText;
+    public StringBinding backgroundReduceTextProperty() {
+        return backgroundReduceText;
     }
 
     public StringBinding backgroundAccessibleTextProperty() {
@@ -172,32 +177,32 @@ public class MenuBackgroundViewModel {
         return backgroundText;
     }
 
-    public StringBinding imageAccessibleTextProperty() {
-        return imageAccessibleText;
+    public StringBinding backgroundImageAccessibleTextProperty() {
+        return backgroundImageAccessibleText;
     }
 
-    public StringBinding imageTooltipProperty() {
-        return imageTooltip;
+    public StringBinding backgroundImageTooltipProperty() {
+        return backgroundImageTooltip;
     }
 
-    public StringBinding imageRoleDescriptionProperty() {
-        return imageRoleDescription;
+    public StringBinding backgroundImageRoleDescriptionProperty() {
+        return backgroundImageRoleDescription;
     }
 
-    public StringBinding imageTextProperty() {
-        return imageText;
+    public StringBinding backgroundImageTextProperty() {
+        return backgroundImageText;
     }
 
-    public StringBinding colorAccessibleTextProperty() {
-        return colorAccessibleText;
+    public StringBinding backgroundColorAccessibleTextProperty() {
+        return backgroundColorAccessibleText;
     }
 
-    public StringBinding colorTooltipProperty() {
-        return colorTooltip;
+    public StringBinding backgroundColorTooltipProperty() {
+        return backgroundColorTooltip;
     }
 
-    public StringBinding colorRoleDescriptionProperty() {
-        return colorRoleDescription;
+    public StringBinding backgroundColorRoleDescriptionProperty() {
+        return backgroundColorRoleDescription;
     }
 
     /**

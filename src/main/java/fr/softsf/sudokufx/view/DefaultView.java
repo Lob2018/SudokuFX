@@ -244,27 +244,27 @@ public final class DefaultView implements IMainView {
     private void backgroundMenuInitialization() {
         menuMaxiButtonBackground
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.menuMaxiAccessibleTextProperty());
+                .bind(menuBackgroundViewModel.backgroundMenuMaxiAccessibleTextProperty());
         menuMaxiButtonBackground
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.menuMaxiTooltipProperty());
+                .bind(menuBackgroundViewModel.backgroundMenuMaxiTooltipProperty());
         menuMaxiButtonBackground
                 .accessibleRoleDescriptionProperty()
-                .bind(menuBackgroundViewModel.menuMaxiRoleDescriptionProperty());
+                .bind(menuBackgroundViewModel.backgroundMenuMaxiRoleDescriptionProperty());
         menuMaxiButtonBackgroundText
                 .textProperty()
-                .bind(menuBackgroundViewModel.menuMaxiTextProperty());
+                .bind(menuBackgroundViewModel.backgroundMenuMaxiTextProperty());
         menuBackgroundButtonReduce
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.reduceTooltipProperty());
+                .bind(menuBackgroundViewModel.backgroundReduceTooltipProperty());
         menuBackgroundButtonReduce
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.reduceAccessibleTextProperty());
+                .bind(menuBackgroundViewModel.backgroundReduceAccessibleTextProperty());
         menuBackgroundButtonReduceText
                 .textProperty()
-                .bind(menuBackgroundViewModel.reduceTextProperty());
+                .bind(menuBackgroundViewModel.backgroundReduceTextProperty());
         menuBackgroundButtonBackgroundText
                 .textProperty()
                 .bind(menuBackgroundViewModel.backgroundTextProperty());
@@ -280,27 +280,27 @@ public final class DefaultView implements IMainView {
                 .bind(menuBackgroundViewModel.backgroundRoleDescriptionProperty());
         menuBackgroundButtonImageText
                 .textProperty()
-                .bind(menuBackgroundViewModel.imageTextProperty());
+                .bind(menuBackgroundViewModel.backgroundImageTextProperty());
         menuBackgroundButtonImage
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.imageAccessibleTextProperty());
+                .bind(menuBackgroundViewModel.backgroundImageAccessibleTextProperty());
         menuBackgroundButtonImage
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.imageTooltipProperty());
+                .bind(menuBackgroundViewModel.backgroundImageTooltipProperty());
         menuBackgroundButtonImage
                 .accessibleRoleDescriptionProperty()
-                .bind(menuBackgroundViewModel.imageRoleDescriptionProperty());
+                .bind(menuBackgroundViewModel.backgroundImageRoleDescriptionProperty());
         menuBackgroundButtonColor
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.colorAccessibleTextProperty());
+                .bind(menuBackgroundViewModel.backgroundColorAccessibleTextProperty());
         menuBackgroundButtonColor
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.colorTooltipProperty());
+                .bind(menuBackgroundViewModel.backgroundColorTooltipProperty());
         menuBackgroundButtonColor
                 .accessibleRoleDescriptionProperty()
-                .bind(menuBackgroundViewModel.colorRoleDescriptionProperty());
+                .bind(menuBackgroundViewModel.backgroundColorRoleDescriptionProperty());
         menuBackgroundButtonColor
                 .valueProperty()
                 .addListener(
@@ -317,28 +317,30 @@ public final class DefaultView implements IMainView {
      * percentage from menuLevelViewModel to menuSolveViewModel.
      */
     private void solveMenuInitialization() {
-        menuSolveViewModel.percentageProperty().bind(menuLevelViewModel.percentageProperty());
+        menuSolveViewModel.solvePercentageProperty().bind(menuLevelViewModel.percentageProperty());
         menuMaxiButtonSolve
                 .accessibleTextProperty()
-                .bind(menuSolveViewModel.menuMaxiAccessibleTextProperty());
+                .bind(menuSolveViewModel.solveMenuMaxiAccessibleTextProperty());
         menuMaxiButtonSolve
                 .getTooltip()
                 .textProperty()
-                .bind(menuSolveViewModel.menuMaxiTooltipProperty());
+                .bind(menuSolveViewModel.solveMenuMaxiTooltipProperty());
         menuMaxiButtonSolve
                 .accessibleRoleDescriptionProperty()
-                .bind(menuSolveViewModel.menuMaxiRoleDescriptionProperty());
-        menuMaxiButtonSolveText.textProperty().bind(menuSolveViewModel.menuMaxiTextProperty());
+                .bind(menuSolveViewModel.solveMenuMaxiRoleDescriptionProperty());
+        menuMaxiButtonSolveText.textProperty().bind(menuSolveViewModel.solveMenuMaxiTextProperty());
         menuSolveButtonReduce
                 .accessibleTextProperty()
-                .bind(menuSolveViewModel.reduceAccessibleTextProperty());
+                .bind(menuSolveViewModel.solveReduceAccessibleTextProperty());
         menuSolveButtonReduce
                 .getTooltip()
                 .textProperty()
-                .bind(menuSolveViewModel.reduceTooltipProperty());
-        menuSolveButtonReduceText.textProperty().bind(menuSolveViewModel.reduceTextProperty());
+                .bind(menuSolveViewModel.solveReduceTooltipProperty());
+        menuSolveButtonReduceText.textProperty().bind(menuSolveViewModel.solveReduceTextProperty());
         menuSolveHBoxPossibilities.setVisible(true);
-        menuSolveHBoxPossibilities.getPercentage().bind(menuSolveViewModel.percentageProperty());
+        menuSolveHBoxPossibilities
+                .getPercentage()
+                .bind(menuSolveViewModel.solvePercentageProperty());
         menuSolveButtonSolve
                 .accessibleTextProperty()
                 .bind(
