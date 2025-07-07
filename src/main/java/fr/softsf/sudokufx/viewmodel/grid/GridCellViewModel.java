@@ -35,6 +35,7 @@ public class GridCellViewModel {
 
     private final IntegerProperty id = new SimpleIntegerProperty();
     private final StringProperty rawText = new SimpleStringProperty("");
+    private static final String EM_FORMAT = "%.3fem";
     private final Label label = new Label();
     private final TextArea textArea = new TextArea();
     private final int row;
@@ -168,14 +169,15 @@ public class GridCellViewModel {
                         ? "-fx-border-color: radial-gradient(center 50% 150%, radius"
                                 + " 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));"
                         : "black";
-        String top = String.format(Locale.US, "%.3fem", (row == 0 ? baseThick : baseThin) * scale);
+        String top = String.format(Locale.US, EM_FORMAT, (row == 0 ? baseThick : baseThin) * scale);
         String right =
                 String.format(
-                        Locale.US, "%.3fem", ((col + 1) % 3 == 0 ? baseThick : baseThin) * scale);
+                        Locale.US, EM_FORMAT, ((col + 1) % 3 == 0 ? baseThick : baseThin) * scale);
         String bottom =
                 String.format(
-                        Locale.US, "%.3fem", ((row + 1) % 3 == 0 ? baseThick : baseThin) * scale);
-        String left = String.format(Locale.US, "%.3fem", (col == 0 ? baseThick : baseThin) * scale);
+                        Locale.US, EM_FORMAT, ((row + 1) % 3 == 0 ? baseThick : baseThin) * scale);
+        String left =
+                String.format(Locale.US, EM_FORMAT, (col == 0 ? baseThick : baseThin) * scale);
         return String.format(
                 "-fx-border-color: %s; -fx-border-width: %s %s %s %s;",
                 color, top, right, bottom, left);
