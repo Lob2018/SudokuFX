@@ -65,10 +65,17 @@ public class GridCellViewModel {
     }
 
     /**
-     * Sets up UI interaction and formatting listeners: - Visual focus styling for the label. -
-     * Keyboard and mouse interaction to switch to edit mode. - Input filtering (only digits 1–9,
-     * unique, sorted, limited to 9). - Auto-formatting multiline display in the TextArea. -
-     * Automatic return to label mode on focus loss or key validation (ENTER, ESC, etc.).
+     * Configures all UI event listeners and text formatting logic for the grid cell:
+     *
+     * <ul>
+     *   <li>Applies dynamic border styling on label focus.
+     *   <li>Allows switching to edit mode via mouse click or specific key presses (ENTER, SPACE,
+     *       1–9).
+     *   <li>Adjusts font size based on label content length.
+     *   <li>Filters input to digits 1–9, removes duplicates, sorts, and limits to 9 digits.
+     *   <li>Applies 3×3 multiline formatting inside the TextArea (via TextFormatter).
+     *   <li>Returns to label mode on focus loss or key validation (ENTER, ESC, TAB, SPACE).
+     * </ul>
      */
     private void setupListeners() {
         label.focusedProperty()
@@ -105,28 +112,9 @@ public class GridCellViewModel {
                         });
         UnaryOperator<TextFormatter.Change> filter =
                 change -> {
-                    String filtered =
-                            change.getControlNewText()
-                                    .chars()
-                                    .filter(ch -> ch >= '1' && ch <= '9')
-                                    .distinct()
-                                    .sorted()
-                                    .limit(9)
-                                    .collect(
-                                            StringBuilder::new,
-                                            StringBuilder::appendCodePoint,
-                                            StringBuilder::append)
-                                    .toString();
-                    StringBuilder sb = new StringBuilder();
-                    int lineBreaks = 0;
-                    for (int i = 0; i < filtered.length(); i++) {
-                        sb.append(filtered.charAt(i));
-                        if ((i + 1) % 3 == 0 && i != filtered.length() - 1 && lineBreaks < 2) {
-                            sb.append('\n');
-                            lineBreaks++;
-                        }
-                    }
-                    change.setText(sb.toString());
+                    String filtered = normalizeInput(change.getControlNewText());
+                    String multiline = formatMultiline(filtered);
+                    change.setText(multiline);
                     change.setRange(0, change.getControlText().length());
                     return change;
                 };
@@ -193,35 +181,16 @@ public class GridCellViewModel {
     }
 
     /**
-     * Formats a raw digit string (1–9) into a 3-line spaced grid display. Removes duplicates and
-     * sorts digits before formatting.
+     * Formats a raw digit string (1–9) into a 3-line spaced grid display. Removes duplicates, sorts
+     * digits, and inserts spaces for visual alignment.
      *
-     * @param text Raw unformatted input text
-     * @return Formatted multiline string (e.g., for label display)
+     * @param text Raw unformatted input text (may include invalid characters)
+     * @return Formatted multiline string (e.g., for label display in grid)
      */
     public String formatText(String text) {
         if (StringUtils.isEmpty(text)) return "";
-        String filtered =
-                text.chars()
-                        .filter(ch -> ch >= '1' && ch <= '9')
-                        .distinct()
-                        .sorted()
-                        .limit(9)
-                        .collect(
-                                StringBuilder::new,
-                                StringBuilder::appendCodePoint,
-                                StringBuilder::append)
-                        .toString();
-        StringBuilder sb = new StringBuilder();
-        int lineBreaks = 0;
-        for (int i = 0; i < filtered.length(); i++) {
-            sb.append(filtered.charAt(i));
-            if ((i + 1) % 3 == 0 && i != filtered.length() - 1 && lineBreaks < 2) {
-                sb.append('\n');
-                lineBreaks++;
-            }
-        }
-        String[] lines = sb.toString().split("\n", -1);
+        String filtered = normalizeInput(text);
+        String[] lines = formatMultiline(filtered).split("\n", -1);
         StringBuilder finalText = new StringBuilder();
         for (int i = 0; i < lines.length; i++) {
             String line = lines[i];
@@ -236,6 +205,46 @@ public class GridCellViewModel {
             if (i < lines.length - 1) finalText.append('\n');
         }
         return finalText.toString();
+    }
+
+    /**
+     * Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9
+     * characters maximum. Returns an empty string if input is null or empty.
+     *
+     * @param input Any user input (possibly null or empty)
+     * @return Cleaned and ordered digit string (max 9 characters), or empty string if input is
+     *     null/empty
+     */
+    private static String normalizeInput(String input) {
+        if (StringUtils.isEmpty(input)) return "";
+        return input.chars()
+                .filter(ch -> ch >= '1' && ch <= '9')
+                .distinct()
+                .sorted()
+                .limit(9)
+                .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
+                .toString();
+    }
+
+    /**
+     * Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,
+     * to create a 3×3 visual grid layout. Returns an empty string if input is null or empty.
+     *
+     * @param filtered Cleaned input containing only digits 1–9 (may be null or empty)
+     * @return Multiline string with up to 3 rows of digits, or empty string if input is null/empty
+     */
+    private static String formatMultiline(String filtered) {
+        if (StringUtils.isEmpty(filtered)) return "";
+        StringBuilder sb = new StringBuilder();
+        int lineBreaks = 0;
+        for (int i = 0; i < filtered.length(); i++) {
+            sb.append(filtered.charAt(i));
+            if ((i + 1) % 3 == 0 && i != filtered.length() - 1 && lineBreaks < 2) {
+                sb.append('\n');
+                lineBreaks++;
+            }
+        }
+        return sb.toString();
     }
 
     public int getRow() {
