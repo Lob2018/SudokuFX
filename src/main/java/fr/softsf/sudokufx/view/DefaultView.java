@@ -65,6 +65,7 @@ public final class DefaultView implements IMainView {
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
+    private static final int AUTO_HIDE_MINI_MENU_DELAY_MS = 5_000;
 
     private final Stage primaryStage = new Stage();
 
@@ -170,12 +171,15 @@ public final class DefaultView implements IMainView {
     @FXML private Label menuBackgroundButtonImageText;
     @FXML private ColorPicker menuBackgroundButtonColor;
 
+    private Timeline hideMiniMenuTimeline;
+
     /**
      * Initializes the default view. This method is automatically called by JavaFX after loading the
      * FXML.
      */
     @FXML
     private void initialize() {
+        hideMiniMenuTimeline = hideMiniMenuTimelineInitialization();
         hiddenMenuInitialization();
         miniMenuInitialization();
         levelsMenuInitialization();
@@ -187,6 +191,41 @@ public final class DefaultView implements IMainView {
         newMenuInitialization();
         activeMenuManagerInitialization();
         gridInitialization();
+    }
+
+    /**
+     * Initializes a {@link Timeline} that hides the MINI menu after {@code
+     * AUTO_HIDE_MINI_MENU_DELAY_MS} milliseconds if it is still active and the "menuMiniButtonShow"
+     * button retains focus.
+     *
+     * @return the {@code Timeline} responsible for automatically hiding the MINI menu
+     */
+    private Timeline hideMiniMenuTimelineInitialization() {
+        return new Timeline(
+                new KeyFrame(
+                        Duration.millis(AUTO_HIDE_MINI_MENU_DELAY_MS),
+                        event -> {
+                            try {
+                                if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
+                                                == ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI
+                                        && "menuMiniButtonShow"
+                                                .equals(
+                                                        coordinator
+                                                                .getDefaultScene()
+                                                                .getFocusOwner()
+                                                                .getId())) {
+                                    activeMenuOrSubmenuViewModel.setActiveMenu(
+                                            ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN);
+                                    menuHiddenButtonShow.requestFocus();
+                                }
+                            } catch (Exception e) {
+                                LOG.error(
+                                        "██ DefaultView > handleMenuMiniShow exception occurred:"
+                                                + " {}",
+                                        e.getMessage(),
+                                        e);
+                            }
+                        }));
     }
 
     /**
@@ -969,44 +1008,21 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Activates the MINI menu and hides it after 10 seconds if still active and the button
-     * "menuMiniButtonShow" has the focus.
+     * Activates the MINI menu and starts a timer to auto-hide it after N seconds if it remains
+     * active and the "menuMiniButtonShow" button still has focus.
      */
     public void handleMenuMiniShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI);
-        Timeline hideMenuTimeline =
-                new Timeline(
-                        new KeyFrame(
-                                Duration.millis(10000),
-                                event -> {
-                                    try {
-                                        if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
-                                                        == ActiveMenuOrSubmenuViewModel.ActiveMenu
-                                                                .MINI
-                                                && coordinator
-                                                        .getDefaultScene()
-                                                        .getFocusOwner()
-                                                        .getId()
-                                                        .equals("menuMiniButtonShow")) {
-                                            activeMenuOrSubmenuViewModel.setActiveMenu(
-                                                    ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN);
-                                        }
-                                    } catch (Exception e) {
-                                        LOG.error(
-                                                "██ DefaultView > handleMenuMiniShow exception"
-                                                        + " occurred: {}",
-                                                e.getMessage(),
-                                                e);
-                                    }
-                                }));
-        hideMenuTimeline.play();
+        menuMiniButtonShow.requestFocus();
+        hideMiniMenuTimeline.stop();
+        hideMiniMenuTimeline.play();
     }
 
     /**
-     * Activates the MAXI menu and sets focus on the corresponding button based on the submenu
-     * source button of the event or on the reduce button.
+     * Activates the MAXI menu and sets focus on the corresponding button based on the event source.
+     * Stops the MINI menu auto-hide timer if running.
      *
-     * @param event the event triggered by clicking a menu button.
+     * @param event the event triggered by a submenu button click
      */
     public void handleMenuMaxiShow(ActionEvent event) {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI);
@@ -1019,6 +1035,7 @@ public final class DefaultView implements IMainView {
             case "menuBackgroundButtonBackground" -> menuMaxiButtonBackground.requestFocus();
             default -> menuMaxiButtonReduce.requestFocus();
         }
+        hideMiniMenuTimeline.stop();
     }
 
     /**
