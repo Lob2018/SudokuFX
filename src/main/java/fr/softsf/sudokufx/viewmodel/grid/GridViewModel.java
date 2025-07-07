@@ -89,8 +89,8 @@ public class GridViewModel {
     }
 
     /**
-     * Applies the given difficulty level by generating a new grid, updating the cell values
-     * accordingly, and returning the stars completion percentage.
+     * Applies the given difficulty level by generating a new grid (using level-specific parameters),
+     * updating the cell values accordingly, and returning the stars completion percentage.
      *
      * @param level the difficulty level to apply; must not be null
      * @return the stars completion percentage associated with the applied level
@@ -102,26 +102,8 @@ public class GridViewModel {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "Difficulty level cannot be null");
         }
-        int[][] grid;
-        switch (level) {
-            case EASY -> {
-                grid = iGridMaster.creerLesGrilles(1);
-                setValues(Arrays.stream(grid[1]).mapToObj(String::valueOf).toList());
-                return grid[2][0];
-            }
-            case MEDIUM -> {
-                grid = iGridMaster.creerLesGrilles(2);
-                setValues(Arrays.stream(grid[1]).mapToObj(String::valueOf).toList());
-                return grid[2][0];
-            }
-            case DIFFICULT -> {
-                grid = iGridMaster.creerLesGrilles(3);
-                setValues(Arrays.stream(grid[1]).mapToObj(String::valueOf).toList());
-                return grid[2][0];
-            }
-            default -> {
-                return 100;
-            }
-        }
+        int[][] grid = iGridMaster.creerLesGrilles(level.toGridNumber());
+        setValues(Arrays.stream(grid[1]).mapToObj(String::valueOf).toList());
+        return grid[2][0];
     }
 }

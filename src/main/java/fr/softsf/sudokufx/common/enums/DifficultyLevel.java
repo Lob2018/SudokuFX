@@ -9,4 +9,12 @@ public enum DifficultyLevel {
     EASY,
     MEDIUM,
     DIFFICULT;
+
+    public int toGridNumber() {
+        return switch (this) {
+            case EASY -> 1;
+            case MEDIUM -> 2;
+            case DIFFICULT -> 3;
+        };
+    }
 }
