@@ -89,8 +89,9 @@ public class GridViewModel {
     }
 
     /**
-     * Applies the given difficulty level by generating a new grid (using level-specific parameters),
-     * updating the cell values accordingly, and returning the stars completion percentage.
+     * Applies the given difficulty level by generating a new grid (using level-specific
+     * parameters), updating the cell values accordingly, and returning the stars completion
+     * percentage.
      *
      * @param level the difficulty level to apply; must not be null
      * @return the stars completion percentage associated with the applied level
