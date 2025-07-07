@@ -69,7 +69,7 @@ public class GridViewModel {
     public List<String> getAllValues() {
         return cellViewModels.stream()
                 .map(vm -> vm.rawTextProperty().get())
-                .collect(Collectors.toList());
+                .toList();
     }
 
     /**
