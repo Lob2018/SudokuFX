@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.viewmodel.grid;
 
 import java.util.Locale;
+import java.util.Set;
 import java.util.function.UnaryOperator;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
@@ -45,25 +46,20 @@ public class GridCellViewModel {
         this.col = col;
         label.setId(String.valueOf(id));
         textArea.setId(String.valueOf(id));
-        // Init styles
         label.getStyleClass().add("sudokuFXGridCell");
         textArea.getStyleClass().add("sudokuFXGridCell");
-        textArea.setPrefRowCount(3);
-        textArea.setWrapText(true);
         String borderStyle = getBorderStyle(label.getText().length(), false);
         label.setStyle(borderStyle);
         textArea.setStyle(borderStyle);
-        // Formatted display text derived from raw input (e.g., "123456789" -> multiline with
-        // spacing)
-        StringBinding formattedText =
-                Bindings.createStringBinding(() -> formatText(rawText.get()), rawText);
-        // Bind label text au texte formaté automatiquement
-        label.textProperty().bind(formattedText);
-        // Bind bidirectionnel du TextArea vers la propriété text (texte brut)
-        textArea.textProperty().bindBidirectional(rawText);
+        textArea.setPrefRowCount(3);
+        textArea.setWrapText(true);
         label.setFocusTraversable(true);
         textArea.setVisible(false);
         textArea.setFocusTraversable(true);
+        StringBinding formattedText =
+                Bindings.createStringBinding(() -> formatText(rawText.get()), rawText);
+        label.textProperty().bind(formattedText);
+        textArea.textProperty().bindBidirectional(rawText);
         setupListeners();
     }
 
@@ -74,7 +70,6 @@ public class GridCellViewModel {
      * Automatic return to label mode on focus loss or key validation (ENTER, ESC, etc.).
      */
     private void setupListeners() {
-        // Focus styling
         label.focusedProperty()
                 .addListener(
                         (obs, oldV, newV) -> {
@@ -84,7 +79,6 @@ public class GridCellViewModel {
                                 label.setStyle(getBorderStyle(label.getText().length(), false));
                             }
                         });
-        // Label click or key press to edit
         label.setOnMouseClicked(e -> switchToEditMode());
         label.setOnKeyPressed(
                 e -> {
@@ -95,7 +89,19 @@ public class GridCellViewModel {
                         e.consume();
                     }
                 });
-        // Text input filter
+        label.textProperty()
+                .addListener(
+                        (obs, oldText, newText) -> {
+                            if (newText != null && newText.replace("\n", "").length() == 1) {
+                                if (!label.getStyleClass().contains("sudokuFXGridCellLargeFont")) {
+                                    label.getStyleClass().add("sudokuFXGridCellLargeFont");
+                                    label.setStyle(getBorderStyle(label.getText().length(), false));
+                                }
+                            } else {
+                                label.getStyleClass().remove("sudokuFXGridCellLargeFont");
+                                label.setStyle(getBorderStyle(label.getText().length(), false));
+                            }
+                        });
         UnaryOperator<TextFormatter.Change> filter =
                 change -> {
                     String filtered =
@@ -110,7 +116,6 @@ public class GridCellViewModel {
                                             StringBuilder::appendCodePoint,
                                             StringBuilder::append)
                                     .toString();
-
                     StringBuilder sb = new StringBuilder();
                     int lineBreaks = 0;
                     for (int i = 0; i < filtered.length(); i++) {
@@ -125,7 +130,6 @@ public class GridCellViewModel {
                     return change;
                 };
         textArea.setTextFormatter(new TextFormatter<>(filter));
-        // Quand on perd le focus sur textArea, revenir en mode label visible
         textArea.focusedProperty()
                 .addListener(
                         (obs, oldV, newV) -> {
@@ -135,34 +139,16 @@ public class GridCellViewModel {
                                 label.setVisible(true);
                             }
                         });
-        // Gérer validation clavier dans textArea
+        Set<KeyCode> keys = Set.of(KeyCode.ENTER, KeyCode.ESCAPE, KeyCode.TAB, KeyCode.SPACE);
         textArea.setOnKeyPressed(
                 e -> {
-                    switch (e.getCode()) {
-                        case ENTER, ESCAPE, TAB, SPACE -> {
-                            e.consume();
-                            textArea.setVisible(false);
-                            label.setVisible(true);
-                            label.requestFocus();
-                        }
-                        default -> {}
+                    if (keys.contains(e.getCode())) {
+                        e.consume();
+                        textArea.setVisible(false);
+                        label.setVisible(true);
+                        label.requestFocus();
                     }
                 });
-
-        // Vous pouvez réactiver le listener pour la taille de police si besoin
-        label.textProperty()
-                .addListener(
-                        (obs, oldText, newText) -> {
-                            if (newText != null && newText.replace("\n", "").length() == 1) {
-                                if (!label.getStyleClass().contains("sudokuFXGridCellLargeFont")) {
-                                    label.getStyleClass().add("sudokuFXGridCellLargeFont");
-                                    label.setStyle(getBorderStyle(label.getText().length(), false));
-                                }
-                            } else {
-                                label.getStyleClass().remove("sudokuFXGridCellLargeFont");
-                                label.setStyle(getBorderStyle(label.getText().length(), false));
-                            }
-                        });
     }
 
     /**

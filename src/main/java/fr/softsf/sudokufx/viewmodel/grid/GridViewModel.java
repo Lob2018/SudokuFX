@@ -5,7 +5,6 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
-import java.util.stream.Collectors;
 import java.util.*;
 
 import org.springframework.stereotype.Component;
@@ -67,9 +66,7 @@ public class GridViewModel {
 
     /** Gets a list of all cell text values in row-major order. */
     public List<String> getAllValues() {
-        return cellViewModels.stream()
-                .map(vm -> vm.rawTextProperty().get())
-                .toList();
+        return cellViewModels.stream().map(vm -> vm.rawTextProperty().get()).toList();
     }
 
     /**
