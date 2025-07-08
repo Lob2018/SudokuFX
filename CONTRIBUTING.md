@@ -12,7 +12,7 @@ We welcome all kinds of contributions — from bug reports and feature requests 
 3. [Development Setup](#3-development-setup)
 4. [Coding Standards and Formatting](#4-coding-standards-and-formatting)
 5. [Testing Guidelines](#5-testing-guidelines)
-    - [Test Policy for New Functionality](#-test-policy-for-new-functionality)
+    - [Test Policy for New Functionality](#test-policy-for-new-functionality)
 6. [Commit Message Guidelines](#6-commit-message-guidelines)
 7. [Contribution Workflow](#7-contribution-workflow)
 8. [Pull Requests](#8-pull-requests)
