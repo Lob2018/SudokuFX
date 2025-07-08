@@ -59,7 +59,13 @@ class DynamicFontSizeChangeE2ETest {
                         });
         String expectedMessage = "The scene mustn't be null";
         String actualMessage = thrown.getMessage();
-        assert actualMessage.contains(expectedMessage);
+        assertTrue(
+                actualMessage.contains(expectedMessage),
+                "Expected exception message to contain: \""
+                        + expectedMessage
+                        + "\"\nActual message: \""
+                        + actualMessage
+                        + "\"");
     }
 
     @AfterEach

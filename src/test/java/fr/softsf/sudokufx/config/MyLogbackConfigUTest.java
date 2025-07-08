@@ -86,8 +86,15 @@ class MyLogbackConfigUTest {
         JVMApplicationProperties.INSTANCE.setOnRefreshSpringContextExitForTests();
         myLogbackConfig.printLogEntryMessage();
         assertTrue(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
-        assert (logWatcher.list.getLast().getFormattedMessage())
-                .contains(OPTIMIZING.getLogBackMessage());
+        String lastLogMessage = logWatcher.list.getLast().getFormattedMessage();
+        String expectedMessage = OPTIMIZING.getLogBackMessage();
+        assertTrue(
+                lastLogMessage.contains(expectedMessage),
+                "Expected log message to contain: \""
+                        + expectedMessage
+                        + "\"\nActual message: \""
+                        + lastLogMessage
+                        + "\"");
     }
 
     @Test
@@ -95,12 +102,19 @@ class MyLogbackConfigUTest {
         JVMApplicationProperties.INSTANCE.setInitSpringContextExitForTests();
         myLogbackConfig.printLogEntryMessage();
         assertFalse(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
-        assert (logWatcher.list.getLast().getFormattedMessage())
-                .contains(
-                        String.format(
-                                ASCII_LOGO.getLogBackMessage().replace("{}", "%s"),
-                                JVMApplicationProperties.INSTANCE.getAppName(),
-                                JVMApplicationProperties.INSTANCE.getAppVersion()));
+        String expectedMessage =
+                String.format(
+                        ASCII_LOGO.getLogBackMessage().replace("{}", "%s"),
+                        JVMApplicationProperties.INSTANCE.getAppName(),
+                        JVMApplicationProperties.INSTANCE.getAppVersion());
+        String lastLogMessage = logWatcher.list.getLast().getFormattedMessage();
+        assertTrue(
+                lastLogMessage.contains(expectedMessage),
+                "Expected log message to contain: \""
+                        + expectedMessage
+                        + "\"\nActual message: \""
+                        + lastLogMessage
+                        + "\"");
     }
 
     @Test

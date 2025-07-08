@@ -16,6 +16,7 @@ import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SecureRandomGeneratorUTest {
 
@@ -41,8 +42,15 @@ class SecureRandomGeneratorUTest {
                     SecureRandomGenerator.INSTANCE.nextInt(-1);
                 },
                 "The nextInt bound must be positive");
-        assert (logWatcher.list.getFirst().getFormattedMessage())
-                .contains("██ Exception caught from nextInt(bound) :");
+        String lastLogMessage = logWatcher.list.getFirst().getFormattedMessage();
+        String expectedLogFragment = "██ Exception caught from nextInt(bound) :";
+        assertTrue(
+                lastLogMessage.contains(expectedLogFragment),
+                "Expected log message to contain: \""
+                        + expectedLogFragment
+                        + "\"\nActual message: \""
+                        + lastLogMessage
+                        + "\"");
     }
 
     @Test
@@ -53,8 +61,15 @@ class SecureRandomGeneratorUTest {
                     SecureRandomGenerator.INSTANCE.nextInt(1, 1);
                 },
                 "The nextInt origin must be less than bound");
-        assert (logWatcher.list.getFirst().getFormattedMessage())
-                .contains("██ Exception caught from nextInt(origin,bound) :");
+        String firstLogMessage = logWatcher.list.getFirst().getFormattedMessage();
+        String expectedLogFragment = "██ Exception caught from nextInt(origin,bound) :";
+        assertTrue(
+                firstLogMessage.contains(expectedLogFragment),
+                "Expected log message to contain: \""
+                        + expectedLogFragment
+                        + "\"\nActual message: \""
+                        + firstLogMessage
+                        + "\"");
     }
 
     @Test
@@ -65,7 +80,14 @@ class SecureRandomGeneratorUTest {
                     SecureRandomGenerator.INSTANCE.nextInt(2, 1);
                 },
                 "The nextInt origin must be less than bound");
-        assert (logWatcher.list.getFirst().getFormattedMessage())
-                .contains("██ Exception caught from nextInt(origin,bound) :");
+        String firstLogMessage = logWatcher.list.getFirst().getFormattedMessage();
+        String expectedLogFragment = "██ Exception caught from nextInt(origin,bound) :";
+        assertTrue(
+                firstLogMessage.contains(expectedLogFragment),
+                "Expected log message to contain: \""
+                        + expectedLogFragment
+                        + "\"\nActual message: \""
+                        + firstLogMessage
+                        + "\"");
     }
 }
