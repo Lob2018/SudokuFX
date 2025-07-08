@@ -271,12 +271,12 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 
 We welcome all contributions to SudokuFX — whether it's bug fixes, new features, documentation, or ideas.
 
-Please read our [Contributing Guide](./CONTRIBUTING.md) to get started.  
+Please read our [Contributing Guide](./CONTRIBUTING.md) to get started.
 It includes setup instructions, coding standards, commit conventions, and more.
 
 ## Code of Conduct
 
-We are committed to fostering a welcoming and respectful community.  
+We are committed to fostering a welcoming and respectful community.
 Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) before participating.
 
 ## Contributors

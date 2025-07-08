@@ -105,8 +105,8 @@ To use them:
 - Formatting is enforced via the **Spotless Maven Plugin**.
 - Code must be formatted before submission.
 
-> ✅ **Spotless is automatically triggered** when using the provided IntelliJ IDEA Run Configurations  
-> (see [▶️ Build and Run](#️-build-and-run)). These configurations always start with `mvn clean`,  
+> ✅ **Spotless is automatically triggered** when using the provided IntelliJ IDEA Run Configurations
+> (see [▶️ Build and Run](#️-build-and-run)). These configurations always start with `mvn clean`,
 > which ensures Spotless runs during the `validate` and `compile` phases.
 
 ### Formatting commands (optional if using Run Configurations):
@@ -129,8 +129,8 @@ To use them:
 ```
 ### Test Policy for New Functionality
 
-As a general policy, any major new functionality must be accompanied by automated tests.  
-This ensures that new features are reliable, maintainable, and do not introduce regressions.  
+As a general policy, any major new functionality must be accompanied by automated tests.
+This ensures that new features are reliable, maintainable, and do not introduce regressions.
 Pull Requests that introduce significant changes without tests may be rejected or delayed.
 
 Tests should cover:
