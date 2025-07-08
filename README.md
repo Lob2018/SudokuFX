@@ -44,6 +44,8 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
   - [Build with](#build-with)
   - [Required Application Properties to Run](#required-application-properties-to-run)
   - [How to develop on Windows with IntelliJ IDEA](#how-to-develop-on-windows-with-intellij-idea)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
 - [Contributors](#contributors)
 - [Feedback](#feedback)
 - [Licence](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)
@@ -264,6 +266,18 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
                 3. Manage your benchmark tests in the `fr.softsf.sudokufx.benchmark` package
                 4. **Once benchmarking is complete, uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`
                    and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`**
+
+## Contributing
+
+We welcome all contributions to SudokuFX — whether it's bug fixes, new features, documentation, or ideas.
+
+Please read our [Contributing Guide](./CONTRIBUTING.md) to get started.  
+It includes setup instructions, coding standards, commit conventions, and more.
+
+## Code of Conduct
+
+We are committed to fostering a welcoming and respectful community.  
+Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) before participating.
 
 ## Contributors
 
