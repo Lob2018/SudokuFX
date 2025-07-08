@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.formatText" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.formatText">
+<area shape="rect" id="Node000001" title="Formats a raw digit string (1–9) into a 3&#45;line spaced grid display." alt="" coords="5,39,224,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="272,5,493,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,44,256,40,257,45,224,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="272,72,493,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,71,257,75,256,80,224,76"/>
+</map>

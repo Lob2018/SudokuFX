@@ -11,7 +11,10 @@ var searchData=
   ['genericdtolistcell_8',['GenericDtoListCell',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html',1,'fr::softsf::sudokufx::view::component::list']]],
   ['grid_9',['Grid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html',1,'fr::softsf::sudokufx::model']]],
   ['gridbuilder_10',['GridBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_1_1_grid_builder.html',1,'fr::softsf::sudokufx::model::Grid']]],
-  ['gridmaster_11',['GridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
-  ['gridmasterutest_12',['GridMasterUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
-  ['gridrepository_13',['GridRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudokufx::repository']]]
+  ['gridcellviewmodel_11',['GridCellViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html',1,'fr::softsf::sudokufx::viewmodel::grid']]],
+  ['gridmaster_12',['GridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
+  ['gridmasterutest_13',['GridMasterUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
+  ['gridrepository_14',['GridRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudokufx::repository']]],
+  ['gridviewmodel_15',['GridViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html',1,'fr::softsf::sudokufx::viewmodel::grid']]],
+  ['gridviewmodelutest_16',['GridViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::grid']]]
 ];

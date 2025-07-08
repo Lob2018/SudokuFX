@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['label_0',['label',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a3a89680cdf5e09240ad65e4503e90995',1,'fr::softsf::sudokufx::view::component::list::GenericDtoListCell']]],
+  ['label_0',['label',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a3a89680cdf5e09240ad65e4503e90995',1,'fr.softsf.sudokufx.view.component.list.GenericDtoListCell.label'],['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a7775561af8d74deeadd5a796d442a4d6',1,'fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.label']]],
   ['labeltextbinding_1',['labelTextBinding',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a64c349e467f599392fc6e617cb9a1212',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
   ['lacasevideaveclemoinsdepossibilites_2',['laCaseVideAvecLeMoinsDePossibilites',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a973a5ac2260605b8a260934b7e68373d',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
   ['languageaccessibletext_3',['languageAccessibleText',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a7e4c92dd6efb4cd774ce7795160f4050',1,'fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel.languageAccessibleText'],['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ad8bb29e844b559ab25559878f9cc9057',1,'fr.softsf.sudokufx.viewmodel.MenuMiniViewModel.languageAccessibleText']]],

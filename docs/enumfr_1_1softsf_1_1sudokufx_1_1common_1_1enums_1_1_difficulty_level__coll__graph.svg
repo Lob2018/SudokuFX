@@ -26,16 +26,17 @@
 <polygon fill="#999999" stroke="none" points="160.25,-96 0,-96 0,0 160.25,0 160.25,-96"/>
 <text text-anchor="start" x="4" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
 <text text-anchor="start" x="49.38" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">DifficultyLevel</text>
-<text text-anchor="start" x="26.81" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="59.62" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">DIFFICULT</text>
-<text text-anchor="start" x="26.81" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="59.62" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">EASY</text>
-<text text-anchor="start" x="26.81" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="59.62" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">MEDIUM</text>
-<text text-anchor="start" x="78.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="19.5" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="45" y="-54.5" font-family="Helvetica,sans-Serif" font-size="10.00">DIFFICULT</text>
+<text text-anchor="start" x="19.5" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="45" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">EASY</text>
+<text text-anchor="start" x="19.5" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="45" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">MEDIUM</text>
+<text text-anchor="start" x="19.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="45" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">int toGridNumber()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-66 0,-66 160.25,-66 160.25,-66 0,-66"/>
-<polygon fill="#666666" stroke="#666666" points="0,-18 0,-18 57.62,-18 57.62,-18 0,-18"/>
-<polygon fill="#666666" stroke="#666666" points="57.62,-18 57.62,-18 160.25,-18 160.25,-18 57.62,-18"/>
+<polygon fill="#666666" stroke="#666666" points="0,-18 0,-18 43,-18 43,-18 0,-18"/>
+<polygon fill="#666666" stroke="#666666" points="43,-18 43,-18 160.25,-18 160.25,-18 43,-18"/>
 <polygon fill="none" stroke="#666666" points="0,0 0,-96 160.25,-96 160.25,0 0,0"/>
 </a>
 </g>

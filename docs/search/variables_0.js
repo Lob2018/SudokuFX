@@ -13,5 +13,6 @@ var searchData=
   ['appname_10',['appName',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ae33227e04ab35b22a6d5802f006f53cb',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['apporganization_11',['appOrganization',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ae81f3eb980c1bacca03dade9ffa57987',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['appversion_12',['appVersion',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a4ec2bcbb57929a66f25b47d4bd5d709c',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
-  ['ascii_5flogo_13',['ASCII_LOGO',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ad676af3ab8af46c96474134d7079fc91',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]]
+  ['ascii_5flogo_13',['ASCII_LOGO',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ad676af3ab8af46c96474134d7079fc91',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]],
+  ['auto_5fhide_5fmini_5fmenu_5fdelay_5fms_14',['AUTO_HIDE_MINI_MENU_DELAY_MS',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab9d123cb50e619e0bbff4db41cb452f0',1,'fr::softsf::sudokufx::view::DefaultView']]]
 ];

@@ -15,5 +15,6 @@ var searchData=
   ['nodesconfiguration_12',['nodesConfiguration',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#acddefac20ee4e90165233cb342d56fe0',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['nombre_5fcases_13',['NOMBRE_CASES',['../classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#a3ee3fc9c5c27f6bc22de6c55981d07e8',1,'fr.softsf.sudokufx.benchmark.BenchGridMaster.NOMBRE_CASES'],['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a08af308416abf02bea7c3290f704f39a',1,'fr.softsf.sudokufx.common.util.sudoku.GridMaster.NOMBRE_CASES']]],
   ['nombrealeatoire_14',['nombreAleatoire',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af1352e09e11008195aebe23925b02248',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
-  ['none_15',['NONE',['../enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#acefcfe5de1c118296760eb4b610c5a4e',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel::ActiveMenu']]]
+  ['none_15',['NONE',['../enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#acefcfe5de1c118296760eb4b610c5a4e',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel::ActiveMenu']]],
+  ['normalizeinput_16',['normalizeInput',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33',1,'fr::softsf::sudokufx::viewmodel::grid::GridCellViewModel']]]
 ];

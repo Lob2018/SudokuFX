@@ -42,10 +42,13 @@ var hierarchy =
     [ "fr.softsf.sudokufx.config.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", null ],
     [ "fr.softsf.sudokufx.model.Grid.GridBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_1_1_grid_builder.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html", null ],
     [ "fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html", null ],
     [ "GridPane", null, [
       [ "fr.softsf.sudokufx.view.component.SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.viewmodel.grid.GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.viewmodel.grid.GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html", null ],
     [ "HBox", null, [
       [ "fr.softsf.sudokufx.view.component.PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html", [
         [ "fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.PossibilityStarsHBoxStub", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html", null ]

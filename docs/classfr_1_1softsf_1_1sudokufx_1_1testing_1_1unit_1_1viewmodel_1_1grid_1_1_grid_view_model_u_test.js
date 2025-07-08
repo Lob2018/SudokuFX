@@ -1,0 +1,16 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test =
+[
+    [ "givenExistingId_whenGetCellViewModelById_thenCellIsReturned", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#aff14777a2a63d38ffc9cace1bae34251", null ],
+    [ "givenFilledGrid_whenClearGrid_thenAllCellsAreEmpty", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#a2164dc84fe6f43be76a6a07ef39dfbea", null ],
+    [ "givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#a0227dccc0735872ff5e330119458f41b", null ],
+    [ "givenListWithNullElement_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#a7e77ac5ed30273a128eaeb3249a5184a", null ],
+    [ "givenNonExistingId_whenGetCellViewModelById_thenEmptyOptionalIsReturned", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#ad1c19b1e3a7325beec685d61724e95a2", null ],
+    [ "givenNullLevel_whenApplyLevel_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#ab52c9ee15e926fc8d4c62e5d1a502643", null ],
+    [ "givenNullValues_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#aaa057c2a73d4c3ce31ce8bfb990ebeac", null ],
+    [ "givenValidValues_whenSetValues_thenAllCellsContainCorrectValues", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#a8c7f1c1f8e83f4d557eb5f052ed841f0", null ],
+    [ "givenViewModelInitialized_whenInit_then81CellsAreCreated", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#a3fabd78ac4a4e8abe5beac8dbced80fc", null ],
+    [ "givenWrongSizeList_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#a623de83e1fda16cf55843ad1f32c6901", null ],
+    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#ac30f351e3d40846e792fb14a90407004", null ],
+    [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#aaa811dc8935299ef565deedad0bb4ecc", null ],
+    [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html#a576f569bcea48f736db7deb48f6c0862", null ]
+];

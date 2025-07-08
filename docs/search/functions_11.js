@@ -7,5 +7,6 @@ var searchData=
   ['toasterbutton_4',['ToasterButton',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html#afbb98af91391385bd404a017ea8404e5',1,'fr::softsf::sudokufx::view::component::toaster::ToasterButton']]],
   ['toastervbox_5',['ToasterVBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a32ba720f6c71439fc172a26f30c1962e',1,'fr::softsf::sudokufx::view::component::toaster::ToasterVBox']]],
   ['toastlevels_6',['ToastLevels',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#acc4e07efe9239509aa49f9001d322d86',1,'fr::softsf::sudokufx::common::enums::ToastLevels']]],
-  ['togglelanguage_7',['toggleLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a67f2ba8f85685181dea0c4a2263a61dc',1,'fr::softsf::sudokufx::navigation::Coordinator']]]
+  ['togglelanguage_7',['toggleLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a67f2ba8f85685181dea0c4a2263a61dc',1,'fr::softsf::sudokufx::navigation::Coordinator']]],
+  ['togridnumber_8',['toGridNumber',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#ab1bebf1bd508380d7ace78f40778e05c',1,'fr::softsf::sudokufx::common::enums::DifficultyLevel']]]
 ];

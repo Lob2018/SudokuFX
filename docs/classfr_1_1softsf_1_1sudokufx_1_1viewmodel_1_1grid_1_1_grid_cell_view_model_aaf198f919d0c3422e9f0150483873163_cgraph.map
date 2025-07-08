@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setupListeners" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setupListeners">
+<area shape="rect" id="Node000001" title="Configures all UI event listeners and text formatting logic for the grid cell:" alt="" coords="5,105,227,148"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="286,5,507,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,102,274,57,295,50,297,55,276,63,166,107"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Computes the dynamic CSS border style for a Sudoku grid cell based on its position,..." alt="" coords="285,72,508,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,111,269,106,270,111,227,116"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="286,139,507,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,137,271,142,270,148,227,142"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ac95db9585f2ba2ed12d60dd5cca39461" title="Switches from label (read&#45;only) to editable TextArea mode and focuses it." alt="" coords="275,205,518,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="166,146,276,191,297,198,295,203,274,196,164,151"/>
+</map>

@@ -64,37 +64,37 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="38.25" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel</text>
 <text text-anchor="start" x="5.5" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuMaxiAccessibleText</text>
+<text text-anchor="start" x="14" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveClearAccessibleText</text>
 <text text-anchor="start" x="5.5" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuMaxiRoleDescription</text>
+<text text-anchor="start" x="14" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveClearRoleDescription</text>
 <text text-anchor="start" x="5.5" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuMaxiText</text>
+<text text-anchor="start" x="14" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveClearTooltip</text>
 <text text-anchor="start" x="5.5" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuMaxiTooltip</text>
+<text text-anchor="start" x="14" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveMenuMaxiAccessibleText</text>
 <text text-anchor="start" x="5.5" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IntegerProperty</text>
-<text text-anchor="start" x="14" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00"> percentage</text>
+<text text-anchor="start" x="14" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="14" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveMenuMaxiRoleDescription</text>
 <text text-anchor="start" x="5.5" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00"> reduceAccessibleText</text>
+<text text-anchor="start" x="14" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveMenuMaxiText</text>
 <text text-anchor="start" x="5.5" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00"> reduceText</text>
+<text text-anchor="start" x="14" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveMenuMaxiTooltip</text>
 <text text-anchor="start" x="5.5" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> reduceTooltip</text>
+<text text-anchor="start" x="14" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IntegerProperty</text>
+<text text-anchor="start" x="14" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solvePercentage</text>
 <text text-anchor="start" x="5.5" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-662.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveClearAccessibleText</text>
+<text text-anchor="start" x="14" y="-662.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveReduceAccessibleText</text>
 <text text-anchor="start" x="5.5" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveClearRoleDescription</text>
+<text text-anchor="start" x="14" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveReduceText</text>
 <text text-anchor="start" x="5.5" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveClearTooltip</text>
+<text text-anchor="start" x="14" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveReduceTooltip</text>
 <text text-anchor="start" x="5.5" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
 <text text-anchor="start" x="14" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00"> solveRoleDescription</text>
@@ -112,40 +112,40 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="4" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel()</text>
 <text text-anchor="start" x="4" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding menuMaxiAccessible</text>
-<text text-anchor="start" x="14" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
+<text text-anchor="start" x="14" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setSolvePercentage</text>
+<text text-anchor="start" x="14" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int value)</text>
 <text text-anchor="start" x="4" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding menuMaxiRole</text>
-<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">DescriptionProperty()</text>
+<text text-anchor="start" x="14" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveClear</text>
+<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
 <text text-anchor="start" x="4" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding menuMaxiText</text>
-<text text-anchor="start" x="14" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="14" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveClear</text>
+<text text-anchor="start" x="14" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">RoleDescriptionProperty()</text>
 <text text-anchor="start" x="4" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding menuMaxiTooltip</text>
-<text text-anchor="start" x="14" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="14" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveClear</text>
+<text text-anchor="start" x="14" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">TooltipProperty()</text>
 <text text-anchor="start" x="4" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">IntegerProperty percentage</text>
-<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="14" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveMenuMaxi</text>
+<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
 <text text-anchor="start" x="4" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding reduceAccessible</text>
-<text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
+<text text-anchor="start" x="14" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveMenuMaxi</text>
+<text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">RoleDescriptionProperty()</text>
 <text text-anchor="start" x="4" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding reduceText</text>
-<text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="14" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveMenuMaxi</text>
+<text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="4" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding reduceTooltip</text>
-<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="14" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveMenuMaxi</text>
+<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">TooltipProperty()</text>
 <text text-anchor="start" x="4" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPercentage</text>
-<text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int value)</text>
+<text text-anchor="start" x="14" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">IntegerProperty solvePercentage</text>
+<text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
 <text text-anchor="start" x="4" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveClear</text>
+<text text-anchor="start" x="14" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveReduce</text>
 <text text-anchor="start" x="14" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
 <text text-anchor="start" x="4" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveClear</text>
-<text text-anchor="start" x="14" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">RoleDescriptionProperty()</text>
+<text text-anchor="start" x="14" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveReduce</text>
+<text text-anchor="start" x="14" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="4" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveClear</text>
+<text text-anchor="start" x="14" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveReduce</text>
 <text text-anchor="start" x="14" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">TooltipProperty()</text>
 <text text-anchor="start" x="4" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding solveRoleDescription</text>

@@ -9,7 +9,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model =
     [ "selectedLevelProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#ab28e5454abb59986eaaad4fb8ab234a3", null ],
     [ "selectedRoleDescriptionBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#af3c12f6eaae55b95b3d96ae24c5e6b1f", null ],
     [ "setPercentage", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#aaea368c610137ee814199d290c6d4202", null ],
-    [ "updateSelectedLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#aa9fe8e2208d7ff741a7f583afa08cd0d", null ],
+    [ "updateSelectedLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a76e3858283a44df2008e93c998e4e37a", null ],
     [ "selectedLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#abdc48bef61276a661f3a448034155d96", null ],
     [ "starsPercentage", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a108858ff43563aa611829a0a54689c83", null ]
 ];
