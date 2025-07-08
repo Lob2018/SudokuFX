@@ -12,6 +12,7 @@ We welcome all kinds of contributions — from bug reports and feature requests 
 3. [Development Setup](#3-development-setup)
 4. [Coding Standards and Formatting](#4-coding-standards-and-formatting)
 5. [Testing Guidelines](#5-testing-guidelines)
+    - [Test Policy for New Functionality](#-test-policy-for-new-functionality)
 6. [Commit Message Guidelines](#6-commit-message-guidelines)
 7. [Contribution Workflow](#7-contribution-workflow)
 8. [Pull Requests](#8-pull-requests)
@@ -119,13 +120,26 @@ To use them:
 
 ## 5. Testing Guidelines
 
-- All new features and bug fixes must include appropriate unit or integration tests.
-- Use JUnit 5 and TestFX for JavaFX UI testing.
+- ✅ **All new features and bug fixes must include appropriate unit or integration tests.**
+- Use **JUnit 5** for unit tests and **TestFX** for JavaFX UI testing.
 - Run tests locally before submitting:
 
 ```bash
 ./mvnw test
 ```
+### Test Policy for New Functionality
+
+As a general policy, any major new functionality must be accompanied by automated tests.  
+This ensures that new features are reliable, maintainable, and do not introduce regressions.  
+Pull Requests that introduce significant changes without tests may be rejected or delayed.
+
+Tests should cover:
+
+- Core logic and edge cases
+- Input validation and error handling
+- UI behavior (if applicable)
+
+If you're unsure how to test a specific feature, feel free to open a draft PR or ask for guidance in your Pull Request description.
 
 ---
 
