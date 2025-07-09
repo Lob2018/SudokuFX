@@ -761,7 +761,6 @@
                     <argument>${java.version}</argument>
                     <argument>${deployment-folder}</argument>
                     <argument>${macos-package-id}</argument>
-                    <argument>x86_64</argument>
                     <argument>${project.organization.name}</argument>
                     <argument>${license.name}</argument>
                   </arguments>
