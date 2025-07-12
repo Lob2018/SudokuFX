@@ -44,6 +44,7 @@ public class MyLogbackConfig {
         System.setProperty("logs", logsFolderPath + "/" + LOGS_FILE_NAME.getPath());
         LoggerContext context = configureLogback();
         printLogStatus(context);
+        printLogEntryMessage();
     }
 
     public String getLogsFolderPath() {
