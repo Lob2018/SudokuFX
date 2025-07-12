@@ -54,14 +54,6 @@ class AbstractDataSourceConfigUTest {
     }
 
     @Test
-    void givenNullLogbackConfig_whenLogbackInitialization_thenThrowsIllegalArgumentException() {
-        IllegalArgumentException ex =
-                assertThrows(
-                        IllegalArgumentException.class, () -> config.logbackInitialization(null));
-        assertTrue(ex.getMessage().contains("myLogbackConfig must not be null"));
-    }
-
-    @Test
     void givenNullKeystore_whenHikariDataSourceCalled_thenThrowsIllegalArgumentException() {
         IllegalArgumentException ex =
                 assertThrows(

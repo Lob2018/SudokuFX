@@ -15,7 +15,6 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import fr.softsf.sudokufx.config.MyLogbackConfig;
 import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 
 import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_MIGRATION_PATH;
@@ -42,33 +41,16 @@ abstract class AbstractDataSourceConfig {
     }
 
     /**
-     * Initializes Logback logging framework.
+     * Creates and configures the main HikariDataSource for the application. Depends on {@code
+     * myLogbackConfig} to ensure logging is initialized first.
      *
-     * @param myLogbackConfig Custom Logback configuration bean; must not be null
-     * @return always 0
-     * @throws IllegalArgumentException if {@code myLogbackConfig} is null
-     */
-    @Bean
-    int logbackInitialization(final MyLogbackConfig myLogbackConfig) {
-        if (Objects.isNull(myLogbackConfig)) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "The myLogbackConfig must not be null");
-        }
-        myLogbackConfig.printLogEntryMessage();
-        return 0;
-    }
-
-    /**
-     * Creates and configures the main DataSource for the application. Depends on
-     * logbackInitialization to ensure logging is set up.
-     *
-     * @param iKeystore Application keystore for secure storage; must not be null
+     * @param iKeystore Application keystore for secure credentials; must not be null
      * @param iOsFolderFactory Factory for OS-specific folder paths; must not be null
-     * @return configured HikariDataSource
+     * @return fully configured HikariDataSource
      * @throws IllegalArgumentException if any parameter is null
      */
     @Bean
-    @DependsOn({"logbackInitialization"})
+    @DependsOn("myLogbackConfig")
     HikariDataSource hikariDataSource(
             final IKeystore iKeystore, IOsFolderFactory iOsFolderFactory) {
         if (Objects.isNull(iKeystore)) {

@@ -25,7 +25,7 @@ import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_NAME;
 class DataSourceConfigCds extends AbstractDataSourceConfig {
     @Bean
     @Override
-    @DependsOn({"logbackInitialization"})
+    @DependsOn({"myLogbackConfig"})
     HikariDataSource hikariDataSource(
             final IKeystore iKeystore, final IOsFolderFactory iOsFolderFactory) {
         this.setJdbcUrl(

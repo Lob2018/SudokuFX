@@ -21,7 +21,7 @@ import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_NAME;
 @ExcludedFromCoverageReportGenerated
 class DataSourceConfigDefault extends AbstractDataSourceConfig {
     @Bean
-    @DependsOn({"logbackInitialization"})
+    @DependsOn({"myLogbackConfig"})
     @Override
     HikariDataSource hikariDataSource(
             final IKeystore iKeystore, final IOsFolderFactory iOsFolderFactory) {
