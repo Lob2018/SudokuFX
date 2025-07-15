@@ -54,6 +54,7 @@ class AbstractDataSourceConfigUTest {
     }
 
     @Test
+    @SuppressWarnings("resource")
     void givenNullKeystore_whenHikariDataSourceCalled_thenThrowsIllegalArgumentException() {
         IllegalArgumentException ex =
                 assertThrows(
@@ -63,6 +64,7 @@ class AbstractDataSourceConfigUTest {
     }
 
     @Test
+    @SuppressWarnings("resource")
     void givenNullIOsFolderFactory_whenHikariDataSourceCalled_thenThrowsIllegalArgumentException() {
         IllegalArgumentException ex =
                 assertThrows(
