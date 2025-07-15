@@ -11,9 +11,9 @@ import java.util.Objects;
 /**
  * Spring component for validating objects using Jakarta Bean Validation.
  * Throws IllegalArgumentException if the object is null,
- * and ConstraintViolationException if validation constraints are violated.
+ * and ConstraintViolationException if any validation constraints are violated.
  *
- * <p>This component requires Spring context initialization to inject the Validator.
+ * <p>This component requires Spring context initialization to inject the {@link Validator}.
  *
  * <p>Example usage with a record:
  * <pre>{@code
@@ -24,26 +24,27 @@ import java.util.Objects;
  * ) {}
  *
  * UserDto user = new UserDto("JohnDoe", "john@example.com", 25);
- * validationUtils.validateOrThrow(user);
+ * jakartaValidator.validateOrThrow(user);
  * }</pre>
  */
 @Component
-public class ValidationUtils {
+public class JakartaValidator {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ValidationUtils.class);
+    private static final Logger LOG = LoggerFactory.getLogger(JakartaValidator.class);
     private final Validator validator;
 
-    public ValidationUtils(Validator validator) {
+    public JakartaValidator(Validator validator) {
         this.validator = validator;
     }
 
     /**
      * Validates the given object.
+     *
      * @param obj the object to validate, must not be null
      * @param <T> the object type
      * @return the validated object if valid
      * @throws IllegalArgumentException if the object is null
-     * @throws ConstraintViolationException if validation fails
+     * @throws ConstraintViolationException if validation constraints are violated
      */
     public <T> T validateOrThrow(T obj) {
         if (Objects.isNull(obj)) {
