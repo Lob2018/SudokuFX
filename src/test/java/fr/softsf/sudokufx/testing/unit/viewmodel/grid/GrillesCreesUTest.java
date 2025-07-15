@@ -65,6 +65,7 @@ class GrillesCreesUTest {
     }
 
     @Test
+    @SuppressWarnings("DataFlowIssue")
     void givenPourcentageDesPossibilitesBelowZero_whenValidate_thenViolation() {
         GrillesCrees grilles = new GrillesCrees(VALID_GRID, VALID_GRID, -1);
         Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
@@ -73,6 +74,7 @@ class GrillesCreesUTest {
     }
 
     @Test
+    @SuppressWarnings("DataFlowIssue")
     void givenPourcentageDesPossibilitesAboveHundred_whenValidate_thenViolation() {
         GrillesCrees grilles = new GrillesCrees(VALID_GRID, VALID_GRID, 101);
         Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
