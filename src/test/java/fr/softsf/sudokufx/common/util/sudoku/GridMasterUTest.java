@@ -40,28 +40,28 @@ class GridMasterUTest {
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void givenValidLevel_whenCreateGridsQuickly_thenGridsGeneratedSuccessfully(int level) {
-        int[][] grids = iGridMaster.creerLesGrilles(level);
-        assertNotNull(grids);
-        assertNotNull(grids[0]);
-        assertNotNull(grids[1]);
-        assertNotNull(grids[2]);
+        GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level);
+        assertNotNull(grillesCrees);
+        assertNotNull(grillesCrees.grilleResolue());
+        assertNotNull(grillesCrees.grilleAResoudre());
         // The resolved grid
-        assertEquals(81, grids[0].length);
+        assertEquals(81, grillesCrees.grilleResolue().length);
         int countForResolvedGrid = 0;
-        for (int value : grids[0]) {
+        for (int value : grillesCrees.grilleResolue()) {
             if (value == 0) countForResolvedGrid++;
         }
         assertEquals(0, countForResolvedGrid);
         // The grid to be resolved
-        assertEquals(81, grids[1].length);
+        assertEquals(81, grillesCrees.grilleAResoudre().length);
         int countForToBeResolvedGrid = 0;
-        for (int value : grids[1]) {
+        for (int value : grillesCrees.grilleAResoudre()) {
             if (value == 0) countForToBeResolvedGrid++;
         }
         assertNotEquals(0, countForToBeResolvedGrid);
         // The possibilities
         assertTrue(
-                grids[2][0] >= 0 && grids[2][0] <= 100,
+                grillesCrees.pourcentageDesPossibilites() >= 0
+                        && grillesCrees.pourcentageDesPossibilites() <= 100,
                 "The possibilities must be between 0 and 100 for level : " + level);
     }
 
@@ -74,28 +74,28 @@ class GridMasterUTest {
     @ParameterizedTest
     @ValueSource(ints = {1, 1, 2, 2, 3, 3})
     void givenValidLevel_whenCreateGridsNormally_thenGridsGeneratedSuccessfully(int level) {
-        int[][] grids = GRID_MASTER_NORMALLY.creerLesGrilles(level);
-        assertNotNull(grids);
-        assertNotNull(grids[0]);
-        assertNotNull(grids[1]);
-        assertNotNull(grids[2]);
+        GrillesCrees grillesCrees = GRID_MASTER_NORMALLY.creerLesGrilles(level);
+        assertNotNull(grillesCrees);
+        assertNotNull(grillesCrees.grilleResolue());
+        assertNotNull(grillesCrees.grilleAResoudre());
         // The resolved grid
-        assertEquals(81, grids[0].length);
+        assertEquals(81, grillesCrees.grilleResolue().length);
         int countForResolvedGrid = 0;
-        for (int value : grids[0]) {
+        for (int value : grillesCrees.grilleResolue()) {
             if (value == 0) countForResolvedGrid++;
         }
         assertEquals(0, countForResolvedGrid);
         // The grid to be resolved
-        assertEquals(81, grids[1].length);
+        assertEquals(81, grillesCrees.grilleAResoudre().length);
         int countForToBeResolvedGrid = 0;
-        for (int value : grids[1]) {
+        for (int value : grillesCrees.grilleAResoudre()) {
             if (value == 0) countForToBeResolvedGrid++;
         }
         assertNotEquals(0, countForToBeResolvedGrid);
         // The possibilities
         assertTrue(
-                grids[2][0] >= 0 && grids[2][0] <= 100,
+                grillesCrees.pourcentageDesPossibilites() >= 0
+                        && grillesCrees.pourcentageDesPossibilites() <= 100,
                 "The possibilities must be between 0 and 100 for level : " + level);
         if (gridMasterNormallyLastLevel != level) {
             gridMasterNormallyLastLevel = level;
@@ -199,28 +199,28 @@ class GridMasterUTest {
                 assertEquals(-1, gridMaster.getMoyenMinPossibilites());
             }
         }
-        int[][] grids = gridMaster.creerLesGrilles(level);
-        assertNotNull(grids);
-        assertNotNull(grids[0]);
-        assertNotNull(grids[1]);
-        assertNotNull(grids[2]);
+        GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level);
+        assertNotNull(grillesCrees);
+        assertNotNull(grillesCrees.grilleResolue());
+        assertNotNull(grillesCrees.grilleAResoudre());
         // The resolved grid
-        assertEquals(81, grids[0].length);
+        assertEquals(81, grillesCrees.grilleResolue().length);
         int countForResolvedGrid = 0;
-        for (int value : grids[0]) {
+        for (int value : grillesCrees.grilleResolue()) {
             if (value == 0) countForResolvedGrid++;
         }
         assertEquals(0, countForResolvedGrid);
         // The grid to be resolved
-        assertEquals(81, grids[1].length);
+        assertEquals(81, grillesCrees.grilleAResoudre().length);
         int countForToBeResolvedGrid = 0;
-        for (int value : grids[1]) {
+        for (int value : grillesCrees.grilleAResoudre()) {
             if (value == 0) countForToBeResolvedGrid++;
         }
         assertNotEquals(0, countForToBeResolvedGrid);
         // The possibilities
         assertTrue(
-                grids[2][0] >= 0 && grids[2][0] <= 100,
+                grillesCrees.pourcentageDesPossibilites() >= 0
+                        && grillesCrees.pourcentageDesPossibilites() <= 100,
                 "The possibilities must be between 0 and 100 for level : " + level);
     }
 }

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
 
 /**
@@ -103,8 +104,8 @@ public class GridViewModel {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "Difficulty level cannot be null");
         }
-        int[][] grid = iGridMaster.creerLesGrilles(level.toGridNumber());
-        setValues(Arrays.stream(grid[1]).mapToObj(String::valueOf).toList());
-        return grid[2][0];
+        GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level.toGridNumber());
+        setValues(Arrays.stream(grillesCrees.grilleAResoudre()).mapToObj(String::valueOf).toList());
+        return grillesCrees.pourcentageDesPossibilites();
     }
 }

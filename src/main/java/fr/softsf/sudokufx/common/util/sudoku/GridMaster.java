@@ -439,7 +439,7 @@ final class GridMaster implements IGridMaster {
     }
 
     @Override
-    public int[][] creerLesGrilles(final int niveau) {
+    public GrillesCrees creerLesGrilles(final int niveau) {
         // Lever une exception si le niveau n'existe pas
         if (niveau < 1 || niveau > 3) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
@@ -455,7 +455,7 @@ final class GridMaster implements IGridMaster {
         int sommeDesPossibilites = genererLaGrilleAResoudre(niveau, grilleResolue, grilleAResoudre);
         // Récupérer le pourcentage de possibilités estimé
         int pourcentageDesPossibilites = getPourcentageDesPossibilites(sommeDesPossibilites);
-        return new int[][] {grilleResolue, grilleAResoudre, new int[] {pourcentageDesPossibilites}};
+        return new GrillesCrees(grilleResolue, grilleAResoudre, pourcentageDesPossibilites);
     }
 
     /**

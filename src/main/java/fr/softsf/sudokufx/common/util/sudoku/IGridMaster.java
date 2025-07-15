@@ -20,8 +20,8 @@ public sealed interface IGridMaster permits GridMaster {
      *       possibilités pratiques de 28 266 à 40 000.
      * </ul>
      *
-     * Le pourcentage de possibilités est calculé sur la base d'une plage allant de 4 800 (0%) à 40
-     * 000 (100%), indiquant la difficulté estimée de la grille à résoudre.
+     * <p>Le pourcentage de possibilités est calculé sur la base d'une plage allant de 4 800 (0%) à
+     * 40 000 (100%), indiquant la difficulté estimée de la grille à résoudre.
      *
      * @param niveau Le niveau de difficulté (1 : facile, 2 : moyen, 3 : difficile).
      * @return Un tableau à trois dimensions contenant :
@@ -35,7 +35,7 @@ public sealed interface IGridMaster permits GridMaster {
      *
      * @throws IllegalArgumentException si le niveau n’est pas compris entre 1 et 3 inclus.
      */
-    int[][] creerLesGrilles(final int niveau);
+    GrillesCrees creerLesGrilles(final int niveau);
 
     /**
      * Résout une grille de Sudoku en remplissant les cases vides avec des valeurs valides.
