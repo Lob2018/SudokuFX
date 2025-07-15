@@ -129,7 +129,9 @@ class InMemoryPlayerUTest {
         when(playerServiceMock.getPlayer()).thenThrow(new IllegalStateException("DB down"));
         new InMemoryPlayer(playerServiceMock) {
             @Override
-            void exitPlatform() {}
+            void exitPlatform() {
+                // No-op on purpose to avoid calling Platform.exit() during tests
+            }
         };
         String lastLog = logWatcher.list.getLast().getFormattedMessage();
         assertTrue(
