@@ -5,7 +5,6 @@
  */
 package fr.softsf.sudokufx.navigation;
 
-import java.util.concurrent.TimeoutException;
 import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -40,12 +39,14 @@ class CoordinatorUTest {
 
     private ListAppender<ILoggingEvent> logWatcher;
 
+    private AutoCloseable mocks;
+
     @BeforeEach
     void setup() {
         logWatcher = new ListAppender<>();
         logWatcher.start();
         ((Logger) LoggerFactory.getLogger(Coordinator.class)).addAppender(logWatcher);
-        MockitoAnnotations.openMocks(this);
+        mocks = MockitoAnnotations.openMocks(this);
         scene = new Scene(new VBox(), 200, 200);
         coordinator = spy(new Coordinator(fxmlLoader));
         coordinator.setDefaultScene(scene);
@@ -53,9 +54,12 @@ class CoordinatorUTest {
     }
 
     @AfterEach
-    void cleanup() throws TimeoutException {
+    void cleanup() throws Exception {
         ((Logger) LoggerFactory.getLogger(Coordinator.class)).detachAndStopAllAppenders();
         FxToolkit.cleanupStages();
+        if (mocks != null) {
+            mocks.close();
+        }
     }
 
     @Test
