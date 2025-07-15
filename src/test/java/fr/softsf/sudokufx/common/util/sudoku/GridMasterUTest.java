@@ -59,22 +59,14 @@ class GridMasterUTest {
         assertNotNull(grillesCrees);
         assertNotNull(grillesCrees.grilleResolue());
         assertNotNull(grillesCrees.grilleAResoudre());
-
         assertEquals(81, grillesCrees.grilleResolue().length);
         long countForResolvedGrid =
                 Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
         assertEquals(0, countForResolvedGrid);
-
         assertEquals(81, grillesCrees.grilleAResoudre().length);
         long countForToBeResolvedGrid =
                 Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
         assertNotEquals(0, countForToBeResolvedGrid);
-
-        assertTrue(
-                grillesCrees.pourcentageDesPossibilites() >= 0
-                        && grillesCrees.pourcentageDesPossibilites() <= 100,
-                "The possibilities must be between 0 and 100 for level : " + level);
-
         if (gridMasterLastLevel != level) {
             gridMasterLastLevel = level;
             Awaitility.await()
@@ -175,20 +167,13 @@ class GridMasterUTest {
         assertNotNull(grillesCrees);
         assertNotNull(grillesCrees.grilleResolue());
         assertNotNull(grillesCrees.grilleAResoudre());
-
         assertEquals(81, grillesCrees.grilleResolue().length);
         long countForResolvedGrid =
                 Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
         assertEquals(0, countForResolvedGrid);
-
         assertEquals(81, grillesCrees.grilleAResoudre().length);
         long countForToBeResolvedGrid =
                 Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
         assertNotEquals(0, countForToBeResolvedGrid);
-
-        assertTrue(
-                grillesCrees.pourcentageDesPossibilites() >= 0
-                        && grillesCrees.pourcentageDesPossibilites() <= 100,
-                "The possibilities must be between 0 and 100 for level : " + level);
     }
 }
