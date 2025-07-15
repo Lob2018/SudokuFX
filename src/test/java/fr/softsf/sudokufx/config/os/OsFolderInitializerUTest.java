@@ -25,10 +25,10 @@ class OsFolderInitializerUTest {
 
     private static Stream<Arguments> invalidPathsProvider() {
         return Stream.of(
-                Arguments.of(null, "validLogsPath", "DataFolderPath"),
-                Arguments.of("validDataPath", null, "LogsFolderPath"),
-                Arguments.of("   ", "validLogsPath", "DataFolderPath"),
-                Arguments.of("validDataPath", " ", "LogsFolderPath"));
+                Arguments.of(null, "validLogsPath", "dataFolderPath"),
+                Arguments.of("validDataPath", null, "logsFolderPath"),
+                Arguments.of("   ", "validLogsPath", "dataFolderPath"),
+                Arguments.of("validDataPath", " ", "logsFolderPath"));
     }
 
     @Test
@@ -124,10 +124,10 @@ class OsFolderInitializerUTest {
     void givenValidPaths_whenInitializeFolders_thenFoldersCreated() {
         String dataPath = tempDir.resolve("testDataFolder").toString();
         String logsPath = tempDir.resolve("testLogsFolder").toString();
-        String[] result = OsFolderInitializer.INSTANCE.initializeFolders(dataPath, logsPath);
-        assertEquals(2, result.length);
-        assertEquals(dataPath, result[0]);
-        assertEquals(logsPath, result[1]);
+        OsInitializedFolders osInitializedFolders =
+                OsFolderInitializer.INSTANCE.initializeFolders(dataPath, logsPath);
+        assertEquals(dataPath, osInitializedFolders.dataFolderPath());
+        assertEquals(logsPath, osInitializedFolders.logsFolderPath());
         assertTrue(new File(dataPath).exists());
         assertTrue(new File(logsPath).exists());
     }

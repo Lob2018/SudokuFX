@@ -18,17 +18,18 @@ final class LinuxFolderFactory implements IOsFolderFactory {
      * Constructor that initializes the data and logs folder paths.
      *
      * <p>The given paths are validated and the folders created by {@link
-     * OsFolderInitializer#initializeFolders(String, String)}. This method may throw exceptions if
-     * paths are invalid or folder creation fails.
+     * OsFolderInitializer#initializeFolders(String, String)}, which returns an {@link
+     * OsInitializedFolders} record containing the created folder paths. This method may throw
+     * exceptions if paths are invalid or folder creation fails.
      *
      * @param dataFolderPath The intended path for the data folder
      * @param logsFolderPath The intended path for the logs folder
      */
     public LinuxFolderFactory(String dataFolderPath, String logsFolderPath) {
-        final String[] folders =
+        final OsInitializedFolders osInitializedFolders =
                 OsFolderInitializer.INSTANCE.initializeFolders(dataFolderPath, logsFolderPath);
-        dataFolderForSudoFx = folders[0];
-        logsFolderForSudoFx = folders[1];
+        dataFolderForSudoFx = osInitializedFolders.dataFolderPath();
+        logsFolderForSudoFx = osInitializedFolders.logsFolderPath();
     }
 
     @Override

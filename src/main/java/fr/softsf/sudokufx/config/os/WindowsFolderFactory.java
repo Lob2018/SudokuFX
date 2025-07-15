@@ -16,18 +16,19 @@ final class WindowsFolderFactory implements IOsFolderFactory {
     /**
      * Constructor that initializes the data and logs folder paths.
      *
-     * <p>Validation and folder creation are delegated to {@link
-     * OsFolderInitializer#initializeFolders(String, String)}. Exceptions will be thrown if the
-     * paths are invalid or folder creation fails.
+     * <p>The given paths are validated and the folders created by {@link
+     * OsFolderInitializer#initializeFolders(String, String)}, which returns an {@link
+     * OsInitializedFolders} record containing the created folder paths. This method may throw
+     * exceptions if paths are invalid or folder creation fails.
      *
      * @param dataFolderPath The intended path for the data folder
      * @param logsFolderPath The intended path for the logs folder
      */
     public WindowsFolderFactory(String dataFolderPath, String logsFolderPath) {
-        final String[] folders =
+        final OsInitializedFolders osInitializedFolders =
                 OsFolderInitializer.INSTANCE.initializeFolders(dataFolderPath, logsFolderPath);
-        dataFolderForSudoFx = folders[0];
-        logsFolderForSudoFx = folders[1];
+        dataFolderForSudoFx = osInitializedFolders.dataFolderPath();
+        logsFolderForSudoFx = osInitializedFolders.logsFolderPath();
     }
 
     @Override

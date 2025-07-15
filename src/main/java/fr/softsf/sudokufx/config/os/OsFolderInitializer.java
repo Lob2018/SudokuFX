@@ -29,20 +29,20 @@ public enum OsFolderInitializer {
      *
      * @param dataFolderPath path to the data folder to create
      * @param logsFolderPath path to the logs folder to create
-     * @return array containing the created folder paths
+     * @return an OsInitializedFolders object containing the created folder paths
      * @throws IllegalArgumentException if either folder path is null or blank
      * @throws RuntimeException if folder creation fails
      */
-    String[] initializeFolders(String dataFolderPath, String logsFolderPath) {
+    OsInitializedFolders initializeFolders(String dataFolderPath, String logsFolderPath) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 dataFolderPath,
-                "DataFolderPath must not be null or blank, but was " + dataFolderPath);
+                "dataFolderPath must not be null or blank, but was: " + dataFolderPath);
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 logsFolderPath,
-                "LogsFolderPath must not be null or blank, but was " + logsFolderPath);
+                "logsFolderPath must not be null or blank, but was: " + logsFolderPath);
         createFolder(new File(dataFolderPath));
         createFolder(new File(logsFolderPath));
-        return new String[] {dataFolderPath, logsFolderPath};
+        return new OsInitializedFolders(dataFolderPath, logsFolderPath);
     }
 
     /**
