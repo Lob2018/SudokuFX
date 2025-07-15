@@ -14,6 +14,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.exception.JakartaValidator;
 
 /** Provides essential functionalities for generating and solving Sudoku puzzles. */
 @Component
@@ -34,6 +35,12 @@ final class GridMaster implements IGridMaster {
     private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     private int moyenMinPossibilites = 16533;
+
+    private final JakartaValidator jakartaValidator;
+
+    public GridMaster(JakartaValidator jakartaValidator) {
+        this.jakartaValidator = jakartaValidator;
+    }
 
     public int getMoyenMinPossibilites() {
         return moyenMinPossibilites;
@@ -455,7 +462,12 @@ final class GridMaster implements IGridMaster {
         int sommeDesPossibilites = genererLaGrilleAResoudre(niveau, grilleResolue, grilleAResoudre);
         // Récupérer le pourcentage de possibilités estimé
         int pourcentageDesPossibilites = getPourcentageDesPossibilites(sommeDesPossibilites);
-        return new GrillesCrees(grilleResolue, grilleAResoudre, pourcentageDesPossibilites);
+        // Crée un record GrillesCrees structuré contenant les deux grilles et le pourcentage
+        GrillesCrees grillesCrees =
+                new GrillesCrees(grilleResolue, grilleAResoudre, pourcentageDesPossibilites);
+        // Valide l'intégrité du record
+        jakartaValidator.validateOrThrow(grillesCrees);
+        return grillesCrees;
     }
 
     /**

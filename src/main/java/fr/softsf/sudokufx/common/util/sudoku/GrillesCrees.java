@@ -5,5 +5,57 @@
  */
 package fr.softsf.sudokufx.common.util.sudoku;
 
+import java.util.Arrays;
+import java.util.Objects;
+
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+
+/**
+ * Record representing the result of a grid generation: the solved grid, the puzzle grid, and the
+ * estimated possibility percentage.
+ */
 public record GrillesCrees(
-        int[] grilleResolue, int[] grilleAResoudre, int pourcentageDesPossibilites) {}
+        @NotNull @Size(
+                        min = 81,
+                        max = 81,
+                        message = "grilleResolue must contain exactly 81 elements")
+                int[] grilleResolue,
+        @NotNull @Size(
+                        min = 81,
+                        max = 81,
+                        message = "grilleAResoudre must contain exactly 81 elements")
+                int[] grilleAResoudre,
+        @Min(value = 0, message = "pourcentageDesPossibilites must be >= 0") @Max(value = 100, message = "pourcentageDesPossibilites must be <= 100") int pourcentageDesPossibilites) {
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof GrillesCrees(int[] resolue, int[] aResoudre, int desPossibilites)))
+            return false;
+        return pourcentageDesPossibilites == desPossibilites
+                && Arrays.equals(grilleResolue, resolue)
+                && Arrays.equals(grilleAResoudre, aResoudre);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(pourcentageDesPossibilites);
+        result = 31 * result + Arrays.hashCode(grilleResolue);
+        result = 31 * result + Arrays.hashCode(grilleAResoudre);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "GrillesCrees["
+                + "grilleResolue="
+                + Arrays.toString(grilleResolue)
+                + ", grilleAResoudre="
+                + Arrays.toString(grilleAResoudre)
+                + ", pourcentageDesPossibilites="
+                + pourcentageDesPossibilites
+                + ']';
+    }
+}

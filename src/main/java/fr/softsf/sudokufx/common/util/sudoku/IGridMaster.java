@@ -5,35 +5,41 @@
  */
 package fr.softsf.sudokufx.common.util.sudoku;
 
+import jakarta.validation.ConstraintViolationException;
+
 /** Interface defining methods to generate and solve Sudoku puzzles */
 public sealed interface IGridMaster permits GridMaster {
     /**
-     * Crée les grilles de Sudoku (résolue et à résoudre) en fonction du niveau de difficulté.
-     * Niveaux de difficulté :
+     * Crée les grilles de Sudoku (résolue et à résoudre) selon un niveau de difficulté donné.
+     *
+     * <p>Les niveaux disponibles sont :
      *
      * <ul>
-     *   <li><b>Facile (1)</b> : 35-45 cases cachées, possibilités théoriques de 0 à 13 797,
-     *       possibilités pratiques de 4 800 à 16 533.
-     *   <li><b>Moyen (2)</b> : 45-49 cases cachées, possibilités théoriques de 13 797 à 27 594,
-     *       possibilités pratiques de 16 533 à 28 266.
-     *   <li><b>Difficile (3)</b> : 49-59 cases cachées, possibilités théoriques de 27 594 à 41 391,
-     *       possibilités pratiques de 28 266 à 40 000.
+     *   <li><b>Facile (1)</b> : 35 à 45 cases cachées<br>
+     *       - Possibilités théoriques : 0 à 13 797<br>
+     *       - Possibilités pratiques : 4 800 à 16 533
+     *   <li><b>Moyen (2)</b> : 45 à 49 cases cachées<br>
+     *       - Possibilités théoriques : 13 797 à 27 594<br>
+     *       - Possibilités pratiques : 16 533 à 28 266
+     *   <li><b>Difficile (3)</b> : 49 à 59 cases cachées<br>
+     *       - Possibilités théoriques : 27 594 à 41 391<br>
+     *       - Possibilités pratiques : 28 266 à 40 000
      * </ul>
      *
-     * <p>Le pourcentage de possibilités est calculé sur la base d'une plage allant de 4 800 (0%) à
-     * 40 000 (100%), indiquant la difficulté estimée de la grille à résoudre.
+     * <p>Le pourcentage de possibilités est calculé à partir de la plage 4 800 (0%) à 40 000
+     * (100%), afin d’estimer la difficulté réelle de la grille générée.
      *
-     * @param niveau Le niveau de difficulté (1 : facile, 2 : moyen, 3 : difficile).
-     * @return Un tableau à trois dimensions contenant :
-     *     <ol>
-     *       <li>La grille résolue (tableau d'entiers de taille NOMBRE_CASES).
-     *       <li>La grille à résoudre avec les cases cachées (tableau d'entiers de taille
-     *           NOMBRE_CASES).
-     *       <li>Un tableau d'un seul entier représentant le pourcentage des possibilités de la
-     *           grille à résoudre.
-     *     </ol>
+     * @param niveau le niveau de difficulté à appliquer (1 à 3)
+     * @return un objet {@link GrillesCrees} contenant :
+     *     <ul>
+     *       <li>la grille résolue ({@code grilleResolue})
+     *       <li>la grille à résoudre ({@code grilleAResoudre})
+     *       <li>le pourcentage des possibilités ({@code pourcentageDesPossibilites})
+     *     </ul>
      *
-     * @throws IllegalArgumentException si le niveau n’est pas compris entre 1 et 3 inclus.
+     * @throws IllegalArgumentException si {@code niveau} est en dehors de l’intervalle [1, 3]
+     * @throws ConstraintViolationException si les données retournées ne respectent pas les
+     *     contraintes de validation
      */
     GrillesCrees creerLesGrilles(final int niveau);
 

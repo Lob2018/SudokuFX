@@ -5,100 +5,78 @@
  */
 package fr.softsf.sudokufx.common.util.sudoku;
 
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import org.awaitility.Awaitility;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import fr.softsf.sudokufx.SudoMain;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest(classes = {SudoMain.class})
 class GridMasterUTest {
-    private IGridMaster iGridMaster;
-    private GridMaster gridMaster;
 
-    private static final GridMaster GRID_MASTER_NORMALLY = new GridMaster();
-    private static int gridMasterNormallyLastLevel = -1;
+    @Autowired private GridMaster gridMaster;
 
-    @BeforeEach
-    void init() {
-        iGridMaster = new GridMaster();
-        gridMaster = new GridMaster();
-    }
+    private int gridMasterLastLevel = -1;
 
     @ParameterizedTest
     @ValueSource(ints = {-1, -100, 300})
     void givenInvalidLevel_whenCreateGrids_thenThrowsIllegalArgumentException(int level) {
         IllegalArgumentException exception =
                 assertThrows(
-                        IllegalArgumentException.class, () -> iGridMaster.creerLesGrilles(level));
+                        IllegalArgumentException.class, () -> gridMaster.creerLesGrilles(level));
         assertTrue(exception.getMessage().contains("The grid level must be between 1 and 3"));
     }
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void givenValidLevel_whenCreateGridsQuickly_thenGridsGeneratedSuccessfully(int level) {
-        GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level);
+        GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level);
         assertNotNull(grillesCrees);
         assertNotNull(grillesCrees.grilleResolue());
         assertNotNull(grillesCrees.grilleAResoudre());
-        // The resolved grid
         assertEquals(81, grillesCrees.grilleResolue().length);
-        int countForResolvedGrid = 0;
-        for (int value : grillesCrees.grilleResolue()) {
-            if (value == 0) countForResolvedGrid++;
-        }
+        long countForResolvedGrid =
+                Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
         assertEquals(0, countForResolvedGrid);
-        // The grid to be resolved
         assertEquals(81, grillesCrees.grilleAResoudre().length);
-        int countForToBeResolvedGrid = 0;
-        for (int value : grillesCrees.grilleAResoudre()) {
-            if (value == 0) countForToBeResolvedGrid++;
-        }
+        long countForToBeResolvedGrid =
+                Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
         assertNotEquals(0, countForToBeResolvedGrid);
-        // The possibilities
-        assertTrue(
-                grillesCrees.pourcentageDesPossibilites() >= 0
-                        && grillesCrees.pourcentageDesPossibilites() <= 100,
-                "The possibilities must be between 0 and 100 for level : " + level);
     }
 
-    /**
-     * Tests grid generation for different difficulty levels. Introduces a 600ms delay when the
-     * level changes to simulate processing time.
-     *
-     * @param level The difficulty level.
-     */
     @ParameterizedTest
     @ValueSource(ints = {1, 1, 2, 2, 3, 3})
     void givenValidLevel_whenCreateGridsNormally_thenGridsGeneratedSuccessfully(int level) {
-        GrillesCrees grillesCrees = GRID_MASTER_NORMALLY.creerLesGrilles(level);
+        GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level);
         assertNotNull(grillesCrees);
         assertNotNull(grillesCrees.grilleResolue());
         assertNotNull(grillesCrees.grilleAResoudre());
-        // The resolved grid
+
         assertEquals(81, grillesCrees.grilleResolue().length);
-        int countForResolvedGrid = 0;
-        for (int value : grillesCrees.grilleResolue()) {
-            if (value == 0) countForResolvedGrid++;
-        }
+        long countForResolvedGrid =
+                Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
         assertEquals(0, countForResolvedGrid);
-        // The grid to be resolved
+
         assertEquals(81, grillesCrees.grilleAResoudre().length);
-        int countForToBeResolvedGrid = 0;
-        for (int value : grillesCrees.grilleAResoudre()) {
-            if (value == 0) countForToBeResolvedGrid++;
-        }
+        long countForToBeResolvedGrid =
+                Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
         assertNotEquals(0, countForToBeResolvedGrid);
-        // The possibilities
+
         assertTrue(
                 grillesCrees.pourcentageDesPossibilites() >= 0
                         && grillesCrees.pourcentageDesPossibilites() <= 100,
                 "The possibilities must be between 0 and 100 for level : " + level);
-        if (gridMasterNormallyLastLevel != level) {
-            gridMasterNormallyLastLevel = level;
+
+        if (gridMasterLastLevel != level) {
+            gridMasterLastLevel = level;
             Awaitility.await()
                     .atMost(650, TimeUnit.MILLISECONDS)
                     .pollDelay(600, TimeUnit.MILLISECONDS)
@@ -138,7 +116,7 @@ class GridMasterUTest {
                     2, 8, 7, 4, 1, 9, 6, 3, 5,
                     3, 4, 5, 2, 8, 6, 0, 0, 9
                 };
-        int[] result = iGridMaster.resoudreLaGrille(toBeResolvedGrid);
+        int[] result = gridMaster.resoudreLaGrille(toBeResolvedGrid);
         assertEquals(0, result[0]);
         assertEquals(0, result[1]);
         assertArrayEquals(
@@ -170,17 +148,11 @@ class GridMasterUTest {
                     2, 0, 7, 4, 1, 9, 6, 3, 0,
                     0, 4, 5, 2, 8, 6, 0, 8, 0
                 };
-        int[] result = iGridMaster.resoudreLaGrille(toBeResolvedGrid);
+        int[] result = gridMaster.resoudreLaGrille(toBeResolvedGrid);
         assertEquals(-1, result[0]);
         assertEquals(0, result[1]);
     }
 
-    /**
-     * Generate a grid anyway after 1s if the possibilities per level cannot be reached
-     *
-     * @param level The level that cannot reach his possibilities
-     * @implNote This test duration is minimum 3 seconds (one per level)
-     */
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void givenImpossiblePossibilitiesForLevels_whenCreateGrids_thenGridsGeneratedAnyway(int level) {
@@ -203,21 +175,17 @@ class GridMasterUTest {
         assertNotNull(grillesCrees);
         assertNotNull(grillesCrees.grilleResolue());
         assertNotNull(grillesCrees.grilleAResoudre());
-        // The resolved grid
+
         assertEquals(81, grillesCrees.grilleResolue().length);
-        int countForResolvedGrid = 0;
-        for (int value : grillesCrees.grilleResolue()) {
-            if (value == 0) countForResolvedGrid++;
-        }
+        long countForResolvedGrid =
+                Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
         assertEquals(0, countForResolvedGrid);
-        // The grid to be resolved
+
         assertEquals(81, grillesCrees.grilleAResoudre().length);
-        int countForToBeResolvedGrid = 0;
-        for (int value : grillesCrees.grilleAResoudre()) {
-            if (value == 0) countForToBeResolvedGrid++;
-        }
+        long countForToBeResolvedGrid =
+                Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
         assertNotEquals(0, countForToBeResolvedGrid);
-        // The possibilities
+
         assertTrue(
                 grillesCrees.pourcentageDesPossibilites() >= 0
                         && grillesCrees.pourcentageDesPossibilites() <= 100,
