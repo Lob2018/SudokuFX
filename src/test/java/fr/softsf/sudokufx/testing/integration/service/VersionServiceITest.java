@@ -18,6 +18,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
@@ -38,8 +39,6 @@ import static org.mockito.Mockito.*;
 
 @ExtendWith(ApplicationExtension.class)
 class VersionServiceITest {
-    private static final String GITHUB_LINK_TO_REPOSITORY_RELEASES =
-            "https://github.com/Lob2018/SudokuFX/releases";
     private static final String JSON =
             """
             [
@@ -94,7 +93,9 @@ class VersionServiceITest {
     void givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue() throws Exception {
         when(mockResponse.statusCode()).thenReturn(200);
         when(mockResponse.body()).thenReturn("[]");
-        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+        when(mockHttpClient.send(
+                        any(HttpRequest.class),
+                        ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
                 new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
@@ -102,7 +103,9 @@ class VersionServiceITest {
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
         verify(mockHttpClient, times(1))
-                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+                .send(
+                        any(HttpRequest.class),
+                        ArgumentMatchers.<HttpResponse.BodyHandler<String>>any());
         assertTrue(
                 logWatcher
                         .list
@@ -116,7 +119,9 @@ class VersionServiceITest {
     void givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue(int httpStatusCode)
             throws IOException, InterruptedException, ExecutionException {
         when(mockResponse.statusCode()).thenReturn(httpStatusCode);
-        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+        when(mockHttpClient.send(
+                        any(HttpRequest.class),
+                        ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
                 new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
@@ -124,7 +129,9 @@ class VersionServiceITest {
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
         verify(mockHttpClient, times(1))
-                .send(Mockito.any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+                .send(
+                        any(HttpRequest.class),
+                        ArgumentMatchers.<HttpResponse.BodyHandler<String>>any());
         assertTrue(
                 logWatcher
                         .list
@@ -154,7 +161,8 @@ class VersionServiceITest {
                     when(mockResponse.statusCode()).thenReturn(200);
                     when(mockResponse.body()).thenReturn(jsonResponse);
                     when(mockHttpClient.send(
-                                    any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                                    any(HttpRequest.class),
+                                    ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                             .thenReturn(mockResponse);
                     Task<Boolean> versionCheckTask =
                             new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
@@ -211,7 +219,9 @@ class VersionServiceITest {
         when(mockResponse.statusCode()).thenReturn(200);
         String jsonResponse = String.format(JSON, onLineVersion);
         when(mockResponse.body()).thenReturn(jsonResponse);
-        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+        when(mockHttpClient.send(
+                        any(HttpRequest.class),
+                        ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
                 new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
@@ -219,7 +229,9 @@ class VersionServiceITest {
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
         verify(mockHttpClient, times(1))
-                .send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class));
+                .send(
+                        any(HttpRequest.class),
+                        ArgumentMatchers.<HttpResponse.BodyHandler<String>>any());
         String message = logWatcher.list.getFirst().getFormattedMessage();
         switch (onLineVersion) {
             case "vv.v.v" -> {
@@ -241,7 +253,9 @@ class VersionServiceITest {
             throws Exception {
         when(mockResponse.statusCode()).thenReturn(200);
         when(mockResponse.body()).thenReturn("{ invalid json }"); // JSON invalide
-        when(mockHttpClient.send(any(), any(HttpResponse.BodyHandler.class)))
+        when(mockHttpClient.send(
+                        any(HttpRequest.class),
+                        ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                 .thenReturn(mockResponse);
         VersionService service = new VersionService(mockHttpClient, new ObjectMapper());
         Task<Boolean> task = service.checkLatestVersion();
