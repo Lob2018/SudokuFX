@@ -11,17 +11,17 @@ import fr.softsf.sudokufx.common.enums.OsName;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class OsNameUTest {
+class OsNameUTest {
 
     private String originalOsName;
 
     @BeforeEach
-    public void saveOriginalOsName() {
+    void saveOriginalOsName() {
         originalOsName = System.getProperty("os.name");
     }
 
     @AfterEach
-    public void restoreOriginalOsName() {
+    void restoreOriginalOsName() {
         if (originalOsName != null) {
             System.setProperty("os.name", originalOsName);
         } else {
@@ -30,36 +30,36 @@ public class OsNameUTest {
     }
 
     @Test
-    public void givenWindowsOsName_whenDetect_thenReturnWindows() {
+    void givenWindowsOsName_whenDetect_thenReturnWindows() {
         System.setProperty("os.name", "Windows 10");
         assertEquals(OsName.WINDOWS, OsName.detect());
     }
 
     @Test
-    public void givenLinuxOsName_whenDetect_thenReturnLinux() {
+    void givenLinuxOsName_whenDetect_thenReturnLinux() {
         System.setProperty("os.name", "Linux");
         assertEquals(OsName.LINUX, OsName.detect());
     }
 
     @Test
-    public void givenMacOsName_whenDetect_thenReturnMac() {
+    void givenMacOsName_whenDetect_thenReturnMac() {
         System.setProperty("os.name", "Mac OS X");
         assertEquals(OsName.MAC, OsName.detect());
     }
 
     @Test
-    public void givenBlankOsName_whenDetect_thenThrowIllegalArgumentException() {
+    void givenBlankOsName_whenDetect_thenThrowIllegalArgumentException() {
         System.setProperty("os.name", "");
         IllegalArgumentException thrown =
-                assertThrows(IllegalArgumentException.class, () -> OsName.detect());
+                assertThrows(IllegalArgumentException.class, OsName::detect);
         assertTrue(thrown.getMessage().contains("Operating system must not be null or blank"));
     }
 
     @Test
-    public void givenUnsupportedOsName_whenDetect_thenThrowIllegalArgumentException() {
+    void givenUnsupportedOsName_whenDetect_thenThrowIllegalArgumentException() {
         System.setProperty("os.name", "Solaris");
         IllegalArgumentException thrown =
-                assertThrows(IllegalArgumentException.class, () -> OsName.detect());
+                assertThrows(IllegalArgumentException.class, OsName::detect);
         assertTrue(thrown.getMessage().contains("Unsupported OS"));
     }
 }
