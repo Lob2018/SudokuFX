@@ -80,6 +80,7 @@ class FileSystemManagerUTest {
     }
 
     @Test
+    @SuppressWarnings("resource")
     void givenNullPointerException_whenFilesWalk_thenErrorHandled() {
         boolean result;
         try (MockedStatic<Files> mocked = Mockito.mockStatic(Files.class)) {
@@ -89,7 +90,7 @@ class FileSystemManagerUTest {
             result =
                     logWatcher
                             .list
-                            .get(logWatcher.list.size() - 1)
+                            .getLast()
                             .getFormattedMessage()
                             .contains("Test NullPointerException");
         }
@@ -120,11 +121,11 @@ class FileSystemManagerUTest {
             mockedFiles
                     .when(() -> Files.delete(mockPath))
                     .thenThrow(new IOException("Test IOException"));
-            assertTrue(fileSystemManager.deleteFile(mockPath) instanceof IOException);
+            assertInstanceOf(IOException.class, fileSystemManager.deleteFile(mockPath));
             assertTrue(
                     logWatcher
                             .list
-                            .get(logWatcher.list.size() - 1)
+                            .getLast()
                             .getFormattedMessage()
                             .contains("Failed to delete file"));
         }
