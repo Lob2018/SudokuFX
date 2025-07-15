@@ -5,25 +5,23 @@
  */
 package fr.softsf.sudokufx.service;
 
-import fr.softsf.sudokufx.common.exception.JakartaValidator;
-import jakarta.validation.ConstraintViolationException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.exception.JakartaValidator;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.repository.PlayerRepository;
-import org.springframework.validation.ValidationUtils;
+import jakarta.validation.ConstraintViolationException;
 
 /**
- * Service class providing business logic related to Player entities.
- * It interacts with the PlayerRepository to retrieve Player data,
- * uses IPlayerMapper to convert entities to PlayerDto objects,
- * and performs Jakarta Bean Validation on results.
+ * Service class providing business logic related to Player entities. It interacts with the
+ * PlayerRepository to retrieve Player data, uses IPlayerMapper to convert entities to PlayerDto
+ * objects, and performs Jakarta Bean Validation on results.
  *
- * <p>All method parameters and return values in this package are non-null by default,
- * thanks to the {@code @NonNullApi} annotation at the package level.
+ * <p>All method parameters and return values in this package are non-null by default, thanks to the
+ * {@code @NonNullApi} annotation at the package level.
  */
 @Service
 public class PlayerService {
@@ -32,7 +30,10 @@ public class PlayerService {
     private final IPlayerMapper playerMapper;
     private final JakartaValidator jakartaValidator;
 
-    public PlayerService(PlayerRepository playerRepository, IPlayerMapper playerMapper, JakartaValidator jakartaValidator) {
+    public PlayerService(
+            PlayerRepository playerRepository,
+            IPlayerMapper playerMapper,
+            JakartaValidator jakartaValidator) {
         this.playerRepository = playerRepository;
         this.playerMapper = playerMapper;
         this.jakartaValidator = jakartaValidator;
@@ -41,7 +42,8 @@ public class PlayerService {
     /**
      * Retrieves and validates the first player with a selected game.
      *
-     * <p>The player must have a non-null selected game and pass all Jakarta Bean Validation constraints.
+     * <p>The player must have a non-null selected game and pass all Jakarta Bean Validation
+     * constraints.
      *
      * @return a validated PlayerDto
      * @throws IllegalArgumentException if no matching player is found
