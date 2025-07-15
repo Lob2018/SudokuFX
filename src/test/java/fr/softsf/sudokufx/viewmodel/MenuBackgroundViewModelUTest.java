@@ -294,12 +294,12 @@ class MenuBackgroundViewModelUTest {
     void givenNullFile_whenHandleFileImageChooser_thenShowErrorToast() {
         MenuBackgroundViewModel myViewModel = spy(new MenuBackgroundViewModel());
         File nullFile = null;
-        ToasterVBox toaster = mock(ToasterVBox.class);
-        SpinnerGridPane spinner = mock(SpinnerGridPane.class);
-        GridPane sudokuFX = new GridPane();
+        ToasterVBox toasterMock = mock(ToasterVBox.class);
+        SpinnerGridPane spinnerMock = mock(SpinnerGridPane.class);
+        GridPane sudokuFXAlt = new GridPane();
         String expectedErrorKey = "toast.error.backgroundviewmodel.handlefileimagechooser";
         String expectedMessage = I18n.INSTANCE.getValue(expectedErrorKey);
-        myViewModel.handleFileImageChooser(nullFile, toaster, spinner, sudokuFX);
-        verify(toaster).addToast(expectedMessage, "", ToastLevels.ERROR, true);
+        myViewModel.handleFileImageChooser(nullFile, toasterMock, spinnerMock, sudokuFXAlt);
+        verify(toasterMock).addToast(expectedMessage, "", ToastLevels.ERROR, true);
     }
 }
