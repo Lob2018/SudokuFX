@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['whenshowhelp_5fthenalertisbuilt_5fanddisplayed_5fnonblocking_0',['whenShowHelp_thenAlertIsBuilt_andDisplayed_nonBlocking',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test.html#a2325e2f950836a809ec325b38427ed3e',1,'fr::softsf::sudokufx::viewmodel::HelpViewModelUTest']]],
-  ['windowsfolderfactory_1',['WindowsFolderFactory',['../interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory.html#ad73f952446ff7044e5cbb413dacb41eb',1,'fr::softsf::sudokufx::config::os::WindowsFolderFactory']]],
-  ['writethekeystore_2',['writeTheKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a9714968659205027206115325bebd480',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]]
+  ['validatealiasnotblank_0',['validateAliasNotBlank',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a1d981fbc5ac12da9cacc785a8052e318',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
+  ['validateorthrow_1',['validateOrThrow',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html#ab33fa674fbd5d36667f5f51583e82110',1,'fr::softsf::sudokufx::common::exception::JakartaValidator']]],
+  ['verifierlacoherenceentrelagrilleetlespossibilites_2',['verifierLaCoherenceEntreLaGrilleEtLesPossibilites',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a05e07a5ce8a23c6abf8864b8388e2e50',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
+  ['versionservice_3',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ace8bbe64b4a23afdb8d8bc96351a3b02',1,'fr::softsf::sudokufx::service::VersionService']]]
 ];

@@ -1,6 +1,5 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service =
 [
-    [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test" ],
     [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test" ],
     [ "[instance initializer]", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a7bbbbe83e28267f992d4d7105d9aeb58", null ],
     [ "cleanup", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a092733fdcf89ce618c4bbc1cc15bf74f", null ],

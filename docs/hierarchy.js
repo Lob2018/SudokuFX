@@ -49,6 +49,7 @@ var hierarchy =
     ] ],
     [ "fr.softsf.sudokufx.viewmodel.grid.GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.grid.GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.viewmodel.grid.GrillesCreesUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html", null ],
     [ "HBox", null, [
       [ "fr.softsf.sudokufx.view.component.PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html", [
         [ "fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.PossibilityStarsHBoxStub", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html", null ]
@@ -95,6 +96,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.common.interfaces.ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html", [
       [ "fr.softsf.sudokufx.view.SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.common.exception.JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html", null ],
     [ "JpaRepository", null, [
       [ "fr.softsf.sudokufx.repository.BackgroundRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_background_repository.html", null ],
       [ "fr.softsf.sudokufx.repository.GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", null ],
@@ -153,7 +155,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerLanguage.PlayerLanguageBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_1_1_player_language_builder.html", null ],
     [ "fr.softsf.sudokufx.service.PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html", null ],
-    [ "fr.softsf.sudokufx.testing.integration.service.PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_player_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.enums.ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", null ],
     [ "fr.softsf.sudokufx.testing.integration.common.enums.ScreenSizeITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test.html", null ],
     [ "fr.softsf.sudokufx.config.database.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", null ],

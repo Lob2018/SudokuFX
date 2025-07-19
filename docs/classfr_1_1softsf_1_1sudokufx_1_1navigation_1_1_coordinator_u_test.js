@@ -20,5 +20,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test =
     [ "fxmlLoader", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a7b781263e332eccc80b123d6c383d891", null ],
     [ "hostServices", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#acc7b9df90ce4151f4f981e00549c73ef", null ],
     [ "logWatcher", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a3275fd30982e40d2a1fa3e4edd5b7be0", null ],
+    [ "mocks", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a3026e26da593dabf9a21909fbb50e526", null ],
     [ "scene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a5231725b1f22cb345d48cf82e2eed86a", null ]
 ];

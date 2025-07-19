@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SudokuFX: src/test/java/fr/softsf/sudokufx/testing/integration/service/PlayerServiceUTest.java File Reference</title>
+<title>SudokuFX: src/test/java/fr/softsf/sudokufx/testing/unit/service/PlayerServiceUTest.java File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,13 +105,16 @@ $(function(){initNavTree('_player_service_u_test_8java.html',''); initResizable(
 <div class="contents">
 <div class="textblock"><code>import java.time.LocalDateTime;</code><br />
 <code>import java.util.List;</code><br />
+<code>import java.util.Set;</code><br />
 <code>import org.junit.jupiter.api.BeforeEach;</code><br />
 <code>import org.junit.jupiter.api.Test;</code><br />
+<code>import fr.softsf.sudokufx.common.exception.JakartaValidator;</code><br />
 <code>import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;</code><br />
 <code>import fr.softsf.sudokufx.dto.*;</code><br />
 <code>import fr.softsf.sudokufx.model.Player;</code><br />
 <code>import fr.softsf.sudokufx.repository.PlayerRepository;</code><br />
 <code>import fr.softsf.sudokufx.service.PlayerService;</code><br />
+<code>import jakarta.validation.ConstraintViolationException;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />
 <code>import org.mockito.Mockito.*;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -124,12 +127,12 @@ $(function(){initNavTree('_player_service_u_test_8java.html',''); initResizable(
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test.html">fr.softsf.sudokufx.testing.integration.service.PlayerServiceUTest</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_player_service_u_test.html">fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Packages</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html">fr.softsf.sudokufx.testing.integration.service</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service.html">fr.softsf.sudokufx.testing.unit.service</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -137,8 +140,8 @@ Packages</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li><li class="navelem"><a class="el" href="dir_97debbc39e3b917fca663601bb2b0709.html">java</a></li><li class="navelem"><a class="el" href="dir_8d7deeaf7546933b8f2dc85f32ff302b.html">fr</a></li><li class="navelem"><a class="el" href="dir_306a5b3cb699d06afc248376b3d7d66a.html">softsf</a></li><li class="navelem"><a class="el" href="dir_a649969fb0ce802377fa0d754848ffcd.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_8c4f7a55155647995fd1da6533383b17.html">testing</a></li><li class="navelem"><a class="el" href="dir_f7f1075d3ce4cc18cf0ed62a5e1b2887.html">integration</a></li><li class="navelem"><a class="el" href="dir_3049222cd6dfd9b6a83aa7f467061c73.html">service</a></li><li class="navelem"><a class="el" href="_player_service_u_test_8java.html">PlayerServiceUTest.java</a></li>
-    <li class="footer">Generated on Tue Jul 8 2025 15:01:01 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li><li class="navelem"><a class="el" href="dir_97debbc39e3b917fca663601bb2b0709.html">java</a></li><li class="navelem"><a class="el" href="dir_8d7deeaf7546933b8f2dc85f32ff302b.html">fr</a></li><li class="navelem"><a class="el" href="dir_306a5b3cb699d06afc248376b3d7d66a.html">softsf</a></li><li class="navelem"><a class="el" href="dir_a649969fb0ce802377fa0d754848ffcd.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_8c4f7a55155647995fd1da6533383b17.html">testing</a></li><li class="navelem"><a class="el" href="dir_85131fc9f14a9f8190b09936acd1f60e.html">unit</a></li><li class="navelem"><a class="el" href="dir_a0026d2946d80a6321e74308f9ac091c.html">service</a></li><li class="navelem"><a class="el" href="_player_service_u_test_8java.html">PlayerServiceUTest.java</a></li>
+    <li class="footer">Generated on Sat Jul 19 2025 18:57:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

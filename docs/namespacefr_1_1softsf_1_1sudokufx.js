@@ -32,6 +32,7 @@ var namespacefr_1_1softsf_1_1sudokufx =
           [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception" ],
           [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util" ]
         ] ],
+        [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service" ],
         [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel" ]
       ] ]
     ] ],

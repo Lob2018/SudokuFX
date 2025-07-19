@@ -1,10 +1,11 @@
 var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master =
 [
+    [ "GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a6fb68710cd31ac8edf6531a93d7c8db8", null ],
     [ "cacherLesCases", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aedafc76e589c715c380e2732e0ff04d2", null ],
     [ "choisirValeurAleatoire", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3f17ab078f894717a1f3dfaffed0b987", null ],
     [ "compterBits", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a1e8e128a955e4a42b8e690c3c3f0fd9c", null ],
-    [ "creerLesGrilles", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#ae3a11b5765fb2b838b0848557e648274", null ],
-    [ "creerLesGrilles", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#ae3a11b5765fb2b838b0848557e648274", null ],
+    [ "creerLesGrilles", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af9f6b678d373391cd629f1ab2973b775", null ],
+    [ "creerLesGrilles", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af9f6b678d373391cd629f1ab2973b775", null ],
     [ "dureeEnMs", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aee57e1ea56d413431a806492e5bfa40f", null ],
     [ "eliminerPossibilite", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeb3e9bacbc9f3e23515e88a3c887f78e", null ],
     [ "genererLaGrilleAResoudre", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a4ee8cc0d8a933568aeb12ca14f8ab649", null ],
@@ -34,6 +35,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master =
     [ "DIMENSION", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a1770bd06a646ed63872568ce3f17817e", null ],
     [ "FACILE_MIN_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa02cf3b663a01c00a69643a5f7716eb7", null ],
     [ "FACILE_MOY_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a37a7890a0e1a55e30fbff603bf26c06a", null ],
+    [ "jakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a87cce49067a5dce9e0fa26ca41c7a684", null ],
     [ "MOYEN_MAX_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af5574e4e6eb1ae83aed307a79473e897", null ],
     [ "MOYEN_MIN_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#afe2ab64d30be20986a6999abcc8ce582", null ],
     [ "MOYEN_MOY_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a49db1430ceaaab842beb5cabda355b96", null ],

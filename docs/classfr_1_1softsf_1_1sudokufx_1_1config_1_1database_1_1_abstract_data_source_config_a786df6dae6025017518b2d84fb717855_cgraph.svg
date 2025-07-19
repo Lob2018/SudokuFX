@@ -77,7 +77,7 @@ var sectionId = 'dynsection-2';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#acf5476219fa6336c29a1f5966a6d9073" target="_top" xlink:title="Creates and configures the main DataSource for the application.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#acf5476219fa6336c29a1f5966a6d9073" target="_top" xlink:title="Creates and configures the main HikariDataSource for the application.">
 <polygon fill="white" stroke="#666666" points="414.5,-32 203.5,-32 203.5,0 414.5,0 414.5,-32"/>
 <text text-anchor="start" x="211.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.database.</text>
 <text text-anchor="middle" x="309" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractDataSourceConfig.hikariDataSource</text>
@@ -90,6 +90,15 @@ var sectionId = 'dynsection-2';
 <g id="a_edge2_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M167.88,-16C175.72,-16 183.75,-16 191.82,-16"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="191.72,-19.5 201.72,-16 191.72,-12.5 191.72,-19.5"/>
+</a>
+</g>
+</g>
+<!-- Node2&#45;&gt;Node2 -->
+<g id="edge4_Node000002_Node000002" class="edge">
+<title>Node2&#45;&gt;Node2</title>
+<g id="a_edge4_Node000002_Node000002"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M268.79,-32.44C261.28,-41.58 274.68,-50 309,-50 328.03,-50 340.63,-47.41 346.8,-43.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="350.19,-44.44 348.89,-33.92 343.35,-42.95 350.19,-44.44"/>
 </a>
 </g>
 </g>

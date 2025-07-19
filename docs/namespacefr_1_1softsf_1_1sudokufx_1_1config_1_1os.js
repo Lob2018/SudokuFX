@@ -6,5 +6,6 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os =
     [ "OsFolderFactoryManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test" ],
     [ "OsFolderInitializer", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer" ],
     [ "OsFolderInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test" ],
-    [ "WindowsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory" ]
+    [ "WindowsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory" ],
+    [ "OsInitializedFolders", "namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a90a7316060415faf8dd0b49e12e422fd", null ]
 ];

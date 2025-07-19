@@ -1,7 +1,9 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest" name="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,1937,260,2519"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="14,124,252,1857"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,1857,136,1920,130,1920,130,1857"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="94,5,172,75"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="136,90,136,124,130,124,130,90"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,2064,262,2587"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="15,229,253,2000"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,2000,137,2047,131,2047,131,2000"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,51,84,120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="52,135,60,230,54,230,46,135"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="108,5,339,165"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="219,165,215,213,210,212,214,165"/>
 </map>

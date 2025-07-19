@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 828;
+var viewWidth = 1032;
 var viewHeight = 120;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,10 +59,10 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="395.75,-112 268.75,-112 268.75,-68 395.75,-68 395.75,-112"/>
-<text text-anchor="start" x="276.75" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
-<text text-anchor="start" x="276.75" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/viewmodel/grid</text>
-<text text-anchor="middle" x="332.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/GridViewModel.java</text>
+<polygon fill="#999999" stroke="#666666" points="491.75,-112 364.75,-112 364.75,-68 491.75,-68 491.75,-112"/>
+<text text-anchor="start" x="372.75" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
+<text text-anchor="start" x="372.75" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/viewmodel/grid</text>
+<text text-anchor="middle" x="428.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/GridViewModel.java</text>
 </a>
 </g>
 </g>
@@ -79,8 +79,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M268.33,-78.6C213.74,-68.95 133.45,-52.93 65.25,-32 63.47,-31.45 61.66,-30.86 59.85,-30.23"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="61.55,-27.13 50.96,-26.9 59.1,-33.69 61.55,-27.13"/>
+<path fill="none" stroke="#63b8ff" d="M364.36,-83.44C291.11,-76.05 167.91,-60.46 65.25,-32 63.41,-31.49 61.54,-30.92 59.67,-30.3"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="61.11,-27.1 50.51,-26.94 58.7,-33.67 61.11,-27.1"/>
 </a>
 </g>
 </g>
@@ -98,8 +98,8 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M278.73,-67.59C254.29,-57.81 225.52,-46.31 201.6,-36.74"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="202.98,-33.52 192.39,-33.06 200.38,-40.02 202.98,-33.52"/>
+<path fill="none" stroke="#63b8ff" d="M364.58,-72.39C322.11,-61.31 266.25,-46.74 222.49,-35.32"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="223.38,-31.94 212.82,-32.8 221.61,-38.71 223.38,-31.94"/>
 </a>
 </g>
 </g>
@@ -117,8 +117,8 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M332.25,-67.79C332.25,-60.18 332.25,-51.52 332.25,-43.52"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="335.75,-43.64 332.25,-33.64 328.75,-43.64 335.75,-43.64"/>
+<path fill="none" stroke="#63b8ff" d="M399.71,-67.59C387.84,-58.7 374.07,-48.37 362.08,-39.37"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="364.22,-36.6 354.12,-33.4 360.02,-42.2 364.22,-36.6"/>
 </a>
 </g>
 </g>
@@ -136,8 +136,8 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M389.63,-67.59C416.08,-57.73 447.24,-46.1 473.02,-36.48"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="474.15,-39.8 482.3,-33.02 471.7,-33.24 474.15,-39.8"/>
+<path fill="none" stroke="#63b8ff" d="M457.09,-67.59C469.2,-58.61 483.27,-48.16 495.47,-39.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="497.22,-42.17 503.16,-33.4 493.04,-36.55 497.22,-42.17"/>
 </a>
 </g>
 </g>
@@ -147,7 +147,7 @@ var sectionId = 'dynsection-0';
 <g id="a_Node000006"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="820.38,-32 634.12,-32 634.12,0 820.38,0 820.38,-32"/>
 <text text-anchor="start" x="642.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
-<text text-anchor="middle" x="727.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster</text>
+<text text-anchor="middle" x="727.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrillesCrees</text>
 </a>
 </g>
 </g>
@@ -155,8 +155,27 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
 <g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M396.15,-77.35C459.81,-65.75 558.32,-47.79 631.36,-34.48"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="631.7,-37.98 640.91,-32.74 630.44,-31.09 631.7,-37.98"/>
+<path fill="none" stroke="#63b8ff" d="M492.03,-73.64C538.9,-62.35 602.77,-46.98 652.12,-35.09"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="652.68,-38.56 661.59,-32.81 651.04,-31.75 652.68,-38.56"/>
+</a>
+</g>
+</g>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1024.38,-32 838.12,-32 838.12,0 1024.38,0 1024.38,-32"/>
+<text text-anchor="start" x="846.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
+<text text-anchor="middle" x="931.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMaster</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge6_Node000001_Node000007" class="edge">
+<title>Node1&#45;&gt;Node7</title>
+<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M492.16,-80.01C568.98,-69.19 702.15,-50.35 826.62,-32.38"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="826.97,-35.86 836.37,-30.97 825.97,-28.93 826.97,-35.86"/>
 </a>
 </g>
 </g>

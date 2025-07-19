@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 424;
+var viewWidth = 563;
 var viewHeight = 1101;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,52 +59,52 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="none" points="272,-404 54.5,-404 54.5,0 272,0 272,-404"/>
-<text text-anchor="start" x="86.38" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="114.5" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayerUTest</text>
-<text text-anchor="start" x="60" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="68.5" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
-<text text-anchor="start" x="68.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
-<text text-anchor="start" x="58.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="68.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">void currentPlayerProperty</text>
-<text text-anchor="start" x="68.5" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shouldReturnObjectProperty()</text>
-<text text-anchor="start" x="58.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="68.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenException</text>
-<text text-anchor="start" x="68.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitializingPlayer</text>
-<text text-anchor="start" x="68.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogErrorIsProduced</text>
-<text text-anchor="start" x="68.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">_withoutCallingPlatformExit()</text>
-<text text-anchor="start" x="58.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="68.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullCurrentPlayer</text>
-<text text-anchor="start" x="68.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenConstructed_thenInitialize</text>
-<text text-anchor="start" x="68.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">Called()</text>
-<text text-anchor="start" x="58.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="68.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenSetCurrentPlayer</text>
-<text text-anchor="start" x="68.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenCalled_thenPlayerIsUpdated()</text>
-<text text-anchor="start" x="58.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="68.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidPlayer</text>
-<text text-anchor="start" x="68.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenConstructed_thenPlayer</text>
-<text text-anchor="start" x="68.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsLoaded()</text>
-<text text-anchor="start" x="58.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="68.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setup()</text>
-<text text-anchor="start" x="58.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="68.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tearDown()</text>
-<text text-anchor="start" x="60" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="68.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createPlayerDto</text>
-<text text-anchor="start" x="68.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Long playerId, String</text>
-<text text-anchor="start" x="68.5" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerName, Boolean isSelected,</text>
-<text text-anchor="start" x="68.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PlayerLanguageDto playerLanguage,</text>
-<text text-anchor="start" x="68.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BackgroundDto background, MenuDto menu)</text>
-<text text-anchor="start" x="60" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="68.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundDto defaultBackground()</text>
-<text text-anchor="start" x="60" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="68.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuDto defaultMenu()</text>
-<text text-anchor="start" x="60" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="68.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageDto default</text>
-<text text-anchor="start" x="68.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage()</text>
-<polygon fill="#666666" stroke="#666666" points="54.5,-374 54.5,-374 272,-374 272,-374 54.5,-374"/>
-<polygon fill="#666666" stroke="#666666" points="54.5,-346 54.5,-346 66.5,-346 66.5,-346 54.5,-346"/>
-<polygon fill="#666666" stroke="#666666" points="66.5,-346 66.5,-346 272,-346 272,-346 66.5,-346"/>
-<polygon fill="none" stroke="#666666" points="54.5,0 54.5,-404 272,-404 272,0 54.5,0"/>
+<polygon fill="#999999" stroke="none" points="368,-404 150.5,-404 150.5,0 368,0 368,-404"/>
+<text text-anchor="start" x="182.38" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="210.5" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayerUTest</text>
+<text text-anchor="start" x="156" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="164.5" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
+<text text-anchor="start" x="164.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
+<text text-anchor="start" x="154.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="164.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">void currentPlayerProperty</text>
+<text text-anchor="start" x="164.5" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shouldReturnObjectProperty()</text>
+<text text-anchor="start" x="154.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="164.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenException</text>
+<text text-anchor="start" x="164.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitializingPlayer</text>
+<text text-anchor="start" x="164.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogErrorIsProduced</text>
+<text text-anchor="start" x="164.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">_withoutCallingPlatformExit()</text>
+<text text-anchor="start" x="154.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="164.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullCurrentPlayer</text>
+<text text-anchor="start" x="164.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenConstructed_thenInitialize</text>
+<text text-anchor="start" x="164.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">Called()</text>
+<text text-anchor="start" x="154.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="164.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenSetCurrentPlayer</text>
+<text text-anchor="start" x="164.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenCalled_thenPlayerIsUpdated()</text>
+<text text-anchor="start" x="154.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="164.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidPlayer</text>
+<text text-anchor="start" x="164.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenConstructed_thenPlayer</text>
+<text text-anchor="start" x="164.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsLoaded()</text>
+<text text-anchor="start" x="154.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="164.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setup()</text>
+<text text-anchor="start" x="154.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="164.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tearDown()</text>
+<text text-anchor="start" x="156" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="164.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createPlayerDto</text>
+<text text-anchor="start" x="164.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Long playerId, String</text>
+<text text-anchor="start" x="164.5" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerName, Boolean isSelected,</text>
+<text text-anchor="start" x="164.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PlayerLanguageDto playerLanguage,</text>
+<text text-anchor="start" x="164.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BackgroundDto background, MenuDto menu)</text>
+<text text-anchor="start" x="156" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="164.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundDto defaultBackground()</text>
+<text text-anchor="start" x="156" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="164.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuDto defaultMenu()</text>
+<text text-anchor="start" x="156" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="164.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageDto default</text>
+<text text-anchor="start" x="164.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage()</text>
+<polygon fill="#666666" stroke="#666666" points="150.5,-374 150.5,-374 368,-374 368,-374 150.5,-374"/>
+<polygon fill="#666666" stroke="#666666" points="150.5,-346 150.5,-346 162.5,-346 162.5,-346 150.5,-346"/>
+<polygon fill="#666666" stroke="#666666" points="162.5,-346 162.5,-346 368,-346 368,-346 162.5,-346"/>
+<polygon fill="none" stroke="#666666" points="150.5,0 150.5,-404 368,-404 368,0 150.5,0"/>
 </a>
 </g>
 </g>
@@ -112,22 +112,20 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" target="_top" xlink:title="Service class providing business logic related to Player entities.">
-<polygon fill="white" stroke="none" points="244.62,-840 81.88,-840 81.88,-708 244.62,-708 244.62,-840"/>
-<text text-anchor="start" x="106.25" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="start" x="132.88" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService</text>
-<text text-anchor="start" x="161.75" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="85.88" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="95.88" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService(PlayerRepository</text>
-<text text-anchor="start" x="95.88" y="-770.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerRepository, IPlayerMapper</text>
-<text text-anchor="start" x="95.88" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerMapper)</text>
-<text text-anchor="start" x="85.88" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="95.88" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getPlayer()</text>
-<text text-anchor="start" x="87.38" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="95.88" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto validatePlayer</text>
-<text text-anchor="start" x="95.88" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">NameOrThrow(PlayerDto dto)</text>
-<polygon fill="#666666" stroke="#666666" points="81.88,-810 81.88,-810 244.62,-810 244.62,-810 81.88,-810"/>
-<polygon fill="#666666" stroke="#666666" points="81.88,-794 81.88,-794 244.62,-794 244.62,-794 81.88,-794"/>
-<polygon fill="none" stroke="#666666" points="81.88,-708 81.88,-840 244.62,-840 244.62,-708 81.88,-708"/>
+<polygon fill="white" stroke="none" points="340.62,-824 177.88,-824 177.88,-708 340.62,-708 340.62,-824"/>
+<text text-anchor="start" x="202.25" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<text text-anchor="start" x="228.88" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService</text>
+<text text-anchor="start" x="257.75" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="181.88" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="191.88" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService(PlayerRepository</text>
+<text text-anchor="start" x="191.88" y="-754.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerRepository, IPlayerMapper</text>
+<text text-anchor="start" x="191.88" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerMapper, JakartaValidator</text>
+<text text-anchor="start" x="191.88" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00"> jakartaValidator)</text>
+<text text-anchor="start" x="181.88" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="191.88" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getPlayer()</text>
+<polygon fill="#666666" stroke="#666666" points="177.88,-794 177.88,-794 340.62,-794 340.62,-794 177.88,-794"/>
+<polygon fill="#666666" stroke="#666666" points="177.88,-778 177.88,-778 340.62,-778 340.62,-778 177.88,-778"/>
+<polygon fill="none" stroke="#666666" points="177.88,-708 177.88,-824 340.62,-824 340.62,-708 177.88,-708"/>
 </a>
 </g>
 </g>
@@ -135,70 +133,70 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M158.38,-708.2C157.39,-692.44 156.5,-675.62 156,-660 153.45,-580.55 154.01,-493.31 155.63,-416.53"/>
-<polygon fill="none" stroke="#63b8ff" points="155.63,-416.71 151.76,-410.62 155.89,-404.71 159.76,-410.8 155.63,-416.71"/>
+<path fill="none" stroke="#63b8ff" d="M254.6,-708.09C253.53,-692.51 252.54,-675.61 252,-660 249.26,-580.56 249.78,-493.31 251.42,-416.54"/>
+<polygon fill="none" stroke="#63b8ff" points="251.41,-416.71 247.55,-410.63 251.68,-404.72 255.55,-410.8 251.41,-416.71"/>
 </a>
 </g>
-<text text-anchor="middle" x="200.62" y="-552.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerServiceMock</text>
+<text text-anchor="middle" x="296.62" y="-552.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerServiceMock</text>
 </g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html" target="_top" xlink:title="Component responsible for holding the current PlayerDto instance in memory.">
-<polygon fill="white" stroke="none" points="416.12,-660 254.38,-660 254.38,-452 416.12,-452 416.12,-660"/>
-<text text-anchor="start" x="258.38" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="299.62" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayer</text>
-<text text-anchor="start" x="262.06" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="272.75" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
-<text text-anchor="start" x="272.75" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; PlayerDto &gt; currentPlayer</text>
-<text text-anchor="start" x="262.06" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="272.75" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="260.56" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="272.75" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayer(PlayerService</text>
-<text text-anchor="start" x="272.75" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerService)</text>
-<text text-anchor="start" x="260.56" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="272.75" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; PlayerDto</text>
-<text text-anchor="start" x="272.75" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; currentPlayerProperty()</text>
-<text text-anchor="start" x="260.56" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="272.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getCurrentPlayer()</text>
-<text text-anchor="start" x="260.56" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="272.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setCurrentPlayer</text>
-<text text-anchor="start" x="272.75" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerDto dto)</text>
-<text text-anchor="start" x="260.56" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="272.75" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
-<text text-anchor="start" x="262.06" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="272.75" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initializePlayer()</text>
-<polygon fill="#666666" stroke="#666666" points="254.38,-630 254.38,-630 416.12,-630 416.12,-630 254.38,-630"/>
-<polygon fill="#666666" stroke="#666666" points="254.38,-586 254.38,-586 270.75,-586 270.75,-586 254.38,-586"/>
-<polygon fill="#666666" stroke="#666666" points="270.75,-586 270.75,-586 416.12,-586 416.12,-586 270.75,-586"/>
-<polygon fill="none" stroke="#666666" points="254.38,-452 254.38,-660 416.12,-660 416.12,-452 254.38,-452"/>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html" target="_top" xlink:title="Component responsible for holding the current PlayerDto instance in memory.">
+<polygon fill="white" stroke="none" points="512.12,-660 350.38,-660 350.38,-452 512.12,-452 512.12,-660"/>
+<text text-anchor="start" x="354.38" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="395.62" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayer</text>
+<text text-anchor="start" x="358.06" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="368.75" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
+<text text-anchor="start" x="368.75" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; PlayerDto &gt; currentPlayer</text>
+<text text-anchor="start" x="358.06" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="368.75" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="356.56" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="368.75" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayer(PlayerService</text>
+<text text-anchor="start" x="368.75" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerService)</text>
+<text text-anchor="start" x="356.56" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="368.75" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; PlayerDto</text>
+<text text-anchor="start" x="368.75" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; currentPlayerProperty()</text>
+<text text-anchor="start" x="356.56" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="368.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getCurrentPlayer()</text>
+<text text-anchor="start" x="356.56" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="368.75" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setCurrentPlayer</text>
+<text text-anchor="start" x="368.75" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerDto dto)</text>
+<text text-anchor="start" x="356.56" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="368.75" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
+<text text-anchor="start" x="358.06" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="368.75" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initializePlayer()</text>
+<polygon fill="#666666" stroke="#666666" points="350.38,-630 350.38,-630 512.12,-630 512.12,-630 350.38,-630"/>
+<polygon fill="#666666" stroke="#666666" points="350.38,-586 350.38,-586 366.75,-586 366.75,-586 350.38,-586"/>
+<polygon fill="#666666" stroke="#666666" points="366.75,-586 366.75,-586 512.12,-586 512.12,-586 366.75,-586"/>
+<polygon fill="none" stroke="#666666" points="350.38,-452 350.38,-660 512.12,-660 512.12,-452 350.38,-452"/>
 </a>
 </g>
 </g>
-<!-- Node2&#45;&gt;Node6 -->
-<g id="edge6_Node000006_Node000002" class="edge">
-<title>Node2&#45;&gt;Node6</title>
-<g id="a_edge6_Node000006_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M214.86,-708.19C224.89,-695.59 235.67,-682.06 246.51,-668.44"/>
-<polygon fill="none" stroke="#63b8ff" points="246.36,-668.62 246.97,-661.44 253.84,-659.24 253.23,-666.42 246.36,-668.62"/>
+<!-- Node2&#45;&gt;Node7 -->
+<g id="edge7_Node000007_Node000002" class="edge">
+<title>Node2&#45;&gt;Node7</title>
+<g id="a_edge7_Node000007_Node000002"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M306.25,-708.16C317.51,-694.55 329.9,-679.56 342.37,-664.48"/>
+<polygon fill="none" stroke="#63b8ff" points="342.35,-664.51 343.09,-657.34 350,-655.26 349.25,-662.43 342.35,-664.51"/>
 </a>
 </g>
-<text text-anchor="middle" x="266.47" y="-680.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerService</text>
+<text text-anchor="middle" x="362.47" y="-680.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerService</text>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="136.5,-978 0,-978 0,-902 136.5,-902 136.5,-978"/>
-<text text-anchor="start" x="6" y="-964.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="30.75" y="-952.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerRepository</text>
-<text text-anchor="start" x="66.75" y="-936.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="4" y="-920.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-920.5" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; Player &gt; findSelected</text>
-<text text-anchor="start" x="14" y="-908.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerWithSelectedGame()</text>
-<polygon fill="#666666" stroke="#666666" points="0,-948 0,-948 136.5,-948 136.5,-948 0,-948"/>
-<polygon fill="#666666" stroke="#666666" points="0,-932 0,-932 136.5,-932 136.5,-932 0,-932"/>
-<polygon fill="none" stroke="#666666" points="0,-902 0,-978 136.5,-978 136.5,-902 0,-902"/>
+<polygon fill="white" stroke="none" points="136.5,-970 0,-970 0,-894 136.5,-894 136.5,-970"/>
+<text text-anchor="start" x="6" y="-956.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="30.75" y="-944.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerRepository</text>
+<text text-anchor="start" x="66.75" y="-928.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="4" y="-912.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-912.5" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; Player &gt; findSelected</text>
+<text text-anchor="start" x="14" y="-900.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerWithSelectedGame()</text>
+<polygon fill="#666666" stroke="#666666" points="0,-940 0,-940 136.5,-940 136.5,-940 0,-940"/>
+<polygon fill="#666666" stroke="#666666" points="0,-924 0,-924 136.5,-924 136.5,-924 0,-924"/>
+<polygon fill="none" stroke="#666666" points="0,-894 0,-970 136.5,-970 136.5,-894 0,-894"/>
 </a>
 </g>
 </g>
@@ -206,11 +204,11 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M89.57,-902.2C98.4,-886.94 108.99,-868.66 119.36,-850.78"/>
-<polygon fill="none" stroke="#63b8ff" points="119.29,-850.88 118.84,-843.69 125.31,-840.5 125.76,-847.7 119.29,-850.88"/>
+<path fill="none" stroke="#63b8ff" d="M111.11,-894.2C132.38,-875.94 158.71,-853.33 183.24,-832.26"/>
+<polygon fill="none" stroke="#63b8ff" points="183.11,-832.37 185.06,-825.43 192.22,-824.56 190.27,-831.5 183.11,-832.37"/>
 </a>
 </g>
-<text text-anchor="middle" x="152.65" y="-860.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerRepository</text>
+<text text-anchor="middle" x="209.23" y="-844.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerRepository</text>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
@@ -231,8 +229,8 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node4&#45;&gt;Node3</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M68.25,-1017.91C68.25,-1004.79 68.25,-990.44 68.25,-977.72"/>
-<polygon fill="none" stroke="#63b8ff" points="64.75,-1017.53 68.25,-1027.53 71.75,-1017.53 64.75,-1017.53"/>
+<path fill="none" stroke="#63b8ff" d="M68.25,-1017.82C68.25,-1002.28 68.25,-984.81 68.25,-969.79"/>
+<polygon fill="none" stroke="#63b8ff" points="64.75,-1017.74 68.25,-1027.74 71.75,-1017.74 64.75,-1017.74"/>
 </a>
 </g>
 </g>
@@ -240,19 +238,19 @@ var sectionId = 'dynsection-0';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" target="_top" xlink:title="Mapper interface for converting between Player entity and PlayerDto data transfer object.">
-<polygon fill="white" stroke="none" points="363.75,-992 154.75,-992 154.75,-888 363.75,-888 363.75,-992"/>
-<text text-anchor="start" x="158.75" y="-978.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
-<text text-anchor="start" x="227.75" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPlayerMapper</text>
-<text text-anchor="start" x="257.75" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="173.69" y="-934.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="198.62" y="-934.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player mapPlayerDtoToPlayer</text>
-<text text-anchor="start" x="198.62" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerDto dto)</text>
-<text text-anchor="start" x="173.69" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="198.62" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto mapPlayerToDto</text>
-<text text-anchor="start" x="198.62" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Player player)</text>
-<polygon fill="#666666" stroke="#666666" points="154.75,-962 154.75,-962 363.75,-962 363.75,-962 154.75,-962"/>
-<polygon fill="#666666" stroke="#666666" points="154.75,-946 154.75,-946 363.75,-946 363.75,-946 154.75,-946"/>
-<polygon fill="none" stroke="#666666" points="154.75,-888 154.75,-992 363.75,-992 363.75,-888 154.75,-888"/>
+<polygon fill="white" stroke="none" points="363.75,-984 154.75,-984 154.75,-880 363.75,-880 363.75,-984"/>
+<text text-anchor="start" x="158.75" y="-970.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
+<text text-anchor="start" x="227.75" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPlayerMapper</text>
+<text text-anchor="start" x="257.75" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="173.69" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="198.62" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player mapPlayerDtoToPlayer</text>
+<text text-anchor="start" x="198.62" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerDto dto)</text>
+<text text-anchor="start" x="173.69" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="198.62" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto mapPlayerToDto</text>
+<text text-anchor="start" x="198.62" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Player player)</text>
+<polygon fill="#666666" stroke="#666666" points="154.75,-954 154.75,-954 363.75,-954 363.75,-954 154.75,-954"/>
+<polygon fill="#666666" stroke="#666666" points="154.75,-938 154.75,-938 363.75,-938 363.75,-938 154.75,-938"/>
+<polygon fill="none" stroke="#666666" points="154.75,-880 154.75,-984 363.75,-984 363.75,-880 154.75,-880"/>
 </a>
 </g>
 </g>
@@ -260,21 +258,55 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000002_Node000005" class="edge">
 <title>Node5&#45;&gt;Node2</title>
 <g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M229.4,-888.01C222.5,-876.23 215.02,-863.44 207.65,-850.86"/>
-<polygon fill="none" stroke="#63b8ff" points="207.74,-851.01 201.26,-847.85 201.68,-840.65 208.16,-843.81 207.74,-851.01"/>
+<path fill="none" stroke="#63b8ff" d="M259.25,-880.01C259.25,-866.26 259.25,-851.16 259.25,-836.58"/>
+<polygon fill="none" stroke="#63b8ff" points="259.25,-836.86 255.25,-830.86 259.25,-824.86 263.25,-830.86 259.25,-836.86"/>
 </a>
 </g>
-<text text-anchor="middle" x="249.25" y="-860.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerMapper</text>
+<text text-anchor="middle" x="291.5" y="-844.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerMapper</text>
 </g>
-<!-- Node6&#45;&gt;Node1 -->
-<g id="edge5_Node000001_Node000006" class="edge">
-<title>Node6&#45;&gt;Node1</title>
-<g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M285.04,-452.24C279.27,-440.43 273.24,-428.09 267.08,-415.49"/>
-<polygon fill="none" stroke="#63b8ff" points="267.05,-415.44 260.83,-411.8 261.79,-404.66 268.01,-408.29 267.05,-415.44"/>
+<!-- Node6 -->
+<g id="Node000006" class="node">
+<title>Node6</title>
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" target="_top" xlink:title="Spring component for validating objects using Jakarta Bean Validation.">
+<polygon fill="white" stroke="none" points="554.75,-992 381.75,-992 381.75,-872 554.75,-872 554.75,-992"/>
+<text text-anchor="start" x="385.75" y="-978.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.exception.</text>
+<text text-anchor="start" x="433.38" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">JakartaValidator</text>
+<text text-anchor="start" x="398.44" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="418.12" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Validator validator</text>
+<text text-anchor="start" x="398.44" y="-934.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="418.12" y="-934.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="396.94" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="418.12" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00">JakartaValidator(Validator</text>
+<text text-anchor="start" x="418.12" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validator)</text>
+<text text-anchor="start" x="396.94" y="-890.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="418.12" y="-890.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T validateOr</text>
+<text text-anchor="start" x="418.12" y="-878.5" font-family="Helvetica,sans-Serif" font-size="10.00">Throw(T obj)</text>
+<polygon fill="#666666" stroke="#666666" points="381.75,-962 381.75,-962 554.75,-962 554.75,-962 381.75,-962"/>
+<polygon fill="#666666" stroke="#666666" points="381.75,-930 381.75,-930 416.12,-930 416.12,-930 381.75,-930"/>
+<polygon fill="#666666" stroke="#666666" points="416.12,-930 416.12,-930 554.75,-930 554.75,-930 416.12,-930"/>
+<polygon fill="none" stroke="#666666" points="381.75,-872 381.75,-992 554.75,-992 554.75,-872 381.75,-872"/>
 </a>
 </g>
-<text text-anchor="middle" x="312.96" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;inMemoryPlayer</text>
+</g>
+<!-- Node6&#45;&gt;Node2 -->
+<g id="edge5_Node000002_Node000006" class="edge">
+<title>Node6&#45;&gt;Node2</title>
+<g id="a_edge5_Node000002_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M393.09,-872.02C376.36,-858.9 358.54,-844.91 341.54,-831.58"/>
+<polygon fill="none" stroke="#63b8ff" points="341.8,-831.77 334.61,-831.22 332.35,-824.36 339.54,-824.92 341.8,-831.77"/>
+</a>
+</g>
+<text text-anchor="middle" x="406.39" y="-844.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;jakartaValidator</text>
+</g>
+<!-- Node7&#45;&gt;Node1 -->
+<g id="edge6_Node000001_Node000007" class="edge">
+<title>Node7&#45;&gt;Node1</title>
+<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M381.04,-452.24C375.27,-440.43 369.24,-428.09 363.08,-415.49"/>
+<polygon fill="none" stroke="#63b8ff" points="363.05,-415.44 356.83,-411.8 357.79,-404.66 364.01,-408.29 363.05,-415.44"/>
+</a>
+</g>
+<text text-anchor="middle" x="408.96" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;inMemoryPlayer</text>
 </g>
 </g>
 </svg>

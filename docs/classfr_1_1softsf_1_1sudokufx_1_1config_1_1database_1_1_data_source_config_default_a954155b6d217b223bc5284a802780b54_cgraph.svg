@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Creates and configures the main DataSource for the application.">
+<g id="a_Node000001"><a xlink:title="Creates and configures the main HikariDataSource for the application.">
 <polygon fill="#999999" stroke="#666666" points="205.75,-57 0,-57 0,-25 205.75,-25 205.75,-57"/>
 <text text-anchor="start" x="8" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.database.</text>
 <text text-anchor="middle" x="102.88" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">DataSourceConfigDefault.hikariDataSource</text>

@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type GameLevel to objects of type GameLevelDto ...">
+<g id="a_Node000000"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_background_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type Background to objects of type BackgroundDt...">
 <polygon fill="white" stroke="#666666" points="217,-32 0,-32 0,0 217,0 217,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
-<text text-anchor="middle" x="108.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGameLevelMapper</text>
+<text text-anchor="middle" x="108.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IBackgroundMapper</text>
 </a>
 </g>
 </g>

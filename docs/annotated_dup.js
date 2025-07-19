@@ -23,7 +23,8 @@ var annotated_dup =
               [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls" ]
             ] ],
             [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html", [
-              [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools" ]
+              [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools" ],
+              [ "JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator" ]
             ] ],
             [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html", [
               [ "mapper", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper.html", [
@@ -123,7 +124,6 @@ var annotated_dup =
                 ] ]
               ] ],
               [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html", [
-                [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_player_service_u_test" ],
                 [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test" ]
               ] ]
             ] ],
@@ -150,9 +150,13 @@ var annotated_dup =
                   [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test" ]
                 ] ]
               ] ],
+              [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service.html", [
+                [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_player_service_u_test" ]
+              ] ],
               [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", [
                 [ "grid", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid.html", [
-                  [ "GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test" ]
+                  [ "GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test" ],
+                  [ "GrillesCreesUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test" ]
                 ] ],
                 [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state.html", [
                   [ "InMemoryPlayerITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test" ]

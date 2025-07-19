@@ -1,5 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,71,40"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A generic ListCell for displaying and removing items of type T in a ListView." alt="" coords="119,5,365,48"/>
-<area shape="poly" id="edge28_Node000000_Node000001" title=" " alt="" coords="86,24,118,24,118,29,86,29"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,80,128,107"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_linux_folder_factory.html" title="Factory class for creating and managing LINUX OS&#45;specific folders for the SudoFX application." alt="" coords="176,5,360,48"/>
+<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="123,72,200,46,202,51,125,77"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_macos_folder_factory.html" title="Factory class for creating and managing MACOS OS&#45;specific folders for the SudoFX application." alt="" coords="176,72,360,115"/>
+<area shape="poly" id="edge19_Node000000_Node000002" title=" " alt="" coords="143,91,175,91,175,96,143,96"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory.html" title="Interface defining methods to access OS&#45;specific folder paths." alt="" coords="176,139,360,181"/>
+<area shape="poly" id="edge20_Node000000_Node000003" title=" " alt="" coords="125,110,202,136,200,141,123,115"/>
 </map>
