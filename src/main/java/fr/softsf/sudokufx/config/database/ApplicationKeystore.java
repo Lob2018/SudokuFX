@@ -9,8 +9,12 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.security.KeyStore;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
+import java.security.SecureRandom;
+import java.security.UnrecoverableEntryException;
 import java.security.cert.CertificateException;
-import java.security.*;
 import java.util.Objects;
 import java.util.UUID;
 import javax.crypto.KeyGenerator;
@@ -37,11 +41,13 @@ final class ApplicationKeystore implements IKeystore {
     private static final String KEYSTORE_PASSWORD_FROM_UUID =
             String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
     private static final String KEYSTORE_TYPE = "pkcs12";
-    private static final char[] pwdArray = KEYSTORE_PASSWORD_FROM_UUID.toCharArray();
+    private static final char[] PWD_ARRAY = KEYSTORE_PASSWORD_FROM_UUID.toCharArray();
     private static final String SYMMETRIC_KEY_ALIAS = "db-encryption-secret";
     private static final String USERNAME_ALIAS = "db-user-alias";
     private static final String PASS_ALIAS = "db-pass-alias";
     private static final String KEYSTORE_FILE_PATH = "/SudokuFXKeyStore.p12";
+    private static final String AES_ALGORITHM = "AES";
+    private static final int AES_KEY_SIZE_BITS = 256;
     private final GenerateSecret generateSecret;
     private final IOsFolderFactory iOsFolderFactory;
     private String keystoreFilePath;
@@ -79,12 +85,12 @@ final class ApplicationKeystore implements IKeystore {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The keystore must not be null");
         }
-        if (ObjectUtils.isEmpty(ApplicationKeystore.pwdArray)) {
+        if (ObjectUtils.isEmpty(ApplicationKeystore.PWD_ARRAY)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The pwdArray must not be null or empty");
         }
         try (FileOutputStream fos = new FileOutputStream(keystoreFileName)) {
-            ks.store(fos, ApplicationKeystore.pwdArray);
+            ks.store(fos, ApplicationKeystore.PWD_ARRAY);
         } catch (Exception e) {
             LOG.error("██ Exception catch inside writeTheKeystore/fos : {}", e.getMessage(), e);
         }
@@ -116,8 +122,8 @@ final class ApplicationKeystore implements IKeystore {
     /** Create or update the Keystore */
     private void createOrUpdateKeystore() {
         try (FileOutputStream fos = new FileOutputStream(keystoreFilePath, true)) {
-            ks.load(null, pwdArray);
-            ks.store(fos, pwdArray);
+            ks.load(null, PWD_ARRAY);
+            ks.store(fos, PWD_ARRAY);
         } catch (IOException
                 | NoSuchAlgorithmException
                 | CertificateException
@@ -129,7 +135,7 @@ final class ApplicationKeystore implements IKeystore {
     /** Load the Keystore */
     private void loadKeyStore() {
         try (FileInputStream fileInputStream = new FileInputStream(keystoreFilePath)) {
-            ks.load(fileInputStream, pwdArray);
+            ks.load(fileInputStream, PWD_ARRAY);
         } catch (Exception e) {
             LOG.error(
                     "██ Exception catch inside loadKeyStore() - JVM doesn't support type OR"
@@ -162,7 +168,8 @@ final class ApplicationKeystore implements IKeystore {
             KeyStore.SecretKeyEntry entry =
                     (KeyStore.SecretKeyEntry)
                             ks.getEntry(
-                                    SYMMETRIC_KEY_ALIAS, new KeyStore.PasswordProtection(pwdArray));
+                                    SYMMETRIC_KEY_ALIAS,
+                                    new KeyStore.PasswordProtection(PWD_ARRAY));
             if (entry != null) {
                 iEncryptionService = new SecretKeyEncryptionServiceAESGCM(entry.getSecretKey());
             }
@@ -178,8 +185,8 @@ final class ApplicationKeystore implements IKeystore {
     /** Set the symmetric key and set encryption service */
     private void symmetricKeyNotInKeystore() {
         try {
-            KeyGenerator keyGen = KeyGenerator.getInstance("AES");
-            keyGen.init(256, new SecureRandom());
+            KeyGenerator keyGen = KeyGenerator.getInstance(AES_ALGORITHM);
+            keyGen.init(AES_KEY_SIZE_BITS, new SecureRandom());
             SecretKey symmetricKey = keyGen.generateKey();
             iEncryptionService = new SecretKeyEncryptionServiceAESGCM(symmetricKey);
             addToKeystore(SYMMETRIC_KEY_ALIAS, symmetricKey);
@@ -250,7 +257,7 @@ final class ApplicationKeystore implements IKeystore {
      */
     private void getCredentials(final String alias) {
         try {
-            KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(pwdArray));
+            KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(PWD_ARRAY));
             if (entry instanceof KeyStore.SecretKeyEntry secretEntry) {
                 byte[] keyBytes = secretEntry.getSecretKey().getEncoded();
                 String value =
@@ -261,13 +268,11 @@ final class ApplicationKeystore implements IKeystore {
                     password = value;
                 }
                 // TODO: remove in production
-                System.out.println(
-                        "GET alias - username - password - secret : "
-                                + alias
-                                + " - "
-                                + username
-                                + " - "
-                                + password);
+                LOG.info(
+                        "▓▓▓▓ GET alias - username - password - secret : {} - {} - {}",
+                        alias,
+                        username,
+                        password);
             } else {
                 LOG.warn("▓▓ Entry is not an instance of the Keystore");
             }
@@ -301,7 +306,7 @@ final class ApplicationKeystore implements IKeystore {
                     "SecretKey must not be null");
         }
         KeyStore.SecretKeyEntry secret = new KeyStore.SecretKeyEntry(secretKey);
-        KeyStore.ProtectionParameter entryPassword = new KeyStore.PasswordProtection(pwdArray);
+        KeyStore.ProtectionParameter entryPassword = new KeyStore.PasswordProtection(PWD_ARRAY);
         try {
             ks.setEntry(alias, secret, entryPassword);
         } catch (KeyStoreException e) {

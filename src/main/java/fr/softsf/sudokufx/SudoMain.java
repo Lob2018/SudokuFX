@@ -52,7 +52,7 @@ import fr.softsf.sudokufx.view.SplashScreenView;
 public class SudoMain extends Application {
 
     private static final Logger LOG = LoggerFactory.getLogger(SudoMain.class);
-
+    private static final long MINIMUM_TRANSITION_DELAY_MS = 1000L;
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
@@ -153,7 +153,10 @@ public class SudoMain extends Application {
     private void handleSpringContextTaskSuccess(long startTime) {
         try {
             initializeCoordinator();
-            long minimumTimelapse = Math.max(0, 1000 - (System.currentTimeMillis() - startTime));
+            long minimumTimelapse =
+                    Math.max(
+                            0,
+                            MINIMUM_TRANSITION_DELAY_MS - (System.currentTimeMillis() - startTime));
             createViewTransition("default-view", minimumTimelapse).play();
         } catch (Exception ex) {
             LOG.error(

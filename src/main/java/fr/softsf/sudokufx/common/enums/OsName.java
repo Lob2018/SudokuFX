@@ -17,8 +17,8 @@ public enum OsName {
 
     private final String os;
 
-    OsName(final String os_) {
-        os = os_;
+    OsName(final String os) {
+        this.os = os;
     }
 
     public final String getOs() {
@@ -35,9 +35,15 @@ public enum OsName {
         String current = System.getProperty("os.name").toLowerCase();
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 current, "Operating system must not be null or blank, but was " + current);
-        if (current.contains(WINDOWS.os)) return WINDOWS;
-        if (current.contains(LINUX.os)) return LINUX;
-        if (current.contains(MAC.os)) return MAC;
+        if (current.contains(WINDOWS.os)) {
+            return WINDOWS;
+        }
+        if (current.contains(LINUX.os)) {
+            return LINUX;
+        }
+        if (current.contains(MAC.os)) {
+            return MAC;
+        }
         throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                 "Unsupported OS: " + current);
     }

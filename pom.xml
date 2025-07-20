@@ -283,6 +283,41 @@
           </execution>
         </executions>
       </plugin>
+      <!-- Maven Checkstyle Plugin for static code analysis -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <!-- Path to your custom checkstyle.xml configuration file -->
+          <configLocation>checkstyle.xml</configLocation>
+          <!-- Optional: suppressions file if needed -->
+          <!-- <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation> -->
+          <!-- Fail the build on violations -->
+          <failsOnError>true</failsOnError>
+          <!-- Enable console output -->
+          <consoleOutput>true</consoleOutput>
+          <!-- Minimum severity level that fails the build -->
+          <violationSeverity>error</violationSeverity>
+        </configuration>
+        <dependencies>
+          <!-- Use a specific version of Checkstyle (must match your checkstyle.xml DTD) -->
+          <dependency>
+            <groupId>com.puppycrawl.tools</groupId>
+            <artifactId>checkstyle</artifactId>
+            <version>10.13.0</version>
+          </dependency>
+        </dependencies>
+        <executions>
+          <execution>
+            <id>validate</id>
+            <goals>
+              <goal>check</goal>
+            </goals>
+            <phase>validate</phase>
+          </execution>
+        </executions>
+      </plugin>
       <!-- Java compiler plugin -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

@@ -26,6 +26,7 @@ import fr.softsf.sudokufx.common.enums.ToastLevels;
  */
 public final class ToasterVBox extends VBox {
 
+    private static final double SHORT_TOAST_DURATION_MS = 1500;
     private ToasterButton toast;
 
     /**
@@ -59,7 +60,9 @@ public final class ToasterVBox extends VBox {
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
-        if (requestFocus) toast.requestFocus();
+        if (requestFocus) {
+            toast.requestFocus();
+        }
     }
 
     /**
@@ -85,7 +88,9 @@ public final class ToasterVBox extends VBox {
         temporizeToast(toast, duration);
         toast.setOnAction(this::toastActions);
         getChildren().add(toast);
-        if (requestFocus) toast.requestFocus();
+        if (requestFocus) {
+            toast.requestFocus();
+        }
     }
 
     /**
@@ -201,6 +206,6 @@ public final class ToasterVBox extends VBox {
 
     /** Schedules the current toast for removal after a short delay. */
     public void removeToast() {
-        temporizeToast(toast, 1500);
+        temporizeToast(toast, SHORT_TOAST_DURATION_MS);
     }
 }

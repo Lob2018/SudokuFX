@@ -36,7 +36,8 @@ import fr.softsf.sudokufx.common.enums.I18n;
  * its bound value.
  */
 public class PossibilityStarsHBox extends HBox {
-
+    private static final double STAR_DIVISOR = 0.1;
+    private static final double HALF_STAR_THRESHOLD = 0.5;
     private final IntegerProperty percentage = new SimpleIntegerProperty(100);
 
     /**
@@ -88,7 +89,7 @@ public class PossibilityStarsHBox extends HBox {
      * @param percentage the rating percentage to display
      */
     private void setHBoxPossibilityStarsFromPercentage(int percentage) {
-        double stars = Math.round(percentage * 0.1) / 2.0;
+        double stars = Math.round(percentage * STAR_DIVISOR) / 2.0;
         List<Text> starsNodes =
                 getChildren().stream()
                         .filter(Text.class::isInstance)
@@ -97,7 +98,7 @@ public class PossibilityStarsHBox extends HBox {
         for (int i = 0; i < starsNodes.size(); i++) {
             if (stars >= i + 1) {
                 starsNodes.get(i).setText("\uE838"); // full star
-            } else if (stars >= i + 0.5) {
+            } else if (stars >= i + HALF_STAR_THRESHOLD) {
                 starsNodes.get(i).setText("\uE839"); // half star
             } else {
                 starsNodes.get(i).setText("\uE83A"); // empty star

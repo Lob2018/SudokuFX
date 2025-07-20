@@ -44,6 +44,7 @@ import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_UR
 public class VersionService {
 
     private static final Logger LOG = LoggerFactory.getLogger(VersionService.class);
+    private static final int HTTP_STATUS_OK = 200;
 
     private static final String CURRENT_VERSION =
             JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty()
@@ -91,7 +92,7 @@ public class VersionService {
                                     .build();
                     HttpResponse<String> response =
                             httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-                    if (response.statusCode() != 200) {
+                    if (response.statusCode() != HTTP_STATUS_OK) {
                         LOG.error(
                                 "██ GitHub API returned non 200 status code: {}",
                                 response.statusCode());

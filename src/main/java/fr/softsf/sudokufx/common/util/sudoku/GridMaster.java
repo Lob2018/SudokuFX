@@ -34,6 +34,10 @@ final class GridMaster implements IGridMaster {
     private static final int DIFFICILE_MOY_CACHEES =
             (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
     private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
+    private static final int MIN_POSSIBILITES = 4800;
+    private static final int MAX_POSSIBILITES = 40000;
+    private static final int POURCENTAGE_MAX = 100;
+    private static final int TEST_PSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     private int moyenMinPossibilites = 16533;
     // Durée entre les demandes
@@ -97,7 +101,9 @@ final class GridMaster implements IGridMaster {
         for (int ligne = 0; ligne < DIMENSION; ligne++) {
             for (int colonne = 0; colonne < DIMENSION; colonne++) {
                 int valeur = grille[ligne * DIMENSION + colonne];
-                if (valeur != 0) eliminerPossibilite(possibilites, ligne, colonne, valeur);
+                if (valeur != 0) {
+                    eliminerPossibilite(possibilites, ligne, colonne, valeur);
+                }
             }
         }
     }
@@ -245,7 +251,9 @@ final class GridMaster implements IGridMaster {
             sommeDesPossibilites =
                     getPossibilitesGrilleWhileNok(
                             grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-            if (dureeEnMs() > DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE) break;
+            if (dureeEnMs() > DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE) {
+                break;
+            }
         } while (!conditionValidation.test(sommeDesPossibilites));
         derniereDemande = LocalDateTime.now();
         return sommeDesPossibilites;
@@ -380,7 +388,9 @@ final class GridMaster implements IGridMaster {
      */
     private boolean remplirLaGrille(final int[] grille, final int[] possibilites) {
         int index = laCaseVideAvecLeMoinsDePossibilites(grille, possibilites);
-        if (index < 0) return true;
+        if (index < 0) {
+            return true;
+        }
         int possibilitesDeLaCase = possibilites[index];
         while (possibilitesDeLaCase != 0) {
             // Choisit une valeur aléatoire parmi les possibilités restantes
@@ -395,7 +405,9 @@ final class GridMaster implements IGridMaster {
             eliminerPossibilite(
                     nouvellesPossibilites, index / DIMENSION, index % DIMENSION, valeur);
             // Appel récursif pour remplir le reste de la grille
-            if (remplirLaGrille(grille, nouvellesPossibilites)) return true;
+            if (remplirLaGrille(grille, nouvellesPossibilites)) {
+                return true;
+            }
         }
         // Si aucune valeur ne fonctionne, réinitialise la case et retourne false
         grille[index] = 0;
@@ -416,7 +428,9 @@ final class GridMaster implements IGridMaster {
         for (int i = 0; i < DIMENSION; i++) {
             // Vérifie si le bit i est à 1 (donc si i+1 est une possibilité)
             if ((possibilitesDeLaCase & (1 << i)) != 0) {
-                if (choix == 0) return i + 1;
+                if (choix == 0) {
+                    return i + 1;
+                }
                 choix--;
             }
         }
@@ -435,17 +449,21 @@ final class GridMaster implements IGridMaster {
      */
     private int getPourcentageDesPossibilites(int sommeDesPossibilites) {
         // le pourcentage de possibilités estimé
-        int pourcentageDesPossibilites = ((sommeDesPossibilites - 4800) * 100) / (40000 - 4800);
+        int pourcentageDesPossibilites =
+                ((sommeDesPossibilites - MIN_POSSIBILITES) * POURCENTAGE_MAX)
+                        / (MAX_POSSIBILITES - MIN_POSSIBILITES);
         // Limiter le pourcentage entre 0 et 100
         pourcentageDesPossibilites =
-                pourcentageDesPossibilites < 0 ? 0 : Math.min(pourcentageDesPossibilites, 100);
+                pourcentageDesPossibilites < 0
+                        ? 0
+                        : Math.min(pourcentageDesPossibilites, POURCENTAGE_MAX);
         return pourcentageDesPossibilites;
     }
 
     @Override
     public int[] resoudreLaGrille(final int[] grille) {
         // Lever une exception si la grille est null, ou si sa taille est différente de 81
-        if (grille == null || grille.length != 81) {
+        if (grille == null || grille.length != NOMBRE_CASES) {
             String taille = (grille == null) ? "null" : String.valueOf(grille.length);
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The grid must not be null and must contain exactly 81 cells, but was "
@@ -501,7 +519,7 @@ final class GridMaster implements IGridMaster {
      * seconde. Cette méthode est uniquement utilisée pour les tests.
      */
     void setAverageImpossiblePossibilitiesForTests() {
-        this.moyenMinPossibilites = 50000;
+        this.moyenMinPossibilites = TEST_PSSIBILITE_MOYENNE_IMPOSSIBLE;
         this.moyenMaxPossibilites = -1;
     }
 
@@ -510,6 +528,6 @@ final class GridMaster implements IGridMaster {
      * seconde. Cette méthode est uniquement utilisée pour les tests.
      */
     void setDifficultImpossiblePossibilitiesForTests() {
-        this.moyenMaxPossibilites = 50000;
+        this.moyenMaxPossibilites = TEST_PSSIBILITE_MOYENNE_IMPOSSIBLE;
     }
 }

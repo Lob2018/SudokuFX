@@ -31,9 +31,12 @@ public record GrillesCrees(
         @Min(value = 0, message = "pourcentageDesPossibilites must be >= 0") @Max(value = 100, message = "pourcentageDesPossibilites must be <= 100") int pourcentageDesPossibilites) {
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof GrillesCrees(int[] resolue, int[] aResoudre, int desPossibilites)))
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof GrillesCrees(int[] resolue, int[] aResoudre, int desPossibilites))) {
             return false;
+        }
         return pourcentageDesPossibilites == desPossibilites
                 && Arrays.equals(grilleResolue, resolue)
                 && Arrays.equals(grilleAResoudre, aResoudre);

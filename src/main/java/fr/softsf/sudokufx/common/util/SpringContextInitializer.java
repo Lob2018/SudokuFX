@@ -22,6 +22,12 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 public class SpringContextInitializer {
     private final SpringContext context;
 
+    /**
+     * Constructs a {@code SpringContextInitializer} with the given {@link SpringContext}.
+     *
+     * @param context the Spring context to initialize; must not be null
+     * @throws IllegalArgumentException if {@code context} is null
+     */
     public SpringContextInitializer(SpringContext context) {
         if (Objects.isNull(context)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(

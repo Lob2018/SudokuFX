@@ -8,7 +8,7 @@
 			Antialias 3
 	Gimp from .png :
 		export as .ico
-			32bpp, 8-bit alpha, no palette 
+			32bpp, 8-bit alpha, no palette
 			Not compressed
 2. .png (Sudoku.png)
 	Inkscape from .svg :

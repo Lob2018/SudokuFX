@@ -35,6 +35,13 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
  */
 public class ImageUtils {
 
+    private static final int RED_SHIFT = 24;
+    private static final int GREEN_SHIFT = 16;
+    private static final int BLUE_SHIFT = 8;
+    private static final int ALPHA_SHIFT = 0;
+    private static final int BYTE_MASK = 0xFF;
+    private static final double ALPHA_NORMALIZATION = 255.0;
+
     /**
      * Converts a 32-bit integer color value in the format 0xRRGGBBAA into a JavaFX {@link Color}
      * object.
@@ -44,10 +51,10 @@ public class ImageUtils {
      */
     public Color intToColor(int colorValue) {
         return Color.rgb(
-                (colorValue >> 24) & 0xFF,
-                (colorValue >> 16) & 0xFF,
-                (colorValue >> 8) & 0xFF,
-                (colorValue & 0xFF) / 255.0);
+                (colorValue >> RED_SHIFT) & BYTE_MASK,
+                (colorValue >> GREEN_SHIFT) & BYTE_MASK,
+                (colorValue >> BLUE_SHIFT) & BYTE_MASK,
+                ((colorValue >> ALPHA_SHIFT) & BYTE_MASK) / ALPHA_NORMALIZATION);
     }
 
     /**

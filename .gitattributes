@@ -1,3 +1,7 @@
 # Ensure .bat files are treated as text files with CRLF line endings
 # and are encoded in UTF-8 without BOM in the working tree.
 *.bat text eol=crlf working-tree-encoding=UTF-8
+
+# Ensure shell scripts and mvnw use LF line endings to avoid Windows carriage returns
+*.sh text eol=lf
+mvnw text eol=lf

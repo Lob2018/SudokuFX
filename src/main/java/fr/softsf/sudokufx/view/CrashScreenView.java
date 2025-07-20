@@ -55,6 +55,9 @@ public final class CrashScreenView implements IMainView {
             new OsFolderFactoryManager().iOsFolderFactory();
     private static final IFileSystem I_FILE_SYSTEM = new FileSystemManager();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
+    private static final double CRASHSCREEN_SIZE_RATIO = 0.7;
+    private static final double CRASHSCREEN_FONT_RATIO = 0.02;
+    private static final double SVG_STROKE_DIVISOR = 17.0;
 
     private final Stage crashscreenStage = new Stage();
     private final DropShadow dropShadow = new DropShadow();
@@ -143,9 +146,9 @@ public final class CrashScreenView implements IMainView {
                                         .toExternalForm()));
         crashscreenStage.initStyle(StageStyle.UNDECORATED);
         crashscreenStage.centerOnScreen();
-        crashscreenvbox.setPrefWidth(DISPOSABLE_SIZE.getSize() * .7);
-        crashscreenvbox.setPrefHeight(DISPOSABLE_SIZE.getSize() * .7);
-        crashScreenFontSize = DISPOSABLE_SIZE.getSize() * 0.02;
+        crashscreenvbox.setPrefWidth(DISPOSABLE_SIZE.getSize() * CRASHSCREEN_SIZE_RATIO);
+        crashscreenvbox.setPrefHeight(DISPOSABLE_SIZE.getSize() * CRASHSCREEN_SIZE_RATIO);
+        crashScreenFontSize = DISPOSABLE_SIZE.getSize() * CRASHSCREEN_FONT_RATIO;
         dropShadow.setColor(Color.BLACK);
         dropShadow.setRadius(crashScreenFontSize / 2);
         dropShadow.setOffsetX(crashScreenFontSize / 8);
@@ -197,7 +200,7 @@ public final class CrashScreenView implements IMainView {
                 crashScreenFontSize,
                 0,
                 0);
-        String strokeWidth = "" + crashScreenFontSize / 17;
+        String strokeWidth = "" + crashScreenFontSize / SVG_STROKE_DIVISOR;
         crashscreenvboxTophboxRegionsudosvg.setStyle(
                 "-fx-background-color: linear-gradient(to bottom, #FFBE99,"
                         + " #FF4340);-fx-border-color: #1D1D30;-fx-border-width: "

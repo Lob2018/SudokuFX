@@ -107,7 +107,9 @@ public enum MyRegex {
     private boolean isValidPassword(final String password) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 password, "Password must not be null or blank, but was " + password);
-        if (!SECRET_PATTERN.matcher(password).matches()) return false;
+        if (!SECRET_PATTERN.matcher(password).matches()) {
+            return false;
+        }
         long lowerCaseCount = password.chars().filter(Character::isLowerCase).count();
         long upperCaseCount = password.chars().filter(Character::isUpperCase).count();
         long digitCount = password.chars().filter(Character::isDigit).count();

@@ -35,6 +35,12 @@ public class MenuSaveViewModel {
             "menu.accessibility.role.description.opened";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
+    private static final int TEST_BACKUP_START = 31;
+    private static final int TEST_BACKUP_END = 11;
+    private static final int TEST_BACKUP_SELECTED_MINUTE = 25;
+    private static final int TEST_GRID_STRING_LENGTH = 81;
+    private static final int TEST_GRID_STRING_LENGTH_ALT = 810;
+    private static final int TEST_GRID_BYTE_VALUE = 75;
 
     private final ObservableList<GameDto> backups = FXCollections.observableArrayList();
     private final ObjectProperty<GameDto> selectedBackup = new SimpleObjectProperty<>();
@@ -125,9 +131,12 @@ public class MenuSaveViewModel {
      */
     private void loadBackups() {
         backups.clear();
-        for (int i = 31; i >= 11; i--) {
-            if (i == 25) backups.add(createBackupGameDto(LocalDateTime.now().plusMinutes(i), true));
-            else backups.add(createBackupGameDto(LocalDateTime.now().plusMinutes(i), false));
+        for (int i = TEST_BACKUP_START; i >= TEST_BACKUP_END; i--) {
+            if (i == TEST_BACKUP_SELECTED_MINUTE) {
+                backups.add(createBackupGameDto(LocalDateTime.now().plusMinutes(i), true));
+            } else {
+                backups.add(createBackupGameDto(LocalDateTime.now().plusMinutes(i), false));
+            }
         }
     }
 
@@ -155,7 +164,11 @@ public class MenuSaveViewModel {
     private GameDto createBackupGameDto(LocalDateTime date, boolean isSelected) {
         return new GameDto(
                 0L,
-                new GridDto(0L, "0".repeat(81), "1".repeat(810), (byte) 75),
+                new GridDto(
+                        0L,
+                        "0".repeat(TEST_GRID_STRING_LENGTH),
+                        "1".repeat(TEST_GRID_STRING_LENGTH_ALT),
+                        (byte) TEST_GRID_BYTE_VALUE),
                 0L,
                 new GameLevelDto((byte) 1, (byte) 1),
                 isSelected,

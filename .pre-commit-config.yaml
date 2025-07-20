@@ -1,18 +1,61 @@
+# This file defines hooks that will run automatically before commits.
+# To install pre-commit and enable hooks on Windows, follow these steps:
+
+# 1. Install Python (required to run pre-commit)
+#    On Windows, the recommended way is to use the Python Install Manager (Beta)
+#    available via the Microsoft Store app.
+
+# 2. Install pre-commit:
+#    Run:
+#      py -m pip install pre-commit
+#    This ensures you use the correct Python environment.
+
+# 3. Install git hooks for this repository:
+#    Run:
+#      py -m pre_commit install
+
+# 4. To run hooks on all files and check which are active, run:
+#    py -m pre_commit run --all-files --verbose
+
+# 5. To update hooks to their latest versions, run:
+#    py -m pre_commit autoupdate
+#    Then commit the updated '.pre-commit-config.yaml'.
+
+# 6. Install ShellCheck on Windows (required for the shellcheck hook):
+#    ShellCheck is not bundled with the hook and must be installed separately.
+#    On Windows, install it using winget (restart required):
+#      winget install --id=koalaman.shellcheck
+#
+#    Make sure the installation directory is in your system PATH environment variable
+#    so that pre-commit can locate the shellcheck executable.
+
+# Note:
+# - If your PATH does not include the Python Scripts directory,
+#   always prefix Python commands with `py -m` (e.g., `py -m pre_commit run`).
+#
+# - Maven must be installed and in PATH for the mvn-checkstyle hook to work.
+#   Adjust or remove this hook if Maven is not available.
+
 repos:
-  - repo: https://github.com/gherynos/pre-commit-java
-    rev: v0.2.4
+  - repo: local
     hooks:
-      - id: Checkstyle
+      - id: mvn-checkstyle
+        name: Maven Checkstyle
+        entry: mvn checkstyle:check
+        language: system
+        pass_filenames: false
+        files: \.java$
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.16.3
+    rev: v8.27.2
     hooks:
       - id: gitleaks
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
     rev: 3.0.0
     hooks:
       - id: shellcheck
+        exclude: ^mvnw$
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
       - id: end-of-file-fixer
       - id: trailing-whitespace

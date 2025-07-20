@@ -9,34 +9,40 @@ import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.IntStream;
 
+import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.BenchmarkMode;
+import org.openjdk.jmh.annotations.Fork;
+import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.OutputTimeUnit;
-import org.openjdk.jmh.annotations.Warmup;
-import org.openjdk.jmh.annotations.Measurement;
 import org.openjdk.jmh.annotations.Threads;
-import org.openjdk.jmh.annotations.Fork;
-import org.openjdk.jmh.annotations.Benchmark;
+import org.openjdk.jmh.annotations.Warmup;
 import org.openjdk.jmh.infra.Blackhole;
 
 import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;
 
 /**
- * Classe de benchmark pour mesurer les performances des opérations sur la grille Sudoku,
- * notamment le masquage de cases dans une grille résolue.
- * Utilise JMH pour exécuter des tests de performance en mesurant le temps moyen d'exécution.
+ * Classe de benchmark pour mesurer les performances des opérations sur la grille Sudoku, notamment
+ * le masquage de cases dans une grille résolue. Utilise JMH pour exécuter des tests de performance
+ * en mesurant le temps moyen d'exécution.
  */
-@BenchmarkMode(Mode.AverageTime) // Mesure le temps moyen d'exécution de la méthode benchmarkée
-@OutputTimeUnit(TimeUnit.NANOSECONDS) // Affiche les résultats en nanosecondes pour une précision élevée
-@Warmup(iterations = 3, time = 5, timeUnit = TimeUnit.SECONDS) // 3 itérations d'échauffement de 5 secondes chacune
-@Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS) // 5 itérations de mesure de 10 secondes chacune
-@Threads(1) // Exécute le benchmark avec 1 thread pour simplifier l'analyse des résultats
-@Fork(2) // Utilise 2 forks pour améliorer la fiabilité des résultats
+// Mesure le temps moyen d'exécution de la méthode benchmarkée
+@BenchmarkMode(Mode.AverageTime)
+// Affiche les résultats en nanosecondes pour une précision élevée
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
+// 3 itérations d'échauffement de 5 secondes chacune
+@Warmup(iterations = 3, time = 5, timeUnit = TimeUnit.SECONDS)
+// 5 itérations de mesure de 10 secondes chacune
+@Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS)
+// Exécute le benchmark avec 1 thread pour simplifier l'analyse des résultats
+@Threads(1)
+// Utilise 2 forks pour améliorer la fiabilité des résultats
+@Fork(2)
 public class BenchGridMaster {
 
-    private static final int[] DEFAULT_INDICES = IntStream.range(0, 81).toArray();
     private static final int NOMBRE_CASES = 81;
-    private static final int[] grilleResolue = {
+    private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
+    private static final int[] GRILLE_RESOLUE = {
         3, 5, 9, 4, 6, 7, 2, 8, 1,
         7, 6, 8, 5, 2, 1, 9, 4, 3,
         4, 2, 1, 9, 8, 3, 5, 7, 6,
@@ -47,6 +53,7 @@ public class BenchGridMaster {
         9, 7, 3, 2, 1, 8, 6, 5, 4,
         5, 1, 2, 6, 7, 4, 3, 9, 8
     };
+    private static final int NOMBRE_DE_CASES_A_CACHER = 50;
 
     /**
      * Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.
@@ -67,8 +74,17 @@ public class BenchGridMaster {
         return null;
     }
 
+    /**
+     * Benchmarks the {@link #cacherLesCases(int, int[])} method by hiding a fixed number of cells
+     * in a copy of the solved Sudoku grid.
+     *
+     * @param bh the {@link Blackhole} to consume the result and avoid dead code elimination during
+     *     benchmarking
+     */
     @Benchmark
     public void measureSudo(Blackhole bh) {
-        bh.consume(cacherLesCases(50, Arrays.copyOf(grilleResolue, NOMBRE_CASES)));
+        bh.consume(
+                cacherLesCases(
+                        NOMBRE_DE_CASES_A_CACHER, Arrays.copyOf(GRILLE_RESOLUE, NOMBRE_CASES)));
     }
 }

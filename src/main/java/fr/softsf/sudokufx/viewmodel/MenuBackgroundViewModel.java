@@ -41,6 +41,7 @@ import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 public class MenuBackgroundViewModel {
 
     private static final Logger LOG = LoggerFactory.getLogger(MenuBackgroundViewModel.class);
+    private static final int HEX_RADIX = 16;
 
     private final ImageUtils imageUtils;
 
@@ -269,7 +270,8 @@ public class MenuBackgroundViewModel {
      */
     private void setColorFromModel(
             GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel) {
-        Color color = imageUtils.intToColor(Integer.parseUnsignedInt(colorValueFromModel, 16));
+        Color color =
+                imageUtils.intToColor(Integer.parseUnsignedInt(colorValueFromModel, HEX_RADIX));
         menuBackgroundButtonColor.setValue(color);
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }

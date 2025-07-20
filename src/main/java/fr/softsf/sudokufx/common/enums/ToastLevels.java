@@ -13,8 +13,8 @@ public enum ToastLevels {
 
     private final String level;
 
-    ToastLevels(final String level_) {
-        level = level_;
+    ToastLevels(final String level) {
+        this.level = level;
     }
 
     public final String getLevel() {

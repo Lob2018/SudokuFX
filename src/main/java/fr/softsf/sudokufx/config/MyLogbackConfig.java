@@ -21,7 +21,9 @@ import fr.softsf.sudokufx.config.os.IOsFolderFactory;
 
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.OPTIMIZING;
-import static fr.softsf.sudokufx.common.enums.Paths.*;
+import static fr.softsf.sudokufx.common.enums.Paths.CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS;
+import static fr.softsf.sudokufx.common.enums.Paths.CONFIG_LOGBACK_PATH;
+import static fr.softsf.sudokufx.common.enums.Paths.LOGS_FILE_NAME;
 
 /**
  * Configuration class for Logback logging framework. This class sets up and configures Logback for
@@ -69,8 +71,9 @@ public class MyLogbackConfig {
                 ASCII_LOGO.getLogBackMessage(),
                 JVMApplicationProperties.INSTANCE.getAppName(),
                 JVMApplicationProperties.INSTANCE.getAppVersion());
-        if (JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh())
+        if (JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh()) {
             LOG.info(OPTIMIZING.getLogBackMessage());
+        }
     }
 
     /**

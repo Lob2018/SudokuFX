@@ -24,6 +24,7 @@ import fr.softsf.sudokufx.view.component.MyAlert;
 @Component
 public class HelpViewModel {
 
+    private static final double ALERT_SIZE_RATIO = 0.6;
     private final IOsFolderFactory iOsFolderFactory;
 
     public HelpViewModel(IOsFolderFactory iOsFolderFactory) {
@@ -32,7 +33,9 @@ public class HelpViewModel {
 
     public void showHelp() {
         MyAlert informationAlert =
-                new MyAlert(Alert.AlertType.INFORMATION, ScreenSize.DISPOSABLE_SIZE.getSize() * .6);
+                new MyAlert(
+                        Alert.AlertType.INFORMATION,
+                        ScreenSize.DISPOSABLE_SIZE.getSize() * ALERT_SIZE_RATIO);
         informationAlert.setTitle(
                 I18n.INSTANCE.getValue("menu.button.help.dialog.information.title"));
         informationAlert.setHeaderText(null);

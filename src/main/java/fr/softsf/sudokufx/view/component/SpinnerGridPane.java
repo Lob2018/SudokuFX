@@ -5,7 +5,11 @@
  */
 package fr.softsf.sudokufx.view.component;
 
-import javafx.animation.*;
+import javafx.animation.Animation;
+import javafx.animation.FadeTransition;
+import javafx.animation.Interpolator;
+import javafx.animation.ParallelTransition;
+import javafx.animation.ScaleTransition;
 import javafx.geometry.Pos;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
@@ -19,6 +23,7 @@ import javafx.util.Duration;
  */
 public final class SpinnerGridPane extends GridPane {
 
+    private static final Duration DEFAULT_SECOND_PHASE_DELAY = Duration.seconds(.5);
     private final Animation spinnerAnimation1, spinnerAnimation2;
 
     /**
@@ -36,7 +41,7 @@ public final class SpinnerGridPane extends GridPane {
         add(spinnerText2, 0, 0);
         setMouseTransparent(true);
         spinnerAnimation1 = createPulse(spinnerText1, Duration.seconds(0));
-        spinnerAnimation2 = createPulse(spinnerText2, Duration.seconds(.5));
+        spinnerAnimation2 = createPulse(spinnerText2, DEFAULT_SECOND_PHASE_DELAY);
         setVisible(false);
         setManaged(false);
     }

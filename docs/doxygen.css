@@ -555,19 +555,19 @@ span.xmlcdata {
 	color: black;
 }
 
-span.vhdldigit { 
+span.vhdldigit {
 	color: #FF00FF;
 }
 
-span.vhdlchar { 
+span.vhdlchar {
 	color: #000000;
 }
 
-span.vhdlkeyword { 
+span.vhdlkeyword {
 	color: #700070;
 }
 
-span.vhdllogic { 
+span.vhdllogic {
 	color: #FF0000;
 }
 
@@ -1864,4 +1864,3 @@ body {
 ::-webkit-scrollbar-corner {
         background-color: #F9FAFC;
 }
-

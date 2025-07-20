@@ -9,7 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.passay.CharacterData;
-import org.passay.*;
+import org.passay.CharacterRule;
+import org.passay.EnglishCharacterData;
+import org.passay.PasswordGenerator;
+import org.passay.Rule;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
@@ -19,6 +22,8 @@ import static org.passay.IllegalCharacterRule.ERROR_CODE;
 /** Utility class for generating secure passwords using the Passay library. */
 @Component
 final class GenerateSecret {
+
+    private static final int PASSAY_SECRET_LENGTH = 24;
 
     /**
      * Define the secret special characters
@@ -62,6 +67,6 @@ final class GenerateSecret {
         rules.add(lowerCaseRule);
         rules.add(upperCaseRule);
         rules.add(digitRule);
-        return gen.generatePassword(24, rules);
+        return gen.generatePassword(PASSAY_SECRET_LENGTH, rules);
     }
 }

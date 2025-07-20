@@ -7,7 +7,9 @@ package fr.softsf.sudokufx.view;
 
 import java.io.File;
 import java.util.Objects;
-import javafx.animation.*;
+import javafx.animation.FadeTransition;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.BooleanBinding;
@@ -18,11 +20,16 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
-import javafx.scene.control.*;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
-import javafx.scene.layout.*;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Region;
+import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.FileChooser;
 import javafx.stage.Screen;
@@ -49,9 +56,19 @@ import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.list.GenericDtoListCell;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
+import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
+import fr.softsf.sudokufx.viewmodel.HelpViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuMiniViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuNewViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuSolveViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
-import fr.softsf.sudokufx.viewmodel.*;
 
 /**
  * Default view class of the Sudoku application. This class is responsible for displaying and
@@ -506,84 +523,20 @@ public final class DefaultView implements IMainView {
      * the currently active menu is visible and participates in layout calculations.
      */
     private void activeMenuManagerInitialization() {
-        menuHidden
-                .visibleProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN));
-        menuHidden
-                .managedProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN));
-        menuMini.visibleProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI));
-        menuMini.managedProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI));
-        menuMaxi.visibleProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI));
-        menuMaxi.managedProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI));
-        menuPlayer
-                .visibleProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER));
-        menuPlayer
-                .managedProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER));
-        menuSolve
-                .visibleProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE));
-        menuSolve
-                .managedProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE));
-        menuSave.visibleProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP));
-        menuSave.managedProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP));
-        menuBackground
-                .visibleProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND));
-        menuBackground
-                .managedProperty()
-                .bind(
-                        activeMenuOrSubmenuViewModel
-                                .getActiveMenu()
-                                .isEqualTo(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND));
+        bindVisibleAndManaged(menuHidden, ActiveMenuOrSubmenuViewModel.ActiveMenu.HIDDEN);
+        bindVisibleAndManaged(menuMini, ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI);
+        bindVisibleAndManaged(menuMaxi, ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI);
+        bindVisibleAndManaged(menuPlayer, ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER);
+        bindVisibleAndManaged(menuSolve, ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE);
+        bindVisibleAndManaged(menuSave, ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP);
+        bindVisibleAndManaged(menuBackground, ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND);
+    }
+
+    private void bindVisibleAndManaged(
+            Region menu, ActiveMenuOrSubmenuViewModel.ActiveMenu menuType) {
+        BooleanBinding isActive = activeMenuOrSubmenuViewModel.getActiveMenu().isEqualTo(menuType);
+        menu.visibleProperty().bind(isActive);
+        menu.managedProperty().bind(isActive);
     }
 
     /**
@@ -1027,7 +980,9 @@ public final class DefaultView implements IMainView {
     public void handleMenuMaxiShow(ActionEvent event) {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI);
         Object source = event.getSource();
-        if (!(source instanceof Button button)) return;
+        if (!(source instanceof Button button)) {
+            return;
+        }
         switch (button.getId()) {
             case "menuPlayerButtonPlayer" -> menuMaxiButtonPlayer.requestFocus();
             case "menuSolveButtonSolve" -> menuMaxiButtonSolve.requestFocus();

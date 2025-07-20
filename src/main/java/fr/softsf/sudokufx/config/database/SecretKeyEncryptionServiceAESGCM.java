@@ -31,6 +31,8 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
             LoggerFactory.getLogger(SecretKeyEncryptionServiceAESGCM.class);
 
     private static final SecureRandom RANDOM = new SecureRandom();
+    private static final int GCM_IV_LENGTH = 16;
+    private static final int GCM_TAG_LENGTH = 128;
     private final SecretKey secretKey;
     private Cipher cipher;
 
@@ -65,10 +67,10 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     public String encrypt(final String original) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 original, "original must not be null or blank, but was " + original);
-        byte[] iv = new byte[16];
+        byte[] iv = new byte[GCM_IV_LENGTH];
         try {
             RANDOM.nextBytes(iv);
-            cipher.init(Cipher.ENCRYPT_MODE, secretKey, new GCMParameterSpec(128, iv));
+            cipher.init(Cipher.ENCRYPT_MODE, secretKey, new GCMParameterSpec(GCM_TAG_LENGTH, iv));
             byte[] encryptedData = cipher.doFinal(original.getBytes());
             Base64.Encoder encoder = Base64.getEncoder();
             String encrypt64 = encoder.encodeToString(encryptedData);
@@ -89,7 +91,7 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
             Base64.Decoder decoder = Base64.getDecoder();
             byte[] cypherText = decoder.decode(split[0]);
             byte[] iv = decoder.decode(split[1]);
-            GCMParameterSpec paraSpec = new GCMParameterSpec(128, iv);
+            GCMParameterSpec paraSpec = new GCMParameterSpec(GCM_TAG_LENGTH, iv);
             cipher.init(Cipher.DECRYPT_MODE, secretKey, paraSpec);
             byte[] decryptedData = cipher.doFinal(cypherText);
             return new String(decryptedData, StandardCharsets.UTF_8);

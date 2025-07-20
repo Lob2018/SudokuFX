@@ -33,9 +33,12 @@ import io.micrometer.common.util.StringUtils;
  */
 public class GridCellViewModel {
 
+    private static final String EM_FORMAT = "%.3fem";
+    private static final double SCALE_SINGLE_CHAR = 0.35;
+    private static final double BORDER_THICK_BASE = 0.2;
+    private static final double BORDER_THIN_UNFOCUSED = 0.05;
     private final IntegerProperty id = new SimpleIntegerProperty();
     private final StringProperty rawText = new SimpleStringProperty("");
-    private static final String EM_FORMAT = "%.3fem";
     private final Label label = new Label();
     private final TextArea textArea = new TextArea();
     private final int row;
@@ -149,9 +152,9 @@ public class GridCellViewModel {
      * @return A CSS style string for -fx-border-color and -fx-border-width.
      */
     private String getBorderStyle(int nbOfChar, boolean focusedBorder) {
-        double scale = nbOfChar == 1 ? .35 : 1;
-        double baseThick = 0.2;
-        double baseThin = focusedBorder ? 0.2 : 0.05;
+        double scale = nbOfChar == 1 ? SCALE_SINGLE_CHAR : 1;
+        double baseThick = BORDER_THICK_BASE;
+        double baseThin = focusedBorder ? BORDER_THICK_BASE : BORDER_THIN_UNFOCUSED;
         String color =
                 focusedBorder
                         ? "-fx-border-color: radial-gradient(center 50% 150%, radius"
@@ -188,7 +191,9 @@ public class GridCellViewModel {
      * @return Formatted multiline string (e.g., for label display in grid)
      */
     public String formatText(String text) {
-        if (StringUtils.isEmpty(text)) return "";
+        if (StringUtils.isEmpty(text)) {
+            return "";
+        }
         String filtered = normalizeInput(text);
         String[] lines = formatMultiline(filtered).split("\n", -1);
         StringBuilder finalText = new StringBuilder();
@@ -202,7 +207,9 @@ public class GridCellViewModel {
                     finalText.append(' ').append(line.charAt(j));
                 }
             }
-            if (i < lines.length - 1) finalText.append('\n');
+            if (i < lines.length - 1) {
+                finalText.append('\n');
+            }
         }
         return finalText.toString();
     }
@@ -216,7 +223,9 @@ public class GridCellViewModel {
      *     null/empty
      */
     private static String normalizeInput(String input) {
-        if (StringUtils.isEmpty(input)) return "";
+        if (StringUtils.isEmpty(input)) {
+            return "";
+        }
         return input.chars()
                 .filter(ch -> ch >= '1' && ch <= '9')
                 .distinct()
@@ -234,7 +243,9 @@ public class GridCellViewModel {
      * @return Multiline string with up to 3 rows of digits, or empty string if input is null/empty
      */
     private static String formatMultiline(String filtered) {
-        if (StringUtils.isEmpty(filtered)) return "";
+        if (StringUtils.isEmpty(filtered)) {
+            return "";
+        }
         StringBuilder sb = new StringBuilder();
         int lineBreaks = 0;
         for (int i = 0; i < filtered.length(); i++) {

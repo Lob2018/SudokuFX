@@ -37,8 +37,8 @@ public enum LogBackTxt {
     OPTIMIZING("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ Optimizing startup ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
     private final String logBackMessage;
 
-    LogBackTxt(final String logBackMessage_) {
-        logBackMessage = logBackMessage_;
+    LogBackTxt(final String logBackMessage) {
+        this.logBackMessage = logBackMessage;
     }
 
     public final String getLogBackMessage() {

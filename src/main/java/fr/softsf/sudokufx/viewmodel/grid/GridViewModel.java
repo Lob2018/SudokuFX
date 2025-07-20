@@ -5,7 +5,12 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 
 import org.springframework.stereotype.Component;
 
@@ -22,7 +27,7 @@ import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
 public class GridViewModel {
 
     private static final int GRID_SIZE = 9;
-
+    private static final int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(GRID_SIZE * GRID_SIZE);
 
     private final IGridMaster iGridMaster;
@@ -78,13 +83,13 @@ public class GridViewModel {
      */
     public void setValues(List<String> values) {
         Optional.ofNullable(values)
-                .filter(v -> v.size() == 81)
+                .filter(v -> v.size() == TOTAL_CELLS)
                 .filter(v -> v.stream().allMatch(Objects::nonNull))
                 .orElseThrow(
                         () ->
                                 ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                                         "Grid must have exactly 81 non-null values"));
-        for (int i = 0; i < 81; i++) {
+        for (int i = 0; i < TOTAL_CELLS; i++) {
             cellViewModels.get(i).rawTextProperty().set(values.get(i));
         }
     }

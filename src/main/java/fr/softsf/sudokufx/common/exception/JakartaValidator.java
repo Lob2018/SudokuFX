@@ -40,6 +40,11 @@ public class JakartaValidator {
     private static final Logger LOG = LoggerFactory.getLogger(JakartaValidator.class);
     private final Validator validator;
 
+    /**
+     * Constructs a JakartaValidator with the given Jakarta Bean {@link Validator}.
+     *
+     * @param validator the Jakarta Bean Validation {@code Validator} instance injected by Spring
+     */
     public JakartaValidator(Validator validator) {
         this.validator = validator;
     }

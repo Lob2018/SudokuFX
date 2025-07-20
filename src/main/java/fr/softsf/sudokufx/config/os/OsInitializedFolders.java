@@ -5,4 +5,10 @@
  */
 package fr.softsf.sudokufx.config.os;
 
+/**
+ * Holds the initialized paths for data and logs folders.
+ *
+ * @param dataFolderPath the path to the data folder
+ * @param logsFolderPath the path to the logs folder
+ */
 public record OsInitializedFolders(String dataFolderPath, String logsFolderPath) {}

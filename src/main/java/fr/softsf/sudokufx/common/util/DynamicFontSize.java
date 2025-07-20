@@ -16,6 +16,7 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
  */
 public final class DynamicFontSize {
 
+    private static final double FONT_SIZE_RATIO = 0.0219;
     private final Scene scene;
 
     /** The current font size calculated based on the Scene's dimensions. */
@@ -34,9 +35,10 @@ public final class DynamicFontSize {
      *     ExceptionTools
      */
     public DynamicFontSize(Scene scene) {
-        if (Objects.isNull(scene))
+        if (Objects.isNull(scene)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The scene mustn't be null");
+        }
         this.scene = scene;
         initialize();
     }
@@ -57,7 +59,7 @@ public final class DynamicFontSize {
      * automatically when the Scene's dimensions change.
      */
     public void updateFontSize() {
-        currentFontSize = Math.min(scene.getWidth(), scene.getHeight()) * 0.0219;
+        currentFontSize = Math.min(scene.getWidth(), scene.getHeight()) * FONT_SIZE_RATIO;
         scene.getRoot().setStyle("-fx-font-size: " + currentFontSize + "px;");
     }
 }

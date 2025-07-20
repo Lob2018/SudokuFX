@@ -17,7 +17,10 @@ import javafx.collections.ObservableList;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.dto.*;
+import fr.softsf.sudokufx.dto.BackgroundDto;
+import fr.softsf.sudokufx.dto.MenuDto;
+import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
 
 /**
@@ -31,6 +34,7 @@ import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
 @Component
 public class MenuPlayerViewModel {
 
+    public static final int TEST_NUMBER_LOADED_PLAYERS = 50;
     private final InMemoryPlayer inMemoryPlayer;
 
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
@@ -166,7 +170,7 @@ public class MenuPlayerViewModel {
     private void loadPlayers() {
         players.clear();
         players.add(inMemoryPlayer.getCurrentPlayer());
-        for (int i = 1; i <= 50; i++) {
+        for (int i = 1; i <= TEST_NUMBER_LOADED_PLAYERS; i++) {
             players.add(generatePlayerForTests(i + "AAAAAAAAAAAAAAAAAAAAAAAAA"));
         }
     }

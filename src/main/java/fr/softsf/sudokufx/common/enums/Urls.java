@@ -27,8 +27,8 @@ public enum Urls {
 
     private final String url;
 
-    Urls(final String url_) {
-        url = url_;
+    Urls(final String url) {
+        this.url = url;
     }
 
     public final String getUrl() {

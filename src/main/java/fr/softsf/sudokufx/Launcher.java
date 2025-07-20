@@ -7,6 +7,11 @@ package fr.softsf.sudokufx;
 
 /** A launcher class to workaround classpath issues. */
 public final class Launcher {
+    /**
+     * The application's entry point, delegates execution to the SudoMain class.
+     *
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         SudoMain.main(args);
     }

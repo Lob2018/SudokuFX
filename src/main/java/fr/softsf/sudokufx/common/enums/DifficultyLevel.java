@@ -5,11 +5,17 @@
  */
 package fr.softsf.sudokufx.common.enums;
 
+/** Represents the difficulty levels of a Sudoku grid */
 public enum DifficultyLevel {
     EASY,
     MEDIUM,
     DIFFICULT;
 
+    /**
+     * Converts the difficulty level to its corresponding numeric level.
+     *
+     * @return an integer representing the numeric level for this difficulty
+     */
     public int toGridNumber() {
         return switch (this) {
             case EASY -> 1;

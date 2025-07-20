@@ -40,8 +40,8 @@ public enum Paths {
 
     private final String path;
 
-    Paths(final String path_) {
-        path = path_;
+    Paths(final String path) {
+        this.path = path;
     }
 
     public final String getPath() {
