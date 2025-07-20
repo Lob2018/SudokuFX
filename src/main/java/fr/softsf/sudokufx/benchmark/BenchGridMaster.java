@@ -21,15 +21,17 @@ import org.openjdk.jmh.infra.Blackhole;
 
 import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;
 
+/**
+ * Classe de benchmark pour mesurer les performances des opérations sur la grille Sudoku,
+ * notamment le masquage de cases dans une grille résolue.
+ * Utilise JMH pour exécuter des tests de performance en mesurant le temps moyen d'exécution.
+ */
 @BenchmarkMode(Mode.AverageTime) // Mesure le temps moyen d'exécution de la méthode benchmarkée
-@OutputTimeUnit(
-        TimeUnit.NANOSECONDS) // Affiche les résultats en nanosecondes pour une précision élevée
-@Warmup(iterations = 3, time = 5, timeUnit = TimeUnit.SECONDS)
-// 3 itérations d'échauffement de 10 secondes chacune pour stabiliser les performances
-@Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS)
-// 5 itérations de mesure de 10 secondes chacune pour obtenir des résultats fiables
+@OutputTimeUnit(TimeUnit.NANOSECONDS) // Affiche les résultats en nanosecondes pour une précision élevée
+@Warmup(iterations = 3, time = 5, timeUnit = TimeUnit.SECONDS) // 3 itérations d'échauffement de 5 secondes chacune
+@Measurement(iterations = 5, time = 10, timeUnit = TimeUnit.SECONDS) // 5 itérations de mesure de 10 secondes chacune
 @Threads(1) // Exécute le benchmark avec 1 thread pour simplifier l'analyse des résultats
-@Fork(2) // Utilise 2 forks pour améliorer la fiabilité des résultats en isolant l'exécution
+@Fork(2) // Utilise 2 forks pour améliorer la fiabilité des résultats
 public class BenchGridMaster {
 
     private static final int[] DEFAULT_INDICES = IntStream.range(0, 81).toArray();
