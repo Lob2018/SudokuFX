@@ -11,16 +11,17 @@ We welcome all kinds of contributions — from bug reports and feature requests 
 2. [How to Contribute](#2-how-to-contribute)
 3. [Development Setup](#3-development-setup)
 4. [Coding Standards and Formatting](#4-coding-standards-and-formatting)
-5. [Testing Guidelines](#5-testing-guidelines)
+5. [Git Hooks and Code Quality with pre-commit](#5-git-hooks-and-code-quality-with-pre-commit)
+6. [Testing Guidelines](#6-testing-guidelines)
     - [Test Policy for New Functionality](#test-policy-for-new-functionality)
-6. [Commit Message Guidelines](#6-commit-message-guidelines)
-7. [Contribution Workflow](#7-contribution-workflow)
-8. [Pull Requests](#8-pull-requests)
-9. [Types of Contributions Welcome](#9-types-of-contributions-welcome)
-10. [Community and Communication](#10-community-and-communication)
-11. [Code of Conduct](#11-code-of-conduct)
-12. [Security Policy](#12-security-policy)
-13. [Useful Links](#13-useful-links)
+7. [Commit Message Guidelines](#7-commit-message-guidelines)
+8. [Contribution Workflow](#8-contribution-workflow)
+9. [Pull Requests](#9-pull-requests)
+10. [Types of Contributions Welcome](#10-types-of-contributions-welcome)
+11. [Community and Communication](#11-community-and-communication)
+12. [Code of Conduct](#12-code-of-conduct)
+13. [Security Policy](#13-security-policy)
+14. [Useful Links](#14-useful-links)
 
 ---
 
@@ -118,7 +119,40 @@ To use them:
 
 > ❗ Unformatted code will fail the build or be rejected during review.
 
-## 5. Testing Guidelines
+## 5. Git Hooks and Code Quality with pre-commit
+
+We use [pre-commit](https://pre-commit.com/) to enforce code quality and prevent common issues before commits are made.
+
+### ✅ Enabled Hooks
+
+- `mvn-checkstyle`: Runs Checkstyle on Java files
+- `gitleaks`: Scans for hardcoded secrets and credentials
+- `shellcheck`: Lints shell scripts (excluding `mvnw`)
+- `end-of-file-fixer`: Ensures a newline at the end of files
+- `trailing-whitespace`: Removes trailing whitespace
+
+### ⚙️ Setup Instructions
+
+```bash
+
+# 1. Install Python (via Microsoft Store on Windows)
+# 2. Install pre-commit
+py -m pip install pre-commit
+
+# 3. Install Git hooks for this repository
+py -m pre_commit install
+
+# 4. (Optional) Run hooks on all files
+py -m pre_commit run --all-files --verbose
+
+# 5. (Optional) Update hooks to latest versions
+py -m pre_commit autoupdate
+
+# 6. Install ShellCheck via winget
+winget install --id=koalaman.shellcheck
+```
+
+## 6. Testing Guidelines
 
 - ✅ **All new features and bug fixes must include appropriate unit or integration tests.**
 - Use **JUnit 5** for unit tests and **TestFX** for JavaFX UI testing.
@@ -143,7 +177,7 @@ If you're unsure how to test a specific feature, feel free to open a draft PR or
 
 ---
 
-## 6. Commit Message Guidelines
+## 7. Commit Message Guidelines
 
 We use a standardized commit message template to keep our Git history clean, readable, and consistent.
 
@@ -197,7 +231,7 @@ Here are the supported commit types:
 
 ---
 
-## 7. Contribution Workflow
+## 8. Contribution Workflow
 
 1. Sync your local `main` branch with upstream:
 
@@ -213,7 +247,7 @@ Here are the supported commit types:
 
 ---
 
-## 8. Pull Requests
+## 9. Pull Requests
 
 - Open a PR against the `main` branch.
 - Use the PR template and include:
@@ -225,7 +259,7 @@ Here are the supported commit types:
 
 ---
 
-## 9. Types of Contributions Welcome
+## 10. Types of Contributions Welcome
 
 We welcome:
 
@@ -238,7 +272,7 @@ We welcome:
 
 ---
 
-## 10. Community and Communication
+## 11. Community and Communication
 
 - Use GitHub Issues for bugs and feature requests.
 - Use Pull Requests for code contributions.
@@ -246,21 +280,21 @@ We welcome:
 
 ---
 
-## 11. Code of Conduct
+## 12. Code of Conduct
 
 Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
 We are committed to fostering a welcoming and respectful community.
 
 ---
 
-## 12. Security Policy
+## 13. Security Policy
 
 If you discover a security vulnerability, please report it responsibly.
 See our [Security Policy](./SECURITY.md) for details.
 
 ---
 
-## 13. Useful Links
+## 14. Useful Links
 
 - [Spotless Maven Plugin](https://github.com/diffplug/spotless)
 - [Google Java Format](https://github.com/google/google-java-format)
