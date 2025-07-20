@@ -226,6 +226,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
         - logback from Spring Boot
     - Build dependencies:
         - spotless-maven-plugin (ensures consistent code formatting across the project)
+        - maven-checkstyle-plugin (static code analysis to enforce code style rules)
         - maven-compiler-plugin
             - annotationProcessorPaths:
                 - MapStruct processor (for code generation)
