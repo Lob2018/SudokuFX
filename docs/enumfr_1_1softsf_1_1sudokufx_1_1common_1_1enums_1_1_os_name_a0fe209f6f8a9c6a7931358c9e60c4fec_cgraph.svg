@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1eff4ddf127fb0d12824ddb21b52edfd" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="372.5,-32 204.25,-32 204.25,0 372.5,0 372.5,-32"/>
 <text text-anchor="start" x="212.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
 <text text-anchor="middle" x="288.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsName.OsName</text>

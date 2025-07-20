@@ -10,28 +10,10 @@
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="297,257,347,264,347,269,297,262"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ae780866cb629a7b3fb902530ee8b4098" title="Loads players into the observable list." alt="" coords="364,336,590,379"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="199,261,267,291,346,321,368,329,366,334,344,327,265,296,197,266"/>
-<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#add46cd4d4ea1ec7cb88a67a5f54f0a71" title="Sets the selected player to the one marked as selected or first in the list." alt="" coords="345,403,609,445"/>
-<area shape="poly" id="edge19_Node000001_Node000016" title=" " alt="" coords="176,261,248,324,295,359,346,388,359,394,357,399,343,393,292,363,244,328,172,265"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#add46cd4d4ea1ec7cb88a67a5f54f0a71" title="Sets the selected player to the one marked as selected or first in the list." alt="" coords="345,403,609,445"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="176,261,248,324,295,359,346,388,359,394,357,399,343,393,292,363,244,328,172,265"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a062c453d8d6794a32f0f8246057d0604" title="Returns the name of the currently selected player." alt="" coords="666,96,894,139"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="604,115,650,115,650,120,604,120"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aee456e9687b1301a3d7559374d989855" title="Generates a sample PlayerDto instance for testing purposes." alt="" coords="657,328,902,387"/>
 <area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="590,355,642,355,642,360,590,360"/>
-<area shape="rect" id="Node000009" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="1206,260,1445,287"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="902,328,950,319,1190,285,1191,290,951,324,903,333"/>
-<area shape="rect" id="Node000010" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title=" " alt="" coords="1224,315,1426,341"/>
-<area shape="poly" id="edge9_Node000008_Node000010" title=" " alt="" coords="902,346,950,343,1209,330,1209,335,950,348,903,351"/>
-<area shape="rect" id="Node000011" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aeb9760499a9309facaec4ff31e172f76" title=" " alt="" coords="950,381,1158,408"/>
-<area shape="poly" id="edge10_Node000008_Node000011" title=" " alt="" coords="903,371,937,376,936,381,903,377"/>
-<area shape="rect" id="Node000015" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d" title=" " alt="" coords="1232,424,1418,467"/>
-<area shape="poly" id="edge18_Node000008_Node000015" title=" " alt="" coords="849,385,898,403,951,417,1019,429,1089,437,1217,443,1216,449,1088,442,1018,435,950,423,897,408,847,390"/>
-<area shape="poly" id="edge11_Node000011_Node000009" title=" " alt="" coords="1072,379,1130,340,1205,300,1237,289,1239,294,1207,305,1132,344,1075,383"/>
-<area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="1111,378,1253,343,1254,348,1112,383"/>
-<area shape="poly" id="edge16_Node000011_Node000011" title=" " alt="" coords="1009,383,1001,373,1006,363,1024,357,1054,355,1087,357,1103,364,1101,369,1085,363,1054,360,1025,362,1009,367,1006,372,1013,379"/>
-<area shape="rect" id="Node000012" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a37aaf8c06967608e0eac24a4d458f34b" title=" " alt="" coords="1223,373,1428,400"/>
-<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="1158,389,1207,387,1207,393,1158,394"/>
-<area shape="poly" id="edge17_Node000011_Node000015" title=" " alt="" coords="1130,406,1218,423,1217,428,1129,411"/>
-<area shape="rect" id="Node000013" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" title=" " alt="" coords="1498,336,1682,379"/>
-<area shape="poly" id="edge13_Node000012_Node000013" title=" " alt="" coords="1428,373,1482,367,1483,372,1429,378"/>
-<area shape="rect" id="Node000014" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" title=" " alt="" coords="1493,403,1687,429"/>
-<area shape="poly" id="edge14_Node000012_Node000014" title=" " alt="" coords="1429,395,1478,401,1478,406,1428,401"/>
 </map>

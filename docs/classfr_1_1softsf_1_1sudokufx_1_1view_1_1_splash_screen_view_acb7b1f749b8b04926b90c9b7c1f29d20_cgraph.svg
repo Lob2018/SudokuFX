@@ -223,7 +223,7 @@ var sectionId = 'dynsection-2';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf" target="_top" xlink:title="Sets up the SVG for the Sudoku logo in the top section of the splash screen.">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf" target="_top" xlink:title="Sets up the SVG for the &quot;sudo.svg&quot; text logo in the center of the splash screen.">
 <polygon fill="white" stroke="#666666" points="634.5,-44 440,-44 440,0 634.5,0 634.5,-44"/>
 <text text-anchor="start" x="448" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="start" x="448" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">SplashScreenView.setSplashscreenvbox</text>

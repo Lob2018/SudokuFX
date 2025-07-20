@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.common.interfaces.ISplashScreenView" name="fr.softsf.sudokufx.common.interfaces.ISplashScreenView">
 <area shape="rect" id="Node000001" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="34,5,266,133"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html" title="View class for the splash screen of the Sudoku application." alt="" coords="5,181,295,997"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html" title="View class for the splash screen of the Sudoku application." alt="" coords="5,181,295,1387"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,148,153,182,148,182,148,148"/>
 </map>

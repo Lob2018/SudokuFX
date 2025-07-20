@@ -54,7 +54,7 @@
 <text text-anchor="start" x="14" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String path</text>
 <text text-anchor="start" x="4" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths(final String</text>
-<text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00"> path_)</text>
+<text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00"> path)</text>
 <text text-anchor="start" x="4" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String getPath()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-274 0,-274 163.5,-274 163.5,-274 0,-274"/>

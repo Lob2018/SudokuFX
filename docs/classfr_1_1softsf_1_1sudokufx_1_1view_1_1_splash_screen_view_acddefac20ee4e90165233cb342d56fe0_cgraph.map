@@ -8,7 +8,7 @@
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,181,284,181,284,187,252,187"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a762ac1d676ca1be22b521cd731b8d9ba" title="Sets up the SVG for the flower logo in the center of the splash screen." alt="" coords="300,237,559,296"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="210,203,306,230,304,235,208,209"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf" title="Sets up the SVG for the Sudoku logo in the top section of the splash screen." alt="" coords="300,320,559,379"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a53ead1ea80a08e06c15ae42ae101fcdf" title="Sets up the SVG for the &quot;sudo.svg&quot; text logo in the center of the splash screen." alt="" coords="300,320,559,379"/>
 <area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="156,204,219,254,259,281,301,306,312,311,310,316,298,310,256,286,216,258,152,208"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a5d7017836e704c8e6db24f7d677041ba" title="Creates an SVG shape and applies it to a Region." alt="" coords="607,245,805,288"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="531,211,618,238,617,243,529,217"/>

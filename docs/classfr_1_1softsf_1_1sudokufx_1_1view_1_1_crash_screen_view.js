@@ -11,6 +11,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
     [ "showcrashscreen", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a98f5c93368a1478d0aa4087944fab7a1", null ],
     [ "buttonClose", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a7e5f099b70c5a8a4ee33fdab4dd144bd", null ],
     [ "buttonReset", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9a69dcdad012b735ce72ec5fdb956d01", null ],
+    [ "CRASHSCREEN_FONT_RATIO", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a362f4e64a539c303fe9e8afbe86aa9a7", null ],
+    [ "CRASHSCREEN_SIZE_RATIO", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9734099f3b19ee83a9f3ccfd51a56239", null ],
     [ "crashScreenFontSize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a48ab7b260aa31acaa35f49a17a0fe667", null ],
     [ "crashscreenStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9905a8c9318a1656b586d396ea5a2bf4", null ],
     [ "crashscreenvbox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ab3c4bcd7d68fc60939af0661d9e37e10", null ],
@@ -27,5 +29,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
     [ "I_OS_FOLDER_FACTORY", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a190a141b6808a63ac231047923adec16", null ],
     [ "iSplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49c11cdc15fbf969de8ca00ec9817ead", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aefcbc1edb1959f06721ea31a15c7e95c", null ],
-    [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f", null ]
+    [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f", null ],
+    [ "SVG_STROKE_DIVISOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac9448e4ebd346fc8d96b9a43aebde679", null ]
 ];

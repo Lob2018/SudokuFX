@@ -112,18 +112,25 @@ Packages</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a74a25e6890e40c0776edc15742133036" id="r_a74a25e6890e40c0776edc15742133036"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74a25e6890e40c0776edc15742133036">BackgroundDto</a> (Long backgroundid, @NotNull @Size(max=8) String hexcolor, @Size(max=260) String imagepath, @NotNull Boolean isimage)</td></tr>
+<tr class="memdesc:a74a25e6890e40c0776edc15742133036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a background entity.  <br /></td></tr>
 <tr class="separator:a74a25e6890e40c0776edc15742133036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37aaf8c06967608e0eac24a4d458f34b" id="r_a37aaf8c06967608e0eac24a4d458f34b"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37aaf8c06967608e0eac24a4d458f34b">GameDto</a> (Long gameid, @NotNull <a class="el" href="#a55eaa4f45339420cc86114a3d8dab18b">GridDto</a> grididDto, @NotNull Long playerid, @NotNull <a class="el" href="#a82b953d912bf7621392b51e45915af32">GameLevelDto</a> levelidDto, @NotNull Boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
+<tr class="memdesc:a37aaf8c06967608e0eac24a4d458f34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a game entity.  <br /></td></tr>
 <tr class="separator:a37aaf8c06967608e0eac24a4d458f34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82b953d912bf7621392b51e45915af32" id="r_a82b953d912bf7621392b51e45915af32"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82b953d912bf7621392b51e45915af32">GameLevelDto</a> (Byte levelid, @NotNull @Min(1) @Max(3) Byte level)</td></tr>
+<tr class="memdesc:a82b953d912bf7621392b51e45915af32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a game level entity.  <br /></td></tr>
 <tr class="separator:a82b953d912bf7621392b51e45915af32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55eaa4f45339420cc86114a3d8dab18b" id="r_a55eaa4f45339420cc86114a3d8dab18b"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55eaa4f45339420cc86114a3d8dab18b">GridDto</a> (Long gridid, @NotNull @Size(max=81) String defaultgridvalue, @NotNull @Size(max=810) String gridvalue, @NotNull @Min(0) @Max(100) Byte possibilities)</td></tr>
+<tr class="memdesc:a55eaa4f45339420cc86114a3d8dab18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a grid entity.  <br /></td></tr>
 <tr class="separator:a55eaa4f45339420cc86114a3d8dab18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b93797829452798604adaaaf4b0da89" id="r_a4b93797829452798604adaaaf4b0da89"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b93797829452798604adaaaf4b0da89">MenuDto</a> (Byte menuid, @NotNull @Min(1) @Max(3) Byte mode)</td></tr>
+<tr class="memdesc:a4b93797829452798604adaaaf4b0da89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a menu entity.  <br /></td></tr>
 <tr class="separator:a4b93797829452798604adaaaf4b0da89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9760499a9309facaec4ff31e172f76" id="r_aeb9760499a9309facaec4ff31e172f76"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb9760499a9309facaec4ff31e172f76">PlayerDto</a> (Long playerid, @NotNull <a class="el" href="#a57e3465d00d6e83a9d0fd8c03223868d">PlayerLanguageDto</a> playerlanguageidDto, @NotNull <a class="el" href="#a74a25e6890e40c0776edc15742133036">BackgroundDto</a> backgroundidDto, @NotNull <a class="el" href="#a4b93797829452798604adaaaf4b0da89">MenuDto</a> menuidDto, @Nullable <a class="el" href="#a37aaf8c06967608e0eac24a4d458f34b">GameDto</a> selectedGame, @NotNull @Size(max=256) String name, @NotNull Boolean isselected, @NotNull LocalDateTime createdat, @NotNull LocalDateTime updatedat)</td></tr>
+<tr class="memdesc:aeb9760499a9309facaec4ff31e172f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a player.  <br /></td></tr>
 <tr class="separator:aeb9760499a9309facaec4ff31e172f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57e3465d00d6e83a9d0fd8c03223868d" id="r_a57e3465d00d6e83a9d0fd8c03223868d"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57e3465d00d6e83a9d0fd8c03223868d">PlayerLanguageDto</a> (Long playerlanguageid, @NotNull @Size(max=2) String iso)</td></tr>
+<tr class="memdesc:a57e3465d00d6e83a9d0fd8c03223868d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a player's language.  <br /></td></tr>
 <tr class="separator:a57e3465d00d6e83a9d0fd8c03223868d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -155,6 +162,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Data Transfer Object representing a background entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">backgroundid</td><td>the unique identifier of the background </td></tr>
+    <tr><td class="paramname">hexcolor</td><td>the background color in hexadecimal format (max 8 characters), not null </td></tr>
+    <tr><td class="paramname">imagepath</td><td>the optional path to the background image (max 260 characters) </td></tr>
+    <tr><td class="paramname">isimage</td><td>flag indicating if the background uses an image (true) or a color (false), not null </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -201,6 +219,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Data Transfer Object representing a game entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameid</td><td>the unique identifier of the game </td></tr>
+    <tr><td class="paramname">grididDto</td><td>the associated grid data transfer object; must not be null </td></tr>
+    <tr><td class="paramname">playerid</td><td>the identifier of the player linked to the game; must not be null </td></tr>
+    <tr><td class="paramname">levelidDto</td><td>the associated game level data transfer object; must not be null </td></tr>
+    <tr><td class="paramname">isselected</td><td>flag indicating if the game is selected; must not be null </td></tr>
+    <tr><td class="paramname">createdat</td><td>the timestamp when the game was created; must not be null </td></tr>
+    <tr><td class="paramname">updatedat</td><td>the timestamp when the game was last updated; must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -229,6 +261,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Data Transfer Object representing a game level entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">levelid</td><td>the unique identifier of the game level </td></tr>
+    <tr><td class="paramname">level</td><td>the difficulty level, constrained between 1 and 3 (inclusive); must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -261,6 +302,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Data Transfer Object representing a grid entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gridid</td><td>the unique identifier of the grid </td></tr>
+    <tr><td class="paramname">defaultgridvalue</td><td>the default grid value string, max length 81; must not be null </td></tr>
+    <tr><td class="paramname">gridvalue</td><td>the current grid value string, max length 810; must not be null </td></tr>
+    <tr><td class="paramname">possibilities</td><td>the percentage of possibilities (0 to 100); must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a4b93797829452798604adaaaf4b0da89" name="a4b93797829452798604adaaaf4b0da89"></a>
@@ -281,6 +333,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Data Transfer Object representing a menu entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">menuid</td><td>the unique identifier of the menu </td></tr>
+    <tr><td class="paramname">mode</td><td>the mode of the menu, must be between 1 and 3 (inclusive); must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -337,6 +398,22 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Data Transfer Object representing a player. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerid</td><td>the unique identifier of the player </td></tr>
+    <tr><td class="paramname">playerlanguageidDto</td><td>the player's language data, must not be null </td></tr>
+    <tr><td class="paramname">backgroundidDto</td><td>the player's background data, must not be null </td></tr>
+    <tr><td class="paramname">menuidDto</td><td>the menu associated with the player, must not be null </td></tr>
+    <tr><td class="paramname">selectedGame</td><td>the currently selected game for the player, can be null </td></tr>
+    <tr><td class="paramname">name</td><td>the player's name, must not be null and maximum length 256 characters </td></tr>
+    <tr><td class="paramname">isselected</td><td>indicates whether this player is selected, must not be null </td></tr>
+    <tr><td class="paramname">createdat</td><td>the creation timestamp, must not be null </td></tr>
+    <tr><td class="paramname">updatedat</td><td>the last update timestamp, must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -366,6 +443,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Data Transfer Object representing a player's language. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerlanguageid</td><td>the unique identifier of the player language </td></tr>
+    <tr><td class="paramname">iso</td><td>the ISO code of the language, must not be null and maximum length 2 characters </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -374,7 +460,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html">dto</a></li>
-    <li class="footer">Generated on Sat Jul 19 2025 18:57:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 20:29:28 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

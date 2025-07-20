@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 898;
+var viewWidth = 1753;
 var viewHeight = 120;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,10 +59,10 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="519.38,-112 381.12,-112 381.12,-68 519.38,-68 519.38,-112"/>
-<text text-anchor="start" x="389.12" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
-<text text-anchor="start" x="389.12" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/config/database</text>
-<text text-anchor="middle" x="450.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/DataSourceConfigCds.java</text>
+<polygon fill="#999999" stroke="#666666" points="1022.75,-112 884.5,-112 884.5,-68 1022.75,-68 1022.75,-112"/>
+<text text-anchor="start" x="892.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
+<text text-anchor="start" x="892.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/config/database</text>
+<text text-anchor="middle" x="953.62" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/DataSourceConfigCds.java</text>
 </a>
 </g>
 </g>
@@ -70,8 +70,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="194.5,-26 0,-26 0,-6 194.5,-6 194.5,-26"/>
-<text text-anchor="middle" x="97.25" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.*</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="213.25,-26 0,-26 0,-6 213.25,-6 213.25,-26"/>
+<text text-anchor="middle" x="106.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.Bean</text>
 </a>
 </g>
 </g>
@@ -79,8 +79,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M380.93,-74.86C314.87,-61.39 216.56,-41.34 154.74,-28.73"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="155.61,-25.33 145.11,-26.76 154.21,-32.19 155.61,-25.33"/>
+<path fill="none" stroke="#63b8ff" d="M884.23,-84.77C754.23,-76.58 465.26,-57.13 222.62,-32 211.07,-30.8 198.88,-29.39 186.93,-27.92"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="187.42,-24.46 177.07,-26.69 186.55,-31.4 187.42,-24.46"/>
 </a>
 </g>
 </g>
@@ -88,9 +88,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="334.12,-32 212.38,-32 212.38,0 334.12,0 334.12,-32"/>
-<text text-anchor="start" x="220.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">com.zaxxer.hikari.Hikari</text>
-<text text-anchor="middle" x="273.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DataSource</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="422,-32 231.25,-32 231.25,0 422,0 422,-32"/>
+<text text-anchor="start" x="239.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.</text>
+<text text-anchor="middle" x="326.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Configuration</text>
 </a>
 </g>
 </g>
@@ -98,8 +98,8 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M397.62,-67.59C373.59,-57.81 345.3,-46.31 321.78,-36.74"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="323.33,-33.59 312.75,-33.07 320.69,-40.08 323.33,-33.59"/>
+<path fill="none" stroke="#63b8ff" d="M884.3,-82.17C786.43,-72.36 601.86,-53.26 433.76,-32.24"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="434.32,-28.79 423.96,-31.01 433.45,-35.73 434.32,-28.79"/>
 </a>
 </g>
 </g>
@@ -107,9 +107,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="547.88,-32 352.62,-32 352.62,0 547.88,0 547.88,-32"/>
-<text text-anchor="start" x="360.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.annotation.</text>
-<text text-anchor="middle" x="450.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExcludedFromCoverageReportGenerated</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="631,-32 440.25,-32 440.25,0 631,0 631,-32"/>
+<text text-anchor="start" x="448.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.</text>
+<text text-anchor="middle" x="535.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DependsOn</text>
 </a>
 </g>
 </g>
@@ -117,8 +117,8 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M450.25,-67.79C450.25,-60.18 450.25,-51.52 450.25,-43.52"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="453.75,-43.64 450.25,-33.64 446.75,-43.64 453.75,-43.64"/>
+<path fill="none" stroke="#63b8ff" d="M884.13,-77.03C816.53,-65.39 713.11,-47.57 636.46,-34.37"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="637.3,-30.96 626.85,-32.71 636.11,-37.86 637.3,-30.96"/>
 </a>
 </g>
 </g>
@@ -126,9 +126,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="704.38,-32 566.12,-32 566.12,0 704.38,0 704.38,-32"/>
-<text text-anchor="start" x="574.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.os.</text>
-<text text-anchor="middle" x="635.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="840,-32 649.25,-32 649.25,0 840,0 840,-32"/>
+<text text-anchor="start" x="657.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.</text>
+<text text-anchor="middle" x="744.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Profile</text>
 </a>
 </g>
 </g>
@@ -136,8 +136,8 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M505.26,-67.59C530.49,-57.77 560.21,-46.2 584.86,-36.61"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="585.97,-39.93 594.02,-33.04 583.44,-33.41 585.97,-39.93"/>
+<path fill="none" stroke="#63b8ff" d="M891.48,-67.59C862.59,-57.64 828.5,-45.89 800.43,-36.23"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="801.63,-32.94 791.04,-32.99 799.35,-39.55 801.63,-32.94"/>
 </a>
 </g>
 </g>
@@ -145,9 +145,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="890.38,-32 722.12,-32 722.12,0 890.38,0 890.38,-32"/>
-<text text-anchor="start" x="730.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="806.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths.DATABASE_NAME</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="1049,-32 858.25,-32 858.25,0 1049,0 1049,-32"/>
+<text text-anchor="start" x="866.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.context.annotation.</text>
+<text text-anchor="middle" x="953.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PropertySource</text>
 </a>
 </g>
 </g>
@@ -155,8 +155,84 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
 <g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M519.74,-74.95C576.6,-63.45 657.35,-47.11 718.64,-34.72"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="719.26,-38.17 728.36,-32.75 717.87,-31.3 719.26,-38.17"/>
+<path fill="none" stroke="#63b8ff" d="M953.62,-67.79C953.62,-60.18 953.62,-51.52 953.62,-43.52"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="957.13,-43.64 953.63,-33.64 950.13,-43.64 957.13,-43.64"/>
+</a>
+</g>
+</g>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1188.5,-32 1066.75,-32 1066.75,0 1188.5,0 1188.5,-32"/>
+<text text-anchor="start" x="1074.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">com.zaxxer.hikari.Hikari</text>
+<text text-anchor="middle" x="1127.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DataSource</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge6_Node000001_Node000007" class="edge">
+<title>Node1&#45;&gt;Node7</title>
+<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1005.36,-67.59C1028.88,-57.86 1056.55,-46.41 1079.6,-36.87"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1080.88,-40.13 1088.78,-33.07 1078.2,-33.66 1080.88,-40.13"/>
+</a>
+</g>
+</g>
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1402.25,-32 1207,-32 1207,0 1402.25,0 1402.25,-32"/>
+<text text-anchor="start" x="1215" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.annotation.</text>
+<text text-anchor="middle" x="1304.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExcludedFromCoverageReportGenerated</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge7_Node000001_Node000008" class="edge">
+<title>Node1&#45;&gt;Node8</title>
+<g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1022.97,-74.78C1079.02,-63.28 1158.21,-47.03 1218.35,-34.7"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1218.77,-38.18 1227.86,-32.75 1217.36,-31.33 1218.77,-38.18"/>
+</a>
+</g>
+</g>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1558.75,-32 1420.5,-32 1420.5,0 1558.75,0 1558.75,-32"/>
+<text text-anchor="start" x="1428.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.os.</text>
+<text text-anchor="middle" x="1489.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge8_Node000001_Node000009" class="edge">
+<title>Node1&#45;&gt;Node9</title>
+<g id="a_edge8_Node000001_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1022.88,-81.82C1110.47,-72.43 1266.15,-54.66 1409.19,-32.32"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1409.51,-35.82 1418.85,-30.81 1408.43,-28.9 1409.51,-35.82"/>
+</a>
+</g>
+</g>
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1744.75,-32 1576.5,-32 1576.5,0 1744.75,0 1744.75,-32"/>
+<text text-anchor="start" x="1584.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
+<text text-anchor="middle" x="1660.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths.DATABASE_NAME</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node10 -->
+<g id="edge9_Node000001_Node000010" class="edge">
+<title>Node1&#45;&gt;Node10</title>
+<g id="a_edge9_Node000001_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1022.85,-84.1C1134.67,-75.85 1362.21,-57.68 1564.85,-32.3"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1565.03,-35.81 1574.51,-31.08 1564.15,-28.86 1565.03,-35.81"/>
 </a>
 </g>
 </g>

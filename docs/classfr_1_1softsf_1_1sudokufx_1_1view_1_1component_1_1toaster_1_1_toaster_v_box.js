@@ -11,5 +11,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_
     [ "setToastStyle", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a1f7607f18913c940c16c9de28f3e7ae7", null ],
     [ "temporizeToast", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#abd2310564b394c59530d5e7b2a0d0776", null ],
     [ "toastActions", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ac9ab34ee9e1c2828c24ea3d78dabfefd", null ],
+    [ "SHORT_TOAST_DURATION_MS", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a63ac26ce357ce935a0f04c7b1f292a14", null ],
     [ "toast", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a3b72218a41c8c8742d73afe87ab8cf76", null ]
 ];

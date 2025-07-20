@@ -10,5 +10,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "setValues", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#accb66801fa9a7d8993ba472b4eb28932", null ],
     [ "cellViewModels", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a08effb35262e7a92de8e4bd41fc8e7b0", null ],
     [ "GRID_SIZE", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#afd1217d7084a63e6556c5c360cee4a07", null ],
-    [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4d99b8d993ea1d81d18c436eea4b8e80", null ]
+    [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4d99b8d993ea1d81d18c436eea4b8e80", null ],
+    [ "TOTAL_CELLS", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca2db631f0e0d1eb751367a0c0237867", null ]
 ];

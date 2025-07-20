@@ -101,6 +101,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.view.component.PossibilityStarsHBox Class Reference</div></div>
 </div><!--header-->
@@ -113,14 +114,14 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box__inherit__graph.svg" width="248" height="598"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.view.component.PossibilityStarsHBox:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box__coll__graph.svg" width="227" height="342"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box__coll__graph.svg" width="227" height="416"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -145,6 +146,13 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a072516f126c56ed5d5de6cd25ae1817b" id="r_a072516f126c56ed5d5de6cd25ae1817b"><td class="memItemLeft" align="right" valign="top">final IntegerProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a072516f126c56ed5d5de6cd25ae1817b">percentage</a> = new SimpleIntegerProperty(100)</td></tr>
 <tr class="separator:a072516f126c56ed5d5de6cd25ae1817b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:acad359aaac86751fc49a3de187a4a969" id="r_acad359aaac86751fc49a3de187a4a969"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acad359aaac86751fc49a3de187a4a969">HALF_STAR_THRESHOLD</a> = 0.5</td></tr>
+<tr class="separator:acad359aaac86751fc49a3de187a4a969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e8ac39b474991d278746b8a7de2d84" id="r_a25e8ac39b474991d278746b8a7de2d84"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25e8ac39b474991d278746b8a7de2d84">STAR_DIVISOR</a> = 0.1</td></tr>
+<tr class="separator:a25e8ac39b474991d278746b8a7de2d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100). </p>
@@ -281,6 +289,28 @@ Empty star: <code class="JavaDocCode">\uE83A</code> </li>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="acad359aaac86751fc49a3de187a4a969" name="acad359aaac86751fc49a3de187a4a969"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad359aaac86751fc49a3de187a4a969">&#9670;&#160;</a></span>HALF_STAR_THRESHOLD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double fr.softsf.sudokufx.view.component.PossibilityStarsHBox.HALF_STAR_THRESHOLD = 0.5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a072516f126c56ed5d5de6cd25ae1817b" name="a072516f126c56ed5d5de6cd25ae1817b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a072516f126c56ed5d5de6cd25ae1817b">&#9670;&#160;</a></span>percentage</h2>
 
@@ -303,6 +333,28 @@ Empty star: <code class="JavaDocCode">\uE83A</code> </li>
 
 </div>
 </div>
+<a id="a25e8ac39b474991d278746b8a7de2d84" name="a25e8ac39b474991d278746b8a7de2d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e8ac39b474991d278746b8a7de2d84">&#9670;&#160;</a></span>STAR_DIVISOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double fr.softsf.sudokufx.view.component.PossibilityStarsHBox.STAR_DIVISOR = 0.1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/main/java/fr/softsf/sudokufx/view/component/<a class="el" href="_possibility_stars_h_box_8java.html">PossibilityStarsHBox.java</a></li>
 </ul>
@@ -312,7 +364,7 @@ Empty star: <code class="JavaDocCode">\uE83A</code> </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html">component</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a></li>
-    <li class="footer">Generated on Sat Jul 19 2025 18:57:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 20:29:29 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -33,7 +33,7 @@ var searchData=
   ['osinfoutest_2ejava_30',['OsInfoUTest.java',['../_os_info_u_test_8java.html',1,'']]],
   ['osinitializedfolders_31',['OsInitializedFolders',['../namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a90a7316060415faf8dd0b49e12e422fd',1,'fr::softsf::sudokufx::config::os']]],
   ['osinitializedfolders_2ejava_32',['OsInitializedFolders.java',['../_os_initialized_folders_8java.html',1,'']]],
-  ['osname_33',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html',1,'fr.softsf.sudokufx.common.enums.OsName'],['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a',1,'fr.softsf.sudokufx.common.enums.OsName.OsName()']]],
+  ['osname_33',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html',1,'fr.softsf.sudokufx.common.enums.OsName'],['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1eff4ddf127fb0d12824ddb21b52edfd',1,'fr.softsf.sudokufx.common.enums.OsName.OsName()']]],
   ['osname_2ejava_34',['OsName.java',['../_os_name_8java.html',1,'']]],
   ['osnameutest_35',['OsNameUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]],
   ['osnameutest_2ejava_36',['OsNameUTest.java',['../_os_name_u_test_8java.html',1,'']]],

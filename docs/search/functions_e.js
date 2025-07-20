@@ -10,5 +10,5 @@ var searchData=
   ['openingmaximizeprimarystage_7',['openingMaximizePrimaryStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a948d84a7a3c687605fad17a291287d89',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['openingshowstage_8',['openingShowStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a7c523b99ea737199e64610465f238486',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['osinitializedfolders_9',['OsInitializedFolders',['../namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a90a7316060415faf8dd0b49e12e422fd',1,'fr::softsf::sudokufx::config::os']]],
-  ['osname_10',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a',1,'fr::softsf::sudokufx::common::enums::OsName']]]
+  ['osname_10',['OsName',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1eff4ddf127fb0d12824ddb21b52edfd',1,'fr::softsf::sudokufx::common::enums::OsName']]]
 ];

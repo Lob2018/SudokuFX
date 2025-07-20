@@ -26,7 +26,7 @@
 <text text-anchor="start" x="14" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String logBackMessage</text>
 <text text-anchor="start" x="4" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogBackTxt(final String</text>
-<text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00"> logBackMessage_)</text>
+<text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00"> logBackMessage)</text>
 <text text-anchor="start" x="4" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String getLogBackMessage()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-122 0,-122 168.75,-122 168.75,-122 0,-122"/>

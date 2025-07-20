@@ -9,6 +9,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "bindLevelSelectedStyling", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ae6e221d303609c7e310658abb1a58815", null ],
     [ "bindLevelStarsVisibility", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af9c94d119491afaed311aa6eefc1234f", null ],
     [ "bindLevelTooltipText", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a8056a23171a3cc96672893d680500815", null ],
+    [ "bindVisibleAndManaged", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a0abee02009b88e1e2260fdae077dc597", null ],
     [ "gridInitialization", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9af1a37feb2a608a4e057ec28e91c74f", null ],
     [ "handleDifficultLevelShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af958d3aeef88bd1e7e93c04956277c7f", null ],
     [ "handleEasyLevelShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#adcc2e6b5b752476dc81d253984275aca", null ],

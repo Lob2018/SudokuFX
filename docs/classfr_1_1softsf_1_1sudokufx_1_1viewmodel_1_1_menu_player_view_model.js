@@ -50,5 +50,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model =
     [ "playerTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a7048e176ca1af27fd851ce02ac509d76", null ],
     [ "reduceAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ab4b636a7eb3a2ae69583b58f8996ce25", null ],
     [ "reduceText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a7e8d516348d565fa756908f7ad2dae15", null ],
-    [ "reduceTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a36f678d5ec946be4bad3612460e3be97", null ]
+    [ "reduceTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a36f678d5ec946be4bad3612460e3be97", null ],
+    [ "TEST_NUMBER_LOADED_PLAYERS", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#af86e621c7f994a4842aeb1341ea333f8", null ]
 ];

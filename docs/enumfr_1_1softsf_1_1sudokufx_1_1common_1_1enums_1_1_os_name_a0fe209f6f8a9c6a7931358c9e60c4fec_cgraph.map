@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.common.enums.OsName.detect" name="fr.softsf.sudokufx.common.enums.OsName.detect">
 <area shape="rect" id="Node000001" title="Detects the current operating system by reading the system property &quot;os.name&quot;." alt="" coords="5,5,230,48"/>
-<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a" title=" " alt="" coords="278,5,502,48"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1eff4ddf127fb0d12824ddb21b52edfd" title=" " alt="" coords="278,5,502,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,24,262,24,262,29,230,29"/>
 </map>

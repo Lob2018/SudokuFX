@@ -47,5 +47,11 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model =
     [ "saveRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#abb44470af84c9d7de9c337086bb4e3bb", null ],
     [ "saveText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a15bab0fef4d81ecabebf776844966f88", null ],
     [ "saveTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#afc93f0693306dae15b8be34226d8129a", null ],
-    [ "selectedBackup", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7887293ee90b072f1fd4c94800f948a4", null ]
+    [ "selectedBackup", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7887293ee90b072f1fd4c94800f948a4", null ],
+    [ "TEST_BACKUP_END", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a70c496b17fe209580cd7fd0b3186c4dc", null ],
+    [ "TEST_BACKUP_SELECTED_MINUTE", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#aea46e01b6af2e18d39f24beb97f35f10", null ],
+    [ "TEST_BACKUP_START", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#aff9a87ac7fa8faedaff951086e114a08", null ],
+    [ "TEST_GRID_BYTE_VALUE", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a4601d475c213d5db7bc5adf5e1372245", null ],
+    [ "TEST_GRID_STRING_LENGTH", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a5b9cca8d7e2cd2cab3e30c4623b2424c", null ],
+    [ "TEST_GRID_STRING_LENGTH_ALT", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a9d33dd0acf99583767d69aff8b0ac0b6", null ]
 ];

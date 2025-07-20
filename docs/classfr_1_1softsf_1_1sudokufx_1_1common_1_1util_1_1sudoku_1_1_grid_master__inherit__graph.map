@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster">
-<area shape="rect" id="Node000001" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="5,123,243,1931"/>
+<area shape="rect" id="Node000001" title="Provides essential functionalities for generating and solving Sudoku puzzles." alt="" coords="5,123,243,2064"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="85,5,164,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,90,127,123,122,123,122,90"/>
 </map>

@@ -105,17 +105,21 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_g
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.benchmark.BenchGridMaster Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Classe de benchmark pour mesurer les performances des opérations sur la grille Sudoku, notamment le masquage de cases dans une grille résolue.
+ <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.benchmark.BenchGridMaster:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master__coll__graph.svg" width="226" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master__coll__graph.svg" width="226" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a83424bf6ea858a7cc811cd70876f0a82" id="r_a83424bf6ea858a7cc811cd70876f0a82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83424bf6ea858a7cc811cd70876f0a82">measureSudo</a> (Blackhole bh)</td></tr>
+<tr class="memdesc:a83424bf6ea858a7cc811cd70876f0a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Benchmarks the <code><a class="el" href="#a2afe77e82860a2ce4a3656a1911b851f">cacherLesCases(int, int[])</a></code> method by hiding a fixed number of cells in a copy of the solved Sudoku grid.  <br /></td></tr>
 <tr class="separator:a83424bf6ea858a7cc811cd70876f0a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -126,14 +130,19 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ac14d9bd13ba2978f2cabbb4ab5f3c73d" id="r_ac14d9bd13ba2978f2cabbb4ab5f3c73d"><td class="memItemLeft" align="right" valign="top">static final int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac14d9bd13ba2978f2cabbb4ab5f3c73d">DEFAULT_INDICES</a> = IntStream.range(0, 81).toArray()</td></tr>
+<tr class="memitem:ac14d9bd13ba2978f2cabbb4ab5f3c73d" id="r_ac14d9bd13ba2978f2cabbb4ab5f3c73d"><td class="memItemLeft" align="right" valign="top">static final int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac14d9bd13ba2978f2cabbb4ab5f3c73d">DEFAULT_INDICES</a> = IntStream.range(0, <a class="el" href="#a3ee3fc9c5c27f6bc22de6c55981d07e8">NOMBRE_CASES</a>).toArray()</td></tr>
 <tr class="separator:ac14d9bd13ba2978f2cabbb4ab5f3c73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb8e5aed4ec598828926e9fdefe50014" id="r_acb8e5aed4ec598828926e9fdefe50014"><td class="memItemLeft" align="right" valign="top">static final int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb8e5aed4ec598828926e9fdefe50014">grilleResolue</a></td></tr>
-<tr class="separator:acb8e5aed4ec598828926e9fdefe50014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a328ee5f933afa7f9923aa970875ab823" id="r_a328ee5f933afa7f9923aa970875ab823"><td class="memItemLeft" align="right" valign="top">static final int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a328ee5f933afa7f9923aa970875ab823">GRILLE_RESOLUE</a></td></tr>
+<tr class="separator:a328ee5f933afa7f9923aa970875ab823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee3fc9c5c27f6bc22de6c55981d07e8" id="r_a3ee3fc9c5c27f6bc22de6c55981d07e8"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ee3fc9c5c27f6bc22de6c55981d07e8">NOMBRE_CASES</a> = 81</td></tr>
 <tr class="separator:a3ee3fc9c5c27f6bc22de6c55981d07e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420dd14d54e0139bdb78be3e39ae403e" id="r_a420dd14d54e0139bdb78be3e39ae403e"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a420dd14d54e0139bdb78be3e39ae403e">NOMBRE_DE_CASES_A_CACHER</a> = 50</td></tr>
+<tr class="separator:a420dd14d54e0139bdb78be3e39ae403e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Classe de benchmark pour mesurer les performances des opérations sur la grille Sudoku, notamment le masquage de cases dans une grille résolue. </p>
+<p>Utilise JMH pour exécuter des tests de performance en mesurant le temps moyen d'exécution. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2afe77e82860a2ce4a3656a1911b851f" name="a2afe77e82860a2ce4a3656a1911b851f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2afe77e82860a2ce4a3656a1911b851f">&#9670;&#160;</a></span>cacherLesCases()</h2>
 
@@ -186,6 +195,14 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Benchmarks the <code><a class="el" href="#a2afe77e82860a2ce4a3656a1911b851f">cacherLesCases(int, int[])</a></code> method by hiding a fixed number of cells in a copy of the solved Sudoku grid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bh</td><td>the <code><a class="el" href="">Blackhole</a></code> to consume the result and avoid dead code elimination during benchmarking </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -207,7 +224,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int [] fr.softsf.sudokufx.benchmark.BenchGridMaster.DEFAULT_INDICES = IntStream.range(0, 81).toArray()</td>
+          <td class="memname">final int [] fr.softsf.sudokufx.benchmark.BenchGridMaster.DEFAULT_INDICES = IntStream.range(0, <a class="el" href="#a3ee3fc9c5c27f6bc22de6c55981d07e8">NOMBRE_CASES</a>).toArray()</td>
         </tr>
       </table>
   </td>
@@ -219,8 +236,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acb8e5aed4ec598828926e9fdefe50014" name="acb8e5aed4ec598828926e9fdefe50014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb8e5aed4ec598828926e9fdefe50014">&#9670;&#160;</a></span>grilleResolue</h2>
+<a id="a328ee5f933afa7f9923aa970875ab823" name="a328ee5f933afa7f9923aa970875ab823"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a328ee5f933afa7f9923aa970875ab823">&#9670;&#160;</a></span>GRILLE_RESOLUE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +246,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int [] fr.softsf.sudokufx.benchmark.BenchGridMaster.grilleResolue</td>
+          <td class="memname">final int [] fr.softsf.sudokufx.benchmark.BenchGridMaster.GRILLE_RESOLUE</td>
         </tr>
       </table>
   </td>
@@ -274,6 +291,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a420dd14d54e0139bdb78be3e39ae403e" name="a420dd14d54e0139bdb78be3e39ae403e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420dd14d54e0139bdb78be3e39ae403e">&#9670;&#160;</a></span>NOMBRE_DE_CASES_A_CACHER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int fr.softsf.sudokufx.benchmark.BenchGridMaster.NOMBRE_DE_CASES_A_CACHER = 50</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/main/java/fr/softsf/sudokufx/benchmark/<a class="el" href="_bench_grid_master_8java.html">BenchGridMaster.java</a></li>
 </ul>
@@ -283,7 +322,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html">benchmark</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html">BenchGridMaster</a></li>
-    <li class="footer">Generated on Sat Jul 19 2025 18:57:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 20:29:28 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -6,7 +6,7 @@ var searchData=
   ['updateitem_3',['updateItem',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#acd5440f488e08198106fa85fec744914',1,'fr::softsf::sudokufx::view::component::list::GenericDtoListCell']]],
   ['updateselectedlevel_4',['updateSelectedLevel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a76e3858283a44df2008e93c998e4e37a',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
   ['url_5',['url',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a0c73091222a6e5881057532a1bd73aa5',1,'fr.softsf.sudokufx.common.enums.Urls.url'],['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test.html#ab69da1193bb6e59ec8e61af1c0980a26',1,'fr.softsf.sudokufx.testing.integration.service.VersionServiceITest.url']]],
-  ['urls_6',['Urls',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html',1,'fr.softsf.sudokufx.common.enums.Urls'],['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a9c9e3a875af07c4f1c08f72645824c85',1,'fr.softsf.sudokufx.common.enums.Urls.Urls()']]],
+  ['urls_6',['Urls',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html',1,'fr.softsf.sudokufx.common.enums.Urls'],['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#aba9198c3a613a4ecce57d6836e0e4117',1,'fr.softsf.sudokufx.common.enums.Urls.Urls()']]],
   ['urls_2ejava_7',['Urls.java',['../_urls_8java.html',1,'']]],
   ['useful_20links_8',['Useful links',['../index.html#Useful_links',1,'']]],
   ['user_5fhome_9',['USER_HOME',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a44a8d5d795ade5614fc15804cb2ee684',1,'fr::softsf::sudokufx::common::enums::Paths']]],

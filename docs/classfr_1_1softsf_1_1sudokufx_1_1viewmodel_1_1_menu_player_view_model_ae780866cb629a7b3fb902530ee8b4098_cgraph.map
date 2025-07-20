@@ -1,23 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.loadPlayers" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.loadPlayers">
-<area shape="rect" id="Node000001" title="Loads players into the observable list." alt="" coords="5,81,232,124"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aee456e9687b1301a3d7559374d989855" title="Generates a sample PlayerDto instance for testing purposes." alt="" coords="280,73,525,132"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,100,264,100,264,105,232,105"/>
-<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="828,5,1068,32"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="525,73,573,64,813,30,813,36,573,69,526,78"/>
-<area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title=" " alt="" coords="847,60,1049,87"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="525,91,573,88,831,75,832,81,573,93,525,96"/>
-<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aeb9760499a9309facaec4ff31e172f76" title=" " alt="" coords="573,127,780,153"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="526,117,559,121,558,127,525,122"/>
-<area shape="rect" id="Node000009" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d" title=" " alt="" coords="855,169,1041,212"/>
-<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="472,130,521,148,574,163,642,175,711,182,839,189,839,194,711,188,641,180,572,168,520,153,470,135"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="695,124,752,85,827,46,860,34,862,39,829,50,755,90,698,128"/>
-<area shape="poly" id="edge9_Node000005_Node000004" title=" " alt="" coords="734,123,875,88,877,93,735,129"/>
-<area shape="poly" id="edge10_Node000005_Node000005" title=" " alt="" coords="632,128,623,118,629,108,647,102,677,100,709,103,726,109,724,114,708,108,677,105,648,107,632,112,629,117,636,124"/>
-<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a37aaf8c06967608e0eac24a4d458f34b" title=" " alt="" coords="845,119,1051,145"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="781,134,830,133,830,138,781,140"/>
-<area shape="poly" id="edge11_Node000005_Node000009" title=" " alt="" coords="753,151,840,168,839,173,752,157"/>
-<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" title=" " alt="" coords="1121,81,1305,124"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="1051,118,1105,112,1106,117,1051,123"/>
-<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" title=" " alt="" coords="1116,148,1310,175"/>
-<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="1051,141,1101,146,1100,152,1051,146"/>
+<area shape="rect" id="Node000001" title="Loads players into the observable list." alt="" coords="5,13,232,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aee456e9687b1301a3d7559374d989855" title="Generates a sample PlayerDto instance for testing purposes." alt="" coords="280,5,525,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,32,264,32,264,37,232,37"/>
 </map>

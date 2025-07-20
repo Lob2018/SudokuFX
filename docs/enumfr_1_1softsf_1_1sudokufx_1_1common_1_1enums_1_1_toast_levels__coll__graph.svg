@@ -36,7 +36,7 @@
 <text text-anchor="start" x="39" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String level</text>
 <text text-anchor="start" x="16.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="39" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToastLevels(final</text>
-<text text-anchor="start" x="39" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String level_)</text>
+<text text-anchor="start" x="39" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String level)</text>
 <text text-anchor="start" x="16.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="39" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String getLevel()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-110 0,-110 160.25,-110 160.25,-110 0,-110"/>

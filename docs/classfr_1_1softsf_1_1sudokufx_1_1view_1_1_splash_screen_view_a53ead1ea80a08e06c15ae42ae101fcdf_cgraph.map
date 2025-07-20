@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.view.SplashScreenView.setSplashscreenvboxTophboxLogosudosvg" name="fr.softsf.sudokufx.view.SplashScreenView.setSplashscreenvboxTophboxLogosudosvg">
-<area shape="rect" id="Node000001" title="Sets up the SVG for the Sudoku logo in the top section of the splash screen." alt="" coords="5,5,265,64"/>
+<area shape="rect" id="Node000001" title="Sets up the SVG for the &quot;sudo.svg&quot; text logo in the center of the splash screen." alt="" coords="5,5,265,64"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a5d7017836e704c8e6db24f7d677041ba" title="Creates an SVG shape and applies it to a Region." alt="" coords="313,13,511,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,32,297,32,297,37,265,37"/>
 </map>

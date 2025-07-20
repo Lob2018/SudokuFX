@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.config.os.MacosFolderFactory.MacosFolderFactory" name="fr.softsf.sudokufx.config.os.MacosFolderFactory.MacosFolderFactory">
 <area shape="rect" id="Node000001" title="Constructor that initializes the data and logs folder paths." alt="" coords="5,5,268,48"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a90a7316060415faf8dd0b49e12e422fd" title=" " alt="" coords="316,5,500,48"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a90a7316060415faf8dd0b49e12e422fd" title="Holds the initialized paths for data and logs folders." alt="" coords="316,5,500,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,24,300,24,300,29,268,29"/>
 </map>

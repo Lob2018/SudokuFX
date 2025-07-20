@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.view.CrashScreenView" name="fr.softsf.sudokufx.view.CrashScreenView">
-<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="120,197,378,1120"/>
+<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="120,197,378,1232"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="5,11,237,128"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,142,151,197,146,198,134,144"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,142,149,197,144,198,133,143"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="261,5,493,133"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="366,133,356,182,350,180,361,132"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="367,133,358,182,353,181,362,132"/>
 </map>

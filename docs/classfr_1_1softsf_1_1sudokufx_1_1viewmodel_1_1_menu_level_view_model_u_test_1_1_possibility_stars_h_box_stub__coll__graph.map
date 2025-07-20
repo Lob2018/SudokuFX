@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.PossibilityStarsHBoxStub" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.PossibilityStarsHBoxStub">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,384,242,592"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html" title="A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100)." alt="" coords="16,123,232,336"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,351,126,384,121,384,121,351"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,459,242,667"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html" title="A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100)." alt="" coords="16,123,232,411"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,426,126,459,121,459,121,426"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="102,5,146,75"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,89,126,123,121,123,121,89"/>
 </map>

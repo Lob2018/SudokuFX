@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.Launcher.main" name="fr.softsf.sudokufx.Launcher.main">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,218,32"/>
+<area shape="rect" id="Node000001" title="The application&#39;s entry point, delegates execution to the SudoMain class." alt="" coords="5,5,218,32"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aba1c3ad97432396d58d7f157ddaa0e4d" title="Main entry point for the application." alt="" coords="266,5,483,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,16,250,16,250,21,218,21"/>
 </map>

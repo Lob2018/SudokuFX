@@ -106,8 +106,10 @@ $(function(){initNavTree('namespacefr_1_1softsf_1_1sudokufx_1_1dto_1_1github.htm
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aef6943e661f3de43f62d419240170be5" id="r_aef6943e661f3de43f62d419240170be5"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef6943e661f3de43f62d419240170be5">CommitDto</a> (String sha, String url)</td></tr>
+<tr class="memdesc:aef6943e661f3de43f62d419240170be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a commit in GitHub.  <br /></td></tr>
 <tr class="separator:aef6943e661f3de43f62d419240170be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25c54784b6cb605bf6bc40eb80331013" id="r_a25c54784b6cb605bf6bc40eb80331013"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25c54784b6cb605bf6bc40eb80331013">TagDto</a> (String name, String zipball_url, String tarball_url, <a class="el" href="#aef6943e661f3de43f62d419240170be5">CommitDto</a> commit, String node_id)</td></tr>
+<tr class="memdesc:a25c54784b6cb605bf6bc40eb80331013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a GitHub tag (release).  <br /></td></tr>
 <tr class="separator:a25c54784b6cb605bf6bc40eb80331013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -129,6 +131,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Data Transfer Object representing a commit in GitHub. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sha</td><td>the SHA hash of the commit </td></tr>
+    <tr><td class="paramname">url</td><td>the API URL to access the commit details </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -165,6 +176,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Data Transfer Object representing a GitHub tag (release). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the tag (e.g., "v1.0.0") </td></tr>
+    <tr><td class="paramname">zipball_url</td><td>the URL to download the source as a zip archive </td></tr>
+    <tr><td class="paramname">tarball_url</td><td>the URL to download the source as a tarball archive </td></tr>
+    <tr><td class="paramname">commit</td><td>the commit associated with this tag </td></tr>
+    <tr><td class="paramname">node_id</td><td>the GitHub internal node ID for this tag </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -181,7 +204,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html">dto</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1dto_1_1github.html">github</a></li>
-    <li class="footer">Generated on Sat Jul 19 2025 18:57:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 20:29:28 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -46,6 +46,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model =
     [ "backgroundRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a99c044dec210fdf43b956c70a89df684", null ],
     [ "backgroundText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a8c9b1bbf4d26aa65acb18b4996bca048", null ],
     [ "backgroundTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a8cbe45a34f986396256eb61e959811c1", null ],
+    [ "HEX_RADIX", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#afd4f859304dfdeb85e0485bd17fa53f0", null ],
     [ "imageUtils", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a5b206dd45455fded011060b91c6a951c", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a4497de6f3e9d972d61e713696a43786c", null ],
     [ "ROLE_CLOSED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a3d8eb20b89336bf4fe8cd13b2f48f4cf", null ],

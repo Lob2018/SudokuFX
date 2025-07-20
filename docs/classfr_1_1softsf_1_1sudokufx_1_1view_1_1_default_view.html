@@ -195,6 +195,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a8056a23171a3cc96672893d680500815" id="r_a8056a23171a3cc96672893d680500815"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8056a23171a3cc96672893d680500815">bindLevelTooltipText</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a> starsBox, Button maxi, Button mini)</td></tr>
 <tr class="memdesc:a8056a23171a3cc96672893d680500815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the tooltip text properties of both buttons to the accessible text corresponding to the specified difficulty level to ensure consistency and improve user experience.  <br /></td></tr>
 <tr class="separator:a8056a23171a3cc96672893d680500815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abee02009b88e1e2260fdae077dc597" id="r_a0abee02009b88e1e2260fdae077dc597"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0abee02009b88e1e2260fdae077dc597">bindVisibleAndManaged</a> (Region menu, ActiveMenuOrSubmenuViewModel.ActiveMenu menuType)</td></tr>
+<tr class="separator:a0abee02009b88e1e2260fdae077dc597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9af1a37feb2a608a4e057ec28e91c74f" id="r_a9af1a37feb2a608a4e057ec28e91c74f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9af1a37feb2a608a4e057ec28e91c74f">gridInitialization</a> ()</td></tr>
 <tr class="memdesc:a9af1a37feb2a608a4e057ec28e91c74f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds each cell's Label and TextArea to the GridPane at positions calculated from their index in a 9x9 grid, after initializing the cell view models.  <br /></td></tr>
 <tr class="separator:a9af1a37feb2a608a4e057ec28e91c74f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -484,6 +486,13 @@ Static Private Attributes</h2></td></tr>
 
 <p>Initializes bindings between each menu pane's visibility and managed state and the corresponding value of the active menu from <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu.">ActiveMenuOrSubmenuViewModel</a>. </p>
 <p>Ensures that only the currently active menu is visible and participates in layout calculations. </p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a842f4799fbccb6507d669da06f95554c_cgraph.svg" width="506" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -616,11 +625,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a2782545a22496fbb6185093a2737b248_cgraph.svg" width="450" height="403"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -847,6 +856,35 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0abee02009b88e1e2260fdae077dc597" name="a0abee02009b88e1e2260fdae077dc597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0abee02009b88e1e2260fdae077dc597">&#9670;&#160;</a></span>bindVisibleAndManaged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.bindVisibleAndManaged </td>
+          <td>(</td>
+          <td class="paramtype">Region</td>          <td class="paramname"><span class="paramname"><em>menu</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ActiveMenuOrSubmenuViewModel.ActiveMenu</td>          <td class="paramname"><span class="paramname"><em>menuType</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9af1a37feb2a608a4e057ec28e91c74f" name="a9af1a37feb2a608a4e057ec28e91c74f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9af1a37feb2a608a4e057ec28e91c74f">&#9670;&#160;</a></span>gridInitialization()</h2>
 
@@ -934,11 +972,11 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a6412e7d21a90c98fa3b40050ec3e30a4_cgraph.svg" width="580" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1222,11 +1260,11 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 
 <p>Initializes the default view. </p>
 <p>This method is automatically called by JavaFX after loading the FXML. </p>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a9a576a87b5eaf00c2bd1095be8e17eeb_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1256,11 +1294,11 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 </div><div class="memdoc">
 
 <p>Initializes each difficulty level section in the menu by binding UI components to ViewModel properties for EASY, MEDIUM, and DIFFICULT levels. </p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a8f244e76c83f37d4050b585d3991815e_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1431,11 +1469,11 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 </dl>
 
 <p>Implements <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html#af5213ac1409a8e916a73f929188c28ad">fr.softsf.sudokufx.common.interfaces.IMainView</a>.</p>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_ab4d767b0a3c661bf47dd1e1a353bb9bc_cgraph.svg" width="536" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1520,11 +1558,11 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 
 <p>Initializes bindings and event listeners for the player menu components. </p>
 <p>Binds accessible texts, tooltips, and displayed texts to the ViewModel. Synchronizes selected player state between the ListView and ViewModel. Sets up the player ListView with custom cells and refreshes UI state. </p>
-<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a084dbf4edfe7c82d0eee95e6ff0ee807_cgraph.svg" width="491" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1555,11 +1593,11 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 
 <p>Initializes bindings and event listeners for the save menu components. </p>
 <p>Binds accessibility texts, tooltips, and labels to the ViewModel. Synchronizes the selected backup between the ListView and the ViewModel. Sets up the ListView with custom backup cells and refreshes UI state. </p>
-<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view_a8ac7a557b342700c44773bfd5f047bb1_cgraph.svg" width="484" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -3865,7 +3903,7 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html">DefaultView</a></li>
-    <li class="footer">Generated on Sat Jul 19 2025 18:57:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 20:29:29 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

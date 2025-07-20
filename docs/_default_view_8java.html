@@ -105,7 +105,9 @@ $(function(){initNavTree('_default_view_8java.html',''); initResizable(true); })
 <div class="contents">
 <div class="textblock"><code>import java.io.File;</code><br />
 <code>import java.util.Objects;</code><br />
-<code>import javafx.animation.*;</code><br />
+<code>import javafx.animation.FadeTransition;</code><br />
+<code>import javafx.animation.KeyFrame;</code><br />
+<code>import javafx.animation.Timeline;</code><br />
 <code>import javafx.application.Platform;</code><br />
 <code>import javafx.beans.binding.Bindings;</code><br />
 <code>import javafx.beans.binding.BooleanBinding;</code><br />
@@ -116,11 +118,16 @@ $(function(){initNavTree('_default_view_8java.html',''); initResizable(true); })
 <code>import javafx.fxml.FXML;</code><br />
 <code>import javafx.geometry.Rectangle2D;</code><br />
 <code>import javafx.scene.Node;</code><br />
+<code>import javafx.scene.control.Alert;</code><br />
 <code>import javafx.scene.control.Button;</code><br />
+<code>import javafx.scene.control.ColorPicker;</code><br />
 <code>import javafx.scene.control.Label;</code><br />
-<code>import javafx.scene.control.*;</code><br />
+<code>import javafx.scene.control.ListView;</code><br />
+<code>import javafx.scene.control.TextArea;</code><br />
 <code>import javafx.scene.image.Image;</code><br />
-<code>import javafx.scene.layout.*;</code><br />
+<code>import javafx.scene.layout.GridPane;</code><br />
+<code>import javafx.scene.layout.Region;</code><br />
+<code>import javafx.scene.layout.VBox;</code><br />
 <code>import javafx.scene.shape.Rectangle;</code><br />
 <code>import javafx.stage.FileChooser;</code><br />
 <code>import javafx.stage.Screen;</code><br />
@@ -145,16 +152,19 @@ $(function(){initNavTree('_default_view_8java.html',''); initResizable(true); })
 <code>import fr.softsf.sudokufx.view.component.SpinnerGridPane;</code><br />
 <code>import fr.softsf.sudokufx.view.component.list.GenericDtoListCell;</code><br />
 <code>import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.HelpViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuMiniViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuNewViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.MenuSolveViewModel;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;</code><br />
-<code>import fr.softsf.sudokufx.viewmodel.*;</code><br />
-</div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for DefaultView.java:</div>
-<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="_default_view_8java__incl.svg" width="100%" height="408"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -173,7 +183,7 @@ Packages</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5eb159725f84c66aafd839904a4acdd0.html">main</a></li><li class="navelem"><a class="el" href="dir_fd3f6763802dee1ad875f6c80eac0bda.html">java</a></li><li class="navelem"><a class="el" href="dir_91390426c0f30a4fef59e9ae252d2f44.html">fr</a></li><li class="navelem"><a class="el" href="dir_df66706d7efa0a9fd8002f7f6346de3d.html">softsf</a></li><li class="navelem"><a class="el" href="dir_757e38ffca8cea164996faf0234210f9.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_664d5835105ddaaeb330d567537f6eef.html">view</a></li><li class="navelem"><a class="el" href="_default_view_8java.html">DefaultView.java</a></li>
-    <li class="footer">Generated on Sat Jul 19 2025 18:57:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jul 20 2025 20:29:28 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

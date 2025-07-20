@@ -1,6 +1,6 @@
 var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name =
 [
-    [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a280080e9fbe6021b654a9b86e03f8a0a", null ],
+    [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1eff4ddf127fb0d12824ddb21b52edfd", null ],
     [ "detect", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a0fe209f6f8a9c6a7931358c9e60c4fec", null ],
     [ "getOs", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a0fd9829f863efdeac0d7666bcb7e7220", null ],
     [ "EMPTY_OS_FOR_TESTS", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#aeee0d7b76594e13d91b047459062aeb5", null ],

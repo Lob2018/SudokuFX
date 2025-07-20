@@ -17,6 +17,6 @@ var searchData=
   ['localeproperty_14',['localeProperty',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#aec30533d4a2ace2d0e62e4310a3e3b89',1,'fr::softsf::sudokufx::common::enums::I18n']]],
   ['logandinstantiateillegalargument_15',['logAndInstantiateIllegalArgument',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a4c20704e8a8d81f57c6775c3939ee2f1',1,'fr::softsf::sudokufx::common::exception::ExceptionTools']]],
   ['logandthrowillegalargumentifblank_16',['logAndThrowIllegalArgumentIfBlank',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a0d77e90c3561b0aea542126cb69de6a3',1,'fr::softsf::sudokufx::common::exception::ExceptionTools']]],
-  ['logbacktxt_17',['LogBackTxt',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#acd80c4527386888aed0a549af2429a3e',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]],
+  ['logbacktxt_17',['LogBackTxt',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#a021b5f0d143009e887ef8dded42041cd',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]],
   ['logsqlinvalidauthorization_18',['logSqlInvalidAuthorization',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ae8c480e4259c82f2983146fd756ce1e5',1,'fr::softsf::sudokufx::SudoMain']]]
 ];

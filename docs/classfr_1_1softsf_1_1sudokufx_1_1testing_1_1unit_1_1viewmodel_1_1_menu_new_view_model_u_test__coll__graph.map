@@ -1,8 +1,8 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,1195,263,1392"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="35,5,233,347"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,346,128,411,123,771,128,1131,130,1178,125,1178,123,1131,118,771,123,411,125,346"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status." alt="" coords="232,411,456,1131"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="197,346,229,436,223,437,192,347"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,1086,215,1132,193,1181,189,1179,211,1130,229,1084"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1232,263,1429"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="35,5,233,384"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,384,128,448,123,808,128,1168,130,1215,125,1215,123,1168,118,808,123,448,124,384"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status." alt="" coords="232,448,456,1168"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="201,383,229,463,224,465,196,385"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,1124,215,1169,193,1218,189,1216,211,1167,229,1122"/>
 </map>

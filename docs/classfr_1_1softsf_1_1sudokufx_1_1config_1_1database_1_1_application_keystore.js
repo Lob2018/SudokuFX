@@ -18,6 +18,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore
     [ "symmetricKeyNotInKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5b0d0ea827857752fe45ac9bfc4edae3", null ],
     [ "validateAliasNotBlank", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a1d981fbc5ac12da9cacc785a8052e318", null ],
     [ "writeTheKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a9714968659205027206115325bebd480", null ],
+    [ "AES_ALGORITHM", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aeed33d7485183a1af72690e28967288e", null ],
+    [ "AES_KEY_SIZE_BITS", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a330834fe482f315261f10da3290614dd", null ],
     [ "generateSecret", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a19946d979a7c0dedd2b5476f39cda6b9", null ],
     [ "iEncryptionService", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ac82a5e7b858e007603473771101f9f1c", null ],
     [ "iOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ac63fb105a7e690818e8258792cc45901", null ],
@@ -29,7 +31,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ace43613c3b13e7660359b931ef52f1e9", null ],
     [ "PASS_ALIAS", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aef6d24f743ee77011229198633853c28", null ],
     [ "password", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ad765356dfde41dc3eda886c931a89329", null ],
-    [ "pwdArray", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a6b71b776cf0f177beec6f11addf16de3", null ],
+    [ "PWD_ARRAY", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ae8d185d14574cec389107b3a9beacdeb", null ],
     [ "SYMMETRIC_KEY_ALIAS", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a7b5b8814e0c194221034675c9fef5a35", null ],
     [ "username", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aec1e881af292875cf6b72940c9753b45", null ],
     [ "USERNAME_ALIAS", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a0bb7d54a1c64945bfbf4026865a57363", null ]

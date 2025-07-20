@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.dto.github.TagDto" name="fr.softsf.sudokufx.dto.github.TagDto">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,194,48"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto_1_1github.html#aef6943e661f3de43f62d419240170be5" title=" " alt="" coords="242,5,430,48"/>
+<area shape="rect" id="Node000001" title="Data Transfer Object representing a GitHub tag (release)." alt="" coords="5,5,194,48"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto_1_1github.html#aef6943e661f3de43f62d419240170be5" title="Data Transfer Object representing a commit in GitHub." alt="" coords="242,5,430,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,24,226,24,226,29,194,29"/>
 </map>

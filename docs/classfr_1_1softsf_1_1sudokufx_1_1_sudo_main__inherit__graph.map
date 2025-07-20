@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.SudoMain" name="fr.softsf.sudokufx.SudoMain">
-<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="5,123,220,603"/>
+<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="5,123,220,640"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="76,5,150,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,90,116,123,110,123,110,90"/>
 </map>

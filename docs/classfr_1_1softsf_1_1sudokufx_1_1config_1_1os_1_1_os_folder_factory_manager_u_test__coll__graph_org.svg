@@ -127,7 +127,7 @@
 <text text-anchor="start" x="28.44" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="41.75" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String os</text>
 <text text-anchor="start" x="26.94" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="41.75" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsName(final String os_)</text>
+<text text-anchor="start" x="41.75" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsName(final String os)</text>
 <text text-anchor="start" x="26.94" y="-770.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="41.75" y="-770.5" font-family="Helvetica,sans-Serif" font-size="10.00">final String getOs()</text>
 <text text-anchor="start" x="26.94" y="-754.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

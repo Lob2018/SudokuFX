@@ -12,5 +12,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1_sudo_main =
     [ "iMainView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5c7edddbb48f485df00edd6b29959ba4", null ],
     [ "iSplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aebbc7ede26b016d9caa1e29247dd7180", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a1ed8a6eae7155fa65a56147fa51668f6", null ],
+    [ "MINIMUM_TRANSITION_DELAY_MS", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aaae41c5c9baaa1559bd3a69cc3873147", null ],
     [ "stage", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a930416594df6fe160c9722805261e444", null ]
 ];

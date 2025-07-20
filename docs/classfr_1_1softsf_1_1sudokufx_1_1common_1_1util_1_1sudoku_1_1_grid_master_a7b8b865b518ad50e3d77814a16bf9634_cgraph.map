@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleWhileNok" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleWhileNok">
-<area shape="rect" id="Node000001" title="Masque des cases dans la grille et calcule la somme des possibilités restantes." alt="" coords="5,72,267,115"/>
+<area shape="rect" id="Node000001" title="Cache des cases dans la grille et calcule la somme des possibilités restantes." alt="" coords="5,72,267,115"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aedafc76e589c715c380e2732e0ff04d2" title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro." alt="" coords="333,5,581,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,69,335,49,336,54,243,74"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeed90a968624e9b7ccb44958df9ae821" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="333,72,581,115"/>

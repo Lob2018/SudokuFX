@@ -1,7 +1,7 @@
 var searchData=
 [
   ['parseresponse_0',['parseResponse',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe',1,'fr::softsf::sudokufx::service::VersionService']]],
-  ['paths_1',['Paths',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#aa58a5a07a015a1769c8a5782776e5774',1,'fr::softsf::sudokufx::common::enums::Paths']]],
+  ['paths_1',['Paths',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#add31dd0cc64018876561749294e7bec8',1,'fr::softsf::sudokufx::common::enums::Paths']]],
   ['percentageproperty_2',['percentageProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a17bb2d9ba7687f5656310dbd8ddf3297',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
   ['percentageproperty_5fshouldhaveinitialvalue_5f100_5fand_5fsettershouldwork_3',['percentageProperty_shouldHaveInitialValue_100_and_setterShouldWork',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test.html#aa9fdf1b4ad28e48825156b12986764f4',1,'fr::softsf::sudokufx::testing::unit::viewmodel::MenuSolveViewModelUTest']]],
   ['player_4',['Player',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab62e3636232e225aeb3e6e1f16f91e84',1,'fr.softsf.sudokufx.model.Player.Player()'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a5241b5b94a5b58ea677d743e6f6e15ac',1,'fr.softsf.sudokufx.model.Player.Player(Long playerid, PlayerLanguage playerlanguageid, Background backgroundid, Menu menuid, Set&lt; Game &gt; games, String name, Boolean isselected, LocalDateTime createdat, LocalDateTime updatedat)']]],
