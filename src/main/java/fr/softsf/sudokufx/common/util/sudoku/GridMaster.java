@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.common.util.sudoku;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.function.IntPredicate;
 import java.util.stream.IntStream;
 
 import org.springframework.stereotype.Component;
@@ -35,6 +36,9 @@ final class GridMaster implements IGridMaster {
     private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     private int moyenMinPossibilites = 16533;
+    // Durée entre les demandes
+    private static final int DUREE_MAXIMALE_POUR_MASQUE_PRECIS = 500;
+    private static final int DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE = 1000;
 
     private final JakartaValidator jakartaValidator;
 
@@ -188,20 +192,19 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté.
-     * La stratégie de génération ajuste le nombre de cases masquées en fonction du temps écoulé
-     * depuis la dernière génération. Si une nouvelle grille est demandée très rapidement (moins de
-     * 500ms), le nombre de cases masquées est intentionnellement ajusté pour standardiser la
-     * grille.
+     * Génère une grille de Sudoku à résoudre en cachant des cases selon le niveau de difficulté. La
+     * stratégie de génération ajuste le nombre de cases cachées en fonction du temps écoulé depuis
+     * la dernière génération. Si une nouvelle grille est demandée très rapidement (moins de 500ms),
+     * le nombre de cases cachées est intentionnellement ajusté pour standardiser la grille.
      *
      * @param niveau Le niveau de difficulté : 1 (et autres valeurs) : facile, 2 : moyen, 3 :
      *     difficile).
      * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
-     * @param grilleAResoudre La grille à résoudre, avec ses cases masquées à 0. IMPORTANT : Ce
+     * @param grilleAResoudre La grille à résoudre, avec ses cases cachées à 0. IMPORTANT : Ce
      *     tableau est modifié directement par la fonction.
      * @return La somme du nombre de possibilités pour chaque case non résolue dans la grille à
      *     résoudre.
-     * @implNote La méthode utilise une approche itérative pour masquer des cases et évaluer les
+     * @implNote La méthode utilise une approche itérative pour cacher des cases et évaluer les
      *     possibilités de la grille résultante jusqu'à ce qu'elle corresponde au niveau de
      *     difficulté souhaité. Elle met également à jour l'horodatage interne derniereDemande.
      */
@@ -215,94 +218,109 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku de niveau facile (sinon une grille par défaut est retournée après
-     * une seconde).
+     * Génère une grille de Sudoku avec un nombre de cases cachées selon les critères spécifiés.
      *
      * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités
-     *     restantes).
+     * @param casesAPrecis Nombre de cases à cacher si la durée est inférieure au minimum.
+     * @param casesAMin Nombre minimum de cases à cacher en mode aléatoire.
+     * @param casesAMax Nombre maximum de cases à cacher en mode aléatoire.
+     * @param conditionValidation Prédicat pour valider la somme des possibilités.
+     * @return La somme des possibilités dans la grille à résoudre.
+     */
+    private int genererGrilleAvecCasesCachees(
+            int[] grilleResolue,
+            int[] grilleAResoudre,
+            int casesAPrecis,
+            int casesAMin,
+            int casesAMax,
+            IntPredicate conditionValidation) {
+        int sommeDesPossibilites;
+        int nombreDeCasesACacher =
+                dureeEnMs() < DUREE_MAXIMALE_POUR_MASQUE_PRECIS
+                        ? casesAPrecis
+                        : nombreAleatoire(casesAMin, casesAMax);
+        derniereDemande = LocalDateTime.now();
+        do {
+            sommeDesPossibilites =
+                    getPossibilitesGrilleWhileNok(
+                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
+            if (dureeEnMs() > DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE) break;
+        } while (!conditionValidation.test(sommeDesPossibilites));
+        derniereDemande = LocalDateTime.now();
+        return sommeDesPossibilites;
+    }
+
+    /**
+     * Génère une grille de Sudoku de niveau facile. Le nombre de cases masquées dépend du temps
+     * écoulé depuis la dernière demande. Si ce temps est inférieur à la durée minimale définie, un
+     * nombre fixe de cases est masqué (FACILE_MOY_CACHEES). Sinon, ce nombre est aléatoire, compris
+     * entre FACILE_MIN_CACHEES et MOYEN_MIN_CACHEES.
+     *
+     * @param grilleResolue Grille complètement remplie servant de base.
+     * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
+     * @return Somme des possibilités restantes dans la grille à résoudre.
      */
     private int getPossibilitesGrilleAResoudreFacile(int[] grilleResolue, int[] grilleAResoudre) {
-        int sommeDesPossibilites;
-        int nombreDeCasesACacher =
-                dureeEnMs() < 500
-                        ? FACILE_MOY_CACHEES
-                        : nombreAleatoire(FACILE_MIN_CACHEES, MOYEN_MIN_CACHEES);
-        derniereDemande = LocalDateTime.now();
-        do {
-            sommeDesPossibilites =
-                    getPossibilitesGrilleWhileNok(
-                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-            if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites > moyenMinPossibilites);
-        derniereDemande = LocalDateTime.now();
-        return sommeDesPossibilites;
+        return genererGrilleAvecCasesCachees(
+                grilleResolue,
+                grilleAResoudre,
+                FACILE_MOY_CACHEES,
+                FACILE_MIN_CACHEES,
+                MOYEN_MIN_CACHEES,
+                somme -> somme <= moyenMinPossibilites);
     }
 
     /**
-     * Génère une grille de Sudoku de niveau moyen (sinon une grille par défaut est retournée après
-     * une seconde).
+     * Génère une grille de Sudoku de niveau moyen. Le nombre de cases masquées dépend du temps
+     * écoulé depuis la dernière demande. Si ce temps est inférieur à la durée minimale définie, un
+     * nombre fixe de cases est masqué (MOYEN_MOY_CACHEES). Sinon, ce nombre est aléatoire, compris
+     * entre MOYEN_MIN_CACHEES et MOYEN_MAX_CACHEES.
      *
-     * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
-     * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités
-     *     restantes).
+     * @param grilleResolue Grille complètement remplie servant de base.
+     * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
+     * @return Somme des possibilités restantes dans la grille à résoudre.
      */
     private int getPossibilitesGrilleAResoudreMoyenne(int[] grilleResolue, int[] grilleAResoudre) {
-        int sommeDesPossibilites;
-        int nombreDeCasesACacher =
-                dureeEnMs() < 500
-                        ? MOYEN_MOY_CACHEES
-                        : nombreAleatoire(MOYEN_MIN_CACHEES, MOYEN_MAX_CACHEES);
-        derniereDemande = LocalDateTime.now();
-        do {
-            sommeDesPossibilites =
-                    getPossibilitesGrilleWhileNok(
-                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-            if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites < moyenMinPossibilites
-                || sommeDesPossibilites > moyenMaxPossibilites);
-        derniereDemande = LocalDateTime.now();
-        return sommeDesPossibilites;
+        return genererGrilleAvecCasesCachees(
+                grilleResolue,
+                grilleAResoudre,
+                MOYEN_MOY_CACHEES,
+                MOYEN_MIN_CACHEES,
+                MOYEN_MAX_CACHEES,
+                somme -> somme >= moyenMinPossibilites && somme <= moyenMaxPossibilites);
     }
 
     /**
-     * Génère une grille de Sudoku de niveau difficile (sinon une grille par défaut est retournée
-     * après une seconde).
+     * Génère une grille de Sudoku de niveau difficile. Le nombre de cases masquées dépend du temps
+     * écoulé depuis la dernière demande. Si ce temps est inférieur à la durée minimale définie, un
+     * nombre fixe de cases est masqué (DIFFICILE_MOY_CACHEES). Sinon, ce nombre est aléatoire,
+     * compris entre MOYEN_MAX_CACHEES et DIFFICILE_MAX_CACHEES.
      *
-     * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
-     * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @return La somme des possibilités dans la grille à résoudre (somme des possibilités
-     *     restantes).
+     * @param grilleResolue Grille complètement remplie servant de base.
+     * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
+     * @return Somme des possibilités restantes dans la grille à résoudre.
      */
     private int getPossibilitesGrilleAresoudreDifficile(
             int[] grilleResolue, int[] grilleAResoudre) {
-        int sommeDesPossibilites;
-        int nombreDeCasesACacher =
-                dureeEnMs() < 500
-                        ? DIFFICILE_MOY_CACHEES
-                        : nombreAleatoire(MOYEN_MAX_CACHEES, DIFFICILE_MAX_CACHEES);
-        derniereDemande = LocalDateTime.now();
-        do {
-            sommeDesPossibilites =
-                    getPossibilitesGrilleWhileNok(
-                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-            if (dureeEnMs() > 1000) break;
-        } while (sommeDesPossibilites < moyenMaxPossibilites);
-        derniereDemande = LocalDateTime.now();
-        return sommeDesPossibilites;
+        return genererGrilleAvecCasesCachees(
+                grilleResolue,
+                grilleAResoudre,
+                DIFFICILE_MOY_CACHEES,
+                MOYEN_MAX_CACHEES,
+                DIFFICILE_MAX_CACHEES,
+                somme -> somme >= moyenMaxPossibilites);
     }
 
     /**
-     * Masque des cases dans la grille et calcule la somme des possibilités restantes. Copie la
-     * grille résolue, masque un nombre de cases spécifié, puis calcule la somme des possibilités
+     * Cache des cases dans la grille et calcule la somme des possibilités restantes. Copie la
+     * grille résolue, cache un nombre de cases spécifié, puis calcule la somme des possibilités
      * pour la grille à résoudre.
      *
      * @param grilleResolue La grille de Sudoku résolue (source).
      * @param grilleAResoudre La grille de Sudoku à résoudre (destination), MODIFIÉE par la méthode.
-     * @param nombreDeCasesACacher Nombre de cases à masquer.
-     * @return La somme des possibilités après masquage des cases.
+     * @param nombreDeCasesACacher Nombre de cases à cacher.
+     * @return La somme des possibilités après avoir caché des cases.
      * @implNote Méthode utilisée dans une boucle pour ajuster la difficulté de la grille en
      *     fonction des possibilités.
      */
