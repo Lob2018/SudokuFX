@@ -292,7 +292,7 @@
           <!-- Path to your custom checkstyle.xml configuration file -->
           <configLocation>checkstyle.xml</configLocation>
           <!-- Optional: suppressions file if needed -->
-          <!-- <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation> -->
+          <suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
           <!-- Fail the build on violations -->
           <failsOnError>true</failsOnError>
           <!-- Enable console output -->

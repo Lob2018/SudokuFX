@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  IMPORTANT: Keep this DOCTYPE for Checkstyle.
+  Ignore IntelliJ error "URI is not registered (Settings | Languages & Frameworks | Schemas and DTDs)".
+-->
+<!DOCTYPE suppressions PUBLIC
+        "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+        "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+<suppressions>
+    <!--
+        *** LineLength ***
+    -->
+    <!-- ASCII art formatting -->
+    <suppress checks="LineLength"
+              files="LogBackTxt.java"
+              lines="0-39"/>
+    <!-- Spotless formatting -->
+    <suppress checks="LineLength"
+              files="GrillesCrees.java"
+              lines="33"/>
+    <!-- SVG path string -->
+    <suppress checks="LineLength"
+              files="CrashScreenView.java"
+              lines="200"/>
+    <!-- SVG path string -->
+    <suppress checks="LineLength"
+              files="SplashScreenView.java"
+              lines="236,258-279"/>
+</suppressions>

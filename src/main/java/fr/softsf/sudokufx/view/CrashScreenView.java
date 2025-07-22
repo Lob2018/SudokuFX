@@ -46,6 +46,8 @@ import static fr.softsf.sudokufx.common.enums.ScreenSize.DISPOSABLE_SIZE;
 /**
  * View class for the crash screen without business logic. This class is responsible for displaying
  * and managing the crash screen UI.
+ *
+ * <p>Line="200" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml).
  */
 public final class CrashScreenView implements IMainView {
 

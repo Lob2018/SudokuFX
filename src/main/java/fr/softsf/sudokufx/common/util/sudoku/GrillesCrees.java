@@ -16,6 +16,8 @@ import jakarta.validation.constraints.Size;
 /**
  * Record representing the result of a grid generation: the solved grid, the puzzle grid, and the
  * estimated possibility percentage.
+ *
+ * <p>Line="33" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml).
  */
 public record GrillesCrees(
         @NotNull @Size(

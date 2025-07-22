@@ -5,7 +5,12 @@
  */
 package fr.softsf.sudokufx.common.enums;
 
-/** Utility enum for log messages and ASCII art. */
+/**
+ * Utility enum for log messages and ASCII art.
+ *
+ * <p>Lines="0-34" are excluded from Checkstyle's LineLength check (see
+ * checkstyle-suppressions.xml).
+ */
 public enum LogBackTxt {
     SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION(
             """
