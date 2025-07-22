@@ -76,7 +76,6 @@ import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
  */
 public final class DefaultView implements IMainView {
 
-    private static final int GRID_SIZE = 9;
     private static final Logger LOG = LoggerFactory.getLogger(DefaultView.class);
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
