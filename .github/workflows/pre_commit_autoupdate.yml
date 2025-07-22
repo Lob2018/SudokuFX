@@ -31,5 +31,7 @@ jobs:
         run: pip install pre-commit
       - name: Check pre-commit version
         run: python -m pre_commit --version
-      - name: Run pre-commit autoupdate (fail if updates exist)
-        run: python -m pre_commit autoupdate
+      - name: Run pre-commit autoupdate and check for changes
+        run: |
+          python -m pre_commit autoupdate
+          git diff --exit-code .pre-commit-config.yaml
