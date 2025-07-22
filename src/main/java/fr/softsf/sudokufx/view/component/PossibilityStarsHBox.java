@@ -73,9 +73,7 @@ public class PossibilityStarsHBox extends HBox {
             getChildren().add(star);
         }
         percentage.addListener(
-                (obs, oldVal, newVal) -> {
-                    setHBoxPossibilityStarsFromPercentage(newVal.intValue());
-                });
+                (obs, oldVal, newVal) -> setHBoxPossibilityStarsFromPercentage(newVal.intValue()));
         setHBoxPossibilityStarsFromPercentage(percentage.get());
     }
 
