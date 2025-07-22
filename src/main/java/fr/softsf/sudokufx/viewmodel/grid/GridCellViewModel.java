@@ -89,9 +89,7 @@ public class GridCellViewModel {
     private void setupListeners() {
         setEditableStyle(true);
         editable.addListener(
-                (obs, wasEditable, isNowEditable) -> {
-                    setEditableStyle(isNowEditable);
-                });
+                (obs, wasEditable, isNowEditable) ->  setEditableStyle(isNowEditable));
         label.focusedProperty()
                 .addListener(
                         (obs, oldV, newV) -> {
