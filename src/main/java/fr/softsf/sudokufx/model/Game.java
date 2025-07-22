@@ -70,7 +70,7 @@ public class Game {
         this.gridid = gridid;
         this.playerid = playerid;
         this.levelid = levelid;
-        this.isselected = isselected != null ? isselected : false;
+        this.isselected = isselected;
         this.createdat = createdat;
         this.updatedat = updatedat;
     }
@@ -149,7 +149,7 @@ public class Game {
         }
 
         public GameBuilder isselected(Boolean isselected) {
-            this.isselected = isselected != null ? isselected : false;
+            this.isselected = isselected;
             return this;
         }
 
