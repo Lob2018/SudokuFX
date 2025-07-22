@@ -35,7 +35,7 @@ public class Background {
         this.backgroundid = backgroundid;
         this.hexcolor = hexcolor;
         this.imagepath = imagepath;
-        this.isimage = isimage != null ? isimage : false;
+        this.isimage = isimage;
     }
 
     public Long getBackgroundid() {
@@ -92,7 +92,7 @@ public class Background {
         }
 
         public BackgroundBuilder isimage(Boolean isimage) {
-            this.isimage = isimage != null ? isimage : false;
+            this.isimage = isimage;
             return this;
         }
 
