@@ -37,6 +37,7 @@ public class GridCellViewModel {
     private static final double SCALE_SINGLE_CHAR = 0.35;
     private static final double BORDER_THICK_BASE = 0.2;
     private static final double BORDER_THIN_UNFOCUSED = 0.05;
+    private static final String SUDOKU_FX_GRID_CELL_LARGE_FONT = "sudokuFXGridCellLargeFont";
     private final IntegerProperty id = new SimpleIntegerProperty();
     private final StringProperty rawText = new SimpleStringProperty("");
     private final Label label = new Label();
@@ -104,12 +105,13 @@ public class GridCellViewModel {
                 .addListener(
                         (obs, oldText, newText) -> {
                             if (newText != null && newText.replace("\n", "").length() == 1) {
-                                if (!label.getStyleClass().contains("sudokuFXGridCellLargeFont")) {
-                                    label.getStyleClass().add("sudokuFXGridCellLargeFont");
+                                if (!label.getStyleClass()
+                                        .contains(SUDOKU_FX_GRID_CELL_LARGE_FONT)) {
+                                    label.getStyleClass().add(SUDOKU_FX_GRID_CELL_LARGE_FONT);
                                     label.setStyle(getBorderStyle(label.getText().length(), false));
                                 }
                             } else {
-                                label.getStyleClass().remove("sudokuFXGridCellLargeFont");
+                                label.getStyleClass().remove(SUDOKU_FX_GRID_CELL_LARGE_FONT);
                                 label.setStyle(getBorderStyle(label.getText().length(), false));
                             }
                         });
