@@ -87,7 +87,7 @@ public class Player {
         this.menuid = menuid;
         this.games = (games != null) ? games : new LinkedHashSet<>();
         this.name = name;
-        this.isselected =  isselected;
+        this.isselected = isselected;
         this.createdat = createdat;
         this.updatedat = updatedat;
     }

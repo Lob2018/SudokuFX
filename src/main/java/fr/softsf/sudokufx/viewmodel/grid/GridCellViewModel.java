@@ -84,7 +84,7 @@ public class GridCellViewModel {
         label.focusedProperty()
                 .addListener(
                         (obs, oldV, newV) -> {
-                            if (newV) {
+                            if (!Boolean.TRUE.equals(newV)) {
                                 label.setStyle(getBorderStyle(label.getText().length(), true));
                             } else {
                                 label.setStyle(getBorderStyle(label.getText().length(), false));
@@ -125,7 +125,7 @@ public class GridCellViewModel {
         textArea.focusedProperty()
                 .addListener(
                         (obs, oldV, newV) -> {
-                            if (!newV) {
+                            if (!Boolean.TRUE.equals(newV)) {
                                 // Le texte est déjà dans textProperty via le binding bidirectionnel
                                 textArea.setVisible(false);
                                 label.setVisible(true);
