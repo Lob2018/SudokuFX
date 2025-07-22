@@ -88,8 +88,7 @@ public class GridCellViewModel {
      */
     private void setupListeners() {
         setEditableStyle(true);
-        editable.addListener(
-                (obs, wasEditable, isNowEditable) ->  setEditableStyle(isNowEditable));
+        editable.addListener((obs, wasEditable, isNowEditable) -> setEditableStyle(isNowEditable));
         label.focusedProperty()
                 .addListener(
                         (obs, oldV, newV) -> {
@@ -111,18 +110,8 @@ public class GridCellViewModel {
                 });
         label.textProperty()
                 .addListener(
-                        (obs, oldText, newText) -> {
-                            if (newText != null && newText.replace("\n", "").length() == 1) {
-                                if (!label.getStyleClass()
-                                        .contains(SUDOKU_FX_GRID_CELL_LARGE_FONT)) {
-                                    label.getStyleClass().add(SUDOKU_FX_GRID_CELL_LARGE_FONT);
-                                    label.setStyle(getBorderStyle(label.getText().length(), false));
-                                }
-                            } else {
-                                label.getStyleClass().remove(SUDOKU_FX_GRID_CELL_LARGE_FONT);
-                                label.setStyle(getBorderStyle(label.getText().length(), false));
-                            }
-                        });
+                        (obs, oldText, newText) ->
+                                updateLabelFontSizeAndBorderOnTextChange(newText));
         UnaryOperator<TextFormatter.Change> filter =
                 change -> {
                     String filtered = normalizeInput(change.getControlNewText());
@@ -150,6 +139,27 @@ public class GridCellViewModel {
                         label.requestFocus();
                     }
                 });
+    }
+
+    /**
+     * Updates the label's font size CSS class and border style based on the current text content.
+     *
+     * <p>If the new text (with line breaks removed) is exactly one character long, it adds a CSS
+     * class for a larger font and updates the border style accordingly. Otherwise, it removes the
+     * large font CSS class and resets the border style.
+     *
+     * @param newText the updated text content of the label, may be {@code null}
+     */
+    private void updateLabelFontSizeAndBorderOnTextChange(String newText) {
+        if (newText != null && newText.replace("\n", "").length() == 1) {
+            if (!label.getStyleClass().contains(SUDOKU_FX_GRID_CELL_LARGE_FONT)) {
+                label.getStyleClass().add(SUDOKU_FX_GRID_CELL_LARGE_FONT);
+                label.setStyle(getBorderStyle(label.getText().length(), false));
+            }
+        } else {
+            label.getStyleClass().remove(SUDOKU_FX_GRID_CELL_LARGE_FONT);
+            label.setStyle(getBorderStyle(label.getText().length(), false));
+        }
     }
 
     /**
