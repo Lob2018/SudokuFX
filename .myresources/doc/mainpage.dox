@@ -38,10 +38,6 @@
  *   <excludeGroupIds>org.openjdk.jmh</excludeGroupIds>
  *   <exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>
  *   ```
- * - Run the following command to clean the project:
- *   ```bash
- *   mvn clean
- *   ```
  * - Execute the [Jmh init.] configuration to initialize the benchmarks.
  * - Manage your benchmark tests in the `fr.softsf.sudokufx.benchmark` package
  * - **Once benchmarking is complete, uncomment the lines in the `pom.xml`**:
