@@ -5,12 +5,15 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.Set;
 import java.util.function.UnaryOperator;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
+import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -18,18 +21,19 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.input.KeyCode;
+import javafx.scene.layout.Region;
 
 import io.micrometer.common.util.StringUtils;
 
 /**
- * ViewModel representing a single editable cell in a 9x9 Sudoku grid.
+ * ViewModel representing an editable cell in a 9x9 Sudoku grid.
  *
- * <p>Maintains observable properties (ID, raw input text) and associated JavaFX UI controls (Label
- * for display, TextArea for input). Handles input formatting, visual styling, and interaction logic
- * to switch between read and edit modes.
+ * <p>Maintains observable properties (id, raw text, editable) and JavaFX controls (Label for
+ * display, TextArea for input). Manages text formatting, visual styling, and interaction logic for
+ * toggling between read-only and edit modes.
  *
- * <p>Ensures input filtering (digits 1–9), formatting into multiline strings, and bidirectional
- * binding between UI and data properties.
+ * <p>Filters input to digits 1–9, removes duplicates, sorts, and formats text into a 3×3 multiline
+ * grid display. Binds UI components bidirectionally to the data properties.
  */
 public class GridCellViewModel {
 
@@ -38,8 +42,11 @@ public class GridCellViewModel {
     private static final double BORDER_THICK_BASE = 0.2;
     private static final double BORDER_THIN_UNFOCUSED = 0.05;
     private static final String SUDOKU_FX_GRID_CELL_LARGE_FONT = "sudokuFXGridCellLargeFont";
+    private static final String SUDOKU_FX_GRID_CELL_NON_EDITABLE = "sudokuFXGridCellNonEditable";
+    private static final String SUDOKU_FX_GRID_CELL = "sudokuFXGridCell";
     private final IntegerProperty id = new SimpleIntegerProperty();
     private final StringProperty rawText = new SimpleStringProperty("");
+    private final BooleanProperty editable = new SimpleBooleanProperty(true);
     private final Label label = new Label();
     private final TextArea textArea = new TextArea();
     private final int row;
@@ -51,8 +58,6 @@ public class GridCellViewModel {
         this.col = col;
         label.setId(String.valueOf(id));
         textArea.setId(String.valueOf(id));
-        label.getStyleClass().add("sudokuFXGridCell");
-        textArea.getStyleClass().add("sudokuFXGridCell");
         String borderStyle = getBorderStyle(label.getText().length(), false);
         label.setStyle(borderStyle);
         textArea.setStyle(borderStyle);
@@ -69,19 +74,24 @@ public class GridCellViewModel {
     }
 
     /**
-     * Configures all UI event listeners and text formatting logic for the grid cell:
+     * Configures UI listeners and formatting logic:
      *
      * <ul>
+     *   <li>Updates styles based on editable state.
      *   <li>Applies dynamic border styling on label focus.
-     *   <li>Allows switching to edit mode via mouse click or specific key presses (ENTER, SPACE,
-     *       1–9).
-     *   <li>Adjusts font size based on label content length.
-     *   <li>Filters input to digits 1–9, removes duplicates, sorts, and limits to 9 digits.
-     *   <li>Applies 3×3 multiline formatting inside the TextArea (via TextFormatter).
-     *   <li>Returns to label mode on focus loss or key validation (ENTER, ESC, TAB, SPACE).
+     *   <li>Enables switch to edit mode on mouse click or specific key presses.
+     *   <li>Adjusts font size based on content length.
+     *   <li>Filters input to digits 1–9, removing duplicates and sorting.
+     *   <li>Formats input into a multiline 3×3 grid inside the TextArea.
+     *   <li>Switches back to label mode on focus loss or certain key presses.
      * </ul>
      */
     private void setupListeners() {
+        setEditableStyle(true);
+        editable.addListener(
+                (obs, wasEditable, isNowEditable) -> {
+                    setEditableStyle(isNowEditable);
+                });
         label.focusedProperty()
                 .addListener(
                         (obs, oldV, newV) -> {
@@ -128,7 +138,6 @@ public class GridCellViewModel {
                 .addListener(
                         (obs, oldV, newV) -> {
                             if (Boolean.FALSE.equals(newV)) {
-                                // Le texte est déjà dans textProperty via le binding bidirectionnel
                                 textArea.setVisible(false);
                                 label.setVisible(true);
                             }
@@ -143,6 +152,24 @@ public class GridCellViewModel {
                         label.requestFocus();
                     }
                 });
+    }
+
+    /**
+     * Updates CSS style classes on label and text area to reflect the editable state.
+     *
+     * @param isNowEditable {@code true} to apply editable styles; {@code false} for non-editable
+     *     styles.
+     */
+    private void setEditableStyle(Boolean isNowEditable) {
+        boolean isEditable = Boolean.TRUE.equals(isNowEditable);
+        String toRemove = isEditable ? SUDOKU_FX_GRID_CELL_NON_EDITABLE : SUDOKU_FX_GRID_CELL;
+        String toAdd = isEditable ? SUDOKU_FX_GRID_CELL : SUDOKU_FX_GRID_CELL_NON_EDITABLE;
+        for (Region node : List.of(label, textArea)) {
+            node.getStyleClass().remove(toRemove);
+            if (!node.getStyleClass().contains(toAdd)) {
+                node.getStyleClass().add(toAdd);
+            }
+        }
     }
 
     /**
@@ -176,8 +203,14 @@ public class GridCellViewModel {
                 color, top, right, bottom, left);
     }
 
-    /** Switches from label (read-only) to editable TextArea mode and focuses it. */
+    /**
+     * Switches from read-only mode (Label visible) to edit mode (TextArea visible), focusing the
+     * TextArea and positioning the caret at the end.
+     */
     private void switchToEditMode() {
+        if (!isEditable()) {
+            return;
+        }
         textArea.setText(rawText.get().replace("\n", ""));
         label.setVisible(false);
         textArea.setVisible(true);
@@ -280,11 +313,19 @@ public class GridCellViewModel {
         return id.get();
     }
 
+    public boolean isEditable() {
+        return editable.get();
+    }
+
     public IntegerProperty idProperty() {
         return id;
     }
 
     public StringProperty rawTextProperty() {
         return rawText;
+    }
+
+    public BooleanProperty editableProperty() {
+        return editable;
     }
 }

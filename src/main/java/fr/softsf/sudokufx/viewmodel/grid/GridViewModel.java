@@ -76,10 +76,12 @@ public class GridViewModel {
     }
 
     /**
-     * Sets the text values for all cells.
+     * Sets the text values and editability of all cells. Cells are editable if their value is "0",
+     * non-editable otherwise.
      *
-     * @param values list of exactly 81 values
-     * @throws IllegalArgumentException if values is null, size is not 81, or contains null elements
+     * @param values list of exactly 81 non-null strings
+     * @throws IllegalArgumentException if values is null, has incorrect size (81), or contains
+     *     nulls
      */
     public void setValues(List<String> values) {
         Optional.ofNullable(values)
@@ -90,7 +92,10 @@ public class GridViewModel {
                                 ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                                         "Grid must have exactly 81 non-null values"));
         for (int i = 0; i < TOTAL_CELLS; i++) {
-            cellViewModels.get(i).rawTextProperty().set(values.get(i));
+            String value = values.get(i);
+            GridCellViewModel cell = cellViewModels.get(i);
+            cell.rawTextProperty().set(value);
+            cell.editableProperty().set("0".equals(value));
         }
     }
 
