@@ -1,4 +1,4 @@
-name: Pre-commit Autoupdate
+name: Pre-commit autoupdate check
 
 on:
   push:
