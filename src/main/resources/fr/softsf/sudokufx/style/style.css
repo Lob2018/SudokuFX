@@ -132,7 +132,8 @@
     -fx-text-fill: white;
 }
 
-.label.sudokuFXGridCell:focused,.label.sudokuFXGridCellNonEditable:focused {
+.label.sudokuFXGridCell:focused,
+.label.sudokuFXGridCellNonEditable:focused {
     -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
 }
 
