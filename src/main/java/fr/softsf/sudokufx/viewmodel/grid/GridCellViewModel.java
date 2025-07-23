@@ -194,7 +194,7 @@ public class GridCellViewModel {
         double baseThin = focusedBorder ? BORDER_THICK_BASE : BORDER_THIN_UNFOCUSED;
         String color =
                 focusedBorder
-                        ? "-fx-border-color: radial-gradient(center 50% 150%, radius"
+                        ? "radial-gradient(center 50% 150%, radius"
                                 + " 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));"
                         : "black";
         String top = String.format(Locale.US, EM_FORMAT, (row == 0 ? baseThick : baseThin) * scale);
