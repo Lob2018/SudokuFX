@@ -51,7 +51,9 @@ public sealed interface IGridMaster permits GridMaster {
      * <ol>
      *   <li>Vérifie que la grille n'est pas {@code null} et contient exactement 81 cases.
      *   <li>Calcule les possibilités pour chaque case de la grille.
-     *   <li>Remplit la grille en utilisant une approche récursive :
+     *   <li>Vérifie que les valeurs initiales respectent les règles du Sudoku.
+     *   <li>Si la grille ne contient aucun zéro, elle est considérée comme déjà résolue.
+     *   <li>Sinon, tente de remplir la grille en utilisant une approche récursive :
      *       <ul>
      *         <li>Identifie la case avec le moins d'options disponibles.
      *         <li>Teste chaque valeur possible pour cette case.
@@ -64,16 +66,18 @@ public sealed interface IGridMaster permits GridMaster {
      * @param grille Tableau représentant la grille initiale de Sudoku. Il doit comporter exactement
      *     81 éléments et ne doit pas être {@code null}, sous peine de lever une {@link
      *     IllegalArgumentException}.
-     * @return Un tableau contenant deux éléments :
+     * @return un objet {@link GrilleResolue} contenant :
      *     <ul>
-     *       <li>Le premier élément est 0 si la grille est générée avec succès et est cohérente,
-     *           sinon -1.
-     *       <li>Le deuxième élément est le pourcentage des possibilités, compris entre 0 et 100, ou
-     *           0 si la grille n'est pas cohérente.
+     *       <li>{@code estResolue} : {@code true} si la grille est correcte et a été entièrement
+     *           remplie, sinon {@code false}
+     *       <li>{@code grilleResolue} : la grille résolue si une solution complète a été trouvée,
+     *           ou la grille d’origine (partiellement remplie ou incohérente) dans le cas contraire
+     *       <li>{@code pourcentageDesPossibilites} : pourcentage des possibilités, compris entre 0
+     *           et 100, permettant d’estimer la difficulté ou la cohérence de la grille
      *     </ul>
      *
      * @throws IllegalArgumentException si {@code grille} est {@code null} ou de taille différente
      *     de 81.
      */
-    int[] resoudreLaGrille(final int[] grille);
+    GrilleResolue resoudreLaGrille(final int[] grille);
 }

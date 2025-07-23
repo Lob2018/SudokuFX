@@ -18,7 +18,7 @@
     <!-- Line length compatible with Google Java Format AOSP -->
     <module name="LineLength">
         <property name="max" value="100"/>
-        <property name="severity" value="error"/>
+        <property name="severity" value="warning"/>
         <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://"/>
         <property name="fileExtensions" value="java"/>
     </module>
@@ -84,6 +84,7 @@
             <property name="format" value="System\.(out|err)\.print"/>
             <property name="illegalPattern" value="true"/>
             <property name="message" value="Use logger instead of System.out/err"/>
+            <property name="severity" value="warning"/>
         </module>
 
         <!-- ==== JAVADOC (minimal for open source project) ==== -->

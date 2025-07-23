@@ -141,7 +141,7 @@ final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Vérifie la cohérence entre la grille et les possibilités.
+     * Vérifie que chaque valeur dans la grille est bien une possibilité respectant les règles.
      *
      * <p>Cette méthode s'assure que chaque valeur non nulle dans la grille est bien présente dans
      * les possibilités correspondantes.
@@ -150,7 +150,7 @@ final class GridMaster implements IGridMaster {
      * @param possibilites Le tableau des possibilités pour chaque case.
      * @return 0 si la vérification est réussie, -1 si une incohérence est détectée.
      */
-    private static int verifierLaCoherenceEntreLaGrilleEtLesPossibilites(
+    private static int verifieQueChaqueValeurEstUnePossibilite(
             final int[] grille, final int[] possibilites) {
         for (int i = 0; i < NOMBRE_CASES; i++) {
             int valeur = grille[i];
@@ -461,7 +461,7 @@ final class GridMaster implements IGridMaster {
     }
 
     @Override
-    public int[] resoudreLaGrille(final int[] grille) {
+    public GrilleResolue resoudreLaGrille(final int[] grille) {
         // Lever une exception si la grille est null, ou si sa taille est différente de 81
         if (grille == null || grille.length != NOMBRE_CASES) {
             String taille = (grille == null) ? "null" : String.valueOf(grille.length);
@@ -471,14 +471,26 @@ final class GridMaster implements IGridMaster {
         }
         // Calcul des possibilités pour chaque case
         int[] possibilites = getPossibilites(grille);
-        remplirLaGrille(grille, possibilites);
-        // Calcul la somme des possibilités de toutes les cases
-        int sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilites);
-        // Vérifie la cohérence de la grille
-        int coherence = verifierLaCoherenceEntreLaGrilleEtLesPossibilites(grille, possibilites);
-        return new int[] {
-            coherence, coherence == 0 ? getPourcentageDesPossibilites(sommeDesPossibilites) : 0
-        };
+        // Vérifie que les valeurs de la grille respectent les règles
+        int reglesOk = verifieQueChaqueValeurEstUnePossibilite(grille, possibilites);
+        // Les règles sont-elles respectées
+        if (reglesOk == -1) {
+            return new GrilleResolue(false, grille, 0);
+        }
+        // La grille ne contient pas de 0
+        if (Arrays.stream(grille).noneMatch(val -> val == 0)) {
+            return new GrilleResolue(true, grille, 0);
+        }
+        // Remplir la grille
+        boolean grilleRemplie = remplirLaGrille(grille, possibilites);
+        // La grille n'est pas remplie
+        if (!grilleRemplie) {
+            return new GrilleResolue(false, grille, 0);
+        }
+        return new GrilleResolue(
+                true,
+                grille,
+                getPourcentageDesPossibilites(sommeDesPossibilitesDeLaGrille(possibilites)));
     }
 
     @Override

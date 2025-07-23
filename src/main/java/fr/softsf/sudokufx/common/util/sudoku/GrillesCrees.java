@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.common.util.sudoku;
 import java.util.Arrays;
 import java.util.Objects;
 
+import jakarta.annotation.Nonnull;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -53,7 +54,7 @@ public record GrillesCrees(
     }
 
     @Override
-    public String toString() {
+    public @Nonnull String toString() {
         return "GrillesCrees["
                 + "grilleResolue="
                 + Arrays.toString(grilleResolue)

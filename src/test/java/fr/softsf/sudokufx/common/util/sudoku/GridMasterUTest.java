@@ -23,8 +23,21 @@ import static org.junit.jupiter.api.Assertions.*;
 class GridMasterUTest {
 
     @Autowired private GridMaster gridMaster;
-
     private int gridMasterLastLevel = -1;
+
+    private void assertGrillesCreesValides(GrillesCrees grillesCrees) {
+        assertNotNull(grillesCrees);
+        assertNotNull(grillesCrees.grilleResolue());
+        assertNotNull(grillesCrees.grilleAResoudre());
+        assertEquals(81, grillesCrees.grilleResolue().length);
+        assertEquals(81, grillesCrees.grilleAResoudre().length);
+        long countZerosResolved =
+                Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
+        assertEquals(0, countZerosResolved);
+        long countZerosPuzzle =
+                Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
+        assertTrue(countZerosPuzzle > 0);
+    }
 
     @ParameterizedTest
     @ValueSource(ints = {-1, -100, 300})
@@ -39,34 +52,14 @@ class GridMasterUTest {
     @ValueSource(ints = {1, 2, 3})
     void givenValidLevel_whenCreateGridsQuickly_thenGridsGeneratedSuccessfully(int level) {
         GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level);
-        assertNotNull(grillesCrees);
-        assertNotNull(grillesCrees.grilleResolue());
-        assertNotNull(grillesCrees.grilleAResoudre());
-        assertEquals(81, grillesCrees.grilleResolue().length);
-        long countForResolvedGrid =
-                Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
-        assertEquals(0, countForResolvedGrid);
-        assertEquals(81, grillesCrees.grilleAResoudre().length);
-        long countForToBeResolvedGrid =
-                Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
-        assertNotEquals(0, countForToBeResolvedGrid);
+        assertGrillesCreesValides(grillesCrees);
     }
 
     @ParameterizedTest
     @ValueSource(ints = {1, 1, 2, 2, 3, 3})
     void givenValidLevel_whenCreateGridsNormally_thenGridsGeneratedSuccessfully(int level) {
         GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level);
-        assertNotNull(grillesCrees);
-        assertNotNull(grillesCrees.grilleResolue());
-        assertNotNull(grillesCrees.grilleAResoudre());
-        assertEquals(81, grillesCrees.grilleResolue().length);
-        long countForResolvedGrid =
-                Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
-        assertEquals(0, countForResolvedGrid);
-        assertEquals(81, grillesCrees.grilleAResoudre().length);
-        long countForToBeResolvedGrid =
-                Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
-        assertNotEquals(0, countForToBeResolvedGrid);
+        assertGrillesCreesValides(grillesCrees);
         if (gridMasterLastLevel != level) {
             gridMasterLastLevel = level;
             Awaitility.await()
@@ -108,10 +101,10 @@ class GridMasterUTest {
                     2, 8, 7, 4, 1, 9, 6, 3, 5,
                     3, 4, 5, 2, 8, 6, 0, 0, 9
                 };
-        int[] result = gridMaster.resoudreLaGrille(toBeResolvedGrid);
-        assertEquals(0, result[0]);
-        assertEquals(0, result[1]);
-        assertArrayEquals(
+        GrilleResolue result = gridMaster.resoudreLaGrille(toBeResolvedGrid);
+        assertTrue(result.solved());
+        assertEquals(0, result.possibilityPercentage());
+        int[] expectedSolution =
                 new int[] {
                     5, 3, 4, 6, 7, 8, 9, 1, 2,
                     6, 7, 2, 1, 9, 5, 3, 4, 8,
@@ -122,8 +115,8 @@ class GridMasterUTest {
                     9, 6, 1, 5, 3, 7, 2, 8, 4,
                     2, 8, 7, 4, 1, 9, 6, 3, 5,
                     3, 4, 5, 2, 8, 6, 1, 7, 9
-                },
-                toBeResolvedGrid);
+                };
+        assertArrayEquals(expectedSolution, result.solvedGrid());
     }
 
     @Test
@@ -140,9 +133,10 @@ class GridMasterUTest {
                     2, 0, 7, 4, 1, 9, 6, 3, 0,
                     0, 4, 5, 2, 8, 6, 0, 8, 0
                 };
-        int[] result = gridMaster.resoudreLaGrille(toBeResolvedGrid);
-        assertEquals(-1, result[0]);
-        assertEquals(0, result[1]);
+        GrilleResolue result = gridMaster.resoudreLaGrille(toBeResolvedGrid);
+        assertFalse(result.solved());
+        assertEquals(0, result.possibilityPercentage());
+        assertEquals(toBeResolvedGrid, result.solvedGrid());
     }
 
     @ParameterizedTest
@@ -164,16 +158,6 @@ class GridMasterUTest {
             }
         }
         GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level);
-        assertNotNull(grillesCrees);
-        assertNotNull(grillesCrees.grilleResolue());
-        assertNotNull(grillesCrees.grilleAResoudre());
-        assertEquals(81, grillesCrees.grilleResolue().length);
-        long countForResolvedGrid =
-                Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
-        assertEquals(0, countForResolvedGrid);
-        assertEquals(81, grillesCrees.grilleAResoudre().length);
-        long countForToBeResolvedGrid =
-                Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
-        assertNotEquals(0, countForToBeResolvedGrid);
+        assertGrillesCreesValides(grillesCrees);
     }
 }
