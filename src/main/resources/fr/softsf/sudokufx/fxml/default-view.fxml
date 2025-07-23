@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import fr.softsf.sudokufx.view.component.PossibilityStarsHBox?>
+<?import fr.softsf.sudokufx.view.component.SpinnerGridPane?>
 <?import fr.softsf.sudokufx.view.component.toaster.ToasterVBox?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.text.Text?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.ScrollPane?>
-<?import javafx.scene.shape.Rectangle?>
-<?import javafx.scene.layout.TilePane?>
-<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Tooltip?>
-<?import javafx.scene.control.ColorPicker?>
-<?import fr.softsf.sudokufx.view.component.SpinnerGridPane?>
-<?import fr.softsf.sudokufx.view.component.PossibilityStarsHBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
 <StackPane fx:id="sudokuFXStackPane" alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1"
            xmlns="http://javafx.com/javafx/23"
            fx:controller="fr.softsf.sudokufx.view.DefaultView">
