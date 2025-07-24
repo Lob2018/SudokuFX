@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.viewmodel.grid.GridViewModelUTest.givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues" name="fr.softsf.sudokufx.testing.unit.viewmodel.grid.GridViewModelUTest.givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues">
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,164,329,223"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ac72224355686637ba51642da36977f30" title=" " alt="" coords="377,5,595,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="206,161,283,109,375,58,390,51,392,56,378,62,286,114,209,166"/>

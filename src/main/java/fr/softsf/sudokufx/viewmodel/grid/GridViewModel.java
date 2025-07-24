@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
@@ -32,7 +31,11 @@ public class GridViewModel {
     private static final int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(GRID_SIZE * GRID_SIZE);
 
-    @Autowired private IGridMaster iGridMaster;
+    private IGridMaster iGridMaster;
+
+    public GridViewModel(IGridMaster iGridMaster) {
+        this.iGridMaster = iGridMaster;
+    }
 
     /**
      * Creates 81 GridCellViewModels with unique ids and grid coordinates. Called once after bean

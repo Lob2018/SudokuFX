@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.testing.unit.viewmodel.grid;
+package fr.softsf.sudokufx.common.util.sudoku;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,10 +15,9 @@ import javafx.beans.property.IntegerProperty;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
 import org.testfx.framework.junit5.ApplicationExtension;
 
-import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
+import fr.softsf.sudokufx.common.exception.JakartaValidator;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 
@@ -27,13 +26,11 @@ import static org.junit.jupiter.api.Assertions.*;
 @ExtendWith(ApplicationExtension.class)
 class GridViewModelUTest {
 
-    @Mock private IGridMaster iGridMaster;
-
     private GridViewModel viewModel;
 
     @BeforeEach
     void setUp() {
-        viewModel = new GridViewModel(iGridMaster);
+        viewModel = new GridViewModel(new GridMaster(new JakartaValidator(null)));
         viewModel.init();
     }
 

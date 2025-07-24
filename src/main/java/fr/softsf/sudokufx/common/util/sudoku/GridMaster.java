@@ -19,7 +19,7 @@ import fr.softsf.sudokufx.common.exception.JakartaValidator;
 
 /** Provides essential functionalities for generating and solving Sudoku puzzles. */
 @Component
-final class GridMaster implements IGridMaster {
+public final class GridMaster implements IGridMaster {
 
     private static final int ORDRE = 3;
     private static final int DIMENSION = ORDRE * ORDRE;
@@ -46,7 +46,7 @@ final class GridMaster implements IGridMaster {
 
     private final JakartaValidator jakartaValidator;
 
-    public GridMaster(JakartaValidator jakartaValidator) {
+    GridMaster(JakartaValidator jakartaValidator) {
         this.jakartaValidator = jakartaValidator;
     }
 
