@@ -45,25 +45,27 @@ class MenuNewViewModelUTest {
     void setUp() {
         originalLocale = I18n.INSTANCE.localeProperty().get();
         I18n.INSTANCE.setLocaleBundle("FR");
-        Task<Boolean> fakeTask =
-                new Task<>() {
-                    @Override
-                    protected Boolean call() throws Exception {
-                        updateMessage("Version check in progress...");
-                        CountDownLatch latch = new CountDownLatch(1);
-                        Platform.runLater(
-                                () -> {
-                                    PauseTransition pause =
-                                            new PauseTransition(Duration.millis(50));
-                                    pause.setOnFinished(e -> latch.countDown());
-                                    pause.play();
+        when(versionService.checkLatestVersion())
+                .thenAnswer(
+                        invocation ->
+                                new Task<>() {
+                                    @Override
+                                    protected Boolean call() throws Exception {
+                                        updateMessage("Version check in progress...");
+                                        CountDownLatch latch = new CountDownLatch(1);
+                                        Platform.runLater(
+                                                () -> {
+                                                    PauseTransition pause =
+                                                            new PauseTransition(
+                                                                    Duration.millis(50));
+                                                    pause.setOnFinished(e -> latch.countDown());
+                                                    pause.play();
+                                                });
+                                        latch.await();
+                                        updateMessage("Up to date");
+                                        return true;
+                                    }
                                 });
-                        latch.await();
-                        updateMessage("Up to date");
-                        return true;
-                    }
-                };
-        when(versionService.checkLatestVersion()).thenReturn(fakeTask);
         viewModel = new MenuNewViewModel(versionService);
     }
 
