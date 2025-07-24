@@ -34,6 +34,7 @@ import fr.softsf.sudokufx.viewmodel.MenuNewViewModel;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.when;
 
+// TODO: Review this code for side effects
 @ExtendWith({ApplicationExtension.class, MockitoExtension.class})
 class MenuNewViewModelUTest {
 
