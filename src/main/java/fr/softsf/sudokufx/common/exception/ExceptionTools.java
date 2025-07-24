@@ -7,10 +7,9 @@ package fr.softsf.sudokufx.common.exception;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import io.micrometer.common.util.StringUtils;
 
 /**
  * Utility enum for handling and analyzing exceptions. This enum provides methods to search for

@@ -23,7 +23,7 @@ import javafx.scene.control.TextFormatter;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Region;
 
-import io.micrometer.common.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * ViewModel representing an editable cell in a 9x9 Sudoku grid.
@@ -234,7 +234,7 @@ public class GridCellViewModel {
      * @return Formatted multiline string (e.g., for label display in grid)
      */
     public String formatText(String text) {
-        if (StringUtils.isEmpty(text)) {
+        if (StringUtils.isBlank(text)) {
             return "";
         }
         String filtered = normalizeInput(text);
@@ -261,12 +261,12 @@ public class GridCellViewModel {
      * Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9
      * characters maximum. Returns an empty string if input is null or empty.
      *
-     * @param input Any user input (possibly null or empty)
+     * @param input Any user input (possibly null or blank)
      * @return Cleaned and ordered digit string (max 9 characters), or empty string if input is
-     *     null/empty
+     *     null/blank
      */
     private static String normalizeInput(String input) {
-        if (StringUtils.isEmpty(input)) {
+        if (StringUtils.isBlank(input)) {
             return "";
         }
         return input.chars()
@@ -282,11 +282,11 @@ public class GridCellViewModel {
      * Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,
      * to create a 3×3 visual grid layout. Returns an empty string if input is null or empty.
      *
-     * @param filtered Cleaned input containing only digits 1–9 (may be null or empty)
-     * @return Multiline string with up to 3 rows of digits, or empty string if input is null/empty
+     * @param filtered Cleaned input containing only digits 1–9 (may be null or blank)
+     * @return Multiline string with up to 3 rows of digits, or empty string if input is null/blank
      */
     private static String formatMultiline(String filtered) {
-        if (StringUtils.isEmpty(filtered)) {
+        if (StringUtils.isBlank(filtered)) {
             return "";
         }
         StringBuilder sb = new StringBuilder();

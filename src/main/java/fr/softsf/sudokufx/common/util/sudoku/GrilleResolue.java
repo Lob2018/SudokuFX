@@ -29,7 +29,8 @@ import jakarta.validation.constraints.Size;
  */
 public record GrilleResolue(
         boolean solved,
-        @NotNull(message = "solvedGrid must not be null") @Size(min = 81, max = 81, message = "solvedGrid must contain exactly 81 elements") int[] solvedGrid,
+        @Nonnull
+                @NotNull(message = "solvedGrid must not be null") @Size(min = 81, max = 81, message = "solvedGrid must contain exactly 81 elements") int[] solvedGrid,
         @Min(value = 0, message = "possibilityPercentage must be >= 0") @Max(value = 100, message = "possibilityPercentage must be <= 100") int possibilityPercentage) {
 
     @Override

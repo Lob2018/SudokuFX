@@ -15,6 +15,7 @@ import java.time.Duration;
 import java.util.List;
 import javafx.concurrent.Task;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -28,7 +29,6 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
-import io.micrometer.common.util.StringUtils;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
 

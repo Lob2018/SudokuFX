@@ -60,6 +60,7 @@ class GrilleResolueUTest {
     }
 
     @Test
+    @SuppressWarnings("DataFlowIssue")
     void givenNullSolvedGrid_whenValidate_thenViolation() {
         GrilleResolue grille = new GrilleResolue(true, null, 50);
         Set<ConstraintViolation<GrilleResolue>> violations = validator.validate(grille);

@@ -42,17 +42,17 @@
   </properties>
   <!-- Project dependencies -->
   <dependencies>
-    <!-- Apache Commons Lang 3 dependency -->
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-lang3</artifactId>
-      <version>3.18.0</version>
-    </dependency>
     <!-- Ignite Spring dependency -->
     <dependency>
       <groupId>com.gluonhq</groupId>
       <artifactId>ignite-spring</artifactId>
       <version>1.2.2</version>
+    </dependency>
+    <!-- Apache Commons Lang 3 dependency -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.18.0</version>
     </dependency>
     <!-- Flyway database migration dependencies -->
     <dependency>
