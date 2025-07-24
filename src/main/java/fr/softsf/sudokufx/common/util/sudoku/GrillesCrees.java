@@ -21,12 +21,12 @@ import jakarta.validation.constraints.Size;
  * <p>Line="33" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml).
  */
 public record GrillesCrees(
-        @NotNull @Size(
+        @NotNull(message = "grilleResolue must not be null") @Size(
                         min = 81,
                         max = 81,
                         message = "grilleResolue must contain exactly 81 elements")
                 int[] grilleResolue,
-        @NotNull @Size(
+        @NotNull(message = "grilleAResoudre must not be null") @Size(
                         min = 81,
                         max = 81,
                         message = "grilleAResoudre must contain exactly 81 elements")

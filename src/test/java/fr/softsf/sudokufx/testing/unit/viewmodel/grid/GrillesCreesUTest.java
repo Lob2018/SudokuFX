@@ -105,4 +105,22 @@ class GrillesCreesUTest {
         assertTrue(str.contains("grilleAResoudre"));
         assertTrue(str.contains("pourcentageDesPossibilites"));
     }
+
+    @Test
+    void givenNullGrilleResolue_whenValidate_thenViolation() {
+        GrillesCrees grilles = new GrillesCrees(null, VALID_GRID, 50);
+        Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
+        assertFalse(violations.isEmpty());
+        assertThat(violations.iterator().next().getMessage())
+                .contains("grilleResolue must not be null");
+    }
+
+    @Test
+    void givenNullGrilleAResoudre_whenValidate_thenViolation() {
+        GrillesCrees grilles = new GrillesCrees(VALID_GRID, null, 50);
+        Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
+        assertFalse(violations.isEmpty());
+        assertThat(violations.iterator().next().getMessage())
+                .contains("grilleAResoudre must not be null");
+    }
 }
