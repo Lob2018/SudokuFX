@@ -42,6 +42,12 @@
   </properties>
   <!-- Project dependencies -->
   <dependencies>
+    <!-- Apache Commons Lang 3 dependency -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.18.0</version>
+    </dependency>
     <!-- Ignite Spring dependency -->
     <dependency>
       <groupId>com.gluonhq</groupId>

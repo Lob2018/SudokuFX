@@ -211,6 +211,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
     - Development
         - javafx-controls
         - javafx-fxml
+        - commons-lang3 (utility classes for strings, objects, numbers, etc.)
     - DTOs
         - MapStruct
     - SGBDR & SPRING BOOT
