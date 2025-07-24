@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.switchToEditMode" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.switchToEditMode">
+<area shape="rect" id="Node000001" title="Switches from read&#45;only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea a..." alt="" coords="5,5,249,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title=" " alt="" coords="297,5,515,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,24,281,24,281,29,249,29"/>
+</map>

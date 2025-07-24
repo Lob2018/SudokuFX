@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenValidGrid_whenResolveGrid_thenGridResolvedSuccessfully" name="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenValidGrid_whenResolveGrid_thenGridResolvedSuccessfully">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,21,323,80"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ae18ccaa7f8d2b4301afefa527b3fac14" title="Record representing the result of solving a Sudoku grid." alt="" coords="371,29,619,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,48,355,48,355,53,323,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="433,29,431,19,441,10,462,5,495,3,530,5,551,11,550,16,529,10,495,8,463,10,443,15,436,21,438,28"/>
+</map>

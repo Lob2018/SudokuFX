@@ -17,6 +17,7 @@ var searchData=
   ['gridrepository_2ejava_14',['GridRepository.java',['../_grid_repository_8java.html',1,'']]],
   ['gridviewmodel_2ejava_15',['GridViewModel.java',['../_grid_view_model_8java.html',1,'']]],
   ['gridviewmodelutest_2ejava_16',['GridViewModelUTest.java',['../_grid_view_model_u_test_8java.html',1,'']]],
-  ['grillescrees_2ejava_17',['GrillesCrees.java',['../_grilles_crees_8java.html',1,'']]],
-  ['grillescreesutest_2ejava_18',['GrillesCreesUTest.java',['../_grilles_crees_u_test_8java.html',1,'']]]
+  ['grilleresolue_2ejava_17',['GrilleResolue.java',['../_grille_resolue_8java.html',1,'']]],
+  ['grillescrees_2ejava_18',['GrillesCrees.java',['../_grilles_crees_8java.html',1,'']]],
+  ['grillescreesutest_2ejava_19',['GrillesCreesUTest.java',['../_grilles_crees_u_test_8java.html',1,'']]]
 ];

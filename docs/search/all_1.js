@@ -43,7 +43,8 @@ var searchData=
   ['apporganization_40',['appOrganization',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ae81f3eb980c1bacca03dade9ffa57987',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['appversion_41',['appVersion',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a4ec2bcbb57929a66f25b47d4bd5d709c',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['ascii_5flogo_42',['ASCII_LOGO',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ad676af3ab8af46c96474134d7079fc91',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]],
-  ['assertthrowswithmessage_43',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]],
-  ['authorization_44',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]],
-  ['auto_5fhide_5fmini_5fmenu_5fdelay_5fms_45',['AUTO_HIDE_MINI_MENU_DELAY_MS',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab9d123cb50e619e0bbff4db41cb452f0',1,'fr::softsf::sudokufx::view::DefaultView']]]
+  ['assertgrillescreesvalides_43',['assertGrillesCreesValides',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a6c422bba2397fd4cf7c8711518450621',1,'fr::softsf::sudokufx::common::util::sudoku::GridMasterUTest']]],
+  ['assertthrowswithmessage_44',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]],
+  ['authorization_45',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]],
+  ['auto_5fhide_5fmini_5fmenu_5fdelay_5fms_46',['AUTO_HIDE_MINI_MENU_DELAY_MS',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab9d123cb50e619e0bbff4db41cb452f0',1,'fr::softsf::sudokufx::view::DefaultView']]]
 ];

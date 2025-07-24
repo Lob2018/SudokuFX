@@ -108,7 +108,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>ViewModel representing a single editable cell in a 9x9 Sudoku grid.
+<p>ViewModel representing an editable cell in a 9x9 Sudoku grid.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel:</div>
@@ -122,6 +122,8 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6dd80845ee5865e89cbe229b0ee933c3" id="r_a6dd80845ee5865e89cbe229b0ee933c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6dd80845ee5865e89cbe229b0ee933c3">GridCellViewModel</a> (int <a class="el" href="#ab6b1aa6a7afb3b22b014adc71026b8a3">id</a>, int <a class="el" href="#a78b1fe91de19200c1ad2fc3c9cb0ef38">row</a>, int <a class="el" href="#a7170e90dab95c499ff00862aebd1d0a7">col</a>)</td></tr>
 <tr class="separator:a6dd80845ee5865e89cbe229b0ee933c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2f5aa3c798e4aaf3e845aa59cde94c" id="r_a1b2f5aa3c798e4aaf3e845aa59cde94c"><td class="memItemLeft" align="right" valign="top">BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b2f5aa3c798e4aaf3e845aa59cde94c">editableProperty</a> ()</td></tr>
+<tr class="separator:a1b2f5aa3c798e4aaf3e845aa59cde94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d1630abe71ae622f3522fbed9855750" id="r_a0d1630abe71ae622f3522fbed9855750"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d1630abe71ae622f3522fbed9855750">formatText</a> (String text)</td></tr>
 <tr class="memdesc:a0d1630abe71ae622f3522fbed9855750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a raw digit string (1–9) into a 3-line spaced grid display.  <br /></td></tr>
 <tr class="separator:a0d1630abe71ae622f3522fbed9855750"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +139,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a25813c6885f49b2be4c3dafa6e9878c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75022699ba7a9e778633c445faa1c358" id="r_a75022699ba7a9e778633c445faa1c358"><td class="memItemLeft" align="right" valign="top">IntegerProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75022699ba7a9e778633c445faa1c358">idProperty</a> ()</td></tr>
 <tr class="separator:a75022699ba7a9e778633c445faa1c358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27ee3baeb1c9260e8617a680a5ef215" id="r_ab27ee3baeb1c9260e8617a680a5ef215"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab27ee3baeb1c9260e8617a680a5ef215">isEditable</a> ()</td></tr>
+<tr class="separator:ab27ee3baeb1c9260e8617a680a5ef215"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae04f21e5c6df7750f4e8c79d600a9b6b" id="r_ae04f21e5c6df7750f4e8c79d600a9b6b"><td class="memItemLeft" align="right" valign="top">StringProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae04f21e5c6df7750f4e8c79d600a9b6b">rawTextProperty</a> ()</td></tr>
 <tr class="separator:ae04f21e5c6df7750f4e8c79d600a9b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -145,12 +149,18 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a02837ccd8bb4343e172b8fe4d7854b25" id="r_a02837ccd8bb4343e172b8fe4d7854b25"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02837ccd8bb4343e172b8fe4d7854b25">getBorderStyle</a> (int nbOfChar, boolean focusedBorder)</td></tr>
 <tr class="memdesc:a02837ccd8bb4343e172b8fe4d7854b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the dynamic CSS border style for a Sudoku grid cell based on its position, content size, and focus state.  <br /></td></tr>
 <tr class="separator:a02837ccd8bb4343e172b8fe4d7854b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a551d4792b3263e749994098c3b3748" id="r_a2a551d4792b3263e749994098c3b3748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a551d4792b3263e749994098c3b3748">setEditableStyle</a> (Boolean isNowEditable)</td></tr>
+<tr class="memdesc:a2a551d4792b3263e749994098c3b3748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates CSS style classes on label and text area to reflect the editable state.  <br /></td></tr>
+<tr class="separator:a2a551d4792b3263e749994098c3b3748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf198f919d0c3422e9f0150483873163" id="r_aaf198f919d0c3422e9f0150483873163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf198f919d0c3422e9f0150483873163">setupListeners</a> ()</td></tr>
-<tr class="memdesc:aaf198f919d0c3422e9f0150483873163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures all UI event listeners and text formatting logic for the grid cell:  <br /></td></tr>
+<tr class="memdesc:aaf198f919d0c3422e9f0150483873163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures UI listeners and formatting logic:  <br /></td></tr>
 <tr class="separator:aaf198f919d0c3422e9f0150483873163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95db9585f2ba2ed12d60dd5cca39461" id="r_ac95db9585f2ba2ed12d60dd5cca39461"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac95db9585f2ba2ed12d60dd5cca39461">switchToEditMode</a> ()</td></tr>
-<tr class="memdesc:ac95db9585f2ba2ed12d60dd5cca39461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches from label (read-only) to editable TextArea mode and focuses it.  <br /></td></tr>
+<tr class="memdesc:ac95db9585f2ba2ed12d60dd5cca39461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches from read-only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea and positioning the caret at the end.  <br /></td></tr>
 <tr class="separator:ac95db9585f2ba2ed12d60dd5cca39461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9544acad3febede6981c9d8440674d3c" id="r_a9544acad3febede6981c9d8440674d3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9544acad3febede6981c9d8440674d3c">updateLabelFontSizeAndBorderOnTextChange</a> (String newText)</td></tr>
+<tr class="memdesc:a9544acad3febede6981c9d8440674d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the label's font size CSS class and border style based on the current text content.  <br /></td></tr>
+<tr class="separator:a9544acad3febede6981c9d8440674d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
@@ -165,6 +175,8 @@ Static Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a7170e90dab95c499ff00862aebd1d0a7" id="r_a7170e90dab95c499ff00862aebd1d0a7"><td class="memItemLeft" align="right" valign="top">final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7170e90dab95c499ff00862aebd1d0a7">col</a></td></tr>
 <tr class="separator:a7170e90dab95c499ff00862aebd1d0a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d78b3fbcdea47e237eebd86be784d6" id="r_a58d78b3fbcdea47e237eebd86be784d6"><td class="memItemLeft" align="right" valign="top">final BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58d78b3fbcdea47e237eebd86be784d6">editable</a> = new SimpleBooleanProperty(true)</td></tr>
+<tr class="separator:a58d78b3fbcdea47e237eebd86be784d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6b1aa6a7afb3b22b014adc71026b8a3" id="r_ab6b1aa6a7afb3b22b014adc71026b8a3"><td class="memItemLeft" align="right" valign="top">final IntegerProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6b1aa6a7afb3b22b014adc71026b8a3">id</a> = new SimpleIntegerProperty()</td></tr>
 <tr class="separator:ab6b1aa6a7afb3b22b014adc71026b8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7775561af8d74deeadd5a796d442a4d6" id="r_a7775561af8d74deeadd5a796d442a4d6"><td class="memItemLeft" align="right" valign="top">final Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7775561af8d74deeadd5a796d442a4d6">label</a> = new Label()</td></tr>
@@ -186,11 +198,17 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a7099684e1c7d895aa18576a295198bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c82bcc84e4a769d95b5a0d396be32c" id="r_a40c82bcc84e4a769d95b5a0d396be32c"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40c82bcc84e4a769d95b5a0d396be32c">SCALE_SINGLE_CHAR</a> = 0.35</td></tr>
 <tr class="separator:a40c82bcc84e4a769d95b5a0d396be32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298e9420c2c05603c26b33b4248a2755" id="r_a298e9420c2c05603c26b33b4248a2755"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a298e9420c2c05603c26b33b4248a2755">SUDOKU_FX_GRID_CELL</a> = &quot;sudokuFXGridCell&quot;</td></tr>
+<tr class="separator:a298e9420c2c05603c26b33b4248a2755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d759d8360fdcf6f207c4673f1fd283d" id="r_a7d759d8360fdcf6f207c4673f1fd283d"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d759d8360fdcf6f207c4673f1fd283d">SUDOKU_FX_GRID_CELL_LARGE_FONT</a> = &quot;sudokuFXGridCellLargeFont&quot;</td></tr>
+<tr class="separator:a7d759d8360fdcf6f207c4673f1fd283d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9c2053ef7c59ad8a394da7f9cb0cfa" id="r_a6b9c2053ef7c59ad8a394da7f9cb0cfa"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b9c2053ef7c59ad8a394da7f9cb0cfa">SUDOKU_FX_GRID_CELL_NON_EDITABLE</a> = &quot;sudokuFXGridCellNonEditable&quot;</td></tr>
+<tr class="separator:a6b9c2053ef7c59ad8a394da7f9cb0cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ViewModel representing a single editable cell in a 9x9 Sudoku grid. </p>
-<p>Maintains observable properties (ID, raw input text) and associated JavaFX UI controls (Label for display, TextArea for input). Handles input formatting, visual styling, and interaction logic to switch between read and edit modes.</p>
-<p>Ensures input filtering (digits 1–9), formatting into multiline strings, and bidirectional binding between UI and data properties. </p>
+<div class="textblock"><p>ViewModel representing an editable cell in a 9x9 Sudoku grid. </p>
+<p>Maintains observable properties (id, raw text, editable) and JavaFX controls (Label for display, TextArea for input). Manages text formatting, visual styling, and interaction logic for toggling between read-only and edit modes.</p>
+<p>Filters input to digits 1–9, removes duplicates, sorts, and formats text into a 3×3 multiline grid display. Binds UI components bidirectionally to the data properties. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6dd80845ee5865e89cbe229b0ee933c3" name="a6dd80845ee5865e89cbe229b0ee933c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dd80845ee5865e89cbe229b0ee933c3">&#9670;&#160;</a></span>GridCellViewModel()</h2>
@@ -220,12 +238,29 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_a6dd80845ee5865e89cbe229b0ee933c3_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_a6dd80845ee5865e89cbe229b0ee933c3_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1b2f5aa3c798e4aaf3e845aa59cde94c" name="a1b2f5aa3c798e4aaf3e845aa59cde94c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b2f5aa3c798e4aaf3e845aa59cde94c">&#9670;&#160;</a></span>editableProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BooleanProperty fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.editableProperty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae0d01b28db4394dc49b5f5a0c1a3f2ec" name="ae0d01b28db4394dc49b5f5a0c1a3f2ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae0d01b28db4394dc49b5f5a0c1a3f2ec">&#9670;&#160;</a></span>formatMultiline()</h2>
 
@@ -436,6 +471,23 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab27ee3baeb1c9260e8617a680a5ef215" name="ab27ee3baeb1c9260e8617a680a5ef215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27ee3baeb1c9260e8617a680a5ef215">&#9670;&#160;</a></span>isEditable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.isEditable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aac96cce43da018085f8e390d31aeeb33" name="aac96cce43da018085f8e390d31aeeb33"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac96cce43da018085f8e390d31aeeb33">&#9670;&#160;</a></span>normalizeInput()</h2>
 
@@ -488,6 +540,46 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2a551d4792b3263e749994098c3b3748" name="a2a551d4792b3263e749994098c3b3748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a551d4792b3263e749994098c3b3748">&#9670;&#160;</a></span>setEditableStyle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setEditableStyle </td>
+          <td>(</td>
+          <td class="paramtype">Boolean</td>          <td class="paramname"><span class="paramname"><em>isNowEditable</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates CSS style classes on label and text area to reflect the editable state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isNowEditable</td><td><code class="JavaDocCode">true</code> to apply editable styles; <code class="JavaDocCode">false</code> for non-editable styles. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_a2a551d4792b3263e749994098c3b3748_cgraph.svg" width="508" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="aaf198f919d0c3422e9f0150483873163" name="aaf198f919d0c3422e9f0150483873163"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf198f919d0c3422e9f0150483873163">&#9670;&#160;</a></span>setupListeners()</h2>
 
@@ -511,27 +603,29 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Configures all UI event listeners and text formatting logic for the grid cell: </p>
+<p>Configures UI listeners and formatting logic: </p>
 <ul>
+<li>
+Updates styles based on editable state. </li>
 <li>
 Applies dynamic border styling on label focus. </li>
 <li>
-Allows switching to edit mode via mouse click or specific key presses (ENTER, SPACE, 1–9). </li>
+Enables switch to edit mode on mouse click or specific key presses. </li>
 <li>
-Adjusts font size based on label content length. </li>
+Adjusts font size based on content length. </li>
 <li>
-Filters input to digits 1–9, removes duplicates, sorts, and limits to 9 digits. </li>
+Filters input to digits 1–9, removing duplicates and sorting. </li>
 <li>
-Applies 3×3 multiline formatting inside the TextArea (via TextFormatter). </li>
+Formats input into a multiline 3×3 grid inside the TextArea. </li>
 <li>
-Returns to label mode on focus loss or key validation (ENTER, ESC, TAB, SPACE). </li>
+Switches back to label mode on focus loss or certain key presses. </li>
 </ul>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_aaf198f919d0c3422e9f0150483873163_cgraph.svg" width="524" height="254"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_aaf198f919d0c3422e9f0150483873163_cgraph.svg" width="100%" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -559,7 +653,55 @@ Returns to label mode on focus loss or key validation (ENTER, ESC, TAB, SPACE). 
 </table>
 </div><div class="memdoc">
 
-<p>Switches from label (read-only) to editable TextArea mode and focuses it. </p>
+<p>Switches from read-only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea and positioning the caret at the end. </p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_ac95db9585f2ba2ed12d60dd5cca39461_cgraph.svg" width="520" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a9544acad3febede6981c9d8440674d3c" name="a9544acad3febede6981c9d8440674d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9544acad3febede6981c9d8440674d3c">&#9670;&#160;</a></span>updateLabelFontSizeAndBorderOnTextChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.updateLabelFontSizeAndBorderOnTextChange </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>newText</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the label's font size CSS class and border style based on the current text content. </p>
+<p>If the new text (with line breaks removed) is exactly one character long, it adds a CSS class for a larger font and updates the border style accordingly. Otherwise, it removes the large font CSS class and resets the border style.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newText</td><td>the updated text content of the label, may be <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_a9544acad3febede6981c9d8440674d3c_cgraph.svg" width="540" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -619,6 +761,28 @@ Returns to label mode on focus loss or key validation (ENTER, ESC, TAB, SPACE). 
       <table class="memname">
         <tr>
           <td class="memname">final int fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.col</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58d78b3fbcdea47e237eebd86be784d6" name="a58d78b3fbcdea47e237eebd86be784d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d78b3fbcdea47e237eebd86be784d6">&#9670;&#160;</a></span>editable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final BooleanProperty fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.editable = new SimpleBooleanProperty(true)</td>
         </tr>
       </table>
   </td>
@@ -762,6 +926,72 @@ Returns to label mode on focus loss or key validation (ENTER, ESC, TAB, SPACE). 
 
 </div>
 </div>
+<a id="a298e9420c2c05603c26b33b4248a2755" name="a298e9420c2c05603c26b33b4248a2755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298e9420c2c05603c26b33b4248a2755">&#9670;&#160;</a></span>SUDOKU_FX_GRID_CELL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.SUDOKU_FX_GRID_CELL = &quot;sudokuFXGridCell&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d759d8360fdcf6f207c4673f1fd283d" name="a7d759d8360fdcf6f207c4673f1fd283d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d759d8360fdcf6f207c4673f1fd283d">&#9670;&#160;</a></span>SUDOKU_FX_GRID_CELL_LARGE_FONT</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.SUDOKU_FX_GRID_CELL_LARGE_FONT = &quot;sudokuFXGridCellLargeFont&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b9c2053ef7c59ad8a394da7f9cb0cfa" name="a6b9c2053ef7c59ad8a394da7f9cb0cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9c2053ef7c59ad8a394da7f9cb0cfa">&#9670;&#160;</a></span>SUDOKU_FX_GRID_CELL_NON_EDITABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.SUDOKU_FX_GRID_CELL_NON_EDITABLE = &quot;sudokuFXGridCellNonEditable&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a78fc81df9362195c1ab59b1387def2d9" name="a78fc81df9362195c1ab59b1387def2d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78fc81df9362195c1ab59b1387def2d9">&#9670;&#160;</a></span>textArea</h2>
 
@@ -793,7 +1023,7 @@ Returns to label mode on focus loss or key validation (ENTER, ESC, TAB, SPACE). 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html">grid</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a></li>
-    <li class="footer">Generated on Tue Jul 22 2025 11:57:33 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Jul 24 2025 08:23:39 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -1,5 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test =
 [
+    [ "assertGrillesCreesValides", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a6c422bba2397fd4cf7c8711518450621", null ],
     [ "givenImpossiblePossibilitiesForLevels_whenCreateGrids_thenGridsGeneratedAnyway", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a988bdfe2aaffaa8350c65b7f49cf9681", null ],
     [ "givenInvalidGrid_whenResolveGrid_thenResolutionFails", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a824183dab6f004bb85412d840c49482b", null ],
     [ "givenInvalidGridSize_whenResoudreLaGrille_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a987476f20b494e5d8b3502d79b0f9007", null ],

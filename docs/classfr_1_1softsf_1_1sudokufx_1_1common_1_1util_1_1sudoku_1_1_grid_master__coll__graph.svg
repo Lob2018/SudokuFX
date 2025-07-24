@@ -101,24 +101,24 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="23.12" y="-1062.5" font-family="Helvetica,sans-Serif" font-size="10.00">_POSSIBILITES</text>
 <text text-anchor="start" x="23.12" y="-1046.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
 <text text-anchor="start" x="12.25" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="23.12" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster(JakartaValidator</text>
-<text text-anchor="start" x="23.12" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00"> jakartaValidator)</text>
+<text text-anchor="start" x="23.12" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrillesCrees creerLesGrilles</text>
+<text text-anchor="start" x="23.12" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int niveau)</text>
 <text text-anchor="start" x="12.25" y="-1002.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="23.12" y="-1002.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrillesCrees creerLesGrilles</text>
 <text text-anchor="start" x="23.12" y="-990.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int niveau)</text>
 <text text-anchor="start" x="12.25" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="23.12" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrillesCrees creerLesGrilles</text>
-<text text-anchor="start" x="23.12" y="-962.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int niveau)</text>
-<text text-anchor="start" x="12.25" y="-946.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="23.12" y="-946.5" font-family="Helvetica,sans-Serif" font-size="10.00">int getMoyenMaxPossibilites()</text>
-<text text-anchor="start" x="12.25" y="-930.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="23.12" y="-930.5" font-family="Helvetica,sans-Serif" font-size="10.00">int getMoyenMinPossibilites()</text>
+<text text-anchor="start" x="23.12" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">int getMoyenMaxPossibilites()</text>
+<text text-anchor="start" x="12.25" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="23.12" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">int getMoyenMinPossibilites()</text>
+<text text-anchor="start" x="12.25" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="23.12" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrilleResolue resoudreLa</text>
+<text text-anchor="start" x="23.12" y="-930.5" font-family="Helvetica,sans-Serif" font-size="10.00">Grille(final int[] grille)</text>
 <text text-anchor="start" x="12.25" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="23.12" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">int[] resoudreLaGrille</text>
-<text text-anchor="start" x="23.12" y="-902.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int[] grille)</text>
-<text text-anchor="start" x="12.25" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="23.12" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">int[] resoudreLaGrille</text>
-<text text-anchor="start" x="23.12" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int[] grille)</text>
+<text text-anchor="start" x="23.12" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrilleResolue resoudreLa</text>
+<text text-anchor="start" x="23.12" y="-902.5" font-family="Helvetica,sans-Serif" font-size="10.00">Grille(final int[] grille)</text>
+<text text-anchor="start" x="12.25" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="23.12" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster(JakartaValidator</text>
+<text text-anchor="start" x="23.12" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00"> jakartaValidator)</text>
 <text text-anchor="start" x="12.25" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="23.12" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setAverageImpossible</text>
 <text text-anchor="start" x="23.12" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">PossibilitiesForTests()</text>
@@ -202,10 +202,10 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="23.12" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">static int sommeDesPossibilites</text>
 <text text-anchor="start" x="23.12" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">DeLaGrille(final int[] possibilites)</text>
 <text text-anchor="start" x="13.75" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="23.12" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">static int verifierLaCoherence</text>
-<text text-anchor="start" x="23.12" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">EntreLaGrilleEtLesPossibilites</text>
-<text text-anchor="start" x="23.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int[] grille, final int</text>
-<text text-anchor="start" x="23.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">[] possibilites)</text>
+<text text-anchor="start" x="23.12" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">static int verifieQueChaque</text>
+<text text-anchor="start" x="23.12" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">ValeurEstUnePossibilite</text>
+<text text-anchor="start" x="23.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final int[] grille, final</text>
+<text text-anchor="start" x="23.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int[] possibilites)</text>
 <polygon fill="#666666" stroke="#666666" points="7.38,-1398 7.38,-1398 185.62,-1398 185.62,-1398 7.38,-1398"/>
 <polygon fill="#666666" stroke="#666666" points="7.38,-1042 7.38,-1042 21.12,-1042 21.12,-1042 7.38,-1042"/>
 <polygon fill="#666666" stroke="#666666" points="21.12,-1042 21.12,-1042 185.62,-1042 185.62,-1042 21.12,-1042"/>

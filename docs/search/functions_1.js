@@ -12,5 +12,6 @@ var searchData=
   ['applicationkeystore_9',['ApplicationKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ab67a293ca8a7582e7837ae51a8bdb7a2',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
   ['applylevel_10',['applyLevel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ae87f46d8f99a5c503ce3d993b1ff6e8f',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
   ['applyselectedbackgroundimage_11',['applySelectedBackgroundImage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa3a20fc1375df0c6c0d09eac69d7d5b3',1,'fr::softsf::sudokufx::view::DefaultView']]],
-  ['assertthrowswithmessage_12',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]]
+  ['assertgrillescreesvalides_12',['assertGrillesCreesValides',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a6c422bba2397fd4cf7c8711518450621',1,'fr::softsf::sudokufx::common::util::sudoku::GridMasterUTest']]],
+  ['assertthrowswithmessage_13',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]]
 ];

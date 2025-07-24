@@ -16,6 +16,6 @@ var searchData=
   ['gridmasterutest_13',['GridMasterUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
   ['gridrepository_14',['GridRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudokufx::repository']]],
   ['gridviewmodel_15',['GridViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html',1,'fr::softsf::sudokufx::viewmodel::grid']]],
-  ['gridviewmodelutest_16',['GridViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grid_view_model_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::grid']]],
+  ['gridviewmodelutest_16',['GridViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
   ['grillescreesutest_17',['GrillesCreesUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::grid']]]
 ];

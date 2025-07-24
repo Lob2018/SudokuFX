@@ -1,6 +1,9 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenValidLevel_whenCreateGridsNormally_thenGridsGeneratedSuccessfully" name="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenValidLevel_whenCreateGridsNormally_thenGridsGeneratedSuccessfully">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,310,88"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#af17e5a78bfbdd91b2b1bb84fb7f090c5" title="Record representing the result of a grid generation: the solved grid, the puzzle grid,..." alt="" coords="358,29,606,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,48,342,48,342,53,310,53"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="421,29,419,19,429,10,450,5,482,3,516,5,537,11,535,16,516,10,482,8,451,10,432,15,424,21,426,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,19,310,93"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a6c422bba2397fd4cf7c8711518450621" title=" " alt="" coords="358,5,632,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,40,342,37,342,43,310,45"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#af17e5a78bfbdd91b2b1bb84fb7f090c5" title="Record representing the result of a grid generation: the solved grid, the puzzle grid,..." alt="" coords="680,35,928,77"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="310,57,358,57,632,57,665,57,665,62,632,63,358,63,310,62"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="633,37,665,40,664,45,632,42"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="746,35,744,25,754,15,774,10,804,8,837,10,857,17,855,22,836,16,804,13,775,15,756,20,749,26,752,33"/>
 </map>

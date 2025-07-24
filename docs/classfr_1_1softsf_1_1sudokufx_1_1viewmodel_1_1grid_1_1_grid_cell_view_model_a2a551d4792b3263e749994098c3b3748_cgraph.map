@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setEditableStyle" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setEditableStyle">
+<area shape="rect" id="Node000001" title="Updates CSS style classes on label and text area to reflect the editable state." alt="" coords="5,5,237,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title=" " alt="" coords="285,5,503,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,24,269,24,269,29,237,29"/>
+</map>

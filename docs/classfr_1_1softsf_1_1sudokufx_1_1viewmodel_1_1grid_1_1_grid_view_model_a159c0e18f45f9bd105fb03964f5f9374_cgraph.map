@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init">
+<area shape="rect" id="Node000001" title="Creates 81 GridCellViewModels with unique ids and grid coordinates." alt="" coords="5,39,224,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="272,5,490,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,44,256,40,256,45,225,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" title=" " alt="" coords="272,72,490,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,71,256,75,256,80,224,76"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="538,72,756,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="491,91,522,91,522,96,491,96"/>
+</map>

@@ -42,9 +42,10 @@ var NAVTREEINDEX0 =
 "_grid_master_u_test_8java.html":[3,0,1,1,0,0,0,0,0,0,0,0],
 "_grid_repository_8java.html":[3,0,1,0,0,0,0,0,6,3],
 "_grid_view_model_8java.html":[3,0,1,0,0,0,0,0,9,0,1],
-"_grid_view_model_u_test_8java.html":[3,0,1,1,0,0,0,0,3,2,2,0,0],
-"_grilles_crees_8java.html":[3,0,1,0,0,0,0,0,1,4,0,1],
-"_grilles_crees_u_test_8java.html":[3,0,1,1,0,0,0,0,3,2,2,0,1],
+"_grid_view_model_u_test_8java.html":[3,0,1,1,0,0,0,0,0,0,0,1],
+"_grille_resolue_8java.html":[3,0,1,0,0,0,0,0,1,4,0,1],
+"_grilles_crees_8java.html":[3,0,1,0,0,0,0,0,1,4,0,2],
+"_grilles_crees_u_test_8java.html":[3,0,1,1,0,0,0,0,3,2,2,0,0],
 "_help_view_model_8java.html":[3,0,1,0,0,0,0,0,9,3],
 "_help_view_model_u_test_8java.html":[3,0,1,1,0,0,0,0,4,1],
 "_http_client_config_8java.html":[3,0,1,0,0,0,0,0,2,2],
@@ -56,7 +57,7 @@ var NAVTREEINDEX0 =
 "_i_game_level_mapper_8java.html":[3,0,1,0,0,0,0,0,1,3,0,1],
 "_i_game_mapper_8java.html":[3,0,1,0,0,0,0,0,1,3,0,2],
 "_i_grid_mapper_8java.html":[3,0,1,0,0,0,0,0,1,3,0,3],
-"_i_grid_master_8java.html":[3,0,1,0,0,0,0,0,1,4,0,2],
+"_i_grid_master_8java.html":[3,0,1,0,0,0,0,0,1,4,0,3],
 "_i_keystore_8java.html":[3,0,1,0,0,0,0,0,2,0,7],
 "_i_main_view_8java.html":[3,0,1,0,0,0,0,0,1,3,1],
 "_i_menu_mapper_8java.html":[3,0,1,0,0,0,0,0,1,3,0,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a1c85deb739a97760c6b110bbae49f478":[2,0,0,0,0,1,4,3,5],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a26bf32efab390b2c359ee04f17333ea9":[1,0,0,0,0,1,4,3,9],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a26bf32efab390b2c359ee04f17333ea9":[2,0,0,0,0,1,4,3,9],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a4d4460cf804d752028ca40e0d61fb3e2":[1,0,0,0,0,1,4,3,6],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a4d4460cf804d752028ca40e0d61fb3e2":[2,0,0,0,0,1,4,3,6]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a4d4460cf804d752028ca40e0d61fb3e2":[1,0,0,0,0,1,4,3,6]
 };
