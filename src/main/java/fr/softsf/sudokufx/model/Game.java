@@ -6,12 +6,14 @@
 package fr.softsf.sudokufx.model;
 
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+import jakarta.annotation.Nonnull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,85 +22,95 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "game")
 public class Game {
 
+    private static final String GRIDID_MUST_NOT_BE_NULL = "gridid must not be null";
+    private static final String PLAYERID_MUST_NOT_BE_NULL = "playerid must not be null";
+    private static final String LEVELID_MUST_NOT_BE_NULL = "levelid must not be null";
+    private static final String CREATEDAT_MUST_NOT_BE_NULL = "createdat must not be null";
+    private static final String UPDATEDAT_MUST_NOT_BE_NULL = "updatedat must not be null";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long gameid;
 
-    @OneToOne
+    @Valid @OneToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "gridgridid")
     private Grid gridid;
 
-    @ManyToOne
+    @Valid @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerplayerid")
     private Player playerid;
 
-    @ManyToOne
+    @Valid @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "levellevelid")
     private GameLevel levelid;
 
-    @NotNull private Boolean isselected = false;
+    private boolean isselected = false;
 
-    @NotNull private LocalDateTime createdat;
+    @Nonnull @NotNull private LocalDateTime createdat = LocalDateTime.now();
 
-    @NotNull private LocalDateTime updatedat;
+    @Nonnull @NotNull private LocalDateTime updatedat = LocalDateTime.now();
 
-    public Game() {
-        this.isselected = false;
-    }
+    protected Game() {}
 
     public Game(
             Long gameid,
-            Grid gridid,
-            Player playerid,
-            GameLevel levelid,
-            Boolean isselected,
-            LocalDateTime createdat,
-            LocalDateTime updatedat) {
+            @Nonnull @NotNull Grid gridid,
+            @Nonnull @NotNull Player playerid,
+            @Nonnull @NotNull GameLevel levelid,
+            boolean isselected,
+            @Nonnull @NotNull LocalDateTime createdat,
+            @Nonnull @NotNull LocalDateTime updatedat) {
         this.gameid = gameid;
-        this.gridid = gridid;
-        this.playerid = playerid;
-        this.levelid = levelid;
         this.isselected = isselected;
-        this.createdat = createdat;
-        this.updatedat = updatedat;
+        this.gridid = Objects.requireNonNull(gridid, GRIDID_MUST_NOT_BE_NULL);
+        this.playerid = Objects.requireNonNull(playerid, PLAYERID_MUST_NOT_BE_NULL);
+        this.levelid = Objects.requireNonNull(levelid, LEVELID_MUST_NOT_BE_NULL);
+        this.createdat = Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
+        this.updatedat = Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
     }
 
     public Long getGameid() {
         return gameid;
     }
 
+    @Nonnull
     public Grid getGridid() {
         return gridid;
     }
 
+    @Nonnull
     public Player getPlayerid() {
         return playerid;
     }
 
+    @Nonnull
     public GameLevel getLevelid() {
         return levelid;
     }
 
-    public Boolean getIsselected() {
+    public boolean getIsselected() {
         return isselected;
     }
 
+    @Nonnull
     public LocalDateTime getCreatedat() {
         return createdat;
     }
 
+    @Nonnull
     public LocalDateTime getUpdatedat() {
         return updatedat;
     }
@@ -107,11 +119,11 @@ public class Game {
         this.playerid = playerid;
     }
 
-    public void setIsselected(Boolean isselected) {
+    public void setIsselected(boolean isselected) {
         this.isselected = isselected;
     }
 
-    public void setUpdatedat(LocalDateTime updatedat) {
+    public void setUpdatedat(@Nonnull LocalDateTime updatedat) {
         this.updatedat = updatedat;
     }
 
@@ -124,9 +136,9 @@ public class Game {
         private Grid gridid;
         private Player playerid;
         private GameLevel levelid;
-        private Boolean isselected = false;
-        private LocalDateTime createdat;
-        private LocalDateTime updatedat;
+        private boolean isselected = false;
+        @Nonnull @NotNull private LocalDateTime createdat = LocalDateTime.now();
+        @Nonnull @NotNull private LocalDateTime updatedat = LocalDateTime.now();
 
         public GameBuilder gameid(Long gameid) {
             this.gameid = gameid;
@@ -134,32 +146,32 @@ public class Game {
         }
 
         public GameBuilder gridid(Grid gridid) {
-            this.gridid = gridid;
+            this.gridid = Objects.requireNonNull(gridid, GRIDID_MUST_NOT_BE_NULL);
             return this;
         }
 
         public GameBuilder playerid(Player playerid) {
-            this.playerid = playerid;
+            this.playerid = Objects.requireNonNull(playerid, PLAYERID_MUST_NOT_BE_NULL);
             return this;
         }
 
         public GameBuilder levelid(GameLevel levelid) {
-            this.levelid = levelid;
+            this.levelid = Objects.requireNonNull(levelid, LEVELID_MUST_NOT_BE_NULL);
             return this;
         }
 
-        public GameBuilder isselected(Boolean isselected) {
+        public GameBuilder isselected(boolean isselected) {
             this.isselected = isselected;
             return this;
         }
 
         public GameBuilder createdat(LocalDateTime createdat) {
-            this.createdat = createdat;
+            this.createdat = Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
             return this;
         }
 
         public GameBuilder updatedat(LocalDateTime updatedat) {
-            this.updatedat = updatedat;
+            this.updatedat = Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
             return this;
         }
 
