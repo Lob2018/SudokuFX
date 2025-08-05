@@ -31,7 +31,7 @@ public class GridViewModel {
     private static final int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(GRID_SIZE * GRID_SIZE);
 
-    private IGridMaster iGridMaster;
+    private final IGridMaster iGridMaster;
 
     public GridViewModel(IGridMaster iGridMaster) {
         this.iGridMaster = iGridMaster;
@@ -50,6 +50,8 @@ public class GridViewModel {
                         .textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
+                                    // TODO : vérifier seulement si jeu avec 81 cases complétées OU
+                                    // si résolution au chargement et à chaque changement
                                     verifyGrid();
                                 });
                 cellViewModels.add(cellVM);
