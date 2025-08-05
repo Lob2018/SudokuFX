@@ -58,9 +58,8 @@ public class GridViewModel {
                         .addListener(
                                 (obs, oldText, newText) -> {
                                     if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
-                                            == ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE) {
-                                        verifyGrid();
-                                    } else if (isCompletelyCompleted()) {
+                                                    == ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE
+                                            || isCompletelyCompleted()) {
                                         verifyGrid();
                                     }
                                 });
