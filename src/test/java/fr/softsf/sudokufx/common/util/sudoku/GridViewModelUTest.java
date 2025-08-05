@@ -18,6 +18,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
+import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 
@@ -30,7 +31,10 @@ class GridViewModelUTest {
 
     @BeforeEach
     void setUp() {
-        viewModel = new GridViewModel(new GridMaster(new JakartaValidator(null)));
+        viewModel =
+                new GridViewModel(
+                        new GridMaster(new JakartaValidator(null)),
+                        new ActiveMenuOrSubmenuViewModel());
         viewModel.init();
     }
 

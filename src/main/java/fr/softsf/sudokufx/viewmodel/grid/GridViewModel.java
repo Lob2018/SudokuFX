@@ -19,6 +19,7 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
+import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 
 /**
  * ViewModel component managing a 9x9 Sudoku grid. Provides observable cell view models and methods
@@ -32,14 +33,20 @@ public class GridViewModel {
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(GRID_SIZE * GRID_SIZE);
 
     private final IGridMaster iGridMaster;
+    private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
 
-    public GridViewModel(IGridMaster iGridMaster) {
+    public GridViewModel(
+            IGridMaster iGridMaster, ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel) {
         this.iGridMaster = iGridMaster;
+        this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
     }
 
     /**
      * Creates 81 GridCellViewModels with unique ids and grid coordinates. Called once after bean
      * construction to initialize the grid.
+     *
+     * <p>Also sets up text change listeners on each cell to automatically verify the grid when in
+     * SOLVE mode or when all cells are completed with one value.
      */
     public void init() {
         int id = 1;
@@ -50,15 +57,44 @@ public class GridViewModel {
                         .textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
-                                    // TODO : vérifier seulement si jeu avec 81 cases complétées OU
-                                    // si résolution au chargement et à chaque changement
-                                    verifyGrid();
+                                    if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
+                                            == ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE) {
+                                        verifyGrid();
+                                    } else if (isCompletelyCompleted()) {
+                                        verifyGrid();
+                                    }
                                 });
                 cellViewModels.add(cellVM);
             }
         }
     }
 
+    /**
+     * Checks if all 81 cells contain valid single-digit values (1-9).
+     *
+     * @return true if grid is completely filled with valid digits, false otherwise
+     */
+    private boolean isCompletelyCompleted() {
+        List<String> values = getAllValues();
+        if (values == null || values.size() != TOTAL_CELLS) {
+            return false;
+        }
+        for (String value : values) {
+            if (value == null || value.length() != 1) {
+                return false;
+            }
+            char c = value.charAt(0);
+            if (c < '1' || c > '9') {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Verifies the current grid state by attempting to solve it. Converts cell values to integer
+     * array, calls the grid solver, and outputs solution status and completion percentage.
+     */
     private void verifyGrid() {
         List<String> values = getAllValues();
         int[] grilleInt =
