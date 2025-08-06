@@ -371,7 +371,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.3</version>
         <configuration>
-          <argLine>@{jacoco.argLine} -Dapp.name=${project.artifactId} -Dapp.version=${project.version} -Dapp.organization=${project.organization.name} -Dapp.license=${license.name}</argLine>
+          <argLine>@{jacoco.argLine} -Dapp.name=${project.artifactId} -Dapp.version=${project.version} -Dapp.organization=${project.organization.name} -Dapp.license=${license.name} -XX:+EnableDynamicAgentLoading -Xshare:off</argLine>
         </configuration>
       </plugin>
       <!-- JaCoCo plugin for code coverage -->
