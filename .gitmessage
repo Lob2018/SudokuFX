@@ -10,7 +10,7 @@
 
 # A new feature is introduced with the changes.
 # Clear pull request message templates :
-# Feature addition: Add [feature name]
+#✨ feat addition: Add [feature name]
 # ☑ Implement [functionality]
 # ☑ Any breaking change
 # ☑ Update or add tests
@@ -18,7 +18,7 @@
 
 # A bug fix has occurred.
 # Clear pull request message templates :
-# Fix [bug description]
+#🐛 fix [bug description]
 # ☑ Root cause [explanation]
 # ☑ Fix [changes]
 # ☑ Update or add tests
@@ -30,7 +30,7 @@
 
 # Refactored code that neither fixes a bug nor adds a feature.
 # Clear pull request message templates :
-# Refactor [feature name]
+#♻️ refactor [feature name]
 # ☑ Any functionality changes
 # ☑ Verify tests pass
 #♻️ refactor:
