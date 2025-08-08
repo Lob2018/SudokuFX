@@ -1,7 +1,7 @@
 var searchData=
 [
   ['activemenu_0',['activeMenu',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html#a80008cb72734384b3b45be72264578e5',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel']]],
-  ['activemenuorsubmenuviewmodel_1',['activeMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9ca4d62841a15113806fe6ecf1adab5f',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['activemenuorsubmenuviewmodel_1',['activeMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9ca4d62841a15113806fe6ecf1adab5f',1,'fr.softsf.sudokufx.view.DefaultView.activeMenuOrSubmenuViewModel'],['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a0e3033ee54eac7c612f8f73aae8c6742',1,'fr.softsf.sudokufx.viewmodel.grid.GridViewModel.activeMenuOrSubmenuViewModel']]],
   ['aes_5falgorithm_2',['AES_ALGORITHM',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aeed33d7485183a1af72690e28967288e',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
   ['aes_5fkey_5fsize_5fbits_3',['AES_KEY_SIZE_BITS',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a330834fe482f315261f10da3290614dd',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
   ['alert_5fsize_5fratio_4',['ALERT_SIZE_RATIO',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aa814377d4cbbf3d548d8a88689a77c62',1,'fr::softsf::sudokufx::viewmodel::HelpViewModel']]],

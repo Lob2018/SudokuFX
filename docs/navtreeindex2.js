@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a329f19a5a4d2b42ba5c3ab609b3ea814":[1,0,0,0,0,2,6,4],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a329f19a5a4d2b42ba5c3ab609b3ea814":[2,0,0,0,0,2,6,4],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a3669374254531e9ec8495f5ead52dba7":[1,0,0,0,0,2,6,10],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a3669374254531e9ec8495f5ead52dba7":[2,0,0,0,0,2,6,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#a3fe31de18898bbe2bdd983ec771cd76d":[1,0,0,0,0,2,1,2,12],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#a3fe31de18898bbe2bdd983ec771cd76d":[2,0,0,0,0,2,1,2,12],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#a6348cb669d5ea04191f0fb7820ea2e23":[1,0,0,0,0,2,1,2,5],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#a6348cb669d5ea04191f0fb7820ea2e23":[2,0,0,0,0,2,1,2,5],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#a88820f66f2ac9b08d971df1650f36513":[1,0,0,0,0,2,1,2,3]
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#a6348cb669d5ea04191f0fb7820ea2e23":[2,0,0,0,0,2,1,2,5]
 };

@@ -1,0 +1,24 @@
+var NAVTREEINDEX15 =
+{
+"namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster.html":[1,0,0,0,0,9,0,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html":[1,0,0,0,0,10],
+"namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html":[1,0,0,0,0,10,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html":[1,0,0,0,0,10,1],
+"namespacemembers.html":[1,1,0],
+"namespacemembers_func.html":[1,1,1],
+"namespacemembers_vars.html":[1,1,2],
+"namespaces.html":[1,0],
+"package-info_8java.html":[3,0,1,0,0,0,0,0,7,0],
+"pages.html":[],
+"util_2_exception_tools_u_test_8java.html":[3,0,1,1,0,0,0,0,3,2,0,2,1],
+"":[1,0,0],
+"":[1,0,0,0],
+"":[1,0,0,0,0,1],
+"":[1,0,0,0,0,8],
+"":[1,0,0,0,0,8,0],
+"":[1,0,0,0,0,8,0,0],
+"":[1,0,0,0,0,8,1],
+"":[1,0,0,0,0,8,1,0],
+"":[1,0,0,0,0,8,2],
+"":[1,0,0,0,0,8,2,0]
+};

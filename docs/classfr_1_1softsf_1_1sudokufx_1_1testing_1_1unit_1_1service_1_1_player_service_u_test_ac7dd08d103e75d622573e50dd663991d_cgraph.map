@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,65,397,124"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title="Data Transfer Object representing a background entity." alt="" coords="700,5,939,32"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#acc92bce410cbf061a1ae71017d91d3db" title="Data Transfer Object representing a background entity." alt="" coords="700,5,939,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,65,444,59,684,31,685,36,445,64,397,70"/>
 <area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title="Data Transfer Object representing a menu entity." alt="" coords="718,56,921,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="397,84,703,71,703,77,397,89"/>
@@ -10,7 +10,7 @@
 <area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="332,122,445,143,583,159,711,170,711,175,583,165,444,148,331,127"/>
 <area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="571,104,628,73,699,42,724,34,726,39,701,46,630,77,574,109"/>
 <area shape="poly" id="edge8_Node000004_Node000003" title=" " alt="" coords="623,103,729,83,730,89,624,109"/>
-<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a37aaf8c06967608e0eac24a4d458f34b" title="Data Transfer Object representing a game entity." alt="" coords="717,107,922,133"/>
+<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0b4cf476a6a3d3f1f289617aa14a93cb" title="Data Transfer Object representing a game entity." alt="" coords="717,107,922,133"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="652,117,702,117,702,123,652,123"/>
 <area shape="poly" id="edge9_Node000004_Node000008" title=" " alt="" coords="614,131,712,153,711,158,613,137"/>
 <area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" title="Data Transfer Object representing a game level entity." alt="" coords="992,69,1177,112"/>

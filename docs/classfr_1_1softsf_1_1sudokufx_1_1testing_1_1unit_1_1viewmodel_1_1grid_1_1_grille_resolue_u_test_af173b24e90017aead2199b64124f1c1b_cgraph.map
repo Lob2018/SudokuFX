@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.grid.GrilleResolueUTest.givenPossibilityPercentageAboveHundred_whenValidate_thenViolation" name="fr.softsf.sudokufx.testing.unit.viewmodel.grid.GrilleResolueUTest.givenPossibilityPercentageAboveHundred_whenValidate_thenViolation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,301,88"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="96,29,97,19,107,10,126,5,153,3,184,5,203,13,201,17,183,11,153,8,127,10,110,15,102,21,101,29"/>
+</map>

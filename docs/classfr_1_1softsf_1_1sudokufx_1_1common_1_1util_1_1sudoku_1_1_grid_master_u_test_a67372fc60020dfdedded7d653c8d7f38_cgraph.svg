@@ -89,7 +89,7 @@ var sectionId = 'dynsection-5';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#af17e5a78bfbdd91b2b1bb84fb7f090c5" target="_top" xlink:title="Record representing the result of a grid generation: the solved grid, the puzzle grid,...">
+<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ac3d62f66e8acd5749e3037a6ad06f21e" target="_top" xlink:title="Record representing the result of a grid generation: the solved grid, the puzzle grid,...">
 <polygon fill="white" stroke="#666666" points="692.25,-44 506,-44 506,-12 692.25,-12 692.25,-44"/>
 <text text-anchor="start" x="514" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="middle" x="599.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrillesCrees</text>

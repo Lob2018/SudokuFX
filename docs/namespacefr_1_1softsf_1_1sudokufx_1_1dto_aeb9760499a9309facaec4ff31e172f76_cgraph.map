@@ -1,8 +1,8 @@
 <map id="fr.softsf.sudokufx.dto.PlayerDto" name="fr.softsf.sudokufx.dto.PlayerDto">
 <area shape="rect" id="Node000001" title="Data Transfer Object representing a player." alt="" coords="5,81,213,108"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title="Data Transfer Object representing a background entity." alt="" coords="261,5,500,32"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#acc92bce410cbf061a1ae71017d91d3db" title="Data Transfer Object representing a background entity." alt="" coords="261,5,500,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,78,260,41,292,33,293,39,261,47,148,83"/>
-<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a37aaf8c06967608e0eac24a4d458f34b" title="Data Transfer Object representing a game entity." alt="" coords="278,56,483,83"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0b4cf476a6a3d3f1f289617aa14a93cb" title="Data Transfer Object representing a game entity." alt="" coords="278,56,483,83"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,82,262,78,263,83,213,88"/>
 <area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" title="Data Transfer Object representing a menu entity." alt="" coords="279,107,482,133"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="213,102,264,106,263,112,213,107"/>

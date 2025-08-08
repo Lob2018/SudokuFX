@@ -5,6 +5,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_gr
     [ "givenDifferentValues_whenEquals_thenReturnFalse", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a67cda6022e141d795153f853304c2f0a", null ],
     [ "givenInvalidGrilleAResoudreLength_whenValidate_thenViolation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#aa27c54a686ffb9fced91dfccb0546b53", null ],
     [ "givenInvalidGrilleResolueLength_whenValidate_thenViolation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#ab71c629308d527591de8fbd0e9cbc110", null ],
+    [ "givenNullGrilleAResoudre_whenValidate_thenViolation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#aa6b59f97f4dfa1c53082279416e1d5d7", null ],
+    [ "givenNullGrilleResolue_whenValidate_thenViolation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a2bd155d3952ef5639003acbedbacf045", null ],
     [ "givenPourcentageDesPossibilitesAboveHundred_whenValidate_thenViolation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a38f6a91473def30f868156afa149d016", null ],
     [ "givenPourcentageDesPossibilitesBelowZero_whenValidate_thenViolation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#accf7987b7648d6dec0cc4941c6466799", null ],
     [ "givenSameValues_whenEqualsAndHashCode_thenReturnTrue", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a447a1038dee595ca67d2768483034c94", null ],

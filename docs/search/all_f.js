@@ -37,5 +37,5 @@ var searchData=
   ['osname_2ejava_34',['OsName.java',['../_os_name_8java.html',1,'']]],
   ['osnameutest_35',['OsNameUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]],
   ['osnameutest_2ejava_36',['OsNameUTest.java',['../_os_name_u_test_8java.html',1,'']]],
-  ['other_5fgrid_37',['OTHER_GRID',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a3c53ec4d9566659433d04d388f0baeda',1,'fr::softsf::sudokufx::testing::unit::viewmodel::grid::GrillesCreesUTest']]]
+  ['other_5fgrid_37',['OTHER_GRID',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test.html#a2c1d64a2ad5b8ee2a44100148644f42d',1,'fr.softsf.sudokufx.testing.unit.viewmodel.grid.GrilleResolueUTest.OTHER_GRID'],['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a3c53ec4d9566659433d04d388f0baeda',1,'fr.softsf.sudokufx.testing.unit.viewmodel.grid.GrillesCreesUTest.OTHER_GRID']]]
 ];

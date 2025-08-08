@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.isCompletelyCompleted" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.isCompletelyCompleted">
+<area shape="rect" id="Node000001" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="5,5,258,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="306,5,524,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,24,290,24,290,29,258,29"/>
+</map>

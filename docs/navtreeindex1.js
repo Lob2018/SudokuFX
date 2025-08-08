@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a4d4460cf804d752028ca40e0d61fb3e2":[1,0,0,0,0,1,4,3,6],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a4d4460cf804d752028ca40e0d61fb3e2":[2,0,0,0,0,1,4,3,6],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a54cbf9c9aa3a0d5bb1e14d44d9f7924e":[1,0,0,0,0,1,4,3,3],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a54cbf9c9aa3a0d5bb1e14d44d9f7924e":[2,0,0,0,0,1,4,3,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#aebe58385063c387d9b27bce0ad2493fc":[1,0,0,0,0,2,5,3],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#aebe58385063c387d9b27bce0ad2493fc":[2,0,0,0,0,2,5,3],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html":[1,0,0,0,0,2,6],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html":[2,0,0,0,0,2,6],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a329f19a5a4d2b42ba5c3ab609b3ea814":[1,0,0,0,0,2,6,4]
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html":[2,0,0,0,0,2,6]
 };

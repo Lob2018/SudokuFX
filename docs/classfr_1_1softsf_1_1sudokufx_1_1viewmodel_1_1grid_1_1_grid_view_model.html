@@ -114,13 +114,13 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model__coll__graph.svg" width="219" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a69ff7c85df7900f9e196caff6ee94a50" id="r_a69ff7c85df7900f9e196caff6ee94a50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69ff7c85df7900f9e196caff6ee94a50">GridViewModel</a> (IGridMaster <a class="el" href="#ab4e4d42e33f7772368d02243dc7412d4">iGridMaster</a>)</td></tr>
-<tr class="separator:a69ff7c85df7900f9e196caff6ee94a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25fd69f305d79223fe79b849880a67a5" id="r_a25fd69f305d79223fe79b849880a67a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25fd69f305d79223fe79b849880a67a5">GridViewModel</a> (IGridMaster <a class="el" href="#a4d99b8d993ea1d81d18c436eea4b8e80">iGridMaster</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a> <a class="el" href="#a0e3033ee54eac7c612f8f73aae8c6742">activeMenuOrSubmenuViewModel</a>)</td></tr>
+<tr class="separator:a25fd69f305d79223fe79b849880a67a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae87f46d8f99a5c503ce3d993b1ff6e8f" id="r_ae87f46d8f99a5c503ce3d993b1ff6e8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae87f46d8f99a5c503ce3d993b1ff6e8f">applyLevel</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
 <tr class="memdesc:ae87f46d8f99a5c503ce3d993b1ff6e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given difficulty level by generating a new grid (using level-specific parameters), updating the cell values accordingly, and returning the stars completion percentage.  <br /></td></tr>
 <tr class="separator:ae87f46d8f99a5c503ce3d993b1ff6e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,15 +145,21 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:ad536719f789ab2bb851aa4b26d44c075" id="r_ad536719f789ab2bb851aa4b26d44c075"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad536719f789ab2bb851aa4b26d44c075">isCompletelyCompleted</a> ()</td></tr>
+<tr class="memdesc:ad536719f789ab2bb851aa4b26d44c075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all 81 cells contain valid single-digit values (1-9).  <br /></td></tr>
+<tr class="separator:ad536719f789ab2bb851aa4b26d44c075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d49e325684b6bef071fb2461c896cb" id="r_a77d49e325684b6bef071fb2461c896cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77d49e325684b6bef071fb2461c896cb">verifyGrid</a> ()</td></tr>
+<tr class="memdesc:a77d49e325684b6bef071fb2461c896cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies the current grid state by attempting to solve it.  <br /></td></tr>
 <tr class="separator:a77d49e325684b6bef071fb2461c896cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a0e3033ee54eac7c612f8f73aae8c6742" id="r_a0e3033ee54eac7c612f8f73aae8c6742"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e3033ee54eac7c612f8f73aae8c6742">activeMenuOrSubmenuViewModel</a></td></tr>
+<tr class="separator:a0e3033ee54eac7c612f8f73aae8c6742"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08effb35262e7a92de8e4bd41fc8e7b0" id="r_a08effb35262e7a92de8e4bd41fc8e7b0"><td class="memItemLeft" align="right" valign="top">final List&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08effb35262e7a92de8e4bd41fc8e7b0">cellViewModels</a> = new ArrayList&lt;&gt;(<a class="el" href="#afd1217d7084a63e6556c5c360cee4a07">GRID_SIZE</a> * <a class="el" href="#afd1217d7084a63e6556c5c360cee4a07">GRID_SIZE</a>)</td></tr>
 <tr class="separator:a08effb35262e7a92de8e4bd41fc8e7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e4d42e33f7772368d02243dc7412d4" id="r_ab4e4d42e33f7772368d02243dc7412d4"><td class="memItemLeft" align="right" valign="top">IGridMaster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4e4d42e33f7772368d02243dc7412d4">iGridMaster</a></td></tr>
-<tr class="separator:ab4e4d42e33f7772368d02243dc7412d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d99b8d993ea1d81d18c436eea4b8e80" id="r_a4d99b8d993ea1d81d18c436eea4b8e80"><td class="memItemLeft" align="right" valign="top">final IGridMaster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d99b8d993ea1d81d18c436eea4b8e80">iGridMaster</a></td></tr>
+<tr class="separator:a4d99b8d993ea1d81d18c436eea4b8e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -166,8 +172,8 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>ViewModel component managing a 9x9 Sudoku grid. </p>
 <p>Provides observable cell view models and methods to manipulate grid data. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a69ff7c85df7900f9e196caff6ee94a50" name="a69ff7c85df7900f9e196caff6ee94a50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69ff7c85df7900f9e196caff6ee94a50">&#9670;&#160;</a></span>GridViewModel()</h2>
+<a id="a25fd69f305d79223fe79b849880a67a5" name="a25fd69f305d79223fe79b849880a67a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25fd69f305d79223fe79b849880a67a5">&#9670;&#160;</a></span>GridViewModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,8 +181,12 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">fr.softsf.sudokufx.viewmodel.grid.GridViewModel.GridViewModel </td>
           <td>(</td>
-          <td class="paramtype">IGridMaster</td>          <td class="paramname"><span class="paramname"><em>iGridMaster</em></span></td><td>)</td>
+          <td class="paramtype">IGridMaster</td>          <td class="paramname"><span class="paramname"><em>iGridMaster</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a></td>          <td class="paramname"><span class="paramname"><em>activeMenuOrSubmenuViewModel</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -322,13 +332,49 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates 81 GridCellViewModels with unique ids and grid coordinates. </p>
-<p>Called once after bean construction to initialize the grid. </p>
+<p>Called once after bean construction to initialize the grid.</p>
+<p>Also sets up text change listeners on each cell to automatically verify the grid when in SOLVE mode or when all cells are completed with one value. </p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_a159c0e18f45f9bd105fb03964f5f9374_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_a159c0e18f45f9bd105fb03964f5f9374_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ad536719f789ab2bb851aa4b26d44c075" name="ad536719f789ab2bb851aa4b26d44c075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad536719f789ab2bb851aa4b26d44c075">&#9670;&#160;</a></span>isCompletelyCompleted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean fr.softsf.sudokufx.viewmodel.grid.GridViewModel.isCompletelyCompleted </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if all 81 cells contain valid single-digit values (1-9). </p>
+<dl class="section return"><dt>Returns</dt><dd>true if grid is completely filled with valid digits, false otherwise </dd></dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_ad536719f789ab2bb851aa4b26d44c075_cgraph.svg" width="530" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -362,11 +408,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_accb66801fa9a7d8993ba472b4eb28932_cgraph.svg" width="508" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -394,17 +440,42 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+
+<p>Verifies the current grid state by attempting to solve it. </p>
+<p>Converts cell values to integer array, calls the grid solver, and outputs solution status and completion percentage. </p>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_a77d49e325684b6bef071fb2461c896cb_cgraph.svg" width="496" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a0e3033ee54eac7c612f8f73aae8c6742" name="a0e3033ee54eac7c612f8f73aae8c6742"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e3033ee54eac7c612f8f73aae8c6742">&#9670;&#160;</a></span>activeMenuOrSubmenuViewModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a> fr.softsf.sudokufx.viewmodel.grid.GridViewModel.activeMenuOrSubmenuViewModel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a08effb35262e7a92de8e4bd41fc8e7b0" name="a08effb35262e7a92de8e4bd41fc8e7b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a08effb35262e7a92de8e4bd41fc8e7b0">&#9670;&#160;</a></span>cellViewModels</h2>
 
@@ -449,8 +520,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ab4e4d42e33f7772368d02243dc7412d4" name="ab4e4d42e33f7772368d02243dc7412d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4e4d42e33f7772368d02243dc7412d4">&#9670;&#160;</a></span>iGridMaster</h2>
+<a id="a4d99b8d993ea1d81d18c436eea4b8e80" name="a4d99b8d993ea1d81d18c436eea4b8e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d99b8d993ea1d81d18c436eea4b8e80">&#9670;&#160;</a></span>iGridMaster</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,7 +530,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">IGridMaster fr.softsf.sudokufx.viewmodel.grid.GridViewModel.iGridMaster</td>
+          <td class="memname">final IGridMaster fr.softsf.sudokufx.viewmodel.grid.GridViewModel.iGridMaster</td>
         </tr>
       </table>
   </td>
@@ -502,7 +573,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html">grid</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html">GridViewModel</a></li>
-    <li class="footer">Generated on Thu Jul 24 2025 08:23:39 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Fri Aug 8 2025 23:46:12 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

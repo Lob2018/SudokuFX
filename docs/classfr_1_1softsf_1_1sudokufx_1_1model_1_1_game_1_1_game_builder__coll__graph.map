@@ -1,15 +1,15 @@
 <map id="fr.softsf.sudokufx.model.Game.GameBuilder" name="fr.softsf.sudokufx.model.Game.GameBuilder">
-<area shape="rect" id="Node000001" title=" " alt="" coords="258,1093,439,1504"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" title=" " alt="" coords="5,549,187,987"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,986,201,1028,252,1127,247,1129,197,1030,177,988"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" title=" " alt="" coords="211,507,485,1029"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="351,1029,351,1077,346,1077,346,1029"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" title=" " alt="" coords="26,101,220,347"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="176,345,236,490,231,492,171,348"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html" title=" " alt="" coords="243,5,453,443"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="351,442,351,490,346,490,346,442"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" title=" " alt="" coords="477,109,665,339"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="527,339,464,492,459,490,522,337"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html" title=" " alt="" coords="509,637,675,899"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="552,900,500,1030,449,1131,445,1129,495,1028,547,898"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="258,1291,439,1701"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" title=" " alt="" coords="5,747,187,1184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,1183,201,1226,252,1324,247,1327,197,1228,177,1185"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" title=" " alt="" coords="211,704,485,1227"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="351,1226,351,1274,346,1274,346,1226"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" title=" " alt="" coords="16,200,209,445"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,444,223,639,241,687,236,689,218,641,150,446"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html" title=" " alt="" coords="232,5,464,640"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="351,640,351,687,346,687,346,640"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" title=" " alt="" coords="488,208,676,437"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="548,438,479,641,461,689,456,687,474,639,543,436"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html" title=" " alt="" coords="509,835,675,1096"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="552,1097,500,1228,449,1329,445,1326,495,1226,547,1095"/>
 </map>
