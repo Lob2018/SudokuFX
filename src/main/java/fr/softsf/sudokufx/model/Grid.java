@@ -173,8 +173,7 @@ public class Grid {
     @Override
     public String toString() {
         return String.format(
-                "Grid{gridid=%d, defaultgridvalue='%s', gridvalue='%s', possibilities=%d}",
-                gridid, defaultgridvalue, gridvalue, possibilities
-        );
+                "Grid{gridid=%s, defaultgridvalue='%s', gridvalue='%s', possibilities=%d}",
+                gridid, defaultgridvalue, gridvalue, possibilities);
     }
 }

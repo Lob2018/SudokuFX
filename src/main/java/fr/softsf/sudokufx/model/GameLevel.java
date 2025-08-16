@@ -96,6 +96,6 @@ public class GameLevel {
 
     @Override
     public String toString() {
-        return String.format("GameLevel{levelid=%s, level=%d}", levelid, level);
+        return String.format("GameLevel{levelid=%d, level=%d}", levelid, level);
     }
 }

@@ -183,8 +183,7 @@ public class Background {
     @Override
     public String toString() {
         return String.format(
-                "Background{backgroundid=%d, hexcolor='%s', imagepath='%s', isimage=%b}",
-                backgroundid, hexcolor, imagepath, isimage
-        );
+                "Background{backgroundid=%s, hexcolor='%s', imagepath='%s', isimage=%b}",
+                backgroundid, hexcolor, imagepath, isimage);
     }
 }

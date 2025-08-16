@@ -274,8 +274,8 @@ public class Game {
     @Override
     public String toString() {
         return String.format(
-                "Game{gameid=%d, gridid=%d, playerid=%d, levelid=%d, isselected=%b, createdat=%s, updatedat=%s}",
-                gameid, gridid, playerid, levelid, isselected, createdat, updatedat
-        );
+                "Game{gameid=%s, grid=%s, player=%s, level=%s, isselected=%b, createdat=%s,"
+                        + " updatedat=%s}",
+                gameid, gridid, playerid, levelid, isselected, createdat, updatedat);
     }
 }
