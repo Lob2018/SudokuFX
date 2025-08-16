@@ -9,11 +9,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Supplier;
+
 import javafx.application.Platform;
 import javafx.beans.binding.StringBinding;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.StringProperty;
 import javafx.concurrent.Task;
 
 import org.junit.jupiter.api.AfterEach;
@@ -36,11 +34,10 @@ import static org.mockito.Mockito.when;
 class MenuNewViewModelUTest {
 
     @Mock private VersionService versionService;
-
     private MenuNewViewModel viewModel;
     private Locale originalLocale;
 
-    record BindingCheck(StringBinding binding, Supplier<String> expected) {}
+    private record BindingCheck(StringBinding binding, String i18nKey) {}
 
     @BeforeEach
     void setUp() {
@@ -51,7 +48,8 @@ class MenuNewViewModelUTest {
                         new Task<>() {
                             @Override
                             protected Boolean call() {
-                                updateMessage("Up to date");
+                                // Exécute sur le thread JavaFX pour une mise à jour asynchrone réaliste
+                                Platform.runLater(() -> updateMessage("Up to date"));
                                 return true;
                             }
                         });
@@ -65,48 +63,31 @@ class MenuNewViewModelUTest {
 
     @Test
     void givenLocale_whenStringBindings_thenValuesMatchBeforeAndAfterChange() {
-        List<BindingCheck> bindings =
-                List.of(
-                        new BindingCheck(
-                                viewModel.maxiNewAccessibleTextProperty(),
-                                () -> I18n.INSTANCE.getValue("menu.maxi.button.new.accessibility")),
-                        new BindingCheck(
-                                viewModel.maxiNewTextProperty(),
-                                () -> I18n.INSTANCE.getValue("menu.maxi.button.new.text")),
-                        new BindingCheck(
-                                viewModel.newAccessibleTextProperty(),
-                                () -> I18n.INSTANCE.getValue("menu.mini.button.new.accessibility")),
-                        new BindingCheck(
-                                viewModel.maxiNewTooltipProperty(),
-                                () -> I18n.INSTANCE.getValue("menu.maxi.button.new.accessibility")),
-                        new BindingCheck(
-                                viewModel.newTooltipProperty(),
-                                () ->
-                                        I18n.INSTANCE.getValue(
-                                                "menu.mini.button.new.accessibility")));
-        for (var locale : List.of("FR", "EN")) {
+        List<BindingCheck> bindings = List.of(
+                new BindingCheck(viewModel.maxiNewAccessibleTextProperty(), "menu.maxi.button.new.accessibility"),
+                new BindingCheck(viewModel.maxiNewTextProperty(), "menu.maxi.button.new.text"),
+                new BindingCheck(viewModel.newAccessibleTextProperty(), "menu.mini.button.new.accessibility"),
+                new BindingCheck(viewModel.maxiNewTooltipProperty(), "menu.maxi.button.new.accessibility"),
+                new BindingCheck(viewModel.newTooltipProperty(), "menu.mini.button.new.accessibility")
+        );
+        for (String locale : List.of("FR", "EN")) {
             I18n.INSTANCE.setLocaleBundle(locale);
-            bindings.forEach(b -> assertEquals(b.expected.get(), b.binding.get()));
+            bindings.forEach(b ->
+                    assertEquals(I18n.INSTANCE.getValue(b.i18nKey), b.binding.get())
+            );
         }
     }
 
     @Test
-    void givenVersionService_whenCheckLatestVersion_thenIsUpToDateAndStatusMessageUpdated()
-            throws Exception {
-        BooleanProperty isUpToDate = viewModel.isUpToDateProperty();
-        StringProperty statusMessage = viewModel.statusMessageProperty();
+    void givenVersionService_whenCheckLatestVersion_thenIsUpToDateAndStatusMessageUpdated() throws Exception {
         CountDownLatch latch = new CountDownLatch(1);
-        statusMessage.addListener(
-                (obs, oldVal, newVal) -> {
-                    if ("Up to date".equals(newVal)) latch.countDown();
-                });
-        Task<Boolean> task = versionService.checkLatestVersion();
-        new Thread(task).start();
+        viewModel.statusMessageProperty().addListener((obs, oldVal, newVal) -> {
+            if ("Up to date".equals(newVal)) {
+                latch.countDown();
+            }
+        });
         assertTrue(latch.await(2, TimeUnit.SECONDS), "Timeout waiting for 'Up to date' message");
-        CountDownLatch platformLatch = new CountDownLatch(1);
-        Platform.runLater(platformLatch::countDown);
-        platformLatch.await();
-        assertTrue(isUpToDate.get());
-        assertEquals("Up to date", statusMessage.get());
+        assertTrue(viewModel.isUpToDateProperty().get());
+        assertEquals("Up to date", viewModel.statusMessageProperty().get());
     }
 }
