@@ -5,6 +5,9 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.util.Objects;
+
+import jakarta.annotation.Nonnull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -19,50 +22,85 @@ import jakarta.validation.constraints.Size;
 @Table(name = "grid")
 public class Grid {
 
+    private static final String EMPTY_GRID = "";
+    private static final String DEFAULTGRIDVALUE_MUST_NOT_BE_NULL =
+            "defaultgridvalue must not be null";
+    private static final String GRIDVALUE_MUST_NOT_BE_NULL = "gridvalue must not be null";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long gridid;
 
-    @NotNull @Size(max = 81) private String defaultgridvalue;
+    @Nonnull
+    @NotNull @Size(max = 81) private String defaultgridvalue = EMPTY_GRID;
 
-    @NotNull @Size(max = 810) private String gridvalue;
+    @Nonnull
+    @NotNull @Size(max = 810) private String gridvalue = EMPTY_GRID;
 
-    @NotNull @Min(0) @Max(100) private Byte possibilities;
+    @Min(0) @Max(100) private byte possibilities;
 
-    public Grid() {}
+    protected Grid() {}
 
-    public Grid(Long gridid, String defaultgridvalue, String gridvalue, Byte possibilities) {
+    public Grid(
+            Long gridid,
+            @Nonnull @NotNull String defaultgridvalue,
+            @Nonnull @NotNull String gridvalue,
+            byte possibilities) {
         this.gridid = gridid;
-        this.defaultgridvalue = defaultgridvalue;
-        this.gridvalue = gridvalue;
+        this.defaultgridvalue = validateDefaultgridvalue(defaultgridvalue);
+        this.gridvalue = validateGridvalue(gridvalue);
         this.possibilities = possibilities;
+    }
+
+    /**
+     * Validates that the default grid value is not null.
+     *
+     * @param defaultgridvalue the default grid value to validate
+     * @return the validated default grid value
+     * @throws NullPointerException if the default grid value is null
+     */
+    private static String validateDefaultgridvalue(String defaultgridvalue) {
+        return Objects.requireNonNull(defaultgridvalue, DEFAULTGRIDVALUE_MUST_NOT_BE_NULL);
+    }
+
+    /**
+     * Validates that the grid value is not null.
+     *
+     * @param gridvalue the grid value to validate
+     * @return the validated grid value
+     * @throws NullPointerException if the grid value is null
+     */
+    private static String validateGridvalue(String gridvalue) {
+        return Objects.requireNonNull(gridvalue, GRIDVALUE_MUST_NOT_BE_NULL);
     }
 
     public Long getGridid() {
         return gridid;
     }
 
+    @Nonnull
     public String getDefaultgridvalue() {
         return defaultgridvalue;
     }
 
+    @Nonnull
     public String getGridvalue() {
         return gridvalue;
     }
 
-    public Byte getPossibilities() {
+    public byte getPossibilities() {
         return possibilities;
     }
 
-    public void setDefaultgridvalue(String defaultgridvalue) {
-        this.defaultgridvalue = defaultgridvalue;
+    public void setDefaultgridvalue(@Nonnull String defaultgridvalue) {
+        this.defaultgridvalue = validateDefaultgridvalue(defaultgridvalue);
     }
 
-    public void setGridvalue(String gridvalue) {
-        this.gridvalue = gridvalue;
+    public void setGridvalue(@Nonnull String gridvalue) {
+        this.gridvalue = validateGridvalue(gridvalue);
     }
 
-    public void setPossibilities(Byte possibilities) {
+    public void setPossibilities(byte possibilities) {
         this.possibilities = possibilities;
     }
 
@@ -70,34 +108,81 @@ public class Grid {
         return new GridBuilder();
     }
 
+    /**
+     * Builder class for creating instances of {@link Grid}.
+     *
+     * <p>Provides a fluent API to set all fields before constructing an instance of {@code Grid}.
+     * Validation occurs at build() to avoid exceptions during construction.
+     */
     public static class GridBuilder {
         private Long gridid;
-        private String defaultgridvalue;
-        private String gridvalue;
-        private Byte possibilities;
+        private String defaultgridvalue = EMPTY_GRID;
+        private String gridvalue = EMPTY_GRID;
+        private byte possibilities;
 
         public GridBuilder gridid(Long gridid) {
             this.gridid = gridid;
             return this;
         }
 
-        public GridBuilder defaultgridvalue(String defaultgridvalue) {
+        public GridBuilder defaultgridvalue(@Nonnull String defaultgridvalue) {
             this.defaultgridvalue = defaultgridvalue;
             return this;
         }
 
-        public GridBuilder gridvalue(String gridvalue) {
+        public GridBuilder gridvalue(@Nonnull String gridvalue) {
             this.gridvalue = gridvalue;
             return this;
         }
 
-        public GridBuilder possibilities(Byte possibilities) {
+        public GridBuilder possibilities(byte possibilities) {
             this.possibilities = possibilities;
             return this;
         }
 
+        /**
+         * Creates Grid instance with parameter validation.
+         *
+         * @return new validated Grid instance
+         * @throws NullPointerException if required parameters are null
+         */
         public Grid build() {
             return new Grid(gridid, defaultgridvalue, gridvalue, possibilities);
         }
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Grid other)) {
+            return false;
+        }
+        return possibilities == other.possibilities
+                && Objects.equals(gridid, other.gridid)
+                && Objects.equals(defaultgridvalue, other.defaultgridvalue)
+                && Objects.equals(gridvalue, other.gridvalue);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(gridid, defaultgridvalue, gridvalue, possibilities);
+    }
+
+    @Override
+    public String toString() {
+        return "Grid{"
+                + "gridid="
+                + gridid
+                + ", defaultgridvalue='"
+                + defaultgridvalue
+                + '\''
+                + ", gridvalue='"
+                + gridvalue
+                + '\''
+                + ", possibilities="
+                + possibilities
+                + '}';
     }
 }

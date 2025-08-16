@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.dto;
 
+import jakarta.annotation.Nonnull;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
@@ -16,10 +17,10 @@ import jakarta.validation.constraints.Size;
  * @param gridid the unique identifier of the grid
  * @param defaultgridvalue the default grid value string, max length 81; must not be null
  * @param gridvalue the current grid value string, max length 810; must not be null
- * @param possibilities the percentage of possibilities (0 to 100); must not be null
+ * @param possibilities the percentage of possibilities (0 to 100)
  */
 public record GridDto(
         Long gridid,
-        @NotNull @Size(max = 81) String defaultgridvalue,
-        @NotNull @Size(max = 810) String gridvalue,
-        @NotNull @Min(0) @Max(100) Byte possibilities) {}
+        @Nonnull @NotNull @Size(max = 81) String defaultgridvalue,
+        @Nonnull @NotNull @Size(max = 810) String gridvalue,
+        @Min(0) @Max(100) byte possibilities) {}
