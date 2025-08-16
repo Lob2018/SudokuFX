@@ -384,7 +384,6 @@
             <exclude>fr/softsf/sudokufx/SudoMain*</exclude>
             <exclude>fr/softsf/sudokufx/Launcher.class</exclude>
             <exclude>fr/softsf/sudokufx/view/**</exclude>
-            <exclude>fr/softsf/sudokufx/model/**</exclude>
             <exclude>fr/softsf/sudokufx/dto/**</exclude>
             <exclude>fr/softsf/sudokufx/common/interfaces/**</exclude>
             <exclude>fr/softsf/sudokufx/common/util/SpringContextInitializer$*</exclude>
