@@ -48,7 +48,6 @@ class MenuNewViewModelUTest {
                         new Task<>() {
                             @Override
                             protected Boolean call() {
-                                // Exécute sur le thread JavaFX pour une mise à jour asynchrone réaliste
                                 Platform.runLater(() -> updateMessage("Up to date"));
                                 return true;
                             }
