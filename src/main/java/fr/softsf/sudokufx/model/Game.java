@@ -74,12 +74,67 @@ public class Game {
             @Nonnull @NotNull LocalDateTime createdat,
             @Nonnull @NotNull LocalDateTime updatedat) {
         this.gameid = gameid;
+        this.gridid = validateGrid(gridid);
+        this.playerid = validatePlayer(playerid);
+        this.levelid = validateLevel(levelid);
         this.isselected = isselected;
-        this.gridid = Objects.requireNonNull(gridid, GRIDID_MUST_NOT_BE_NULL);
-        this.playerid = Objects.requireNonNull(playerid, PLAYERID_MUST_NOT_BE_NULL);
-        this.levelid = Objects.requireNonNull(levelid, LEVELID_MUST_NOT_BE_NULL);
-        this.createdat = Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
-        this.updatedat = Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
+        this.createdat = validateCreatedAt(createdat);
+        this.updatedat = validateUpdatedAt(updatedat);
+    }
+
+    /**
+     * Validates that the given {@link Grid} is not null.
+     *
+     * @param grid the grid to validate
+     * @return the validated grid (not null)
+     * @throws NullPointerException if the grid is null
+     */
+    private static Grid validateGrid(Grid grid) {
+        return Objects.requireNonNull(grid, GRIDID_MUST_NOT_BE_NULL);
+    }
+
+    /**
+     * Validates that the given {@link Player} is not null.
+     *
+     * @param player the player to validate
+     * @return the validated player (not null)
+     * @throws NullPointerException if the player is null
+     */
+    private static Player validatePlayer(Player player) {
+        return Objects.requireNonNull(player, PLAYERID_MUST_NOT_BE_NULL);
+    }
+
+    /**
+     * Validates that the given {@link GameLevel} is not null.
+     *
+     * @param level the game level to validate
+     * @return the validated level (not null)
+     * @throws NullPointerException if the level is null
+     */
+    private static GameLevel validateLevel(GameLevel level) {
+        return Objects.requireNonNull(level, LEVELID_MUST_NOT_BE_NULL);
+    }
+
+    /**
+     * Validates that the given creation date is not null.
+     *
+     * @param createdat the creation date to validate
+     * @return the validated creation date (not null)
+     * @throws NullPointerException if the creation date is null
+     */
+    private static LocalDateTime validateCreatedAt(LocalDateTime createdat) {
+        return Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
+    }
+
+    /**
+     * Validates that the given update date is not null.
+     *
+     * @param updatedat the update date to validate
+     * @return the validated update date (not null)
+     * @throws NullPointerException if the update date is null
+     */
+    private static LocalDateTime validateUpdatedAt(LocalDateTime updatedat) {
+        return Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
     }
 
     public Long getGameid() {
@@ -115,8 +170,8 @@ public class Game {
         return updatedat;
     }
 
-    public void setPlayerid(Player playerid) {
-        this.playerid = playerid;
+    public void setPlayerid(@Nonnull Player playerid) {
+        this.playerid = validatePlayer(playerid);
     }
 
     public void setIsselected(boolean isselected) {
@@ -124,39 +179,45 @@ public class Game {
     }
 
     public void setUpdatedat(@Nonnull LocalDateTime updatedat) {
-        this.updatedat = updatedat;
+        this.updatedat = validateUpdatedAt(updatedat);
     }
 
     public static GameBuilder builder() {
         return new GameBuilder();
     }
 
+    /**
+     * Builder class for creating instances of {@link Game}.
+     *
+     * <p>Provides a fluent API to set all fields before constructing an instance of {@code Game}.
+     * All non-nullable fields are validated.
+     */
     public static class GameBuilder {
         private Long gameid;
         private Grid gridid;
         private Player playerid;
         private GameLevel levelid;
         private boolean isselected = false;
-        @Nonnull @NotNull private LocalDateTime createdat = LocalDateTime.now();
-        @Nonnull @NotNull private LocalDateTime updatedat = LocalDateTime.now();
+        private LocalDateTime createdat = LocalDateTime.now();
+        private LocalDateTime updatedat = LocalDateTime.now();
 
         public GameBuilder gameid(Long gameid) {
             this.gameid = gameid;
             return this;
         }
 
-        public GameBuilder gridid(Grid gridid) {
-            this.gridid = Objects.requireNonNull(gridid, GRIDID_MUST_NOT_BE_NULL);
+        public GameBuilder gridid(@Nonnull Grid gridid) {
+            this.gridid = validateGrid(gridid);
             return this;
         }
 
-        public GameBuilder playerid(Player playerid) {
-            this.playerid = Objects.requireNonNull(playerid, PLAYERID_MUST_NOT_BE_NULL);
+        public GameBuilder playerid(@Nonnull Player playerid) {
+            this.playerid = validatePlayer(playerid);
             return this;
         }
 
-        public GameBuilder levelid(GameLevel levelid) {
-            this.levelid = Objects.requireNonNull(levelid, LEVELID_MUST_NOT_BE_NULL);
+        public GameBuilder levelid(@Nonnull GameLevel levelid) {
+            this.levelid = validateLevel(levelid);
             return this;
         }
 
@@ -165,18 +226,68 @@ public class Game {
             return this;
         }
 
-        public GameBuilder createdat(LocalDateTime createdat) {
-            this.createdat = Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
+        public GameBuilder createdat(@Nonnull LocalDateTime createdat) {
+            this.createdat = validateCreatedAt(createdat);
             return this;
         }
 
-        public GameBuilder updatedat(LocalDateTime updatedat) {
-            this.updatedat = Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
+        public GameBuilder updatedat(@Nonnull LocalDateTime updatedat) {
+            this.updatedat = validateUpdatedAt(updatedat);
             return this;
         }
 
+        /**
+         * Builds a new {@link Game} instance using the values previously set in the builder.
+         *
+         * <p>All required fields are validated and must not be null.
+         *
+         * @return a fully constructed {@code Game} instance
+         * @throws NullPointerException if any required field is null
+         */
         public Game build() {
             return new Game(gameid, gridid, playerid, levelid, isselected, createdat, updatedat);
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Game other)) {
+            return false;
+        }
+        return Objects.equals(gameid, other.gameid)
+                && Objects.equals(gridid, other.gridid)
+                && Objects.equals(playerid, other.playerid)
+                && Objects.equals(levelid, other.levelid)
+                && Objects.equals(isselected, other.isselected)
+                && Objects.equals(createdat, other.createdat)
+                && Objects.equals(updatedat, other.updatedat);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(gameid, gridid, playerid, levelid, isselected, createdat, updatedat);
+    }
+
+    @Override
+    public String toString() {
+        return "Game{"
+                + "gameid="
+                + gameid
+                + ", gridid="
+                + gridid
+                + ", playerid="
+                + playerid
+                + ", levelid="
+                + levelid
+                + ", isselected="
+                + isselected
+                + ", createdat="
+                + createdat
+                + ", updatedat="
+                + updatedat
+                + '}';
     }
 }
