@@ -476,14 +476,19 @@ class GameUTest {
                             true,
                             testCreatedAt,
                             testUpdatedAt);
+
+            when(mockGrid.getGridid()).thenReturn(1L);
+            when(mockPlayer.getPlayerid()).thenReturn(1L);
+            when(mockGameLevel.getLevelid()).thenReturn((byte)1);
+
             String result = game.toString();
             assertNotNull(result);
             assertTrue(result.contains("Game{"));
             assertTrue(result.contains("gameid=1"));
             assertTrue(result.contains("isselected=true"));
-            assertTrue(result.contains("gridid=" + mockGrid.toString()));
-            assertTrue(result.contains("playerid=" + mockPlayer.toString()));
-            assertTrue(result.contains("levelid=" + mockGameLevel.toString()));
+            assertTrue(result.contains("gridid=" + mockGrid.getGridid()));
+            assertTrue(result.contains("playerid=" + mockPlayer.getPlayerid()));
+            assertTrue(result.contains("levelid=" + mockGameLevel.getLevelid()));
         }
     }
 
