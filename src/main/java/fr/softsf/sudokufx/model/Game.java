@@ -274,8 +274,14 @@ public class Game {
     @Override
     public String toString() {
         return String.format(
-                "Game{gameid=%s, grid=%s, player=%s, level=%s, isselected=%b, createdat=%s,"
+                "Game{gameid=%s, gridid=%s, playerid=%s, levelid=%s, isselected=%b, createdat=%s,"
                         + " updatedat=%s}",
-                gameid, gridid, playerid, levelid, isselected, createdat, updatedat);
+                gameid,
+                gridid.getGridid(),
+                playerid.getPlayerid(),
+                levelid.getLevelid(),
+                isselected,
+                createdat,
+                updatedat);
     }
 }
