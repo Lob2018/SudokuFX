@@ -273,21 +273,9 @@ public class Game {
 
     @Override
     public String toString() {
-        return "Game{"
-                + "gameid="
-                + gameid
-                + ", gridid="
-                + gridid
-                + ", playerid="
-                + playerid
-                + ", levelid="
-                + levelid
-                + ", isselected="
-                + isselected
-                + ", createdat="
-                + createdat
-                + ", updatedat="
-                + updatedat
-                + '}';
+        return String.format(
+                "Game{gameid=%d, gridid=%d, playerid=%d, levelid=%d, isselected=%b, createdat=%s, updatedat=%s}",
+                gameid, gridid, playerid, levelid, isselected, createdat, updatedat
+        );
     }
 }

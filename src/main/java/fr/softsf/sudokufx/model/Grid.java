@@ -172,17 +172,9 @@ public class Grid {
 
     @Override
     public String toString() {
-        return "Grid{"
-                + "gridid="
-                + gridid
-                + ", defaultgridvalue='"
-                + defaultgridvalue
-                + '\''
-                + ", gridvalue='"
-                + gridvalue
-                + '\''
-                + ", possibilities="
-                + possibilities
-                + '}';
+        return String.format(
+                "Grid{gridid=%d, defaultgridvalue='%s', gridvalue='%s', possibilities=%d}",
+                gridid, defaultgridvalue, gridvalue, possibilities
+        );
     }
 }
