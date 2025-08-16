@@ -152,12 +152,14 @@ class BackgroundUTest {
         @Test
         void givenInvalidHexColor_whenBuilding_thenIllegalArgumentExceptionIsThrown() {
             IllegalArgumentException exception =
-                    assertThrows(
-                            IllegalArgumentException.class,
-                            () -> Background.builder().hexcolor("invalid").build());
+                    assertThrows(IllegalArgumentException.class, this::buildBackgroundWithInvalidColor);
             assertEquals(
                     "hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)",
                     exception.getMessage());
+        }
+
+        private void buildBackgroundWithInvalidColor() {
+            Background.builder().hexcolor("invalid").build();
         }
     }
 
@@ -236,13 +238,13 @@ class BackgroundUTest {
         @Test
         void givenBackgroundAndNull_whenComparingEquality_thenTheyAreNotEqual() {
             Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true);
-            assertNotEquals(background, null);
+            assertNotEquals(null, background);
         }
 
         @Test
         void givenBackgroundAndDifferentClass_whenComparingEquality_thenTheyAreNotEqual() {
             Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true);
-            String notBackground = "not a background";
+            Object notBackground = new Object();
             assertNotEquals(background, notBackground);
         }
     }
