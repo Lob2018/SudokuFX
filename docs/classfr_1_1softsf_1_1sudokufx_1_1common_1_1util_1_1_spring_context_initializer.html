@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d70b1c8db446b32e9547d071bb6d663" id="r_a1d70b1c8db446b32e9547d071bb6d663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d70b1c8db446b32e9547d071bb6d663">SpringContextInitializer</a> (SpringContext <a class="el" href="#a527f0898149cc382a18fc679cf0a9b04">context</a>)</td></tr>
 <tr class="memdesc:a1d70b1c8db446b32e9547d071bb6d663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <code class="JavaDocCode">SpringContextInitializer</code> with the given <code><a class="el" href="">SpringContext</a></code>.  <br /></td></tr>
 <tr class="separator:a1d70b1c8db446b32e9547d071bb6d663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47bf17815f589e97be5c140f9005f5d0" id="r_a47bf17815f589e97be5c140f9005f5d0"><td class="memItemLeft" align="right" valign="top">Task&lt; Void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47bf17815f589e97be5c140f9005f5d0">createInitializationTask</a> ()</td></tr>
-<tr class="memdesc:a47bf17815f589e97be5c140f9005f5d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a JavaFX Task that initializes the Spring context.  <br /></td></tr>
-<tr class="separator:a47bf17815f589e97be5c140f9005f5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec80b2c8add2ad3519eeac6c1e8c05cf" id="r_aec80b2c8add2ad3519eeac6c1e8c05cf"><td class="memItemLeft" align="right" valign="top">Task&lt; Void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec80b2c8add2ad3519eeac6c1e8c05cf">createInitializationTask</a> (Class&lt;?&gt; appClass)</td></tr>
+<tr class="memdesc:aec80b2c8add2ad3519eeac6c1e8c05cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a JavaFX Task that initializes the Spring application context using the specified Spring Boot application class.  <br /></td></tr>
+<tr class="separator:aec80b2c8add2ad3519eeac6c1e8c05cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7185e1ba2b9219e85f8308a3425fb26e" id="r_a7185e1ba2b9219e85f8308a3425fb26e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7185e1ba2b9219e85f8308a3425fb26e">runInitializationTask</a> (Task&lt; Void &gt; task)</td></tr>
 <tr class="memdesc:a7185e1ba2b9219e85f8308a3425fb26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given JavaFX Task in a new background thread.  <br /></td></tr>
 <tr class="separator:a7185e1ba2b9219e85f8308a3425fb26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,8 +167,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a47bf17815f589e97be5c140f9005f5d0" name="a47bf17815f589e97be5c140f9005f5d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47bf17815f589e97be5c140f9005f5d0">&#9670;&#160;</a></span>createInitializationTask()</h2>
+<a id="aec80b2c8add2ad3519eeac6c1e8c05cf" name="aec80b2c8add2ad3519eeac6c1e8c05cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec80b2c8add2ad3519eeac6c1e8c05cf">&#9670;&#160;</a></span>createInitializationTask()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,14 +176,20 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">Task&lt; Void &gt; fr.softsf.sudokufx.common.util.SpringContextInitializer.createInitializationTask </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">Class&lt;?&gt;</td>          <td class="paramname"><span class="paramname"><em>appClass</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates a JavaFX Task that initializes the Spring context. </p>
-<dl class="section return"><dt>Returns</dt><dd>a new Task that performs Spring context initialization </dd></dl>
+<p>Returns a JavaFX Task that initializes the Spring application context using the specified Spring Boot application class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">appClass</td><td>the Spring Boot application class to run </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a Task that performs the Spring context initialization </dd></dl>
 
 </div>
 </div>
@@ -250,7 +256,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html">SpringContextInitializer</a></li>
-    <li class="footer">Generated on Fri Aug 8 2025 23:46:11 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Aug 16 2025 13:21:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
