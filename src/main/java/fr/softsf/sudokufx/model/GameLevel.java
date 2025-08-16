@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.util.Objects;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,7 +14,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "gamelevel")
@@ -22,11 +23,11 @@ public class GameLevel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Byte levelid;
 
-    @NotNull @Min(1) @Max(3) private Byte level;
+    @Min(1) @Max(3) private byte level;
 
-    public GameLevel() {}
+    protected GameLevel() {}
 
-    public GameLevel(Byte levelid, Byte level) {
+    public GameLevel(Byte levelid, byte level) {
         this.levelid = levelid;
         this.level = level;
     }
@@ -35,11 +36,11 @@ public class GameLevel {
         return levelid;
     }
 
-    public Byte getLevel() {
+    public byte getLevel() {
         return level;
     }
 
-    public void setLevel(Byte level) {
+    public void setLevel(byte level) {
         this.level = level;
     }
 
@@ -47,22 +48,54 @@ public class GameLevel {
         return new GameLevelBuilder();
     }
 
+    /**
+     * Builder class for creating instances of {@link GameLevel}.
+     *
+     * <p>Provides a fluent API to set all fields before constructing an instance of {@code
+     * GameLevel}.
+     */
     public static class GameLevelBuilder {
         private Byte levelid;
-        private Byte level;
+        private byte level;
 
         public GameLevelBuilder levelid(Byte levelid) {
             this.levelid = levelid;
             return this;
         }
 
-        public GameLevelBuilder level(Byte level) {
+        public GameLevelBuilder level(byte level) {
             this.level = level;
             return this;
         }
 
+        /**
+         * Builds a new {@link GameLevel} instance using the values previously set in the builder.
+         *
+         * @return a fully constructed {@code GameLevel} instance
+         */
         public GameLevel build() {
             return new GameLevel(levelid, level);
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof GameLevel other)) {
+            return false;
+        }
+        return Objects.equals(levelid, other.levelid) && level == other.level;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(levelid, level);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("GameLevel{levelid=%s, level=%d}", levelid, level);
     }
 }
