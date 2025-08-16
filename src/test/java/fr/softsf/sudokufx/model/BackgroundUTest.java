@@ -152,7 +152,8 @@ class BackgroundUTest {
         @Test
         void givenInvalidHexColor_whenBuilding_thenIllegalArgumentExceptionIsThrown() {
             IllegalArgumentException exception =
-                    assertThrows(IllegalArgumentException.class, this::buildBackgroundWithInvalidColor);
+                    assertThrows(
+                            IllegalArgumentException.class, this::buildBackgroundWithInvalidColor);
             assertEquals(
                     "hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)",
                     exception.getMessage());
