@@ -12,7 +12,6 @@ import org.springframework.boot.SpringApplication;
 
 import com.gluonhq.ignite.spring.SpringContext;
 
-import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /**
@@ -51,15 +50,17 @@ public class SpringContextInitializer {
     }
 
     /**
-     * Creates a JavaFX Task that initializes the Spring context.
+     * Returns a JavaFX Task that initializes the Spring application context using the specified
+     * Spring Boot application class.
      *
-     * @return a new Task that performs Spring context initialization
+     * @param appClass the Spring Boot application class to run
+     * @return a Task that performs the Spring context initialization
      */
-    public Task<Void> createInitializationTask() {
+    public Task<Void> createInitializationTask(Class<?> appClass) {
         return new Task<>() {
             @Override
             protected Void call() {
-                context.init(() -> SpringApplication.run(SudoMain.class));
+                context.init(() -> SpringApplication.run(appClass));
                 return null;
             }
         };

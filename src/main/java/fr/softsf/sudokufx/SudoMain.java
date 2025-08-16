@@ -126,7 +126,8 @@ public class SudoMain extends Application {
             long startTime = System.currentTimeMillis();
 
             SpringContextInitializer springInitializer = new SpringContextInitializer(context);
-            Task<Void> springInitializeTask = springInitializer.createInitializationTask();
+            Task<Void> springInitializeTask =
+                    springInitializer.createInitializationTask(this.getClass());
             springInitializeTask.setOnSucceeded(event -> handleSpringContextTaskSuccess(startTime));
             springInitializeTask.setOnFailed(
                     event -> {

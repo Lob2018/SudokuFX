@@ -14,6 +14,7 @@ import org.testfx.framework.junit5.ApplicationExtension;
 
 import com.gluonhq.ignite.spring.SpringContext;
 
+import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.util.SpringContextInitializer;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -52,7 +53,7 @@ class SpringContextInitializerUTest {
             throws InterruptedException {
         SpringContext context = mock(SpringContext.class);
         SpringContextInitializer initializer = new SpringContextInitializer(context);
-        Task<Void> task = initializer.createInitializationTask();
+        Task<Void> task = initializer.createInitializationTask(SudoMain.class);
         CountDownLatch latch = new CountDownLatch(1);
         task.setOnSucceeded(e -> latch.countDown());
         task.setOnFailed(e -> latch.countDown());
