@@ -5,13 +5,18 @@
  */
 package fr.softsf.sudokufx.dto;
 
+import jakarta.annotation.Nonnull;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.Pattern;
 
 /**
  * Data Transfer Object representing a player's language.
  *
  * @param playerlanguageid the unique identifier of the player language
- * @param iso the ISO code of the language, must not be null and maximum length 2 characters
+ * @param iso the ISO code; must be "FR" or "EN" and not null
  */
-public record PlayerLanguageDto(Long playerlanguageid, @NotNull @Size(max = 2) String iso) {}
+public record PlayerLanguageDto(
+        Long playerlanguageid,
+        @Nonnull
+                @NotNull @Pattern(regexp = "^(FR|EN)$", message = "iso must be either 'FR' or 'EN'")
+                String iso) {}
