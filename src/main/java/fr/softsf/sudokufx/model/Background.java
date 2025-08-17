@@ -46,6 +46,7 @@ public class Background {
     @NotNull @Size(max = 260) @Column(name = "imagepath", nullable = false, length = 1024)
     private String imagepath = EMPTY_PATH;
 
+    @Column(name = "isimage", nullable = false)
     private boolean isimage = false;
 
     protected Background() {}
