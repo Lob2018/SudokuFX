@@ -127,6 +127,7 @@ class PlayerUTest {
         @Test
         @DisplayName("Given two Players with same ID when comparing then they are equal")
         void givenTwoPlayersWithSameId_whenComparing_thenTheyAreEqual() {
+            LocalDateTime fixedTime = LocalDateTime.of(1, 1, 1, 1, 1, 1, 1);
             Player p1 =
                     Player.builder()
                             .playerid(1L)
@@ -134,6 +135,8 @@ class PlayerUTest {
                             .backgroundid(mockBackground)
                             .menuid(mockMenu)
                             .name("John")
+                            .createdat(fixedTime)
+                            .updatedat(fixedTime)
                             .build();
             Player p2 =
                     Player.builder()
@@ -142,6 +145,8 @@ class PlayerUTest {
                             .backgroundid(mockBackground)
                             .menuid(mockMenu)
                             .name("John")
+                            .createdat(fixedTime)
+                            .updatedat(fixedTime)
                             .build();
             assertEquals(p1, p2);
             assertEquals(p1.hashCode(), p2.hashCode());
