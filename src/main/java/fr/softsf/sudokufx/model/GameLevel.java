@@ -25,7 +25,10 @@ public class GameLevel {
     @Column(name = "levelid", nullable = false)
     private Byte levelid;
 
-    @Min(1) @Max(3) private byte level;
+    @Min(1)
+    @Max(3)
+    @Column(name = "level", nullable = false)
+    private byte level;
 
     protected GameLevel() {}
 
