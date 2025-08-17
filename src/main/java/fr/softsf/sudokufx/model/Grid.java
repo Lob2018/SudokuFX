@@ -34,12 +34,15 @@ public class Grid {
     private Long gridid;
 
     @Nonnull
-    @NotNull @Size(max = 81) private String defaultgridvalue = EMPTY_GRID;
+    @NotNull @Size(max = 81) @Column(name = "defaultgridvalue", nullable = false, length = 81)
+    private String defaultgridvalue = EMPTY_GRID;
 
     @Nonnull
-    @NotNull @Size(max = 810) private String gridvalue = EMPTY_GRID;
+    @NotNull @Size(max = 810) @Column(name = "gridvalue", nullable = false, length = 810)
+    private String gridvalue = EMPTY_GRID;
 
-    @Min(0) @Max(100) private byte possibilities;
+    @Min(0) @Max(100) @Column(name = "possibilities", nullable = false)
+    private byte possibilities;
 
     protected Grid() {}
 
