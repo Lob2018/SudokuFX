@@ -34,20 +34,22 @@ class PlayerUTest {
         mockGame1 = mock(Game.class);
         mockGame2 = mock(Game.class);
         testNow = LocalDateTime.now();
+
         when(mockPlayerLanguage.getPlayerlanguageid()).thenReturn(1L);
         when(mockBackground.getBackgroundid()).thenReturn(1L);
         when(mockMenu.getMenuid()).thenReturn((byte) 1);
     }
 
     @Nested
-    @DisplayName("Builder Tests")
-    class BuilderTests {
+    @DisplayName("Constructor and Builder Tests")
+    class ConstructorAndBuilderTests {
         @Test
         @DisplayName("Given all fields when building Player then all fields are set")
         void givenAllFields_whenBuildPlayer_thenAllFieldsAreSet() {
             Set<Game> games = new LinkedHashSet<>();
             games.add(mockGame1);
             games.add(mockGame2);
+
             Player player =
                     Player.builder()
                             .playerid(1L)
@@ -60,6 +62,7 @@ class PlayerUTest {
                             .createdat(testNow)
                             .updatedat(testNow)
                             .build();
+
             assertEquals(1L, player.getPlayerid());
             assertEquals(mockPlayerLanguage, player.getPlayerlanguageid());
             assertEquals(mockBackground, player.getBackgroundid());
@@ -72,19 +75,16 @@ class PlayerUTest {
         }
 
         @Test
-        @DisplayName("Given minimal fields when building Player then fields are set correctly")
-        void givenMinimalFields_whenBuildPlayer_thenFieldsAreSetCorrectly() {
+        @DisplayName("Given null games when building Player then games is initialized as empty")
+        void givenNullGames_whenBuildPlayer_thenGamesIsInitializedAsEmpty() {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
                             .backgroundid(mockBackground)
                             .menuid(mockMenu)
                             .name("John")
+                            .games(null)
                             .build();
-            assertEquals("John", player.getName());
-            assertEquals(mockPlayerLanguage, player.getPlayerlanguageid());
-            assertEquals(mockBackground, player.getBackgroundid());
-            assertEquals(mockMenu, player.getMenuid());
             assertNotNull(player.getGames());
             assertTrue(player.getGames().isEmpty());
         }
@@ -120,21 +120,8 @@ class PlayerUTest {
                             .name("John")
                             .build();
             Object notAPlayer = new Object();
-            assertNotEquals(p1, notAPlayer);
-        }
-
-        @Test
-        @DisplayName("Given Player and null when comparing then they are not equal")
-        void givenPlayerAndNull_whenComparing_thenTheyAreNotEqual() {
-            Player p1 =
-                    Player.builder()
-                            .playerid(1L)
-                            .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
-                            .menuid(mockMenu)
-                            .name("John")
-                            .build();
-            assertNotEquals(null, p1);
+            boolean result = p1.equals(notAPlayer);
+            assertFalse(result, "Player.equals should return false for non-Player objects");
         }
 
         @Test
@@ -181,39 +168,18 @@ class PlayerUTest {
                             .build();
             assertNotEquals(p1, p2);
         }
-
-        @Test
-        @DisplayName("Given Player and its copy when comparing then they are equal")
-        void givenPlayerAndItsCopy_whenComparing_thenTheyAreEqual() {
-            Player p1 =
-                    Player.builder()
-                            .playerid(1L)
-                            .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
-                            .menuid(mockMenu)
-                            .name("John")
-                            .build();
-            Player copyOfP1 =
-                    Player.builder()
-                            .playerid(p1.getPlayerid())
-                            .playerlanguageid(p1.getPlayerlanguageid())
-                            .backgroundid(p1.getBackgroundid())
-                            .menuid(p1.getMenuid())
-                            .name(p1.getName())
-                            .isselected(p1.getIsselected())
-                            .createdat(p1.getCreatedat())
-                            .updatedat(p1.getUpdatedat())
-                            .build();
-            assertEquals(p1, copyOfP1);
-        }
     }
 
     @Nested
     @DisplayName("Setter Tests")
     class SetterTests {
         @Test
-        @DisplayName("Given Player when setting name then name is updated")
-        void givenPlayer_whenSettingName_thenNameIsUpdated() {
+        @DisplayName(
+                "Given null PlayerLanguage when setting playerlanguageid then NullPointerException"
+                        + " is thrown")
+        @SuppressWarnings("ConstantConditions")
+        void
+                givenNullPlayerLanguage_whenSettingPlayerlanguageid_thenNullPointerExceptionIsThrown() {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
@@ -221,28 +187,13 @@ class PlayerUTest {
                             .menuid(mockMenu)
                             .name("John")
                             .build();
-            player.setName("Jane");
-            assertEquals("Jane", player.getName());
+            assertThrows(NullPointerException.class, () -> player.setPlayerlanguageid(null));
         }
 
         @Test
-        @DisplayName("Given Player when setting isselected then flag is updated")
-        void givenPlayer_whenSettingIsselected_thenFlagIsUpdated() {
-            Player player =
-                    Player.builder()
-                            .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
-                            .menuid(mockMenu)
-                            .name("John")
-                            .isselected(false)
-                            .build();
-            player.setIsselected(true);
-            assertTrue(player.getIsselected());
-        }
-
-        @Test
-        @DisplayName("Given Player when setting updatedat then updatedat is updated")
-        void givenPlayer_whenSettingUpdatedat_thenUpdatedatIsUpdated() {
+        @DisplayName(
+                "Given valid PlayerLanguage when setting playerlanguageid then field is updated")
+        void givenValidPlayerLanguage_whenSettingPlayerlanguageid_thenFieldIsUpdated() {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
@@ -250,14 +201,74 @@ class PlayerUTest {
                             .menuid(mockMenu)
                             .name("John")
                             .build();
-            LocalDateTime now = LocalDateTime.now();
-            player.setUpdatedat(now);
-            assertEquals(now, player.getUpdatedat());
+            PlayerLanguage newPlayerLanguage = mock(PlayerLanguage.class);
+            when(newPlayerLanguage.getPlayerlanguageid()).thenReturn(2L);
+            player.setPlayerlanguageid(newPlayerLanguage);
+            assertEquals(newPlayerLanguage, player.getPlayerlanguageid());
         }
 
         @Test
-        @DisplayName("Given Player when setting games to null then games is empty")
-        void givenPlayer_whenSettingGamesToNull_thenGamesIsEmpty() {
+        @DisplayName(
+                "Given null Background when setting backgroundid then NullPointerException is"
+                        + " thrown")
+        @SuppressWarnings("ConstantConditions")
+        void givenNullBackground_whenSettingBackgroundid_thenNullPointerExceptionIsThrown() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            assertThrows(NullPointerException.class, () -> player.setBackgroundid(null));
+        }
+
+        @Test
+        @DisplayName("Given null Menu when setting menuid then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
+        void givenNullMenu_whenSettingMenuid_thenNullPointerExceptionIsThrown() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            assertThrows(NullPointerException.class, () -> player.setMenuid(null));
+        }
+
+        @Test
+        @DisplayName("Given null name when setting name then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
+        void givenNullName_whenSettingName_thenNullPointerExceptionIsThrown() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            assertThrows(NullPointerException.class, () -> player.setName(null));
+        }
+
+        @Test
+        @DisplayName(
+                "Given null updatedat when setting updatedat then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
+        void givenNullUpdatedat_whenSettingUpdatedat_thenNullPointerExceptionIsThrown() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            assertThrows(NullPointerException.class, () -> player.setUpdatedat(null));
+        }
+
+        @Test
+        @DisplayName("Given null games when setting games then games is initialized as empty")
+        void givenNullGames_whenSettingGames_thenGamesIsInitializedAsEmpty() {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
@@ -271,8 +282,101 @@ class PlayerUTest {
         }
 
         @Test
-        @DisplayName("Given Player when adding and removing games then games collection is updated")
-        void givenPlayer_whenAddingAndRemovingGames_thenGamesCollectionIsUpdated() {
+        @DisplayName("Given valid Background when setting backgroundid then field is updated")
+        void givenValidBackground_whenSettingBackgroundid_thenFieldIsUpdated() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            Background newBackground = mock(Background.class);
+            when(newBackground.getBackgroundid()).thenReturn(2L);
+            player.setBackgroundid(newBackground);
+            assertEquals(newBackground, player.getBackgroundid());
+        }
+
+        @Test
+        @DisplayName("Given valid Menu when setting menuid then field is updated")
+        void givenValidMenu_whenSettingMenuid_thenFieldIsUpdated() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            Menu newMenu = mock(Menu.class);
+            when(newMenu.getMenuid()).thenReturn((byte) 2);
+            player.setMenuid(newMenu);
+            assertEquals(newMenu, player.getMenuid());
+        }
+
+        @Test
+        @DisplayName("Given valid name when setting name then field is updated")
+        void givenValidName_whenSettingName_thenFieldIsUpdated() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            player.setName("Alice");
+            assertEquals("Alice", player.getName());
+        }
+
+        @Test
+        @DisplayName("Given isselected flag when setting isselected then field is updated")
+        void givenIsselectedFlag_whenSettingIsselected_thenFieldIsUpdated() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .isselected(false)
+                            .build();
+            player.setIsselected(true);
+            assertTrue(player.getIsselected());
+        }
+
+        @Test
+        @DisplayName("Given valid updatedat when setting updatedat then field is updated")
+        void givenValidUpdatedat_whenSettingUpdatedat_thenFieldIsUpdated() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            LocalDateTime newUpdatedAt = LocalDateTime.now().plusDays(1);
+            player.setUpdatedat(newUpdatedAt);
+            assertEquals(newUpdatedAt, player.getUpdatedat());
+        }
+    }
+
+    @Nested
+    @DisplayName("Games Collection Tests")
+    class GamesCollectionTests {
+        @Test
+        @DisplayName("Given Player when constructed then games is never null")
+        void givenPlayer_whenConstructed_thenGamesIsNeverNull() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            assertNotNull(player.getGames());
+        }
+
+        @Test
+        @DisplayName("Given Player when adding a game then games collection is updated")
+        void givenPlayer_whenAddingGame_thenGamesCollectionIsUpdated() {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
@@ -282,9 +386,59 @@ class PlayerUTest {
                             .build();
             assertTrue(player.getGames().isEmpty());
             player.getGames().add(mockGame1);
+            assertEquals(1, player.getGames().size());
             assertTrue(player.getGames().contains(mockGame1));
+        }
+
+        @Test
+        @DisplayName("Given Player when removing a game then games collection is updated")
+        void givenPlayer_whenRemovingGame_thenGamesCollectionIsUpdated() {
+            Set<Game> games = new LinkedHashSet<>();
+            games.add(mockGame1);
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .games(games)
+                            .build();
+            assertEquals(1, player.getGames().size());
             player.getGames().remove(mockGame1);
-            assertFalse(player.getGames().contains(mockGame1));
+            assertTrue(player.getGames().isEmpty());
+        }
+
+        @Test
+        @DisplayName("Given Player when adding null to games then null is added")
+        void givenPlayer_whenAddingNullToGames_thenNullIsAdded() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            assertDoesNotThrow(() -> player.getGames().add(null));
+            assertTrue(player.getGames().contains(null));
+        }
+
+        @Test
+        @DisplayName(
+                "Given Player when setting games with a new collection then collection is replaced")
+        void givenPlayer_whenSettingGamesWithNewCollection_thenCollectionIsReplaced() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .backgroundid(mockBackground)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .build();
+            Set<Game> newGames = new LinkedHashSet<>();
+            newGames.add(mockGame2);
+            player.setGames(newGames);
+            assertEquals(newGames, player.getGames());
+            assertEquals(1, player.getGames().size());
+            assertTrue(player.getGames().contains(mockGame2));
         }
     }
 
@@ -305,7 +459,6 @@ class PlayerUTest {
             String str = player.toString();
             assertTrue(str.contains("John"));
             assertTrue(str.contains(String.valueOf(player.getPlayerid())));
-            assertTrue(str.contains("1"));
         }
     }
 }
