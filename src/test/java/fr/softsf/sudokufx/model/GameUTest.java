@@ -330,16 +330,13 @@ class GameUTest {
         }
 
         @Test
-        @DisplayName("Given missing required Grid when building then NullPointerException is thrown")
+        @DisplayName(
+                "Given missing required Grid when building then NullPointerException is thrown")
         void givenMissingRequiredGrid_whenBuilding_thenNullPointerExceptionIsThrown() {
-            Game.GameBuilder builder = Game.builder()
-                    .gameid(1L)
-                    .playerid(mockPlayer)
-                    .levelid(mockGameLevel);
-            NullPointerException exception = assertThrows(
-                    NullPointerException.class,
-                    builder::build
-            );
+            Game.GameBuilder builder =
+                    Game.builder().gameid(1L).playerid(mockPlayer).levelid(mockGameLevel);
+            NullPointerException exception =
+                    assertThrows(NullPointerException.class, builder::build);
             assertEquals("gridid must not be null", exception.getMessage());
         }
 
