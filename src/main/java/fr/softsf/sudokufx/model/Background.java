@@ -11,6 +11,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
 
 import jakarta.annotation.Nonnull;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -38,10 +39,12 @@ public class Background {
     private Long backgroundid;
 
     @Nonnull
-    @NotNull @Size(max = 8) private String hexcolor = DEFAULT_HEX_COLOR;
+    @NotNull @Size(max = 8) @Column(name = "hexcolor", nullable = false, length = 8)
+    private String hexcolor = DEFAULT_HEX_COLOR;
 
     @Nonnull
-    @NotNull @Size(max = 260) private String imagepath = EMPTY_PATH;
+    @NotNull @Size(max = 260) @Column(name = "imagepath", nullable = false, length = 1024)
+    private String imagepath = EMPTY_PATH;
 
     private boolean isimage = false;
 

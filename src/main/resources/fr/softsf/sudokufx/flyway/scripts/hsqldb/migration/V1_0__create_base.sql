@@ -20,7 +20,7 @@ CREATE
         background(
             backgroundid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             hexcolor VARCHAR(8) NOT NULL,
-            imagepath VARCHAR(1024),
+            imagepath VARCHAR(1024) NOT NULL,
             isimage BOOLEAN DEFAULT FALSE NOT NULL,
         );
 
