@@ -426,7 +426,7 @@ class GameUTest {
                             true,
                             testCreatedAt,
                             testUpdatedAt);
-            assertNotEquals(game, null);
+            assertNotEquals(null, game);
         }
 
         @Test
