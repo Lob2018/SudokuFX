@@ -34,13 +34,15 @@ import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
 @Component
 public class MenuPlayerViewModel {
 
-    public static final int TEST_NUMBER_LOADED_PLAYERS = 50;
-    private final InMemoryPlayer inMemoryPlayer;
-
+    private static final int TEST_NUMBER_LOADED_PLAYERS = 50;
+    private static final String MENU_PLAYER_BUTTON_PLAYER_ACCESSIBILITY =
+            "menu.player.button.player.accessibility";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
             "menu.accessibility.role.description.opened";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
+
+    private final InMemoryPlayer inMemoryPlayer;
 
     private final ObservableList<PlayerDto> players = FXCollections.observableArrayList();
 
@@ -72,16 +74,16 @@ public class MenuPlayerViewModel {
         this.inMemoryPlayer = inMemoryPlayer;
 
         playerAccessibleText =
-                createFormattedBinding("menu.player.button.player.accessibility", this::playerName);
+                createFormattedBinding(MENU_PLAYER_BUTTON_PLAYER_ACCESSIBILITY, this::playerName);
         playerTooltip =
                 createFormattedAndConcatenatedBinding(
-                        "menu.player.button.player.accessibility",
+                        MENU_PLAYER_BUTTON_PLAYER_ACCESSIBILITY,
                         MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED);
         playerRoleDescription = createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED);
 
         maxiPlayerTooltip =
                 createFormattedAndConcatenatedBinding(
-                        "menu.player.button.player.accessibility",
+                        MENU_PLAYER_BUTTON_PLAYER_ACCESSIBILITY,
                         MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED);
         maxiPlayerRoleDescription = createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED);
 
