@@ -512,4 +512,28 @@ class GameUTest {
             assertNotNull(game.getUpdatedat());
         }
     }
+
+    @Nested
+    @DisplayName("DetachFromPlayer Tests")
+    class DetachFromPlayerTests {
+        private Game game;
+        @BeforeEach
+        void setUp() {
+            game = new Game(
+                    1L,
+                    mockGrid,
+                    mockPlayer,
+                    mockGameLevel,
+                    false,
+                    testCreatedAt,
+                    testUpdatedAt);
+        }
+        @Test
+        @DisplayName("Given Game with Player when detaching from Player then Player is set to null")
+        void givenGameWithPlayer_whenDetachingFromPlayer_thenPlayerIsSetToNull() {
+            assertEquals(mockPlayer, game.getPlayerid());
+            game.detachFromPlayer();
+            assertNull(game.getPlayerid());
+        }
+    }
 }

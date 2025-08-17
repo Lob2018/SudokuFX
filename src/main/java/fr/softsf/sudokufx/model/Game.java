@@ -146,7 +146,11 @@ public class Game {
         return gridid;
     }
 
-    @Nonnull
+    /**
+     * Gets the player associated with this game.
+     *
+     * @return the player, or null if detached
+     */
     public Player getPlayerid() {
         return playerid;
     }
@@ -172,6 +176,13 @@ public class Game {
 
     public void setPlayerid(@Nonnull Player playerid) {
         this.playerid = validatePlayer(playerid);
+    }
+
+    /**
+     * Detaches this game from its current player. Used when removing game from player's collection.
+     */
+    public void detachFromPlayer() {
+        this.playerid = null;
     }
 
     public void setIsselected(boolean isselected) {

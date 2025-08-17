@@ -165,7 +165,7 @@ public class Player {
     public void removeGame(Game game) {
         if (game != null && games != null) {
             games.remove(game);
-            game.setPlayerid(null);
+            game.detachFromPlayer();
         }
     }
 
