@@ -479,7 +479,7 @@ class GameUTest {
 
             when(mockGrid.getGridid()).thenReturn(1L);
             when(mockPlayer.getPlayerid()).thenReturn(1L);
-            when(mockGameLevel.getLevelid()).thenReturn((byte)1);
+            when(mockGameLevel.getLevelid()).thenReturn((byte) 1);
 
             String result = game.toString();
             assertNotNull(result);
@@ -517,17 +517,20 @@ class GameUTest {
     @DisplayName("DetachFromPlayer Tests")
     class DetachFromPlayerTests {
         private Game game;
+
         @BeforeEach
         void setUp() {
-            game = new Game(
-                    1L,
-                    mockGrid,
-                    mockPlayer,
-                    mockGameLevel,
-                    false,
-                    testCreatedAt,
-                    testUpdatedAt);
+            game =
+                    new Game(
+                            1L,
+                            mockGrid,
+                            mockPlayer,
+                            mockGameLevel,
+                            false,
+                            testCreatedAt,
+                            testUpdatedAt);
         }
+
         @Test
         @DisplayName("Given Game with Player when detaching from Player then Player is set to null")
         void givenGameWithPlayer_whenDetachingFromPlayer_thenPlayerIsSetToNull() {
