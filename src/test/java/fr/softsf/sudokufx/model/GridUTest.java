@@ -13,8 +13,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class GridUTest {
 
     @Test
-    @DisplayName("Given valid parameters when creating Grid then should set correct values")
-    void givenValidParameters_whenCreatingGrid_thenShouldSetCorrectValues() {
+    @DisplayName("Should create Grid with constructor")
+    void givenValidParameters_whenCreateGridWithConstructor_thenGridIsCreatedCorrectly() {
         Long gridId = 1L;
         String defaultGridValue = "123456789";
         String gridValue = "987654321";
@@ -27,8 +27,8 @@ class GridUTest {
     }
 
     @Test
-    @DisplayName("Given default constructor when creating Grid then should have default values")
-    void givenDefaultConstructor_whenCreatingGrid_thenShouldHaveDefaultValues() {
+    @DisplayName("Should create Grid with default constructor")
+    void givenNothing_whenCreateGridWithDefaultConstructor_thenGridHasDefaultValues() {
         Grid grid = new Grid();
         assertNull(grid.getGridid());
         assertEquals("", grid.getDefaultgridvalue());
@@ -37,88 +37,8 @@ class GridUTest {
     }
 
     @Test
-    @DisplayName(
-            "Given null defaultgridvalue when creating Grid then should throw NullPointerException")
-    @SuppressWarnings("DataFlowIssue") // Nécessaire pour tester la validation null
-    void givenNullDefaultgridvalue_whenCreatingGrid_thenShouldThrowNullPointerException() {
-        Long gridId = 1L;
-        String defaultGridValue = null;
-        String gridValue = "987654321";
-        byte possibilities = 50;
-        NullPointerException exception =
-                assertThrows(
-                        NullPointerException.class,
-                        () -> new Grid(gridId, defaultGridValue, gridValue, possibilities));
-        assertEquals("defaultgridvalue must not be null", exception.getMessage());
-    }
-
-    @Test
-    @DisplayName("Given null gridvalue when creating Grid then should throw NullPointerException")
-    @SuppressWarnings("DataFlowIssue") // Nécessaire pour tester la validation null
-    void givenNullGridvalue_whenCreatingGrid_thenShouldThrowNullPointerException() {
-        Long gridId = 1L;
-        String defaultGridValue = "123456789";
-        String gridValue = null;
-        byte possibilities = 50;
-        NullPointerException exception =
-                assertThrows(
-                        NullPointerException.class,
-                        () -> new Grid(gridId, defaultGridValue, gridValue, possibilities));
-        assertEquals("gridvalue must not be null", exception.getMessage());
-    }
-
-    @Test
-    @DisplayName(
-            "Given existing Grid when setting new defaultgridvalue then should update correctly")
-    void givenExistingGrid_whenSettingNewDefaultgridvalue_thenShouldUpdateCorrectly() {
-        Grid grid = new Grid(1L, "original", "grid", (byte) 10);
-        String newDefaultGridValue = "updated";
-        grid.setDefaultgridvalue(newDefaultGridValue);
-        assertEquals(newDefaultGridValue, grid.getDefaultgridvalue());
-    }
-
-    @Test
-    @DisplayName("Given existing Grid when setting new gridvalue then should update correctly")
-    void givenExistingGrid_whenSettingNewGridvalue_thenShouldUpdateCorrectly() {
-        Grid grid = new Grid(1L, "default", "original", (byte) 10);
-        String newGridValue = "updated";
-        grid.setGridvalue(newGridValue);
-        assertEquals(newGridValue, grid.getGridvalue());
-    }
-
-    @Test
-    @DisplayName("Given existing Grid when setting new possibilities then should update correctly")
-    void givenExistingGrid_whenSettingNewPossibilities_thenShouldUpdateCorrectly() {
-        Grid grid = new Grid(1L, "default", "grid", (byte) 10);
-        byte newPossibilities = 75;
-        grid.setPossibilities(newPossibilities);
-        assertEquals(newPossibilities, grid.getPossibilities());
-    }
-
-    @Test
-    @DisplayName(
-            "Given Grid when setting null defaultgridvalue then should throw NullPointerException")
-    @SuppressWarnings("DataFlowIssue")
-    void givenGrid_whenSettingNullDefaultgridvalue_thenShouldThrowNullPointerException() {
-        Grid grid = new Grid(1L, "default", "grid", (byte) 10);
-        NullPointerException exception =
-                assertThrows(NullPointerException.class, () -> grid.setDefaultgridvalue(null));
-        assertEquals("defaultgridvalue must not be null", exception.getMessage());
-    }
-
-    @Test
-    @DisplayName("Given Grid when setting null gridvalue then should throw NullPointerException")
-    @SuppressWarnings("DataFlowIssue")
-    void givenGrid_whenSettingNullGridvalue_thenShouldThrowNullPointerException() {
-        Grid grid = new Grid(1L, "default", "grid", (byte) 10);
-        NullPointerException exception =
-                assertThrows(NullPointerException.class, () -> grid.setGridvalue(null));
-        assertEquals("gridvalue must not be null", exception.getMessage());
-    }
-
-    @Test
-    @DisplayName("Given builder with all fields when building then should create complete Grid")
-    void givenBuilderWithAllFields_whenBuilding_thenShouldCreateCompleteGrid() {
+    @DisplayName("Should create Grid with builder")
+    void givenAllFields_whenCreateGridWithBuilder_thenGridIsCreatedCorrectly() {
         Long gridId = 5L;
         String defaultGridValue = "123456789";
         String gridValue = "987654321";
@@ -137,178 +57,142 @@ class GridUTest {
     }
 
     @Test
-    @DisplayName(
-            "Given builder with partial fields when building then should create Grid with defaults")
-    void givenBuilderWithPartialFields_whenBuilding_thenShouldCreateGridWithDefaults() {
-        byte possibilities = 30;
-        Grid grid = Grid.builder().possibilities(possibilities).build();
-        assertNull(grid.getGridid());
-        assertEquals("", grid.getDefaultgridvalue());
-        assertEquals("", grid.getGridvalue());
-        assertEquals(possibilities, grid.getPossibilities());
+    @DisplayName("Should throw NullPointerException when defaultgridvalue is null")
+    @SuppressWarnings("DataFlowIssue")
+    void givenNullDefaultgridvalue_whenCreateGrid_thenThrowsNullPointerException() {
+        NullPointerException exception =
+                assertThrows(
+                        NullPointerException.class, () -> new Grid(1L, null, "grid", (byte) 50));
+        assertEquals("defaultgridvalue must not be null", exception.getMessage());
     }
 
     @Test
-    @DisplayName("Given builder methods when chaining then should not throw exception")
-    void givenBuilderMethods_whenChaining_thenShouldNotThrowException() {
-        assertDoesNotThrow(
-                () -> {
-                    Grid.GridBuilder builder =
-                            Grid.builder()
-                                    .gridid(1L)
-                                    .defaultgridvalue("test")
-                                    .gridvalue("value")
-                                    .possibilities((byte) 50);
-                    assertNotNull(builder);
-                });
+    @DisplayName("Should throw NullPointerException when gridvalue is null")
+    @SuppressWarnings("DataFlowIssue")
+    void givenNullGridvalue_whenCreateGrid_thenThrowsNullPointerException() {
+        NullPointerException exception =
+                assertThrows(
+                        NullPointerException.class, () -> new Grid(1L, "default", null, (byte) 50));
+        assertEquals("gridvalue must not be null", exception.getMessage());
     }
 
     @Test
-    @DisplayName(
-            "Given builder with null values when building then should throw NullPointerException")
-    @SuppressWarnings("DataFlowIssue") // Nécessaire pour tester la validation null
-    void givenBuilderWithNullValues_whenBuilding_thenShouldThrowNullPointerException() {
-        Grid.GridBuilder builderWithNullDefault =
-                Grid.builder().defaultgridvalue(null).gridvalue("value");
-        assertThrows(NullPointerException.class, builderWithNullDefault::build);
-        Grid.GridBuilder builderWithNullGrid =
-                Grid.builder().defaultgridvalue("default").gridvalue(null);
-        assertThrows(NullPointerException.class, builderWithNullGrid::build);
+    @DisplayName("Should update values using setters")
+    void givenExistingGrid_whenUpdateValues_thenValuesAreUpdated() {
+        Grid grid = new Grid(1L, "original", "original", (byte) 10);
+        String newDefaultGridValue = "updated";
+        String newGridValue = "updated";
+        byte newPossibilities = 75;
+        grid.setDefaultgridvalue(newDefaultGridValue);
+        grid.setGridvalue(newGridValue);
+        grid.setPossibilities(newPossibilities);
+        assertEquals(newDefaultGridValue, grid.getDefaultgridvalue());
+        assertEquals(newGridValue, grid.getGridvalue());
+        assertEquals(newPossibilities, grid.getPossibilities());
     }
 
     @Test
-    @DisplayName("Given same Grid reference when comparing with equals then should return true")
-    @SuppressWarnings("EqualsWithItself") // Nécessaire pour la couverture de code
-    void givenSameGridReference_whenComparingWithEquals_thenShouldReturnTrue() {
-        Grid grid = new Grid(1L, "default", "grid", (byte) 50);
-        assertEquals(grid, grid);
+    @DisplayName("Should throw NullPointerException when setting null values")
+    @SuppressWarnings("DataFlowIssue")
+    void givenExistingGrid_whenSetNullValues_thenThrowsNullPointerException() {
+        Grid grid = new Grid(1L, "default", "grid", (byte) 10);
+        assertThrows(NullPointerException.class, () -> grid.setDefaultgridvalue(null));
+        assertThrows(NullPointerException.class, () -> grid.setGridvalue(null));
     }
 
     @Test
-    @DisplayName(
-            "Given two Grids with same values when comparing with equals then should return true")
-    void givenTwoGridsWithSameValues_whenComparingWithEquals_thenShouldReturnTrue() {
+    @DisplayName("Should implement equals correctly")
+    @SuppressWarnings({"EqualsWithItself"})
+    void givenTwoGrids_whenCompareWithEquals_thenEqualsWorksCorrectly() {
         Grid grid1 = new Grid(1L, "default", "grid", (byte) 50);
         Grid grid2 = new Grid(1L, "default", "grid", (byte) 50);
+        Grid grid3 = new Grid(1L, "different", "grid", (byte) 50);
+        Grid grid4 = new Grid(2L, "default", "grid", (byte) 50);
         assertEquals(grid1, grid2);
-    }
-
-    @Test
-    @DisplayName(
-            "Given two Grids with different values when comparing with equals then should return"
-                    + " false")
-    void givenTwoGridsWithDifferentValues_whenComparingWithEquals_thenShouldReturnFalse() {
-        Grid grid1 = new Grid(1L, "default", "grid", (byte) 50);
-        Grid grid2 = new Grid(1L, "different", "grid", (byte) 50);
-        Grid grid3 = new Grid(1L, "default", "different", (byte) 50);
-        Grid grid4 = new Grid(1L, "default", "grid", (byte) 75);
-        Grid grid5 = new Grid(2L, "default", "grid", (byte) 50);
-        assertNotEquals(grid1, grid2);
         assertNotEquals(grid1, grid3);
         assertNotEquals(grid1, grid4);
-        assertNotEquals(grid1, grid5);
+        assertEquals(grid1, grid1);
+        assertNotEquals(null, grid1);
+        boolean equalsObject = grid1.equals(new Object());
+        assertFalse(equalsObject);
     }
 
     @Test
-    @DisplayName("Given null object when comparing with equals then should return false")
-    void givenNullObject_whenComparingWithEquals_thenShouldReturnFalse() {
-        Grid grid = new Grid(1L, "default", "grid", (byte) 50);
-        assertNotNull(grid);
-    }
-
-    @Test
-    @DisplayName("Given different type object when comparing with equals then should return false")
-    void givenDifferentTypeObject_whenComparingWithEquals_thenShouldReturnFalse() {
-        Grid grid = new Grid(1L, "default", "grid", (byte) 50);
-        boolean result = grid.equals(new Object());
-        assertFalse(result);
-    }
-
-    @Test
-    @DisplayName(
-            "Given same Grid when calling hashCode multiple times then should return consistent"
-                    + " values")
-    void givenSameGrid_whenCallingHashCodeMultipleTimes_thenShouldReturnConsistentValues() {
-        Grid grid = new Grid(1L, "default", "grid", (byte) 50);
-        int hash1 = grid.hashCode();
-        int hash2 = grid.hashCode();
-        assertEquals(hash1, hash2);
-    }
-
-    @Test
-    @DisplayName("Given two equal Grids when calling hashCode then should return equal values")
-    void givenTwoEqualGrids_whenCallingHashCode_thenShouldReturnEqualValues() {
+    @DisplayName("Should implement hashCode correctly")
+    void givenGridsWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent() {
         Grid grid1 = new Grid(1L, "default", "grid", (byte) 50);
         Grid grid2 = new Grid(1L, "default", "grid", (byte) 50);
+        Grid grid3 = new Grid(1L, "different", "grid", (byte) 50);
         assertEquals(grid1.hashCode(), grid2.hashCode());
+        assertNotEquals(grid1.hashCode(), grid3.hashCode());
+        assertEquals(grid1.hashCode(), grid1.hashCode());
     }
 
     @Test
-    @DisplayName(
-            "Given Grid with values when calling toString then should contain all field values")
-    void givenGridWithValues_whenCallingToString_thenShouldContainAllFieldValues() {
-        Long gridId = 5L;
-        String defaultGridValue = "default123";
-        String gridValue = "grid456";
-        byte possibilities = 75;
-        Grid grid = new Grid(gridId, defaultGridValue, gridValue, possibilities);
+    @DisplayName("Should implement toString correctly")
+    void givenGridWithValues_whenCallToString_thenCorrectStringRepresentationIsReturned() {
+        Grid grid = new Grid(5L, "default123", "grid456", (byte) 75);
         String result = grid.toString();
-        assertTrue(result.contains("gridid=5"));
-        assertTrue(result.contains("defaultgridvalue='default123'"));
-        assertTrue(result.contains("gridvalue='grid456'"));
-        assertTrue(result.contains("possibilities=75"));
-        assertTrue(result.contains("Grid"));
+        assertEquals(
+                "Grid{gridid=5, defaultgridvalue='default123', gridvalue='grid456',"
+                        + " possibilities=75}",
+                result);
     }
 
     @Test
-    @DisplayName(
-            "Given Grid with null gridid when calling toString then should handle null correctly")
-    void givenGridWithNullGridid_whenCallingToString_thenShouldHandleNullCorrectly() {
+    @DisplayName("Should handle null gridid")
+    void givenNullGridid_whenCreateGrid_thenNullGrididIsHandled() {
         Grid grid = new Grid(null, "default", "grid", (byte) 25);
-        String result = grid.toString();
-        assertTrue(result.contains("gridid=null"));
-        assertTrue(result.contains("defaultgridvalue='default'"));
-        assertTrue(result.contains("gridvalue='grid'"));
-        assertTrue(result.contains("possibilities=25"));
+        assertNull(grid.getGridid());
+        assertEquals("default", grid.getDefaultgridvalue());
+        assertEquals("grid", grid.getGridvalue());
+        assertEquals(25, grid.getPossibilities());
+        assertEquals(
+                "Grid{gridid=null, defaultgridvalue='default', gridvalue='grid', possibilities=25}",
+                grid.toString());
     }
 
     @Test
-    @DisplayName("Given valid boundary values when creating Grid then should not throw exception")
-    void givenValidBoundaryValues_whenCreatingGrid_thenShouldNotThrowException() {
+    @DisplayName("Should handle boundary values")
+    void givenBoundaryValues_whenCreateGrid_thenBoundaryValuesAreAccepted() {
         assertDoesNotThrow(
                 () -> {
                     new Grid(1L, "", "", (byte) 0);
-                    new Grid(2L, "test", "value", (byte) 50);
-                    new Grid(3L, "boundary", "test", (byte) 100);
+                    new Grid(2L, "A".repeat(81), "B".repeat(810), (byte) 100);
+                    new Grid(Long.MAX_VALUE, "test", "value", Byte.MAX_VALUE);
                 });
     }
 
     @Test
-    @DisplayName("Given builder with extreme values when building then should handle correctly")
-    void givenBuilderWithExtremeValues_whenBuilding_thenShouldHandleCorrectly() {
-        Grid grid =
-                Grid.builder()
-                        .gridid(Long.MAX_VALUE)
-                        .defaultgridvalue("A".repeat(81))
-                        .gridvalue("B".repeat(810))
-                        .possibilities(Byte.MAX_VALUE)
-                        .build();
-        assertEquals(Long.MAX_VALUE, grid.getGridid());
-        assertEquals("A".repeat(81), grid.getDefaultgridvalue());
-        assertEquals("B".repeat(810), grid.getGridvalue());
-        assertEquals(Byte.MAX_VALUE, grid.getPossibilities());
+    @DisplayName("Should handle builder with partial fields")
+    void givenBuilderWithPartialFields_whenBuild_thenCreatesGridWithDefaults() {
+        Grid grid = Grid.builder().possibilities((byte) 30).build();
+        assertNull(grid.getGridid());
+        assertEquals("", grid.getDefaultgridvalue());
+        assertEquals("", grid.getGridvalue());
+        assertEquals(30, grid.getPossibilities());
     }
 
     @Test
-    @DisplayName("Given constructed Grid when trying to access gridid setter then should not exist")
-    void givenConstructedGrid_whenTryingToAccessGrididSetter_thenShouldNotExist() {
-        Long originalId = 10L;
-        Grid grid = new Grid(originalId, "default", "grid", (byte) 25);
-        assertEquals(originalId, grid.getGridid());
+    @DisplayName("Should throw exception when builder has null defaultgridvalue")
+    @SuppressWarnings("DataFlowIssue")
+    void givenBuilderWithNullDefaultgridvalue_whenBuild_thenThrowsNullPointerException() {
+        Grid.GridBuilder builder = Grid.builder().defaultgridvalue(null).gridvalue("value");
+        assertThrows(NullPointerException.class, builder::build);
+    }
+
+    @Test
+    @DisplayName("Should throw exception when builder has null gridvalue")
+    @SuppressWarnings("DataFlowIssue")
+    void givenBuilderWithNullGridvalue_whenBuild_thenThrowsNullPointerException() {
+        Grid.GridBuilder builder = Grid.builder().defaultgridvalue("default").gridvalue(null);
+        assertThrows(NullPointerException.class, builder::build);
+    }
+
+    @Test
+    @DisplayName("Should not have gridid setter")
+    void givenGridClass_whenCheckForGrididSetter_thenSetterDoesNotExist() {
         assertThrows(
-                NoSuchMethodException.class,
-                () -> {
-                    Grid.class.getMethod("setGridid", Long.class);
-                });
+                NoSuchMethodException.class, () -> Grid.class.getMethod("setGridid", Long.class));
     }
 }
