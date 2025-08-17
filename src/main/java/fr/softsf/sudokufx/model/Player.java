@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.model;
 
 import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
+import java.util.Objects;
 import java.util.Set;
 
 import org.hibernate.annotations.Cascade;
@@ -14,6 +15,7 @@ import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+import jakarta.annotation.Nonnull;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -31,65 +33,101 @@ import jakarta.validation.constraints.Size;
 @Table(name = "player")
 public class Player {
 
+    private static final String PLAYERLANGUAGEID_MUST_NOT_BE_NULL =
+            "playerlanguageid must not be null";
+    private static final String BACKGROUNID_MUST_NOT_BE_NULL = "backgroundid must not be null";
+    private static final String MENU_MUST_NOT_BE_NULL = "menu must not be null";
+    private static final String NAME_MUST_NOT_BE_NULL = "name must not be null";
+    private static final String CREATEDAT_MUST_NOT_BE_NULL = "createdat must not be null";
+    private static final String UPDATEDAT_MUST_NOT_BE_NULL = "updatedat must not be null";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "playerid", nullable = false)
     private Long playerid;
 
-    @ManyToOne
+    @NotNull @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "playerlanguageplayerlanguageid")
+    @JoinColumn(name = "playerlanguageplayerlanguageid", nullable = false)
     private PlayerLanguage playerlanguageid;
 
-    @OneToOne
+    @NotNull @OneToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "backgroundbackgroundid")
+    @JoinColumn(name = "backgroundbackgroundid", nullable = false)
     private Background backgroundid;
 
-    @ManyToOne
+    @NotNull @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "menumenuid")
+    @JoinColumn(name = "menumenuid", nullable = false)
     private Menu menuid;
 
     @OneToMany(mappedBy = "playerid", orphanRemoval = true)
     @Cascade(CascadeType.ALL)
-    private Set<Game> games;
+    private Set<Game> games = new LinkedHashSet<>();
 
-    @NotNull @Size(max = 256) @Column(nullable = false, unique = true)
-    private String name;
+    @Nonnull
+    @NotNull @Size(max = 256) @Column(name = "name", nullable = false, unique = true, length = 256)
+    private String name = "";
 
-    @NotNull private Boolean isselected = false;
+    @Column(name = "isselected", nullable = false)
+    private boolean isselected = false;
 
-    @NotNull private LocalDateTime createdat;
+    @Nonnull
+    @NotNull @Column(name = "createdat", nullable = false)
+    private LocalDateTime createdat = LocalDateTime.now();
 
-    @NotNull private LocalDateTime updatedat;
+    @Nonnull
+    @NotNull @Column(name = "updatedat", nullable = false)
+    private LocalDateTime updatedat = LocalDateTime.now();
 
-    public Player() {
-        this.games = new LinkedHashSet<>();
-        this.isselected = false;
-    }
+    protected Player() {}
 
     public Player(
             Long playerid,
-            PlayerLanguage playerlanguageid,
-            Background backgroundid,
-            Menu menuid,
+            @Nonnull @NotNull PlayerLanguage playerlanguageid,
+            @Nonnull @NotNull Background backgroundid,
+            @Nonnull @NotNull Menu menuid,
             Set<Game> games,
-            String name,
-            Boolean isselected,
-            LocalDateTime createdat,
-            LocalDateTime updatedat) {
+            @Nonnull @NotNull String name,
+            boolean isselected,
+            @Nonnull @NotNull LocalDateTime createdat,
+            @Nonnull @NotNull LocalDateTime updatedat) {
         this.playerid = playerid;
-        this.playerlanguageid = playerlanguageid;
-        this.backgroundid = backgroundid;
-        this.menuid = menuid;
+        this.playerlanguageid = validatePlayerLanguage(playerlanguageid);
+        this.backgroundid = validateBackground(backgroundid);
+        this.menuid = validateMenu(menuid);
         this.games = (games != null) ? games : new LinkedHashSet<>();
-        this.name = name;
+        this.name = validateName(name);
         this.isselected = isselected;
-        this.createdat = createdat;
-        this.updatedat = updatedat;
+        this.createdat = validateCreatedAt(createdat);
+        this.updatedat = validateUpdatedAt(updatedat);
+    }
+
+    private static PlayerLanguage validatePlayerLanguage(PlayerLanguage playerlanguageid) {
+        return Objects.requireNonNull(playerlanguageid, PLAYERLANGUAGEID_MUST_NOT_BE_NULL);
+    }
+
+    private static Background validateBackground(Background backgroundid) {
+        return Objects.requireNonNull(backgroundid, BACKGROUNID_MUST_NOT_BE_NULL);
+    }
+
+    private static Menu validateMenu(Menu menuid) {
+        return Objects.requireNonNull(menuid, MENU_MUST_NOT_BE_NULL);
+    }
+
+    private static String validateName(String name) {
+        return Objects.requireNonNull(name, NAME_MUST_NOT_BE_NULL);
+    }
+
+    private static LocalDateTime validateCreatedAt(LocalDateTime createdat) {
+        return Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
+    }
+
+    private static LocalDateTime validateUpdatedAt(LocalDateTime updatedat) {
+        return Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
     }
 
     public Long getPlayerid() {
@@ -116,7 +154,7 @@ public class Player {
         return name;
     }
 
-    public Boolean getIsselected() {
+    public boolean getIsselected() {
         return isselected;
     }
 
@@ -128,45 +166,32 @@ public class Player {
         return updatedat;
     }
 
-    public void setPlayerlanguageid(PlayerLanguage playerlanguageid) {
-        this.playerlanguageid = playerlanguageid;
+    public void setPlayerlanguageid(@Nonnull PlayerLanguage playerlanguageid) {
+        this.playerlanguageid = validatePlayerLanguage(playerlanguageid);
     }
 
-    public void setBackgroundid(Background backgroundid) {
-        this.backgroundid = backgroundid;
+    public void setBackgroundid(@Nonnull Background backgroundid) {
+        this.backgroundid = validateBackground(backgroundid);
     }
 
-    public void setMenuid(Menu menuid) {
-        this.menuid = menuid;
+    public void setMenuid(@Nonnull Menu menuid) {
+        this.menuid = validateMenu(menuid);
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setGames(Set<Game> games) {
+        this.games = (games != null) ? games : new LinkedHashSet<>();
     }
 
-    public void setIsselected(Boolean isselected) {
+    public void setName(@Nonnull String name) {
+        this.name = validateName(name);
+    }
+
+    public void setIsselected(boolean isselected) {
         this.isselected = isselected;
     }
 
-    public void setUpdatedat(LocalDateTime updatedat) {
-        this.updatedat = updatedat;
-    }
-
-    public void addGame(Game game) {
-        if (game != null) {
-            if (games == null) {
-                games = new LinkedHashSet<>();
-            }
-            games.add(game);
-            game.setPlayerid(this);
-        }
-    }
-
-    public void removeGame(Game game) {
-        if (game != null && games != null) {
-            games.remove(game);
-            game.detachFromPlayer();
-        }
+    public void setUpdatedat(@Nonnull LocalDateTime updatedat) {
+        this.updatedat = validateUpdatedAt(updatedat);
     }
 
     public static PlayerBuilder builder() {
@@ -180,27 +205,27 @@ public class Player {
         private Menu menuid;
         private Set<Game> games = new LinkedHashSet<>();
         private String name;
-        private Boolean isselected = false;
-        private LocalDateTime createdat;
-        private LocalDateTime updatedat;
+        private boolean isselected = false;
+        private LocalDateTime createdat = LocalDateTime.now();
+        private LocalDateTime updatedat = LocalDateTime.now();
 
         public PlayerBuilder playerid(Long playerid) {
             this.playerid = playerid;
             return this;
         }
 
-        public PlayerBuilder playerlanguageid(PlayerLanguage playerlanguageid) {
-            this.playerlanguageid = playerlanguageid;
+        public PlayerBuilder playerlanguageid(@Nonnull PlayerLanguage playerlanguageid) {
+            this.playerlanguageid = validatePlayerLanguage(playerlanguageid);
             return this;
         }
 
-        public PlayerBuilder backgroundid(Background backgroundid) {
-            this.backgroundid = backgroundid;
+        public PlayerBuilder backgroundid(@Nonnull Background backgroundid) {
+            this.backgroundid = validateBackground(backgroundid);
             return this;
         }
 
-        public PlayerBuilder menuid(Menu menuid) {
-            this.menuid = menuid;
+        public PlayerBuilder menuid(@Nonnull Menu menuid) {
+            this.menuid = validateMenu(menuid);
             return this;
         }
 
@@ -209,23 +234,23 @@ public class Player {
             return this;
         }
 
-        public PlayerBuilder name(String name) {
-            this.name = name;
+        public PlayerBuilder name(@Nonnull String name) {
+            this.name = validateName(name);
             return this;
         }
 
-        public PlayerBuilder isselected(Boolean isselected) {
+        public PlayerBuilder isselected(boolean isselected) {
             this.isselected = isselected;
             return this;
         }
 
-        public PlayerBuilder createdat(LocalDateTime createdat) {
-            this.createdat = createdat;
+        public PlayerBuilder createdat(@Nonnull LocalDateTime createdat) {
+            this.createdat = validateCreatedAt(createdat);
             return this;
         }
 
-        public PlayerBuilder updatedat(LocalDateTime updatedat) {
-            this.updatedat = updatedat;
+        public PlayerBuilder updatedat(@Nonnull LocalDateTime updatedat) {
+            this.updatedat = validateUpdatedAt(updatedat);
             return this;
         }
 
@@ -241,5 +266,51 @@ public class Player {
                     createdat,
                     updatedat);
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof Player other)) {
+            return false;
+        }
+        return Objects.equals(playerid, other.playerid)
+                && Objects.equals(playerlanguageid, other.playerlanguageid)
+                && Objects.equals(backgroundid, other.backgroundid)
+                && Objects.equals(menuid, other.menuid)
+                && Objects.equals(name, other.name)
+                && Objects.equals(isselected, other.isselected)
+                && Objects.equals(createdat, other.createdat)
+                && Objects.equals(updatedat, other.updatedat);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(
+                playerid,
+                playerlanguageid,
+                backgroundid,
+                menuid,
+                name,
+                isselected,
+                createdat,
+                updatedat);
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                "Player{playerid=%s, playerlanguageid=%s, backgroundid=%s, menuid=%s, name=%s,"
+                        + " isselected=%b, createdat=%s, updatedat=%s}",
+                playerid,
+                playerlanguageid.getPlayerlanguageid(),
+                backgroundid.getBackgroundid(),
+                menuid.getMenuid(),
+                name,
+                isselected,
+                createdat,
+                updatedat);
     }
 }

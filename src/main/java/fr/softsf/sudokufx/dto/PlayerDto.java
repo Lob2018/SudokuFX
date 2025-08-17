@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.dto;
 
 import java.time.LocalDateTime;
 
+import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -20,17 +21,17 @@ import jakarta.validation.constraints.Size;
  * @param menuidDto the menu associated with the player, must not be null
  * @param selectedGame the currently selected game for the player, can be null
  * @param name the player's name, must not be null and maximum length 256 characters
- * @param isselected indicates whether this player is selected, must not be null
+ * @param isselected indicates whether this player is selected
  * @param createdat the creation timestamp, must not be null
  * @param updatedat the last update timestamp, must not be null
  */
 public record PlayerDto(
         Long playerid,
-        @NotNull PlayerLanguageDto playerlanguageidDto,
-        @NotNull BackgroundDto backgroundidDto,
-        @NotNull MenuDto menuidDto,
+        @Nonnull @NotNull PlayerLanguageDto playerlanguageidDto,
+        @Nonnull @NotNull BackgroundDto backgroundidDto,
+        @Nonnull @NotNull MenuDto menuidDto,
         @Nullable GameDto selectedGame,
-        @NotNull @Size(max = 256) String name,
-        @NotNull Boolean isselected,
-        @NotNull LocalDateTime createdat,
-        @NotNull LocalDateTime updatedat) {}
+        @Nonnull @NotNull @Size(max = 256) String name,
+        boolean isselected,
+        @Nonnull @NotNull LocalDateTime createdat,
+        @Nonnull @NotNull LocalDateTime updatedat) {}
