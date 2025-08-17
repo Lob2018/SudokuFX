@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.model;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
+import jakarta.persistence.Column;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
@@ -57,11 +58,16 @@ public class Game {
     @JoinColumn(name = "levellevelid")
     private GameLevel levelid;
 
+    @Column(name = "isselected", nullable = false)
     private boolean isselected = false;
 
-    @Nonnull @NotNull private LocalDateTime createdat = LocalDateTime.now();
+    @Nonnull @NotNull
+    @Column(name = "createdat", nullable = false)
+    private LocalDateTime createdat = LocalDateTime.now();
 
-    @Nonnull @NotNull private LocalDateTime updatedat = LocalDateTime.now();
+    @Nonnull @NotNull
+    @Column(name = "updatedat", nullable = false)
+    private LocalDateTime updatedat = LocalDateTime.now();
 
     protected Game() {}
 
