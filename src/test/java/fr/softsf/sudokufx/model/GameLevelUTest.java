@@ -198,6 +198,7 @@ class GameLevelUTest {
     @DisplayName(
             "Given constructed GameLevel when trying to access levelid setter then should not"
                     + " exist")
+    @SuppressWarnings("JavaReflectionMemberAccess")
     void givenConstructedGameLevel_whenTryingToAccessLevelidSetter_thenShouldNotExist() {
         Byte originalId = 10;
         GameLevel gameLevel = new GameLevel(originalId, (byte) 2);

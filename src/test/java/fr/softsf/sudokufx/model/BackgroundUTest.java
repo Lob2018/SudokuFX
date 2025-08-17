@@ -111,6 +111,7 @@ class BackgroundUTest {
         }
 
         @Test
+        @SuppressWarnings("ConstantConditions")
         void givenNullImagePath_whenCreatingBackground_thenNullPointerExceptionIsThrown() {
             NullPointerException exception =
                     assertThrows(
@@ -196,6 +197,7 @@ class BackgroundUTest {
         }
 
         @Test
+        @SuppressWarnings("ConstantConditions")
         void givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown() {
             Background background = new Background();
             NullPointerException exception =
@@ -231,6 +233,7 @@ class BackgroundUTest {
         }
 
         @Test
+        @SuppressWarnings("EqualsWithItself")
         void givenSameBackgroundInstance_whenComparingToItself_thenTheyAreEqual() {
             Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true);
             assertEquals(background, background);

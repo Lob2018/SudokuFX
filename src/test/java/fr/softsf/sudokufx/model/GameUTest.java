@@ -63,6 +63,7 @@ class GameUTest {
 
         @Test
         @DisplayName("Given null Grid when creating Game then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
         void givenNullGrid_whenCreatingGame_thenNullPointerExceptionIsThrown() {
             Grid nullGrid = null;
             NullPointerException exception =
@@ -83,6 +84,7 @@ class GameUTest {
 
         @Test
         @DisplayName("Given null Player when creating Game then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
         void givenNullPlayer_whenCreatingGame_thenNullPointerExceptionIsThrown() {
             Player nullPlayer = null;
             NullPointerException exception =
@@ -103,6 +105,7 @@ class GameUTest {
 
         @Test
         @DisplayName("Given null GameLevel when creating Game then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
         void givenNullGameLevel_whenCreatingGame_thenNullPointerExceptionIsThrown() {
             GameLevel nullGameLevel = null;
             NullPointerException exception =
@@ -123,6 +126,7 @@ class GameUTest {
 
         @Test
         @DisplayName("Given null CreatedAt when creating Game then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
         void givenNullCreatedAt_whenCreatingGame_thenNullPointerExceptionIsThrown() {
             LocalDateTime nullCreatedAt = null;
             NullPointerException exception =
@@ -143,6 +147,7 @@ class GameUTest {
 
         @Test
         @DisplayName("Given null UpdatedAt when creating Game then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
         void givenNullUpdatedAt_whenCreatingGame_thenNullPointerExceptionIsThrown() {
             LocalDateTime nullUpdatedAt = null;
             NullPointerException exception =
@@ -259,6 +264,7 @@ class GameUTest {
 
         @Test
         @DisplayName("Given null Player when setting Player then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
         void givenNullPlayer_whenSettingPlayer_thenNullPointerExceptionIsThrown() {
             Player nullPlayer = null;
             NullPointerException exception =
@@ -289,6 +295,7 @@ class GameUTest {
         @Test
         @DisplayName(
                 "Given null UpdatedAt when setting UpdatedAt then NullPointerException is thrown")
+        @SuppressWarnings("ConstantConditions")
         void givenNullUpdatedAt_whenSettingUpdatedAt_thenNullPointerExceptionIsThrown() {
             LocalDateTime nullUpdatedAt = null;
             NullPointerException exception =
@@ -435,12 +442,13 @@ class GameUTest {
                             true,
                             testCreatedAt,
                             testUpdatedAt);
-            String differentType = "not a game";
-            assertNotEquals(game, differentType);
+            Object notAGame = new Object();
+            assertNotEquals(game, notAGame);
         }
 
         @Test
         @DisplayName("Given same Game reference when comparing then they are equal")
+        @SuppressWarnings("EqualsWithItself")
         void givenSameGameReference_whenComparing_thenTheyAreEqual() {
             Game game =
                     new Game(
@@ -488,6 +496,7 @@ class GameUTest {
 
     @Nested
     @DisplayName("Default Constructor Tests")
+    @SuppressWarnings("ConstantConditions")
     class DefaultConstructorTests {
 
         @Test

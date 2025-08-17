@@ -191,6 +191,7 @@ class GridUTest {
 
     @Test
     @DisplayName("Should not have gridid setter")
+    @SuppressWarnings("JavaReflectionMemberAccess")
     void givenGridClass_whenCheckForGrididSetter_thenSetterDoesNotExist() {
         assertThrows(
                 NoSuchMethodException.class, () -> Grid.class.getMethod("setGridid", Long.class));
