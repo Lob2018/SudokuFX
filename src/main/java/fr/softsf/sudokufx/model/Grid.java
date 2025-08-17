@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.model;
 import java.util.Objects;
 
 import jakarta.annotation.Nonnull;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,6 +30,7 @@ public class Grid {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "gridid", nullable = false)
     private Long gridid;
 
     @Nonnull

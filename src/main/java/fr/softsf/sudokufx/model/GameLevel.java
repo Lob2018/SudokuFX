@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.model;
 
 import java.util.Objects;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,6 +22,7 @@ public class GameLevel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "levelid", nullable = false)
     private Byte levelid;
 
     @Min(1) @Max(3) private byte level;

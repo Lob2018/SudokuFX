@@ -8,13 +8,13 @@ package fr.softsf.sudokufx.model;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-import jakarta.persistence.Column;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 import jakarta.annotation.Nonnull;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -38,6 +38,7 @@ public class Game {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "gameid", nullable = false)
     private Long gameid;
 
     @Valid @OneToOne
@@ -61,12 +62,12 @@ public class Game {
     @Column(name = "isselected", nullable = false)
     private boolean isselected = false;
 
-    @Nonnull @NotNull
-    @Column(name = "createdat", nullable = false)
+    @Nonnull
+    @NotNull @Column(name = "createdat", nullable = false)
     private LocalDateTime createdat = LocalDateTime.now();
 
-    @Nonnull @NotNull
-    @Column(name = "updatedat", nullable = false)
+    @Nonnull
+    @NotNull @Column(name = "updatedat", nullable = false)
     private LocalDateTime updatedat = LocalDateTime.now();
 
     protected Game() {}

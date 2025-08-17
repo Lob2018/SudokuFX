@@ -36,6 +36,7 @@ public class Background {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "backgroundid", nullable = false)
     private Long backgroundid;
 
     @Nonnull

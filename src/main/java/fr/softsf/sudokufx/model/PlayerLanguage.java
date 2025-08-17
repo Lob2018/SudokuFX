@@ -29,6 +29,7 @@ public class PlayerLanguage {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "playerlanguageid", nullable = false)
     private Long playerlanguageid;
 
     @Nonnull
