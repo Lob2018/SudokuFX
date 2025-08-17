@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.util.Objects;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,7 +14,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "menu")
@@ -22,11 +23,11 @@ public class Menu {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Byte menuid;
 
-    @NotNull @Min(1) @Max(3) private Byte mode;
+    @Min(1) @Max(3) private byte mode;
 
-    public Menu() {}
+    protected Menu() {}
 
-    public Menu(Byte menuid, Byte mode) {
+    public Menu(Byte menuid, byte mode) {
         this.menuid = menuid;
         this.mode = mode;
     }
@@ -35,11 +36,11 @@ public class Menu {
         return menuid;
     }
 
-    public Byte getMode() {
+    public byte getMode() {
         return mode;
     }
 
-    public void setMode(Byte mode) {
+    public void setMode(byte mode) {
         this.mode = mode;
     }
 
@@ -47,22 +48,55 @@ public class Menu {
         return new MenuBuilder();
     }
 
+    /**
+     * Builder class for creating instances of {@link Menu}.
+     *
+     * <p>Provides a fluent API to set all fields before constructing an instance of {@code Menu}.
+     * Validation occurs at build() to avoid exceptions during construction.
+     */
     public static class MenuBuilder {
         private Byte menuid;
-        private Byte mode;
+        private byte mode;
 
         public MenuBuilder menuid(Byte menuid) {
             this.menuid = menuid;
             return this;
         }
 
-        public MenuBuilder mode(Byte mode) {
+        public MenuBuilder mode(byte mode) {
             this.mode = mode;
             return this;
         }
 
+        /**
+         * Creates Menu instance with parameter validation.
+         *
+         * @return new validated Menu instance
+         * @throws NullPointerException if required parameters are null
+         */
         public Menu build() {
             return new Menu(menuid, mode);
         }
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Menu other)) {
+            return false;
+        }
+        return Objects.equals(menuid, other.menuid) && mode == other.mode;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(menuid, mode);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Menu{menuid=%s, mode=%d}", menuid, mode);
     }
 }
