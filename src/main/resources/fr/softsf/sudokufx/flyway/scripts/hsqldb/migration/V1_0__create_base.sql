@@ -68,7 +68,7 @@ CREATE
             gridgridid BIGINT FOREIGN KEY REFERENCES grid(gridid),
             playerplayerid BIGINT FOREIGN KEY REFERENCES player(playerid),
             levellevelid TINYINT FOREIGN KEY REFERENCES gamelevel(levelid),
-            isselected BOOLEAN DEFAULT FALSE,
+            isselected BOOLEAN DEFAULT FALSE NOT NULL,
             createdat TIMESTAMP NOT NULL,
             updatedat TIMESTAMP NOT NULL
         );
