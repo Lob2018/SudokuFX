@@ -25,7 +25,8 @@ public class Menu {
     @Column(name = "menuid", nullable = false)
     private Byte menuid;
 
-    @Min(1) @Max(3) private byte mode;
+    @Min(1) @Max(3) @Column(name = "mode", nullable = false)
+    private byte mode;
 
     protected Menu() {}
 
