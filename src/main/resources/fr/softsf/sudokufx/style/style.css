@@ -330,6 +330,8 @@
 #crashscreenvbox {
     -fx-padding: 1em;
     -fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);
+    -fx-background-radius: 1em;
+    -fx-border-radius: 1em;
 }
 
 .menu {

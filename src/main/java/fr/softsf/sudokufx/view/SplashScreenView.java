@@ -150,7 +150,7 @@ public final class SplashScreenView implements ISplashScreenView {
                                                 getClass()
                                                         .getResource(LOGO_SUDO_PNG_PATH.getPath())))
                                         .toExternalForm()));
-        splashScreenStage.initStyle(StageStyle.UNDECORATED);
+        splashScreenStage.initStyle(StageStyle.TRANSPARENT);
         splashScreenStage.centerOnScreen();
         splashscreenvbox.setPrefWidth(DISPOSABLE_SIZE.getSize() * SPLASHSCREEN_WIDTH_FACTOR);
         splashscreenvbox.setPrefHeight(DISPOSABLE_SIZE.getSize() * SPLASHSCREEN_HEIGHT_FACTOR);

@@ -60,6 +60,7 @@ public final class CrashScreenView implements IMainView {
     private static final double CRASHSCREEN_SIZE_RATIO = 0.7;
     private static final double CRASHSCREEN_FONT_RATIO = 0.02;
     private static final double SVG_STROKE_DIVISOR = 17.0;
+    public static final double CRASHSCREEN_STAGE_RATIO = .8;
 
     private final Stage crashscreenStage = new Stage();
     private final DropShadow dropShadow = new DropShadow();
@@ -146,7 +147,7 @@ public final class CrashScreenView implements IMainView {
                                                 SudoMain.class.getResource(
                                                         LOGO_SUDO_PNG_PATH.getPath())))
                                         .toExternalForm()));
-        crashscreenStage.initStyle(StageStyle.UNDECORATED);
+        crashscreenStage.initStyle(StageStyle.TRANSPARENT);
         crashscreenStage.centerOnScreen();
         crashscreenvbox.setPrefWidth(DISPOSABLE_SIZE.getSize() * CRASHSCREEN_SIZE_RATIO);
         crashscreenvbox.setPrefHeight(DISPOSABLE_SIZE.getSize() * CRASHSCREEN_SIZE_RATIO);
@@ -187,8 +188,8 @@ public final class CrashScreenView implements IMainView {
     private void showcrashscreen() {
         Scene s = iSplashScreenView.getSplashScreenScene();
         crashscreenStage.setScene(s);
-        crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize());
-        crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize());
+        crashscreenStage.setWidth(DISPOSABLE_SIZE.getSize() * CRASHSCREEN_STAGE_RATIO);
+        crashscreenStage.setHeight(DISPOSABLE_SIZE.getSize() * CRASHSCREEN_STAGE_RATIO);
         crashscreenStage.show();
         buttonClose.requestFocus();
     }
