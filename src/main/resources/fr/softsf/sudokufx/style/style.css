@@ -346,6 +346,7 @@
     -fx-pref-width: 4em;
     -fx-max-width: 4em;
     -fx-min-width: 4em;
+    -fx-translate-x: -.35em;
 }
 
 .menuButton {
