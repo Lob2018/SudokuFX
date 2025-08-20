@@ -5,9 +5,6 @@
  */
 package fr.softsf.sudokufx.common.util.sudoku;
 
-import java.util.Arrays;
-import java.util.Objects;
-
 import jakarta.annotation.Nonnull;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
@@ -20,6 +17,7 @@ import jakarta.validation.constraints.Size;
  *
  * <p>Line="33" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml).
  */
+@SuppressWarnings("java:S6218")
 public record GrillesCrees(
         @Nonnull
                 @NotNull(message = "grilleResolue must not be null") @Size(
@@ -34,36 +32,4 @@ public record GrillesCrees(
                         message = "grilleAResoudre must contain exactly 81 elements")
                 int[] grilleAResoudre,
         @Min(value = 0, message = "pourcentageDesPossibilites must be >= 0") @Max(value = 100, message = "pourcentageDesPossibilites must be <= 100") int pourcentageDesPossibilites) {
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-        if (!(o instanceof GrillesCrees(int[] resolue, int[] aResoudre, int desPossibilites))) {
-            return false;
-        }
-        return pourcentageDesPossibilites == desPossibilites
-                && Arrays.equals(grilleResolue, resolue)
-                && Arrays.equals(grilleAResoudre, aResoudre);
-    }
-
-    @Override
-    public int hashCode() {
-        int result = Objects.hash(pourcentageDesPossibilites);
-        result = 31 * result + Arrays.hashCode(grilleResolue);
-        result = 31 * result + Arrays.hashCode(grilleAResoudre);
-        return result;
-    }
-
-    @Override
-    public @Nonnull String toString() {
-        return "GrillesCrees["
-                + "grilleResolue="
-                + Arrays.toString(grilleResolue)
-                + ", grilleAResoudre="
-                + Arrays.toString(grilleAResoudre)
-                + ", pourcentageDesPossibilites="
-                + pourcentageDesPossibilites
-                + ']';
-    }
 }
