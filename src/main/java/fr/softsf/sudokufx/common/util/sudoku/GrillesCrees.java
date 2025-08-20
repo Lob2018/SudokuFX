@@ -31,5 +31,4 @@ public record GrillesCrees(
                         max = 81,
                         message = "grilleAResoudre must contain exactly 81 elements")
                 int[] grilleAResoudre,
-        @Min(value = 0, message = "pourcentageDesPossibilites must be >= 0") @Max(value = 100, message = "pourcentageDesPossibilites must be <= 100") int pourcentageDesPossibilites) {
-}
+        @Min(value = 0, message = "pourcentageDesPossibilites must be >= 0") @Max(value = 100, message = "pourcentageDesPossibilites must be <= 100") int pourcentageDesPossibilites) {}
