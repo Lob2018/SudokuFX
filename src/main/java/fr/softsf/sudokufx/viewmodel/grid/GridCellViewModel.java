@@ -37,10 +37,10 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class GridCellViewModel {
 
-    private static final String EM_FORMAT = "%.3fem";
-    private static final double SCALE_SINGLE_CHAR = 0.35;
-    private static final double BORDER_THICK_BASE = 0.2;
-    private static final double BORDER_THIN_UNFOCUSED = 0.05;
+    private static final double SCALE_SINGLE_CHAR = .38;
+    private static final double BORDER_THICK_BASE = .2;
+    private static final double BORDER_THIN_UNFOCUSED = .05;
+    private static final double BLOCK_SPACING = .3;
     private static final String SUDOKU_FX_GRID_CELL_LARGE_FONT = "sudokuFXGridCellLargeFont";
     private static final String SUDOKU_FX_GRID_CELL_NON_EDITABLE = "sudokuFXGridCellNonEditable";
     private static final String SUDOKU_FX_GRID_CELL = "sudokuFXGridCell";
@@ -181,34 +181,41 @@ public class GridCellViewModel {
     }
 
     /**
-     * Computes the dynamic CSS border style for a Sudoku grid cell based on its position, content
-     * size, and focus state.
+     * Builds the CSS style for a Sudoku grid cell.
      *
-     * @param nbOfChar Number of characters in the cell (used to scale the border).
-     * @param focusedBorder Whether the cell is currently focused (affects color and thickness).
-     * @return A CSS style string for -fx-border-color and -fx-border-width.
+     * <p>The style adapts to:
+     *
+     * <ul>
+     *   <li>Cell content size (scales borders and spacing if single char)
+     *   <li>Focus state (highlight border color/thickness)
+     *   <li>Grid position (cumulative translation to form 3×3 blocks)
+     * </ul>
+     *
+     * @param nbOfChar number of characters in the cell (affects scaling)
+     * @param focusedBorder true if the cell is focused (stronger border)
+     * @return a CSS style string with border, insets, and translation
      */
     private String getBorderStyle(int nbOfChar, boolean focusedBorder) {
-        double scale = nbOfChar == 1 ? SCALE_SINGLE_CHAR : 1;
-        double baseThick = BORDER_THICK_BASE;
-        double baseThin = focusedBorder ? BORDER_THICK_BASE : BORDER_THIN_UNFOCUSED;
-        String color =
+        double scale = (nbOfChar == 1) ? SCALE_SINGLE_CHAR : 1;
+        double borderWidth = (focusedBorder ? BORDER_THICK_BASE : BORDER_THIN_UNFOCUSED) * scale;
+        String borderColor =
                 focusedBorder
-                        ? "radial-gradient(center 50% 150%, radius"
-                                + " 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));"
-                        : "black";
-        String top = String.format(Locale.US, EM_FORMAT, (row == 0 ? baseThick : baseThin) * scale);
-        String right =
-                String.format(
-                        Locale.US, EM_FORMAT, ((col + 1) % 3 == 0 ? baseThick : baseThin) * scale);
-        String bottom =
-                String.format(
-                        Locale.US, EM_FORMAT, ((row + 1) % 3 == 0 ? baseThick : baseThin) * scale);
-        String left =
-                String.format(Locale.US, EM_FORMAT, (col == 0 ? baseThick : baseThin) * scale);
+                        ? "radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%),"
+                                + " derive(#0C8CE9, 55%))"
+                        : "transparent";
+        int blocksLeft = col / 3;
+        int blocksAbove = row / 3;
+        double translateX = blocksLeft * BLOCK_SPACING * scale;
+        double translateY = blocksAbove * BLOCK_SPACING * scale;
         return String.format(
-                "-fx-border-color: %s; -fx-border-width: %s %s %s %s;",
-                color, top, right, bottom, left);
+                Locale.US,
+                "-fx-border-color: %s; -fx-border-width: %.3fem; -fx-background-insets: %.3fem;"
+                        + " -fx-translate-x: %.3fem; -fx-translate-y: %.3fem;",
+                borderColor,
+                borderWidth,
+                borderWidth,
+                translateX,
+                translateY);
     }
 
     /**
