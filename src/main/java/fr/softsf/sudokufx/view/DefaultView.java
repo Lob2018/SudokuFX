@@ -903,14 +903,22 @@ public final class DefaultView implements IMainView {
 
     @FXML
     private void handleFileImageChooser() {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser
-                .getExtensionFilters()
-                .add(
-                        new FileChooser.ExtensionFilter(
-                                "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp"));
-        File selectedFile = fileChooser.showOpenDialog(primaryStage);
-        applySelectedBackgroundImage(selectedFile);
+        try {
+            FileChooser fileChooser = new FileChooser();
+            fileChooser
+                    .getExtensionFilters()
+                    .add(
+                            new FileChooser.ExtensionFilter(
+                                    "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp"));
+            fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+            File selectedFile = fileChooser.showOpenDialog(primaryStage);
+            applySelectedBackgroundImage(selectedFile);
+        } catch (Exception e) {
+            LOG.error(
+                    "██ DefaultView > handleFileImageChooser exception occurred:" + " {}",
+                    e.getMessage(),
+                    e);
+        }
     }
 
     /**
