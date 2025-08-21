@@ -17,8 +17,8 @@ import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
-import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.config.os.IOsFolder;
+import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 import fr.softsf.sudokufx.view.component.MyAlert;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -29,15 +29,15 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(ApplicationExtension.class)
 class HelpViewModelUTest {
 
-    private final IOsFolderFactory iOsFolderFactory;
+    private final IOsFolder iOsFolder;
 
     public HelpViewModelUTest() {
-        this.iOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
+        this.iOsFolder = new OsFoldersConfig().iOsFolderFactory();
     }
 
     @Test
     void whenShowHelp_thenAlertIsBuilt_andDisplayed_nonBlocking(FxRobot robot) {
-        HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolderFactory));
+        HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolder));
         doAnswer(
                         invocation -> {
                             Platform.runLater(invocation.getArgument(0, MyAlert.class)::show);

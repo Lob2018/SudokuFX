@@ -37,8 +37,8 @@ import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.common.util.FileSystemManager;
 import fr.softsf.sudokufx.common.util.IFileSystem;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
-import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.config.os.IOsFolder;
+import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 
 import static fr.softsf.sudokufx.common.enums.Paths.LOGO_SUDO_PNG_PATH;
 import static fr.softsf.sudokufx.common.enums.ScreenSize.DISPOSABLE_SIZE;
@@ -53,8 +53,7 @@ public final class CrashScreenView implements IMainView {
 
     private static final Logger LOG = LoggerFactory.getLogger(CrashScreenView.class);
 
-    private static final IOsFolderFactory I_OS_FOLDER_FACTORY =
-            new OsFolderFactoryManager().iOsFolderFactory();
+    private static final IOsFolder I_OS_FOLDER_FACTORY = new OsFoldersConfig().iOsFolderFactory();
     private static final IFileSystem I_FILE_SYSTEM = new FileSystemManager();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
     private static final double CRASHSCREEN_SIZE_RATIO = 0.7;

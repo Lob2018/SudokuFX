@@ -6,9 +6,29 @@
 package fr.softsf.sudokufx.config.os;
 
 /**
- * Holds the initialized paths for data and logs folders.
+ * Immutable record holding the initialized OS-specific folder paths (data and logs).
  *
- * @param dataFolderPath the path to the data folder
- * @param logsFolderPath the path to the logs folder
+ * <p>This record is created by {@link OsFolderInitializer} after validating and creating the
+ * required directories. It implements {@link IOsFolder} to provide a unified access point for
+ * retrieving these paths across the application.
+ *
+ * @param dataFolderPath the absolute path to the application data folder (never {@code null} or
+ *     blank)
+ * @param logsFolderPath the absolute path to the application logs folder (never {@code null} or
+ *     blank)
  */
-public record OsInitializedFolders(String dataFolderPath, String logsFolderPath) {}
+public record OsInitializedFolders(String dataFolderPath, String logsFolderPath)
+        implements IOsFolder {
+
+    /** {@inheritDoc} */
+    @Override
+    public String getOsDataFolderPath() {
+        return dataFolderPath;
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public String getOsLogsFolderPath() {
+        return logsFolderPath;
+    }
+}

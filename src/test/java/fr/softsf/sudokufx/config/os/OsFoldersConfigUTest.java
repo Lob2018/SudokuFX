@@ -19,9 +19,9 @@ import static fr.softsf.sudokufx.common.enums.OsName.EMPTY_OS_FOR_TESTS;
 import static fr.softsf.sudokufx.common.enums.OsName.WRONG_OS_FOR_TESTS;
 import static org.junit.jupiter.api.Assertions.*;
 
-class OsFolderFactoryManagerUTest {
-    private OsFolderFactoryManager osFolderFactoryManager;
-    private IOsFolderFactory iCurrentIOsFolderFactory;
+class OsFoldersConfigUTest {
+    private OsFoldersConfig osFoldersConfig;
+    private IOsFolder iCurrentIOsFolder;
 
     static Stream<OsName> provideInvalidOperatingSystems() {
         return Stream.of(EMPTY_OS_FOR_TESTS, WRONG_OS_FOR_TESTS);
@@ -29,17 +29,17 @@ class OsFolderFactoryManagerUTest {
 
     @BeforeEach
     void setup() {
-        osFolderFactoryManager = new OsFolderFactoryManager();
-        iCurrentIOsFolderFactory = osFolderFactoryManager.iOsFolderFactory();
+        osFoldersConfig = new OsFoldersConfig();
+        iCurrentIOsFolder = osFoldersConfig.iOsFolderFactory();
     }
 
     @Test
     void givenInvalidOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionThrown() {
-        osFolderFactoryManager.setWrongOsForTests();
+        osFoldersConfig.setWrongOsForTests();
         assertThrows(
                 IllegalArgumentException.class,
                 () -> {
-                    osFolderFactoryManager.iOsFolderFactory();
+                    osFoldersConfig.iOsFolderFactory();
                 },
                 "Unsupported OS: ");
     }
@@ -48,13 +48,12 @@ class OsFolderFactoryManagerUTest {
     @MethodSource("provideInvalidOperatingSystems")
     void givenNullOrEmptyOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionTh(OsName os) {
         if (os == EMPTY_OS_FOR_TESTS) {
-            osFolderFactoryManager.setEmptyOsForTests();
+            osFoldersConfig.setEmptyOsForTests();
         } else if (os == WRONG_OS_FOR_TESTS) {
-            osFolderFactoryManager.setWrongOsForTests();
+            osFoldersConfig.setWrongOsForTests();
         }
         IllegalArgumentException exception =
-                assertThrows(
-                        IllegalArgumentException.class, osFolderFactoryManager::iOsFolderFactory);
+                assertThrows(IllegalArgumentException.class, osFoldersConfig::iOsFolderFactory);
         assertTrue(exception.getMessage().contains("Unsupported OS: " + os));
     }
 
@@ -63,21 +62,21 @@ class OsFolderFactoryManagerUTest {
     void givenValidOs_whenCreateOsFolderFactory_thenCorrectPathsReturned(String osType) {
         switch (osType) {
             case "Windows" ->
-                    osFolderFactoryManager.setWindowsOsForTests(
-                            iCurrentIOsFolderFactory.getOsDataFolderPath(),
-                            iCurrentIOsFolderFactory.getOsLogsFolderPath());
+                    osFoldersConfig.setWindowsOsForTests(
+                            iCurrentIOsFolder.getOsDataFolderPath(),
+                            iCurrentIOsFolder.getOsLogsFolderPath());
             case "Linux" ->
-                    osFolderFactoryManager.setLinuxOsForTests(
-                            iCurrentIOsFolderFactory.getOsDataFolderPath(),
-                            iCurrentIOsFolderFactory.getOsLogsFolderPath());
+                    osFoldersConfig.setLinuxOsForTests(
+                            iCurrentIOsFolder.getOsDataFolderPath(),
+                            iCurrentIOsFolder.getOsLogsFolderPath());
             case "MacOS" ->
-                    osFolderFactoryManager.setMacOSForTests(
-                            iCurrentIOsFolderFactory.getOsDataFolderPath(),
-                            iCurrentIOsFolderFactory.getOsLogsFolderPath());
+                    osFoldersConfig.setMacOSForTests(
+                            iCurrentIOsFolder.getOsDataFolderPath(),
+                            iCurrentIOsFolder.getOsLogsFolderPath());
             default -> throw new IllegalArgumentException("Unknown OS type: " + osType);
         }
-        IOsFolderFactory factory = osFolderFactoryManager.iOsFolderFactory();
-        assertEquals(factory.getOsDataFolderPath(), iCurrentIOsFolderFactory.getOsDataFolderPath());
-        assertEquals(factory.getOsLogsFolderPath(), iCurrentIOsFolderFactory.getOsLogsFolderPath());
+        IOsFolder factory = osFoldersConfig.iOsFolderFactory();
+        assertEquals(factory.getOsDataFolderPath(), iCurrentIOsFolder.getOsDataFolderPath());
+        assertEquals(factory.getOsLogsFolderPath(), iCurrentIOsFolder.getOsLogsFolderPath());
     }
 }

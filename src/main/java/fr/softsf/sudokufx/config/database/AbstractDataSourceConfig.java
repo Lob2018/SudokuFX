@@ -15,7 +15,7 @@ import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
+import fr.softsf.sudokufx.config.os.IOsFolder;
 
 import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_MIGRATION_PATH;
 
@@ -45,19 +45,18 @@ abstract class AbstractDataSourceConfig {
      * myLogbackConfig} to ensure logging is initialized first.
      *
      * @param iKeystore Application keystore for secure credentials; must not be null
-     * @param iOsFolderFactory Factory for OS-specific folder paths; must not be null
+     * @param iOsFolder Factory for OS-specific folder paths; must not be null
      * @return fully configured HikariDataSource
      * @throws IllegalArgumentException if any parameter is null
      */
     @Bean
     @DependsOn("myLogbackConfig")
-    HikariDataSource hikariDataSource(
-            final IKeystore iKeystore, IOsFolderFactory iOsFolderFactory) {
+    HikariDataSource hikariDataSource(final IKeystore iKeystore, IOsFolder iOsFolder) {
         if (Objects.isNull(iKeystore)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The iKeystore must not be null");
         }
-        if (Objects.isNull(iOsFolderFactory)) {
+        if (Objects.isNull(iOsFolder)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The iOsFolderFactory must not be null");
         }

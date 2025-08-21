@@ -20,8 +20,8 @@ import org.slf4j.LoggerFactory;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
-import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.config.os.IOsFolder;
+import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.OPTIMIZING;
@@ -31,13 +31,13 @@ import static org.mockito.Mockito.*;
 @ExtendWith(MockitoExtension.class)
 class MyLogbackConfigUTest {
 
-    private final IOsFolderFactory iCurrentIOsFolderFactory;
+    private final IOsFolder iCurrentIOsFolder;
     private final MyLogbackConfig myLogbackConfig;
     private ListAppender<ILoggingEvent> logWatcher;
 
     public MyLogbackConfigUTest() {
-        iCurrentIOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
-        this.myLogbackConfig = new MyLogbackConfig(iCurrentIOsFolderFactory);
+        iCurrentIOsFolder = new OsFoldersConfig().iOsFolderFactory();
+        this.myLogbackConfig = new MyLogbackConfig(iCurrentIOsFolder);
     }
 
     @BeforeEach
@@ -56,9 +56,7 @@ class MyLogbackConfigUTest {
 
     @Test
     void givenLogbackConfig_whenGetLogsFolderPath_thenCorrectPathReturned() {
-        assertEquals(
-                myLogbackConfig.getLogsFolderPath(),
-                iCurrentIOsFolderFactory.getOsLogsFolderPath());
+        assertEquals(myLogbackConfig.getLogsFolderPath(), iCurrentIOsFolder.getOsLogsFolderPath());
     }
 
     @Test

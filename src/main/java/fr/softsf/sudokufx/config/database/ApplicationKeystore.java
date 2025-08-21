@@ -27,7 +27,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
+import fr.softsf.sudokufx.config.os.IOsFolder;
 
 /**
  * Manages the application's keystore for secure storage of a symmetric key and database
@@ -49,7 +49,7 @@ final class ApplicationKeystore implements IKeystore {
     private static final String AES_ALGORITHM = "AES";
     private static final int AES_KEY_SIZE_BITS = 256;
     private final GenerateSecret generateSecret;
-    private final IOsFolderFactory iOsFolderFactory;
+    private final IOsFolder iOsFolder;
     private String keystoreFilePath;
     private KeyStore ks;
     private IEncryptionService iEncryptionService;
@@ -57,8 +57,8 @@ final class ApplicationKeystore implements IKeystore {
     private String username;
     private String password;
 
-    public ApplicationKeystore(IOsFolderFactory iOsFolderFactory, GenerateSecret generateSecret) {
-        if (Objects.isNull(iOsFolderFactory)) {
+    public ApplicationKeystore(IOsFolder iOsFolder, GenerateSecret generateSecret) {
+        if (Objects.isNull(iOsFolder)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The iOsFolderFactory must not be null");
         }
@@ -66,7 +66,7 @@ final class ApplicationKeystore implements IKeystore {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The generateSecret must not be null");
         }
-        this.iOsFolderFactory = iOsFolderFactory;
+        this.iOsFolder = iOsFolder;
         this.generateSecret = generateSecret;
     }
 
@@ -104,7 +104,7 @@ final class ApplicationKeystore implements IKeystore {
         LOG.info("\n▓▓ ApplicationKeystore starts");
         try {
             ks = KeyStore.getInstance(KEYSTORE_TYPE);
-            keystoreFilePath = iOsFolderFactory.getOsDataFolderPath() + KEYSTORE_FILE_PATH;
+            keystoreFilePath = iOsFolder.getOsDataFolderPath() + KEYSTORE_FILE_PATH;
             createOrUpdateKeystore();
             loadKeyStore();
             symmetricKey();

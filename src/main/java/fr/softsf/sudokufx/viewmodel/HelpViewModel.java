@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ScreenSize;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
+import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.view.component.MyAlert;
 
 /**
@@ -25,10 +25,10 @@ import fr.softsf.sudokufx.view.component.MyAlert;
 public class HelpViewModel {
 
     private static final double ALERT_SIZE_RATIO = 0.6;
-    private final IOsFolderFactory iOsFolderFactory;
+    private final IOsFolder iOsFolder;
 
-    public HelpViewModel(IOsFolderFactory iOsFolderFactory) {
-        this.iOsFolderFactory = iOsFolderFactory;
+    public HelpViewModel(IOsFolder iOsFolder) {
+        this.iOsFolder = iOsFolder;
     }
 
     public void showHelp() {
@@ -42,7 +42,7 @@ public class HelpViewModel {
         informationAlert.setContentText(
                 MessageFormat.format(
                         I18n.INSTANCE.getValue("menu.button.help.dialog.information.message"),
-                        iOsFolderFactory.getOsLogsFolderPath(),
+                        iOsFolder.getOsLogsFolderPath(),
                         JVMApplicationProperties.INSTANCE.getAppName(),
                         JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty()
                                 ? ""

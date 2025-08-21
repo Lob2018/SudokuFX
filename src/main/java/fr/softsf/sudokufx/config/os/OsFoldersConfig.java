@@ -14,7 +14,7 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /** Configuration class for managing OS-specific dynamically. */
 @Configuration
-public class OsFolderFactoryManager {
+public class OsFoldersConfig {
 
     private OsName os = OsName.detect();
 
@@ -32,22 +32,22 @@ public class OsFolderFactoryManager {
             Paths.MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
 
     /**
-     * Creates and returns an OS-specific folder factory.
+     * Creates and returns the initialized OS-specific folders.
      *
-     * @return An implementation of IOsFoldersFactory interface
-     * @throws IllegalArgumentException if the OS is blank, or not supported
+     * @return an {@link IOsFolder} (backed by {@link OsInitializedFolders})
+     * @throws IllegalArgumentException if the OS is blank or not supported
      */
     @Bean
-    public IOsFolderFactory iOsFolderFactory() {
+    public IOsFolder iOsFolderFactory() {
         return switch (os) {
             case WINDOWS ->
-                    new WindowsFolderFactory(
+                    OsFolderInitializer.INSTANCE.initializeFolders(
                             windowsIntendedPathDataFolder, windowsIntendedPathLogsFolder);
             case LINUX ->
-                    new LinuxFolderFactory(
+                    OsFolderInitializer.INSTANCE.initializeFolders(
                             linuxIntendedPathDataFolder, linuxIntendedPathLogsFolder);
             case MAC ->
-                    new MacosFolderFactory(
+                    OsFolderInitializer.INSTANCE.initializeFolders(
                             macosIntendedPathDataFolder, macosIntendedPathLogsFolder);
             default ->
                     throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(

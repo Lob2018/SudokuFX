@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
 import com.zaxxer.hikari.HikariDataSource;
 
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
+import fr.softsf.sudokufx.config.os.IOsFolder;
 
 import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_NAME;
 
@@ -30,13 +30,12 @@ class DataSourceConfigCds extends AbstractDataSourceConfig {
     @Bean
     @Override
     @DependsOn({"myLogbackConfig"})
-    HikariDataSource hikariDataSource(
-            final IKeystore iKeystore, final IOsFolderFactory iOsFolderFactory) {
+    HikariDataSource hikariDataSource(final IKeystore iKeystore, final IOsFolder iOsFolder) {
         this.setJdbcUrl(
                 "jdbc:hsqldb:mem:"
                         + DATABASE_NAME.getPath()
                         + "CDS;DB_CLOSE_DELAY=-1;shutdown=true");
         this.setPoolName("SudokuFXCDSHikariConnection");
-        return super.hikariDataSource(iKeystore, iOsFolderFactory);
+        return super.hikariDataSource(iKeystore, iOsFolder);
     }
 }

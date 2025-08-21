@@ -14,7 +14,7 @@ import org.springframework.context.annotation.PropertySource;
 import com.zaxxer.hikari.HikariDataSource;
 
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
+import fr.softsf.sudokufx.config.os.IOsFolder;
 
 import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_NAME;
 
@@ -27,15 +27,14 @@ class DataSourceConfigDefault extends AbstractDataSourceConfig {
     @Bean
     @DependsOn({"myLogbackConfig"})
     @Override
-    HikariDataSource hikariDataSource(
-            final IKeystore iKeystore, final IOsFolderFactory iOsFolderFactory) {
+    HikariDataSource hikariDataSource(final IKeystore iKeystore, final IOsFolder iOsFolder) {
         this.setJdbcUrl(
                 "jdbc:hsqldb:file:"
-                        + iOsFolderFactory.getOsDataFolderPath()
+                        + iOsFolder.getOsDataFolderPath()
                         + "/"
                         + DATABASE_NAME.getPath()
                         + ";shutdown=true");
         this.setPoolName("SudokuFXHikariConnection");
-        return super.hikariDataSource(iKeystore, iOsFolderFactory);
+        return super.hikariDataSource(iKeystore, iOsFolder);
     }
 }

@@ -12,8 +12,8 @@ import org.junit.jupiter.api.*;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
-import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.config.os.IOsFolder;
+import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -27,15 +27,14 @@ class ApplicationKeystoreITest {
 
     @BeforeEach
     void setupMocks() {
-        IOsFolderFactory iCurrentIOsFolderFactory =
-                spy(new OsFolderFactoryManager().iOsFolderFactory());
+        IOsFolder iCurrentIOsFolder = spy(new OsFoldersConfig().iOsFolderFactory());
         GenerateSecret generateSecret = spy(new GenerateSecret());
-        doReturn(tempDir.toString()).when(iCurrentIOsFolderFactory).getOsDataFolderPath();
+        doReturn(tempDir.toString()).when(iCurrentIOsFolder).getOsDataFolderPath();
         doReturn("fixedUsernameSecret")
                 .doReturn("fixedPasswordSecret")
                 .when(generateSecret)
                 .generatePassaySecret();
-        keystore = new ApplicationKeystore(iCurrentIOsFolderFactory, generateSecret);
+        keystore = new ApplicationKeystore(iCurrentIOsFolder, generateSecret);
     }
 
     @Test
@@ -52,12 +51,12 @@ class ApplicationKeystoreITest {
 
     @Test
     void givenNullGenerateSecret_whenConstruct_thenThrowIllegalArgumentException() {
-        IOsFolderFactory iOsFolderFactory = new OsFolderFactoryManager().iOsFolderFactory();
+        IOsFolder iOsFolder = new OsFoldersConfig().iOsFolderFactory();
         IllegalArgumentException ex =
                 assertThrows(
                         IllegalArgumentException.class,
                         () -> {
-                            new ApplicationKeystore(iOsFolderFactory, null);
+                            new ApplicationKeystore(iOsFolder, null);
                         });
         assertEquals("The generateSecret must not be null", ex.getMessage());
     }

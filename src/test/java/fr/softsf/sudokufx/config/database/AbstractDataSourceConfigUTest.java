@@ -13,8 +13,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.zaxxer.hikari.HikariDataSource;
 
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.config.os.IOsFolderFactory;
-import fr.softsf.sudokufx.config.os.OsFolderFactoryManager;
+import fr.softsf.sudokufx.config.os.IOsFolder;
+import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -23,7 +23,7 @@ class AbstractDataSourceConfigUTest {
 
     static class TestDataSourceConfig extends AbstractDataSourceConfig {}
 
-    private IOsFolderFactory iCurrentIOsFolderFactory;
+    private IOsFolder iCurrentIOsFolder;
     private TestDataSourceConfig config;
     private final ApplicationKeystore keystore;
 
@@ -34,8 +34,8 @@ class AbstractDataSourceConfigUTest {
 
     @BeforeEach
     void setUp() {
-        OsFolderFactoryManager osFolderFactoryManager = new OsFolderFactoryManager();
-        iCurrentIOsFolderFactory = osFolderFactoryManager.iOsFolderFactory();
+        OsFoldersConfig osFoldersConfig = new OsFoldersConfig();
+        iCurrentIOsFolder = osFoldersConfig.iOsFolderFactory();
         config = new TestDataSourceConfig();
     }
 
@@ -59,7 +59,7 @@ class AbstractDataSourceConfigUTest {
         IllegalArgumentException ex =
                 assertThrows(
                         IllegalArgumentException.class,
-                        () -> config.hikariDataSource(null, iCurrentIOsFolderFactory));
+                        () -> config.hikariDataSource(null, iCurrentIOsFolder));
         assertTrue(ex.getMessage().contains("iKeystore must not be null"));
     }
 
@@ -85,7 +85,7 @@ class AbstractDataSourceConfigUTest {
         config.setJdbcUrl("jdbc:hsqldb:mem:testdb");
         config.setPoolName("TestPool");
 
-        try (HikariDataSource ds = config.hikariDataSource(keystore, iCurrentIOsFolderFactory)) {
+        try (HikariDataSource ds = config.hikariDataSource(keystore, iCurrentIOsFolder)) {
             assertNotNull(ds);
             assertEquals("TestPool", ds.getPoolName());
             assertEquals("org.hsqldb.jdbc.JDBCDriver", ds.getDriverClassName());
