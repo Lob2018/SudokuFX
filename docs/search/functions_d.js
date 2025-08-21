@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_0',['name',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_1_1_player_builder.html#a50bb04cf848c6670a1978a269c2923ba',1,'fr::softsf::sudokufx::model::Player::PlayerBuilder']]],
+  ['name_0',['name',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_1_1_player_builder.html#a64240916846384bc39e36b546095edc5',1,'fr::softsf::sudokufx::model::Player::PlayerBuilder']]],
   ['nestingofnodes_1',['nestingOfNodes',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a0af4ab414c9c917edc9975bfd5c63fbd',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['newaccessibletextproperty_2',['newAccessibleTextProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ac797f09c3891a7667ddf246c15bf36cb',1,'fr.softsf.sudokufx.viewmodel.MenuNewViewModel.newAccessibleTextProperty()'],['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aaf79a24e500132e50467100467039bdb',1,'fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.newAccessibleTextProperty()']]],
   ['newmenuinitialization_3',['newMenuInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a364924a9e9ac437e3343ca332ae076fb',1,'fr::softsf::sudokufx::view::DefaultView']]],

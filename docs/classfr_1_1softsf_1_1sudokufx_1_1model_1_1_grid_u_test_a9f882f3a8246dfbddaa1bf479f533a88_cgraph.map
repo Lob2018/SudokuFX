@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.GridUTest.givenGridsWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent" name="fr.softsf.sudokufx.model.GridUTest.givenGridsWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,236,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="72,28,75,18,84,10,99,5,121,3,145,5,161,13,159,18,144,11,120,8,101,10,87,15,79,21,77,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a752e8ac9817b7166ffad474e5e2efcfa" title=" " alt="" coords="284,45,450,88"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="236,64,268,64,268,69,236,69"/>
+</map>

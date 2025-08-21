@@ -1,0 +1,7 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_builder_pattern_tests =
+[
+    [ "buildBackgroundWithInvalidColor", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_builder_pattern_tests.html#ac6b3f51186f1f0c4fdafc1da5a2acfb2", null ],
+    [ "givenAllParameters_whenUsingBuilder_thenBackgroundIsCreatedCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_builder_pattern_tests.html#aec5a700b5dc6137481078484fe87c659", null ],
+    [ "givenInvalidHexColor_whenBuilding_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_builder_pattern_tests.html#ae45b296e2eb59254517970cb3c6370b7", null ],
+    [ "givenNoParameters_whenUsingBuilder_thenBackgroundIsCreatedWithDefaults", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_builder_pattern_tests.html#a0c402fcb6ef6fd72fea332513058e45c", null ]
+];

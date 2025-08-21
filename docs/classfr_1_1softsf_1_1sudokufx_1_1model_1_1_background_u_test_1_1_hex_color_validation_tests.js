@@ -1,0 +1,6 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_hex_color_validation_tests =
+[
+    [ "givenInvalidHexColor_whenCreatingBackground_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_hex_color_validation_tests.html#a8ddc3b88b71350973fd64d4a403de7a0", null ],
+    [ "givenNullEmptyOrBlankHexColor_whenCreatingBackground_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_hex_color_validation_tests.html#afc3814bf02fba5ce9a2b1ae20b5809cc", null ],
+    [ "givenValidHexColor_whenCreatingBackground_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_hex_color_validation_tests.html#a81719f46cde0b4e7751c624379e77521", null ]
+];

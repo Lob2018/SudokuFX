@@ -1,0 +1,8 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_equals_and_hash_code_tests =
+[
+    [ "givenBackgroundAndDifferentClass_whenComparingEquality_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_equals_and_hash_code_tests.html#a23c616e39f7190f3b4927d7eca593d25", null ],
+    [ "givenBackgroundAndNull_whenComparingEquality_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_equals_and_hash_code_tests.html#ad0e9d0e8c830b0a124f6dfdd4fd2a0f3", null ],
+    [ "givenSameBackgroundInstance_whenComparingToItself_thenTheyAreEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_equals_and_hash_code_tests.html#a2c92bafe9254ae3c182f075ff1a387a6", null ],
+    [ "givenTwoBackgroundsWithDifferentProperties_whenComparingEquality_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_equals_and_hash_code_tests.html#a314cfd1a640812b8eee00fe5cc4de4bc", null ],
+    [ "givenTwoBackgroundsWithSameProperties_whenComparingEquality_thenTheyAreEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_equals_and_hash_code_tests.html#a7bfdf717da240d510338509ef4edb3f7", null ]
+];

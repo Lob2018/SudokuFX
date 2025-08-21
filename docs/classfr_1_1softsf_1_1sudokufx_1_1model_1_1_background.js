@@ -2,17 +2,19 @@ var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background =
 [
     [ "BackgroundBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_1_1_background_builder.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_1_1_background_builder" ],
     [ "Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a448eedfbb3e38ae3e7db84c9283d142e", null ],
-    [ "Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#afc17752efbdfe6cc34109230d8efa8c0", null ],
+    [ "Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a5db7542d88cfb35bd5b8ee2f39c0b0e6", null ],
     [ "builder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a668bdc97583adbe5617eaa620b8bdef4", null ],
     [ "equals", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a59079ca16ffaa7a83bb3132b7b4f4a1f", null ],
     [ "getBackgroundid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#ab7fb6d04561c70c254d19a8de4b0247e", null ],
     [ "getHexcolor", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#ab264958f7d534440378bb75ec996f65b", null ],
     [ "getImagepath", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#afd63a89532e79e737245d9f71a5a6ee9", null ],
     [ "getIsimage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a52d7bac3b78d4e74dbb405a0e94e30a1", null ],
+    [ "getIsopaque", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#aac370d9cc1d74f828eec97b577c5ff6f", null ],
     [ "hashCode", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#ae8c7ec10ec0589db6ca37dd4e753a513", null ],
     [ "setHexcolor", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#aee626b7189bc94c67161fef582d24357", null ],
     [ "setImagepath", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a9a537716d8a4993d3858982c30d9522a", null ],
     [ "setIsimage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#aa669efb70206ba0999a54b126df05838", null ],
+    [ "setIsopaque", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#aff1d66fdda4834702552b997260470b7", null ],
     [ "toString", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#afaa84dd8cff1dc901a7875fc9ec7b4ed", null ],
     [ "validateHexcolor", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#ade6909e405fd52eaa388b0edaf3ea137", null ],
     [ "validateImagepath", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#abee18adf98dd24434583ec871e916560", null ],
@@ -25,5 +27,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background =
     [ "imagepath", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#af76fb64b5b3c1bd75f19eca4b53d90ca", null ],
     [ "IMAGEPATH_MUST_NOT_BE_NULL", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a85e02218a2a14c97cd180c4f89fbf798", null ],
     [ "INVALID_HEX_COLOR_FORMAT", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a688b5d7319cce0271c5d41f7b09b3895", null ],
-    [ "isimage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a15b659285d39fc9e1ab0218389da953c", null ]
+    [ "isimage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a15b659285d39fc9e1ab0218389da953c", null ],
+    [ "isopaque", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a0c34d83375e13a5f81a58b8c8bb380a9", null ]
 ];

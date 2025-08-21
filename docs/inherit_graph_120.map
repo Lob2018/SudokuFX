@@ -1,5 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,83,40"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html" title="Manages the application&#39;s keystore for secure storage of a symmetric key and database credentials." alt="" coords="131,5,354,48"/>
-<area shape="poly" id="edge17_Node000000_Node000001" title=" " alt="" coords="98,24,130,24,130,29,98,29"/>
+<area shape="rect" id="Node000000" href="$classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test.html" title=" " alt="" coords="5,5,267,48"/>
 </map>

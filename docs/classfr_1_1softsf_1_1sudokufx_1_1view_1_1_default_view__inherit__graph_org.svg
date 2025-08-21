@@ -40,7 +40,7 @@
 <text text-anchor="start" x="5.5" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuBackgroundButton</text>
 <text text-anchor="start" x="14" y="-834.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image</text>
-<text text-anchor="start" x="14" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 85 more...</text>
+<text text-anchor="start" x="14" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 87 more...</text>
 <text text-anchor="start" x="5.5" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int AUTO</text>
 <text text-anchor="start" x="14" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">_HIDE_MINI_MENU_DELAY_MS</text>
@@ -91,8 +91,8 @@
 <text text-anchor="start" x="5.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">void activeMenuManagerInitialization()</text>
 <text text-anchor="start" x="5.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">void applySelectedBackground</text>
-<text text-anchor="start" x="14" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image(File selectedFile)</text>
+<text text-anchor="start" x="14" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">void applyOpaqueMode</text>
+<text text-anchor="start" x="14" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">(boolean opaque)</text>
 <text text-anchor="start" x="5.5" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">void backgroundMenuInitialization()</text>
 <text text-anchor="start" x="5.5" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -126,7 +126,7 @@
 <text text-anchor="start" x="14" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">void bindVisibleAndManaged</text>
 <text text-anchor="start" x="14" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Region menu, ActiveMenuOrSubmenu</text>
 <text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel.ActiveMenu menuType)</text>
-<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 17 more...</text>
+<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 18 more...</text>
 <polygon fill="#666666" stroke="#666666" points="0,-1050 0,-1050 187.5,-1050 187.5,-1050 0,-1050"/>
 <polygon fill="#666666" stroke="#666666" points="0,-662 0,-662 12,-662 12,-662 0,-662"/>
 <polygon fill="#666666" stroke="#666666" points="12,-662 12,-662 187.5,-662 187.5,-662 12,-662"/>

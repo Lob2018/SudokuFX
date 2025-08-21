@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.DetachFromPlayerTests.givenGameWithPlayer_whenDetachingFromPlayer_thenPlayerIsSetToNull" name="fr.softsf.sudokufx.model.GameUTest.DetachFromPlayerTests.givenGameWithPlayer_whenDetachingFromPlayer_thenPlayerIsSetToNull">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,290,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="92,28,95,18,106,10,123,5,148,3,177,6,195,13,193,18,175,11,147,8,124,10,108,15,99,21,97,30"/>
+</map>

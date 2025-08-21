@@ -1,7 +1,7 @@
 var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
 [
     [ "activeMenuManagerInitialization", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a842f4799fbccb6507d669da06f95554c", null ],
-    [ "applySelectedBackgroundImage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa3a20fc1375df0c6c0d09eac69d7d5b3", null ],
+    [ "applyOpaqueMode", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3dd02ff5cf869a084c95b35937827893", null ],
     [ "backgroundMenuInitialization", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a5029633546f4a90d0085421fbf9bb57c", null ],
     [ "bindLevel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2782545a22496fbb6185093a2737b248", null ],
     [ "bindLevelAccessibility", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ad0d842dec8978f4a7f16e25027a74f3b", null ],
@@ -14,6 +14,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "handleDifficultLevelShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af958d3aeef88bd1e7e93c04956277c7f", null ],
     [ "handleEasyLevelShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#adcc2e6b5b752476dc81d253984275aca", null ],
     [ "handleFileImageChooser", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a6412e7d21a90c98fa3b40050ec3e30a4", null ],
+    [ "handleGridOpacity", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2f7bb41f1c5fe390f3917b4a4d20bb91", null ],
     [ "handleMediumLevelShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a5cd265e50ccdb813a714780ad212df91", null ],
     [ "handleMenuBackgroundShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#acb492ba79ff007cb4f65b49b32021fa0", null ],
     [ "handleMenuBackupShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ad6747f353c6b5bb142d46ede70658af2", null ],
@@ -56,6 +57,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view =
     [ "menuBackgroundButtonColor", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af0048d4658d10b25fac3392cc7fc6729", null ],
     [ "menuBackgroundButtonImage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a487253ca3718cf9a39cc659fff701f7f", null ],
     [ "menuBackgroundButtonImageText", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ad41c2f2c41fdb9ffdb60fdae58cbd340", null ],
+    [ "menuBackgroundButtonOpacity", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af2e04b3e859d02c1b7b33ecc5366986d", null ],
+    [ "menuBackgroundButtonOpacityText", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a8b94c299bf0cf15a3fdfc208917a5009", null ],
     [ "menuBackgroundButtonReduce", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a681d6d05f0700537ab137630efb488d8", null ],
     [ "menuBackgroundButtonReduceText", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a43f7675242d1e9aadf56e53ae8a2328e", null ],
     [ "menuBackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a57d25fb9fa4c075887b4b991b0293015", null ],

@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel">
-<area shape="rect" id="Node000001" title="ViewModel managing player menu UI state and localized accessibility texts." alt="" coords="236,924,466,2183"/>
+<area shape="rect" id="Node000001" title="ViewModel managing player menu UI state and localized accessibility texts." alt="" coords="236,924,466,2236"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html" title="Component responsible for holding the current PlayerDto instance in memory." alt="" coords="243,583,459,860"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="354,860,354,907,348,907,348,860"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" title="Service class providing business logic related to Player entities." alt="" coords="242,364,460,519"/>

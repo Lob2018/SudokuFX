@@ -1,0 +1,12 @@
+<map id="fr.softsf.sudokufx.model.GridUTest.givenExistingGrid_whenSetNullValues_thenThrowsNullPointerException" name="fr.softsf.sudokufx.model.GridUTest.givenExistingGrid_whenSetNullValues_thenThrowsNullPointerException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,286,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="92,28,95,18,106,10,122,5,146,3,173,6,191,13,189,18,172,11,145,8,123,10,108,15,100,21,97,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ac86f1c843073498a022a4c0295b1097b" title=" " alt="" coords="334,12,500,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="286,47,318,43,318,48,287,52"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4e78ed16efa7608347b3f745b512ed8f" title=" " alt="" coords="334,79,500,121"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="287,81,318,85,318,91,286,87"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af49e1b436868180644535afda35cd5cd" title="Validates that the default grid value is not null." alt="" coords="548,12,736,55"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="500,31,532,31,532,36,500,36"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a151e63c8afa747ec884b000b6a82f065" title="Validates that the grid value is not null." alt="" coords="559,79,725,121"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="500,97,543,97,543,103,500,103"/>
+</map>

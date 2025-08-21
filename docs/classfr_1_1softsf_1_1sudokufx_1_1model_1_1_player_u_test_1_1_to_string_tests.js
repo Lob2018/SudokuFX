@@ -1,0 +1,4 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_to_string_tests =
+[
+    [ "givenPlayer_whenCallingToString_thenAllFieldsAreIncluded", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_to_string_tests.html#a05acf98f5861c14e24a3f8db54d40372", null ]
+];

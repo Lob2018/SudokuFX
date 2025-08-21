@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.ToStringTests.givenGameObject_whenCallingToString_thenFormattedStringIsReturned" name="fr.softsf.sudokufx.model.GameUTest.ToStringTests.givenGameObject_whenCallingToString_thenFormattedStringIsReturned">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,282,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="90,28,94,18,104,10,121,5,144,3,171,6,188,13,186,18,170,11,143,8,122,10,106,15,98,21,96,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#aca46d46cf767a7d27f122d5760edefdc" title=" " alt="" coords="330,45,496,88"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="282,64,314,64,314,69,282,69"/>
+</map>

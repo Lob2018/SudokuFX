@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenValidMenu_whenSettingMenuid_thenFieldIsUpdated" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenValidMenu_whenSettingMenuid_thenFieldIsUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,97,300,156"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="98,97,99,87,109,78,127,73,153,71,182,73,200,81,198,85,181,79,152,76,128,78,112,83,104,89,104,97"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title=" " alt="" coords="348,5,514,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,94,354,51,356,56,237,99"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ab1ff57d1d8f24d28f42af214053d7025" title=" " alt="" coords="348,72,514,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="300,106,332,102,332,108,300,112"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a1d5eb6f4a416254651a39a1160965f77" title=" " alt="" coords="348,139,514,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="300,142,332,146,332,151,300,147"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0c578d68480f93172709babb1224f573" title=" " alt="" coords="348,205,514,248"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="237,154,356,197,354,202,235,159"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7262425d3a1c07b5ffdafba0a6aa51de" title=" " alt="" coords="562,205,728,248"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="515,224,547,224,547,229,515,229"/>
+</map>

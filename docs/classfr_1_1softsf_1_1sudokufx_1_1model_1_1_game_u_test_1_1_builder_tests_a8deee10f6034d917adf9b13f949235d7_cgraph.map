@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.BuilderTests.givenMissingRequiredGrid_whenBuilding_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.GameUTest.BuilderTests.givenMissingRequiredGrid_whenBuilding_thenNullPointerExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,283,104"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="91,28,94,18,104,10,121,5,144,3,172,6,189,13,187,18,170,11,144,8,122,10,107,15,98,21,96,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838" title=" " alt="" coords="331,45,497,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="283,64,315,64,315,69,283,69"/>
+</map>

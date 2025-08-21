@@ -1,0 +1,10 @@
+<map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullBackground_whenSettingBackgroundid_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullBackground_whenSettingBackgroundid_thenNullPointerExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,254,104"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="79,28,82,18,92,10,108,5,130,3,155,5,172,13,169,18,154,11,129,8,109,10,95,15,87,21,84,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title=" " alt="" coords="302,12,468,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,48,286,44,286,49,255,53"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a6dc9a3a09c62b0e57a0022ecc2b1d82e" title=" " alt="" coords="302,79,468,121"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="255,80,286,85,286,90,254,86"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a1aa8bfaa8c370c46175e3044854ea5fe" title=" " alt="" coords="516,79,692,121"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="468,97,500,97,500,103,468,103"/>
+</map>

@@ -1,0 +1,6 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_edge_case_tests =
+[
+    [ "givenMaximumLengthStrings_whenCreatingBackground_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_edge_case_tests.html#ae2bc94ccd5080ec297f6ef4c0b046f5d", null ],
+    [ "givenMixedCaseHexColors_whenCreatingBackground_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_edge_case_tests.html#a6526ed9b69db13ce260ed8caa10c7c5f", null ],
+    [ "givenNullBackgroundId_whenCreatingBackground_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test_1_1_edge_case_tests.html#a659f5f7dcbe80829d78606a7d0d9122d", null ]
+];

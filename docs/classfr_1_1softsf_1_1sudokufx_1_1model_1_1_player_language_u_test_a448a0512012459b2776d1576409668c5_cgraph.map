@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithNullIso_whenBuild_thenThrowsNullPointerException" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithNullIso_whenBuild_thenThrowsNullPointerException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,260,104"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="82,28,85,18,94,10,110,5,133,3,159,6,176,13,173,18,158,11,132,8,112,10,97,15,89,21,87,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#ad803d89c720e8857feac54f62ae5b614" title=" " alt="" coords="308,45,474,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,64,292,64,292,69,260,69"/>
+</map>

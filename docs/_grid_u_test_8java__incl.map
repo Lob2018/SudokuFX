@@ -1,0 +1,9 @@
+<map id="src/test/java/fr/softsf/sudokufx/model/GridUTest.java" name="src/test/java/fr/softsf/sudokufx/model/GridUTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="214,5,423,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,96,216,123"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,51,158,92,156,87,264,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="240,96,397,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="321,49,321,80,316,80,316,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="421,96,624,123"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="372,46,477,87,476,92,370,51"/>
+</map>

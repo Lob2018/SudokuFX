@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.model.PlayerUTest.GamesCollectionTests.givenPlayer_whenRemovingGame_thenGamesCollectionIsUpdated" name="fr.softsf.sudokufx.model.PlayerUTest.GamesCollectionTests.givenPlayer_whenRemovingGame_thenGamesCollectionIsUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,328,104"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="109,28,113,18,124,10,142,5,167,3,196,6,215,13,213,18,195,11,166,8,143,10,126,15,117,21,114,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title=" " alt="" coords="376,12,542,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,46,360,42,361,47,328,51"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad6ffdca54d9d371b10b65b623dbbdeaf" title=" " alt="" coords="376,79,542,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="328,82,361,86,360,91,328,88"/>
+</map>

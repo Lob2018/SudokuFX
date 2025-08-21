@@ -1,0 +1,9 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_constructor_tests =
+[
+    [ "givenNullCreatedAt_whenCreatingGame_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_constructor_tests.html#ab7f9206b32c9614c84954c4bc77aeaf6", null ],
+    [ "givenNullGameLevel_whenCreatingGame_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_constructor_tests.html#afec5e2288aaae63980888205fcf8c2ef", null ],
+    [ "givenNullGrid_whenCreatingGame_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_constructor_tests.html#a3096f848a25b90d01fe20745b1e093bc", null ],
+    [ "givenNullPlayer_whenCreatingGame_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_constructor_tests.html#abd1b3fa45275c85d9a7394828f712333", null ],
+    [ "givenNullUpdatedAt_whenCreatingGame_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_constructor_tests.html#a3dce52a268d91df46e27481058716745", null ],
+    [ "givenValidParameters_whenCreatingGame_thenGameIsCreatedSuccessfully", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_constructor_tests.html#a2950df10008ba9fe3e47184d985a8e0c", null ]
+];

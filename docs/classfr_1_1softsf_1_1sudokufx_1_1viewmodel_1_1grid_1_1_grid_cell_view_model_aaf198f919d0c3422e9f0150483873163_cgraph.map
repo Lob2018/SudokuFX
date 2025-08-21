@@ -2,7 +2,7 @@
 <area shape="rect" id="Node000001" title="Configures UI listeners and formatting logic:" alt="" coords="5,160,227,203"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="293,5,514,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,157,199,111,273,64,303,51,305,56,276,69,202,115,143,162"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Computes the dynamic CSS border style for a Sudoku grid cell based on its position,..." alt="" coords="581,131,803,173"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Builds the CSS style for a Sudoku grid cell." alt="" coords="581,131,803,173"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,157,209,130,274,108,346,96,403,93,461,98,533,108,608,123,607,129,533,113,460,104,403,99,347,101,275,113,211,135,155,162"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="293,123,514,165"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,164,278,158,278,163,228,170"/>

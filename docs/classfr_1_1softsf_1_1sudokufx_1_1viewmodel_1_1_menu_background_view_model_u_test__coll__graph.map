@@ -1,19 +1,19 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="246,2023,567,2551"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html" title="ViewModel managing menu background UI state and accessibility strings." alt="" coords="5,588,253,1959"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,1918,268,1958,284,2006,279,2008,263,1959,251,1919"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="246,2097,567,2625"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html" title="ViewModel managing menu background UI state and accessibility strings." alt="" coords="5,588,253,2033"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,1992,268,2033,284,2081,279,2082,263,2034,251,1993"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="10,124,248,524"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="132,524,132,571,127,571,127,524"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="277,924,536,1623"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="409,1622,409,2005,404,2005,404,1622"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="277,961,536,1660"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="409,1660,409,2080,404,2080,404,1660"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="289,289,332,359"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="318,373,374,924,369,925,313,374"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="318,373,375,961,370,962,313,374"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="356,244,615,404"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="481,404,440,907,434,907,476,403"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="482,404,438,945,433,944,476,404"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="461,5,510,75"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="488,89,488,244,483,244,483,89"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html" title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons." alt="" coords="560,1164,816,1383"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="676,1383,656,1502,629,1648,594,1804,551,1959,534,2008,529,2006,545,1958,589,1803,624,1646,651,1501,670,1382"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html" title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons." alt="" coords="560,1201,816,1420"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="677,1420,658,1546,631,1701,595,1868,551,2034,534,2082,529,2081,545,2033,590,1867,626,1699,653,1545,672,1419"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="656,289,720,359"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="691,374,691,1164,685,1164,685,374"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="691,374,691,1201,685,1201,685,374"/>
 </map>

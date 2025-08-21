@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.BackgroundUTest.ToStringTests.givenBackgroundInstance_whenCallingToString_thenFormattedStringIsReturned" name="fr.softsf.sudokufx.model.BackgroundUTest.ToStringTests.givenBackgroundInstance_whenCallingToString_thenFormattedStringIsReturned">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,272,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#afaa84dd8cff1dc901a7875fc9ec7b4ed" title=" " alt="" coords="320,21,486,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="272,40,304,40,304,45,272,45"/>
+</map>

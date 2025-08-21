@@ -1,0 +1,8 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_equals_and_hash_code_tests =
+[
+    [ "givenDifferentGameObjects_whenComparing_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_equals_and_hash_code_tests.html#a52ff61572d4147a0b6b3ddb813542a65", null ],
+    [ "givenGameAndDifferentType_whenComparing_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_equals_and_hash_code_tests.html#a744b4a5db29c6c437bd68f30d29c9d9f", null ],
+    [ "givenGameAndNull_whenComparing_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_equals_and_hash_code_tests.html#a29d24dac02b8e3e2e2d059ed4c0877f2", null ],
+    [ "givenSameGameObjects_whenComparing_thenTheyAreEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_equals_and_hash_code_tests.html#a47ad3657584af8b0fca0b8ce92fe9076", null ],
+    [ "givenSameGameReference_whenComparing_thenTheyAreEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_equals_and_hash_code_tests.html#af3cb100bf8f7808df263c12a9a9660a7", null ]
+];

@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.PlayerUTest.EqualsAndHashCodeTests.givenTwoPlayersWithDifferentIds_whenComparing_thenTheyAreNotEqual" name="fr.softsf.sudokufx.model.PlayerUTest.EqualsAndHashCodeTests.givenTwoPlayersWithDifferentIds_whenComparing_thenTheyAreNotEqual">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,295,104"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="96,28,99,18,110,10,127,5,150,3,178,6,196,13,194,18,177,11,150,8,128,10,112,15,103,21,101,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title=" " alt="" coords="343,45,509,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,64,327,64,327,69,295,69"/>
+</map>

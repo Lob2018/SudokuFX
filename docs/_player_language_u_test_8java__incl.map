@@ -1,0 +1,13 @@
+<map id="src/test/java/fr/softsf/sudokufx/model/PlayerLanguageUTest.java" name="src/test/java/fr/softsf/sudokufx/model/PlayerLanguageUTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="393,5,607,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,216,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="393,65,177,118,176,113,392,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="240,120,397,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="447,67,357,115,354,110,445,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="421,112,578,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="502,64,502,97,497,97,497,64"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="603,112,810,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="562,62,649,103,647,107,560,67"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="835,120,1037,147"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="608,57,864,114,863,119,607,62"/>
+</map>

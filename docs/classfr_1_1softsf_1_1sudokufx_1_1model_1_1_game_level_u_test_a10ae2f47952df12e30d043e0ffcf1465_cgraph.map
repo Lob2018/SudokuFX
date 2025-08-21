@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenTwoGameLevelsWithDifferentValues_whenComparingWithEquals_thenShouldReturnFalse" name="fr.softsf.sudokufx.model.GameLevelUTest.givenTwoGameLevelsWithDifferentValues_whenComparingWithEquals_thenShouldReturnFalse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,310,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="98,28,102,18,113,10,132,5,158,3,189,6,208,13,206,18,187,11,157,8,133,10,115,15,106,21,103,30"/>
+</map>

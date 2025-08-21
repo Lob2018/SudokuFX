@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.model.BackgroundUTest.ImagePathValidationTests.givenNullImagePath_whenCreatingBackground_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.BackgroundUTest.ImagePathValidationTests.givenNullImagePath_whenCreatingBackground_thenNullPointerExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,336,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="106,28,110,18,122,10,143,5,171,3,204,6,225,13,224,18,203,11,170,8,143,10,125,15,114,21,111,30"/>
+</map>

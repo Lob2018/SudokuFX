@@ -13,6 +13,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
     [ "buttonReset", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9a69dcdad012b735ce72ec5fdb956d01", null ],
     [ "CRASHSCREEN_FONT_RATIO", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a362f4e64a539c303fe9e8afbe86aa9a7", null ],
     [ "CRASHSCREEN_SIZE_RATIO", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9734099f3b19ee83a9f3ccfd51a56239", null ],
+    [ "CRASHSCREEN_STAGE_RATIO", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49ad75ae1ed688e05c69038c7f5f7173", null ],
     [ "crashScreenFontSize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a48ab7b260aa31acaa35f49a17a0fe667", null ],
     [ "crashscreenStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9905a8c9318a1656b586d396ea5a2bf4", null ],
     [ "crashscreenvbox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ab3c4bcd7d68fc60939af0661d9e37e10", null ],

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.Game.setUpdatedat" name="fr.softsf.sudokufx.model.Game.setUpdatedat">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1f2a473434f154a034fb766d02213295" title="Validates that the given update date is not null." alt="" coords="220,5,387,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,24,204,24,204,29,172,29"/>
+</map>

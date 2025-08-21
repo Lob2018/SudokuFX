@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenBuilderMethods_whenChaining_thenShouldNotThrowException" name="fr.softsf.sudokufx.model.GameLevelUTest.givenBuilderMethods_whenChaining_thenShouldNotThrowException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,303,88"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="100,29,101,19,111,10,128,5,154,3,183,5,201,13,199,17,182,11,154,8,129,10,113,15,105,21,105,29"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a48e867b7b81bfbd3b5c2830637fdc06d" title=" " alt="" coords="351,37,517,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,56,335,56,335,61,303,61"/>
+</map>

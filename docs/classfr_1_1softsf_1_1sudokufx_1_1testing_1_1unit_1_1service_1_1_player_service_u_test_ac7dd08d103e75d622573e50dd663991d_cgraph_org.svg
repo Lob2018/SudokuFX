@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#acc92bce410cbf061a1ae71017d91d3db" target="_top" xlink:title="Data Transfer Object representing a background entity.">
+<g id="a_Node000002"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a95a3f8cb6e5e286a81f1b43c0a5ca5db" target="_top" xlink:title="Data Transfer Object representing a background entity.">
 <polygon fill="white" stroke="#666666" points="700.5,-146 521,-146 521,-126 700.5,-126 700.5,-146"/>
 <text text-anchor="middle" x="610.75" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.BackgroundDto</text>
 </a>
@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a4b93797829452798604adaaaf4b0da89" target="_top" xlink:title="Data Transfer Object representing a menu entity.">
+<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" target="_top" xlink:title="Data Transfer Object representing a menu entity.">
 <polygon fill="white" stroke="#666666" points="686.62,-108 534.88,-108 534.88,-88 686.62,-88 686.62,-108"/>
 <text text-anchor="middle" x="610.75" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.MenuDto</text>
 </a>
@@ -58,7 +58,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aeb9760499a9309facaec4ff31e172f76" target="_top" xlink:title="Data Transfer Object representing a player.">
+<g id="a_Node000004"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a704be21fc24ba9762adf7de6cab9da17" target="_top" xlink:title="Data Transfer Object representing a player.">
 <polygon fill="white" stroke="#666666" points="485,-70 329.5,-70 329.5,-50 485,-50 485,-70"/>
 <text text-anchor="middle" x="407.25" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.PlayerDto</text>
 </a>
@@ -76,7 +76,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a57e3465d00d6e83a9d0fd8c03223868d" target="_top" xlink:title="Data Transfer Object representing a player&#39;s language.">
+<g id="a_Node000008"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565" target="_top" xlink:title="Data Transfer Object representing a player&#39;s language.">
 <polygon fill="white" stroke="#666666" points="680.62,-32 540.88,-32 540.88,0 680.62,0 680.62,-32"/>
 <text text-anchor="start" x="548.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.Player</text>
 <text text-anchor="middle" x="610.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">LanguageDto</text>
@@ -140,7 +140,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" target="_top" xlink:title="Data Transfer Object representing a game level entity.">
+<g id="a_Node000006"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa" target="_top" xlink:title="Data Transfer Object representing a game level entity.">
 <polygon fill="white" stroke="#666666" points="878.5,-98 740.25,-98 740.25,-66 878.5,-66 878.5,-98"/>
 <text text-anchor="start" x="748.25" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.Game</text>
 <text text-anchor="middle" x="809.38" y="-72.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelDto</text>
@@ -159,7 +159,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" target="_top" xlink:title="Data Transfer Object representing a grid entity.">
+<g id="a_Node000007"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a" target="_top" xlink:title="Data Transfer Object representing a grid entity.">
 <polygon fill="white" stroke="#666666" points="882.25,-48 736.5,-48 736.5,-28 882.25,-28 882.25,-48"/>
 <text text-anchor="middle" x="809.38" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.GridDto</text>
 </a>

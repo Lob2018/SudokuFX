@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a82b953d912bf7621392b51e45915af32" target="_top" xlink:title="Data Transfer Object representing a game level entity.">
+<g id="a_Node000002"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa" target="_top" xlink:title="Data Transfer Object representing a game level entity.">
 <polygon fill="white" stroke="#666666" points="332,-70 193.75,-70 193.75,-38 332,-38 332,-70"/>
 <text text-anchor="start" x="201.75" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.Game</text>
 <text text-anchor="middle" x="262.88" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelDto</text>
@@ -39,7 +39,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a55eaa4f45339420cc86114a3d8dab18b" target="_top" xlink:title="Data Transfer Object representing a grid entity.">
+<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a" target="_top" xlink:title="Data Transfer Object representing a grid entity.">
 <polygon fill="white" stroke="#666666" points="335.75,-20 190,-20 190,0 335.75,0 335.75,-20"/>
 <text text-anchor="middle" x="262.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.GridDto</text>
 </a>

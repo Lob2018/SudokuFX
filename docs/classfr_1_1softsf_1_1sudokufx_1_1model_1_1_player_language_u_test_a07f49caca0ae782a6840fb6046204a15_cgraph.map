@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithInvalidIso_whenBuild_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithInvalidIso_whenBuild_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,286,104"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="92,28,95,18,106,10,122,5,146,3,173,6,191,13,189,18,172,11,145,8,123,10,108,15,100,21,97,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#ad803d89c720e8857feac54f62ae5b614" title=" " alt="" coords="334,45,500,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,64,318,64,318,69,286,69"/>
+</map>

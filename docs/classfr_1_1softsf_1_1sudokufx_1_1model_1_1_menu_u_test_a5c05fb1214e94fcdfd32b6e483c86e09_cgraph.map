@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.MenuUTest.givenMenuWithValues_whenCallToString_thenCorrectStringRepresentationIsReturned" name="fr.softsf.sudokufx.model.MenuUTest.givenMenuWithValues_whenCallToString_thenCorrectStringRepresentationIsReturned">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,245,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="75,28,78,18,88,10,104,5,125,3,150,5,166,13,164,18,149,11,125,8,105,10,91,15,83,21,81,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#a2124925732695cc264597cf681cbbd4b" title=" " alt="" coords="293,45,459,88"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="245,64,277,64,277,69,245,69"/>
+</map>

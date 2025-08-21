@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.model.GridUTest.givenAllFields_whenCreateGridWithBuilder_thenGridIsCreatedCorrectly" name="fr.softsf.sudokufx.model.GridUTest.givenAllFields_whenCreateGridWithBuilder_thenGridIsCreatedCorrectly">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,195,197"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="55,122,58,112,66,103,81,98,100,96,123,99,137,106,135,111,121,104,100,101,82,103,69,108,62,114,60,123"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a2b8e0eb68f7ad02dc47d9b6e996e250a" title=" " alt="" coords="243,5,409,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,120,192,88,241,58,251,53,254,57,244,62,195,93,150,125"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad178f4e4a4f286d044c17f7411368300" title=" " alt="" coords="243,72,409,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,129,236,117,237,122,196,134"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4273be2bf866779941f2ba0e0556a8e6" title=" " alt="" coords="243,139,409,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="195,157,227,157,227,163,195,163"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5bd5ea56ca202e9deb4b7f79059e2e5c" title=" " alt="" coords="243,205,409,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="196,186,237,198,236,203,195,191"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a44e8b242ad211cc4e4d0107d2389af4a" title=" " alt="" coords="243,272,409,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="150,195,195,227,244,258,254,263,251,267,241,262,192,232,147,200"/>
+</map>

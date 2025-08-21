@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenTwoEqualGameLevels_whenCallingHashCode_thenShouldReturnEqualValues" name="fr.softsf.sudokufx.model.GameLevelUTest.givenTwoEqualGameLevels_whenCallingHashCode_thenShouldReturnEqualValues">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,277,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="88,28,92,18,102,10,118,5,141,3,168,6,185,13,183,18,167,11,141,8,119,10,104,15,96,21,94,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a6d92da7aee775848259d9afe881c07de" title=" " alt="" coords="325,45,491,88"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="277,64,309,64,309,69,277,69"/>
+</map>

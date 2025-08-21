@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenPlayerLanguageWithValidValues_whenCallToString_thenCorrectStringRepresentationIsReturned" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenPlayerLanguageWithValidValues_whenCallToString_thenCorrectStringRepresentationIsReturned">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,288,104"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="93,28,96,18,107,10,123,5,147,3,174,6,192,13,190,18,173,11,146,8,124,10,109,15,101,21,98,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a411e4ad4b3b7e244697e7dd912d24c02" title=" " alt="" coords="336,45,502,88"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="288,64,320,64,320,69,288,69"/>
+</map>

@@ -1,0 +1,24 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test =
+[
+    [ "givenBuilder_whenChainMultipleCalls_thenBuilderIsFluent", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#ae55380ba4cc0a0b1fe4e0aa289555b5a", null ],
+    [ "givenBuilderWithInvalidIso_whenBuild_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a07f49caca0ae782a6840fb6046204a15", null ],
+    [ "givenBuilderWithNullIso_whenBuild_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a448a0512012459b2776d1576409668c5", null ],
+    [ "givenBuilderWithPartialFields_whenBuild_thenCreatesPlayerLanguageWithDefaults", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a82618221e88a8f86322e16692b013980", null ],
+    [ "givenBuilderWithValidIsos_whenBuild_thenBothFRAndENAreAccepted", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#af4d3b87b5c4cd43d3777bccd0708f7df", null ],
+    [ "givenExistingPlayerLanguage_whenSetInvalidIso_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a3ea14345cf0fd81b8a4fd7ee5d0fdaf3", null ],
+    [ "givenExistingPlayerLanguage_whenSetNullIso_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a5ffa96e7e2cf60f0b3220ffc6790dd51", null ],
+    [ "givenExistingPlayerLanguage_whenSetValidIsoUsingSetter_thenIsoIsUpdated", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a12a2e371e582959e56e91e6df35bbaff", null ],
+    [ "givenExtremeLongValues_whenCreatePlayerLanguage_thenExtremeValuesAreHandled", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a05152a680a1f5a64a942be56bc1d26da", null ],
+    [ "givenInvalidBoundaryValues_whenCreatePlayerLanguage_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a1b0e969d3fd8dba5d0a029a26bfdd651", null ],
+    [ "givenInvalidIsoValue_whenCreatePlayerLanguage_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a05fe161e4c52742e4cbcd2446bcfe42c", null ],
+    [ "givenNothing_whenCreatePlayerLanguageWithDefaultConstructor_thenPlayerLanguageHasDefaultValues", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a5fbe26f4689164bf886399c2b9978a10", null ],
+    [ "givenNullIso_whenCreatePlayerLanguage_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#ab5821e527b3d06831f27f5cc92e77e1f", null ],
+    [ "givenNullPlayerlanguageid_whenCreatePlayerLanguage_thenNullPlayerlanguageidIsHandled", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#aef1f6b2897736b89ca87a32ba86c57a0", null ],
+    [ "givenPlayerlanguageidAndIso_whenCreatePlayerLanguageWithConstructor_thenPlayerLanguageIsCreatedCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#ac252cb49ccca1ba13337781dd2e5618a", null ],
+    [ "givenPlayerlanguageidAndValidIso_whenCreatePlayerLanguageWithBuilder_thenPlayerLanguageIsCreatedCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#ad39d0cd69e555d9435de92ad0d6d6750", null ],
+    [ "givenPlayerLanguagesWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a7a6377d609a0e19ce0d7359d8506de44", null ],
+    [ "givenPlayerLanguageWithValidValues_whenCallToString_thenCorrectStringRepresentationIsReturned", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a836e917d28fc529b365ac4ac2fae9b35", null ],
+    [ "givenTwoPlayerLanguages_whenCompareWithEquals_thenEqualsWorksCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a15d1fa58e6b566046052b85273b55ee0", null ],
+    [ "givenValidFrIso_whenCreatePlayerLanguage_thenPlayerLanguageIsCreatedCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a8d94f269ba293de4930abb09925aa366", null ],
+    [ "givenValidIsoValues_whenCreatePlayerLanguage_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html#a9ade00d0a78c87f442436027f6bb2b44", null ]
+];

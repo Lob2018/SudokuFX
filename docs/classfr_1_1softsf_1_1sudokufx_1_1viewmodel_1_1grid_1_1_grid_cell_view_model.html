@@ -147,7 +147,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a02837ccd8bb4343e172b8fe4d7854b25" id="r_a02837ccd8bb4343e172b8fe4d7854b25"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a02837ccd8bb4343e172b8fe4d7854b25">getBorderStyle</a> (int nbOfChar, boolean focusedBorder)</td></tr>
-<tr class="memdesc:a02837ccd8bb4343e172b8fe4d7854b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the dynamic CSS border style for a Sudoku grid cell based on its position, content size, and focus state.  <br /></td></tr>
+<tr class="memdesc:a02837ccd8bb4343e172b8fe4d7854b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the CSS style for a Sudoku grid cell.  <br /></td></tr>
 <tr class="separator:a02837ccd8bb4343e172b8fe4d7854b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a551d4792b3263e749994098c3b3748" id="r_a2a551d4792b3263e749994098c3b3748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a551d4792b3263e749994098c3b3748">setEditableStyle</a> (Boolean isNowEditable)</td></tr>
 <tr class="memdesc:a2a551d4792b3263e749994098c3b3748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates CSS style classes on label and text area to reflect the editable state.  <br /></td></tr>
@@ -190,13 +190,13 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ae9d3be59af4ba416a6cbe28d37ae63c2" id="r_ae9d3be59af4ba416a6cbe28d37ae63c2"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9d3be59af4ba416a6cbe28d37ae63c2">BORDER_THICK_BASE</a> = 0.2</td></tr>
+<tr class="memitem:ab5adb1d8765db525fc4c5b3c86bd4776" id="r_ab5adb1d8765db525fc4c5b3c86bd4776"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5adb1d8765db525fc4c5b3c86bd4776">BLOCK_SPACING</a> = .3</td></tr>
+<tr class="separator:ab5adb1d8765db525fc4c5b3c86bd4776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d3be59af4ba416a6cbe28d37ae63c2" id="r_ae9d3be59af4ba416a6cbe28d37ae63c2"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9d3be59af4ba416a6cbe28d37ae63c2">BORDER_THICK_BASE</a> = .2</td></tr>
 <tr class="separator:ae9d3be59af4ba416a6cbe28d37ae63c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9001ce9ad8d5fb9cbe1cd10f88d52d0d" id="r_a9001ce9ad8d5fb9cbe1cd10f88d52d0d"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9001ce9ad8d5fb9cbe1cd10f88d52d0d">BORDER_THIN_UNFOCUSED</a> = 0.05</td></tr>
+<tr class="memitem:a9001ce9ad8d5fb9cbe1cd10f88d52d0d" id="r_a9001ce9ad8d5fb9cbe1cd10f88d52d0d"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9001ce9ad8d5fb9cbe1cd10f88d52d0d">BORDER_THIN_UNFOCUSED</a> = .05</td></tr>
 <tr class="separator:a9001ce9ad8d5fb9cbe1cd10f88d52d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7099684e1c7d895aa18576a295198bf2" id="r_a7099684e1c7d895aa18576a295198bf2"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7099684e1c7d895aa18576a295198bf2">EM_FORMAT</a> = &quot;%.3fem&quot;</td></tr>
-<tr class="separator:a7099684e1c7d895aa18576a295198bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40c82bcc84e4a769d95b5a0d396be32c" id="r_a40c82bcc84e4a769d95b5a0d396be32c"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40c82bcc84e4a769d95b5a0d396be32c">SCALE_SINGLE_CHAR</a> = 0.35</td></tr>
+<tr class="memitem:a40c82bcc84e4a769d95b5a0d396be32c" id="r_a40c82bcc84e4a769d95b5a0d396be32c"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40c82bcc84e4a769d95b5a0d396be32c">SCALE_SINGLE_CHAR</a> = .38</td></tr>
 <tr class="separator:a40c82bcc84e4a769d95b5a0d396be32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a298e9420c2c05603c26b33b4248a2755" id="r_a298e9420c2c05603c26b33b4248a2755"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a298e9420c2c05603c26b33b4248a2755">SUDOKU_FX_GRID_CELL</a> = &quot;sudokuFXGridCell&quot;</td></tr>
 <tr class="separator:a298e9420c2c05603c26b33b4248a2755"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -357,15 +357,24 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Computes the dynamic CSS border style for a Sudoku grid cell based on its position, content size, and focus state. </p>
+<p>Builds the CSS style for a Sudoku grid cell. </p>
+<p>The style adapts to:</p>
+<ul>
+<li>
+Cell content size (scales borders and spacing if single char) </li>
+<li>
+Focus state (highlight border color/thickness) </li>
+<li>
+Grid position (cumulative translation to form 3×3 blocks) </li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">nbOfChar</td><td>Number of characters in the cell (used to scale the border). </td></tr>
-    <tr><td class="paramname">focusedBorder</td><td>Whether the cell is currently focused (affects color and thickness). </td></tr>
+    <tr><td class="paramname">nbOfChar</td><td>number of characters in the cell (affects scaling) </td></tr>
+    <tr><td class="paramname">focusedBorder</td><td>true if the cell is focused (stronger border) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A CSS style string for -fx-border-color and -fx-border-width. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a CSS style string with border, insets, and translation </dd></dl>
 
 </div>
 </div>
@@ -706,6 +715,28 @@ Switches back to label mode on focus loss or certain key presses. </li>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="ab5adb1d8765db525fc4c5b3c86bd4776" name="ab5adb1d8765db525fc4c5b3c86bd4776"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5adb1d8765db525fc4c5b3c86bd4776">&#9670;&#160;</a></span>BLOCK_SPACING</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.BLOCK_SPACING = .3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae9d3be59af4ba416a6cbe28d37ae63c2" name="ae9d3be59af4ba416a6cbe28d37ae63c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae9d3be59af4ba416a6cbe28d37ae63c2">&#9670;&#160;</a></span>BORDER_THICK_BASE</h2>
 
@@ -716,7 +747,7 @@ Switches back to label mode on focus loss or certain key presses. </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.BORDER_THICK_BASE = 0.2</td>
+          <td class="memname">final double fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.BORDER_THICK_BASE = .2</td>
         </tr>
       </table>
   </td>
@@ -738,7 +769,7 @@ Switches back to label mode on focus loss or certain key presses. </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.BORDER_THIN_UNFOCUSED = 0.05</td>
+          <td class="memname">final double fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.BORDER_THIN_UNFOCUSED = .05</td>
         </tr>
       </table>
   </td>
@@ -788,28 +819,6 @@ Switches back to label mode on focus loss or certain key presses. </li>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7099684e1c7d895aa18576a295198bf2" name="a7099684e1c7d895aa18576a295198bf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7099684e1c7d895aa18576a295198bf2">&#9670;&#160;</a></span>EM_FORMAT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.EM_FORMAT = &quot;%.3fem&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -914,7 +923,7 @@ Switches back to label mode on focus loss or certain key presses. </li>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.SCALE_SINGLE_CHAR = 0.35</td>
+          <td class="memname">final double fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.SCALE_SINGLE_CHAR = .38</td>
         </tr>
       </table>
   </td>
@@ -1023,7 +1032,7 @@ Switches back to label mode on focus loss or certain key presses. </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html">grid</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a></li>
-    <li class="footer">Generated on Sat Aug 16 2025 13:21:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Aug 21 2025 09:57:46 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

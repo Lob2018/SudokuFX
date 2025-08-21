@@ -1,0 +1,7 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests =
+[
+    [ "givenPlayerAndNonPlayerObject_whenComparing_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#af917c19e9efbc9a714a4c6aefeb5b990", null ],
+    [ "givenSamePlayerReference_whenComparing_thenTheyAreEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#adf0a053fbd445b9d58332a2b6a70c170", null ],
+    [ "givenTwoPlayersWithDifferentIds_whenComparing_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a32fb731b988ffecb0933251b81e8efc4", null ],
+    [ "givenTwoPlayersWithSameId_whenComparing_thenTheyAreEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a511b74fa9bfaa27e30c8a7a6581d0c92", null ]
+];
