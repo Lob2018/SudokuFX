@@ -16,8 +16,8 @@
 <text text-anchor="start" x="40.5" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.</text>
 <text text-anchor="start" x="42.38" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogbackConfigUTest</text>
 <text text-anchor="start" x="5.5" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolderFactory</text>
-<text text-anchor="start" x="14" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iCurrentIOsFolderFactory</text>
+<text text-anchor="start" x="14" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolder iCurrent</text>
+<text text-anchor="start" x="14" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolder</text>
 <text text-anchor="start" x="5.5" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
 <text text-anchor="start" x="14" y="-346.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
@@ -78,7 +78,7 @@
 <text text-anchor="start" x="25.25" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="15.25" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="25.25" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogbackConfig(IOsFolder</text>
-<text text-anchor="start" x="25.25" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory iOsFolderFactory)</text>
+<text text-anchor="start" x="25.25" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolder)</text>
 <text text-anchor="start" x="15.25" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="25.25" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getLogsFolderPath()</text>
 <text text-anchor="start" x="15.25" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

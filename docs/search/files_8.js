@@ -17,7 +17,7 @@ var searchData=
   ['inmemoryplayer_2ejava_14',['InMemoryPlayer.java',['../_in_memory_player_8java.html',1,'']]],
   ['inmemoryplayeritest_2ejava_15',['InMemoryPlayerITest.java',['../_in_memory_player_i_test_8java.html',1,'']]],
   ['inmemoryplayerutest_2ejava_16',['InMemoryPlayerUTest.java',['../_in_memory_player_u_test_8java.html',1,'']]],
-  ['iosfolderfactory_2ejava_17',['IOsFolderFactory.java',['../_i_os_folder_factory_8java.html',1,'']]],
+  ['iosfolder_2ejava_17',['IOsFolder.java',['../_i_os_folder_8java.html',1,'']]],
   ['iplayerlanguagemapper_2ejava_18',['IPlayerLanguageMapper.java',['../_i_player_language_mapper_8java.html',1,'']]],
   ['iplayermapper_2ejava_19',['IPlayerMapper.java',['../_i_player_mapper_8java.html',1,'']]],
   ['isplashscreenview_2ejava_20',['ISplashScreenView.java',['../_i_splash_screen_view_8java.html',1,'']]]

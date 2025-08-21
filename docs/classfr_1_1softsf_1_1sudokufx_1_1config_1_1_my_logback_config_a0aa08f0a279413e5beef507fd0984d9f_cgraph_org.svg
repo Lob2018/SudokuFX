@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a70684c5f929729a89f54668499e1be32" target="_top" xlink:title="Constructor that initializes the logging configuration.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ad5c2f554f0e1f109339ad6456751d970" target="_top" xlink:title="Constructor that initializes the logging configuration.">
 <polygon fill="white" stroke="#666666" points="386.75,-57 210.25,-57 210.25,-25 386.75,-25 386.75,-57"/>
 <text text-anchor="start" x="218.25" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.</text>
 <text text-anchor="middle" x="298.5" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogbackConfig.MyLogbackConfig</text>

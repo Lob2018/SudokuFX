@@ -106,11 +106,6 @@ var hierarchy =
     [ "fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.state.InMemoryPlayerITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html", null ],
-    [ "IOsFolderFactory", null, [
-      [ "fr.softsf.sudokufx.config.os.LinuxFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_linux_folder_factory.html", null ],
-      [ "fr.softsf.sudokufx.config.os.MacosFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_macos_folder_factory.html", null ],
-      [ "fr.softsf.sudokufx.config.os.WindowsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory.html", null ]
-    ] ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html", null ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", null ],
     [ "fr.softsf.sudokufx.common.interfaces.ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html", [
@@ -163,11 +158,12 @@ var hierarchy =
     [ "fr.softsf.sudokufx.common.enums.MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.enums.MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html", null ],
     [ "fr.softsf.sudokufx.config.ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html", null ],
-    [ "fr.softsf.sudokufx.config.os.OsFolderFactoryManager", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html", null ],
-    [ "fr.softsf.sudokufx.config.os.OsFolderFactoryManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test.html", null ],
     [ "fr.softsf.sudokufx.config.os.OsFolderInitializer", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html", null ],
     [ "fr.softsf.sudokufx.config.os.OsFolderInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html", null ],
+    [ "fr.softsf.sudokufx.config.os.OsFoldersConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html", null ],
+    [ "fr.softsf.sudokufx.config.os.OsFoldersConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.os.OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test.html", null ],
+    [ "fr.softsf.sudokufx.config.os.OsInitializedFolders", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html", null ],
     [ "fr.softsf.sudokufx.common.enums.OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.enums.OsNameUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.enums.Paths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html", null ],

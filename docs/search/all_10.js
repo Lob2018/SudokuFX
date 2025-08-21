@@ -62,6 +62,6 @@ var searchData=
   ['primarystage_59',['primaryStage',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f',1,'fr.softsf.sudokufx.view.CrashScreenView.primaryStage'],['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aacf0f46b8a606da2235f24d811c7c4ab',1,'fr.softsf.sudokufx.view.DefaultView.primaryStage']]],
   ['printlogentrymessage_60',['printLogEntryMessage',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#aebe58385063c387d9b27bce0ad2493fc',1,'fr::softsf::sudokufx::config::MyLogbackConfig']]],
   ['printlogstatus_61',['printLogStatus',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#accf2f4cc3c02cec1068849bd4ab833d2',1,'fr::softsf::sudokufx::config::MyLogbackConfig']]],
-  ['provideinvalidoperatingsystems_62',['provideInvalidOperatingSystems',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test.html#a6cffcbc3faa4014b59912adbb1c16ce6',1,'fr::softsf::sudokufx::config::os::OsFolderFactoryManagerUTest']]],
+  ['provideinvalidoperatingsystems_62',['provideInvalidOperatingSystems',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#aac42a6e16f63807b08e5ecb581b0b0c5',1,'fr::softsf::sudokufx::config::os::OsFoldersConfigUTest']]],
   ['pwd_5farray_63',['PWD_ARRAY',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ae8d185d14574cec389107b3a9beacdeb',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]]
 ];

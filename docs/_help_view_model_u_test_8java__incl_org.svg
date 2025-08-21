@@ -207,7 +207,7 @@
 <g id="a_Node000012"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1650.88,-32 1512.62,-32 1512.62,0 1650.88,0 1650.88,-32"/>
 <text text-anchor="start" x="1520.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.os.</text>
-<text text-anchor="middle" x="1581.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory</text>
+<text text-anchor="middle" x="1581.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolder</text>
 </a>
 </g>
 </g>
@@ -226,7 +226,7 @@
 <g id="a_Node000013"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1806.88,-32 1668.62,-32 1668.62,0 1806.88,0 1806.88,-32"/>
 <text text-anchor="start" x="1676.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.os.</text>
-<text text-anchor="middle" x="1737.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsFolderFactoryManager</text>
+<text text-anchor="middle" x="1737.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsFoldersConfig</text>
 </a>
 </g>
 </g>

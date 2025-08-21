@@ -10,7 +10,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test =
     [ "givenSpringContextOnRefresh_whenPrintLogEntryMessage_thenCorrectMessageLogged", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a8903e486fc1e2601ef1e71ef1c4f5346", null ],
     [ "setup", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a72db551c535b66d2c1aca1e7e2446e68", null ],
     [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a6aba774665b5ff3328cca63870d0a765", null ],
-    [ "iCurrentIOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a3669374254531e9ec8495f5ead52dba7", null ],
+    [ "iCurrentIOsFolder", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a598c082889395196507cf9484aaab073", null ],
     [ "logWatcher", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a46ee03729a1deda67a8a6ea4d53f5777", null ],
     [ "myLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#abb6ba629bcd85c88412748a41e6d0390", null ]
 ];

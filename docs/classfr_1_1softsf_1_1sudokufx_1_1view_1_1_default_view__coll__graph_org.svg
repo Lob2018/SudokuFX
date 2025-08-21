@@ -413,27 +413,26 @@
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html" target="_top" xlink:title="ViewModel responsible for displaying the help dialog.">
-<polygon fill="white" stroke="none" points="1121.38,-1794 984.38,-1794 984.38,-1634 1121.38,-1634 1121.38,-1794"/>
-<text text-anchor="start" x="988.38" y="-1780.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="1018.75" y="-1768.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel</text>
-<text text-anchor="start" x="991.12" y="-1752.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1000.88" y="-1752.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolderFactory</text>
-<text text-anchor="start" x="1000.88" y="-1740.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolderFactory</text>
-<text text-anchor="start" x="991.12" y="-1724.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1000.88" y="-1724.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="1000.88" y="-1712.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALERT_SIZE_RATIO</text>
-<text text-anchor="start" x="989.62" y="-1696.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1000.88" y="-1696.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel(IOsFolder</text>
-<text text-anchor="start" x="1000.88" y="-1684.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory iOsFolderFactory)</text>
-<text text-anchor="start" x="989.62" y="-1668.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1000.88" y="-1668.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showHelp()</text>
-<text text-anchor="start" x="989.62" y="-1652.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="1000.88" y="-1652.5" font-family="Helvetica,sans-Serif" font-size="10.00">void displayAlert(Alert</text>
-<text text-anchor="start" x="1000.88" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00"> alert)</text>
-<polygon fill="#666666" stroke="#666666" points="984.38,-1764 984.38,-1764 1121.38,-1764 1121.38,-1764 984.38,-1764"/>
-<polygon fill="#666666" stroke="#666666" points="984.38,-1708 984.38,-1708 998.88,-1708 998.88,-1708 984.38,-1708"/>
-<polygon fill="#666666" stroke="#666666" points="998.88,-1708 998.88,-1708 1121.38,-1708 1121.38,-1708 998.88,-1708"/>
-<polygon fill="none" stroke="#666666" points="984.38,-1634 984.38,-1794 1121.38,-1794 1121.38,-1634 984.38,-1634"/>
+<polygon fill="white" stroke="none" points="1121.38,-1788 984.38,-1788 984.38,-1640 1121.38,-1640 1121.38,-1788"/>
+<text text-anchor="start" x="988.38" y="-1774.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="1018.75" y="-1762.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel</text>
+<text text-anchor="start" x="991.12" y="-1746.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1000.88" y="-1746.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolder iOsFolder</text>
+<text text-anchor="start" x="991.12" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1000.88" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="1000.88" y="-1718.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALERT_SIZE_RATIO</text>
+<text text-anchor="start" x="989.62" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1000.88" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel(IOsFolder</text>
+<text text-anchor="start" x="1000.88" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolder)</text>
+<text text-anchor="start" x="989.62" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1000.88" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showHelp()</text>
+<text text-anchor="start" x="989.62" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="1000.88" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">void displayAlert(Alert</text>
+<text text-anchor="start" x="1000.88" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00"> alert)</text>
+<polygon fill="#666666" stroke="#666666" points="984.38,-1758 984.38,-1758 1121.38,-1758 1121.38,-1758 984.38,-1758"/>
+<polygon fill="#666666" stroke="#666666" points="984.38,-1714 984.38,-1714 998.88,-1714 998.88,-1714 984.38,-1714"/>
+<polygon fill="#666666" stroke="#666666" points="998.88,-1714 998.88,-1714 1121.38,-1714 1121.38,-1714 998.88,-1714"/>
+<polygon fill="none" stroke="#666666" points="984.38,-1640 984.38,-1788 1121.38,-1788 1121.38,-1640 984.38,-1640"/>
 </a>
 </g>
 </g>
@@ -441,7 +440,7 @@
 <g id="edge7_Node000001_Node000008" class="edge">
 <title>Node8&#45;&gt;Node1</title>
 <g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1049.61,-1634.42C1048.18,-1525.2 1057.03,-1323.82 1129.88,-1172 1243.31,-935.56 1478.08,-728.29 1614.15,-621.54"/>
+<path fill="none" stroke="#63b8ff" d="M1049.7,-1640.32C1047.88,-1532.59 1055.7,-1326.6 1129.88,-1172 1243.31,-935.56 1478.08,-728.29 1614.15,-621.54"/>
 <polygon fill="none" stroke="#63b8ff" points="1614.01,-621.66 1616.28,-614.81 1623.47,-614.27 1621.2,-621.12 1614.01,-621.66"/>
 </a>
 </g>

@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore =
 [
-    [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ab67a293ca8a7582e7837ae51a8bdb7a2", null ],
+    [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a094e3f98d8644135b26b573ee75bd834", null ],
     [ "addToKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a7b8751ac0c7de3f434f5500915e66c28", null ],
     [ "createOrUpdateKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a66dfcb0f0fdfe459e86abd12e3afa2a2", null ],
     [ "credentials", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a29d06446266f63c94e41b8eb82b32847", null ],
@@ -22,7 +22,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore
     [ "AES_KEY_SIZE_BITS", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a330834fe482f315261f10da3290614dd", null ],
     [ "generateSecret", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a19946d979a7c0dedd2b5476f39cda6b9", null ],
     [ "iEncryptionService", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ac82a5e7b858e007603473771101f9f1c", null ],
-    [ "iOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ac63fb105a7e690818e8258792cc45901", null ],
+    [ "iOsFolder", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a14b00b3b0bedc1c07a25fa5d244f26da", null ],
     [ "KEYSTORE_FILE_PATH", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a74bb9365804e0418c103b963cd14b048", null ],
     [ "KEYSTORE_PASSWORD_FROM_UUID", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#abf6114ef78bd8dc57bbdc10090846dab", null ],
     [ "KEYSTORE_TYPE", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5f65e2b158bf7e28f843354d834510d2", null ],

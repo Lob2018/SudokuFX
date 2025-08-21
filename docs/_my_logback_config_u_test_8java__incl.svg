@@ -310,7 +310,7 @@ var sectionId = 'dynsection-0';
 <g id="a_Node000015"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1918.88,-32 1780.62,-32 1780.62,0 1918.88,0 1918.88,-32"/>
 <text text-anchor="start" x="1788.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.os.</text>
-<text text-anchor="middle" x="1849.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory</text>
+<text text-anchor="middle" x="1849.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolder</text>
 </a>
 </g>
 </g>
@@ -329,7 +329,7 @@ var sectionId = 'dynsection-0';
 <g id="a_Node000016"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="2074.88,-32 1936.62,-32 1936.62,0 2074.88,0 2074.88,-32"/>
 <text text-anchor="start" x="1944.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.os.</text>
-<text text-anchor="middle" x="2005.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsFolderFactoryManager</text>
+<text text-anchor="middle" x="2005.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsFoldersConfig</text>
 </a>
 </g>
 </g>

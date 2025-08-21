@@ -32,7 +32,7 @@
 <text text-anchor="start" x="6.75" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="19.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">HikariDataSource hikariData</text>
 <text text-anchor="start" x="19.5" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">Source(final IKeystore iKeystore,</text>
-<text text-anchor="start" x="19.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IOsFolderFactory iOsFolderFactory)</text>
+<text text-anchor="start" x="19.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IOsFolderFactory iOsFolder)</text>
 <text text-anchor="start" x="6.75" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="19.5" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">int logbackInitialization</text>
 <text text-anchor="start" x="19.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final MyLogbackConfig</text>

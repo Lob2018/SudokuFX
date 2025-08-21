@@ -127,7 +127,7 @@ Package Functions</h2></td></tr>
 <tr class="memitem:a7e03d1366907b5e59128e24aad95ad98" id="r_a7e03d1366907b5e59128e24aad95ad98"><td class="memItemLeft" align="right" valign="top">Flyway&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e03d1366907b5e59128e24aad95ad98">flyway</a> (final HikariDataSource <a class="el" href="#aeec3198d3b639d46c8bf715dc2e3581d">hikariDataSource</a>)</td></tr>
 <tr class="memdesc:a7e03d1366907b5e59128e24aad95ad98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures Flyway with a specified location for migration scripts.  <br /></td></tr>
 <tr class="separator:a7e03d1366907b5e59128e24aad95ad98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeec3198d3b639d46c8bf715dc2e3581d" id="r_aeec3198d3b639d46c8bf715dc2e3581d"><td class="memItemLeft" align="right" valign="top">HikariDataSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeec3198d3b639d46c8bf715dc2e3581d">hikariDataSource</a> (final IKeystore iKeystore, IOsFolderFactory iOsFolderFactory)</td></tr>
+<tr class="memitem:aeec3198d3b639d46c8bf715dc2e3581d" id="r_aeec3198d3b639d46c8bf715dc2e3581d"><td class="memItemLeft" align="right" valign="top">HikariDataSource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeec3198d3b639d46c8bf715dc2e3581d">hikariDataSource</a> (final IKeystore iKeystore, IOsFolderFactory iOsFolder)</td></tr>
 <tr class="memdesc:aeec3198d3b639d46c8bf715dc2e3581d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and configures the main DataSource for the application.  <br /></td></tr>
 <tr class="separator:aeec3198d3b639d46c8bf715dc2e3581d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a142a046b84fa56bff56ce2331cb4bd98" id="r_a142a046b84fa56bff56ce2331cb4bd98"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a142a046b84fa56bff56ce2331cb4bd98">logbackInitialization</a> (final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1configuration_1_1_my_logback_config.html">MyLogbackConfig</a> myLogbackConfig)</td></tr>
@@ -204,7 +204,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IOsFolderFactory</td>          <td class="paramname"><span class="paramname"><em>iOsFolderFactory</em></span>&#160;)</td>
+          <td class="paramtype">IOsFolderFactory</td>          <td class="paramname"><span class="paramname"><em>iOsFolder</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -219,7 +219,7 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">iKeystore</td><td>Application keystore for secure storage </td></tr>
-    <tr><td class="paramname">iOsFolderFactory</td><td>Factory for creating OS-specific folder paths. </td></tr>
+    <tr><td class="paramname">iOsFolder</td><td>Factory for creating OS-specific folder paths. </td></tr>
   </table>
   </dd>
 </dl>

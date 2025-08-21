@@ -256,7 +256,7 @@ var sectionId = 'dynsection-0';
 <g id="a_Node000012"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1555.88,-38 1417.62,-38 1417.62,-6 1555.88,-6 1555.88,-38"/>
 <text text-anchor="start" x="1425.62" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.os.</text>
-<text text-anchor="middle" x="1486.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolderFactory</text>
+<text text-anchor="middle" x="1486.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOsFolder</text>
 </a>
 </g>
 </g>

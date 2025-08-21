@@ -27,7 +27,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
     [ "dropShadow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeafb2651c347d16a52b08b48563f8476", null ],
     [ "FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9abd8cec04433b385cf595d25df8e01c", null ],
     [ "I_FILE_SYSTEM", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a40f2448e55d8941436854a6a8481e85c", null ],
-    [ "I_OS_FOLDER_FACTORY", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a190a141b6808a63ac231047923adec16", null ],
+    [ "I_OS_FOLDER_FACTORY", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aa2c7afc8c929fd52d91a5534e8639e13", null ],
     [ "iSplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49c11cdc15fbf969de8ca00ec9817ead", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aefcbc1edb1959f06721ea31a15c7e95c", null ],
     [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f", null ],

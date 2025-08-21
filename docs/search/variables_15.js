@@ -6,7 +6,7 @@ var searchData=
   ['windows_5fsudo_5ffx_5fbase_5fpath_3',['WINDOWS_SUDO_FX_BASE_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a31483295cd054c78c089e4ead3096663',1,'fr::softsf::sudokufx::common::enums::Paths']]],
   ['windows_5fsupposed_5fdata_5ffolder_5ffor_5fsudo_5ffx_4',['WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#aeb10356ad3a17a225ea3249537642e71',1,'fr::softsf::sudokufx::common::enums::Paths']]],
   ['windows_5fsupposed_5flogs_5ffolder_5ffor_5fsudo_5ffx_5',['WINDOWS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#af2f708581359b4c8e792dae2581f6635',1,'fr::softsf::sudokufx::common::enums::Paths']]],
-  ['windowsintendedpathdatafolder_6',['windowsIntendedPathDataFolder',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#aff5abd31b0bae46c90c4243612737392',1,'fr::softsf::sudokufx::config::os::OsFolderFactoryManager']]],
-  ['windowsintendedpathlogsfolder_7',['windowsIntendedPathLogsFolder',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html#a3fe31de18898bbe2bdd983ec771cd76d',1,'fr::softsf::sudokufx::config::os::OsFolderFactoryManager']]],
+  ['windowsintendedpathdatafolder_6',['windowsIntendedPathDataFolder',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#ae53bb086159922c2222d5c61e1a2826c',1,'fr::softsf::sudokufx::config::os::OsFoldersConfig']]],
+  ['windowsintendedpathlogsfolder_7',['windowsIntendedPathLogsFolder',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a34a5a53f234681390368f4944b9de60c',1,'fr::softsf::sudokufx::config::os::OsFoldersConfig']]],
   ['wrong_5fos_5ffor_5ftests_8',['WRONG_OS_FOR_TESTS',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a0011b09c530f076b09df8213d4407098',1,'fr::softsf::sudokufx::common::enums::OsName']]]
 ];

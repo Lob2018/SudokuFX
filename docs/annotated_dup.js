@@ -69,13 +69,11 @@ var annotated_dup =
               [ "SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test" ]
             ] ],
             [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html", [
-              [ "LinuxFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_linux_folder_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_linux_folder_factory" ],
-              [ "MacosFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_macos_folder_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_macos_folder_factory" ],
-              [ "OsFolderFactoryManager", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager" ],
-              [ "OsFolderFactoryManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_factory_manager_u_test" ],
               [ "OsFolderInitializer", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer" ],
               [ "OsFolderInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test" ],
-              [ "WindowsFolderFactory", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory.html", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_windows_folder_factory" ]
+              [ "OsFoldersConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config" ],
+              [ "OsFoldersConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test" ],
+              [ "OsInitializedFolders", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders" ]
             ] ],
             [ "HttpClientConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_http_client_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_http_client_config" ],
             [ "JVMApplicationProperties", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties" ],

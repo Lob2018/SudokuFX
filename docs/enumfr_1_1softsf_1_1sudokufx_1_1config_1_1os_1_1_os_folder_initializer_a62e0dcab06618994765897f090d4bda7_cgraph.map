@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title="Creates data and logs folders at the specified paths." alt="" coords="5,39,226,81"/>
 <area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html#a519059f5adc8e7f898fc087f7a5fde0a" title="Creates the specified folder if it does not already exist." alt="" coords="274,5,476,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,43,258,39,259,44,226,48"/>
-<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a90a7316060415faf8dd0b49e12e422fd" title="Holds the initialized paths for data and logs folders." alt="" coords="283,72,467,115"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a290ee7b4103931a0a658a7391d5739bc" title="Immutable record holding the initialized OS&#45;specific folder paths (data and logs)." alt="" coords="283,72,467,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="226,72,267,77,267,82,226,77"/>
 </map>

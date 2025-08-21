@@ -64,7 +64,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="40.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogbackConfigUTest</text>
 <text text-anchor="start" x="5.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolderFactory</text>
-<text text-anchor="start" x="14" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iCurrentIOsFolderFactory</text>
+<text text-anchor="start" x="14" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iCurrentIOsFolder</text>
 <text text-anchor="start" x="5.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
 <text text-anchor="start" x="14" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
@@ -120,7 +120,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="23.38" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="13.38" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="23.38" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogbackConfig(IOsFolder</text>
-<text text-anchor="start" x="23.38" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory iOsFolderFactory)</text>
+<text text-anchor="start" x="23.38" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Factory iOsFolder)</text>
 <text text-anchor="start" x="13.38" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="23.38" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getLogsFolderPath()</text>
 <text text-anchor="start" x="13.38" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

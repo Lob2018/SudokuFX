@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config =
 [
-    [ "MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a70684c5f929729a89f54668499e1be32", null ],
+    [ "MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ad5c2f554f0e1f109339ad6456751d970", null ],
     [ "configureLogback", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a0aa08f0a279413e5beef507fd0984d9f", null ],
     [ "getLogsFolderPath", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ac8e060925b99242d5e197d45c6c880b8", null ],
     [ "printLogEntryMessage", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#aebe58385063c387d9b27bce0ad2493fc", null ],

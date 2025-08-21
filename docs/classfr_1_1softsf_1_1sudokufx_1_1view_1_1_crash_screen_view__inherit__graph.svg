@@ -116,7 +116,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IFileSystem</text>
 <text text-anchor="start" x="14" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00"> I_FILE_SYSTEM</text>
 <text text-anchor="start" x="5.5" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IOsFolderFactory</text>
+<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IOsFolder</text>
 <text text-anchor="start" x="14" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00"> I_OS_FOLDER_FACTORY</text>
 <text text-anchor="start" x="5.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>

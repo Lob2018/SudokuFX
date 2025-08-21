@@ -1,8 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html":[2,0,0,0,0,1,4,3],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a018b48f0ee7e805d5ae225368c9dcd1c":[1,0,0,0,0,1,4,3,2],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a018b48f0ee7e805d5ae225368c9dcd1c":[2,0,0,0,0,1,4,3,2],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a1c85deb739a97760c6b110bbae49f478":[1,0,0,0,0,1,4,3,5],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a1c85deb739a97760c6b110bbae49f478":[2,0,0,0,0,1,4,3,5],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a26bf32efab390b2c359ee04f17333ea9":[1,0,0,0,0,1,4,3,9],
@@ -243,11 +240,14 @@ var NAVTREEINDEX1 =
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a0aa08f0a279413e5beef507fd0984d9f":[2,0,0,0,0,2,5,1],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a66add8176f1a4a3f65aece5dbf3db5ca":[1,0,0,0,0,2,5,7],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a66add8176f1a4a3f65aece5dbf3db5ca":[2,0,0,0,0,2,5,7],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a70684c5f929729a89f54668499e1be32":[1,0,0,0,0,2,5,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a70684c5f929729a89f54668499e1be32":[2,0,0,0,0,2,5,0],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a7774aa896f8008608bc9597ce4960d6c":[1,0,0,0,0,2,5,6],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a7774aa896f8008608bc9597ce4960d6c":[2,0,0,0,0,2,5,6],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a998d34b307ec71698f5b0417c7a549c5":[1,0,0,0,0,2,5,8],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a998d34b307ec71698f5b0417c7a549c5":[2,0,0,0,0,2,5,8],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ac8e060925b99242d5e197d45c6c880b8":[1,0,0,0,0,2,5,2]
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ac8e060925b99242d5e197d45c6c880b8":[1,0,0,0,0,2,5,2],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ac8e060925b99242d5e197d45c6c880b8":[2,0,0,0,0,2,5,2],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#accf2f4cc3c02cec1068849bd4ab833d2":[1,0,0,0,0,2,5,4],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#accf2f4cc3c02cec1068849bd4ab833d2":[2,0,0,0,0,2,5,4],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ad5c2f554f0e1f109339ad6456751d970":[1,0,0,0,0,2,5,0],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ad5c2f554f0e1f109339ad6456751d970":[2,0,0,0,0,2,5,0]
 };

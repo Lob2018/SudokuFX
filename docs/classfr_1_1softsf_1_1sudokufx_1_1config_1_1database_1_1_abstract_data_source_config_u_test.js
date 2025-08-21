@@ -10,6 +10,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source
     [ "givenValidJdbcUrlAndPoolName_whenHikariDataSourceCreated_thenPropertiesAreSet", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a86493821de2f6b7c1c5ba010e3580bfd", null ],
     [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a9a86e7c16a8276705969a15a56c3d54e", null ],
     [ "config", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a3d8b86518ceb6e48fa78f12322946961", null ],
-    [ "iCurrentIOsFolderFactory", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#ac60a650b8468f8a071305da3c94c5b29", null ],
+    [ "iCurrentIOsFolder", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a8f937c2f8d887703b18cf523d4bdb923", null ],
     [ "keystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a2717f3a3ac1d009545e80aee8d0ba36b", null ]
 ];

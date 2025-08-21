@@ -153,7 +153,7 @@
 <text text-anchor="start" x="365.62" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iFileSystem</text>
 <text text-anchor="start" x="357.12" y="-552.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="365.62" y="-552.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IOsFolderFactory</text>
-<text text-anchor="start" x="365.62" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolderFactory</text>
+<text text-anchor="start" x="365.62" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolder</text>
 <text text-anchor="start" x="357.12" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="365.62" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger log</text>
 <text text-anchor="start" x="355.62" y="-508.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>

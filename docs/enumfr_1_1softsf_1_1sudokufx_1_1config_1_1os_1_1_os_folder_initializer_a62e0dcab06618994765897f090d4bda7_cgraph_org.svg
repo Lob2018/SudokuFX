@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a90a7316060415faf8dd0b49e12e422fd" target="_top" xlink:title="Holds the initialized paths for data and logs folders.">
+<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a290ee7b4103931a0a658a7391d5739bc" target="_top" xlink:title="Immutable record holding the initialized OS&#45;specific folder paths (data and logs).">
 <polygon fill="white" stroke="#666666" points="346.25,-32 208,-32 208,0 346.25,0 346.25,-32"/>
 <text text-anchor="start" x="216" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.os.</text>
 <text text-anchor="middle" x="277.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsInitializedFolders</text>
