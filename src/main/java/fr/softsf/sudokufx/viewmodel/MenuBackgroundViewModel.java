@@ -19,6 +19,8 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -237,6 +239,42 @@ public class MenuBackgroundViewModel {
     public void updateBackgroundColorAndApply(GridPane sudokuFX, Color color) {
         // TODO: SERVICE STORE COLOR AS color.toString().substring(2)
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
+    }
+
+    /**
+     * Opens file chooser dialog for background image selection.
+     *
+     * @param primaryStage parent stage for the dialog
+     * @return selected image file or null if cancelled/error
+     */
+    public File chooseBackgroundImage(Stage primaryStage) {
+        try {
+            FileChooser fileChooser = createImageFileChooser();
+            return fileChooser.showOpenDialog(primaryStage);
+        } catch (Exception e) {
+            LOG.error("Error choosing background image: {}", e.getMessage(), e);
+            return null;
+        }
+    }
+
+    /**
+     * Creates configured FileChooser for image files.
+     *
+     * @return FileChooser with image filters and home directory set
+     */
+    private FileChooser createImageFileChooser() {
+        FileChooser fileChooser = new FileChooser();
+        fileChooser
+                .getExtensionFilters()
+                .add(
+                        new FileChooser.ExtensionFilter(
+                                I18n.INSTANCE.getValue("filechooser.extension"),
+                                "*.jpg",
+                                "*.jpeg",
+                                "*.png",
+                                "*.bmp"));
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+        return fileChooser;
     }
 
     /**

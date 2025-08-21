@@ -31,7 +31,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
-import javafx.stage.FileChooser;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -901,33 +900,14 @@ public final class DefaultView implements IMainView {
                         });
     }
 
+    /**
+     * Handles background image selection from file chooser. Opens file dialog and applies selected
+     * image if valid.
+     */
     @FXML
     private void handleFileImageChooser() {
-        try {
-            FileChooser fileChooser = new FileChooser();
-            fileChooser
-                    .getExtensionFilters()
-                    .add(
-                            new FileChooser.ExtensionFilter(
-                                    "Fichiers d'images", "*.jpg", "*.jpeg", "*.png", "*.bmp"));
-            fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
-            File selectedFile = fileChooser.showOpenDialog(primaryStage);
-            applySelectedBackgroundImage(selectedFile);
-        } catch (Exception e) {
-            LOG.error(
-                    "██ DefaultView > handleFileImageChooser exception occurred:" + " {}",
-                    e.getMessage(),
-                    e);
-        }
-    }
-
-    /**
-     * Applies the selected background image to the GridPane.
-     *
-     * @param selectedFile The image file selected by the user. If null, no action is taken.
-     */
-    private void applySelectedBackgroundImage(File selectedFile) {
-        if (selectedFile != null) {
+        File selectedFile = menuBackgroundViewModel.chooseBackgroundImage(primaryStage);
+        if (Objects.nonNull(selectedFile)) {
             menuBackgroundViewModel.handleFileImageChooser(
                     selectedFile, toaster, spinner, sudokuFX);
         }
