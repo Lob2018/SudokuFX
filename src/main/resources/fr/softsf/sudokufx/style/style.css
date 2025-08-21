@@ -111,6 +111,11 @@
 
 .sudokuFXGridPaneContainer.opaque-mode {
     -fx-background-color: black;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: .3em;
+    -fx-border-insets: -.3em;
+    -fx-border-radius: .3em;
 }
 
 .sudokuFXGridCell.opaque-mode {
@@ -135,7 +140,6 @@
     -fx-text-overrun: clip;
     -fx-wrap-text: false;
     -fx-text-alignment: center;
-    -fx-background-color: transparent;
     -fx-background-color: black;
     -fx-text-fill: white;
 }
