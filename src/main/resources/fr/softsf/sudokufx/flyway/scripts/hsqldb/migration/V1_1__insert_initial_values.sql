@@ -15,12 +15,14 @@ INSERT
         background(
             hexcolor,
             imagepath,
-            isimage
+            isimage,
+            isopaque
         )
     VALUES(
         '000000ff',
         '',
-        FALSE
+        FALSE,
+        TRUE
     );
 
 -- Creating values for menu

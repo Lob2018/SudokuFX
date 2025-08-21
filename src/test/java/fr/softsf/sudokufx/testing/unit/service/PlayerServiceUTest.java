@@ -45,7 +45,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new BackgroundDto(1L, "#FFFFFF", null, false),
+                        new BackgroundDto(1L, "#FFFFFF", null, false, true),
                         new MenuDto((byte) 1, (byte) 1),
                         new GameDto(
                                 1L,
@@ -111,7 +111,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new BackgroundDto(1L, "#FFFFFF", null, false),
+                        new BackgroundDto(1L, "#FFFFFF", null, false, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null, // selectedGame is null
                         "Jean",

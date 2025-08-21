@@ -22,6 +22,7 @@ CREATE
             hexcolor VARCHAR(8) NOT NULL,
             imagepath VARCHAR(1024) NOT NULL,
             isimage BOOLEAN DEFAULT FALSE NOT NULL,
+            isopaque BOOLEAN DEFAULT TRUE NOT NULL,
         );
 
 -- Creation of the "gamelevel" table

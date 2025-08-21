@@ -15,11 +15,12 @@ import jakarta.validation.constraints.Size;
  * @param backgroundid the unique identifier of the background
  * @param hexcolor the background color in hexadecimal format (max 8 characters), not null
  * @param imagepath the path to the background image (max 260 characters), not null
- * @param isimage flag indicating if the background uses an image (true) or a color (false), not
- *     null
+ * @param isimage flag indicating if the background uses an image (true) or a color (false)
+ * @param isopaque flag indicating if the grid background is opaque (true) or transparent (false)
  */
 public record BackgroundDto(
         Long backgroundid,
         @Nonnull @NotNull @Size(max = 8) String hexcolor,
         @Nonnull @NotNull @Size(max = 260) String imagepath,
-        boolean isimage) {}
+        boolean isimage,
+        boolean isopaque) {}

@@ -31,12 +31,14 @@ class BackgroundUTest {
             String hexcolor = VALID_HEX_6;
             String imagepath = VALID_PATH;
             boolean isimage = true;
-            Background background = new Background(id, hexcolor, imagepath, isimage);
+            boolean isopaque = true;
+            Background background = new Background(id, hexcolor, imagepath, isimage, isopaque);
             assertNotNull(background);
             assertEquals(id, background.getBackgroundid());
             assertEquals(hexcolor, background.getHexcolor());
             assertEquals(imagepath, background.getImagepath());
             assertTrue(background.getIsimage());
+            assertTrue(background.getIsopaque());
         }
 
         @Test
@@ -58,7 +60,7 @@ class BackgroundUTest {
         @ValueSource(strings = {"#FFFFFF", "#000000", "#123ABC", "#FFF", "#000", "#abc"})
         void givenValidHexColor_whenCreatingBackground_thenNoExceptionIsThrown(
                 String validHexColor) {
-            assertDoesNotThrow(() -> new Background(1L, validHexColor, VALID_PATH, false));
+            assertDoesNotThrow(() -> new Background(1L, validHexColor, VALID_PATH, false, true));
         }
 
         @ParameterizedTest
@@ -77,7 +79,7 @@ class BackgroundUTest {
             IllegalArgumentException exception =
                     assertThrows(
                             IllegalArgumentException.class,
-                            () -> new Background(1L, invalidHexColor, VALID_PATH, false));
+                            () -> new Background(1L, invalidHexColor, VALID_PATH, false, true));
             assertEquals(
                     "hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)",
                     exception.getMessage());
@@ -92,7 +94,7 @@ class BackgroundUTest {
             IllegalArgumentException exception =
                     assertThrows(
                             IllegalArgumentException.class,
-                            () -> new Background(1L, blankHexColor, VALID_PATH, false));
+                            () -> new Background(1L, blankHexColor, VALID_PATH, false, true));
             assertEquals("hexcolor must not be null or blank", exception.getMessage());
         }
     }
@@ -102,12 +104,12 @@ class BackgroundUTest {
     class ImagePathValidationTests {
         @Test
         void givenValidImagePath_whenCreatingBackground_thenNoExceptionIsThrown() {
-            assertDoesNotThrow(() -> new Background(1L, VALID_HEX_6, VALID_PATH, true));
+            assertDoesNotThrow(() -> new Background(1L, VALID_HEX_6, VALID_PATH, true, true));
         }
 
         @Test
         void givenEmptyImagePath_whenCreatingBackground_thenNoExceptionIsThrown() {
-            assertDoesNotThrow(() -> new Background(1L, VALID_HEX_6, "", false));
+            assertDoesNotThrow(() -> new Background(1L, VALID_HEX_6, "", false, true));
         }
 
         @Test
@@ -116,7 +118,7 @@ class BackgroundUTest {
             NullPointerException exception =
                     assertThrows(
                             NullPointerException.class,
-                            () -> new Background(1L, VALID_HEX_6, null, false));
+                            () -> new Background(1L, VALID_HEX_6, null, false, true));
             assertEquals("imagepath must not be null", exception.getMessage());
         }
     }
@@ -218,8 +220,8 @@ class BackgroundUTest {
     class EqualsAndHashCodeTests {
         @Test
         void givenTwoBackgroundsWithSameProperties_whenComparingEquality_thenTheyAreEqual() {
-            Background bg1 = new Background(1L, VALID_HEX_6, VALID_PATH, true);
-            Background bg2 = new Background(1L, VALID_HEX_6, VALID_PATH, true);
+            Background bg1 = new Background(1L, VALID_HEX_6, VALID_PATH, true, true);
+            Background bg2 = new Background(1L, VALID_HEX_6, VALID_PATH, true, true);
             assertEquals(bg1, bg2);
             assertEquals(bg1.hashCode(), bg2.hashCode());
         }
@@ -227,27 +229,27 @@ class BackgroundUTest {
         @Test
         void
                 givenTwoBackgroundsWithDifferentProperties_whenComparingEquality_thenTheyAreNotEqual() {
-            Background bg1 = new Background(1L, VALID_HEX_6, VALID_PATH, true);
-            Background bg2 = new Background(2L, VALID_HEX_6, VALID_PATH, true);
+            Background bg1 = new Background(1L, VALID_HEX_6, VALID_PATH, true, true);
+            Background bg2 = new Background(2L, VALID_HEX_6, VALID_PATH, true, true);
             assertNotEquals(bg1, bg2);
         }
 
         @Test
         @SuppressWarnings("EqualsWithItself")
         void givenSameBackgroundInstance_whenComparingToItself_thenTheyAreEqual() {
-            Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true);
+            Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true, true);
             assertEquals(background, background);
         }
 
         @Test
         void givenBackgroundAndNull_whenComparingEquality_thenTheyAreNotEqual() {
-            Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true);
+            Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true, true);
             assertNotEquals(null, background);
         }
 
         @Test
         void givenBackgroundAndDifferentClass_whenComparingEquality_thenTheyAreNotEqual() {
-            Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true);
+            Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true, true);
             Object notBackground = new Object();
             assertNotEquals(background, notBackground);
         }
@@ -258,7 +260,7 @@ class BackgroundUTest {
     class ToStringTests {
         @Test
         void givenBackgroundInstance_whenCallingToString_thenFormattedStringIsReturned() {
-            Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true);
+            Background background = new Background(1L, VALID_HEX_6, VALID_PATH, true, true);
             String result = background.toString();
             assertNotNull(result);
             assertTrue(result.contains("Background{"));
@@ -274,14 +276,14 @@ class BackgroundUTest {
     class EdgeCaseTests {
         @Test
         void givenNullBackgroundId_whenCreatingBackground_thenNoExceptionIsThrown() {
-            assertDoesNotThrow(() -> new Background(null, VALID_HEX_6, VALID_PATH, false));
+            assertDoesNotThrow(() -> new Background(null, VALID_HEX_6, VALID_PATH, false, true));
         }
 
         @Test
         void givenMaximumLengthStrings_whenCreatingBackground_thenNoExceptionIsThrown() {
             String maxHexColor = "#FFFFFF"; // 7 characters (max 8)
             String maxImagePath = "a".repeat(260); // Max 260 characters
-            assertDoesNotThrow(() -> new Background(1L, maxHexColor, maxImagePath, false));
+            assertDoesNotThrow(() -> new Background(1L, maxHexColor, maxImagePath, false, true));
         }
 
         @Test
@@ -289,9 +291,9 @@ class BackgroundUTest {
             String lowerCase = "#ffffff";
             String upperCase = "#FFFFFF";
             String mixedCase = "#FfFfFf";
-            assertDoesNotThrow(() -> new Background(1L, lowerCase, VALID_PATH, false));
-            assertDoesNotThrow(() -> new Background(1L, upperCase, VALID_PATH, false));
-            assertDoesNotThrow(() -> new Background(1L, mixedCase, VALID_PATH, false));
+            assertDoesNotThrow(() -> new Background(1L, lowerCase, VALID_PATH, false, true));
+            assertDoesNotThrow(() -> new Background(1L, upperCase, VALID_PATH, false, true));
+            assertDoesNotThrow(() -> new Background(1L, mixedCase, VALID_PATH, false, true));
         }
     }
 }

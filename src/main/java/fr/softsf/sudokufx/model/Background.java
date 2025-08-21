@@ -50,17 +50,22 @@ public class Background {
     @Column(name = "isimage", nullable = false)
     private boolean isimage = false;
 
+    @Column(name = "isopaque", nullable = false)
+    private boolean isopaque = true;
+
     protected Background() {}
 
     public Background(
             Long backgroundid,
             @Nonnull @NotNull String hexcolor,
             @Nonnull @NotNull String imagepath,
-            boolean isimage) {
+            boolean isimage,
+            boolean isopaque) {
         this.backgroundid = backgroundid;
         this.hexcolor = validateHexcolor(hexcolor);
         this.imagepath = validateImagepath(imagepath);
         this.isimage = isimage;
+        this.isopaque = isopaque;
     }
 
     /**
@@ -109,6 +114,10 @@ public class Background {
         return isimage;
     }
 
+    public boolean getIsopaque() {
+        return isopaque;
+    }
+
     public void setHexcolor(@Nonnull String hexcolor) {
         this.hexcolor = validateHexcolor(hexcolor);
     }
@@ -119,6 +128,10 @@ public class Background {
 
     public void setIsimage(boolean isimage) {
         this.isimage = isimage;
+    }
+
+    public void setIsopaque(boolean isopaque) {
+        this.isopaque = isopaque;
     }
 
     public static BackgroundBuilder builder() {
@@ -134,6 +147,7 @@ public class Background {
         private String hexcolor = DEFAULT_HEX_COLOR;
         private String imagepath = EMPTY_PATH;
         private boolean isimage = false;
+        private boolean isopaque = true;
 
         public BackgroundBuilder backgroundid(Long backgroundid) {
             this.backgroundid = backgroundid;
@@ -155,6 +169,11 @@ public class Background {
             return this;
         }
 
+        public BackgroundBuilder isopaque(boolean isopaque) {
+            this.isopaque = isopaque;
+            return this;
+        }
+
         /**
          * Creates Background instance with parameter validation.
          *
@@ -162,7 +181,7 @@ public class Background {
          * @throws IllegalArgumentException if parameters are invalid
          */
         public Background build() {
-            return new Background(backgroundid, hexcolor, imagepath, isimage);
+            return new Background(backgroundid, hexcolor, imagepath, isimage, isopaque);
         }
     }
 
@@ -175,6 +194,7 @@ public class Background {
             return false;
         }
         return isimage == other.isimage
+                && isopaque == other.isopaque
                 && Objects.equals(backgroundid, other.backgroundid)
                 && Objects.equals(hexcolor, other.hexcolor)
                 && Objects.equals(imagepath, other.imagepath);
@@ -182,13 +202,14 @@ public class Background {
 
     @Override
     public int hashCode() {
-        return Objects.hash(backgroundid, hexcolor, imagepath, isimage);
+        return Objects.hash(backgroundid, hexcolor, imagepath, isimage, isopaque);
     }
 
     @Override
     public String toString() {
         return String.format(
-                "Background{backgroundid=%s, hexcolor='%s', imagepath='%s', isimage=%b}",
-                backgroundid, hexcolor, imagepath, isimage);
+                "Background{backgroundid=%s, hexcolor='%s', imagepath='%s', isimage=%b,"
+                        + " isopaque=%b}",
+                backgroundid, hexcolor, imagepath, isimage, isopaque);
     }
 }

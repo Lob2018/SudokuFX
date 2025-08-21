@@ -51,7 +51,7 @@ class InMemoryPlayerUTest {
     }
 
     private BackgroundDto defaultBackground() {
-        return new BackgroundDto(1L, "000000ff", "", false);
+        return new BackgroundDto(1L, "000000ff", "", false, true);
     }
 
     private MenuDto defaultMenu() {
@@ -97,7 +97,7 @@ class InMemoryPlayerUTest {
                         "Jane Smith",
                         false,
                         new PlayerLanguageDto(2L, "EN"),
-                        new BackgroundDto(2L, "ffffff00", "", false),
+                        new BackgroundDto(2L, "ffffff00", "", false, true),
                         new MenuDto((byte) 2, (byte) 3));
         when(playerServiceMock.getPlayer()).thenReturn(initialPlayer);
         inMemoryPlayer = new InMemoryPlayer(playerServiceMock);
