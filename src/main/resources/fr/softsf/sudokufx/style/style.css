@@ -103,8 +103,6 @@
     -fx-padding: -.1em;
     -fx-text-overrun: clip;
     -fx-wrap-text: false;
-    -fx-text-alignment: center;
-    -fx-background-color: transparent;
     -fx-background-color: rgba(255, 255, 255, 0.8);
     -fx-text-fill: black;
 }
@@ -139,7 +137,6 @@
     -fx-padding: -.1em;
     -fx-text-overrun: clip;
     -fx-wrap-text: false;
-    -fx-text-alignment: center;
     -fx-background-color: black;
     -fx-text-fill: white;
 }
@@ -228,6 +225,10 @@
 
 .menuList {
     -fx-background-color: transparent;
+    -fx-pref-width: 13.35em;
+    -fx-max-width: 13.35em;
+    -fx-min-width: 13.35em;
+    -fx-padding: 0;
 }
 
 .menuList .viewport {
@@ -517,13 +518,6 @@
     -fx-pref-height: 1.64em;
     -fx-max-height: 1.64em;
     -fx-min-height: 1.64em;
-    -fx-padding: 0;
-}
-
-.menuList {
-    -fx-pref-width: 13.35em;
-    -fx-max-width: 13.35em;
-    -fx-min-width: 13.35em;
     -fx-padding: 0;
 }
 
