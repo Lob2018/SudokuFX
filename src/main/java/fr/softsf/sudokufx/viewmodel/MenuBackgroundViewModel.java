@@ -71,9 +71,16 @@ public class MenuBackgroundViewModel {
     private final StringBinding backgroundImageRoleDescription;
     private final StringBinding backgroundImageText;
 
+    private final StringBinding backgroundOpacityAccessibleText;
+    private final StringBinding backgroundOpacityTooltip;
+    private final StringBinding backgroundOpacityRoleDescription;
+    private final StringBinding backgroundOpacityText;
+
     private final StringBinding backgroundColorAccessibleText;
     private final StringBinding backgroundColorTooltip;
     private final StringBinding backgroundColorRoleDescription;
+
+    private boolean isOpaqueMode = false;
 
     public MenuBackgroundViewModel() {
         this.imageUtils = new ImageUtils();
@@ -102,6 +109,13 @@ public class MenuBackgroundViewModel {
                         "menu.background.button.image.accessibility", ROLE_SUBMENU_OPTION);
         backgroundImageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
         backgroundImageText = createStringBinding("menu.background.button.image.text");
+        backgroundOpacityAccessibleText =
+                createStringBinding("menu.background.button.opacity.accessibility");
+        backgroundOpacityTooltip =
+                createFormattedBinding(
+                        "menu.background.button.opacity.accessibility", ROLE_SUBMENU_OPTION);
+        backgroundOpacityRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        backgroundOpacityText = createStringBinding("menu.background.button.opacity.text");
         backgroundColorAccessibleText =
                 createStringBinding("menu.background.button.color.accessibility");
         backgroundColorTooltip =
@@ -196,6 +210,22 @@ public class MenuBackgroundViewModel {
         return backgroundImageText;
     }
 
+    public StringBinding backgroundOpacityAccessibleTextProperty() {
+        return backgroundOpacityAccessibleText;
+    }
+
+    public StringBinding backgroundOpacityTooltipProperty() {
+        return backgroundOpacityTooltip;
+    }
+
+    public StringBinding backgroundOpacityRoleDescriptionProperty() {
+        return backgroundOpacityRoleDescription;
+    }
+
+    public StringBinding backgroundOpacityTextProperty() {
+        return backgroundOpacityText;
+    }
+
     public StringBinding backgroundColorAccessibleTextProperty() {
         return backgroundColorAccessibleText;
     }
@@ -209,25 +239,38 @@ public class MenuBackgroundViewModel {
     }
 
     /**
-     * Initializes the GridPane background with either a predefined color or image. If a color is
-     * defined, applies it and updates the ColorPicker. If an image path is defined, loads and
-     * applies the image asynchronously.
+     * Initializes the GridPane background with settings from database. Loads and applies saved
+     * background configuration including color, image, and grid transparency.
      *
-     * @param sudokuFX The GridPane to update.
-     * @param menuBackgroundButtonColor The ColorPicker to update with the color value.
-     * @param toaster The toaster for user notifications.
-     * @param spinner The spinner to indicate loading state.
+     * <p>This method performs the following initialization steps:
+     *
+     * <ul>
+     *   <li>Retrieves and applies saved background color from database
+     *   <li>Loads and applies saved background image if configured
+     *   <li>Sets grid transparency mode based on user preferences
+     *   <li>Updates UI components (ColorPicker, etc.) with current values
+     * </ul>
+     *
+     * @param sudokuFX The GridPane to initialize with background settings
+     * @param menuBackgroundButtonColor The ColorPicker to sync with current color value
+     * @param toaster The toaster component for user notifications during image loading
+     * @param spinner The spinner component to indicate loading state during operations
+     * @see #setColorFromModel(GridPane, ColorPicker, String)
+     * @see #handleFileImageChooser(File, ToasterVBox, SpinnerGridPane, GridPane)
+     * @see #setOpaqueMode(boolean)
      */
     public void init(
             GridPane sudokuFX,
             ColorPicker menuBackgroundButtonColor,
             ToasterVBox toaster,
             SpinnerGridPane spinner) {
-        // TODO: SERVICE GET & SET COLOR OR IMAGE
+        // TODO: SERVICE GET & SET COLOR OR IMAGE AND GRID TRANSPARENCY
         // IF COLOR
         setColorFromModel(sudokuFX, menuBackgroundButtonColor, "99b3ffcd");
         // IF IMAGE
         handleFileImageChooser(new File("C:\\Users"), toaster, spinner, sudokuFX);
+        // IF GRID TRANSPARENCY
+        setOpaqueMode(true);
     }
 
     /**
@@ -422,5 +465,29 @@ public class MenuBackgroundViewModel {
                             true);
                     spinner.showSpinner(false);
                 });
+    }
+
+    /**
+     * Toggles grid opacity mode and returns the new state.
+     *
+     * @return true if opaque mode is now active, false if transparent
+     */
+    public boolean toggleGridOpacity() {
+        isOpaqueMode = !isOpaqueMode;
+        return isOpaqueMode;
+    }
+
+    /**
+     * Sets the grid opacity mode.
+     *
+     * @param opaque true for opaque mode, false for transparent
+     */
+    private void setOpaqueMode(boolean opaque) {
+        this.isOpaqueMode = opaque;
+    }
+
+    /** Gets the grid opacity mode. */
+    public boolean getOpaqueMode() {
+        return this.isOpaqueMode;
     }
 }

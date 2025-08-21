@@ -15,6 +15,7 @@ import javafx.beans.binding.Bindings;
 import javafx.beans.binding.BooleanBinding;
 import javafx.beans.binding.DoubleBinding;
 import javafx.beans.binding.StringBinding;
+import javafx.collections.ObservableList;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -184,6 +185,8 @@ public final class DefaultView implements IMainView {
     @FXML private Label menuBackgroundButtonBackgroundText;
     @FXML private Button menuBackgroundButtonImage;
     @FXML private Label menuBackgroundButtonImageText;
+    @FXML private Button menuBackgroundButtonOpacity;
+    @FXML private Label menuBackgroundButtonOpacityText;
     @FXML private ColorPicker menuBackgroundButtonColor;
 
     private Timeline hideMiniMenuTimeline;
@@ -290,10 +293,16 @@ public final class DefaultView implements IMainView {
 
     /**
      * Sets up bindings between the background menu UI components and menuBackgroundViewModel.
+     * Initializes the background settings from database and applies them to the UI.
      *
-     * <p>Binds accessibility texts, tooltips, role descriptions, labels, and synchronizes the
-     * background color picker changes with the ViewModel to update and apply the background color
-     * dynamically.
+     * <p>This method performs the following operations:
+     *
+     * <ul>
+     *   <li>Binds accessibility texts, tooltips, role descriptions, and labels
+     *   <li>Synchronizes background color picker changes with the ViewModel
+     *   <li>Initializes background settings (color, image, grid transparency) from database
+     *   <li>Applies initial grid opacity mode to the UI components
+     * </ul>
      */
     private void backgroundMenuInitialization() {
         menuMaxiButtonBackground
@@ -345,6 +354,19 @@ public final class DefaultView implements IMainView {
         menuBackgroundButtonImage
                 .accessibleRoleDescriptionProperty()
                 .bind(menuBackgroundViewModel.backgroundImageRoleDescriptionProperty());
+        menuBackgroundButtonOpacityText
+                .textProperty()
+                .bind(menuBackgroundViewModel.backgroundOpacityTextProperty());
+        menuBackgroundButtonOpacity
+                .accessibleTextProperty()
+                .bind(menuBackgroundViewModel.backgroundOpacityAccessibleTextProperty());
+        menuBackgroundButtonOpacity
+                .getTooltip()
+                .textProperty()
+                .bind(menuBackgroundViewModel.backgroundOpacityTooltipProperty());
+        menuBackgroundButtonOpacity
+                .accessibleRoleDescriptionProperty()
+                .bind(menuBackgroundViewModel.backgroundOpacityRoleDescriptionProperty());
         menuBackgroundButtonColor
                 .accessibleTextProperty()
                 .bind(menuBackgroundViewModel.backgroundColorAccessibleTextProperty());
@@ -362,6 +384,7 @@ public final class DefaultView implements IMainView {
                                 menuBackgroundViewModel.updateBackgroundColorAndApply(
                                         sudokuFX, newColor));
         menuBackgroundViewModel.init(sudokuFX, menuBackgroundButtonColor, toaster, spinner);
+        applyOpaqueMode(menuBackgroundViewModel.getOpaqueMode());
     }
 
     /**
@@ -911,6 +934,41 @@ public final class DefaultView implements IMainView {
             menuBackgroundViewModel.handleFileImageChooser(
                     selectedFile, toaster, spinner, sudokuFX);
         }
+    }
+
+    /** Handles grid transparency toggle button action. */
+    @FXML
+    private void handleGridOpacity() {
+        boolean isOpaque = menuBackgroundViewModel.toggleGridOpacity();
+        applyOpaqueMode(isOpaque);
+    }
+
+    /**
+     * Applies opaque or transparent styling to the sudoku grid and its cells. Adds/removes the
+     * 'opaque-mode' CSS class from both container and cells.
+     *
+     * @param opaque true to apply opaque styling (solid background), false to apply transparent
+     *     styling (see-through background)
+     */
+    private void applyOpaqueMode(boolean opaque) {
+        ObservableList<String> classes = sudokuFXGridPane.getStyleClass();
+        if (opaque) {
+            classes.add("opaque-mode");
+        } else {
+            classes.remove("opaque-mode");
+        }
+        Platform.runLater(
+                () ->
+                        sudokuFXGridPane
+                                .lookupAll(".sudokuFXGridCell")
+                                .forEach(
+                                        cell -> {
+                                            if (opaque) {
+                                                cell.getStyleClass().add("opaque-mode");
+                                            } else {
+                                                cell.getStyleClass().remove("opaque-mode");
+                                            }
+                                        }));
     }
 
     /**

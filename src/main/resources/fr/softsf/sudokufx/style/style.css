@@ -109,6 +109,14 @@
     -fx-text-fill: black;
 }
 
+.sudokuFXGridPaneContainer.opaque-mode {
+    -fx-background-color: black;
+}
+
+.sudokuFXGridCell.opaque-mode {
+    -fx-background-color: white;
+}
+
 .sudokuFXGridCellNonEditable {
     -fx-pref-width: 3.02em;
     -fx-pref-height: 3.02em;
