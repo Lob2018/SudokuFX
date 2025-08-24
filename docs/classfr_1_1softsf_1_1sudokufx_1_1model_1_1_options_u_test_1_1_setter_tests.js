@@ -1,0 +1,8 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests =
+[
+    [ "givenBooleanValue_whenSettingIsImageFlag_thenIsImageFlagIsUpdated", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#abef8c39683d7bb4915ff3531ea03e863", null ],
+    [ "givenInvalidHexColor_whenSettingHexColor_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#a213df217d3f84dda6e99763c5712689e", null ],
+    [ "givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ae90187a06ee81a6e30bfddbed25010e5", null ],
+    [ "givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#a6dbe30709f1ebbe60587a641ea8c630c", null ],
+    [ "givenValidImagePath_whenSettingImagePath_thenImagePathIsUpdated", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ad9c0d6437b6fd72eb6ab71e6282046f5", null ]
+];

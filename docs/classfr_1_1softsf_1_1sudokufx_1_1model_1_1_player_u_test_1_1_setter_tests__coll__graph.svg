@@ -68,21 +68,21 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingIsselected</text>
 <text text-anchor="start" x="14" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenFieldIsUpdated()</text>
 <text text-anchor="start" x="4" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullBackground</text>
-<text text-anchor="start" x="14" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingBackgroundid</text>
-<text text-anchor="start" x="14" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenNullPointerExceptionIsThrown()</text>
+<text text-anchor="start" x="14" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullGames</text>
+<text text-anchor="start" x="14" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingGames_thenGames</text>
+<text text-anchor="start" x="14" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsInitializedAsEmpty()</text>
 <text text-anchor="start" x="4" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullGames</text>
-<text text-anchor="start" x="14" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingGames_thenGames</text>
-<text text-anchor="start" x="14" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsInitializedAsEmpty()</text>
+<text text-anchor="start" x="14" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullMenu</text>
+<text text-anchor="start" x="14" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingMenuid_thenNull</text>
+<text text-anchor="start" x="14" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">PointerExceptionIsThrown()</text>
 <text text-anchor="start" x="4" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullMenu</text>
-<text text-anchor="start" x="14" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingMenuid_thenNull</text>
-<text text-anchor="start" x="14" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">PointerExceptionIsThrown()</text>
+<text text-anchor="start" x="14" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullName</text>
+<text text-anchor="start" x="14" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingName_thenNullPointer</text>
+<text text-anchor="start" x="14" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionIsThrown()</text>
 <text text-anchor="start" x="4" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullName</text>
-<text text-anchor="start" x="14" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingName_thenNullPointer</text>
-<text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionIsThrown()</text>
+<text text-anchor="start" x="14" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullOptions</text>
+<text text-anchor="start" x="14" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingOptionsid</text>
+<text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenNullPointerExceptionIsThrown()</text>
 <text text-anchor="start" x="4" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="14" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullPlayerLanguage</text>
 <text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingPlayerlanguageid</text>
@@ -92,17 +92,17 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingUpdatedat</text>
 <text text-anchor="start" x="14" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenNullPointerExceptionIsThrown()</text>
 <text text-anchor="start" x="4" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidBackground</text>
-<text text-anchor="start" x="14" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingBackgroundid</text>
-<text text-anchor="start" x="14" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenFieldIsUpdated()</text>
+<text text-anchor="start" x="14" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidMenu</text>
+<text text-anchor="start" x="14" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingMenuid_thenField</text>
+<text text-anchor="start" x="14" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsUpdated()</text>
 <text text-anchor="start" x="4" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidMenu</text>
-<text text-anchor="start" x="14" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingMenuid_thenField</text>
+<text text-anchor="start" x="14" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidName</text>
+<text text-anchor="start" x="14" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingName_thenField</text>
 <text text-anchor="start" x="14" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsUpdated()</text>
 <text text-anchor="start" x="4" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="14" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidName</text>
-<text text-anchor="start" x="14" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingName_thenField</text>
-<text text-anchor="start" x="14" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsUpdated()</text>
+<text text-anchor="start" x="14" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidOptions</text>
+<text text-anchor="start" x="14" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingOptionsid</text>
+<text text-anchor="start" x="14" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenFieldIsUpdated()</text>
 <text text-anchor="start" x="4" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="14" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidPlayerLanguage</text>
 <text text-anchor="start" x="14" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSettingPlayerlanguageid</text>

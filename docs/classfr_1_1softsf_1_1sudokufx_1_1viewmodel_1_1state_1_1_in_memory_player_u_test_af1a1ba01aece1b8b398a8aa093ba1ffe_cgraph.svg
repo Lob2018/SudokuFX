@@ -69,7 +69,7 @@ var sectionId = 'dynsection-5';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a35c4a2684bf2aa95aedf2c52bcda51d0" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#aad62ed22d68c324c6876eb7d190fde26" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="412.25,-82 225.25,-82 225.25,-50 412.25,-50 412.25,-82"/>
 <text text-anchor="start" x="233.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
 <text text-anchor="middle" x="318.75" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayerUTest.createPlayerDto</text>
@@ -88,10 +88,10 @@ var sectionId = 'dynsection-5';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a21e883aa550a8f5e0391bd780ccb7396" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="654.75,-132 457.25,-132 457.25,-100 654.75,-100 654.75,-132"/>
-<text text-anchor="start" x="465.25" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="middle" x="556" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayerUTest.defaultBackground</text>
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#abc79b878a9ce003ea68068b78b4ecc72" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="640.88,-132 471.12,-132 471.12,-100 640.88,-100 640.88,-132"/>
+<text text-anchor="start" x="479.12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="middle" x="556" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayerUTest.defaultMenu</text>
 </a>
 </g>
 </g>
@@ -107,10 +107,10 @@ var sectionId = 'dynsection-5';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#abc79b878a9ce003ea68068b78b4ecc72" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="640.88,-82 471.12,-82 471.12,-50 640.88,-50 640.88,-82"/>
-<text text-anchor="start" x="479.12" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="middle" x="556" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayerUTest.defaultMenu</text>
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#ad908b7ff73c3e6adb04e23dba6862024" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="#666666" points="645.75,-82 466.25,-82 466.25,-50 645.75,-50 645.75,-82"/>
+<text text-anchor="start" x="474.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="middle" x="556" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayerUTest.defaultOptions</text>
 </a>
 </g>
 </g>
@@ -118,8 +118,8 @@ var sectionId = 'dynsection-5';
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M412.73,-66C428.13,-66 444.11,-66 459.57,-66"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="459.2,-69.5 469.2,-66 459.2,-62.5 459.2,-69.5"/>
+<path fill="none" stroke="#63b8ff" d="M412.73,-66C426.37,-66 440.48,-66 454.27,-66"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="454.26,-69.5 464.26,-66 454.25,-62.5 454.26,-69.5"/>
 </a>
 </g>
 </g>

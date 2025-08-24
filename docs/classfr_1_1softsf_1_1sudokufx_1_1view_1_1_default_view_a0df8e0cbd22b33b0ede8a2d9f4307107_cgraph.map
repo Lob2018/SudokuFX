@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.DefaultView.optionsMenuInitialization" name="fr.softsf.sudokufx.view.DefaultView.optionsMenuInitialization">
+<area shape="rect" id="Node000001" title="Sets up bindings between the options menu UI components and menuOptionsViewModel." alt="" coords="5,5,244,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3dd02ff5cf869a084c95b35937827893" title="Applies opaque or transparent styling to the sudoku grid and its cells." alt="" coords="292,5,495,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,24,276,24,276,29,244,29"/>
+</map>

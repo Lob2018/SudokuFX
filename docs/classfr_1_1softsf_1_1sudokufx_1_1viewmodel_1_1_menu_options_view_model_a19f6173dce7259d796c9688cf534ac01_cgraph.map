@@ -1,0 +1,29 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.loadImage" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.loadImage">
+<area shape="rect" id="Node000001" title="Starts the asynchronous image loading and resizing task." alt="" coords="5,139,232,181"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="600,72,869,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,136,209,104,244,90,279,79,356,66,436,61,513,63,584,68,584,73,513,68,436,67,357,71,280,84,245,95,212,109,154,140"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a834a300defa70fe876c0bfb4a93ab8bd" title="Called upon successful completion of the image loading task." alt="" coords="294,93,538,152"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="232,143,278,137,279,143,232,148"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#a170661e162609697b2bd6e2cd9a22b60" title="Shows or hides the spinner." alt="" coords="622,205,847,248"/>
+<area shape="poly" id="edge16_Node000001_Node000010" title=" " alt="" coords="158,179,215,207,280,228,364,241,449,245,532,244,606,240,607,245,532,250,449,251,363,246,279,233,213,212,156,184"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab53f60c10a9810b5df500217c14b9539" title="Called when the image loading task fails." alt="" coords="280,176,552,219"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="232,172,264,176,264,181,232,177"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a7df4872b0cf0eeb5cd3a04ce7ccb0fef" title="Sets the accessibility text for the toast based on its level." alt="" coords="917,72,1187,115"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="870,91,902,91,902,96,870,96"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a1f7607f18913c940c16c9de28f3e7ae7" title="Sets the style of the toast based on its level." alt="" coords="917,5,1187,48"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="839,69,932,49,933,54,840,74"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#abd2310564b394c59530d5e7b2a0d0776" title="Sets a timer to automatically remove the toast after a specified duration." alt="" coords="917,139,1187,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="840,113,933,132,932,138,839,118"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a67957eac2367e7b8018ef0d2ce354bef" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="1235,72,1504,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1187,91,1219,91,1219,96,1187,96"/>
+<area shape="rect" id="Node000006" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a43cd66f6e8b04c4873f35e51fd57a36d" title=" " alt="" coords="1257,5,1482,48"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1187,24,1242,24,1242,29,1187,29"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="538,109,585,104,585,110,539,114"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ac901d34317be26e1fd391a134f42e7bf" title="Schedules the current toast for removal after a short delay." alt="" coords="600,139,869,181"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="539,134,585,140,585,145,538,140"/>
+<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="525,150,553,162,577,177,601,191,619,198,617,203,599,196,575,181,551,166,523,155"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="870,157,902,157,902,163,870,163"/>
+<area shape="poly" id="edge13_Node000011_Node000002" title=" " alt="" coords="523,173,551,162,565,153,574,143,584,134,599,124,613,118,615,123,601,129,587,138,578,147,568,157,553,166,525,178"/>
+<area shape="poly" id="edge14_Node000011_Node000009" title=" " alt="" coords="552,179,584,175,585,180,553,184"/>
+<area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="553,207,607,212,606,218,552,213"/>
+</map>

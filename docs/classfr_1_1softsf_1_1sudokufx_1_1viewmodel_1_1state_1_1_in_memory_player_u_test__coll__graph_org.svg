@@ -12,52 +12,52 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="none" points="368,-404 150.5,-404 150.5,0 368,0 368,-404"/>
+<polygon fill="#999999" stroke="none" points="349.62,-404 168.88,-404 168.88,0 349.62,0 349.62,-404"/>
 <text text-anchor="start" x="182.38" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
 <text text-anchor="start" x="210.5" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayerUTest</text>
-<text text-anchor="start" x="156" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="164.5" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
-<text text-anchor="start" x="164.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
-<text text-anchor="start" x="154.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="164.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">void currentPlayerProperty</text>
-<text text-anchor="start" x="164.5" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shouldReturnObjectProperty()</text>
-<text text-anchor="start" x="154.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="164.5" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenException</text>
-<text text-anchor="start" x="164.5" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitializingPlayer</text>
-<text text-anchor="start" x="164.5" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogErrorIsProduced</text>
-<text text-anchor="start" x="164.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">_withoutCallingPlatformExit()</text>
-<text text-anchor="start" x="154.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="164.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullCurrentPlayer</text>
-<text text-anchor="start" x="164.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenConstructed_thenInitialize</text>
-<text text-anchor="start" x="164.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">Called()</text>
-<text text-anchor="start" x="154.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="164.5" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenSetCurrentPlayer</text>
-<text text-anchor="start" x="164.5" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenCalled_thenPlayerIsUpdated()</text>
-<text text-anchor="start" x="154.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="164.5" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidPlayer</text>
-<text text-anchor="start" x="164.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenConstructed_thenPlayer</text>
-<text text-anchor="start" x="164.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsLoaded()</text>
-<text text-anchor="start" x="154.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="164.5" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setup()</text>
-<text text-anchor="start" x="154.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="164.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tearDown()</text>
-<text text-anchor="start" x="156" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="164.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createPlayerDto</text>
-<text text-anchor="start" x="164.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Long playerId, String</text>
-<text text-anchor="start" x="164.5" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerName, Boolean isSelected,</text>
-<text text-anchor="start" x="164.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PlayerLanguageDto playerLanguage,</text>
-<text text-anchor="start" x="164.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BackgroundDto options, MenuDto menu)</text>
-<text text-anchor="start" x="156" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="164.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundDto defaultBackground()</text>
-<text text-anchor="start" x="156" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="164.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuDto defaultMenu()</text>
-<text text-anchor="start" x="156" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="164.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageDto default</text>
-<text text-anchor="start" x="164.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage()</text>
-<polygon fill="#666666" stroke="#666666" points="150.5,-374 150.5,-374 368,-374 368,-374 150.5,-374"/>
-<polygon fill="#666666" stroke="#666666" points="150.5,-346 150.5,-346 162.5,-346 162.5,-346 150.5,-346"/>
-<polygon fill="#666666" stroke="#666666" points="162.5,-346 162.5,-346 368,-346 368,-346 162.5,-346"/>
-<polygon fill="none" stroke="#666666" points="150.5,0 150.5,-404 368,-404 368,0 150.5,0"/>
+<text text-anchor="start" x="174.38" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="182.88" y="-362.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
+<text text-anchor="start" x="182.88" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
+<text text-anchor="start" x="172.88" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="182.88" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">void currentPlayerProperty</text>
+<text text-anchor="start" x="182.88" y="-322.5" font-family="Helvetica,sans-Serif" font-size="10.00">_shouldReturnObjectProperty()</text>
+<text text-anchor="start" x="172.88" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="182.88" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenException</text>
+<text text-anchor="start" x="182.88" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitializingPlayer</text>
+<text text-anchor="start" x="182.88" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogErrorIsProduced</text>
+<text text-anchor="start" x="182.88" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">_withoutCallingPlatformExit()</text>
+<text text-anchor="start" x="172.88" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="182.88" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullCurrentPlayer</text>
+<text text-anchor="start" x="182.88" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenConstructed_thenInitialize</text>
+<text text-anchor="start" x="182.88" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">Called()</text>
+<text text-anchor="start" x="172.88" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="182.88" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenSetCurrentPlayer</text>
+<text text-anchor="start" x="182.88" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenCalled_thenPlayerIsUpdated()</text>
+<text text-anchor="start" x="172.88" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="182.88" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidPlayer</text>
+<text text-anchor="start" x="182.88" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenConstructed_thenPlayer</text>
+<text text-anchor="start" x="182.88" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsLoaded()</text>
+<text text-anchor="start" x="172.88" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="182.88" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setup()</text>
+<text text-anchor="start" x="172.88" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="182.88" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tearDown()</text>
+<text text-anchor="start" x="174.38" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="182.88" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createPlayerDto</text>
+<text text-anchor="start" x="182.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Long playerId, String</text>
+<text text-anchor="start" x="182.88" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerName, Boolean isSelected,</text>
+<text text-anchor="start" x="182.88" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PlayerLanguageDto playerLanguage,</text>
+<text text-anchor="start" x="182.88" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> OptionsDto options, MenuDto menu)</text>
+<text text-anchor="start" x="174.38" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="182.88" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuDto defaultMenu()</text>
+<text text-anchor="start" x="174.38" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="182.88" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsDto defaultOptions()</text>
+<text text-anchor="start" x="174.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="182.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageDto default</text>
+<text text-anchor="start" x="182.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage()</text>
+<polygon fill="#666666" stroke="#666666" points="168.88,-374 168.88,-374 349.62,-374 349.62,-374 168.88,-374"/>
+<polygon fill="#666666" stroke="#666666" points="168.88,-346 168.88,-346 180.88,-346 180.88,-346 168.88,-346"/>
+<polygon fill="#666666" stroke="#666666" points="180.88,-346 180.88,-346 349.62,-346 349.62,-346 180.88,-346"/>
+<polygon fill="none" stroke="#666666" points="168.88,0 168.88,-404 349.62,-404 349.62,0 168.88,0"/>
 </a>
 </g>
 </g>
@@ -255,8 +255,8 @@
 <g id="edge6_Node000001_Node000007" class="edge">
 <title>Node7&#45;&gt;Node1</title>
 <g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M381.04,-452.24C375.27,-440.43 369.24,-428.09 363.08,-415.49"/>
-<polygon fill="none" stroke="#63b8ff" points="363.05,-415.44 356.83,-411.8 357.79,-404.66 364.01,-408.29 363.05,-415.44"/>
+<path fill="none" stroke="#63b8ff" d="M381.04,-452.24C372.82,-435.43 364.08,-417.54 355.19,-399.35"/>
+<polygon fill="none" stroke="#63b8ff" points="355.16,-399.27 348.93,-395.64 349.89,-388.49 356.12,-392.13 355.16,-399.27"/>
 </a>
 </g>
 <text text-anchor="middle" x="408.96" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;inMemoryPlayer</text>

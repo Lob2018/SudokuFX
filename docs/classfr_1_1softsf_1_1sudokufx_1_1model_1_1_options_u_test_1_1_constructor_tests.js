@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_constructor_tests =
+[
+    [ "givenNoParameters_whenCreatingOptionsWithDefaultConstructor_thenOptionsIsCreatedWithDefaults", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_constructor_tests.html#aa2e5240a94f322d1f3c99e9079bf2361", null ],
+    [ "givenValidParameters_whenCreatingOptionsWithConstructor_thenOptionsIsCreatedCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_constructor_tests.html#aef205dcc5610cf98f62120c0d2b85fe5", null ]
+];

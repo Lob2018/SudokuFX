@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.Options.Options" name="fr.softsf.sudokufx.model.Options.Options">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,172,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates hex color format (#RGB or #RRGGBB)." alt="" coords="224,5,392,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,45,208,39,209,44,172,50"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#adf5e9b13961bc76afa7d44d0d83550ce" title="Validates image path is not null." alt="" coords="220,72,396,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,70,204,75,203,80,171,75"/>
+</map>

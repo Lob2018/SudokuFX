@@ -1,9 +1,9 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test =
 [
-    [ "createPlayerDto", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a35c4a2684bf2aa95aedf2c52bcda51d0", null ],
+    [ "createPlayerDto", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#aad62ed22d68c324c6876eb7d190fde26", null ],
     [ "currentPlayerProperty_shouldReturnObjectProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a399b4a50318eee934f65cf070f18a586", null ],
-    [ "defaultBackground", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a21e883aa550a8f5e0391bd780ccb7396", null ],
     [ "defaultMenu", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#abc79b878a9ce003ea68068b78b4ecc72", null ],
+    [ "defaultOptions", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#ad908b7ff73c3e6adb04e23dba6862024", null ],
     [ "defaultPlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a8adb82a964eebc6efa58f7f9691fcc07", null ],
     [ "givenException_whenInitializingPlayer_thenLogErrorIsProduced_withoutCallingPlatformExit", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#ab7cb1f9658a6f370942ece2478c5f99f", null ],
     [ "givenNullCurrentPlayer_whenConstructed_thenInitializeCalled", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#ab649278d09b47fa06190a3ab4bff3564", null ],

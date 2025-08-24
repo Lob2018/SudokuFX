@@ -1,11 +1,11 @@
 <map id="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest.givenNullCurrentPlayer_whenConstructed_thenInitializeCalled" name="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest.givenNullCurrentPlayer_whenConstructed_thenInitializeCalled">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,64,290,123"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a35c4a2684bf2aa95aedf2c52bcda51d0" title=" " alt="" coords="338,72,587,115"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#aad62ed22d68c324c6876eb7d190fde26" title=" " alt="" coords="338,72,587,115"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,91,322,91,322,96,290,96"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a21e883aa550a8f5e0391bd780ccb7396" title=" " alt="" coords="647,5,910,48"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#abc79b878a9ce003ea68068b78b4ecc72" title=" " alt="" coords="666,5,892,48"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="566,69,659,49,660,54,567,74"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#abc79b878a9ce003ea68068b78b4ecc72" title=" " alt="" coords="666,72,892,115"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="588,91,650,91,650,96,588,96"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#ad908b7ff73c3e6adb04e23dba6862024" title=" " alt="" coords="659,72,898,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="588,91,643,91,643,96,588,96"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a8adb82a964eebc6efa58f7f9691fcc07" title=" " alt="" coords="635,139,922,181"/>
 <area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="567,113,660,132,659,138,566,118"/>
 </map>

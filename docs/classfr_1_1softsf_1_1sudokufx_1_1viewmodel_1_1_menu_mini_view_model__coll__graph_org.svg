@@ -17,31 +17,31 @@
 <text text-anchor="start" x="40.88" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel</text>
 <text text-anchor="start" x="5.5" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-778.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backgroundAccessibleText</text>
+<text text-anchor="start" x="14" y="-778.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupAccessibleText</text>
 <text text-anchor="start" x="5.5" y="-762.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-762.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-750.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backgroundTooltip</text>
+<text text-anchor="start" x="14" y="-750.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupTooltip</text>
 <text text-anchor="start" x="5.5" y="-734.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-734.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-722.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupAccessibleText</text>
+<text text-anchor="start" x="14" y="-722.5" font-family="Helvetica,sans-Serif" font-size="10.00"> helpAccessibleText</text>
 <text text-anchor="start" x="5.5" y="-706.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-706.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-694.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupTooltip</text>
+<text text-anchor="start" x="14" y="-694.5" font-family="Helvetica,sans-Serif" font-size="10.00"> helpTooltip</text>
 <text text-anchor="start" x="5.5" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00"> helpAccessibleText</text>
+<text text-anchor="start" x="14" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00"> languageAccessibleText</text>
 <text text-anchor="start" x="5.5" y="-650.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-650.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-638.5" font-family="Helvetica,sans-Serif" font-size="10.00"> helpTooltip</text>
+<text text-anchor="start" x="14" y="-638.5" font-family="Helvetica,sans-Serif" font-size="10.00"> languageIso</text>
 <text text-anchor="start" x="5.5" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00"> languageAccessibleText</text>
+<text text-anchor="start" x="14" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00"> languageTooltip</text>
 <text text-anchor="start" x="5.5" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00"> languageIso</text>
+<text text-anchor="start" x="14" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsAccessibleText</text>
 <text text-anchor="start" x="5.5" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00"> languageTooltip</text>
+<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsTooltip</text>
 <text text-anchor="start" x="5.5" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
 <text text-anchor="start" x="14" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerAccessibleText</text>
@@ -67,32 +67,32 @@
 <text text-anchor="start" x="4" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel()</text>
 <text text-anchor="start" x="4" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding options</text>
-<text text-anchor="start" x="14" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
+<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupAccessible</text>
+<text text-anchor="start" x="14" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="4" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding options</text>
-<text text-anchor="start" x="14" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">TooltipProperty()</text>
+<text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupTooltip</text>
+<text text-anchor="start" x="14" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
 <text text-anchor="start" x="4" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupAccessible</text>
+<text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding helpAccessible</text>
 <text text-anchor="start" x="14" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="4" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupTooltip</text>
+<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding helpTooltip</text>
 <text text-anchor="start" x="14" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
 <text text-anchor="start" x="4" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding helpAccessible</text>
+<text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding languageAccessible</text>
 <text text-anchor="start" x="14" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="4" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding helpTooltip</text>
+<text text-anchor="start" x="14" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding languageTooltip</text>
 <text text-anchor="start" x="14" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
 <text text-anchor="start" x="4" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding languageAccessible</text>
-<text text-anchor="start" x="14" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
+<text text-anchor="start" x="14" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding menuMiniButton</text>
+<text text-anchor="start" x="14" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">LanguageIsoTextProperty()</text>
 <text text-anchor="start" x="4" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding languageTooltip</text>
-<text text-anchor="start" x="14" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="14" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsAccessible</text>
+<text text-anchor="start" x="14" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="4" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding menuMiniButton</text>
-<text text-anchor="start" x="14" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">LanguageIsoTextProperty()</text>
+<text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsTooltip</text>
+<text text-anchor="start" x="14" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
 <text text-anchor="start" x="14" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 6 more...</text>
 <text text-anchor="start" x="5.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>

@@ -59,102 +59,102 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="none" points="366.12,-864 139.62,-864 139.62,0 366.12,0 366.12,-864"/>
+<polygon fill="#999999" stroke="none" points="367.25,-864 138.5,-864 138.5,0 367.25,0 367.25,-864"/>
 <text text-anchor="start" x="198.5" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="239" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player</text>
-<text text-anchor="start" x="145.12" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime createdat</text>
-<text text-anchor="start" x="145.12" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; games</text>
-<text text-anchor="start" x="145.12" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isselected</text>
-<text text-anchor="start" x="145.12" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">String name</text>
-<text text-anchor="start" x="145.12" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long playerid</text>
-<text text-anchor="start" x="145.12" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime updatedat</text>
-<text text-anchor="start" x="145.12" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="153.62" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BACKGROUNID_MUST_NOT</text>
-<text text-anchor="start" x="153.62" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="145.12" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="153.62" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CREATEDAT_MUST_NOT</text>
-<text text-anchor="start" x="153.62" y="-662.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="145.12" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="153.62" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_MUST_NOT_BE_NULL</text>
-<text text-anchor="start" x="145.12" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="153.62" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> NAME_MUST_NOT_BE_NULL</text>
-<text text-anchor="start" x="145.12" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="153.62" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PLAYERLANGUAGEID_MUST</text>
-<text text-anchor="start" x="153.62" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NOT_BE_NULL</text>
-<text text-anchor="start" x="145.12" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="153.62" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00"> UPDATEDAT_MUST_NOT</text>
-<text text-anchor="start" x="153.62" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="143.62" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player(Long playerid,</text>
-<text text-anchor="start" x="153.62" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull PlayerLanguage</text>
-<text text-anchor="start" x="153.62" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerlanguageid, @Nonnull</text>
-<text text-anchor="start" x="153.62" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @NotNull Background backgroundid,</text>
-<text text-anchor="start" x="153.62" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull Menu menuid,</text>
-<text text-anchor="start" x="153.62" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Set&lt; Game &gt; games, @Nonnull @NotNull</text>
-<text text-anchor="start" x="153.62" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String name, boolean isselected, @Nonnull</text>
-<text text-anchor="start" x="153.62" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @NotNull LocalDateTime createdat, @Nonnull</text>
-<text text-anchor="start" x="153.62" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @NotNull LocalDateTime updatedat)</text>
-<text text-anchor="start" x="143.62" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object o)</text>
-<text text-anchor="start" x="143.62" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background getBackgroundid()</text>
-<text text-anchor="start" x="143.62" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime getCreatedat()</text>
-<text text-anchor="start" x="143.62" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; getGames()</text>
-<text text-anchor="start" x="143.62" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsselected()</text>
-<text text-anchor="start" x="143.62" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu getMenuid()</text>
-<text text-anchor="start" x="143.62" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getName()</text>
-<text text-anchor="start" x="143.62" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long getPlayerid()</text>
-<text text-anchor="start" x="143.62" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage getPlayerlanguageid()</text>
-<text text-anchor="start" x="153.62" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
-<text text-anchor="start" x="143.62" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="153.62" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerBuilder</text>
-<text text-anchor="start" x="153.62" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="144" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="153.62" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player()</text>
-<text text-anchor="start" x="145.12" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Background validate</text>
-<text text-anchor="start" x="153.62" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background(Background backgroundid)</text>
-<text text-anchor="start" x="145.12" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">static LocalDateTime</text>
-<text text-anchor="start" x="153.62" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validateCreatedAt(LocalDate</text>
-<text text-anchor="start" x="153.62" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">Time createdat)</text>
-<text text-anchor="start" x="145.12" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Menu validateMenu</text>
-<text text-anchor="start" x="153.62" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Menu menuid)</text>
-<text text-anchor="start" x="145.12" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateName</text>
-<text text-anchor="start" x="153.62" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String name)</text>
-<text text-anchor="start" x="145.12" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerLanguage</text>
-<text text-anchor="start" x="153.62" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validatePlayerLanguage</text>
-<text text-anchor="start" x="153.62" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerLanguage playerlanguageid)</text>
-<text text-anchor="start" x="145.12" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="153.62" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">static LocalDateTime</text>
-<text text-anchor="start" x="153.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validateUpdatedAt(LocalDate</text>
-<text text-anchor="start" x="153.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Time updatedat)</text>
-<polygon fill="#666666" stroke="#666666" points="139.62,-834 139.62,-834 366.12,-834 366.12,-834 139.62,-834"/>
-<polygon fill="#666666" stroke="#666666" points="139.62,-522 139.62,-522 151.62,-522 151.62,-522 139.62,-522"/>
-<polygon fill="#666666" stroke="#666666" points="151.62,-522 151.62,-522 366.12,-522 366.12,-522 151.62,-522"/>
-<polygon fill="none" stroke="#666666" points="139.62,0 139.62,-864 366.12,-864 366.12,0 139.62,0"/>
+<text text-anchor="start" x="144" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime createdat</text>
+<text text-anchor="start" x="144" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; games</text>
+<text text-anchor="start" x="144" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isselected</text>
+<text text-anchor="start" x="144" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">String name</text>
+<text text-anchor="start" x="144" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long playerid</text>
+<text text-anchor="start" x="144" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime updatedat</text>
+<text text-anchor="start" x="144" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="152.5" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BACKGROUNID_MUST_NOT</text>
+<text text-anchor="start" x="152.5" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
+<text text-anchor="start" x="144" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="152.5" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CREATEDAT_MUST_NOT</text>
+<text text-anchor="start" x="152.5" y="-662.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
+<text text-anchor="start" x="144" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="152.5" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="144" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="152.5" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> NAME_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="144" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="152.5" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PLAYERLANGUAGEID_MUST</text>
+<text text-anchor="start" x="152.5" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NOT_BE_NULL</text>
+<text text-anchor="start" x="144" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="152.5" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00"> UPDATEDAT_MUST_NOT</text>
+<text text-anchor="start" x="152.5" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
+<text text-anchor="start" x="142.5" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player(Long playerid,</text>
+<text text-anchor="start" x="152.5" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull PlayerLanguage</text>
+<text text-anchor="start" x="152.5" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerlanguageid, @Nonnull</text>
+<text text-anchor="start" x="152.5" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @NotNull Options optionsid,</text>
+<text text-anchor="start" x="152.5" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull Menu menuid,</text>
+<text text-anchor="start" x="152.5" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Set&lt; Game &gt; games, @Nonnull @NotNull</text>
+<text text-anchor="start" x="152.5" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String name, boolean isselected, </text>
+<text text-anchor="start" x="152.5" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">@Nonnull @NotNull LocalDateTime createdat,</text>
+<text text-anchor="start" x="152.5" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull LocalDateTime updatedat)</text>
+<text text-anchor="start" x="142.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object o)</text>
+<text text-anchor="start" x="142.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime getCreatedat()</text>
+<text text-anchor="start" x="142.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; getGames()</text>
+<text text-anchor="start" x="142.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsselected()</text>
+<text text-anchor="start" x="142.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu getMenuid()</text>
+<text text-anchor="start" x="142.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getName()</text>
+<text text-anchor="start" x="142.5" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options getOptionsid()</text>
+<text text-anchor="start" x="142.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long getPlayerid()</text>
+<text text-anchor="start" x="142.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-270.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage getPlayerlanguageid()</text>
+<text text-anchor="start" x="152.5" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
+<text text-anchor="start" x="142.5" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="152.5" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerBuilder</text>
+<text text-anchor="start" x="152.5" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
+<text text-anchor="start" x="142.88" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="152.5" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player()</text>
+<text text-anchor="start" x="144" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">static LocalDateTime</text>
+<text text-anchor="start" x="152.5" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validateCreatedAt(LocalDate</text>
+<text text-anchor="start" x="152.5" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">Time createdat)</text>
+<text text-anchor="start" x="144" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Menu validateMenu</text>
+<text text-anchor="start" x="152.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Menu menuid)</text>
+<text text-anchor="start" x="144" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateName</text>
+<text text-anchor="start" x="152.5" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String name)</text>
+<text text-anchor="start" x="144" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Options validateOptions</text>
+<text text-anchor="start" x="152.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Options optionsid)</text>
+<text text-anchor="start" x="144" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerLanguage</text>
+<text text-anchor="start" x="152.5" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validatePlayerLanguage</text>
+<text text-anchor="start" x="152.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerLanguage playerlanguageid)</text>
+<text text-anchor="start" x="144" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="152.5" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">static LocalDateTime</text>
+<text text-anchor="start" x="152.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validateUpdatedAt(LocalDate</text>
+<text text-anchor="start" x="152.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Time updatedat)</text>
+<polygon fill="#666666" stroke="#666666" points="138.5,-834 138.5,-834 367.25,-834 367.25,-834 138.5,-834"/>
+<polygon fill="#666666" stroke="#666666" points="138.5,-522 138.5,-522 150.5,-522 150.5,-522 138.5,-522"/>
+<polygon fill="#666666" stroke="#666666" points="150.5,-522 150.5,-522 367.25,-522 367.25,-522 150.5,-522"/>
+<polygon fill="none" stroke="#666666" points="138.5,0 138.5,-864 367.25,-864 367.25,0 138.5,0"/>
 </a>
 </g>
 </g>
@@ -226,20 +226,20 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="none" points="339.88,-1620 165.88,-1620 165.88,-912 339.88,-912 339.88,-1620"/>
 <text text-anchor="start" x="198.5" y="-1606.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="start" x="227" y="-1594.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background</text>
+<text text-anchor="start" x="236" y="-1594.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options</text>
 <text text-anchor="start" x="171.38" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="179.88" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long backgroundid</text>
+<text text-anchor="start" x="179.88" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">String hexcolor</text>
 <text text-anchor="start" x="171.38" y="-1562.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="179.88" y="-1562.5" font-family="Helvetica,sans-Serif" font-size="10.00">String hexcolor</text>
+<text text-anchor="start" x="179.88" y="-1562.5" font-family="Helvetica,sans-Serif" font-size="10.00">String imagepath</text>
 <text text-anchor="start" x="171.38" y="-1546.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="179.88" y="-1546.5" font-family="Helvetica,sans-Serif" font-size="10.00">String imagepath</text>
+<text text-anchor="start" x="179.88" y="-1546.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isimage</text>
 <text text-anchor="start" x="171.38" y="-1530.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="179.88" y="-1530.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isimage</text>
+<text text-anchor="start" x="179.88" y="-1530.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isopaque</text>
 <text text-anchor="start" x="171.38" y="-1514.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="179.88" y="-1514.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isopaque</text>
+<text text-anchor="start" x="179.88" y="-1514.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long optionsid</text>
 <text text-anchor="start" x="171.38" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="179.88" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="179.88" y="-1486.5" font-family="Helvetica,sans-Serif" font-size="10.00"> DEFAULT_HEX_COLOR</text>
@@ -261,7 +261,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="179.88" y="-1334.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="179.88" y="-1322.5" font-family="Helvetica,sans-Serif" font-size="10.00"> INVALID_HEX_COLOR_FORMAT</text>
 <text text-anchor="start" x="169.88" y="-1306.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="179.88" y="-1306.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background(Long backgroundid,</text>
+<text text-anchor="start" x="179.88" y="-1306.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options(Long optionsid,</text>
 <text text-anchor="start" x="179.88" y="-1294.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull String</text>
 <text text-anchor="start" x="179.88" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00"> hexcolor, @Nonnull @NotNull</text>
 <text text-anchor="start" x="179.88" y="-1270.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String imagepath, boolean isimage,</text>
@@ -269,15 +269,15 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="169.88" y="-1242.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="179.88" y="-1242.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object obj)</text>
 <text text-anchor="start" x="169.88" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="179.88" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long getBackgroundid()</text>
+<text text-anchor="start" x="179.88" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getHexcolor()</text>
 <text text-anchor="start" x="169.88" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="179.88" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getHexcolor()</text>
+<text text-anchor="start" x="179.88" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getImagepath()</text>
 <text text-anchor="start" x="169.88" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="179.88" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getImagepath()</text>
+<text text-anchor="start" x="179.88" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsimage()</text>
 <text text-anchor="start" x="169.88" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="179.88" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsimage()</text>
+<text text-anchor="start" x="179.88" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsopaque()</text>
 <text text-anchor="start" x="169.88" y="-1162.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="179.88" y="-1162.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsopaque()</text>
+<text text-anchor="start" x="179.88" y="-1162.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long getOptionsid()</text>
 <text text-anchor="start" x="169.88" y="-1146.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="179.88" y="-1146.5" font-family="Helvetica,sans-Serif" font-size="10.00">int hashCode()</text>
 <text text-anchor="start" x="169.88" y="-1130.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -295,10 +295,10 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="169.88" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="179.88" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00">String toString()</text>
 <text text-anchor="start" x="169.88" y="-1002.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="179.88" y="-1002.5" font-family="Helvetica,sans-Serif" font-size="10.00">static BackgroundBuilder</text>
+<text text-anchor="start" x="179.88" y="-1002.5" font-family="Helvetica,sans-Serif" font-size="10.00">static OptionsBuilder</text>
 <text text-anchor="start" x="179.88" y="-990.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
 <text text-anchor="start" x="170.25" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="179.88" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background()</text>
+<text text-anchor="start" x="179.88" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options()</text>
 <text text-anchor="start" x="171.38" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="179.88" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateHexcolor</text>
 <text text-anchor="start" x="179.88" y="-946.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String hexcolor)</text>
@@ -320,7 +320,7 @@ var sectionId = 'dynsection-0';
 <polygon fill="none" stroke="#63b8ff" points="252.88,-876.61 248.88,-870.61 252.88,-864.61 256.88,-870.61 252.88,-876.61"/>
 </a>
 </g>
-<text text-anchor="middle" x="284.75" y="-884.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;backgroundid</text>
+<text text-anchor="middle" x="275.38" y="-884.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;optionsid</text>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">

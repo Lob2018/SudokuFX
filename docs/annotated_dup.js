@@ -28,11 +28,11 @@ var annotated_dup =
             ] ],
             [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html", [
               [ "mapper", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper.html", [
-                [ "IBackgroundMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_background_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_background_mapper" ],
                 [ "IGameLevelMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper" ],
                 [ "IGameMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_mapper" ],
                 [ "IGridMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper" ],
                 [ "IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper" ],
+                [ "IOptionsMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper" ],
                 [ "IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper" ],
                 [ "IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper" ],
                 [ "MapperUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils" ]
@@ -83,8 +83,6 @@ var annotated_dup =
             [ "ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config" ]
           ] ],
           [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", [
-            [ "Background", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background" ],
-            [ "BackgroundUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background_u_test" ],
             [ "Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game" ],
             [ "GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level" ],
             [ "GameLevelUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_u_test" ],
@@ -93,6 +91,8 @@ var annotated_dup =
             [ "GridUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test" ],
             [ "Menu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu" ],
             [ "MenuUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_u_test" ],
+            [ "Options", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options" ],
+            [ "OptionsUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test" ],
             [ "Player", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player" ],
             [ "PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language" ],
             [ "PlayerLanguageUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test" ],
@@ -103,11 +103,11 @@ var annotated_dup =
             [ "CoordinatorUTest", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test" ]
           ] ],
           [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", [
-            [ "BackgroundRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_background_repository.html", null ],
             [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", null ],
             [ "GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html", null ],
             [ "GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
             [ "MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],
+            [ "OptionsRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html", null ],
             [ "PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", null ],
             [ "PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository" ]
           ] ],
@@ -206,8 +206,6 @@ var annotated_dup =
             [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
             [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],
             [ "HelpViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test" ],
-            [ "MenuBackgroundViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model" ],
-            [ "MenuBackgroundViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_u_test" ],
             [ "MenuHiddenViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model" ],
             [ "MenuLevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model" ],
             [ "MenuLevelViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test" ],
@@ -215,6 +213,8 @@ var annotated_dup =
             [ "MenuMaxiViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model_u_test" ],
             [ "MenuMiniViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model" ],
             [ "MenuNewViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model" ],
+            [ "MenuOptionsViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model" ],
+            [ "MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test" ],
             [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model" ],
             [ "MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model" ],
             [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ]

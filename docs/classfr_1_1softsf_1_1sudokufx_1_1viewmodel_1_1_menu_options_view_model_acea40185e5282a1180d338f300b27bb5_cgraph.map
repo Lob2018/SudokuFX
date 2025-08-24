@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.chooseBackgroundImage" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.chooseBackgroundImage">
+<area shape="rect" id="Node000001" title="Opens file chooser dialog for background image selection." alt="" coords="5,13,319,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ad442b1f5af82ccbe22aab77daf6ded8c" title="Creates configured FileChooser for image files." alt="" coords="367,5,605,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,32,351,32,351,37,319,37"/>
+</map>

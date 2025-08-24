@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 846;
+var viewWidth = 848;
 var viewHeight = 2640;
 var sectionId = 'dynsection-0';
 </script>
@@ -132,112 +132,112 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M67.58,-2080.15C61.05,-1826.14 54.74,-1370.67 78.12,-982 101.18,-598.74 47.25,-484.69 178.88,-124 185.24,-106.55 195.55,-89.1 205.84,-74.22"/>
-<polygon fill="none" stroke="#63b8ff" points="205.75,-74.35 206,-67.14 212.75,-64.6 212.49,-71.81 205.75,-74.35"/>
+<path fill="none" stroke="#63b8ff" d="M67.38,-2080.15C60.61,-1826.15 53.89,-1370.68 77.12,-982 100.03,-598.73 44.88,-484.18 177.88,-124 184.34,-106.48 194.82,-89.02 205.28,-74.14"/>
+<polygon fill="none" stroke="#63b8ff" points="205.23,-74.22 205.54,-67.02 212.31,-64.53 212,-71.74 205.23,-74.22"/>
 </a>
 </g>
-<text text-anchor="middle" x="128" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;mockPlayerLanguage</text>
+<text text-anchor="middle" x="127" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;mockPlayerLanguage</text>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="778.12,-1876 551.62,-1876 551.62,-1012 778.12,-1012 778.12,-1876"/>
-<text text-anchor="start" x="610.5" y="-1862.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="start" x="651" y="-1850.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player</text>
-<text text-anchor="start" x="557.12" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime createdat</text>
-<text text-anchor="start" x="557.12" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; games</text>
-<text text-anchor="start" x="557.12" y="-1802.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1802.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isselected</text>
-<text text-anchor="start" x="557.12" y="-1786.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1786.5" font-family="Helvetica,sans-Serif" font-size="10.00">String name</text>
-<text text-anchor="start" x="557.12" y="-1770.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1770.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long playerid</text>
-<text text-anchor="start" x="557.12" y="-1754.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1754.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime updatedat</text>
-<text text-anchor="start" x="557.12" y="-1738.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1738.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="565.62" y="-1726.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BACKGROUNID_MUST_NOT</text>
-<text text-anchor="start" x="565.62" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="557.12" y="-1698.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1698.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="565.62" y="-1686.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CREATEDAT_MUST_NOT</text>
-<text text-anchor="start" x="565.62" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="557.12" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="565.62" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_MUST_NOT_BE_NULL</text>
-<text text-anchor="start" x="557.12" y="-1630.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1630.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="565.62" y="-1618.5" font-family="Helvetica,sans-Serif" font-size="10.00"> NAME_MUST_NOT_BE_NULL</text>
-<text text-anchor="start" x="557.12" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="565.62" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PLAYERLANGUAGEID_MUST</text>
-<text text-anchor="start" x="565.62" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NOT_BE_NULL</text>
-<text text-anchor="start" x="557.12" y="-1562.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1562.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="565.62" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00"> UPDATEDAT_MUST_NOT</text>
-<text text-anchor="start" x="565.62" y="-1538.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="555.62" y="-1522.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1522.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player(Long playerid,</text>
-<text text-anchor="start" x="565.62" y="-1510.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull PlayerLanguage</text>
-<text text-anchor="start" x="565.62" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerlanguageid, @Nonnull</text>
-<text text-anchor="start" x="565.62" y="-1486.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @NotNull Background backgroundid,</text>
-<text text-anchor="start" x="565.62" y="-1474.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull Menu menuid,</text>
-<text text-anchor="start" x="565.62" y="-1462.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Set&lt; Game &gt; games, @Nonnull @NotNull</text>
-<text text-anchor="start" x="565.62" y="-1450.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String name, boolean isselected, @Nonnull</text>
-<text text-anchor="start" x="565.62" y="-1438.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @NotNull LocalDateTime createdat, @Nonnull</text>
-<text text-anchor="start" x="565.62" y="-1426.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @NotNull LocalDateTime updatedat)</text>
-<text text-anchor="start" x="555.62" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object o)</text>
-<text text-anchor="start" x="555.62" y="-1394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1394.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background getBackgroundid()</text>
-<text text-anchor="start" x="555.62" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime getCreatedat()</text>
-<text text-anchor="start" x="555.62" y="-1362.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1362.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; getGames()</text>
-<text text-anchor="start" x="555.62" y="-1346.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1346.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsselected()</text>
-<text text-anchor="start" x="555.62" y="-1330.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1330.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu getMenuid()</text>
-<text text-anchor="start" x="555.62" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getName()</text>
-<text text-anchor="start" x="555.62" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long getPlayerid()</text>
-<text text-anchor="start" x="555.62" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage getPlayerlanguageid()</text>
-<text text-anchor="start" x="565.62" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
-<text text-anchor="start" x="555.62" y="-1250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="565.62" y="-1250.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerBuilder</text>
-<text text-anchor="start" x="565.62" y="-1238.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="556" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="565.62" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player()</text>
-<text text-anchor="start" x="557.12" y="-1206.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1206.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Background validate</text>
-<text text-anchor="start" x="565.62" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background(Background backgroundid)</text>
-<text text-anchor="start" x="557.12" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">static LocalDateTime</text>
-<text text-anchor="start" x="565.62" y="-1166.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validateCreatedAt(LocalDate</text>
-<text text-anchor="start" x="565.62" y="-1154.5" font-family="Helvetica,sans-Serif" font-size="10.00">Time createdat)</text>
-<text text-anchor="start" x="557.12" y="-1138.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1138.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Menu validateMenu</text>
-<text text-anchor="start" x="565.62" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Menu menuid)</text>
-<text text-anchor="start" x="557.12" y="-1110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1110.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateName</text>
-<text text-anchor="start" x="565.62" y="-1098.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String name)</text>
-<text text-anchor="start" x="557.12" y="-1082.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1082.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerLanguage</text>
-<text text-anchor="start" x="565.62" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validatePlayerLanguage</text>
-<text text-anchor="start" x="565.62" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerLanguage playerlanguageid)</text>
-<text text-anchor="start" x="557.12" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="565.62" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00">static LocalDateTime</text>
-<text text-anchor="start" x="565.62" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validateUpdatedAt(LocalDate</text>
-<text text-anchor="start" x="565.62" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00">Time updatedat)</text>
-<polygon fill="#666666" stroke="#666666" points="551.62,-1846 551.62,-1846 778.12,-1846 778.12,-1846 551.62,-1846"/>
-<polygon fill="#666666" stroke="#666666" points="551.62,-1534 551.62,-1534 563.62,-1534 563.62,-1534 551.62,-1534"/>
-<polygon fill="#666666" stroke="#666666" points="563.62,-1534 563.62,-1534 778.12,-1534 778.12,-1534 563.62,-1534"/>
-<polygon fill="none" stroke="#666666" points="551.62,-1012 551.62,-1876 778.12,-1876 778.12,-1012 551.62,-1012"/>
+<polygon fill="white" stroke="none" points="780.25,-1876 551.5,-1876 551.5,-1012 780.25,-1012 780.25,-1876"/>
+<text text-anchor="start" x="611.5" y="-1862.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
+<text text-anchor="start" x="652" y="-1850.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player</text>
+<text text-anchor="start" x="557" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime createdat</text>
+<text text-anchor="start" x="557" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; games</text>
+<text text-anchor="start" x="557" y="-1802.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1802.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isselected</text>
+<text text-anchor="start" x="557" y="-1786.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1786.5" font-family="Helvetica,sans-Serif" font-size="10.00">String name</text>
+<text text-anchor="start" x="557" y="-1770.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1770.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long playerid</text>
+<text text-anchor="start" x="557" y="-1754.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1754.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime updatedat</text>
+<text text-anchor="start" x="557" y="-1738.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1738.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="565.5" y="-1726.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BACKGROUNID_MUST_NOT</text>
+<text text-anchor="start" x="565.5" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
+<text text-anchor="start" x="557" y="-1698.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1698.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="565.5" y="-1686.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CREATEDAT_MUST_NOT</text>
+<text text-anchor="start" x="565.5" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
+<text text-anchor="start" x="557" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="565.5" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="557" y="-1630.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1630.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="565.5" y="-1618.5" font-family="Helvetica,sans-Serif" font-size="10.00"> NAME_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="557" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="565.5" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PLAYERLANGUAGEID_MUST</text>
+<text text-anchor="start" x="565.5" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NOT_BE_NULL</text>
+<text text-anchor="start" x="557" y="-1562.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1562.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="565.5" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00"> UPDATEDAT_MUST_NOT</text>
+<text text-anchor="start" x="565.5" y="-1538.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
+<text text-anchor="start" x="555.5" y="-1522.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1522.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player(Long playerid,</text>
+<text text-anchor="start" x="565.5" y="-1510.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull PlayerLanguage</text>
+<text text-anchor="start" x="565.5" y="-1498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerlanguageid, @Nonnull</text>
+<text text-anchor="start" x="565.5" y="-1486.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @NotNull Options optionsid,</text>
+<text text-anchor="start" x="565.5" y="-1474.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull Menu menuid,</text>
+<text text-anchor="start" x="565.5" y="-1462.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Set&lt; Game &gt; games, @Nonnull @NotNull</text>
+<text text-anchor="start" x="565.5" y="-1450.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String name, boolean isselected, </text>
+<text text-anchor="start" x="565.5" y="-1438.5" font-family="Helvetica,sans-Serif" font-size="10.00">@Nonnull @NotNull LocalDateTime createdat,</text>
+<text text-anchor="start" x="565.5" y="-1426.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull LocalDateTime updatedat)</text>
+<text text-anchor="start" x="555.5" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object o)</text>
+<text text-anchor="start" x="555.5" y="-1394.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1394.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime getCreatedat()</text>
+<text text-anchor="start" x="555.5" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1378.5" font-family="Helvetica,sans-Serif" font-size="10.00">Set&lt; Game &gt; getGames()</text>
+<text text-anchor="start" x="555.5" y="-1362.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1362.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsselected()</text>
+<text text-anchor="start" x="555.5" y="-1346.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1346.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu getMenuid()</text>
+<text text-anchor="start" x="555.5" y="-1330.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1330.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getName()</text>
+<text text-anchor="start" x="555.5" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options getOptionsid()</text>
+<text text-anchor="start" x="555.5" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long getPlayerid()</text>
+<text text-anchor="start" x="555.5" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage getPlayerlanguageid()</text>
+<text text-anchor="start" x="565.5" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
+<text text-anchor="start" x="555.5" y="-1250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="565.5" y="-1250.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerBuilder</text>
+<text text-anchor="start" x="565.5" y="-1238.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
+<text text-anchor="start" x="555.88" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="565.5" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player()</text>
+<text text-anchor="start" x="557" y="-1206.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1206.5" font-family="Helvetica,sans-Serif" font-size="10.00">static LocalDateTime</text>
+<text text-anchor="start" x="565.5" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validateCreatedAt(LocalDate</text>
+<text text-anchor="start" x="565.5" y="-1182.5" font-family="Helvetica,sans-Serif" font-size="10.00">Time createdat)</text>
+<text text-anchor="start" x="557" y="-1166.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1166.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Menu validateMenu</text>
+<text text-anchor="start" x="565.5" y="-1154.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Menu menuid)</text>
+<text text-anchor="start" x="557" y="-1138.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1138.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateName</text>
+<text text-anchor="start" x="565.5" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String name)</text>
+<text text-anchor="start" x="557" y="-1110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1110.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Options validateOptions</text>
+<text text-anchor="start" x="565.5" y="-1098.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Options optionsid)</text>
+<text text-anchor="start" x="557" y="-1082.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1082.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerLanguage</text>
+<text text-anchor="start" x="565.5" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validatePlayerLanguage</text>
+<text text-anchor="start" x="565.5" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerLanguage playerlanguageid)</text>
+<text text-anchor="start" x="557" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="565.5" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00">static LocalDateTime</text>
+<text text-anchor="start" x="565.5" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validateUpdatedAt(LocalDate</text>
+<text text-anchor="start" x="565.5" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00">Time updatedat)</text>
+<polygon fill="#666666" stroke="#666666" points="551.5,-1846 551.5,-1846 780.25,-1846 780.25,-1846 551.5,-1846"/>
+<polygon fill="#666666" stroke="#666666" points="551.5,-1534 551.5,-1534 563.5,-1534 563.5,-1534 551.5,-1534"/>
+<polygon fill="#666666" stroke="#666666" points="563.5,-1534 563.5,-1534 780.25,-1534 780.25,-1534 563.5,-1534"/>
+<polygon fill="none" stroke="#666666" points="551.5,-1012 551.5,-1876 780.25,-1876 780.25,-1012 551.5,-1012"/>
 </a>
 </g>
 </g>
@@ -245,98 +245,98 @@ var sectionId = 'dynsection-0';
 <g id="edge7_Node000007_Node000002" class="edge">
 <title>Node2&#45;&gt;Node7</title>
 <g id="a_edge7_Node000007_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M147.55,-2088C180.26,-2026.92 224.77,-1964.56 282.88,-1924 288.26,-1920.24 487.71,-1888.76 539.94,-1872.57"/>
-<polygon fill="none" stroke="#63b8ff" points="539.85,-1872.61 543.8,-1866.58 550.89,-1867.9 546.93,-1873.94 539.85,-1872.61"/>
+<path fill="none" stroke="#63b8ff" d="M147.55,-2093.12C181.38,-2030.45 227.64,-1965.73 287.88,-1924 293.16,-1920.34 487.93,-1888.84 539.78,-1872.65"/>
+<polygon fill="none" stroke="#63b8ff" points="539.85,-1872.62 543.8,-1866.58 550.89,-1867.89 546.94,-1873.93 539.85,-1872.62"/>
 </a>
 </g>
-<text text-anchor="middle" x="482.73" y="-1896.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerlanguageid</text>
+<text text-anchor="middle" x="484.65" y="-1896.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerlanguageid</text>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="465.88,-2632 291.88,-2632 291.88,-1924 465.88,-1924 465.88,-2632"/>
-<text text-anchor="start" x="324.5" y="-2618.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="start" x="353" y="-2606.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background</text>
-<text text-anchor="start" x="297.38" y="-2590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2590.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long backgroundid</text>
-<text text-anchor="start" x="297.38" y="-2574.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2574.5" font-family="Helvetica,sans-Serif" font-size="10.00">String hexcolor</text>
-<text text-anchor="start" x="297.38" y="-2558.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2558.5" font-family="Helvetica,sans-Serif" font-size="10.00">String imagepath</text>
-<text text-anchor="start" x="297.38" y="-2542.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2542.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isimage</text>
-<text text-anchor="start" x="297.38" y="-2526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2526.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isopaque</text>
-<text text-anchor="start" x="297.38" y="-2510.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2510.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="305.88" y="-2498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> DEFAULT_HEX_COLOR</text>
-<text text-anchor="start" x="297.38" y="-2482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2482.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="305.88" y="-2470.5" font-family="Helvetica,sans-Serif" font-size="10.00"> EMPTY_PATH</text>
-<text text-anchor="start" x="297.38" y="-2454.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2454.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Pattern</text>
-<text text-anchor="start" x="305.88" y="-2442.5" font-family="Helvetica,sans-Serif" font-size="10.00"> HEX_COLOR_PATTERN</text>
-<text text-anchor="start" x="297.38" y="-2426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2426.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="305.88" y="-2414.5" font-family="Helvetica,sans-Serif" font-size="10.00"> HEXCOLOR_MUST_NOT_BE</text>
-<text text-anchor="start" x="305.88" y="-2402.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NULL_OR_BLANK</text>
-<text text-anchor="start" x="297.38" y="-2386.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2386.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="305.88" y="-2374.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IMAGEPATH_MUST_NOT</text>
-<text text-anchor="start" x="305.88" y="-2362.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="297.38" y="-2346.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-2346.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="305.88" y="-2334.5" font-family="Helvetica,sans-Serif" font-size="10.00"> INVALID_HEX_COLOR_FORMAT</text>
-<text text-anchor="start" x="295.88" y="-2318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2318.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background(Long backgroundid,</text>
-<text text-anchor="start" x="305.88" y="-2306.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull String</text>
-<text text-anchor="start" x="305.88" y="-2294.5" font-family="Helvetica,sans-Serif" font-size="10.00"> hexcolor, @Nonnull @NotNull</text>
-<text text-anchor="start" x="305.88" y="-2282.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String imagepath, boolean isimage,</text>
-<text text-anchor="start" x="305.88" y="-2270.5" font-family="Helvetica,sans-Serif" font-size="10.00"> boolean isopaque)</text>
-<text text-anchor="start" x="295.88" y="-2254.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2254.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object obj)</text>
-<text text-anchor="start" x="295.88" y="-2238.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2238.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long getBackgroundid()</text>
-<text text-anchor="start" x="295.88" y="-2222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2222.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getHexcolor()</text>
-<text text-anchor="start" x="295.88" y="-2206.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2206.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getImagepath()</text>
-<text text-anchor="start" x="295.88" y="-2190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2190.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsimage()</text>
-<text text-anchor="start" x="295.88" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsopaque()</text>
-<text text-anchor="start" x="295.88" y="-2158.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2158.5" font-family="Helvetica,sans-Serif" font-size="10.00">int hashCode()</text>
-<text text-anchor="start" x="295.88" y="-2142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2142.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHexcolor(@Nonnull</text>
-<text text-anchor="start" x="305.88" y="-2130.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String hexcolor)</text>
-<text text-anchor="start" x="295.88" y="-2114.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2114.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setImagepath(</text>
-<text text-anchor="start" x="305.88" y="-2102.5" font-family="Helvetica,sans-Serif" font-size="10.00">@Nonnull String imagepath)</text>
-<text text-anchor="start" x="295.88" y="-2086.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2086.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setIsimage(boolean</text>
-<text text-anchor="start" x="305.88" y="-2074.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isimage)</text>
-<text text-anchor="start" x="295.88" y="-2058.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2058.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setIsopaque(boolean</text>
-<text text-anchor="start" x="305.88" y="-2046.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isopaque)</text>
-<text text-anchor="start" x="295.88" y="-2030.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2030.5" font-family="Helvetica,sans-Serif" font-size="10.00">String toString()</text>
-<text text-anchor="start" x="295.88" y="-2014.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="305.88" y="-2014.5" font-family="Helvetica,sans-Serif" font-size="10.00">static BackgroundBuilder</text>
-<text text-anchor="start" x="305.88" y="-2002.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="296.25" y="-1986.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="305.88" y="-1986.5" font-family="Helvetica,sans-Serif" font-size="10.00">Background()</text>
-<text text-anchor="start" x="297.38" y="-1970.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-1970.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateHexcolor</text>
-<text text-anchor="start" x="305.88" y="-1958.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String hexcolor)</text>
-<text text-anchor="start" x="297.38" y="-1942.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="305.88" y="-1942.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateImagepath</text>
-<text text-anchor="start" x="305.88" y="-1930.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String imagepath)</text>
-<polygon fill="#666666" stroke="#666666" points="291.88,-2602 291.88,-2602 465.88,-2602 465.88,-2602 291.88,-2602"/>
-<polygon fill="#666666" stroke="#666666" points="291.88,-2330 291.88,-2330 303.88,-2330 303.88,-2330 291.88,-2330"/>
-<polygon fill="#666666" stroke="#666666" points="303.88,-2330 303.88,-2330 465.88,-2330 465.88,-2330 303.88,-2330"/>
-<polygon fill="none" stroke="#666666" points="291.88,-1924 291.88,-2632 465.88,-2632 465.88,-1924 291.88,-1924"/>
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="none" points="470.88,-2632 296.88,-2632 296.88,-1924 470.88,-1924 470.88,-2632"/>
+<text text-anchor="start" x="329.5" y="-2618.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
+<text text-anchor="start" x="367" y="-2606.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options</text>
+<text text-anchor="start" x="302.38" y="-2590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2590.5" font-family="Helvetica,sans-Serif" font-size="10.00">String hexcolor</text>
+<text text-anchor="start" x="302.38" y="-2574.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2574.5" font-family="Helvetica,sans-Serif" font-size="10.00">String imagepath</text>
+<text text-anchor="start" x="302.38" y="-2558.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2558.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isimage</text>
+<text text-anchor="start" x="302.38" y="-2542.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2542.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isopaque</text>
+<text text-anchor="start" x="302.38" y="-2526.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2526.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long optionsid</text>
+<text text-anchor="start" x="302.38" y="-2510.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2510.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="310.88" y="-2498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> DEFAULT_HEX_COLOR</text>
+<text text-anchor="start" x="302.38" y="-2482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2482.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="310.88" y="-2470.5" font-family="Helvetica,sans-Serif" font-size="10.00"> EMPTY_PATH</text>
+<text text-anchor="start" x="302.38" y="-2454.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2454.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Pattern</text>
+<text text-anchor="start" x="310.88" y="-2442.5" font-family="Helvetica,sans-Serif" font-size="10.00"> HEX_COLOR_PATTERN</text>
+<text text-anchor="start" x="302.38" y="-2426.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2426.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="310.88" y="-2414.5" font-family="Helvetica,sans-Serif" font-size="10.00"> HEXCOLOR_MUST_NOT_BE</text>
+<text text-anchor="start" x="310.88" y="-2402.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NULL_OR_BLANK</text>
+<text text-anchor="start" x="302.38" y="-2386.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2386.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="310.88" y="-2374.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IMAGEPATH_MUST_NOT</text>
+<text text-anchor="start" x="310.88" y="-2362.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
+<text text-anchor="start" x="302.38" y="-2346.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-2346.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="310.88" y="-2334.5" font-family="Helvetica,sans-Serif" font-size="10.00"> INVALID_HEX_COLOR_FORMAT</text>
+<text text-anchor="start" x="300.88" y="-2318.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2318.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options(Long optionsid,</text>
+<text text-anchor="start" x="310.88" y="-2306.5" font-family="Helvetica,sans-Serif" font-size="10.00"> @Nonnull @NotNull String</text>
+<text text-anchor="start" x="310.88" y="-2294.5" font-family="Helvetica,sans-Serif" font-size="10.00"> hexcolor, @Nonnull @NotNull</text>
+<text text-anchor="start" x="310.88" y="-2282.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String imagepath, boolean isimage,</text>
+<text text-anchor="start" x="310.88" y="-2270.5" font-family="Helvetica,sans-Serif" font-size="10.00"> boolean isopaque)</text>
+<text text-anchor="start" x="300.88" y="-2254.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2254.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object obj)</text>
+<text text-anchor="start" x="300.88" y="-2238.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2238.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getHexcolor()</text>
+<text text-anchor="start" x="300.88" y="-2222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2222.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getImagepath()</text>
+<text text-anchor="start" x="300.88" y="-2206.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2206.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsimage()</text>
+<text text-anchor="start" x="300.88" y="-2190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2190.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean getIsopaque()</text>
+<text text-anchor="start" x="300.88" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">Long getOptionsid()</text>
+<text text-anchor="start" x="300.88" y="-2158.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2158.5" font-family="Helvetica,sans-Serif" font-size="10.00">int hashCode()</text>
+<text text-anchor="start" x="300.88" y="-2142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2142.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHexcolor(@Nonnull</text>
+<text text-anchor="start" x="310.88" y="-2130.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String hexcolor)</text>
+<text text-anchor="start" x="300.88" y="-2114.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2114.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setImagepath(</text>
+<text text-anchor="start" x="310.88" y="-2102.5" font-family="Helvetica,sans-Serif" font-size="10.00">@Nonnull String imagepath)</text>
+<text text-anchor="start" x="300.88" y="-2086.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2086.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setIsimage(boolean</text>
+<text text-anchor="start" x="310.88" y="-2074.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isimage)</text>
+<text text-anchor="start" x="300.88" y="-2058.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2058.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setIsopaque(boolean</text>
+<text text-anchor="start" x="310.88" y="-2046.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isopaque)</text>
+<text text-anchor="start" x="300.88" y="-2030.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2030.5" font-family="Helvetica,sans-Serif" font-size="10.00">String toString()</text>
+<text text-anchor="start" x="300.88" y="-2014.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="310.88" y="-2014.5" font-family="Helvetica,sans-Serif" font-size="10.00">static OptionsBuilder</text>
+<text text-anchor="start" x="310.88" y="-2002.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
+<text text-anchor="start" x="301.25" y="-1986.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="310.88" y="-1986.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options()</text>
+<text text-anchor="start" x="302.38" y="-1970.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-1970.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateHexcolor</text>
+<text text-anchor="start" x="310.88" y="-1958.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String hexcolor)</text>
+<text text-anchor="start" x="302.38" y="-1942.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="310.88" y="-1942.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateImagepath</text>
+<text text-anchor="start" x="310.88" y="-1930.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String imagepath)</text>
+<polygon fill="#666666" stroke="#666666" points="296.88,-2602 296.88,-2602 470.88,-2602 470.88,-2602 296.88,-2602"/>
+<polygon fill="#666666" stroke="#666666" points="296.88,-2330 296.88,-2330 308.88,-2330 308.88,-2330 296.88,-2330"/>
+<polygon fill="#666666" stroke="#666666" points="308.88,-2330 308.88,-2330 470.88,-2330 470.88,-2330 308.88,-2330"/>
+<polygon fill="none" stroke="#666666" points="296.88,-1924 296.88,-2632 470.88,-2632 470.88,-1924 296.88,-1924"/>
 </a>
 </g>
 </g>
@@ -344,56 +344,56 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M291.99,-2120.12C256.87,-2048.07 220.51,-1960.08 202.88,-1876 127.46,-1516.54 216.22,-320.03 235.38,-76.49"/>
-<polygon fill="none" stroke="#63b8ff" points="235.38,-76.57 231.86,-70.28 236.32,-64.61 239.84,-70.91 235.38,-76.57"/>
+<path fill="none" stroke="#63b8ff" d="M296.93,-2125.16C260.09,-2052.29 221.44,-1962.25 202.88,-1876 125.59,-1516.94 215.84,-320.11 235.32,-76.5"/>
+<polygon fill="none" stroke="#63b8ff" points="235.32,-76.58 231.81,-70.28 236.28,-64.62 239.78,-70.92 235.32,-76.58"/>
 </a>
 </g>
-<text text-anchor="middle" x="222.45" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;mockBackground</text>
+<text text-anchor="middle" x="212.58" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;mockOptions</text>
 </g>
 <!-- Node3&#45;&gt;Node7 -->
 <g id="edge8_Node000007_Node000003" class="edge">
 <title>Node3&#45;&gt;Node7</title>
 <g id="a_edge8_Node000007_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M465.83,-2077C492.12,-2013.32 520.04,-1942.22 542.88,-1876 544.44,-1871.46 546,-1866.89 547.56,-1862.29"/>
-<polygon fill="none" stroke="#63b8ff" points="547.56,-1862.28 545.68,-1855.32 551.38,-1850.91 553.26,-1857.87 547.56,-1862.28"/>
+<path fill="none" stroke="#63b8ff" d="M470.78,-2069.3C495.37,-2007.56 521.3,-1939.46 542.88,-1876 544.42,-1871.45 545.97,-1866.87 547.51,-1862.26"/>
+<polygon fill="none" stroke="#63b8ff" points="547.51,-1862.25 545.6,-1855.29 551.29,-1850.86 553.2,-1857.81 547.51,-1862.25"/>
 </a>
 </g>
-<text text-anchor="middle" x="567.04" y="-1896.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;backgroundid</text>
+<text text-anchor="middle" x="557.81" y="-1896.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;optionsid</text>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="828.25,-2388 687.5,-2388 687.5,-2168 828.25,-2168 828.25,-2388"/>
-<text text-anchor="start" x="691.5" y="-2374.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Menu</text>
-<text text-anchor="start" x="694.81" y="-2358.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="705.12" y="-2358.5" font-family="Helvetica,sans-Serif" font-size="10.00">Byte menuid</text>
-<text text-anchor="start" x="694.81" y="-2342.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="705.12" y="-2342.5" font-family="Helvetica,sans-Serif" font-size="10.00">byte mode</text>
-<text text-anchor="start" x="693.31" y="-2326.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="705.12" y="-2326.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu(Byte menuid,</text>
-<text text-anchor="start" x="705.12" y="-2314.5" font-family="Helvetica,sans-Serif" font-size="10.00"> byte mode)</text>
-<text text-anchor="start" x="693.31" y="-2298.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="705.12" y="-2298.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object obj)</text>
-<text text-anchor="start" x="693.31" y="-2282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="705.12" y="-2282.5" font-family="Helvetica,sans-Serif" font-size="10.00">Byte getMenuid()</text>
-<text text-anchor="start" x="693.31" y="-2266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="705.12" y="-2266.5" font-family="Helvetica,sans-Serif" font-size="10.00">byte getMode()</text>
-<text text-anchor="start" x="693.31" y="-2250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="705.12" y="-2250.5" font-family="Helvetica,sans-Serif" font-size="10.00">int hashCode()</text>
-<text text-anchor="start" x="693.31" y="-2234.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="705.12" y="-2234.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setMode(byte mode)</text>
-<text text-anchor="start" x="693.31" y="-2218.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="705.12" y="-2218.5" font-family="Helvetica,sans-Serif" font-size="10.00">String toString()</text>
-<text text-anchor="start" x="693.31" y="-2202.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="705.12" y="-2202.5" font-family="Helvetica,sans-Serif" font-size="10.00">static MenuBuilder</text>
-<text text-anchor="start" x="705.12" y="-2190.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="693.69" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="705.12" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu()</text>
-<polygon fill="#666666" stroke="#666666" points="687.5,-2370 687.5,-2370 828.25,-2370 828.25,-2370 687.5,-2370"/>
-<polygon fill="#666666" stroke="#666666" points="687.5,-2338 687.5,-2338 703.12,-2338 703.12,-2338 687.5,-2338"/>
-<polygon fill="#666666" stroke="#666666" points="703.12,-2338 703.12,-2338 828.25,-2338 828.25,-2338 703.12,-2338"/>
-<polygon fill="none" stroke="#666666" points="687.5,-2168 687.5,-2388 828.25,-2388 828.25,-2168 687.5,-2168"/>
+<polygon fill="white" stroke="none" points="829.25,-2388 688.5,-2388 688.5,-2168 829.25,-2168 829.25,-2388"/>
+<text text-anchor="start" x="692.5" y="-2374.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Menu</text>
+<text text-anchor="start" x="695.81" y="-2358.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="706.12" y="-2358.5" font-family="Helvetica,sans-Serif" font-size="10.00">Byte menuid</text>
+<text text-anchor="start" x="695.81" y="-2342.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="706.12" y="-2342.5" font-family="Helvetica,sans-Serif" font-size="10.00">byte mode</text>
+<text text-anchor="start" x="694.31" y="-2326.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="706.12" y="-2326.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu(Byte menuid,</text>
+<text text-anchor="start" x="706.12" y="-2314.5" font-family="Helvetica,sans-Serif" font-size="10.00"> byte mode)</text>
+<text text-anchor="start" x="694.31" y="-2298.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="706.12" y="-2298.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean equals(Object obj)</text>
+<text text-anchor="start" x="694.31" y="-2282.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="706.12" y="-2282.5" font-family="Helvetica,sans-Serif" font-size="10.00">Byte getMenuid()</text>
+<text text-anchor="start" x="694.31" y="-2266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="706.12" y="-2266.5" font-family="Helvetica,sans-Serif" font-size="10.00">byte getMode()</text>
+<text text-anchor="start" x="694.31" y="-2250.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="706.12" y="-2250.5" font-family="Helvetica,sans-Serif" font-size="10.00">int hashCode()</text>
+<text text-anchor="start" x="694.31" y="-2234.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="706.12" y="-2234.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setMode(byte mode)</text>
+<text text-anchor="start" x="694.31" y="-2218.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="706.12" y="-2218.5" font-family="Helvetica,sans-Serif" font-size="10.00">String toString()</text>
+<text text-anchor="start" x="694.31" y="-2202.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="706.12" y="-2202.5" font-family="Helvetica,sans-Serif" font-size="10.00">static MenuBuilder</text>
+<text text-anchor="start" x="706.12" y="-2190.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
+<text text-anchor="start" x="694.69" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="706.12" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu()</text>
+<polygon fill="#666666" stroke="#666666" points="688.5,-2370 688.5,-2370 829.25,-2370 829.25,-2370 688.5,-2370"/>
+<polygon fill="#666666" stroke="#666666" points="688.5,-2338 688.5,-2338 704.12,-2338 704.12,-2338 688.5,-2338"/>
+<polygon fill="#666666" stroke="#666666" points="704.12,-2338 704.12,-2338 829.25,-2338 829.25,-2338 704.12,-2338"/>
+<polygon fill="none" stroke="#666666" points="688.5,-2168 688.5,-2388 829.25,-2388 829.25,-2168 688.5,-2168"/>
 </a>
 </g>
 </g>
@@ -401,21 +401,21 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M774.35,-2168.09C804.6,-1947.82 859.58,-1434.43 786.88,-1012 715.85,-599.31 763.29,-424.73 471.88,-124 429.6,-80.37 363.95,-57.25 313.09,-45.25"/>
-<polygon fill="none" stroke="#63b8ff" points="313.1,-45.25 306.37,-47.85 301.39,-42.63 308.12,-40.04 313.1,-45.25"/>
+<path fill="none" stroke="#63b8ff" d="M775.56,-2168.08C806.23,-1947.79 862,-1434.37 788.88,-1012 717.38,-599.08 763.8,-424.65 471.88,-124 429.62,-80.49 364.12,-57.37 313.32,-45.34"/>
+<polygon fill="none" stroke="#63b8ff" points="313.33,-45.34 306.6,-47.93 301.62,-42.71 308.35,-40.12 313.33,-45.34"/>
 </a>
 </g>
-<text text-anchor="middle" x="810.68" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;mockMenu</text>
+<text text-anchor="middle" x="812.66" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;mockMenu</text>
 </g>
 <!-- Node4&#45;&gt;Node7 -->
 <g id="edge9_Node000007_Node000004" class="edge">
 <title>Node4&#45;&gt;Node7</title>
 <g id="a_edge9_Node000007_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M745.72,-2168.23C737.52,-2094.9 726.11,-1992.79 714.43,-1888.37"/>
-<polygon fill="none" stroke="#63b8ff" points="714.44,-1888.45 709.8,-1882.93 713.11,-1876.52 717.75,-1882.04 714.44,-1888.45"/>
+<path fill="none" stroke="#63b8ff" d="M746.72,-2168.23C738.52,-2094.9 727.11,-1992.79 715.43,-1888.37"/>
+<polygon fill="none" stroke="#63b8ff" points="715.44,-1888.45 710.8,-1882.93 714.11,-1876.52 718.75,-1882.04 715.44,-1888.45"/>
 </a>
 </g>
-<text text-anchor="middle" x="734.3" y="-1896.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;menuid</text>
+<text text-anchor="middle" x="735.3" y="-1896.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;menuid</text>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
@@ -616,11 +616,11 @@ var sectionId = 'dynsection-0';
 <g id="edge6_Node000005_Node000007" class="edge">
 <title>Node7&#45;&gt;Node5</title>
 <g id="a_edge6_Node000005_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M551.65,-1039.52C548.73,-1030.25 545.8,-1021.07 542.88,-1012 519.84,-940.69 492.87,-864.02 467.28,-793.83"/>
-<polygon fill="none" stroke="#63b8ff" points="467.28,-793.83 461.46,-789.57 463.16,-782.56 468.98,-786.82 467.28,-793.83"/>
+<path fill="none" stroke="#63b8ff" d="M551.51,-1038.96C548.64,-1029.88 545.76,-1020.88 542.88,-1012 519.79,-940.81 492.84,-864.26 467.28,-794.15"/>
+<polygon fill="none" stroke="#63b8ff" points="467.29,-794.16 461.47,-789.9 463.17,-782.89 468.99,-787.15 467.29,-794.16"/>
 </a>
 </g>
-<text text-anchor="middle" x="554.45" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerid</text>
+<text text-anchor="middle" x="554.42" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerid</text>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">
