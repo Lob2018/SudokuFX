@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa3a20fc1375df0c6c0d09eac69d7d5b3" target="_top" xlink:title="Applies the selected background image to the GridPane.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#aa3a20fc1375df0c6c0d09eac69d7d5b3" target="_top" xlink:title="Applies the selected options image to the GridPane.">
 <polygon fill="white" stroke="#666666" points="427.25,-32 215.5,-32 215.5,0 427.25,0 427.25,-32"/>
 <text text-anchor="start" x="223.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="middle" x="321.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView.applySelectedBackgroundImage</text>

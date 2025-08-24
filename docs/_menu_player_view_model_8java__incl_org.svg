@@ -207,7 +207,7 @@
 <title>Node12</title>
 <g id="a_Node000012"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1816.25,-26 1636.75,-26 1636.75,-6 1816.25,-6 1816.25,-26"/>
-<text text-anchor="middle" x="1726.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.BackgroundDto</text>
+<text text-anchor="middle" x="1726.5" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.OptionsDto</text>
 </a>
 </g>
 </g>

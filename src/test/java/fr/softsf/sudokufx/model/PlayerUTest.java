@@ -20,7 +20,7 @@ import static org.mockito.Mockito.when;
 @DisplayName("Player Entity Tests")
 class PlayerUTest {
     private PlayerLanguage mockPlayerLanguage;
-    private Background mockBackground;
+    private Options mockOptions;
     private Menu mockMenu;
     private Game mockGame1;
     private Game mockGame2;
@@ -29,14 +29,14 @@ class PlayerUTest {
     @BeforeEach
     void setUp() {
         mockPlayerLanguage = mock(PlayerLanguage.class);
-        mockBackground = mock(Background.class);
+        mockOptions = mock(Options.class);
         mockMenu = mock(Menu.class);
         mockGame1 = mock(Game.class);
         mockGame2 = mock(Game.class);
         testNow = LocalDateTime.now();
 
         when(mockPlayerLanguage.getPlayerlanguageid()).thenReturn(1L);
-        when(mockBackground.getBackgroundid()).thenReturn(1L);
+        when(mockOptions.getOptionsid()).thenReturn(1L);
         when(mockMenu.getMenuid()).thenReturn((byte) 1);
     }
 
@@ -54,7 +54,7 @@ class PlayerUTest {
                     Player.builder()
                             .playerid(1L)
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .games(games)
                             .name("John")
@@ -65,7 +65,7 @@ class PlayerUTest {
 
             assertEquals(1L, player.getPlayerid());
             assertEquals(mockPlayerLanguage, player.getPlayerlanguageid());
-            assertEquals(mockBackground, player.getBackgroundid());
+            assertEquals(mockOptions, player.getOptionsid());
             assertEquals(mockMenu, player.getMenuid());
             assertEquals(games, player.getGames());
             assertEquals("John", player.getName());
@@ -80,7 +80,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .games(null)
@@ -101,7 +101,7 @@ class PlayerUTest {
                     Player.builder()
                             .playerid(1L)
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -115,7 +115,7 @@ class PlayerUTest {
                     Player.builder()
                             .playerid(1L)
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -132,7 +132,7 @@ class PlayerUTest {
                     Player.builder()
                             .playerid(1L)
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .createdat(fixedTime)
@@ -142,7 +142,7 @@ class PlayerUTest {
                     Player.builder()
                             .playerid(1L)
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .createdat(fixedTime)
@@ -159,7 +159,7 @@ class PlayerUTest {
                     Player.builder()
                             .playerid(1L)
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -167,7 +167,7 @@ class PlayerUTest {
                     Player.builder()
                             .playerid(2L)
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("Jane")
                             .build();
@@ -188,7 +188,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -202,7 +202,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -214,18 +214,18 @@ class PlayerUTest {
 
         @Test
         @DisplayName(
-                "Given null Background when setting backgroundid then NullPointerException is"
+                "Given null Options when setting optionsid then NullPointerException is"
                         + " thrown")
         @SuppressWarnings("ConstantConditions")
-        void givenNullBackground_whenSettingBackgroundid_thenNullPointerExceptionIsThrown() {
+        void givenNullOptions_whenSettingOptionsid_thenNullPointerExceptionIsThrown() {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
-            assertThrows(NullPointerException.class, () -> player.setBackgroundid(null));
+            assertThrows(NullPointerException.class, () -> player.setOptionsid(null));
         }
 
         @Test
@@ -235,7 +235,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -249,7 +249,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -264,7 +264,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -277,7 +277,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -287,19 +287,19 @@ class PlayerUTest {
         }
 
         @Test
-        @DisplayName("Given valid Background when setting backgroundid then field is updated")
-        void givenValidBackground_whenSettingBackgroundid_thenFieldIsUpdated() {
+        @DisplayName("Given valid Options when setting optionsid then field is updated")
+        void givenValidOptions_whenSettingOptionsid_thenFieldIsUpdated() {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
-            Background newBackground = mock(Background.class);
-            when(newBackground.getBackgroundid()).thenReturn(2L);
-            player.setBackgroundid(newBackground);
-            assertEquals(newBackground, player.getBackgroundid());
+            Options newOptions = mock(Options.class);
+            when(newOptions.getOptionsid()).thenReturn(2L);
+            player.setOptionsid(newOptions);
+            assertEquals(newOptions, player.getOptionsid());
         }
 
         @Test
@@ -308,7 +308,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -324,7 +324,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -338,7 +338,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .isselected(false)
@@ -353,7 +353,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -372,7 +372,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -385,7 +385,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -403,7 +403,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .games(games)
@@ -419,7 +419,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -434,7 +434,7 @@ class PlayerUTest {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();
@@ -457,7 +457,7 @@ class PlayerUTest {
                     Player.builder()
                             .playerid(1L)
                             .playerlanguageid(mockPlayerLanguage)
-                            .backgroundid(mockBackground)
+                            .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
                             .build();

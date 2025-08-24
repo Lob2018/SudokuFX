@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.model.BackgroundUTest.SetterTests.givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated" name="fr.softsf.sudokufx.model.BackgroundUTest.SetterTests.givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated">
+<map id="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated" name="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,23,244,97"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#ab264958f7d534440378bb75ec996f65b" title=" " alt="" coords="292,5,458,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,41,276,37,277,42,245,47"/>

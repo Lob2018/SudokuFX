@@ -112,7 +112,7 @@ Packages</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a95a3f8cb6e5e286a81f1b43c0a5ca5db" id="r_a95a3f8cb6e5e286a81f1b43c0a5ca5db"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95a3f8cb6e5e286a81f1b43c0a5ca5db">BackgroundDto</a> (Long backgroundid, @Nonnull @NotNull @Size(max=8) String hexcolor, @Nonnull @NotNull @Size(max=260) String imagepath, boolean isimage, boolean isopaque)</td></tr>
-<tr class="memdesc:a95a3f8cb6e5e286a81f1b43c0a5ca5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a background entity.  <br /></td></tr>
+<tr class="memdesc:a95a3f8cb6e5e286a81f1b43c0a5ca5db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a options entity.  <br /></td></tr>
 <tr class="separator:a95a3f8cb6e5e286a81f1b43c0a5ca5db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b4cf476a6a3d3f1f289617aa14a93cb" id="r_a0b4cf476a6a3d3f1f289617aa14a93cb"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b4cf476a6a3d3f1f289617aa14a93cb">GameDto</a> (Long gameid, @Nonnull @NotNull <a class="el" href="#a1d1f24319f3fea4ea795946c4be7803a">GridDto</a> grididDto, @Nonnull @NotNull Long playerid, @Nonnull @NotNull <a class="el" href="#a0218c64c4488c809ab03588009d721aa">GameLevelDto</a> levelidDto, boolean isselected, @Nonnull @NotNull LocalDateTime createdat, @Nonnull @NotNull LocalDateTime updatedat)</td></tr>
 <tr class="memdesc:a0b4cf476a6a3d3f1f289617aa14a93cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a game entity.  <br /></td></tr>
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">record fr.softsf.sudokufx.dto.BackgroundDto </td>
+          <td class="memname">record fr.softsf.sudokufx.dto.OptionsDto</td>
           <td>(</td>
           <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>backgroundid</em></span>, </td>
         </tr>
@@ -168,14 +168,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Data Transfer Object representing a background entity. </p>
+<p>Data Transfer Object representing a options entity. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">backgroundid</td><td>the unique identifier of the background </td></tr>
-    <tr><td class="paramname">hexcolor</td><td>the background color in hexadecimal format (max 8 characters), not null </td></tr>
-    <tr><td class="paramname">imagepath</td><td>the path to the background image (max 260 characters), not null </td></tr>
-    <tr><td class="paramname">isimage</td><td>flag indicating if the background uses an image (true) or a color (false) </td></tr>
-    <tr><td class="paramname">isopaque</td><td>flag indicating if the grid background is opaque (true) or transparent (false) </td></tr>
+    <tr><td class="paramname">backgroundid</td><td>the unique identifier of the options </td></tr>
+    <tr><td class="paramname">hexcolor</td><td>the options color in hexadecimal format (max 8 characters), not null </td></tr>
+    <tr><td class="paramname">imagepath</td><td>the path to the options image (max 260 characters), not null </td></tr>
+    <tr><td class="paramname">isimage</td><td>flag indicating if the options uses an image (true) or a color (false) </td></tr>
+    <tr><td class="paramname">isopaque</td><td>flag indicating if the grid options is opaque (true) or transparent (false) </td></tr>
   </table>
   </dd>
 </dl>
@@ -410,7 +410,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">playerid</td><td>the unique identifier of the player </td></tr>
     <tr><td class="paramname">playerlanguageidDto</td><td>the player's language data, must not be null </td></tr>
-    <tr><td class="paramname">backgroundidDto</td><td>the player's background data, must not be null </td></tr>
+    <tr><td class="paramname">backgroundidDto</td><td>the player's options data, must not be null </td></tr>
     <tr><td class="paramname">menuidDto</td><td>the menu associated with the player, must not be null </td></tr>
     <tr><td class="paramname">selectedGame</td><td>the currently selected game for the player, can be null </td></tr>
     <tr><td class="paramname">name</td><td>the player's name, must not be null and maximum length 256 characters </td></tr>

@@ -8,7 +8,7 @@
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="175,159,294,132,295,137,176,165"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a574a17236a0848e4ce394ff5077a15fc" title="Initializes the main scene." alt="" coords="303,221,510,264"/>
 <area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="176,187,295,215,294,220,175,193"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html#a102ea76a7ffe8f69b1a4f8bcb6841fec" title="Starts the given JavaFX Task in a new background thread." alt="" coords="269,288,544,331"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1utils_1_1_spring_context_initializer.html#a102ea76a7ffe8f69b1a4f8bcb6841fec" title="Starts the given JavaFX Task in a new options thread." alt="" coords="269,288,544,331"/>
 <area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="133,188,191,230,230,253,270,274,286,280,284,285,268,278,227,258,189,234,130,192"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b" title="Creates a PauseTransition to delay loading of the next view." alt="" coords="598,155,823,197"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="520,173,582,173,582,179,520,179"/>

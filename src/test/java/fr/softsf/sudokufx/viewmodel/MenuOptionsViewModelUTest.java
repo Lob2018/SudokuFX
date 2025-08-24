@@ -38,10 +38,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(ApplicationExtension.class)
-class MenuBackgroundViewModelUTest {
+class MenuOptionsViewModelUTest {
 
     private Locale originalLocale;
-    private MenuBackgroundViewModel viewModel;
+    private MenuOptionsViewModel viewModel;
 
     private GridPane sudokuFX;
     private ColorPicker colorPicker;
@@ -52,7 +52,7 @@ class MenuBackgroundViewModelUTest {
     void setUp() {
         originalLocale = I18n.INSTANCE.localeProperty().get();
         I18n.INSTANCE.setLocaleBundle("FR");
-        viewModel = new MenuBackgroundViewModel();
+        viewModel = new MenuOptionsViewModel();
         sudokuFX = new GridPane();
         colorPicker = new ColorPicker();
         toaster = mock(ToasterVBox.class);
@@ -86,84 +86,84 @@ class MenuBackgroundViewModelUTest {
     }
 
     private static Map<StringBinding, Supplier<String>> getStringBindingStringMap(
-            MenuBackgroundViewModel vm) {
+            MenuOptionsViewModel vm) {
         Map<StringBinding, Supplier<String>> map = new HashMap<>();
         map.put(
-                vm.backgroundMenuMaxiAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility"));
+                vm.optionsMenuMaxiAccessibleTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.maxi.button.options.accessibility"));
         map.put(
-                vm.backgroundMenuMaxiTooltipProperty(),
+                vm.optionsMenuMaxiTooltipProperty(),
                 () ->
-                        I18n.INSTANCE.getValue("menu.maxi.button.background.accessibility")
+                        I18n.INSTANCE.getValue("menu.maxi.button.options.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         "menu.accessibility.role.description.closed"));
         map.put(
-                vm.backgroundMenuMaxiRoleDescriptionProperty(),
+                vm.optionsMenuMaxiRoleDescriptionProperty(),
                 () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
         map.put(
-                vm.backgroundMenuMaxiTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.maxi.button.background.text"));
+                vm.optionsMenuMaxiTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.maxi.button.options.text"));
 
         map.put(
-                vm.backgroundReduceAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
+                vm.optionsReduceAccessibleTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.options.button.reduce.accessibility"));
         map.put(
-                vm.backgroundReduceTooltipProperty(),
-                () -> I18n.INSTANCE.getValue("menu.background.button.reduce.accessibility"));
+                vm.optionsReduceTooltipProperty(),
+                () -> I18n.INSTANCE.getValue("menu.options.button.reduce.accessibility"));
         map.put(
-                vm.backgroundReduceTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.background.button.reduce.text"));
+                vm.optionsReduceTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.options.button.reduce.text"));
 
         map.put(
-                vm.backgroundAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.background.button.background.accessibility"));
+                vm.optionsAccessibleTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.options.button.options.accessibility"));
         map.put(
-                vm.backgroundTooltipProperty(),
+                vm.optionsTooltipProperty(),
                 () ->
-                        I18n.INSTANCE.getValue("menu.background.button.background.accessibility")
+                        I18n.INSTANCE.getValue("menu.options.button.options.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         "menu.accessibility.role.description.opened"));
         map.put(
-                vm.backgroundRoleDescriptionProperty(),
+                vm.optionsRoleDescriptionProperty(),
                 () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
         map.put(
-                vm.backgroundTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.background.button.background.text"));
+                vm.optionsTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.options.button.options.text"));
 
         map.put(
-                vm.backgroundImageAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.background.button.image.accessibility"));
+                vm.optionsImageAccessibleTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.options.button.image.accessibility"));
         map.put(
-                vm.backgroundImageTooltipProperty(),
+                vm.optionsImageTooltipProperty(),
                 () ->
-                        I18n.INSTANCE.getValue("menu.background.button.image.accessibility")
+                        I18n.INSTANCE.getValue("menu.options.button.image.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         "menu.accessibility.role.description.submenu.option"));
         map.put(
-                vm.backgroundImageRoleDescriptionProperty(),
+                vm.optionsImageRoleDescriptionProperty(),
                 () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.submenu.option"));
         map.put(
-                vm.backgroundImageTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.background.button.image.text"));
+                vm.optionsImageTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.options.button.image.text"));
 
         map.put(
-                vm.backgroundColorAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.background.button.color.accessibility"));
+                vm.optionsColorAccessibleTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.options.button.color.accessibility"));
         map.put(
-                vm.backgroundColorTooltipProperty(),
+                vm.optionsColorTooltipProperty(),
                 () ->
-                        I18n.INSTANCE.getValue("menu.background.button.color.accessibility")
+                        I18n.INSTANCE.getValue("menu.options.button.color.accessibility")
                                 + I18n.INSTANCE.getValue(
                                         "menu.accessibility.role.description.submenu.option"));
         map.put(
-                vm.backgroundColorRoleDescriptionProperty(),
+                vm.optionsColorRoleDescriptionProperty(),
                 () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.submenu.option"));
         return map;
     }
 
     @Test
     void givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated() {
-        MenuBackgroundViewModel spyViewModel = spy(viewModel);
+        MenuOptionsViewModel spyViewModel = spy(viewModel);
         doNothing().when(spyViewModel).handleFileImageChooser(any(), any(), any(), any());
         spyViewModel.init(sudokuFX, colorPicker, toaster, spinner);
         Color expectedColor = Color.rgb(153, 179, 255, 0.803921568627451);
@@ -195,8 +195,8 @@ class MenuBackgroundViewModelUTest {
                 });
         assertTrue(latch.await(5, TimeUnit.SECONDS), "Timeout waiting for background to be set");
         Background background = grid.getBackground();
-        assertNotNull(background, "Background should not be null");
-        assertFalse(background.getImages().isEmpty(), "Background image should be set");
+        assertNotNull(background, "Options should not be null");
+        assertFalse(background.getImages().isEmpty(), "Options image should be set");
         verify(mockToaster)
                 .addToast(anyString(), contains("file:"), eq(ToastLevels.INFO), eq(false));
         verify(mockToaster).removeToast();
@@ -211,7 +211,7 @@ class MenuBackgroundViewModelUTest {
         GridPane grid = new GridPane();
         ToasterVBox mockToaster = mock(ToasterVBox.class);
         SpinnerGridPane mockSpinner = mock(SpinnerGridPane.class);
-        viewModel = spy(new MenuBackgroundViewModel());
+        viewModel = spy(new MenuOptionsViewModel());
         CountDownLatch taskFailedLatch = new CountDownLatch(1);
         CountDownLatch fxRunLaterLatch = new CountDownLatch(1);
         CountDownLatch spinnerLatch = new CountDownLatch(1); // 👈 Ajouté
@@ -268,15 +268,15 @@ class MenuBackgroundViewModelUTest {
     }
 
     @Test
-    void givenGridPaneAndColor_whenUpdateBackgroundColorAndApply_thenBackgroundColorIsSet() {
+    void givenGridPaneAndColor_whenUpdateBackgroundColorAndApply_thenOptionsColorIsSet() {
         GridPane grid = new GridPane();
         Color color = Color.web("#12345678");
-        viewModel.updateBackgroundColorAndApply(grid, color);
+        viewModel.updateOptionsColorAndApply(grid, color);
         Background background = grid.getBackground();
-        assertNotNull(background, "Background should not be null");
+        assertNotNull(background, "Options should not be null");
         List<BackgroundFill> fills = background.getFills();
-        assertFalse(fills.isEmpty(), "Background fills should not be empty");
-        assertEquals(color, fills.getFirst().getFill(), "Background color should match expected");
+        assertFalse(fills.isEmpty(), "Options fills should not be empty");
+        assertEquals(color, fills.getFirst().getFill(), "Options color should match expected");
     }
 
     private File getValidTestImage() {
@@ -292,11 +292,11 @@ class MenuBackgroundViewModelUTest {
 
     @Test
     void givenNullFile_whenHandleFileImageChooser_thenShowErrorToast() {
-        MenuBackgroundViewModel myViewModel = spy(new MenuBackgroundViewModel());
+        MenuOptionsViewModel myViewModel = spy(new MenuOptionsViewModel());
         ToasterVBox toasterMock = mock(ToasterVBox.class);
         SpinnerGridPane spinnerMock = mock(SpinnerGridPane.class);
         GridPane sudokuFXAlt = new GridPane();
-        String expectedErrorKey = "toast.error.backgroundviewmodel.handlefileimagechooser";
+        String expectedErrorKey = "toast.error.optionsviewmodel.handlefileimagechooser";
         String expectedMessage = I18n.INSTANCE.getValue(expectedErrorKey);
         myViewModel.handleFileImageChooser(null, toasterMock, spinnerMock, sudokuFXAlt);
         verify(toasterMock).addToast(expectedMessage, "", ToastLevels.ERROR, true);

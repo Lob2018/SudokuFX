@@ -21,8 +21,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.dto.BackgroundDto;
 import fr.softsf.sudokufx.dto.MenuDto;
+import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.service.PlayerService;
@@ -49,7 +49,7 @@ class MenuPlayerViewModelUTest {
                 new PlayerDto(
                         42L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new BackgroundDto(1L, "#ffffff", null, false, true),
+                        new OptionsDto(1L, "#ffffff", null, false, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null,
                         "TestPlayer",
@@ -204,7 +204,7 @@ class MenuPlayerViewModelUTest {
                 new PlayerDto(
                         999L,
                         new PlayerLanguageDto(2L, "EN"),
-                        new BackgroundDto(2L, "#123456", null, false, true),
+                        new OptionsDto(2L, "#123456", null, false, true),
                         new MenuDto((byte) 2, (byte) 2),
                         null,
                         "NewTestPlayer",

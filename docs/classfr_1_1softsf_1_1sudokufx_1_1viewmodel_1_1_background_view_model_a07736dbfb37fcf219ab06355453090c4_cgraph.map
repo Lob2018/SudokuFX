@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.BackgroundViewModel.loadImage" name="fr.softsf.sudokufx.viewmodel.BackgroundViewModel.loadImage">
-<area shape="rect" id="Node000001" title="Initiates the image loading and resizing process in a background task." alt="" coords="5,201,224,244"/>
+<area shape="rect" id="Node000001" title="Initiates the image loading and resizing process in a options task." alt="" coords="5,201,224,244"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#ac95cfb708e84f566bb41d6ca5f9d1ccf" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="619,72,895,115"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,199,156,172,188,142,227,113,271,91,314,78,360,68,452,59,541,60,622,67,622,72,541,65,452,64,360,73,316,83,273,96,230,117,192,146,159,176,135,203"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a3a4097c6fc590dcbef9f75196489f3bd" title="Calculates the scale factor to resize the image based on the available grid dimensions." alt="" coords="298,289,544,348"/>

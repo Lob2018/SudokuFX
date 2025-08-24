@@ -86,7 +86,7 @@
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="561,-108 381.5,-108 381.5,-88 561,-88 561,-108"/>
-<text text-anchor="middle" x="471.25" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.BackgroundDto</text>
+<text text-anchor="middle" x="471.25" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.OptionsDto</text>
 </a>
 </g>
 </g>

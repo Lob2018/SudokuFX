@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.loadImage" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.loadImage">
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.loadImage" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.loadImage">
 <area shape="rect" id="Node000001" title="Starts the asynchronous image loading and resizing task." alt="" coords="5,139,256,181"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="648,72,917,115"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,136,228,104,265,90,303,79,387,66,473,61,556,63,633,69,632,74,556,68,473,67,388,71,304,84,267,95,230,109,168,141"/>

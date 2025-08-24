@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.allBindingsShouldReturnExpectedI18nValues" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.allBindingsShouldReturnExpectedI18nValues">
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.allBindingsShouldReturnExpectedI18nValues" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.allBindingsShouldReturnExpectedI18nValues">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,708,275,767"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_u_test.html#aed134e0072a4f15303a51a2fbcf909f9" title=" " alt="" coords="323,708,566,767"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,735,307,735,307,740,275,740"/>

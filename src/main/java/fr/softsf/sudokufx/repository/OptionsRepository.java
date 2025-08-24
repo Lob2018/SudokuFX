@@ -8,7 +8,7 @@ package fr.softsf.sudokufx.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import fr.softsf.sudokufx.model.Background;
+import fr.softsf.sudokufx.model.Options;
 
 @Repository
-public interface BackgroundRepository extends JpaRepository<Background, Long> {}
+public interface OptionsRepository extends JpaRepository<Options, Long> {}

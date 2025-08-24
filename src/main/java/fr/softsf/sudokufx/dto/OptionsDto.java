@@ -10,16 +10,16 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 /**
- * Data Transfer Object representing a background entity.
+ * Data Transfer Object representing an' options entity.
  *
- * @param backgroundid the unique identifier of the background
- * @param hexcolor the background color in hexadecimal format (max 8 characters), not null
- * @param imagepath the path to the background image (max 260 characters), not null
- * @param isimage flag indicating if the background uses an image (true) or a color (false)
- * @param isopaque flag indicating if the grid background is opaque (true) or transparent (false)
+ * @param optionsid the unique identifier of the options
+ * @param hexcolor the options color in hexadecimal format (max 8 characters), not null
+ * @param imagepath the path to the options image (max 260 characters), not null
+ * @param isimage flag indicating if the options uses an image (true) or a color (false)
+ * @param isopaque flag indicating if the grid options is opaque (true) or transparent (false)
  */
-public record BackgroundDto(
-        Long backgroundid,
+public record OptionsDto(
+        Long optionsid,
         @Nonnull @NotNull @Size(max = 8) String hexcolor,
         @Nonnull @NotNull @Size(max = 260) String imagepath,
         boolean isimage,

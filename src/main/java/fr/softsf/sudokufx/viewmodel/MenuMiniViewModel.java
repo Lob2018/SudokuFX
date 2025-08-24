@@ -28,7 +28,7 @@ public class MenuMiniViewModel {
     private final StringBinding playerAccessibleText;
     private final StringBinding solveAccessibleText;
     private final StringBinding backupAccessibleText;
-    private final StringBinding backgroundAccessibleText;
+    private final StringBinding optionsAccessibleText;
     private final StringBinding languageAccessibleText;
     private final StringBinding languageIso;
     private final StringBinding helpAccessibleText;
@@ -37,7 +37,7 @@ public class MenuMiniViewModel {
     private final StringBinding playerTooltip;
     private final StringBinding solveTooltip;
     private final StringBinding backupTooltip;
-    private final StringBinding backgroundTooltip;
+    private final StringBinding optionsTooltip;
     private final StringBinding languageTooltip;
     private final StringBinding helpTooltip;
 
@@ -47,7 +47,7 @@ public class MenuMiniViewModel {
         playerAccessibleText = createStringBinding("menu.mini.button.player.accessibility");
         solveAccessibleText = createStringBinding("menu.mini.button.solve.accessibility");
         backupAccessibleText = createStringBinding("menu.mini.button.backup.accessibility");
-        backgroundAccessibleText = createStringBinding("menu.mini.button.background.accessibility");
+        optionsAccessibleText = createStringBinding("menu.mini.button.options.accessibility");
         languageAccessibleText = createStringBinding("menu.mini.button.language.accessibility");
         languageIso = createStringBinding("menu.mini.button.language.iso");
         helpAccessibleText = createStringBinding("menu.mini.button.help.accessibility");
@@ -56,7 +56,7 @@ public class MenuMiniViewModel {
         playerTooltip = createTooltipBinding("menu.mini.button.player.accessibility");
         solveTooltip = createTooltipBinding("menu.mini.button.solve.accessibility");
         backupTooltip = createTooltipBinding("menu.mini.button.backup.accessibility");
-        backgroundTooltip = createTooltipBinding("menu.mini.button.background.accessibility");
+        optionsTooltip = createTooltipBinding("menu.mini.button.options.accessibility");
         languageTooltip = languageAccessibleText;
         helpTooltip = helpAccessibleText;
     }
@@ -103,8 +103,8 @@ public class MenuMiniViewModel {
         return backupAccessibleText;
     }
 
-    public StringBinding backgroundAccessibleTextProperty() {
-        return backgroundAccessibleText;
+    public StringBinding optionsAccessibleTextProperty() {
+        return optionsAccessibleText;
     }
 
     public StringBinding languageAccessibleTextProperty() {
@@ -135,8 +135,8 @@ public class MenuMiniViewModel {
         return backupTooltip;
     }
 
-    public StringBinding backgroundTooltipProperty() {
-        return backgroundTooltip;
+    public StringBinding optionsTooltipProperty() {
+        return optionsTooltip;
     }
 
     public StringBinding languageTooltipProperty() {

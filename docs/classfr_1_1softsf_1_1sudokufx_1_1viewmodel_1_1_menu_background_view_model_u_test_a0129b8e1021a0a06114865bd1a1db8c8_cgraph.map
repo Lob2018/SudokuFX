@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown">
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,337,80"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model_u_test.html#a2f9a48914bdb7189a5417efeb839c69f" title=" " alt="" coords="385,13,628,72"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,40,369,40,369,45,337,45"/>

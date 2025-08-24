@@ -71,7 +71,7 @@ var sectionId = 'dynsection-3';
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="781,-177 601.5,-177 601.5,-157 781,-157 781,-177"/>
-<text text-anchor="middle" x="691.25" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.BackgroundDto</text>
+<text text-anchor="middle" x="691.25" y="-163.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.OptionsDto</text>
 </a>
 </g>
 </g>

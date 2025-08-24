@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.model.BackgroundUTest.SetterTests.givenBooleanValue_whenSettingIsImageFlag_thenIsImageFlagIsUpdated" name="fr.softsf.sudokufx.model.BackgroundUTest.SetterTests.givenBooleanValue_whenSettingIsImageFlag_thenIsImageFlagIsUpdated">
+<map id="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenBooleanValue_whenSettingIsImageFlag_thenIsImageFlagIsUpdated" name="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenBooleanValue_whenSettingIsImageFlag_thenIsImageFlagIsUpdated">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,23,257,97"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a52d7bac3b78d4e74dbb405a0e94e30a1" title=" " alt="" coords="305,5,471,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,41,289,37,289,42,258,46"/>

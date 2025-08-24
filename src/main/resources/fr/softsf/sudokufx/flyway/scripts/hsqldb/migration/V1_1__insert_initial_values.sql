@@ -9,10 +9,10 @@ INSERT
         playerlanguage(iso)
     VALUES('EN');
 
--- Creating values for background
+-- Creating values for options
 INSERT
     INTO
-        background(
+        OPTIONS(
             hexcolor,
             imagepath,
             isimage,
@@ -63,7 +63,7 @@ INSERT
         player(
             name,
             playerlanguageplayerlanguageid,
-            backgroundbackgroundid,
+            optionsoptionsid,
             menumenuid,
             isselected,
             createdat,
@@ -81,9 +81,9 @@ INSERT
         ),
         (
             SELECT
-                backgroundid
+                optionsid
             FROM
-                background
+                OPTIONS
             WHERE
                 hexcolor = '000000ff'
         ),

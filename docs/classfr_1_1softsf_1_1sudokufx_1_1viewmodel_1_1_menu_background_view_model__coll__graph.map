@@ -1,5 +1,5 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel">
-<area shape="rect" id="Node000001" title="ViewModel managing menu background UI state and accessibility strings." alt="" coords="5,491,253,1936"/>
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel">
+<area shape="rect" id="Node000001" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="5,491,253,1936"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="10,5,248,427"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,426,132,474,127,474,127,426"/>
 </map>

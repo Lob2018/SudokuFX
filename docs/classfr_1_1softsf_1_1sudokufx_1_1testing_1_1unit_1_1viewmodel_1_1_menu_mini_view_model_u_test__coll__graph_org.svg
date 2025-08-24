@@ -94,10 +94,10 @@
 <text text-anchor="start" x="21.62" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="31.62" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel()</text>
 <text text-anchor="start" x="21.62" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="31.62" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding background</text>
+<text text-anchor="start" x="31.62" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding options</text>
 <text text-anchor="start" x="31.62" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
 <text text-anchor="start" x="21.62" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="31.62" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding background</text>
+<text text-anchor="start" x="31.62" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding options</text>
 <text text-anchor="start" x="31.62" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">TooltipProperty()</text>
 <text text-anchor="start" x="21.62" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="31.62" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupAccessible</text>

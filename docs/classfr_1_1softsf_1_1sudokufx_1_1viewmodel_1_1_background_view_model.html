@@ -106,7 +106,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_backgro
 </div><!--header-->
 <div class="contents">
 
-<p>ViewModel for managing and applying background (color and image) to a GridPane.
+<p>ViewModel for managing and applying options (color and image) to a GridPane.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.viewmodel.BackgroundViewModel:</div>
@@ -122,10 +122,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a31264956cefbb506931b2f3f341c3c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles image file selection, validating the file format and initiating the image loading process.  <br /></td></tr>
 <tr class="separator:a31264956cefbb506931b2f3f341c3c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ac417af68b4adceb174056b41a2ac62" id="r_a6ac417af68b4adceb174056b41a2ac62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac417af68b4adceb174056b41a2ac62">init</a> (GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner)</td></tr>
-<tr class="memdesc:a6ac417af68b4adceb174056b41a2ac62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the GridPane background with either a predefined color or image.  <br /></td></tr>
+<tr class="memdesc:a6ac417af68b4adceb174056b41a2ac62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the GridPane options with either a predefined color or image.  <br /></td></tr>
 <tr class="separator:a6ac417af68b4adceb174056b41a2ac62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e9522b885b6cf128e920d1c44948929" id="r_a4e9522b885b6cf128e920d1c44948929"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e9522b885b6cf128e920d1c44948929">updateBackgroundColorAndApply</a> (GridPane sudokuFX, Color color)</td></tr>
-<tr class="memdesc:a4e9522b885b6cf128e920d1c44948929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the background color of the specified GridPane.  <br /></td></tr>
+<tr class="memdesc:a4e9522b885b6cf128e920d1c44948929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the options color of the specified GridPane.  <br /></td></tr>
 <tr class="separator:a4e9522b885b6cf128e920d1c44948929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -143,7 +143,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a1bc1728e837bd29193e843fed75802e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates if the given file is a valid image format.  <br /></td></tr>
 <tr class="separator:a1bc1728e837bd29193e843fed75802e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07736dbfb37fcf219ab06355453090c4" id="r_a07736dbfb37fcf219ab06355453090c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07736dbfb37fcf219ab06355453090c4">loadImage</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, GridPane sudokuFX)</td></tr>
-<tr class="memdesc:a07736dbfb37fcf219ab06355453090c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates the image loading and resizing process in a background task.  <br /></td></tr>
+<tr class="memdesc:a07736dbfb37fcf219ab06355453090c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates the image loading and resizing process in a options task.  <br /></td></tr>
 <tr class="separator:a07736dbfb37fcf219ab06355453090c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ff6ea2538df274f70c317cf9606448" id="r_a47ff6ea2538df274f70c317cf9606448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47ff6ea2538df274f70c317cf9606448">onImageTaskComplete</a> (Task&lt; BackgroundImage &gt; backgroundTask, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, GridPane sudokuFX)</td></tr>
 <tr class="memdesc:a47ff6ea2538df274f70c317cf9606448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the success case of the image loading task.  <br /></td></tr>
@@ -152,7 +152,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:aae3b22d88bb9cb016b47a366ac59d7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the failure case of the image loading task.  <br /></td></tr>
 <tr class="separator:aae3b22d88bb9cb016b47a366ac59d7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1111dc2bb886e40a10871036b8a8e28c" id="r_a1111dc2bb886e40a10871036b8a8e28c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1111dc2bb886e40a10871036b8a8e28c">setColorFromModel</a> (GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel)</td></tr>
-<tr class="memdesc:a1111dc2bb886e40a10871036b8a8e28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a background color to the GridPane and sets it in the ColorPicker.  <br /></td></tr>
+<tr class="memdesc:a1111dc2bb886e40a10871036b8a8e28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a options color to the GridPane and sets it in the ColorPicker.  <br /></td></tr>
 <tr class="separator:a1111dc2bb886e40a10871036b8a8e28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
@@ -161,9 +161,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a1a10c24e4132009bb97480388bd2c37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ViewModel for managing and applying background (color and image) to a GridPane. </p>
+<div class="textblock"><p>ViewModel for managing and applying options (color and image) to a GridPane. </p>
 <ul>
-<li>Sets and applies background color. - Handles image file selection, validation, and asynchronous loading. - Resizes images to fit the available space while maintaining aspect ratio. - Displays notifications and a loading spinner during image loading. - Handles success and error cases during image loading. </li>
+<li>Sets and applies options color. - Handles image file selection, validation, and asynchronous loading. - Resizes images to fit the available space while maintaining aspect ratio. - Displays notifications and a loading spinner during image loading. - Handles success and error cases during image loading. </li>
 </ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3a4097c6fc590dcbef9f75196489f3bd" name="a3a4097c6fc590dcbef9f75196489f3bd"></a>
@@ -269,7 +269,7 @@ Static Private Attributes</h2></td></tr>
     <tr><td class="paramname">selectedFile</td><td>The selected image file. </td></tr>
     <tr><td class="paramname">toaster</td><td>The toaster component for displaying notifications. </td></tr>
     <tr><td class="paramname">spinner</td><td>The spinner component for showing loading state. </td></tr>
-    <tr><td class="paramname">sudokuFX</td><td>The GridPane where the image background will be applied. </td></tr>
+    <tr><td class="paramname">sudokuFX</td><td>The GridPane where the image options will be applied. </td></tr>
   </table>
   </dd>
 </dl>
@@ -312,7 +312,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the GridPane background with either a predefined color or image. </p>
+<p>Initializes the GridPane options with either a predefined color or image. </p>
 <p>If a color is defined, applies it and updates the ColorPicker. If an image path is defined, loads and applies the image asynchronously.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -438,13 +438,13 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initiates the image loading and resizing process in a background task. </p>
+<p>Initiates the image loading and resizing process in a options task. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">selectedFile</td><td>The selected image file. </td></tr>
     <tr><td class="paramname">toaster</td><td>The toaster component for displaying notifications. </td></tr>
     <tr><td class="paramname">spinner</td><td>The spinner component for showing loading state. </td></tr>
-    <tr><td class="paramname">sudokuFX</td><td>The GridPane where the image background will be applied. </td></tr>
+    <tr><td class="paramname">sudokuFX</td><td>The GridPane where the image options will be applied. </td></tr>
   </table>
   </dd>
 </dl>
@@ -498,10 +498,10 @@ Static Private Attributes</h2></td></tr>
 <p>Handles the success case of the image loading task. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">backgroundTask</td><td>The background task. </td></tr>
+    <tr><td class="paramname">backgroundTask</td><td>The options task. </td></tr>
     <tr><td class="paramname">toaster</td><td>The toaster component for displaying notifications. </td></tr>
     <tr><td class="paramname">spinner</td><td>The spinner component for showing loading state. </td></tr>
-    <tr><td class="paramname">sudokuFX</td><td>The GridPane where the image background will be applied. </td></tr>
+    <tr><td class="paramname">sudokuFX</td><td>The GridPane where the image options will be applied. </td></tr>
   </table>
   </dd>
 </dl>
@@ -598,7 +598,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Applies a background color to the GridPane and sets it in the ColorPicker. </p>
+<p>Applies a options color to the GridPane and sets it in the ColorPicker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sudokuFX</td><td>The GridPane to update. </td></tr>
@@ -636,11 +636,11 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the background color of the specified GridPane. </p>
+<p>Sets the options color of the specified GridPane. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sudokuFX</td><td>The GridPane to update. </td></tr>
-    <tr><td class="paramname">color</td><td>The color to apply as the background. </td></tr>
+    <tr><td class="paramname">color</td><td>The color to apply as the options. </td></tr>
   </table>
   </dd>
 </dl>

@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenValidPlayer_whenGetPlayer_thenReturnsDto" name="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenValidPlayer_whenGetPlayer_thenReturnsDto">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,114,247,173"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a95a3f8cb6e5e286a81f1b43c0a5ca5db" title="Data Transfer Object representing a background entity." alt="" coords="550,31,789,58"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a95a3f8cb6e5e286a81f1b43c0a5ca5db" title="Data Transfer Object representing a options entity." alt="" coords="550,31,789,58"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,111,294,90,417,69,534,54,535,59,418,74,295,95,217,116"/>
 <area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0b4cf476a6a3d3f1f289617aa14a93cb" title="Data Transfer Object representing a game entity." alt="" coords="567,85,772,111"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,121,294,115,428,105,552,99,552,104,428,110,295,121,247,127"/>

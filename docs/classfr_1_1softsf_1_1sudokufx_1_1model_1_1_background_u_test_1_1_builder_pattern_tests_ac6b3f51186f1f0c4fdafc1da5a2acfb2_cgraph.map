@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.model.BackgroundUTest.BuilderPatternTests.buildBackgroundWithInvalidColor" name="fr.softsf.sudokufx.model.BackgroundUTest.BuilderPatternTests.buildBackgroundWithInvalidColor">
+<map id="fr.softsf.sudokufx.model.OptionsUTest.BuilderPatternTests.buildBackgroundWithInvalidColor" name="fr.softsf.sudokufx.model.OptionsUTest.BuilderPatternTests.buildBackgroundWithInvalidColor">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,255,64"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a668bdc97583adbe5617eaa620b8bdef4" title=" " alt="" coords="303,13,469,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,32,287,32,287,37,255,37"/>

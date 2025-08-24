@@ -15,8 +15,8 @@ import org.testfx.framework.junit5.ApplicationExtension;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudokufx.dto.BackgroundDto;
 import fr.softsf.sudokufx.dto.MenuDto;
+import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.service.PlayerService;
@@ -50,8 +50,8 @@ class InMemoryPlayerUTest {
         return new PlayerLanguageDto(1L, "FR");
     }
 
-    private BackgroundDto defaultBackground() {
-        return new BackgroundDto(1L, "000000ff", "", false, true);
+    private OptionsDto defaultOptions() {
+        return new OptionsDto(1L, "000000ff", "", false, true);
     }
 
     private MenuDto defaultMenu() {
@@ -63,12 +63,12 @@ class InMemoryPlayerUTest {
             String playerName,
             Boolean isSelected,
             PlayerLanguageDto playerLanguage,
-            BackgroundDto background,
+            OptionsDto options,
             MenuDto menu) {
         return new PlayerDto(
                 playerId,
                 playerLanguage != null ? playerLanguage : defaultPlayerLanguage(),
-                background != null ? background : defaultBackground(),
+                options != null ? options : defaultOptions(),
                 menu != null ? menu : defaultMenu(),
                 null,
                 playerName,
@@ -97,7 +97,7 @@ class InMemoryPlayerUTest {
                         "Jane Smith",
                         false,
                         new PlayerLanguageDto(2L, "EN"),
-                        new BackgroundDto(2L, "ffffff00", "", false, true),
+                        new OptionsDto(2L, "ffffff00", "", false, true),
                         new MenuDto((byte) 2, (byte) 3));
         when(playerServiceMock.getPlayer()).thenReturn(initialPlayer);
         inMemoryPlayer = new InMemoryPlayer(playerServiceMock);

@@ -138,11 +138,11 @@
                     <Tooltip/>
                 </tooltip>
             </Button>
-            <Button fx:id="menuMiniButtonBackground" styleClass="menuMiniButton" onAction="#handleMenuBackgroundShow">
+            <Button fx:id="menuMiniButtonOptions" styleClass="menuMiniButton" onAction="#handleMenuOptionsShow">
                 <graphic>
                     <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                         <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
-                        <Text text="&#xe3f4;" styleClass="material"/>
+                        <Text text="&#xe8b8;" styleClass="material"/>
                     </HBox>
                 </graphic>
                 <tooltip>
@@ -314,12 +314,12 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuMaxiButtonBackground" styleClass="menuButton" onAction="#handleMenuBackgroundShow">
+                <Button fx:id="menuMaxiButtonOptions" styleClass="menuButton" onAction="#handleMenuOptionsShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownOpen"/>
-                            <Text text="&#xe3f4;" styleClass="material"/>
-                            <Label fx:id="menuMaxiButtonBackgroundText" styleClass="root,menuButtonLabel"/>
+                            <Text text="&#xe8b8;" styleClass="material"/>
+                            <Label fx:id="menuMaxiButtonOptionsText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
                     <tooltip>
@@ -558,16 +558,16 @@
             </HBox>
         </VBox>
         <!---->
-        <!--Background menu (submenu opened)-->
+        <!--Options menu (submenu opened)-->
         <!---->
-        <VBox fx:id="menuBackground" alignment="TOP_CENTER" styleClass="menu">
+        <VBox fx:id="menuOptions" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuBackgroundButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
+                <Button fx:id="menuOptionsButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
                             <Text text="&#xe9bd;" styleClass="material,menuClose"/>
-                            <Label fx:id="menuBackgroundButtonReduceText" styleClass="root,menuButtonLabel"/>
+                            <Label fx:id="menuOptionsButtonReduceText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
                     <tooltip>
@@ -577,13 +577,13 @@
                 <Region styleClass="menuButtonCircle" visible="false"/>
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuBackgroundButtonBackground" styleClass="menuButton,subMenuOpened"
+                <Button fx:id="menuOptionsButtonOptions" styleClass="menuButton,subMenuOpened"
                         onAction="#handleMenuMaxiShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Text text="&#xe5c6;" styleClass="material,menuDropdownClose"/>
-                            <Text text="&#xe3f4;" styleClass="material"/>
-                            <Label fx:id="menuBackgroundButtonBackgroundText"
+                            <Text text="&#xe8b8;" styleClass="material"/>
+                            <Label fx:id="menuOptionsButtonOptionsText"
                                    styleClass="root,bold-text,menuButtonLabel"/>
                         </HBox>
                     </graphic>
@@ -595,12 +595,12 @@
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Region styleClass="submenuIndentation" visible="false"/>
-                <Button fx:id="menuBackgroundButtonImage" styleClass="menuButton" onAction="#handleFileImageChooser">
+                <Button fx:id="menuOptionsButtonImage" styleClass="menuButton" onAction="#handleFileImageChooser">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
                             <Text text="&#xe43f;" styleClass="material"/>
-                            <Label fx:id="menuBackgroundButtonImageText" styleClass="root,menuButtonLabel"/>
+                            <Label fx:id="menuOptionsButtonImageText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
                     <tooltip>
@@ -610,7 +610,7 @@
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Region styleClass="submenuIndentation" visible="false"/>
-                <ColorPicker fx:id="menuBackgroundButtonColor" styleClass="button,menuButton">
+                <ColorPicker fx:id="menuOptionsButtonColor" styleClass="button,menuButton">
                     <tooltip>
                         <Tooltip/>
                     </tooltip>
@@ -618,12 +618,12 @@
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Region styleClass="submenuIndentation" visible="false"/>
-                <Button fx:id="menuBackgroundButtonOpacity" styleClass="menuButton" onAction="#handleGridOpacity">
+                <Button fx:id="menuOptionsButtonOpacity" styleClass="menuButton" onAction="#handleGridOpacity">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
                             <Text text="&#xe91c;" styleClass="material"/>
-                            <Label fx:id="menuBackgroundButtonOpacityText" styleClass="root,menuButtonLabel"/>
+                            <Label fx:id="menuOptionsButtonOpacityText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
                     <tooltip>

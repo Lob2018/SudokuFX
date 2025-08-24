@@ -93,7 +93,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="164.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Long playerId, String</text>
 <text text-anchor="start" x="164.5" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerName, Boolean isSelected,</text>
 <text text-anchor="start" x="164.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PlayerLanguageDto playerLanguage,</text>
-<text text-anchor="start" x="164.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BackgroundDto background, MenuDto menu)</text>
+<text text-anchor="start" x="164.5" y="-66.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BackgroundDto options, MenuDto menu)</text>
 <text text-anchor="start" x="156" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="164.5" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundDto defaultBackground()</text>
 <text text-anchor="start" x="156" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.model.BackgroundUTest.SetterTests.givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.BackgroundUTest.SetterTests.givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown">
+<map id="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,255,104"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="79,28,82,18,92,10,108,5,130,3,157,6,173,13,171,18,155,11,130,8,109,10,94,15,86,21,84,30"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#a9a537716d8a4993d3858982c30d9522a" title=" " alt="" coords="303,45,476,88"/>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.givenNullFile_whenHandleFileImageChooser_thenShowErrorToast" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.givenNullFile_whenHandleFileImageChooser_thenShowErrorToast">
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenNullFile_whenHandleFileImageChooser_thenShowErrorToast" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenNullFile_whenHandleFileImageChooser_thenShowErrorToast">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,60,262,135"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a260352d8d5ffcc3f691984620672f38b" title="Handles image file selection by validating the file format and starting the image loading process." alt="" coords="310,68,559,127"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,95,294,95,294,100,262,100"/>

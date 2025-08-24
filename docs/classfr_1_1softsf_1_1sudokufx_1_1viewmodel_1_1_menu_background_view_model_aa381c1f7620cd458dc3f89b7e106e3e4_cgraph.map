@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.onImageTaskError" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.onImageTaskError">
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.onImageTaskError" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.onImageTaskError">
 <area shape="rect" id="Node000001" title="Called when the image loading task fails." alt="" coords="5,139,302,181"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="350,72,619,115"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,135,359,116,361,121,263,141"/>

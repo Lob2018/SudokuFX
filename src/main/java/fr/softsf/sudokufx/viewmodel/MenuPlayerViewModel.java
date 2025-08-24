@@ -17,8 +17,8 @@ import javafx.collections.ObservableList;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.dto.BackgroundDto;
 import fr.softsf.sudokufx.dto.MenuDto;
+import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
@@ -194,7 +194,7 @@ public class MenuPlayerViewModel {
         return new PlayerDto(
                 1L,
                 new PlayerLanguageDto(1L, "FR"),
-                new BackgroundDto(1L, "#3498db", "", false, true),
+                new OptionsDto(1L, "#3498db", "", false, true),
                 new MenuDto((byte) 1, (byte) 1),
                 null,
                 name,

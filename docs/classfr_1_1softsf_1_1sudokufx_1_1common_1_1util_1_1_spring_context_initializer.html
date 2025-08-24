@@ -105,7 +105,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_sp
 </div><!--header-->
 <div class="contents">
 
-<p>Manages asynchronous initialization of the Spring application context via JavaFX Tasks, providing methods to create and run these tasks in background threads.
+<p>Manages asynchronous initialization of the Spring application context via JavaFX Tasks, providing methods to create and run these tasks in options threads.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.common.util.SpringContextInitializer:</div>
@@ -124,7 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aec80b2c8add2ad3519eeac6c1e8c05cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a JavaFX Task that initializes the Spring application context using the specified Spring Boot application class.  <br /></td></tr>
 <tr class="separator:aec80b2c8add2ad3519eeac6c1e8c05cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7185e1ba2b9219e85f8308a3425fb26e" id="r_a7185e1ba2b9219e85f8308a3425fb26e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7185e1ba2b9219e85f8308a3425fb26e">runInitializationTask</a> (Task&lt; Void &gt; task)</td></tr>
-<tr class="memdesc:a7185e1ba2b9219e85f8308a3425fb26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given JavaFX Task in a new background thread.  <br /></td></tr>
+<tr class="memdesc:a7185e1ba2b9219e85f8308a3425fb26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given JavaFX Task in a new options thread.  <br /></td></tr>
 <tr class="separator:a7185e1ba2b9219e85f8308a3425fb26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -133,7 +133,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a527f0898149cc382a18fc679cf0a9b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages asynchronous initialization of the Spring application context via JavaFX Tasks, providing methods to create and run these tasks in background threads. </p>
+<div class="textblock"><p>Manages asynchronous initialization of the Spring application context via JavaFX Tasks, providing methods to create and run these tasks in options threads. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1d70b1c8db446b32e9547d071bb6d663" name="a1d70b1c8db446b32e9547d071bb6d663"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d70b1c8db446b32e9547d071bb6d663">&#9670;&#160;</a></span>SpringContextInitializer()</h2>
@@ -208,7 +208,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given JavaFX Task in a new background thread. </p>
+<p>Starts the given JavaFX Task in a new options thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">task</td><td>the initialization task to run; must not be null </td></tr>

@@ -1,10 +1,10 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest.givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated">
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,143,275,217"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#aa38ef0db64c962e692b25c3bddf2ef0e" title="Initializes the GridPane background with settings from database." alt="" coords="323,159,530,201"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#aa38ef0db64c962e692b25c3bddf2ef0e" title="Initializes the GridPane options with settings from database." alt="" coords="323,159,530,201"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,177,307,177,307,183,275,183"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a260352d8d5ffcc3f691984620672f38b" title="Handles image file selection by validating the file format and starting the image loading process." alt="" coords="596,68,845,127"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="504,155,598,129,600,134,506,161"/>
-<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#abae6bf1bd0e33503185cef94b3ec339e" title="Applies a background color to the GridPane and sets it in the ColorPicker." alt="" coords="601,151,840,209"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#abae6bf1bd0e33503185cef94b3ec339e" title="Applies a options color to the GridPane and sets it in the ColorPicker." alt="" coords="601,151,840,209"/>
 <area shape="poly" id="edge21_Node000002_Node000015" title=" " alt="" coords="530,177,585,177,585,183,530,183"/>
 <area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#aca0027a7ccecd1931f900db03d8cc048" title="Sets the grid opacity mode." alt="" coords="578,233,863,276"/>
 <area shape="poly" id="edge22_Node000002_Node000016" title=" " alt="" coords="506,199,579,219,610,227,609,232,577,224,505,205"/>

@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Applies a background color to the GridPane and sets it in the ColorPicker.">
+<g id="a_Node000001"><a xlink:title="Applies a options color to the GridPane and sets it in the ColorPicker.">
 <polygon fill="#999999" stroke="#666666" points="204.25,-32 0,-32 0,0 204.25,0 204.25,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="102.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundViewModel.setColorFromModel</text>

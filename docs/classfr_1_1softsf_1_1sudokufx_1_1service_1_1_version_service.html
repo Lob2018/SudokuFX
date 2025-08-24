@@ -203,7 +203,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the current application version is up-to-date by querying the GitHub API. </p>
-<p>This method runs in the background using a JavaFX <code>Task</code> to avoid blocking the UI thread. It retrieves the latest release version from the repository and compares it with the current application version. In case of errors (e.g., timeout, interruption, or network issues), it assumes the version is up-to-date and logs the exception details.</p>
+<p>This method runs in the options using a JavaFX <code>Task</code> to avoid blocking the UI thread. It retrieves the latest release version from the repository and compares it with the current application version. In case of errors (e.g., timeout, interruption, or network issues), it assumes the version is up-to-date and logs the exception details.</p>
 <dl class="section return"><dt>Returns</dt><dd>A <code>Task&lt;Boolean&gt;</code> that returns <code>true</code> if the version is up-to-date or if an error occurs, and <code>false</code> if an update is available. </dd></dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>

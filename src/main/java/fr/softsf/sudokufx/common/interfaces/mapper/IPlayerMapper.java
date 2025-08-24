@@ -23,7 +23,7 @@ import fr.softsf.sudokufx.model.Player;
         uses = {
             MapperUtils.class,
             IPlayerLanguageMapper.class,
-            IBackgroundMapper.class,
+            IOptionsMapper.class,
             IMenuMapper.class,
             IGameMapper.class
         })
@@ -39,7 +39,7 @@ public interface IPlayerMapper {
      * @return a PlayerDto representing the data of the given Player entity.
      */
     @Mapping(target = "playerlanguageidDto", source = "player.playerlanguageid")
-    @Mapping(target = "backgroundidDto", source = "player.backgroundid")
+    @Mapping(target = "optionsidDto", source = "player.optionsid")
     @Mapping(target = "menuidDto", source = "player.menuid")
     @Mapping(
             target = "selectedGame",
@@ -56,7 +56,7 @@ public interface IPlayerMapper {
      * @return a Player entity representing the data of the given PlayerDto.
      */
     @Mapping(target = "playerlanguageid", source = "dto.playerlanguageidDto")
-    @Mapping(target = "backgroundid", source = "dto.backgroundidDto")
+    @Mapping(target = "optionsid", source = "dto.optionsidDto")
     @Mapping(target = "menuid", source = "dto.menuidDto")
     @Mapping(target = "games", ignore = true)
     Player mapPlayerDtoToPlayer(PlayerDto dto);

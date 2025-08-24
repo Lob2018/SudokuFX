@@ -88,7 +88,7 @@ var sectionId = 'dynsection-6';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a5029633546f4a90d0085421fbf9bb57c" target="_top" xlink:title="Sets up bindings between the background menu UI components and menuBackgroundViewModel.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a5029633546f4a90d0085421fbf9bb57c" target="_top" xlink:title="Sets up bindings between the options menu UI components and menuBackgroundViewModel.">
 <polygon fill="white" stroke="#666666" points="351.5,-544 154,-544 154,-512 351.5,-512 351.5,-544"/>
 <text text-anchor="start" x="162" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="middle" x="252.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView.backgroundMenuInitialization</text>

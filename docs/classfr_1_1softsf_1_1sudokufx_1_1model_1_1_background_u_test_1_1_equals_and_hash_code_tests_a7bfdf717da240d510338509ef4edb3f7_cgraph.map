@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.model.BackgroundUTest.EqualsAndHashCodeTests.givenTwoBackgroundsWithSameProperties_whenComparingEquality_thenTheyAreEqual" name="fr.softsf.sudokufx.model.BackgroundUTest.EqualsAndHashCodeTests.givenTwoBackgroundsWithSameProperties_whenComparingEquality_thenTheyAreEqual">
+<map id="fr.softsf.sudokufx.model.OptionsUTest.EqualsAndHashCodeTests.givenTwoBackgroundsWithSameProperties_whenComparingEquality_thenTheyAreEqual" name="fr.softsf.sudokufx.model.OptionsUTest.EqualsAndHashCodeTests.givenTwoBackgroundsWithSameProperties_whenComparingEquality_thenTheyAreEqual">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,314,80"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#ae8c7ec10ec0589db6ca37dd4e753a513" title=" " alt="" coords="362,21,528,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="314,40,346,40,346,45,314,45"/>

@@ -58,12 +58,12 @@ import fr.softsf.sudokufx.view.component.list.GenericDtoListCell;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.HelpViewModel;
-import fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuMiniViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuNewViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSolveViewModel;
@@ -95,7 +95,7 @@ public final class DefaultView implements IMainView {
     @Autowired private MenuPlayerViewModel menuPlayerViewModel;
     @Autowired private MenuSaveViewModel menuSaveViewModel;
     @Autowired private MenuSolveViewModel menuSolveViewModel;
-    @Autowired private MenuBackgroundViewModel menuBackgroundViewModel;
+    @Autowired private MenuOptionsViewModel menuOptionsViewModel;
     @Autowired private MenuNewViewModel menuNewViewModel;
     @Autowired private GridViewModel gridViewModel;
 
@@ -110,7 +110,7 @@ public final class DefaultView implements IMainView {
     @FXML private VBox menuPlayer;
     @FXML private VBox menuSolve;
     @FXML private VBox menuSave;
-    @FXML private VBox menuBackground;
+    @FXML private VBox menuOptions;
 
     @FXML private Button menuHiddenButtonShow;
     @FXML private Button menuMiniButtonShow;
@@ -120,7 +120,7 @@ public final class DefaultView implements IMainView {
     @FXML private Button menuMiniButtonDifficult;
     @FXML private Button menuMiniButtonSolve;
     @FXML private Button menuMiniButtonBackup;
-    @FXML private Button menuMiniButtonBackground;
+    @FXML private Button menuMiniButtonOptions;
     @FXML private Button menuMiniButtonLanguage;
     @FXML private Label menuMiniButtonLanguageIso;
     @FXML private Button menuMiniButtonHelp;
@@ -143,8 +143,8 @@ public final class DefaultView implements IMainView {
     @FXML private Label menuMaxiButtonSolveText;
     @FXML private Button menuMaxiButtonBackup;
     @FXML private Label menuMaxiButtonBackupText;
-    @FXML private Button menuMaxiButtonBackground;
-    @FXML private Label menuMaxiButtonBackgroundText;
+    @FXML private Button menuMaxiButtonOptions;
+    @FXML private Label menuMaxiButtonOptionsText;
     @FXML private Button menuMaxiButtonLanguage;
     @FXML private Label menuMaxiButtonLanguageIso;
     @FXML private Label menuMaxiButtonLanguageText;
@@ -179,15 +179,15 @@ public final class DefaultView implements IMainView {
     @FXML private ListView<GameDto> menuSaveListView;
     @FXML private Rectangle menuSaveClipListView;
 
-    @FXML private Button menuBackgroundButtonReduce;
-    @FXML private Label menuBackgroundButtonReduceText;
-    @FXML private Button menuBackgroundButtonBackground;
-    @FXML private Label menuBackgroundButtonBackgroundText;
-    @FXML private Button menuBackgroundButtonImage;
-    @FXML private Label menuBackgroundButtonImageText;
-    @FXML private Button menuBackgroundButtonOpacity;
-    @FXML private Label menuBackgroundButtonOpacityText;
-    @FXML private ColorPicker menuBackgroundButtonColor;
+    @FXML private Button menuOptionsButtonReduce;
+    @FXML private Label menuOptionsButtonReduceText;
+    @FXML private Button menuOptionsButtonOptions;
+    @FXML private Label menuOptionsButtonOptionsText;
+    @FXML private Button menuOptionsButtonImage;
+    @FXML private Label menuOptionsButtonImageText;
+    @FXML private Button menuOptionsButtonOpacity;
+    @FXML private Label menuOptionsButtonOpacityText;
+    @FXML private ColorPicker menuOptionsButtonColor;
 
     private Timeline hideMiniMenuTimeline;
 
@@ -205,7 +205,7 @@ public final class DefaultView implements IMainView {
         playerMenuInitialization();
         saveMenuInitialization();
         solveMenuInitialization();
-        backgroundMenuInitialization();
+        optionsMenuInitialization();
         newMenuInitialization();
         activeMenuManagerInitialization();
         gridInitialization();
@@ -292,99 +292,99 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Sets up bindings between the background menu UI components and menuBackgroundViewModel.
-     * Initializes the background settings from database and applies them to the UI.
+     * Sets up bindings between the options menu UI components and menuOptionsViewModel. Initializes
+     * the options settings from database and applies them to the UI.
      *
      * <p>This method performs the following operations:
      *
      * <ul>
      *   <li>Binds accessibility texts, tooltips, role descriptions, and labels
-     *   <li>Synchronizes background color picker changes with the ViewModel
-     *   <li>Initializes background settings (color, image, grid transparency) from database
+     *   <li>Synchronizes options changes with the ViewModel
+     *   <li>Initializes options settings (color, image, grid transparency, etc.) from database
      *   <li>Applies initial grid opacity mode to the UI components
      * </ul>
      */
-    private void backgroundMenuInitialization() {
-        menuMaxiButtonBackground
+    private void optionsMenuInitialization() {
+        menuMaxiButtonOptions
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.backgroundMenuMaxiAccessibleTextProperty());
-        menuMaxiButtonBackground
+                .bind(menuOptionsViewModel.optionsMenuMaxiAccessibleTextProperty());
+        menuMaxiButtonOptions
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundMenuMaxiTooltipProperty());
-        menuMaxiButtonBackground
+                .bind(menuOptionsViewModel.optionsMenuMaxiTooltipProperty());
+        menuMaxiButtonOptions
                 .accessibleRoleDescriptionProperty()
-                .bind(menuBackgroundViewModel.backgroundMenuMaxiRoleDescriptionProperty());
-        menuMaxiButtonBackgroundText
+                .bind(menuOptionsViewModel.optionsMenuMaxiRoleDescriptionProperty());
+        menuMaxiButtonOptionsText
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundMenuMaxiTextProperty());
-        menuBackgroundButtonReduce
+                .bind(menuOptionsViewModel.optionsMenuMaxiTextProperty());
+        menuOptionsButtonReduce
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundReduceTooltipProperty());
-        menuBackgroundButtonReduce
+                .bind(menuOptionsViewModel.optionsReduceTooltipProperty());
+        menuOptionsButtonReduce
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.backgroundReduceAccessibleTextProperty());
-        menuBackgroundButtonReduceText
+                .bind(menuOptionsViewModel.optionsReduceAccessibleTextProperty());
+        menuOptionsButtonReduceText
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundReduceTextProperty());
-        menuBackgroundButtonBackgroundText
+                .bind(menuOptionsViewModel.optionsReduceTextProperty());
+        menuOptionsButtonOptionsText
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundTextProperty());
-        menuBackgroundButtonBackground
+                .bind(menuOptionsViewModel.optionsTextProperty());
+        menuOptionsButtonOptions
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.backgroundAccessibleTextProperty());
-        menuBackgroundButtonBackground
+                .bind(menuOptionsViewModel.optionsAccessibleTextProperty());
+        menuOptionsButtonOptions
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundTooltipProperty());
-        menuBackgroundButtonBackground
+                .bind(menuOptionsViewModel.optionsTooltipProperty());
+        menuOptionsButtonOptions
                 .accessibleRoleDescriptionProperty()
-                .bind(menuBackgroundViewModel.backgroundRoleDescriptionProperty());
-        menuBackgroundButtonImageText
+                .bind(menuOptionsViewModel.optionsRoleDescriptionProperty());
+        menuOptionsButtonImageText
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundImageTextProperty());
-        menuBackgroundButtonImage
+                .bind(menuOptionsViewModel.optionsImageTextProperty());
+        menuOptionsButtonImage
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.backgroundImageAccessibleTextProperty());
-        menuBackgroundButtonImage
+                .bind(menuOptionsViewModel.optionsImageAccessibleTextProperty());
+        menuOptionsButtonImage
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundImageTooltipProperty());
-        menuBackgroundButtonImage
+                .bind(menuOptionsViewModel.optionsImageTooltipProperty());
+        menuOptionsButtonImage
                 .accessibleRoleDescriptionProperty()
-                .bind(menuBackgroundViewModel.backgroundImageRoleDescriptionProperty());
-        menuBackgroundButtonOpacityText
+                .bind(menuOptionsViewModel.optionsImageRoleDescriptionProperty());
+        menuOptionsButtonOpacityText
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundOpacityTextProperty());
-        menuBackgroundButtonOpacity
+                .bind(menuOptionsViewModel.optionsOpacityTextProperty());
+        menuOptionsButtonOpacity
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.backgroundOpacityAccessibleTextProperty());
-        menuBackgroundButtonOpacity
+                .bind(menuOptionsViewModel.optionsOpacityAccessibleTextProperty());
+        menuOptionsButtonOpacity
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundOpacityTooltipProperty());
-        menuBackgroundButtonOpacity
+                .bind(menuOptionsViewModel.optionsOpacityTooltipProperty());
+        menuOptionsButtonOpacity
                 .accessibleRoleDescriptionProperty()
-                .bind(menuBackgroundViewModel.backgroundOpacityRoleDescriptionProperty());
-        menuBackgroundButtonColor
+                .bind(menuOptionsViewModel.optionsOpacityRoleDescriptionProperty());
+        menuOptionsButtonColor
                 .accessibleTextProperty()
-                .bind(menuBackgroundViewModel.backgroundColorAccessibleTextProperty());
-        menuBackgroundButtonColor
+                .bind(menuOptionsViewModel.optionsColorAccessibleTextProperty());
+        menuOptionsButtonColor
                 .getTooltip()
                 .textProperty()
-                .bind(menuBackgroundViewModel.backgroundColorTooltipProperty());
-        menuBackgroundButtonColor
+                .bind(menuOptionsViewModel.optionsColorTooltipProperty());
+        menuOptionsButtonColor
                 .accessibleRoleDescriptionProperty()
-                .bind(menuBackgroundViewModel.backgroundColorRoleDescriptionProperty());
-        menuBackgroundButtonColor
+                .bind(menuOptionsViewModel.optionsColorRoleDescriptionProperty());
+        menuOptionsButtonColor
                 .valueProperty()
                 .addListener(
                         (obs, oldColor, newColor) ->
-                                menuBackgroundViewModel.updateBackgroundColorAndApply(
+                                menuOptionsViewModel.updateOptionsColorAndApply(
                                         sudokuFX, newColor));
-        menuBackgroundViewModel.init(sudokuFX, menuBackgroundButtonColor, toaster, spinner);
-        applyOpaqueMode(menuBackgroundViewModel.getOpaqueMode());
+        menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, toaster, spinner);
+        applyOpaqueMode(menuOptionsViewModel.getOpaqueMode());
     }
 
     /**
@@ -550,7 +550,7 @@ public final class DefaultView implements IMainView {
         bindVisibleAndManaged(menuPlayer, ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER);
         bindVisibleAndManaged(menuSolve, ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE);
         bindVisibleAndManaged(menuSave, ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP);
-        bindVisibleAndManaged(menuBackground, ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND);
+        bindVisibleAndManaged(menuOptions, ActiveMenuOrSubmenuViewModel.ActiveMenu.OPTIONS);
     }
 
     private void bindVisibleAndManaged(
@@ -763,13 +763,13 @@ public final class DefaultView implements IMainView {
                 .getTooltip()
                 .textProperty()
                 .bind(menuMiniViewModel.backupTooltipProperty());
-        menuMiniButtonBackground
+        menuMiniButtonOptions
                 .textProperty()
-                .bind(menuMiniViewModel.backgroundAccessibleTextProperty());
-        menuMiniButtonBackground
+                .bind(menuMiniViewModel.optionsAccessibleTextProperty());
+        menuMiniButtonOptions
                 .getTooltip()
                 .textProperty()
-                .bind(menuMiniViewModel.backgroundTooltipProperty());
+                .bind(menuMiniViewModel.optionsTooltipProperty());
         menuMiniButtonLanguage
                 .textProperty()
                 .bind(menuMiniViewModel.languageAccessibleTextProperty());
@@ -929,17 +929,16 @@ public final class DefaultView implements IMainView {
      */
     @FXML
     private void handleFileImageChooser() {
-        File selectedFile = menuBackgroundViewModel.chooseBackgroundImage(primaryStage);
+        File selectedFile = menuOptionsViewModel.chooseBackgroundImage(primaryStage);
         if (Objects.nonNull(selectedFile)) {
-            menuBackgroundViewModel.handleFileImageChooser(
-                    selectedFile, toaster, spinner, sudokuFX);
+            menuOptionsViewModel.handleFileImageChooser(selectedFile, toaster, spinner, sudokuFX);
         }
     }
 
     /** Handles grid transparency toggle button action. */
     @FXML
     private void handleGridOpacity() {
-        boolean isOpaque = menuBackgroundViewModel.toggleGridOpacity();
+        boolean isOpaque = menuOptionsViewModel.toggleGridOpacity();
         applyOpaqueMode(isOpaque);
     }
 
@@ -1032,7 +1031,7 @@ public final class DefaultView implements IMainView {
             case "menuPlayerButtonPlayer" -> menuMaxiButtonPlayer.requestFocus();
             case "menuSolveButtonSolve" -> menuMaxiButtonSolve.requestFocus();
             case "menuSaveButtonSave" -> menuMaxiButtonBackup.requestFocus();
-            case "menuBackgroundButtonBackground" -> menuMaxiButtonBackground.requestFocus();
+            case "menuOptionsButtonBackground" -> menuMaxiButtonOptions.requestFocus();
             default -> menuMaxiButtonReduce.requestFocus();
         }
         hideMiniMenuTimeline.stop();
@@ -1065,11 +1064,10 @@ public final class DefaultView implements IMainView {
         menuSaveButtonSave.requestFocus();
     }
 
-    /** Activates the BACKGROUND menu and sets focus on the background button. */
-    public void handleMenuBackgroundShow() {
-        activeMenuOrSubmenuViewModel.setActiveMenu(
-                ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKGROUND);
-        menuBackgroundButtonBackground.requestFocus();
+    /** Activates the OPTIONS menu and sets focus on the options button. */
+    public void handleMenuOptionsShow() {
+        activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.OPTIONS);
+        menuOptionsButtonOptions.requestFocus();
     }
 
     /** Displays the Help menu dialog with game rules and the application log path. */

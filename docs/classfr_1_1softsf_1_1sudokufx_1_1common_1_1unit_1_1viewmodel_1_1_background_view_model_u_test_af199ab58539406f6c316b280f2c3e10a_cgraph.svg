@@ -70,7 +70,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a6ac417af68b4adceb174056b41a2ac62" target="_top" xlink:title="Initializes the GridPane background with either a predefined color or image.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a6ac417af68b4adceb174056b41a2ac62" target="_top" xlink:title="Initializes the GridPane options with either a predefined color or image.">
 <polygon fill="white" stroke="#666666" points="428.75,-126.95 283.75,-126.95 283.75,-94.95 428.75,-94.95 428.75,-126.95"/>
 <text text-anchor="start" x="291.75" y="-113.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="356.25" y="-101.45" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundViewModel.init</text>
@@ -109,7 +109,7 @@ var sectionId = 'dynsection-1';
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a1111dc2bb886e40a10871036b8a8e28c" target="_top" xlink:title="Applies a background color to the GridPane and sets it in the ColorPicker.">
+<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a1111dc2bb886e40a10871036b8a8e28c" target="_top" xlink:title="Applies a options color to the GridPane and sets it in the ColorPicker.">
 <polygon fill="white" stroke="#666666" points="669,-98.95 464.75,-98.95 464.75,-66.95 669,-66.95 669,-98.95"/>
 <text text-anchor="start" x="472.75" y="-85.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="566.88" y="-73.45" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundViewModel.setColorFromModel</text>
@@ -166,7 +166,7 @@ var sectionId = 'dynsection-1';
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a07736dbfb37fcf219ab06355453090c4" target="_top" xlink:title="Initiates the image loading and resizing process in a background task.">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a07736dbfb37fcf219ab06355453090c4" target="_top" xlink:title="Initiates the image loading and resizing process in a options task.">
 <polygon fill="white" stroke="#666666" points="874,-176.95 710.25,-176.95 710.25,-144.95 874,-144.95 874,-176.95"/>
 <text text-anchor="start" x="718.25" y="-163.45" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="792.12" y="-151.45" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundViewModel.loadImage</text>

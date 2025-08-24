@@ -35,7 +35,7 @@ public class Player {
 
     private static final String PLAYERLANGUAGEID_MUST_NOT_BE_NULL =
             "playerlanguageid must not be null";
-    private static final String BACKGROUNID_MUST_NOT_BE_NULL = "backgroundid must not be null";
+    private static final String BACKGROUNID_MUST_NOT_BE_NULL = "optionsid must not be null";
     private static final String MENU_MUST_NOT_BE_NULL = "menu must not be null";
     private static final String NAME_MUST_NOT_BE_NULL = "name must not be null";
     private static final String CREATEDAT_MUST_NOT_BE_NULL = "createdat must not be null";
@@ -55,8 +55,8 @@ public class Player {
     @NotNull @OneToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
-    @JoinColumn(name = "backgroundbackgroundid", nullable = false)
-    private Background backgroundid;
+    @JoinColumn(name = "optionsoptionsid", nullable = false)
+    private Options optionsid;
 
     @NotNull @ManyToOne
     @Cascade(CascadeType.ALL)
@@ -88,7 +88,7 @@ public class Player {
     public Player(
             Long playerid,
             @Nonnull @NotNull PlayerLanguage playerlanguageid,
-            @Nonnull @NotNull Background backgroundid,
+            @Nonnull @NotNull Options optionsid,
             @Nonnull @NotNull Menu menuid,
             Set<Game> games,
             @Nonnull @NotNull String name,
@@ -97,7 +97,7 @@ public class Player {
             @Nonnull @NotNull LocalDateTime updatedat) {
         this.playerid = playerid;
         this.playerlanguageid = validatePlayerLanguage(playerlanguageid);
-        this.backgroundid = validateBackground(backgroundid);
+        this.optionsid = validateOptions(optionsid);
         this.menuid = validateMenu(menuid);
         this.games = (games != null) ? games : new LinkedHashSet<>();
         this.name = validateName(name);
@@ -110,8 +110,8 @@ public class Player {
         return Objects.requireNonNull(playerlanguageid, PLAYERLANGUAGEID_MUST_NOT_BE_NULL);
     }
 
-    private static Background validateBackground(Background backgroundid) {
-        return Objects.requireNonNull(backgroundid, BACKGROUNID_MUST_NOT_BE_NULL);
+    private static Options validateOptions(Options optionsid) {
+        return Objects.requireNonNull(optionsid, BACKGROUNID_MUST_NOT_BE_NULL);
     }
 
     private static Menu validateMenu(Menu menuid) {
@@ -138,8 +138,8 @@ public class Player {
         return playerlanguageid;
     }
 
-    public Background getBackgroundid() {
-        return backgroundid;
+    public Options getOptionsid() {
+        return optionsid;
     }
 
     public Menu getMenuid() {
@@ -170,8 +170,8 @@ public class Player {
         this.playerlanguageid = validatePlayerLanguage(playerlanguageid);
     }
 
-    public void setBackgroundid(@Nonnull Background backgroundid) {
-        this.backgroundid = validateBackground(backgroundid);
+    public void setOptionsid(@Nonnull Options optionsid) {
+        this.optionsid = validateOptions(optionsid);
     }
 
     public void setMenuid(@Nonnull Menu menuid) {
@@ -201,7 +201,7 @@ public class Player {
     public static class PlayerBuilder {
         private Long playerid;
         private PlayerLanguage playerlanguageid;
-        private Background backgroundid;
+        private Options optionsid;
         private Menu menuid;
         private Set<Game> games = new LinkedHashSet<>();
         private String name;
@@ -219,8 +219,8 @@ public class Player {
             return this;
         }
 
-        public PlayerBuilder backgroundid(@Nonnull Background backgroundid) {
-            this.backgroundid = validateBackground(backgroundid);
+        public PlayerBuilder optionsid(@Nonnull Options optionsid) {
+            this.optionsid = validateOptions(optionsid);
             return this;
         }
 
@@ -258,7 +258,7 @@ public class Player {
             return new Player(
                     playerid,
                     playerlanguageid,
-                    backgroundid,
+                    optionsid,
                     menuid,
                     games,
                     name,
@@ -278,7 +278,7 @@ public class Player {
         }
         return Objects.equals(playerid, other.playerid)
                 && Objects.equals(playerlanguageid, other.playerlanguageid)
-                && Objects.equals(backgroundid, other.backgroundid)
+                && Objects.equals(optionsid, other.optionsid)
                 && Objects.equals(menuid, other.menuid)
                 && Objects.equals(name, other.name)
                 && Objects.equals(isselected, other.isselected)
@@ -291,7 +291,7 @@ public class Player {
         return Objects.hash(
                 playerid,
                 playerlanguageid,
-                backgroundid,
+                optionsid,
                 menuid,
                 name,
                 isselected,
@@ -302,11 +302,11 @@ public class Player {
     @Override
     public String toString() {
         return String.format(
-                "Player{playerid=%s, playerlanguageid=%s, backgroundid=%s, menuid=%s, name=%s,"
+                "Player{playerid=%s, playerlanguageid=%s, optionsid=%s, menuid=%s, name=%s,"
                         + " isselected=%b, createdat=%s, updatedat=%s}",
                 playerid,
                 playerlanguageid.getPlayerlanguageid(),
-                backgroundid.getBackgroundid(),
+                optionsid.getOptionsid(),
                 menuid.getMenuid(),
                 name,
                 isselected,

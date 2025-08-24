@@ -84,8 +84,8 @@ class MenuMiniViewModelUTest {
                 vm.backupAccessibleTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility"));
         map.put(
-                vm.backgroundAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.mini.button.background.accessibility"));
+                vm.optionsAccessibleTextProperty(),
+                () -> I18n.INSTANCE.getValue("menu.mini.button.options.accessibility"));
         map.put(
                 vm.languageAccessibleTextProperty(),
                 () -> I18n.INSTANCE.getValue("menu.mini.button.language.accessibility"));
@@ -114,9 +114,9 @@ class MenuMiniViewModelUTest {
                         I18n.INSTANCE.getValue("menu.mini.button.backup.accessibility")
                                 + closedRoleDesc.get());
         map.put(
-                vm.backgroundTooltipProperty(),
+                vm.optionsTooltipProperty(),
                 () ->
-                        I18n.INSTANCE.getValue("menu.mini.button.background.accessibility")
+                        I18n.INSTANCE.getValue("menu.mini.button.options.accessibility")
                                 + closedRoleDesc.get());
         map.put(
                 vm.languageTooltipProperty(),

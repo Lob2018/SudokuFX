@@ -1,6 +1,6 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModelUTest">
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="266,1831,516,1991"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html" title="ViewModel managing menu background UI state and accessibility strings." alt="" coords="11,401,237,1767"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="11,401,237,1767"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,1740,252,1765,288,1817,284,1820,247,1768,235,1743"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="5,124,243,337"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,337,127,384,122,384,122,337"/>

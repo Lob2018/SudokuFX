@@ -17,7 +17,7 @@ import jakarta.validation.constraints.Size;
  *
  * @param playerid the unique identifier of the player
  * @param playerlanguageidDto the player's language data, must not be null
- * @param backgroundidDto the player's background data, must not be null
+ * @param optionsidDto the player's options data, must not be null
  * @param menuidDto the menu associated with the player, must not be null
  * @param selectedGame the currently selected game for the player, can be null
  * @param name the player's name, must not be null and maximum length 256 characters
@@ -28,7 +28,7 @@ import jakarta.validation.constraints.Size;
 public record PlayerDto(
         Long playerid,
         @Nonnull @NotNull PlayerLanguageDto playerlanguageidDto,
-        @Nonnull @NotNull BackgroundDto backgroundidDto,
+        @Nonnull @NotNull OptionsDto optionsidDto,
         @Nonnull @NotNull MenuDto menuidDto,
         @Nullable GameDto selectedGame,
         @Nonnull @NotNull @Size(max = 256) String name,

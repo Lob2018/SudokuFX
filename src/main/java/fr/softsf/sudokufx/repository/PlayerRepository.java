@@ -18,7 +18,7 @@ public interface PlayerRepository extends JpaRepository<Player, Long> {
     @Query(
             "select distinct p from Player p "
                     + "join fetch p.games g "
-                    + "join fetch p.backgroundid "
+                    + "join fetch p.optionsid "
                     + "join fetch g.gridid "
                     + "join fetch g.levelid "
                     + "join fetch p.menuid "

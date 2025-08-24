@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.model.BackgroundUTest.ConstructorTests.givenValidParameters_whenCreatingBackgroundWithConstructor_thenBackgroundIsCreatedCorrectly" name="fr.softsf.sudokufx.model.BackgroundUTest.ConstructorTests.givenValidParameters_whenCreatingBackgroundWithConstructor_thenBackgroundIsCreatedCorrectly">
+<map id="fr.softsf.sudokufx.model.OptionsUTest.ConstructorTests.givenValidParameters_whenCreatingBackgroundWithConstructor_thenBackgroundIsCreatedCorrectly" name="fr.softsf.sudokufx.model.OptionsUTest.ConstructorTests.givenValidParameters_whenCreatingBackgroundWithConstructor_thenBackgroundIsCreatedCorrectly">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,123,306,197"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_background.html#ab7fb6d04561c70c254d19a8de4b0247e" title=" " alt="" coords="354,5,545,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,120,353,58,367,51,369,56,355,62,227,125"/>

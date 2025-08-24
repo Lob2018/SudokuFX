@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a909638af7104aee627c05820e31d8864"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a JavaFX Task that initializes the Spring context.  <br /></td></tr>
 <tr class="separator:a909638af7104aee627c05820e31d8864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a102ea76a7ffe8f69b1a4f8bcb6841fec" id="r_a102ea76a7ffe8f69b1a4f8bcb6841fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a102ea76a7ffe8f69b1a4f8bcb6841fec">runInitializationTask</a> (Task&lt; Void &gt; task)</td></tr>
-<tr class="memdesc:a102ea76a7ffe8f69b1a4f8bcb6841fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given JavaFX Task in a new background thread.  <br /></td></tr>
+<tr class="memdesc:a102ea76a7ffe8f69b1a4f8bcb6841fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the given JavaFX Task in a new options thread.  <br /></td></tr>
 <tr class="separator:a102ea76a7ffe8f69b1a4f8bcb6841fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -133,7 +133,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Handles asynchronous initialization of the Spring application context using a JavaFX Task. </p>
-<p>Provides methods to create and run the initialization task in a background thread. </p>
+<p>Provides methods to create and run the initialization task in a options thread. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8bda16f1da09f550bedf6cbe0c83aec3" name="a8bda16f1da09f550bedf6cbe0c83aec3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8bda16f1da09f550bedf6cbe0c83aec3">&#9670;&#160;</a></span>SpringContextInitializer()</h2>
@@ -190,7 +190,7 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts the given JavaFX Task in a new background thread. </p>
+<p>Starts the given JavaFX Task in a new options thread. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">task</td><td>the initialization task to run </td></tr>

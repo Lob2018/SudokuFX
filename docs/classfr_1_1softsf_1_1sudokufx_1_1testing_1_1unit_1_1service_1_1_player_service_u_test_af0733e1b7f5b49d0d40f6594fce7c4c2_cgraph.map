@@ -11,7 +11,7 @@
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="881,50,946,40,947,45,882,55"/>
 <area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="892,75,941,81,941,86,891,81"/>
 <area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="555,152,736,83,737,88,556,157"/>
-<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a95a3f8cb6e5e286a81f1b43c0a5ca5db" title="Data Transfer Object representing a background entity." alt="" coords="669,155,908,181"/>
+<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a95a3f8cb6e5e286a81f1b43c0a5ca5db" title="Data Transfer Object representing a options entity." alt="" coords="669,155,908,181"/>
 <area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="621,165,653,165,653,171,621,171"/>
 <area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" title="Data Transfer Object representing a menu entity." alt="" coords="688,205,890,232"/>
 <area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="593,179,699,199,698,205,592,185"/>

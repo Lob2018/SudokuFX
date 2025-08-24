@@ -24,7 +24,7 @@
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="591,-155 411.5,-155 411.5,-135 591,-135 591,-155"/>
-<text text-anchor="middle" x="501.25" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.BackgroundDto</text>
+<text text-anchor="middle" x="501.25" y="-141.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.OptionsDto</text>
 </a>
 </g>
 </g>

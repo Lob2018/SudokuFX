@@ -1,14 +1,14 @@
 <map id="fr.softsf.sudokufx.viewmodel.BackgroundViewModel.init" name="fr.softsf.sudokufx.viewmodel.BackgroundViewModel.init">
-<area shape="rect" id="Node000001" title="Initializes the GridPane background with either a predefined color or image." alt="" coords="5,228,199,271"/>
+<area shape="rect" id="Node000001" title="Initializes the GridPane options with either a predefined color or image." alt="" coords="5,228,199,271"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a31264956cefbb506931b2f3f341c3c6a" title="Handles image file selection, validating the file format and initiating the image loading process." alt="" coords="256,168,510,227"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,229,240,221,241,226,200,234"/>
-<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a1111dc2bb886e40a10871036b8a8e28c" title="Applies a background color to the GridPane and sets it in the ColorPicker." alt="" coords="247,266,519,308"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a1111dc2bb886e40a10871036b8a8e28c" title="Applies a options color to the GridPane and sets it in the ColorPicker." alt="" coords="247,266,519,308"/>
 <area shape="poly" id="edge23_Node000001_Node000017" title=" " alt="" coords="199,260,232,264,231,269,199,265"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#ac95cfb708e84f566bb41d6ca5f9d1ccf" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="1195,162,1471,204"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,165,562,102,646,68,740,38,840,15,944,3,996,3,1047,8,1098,17,1148,31,1196,54,1239,85,1277,118,1306,148,1302,152,1273,122,1236,89,1193,59,1146,36,1097,22,1046,13,995,9,944,9,841,20,741,43,648,73,564,107,437,170"/>
 <area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a1bc1728e837bd29193e843fed75802e4" title="Validates if the given file is a valid image format." alt="" coords="567,228,799,271"/>
 <area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="510,217,552,224,551,229,510,222"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a07736dbfb37fcf219ab06355453090c4" title="Initiates the image loading and resizing process in a background task." alt="" coords="574,162,792,204"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a07736dbfb37fcf219ab06355453090c4" title="Initiates the image loading and resizing process in a options task." alt="" coords="574,162,792,204"/>
 <area shape="poly" id="edge9_Node000002_Node000010" title=" " alt="" coords="510,189,558,186,558,192,510,194"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1toaster_1_1_toaster_v_box.html#a37d80e32206ddf4e5ea31e6205b08acd" title="Sets the accessibility text for the toast based on its level." alt="" coords="1519,95,1795,138"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1439,158,1535,139,1536,144,1440,164"/>

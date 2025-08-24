@@ -1,8 +1,8 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.init" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.init">
-<area shape="rect" id="Node000001" title="Initializes the GridPane background with settings from database." alt="" coords="5,159,213,201"/>
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init">
+<area shape="rect" id="Node000001" title="Initializes the GridPane options with settings from database." alt="" coords="5,159,213,201"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#a260352d8d5ffcc3f691984620672f38b" title="Handles image file selection by validating the file format and starting the image loading process." alt="" coords="279,68,528,127"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,155,281,129,283,134,188,161"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#abae6bf1bd0e33503185cef94b3ec339e" title="Applies a background color to the GridPane and sets it in the ColorPicker." alt="" coords="284,151,523,209"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#abae6bf1bd0e33503185cef94b3ec339e" title="Applies a options color to the GridPane and sets it in the ColorPicker." alt="" coords="284,151,523,209"/>
 <area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="213,177,268,177,268,183,213,183"/>
 <area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_background_view_model.html#aca0027a7ccecd1931f900db03d8cc048" title="Sets the grid opacity mode." alt="" coords="261,233,546,276"/>
 <area shape="poly" id="edge21_Node000001_Node000015" title=" " alt="" coords="189,199,261,219,293,227,292,232,260,224,188,205"/>

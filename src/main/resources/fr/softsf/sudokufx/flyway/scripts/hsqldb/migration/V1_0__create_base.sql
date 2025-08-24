@@ -14,11 +14,11 @@ CREATE
             iso VARCHAR(2) NOT NULL
         );
 
--- Creation of the "background" table
+-- Creation of the "options" table
 CREATE
     TABLE
-        background(
-            backgroundid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+        OPTIONS(
+            optionsid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             hexcolor VARCHAR(8) NOT NULL,
             imagepath VARCHAR(1024) NOT NULL,
             isimage BOOLEAN DEFAULT FALSE NOT NULL,
@@ -49,7 +49,7 @@ CREATE
         player(
             playerid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             playerlanguageplayerlanguageid BIGINT FOREIGN KEY REFERENCES playerlanguage(playerlanguageid),
-            backgroundbackgroundid BIGINT FOREIGN KEY REFERENCES background(backgroundid),
+            optionsoptionsid BIGINT FOREIGN KEY REFERENCES OPTIONS(optionsid),
             menumenuid TINYINT FOREIGN KEY REFERENCES menu(menuid),
             name VARCHAR(256) NOT NULL UNIQUE,
             isselected BOOLEAN DEFAULT FALSE NOT NULL,

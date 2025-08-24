@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.handleFileImageChooser" name="fr.softsf.sudokufx.viewmodel.MenuBackgroundViewModel.handleFileImageChooser">
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.handleFileImageChooser" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.handleFileImageChooser">
 <area shape="rect" id="Node000001" title="Handles image file selection by validating the file format and starting the image loading process." alt="" coords="5,68,255,127"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="945,72,1215,115"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,90,548,82,897,83,930,84,930,89,897,88,548,88,255,95"/>

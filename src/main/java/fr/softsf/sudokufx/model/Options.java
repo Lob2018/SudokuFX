@@ -21,8 +21,8 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name = "background")
-public class Background {
+@Table(name = "options")
+public class Options {
 
     private static final String DEFAULT_HEX_COLOR = "#000000";
     private static final String EMPTY_PATH = "";
@@ -36,8 +36,8 @@ public class Background {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "backgroundid", nullable = false)
-    private Long backgroundid;
+    @Column(name = "optionsid", nullable = false)
+    private Long optionsid;
 
     @Nonnull
     @NotNull @Size(max = 8) @Column(name = "hexcolor", nullable = false, length = 8)
@@ -53,15 +53,15 @@ public class Background {
     @Column(name = "isopaque", nullable = false)
     private boolean isopaque = true;
 
-    protected Background() {}
+    protected Options() {}
 
-    public Background(
-            Long backgroundid,
+    public Options(
+            Long optionsid,
             @Nonnull @NotNull String hexcolor,
             @Nonnull @NotNull String imagepath,
             boolean isimage,
             boolean isopaque) {
-        this.backgroundid = backgroundid;
+        this.optionsid = optionsid;
         this.hexcolor = validateHexcolor(hexcolor);
         this.imagepath = validateImagepath(imagepath);
         this.isimage = isimage;
@@ -96,8 +96,8 @@ public class Background {
         return Objects.requireNonNull(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
     }
 
-    public Long getBackgroundid() {
-        return backgroundid;
+    public Long getOptionsid() {
+        return optionsid;
     }
 
     @Nonnull
@@ -134,54 +134,54 @@ public class Background {
         this.isopaque = isopaque;
     }
 
-    public static BackgroundBuilder builder() {
-        return new BackgroundBuilder();
+    public static OptionsBuilder builder() {
+        return new OptionsBuilder();
     }
 
     /**
-     * Builder for creating Background instances with fluent API. Validation occurs at build() to
-     * avoid exceptions during construction.
+     * Builder for creating Options instances with fluent API. Validation occurs at build() to avoid
+     * exceptions during construction.
      */
-    public static class BackgroundBuilder {
-        private Long backgroundid;
+    public static class OptionsBuilder {
+        private Long optionsid;
         private String hexcolor = DEFAULT_HEX_COLOR;
         private String imagepath = EMPTY_PATH;
         private boolean isimage = false;
         private boolean isopaque = true;
 
-        public BackgroundBuilder backgroundid(Long backgroundid) {
-            this.backgroundid = backgroundid;
+        public OptionsBuilder optionsid(Long optionsid) {
+            this.optionsid = optionsid;
             return this;
         }
 
-        public BackgroundBuilder hexcolor(@Nonnull String hexcolor) {
+        public OptionsBuilder hexcolor(@Nonnull String hexcolor) {
             this.hexcolor = hexcolor;
             return this;
         }
 
-        public BackgroundBuilder imagepath(@Nonnull String imagepath) {
+        public OptionsBuilder imagepath(@Nonnull String imagepath) {
             this.imagepath = imagepath;
             return this;
         }
 
-        public BackgroundBuilder isimage(boolean isimage) {
+        public OptionsBuilder isimage(boolean isimage) {
             this.isimage = isimage;
             return this;
         }
 
-        public BackgroundBuilder isopaque(boolean isopaque) {
+        public OptionsBuilder isopaque(boolean isopaque) {
             this.isopaque = isopaque;
             return this;
         }
 
         /**
-         * Creates Background instance with parameter validation.
+         * Creates Options instance with parameter validation.
          *
-         * @return new validated Background instance
+         * @return new validated Options instance
          * @throws IllegalArgumentException if parameters are invalid
          */
-        public Background build() {
-            return new Background(backgroundid, hexcolor, imagepath, isimage, isopaque);
+        public Options build() {
+            return new Options(optionsid, hexcolor, imagepath, isimage, isopaque);
         }
     }
 
@@ -190,26 +190,26 @@ public class Background {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof Background other)) {
+        if (!(obj instanceof Options other)) {
             return false;
         }
         return isimage == other.isimage
                 && isopaque == other.isopaque
-                && Objects.equals(backgroundid, other.backgroundid)
+                && Objects.equals(optionsid, other.optionsid)
                 && Objects.equals(hexcolor, other.hexcolor)
                 && Objects.equals(imagepath, other.imagepath);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(backgroundid, hexcolor, imagepath, isimage, isopaque);
+        return Objects.hash(optionsid, hexcolor, imagepath, isimage, isopaque);
     }
 
     @Override
     public String toString() {
         return String.format(
-                "Background{backgroundid=%s, hexcolor='%s', imagepath='%s', isimage=%b,"
+                "Options{optionsid=%s, hexcolor='%s', imagepath='%s', isimage=%b,"
                         + " isopaque=%b}",
-                backgroundid, hexcolor, imagepath, isimage, isopaque);
+                optionsid, hexcolor, imagepath, isimage, isopaque);
     }
 }

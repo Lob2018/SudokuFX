@@ -6,7 +6,7 @@
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="222,136,286,143,286,148,221,141"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#afa5bb361c3c4da3cef227f656f09c3e3" title="Handles the success of the Spring context initialization task." alt="" coords="302,72,529,115"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="221,112,286,105,286,110,222,117"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html#a7185e1ba2b9219e85f8308a3425fb26e" title="Starts the given JavaFX Task in a new background thread." alt="" coords="278,205,553,248"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html#a7185e1ba2b9219e85f8308a3425fb26e" title="Starts the given JavaFX Task in a new options thread." alt="" coords="278,205,553,248"/>
 <area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="143,138,201,164,270,191,294,198,293,203,268,196,199,169,141,143"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a704995783c20421c9b428d357752c06b" title="Creates a pause before loading the specified FXML view." alt="" coords="616,139,841,181"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="530,157,600,157,600,163,530,163"/>

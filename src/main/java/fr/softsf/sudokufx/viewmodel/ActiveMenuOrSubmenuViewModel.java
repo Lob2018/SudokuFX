@@ -27,7 +27,7 @@ public class ActiveMenuOrSubmenuViewModel {
         PLAYER,
         SOLVE,
         BACKUP,
-        BACKGROUND
+        OPTIONS
     }
 
     private final ObjectProperty<ActiveMenu> activeMenu =

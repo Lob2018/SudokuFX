@@ -20,7 +20,7 @@ public interface IGameLevelMapper {
     /**
      * Maps a GameLevel object to a GameLevelDto object.
      *
-     * @param gameLevel the Background object to be mapped.
+     * @param gameLevel the Options object to be mapped.
      * @return a GameLevelDto object representing the data of the provided GameLevel object.
      */
     GameLevelDto mapGameLevelToDto(GameLevel gameLevel);

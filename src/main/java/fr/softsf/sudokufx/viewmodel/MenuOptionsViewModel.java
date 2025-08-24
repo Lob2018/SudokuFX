@@ -34,16 +34,16 @@ import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 
 /**
- * ViewModel managing menu background UI state and accessibility strings.
+ * ViewModel managing menu options UI state and accessibility strings.
  *
  * <p>Provides localized StringBindings for button labels, tooltips, and roles, updating
- * automatically on locale changes. Supports background color and image initialization and updates,
+ * automatically on locale changes. Supports options color and image initialization and updates,
  * including asynchronous image loading with user feedback.
  */
 @Component
-public class MenuBackgroundViewModel {
+public class MenuOptionsViewModel {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MenuBackgroundViewModel.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MenuOptionsViewModel.class);
     private static final int HEX_RADIX = 16;
 
     private final ImageUtils imageUtils;
@@ -53,76 +53,71 @@ public class MenuBackgroundViewModel {
     private static final String ROLE_SUBMENU_OPTION =
             "menu.accessibility.role.description.submenu.option";
 
-    private final StringBinding backgroundMenuMaxiAccessibleText;
-    private final StringBinding backgroundMenuMaxiTooltip;
-    private final StringBinding backgroundMenuMaxiRoleDescription;
-    private final StringBinding backgroundMenuMaxiText;
+    private final StringBinding optionsMenuMaxiAccessibleText;
+    private final StringBinding optionsMenuMaxiTooltip;
+    private final StringBinding optionsMenuMaxiRoleDescription;
+    private final StringBinding optionsMenuMaxiText;
 
-    private final StringBinding backgroundReduceAccessibleText;
-    private final StringBinding backgroundReduceTooltip;
-    private final StringBinding backgroundReduceText;
+    private final StringBinding optionsReduceAccessibleText;
+    private final StringBinding optionsReduceTooltip;
+    private final StringBinding optionsReduceText;
 
-    private final StringBinding backgroundAccessibleText;
-    private final StringBinding backgroundTooltip;
-    private final StringBinding backgroundRoleDescription;
-    private final StringBinding backgroundText;
+    private final StringBinding optionsAccessibleText;
+    private final StringBinding optionsTooltip;
+    private final StringBinding optionsRoleDescription;
+    private final StringBinding optionsText;
 
-    private final StringBinding backgroundImageAccessibleText;
-    private final StringBinding backgroundImageTooltip;
-    private final StringBinding backgroundImageRoleDescription;
-    private final StringBinding backgroundImageText;
+    private final StringBinding optionsImageAccessibleText;
+    private final StringBinding optionsImageTooltip;
+    private final StringBinding optionsImageRoleDescription;
+    private final StringBinding optionsImageText;
 
-    private final StringBinding backgroundOpacityAccessibleText;
-    private final StringBinding backgroundOpacityTooltip;
-    private final StringBinding backgroundOpacityRoleDescription;
-    private final StringBinding backgroundOpacityText;
+    private final StringBinding optionsOpacityAccessibleText;
+    private final StringBinding optionsOpacityTooltip;
+    private final StringBinding optionsOpacityRoleDescription;
+    private final StringBinding optionsOpacityText;
 
-    private final StringBinding backgroundColorAccessibleText;
-    private final StringBinding backgroundColorTooltip;
-    private final StringBinding backgroundColorRoleDescription;
+    private final StringBinding optionsColorAccessibleText;
+    private final StringBinding optionsColorTooltip;
+    private final StringBinding optionsColorRoleDescription;
 
     private boolean isOpaqueMode = false;
 
-    public MenuBackgroundViewModel() {
+    public MenuOptionsViewModel() {
         this.imageUtils = new ImageUtils();
-        backgroundMenuMaxiAccessibleText =
-                createStringBinding("menu.maxi.button.background.accessibility");
-        backgroundMenuMaxiTooltip =
-                createFormattedBinding("menu.maxi.button.background.accessibility", ROLE_CLOSED);
-        backgroundMenuMaxiRoleDescription = createStringBinding(ROLE_CLOSED);
-        backgroundMenuMaxiText = createStringBinding("menu.maxi.button.background.text");
-        backgroundReduceAccessibleText =
-                createStringBinding("menu.background.button.reduce.accessibility");
-        backgroundReduceTooltip =
-                createStringBinding("menu.background.button.reduce.accessibility");
-        backgroundReduceText = createStringBinding("menu.background.button.reduce.text");
-        backgroundAccessibleText =
-                createStringBinding("menu.background.button.background.accessibility");
-        backgroundTooltip =
+        optionsMenuMaxiAccessibleText =
+                createStringBinding("menu.maxi.button.options.accessibility");
+        optionsMenuMaxiTooltip =
+                createFormattedBinding("menu.maxi.button.options.accessibility", ROLE_CLOSED);
+        optionsMenuMaxiRoleDescription = createStringBinding(ROLE_CLOSED);
+        optionsMenuMaxiText = createStringBinding("menu.maxi.button.options.text");
+        optionsReduceAccessibleText =
+                createStringBinding("menu.options.button.reduce.accessibility");
+        optionsReduceTooltip = createStringBinding("menu.options.button.reduce.accessibility");
+        optionsReduceText = createStringBinding("menu.options.button.reduce.text");
+        optionsAccessibleText = createStringBinding("menu.options.button.options.accessibility");
+        optionsTooltip =
+                createFormattedBinding("menu.options.button.options.accessibility", ROLE_OPENED);
+        optionsRoleDescription = createStringBinding(ROLE_OPENED);
+        optionsText = createStringBinding("menu.options.button.options.text");
+        optionsImageAccessibleText = createStringBinding("menu.options.button.image.accessibility");
+        optionsImageTooltip =
                 createFormattedBinding(
-                        "menu.background.button.background.accessibility", ROLE_OPENED);
-        backgroundRoleDescription = createStringBinding(ROLE_OPENED);
-        backgroundText = createStringBinding("menu.background.button.background.text");
-        backgroundImageAccessibleText =
-                createStringBinding("menu.background.button.image.accessibility");
-        backgroundImageTooltip =
+                        "menu.options.button.image.accessibility", ROLE_SUBMENU_OPTION);
+        optionsImageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        optionsImageText = createStringBinding("menu.options.button.image.text");
+        optionsOpacityAccessibleText =
+                createStringBinding("menu.options.button.opacity.accessibility");
+        optionsOpacityTooltip =
                 createFormattedBinding(
-                        "menu.background.button.image.accessibility", ROLE_SUBMENU_OPTION);
-        backgroundImageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-        backgroundImageText = createStringBinding("menu.background.button.image.text");
-        backgroundOpacityAccessibleText =
-                createStringBinding("menu.background.button.opacity.accessibility");
-        backgroundOpacityTooltip =
+                        "menu.options.button.opacity.accessibility", ROLE_SUBMENU_OPTION);
+        optionsOpacityRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        optionsOpacityText = createStringBinding("menu.options.button.opacity.text");
+        optionsColorAccessibleText = createStringBinding("menu.options.button.color.accessibility");
+        optionsColorTooltip =
                 createFormattedBinding(
-                        "menu.background.button.opacity.accessibility", ROLE_SUBMENU_OPTION);
-        backgroundOpacityRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-        backgroundOpacityText = createStringBinding("menu.background.button.opacity.text");
-        backgroundColorAccessibleText =
-                createStringBinding("menu.background.button.color.accessibility");
-        backgroundColorTooltip =
-                createFormattedBinding(
-                        "menu.background.button.color.accessibility", ROLE_SUBMENU_OPTION);
-        backgroundColorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+                        "menu.options.button.color.accessibility", ROLE_SUBMENU_OPTION);
+        optionsColorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
     }
 
     /**
@@ -151,92 +146,92 @@ public class MenuBackgroundViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
-    public StringBinding backgroundMenuMaxiAccessibleTextProperty() {
-        return backgroundMenuMaxiAccessibleText;
+    public StringBinding optionsMenuMaxiAccessibleTextProperty() {
+        return optionsMenuMaxiAccessibleText;
     }
 
-    public StringBinding backgroundMenuMaxiTooltipProperty() {
-        return backgroundMenuMaxiTooltip;
+    public StringBinding optionsMenuMaxiTooltipProperty() {
+        return optionsMenuMaxiTooltip;
     }
 
-    public StringBinding backgroundMenuMaxiRoleDescriptionProperty() {
-        return backgroundMenuMaxiRoleDescription;
+    public StringBinding optionsMenuMaxiRoleDescriptionProperty() {
+        return optionsMenuMaxiRoleDescription;
     }
 
-    public StringBinding backgroundMenuMaxiTextProperty() {
-        return backgroundMenuMaxiText;
+    public StringBinding optionsMenuMaxiTextProperty() {
+        return optionsMenuMaxiText;
     }
 
-    public StringBinding backgroundReduceAccessibleTextProperty() {
-        return backgroundReduceAccessibleText;
+    public StringBinding optionsReduceAccessibleTextProperty() {
+        return optionsReduceAccessibleText;
     }
 
-    public StringBinding backgroundReduceTooltipProperty() {
-        return backgroundReduceTooltip;
+    public StringBinding optionsReduceTooltipProperty() {
+        return optionsReduceTooltip;
     }
 
-    public StringBinding backgroundReduceTextProperty() {
-        return backgroundReduceText;
+    public StringBinding optionsReduceTextProperty() {
+        return optionsReduceText;
     }
 
-    public StringBinding backgroundAccessibleTextProperty() {
-        return backgroundAccessibleText;
+    public StringBinding optionsAccessibleTextProperty() {
+        return optionsAccessibleText;
     }
 
-    public StringBinding backgroundTooltipProperty() {
-        return backgroundTooltip;
+    public StringBinding optionsTooltipProperty() {
+        return optionsTooltip;
     }
 
-    public StringBinding backgroundRoleDescriptionProperty() {
-        return backgroundRoleDescription;
+    public StringBinding optionsRoleDescriptionProperty() {
+        return optionsRoleDescription;
     }
 
-    public StringBinding backgroundTextProperty() {
-        return backgroundText;
+    public StringBinding optionsTextProperty() {
+        return optionsText;
     }
 
-    public StringBinding backgroundImageAccessibleTextProperty() {
-        return backgroundImageAccessibleText;
+    public StringBinding optionsImageAccessibleTextProperty() {
+        return optionsImageAccessibleText;
     }
 
-    public StringBinding backgroundImageTooltipProperty() {
-        return backgroundImageTooltip;
+    public StringBinding optionsImageTooltipProperty() {
+        return optionsImageTooltip;
     }
 
-    public StringBinding backgroundImageRoleDescriptionProperty() {
-        return backgroundImageRoleDescription;
+    public StringBinding optionsImageRoleDescriptionProperty() {
+        return optionsImageRoleDescription;
     }
 
-    public StringBinding backgroundImageTextProperty() {
-        return backgroundImageText;
+    public StringBinding optionsImageTextProperty() {
+        return optionsImageText;
     }
 
-    public StringBinding backgroundOpacityAccessibleTextProperty() {
-        return backgroundOpacityAccessibleText;
+    public StringBinding optionsOpacityAccessibleTextProperty() {
+        return optionsOpacityAccessibleText;
     }
 
-    public StringBinding backgroundOpacityTooltipProperty() {
-        return backgroundOpacityTooltip;
+    public StringBinding optionsOpacityTooltipProperty() {
+        return optionsOpacityTooltip;
     }
 
-    public StringBinding backgroundOpacityRoleDescriptionProperty() {
-        return backgroundOpacityRoleDescription;
+    public StringBinding optionsOpacityRoleDescriptionProperty() {
+        return optionsOpacityRoleDescription;
     }
 
-    public StringBinding backgroundOpacityTextProperty() {
-        return backgroundOpacityText;
+    public StringBinding optionsOpacityTextProperty() {
+        return optionsOpacityText;
     }
 
-    public StringBinding backgroundColorAccessibleTextProperty() {
-        return backgroundColorAccessibleText;
+    public StringBinding optionsColorAccessibleTextProperty() {
+        return optionsColorAccessibleText;
     }
 
-    public StringBinding backgroundColorTooltipProperty() {
-        return backgroundColorTooltip;
+    public StringBinding optionsColorTooltipProperty() {
+        return optionsColorTooltip;
     }
 
-    public StringBinding backgroundColorRoleDescriptionProperty() {
-        return backgroundColorRoleDescription;
+    public StringBinding optionsColorRoleDescriptionProperty() {
+        return optionsColorRoleDescription;
     }
 
     /**
@@ -253,7 +248,7 @@ public class MenuBackgroundViewModel {
      * </ul>
      *
      * @param sudokuFX The GridPane to initialize with background settings
-     * @param menuBackgroundButtonColor The ColorPicker to sync with current color value
+     * @param menuOptionsButtonColor The ColorPicker to sync with current color value
      * @param toaster The toaster component for user notifications during image loading
      * @param spinner The spinner component to indicate loading state during operations
      * @see #setColorFromModel(GridPane, ColorPicker, String)
@@ -262,12 +257,12 @@ public class MenuBackgroundViewModel {
      */
     public void init(
             GridPane sudokuFX,
-            ColorPicker menuBackgroundButtonColor,
+            ColorPicker menuOptionsButtonColor,
             ToasterVBox toaster,
             SpinnerGridPane spinner) {
         // TODO: SERVICE GET & SET COLOR OR IMAGE AND GRID TRANSPARENCY
         // IF COLOR
-        setColorFromModel(sudokuFX, menuBackgroundButtonColor, "99b3ffcd");
+        setColorFromModel(sudokuFX, menuOptionsButtonColor, "99b3ffcd");
         // IF IMAGE
         handleFileImageChooser(new File("C:\\Users"), toaster, spinner, sudokuFX);
         // IF GRID TRANSPARENCY
@@ -280,7 +275,7 @@ public class MenuBackgroundViewModel {
      * @param sudokuFX The GridPane to update.
      * @param color The color to apply as the background.
      */
-    public void updateBackgroundColorAndApply(GridPane sudokuFX, Color color) {
+    public void updateOptionsColorAndApply(GridPane sudokuFX, Color color) {
         // TODO: SERVICE STORE COLOR AS color.toString().substring(2)
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
@@ -336,8 +331,7 @@ public class MenuBackgroundViewModel {
             loadImage(selectedFile, toaster, spinner, sudokuFX);
         } else {
             String errorMessage =
-                    I18n.INSTANCE.getValue(
-                            "toast.error.backgroundviewmodel.handlefileimagechooser");
+                    I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
             LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
             toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
         }
@@ -347,14 +341,14 @@ public class MenuBackgroundViewModel {
      * Applies a background color to the GridPane and sets it in the ColorPicker.
      *
      * @param sudokuFX The GridPane to update.
-     * @param menuBackgroundButtonColor The ColorPicker to update.
+     * @param menuOptionsButtonColor The ColorPicker to update.
      * @param colorValueFromModel The hex color string (e.g., "99b3ffcd").
      */
     private void setColorFromModel(
-            GridPane sudokuFX, ColorPicker menuBackgroundButtonColor, String colorValueFromModel) {
+            GridPane sudokuFX, ColorPicker menuOptionsButtonColor, String colorValueFromModel) {
         Color color =
                 imageUtils.intToColor(Integer.parseUnsignedInt(colorValueFromModel, HEX_RADIX));
-        menuBackgroundButtonColor.setValue(color);
+        menuOptionsButtonColor.setValue(color);
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
 
@@ -373,7 +367,7 @@ public class MenuBackgroundViewModel {
         String fileUri = selectedFile.toURI().toString();
         spinner.showSpinner(true);
         toaster.addToast(
-                I18n.INSTANCE.getValue("toast.msg.backgroundviewmodel.loadImage"),
+                I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.loadImage"),
                 fileUri,
                 ToastLevels.INFO,
                 false);
@@ -436,7 +430,7 @@ public class MenuBackgroundViewModel {
                     } else {
                         toaster.addToast(
                                 I18n.INSTANCE.getValue(
-                                        "toast.error.backgroundviewmodel.onimagetaskcomplete"),
+                                        "toast.error.optionsviewmodel.onimagetaskcomplete"),
                                 "",
                                 ToastLevels.ERROR,
                                 true);
@@ -463,7 +457,7 @@ public class MenuBackgroundViewModel {
                             exception.getMessage(),
                             exception);
                     toaster.addToast(
-                            I18n.INSTANCE.getValue("error.backgroundviewmodel.onimagetaskerror"),
+                            I18n.INSTANCE.getValue("toast.error.optionsviewmodel.onimagetaskerror"),
                             Objects.toString(exception.getMessage(), ""),
                             ToastLevels.ERROR,
                             true);

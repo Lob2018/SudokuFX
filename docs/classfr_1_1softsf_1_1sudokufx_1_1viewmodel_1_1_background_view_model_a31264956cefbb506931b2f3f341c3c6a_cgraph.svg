@@ -107,7 +107,7 @@ var sectionId = 'dynsection-1';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a07736dbfb37fcf219ab06355453090c4" target="_top" xlink:title="Initiates the image loading and resizing process in a background task.">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_background_view_model.html#a07736dbfb37fcf219ab06355453090c4" target="_top" xlink:title="Initiates the image loading and resizing process in a options task.">
 <polygon fill="white" stroke="#666666" points="395,-183.47 231.25,-183.47 231.25,-151.47 395,-151.47 395,-183.47"/>
 <text text-anchor="start" x="239.25" y="-169.97" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="313.12" y="-157.97" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundViewModel.loadImage</text>
