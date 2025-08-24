@@ -1,5 +1,8 @@
 var NAVTREEINDEX16 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html#a62e0dcab06618994765897f090d4bda7":[2,0,0,0,0,2,1,0,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html#ad6d1475680e61051a63b96733ec03456":[1,0,0,0,0,2,1,0,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html#ad6d1475680e61051a63b96733ec03456":[2,0,0,0,0,2,1,0,3],
 "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html#aef564e63ed308cc5e2c0613c4823ea40":[1,0,0,0,0,2,1,0,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html#aef564e63ed308cc5e2c0613c4823ea40":[2,0,0,0,0,2,1,0,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html":[1,0,0,0,0,10,2,0],
@@ -214,6 +217,7 @@ var NAVTREEINDEX16 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html":[1,0,0,0,0,1,3],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper.html":[1,0,0,0,0,1,3,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html":[1,0,0,0,0,1,4],
+"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html#a1e5a9996cd7904625fb67abf6994cc1f":[1,0,0,0,0,1,4,7],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html":[1,0,0,0,0,1,4,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ac3d62f66e8acd5749e3037a6ad06f21e":[1,0,0,0,0,1,4,0,4],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ad9235162514fff9999f723bb791d4da1":[1,0,0,0,0,1,4,0,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX16 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a1af6dbceb188908fcad8cafa7f3b9782":[1,0,0,0,0,8,1,1,4],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a3fbdac2142edc62f949d835e1c4b6e65":[1,0,0,0,0,8,1,1,8],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a5e0de5f756111883f130dc38c8f5c23b":[1,0,0,0,0,8,1,1,5],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a7bbbbe83e28267f992d4d7105d9aeb58":[1,0,0,0,0,8,1,1,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a9414d683f615b8e11670cee68575dbc3":[1,0,0,0,0,8,1,1,13],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a9945ab1422b692d972d2c0765c8c48c1":[1,0,0,0,0,8,1,1,11],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#aaeac640e43662b9bb033d9b4ae28e47c":[1,0,0,0,0,8,1,1,15],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#ad49b8dc5875a811f98d1f7fb2bc464c2":[1,0,0,0,0,8,1,1,3]
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a7bbbbe83e28267f992d4d7105d9aeb58":[1,0,0,0,0,8,1,1,1]
 };

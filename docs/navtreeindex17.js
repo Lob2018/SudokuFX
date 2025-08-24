@@ -1,5 +1,9 @@
 var NAVTREEINDEX17 =
 {
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a9414d683f615b8e11670cee68575dbc3":[1,0,0,0,0,8,1,1,13],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#a9945ab1422b692d972d2c0765c8c48c1":[1,0,0,0,0,8,1,1,11],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#aaeac640e43662b9bb033d9b4ae28e47c":[1,0,0,0,0,8,1,1,15],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#ad49b8dc5875a811f98d1f7fb2bc464c2":[1,0,0,0,0,8,1,1,3],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#adff11d0359879827ec8684105d54e379":[1,0,0,0,0,8,1,1,6],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#ae1ea3b6cc8fa5584c911b463d3214913":[1,0,0,0,0,8,1,1,12],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#af264614a70c0e0b8aee6c86321ebd2ab":[1,0,0,0,0,8,1,1,9],

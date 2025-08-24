@@ -70,7 +70,8 @@ var NAVTREEINDEX0 =
 "_i_player_language_mapper_8java.html":[3,0,1,0,0,0,0,0,1,3,0,5],
 "_i_player_mapper_8java.html":[3,0,1,0,0,0,0,0,1,3,0,6],
 "_i_splash_screen_view_8java.html":[3,0,1,0,0,0,0,0,1,3,2],
-"_image_utils_8java.html":[3,0,1,0,0,0,0,0,1,4,4],
+"_image_meta_8java.html":[3,0,1,0,0,0,0,0,1,4,4],
+"_image_utils_8java.html":[3,0,1,0,0,0,0,0,1,4,5],
 "_image_utils_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,0,2,3],
 "_in_memory_player_8java.html":[3,0,1,0,0,0,0,0,9,1,0],
 "_in_memory_player_i_test_8java.html":[3,0,1,1,0,0,0,0,4,2,2,1,0],
@@ -104,7 +105,7 @@ var NAVTREEINDEX0 =
 "_menu_solve_view_model_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,2,8],
 "_menu_u_test_8java.html":[3,0,1,1,0,0,0,0,2,4],
 "_my_alert_8java.html":[3,0,1,0,0,0,0,0,8,0,2],
-"_my_date_time_8java.html":[3,0,1,0,0,0,0,0,1,4,5],
+"_my_date_time_8java.html":[3,0,1,0,0,0,0,0,1,4,6],
 "_my_date_time_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,0,2,4],
 "_my_enums_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,0,2,5],
 "_my_logback_config_8java.html":[3,0,1,0,0,0,0,0,2,4],
@@ -140,7 +141,7 @@ var NAVTREEINDEX0 =
 "_secure_random_generator_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,0,0,3],
 "_spinner_grid_pane_8java.html":[3,0,1,0,0,0,0,0,8,0,4],
 "_splash_screen_view_8java.html":[3,0,1,0,0,0,0,0,8,3],
-"_spring_context_initializer_8java.html":[3,0,1,0,0,0,0,0,1,4,6],
+"_spring_context_initializer_8java.html":[3,0,1,0,0,0,0,0,1,4,7],
 "_spring_context_initializer_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,0,2,6],
 "_sudo_main_8java.html":[3,0,1,0,0,0,0,0,11],
 "_tag_dto_8java.html":[3,0,1,0,0,0,0,0,3,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html#af41d09c76552eba7c86e6435295c7ec6":[2,0,0,0,0,1,4,2,3],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html":[1,0,0,0,0,1,4,3],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html":[2,0,0,0,0,1,4,3],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a018b48f0ee7e805d5ae225368c9dcd1c":[1,0,0,0,0,1,4,3,2],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a018b48f0ee7e805d5ae225368c9dcd1c":[2,0,0,0,0,1,4,3,2]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a018b48f0ee7e805d5ae225368c9dcd1c":[1,0,0,0,0,1,4,3,2]
 };

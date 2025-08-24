@@ -1,5 +1,8 @@
 var NAVTREEINDEX7 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ae9d391865052e17a211105f3bd2cb97f":[2,0,0,0,0,4,1,12],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html":[1,0,0,0,0,7,0],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html":[2,0,0,0,0,6,0],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html#a576d979caf8dbcb2837197a58a5beaeb":[1,0,0,0,0,7,0,2],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html#a576d979caf8dbcb2837197a58a5beaeb":[2,0,0,0,0,6,0,2],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html#ad2e1828cc8da940645105989c5dfecf0":[1,0,0,0,0,7,0,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX7 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html":[2,0,0,0,0,7,2,0,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a1f42ef270aa0002b735d31a0e2f09af6":[1,0,0,0,0,8,2,0,2,6,1],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a1f42ef270aa0002b735d31a0e2f09af6":[2,0,0,0,0,7,2,0,2,6,1],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a3b1accd89500caf5c6a432092bdba823":[1,0,0,0,0,8,2,0,2,6,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a3b1accd89500caf5c6a432092bdba823":[2,0,0,0,0,7,2,0,2,6,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a59067ce2d98a76a9c55084e595cc7477":[1,0,0,0,0,8,2,0,2,6,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a59067ce2d98a76a9c55084e595cc7477":[2,0,0,0,0,7,2,0,2,6,2]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a3b1accd89500caf5c6a432092bdba823":[1,0,0,0,0,8,2,0,2,6,0]
 };

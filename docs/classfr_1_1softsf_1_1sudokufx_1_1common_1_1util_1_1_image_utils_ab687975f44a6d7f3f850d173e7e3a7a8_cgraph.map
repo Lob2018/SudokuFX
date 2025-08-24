@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.util.ImageUtils.getImageMeta" name="fr.softsf.sudokufx.common.util.ImageUtils.getImageMeta">
+<area shape="rect" id="Node000001" title="Reads image metadata (width, height) and calculates the scale factor needed to resize the image so it..." alt="" coords="5,5,208,48"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html#a1e5a9996cd7904625fb67abf6994cc1f" title="Represents basic metadata of an image (width, height) along with the scale factor needed to fit the i..." alt="" coords="256,5,458,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,24,240,24,240,29,208,29"/>
+</map>

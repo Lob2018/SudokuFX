@@ -112,17 +112,17 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_im
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils__coll__graph.svg" width="250" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils__coll__graph.svg" width="250" height="432"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afd030db3674fffb19e66a4e8a1788c3d" id="r_afd030db3674fffb19e66a4e8a1788c3d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd030db3674fffb19e66a4e8a1788c3d">calculateImageScaleFactor</a> (Image tempImage)</td></tr>
-<tr class="memdesc:afd030db3674fffb19e66a4e8a1788c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the scale factor needed to resize the given image so it fits within a predefined grid pane area (3 times the visual width and height).  <br /></td></tr>
-<tr class="separator:afd030db3674fffb19e66a4e8a1788c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb560356e4f3cb58cafa57c7dfe8ceab" id="r_aeb560356e4f3cb58cafa57c7dfe8ceab"><td class="memItemLeft" align="right" valign="top">BackgroundImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb560356e4f3cb58cafa57c7dfe8ceab">createBackgroundImage</a> (Image resizedImage)</td></tr>
 <tr class="memdesc:aeb560356e4f3cb58cafa57c7dfe8ceab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a JavaFX <code><a class="el" href="">BackgroundImage</a></code> from the provided image.  <br /></td></tr>
 <tr class="separator:aeb560356e4f3cb58cafa57c7dfe8ceab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab687975f44a6d7f3f850d173e7e3a7a8" id="r_ab687975f44a6d7f3f850d173e7e3a7a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html#a1e5a9996cd7904625fb67abf6994cc1f">ImageMeta</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab687975f44a6d7f3f850d173e7e3a7a8">getImageMeta</a> (File file)</td></tr>
+<tr class="memdesc:ab687975f44a6d7f3f850d173e7e3a7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads image metadata (width, height) and calculates the scale factor needed to resize the image so it fits within a predefined grid pane area (3 times the visual width and height), without fully loading the image in memory.  <br /></td></tr>
+<tr class="separator:ab687975f44a6d7f3f850d173e7e3a7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43e94e44dab7c598796bc421eecf785f" id="r_a43e94e44dab7c598796bc421eecf785f"><td class="memItemLeft" align="right" valign="top">Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43e94e44dab7c598796bc421eecf785f">intToColor</a> (int colorValue)</td></tr>
 <tr class="memdesc:a43e94e44dab7c598796bc421eecf785f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a 32-bit integer color value in the format 0xRRGGBBAA into a JavaFX <code><a class="el" href="">Color</a></code> object.  <br /></td></tr>
 <tr class="separator:a43e94e44dab7c598796bc421eecf785f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +142,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a2743bcb3cb58005ed103267e058867d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65cbddedd709e118121eaffeca4e374c" id="r_a65cbddedd709e118121eaffeca4e374c"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65cbddedd709e118121eaffeca4e374c">GREEN_SHIFT</a> = 16</td></tr>
 <tr class="separator:a65cbddedd709e118121eaffeca4e374c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8dd9d2893c29cc28f3d58b8ce48dbcc" id="r_aa8dd9d2893c29cc28f3d58b8ce48dbcc"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8dd9d2893c29cc28f3d58b8ce48dbcc">LOG</a> = LoggerFactory.getLogger(ImageUtils.class)</td></tr>
+<tr class="separator:aa8dd9d2893c29cc28f3d58b8ce48dbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d92ea3c9b1a95fbe8792a8b64e4fc0" id="r_aa0d92ea3c9b1a95fbe8792a8b64e4fc0"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0d92ea3c9b1a95fbe8792a8b64e4fc0">RED_SHIFT</a> = 24</td></tr>
 <tr class="separator:aa0d92ea3c9b1a95fbe8792a8b64e4fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -161,38 +163,6 @@ Creating <code><a class="el" href="">BackgroundImage</a></code> instances with c
 <p>All methods throw <code><a class="el" href="">IllegalArgumentException</a></code> when passed <code class="JavaDocCode">null</code> arguments.</p>
 <p>This class is not instantiable and is intended to be used statically. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afd030db3674fffb19e66a4e8a1788c3d" name="afd030db3674fffb19e66a4e8a1788c3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd030db3674fffb19e66a4e8a1788c3d">&#9670;&#160;</a></span>calculateImageScaleFactor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double fr.softsf.sudokufx.common.util.ImageUtils.calculateImageScaleFactor </td>
-          <td>(</td>
-          <td class="paramtype">Image</td>          <td class="paramname"><span class="paramname"><em>tempImage</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Calculates the scale factor needed to resize the given image so it fits within a predefined grid pane area (3 times the visual width and height). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tempImage</td><td>the image to resize; must not be <code class="JavaDocCode">null</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the scale factor to apply for resizing the image to fit within the target grid pane </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">tempImage</code> is <code class="JavaDocCode">null</code> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="aeb560356e4f3cb58cafa57c7dfe8ceab" name="aeb560356e4f3cb58cafa57c7dfe8ceab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb560356e4f3cb58cafa57c7dfe8ceab">&#9670;&#160;</a></span>createBackgroundImage()</h2>
 
@@ -223,6 +193,46 @@ Creating <code><a class="el" href="">BackgroundImage</a></code> instances with c
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab687975f44a6d7f3f850d173e7e3a7a8" name="ab687975f44a6d7f3f850d173e7e3a7a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab687975f44a6d7f3f850d173e7e3a7a8">&#9670;&#160;</a></span>getImageMeta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html#a1e5a9996cd7904625fb67abf6994cc1f">ImageMeta</a> fr.softsf.sudokufx.common.util.ImageUtils.getImageMeta </td>
+          <td>(</td>
+          <td class="paramtype">File</td>          <td class="paramname"><span class="paramname"><em>file</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reads image metadata (width, height) and calculates the scale factor needed to resize the image so it fits within a predefined grid pane area (3 times the visual width and height), without fully loading the image in memory. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>the image file; must not be <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>ImageMeta containing width, height and scaleFactor </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if file is <code class="JavaDocCode">null</code> </td></tr>
+    <tr><td class="paramname">RuntimeException</td><td>if the image cannot be read or format is unsupported </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils_ab687975f44a6d7f3f850d173e7e3a7a8_cgraph.svg" width="464" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -396,6 +406,28 @@ Creating <code><a class="el" href="">BackgroundImage</a></code> instances with c
 
 </div>
 </div>
+<a id="aa8dd9d2893c29cc28f3d58b8ce48dbcc" name="aa8dd9d2893c29cc28f3d58b8ce48dbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dd9d2893c29cc28f3d58b8ce48dbcc">&#9670;&#160;</a></span>LOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Logger fr.softsf.sudokufx.common.util.ImageUtils.LOG = LoggerFactory.getLogger(ImageUtils.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aa0d92ea3c9b1a95fbe8792a8b64e4fc0" name="aa0d92ea3c9b1a95fbe8792a8b64e4fc0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0d92ea3c9b1a95fbe8792a8b64e4fc0">&#9670;&#160;</a></span>RED_SHIFT</h2>
 
@@ -427,7 +459,7 @@ Creating <code><a class="el" href="">BackgroundImage</a></code> instances with c
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html">ImageUtils</a></li>
-    <li class="footer">Generated on Thu Aug 21 2025 11:37:35 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Aug 24 2025 09:49:07 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
