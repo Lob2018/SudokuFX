@@ -14,10 +14,10 @@ CREATE
             iso VARCHAR(2) NOT NULL
         );
 
--- Creation of the "options" table
+-- Creation of the "playeroptions" table
 CREATE
     TABLE
-        OPTIONS(
+        playeroptions(
             optionsid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             hexcolor VARCHAR(8) NOT NULL,
             imagepath VARCHAR(1024) NOT NULL,
@@ -49,7 +49,7 @@ CREATE
         player(
             playerid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             playerlanguageplayerlanguageid BIGINT FOREIGN KEY REFERENCES playerlanguage(playerlanguageid),
-            optionsoptionsid BIGINT FOREIGN KEY REFERENCES OPTIONS(optionsid),
+            optionsoptionsid BIGINT FOREIGN KEY REFERENCES playeroptions(optionsid),
             menumenuid TINYINT FOREIGN KEY REFERENCES menu(menuid),
             name VARCHAR(256) NOT NULL UNIQUE,
             isselected BOOLEAN DEFAULT FALSE NOT NULL,

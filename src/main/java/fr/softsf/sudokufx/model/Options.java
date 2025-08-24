@@ -21,7 +21,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name = "options")
+@Table(name = "playeroptions")
 public class Options {
 
     private static final String DEFAULT_HEX_COLOR = "#000000";
