@@ -28,6 +28,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
+import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
@@ -360,6 +361,8 @@ public class MenuBackgroundViewModel {
     /**
      * Starts the asynchronous image loading and resizing task.
      *
+     * <p>The task runs on a separate daemon thread, so it does not block application shutdown.
+     *
      * @param selectedFile The selected image file.
      * @param toaster The toaster component for user notifications.
      * @param spinner The spinner component to indicate loading.
@@ -379,13 +382,12 @@ public class MenuBackgroundViewModel {
                     @Override
                     protected BackgroundImage call() {
                         try {
-                            Image tempImage = new Image(fileUri, false);
-                            double scaleFactor = imageUtils.calculateImageScaleFactor(tempImage);
+                            ImageMeta meta = imageUtils.getImageMeta(selectedFile);
                             Image resizedImage =
                                     new Image(
                                             fileUri,
-                                            tempImage.getWidth() * scaleFactor,
-                                            tempImage.getHeight() * scaleFactor,
+                                            meta.width() * meta.scaleFactor(),
+                                            meta.height() * meta.scaleFactor(),
                                             true,
                                             true);
                             if (resizedImage.isError()) {
@@ -405,7 +407,9 @@ public class MenuBackgroundViewModel {
         backgroundTask.setOnSucceeded(
                 e -> onImageTaskComplete(backgroundTask, toaster, spinner, sudokuFX));
         backgroundTask.setOnFailed(e -> onImageTaskError(e, toaster, spinner));
-        new Thread(backgroundTask).start();
+        Thread loaderThread = new Thread(backgroundTask, "ImageLoaderThread");
+        loaderThread.setDaemon(true);
+        loaderThread.start();
     }
 
     /**

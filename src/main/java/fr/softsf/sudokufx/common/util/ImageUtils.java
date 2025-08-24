@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.common.util;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Objects;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BackgroundImage;
@@ -13,6 +14,12 @@ import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.scene.paint.Color;
+import javax.imageio.ImageIO;
+import javax.imageio.ImageReader;
+import javax.imageio.stream.ImageInputStream;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import fr.softsf.sudokufx.common.enums.ScreenSize;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
@@ -34,6 +41,8 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
  * <p>This class is not instantiable and is intended to be used statically.
  */
 public class ImageUtils {
+
+    private static final Logger LOG = LoggerFactory.getLogger(ImageUtils.class);
 
     private static final int RED_SHIFT = 24;
     private static final int GREEN_SHIFT = 16;
@@ -79,23 +88,48 @@ public class ImageUtils {
     }
 
     /**
-     * Calculates the scale factor needed to resize the given image so it fits within a predefined
-     * grid pane area (3 times the visual width and height).
+     * Reads image metadata (width, height) and calculates the scale factor needed to resize the
+     * image so it fits within a predefined grid pane area (3 times the visual width and height),
+     * without fully loading the image in memory.
      *
-     * @param tempImage the image to resize; must not be {@code null}
-     * @return the scale factor to apply for resizing the image to fit within the target grid pane
-     * @throws IllegalArgumentException if {@code tempImage} is {@code null}
+     * @param file the image file; must not be {@code null}
+     * @return ImageMeta containing width, height and scaleFactor
+     * @throws IllegalArgumentException if file is {@code null}
+     * @throws RuntimeException if the image cannot be read or format is unsupported
      */
-    public double calculateImageScaleFactor(Image tempImage) {
-        if (Objects.isNull(tempImage)) {
+    public ImageMeta getImageMeta(File file) {
+        if (file == null) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "The image to be resized mustn't be null");
+                    "The image file mustn't be null");
         }
-        double imageWidth = tempImage.getWidth();
-        double imageHeight = tempImage.getHeight();
-        double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
-        double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
-        return Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
+        try (ImageInputStream in = ImageIO.createImageInputStream(file)) {
+            if (in == null) {
+                throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                        "Cannot open image stream for: " + file.getName());
+            }
+            var readers = ImageIO.getImageReaders(in);
+            if (!readers.hasNext()) {
+                String msg = "Unsupported image format: " + file.getName();
+                LOG.error("██ {}", msg);
+                throw new RuntimeException(msg);
+            }
+            ImageReader reader = readers.next();
+            try {
+                reader.setInput(in);
+                int imageWidth = reader.getWidth(0);
+                int imageHeight = reader.getHeight(0);
+                double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
+                double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
+                double scaleFactor =
+                        Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
+                return new ImageMeta(imageWidth, imageHeight, scaleFactor);
+            } finally {
+                reader.dispose();
+            }
+        } catch (IOException e) {
+            LOG.error("██ Failed to read image: {} - {}", file.getName(), e.getMessage(), e);
+            throw new RuntimeException("Failed to read image: " + file.getName(), e);
+        }
     }
 
     /**

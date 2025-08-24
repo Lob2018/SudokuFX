@@ -19,6 +19,7 @@ import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
 
+import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -74,11 +75,12 @@ class ImageUtilsUTest {
 
     @Test
     void givenValidImage_whenCalculateImageScaleFactor_thenReturnsPositiveScale() {
-        Image image =
-                new Image(
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/320px-Hopetoun_falls.jpg");
-        double scale = imageUtils.calculateImageScaleFactor(image);
-        assertTrue(scale > 0);
+        File imageFile = new File("src/test/resources/sample.jpg");
+        ImageMeta meta = imageUtils.getImageMeta(imageFile);
+        assertNotNull(meta);
+        assertTrue(meta.width() > 0);
+        assertTrue(meta.height() > 0);
+        assertTrue(meta.scaleFactor() > 0);
     }
 
     @Test
@@ -87,16 +89,23 @@ class ImageUtilsUTest {
                 assertThrows(
                         IllegalArgumentException.class,
                         () -> {
-                            imageUtils.calculateImageScaleFactor(null);
+                            imageUtils.getImageMeta(null);
                         });
-        assertTrue(ex.getMessage().contains("The image to be resized mustn't be null"));
+        assertTrue(ex.getMessage().contains("The image file mustn't be null"));
     }
 
     @Test
     void givenValidImage_whenCreateBackgroundImage_thenReturnsNonNullBackgroundImage() {
+        File imageFile = new File("src/test/resources/sample.jpg");
+        assertTrue(imageFile.exists(), "The file sample.jpg must exist in src/test/resources");
+        ImageMeta meta = imageUtils.getImageMeta(imageFile);
         Image image =
                 new Image(
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hopetoun_falls.jpg/320px-Hopetoun_falls.jpg");
+                        imageFile.toURI().toString(),
+                        meta.width() * meta.scaleFactor(),
+                        meta.height() * meta.scaleFactor(),
+                        true,
+                        true);
         BackgroundImage bgImage = imageUtils.createBackgroundImage(image);
         assertNotNull(bgImage);
         assertEquals(image, bgImage.getImage());
