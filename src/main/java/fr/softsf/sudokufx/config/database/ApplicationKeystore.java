@@ -240,7 +240,12 @@ final class ApplicationKeystore implements IKeystore {
                             password = generateSecret.generatePassaySecret();
                             yield iEncryptionService.encrypt(password);
                         }
-                        default -> "";
+                        default -> {
+                            ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                                    alias,
+                                    "The keystore alias for the credential must not be null or blank, but was " + alias);
+                            yield "";
+                        }
                     };
             SecretKey secretKey = new SecretKeySpec(secret.getBytes(), "AES");
             addToKeystore(alias, secretKey);
