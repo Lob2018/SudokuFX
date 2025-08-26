@@ -243,7 +243,9 @@ final class ApplicationKeystore implements IKeystore {
                         default -> {
                             ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                                     alias,
-                                    "The keystore alias for the credential must not be null or blank, but was " + alias);
+                                    "The keystore alias for the credential must not be null or"
+                                            + " blank, but was "
+                                            + alias);
                             yield "";
                         }
                     };
