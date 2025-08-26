@@ -48,7 +48,6 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Contributors](#contributors)
-- [Feedback](#feedback)
 - [Licence](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)
 
 ## Installation
@@ -145,7 +144,7 @@ To ensure the integrity of downloaded assets, import the GPG public key with `gp
    >
    >     /Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX
 
-[^1]:Replace \<USERNAME\> with your currently logged-in username.
+[^1]:Replace \<USERNAME\> with your actual username on the system.
 
 ## Project
 
@@ -285,14 +284,3 @@ Please read our [Code of Conduct](./CODE_OF_CONDUCT.md) before participating.
 ## Contributors
 
 [Lob2018](https://github.com/Lob2018)
-
-## Feedback
-
-- [File an issue](https://github.com/Lob2018/SudokuFX/issues)
-    - If you want you can attach the application logs you find:
-        - Windows
-          - Inside C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX/logs-sudokufx
-        - Linux
-          - Inside /home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX/logs-sudokufx
-        - MacOS
-          - Inside /Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX/logs-sudokufx

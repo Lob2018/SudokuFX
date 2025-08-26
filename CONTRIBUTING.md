@@ -9,19 +9,20 @@ We welcome all kinds of contributions — from bug reports and feature requests 
 
 1. [Project Overview](#1-project-overview)
 2. [How to Contribute](#2-how-to-contribute)
-3. [Development Setup](#3-development-setup)
-4. [Coding Standards and Formatting](#4-coding-standards-and-formatting)
-5. [Git Hooks and Code Quality with pre-commit](#5-git-hooks-and-code-quality-with-pre-commit)
-6. [Testing Guidelines](#6-testing-guidelines)
+3. [Filing an Issue](#3-filing-an-issue)
+4. [Development Setup](#4-development-setup)
+5. [Coding Standards and Formatting](#5-coding-standards-and-formatting)
+6. [Git Hooks and Code Quality with pre-commit](#6-git-hooks-and-code-quality-with-pre-commit)
+7. [Testing Guidelines](#7-testing-guidelines)
     - [Test Policy for New Functionality](#test-policy-for-new-functionality)
-7. [Commit Message Guidelines](#7-commit-message-guidelines)
-8. [Contribution Workflow](#8-contribution-workflow)
-9. [Pull Requests](#9-pull-requests)
-10. [Types of Contributions Welcome](#10-types-of-contributions-welcome)
-11. [Community and Communication](#11-community-and-communication)
-12. [Code of Conduct](#12-code-of-conduct)
-13. [Security Policy](#13-security-policy)
-14. [Useful Links](#14-useful-links)
+8. [Commit Message Guidelines](#8-commit-message-guidelines)
+9. [Contribution Workflow](#9-contribution-workflow)
+10. [Pull Requests](#10-pull-requests)
+11. [Types of Contributions Welcome](#11-types-of-contributions-welcome)
+12. [Community and Communication](#12-community-and-communication)
+13. [Code of Conduct](#13-code-of-conduct)
+14. [Security Policy](#14-security-policy)
+15. [Useful Links](#15-useful-links)
 
 ---
 
@@ -52,7 +53,52 @@ Our goal is to provide a clean, extensible, and performant Sudoku experience for
 
 ---
 
-## 3. Development Setup
+## 3. Filing an Issue
+
+If you encounter a bug, have a feature request, or need help with SudokuFX, please [file an issue](https://github.com/Lob2018/SudokuFX/issues) on our GitHub repository.
+
+### 🐛 Bug Reports
+
+When reporting bugs, please include:
+
+- A clear description of the issue
+- Steps to reproduce the problem
+- Expected vs actual behavior
+- Your operating system and Java version
+- **Application logs** (see below)
+
+### 📋 Application Logs
+
+Please attach the application logs when filing bug reports. You can find them at:
+
+#### **Windows**
+```
+C:/Users/<USERNAME>/AppData/Local/Soft64.fr/SudokuFX/logs-sudokufx
+```
+
+#### **Linux**
+```
+/home/<USERNAME>/.local/share/Soft64.fr/SudokuFX/logs-sudokufx
+```
+
+#### **MacOS**
+```
+/Users/<USERNAME>/Library/Application Support/Soft64.fr/SudokuFX/logs-sudokufx
+```
+
+> **Note:** Replace `<USERNAME>` with your actual username on the system.
+
+### ✨ Feature Requests
+
+For feature requests, please describe:
+
+- The feature you'd like to see
+- Why it would be useful
+- Any implementation ideas you might have
+
+---
+
+## 4. Development Setup
 
 ### 🛠 Prerequisites
 
@@ -100,7 +146,7 @@ To use them:
 
 ---
 
-## 4. Coding Standards and Formatting
+## 5. Coding Standards and Formatting
 
 - We use **Google Java Format v1.27.0** with **AOSP style**.
 - Formatting is enforced via the **Spotless Maven Plugin**.
@@ -119,7 +165,7 @@ To use them:
 
 > ❗ Unformatted code will fail the build or be rejected during review.
 
-## 5. Git Hooks and Code Quality with pre-commit
+## 6. Git Hooks and Code Quality with pre-commit
 
 We use [pre-commit](https://pre-commit.com/) to enforce code quality and prevent common issues before commits are made.
 
@@ -152,7 +198,7 @@ py -m pre_commit autoupdate
 winget install --id=koalaman.shellcheck
 ```
 
-## 6. Testing Guidelines
+## 7. Testing Guidelines
 
 - ✅ **All new features and bug fixes must include appropriate unit or integration tests.**
 - Use **JUnit 5** for unit tests and **TestFX** for JavaFX UI testing.
@@ -177,7 +223,7 @@ If you're unsure how to test a specific feature, feel free to open a draft PR or
 
 ---
 
-## 7. Commit Message Guidelines
+## 8. Commit Message Guidelines
 
 We use a standardized commit message template to keep our Git history clean, readable, and consistent.
 
@@ -231,7 +277,7 @@ Here are the supported commit types:
 
 ---
 
-## 8. Contribution Workflow
+## 9. Contribution Workflow
 
 1. Sync your local `main` branch with upstream:
 
@@ -247,7 +293,7 @@ Here are the supported commit types:
 
 ---
 
-## 9. Pull Requests
+## 10. Pull Requests
 
 - Open a PR against the `main` branch.
 - Use the PR template and include:
@@ -259,7 +305,7 @@ Here are the supported commit types:
 
 ---
 
-## 10. Types of Contributions Welcome
+## 11. Types of Contributions Welcome
 
 We welcome:
 
@@ -267,12 +313,12 @@ We welcome:
 - ✨ New features and enhancements
 - 🧪 Tests and test coverage improvements
 - 📚 Documentation updates
-- 🧹 Code cleanup and refactoring
+- ♻️ Code cleanup and refactoring
 - 🌐 Internationalization and accessibility improvements
 
 ---
 
-## 11. Community and Communication
+## 12. Community and Communication
 
 - Use GitHub Issues for bugs and feature requests.
 - Use Pull Requests for code contributions.
@@ -280,21 +326,21 @@ We welcome:
 
 ---
 
-## 12. Code of Conduct
+## 13. Code of Conduct
 
 Please read and follow our [Code of Conduct](./CODE_OF_CONDUCT.md).
 We are committed to fostering a welcoming and respectful community.
 
 ---
 
-## 13. Security Policy
+## 14. Security Policy
 
 If you discover a security vulnerability, please report it responsibly.
 See our [Security Policy](./SECURITY.md) for details.
 
 ---
 
-## 14. Useful Links
+## 15. Useful Links
 
 - [Spotless Maven Plugin](https://github.com/diffplug/spotless)
 - [Google Java Format](https://github.com/google/google-java-format)
