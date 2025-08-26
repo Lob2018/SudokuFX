@@ -86,6 +86,59 @@ To ensure the integrity of downloaded assets, import the GPG public key with `gp
 
 ## Use
 
+### Launch and play SudokuFX
+
+#### Windows
+- **Application with Java Runtime Environment (JRE) included**: Launch SudokuFX from the Start Menu after installing the MSI file.
+- **Application without Java Runtime Environment (JRE) included**: Run from the extracted ZIP folder:
+```
+./SudokuFX-v.v.v.bat
+```
+
+#### Linux
+- **Application with Java Runtime Environment (JRE) included**: Launch from the applications menu or run from the terminal in the folder where the DEB file was installed:
+```
+/opt/sudokufx-jvm/bin/SudokuFX-JVM
+```
+- **Application without Java Runtime Environment (JRE) included**: Navigate to the extracted TAR folder and run:
+```
+./SudokuFX-v.v.v.sh
+```
+
+#### MacOS
+- **Application with Java Runtime Environment (JRE) included**: Launch from the Applications folder or Launchpad after installing the DMG file.
+- **Application without Java Runtime Environment (JRE) included**: Navigate to the extracted ZIP folder and run:
+```
+./SudokuFX-v.v.v.sh
+```
+
+### Basic gameplay
+
+1. **Select difficulty**: Choose from Easy, Medium, or Difficult levels to start a new game.
+2. **Fill the grid**: Click on any empty cell and enter numbers 1-9.
+3. **Check progress**: The game automatically validates your entries.
+4. **Save and load**:
+    - Progress is automatically saved for the **current player**, so ongoing games are preserved.
+    - You can also **switch between players** and **resume previously saved games**.
+
+### Features
+
+- **Multiple difficulty levels**: From beginner-friendly to difficult challenges.
+- **Auto save**: Your progress is automatically saved.
+- **Clean interface**: Modern, intuitive design.
+- **Cross-platform**: Works seamlessly on Windows, Linux, and MacOS.
+
+### Troubleshooting
+
+If you encounter any issues:
+
+1. **Game won't start**: Ensure you have the correct Java version if using the non-JRE version.
+2. **Performance issues**: Try closing other applications to free up system resources.
+3. **Display problems**: Check your system's display scaling settings.
+4. **Save and load issues**: Verify that SudokuFX has write permissions to your user directory.
+
+For additional help, check the application logs or [file an issue](https://github.com/Lob2018/SudokuFX/issues) on GitHub.
+
 ## Examples
 
 ## Update
