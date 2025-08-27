@@ -194,7 +194,7 @@ public class MenuPlayerViewModel {
         return new PlayerDto(
                 1L,
                 new PlayerLanguageDto(1L, "FR"),
-                new OptionsDto(1L, "#3498db", "", false, true),
+                new OptionsDto(1L, "#3498db", "", "", false, true, true),
                 new MenuDto((byte) 1, (byte) 1),
                 null,
                 name,
