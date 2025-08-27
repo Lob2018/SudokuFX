@@ -21,8 +21,10 @@ CREATE
             optionsid BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
             hexcolor VARCHAR(8) NOT NULL,
             imagepath VARCHAR(1024) NOT NULL,
+            songpath VARCHAR(1024) NOT NULL,
             isimage BOOLEAN DEFAULT FALSE NOT NULL,
             isopaque BOOLEAN DEFAULT TRUE NOT NULL,
+            ismuted BOOLEAN DEFAULT TRUE NOT NULL
         );
 
 -- Creation of the "gamelevel" table

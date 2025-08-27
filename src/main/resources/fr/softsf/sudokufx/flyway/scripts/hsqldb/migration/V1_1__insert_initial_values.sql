@@ -15,13 +15,17 @@ INSERT
         playeroptions(
             hexcolor,
             imagepath,
+            songpath,
             isimage,
-            isopaque
+            isopaque,
+            ismuted
         )
     VALUES(
         '000000ff',
         '',
+        '',
         FALSE,
+        TRUE,
         TRUE
     );
 
