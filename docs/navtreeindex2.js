@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ac8e060925b99242d5e197d45c6c880b8":[2,0,0,0,0,2,5,2],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#accf2f4cc3c02cec1068849bd4ab833d2":[1,0,0,0,0,2,5,4],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#accf2f4cc3c02cec1068849bd4ab833d2":[2,0,0,0,0,2,5,4],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ad5c2f554f0e1f109339ad6456751d970":[1,0,0,0,0,2,5,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#afada16499adf536133cd156c29d06c07":[2,0,0,0,0,2,1,1,8],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html":[1,0,0,0,0,2,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html":[2,0,0,0,0,2,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a11b551b3c62f3106510b5623af4cb56f":[1,0,0,0,0,2,1,2,7],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a11b551b3c62f3106510b5623af4cb56f":[2,0,0,0,0,2,1,2,7]
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a11b551b3c62f3106510b5623af4cb56f":[1,0,0,0,0,2,1,2,7]
 };
