@@ -19,6 +19,7 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
+import fr.softsf.sudokufx.service.AudioService;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 
 /**
@@ -34,11 +35,15 @@ public class GridViewModel {
 
     private final IGridMaster iGridMaster;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
+    private final AudioService audioService;
 
     public GridViewModel(
-            IGridMaster iGridMaster, ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel) {
+            IGridMaster iGridMaster,
+            ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,
+            AudioService audioService) {
         this.iGridMaster = iGridMaster;
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
+        this.audioService = audioService;
     }
 
     /**
@@ -57,10 +62,13 @@ public class GridViewModel {
                         .textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
+                                    verifyGrid();
                                     if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
-                                                    == ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE
-                                            || isCompletelyCompleted()) {
+                                                    != ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE
+                                            && isCompletelyCompleted()) {
                                         verifyGrid();
+                                    } else {
+                                        audioService.stopSong();
                                     }
                                 });
                 cellViewModels.add(cellVM);
@@ -113,6 +121,12 @@ public class GridViewModel {
         boolean solved = grilleResolue.solved();
         int[] solvedGrid = grilleResolue.solvedGrid();
         int percentage = grilleResolue.possibilityPercentage();
+        // TODO Win !
+        //        if (solved && Arrays.equals(grilleInt, solvedGrid)) {
+        //            // Play the song from inMemorPlayer
+        //            audioService.playSong(
+        //                    new File("C:\\USERS"));
+        //        }
         System.out.println("\n\nsolvedGrid:" + Arrays.toString(solvedGrid));
         System.out.println("Solved : " + solved + "\nPourcentage : " + percentage + "%\n\n");
     }

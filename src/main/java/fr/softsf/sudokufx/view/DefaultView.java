@@ -52,6 +52,7 @@ import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.navigation.Coordinator;
+import fr.softsf.sudokufx.service.AudioService;
 import fr.softsf.sudokufx.view.component.MyAlert;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
@@ -99,6 +100,7 @@ public final class DefaultView implements IMainView {
     @Autowired private MenuOptionsViewModel menuOptionsViewModel;
     @Autowired private MenuNewViewModel menuNewViewModel;
     @Autowired private GridViewModel gridViewModel;
+    @Autowired private AudioService audioService;
 
     @FXML private ToasterVBox toaster;
     @FXML private SpinnerGridPane spinner;
@@ -199,6 +201,7 @@ public final class DefaultView implements IMainView {
      */
     @FXML
     private void initialize() {
+        stopAudioOnExitInitialization();
         hideMiniMenuTimeline = hideMiniMenuTimelineInitialization();
         hiddenMenuInitialization();
         miniMenuInitialization();
@@ -211,6 +214,14 @@ public final class DefaultView implements IMainView {
         newMenuInitialization();
         activeMenuManagerInitialization();
         gridInitialization();
+    }
+
+    /**
+     * Registers a listener on the primary stage to stop all audio when the application window is
+     * closed.
+     */
+    private void stopAudioOnExitInitialization() {
+        primaryStage.setOnCloseRequest(event -> audioService.stopAll());
     }
 
     /**

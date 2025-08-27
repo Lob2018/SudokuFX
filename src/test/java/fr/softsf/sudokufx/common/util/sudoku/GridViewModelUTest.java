@@ -18,6 +18,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
+import fr.softsf.sudokufx.service.AudioService;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
@@ -34,7 +35,8 @@ class GridViewModelUTest {
         viewModel =
                 new GridViewModel(
                         new GridMaster(new JakartaValidator(null)),
-                        new ActiveMenuOrSubmenuViewModel());
+                        new ActiveMenuOrSubmenuViewModel(),
+                        new AudioService());
         viewModel.init();
     }
 
@@ -47,7 +49,6 @@ class GridViewModelUTest {
     void givenFilledGrid_whenClearGrid_thenAllCellsAreEmpty() {
         viewModel.getCellViewModels().forEach(vm -> vm.rawTextProperty().set("5"));
         viewModel.clearGrid();
-
         boolean allEmpty =
                 viewModel.getCellViewModels().stream()
                         .allMatch(vm -> vm.rawTextProperty().get().isEmpty());
@@ -57,9 +58,7 @@ class GridViewModelUTest {
     @Test
     void givenValidValues_whenSetValues_thenAllCellsContainCorrectValues() {
         List<String> values = IntStream.rangeClosed(1, 81).mapToObj(String::valueOf).toList();
-
         viewModel.setValues(values);
-
         assertEquals(values, viewModel.getAllValues());
     }
 
