@@ -19,26 +19,26 @@
 <text text-anchor="start" x="14" y="-1002.5" font-family="Helvetica,sans-Serif" font-size="10.00">ActiveMenuOrSubmenuViewModel</text>
 <text text-anchor="start" x="14" y="-990.5" font-family="Helvetica,sans-Serif" font-size="10.00"> activeMenuOrSubmenuViewModel</text>
 <text text-anchor="start" x="5.5" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator coordinator</text>
+<text text-anchor="start" x="14" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">AudioService audioService</text>
 <text text-anchor="start" x="5.5" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel gridViewModel</text>
+<text text-anchor="start" x="14" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator coordinator</text>
 <text text-anchor="start" x="5.5" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel helpViewModel</text>
+<text text-anchor="start" x="14" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel gridViewModel</text>
 <text text-anchor="start" x="5.5" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">Timeline hideMiniMenuTimeline</text>
+<text text-anchor="start" x="14" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel helpViewModel</text>
 <text text-anchor="start" x="5.5" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox menuHidden</text>
+<text text-anchor="start" x="14" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">Timeline hideMiniMenuTimeline</text>
 <text text-anchor="start" x="5.5" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuHiddenButtonShow</text>
+<text text-anchor="start" x="14" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox menuHidden</text>
 <text text-anchor="start" x="5.5" y="-878.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-878.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuHiddenViewModel</text>
-<text text-anchor="start" x="14" y="-866.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuHiddenViewModel</text>
-<text text-anchor="start" x="5.5" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuLevelViewModel</text>
-<text text-anchor="start" x="14" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuLevelViewModel</text>
-<text text-anchor="start" x="5.5" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox menuMaxi</text>
-<text text-anchor="start" x="14" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 87 more...</text>
+<text text-anchor="start" x="14" y="-878.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuHiddenButtonShow</text>
+<text text-anchor="start" x="5.5" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuHiddenViewModel</text>
+<text text-anchor="start" x="14" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuHiddenViewModel</text>
+<text text-anchor="start" x="5.5" y="-834.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-834.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuLevelViewModel</text>
+<text text-anchor="start" x="14" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuLevelViewModel</text>
+<text text-anchor="start" x="14" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 89 more...</text>
 <text text-anchor="start" x="5.5" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int AUTO</text>
 <text text-anchor="start" x="14" y="-778.5" font-family="Helvetica,sans-Serif" font-size="10.00">_HIDE_MINI_MENU_DELAY_MS</text>
@@ -123,7 +123,7 @@
 <text text-anchor="start" x="14" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel.ActiveMenu menuType)</text>
 <text text-anchor="start" x="5.5" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">void gridInitialization()</text>
-<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 18 more...</text>
+<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 19 more...</text>
 <polygon fill="#666666" stroke="#666666" points="0,-1014 0,-1014 187.5,-1014 187.5,-1014 0,-1014"/>
 <polygon fill="#666666" stroke="#666666" points="0,-650 0,-650 12,-650 12,-650 0,-650"/>
 <polygon fill="#666666" stroke="#666666" points="12,-650 12,-650 187.5,-650 187.5,-650 12,-650"/>

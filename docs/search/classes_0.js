@@ -6,5 +6,6 @@ var searchData=
   ['activemenuorsubmenuviewmodel_3',['ActiveMenuOrSubmenuViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
   ['activemenuorsubmenuviewmodelutest_4',['ActiveMenuOrSubmenuViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel']]],
   ['applicationkeystore_5',['ApplicationKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html',1,'fr::softsf::sudokufx::config::database']]],
-  ['applicationkeystoreitest_6',['ApplicationKeystoreITest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html',1,'fr::softsf::sudokufx::config::database']]]
+  ['applicationkeystoreitest_6',['ApplicationKeystoreITest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html',1,'fr::softsf::sudokufx::config::database']]],
+  ['audioservice_7',['AudioService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html',1,'fr::softsf::sudokufx::service']]]
 ];

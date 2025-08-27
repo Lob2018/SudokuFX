@@ -12,11 +12,11 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="196,-112.29 0,-112.29 0,-56.29 196,-56.29 196,-112.29"/>
-<text text-anchor="start" x="8" y="-98.79" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="8" y="-86.79" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModelUTest.givenView</text>
-<text text-anchor="start" x="8" y="-74.79" font-family="Helvetica,sans-Serif" font-size="10.00">ModelAndColorPicker_whenInitCalled</text>
-<text text-anchor="middle" x="98" y="-62.79" font-family="Helvetica,sans-Serif" font-size="10.00">_thenColorIsSetAndColorPickerUpdated</text>
+<polygon fill="#999999" stroke="#666666" points="196,-140.29 0,-140.29 0,-84.29 196,-84.29 196,-140.29"/>
+<text text-anchor="start" x="8" y="-126.79" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="8" y="-114.79" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModelUTest.givenView</text>
+<text text-anchor="start" x="8" y="-102.79" font-family="Helvetica,sans-Serif" font-size="10.00">ModelAndColorPicker_whenInitCalled</text>
+<text text-anchor="middle" x="98" y="-90.79" font-family="Helvetica,sans-Serif" font-size="10.00">_thenColorIsSetAndColorPickerUpdated</text>
 </a>
 </g>
 </g>
@@ -24,9 +24,9 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a52dadaf5fba37f78cc096f5d55487246" target="_top" xlink:title="Initializes the GridPane background with settings from database.">
-<polygon fill="white" stroke="#666666" points="377,-100.29 232,-100.29 232,-68.29 377,-68.29 377,-100.29"/>
-<text text-anchor="start" x="240" y="-86.79" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="304.5" y="-74.79" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.init</text>
+<polygon fill="white" stroke="#666666" points="377,-128.29 232,-128.29 232,-96.29 377,-96.29 377,-128.29"/>
+<text text-anchor="start" x="240" y="-114.79" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="middle" x="304.5" y="-102.79" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.init</text>
 </a>
 </g>
 </g>
@@ -34,8 +34,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M196.46,-84.29C204.41,-84.29 212.39,-84.29 220.23,-84.29"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="220.06,-87.79 230.06,-84.29 220.06,-80.79 220.06,-87.79"/>
+<path fill="none" stroke="#63b8ff" d="M196.46,-112.29C204.41,-112.29 212.39,-112.29 220.23,-112.29"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="220.06,-115.79 230.06,-112.29 220.06,-108.79 220.06,-115.79"/>
 </a>
 </g>
 </g>
@@ -54,8 +54,8 @@
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M367.85,-100.79C384.69,-105.25 403.31,-110.17 421.52,-114.99"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="420.45,-118.33 431.01,-117.51 422.24,-111.57 420.45,-118.33"/>
+<path fill="none" stroke="#63b8ff" d="M377.44,-121.81C387.47,-123.14 397.96,-124.53 408.48,-125.92"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="408.02,-129.39 418.4,-127.23 408.94,-122.45 408.02,-129.39"/>
 </a>
 </g>
 </g>
@@ -73,27 +73,8 @@
 <g id="edge21_Node000002_Node000015" class="edge">
 <title>Node2&#45;&gt;Node15</title>
 <g id="a_edge21_Node000002_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M377.44,-84.29C385.18,-84.29 393.19,-84.29 401.27,-84.29"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="401.22,-87.79 411.22,-84.29 401.22,-80.79 401.22,-87.79"/>
-</a>
-</g>
-</g>
-<!-- Node16 -->
-<g id="Node000016" class="node">
-<title>Node16</title>
-<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a03b57ddb0665ea84bc40bc3ef954b26a" target="_top" xlink:title="Sets the grid opacity mode.">
-<polygon fill="white" stroke="#666666" points="616.12,-50.29 420.12,-50.29 420.12,-18.29 616.12,-18.29 616.12,-50.29"/>
-<text text-anchor="start" x="428.12" y="-36.79" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="518.12" y="-24.79" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.setOpaqueMode</text>
-</a>
-</g>
-</g>
-<!-- Node2&#45;&gt;Node16 -->
-<g id="edge22_Node000002_Node000016" class="edge">
-<title>Node2&#45;&gt;Node16</title>
-<g id="a_edge22_Node000002_Node000016"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M375.09,-67.85C394.7,-63.22 416.21,-58.14 436.42,-53.36"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="437.1,-56.8 446.02,-51.09 435.49,-49.99 437.1,-56.8"/>
+<path fill="none" stroke="#63b8ff" d="M377.44,-102.77C385.27,-101.74 393.37,-100.67 401.55,-99.59"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="401.78,-103.09 411.24,-98.3 400.86,-96.15 401.78,-103.09"/>
 </a>
 </g>
 </g>

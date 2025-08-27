@@ -46,7 +46,7 @@ Original repository: [MicrosoftEdge/Sudoku](https://github.com/MicrosoftEdge/Sud
 
 ---
 
-Lists of 102 third-party dependencies.
+Lists of 103 third-party dependencies.
      (ASF 2.0) Code Generation Library (cglib:cglib:3.1 - http://cglib.sourceforge.net/)
      (Eclipse Public License - v 1.0) (GNU Lesser General Public License) Logback Classic Module (ch.qos.logback:logback-classic:1.5.18 - http://logback.qos.ch/logback-classic)
      (Eclipse Public License - v 1.0) (GNU Lesser General Public License) Logback Core Module (ch.qos.logback:logback-core:1.5.18 - http://logback.qos.ch/logback-core)
@@ -115,6 +115,7 @@ Lists of 102 third-party dependencies.
      (GPLv2+CE) javafx-controls (org.openjfx:javafx-controls:23.0.2 - https://openjdk.java.net/projects/openjfx/javafx-controls/)
      (GPLv2+CE) javafx-fxml (org.openjfx:javafx-fxml:23.0.2 - https://openjdk.java.net/projects/openjfx/javafx-fxml/)
      (GPLv2+CE) javafx-graphics (org.openjfx:javafx-graphics:23.0.2 - https://openjdk.java.net/projects/openjfx/javafx-graphics/)
+     (GPLv2+CE) javafx-media (org.openjfx:javafx-media:23.0.2 - https://openjdk.java.net/projects/openjfx/javafx-media/)
      (The Apache License, Version 2.0) org.opentest4j:opentest4j (org.opentest4j:opentest4j:1.3.0 - https://github.com/ota4j-team/opentest4j)
      (Apache License, Version 2.0) org.osgi.core (org.osgi:org.osgi.core:6.0.0 - http://www.osgi.org)
      (BSD) ASM Core (org.ow2.asm:asm:4.2 - http://asm.objectweb.org/asm/)

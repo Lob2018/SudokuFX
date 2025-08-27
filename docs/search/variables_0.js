@@ -19,5 +19,6 @@ var searchData=
   ['apporganization_16',['appOrganization',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ae81f3eb980c1bacca03dade9ffa57987',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['appversion_17',['appVersion',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a4ec2bcbb57929a66f25b47d4bd5d709c',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['ascii_5flogo_18',['ASCII_LOGO',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ad676af3ab8af46c96474134d7079fc91',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]],
-  ['auto_5fhide_5fmini_5fmenu_5fdelay_5fms_19',['AUTO_HIDE_MINI_MENU_DELAY_MS',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab9d123cb50e619e0bbff4db41cb452f0',1,'fr::softsf::sudokufx::view::DefaultView']]]
+  ['audioservice_19',['audioService',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a902106b71a003b3e2605b525a8980977',1,'fr.softsf.sudokufx.view.DefaultView.audioService'],['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a42da36ba8d2ce37205b34470bfe77837',1,'fr.softsf.sudokufx.viewmodel.grid.GridViewModel.audioService']]],
+  ['auto_5fhide_5fmini_5fmenu_5fdelay_5fms_20',['AUTO_HIDE_MINI_MENU_DELAY_MS',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab9d123cb50e619e0bbff4db41cb452f0',1,'fr::softsf::sudokufx::view::DefaultView']]]
 ];

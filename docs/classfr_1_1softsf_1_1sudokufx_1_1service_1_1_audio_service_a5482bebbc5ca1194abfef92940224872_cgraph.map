@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.AudioService.stopAll" name="fr.softsf.sudokufx.service.AudioService.stopAll">
+<area shape="rect" id="Node000001" title="Stops and disposes all audio resources." alt="" coords="5,5,179,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#acc3975c3eb2f43575343b1ae71aa252a" title="Stops and disposes the song player." alt="" coords="227,5,400,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,24,211,24,211,29,179,29"/>
+</map>

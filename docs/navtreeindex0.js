@@ -6,6 +6,7 @@ var NAVTREEINDEX0 =
 "_active_menu_or_submenu_view_model_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,2,2],
 "_application_keystore_8java.html":[3,0,1,0,0,0,0,0,2,0,1],
 "_application_keystore_i_test_8java.html":[3,0,1,1,0,0,0,0,1,0,1],
+"_audio_service_8java.html":[3,0,1,0,0,0,0,0,7,0],
 "_bench_grid_master_8java.html":[3,0,1,0,0,0,0,0,0,0],
 "_commit_dto_8java.html":[3,0,1,0,0,0,0,0,3,0,0],
 "_coordinator_8java.html":[3,0,1,0,0,0,0,0,5,0],
@@ -129,7 +130,7 @@ var NAVTREEINDEX0 =
 "_player_language_repository_8java.html":[3,0,1,0,0,0,0,0,6,5],
 "_player_language_u_test_8java.html":[3,0,1,1,0,0,0,0,2,5],
 "_player_repository_8java.html":[3,0,1,0,0,0,0,0,6,6],
-"_player_service_8java.html":[3,0,1,0,0,0,0,0,7,1],
+"_player_service_8java.html":[3,0,1,0,0,0,0,0,7,2],
 "_player_service_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,1,0],
 "_player_u_test_8java.html":[3,0,1,1,0,0,0,0,2,6],
 "_possibility_stars_h_box_8java.html":[3,0,1,0,0,0,0,0,8,0,3],
@@ -149,7 +150,7 @@ var NAVTREEINDEX0 =
 "_toaster_button_8java.html":[3,0,1,0,0,0,0,0,8,0,1,0],
 "_toaster_v_box_8java.html":[3,0,1,0,0,0,0,0,8,0,1,1],
 "_urls_8java.html":[3,0,1,0,0,0,0,0,1,1,9],
-"_version_service_8java.html":[3,0,1,0,0,0,0,0,7,2],
+"_version_service_8java.html":[3,0,1,0,0,0,0,0,7,3],
 "_version_service_i_test_8java.html":[3,0,1,1,0,0,0,0,4,1,1,0],
 "annotated.html":[2,0],
 "classes.html":[2,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html#af41d09c76552eba7c86e6435295c7ec6":[1,0,0,0,0,1,4,2,3],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html#af41d09c76552eba7c86e6435295c7ec6":[2,0,0,0,0,1,4,2,3],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html":[1,0,0,0,0,1,4,3],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html":[2,0,0,0,0,1,4,3],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html#a018b48f0ee7e805d5ae225368c9dcd1c":[1,0,0,0,0,1,4,3,2]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html":[2,0,0,0,0,1,4,3]
 };

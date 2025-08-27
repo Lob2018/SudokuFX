@@ -17,6 +17,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.config.database.ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html", null ],
+    [ "fr.softsf.sudokufx.service.AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html", null ],
     [ "fr.softsf.sudokufx.benchmark.BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", null ],
     [ "fr.softsf.sudokufx.model.OptionsUTest.BuilderPatternTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_builder_pattern_tests.html", null ],
     [ "fr.softsf.sudokufx.model.GameUTest.BuilderTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html", null ],
