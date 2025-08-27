@@ -42,21 +42,15 @@ public class Options {
     private Long optionsid;
 
     @Nonnull
-    @NotNull
-    @Size(max = 8)
-    @Column(name = "hexcolor", nullable = false, length = 8)
+    @NotNull @Size(max = 8) @Column(name = "hexcolor", nullable = false, length = 8)
     private String hexcolor = DEFAULT_HEX_COLOR;
 
     @Nonnull
-    @NotNull
-    @Size(max = MAX_PATH_LENGTH)
-    @Column(name = "imagepath", nullable = false, length = MAX_PATH_LENGTH)
+    @NotNull @Size(max = MAX_PATH_LENGTH) @Column(name = "imagepath", nullable = false, length = MAX_PATH_LENGTH)
     private String imagepath = EMPTY_PATH;
 
     @Nonnull
-    @NotNull
-    @Size(max = MAX_PATH_LENGTH)
-    @Column(name = "songpath", nullable = false, length = MAX_PATH_LENGTH)
+    @NotNull @Size(max = MAX_PATH_LENGTH) @Column(name = "songpath", nullable = false, length = MAX_PATH_LENGTH)
     private String songpath = EMPTY_PATH;
 
     @Column(name = "isimage", nullable = false)
@@ -68,8 +62,7 @@ public class Options {
     @Column(name = "ismuted", nullable = false)
     private boolean ismuted = true;
 
-    protected Options() {
-    }
+    protected Options() {}
 
     public Options(
             Long optionsid,
@@ -108,10 +101,10 @@ public class Options {
     /**
      * Validates that a path is not null and does not exceed the allowed length.
      *
-     * @param path    the path to validate
+     * @param path the path to validate
      * @param nullMsg the message if path is null
      * @return validated path
-     * @throws NullPointerException     if the path is null
+     * @throws NullPointerException if the path is null
      * @throws IllegalArgumentException if the path length exceeds MAX_PATH_LENGTH
      */
     private static String validatePath(String path, String nullMsg) {
@@ -237,7 +230,8 @@ public class Options {
          * @throws IllegalArgumentException if parameters are invalid
          */
         public Options build() {
-            return new Options(optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
+            return new Options(
+                    optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
         }
     }
 
