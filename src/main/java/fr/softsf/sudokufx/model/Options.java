@@ -29,6 +29,8 @@ public class Options {
     private static final String HEXCOLOR_MUST_NOT_BE_NULL_OR_BLANK =
             "hexcolor must not be null or blank";
     private static final String IMAGEPATH_MUST_NOT_BE_NULL = "imagepath must not be null";
+    private static final String SONGPATH_MUST_NOT_BE_NULL = "songpath must not be null";
+    private static final int MAX_PATH_LENGTH = 260;
     private static final String INVALID_HEX_COLOR_FORMAT =
             "hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)";
     private static final Pattern HEX_COLOR_PATTERN =
@@ -40,12 +42,22 @@ public class Options {
     private Long optionsid;
 
     @Nonnull
-    @NotNull @Size(max = 8) @Column(name = "hexcolor", nullable = false, length = 8)
+    @NotNull
+    @Size(max = 8)
+    @Column(name = "hexcolor", nullable = false, length = 8)
     private String hexcolor = DEFAULT_HEX_COLOR;
 
     @Nonnull
-    @NotNull @Size(max = 260) @Column(name = "imagepath", nullable = false, length = 1024)
+    @NotNull
+    @Size(max = MAX_PATH_LENGTH)
+    @Column(name = "imagepath", nullable = false, length = MAX_PATH_LENGTH)
     private String imagepath = EMPTY_PATH;
+
+    @Nonnull
+    @NotNull
+    @Size(max = MAX_PATH_LENGTH)
+    @Column(name = "songpath", nullable = false, length = MAX_PATH_LENGTH)
+    private String songpath = EMPTY_PATH;
 
     @Column(name = "isimage", nullable = false)
     private boolean isimage = false;
@@ -53,19 +65,27 @@ public class Options {
     @Column(name = "isopaque", nullable = false)
     private boolean isopaque = true;
 
-    protected Options() {}
+    @Column(name = "ismuted", nullable = false)
+    private boolean ismuted = true;
+
+    protected Options() {
+    }
 
     public Options(
             Long optionsid,
             @Nonnull @NotNull String hexcolor,
             @Nonnull @NotNull String imagepath,
+            @Nonnull @NotNull String songpath,
             boolean isimage,
-            boolean isopaque) {
+            boolean isopaque,
+            boolean ismuted) {
         this.optionsid = optionsid;
         this.hexcolor = validateHexcolor(hexcolor);
-        this.imagepath = validateImagepath(imagepath);
+        this.imagepath = validatePath(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
+        this.songpath = validatePath(songpath, SONGPATH_MUST_NOT_BE_NULL);
         this.isimage = isimage;
         this.isopaque = isopaque;
+        this.ismuted = ismuted;
     }
 
     /**
@@ -86,14 +106,21 @@ public class Options {
     }
 
     /**
-     * Validates image path is not null.
+     * Validates that a path is not null and does not exceed the allowed length.
      *
-     * @param imagepath image path to validate
-     * @return validated image path
-     * @throws NullPointerException if null
+     * @param path    the path to validate
+     * @param nullMsg the message if path is null
+     * @return validated path
+     * @throws NullPointerException     if the path is null
+     * @throws IllegalArgumentException if the path length exceeds MAX_PATH_LENGTH
      */
-    private static String validateImagepath(String imagepath) {
-        return Objects.requireNonNull(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
+    private static String validatePath(String path, String nullMsg) {
+        Objects.requireNonNull(path, nullMsg);
+        if (path.length() > MAX_PATH_LENGTH) {
+            throw new IllegalArgumentException(
+                    "Path must not exceed " + MAX_PATH_LENGTH + " characters");
+        }
+        return path;
     }
 
     public Long getOptionsid() {
@@ -110,12 +137,21 @@ public class Options {
         return imagepath;
     }
 
-    public boolean getIsimage() {
+    @Nonnull
+    public String getSongpath() {
+        return songpath;
+    }
+
+    public boolean isImage() {
         return isimage;
     }
 
-    public boolean getIsopaque() {
+    public boolean isOpaque() {
         return isopaque;
+    }
+
+    public boolean isMuted() {
+        return ismuted;
     }
 
     public void setHexcolor(@Nonnull String hexcolor) {
@@ -123,7 +159,11 @@ public class Options {
     }
 
     public void setImagepath(@Nonnull String imagepath) {
-        this.imagepath = validateImagepath(imagepath);
+        this.imagepath = validatePath(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
+    }
+
+    public void setSongpath(@Nonnull String songpath) {
+        this.songpath = validatePath(songpath, SONGPATH_MUST_NOT_BE_NULL);
     }
 
     public void setIsimage(boolean isimage) {
@@ -132,6 +172,10 @@ public class Options {
 
     public void setIsopaque(boolean isopaque) {
         this.isopaque = isopaque;
+    }
+
+    public void setIsmuted(boolean ismuted) {
+        this.ismuted = ismuted;
     }
 
     public static OptionsBuilder builder() {
@@ -146,8 +190,10 @@ public class Options {
         private Long optionsid;
         private String hexcolor = DEFAULT_HEX_COLOR;
         private String imagepath = EMPTY_PATH;
+        private String songpath = EMPTY_PATH;
         private boolean isimage = false;
         private boolean isopaque = true;
+        private boolean ismuted = true;
 
         public OptionsBuilder optionsid(Long optionsid) {
             this.optionsid = optionsid;
@@ -164,6 +210,11 @@ public class Options {
             return this;
         }
 
+        public OptionsBuilder songpath(@Nonnull String songpath) {
+            this.songpath = songpath;
+            return this;
+        }
+
         public OptionsBuilder isimage(boolean isimage) {
             this.isimage = isimage;
             return this;
@@ -174,6 +225,11 @@ public class Options {
             return this;
         }
 
+        public OptionsBuilder ismuted(boolean ismuted) {
+            this.ismuted = ismuted;
+            return this;
+        }
+
         /**
          * Creates Options instance with parameter validation.
          *
@@ -181,7 +237,7 @@ public class Options {
          * @throws IllegalArgumentException if parameters are invalid
          */
         public Options build() {
-            return new Options(optionsid, hexcolor, imagepath, isimage, isopaque);
+            return new Options(optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
         }
     }
 
@@ -195,21 +251,23 @@ public class Options {
         }
         return isimage == other.isimage
                 && isopaque == other.isopaque
+                && ismuted == other.ismuted
                 && Objects.equals(optionsid, other.optionsid)
                 && Objects.equals(hexcolor, other.hexcolor)
-                && Objects.equals(imagepath, other.imagepath);
+                && Objects.equals(imagepath, other.imagepath)
+                && Objects.equals(songpath, other.songpath);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(optionsid, hexcolor, imagepath, isimage, isopaque);
+        return Objects.hash(optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
     }
 
     @Override
     public String toString() {
         return String.format(
-                "Options{optionsid=%s, hexcolor='%s', imagepath='%s', isimage=%b,"
-                        + " isopaque=%b}",
-                optionsid, hexcolor, imagepath, isimage, isopaque);
+                "Options{optionsid=%s, hexcolor='%s', imagepath='%s', songpath='%s', isimage=%b,"
+                        + " isopaque=%b, ismuted=%b}",
+                optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
     }
 }
