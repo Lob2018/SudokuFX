@@ -622,7 +622,7 @@
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
-                            <Text text="&#xe91c;" styleClass="material"/>
+                            <Text fx:id="menuOptionsButtonOpacityIcon" styleClass="material"/>
                             <Label fx:id="menuOptionsButtonOpacityText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>

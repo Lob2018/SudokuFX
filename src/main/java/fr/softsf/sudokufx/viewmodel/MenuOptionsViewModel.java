@@ -6,10 +6,15 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
+import java.text.MessageFormat;
 import java.util.Objects;
+import java.util.function.Supplier;
 import javafx.application.Platform;
+import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.concurrent.Task;
 import javafx.concurrent.WorkerStateEvent;
 import javafx.scene.control.ColorPicker;
@@ -72,16 +77,19 @@ public class MenuOptionsViewModel {
     private final StringBinding optionsImageRoleDescription;
     private final StringBinding optionsImageText;
 
+    private final BooleanProperty gridOpacityProperty = new SimpleBooleanProperty(false);
     private final StringBinding optionsOpacityAccessibleText;
     private final StringBinding optionsOpacityTooltip;
     private final StringBinding optionsOpacityRoleDescription;
     private final StringBinding optionsOpacityText;
+    private final StringBinding optionsOpacityIcon;
+
+    private static final String ICON_OPACITY_ON = "\ue891";
+    private static final String ICON_OPACITY_OFF = "\ue0c4";
 
     private final StringBinding optionsColorAccessibleText;
     private final StringBinding optionsColorTooltip;
     private final StringBinding optionsColorRoleDescription;
-
-    private boolean isOpaqueMode = false;
 
     public MenuOptionsViewModel() {
         this.imageUtils = new ImageUtils();
@@ -107,17 +115,84 @@ public class MenuOptionsViewModel {
         optionsImageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
         optionsImageText = createStringBinding("menu.options.button.image.text");
         optionsOpacityAccessibleText =
-                createStringBinding("menu.options.button.opacity.accessibility");
-        optionsOpacityTooltip =
                 createFormattedBinding(
-                        "menu.options.button.opacity.accessibility", ROLE_SUBMENU_OPTION);
+                        "menu.options.button.opacity.accessibility",
+                        () -> gridOpacityText(!gridOpacityProperty.get()),
+                        gridOpacityProperty);
+        optionsOpacityTooltip =
+                createFormattedAndConcatenatedBinding(
+                        "menu.options.button.opacity.accessibility",
+                        () -> gridOpacityText(!gridOpacityProperty.get()),
+                        ROLE_SUBMENU_OPTION,
+                        gridOpacityProperty);
         optionsOpacityRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-        optionsOpacityText = createStringBinding("menu.options.button.opacity.text");
+        optionsOpacityText =
+                Bindings.createStringBinding(
+                        () -> gridOpacityText(gridOpacityProperty.get()),
+                        gridOpacityProperty,
+                        I18n.INSTANCE.localeProperty());
+        optionsOpacityIcon =
+                Bindings.createStringBinding(
+                        () -> gridOpacityProperty.get() ? ICON_OPACITY_ON : ICON_OPACITY_OFF,
+                        gridOpacityProperty);
         optionsColorAccessibleText = createStringBinding("menu.options.button.color.accessibility");
         optionsColorTooltip =
                 createFormattedBinding(
                         "menu.options.button.color.accessibility", ROLE_SUBMENU_OPTION);
         optionsColorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+    }
+
+    /**
+     * Returns the localized text corresponding to the grid opacity state.
+     *
+     * @param isOpaque true for "opaque" text, false for "transparent" text
+     * @return localized string for the given opacity state
+     */
+    private String gridOpacityText(boolean isOpaque) {
+        String stateKey =
+                isOpaque
+                        ? "menu.options.button.opacity.text.opaque"
+                        : "menu.options.button.opacity.text.transparent";
+        return I18n.INSTANCE.getValue(stateKey);
+    }
+
+    /**
+     * Creates a formatted localized binding with one dynamic argument. Updates when locale or any
+     * of the given dependencies change.
+     */
+    private StringBinding createFormattedBinding(
+            String key, Supplier<String> argSupplier, Observable... dependencies) {
+        return Bindings.createStringBinding(
+                () -> MessageFormat.format(I18n.INSTANCE.getValue(key), argSupplier.get()),
+                concatDependencies(dependencies));
+    }
+
+    /**
+     * Creates a localized binding combining a formatted message and a suffix. Updates when locale
+     * or any of the given dependencies change.
+     */
+    private StringBinding createFormattedAndConcatenatedBinding(
+            String key,
+            Supplier<String> argSupplier,
+            String suffixKey,
+            Observable... dependencies) {
+        return Bindings.createStringBinding(
+                () ->
+                        MessageFormat.format(I18n.INSTANCE.getValue(key), argSupplier.get())
+                                + I18n.INSTANCE.getValue(suffixKey),
+                concatDependencies(dependencies));
+    }
+
+    /** Utility: always observe the locale in addition to custom dependencies. */
+    private Observable[] concatDependencies(Observable... dependencies) {
+        Observable[] base = new Observable[] {I18n.INSTANCE.localeProperty()};
+        if (dependencies == null || dependencies.length == 0) {
+            return base;
+        }
+        Observable[] result = new Observable[base.length + dependencies.length];
+        System.arraycopy(base, 0, result, 0, base.length);
+        System.arraycopy(dependencies, 0, result, base.length, dependencies.length);
+        return result;
     }
 
     /**
@@ -144,6 +219,10 @@ public class MenuOptionsViewModel {
         return Bindings.createStringBinding(
                 () -> I18n.INSTANCE.getValue(key) + I18n.INSTANCE.getValue(suffixKey),
                 I18n.INSTANCE.localeProperty());
+    }
+
+    public BooleanProperty gridOpacityProperty() {
+        return gridOpacityProperty;
     }
 
     public StringBinding optionsMenuMaxiAccessibleTextProperty() {
@@ -222,6 +301,10 @@ public class MenuOptionsViewModel {
         return optionsOpacityText;
     }
 
+    public StringBinding optionsOpacityIconProperty() {
+        return optionsOpacityIcon;
+    }
+
     public StringBinding optionsColorAccessibleTextProperty() {
         return optionsColorAccessibleText;
     }
@@ -253,7 +336,6 @@ public class MenuOptionsViewModel {
      * @param spinner The spinner component to indicate loading state during operations
      * @see #setColorFromModel(GridPane, ColorPicker, String)
      * @see #handleFileImageChooser(File, ToasterVBox, SpinnerGridPane, GridPane)
-     * @see #setOpaqueMode(boolean)
      */
     public void init(
             GridPane sudokuFX,
@@ -265,8 +347,8 @@ public class MenuOptionsViewModel {
         setColorFromModel(sudokuFX, menuOptionsButtonColor, "99b3ffcd");
         // IF IMAGE
         handleFileImageChooser(new File("C:\\Users"), toaster, spinner, sudokuFX);
-        // IF GRID TRANSPARENCY
-        setOpaqueMode(true);
+        // IF GRID ISOPAQUE
+        gridOpacityProperty.set(true);
     }
 
     /**
@@ -471,21 +553,7 @@ public class MenuOptionsViewModel {
      * @return true if opaque mode is now active, false if transparent
      */
     public boolean toggleGridOpacity() {
-        isOpaqueMode = !isOpaqueMode;
-        return isOpaqueMode;
-    }
-
-    /**
-     * Sets the grid opacity mode.
-     *
-     * @param opaque true for opaque mode, false for transparent
-     */
-    private void setOpaqueMode(boolean opaque) {
-        this.isOpaqueMode = opaque;
-    }
-
-    /** Gets the grid opacity mode. */
-    public boolean getOpaqueMode() {
-        return this.isOpaqueMode;
+        gridOpacityProperty.set(!gridOpacityProperty.get());
+        return gridOpacityProperty.get();
     }
 }

@@ -32,6 +32,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -187,6 +188,7 @@ public final class DefaultView implements IMainView {
     @FXML private Label menuOptionsButtonImageText;
     @FXML private Button menuOptionsButtonOpacity;
     @FXML private Label menuOptionsButtonOpacityText;
+    @FXML private Text menuOptionsButtonOpacityIcon;
     @FXML private ColorPicker menuOptionsButtonColor;
 
     private Timeline hideMiniMenuTimeline;
@@ -357,6 +359,9 @@ public final class DefaultView implements IMainView {
         menuOptionsButtonOpacityText
                 .textProperty()
                 .bind(menuOptionsViewModel.optionsOpacityTextProperty());
+        menuOptionsButtonOpacityIcon
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsOpacityIconProperty());
         menuOptionsButtonOpacity
                 .accessibleTextProperty()
                 .bind(menuOptionsViewModel.optionsOpacityAccessibleTextProperty());
@@ -383,8 +388,10 @@ public final class DefaultView implements IMainView {
                         (obs, oldColor, newColor) ->
                                 menuOptionsViewModel.updateOptionsColorAndApply(
                                         sudokuFX, newColor));
+        menuOptionsViewModel
+                .gridOpacityProperty()
+                .addListener((obs, oldOpacity, newOpacity) -> applyOpaqueMode(newOpacity));
         menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, toaster, spinner);
-        applyOpaqueMode(menuOptionsViewModel.getOpaqueMode());
     }
 
     /**
