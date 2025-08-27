@@ -35,7 +35,7 @@ public class AudioService {
     private MediaPlayer songPlayer;
     private final Map<String, MediaPlayer> effectsPlayers = new HashMap<>();
     private final Map<String, Double> originalEffectVolumes = new HashMap<>();
-    private static final Set<String> VALID_EFFECT_KEYS = Set.of("button_click");
+    private static final Set<String> VALID_EFFECT_KEYS = Set.of("button_click", "case_click");
     private boolean isMuted = false;
     private double originalSongVolume = 1.0;
 
