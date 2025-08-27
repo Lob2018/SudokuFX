@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 524;
+var viewWidth = 517;
 var viewHeight = 82;
 var sectionId = 'dynsection-3';
 </script>
@@ -98,10 +98,10 @@ var sectionId = 'dynsection-3';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#adf5e9b13961bc76afa7d44d0d83550ce" target="_top" xlink:title="Validates image path is not null.">
-<polygon fill="white" stroke="#666666" points="516,-44 383.75,-44 383.75,-12 516,-12 516,-44"/>
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" target="_top" xlink:title="Validates that a path is not null and does not exceed the allowed length.">
+<polygon fill="white" stroke="#666666" points="508.5,-44 383.75,-44 383.75,-12 508.5,-12 508.5,-44"/>
 <text text-anchor="start" x="391.75" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="middle" x="449.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.validateImagepath</text>
+<text text-anchor="middle" x="446.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.validatePath</text>
 </a>
 </g>
 </g>
@@ -109,8 +109,8 @@ var sectionId = 'dynsection-3';
 <g id="edge3_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge3_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M347.81,-28C355.69,-28 363.83,-28 371.92,-28"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="371.77,-31.5 381.77,-28 371.77,-24.5 371.77,-31.5"/>
+<path fill="none" stroke="#63b8ff" d="M348.21,-28C356.08,-28 364.19,-28 372.21,-28"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="371.95,-31.5 381.95,-28 371.95,-24.5 371.95,-31.5"/>
 </a>
 </g>
 </g>

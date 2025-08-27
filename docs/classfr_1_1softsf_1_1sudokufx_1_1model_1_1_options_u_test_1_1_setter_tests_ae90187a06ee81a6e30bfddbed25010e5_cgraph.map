@@ -3,6 +3,6 @@
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="79,28,83,18,92,10,108,5,130,3,156,5,172,13,170,18,154,11,130,8,109,10,95,15,87,21,85,30"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" title=" " alt="" coords="303,45,469,88"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="255,64,287,64,287,69,255,69"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#adf5e9b13961bc76afa7d44d0d83550ce" title="Validates image path is not null." alt="" coords="517,45,693,88"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="469,64,501,64,501,69,469,69"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates that a path is not null and does not exceed the allowed length." alt="" coords="517,45,683,88"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="470,64,502,64,502,69,470,69"/>
 </map>

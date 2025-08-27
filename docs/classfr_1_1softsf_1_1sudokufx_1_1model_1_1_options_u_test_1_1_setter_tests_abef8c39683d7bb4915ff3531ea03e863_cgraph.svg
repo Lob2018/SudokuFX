@@ -34,10 +34,10 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#af39b1fd8b548846a3f4a3af2f35a2880" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="349.25,-82 224.5,-82 224.5,-50 349.25,-50 349.25,-82"/>
 <text text-anchor="start" x="232.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="middle" x="286.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getIsimage</text>
+<text text-anchor="middle" x="286.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.isImage</text>
 </a>
 </g>
 </g>

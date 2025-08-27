@@ -123,10 +123,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a5ce2a48c45e6d7c67df2cfb0bced67e9" id="r_a5ce2a48c45e6d7c67df2cfb0bced67e9"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ce2a48c45e6d7c67df2cfb0bced67e9">MenuDto</a> (Byte menuid, @Min(1) @Max(3) byte mode)</td></tr>
 <tr class="memdesc:a5ce2a48c45e6d7c67df2cfb0bced67e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a menu entity.  <br /></td></tr>
 <tr class="separator:a5ce2a48c45e6d7c67df2cfb0bced67e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaac9832945da137d3bd25cbca0953fdf" id="r_aaac9832945da137d3bd25cbca0953fdf"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaac9832945da137d3bd25cbca0953fdf">OptionsDto</a> (Long optionsid, @Nonnull @NotNull @Size(max=8) String hexcolor, @Nonnull @NotNull @Size(max=260) String imagepath, boolean isimage, boolean isopaque)</td></tr>
-<tr class="memdesc:aaac9832945da137d3bd25cbca0953fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing an' options entity.  <br /></td></tr>
-<tr class="separator:aaac9832945da137d3bd25cbca0953fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fc9ab31dcedad769c8e003fdac97436" id="r_a6fc9ab31dcedad769c8e003fdac97436"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fc9ab31dcedad769c8e003fdac97436">PlayerDto</a> (Long playerid, @Nonnull @NotNull <a class="el" href="#aef56b61038752e56cf2b168708082565">PlayerLanguageDto</a> playerlanguageidDto, @Nonnull @NotNull <a class="el" href="#aaac9832945da137d3bd25cbca0953fdf">OptionsDto</a> optionsidDto, @Nonnull @NotNull <a class="el" href="#a5ce2a48c45e6d7c67df2cfb0bced67e9">MenuDto</a> menuidDto, @Nullable <a class="el" href="#a0b4cf476a6a3d3f1f289617aa14a93cb">GameDto</a> selectedGame, @Nonnull @NotNull @Size(max=256) String name, boolean isselected, @Nonnull @NotNull LocalDateTime createdat, @Nonnull @NotNull LocalDateTime updatedat)</td></tr>
+<tr class="memitem:a8b7652898b9b7485c43cd06148d83663" id="r_a8b7652898b9b7485c43cd06148d83663"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b7652898b9b7485c43cd06148d83663">OptionsDto</a> (Long optionsid, @Nonnull @NotNull @Size(max=8) String hexcolor, @Nonnull @NotNull @Size(max=260) String imagepath, @Nonnull @NotNull @Size(max=260) String songpath, boolean isimage, boolean isopaque, boolean ismuted)</td></tr>
+<tr class="memdesc:a8b7652898b9b7485c43cd06148d83663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing an Options entity.  <br /></td></tr>
+<tr class="separator:a8b7652898b9b7485c43cd06148d83663"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc9ab31dcedad769c8e003fdac97436" id="r_a6fc9ab31dcedad769c8e003fdac97436"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6fc9ab31dcedad769c8e003fdac97436">PlayerDto</a> (Long playerid, @Nonnull @NotNull <a class="el" href="#aef56b61038752e56cf2b168708082565">PlayerLanguageDto</a> playerlanguageidDto, @Nonnull @NotNull <a class="el" href="#a8b7652898b9b7485c43cd06148d83663">OptionsDto</a> optionsidDto, @Nonnull @NotNull <a class="el" href="#a5ce2a48c45e6d7c67df2cfb0bced67e9">MenuDto</a> menuidDto, @Nullable <a class="el" href="#a0b4cf476a6a3d3f1f289617aa14a93cb">GameDto</a> selectedGame, @Nonnull @NotNull @Size(max=256) String name, boolean isselected, @Nonnull @NotNull LocalDateTime createdat, @Nonnull @NotNull LocalDateTime updatedat)</td></tr>
 <tr class="memdesc:a6fc9ab31dcedad769c8e003fdac97436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a player.  <br /></td></tr>
 <tr class="separator:a6fc9ab31dcedad769c8e003fdac97436"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef56b61038752e56cf2b168708082565" id="r_aef56b61038752e56cf2b168708082565"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef56b61038752e56cf2b168708082565">PlayerLanguageDto</a> (Long playerlanguageid, @Nonnull @NotNull @Pattern(regexp=&quot;^(FR|EN)$&quot;, message=&quot;iso must be either 'FR' or 'EN'&quot;) String iso)</td></tr>
@@ -303,8 +303,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aaac9832945da137d3bd25cbca0953fdf" name="aaac9832945da137d3bd25cbca0953fdf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaac9832945da137d3bd25cbca0953fdf">&#9670;&#160;</a></span>OptionsDto()</h2>
+<a id="a8b7652898b9b7485c43cd06148d83663" name="a8b7652898b9b7485c43cd06148d83663"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7652898b9b7485c43cd06148d83663">&#9670;&#160;</a></span>OptionsDto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -327,24 +327,36 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">@Nonnull @NotNull @Size(max=260) String</td>          <td class="paramname"><span class="paramname"><em>songpath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>isimage</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>isopaque</em></span>&#160;)</td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>isopaque</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>ismuted</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Data Transfer Object representing an' options entity. </p>
+<p>Data Transfer Object representing an Options entity. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">optionsid</td><td>the unique identifier of the options </td></tr>
-    <tr><td class="paramname">hexcolor</td><td>the options color in hexadecimal format (max 8 characters), not null </td></tr>
-    <tr><td class="paramname">imagepath</td><td>the path to the options image (max 260 characters), not null </td></tr>
+    <tr><td class="paramname">hexcolor</td><td>the color in hexadecimal format (e.g., #FFFFFF or #FFF), max 8 characters, not null </td></tr>
+    <tr><td class="paramname">imagepath</td><td>the file path to the image associated with the options, max 260 characters, not null </td></tr>
+    <tr><td class="paramname">songpath</td><td>the file path to the song associated with the options, max 260 characters, not null </td></tr>
     <tr><td class="paramname">isimage</td><td>flag indicating if the options uses an image (true) or a color (false) </td></tr>
-    <tr><td class="paramname">isopaque</td><td>flag indicating if the grid options is opaque (true) or transparent (false) </td></tr>
+    <tr><td class="paramname">isopaque</td><td>flag indicating if the grid's background is opaque (true) or transparent (false) </td></tr>
+    <tr><td class="paramname">ismuted</td><td>flag indicating if sound is muted (true) or enabled (false) </td></tr>
   </table>
   </dd>
 </dl>
@@ -370,7 +382,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Nonnull @NotNull <a class="el" href="#aaac9832945da137d3bd25cbca0953fdf">OptionsDto</a></td>          <td class="paramname"><span class="paramname"><em>optionsidDto</em></span>, </td>
+          <td class="paramtype">@Nonnull @NotNull <a class="el" href="#a8b7652898b9b7485c43cd06148d83663">OptionsDto</a></td>          <td class="paramname"><span class="paramname"><em>optionsidDto</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -466,7 +478,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html">dto</a></li>
-    <li class="footer">Generated on Sun Aug 24 2025 13:58:36 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Aug 27 2025 11:10:36 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
