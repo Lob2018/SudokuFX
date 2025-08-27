@@ -10,17 +10,24 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 /**
- * Data Transfer Object representing an' options entity.
+ * Data Transfer Object representing an Options entity.
  *
  * @param optionsid the unique identifier of the options
- * @param hexcolor the options color in hexadecimal format (max 8 characters), not null
- * @param imagepath the path to the options image (max 260 characters), not null
+ * @param hexcolor the color in hexadecimal format (e.g., #FFFFFF or #FFF), max 8 characters, not
+ *     null
+ * @param imagepath the file path to the image associated with the options, max 260 characters, not
+ *     null
+ * @param songpath the file path to the song associated with the options, max 260 characters, not
+ *     null
  * @param isimage flag indicating if the options uses an image (true) or a color (false)
- * @param isopaque flag indicating if the grid options is opaque (true) or transparent (false)
+ * @param isopaque flag indicating if the grid's background is opaque (true) or transparent (false)
+ * @param ismuted flag indicating if sound is muted (true) or enabled (false)
  */
 public record OptionsDto(
         Long optionsid,
         @Nonnull @NotNull @Size(max = 8) String hexcolor,
         @Nonnull @NotNull @Size(max = 260) String imagepath,
+        @Nonnull @NotNull @Size(max = 260) String songpath,
         boolean isimage,
-        boolean isopaque) {}
+        boolean isopaque,
+        boolean ismuted) {}
