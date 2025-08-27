@@ -83,13 +83,13 @@ class MenuLevelViewModelUTest {
     @Test
     void givenDifficultyLevels_whenGetAccessibilityKeyForLevel_thenReturnCorrectI18nKeys() {
         assertEquals(
-                "menu.maxi.button.easy.accessibility",
+                "menu.accessibility.button.easy",
                 viewModel.getAccessibilityKeyForLevel(DifficultyLevel.EASY));
         assertEquals(
-                "menu.maxi.button.medium.accessibility",
+                "menu.accessibility.button.medium",
                 viewModel.getAccessibilityKeyForLevel(DifficultyLevel.MEDIUM));
         assertEquals(
-                "menu.maxi.button.difficult.accessibility",
+                "menu.accessibility.button.difficult",
                 viewModel.getAccessibilityKeyForLevel(DifficultyLevel.DIFFICULT));
     }
 

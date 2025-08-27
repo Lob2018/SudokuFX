@@ -119,9 +119,9 @@ public class MenuLevelViewModel {
      */
     public String getAccessibilityKeyForLevel(DifficultyLevel level) {
         return switch (level) {
-            case EASY -> "menu.maxi.button.easy.accessibility";
-            case MEDIUM -> "menu.maxi.button.medium.accessibility";
-            case DIFFICULT -> "menu.maxi.button.difficult.accessibility";
+            case EASY -> "menu.accessibility.button.easy";
+            case MEDIUM -> "menu.accessibility.button.medium";
+            case DIFFICULT -> "menu.accessibility.button.difficult";
         };
     }
 
