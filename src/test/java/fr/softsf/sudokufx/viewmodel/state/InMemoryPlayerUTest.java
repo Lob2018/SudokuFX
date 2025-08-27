@@ -51,7 +51,7 @@ class InMemoryPlayerUTest {
     }
 
     private OptionsDto defaultOptions() {
-        return new OptionsDto(1L, "000000ff", "", false, true);
+        return new OptionsDto(1L, "000000ff", "", "", false, true, true);
     }
 
     private MenuDto defaultMenu() {
@@ -97,7 +97,7 @@ class InMemoryPlayerUTest {
                         "Jane Smith",
                         false,
                         new PlayerLanguageDto(2L, "EN"),
-                        new OptionsDto(2L, "ffffff00", "", false, true),
+                        new OptionsDto(2L, "ffffff00", "", "", false, true, true),
                         new MenuDto((byte) 2, (byte) 3));
         when(playerServiceMock.getPlayer()).thenReturn(initialPlayer);
         inMemoryPlayer = new InMemoryPlayer(playerServiceMock);

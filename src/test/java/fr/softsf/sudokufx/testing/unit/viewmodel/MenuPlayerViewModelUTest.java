@@ -49,7 +49,7 @@ class MenuPlayerViewModelUTest {
                 new PlayerDto(
                         42L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(1L, "#ffffff", null, false, true),
+                        new OptionsDto(1L, "#ffffff", "", "", false, true, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null,
                         "TestPlayer",
@@ -204,7 +204,7 @@ class MenuPlayerViewModelUTest {
                 new PlayerDto(
                         999L,
                         new PlayerLanguageDto(2L, "EN"),
-                        new OptionsDto(2L, "#123456", null, false, true),
+                        new OptionsDto(2L, "#123456", "", "", false, true, true),
                         new MenuDto((byte) 2, (byte) 2),
                         null,
                         "NewTestPlayer",
