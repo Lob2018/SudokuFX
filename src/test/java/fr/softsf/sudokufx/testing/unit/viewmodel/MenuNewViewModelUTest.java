@@ -18,6 +18,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.testfx.framework.junit5.ApplicationExtension;
 
@@ -85,9 +86,20 @@ class MenuNewViewModelUTest {
 
     @Test
     void givenVersionService_whenCheckLatestVersion_thenIsUpToDateAndStatusMessageUpdated()
-            throws Exception {
+            throws InterruptedException {
+        VersionService mockService = Mockito.mock(VersionService.class);
+        Task<Boolean> task =
+                new Task<>() {
+                    @Override
+                    protected Boolean call() {
+                        updateMessage("Up to date");
+                        return true;
+                    }
+                };
+        Mockito.when(mockService.checkLatestVersion()).thenReturn(task);
+        MenuNewViewModel localViewModel = new MenuNewViewModel(mockService);
         CountDownLatch latch = new CountDownLatch(1);
-        viewModel
+        localViewModel
                 .statusMessageProperty()
                 .addListener(
                         (obs, oldVal, newVal) -> {
@@ -95,7 +107,8 @@ class MenuNewViewModelUTest {
                                 latch.countDown();
                             }
                         });
-        assertTrue(latch.await(2, TimeUnit.SECONDS), "Timeout waiting for 'Up to date' message");
+        task.run();
+        assertTrue(latch.await(1, TimeUnit.SECONDS), "Timeout waiting for 'Up to date' message");
         assertTrue(viewModel.isUpToDateProperty().get());
         assertEquals("Up to date", viewModel.statusMessageProperty().get());
     }
