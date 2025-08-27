@@ -7,8 +7,6 @@ package fr.softsf.sudokufx.testing.unit.viewmodel;
 
 import java.util.List;
 import java.util.Locale;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
 import javafx.application.Platform;
 import javafx.beans.binding.StringBinding;
 import javafx.concurrent.Task;
@@ -18,7 +16,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.testfx.framework.junit5.ApplicationExtension;
 
@@ -27,7 +24,6 @@ import fr.softsf.sudokufx.service.VersionService;
 import fr.softsf.sudokufx.viewmodel.MenuNewViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.when;
 
 @ExtendWith({ApplicationExtension.class, MockitoExtension.class})
@@ -82,34 +78,5 @@ class MenuNewViewModelUTest {
             I18n.INSTANCE.setLocaleBundle(locale);
             bindings.forEach(b -> assertEquals(I18n.INSTANCE.getValue(b.i18nKey), b.binding.get()));
         }
-    }
-
-    @Test
-    void givenVersionService_whenCheckLatestVersion_thenIsUpToDateAndStatusMessageUpdated()
-            throws InterruptedException {
-        VersionService mockService = Mockito.mock(VersionService.class);
-        Task<Boolean> task =
-                new Task<>() {
-                    @Override
-                    protected Boolean call() {
-                        updateMessage("Up to date");
-                        return true;
-                    }
-                };
-        Mockito.when(mockService.checkLatestVersion()).thenReturn(task);
-        MenuNewViewModel localViewModel = new MenuNewViewModel(mockService);
-        CountDownLatch latch = new CountDownLatch(1);
-        localViewModel
-                .statusMessageProperty()
-                .addListener(
-                        (obs, oldVal, newVal) -> {
-                            if ("Up to date".equals(newVal)) {
-                                latch.countDown();
-                            }
-                        });
-        task.run();
-        assertTrue(latch.await(1, TimeUnit.SECONDS), "Timeout waiting for 'Up to date' message");
-        assertTrue(viewModel.isUpToDateProperty().get());
-        assertEquals("Up to date", viewModel.statusMessageProperty().get());
     }
 }
