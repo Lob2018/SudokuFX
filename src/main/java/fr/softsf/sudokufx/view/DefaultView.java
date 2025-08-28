@@ -399,10 +399,8 @@ public final class DefaultView implements IMainView {
                         (obs, oldColor, newColor) ->
                                 menuOptionsViewModel.updateOptionsColorAndApply(
                                         sudokuFX, newColor));
-        menuOptionsViewModel
-                .gridOpacityProperty()
-                .addListener((obs, oldOpacity, newOpacity) -> applyOpaqueMode(newOpacity));
         menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, toaster, spinner);
+        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
     /**
