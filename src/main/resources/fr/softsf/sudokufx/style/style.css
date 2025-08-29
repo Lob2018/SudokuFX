@@ -348,7 +348,7 @@
 }
 
 .menu {
-    -fx-padding: 0.93em 0.65em 0.65em 0.65em;
+    -fx-padding: 0.93em 0.65em 0.65em 0em;
     -fx-spacing: 0.79em;
     -fx-pref-height: 27.9em;
     -fx-max-height: 27.9em;
@@ -359,7 +359,7 @@
     -fx-pref-width: 4em;
     -fx-max-width: 4em;
     -fx-min-width: 4em;
-    -fx-translate-x: -.35em;
+    -fx-translate-x: .11em;
 }
 
 .menuButton {
