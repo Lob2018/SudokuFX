@@ -62,7 +62,8 @@ class OptionsUTest {
     @DisplayName("Hex Color Validation Tests")
     class HexColorValidationTests {
         @ParameterizedTest
-        @ValueSource(strings = {"FFFFFFFF", "00000000", "123ABC00", "FFFFFF00", "ffffff00", "00abcdef"})
+        @ValueSource(
+                strings = {"FFFFFFFF", "00000000", "123ABC00", "FFFFFF00", "ffffff00", "00abcdef"})
         void givenValidHexColor_whenCreatingOptions_thenNoExceptionIsThrown(String validHexColor) {
             assertDoesNotThrow(
                     () ->
