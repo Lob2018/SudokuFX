@@ -24,7 +24,7 @@ import jakarta.validation.constraints.Size;
 @Table(name = "playeroptions")
 public class Options {
 
-    private static final String DEFAULT_HEX_COLOR = "#000000";
+    private static final String DEFAULT_HEX_COLOR = "FFFFFFFF";
     private static final String EMPTY_PATH = "";
     private static final String HEXCOLOR_MUST_NOT_BE_NULL_OR_BLANK =
             "hexcolor must not be null or blank";
@@ -32,9 +32,8 @@ public class Options {
     private static final String SONGPATH_MUST_NOT_BE_NULL = "songpath must not be null";
     private static final int MAX_PATH_LENGTH = 260;
     private static final String INVALID_HEX_COLOR_FORMAT =
-            "hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)";
-    private static final Pattern HEX_COLOR_PATTERN =
-            Pattern.compile("^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$");
+            "hexcolor must be a valid hex color format (e.g., FFFFFFFF)";
+    private static final Pattern HEX_COLOR_PATTERN = Pattern.compile("^([A-Fa-f0-9]{8})$");
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -82,7 +81,7 @@ public class Options {
     }
 
     /**
-     * Validates hex color format (#RGB or #RRGGBB).
+     * Validates hex color format (#RRGGBBAA).
      *
      * @param hexcolor hex color to validate
      * @return validated hex color

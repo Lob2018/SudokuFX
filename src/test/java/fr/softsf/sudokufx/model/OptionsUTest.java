@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @DisplayName("Options Entity Tests")
 class OptionsUTest {
 
-    private static final String VALID_HEX_6 = "#FFFFFF";
+    private static final String VALID_HEX_8 = "FFFFFFFF";
     private static final String VALID_PATH = "/images/background.jpg";
 
     @Nested
@@ -28,7 +28,7 @@ class OptionsUTest {
         void
                 givenValidParameters_whenCreatingOptionsWithConstructor_thenOptionsIsCreatedCorrectly() {
             Long id = 1L;
-            String hexcolor = VALID_HEX_6;
+            String hexcolor = VALID_HEX_8;
             String imagepath = VALID_PATH;
             String songpath = VALID_PATH;
             boolean isimage = true;
@@ -52,7 +52,7 @@ class OptionsUTest {
             Options options = new Options();
             assertNotNull(options);
             assertNull(options.getOptionsid());
-            assertEquals("#000000", options.getHexcolor());
+            assertEquals("FFFFFFFF", options.getHexcolor());
             assertEquals("", options.getImagepath());
             assertFalse(options.isImage());
         }
@@ -62,7 +62,7 @@ class OptionsUTest {
     @DisplayName("Hex Color Validation Tests")
     class HexColorValidationTests {
         @ParameterizedTest
-        @ValueSource(strings = {"#FFFFFF", "#000000", "#123ABC", "#FFF", "#000", "#abc"})
+        @ValueSource(strings = {"FFFFFFFF", "00000000", "123ABC00", "FFFFFF00", "ffffff00", "00abcdef"})
         void givenValidHexColor_whenCreatingOptions_thenNoExceptionIsThrown(String validHexColor) {
             assertDoesNotThrow(
                     () ->
@@ -73,13 +73,13 @@ class OptionsUTest {
         @ParameterizedTest
         @ValueSource(
                 strings = {
-                    "FFFFFF", // Missing #
-                    "#GGGGGG", // Invalid characters
-                    "#12345", // Invalid length (5)
-                    "#1234567", // Invalid length (7)
+                    "#FFFFFFF", // Invalid #
+                    "GGGGGGGG", // Invalid characters
+                    "1234567", // Invalid length (7)
+                    "#123456789", // Invalid length (9)
                     "#GG", // Invalid length (2) and characters
                     "red", // Not hex format
-                    "rgb(255,255,255)" // RGB format instead of hex
+                    "rgba(255,255,255,0)" // RGBA format instead of hex
                 })
         void givenInvalidHexColor_whenCreatingOptions_thenIllegalArgumentExceptionIsThrown(
                 String invalidHexColor) {
@@ -96,7 +96,7 @@ class OptionsUTest {
                                             true,
                                             true));
             assertEquals(
-                    "hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)",
+                    "hexcolor must be a valid hex color format (e.g., FFFFFFFF)",
                     exception.getMessage());
         }
 
@@ -127,19 +127,19 @@ class OptionsUTest {
         @Test
         void givenValidImagePath_whenCreatingOptions_thenNoExceptionIsThrown() {
             assertDoesNotThrow(
-                    () -> new Options(1L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true));
+                    () -> new Options(1L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true));
         }
 
         @Test
         void givenEmptyImagePath_whenCreatingOptions_thenNoExceptionIsThrown() {
             assertDoesNotThrow(
-                    () -> new Options(1L, VALID_HEX_6, "", VALID_PATH, false, true, true));
+                    () -> new Options(1L, VALID_HEX_8, "", VALID_PATH, false, true, true));
         }
 
         @Test
         void givenEmptySongPath_whenCreatingOptions_thenNoExceptionIsThrown() {
             assertDoesNotThrow(
-                    () -> new Options(1L, VALID_HEX_6, VALID_PATH, "", false, true, true));
+                    () -> new Options(1L, VALID_HEX_8, VALID_PATH, "", false, true, true));
         }
 
         @Test
@@ -150,7 +150,7 @@ class OptionsUTest {
                             NullPointerException.class,
                             () ->
                                     new Options(
-                                            1L, VALID_HEX_6, null, VALID_PATH, false, true, true));
+                                            1L, VALID_HEX_8, null, VALID_PATH, false, true, true));
             assertEquals("imagepath must not be null", exception.getMessage());
         }
 
@@ -162,7 +162,7 @@ class OptionsUTest {
                             NullPointerException.class,
                             () ->
                                     new Options(
-                                            1L, VALID_HEX_6, VALID_PATH, null, false, true, true));
+                                            1L, VALID_HEX_8, VALID_PATH, null, false, true, true));
             assertEquals("songpath must not be null", exception.getMessage());
         }
     }
@@ -175,7 +175,7 @@ class OptionsUTest {
             Options options =
                     Options.builder()
                             .optionsid(1L)
-                            .hexcolor(VALID_HEX_6)
+                            .hexcolor(VALID_HEX_8)
                             .imagepath(VALID_PATH)
                             .songpath(VALID_PATH)
                             .isimage(true)
@@ -184,7 +184,7 @@ class OptionsUTest {
                             .build();
             assertNotNull(options);
             assertEquals(1L, options.getOptionsid());
-            assertEquals(VALID_HEX_6, options.getHexcolor());
+            assertEquals(VALID_HEX_8, options.getHexcolor());
             assertEquals(VALID_PATH, options.getImagepath());
             assertEquals(VALID_PATH, options.getSongpath());
             assertTrue(options.isImage());
@@ -197,7 +197,7 @@ class OptionsUTest {
             Options options = Options.builder().build();
             assertNotNull(options);
             assertNull(options.getOptionsid());
-            assertEquals("#000000", options.getHexcolor());
+            assertEquals("FFFFFFFF", options.getHexcolor());
             assertEquals("", options.getImagepath());
             assertFalse(options.isImage());
         }
@@ -208,7 +208,7 @@ class OptionsUTest {
                     assertThrows(
                             IllegalArgumentException.class, this::buildOptionsWithInvalidColor);
             assertEquals(
-                    "hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)",
+                    "hexcolor must be a valid hex color format (e.g., FFFFFFFF)",
                     exception.getMessage());
         }
 
@@ -223,7 +223,7 @@ class OptionsUTest {
         @Test
         void givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated() {
             Options options = new Options();
-            String newHexColor = "#FF0000";
+            String newHexColor = "FF000000";
             options.setHexcolor(newHexColor);
             assertEquals(newHexColor, options.getHexcolor());
         }
@@ -235,7 +235,7 @@ class OptionsUTest {
                     assertThrows(
                             IllegalArgumentException.class, () -> options.setHexcolor("invalid"));
             assertEquals(
-                    "hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)",
+                    "hexcolor must be a valid hex color format (e.g., FFFFFFFF)",
                     exception.getMessage());
         }
 
@@ -269,16 +269,16 @@ class OptionsUTest {
     class EqualsAndHashCodeTests {
         @Test
         void givenTwoOptionssWithSameProperties_whenComparingEquality_thenTheyAreEqual() {
-            Options bg1 = new Options(1L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true);
-            Options bg2 = new Options(1L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true);
+            Options bg1 = new Options(1L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true);
+            Options bg2 = new Options(1L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true);
             assertEquals(bg1, bg2);
             assertEquals(bg1.hashCode(), bg2.hashCode());
         }
 
         @Test
         void givenTwoOptionssWithDifferentProperties_whenComparingEquality_thenTheyAreNotEqual() {
-            Options bg1 = new Options(1L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true);
-            Options bg2 = new Options(2L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true);
+            Options bg1 = new Options(1L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true);
+            Options bg2 = new Options(2L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true);
             assertNotEquals(bg1, bg2);
         }
 
@@ -286,21 +286,21 @@ class OptionsUTest {
         @SuppressWarnings("EqualsWithItself")
         void givenSameOptionsInstance_whenComparingToItself_thenTheyAreEqual() {
             Options options =
-                    new Options(1L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true);
+                    new Options(1L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true);
             assertEquals(options, options);
         }
 
         @Test
         void givenOptionsAndNull_whenComparingEquality_thenTheyAreNotEqual() {
             Options options =
-                    new Options(1L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true);
+                    new Options(1L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true);
             assertNotEquals(null, options);
         }
 
         @Test
         void givenOptionsAndDifferentClass_whenComparingEquality_thenTheyAreNotEqual() {
             Options options =
-                    new Options(1L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true);
+                    new Options(1L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true);
             Object notOptions = new Object();
             assertNotEquals(options, notOptions);
         }
@@ -312,12 +312,12 @@ class OptionsUTest {
         @Test
         void givenOptionsInstance_whenCallingToString_thenFormattedStringIsReturned() {
             Options options =
-                    new Options(1L, VALID_HEX_6, VALID_PATH, VALID_PATH, true, true, true);
+                    new Options(1L, VALID_HEX_8, VALID_PATH, VALID_PATH, true, true, true);
             String result = options.toString();
             assertNotNull(result);
             assertTrue(result.contains("Options{"));
             assertTrue(result.contains("optionsid=1"));
-            assertTrue(result.contains("hexcolor='#FFFFFF'"));
+            assertTrue(result.contains("hexcolor='FFFFFFFF'"));
             assertTrue(result.contains("imagepath='/images/background.jpg'"));
             assertTrue(result.contains("songpath='/images/background.jpg'"));
             assertTrue(result.contains("isimage=true"));
@@ -334,12 +334,12 @@ class OptionsUTest {
             assertDoesNotThrow(
                     () ->
                             new Options(
-                                    null, VALID_HEX_6, VALID_PATH, VALID_PATH, false, true, true));
+                                    null, VALID_HEX_8, VALID_PATH, VALID_PATH, false, true, true));
         }
 
         @Test
         void givenImageMaximumLengthStrings_whenCreatingOptions_thenNoExceptionIsThrown() {
-            String maxHexColor = "#FFFFFF"; // 7 characters (max 8)
+            String maxHexColor = "FFFFFFFF";
             String maxImagePath = "a".repeat(260); // Max 260 characters
             assertDoesNotThrow(
                     () ->
@@ -349,7 +349,7 @@ class OptionsUTest {
 
         @Test
         void givenSongMaximumLengthStrings_whenCreatingOptions_thenNoExceptionIsThrown() {
-            String maxHexColor = "#FFFFFF"; // 7 characters (max 8)
+            String maxHexColor = "FFFFFFFF";
             String maxSongPath = "a".repeat(260); // Max 260 characters
             assertDoesNotThrow(
                     () -> new Options(1L, maxHexColor, VALID_PATH, maxSongPath, false, true, true));
@@ -357,9 +357,9 @@ class OptionsUTest {
 
         @Test
         void givenMixedCaseHexColors_whenCreatingOptions_thenNoExceptionIsThrown() {
-            String lowerCase = "#ffffff";
-            String upperCase = "#FFFFFF";
-            String mixedCase = "#FfFfFf";
+            String lowerCase = "ffffffff";
+            String upperCase = "FFFFFFFF";
+            String mixedCase = "FfFfFfFf";
             assertDoesNotThrow(
                     () -> new Options(1L, lowerCase, VALID_PATH, VALID_PATH, false, true, true));
             assertDoesNotThrow(

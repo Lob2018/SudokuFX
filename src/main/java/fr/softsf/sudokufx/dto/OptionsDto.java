@@ -13,8 +13,7 @@ import jakarta.validation.constraints.Size;
  * Data Transfer Object representing an Options entity.
  *
  * @param optionsid the unique identifier of the options
- * @param hexcolor the color in hexadecimal format (e.g., #FFFFFF or #FFF), max 8 characters, not
- *     null
+ * @param hexcolor the color in hexadecimal format (e.g., FFFFFFFF), 8 characters, not null
  * @param imagepath the file path to the image associated with the options, max 260 characters, not
  *     null
  * @param songpath the file path to the song associated with the options, max 260 characters, not
@@ -25,7 +24,7 @@ import jakarta.validation.constraints.Size;
  */
 public record OptionsDto(
         Long optionsid,
-        @Nonnull @NotNull @Size(max = 8) String hexcolor,
+        @Nonnull @NotNull @Size(min = 8, max = 8) String hexcolor,
         @Nonnull @NotNull @Size(max = 260) String imagepath,
         @Nonnull @NotNull @Size(max = 260) String songpath,
         boolean isimage,

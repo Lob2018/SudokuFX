@@ -89,7 +89,7 @@ INSERT
             FROM
                 playeroptions
             WHERE
-                hexcolor = '000000ff'
+                hexcolor = 'ffffffff'
         ),
         (
             SELECT
