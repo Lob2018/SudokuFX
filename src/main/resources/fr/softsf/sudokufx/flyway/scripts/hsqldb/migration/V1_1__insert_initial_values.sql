@@ -21,7 +21,7 @@ INSERT
             ismuted
         )
     VALUES(
-        '000000ff',
+        'ffffffff',
         '',
         '',
         FALSE,
