@@ -14,24 +14,24 @@ import org.springframework.test.context.ActiveProfiles;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.config.database.DataSourceConfigTest;
 import fr.softsf.sudokufx.dto.PlayerDto;
-import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Integration test for {@link InMemoryPlayer}. Ensures player is loaded correctly from the
+ * Integration test for {@link PlayerStateHolder}. Ensures player is loaded correctly from the
  * database.
  */
 @SpringBootTest(classes = {SudoMain.class})
 @ActiveProfiles("test")
 @Import(DataSourceConfigTest.class)
-class InMemoryPlayerITest {
+class PlayerStateHolderITest {
 
-    @Autowired private InMemoryPlayer inMemoryPlayer;
+    @Autowired private PlayerStateHolder playerStateHolder;
 
     @Test
     void givenTestDatabase_whenInMemoryPlayerLoads_thenPlayerDtoIsNotNull() {
-        PlayerDto dto = inMemoryPlayer.getCurrentPlayer();
+        PlayerDto dto = playerStateHolder.getCurrentPlayer();
         assertNotNull(dto, "PlayerDto should be initialized");
         assertNotNull(dto.name(), "Player name should not be null");
         assertFalse(dto.name().isBlank(), "Player name should not be blank");

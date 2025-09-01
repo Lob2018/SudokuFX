@@ -27,7 +27,7 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.service.PlayerService;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
-import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
@@ -36,7 +36,7 @@ import static org.mockito.Mockito.mock;
 class MenuPlayerViewModelUTest {
 
     private Locale originalLocale;
-    private InMemoryPlayer inMemoryPlayer;
+    private PlayerStateHolder playerStateHolder;
     private MenuPlayerViewModel viewModel;
 
     @BeforeEach
@@ -44,8 +44,8 @@ class MenuPlayerViewModelUTest {
         originalLocale = I18n.INSTANCE.localeProperty().get();
         I18n.INSTANCE.setLocaleBundle("FR");
         PlayerService playerServiceMock = mock(PlayerService.class);
-        inMemoryPlayer = new InMemoryPlayer(playerServiceMock);
-        inMemoryPlayer.setCurrentPlayer(
+        playerStateHolder = new PlayerStateHolder(playerServiceMock);
+        playerStateHolder.setCurrentPlayer(
                 new PlayerDto(
                         42L,
                         new PlayerLanguageDto(1L, "FR"),
@@ -56,7 +56,7 @@ class MenuPlayerViewModelUTest {
                         false,
                         LocalDateTime.now(),
                         LocalDateTime.now()));
-        viewModel = new MenuPlayerViewModel(inMemoryPlayer);
+        viewModel = new MenuPlayerViewModel(playerStateHolder);
     }
 
     @AfterEach
@@ -211,7 +211,7 @@ class MenuPlayerViewModelUTest {
                         false,
                         LocalDateTime.now(),
                         LocalDateTime.now());
-        inMemoryPlayer.currentPlayerProperty().set(newPlayer);
+        playerStateHolder.currentPlayerProperty().set(newPlayer);
         String bindingValue = viewModel.playerAccessibleTextProperty().get();
         assertTrue(bindingValue.contains("NewTestPlayer"));
     }

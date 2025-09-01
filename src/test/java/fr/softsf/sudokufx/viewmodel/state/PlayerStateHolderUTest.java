@@ -25,24 +25,24 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(ApplicationExtension.class)
-class InMemoryPlayerUTest {
+class PlayerStateHolderUTest {
 
     private PlayerService playerServiceMock;
-    private InMemoryPlayer inMemoryPlayer;
+    private PlayerStateHolder playerStateHolder;
     private ListAppender<ILoggingEvent> logWatcher;
 
     @BeforeEach
     void setup() {
         logWatcher = new ListAppender<>();
         logWatcher.start();
-        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(InMemoryPlayer.class))
+        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(PlayerStateHolder.class))
                 .addAppender(logWatcher);
         playerServiceMock = mock(PlayerService.class);
     }
 
     @AfterEach
     void tearDown() {
-        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(InMemoryPlayer.class))
+        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(PlayerStateHolder.class))
                 .detachAndStopAllAppenders();
     }
 
@@ -81,8 +81,8 @@ class InMemoryPlayerUTest {
     void givenValidPlayer_whenConstructed_thenPlayerIsLoaded() {
         PlayerDto expectedPlayer = createPlayerDto(1L, "John Doe", true, null, null, null);
         when(playerServiceMock.getPlayer()).thenReturn(expectedPlayer);
-        inMemoryPlayer = new InMemoryPlayer(playerServiceMock);
-        PlayerDto actualPlayer = inMemoryPlayer.getCurrentPlayer();
+        playerStateHolder = new PlayerStateHolder(playerServiceMock);
+        PlayerDto actualPlayer = playerStateHolder.getCurrentPlayer();
         assertNotNull(actualPlayer);
         assertEquals(expectedPlayer.name(), actualPlayer.name());
         assertTrue(actualPlayer.isselected());
@@ -100,9 +100,9 @@ class InMemoryPlayerUTest {
                         new OptionsDto(2L, "ffffff00", "", "", false, true, true),
                         new MenuDto((byte) 2, (byte) 3));
         when(playerServiceMock.getPlayer()).thenReturn(initialPlayer);
-        inMemoryPlayer = new InMemoryPlayer(playerServiceMock);
-        inMemoryPlayer.setCurrentPlayer(newPlayer);
-        PlayerDto actualPlayer = inMemoryPlayer.getCurrentPlayer();
+        playerStateHolder = new PlayerStateHolder(playerServiceMock);
+        playerStateHolder.setCurrentPlayer(newPlayer);
+        PlayerDto actualPlayer = playerStateHolder.getCurrentPlayer();
         assertEquals(newPlayer, actualPlayer);
     }
 
@@ -110,16 +110,16 @@ class InMemoryPlayerUTest {
     void givenNullCurrentPlayer_whenConstructed_thenInitializeCalled() {
         PlayerDto expectedPlayer = createPlayerDto(1L, "Init Player", true, null, null, null);
         when(playerServiceMock.getPlayer()).thenReturn(expectedPlayer);
-        inMemoryPlayer = new InMemoryPlayer(playerServiceMock);
-        assertEquals(expectedPlayer, inMemoryPlayer.getCurrentPlayer());
+        playerStateHolder = new PlayerStateHolder(playerServiceMock);
+        assertEquals(expectedPlayer, playerStateHolder.getCurrentPlayer());
     }
 
     @Test
     void currentPlayerProperty_shouldReturnObjectProperty() {
         PlayerDto expectedPlayer = createPlayerDto(1L, "Prop Player", true, null, null, null);
         when(playerServiceMock.getPlayer()).thenReturn(expectedPlayer);
-        inMemoryPlayer = new InMemoryPlayer(playerServiceMock);
-        ObjectProperty<PlayerDto> prop = inMemoryPlayer.currentPlayerProperty();
+        playerStateHolder = new PlayerStateHolder(playerServiceMock);
+        ObjectProperty<PlayerDto> prop = playerStateHolder.currentPlayerProperty();
         assertNotNull(prop);
         assertEquals(expectedPlayer, prop.get());
     }
@@ -127,7 +127,7 @@ class InMemoryPlayerUTest {
     @Test
     void givenException_whenInitializingPlayer_thenLogErrorIsProduced_withoutCallingPlatformExit() {
         when(playerServiceMock.getPlayer()).thenThrow(new IllegalStateException("DB down"));
-        new InMemoryPlayer(playerServiceMock) {
+        new PlayerStateHolder(playerServiceMock) {
             @Override
             void exitPlatform() {
                 // No-op on purpose to avoid calling Platform.exit() during tests

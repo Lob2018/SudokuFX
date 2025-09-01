@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest.currentPlayerProperty_shouldReturnObjectProperty" name="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest.currentPlayerProperty_shouldReturnObjectProperty">
+<map id="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolderUTest.currentPlayerProperty_shouldReturnObjectProperty" name="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolderUTest.currentPlayerProperty_shouldReturnObjectProperty">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,64,287,123"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#aad62ed22d68c324c6876eb7d190fde26" title=" " alt="" coords="335,72,584,115"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,91,319,91,319,96,287,96"/>

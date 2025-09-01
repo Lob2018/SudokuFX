@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.InMemoryPlayer" name="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.InMemoryPlayer">
+<map id="PlayerStateHolder" name="PlayerStateHolder">
 <area shape="rect" id="Node000001" title="Initializes the in&#45;memory player from the PlayerService." alt="" coords="5,5,232,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#a87f77667a76e0b42f14985c06ac5b58a" title="Loads the current player from PlayerService." alt="" coords="280,5,506,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,24,264,24,264,29,232,29"/>

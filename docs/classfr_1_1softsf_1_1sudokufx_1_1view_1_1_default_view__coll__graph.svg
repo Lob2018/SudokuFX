@@ -832,7 +832,7 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="2022.25" y="-1758.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NUMBER_LOADED_PLAYERS</text>
 <text text-anchor="start" x="2012.25" y="-1742.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="2022.25" y="-1742.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
-<text text-anchor="start" x="2022.25" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00">(InMemoryPlayer inMemoryPlayer)</text>
+<text text-anchor="start" x="2022.25" y="-1730.5" font-family="Helvetica,sans-Serif" font-size="10.00">(InMemoryPlayer playerStateHolder)</text>
 <text text-anchor="start" x="2012.25" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="2022.25" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellButton</text>
 <text text-anchor="start" x="2022.25" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
@@ -943,7 +943,7 @@ var sectionId = 'dynsection-1';
 <polygon fill="none" stroke="#63b8ff" points="2094.88,-2240.7 2090.88,-2234.7 2094.88,-2228.7 2098.88,-2234.7 2094.88,-2240.7"/>
 </a>
 </g>
-<text text-anchor="middle" x="2133.12" y="-2434.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;inMemoryPlayer</text>
+<text text-anchor="middle" x="2133.12" y="-2434.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerStateHolder</text>
 </g>
 <!-- Node15 -->
 <g id="Node000015" class="node">

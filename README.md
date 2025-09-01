@@ -232,7 +232,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 │       ├── list        // list components
 │       └── toaster     // toaster notifications
 └── viewmodel           // view models for MVVM pattern
-    └── state           // in-memory ViewModel state
+    └── state           // state holders (observable state for ViewModels, e.g., PlayerStateHolder)
 ```
 
 ### Roadmap

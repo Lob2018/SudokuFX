@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.13.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SudokuFX: fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer Class Reference</title>
+<title>SudokuFX: fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,14 +103,14 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1cache_1_1_cached_player-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer Class Reference</div></div>
+  <div class="headertitle"><div class="title">fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Component responsible for caching and providing the current PlayerDto instance.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer:</div>
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
@@ -161,7 +161,7 @@ Static Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.CachedPlayer</td>
+          <td class="memname">fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.CachedPlayer</td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html">PlayerService</a></td>          <td class="paramname"><span class="paramname"><em>playerService</em></span></td><td>)</td>
           <td></td>
@@ -195,7 +195,7 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">ObjectProperty&lt; PlayerDto &gt;
-              fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.currentPlayerProperty
+              fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.currentPlayerProperty
           </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
@@ -216,7 +216,7 @@ Static Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PlayerDto fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.getCurrentPlayer</td>
+          <td class="memname">PlayerDto fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.getCurrentPlayer</td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -239,7 +239,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.initializePlayer</td>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.initializePlayer</td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -264,7 +264,7 @@ Static Private Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.setCurrentPlayer</td>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.setCurrentPlayer</td>
           <td>(</td>
           <td class="paramtype">PlayerDto</td>          <td class="paramname"><span class="paramname"><em>dto</em></span></td><td>)</td>
           <td></td>
@@ -294,7 +294,7 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">final ObjectProperty&lt;PlayerDto&gt;
-              fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.currentPlayer = new SimpleObjectProperty&lt;&gt;()</td>
+              fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.currentPlayer = new SimpleObjectProperty&lt;&gt;()</td>
         </tr>
       </table>
   </td>
@@ -316,7 +316,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final Logger fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.LOG =
+          <td class="memname">final Logger fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.LOG =
               LoggerFactory.getLogger(CachedPlayer.class)</td>
         </tr>
       </table>
@@ -339,7 +339,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html">PlayerService</a> fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer.playerService</td>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html">PlayerService</a> fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.playerService</td>
         </tr>
       </table>
   </td>

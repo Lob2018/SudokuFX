@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest.createPlayerDto" name="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayerUTest.createPlayerDto">
+<map id="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolderUTest.createPlayerDto" name="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolderUTest.createPlayerDto">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,72,255,115"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html#a21e883aa550a8f5e0391bd780ccb7396" title=" " alt="" coords="315,5,578,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,69,326,49,328,54,235,74"/>

@@ -21,7 +21,7 @@ import fr.softsf.sudokufx.dto.MenuDto;
 import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
-import fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 /**
  * ViewModel managing player menu UI state and localized accessibility texts.
@@ -42,7 +42,7 @@ public class MenuPlayerViewModel {
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
 
-    private final InMemoryPlayer inMemoryPlayer;
+    private final PlayerStateHolder playerStateHolder;
 
     private final ObservableList<PlayerDto> players = FXCollections.observableArrayList();
 
@@ -70,8 +70,8 @@ public class MenuPlayerViewModel {
     private final StringBinding cellConfirmationTitle;
     private final StringBinding cellConfirmationMessage;
 
-    public MenuPlayerViewModel(InMemoryPlayer inMemoryPlayer) {
-        this.inMemoryPlayer = inMemoryPlayer;
+    public MenuPlayerViewModel(PlayerStateHolder playerStateHolder) {
+        this.playerStateHolder = playerStateHolder;
 
         playerAccessibleText =
                 createFormattedBinding(MENU_PLAYER_BUTTON_PLAYER_ACCESSIBILITY, this::playerName);
@@ -125,7 +125,7 @@ public class MenuPlayerViewModel {
         return Bindings.createStringBinding(
                 () -> MessageFormat.format(I18n.INSTANCE.getValue(key), argSupplier.get()),
                 I18n.INSTANCE.localeProperty(),
-                inMemoryPlayer.currentPlayerProperty());
+                playerStateHolder.currentPlayerProperty());
     }
 
     /**
@@ -140,7 +140,7 @@ public class MenuPlayerViewModel {
                             + I18n.INSTANCE.getValue(suffixKey);
                 },
                 I18n.INSTANCE.localeProperty(),
-                inMemoryPlayer.currentPlayerProperty());
+                playerStateHolder.currentPlayerProperty());
     }
 
     /** Creates a simple localized binding for a given key. Updates when locale changes. */
@@ -165,13 +165,13 @@ public class MenuPlayerViewModel {
      * @return the player name, guaranteed to be non-null and not blank
      */
     private String playerName() {
-        return inMemoryPlayer.getCurrentPlayer().name();
+        return playerStateHolder.getCurrentPlayer().name();
     }
 
     /** Loads players into the observable list. */
     private void loadPlayers() {
         players.clear();
-        players.add(inMemoryPlayer.getCurrentPlayer());
+        players.add(playerStateHolder.getCurrentPlayer());
         for (int i = 1; i <= TEST_NUMBER_LOADED_PLAYERS; i++) {
             players.add(generatePlayerForTests(i + "AAAAAAAAAAAAAAAAAAAAAAAAA"));
         }
@@ -180,7 +180,7 @@ public class MenuPlayerViewModel {
     /** Sets the selected player to the one marked as selected or first in the list. */
     private void setSelectedPlayer() {
         if (!players.isEmpty()) {
-            inMemoryPlayer.currentPlayerProperty().set(inMemoryPlayer.getCurrentPlayer());
+            playerStateHolder.currentPlayerProperty().set(playerStateHolder.getCurrentPlayer());
         }
     }
 
@@ -208,7 +208,7 @@ public class MenuPlayerViewModel {
     }
 
     public ObjectProperty<PlayerDto> selectedPlayerProperty() {
-        return inMemoryPlayer.currentPlayerProperty();
+        return playerStateHolder.currentPlayerProperty();
     }
 
     public StringBinding playerAccessibleTextProperty() {

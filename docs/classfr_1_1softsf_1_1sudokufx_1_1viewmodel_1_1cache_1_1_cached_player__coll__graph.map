@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer" name="fr.softsf.sudokufx.viewmodel.state.InMemoryPlayer">
+<map id="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder" name="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder">
 <area shape="rect" id="Node000001" title="Component responsible for caching and providing the current PlayerDto instance." alt="" coords="108,561,330,817"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" title="Service class providing business logic related to Player entities." alt="" coords="110,343,328,497"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,497,222,545,216,545,216,497"/>
