@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.Options.setHexcolor" name="fr.softsf.sudokufx.model.Options.setHexcolor">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates hex color format (#RGB or #RRGGBB)." alt="" coords="220,5,387,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates hex color format (#RRGGBBAA)." alt="" coords="220,5,387,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,24,204,24,204,29,172,29"/>
 </map>

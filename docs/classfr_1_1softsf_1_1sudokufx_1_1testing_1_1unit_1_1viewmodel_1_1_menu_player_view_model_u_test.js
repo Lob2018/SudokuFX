@@ -7,7 +7,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_playe
     [ "givenViewModel_whenInitialized_thenPlayersLoadedAndBindingsNotNull", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a1a2f782dfb951d637743f974957d8930", null ],
     [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a9eb53f321f6ac81bbfb658d83f8a83de", null ],
     [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a5fe1b4bc14f8b8f2e457c66f32582836", null ],
-    [ "inMemoryPlayer", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#ace485f2f45923f5954cf89669de5e283", null ],
     [ "originalLocale", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a9deeafc3c8d87fe40937030d6feba8a8", null ],
+    [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a1553d458ce0335c236e23e500374083c", null ],
     [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a9836b1dcbf07547f9fcd5aa6915748ec", null ]
 ];

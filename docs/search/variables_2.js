@@ -37,6 +37,6 @@ var searchData=
   ['createdat_5fmust_5fnot_5fbe_5fnull_34',['CREATEDAT_MUST_NOT_BE_NULL',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a8ac89672e3af7a67236c51d1f4bd4420',1,'fr.softsf.sudokufx.model.Game.CREATEDAT_MUST_NOT_BE_NULL'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aec7936cdd13cf7f3f2260ed2a0e1dc31',1,'fr.softsf.sudokufx.model.Player.CREATEDAT_MUST_NOT_BE_NULL']]],
   ['current_5fversion_35',['CURRENT_VERSION',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a69bece1dbbb1a5cc86c38b7a12f5f71b',1,'fr::softsf::sudokufx::service::VersionService']]],
   ['currentfontsize_36',['currentFontSize',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a57007497ac42d19ba42d8122b8cba38e',1,'fr::softsf::sudokufx::common::util::DynamicFontSize']]],
-  ['currentplayer_37',['currentPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html#afc82115cb844f6b4e3ffc0da8da7e7e0',1,'fr::softsf::sudokufx::viewmodel::state::InMemoryPlayer']]],
+  ['currentplayer_37',['currentPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#afc81fc802e0c186f48b27411fcf7a494',1,'fr::softsf::sudokufx::viewmodel::state::PlayerStateHolder']]],
   ['currenttask_38',['currentTask',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#a09fd30f08f8dd544cf2c7e73f0fe8190',1,'fr::softsf::sudokufx::viewmodel::MenuNewViewModel']]]
 ];

@@ -8,6 +8,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test =
     [ "ImagePathValidationTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_image_path_validation_tests.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_image_path_validation_tests" ],
     [ "SetterTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests" ],
     [ "ToStringTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests" ],
-    [ "VALID_HEX_6", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test.html#af940342521a43d28359115a91133896b", null ],
+    [ "VALID_HEX_8", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test.html#a7c79c115ad2de29b500604bc049d2033", null ],
     [ "VALID_PATH", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test.html#a441f5690c7f2ca34ff48430f6cb0a739", null ]
 ];

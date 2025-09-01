@@ -24,10 +24,10 @@
 <area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="2312,2388,2312,3109,2306,3109,2306,2388"/>
 <area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html" title="ViewModel for the maxi menu." alt="" coords="2437,1703,2658,2535"/>
 <area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="2519,2534,2490,2815,2452,3103,2440,3178,2434,3177,2447,3102,2485,2814,2513,2534"/>
-<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html" title="ViewModel managing player menu UI state and localized accessibility texts." alt="" coords="2683,1463,2914,2775"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2731,2775,2705,2897,2673,3015,2625,3156,2567,3295,2505,3427,2444,3547,2440,3544,2500,3425,2562,3293,2620,3154,2668,3014,2700,2896,2726,2774"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html" title="Component responsible for holding the current PlayerDto instance in memory." alt="" coords="2691,724,2906,1001"/>
-<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="2801,1001,2801,1446,2796,1446,2796,1001"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html" title="ViewModel managing player menu UI state and localized accessibility texts." alt="" coords="2683,1455,2914,2783"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="2729,2783,2704,2901,2673,3015,2625,3156,2567,3295,2505,3427,2444,3547,2440,3544,2500,3425,2562,3293,2620,3154,2668,3014,2699,2900,2724,2782"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="State holder for the current PlayerDto in the application." alt="" coords="2691,724,2906,1001"/>
+<area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="2801,1001,2801,1438,2796,1438,2796,1001"/>
 <area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" title="Service class providing business logic related to Player entities." alt="" coords="2690,364,2907,519"/>
 <area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="2801,518,2801,707,2796,707,2796,518"/>
 <area shape="rect" id="Node000016" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="2453,169,2635,271"/>

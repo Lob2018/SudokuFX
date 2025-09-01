@@ -173,7 +173,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
 <tr class="memitem:a775885a0e9448ee0eaf4a7938c678def" id="r_a775885a0e9448ee0eaf4a7938c678def"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a775885a0e9448ee0eaf4a7938c678def">validateHexcolor</a> (String <a class="el" href="#ae71ac598179e4dd96ab77f34d9aed67c">hexcolor</a>)</td></tr>
-<tr class="memdesc:a775885a0e9448ee0eaf4a7938c678def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates hex color format (#RGB or #RRGGBB).  <br /></td></tr>
+<tr class="memdesc:a775885a0e9448ee0eaf4a7938c678def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates hex color format (#RRGGBBAA).  <br /></td></tr>
 <tr class="separator:a775885a0e9448ee0eaf4a7938c678def"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a771e507dc7b5e3256b5a2e38753ab0c9" id="r_a771e507dc7b5e3256b5a2e38753ab0c9"><td class="memItemLeft" align="right" valign="top">static String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a771e507dc7b5e3256b5a2e38753ab0c9">validatePath</a> (String path, String nullMsg)</td></tr>
 <tr class="memdesc:a771e507dc7b5e3256b5a2e38753ab0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that a path is not null and does not exceed the allowed length.  <br /></td></tr>
@@ -198,11 +198,11 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a78019447a6832d57b8bff3b77e6686a7" id="r_a78019447a6832d57b8bff3b77e6686a7"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78019447a6832d57b8bff3b77e6686a7">DEFAULT_HEX_COLOR</a> = &quot;#000000&quot;</td></tr>
+<tr class="memitem:a78019447a6832d57b8bff3b77e6686a7" id="r_a78019447a6832d57b8bff3b77e6686a7"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78019447a6832d57b8bff3b77e6686a7">DEFAULT_HEX_COLOR</a> = &quot;FFFFFFFF&quot;</td></tr>
 <tr class="separator:a78019447a6832d57b8bff3b77e6686a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f71ba764b7a7a1de6dd89b4e715b36c" id="r_a7f71ba764b7a7a1de6dd89b4e715b36c"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f71ba764b7a7a1de6dd89b4e715b36c">EMPTY_PATH</a> = &quot;&quot;</td></tr>
 <tr class="separator:a7f71ba764b7a7a1de6dd89b4e715b36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0decef2ee7063c328f95a30f9bd90ba3" id="r_a0decef2ee7063c328f95a30f9bd90ba3"><td class="memItemLeft" align="right" valign="top">static final Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0decef2ee7063c328f95a30f9bd90ba3">HEX_COLOR_PATTERN</a></td></tr>
+<tr class="memitem:a0decef2ee7063c328f95a30f9bd90ba3" id="r_a0decef2ee7063c328f95a30f9bd90ba3"><td class="memItemLeft" align="right" valign="top">static final Pattern&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0decef2ee7063c328f95a30f9bd90ba3">HEX_COLOR_PATTERN</a> = Pattern.compile(&quot;^([A-Fa-f0-9]{8})$&quot;)</td></tr>
 <tr class="separator:a0decef2ee7063c328f95a30f9bd90ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b3597cf4ab15b0f576dd5e52afeaec3" id="r_a9b3597cf4ab15b0f576dd5e52afeaec3"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b3597cf4ab15b0f576dd5e52afeaec3">HEXCOLOR_MUST_NOT_BE_NULL_OR_BLANK</a></td></tr>
 <tr class="separator:a9b3597cf4ab15b0f576dd5e52afeaec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -650,7 +650,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Validates hex color format (#RGB or #RRGGBB). </p>
+<p>Validates hex color format (#RRGGBBAA). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hexcolor</td><td>hex color to validate </td></tr>
@@ -724,7 +724,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final String fr.softsf.sudokufx.model.Options.DEFAULT_HEX_COLOR = &quot;#000000&quot;</td>
+          <td class="memname">final String fr.softsf.sudokufx.model.Options.DEFAULT_HEX_COLOR = &quot;FFFFFFFF&quot;</td>
         </tr>
       </table>
   </td>
@@ -768,7 +768,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final Pattern fr.softsf.sudokufx.model.Options.HEX_COLOR_PATTERN</td>
+          <td class="memname">final Pattern fr.softsf.sudokufx.model.Options.HEX_COLOR_PATTERN = Pattern.compile(&quot;^([A-Fa-f0-9]{8})$&quot;)</td>
         </tr>
       </table>
   </td>
@@ -777,9 +777,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            Pattern.compile(<span class="stringliteral">&quot;^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$&quot;</span>)</div>
-</div><!-- fragment -->
+
 </div>
 </div>
 <a id="ae71ac598179e4dd96ab77f34d9aed67c" name="ae71ac598179e4dd96ab77f34d9aed67c"></a>
@@ -892,7 +890,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">            <span class="stringliteral">&quot;hexcolor must be a valid hex color format (e.g., #FFFFFF or #FFF)&quot;</span></div>
+<div class="line">            <span class="stringliteral">&quot;hexcolor must be a valid hex color format (e.g., FFFFFFFF)&quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1059,7 +1057,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1model.html">model</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html">Options</a></li>
-    <li class="footer">Generated on Wed Aug 27 2025 21:07:12 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon Sep 1 2025 19:23:09 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

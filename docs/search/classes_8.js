@@ -10,11 +10,8 @@ var searchData=
   ['imageutilsutest_7',['ImageUtilsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
   ['imainview_8',['IMainView',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html',1,'fr::softsf::sudokufx::common::interfaces']]],
   ['imenumapper_9',['IMenuMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
-  ['inmemoryplayer_10',['InMemoryPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
-  ['inmemoryplayeritest_11',['InMemoryPlayerITest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::state']]],
-  ['inmemoryplayerutest_12',['InMemoryPlayerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
-  ['ioptionsmapper_13',['IOptionsMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
-  ['iplayerlanguagemapper_14',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
-  ['iplayermapper_15',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
-  ['isplashscreenview_16',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::common::interfaces']]]
+  ['ioptionsmapper_10',['IOptionsMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
+  ['iplayerlanguagemapper_11',['IPlayerLanguageMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
+  ['iplayermapper_12',['IPlayerMapper',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html',1,'fr::softsf::sudokufx::common::interfaces::mapper']]],
+  ['isplashscreenview_13',['ISplashScreenView',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html',1,'fr::softsf::sudokufx::common::interfaces']]]
 ];

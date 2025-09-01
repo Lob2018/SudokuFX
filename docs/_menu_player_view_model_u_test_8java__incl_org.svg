@@ -392,7 +392,7 @@
 <g id="a_Node000022"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="3207.38,-32 3037.62,-32 3037.62,0 3207.38,0 3207.38,-32"/>
 <text text-anchor="start" x="3045.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="middle" x="3122.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">InMemoryPlayer</text>
+<text text-anchor="middle" x="3122.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
 </a>
 </g>
 </g>

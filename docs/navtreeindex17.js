@@ -1,7 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html#a6b27c3657296539fd6380c4c57f57cba":[2,0,0,0,0,1,3,2,2],
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html#a6f3ef064af40fd2f7afd009495f6a66c":[1,0,0,0,0,1,3,2,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html#a6f3ef064af40fd2f7afd009495f6a66c":[2,0,0,0,0,1,3,2,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html":[1,0,0,0,0,1,3,0,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html":[2,0,0,0,0,1,3,0,0],
@@ -113,7 +111,7 @@ var NAVTREEINDEX17 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a":[1,0,0,0,0,3,3],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9":[1,0,0,0,0,3,4],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a6fc9ab31dcedad769c8e003fdac97436":[1,0,0,0,0,3,6],
-"namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a8b7652898b9b7485c43cd06148d83663":[1,0,0,0,0,3,5],
+"namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aa0a5f3c985f2a0ecb72d9942d0a130a7":[1,0,0,0,0,3,5],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565":[1,0,0,0,0,3,7],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto_1_1github.html":[1,0,0,0,0,3,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto_1_1github.html#a25c54784b6cb605bf6bc40eb80331013":[1,0,0,0,0,3,0,1],

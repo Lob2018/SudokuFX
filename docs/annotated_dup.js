@@ -167,7 +167,7 @@ var annotated_dup =
                   [ "GrillesCreesUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test" ]
                 ] ],
                 [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state.html", [
-                  [ "InMemoryPlayerITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_in_memory_player_i_test" ]
+                  [ "PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test" ]
                 ] ],
                 [ "ActiveMenuOrSubmenuViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test" ],
                 [ "MenuHiddenViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test" ],
@@ -202,8 +202,8 @@ var annotated_dup =
               [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model" ]
             ] ],
             [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html", [
-              [ "InMemoryPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player" ],
-              [ "InMemoryPlayerUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_in_memory_player_u_test" ]
+              [ "PlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder" ],
+              [ "PlayerStateHolderUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test" ]
             ] ],
             [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
             [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],

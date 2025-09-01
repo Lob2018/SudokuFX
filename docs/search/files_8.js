@@ -14,12 +14,9 @@ var searchData=
   ['imageutilsutest_2ejava_11',['ImageUtilsUTest.java',['../_image_utils_u_test_8java.html',1,'']]],
   ['imainview_2ejava_12',['IMainView.java',['../_i_main_view_8java.html',1,'']]],
   ['imenumapper_2ejava_13',['IMenuMapper.java',['../_i_menu_mapper_8java.html',1,'']]],
-  ['inmemoryplayer_2ejava_14',['InMemoryPlayer.java',['../_in_memory_player_8java.html',1,'']]],
-  ['inmemoryplayeritest_2ejava_15',['InMemoryPlayerITest.java',['../_in_memory_player_i_test_8java.html',1,'']]],
-  ['inmemoryplayerutest_2ejava_16',['InMemoryPlayerUTest.java',['../_in_memory_player_u_test_8java.html',1,'']]],
-  ['ioptionsmapper_2ejava_17',['IOptionsMapper.java',['../_i_options_mapper_8java.html',1,'']]],
-  ['iosfolder_2ejava_18',['IOsFolder.java',['../_i_os_folder_8java.html',1,'']]],
-  ['iplayerlanguagemapper_2ejava_19',['IPlayerLanguageMapper.java',['../_i_player_language_mapper_8java.html',1,'']]],
-  ['iplayermapper_2ejava_20',['IPlayerMapper.java',['../_i_player_mapper_8java.html',1,'']]],
-  ['isplashscreenview_2ejava_21',['ISplashScreenView.java',['../_i_splash_screen_view_8java.html',1,'']]]
+  ['ioptionsmapper_2ejava_14',['IOptionsMapper.java',['../_i_options_mapper_8java.html',1,'']]],
+  ['iosfolder_2ejava_15',['IOsFolder.java',['../_i_os_folder_8java.html',1,'']]],
+  ['iplayerlanguagemapper_2ejava_16',['IPlayerLanguageMapper.java',['../_i_player_language_mapper_8java.html',1,'']]],
+  ['iplayermapper_2ejava_17',['IPlayerMapper.java',['../_i_player_mapper_8java.html',1,'']]],
+  ['isplashscreenview_2ejava_18',['ISplashScreenView.java',['../_i_splash_screen_view_8java.html',1,'']]]
 ];

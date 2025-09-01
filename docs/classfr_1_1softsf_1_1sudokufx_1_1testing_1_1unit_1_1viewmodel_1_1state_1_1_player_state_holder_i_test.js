@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test =
+[
+    [ "givenTestDatabase_whenInMemoryPlayerLoads_thenPlayerDtoIsNotNull", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html#af22a8ad53e35ed0775342ae60f50d4d6", null ],
+    [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html#a265a069d02444ef87a3c4f9b91805433", null ]
+];

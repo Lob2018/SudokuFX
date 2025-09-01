@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model =
 [
-    [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a01acb237ab4001791933cde3047612bf", null ],
+    [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a13403a1bcb267a7558c6dbf2a23c3f01", null ],
     [ "cellButtonAccessibleTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3", null ],
     [ "cellConfirmationMessageProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99", null ],
     [ "cellConfirmationTitleProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64", null ],
@@ -35,7 +35,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model =
     [ "editAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a7febff409247157e3c1bd1042cc79336", null ],
     [ "editRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#af6c5b42e11c36f814dccdacba5df41e4", null ],
     [ "editTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a00880e49c13258aa24e9280353ee004b", null ],
-    [ "inMemoryPlayer", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a1880b9e13c6b447983088d5813596198", null ],
     [ "maxiPlayerRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a5b2acc8f65105d283d4b1d7047ec556c", null ],
     [ "maxiPlayerTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a17f217482958b028bbce3b40fe608e3b", null ],
     [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aed045d4bae342fcd3bc066272c520beb", null ],
@@ -48,6 +47,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model =
     [ "playerAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ad3a3beb53b2e1966b2ffa865766f5d02", null ],
     [ "playerRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ac857bfc4d3f6bd7ed387de9a725daf4d", null ],
     [ "players", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aaf88343a30c94b001df18db07c4e376a", null ],
+    [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa34dcb13794f83f9191ad32480357f6a", null ],
     [ "playerTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a7048e176ca1af27fd851ce02ac509d76", null ],
     [ "reduceAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ab4b636a7eb3a2ae69583b58f8996ce25", null ],
     [ "reduceText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a7e8d516348d565fa756908f7ad2dae15", null ],

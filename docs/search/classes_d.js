@@ -10,7 +10,10 @@ var searchData=
   ['playerrepository_7',['PlayerRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html',1,'fr::softsf::sudokufx::repository']]],
   ['playerservice_8',['PlayerService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html',1,'fr::softsf::sudokufx::service']]],
   ['playerserviceutest_9',['PlayerServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_player_service_u_test.html',1,'fr::softsf::sudokufx::testing::unit::service']]],
-  ['playerutest_10',['PlayerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html',1,'fr::softsf::sudokufx::model']]],
-  ['possibilitystarshbox_11',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html',1,'fr::softsf::sudokufx::view::component']]],
-  ['possibilitystarshboxstub_12',['PossibilityStarsHBoxStub',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModelUTest']]]
+  ['playerstateholder_10',['PlayerStateHolder',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
+  ['playerstateholderitest_11',['PlayerStateHolderITest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::state']]],
+  ['playerstateholderutest_12',['PlayerStateHolderUTest',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
+  ['playerutest_13',['PlayerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html',1,'fr::softsf::sudokufx::model']]],
+  ['possibilitystarshbox_14',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html',1,'fr::softsf::sudokufx::view::component']]],
+  ['possibilitystarshboxstub_15',['PossibilityStarsHBoxStub',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModelUTest']]]
 ];
