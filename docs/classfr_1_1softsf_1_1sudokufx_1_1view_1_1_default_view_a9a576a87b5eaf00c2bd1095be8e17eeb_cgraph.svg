@@ -222,7 +222,7 @@ var sectionId = 'dynsection-5';
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a0df8e0cbd22b33b0ede8a2d9f4307107" target="_top" xlink:title="Initializes and binds all UI components of the options menu to the menuOptionsViewModel.">
+<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a0df8e0cbd22b33b0ede8a2d9f4307107" target="_top" xlink:title="Initializes and binds all UI components of the options menu to the MenuOptionsViewModel.">
 <polygon fill="white" stroke="#666666" points="341.75,-232 163,-232 163,-200 341.75,-200 341.75,-232"/>
 <text text-anchor="start" x="171" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="middle" x="252.38" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView.optionsMenuInitialization</text>

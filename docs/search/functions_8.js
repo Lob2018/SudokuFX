@@ -2,7 +2,7 @@ var searchData=
 [
   ['handledifficultlevelshow_0',['handleDifficultLevelShow',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#af958d3aeef88bd1e7e93c04956277c7f',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['handleeasylevelshow_1',['handleEasyLevelShow',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#adcc2e6b5b752476dc81d253984275aca',1,'fr::softsf::sudokufx::view::DefaultView']]],
-  ['handlefileimagechooser_2',['handleFileImageChooser',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a6412e7d21a90c98fa3b40050ec3e30a4',1,'fr.softsf.sudokufx.view.DefaultView.handleFileImageChooser()'],['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a43fcea970a99cbb2545c33f08e29f6b3',1,'fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.handleFileImageChooser()']]],
+  ['handlefileimagechooser_2',['handleFileImageChooser',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a6412e7d21a90c98fa3b40050ec3e30a4',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['handlegridopacity_3',['handleGridOpacity',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a2f7bb41f1c5fe390f3917b4a4d20bb91',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['handlemediumlevelshow_4',['handleMediumLevelShow',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a5cd265e50ccdb813a714780ad212df91',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['handlemenubackupshow_5',['handleMenuBackupShow',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ad6747f353c6b5bb142d46ede70658af2',1,'fr::softsf::sudokufx::view::DefaultView']]],

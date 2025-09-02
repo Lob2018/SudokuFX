@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Initializes and binds all UI components of the options menu to the menuOptionsViewModel.">
+<g id="a_Node000001"><a xlink:title="Initializes and binds all UI components of the options menu to the MenuOptionsViewModel.">
 <polygon fill="#999999" stroke="#666666" points="178.75,-32 0,-32 0,0 178.75,0 178.75,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="middle" x="89.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView.optionsMenuInitialization</text>

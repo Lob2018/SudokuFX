@@ -17,6 +17,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.config.database.ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html", null ],
+    [ "fr.softsf.sudokufx.service.AsyncFileProcessorService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_async_file_processor_service.html", null ],
     [ "fr.softsf.sudokufx.service.AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.benchmark.BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", null ],
@@ -44,7 +45,9 @@ var hierarchy =
     [ "fr.softsf.sudokufx.testing.unit.common.exception.ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1_exception_tools_u_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_exception_tools_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1_excluded_from_coverage_report_generated.html", null ],
+    [ "fr.softsf.sudokufx.service.FileChooserService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_file_chooser_service.html", null ],
     [ "fr.softsf.sudokufx.common.util.FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html", null ],
+    [ "fr.softsf.sudokufx.service.FileChooserService.FileType", "enumfr_1_1softsf_1_1sudokufx_1_1service_1_1_file_chooser_service_1_1_file_type.html", null ],
     [ "fr.softsf.sudokufx.model.Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", null ],
     [ "fr.softsf.sudokufx.model.Game.GameBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_1_1_game_builder.html", null ],
     [ "fr.softsf.sudokufx.model.GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html", null ],

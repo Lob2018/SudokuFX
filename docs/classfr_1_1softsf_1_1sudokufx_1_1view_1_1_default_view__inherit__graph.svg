@@ -70,22 +70,22 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="5.5" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator coordinator</text>
 <text text-anchor="start" x="5.5" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel gridViewModel</text>
-<text text-anchor="start" x="5.5" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel helpViewModel</text>
-<text text-anchor="start" x="5.5" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">Timeline hideMiniMenuTimeline</text>
-<text text-anchor="start" x="5.5" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox menuHidden</text>
-<text text-anchor="start" x="5.5" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuHiddenButtonShow</text>
-<text text-anchor="start" x="5.5" y="-878.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-878.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuHiddenViewModel</text>
-<text text-anchor="start" x="14" y="-866.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuHiddenViewModel</text>
+<text text-anchor="start" x="14" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00">FileChooserService</text>
+<text text-anchor="start" x="14" y="-946.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fileChooserService</text>
+<text text-anchor="start" x="5.5" y="-930.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-930.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel gridViewModel</text>
+<text text-anchor="start" x="5.5" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel helpViewModel</text>
+<text text-anchor="start" x="5.5" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">Timeline hideMiniMenuTimeline</text>
+<text text-anchor="start" x="5.5" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox menuHidden</text>
+<text text-anchor="start" x="5.5" y="-866.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-866.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button menuHiddenButtonShow</text>
 <text text-anchor="start" x="5.5" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuLevelViewModel</text>
-<text text-anchor="start" x="14" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuLevelViewModel</text>
-<text text-anchor="start" x="14" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 92 more...</text>
+<text text-anchor="start" x="14" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuHiddenViewModel</text>
+<text text-anchor="start" x="14" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuHiddenViewModel</text>
+<text text-anchor="start" x="14" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 93 more...</text>
 <text text-anchor="start" x="5.5" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int AUTO</text>
 <text text-anchor="start" x="14" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00">_HIDE_MINI_MENU_DELAY_MS</text>

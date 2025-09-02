@@ -1,38 +1,21 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init">
-<area shape="rect" id="Node000001" title="Initializes the menu options UI state, including:" alt="" coords="5,151,199,193"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a43fcea970a99cbb2545c33f08e29f6b3" title="Handles image file selection by validating the file format and starting the image loading process." alt="" coords="256,68,518,127"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,147,257,128,259,134,187,153"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a98801adb4b71828d30800245efab045a" title="Configures the audio service and updates the ViewModel mute property." alt="" coords="264,151,510,193"/>
-<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="199,169,248,169,248,175,199,175"/>
-<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a3b1dee2b684cd6f89f245ff46623b8a5" title="Applies a background color to the GridPane and sets it in the ColorPicker." alt="" coords="247,217,527,260"/>
-<area shape="poly" id="edge21_Node000001_Node000015" title=" " alt="" coords="197,191,279,211,277,216,196,197"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="1170,72,1439,115"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="518,90,796,82,1122,83,1154,84,1154,89,1122,88,796,88,518,95"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a19f6173dce7259d796c9688cf534ac01" title="Starts the asynchronous image loading and resizing task." alt="" coords="575,135,801,177"/>
-<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="518,120,561,128,560,134,517,125"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a7df4872b0cf0eeb5cd3a04ce7ccb0fef" title="Sets the accessibility text for the toast based on its level." alt="" coords="1487,72,1756,115"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1440,91,1472,91,1472,96,1440,96"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a1f7607f18913c940c16c9de28f3e7ae7" title="Sets the style of the toast based on its level." alt="" coords="1487,5,1756,48"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="1409,69,1501,49,1503,54,1410,74"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#abd2310564b394c59530d5e7b2a0d0776" title="Sets a timer to automatically remove the toast after a specified duration." alt="" coords="1487,139,1756,181"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="1410,113,1503,132,1501,138,1409,118"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a67957eac2367e7b8018ef0d2ce354bef" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="1804,72,2074,115"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1757,91,1789,91,1789,96,1757,96"/>
-<area shape="rect" id="Node000007" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a43cd66f6e8b04c4873f35e51fd57a36d" title=" " alt="" coords="1827,5,2051,48"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1757,24,1811,24,1811,29,1757,29"/>
-<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="761,131,849,112,1006,96,1154,90,1154,95,1006,101,850,117,762,137"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a834a300defa70fe876c0bfb4a93ab8bd" title="Called upon successful completion of the image loading task." alt="" coords="863,127,1108,185"/>
-<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="802,153,848,153,848,159,802,159"/>
-<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#a170661e162609697b2bd6e2cd9a22b60" title="Shows or hides the spinner." alt="" coords="1192,209,1417,252"/>
-<area shape="poly" id="edge19_Node000009_Node000012" title=" " alt="" coords="714,176,772,222,810,245,850,261,897,273,945,279,1042,280,1134,269,1213,254,1214,259,1135,275,1042,285,944,284,896,278,849,267,808,250,769,227,710,180"/>
-<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab53f60c10a9810b5df500217c14b9539" title="Called when the image loading task fails." alt="" coords="849,209,1122,252"/>
-<area shape="poly" id="edge15_Node000009_Node000013" title=" " alt="" coords="774,175,850,195,881,202,880,208,849,200,773,181"/>
-<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="1108,129,1177,116,1178,121,1109,135"/>
-<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ac901d34317be26e1fd391a134f42e7bf" title="Schedules the current toast for removal after a short delay." alt="" coords="1170,139,1439,181"/>
-<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="1108,155,1154,155,1154,161,1108,160"/>
-<area shape="poly" id="edge14_Node000010_Node000012" title=" " alt="" coords="1109,182,1196,203,1195,208,1108,187"/>
-<area shape="poly" id="edge13_Node000011_Node000008" title=" " alt="" coords="1440,157,1472,157,1472,163,1440,163"/>
-<area shape="poly" id="edge16_Node000013_Node000003" title=" " alt="" coords="1100,206,1120,195,1136,179,1143,161,1151,142,1168,125,1175,120,1178,125,1171,129,1156,145,1148,163,1140,182,1123,199,1103,211"/>
-<area shape="poly" id="edge17_Node000013_Node000011" title=" " alt="" coords="1085,206,1189,183,1190,188,1086,211"/>
-<area shape="poly" id="edge18_Node000013_Node000012" title=" " alt="" coords="1122,228,1176,228,1176,233,1122,233"/>
+<area shape="rect" id="Node000001" title="Initializes the menu options UI state, including:" alt="" coords="5,72,199,115"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a98801adb4b71828d30800245efab045a" title="Configures the audio service and updates the ViewModel mute property." alt="" coords="271,5,518,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="197,69,246,57,281,49,282,55,247,63,198,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a1ca6783b6394d6e522d3311f64bcf372" title="Loads a background image asynchronously and applies it to the specified GridPane." alt="" coords="247,72,542,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,91,231,91,231,96,199,96"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a3b1dee2b684cd6f89f245ff46623b8a5" title="Applies a background color to the GridPane and sets it in the ColorPicker." alt="" coords="254,139,534,181"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="198,113,247,124,282,132,281,137,246,129,197,118"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="590,72,859,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="542,91,574,91,574,96,542,96"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a7df4872b0cf0eeb5cd3a04ce7ccb0fef" title="Sets the accessibility text for the toast based on its level." alt="" coords="907,5,1177,48"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="829,69,922,49,923,54,830,74"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a1f7607f18913c940c16c9de28f3e7ae7" title="Sets the style of the toast based on its level." alt="" coords="907,72,1177,115"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="860,91,892,91,892,96,860,96"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#abd2310564b394c59530d5e7b2a0d0776" title="Sets a timer to automatically remove the toast after a specified duration." alt="" coords="907,139,1177,181"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="830,113,923,132,922,138,829,118"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a67957eac2367e7b8018ef0d2ce354bef" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="1225,5,1494,48"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1177,24,1209,24,1209,29,1177,29"/>
+<area shape="rect" id="Node000008" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a43cd66f6e8b04c4873f35e51fd57a36d" title=" " alt="" coords="1247,72,1472,115"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1177,91,1232,91,1232,96,1177,96"/>
 </map>

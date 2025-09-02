@@ -1,5 +1,9 @@
 var NAVTREEINDEX15 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca7e10ab87fe7e7e3a36ec39588ffdc9":[2,0,0,0,0,9,0,1,2],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#accb66801fa9a7d8993ba472b4eb28932":[1,0,0,0,0,10,0,1,8],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#accb66801fa9a7d8993ba472b4eb28932":[2,0,0,0,0,9,0,1,8],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad237884254449a37442db9047161693e":[1,0,0,0,0,10,0,1,0],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad237884254449a37442db9047161693e":[2,0,0,0,0,9,0,1,0],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075":[1,0,0,0,0,10,0,1,7],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075":[2,0,0,0,0,9,0,1,7],
@@ -245,9 +249,5 @@ var NAVTREEINDEX15 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a31483295cd054c78c089e4ead3096663":[2,0,0,0,0,1,1,5,24],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a3afbfe781979971c23c3b870f9c9a9c6":[1,0,0,0,0,1,1,5,13],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a3afbfe781979971c23c3b870f9c9a9c6":[2,0,0,0,0,1,1,5,13],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a44a8d5d795ade5614fc15804cb2ee684":[1,0,0,0,0,1,1,5,22],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a44a8d5d795ade5614fc15804cb2ee684":[2,0,0,0,0,1,1,5,22],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a6bff79cec180d39be6a04c73701a4b0a":[1,0,0,0,0,1,1,5,18],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a6bff79cec180d39be6a04c73701a4b0a":[2,0,0,0,0,1,1,5,18],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a76ae2d247e5220f820c1bd11c847b264":[1,0,0,0,0,1,1,5,15]
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a44a8d5d795ade5614fc15804cb2ee684":[1,0,0,0,0,1,1,5,22]
 };
