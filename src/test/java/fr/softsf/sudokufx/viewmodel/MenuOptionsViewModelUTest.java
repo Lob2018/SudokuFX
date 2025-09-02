@@ -5,17 +5,10 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
-import java.io.File;
-import java.net.URL;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.TimeUnit;
 import java.util.function.Supplier;
 import java.util.*;
-import javafx.application.Platform;
 import javafx.beans.binding.StringBinding;
-import javafx.concurrent.Task;
 import javafx.scene.control.ColorPicker;
-import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.GridPane;
@@ -27,14 +20,13 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
-import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
+import fr.softsf.sudokufx.service.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 
-import static fr.softsf.sudokufx.common.enums.Paths.LOGO_SUDO_PNG_PATH;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
@@ -53,7 +45,7 @@ class MenuOptionsViewModelUTest {
     void setUp() {
         originalLocale = I18n.INSTANCE.localeProperty().get();
         I18n.INSTANCE.setLocaleBundle("FR");
-        viewModel = new MenuOptionsViewModel(new AudioService());
+        viewModel = new MenuOptionsViewModel(new AudioService(), new AsyncFileProcessorService());
         sudokuFX = new GridPane();
         colorPicker = new ColorPicker();
         toaster = mock(ToasterVBox.class);
@@ -174,101 +166,6 @@ class MenuOptionsViewModelUTest {
     }
 
     @Test
-    void
-            givenValidPngImage_whenHandleFileImageChooserCalled_thenGridBackgroundIsSetAndInfoToastShown()
-                    throws Exception {
-        File validImage = getValidTestImage();
-        assertTrue(validImage.exists());
-        GridPane grid = new GridPane();
-        ToasterVBox mockToaster = mock(ToasterVBox.class);
-        SpinnerGridPane mockSpinner = mock(SpinnerGridPane.class);
-        CountDownLatch latch = new CountDownLatch(1);
-        Platform.runLater(
-                () -> {
-                    grid.backgroundProperty()
-                            .addListener(
-                                    (obs, oldVal, newVal) -> {
-                                        if (newVal != null) {
-                                            latch.countDown();
-                                        }
-                                    });
-                    viewModel.loadBackgroundImage(validImage, mockToaster, mockSpinner, grid);
-                });
-        assertTrue(latch.await(5, TimeUnit.SECONDS), "Timeout waiting for background to be set");
-        Background background = grid.getBackground();
-        assertNotNull(background, "Options should not be null");
-        assertFalse(background.getImages().isEmpty(), "Options image should be set");
-        verify(mockToaster)
-                .addToast(anyString(), contains("file:"), eq(ToastLevels.INFO), eq(false));
-        verify(mockToaster).removeToast();
-        verify(mockSpinner).showSpinner(false);
-    }
-
-    @Test
-    void givenImageTaskFails_whenHandleFileImageChooser_thenOnImageTaskErrorCalled()
-            throws InterruptedException {
-        File validImage = getValidTestImage();
-        assertTrue(validImage.exists());
-        GridPane grid = new GridPane();
-        ToasterVBox mockToaster = mock(ToasterVBox.class);
-        SpinnerGridPane mockSpinner = mock(SpinnerGridPane.class);
-        viewModel = spy(new MenuOptionsViewModel(new AudioService()));
-        CountDownLatch taskFailedLatch = new CountDownLatch(1);
-        CountDownLatch fxRunLaterLatch = new CountDownLatch(1);
-        CountDownLatch spinnerLatch = new CountDownLatch(1); // 👈 Ajouté
-        doAnswer(
-                        invocation -> {
-                            Task<Image> failingTask =
-                                    new Task<>() {
-                                        @Override
-                                        protected Image call() throws Exception {
-                                            throw new RuntimeException("Forced failure");
-                                        }
-                                    };
-                            failingTask.setOnFailed(
-                                    e -> {
-                                        viewModel.onImageTaskError(
-                                                e,
-                                                invocation.getArgument(1),
-                                                invocation.getArgument(2));
-                                        taskFailedLatch.countDown();
-                                    });
-                            Thread thread = new Thread(failingTask);
-                            thread.setDaemon(true);
-                            thread.start();
-                            return null;
-                        })
-                .when(viewModel)
-                .loadBackgroundImage(any(), any(), any(), any());
-        doAnswer(
-                        invocation -> {
-                            fxRunLaterLatch.countDown();
-                            return null;
-                        })
-                .when(mockToaster)
-                .addToast(anyString(), eq("Forced failure"), eq(ToastLevels.ERROR), eq(true));
-        doAnswer(
-                        invocation -> {
-                            spinnerLatch.countDown();
-                            return null;
-                        })
-                .when(mockSpinner)
-                .showSpinner(false);
-        Platform.runLater(
-                () -> viewModel.loadBackgroundImage(validImage, mockToaster, mockSpinner, grid));
-        assertTrue(taskFailedLatch.await(5, TimeUnit.SECONDS), "Timeout waiting for task failure");
-        assertTrue(
-                fxRunLaterLatch.await(5, TimeUnit.SECONDS),
-                "Timeout waiting for addToast in FX thread");
-        assertTrue(
-                spinnerLatch.await(5, TimeUnit.SECONDS),
-                "Timeout waiting for showSpinner(false)"); // ✅
-        verify(mockToaster)
-                .addToast(anyString(), eq("Forced failure"), eq(ToastLevels.ERROR), eq(true));
-        verify(mockSpinner).showSpinner(false); // ✅
-    }
-
-    @Test
     void givenGridPaneAndColor_whenUpdateBackgroundColorAndApply_thenOptionsColorIsSet() {
         GridPane grid = new GridPane();
         Color color = Color.web("#12345678");
@@ -280,26 +177,22 @@ class MenuOptionsViewModelUTest {
         assertEquals(color, fills.getFirst().getFill(), "Options color should match expected");
     }
 
-    private File getValidTestImage() {
-        try {
-            URL resourceUrl =
-                    Objects.requireNonNull(
-                            SudoMain.class.getResource(LOGO_SUDO_PNG_PATH.getPath()));
-            return new File(resourceUrl.toURI());
-        } catch (Exception e) {
-            throw new RuntimeException("Could not load test image", e);
-        }
-    }
-
     @Test
-    void givenNullFile_whenHandleFileImageChooser_thenShowErrorToast() {
-        MenuOptionsViewModel myViewModel = spy(new MenuOptionsViewModel(new AudioService()));
+    void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast() {
         ToasterVBox toasterMock = mock(ToasterVBox.class);
         SpinnerGridPane spinnerMock = mock(SpinnerGridPane.class);
-        GridPane sudokuFXAlt = new GridPane();
-        String expectedErrorKey = "toast.error.optionsviewmodel.handlefileimagechooser";
-        String expectedMessage = I18n.INSTANCE.getValue(expectedErrorKey);
-        myViewModel.loadBackgroundImage(null, toasterMock, spinnerMock, sudokuFXAlt);
-        verify(toasterMock).addToast(expectedMessage, "", ToastLevels.ERROR, true);
+        GridPane grid = new GridPane();
+        AsyncFileProcessorService asyncServiceMock = mock(AsyncFileProcessorService.class);
+        MenuOptionsViewModel viewModel =
+                new MenuOptionsViewModel(new AudioService(), asyncServiceMock);
+        viewModel.loadBackgroundImage(null, toasterMock, spinnerMock, grid);
+        verify(toasterMock)
+                .addToast(
+                        I18n.INSTANCE.getValue(
+                                "toast.error.optionsviewmodel.handlefileimagechooser"),
+                        "",
+                        ToastLevels.ERROR,
+                        true);
+        verifyNoInteractions(asyncServiceMock);
     }
 }

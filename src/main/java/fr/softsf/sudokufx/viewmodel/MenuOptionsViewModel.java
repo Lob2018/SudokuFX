@@ -15,8 +15,6 @@ import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
-import javafx.concurrent.Task;
-import javafx.concurrent.WorkerStateEvent;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
@@ -33,6 +31,7 @@ import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
+import fr.softsf.sudokufx.service.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
@@ -51,6 +50,7 @@ public class MenuOptionsViewModel {
     private static final int HEX_RADIX = 16;
 
     private final AudioService audioService;
+    private final AsyncFileProcessorService asyncFileProcessorService;
     private final ImageUtils imageUtils;
 
     private static final String ROLE_CLOSED = "menu.accessibility.role.description.closed";
@@ -101,9 +101,11 @@ public class MenuOptionsViewModel {
     private static final String ICON_MUTE_ON = "\ue050";
     private static final String ICON_MUTE_OFF = "\ue04f";
 
-    public MenuOptionsViewModel(AudioService audioService) {
+    public MenuOptionsViewModel(
+            AudioService audioService, AsyncFileProcessorService asyncFileProcessorService) {
         this.imageUtils = new ImageUtils();
         this.audioService = audioService;
+        this.asyncFileProcessorService = asyncFileProcessorService;
         optionsMenuMaxiAccessibleText =
                 createStringBinding("menu.maxi.button.options.accessibility");
         optionsMenuMaxiTooltip =
@@ -455,24 +457,70 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Handles image file selection by validating the file format and starting the image loading
-     * process.
+     * Loads a background image asynchronously and applies it to the specified GridPane.
      *
-     * @param selectedFile The selected image file.
-     * @param toaster The toaster component for user notifications.
-     * @param spinner The spinner component to indicate loading.
-     * @param sudokuFX The GridPane where the background image will be applied.
+     * <p>The method performs the following steps:
+     *
+     * <ul>
+     *   <li>Validates that the selected file is a non-null, valid image.
+     *   <li>If invalid, logs an error and shows an error toast via the provided {@link
+     *       ToasterVBox}.
+     *   <li>If valid, delegates the asynchronous loading, resizing, and conversion to {@link
+     *       AsyncFileProcessorService}.
+     *   <li>On success, sets the resulting {@link BackgroundImage} on the provided {@link
+     *       GridPane}.
+     *   <li>On failure, logs the exception and displays an error toast via {@link ToasterVBox}.
+     * </ul>
+     *
+     * <p>The asynchronous processing ensures that the UI thread is not blocked during image loading
+     * and resizing.
+     *
+     * @param selectedFile the image file to load; must not be null
+     * @param toaster the toaster component for displaying messages; must not be null
+     * @param spinner the spinner component to indicate loading; must not be null
+     * @param sudokuFX the GridPane where the background image will be applied; must not be null
      */
     public void loadBackgroundImage(
             File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
-        if (selectedFile != null && imageUtils.isValidImage(selectedFile)) {
-            loadImage(selectedFile, toaster, spinner, sudokuFX);
-        } else {
+        if (selectedFile == null || !imageUtils.isValidImage(selectedFile)) {
             String errorMessage =
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
             LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
             toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+            return;
         }
+        asyncFileProcessorService.processFileAsync(
+                selectedFile,
+                spinner,
+                toaster,
+                file -> {
+                    ImageMeta meta = imageUtils.getImageMeta(file);
+                    Image resizedImage =
+                            new Image(
+                                    file.toURI().toString(),
+                                    meta.width() * meta.scaleFactor(),
+                                    meta.height() * meta.scaleFactor(),
+                                    true,
+                                    true);
+                    return imageUtils.createBackgroundImage(resizedImage);
+                },
+                backgroundImage -> sudokuFX.setBackground(new Background(backgroundImage)),
+                ex ->
+                        Platform.runLater(
+                                () -> {
+                                    toaster.removeToast();
+                                    LOG.error(
+                                            "██ Exception onImageTaskError : {}",
+                                            ex.getMessage(),
+                                            ex);
+                                    toaster.addToast(
+                                            I18n.INSTANCE.getValue(
+                                                    "toast.error.optionsviewmodel.ontaskerror"),
+                                            Objects.toString(ex.getMessage(), ""),
+                                            ToastLevels.ERROR,
+                                            true);
+                                    spinner.showSpinner(false);
+                                }));
     }
 
     /**
@@ -488,119 +536,6 @@ public class MenuOptionsViewModel {
                 imageUtils.intToColor(Integer.parseUnsignedInt(colorValueFromModel, HEX_RADIX));
         menuOptionsButtonColor.setValue(color);
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
-    }
-
-    /**
-     * Starts the asynchronous image loading and resizing task.
-     *
-     * <p>The task runs on a separate daemon thread, so it does not block application shutdown.
-     *
-     * @param selectedFile The selected image file.
-     * @param toaster The toaster component for user notifications.
-     * @param spinner The spinner component to indicate loading.
-     * @param sudokuFX The GridPane where the background image will be applied.
-     */
-    private void loadImage(
-            File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
-        String fileUri = selectedFile.toURI().toString();
-        spinner.showSpinner(true);
-        toaster.addToast(
-                I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.loadImage"),
-                fileUri,
-                ToastLevels.INFO,
-                false);
-        Task<BackgroundImage> backgroundTask =
-                new Task<>() {
-                    @Override
-                    protected BackgroundImage call() {
-                        try {
-                            ImageMeta meta = imageUtils.getImageMeta(selectedFile);
-                            Image resizedImage =
-                                    new Image(
-                                            fileUri,
-                                            meta.width() * meta.scaleFactor(),
-                                            meta.height() * meta.scaleFactor(),
-                                            true,
-                                            true);
-                            if (resizedImage.isError()) {
-                                LOG.error(
-                                        "██ Exception resizedImage.isError() : {}",
-                                        resizedImage.getException().getMessage(),
-                                        resizedImage.getException());
-                                return null;
-                            }
-                            return imageUtils.createBackgroundImage(resizedImage);
-                        } catch (Exception e) {
-                            LOG.error("██ Exception loadImage call() : {}", e.getMessage(), e);
-                            return null;
-                        }
-                    }
-                };
-        backgroundTask.setOnSucceeded(
-                e -> onImageTaskComplete(backgroundTask, toaster, spinner, sudokuFX));
-        backgroundTask.setOnFailed(e -> onImageTaskError(e, toaster, spinner));
-        Thread loaderThread = new Thread(backgroundTask, "ImageLoaderThread");
-        loaderThread.setDaemon(true);
-        loaderThread.start();
-    }
-
-    /**
-     * Called upon successful completion of the image loading task. Applies the loaded background
-     * image or shows an error toast if loading failed.
-     *
-     * @param backgroundTask The completed background task.
-     * @param toaster The toaster component for user notifications.
-     * @param spinner The spinner component to hide loading state.
-     * @param sudokuFX The GridPane where the background image will be applied.
-     */
-    private void onImageTaskComplete(
-            Task<BackgroundImage> backgroundTask,
-            ToasterVBox toaster,
-            SpinnerGridPane spinner,
-            GridPane sudokuFX) {
-        Platform.runLater(
-                () -> {
-                    toaster.removeToast();
-                    BackgroundImage backgroundImage = backgroundTask.getValue();
-                    if (backgroundImage != null) {
-                        // TODO: SERVICE SET
-                        sudokuFX.setBackground(new Background(backgroundImage));
-                    } else {
-                        toaster.addToast(
-                                I18n.INSTANCE.getValue(
-                                        "toast.error.optionsviewmodel.onimagetaskcomplete"),
-                                "",
-                                ToastLevels.ERROR,
-                                true);
-                    }
-                    spinner.showSpinner(false);
-                });
-    }
-
-    /**
-     * Called when the image loading task fails. Logs the error and shows an error toast to the
-     * user.
-     *
-     * @param e The failure event.
-     * @param toaster The toaster component for user notifications.
-     * @param spinner The spinner component to hide loading state.
-     */
-    void onImageTaskError(WorkerStateEvent e, ToasterVBox toaster, SpinnerGridPane spinner) {
-        Throwable exception = e.getSource().getException();
-        Platform.runLater(
-                () -> {
-                    toaster.removeToast();
-                    LOG.error(
-                            "██ Exception onImageTaskError : {}",
-                            exception.getMessage(),
-                            exception);
-                    toaster.addToast(
-                            I18n.INSTANCE.getValue("toast.error.optionsviewmodel.onimagetaskerror"),
-                            Objects.toString(exception.getMessage(), ""),
-                            ToastLevels.ERROR,
-                            true);
-                    spinner.showSpinner(false);
-                });
     }
 
     /**
