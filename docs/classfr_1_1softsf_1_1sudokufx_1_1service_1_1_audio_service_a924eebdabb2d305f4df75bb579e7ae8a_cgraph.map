@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.service.AudioService.setMuted" name="fr.softsf.sudokufx.service.AudioService.setMuted">
+<area shape="rect" id="Node000001" title="Sets the muted state." alt="" coords="5,39,179,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#abf3cec553a5629152a7c5dc671dc1818" title="Mutes all audio (song and effects)." alt="" coords="227,5,400,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,44,211,39,212,45,180,50"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#a398299b2c1c3073698879199b22bb3e2" title="Unmutes all audio and restores original volumes." alt="" coords="227,72,400,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,70,212,75,211,81,179,76"/>
+</map>

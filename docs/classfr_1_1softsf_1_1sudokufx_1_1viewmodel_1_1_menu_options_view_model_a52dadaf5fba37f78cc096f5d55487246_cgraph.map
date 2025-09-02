@@ -1,9 +1,11 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init">
-<area shape="rect" id="Node000001" title="Initializes the GridPane background with settings from database." alt="" coords="5,113,199,156"/>
+<area shape="rect" id="Node000001" title="Initializes the menu options UI state, including:" alt="" coords="5,151,199,193"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a43fcea970a99cbb2545c33f08e29f6b3" title="Handles image file selection by validating the file format and starting the image loading process." alt="" coords="256,68,518,127"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,119,240,114,241,119,200,125"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a3b1dee2b684cd6f89f245ff46623b8a5" title="Applies a background color to the GridPane and sets it in the ColorPicker." alt="" coords="247,151,527,193"/>
-<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="200,145,232,149,231,154,199,150"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,147,257,128,259,134,187,153"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a98801adb4b71828d30800245efab045a" title="Configures the audio service and updates the ViewModel mute property." alt="" coords="264,151,510,193"/>
+<area shape="poly" id="edge20_Node000001_Node000014" title=" " alt="" coords="199,169,248,169,248,175,199,175"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a3b1dee2b684cd6f89f245ff46623b8a5" title="Applies a background color to the GridPane and sets it in the ColorPicker." alt="" coords="247,217,527,260"/>
+<area shape="poly" id="edge21_Node000001_Node000015" title=" " alt="" coords="197,191,279,211,277,216,196,197"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="1170,72,1439,115"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="518,90,796,82,1122,83,1154,84,1154,89,1122,88,796,88,518,95"/>
 <area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a19f6173dce7259d796c9688cf534ac01" title="Starts the asynchronous image loading and resizing task." alt="" coords="575,135,801,177"/>

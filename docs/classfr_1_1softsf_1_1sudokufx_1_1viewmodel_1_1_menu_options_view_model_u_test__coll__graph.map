@@ -1,19 +1,21 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="244,2465,549,2993"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="6,609,243,2401"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="245,2355,258,2401,273,2449,268,2450,252,2402,240,2357"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="5,124,243,545"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="127,545,127,592,122,592,122,545"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="267,1156,526,1855"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="399,1855,399,2449,394,2449,394,1855"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="282,300,324,369"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="309,384,371,1156,366,1156,304,384"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="348,255,607,415"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="475,415,424,1139,419,1139,470,414"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="453,5,502,75"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="480,89,480,255,475,255,475,89"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html" title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons." alt="" coords="550,1396,805,1615"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="672,1615,657,1771,631,1968,593,2186,568,2296,540,2402,525,2450,520,2448,535,2401,563,2294,587,2185,626,1967,651,1770,667,1614"/>
-<area shape="rect" id="Node000009" title=" " alt="" coords="645,300,710,369"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="680,384,680,1396,675,1396,675,384"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="470,2844,775,3372"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="232,785,469,2780"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="471,2733,484,2779,498,2827,493,2829,478,2781,466,2734"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="5,124,215,721"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="165,721,232,1094,226,1095,160,721"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="239,212,477,633"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="360,633,359,768,354,768,354,633"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="493,1433,752,2132"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="625,2132,625,2827,620,2827,620,2132"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="516,388,558,457"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="543,472,603,1433,598,1434,537,472"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="582,343,841,503"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="709,503,649,1416,644,1416,704,502"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="687,5,736,75"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="714,89,714,343,709,343,709,89"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html" title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons." alt="" coords="776,1673,1031,1892"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="901,1892,887,2064,862,2287,823,2535,797,2659,766,2781,751,2829,746,2827,761,2779,792,2658,818,2534,857,2287,882,2064,895,1891"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="871,388,936,457"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="906,472,906,1674,901,1674,901,472"/>
 </map>

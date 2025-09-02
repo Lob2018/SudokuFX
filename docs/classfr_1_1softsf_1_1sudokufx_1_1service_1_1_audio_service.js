@@ -5,6 +5,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service =
     [ "playEffect", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#a93d73dd21ea011d3b12a22a98d1f5688", null ],
     [ "playSong", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#a48c4ab2fbc2f753738faa7c5f1602b45", null ],
     [ "setEffectVolume", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#a948143d1dd78d607e78db6e0b454d2fe", null ],
+    [ "setMuted", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#a924eebdabb2d305f4df75bb579e7ae8a", null ],
     [ "setSongVolume", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#a9ff6b556d3f0745d9cb234e94fa1fb34", null ],
     [ "stopAll", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#a5482bebbc5ca1194abfef92940224872", null ],
     [ "stopSong", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html#acc3975c3eb2f43575343b1ae71aa252a", null ],

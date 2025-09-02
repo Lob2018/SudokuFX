@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel">
-<area shape="rect" id="Node000001" title="ViewModel component managing a 9x9 Sudoku grid." alt="" coords="81,645,377,1147"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu." alt="" coords="5,208,218,363"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,362,128,484,148,621,150,628,144,629,143,622,122,485,112,363"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="243,5,453,565"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="331,565,321,622,319,629,314,628,316,621,326,564"/>
+<area shape="rect" id="Node000001" title="ViewModel component managing a 9x9 Sudoku grid." alt="" coords="81,683,377,1184"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu." alt="" coords="5,227,218,381"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,381,127,511,148,658,149,666,144,667,143,659,122,512,112,381"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="243,5,453,603"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="331,603,321,659,319,666,314,665,316,658,325,602"/>
 </map>
