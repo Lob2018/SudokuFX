@@ -24,8 +24,6 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -417,7 +415,7 @@ public class MenuOptionsViewModel {
      * @param toaster The toaster component for user notifications during image loading
      * @param spinner The spinner component to indicate loading state
      * @see #setColorFromModel(GridPane, ColorPicker, String)
-     * @see #handleFileImageChooser(File, ToasterVBox, SpinnerGridPane, GridPane)
+     * @see #loadBackgroundImage(File, ToasterVBox, SpinnerGridPane, GridPane)
      */
     public void init(
             GridPane sudokuFX,
@@ -428,7 +426,7 @@ public class MenuOptionsViewModel {
         // IF COLOR
         setColorFromModel(sudokuFX, menuOptionsButtonColor, "99b3ffcd");
         // IF IMAGE
-        handleFileImageChooser(new File("C:\\Users"), toaster, spinner, sudokuFX);
+        loadBackgroundImage(new File("C:\\Users"), toaster, spinner, sudokuFX);
         // IF GRID ISOPAQUE
         gridOpacityProperty.set(true);
         // IF MUTE ISMUTED
@@ -457,42 +455,6 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Opens file chooser dialog for background image selection.
-     *
-     * @param primaryStage parent stage for the dialog
-     * @return selected image file or null if cancelled/error
-     */
-    public File chooseBackgroundImage(Stage primaryStage) {
-        try {
-            FileChooser fileChooser = createImageFileChooser();
-            return fileChooser.showOpenDialog(primaryStage);
-        } catch (Exception e) {
-            LOG.error("Error choosing background image: {}", e.getMessage(), e);
-            return null;
-        }
-    }
-
-    /**
-     * Creates configured FileChooser for image files.
-     *
-     * @return FileChooser with image filters and home directory set
-     */
-    private FileChooser createImageFileChooser() {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser
-                .getExtensionFilters()
-                .add(
-                        new FileChooser.ExtensionFilter(
-                                I18n.INSTANCE.getValue("filechooser.extension"),
-                                "*.jpg",
-                                "*.jpeg",
-                                "*.png",
-                                "*.bmp"));
-        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
-        return fileChooser;
-    }
-
-    /**
      * Handles image file selection by validating the file format and starting the image loading
      * process.
      *
@@ -501,7 +463,7 @@ public class MenuOptionsViewModel {
      * @param spinner The spinner component to indicate loading.
      * @param sudokuFX The GridPane where the background image will be applied.
      */
-    public void handleFileImageChooser(
+    public void loadBackgroundImage(
             File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
         if (selectedFile != null && imageUtils.isValidImage(selectedFile)) {
             loadImage(selectedFile, toaster, spinner, sudokuFX);

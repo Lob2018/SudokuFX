@@ -165,7 +165,7 @@ class MenuOptionsViewModelUTest {
     @Test
     void givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated() {
         MenuOptionsViewModel spyViewModel = spy(viewModel);
-        doNothing().when(spyViewModel).handleFileImageChooser(any(), any(), any(), any());
+        doNothing().when(spyViewModel).loadBackgroundImage(any(), any(), any(), any());
         spyViewModel.init(sudokuFX, colorPicker, toaster, spinner);
         Color expectedColor = Color.rgb(153, 179, 255, 0.803921568627451);
         assertEquals(expectedColor, colorPicker.getValue());
@@ -192,7 +192,7 @@ class MenuOptionsViewModelUTest {
                                             latch.countDown();
                                         }
                                     });
-                    viewModel.handleFileImageChooser(validImage, mockToaster, mockSpinner, grid);
+                    viewModel.loadBackgroundImage(validImage, mockToaster, mockSpinner, grid);
                 });
         assertTrue(latch.await(5, TimeUnit.SECONDS), "Timeout waiting for background to be set");
         Background background = grid.getBackground();
@@ -239,7 +239,7 @@ class MenuOptionsViewModelUTest {
                             return null;
                         })
                 .when(viewModel)
-                .handleFileImageChooser(any(), any(), any(), any());
+                .loadBackgroundImage(any(), any(), any(), any());
         doAnswer(
                         invocation -> {
                             fxRunLaterLatch.countDown();
@@ -255,7 +255,7 @@ class MenuOptionsViewModelUTest {
                 .when(mockSpinner)
                 .showSpinner(false);
         Platform.runLater(
-                () -> viewModel.handleFileImageChooser(validImage, mockToaster, mockSpinner, grid));
+                () -> viewModel.loadBackgroundImage(validImage, mockToaster, mockSpinner, grid));
         assertTrue(taskFailedLatch.await(5, TimeUnit.SECONDS), "Timeout waiting for task failure");
         assertTrue(
                 fxRunLaterLatch.await(5, TimeUnit.SECONDS),
@@ -299,7 +299,7 @@ class MenuOptionsViewModelUTest {
         GridPane sudokuFXAlt = new GridPane();
         String expectedErrorKey = "toast.error.optionsviewmodel.handlefileimagechooser";
         String expectedMessage = I18n.INSTANCE.getValue(expectedErrorKey);
-        myViewModel.handleFileImageChooser(null, toasterMock, spinnerMock, sudokuFXAlt);
+        myViewModel.loadBackgroundImage(null, toasterMock, spinnerMock, sudokuFXAlt);
         verify(toasterMock).addToast(expectedMessage, "", ToastLevels.ERROR, true);
     }
 }

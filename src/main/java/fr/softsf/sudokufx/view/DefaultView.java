@@ -5,7 +5,6 @@
  */
 package fr.softsf.sudokufx.view;
 
-import java.io.File;
 import java.util.Objects;
 import javafx.animation.FadeTransition;
 import javafx.animation.KeyFrame;
@@ -53,6 +52,7 @@ import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.service.AudioService;
+import fr.softsf.sudokufx.service.FileChooserService;
 import fr.softsf.sudokufx.view.component.MyAlert;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
@@ -101,6 +101,7 @@ public final class DefaultView implements IMainView {
     @Autowired private MenuNewViewModel menuNewViewModel;
     @Autowired private GridViewModel gridViewModel;
     @Autowired private AudioService audioService;
+    @Autowired private FileChooserService fileChooserService;
 
     @FXML private ToasterVBox toaster;
     @FXML private SpinnerGridPane spinner;
@@ -964,15 +965,17 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Handles background image selection from file chooser. Opens file dialog and applies selected
-     * image if valid.
+     * Opens a file chooser for a background image and passes the selected file to the ViewModel for
+     * asynchronous loading.
      */
     @FXML
     private void handleFileImageChooser() {
-        File selectedFile = menuOptionsViewModel.chooseBackgroundImage(primaryStage);
-        if (Objects.nonNull(selectedFile)) {
-            menuOptionsViewModel.handleFileImageChooser(selectedFile, toaster, spinner, sudokuFX);
-        }
+        fileChooserService
+                .chooseFile(primaryStage, FileChooserService.FileType.IMAGE)
+                .ifPresent(
+                        file ->
+                                menuOptionsViewModel.loadBackgroundImage(
+                                        file, toaster, spinner, sudokuFX));
     }
 
     /** Handles grid transparency toggle button action. */
