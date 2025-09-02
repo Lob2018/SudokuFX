@@ -310,7 +310,7 @@ public final class DefaultView implements IMainView {
 
     /**
      * Initializes and binds all UI components of the options menu to the {@link
-     * menuOptionsViewModel}. Loads saved options from the database and applies them to the
+     * MenuOptionsViewModel}. Loads saved options from the database and applies them to the
      * corresponding UI controls.
      *
      * <p>This method performs the following tasks:
