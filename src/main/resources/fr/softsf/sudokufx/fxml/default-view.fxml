@@ -631,7 +631,21 @@
                     </tooltip>
                 </Button>
             </HBox>
-            <Region styleClass="menuMiniButton" visible="false"/>
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Region styleClass="submenuIndentation" visible="false"/>
+                <Button fx:id="menuOptionsButtonMute" styleClass="menuButton" onAction="#handleMute">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Region styleClass="menuDropdownOpen" visible="false"/>
+                            <Text fx:id="menuOptionsButtonMuteIcon" styleClass="material"/>
+                            <Label fx:id="menuOptionsButtonMuteText" styleClass="root,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+            </HBox>
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>

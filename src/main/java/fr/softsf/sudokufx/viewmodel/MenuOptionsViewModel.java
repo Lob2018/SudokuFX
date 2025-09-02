@@ -35,6 +35,7 @@ import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
+import fr.softsf.sudokufx.service.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 
@@ -51,6 +52,7 @@ public class MenuOptionsViewModel {
     private static final Logger LOG = LoggerFactory.getLogger(MenuOptionsViewModel.class);
     private static final int HEX_RADIX = 16;
 
+    private final AudioService audioService;
     private final ImageUtils imageUtils;
 
     private static final String ROLE_CLOSED = "menu.accessibility.role.description.closed";
@@ -77,6 +79,10 @@ public class MenuOptionsViewModel {
     private final StringBinding optionsImageRoleDescription;
     private final StringBinding optionsImageText;
 
+    private final StringBinding optionsColorAccessibleText;
+    private final StringBinding optionsColorTooltip;
+    private final StringBinding optionsColorRoleDescription;
+
     private final BooleanProperty gridOpacityProperty = new SimpleBooleanProperty(false);
     private final StringBinding optionsOpacityAccessibleText;
     private final StringBinding optionsOpacityTooltip;
@@ -87,12 +93,19 @@ public class MenuOptionsViewModel {
     private static final String ICON_OPACITY_ON = "\ue891";
     private static final String ICON_OPACITY_OFF = "\ue0c4";
 
-    private final StringBinding optionsColorAccessibleText;
-    private final StringBinding optionsColorTooltip;
-    private final StringBinding optionsColorRoleDescription;
+    private final BooleanProperty muteProperty = new SimpleBooleanProperty(true);
+    private final StringBinding optionsMuteAccessibleText;
+    private final StringBinding optionsMuteTooltip;
+    private final StringBinding optionsMuteRoleDescription;
+    private final StringBinding optionsMuteText;
+    private final StringBinding optionsMuteIcon;
 
-    public MenuOptionsViewModel() {
+    private static final String ICON_MUTE_ON = "\ue050";
+    private static final String ICON_MUTE_OFF = "\ue04f";
+
+    public MenuOptionsViewModel(AudioService audioService) {
         this.imageUtils = new ImageUtils();
+        this.audioService = audioService;
         optionsMenuMaxiAccessibleText =
                 createStringBinding("menu.maxi.button.options.accessibility");
         optionsMenuMaxiTooltip =
@@ -114,6 +127,11 @@ public class MenuOptionsViewModel {
                         "menu.options.button.image.accessibility", ROLE_SUBMENU_OPTION);
         optionsImageRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
         optionsImageText = createStringBinding("menu.options.button.image.text");
+        optionsColorAccessibleText = createStringBinding("menu.options.button.color.accessibility");
+        optionsColorTooltip =
+                createFormattedBinding(
+                        "menu.options.button.color.accessibility", ROLE_SUBMENU_OPTION);
+        optionsColorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
         optionsOpacityAccessibleText =
                 createFormattedBinding(
                         "menu.options.button.opacity.accessibility",
@@ -135,11 +153,27 @@ public class MenuOptionsViewModel {
                 Bindings.createStringBinding(
                         () -> gridOpacityProperty.get() ? ICON_OPACITY_ON : ICON_OPACITY_OFF,
                         gridOpacityProperty);
-        optionsColorAccessibleText = createStringBinding("menu.options.button.color.accessibility");
-        optionsColorTooltip =
+
+        optionsMuteAccessibleText =
                 createFormattedBinding(
-                        "menu.options.button.color.accessibility", ROLE_SUBMENU_OPTION);
-        optionsColorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+                        "menu.options.button.mute.accessibility",
+                        () -> muteInfo(muteProperty.get()),
+                        muteProperty);
+        optionsMuteTooltip =
+                createFormattedAndConcatenatedBinding(
+                        "menu.options.button.mute.accessibility",
+                        () -> muteInfo(muteProperty.get()),
+                        ROLE_SUBMENU_OPTION,
+                        muteProperty);
+        optionsMuteRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        optionsMuteText =
+                Bindings.createStringBinding(
+                        () -> muteText(muteProperty.get()),
+                        muteProperty,
+                        I18n.INSTANCE.localeProperty());
+        optionsMuteIcon =
+                Bindings.createStringBinding(
+                        () -> muteProperty.get() ? ICON_MUTE_ON : ICON_MUTE_OFF, muteProperty);
     }
 
     /**
@@ -154,6 +188,37 @@ public class MenuOptionsViewModel {
                         ? "menu.options.button.opacity.text.opaque"
                         : "menu.options.button.opacity.text.transparent";
         return I18n.INSTANCE.getValue(stateKey);
+    }
+
+    /**
+     * Returns the localized text corresponding to the mute state.
+     *
+     * @param isMuted true for "muted" audio, false for "unmuted" audio
+     * @return localized string for the given mute state
+     */
+    private String muteText(boolean isMuted) {
+        String stateKey =
+                isMuted
+                        ? "menu.options.button.mute.text.muted"
+                        : "menu.options.button.mute.text.unmuted";
+        return I18n.INSTANCE.getValue(stateKey);
+    }
+
+    /**
+     * Returns the localized information about the current mute state.
+     *
+     * <p>This text is intended for tooltips or accessibility purposes, indicating whether the audio
+     * is currently muted or unmuted.
+     *
+     * @param isMuted true if audio is currently muted, false if unmuted
+     * @return localized string representing the current audio state
+     */
+    private String muteInfo(boolean isMuted) {
+        String key =
+                isMuted
+                        ? "menu.options.button.mute.text.muted.info"
+                        : "menu.options.button.mute.text.unmuted.info";
+        return I18n.INSTANCE.getValue(key);
     }
 
     /**
@@ -285,6 +350,18 @@ public class MenuOptionsViewModel {
         return optionsImageText;
     }
 
+    public StringBinding optionsColorAccessibleTextProperty() {
+        return optionsColorAccessibleText;
+    }
+
+    public StringBinding optionsColorTooltipProperty() {
+        return optionsColorTooltip;
+    }
+
+    public StringBinding optionsColorRoleDescriptionProperty() {
+        return optionsColorRoleDescription;
+    }
+
     public StringBinding optionsOpacityAccessibleTextProperty() {
         return optionsOpacityAccessibleText;
     }
@@ -305,35 +382,40 @@ public class MenuOptionsViewModel {
         return optionsOpacityIcon;
     }
 
-    public StringBinding optionsColorAccessibleTextProperty() {
-        return optionsColorAccessibleText;
+    public StringBinding optionsMuteAccessibleTextProperty() {
+        return optionsMuteAccessibleText;
     }
 
-    public StringBinding optionsColorTooltipProperty() {
-        return optionsColorTooltip;
+    public StringBinding optionsMuteTooltipProperty() {
+        return optionsMuteTooltip;
     }
 
-    public StringBinding optionsColorRoleDescriptionProperty() {
-        return optionsColorRoleDescription;
+    public StringBinding optionsMuteRoleDescriptionProperty() {
+        return optionsMuteRoleDescription;
+    }
+
+    public StringBinding optionsMuteTextProperty() {
+        return optionsMuteText;
+    }
+
+    public StringBinding optionsMuteIconProperty() {
+        return optionsMuteIcon;
     }
 
     /**
-     * Initializes the GridPane background with settings from database. Loads and applies saved
-     * background configuration including color, image, and grid transparency.
-     *
-     * <p>This method performs the following initialization steps:
+     * Initializes the menu options UI state, including:
      *
      * <ul>
-     *   <li>Retrieves and applies saved background color from database
-     *   <li>Loads and applies saved background image if configured
-     *   <li>Sets grid transparency mode based on user preferences
-     *   <li>Updates UI components (ColorPicker, etc.) with current values
+     *   <li>Background color from database
+     *   <li>Background image if configured
+     *   <li>Grid opacity mode
+     *   <li>Audio mute state
      * </ul>
      *
-     * @param sudokuFX The GridPane to initialize with background settings
-     * @param menuOptionsButtonColor The ColorPicker to sync with current color value
+     * @param sudokuFX The GridPane to apply background settings
+     * @param menuOptionsButtonColor The ColorPicker to synchronize with the current color
      * @param toaster The toaster component for user notifications during image loading
-     * @param spinner The spinner component to indicate loading state during operations
+     * @param spinner The spinner component to indicate loading state
      * @see #setColorFromModel(GridPane, ColorPicker, String)
      * @see #handleFileImageChooser(File, ToasterVBox, SpinnerGridPane, GridPane)
      */
@@ -349,6 +431,18 @@ public class MenuOptionsViewModel {
         handleFileImageChooser(new File("C:\\Users"), toaster, spinner, sudokuFX);
         // IF GRID ISOPAQUE
         gridOpacityProperty.set(true);
+        // IF MUTE ISMUTED
+        initializeAudio(true);
+    }
+
+    /**
+     * Configures the audio service and updates the ViewModel mute property.
+     *
+     * @param muted true to start muted, false for unmuted
+     */
+    private void initializeAudio(boolean muted) {
+        audioService.setMuted(muted);
+        muteProperty.set(muted);
     }
 
     /**
@@ -555,5 +649,12 @@ public class MenuOptionsViewModel {
     public boolean toggleGridOpacity() {
         gridOpacityProperty.set(!gridOpacityProperty.get());
         return gridOpacityProperty.get();
+    }
+
+    /** Toggles the audio mute state. Updates the AudioService and the muteProperty accordingly. */
+    public void toggleMute() {
+        boolean newState = !muteProperty.get();
+        audioService.setMuted(newState);
+        muteProperty.set(newState);
     }
 }

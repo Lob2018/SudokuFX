@@ -188,10 +188,13 @@ public final class DefaultView implements IMainView {
     @FXML private Label menuOptionsButtonOptionsText;
     @FXML private Button menuOptionsButtonImage;
     @FXML private Label menuOptionsButtonImageText;
+    @FXML private ColorPicker menuOptionsButtonColor;
     @FXML private Button menuOptionsButtonOpacity;
     @FXML private Label menuOptionsButtonOpacityText;
     @FXML private Text menuOptionsButtonOpacityIcon;
-    @FXML private ColorPicker menuOptionsButtonColor;
+    @FXML private Button menuOptionsButtonMute;
+    @FXML private Label menuOptionsButtonMuteText;
+    @FXML private Text menuOptionsButtonMuteIcon;
 
     private Timeline hideMiniMenuTimeline;
 
@@ -305,16 +308,19 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Sets up bindings between the options menu UI components and menuOptionsViewModel. Initializes
-     * the options settings from database and applies them to the UI.
+     * Initializes and binds all UI components of the options menu to the {@link
+     * menuOptionsViewModel}. Loads saved options from the database and applies them to the
+     * corresponding UI controls.
      *
-     * <p>This method performs the following operations:
+     * <p>This method performs the following tasks:
      *
      * <ul>
-     *   <li>Binds accessibility texts, tooltips, role descriptions, and labels
-     *   <li>Synchronizes options changes with the ViewModel
-     *   <li>Initializes options settings (color, image, grid transparency, etc.) from database
-     *   <li>Applies initial grid opacity mode to the UI components
+     *   <li>Binds accessibility texts, tooltips, role descriptions, and labels for all options
+     *       buttons.
+     *   <li>Synchronizes user interactions (color selection, opacity adjustment, mute toggle, etc.)
+     *       with the ViewModel.
+     *   <li>Loads and applies saved configuration settings to the UI controls, including background
+     *       color, background image, grid transparency, etc.
      * </ul>
      */
     private void optionsMenuInitialization() {
@@ -367,22 +373,6 @@ public final class DefaultView implements IMainView {
         menuOptionsButtonImage
                 .accessibleRoleDescriptionProperty()
                 .bind(menuOptionsViewModel.optionsImageRoleDescriptionProperty());
-        menuOptionsButtonOpacityText
-                .textProperty()
-                .bind(menuOptionsViewModel.optionsOpacityTextProperty());
-        menuOptionsButtonOpacityIcon
-                .textProperty()
-                .bind(menuOptionsViewModel.optionsOpacityIconProperty());
-        menuOptionsButtonOpacity
-                .accessibleTextProperty()
-                .bind(menuOptionsViewModel.optionsOpacityAccessibleTextProperty());
-        menuOptionsButtonOpacity
-                .getTooltip()
-                .textProperty()
-                .bind(menuOptionsViewModel.optionsOpacityTooltipProperty());
-        menuOptionsButtonOpacity
-                .accessibleRoleDescriptionProperty()
-                .bind(menuOptionsViewModel.optionsOpacityRoleDescriptionProperty());
         menuOptionsButtonColor
                 .accessibleTextProperty()
                 .bind(menuOptionsViewModel.optionsColorAccessibleTextProperty());
@@ -399,6 +389,40 @@ public final class DefaultView implements IMainView {
                         (obs, oldColor, newColor) ->
                                 menuOptionsViewModel.updateOptionsColorAndApply(
                                         sudokuFX, newColor));
+        menuOptionsButtonOpacityText
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsOpacityTextProperty());
+        menuOptionsButtonOpacityIcon
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsOpacityIconProperty());
+        menuOptionsButtonOpacity
+                .accessibleTextProperty()
+                .bind(menuOptionsViewModel.optionsOpacityAccessibleTextProperty());
+        menuOptionsButtonOpacity
+                .getTooltip()
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsOpacityTooltipProperty());
+        menuOptionsButtonOpacity
+                .accessibleRoleDescriptionProperty()
+                .bind(menuOptionsViewModel.optionsOpacityRoleDescriptionProperty());
+
+        menuOptionsButtonMuteText
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsMuteTextProperty());
+        menuOptionsButtonMuteIcon
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsMuteIconProperty());
+        menuOptionsButtonMute
+                .accessibleTextProperty()
+                .bind(menuOptionsViewModel.optionsMuteAccessibleTextProperty());
+        menuOptionsButtonMute
+                .getTooltip()
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsMuteTooltipProperty());
+        menuOptionsButtonMute
+                .accessibleRoleDescriptionProperty()
+                .bind(menuOptionsViewModel.optionsMuteRoleDescriptionProperty());
+
         menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, toaster, spinner);
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
@@ -984,6 +1008,12 @@ public final class DefaultView implements IMainView {
                                                 cell.getStyleClass().remove("opaque-mode");
                                             }
                                         }));
+    }
+
+    /** Called when the mute button is pressed. Toggles the audio mute state via the ViewModel. */
+    @FXML
+    public void handleMute() {
+        menuOptionsViewModel.toggleMute();
     }
 
     /**

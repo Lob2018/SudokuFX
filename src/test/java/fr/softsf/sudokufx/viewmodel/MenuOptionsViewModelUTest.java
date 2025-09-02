@@ -30,6 +30,7 @@ import org.testfx.framework.junit5.ApplicationExtension;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
+import fr.softsf.sudokufx.service.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 
@@ -52,7 +53,7 @@ class MenuOptionsViewModelUTest {
     void setUp() {
         originalLocale = I18n.INSTANCE.localeProperty().get();
         I18n.INSTANCE.setLocaleBundle("FR");
-        viewModel = new MenuOptionsViewModel();
+        viewModel = new MenuOptionsViewModel(new AudioService());
         sudokuFX = new GridPane();
         colorPicker = new ColorPicker();
         toaster = mock(ToasterVBox.class);
@@ -211,7 +212,7 @@ class MenuOptionsViewModelUTest {
         GridPane grid = new GridPane();
         ToasterVBox mockToaster = mock(ToasterVBox.class);
         SpinnerGridPane mockSpinner = mock(SpinnerGridPane.class);
-        viewModel = spy(new MenuOptionsViewModel());
+        viewModel = spy(new MenuOptionsViewModel(new AudioService()));
         CountDownLatch taskFailedLatch = new CountDownLatch(1);
         CountDownLatch fxRunLaterLatch = new CountDownLatch(1);
         CountDownLatch spinnerLatch = new CountDownLatch(1); // 👈 Ajouté
@@ -292,7 +293,7 @@ class MenuOptionsViewModelUTest {
 
     @Test
     void givenNullFile_whenHandleFileImageChooser_thenShowErrorToast() {
-        MenuOptionsViewModel myViewModel = spy(new MenuOptionsViewModel());
+        MenuOptionsViewModel myViewModel = spy(new MenuOptionsViewModel(new AudioService()));
         ToasterVBox toasterMock = mock(ToasterVBox.class);
         SpinnerGridPane spinnerMock = mock(SpinnerGridPane.class);
         GridPane sudokuFXAlt = new GridPane();

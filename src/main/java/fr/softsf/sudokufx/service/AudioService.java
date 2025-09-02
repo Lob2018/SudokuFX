@@ -117,6 +117,15 @@ public class AudioService {
         songPlayer.play();
     }
 
+    /**
+     * Checks if audio is currently muted.
+     *
+     * @return true if all audio is muted
+     */
+    public synchronized boolean isMuted() {
+        return isMuted;
+    }
+
     /** Mutes all audio (song and effects). */
     public synchronized void muteAll() {
         isMuted = true;
@@ -143,12 +152,16 @@ public class AudioService {
     }
 
     /**
-     * Checks if audio is currently muted.
+     * Sets the muted state. Used for initialization from database.
      *
-     * @return true if all audio is muted
+     * @param isMuted true to mute all audio, false to unmute
      */
-    public synchronized boolean isMuted() {
-        return isMuted;
+    public synchronized void setMuted(boolean isMuted) {
+        if (isMuted) {
+            muteAll();
+        } else {
+            unmuteAll();
+        }
     }
 
     /**
