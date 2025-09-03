@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -12,14 +13,20 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
+import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.exception.ResourceLoadException;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
-import fr.softsf.sudokufx.service.AudioService;
+import fr.softsf.sudokufx.service.ui.AudioService;
+import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 
 /**
@@ -29,6 +36,8 @@ import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 @Component
 public class GridViewModel {
 
+    private static final Logger LOG = LoggerFactory.getLogger(GridViewModel.class);
+
     private static final int GRID_SIZE = 9;
     private static final int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(GRID_SIZE * GRID_SIZE);
@@ -36,6 +45,8 @@ public class GridViewModel {
     private final IGridMaster iGridMaster;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     private final AudioService audioService;
+
+    private ToasterVBox toaster;
 
     public GridViewModel(
             IGridMaster iGridMaster,
@@ -47,13 +58,23 @@ public class GridViewModel {
     }
 
     /**
-     * Creates 81 GridCellViewModels with unique ids and grid coordinates. Called once after bean
-     * construction to initialize the grid.
+     * Initializes the 9x9 Sudoku grid by creating 81 {@link GridCellViewModel} instances, each with
+     * a unique ID and coordinates.
      *
-     * <p>Also sets up text change listeners on each cell to automatically verify the grid when in
-     * SOLVE mode or when all cells are completed with one value.
+     * <p>Also sets up listeners on each cell's text property to:
+     *
+     * <ul>
+     *   <li>Automatically verify the grid when in {@code SOLVE} mode or when all cells are
+     *       completed with one value.
+     *   <li>Stop any playing audio otherwise.
+     * </ul>
+     *
+     * <p>This method should be called once after bean construction.
+     *
+     * @param toaster the {@link ToasterVBox} instance for displaying notifications if needed
      */
-    public void init() {
+    public void init(ToasterVBox toaster) {
+        this.toaster = toaster;
         int id = 1;
         for (int row = 0; row < GRID_SIZE; row++) {
             for (int col = 0; col < GRID_SIZE; col++) {
@@ -121,11 +142,20 @@ public class GridViewModel {
         int[] solvedGrid = grilleResolue.solvedGrid();
         int percentage = grilleResolue.possibilityPercentage();
         // TODO Win !
-        //        if (solved && Arrays.equals(grilleInt, solvedGrid)) {
-        //            // Play the song from inMemorPlayer
-        //            audioService.playSong(
-        //                    new File("C:\\USERS"));
-        //        }
+        if (solved && Arrays.equals(grilleInt, solvedGrid)) {
+            // Play the song from inMemorPlayer
+            try {
+                audioService.playSong(new File("C:\\Users"));
+            } catch (ResourceLoadException e) {
+                String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
+                LOG.error("{}: {}", title, e.getMessage(), e);
+                toaster.addToast(
+                        title,
+                        e.getClass().getSimpleName() + ": " + Objects.toString(e.getMessage(), ""),
+                        ToastLevels.ERROR,
+                        true);
+            }
+        }
         System.out.println("\n\nsolvedGrid:" + Arrays.toString(solvedGrid));
         System.out.println("Solved : " + solved + "\nPourcentage : " + percentage + "%\n\n");
     }
