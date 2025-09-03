@@ -27,8 +27,9 @@ public enum ExceptionTools {
      * @return the IllegalArgumentException instance (not thrown)
      */
     public IllegalArgumentException logAndInstantiateIllegalArgument(String message) {
-        IllegalArgumentException exception = new IllegalArgumentException(message);
-        LOG.error("██ Exception : {}", message, exception);
+        String safeMessage = StringUtils.isBlank(message) ? "No message provided" : message;
+        IllegalArgumentException exception = new IllegalArgumentException(safeMessage);
+        LOG.error("██ Exception : {}", safeMessage, exception);
         return exception;
     }
 
