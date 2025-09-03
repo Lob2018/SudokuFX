@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.service;
+package fr.softsf.sudokufx.service.ui;
 
 import java.io.File;
 import java.util.HashMap;
@@ -16,10 +16,10 @@ import javafx.util.Duration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.exception.ResourceLoadException;
 
 /**
  * Service managing audio playback for the application.
@@ -43,45 +43,49 @@ public class AudioService {
      * Plays a short sound effect. Reuses an existing MediaPlayer for the given key if present.
      * Automatically disposes the MediaPlayer after playback.
      *
-     * @param effectFile the sound effect file
-     * @param key a unique identifier for the effect
-     * @throws IllegalArgumentException if effectFile is null
-     * @throws IllegalArgumentException if key is null, empty, or blank
-     * @throws IllegalArgumentException if key is not in the valid effect keys set
-     * @throws IllegalArgumentException if the file URI is invalid
-     * @throws RuntimeException if the media file cannot be loaded or played
+     * <p>The provided {@code effectFile} must not be null. The {@code key} must be one of the
+     * {@link #VALID_EFFECT_KEYS}. The method throws a {@link ResourceLoadException} if the media
+     * file cannot be loaded or played.
+     *
+     * <p>{@code effectFile} is required and cannot be null. {@code key} cannot be null, blank, or
+     * invalid; otherwise an {@link IllegalArgumentException} is thrown.
+     *
+     * @param effectFile the sound effect file; must not be null
+     * @param key a unique identifier for the effect; must be in {@link #VALID_EFFECT_KEYS},
+     *     non-blank
+     * @throws NullPointerException if {@code effectFile} is null
+     * @throws IllegalArgumentException if {@code key} is null, blank, or not in {@link
+     *     #VALID_EFFECT_KEYS}
+     * @throws ResourceLoadException if the media file cannot be loaded or played
      */
-    public synchronized void playEffect(@Nullable File effectFile, String key) {
-        if (Objects.isNull(effectFile)) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "The effectFile mustn't be null");
-        }
+    public synchronized void playEffect(File effectFile, String key) throws ResourceLoadException {
+        Objects.requireNonNull(effectFile, "The effectFile must not be null");
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
-                key, "Key must not be null or blank, but was " + key);
+                key, "Key must not be null or blank");
         if (!VALID_EFFECT_KEYS.contains(key)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "Unknown effect key: " + key);
         }
         MediaPlayer existingPlayer = effectsPlayers.get(key);
         if (existingPlayer == null) {
-            final Media media = new Media(effectFile.toURI().toString());
-            final MediaPlayer player = new MediaPlayer(media);
-            Double storedVolume = originalEffectVolumes.get(key);
-            double volumeToApply = storedVolume != null ? storedVolume : 1.0;
-            originalEffectVolumes.put(key, volumeToApply);
-            if (isMuted) {
-                player.setVolume(0);
-            } else {
-                player.setVolume(volumeToApply);
+            try {
+                Media media = new Media(effectFile.toURI().toString());
+                MediaPlayer player = new MediaPlayer(media);
+                double volume = originalEffectVolumes.getOrDefault(key, 1.0);
+                originalEffectVolumes.put(key, volume);
+                player.setVolume(isMuted ? 0 : volume);
+                player.setOnEndOfMedia(
+                        () -> {
+                            player.dispose();
+                            effectsPlayers.remove(key);
+                            originalEffectVolumes.remove(key);
+                        });
+                effectsPlayers.put(key, player);
+                player.play();
+            } catch (Exception e) {
+                throw ExceptionTools.INSTANCE.logAndInstantiateResourceLoad(
+                        "Failed to play effect " + effectFile.getName(), e);
             }
-            player.setOnEndOfMedia(
-                    () -> {
-                        player.dispose();
-                        effectsPlayers.remove(key);
-                        originalEffectVolumes.remove(key);
-                    });
-            effectsPlayers.put(key, player);
-            player.play();
         } else {
             existingPlayer.stop();
             existingPlayer.seek(Duration.ZERO);
@@ -92,29 +96,29 @@ public class AudioService {
     /**
      * Plays a song in a loop. Stops and disposes any existing song player.
      *
-     * @param songFile the song audio file
-     * @throws IllegalArgumentException if songFile is null
-     * @throws IllegalArgumentException if the file URI is invalid
-     * @throws RuntimeException if the media file cannot be loaded or played
+     * <p>The provided {@code songFile} must not be null. If the file cannot be loaded or played, a
+     * {@link ResourceLoadException} is thrown.
+     *
+     * @param songFile the song audio file; must not be null
+     * @throws NullPointerException if {@code songFile} is null
+     * @throws ResourceLoadException if the media file cannot be loaded or played
      */
-    public synchronized void playSong(@Nullable File songFile) {
-        if (Objects.isNull(songFile)) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "The songFile mustn't be null");
-        }
+    public synchronized void playSong(File songFile) throws ResourceLoadException {
+        Objects.requireNonNull(songFile, "The songFile must not be null");
         if (songPlayer != null) {
             songPlayer.stop();
             songPlayer.dispose();
         }
-        Media media = new Media(songFile.toURI().toString());
-        songPlayer = new MediaPlayer(media);
-        songPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-        if (isMuted) {
-            songPlayer.setVolume(0);
-        } else {
-            songPlayer.setVolume(originalSongVolume);
+        try {
+            Media media = new Media(songFile.toURI().toString());
+            songPlayer = new MediaPlayer(media);
+            songPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+            songPlayer.setVolume(isMuted ? 0 : originalSongVolume);
+            songPlayer.play();
+        } catch (Exception e) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateResourceLoad(
+                    "Failed to play song " + songFile.getName(), e);
         }
-        songPlayer.play();
     }
 
     /**

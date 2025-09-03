@@ -5,6 +5,6 @@
  * explicitly overridden.
  */
 @NonNullApi
-package fr.softsf.sudokufx.service;
+package fr.softsf.sudokufx.service.business;
 
 import org.springframework.lang.NonNullApi;

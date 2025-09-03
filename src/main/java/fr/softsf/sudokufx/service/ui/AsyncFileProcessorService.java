@@ -3,7 +3,7 @@
  * Licensed under the MIT License (MIT).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
-package fr.softsf.sudokufx.service;
+package fr.softsf.sudokufx.service.ui;
 
 import java.io.File;
 import java.util.Objects;
