@@ -31,7 +31,7 @@ import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
-import fr.softsf.sudokufx.service.VersionService;
+import fr.softsf.sudokufx.service.external.VersionService;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;

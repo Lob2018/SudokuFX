@@ -17,7 +17,7 @@ import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.dto.*;
 import fr.softsf.sudokufx.model.Player;
 import fr.softsf.sudokufx.repository.PlayerRepository;
-import fr.softsf.sudokufx.service.PlayerService;
+import fr.softsf.sudokufx.service.business.PlayerService;
 import jakarta.validation.ConstraintViolationException;
 
 import static org.junit.jupiter.api.Assertions.*;

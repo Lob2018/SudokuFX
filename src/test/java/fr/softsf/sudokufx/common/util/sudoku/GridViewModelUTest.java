@@ -18,7 +18,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
-import fr.softsf.sudokufx.service.AudioService;
+import fr.softsf.sudokufx.service.ui.AudioService;
+import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
@@ -37,7 +38,7 @@ class GridViewModelUTest {
                         new GridMaster(new JakartaValidator(null)),
                         new ActiveMenuOrSubmenuViewModel(),
                         new AudioService());
-        viewModel.init();
+        viewModel.init(new ToasterVBox());
     }
 
     @Test

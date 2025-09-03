@@ -19,7 +19,7 @@ import fr.softsf.sudokufx.dto.MenuDto;
 import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
-import fr.softsf.sudokufx.service.PlayerService;
+import fr.softsf.sudokufx.service.business.PlayerService;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;

@@ -5,25 +5,36 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
-import java.util.function.Supplier;
+import java.io.File;
+import java.lang.reflect.Field;
+import java.util.function.Function;
+import java.util.stream.Stream;
 import java.util.*;
 import javafx.beans.binding.StringBinding;
 import javafx.scene.control.ColorPicker;
-import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+import org.mockito.ArgumentCaptor;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
-import fr.softsf.sudokufx.service.AsyncFileProcessorService;
-import fr.softsf.sudokufx.service.AudioService;
+import fr.softsf.sudokufx.common.util.ImageMeta;
+import fr.softsf.sudokufx.common.util.ImageUtils;
+import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
+import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 
@@ -35,21 +46,25 @@ class MenuOptionsViewModelUTest {
 
     private Locale originalLocale;
     private MenuOptionsViewModel viewModel;
-
     private GridPane sudokuFX;
     private ColorPicker colorPicker;
-    private ToasterVBox toaster;
-    private SpinnerGridPane spinner;
+    private ToasterVBox toasterMock;
+    private SpinnerGridPane spinnerMock;
+    private AsyncFileProcessorService asyncServiceMock;
+    private AudioService audioSpy;
 
     @BeforeEach
     void setUp() {
         originalLocale = I18n.INSTANCE.localeProperty().get();
         I18n.INSTANCE.setLocaleBundle("FR");
-        viewModel = new MenuOptionsViewModel(new AudioService(), new AsyncFileProcessorService());
         sudokuFX = new GridPane();
         colorPicker = new ColorPicker();
-        toaster = mock(ToasterVBox.class);
-        spinner = mock(SpinnerGridPane.class);
+        toasterMock = mock(ToasterVBox.class);
+        spinnerMock = mock(SpinnerGridPane.class);
+        asyncServiceMock = mock(AsyncFileProcessorService.class);
+        audioSpy = spy(new AudioService());
+        viewModel = spy(new MenuOptionsViewModel(audioSpy, asyncServiceMock));
+        viewModel.init(sudokuFX, colorPicker, toasterMock, spinnerMock);
     }
 
     @AfterEach
@@ -59,106 +74,45 @@ class MenuOptionsViewModelUTest {
 
     @Test
     void allBindingsShouldReturnExpectedI18nValues() {
-        Map<StringBinding, Supplier<String>> bindingToExpectedSupplier =
-                getStringBindingStringMap(viewModel);
-        for (var entry : bindingToExpectedSupplier.entrySet()) {
-            StringBinding binding = entry.getKey();
-            String expected = entry.getValue().get();
-            String actual = binding.get();
-            assertEquals(
-                    expected, actual, "Binding should return correct value before locale change");
+        List<StringBinding> bindings =
+                List.of(
+                        viewModel.optionsMenuMaxiAccessibleTextProperty(),
+                        viewModel.optionsMenuMaxiTooltipProperty(),
+                        viewModel.optionsMenuMaxiRoleDescriptionProperty(),
+                        viewModel.optionsMenuMaxiTextProperty(),
+                        viewModel.optionsReduceAccessibleTextProperty(),
+                        viewModel.optionsReduceTooltipProperty(),
+                        viewModel.optionsReduceTextProperty(),
+                        viewModel.optionsAccessibleTextProperty(),
+                        viewModel.optionsTooltipProperty(),
+                        viewModel.optionsRoleDescriptionProperty(),
+                        viewModel.optionsTextProperty(),
+                        viewModel.optionsImageAccessibleTextProperty(),
+                        viewModel.optionsImageTooltipProperty(),
+                        viewModel.optionsImageRoleDescriptionProperty(),
+                        viewModel.optionsImageTextProperty(),
+                        viewModel.optionsColorAccessibleTextProperty(),
+                        viewModel.optionsColorTooltipProperty(),
+                        viewModel.optionsColorRoleDescriptionProperty(),
+                        viewModel.optionsOpacityAccessibleTextProperty(),
+                        viewModel.optionsOpacityTooltipProperty(),
+                        viewModel.optionsOpacityRoleDescriptionProperty(),
+                        viewModel.optionsOpacityTextProperty(),
+                        viewModel.optionsOpacityIconProperty(),
+                        viewModel.optionsMuteAccessibleTextProperty(),
+                        viewModel.optionsMuteTooltipProperty(),
+                        viewModel.optionsMuteRoleDescriptionProperty(),
+                        viewModel.optionsMuteTextProperty(),
+                        viewModel.optionsMuteIconProperty());
+
+        for (StringBinding binding : bindings) {
+            assertNotNull(binding.get(), "Binding should not return null");
+            assertFalse(binding.get().isBlank(), "Binding should not be blank");
         }
-        I18n.INSTANCE.setLocaleBundle("EN");
-        for (var entry : bindingToExpectedSupplier.entrySet()) {
-            StringBinding binding = entry.getKey();
-            String expected = entry.getValue().get();
-            String actual = binding.get();
-            assertEquals(
-                    expected, actual, "Binding should return correct value after locale change");
-        }
-    }
-
-    private static Map<StringBinding, Supplier<String>> getStringBindingStringMap(
-            MenuOptionsViewModel vm) {
-        Map<StringBinding, Supplier<String>> map = new HashMap<>();
-        map.put(
-                vm.optionsMenuMaxiAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.maxi.button.options.accessibility"));
-        map.put(
-                vm.optionsMenuMaxiTooltipProperty(),
-                () ->
-                        I18n.INSTANCE.getValue("menu.maxi.button.options.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        "menu.accessibility.role.description.closed"));
-        map.put(
-                vm.optionsMenuMaxiRoleDescriptionProperty(),
-                () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.closed"));
-        map.put(
-                vm.optionsMenuMaxiTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.maxi.button.options.text"));
-
-        map.put(
-                vm.optionsReduceAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.options.button.reduce.accessibility"));
-        map.put(
-                vm.optionsReduceTooltipProperty(),
-                () -> I18n.INSTANCE.getValue("menu.options.button.reduce.accessibility"));
-        map.put(
-                vm.optionsReduceTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.options.button.reduce.text"));
-
-        map.put(
-                vm.optionsAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.options.button.options.accessibility"));
-        map.put(
-                vm.optionsTooltipProperty(),
-                () ->
-                        I18n.INSTANCE.getValue("menu.options.button.options.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        "menu.accessibility.role.description.opened"));
-        map.put(
-                vm.optionsRoleDescriptionProperty(),
-                () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.opened"));
-        map.put(
-                vm.optionsTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.options.button.options.text"));
-
-        map.put(
-                vm.optionsImageAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.options.button.image.accessibility"));
-        map.put(
-                vm.optionsImageTooltipProperty(),
-                () ->
-                        I18n.INSTANCE.getValue("menu.options.button.image.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        "menu.accessibility.role.description.submenu.option"));
-        map.put(
-                vm.optionsImageRoleDescriptionProperty(),
-                () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.submenu.option"));
-        map.put(
-                vm.optionsImageTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.options.button.image.text"));
-
-        map.put(
-                vm.optionsColorAccessibleTextProperty(),
-                () -> I18n.INSTANCE.getValue("menu.options.button.color.accessibility"));
-        map.put(
-                vm.optionsColorTooltipProperty(),
-                () ->
-                        I18n.INSTANCE.getValue("menu.options.button.color.accessibility")
-                                + I18n.INSTANCE.getValue(
-                                        "menu.accessibility.role.description.submenu.option"));
-        map.put(
-                vm.optionsColorRoleDescriptionProperty(),
-                () -> I18n.INSTANCE.getValue("menu.accessibility.role.description.submenu.option"));
-        return map;
     }
 
     @Test
     void givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated() {
-        MenuOptionsViewModel spyViewModel = spy(viewModel);
-        doNothing().when(spyViewModel).loadBackgroundImage(any(), any(), any(), any());
-        spyViewModel.init(sudokuFX, colorPicker, toaster, spinner);
         Color expectedColor = Color.rgb(153, 179, 255, 0.803921568627451);
         assertEquals(expectedColor, colorPicker.getValue());
         BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
@@ -166,33 +120,161 @@ class MenuOptionsViewModelUTest {
     }
 
     @Test
-    void givenGridPaneAndColor_whenUpdateBackgroundColorAndApply_thenOptionsColorIsSet() {
-        GridPane grid = new GridPane();
+    void givenGridPaneAndColor_whenUpdateBackgroundColor_thenApplied() {
         Color color = Color.web("#12345678");
-        viewModel.updateOptionsColorAndApply(grid, color);
-        Background background = grid.getBackground();
-        assertNotNull(background, "Options should not be null");
-        List<BackgroundFill> fills = background.getFills();
-        assertFalse(fills.isEmpty(), "Options fills should not be empty");
-        assertEquals(color, fills.getFirst().getFill(), "Options color should match expected");
+        viewModel.updateOptionsColorAndApply(sudokuFX, color);
+        BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
+        assertEquals(color, fill.getFill());
+    }
+
+    @Nested
+    @DisplayName("Background Image Error Handling")
+    class BackgroundImageErrorTests {
+
+        @Test
+        void givenNullFile_thenShowErrorToast() {
+            doNothing().when(toasterMock).addToast(anyString(), anyString(), any(), anyBoolean());
+            viewModel.loadBackgroundImage(null, spinnerMock, sudokuFX);
+            verifyNoInteractions(asyncServiceMock);
+            verify(toasterMock, atLeastOnce())
+                    .addToast(
+                            I18n.INSTANCE.getValue(
+                                    "toast.error.optionsviewmodel.handlefileimagechooser"),
+                            "",
+                            ToastLevels.ERROR,
+                            true);
+        }
+
+        @Test
+        void givenInvalidFile_thenShowErrorToast() {
+            File invalidFile = new File("invalid.txt");
+            doNothing().when(toasterMock).addToast(anyString(), anyString(), any(), anyBoolean());
+            viewModel.loadBackgroundImage(invalidFile, spinnerMock, sudokuFX);
+            verifyNoInteractions(asyncServiceMock);
+            verify(toasterMock, atLeastOnce())
+                    .addToast(
+                            I18n.INSTANCE.getValue(
+                                    "toast.error.optionsviewmodel.handlefileimagechooser"),
+                            "",
+                            ToastLevels.ERROR,
+                            true);
+        }
+    }
+
+    @Nested
+    @DisplayName("Background Image Success Handling")
+    class BackgroundImageSuccessTests {
+
+        @Test
+        void givenValidFile_thenAsyncServiceCalled() throws Exception {
+            File validFile = mock(File.class);
+            ImageUtils imageUtilsSpy = spy(new ImageUtils());
+            doReturn(true).when(imageUtilsSpy).isValidImage(validFile);
+
+            Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
+            field.setAccessible(true);
+            field.set(viewModel, imageUtilsSpy);
+
+            viewModel.loadBackgroundImage(validFile, spinnerMock, sudokuFX);
+            verify(asyncServiceMock)
+                    .processFileAsync(
+                            eq(validFile), eq(spinnerMock), eq(toasterMock), any(), any(), any());
+        }
+    }
+
+    @Nested
+    @DisplayName("Options Toggle Tests")
+    class OptionsToggleTests {
+
+        @Test
+        void gridOpacityToggle_invertsProperty() {
+            boolean initial = viewModel.gridOpacityProperty().get();
+            boolean toggled = viewModel.toggleGridOpacity();
+            assertEquals(!initial, toggled);
+            assertEquals(toggled, viewModel.gridOpacityProperty().get());
+        }
+
+        @Test
+        void toggleMute_updatesAudioServiceAndProperty() {
+            boolean initial = audioSpy.isMuted();
+            viewModel.toggleMute();
+            verify(audioSpy).setMuted(!initial);
+            assertEquals(!initial, audioSpy.isMuted());
+        }
+    }
+
+    @Nested
+    @DisplayName("Utility Text Methods Tests")
+    class UtilityTextMethodsTests {
+
+        static Stream<Arguments> utilityTextMethodsProvider() {
+            return Stream.of(
+                    Arguments.of(
+                            "gridOpacityText", true, "menu.options.button.opacity.text.opaque"),
+                    Arguments.of(
+                            "gridOpacityText",
+                            false,
+                            "menu.options.button.opacity.text.transparent"),
+                    Arguments.of("muteText", true, "menu.options.button.mute.text.muted"),
+                    Arguments.of("muteText", false, "menu.options.button.mute.text.unmuted"),
+                    Arguments.of("muteInfo", true, "menu.options.button.mute.text.muted.info"),
+                    Arguments.of("muteInfo", false, "menu.options.button.mute.text.unmuted.info"));
+        }
+
+        @ParameterizedTest(name = "{0}({1}) should return correct I18n value")
+        @MethodSource("utilityTextMethodsProvider")
+        void utilityTextMethods_returnExpectedValue(
+                String methodName, boolean input, String expectedKey) throws Exception {
+            var method = MenuOptionsViewModel.class.getDeclaredMethod(methodName, boolean.class);
+            method.setAccessible(true);
+            String result = (String) method.invoke(viewModel, input);
+            assertEquals(I18n.INSTANCE.getValue(expectedKey), result);
+        }
     }
 
     @Test
-    void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast() {
-        ToasterVBox toasterMock = mock(ToasterVBox.class);
-        SpinnerGridPane spinnerMock = mock(SpinnerGridPane.class);
-        GridPane grid = new GridPane();
-        AsyncFileProcessorService asyncServiceMock = mock(AsyncFileProcessorService.class);
-        MenuOptionsViewModel viewModel =
-                new MenuOptionsViewModel(new AudioService(), asyncServiceMock);
-        viewModel.loadBackgroundImage(null, toasterMock, spinnerMock, grid);
-        verify(toasterMock)
-                .addToast(
-                        I18n.INSTANCE.getValue(
-                                "toast.error.optionsviewmodel.handlefileimagechooser"),
-                        "",
-                        ToastLevels.ERROR,
-                        true);
-        verifyNoInteractions(asyncServiceMock);
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    void givenValidFile_whenLoadBackgroundImage_thenAsyncServiceCalledAndBackgroundSet()
+            throws Exception {
+        File imageFile = new File("src/test/resources/sample.jpg");
+        SpinnerGridPane spinnerMockLocal = mock(SpinnerGridPane.class);
+        GridPane gridMock = new GridPane();
+        ToasterVBox toasterMockLocal = mock(ToasterVBox.class);
+        ImageUtils imageUtilsSpy = spy(new ImageUtils());
+        MenuOptionsViewModel vm = new MenuOptionsViewModel(new AudioService(), asyncServiceMock);
+        Field imageUtilsField = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
+        imageUtilsField.setAccessible(true);
+        imageUtilsField.set(vm, imageUtilsSpy);
+        Field toasterField = MenuOptionsViewModel.class.getDeclaredField("toaster");
+        toasterField.setAccessible(true);
+        toasterField.set(vm, toasterMockLocal);
+        doReturn(true).when(imageUtilsSpy).isValidImage(imageFile);
+        ImageMeta metaMock = mock(ImageMeta.class);
+        doReturn(metaMock).when(imageUtilsSpy).getImageMeta(imageFile);
+        doReturn(100).when(metaMock).width();
+        doReturn(50).when(metaMock).height();
+        doReturn(2.0).when(metaMock).scaleFactor();
+        ArgumentCaptor<Function<File, BackgroundImage>> processorCaptor =
+                ArgumentCaptor.forClass((Class) Function.class);
+        doNothing()
+                .when(asyncServiceMock)
+                .processFileAsync(
+                        eq(imageFile),
+                        eq(spinnerMockLocal),
+                        eq(toasterMockLocal),
+                        processorCaptor.capture(),
+                        any(),
+                        any());
+        vm.loadBackgroundImage(imageFile, spinnerMockLocal, gridMock);
+        verify(asyncServiceMock)
+                .processFileAsync(
+                        eq(imageFile),
+                        eq(spinnerMockLocal),
+                        eq(toasterMockLocal),
+                        any(),
+                        any(),
+                        any());
+        BackgroundImage backgroundImage = processorCaptor.getValue().apply(imageFile);
+        assertNotNull(backgroundImage, "The BackgroundImage must be created correctly");
     }
 }

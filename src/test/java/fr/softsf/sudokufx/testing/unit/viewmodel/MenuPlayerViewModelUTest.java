@@ -25,7 +25,7 @@ import fr.softsf.sudokufx.dto.MenuDto;
 import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
-import fr.softsf.sudokufx.service.PlayerService;
+import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 

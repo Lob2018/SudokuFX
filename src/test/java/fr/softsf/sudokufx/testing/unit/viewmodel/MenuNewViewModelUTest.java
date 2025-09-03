@@ -20,7 +20,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.service.VersionService;
+import fr.softsf.sudokufx.service.external.VersionService;
 import fr.softsf.sudokufx.viewmodel.MenuNewViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
