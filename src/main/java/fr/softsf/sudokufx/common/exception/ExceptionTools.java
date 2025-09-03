@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.common.exception;
 
 import java.sql.SQLInvalidAuthorizationSpecException;
+import java.util.Objects;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -66,5 +67,24 @@ public enum ExceptionTools {
             e = e.getCause();
         }
         return null;
+    }
+
+    /**
+     * Logs an error and creates a {@link ResourceLoadException} for any resource (audio, image, etc.).
+     * Handles null or blank messages and a null cause safely.
+     *
+     * @param message descriptive message of the failure; may be null or blank
+     * @param cause the original exception that triggered the failure; may be null
+     * @return a new {@link ResourceLoadException} instance
+     */
+    public ResourceLoadException logAndInstantiateResourceLoad(String message, Throwable cause) {
+        String safeMessage = StringUtils.isBlank(message) ? "Resource load failed with no message" : message;
+        if (Objects.isNull(cause)) {
+            LOG.error("Failed to load resource: {}. Cause: null", safeMessage);
+            return new ResourceLoadException(safeMessage, null);
+        } else {
+            LOG.error("Failed to load resource: {}. Cause: {}", safeMessage, cause.getMessage(), cause);
+            return new ResourceLoadException(safeMessage, cause);
+        }
     }
 }
