@@ -51,8 +51,8 @@ import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.navigation.Coordinator;
-import fr.softsf.sudokufx.service.AudioService;
-import fr.softsf.sudokufx.service.FileChooserService;
+import fr.softsf.sudokufx.service.ui.AudioService;
+import fr.softsf.sudokufx.service.ui.FileChooserService;
 import fr.softsf.sudokufx.view.component.MyAlert;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
@@ -268,7 +268,7 @@ public final class DefaultView implements IMainView {
      * in a 9x9 grid, after initializing the cell view models.
      */
     private void gridInitialization() {
-        gridViewModel.init();
+        gridViewModel.init(toaster);
         int index = 0;
         for (GridCellViewModel cellVM : gridViewModel.getCellViewModels()) {
             Label label = cellVM.getLabel();
@@ -973,9 +973,7 @@ public final class DefaultView implements IMainView {
         fileChooserService
                 .chooseFile(primaryStage, FileChooserService.FileType.IMAGE)
                 .ifPresent(
-                        file ->
-                                menuOptionsViewModel.loadBackgroundImage(
-                                        file, toaster, spinner, sudokuFX));
+                        file -> menuOptionsViewModel.loadBackgroundImage(file, spinner, sudokuFX));
     }
 
     /** Handles grid transparency toggle button action. */
