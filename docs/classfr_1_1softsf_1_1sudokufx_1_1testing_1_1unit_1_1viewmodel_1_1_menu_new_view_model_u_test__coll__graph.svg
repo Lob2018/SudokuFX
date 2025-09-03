@@ -86,41 +86,41 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" target="_top" xlink:title="Service for checking if the application version is up to date by querying GitHub.">
-<polygon fill="white" stroke="none" points="168.25,-1080 19.75,-1080 19.75,-796 168.25,-796 168.25,-1080"/>
-<text text-anchor="start" x="37" y="-1066.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" target="_top" xlink:title="Service for checking if the application version is up to date by querying GitHub.">
+<polygon fill="white" stroke="none" points="173.75,-1080 14.25,-1080 14.25,-796 173.75,-796 173.75,-1080"/>
+<text text-anchor="start" x="18.25" y="-1066.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.external.</text>
 <text text-anchor="start" x="61.38" y="-1054.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService</text>
-<text text-anchor="start" x="25.25" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="22.5" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="33.75" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">final HttpClient httpClient</text>
-<text text-anchor="start" x="25.25" y="-1022.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="22.5" y="-1022.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="33.75" y="-1022.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectMapper</text>
 <text text-anchor="start" x="33.75" y="-1010.5" font-family="Helvetica,sans-Serif" font-size="10.00"> objectMapper</text>
-<text text-anchor="start" x="25.25" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="22.5" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="33.75" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="33.75" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CURRENT_VERSION</text>
-<text text-anchor="start" x="25.25" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="22.5" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="33.75" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int HTTP</text>
 <text text-anchor="start" x="33.75" y="-954.5" font-family="Helvetica,sans-Serif" font-size="10.00">_STATUS_OK</text>
-<text text-anchor="start" x="25.25" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="22.5" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="33.75" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="23.75" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="21" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="33.75" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService(HttpClient</text>
 <text text-anchor="start" x="33.75" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00"> httpClient, ObjectMapper</text>
 <text text-anchor="start" x="33.75" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00"> objectMapper)</text>
-<text text-anchor="start" x="23.75" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="21" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="33.75" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task&lt; Boolean &gt; checkLatest</text>
 <text text-anchor="start" x="33.75" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">Version()</text>
-<text text-anchor="start" x="25.25" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="22.5" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="33.75" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">int compareVersions</text>
 <text text-anchor="start" x="33.75" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String version1,</text>
 <text text-anchor="start" x="33.75" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00"> final String version2)</text>
-<text text-anchor="start" x="25.25" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="22.5" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="33.75" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean parseResponse</text>
 <text text-anchor="start" x="33.75" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String json)</text>
-<polygon fill="#666666" stroke="#666666" points="19.75,-1050 19.75,-1050 168.25,-1050 168.25,-1050 19.75,-1050"/>
-<polygon fill="#666666" stroke="#666666" points="19.75,-934 19.75,-934 31.75,-934 31.75,-934 19.75,-934"/>
-<polygon fill="#666666" stroke="#666666" points="31.75,-934 31.75,-934 168.25,-934 168.25,-934 31.75,-934"/>
-<polygon fill="none" stroke="#666666" points="19.75,-796 19.75,-1080 168.25,-1080 168.25,-796 19.75,-796"/>
+<polygon fill="#666666" stroke="#666666" points="14.25,-1050 14.25,-1050 173.75,-1050 173.75,-1050 14.25,-1050"/>
+<polygon fill="#666666" stroke="#666666" points="14.25,-934 14.25,-934 31.75,-934 31.75,-934 14.25,-934"/>
+<polygon fill="#666666" stroke="#666666" points="31.75,-934 31.75,-934 173.75,-934 173.75,-934 31.75,-934"/>
+<polygon fill="none" stroke="#666666" points="14.25,-796 14.25,-1080 173.75,-1080 173.75,-796 14.25,-796"/>
 </a>
 </g>
 </g>

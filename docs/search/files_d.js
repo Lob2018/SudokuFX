@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['package_2dinfo_2ejava_0',['package-info.java',['../package-info_8java.html',1,'']]],
+  ['package_2dinfo_2ejava_0',['package-info.java',['../business_2package-info_8java.html',1,'(Global Namespace)'],['../external_2package-info_8java.html',1,'(Global Namespace)'],['../ui_2package-info_8java.html',1,'(Global Namespace)']]],
   ['paths_2ejava_1',['Paths.java',['../_paths_8java.html',1,'']]],
   ['player_2ejava_2',['Player.java',['../_player_8java.html',1,'']]],
   ['playerdto_2ejava_3',['PlayerDto.java',['../_player_dto_8java.html',1,'']]],

@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest" name="fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,667,268,1173"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="32,5,242,603"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,603,140,650,134,650,134,603"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,651,236,869"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="16,5,226,587"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="124,586,124,634,118,634,118,586"/>
 </map>

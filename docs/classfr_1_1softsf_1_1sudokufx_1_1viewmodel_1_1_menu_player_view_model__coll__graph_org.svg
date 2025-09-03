@@ -170,21 +170,21 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html" target="_top" xlink:title="Service class providing business logic related to Player entities.">
-<polygon fill="white" stroke="none" points="340.62,-1416 177.88,-1416 177.88,-1300 340.62,-1300 340.62,-1416"/>
-<text text-anchor="start" x="202.25" y="-1402.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" target="_top" xlink:title="Service class providing business logic related to Player entities.">
+<polygon fill="white" stroke="none" points="341.25,-1416 177.25,-1416 177.25,-1300 341.25,-1300 341.25,-1416"/>
+<text text-anchor="start" x="181.25" y="-1402.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
 <text text-anchor="start" x="228.88" y="-1390.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService</text>
 <text text-anchor="start" x="257.75" y="-1374.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="181.88" y="-1358.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="181.56" y="-1358.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="191.88" y="-1358.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService(PlayerRepository</text>
 <text text-anchor="start" x="191.88" y="-1346.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerRepository, IPlayerMapper</text>
 <text text-anchor="start" x="191.88" y="-1334.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerMapper, JakartaValidator</text>
 <text text-anchor="start" x="191.88" y="-1322.5" font-family="Helvetica,sans-Serif" font-size="10.00"> jakartaValidator)</text>
-<text text-anchor="start" x="181.88" y="-1306.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="181.56" y="-1306.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="191.88" y="-1306.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getPlayer()</text>
-<polygon fill="#666666" stroke="#666666" points="177.88,-1386 177.88,-1386 340.62,-1386 340.62,-1386 177.88,-1386"/>
-<polygon fill="#666666" stroke="#666666" points="177.88,-1370 177.88,-1370 340.62,-1370 340.62,-1370 177.88,-1370"/>
-<polygon fill="none" stroke="#666666" points="177.88,-1300 177.88,-1416 340.62,-1416 340.62,-1300 177.88,-1300"/>
+<polygon fill="#666666" stroke="#666666" points="177.25,-1386 177.25,-1386 341.25,-1386 341.25,-1386 177.25,-1386"/>
+<polygon fill="#666666" stroke="#666666" points="177.25,-1370 177.25,-1370 341.25,-1370 341.25,-1370 177.25,-1370"/>
+<polygon fill="none" stroke="#666666" points="177.25,-1300 177.25,-1416 341.25,-1416 341.25,-1300 177.25,-1300"/>
 </a>
 </g>
 </g>

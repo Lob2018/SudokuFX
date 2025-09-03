@@ -1,9 +1,17 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="108,1248,350,1851"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html" title="ViewModel component managing a 9x9 Sudoku grid." alt="" coords="81,683,377,1184"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,1184,232,1231,226,1231,226,1184"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu." alt="" coords="5,227,218,381"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="117,381,127,511,148,658,149,666,144,667,143,659,122,512,112,381"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="243,5,453,603"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="331,603,321,659,319,666,314,665,316,658,325,602"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="226,1729,469,2332"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html" title="ViewModel component managing a 9x9 Sudoku grid." alt="" coords="200,1127,496,1665"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,1665,350,1712,345,1712,345,1665"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu." alt="" coords="5,620,218,775"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="116,774,121,845,131,928,147,1016,172,1102,195,1157,190,1159,167,1104,142,1017,125,929,116,846,111,775"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="243,407,453,988"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="350,988,350,1110,345,1110,345,988"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="477,348,736,1047"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="479,1048,456,1112,451,1110,475,1046"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="530,169,573,239"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="560,253,570,348,565,349,554,254"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="597,124,856,284"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="710,284,698,332,693,331,705,283"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="702,5,751,75"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="729,90,729,124,724,124,724,90"/>
 </map>

@@ -103,23 +103,34 @@ $(function(){initNavTree('_menu_options_view_model_u_test_8java.html',''); initR
   <div class="headertitle"><div class="title">MenuOptionsViewModelUTest.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import java.util.function.Supplier;</code><br />
+<div class="textblock"><code>import java.io.File;</code><br />
+<code>import java.lang.reflect.Field;</code><br />
+<code>import java.util.function.Function;</code><br />
+<code>import java.util.stream.Stream;</code><br />
 <code>import java.util.*;</code><br />
 <code>import javafx.beans.binding.StringBinding;</code><br />
 <code>import javafx.scene.control.ColorPicker;</code><br />
-<code>import javafx.scene.layout.Background;</code><br />
 <code>import javafx.scene.layout.BackgroundFill;</code><br />
+<code>import javafx.scene.layout.BackgroundImage;</code><br />
 <code>import javafx.scene.layout.GridPane;</code><br />
 <code>import javafx.scene.paint.Color;</code><br />
 <code>import org.junit.jupiter.api.AfterEach;</code><br />
 <code>import org.junit.jupiter.api.BeforeEach;</code><br />
+<code>import org.junit.jupiter.api.DisplayName;</code><br />
+<code>import org.junit.jupiter.api.Nested;</code><br />
 <code>import org.junit.jupiter.api.Test;</code><br />
 <code>import org.junit.jupiter.api.extension.ExtendWith;</code><br />
+<code>import org.junit.jupiter.params.ParameterizedTest;</code><br />
+<code>import org.junit.jupiter.params.provider.Arguments;</code><br />
+<code>import org.junit.jupiter.params.provider.MethodSource;</code><br />
+<code>import org.mockito.ArgumentCaptor;</code><br />
 <code>import org.testfx.framework.junit5.ApplicationExtension;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.ToastLevels;</code><br />
-<code>import fr.softsf.sudokufx.service.AsyncFileProcessorService;</code><br />
-<code>import fr.softsf.sudokufx.service.AudioService;</code><br />
+<code>import fr.softsf.sudokufx.common.util.ImageMeta;</code><br />
+<code>import fr.softsf.sudokufx.common.util.ImageUtils;</code><br />
+<code>import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;</code><br />
+<code>import fr.softsf.sudokufx.service.ui.AudioService;</code><br />
 <code>import fr.softsf.sudokufx.view.component.SpinnerGridPane;</code><br />
 <code>import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />
@@ -134,7 +145,15 @@ $(function(){initNavTree('_menu_options_view_model_u_test_8java.html',''); initR
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageErrorTests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_success_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageSuccessTests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_options_toggle_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.OptionsToggleTests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_utility_text_methods_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.UtilityTextMethodsTests</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -148,7 +167,7 @@ Packages</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li><li class="navelem"><a class="el" href="dir_97debbc39e3b917fca663601bb2b0709.html">java</a></li><li class="navelem"><a class="el" href="dir_8d7deeaf7546933b8f2dc85f32ff302b.html">fr</a></li><li class="navelem"><a class="el" href="dir_306a5b3cb699d06afc248376b3d7d66a.html">softsf</a></li><li class="navelem"><a class="el" href="dir_a649969fb0ce802377fa0d754848ffcd.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_8788a2347813abb346272c74e863edc3.html">viewmodel</a></li><li class="navelem"><a class="el" href="_menu_options_view_model_u_test_8java.html">MenuOptionsViewModelUTest.java</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 20:15:44 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Sep 3 2025 18:25:15 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -13,6 +13,6 @@ var searchData=
   ['hidden_10',['HIDDEN',['../enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#af7f290e3a3651608c14888828a7edc58',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel::ActiveMenu']]],
   ['hideminimenutimeline_11',['hideMiniMenuTimeline',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a4a35fe8d30af66ffdfc82368b57c21f6',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['hostservices_12',['hostServices',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#ae432bd7392bf7c1570a8b46f5c2a6141',1,'fr.softsf.sudokufx.navigation.Coordinator.hostServices'],['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#acc7b9df90ce4151f4f981e00549c73ef',1,'fr.softsf.sudokufx.navigation.CoordinatorUTest.hostServices']]],
-  ['http_5fstatus_5fok_13',['HTTP_STATUS_OK',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a24a3d7d88c59c73d687282195dae7b51',1,'fr::softsf::sudokufx::service::VersionService']]],
-  ['httpclient_14',['httpClient',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ab848493a61107602eb1217a09b15db85',1,'fr::softsf::sudokufx::service::VersionService']]]
+  ['http_5fstatus_5fok_13',['HTTP_STATUS_OK',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#adfbca5c66180807148457569d5a897bc',1,'fr::softsf::sudokufx::service::external::VersionService']]],
+  ['httpclient_14',['httpClient',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a3eb52289df94210f19081f7e7fa0b34c',1,'fr::softsf::sudokufx::service::external::VersionService']]]
 ];

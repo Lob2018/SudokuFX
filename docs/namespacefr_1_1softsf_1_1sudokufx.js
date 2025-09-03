@@ -13,7 +13,11 @@ var namespacefr_1_1softsf_1_1sudokufx =
     [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", "namespacefr_1_1softsf_1_1sudokufx_1_1model" ],
     [ "navigation", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation" ],
     [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", "namespacefr_1_1softsf_1_1sudokufx_1_1repository" ],
-    [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1service" ],
+    [ "service", null, [
+      [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business" ],
+      [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1external.html", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1external" ],
+      [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui" ]
+    ] ],
     [ "testing", null, [
       [ "e2e", null, [
         [ "common", null, [

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.service.VersionService" name="fr.softsf.sudokufx.service.VersionService">
+<map id="fr.softsf.sudokufx.service.external.VersionService" name="fr.softsf.sudokufx.service.external.VersionService">
 <area shape="rect" id="Node000001" title="Service for managing version information from a GitHub repository." alt="" coords="5,123,234,715"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="57,5,183,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,89,122,123,117,123,117,89"/>

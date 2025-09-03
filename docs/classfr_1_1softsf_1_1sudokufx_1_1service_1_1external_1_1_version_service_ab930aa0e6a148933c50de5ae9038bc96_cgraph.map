@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.external.VersionService.parseResponse" name="fr.softsf.sudokufx.service.external.VersionService.parseResponse">
+<area shape="rect" id="Node000001" title="Parses the JSON response from the GitHub API to extract the latest published version." alt="" coords="5,5,229,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a67496982422db94de8447dbf0c46a410" title="Compares two version strings in the format MAJOR.MINOR.PATCH (e.g., &quot;1.2.3&quot;)." alt="" coords="277,5,500,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,24,261,24,261,29,229,29"/>
+</map>

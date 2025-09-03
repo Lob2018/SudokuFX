@@ -10,7 +10,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "gridOpacityText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a89500f671995a3ab11b253bf65cafdfb", null ],
     [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a52dadaf5fba37f78cc096f5d55487246", null ],
     [ "initializeAudio", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a98801adb4b71828d30800245efab045a", null ],
-    [ "loadBackgroundImage", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a1ca6783b6394d6e522d3311f64bcf372", null ],
+    [ "loadBackgroundImage", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#acf0d4b3e314e1018f054431b1cd4922f", null ],
     [ "muteInfo", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab492d58498724756aa0082dafe071aa4", null ],
     [ "muteText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a6e733cf8be577984de3b8b21b9a3c696", null ],
     [ "optionsAccessibleTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#aea9e28fdb65810f49af1900c17d5b26c", null ],
@@ -86,5 +86,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "optionsTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#af2cdd730c9cbd5664153747ea987cd1d", null ],
     [ "ROLE_CLOSED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a850a746a954e67e89876a4e531d7a8ab", null ],
     [ "ROLE_OPENED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a82de9d6cb1b1520d3ff612e1cd4a19b2", null ],
-    [ "ROLE_SUBMENU_OPTION", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a0b37cdc48c38ef1c1df3b0a610052558", null ]
+    [ "ROLE_SUBMENU_OPTION", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a0b37cdc48c38ef1c1df3b0a610052558", null ],
+    [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a5bb32d3804162389e184d81f30dd190f", null ]
 ];

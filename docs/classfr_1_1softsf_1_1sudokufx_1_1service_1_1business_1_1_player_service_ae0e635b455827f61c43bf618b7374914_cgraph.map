@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.service.business.PlayerService.getPlayer" name="fr.softsf.sudokufx.service.business.PlayerService.getPlayer">
+<area shape="rect" id="Node000001" title="Retrieves and validates the first player with a selected game." alt="" coords="5,29,235,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="76,29,75,19,82,10,97,5,120,3,145,5,159,11,157,16,143,10,120,8,98,10,85,15,80,21,82,28"/>
+</map>

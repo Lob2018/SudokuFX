@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.service.VersionService.checkLatestVersion" name="fr.softsf.sudokufx.service.VersionService.checkLatestVersion">
+<map id="fr.softsf.sudokufx.service.external.VersionService.checkLatestVersion" name="fr.softsf.sudokufx.service.external.VersionService.checkLatestVersion">
 <area shape="rect" id="Node000001" title="Checks if the current application version is up&#45;to&#45;date by querying the GitHub API." alt="" coords="5,5,232,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ac909ce26310a3c5b01262ad5f3affcbe" title="Parses the JSON response from the GitHub API to extract the latest published version." alt="" coords="280,5,483,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,24,264,24,264,29,232,29"/>

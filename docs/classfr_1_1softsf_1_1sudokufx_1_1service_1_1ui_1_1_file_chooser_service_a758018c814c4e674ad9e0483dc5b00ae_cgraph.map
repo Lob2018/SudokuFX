@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.ui.FileChooserService.chooseFile" name="fr.softsf.sudokufx.service.ui.FileChooserService.chooseFile">
+<area shape="rect" id="Node000001" title="Opens a FileChooser dialog for the specified file type." alt="" coords="5,5,208,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service.html#a4cd8c89b7b2cfdafe52b84389acca745" title="Returns the appropriate FileChooser.ExtensionFilter for the given file type." alt="" coords="256,5,443,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,24,240,24,240,29,208,29"/>
+</map>

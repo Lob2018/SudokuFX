@@ -23,12 +23,13 @@ var searchData=
   ['menusolveviewmodel_20',['MenuSolveViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
   ['menusolveviewmodelutest_21',['MenuSolveViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel']]],
   ['menuutest_22',['MenuUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_u_test.html',1,'fr::softsf::sudokufx::model']]],
-  ['myalert_23',['MyAlert',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html',1,'fr::softsf::sudokufx::view::component']]],
-  ['mydatetime_24',['MyDateTime',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html',1,'fr::softsf::sudokufx::common::util']]],
-  ['mydatetimeutest_25',['MyDateTimeUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
-  ['myenumsutest_26',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
-  ['mylogbackconfig_27',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::config']]],
-  ['mylogbackconfigutest_28',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::config']]],
-  ['myregex_29',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::enums']]],
-  ['myregexutest_30',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]]
+  ['muteunmutetests_23',['MuteUnmuteTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_mute_unmute_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::AudioServiceUTest']]],
+  ['myalert_24',['MyAlert',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html',1,'fr::softsf::sudokufx::view::component']]],
+  ['mydatetime_25',['MyDateTime',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html',1,'fr::softsf::sudokufx::common::util']]],
+  ['mydatetimeutest_26',['MyDateTimeUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
+  ['myenumsutest_27',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
+  ['mylogbackconfig_28',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::config']]],
+  ['mylogbackconfigutest_29',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::config']]],
+  ['myregex_30',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::enums']]],
+  ['myregexutest_31',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]]
 ];

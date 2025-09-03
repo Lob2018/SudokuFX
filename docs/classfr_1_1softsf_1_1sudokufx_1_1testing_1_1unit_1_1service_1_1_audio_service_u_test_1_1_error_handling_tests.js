@@ -1,0 +1,4 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_error_handling_tests =
+[
+    [ "givenInvalidMediaFile_whenPlaySong_thenThrowsResourceLoadException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_error_handling_tests.html#a699e32a63fc9a6ee4cff454d650da6c5", null ]
+];

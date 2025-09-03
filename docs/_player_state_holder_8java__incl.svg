@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1292;
+var viewWidth = 1334;
 var viewHeight = 120;
 var sectionId = 'dynsection-0';
 </script>
@@ -217,9 +217,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000010" class="node">
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="1284.25,-32 1154.25,-32 1154.25,0 1284.25,0 1284.25,-32"/>
-<text text-anchor="start" x="1162.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="middle" x="1219.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="1326.25,-32 1154.25,-32 1154.25,0 1326.25,0 1326.25,-32"/>
+<text text-anchor="start" x="1162.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
+<text text-anchor="middle" x="1240.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService</text>
 </a>
 </g>
 </g>
@@ -227,8 +227,8 @@ var sectionId = 'dynsection-0';
 <g id="edge9_Node000001_Node000010" class="edge">
 <title>Node1&#45;&gt;Node10</title>
 <g id="a_edge9_Node000001_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M679.86,-83.87C778.69,-75.82 970.18,-58.52 1142.61,-32.32"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1143.09,-35.79 1152.44,-30.81 1142.03,-28.87 1143.09,-35.79"/>
+<path fill="none" stroke="#63b8ff" d="M680.14,-82.91C778.93,-73.68 969.91,-54.93 1142.47,-32.33"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1142.85,-35.81 1152.31,-31.03 1141.94,-28.87 1142.85,-35.81"/>
 </a>
 </g>
 </g>

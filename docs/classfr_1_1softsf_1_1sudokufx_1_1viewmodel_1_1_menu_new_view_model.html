@@ -118,7 +118,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_ne
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0fd457752b40e1cc02053e6485491b6f" id="r_a0fd457752b40e1cc02053e6485491b6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd457752b40e1cc02053e6485491b6f">MenuNewViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html">VersionService</a> <a class="el" href="#a2100f5a67c17582634d8f4cd8f80423c">versionService</a>)</td></tr>
+<tr class="memitem:a0fd457752b40e1cc02053e6485491b6f" id="r_a0fd457752b40e1cc02053e6485491b6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd457752b40e1cc02053e6485491b6f">MenuNewViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html">VersionService</a> <a class="el" href="#a2100f5a67c17582634d8f4cd8f80423c">versionService</a>)</td></tr>
 <tr class="separator:a0fd457752b40e1cc02053e6485491b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbe70999a0a118d69927bea13427c056" id="r_afbe70999a0a118d69927bea13427c056"><td class="memItemLeft" align="right" valign="top">BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbe70999a0a118d69927bea13427c056">isUpToDateProperty</a> ()</td></tr>
 <tr class="memdesc:afbe70999a0a118d69927bea13427c056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the application is up-to-date.  <br /></td></tr>
@@ -166,13 +166,13 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3b83bd575566b2ebe329da6f6abcc84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae85367e712db5a94a81bc859475e7c54" id="r_ae85367e712db5a94a81bc859475e7c54"><td class="memItemLeft" align="right" valign="top">ChangeListener&lt; Boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae85367e712db5a94a81bc859475e7c54">versionListener</a></td></tr>
 <tr class="separator:ae85367e712db5a94a81bc859475e7c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2100f5a67c17582634d8f4cd8f80423c" id="r_a2100f5a67c17582634d8f4cd8f80423c"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html">VersionService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2100f5a67c17582634d8f4cd8f80423c">versionService</a></td></tr>
+<tr class="memitem:a2100f5a67c17582634d8f4cd8f80423c" id="r_a2100f5a67c17582634d8f4cd8f80423c"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html">VersionService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2100f5a67c17582634d8f4cd8f80423c">versionService</a></td></tr>
 <tr class="separator:a2100f5a67c17582634d8f4cd8f80423c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ViewModel for managing the "New" menu UI state, accessibility labels, and update status. </p>
 <p>Provides localized StringBindings for button texts, accessible texts, and tooltips for both maxi and mini "New" buttons.</p>
-<p>Checks asynchronously via <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub.">VersionService</a> if the application is up-to-date, exposing update status and related messages to the view.</p>
+<p>Checks asynchronously via <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub.">VersionService</a> if the application is up-to-date, exposing update status and related messages to the view.</p>
 <p>Uses the <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html" title="Singleton enum for internationalization (i18n) support.">I18n</a> singleton for localization with automatic updates on locale changes. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0fd457752b40e1cc02053e6485491b6f" name="a0fd457752b40e1cc02053e6485491b6f"></a>
@@ -184,7 +184,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">fr.softsf.sudokufx.viewmodel.MenuNewViewModel.MenuNewViewModel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html">VersionService</a></td>          <td class="paramname"><span class="paramname"><em>versionService</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html">VersionService</a></td>          <td class="paramname"><span class="paramname"><em>versionService</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -597,7 +597,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html">VersionService</a> fr.softsf.sudokufx.viewmodel.MenuNewViewModel.versionService</td>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html">VersionService</a> fr.softsf.sudokufx.viewmodel.MenuNewViewModel.versionService</td>
         </tr>
       </table>
   </td>
@@ -618,7 +618,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html">MenuNewViewModel</a></li>
-    <li class="footer">Generated on Tue Sep 2 2025 20:15:45 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Sep 3 2025 18:25:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

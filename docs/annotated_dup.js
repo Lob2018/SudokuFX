@@ -24,7 +24,8 @@ var annotated_dup =
             ] ],
             [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html", [
               [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools" ],
-              [ "JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator" ]
+              [ "JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator" ],
+              [ "ResourceLoadException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception" ]
             ] ],
             [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html", [
               [ "mapper", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper.html", [
@@ -111,12 +112,18 @@ var annotated_dup =
             [ "PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", null ],
             [ "PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository" ]
           ] ],
-          [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
-            [ "AsyncFileProcessorService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_async_file_processor_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_async_file_processor_service" ],
-            [ "AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_audio_service" ],
-            [ "FileChooserService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_file_chooser_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_file_chooser_service" ],
-            [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_player_service" ],
-            [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service" ]
+          [ "service", null, [
+            [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", [
+              [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service" ]
+            ] ],
+            [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1external.html", [
+              [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service" ]
+            ] ],
+            [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html", [
+              [ "AsyncFileProcessorService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service" ],
+              [ "AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service" ],
+              [ "FileChooserService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service" ]
+            ] ]
           ] ],
           [ "testing", null, [
             [ "e2e", null, [

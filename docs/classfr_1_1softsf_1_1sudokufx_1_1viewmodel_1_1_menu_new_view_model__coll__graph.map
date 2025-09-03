@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuNewViewModel" name="fr.softsf.sudokufx.viewmodel.MenuNewViewModel">
 <area shape="rect" id="Node000001" title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status." alt="" coords="5,448,229,1168"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="18,5,216,384"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="11,5,224,384"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,384,120,431,115,431,115,384"/>
 </map>

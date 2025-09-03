@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.service.VersionService.createTask" name="fr.softsf.sudokufx.service.VersionService.createTask">
+<map id="fr.softsf.sudokufx.service.external.VersionService.createTask" name="fr.softsf.sudokufx.service.external.VersionService.createTask">
 <area shape="rect" id="Node000001" title="Creates a new task to check if the latest version of the software is up to date." alt="" coords="5,39,182,81"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#a5d1ec54faf65957f9b2dc35dd5a2bedb" title="Checks the latest version of the software by querying the GitHub API for the repository&#39;s tags." alt="" coords="230,39,456,81"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,57,214,57,214,63,182,63"/>

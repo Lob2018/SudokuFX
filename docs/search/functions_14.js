@@ -18,5 +18,5 @@ var searchData=
   ['validateupdatedat_15',['validateUpdatedAt',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1f2a473434f154a034fb766d02213295',1,'fr.softsf.sudokufx.model.Game.validateUpdatedAt()'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9be097e3c5eee99752c203f22fe774a3',1,'fr.softsf.sudokufx.model.Player.validateUpdatedAt()']]],
   ['verifiequechaquevaleurestunepossibilite_16',['verifieQueChaqueValeurEstUnePossibilite',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9f77177ae439a5e7b1cfa0394be13ae8',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
   ['verifygrid_17',['verifyGrid',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
-  ['versionservice_18',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1_version_service.html#ace8bbe64b4a23afdb8d8bc96351a3b02',1,'fr::softsf::sudokufx::service::VersionService']]]
+  ['versionservice_18',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a3c4cf250cecf7d339823859b02e9e2b9',1,'fr::softsf::sudokufx::service::external::VersionService']]]
 ];

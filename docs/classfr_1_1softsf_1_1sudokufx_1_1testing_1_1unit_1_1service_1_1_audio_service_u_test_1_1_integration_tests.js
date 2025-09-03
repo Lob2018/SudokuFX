@@ -1,0 +1,4 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_integration_tests =
+[
+    [ "givenComplexOperations_whenExecuted_thenStateRemainsConsistent", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_integration_tests.html#ae1f4b51afb9477cd70402bf8183860d0", null ]
+];

@@ -1,0 +1,6 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_mute_unmute_tests =
+[
+    [ "givenMutedAudio_whenUnmuteAll_thenOriginalVolumesRestored", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#a95510219e0fcad6b5f318259b8d184db", null ],
+    [ "givenMutedState_whenSetMuted_thenStateUpdatedCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#a5fa034c2832b7010c7a1f25f5b3400af", null ],
+    [ "whenMuteAll_thenAllAudioMutedAndStateUpdated", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#ac2cb6efccc8c01f5e0902e193c941ae8", null ]
+];

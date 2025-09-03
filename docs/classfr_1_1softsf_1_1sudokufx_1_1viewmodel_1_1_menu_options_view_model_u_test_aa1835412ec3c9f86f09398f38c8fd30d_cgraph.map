@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidFile_whenLoadBackgroundImage_thenAsyncServiceCalledAndBackgroundSet" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidFile_whenLoadBackgroundImage_thenAsyncServiceCalledAndBackgroundSet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,332,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#acf0d4b3e314e1018f054431b1cd4922f" title="Loads a background image asynchronously and applies it to the specified GridPane." alt="" coords="380,21,675,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,40,364,40,364,45,332,45"/>
+</map>

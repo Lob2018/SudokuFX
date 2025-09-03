@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 4381;
+var viewWidth = 4396;
 var viewHeight = 120;
 var sectionId = 'dynsection-0';
 </script>
@@ -511,9 +511,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000026" class="node">
 <title>Node26</title>
 <g id="a_Node000026"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="3817,-32 3680.25,-32 3680.25,0 3817,0 3817,-32"/>
-<text text-anchor="start" x="3688.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="middle" x="3748.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AsyncFileProcessorService</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="3820.88,-32 3680.38,-32 3680.38,0 3820.88,0 3820.88,-32"/>
+<text text-anchor="start" x="3688.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.ui.</text>
+<text text-anchor="middle" x="3750.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AsyncFileProcessorService</text>
 </a>
 </g>
 </g>
@@ -521,8 +521,8 @@ var sectionId = 'dynsection-0';
 <g id="edge25_Node000001_Node000026" class="edge">
 <title>Node1&#45;&gt;Node26</title>
 <g id="a_edge25_Node000001_Node000026"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M2137.5,-87.77C2422.98,-83.38 3348.07,-66.85 3668.71,-32.19"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="3668.81,-35.7 3678.36,-31.12 3668.03,-28.75 3668.81,-35.7"/>
+<path fill="none" stroke="#63b8ff" d="M2137.49,-87.72C2422.96,-83.16 3347.99,-66.15 3668.91,-32.16"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="3669,-35.67 3678.57,-31.11 3668.25,-28.72 3669,-35.67"/>
 </a>
 </g>
 </g>
@@ -530,9 +530,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000027" class="node">
 <title>Node27</title>
 <g id="a_Node000027"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="3964.62,-32 3834.62,-32 3834.62,0 3964.62,0 3964.62,-32"/>
-<text text-anchor="start" x="3842.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.</text>
-<text text-anchor="middle" x="3899.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AudioService</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="3979.88,-32 3839.38,-32 3839.38,0 3979.88,0 3979.88,-32"/>
+<text text-anchor="start" x="3847.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.ui.</text>
+<text text-anchor="middle" x="3909.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AudioService</text>
 </a>
 </g>
 </g>
@@ -540,8 +540,8 @@ var sectionId = 'dynsection-0';
 <g id="edge26_Node000001_Node000027" class="edge">
 <title>Node1&#45;&gt;Node27</title>
 <g id="a_edge26_Node000001_Node000027"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M2137.5,-88.16C2440.65,-84.87 3470.23,-71.12 3823.1,-32.13"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="3823.31,-35.63 3832.85,-31.02 3822.52,-28.67 3823.31,-35.63"/>
+<path fill="none" stroke="#63b8ff" d="M2137.41,-88C2440.85,-84.18 3473.05,-68.8 3827.73,-32.05"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="3827.96,-35.54 3837.54,-31 3827.22,-28.58 3827.96,-35.54"/>
 </a>
 </g>
 </g>
@@ -549,9 +549,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000028" class="node">
 <title>Node28</title>
 <g id="a_Node000028"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="4152.12,-32 3983.12,-32 3983.12,0 4152.12,0 4152.12,-32"/>
-<text text-anchor="start" x="3991.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
-<text text-anchor="middle" x="4067.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="4167.12,-32 3998.12,-32 3998.12,0 4167.12,0 4167.12,-32"/>
+<text text-anchor="start" x="4006.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
+<text text-anchor="middle" x="4082.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane</text>
 </a>
 </g>
 </g>
@@ -559,8 +559,8 @@ var sectionId = 'dynsection-0';
 <g id="edge27_Node000001_Node000028" class="edge">
 <title>Node1&#45;&gt;Node28</title>
 <g id="a_edge27_Node000001_Node000028"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M2137.51,-87.93C2456.79,-83.7 3586.54,-66.66 3971.2,-32.12"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="3971.49,-35.61 3981.13,-31.2 3970.85,-28.63 3971.49,-35.61"/>
+<path fill="none" stroke="#63b8ff" d="M2137.62,-87.96C2458.71,-83.79 3598.85,-66.89 3986.39,-32.1"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="3986.49,-35.61 3996.13,-31.2 3985.85,-28.63 3986.49,-35.61"/>
 </a>
 </g>
 </g>
@@ -568,9 +568,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000029" class="node">
 <title>Node29</title>
 <g id="a_Node000029"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="4372.62,-32 4170.62,-32 4170.62,0 4372.62,0 4372.62,-32"/>
-<text text-anchor="start" x="4178.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
-<text text-anchor="middle" x="4271.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="4387.62,-32 4185.62,-32 4185.62,0 4387.62,0 4387.62,-32"/>
+<text text-anchor="start" x="4193.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
+<text text-anchor="middle" x="4286.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox</text>
 </a>
 </g>
 </g>
@@ -578,8 +578,8 @@ var sectionId = 'dynsection-0';
 <g id="edge28_Node000001_Node000029" class="edge">
 <title>Node1&#45;&gt;Node29</title>
 <g id="a_edge28_Node000001_Node000029"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M2137.49,-87.94C2476.49,-83.5 3735.2,-65.19 4159,-32.14"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="4159.18,-35.63 4168.87,-31.35 4158.62,-28.65 4159.18,-35.63"/>
+<path fill="none" stroke="#63b8ff" d="M2137.51,-87.96C2478.05,-83.58 3746.91,-65.4 4173.91,-32.14"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="4174.18,-35.63 4183.87,-31.35 4173.62,-28.65 4174.18,-35.63"/>
 </a>
 </g>
 </g>
