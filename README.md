@@ -211,26 +211,29 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 .
 ├── benchmark           // performance and load testing utilities
 ├── common              // shared utilities, annotations, enums, exceptions, interfaces
-│   ├── annotation      // custom annotations
-│   ├── enums           // shared enums and constants
-│   ├── exception       // common exception classes
-│   ├── interfaces      // reusable interfaces
-│   │   └── mapper      // data mapping interfaces
-│   └── util            // general utility classes
-│       └── sudoku      // sudoku-related utilities
+│   ├── annotation      // custom annotations
+│   ├── enums           // shared enums and constants
+│   ├── exception       // common exception classes
+│   ├── interfaces      // reusable interfaces
+│   │   └── mapper      // data mapping interfaces
+│   └── util            // general utility classes
+│       └── sudoku      // sudoku-related utilities
 ├── config              // application configuration (database, OS settings)
-│   ├── database        // database configurations
-│   └── os              // operating system specific configs
+│   ├── database        // database configurations
+│   └── os              // operating system specific configs
 ├── dto                 // data transfer objects
-│   └── github          // github-specific DTOs
+│   └── github          // github-specific DTOs
 ├── model               // domain/business models
 ├── navigation          // navigation management for the Coordinator
 ├── repository          // data access layer
 ├── service             // business services and logic
+│   ├── business        // core business services
+│   ├── external        // integration with external APIs or systems
+│   └── ui              // services interacting with the UI (audio, file processing, etc.)
 ├── view                // UI views and components
-│   └── component       // reusable UI components
-│       ├── list        // list components
-│       └── toaster     // toaster notifications
+│   └── component       // reusable UI components
+│       ├── list        // list components
+│       └── toaster     // toaster notifications
 └── viewmodel           // view models for MVVM pattern
     └── state           // state holders (observable state for ViewModels, e.g., PlayerStateHolder)
 ```
