@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.dto.PlayerDto;
-import fr.softsf.sudokufx.service.PlayerService;
+import fr.softsf.sudokufx.service.business.PlayerService;
 
 /**
  * State holder for the current {@link PlayerDto} in the application.

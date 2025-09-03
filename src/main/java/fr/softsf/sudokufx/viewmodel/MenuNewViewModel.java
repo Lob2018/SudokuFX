@@ -18,7 +18,7 @@ import javafx.concurrent.Task;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.service.VersionService;
+import fr.softsf.sudokufx.service.external.VersionService;
 
 /**
  * ViewModel for managing the "New" menu UI state, accessibility labels, and update status.

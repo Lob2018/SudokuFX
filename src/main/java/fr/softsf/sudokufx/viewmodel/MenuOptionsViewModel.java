@@ -31,8 +31,8 @@ import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
-import fr.softsf.sudokufx.service.AsyncFileProcessorService;
-import fr.softsf.sudokufx.service.AudioService;
+import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
+import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 
@@ -100,6 +100,8 @@ public class MenuOptionsViewModel {
 
     private static final String ICON_MUTE_ON = "\ue050";
     private static final String ICON_MUTE_OFF = "\ue04f";
+
+    private ToasterVBox toaster;
 
     public MenuOptionsViewModel(
             AudioService audioService, AsyncFileProcessorService asyncFileProcessorService) {
@@ -417,18 +419,19 @@ public class MenuOptionsViewModel {
      * @param toaster The toaster component for user notifications during image loading
      * @param spinner The spinner component to indicate loading state
      * @see #setColorFromModel(GridPane, ColorPicker, String)
-     * @see #loadBackgroundImage(File, ToasterVBox, SpinnerGridPane, GridPane)
+     * @see #loadBackgroundImage(File, SpinnerGridPane, GridPane)
      */
     public void init(
             GridPane sudokuFX,
             ColorPicker menuOptionsButtonColor,
             ToasterVBox toaster,
             SpinnerGridPane spinner) {
-        // TODO: SERVICE GET & SET COLOR OR IMAGE AND GRID TRANSPARENCY
+        this.toaster = toaster;
+        // TODO: SERVICE GET & SET
         // IF COLOR
         setColorFromModel(sudokuFX, menuOptionsButtonColor, "99b3ffcd");
         // IF IMAGE
-        loadBackgroundImage(new File("C:\\Users"), toaster, spinner, sudokuFX);
+        loadBackgroundImage(new File("C:\\Users"), spinner, sudokuFX);
         // IF GRID ISOPAQUE
         gridOpacityProperty.set(true);
         // IF MUTE ISMUTED
@@ -476,12 +479,10 @@ public class MenuOptionsViewModel {
      * and resizing.
      *
      * @param selectedFile the image file to load; must not be null
-     * @param toaster the toaster component for displaying messages; must not be null
      * @param spinner the spinner component to indicate loading; must not be null
      * @param sudokuFX the GridPane where the background image will be applied; must not be null
      */
-    public void loadBackgroundImage(
-            File selectedFile, ToasterVBox toaster, SpinnerGridPane spinner, GridPane sudokuFX) {
+    public void loadBackgroundImage(File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
         if (selectedFile == null || !imageUtils.isValidImage(selectedFile)) {
             String errorMessage =
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
