@@ -15,7 +15,6 @@ import javafx.concurrent.Task;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 
 import fr.softsf.sudokufx.common.enums.I18n;
@@ -31,13 +30,16 @@ public class AsyncFileProcessorService {
     /**
      * Executes a long-running file processing task asynchronously with UI notifications.
      *
+     * <p>The method runs the provided {@code taskFunction} on a background thread. It shows a
+     * spinner and a toast message while processing, and updates the UI upon success or failure.
+     *
      * @param <T> the result type of the task
      * @param selectedFile the file to process; must not be null
      * @param spinner UI spinner to show progress; must not be null
      * @param toaster UI toaster to display messages; must not be null
      * @param taskFunction function to process the file and return a result; must not be null
      * @param onSuccess callback to execute on success with the result; must not be null
-     * @param onError callback to execute on error with the exception; can be null
+     * @param onError callback to execute on error with the exception; must not be null
      * @throws NullPointerException if any required parameter is null
      */
     public <T> void processFileAsync(
@@ -46,18 +48,22 @@ public class AsyncFileProcessorService {
             ToasterVBox toaster,
             Function<File, T> taskFunction,
             Consumer<T> onSuccess,
-            @Nullable Consumer<Throwable> onError) {
+            Consumer<Throwable> onError) {
+
         Objects.requireNonNull(selectedFile, "selectedFile must not be null");
         Objects.requireNonNull(spinner, "spinner must not be null");
         Objects.requireNonNull(toaster, "toaster must not be null");
         Objects.requireNonNull(taskFunction, "taskFunction must not be null");
         Objects.requireNonNull(onSuccess, "onSuccess must not be null");
+        Objects.requireNonNull(onError, "onError must not be null");
+
         spinner.showSpinner(true);
         toaster.addToast(
                 I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.load"),
                 selectedFile.toURI().toString(),
                 ToastLevels.INFO,
                 false);
+
         Task<Optional<T>> task =
                 new Task<>() {
                     @Override
@@ -101,18 +107,16 @@ public class AsyncFileProcessorService {
                                     toaster.removeToast();
                                     Throwable ex = e.getSource().getException();
                                     LOG.error("Async task failed: {}", ex.getMessage(), ex);
-                                    if (onError != null) {
-                                        onError.accept(ex);
-                                    }
+                                    onError.accept(ex);
                                     toaster.addToast(
                                             I18n.INSTANCE.getValue(
                                                     "toast.error.optionsviewmodel.ontaskerror"),
                                             Objects.toString(ex.getMessage(), ""),
                                             ToastLevels.ERROR,
                                             true);
-
                                     spinner.showSpinner(false);
                                 }));
+
         Thread thread = new Thread(task, "AsyncFileProcessorThread");
         thread.setDaemon(true);
         thread.start();
