@@ -178,7 +178,7 @@ class MenuOptionsViewModelUTest {
             viewModel.loadBackgroundImage(validFile, spinnerMock, sudokuFX);
             verify(asyncServiceMock)
                     .processFileAsync(
-                            eq(validFile), eq(spinnerMock), eq(toasterMock), any(), any(), any());
+                            eq(validFile), eq(spinnerMock), eq(toasterMock), any(), any());
         }
     }
 
@@ -263,7 +263,6 @@ class MenuOptionsViewModelUTest {
                         eq(spinnerMockLocal),
                         eq(toasterMockLocal),
                         processorCaptor.capture(),
-                        any(),
                         any());
         vm.loadBackgroundImage(imageFile, spinnerMockLocal, gridMock);
         verify(asyncServiceMock)
@@ -271,7 +270,6 @@ class MenuOptionsViewModelUTest {
                         eq(imageFile),
                         eq(spinnerMockLocal),
                         eq(toasterMockLocal),
-                        any(),
                         any(),
                         any());
         BackgroundImage backgroundImage = processorCaptor.getValue().apply(imageFile);

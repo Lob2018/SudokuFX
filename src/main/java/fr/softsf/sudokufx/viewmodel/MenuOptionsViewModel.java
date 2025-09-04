@@ -7,9 +7,7 @@ package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
 import java.text.MessageFormat;
-import java.util.Objects;
 import java.util.function.Supplier;
-import javafx.application.Platform;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
@@ -466,17 +464,17 @@ public class MenuOptionsViewModel {
      *
      * <ul>
      *   <li>Validates that the selected file is a non-null, valid image.
-     *   <li>If invalid, logs an error and shows an error toast via the provided {@link
-     *       ToasterVBox}.
-     *   <li>If valid, delegates the asynchronous loading, resizing, and conversion to {@link
+     *   <li>If invalid, logs an error and shows an error toast via {@link ToasterVBox}.
+     *   <li>If valid, delegates asynchronous loading, resizing, and conversion to {@link
      *       AsyncFileProcessorService}.
      *   <li>On success, sets the resulting {@link BackgroundImage} on the provided {@link
      *       GridPane}.
-     *   <li>On failure, logs the exception and displays an error toast via {@link ToasterVBox}.
+     *   <li>Errors and success notifications are handled internally; no callbacks for errors or
+     *       success toast are needed.
      * </ul>
      *
-     * <p>The asynchronous processing ensures that the UI thread is not blocked during image loading
-     * and resizing.
+     * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and
+     * resizing.
      *
      * @param selectedFile the image file to load; must not be null
      * @param spinner the spinner component to indicate loading; must not be null
@@ -505,23 +503,18 @@ public class MenuOptionsViewModel {
                                     true);
                     return imageUtils.createBackgroundImage(resizedImage);
                 },
-                backgroundImage -> sudokuFX.setBackground(new Background(backgroundImage)),
-                ex ->
-                        Platform.runLater(
-                                () -> {
-                                    toaster.removeToast();
-                                    LOG.error(
-                                            "██ Exception onImageTaskError : {}",
-                                            ex.getMessage(),
-                                            ex);
-                                    toaster.addToast(
-                                            I18n.INSTANCE.getValue(
-                                                    "toast.error.optionsviewmodel.ontaskerror"),
-                                            Objects.toString(ex.getMessage(), ""),
-                                            ToastLevels.ERROR,
-                                            true);
-                                    spinner.showSpinner(false);
-                                }));
+                backgroundImage -> sudokuFX.setBackground(new Background(backgroundImage)));
+    }
+
+    public void saveSong(File file) {
+        // TODO save the song path to base
+        String savedPath = file.getAbsolutePath();
+        toaster.addToast(
+                MessageFormat.format(
+                        I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"), file.getName()),
+                savedPath,
+                ToastLevels.INFO,
+                false);
     }
 
     /**
