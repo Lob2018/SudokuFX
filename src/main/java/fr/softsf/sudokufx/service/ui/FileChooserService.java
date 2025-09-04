@@ -13,7 +13,6 @@ import javafx.stage.Stage;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Service;
 
 import fr.softsf.sudokufx.common.enums.I18n;
@@ -45,20 +44,17 @@ public class FileChooserService {
      * Opens a FileChooser dialog for the specified file type.
      *
      * <p>If the user selects a valid file, it is returned wrapped in an {@link Optional}. If the
-     * user cancels or an error occurs, {@link Optional#empty()} is returned.
+     * user cancels the dialog or if an error occurs, {@link Optional#empty()} is returned.
      *
-     * @param ownerStage the parent Stage for the dialog; can be null, in which case the method
-     *     returns Optional.empty()
-     * @param type the type of file to choose (IMAGE or AUDIO); must not be null
-     * @return an {@link Optional} containing the selected file, or empty if cancelled or failed
-     * @throws NullPointerException if {@code type} is null
+     * @param ownerStage the parent {@link Stage} for the dialog; must not be {@code null}
+     * @param type the type of file to choose (IMAGE or AUDIO); must not be {@code null}
+     * @return an {@link Optional} containing the selected file, or {@link Optional#empty()} if the
+     *     user cancels or if an error occurs
+     * @throws NullPointerException if {@code ownerStage} or {@code type} is {@code null}
      */
-    public Optional<File> chooseFile(@Nullable Stage ownerStage, FileType type) {
+    public Optional<File> chooseFile(Stage ownerStage, FileType type) {
+        Objects.requireNonNull(ownerStage, "Stage must not be null");
         Objects.requireNonNull(type, "FileType must not be null");
-        if (ownerStage == null) {
-            LOG.warn("Owner stage is null, cannot open file chooser");
-            return Optional.empty();
-        }
         try {
             FileChooser fileChooser = new FileChooser();
             File initialDir = new File(System.getProperty("user.home"));
