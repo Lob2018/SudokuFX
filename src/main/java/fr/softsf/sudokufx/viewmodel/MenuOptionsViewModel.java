@@ -467,14 +467,12 @@ public class MenuOptionsViewModel {
      *   <li>If invalid, logs an error and shows an error toast via {@link ToasterVBox}.
      *   <li>If valid, delegates asynchronous loading, resizing, and conversion to {@link
      *       AsyncFileProcessorService}.
-     *   <li>On success, sets the resulting {@link BackgroundImage} on the provided {@link
-     *       GridPane}.
-     *   <li>Errors and success notifications are handled internally; no callbacks for errors or
-     *       success toast are needed.
+     *   <li>On success, sets the resulting {@link BackgroundImage} on the provided {@link GridPane}.
+     *   <li>Saving the background path to the database or other persistence should be handled externally.
+     *   <li>Errors are handled internally; no callbacks for errors are needed.
      * </ul>
      *
-     * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and
-     * resizing.
+     * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and resizing.
      *
      * @param selectedFile the image file to load; must not be null
      * @param spinner the spinner component to indicate loading; must not be null
@@ -494,17 +492,31 @@ public class MenuOptionsViewModel {
                 toaster,
                 file -> {
                     ImageMeta meta = imageUtils.getImageMeta(file);
-                    Image resizedImage =
-                            new Image(
-                                    file.toURI().toString(),
-                                    meta.width() * meta.scaleFactor(),
-                                    meta.height() * meta.scaleFactor(),
-                                    true,
-                                    true);
+                    Image resizedImage = new Image(
+                            file.toURI().toString(),
+                            meta.width() * meta.scaleFactor(),
+                            meta.height() * meta.scaleFactor(),
+                            true,
+                            true
+                    );
                     return imageUtils.createBackgroundImage(resizedImage);
                 },
-                backgroundImage -> sudokuFX.setBackground(new Background(backgroundImage)));
+                backgroundImage -> {
+                    sudokuFX.setBackground(new Background(backgroundImage));
+                    // TODO save the image path to base
+                    toaster.addToast(
+                            MessageFormat.format(
+                                    I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
+                                    selectedFile.getName()
+                            ),
+                            selectedFile.toURI().toString(),
+                            ToastLevels.INFO,
+                            false
+                    );
+                }
+        );
     }
+
 
     public void saveSong(File file) {
         // TODO save the song path to base
