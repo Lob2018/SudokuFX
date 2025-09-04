@@ -393,8 +393,9 @@
             <exclude>fr/softsf/sudokufx/common/interfaces/**</exclude>
             <exclude>fr/softsf/sudokufx/common/util/SpringContextInitializer$*</exclude>
             <exclude>fr/softsf/sudokufx/benchmark/**</exclude>
-            <exclude>fr/softsf/sudokufx/service/VersionService$*</exclude>
             <exclude>fr/softsf/sudokufx/viewmodel/MenuOptionsViewModel$*</exclude>
+            <exclude>fr/softsf/sudokufx/service/ui/AsyncFileProcessorService$*</exclude>
+            <exclude>fr/softsf/sudokufx/service/external/VersionService$*</exclude>
           </excludes>
         </configuration>
         <executions>
