@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_play_effect_tests.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_integration_tests.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="181,-32 0,-32 0,0 181,0 181,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.testing.unit.service.</text>
-<text text-anchor="middle" x="90.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AudioServiceUTest.PlayEffectTests</text>
+<text text-anchor="middle" x="90.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AudioServiceUTest.IntegrationTests</text>
 </a>
 </g>
 </g>

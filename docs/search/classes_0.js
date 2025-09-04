@@ -9,5 +9,7 @@ var searchData=
   ['applicationkeystoreitest_6',['ApplicationKeystoreITest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html',1,'fr::softsf::sudokufx::config::database']]],
   ['asyncfileprocessorservice_7',['AsyncFileProcessorService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html',1,'fr::softsf::sudokufx::service::ui']]],
   ['audioservice_8',['AudioService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html',1,'fr::softsf::sudokufx::service::ui']]],
-  ['audioserviceutest_9',['AudioServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test.html',1,'fr::softsf::sudokufx::testing::unit::service']]]
+  ['audioserviceutest_9',['AudioServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test.html',1,'fr::softsf::sudokufx::testing::unit::service']]],
+  ['audioutils_10',['AudioUtils',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html',1,'fr::softsf::sudokufx::common::util']]],
+  ['audioutilsutest_11',['AudioUtilsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_audio_utils_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]]
 ];

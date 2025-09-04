@@ -109,14 +109,14 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_asy
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service__coll__graph.svg" width="268" height="192"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service__coll__graph.svg" width="242" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
-<tr class="memitem:aed489e698d9c80fa30b0e6854b19b216" id="r_aed489e698d9c80fa30b0e6854b19b216"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed489e698d9c80fa30b0e6854b19b216">processFileAsync</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess, @Nullable Consumer&lt; Throwable &gt; onError)</td></tr>
-<tr class="memdesc:aed489e698d9c80fa30b0e6854b19b216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a long-running file processing task asynchronously with UI notifications.  <br /></td></tr>
-<tr class="separator:aed489e698d9c80fa30b0e6854b19b216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a575b3c705cc0bf1d3cb5f2cabd5ceadc" id="r_a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a575b3c705cc0bf1d3cb5f2cabd5ceadc">processFileAsync</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess)</td></tr>
+<tr class="memdesc:a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a long-running file task asynchronously with UI notifications.  <br /></td></tr>
+<tr class="separator:a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -124,8 +124,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a10036f04967cf7920c9d8c547ed89ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aed489e698d9c80fa30b0e6854b19b216" name="aed489e698d9c80fa30b0e6854b19b216"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed489e698d9c80fa30b0e6854b19b216">&#9670;&#160;</a></span>processFileAsync()</h2>
+<a id="a575b3c705cc0bf1d3cb5f2cabd5ceadc" name="a575b3c705cc0bf1d3cb5f2cabd5ceadc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a575b3c705cc0bf1d3cb5f2cabd5ceadc">&#9670;&#160;</a></span>processFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,12 +156,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Consumer&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>onSuccess</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">@Nullable Consumer&lt; Throwable &gt;</td>          <td class="paramname"><span class="paramname"><em>onError</em></span>&#160;)</td>
+          <td class="paramtype">Consumer&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>onSuccess</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -171,16 +166,16 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Executes a long-running file processing task asynchronously with UI notifications. </p>
+<p>Executes a long-running file task asynchronously with UI notifications. </p>
+<p>The task runs on a background thread. A spinner and toast are shown during processing. On success, the result is passed to <code class="JavaDocCode">onSuccess</code>. Errors are handled internally (logged, toast shown, spinner hidden); no error callback is needed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">&lt;T&gt;</td><td>the result type of the task </td></tr>
+    <tr><td class="paramname">&lt;T&gt;</td><td>the result type </td></tr>
     <tr><td class="paramname">selectedFile</td><td>the file to process; must not be null </td></tr>
-    <tr><td class="paramname">spinner</td><td>UI spinner to show progress; must not be null </td></tr>
-    <tr><td class="paramname">toaster</td><td>UI toaster to display messages; must not be null </td></tr>
+    <tr><td class="paramname">spinner</td><td>the UI spinner to indicate progress; must not be null </td></tr>
+    <tr><td class="paramname">toaster</td><td>the UI toaster to display messages; must not be null </td></tr>
     <tr><td class="paramname">taskFunction</td><td>function to process the file and return a result; must not be null </td></tr>
-    <tr><td class="paramname">onSuccess</td><td>callback to execute on success with the result; must not be null </td></tr>
-    <tr><td class="paramname">onError</td><td>callback to execute on error with the exception; can be null </td></tr>
+    <tr><td class="paramname">onSuccess</td><td>callback executed on the UI thread upon success; must not be null </td></tr>
   </table>
   </dd>
 </dl>
@@ -195,7 +190,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_aed489e698d9c80fa30b0e6854b19b216_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_a575b3c705cc0bf1d3cb5f2cabd5ceadc_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -232,7 +227,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html">ui</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></li>
-    <li class="footer">Generated on Wed Sep 3 2025 18:25:15 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Sep 4 2025 11:14:43 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -114,7 +114,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_fil
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service__coll__graph.svg" width="215" height="166"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service__coll__graph.svg" width="236" height="150"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -125,9 +125,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a758018c814c4e674ad9e0483dc5b00ae" id="r_a758018c814c4e674ad9e0483dc5b00ae"><td class="memItemLeft" align="right" valign="top">Optional&lt; File &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a758018c814c4e674ad9e0483dc5b00ae">chooseFile</a> (@Nullable Stage ownerStage, <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html">FileType</a> type)</td></tr>
-<tr class="memdesc:a758018c814c4e674ad9e0483dc5b00ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a FileChooser dialog for the specified file type.  <br /></td></tr>
-<tr class="separator:a758018c814c4e674ad9e0483dc5b00ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26659c12bad824e2db9f33325f7100fa" id="r_a26659c12bad824e2db9f33325f7100fa"><td class="memItemLeft" align="right" valign="top">Optional&lt; File &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26659c12bad824e2db9f33325f7100fa">chooseFile</a> (Stage ownerStage, <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html">FileType</a> type)</td></tr>
+<tr class="memdesc:a26659c12bad824e2db9f33325f7100fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a FileChooser dialog for the specified file type.  <br /></td></tr>
+<tr class="separator:a26659c12bad824e2db9f33325f7100fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -152,8 +152,8 @@ Setting an initial directory (user home by default) </li>
 Gracefully handling errors and returning Optional.empty() if cancelled or failed </li>
 </ul>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a758018c814c4e674ad9e0483dc5b00ae" name="a758018c814c4e674ad9e0483dc5b00ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a758018c814c4e674ad9e0483dc5b00ae">&#9670;&#160;</a></span>chooseFile()</h2>
+<a id="a26659c12bad824e2db9f33325f7100fa" name="a26659c12bad824e2db9f33325f7100fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26659c12bad824e2db9f33325f7100fa">&#9670;&#160;</a></span>chooseFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,7 +161,7 @@ Gracefully handling errors and returning Optional.empty() if cancelled or failed
         <tr>
           <td class="memname">Optional&lt; File &gt; fr.softsf.sudokufx.service.ui.FileChooserService.chooseFile </td>
           <td>(</td>
-          <td class="paramtype">@Nullable Stage</td>          <td class="paramname"><span class="paramname"><em>ownerStage</em></span>, </td>
+          <td class="paramtype">Stage</td>          <td class="paramname"><span class="paramname"><em>ownerStage</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -172,18 +172,18 @@ Gracefully handling errors and returning Optional.empty() if cancelled or failed
 </div><div class="memdoc">
 
 <p>Opens a FileChooser dialog for the specified file type. </p>
-<p>If the user selects a valid file, it is returned wrapped in an <code><a class="el" href="">Optional</a></code>. If the user cancels or an error occurs, <code><a class="el" href="">Optional#empty()</a></code> is returned.</p>
+<p>If the user selects a valid file, it is returned wrapped in an <code><a class="el" href="">Optional</a></code>. If the user cancels the dialog or if an error occurs, <code><a class="el" href="">Optional#empty()</a></code> is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ownerStage</td><td>the parent Stage for the dialog; can be null, in which case the method returns Optional.empty() </td></tr>
-    <tr><td class="paramname">type</td><td>the type of file to choose (IMAGE or AUDIO); must not be null </td></tr>
+    <tr><td class="paramname">ownerStage</td><td>the parent <code><a class="el" href="">Stage</a></code> for the dialog; must not be <code class="JavaDocCode">null</code> </td></tr>
+    <tr><td class="paramname">type</td><td>the type of file to choose (IMAGE or AUDIO); must not be <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>an <code><a class="el" href="">Optional</a></code> containing the selected file, or empty if cancelled or failed </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>an <code><a class="el" href="">Optional</a></code> containing the selected file, or <code><a class="el" href="">Optional#empty()</a></code> if the user cancels or if an error occurs </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">type</code> is null </td></tr>
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">ownerStage</code> or <code class="JavaDocCode">type</code> is <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -192,7 +192,7 @@ Gracefully handling errors and returning Optional.empty() if cancelled or failed
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_a758018c814c4e674ad9e0483dc5b00ae_cgraph.svg" width="448" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_a26659c12bad824e2db9f33325f7100fa_cgraph.svg" width="448" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -269,7 +269,7 @@ Gracefully handling errors and returning Optional.empty() if cancelled or failed
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html">ui</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service.html">FileChooserService</a></li>
-    <li class="footer">Generated on Wed Sep 3 2025 18:25:15 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Sep 4 2025 11:14:43 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

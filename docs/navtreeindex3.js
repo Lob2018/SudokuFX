@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#a80773c1307f5439f777bde382edd640f":[2,0,0,0,0,2,1,1,1],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#a84b34bfdbd0f33132667bf15dba7abd5":[1,0,0,0,0,2,1,1,2],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#a84b34bfdbd0f33132667bf15dba7abd5":[2,0,0,0,0,2,1,1,2],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#aa48cf58eac16df4e7e69d4ea83266f29":[1,0,0,0,0,2,1,1,3],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#aa48cf58eac16df4e7e69d4ea83266f29":[2,0,0,0,0,2,1,1,3],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#ab15e762184f5683f9e04b0be81e3f268":[1,0,0,0,0,2,1,1,4],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#ab15e762184f5683f9e04b0be81e3f268":[2,0,0,0,0,2,1,1,4],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#ae6b6ff3507d3de068439cec0f9c97b42":[1,0,0,0,0,2,1,1,5],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html#ae6b6ff3507d3de068439cec0f9c97b42":[2,0,0,0,0,2,1,1,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#aca8acaefd3683ba39f555599f650b62c":[2,0,0,0,0,3,3,8],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#ade52965ca581f7a3935077795716d807":[1,0,0,0,0,4,3,11],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#ade52965ca581f7a3935077795716d807":[2,0,0,0,0,3,3,11],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html":[1,0,0,0,0,4,3,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html":[2,0,0,0,0,3,3,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html#a5b8cfa073656206f4de4947d48f8f3fb":[1,0,0,0,0,4,3,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html#a5b8cfa073656206f4de4947d48f8f3fb":[2,0,0,0,0,3,3,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html#a8aaa633c9f5c68de3f4979311e9dee3f":[1,0,0,0,0,4,3,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html#a8aaa633c9f5c68de3f4979311e9dee3f":[2,0,0,0,0,3,3,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html#a8deee10f6034d917adf9b13f949235d7":[1,0,0,0,0,4,3,0,1]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html":[1,0,0,0,0,4,3,0]
 };

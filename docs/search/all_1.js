@@ -56,6 +56,11 @@ var searchData=
   ['audioserviceutest_53',['AudioServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test.html',1,'fr::softsf::sudokufx::testing::unit::service']]],
   ['audioserviceutest_2ejava_54',['AudioServiceUTest.java',['../_audio_service_u_test_8java.html',1,'']]],
   ['audiospy_55',['audioSpy',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#a0a220ae4eb773de15ab25609c3f1bc6e',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModelUTest']]],
-  ['authorization_56',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]],
-  ['auto_5fhide_5fmini_5fmenu_5fdelay_5fms_57',['AUTO_HIDE_MINI_MENU_DELAY_MS',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab9d123cb50e619e0bbff4db41cb452f0',1,'fr::softsf::sudokufx::view::DefaultView']]]
+  ['audioutils_56',['AudioUtils',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html',1,'fr::softsf::sudokufx::common::util']]],
+  ['audioutils_57',['audioUtils',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4b4c0f8767c31233d18060add72c4952',1,'fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.audioUtils'],['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_audio_utils_u_test.html#a6843a77506f540ffbd872eac6d6524c5',1,'fr.softsf.sudokufx.testing.unit.common.util.AudioUtilsUTest.audioUtils']]],
+  ['audioutils_2ejava_58',['AudioUtils.java',['../_audio_utils_8java.html',1,'']]],
+  ['audioutilsutest_59',['AudioUtilsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_audio_utils_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
+  ['audioutilsutest_2ejava_60',['AudioUtilsUTest.java',['../_audio_utils_u_test_8java.html',1,'']]],
+  ['authorization_61',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]],
+  ['auto_5fhide_5fmini_5fmenu_5fdelay_5fms_62',['AUTO_HIDE_MINI_MENU_DELAY_MS',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ab9d123cb50e619e0bbff4db41cb452f0',1,'fr::softsf::sudokufx::view::DefaultView']]]
 ];

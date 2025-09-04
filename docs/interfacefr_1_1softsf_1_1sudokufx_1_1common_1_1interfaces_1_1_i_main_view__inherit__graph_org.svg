@@ -167,7 +167,7 @@
 <text text-anchor="start" x="217.5" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="226" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuHiddenViewModel</text>
 <text text-anchor="start" x="226" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuHiddenViewModel</text>
-<text text-anchor="start" x="226" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 93 more...</text>
+<text text-anchor="start" x="226" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 95 more...</text>
 <text text-anchor="start" x="217.5" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="226" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int AUTO</text>
 <text text-anchor="start" x="226" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00">_HIDE_MINI_MENU_DELAY_MS</text>
@@ -254,7 +254,7 @@
 <text text-anchor="start" x="226" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel.ActiveMenu menuType)</text>
 <text text-anchor="start" x="217.5" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="226" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">void gridInitialization()</text>
-<text text-anchor="start" x="226" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 19 more...</text>
+<text text-anchor="start" x="226" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 20 more...</text>
 <polygon fill="#666666" stroke="#666666" points="212,-1030 212,-1030 399.5,-1030 399.5,-1030 212,-1030"/>
 <polygon fill="#666666" stroke="#666666" points="212,-666 212,-666 224,-666 224,-666 212,-666"/>
 <polygon fill="#666666" stroke="#666666" points="224,-666 224,-666 399.5,-666 399.5,-666 224,-666"/>

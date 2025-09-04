@@ -1,0 +1,9 @@
+<map id="src/main/java/fr/softsf/sudokufx/common/util/AudioUtils.java" name="src/main/java/fr/softsf/sudokufx/common/util/AudioUtils.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="95,5,248,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,90,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,67,77,113,74,108,133,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="114,120,229,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,64,174,104,169,104,169,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="254,112,495,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,62,318,102,316,107,231,67"/>
+</map>

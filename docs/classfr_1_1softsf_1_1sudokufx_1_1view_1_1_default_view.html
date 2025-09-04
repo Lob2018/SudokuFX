@@ -203,6 +203,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a6412e7d21a90c98fa3b40050ec3e30a4" id="r_a6412e7d21a90c98fa3b40050ec3e30a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6412e7d21a90c98fa3b40050ec3e30a4">handleFileImageChooser</a> ()</td></tr>
 <tr class="memdesc:a6412e7d21a90c98fa3b40050ec3e30a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file chooser for a background image and passes the selected file to the ViewModel for asynchronous loading.  <br /></td></tr>
 <tr class="separator:a6412e7d21a90c98fa3b40050ec3e30a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1138477afbb6ef9790a8af0ee1b4bc53" id="r_a1138477afbb6ef9790a8af0ee1b4bc53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1138477afbb6ef9790a8af0ee1b4bc53">handleFileSongChooser</a> ()</td></tr>
+<tr class="memdesc:a1138477afbb6ef9790a8af0ee1b4bc53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file chooser for a song and passes the selected file to the ViewModel for saving the path.  <br /></td></tr>
+<tr class="separator:a1138477afbb6ef9790a8af0ee1b4bc53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f7bb41f1c5fe390f3917b4a4d20bb91" id="r_a2f7bb41f1c5fe390f3917b4a4d20bb91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f7bb41f1c5fe390f3917b4a4d20bb91">handleGridOpacity</a> ()</td></tr>
 <tr class="memdesc:a2f7bb41f1c5fe390f3917b4a4d20bb91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles grid transparency toggle button action.  <br /></td></tr>
 <tr class="separator:a2f7bb41f1c5fe390f3917b4a4d20bb91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -397,6 +400,10 @@ Private Attributes</h2></td></tr>
 <tr class="separator:abddff88ed485706869f961577bee025c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12fe248a8415cffe07adb7c4ba06525d" id="r_a12fe248a8415cffe07adb7c4ba06525d"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12fe248a8415cffe07adb7c4ba06525d">menuOptionsButtonReduceText</a></td></tr>
 <tr class="separator:a12fe248a8415cffe07adb7c4ba06525d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf84730174237294d7b712f12f2b238" id="r_aaaf84730174237294d7b712f12f2b238"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf84730174237294d7b712f12f2b238">menuOptionsButtonSong</a></td></tr>
+<tr class="separator:aaaf84730174237294d7b712f12f2b238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a383d9beed07d4d2717012a345c0e2c5d" id="r_a383d9beed07d4d2717012a345c0e2c5d"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a383d9beed07d4d2717012a345c0e2c5d">menuOptionsButtonSongText</a></td></tr>
+<tr class="separator:a383d9beed07d4d2717012a345c0e2c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4caab977b70574df2dec099db185bfd3" id="r_a4caab977b70574df2dec099db185bfd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4caab977b70574df2dec099db185bfd3">menuOptionsViewModel</a></td></tr>
 <tr class="separator:a4caab977b70574df2dec099db185bfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae48913e57ddc9ac64c73f777aff22564" id="r_ae48913e57ddc9ac64c73f777aff22564"><td class="memItemLeft" align="right" valign="top">VBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae48913e57ddc9ac64c73f777aff22564">menuPlayer</a></td></tr>
@@ -971,6 +978,33 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Opens a file chooser for a background image and passes the selected file to the ViewModel for asynchronous loading. </p>
+
+</div>
+</div>
+<a id="a1138477afbb6ef9790a8af0ee1b4bc53" name="a1138477afbb6ef9790a8af0ee1b4bc53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1138477afbb6ef9790a8af0ee1b4bc53">&#9670;&#160;</a></span>handleFileSongChooser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.handleFileSongChooser </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens a file chooser for a song and passes the selected file to the ViewModel for saving the path. </p>
 
 </div>
 </div>
@@ -3395,6 +3429,50 @@ Loads and applies saved configuration settings to the UI controls, including bac
 
 </div>
 </div>
+<a id="aaaf84730174237294d7b712f12f2b238" name="aaaf84730174237294d7b712f12f2b238"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaf84730174237294d7b712f12f2b238">&#9670;&#160;</a></span>menuOptionsButtonSong</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button fr.softsf.sudokufx.view.DefaultView.menuOptionsButtonSong</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a383d9beed07d4d2717012a345c0e2c5d" name="a383d9beed07d4d2717012a345c0e2c5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a383d9beed07d4d2717012a345c0e2c5d">&#9670;&#160;</a></span>menuOptionsButtonSongText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Label fr.softsf.sudokufx.view.DefaultView.menuOptionsButtonSongText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4caab977b70574df2dec099db185bfd3" name="a4caab977b70574df2dec099db185bfd3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4caab977b70574df2dec099db185bfd3">&#9670;&#160;</a></span>menuOptionsViewModel</h2>
 
@@ -4174,7 +4252,7 @@ Loads and applies saved configuration settings to the UI controls, including bac
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html">DefaultView</a></li>
-    <li class="footer">Generated on Wed Sep 3 2025 18:25:16 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Sep 4 2025 11:14:44 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

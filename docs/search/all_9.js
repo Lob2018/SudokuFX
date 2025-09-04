@@ -93,6 +93,7 @@ var searchData=
   ['isuptodate_90',['isUpToDate',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#aadceb380c9a9f7bb497140d3b1b5a4bd',1,'fr::softsf::sudokufx::viewmodel::MenuNewViewModel']]],
   ['isuptodateproperty_91',['isUpToDateProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#afbe70999a0a118d69927bea13427c056',1,'fr::softsf::sudokufx::viewmodel::MenuNewViewModel']]],
   ['isvalidatedbyregex_92',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a8e52b7027a3e57d2616e255ea0c68874',1,'fr::softsf::sudokufx::common::enums::MyRegex']]],
-  ['isvalidimage_93',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
-  ['isvalidpassword_94',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a3cba29299fcf22555fcd6751c1f69771',1,'fr::softsf::sudokufx::common::enums::MyRegex']]]
+  ['isvalidaudio_93',['isValidAudio',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html#a11a4ad49c5d299ff5dd1e434eb2e0295',1,'fr::softsf::sudokufx::common::util::AudioUtils']]],
+  ['isvalidimage_94',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
+  ['isvalidpassword_95',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a3cba29299fcf22555fcd6751c1f69771',1,'fr::softsf::sudokufx::common::enums::MyRegex']]]
 ];

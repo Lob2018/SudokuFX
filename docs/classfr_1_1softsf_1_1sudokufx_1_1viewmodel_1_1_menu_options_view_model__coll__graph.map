@@ -1,17 +1,19 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel">
-<area shape="rect" id="Node000001" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="385,1111,622,2860"/>
+<area shape="rect" id="Node000001" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="494,1111,732,2860"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="5,407,215,988"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,987,383,1580,378,1582,196,989"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" title=" " alt="" coords="239,607,496,788"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="380,787,412,1093,407,1094,374,788"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="521,487,759,908"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="620,908,601,1094,595,1093,615,907"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="782,348,1041,1047"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="804,1047,630,1596,625,1594,799,1046"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="836,169,878,239"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="865,253,876,348,870,349,860,254"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="902,124,1161,284"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1015,284,1003,332,998,331,1010,283"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="1007,5,1056,75"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="1034,90,1034,124,1029,124,1029,90"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,987,229,1046,361,1383,490,1694,485,1696,356,1385,224,1048,203,989"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" title=" " alt="" coords="239,615,470,780"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="373,779,494,1378,489,1379,368,780"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="494,487,732,908"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="616,908,616,1094,610,1094,610,908"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html" title="Utility class providing helper methods for common audio&#45;related operations." alt="" coords="756,647,948,748"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="845,748,737,1329,732,1328,840,747"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="972,348,1230,1047"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="974,1040,740,1657,735,1656,969,1038"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1025,169,1068,239"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1054,253,1065,348,1060,349,1049,254"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="1092,124,1350,284"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="1204,284,1193,332,1188,331,1199,283"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1197,5,1245,75"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="1224,90,1224,124,1218,124,1218,90"/>
 </map>

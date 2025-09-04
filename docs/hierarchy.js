@@ -20,6 +20,8 @@ var hierarchy =
     [ "fr.softsf.sudokufx.service.ui.AsyncFileProcessorService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html", null ],
     [ "fr.softsf.sudokufx.service.ui.AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test.html", null ],
+    [ "fr.softsf.sudokufx.common.util.AudioUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.common.util.AudioUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_audio_utils_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageErrorTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageSuccessTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_success_tests.html", null ],
     [ "fr.softsf.sudokufx.benchmark.BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", null ],

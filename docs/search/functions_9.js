@@ -28,6 +28,7 @@ var searchData=
   ['isspringcontextexitonrefresh_25',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a8e83f73acbc106647965ccd74951e76a',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['isuptodateproperty_26',['isUpToDateProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#afbe70999a0a118d69927bea13427c056',1,'fr::softsf::sudokufx::viewmodel::MenuNewViewModel']]],
   ['isvalidatedbyregex_27',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a8e52b7027a3e57d2616e255ea0c68874',1,'fr::softsf::sudokufx::common::enums::MyRegex']]],
-  ['isvalidimage_28',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
-  ['isvalidpassword_29',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a3cba29299fcf22555fcd6751c1f69771',1,'fr::softsf::sudokufx::common::enums::MyRegex']]]
+  ['isvalidaudio_28',['isValidAudio',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html#a11a4ad49c5d299ff5dd1e434eb2e0295',1,'fr::softsf::sudokufx::common::util::AudioUtils']]],
+  ['isvalidimage_29',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
+  ['isvalidpassword_30',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a3cba29299fcf22555fcd6751c1f69771',1,'fr::softsf::sudokufx::common::enums::MyRegex']]]
 ];
