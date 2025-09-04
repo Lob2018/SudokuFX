@@ -27,6 +27,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
+import fr.softsf.sudokufx.common.util.AudioUtils;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
@@ -50,6 +51,7 @@ public class MenuOptionsViewModel {
     private final AudioService audioService;
     private final AsyncFileProcessorService asyncFileProcessorService;
     private final ImageUtils imageUtils;
+    private final AudioUtils audioUtils;
 
     private static final String ROLE_CLOSED = "menu.accessibility.role.description.closed";
     private static final String ROLE_OPENED = "menu.accessibility.role.description.opened";
@@ -109,6 +111,7 @@ public class MenuOptionsViewModel {
     public MenuOptionsViewModel(
             AudioService audioService, AsyncFileProcessorService asyncFileProcessorService) {
         this.imageUtils = new ImageUtils();
+        this.audioUtils = new AudioUtils();
         this.audioService = audioService;
         this.asyncFileProcessorService = asyncFileProcessorService;
         optionsMenuMaxiAccessibleText =
@@ -547,7 +550,28 @@ public class MenuOptionsViewModel {
                 });
     }
 
+    /**
+     * Saves the provided song file path to the database and displays a confirmation toast.
+     *
+     * <p>The method performs the following steps:
+     *
+     * <ul>
+     *   <li>Validates that the {@code file} is non-null and has a supported audio format.
+     *   <li>If invalid, logs an error and shows an error toast via {@link ToasterVBox}.
+     *   <li>If valid, persists the song path to the database.
+     *   <li>Displays a toast notification confirming the song has been saved.
+     * </ul>
+     *
+     * @param file the song file to save; must not be {@code null} and must be a valid audio file
+     */
     public void saveSong(File file) {
+        if (file == null || !audioUtils.isValidAudio(file)) {
+            String errorMessage =
+                    I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileaudiochooser");
+            LOG.error("██ Exception handleFileAudioChooser : {}", errorMessage);
+            toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+            return;
+        }
         String savedPath = file.getAbsolutePath();
         // TODO save the song path to base
         toaster.addToast(

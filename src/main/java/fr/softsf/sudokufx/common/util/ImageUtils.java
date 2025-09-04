@@ -78,7 +78,7 @@ public class ImageUtils {
     public boolean isValidImage(File file) {
         if (Objects.isNull(file)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "The file mustn't be null");
+                    "The image file mustn't be null");
         }
         String fileName = file.getName().toLowerCase();
         return fileName.endsWith(".jpg")

@@ -70,7 +70,7 @@ class ImageUtilsUTest {
                         () -> {
                             imageUtils.isValidImage(null);
                         });
-        assertTrue(ex.getMessage().contains("The file mustn't be null"));
+        assertTrue(ex.getMessage().contains("The image file mustn't be null"));
     }
 
     @Test
