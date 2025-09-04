@@ -103,7 +103,10 @@ class MenuOptionsViewModelUTest {
                         viewModel.optionsMuteTooltipProperty(),
                         viewModel.optionsMuteRoleDescriptionProperty(),
                         viewModel.optionsMuteTextProperty(),
-                        viewModel.optionsMuteIconProperty());
+                        viewModel.optionsMuteIconProperty(),
+                        viewModel.optionsImageAccessibleTextProperty(),
+                        viewModel.optionsImageTooltipProperty(),
+                        viewModel.optionsImageRoleDescriptionProperty());
 
         for (StringBinding binding : bindings) {
             assertNotNull(binding.get(), "Binding should not return null");
@@ -267,11 +270,7 @@ class MenuOptionsViewModelUTest {
         vm.loadBackgroundImage(imageFile, spinnerMockLocal, gridMock);
         verify(asyncServiceMock)
                 .processFileAsync(
-                        eq(imageFile),
-                        eq(spinnerMockLocal),
-                        eq(toasterMockLocal),
-                        any(),
-                        any());
+                        eq(imageFile), eq(spinnerMockLocal), eq(toasterMockLocal), any(), any());
         BackgroundImage backgroundImage = processorCaptor.getValue().apply(imageFile);
         assertNotNull(backgroundImage, "The BackgroundImage must be created correctly");
     }

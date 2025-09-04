@@ -196,6 +196,8 @@ public final class DefaultView implements IMainView {
     @FXML private Button menuOptionsButtonMute;
     @FXML private Label menuOptionsButtonMuteText;
     @FXML private Text menuOptionsButtonMuteIcon;
+    @FXML private Button menuOptionsButtonSong;
+    @FXML private Label menuOptionsButtonSongText;
 
     private Timeline hideMiniMenuTimeline;
 
@@ -423,9 +425,23 @@ public final class DefaultView implements IMainView {
         menuOptionsButtonMute
                 .accessibleRoleDescriptionProperty()
                 .bind(menuOptionsViewModel.optionsMuteRoleDescriptionProperty());
+        menuOptionsButtonSongText
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsSongTextProperty());
+        menuOptionsButtonSong
+                .accessibleTextProperty()
+                .bind(menuOptionsViewModel.optionsSongAccessibleTextProperty());
+        menuOptionsButtonSong
+                .getTooltip()
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsSongTooltipProperty());
+        menuOptionsButtonSong
+                .accessibleRoleDescriptionProperty()
+                .bind(menuOptionsViewModel.optionsSongRoleDescriptionProperty());
 
         menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, toaster, spinner);
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
+        // apply song
     }
 
     /**
@@ -974,6 +990,17 @@ public final class DefaultView implements IMainView {
                 .chooseFile(primaryStage, FileChooserService.FileType.IMAGE)
                 .ifPresent(
                         file -> menuOptionsViewModel.loadBackgroundImage(file, spinner, sudokuFX));
+    }
+
+    /**
+     * Opens a file chooser for a song and passes the selected file to the ViewModel for saving the
+     * path.
+     */
+    @FXML
+    private void handleFileSongChooser() {
+        fileChooserService
+                .chooseFile(primaryStage, FileChooserService.FileType.AUDIO)
+                .ifPresent(file -> menuOptionsViewModel.saveSong(file));
     }
 
     /** Handles grid transparency toggle button action. */

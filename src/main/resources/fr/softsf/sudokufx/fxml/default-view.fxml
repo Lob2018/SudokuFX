@@ -646,7 +646,21 @@
                     </tooltip>
                 </Button>
             </HBox>
-            <Region styleClass="menuMiniButton" visible="false"/>
+            <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
+                <Region styleClass="submenuIndentation" visible="false"/>
+                <Button fx:id="menuOptionsButtonSong" styleClass="menuButton" onAction="#handleFileSongChooser">
+                    <graphic>
+                        <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
+                            <Region styleClass="menuDropdownOpen" visible="false"/>
+                            <Text text="&#xeb82;" styleClass="material"/>
+                            <Label fx:id="menuOptionsButtonSongText" styleClass="root,menuButtonLabel"/>
+                        </HBox>
+                    </graphic>
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
+            </HBox>
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>

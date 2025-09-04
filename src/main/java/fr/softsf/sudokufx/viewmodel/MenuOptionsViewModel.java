@@ -99,6 +99,11 @@ public class MenuOptionsViewModel {
     private static final String ICON_MUTE_ON = "\ue050";
     private static final String ICON_MUTE_OFF = "\ue04f";
 
+    private final StringBinding optionsSongAccessibleText;
+    private final StringBinding optionsSongTooltip;
+    private final StringBinding optionsSongRoleDescription;
+    private final StringBinding optionsSongText;
+
     private ToasterVBox toaster;
 
     public MenuOptionsViewModel(
@@ -174,6 +179,15 @@ public class MenuOptionsViewModel {
         optionsMuteIcon =
                 Bindings.createStringBinding(
                         () -> muteProperty.get() ? ICON_MUTE_ON : ICON_MUTE_OFF, muteProperty);
+        optionsSongAccessibleText = createStringBinding("menu.options.button.song.accessibility");
+        // (chemin vide) Sélectionner la chanson de réussite ou Changer la chanson de réussite, Nom
+        // du Fichier.mp3 est sélectionnée (chemin non vide)
+        optionsSongTooltip =
+                createFormattedBinding(
+                        "menu.options.button.song.accessibility", ROLE_SUBMENU_OPTION);
+        optionsSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        // Chanson (chemin vide) ou nom.mp3 (chemin non vide)
+        optionsSongText = createStringBinding("menu.options.button.song.text");
     }
 
     /**
@@ -402,6 +416,22 @@ public class MenuOptionsViewModel {
         return optionsMuteIcon;
     }
 
+    public StringBinding optionsSongAccessibleTextProperty() {
+        return optionsSongAccessibleText;
+    }
+
+    public StringBinding optionsSongTooltipProperty() {
+        return optionsSongTooltip;
+    }
+
+    public StringBinding optionsSongRoleDescriptionProperty() {
+        return optionsSongRoleDescription;
+    }
+
+    public StringBinding optionsSongTextProperty() {
+        return optionsSongText;
+    }
+
     /**
      * Initializes the menu options UI state, including:
      *
@@ -467,12 +497,15 @@ public class MenuOptionsViewModel {
      *   <li>If invalid, logs an error and shows an error toast via {@link ToasterVBox}.
      *   <li>If valid, delegates asynchronous loading, resizing, and conversion to {@link
      *       AsyncFileProcessorService}.
-     *   <li>On success, sets the resulting {@link BackgroundImage} on the provided {@link GridPane}.
-     *   <li>Saving the background path to the database or other persistence should be handled externally.
+     *   <li>On success, sets the resulting {@link BackgroundImage} on the provided {@link
+     *       GridPane}.
+     *   <li>Saving the background path to the database or other persistence should be handled
+     *       externally.
      *   <li>Errors are handled internally; no callbacks for errors are needed.
      * </ul>
      *
-     * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and resizing.
+     * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and
+     * resizing.
      *
      * @param selectedFile the image file to load; must not be null
      * @param spinner the spinner component to indicate loading; must not be null
@@ -492,13 +525,13 @@ public class MenuOptionsViewModel {
                 toaster,
                 file -> {
                     ImageMeta meta = imageUtils.getImageMeta(file);
-                    Image resizedImage = new Image(
-                            file.toURI().toString(),
-                            meta.width() * meta.scaleFactor(),
-                            meta.height() * meta.scaleFactor(),
-                            true,
-                            true
-                    );
+                    Image resizedImage =
+                            new Image(
+                                    file.toURI().toString(),
+                                    meta.width() * meta.scaleFactor(),
+                                    meta.height() * meta.scaleFactor(),
+                                    true,
+                                    true);
                     return imageUtils.createBackgroundImage(resizedImage);
                 },
                 backgroundImage -> {
@@ -507,20 +540,16 @@ public class MenuOptionsViewModel {
                     toaster.addToast(
                             MessageFormat.format(
                                     I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
-                                    selectedFile.getName()
-                            ),
+                                    selectedFile.getName()),
                             selectedFile.toURI().toString(),
                             ToastLevels.INFO,
-                            false
-                    );
-                }
-        );
+                            false);
+                });
     }
 
-
     public void saveSong(File file) {
-        // TODO save the song path to base
         String savedPath = file.getAbsolutePath();
+        // TODO save the song path to base
         toaster.addToast(
                 MessageFormat.format(
                         I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"), file.getName()),
