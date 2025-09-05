@@ -98,145 +98,145 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html" target="_top" xlink:title="ViewModel managing menu options UI state and accessibility strings.">
-<polygon fill="white" stroke="none" points="570.5,-1620 392.75,-1620 392.75,-308 570.5,-308 570.5,-1620"/>
-<text text-anchor="start" x="417.12" y="-1606.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="428.75" y="-1594.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel</text>
-<text text-anchor="start" x="398.25" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
-<text text-anchor="start" x="406.75" y="-1566.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gridOpacityProperty</text>
-<text text-anchor="start" x="398.25" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
-<text text-anchor="start" x="406.75" y="-1538.5" font-family="Helvetica,sans-Serif" font-size="10.00"> muteProperty</text>
-<text text-anchor="start" x="398.25" y="-1522.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1522.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="406.75" y="-1510.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsAccessibleText</text>
-<text text-anchor="start" x="398.25" y="-1494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1494.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="406.75" y="-1482.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsColorAccessibleText</text>
-<text text-anchor="start" x="398.25" y="-1466.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1466.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="406.75" y="-1454.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsColorRoleDescription</text>
-<text text-anchor="start" x="398.25" y="-1438.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1438.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="406.75" y="-1426.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsColorTooltip</text>
-<text text-anchor="start" x="398.25" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="406.75" y="-1398.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsImageAccessibleText</text>
-<text text-anchor="start" x="398.25" y="-1382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1382.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="406.75" y="-1370.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsImageRoleDescription</text>
-<text text-anchor="start" x="398.25" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="406.75" y="-1342.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsImageText</text>
-<text text-anchor="start" x="398.25" y="-1326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1326.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="406.75" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsImageTooltip</text>
-<text text-anchor="start" x="406.75" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 24 more...</text>
-<text text-anchor="start" x="398.25" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int HEX</text>
-<text text-anchor="start" x="406.75" y="-1270.5" font-family="Helvetica,sans-Serif" font-size="10.00">_RADIX</text>
-<text text-anchor="start" x="398.25" y="-1254.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1254.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="406.75" y="-1242.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_MUTE_OFF</text>
-<text text-anchor="start" x="398.25" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="406.75" y="-1214.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_MUTE_ON</text>
-<text text-anchor="start" x="398.25" y="-1198.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1198.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="406.75" y="-1186.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_OPACITY_OFF</text>
-<text text-anchor="start" x="398.25" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="406.75" y="-1158.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_OPACITY_ON</text>
-<text text-anchor="start" x="398.25" y="-1142.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1142.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="398.25" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="406.75" y="-1114.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROLE_CLOSED</text>
-<text text-anchor="start" x="398.25" y="-1098.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1098.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="406.75" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROLE_OPENED</text>
-<text text-anchor="start" x="398.25" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="406.75" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROLE_SUBMENU_OPTION</text>
-<text text-anchor="start" x="396.75" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel</text>
-<text text-anchor="start" x="406.75" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">(AudioService audioService,</text>
-<text text-anchor="start" x="406.75" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00"> AsyncFileProcessorService</text>
-<text text-anchor="start" x="406.75" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00"> asyncFileProcessorService)</text>
-<text text-anchor="start" x="396.75" y="-990.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-990.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty gridOpacity</text>
-<text text-anchor="start" x="406.75" y="-978.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
-<text text-anchor="start" x="396.75" y="-962.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-962.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(GridPane</text>
-<text text-anchor="start" x="406.75" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00"> sudokuFX, ColorPicker</text>
-<text text-anchor="start" x="406.75" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuOptionsButtonColor,</text>
-<text text-anchor="start" x="406.75" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterVBox toaster, SpinnerGrid</text>
-<text text-anchor="start" x="406.75" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">Pane spinner)</text>
-<text text-anchor="start" x="396.75" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">void loadBackgroundImage</text>
-<text text-anchor="start" x="406.75" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File selectedFile, SpinnerGrid</text>
-<text text-anchor="start" x="406.75" y="-874.5" font-family="Helvetica,sans-Serif" font-size="10.00">Pane spinner, GridPane sudokuFX)</text>
-<text text-anchor="start" x="396.75" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsAccessible</text>
-<text text-anchor="start" x="406.75" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
-<text text-anchor="start" x="396.75" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsColor</text>
-<text text-anchor="start" x="406.75" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
-<text text-anchor="start" x="396.75" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsColor</text>
-<text text-anchor="start" x="406.75" y="-790.5" font-family="Helvetica,sans-Serif" font-size="10.00">RoleDescriptionProperty()</text>
-<text text-anchor="start" x="396.75" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsColor</text>
-<text text-anchor="start" x="406.75" y="-762.5" font-family="Helvetica,sans-Serif" font-size="10.00">TooltipProperty()</text>
-<text text-anchor="start" x="396.75" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsImage</text>
-<text text-anchor="start" x="406.75" y="-734.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
-<text text-anchor="start" x="396.75" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="406.75" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsImage</text>
-<text text-anchor="start" x="406.75" y="-706.5" font-family="Helvetica,sans-Serif" font-size="10.00">RoleDescriptionProperty()</text>
-<text text-anchor="start" x="406.75" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 30 more...</text>
-<text text-anchor="start" x="398.25" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">Observable[] concatDependencies</text>
-<text text-anchor="start" x="406.75" y="-662.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Observable... dependencies)</text>
-<text text-anchor="start" x="398.25" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
-<text text-anchor="start" x="406.75" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndConcatenatedBinding(String</text>
-<text text-anchor="start" x="406.75" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00"> key, Supplier&lt; String &gt; argSupplier,</text>
-<text text-anchor="start" x="406.75" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String suffixKey, Observable...</text>
-<text text-anchor="start" x="406.75" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00"> dependencies)</text>
-<text text-anchor="start" x="398.25" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
-<text text-anchor="start" x="406.75" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key, String</text>
-<text text-anchor="start" x="406.75" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00"> suffixKey)</text>
-<text text-anchor="start" x="398.25" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
-<text text-anchor="start" x="406.75" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key, Supplier</text>
-<text text-anchor="start" x="406.75" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; String &gt; argSupplier, Observable...</text>
-<text text-anchor="start" x="406.75" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00"> dependencies)</text>
-<text text-anchor="start" x="398.25" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>
-<text text-anchor="start" x="406.75" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key)</text>
-<text text-anchor="start" x="398.25" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">String gridOpacityText</text>
-<text text-anchor="start" x="406.75" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">(boolean isOpaque)</text>
-<text text-anchor="start" x="398.25" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initializeAudio</text>
-<text text-anchor="start" x="406.75" y="-422.5" font-family="Helvetica,sans-Serif" font-size="10.00">(boolean muted)</text>
-<text text-anchor="start" x="398.25" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">String muteInfo(boolean</text>
-<text text-anchor="start" x="406.75" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isMuted)</text>
-<text text-anchor="start" x="398.25" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">String muteText(boolean</text>
-<text text-anchor="start" x="406.75" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isMuted)</text>
-<text text-anchor="start" x="398.25" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="406.75" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setColorFromModel</text>
-<text text-anchor="start" x="406.75" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">(GridPane sudokuFX, ColorPicker</text>
-<text text-anchor="start" x="406.75" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuOptionsButtonColor, String</text>
-<text text-anchor="start" x="406.75" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00"> colorValueFromModel)</text>
-<polygon fill="#666666" stroke="#666666" points="392.75,-1590 392.75,-1590 570.5,-1590 570.5,-1590 392.75,-1590"/>
-<polygon fill="#666666" stroke="#666666" points="392.75,-1054 392.75,-1054 404.75,-1054 404.75,-1054 392.75,-1054"/>
-<polygon fill="#666666" stroke="#666666" points="404.75,-1054 404.75,-1054 570.5,-1054 570.5,-1054 404.75,-1054"/>
-<polygon fill="none" stroke="#666666" points="392.75,-308 392.75,-1620 570.5,-1620 570.5,-308 392.75,-308"/>
+<polygon fill="white" stroke="none" points="573.88,-1620 383.38,-1620 383.38,-308 573.88,-308 573.88,-1620"/>
+<text text-anchor="start" x="414.12" y="-1606.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="425.75" y="-1594.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel</text>
+<text text-anchor="start" x="388.88" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
+<text text-anchor="start" x="397.38" y="-1566.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gridOpacityProperty</text>
+<text text-anchor="start" x="388.88" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1550.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
+<text text-anchor="start" x="397.38" y="-1538.5" font-family="Helvetica,sans-Serif" font-size="10.00"> muteProperty</text>
+<text text-anchor="start" x="388.88" y="-1522.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1522.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="397.38" y="-1510.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsAccessibleText</text>
+<text text-anchor="start" x="388.88" y="-1494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1494.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="397.38" y="-1482.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsClearSongAccessibleText</text>
+<text text-anchor="start" x="388.88" y="-1466.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1466.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="397.38" y="-1454.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsClearSongRoleDescription</text>
+<text text-anchor="start" x="388.88" y="-1438.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1438.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="397.38" y="-1426.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsClearSongTooltip</text>
+<text text-anchor="start" x="388.88" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1410.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="397.38" y="-1398.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsColorAccessibleText</text>
+<text text-anchor="start" x="388.88" y="-1382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1382.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="397.38" y="-1370.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsColorRoleDescription</text>
+<text text-anchor="start" x="388.88" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="397.38" y="-1342.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsColorTooltip</text>
+<text text-anchor="start" x="388.88" y="-1326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1326.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="397.38" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsImageAccessibleText</text>
+<text text-anchor="start" x="397.38" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 29 more...</text>
+<text text-anchor="start" x="388.88" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int HEX</text>
+<text text-anchor="start" x="397.38" y="-1270.5" font-family="Helvetica,sans-Serif" font-size="10.00">_RADIX</text>
+<text text-anchor="start" x="388.88" y="-1254.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1254.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="397.38" y="-1242.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_MUTE_OFF</text>
+<text text-anchor="start" x="388.88" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="397.38" y="-1214.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_MUTE_ON</text>
+<text text-anchor="start" x="388.88" y="-1198.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1198.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="397.38" y="-1186.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_OPACITY_OFF</text>
+<text text-anchor="start" x="388.88" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="397.38" y="-1158.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_OPACITY_ON</text>
+<text text-anchor="start" x="388.88" y="-1142.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1142.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="388.88" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1126.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="397.38" y="-1114.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROLE_CLOSED</text>
+<text text-anchor="start" x="388.88" y="-1098.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1098.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="397.38" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROLE_OPENED</text>
+<text text-anchor="start" x="388.88" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="397.38" y="-1058.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROLE_SUBMENU_OPTION</text>
+<text text-anchor="start" x="387.38" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-1042.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel</text>
+<text text-anchor="start" x="397.38" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">(AudioService audioService,</text>
+<text text-anchor="start" x="397.38" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00"> AsyncFileProcessorService</text>
+<text text-anchor="start" x="397.38" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00"> asyncFileProcessorService)</text>
+<text text-anchor="start" x="387.38" y="-990.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-990.5" font-family="Helvetica,sans-Serif" font-size="10.00">void clearSong()</text>
+<text text-anchor="start" x="387.38" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-974.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty gridOpacity</text>
+<text text-anchor="start" x="397.38" y="-962.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="387.38" y="-946.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-946.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(GridPane</text>
+<text text-anchor="start" x="397.38" y="-934.5" font-family="Helvetica,sans-Serif" font-size="10.00"> sudokuFX, ColorPicker</text>
+<text text-anchor="start" x="397.38" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuOptionsButtonColor,</text>
+<text text-anchor="start" x="397.38" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterVBox toaster, SpinnerGrid</text>
+<text text-anchor="start" x="397.38" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">Pane spinner)</text>
+<text text-anchor="start" x="387.38" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">void loadBackgroundImage</text>
+<text text-anchor="start" x="397.38" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File selectedFile, SpinnerGrid</text>
+<text text-anchor="start" x="397.38" y="-858.5" font-family="Helvetica,sans-Serif" font-size="10.00">Pane spinner, GridPane sudokuFX)</text>
+<text text-anchor="start" x="387.38" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsAccessible</text>
+<text text-anchor="start" x="397.38" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
+<text text-anchor="start" x="387.38" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
+<text text-anchor="start" x="397.38" y="-802.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongAccessibleTextProperty()</text>
+<text text-anchor="start" x="387.38" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
+<text text-anchor="start" x="397.38" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongRoleDescriptionProperty()</text>
+<text text-anchor="start" x="387.38" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
+<text text-anchor="start" x="397.38" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongTooltipProperty()</text>
+<text text-anchor="start" x="387.38" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="397.38" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsColor</text>
+<text text-anchor="start" x="397.38" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
+<text text-anchor="start" x="397.38" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 35 more...</text>
+<text text-anchor="start" x="388.88" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">Observable[] concatDependencies</text>
+<text text-anchor="start" x="397.38" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Observable... dependencies)</text>
+<text text-anchor="start" x="388.88" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
+<text text-anchor="start" x="397.38" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndConcatenatedBinding(Supplier</text>
+<text text-anchor="start" x="397.38" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; String &gt; keySupplier, Supplier</text>
+<text text-anchor="start" x="397.38" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; String &gt; argSupplier, String suffixKey,</text>
+<text text-anchor="start" x="397.38" y="-610.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Observable... dependencies)</text>
+<text text-anchor="start" x="388.88" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
+<text text-anchor="start" x="397.38" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key, String</text>
+<text text-anchor="start" x="397.38" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00"> suffixKey)</text>
+<text text-anchor="start" x="388.88" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
+<text text-anchor="start" x="397.38" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(Supplier&lt; String</text>
+<text text-anchor="start" x="397.38" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; keySupplier, Supplier&lt;</text>
+<text text-anchor="start" x="397.38" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String &gt; argSupplier, Observable...</text>
+<text text-anchor="start" x="397.38" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00"> dependencies)</text>
+<text text-anchor="start" x="388.88" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>
+<text text-anchor="start" x="397.38" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key)</text>
+<text text-anchor="start" x="388.88" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">String gridOpacityText</text>
+<text text-anchor="start" x="397.38" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">(boolean isOpaque)</text>
+<text text-anchor="start" x="388.88" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initializeAudio</text>
+<text text-anchor="start" x="397.38" y="-422.5" font-family="Helvetica,sans-Serif" font-size="10.00">(boolean muted)</text>
+<text text-anchor="start" x="388.88" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">String muteInfo(boolean</text>
+<text text-anchor="start" x="397.38" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isMuted)</text>
+<text text-anchor="start" x="388.88" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">String muteText(boolean</text>
+<text text-anchor="start" x="397.38" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isMuted)</text>
+<text text-anchor="start" x="388.88" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="397.38" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setColorFromModel</text>
+<text text-anchor="start" x="397.38" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">(GridPane sudokuFX, ColorPicker</text>
+<text text-anchor="start" x="397.38" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuOptionsButtonColor, String</text>
+<text text-anchor="start" x="397.38" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00"> colorValueFromModel)</text>
+<polygon fill="#666666" stroke="#666666" points="383.38,-1590 383.38,-1590 573.88,-1590 573.88,-1590 383.38,-1590"/>
+<polygon fill="#666666" stroke="#666666" points="383.38,-1054 383.38,-1054 395.38,-1054 395.38,-1054 383.38,-1054"/>
+<polygon fill="#666666" stroke="#666666" points="395.38,-1054 395.38,-1054 573.88,-1054 573.88,-1054 395.38,-1054"/>
+<polygon fill="none" stroke="#666666" points="383.38,-308 383.38,-1620 573.88,-1620 573.88,-308 383.38,-308"/>
 </a>
 </g>
 </g>
@@ -244,8 +244,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M554.12,-308.16C556.69,-298.01 559.36,-287.95 562.12,-278 562.68,-276.01 563.26,-274.01 563.85,-272"/>
-<polygon fill="none" stroke="#63b8ff" points="563.88,-271.93 561.88,-265 567.51,-260.5 569.51,-267.43 563.88,-271.93"/>
+<path fill="none" stroke="#63b8ff" d="M554.04,-308.15C556.64,-298.01 559.34,-287.95 562.12,-278 562.68,-276.01 563.26,-274.01 563.87,-272.01"/>
+<polygon fill="none" stroke="#63b8ff" points="563.89,-271.93 561.91,-265 567.54,-260.5 569.53,-267.44 563.89,-271.93"/>
 </a>
 </g>
 <text text-anchor="middle" x="588.38" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;viewModel</text>
@@ -323,8 +323,8 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M565.71,-1712.38C560.74,-1691.4 556.18,-1670.36 552.38,-1650 551.3,-1644.23 550.23,-1638.42 549.18,-1632.59"/>
-<polygon fill="none" stroke="#63b8ff" points="549.16,-1632.48 544.18,-1627.27 547.07,-1620.66 552.05,-1625.87 549.16,-1632.48"/>
+<path fill="none" stroke="#63b8ff" d="M565.81,-1712.36C560.82,-1691.39 556.23,-1670.35 552.38,-1650 551.28,-1644.22 550.2,-1638.42 549.14,-1632.59"/>
+<polygon fill="none" stroke="#63b8ff" points="549.12,-1632.47 544.12,-1627.27 547,-1620.66 551.99,-1625.86 549.12,-1632.47"/>
 </a>
 </g>
 <text text-anchor="middle" x="583.5" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;audioService</text>
@@ -356,21 +356,21 @@ var sectionId = 'dynsection-0';
 <g id="edge13_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge13_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M76.04,-1868.04C39.75,-1639.14 -58.75,-817.97 294.38,-308 344.21,-236.02 432.8,-191.01 506.26,-164.4"/>
-<polygon fill="none" stroke="#63b8ff" points="506.21,-164.41 510.54,-158.64 517.53,-160.42 513.2,-166.19 506.21,-164.41"/>
+<path fill="none" stroke="#63b8ff" d="M75.51,-1868.35C37.1,-1639.7 -69.09,-816.95 285.38,-308 337.3,-233.45 430.42,-188.23 506.58,-162.18"/>
+<polygon fill="none" stroke="#63b8ff" points="506.41,-162.23 510.84,-156.54 517.79,-158.44 513.37,-164.13 506.41,-162.23"/>
 </a>
 </g>
-<text text-anchor="middle" x="339" y="-960.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;asyncServiceMock</text>
+<text text-anchor="middle" x="330" y="-960.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;asyncServiceMock</text>
 </g>
 <!-- Node4&#45;&gt;Node2 -->
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node4&#45;&gt;Node2</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M108.08,-1868.03C127,-1814.92 155.68,-1736 182.62,-1668 248.27,-1502.35 327.36,-1316.95 387.71,-1178.15"/>
-<polygon fill="none" stroke="#63b8ff" points="387.61,-1178.39 386.33,-1171.29 392.39,-1167.38 393.67,-1174.48 387.61,-1178.39"/>
+<path fill="none" stroke="#63b8ff" d="M108.15,-1868.05C127.1,-1814.96 155.8,-1736.05 182.62,-1668 245.21,-1509.23 319.79,-1332.17 378.44,-1195.46"/>
+<polygon fill="none" stroke="#63b8ff" points="378.43,-1195.46 377.12,-1188.37 383.17,-1184.44 384.48,-1191.53 378.43,-1195.46"/>
 </a>
 </g>
-<text text-anchor="middle" x="252.81" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;asyncFileProcessorService</text>
+<text text-anchor="middle" x="252.76" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;asyncFileProcessorService</text>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
@@ -421,11 +421,11 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000002_Node000005" class="edge">
 <title>Node5&#45;&gt;Node2</title>
 <g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M313.31,-1772.24C334.29,-1671.61 362.66,-1535.54 390.13,-1403.8"/>
-<polygon fill="none" stroke="#63b8ff" points="390.15,-1403.7 387.46,-1397.01 392.6,-1391.95 395.29,-1398.64 390.15,-1403.7"/>
+<path fill="none" stroke="#63b8ff" d="M312.82,-1772.24C331.54,-1681.13 356.22,-1560.95 380.81,-1441.24"/>
+<polygon fill="none" stroke="#63b8ff" points="380.82,-1441.18 378.11,-1434.49 383.24,-1429.42 385.95,-1436.1 380.82,-1441.18"/>
 </a>
 </g>
-<text text-anchor="middle" x="366.27" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;imageUtils</text>
+<text text-anchor="middle" x="365.38" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;imageUtils</text>
 </g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
@@ -448,11 +448,11 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000002_Node000006" class="edge">
 <title>Node6&#45;&gt;Node2</title>
 <g id="a_edge5_Node000002_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M460.47,-1892.09C461.61,-1841.84 463.82,-1745.15 466.39,-1632.5"/>
-<polygon fill="none" stroke="#63b8ff" points="466.39,-1632.66 462.53,-1626.57 466.66,-1620.67 470.52,-1626.76 466.39,-1632.66"/>
+<path fill="none" stroke="#63b8ff" d="M460.35,-1892.09C461.34,-1841.84 463.25,-1745.15 465.47,-1632.5"/>
+<polygon fill="none" stroke="#63b8ff" points="465.47,-1632.66 461.58,-1626.59 465.7,-1620.67 469.58,-1626.74 465.47,-1632.66"/>
 </a>
 </g>
-<text text-anchor="middle" x="490.88" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;audioUtils</text>
+<text text-anchor="middle" x="489.99" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;audioUtils</text>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
@@ -531,11 +531,11 @@ var sectionId = 'dynsection-0';
 <g id="edge6_Node000002_Node000007" class="edge">
 <title>Node7&#45;&gt;Node2</title>
 <g id="a_edge6_Node000002_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M725.83,-1678.03C722.85,-1674.59 719.78,-1671.24 716.62,-1668 679.39,-1629.8 639.91,-1661.68 606.62,-1620 596.05,-1606.75 586.27,-1592.88 577.23,-1578.5"/>
-<polygon fill="none" stroke="#63b8ff" points="577.18,-1578.41 570.65,-1575.37 570.94,-1568.17 577.48,-1571.21 577.18,-1578.41"/>
+<path fill="none" stroke="#63b8ff" d="M725.83,-1678.03C722.85,-1674.59 719.78,-1671.24 716.62,-1668 679.39,-1629.8 640.01,-1661.6 606.62,-1620 597.37,-1608.47 588.72,-1596.46 580.64,-1584.04"/>
+<polygon fill="none" stroke="#63b8ff" points="580.58,-1583.94 573.99,-1581 574.17,-1573.8 580.75,-1576.73 580.58,-1583.94"/>
 </a>
 </g>
-<text text-anchor="middle" x="705.28" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toaster</text>
+<text text-anchor="middle" x="705.29" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toaster</text>
 </g>
 <!-- Node8 -->
 <g id="Node000008" class="node">

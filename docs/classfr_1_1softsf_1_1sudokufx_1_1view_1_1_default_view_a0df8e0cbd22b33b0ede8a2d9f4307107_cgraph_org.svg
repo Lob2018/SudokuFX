@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3dd02ff5cf869a084c95b35937827893" target="_top" xlink:title="Applies opaque or transparent styling to the sudoku grid and its cells.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3dd02ff5cf869a084c95b35937827893" target="_top" xlink:title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE...">
 <polygon fill="white" stroke="#666666" points="367.25,-32 214.75,-32 214.75,0 367.25,0 367.25,-32"/>
 <text text-anchor="start" x="222.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.</text>
 <text text-anchor="middle" x="291" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">DefaultView.applyOpaqueMode</text>

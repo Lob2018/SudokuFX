@@ -162,6 +162,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6929ce8b9bde69ef7d761ba1a543a927" id="r_a6929ce8b9bde69ef7d761ba1a543a927"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6929ce8b9bde69ef7d761ba1a543a927">handleMute</a> ()</td></tr>
 <tr class="memdesc:a6929ce8b9bde69ef7d761ba1a543a927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the mute button is pressed.  <br /></td></tr>
 <tr class="separator:a6929ce8b9bde69ef7d761ba1a543a927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a006c603e101b793c256d1fff8deb4ea6" id="r_a006c603e101b793c256d1fff8deb4ea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a006c603e101b793c256d1fff8deb4ea6">handleSongClear</a> ()</td></tr>
+<tr class="memdesc:a006c603e101b793c256d1fff8deb4ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the song, shows a toast, and refocuses the song button.  <br /></td></tr>
+<tr class="separator:a006c603e101b793c256d1fff8deb4ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a769e6c361cff4bc5247bd8bc8ebd6621" id="r_a769e6c361cff4bc5247bd8bc8ebd6621"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a769e6c361cff4bc5247bd8bc8ebd6621">handleToggleLanguage</a> ()</td></tr>
 <tr class="memdesc:a769e6c361cff4bc5247bd8bc8ebd6621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches language.  <br /></td></tr>
 <tr class="separator:a769e6c361cff4bc5247bd8bc8ebd6621"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,7 +178,8 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a842f4799fbccb6507d669da06f95554c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes bindings between each menu pane's visibility and managed state and the corresponding value of the active menu from <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu.">ActiveMenuOrSubmenuViewModel</a>.  <br /></td></tr>
 <tr class="separator:a842f4799fbccb6507d669da06f95554c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd02ff5cf869a084c95b35937827893" id="r_a3dd02ff5cf869a084c95b35937827893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3dd02ff5cf869a084c95b35937827893">applyOpaqueMode</a> (boolean opaque)</td></tr>
-<tr class="memdesc:a3dd02ff5cf869a084c95b35937827893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies opaque or transparent styling to the sudoku grid and its cells.  <br /></td></tr>
+<tr class="memdesc:a3dd02ff5cf869a084c95b35937827893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies opaque or transparent styling to the sudoku grid and its cells by setting the <code class="JavaDocCode"><br/>
+OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class.  <br /></td></tr>
 <tr class="separator:a3dd02ff5cf869a084c95b35937827893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2782545a22496fbb6185093a2737b248" id="r_a2782545a22496fbb6185093a2737b248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2782545a22496fbb6185093a2737b248">bindLevel</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a> starsBox, Button maxi, Label label, Button mini)</td></tr>
 <tr class="memdesc:a2782545a22496fbb6185093a2737b248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds UI components related to a specific difficulty level in both the maxi and mini menus.  <br /></td></tr>
@@ -402,6 +406,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a12fe248a8415cffe07adb7c4ba06525d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaaf84730174237294d7b712f12f2b238" id="r_aaaf84730174237294d7b712f12f2b238"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaaf84730174237294d7b712f12f2b238">menuOptionsButtonSong</a></td></tr>
 <tr class="separator:aaaf84730174237294d7b712f12f2b238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61246c3cd718d89bb53f0ec2ed1f215d" id="r_a61246c3cd718d89bb53f0ec2ed1f215d"><td class="memItemLeft" align="right" valign="top">Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61246c3cd718d89bb53f0ec2ed1f215d">menuOptionsButtonSongClear</a></td></tr>
+<tr class="separator:a61246c3cd718d89bb53f0ec2ed1f215d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a383d9beed07d4d2717012a345c0e2c5d" id="r_a383d9beed07d4d2717012a345c0e2c5d"><td class="memItemLeft" align="right" valign="top">Label&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a383d9beed07d4d2717012a345c0e2c5d">menuOptionsButtonSongText</a></td></tr>
 <tr class="separator:a383d9beed07d4d2717012a345c0e2c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4caab977b70574df2dec099db185bfd3" id="r_a4caab977b70574df2dec099db185bfd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4caab977b70574df2dec099db185bfd3">menuOptionsViewModel</a></td></tr>
@@ -487,6 +493,10 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:aafcfec62364da9ede2395f5e289b74a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac772a2de77467f2c9dc6bd9916a9dd5b" id="r_ac772a2de77467f2c9dc6bd9916a9dd5b"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac772a2de77467f2c9dc6bd9916a9dd5b">LOG</a> = LoggerFactory.getLogger(DefaultView.class)</td></tr>
 <tr class="separator:ac772a2de77467f2c9dc6bd9916a9dd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f2557d328052f0c65aaa7ebf977199" id="r_ae2f2557d328052f0c65aaa7ebf977199"><td class="memItemLeft" align="right" valign="top">static final PseudoClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2f2557d328052f0c65aaa7ebf977199">OPAQUE_MODE_PSEUDO_SELECTED</a></td></tr>
+<tr class="separator:ae2f2557d328052f0c65aaa7ebf977199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86a881aa98c2fb0d66a65b4047c4951" id="r_ab86a881aa98c2fb0d66a65b4047c4951"><td class="memItemLeft" align="right" valign="top">static final PseudoClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab86a881aa98c2fb0d66a65b4047c4951">REDUCED_SONG_PSEUDO_SELECTED</a></td></tr>
+<tr class="separator:ab86a881aa98c2fb0d66a65b4047c4951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default view class of the Sudoku application. </p>
@@ -550,11 +560,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Applies opaque or transparent styling to the sudoku grid and its cells. </p>
-<p>Adds/removes the 'opaque-mode' CSS class from both container and cells.</p>
+<p>Applies opaque or transparent styling to the sudoku grid and its cells by setting the <code class="JavaDocCode"><br/>
+OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">opaque</td><td>true to apply opaque styling (solid background), false to apply transparent styling (see-through background) </td></tr>
+    <tr><td class="paramname">opaque</td><td>true for opaque styling, false for transparent </td></tr>
   </table>
   </dd>
 </dl>
@@ -1237,6 +1247,25 @@ Static Private Attributes</h2></td></tr>
 
 <p>Called when the mute button is pressed. </p>
 <p>Toggles the audio mute state via the ViewModel. </p>
+
+</div>
+</div>
+<a id="a006c603e101b793c256d1fff8deb4ea6" name="a006c603e101b793c256d1fff8deb4ea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a006c603e101b793c256d1fff8deb4ea6">&#9670;&#160;</a></span>handleSongClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.DefaultView.handleSongClear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the song, shows a toast, and refocuses the song button. </p>
 
 </div>
 </div>
@@ -3451,6 +3480,28 @@ Loads and applies saved configuration settings to the UI controls, including bac
 
 </div>
 </div>
+<a id="a61246c3cd718d89bb53f0ec2ed1f215d" name="a61246c3cd718d89bb53f0ec2ed1f215d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61246c3cd718d89bb53f0ec2ed1f215d">&#9670;&#160;</a></span>menuOptionsButtonSongClear</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button fr.softsf.sudokufx.view.DefaultView.menuOptionsButtonSongClear</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a383d9beed07d4d2717012a345c0e2c5d" name="a383d9beed07d4d2717012a345c0e2c5d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a383d9beed07d4d2717012a345c0e2c5d">&#9670;&#160;</a></span>menuOptionsButtonSongText</h2>
 
@@ -4133,6 +4184,30 @@ Loads and applies saved configuration settings to the UI controls, including bac
 
 </div>
 </div>
+<a id="ae2f2557d328052f0c65aaa7ebf977199" name="ae2f2557d328052f0c65aaa7ebf977199"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2f2557d328052f0c65aaa7ebf977199">&#9670;&#160;</a></span>OPAQUE_MODE_PSEUDO_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final PseudoClass fr.softsf.sudokufx.view.DefaultView.OPAQUE_MODE_PSEUDO_SELECTED</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            PseudoClass.getPseudoClass(<span class="stringliteral">&quot;opaque-mode&quot;</span>)</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="aacf0f46b8a606da2235f24d811c7c4ab" name="aacf0f46b8a606da2235f24d811c7c4ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aacf0f46b8a606da2235f24d811c7c4ab">&#9670;&#160;</a></span>primaryStage</h2>
 
@@ -4153,6 +4228,30 @@ Loads and applies saved configuration settings to the UI controls, including bac
 </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="ab86a881aa98c2fb0d66a65b4047c4951" name="ab86a881aa98c2fb0d66a65b4047c4951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab86a881aa98c2fb0d66a65b4047c4951">&#9670;&#160;</a></span>REDUCED_SONG_PSEUDO_SELECTED</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final PseudoClass fr.softsf.sudokufx.view.DefaultView.REDUCED_SONG_PSEUDO_SELECTED</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            PseudoClass.getPseudoClass(<span class="stringliteral">&quot;reduced&quot;</span>)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4adcbad641ff4afc6a350ec793a129d2" name="a4adcbad641ff4afc6a350ec793a129d2"></a>
@@ -4252,7 +4351,7 @@ Loads and applies saved configuration settings to the UI controls, including bac
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html">DefaultView</a></li>
-    <li class="footer">Generated on Thu Sep 4 2025 11:14:44 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Fri Sep 5 2025 11:38:09 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

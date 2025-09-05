@@ -42,7 +42,7 @@
 <area shape="poly" id="edge12_Node000008_Node000013" title=" " alt="" coords="687,345,804,394,825,400,823,405,802,398,685,350"/>
 <area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a7746116cfca8394695053b9c60c076fd" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="803,475,1037,517"/>
 <area shape="poly" id="edge13_Node000008_Node000014" title=" " alt="" coords="661,345,722,403,762,434,805,460,816,466,814,471,802,465,759,438,719,407,658,349"/>
-<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3dd02ff5cf869a084c95b35937827893" title="Applies opaque or transparent styling to the sudoku grid and its cells." alt="" coords="536,571,740,613"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3dd02ff5cf869a084c95b35937827893" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="536,571,740,613"/>
 <area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="461,589,521,589,521,595,461,595"/>
 <area shape="rect" id="Node000021" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9b219ba0d98d4df2edb74918b2766d16" title="Sets up a rounded clip for a ListView." alt="" coords="538,671,738,713"/>
 <area shape="poly" id="edge20_Node000020_Node000021" title=" " alt="" coords="458,669,522,676,522,682,458,674"/>

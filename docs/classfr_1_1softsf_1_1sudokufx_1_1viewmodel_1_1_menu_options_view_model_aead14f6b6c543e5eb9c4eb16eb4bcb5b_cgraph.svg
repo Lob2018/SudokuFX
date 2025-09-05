@@ -69,7 +69,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#aef7f0f9ea1acdbc41e551fef7db4f98d" target="_top" xlink:title="Creates a localized binding combining a formatted message and a suffix.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab375565a060bffec779b340dc14f7c43" target="_top" xlink:title="Creates a localized binding combining a formatted message and a suffix.">
 <polygon fill="white" stroke="#666666" points="414.5,-318 218.5,-318 218.5,-274 414.5,-274 414.5,-318"/>
 <text text-anchor="start" x="226.5" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="226.5" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.createFormatted</text>
@@ -89,7 +89,7 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4fbe6f1628f9e9f43a0f3fbb79536d37" target="_top" xlink:title="Creates a formatted localized binding with one dynamic argument.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a218b89fb8384b0edf79c7c1d70f9b292" target="_top" xlink:title="Creates a formatted localized binding with one dynamic argument.">
 <polygon fill="white" stroke="#666666" points="414.5,-256 218.5,-256 218.5,-212 414.5,-212 414.5,-256"/>
 <text text-anchor="start" x="226.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="226.5" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.createFormatted</text>
