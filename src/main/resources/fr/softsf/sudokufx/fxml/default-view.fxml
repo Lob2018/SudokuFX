@@ -660,6 +660,11 @@
                         <Tooltip/>
                     </tooltip>
                 </Button>
+                <Button fx:id="menuOptionsButtonSongClear" text="&#xe440;" styleClass="menuButtonCircle, material" onAction="#handleSongClear">
+                    <tooltip>
+                        <Tooltip/>
+                    </tooltip>
+                </Button>
             </HBox>
             <Region styleClass="menuMiniButton" visible="false"/>
             <Region styleClass="menuMiniButton" visible="false"/>

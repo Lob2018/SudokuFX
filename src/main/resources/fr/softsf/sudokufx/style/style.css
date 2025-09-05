@@ -107,7 +107,7 @@
     -fx-text-fill: black;
 }
 
-.sudokuFXGridPaneContainer.opaque-mode {
+.sudokuFXGridPaneContainer:opaque-mode {
     -fx-background-color: black;
     -fx-border-color: black;
     -fx-border-style: solid;
@@ -116,7 +116,7 @@
     -fx-border-radius: .3em;
 }
 
-.sudokuFXGridCell.opaque-mode {
+.sudokuFXGridCell:opaque-mode {
     -fx-background-color: white;
 }
 
@@ -370,6 +370,12 @@
     -fx-padding: 0;
     -fx-background-radius: .8em;
     -fx-background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menuButton:reduced {
+    -fx-pref-width: 10.48em;
+    -fx-max-width: 10.48em;
+    -fx-min-width: 10.48em;
 }
 
 .menuMiniButton {

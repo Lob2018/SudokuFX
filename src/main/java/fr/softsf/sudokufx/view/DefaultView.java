@@ -14,7 +14,6 @@ import javafx.beans.binding.Bindings;
 import javafx.beans.binding.BooleanBinding;
 import javafx.beans.binding.DoubleBinding;
 import javafx.beans.binding.StringBinding;
-import javafx.collections.ObservableList;
 import javafx.css.PseudoClass;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -83,6 +82,10 @@ public final class DefaultView implements IMainView {
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
+    private static final PseudoClass REDUCED_SONG_PSEUDO_SELECTED =
+            PseudoClass.getPseudoClass("reduced");
+    private static final PseudoClass OPAQUE_MODE_PSEUDO_SELECTED =
+            PseudoClass.getPseudoClass("opaque-mode");
     private static final int AUTO_HIDE_MINI_MENU_DELAY_MS = 5_000;
 
     private final Stage primaryStage = new Stage();
@@ -198,6 +201,7 @@ public final class DefaultView implements IMainView {
     @FXML private Text menuOptionsButtonMuteIcon;
     @FXML private Button menuOptionsButtonSong;
     @FXML private Label menuOptionsButtonSongText;
+    @FXML private Button menuOptionsButtonSongClear;
 
     private Timeline hideMiniMenuTimeline;
 
@@ -408,7 +412,6 @@ public final class DefaultView implements IMainView {
         menuOptionsButtonOpacity
                 .accessibleRoleDescriptionProperty()
                 .bind(menuOptionsViewModel.optionsOpacityRoleDescriptionProperty());
-
         menuOptionsButtonMuteText
                 .textProperty()
                 .bind(menuOptionsViewModel.optionsMuteTextProperty());
@@ -438,10 +441,33 @@ public final class DefaultView implements IMainView {
         menuOptionsButtonSong
                 .accessibleRoleDescriptionProperty()
                 .bind(menuOptionsViewModel.optionsSongRoleDescriptionProperty());
-
+        menuOptionsButtonSongClear
+                .accessibleTextProperty()
+                .bind(menuOptionsViewModel.optionsClearSongAccessibleTextProperty());
+        menuOptionsButtonSongClear
+                .accessibleRoleDescriptionProperty()
+                .bind(menuOptionsViewModel.optionsClearSongRoleDescriptionProperty());
+        menuOptionsButtonSongClear
+                .getTooltip()
+                .textProperty()
+                .bind(menuOptionsViewModel.optionsClearSongTooltipProperty());
+        menuOptionsButtonSongClear
+                .visibleProperty()
+                .bind(menuOptionsViewModel.songIsBlankProperty().not());
+        menuOptionsButtonSongClear
+                .managedProperty()
+                .bind(menuOptionsButtonSongClear.visibleProperty());
+        menuOptionsViewModel
+                .songIsBlankProperty()
+                .addListener(
+                        (obs, oldVal, isBlank) -> {
+                            menuOptionsButtonSong.pseudoClassStateChanged(
+                                    REDUCED_SONG_PSEUDO_SELECTED, !isBlank);
+                        });
+        menuOptionsButtonSong.pseudoClassStateChanged(
+                REDUCED_SONG_PSEUDO_SELECTED, !menuOptionsViewModel.songIsBlankProperty().get());
         menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, toaster, spinner);
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
-        // apply song
     }
 
     /**
@@ -1003,6 +1029,13 @@ public final class DefaultView implements IMainView {
                 .ifPresent(file -> menuOptionsViewModel.saveSong(file));
     }
 
+    /** Clears the song, shows a toast, and refocuses the song button. */
+    @FXML
+    public void handleSongClear() {
+        menuOptionsViewModel.clearSong();
+        menuOptionsButtonSong.requestFocus();
+    }
+
     /** Handles grid transparency toggle button action. */
     @FXML
     private void handleGridOpacity() {
@@ -1011,31 +1044,21 @@ public final class DefaultView implements IMainView {
     }
 
     /**
-     * Applies opaque or transparent styling to the sudoku grid and its cells. Adds/removes the
-     * 'opaque-mode' CSS class from both container and cells.
+     * Applies opaque or transparent styling to the sudoku grid and its cells by setting the {@code
+     * OPAQUE_MODE_PSEUDO_SELECTED} pseudo-class.
      *
-     * @param opaque true to apply opaque styling (solid background), false to apply transparent
-     *     styling (see-through background)
+     * @param opaque true for opaque styling, false for transparent
      */
     private void applyOpaqueMode(boolean opaque) {
-        ObservableList<String> classes = sudokuFXGridPane.getStyleClass();
-        if (opaque) {
-            classes.add("opaque-mode");
-        } else {
-            classes.remove("opaque-mode");
-        }
+        sudokuFXGridPane.pseudoClassStateChanged(OPAQUE_MODE_PSEUDO_SELECTED, opaque);
         Platform.runLater(
                 () ->
                         sudokuFXGridPane
                                 .lookupAll(".sudokuFXGridCell")
                                 .forEach(
-                                        cell -> {
-                                            if (opaque) {
-                                                cell.getStyleClass().add("opaque-mode");
-                                            } else {
-                                                cell.getStyleClass().remove("opaque-mode");
-                                            }
-                                        }));
+                                        cell ->
+                                                cell.pseudoClassStateChanged(
+                                                        OPAQUE_MODE_PSEUDO_SELECTED, opaque)));
     }
 
     /** Called when the mute button is pressed. Toggles the audio mute state via the ViewModel. */

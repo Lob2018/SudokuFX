@@ -13,6 +13,7 @@ import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
@@ -21,6 +22,7 @@ import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -101,10 +103,16 @@ public class MenuOptionsViewModel {
     private static final String ICON_MUTE_ON = "\ue050";
     private static final String ICON_MUTE_OFF = "\ue04f";
 
+    private final SimpleStringProperty songProperty = new SimpleStringProperty("");
+    private final BooleanProperty songIsBlankProperty = new SimpleBooleanProperty(true);
     private final StringBinding optionsSongAccessibleText;
     private final StringBinding optionsSongTooltip;
     private final StringBinding optionsSongRoleDescription;
     private final StringBinding optionsSongText;
+
+    private final StringBinding optionsClearSongAccessibleText;
+    private final StringBinding optionsClearSongRoleDescription;
+    private final StringBinding optionsClearSongTooltip;
 
     private ToasterVBox toaster;
 
@@ -142,12 +150,12 @@ public class MenuOptionsViewModel {
         optionsColorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
         optionsOpacityAccessibleText =
                 createFormattedBinding(
-                        "menu.options.button.opacity.accessibility",
+                        () -> "menu.options.button.opacity.accessibility",
                         () -> gridOpacityText(!gridOpacityProperty.get()),
                         gridOpacityProperty);
         optionsOpacityTooltip =
                 createFormattedAndConcatenatedBinding(
-                        "menu.options.button.opacity.accessibility",
+                        () -> "menu.options.button.opacity.accessibility",
                         () -> gridOpacityText(!gridOpacityProperty.get()),
                         ROLE_SUBMENU_OPTION,
                         gridOpacityProperty);
@@ -161,15 +169,14 @@ public class MenuOptionsViewModel {
                 Bindings.createStringBinding(
                         () -> gridOpacityProperty.get() ? ICON_OPACITY_ON : ICON_OPACITY_OFF,
                         gridOpacityProperty);
-
         optionsMuteAccessibleText =
                 createFormattedBinding(
-                        "menu.options.button.mute.accessibility",
+                        () -> "menu.options.button.mute.accessibility",
                         () -> muteInfo(muteProperty.get()),
                         muteProperty);
         optionsMuteTooltip =
                 createFormattedAndConcatenatedBinding(
-                        "menu.options.button.mute.accessibility",
+                        () -> "menu.options.button.mute.accessibility",
                         () -> muteInfo(muteProperty.get()),
                         ROLE_SUBMENU_OPTION,
                         muteProperty);
@@ -182,15 +189,48 @@ public class MenuOptionsViewModel {
         optionsMuteIcon =
                 Bindings.createStringBinding(
                         () -> muteProperty.get() ? ICON_MUTE_ON : ICON_MUTE_OFF, muteProperty);
-        optionsSongAccessibleText = createStringBinding("menu.options.button.song.accessibility");
-        // (chemin vide) Sélectionner la chanson de réussite ou Changer la chanson de réussite, Nom
-        // du Fichier.mp3 est sélectionnée (chemin non vide)
-        optionsSongTooltip =
+
+        songIsBlankProperty.bind(
+                Bindings.createBooleanBinding(
+                        () -> StringUtils.isBlank(songProperty.get()), songProperty));
+        optionsSongAccessibleText =
                 createFormattedBinding(
-                        "menu.options.button.song.accessibility", ROLE_SUBMENU_OPTION);
+                        () ->
+                                songIsBlankProperty.get()
+                                        ? "menu.options.button.song.empty.accessibility"
+                                        : "menu.options.button.song.accessibility",
+                        songProperty::get,
+                        songProperty);
+        optionsSongTooltip =
+                createFormattedAndConcatenatedBinding(
+                        () ->
+                                songIsBlankProperty.get()
+                                        ? "menu.options.button.song.empty.accessibility"
+                                        : "menu.options.button.song.accessibility",
+                        songProperty::get,
+                        ROLE_SUBMENU_OPTION,
+                        songProperty);
+        optionsSongText =
+                createFormattedBinding(
+                        () ->
+                                songIsBlankProperty.get()
+                                        ? "menu.options.button.song.empty.text"
+                                        : "menu.options.button.song.text",
+                        songProperty::get,
+                        songProperty);
         optionsSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-        // Chanson (chemin vide) ou nom.mp3 (chemin non vide)
-        optionsSongText = createStringBinding("menu.options.button.song.text");
+        optionsClearSongAccessibleText =
+                createFormattedBinding(
+                        () -> "menu.options.button.clear.song.accessibility",
+                        songProperty::get,
+                        songProperty);
+        optionsClearSongTooltip =
+                createFormattedAndConcatenatedBinding(
+                        () -> "menu.options.button.clear.song.accessibility",
+                        songProperty::get,
+                        ROLE_SUBMENU_OPTION,
+                        songProperty);
+        optionsClearSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
     }
 
     /**
@@ -243,9 +283,13 @@ public class MenuOptionsViewModel {
      * of the given dependencies change.
      */
     private StringBinding createFormattedBinding(
-            String key, Supplier<String> argSupplier, Observable... dependencies) {
+            Supplier<String> keySupplier,
+            Supplier<String> argSupplier,
+            Observable... dependencies) {
         return Bindings.createStringBinding(
-                () -> MessageFormat.format(I18n.INSTANCE.getValue(key), argSupplier.get()),
+                () ->
+                        MessageFormat.format(
+                                I18n.INSTANCE.getValue(keySupplier.get()), argSupplier.get()),
                 concatDependencies(dependencies));
     }
 
@@ -254,13 +298,15 @@ public class MenuOptionsViewModel {
      * or any of the given dependencies change.
      */
     private StringBinding createFormattedAndConcatenatedBinding(
-            String key,
+            Supplier<String> keySupplier,
             Supplier<String> argSupplier,
             String suffixKey,
             Observable... dependencies) {
         return Bindings.createStringBinding(
                 () ->
-                        MessageFormat.format(I18n.INSTANCE.getValue(key), argSupplier.get())
+                        MessageFormat.format(
+                                        I18n.INSTANCE.getValue(keySupplier.get()),
+                                        argSupplier.get())
                                 + I18n.INSTANCE.getValue(suffixKey),
                 concatDependencies(dependencies));
     }
@@ -435,6 +481,22 @@ public class MenuOptionsViewModel {
         return optionsSongText;
     }
 
+    public StringBinding optionsClearSongRoleDescriptionProperty() {
+        return optionsClearSongRoleDescription;
+    }
+
+    public StringBinding optionsClearSongTooltipProperty() {
+        return optionsClearSongTooltip;
+    }
+
+    public StringBinding optionsClearSongAccessibleTextProperty() {
+        return optionsClearSongAccessibleText;
+    }
+
+    public BooleanProperty songIsBlankProperty() {
+        return songIsBlankProperty;
+    }
+
     /**
      * Initializes the menu options UI state, including:
      *
@@ -574,6 +636,7 @@ public class MenuOptionsViewModel {
         }
         String savedPath = file.getAbsolutePath();
         // TODO save the song path to base
+        songProperty.set(file.getName());
         toaster.addToast(
                 MessageFormat.format(
                         I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"), file.getName()),
@@ -612,5 +675,21 @@ public class MenuOptionsViewModel {
         boolean newState = !muteProperty.get();
         audioService.setMuted(newState);
         muteProperty.set(newState);
+    }
+
+    /**
+     * Clears the selected song, shows a toast notification, and resets {@link #songProperty} to
+     * empty.
+     */
+    public void clearSong() {
+        // TODO save empty song path to base
+        toaster.addToast(
+                MessageFormat.format(
+                        I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.disabled"),
+                        songProperty.get()),
+                "",
+                ToastLevels.INFO,
+                false);
+        songProperty.set("");
     }
 }
