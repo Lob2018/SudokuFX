@@ -1,4 +1,6 @@
 <map id="src/test/java/fr/softsf/sudokufx/testing/unit/service" name="src/test/java/fr/softsf/sudokufx/testing/unit/service">
-<area shape="rect" id="node1" href="dir_a0026d2946d80a6321e74308f9ac091c.html" title="service" alt="" coords="27,53,90,80"/>
-<area shape="rect" id="clust1" href="dir_85131fc9f14a9f8190b09936acd1f60e.html" title="unit" alt="" coords="16,16,101,91"/>
+<area shape="rect" id="node2" href="dir_851f5ac4a2d29d7113619f02d5035782.html" title="business" alt="" coords="125,64,198,91"/>
+<area shape="rect" id="node3" href="dir_22a61ce1ca9a0fc002aabea4b346c29b.html" title="ui" alt="" coords="222,64,261,91"/>
+<area shape="rect" id="clust2" href="dir_a0026d2946d80a6321e74308f9ac091c.html" alt="" coords="27,53,271,101"/>
+<area shape="rect" id="clust1" href="dir_85131fc9f14a9f8190b09936acd1f60e.html" title="unit" alt="" coords="16,16,281,112"/>
 </map>

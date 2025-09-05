@@ -11,6 +11,6 @@ var searchData=
   ['splashscreenview_8',['SplashScreenView',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html',1,'fr::softsf::sudokufx::view']]],
   ['springcontextinitializer_9',['SpringContextInitializer',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html',1,'fr::softsf::sudokufx::common::util']]],
   ['springcontextinitializerutest_10',['SpringContextInitializerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
-  ['stopoperationstests_11',['StopOperationsTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_stop_operations_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::AudioServiceUTest']]],
+  ['stopoperationstests_11',['StopOperationsTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_stop_operations_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::ui::AudioServiceUTest']]],
   ['sudomain_12',['SudoMain',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html',1,'fr::softsf::sudokufx']]]
 ];

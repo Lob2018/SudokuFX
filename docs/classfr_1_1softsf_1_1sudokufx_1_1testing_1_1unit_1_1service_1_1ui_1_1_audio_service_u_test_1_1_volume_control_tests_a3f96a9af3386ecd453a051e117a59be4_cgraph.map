@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.VolumeControlTests.givenVolumeOutOfRange_whenSetSongVolume_thenVolumeClamped" name="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.VolumeControlTests.givenVolumeOutOfRange_whenSetSongVolume_thenVolumeClamped">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,401,88"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="127,29,129,18,143,10,167,5,203,3,245,5,270,13,269,18,244,11,203,8,168,10,145,15,133,21,132,29"/>
+</map>

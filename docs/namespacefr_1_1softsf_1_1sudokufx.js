@@ -28,7 +28,9 @@ var namespacefr_1_1softsf_1_1sudokufx =
         [ "common", null, [
           [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums" ]
         ] ],
-        [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service" ]
+        [ "service", null, [
+          [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external" ]
+        ] ]
       ] ],
       [ "unit", null, [
         [ "common", null, [
@@ -36,7 +38,10 @@ var namespacefr_1_1softsf_1_1sudokufx =
           [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception" ],
           [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util" ]
         ] ],
-        [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service" ],
+        [ "service", null, [
+          [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business" ],
+          [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui" ]
+        ] ],
         [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel" ]
       ] ]
     ] ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['objectmapper_0',['objectMapper',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a2a01b1ec4df446d9962907d06c925302',1,'fr.softsf.sudokufx.service.external.VersionService.objectMapper'],['../namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#aaeac640e43662b9bb033d9b4ae28e47c',1,'fr.softsf.sudokufx.testing.integration.service.objectMapper']]],
+  ['objectmapper_0',['objectMapper',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a2a01b1ec4df446d9962907d06c925302',1,'fr.softsf.sudokufx.service.external.VersionService.objectMapper'],['../namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a7fef1f2128ab251935302ab0d01e02c8',1,'fr.softsf.sudokufx.testing.integration.service.external.objectMapper']]],
   ['on_5frefresh_1',['ON_REFRESH',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#ac12c4d8dd2cdc9f76957037d73b06cfa',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['opaque_5fmode_5fpseudo_5fselected_2',['OPAQUE_MODE_PSEUDO_SELECTED',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#ae2f2557d328052f0c65aaa7ebf977199',1,'fr::softsf::sudokufx::view::DefaultView']]],
   ['optimizing_3',['OPTIMIZING',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#adaca3e1ad4a02e5a8b3784c2c51ad9f7',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]],

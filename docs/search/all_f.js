@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['objectmapper_0',['objectMapper',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a2a01b1ec4df446d9962907d06c925302',1,'fr.softsf.sudokufx.service.external.VersionService.objectMapper'],['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html#aa5b3325f228a6c9a84e06ac1f722239a',1,'fr.softsf.sudokufx.config.ObjectMapperConfig.objectMapper()'],['../namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html#aaeac640e43662b9bb033d9b4ae28e47c',1,'fr.softsf.sudokufx.testing.integration.service.objectMapper']]],
+  ['objectmapper_0',['objectMapper',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a2a01b1ec4df446d9962907d06c925302',1,'fr.softsf.sudokufx.service.external.VersionService.objectMapper'],['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html#aa5b3325f228a6c9a84e06ac1f722239a',1,'fr.softsf.sudokufx.config.ObjectMapperConfig.objectMapper()'],['../namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a7fef1f2128ab251935302ab0d01e02c8',1,'fr.softsf.sudokufx.testing.integration.service.external.objectMapper']]],
   ['objectmapperconfig_1',['ObjectMapperConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html',1,'fr::softsf::sudokufx::config']]],
   ['objectmapperconfig_2ejava_2',['ObjectMapperConfig.java',['../_object_mapper_config_8java.html',1,'']]],
   ['of_20sudokufx_3',['Documentation of SudokuFX',['../index.html',1,'']]],

@@ -1,0 +1,7 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests =
+[
+    [ "givenMutedState_whenPlaySong_thenVolumeIsZero", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html#a4367e350412e32f2a39e8e62fabdafef", null ],
+    [ "givenNewSong_whenPlaySong_thenPreviousPlayerStoppedAndDisposed", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html#a9762397f5bdfa9cb643d45fd2b5c976b", null ],
+    [ "givenNullSongFile_whenPlaySong_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html#ab81e038585e0a8d29567669844c8f4e7", null ],
+    [ "givenValidSong_whenPlaySong_thenMediaPlayerCreatedAndLooped", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html#add14a6484bad81566f5f6501c45dccf3", null ]
+];

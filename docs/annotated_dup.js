@@ -140,8 +140,10 @@ var annotated_dup =
                   [ "ScreenSizeITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test" ]
                 ] ]
               ] ],
-              [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service.html", [
-                [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1_version_service_i_test" ]
+              [ "service", null, [
+                [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html", [
+                  [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1_version_service_i_test" ]
+                ] ]
               ] ]
             ] ],
             [ "unit", null, [
@@ -168,9 +170,15 @@ var annotated_dup =
                   [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test" ]
                 ] ]
               ] ],
-              [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service.html", [
-                [ "AudioServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test" ],
-                [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_player_service_u_test" ]
+              [ "service", null, [
+                [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business.html", [
+                  [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test" ]
+                ] ],
+                [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui.html", [
+                  [ "AsyncFileProcessorServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test" ],
+                  [ "AudioServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test" ],
+                  [ "FileChooserServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test" ]
+                ] ]
               ] ],
               [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", [
                 [ "grid", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid.html", [

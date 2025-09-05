@@ -1,0 +1,17 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest" name="fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="292,1111,536,1644"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html" title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons." alt="" coords="5,588,260,807"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,805,275,1046,296,1094,291,1096,270,1048,173,807"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="100,169,165,239"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="136,254,136,588,130,588,130,254"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="285,348,544,1047"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="417,1046,417,1094,412,1094,412,1046"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="338,169,381,239"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="368,253,378,348,373,349,362,254"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="405,124,664,284"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="518,284,506,332,501,331,512,283"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="510,5,558,75"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="537,90,537,124,532,124,532,90"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" title=" " alt="" coords="568,615,799,780"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="657,781,558,1048,538,1096,533,1094,553,1046,652,779"/>
+</map>

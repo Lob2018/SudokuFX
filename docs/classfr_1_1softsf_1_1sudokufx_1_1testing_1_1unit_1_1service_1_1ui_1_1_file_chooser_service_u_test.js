@@ -1,0 +1,8 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test =
+[
+    [ "givenNullFileType_whenChooseFile_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#a20f09e67db564ca6f16ca9d702eab344", null ],
+    [ "givenNullStage_whenChooseFile_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#a8b473897da037fa058ac170a07fc8252", null ],
+    [ "givenValidStageAndFileType_whenChooseFile_thenReturnsOptional", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#a86a208f0cb74e8435c41ff662d64bdba", null ],
+    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#ae842bb7253593afc90c4574b70ce2abd", null ],
+    [ "service", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#a631a8e331a3bf7df6eded635748f9939", null ]
+];

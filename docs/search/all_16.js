@@ -1,7 +1,7 @@
 var searchData=
 [
   ['warn_0',['WARN',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a25e76a69f55467861bd047078b7ffcd3',1,'fr::softsf::sudokufx::common::enums::ToastLevels']]],
-  ['whenmuteall_5fthenallaudiomutedandstateupdated_1',['whenMuteAll_thenAllAudioMutedAndStateUpdated',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#ac2cb6efccc8c01f5e0902e193c941ae8',1,'fr::softsf::sudokufx::testing::unit::service::AudioServiceUTest::MuteUnmuteTests']]],
+  ['whenmuteall_5fthenallaudiomutedandstateupdated_1',['whenMuteAll_thenAllAudioMutedAndStateUpdated',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#aba7284e034bef0bcd09219fd3b59dbcf',1,'fr::softsf::sudokufx::testing::unit::service::ui::AudioServiceUTest::MuteUnmuteTests']]],
   ['whenshowhelp_5fthenalertisbuilt_5fanddisplayed_5fnonblocking_2',['whenShowHelp_thenAlertIsBuilt_andDisplayed_nonBlocking',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test.html#a2325e2f950836a809ec325b38427ed3e',1,'fr::softsf::sudokufx::viewmodel::HelpViewModelUTest']]],
   ['windows_3',['WINDOWS',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#ac8b6b21b75c23585e8d5914a73c9b5fd',1,'fr::softsf::sudokufx::common::enums::OsName']]],
   ['windows_5fbase_5fpath_4',['WINDOWS_BASE_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#aee5779d9f7de26e7f626a5d04818a7c1',1,'fr::softsf::sudokufx::common::enums::Paths']]],

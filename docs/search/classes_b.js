@@ -23,7 +23,7 @@ var searchData=
   ['menusolveviewmodel_20',['MenuSolveViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html',1,'fr::softsf::sudokufx::viewmodel']]],
   ['menusolveviewmodelutest_21',['MenuSolveViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel']]],
   ['menuutest_22',['MenuUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_u_test.html',1,'fr::softsf::sudokufx::model']]],
-  ['muteunmutetests_23',['MuteUnmuteTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1_audio_service_u_test_1_1_mute_unmute_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::AudioServiceUTest']]],
+  ['muteunmutetests_23',['MuteUnmuteTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::ui::AudioServiceUTest']]],
   ['myalert_24',['MyAlert',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html',1,'fr::softsf::sudokufx::view::component']]],
   ['mydatetime_25',['MyDateTime',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html',1,'fr::softsf::sudokufx::common::util']]],
   ['mydatetimeutest_26',['MyDateTimeUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
