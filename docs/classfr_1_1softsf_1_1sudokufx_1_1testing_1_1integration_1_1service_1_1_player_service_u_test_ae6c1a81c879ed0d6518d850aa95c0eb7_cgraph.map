@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenBlankPlayerName_whenGetPlayer_thenThrowsException" name="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenBlankPlayerName_whenGetPlayer_thenThrowsException">
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenBlankPlayerName_whenGetPlayer_thenThrowsException" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenBlankPlayerName_whenGetPlayer_thenThrowsException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,138,286,197"/>
 <area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a74a25e6890e40c0776edc15742133036" title=" " alt="" coords="589,37,828,63"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,135,268,111,333,90,456,67,573,54,574,59,456,72,334,95,270,116,210,140"/>

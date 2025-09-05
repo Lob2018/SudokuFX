@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException">
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,65,397,124"/>
 <area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" title="Data Transfer Object representing a menu entity." alt="" coords="706,5,909,32"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,65,444,59,691,29,692,34,445,64,397,70"/>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest.MuteUnmuteTests.givenMutedAudio_whenUnmuteAll_thenOriginalVolumesRestored" name="fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest.MuteUnmuteTests.givenMutedAudio_whenUnmuteAll_thenOriginalVolumesRestored">
+<map id="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.MuteUnmuteTests.givenMutedAudio_whenUnmuteAll_thenOriginalVolumesRestored" name="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.MuteUnmuteTests.givenMutedAudio_whenUnmuteAll_thenOriginalVolumesRestored">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,374,88"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="119,29,120,19,133,10,156,5,190,3,229,6,252,13,251,18,228,11,189,8,157,10,135,15,125,21,124,29"/>
 </map>

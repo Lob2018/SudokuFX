@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException">
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenSelectedPlayerWithNullGame_whenGetPlayer_thenThrowIllegalArgumentException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,65,374,124"/>
 <area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aeb9760499a9309facaec4ff31e172f76" title=" " alt="" coords="422,81,629,108"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,92,406,92,406,97,374,97"/>

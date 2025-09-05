@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenValidationFails_whenGetPlayer_thenThrowsConstraintViolationException" name="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenValidationFails_whenGetPlayer_thenThrowsConstraintViolationException">
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenValidationFails_whenGetPlayer_thenThrowsConstraintViolationException" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenValidationFails_whenGetPlayer_thenThrowsConstraintViolationException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,63,366,121"/>
 <area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0b4cf476a6a3d3f1f289617aa14a93cb" title="Data Transfer Object representing a game entity." alt="" coords="674,53,879,80"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="366,82,658,69,658,74,366,87"/>

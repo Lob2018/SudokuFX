@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest" name="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest">
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="304,583,566,849"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="5,169,187,271"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,271,78,325,75,389,82,456,92,487,106,517,142,565,187,605,238,638,290,664,288,669,235,642,184,609,138,568,101,520,87,489,77,457,69,389,73,325,81,270"/>

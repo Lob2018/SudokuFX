@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest.IntegrationTests.givenComplexOperations_whenExecuted_thenStateRemainsConsistent" name="fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest.IntegrationTests.givenComplexOperations_whenExecuted_thenStateRemainsConsistent">
+<map id="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.IntegrationTests.givenComplexOperations_whenExecuted_thenStateRemainsConsistent" name="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.IntegrationTests.givenComplexOperations_whenExecuted_thenStateRemainsConsistent">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,350,104"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="110,28,115,18,128,10,148,5,178,3,213,6,235,14,233,19,212,11,177,8,149,10,130,15,119,21,115,30"/>
 </map>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest.StopOperationsTests.givenNoPlayingAudio_whenStopAll_thenNoException" name="fr.softsf.sudokufx.testing.unit.service.AudioServiceUTest.StopOperationsTests.givenNoPlayingAudio_whenStopAll_thenNoException">
+<map id="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.StopOperationsTests.givenNoPlayingAudio_whenStopAll_thenNoException" name="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.StopOperationsTests.givenNoPlayingAudio_whenStopAll_thenNoException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,307,88"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="98,29,99,19,109,10,129,5,156,3,188,5,207,12,205,17,187,11,156,8,129,10,112,15,103,21,103,29"/>
 </map>

@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenValidPlayer_whenGetPlayer_thenReturnsDto" name="fr.softsf.sudokufx.testing.unit.service.PlayerServiceUTest.givenValidPlayer_whenGetPlayer_thenReturnsDto">
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenValidPlayer_whenGetPlayer_thenReturnsDto" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenValidPlayer_whenGetPlayer_thenReturnsDto">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,139,247,197"/>
 <area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0b4cf476a6a3d3f1f289617aa14a93cb" title="Data Transfer Object representing a game entity." alt="" coords="555,53,760,80"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,136,238,114,294,96,356,83,420,74,539,65,540,71,421,80,357,89,295,101,240,119,188,141"/>
