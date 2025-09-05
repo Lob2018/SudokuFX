@@ -33,10 +33,12 @@ import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
+import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -52,6 +54,8 @@ class MenuOptionsViewModelUTest {
     private SpinnerGridPane spinnerMock;
     private AsyncFileProcessorService asyncServiceMock;
     private AudioService audioSpy;
+    private PlayerStateHolder playerStateHolder;
+    private OptionsService optionsService;
 
     @BeforeEach
     void setUp() {
@@ -62,8 +66,13 @@ class MenuOptionsViewModelUTest {
         toasterMock = mock(ToasterVBox.class);
         spinnerMock = mock(SpinnerGridPane.class);
         asyncServiceMock = mock(AsyncFileProcessorService.class);
+        playerStateHolder = mock(PlayerStateHolder.class);
         audioSpy = spy(new AudioService());
-        viewModel = spy(new MenuOptionsViewModel(audioSpy, asyncServiceMock));
+        optionsService = mock(OptionsService.class);
+        viewModel =
+                spy(
+                        new MenuOptionsViewModel(
+                                audioSpy, asyncServiceMock, playerStateHolder, optionsService));
         viewModel.init(sudokuFX, colorPicker, toasterMock, spinnerMock);
     }
 
@@ -244,7 +253,9 @@ class MenuOptionsViewModelUTest {
         GridPane gridMock = new GridPane();
         ToasterVBox toasterMockLocal = mock(ToasterVBox.class);
         ImageUtils imageUtilsSpy = spy(new ImageUtils());
-        MenuOptionsViewModel vm = new MenuOptionsViewModel(new AudioService(), asyncServiceMock);
+        MenuOptionsViewModel vm =
+                new MenuOptionsViewModel(
+                        new AudioService(), asyncServiceMock, playerStateHolder, optionsService);
         Field imageUtilsField = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
         imageUtilsField.setAccessible(true);
         imageUtilsField.set(vm, imageUtilsSpy);

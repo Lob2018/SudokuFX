@@ -28,6 +28,7 @@ import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 /**
  * ViewModel component managing a 9x9 Sudoku grid. Provides observable cell view models and methods
@@ -45,16 +46,19 @@ public class GridViewModel {
     private final IGridMaster iGridMaster;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     private final AudioService audioService;
+    private final PlayerStateHolder playerStateHolder;
 
     private ToasterVBox toaster;
 
     public GridViewModel(
             IGridMaster iGridMaster,
             ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,
-            AudioService audioService) {
+            AudioService audioService,
+            PlayerStateHolder playerStateHolder) {
         this.iGridMaster = iGridMaster;
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
         this.audioService = audioService;
+        this.playerStateHolder = playerStateHolder;
     }
 
     /**
@@ -83,6 +87,8 @@ public class GridViewModel {
                         .textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
+                                    verifyGrid();
+
                                     if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
                                                     != ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE
                                             && isCompletelyCompleted()) {
@@ -145,7 +151,8 @@ public class GridViewModel {
         if (solved && Arrays.equals(grilleInt, solvedGrid)) {
             // Play the song from inMemorPlayer
             try {
-                audioService.playSong(new File("C:\\Users"));
+                audioService.playSong(
+                        new File(playerStateHolder.getCurrentPlayer().optionsidDto().songpath()));
             } catch (ResourceLoadException e) {
                 String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
                 LOG.error("{}: {}", title, e.getMessage(), e);

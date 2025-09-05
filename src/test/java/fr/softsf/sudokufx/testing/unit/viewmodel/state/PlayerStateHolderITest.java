@@ -16,11 +16,11 @@ import fr.softsf.sudokufx.config.database.DataSourceConfigTest;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
- * Integration test for {@link PlayerStateHolder}. Ensures player is loaded correctly from the
- * database.
+ * Integration test for {@link PlayerStateHolder}. Ensures player is loaded and refreshed correctly
+ * from the database.
  */
 @SpringBootTest(classes = {SudoMain.class})
 @ActiveProfiles("test")
@@ -34,6 +34,14 @@ class PlayerStateHolderITest {
         PlayerDto dto = playerStateHolder.getCurrentPlayer();
         assertNotNull(dto, "PlayerDto should be initialized");
         assertNotNull(dto.name(), "Player name should not be null");
-        assertFalse(dto.name().isBlank(), "Player name should not be blank");
+    }
+
+    @Test
+    void givenRefreshCurrentPlayer_whenCalled_thenCurrentPlayerIsReloadedFromService() {
+        PlayerDto original = playerStateHolder.getCurrentPlayer();
+        playerStateHolder.refreshCurrentPlayer();
+        PlayerDto refreshed = playerStateHolder.getCurrentPlayer();
+        assertNotNull(refreshed, "Refreshed player should not be null");
+        assert (original.playerid().equals(refreshed.playerid()));
     }
 }

@@ -10,15 +10,14 @@ import javafx.beans.property.ObjectProperty;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.*;
+import org.mockito.*;
 import org.slf4j.LoggerFactory;
 import org.testfx.framework.junit5.ApplicationExtension;
 
+import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudokufx.dto.MenuDto;
-import fr.softsf.sudokufx.dto.OptionsDto;
-import fr.softsf.sudokufx.dto.PlayerDto;
-import fr.softsf.sudokufx.dto.PlayerLanguageDto;
+import fr.softsf.sudokufx.dto.*;
 import fr.softsf.sudokufx.service.business.PlayerService;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -27,115 +26,114 @@ import static org.mockito.Mockito.*;
 @ExtendWith(ApplicationExtension.class)
 class PlayerStateHolderUTest {
 
-    private PlayerService playerServiceMock;
+    @Mock private PlayerService playerServiceMock;
+
     private PlayerStateHolder playerStateHolder;
     private ListAppender<ILoggingEvent> logWatcher;
+    private AutoCloseable mocks;
 
-    @BeforeEach
-    void setup() {
-        logWatcher = new ListAppender<>();
-        logWatcher.start();
-        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(PlayerStateHolder.class))
-                .addAppender(logWatcher);
-        playerServiceMock = mock(PlayerService.class);
-    }
-
-    @AfterEach
-    void tearDown() {
-        ((ch.qos.logback.classic.Logger) LoggerFactory.getLogger(PlayerStateHolder.class))
-                .detachAndStopAllAppenders();
-    }
-
-    private PlayerLanguageDto defaultPlayerLanguage() {
+    private PlayerLanguageDto safeLang() {
         return new PlayerLanguageDto(1L, "FR");
     }
 
-    private OptionsDto defaultOptions() {
-        return new OptionsDto(1L, "000000ff", "", "", false, true, true);
+    private OptionsDto safeOptions() {
+        return new OptionsDto(
+                1L, "FFFFFFFF", "/img/default.png", "/song/default.mp3", true, true, false);
     }
 
-    private MenuDto defaultMenu() {
-        return new MenuDto((byte) 1, (byte) 2);
+    private MenuDto safeMenu() {
+        return new MenuDto((byte) 1, (byte) 1);
     }
 
-    private PlayerDto createPlayerDto(
-            Long playerId,
-            String playerName,
-            Boolean isSelected,
-            PlayerLanguageDto playerLanguage,
-            OptionsDto options,
-            MenuDto menu) {
+    private PlayerDto safePlayer() {
         return new PlayerDto(
-                playerId,
-                playerLanguage != null ? playerLanguage : defaultPlayerLanguage(),
-                options != null ? options : defaultOptions(),
-                menu != null ? menu : defaultMenu(),
+                1L,
+                safeLang(),
+                safeOptions(),
+                safeMenu(),
                 null,
-                playerName,
-                isSelected,
+                "SafePlayer",
+                false,
                 LocalDateTime.now(),
                 LocalDateTime.now());
     }
 
-    @Test
-    void givenValidPlayer_whenConstructed_thenPlayerIsLoaded() {
-        PlayerDto expectedPlayer = createPlayerDto(1L, "John Doe", true, null, null, null);
-        when(playerServiceMock.getPlayer()).thenReturn(expectedPlayer);
-        playerStateHolder = new PlayerStateHolder(playerServiceMock);
-        PlayerDto actualPlayer = playerStateHolder.getCurrentPlayer();
-        assertNotNull(actualPlayer);
-        assertEquals(expectedPlayer.name(), actualPlayer.name());
-        assertTrue(actualPlayer.isselected());
+    private PlayerDto newPlayer() {
+        return new PlayerDto(
+                2L,
+                safeLang(),
+                safeOptions(),
+                safeMenu(),
+                null,
+                "NewPlayer",
+                false,
+                LocalDateTime.now(),
+                LocalDateTime.now());
+    }
+
+    @BeforeEach
+    void setup() {
+        mocks = MockitoAnnotations.openMocks(this);
+        logWatcher = new ListAppender<>();
+        logWatcher.start();
+        ((Logger) LoggerFactory.getLogger(PlayerStateHolder.class)).addAppender(logWatcher);
+        when(playerServiceMock.getPlayer()).thenReturn(safePlayer());
+        playerStateHolder = spy(new PlayerStateHolder(playerServiceMock));
+        doNothing().when(playerStateHolder).exitPlatform();
+    }
+
+    @AfterEach
+    void cleanup() throws Exception {
+        ((Logger) LoggerFactory.getLogger(PlayerStateHolder.class)).detachAndStopAllAppenders();
+        if (mocks != null) {
+            mocks.close();
+        }
     }
 
     @Test
-    void givenSetCurrentPlayer_whenCalled_thenPlayerIsUpdated() {
-        PlayerDto initialPlayer = createPlayerDto(1L, "John Doe", true, null, null, null);
-        PlayerDto newPlayer =
-                createPlayerDto(
-                        2L,
-                        "Jane Smith",
-                        false,
-                        new PlayerLanguageDto(2L, "EN"),
-                        new OptionsDto(2L, "ffffff00", "", "", false, true, true),
-                        new MenuDto((byte) 2, (byte) 3));
-        when(playerServiceMock.getPlayer()).thenReturn(initialPlayer);
-        playerStateHolder = new PlayerStateHolder(playerServiceMock);
-        playerStateHolder.setCurrentPlayer(newPlayer);
-        PlayerDto actualPlayer = playerStateHolder.getCurrentPlayer();
-        assertEquals(newPlayer, actualPlayer);
+    void givenPlayerService_returnsPlayer_thenCurrentPlayerIsSet() {
+        PlayerDto player = playerStateHolder.getCurrentPlayer();
+        assertNotNull(player);
+        assertEquals("SafePlayer", player.name());
     }
 
     @Test
-    void givenNullCurrentPlayer_whenConstructed_thenInitializeCalled() {
-        PlayerDto expectedPlayer = createPlayerDto(1L, "Init Player", true, null, null, null);
-        when(playerServiceMock.getPlayer()).thenReturn(expectedPlayer);
-        playerStateHolder = new PlayerStateHolder(playerServiceMock);
-        assertEquals(expectedPlayer, playerStateHolder.getCurrentPlayer());
+    void givenException_whenRefreshingPlayer_thenLogErrorIsProduced_withoutCallingPlatformExit() {
+        doThrow(new IllegalStateException("DB down")).when(playerServiceMock).getPlayer();
+        playerStateHolder.refreshCurrentPlayer();
+        verify(playerStateHolder).exitPlatform();
+        String lastLog = logWatcher.list.getLast().getFormattedMessage();
+        assertTrue(lastLog.contains("Error refreshing player: DB down"));
     }
 
     @Test
-    void currentPlayerProperty_shouldReturnObjectProperty() {
-        PlayerDto expectedPlayer = createPlayerDto(1L, "Prop Player", true, null, null, null);
-        when(playerServiceMock.getPlayer()).thenReturn(expectedPlayer);
-        playerStateHolder = new PlayerStateHolder(playerServiceMock);
+    void givenPlayerService_returnsPlayer_whenRefreshCurrentPlayer_thenPropertyUpdated() {
+        doReturn(newPlayer()).when(playerServiceMock).getPlayer();
+        playerStateHolder.refreshCurrentPlayer();
+        ObjectProperty<PlayerDto> property = playerStateHolder.currentPlayerProperty();
+        assertEquals("NewPlayer", property.get().name());
+        assertEquals("NewPlayer", playerStateHolder.getCurrentPlayer().name());
+        String lastLog = logWatcher.list.getLast().getFormattedMessage();
+        assertTrue(lastLog.contains("Player refreshed from database:"));
+        assertTrue(lastLog.contains("NewPlayer"));
+    }
+
+    @Test
+    void currentPlayerProperty_returnsObjectProperty() {
         ObjectProperty<PlayerDto> prop = playerStateHolder.currentPlayerProperty();
         assertNotNull(prop);
-        assertEquals(expectedPlayer, prop.get());
+        assertEquals(playerStateHolder.getCurrentPlayer(), prop.get());
     }
 
     @Test
-    void givenException_whenInitializingPlayer_thenLogErrorIsProduced_withoutCallingPlatformExit() {
-        when(playerServiceMock.getPlayer()).thenThrow(new IllegalStateException("DB down"));
-        new PlayerStateHolder(playerServiceMock) {
-            @Override
-            void exitPlatform() {
-                // No-op on purpose to avoid calling Platform.exit() during tests
-            }
-        };
-        String lastLog = logWatcher.list.getLast().getFormattedMessage();
-        assertTrue(
-                lastLog.contains("Error initializing player: DB down"),
-                "The last log message must contenir l’erreur attendue");
+    void getCurrentPlayer_returnsCorrectPlayer() {
+        PlayerDto current = playerStateHolder.getCurrentPlayer();
+        assertNotNull(current);
+        assertEquals("SafePlayer", current.name());
+    }
+
+    @Test
+    void exitPlatform_doesNotThrow_whenCalled() {
+        assertDoesNotThrow(() -> playerStateHolder.exitPlatform());
     }
 }

@@ -32,10 +32,13 @@ import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.util.AudioUtils;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
+import fr.softsf.sudokufx.dto.OptionsDto;
+import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 /**
  * ViewModel managing menu options UI state and accessibility strings.
@@ -54,6 +57,8 @@ public class MenuOptionsViewModel {
     private final AsyncFileProcessorService asyncFileProcessorService;
     private final ImageUtils imageUtils;
     private final AudioUtils audioUtils;
+    private final PlayerStateHolder playerStateHolder;
+    private final OptionsService optionsService;
 
     private static final String ROLE_CLOSED = "menu.accessibility.role.description.closed";
     private static final String ROLE_OPENED = "menu.accessibility.role.description.opened";
@@ -117,11 +122,21 @@ public class MenuOptionsViewModel {
     private ToasterVBox toaster;
 
     public MenuOptionsViewModel(
-            AudioService audioService, AsyncFileProcessorService asyncFileProcessorService) {
+            AudioService audioService,
+            AsyncFileProcessorService asyncFileProcessorService,
+            PlayerStateHolder playerStateHolder,
+            OptionsService optionsService) {
         this.imageUtils = new ImageUtils();
         this.audioUtils = new AudioUtils();
         this.audioService = audioService;
+        this.optionsService = optionsService;
         this.asyncFileProcessorService = asyncFileProcessorService;
+        this.playerStateHolder = playerStateHolder;
+
+        songProperty.set(
+                new File(playerStateHolder.currentPlayerProperty().get().optionsidDto().songpath())
+                        .getName());
+
         optionsMenuMaxiAccessibleText =
                 createStringBinding("menu.maxi.button.options.accessibility");
         optionsMenuMaxiTooltip =
@@ -634,15 +649,55 @@ public class MenuOptionsViewModel {
             toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
             return;
         }
-        String savedPath = file.getAbsolutePath();
-        // TODO save the song path to base
-        songProperty.set(file.getName());
-        toaster.addToast(
-                MessageFormat.format(
-                        I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"), file.getName()),
-                savedPath,
-                ToastLevels.INFO,
-                false);
+        updateSongPath(file.getAbsolutePath(), file.getName());
+    }
+
+    /**
+     * Updates the audio file path (songPath) in the current player's options.
+     *
+     * <p>A copy of the current {@link OptionsDto} is created with the new path and persisted via
+     * {@link OptionsService#updateOptions(OptionsDto)}. On success, the current player is
+     * refreshed, {@code songProperty} is updated, and an info toast is shown. On failure, an error
+     * toast is shown.
+     *
+     * @param absolutePath the new audio file absolute path
+     * @param name the file name, used in toast messages
+     */
+    private void updateSongPath(String absolutePath, String name) {
+        boolean clear = StringUtils.isEmpty(absolutePath);
+        OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
+        OptionsDto toSaveOptions =
+                new OptionsDto(
+                        currentOptions.optionsid(),
+                        currentOptions.hexcolor(),
+                        currentOptions.imagepath(),
+                        absolutePath,
+                        currentOptions.isimage(),
+                        currentOptions.isopaque(),
+                        currentOptions.ismuted());
+        try {
+            optionsService.updateOptions(toSaveOptions);
+            playerStateHolder.refreshCurrentPlayer();
+            songProperty.set(clear ? "" : name);
+            toaster.addToast(
+                    MessageFormat.format(
+                            I18n.INSTANCE.getValue(
+                                    clear
+                                            ? "toast.msg.optionsviewmodel.disabled"
+                                            : "toast.msg.optionsviewmodel.saved"),
+                            name),
+                    absolutePath,
+                    ToastLevels.INFO,
+                    false);
+        } catch (Exception e) {
+            toaster.addToast(
+                    MessageFormat.format(
+                            I18n.INSTANCE.getValue("toast.error.optionsviewmodel.ontaskerror"),
+                            name),
+                    absolutePath,
+                    ToastLevels.ERROR,
+                    false);
+        }
     }
 
     /**
@@ -682,14 +737,6 @@ public class MenuOptionsViewModel {
      * empty.
      */
     public void clearSong() {
-        // TODO save empty song path to base
-        toaster.addToast(
-                MessageFormat.format(
-                        I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.disabled"),
-                        songProperty.get()),
-                "",
-                ToastLevels.INFO,
-                false);
-        songProperty.set("");
+        updateSongPath("", songProperty.get());
     }
 }

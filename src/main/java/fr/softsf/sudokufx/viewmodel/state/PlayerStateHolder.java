@@ -18,22 +18,19 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
 
 /**
- * State holder for the current {@link PlayerDto} in the application.
+ * Holds the current {@link PlayerDto} for the application.
  *
- * <p>This component stores the current player and exposes it via a JavaFX {@link ObjectProperty}
- * for ViewModels and Views to bind to. The player is initialized at creation using {@link
- * PlayerService}. Updates to the player should go through this state holder to ensure all observers
- * are notified.
+ * <p>Provides an observable property for UI bindings and propagates updates to all observers.
  *
  * <p>Responsibilities:
  *
  * <ul>
- *   <li>Hold the current {@link PlayerDto} in memory.
- *   <li>Expose an observable property for UI bindings.
- *   <li>Allow manual updates after persistence.
+ *   <li>Store the current {@link PlayerDto} in memory.
+ *   <li>Expose an observable property for ViewModels and Views.
+ *   <li>Reload the current player passively from the database via {@link #refreshCurrentPlayer()}.
  * </ul>
  *
- * <p>Note: If initialization fails, the application will exit.
+ * <p>Note: If initialization or refresh fails, the application exits gracefully.
  */
 @Component
 public class PlayerStateHolder {
@@ -60,32 +57,27 @@ public class PlayerStateHolder {
     public PlayerStateHolder(PlayerService playerService) {
         this.playerService = playerService;
         if (Objects.isNull(currentPlayer.get())) {
-            initializePlayer();
+            refreshCurrentPlayer();
         }
     }
 
     /**
-     * Initializes the player by fetching it from {@link PlayerService}. Exits the application on
-     * failure.
+     * Reloads the current player from the database. Observers are notified of any change.
+     *
+     * <p>This method is passive: it does not modify the database but simply reloads the current
+     * player state via {@link PlayerService#getPlayer()}.
+     *
+     * @throws IllegalStateException if reloading the player fails
      */
-    private void initializePlayer() {
+    public void refreshCurrentPlayer() {
         try {
             PlayerDto player = playerService.getPlayer();
             currentPlayer.set(player);
+            LOG.info("Player refreshed from database: {}", player);
         } catch (IllegalStateException e) {
-            LOG.error(
-                    "Error initializing player: {}, triggering Platform.exit()", e.getMessage(), e);
+            LOG.error("Error refreshing player: {}, triggering Platform.exit()", e.getMessage(), e);
             exitPlatform();
         }
-    }
-
-    /**
-     * Manually updates the current player. Observers will be notified automatically.
-     *
-     * @param dto the new {@link PlayerDto} to store
-     */
-    public void setCurrentPlayer(PlayerDto dto) {
-        currentPlayer.set(dto);
     }
 
     /**

@@ -31,6 +31,7 @@ import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(ApplicationExtension.class)
 class MenuPlayerViewModelUTest {
@@ -44,8 +45,7 @@ class MenuPlayerViewModelUTest {
         originalLocale = I18n.INSTANCE.localeProperty().get();
         I18n.INSTANCE.setLocaleBundle("FR");
         PlayerService playerServiceMock = mock(PlayerService.class);
-        playerStateHolder = new PlayerStateHolder(playerServiceMock);
-        playerStateHolder.setCurrentPlayer(
+        PlayerDto testPlayer =
                 new PlayerDto(
                         42L,
                         new PlayerLanguageDto(1L, "FR"),
@@ -55,7 +55,9 @@ class MenuPlayerViewModelUTest {
                         "TestPlayer",
                         false,
                         LocalDateTime.now(),
-                        LocalDateTime.now()));
+                        LocalDateTime.now());
+        when(playerServiceMock.getPlayer()).thenReturn(testPlayer);
+        playerStateHolder = new PlayerStateHolder(playerServiceMock);
         viewModel = new MenuPlayerViewModel(playerStateHolder);
     }
 

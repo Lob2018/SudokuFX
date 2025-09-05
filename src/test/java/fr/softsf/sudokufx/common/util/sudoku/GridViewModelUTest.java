@@ -18,13 +18,16 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
+import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
 
 @ExtendWith(ApplicationExtension.class)
 class GridViewModelUTest {
@@ -37,7 +40,8 @@ class GridViewModelUTest {
                 new GridViewModel(
                         new GridMaster(new JakartaValidator(null)),
                         new ActiveMenuOrSubmenuViewModel(),
-                        new AudioService());
+                        new AudioService(),
+                        new PlayerStateHolder(mock(PlayerService.class)));
         viewModel.init(new ToasterVBox());
     }
 
