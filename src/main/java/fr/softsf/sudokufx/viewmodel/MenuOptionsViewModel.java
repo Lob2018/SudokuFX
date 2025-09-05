@@ -132,11 +132,6 @@ public class MenuOptionsViewModel {
         this.optionsService = optionsService;
         this.asyncFileProcessorService = asyncFileProcessorService;
         this.playerStateHolder = playerStateHolder;
-
-        songProperty.set(
-                new File(playerStateHolder.currentPlayerProperty().get().optionsidDto().songpath())
-                        .getName());
-
         optionsMenuMaxiAccessibleText =
                 createStringBinding("menu.maxi.button.options.accessibility");
         optionsMenuMaxiTooltip =
@@ -544,6 +539,12 @@ public class MenuOptionsViewModel {
         gridOpacityProperty.set(true);
         // IF MUTE ISMUTED
         initializeAudio(true);
+        // SONG PATH
+        //        songProperty.set(
+        //
+        // Paths.get(playerStateHolder.currentPlayerProperty().get().optionsidDto().songpath())
+        //                        .getFileName()
+        //                        .toString());
     }
 
     /**

@@ -87,8 +87,7 @@ public class GridViewModel {
                         .textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
-                                    verifyGrid();
-
+                                    //                                    verifyGrid();
                                     if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
                                                     != ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE
                                             && isCompletelyCompleted()) {
