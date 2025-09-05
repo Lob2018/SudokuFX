@@ -11,4 +11,4 @@ import org.springframework.stereotype.Repository;
 import fr.softsf.sudokufx.model.GameLevel;
 
 @Repository
-public interface GameLevelRepository extends JpaRepository<GameLevel, Long> {}
+public interface GameLevelRepository extends JpaRepository<GameLevel, Byte> {}

@@ -11,4 +11,4 @@ import org.springframework.stereotype.Repository;
 import fr.softsf.sudokufx.model.Menu;
 
 @Repository
-public interface MenuRepository extends JpaRepository<Menu, Long> {}
+public interface MenuRepository extends JpaRepository<Menu, Byte> {}
