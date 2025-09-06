@@ -17,10 +17,11 @@ import static org.mockito.Mockito.*;
 
 /**
  * Abstract base test class that provides:
+ *
  * <ul>
- *   <li>a mocked {@link PlayerService}</li>
- *   <li>a real {@link PlayerStateHolder} wired with the mock</li>
- *   <li>a default {@link PlayerDto} instance for convenience</li>
+ *   <li>a mocked {@link PlayerService}
+ *   <li>a real {@link PlayerStateHolder} wired with the mock
+ *   <li>a default {@link PlayerDto} instance for convenience
  * </ul>
  */
 public abstract class AbstractPlayerStateTest {
@@ -55,8 +56,8 @@ public abstract class AbstractPlayerStateTest {
 
     /**
      * Factory method to create the default {@link PlayerDto}.
-     * <p>
-     * Subclasses can override this to customize the default player used in tests.
+     *
+     * <p>Subclasses can override this to customize the default player used in tests.
      *
      * @return a default {@code PlayerDto} instance
      */
@@ -69,15 +70,15 @@ public abstract class AbstractPlayerStateTest {
                 null,
                 "SafePlayer",
                 false,
-                LocalDateTime.now(),
-                LocalDateTime.now());
+                LocalDateTime.of(2024, 1, 1, 10, 0, 0),
+                LocalDateTime.of(2024, 1, 1, 10, 0, 0));
     }
 
     /**
      * Testable inner subclass of {@link PlayerStateHolder}.
-     * <p>
-     * Allows overriding of methods that should not be executed during tests
-     * while keeping all JavaFX properties functional.
+     *
+     * <p>Allows overriding of methods that should not be executed during tests while keeping all
+     * JavaFX properties functional.
      */
     protected static class TestablePlayerStateHolder extends PlayerStateHolder {
 
@@ -87,8 +88,8 @@ public abstract class AbstractPlayerStateTest {
 
         /**
          * Overridden to avoid shutting down the JavaFX platform during tests.
-         * <p>
-         * Keeps JavaFX properties intact while making {@code exitPlatform()} a no-op.
+         *
+         * <p>Keeps JavaFX properties intact while making {@code exitPlatform()} a no-op.
          */
         @Override
         protected void exitPlatform() {
