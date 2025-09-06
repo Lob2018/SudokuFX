@@ -17,12 +17,8 @@ import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -38,13 +34,13 @@ import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
-import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
+import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(ApplicationExtension.class)
-class MenuOptionsViewModelUTest {
+class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
 
     private Locale originalLocale;
     private MenuOptionsViewModel viewModel;
@@ -54,11 +50,10 @@ class MenuOptionsViewModelUTest {
     private SpinnerGridPane spinnerMock;
     private AsyncFileProcessorService asyncServiceMock;
     private AudioService audioSpy;
-    private PlayerStateHolder playerStateHolder;
     private OptionsService optionsService;
 
     @BeforeEach
-    void setUp() {
+    void givenDependencies_whenInitViewModel_thenViewModelInitialized() {
         originalLocale = I18n.INSTANCE.localeProperty().get();
         I18n.INSTANCE.setLocaleBundle("FR");
         sudokuFX = new GridPane();
@@ -66,23 +61,22 @@ class MenuOptionsViewModelUTest {
         toasterMock = mock(ToasterVBox.class);
         spinnerMock = mock(SpinnerGridPane.class);
         asyncServiceMock = mock(AsyncFileProcessorService.class);
-        playerStateHolder = mock(PlayerStateHolder.class);
         audioSpy = spy(new AudioService());
         optionsService = mock(OptionsService.class);
         viewModel =
                 spy(
                         new MenuOptionsViewModel(
-                                audioSpy, asyncServiceMock, playerStateHolder, optionsService));
+                                audioSpy, asyncServiceMock, playerStateHolderSpy, optionsService));
         viewModel.init(sudokuFX, colorPicker, toasterMock, spinnerMock);
     }
 
     @AfterEach
-    void tearDown() {
+    void givenLocaleRestored_whenTestFinished_thenLocaleReset() {
         I18n.INSTANCE.localeProperty().set(originalLocale);
     }
 
     @Test
-    void allBindingsShouldReturnExpectedI18nValues() {
+    void givenViewModel_whenAccessBindings_thenAllBindingsReturnNonNullAndNonBlank() {
         List<StringBinding> bindings =
                 List.of(
                         viewModel.optionsMenuMaxiAccessibleTextProperty(),
@@ -116,7 +110,6 @@ class MenuOptionsViewModelUTest {
                         viewModel.optionsImageAccessibleTextProperty(),
                         viewModel.optionsImageTooltipProperty(),
                         viewModel.optionsImageRoleDescriptionProperty());
-
         for (StringBinding binding : bindings) {
             assertNotNull(binding.get(), "Binding should not return null");
             assertFalse(binding.get().isBlank(), "Binding should not be blank");
@@ -124,7 +117,7 @@ class MenuOptionsViewModelUTest {
     }
 
     @Test
-    void givenViewModelAndColorPicker_whenInitCalled_thenColorIsSetAndColorPickerUpdated() {
+    void givenViewModelAndColorPicker_whenInit_thenColorIsSetAndColorPickerUpdated() {
         Color expectedColor = Color.rgb(153, 179, 255, 0.803921568627451);
         assertEquals(expectedColor, colorPicker.getValue());
         BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
@@ -132,7 +125,7 @@ class MenuOptionsViewModelUTest {
     }
 
     @Test
-    void givenGridPaneAndColor_whenUpdateBackgroundColor_thenApplied() {
+    void givenGridPaneAndColor_whenUpdateBackgroundColor_thenColorApplied() {
         Color color = Color.web("#12345678");
         viewModel.updateOptionsColorAndApply(sudokuFX, color);
         BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
@@ -144,7 +137,7 @@ class MenuOptionsViewModelUTest {
     class BackgroundImageErrorTests {
 
         @Test
-        void givenNullFile_thenShowErrorToast() {
+        void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast() {
             doNothing().when(toasterMock).addToast(anyString(), anyString(), any(), anyBoolean());
             viewModel.loadBackgroundImage(null, spinnerMock, sudokuFX);
             verifyNoInteractions(asyncServiceMock);
@@ -158,7 +151,7 @@ class MenuOptionsViewModelUTest {
         }
 
         @Test
-        void givenInvalidFile_thenShowErrorToast() {
+        void givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast() {
             File invalidFile = new File("invalid.txt");
             doNothing().when(toasterMock).addToast(anyString(), anyString(), any(), anyBoolean());
             viewModel.loadBackgroundImage(invalidFile, spinnerMock, sudokuFX);
@@ -178,15 +171,13 @@ class MenuOptionsViewModelUTest {
     class BackgroundImageSuccessTests {
 
         @Test
-        void givenValidFile_thenAsyncServiceCalled() throws Exception {
+        void givenValidFile_whenLoadBackgroundImage_thenAsyncServiceCalled() throws Exception {
             File validFile = mock(File.class);
             ImageUtils imageUtilsSpy = spy(new ImageUtils());
             doReturn(true).when(imageUtilsSpy).isValidImage(validFile);
-
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
-
             viewModel.loadBackgroundImage(validFile, spinnerMock, sudokuFX);
             verify(asyncServiceMock)
                     .processFileAsync(
@@ -199,7 +190,7 @@ class MenuOptionsViewModelUTest {
     class OptionsToggleTests {
 
         @Test
-        void gridOpacityToggle_invertsProperty() {
+        void givenInitialGridOpacity_whenToggleGridOpacity_thenPropertyInverted() {
             boolean initial = viewModel.gridOpacityProperty().get();
             boolean toggled = viewModel.toggleGridOpacity();
             assertEquals(!initial, toggled);
@@ -207,7 +198,7 @@ class MenuOptionsViewModelUTest {
         }
 
         @Test
-        void toggleMute_updatesAudioServiceAndProperty() {
+        void givenInitialMuteState_whenToggleMute_thenAudioServiceAndPropertyUpdated() {
             boolean initial = audioSpy.isMuted();
             viewModel.toggleMute();
             verify(audioSpy).setMuted(!initial);
@@ -235,7 +226,7 @@ class MenuOptionsViewModelUTest {
 
         @ParameterizedTest(name = "{0}({1}) should return correct I18n value")
         @MethodSource("utilityTextMethodsProvider")
-        void utilityTextMethods_returnExpectedValue(
+        void givenMethodAndInput_whenCallUtilityTextMethod_thenReturnExpectedValue(
                 String methodName, boolean input, String expectedKey) throws Exception {
             var method = MenuOptionsViewModel.class.getDeclaredMethod(methodName, boolean.class);
             method.setAccessible(true);
@@ -255,7 +246,7 @@ class MenuOptionsViewModelUTest {
         ImageUtils imageUtilsSpy = spy(new ImageUtils());
         MenuOptionsViewModel vm =
                 new MenuOptionsViewModel(
-                        new AudioService(), asyncServiceMock, playerStateHolder, optionsService);
+                        new AudioService(), asyncServiceMock, playerStateHolderSpy, optionsService);
         Field imageUtilsField = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
         imageUtilsField.setAccessible(true);
         imageUtilsField.set(vm, imageUtilsSpy);

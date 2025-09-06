@@ -5,43 +5,37 @@
  */
 package fr.softsf.sudokufx.common.util.sudoku;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
 import java.util.stream.IntStream;
+import java.util.*;
 import javafx.beans.property.IntegerProperty;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.*;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
-import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
-import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
+import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.mock;
 
 @ExtendWith(ApplicationExtension.class)
-class GridViewModelUTest {
+class GridViewModelUTest extends AbstractPlayerStateTest {
 
     private GridViewModel viewModel;
 
     @BeforeEach
-    void setUp() {
+    void givenPlayerStateHolder_whenInitGridViewModel_thenViewModelInitialized() {
         viewModel =
                 new GridViewModel(
                         new GridMaster(new JakartaValidator(null)),
                         new ActiveMenuOrSubmenuViewModel(),
                         new AudioService(),
-                        new PlayerStateHolder(mock(PlayerService.class)));
+                        playerStateHolderSpy);
         viewModel.init(new ToasterVBox());
     }
 
@@ -54,10 +48,9 @@ class GridViewModelUTest {
     void givenFilledGrid_whenClearGrid_thenAllCellsAreEmpty() {
         viewModel.getCellViewModels().forEach(vm -> vm.rawTextProperty().set("5"));
         viewModel.clearGrid();
-        boolean allEmpty =
+        assertTrue(
                 viewModel.getCellViewModels().stream()
-                        .allMatch(vm -> vm.rawTextProperty().get().isEmpty());
-        assertTrue(allEmpty);
+                        .allMatch(vm -> vm.rawTextProperty().get().isEmpty()));
     }
 
     @Test
@@ -92,26 +85,26 @@ class GridViewModelUTest {
 
     @Test
     void givenExistingId_whenGetCellViewModelById_thenCellIsReturned() {
-        Optional<GridCellViewModel> result = viewModel.getCellViewModelById(1);
+        var result = viewModel.getCellViewModelById(1);
         assertTrue(result.isPresent());
         assertEquals(1, result.get().getId());
     }
 
     @Test
     void givenNonExistingId_whenGetCellViewModelById_thenEmptyOptionalIsReturned() {
-        Optional<GridCellViewModel> result = viewModel.getCellViewModelById(100);
+        var result = viewModel.getCellViewModelById(100);
         assertTrue(result.isEmpty());
     }
 
     @Test
     void givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues() {
-        GridCellViewModel cellViewModel = viewModel.getCellViewModels().getFirst();
-        IntegerProperty idProperty = cellViewModel.idProperty();
-        assertNotNull(idProperty);
-        assertEquals(cellViewModel.getId(), idProperty.get());
-        assertEquals(0, cellViewModel.getRow());
-        assertEquals(0, cellViewModel.getCol());
-        assertNotNull(cellViewModel.getLabel());
-        assertNotNull(cellViewModel.getTextArea());
+        GridCellViewModel cell = viewModel.getCellViewModels().getFirst();
+        IntegerProperty idProp = cell.idProperty();
+        assertNotNull(idProp);
+        assertEquals(cell.getId(), idProp.get());
+        assertEquals(0, cell.getRow());
+        assertEquals(0, cell.getCol());
+        assertNotNull(cell.getLabel());
+        assertNotNull(cell.getTextArea());
     }
 }

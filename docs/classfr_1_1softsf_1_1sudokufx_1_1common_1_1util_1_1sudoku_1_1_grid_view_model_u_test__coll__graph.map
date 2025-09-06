@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest">
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModelUTest" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModelUTest">
 <area shape="rect" id="Node000001" title=" " alt="" coords="226,1729,469,2332"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html" title="ViewModel component managing a 9x9 Sudoku grid." alt="" coords="200,1127,496,1665"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="350,1665,350,1712,345,1712,345,1665"/>

@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
+import java.nio.file.Paths;
 import java.text.MessageFormat;
 import java.util.function.Supplier;
 import javafx.beans.Observable;
@@ -540,11 +541,10 @@ public class MenuOptionsViewModel {
         // IF MUTE ISMUTED
         initializeAudio(true);
         // SONG PATH
-        //        songProperty.set(
-        //
-        // Paths.get(playerStateHolder.currentPlayerProperty().get().optionsidDto().songpath())
-        //                        .getFileName()
-        //                        .toString());
+        songProperty.set(
+                Paths.get(playerStateHolder.currentPlayerProperty().get().optionsidDto().songpath())
+                        .getFileName()
+                        .toString());
     }
 
     /**

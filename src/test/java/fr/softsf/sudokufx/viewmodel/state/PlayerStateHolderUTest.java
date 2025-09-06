@@ -5,71 +5,27 @@
  */
 package fr.softsf.sudokufx.viewmodel.state;
 
-import java.time.LocalDateTime;
 import javafx.beans.property.ObjectProperty;
 
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.*;
-import org.mockito.*;
+import org.mockito.MockitoAnnotations;
 import org.slf4j.LoggerFactory;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudokufx.dto.*;
-import fr.softsf.sudokufx.service.business.PlayerService;
+import fr.softsf.sudokufx.dto.PlayerDto;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(ApplicationExtension.class)
-class PlayerStateHolderUTest {
+class PlayerStateHolderUTest extends AbstractPlayerStateTest {
 
-    @Mock private PlayerService playerServiceMock;
-
-    private PlayerStateHolder playerStateHolder;
     private ListAppender<ILoggingEvent> logWatcher;
     private AutoCloseable mocks;
-
-    private PlayerLanguageDto safeLang() {
-        return new PlayerLanguageDto(1L, "FR");
-    }
-
-    private OptionsDto safeOptions() {
-        return new OptionsDto(
-                1L, "FFFFFFFF", "/img/default.png", "/song/default.mp3", true, true, false);
-    }
-
-    private MenuDto safeMenu() {
-        return new MenuDto((byte) 1, (byte) 1);
-    }
-
-    private PlayerDto safePlayer() {
-        return new PlayerDto(
-                1L,
-                safeLang(),
-                safeOptions(),
-                safeMenu(),
-                null,
-                "SafePlayer",
-                false,
-                LocalDateTime.now(),
-                LocalDateTime.now());
-    }
-
-    private PlayerDto newPlayer() {
-        return new PlayerDto(
-                2L,
-                safeLang(),
-                safeOptions(),
-                safeMenu(),
-                null,
-                "NewPlayer",
-                false,
-                LocalDateTime.now(),
-                LocalDateTime.now());
-    }
 
     @BeforeEach
     void setup() {
@@ -77,9 +33,6 @@ class PlayerStateHolderUTest {
         logWatcher = new ListAppender<>();
         logWatcher.start();
         ((Logger) LoggerFactory.getLogger(PlayerStateHolder.class)).addAppender(logWatcher);
-        when(playerServiceMock.getPlayer()).thenReturn(safePlayer());
-        playerStateHolder = spy(new PlayerStateHolder(playerServiceMock));
-        doNothing().when(playerStateHolder).exitPlatform();
     }
 
     @AfterEach
@@ -92,27 +45,38 @@ class PlayerStateHolderUTest {
 
     @Test
     void givenPlayerService_returnsPlayer_thenCurrentPlayerIsSet() {
-        PlayerDto player = playerStateHolder.getCurrentPlayer();
-        assertNotNull(player);
-        assertEquals("SafePlayer", player.name());
+        assertNotNull(playerStateHolderSpy.getCurrentPlayer());
+        assertEquals("SafePlayer", playerStateHolderSpy.getCurrentPlayer().name());
     }
 
     @Test
-    void givenException_whenRefreshingPlayer_thenLogErrorIsProduced_withoutCallingPlatformExit() {
+    void givenException_whenRefreshingPlayer_thenLogErrorIsProduced() {
         doThrow(new IllegalStateException("DB down")).when(playerServiceMock).getPlayer();
-        playerStateHolder.refreshCurrentPlayer();
-        verify(playerStateHolder).exitPlatform();
+        playerStateHolderSpy.refreshCurrentPlayer();
+        verify(playerStateHolderSpy).exitPlatform();
+
         String lastLog = logWatcher.list.getLast().getFormattedMessage();
         assertTrue(lastLog.contains("Error refreshing player: DB down"));
     }
 
     @Test
     void givenPlayerService_returnsPlayer_whenRefreshCurrentPlayer_thenPropertyUpdated() {
-        doReturn(newPlayer()).when(playerServiceMock).getPlayer();
-        playerStateHolder.refreshCurrentPlayer();
-        ObjectProperty<PlayerDto> property = playerStateHolder.currentPlayerProperty();
-        assertEquals("NewPlayer", property.get().name());
-        assertEquals("NewPlayer", playerStateHolder.getCurrentPlayer().name());
+        var newPlayer =
+                new PlayerDto(
+                        2L,
+                        defaultPlayer.playerlanguageidDto(),
+                        defaultPlayer.optionsidDto(),
+                        defaultPlayer.menuidDto(),
+                        null,
+                        "NewPlayer",
+                        false,
+                        defaultPlayer.createdat(),
+                        defaultPlayer.updatedat());
+        doReturn(newPlayer).when(playerServiceMock).getPlayer();
+        playerStateHolderSpy.refreshCurrentPlayer();
+        ObjectProperty<PlayerDto> prop = playerStateHolderSpy.currentPlayerProperty();
+        assertEquals("NewPlayer", prop.get().name());
+        assertEquals("NewPlayer", playerStateHolderSpy.getCurrentPlayer().name());
         String lastLog = logWatcher.list.getLast().getFormattedMessage();
         assertTrue(lastLog.contains("Player refreshed from database:"));
         assertTrue(lastLog.contains("NewPlayer"));
@@ -120,20 +84,18 @@ class PlayerStateHolderUTest {
 
     @Test
     void currentPlayerProperty_returnsObjectProperty() {
-        ObjectProperty<PlayerDto> prop = playerStateHolder.currentPlayerProperty();
+        ObjectProperty<PlayerDto> prop = playerStateHolderSpy.currentPlayerProperty();
         assertNotNull(prop);
-        assertEquals(playerStateHolder.getCurrentPlayer(), prop.get());
+        assertEquals(playerStateHolderSpy.getCurrentPlayer(), prop.get());
     }
 
     @Test
     void getCurrentPlayer_returnsCorrectPlayer() {
-        PlayerDto current = playerStateHolder.getCurrentPlayer();
-        assertNotNull(current);
-        assertEquals("SafePlayer", current.name());
+        assertEquals("SafePlayer", playerStateHolderSpy.getCurrentPlayer().name());
     }
 
     @Test
     void exitPlatform_doesNotThrow_whenCalled() {
-        assertDoesNotThrow(() -> playerStateHolder.exitPlatform());
+        assertDoesNotThrow(() -> playerStateHolderSpy.exitPlatform());
     }
 }
