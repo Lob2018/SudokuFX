@@ -119,8 +119,8 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_op
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aead14f6b6c543e5eb9c4eb16eb4bcb5b" id="r_aead14f6b6c543e5eb9c4eb16eb4bcb5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aead14f6b6c543e5eb9c4eb16eb4bcb5b">MenuOptionsViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a> <a class="el" href="#ad7a9489d3fbd70c4669910faaa8098b5">audioService</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a> <a class="el" href="#ab33d4b1f4ea7a1797bdd8840c7dc7d23">asyncFileProcessorService</a>)</td></tr>
-<tr class="separator:aead14f6b6c543e5eb9c4eb16eb4bcb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1554981be31a866f51e84ff15c5cfea4" id="r_a1554981be31a866f51e84ff15c5cfea4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1554981be31a866f51e84ff15c5cfea4">MenuOptionsViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a> <a class="el" href="#ad7a9489d3fbd70c4669910faaa8098b5">audioService</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a> <a class="el" href="#ab33d4b1f4ea7a1797bdd8840c7dc7d23">asyncFileProcessorService</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> <a class="el" href="#a80c1101f68fb0789b7c23ced16815c41">playerStateHolder</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html">OptionsService</a> <a class="el" href="#acbec727b5dd4f7a7f2490c24e32c1017">optionsService</a>)</td></tr>
+<tr class="separator:a1554981be31a866f51e84ff15c5cfea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a839321a1e0bdeff5d397d813d73639b7" id="r_a839321a1e0bdeff5d397d813d73639b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a839321a1e0bdeff5d397d813d73639b7">clearSong</a> ()</td></tr>
 <tr class="memdesc:a839321a1e0bdeff5d397d813d73639b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the selected song, shows a toast notification, and resets <code><a class="el" href="#aafd3a7fb1f114cbb682e87e9fc91a4c5">songProperty</a></code> to empty.  <br /></td></tr>
 <tr class="separator:a839321a1e0bdeff5d397d813d73639b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,6 +249,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3b1dee2b684cd6f89f245ff46623b8a5" id="r_a3b1dee2b684cd6f89f245ff46623b8a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b1dee2b684cd6f89f245ff46623b8a5">setColorFromModel</a> (GridPane sudokuFX, ColorPicker menuOptionsButtonColor, String colorValueFromModel)</td></tr>
 <tr class="memdesc:a3b1dee2b684cd6f89f245ff46623b8a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a background color to the GridPane and sets it in the ColorPicker.  <br /></td></tr>
 <tr class="separator:a3b1dee2b684cd6f89f245ff46623b8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8888f558621e3185b775eb82f95dc160" id="r_a8888f558621e3185b775eb82f95dc160"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8888f558621e3185b775eb82f95dc160">updateSongPath</a> (String absolutePath, String name)</td></tr>
+<tr class="memdesc:a8888f558621e3185b775eb82f95dc160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the audio file path (songPath) in the current player's options.  <br /></td></tr>
+<tr class="separator:a8888f558621e3185b775eb82f95dc160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -322,6 +325,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac3a1276ea69afc346ab69434b5a08422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e66411b5fe7d7d51dc5a79cd9a18eb5" id="r_a5e66411b5fe7d7d51dc5a79cd9a18eb5"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e66411b5fe7d7d51dc5a79cd9a18eb5">optionsRoleDescription</a></td></tr>
 <tr class="separator:a5e66411b5fe7d7d51dc5a79cd9a18eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbec727b5dd4f7a7f2490c24e32c1017" id="r_acbec727b5dd4f7a7f2490c24e32c1017"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html">OptionsService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbec727b5dd4f7a7f2490c24e32c1017">optionsService</a></td></tr>
+<tr class="separator:acbec727b5dd4f7a7f2490c24e32c1017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ed0da0954d7b56a2ebedf4fb19fa8dd" id="r_a1ed0da0954d7b56a2ebedf4fb19fa8dd"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ed0da0954d7b56a2ebedf4fb19fa8dd">optionsSongAccessibleText</a></td></tr>
 <tr class="separator:a1ed0da0954d7b56a2ebedf4fb19fa8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a423a2f8247e01e1e5dab8d97f66c8dfc" id="r_a423a2f8247e01e1e5dab8d97f66c8dfc"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a423a2f8247e01e1e5dab8d97f66c8dfc">optionsSongRoleDescription</a></td></tr>
@@ -334,6 +339,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0b49dd6d1908aa246a3d6060b8436cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2cdd730c9cbd5664153747ea987cd1d" id="r_af2cdd730c9cbd5664153747ea987cd1d"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2cdd730c9cbd5664153747ea987cd1d">optionsTooltip</a></td></tr>
 <tr class="separator:af2cdd730c9cbd5664153747ea987cd1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c1101f68fb0789b7c23ced16815c41" id="r_a80c1101f68fb0789b7c23ced16815c41"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80c1101f68fb0789b7c23ced16815c41">playerStateHolder</a></td></tr>
+<tr class="separator:a80c1101f68fb0789b7c23ced16815c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb7a2eb176c5969f7a032d79129060d9" id="r_aeb7a2eb176c5969f7a032d79129060d9"><td class="memItemLeft" align="right" valign="top">final BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb7a2eb176c5969f7a032d79129060d9">songIsBlankProperty</a> = new SimpleBooleanProperty(true)</td></tr>
 <tr class="separator:aeb7a2eb176c5969f7a032d79129060d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd3a7fb1f114cbb682e87e9fc91a4c5" id="r_aafd3a7fb1f114cbb682e87e9fc91a4c5"><td class="memItemLeft" align="right" valign="top">final SimpleStringProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafd3a7fb1f114cbb682e87e9fc91a4c5">songProperty</a> = new SimpleStringProperty(&quot;&quot;)</td></tr>
@@ -366,8 +373,8 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>ViewModel managing menu options UI state and accessibility strings. </p>
 <p>Provides localized StringBindings for button labels, tooltips, and roles, updating automatically on locale changes. Supports options color and image initialization and updates, including asynchronous image loading with user feedback. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aead14f6b6c543e5eb9c4eb16eb4bcb5b" name="aead14f6b6c543e5eb9c4eb16eb4bcb5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aead14f6b6c543e5eb9c4eb16eb4bcb5b">&#9670;&#160;</a></span>MenuOptionsViewModel()</h2>
+<a id="a1554981be31a866f51e84ff15c5cfea4" name="a1554981be31a866f51e84ff15c5cfea4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1554981be31a866f51e84ff15c5cfea4">&#9670;&#160;</a></span>MenuOptionsViewModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -380,7 +387,17 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></td>          <td class="paramname"><span class="paramname"><em>asyncFileProcessorService</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></td>          <td class="paramname"><span class="paramname"><em>asyncFileProcessorService</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a></td>          <td class="paramname"><span class="paramname"><em>playerStateHolder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html">OptionsService</a></td>          <td class="paramname"><span class="paramname"><em>optionsService</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -389,7 +406,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aead14f6b6c543e5eb9c4eb16eb4bcb5b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a1554981be31a866f51e84ff15c5cfea4_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -411,6 +428,13 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Clears the selected song, shows a toast notification, and resets <code><a class="el" href="#aafd3a7fb1f114cbb682e87e9fc91a4c5">songProperty</a></code> to empty. </p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a839321a1e0bdeff5d397d813d73639b7_cgraph.svg" width="546" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -480,11 +504,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Creates a localized binding combining a formatted message and a suffix. </p>
 <p>Updates when locale or any of the given dependencies change. </p>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ab375565a060bffec779b340dc14f7c43_cgraph.svg" width="608" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -563,11 +587,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Creates a formatted localized binding with one dynamic argument. </p>
 <p>Updates when locale or any of the given dependencies change. </p>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a218b89fb8384b0edf79c7c1d70f9b292_cgraph.svg" width="608" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -710,11 +734,11 @@ Audio mute state </li>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a3b1dee2b684cd6f89f245ff46623b8a5" title="Applies a background color to the GridPane and sets it in the ColorPicker.">setColorFromModel(GridPane, ColorPicker, String)</a> </dd>
 <dd>
 <a class="el" href="#acf0d4b3e314e1018f054431b1cd4922f" title="Loads a background image asynchronously and applies it to the specified GridPane.">loadBackgroundImage(File, SpinnerGridPane, GridPane)</a> </dd></dl>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a52dadaf5fba37f78cc096f5d55487246_cgraph.svg" width="548" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1502,6 +1526,13 @@ Displays a toast notification confirming the song has been saved. </li>
   </table>
   </dd>
 </dl>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ad2431f22d487e230013fec9a9ff6fc20_cgraph.svg" width="546" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -1630,6 +1661,45 @@ Displays a toast notification confirming the song has been saved. </li>
   <table class="params">
     <tr><td class="paramname">sudokuFX</td><td>The GridPane to update. </td></tr>
     <tr><td class="paramname">color</td><td>The color to apply as the background. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8888f558621e3185b775eb82f95dc160" name="a8888f558621e3185b775eb82f95dc160"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8888f558621e3185b775eb82f95dc160">&#9670;&#160;</a></span>updateSongPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.updateSongPath </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>absolutePath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the audio file path (songPath) in the current player's options. </p>
+<p>A copy of the current <code><a class="el" href="">OptionsDto</a></code> is created with the new path and persisted via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html#a95d1252d2c9e75cfd15d38cba0707398">OptionsService#updateOptions(OptionsDto)</a></code>. On success, the current player is refreshed, <code class="JavaDocCode">songProperty</code> is updated, and an info toast is shown. On failure, an error toast is shown.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">absolutePath</td><td>the new audio file absolute path </td></tr>
+    <tr><td class="paramname">name</td><td>the file name, used in toast messages </td></tr>
   </table>
   </dd>
 </dl>
@@ -2539,6 +2609,28 @@ Displays a toast notification confirming the song has been saved. </li>
 
 </div>
 </div>
+<a id="acbec727b5dd4f7a7f2490c24e32c1017" name="acbec727b5dd4f7a7f2490c24e32c1017"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbec727b5dd4f7a7f2490c24e32c1017">&#9670;&#160;</a></span>optionsService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html">OptionsService</a> fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.optionsService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1ed0da0954d7b56a2ebedf4fb19fa8dd" name="a1ed0da0954d7b56a2ebedf4fb19fa8dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ed0da0954d7b56a2ebedf4fb19fa8dd">&#9670;&#160;</a></span>optionsSongAccessibleText</h2>
 
@@ -2660,6 +2752,28 @@ Displays a toast notification confirming the song has been saved. </li>
       <table class="memname">
         <tr>
           <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.optionsTooltip</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80c1101f68fb0789b7c23ced16815c41" name="a80c1101f68fb0789b7c23ced16815c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80c1101f68fb0789b7c23ced16815c41">&#9670;&#160;</a></span>playerStateHolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.playerStateHolder</td>
         </tr>
       </table>
   </td>
@@ -2814,7 +2928,7 @@ Displays a toast notification confirming the song has been saved. </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></li>
-    <li class="footer">Generated on Fri Sep 5 2025 12:54:38 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Sep 6 2025 14:21:43 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

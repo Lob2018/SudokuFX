@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
 [
-    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad237884254449a37442db9047161693e", null ],
+    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ae0ae47e53b99f8829e4d8b45f317ab7e", null ],
     [ "applyLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ae87f46d8f99a5c503ce3d993b1ff6e8f", null ],
     [ "clearGrid", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca7e10ab87fe7e7e3a36ec39588ffdc9", null ],
     [ "getAllValues", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2", null ],
@@ -16,6 +16,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "GRID_SIZE", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#afd1217d7084a63e6556c5c360cee4a07", null ],
     [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4d99b8d993ea1d81d18c436eea4b8e80", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aeef26ff53fb1cefb9fc7b6e68b420d47", null ],
+    [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a283f954f3e29f3f23da75c01172040e9", null ],
     [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a79f91310cd0f40e67f1fc5ca80fc698c", null ],
     [ "TOTAL_CELLS", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca2db631f0e0d1eb751367a0c0237867", null ]
 ];

@@ -1,5 +1,5 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests =
 [
-    [ "givenInvalidFile_thenShowErrorToast", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html#a9c5f59920b553aa768ef94db1a402ac4", null ],
-    [ "givenNullFile_thenShowErrorToast", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html#a527736e731246d6044ac922753c243ce", null ]
+    [ "givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html#ac94ad2bb0c2ccae72a09505cf6422a56", null ],
+    [ "givenNullFile_whenLoadBackgroundImage_thenShowErrorToast", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html#ae2f1b331de77943a5d4abc0cb0e10db7", null ]
 ];

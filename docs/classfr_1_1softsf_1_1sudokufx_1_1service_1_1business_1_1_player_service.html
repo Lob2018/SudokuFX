@@ -105,7 +105,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1
 </div><!--header-->
 <div class="contents">
 
-<p>Service class providing business logic related to Player entities.
+<p>Service for managing <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> entities.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.service.business.PlayerService:</div>
@@ -117,28 +117,44 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2672e5b8230f42cf69e42f832a6e56af" id="r_a2672e5b8230f42cf69e42f832a6e56af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2672e5b8230f42cf69e42f832a6e56af">PlayerService</a> (<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html">PlayerRepository</a> <a class="el" href="#a1436992c9f128f2adbe0eef31fb06957">playerRepository</a>, <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html">IPlayerMapper</a> <a class="el" href="#a22b56c131e8d5d6c0ea8d3875f319aaa">playerMapper</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html">JakartaValidator</a> <a class="el" href="#ae4d5c9e514bc3ae565ecc14c15d48908">jakartaValidator</a>)</td></tr>
-<tr class="separator:a2672e5b8230f42cf69e42f832a6e56af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdb46733d97b454c7c3405086e267111" id="r_abdb46733d97b454c7c3405086e267111"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abdb46733d97b454c7c3405086e267111">PlayerService</a> (<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html">PlayerRepository</a> <a class="el" href="#a1436992c9f128f2adbe0eef31fb06957">playerRepository</a>, <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html">PlayerLanguageRepository</a> <a class="el" href="#a641eb0e12df679f0b654c82f3ebc18ff">playerLanguageRepository</a>, <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html">OptionsRepository</a> <a class="el" href="#ab8d18711f16771d2495dfdc3dca96504">optionsRepository</a>, <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html">MenuRepository</a> <a class="el" href="#a8d60640e4be1c2c1f43879100df99cfa">menuRepository</a>, <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html">IPlayerMapper</a> <a class="el" href="#a22b56c131e8d5d6c0ea8d3875f319aaa">playerMapper</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html">JakartaValidator</a> <a class="el" href="#ae4d5c9e514bc3ae565ecc14c15d48908">jakartaValidator</a>)</td></tr>
+<tr class="separator:abdb46733d97b454c7c3405086e267111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0e635b455827f61c43bf618b7374914" id="r_ae0e635b455827f61c43bf618b7374914"><td class="memItemLeft" align="right" valign="top">PlayerDto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0e635b455827f61c43bf618b7374914">getPlayer</a> ()</td></tr>
 <tr class="memdesc:ae0e635b455827f61c43bf618b7374914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and validates the first player with a selected game.  <br /></td></tr>
 <tr class="separator:ae0e635b455827f61c43bf618b7374914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6b31510b7e15b031f2feb95df7ed4a" id="r_a6f6b31510b7e15b031f2feb95df7ed4a"><td class="memItemLeft" align="right" valign="top">PlayerDto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f6b31510b7e15b031f2feb95df7ed4a">updatePlayer</a> (PlayerDto dto)</td></tr>
+<tr class="memdesc:a6f6b31510b7e15b031f2feb95df7ed4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an existing player in the database with the values from the given <code><a class="el" href="">PlayerDto</a></code>.  <br /></td></tr>
+<tr class="separator:a6f6b31510b7e15b031f2feb95df7ed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae4d5c9e514bc3ae565ecc14c15d48908" id="r_ae4d5c9e514bc3ae565ecc14c15d48908"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html">JakartaValidator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4d5c9e514bc3ae565ecc14c15d48908">jakartaValidator</a></td></tr>
 <tr class="separator:ae4d5c9e514bc3ae565ecc14c15d48908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d60640e4be1c2c1f43879100df99cfa" id="r_a8d60640e4be1c2c1f43879100df99cfa"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html">MenuRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d60640e4be1c2c1f43879100df99cfa">menuRepository</a></td></tr>
+<tr class="separator:a8d60640e4be1c2c1f43879100df99cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d18711f16771d2495dfdc3dca96504" id="r_ab8d18711f16771d2495dfdc3dca96504"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html">OptionsRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8d18711f16771d2495dfdc3dca96504">optionsRepository</a></td></tr>
+<tr class="separator:ab8d18711f16771d2495dfdc3dca96504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641eb0e12df679f0b654c82f3ebc18ff" id="r_a641eb0e12df679f0b654c82f3ebc18ff"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html">PlayerLanguageRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a641eb0e12df679f0b654c82f3ebc18ff">playerLanguageRepository</a></td></tr>
+<tr class="separator:a641eb0e12df679f0b654c82f3ebc18ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22b56c131e8d5d6c0ea8d3875f319aaa" id="r_a22b56c131e8d5d6c0ea8d3875f319aaa"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html">IPlayerMapper</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22b56c131e8d5d6c0ea8d3875f319aaa">playerMapper</a></td></tr>
 <tr class="separator:a22b56c131e8d5d6c0ea8d3875f319aaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1436992c9f128f2adbe0eef31fb06957" id="r_a1436992c9f128f2adbe0eef31fb06957"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html">PlayerRepository</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1436992c9f128f2adbe0eef31fb06957">playerRepository</a></td></tr>
 <tr class="separator:a1436992c9f128f2adbe0eef31fb06957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Service class providing business logic related to Player entities. </p>
-<p>It interacts with the <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html">PlayerRepository</a> to retrieve Player data, uses <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" title="Mapper interface for converting between Player entity and PlayerDto data transfer object.">IPlayerMapper</a> to convert entities to PlayerDto objects, and performs Jakarta Bean Validation on results.</p>
-<p>All method parameters and return values in this package are non-null by default, thanks to the <code class="JavaDocCode">@NonNullApi</code> annotation at the package level. </p>
+<div class="textblock"><p>Service for managing <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> entities. </p>
+<p>Provides retrieval and update operations on players, mapping entities to <code><a class="el" href="">PlayerDto</a></code> and validating DTOs with <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html">JakartaValidator</a></code> before and after persistence.</p>
+<p>Methods:</p>
+<ul>
+<li>
+<code><a class="el" href="#ae0e635b455827f61c43bf618b7374914">getPlayer()</a></code>: retrieves the first selected player with a selected game, read-only transactional. </li>
+<li>
+<code><a class="el" href="#a6f6b31510b7e15b031f2feb95df7ed4a">updatePlayer(PlayerDto)</a></code>: updates an existing player, validates input and output DTOs, fully transactional. </li>
+</ul>
+<p>Throws <code><a class="el" href="">NullPointerException</a></code> for null DTOs, <code><a class="el" href="">IllegalArgumentException</a></code> if entities are missing, and <code><a class="el" href="">jakarta.validation.ConstraintViolationException</a></code> on validation failures. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2672e5b8230f42cf69e42f832a6e56af" name="a2672e5b8230f42cf69e42f832a6e56af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2672e5b8230f42cf69e42f832a6e56af">&#9670;&#160;</a></span>PlayerService()</h2>
+<a id="abdb46733d97b454c7c3405086e267111" name="abdb46733d97b454c7c3405086e267111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdb46733d97b454c7c3405086e267111">&#9670;&#160;</a></span>PlayerService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,6 +163,21 @@ Private Attributes</h2></td></tr>
           <td class="memname">fr.softsf.sudokufx.service.business.PlayerService.PlayerService </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html">PlayerRepository</a></td>          <td class="paramname"><span class="paramname"><em>playerRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html">PlayerLanguageRepository</a></td>          <td class="paramname"><span class="paramname"><em>playerLanguageRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html">OptionsRepository</a></td>          <td class="paramname"><span class="paramname"><em>optionsRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html">MenuRepository</a></td>          <td class="paramname"><span class="paramname"><em>menuRepository</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -199,6 +230,49 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6f6b31510b7e15b031f2feb95df7ed4a" name="a6f6b31510b7e15b031f2feb95df7ed4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6b31510b7e15b031f2feb95df7ed4a">&#9670;&#160;</a></span>updatePlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PlayerDto fr.softsf.sudokufx.service.business.PlayerService.updatePlayer </td>
+          <td>(</td>
+          <td class="paramtype">PlayerDto</td>          <td class="paramname"><span class="paramname"><em>dto</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Updates an existing player in the database with the values from the given <code><a class="el" href="">PlayerDto</a></code>. </p>
+<p>This method is transactional: if any referenced entity (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html">PlayerLanguage</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html">Options</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html">Menu</a>) is missing, the transaction is rolled back.</p>
+<p>Validation is applied both before updating (on the incoming DTO) and after saving (on the resulting DTO) using <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html">JakartaValidator</a></code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dto</td><td>the player data to update; must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the updated and validated <code><a class="el" href="">PlayerDto</a></code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">dto</code> is null </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if the player, player language, options, or menu does not exist </td></tr>
+    <tr><td class="paramname">ConstraintViolationException</td><td>if validation fails on the DTO </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service_a6f6b31510b7e15b031f2feb95df7ed4a_cgraph.svg" width="100%" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ae4d5c9e514bc3ae565ecc14c15d48908" name="ae4d5c9e514bc3ae565ecc14c15d48908"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4d5c9e514bc3ae565ecc14c15d48908">&#9670;&#160;</a></span>jakartaValidator</h2>
@@ -211,6 +285,72 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html">JakartaValidator</a> fr.softsf.sudokufx.service.business.PlayerService.jakartaValidator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d60640e4be1c2c1f43879100df99cfa" name="a8d60640e4be1c2c1f43879100df99cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d60640e4be1c2c1f43879100df99cfa">&#9670;&#160;</a></span>menuRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html">MenuRepository</a> fr.softsf.sudokufx.service.business.PlayerService.menuRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab8d18711f16771d2495dfdc3dca96504" name="ab8d18711f16771d2495dfdc3dca96504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8d18711f16771d2495dfdc3dca96504">&#9670;&#160;</a></span>optionsRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html">OptionsRepository</a> fr.softsf.sudokufx.service.business.PlayerService.optionsRepository</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a641eb0e12df679f0b654c82f3ebc18ff" name="a641eb0e12df679f0b654c82f3ebc18ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641eb0e12df679f0b654c82f3ebc18ff">&#9670;&#160;</a></span>playerLanguageRepository</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html">PlayerLanguageRepository</a> fr.softsf.sudokufx.service.business.PlayerService.playerLanguageRepository</td>
         </tr>
       </table>
   </td>
@@ -275,7 +415,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html">business</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a></li>
-    <li class="footer">Generated on Fri Sep 5 2025 12:54:38 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Sep 6 2025 14:21:43 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

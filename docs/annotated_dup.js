@@ -115,6 +115,7 @@ var annotated_dup =
           ] ],
           [ "service", null, [
             [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", [
+              [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service" ],
               [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service" ]
             ] ],
             [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1external.html", [
@@ -172,6 +173,7 @@ var annotated_dup =
               ] ],
               [ "service", null, [
                 [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business.html", [
+                  [ "OptionsServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test" ],
                   [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test" ]
                 ] ],
                 [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui.html", [
@@ -221,6 +223,7 @@ var annotated_dup =
               [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model" ]
             ] ],
             [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html", [
+              [ "AbstractPlayerStateTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test" ],
               [ "PlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder" ],
               [ "PlayerStateHolderUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test" ]
             ] ],

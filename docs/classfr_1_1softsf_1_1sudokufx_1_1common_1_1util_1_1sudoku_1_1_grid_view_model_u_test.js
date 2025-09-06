@@ -7,9 +7,9 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_mode
     [ "givenNonExistingId_whenGetCellViewModelById_thenEmptyOptionalIsReturned", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a8e42f785106c5b4077e3bb8ec62a272f", null ],
     [ "givenNullLevel_whenApplyLevel_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ab9a3d393f2aade8109011c85c2a42658", null ],
     [ "givenNullValues_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#aad131c9fecce1bd53e4699f218e7000f", null ],
+    [ "givenPlayerStateHolder_whenInitGridViewModel_thenViewModelInitialized", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a6513e9ec2adc23038a92ad5b7e1e5a8f", null ],
     [ "givenValidValues_whenSetValues_thenAllCellsContainCorrectValues", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ab965a418e20c7e7b4e55f65420858a5b", null ],
     [ "givenViewModelInitialized_whenInit_then81CellsAreCreated", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ab7a77eec94175438dfe5d10b7b10deb6", null ],
     [ "givenWrongSizeList_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a35e688f27a42935950ffe9a7aaf6f768", null ],
-    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a86fa89ece365d93a0aa08ca82537e02d", null ],
     [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a5f9ab63ab1ff7635efbbc8f020a2cc3d", null ]
 ];

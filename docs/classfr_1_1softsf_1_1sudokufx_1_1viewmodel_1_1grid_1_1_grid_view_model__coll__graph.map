@@ -1,15 +1,39 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel">
-<area shape="rect" id="Node000001" title="ViewModel component managing a 9x9 Sudoku grid." alt="" coords="200,1127,496,1665"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu." alt="" coords="5,620,218,775"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,774,121,845,131,928,147,1016,172,1102,195,1157,190,1159,167,1104,142,1017,125,929,116,846,111,775"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="243,407,453,988"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="350,988,350,1110,345,1110,345,988"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="477,348,736,1047"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="479,1048,456,1112,451,1110,475,1046"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="530,169,573,239"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="560,253,570,348,565,349,554,254"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="597,124,856,284"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="710,284,698,332,693,331,705,283"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="702,5,751,75"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="729,90,729,124,724,124,724,90"/>
+<area shape="rect" id="Node000001" title="ViewModel component managing a 9x9 Sudoku grid." alt="" coords="484,1431,781,1985"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu." alt="" coords="203,924,416,1079"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,1078,336,1149,355,1233,381,1321,415,1406,444,1459,477,1512,472,1515,439,1462,410,1408,376,1322,350,1234,331,1150,318,1079"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="441,711,651,1292"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="584,1291,599,1413,594,1414,579,1292"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="675,881,891,1121"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="760,1122,697,1415,692,1414,755,1121"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" title="Service for managing Player entities." alt="" coords="534,364,872,588"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="723,587,765,864,760,865,717,588"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="5,169,187,271"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="159,268,202,298,278,340,360,376,441,406,519,430,518,435,440,411,358,381,276,345,199,302,156,273"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="22,5,170,91"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="99,106,99,170,94,170,94,106"/>
+<area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" title=" " alt="" coords="212,177,389,263"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="331,260,365,300,407,338,462,373,520,404,518,409,459,378,403,342,361,304,327,264"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="197,5,401,91"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="302,106,303,177,297,177,297,106"/>
+<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" title=" " alt="" coords="413,177,590,263"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="531,261,587,338,595,349,591,353,583,342,526,264"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="425,5,581,91"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="505,106,505,177,499,177,500,106"/>
+<area shape="rect" id="Node000012" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html" title=" " alt="" coords="615,177,791,263"/>
+<area shape="poly" id="edge11_Node000005_Node000012" title=" " alt="" coords="706,263,706,347,700,347,700,263"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="632,5,774,91"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="706,106,706,177,700,177,700,106"/>
+<area shape="rect" id="Node000014" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" title="Mapper interface for converting between Player entity and PlayerDto data transfer object." alt="" coords="816,151,1094,289"/>
+<area shape="poly" id="edge13_Node000005_Node000014" title=" " alt="" coords="889,291,827,354,823,350,886,287"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="1118,140,1349,300"/>
+<area shape="poly" id="edge14_Node000005_Node000015" title=" " alt="" coords="1120,296,1108,302,998,356,888,404,886,399,996,351,1106,298,1117,292"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html" title="A custom VBox component for displaying toast notifications." alt="" coords="1044,652,1303,1351"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="1046,1172,793,1502,789,1499,1042,1169"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="1152,441,1195,511"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1176,525,1176,652,1171,652,1171,525"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" title="A custom button with a display text and a full detail text." alt="" coords="1251,396,1510,556"/>
+<area shape="poly" id="edge17_Node000016_Node000018" title=" " alt="" coords="1352,557,1312,658,1307,656,1347,555"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="1373,185,1422,255"/>
+<area shape="poly" id="edge18_Node000018_Node000019" title=" " alt="" coords="1397,270,1388,396,1383,396,1392,269"/>
 </map>

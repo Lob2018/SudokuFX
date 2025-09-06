@@ -1,4 +1,4 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_success_tests =
 [
-    [ "givenValidFile_thenAsyncServiceCalled", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_success_tests.html#ae457492590505516ed1fabafad2c6d4d", null ]
+    [ "givenValidFile_whenLoadBackgroundImage_thenAsyncServiceCalled", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_success_tests.html#aa7b20041957532afcc24251e48285b23", null ]
 ];

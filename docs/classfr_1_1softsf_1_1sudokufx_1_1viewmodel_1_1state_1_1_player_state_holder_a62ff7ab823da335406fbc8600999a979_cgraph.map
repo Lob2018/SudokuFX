@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.refreshCurrentPlayer" name="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.refreshCurrentPlayer">
+<area shape="rect" id="Node000001" title="Reloads the current player from the database." alt="" coords="5,5,257,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a776dbf8d4bd6db641d84313659051d51" title="Terminates the JavaFX application." alt="" coords="305,5,531,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="257,24,289,24,289,29,257,29"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="src/test/java/fr/softsf/sudokufx/viewmodel/state/AbstractPlayerStateTest.java" name="src/test/java/fr/softsf/sudokufx/viewmodel/state/AbstractPlayerStateTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="466,5,661,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,172,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="466,58,185,115,164,119,163,114,184,109,465,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="196,120,333,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="475,67,319,117,317,112,474,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="356,120,565,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="535,66,487,111,483,107,531,62"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="589,120,743,147"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="595,62,643,107,640,111,592,66"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="767,112,996,155"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="659,62,800,104,798,110,657,67"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1021,120,1169,147"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="662,48,825,75,1009,109,1028,113,1027,119,1008,115,824,81,661,54"/>
+</map>

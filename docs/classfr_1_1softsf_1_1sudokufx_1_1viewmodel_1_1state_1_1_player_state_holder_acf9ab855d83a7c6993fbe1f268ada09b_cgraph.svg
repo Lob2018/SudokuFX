@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 598;
+var viewWidth = 616;
 var viewHeight = 40;
 var sectionId = 'dynsection-1';
 </script>
@@ -68,10 +68,10 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a3c5e29dd1f487fd596fe21fadbcb0415" target="_top" xlink:title="Initializes the player by fetching it from PlayerService.">
-<polygon fill="white" stroke="#666666" points="383.75,-32 214,-32 214,0 383.75,0 383.75,-32"/>
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a62ff7ab823da335406fbc8600999a979" target="_top" xlink:title="Reloads the current player from the database.">
+<polygon fill="white" stroke="#666666" points="402.5,-32 214,-32 214,0 402.5,0 402.5,-32"/>
 <text text-anchor="start" x="222" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="middle" x="298.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder.initializePlayer</text>
+<text text-anchor="middle" x="308.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder.refreshCurrentPlayer</text>
 </a>
 </g>
 </g>
@@ -79,8 +79,8 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M178.46,-16C186.42,-16 194.51,-16 202.52,-16"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="202.28,-19.5 212.28,-16 202.28,-12.5 202.28,-19.5"/>
+<path fill="none" stroke="#63b8ff" d="M178.36,-16C186.27,-16 194.32,-16 202.35,-16"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="202.14,-19.5 212.14,-16 202.14,-12.5 202.14,-19.5"/>
 </a>
 </g>
 </g>
@@ -88,9 +88,9 @@ var sectionId = 'dynsection-1';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a776dbf8d4bd6db641d84313659051d51" target="_top" xlink:title="Terminates the JavaFX application.">
-<polygon fill="white" stroke="#666666" points="589.5,-32 419.75,-32 419.75,0 589.5,0 589.5,-32"/>
-<text text-anchor="start" x="427.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="middle" x="504.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder.exitPlatform</text>
+<polygon fill="white" stroke="#666666" points="608.25,-32 438.5,-32 438.5,0 608.25,0 608.25,-32"/>
+<text text-anchor="start" x="446.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="middle" x="523.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder.exitPlatform</text>
 </a>
 </g>
 </g>
@@ -98,8 +98,8 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M384.22,-16C392.02,-16 399.95,-16 407.84,-16"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="407.83,-19.5 417.83,-16 407.83,-12.5 407.83,-19.5"/>
+<path fill="none" stroke="#63b8ff" d="M402.73,-16C410.62,-16 418.61,-16 426.52,-16"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="426.51,-19.5 436.51,-16 426.51,-12.5 426.51,-19.5"/>
 </a>
 </g>
 </g>

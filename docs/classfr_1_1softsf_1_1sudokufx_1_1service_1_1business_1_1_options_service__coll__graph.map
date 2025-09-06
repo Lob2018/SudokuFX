@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.service.business.OptionsService" name="fr.softsf.sudokufx.service.business.OptionsService">
+<area shape="rect" id="Node000001" title="Service for managing Options entities." alt="" coords="230,364,462,535"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" title=" " alt="" coords="5,177,182,263"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,260,241,351,238,355,138,264"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="16,5,172,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,106,96,177,91,177,91,106"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html" title="This interface defines methods for mapping objects of type Options to objects of type OptionsDto and ..." alt="" coords="206,151,485,289"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="348,289,348,347,343,347,343,289"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="509,140,740,300"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="529,302,464,355,461,351,526,298"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenNullPlayerDto_whenUpdatePlayer_thenThrowsNullPointerException" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenNullPlayerDto_whenUpdatePlayer_thenThrowsNullPointerException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,341,88"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="108,29,110,19,121,10,143,5,173,3,208,5,230,13,228,18,207,11,173,8,143,10,124,15,114,21,114,29"/>
+</map>

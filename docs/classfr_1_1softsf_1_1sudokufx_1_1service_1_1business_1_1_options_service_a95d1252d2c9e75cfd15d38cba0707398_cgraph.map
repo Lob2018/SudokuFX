@@ -1,0 +1,20 @@
+<map id="fr.softsf.sudokufx.service.business.OptionsService.updateOptions" name="fr.softsf.sudokufx.service.business.OptionsService.updateOptions">
+<area shape="rect" id="Node000001" title="Updates an existing Options entity with the values from the given OptionsDto." alt="" coords="5,172,235,215"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" title=" " alt="" coords="283,5,449,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,170,202,115,240,85,281,58,290,53,292,58,284,62,244,89,205,119,145,174"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" title=" " alt="" coords="283,72,449,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="173,169,282,124,296,118,298,123,284,129,175,174"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a7b16588e7e41bd9f3f02e0cde38f4b80" title=" " alt="" coords="283,139,449,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="235,175,267,171,267,176,235,180"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ea8b1a130eea1802b6b00583c448c9d" title=" " alt="" coords="283,205,449,248"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="235,206,267,211,267,216,235,212"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab02aebcbb0158468003539b014f94af8" title=" " alt="" coords="283,272,449,315"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="175,213,284,258,298,263,296,268,282,262,173,218"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ebfc05d23131bff9114c961a5330766" title=" " alt="" coords="283,339,449,381"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="145,213,205,267,244,297,284,324,292,329,290,334,281,329,240,302,202,271,141,217"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates hex color format (#RRGGBBAA)." alt="" coords="497,5,664,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="449,24,481,24,481,29,449,29"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates that a path is not null and does not exceed the allowed length." alt="" coords="498,205,664,248"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="427,113,450,124,501,158,545,193,542,197,498,162,448,129,425,118"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="425,336,448,324,498,291,542,256,545,260,501,295,450,329,427,341"/>
+</map>

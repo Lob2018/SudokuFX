@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.MenuOptionsViewModel" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.MenuOptionsViewModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,208,249,267"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab375565a060bffec779b340dc14f7c43" title="Creates a localized binding combining a formatted message and a suffix." alt="" coords="297,5,558,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,206,211,140,252,104,295,74,304,69,306,74,298,78,255,109,215,143,154,209"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a218b89fb8384b0edf79c7c1d70f9b292" title="Creates a formatted localized binding with one dynamic argument." alt="" coords="297,88,558,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,205,296,156,313,150,314,155,298,161,189,210"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#acc42c19bd4c6eafc97a5826eb787c906" title="Creates a StringBinding that returns the localized string for the given key, updating automatically w..." alt="" coords="309,171,546,229"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="249,220,293,214,294,219,249,225"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a89500f671995a3ab11b253bf65cafdfb" title="Returns the localized text corresponding to the grid opacity state." alt="" coords="299,253,556,296"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="249,250,284,254,283,259,249,255"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab492d58498724756aa0082dafe071aa4" title="Returns the localized information about the current mute state." alt="" coords="319,320,536,363"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="194,265,298,305,321,313,319,318,296,311,192,270"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a6e733cf8be577984de3b8b21b9a3c696" title="Returns the localized text corresponding to the mute state." alt="" coords="317,387,538,429"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="158,265,219,320,257,348,298,372,310,378,308,383,295,377,254,353,216,324,155,269"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a359e959bd335e531fe59f4eb942c0813" title="Utility: always observe the locale in addition to custom dependencies." alt="" coords="606,55,894,97"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="559,49,591,53,590,58,558,54"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="558,98,590,94,591,99,559,103"/>
+</map>

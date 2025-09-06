@@ -1,0 +1,12 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test =
+[
+    [ "givenNonExistentOptions_whenUpdateOptions_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a8d359b6a1d8370e5429d2db3a24d24e2", null ],
+    [ "givenNullOptionsDto_whenUpdateOptions_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a63d8a76df7ce45131505632015aa421b", null ],
+    [ "givenValidationFails_whenUpdateOptions_thenThrowsConstraintViolationException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a01219303e2aa669646fdeba85bdc9206", null ],
+    [ "givenValidOptionsDto_whenUpdateOptions_thenReturnsUpdatedDto", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a045abca197c15290bb6409abf46fc307", null ],
+    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a8de95384cd70f43847170870accab030", null ],
+    [ "jakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a9a0e0646c65853c397643b3e3211e6dc", null ],
+    [ "optionsMapper", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#afd189d6be624cda581e38f4c08c11222", null ],
+    [ "optionsRepository", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#ac91c86089cc4701027d3ddb897a4b411", null ],
+    [ "optionsService", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#ae7d59db279b097ace159a1289f253605", null ]
+];
