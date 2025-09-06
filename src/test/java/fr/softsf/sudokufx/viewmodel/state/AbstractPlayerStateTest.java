@@ -15,45 +15,84 @@ import fr.softsf.sudokufx.service.business.PlayerService;
 
 import static org.mockito.Mockito.*;
 
-/** Abstract test class providing a mocked PlayerService and a PlayerStateHolder spy. */
+/**
+ * Abstract base test class that provides:
+ * <ul>
+ *   <li>a mocked {@link PlayerService}</li>
+ *   <li>a real {@link PlayerStateHolder} wired with the mock</li>
+ *   <li>a default {@link PlayerDto} instance for convenience</li>
+ * </ul>
+ */
 public abstract class AbstractPlayerStateTest {
 
-    /** Mocked PlayerService shared across tests */
+    /** Mocked PlayerService shared across test cases. */
     protected PlayerService playerServiceMock;
 
-    /** Spy of PlayerStateHolder built with mocked PlayerService */
-    protected PlayerStateHolder playerStateHolderSpy;
+    /** Real PlayerStateHolder using the mocked PlayerService — JavaFX properties remain intact. */
+    protected PlayerStateHolder playerStateHolder;
 
-    /** Default PlayerDto for tests */
+    /** Default PlayerDto available for test scenarios. */
     protected PlayerDto defaultPlayer;
 
-    /** AutoCloseable for managing Mockito resources */
+    /** AutoCloseable for managing Mockito resources. */
     private AutoCloseable mocks;
 
     @BeforeEach
     void setupPlayerStateHolder() {
         mocks = MockitoAnnotations.openMocks(this);
         playerServiceMock = mock(PlayerService.class);
-        defaultPlayer =
-                new PlayerDto(
-                        1L,
-                        new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(1L, "FFFFFFFF", "", "", false, true, true),
-                        new MenuDto((byte) 1, (byte) 1),
-                        null,
-                        "SafePlayer",
-                        false,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+        defaultPlayer = createDefaultPlayer();
         when(playerServiceMock.getPlayer()).thenReturn(defaultPlayer);
-        playerStateHolderSpy = spy(new PlayerStateHolder(playerServiceMock));
-        doNothing().when(playerStateHolderSpy).exitPlatform();
+        playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);
     }
 
     @AfterEach
     void closeMocks() throws Exception {
         if (mocks != null) {
             mocks.close();
+        }
+    }
+
+    /**
+     * Factory method to create the default {@link PlayerDto}.
+     * <p>
+     * Subclasses can override this to customize the default player used in tests.
+     *
+     * @return a default {@code PlayerDto} instance
+     */
+    protected PlayerDto createDefaultPlayer() {
+        return new PlayerDto(
+                1L,
+                new PlayerLanguageDto(1L, "FR"),
+                new OptionsDto(1L, "FFFFFFFF", "", "", false, true, true),
+                new MenuDto((byte) 1, (byte) 1),
+                null,
+                "SafePlayer",
+                false,
+                LocalDateTime.now(),
+                LocalDateTime.now());
+    }
+
+    /**
+     * Testable inner subclass of {@link PlayerStateHolder}.
+     * <p>
+     * Allows overriding of methods that should not be executed during tests
+     * while keeping all JavaFX properties functional.
+     */
+    protected static class TestablePlayerStateHolder extends PlayerStateHolder {
+
+        public TestablePlayerStateHolder(PlayerService playerService) {
+            super(playerService);
+        }
+
+        /**
+         * Overridden to avoid shutting down the JavaFX platform during tests.
+         * <p>
+         * Keeps JavaFX properties intact while making {@code exitPlatform()} a no-op.
+         */
+        @Override
+        protected void exitPlatform() {
+            System.out.println("TestablePlayerStateHolder: exitPlatform() called (no-op in tests)");
         }
     }
 }

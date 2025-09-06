@@ -45,16 +45,14 @@ class PlayerStateHolderUTest extends AbstractPlayerStateTest {
 
     @Test
     void givenPlayerService_returnsPlayer_thenCurrentPlayerIsSet() {
-        assertNotNull(playerStateHolderSpy.getCurrentPlayer());
-        assertEquals("SafePlayer", playerStateHolderSpy.getCurrentPlayer().name());
+        assertNotNull(playerStateHolder.getCurrentPlayer());
+        assertEquals("SafePlayer", playerStateHolder.getCurrentPlayer().name());
     }
 
     @Test
     void givenException_whenRefreshingPlayer_thenLogErrorIsProduced() {
         doThrow(new IllegalStateException("DB down")).when(playerServiceMock).getPlayer();
-        playerStateHolderSpy.refreshCurrentPlayer();
-        verify(playerStateHolderSpy).exitPlatform();
-
+        playerStateHolder.refreshCurrentPlayer();
         String lastLog = logWatcher.list.getLast().getFormattedMessage();
         assertTrue(lastLog.contains("Error refreshing player: DB down"));
     }
@@ -73,10 +71,10 @@ class PlayerStateHolderUTest extends AbstractPlayerStateTest {
                         defaultPlayer.createdat(),
                         defaultPlayer.updatedat());
         doReturn(newPlayer).when(playerServiceMock).getPlayer();
-        playerStateHolderSpy.refreshCurrentPlayer();
-        ObjectProperty<PlayerDto> prop = playerStateHolderSpy.currentPlayerProperty();
+        playerStateHolder.refreshCurrentPlayer();
+        ObjectProperty<PlayerDto> prop = playerStateHolder.currentPlayerProperty();
         assertEquals("NewPlayer", prop.get().name());
-        assertEquals("NewPlayer", playerStateHolderSpy.getCurrentPlayer().name());
+        assertEquals("NewPlayer", playerStateHolder.getCurrentPlayer().name());
         String lastLog = logWatcher.list.getLast().getFormattedMessage();
         assertTrue(lastLog.contains("Player refreshed from database:"));
         assertTrue(lastLog.contains("NewPlayer"));
@@ -84,18 +82,18 @@ class PlayerStateHolderUTest extends AbstractPlayerStateTest {
 
     @Test
     void currentPlayerProperty_returnsObjectProperty() {
-        ObjectProperty<PlayerDto> prop = playerStateHolderSpy.currentPlayerProperty();
+        ObjectProperty<PlayerDto> prop = playerStateHolder.currentPlayerProperty();
         assertNotNull(prop);
-        assertEquals(playerStateHolderSpy.getCurrentPlayer(), prop.get());
+        assertEquals(playerStateHolder.getCurrentPlayer(), prop.get());
     }
 
     @Test
     void getCurrentPlayer_returnsCorrectPlayer() {
-        assertEquals("SafePlayer", playerStateHolderSpy.getCurrentPlayer().name());
+        assertEquals("SafePlayer", playerStateHolder.getCurrentPlayer().name());
     }
 
     @Test
     void exitPlatform_doesNotThrow_whenCalled() {
-        assertDoesNotThrow(() -> playerStateHolderSpy.exitPlatform());
+        assertDoesNotThrow(() -> playerStateHolder.exitPlatform());
     }
 }

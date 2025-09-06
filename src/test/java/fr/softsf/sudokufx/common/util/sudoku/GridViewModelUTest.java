@@ -35,7 +35,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new GridMaster(new JakartaValidator(null)),
                         new ActiveMenuOrSubmenuViewModel(),
                         new AudioService(),
-                        playerStateHolderSpy);
+                        playerStateHolder);
         viewModel.init(new ToasterVBox());
     }
 

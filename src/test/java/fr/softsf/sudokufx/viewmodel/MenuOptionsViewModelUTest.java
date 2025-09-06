@@ -66,7 +66,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         viewModel =
                 spy(
                         new MenuOptionsViewModel(
-                                audioSpy, asyncServiceMock, playerStateHolderSpy, optionsService));
+                                audioSpy, asyncServiceMock, playerStateHolder, optionsService));
         viewModel.init(sudokuFX, colorPicker, toasterMock, spinnerMock);
     }
 
@@ -263,7 +263,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         ImageUtils imageUtilsSpy = spy(new ImageUtils());
         MenuOptionsViewModel vm =
                 new MenuOptionsViewModel(
-                        new AudioService(), asyncServiceMock, playerStateHolderSpy, optionsService);
+                        new AudioService(), asyncServiceMock, playerStateHolder, optionsService);
         Field imageUtilsField = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
         imageUtilsField.setAccessible(true);
         imageUtilsField.set(vm, imageUtilsSpy);
