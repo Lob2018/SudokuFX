@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.testing.unit.viewmodel.state.PlayerStateHolderITest" name="fr.softsf.sudokufx.testing.unit.viewmodel.state.PlayerStateHolderITest">
+<map id="fr.softsf.sudokufx.testing.integration.viewmodel.state.PlayerStateHolderITest" name="fr.softsf.sudokufx.testing.integration.viewmodel.state.PlayerStateHolderITest">
 <area shape="rect" id="Node000001" title="Integration test for PlayerStateHolder." alt="" coords="461,956,745,1127"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="495,652,711,892"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="606,892,606,939,600,939,600,892"/>
