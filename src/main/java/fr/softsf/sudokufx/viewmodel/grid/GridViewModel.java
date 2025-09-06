@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -149,11 +150,18 @@ public class GridViewModel {
         int percentage = grilleResolue.possibilityPercentage();
         // TODO Win !
         if (solved && Arrays.equals(grilleInt, solvedGrid)) {
-            // Play the song from inMemorPlayer
             try {
-                audioService.playSong(
-                        new File(playerStateHolder.getCurrentPlayer().optionsidDto().songpath()));
-            } catch (ResourceLoadException e) {
+                String path = playerStateHolder.getCurrentPlayer().optionsidDto().songpath();
+                if (StringUtils.isBlank(path)) {
+                    return;
+                }
+                File file = new File(path);
+                if (!file.exists()) {
+                    throw new IllegalStateException(
+                            "Audio file not found or inaccessible: " + path);
+                }
+                audioService.playSong(file);
+            } catch (ResourceLoadException | IllegalStateException e) {
                 String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
                 LOG.error("{}: {}", title, e.getMessage(), e);
                 toaster.addToast(

@@ -571,29 +571,24 @@ public class MenuOptionsViewModel {
     /**
      * Loads a background image asynchronously and applies it to the specified GridPane.
      *
-     * <p>The method performs the following steps:
-     *
-     * <ul>
-     *   <li>Validates that the selected file is a non-null, valid image.
-     *   <li>If invalid, logs an error and shows an error toast via {@link ToasterVBox}.
-     *   <li>If valid, delegates asynchronous loading, resizing, and conversion to {@link
-     *       AsyncFileProcessorService}.
-     *   <li>On success, sets the resulting {@link BackgroundImage} on the provided {@link
-     *       GridPane}.
-     *   <li>Saving the background path to the database or other persistence should be handled
-     *       externally.
-     *   <li>Errors are handled internally; no callbacks for errors are needed.
-     * </ul>
+     * <p>The method validates that the file is non-null, exists, and is a valid image. If valid, it
+     * delegates asynchronous loading, resizing, and conversion to {@link
+     * AsyncFileProcessorService}. On success, the resulting {@link BackgroundImage} is applied to
+     * the provided {@link GridPane}. Errors are logged and shown as a toast via {@link
+     * ToasterVBox}. Saving the image path to the database should be handled externally.
      *
      * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and
      * resizing.
      *
-     * @param selectedFile the image file to load; must not be null
+     * @param selectedFile the image file to load; must not be null, must exist, and be a valid
+     *     image
      * @param spinner the spinner component to indicate loading; must not be null
      * @param sudokuFX the GridPane where the background image will be applied; must not be null
      */
     public void loadBackgroundImage(File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
-        if (selectedFile == null || !imageUtils.isValidImage(selectedFile)) {
+        if (selectedFile == null
+                || !imageUtils.isValidImage(selectedFile)
+                || !selectedFile.exists()) {
             String errorMessage =
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
             LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
@@ -629,21 +624,17 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Saves the provided song file path to the database and displays a confirmation toast.
+     * Saves the provided song file path to the database and shows a confirmation toast.
      *
-     * <p>The method performs the following steps:
+     * <p>The method validates that the file is non-null, exists, and has a supported audio format
+     * (MP3, WAV, AAC, M4A, AIF, AIFF). If valid, it updates the database and {@code songProperty};
+     * otherwise, it logs an error and shows an error toast via {@link ToasterVBox}.
      *
-     * <ul>
-     *   <li>Validates that the {@code file} is non-null and has a supported audio format.
-     *   <li>If invalid, logs an error and shows an error toast via {@link ToasterVBox}.
-     *   <li>If valid, persists the song path to the database.
-     *   <li>Displays a toast notification confirming the song has been saved.
-     * </ul>
-     *
-     * @param file the song file to save; must not be {@code null} and must be a valid audio file
+     * @param file the audio file to save; must not be {@code null}, must exist, and be a valid
+     *     audio file
      */
     public void saveSong(File file) {
-        if (file == null || !audioUtils.isValidAudio(file)) {
+        if (file == null || !audioUtils.isValidAudio(file) || !file.exists()) {
             String errorMessage =
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileaudiochooser");
             LOG.error("██ Exception handleFileAudioChooser : {}", errorMessage);

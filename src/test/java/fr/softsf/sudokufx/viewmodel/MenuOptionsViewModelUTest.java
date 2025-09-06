@@ -173,6 +173,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         @Test
         void givenValidFile_whenLoadBackgroundImage_thenAsyncServiceCalled() throws Exception {
             File validFile = mock(File.class);
+            doReturn(true).when(validFile).exists();
             ImageUtils imageUtilsSpy = spy(new ImageUtils());
             doReturn(true).when(imageUtilsSpy).isValidImage(validFile);
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
@@ -182,6 +183,22 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             verify(asyncServiceMock)
                     .processFileAsync(
                             eq(validFile), eq(spinnerMock), eq(toasterMock), any(), any());
+        }
+
+        @Test
+        void givenNonExistentFile_whenLoadBackgroundImage_thenToastErrorAndNoAsyncCall()
+                throws Exception {
+            File nonExistentFile = mock(File.class);
+            doReturn(false).when(nonExistentFile).exists(); // Fichier inexistant
+            ImageUtils imageUtilsSpy = spy(new ImageUtils());
+            doReturn(true).when(imageUtilsSpy).isValidImage(nonExistentFile);
+            Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
+            field.setAccessible(true);
+            field.set(viewModel, imageUtilsSpy);
+            viewModel.loadBackgroundImage(nonExistentFile, spinnerMock, sudokuFX);
+            verify(asyncServiceMock, never()).processFileAsync(any(), any(), any(), any(), any());
+            verify(toasterMock, atLeast(1))
+                    .addToast(anyString(), anyString(), eq(ToastLevels.ERROR), eq(true));
         }
     }
 
