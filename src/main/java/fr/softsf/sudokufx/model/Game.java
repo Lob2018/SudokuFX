@@ -272,16 +272,16 @@ public class Game {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof Game other)) {
-            return false;
+        if (o instanceof Game other) {
+            return Objects.equals(gameid, other.gameid)
+                    && Objects.equals(gridid, other.gridid)
+                    && Objects.equals(playerid, other.playerid)
+                    && Objects.equals(levelid, other.levelid)
+                    && Objects.equals(isselected, other.isselected)
+                    && Objects.equals(createdat, other.createdat)
+                    && Objects.equals(updatedat, other.updatedat);
         }
-        return Objects.equals(gameid, other.gameid)
-                && Objects.equals(gridid, other.gridid)
-                && Objects.equals(playerid, other.playerid)
-                && Objects.equals(levelid, other.levelid)
-                && Objects.equals(isselected, other.isselected)
-                && Objects.equals(createdat, other.createdat)
-                && Objects.equals(updatedat, other.updatedat);
+        return false;
     }
 
     @Override

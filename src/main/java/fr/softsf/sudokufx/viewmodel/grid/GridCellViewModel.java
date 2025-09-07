@@ -223,14 +223,13 @@ public class GridCellViewModel {
      * TextArea and positioning the caret at the end.
      */
     private void switchToEditMode() {
-        if (!isEditable()) {
-            return;
+        if (isEditable()) {
+            textArea.setText(rawText.get().replace("\n", ""));
+            label.setVisible(false);
+            textArea.setVisible(true);
+            textArea.requestFocus();
+            textArea.positionCaret(textArea.getText().length());
         }
-        textArea.setText(rawText.get().replace("\n", ""));
-        label.setVisible(false);
-        textArea.setVisible(true);
-        textArea.requestFocus();
-        textArea.positionCaret(textArea.getText().length());
     }
 
     /**

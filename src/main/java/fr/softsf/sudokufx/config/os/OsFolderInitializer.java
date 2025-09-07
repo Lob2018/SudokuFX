@@ -58,17 +58,18 @@ public enum OsFolderInitializer {
                     "The folder mustn't be null");
         }
         try {
-            if (!folder.exists()) {
-                if (!folder.mkdirs()) {
+            if (folder.exists()) {
+                LOG.info("▓▓ Folder already exists: {}", folder.getAbsolutePath());
+            } else {
+                if (folder.mkdirs()) {
+                    LOG.info("▓▓ Folder created successfully: {}", folder.getAbsolutePath());
+                } else {
                     LOG.error(
                             "██ Failed to create folder with mkdirs(): {}",
                             folder.getAbsolutePath());
                     throw new RuntimeException(
                             "Failed to create folder with mkdirs(): {}" + folder.getAbsolutePath());
                 }
-                LOG.info("▓▓ Folder created successfully: {}", folder.getAbsolutePath());
-            } else {
-                LOG.info("▓▓ Folder already exists: {}", folder.getAbsolutePath());
             }
         } catch (SecurityException e) {
             LOG.error(

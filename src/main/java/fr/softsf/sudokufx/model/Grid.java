@@ -161,13 +161,13 @@ public class Grid {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof Grid other)) {
-            return false;
+        if (obj instanceof Grid other) {
+            return possibilities == other.possibilities
+                    && Objects.equals(gridid, other.gridid)
+                    && Objects.equals(defaultgridvalue, other.defaultgridvalue)
+                    && Objects.equals(gridvalue, other.gridvalue);
         }
-        return possibilities == other.possibilities
-                && Objects.equals(gridid, other.gridid)
-                && Objects.equals(defaultgridvalue, other.defaultgridvalue)
-                && Objects.equals(gridvalue, other.gridvalue);
+        return false;
     }
 
     @Override

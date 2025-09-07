@@ -297,8 +297,8 @@ public final class DefaultView implements IMainView {
                 .accessibleTextProperty()
                 .bind(menuNewViewModel.maxiNewAccessibleTextProperty());
         menuMiniButtonNew.textProperty().bind(menuNewViewModel.newAccessibleTextProperty());
-        menuMaxiButtonNew.visibleProperty().bind(menuNewViewModel.isUpToDateProperty().not());
-        menuMiniButtonNew.visibleProperty().bind(menuNewViewModel.isUpToDateProperty().not());
+        menuMaxiButtonNew.visibleProperty().bind(menuNewViewModel.isOutOfDateProperty());
+        menuMiniButtonNew.visibleProperty().bind(menuNewViewModel.isOutOfDateProperty());
         menuMaxiButtonNew
                 .getTooltip()
                 .textProperty()
@@ -1121,17 +1121,16 @@ public final class DefaultView implements IMainView {
     public void handleMenuMaxiShow(ActionEvent event) {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI);
         Object source = event.getSource();
-        if (!(source instanceof Button button)) {
-            return;
+        if (source instanceof Button button) {
+            switch (button.getId()) {
+                case "menuPlayerButtonPlayer" -> menuMaxiButtonPlayer.requestFocus();
+                case "menuSolveButtonSolve" -> menuMaxiButtonSolve.requestFocus();
+                case "menuSaveButtonSave" -> menuMaxiButtonBackup.requestFocus();
+                case "menuOptionsButtonBackground" -> menuMaxiButtonOptions.requestFocus();
+                default -> menuMaxiButtonReduce.requestFocus();
+            }
+            hideMiniMenuTimeline.stop();
         }
-        switch (button.getId()) {
-            case "menuPlayerButtonPlayer" -> menuMaxiButtonPlayer.requestFocus();
-            case "menuSolveButtonSolve" -> menuMaxiButtonSolve.requestFocus();
-            case "menuSaveButtonSave" -> menuMaxiButtonBackup.requestFocus();
-            case "menuOptionsButtonBackground" -> menuMaxiButtonOptions.requestFocus();
-            default -> menuMaxiButtonReduce.requestFocus();
-        }
-        hideMiniMenuTimeline.stop();
     }
 
     /**

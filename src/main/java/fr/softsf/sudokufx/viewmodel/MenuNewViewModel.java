@@ -41,7 +41,7 @@ public class MenuNewViewModel {
     private final StringBinding newTooltip;
 
     private final VersionService versionService;
-    private final BooleanProperty isUpToDate = new SimpleBooleanProperty(true);
+    private final BooleanProperty isOutOfDate = new SimpleBooleanProperty(false);
     private final StringProperty statusMessage = new SimpleStringProperty();
     private Task<Boolean> currentTask;
     private ChangeListener<Boolean> versionListener;
@@ -89,8 +89,8 @@ public class MenuNewViewModel {
     }
 
     /**
-     * Starts an async version check, updating isUpToDate and statusMessage. Safely removes previous
-     * listeners and bindings to avoid memory leaks. Runs the check in a daemon thread.
+     * Starts an async version check, updating isOutOfDate and statusMessage. Safely removes
+     * previous listeners and bindings to avoid memory leaks. Runs the check in a daemon thread.
      */
     private void checkVersion() {
         if (statusMessage.isBound()) {
@@ -104,7 +104,7 @@ public class MenuNewViewModel {
         versionListener =
                 (obs, oldVal, newVal) -> {
                     if (newVal != null) {
-                        Platform.runLater(() -> isUpToDate.set(newVal));
+                        Platform.runLater(() -> isOutOfDate.set(!newVal));
                     }
                 };
         currentTask.valueProperty().addListener(versionListener);
@@ -114,12 +114,13 @@ public class MenuNewViewModel {
     }
 
     /**
-     * Indicates whether the application is up-to-date.
+     * Indicates whether the application is out-of-date. This property is useful for binding
+     * visibility of update notifications.
      *
-     * @return a BooleanProperty representing update status
+     * @return a BooleanProperty representing out-of-date status
      */
-    public BooleanProperty isUpToDateProperty() {
-        return isUpToDate;
+    public BooleanProperty isOutOfDateProperty() {
+        return isOutOfDate;
     }
 
     /**

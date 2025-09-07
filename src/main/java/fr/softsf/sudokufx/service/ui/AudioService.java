@@ -62,35 +62,36 @@ public class AudioService {
         Objects.requireNonNull(effectFile, "The effectFile must not be null");
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 key, "Key must not be null or blank");
-        if (!VALID_EFFECT_KEYS.contains(key)) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "Unknown effect key: " + key);
-        }
-        MediaPlayer existingPlayer = effectsPlayers.get(key);
-        if (existingPlayer == null) {
-            try {
-                Media media = new Media(effectFile.toURI().toString());
-                MediaPlayer player = new MediaPlayer(media);
-                double volume = originalEffectVolumes.getOrDefault(key, 1.0);
-                originalEffectVolumes.put(key, volume);
-                player.setVolume(isMuted ? 0 : volume);
-                player.setOnEndOfMedia(
-                        () -> {
-                            player.dispose();
-                            effectsPlayers.remove(key);
-                            originalEffectVolumes.remove(key);
-                        });
-                effectsPlayers.put(key, player);
-                player.play();
-            } catch (Exception e) {
-                throw ExceptionTools.INSTANCE.logAndInstantiateResourceLoad(
-                        "Failed to play effect " + effectFile.getName(), e);
+        if (VALID_EFFECT_KEYS.contains(key)) {
+            MediaPlayer existingPlayer = effectsPlayers.get(key);
+            if (existingPlayer == null) {
+                try {
+                    Media media = new Media(effectFile.toURI().toString());
+                    MediaPlayer player = new MediaPlayer(media);
+                    double volume = originalEffectVolumes.getOrDefault(key, 1.0);
+                    originalEffectVolumes.put(key, volume);
+                    player.setVolume(isMuted ? 0 : volume);
+                    player.setOnEndOfMedia(
+                            () -> {
+                                player.dispose();
+                                effectsPlayers.remove(key);
+                                originalEffectVolumes.remove(key);
+                            });
+                    effectsPlayers.put(key, player);
+                    player.play();
+                } catch (Exception e) {
+                    throw ExceptionTools.INSTANCE.logAndInstantiateResourceLoad(
+                            "Failed to play effect " + effectFile.getName(), e);
+                }
+            } else {
+                existingPlayer.stop();
+                existingPlayer.seek(Duration.ZERO);
+                existingPlayer.play();
             }
-        } else {
-            existingPlayer.stop();
-            existingPlayer.seek(Duration.ZERO);
-            existingPlayer.play();
+            return;
         }
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                "Unknown effect key: " + key);
     }
 
     /**
@@ -191,16 +192,17 @@ public class AudioService {
     public synchronized void setEffectVolume(String key, double volume) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 key, "Key must not be null or blank, but was " + key);
-        if (!VALID_EFFECT_KEYS.contains(key)) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "Unknown effect key: " + key);
+        if (VALID_EFFECT_KEYS.contains(key)) {
+            double clampedVolume = Math.clamp(volume, 0.0, 1.0);
+            originalEffectVolumes.put(key, clampedVolume);
+            MediaPlayer effectPlayer = effectsPlayers.get(key);
+            if (effectPlayer != null && !isMuted) {
+                effectPlayer.setVolume(clampedVolume);
+            }
+            return;
         }
-        double clampedVolume = Math.clamp(volume, 0.0, 1.0);
-        originalEffectVolumes.put(key, clampedVolume);
-        MediaPlayer effectPlayer = effectsPlayers.get(key);
-        if (effectPlayer != null && !isMuted) {
-            effectPlayer.setVolume(clampedVolume);
-        }
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                "Unknown effect key: " + key);
     }
 
     /** Stops and disposes the song player. */

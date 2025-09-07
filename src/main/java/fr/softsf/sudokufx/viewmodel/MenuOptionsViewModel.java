@@ -586,41 +586,41 @@ public class MenuOptionsViewModel {
      * @param sudokuFX the GridPane where the background image will be applied; must not be null
      */
     public void loadBackgroundImage(File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
-        if (selectedFile == null
-                || !imageUtils.isValidImage(selectedFile)
-                || !selectedFile.exists()) {
-            String errorMessage =
-                    I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
-            LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
-            toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+        if (selectedFile != null
+                && imageUtils.isValidImage(selectedFile)
+                && selectedFile.exists()) {
+            asyncFileProcessorService.processFileAsync(
+                    selectedFile,
+                    spinner,
+                    toaster,
+                    file -> {
+                        ImageMeta meta = imageUtils.getImageMeta(file);
+                        Image resizedImage =
+                                new Image(
+                                        file.toURI().toString(),
+                                        meta.width() * meta.scaleFactor(),
+                                        meta.height() * meta.scaleFactor(),
+                                        true,
+                                        true);
+                        return imageUtils.createBackgroundImage(resizedImage);
+                    },
+                    backgroundImage -> {
+                        sudokuFX.setBackground(new Background(backgroundImage));
+                        // TODO save the image path to base
+                        toaster.addToast(
+                                MessageFormat.format(
+                                        I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
+                                        selectedFile.getName()),
+                                selectedFile.toURI().toString(),
+                                ToastLevels.INFO,
+                                false);
+                    });
             return;
         }
-        asyncFileProcessorService.processFileAsync(
-                selectedFile,
-                spinner,
-                toaster,
-                file -> {
-                    ImageMeta meta = imageUtils.getImageMeta(file);
-                    Image resizedImage =
-                            new Image(
-                                    file.toURI().toString(),
-                                    meta.width() * meta.scaleFactor(),
-                                    meta.height() * meta.scaleFactor(),
-                                    true,
-                                    true);
-                    return imageUtils.createBackgroundImage(resizedImage);
-                },
-                backgroundImage -> {
-                    sudokuFX.setBackground(new Background(backgroundImage));
-                    // TODO save the image path to base
-                    toaster.addToast(
-                            MessageFormat.format(
-                                    I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
-                                    selectedFile.getName()),
-                            selectedFile.toURI().toString(),
-                            ToastLevels.INFO,
-                            false);
-                });
+        String errorMessage =
+                I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
+        LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
+        toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
     }
 
     /**
@@ -634,14 +634,14 @@ public class MenuOptionsViewModel {
      *     audio file
      */
     public void saveSong(File file) {
-        if (file == null || !audioUtils.isValidAudio(file) || !file.exists()) {
-            String errorMessage =
-                    I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileaudiochooser");
-            LOG.error("██ Exception handleFileAudioChooser : {}", errorMessage);
-            toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+        if (file != null && audioUtils.isValidAudio(file) && file.exists()) {
+            updateSongPath(file.getAbsolutePath(), file.getName());
             return;
         }
-        updateSongPath(file.getAbsolutePath(), file.getName());
+        String errorMessage =
+                I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileaudiochooser");
+        LOG.error("██ Exception handleFileAudioChooser : {}", errorMessage);
+        toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
     }
 
     /**

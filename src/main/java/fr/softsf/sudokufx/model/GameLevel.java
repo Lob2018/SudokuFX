@@ -86,10 +86,10 @@ public class GameLevel {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof GameLevel other)) {
-            return false;
+        if (o instanceof GameLevel other) {
+            return Objects.equals(levelid, other.levelid) && level == other.level;
         }
-        return Objects.equals(levelid, other.levelid) && level == other.level;
+        return false;
     }
 
     @Override

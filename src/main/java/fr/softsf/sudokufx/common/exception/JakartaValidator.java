@@ -64,11 +64,11 @@ public class JakartaValidator {
                     "The object to validate mustn't be null");
         }
         var violations = validator.validate(obj);
-        if (!violations.isEmpty()) {
-            ConstraintViolationException exception = new ConstraintViolationException(violations);
-            LOG.error("██ Exception validation failed for object: {}", obj, exception);
-            throw exception;
+        if (violations.isEmpty()) {
+            return obj;
         }
-        return obj;
+        ConstraintViolationException exception = new ConstraintViolationException(violations);
+        LOG.error("██ Exception validation failed for object: {}", obj, exception);
+        throw exception;
     }
 }

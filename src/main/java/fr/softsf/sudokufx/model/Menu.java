@@ -87,10 +87,10 @@ public class Menu {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof Menu other)) {
-            return false;
+        if (obj instanceof Menu other) {
+            return Objects.equals(menuid, other.menuid) && mode == other.mode;
         }
-        return Objects.equals(menuid, other.menuid) && mode == other.mode;
+        return false;
     }
 
     @Override

@@ -54,10 +54,10 @@ public class PlayerLanguage {
      */
     private static String validateIso(String iso) {
         Objects.requireNonNull(iso, ISO_MUST_NOT_BE_NULL);
-        if (!VALID_ISO_REGEX.matcher(iso).matches()) {
-            throw new IllegalArgumentException(ISO_INVALID_VALUE);
+        if (VALID_ISO_REGEX.matcher(iso).matches()) {
+            return iso;
         }
-        return iso;
+        throw new IllegalArgumentException(ISO_INVALID_VALUE);
     }
 
     public Long getPlayerlanguageid() {
@@ -114,11 +114,11 @@ public class PlayerLanguage {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof PlayerLanguage other)) {
-            return false;
+        if (obj instanceof PlayerLanguage other) {
+            return Objects.equals(playerlanguageid, other.playerlanguageid)
+                    && Objects.equals(iso, other.iso);
         }
-        return Objects.equals(playerlanguageid, other.playerlanguageid)
-                && Objects.equals(iso, other.iso);
+        return false;
     }
 
     @Override

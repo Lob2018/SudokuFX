@@ -108,24 +108,24 @@ public class ImageUtils {
                         "Cannot open image stream for: " + file.getName());
             }
             var readers = ImageIO.getImageReaders(in);
-            if (!readers.hasNext()) {
-                String msg = "Unsupported image format: " + file.getName();
-                LOG.error("██ {}", msg);
-                throw new RuntimeException(msg);
+            if (readers.hasNext()) {
+                ImageReader reader = readers.next();
+                try {
+                    reader.setInput(in);
+                    int imageWidth = reader.getWidth(0);
+                    int imageHeight = reader.getHeight(0);
+                    double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
+                    double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
+                    double scaleFactor =
+                            Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
+                    return new ImageMeta(imageWidth, imageHeight, scaleFactor);
+                } finally {
+                    reader.dispose();
+                }
             }
-            ImageReader reader = readers.next();
-            try {
-                reader.setInput(in);
-                int imageWidth = reader.getWidth(0);
-                int imageHeight = reader.getHeight(0);
-                double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
-                double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
-                double scaleFactor =
-                        Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
-                return new ImageMeta(imageWidth, imageHeight, scaleFactor);
-            } finally {
-                reader.dispose();
-            }
+            String msg = "Unsupported image format: " + file.getName();
+            LOG.error("██ {}", msg);
+            throw new RuntimeException(msg);
         } catch (IOException e) {
             LOG.error("██ Failed to read image: {} - {}", file.getName(), e.getMessage(), e);
             throw new RuntimeException("Failed to read image: " + file.getName(), e);

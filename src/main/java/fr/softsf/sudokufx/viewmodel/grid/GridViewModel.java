@@ -130,37 +130,35 @@ public class GridViewModel {
      * array, calls the grid solver, and outputs solution status and completion percentage.
      */
     private void verifyGrid() {
-        List<String> values = getAllValues();
         int[] grilleInt =
-                values.stream()
+                getAllValues().stream()
                         .mapToInt(
-                                val -> {
-                                    if (val == null || val.isBlank()) {
-                                        return 0;
-                                    }
-                                    if (val.length() == 1 && Character.isDigit(val.charAt(0))) {
-                                        return Integer.parseInt(val);
-                                    }
-                                    return 0;
-                                })
+                                val ->
+                                        StringUtils.isNotBlank(val)
+                                                        && val.length() == 1
+                                                        && Character.isDigit(val.charAt(0))
+                                                ? Integer.parseInt(val)
+                                                : 0)
                         .toArray();
         GrilleResolue grilleResolue = iGridMaster.resoudreLaGrille(grilleInt);
         boolean solved = grilleResolue.solved();
         int[] solvedGrid = grilleResolue.solvedGrid();
         int percentage = grilleResolue.possibilityPercentage();
+        System.out.println("\n\nsolvedGrid:" + Arrays.toString(solvedGrid));
+        System.out.println("Solved : " + solved + "\nPourcentage : " + percentage + "%\n\n");
         // TODO Win !
-        if (solved && Arrays.equals(grilleInt, solvedGrid)) {
+        if (solved && Arrays.equals(grilleInt, solvedGrid) && isCompletelyCompleted()) {
             try {
                 String path = playerStateHolder.getCurrentPlayer().optionsidDto().songpath();
-                if (StringUtils.isBlank(path)) {
-                    return;
+                if (StringUtils.isNotEmpty(path)) {
+                    File file = new File(path);
+                    if (file.exists()) {
+                        audioService.playSong(file);
+                    } else {
+                        throw new IllegalStateException(
+                                "Audio file not found or inaccessible: " + path);
+                    }
                 }
-                File file = new File(path);
-                if (!file.exists()) {
-                    throw new IllegalStateException(
-                            "Audio file not found or inaccessible: " + path);
-                }
-                audioService.playSong(file);
             } catch (ResourceLoadException | IllegalStateException e) {
                 String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
                 LOG.error("{}: {}", title, e.getMessage(), e);
@@ -171,8 +169,6 @@ public class GridViewModel {
                         true);
             }
         }
-        System.out.println("\n\nsolvedGrid:" + Arrays.toString(solvedGrid));
-        System.out.println("Solved : " + solved + "\nPourcentage : " + percentage + "%\n\n");
     }
 
     /** Returns an unmodifiable list of all cell view models. */

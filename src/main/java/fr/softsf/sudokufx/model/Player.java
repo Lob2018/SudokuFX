@@ -273,17 +273,17 @@ public class Player {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof Player other)) {
-            return false;
+        if (o instanceof Player other) {
+            return Objects.equals(playerid, other.playerid)
+                    && Objects.equals(playerlanguageid, other.playerlanguageid)
+                    && Objects.equals(optionsid, other.optionsid)
+                    && Objects.equals(menuid, other.menuid)
+                    && Objects.equals(name, other.name)
+                    && Objects.equals(isselected, other.isselected)
+                    && Objects.equals(createdat, other.createdat)
+                    && Objects.equals(updatedat, other.updatedat);
         }
-        return Objects.equals(playerid, other.playerid)
-                && Objects.equals(playerlanguageid, other.playerlanguageid)
-                && Objects.equals(optionsid, other.optionsid)
-                && Objects.equals(menuid, other.menuid)
-                && Objects.equals(name, other.name)
-                && Objects.equals(isselected, other.isselected)
-                && Objects.equals(createdat, other.createdat)
-                && Objects.equals(updatedat, other.updatedat);
+        return false;
     }
 
     @Override

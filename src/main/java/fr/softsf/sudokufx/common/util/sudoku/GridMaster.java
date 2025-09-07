@@ -477,20 +477,20 @@ public final class GridMaster implements IGridMaster {
         if (reglesOk == -1) {
             return new GrilleResolue(false, grille, 0);
         }
-        // La grille ne contient pas de 0
-        if (Arrays.stream(grille).noneMatch(val -> val == 0)) {
+        // La grille est complètement remplie (pas de 0)
+        if (Arrays.stream(grille).allMatch(val -> val != 0)) {
             return new GrilleResolue(true, grille, 0);
         }
         // Remplir la grille
         boolean grilleRemplie = remplirLaGrille(grille, possibilites);
-        // La grille n'est pas remplie
-        if (!grilleRemplie) {
-            return new GrilleResolue(false, grille, 0);
+        // La grille est remplie avec succès
+        if (grilleRemplie) {
+            return new GrilleResolue(
+                    true,
+                    grille,
+                    getPourcentageDesPossibilites(sommeDesPossibilitesDeLaGrille(possibilites)));
         }
-        return new GrilleResolue(
-                true,
-                grille,
-                getPourcentageDesPossibilites(sommeDesPossibilitesDeLaGrille(possibilites)));
+        return new GrilleResolue(false, grille, 0);
     }
 
     @Override

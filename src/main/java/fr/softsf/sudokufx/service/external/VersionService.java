@@ -154,21 +154,21 @@ public class VersionService {
                 return true;
             }
             String lastVersion = tagName.substring(1);
-            if (!MyRegex.INSTANCE.isValidatedByRegex(
+            if (MyRegex.INSTANCE.isValidatedByRegex(
                     lastVersion, MyRegex.INSTANCE.getVersionPattern())) {
-                LOG.warn(
-                        "▓▓ GitHub version '{}' does not match expected semantic versioning format"
-                                + " (X.Y.Z).",
-                        lastVersion);
-                return true;
+                boolean isLatest = compareVersions(CURRENT_VERSION, lastVersion) >= 0;
+                LOG.info(
+                        "▓▓ GitHub version check: currentVersion={}, lastVersion={}, result={}",
+                        CURRENT_VERSION,
+                        lastVersion,
+                        isLatest);
+                return isLatest;
             }
-            boolean isLatest = compareVersions(CURRENT_VERSION, lastVersion) >= 0;
-            LOG.info(
-                    "▓▓ GitHub version check: currentVersion={}, lastVersion={}, result={}",
-                    CURRENT_VERSION,
-                    lastVersion,
-                    isLatest);
-            return isLatest;
+            LOG.warn(
+                    "▓▓ GitHub version '{}' does not match expected semantic versioning format"
+                            + " (X.Y.Z).",
+                    lastVersion);
+            return true;
         } catch (Exception e) {
             LOG.error("██ Error parsing GitHub API response: {}", e.getMessage(), e);
             return true;

@@ -91,10 +91,10 @@ public class Options {
         if (StringUtils.isBlank(hexcolor)) {
             throw new IllegalArgumentException(HEXCOLOR_MUST_NOT_BE_NULL_OR_BLANK);
         }
-        if (!HEX_COLOR_PATTERN.matcher(hexcolor).matches()) {
-            throw new IllegalArgumentException(INVALID_HEX_COLOR_FORMAT);
+        if (HEX_COLOR_PATTERN.matcher(hexcolor).matches()) {
+            return hexcolor;
         }
-        return hexcolor;
+        throw new IllegalArgumentException(INVALID_HEX_COLOR_FORMAT);
     }
 
     /**
@@ -239,16 +239,16 @@ public class Options {
         if (this == obj) {
             return true;
         }
-        if (!(obj instanceof Options other)) {
-            return false;
+        if (obj instanceof Options other) {
+            return isimage == other.isimage
+                    && isopaque == other.isopaque
+                    && ismuted == other.ismuted
+                    && Objects.equals(optionsid, other.optionsid)
+                    && Objects.equals(hexcolor, other.hexcolor)
+                    && Objects.equals(imagepath, other.imagepath)
+                    && Objects.equals(songpath, other.songpath);
         }
-        return isimage == other.isimage
-                && isopaque == other.isopaque
-                && ismuted == other.ismuted
-                && Objects.equals(optionsid, other.optionsid)
-                && Objects.equals(hexcolor, other.hexcolor)
-                && Objects.equals(imagepath, other.imagepath)
-                && Objects.equals(songpath, other.songpath);
+        return false;
     }
 
     @Override
