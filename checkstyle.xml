@@ -103,6 +103,13 @@
         <module name="EmptyCatchBlock">
             <property name="exceptionVariableName" value="expected|ignored"/>
         </module>
+    </module>
 
+    <!-- ==== NEGATION OPERATOR CHECK ==== -->
+    <!-- Prohibit '!' in if / else if conditions -->
+    <module name="RegexpSingleline">
+        <property name="format" value="^\s*(if|else\s+if)\s*\(\s*!"/>
+        <property name="message" value="Avoid using negation operator '!' in if/else-if conditions; prefer positive logic."/>
+        <property name="severity" value="warning"/>
     </module>
 </module>
