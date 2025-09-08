@@ -29,6 +29,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
 
 ## Contents
 
+- [System requirements](#system-requirements)
 - [Installation](#installation)
   - [Verifying downloaded assets](#verifying-downloaded-assets)
 - [Use](#use)
@@ -49,6 +50,25 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
 - [Code of Conduct](#code-of-conduct)
 - [Contributors](#contributors)
 - [Licence](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)
+
+
+## System requirements
+
+### Minimum specifications
+- **Operating System:** Windows 10/11, macOS 11 (Big Sur) or later, Ubuntu 20.04 LTS (64-bit)
+- **Processor:** Dual-core 2.0 GHz (Intel x86_64 or Apple Silicon ARM64)
+- **Memory:** 4 GB RAM
+- **Storage:** 1 GB free disk space
+- **Audio:** Sound card (integrated or dedicated)
+- **Display:** 1024 × 768 pixels
+- **Other:** Java JRE (included in MSI/DEB/DMG versions)
+
+### Recommended specifications
+- **Processor:** Quad-core 2.5 GHz or higher (Intel x86_64 or Apple Silicon ARM64)
+- **Memory:** 8 GB RAM
+- **Storage:** 2 GB free disk space (SSD recommended)
+- **Display:** 1920 × 1080 pixels
+- **Audio:** Stereo audio system for optimal experience
 
 ## Installation
 
