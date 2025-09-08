@@ -1,7 +1,6 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel =
 [
     [ "grid", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid" ],
-    [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state" ],
     [ "ActiveMenuOrSubmenuViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test" ],
     [ "MenuHiddenViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test" ],
     [ "MenuMiniViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_mini_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_mini_view_model_u_test" ],

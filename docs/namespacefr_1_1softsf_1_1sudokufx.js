@@ -30,6 +30,9 @@ var namespacefr_1_1softsf_1_1sudokufx =
         ] ],
         [ "service", null, [
           [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external" ]
+        ] ],
+        [ "viewmodel", null, [
+          [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state" ]
         ] ]
       ] ],
       [ "unit", null, [

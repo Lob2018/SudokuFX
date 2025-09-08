@@ -1,5 +1,16 @@
 var NAVTREEINDEX17 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a0fe209f6f8a9c6a7931358c9e60c4fec":[2,0,0,0,0,1,1,4,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1c0e8612142224adb623240430d50947":[1,0,0,0,0,1,1,4,6],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1c0e8612142224adb623240430d50947":[2,0,0,0,0,1,1,4,6],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1eff4ddf127fb0d12824ddb21b52edfd":[1,0,0,0,0,1,1,4,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a1eff4ddf127fb0d12824ddb21b52edfd":[2,0,0,0,0,1,1,4,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a7dacde684608f19de5d60e9998434702":[1,0,0,0,0,1,1,4,5],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a7dacde684608f19de5d60e9998434702":[2,0,0,0,0,1,1,4,5],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#ac8b6b21b75c23585e8d5914a73c9b5fd":[1,0,0,0,0,1,1,4,7],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#ac8b6b21b75c23585e8d5914a73c9b5fd":[2,0,0,0,0,1,1,4,7],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#aeee0d7b76594e13d91b047459062aeb5":[1,0,0,0,0,1,1,4,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#aeee0d7b76594e13d91b047459062aeb5":[2,0,0,0,0,1,1,4,3],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html":[1,0,0,0,0,1,1,5],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html":[2,0,0,0,0,1,1,5],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a00975a5f686719484f9fb08ffb1ad05d":[1,0,0,0,0,1,1,5,9],
@@ -238,16 +249,5 @@ var NAVTREEINDEX17 =
 "functions.html":[2,3,0],
 "functions.html":[2,3,0,0],
 "functions_a.html":[2,3,0,1],
-"functions_b.html":[2,3,0,2],
-"functions_c.html":[2,3,0,3],
-"functions_d.html":[2,3,0,4],
-"functions_e.html":[2,3,0,5],
-"functions_f.html":[2,3,0,6],
-"functions_func.html":[2,3,1],
-"functions_func.html":[2,3,1,0],
-"functions_func_a.html":[2,3,1,1],
-"functions_func_b.html":[2,3,1,2],
-"functions_func_c.html":[2,3,1,3],
-"functions_func_d.html":[2,3,1,4],
-"functions_func_e.html":[2,3,1,5]
+"functions_b.html":[2,3,0,2]
 };

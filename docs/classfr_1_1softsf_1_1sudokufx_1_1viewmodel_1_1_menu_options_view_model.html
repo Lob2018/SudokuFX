@@ -203,7 +203,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2582c58765253be7838375ba8895471a" id="r_a2582c58765253be7838375ba8895471a"><td class="memItemLeft" align="right" valign="top">StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2582c58765253be7838375ba8895471a">optionsTooltipProperty</a> ()</td></tr>
 <tr class="separator:a2582c58765253be7838375ba8895471a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2431f22d487e230013fec9a9ff6fc20" id="r_ad2431f22d487e230013fec9a9ff6fc20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2431f22d487e230013fec9a9ff6fc20">saveSong</a> (File file)</td></tr>
-<tr class="memdesc:ad2431f22d487e230013fec9a9ff6fc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the provided song file path to the database and displays a confirmation toast.  <br /></td></tr>
+<tr class="memdesc:ad2431f22d487e230013fec9a9ff6fc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the provided song file path to the database and shows a confirmation toast.  <br /></td></tr>
 <tr class="separator:ad2431f22d487e230013fec9a9ff6fc20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6833b400a15d0c8cbd114f344b212b65" id="r_a6833b400a15d0c8cbd114f344b212b65"><td class="memItemLeft" align="right" valign="top">BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6833b400a15d0c8cbd114f344b212b65">songIsBlankProperty</a> ()</td></tr>
 <tr class="separator:a6833b400a15d0c8cbd114f344b212b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -802,25 +802,11 @@ Audio mute state </li>
 </div><div class="memdoc">
 
 <p>Loads a background image asynchronously and applies it to the specified GridPane. </p>
-<p>The method performs the following steps:</p>
-<ul>
-<li>
-Validates that the selected file is a non-null, valid image. </li>
-<li>
-If invalid, logs an error and shows an error toast via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code>. </li>
-<li>
-If valid, delegates asynchronous loading, resizing, and conversion to <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></code>. </li>
-<li>
-On success, sets the resulting <code><a class="el" href="">BackgroundImage</a></code> on the provided <code><a class="el" href="">GridPane</a></code>. </li>
-<li>
-Saving the background path to the database or other persistence should be handled externally. </li>
-<li>
-Errors are handled internally; no callbacks for errors are needed. </li>
-</ul>
+<p>The method validates that the file is non-null, exists, and is a valid image. If valid, it delegates asynchronous loading, resizing, and conversion to <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></code>. On success, the resulting <code><a class="el" href="">BackgroundImage</a></code> is applied to the provided <code><a class="el" href="">GridPane</a></code>. Errors are logged and shown as a toast via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code>. Saving the image path to the database should be handled externally.</p>
 <p>Asynchronous processing ensures the UI thread is not blocked during image loading and resizing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">selectedFile</td><td>the image file to load; must not be null </td></tr>
+    <tr><td class="paramname">selectedFile</td><td>the image file to load; must not be null, must exist, and be a valid image </td></tr>
     <tr><td class="paramname">spinner</td><td>the spinner component to indicate loading; must not be null </td></tr>
     <tr><td class="paramname">sudokuFX</td><td>the GridPane where the background image will be applied; must not be null </td></tr>
   </table>
@@ -1508,21 +1494,11 @@ Errors are handled internally; no callbacks for errors are needed. </li>
       </table>
 </div><div class="memdoc">
 
-<p>Saves the provided song file path to the database and displays a confirmation toast. </p>
-<p>The method performs the following steps:</p>
-<ul>
-<li>
-Validates that the <code class="JavaDocCode">file</code> is non-null and has a supported audio format. </li>
-<li>
-If invalid, logs an error and shows an error toast via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code>. </li>
-<li>
-If valid, persists the song path to the database. </li>
-<li>
-Displays a toast notification confirming the song has been saved. </li>
-</ul>
+<p>Saves the provided song file path to the database and shows a confirmation toast. </p>
+<p>The method validates that the file is non-null, exists, and has a supported audio format (MP3, WAV, AAC, M4A, AIF, AIFF). If valid, it updates the database and <code class="JavaDocCode">songProperty</code>; otherwise, it logs an error and shows an error toast via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">file</td><td>the song file to save; must not be <code class="JavaDocCode">null</code> and must be a valid audio file </td></tr>
+    <tr><td class="paramname">file</td><td>the audio file to save; must not be <code class="JavaDocCode">null</code>, must exist, and be a valid audio file </td></tr>
   </table>
   </dd>
 </dl>
@@ -2928,7 +2904,7 @@ Displays a toast notification confirming the song has been saved. </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></li>
-    <li class="footer">Generated on Sat Sep 6 2025 14:21:43 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon Sep 8 2025 15:34:44 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -120,9 +120,9 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_ne
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0fd457752b40e1cc02053e6485491b6f" id="r_a0fd457752b40e1cc02053e6485491b6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd457752b40e1cc02053e6485491b6f">MenuNewViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html">VersionService</a> <a class="el" href="#a2100f5a67c17582634d8f4cd8f80423c">versionService</a>)</td></tr>
 <tr class="separator:a0fd457752b40e1cc02053e6485491b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbe70999a0a118d69927bea13427c056" id="r_afbe70999a0a118d69927bea13427c056"><td class="memItemLeft" align="right" valign="top">BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbe70999a0a118d69927bea13427c056">isUpToDateProperty</a> ()</td></tr>
-<tr class="memdesc:afbe70999a0a118d69927bea13427c056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the application is up-to-date.  <br /></td></tr>
-<tr class="separator:afbe70999a0a118d69927bea13427c056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af384dcb308b8d28653590921deca9cb4" id="r_af384dcb308b8d28653590921deca9cb4"><td class="memItemLeft" align="right" valign="top">BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af384dcb308b8d28653590921deca9cb4">isOutOfDateProperty</a> ()</td></tr>
+<tr class="memdesc:af384dcb308b8d28653590921deca9cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the application is out-of-date.  <br /></td></tr>
+<tr class="separator:af384dcb308b8d28653590921deca9cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a744676990438ca2f6e9d2f5bd25b9c22" id="r_a744676990438ca2f6e9d2f5bd25b9c22"><td class="memItemLeft" align="right" valign="top">StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a744676990438ca2f6e9d2f5bd25b9c22">maxiNewAccessibleTextProperty</a> ()</td></tr>
 <tr class="separator:a744676990438ca2f6e9d2f5bd25b9c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48cee7ba9894ed8b7eda06deb162877c" id="r_a48cee7ba9894ed8b7eda06deb162877c"><td class="memItemLeft" align="right" valign="top">StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48cee7ba9894ed8b7eda06deb162877c">maxiNewTextProperty</a> ()</td></tr>
@@ -140,7 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:abf657e1fec7ce679afe0c8633a8f489d" id="r_abf657e1fec7ce679afe0c8633a8f489d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf657e1fec7ce679afe0c8633a8f489d">checkVersion</a> ()</td></tr>
-<tr class="memdesc:abf657e1fec7ce679afe0c8633a8f489d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts an async version check, updating isUpToDate and statusMessage.  <br /></td></tr>
+<tr class="memdesc:abf657e1fec7ce679afe0c8633a8f489d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts an async version check, updating isOutOfDate and statusMessage.  <br /></td></tr>
 <tr class="separator:abf657e1fec7ce679afe0c8633a8f489d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cae8744549487caceb379547791d556" id="r_a6cae8744549487caceb379547791d556"><td class="memItemLeft" align="right" valign="top">StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cae8744549487caceb379547791d556">createStringBinding</a> (String key)</td></tr>
 <tr class="memdesc:a6cae8744549487caceb379547791d556"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a localized StringBinding for the given key.  <br /></td></tr>
@@ -150,8 +150,8 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a09fd30f08f8dd544cf2c7e73f0fe8190" id="r_a09fd30f08f8dd544cf2c7e73f0fe8190"><td class="memItemLeft" align="right" valign="top">Task&lt; Boolean &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09fd30f08f8dd544cf2c7e73f0fe8190">currentTask</a></td></tr>
 <tr class="separator:a09fd30f08f8dd544cf2c7e73f0fe8190"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadceb380c9a9f7bb497140d3b1b5a4bd" id="r_aadceb380c9a9f7bb497140d3b1b5a4bd"><td class="memItemLeft" align="right" valign="top">final BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadceb380c9a9f7bb497140d3b1b5a4bd">isUpToDate</a> = new SimpleBooleanProperty(true)</td></tr>
-<tr class="separator:aadceb380c9a9f7bb497140d3b1b5a4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aa9e1895b0a8b9633eae73a84c6ceb2" id="r_a9aa9e1895b0a8b9633eae73a84c6ceb2"><td class="memItemLeft" align="right" valign="top">final BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa9e1895b0a8b9633eae73a84c6ceb2">isOutOfDate</a> = new SimpleBooleanProperty(false)</td></tr>
+<tr class="separator:a9aa9e1895b0a8b9633eae73a84c6ceb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82d76fa6b66a1cd0c014b65ce3ce1942" id="r_a82d76fa6b66a1cd0c014b65ce3ce1942"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82d76fa6b66a1cd0c014b65ce3ce1942">maxiNewAccessibleText</a></td></tr>
 <tr class="separator:a82d76fa6b66a1cd0c014b65ce3ce1942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae55681e823ef6c160c8a0a6f91d13f09" id="r_ae55681e823ef6c160c8a0a6f91d13f09"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae55681e823ef6c160c8a0a6f91d13f09">maxiNewText</a></td></tr>
@@ -223,7 +223,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Starts an async version check, updating isUpToDate and statusMessage. </p>
+<p>Starts an async version check, updating isOutOfDate and statusMessage. </p>
 <p>Safely removes previous listeners and bindings to avoid memory leaks. Runs the check in a daemon thread. </p>
 
 </div>
@@ -263,14 +263,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="afbe70999a0a118d69927bea13427c056" name="afbe70999a0a118d69927bea13427c056"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbe70999a0a118d69927bea13427c056">&#9670;&#160;</a></span>isUpToDateProperty()</h2>
+<a id="af384dcb308b8d28653590921deca9cb4" name="af384dcb308b8d28653590921deca9cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af384dcb308b8d28653590921deca9cb4">&#9670;&#160;</a></span>isOutOfDateProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BooleanProperty fr.softsf.sudokufx.viewmodel.MenuNewViewModel.isUpToDateProperty </td>
+          <td class="memname">BooleanProperty fr.softsf.sudokufx.viewmodel.MenuNewViewModel.isOutOfDateProperty </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -278,8 +278,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Indicates whether the application is up-to-date. </p>
-<dl class="section return"><dt>Returns</dt><dd>a BooleanProperty representing update status </dd></dl>
+<p>Indicates whether the application is out-of-date. </p>
+<p>This property is useful for binding visibility of update notifications.</p>
+<dl class="section return"><dt>Returns</dt><dd>a BooleanProperty representing out-of-date status </dd></dl>
 
 </div>
 </div>
@@ -411,8 +412,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aadceb380c9a9f7bb497140d3b1b5a4bd" name="aadceb380c9a9f7bb497140d3b1b5a4bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadceb380c9a9f7bb497140d3b1b5a4bd">&#9670;&#160;</a></span>isUpToDate</h2>
+<a id="a9aa9e1895b0a8b9633eae73a84c6ceb2" name="a9aa9e1895b0a8b9633eae73a84c6ceb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aa9e1895b0a8b9633eae73a84c6ceb2">&#9670;&#160;</a></span>isOutOfDate</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +422,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final BooleanProperty fr.softsf.sudokufx.viewmodel.MenuNewViewModel.isUpToDate = new SimpleBooleanProperty(true)</td>
+          <td class="memname">final BooleanProperty fr.softsf.sudokufx.viewmodel.MenuNewViewModel.isOutOfDate = new SimpleBooleanProperty(false)</td>
         </tr>
       </table>
   </td>
@@ -618,7 +619,7 @@ Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html">MenuNewViewModel</a></li>
-    <li class="footer">Generated on Sat Sep 6 2025 14:21:43 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon Sep 8 2025 15:34:44 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

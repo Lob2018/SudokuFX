@@ -66,7 +66,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task&lt; Boolean &gt; currentTask</text>
 <text text-anchor="start" x="5.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
-<text text-anchor="start" x="14" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isUpToDate</text>
+<text text-anchor="start" x="14" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isOutOfDate</text>
 <text text-anchor="start" x="5.5" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
 <text text-anchor="start" x="14" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00"> maxiNewAccessibleText</text>
@@ -92,7 +92,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuNewViewModel(Version</text>
 <text text-anchor="start" x="14" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">Service versionService)</text>
 <text text-anchor="start" x="4" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty isUpToDate</text>
+<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty isOutOfDate</text>
 <text text-anchor="start" x="14" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
 <text text-anchor="start" x="4" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding maxiNewAccessible</text>

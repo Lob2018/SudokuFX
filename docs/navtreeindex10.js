@@ -1,7 +1,7 @@
 var NAVTREEINDEX10 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html#af22a8ad53e35ed0775342ae60f50d4d6":[1,0,0,0,0,8,2,2,1,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html#af22a8ad53e35ed0775342ae60f50d4d6":[2,0,0,0,0,7,2,2,1,0,1],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#af83103ee70002f325a7187228ce254f9":[2,0,0,0,0,7,2,2,0,1,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#af83103ee70002f325a7187228ce254f9":[2,0,0,0,0,7,2,2,0,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html":[1,0,0,0,0,9,1],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html":[2,0,0,0,0,8,1],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a06bf010806175e6f960b1ee805a2eb3d":[1,0,0,0,0,9,1,0],

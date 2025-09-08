@@ -102,22 +102,24 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" target="_top" xlink:title="Abstract test class providing a mocked PlayerService and a PlayerStateHolder spy.">
-<polygon fill="white" stroke="none" points="544.12,-1104 382.38,-1104 382.38,-1008 544.12,-1008 544.12,-1104"/>
-<text text-anchor="start" x="386.38" y="-1090.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="410" y="-1078.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>
-<text text-anchor="start" x="390.06" y="-1062.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="403" y="-1062.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto defaultPlayer</text>
-<text text-anchor="start" x="391.19" y="-1046.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="403" y="-1046.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
-<text text-anchor="start" x="389.69" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="403" y="-1030.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeMocks()</text>
-<text text-anchor="start" x="389.69" y="-1014.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="403" y="-1014.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupPlayerStateHolder()</text>
-<polygon fill="#666666" stroke="#666666" points="382.38,-1074 382.38,-1074 544.12,-1074 544.12,-1074 382.38,-1074"/>
-<polygon fill="#666666" stroke="#666666" points="382.38,-1042 382.38,-1042 401,-1042 401,-1042 382.38,-1042"/>
-<polygon fill="#666666" stroke="#666666" points="401,-1042 401,-1042 544.12,-1042 544.12,-1042 401,-1042"/>
-<polygon fill="none" stroke="#666666" points="382.38,-1008 382.38,-1104 544.12,-1104 544.12,-1008 382.38,-1008"/>
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" target="_top" xlink:title="Abstract base test class that provides:">
+<polygon fill="white" stroke="none" points="562.12,-1112 400.38,-1112 400.38,-1000 562.12,-1000 562.12,-1112"/>
+<text text-anchor="start" x="404.38" y="-1098.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="428" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>
+<text text-anchor="start" x="406" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="416.88" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto defaultPlayer</text>
+<text text-anchor="start" x="407.12" y="-1054.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="416.88" y="-1054.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
+<text text-anchor="start" x="405.62" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="416.88" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeMocks()</text>
+<text text-anchor="start" x="405.62" y="-1022.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="416.88" y="-1022.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupPlayerStateHolder()</text>
+<text text-anchor="start" x="406" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="416.88" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createDefaultPlayer()</text>
+<polygon fill="#666666" stroke="#666666" points="400.38,-1082 400.38,-1082 562.12,-1082 562.12,-1082 400.38,-1082"/>
+<polygon fill="#666666" stroke="#666666" points="400.38,-1050 400.38,-1050 414.88,-1050 414.88,-1050 400.38,-1050"/>
+<polygon fill="#666666" stroke="#666666" points="414.88,-1050 414.88,-1050 562.12,-1050 562.12,-1050 414.88,-1050"/>
+<polygon fill="none" stroke="#666666" points="400.38,-1000 400.38,-1112 562.12,-1112 562.12,-1000 400.38,-1000"/>
 </a>
 </g>
 </g>
@@ -125,8 +127,8 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M465.38,-996.64C473.11,-864.45 508.96,-538.13 675.25,-338 736.3,-264.53 835.62,-218.25 912.39,-191.52"/>
-<polygon fill="none" stroke="#63b8ff" points="461.88,-996.38 464.83,-1006.56 468.87,-996.77 461.88,-996.38"/>
+<path fill="none" stroke="#63b8ff" d="M481.94,-988.74C486.72,-851.98 515.57,-534.79 675.25,-338 735.55,-263.69 835.2,-217.45 912.28,-190.96"/>
+<polygon fill="none" stroke="#63b8ff" points="478.44,-988.62 481.63,-998.72 485.44,-988.83 478.44,-988.62"/>
 </a>
 </g>
 </g>
@@ -160,8 +162,8 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M350.2,-2368.63C334.27,-2353.21 320.25,-2335.63 310.75,-2316 106.32,-1893.46 348.15,-1301.53 434.74,-1115.39"/>
-<polygon fill="none" stroke="#63b8ff" points="434.73,-1115.4 433.66,-1108.27 439.83,-1104.54 440.9,-1111.67 434.73,-1115.4"/>
+<path fill="none" stroke="#63b8ff" d="M350.2,-2368.63C334.27,-2353.21 320.25,-2335.63 310.75,-2316 108.92,-1898.84 353.22,-1318.4 447.31,-1123.67"/>
+<polygon fill="none" stroke="#63b8ff" points="447.37,-1123.55 446.4,-1116.41 452.62,-1112.76 453.59,-1119.91 447.37,-1123.55"/>
 </a>
 </g>
 <text text-anchor="middle" x="356.5" y="-2050.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #playerServiceMock</text>
@@ -515,11 +517,11 @@ var sectionId = 'dynsection-1';
 <g id="edge13_Node000002_Node000014" class="edge">
 <title>Node14&#45;&gt;Node2</title>
 <g id="a_edge13_Node000002_Node000014"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M481.31,-1964.26C475.1,-1909.52 467.95,-1837.8 464.75,-1774 452.51,-1530.2 458.14,-1239.18 461.45,-1116.34"/>
-<polygon fill="none" stroke="#63b8ff" points="461.44,-1116.49 457.61,-1110.39 461.77,-1104.5 465.61,-1110.61 461.44,-1116.49"/>
+<path fill="none" stroke="#63b8ff" d="M488.18,-1964.12C485.87,-1909.33 483.2,-1837.61 482,-1774 477.49,-1535.4 479.32,-1252.05 480.52,-1124.79"/>
+<polygon fill="none" stroke="#63b8ff" points="480.52,-1124.78 476.57,-1118.74 480.63,-1112.78 484.57,-1118.82 480.52,-1124.78"/>
 </a>
 </g>
-<text text-anchor="middle" x="516.5" y="-1764.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #playerStateHolderSpy</text>
+<text text-anchor="middle" x="525.12" y="-1764.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #playerStateHolder</text>
 </g>
 <!-- Node15 -->
 <g id="Node000015" class="node">

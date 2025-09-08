@@ -145,6 +145,11 @@ var annotated_dup =
                 [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html", [
                   [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1_version_service_i_test" ]
                 ] ]
+              ] ],
+              [ "viewmodel", null, [
+                [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state.html", [
+                  [ "PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test" ]
+                ] ]
               ] ]
             ] ],
             [ "unit", null, [
@@ -186,9 +191,6 @@ var annotated_dup =
                 [ "grid", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid.html", [
                   [ "GrilleResolueUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test" ],
                   [ "GrillesCreesUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test" ]
-                ] ],
-                [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state.html", [
-                  [ "PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test" ]
                 ] ],
                 [ "ActiveMenuOrSubmenuViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test" ],
                 [ "MenuHiddenViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test" ],

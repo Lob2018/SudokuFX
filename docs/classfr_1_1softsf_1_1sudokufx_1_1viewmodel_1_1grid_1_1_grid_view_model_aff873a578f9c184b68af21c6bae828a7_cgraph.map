@@ -1,12 +1,13 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init">
-<area shape="rect" id="Node000001" title="Initializes the 9x9 Sudoku grid by creating 81 GridCellViewModel instances, each with a unique ID and..." alt="" coords="5,72,224,115"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="289,5,507,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,69,289,49,290,55,209,74"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="272,72,524,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,91,256,91,256,96,224,96"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" title="Verifies the current grid state by attempting to solve it." alt="" coords="289,139,507,181"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="209,113,290,132,289,137,208,118"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="572,105,790,148"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="525,106,557,109,556,115,524,111"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="507,145,556,139,557,144,508,150"/>
+<area shape="rect" id="Node000001" title="Initializes the 9x9 Sudoku grid by creating 81 GridCellViewModel instances, each with a unique ID and..." alt="" coords="5,64,224,107"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="272,5,490,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,61,265,49,266,55,215,66"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="538,64,790,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,83,522,83,522,88,224,88"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" title="Verifies the current grid state by attempting to solve it." alt="" coords="272,123,490,165"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="215,105,266,116,265,121,214,110"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="838,93,1057,136"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="791,96,823,99,823,104,790,101"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="487,119,542,108,543,113,488,125"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="490,136,823,118,823,124,490,141"/>
 </map>

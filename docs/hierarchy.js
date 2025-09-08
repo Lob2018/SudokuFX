@@ -195,8 +195,10 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.PlayerLanguageUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html", null ],
     [ "fr.softsf.sudokufx.service.business.PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html", null ],
-    [ "fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html", null ],
-    [ "fr.softsf.sudokufx.testing.unit.viewmodel.state.PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html", null ],
+    [ "fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html", [
+      [ "fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest.TestablePlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test_1_1_testable_player_state_holder.html", null ]
+    ] ],
+    [ "fr.softsf.sudokufx.testing.integration.viewmodel.state.PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlaySongTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html", null ],
     [ "fr.softsf.sudokufx.common.enums.ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", null ],

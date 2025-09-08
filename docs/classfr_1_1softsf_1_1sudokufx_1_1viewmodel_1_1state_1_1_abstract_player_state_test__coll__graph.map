@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest" name="fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest">
-<area shape="rect" id="Node000001" title="Abstract test class providing a mocked PlayerService and a PlayerStateHolder spy." alt="" coords="495,956,711,1084"/>
+<area shape="rect" id="Node000001" title="Abstract base test class that provides:" alt="" coords="495,956,711,1105"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" title="Service for managing Player entities." alt="" coords="434,364,772,588"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="598,588,596,652,593,772,596,892,598,939,593,939,590,892,588,772,590,652,593,588"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="598,588,596,652,593,772,596,892,598,939,593,940,590,892,588,772,590,652,593,588"/>
 <area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="727,652,943,892"/>
 <area shape="poly" id="edge13_Node000013_Node000002" title=" " alt="" coords="692,586,733,637,729,641,688,589"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="5,169,187,271"/>
@@ -24,5 +24,5 @@
 <area shape="poly" id="edge10_Node000002_Node000011" title=" " alt="" coords="862,291,772,356,769,352,859,287"/>
 <area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="1118,140,1349,300"/>
 <area shape="poly" id="edge11_Node000002_Node000012" title=" " alt="" coords="1120,297,1108,302,1028,338,946,370,788,424,786,419,944,365,1026,333,1106,298,1117,292"/>
-<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="729,889,676,946,672,942,726,885"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="729,894,683,945,679,942,726,890"/>
 </map>

@@ -12,7 +12,7 @@ var searchData=
   ['playerservice_9',['PlayerService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html',1,'fr::softsf::sudokufx::service::business']]],
   ['playerserviceutest_10',['PlayerServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html',1,'fr::softsf::sudokufx::testing::unit::service::business']]],
   ['playerstateholder_11',['PlayerStateHolder',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
-  ['playerstateholderitest_12',['PlayerStateHolderITest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::state']]],
+  ['playerstateholderitest_12',['PlayerStateHolderITest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html',1,'fr::softsf::sudokufx::testing::integration::viewmodel::state']]],
   ['playerstateholderutest_13',['PlayerStateHolderUTest',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
   ['playerutest_14',['PlayerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html',1,'fr::softsf::sudokufx::model']]],
   ['playsongtests_15',['PlaySongTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::ui::AudioServiceUTest']]],

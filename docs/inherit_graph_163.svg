@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" target="_top" xlink:title="Abstract test class providing a mocked PlayerService and a PlayerStateHolder spy.">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" target="_top" xlink:title="Abstract base test class that provides:">
 <polygon fill="white" stroke="#666666" points="169.75,-82 0,-82 0,-50 169.75,-50 169.75,-82"/>
 <text text-anchor="start" x="8" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
 <text text-anchor="middle" x="84.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>

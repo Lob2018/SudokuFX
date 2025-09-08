@@ -1,0 +1,6 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test =
+[
+    [ "givenRefreshCurrentPlayer_whenCalled_thenCurrentPlayerIsReloadedFromService", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html#a88cb4b69d0715e3298415435fa0e97db", null ],
+    [ "givenTestDatabase_whenInMemoryPlayerLoads_thenPlayerDtoIsNotNull", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html#a779a07123278935045b7fe9504896bcb", null ],
+    [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html#aabc222af9adf4ce5bd322ae3e62deac5", null ]
+];

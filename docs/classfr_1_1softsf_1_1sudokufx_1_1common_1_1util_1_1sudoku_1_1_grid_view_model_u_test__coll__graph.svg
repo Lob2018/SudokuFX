@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1268;
+var viewWidth = 1265;
 var viewHeight = 2017;
 var sectionId = 'dynsection-1';
 </script>
@@ -59,78 +59,80 @@ var sectionId = 'dynsection-1';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="none" points="649.12,-476 466.88,-476 466.88,0 649.12,0 649.12,-476"/>
-<text text-anchor="start" x="472.88" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
-<text text-anchor="start" x="511.88" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModelUTest</text>
-<text text-anchor="start" x="556.5" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="470.88" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenExistingId</text>
-<text text-anchor="start" x="480.88" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenGetCellViewModelById</text>
-<text text-anchor="start" x="480.88" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenCellIsReturned()</text>
-<text text-anchor="start" x="470.88" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenFilledGrid</text>
-<text text-anchor="start" x="480.88" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenClearGrid_thenAllCells</text>
-<text text-anchor="start" x="480.88" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">AreEmpty()</text>
-<text text-anchor="start" x="470.88" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenGridCellViewModel</text>
-<text text-anchor="start" x="480.88" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenAccessorsCalled_thenReturn</text>
-<text text-anchor="start" x="480.88" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExpectedValues()</text>
-<text text-anchor="start" x="470.88" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenListWithNullElement</text>
-<text text-anchor="start" x="480.88" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSetValues_thenIllegalArgument</text>
-<text text-anchor="start" x="480.88" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionIsThrown()</text>
-<text text-anchor="start" x="470.88" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNonExistingId</text>
-<text text-anchor="start" x="480.88" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenGetCellViewModelById</text>
-<text text-anchor="start" x="480.88" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenEmptyOptionalIsReturned()</text>
-<text text-anchor="start" x="470.88" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullLevel</text>
-<text text-anchor="start" x="480.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenApplyLevel_thenIllegal</text>
-<text text-anchor="start" x="480.88" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">ArgumentExceptionIsThrown()</text>
-<text text-anchor="start" x="470.88" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullValues</text>
-<text text-anchor="start" x="480.88" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSetValues_thenIllegalArgument</text>
-<text text-anchor="start" x="480.88" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionIsThrown()</text>
-<text text-anchor="start" x="470.88" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenPlayerStateHolder</text>
-<text text-anchor="start" x="480.88" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitGridViewModel_thenView</text>
-<text text-anchor="start" x="480.88" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">ModelInitialized()</text>
-<text text-anchor="start" x="470.88" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidValues</text>
-<text text-anchor="start" x="480.88" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSetValues_thenAllCells</text>
-<text text-anchor="start" x="480.88" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">ContainCorrectValues()</text>
-<text text-anchor="start" x="470.88" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModelInitialized</text>
-<text text-anchor="start" x="480.88" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInit_then81CellsAreCreated()</text>
-<text text-anchor="start" x="470.88" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="480.88" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenWrongSizeList</text>
-<text text-anchor="start" x="480.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSetValues_thenIllegalArgument</text>
-<text text-anchor="start" x="480.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionIsThrown()</text>
-<polygon fill="#666666" stroke="#666666" points="466.88,-446 466.88,-446 649.12,-446 649.12,-446 466.88,-446"/>
-<polygon fill="#666666" stroke="#666666" points="466.88,-430 466.88,-430 649.12,-430 649.12,-430 466.88,-430"/>
-<polygon fill="none" stroke="#666666" points="466.88,0 466.88,-476 649.12,-476 649.12,0 466.88,0"/>
+<polygon fill="#999999" stroke="none" points="656.12,-476 473.88,-476 473.88,0 656.12,0 656.12,-476"/>
+<text text-anchor="start" x="479.88" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
+<text text-anchor="start" x="518.88" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModelUTest</text>
+<text text-anchor="start" x="563.5" y="-434.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="477.88" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenExistingId</text>
+<text text-anchor="start" x="487.88" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenGetCellViewModelById</text>
+<text text-anchor="start" x="487.88" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenCellIsReturned()</text>
+<text text-anchor="start" x="477.88" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-378.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenFilledGrid</text>
+<text text-anchor="start" x="487.88" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenClearGrid_thenAllCells</text>
+<text text-anchor="start" x="487.88" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">AreEmpty()</text>
+<text text-anchor="start" x="477.88" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenGridCellViewModel</text>
+<text text-anchor="start" x="487.88" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenAccessorsCalled_thenReturn</text>
+<text text-anchor="start" x="487.88" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExpectedValues()</text>
+<text text-anchor="start" x="477.88" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-298.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenListWithNullElement</text>
+<text text-anchor="start" x="487.88" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSetValues_thenIllegalArgument</text>
+<text text-anchor="start" x="487.88" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionIsThrown()</text>
+<text text-anchor="start" x="477.88" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNonExistingId</text>
+<text text-anchor="start" x="487.88" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenGetCellViewModelById</text>
+<text text-anchor="start" x="487.88" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenEmptyOptionalIsReturned()</text>
+<text text-anchor="start" x="477.88" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullLevel</text>
+<text text-anchor="start" x="487.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenApplyLevel_thenIllegal</text>
+<text text-anchor="start" x="487.88" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">ArgumentExceptionIsThrown()</text>
+<text text-anchor="start" x="477.88" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNullValues</text>
+<text text-anchor="start" x="487.88" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSetValues_thenIllegalArgument</text>
+<text text-anchor="start" x="487.88" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionIsThrown()</text>
+<text text-anchor="start" x="477.88" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenPlayerStateHolder</text>
+<text text-anchor="start" x="487.88" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitGridViewModel_thenView</text>
+<text text-anchor="start" x="487.88" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">ModelInitialized()</text>
+<text text-anchor="start" x="477.88" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidValues</text>
+<text text-anchor="start" x="487.88" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSetValues_thenAllCells</text>
+<text text-anchor="start" x="487.88" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">ContainCorrectValues()</text>
+<text text-anchor="start" x="477.88" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModelInitialized</text>
+<text text-anchor="start" x="487.88" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInit_then81CellsAreCreated()</text>
+<text text-anchor="start" x="477.88" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="487.88" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenWrongSizeList</text>
+<text text-anchor="start" x="487.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenSetValues_thenIllegalArgument</text>
+<text text-anchor="start" x="487.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExceptionIsThrown()</text>
+<polygon fill="#666666" stroke="#666666" points="473.88,-446 473.88,-446 656.12,-446 656.12,-446 473.88,-446"/>
+<polygon fill="#666666" stroke="#666666" points="473.88,-430 473.88,-430 656.12,-430 656.12,-430 473.88,-430"/>
+<polygon fill="none" stroke="#666666" points="473.88,0 473.88,-476 656.12,-476 656.12,0 473.88,0"/>
 </a>
 </g>
 </g>
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" target="_top" xlink:title="Abstract test class providing a mocked PlayerService and a PlayerStateHolder spy.">
-<polygon fill="white" stroke="none" points="743.88,-780 582.12,-780 582.12,-684 743.88,-684 743.88,-780"/>
-<text text-anchor="start" x="586.12" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="609.75" y="-754.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>
-<text text-anchor="start" x="589.81" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="602.75" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto defaultPlayer</text>
-<text text-anchor="start" x="590.94" y="-722.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="602.75" y="-722.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
-<text text-anchor="start" x="589.44" y="-706.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="602.75" y="-706.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeMocks()</text>
-<text text-anchor="start" x="589.44" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="602.75" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupPlayerStateHolder()</text>
-<polygon fill="#666666" stroke="#666666" points="582.12,-750 582.12,-750 743.88,-750 743.88,-750 582.12,-750"/>
-<polygon fill="#666666" stroke="#666666" points="582.12,-718 582.12,-718 600.75,-718 600.75,-718 582.12,-718"/>
-<polygon fill="#666666" stroke="#666666" points="600.75,-718 600.75,-718 743.88,-718 743.88,-718 600.75,-718"/>
-<polygon fill="none" stroke="#666666" points="582.12,-684 582.12,-780 743.88,-780 743.88,-684 582.12,-684"/>
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" target="_top" xlink:title="Abstract base test class that provides:">
+<polygon fill="white" stroke="none" points="750.88,-788 589.12,-788 589.12,-676 750.88,-676 750.88,-788"/>
+<text text-anchor="start" x="593.12" y="-774.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="616.75" y="-762.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>
+<text text-anchor="start" x="594.75" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="605.62" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto defaultPlayer</text>
+<text text-anchor="start" x="595.88" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="605.62" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
+<text text-anchor="start" x="594.38" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="605.62" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeMocks()</text>
+<text text-anchor="start" x="594.38" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="605.62" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupPlayerStateHolder()</text>
+<text text-anchor="start" x="594.75" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="605.62" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createDefaultPlayer()</text>
+<polygon fill="#666666" stroke="#666666" points="589.12,-758 589.12,-758 750.88,-758 750.88,-758 589.12,-758"/>
+<polygon fill="#666666" stroke="#666666" points="589.12,-726 589.12,-726 603.62,-726 603.62,-726 589.12,-726"/>
+<polygon fill="#666666" stroke="#666666" points="603.62,-726 603.62,-726 750.88,-726 750.88,-726 603.62,-726"/>
+<polygon fill="none" stroke="#666666" points="589.12,-676 589.12,-788 750.88,-788 750.88,-676 589.12,-676"/>
 </a>
 </g>
 </g>
@@ -138,8 +140,8 @@ var sectionId = 'dynsection-1';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M650.67,-673.21C640.13,-623.85 624.24,-549.39 608.58,-476"/>
-<polygon fill="none" stroke="#63b8ff" points="647.2,-673.74 652.71,-682.79 654.05,-672.28 647.2,-673.74"/>
+<path fill="none" stroke="#63b8ff" d="M655.99,-665.36C645.48,-616.1 630.4,-545.44 615.53,-475.76"/>
+<polygon fill="none" stroke="#63b8ff" points="652.54,-665.94 658.05,-674.99 659.38,-664.48 652.54,-665.94"/>
 </a>
 </g>
 </g>
@@ -147,25 +149,25 @@ var sectionId = 'dynsection-1';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" target="_top" xlink:title="Service for managing Player entities.">
-<polygon fill="white" stroke="none" points="886.38,-1740 633.62,-1740 633.62,-1572 886.38,-1572 886.38,-1740"/>
-<text text-anchor="start" x="682" y="-1726.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
-<text text-anchor="start" x="729.62" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService</text>
-<text text-anchor="start" x="758.5" y="-1698.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="637.62" y="-1682.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="647.62" y="-1682.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService(PlayerRepository</text>
-<text text-anchor="start" x="647.62" y="-1670.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerRepository, PlayerLanguageRepository</text>
-<text text-anchor="start" x="647.62" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerLanguageRepository, OptionsRepository</text>
-<text text-anchor="start" x="647.62" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsRepository, MenuRepository menuRepository,</text>
-<text text-anchor="start" x="647.62" y="-1634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IPlayerMapper playerMapper, JakartaValidator</text>
-<text text-anchor="start" x="647.62" y="-1622.5" font-family="Helvetica,sans-Serif" font-size="10.00"> jakartaValidator)</text>
-<text text-anchor="start" x="637.62" y="-1606.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="647.62" y="-1606.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getPlayer()</text>
-<text text-anchor="start" x="637.62" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="647.62" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto updatePlayer</text>
-<text text-anchor="start" x="647.62" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerDto dto)</text>
-<polygon fill="#666666" stroke="#666666" points="633.62,-1710 633.62,-1710 886.38,-1710 886.38,-1710 633.62,-1710"/>
-<polygon fill="#666666" stroke="#666666" points="633.62,-1694 633.62,-1694 886.38,-1694 886.38,-1694 633.62,-1694"/>
-<polygon fill="none" stroke="#666666" points="633.62,-1572 633.62,-1740 886.38,-1740 886.38,-1572 633.62,-1572"/>
+<polygon fill="white" stroke="none" points="881.38,-1740 628.62,-1740 628.62,-1572 881.38,-1572 881.38,-1740"/>
+<text text-anchor="start" x="677" y="-1726.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
+<text text-anchor="start" x="724.62" y="-1714.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService</text>
+<text text-anchor="start" x="753.5" y="-1698.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="632.62" y="-1682.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="642.62" y="-1682.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService(PlayerRepository</text>
+<text text-anchor="start" x="642.62" y="-1670.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerRepository, PlayerLanguageRepository</text>
+<text text-anchor="start" x="642.62" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerLanguageRepository, OptionsRepository</text>
+<text text-anchor="start" x="642.62" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00"> optionsRepository, MenuRepository menuRepository,</text>
+<text text-anchor="start" x="642.62" y="-1634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> IPlayerMapper playerMapper, JakartaValidator</text>
+<text text-anchor="start" x="642.62" y="-1622.5" font-family="Helvetica,sans-Serif" font-size="10.00"> jakartaValidator)</text>
+<text text-anchor="start" x="632.62" y="-1606.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="642.62" y="-1606.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getPlayer()</text>
+<text text-anchor="start" x="632.62" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="642.62" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto updatePlayer</text>
+<text text-anchor="start" x="642.62" y="-1578.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerDto dto)</text>
+<polygon fill="#666666" stroke="#666666" points="628.62,-1710 628.62,-1710 881.38,-1710 881.38,-1710 628.62,-1710"/>
+<polygon fill="#666666" stroke="#666666" points="628.62,-1694 628.62,-1694 881.38,-1694 881.38,-1694 628.62,-1694"/>
+<polygon fill="none" stroke="#666666" points="628.62,-1572 628.62,-1740 881.38,-1740 881.38,-1572 628.62,-1572"/>
 </a>
 </g>
 </g>
@@ -173,40 +175,40 @@ var sectionId = 'dynsection-1';
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node3&#45;&gt;Node2</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M770.46,-1572.1C784.71,-1440.4 803.72,-1175.96 759,-958 746.82,-898.61 718.37,-835.5 695.59,-791.28"/>
-<polygon fill="none" stroke="#63b8ff" points="695.61,-791.32 689.29,-787.86 690.05,-780.69 696.38,-784.15 695.61,-791.32"/>
+<path fill="none" stroke="#63b8ff" d="M763.25,-1572.11C774.35,-1440.7 788.58,-1176.98 750,-958 740.33,-903.14 718.78,-843.88 700.47,-799.96"/>
+<polygon fill="none" stroke="#63b8ff" points="700.44,-799.87 694.41,-795.91 695.76,-788.82 701.78,-792.79 700.44,-799.87"/>
 </a>
 </g>
-<text text-anchor="middle" x="832.68" y="-1258.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #playerServiceMock</text>
+<text text-anchor="middle" x="821.01" y="-1258.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #playerServiceMock</text>
 </g>
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
 <g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" target="_top" xlink:title="Holds the current PlayerDto for the application.">
-<polygon fill="white" stroke="none" points="734.88,-1352 573.12,-1352 573.12,-1172 734.88,-1172 734.88,-1352"/>
-<text text-anchor="start" x="577.12" y="-1338.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="614.25" y="-1326.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
-<text text-anchor="start" x="582.31" y="-1310.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594.5" y="-1310.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
-<text text-anchor="start" x="594.5" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; PlayerDto &gt; currentPlayer</text>
-<text text-anchor="start" x="582.31" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="594.5" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="580.81" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="594.5" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
-<text text-anchor="start" x="594.5" y="-1254.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerService playerService)</text>
-<text text-anchor="start" x="580.81" y="-1238.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="594.5" y="-1238.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; PlayerDto</text>
-<text text-anchor="start" x="594.5" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; currentPlayerProperty()</text>
-<text text-anchor="start" x="580.81" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="594.5" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getCurrentPlayer()</text>
-<text text-anchor="start" x="580.81" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="594.5" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">void refreshCurrentPlayer()</text>
-<text text-anchor="start" x="580.81" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="594.5" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
-<polygon fill="#666666" stroke="#666666" points="573.12,-1322 573.12,-1322 734.88,-1322 734.88,-1322 573.12,-1322"/>
-<polygon fill="#666666" stroke="#666666" points="573.12,-1278 573.12,-1278 592.5,-1278 592.5,-1278 573.12,-1278"/>
-<polygon fill="#666666" stroke="#666666" points="592.5,-1278 592.5,-1278 734.88,-1278 734.88,-1278 592.5,-1278"/>
-<polygon fill="none" stroke="#666666" points="573.12,-1172 573.12,-1352 734.88,-1352 734.88,-1172 573.12,-1172"/>
+<polygon fill="white" stroke="none" points="727.88,-1352 566.12,-1352 566.12,-1172 727.88,-1172 727.88,-1352"/>
+<text text-anchor="start" x="570.12" y="-1338.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="607.25" y="-1326.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
+<text text-anchor="start" x="575.31" y="-1310.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="587.5" y="-1310.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
+<text text-anchor="start" x="587.5" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; PlayerDto &gt; currentPlayer</text>
+<text text-anchor="start" x="575.31" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="587.5" y="-1282.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="573.81" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="587.5" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
+<text text-anchor="start" x="587.5" y="-1254.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerService playerService)</text>
+<text text-anchor="start" x="573.81" y="-1238.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="587.5" y="-1238.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; PlayerDto</text>
+<text text-anchor="start" x="587.5" y="-1226.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; currentPlayerProperty()</text>
+<text text-anchor="start" x="573.81" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="587.5" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getCurrentPlayer()</text>
+<text text-anchor="start" x="573.81" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="587.5" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">void refreshCurrentPlayer()</text>
+<text text-anchor="start" x="573.81" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="587.5" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
+<polygon fill="#666666" stroke="#666666" points="566.12,-1322 566.12,-1322 727.88,-1322 727.88,-1322 566.12,-1322"/>
+<polygon fill="#666666" stroke="#666666" points="566.12,-1278 566.12,-1278 585.5,-1278 585.5,-1278 566.12,-1278"/>
+<polygon fill="#666666" stroke="#666666" points="585.5,-1278 585.5,-1278 727.88,-1278 727.88,-1278 585.5,-1278"/>
+<polygon fill="none" stroke="#666666" points="566.12,-1172 566.12,-1352 727.88,-1352 727.88,-1172 566.12,-1172"/>
 </a>
 </g>
 </g>
@@ -214,26 +216,26 @@ var sectionId = 'dynsection-1';
 <g id="edge14_Node000014_Node000003" class="edge">
 <title>Node3&#45;&gt;Node14</title>
 <g id="a_edge14_Node000014_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M701.71,-1572.19C698.73,-1566.18 696.03,-1560.09 693.75,-1554 671.11,-1493.51 661.14,-1421.63 656.85,-1364.45"/>
-<polygon fill="none" stroke="#63b8ff" points="656.86,-1364.61 652.46,-1358.9 656.03,-1352.64 660.44,-1358.35 656.86,-1364.61"/>
+<path fill="none" stroke="#63b8ff" d="M692.96,-1572.11C689.88,-1566.14 687.1,-1560.08 684.75,-1554 661.51,-1493.8 652.03,-1421.93 648.38,-1364.67"/>
+<polygon fill="none" stroke="#63b8ff" points="648.39,-1364.83 644.05,-1359.06 647.7,-1352.84 652.04,-1358.61 648.39,-1364.83"/>
 </a>
 </g>
-<text text-anchor="middle" x="726.38" y="-1544.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerService</text>
+<text text-anchor="middle" x="717.38" y="-1544.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerService</text>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="1260.25,-1886 1123.75,-1886 1123.75,-1810 1260.25,-1810 1260.25,-1886"/>
-<text text-anchor="start" x="1129.75" y="-1872.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="1154.5" y="-1860.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerRepository</text>
-<text text-anchor="start" x="1190.5" y="-1844.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="1127.75" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1137.75" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; Player &gt; findSelected</text>
-<text text-anchor="start" x="1137.75" y="-1816.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerWithSelectedGame()</text>
-<polygon fill="#666666" stroke="#666666" points="1123.75,-1856 1123.75,-1856 1260.25,-1856 1260.25,-1856 1123.75,-1856"/>
-<polygon fill="#666666" stroke="#666666" points="1123.75,-1840 1123.75,-1840 1260.25,-1840 1260.25,-1840 1123.75,-1840"/>
-<polygon fill="none" stroke="#666666" points="1123.75,-1810 1123.75,-1886 1260.25,-1886 1260.25,-1810 1123.75,-1810"/>
+<polygon fill="white" stroke="none" points="1257.25,-1886 1120.75,-1886 1120.75,-1810 1257.25,-1810 1257.25,-1886"/>
+<text text-anchor="start" x="1126.75" y="-1872.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="1151.5" y="-1860.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerRepository</text>
+<text text-anchor="start" x="1187.5" y="-1844.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1124.75" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1134.75" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; Player &gt; findSelected</text>
+<text text-anchor="start" x="1134.75" y="-1816.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerWithSelectedGame()</text>
+<polygon fill="#666666" stroke="#666666" points="1120.75,-1856 1120.75,-1856 1257.25,-1856 1257.25,-1856 1120.75,-1856"/>
+<polygon fill="#666666" stroke="#666666" points="1120.75,-1840 1120.75,-1840 1257.25,-1840 1257.25,-1840 1120.75,-1840"/>
+<polygon fill="none" stroke="#666666" points="1120.75,-1810 1120.75,-1886 1257.25,-1886 1257.25,-1810 1120.75,-1810"/>
 </a>
 </g>
 </g>
@@ -241,24 +243,24 @@ var sectionId = 'dynsection-1';
 <g id="edge3_Node000003_Node000004" class="edge">
 <title>Node4&#45;&gt;Node3</title>
 <g id="a_edge3_Node000003_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1148.78,-1810.29C1138.15,-1802.29 1126.5,-1794.34 1115,-1788 1046.75,-1750.39 965.52,-1719.5 898,-1697.19"/>
-<polygon fill="none" stroke="#63b8ff" points="898.25,-1697.27 891.31,-1699.21 886.85,-1693.54 893.79,-1691.61 898.25,-1697.27"/>
+<path fill="none" stroke="#63b8ff" d="M1145.78,-1810.27C1135.16,-1802.28 1123.51,-1794.33 1112,-1788 1043.24,-1750.19 961.36,-1719.25 893.38,-1696.95"/>
+<polygon fill="none" stroke="#63b8ff" points="893.56,-1697.01 886.62,-1698.96 882.15,-1693.31 889.09,-1691.35 893.56,-1697.01"/>
 </a>
 </g>
-<text text-anchor="middle" x="1118.38" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerRepository</text>
+<text text-anchor="middle" x="1115.18" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerRepository</text>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="1247.38,-2009 1136.62,-2009 1136.62,-1945 1247.38,-1945 1247.38,-2009"/>
-<text text-anchor="start" x="1140.62" y="-1995.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Player,</text>
-<text text-anchor="start" x="1175.5" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
-<text text-anchor="start" x="1190.5" y="-1967.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="1190.5" y="-1951.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="1136.62,-1979 1136.62,-1979 1247.38,-1979 1247.38,-1979 1136.62,-1979"/>
-<polygon fill="#666666" stroke="#666666" points="1136.62,-1963 1136.62,-1963 1247.38,-1963 1247.38,-1963 1136.62,-1963"/>
-<polygon fill="none" stroke="#666666" points="1136.62,-1945 1136.62,-2009 1247.38,-2009 1247.38,-1945 1136.62,-1945"/>
+<polygon fill="white" stroke="none" points="1244.38,-2009 1133.62,-2009 1133.62,-1945 1244.38,-1945 1244.38,-2009"/>
+<text text-anchor="start" x="1137.62" y="-1995.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Player,</text>
+<text text-anchor="start" x="1172.5" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
+<text text-anchor="start" x="1187.5" y="-1967.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="1187.5" y="-1951.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="1133.62,-1979 1133.62,-1979 1244.38,-1979 1244.38,-1979 1133.62,-1979"/>
+<polygon fill="#666666" stroke="#666666" points="1133.62,-1963 1133.62,-1963 1244.38,-1963 1244.38,-1963 1133.62,-1963"/>
+<polygon fill="none" stroke="#666666" points="1133.62,-1945 1133.62,-2009 1244.38,-2009 1244.38,-1945 1133.62,-1945"/>
 </a>
 </g>
 </g>
@@ -266,8 +268,8 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node5&#45;&gt;Node4</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1192,-1933.82C1192,-1918.28 1192,-1900.81 1192,-1885.79"/>
-<polygon fill="none" stroke="#63b8ff" points="1188.5,-1933.74 1192,-1943.74 1195.5,-1933.74 1188.5,-1933.74"/>
+<path fill="none" stroke="#63b8ff" d="M1189,-1933.82C1189,-1918.28 1189,-1900.81 1189,-1885.79"/>
+<polygon fill="none" stroke="#63b8ff" points="1185.5,-1933.74 1189,-1943.74 1192.5,-1933.74 1185.5,-1933.74"/>
 </a>
 </g>
 </g>
@@ -275,14 +277,14 @@ var sectionId = 'dynsection-1';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="384.25,-1880 251.75,-1880 251.75,-1816 384.25,-1816 384.25,-1880"/>
-<text text-anchor="start" x="255.75" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="259.5" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
-<text text-anchor="start" x="316.5" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="316.5" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="251.75,-1850 251.75,-1850 384.25,-1850 384.25,-1850 251.75,-1850"/>
-<polygon fill="#666666" stroke="#666666" points="251.75,-1834 251.75,-1834 384.25,-1834 384.25,-1834 251.75,-1834"/>
-<polygon fill="none" stroke="#666666" points="251.75,-1816 251.75,-1880 384.25,-1880 384.25,-1816 251.75,-1816"/>
+<polygon fill="white" stroke="none" points="381.25,-1880 248.75,-1880 248.75,-1816 381.25,-1816 381.25,-1880"/>
+<text text-anchor="start" x="252.75" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="256.5" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
+<text text-anchor="start" x="313.5" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="313.5" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="248.75,-1850 248.75,-1850 381.25,-1850 381.25,-1850 248.75,-1850"/>
+<polygon fill="#666666" stroke="#666666" points="248.75,-1834 248.75,-1834 381.25,-1834 381.25,-1834 248.75,-1834"/>
+<polygon fill="none" stroke="#666666" points="248.75,-1816 248.75,-1880 381.25,-1880 381.25,-1816 248.75,-1816"/>
 </a>
 </g>
 </g>
@@ -290,24 +292,24 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000003_Node000006" class="edge">
 <title>Node6&#45;&gt;Node3</title>
 <g id="a_edge5_Node000003_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M355.99,-1816.18C368.18,-1806.76 381.92,-1796.62 395,-1788 463.83,-1742.66 550.3,-1710.73 621.79,-1689.75"/>
-<polygon fill="none" stroke="#63b8ff" points="621.65,-1689.79 626.31,-1684.29 633.18,-1686.47 628.52,-1691.97 621.65,-1689.79"/>
+<path fill="none" stroke="#63b8ff" d="M353.52,-1816.07C365.61,-1806.75 379.17,-1796.68 392,-1788 459.8,-1742.12 545.57,-1710.2 616.71,-1689.35"/>
+<polygon fill="none" stroke="#63b8ff" points="616.5,-1689.41 621.16,-1683.91 628.04,-1686.1 623.37,-1691.6 616.5,-1689.41"/>
 </a>
 </g>
-<text text-anchor="middle" x="500.95" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerLanguageRepository</text>
+<text text-anchor="middle" x="497.43" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerLanguageRepository</text>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="394.38,-2009 241.62,-2009 241.62,-1945 394.38,-1945 394.38,-2009"/>
-<text text-anchor="start" x="245.62" y="-1995.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; PlayerLanguage,</text>
-<text text-anchor="start" x="301.5" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
-<text text-anchor="start" x="316.5" y="-1967.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="316.5" y="-1951.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="241.62,-1979 241.62,-1979 394.38,-1979 394.38,-1979 241.62,-1979"/>
-<polygon fill="#666666" stroke="#666666" points="241.62,-1963 241.62,-1963 394.38,-1963 394.38,-1963 241.62,-1963"/>
-<polygon fill="none" stroke="#666666" points="241.62,-1945 241.62,-2009 394.38,-2009 394.38,-1945 241.62,-1945"/>
+<polygon fill="white" stroke="none" points="391.38,-2009 238.62,-2009 238.62,-1945 391.38,-1945 391.38,-2009"/>
+<text text-anchor="start" x="242.62" y="-1995.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; PlayerLanguage,</text>
+<text text-anchor="start" x="298.5" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
+<text text-anchor="start" x="313.5" y="-1967.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="313.5" y="-1951.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="238.62,-1979 238.62,-1979 391.38,-1979 391.38,-1979 238.62,-1979"/>
+<polygon fill="#666666" stroke="#666666" points="238.62,-1963 238.62,-1963 391.38,-1963 391.38,-1963 238.62,-1963"/>
+<polygon fill="none" stroke="#666666" points="238.62,-1945 238.62,-2009 391.38,-2009 391.38,-1945 238.62,-1945"/>
 </a>
 </g>
 </g>
@@ -315,8 +317,8 @@ var sectionId = 'dynsection-1';
 <g id="edge6_Node000006_Node000007" class="edge">
 <title>Node7&#45;&gt;Node6</title>
 <g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M318,-1933.82C318,-1916.2 318,-1896.11 318,-1879.9"/>
-<polygon fill="none" stroke="#63b8ff" points="314.5,-1933.74 318,-1943.74 321.5,-1933.74 314.5,-1933.74"/>
+<path fill="none" stroke="#63b8ff" d="M315,-1933.82C315,-1916.2 315,-1896.11 315,-1879.9"/>
+<polygon fill="none" stroke="#63b8ff" points="311.5,-1933.74 315,-1943.74 318.5,-1933.74 311.5,-1933.74"/>
 </a>
 </g>
 </g>
@@ -324,14 +326,14 @@ var sectionId = 'dynsection-1';
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="536.25,-1880 403.75,-1880 403.75,-1816 536.25,-1816 536.25,-1880"/>
-<text text-anchor="start" x="407.75" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="429.5" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsRepository</text>
-<text text-anchor="start" x="468.5" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="468.5" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="403.75,-1850 403.75,-1850 536.25,-1850 536.25,-1850 403.75,-1850"/>
-<polygon fill="#666666" stroke="#666666" points="403.75,-1834 403.75,-1834 536.25,-1834 536.25,-1834 403.75,-1834"/>
-<polygon fill="none" stroke="#666666" points="403.75,-1816 403.75,-1880 536.25,-1880 536.25,-1816 403.75,-1816"/>
+<polygon fill="white" stroke="none" points="533.25,-1880 400.75,-1880 400.75,-1816 533.25,-1816 533.25,-1880"/>
+<text text-anchor="start" x="404.75" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="426.5" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsRepository</text>
+<text text-anchor="start" x="465.5" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="465.5" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="400.75,-1850 400.75,-1850 533.25,-1850 533.25,-1850 400.75,-1850"/>
+<polygon fill="#666666" stroke="#666666" points="400.75,-1834 400.75,-1834 533.25,-1834 533.25,-1834 400.75,-1834"/>
+<polygon fill="none" stroke="#666666" points="400.75,-1816 400.75,-1880 533.25,-1880 533.25,-1816 400.75,-1816"/>
 </a>
 </g>
 </g>
@@ -339,24 +341,24 @@ var sectionId = 'dynsection-1';
 <g id="edge7_Node000003_Node000008" class="edge">
 <title>Node8&#45;&gt;Node3</title>
 <g id="a_edge7_Node000003_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M508.75,-1816.28C520.6,-1807.05 533.75,-1797 546,-1788 570.23,-1770.21 596.94,-1752.5 623.04,-1736.11"/>
-<polygon fill="none" stroke="#63b8ff" points="622.83,-1736.24 625.81,-1729.67 633.02,-1729.89 630.04,-1736.46 622.83,-1736.24"/>
+<path fill="none" stroke="#63b8ff" d="M506.2,-1816.06C517.95,-1806.92 530.93,-1796.96 543,-1788 561.49,-1774.27 565.95,-1770.56 585.25,-1758 595.7,-1751.19 606.61,-1744.28 617.64,-1737.44"/>
+<polygon fill="none" stroke="#63b8ff" points="617.71,-1737.39 620.72,-1730.83 627.92,-1731.09 624.92,-1737.64 617.71,-1737.39"/>
 </a>
 </g>
-<text text-anchor="middle" x="627.71" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;optionsRepository</text>
+<text text-anchor="middle" x="627.62" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;optionsRepository</text>
 </g>
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
 <g id="a_Node000009"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="529.38,-2009 412.62,-2009 412.62,-1945 529.38,-1945 529.38,-2009"/>
-<text text-anchor="start" x="416.62" y="-1995.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Options,</text>
-<text text-anchor="start" x="454.5" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
-<text text-anchor="start" x="469.5" y="-1967.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="469.5" y="-1951.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="412.62,-1979 412.62,-1979 529.38,-1979 529.38,-1979 412.62,-1979"/>
-<polygon fill="#666666" stroke="#666666" points="412.62,-1963 412.62,-1963 529.38,-1963 529.38,-1963 412.62,-1963"/>
-<polygon fill="none" stroke="#666666" points="412.62,-1945 412.62,-2009 529.38,-2009 529.38,-1945 412.62,-1945"/>
+<polygon fill="white" stroke="none" points="526.38,-2009 409.62,-2009 409.62,-1945 526.38,-1945 526.38,-2009"/>
+<text text-anchor="start" x="413.62" y="-1995.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Options,</text>
+<text text-anchor="start" x="451.5" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
+<text text-anchor="start" x="466.5" y="-1967.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="466.5" y="-1951.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="409.62,-1979 409.62,-1979 526.38,-1979 526.38,-1979 409.62,-1979"/>
+<polygon fill="#666666" stroke="#666666" points="409.62,-1963 409.62,-1963 526.38,-1963 526.38,-1963 409.62,-1963"/>
+<polygon fill="none" stroke="#666666" points="409.62,-1945 409.62,-2009 526.38,-2009 526.38,-1945 409.62,-1945"/>
 </a>
 </g>
 </g>
@@ -364,8 +366,8 @@ var sectionId = 'dynsection-1';
 <g id="edge8_Node000008_Node000009" class="edge">
 <title>Node9&#45;&gt;Node8</title>
 <g id="a_edge8_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M470.67,-1933.82C470.53,-1916.2 470.37,-1896.11 470.24,-1879.9"/>
-<polygon fill="none" stroke="#63b8ff" points="467.17,-1933.77 470.75,-1943.74 474.17,-1933.72 467.17,-1933.77"/>
+<path fill="none" stroke="#63b8ff" d="M467.67,-1933.82C467.53,-1916.2 467.37,-1896.11 467.24,-1879.9"/>
+<polygon fill="none" stroke="#63b8ff" points="464.17,-1933.77 467.75,-1943.74 471.17,-1933.72 464.17,-1933.77"/>
 </a>
 </g>
 </g>
@@ -373,14 +375,14 @@ var sectionId = 'dynsection-1';
 <g id="Node000010" class="node">
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="687.25,-1880 554.75,-1880 554.75,-1816 687.25,-1816 687.25,-1880"/>
-<text text-anchor="start" x="558.75" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="585.38" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuRepository</text>
-<text text-anchor="start" x="619.5" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="619.5" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="554.75,-1850 554.75,-1850 687.25,-1850 687.25,-1850 554.75,-1850"/>
-<polygon fill="#666666" stroke="#666666" points="554.75,-1834 554.75,-1834 687.25,-1834 687.25,-1834 554.75,-1834"/>
-<polygon fill="none" stroke="#666666" points="554.75,-1816 554.75,-1880 687.25,-1880 687.25,-1816 554.75,-1816"/>
+<polygon fill="white" stroke="none" points="684.25,-1880 551.75,-1880 551.75,-1816 684.25,-1816 684.25,-1880"/>
+<text text-anchor="start" x="555.75" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="582.38" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuRepository</text>
+<text text-anchor="start" x="616.5" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="616.5" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="551.75,-1850 551.75,-1850 684.25,-1850 684.25,-1850 551.75,-1850"/>
+<polygon fill="#666666" stroke="#666666" points="551.75,-1834 551.75,-1834 684.25,-1834 684.25,-1834 551.75,-1834"/>
+<polygon fill="none" stroke="#666666" points="551.75,-1816 551.75,-1880 684.25,-1880 684.25,-1816 551.75,-1816"/>
 </a>
 </g>
 </g>
@@ -388,24 +390,24 @@ var sectionId = 'dynsection-1';
 <g id="edge9_Node000003_Node000010" class="edge">
 <title>Node10&#45;&gt;Node3</title>
 <g id="a_edge9_Node000003_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M643.64,-1816.05C656.97,-1797.83 674.6,-1773.73 692.1,-1749.82"/>
-<polygon fill="none" stroke="#63b8ff" points="691.96,-1750.01 692.27,-1742.8 699.04,-1740.32 698.73,-1747.53 691.96,-1750.01"/>
+<path fill="none" stroke="#63b8ff" d="M640.32,-1816.05C653.39,-1797.91 670.67,-1773.95 687.84,-1750.14"/>
+<polygon fill="none" stroke="#63b8ff" points="687.9,-1750.06 688.16,-1742.85 694.92,-1740.33 694.65,-1747.53 687.9,-1750.06"/>
 </a>
 </g>
-<text text-anchor="middle" x="720.8" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;menuRepository</text>
+<text text-anchor="middle" x="716.92" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;menuRepository</text>
 </g>
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
 <g id="a_Node000011"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="674.5,-2009 567.5,-2009 567.5,-1945 674.5,-1945 674.5,-2009"/>
-<text text-anchor="start" x="571.5" y="-1995.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Menu,</text>
-<text text-anchor="start" x="604.88" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Byte &gt;</text>
-<text text-anchor="start" x="619.5" y="-1967.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="619.5" y="-1951.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="567.5,-1979 567.5,-1979 674.5,-1979 674.5,-1979 567.5,-1979"/>
-<polygon fill="#666666" stroke="#666666" points="567.5,-1963 567.5,-1963 674.5,-1963 674.5,-1963 567.5,-1963"/>
-<polygon fill="none" stroke="#666666" points="567.5,-1945 567.5,-2009 674.5,-2009 674.5,-1945 567.5,-1945"/>
+<polygon fill="white" stroke="none" points="671.5,-2009 564.5,-2009 564.5,-1945 671.5,-1945 671.5,-2009"/>
+<text text-anchor="start" x="568.5" y="-1995.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Menu,</text>
+<text text-anchor="start" x="601.88" y="-1983.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Byte &gt;</text>
+<text text-anchor="start" x="616.5" y="-1967.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="616.5" y="-1951.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="564.5,-1979 564.5,-1979 671.5,-1979 671.5,-1979 564.5,-1979"/>
+<polygon fill="#666666" stroke="#666666" points="564.5,-1963 564.5,-1963 671.5,-1963 671.5,-1963 564.5,-1963"/>
+<polygon fill="none" stroke="#666666" points="564.5,-1945 564.5,-2009 671.5,-2009 671.5,-1945 564.5,-1945"/>
 </a>
 </g>
 </g>
@@ -413,8 +415,8 @@ var sectionId = 'dynsection-1';
 <g id="edge10_Node000010_Node000011" class="edge">
 <title>Node11&#45;&gt;Node10</title>
 <g id="a_edge10_Node000010_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M621,-1933.82C621,-1916.2 621,-1896.11 621,-1879.9"/>
-<polygon fill="none" stroke="#63b8ff" points="617.5,-1933.74 621,-1943.74 624.5,-1933.74 617.5,-1933.74"/>
+<path fill="none" stroke="#63b8ff" d="M618,-1933.82C618,-1916.2 618,-1896.11 618,-1879.9"/>
+<polygon fill="none" stroke="#63b8ff" points="614.5,-1933.74 618,-1943.74 621.5,-1933.74 614.5,-1933.74"/>
 </a>
 </g>
 </g>
@@ -422,19 +424,19 @@ var sectionId = 'dynsection-1';
 <g id="Node000012" class="node">
 <title>Node12</title>
 <g id="a_Node000012"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" target="_top" xlink:title="Mapper interface for converting between Player entity and PlayerDto data transfer object.">
-<polygon fill="white" stroke="none" points="914.5,-1900 705.5,-1900 705.5,-1796 914.5,-1796 914.5,-1900"/>
-<text text-anchor="start" x="709.5" y="-1886.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
-<text text-anchor="start" x="778.5" y="-1874.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPlayerMapper</text>
-<text text-anchor="start" x="808.5" y="-1858.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="724.44" y="-1842.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="749.38" y="-1842.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player mapPlayerDtoToPlayer</text>
-<text text-anchor="start" x="749.38" y="-1830.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerDto dto)</text>
-<text text-anchor="start" x="724.44" y="-1814.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="749.38" y="-1814.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto mapPlayerToDto</text>
-<text text-anchor="start" x="749.38" y="-1802.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Player player)</text>
-<polygon fill="#666666" stroke="#666666" points="705.5,-1870 705.5,-1870 914.5,-1870 914.5,-1870 705.5,-1870"/>
-<polygon fill="#666666" stroke="#666666" points="705.5,-1854 705.5,-1854 914.5,-1854 914.5,-1854 705.5,-1854"/>
-<polygon fill="none" stroke="#666666" points="705.5,-1796 705.5,-1900 914.5,-1900 914.5,-1796 705.5,-1796"/>
+<polygon fill="white" stroke="none" points="911.5,-1900 702.5,-1900 702.5,-1796 911.5,-1796 911.5,-1900"/>
+<text text-anchor="start" x="706.5" y="-1886.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
+<text text-anchor="start" x="775.5" y="-1874.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPlayerMapper</text>
+<text text-anchor="start" x="805.5" y="-1858.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="721.44" y="-1842.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="746.38" y="-1842.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player mapPlayerDtoToPlayer</text>
+<text text-anchor="start" x="746.38" y="-1830.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerDto dto)</text>
+<text text-anchor="start" x="721.44" y="-1814.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="746.38" y="-1814.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto mapPlayerToDto</text>
+<text text-anchor="start" x="746.38" y="-1802.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Player player)</text>
+<polygon fill="#666666" stroke="#666666" points="702.5,-1870 702.5,-1870 911.5,-1870 911.5,-1870 702.5,-1870"/>
+<polygon fill="#666666" stroke="#666666" points="702.5,-1854 702.5,-1854 911.5,-1854 911.5,-1854 702.5,-1854"/>
+<polygon fill="none" stroke="#666666" points="702.5,-1796 702.5,-1900 911.5,-1900 911.5,-1796 702.5,-1796"/>
 </a>
 </g>
 </g>
@@ -442,33 +444,33 @@ var sectionId = 'dynsection-1';
 <g id="edge11_Node000003_Node000012" class="edge">
 <title>Node12&#45;&gt;Node3</title>
 <g id="a_edge11_Node000003_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M796.6,-1796.08C793.05,-1782.6 789.1,-1767.6 785.15,-1752.57"/>
-<polygon fill="none" stroke="#63b8ff" points="785.12,-1752.46 779.73,-1747.67 782.07,-1740.85 787.46,-1745.64 785.12,-1752.46"/>
+<path fill="none" stroke="#63b8ff" d="M793.06,-1796.08C789.34,-1782.47 785.19,-1767.3 781.03,-1752.12"/>
+<polygon fill="none" stroke="#63b8ff" points="781.12,-1752.42 775.67,-1747.69 777.95,-1740.85 783.39,-1745.58 781.12,-1752.42"/>
 </a>
 </g>
-<text text-anchor="middle" x="821.73" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerMapper</text>
+<text text-anchor="middle" x="817.91" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerMapper</text>
 </g>
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
 <g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" target="_top" xlink:title="Spring component for validating objects using Jakarta Bean Validation.">
-<polygon fill="white" stroke="none" points="1105.5,-1908 932.5,-1908 932.5,-1788 1105.5,-1788 1105.5,-1908"/>
-<text text-anchor="start" x="936.5" y="-1894.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.exception.</text>
-<text text-anchor="start" x="984.12" y="-1882.5" font-family="Helvetica,sans-Serif" font-size="10.00">JakartaValidator</text>
-<text text-anchor="start" x="949.19" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="968.88" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Validator validator</text>
-<text text-anchor="start" x="949.19" y="-1850.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="968.88" y="-1850.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="947.69" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="968.88" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">JakartaValidator(Validator</text>
-<text text-anchor="start" x="968.88" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validator)</text>
-<text text-anchor="start" x="947.69" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="968.88" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T validateOr</text>
-<text text-anchor="start" x="968.88" y="-1794.5" font-family="Helvetica,sans-Serif" font-size="10.00">Throw(T obj)</text>
-<polygon fill="#666666" stroke="#666666" points="932.5,-1878 932.5,-1878 1105.5,-1878 1105.5,-1878 932.5,-1878"/>
-<polygon fill="#666666" stroke="#666666" points="932.5,-1846 932.5,-1846 966.88,-1846 966.88,-1846 932.5,-1846"/>
-<polygon fill="#666666" stroke="#666666" points="966.88,-1846 966.88,-1846 1105.5,-1846 1105.5,-1846 966.88,-1846"/>
-<polygon fill="none" stroke="#666666" points="932.5,-1788 932.5,-1908 1105.5,-1908 1105.5,-1788 932.5,-1788"/>
+<polygon fill="white" stroke="none" points="1102.5,-1908 929.5,-1908 929.5,-1788 1102.5,-1788 1102.5,-1908"/>
+<text text-anchor="start" x="933.5" y="-1894.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.exception.</text>
+<text text-anchor="start" x="981.12" y="-1882.5" font-family="Helvetica,sans-Serif" font-size="10.00">JakartaValidator</text>
+<text text-anchor="start" x="946.19" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="965.88" y="-1866.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Validator validator</text>
+<text text-anchor="start" x="946.19" y="-1850.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="965.88" y="-1850.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="944.69" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="965.88" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">JakartaValidator(Validator</text>
+<text text-anchor="start" x="965.88" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00"> validator)</text>
+<text text-anchor="start" x="944.69" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="965.88" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T validateOr</text>
+<text text-anchor="start" x="965.88" y="-1794.5" font-family="Helvetica,sans-Serif" font-size="10.00">Throw(T obj)</text>
+<polygon fill="#666666" stroke="#666666" points="929.5,-1878 929.5,-1878 1102.5,-1878 1102.5,-1878 929.5,-1878"/>
+<polygon fill="#666666" stroke="#666666" points="929.5,-1846 929.5,-1846 963.88,-1846 963.88,-1846 929.5,-1846"/>
+<polygon fill="#666666" stroke="#666666" points="963.88,-1846 963.88,-1846 1102.5,-1846 1102.5,-1846 963.88,-1846"/>
+<polygon fill="none" stroke="#666666" points="929.5,-1788 929.5,-1908 1102.5,-1908 1102.5,-1788 929.5,-1788"/>
 </a>
 </g>
 </g>
@@ -476,75 +478,75 @@ var sectionId = 'dynsection-1';
 <g id="edge12_Node000003_Node000013" class="edge">
 <title>Node13&#45;&gt;Node3</title>
 <g id="a_edge12_Node000003_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M938.82,-1788.18C921.28,-1775.31 902.31,-1761.39 883.5,-1747.6"/>
-<polygon fill="none" stroke="#63b8ff" points="883.49,-1747.59 876.28,-1747.27 873.81,-1740.49 881.02,-1740.82 883.49,-1747.59"/>
+<path fill="none" stroke="#63b8ff" d="M935.21,-1788.18C917.52,-1775.31 898.4,-1761.39 879.46,-1747.6"/>
+<polygon fill="none" stroke="#63b8ff" points="879.39,-1747.55 872.18,-1747.25 869.69,-1740.49 876.89,-1740.79 879.39,-1747.55"/>
 </a>
 </g>
-<text text-anchor="middle" x="949.07" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;jakartaValidator</text>
+<text text-anchor="middle" x="945.25" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;jakartaValidator</text>
 </g>
 <!-- Node14&#45;&gt;Node2 -->
 <g id="edge13_Node000002_Node000014" class="edge">
 <title>Node14&#45;&gt;Node2</title>
 <g id="a_edge13_Node000002_Node000014"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M653.78,-1172.16C653.79,-1111.77 654.12,-1030.06 655.5,-958 656.57,-901.98 658.8,-838.15 660.54,-792.82"/>
-<polygon fill="none" stroke="#63b8ff" points="660.54,-792.85 656.78,-786.7 661.01,-780.86 664.77,-787.01 660.54,-792.85"/>
+<path fill="none" stroke="#63b8ff" d="M650.88,-1172.03C655.44,-1067.19 662.93,-895.32 667.05,-800.72"/>
+<polygon fill="none" stroke="#63b8ff" points="667.05,-800.79 663.31,-794.62 667.57,-788.8 671.3,-794.97 667.05,-800.79"/>
 </a>
 </g>
-<text text-anchor="middle" x="707.25" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #playerStateHolderSpy</text>
+<text text-anchor="middle" x="703" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> #playerStateHolder</text>
 </g>
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
 <g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html" target="_top" xlink:title="ViewModel component managing a 9x9 Sudoku grid.">
-<polygon fill="white" stroke="none" points="564.38,-940 341.62,-940 341.62,-524 564.38,-524 564.38,-940"/>
-<text text-anchor="start" x="379.12" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
-<text text-anchor="start" x="420" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel</text>
-<text text-anchor="start" x="347.12" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="355.62" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">final List&lt; GridCellView</text>
-<text text-anchor="start" x="355.62" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">Model &gt; cellViewModels</text>
-<text text-anchor="start" x="347.12" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="355.62" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IGridMaster iGridMaster</text>
-<text text-anchor="start" x="347.12" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="355.62" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int GRID_SIZE</text>
-<text text-anchor="start" x="347.12" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="355.62" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="347.12" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="355.62" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int TOTAL</text>
-<text text-anchor="start" x="355.62" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">_CELLS</text>
-<text text-anchor="start" x="345.62" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="355.62" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel(IGridMaster</text>
-<text text-anchor="start" x="355.62" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iGridMaster, ActiveMenuOrSubmenu</text>
-<text text-anchor="start" x="355.62" y="-770.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel activeMenuOrSubmenuViewModel,</text>
-<text text-anchor="start" x="355.62" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00"> AudioService audioService, PlayerStateHolder</text>
-<text text-anchor="start" x="355.62" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerStateHolder)</text>
-<text text-anchor="start" x="345.62" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="355.62" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">int applyLevel(Difficulty</text>
-<text text-anchor="start" x="355.62" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00">Level level)</text>
-<text text-anchor="start" x="345.62" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="355.62" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">void clearGrid()</text>
-<text text-anchor="start" x="345.62" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="355.62" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; String &gt; getAllValues()</text>
-<text text-anchor="start" x="345.62" y="-670.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="355.62" y="-670.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; GridCellViewModel</text>
-<text text-anchor="start" x="355.62" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getCellViewModelById</text>
-<text text-anchor="start" x="355.62" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int id)</text>
-<text text-anchor="start" x="345.62" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="355.62" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; GridCellViewModel</text>
-<text text-anchor="start" x="355.62" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getCellViewModels()</text>
-<text text-anchor="start" x="345.62" y="-602.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="355.62" y="-602.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(ToasterVBox</text>
-<text text-anchor="start" x="355.62" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toaster)</text>
-<text text-anchor="start" x="345.62" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="355.62" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setValues(List</text>
-<text text-anchor="start" x="355.62" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; String &gt; values)</text>
-<text text-anchor="start" x="347.12" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="355.62" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isCompletelyCompleted()</text>
-<text text-anchor="start" x="347.12" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="355.62" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">void verifyGrid()</text>
-<polygon fill="#666666" stroke="#666666" points="341.62,-910 341.62,-910 564.38,-910 564.38,-910 341.62,-910"/>
-<polygon fill="#666666" stroke="#666666" points="341.62,-806 341.62,-806 353.62,-806 353.62,-806 341.62,-806"/>
-<polygon fill="#666666" stroke="#666666" points="353.62,-806 353.62,-806 564.38,-806 564.38,-806 353.62,-806"/>
-<polygon fill="none" stroke="#666666" points="341.62,-524 341.62,-940 564.38,-940 564.38,-524 341.62,-524"/>
+<polygon fill="white" stroke="none" points="571.38,-940 348.62,-940 348.62,-524 571.38,-524 571.38,-940"/>
+<text text-anchor="start" x="386.12" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
+<text text-anchor="start" x="427" y="-914.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel</text>
+<text text-anchor="start" x="354.12" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="362.62" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">final List&lt; GridCellView</text>
+<text text-anchor="start" x="362.62" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">Model &gt; cellViewModels</text>
+<text text-anchor="start" x="354.12" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="362.62" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IGridMaster iGridMaster</text>
+<text text-anchor="start" x="354.12" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="362.62" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int GRID_SIZE</text>
+<text text-anchor="start" x="354.12" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="362.62" y="-838.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="354.12" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="362.62" y="-822.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int TOTAL</text>
+<text text-anchor="start" x="362.62" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">_CELLS</text>
+<text text-anchor="start" x="352.62" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="362.62" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel(IGridMaster</text>
+<text text-anchor="start" x="362.62" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iGridMaster, ActiveMenuOrSubmenu</text>
+<text text-anchor="start" x="362.62" y="-770.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel activeMenuOrSubmenuViewModel,</text>
+<text text-anchor="start" x="362.62" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00"> AudioService audioService, PlayerStateHolder</text>
+<text text-anchor="start" x="362.62" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00"> playerStateHolder)</text>
+<text text-anchor="start" x="352.62" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="362.62" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">int applyLevel(Difficulty</text>
+<text text-anchor="start" x="362.62" y="-718.5" font-family="Helvetica,sans-Serif" font-size="10.00">Level level)</text>
+<text text-anchor="start" x="352.62" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="362.62" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">void clearGrid()</text>
+<text text-anchor="start" x="352.62" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="362.62" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; String &gt; getAllValues()</text>
+<text text-anchor="start" x="352.62" y="-670.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="362.62" y="-670.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; GridCellViewModel</text>
+<text text-anchor="start" x="362.62" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getCellViewModelById</text>
+<text text-anchor="start" x="362.62" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int id)</text>
+<text text-anchor="start" x="352.62" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="362.62" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">List&lt; GridCellViewModel</text>
+<text text-anchor="start" x="362.62" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getCellViewModels()</text>
+<text text-anchor="start" x="352.62" y="-602.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="362.62" y="-602.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(ToasterVBox</text>
+<text text-anchor="start" x="362.62" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00"> toaster)</text>
+<text text-anchor="start" x="352.62" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="362.62" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setValues(List</text>
+<text text-anchor="start" x="362.62" y="-562.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; String &gt; values)</text>
+<text text-anchor="start" x="354.12" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="362.62" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isCompletelyCompleted()</text>
+<text text-anchor="start" x="354.12" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="362.62" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">void verifyGrid()</text>
+<polygon fill="#666666" stroke="#666666" points="348.62,-910 348.62,-910 571.38,-910 571.38,-910 348.62,-910"/>
+<polygon fill="#666666" stroke="#666666" points="348.62,-806 348.62,-806 360.62,-806 360.62,-806 348.62,-806"/>
+<polygon fill="#666666" stroke="#666666" points="360.62,-806 360.62,-806 571.38,-806 571.38,-806 360.62,-806"/>
+<polygon fill="none" stroke="#666666" points="348.62,-524 348.62,-940 571.38,-940 571.38,-524 348.62,-524"/>
 </a>
 </g>
 </g>
@@ -552,21 +554,21 @@ var sectionId = 'dynsection-1';
 <g id="edge18_Node000015_Node000014" class="edge">
 <title>Node14&#45;&gt;Node15</title>
 <g id="a_edge18_Node000015_Node000014"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M621.34,-1172.08C602.69,-1121.55 578.75,-1057.15 557,-1000 551.02,-984.29 544.81,-968.07 538.53,-951.75"/>
-<polygon fill="none" stroke="#63b8ff" points="538.58,-951.9 532.69,-947.74 534.27,-940.7 540.16,-944.86 538.58,-951.9"/>
+<path fill="none" stroke="#63b8ff" d="M616.74,-1172.08C599.45,-1121.56 577.24,-1057.16 557,-1000 551.44,-984.29 545.65,-968.07 539.8,-951.76"/>
+<polygon fill="none" stroke="#63b8ff" points="539.89,-952.01 534.1,-947.71 535.84,-940.71 541.63,-945.01 539.89,-952.01"/>
 </a>
 </g>
-<text text-anchor="middle" x="590.72" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerStateHolder</text>
+<text text-anchor="middle" x="591.29" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;playerStateHolder</text>
 </g>
 <!-- Node15&#45;&gt;Node1 -->
 <g id="edge15_Node000001_Node000015" class="edge">
 <title>Node15&#45;&gt;Node1</title>
 <g id="a_edge15_Node000001_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M497.15,-524.13C499.69,-512.23 502.25,-500.21 504.82,-488.18"/>
-<polygon fill="none" stroke="#63b8ff" points="504.81,-488.26 502.15,-481.55 507.31,-476.52 509.97,-483.22 504.81,-488.26"/>
+<path fill="none" stroke="#63b8ff" d="M504.15,-524.13C506.69,-512.23 509.25,-500.21 511.82,-488.18"/>
+<polygon fill="none" stroke="#63b8ff" points="511.81,-488.26 509.15,-481.55 514.31,-476.52 516.97,-483.22 511.81,-488.26"/>
 </a>
 </g>
-<text text-anchor="middle" x="528.6" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;viewModel</text>
+<text text-anchor="middle" x="535.6" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;viewModel</text>
 </g>
 <!-- Node16 -->
 <g id="Node000016" class="node">
@@ -595,12 +597,12 @@ var sectionId = 'dynsection-1';
 <g id="edge16_Node000015_Node000016" class="edge">
 <title>Node16&#45;&gt;Node15</title>
 <g id="a_edge16_Node000015_Node000016"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M291.73,-1204.02C292.97,-1142.03 299.49,-1040.73 326.25,-958 329.36,-948.37 332.91,-938.69 336.8,-929.04"/>
-<polygon fill="none" stroke="#63b8ff" points="336.73,-929.2 335.35,-922.13 341.35,-918.13 342.73,-925.21 336.73,-929.2"/>
+<path fill="none" stroke="#63b8ff" d="M292.51,-1204.23C294.59,-1142.21 302.46,-1040.67 330.25,-958 334.09,-946.58 338.54,-935.09 343.43,-923.68"/>
+<polygon fill="none" stroke="#63b8ff" points="343.46,-923.61 342.24,-916.5 348.32,-912.64 349.55,-919.74 343.46,-923.61"/>
 </a>
 </g>
-<text text-anchor="start" x="326.25" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;activeMenuOrSubmenuView</text>
-<text text-anchor="middle" x="391.12" y="-960.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">Model</text>
+<text text-anchor="start" x="330.25" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;activeMenuOrSubmenuView</text>
+<text text-anchor="middle" x="395.12" y="-960.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">Model</text>
 </g>
 <!-- Node17 -->
 <g id="Node000017" class="node">
@@ -665,11 +667,11 @@ var sectionId = 'dynsection-1';
 <g id="edge17_Node000015_Node000017" class="edge">
 <title>Node17&#45;&gt;Node15</title>
 <g id="a_edge17_Node000015_Node000017"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M462.43,-1044.34C461.52,-1014.08 460.57,-982.96 459.66,-952.65"/>
-<polygon fill="none" stroke="#63b8ff" points="459.65,-952.61 455.47,-946.73 459.29,-940.62 463.47,-946.49 459.65,-952.61"/>
+<path fill="none" stroke="#63b8ff" d="M465.31,-1044.34C464.79,-1014.08 464.26,-982.96 463.74,-952.65"/>
+<polygon fill="none" stroke="#63b8ff" points="463.74,-952.61 459.64,-946.68 463.54,-940.62 467.64,-946.55 463.74,-952.61"/>
 </a>
 </g>
-<text text-anchor="middle" x="491.65" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;audioService</text>
+<text text-anchor="middle" x="495.36" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;audioService</text>
 </g>
 <!-- Node18 -->
 <g id="Node000018" class="node">
@@ -738,23 +740,23 @@ var sectionId = 'dynsection-1';
 <g id="edge19_Node000015_Node000018" class="edge">
 <title>Node18&#45;&gt;Node15</title>
 <g id="a_edge19_Node000015_Node000018"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M193.89,-1014.82C196.87,-1009.79 199.9,-1004.84 203,-1000 239.02,-943.7 287.68,-888.56 332.49,-843.15"/>
-<polygon fill="none" stroke="#63b8ff" points="332.6,-843.05 333.99,-835.97 341.06,-834.54 339.66,-841.62 332.6,-843.05"/>
+<path fill="none" stroke="#63b8ff" d="M193.99,-1014.44C196.93,-1009.54 199.94,-1004.72 203,-1000 240.78,-941.83 292.33,-885.3 339.33,-839.35"/>
+<polygon fill="none" stroke="#63b8ff" points="339.41,-839.28 340.93,-832.23 348.02,-830.93 346.5,-837.97 339.41,-839.28"/>
 </a>
 </g>
-<text text-anchor="middle" x="249.29" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toaster</text>
+<text text-anchor="middle" x="250" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toaster</text>
 </g>
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
 <g id="a_Node000019"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="63,-1682 31,-1682 31,-1630 63,-1630 63,-1682"/>
-<text text-anchor="start" x="35" y="-1668.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox</text>
-<text text-anchor="start" x="45.5" y="-1652.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="45.5" y="-1636.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="31,-1664 31,-1664 63,-1664 63,-1664 31,-1664"/>
-<polygon fill="#666666" stroke="#666666" points="31,-1648 31,-1648 63,-1648 63,-1648 31,-1648"/>
-<polygon fill="none" stroke="#666666" points="31,-1630 31,-1682 63,-1682 63,-1630 31,-1630"/>
+<polygon fill="white" stroke="none" points="61,-1682 29,-1682 29,-1630 61,-1630 61,-1682"/>
+<text text-anchor="start" x="33" y="-1668.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox</text>
+<text text-anchor="start" x="43.5" y="-1652.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="43.5" y="-1636.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="29,-1664 29,-1664 61,-1664 61,-1664 29,-1664"/>
+<polygon fill="#666666" stroke="#666666" points="29,-1648 29,-1648 61,-1648 61,-1648 29,-1648"/>
+<polygon fill="none" stroke="#666666" points="29,-1630 29,-1682 61,-1682 61,-1630 29,-1630"/>
 </a>
 </g>
 </g>
@@ -762,8 +764,8 @@ var sectionId = 'dynsection-1';
 <g id="edge20_Node000018_Node000019" class="edge">
 <title>Node19&#45;&gt;Node18</title>
 <g id="a_edge20_Node000018_Node000019"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M51.6,-1618.91C54.66,-1594.94 58.98,-1561.08 63.75,-1523.68"/>
-<polygon fill="none" stroke="#63b8ff" points="48.15,-1618.32 50.36,-1628.68 55.09,-1619.2 48.15,-1618.32"/>
+<path fill="none" stroke="#63b8ff" d="M49.79,-1618.91C52.97,-1594.94 57.46,-1561.08 62.42,-1523.68"/>
+<polygon fill="none" stroke="#63b8ff" points="46.34,-1618.31 48.49,-1628.68 53.28,-1619.23 46.34,-1618.31"/>
 </a>
 </g>
 </g>
@@ -771,23 +773,23 @@ var sectionId = 'dynsection-1';
 <g id="Node000020" class="node">
 <title>Node20</title>
 <g id="a_Node000020"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html" target="_top" xlink:title="A custom button with a display text and a full detail text.">
-<polygon fill="white" stroke="none" points="275,-1716 81,-1716 81,-1596 275,-1596 275,-1716"/>
-<text text-anchor="start" x="85" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
-<text text-anchor="start" x="147.62" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterButton</text>
-<text text-anchor="start" x="102" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="126" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">String fullDetailText</text>
-<text text-anchor="start" x="100.5" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="126" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterButton(String</text>
-<text text-anchor="start" x="126" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00"> text, String fullDetailText)</text>
-<text text-anchor="start" x="100.5" y="-1630.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="126" y="-1630.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getFullDetailText()</text>
-<text text-anchor="start" x="100.5" y="-1614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="126" y="-1614.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setFullDetailText</text>
-<text text-anchor="start" x="126" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String fullDetailText)</text>
-<polygon fill="#666666" stroke="#666666" points="81,-1686 81,-1686 275,-1686 275,-1686 81,-1686"/>
-<polygon fill="#666666" stroke="#666666" points="81,-1670 81,-1670 124,-1670 124,-1670 81,-1670"/>
-<polygon fill="#666666" stroke="#666666" points="124,-1670 124,-1670 275,-1670 275,-1670 124,-1670"/>
-<polygon fill="none" stroke="#666666" points="81,-1596 81,-1716 275,-1716 275,-1596 81,-1596"/>
+<polygon fill="white" stroke="none" points="273,-1716 79,-1716 79,-1596 273,-1596 273,-1716"/>
+<text text-anchor="start" x="83" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.toaster.</text>
+<text text-anchor="start" x="145.62" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterButton</text>
+<text text-anchor="start" x="100" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="124" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">String fullDetailText</text>
+<text text-anchor="start" x="98.5" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="124" y="-1658.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterButton(String</text>
+<text text-anchor="start" x="124" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00"> text, String fullDetailText)</text>
+<text text-anchor="start" x="98.5" y="-1630.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="124" y="-1630.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getFullDetailText()</text>
+<text text-anchor="start" x="98.5" y="-1614.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="124" y="-1614.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setFullDetailText</text>
+<text text-anchor="start" x="124" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String fullDetailText)</text>
+<polygon fill="#666666" stroke="#666666" points="79,-1686 79,-1686 273,-1686 273,-1686 79,-1686"/>
+<polygon fill="#666666" stroke="#666666" points="79,-1670 79,-1670 122,-1670 122,-1670 79,-1670"/>
+<polygon fill="#666666" stroke="#666666" points="122,-1670 122,-1670 273,-1670 273,-1670 122,-1670"/>
+<polygon fill="none" stroke="#666666" points="79,-1596 79,-1716 273,-1716 273,-1596 79,-1596"/>
 </a>
 </g>
 </g>
@@ -795,23 +797,23 @@ var sectionId = 'dynsection-1';
 <g id="edge21_Node000018_Node000020" class="edge">
 <title>Node20&#45;&gt;Node18</title>
 <g id="a_edge21_Node000018_Node000020"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M165.87,-1596.31C162.26,-1578.82 158.04,-1558.4 153.5,-1536.44"/>
-<polygon fill="none" stroke="#63b8ff" points="153.48,-1536.35 148.35,-1531.28 151.05,-1524.59 156.19,-1529.66 153.48,-1536.35"/>
+<path fill="none" stroke="#63b8ff" d="M164.17,-1596.31C160.65,-1578.82 156.53,-1558.4 152.11,-1536.44"/>
+<polygon fill="none" stroke="#63b8ff" points="152.09,-1536.36 146.98,-1531.27 149.72,-1524.59 154.83,-1529.69 152.09,-1536.36"/>
 </a>
 </g>
-<text text-anchor="middle" x="170.15" y="-1544.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toast</text>
+<text text-anchor="middle" x="168.69" y="-1544.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;toast</text>
 </g>
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
 <g id="a_Node000021"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="196.25,-1874 159.75,-1874 159.75,-1822 196.25,-1822 196.25,-1874"/>
-<text text-anchor="start" x="163.75" y="-1860.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button</text>
-<text text-anchor="start" x="176.5" y="-1844.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="176.5" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="159.75,-1856 159.75,-1856 196.25,-1856 196.25,-1856 159.75,-1856"/>
-<polygon fill="#666666" stroke="#666666" points="159.75,-1840 159.75,-1840 196.25,-1840 196.25,-1840 159.75,-1840"/>
-<polygon fill="none" stroke="#666666" points="159.75,-1822 159.75,-1874 196.25,-1874 196.25,-1822 159.75,-1822"/>
+<polygon fill="white" stroke="none" points="194.25,-1874 157.75,-1874 157.75,-1822 194.25,-1822 194.25,-1874"/>
+<text text-anchor="start" x="161.75" y="-1860.5" font-family="Helvetica,sans-Serif" font-size="10.00">Button</text>
+<text text-anchor="start" x="174.5" y="-1844.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="174.5" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="157.75,-1856 157.75,-1856 194.25,-1856 194.25,-1856 157.75,-1856"/>
+<polygon fill="#666666" stroke="#666666" points="157.75,-1840 157.75,-1840 194.25,-1840 194.25,-1840 157.75,-1840"/>
+<polygon fill="none" stroke="#666666" points="157.75,-1822 157.75,-1874 194.25,-1874 194.25,-1822 157.75,-1822"/>
 </a>
 </g>
 </g>
@@ -819,8 +821,8 @@ var sectionId = 'dynsection-1';
 <g id="edge22_Node000020_Node000021" class="edge">
 <title>Node21&#45;&gt;Node20</title>
 <g id="a_edge22_Node000020_Node000021"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M178,-1810.99C178,-1784.15 178,-1746.94 178,-1715.81"/>
-<polygon fill="none" stroke="#63b8ff" points="174.5,-1810.65 178,-1820.65 181.5,-1810.65 174.5,-1810.65"/>
+<path fill="none" stroke="#63b8ff" d="M176,-1810.99C176,-1784.15 176,-1746.94 176,-1715.81"/>
+<polygon fill="none" stroke="#63b8ff" points="172.5,-1810.65 176,-1820.65 179.5,-1810.65 172.5,-1810.65"/>
 </a>
 </g>
 </g>
