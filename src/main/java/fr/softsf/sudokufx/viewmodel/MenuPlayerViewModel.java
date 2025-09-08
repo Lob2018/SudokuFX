@@ -179,9 +179,10 @@ public class MenuPlayerViewModel {
 
     /** Sets the selected player to the one marked as selected or first in the list. */
     private void setSelectedPlayer() {
-        if (!players.isEmpty()) {
-            playerStateHolder.currentPlayerProperty().set(playerStateHolder.getCurrentPlayer());
+        if (players.isEmpty()) {
+            return;
         }
+        playerStateHolder.currentPlayerProperty().set(playerStateHolder.getCurrentPlayer());
     }
 
     /**

@@ -145,13 +145,13 @@ public class MenuSaveViewModel {
      * if none are selected.
      */
     private void setSelectedBackup() {
-        if (!backups.isEmpty()) {
-            backups.stream()
-                    .filter(GameDto::isselected)
-                    .findFirst()
-                    .ifPresentOrElse(
-                            selectedBackup::set, () -> selectedBackup.set(backups.getFirst()));
+        if (backups.isEmpty()) {
+            return;
         }
+        backups.stream()
+                .filter(GameDto::isselected)
+                .findFirst()
+                .ifPresentOrElse(selectedBackup::set, () -> selectedBackup.set(backups.getFirst()));
     }
 
     /**

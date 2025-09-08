@@ -152,10 +152,11 @@ public class GridCellViewModel {
      */
     private void updateLabelFontSizeAndBorderOnTextChange(String newText) {
         if (newText != null && newText.replace("\n", "").length() == 1) {
-            if (!label.getStyleClass().contains(SUDOKU_FX_GRID_CELL_LARGE_FONT)) {
-                label.getStyleClass().add(SUDOKU_FX_GRID_CELL_LARGE_FONT);
-                label.setStyle(getBorderStyle(label.getText().length(), false));
+            if (label.getStyleClass().contains(SUDOKU_FX_GRID_CELL_LARGE_FONT)) {
+                return;
             }
+            label.getStyleClass().add(SUDOKU_FX_GRID_CELL_LARGE_FONT);
+            label.setStyle(getBorderStyle(label.getText().length(), false));
         } else {
             label.getStyleClass().remove(SUDOKU_FX_GRID_CELL_LARGE_FONT);
             label.setStyle(getBorderStyle(label.getText().length(), false));
@@ -174,9 +175,10 @@ public class GridCellViewModel {
         String toAdd = isEditable ? SUDOKU_FX_GRID_CELL : SUDOKU_FX_GRID_CELL_NON_EDITABLE;
         for (Region node : List.of(label, textArea)) {
             node.getStyleClass().remove(toRemove);
-            if (!node.getStyleClass().contains(toAdd)) {
-                node.getStyleClass().add(toAdd);
+            if (node.getStyleClass().contains(toAdd)) {
+                continue;
             }
+            node.getStyleClass().add(toAdd);
         }
     }
 
