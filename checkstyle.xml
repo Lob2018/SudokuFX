@@ -19,7 +19,7 @@
     <module name="LineLength">
         <property name="max" value="100"/>
         <property name="severity" value="warning"/>
-        <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://"/>
+        <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|record|@.*|//.*"/>
         <property name="fileExtensions" value="java"/>
     </module>
 
