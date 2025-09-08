@@ -106,10 +106,10 @@
     </module>
 
     <!-- ==== NEGATION OPERATOR CHECK ==== -->
-    <!-- Prohibit '!' in if / else if conditions -->
+    <!-- Prohibit '!' (excluding !=) in if / else if conditions -->
     <module name="RegexpSingleline">
-        <property name="format" value="^\s*(if|else\s+if)\s*\(\s*!"/>
-        <property name="message" value="Avoid using negation operator '!' in if/else-if conditions; prefer positive logic."/>
+        <property name="format" value="^\s*(if|else\s+if)\s*\([^)]*!(?!=)[^)]*\)"/>
+        <property name="message" value="Avoid using negation operator '!' in if/else-if conditions; prefer positive logic if possible."/>
         <property name="severity" value="warning"/>
     </module>
 </module>
