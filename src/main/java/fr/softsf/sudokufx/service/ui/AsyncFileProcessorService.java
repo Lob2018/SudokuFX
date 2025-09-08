@@ -67,7 +67,7 @@ public class AsyncFileProcessorService {
                 new Task<>() {
                     @Override
                     protected T call() throws Exception {
-                        return taskFunction.apply(selectedFile); // propagate exception if any
+                        return taskFunction.apply(selectedFile);
                     }
                 };
         Consumer<Runnable> finishTask =
