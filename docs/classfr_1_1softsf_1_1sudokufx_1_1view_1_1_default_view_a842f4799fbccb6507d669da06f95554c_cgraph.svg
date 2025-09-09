@@ -18,7 +18,7 @@
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 48)">
-<title>fr.softsf.sudokufx.view.MainView.activeMenuManagerInitialization</title>
+<title>fr.softsf.sudokufx.view.main.MainView.activeMenuManagerInitialization</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>

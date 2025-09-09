@@ -54,7 +54,7 @@ var sectionId = 'dynsection-0';
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
 <g id="viewport">
-<title>fr.softsf.sudokufx.view.MainView</title>
+<title>fr.softsf.sudokufx.view.main.MainView</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>

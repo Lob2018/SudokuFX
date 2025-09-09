@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.MainView.playerMenuInitialization" name="fr.softsf.sudokufx.view.MainView.playerMenuInitialization">
+<map id="fr.softsf.sudokufx.view.main.MainView.playerMenuInitialization" name="fr.softsf.sudokufx.view.main.MainView.playerMenuInitialization">
 <area shape="rect" id="Node000001" title="Initializes bindings and event listeners for the player menu components." alt="" coords="5,5,237,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a9b219ba0d98d4df2edb74918b2766d16" title="Sets up a rounded clip for a ListView." alt="" coords="285,5,485,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,24,269,24,269,29,237,29"/>

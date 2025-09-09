@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.MainView.openingMainStage" name="fr.softsf.sudokufx.view.MainView.openingMainStage">
+<map id="fr.softsf.sudokufx.view.main.MainView.openingMainStage" name="fr.softsf.sudokufx.view.main.MainView.openingMainStage">
 <area shape="rect" id="Node000001" title="Opens the main stage and handles the transition from splash screen to full menu." alt="" coords="5,139,208,181"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html#a476806b0f70dd654a23c0fbd0678d38f" title="Hides and closes the splash screen." alt="" coords="272,5,515,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,136,187,96,255,58,271,51,273,56,257,62,190,100,135,140"/>

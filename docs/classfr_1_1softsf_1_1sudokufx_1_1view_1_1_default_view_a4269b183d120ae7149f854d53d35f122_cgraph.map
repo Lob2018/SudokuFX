@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.MainView.openingConfigureStage" name="fr.softsf.sudokufx.view.MainView.openingConfigureStage">
+<map id="fr.softsf.sudokufx.view.main.MainView.openingConfigureStage" name="fr.softsf.sudokufx.view.main.MainView.openingConfigureStage">
 <area shape="rect" id="Node000001" title="Configures the primary stage for the full menu view." alt="" coords="5,5,236,48"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1interfaces_1_1_i_scene_provider.html#a674fc3569255ae7b6d2f34989574aacb" title="Retrieves the current scene of the application." alt="" coords="284,5,472,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,24,268,24,268,29,236,29"/>
