@@ -251,6 +251,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 │   ├── external        // integration with external APIs or systems
 │   └── ui              // services interacting with the UI (audio, file processing, etc.)
 ├── view                // UI views and components
+│   ├── main            // MainView and its related subviews
 │   └── component       // reusable UI components
 │       ├── list        // list components
 │       └── toaster     // toaster notifications
