@@ -72,12 +72,12 @@ import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 
 /**
- * Default view class of the Sudoku application. This class is responsible for displaying and
- * managing the UI.
+ * Main view class of the Sudoku application. This class is responsible for displaying and managing
+ * the UI.
  */
-public final class DefaultView implements IMainView {
+public final class MainView implements IMainView {
 
-    private static final Logger LOG = LoggerFactory.getLogger(DefaultView.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MainView.class);
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
     private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
@@ -206,7 +206,7 @@ public final class DefaultView implements IMainView {
     private Timeline hideMiniMenuTimeline;
 
     /**
-     * Initializes the default view. This method is automatically called by JavaFX after loading the
+     * Initializes the main view. This method is automatically called by JavaFX after loading the
      * FXML.
      */
     @FXML
@@ -261,7 +261,7 @@ public final class DefaultView implements IMainView {
                                 }
                             } catch (Exception e) {
                                 LOG.error(
-                                        "██ DefaultView > handleMenuMiniShow exception occurred:"
+                                        "██ MainView > handleMenuMiniShow exception occurred:"
                                                 + " {}",
                                         e.getMessage(),
                                         e);

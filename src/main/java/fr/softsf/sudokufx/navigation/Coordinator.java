@@ -33,6 +33,7 @@ import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_UR
 public class Coordinator {
 
     private static final Logger LOG = LoggerFactory.getLogger(Coordinator.class);
+    public static final String FXML_EXTENSION = ".fxml";
 
     /** The main JavaFX scene managed by this coordinator. */
     private Scene defaultScene;
@@ -113,7 +114,7 @@ public class Coordinator {
     public <T> T setRootByFXMLName(final String fxml) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 fxml, "Fxml must not be null or blank, but was " + fxml);
-        String path = Paths.RESOURCES_FXML_PATH.getPath() + fxml + ".fxml";
+        String path = Paths.RESOURCES_FXML_PATH.getPath() + fxml + FXML_EXTENSION;
         try {
             fxmlLoader.setRoot(null);
             fxmlLoader.setController(null);

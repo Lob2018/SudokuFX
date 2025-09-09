@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.DefaultView.bindLevel" name="fr.softsf.sudokufx.view.DefaultView.bindLevel">
+<map id="fr.softsf.sudokufx.view.MainView.bindLevel" name="fr.softsf.sudokufx.view.MainView.bindLevel">
 <area shape="rect" id="Node000001" title="Binds UI components for a difficulty&#45;level toggle in both the maxi and mini menus." alt="" coords="5,5,163,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1components_1_1_possibility_stars_h_box.html#a1b3c68f479c79fd4b696a0accebbb014" title=" " alt="" coords="211,5,444,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,24,195,24,195,29,163,29"/>

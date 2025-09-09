@@ -1,4 +1,4 @@
-<map id="fr.softsf.sudokufx.view.DefaultView.initialize" name="fr.softsf.sudokufx.view.DefaultView.initialize">
+<map id="fr.softsf.sudokufx.view.MainView.initialize" name="fr.softsf.sudokufx.view.MainView.initialize">
 <area shape="rect" id="Node000001" title="Initializes the default view." alt="" coords="5,437,163,480"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a842f4799fbccb6507d669da06f95554c" title="Initializes bindings between each menu pane&#39;s visibility and managed state and the corresponding valu..." alt="" coords="236,5,448,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,437,89,368,107,271,123,218,145,166,173,117,209,74,221,64,224,68,213,78,178,120,150,168,128,220,113,272,94,368,89,437"/>

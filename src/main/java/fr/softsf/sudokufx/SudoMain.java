@@ -53,6 +53,8 @@ public class SudoMain extends Application {
 
     private static final Logger LOG = LoggerFactory.getLogger(SudoMain.class);
     private static final long MINIMUM_TRANSITION_DELAY_MS = 1000L;
+    public static final String MAIN_VIEW_FXML_NAME = "main-view";
+    public static final String CRASH_SCREEN_VIEW = "crash-screen-view";
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
@@ -158,7 +160,7 @@ public class SudoMain extends Application {
                     Math.max(
                             0,
                             MINIMUM_TRANSITION_DELAY_MS - (System.currentTimeMillis() - startTime));
-            createViewTransition("default-view", minimumTimelapse).play();
+            createViewTransition(MAIN_VIEW_FXML_NAME, minimumTimelapse).play();
         } catch (Exception ex) {
             LOG.error(
                     "██ Exception caught after Spring Context initialization with FXML : {},"
@@ -204,7 +206,7 @@ public class SudoMain extends Application {
                 LOG.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
                 logSqlInvalidAuthorization(
                         (Exception) throwable, sqlInvalidAuthorizationSpecException);
-                PauseTransition pause = createViewTransition("crashscreen-view", 0);
+                PauseTransition pause = createViewTransition(CRASH_SCREEN_VIEW, 0);
                 pause.play();
             }
         } catch (Exception ex) {
