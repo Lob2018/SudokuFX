@@ -136,17 +136,17 @@
   <build>
     <plugins>
       <!--
-        Spotless plugin for source file formatting:
-        - `ratchetFrom`: Format files based on the reference branch (`origin/main`).
-        - `skip`: Skip formatting based on the `spotless-maven-plugin.skip` property.
-        - `formats`: Defines format rules for various file types (e.g., `.gitignore`, `.xml`, `.md`, `.yaml`).
-        - `pom`: Formats `pom.xml` with indentation, element order, and plugin-specific settings.
-        - `java`: Applies `google-java-format` to Java files, with sorting imports and removing unused ones.
-        - `sql`: Formats SQL files for Flyway migrations with indentation and whitespace handling.
-        - `executions`:
-          - `spotless-apply`: Applies formatting during the `validate` phase.
-          - `spotless-check`: Checks if files are properly formatted during the `validate` phase.
-      -->
+              Spotless plugin for source file formatting:
+              - `ratchetFrom`: Format files based on the reference branch (`origin/main`).
+              - `skip`: Skip formatting based on the `spotless-maven-plugin.skip` property.
+              - `formats`: Defines format rules for various file types (e.g., `.gitignore`, `.xml`, `.md`, `.yaml`).
+              - `pom`: Formats `pom.xml` with indentation, element order, and plugin-specific settings.
+              - `java`: Applies `google-java-format` to Java files, with sorting imports and removing unused ones.
+              - `sql`: Formats SQL files for Flyway migrations with indentation and whitespace handling.
+              - `executions`:
+                - `spotless-apply`: Applies formatting during the `validate` phase.
+                - `spotless-check`: Checks if files are properly formatted during the `validate` phase.
+            -->
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
         <artifactId>spotless-maven-plugin</artifactId>
@@ -363,7 +363,8 @@
               <rules>
                 <requireMavenVersion>
                   <version>${maven.version}</version>
-                  <message>The version of Maven must be at least ${maven.version}. Please update your Maven installation.</message>
+                  <message>The version of Maven must be at least ${maven.version}. Please update your
+                                        Maven installation.</message>
                 </requireMavenVersion>
               </rules>
             </configuration>
@@ -376,7 +377,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.3</version>
         <configuration>
-          <argLine>@{jacoco.argLine} -Dapp.name=${project.artifactId} -Dapp.version=${project.version} -Dapp.organization=${project.organization.name} -Dapp.license=${license.name} -XX:+EnableDynamicAgentLoading -Xshare:off</argLine>
+          <argLine>@{jacoco.argLine} -Dapp.name=${project.artifactId} -Dapp.version=${project.version}
+                        -Dapp.organization=${project.organization.name} -Dapp.license=${license.name}
+                        -XX:+EnableDynamicAgentLoading -Xshare:off</argLine>
         </configuration>
       </plugin>
       <!-- JaCoCo plugin for code coverage -->
@@ -388,7 +391,10 @@
           <excludes>
             <exclude>fr/softsf/sudokufx/SudoMain*</exclude>
             <exclude>fr/softsf/sudokufx/Launcher.class</exclude>
-            <exclude>fr/softsf/sudokufx/view/**</exclude>
+            <exclude>fr/softsf/sudokufx/view/component/**</exclude>
+            <exclude>fr/softsf/sudokufx/view/main/**</exclude>
+            <exclude>fr/softsf/sudokufx/view/CrashScreenView*</exclude>
+            <exclude>fr/softsf/sudokufx/view/SplashScreenView*</exclude>
             <exclude>fr/softsf/sudokufx/dto/**</exclude>
             <exclude>fr/softsf/sudokufx/common/interfaces/**</exclude>
             <exclude>fr/softsf/sudokufx/common/util/SpringContextInitializer$*</exclude>
