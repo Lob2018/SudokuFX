@@ -1,0 +1,10 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test =
+[
+    [ "createGame", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a0ab71a5c3c7cd333086fe4f9c4b2dae9", null ],
+    [ "createPlayer", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a90d36198eaa9a5c89c9827051cee6197", null ],
+    [ "givenNullArguments_whenConfigureGameListView_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a22a726e203f4c39738d249570e88b20a", null ],
+    [ "givenNullArguments_whenConfigurePlayerListView_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#ab65e2e55adb599f163d47d10944414dc", null ],
+    [ "givenValidViewModel_whenConfigureGameListView_thenSelectionIsBound", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#afddf6bc0a251834f7e1f35db26197afa", null ],
+    [ "givenValidViewModel_whenConfigurePlayerListView_thenSelectionIsBound", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#ab36b9ed452a83aa56f976b607e63918a", null ],
+    [ "factory", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a0ed3e0ea14ab3ef2e0cff011d0430021", null ]
+];

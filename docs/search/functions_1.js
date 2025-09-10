@@ -2,7 +2,7 @@ var searchData=
 [
   ['abstractdatasourceconfigutest_0',['AbstractDataSourceConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a30e441382e03dca4309d268cc42758da',1,'fr::softsf::sudokufx::config::database::AbstractDataSourceConfigUTest']]],
   ['accessibletextbinding_1',['accessibleTextBinding',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a2534445f2247fda713a1b90d2e194d91',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
-  ['activemenumanagerinitialization_2',['activeMenuManagerInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a842f4799fbccb6507d669da06f95554c',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['activemenumanagerinitialization_2',['activeMenuManagerInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a1343a98d2023ae2f641b7bebd6ad9976',1,'fr::softsf::sudokufx::view::main::MainView']]],
   ['addtoast_3',['addToast',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776',1,'fr::softsf::sudokufx::view::component::toaster::ToasterVBox']]],
   ['addtoastwithduration_4',['addToastWithDuration',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a832c663e6776430ef21c96f38bfa5caf',1,'fr::softsf::sudokufx::view::component::toaster::ToasterVBox']]],
   ['addtokeystore_5',['addToKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a7b8751ac0c7de3f434f5500915e66c28',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
@@ -10,7 +10,7 @@ var searchData=
   ['animateflowersvg_7',['animateFlowerSvg',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a05ceacbaf9b2149100b85aa1915a98a2',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
   ['applicationkeystore_8',['ApplicationKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a094e3f98d8644135b26b573ee75bd834',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],
   ['applylevel_9',['applyLevel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ae87f46d8f99a5c503ce3d993b1ff6e8f',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
-  ['applyopaquemode_10',['applyOpaqueMode',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html#a3dd02ff5cf869a084c95b35937827893',1,'fr::softsf::sudokufx::view::DefaultView']]],
+  ['applyopaquemode_10',['applyOpaqueMode',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875',1,'fr::softsf::sudokufx::view::main::MainView']]],
   ['assertgrillescreesvalides_11',['assertGrillesCreesValides',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a6c422bba2397fd4cf7c8711518450621',1,'fr::softsf::sudokufx::common::util::sudoku::GridMasterUTest']]],
   ['assertthrowswithmessage_12',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]]
 ];

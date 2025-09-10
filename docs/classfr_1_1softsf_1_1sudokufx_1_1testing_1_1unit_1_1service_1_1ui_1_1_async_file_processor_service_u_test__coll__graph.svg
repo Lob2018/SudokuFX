@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 603;
+var viewWidth = 605;
 var viewHeight = 1237;
 var sectionId = 'dynsection-0';
 </script>
@@ -325,23 +325,27 @@ var sectionId = 'dynsection-0';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="595.25,-772 422,-772 422,-648 595.25,-648 595.25,-772"/>
-<text text-anchor="start" x="446.38" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.ui.</text>
-<text text-anchor="start" x="448.25" y="-746.5" font-family="Helvetica,sans-Serif" font-size="10.00">AsyncFileProcessorService</text>
-<text text-anchor="start" x="427.5" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="436" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="426" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="436" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; void process</text>
-<text text-anchor="start" x="436" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">FileAsync(File selectedFile,</text>
-<text text-anchor="start" x="436" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SpinnerGridPane spinner,</text>
-<text text-anchor="start" x="436" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterVBox toaster, Function</text>
-<text text-anchor="start" x="436" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; File, T &gt; taskFunction, Consumer</text>
-<text text-anchor="start" x="436" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T &gt; onSuccess)</text>
-<polygon fill="#666666" stroke="#666666" points="422,-742 422,-742 595.25,-742 595.25,-742 422,-742"/>
-<polygon fill="#666666" stroke="#666666" points="422,-726 422,-726 434,-726 434,-726 422,-726"/>
-<polygon fill="#666666" stroke="#666666" points="434,-726 434,-726 595.25,-726 595.25,-726 434,-726"/>
-<polygon fill="none" stroke="#666666" points="422,-648 422,-772 595.25,-772 595.25,-648 422,-648"/>
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" target="_top" xlink:title="Service to execute file&#45;processing tasks asynchronously with JavaFX UI feedback.">
+<polygon fill="white" stroke="none" points="597.38,-792 421.88,-792 421.88,-628 597.38,-628 597.38,-792"/>
+<text text-anchor="start" x="447.38" y="-778.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.ui.</text>
+<text text-anchor="start" x="449.25" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00">AsyncFileProcessorService</text>
+<text text-anchor="start" x="427.38" y="-750.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="435.88" y="-750.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="425.88" y="-734.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="435.88" y="-734.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; void process</text>
+<text text-anchor="start" x="435.88" y="-722.5" font-family="Helvetica,sans-Serif" font-size="10.00">FileAsync(File selectedFile,</text>
+<text text-anchor="start" x="435.88" y="-710.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SpinnerGridPane spinner,</text>
+<text text-anchor="start" x="435.88" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterVBox toaster, Function</text>
+<text text-anchor="start" x="435.88" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; File, T &gt; taskFunction, Consumer</text>
+<text text-anchor="start" x="435.88" y="-674.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; T &gt; onSuccess)</text>
+<text text-anchor="start" x="427.38" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="435.88" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleError(Throwable</text>
+<text text-anchor="start" x="435.88" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ex, ToasterVBox toaster,</text>
+<text text-anchor="start" x="435.88" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Consumer&lt; Runnable &gt; finishTask)</text>
+<polygon fill="#666666" stroke="#666666" points="421.88,-762 421.88,-762 597.38,-762 597.38,-762 421.88,-762"/>
+<polygon fill="#666666" stroke="#666666" points="421.88,-746 421.88,-746 433.88,-746 433.88,-746 421.88,-746"/>
+<polygon fill="#666666" stroke="#666666" points="433.88,-746 433.88,-746 597.38,-746 597.38,-746 433.88,-746"/>
+<polygon fill="none" stroke="#666666" points="421.88,-628 421.88,-792 597.38,-792 597.38,-628 421.88,-628"/>
 </a>
 </g>
 </g>
@@ -349,11 +353,11 @@ var sectionId = 'dynsection-0';
 <g id="edge7_Node000001_Node000008" class="edge">
 <title>Node8&#45;&gt;Node1</title>
 <g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M487.22,-648.01C468.34,-594.89 439.68,-515.96 412.62,-448 407.88,-436.09 402.94,-423.89 397.89,-411.61"/>
-<polygon fill="none" stroke="#63b8ff" points="397.94,-411.73 391.95,-407.71 393.36,-400.64 399.35,-404.66 397.94,-411.73"/>
+<path fill="none" stroke="#63b8ff" d="M480.72,-628.06C461.95,-576.32 436.6,-507.92 412.62,-448 407.86,-436.1 402.9,-423.91 397.84,-411.62"/>
+<polygon fill="none" stroke="#63b8ff" points="397.89,-411.75 391.9,-407.73 393.3,-400.66 399.29,-404.68 397.89,-411.75"/>
 </a>
 </g>
-<text text-anchor="middle" x="423.25" y="-420.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;service</text>
+<text text-anchor="middle" x="423.22" y="-420.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey"> &#45;service</text>
 </g>
 </g>
 </svg>

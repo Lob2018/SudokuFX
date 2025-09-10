@@ -1,0 +1,17 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.levelsMenuInitialization" name="fr.softsf.sudokufx.view.main.MainView.levelsMenuInitialization">
+<area shape="rect" id="Node000001" title="Initializes each difficulty level section in the menu by binding UI components to ViewModel propertie..." alt="" coords="5,172,222,215"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a706b53dd0716935b0976068f04d748c4" title="Binds UI components related to a specific difficulty level in both the maxi and mini menus." alt="" coords="270,172,459,215"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,191,254,191,254,196,222,196"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7caecbd9de214c2c554a4056960ceca0" title="Binds accessibility properties (accessible text and role description) for the specified difficulty le..." alt="" coords="518,5,729,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,170,433,114,468,84,506,58,516,52,519,57,508,62,471,88,437,118,385,173"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a0f55758246f2163248dc5f8b797dfd35" title="Binds the label&#39;s text to the localized name of the specified difficulty level." alt="" coords="528,72,720,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="406,169,506,124,525,117,527,122,508,129,409,174"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#afb3f11d45da403642574d63feff83fa6" title="Binds the pseudo&#45;class &quot;:selected&quot; state of the given buttons to the specified difficulty level." alt="" coords="510,139,737,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="459,179,494,174,495,179,460,184"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a280b2edb14468c04a0006653c1f75367" title="Binds the visibility of the stars box to whether the specified difficulty level is selected." alt="" coords="516,205,732,248"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="460,203,500,208,500,213,459,208"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a5ebf700eadaca00234fe04813df0b09f" title="Binds the tooltip text properties of both buttons to the accessible text corresponding to the specifi..." alt="" coords="524,272,723,315"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="409,213,508,258,527,264,525,269,506,262,406,218"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a7746116cfca8394695053b9c60c076fd" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="507,339,740,381"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="385,213,437,269,471,299,508,324,519,330,516,334,506,329,468,303,433,273,381,217"/>
+</map>

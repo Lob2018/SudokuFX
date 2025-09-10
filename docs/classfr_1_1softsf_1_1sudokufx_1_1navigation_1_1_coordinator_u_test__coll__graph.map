@@ -1,8 +1,8 @@
 <map id="fr.softsf.sudokufx.navigation.CoordinatorUTest" name="fr.softsf.sudokufx.navigation.CoordinatorUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,773,260,1643"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,811,260,1680"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="37,5,229,229"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,229,126,293,123,526,125,756,119,756,118,526,121,293,124,229"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application fo..." alt="" coords="244,293,485,709"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="202,228,238,286,233,289,198,230"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="299,710,268,805,263,803,294,708"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,229,126,293,123,545,125,794,119,794,118,545,121,293,124,229"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application fo..." alt="" coords="244,293,485,747"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="199,228,238,295,234,298,195,230"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,747,268,832,263,830,290,746"/>
 </map>

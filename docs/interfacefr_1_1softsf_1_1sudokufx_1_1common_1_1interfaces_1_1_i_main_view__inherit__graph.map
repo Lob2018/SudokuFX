@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.common.interfaces.IMainView" name="fr.softsf.sudokufx.common.interfaces.IMainView">
 <area shape="rect" id="Node000001" title="Interface defining method to open the main stage." alt="" coords="165,5,397,123"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="5,371,263,1480"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,138,231,372,226,371,266,137"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html" title="Default view class of the Sudoku application." alt="" coords="287,171,571,1680"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="296,137,302,170,297,171,291,138"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="5,379,263,1488"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,138,231,379,225,378,266,137"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html" title="Main view class of the Sudoku application." alt="" coords="287,171,571,1696"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="296,137,302,171,296,171,291,138"/>
 </map>

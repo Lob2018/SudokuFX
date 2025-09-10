@@ -99,31 +99,95 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_asy
 <div class="header">
   <div class="summary">
 <a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.service.ui.AsyncFileProcessorService Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Service to execute file-processing tasks asynchronously with JavaFX UI feedback.
+ <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.service.ui.AsyncFileProcessorService:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service__coll__graph.svg" width="242" height="176"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service__coll__graph.svg" width="246" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
 <tr class="memitem:a575b3c705cc0bf1d3cb5f2cabd5ceadc" id="r_a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a575b3c705cc0bf1d3cb5f2cabd5ceadc">processFileAsync</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess)</td></tr>
-<tr class="memdesc:a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a long-running file task asynchronously with UI notifications.  <br /></td></tr>
+<tr class="memdesc:a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a file-processing task asynchronously with spinner and toast feedback.  <br /></td></tr>
 <tr class="separator:a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a393483a203a8dc1868b81c7a210114f1" id="r_a393483a203a8dc1868b81c7a210114f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a393483a203a8dc1868b81c7a210114f1">handleError</a> (Throwable ex, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, Consumer&lt; Runnable &gt; finishTask)</td></tr>
+<tr class="memdesc:a393483a203a8dc1868b81c7a210114f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles task errors by logging and showing a toast notification on the JavaFX thread.  <br /></td></tr>
+<tr class="separator:a393483a203a8dc1868b81c7a210114f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a10036f04967cf7920c9d8c547ed89ba9" id="r_a10036f04967cf7920c9d8c547ed89ba9"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10036f04967cf7920c9d8c547ed89ba9">LOG</a> = LoggerFactory.getLogger(AsyncFileProcessorService.class)</td></tr>
 <tr class="separator:a10036f04967cf7920c9d8c547ed89ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Service to execute file-processing tasks asynchronously with JavaFX UI feedback. </p>
+<p>Displays a spinner and toast messages during task execution. Handles success and error reporting automatically on the JavaFX Application Thread. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a393483a203a8dc1868b81c7a210114f1" name="a393483a203a8dc1868b81c7a210114f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a393483a203a8dc1868b81c7a210114f1">&#9670;&#160;</a></span>handleError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.handleError </td>
+          <td>(</td>
+          <td class="paramtype">Throwable</td>          <td class="paramname"><span class="paramname"><em>ex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></td>          <td class="paramname"><span class="paramname"><em>toaster</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Consumer&lt; Runnable &gt;</td>          <td class="paramname"><span class="paramname"><em>finishTask</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles task errors by logging and showing a toast notification on the JavaFX thread. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ex</td><td>the exception thrown by the task; must not be null </td></tr>
+    <tr><td class="paramname">toaster</td><td>UI toaster to display the error message; must not be null </td></tr>
+    <tr><td class="paramname">finishTask</td><td>function to run code on the JavaFX Application Thread; must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_a393483a203a8dc1868b81c7a210114f1_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="a575b3c705cc0bf1d3cb5f2cabd5ceadc" name="a575b3c705cc0bf1d3cb5f2cabd5ceadc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a575b3c705cc0bf1d3cb5f2cabd5ceadc">&#9670;&#160;</a></span>processFileAsync()</h2>
 
@@ -166,14 +230,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Executes a long-running file task asynchronously with UI notifications. </p>
-<p>The task runs on a background thread. A spinner and toast are shown during processing. On success, the result is passed to <code class="JavaDocCode">onSuccess</code>. Errors are handled internally (logged, toast shown, spinner hidden); no error callback is needed.</p>
+<p>Executes a file-processing task asynchronously with spinner and toast feedback. </p>
+<p>Runs the task in a background thread. On success, the result is passed to <code class="JavaDocCode"><br/>
+onSuccess</code>. On failure, the error is logged and shown in a toast.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">&lt;T&gt;</td><td>the result type </td></tr>
     <tr><td class="paramname">selectedFile</td><td>the file to process; must not be null </td></tr>
-    <tr><td class="paramname">spinner</td><td>the UI spinner to indicate progress; must not be null </td></tr>
-    <tr><td class="paramname">toaster</td><td>the UI toaster to display messages; must not be null </td></tr>
+    <tr><td class="paramname">spinner</td><td>UI spinner to indicate progress; must not be null </td></tr>
+    <tr><td class="paramname">toaster</td><td>UI toaster to display messages; must not be null </td></tr>
     <tr><td class="paramname">taskFunction</td><td>function to process the file and return a result; must not be null </td></tr>
     <tr><td class="paramname">onSuccess</td><td>callback executed on the UI thread upon success; must not be null </td></tr>
   </table>
@@ -185,12 +250,12 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_a575b3c705cc0bf1d3cb5f2cabd5ceadc_cgraph.svg" width="100%" height="490"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_a575b3c705cc0bf1d3cb5f2cabd5ceadc_cgraph.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -227,7 +292,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html">ui</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></li>
-    <li class="footer">Generated on Mon Sep 8 2025 15:34:44 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Sep 10 2025 15:56:14 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

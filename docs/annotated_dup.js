@@ -187,6 +187,12 @@ var annotated_dup =
                   [ "FileChooserServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test" ]
                 ] ]
               ] ],
+              [ "view", null, [
+                [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util.html", [
+                  [ "BindingConfiguratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test" ],
+                  [ "GenericListViewFactoryUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test" ]
+                ] ]
+              ] ],
               [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", [
                 [ "grid", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid.html", [
                   [ "GrilleResolueUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test" ],
@@ -215,8 +221,14 @@ var annotated_dup =
               [ "PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box" ],
               [ "SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane" ]
             ] ],
+            [ "main", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1main.html", [
+              [ "MainView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view" ]
+            ] ],
+            [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1util.html", [
+              [ "BindingConfigurator", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator" ],
+              [ "GenericListViewFactory", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory" ]
+            ] ],
             [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view" ],
-            [ "DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view" ],
             [ "SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view" ]
           ] ],
           [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html", [

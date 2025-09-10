@@ -1,0 +1,17 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,213,111,240"/>
+<area shape="rect" id="Node000001" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html" title=" " alt="" coords="159,5,346,48"/>
+<area shape="poly" id="edge23_Node000000_Node000001" title=" " alt="" coords="67,197,100,128,125,91,157,58,174,46,177,51,160,62,130,94,105,131,72,200"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html" title=" " alt="" coords="159,72,346,115"/>
+<area shape="poly" id="edge24_Node000000_Node000002" title=" " alt="" coords="77,199,112,161,157,124,179,113,181,118,160,129,116,165,81,203"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html" title=" " alt="" coords="159,139,346,181"/>
+<area shape="poly" id="edge25_Node000000_Node000003" title=" " alt="" coords="113,205,187,179,189,184,115,210"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html" title=" " alt="" coords="159,205,346,248"/>
+<area shape="poly" id="edge26_Node000000_Node000004" title=" " alt="" coords="126,224,158,224,158,229,126,229"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" title=" " alt="" coords="159,272,346,315"/>
+<area shape="poly" id="edge27_Node000000_Node000005" title=" " alt="" coords="115,243,189,269,187,274,113,248"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" title=" " alt="" coords="159,339,346,381"/>
+<area shape="poly" id="edge28_Node000000_Node000006" title=" " alt="" coords="81,251,116,288,160,324,181,336,179,340,157,329,112,292,77,254"/>
+<area shape="rect" id="Node000007" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title=" " alt="" coords="159,405,346,448"/>
+<area shape="poly" id="edge29_Node000000_Node000007" title=" " alt="" coords="72,254,105,322,130,359,160,391,177,403,174,407,157,395,125,363,100,325,67,256"/>
+</map>

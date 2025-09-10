@@ -31,6 +31,8 @@ var hierarchy =
     [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageErrorTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageSuccessTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_success_tests.html", null ],
     [ "fr.softsf.sudokufx.benchmark.BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", null ],
+    [ "fr.softsf.sudokufx.view.util.BindingConfigurator", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.view.util.BindingConfiguratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.OptionsUTest.BuilderPatternTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_builder_pattern_tests.html", null ],
     [ "fr.softsf.sudokufx.model.GameUTest.BuilderTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_builder_tests.html", null ],
     [ "Button", null, [
@@ -72,6 +74,8 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.GameUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html", null ],
     [ "fr.softsf.sudokufx.config.database.GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html", null ],
     [ "fr.softsf.sudokufx.config.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret_u_test.html", null ],
+    [ "fr.softsf.sudokufx.view.util.GenericListViewFactory", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.GameUTest.GetterTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_getter_tests.html", null ],
     [ "fr.softsf.sudokufx.model.Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", null ],
     [ "fr.softsf.sudokufx.model.Grid.GridBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_1_1_grid_builder.html", null ],
@@ -115,7 +119,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.testing.unit.common.util.ImageUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.interfaces.IMainView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html", [
       [ "fr.softsf.sudokufx.view.CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", null ],
-      [ "fr.softsf.sudokufx.view.DefaultView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_default_view.html", null ]
+      [ "fr.softsf.sudokufx.view.main.MainView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.IntegrationTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_integration_tests.html", null ],

@@ -12,6 +12,6 @@
 <area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="518,284,506,332,501,331,512,283"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="510,5,558,75"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="537,90,537,124,532,124,532,90"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" title=" " alt="" coords="568,615,799,780"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="657,781,558,1048,538,1096,533,1094,553,1046,652,779"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" title="Service to execute file&#45;processing tasks asynchronously with JavaFX UI feedback." alt="" coords="568,588,802,807"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="649,808,558,1048,538,1096,533,1094,553,1046,644,806"/>
 </map>

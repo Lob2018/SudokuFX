@@ -1,13 +1,13 @@
 <map id="fr.softsf.sudokufx.SudoMain" name="fr.softsf.sudokufx.SudoMain">
-<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="240,773,456,1211"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,467,80,536"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="50,550,64,627,77,669,94,708,126,760,163,809,243,896,239,899,159,813,121,763,90,711,72,670,59,628,45,551"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="104,437,336,565"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,564,289,756,284,758,234,566"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="360,443,592,560"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="464,560,412,757,407,756,458,559"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application fo..." alt="" coords="616,293,856,709"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="618,695,606,711,539,793,469,871,465,867,535,790,602,708,613,692"/>
+<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="240,811,456,1323"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,485,80,555"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="49,569,64,654,77,701,94,746,126,803,163,858,243,956,239,960,159,861,121,806,90,748,72,702,59,655,44,570"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="104,456,336,584"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="237,583,287,793,282,795,232,584"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="360,461,592,579"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="465,579,414,795,409,794,460,578"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application fo..." alt="" coords="616,293,856,747"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="618,731,606,748,538,841,469,929,464,925,534,838,602,745,613,728"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene." alt="" coords="640,5,832,229"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="739,229,739,277,733,277,733,229"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="739,229,739,276,733,276,733,229"/>
 </map>

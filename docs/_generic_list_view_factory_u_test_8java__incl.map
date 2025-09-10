@@ -1,0 +1,35 @@
+<map id="src/test/java/fr/softsf/sudokufx/testing/unit/view/util/GenericListViewFactoryUTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/view/util/GenericListViewFactoryUTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1599,5,1815,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,136,172,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1599,47,1346,51,995,63,592,88,385,107,184,131,157,135,156,130,183,125,385,102,591,83,995,58,1346,46,1598,42"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="195,128,374,171"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1598,49,1379,56,1081,70,739,94,389,130,389,125,739,88,1081,64,1379,50,1598,43"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="398,128,587,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1599,51,1167,76,888,99,603,130,602,125,888,94,1167,70,1598,46"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="611,136,819,163"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1599,54,1256,83,1044,105,832,131,798,136,798,130,831,125,1044,100,1256,78,1598,49"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="843,136,1056,163"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1599,60,1356,91,1069,131,1037,136,1036,130,1068,125,1355,85,1598,54"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1080,136,1273,163"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1599,68,1256,135,1255,130,1598,63"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1296,136,1494,163"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1599,83,1448,133,1447,128,1598,78"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1518,128,1710,171"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1677,82,1644,118,1640,115,1673,79"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1734,136,1870,163"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1742,79,1782,122,1778,126,1738,82"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1894,128,2075,171"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1806,78,1916,120,1914,125,1804,83"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="2099,136,2254,163"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1816,65,2088,125,2106,130,2105,135,2087,131,1815,71"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="2278,128,2456,171"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1816,56,2019,86,2263,125,2262,130,2018,91,1815,61"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="2480,128,2673,171"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1816,51,2105,80,2465,125,2464,130,2105,85,1816,56"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="2697,128,2890,171"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1816,47,2195,74,2436,96,2682,125,2682,130,2436,101,2195,79,1816,53"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="2914,136,3116,163"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="1816,45,2019,54,2289,70,2595,93,2903,125,2937,130,2936,135,2903,131,2594,98,2289,75,2018,59,1816,50"/>
+<area shape="rect" id="Node000017" title=" " alt="" coords="3141,136,3289,163"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="1816,42,2053,46,2379,58,2752,83,2943,102,3129,125,3152,129,3151,135,3128,131,2942,107,2752,88,2379,63,2053,51,1816,47"/>
+</map>

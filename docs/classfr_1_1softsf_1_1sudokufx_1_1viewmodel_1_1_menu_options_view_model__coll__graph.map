@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel">
 <area shape="rect" id="Node000001" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="780,1415,1034,3249"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="61,711,271,1292"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,1291,284,1350,340,1460,400,1571,529,1786,658,1982,773,2146,768,2149,654,1985,525,1789,396,1573,335,1463,279,1352,254,1293"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" title=" " alt="" coords="294,919,525,1084"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="442,1083,540,1350,777,1979,772,1981,535,1352,437,1085"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="57,711,267,1292"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,1291,282,1350,337,1460,398,1571,528,1786,657,1982,773,2146,768,2149,653,1985,524,1789,394,1573,333,1463,277,1352,251,1293"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html" title="Service to execute file&#45;processing tasks asynchronously with JavaFX UI feedback." alt="" coords="292,892,526,1111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="451,1110,540,1350,777,1978,772,1980,535,1352,446,1111"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="550,791,788,1212"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="709,1212,780,1607,775,1608,703,1212"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html" title="Utility class providing helper methods for common audio&#45;related operations." alt="" coords="811,951,1003,1052"/>

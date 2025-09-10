@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" target="_top" xlink:title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status.">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="145,-32 0,-32 0,0 145,0 145,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="72.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuNewViewModel</text>
+<text text-anchor="middle" x="72.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuLevelViewModelUTest</text>
 </a>
 </g>
 </g>
