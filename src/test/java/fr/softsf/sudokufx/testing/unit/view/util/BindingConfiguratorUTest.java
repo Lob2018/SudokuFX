@@ -13,6 +13,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Text;
 
 import org.junit.jupiter.api.Test;
@@ -108,5 +110,41 @@ class BindingConfiguratorUTest {
         assertEquals("Color picker", colorPicker.getAccessibleText());
         assertEquals("Choose a color", colorPicker.getTooltip().getText());
         assertEquals("Color selection", colorPicker.getAccessibleRoleDescription());
+    }
+
+    @Test
+    void givenColorPicker_whenConfigureColorPicker_thenKeyboardEventHandlerIsSet() {
+        ColorPicker colorPicker = new ColorPicker();
+        colorPicker.setTooltip(new Tooltip());
+        SimpleStringProperty accessibleProp = new SimpleStringProperty("Color picker");
+        SimpleStringProperty tooltipProp = new SimpleStringProperty("Choose a color");
+        SimpleStringProperty roleDescProp = new SimpleStringProperty("Color selection");
+        configurator.configureColorPicker(colorPicker, accessibleProp, tooltipProp, roleDescProp);
+        assertNotNull(colorPicker.getOnKeyPressed());
+    }
+
+    @Test
+    void givenColorPicker_whenConfigureColorPicker_thenKeyboardEventsDoNotThrowExceptions() {
+        ColorPicker colorPicker = new ColorPicker();
+        colorPicker.setTooltip(new Tooltip());
+        SimpleStringProperty accessibleProp = new SimpleStringProperty("Color picker");
+        SimpleStringProperty tooltipProp = new SimpleStringProperty("Choose a color");
+        SimpleStringProperty roleDescProp = new SimpleStringProperty("Color selection");
+        configurator.configureColorPicker(colorPicker, accessibleProp, tooltipProp, roleDescProp);
+        KeyEvent spaceKeyEvent =
+                new KeyEvent(
+                        KeyEvent.KEY_PRESSED, "", "", KeyCode.SPACE, false, false, false, false);
+        KeyEvent enterKeyEvent =
+                new KeyEvent(
+                        KeyEvent.KEY_PRESSED, "", "", KeyCode.ENTER, false, false, false, false);
+        KeyEvent escapeKeyEvent =
+                new KeyEvent(
+                        KeyEvent.KEY_PRESSED, "", "", KeyCode.ESCAPE, false, false, false, false);
+        KeyEvent tabKeyEvent =
+                new KeyEvent(KeyEvent.KEY_PRESSED, "", "", KeyCode.TAB, false, false, false, false);
+        assertDoesNotThrow(() -> colorPicker.fireEvent(spaceKeyEvent));
+        assertDoesNotThrow(() -> colorPicker.fireEvent(enterKeyEvent));
+        assertDoesNotThrow(() -> colorPicker.fireEvent(escapeKeyEvent));
+        assertDoesNotThrow(() -> colorPicker.fireEvent(tabKeyEvent));
     }
 }

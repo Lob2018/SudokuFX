@@ -61,7 +61,8 @@ public class BindingConfigurator {
     }
 
     /**
-     * Configures a {@link ColorPicker} with accessibility, tooltip, and role description bindings.
+     * Configures a {@link ColorPicker} with accessibility, tooltip, role description bindings, and
+     * keyboard interaction support.
      *
      * @param colorPicker the {@link ColorPicker} to configure
      * @param accessibleTextProperty property bound to the accessible text
@@ -82,6 +83,33 @@ public class BindingConfigurator {
         colorPicker.accessibleTextProperty().bind(accessibleTextProperty);
         colorPicker.getTooltip().textProperty().bind(tooltipProperty);
         colorPicker.accessibleRoleDescriptionProperty().bind(roleDescriptionProperty);
+        configureColorPickerKeyboardSupport(colorPicker);
+    }
+
+    /**
+     * Configures keyboard support for a {@link ColorPicker} with SPACE/ENTER to open and ESCAPE to
+     * close the color selection popup.
+     *
+     * @param colorPicker the {@link ColorPicker} to configure
+     * @throws NullPointerException if colorPicker is {@code null}
+     */
+    private void configureColorPickerKeyboardSupport(ColorPicker colorPicker) {
+        Objects.requireNonNull(colorPicker, "ColorPicker must not be null");
+        colorPicker.setOnKeyPressed(
+                event -> {
+                    switch (event.getCode()) {
+                        case SPACE:
+                        case ENTER:
+                            colorPicker.show();
+                            break;
+                        case ESCAPE:
+                            colorPicker.hide();
+                            break;
+                        default:
+                            return;
+                    }
+                    event.consume();
+                });
     }
 
     /**
