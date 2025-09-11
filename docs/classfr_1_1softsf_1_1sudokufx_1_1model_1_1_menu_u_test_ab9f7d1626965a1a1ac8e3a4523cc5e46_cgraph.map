@@ -1,10 +1,10 @@
 <map id="fr.softsf.sudokufx.model.MenuUTest.givenBuilder_whenChainMultipleCalls_thenBuilderIsFluent" name="fr.softsf.sudokufx.model.MenuUTest.givenBuilder_whenChainMultipleCalls_thenBuilderIsFluent">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,56,174,131"/>
 <area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="47,55,49,45,57,37,71,31,90,29,111,32,125,40,123,44,110,37,89,35,72,36,60,41,54,48,52,56"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#a97b1b5e5c4fa3898ddc4ef431238ae5e" title=" " alt="" coords="222,5,388,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#a97b1b5e5c4fa3898ddc4ef431238ae5e" title="Creates a new MenuBuilder for fluent construction of Menu instances." alt="" coords="222,5,388,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="173,65,218,51,220,56,175,70"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ab1ff57d1d8f24d28f42af214053d7025" title=" " alt="" coords="222,72,388,115"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ab1ff57d1d8f24d28f42af214053d7025" title="Returns the unique identifier of the menu." alt="" coords="222,72,388,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="174,91,206,91,206,96,174,96"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" title=" " alt="" coords="222,139,388,181"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" title="Returns the mode of the menu." alt="" coords="222,139,388,181"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="175,117,220,131,218,136,173,122"/>
 </map>

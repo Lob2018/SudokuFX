@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenConstructedGameLevel_whenTryingToAccessLevelidSetter_thenShouldNotExist" name="fr.softsf.sudokufx.model.GameLevelUTest.givenConstructedGameLevel_whenTryingToAccessLevelidSetter_thenShouldNotExist">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,301,104"/>
 <area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="98,28,102,18,112,10,129,5,153,3,182,6,199,13,197,18,180,11,153,8,130,10,115,15,106,21,103,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ae96ae3832695c27c80bbd4be0604e8f5" title=" " alt="" coords="349,45,515,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ae96ae3832695c27c80bbd4be0604e8f5" title="Returns the unique identifier of this game level." alt="" coords="349,45,515,88"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,64,333,64,333,69,301,69"/>
 </map>

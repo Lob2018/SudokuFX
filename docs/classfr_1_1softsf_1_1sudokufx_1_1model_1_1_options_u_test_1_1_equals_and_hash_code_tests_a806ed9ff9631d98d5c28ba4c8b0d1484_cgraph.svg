@@ -34,7 +34,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a010a253b52db686f524aa0545df50415" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a010a253b52db686f524aa0545df50415" target="_top" xlink:title="Computes the hash code based on all fields.">
 <polygon fill="white" stroke="#666666" points="374,-44 249.25,-44 249.25,-12 374,-12 374,-44"/>
 <text text-anchor="start" x="257.25" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="311.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.hashCode</text>

@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.Game.setPlayerid" name="fr.softsf.sudokufx.model.Game.setPlayerid">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a6b7a95612e065abd8e8d038d2bf3c689" title="Validates that the given Player is not null." alt="" coords="220,5,386,48"/>
+<area shape="rect" id="Node000001" title="Sets the player associated with this game." alt="" coords="5,5,172,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a6b7a95612e065abd8e8d038d2bf3c689" title="Ensures that the Player is not null." alt="" coords="220,5,386,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,24,204,24,204,29,172,29"/>
 </map>

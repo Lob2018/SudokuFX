@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title="Returns a new PlayerBuilder instance for fluent construction.">
 <polygon fill="white" stroke="#666666" points="347.38,-482 222.62,-482 222.62,-450 347.38,-450 347.38,-482"/>
 <text text-anchor="start" x="230.62" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-456.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.builder</text>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a026951bada7d16d7220aaf6bd25f5268" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a026951bada7d16d7220aaf6bd25f5268" target="_top" xlink:title="Returns the creation timestamp.">
 <polygon fill="white" stroke="#666666" points="347.38,-432 222.62,-432 222.62,-400 347.38,-400 347.38,-432"/>
 <text text-anchor="start" x="230.62" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getCreatedat</text>
@@ -70,7 +70,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad6ffdca54d9d371b10b65b623dbbdeaf" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad6ffdca54d9d371b10b65b623dbbdeaf" target="_top" xlink:title="Returns the games played by the player.">
 <polygon fill="white" stroke="#666666" points="347.38,-382 222.62,-382 222.62,-350 347.38,-350 347.38,-382"/>
 <text text-anchor="start" x="230.62" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getGames</text>
@@ -89,7 +89,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a86d6e2174a10a998f9cdf6f6c08cfa2c" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a86d6e2174a10a998f9cdf6f6c08cfa2c" target="_top" xlink:title="Returns whether the player is selected.">
 <polygon fill="white" stroke="#666666" points="347.38,-332 222.62,-332 222.62,-300 347.38,-300 347.38,-332"/>
 <text text-anchor="start" x="230.62" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getIsselected</text>
@@ -108,7 +108,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a1d5eb6f4a416254651a39a1160965f77" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a1d5eb6f4a416254651a39a1160965f77" target="_top" xlink:title="Returns the menu associated with the player.">
 <polygon fill="white" stroke="#666666" points="347.38,-282 222.62,-282 222.62,-250 347.38,-250 347.38,-282"/>
 <text text-anchor="start" x="230.62" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getMenuid</text>
@@ -127,7 +127,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a697b2c1beaa343f3fb9ad3a3c4f3d220" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a697b2c1beaa343f3fb9ad3a3c4f3d220" target="_top" xlink:title="Returns the name of the player.">
 <polygon fill="white" stroke="#666666" points="347.38,-232 222.62,-232 222.62,-200 347.38,-200 347.38,-232"/>
 <text text-anchor="start" x="230.62" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getName</text>
@@ -146,7 +146,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a65efec07abcd028acf378e1585a5fc12" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a65efec07abcd028acf378e1585a5fc12" target="_top" xlink:title="Returns the options associated with the player.">
 <polygon fill="white" stroke="#666666" points="347.38,-182 222.62,-182 222.62,-150 347.38,-150 347.38,-182"/>
 <text text-anchor="start" x="230.62" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getOptionsid</text>
@@ -165,7 +165,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a14eea5e4e2fcee41313fe89f00b4249e" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a14eea5e4e2fcee41313fe89f00b4249e" target="_top" xlink:title="Returns the unique ID of the player.">
 <polygon fill="white" stroke="#666666" points="347.38,-132 222.62,-132 222.62,-100 347.38,-100 347.38,-132"/>
 <text text-anchor="start" x="230.62" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getPlayerid</text>
@@ -184,7 +184,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab147c357f7c7509392479b4160e61ce0" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab147c357f7c7509392479b4160e61ce0" target="_top" xlink:title="Returns the language of the player.">
 <polygon fill="white" stroke="#666666" points="352.25,-82 217.75,-82 217.75,-50 352.25,-50 352.25,-82"/>
 <text text-anchor="start" x="225.75" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getPlayerlanguageid</text>
@@ -203,7 +203,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a636c644e61f487ae0736a0ef77326e4c" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a636c644e61f487ae0736a0ef77326e4c" target="_top" xlink:title="Returns the update timestamp.">
 <polygon fill="white" stroke="#666666" points="347.38,-32 222.62,-32 222.62,0 347.38,0 347.38,-32"/>
 <text text-anchor="start" x="230.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getUpdatedat</text>

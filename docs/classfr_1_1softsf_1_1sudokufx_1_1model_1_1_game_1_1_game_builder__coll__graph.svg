@@ -58,7 +58,7 @@ var sectionId = 'dynsection-0';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Builder class for creating instances of Game.">
+<g id="a_Node000001"><a xlink:title="Builder class to create Game instances in a fluent style.">
 <polygon fill="#999999" stroke="none" points="377.38,-344 242.38,-344 242.38,0 377.38,0 377.38,-344"/>
 <text text-anchor="start" x="255.5" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="267.12" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.GameBuilder</text>
@@ -106,7 +106,7 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" target="_top" xlink:title="Represents a Sudoku grid with default values, current values, and the number of possibilities.">
 <polygon fill="white" stroke="none" points="177.75,-1100 0,-1100 0,-548 177.75,-548 177.75,-1100"/>
 <text text-anchor="start" x="25.5" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Grid</text>
 <text text-anchor="start" x="5.5" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -188,7 +188,7 @@ var sectionId = 'dynsection-0';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" target="_top" xlink:title="Represents a player in the SudokuFX application.">
 <polygon fill="white" stroke="none" points="424.25,-1256 195.5,-1256 195.5,-392 424.25,-392 424.25,-1256"/>
 <text text-anchor="start" x="255.5" y="-1242.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="296" y="-1230.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player</text>
@@ -206,18 +206,18 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="209.5" y="-1134.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime updatedat</text>
 <text text-anchor="start" x="201" y="-1118.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="209.5" y="-1118.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="209.5" y="-1106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BACKGROUNID_MUST_NOT</text>
+<text text-anchor="start" x="209.5" y="-1106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CREATEDAT_MUST_NOT</text>
 <text text-anchor="start" x="209.5" y="-1094.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
 <text text-anchor="start" x="201" y="-1078.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="209.5" y="-1078.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="209.5" y="-1066.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CREATEDAT_MUST_NOT</text>
-<text text-anchor="start" x="209.5" y="-1054.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="201" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="209.5" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="209.5" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_MUST_NOT_BE_NULL</text>
-<text text-anchor="start" x="201" y="-1010.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="209.5" y="-1010.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="209.5" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00"> NAME_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="209.5" y="-1066.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="201" y="-1050.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="209.5" y="-1050.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="209.5" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00"> NAME_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="201" y="-1022.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="209.5" y="-1022.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="209.5" y="-1010.5" font-family="Helvetica,sans-Serif" font-size="10.00"> OPTIONSID_MUST_NOT</text>
+<text text-anchor="start" x="209.5" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
 <text text-anchor="start" x="201" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="209.5" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="209.5" y="-970.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PLAYERLANGUAGEID_MUST</text>
@@ -301,7 +301,7 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" target="_top" xlink:title="Represents a player&#39;s language in the SudokuFX application.">
 <polygon fill="white" stroke="none" points="183.75,-1866 36,-1866 36,-1470 183.75,-1470 183.75,-1866"/>
 <text text-anchor="start" x="55.5" y="-1852.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="75" y="-1840.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage</text>
@@ -366,7 +366,7 @@ var sectionId = 'dynsection-0';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" target="_top" xlink:title="Represents user&#45;configurable options for the SudokuFX application.">
 <polygon fill="white" stroke="none" points="418.25,-2032 201.5,-2032 201.5,-1304 418.25,-1304 418.25,-2032"/>
 <text text-anchor="start" x="255.5" y="-2018.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="293" y="-2006.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options</text>
@@ -467,7 +467,7 @@ var sectionId = 'dynsection-0';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" target="_top" xlink:title="Represents a Menu configuration with a unique ID and a mode.">
 <polygon fill="white" stroke="none" points="577.25,-1778 436.5,-1778 436.5,-1558 577.25,-1558 577.25,-1778"/>
 <text text-anchor="start" x="440.5" y="-1764.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Menu</text>
 <text text-anchor="start" x="443.81" y="-1748.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -514,7 +514,7 @@ var sectionId = 'dynsection-0';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html" target="_top" xlink:title="Represents a difficulty level for a Sudoku game.">
 <polygon fill="white" stroke="none" points="567.88,-946 441.88,-946 441.88,-702 567.88,-702 567.88,-946"/>
 <text text-anchor="start" x="450.5" y="-932.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="480.12" y="-920.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel</text>

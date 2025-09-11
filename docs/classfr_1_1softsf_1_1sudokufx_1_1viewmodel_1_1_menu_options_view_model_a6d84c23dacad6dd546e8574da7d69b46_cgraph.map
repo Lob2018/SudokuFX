@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initSongAccessibleText" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initSongAccessibleText">
+<area shape="rect" id="Node000001" title="Creates the accessibility label for the song button, depending on whether the song field is empty." alt="" coords="5,13,308,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a218b89fb8384b0edf79c7c1d70f9b292" title="Creates a formatted localized binding with one dynamic argument." alt="" coords="356,5,617,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,32,340,32,340,37,308,37"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a359e959bd335e531fe59f4eb942c0813" title="Utility: always observe the locale in addition to custom dependencies." alt="" coords="665,13,953,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="617,32,650,32,650,37,617,37"/>
+</map>

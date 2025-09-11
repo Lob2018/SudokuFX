@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.Grid.setGridvalue" name="fr.softsf.sudokufx.model.Grid.setGridvalue">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,48"/>
+<area shape="rect" id="Node000001" title="Sets the current grid values." alt="" coords="5,5,172,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a151e63c8afa747ec884b000b6a82f065" title="Validates that the grid value is not null." alt="" coords="220,5,386,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,24,204,24,204,29,172,29"/>
 </map>

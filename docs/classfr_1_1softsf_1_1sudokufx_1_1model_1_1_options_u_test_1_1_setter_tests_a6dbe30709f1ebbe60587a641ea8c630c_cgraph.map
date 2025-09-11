@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated" name="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,23,244,97"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" title=" " alt="" coords="292,5,458,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" title="Returns the ARGB hex color string." alt="" coords="292,5,458,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="244,41,276,37,277,42,245,47"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" title=" " alt="" coords="292,72,458,115"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" title="Sets the ARGB hex color after validation." alt="" coords="292,72,458,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,73,277,78,276,83,244,79"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates hex color format (#RRGGBBAA)." alt="" coords="506,72,673,115"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format." alt="" coords="506,72,673,115"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="458,91,490,91,490,96,458,96"/>
 </map>

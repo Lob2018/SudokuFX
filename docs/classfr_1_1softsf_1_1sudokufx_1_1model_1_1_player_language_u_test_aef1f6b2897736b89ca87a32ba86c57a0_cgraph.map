@@ -1,10 +1,10 @@
 <map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenNullPlayerlanguageid_whenCreatePlayerLanguage_thenNullPlayerlanguageidIsHandled" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenNullPlayerlanguageid_whenCreatePlayerLanguage_thenNullPlayerlanguageidIsHandled">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,56,351,131"/>
 <area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="112,55,116,45,129,36,149,31,178,29,213,32,234,40,232,45,212,38,178,35,150,36,131,41,120,48,117,57"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a70c763e120718f9286c4d476b6b7c968" title=" " alt="" coords="433,5,600,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a70c763e120718f9286c4d476b6b7c968" title="Returns the ISO code of this PlayerLanguage." alt="" coords="433,5,600,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,57,417,43,418,49,352,62"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" title=" " alt="" coords="399,72,634,115"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" title="Returns the unique ID of this PlayerLanguage instance." alt="" coords="399,72,634,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="351,91,383,91,383,96,351,96"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a411e4ad4b3b7e244697e7dd912d24c02" title=" " alt="" coords="433,139,600,181"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a411e4ad4b3b7e244697e7dd912d24c02" title="Returns a string representation of the PlayerLanguage object." alt="" coords="433,139,600,181"/>
 <area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="352,125,418,138,417,143,351,130"/>
 </map>

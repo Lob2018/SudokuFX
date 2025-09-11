@@ -23,7 +23,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" target="_top" xlink:title="Returns the ARGB hex color string.">
 <polygon fill="white" stroke="#666666" points="390.5,-182 265.75,-182 265.75,-150 390.5,-150 390.5,-182"/>
 <text text-anchor="start" x="273.75" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="328.12" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getHexcolor</text>
@@ -42,7 +42,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" target="_top" xlink:title="Returns the background image path.">
 <polygon fill="white" stroke="#666666" points="390.5,-132 265.75,-132 265.75,-100 390.5,-100 390.5,-132"/>
 <text text-anchor="start" x="273.75" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="328.12" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getImagepath</text>
@@ -61,7 +61,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" target="_top" xlink:title="Returns the unique ID of this Options instance.">
 <polygon fill="white" stroke="#666666" points="390.5,-82 265.75,-82 265.75,-50 390.5,-50 390.5,-82"/>
 <text text-anchor="start" x="273.75" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="328.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getOptionsid</text>
@@ -80,7 +80,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" target="_top" xlink:title="Returns true if a background image is used.">
 <polygon fill="white" stroke="#666666" points="390.5,-32 265.75,-32 265.75,0 390.5,0 390.5,-32"/>
 <text text-anchor="start" x="273.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="328.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.isImage</text>

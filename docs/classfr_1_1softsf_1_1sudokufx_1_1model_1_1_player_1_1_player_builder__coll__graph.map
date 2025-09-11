@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.model.Player.PlayerBuilder" name="fr.softsf.sudokufx.model.Player.PlayerBuilder">
-<area shape="rect" id="Node000001" title=" " alt="" coords="226,1040,514,1600"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" title=" " alt="" coords="5,227,202,755"/>
+<area shape="rect" id="Node000001" title="Builder class for creating Player instances with fluent API." alt="" coords="226,1040,514,1600"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" title="Represents a player&#39;s language in the SudokuFX application." alt="" coords="5,227,202,755"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,753,184,865,217,975,234,1023,229,1025,212,977,179,866,151,755"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title=" " alt="" coords="226,5,515,976"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user&#45;configurable options for the SudokuFX application." alt="" coords="226,5,515,976"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="373,976,373,1024,368,1024,368,976"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" title=" " alt="" coords="539,344,727,637"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" title="Represents a Menu configuration with a unique ID and a mode." alt="" coords="539,344,727,637"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="612,638,578,802,555,890,529,977,512,1025,507,1023,524,975,550,889,573,801,607,637"/>
 </map>

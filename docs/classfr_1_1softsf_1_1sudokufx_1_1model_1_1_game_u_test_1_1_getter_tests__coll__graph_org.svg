@@ -55,7 +55,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html" target="_top" xlink:title="Represents a Sudoku game instance stored in the database.">
 <polygon fill="white" stroke="none" points="399.88,-1232 219.88,-1232 219.88,-392 399.88,-392 399.88,-1232"/>
 <text text-anchor="start" x="242.38" y="-1218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Game</text>
 <text text-anchor="start" x="225.38" y="-1202.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -167,7 +167,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" target="_top" xlink:title="Represents a Sudoku grid with default values, current values, and the number of possibilities.">
 <polygon fill="white" stroke="none" points="177.75,-1988 0,-1988 0,-1436 177.75,-1436 177.75,-1988"/>
 <text text-anchor="start" x="25.5" y="-1974.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Grid</text>
 <text text-anchor="start" x="5.5" y="-1958.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -249,7 +249,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" target="_top" xlink:title="Represents a player in the SudokuFX application.">
 <polygon fill="white" stroke="none" points="424.25,-2144 195.5,-2144 195.5,-1280 424.25,-1280 424.25,-2144"/>
 <text text-anchor="start" x="255.5" y="-2130.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="296" y="-2118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player</text>
@@ -267,18 +267,18 @@
 <text text-anchor="start" x="209.5" y="-2022.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime updatedat</text>
 <text text-anchor="start" x="201" y="-2006.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="209.5" y="-2006.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="209.5" y="-1994.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BACKGROUNID_MUST_NOT</text>
+<text text-anchor="start" x="209.5" y="-1994.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CREATEDAT_MUST_NOT</text>
 <text text-anchor="start" x="209.5" y="-1982.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
 <text text-anchor="start" x="201" y="-1966.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="209.5" y="-1966.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="209.5" y="-1954.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CREATEDAT_MUST_NOT</text>
-<text text-anchor="start" x="209.5" y="-1942.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
-<text text-anchor="start" x="201" y="-1926.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="209.5" y="-1926.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="209.5" y="-1914.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_MUST_NOT_BE_NULL</text>
-<text text-anchor="start" x="201" y="-1898.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="209.5" y="-1898.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="209.5" y="-1886.5" font-family="Helvetica,sans-Serif" font-size="10.00"> NAME_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="209.5" y="-1954.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="201" y="-1938.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="209.5" y="-1938.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="209.5" y="-1926.5" font-family="Helvetica,sans-Serif" font-size="10.00"> NAME_MUST_NOT_BE_NULL</text>
+<text text-anchor="start" x="201" y="-1910.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="209.5" y="-1910.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="209.5" y="-1898.5" font-family="Helvetica,sans-Serif" font-size="10.00"> OPTIONSID_MUST_NOT</text>
+<text text-anchor="start" x="209.5" y="-1886.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
 <text text-anchor="start" x="201" y="-1870.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="209.5" y="-1870.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="209.5" y="-1858.5" font-family="Helvetica,sans-Serif" font-size="10.00"> PLAYERLANGUAGEID_MUST</text>
@@ -362,7 +362,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" target="_top" xlink:title="Represents a player&#39;s language in the SudokuFX application.">
 <polygon fill="white" stroke="none" points="183.75,-2754 36,-2754 36,-2358 183.75,-2358 183.75,-2754"/>
 <text text-anchor="start" x="55.5" y="-2740.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="75" y="-2728.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage</text>
@@ -427,7 +427,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" target="_top" xlink:title="Represents user&#45;configurable options for the SudokuFX application.">
 <polygon fill="white" stroke="none" points="418.25,-2920 201.5,-2920 201.5,-2192 418.25,-2192 418.25,-2920"/>
 <text text-anchor="start" x="255.5" y="-2906.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="293" y="-2894.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options</text>
@@ -528,7 +528,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" target="_top" xlink:title="Represents a Menu configuration with a unique ID and a mode.">
 <polygon fill="white" stroke="none" points="577.25,-2666 436.5,-2666 436.5,-2446 577.25,-2446 577.25,-2666"/>
 <text text-anchor="start" x="440.5" y="-2652.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Menu</text>
 <text text-anchor="start" x="443.81" y="-2636.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -575,7 +575,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html" target="_top" xlink:title="Represents a difficulty level for a Sudoku game.">
 <polygon fill="white" stroke="none" points="567.88,-1834 441.88,-1834 441.88,-1590 567.88,-1590 567.88,-1834"/>
 <text text-anchor="start" x="450.5" y="-1820.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="480.12" y="-1808.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel</text>

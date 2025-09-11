@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Builder class for creating Player instances with fluent API.">
 <polygon fill="#999999" stroke="none" points="381.88,-420 165.88,-420 165.88,0 381.88,0 381.88,-420"/>
 <text text-anchor="start" x="219.5" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="229.62" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.PlayerBuilder</text>
@@ -68,7 +68,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" target="_top" xlink:title="Represents a player&#39;s language in the SudokuFX application.">
 <polygon fill="white" stroke="none" points="147.75,-1030 0,-1030 0,-634 147.75,-634 147.75,-1030"/>
 <text text-anchor="start" x="19.5" y="-1016.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="39" y="-1004.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage</text>
@@ -133,7 +133,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" target="_top" xlink:title="Represents user&#45;configurable options for the SudokuFX application.">
 <polygon fill="white" stroke="none" points="382.25,-1196 165.5,-1196 165.5,-468 382.25,-468 382.25,-1196"/>
 <text text-anchor="start" x="219.5" y="-1182.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="257" y="-1170.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options</text>
@@ -234,7 +234,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" target="_top" xlink:title="Represents a Menu configuration with a unique ID and a mode.">
 <polygon fill="white" stroke="none" points="541.25,-942 400.5,-942 400.5,-722 541.25,-722 541.25,-942"/>
 <text text-anchor="start" x="404.5" y="-928.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.Menu</text>
 <text text-anchor="start" x="407.81" y="-912.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title="Returns a new PlayerBuilder instance for fluent construction.">
 <polygon fill="white" stroke="#666666" points="389.75,-132 265,-132 265,-100 389.75,-100 389.75,-132"/>
 <text text-anchor="start" x="273" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="327.38" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.builder</text>
@@ -50,7 +50,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a86d6e2174a10a998f9cdf6f6c08cfa2c" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a86d6e2174a10a998f9cdf6f6c08cfa2c" target="_top" xlink:title="Returns whether the player is selected.">
 <polygon fill="white" stroke="#666666" points="389.75,-82 265,-82 265,-50 389.75,-50 389.75,-82"/>
 <text text-anchor="start" x="273" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="327.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getIsselected</text>
@@ -69,7 +69,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a53c68903f15cfcf06cd5cc7601ea9c4e" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a53c68903f15cfcf06cd5cc7601ea9c4e" target="_top" xlink:title="Sets the selection flag.">
 <polygon fill="white" stroke="#666666" points="389.75,-32 265,-32 265,0 389.75,0 389.75,-32"/>
 <text text-anchor="start" x="273" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="327.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.setIsselected</text>

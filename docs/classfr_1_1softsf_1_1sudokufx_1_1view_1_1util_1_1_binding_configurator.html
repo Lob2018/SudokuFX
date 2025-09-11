@@ -99,6 +99,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_bind
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.view.util.BindingConfigurator Class Reference</div></div>
 </div><!--header-->
@@ -111,7 +112,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_bind
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator__coll__graph.svg" width="404" height="555"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -120,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad672f879c0573e31673e94f2efe210ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a <code><a class="el" href="">Button</a></code> with optional text, accessibility, tooltip, and role description bindings.  <br /></td></tr>
 <tr class="separator:ad672f879c0573e31673e94f2efe210ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb07af495365e92d8486dae1d6af957" id="r_a3eb07af495365e92d8486dae1d6af957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eb07af495365e92d8486dae1d6af957">configureColorPicker</a> (ColorPicker colorPicker, ObservableValue&lt; String &gt; accessibleTextProperty, ObservableValue&lt; String &gt; tooltipProperty, ObservableValue&lt; String &gt; roleDescriptionProperty)</td></tr>
-<tr class="memdesc:a3eb07af495365e92d8486dae1d6af957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a <code><a class="el" href="">ColorPicker</a></code> with accessibility, tooltip, and role description bindings.  <br /></td></tr>
+<tr class="memdesc:a3eb07af495365e92d8486dae1d6af957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a <code><a class="el" href="">ColorPicker</a></code> with accessibility, tooltip, role description bindings, and keyboard interaction support.  <br /></td></tr>
 <tr class="separator:a3eb07af495365e92d8486dae1d6af957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42201c9ed83310d8026b684674cc60c8" id="r_a42201c9ed83310d8026b684674cc60c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42201c9ed83310d8026b684674cc60c8">configureLabel</a> (Label labelNode, ObservableValue&lt; String &gt; textProperty)</td></tr>
 <tr class="memdesc:a42201c9ed83310d8026b684674cc60c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a <code><a class="el" href="">Label</a></code> with a text binding.  <br /></td></tr>
@@ -134,6 +135,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a23b1de906070b29c510049d372b76e43" id="r_a23b1de906070b29c510049d372b76e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23b1de906070b29c510049d372b76e43">configureVisibilityAndManaged</a> (Node node, ObservableValue&lt; Boolean &gt; visibilityBinding)</td></tr>
 <tr class="memdesc:a23b1de906070b29c510049d372b76e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures both visibility and managed state of a <code><a class="el" href="">Node</a></code> using a shared boolean binding.  <br /></td></tr>
 <tr class="separator:a23b1de906070b29c510049d372b76e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8030efa9465648dc2520f8b3737cdbb9" id="r_a8030efa9465648dc2520f8b3737cdbb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8030efa9465648dc2520f8b3737cdbb9">configureColorPickerKeyboardSupport</a> (ColorPicker colorPicker)</td></tr>
+<tr class="memdesc:a8030efa9465648dc2520f8b3737cdbb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures keyboard support for a <code><a class="el" href="">ColorPicker</a></code> with SPACE/ENTER to open and ESCAPE to close the color selection popup.  <br /></td></tr>
+<tr class="separator:a8030efa9465648dc2520f8b3737cdbb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class for configuring common UI binding patterns in JavaFX views. </p>
@@ -224,7 +231,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Configures a <code><a class="el" href="">ColorPicker</a></code> with accessibility, tooltip, and role description bindings. </p>
+<p>Configures a <code><a class="el" href="">ColorPicker</a></code> with accessibility, tooltip, role description bindings, and keyboard interaction support. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">colorPicker</td><td>the <code><a class="el" href="">ColorPicker</a></code> to configure </td></tr>
@@ -237,6 +244,52 @@ Public Member Functions</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">NullPointerException</td><td>if any parameter is <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator_a3eb07af495365e92d8486dae1d6af957_cgraph.svg" width="506" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8030efa9465648dc2520f8b3737cdbb9" name="a8030efa9465648dc2520f8b3737cdbb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8030efa9465648dc2520f8b3737cdbb9">&#9670;&#160;</a></span>configureColorPickerKeyboardSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.util.BindingConfigurator.configureColorPickerKeyboardSupport </td>
+          <td>(</td>
+          <td class="paramtype">ColorPicker</td>          <td class="paramname"><span class="paramname"><em>colorPicker</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Configures keyboard support for a <code><a class="el" href="">ColorPicker</a></code> with SPACE/ENTER to open and ESCAPE to close the color selection popup. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">colorPicker</td><td>the <code><a class="el" href="">ColorPicker</a></code> to configure </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if colorPicker is <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -404,7 +457,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html">BindingConfigurator</a></li>
-    <li class="footer">Generated on Wed Sep 10 2025 15:56:14 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Sep 11 2025 22:37:07 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title="Returns a new PlayerBuilder instance for fluent construction.">
 <polygon fill="white" stroke="#666666" points="379.25,-132 254.5,-132 254.5,-100 379.25,-100 379.25,-132"/>
 <text text-anchor="start" x="262.5" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="316.88" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.builder</text>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad6ffdca54d9d371b10b65b623dbbdeaf" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad6ffdca54d9d371b10b65b623dbbdeaf" target="_top" xlink:title="Returns the games played by the player.">
 <polygon fill="white" stroke="#666666" points="379.25,-82 254.5,-82 254.5,-50 379.25,-50 379.25,-82"/>
 <text text-anchor="start" x="262.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="316.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getGames</text>
@@ -70,7 +70,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a1bb46d1f635f682e5a8a0a45c9eac961" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a1bb46d1f635f682e5a8a0a45c9eac961" target="_top" xlink:title="Sets the games.">
 <polygon fill="white" stroke="#666666" points="379.25,-32 254.5,-32 254.5,0 379.25,0 379.25,-32"/>
 <text text-anchor="start" x="262.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="316.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.setGames</text>

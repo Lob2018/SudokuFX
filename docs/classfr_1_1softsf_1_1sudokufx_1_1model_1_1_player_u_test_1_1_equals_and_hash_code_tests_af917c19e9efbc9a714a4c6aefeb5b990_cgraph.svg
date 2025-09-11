@@ -79,7 +79,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title="Returns a new PlayerBuilder instance for fluent construction.">
 <polygon fill="white" stroke="#666666" points="377.75,-82 253,-82 253,-50 377.75,-50 377.75,-82"/>
 <text text-anchor="start" x="261" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="315.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.builder</text>
@@ -98,7 +98,7 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#abbe67fb60b057a2f1f153606bbfff685" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#abbe67fb60b057a2f1f153606bbfff685" target="_top" xlink:title="Compares two Player objects for equality based on all fields.">
 <polygon fill="white" stroke="#666666" points="377.75,-32 253,-32 253,0 377.75,0 377.75,-32"/>
 <text text-anchor="start" x="261" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="315.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.equals</text>
@@ -117,7 +117,7 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab62e3636232e225aeb3e6e1f16f91e84" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab62e3636232e225aeb3e6e1f16f91e84" target="_top" xlink:title="Protected default constructor for JPA.">
 <polygon fill="white" stroke="#666666" points="538.5,-32 413.75,-32 413.75,0 538.5,0 538.5,-32"/>
 <text text-anchor="start" x="421.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="476.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.Player</text>

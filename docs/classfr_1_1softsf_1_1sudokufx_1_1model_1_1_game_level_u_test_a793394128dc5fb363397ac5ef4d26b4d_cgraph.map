@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenSameGameLevel_whenCallingHashCodeMultipleTimes_thenShouldReturnConsistentValues" name="fr.softsf.sudokufx.model.GameLevelUTest.givenSameGameLevel_whenCallingHashCodeMultipleTimes_thenShouldReturnConsistentValues">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,263,104"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="83,28,86,18,96,10,112,5,134,3,161,6,177,13,175,18,159,11,134,8,113,10,98,15,90,21,88,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a6d92da7aee775848259d9afe881c07de" title=" " alt="" coords="311,45,477,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a6d92da7aee775848259d9afe881c07de" title="Computes the hash code based on all fields." alt="" coords="311,45,477,88"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="263,64,295,64,295,69,263,69"/>
 </map>

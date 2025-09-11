@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.Player.PlayerBuilder.createdat" name="fr.softsf.sudokufx.model.Player.PlayerBuilder.createdat">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,203,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7ca24bf2168a2c35c92b92000b896b50" title=" " alt="" coords="251,5,417,48"/>
+<area shape="rect" id="Node000001" title="Sets the creation timestamp." alt="" coords="5,5,203,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7ca24bf2168a2c35c92b92000b896b50" title="Validates that the creation date is not null." alt="" coords="251,5,417,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,24,235,24,235,29,203,29"/>
 </map>

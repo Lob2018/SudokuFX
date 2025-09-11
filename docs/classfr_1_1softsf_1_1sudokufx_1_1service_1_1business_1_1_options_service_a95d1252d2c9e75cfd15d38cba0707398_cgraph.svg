@@ -68,7 +68,7 @@ var sectionId = 'dynsection-1';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" target="_top" xlink:title="Sets the ARGB hex color after validation.">
 <polygon fill="white" stroke="#666666" points="332.75,-282 208,-282 208,-250 332.75,-250 332.75,-282"/>
 <text text-anchor="start" x="216" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="270.38" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.setHexcolor</text>
@@ -87,7 +87,7 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" target="_top" xlink:title="Sets the background image path after validation.">
 <polygon fill="white" stroke="#666666" points="332.75,-232 208,-232 208,-200 332.75,-200 332.75,-232"/>
 <text text-anchor="start" x="216" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="270.38" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.setImagepath</text>
@@ -106,7 +106,7 @@ var sectionId = 'dynsection-1';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a7b16588e7e41bd9f3f02e0cde38f4b80" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a7b16588e7e41bd9f3f02e0cde38f4b80" target="_top" xlink:title="Sets whether a background image is used.">
 <polygon fill="white" stroke="#666666" points="332.75,-182 208,-182 208,-150 332.75,-150 332.75,-182"/>
 <text text-anchor="start" x="216" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="270.38" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.setIsimage</text>
@@ -125,7 +125,7 @@ var sectionId = 'dynsection-1';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ea8b1a130eea1802b6b00583c448c9d" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ea8b1a130eea1802b6b00583c448c9d" target="_top" xlink:title="Sets whether the background song is muted.">
 <polygon fill="white" stroke="#666666" points="332.75,-132 208,-132 208,-100 332.75,-100 332.75,-132"/>
 <text text-anchor="start" x="216" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="270.38" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.setIsmuted</text>
@@ -144,7 +144,7 @@ var sectionId = 'dynsection-1';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab02aebcbb0158468003539b014f94af8" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab02aebcbb0158468003539b014f94af8" target="_top" xlink:title="Sets whether the background image is opaque.">
 <polygon fill="white" stroke="#666666" points="332.75,-82 208,-82 208,-50 332.75,-50 332.75,-82"/>
 <text text-anchor="start" x="216" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="270.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.setIsopaque</text>
@@ -163,7 +163,7 @@ var sectionId = 'dynsection-1';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ebfc05d23131bff9114c961a5330766" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ebfc05d23131bff9114c961a5330766" target="_top" xlink:title="Sets the background song path after validation.">
 <polygon fill="white" stroke="#666666" points="332.75,-32 208,-32 208,0 332.75,0 332.75,-32"/>
 <text text-anchor="start" x="216" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="270.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.setSongpath</text>
@@ -182,7 +182,7 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" target="_top" xlink:title="Validates hex color format (#RRGGBBAA).">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" target="_top" xlink:title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format.">
 <polygon fill="white" stroke="#666666" points="494.25,-282 368.75,-282 368.75,-250 494.25,-250 494.25,-282"/>
 <text text-anchor="start" x="376.75" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="431.5" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.validateHexcolor</text>
@@ -201,7 +201,7 @@ var sectionId = 'dynsection-1';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" target="_top" xlink:title="Validates that a path is not null and does not exceed the allowed length.">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" target="_top" xlink:title="Validates a file path for non&#45;null and maximum length.">
 <polygon fill="white" stroke="#666666" points="493.88,-132 369.12,-132 369.12,-100 493.88,-100 493.88,-132"/>
 <text text-anchor="start" x="377.12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="431.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.validatePath</text>

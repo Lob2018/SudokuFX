@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.repository.GameLevelRepository" name="fr.softsf.sudokufx.repository.GameLevelRepository">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,182,224"/>
+<area shape="rect" id="Node000001" title="Repository interface for GameLevel entities." alt="" coords="5,139,182,224"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,5,182,91"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,106,96,139,91,139,91,106"/>
 </map>

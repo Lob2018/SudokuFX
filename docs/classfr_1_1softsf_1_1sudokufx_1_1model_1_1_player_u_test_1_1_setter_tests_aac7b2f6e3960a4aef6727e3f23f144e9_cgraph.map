@@ -1,10 +1,10 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullMenu_whenSettingMenuid_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullMenu_whenSettingMenuid_thenNullPointerExceptionIsThrown">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,276,104"/>
 <area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="88,28,91,18,101,10,118,5,141,3,168,6,185,13,183,18,166,11,140,8,119,10,104,15,96,21,93,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title=" " alt="" coords="324,12,490,55"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="324,12,490,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,47,308,43,309,48,276,52"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0c578d68480f93172709babb1224f573" title=" " alt="" coords="324,79,490,121"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0c578d68480f93172709babb1224f573" title="Sets the menu after validation." alt="" coords="324,79,490,121"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="276,81,309,85,308,90,276,86"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7262425d3a1c07b5ffdafba0a6aa51de" title=" " alt="" coords="538,79,704,121"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7262425d3a1c07b5ffdafba0a6aa51de" title="Validates that the menu is not null." alt="" coords="538,79,704,121"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="491,97,523,97,523,103,491,103"/>
 </map>

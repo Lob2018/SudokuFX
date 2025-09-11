@@ -108,8 +108,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>A generic <code class="JavaDocCode">ListCell</code> for displaying and removing items of type <code class="JavaDocCode">T</code> in a <code class="JavaDocCode"><br/>
-ListView</code>.
+<p>A generic <code class="JavaDocCode">ListCell</code> for displaying items of type <code class="JavaDocCode">T</code> in a <code><a class="el" href="">ListView</a></code> with a label and a remove button.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for fr.softsf.sudokufx.view.component.list.GenericDtoListCell&lt; T &gt;:</div>
@@ -129,18 +128,19 @@ ListView</code>.
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a714dbddf5603434c90e8d93c6defef08" id="r_a714dbddf5603434c90e8d93c6defef08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a714dbddf5603434c90e8d93c6defef08">GenericDtoListCell</a> (ListView&lt; T &gt; <a class="el" href="#a231deddace9a2b0a8d142f7b0c9183f8">listView</a>, String buttonText, StringBinding <a class="el" href="#aab78ed4db66d82e654b8fde919fd0758">buttonAccessibleTextBinding</a>, StringBinding <a class="el" href="#a3bd91e5b909b76295f7edfa2dbd78472">confirmationTitleBinding</a>, StringBinding <a class="el" href="#a42365b87c7071f516418054a3da1d828">confirmationMessageBinding</a>, Alert <a class="el" href="#a647bffb41467b7a749378c3bf636a586">confirmationAlert</a>, Function&lt; T, String &gt; <a class="el" href="#a11d63a6db6b7a0db119a5ab3ecec145d">displayTextFunction</a>)</td></tr>
+<tr class="memdesc:a714dbddf5603434c90e8d93c6defef08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A generic ListCell for displaying items of type T in a ListView with a label and a remove button.">GenericDtoListCell</a>.  <br /></td></tr>
 <tr class="separator:a714dbddf5603434c90e8d93c6defef08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:acd5440f488e08198106fa85fec744914" id="r_acd5440f488e08198106fa85fec744914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd5440f488e08198106fa85fec744914">updateItem</a> (T item, boolean empty)</td></tr>
-<tr class="memdesc:acd5440f488e08198106fa85fec744914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the cell's content or clears it if empty.  <br /></td></tr>
+<tr class="memdesc:acd5440f488e08198106fa85fec744914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the cell's content.  <br /></td></tr>
 <tr class="separator:acd5440f488e08198106fa85fec744914"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aef103444f453d74e5ca78eb5d5bbe8a8" id="r_aef103444f453d74e5ca78eb5d5bbe8a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef103444f453d74e5ca78eb5d5bbe8a8">confirmAndRemoveItem</a> (T item)</td></tr>
-<tr class="memdesc:aef103444f453d74e5ca78eb5d5bbe8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows a confirmation dialog with localized title and message for the given item.  <br /></td></tr>
+<tr class="memdesc:aef103444f453d74e5ca78eb5d5bbe8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a confirmation dialog and removes the item if the user confirms.  <br /></td></tr>
 <tr class="separator:aef103444f453d74e5ca78eb5d5bbe8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -170,12 +170,11 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:af2245b19dc50988f34bc439ab123b213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A generic <code class="JavaDocCode">ListCell</code> for displaying and removing items of type <code class="JavaDocCode">T</code> in a <code class="JavaDocCode"><br/>
-ListView</code>. </p>
-<p>Displays a label with text obtained from a provided function, and a button that removes the item after user confirmation via a localized dialog. Accessibility and tooltips are dynamically updated using <code><a class="el" href="">StringBinding</a></code>s.</p>
+<div class="textblock"><p>A generic <code class="JavaDocCode">ListCell</code> for displaying items of type <code class="JavaDocCode">T</code> in a <code><a class="el" href="">ListView</a></code> with a label and a remove button. </p>
+<p>The label displays text generated via a provided <code><a class="el" href="">Function</a></code>. The remove button shows a confirmation dialog before removing the item. Accessibility text and tooltips are updated dynamically via <code><a class="el" href="">StringBinding</a></code>s.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">&lt;T&gt;</td><td>the type of items displayed in the ListView </td></tr>
+    <tr><td class="paramname">&lt;T&gt;</td><td>the type of the items displayed in the ListView </td></tr>
   </table>
   </dd>
 </dl>
@@ -224,6 +223,20 @@ ListView</code>. </p>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A generic ListCell for displaying items of type T in a ListView with a label and a remove button.">GenericDtoListCell</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listView</td><td>the ListView containing this cell </td></tr>
+    <tr><td class="paramname">buttonText</td><td>the text displayed on the remove button </td></tr>
+    <tr><td class="paramname">buttonAccessibleTextBinding</td><td>binding for the button's accessible text (localized) </td></tr>
+    <tr><td class="paramname">confirmationTitleBinding</td><td>binding for the confirmation dialog title (localized) </td></tr>
+    <tr><td class="paramname">confirmationMessageBinding</td><td>binding for the confirmation dialog message (localized) </td></tr>
+    <tr><td class="paramname">confirmationAlert</td><td>the alert dialog used for removal confirmation </td></tr>
+    <tr><td class="paramname">displayTextFunction</td><td>function to generate the display text for each item </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -250,11 +263,10 @@ ListView</code>. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Shows a confirmation dialog with localized title and message for the given item. </p>
-<p>If the user confirms, removes the item from the ListView.</p>
+<p>Displays a confirmation dialog and removes the item if the user confirms. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">item</td><td>the item to remove upon confirmation </td></tr>
+    <tr><td class="paramname">item</td><td>the item to remove </td></tr>
   </table>
   </dd>
 </dl>
@@ -288,12 +300,12 @@ ListView</code>. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Updates the cell's content or clears it if empty. </p>
-<p>If the item is non-null, displays the label text and configures the remove button with accessibility and tooltip texts. The button action shows a confirmation dialog before removing the item.</p>
+<p>Updates the cell's content. </p>
+<p>If the item is not null, sets the label text and button behavior. If empty, clears the cell's content.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">item</td><td>the item to display </td></tr>
-    <tr><td class="paramname">empty</td><td>true if this cell is empty </td></tr>
+    <tr><td class="paramname">empty</td><td>whether this cell is empty </td></tr>
   </table>
   </dd>
 </dl>
@@ -537,7 +549,7 @@ ListView</code>. </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html">component</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html">list</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">GenericDtoListCell</a></li>
-    <li class="footer">Generated on Wed Sep 10 2025 15:56:14 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Sep 11 2025 22:37:07 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

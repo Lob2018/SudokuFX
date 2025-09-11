@@ -33,7 +33,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aada8238bf92a8a5d5b6141f66f8bf5c1" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aada8238bf92a8a5d5b6141f66f8bf5c1" target="_top" xlink:title="Returns a new OptionsBuilder instance for fluent construction.">
 <polygon fill="white" stroke="#666666" points="348.5,-38 223.75,-38 223.75,-6 348.5,-6 348.5,-38"/>
 <text text-anchor="start" x="231.75" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="286.12" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.builder</text>

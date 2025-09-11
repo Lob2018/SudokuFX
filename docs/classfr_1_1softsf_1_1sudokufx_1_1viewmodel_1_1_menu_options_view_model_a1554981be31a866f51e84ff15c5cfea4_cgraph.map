@@ -1,18 +1,50 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.MenuOptionsViewModel" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.MenuOptionsViewModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,208,249,267"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab375565a060bffec779b340dc14f7c43" title="Creates a localized binding combining a formatted message and a suffix." alt="" coords="297,5,558,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,206,211,140,252,104,295,74,304,69,306,74,298,78,255,109,215,143,154,209"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a218b89fb8384b0edf79c7c1d70f9b292" title="Creates a formatted localized binding with one dynamic argument." alt="" coords="297,88,558,147"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,205,296,156,313,150,314,155,298,161,189,210"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#acc42c19bd4c6eafc97a5826eb787c906" title="Creates a StringBinding that returns the localized string for the given key, updating automatically w..." alt="" coords="309,171,546,229"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="249,220,293,214,294,219,249,225"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a89500f671995a3ab11b253bf65cafdfb" title="Returns the localized text corresponding to the grid opacity state." alt="" coords="299,253,556,296"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="249,250,284,254,283,259,249,255"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab492d58498724756aa0082dafe071aa4" title="Returns the localized information about the current mute state." alt="" coords="319,320,536,363"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="194,265,298,305,321,313,319,318,296,311,192,270"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a6e733cf8be577984de3b8b21b9a3c696" title="Returns the localized text corresponding to the mute state." alt="" coords="317,387,538,429"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="158,265,219,320,257,348,298,372,310,378,308,383,295,377,254,353,216,324,155,269"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a359e959bd335e531fe59f4eb942c0813" title="Utility: always observe the locale in addition to custom dependencies." alt="" coords="606,55,894,97"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="559,49,591,53,590,58,558,54"/>
-<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="558,98,590,94,591,99,559,103"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,411,249,469"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab375565a060bffec779b340dc14f7c43" title="Creates a localized binding combining a formatted message and a suffix." alt="" coords="647,307,908,365"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="178,408,233,381,296,359,381,342,469,332,554,327,631,327,631,332,554,333,469,337,382,347,297,364,235,386,180,413"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a218b89fb8384b0edf79c7c1d70f9b292" title="Creates a formatted localized binding with one dynamic argument." alt="" coords="647,125,908,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="130,410,146,344,176,259,198,216,224,175,257,138,295,108,344,85,396,72,450,68,504,70,557,77,608,89,696,117,694,122,607,94,557,83,504,75,450,73,397,78,346,90,298,113,260,142,229,178,202,219,181,261,151,345,136,411"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#acc42c19bd4c6eafc97a5826eb787c906" title="Creates a StringBinding that returns the localized string for the given key, updating automatically w..." alt="" coords="330,672,566,731"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="145,469,169,511,204,563,247,614,298,658,317,669,314,673,295,662,243,618,199,566,165,514,141,471"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a8920334361b12271411cb8f6b2e32a8a" title="Creates the accessibility label for the mute button, based on the current mute state." alt="" coords="297,189,598,232"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="143,409,168,370,203,325,246,279,295,242,304,237,307,241,298,246,249,283,207,328,172,373,148,412"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#affb61921e2b3545de6b96d4fbb216fff" title="Creates the icon name for the mute button, depending on whether mute is active or not." alt="" coords="329,755,566,797"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="139,469,158,528,190,602,211,640,236,677,265,711,298,741,316,752,314,756,295,745,261,715,232,681,207,643,185,604,153,530,134,471"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#af241419d9819c8b2012c3a0d3638ac2f" title="Creates the visible label for the mute button, reflecting the current mute state." alt="" coords="329,821,566,864"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="135,469,151,539,180,632,202,680,228,727,260,770,298,807,316,819,313,824,295,811,256,774,224,730,197,682,175,633,145,541,130,470"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab5fddee7152e0b956c92a65fe426051c" title="Creates the tooltip for the mute button, combining dynamic mute info and submenu role." alt="" coords="323,256,573,299"/>
+<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="160,408,220,360,257,336,296,315,329,302,331,306,298,320,260,341,224,365,163,412"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac0e36364f613ccaed2292028fcdbbd60" title="Creates the accessibility label for the opacity button, based on the inverse of the current grid opac..." alt="" coords="334,373,562,432"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="249,423,318,415,319,420,249,428"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a03b4d5761d94e8005122e095d1e586c5" title="Creates the icon name for the opacity button, depending on whether opacity is enabled or not." alt="" coords="321,888,574,931"/>
+<area shape="poly" id="edge18_Node000001_Node000014" title=" " alt="" coords="133,469,144,551,155,604,171,661,193,719,220,776,255,829,298,874,309,882,306,886,295,878,251,832,216,779,188,721,166,662,150,605,139,552,128,470"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#aa1571dd95cf44f265efbd2bd5e07a95f" title="Creates the visible label for the opacity button, reflecting the current grid opacity value." alt="" coords="321,605,574,648"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="154,468,215,531,255,564,298,591,310,597,308,602,295,596,252,568,212,535,150,472"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#aeb626611d7bd2c093f2043b67f4476b4" title="Creates the tooltip for the opacity button, combining dynamic label and submenu role." alt="" coords="334,523,562,581"/>
+<area shape="poly" id="edge21_Node000001_Node000016" title=" " alt="" coords="195,467,298,508,320,515,318,520,296,513,193,472"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a6d84c23dacad6dd546e8574da7d69b46" title="Creates the accessibility label for the song button, depending on whether the song field is empty." alt="" coords="297,123,599,165"/>
+<area shape="poly" id="edge24_Node000001_Node000017" title=" " alt="" coords="136,409,158,358,191,294,237,229,264,200,295,175,302,171,305,175,298,179,268,204,241,233,196,297,163,360,141,411"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a7c45bfa11fa017fafba683a9c63c60b2" title="Creates the visible label for the song button, adapting to whether a song is present or not." alt="" coords="329,5,567,48"/>
+<area shape="poly" id="edge26_Node000001_Node000018" title=" " alt="" coords="130,410,146,339,176,246,198,196,224,148,257,104,295,65,313,52,316,56,298,69,261,107,229,151,202,199,181,248,151,340,136,411"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a7ef223f7e057ce1c5d33dd4aebe3f337" title="Creates the tooltip for the song button, combining dynamic song info and submenu role." alt="" coords="322,456,574,499"/>
+<area shape="poly" id="edge28_Node000001_Node000019" title=" " alt="" coords="249,452,307,458,306,464,249,457"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a359e959bd335e531fe59f4eb942c0813" title="Utility: always observe the locale in addition to custom dependencies." alt="" coords="956,224,1245,267"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="884,303,1007,269,1008,274,885,309"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="885,182,1008,217,1007,222,884,187"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="577,186,631,177,632,182,578,191"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ab492d58498724756aa0082dafe071aa4" title="Returns the localized information about the current mute state." alt="" coords="669,219,886,261"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="599,221,654,226,654,232,599,227"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a6e733cf8be577984de3b8b21b9a3c696" title="Returns the localized text corresponding to the mute state." alt="" coords="668,821,888,864"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="567,840,652,840,652,845,567,845"/>
+<area shape="poly" id="edge13_Node000011_Node000002" title=" " alt="" coords="572,297,632,307,631,313,571,302"/>
+<area shape="poly" id="edge14_Node000011_Node000007" title=" " alt="" coords="573,261,654,251,654,257,574,266"/>
+<area shape="poly" id="edge16_Node000012_Node000004" title=" " alt="" coords="514,370,558,343,597,309,613,282,619,257,626,231,645,205,664,190,667,194,649,209,631,234,624,258,618,284,601,312,561,348,517,375"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a89500f671995a3ab11b253bf65cafdfb" title="Returns the localized text corresponding to the grid opacity state." alt="" coords="649,531,906,573"/>
+<area shape="poly" id="edge17_Node000012_Node000013" title=" " alt="" coords="563,428,600,442,673,479,735,519,732,524,670,484,598,446,561,433"/>
+<area shape="poly" id="edge20_Node000015_Node000013" title=" " alt="" coords="548,602,598,591,668,575,669,580,600,596,549,607"/>
+<area shape="poly" id="edge22_Node000016_Node000002" title=" " alt="" coords="561,525,598,508,641,479,680,444,743,376,747,379,684,448,644,483,600,513,564,530"/>
+<area shape="poly" id="edge23_Node000016_Node000013" title=" " alt="" coords="562,549,634,549,634,555,562,555"/>
+<area shape="poly" id="edge25_Node000017_Node000004" title=" " alt="" coords="599,146,632,147,632,153,599,152"/>
+<area shape="poly" id="edge27_Node000018_Node000004" title=" " alt="" coords="544,46,600,64,657,89,711,115,709,120,655,94,598,69,542,51"/>
+<area shape="poly" id="edge29_Node000019_Node000002" title=" " alt="" coords="565,453,598,442,664,409,722,372,725,377,667,414,600,446,567,458"/>
 </map>

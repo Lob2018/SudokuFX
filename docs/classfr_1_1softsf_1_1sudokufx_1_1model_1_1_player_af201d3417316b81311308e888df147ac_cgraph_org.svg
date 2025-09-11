@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Sets the name after validation.">
 <polygon fill="#999999" stroke="#666666" points="124.75,-32 0,-32 0,0 124.75,0 124.75,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="62.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.setName</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" target="_top" xlink:title="Validates that the name is not null.">
 <polygon fill="white" stroke="#666666" points="285.5,-32 160.75,-32 160.75,0 285.5,0 285.5,-32"/>
 <text text-anchor="start" x="168.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="223.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateName</text>

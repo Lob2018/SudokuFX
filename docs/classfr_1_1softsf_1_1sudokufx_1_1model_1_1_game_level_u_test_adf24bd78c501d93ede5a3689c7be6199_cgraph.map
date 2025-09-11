@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenGameLevelWithValues_whenCallingToString_thenShouldContainAllFieldValues" name="fr.softsf.sudokufx.model.GameLevelUTest.givenGameLevelWithValues_whenCallingToString_thenShouldContainAllFieldValues">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,309,104"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="101,28,105,18,116,10,133,5,157,3,186,6,204,13,202,18,185,11,157,8,134,10,118,15,109,21,107,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3b98a4670237731506a41f0fcb036efd" title=" " alt="" coords="357,45,523,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3b98a4670237731506a41f0fcb036efd" title="Returns a string representation of the game level." alt="" coords="357,45,523,88"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="309,64,341,64,341,69,309,69"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.Grid.Grid" name="fr.softsf.sudokufx.model.Grid.Grid">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,172,81"/>
+<area shape="rect" id="Node000001" title="Full constructor to initialize a grid with all fields." alt="" coords="5,39,172,81"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af49e1b436868180644535afda35cd5cd" title="Validates that the default grid value is not null." alt="" coords="220,5,408,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,45,204,40,205,46,173,50"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a151e63c8afa747ec884b000b6a82f065" title="Validates that the grid value is not null." alt="" coords="231,72,397,115"/>

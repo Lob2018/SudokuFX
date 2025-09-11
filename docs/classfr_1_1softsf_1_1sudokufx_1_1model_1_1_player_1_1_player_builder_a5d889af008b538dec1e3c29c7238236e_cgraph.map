@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.Player.PlayerBuilder.optionsid" name="fr.softsf.sudokufx.model.Player.PlayerBuilder.optionsid">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,201,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aa248bf09324098ddbaedfb58fc6d73ba" title=" " alt="" coords="249,5,415,48"/>
+<area shape="rect" id="Node000001" title="Sets the options of the player." alt="" coords="5,5,201,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aa248bf09324098ddbaedfb58fc6d73ba" title="Validates that the options are not null." alt="" coords="249,5,415,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,24,233,24,233,29,201,29"/>
 </map>

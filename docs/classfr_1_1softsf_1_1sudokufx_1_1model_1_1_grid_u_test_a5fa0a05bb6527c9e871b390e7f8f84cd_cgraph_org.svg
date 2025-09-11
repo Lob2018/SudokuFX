@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad178f4e4a4f286d044c17f7411368300" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad178f4e4a4f286d044c17f7411368300" target="_top" xlink:title="Returns the default grid values.">
 <polygon fill="white" stroke="#666666" points="323.75,-182 199,-182 199,-150 323.75,-150 323.75,-182"/>
 <text text-anchor="start" x="207" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="261.38" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Grid.getDefaultgridvalue</text>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4273be2bf866779941f2ba0e0556a8e6" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4273be2bf866779941f2ba0e0556a8e6" target="_top" xlink:title="Returns the unique identifier of the grid.">
 <polygon fill="white" stroke="#666666" points="323.75,-132 199,-132 199,-100 323.75,-100 323.75,-132"/>
 <text text-anchor="start" x="207" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="261.38" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Grid.getGridid</text>
@@ -70,7 +70,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5bd5ea56ca202e9deb4b7f79059e2e5c" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5bd5ea56ca202e9deb4b7f79059e2e5c" target="_top" xlink:title="Returns the current grid values.">
 <polygon fill="white" stroke="#666666" points="323.75,-82 199,-82 199,-50 323.75,-50 323.75,-82"/>
 <text text-anchor="start" x="207" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="261.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Grid.getGridvalue</text>
@@ -89,7 +89,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a44e8b242ad211cc4e4d0107d2389af4a" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a44e8b242ad211cc4e4d0107d2389af4a" target="_top" xlink:title="Returns the percentage of possibilities for this grid.">
 <polygon fill="white" stroke="#666666" points="323.75,-32 199,-32 199,0 323.75,0 323.75,-32"/>
 <text text-anchor="start" x="207" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="261.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Grid.getPossibilities</text>

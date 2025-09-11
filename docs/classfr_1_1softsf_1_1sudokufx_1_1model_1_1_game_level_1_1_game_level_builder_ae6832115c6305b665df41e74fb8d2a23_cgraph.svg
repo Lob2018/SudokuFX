@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Builds a new GameLevel instance using the values previously set in the builder.">
+<g id="a_Node000001"><a xlink:title="Builds a validated GameLevel instance.">
 <polygon fill="#999999" stroke="#666666" points="171.25,-32 0,-32 0,0 171.25,0 171.25,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="85.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel.GameLevelBuilder.build</text>
@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#abb25b8080161c86b7034a8699aafb75d" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#abb25b8080161c86b7034a8699aafb75d" target="_top" xlink:title="Protected default constructor for JPA.">
 <polygon fill="white" stroke="#666666" points="332,-32 207.25,-32 207.25,0 332,0 332,-32"/>
 <text text-anchor="start" x="215.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="269.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel.GameLevel</text>

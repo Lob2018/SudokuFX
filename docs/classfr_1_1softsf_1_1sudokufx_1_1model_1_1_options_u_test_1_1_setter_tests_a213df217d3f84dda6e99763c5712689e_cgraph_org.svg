@@ -23,7 +23,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" target="_top" xlink:title="Sets the ARGB hex color after validation.">
 <polygon fill="white" stroke="#666666" points="352.25,-44 227.5,-44 227.5,-12 352.25,-12 352.25,-44"/>
 <text text-anchor="start" x="235.5" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="289.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.setHexcolor</text>
@@ -42,7 +42,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" target="_top" xlink:title="Validates hex color format (#RRGGBBAA).">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" target="_top" xlink:title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format.">
 <polygon fill="white" stroke="#666666" points="513.75,-44 388.25,-44 388.25,-12 513.75,-12 513.75,-44"/>
 <text text-anchor="start" x="396.25" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="451" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.validateHexcolor</text>

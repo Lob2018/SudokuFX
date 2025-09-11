@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a48e867b7b81bfbd3b5c2830637fdc06d" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a48e867b7b81bfbd3b5c2830637fdc06d" target="_top" xlink:title="Creates a new GameLevelBuilder for fluent construction.">
 <polygon fill="white" stroke="#666666" points="383.75,-38 259,-38 259,-6 383.75,-6 383.75,-38"/>
 <text text-anchor="start" x="267" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="321.38" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel.builder</text>

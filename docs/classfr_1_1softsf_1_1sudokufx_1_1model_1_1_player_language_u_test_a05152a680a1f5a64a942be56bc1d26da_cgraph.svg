@@ -43,7 +43,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a70c763e120718f9286c4d476b6b7c968" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a70c763e120718f9286c4d476b6b7c968" target="_top" xlink:title="Returns the ISO code of this PlayerLanguage.">
 <polygon fill="white" stroke="#666666" points="380.38,-82 255.62,-82 255.62,-50 380.38,-50 380.38,-82"/>
 <text text-anchor="start" x="263.62" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="318" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage.getIso</text>
@@ -62,7 +62,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" target="_top" xlink:title="Returns the unique ID of this PlayerLanguage instance.">
 <polygon fill="white" stroke="#666666" points="406.25,-32 229.75,-32 229.75,0 406.25,0 406.25,-32"/>
 <text text-anchor="start" x="237.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="318" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage.getPlayerlanguageid</text>

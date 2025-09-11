@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Full constructor initializing all fields of the game.">
 <polygon fill="#999999" stroke="#666666" points="124.75,-132 0,-132 0,-100 124.75,-100 124.75,-132"/>
 <text text-anchor="start" x="8" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="62.38" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.Game</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a15b848d9f7f525fd2619355a0f4689c6" target="_top" xlink:title="Validates that the given creation date is not null.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a15b848d9f7f525fd2619355a0f4689c6" target="_top" xlink:title="Ensures that the creation timestamp is not null.">
 <polygon fill="white" stroke="#666666" points="285.88,-232 161.12,-232 161.12,-200 285.88,-200 285.88,-232"/>
 <text text-anchor="start" x="169.12" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="223.5" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.validateCreatedAt</text>
@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a94213340195cfb0959046c999196aee1" target="_top" xlink:title="Validates that the given Grid is not null.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a94213340195cfb0959046c999196aee1" target="_top" xlink:title="Ensures that the Grid is not null.">
 <polygon fill="white" stroke="#666666" points="285.88,-182 161.12,-182 161.12,-150 285.88,-150 285.88,-182"/>
 <text text-anchor="start" x="169.12" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="223.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.validateGrid</text>
@@ -59,7 +59,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0ab90848c9715b8f02bfdaf999d8e212" target="_top" xlink:title="Validates that the given GameLevel is not null.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0ab90848c9715b8f02bfdaf999d8e212" target="_top" xlink:title="Ensures that the GameLevel is not null.">
 <polygon fill="white" stroke="#666666" points="285.88,-132 161.12,-132 161.12,-100 285.88,-100 285.88,-132"/>
 <text text-anchor="start" x="169.12" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="223.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.validateLevel</text>
@@ -78,7 +78,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a6b7a95612e065abd8e8d038d2bf3c689" target="_top" xlink:title="Validates that the given Player is not null.">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a6b7a95612e065abd8e8d038d2bf3c689" target="_top" xlink:title="Ensures that the Player is not null.">
 <polygon fill="white" stroke="#666666" points="285.88,-82 161.12,-82 161.12,-50 285.88,-50 285.88,-82"/>
 <text text-anchor="start" x="169.12" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="223.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.validatePlayer</text>
@@ -97,7 +97,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1f2a473434f154a034fb766d02213295" target="_top" xlink:title="Validates that the given update date is not null.">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1f2a473434f154a034fb766d02213295" target="_top" xlink:title="Ensures that the update timestamp is not null.">
 <polygon fill="white" stroke="#666666" points="286.25,-32 160.75,-32 160.75,0 286.25,0 286.25,-32"/>
 <text text-anchor="start" x="168.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="223.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.validateUpdatedAt</text>

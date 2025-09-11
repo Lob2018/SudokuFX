@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.model.GridUTest.givenBuilderWithNullDefaultgridvalue_whenBuild_thenThrowsNullPointerException" name="fr.softsf.sudokufx.model.GridUTest.givenBuilderWithNullDefaultgridvalue_whenBuild_thenThrowsNullPointerException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,224,104"/>
 <area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="67,28,70,18,79,10,94,5,115,3,139,5,154,13,152,18,137,11,114,8,95,10,82,15,74,21,72,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a2b8e0eb68f7ad02dc47d9b6e996e250a" title=" " alt="" coords="272,45,438,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a2b8e0eb68f7ad02dc47d9b6e996e250a" title="Creates a new GridBuilder for fluent construction of Grid instances." alt="" coords="272,45,438,88"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,64,256,64,256,69,224,69"/>
 </map>

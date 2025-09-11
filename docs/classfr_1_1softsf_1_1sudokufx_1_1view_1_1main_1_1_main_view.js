@@ -48,7 +48,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view =
     [ "audioService", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae6bbd4b61e80e359725fd19e4542c170", null ],
     [ "AUTO_HIDE_MINI_MENU_DELAY_MS", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae01ec3cb613bf9ec7ac4492f584ee9a8", null ],
     [ "bindingConfigurator", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3b26f6de08bc14a7040f3ad186dcf330", null ],
-    [ "CONFIRMATION_ALERT", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a0de093bc2d9f8f7fbbcb784a62c61660", null ],
     [ "coordinator", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a01290d2435173eb04950d55e5496872b", null ],
     [ "DIFFICULTY_LEVEL_PSEUDO_SELECTED", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ad45b889ad165145617acae110e8f87e5", null ],
     [ "FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae05d9f1253bb8adeb65f3137f65e16d1", null ],

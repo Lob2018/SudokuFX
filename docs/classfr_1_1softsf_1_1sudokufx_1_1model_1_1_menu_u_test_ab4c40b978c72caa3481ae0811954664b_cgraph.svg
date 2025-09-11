@@ -43,7 +43,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#a97b1b5e5c4fa3898ddc4ef431238ae5e" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#a97b1b5e5c4fa3898ddc4ef431238ae5e" target="_top" xlink:title="Creates a new MenuBuilder for fluent construction of Menu instances.">
 <polygon fill="white" stroke="#666666" points="326,-132 201.25,-132 201.25,-100 326,-100 326,-132"/>
 <text text-anchor="start" x="209.25" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="263.62" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu.builder</text>
@@ -62,7 +62,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ab1ff57d1d8f24d28f42af214053d7025" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ab1ff57d1d8f24d28f42af214053d7025" target="_top" xlink:title="Returns the unique identifier of the menu.">
 <polygon fill="white" stroke="#666666" points="326,-82 201.25,-82 201.25,-50 326,-50 326,-82"/>
 <text text-anchor="start" x="209.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="263.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu.getMenuid</text>
@@ -81,7 +81,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" target="_top" xlink:title="Returns the mode of the menu.">
 <polygon fill="white" stroke="#666666" points="326,-32 201.25,-32 201.25,0 326,0 326,-32"/>
 <text text-anchor="start" x="209.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="263.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu.getMode</text>

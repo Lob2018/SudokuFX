@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Sets the game level.">
 <polygon fill="#999999" stroke="#666666" points="132.25,-32 0,-32 0,0 132.25,0 132.25,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="66.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.GameBuilder.levelid</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0ab90848c9715b8f02bfdaf999d8e212" target="_top" xlink:title="Validates that the given GameLevel is not null.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0ab90848c9715b8f02bfdaf999d8e212" target="_top" xlink:title="Ensures that the GameLevel is not null.">
 <polygon fill="white" stroke="#666666" points="293,-32 168.25,-32 168.25,0 293,0 293,-32"/>
 <text text-anchor="start" x="176.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="230.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.validateLevel</text>

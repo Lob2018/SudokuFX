@@ -43,7 +43,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a48e867b7b81bfbd3b5c2830637fdc06d" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a48e867b7b81bfbd3b5c2830637fdc06d" target="_top" xlink:title="Creates a new GameLevelBuilder for fluent construction.">
 <polygon fill="white" stroke="#666666" points="347.75,-132 223,-132 223,-100 347.75,-100 347.75,-132"/>
 <text text-anchor="start" x="231" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285.38" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel.builder</text>
@@ -62,7 +62,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ad70081f09c712d4f3b5836894c2ff15c" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ad70081f09c712d4f3b5836894c2ff15c" target="_top" xlink:title="Returns the difficulty value of this game level.">
 <polygon fill="white" stroke="#666666" points="347.75,-82 223,-82 223,-50 347.75,-50 347.75,-82"/>
 <text text-anchor="start" x="231" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel.getLevel</text>
@@ -81,7 +81,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ae96ae3832695c27c80bbd4be0604e8f5" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ae96ae3832695c27c80bbd4be0604e8f5" target="_top" xlink:title="Returns the unique identifier of this game level.">
 <polygon fill="white" stroke="#666666" points="347.75,-32 223,-32 223,0 347.75,0 347.75,-32"/>
 <text text-anchor="start" x="231" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel.getLevelid</text>

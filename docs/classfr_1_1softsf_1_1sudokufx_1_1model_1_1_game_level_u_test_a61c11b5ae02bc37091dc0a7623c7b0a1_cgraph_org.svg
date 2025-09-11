@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ad70081f09c712d4f3b5836894c2ff15c" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ad70081f09c712d4f3b5836894c2ff15c" target="_top" xlink:title="Returns the difficulty value of this game level.">
 <polygon fill="white" stroke="#666666" points="356.75,-82 232,-82 232,-50 356.75,-50 356.75,-82"/>
 <text text-anchor="start" x="240" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="294.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel.getLevel</text>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3dbb7779e391585b833acc0f2f030d1c" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3dbb7779e391585b833acc0f2f030d1c" target="_top" xlink:title="Sets the difficulty value of this game level.">
 <polygon fill="white" stroke="#666666" points="356.75,-32 232,-32 232,0 356.75,0 356.75,-32"/>
 <text text-anchor="start" x="240" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="294.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel.setLevel</text>

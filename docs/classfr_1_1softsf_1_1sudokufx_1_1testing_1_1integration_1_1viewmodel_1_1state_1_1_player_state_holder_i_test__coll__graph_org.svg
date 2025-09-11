@@ -110,7 +110,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" target="_top" xlink:title="Repository interface for Player entities.">
 <polygon fill="white" stroke="none" points="136.5,-718 0,-718 0,-642 136.5,-642 136.5,-718"/>
 <text text-anchor="start" x="6" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="30.75" y="-692.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerRepository</text>
@@ -161,7 +161,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" target="_top" xlink:title="Repository interface for PlayerLanguage entities.">
 <polygon fill="white" stroke="none" points="287.5,-712 155,-712 155,-648 287.5,-648 287.5,-712"/>
 <text text-anchor="start" x="159" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="162.75" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
@@ -210,7 +210,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" target="_top" xlink:title="Repository interface for Options entities.">
 <polygon fill="white" stroke="none" points="438.5,-712 306,-712 306,-648 438.5,-648 438.5,-712"/>
 <text text-anchor="start" x="310" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="331.75" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsRepository</text>
@@ -259,7 +259,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html" target="_top" xlink:title="Repository interface for Menu entities.">
 <polygon fill="white" stroke="none" points="589.5,-712 457,-712 457,-648 589.5,-648 589.5,-712"/>
 <text text-anchor="start" x="461" y="-698.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="487.62" y="-686.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuRepository</text>

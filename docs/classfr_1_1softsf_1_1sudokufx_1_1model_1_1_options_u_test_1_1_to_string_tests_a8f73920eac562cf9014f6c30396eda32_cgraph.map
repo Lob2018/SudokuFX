@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.OptionsUTest.ToStringTests.givenOptionsInstance_whenCallingToString_thenFormattedStringIsReturned" name="fr.softsf.sudokufx.model.OptionsUTest.ToStringTests.givenOptionsInstance_whenCallingToString_thenFormattedStringIsReturned">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,248,80"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a98e063903a3d4a114ad772e97ab240b9" title=" " alt="" coords="296,21,462,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a98e063903a3d4a114ad772e97ab240b9" title="Returns a string representation of the Options object." alt="" coords="296,21,462,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,40,280,40,280,45,248,45"/>
 </map>

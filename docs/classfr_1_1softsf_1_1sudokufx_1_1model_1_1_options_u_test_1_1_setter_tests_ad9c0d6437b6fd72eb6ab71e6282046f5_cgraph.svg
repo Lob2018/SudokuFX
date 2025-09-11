@@ -70,7 +70,7 @@ var sectionId = 'dynsection-5';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" target="_top" xlink:title="Returns the background image path.">
 <polygon fill="white" stroke="#666666" points="351.5,-82 226.75,-82 226.75,-50 351.5,-50 351.5,-82"/>
 <text text-anchor="start" x="234.75" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="289.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getImagepath</text>
@@ -89,7 +89,7 @@ var sectionId = 'dynsection-5';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" target="_top" xlink:title="Sets the background image path after validation.">
 <polygon fill="white" stroke="#666666" points="351.5,-32 226.75,-32 226.75,0 351.5,0 351.5,-32"/>
 <text text-anchor="start" x="234.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="289.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.setImagepath</text>
@@ -108,7 +108,7 @@ var sectionId = 'dynsection-5';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" target="_top" xlink:title="Validates that a path is not null and does not exceed the allowed length.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" target="_top" xlink:title="Validates a file path for non&#45;null and maximum length.">
 <polygon fill="white" stroke="#666666" points="512.25,-32 387.5,-32 387.5,0 512.25,0 512.25,-32"/>
 <text text-anchor="start" x="395.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="449.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.validatePath</text>

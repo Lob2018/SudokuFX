@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Represents user&#45;configurable options for the SudokuFX application.">
 <polygon fill="#999999" stroke="none" points="216.75,-728 0,-728 0,0 216.75,0 216.75,-728"/>
 <text text-anchor="start" x="54" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="91.5" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options</text>

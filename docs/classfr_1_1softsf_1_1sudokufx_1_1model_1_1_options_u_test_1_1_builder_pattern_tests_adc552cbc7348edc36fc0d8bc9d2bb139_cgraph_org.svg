@@ -23,7 +23,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_1_1_options_builder.html#aa647a7b44897a0728d7604f989504ee9" target="_top" xlink:title="Creates Options instance with parameter validation.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_1_1_options_builder.html#aa647a7b44897a0728d7604f989504ee9" target="_top" xlink:title="Builds a validated Options instance.">
 <polygon fill="white" stroke="#666666" points="396.5,-282 256.75,-282 256.75,-250 396.5,-250 396.5,-282"/>
 <text text-anchor="start" x="264.75" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="326.62" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.OptionsBuilder.build</text>
@@ -42,7 +42,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aada8238bf92a8a5d5b6141f66f8bf5c1" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aada8238bf92a8a5d5b6141f66f8bf5c1" target="_top" xlink:title="Returns a new OptionsBuilder instance for fluent construction.">
 <polygon fill="white" stroke="#666666" points="389,-232 264.25,-232 264.25,-200 389,-200 389,-232"/>
 <text text-anchor="start" x="272.25" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="326.62" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.builder</text>
@@ -61,7 +61,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" target="_top" xlink:title="Returns the ARGB hex color string.">
 <polygon fill="white" stroke="#666666" points="389,-182 264.25,-182 264.25,-150 389,-150 389,-182"/>
 <text text-anchor="start" x="272.25" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="326.62" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getHexcolor</text>
@@ -80,7 +80,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" target="_top" xlink:title="Returns the background image path.">
 <polygon fill="white" stroke="#666666" points="389,-132 264.25,-132 264.25,-100 389,-100 389,-132"/>
 <text text-anchor="start" x="272.25" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="326.62" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getImagepath</text>
@@ -99,7 +99,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" target="_top" xlink:title="Returns the unique ID of this Options instance.">
 <polygon fill="white" stroke="#666666" points="389,-82 264.25,-82 264.25,-50 389,-50 389,-82"/>
 <text text-anchor="start" x="272.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="326.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getOptionsid</text>
@@ -118,7 +118,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" target="_top" xlink:title="Returns true if a background image is used.">
 <polygon fill="white" stroke="#666666" points="389,-32 264.25,-32 264.25,0 389,0 389,-32"/>
 <text text-anchor="start" x="272.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="326.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.isImage</text>
@@ -137,7 +137,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a5fa4145bbd83c86dd0f943e766276ad7" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a5fa4145bbd83c86dd0f943e766276ad7" target="_top" xlink:title="Protected default constructor for JPA.">
 <polygon fill="white" stroke="#666666" points="557.25,-282 432.5,-282 432.5,-250 557.25,-250 557.25,-282"/>
 <text text-anchor="start" x="440.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="494.88" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.Options</text>

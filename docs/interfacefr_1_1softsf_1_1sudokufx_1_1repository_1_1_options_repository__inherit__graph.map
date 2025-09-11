@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.repository.OptionsRepository" name="fr.softsf.sudokufx.repository.OptionsRepository">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,139,182,224"/>
+<area shape="rect" id="Node000001" title="Repository interface for Options entities." alt="" coords="5,139,182,224"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="16,5,172,91"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,106,96,139,91,139,91,106"/>
 </map>

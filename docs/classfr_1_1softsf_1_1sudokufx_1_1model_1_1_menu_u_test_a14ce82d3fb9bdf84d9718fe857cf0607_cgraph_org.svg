@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" target="_top" xlink:title="Returns the mode of the menu.">
 <polygon fill="white" stroke="#666666" points="352.25,-82 227.5,-82 227.5,-50 352.25,-50 352.25,-82"/>
 <text text-anchor="start" x="235.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="289.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu.getMode</text>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#a3e2e3b70372317f67e8f0f163c6b5f8c" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#a3e2e3b70372317f67e8f0f163c6b5f8c" target="_top" xlink:title="Sets the mode of the menu.">
 <polygon fill="white" stroke="#666666" points="352.25,-32 227.5,-32 227.5,0 352.25,0 352.25,-32"/>
 <text text-anchor="start" x="235.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="289.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu.setMode</text>

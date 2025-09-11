@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Full constructor to initialize all fields of Player.">
 <polygon fill="#999999" stroke="#666666" points="124.75,-157 0,-157 0,-125 124.75,-125 124.75,-157"/>
 <text text-anchor="start" x="8" y="-143.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="62.38" y="-131.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.Player</text>
@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7ca24bf2168a2c35c92b92000b896b50" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7ca24bf2168a2c35c92b92000b896b50" target="_top" xlink:title="Validates that the creation date is not null.">
 <polygon fill="white" stroke="#666666" points="298.25,-282 173.5,-282 173.5,-250 298.25,-250 298.25,-282"/>
 <text text-anchor="start" x="181.5" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="235.88" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateCreatedAt</text>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7262425d3a1c07b5ffdafba0a6aa51de" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7262425d3a1c07b5ffdafba0a6aa51de" target="_top" xlink:title="Validates that the menu is not null.">
 <polygon fill="white" stroke="#666666" points="298.25,-232 173.5,-232 173.5,-200 298.25,-200 298.25,-232"/>
 <text text-anchor="start" x="181.5" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="235.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateMenu</text>
@@ -70,7 +70,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" target="_top" xlink:title="Validates that the name is not null.">
 <polygon fill="white" stroke="#666666" points="298.25,-182 173.5,-182 173.5,-150 298.25,-150 298.25,-182"/>
 <text text-anchor="start" x="181.5" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="235.88" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateName</text>
@@ -89,7 +89,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aa248bf09324098ddbaedfb58fc6d73ba" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aa248bf09324098ddbaedfb58fc6d73ba" target="_top" xlink:title="Validates that the options are not null.">
 <polygon fill="white" stroke="#666666" points="298.25,-132 173.5,-132 173.5,-100 298.25,-100 298.25,-132"/>
 <text text-anchor="start" x="181.5" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="235.88" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateOptions</text>
@@ -108,7 +108,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0" target="_top" xlink:title="Validates that the player language is not null.">
 <polygon fill="white" stroke="#666666" points="311,-82 160.75,-82 160.75,-50 311,-50 311,-82"/>
 <text text-anchor="start" x="168.75" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="235.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validatePlayerLanguage</text>
@@ -127,7 +127,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9be097e3c5eee99752c203f22fe774a3" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9be097e3c5eee99752c203f22fe774a3" target="_top" xlink:title="Validates that the update date is not null.">
 <polygon fill="white" stroke="#666666" points="299.38,-32 172.38,-32 172.38,0 299.38,0 299.38,-32"/>
 <text text-anchor="start" x="180.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="235.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateUpdatedAt</text>

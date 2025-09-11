@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Sets the language of the player.">
 <polygon fill="#999999" stroke="#666666" points="180.25,-32 0,-32 0,0 180.25,0 180.25,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="90.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.PlayerBuilder.playerlanguageid</text>
@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0" target="_top" xlink:title="Validates that the player language is not null.">
 <polygon fill="white" stroke="#666666" points="366.5,-32 216.25,-32 216.25,0 366.5,0 366.5,-32"/>
 <text text-anchor="start" x="224.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="291.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validatePlayerLanguage</text>

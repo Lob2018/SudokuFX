@@ -43,7 +43,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a70c763e120718f9286c4d476b6b7c968" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a70c763e120718f9286c4d476b6b7c968" target="_top" xlink:title="Returns the ISO code of this PlayerLanguage.">
 <polygon fill="white" stroke="#666666" points="445.62,-132 320.88,-132 320.88,-100 445.62,-100 445.62,-132"/>
 <text text-anchor="start" x="328.88" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="383.25" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage.getIso</text>
@@ -62,7 +62,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" target="_top" xlink:title="Returns the unique ID of this PlayerLanguage instance.">
 <polygon fill="white" stroke="#666666" points="471.5,-82 295,-82 295,-50 471.5,-50 471.5,-82"/>
 <text text-anchor="start" x="303" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="383.25" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage.getPlayerlanguageid</text>
@@ -81,7 +81,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a411e4ad4b3b7e244697e7dd912d24c02" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a411e4ad4b3b7e244697e7dd912d24c02" target="_top" xlink:title="Returns a string representation of the PlayerLanguage object.">
 <polygon fill="white" stroke="#666666" points="445.62,-32 320.88,-32 320.88,0 445.62,0 445.62,-32"/>
 <text text-anchor="start" x="328.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="383.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage.toString</text>

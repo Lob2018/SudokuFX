@@ -1,10 +1,10 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullName_whenSettingName_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullName_whenSettingName_thenNullPointerExceptionIsThrown">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,330,104"/>
 <area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="110,28,113,18,125,10,143,5,168,3,198,6,216,13,214,18,196,11,167,8,144,10,127,15,118,21,115,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title=" " alt="" coords="378,12,544,55"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="378,12,544,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="330,45,362,42,363,47,331,51"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#af201d3417316b81311308e888df147ac" title=" " alt="" coords="378,79,544,121"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#af201d3417316b81311308e888df147ac" title="Sets the name after validation." alt="" coords="378,79,544,121"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="331,83,363,86,362,92,330,88"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" title=" " alt="" coords="592,79,758,121"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" title="Validates that the name is not null." alt="" coords="592,79,758,121"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="545,97,577,97,577,103,545,103"/>
 </map>

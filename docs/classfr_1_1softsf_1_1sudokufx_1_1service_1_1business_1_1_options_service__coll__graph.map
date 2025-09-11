@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.service.business.OptionsService" name="fr.softsf.sudokufx.service.business.OptionsService">
 <area shape="rect" id="Node000001" title="Service for managing Options entities." alt="" coords="230,364,462,535"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" title=" " alt="" coords="5,177,182,263"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" title="Repository interface for Options entities." alt="" coords="5,177,182,263"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,260,241,351,238,355,138,264"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="16,5,172,91"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,106,96,177,91,177,91,106"/>

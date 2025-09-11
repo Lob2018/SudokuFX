@@ -23,7 +23,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" target="_top" xlink:title="Returns the ARGB hex color string.">
 <polygon fill="white" stroke="#666666" points="368,-332 243.25,-332 243.25,-300 368,-300 368,-332"/>
 <text text-anchor="start" x="251.25" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="305.62" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getHexcolor</text>
@@ -42,7 +42,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" target="_top" xlink:title="Returns the background image path.">
 <polygon fill="white" stroke="#666666" points="368,-282 243.25,-282 243.25,-250 368,-250 368,-282"/>
 <text text-anchor="start" x="251.25" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="305.62" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getImagepath</text>
@@ -61,7 +61,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" target="_top" xlink:title="Returns the unique ID of this Options instance.">
 <polygon fill="white" stroke="#666666" points="368,-232 243.25,-232 243.25,-200 368,-200 368,-232"/>
 <text text-anchor="start" x="251.25" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="305.62" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getOptionsid</text>
@@ -80,7 +80,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ad2beaeacbb7a558134a3a895cbcb43f4" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ad2beaeacbb7a558134a3a895cbcb43f4" target="_top" xlink:title="Returns the background song path.">
 <polygon fill="white" stroke="#666666" points="368,-182 243.25,-182 243.25,-150 368,-150 368,-182"/>
 <text text-anchor="start" x="251.25" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="305.62" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.getSongpath</text>
@@ -99,7 +99,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" target="_top" xlink:title="Returns true if a background image is used.">
 <polygon fill="white" stroke="#666666" points="368,-132 243.25,-132 243.25,-100 368,-100 368,-132"/>
 <text text-anchor="start" x="251.25" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="305.62" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.isImage</text>
@@ -118,7 +118,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a03106ccb945e8825288fdc3c17f9bd5c" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a03106ccb945e8825288fdc3c17f9bd5c" target="_top" xlink:title="Returns true if the background song is muted.">
 <polygon fill="white" stroke="#666666" points="368,-82 243.25,-82 243.25,-50 368,-50 368,-82"/>
 <text text-anchor="start" x="251.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="305.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.isMuted</text>
@@ -137,7 +137,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a07655c6941e8bf5a7be767254a36af66" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a07655c6941e8bf5a7be767254a36af66" target="_top" xlink:title="Returns true if the background image is opaque.">
 <polygon fill="white" stroke="#666666" points="368,-32 243.25,-32 243.25,0 368,0 368,-32"/>
 <text text-anchor="start" x="251.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="305.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options.isOpaque</text>

@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initOpacityAccessibleText" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initOpacityAccessibleText">
+<area shape="rect" id="Node000001" title="Creates the accessibility label for the opacity button, based on the inverse of the current grid opac..." alt="" coords="5,43,234,101"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a218b89fb8384b0edf79c7c1d70f9b292" title="Creates a formatted localized binding with one dynamic argument." alt="" coords="282,5,543,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,55,266,51,267,56,235,60"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a89500f671995a3ab11b253bf65cafdfb" title="Returns the localized text corresponding to the grid opacity state." alt="" coords="284,88,541,131"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="235,84,269,88,268,94,234,89"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a359e959bd335e531fe59f4eb942c0813" title="Utility: always observe the locale in addition to custom dependencies." alt="" coords="591,13,879,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="543,32,576,32,576,37,543,37"/>
+</map>

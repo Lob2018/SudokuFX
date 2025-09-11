@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Sets the creation timestamp.">
 <polygon fill="#999999" stroke="#666666" points="145,-32 0,-32 0,0 145,0 145,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="72.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.GameBuilder.createdat</text>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a15b848d9f7f525fd2619355a0f4689c6" target="_top" xlink:title="Validates that the given creation date is not null.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a15b848d9f7f525fd2619355a0f4689c6" target="_top" xlink:title="Ensures that the creation timestamp is not null.">
 <polygon fill="white" stroke="#666666" points="305.75,-32 181,-32 181,0 305.75,0 305.75,-32"/>
 <text text-anchor="start" x="189" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="243.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.validateCreatedAt</text>

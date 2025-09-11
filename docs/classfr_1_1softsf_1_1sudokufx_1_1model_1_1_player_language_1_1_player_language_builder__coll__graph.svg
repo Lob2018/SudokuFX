@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Builder class for creating instances of PlayerLanguage.">
+<g id="a_Node000001"><a xlink:title="Builder class for creating PlayerLanguage instances with fluent API.">
 <polygon fill="#999999" stroke="none" points="180.5,-148 0,-148 0,0 180.5,0 180.5,-148"/>
 <text text-anchor="start" x="4" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="start" x="4" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage.PlayerLanguageBuilder</text>

@@ -79,7 +79,7 @@ var sectionId = 'dynsection-7';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a551c772e482e524f1f4bb7928760fd07" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a551c772e482e524f1f4bb7928760fd07" target="_top" xlink:title="Sets the ISO code after validation.">
 <polygon fill="white" stroke="#666666" points="334.25,-44 209.5,-44 209.5,-12 334.25,-12 334.25,-44"/>
 <text text-anchor="start" x="217.5" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="271.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage.setIso</text>

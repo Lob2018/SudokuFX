@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenValidImagePath_whenSettingImagePath_thenImagePathIsUpdated" name="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenValidImagePath_whenSettingImagePath_thenImagePathIsUpdated">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,23,260,97"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" title=" " alt="" coords="308,5,474,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" title="Returns the background image path." alt="" coords="308,5,474,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,41,292,37,292,42,261,46"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" title=" " alt="" coords="308,72,474,115"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" title="Sets the background image path after validation." alt="" coords="308,72,474,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,74,292,78,292,83,260,79"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates that a path is not null and does not exceed the allowed length." alt="" coords="522,72,688,115"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates a file path for non&#45;null and maximum length." alt="" coords="522,72,688,115"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="475,91,507,91,507,96,475,96"/>
 </map>

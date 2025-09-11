@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.PlayerLanguage.setIso" name="fr.softsf.sudokufx.model.PlayerLanguage.setIso">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,172,48"/>
+<area shape="rect" id="Node000001" title="Sets the ISO code after validation." alt="" coords="5,5,172,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a218e0d9e32e6ec85c2267e54e4bec21f" title="Validates that the iso is not null and matches allowed values (FR or EN)." alt="" coords="220,5,401,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,24,204,24,204,29,172,29"/>
 </map>

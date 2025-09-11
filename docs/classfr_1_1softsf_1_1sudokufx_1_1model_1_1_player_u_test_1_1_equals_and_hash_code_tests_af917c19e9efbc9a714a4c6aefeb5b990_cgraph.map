@@ -1,11 +1,11 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.EqualsAndHashCodeTests.givenPlayerAndNonPlayerObject_whenComparing_thenTheyAreNotEqual" name="fr.softsf.sudokufx.model.PlayerUTest.EqualsAndHashCodeTests.givenPlayerAndNonPlayerObject_whenComparing_thenTheyAreNotEqual">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,295,104"/>
 <area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="96,28,99,18,110,10,127,5,150,3,178,6,196,13,194,18,177,11,150,8,128,10,112,15,103,21,101,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title=" " alt="" coords="343,12,509,55"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="343,12,509,55"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,46,327,43,327,48,295,52"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#abbe67fb60b057a2f1f153606bbfff685" title=" " alt="" coords="343,79,509,121"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#abbe67fb60b057a2f1f153606bbfff685" title="Compares two Player objects for equality based on all fields." alt="" coords="343,79,509,121"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,82,327,85,327,91,295,87"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab62e3636232e225aeb3e6e1f16f91e84" title=" " alt="" coords="557,79,723,121"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab62e3636232e225aeb3e6e1f16f91e84" title="Protected default constructor for JPA." alt="" coords="557,79,723,121"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="510,97,542,97,542,103,510,103"/>
 <area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="599,79,598,69,605,60,619,54,640,52,663,54,677,61,675,65,662,60,640,57,620,59,608,64,603,70,605,78"/>
 </map>

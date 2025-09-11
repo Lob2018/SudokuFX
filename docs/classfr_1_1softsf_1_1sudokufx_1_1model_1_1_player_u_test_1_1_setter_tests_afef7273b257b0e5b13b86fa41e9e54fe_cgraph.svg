@@ -79,7 +79,7 @@ var sectionId = 'dynsection-11';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title="Returns a new PlayerBuilder instance for fluent construction.">
 <polygon fill="white" stroke="#666666" points="405.88,-182 281.12,-182 281.12,-150 405.88,-150 405.88,-182"/>
 <text text-anchor="start" x="289.12" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="343.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.builder</text>
@@ -98,7 +98,7 @@ var sectionId = 'dynsection-11';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab147c357f7c7509392479b4160e61ce0" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ab147c357f7c7509392479b4160e61ce0" target="_top" xlink:title="Returns the language of the player.">
 <polygon fill="white" stroke="#666666" points="410.75,-132 276.25,-132 276.25,-100 410.75,-100 410.75,-132"/>
 <text text-anchor="start" x="284.25" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="343.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getPlayerlanguageid</text>
@@ -117,7 +117,7 @@ var sectionId = 'dynsection-11';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" target="_top" xlink:title="Returns the unique ID of this PlayerLanguage instance.">
 <polygon fill="white" stroke="#666666" points="431.75,-82 255.25,-82 255.25,-50 431.75,-50 431.75,-82"/>
 <text text-anchor="start" x="263.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="343.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage.getPlayerlanguageid</text>
@@ -136,7 +136,7 @@ var sectionId = 'dynsection-11';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9afc39d38139830bb7545ac2f50574f3" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9afc39d38139830bb7545ac2f50574f3" target="_top" xlink:title="Sets the language after validation.">
 <polygon fill="white" stroke="#666666" points="410.75,-32 276.25,-32 276.25,0 410.75,0 410.75,-32"/>
 <text text-anchor="start" x="284.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="343.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.setPlayerlanguageid</text>
@@ -155,7 +155,7 @@ var sectionId = 'dynsection-11';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0" target="_top" xlink:title="Validates that the player language is not null.">
 <polygon fill="white" stroke="#666666" points="618,-32 467.75,-32 467.75,0 618,0 618,-32"/>
 <text text-anchor="start" x="475.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="542.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validatePlayerLanguage</text>

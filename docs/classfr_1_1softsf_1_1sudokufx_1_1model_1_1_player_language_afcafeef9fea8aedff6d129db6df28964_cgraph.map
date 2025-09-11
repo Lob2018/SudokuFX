@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.PlayerLanguage.PlayerLanguage" name="fr.softsf.sudokufx.model.PlayerLanguage.PlayerLanguage">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,217,48"/>
+<area shape="rect" id="Node000001" title="Full constructor to initialize all fields of PlayerLanguage." alt="" coords="5,5,217,48"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a218e0d9e32e6ec85c2267e54e4bec21f" title="Validates that the iso is not null and matches allowed values (FR or EN)." alt="" coords="265,5,446,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,24,249,24,249,29,217,29"/>
 </map>

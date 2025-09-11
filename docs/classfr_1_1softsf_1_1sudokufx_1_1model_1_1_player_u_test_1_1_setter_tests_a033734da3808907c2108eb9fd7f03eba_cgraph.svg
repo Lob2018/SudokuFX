@@ -49,7 +49,7 @@
 <script type="application/ecmascript">
 var viewWidth = 573;
 var viewHeight = 95;
-var sectionId = 'dynsection-5';
+var sectionId = 'dynsection-4';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -79,7 +79,7 @@ var sectionId = 'dynsection-5';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" target="_top" xlink:title="Returns a new PlayerBuilder instance for fluent construction.">
 <polygon fill="white" stroke="#666666" points="404,-82 279.25,-82 279.25,-50 404,-50 404,-82"/>
 <text text-anchor="start" x="287.25" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="341.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.builder</text>
@@ -98,7 +98,7 @@ var sectionId = 'dynsection-5';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#af201d3417316b81311308e888df147ac" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#af201d3417316b81311308e888df147ac" target="_top" xlink:title="Sets the name after validation.">
 <polygon fill="white" stroke="#666666" points="404,-32 279.25,-32 279.25,0 404,0 404,-32"/>
 <text text-anchor="start" x="287.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="341.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.setName</text>
@@ -117,7 +117,7 @@ var sectionId = 'dynsection-5';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" target="_top" xlink:title="Validates that the name is not null.">
 <polygon fill="white" stroke="#666666" points="564.75,-32 440,-32 440,0 564.75,0 564.75,-32"/>
 <text text-anchor="start" x="448" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="502.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateName</text>
