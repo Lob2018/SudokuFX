@@ -10,5 +10,13 @@ import org.springframework.stereotype.Repository;
 
 import fr.softsf.sudokufx.model.GameLevel;
 
+/**
+ * Repository interface for {@link GameLevel} entities.
+ *
+ * <p>Provides standard CRUD operations and query methods for GameLevel objects using Spring Data
+ * JPA.
+ *
+ * <p>The primary key of GameLevel is of type {@link Byte}.
+ */
 @Repository
 public interface GameLevelRepository extends JpaRepository<GameLevel, Byte> {}

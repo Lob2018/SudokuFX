@@ -10,5 +10,12 @@ import org.springframework.stereotype.Repository;
 
 import fr.softsf.sudokufx.model.Grid;
 
+/**
+ * Repository interface for {@link Grid} entities.
+ *
+ * <p>Provides standard CRUD operations and query methods for Grid objects using Spring Data JPA.
+ *
+ * <p>The primary key of Grid is of type {@link Long}.
+ */
 @Repository
 public interface GridRepository extends JpaRepository<Grid, Long> {}

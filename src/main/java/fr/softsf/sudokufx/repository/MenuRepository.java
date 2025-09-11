@@ -10,5 +10,12 @@ import org.springframework.stereotype.Repository;
 
 import fr.softsf.sudokufx.model.Menu;
 
+/**
+ * Repository interface for {@link Menu} entities.
+ *
+ * <p>Provides standard CRUD operations and query methods for Menu objects using Spring Data JPA.
+ *
+ * <p>The primary key of Menu is of type {@link Byte}.
+ */
 @Repository
 public interface MenuRepository extends JpaRepository<Menu, Byte> {}

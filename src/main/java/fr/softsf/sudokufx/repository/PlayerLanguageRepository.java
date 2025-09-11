@@ -10,5 +10,13 @@ import org.springframework.stereotype.Repository;
 
 import fr.softsf.sudokufx.model.PlayerLanguage;
 
+/**
+ * Repository interface for {@link PlayerLanguage} entities.
+ *
+ * <p>Provides standard CRUD operations and query methods for PlayerLanguage objects using Spring
+ * Data JPA.
+ *
+ * <p>The primary key of PlayerLanguage is of type {@link Long}.
+ */
 @Repository
 public interface PlayerLanguageRepository extends JpaRepository<PlayerLanguage, Long> {}

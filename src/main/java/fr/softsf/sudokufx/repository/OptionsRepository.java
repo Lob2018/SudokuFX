@@ -10,5 +10,12 @@ import org.springframework.stereotype.Repository;
 
 import fr.softsf.sudokufx.model.Options;
 
+/**
+ * Repository interface for {@link Options} entities.
+ *
+ * <p>Provides standard CRUD operations and query methods for Options objects using Spring Data JPA.
+ *
+ * <p>The primary key of Options is of type {@link Long}.
+ */
 @Repository
 public interface OptionsRepository extends JpaRepository<Options, Long> {}

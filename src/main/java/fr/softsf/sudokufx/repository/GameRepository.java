@@ -10,5 +10,12 @@ import org.springframework.stereotype.Repository;
 
 import fr.softsf.sudokufx.model.Game;
 
+/**
+ * Repository interface for {@link Game} entities.
+ *
+ * <p>Provides standard CRUD operations and query methods for Game objects using Spring Data JPA.
+ *
+ * <p>The primary key of Game is of type {@link Long}.
+ */
 @Repository
 public interface GameRepository extends JpaRepository<Game, Long> {}
