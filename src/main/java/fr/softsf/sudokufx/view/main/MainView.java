@@ -18,7 +18,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Rectangle2D;
 import javafx.scene.Node;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
@@ -50,7 +49,6 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.FileChooserService;
-import fr.softsf.sudokufx.view.component.MyAlert;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
@@ -78,7 +76,6 @@ public final class MainView implements IMainView {
 
     private static final Logger LOG = LoggerFactory.getLogger(MainView.class);
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.3;
-    private static final MyAlert CONFIRMATION_ALERT = new MyAlert(Alert.AlertType.CONFIRMATION);
     private static final PseudoClass DIFFICULTY_LEVEL_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("selected");
     private static final PseudoClass REDUCED_SONG_PSEUDO_SELECTED =
