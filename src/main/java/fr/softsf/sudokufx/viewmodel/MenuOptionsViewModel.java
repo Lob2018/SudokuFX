@@ -143,6 +143,7 @@ public class MenuOptionsViewModel {
                 createStringBinding("menu.options.button.reduce.accessibility");
         optionsReduceTooltip = createStringBinding("menu.options.button.reduce.accessibility");
         optionsReduceText = createStringBinding("menu.options.button.reduce.text");
+
         optionsAccessibleText = createStringBinding("menu.options.button.options.accessibility");
         optionsTooltip =
                 createFormattedBinding("menu.options.button.options.accessibility", ROLE_OPENED);
@@ -159,76 +160,22 @@ public class MenuOptionsViewModel {
                 createFormattedBinding(
                         "menu.options.button.color.accessibility", ROLE_SUBMENU_OPTION);
         optionsColorRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-        optionsOpacityAccessibleText =
-                createFormattedBinding(
-                        () -> "menu.options.button.opacity.accessibility",
-                        () -> gridOpacityText(!gridOpacityProperty.get()),
-                        gridOpacityProperty);
-        optionsOpacityTooltip =
-                createFormattedAndConcatenatedBinding(
-                        () -> "menu.options.button.opacity.accessibility",
-                        () -> gridOpacityText(!gridOpacityProperty.get()),
-                        ROLE_SUBMENU_OPTION,
-                        gridOpacityProperty);
+        optionsOpacityAccessibleText = initOpacityAccessibleText();
+        optionsOpacityTooltip = initOpacityTooltip();
         optionsOpacityRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-        optionsOpacityText =
-                Bindings.createStringBinding(
-                        () -> gridOpacityText(gridOpacityProperty.get()),
-                        gridOpacityProperty,
-                        I18n.INSTANCE.localeProperty());
-        optionsOpacityIcon =
-                Bindings.createStringBinding(
-                        () -> gridOpacityProperty.get() ? ICON_OPACITY_ON : ICON_OPACITY_OFF,
-                        gridOpacityProperty);
-        optionsMuteAccessibleText =
-                createFormattedBinding(
-                        () -> "menu.options.button.mute.accessibility",
-                        () -> muteInfo(muteProperty.get()),
-                        muteProperty);
-        optionsMuteTooltip =
-                createFormattedAndConcatenatedBinding(
-                        () -> "menu.options.button.mute.accessibility",
-                        () -> muteInfo(muteProperty.get()),
-                        ROLE_SUBMENU_OPTION,
-                        muteProperty);
+        optionsOpacityText = initOpacityText();
+        optionsOpacityIcon = initOpacityIcon();
+        optionsMuteAccessibleText = initMuteAccessibleText();
+        optionsMuteTooltip = initMuteTooltip();
         optionsMuteRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
-        optionsMuteText =
-                Bindings.createStringBinding(
-                        () -> muteText(muteProperty.get()),
-                        muteProperty,
-                        I18n.INSTANCE.localeProperty());
-        optionsMuteIcon =
-                Bindings.createStringBinding(
-                        () -> muteProperty.get() ? ICON_MUTE_ON : ICON_MUTE_OFF, muteProperty);
-
+        optionsMuteText = initMuteText();
+        optionsMuteIcon = initMuteIcon();
         songIsBlankProperty.bind(
                 Bindings.createBooleanBinding(
                         () -> StringUtils.isBlank(songProperty.get()), songProperty));
-        optionsSongAccessibleText =
-                createFormattedBinding(
-                        () ->
-                                songIsBlankProperty.get()
-                                        ? "menu.options.button.song.empty.accessibility"
-                                        : "menu.options.button.song.accessibility",
-                        songProperty::get,
-                        songProperty);
-        optionsSongTooltip =
-                createFormattedAndConcatenatedBinding(
-                        () ->
-                                songIsBlankProperty.get()
-                                        ? "menu.options.button.song.empty.accessibility"
-                                        : "menu.options.button.song.accessibility",
-                        songProperty::get,
-                        ROLE_SUBMENU_OPTION,
-                        songProperty);
-        optionsSongText =
-                createFormattedBinding(
-                        () ->
-                                songIsBlankProperty.get()
-                                        ? "menu.options.button.song.empty.text"
-                                        : "menu.options.button.song.text",
-                        songProperty::get,
-                        songProperty);
+        optionsSongAccessibleText = initSongAccessibleText();
+        optionsSongTooltip = initSongTooltip();
+        optionsSongText = initSongText();
         optionsSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
         optionsClearSongAccessibleText =
                 createFormattedBinding(
@@ -242,6 +189,113 @@ public class MenuOptionsViewModel {
                         ROLE_SUBMENU_OPTION,
                         songProperty);
         optionsClearSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+    }
+
+    /**
+     * Creates the accessibility label for the opacity button, based on the inverse of the current
+     * grid opacity state.
+     */
+    private StringBinding initOpacityAccessibleText() {
+        return createFormattedBinding(
+                () -> "menu.options.button.opacity.accessibility",
+                () -> gridOpacityText(!gridOpacityProperty.get()),
+                gridOpacityProperty);
+    }
+
+    /** Creates the tooltip for the opacity button, combining dynamic label and submenu role. */
+    private StringBinding initOpacityTooltip() {
+        return createFormattedAndConcatenatedBinding(
+                () -> "menu.options.button.opacity.accessibility",
+                () -> gridOpacityText(!gridOpacityProperty.get()),
+                ROLE_SUBMENU_OPTION,
+                gridOpacityProperty);
+    }
+
+    /**
+     * Creates the visible label for the opacity button, reflecting the current grid opacity value.
+     */
+    private StringBinding initOpacityText() {
+        return Bindings.createStringBinding(
+                () -> gridOpacityText(gridOpacityProperty.get()),
+                gridOpacityProperty,
+                I18n.INSTANCE.localeProperty());
+    }
+
+    /**
+     * Creates the icon name for the opacity button, depending on whether opacity is enabled or not.
+     */
+    private StringBinding initOpacityIcon() {
+        return Bindings.createStringBinding(
+                () -> gridOpacityProperty.get() ? ICON_OPACITY_ON : ICON_OPACITY_OFF,
+                gridOpacityProperty);
+    }
+
+    /** Creates the accessibility label for the mute button, based on the current mute state. */
+    private StringBinding initMuteAccessibleText() {
+        return createFormattedBinding(
+                () -> "menu.options.button.mute.accessibility",
+                () -> muteInfo(muteProperty.get()),
+                muteProperty);
+    }
+
+    /** Creates the tooltip for the mute button, combining dynamic mute info and submenu role. */
+    private StringBinding initMuteTooltip() {
+        return createFormattedAndConcatenatedBinding(
+                () -> "menu.options.button.mute.accessibility",
+                () -> muteInfo(muteProperty.get()),
+                ROLE_SUBMENU_OPTION,
+                muteProperty);
+    }
+
+    /** Creates the visible label for the mute button, reflecting the current mute state. */
+    private StringBinding initMuteText() {
+        return Bindings.createStringBinding(
+                () -> muteText(muteProperty.get()), muteProperty, I18n.INSTANCE.localeProperty());
+    }
+
+    /** Creates the icon name for the mute button, depending on whether mute is active or not. */
+    private StringBinding initMuteIcon() {
+        return Bindings.createStringBinding(
+                () -> muteProperty.get() ? ICON_MUTE_ON : ICON_MUTE_OFF, muteProperty);
+    }
+
+    /**
+     * Creates the accessibility label for the song button, depending on whether the song field is
+     * empty.
+     */
+    private StringBinding initSongAccessibleText() {
+        return createFormattedBinding(
+                () ->
+                        songIsBlankProperty.get()
+                                ? "menu.options.button.song.empty.accessibility"
+                                : "menu.options.button.song.accessibility",
+                songProperty::get,
+                songProperty);
+    }
+
+    /** Creates the tooltip for the song button, combining dynamic song info and submenu role. */
+    private StringBinding initSongTooltip() {
+        return createFormattedAndConcatenatedBinding(
+                () ->
+                        songIsBlankProperty.get()
+                                ? "menu.options.button.song.empty.accessibility"
+                                : "menu.options.button.song.accessibility",
+                songProperty::get,
+                ROLE_SUBMENU_OPTION,
+                songProperty);
+    }
+
+    /**
+     * Creates the visible label for the song button, adapting to whether a song is present or not.
+     */
+    private StringBinding initSongText() {
+        return createFormattedBinding(
+                () ->
+                        songIsBlankProperty.get()
+                                ? "menu.options.button.song.empty.text"
+                                : "menu.options.button.song.text",
+                songProperty::get,
+                songProperty);
     }
 
     /**
