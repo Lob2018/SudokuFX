@@ -29,62 +29,91 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
+/**
+ * Represents a player in the SudokuFX application.
+ *
+ * <p>Includes the player's language, options, menu, games, name, selection status, and timestamps.
+ * Provides fluent builder, validation, and standard object methods.
+ */
 @Entity
 @Table(name = "player")
 public class Player {
 
     private static final String PLAYERLANGUAGEID_MUST_NOT_BE_NULL =
             "playerlanguageid must not be null";
-    private static final String BACKGROUNID_MUST_NOT_BE_NULL = "optionsid must not be null";
+    private static final String OPTIONSID_MUST_NOT_BE_NULL = "optionsid must not be null";
     private static final String MENU_MUST_NOT_BE_NULL = "menu must not be null";
     private static final String NAME_MUST_NOT_BE_NULL = "name must not be null";
     private static final String CREATEDAT_MUST_NOT_BE_NULL = "createdat must not be null";
     private static final String UPDATEDAT_MUST_NOT_BE_NULL = "updatedat must not be null";
 
+    /** Unique identifier of the player (primary key). */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "playerid", nullable = false)
     private Long playerid;
 
+    /** Language of the player. */
     @NotNull @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerlanguageplayerlanguageid", nullable = false)
     private PlayerLanguage playerlanguageid;
 
+    /** Options associated with the player. */
     @NotNull @OneToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "optionsoptionsid", nullable = false)
     private Options optionsid;
 
+    /** Menu associated with the player. */
     @NotNull @ManyToOne
     @Cascade(CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "menumenuid", nullable = false)
     private Menu menuid;
 
+    /** Games played by the player. */
     @OneToMany(mappedBy = "playerid", orphanRemoval = true)
     @Cascade(CascadeType.ALL)
     private Set<Game> games = new LinkedHashSet<>();
 
+    /** Name of the player. */
     @Nonnull
     @NotNull @Size(max = 256) @Column(name = "name", nullable = false, unique = true, length = 256)
     private String name = "";
 
+    /** Flag indicating whether this player is selected. */
     @Column(name = "isselected", nullable = false)
     private boolean isselected = false;
 
+    /** Creation timestamp of the player. */
     @Nonnull
     @NotNull @Column(name = "createdat", nullable = false)
     private LocalDateTime createdat = LocalDateTime.now();
 
+    /** Last update timestamp of the player. */
     @Nonnull
     @NotNull @Column(name = "updatedat", nullable = false)
     private LocalDateTime updatedat = LocalDateTime.now();
 
+    /** Protected default constructor for JPA. */
     protected Player() {}
 
+    /**
+     * Full constructor to initialize all fields of Player.
+     *
+     * @param playerid unique ID
+     * @param playerlanguageid language of the player
+     * @param optionsid player's options
+     * @param menuid player's menu
+     * @param games games associated with the player
+     * @param name name of the player
+     * @param isselected whether the player is selected
+     * @param createdat creation timestamp
+     * @param updatedat update timestamp
+     */
     public Player(
             Long playerid,
             @Nonnull @NotNull PlayerLanguage playerlanguageid,
@@ -106,98 +135,126 @@ public class Player {
         this.updatedat = validateUpdatedAt(updatedat);
     }
 
+    /** Validates that the player language is not null. */
     private static PlayerLanguage validatePlayerLanguage(PlayerLanguage playerlanguageid) {
         return Objects.requireNonNull(playerlanguageid, PLAYERLANGUAGEID_MUST_NOT_BE_NULL);
     }
 
+    /** Validates that the options are not null. */
     private static Options validateOptions(Options optionsid) {
-        return Objects.requireNonNull(optionsid, BACKGROUNID_MUST_NOT_BE_NULL);
+        return Objects.requireNonNull(optionsid, OPTIONSID_MUST_NOT_BE_NULL);
     }
 
+    /** Validates that the menu is not null. */
     private static Menu validateMenu(Menu menuid) {
         return Objects.requireNonNull(menuid, MENU_MUST_NOT_BE_NULL);
     }
 
+    /** Validates that the name is not null. */
     private static String validateName(String name) {
         return Objects.requireNonNull(name, NAME_MUST_NOT_BE_NULL);
     }
 
+    /** Validates that the creation date is not null. */
     private static LocalDateTime validateCreatedAt(LocalDateTime createdat) {
         return Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
     }
 
+    /** Validates that the update date is not null. */
     private static LocalDateTime validateUpdatedAt(LocalDateTime updatedat) {
         return Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
     }
 
+    /** Returns the unique ID of the player. */
     public Long getPlayerid() {
         return playerid;
     }
 
+    /** Returns the language of the player. */
     public PlayerLanguage getPlayerlanguageid() {
         return playerlanguageid;
     }
 
+    /** Returns the options associated with the player. */
     public Options getOptionsid() {
         return optionsid;
     }
 
+    /** Returns the menu associated with the player. */
     public Menu getMenuid() {
         return menuid;
     }
 
+    /** Returns the games played by the player. */
     public Set<Game> getGames() {
         return games;
     }
 
+    /** Returns the name of the player. */
     public String getName() {
         return name;
     }
 
+    /** Returns whether the player is selected. */
     public boolean getIsselected() {
         return isselected;
     }
 
+    /** Returns the creation timestamp. */
     public LocalDateTime getCreatedat() {
         return createdat;
     }
 
+    /** Returns the update timestamp. */
     public LocalDateTime getUpdatedat() {
         return updatedat;
     }
 
+    /** Sets the language after validation. */
     public void setPlayerlanguageid(@Nonnull PlayerLanguage playerlanguageid) {
         this.playerlanguageid = validatePlayerLanguage(playerlanguageid);
     }
 
+    /** Sets the options after validation. */
     public void setOptionsid(@Nonnull Options optionsid) {
         this.optionsid = validateOptions(optionsid);
     }
 
+    /** Sets the menu after validation. */
     public void setMenuid(@Nonnull Menu menuid) {
         this.menuid = validateMenu(menuid);
     }
 
+    /** Sets the games. */
     public void setGames(Set<Game> games) {
         this.games = (games != null) ? games : new LinkedHashSet<>();
     }
 
+    /** Sets the name after validation. */
     public void setName(@Nonnull String name) {
         this.name = validateName(name);
     }
 
+    /** Sets the selection flag. */
     public void setIsselected(boolean isselected) {
         this.isselected = isselected;
     }
 
+    /** Sets the update timestamp after validation. */
     public void setUpdatedat(@Nonnull LocalDateTime updatedat) {
         this.updatedat = validateUpdatedAt(updatedat);
     }
 
+    /** Returns a new {@link PlayerBuilder} instance for fluent construction. */
     public static PlayerBuilder builder() {
         return new PlayerBuilder();
     }
 
+    /**
+     * Builder class for creating {@link Player} instances with fluent API.
+     *
+     * <p>Allows setting all fields before constructing a validated Player object.
+     */
     public static class PlayerBuilder {
         private Long playerid;
         private PlayerLanguage playerlanguageid;
@@ -209,51 +266,66 @@ public class Player {
         private LocalDateTime createdat = LocalDateTime.now();
         private LocalDateTime updatedat = LocalDateTime.now();
 
+        /** Sets the unique ID of the player. */
         public PlayerBuilder playerid(Long playerid) {
             this.playerid = playerid;
             return this;
         }
 
+        /** Sets the language of the player. */
         public PlayerBuilder playerlanguageid(@Nonnull PlayerLanguage playerlanguageid) {
             this.playerlanguageid = validatePlayerLanguage(playerlanguageid);
             return this;
         }
 
+        /** Sets the options of the player. */
         public PlayerBuilder optionsid(@Nonnull Options optionsid) {
             this.optionsid = validateOptions(optionsid);
             return this;
         }
 
+        /** Sets the menu of the player. */
         public PlayerBuilder menuid(@Nonnull Menu menuid) {
             this.menuid = validateMenu(menuid);
             return this;
         }
 
+        /** Sets the games played by the player. */
         public PlayerBuilder games(Set<Game> games) {
             this.games = (games != null) ? games : new LinkedHashSet<>();
             return this;
         }
 
+        /** Sets the name of the player. */
         public PlayerBuilder name(@Nonnull String name) {
             this.name = validateName(name);
             return this;
         }
 
+        /** Sets the selection flag. */
         public PlayerBuilder isselected(boolean isselected) {
             this.isselected = isselected;
             return this;
         }
 
+        /** Sets the creation timestamp. */
         public PlayerBuilder createdat(@Nonnull LocalDateTime createdat) {
             this.createdat = validateCreatedAt(createdat);
             return this;
         }
 
+        /** Sets the update timestamp. */
         public PlayerBuilder updatedat(@Nonnull LocalDateTime updatedat) {
             this.updatedat = validateUpdatedAt(updatedat);
             return this;
         }
 
+        /**
+         * Builds a validated {@link Player} instance.
+         *
+         * @return a fully constructed Player instance
+         * @throws NullPointerException if required fields are null
+         */
         public Player build() {
             return new Player(
                     playerid,
@@ -268,6 +340,7 @@ public class Player {
         }
     }
 
+    /** Compares two Player objects for equality based on all fields. */
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -286,6 +359,7 @@ public class Player {
         return false;
     }
 
+    /** Computes the hash code based on all fields. */
     @Override
     public int hashCode() {
         return Objects.hash(
@@ -299,6 +373,7 @@ public class Player {
                 updatedat);
     }
 
+    /** Returns a string representation of the Player object. */
     @Override
     public String toString() {
         return String.format(

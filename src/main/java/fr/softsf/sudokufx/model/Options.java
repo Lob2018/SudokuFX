@@ -20,6 +20,12 @@ import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
+/**
+ * Represents user-configurable options for the SudokuFX application.
+ *
+ * <p>Includes background color, image and song paths, and flags for image usage, opacity, and
+ * muting. Provides fluent builder, validation, and standard object methods.
+ */
 @Entity
 @Table(name = "playeroptions")
 public class Options {
@@ -35,34 +41,53 @@ public class Options {
             "hexcolor must be a valid hex color format (e.g., FFFFFFFF)";
     private static final Pattern HEX_COLOR_PATTERN = Pattern.compile("^([A-Fa-f0-9]{8})$");
 
+    /** Unique identifier of the options (primary key). */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "optionsid", nullable = false)
     private Long optionsid;
 
+    /** Background color in ARGB hex format (e.g., FFFFFFFF). */
     @Nonnull
     @NotNull @Size(max = 8) @Column(name = "hexcolor", nullable = false, length = 8)
     private String hexcolor = DEFAULT_HEX_COLOR;
 
+    /** Path to the background image file. */
     @Nonnull
     @NotNull @Size(max = MAX_PATH_LENGTH) @Column(name = "imagepath", nullable = false, length = MAX_PATH_LENGTH)
     private String imagepath = EMPTY_PATH;
 
+    /** Path to the background song file. */
     @Nonnull
     @NotNull @Size(max = MAX_PATH_LENGTH) @Column(name = "songpath", nullable = false, length = MAX_PATH_LENGTH)
     private String songpath = EMPTY_PATH;
 
+    /** Flag indicating if a background image is used. */
     @Column(name = "isimage", nullable = false)
     private boolean isimage = false;
 
+    /** Flag indicating if the background image is opaque. */
     @Column(name = "isopaque", nullable = false)
     private boolean isopaque = true;
 
+    /** Flag indicating if the background music is muted. */
     @Column(name = "ismuted", nullable = false)
     private boolean ismuted = true;
 
+    /** Protected default constructor for JPA. */
     protected Options() {}
 
+    /**
+     * Full constructor to initialize all fields of options.
+     *
+     * @param optionsid unique ID of the options
+     * @param hexcolor background color in ARGB hex format
+     * @param imagepath path to background image
+     * @param songpath path to background song
+     * @param isimage true if using an image
+     * @param isopaque true if the image is opaque
+     * @param ismuted true if the song is muted
+     */
     public Options(
             Long optionsid,
             @Nonnull @NotNull String hexcolor,
@@ -81,11 +106,11 @@ public class Options {
     }
 
     /**
-     * Validates hex color format (#RRGGBBAA).
+     * Validates that the hex color is non-blank and conforms to ARGB 8-character hex format.
      *
-     * @param hexcolor hex color to validate
+     * @param hexcolor the color string to validate
      * @return validated hex color
-     * @throws IllegalArgumentException if invalid format
+     * @throws IllegalArgumentException if hexcolor is blank or invalid
      */
     private static String validateHexcolor(String hexcolor) {
         if (StringUtils.isBlank(hexcolor)) {
@@ -98,13 +123,13 @@ public class Options {
     }
 
     /**
-     * Validates that a path is not null and does not exceed the allowed length.
+     * Validates a file path for non-null and maximum length.
      *
-     * @param path the path to validate
-     * @param nullMsg the message if path is null
+     * @param path path string to validate
+     * @param nullMsg exception message if path is null
      * @return validated path
-     * @throws NullPointerException if the path is null
-     * @throws IllegalArgumentException if the path length exceeds MAX_PATH_LENGTH
+     * @throws NullPointerException if path is null
+     * @throws IllegalArgumentException if path exceeds MAX_PATH_LENGTH
      */
     private static String validatePath(String path, String nullMsg) {
         Objects.requireNonNull(path, nullMsg);
@@ -115,68 +140,83 @@ public class Options {
         return path;
     }
 
+    /** Returns the unique ID of this Options instance. */
     public Long getOptionsid() {
         return optionsid;
     }
 
+    /** Returns the ARGB hex color string. */
     @Nonnull
     public String getHexcolor() {
         return hexcolor;
     }
 
+    /** Returns the background image path. */
     @Nonnull
     public String getImagepath() {
         return imagepath;
     }
 
+    /** Returns the background song path. */
     @Nonnull
     public String getSongpath() {
         return songpath;
     }
 
+    /** Returns true if a background image is used. */
     public boolean isImage() {
         return isimage;
     }
 
+    /** Returns true if the background image is opaque. */
     public boolean isOpaque() {
         return isopaque;
     }
 
+    /** Returns true if the background song is muted. */
     public boolean isMuted() {
         return ismuted;
     }
 
+    /** Sets the ARGB hex color after validation. */
     public void setHexcolor(@Nonnull String hexcolor) {
         this.hexcolor = validateHexcolor(hexcolor);
     }
 
+    /** Sets the background image path after validation. */
     public void setImagepath(@Nonnull String imagepath) {
         this.imagepath = validatePath(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
     }
 
+    /** Sets the background song path after validation. */
     public void setSongpath(@Nonnull String songpath) {
         this.songpath = validatePath(songpath, SONGPATH_MUST_NOT_BE_NULL);
     }
 
+    /** Sets whether a background image is used. */
     public void setIsimage(boolean isimage) {
         this.isimage = isimage;
     }
 
+    /** Sets whether the background image is opaque. */
     public void setIsopaque(boolean isopaque) {
         this.isopaque = isopaque;
     }
 
+    /** Sets whether the background song is muted. */
     public void setIsmuted(boolean ismuted) {
         this.ismuted = ismuted;
     }
 
+    /** Returns a new {@link OptionsBuilder} instance for fluent construction. */
     public static OptionsBuilder builder() {
         return new OptionsBuilder();
     }
 
     /**
-     * Builder for creating Options instances with fluent API. Validation occurs at build() to avoid
-     * exceptions during construction.
+     * Builder class for creating {@link Options} instances with fluent API.
+     *
+     * <p>Allows setting all fields before constructing a validated Options object.
      */
     public static class OptionsBuilder {
         private Long optionsid;
@@ -187,45 +227,52 @@ public class Options {
         private boolean isopaque = true;
         private boolean ismuted = true;
 
+        /** Sets the unique ID of the Options instance. */
         public OptionsBuilder optionsid(Long optionsid) {
             this.optionsid = optionsid;
             return this;
         }
 
+        /** Sets the ARGB hex color. */
         public OptionsBuilder hexcolor(@Nonnull String hexcolor) {
             this.hexcolor = hexcolor;
             return this;
         }
 
+        /** Sets the background image path. */
         public OptionsBuilder imagepath(@Nonnull String imagepath) {
             this.imagepath = imagepath;
             return this;
         }
 
+        /** Sets the background song path. */
         public OptionsBuilder songpath(@Nonnull String songpath) {
             this.songpath = songpath;
             return this;
         }
 
+        /** Sets whether a background image is used. */
         public OptionsBuilder isimage(boolean isimage) {
             this.isimage = isimage;
             return this;
         }
 
+        /** Sets whether the background image is opaque. */
         public OptionsBuilder isopaque(boolean isopaque) {
             this.isopaque = isopaque;
             return this;
         }
 
+        /** Sets whether the background song is muted. */
         public OptionsBuilder ismuted(boolean ismuted) {
             this.ismuted = ismuted;
             return this;
         }
 
         /**
-         * Creates Options instance with parameter validation.
+         * Builds a validated {@link Options} instance.
          *
-         * @return new validated Options instance
+         * @return a fully constructed Options instance
          * @throws IllegalArgumentException if parameters are invalid
          */
         public Options build() {
@@ -234,6 +281,7 @@ public class Options {
         }
     }
 
+    /** Compares two Options objects for equality based on all fields. */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -251,11 +299,13 @@ public class Options {
         return false;
     }
 
+    /** Computes the hash code based on all fields. */
     @Override
     public int hashCode() {
         return Objects.hash(optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
     }
 
+    /** Returns a string representation of the Options object. */
     @Override
     public String toString() {
         return String.format(
