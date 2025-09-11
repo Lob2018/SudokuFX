@@ -253,8 +253,9 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 ├── view                // UI views and components
 │   ├── main            // MainView
 │   └── component       // reusable UI components
-│       ├── list        // list components
-│       └── toaster     // toaster notifications
+│   │   ├── list        // list components
+│   │   └── toaster     // toaster notifications
+│   └── util            // utilities for bindings and factories
 └── viewmodel           // view models for MVVM pattern
     └── state           // state holders (observable state for ViewModels, e.g., PlayerStateHolder)
 ```
