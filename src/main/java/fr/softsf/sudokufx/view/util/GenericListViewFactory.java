@@ -71,9 +71,7 @@ public class GenericListViewFactory {
                                 viewModel.cellConfirmationMessageProperty(),
                                 new MyAlert(javafx.scene.control.Alert.AlertType.CONFIRMATION),
                                 PlayerDto::name));
-
         setupBidirectionalSelection(listView, viewModel.selectedPlayerProperty());
-
         Platform.runLater(
                 () -> {
                     listView.refresh();

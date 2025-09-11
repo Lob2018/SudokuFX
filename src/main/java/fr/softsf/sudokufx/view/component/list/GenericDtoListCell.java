@@ -22,14 +22,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * A generic {@code ListCell} for displaying and removing items of type {@code T} in a {@code
- * ListView}.
+ * A generic {@code ListCell} for displaying items of type {@code T} in a {@link ListView} with a
+ * label and a remove button.
  *
- * <p>Displays a label with text obtained from a provided function, and a button that removes the
- * item after user confirmation via a localized dialog. Accessibility and tooltips are dynamically
- * updated using {@link StringBinding}s.
+ * <p>The label displays text generated via a provided {@link Function}. The remove button shows a
+ * confirmation dialog before removing the item. Accessibility text and tooltips are updated
+ * dynamically via {@link StringBinding}s.
  *
- * @param <T> the type of items displayed in the ListView
+ * @param <T> the type of the items displayed in the ListView
  */
 public final class GenericDtoListCell<T> extends ListCell<T> {
 
@@ -48,6 +48,17 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
 
     private final Function<T, String> displayTextFunction;
 
+    /**
+     * Constructs a new GenericDtoListCell.
+     *
+     * @param listView the ListView containing this cell
+     * @param buttonText the text displayed on the remove button
+     * @param buttonAccessibleTextBinding binding for the button's accessible text (localized)
+     * @param confirmationTitleBinding binding for the confirmation dialog title (localized)
+     * @param confirmationMessageBinding binding for the confirmation dialog message (localized)
+     * @param confirmationAlert the alert dialog used for removal confirmation
+     * @param displayTextFunction function to generate the display text for each item
+     */
     public GenericDtoListCell(
             ListView<T> listView,
             String buttonText,
@@ -74,14 +85,13 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
     }
 
     /**
-     * Updates the cell's content or clears it if empty.
+     * Updates the cell's content.
      *
-     * <p>If the item is non-null, displays the label text and configures the remove button with
-     * accessibility and tooltip texts. The button action shows a confirmation dialog before
-     * removing the item.
+     * <p>If the item is not null, sets the label text and button behavior. If empty, clears the
+     * cell's content.
      *
      * @param item the item to display
-     * @param empty true if this cell is empty
+     * @param empty whether this cell is empty
      */
     @Override
     protected void updateItem(T item, boolean empty) {
@@ -114,10 +124,9 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
     }
 
     /**
-     * Shows a confirmation dialog with localized title and message for the given item. If the user
-     * confirms, removes the item from the ListView.
+     * Displays a confirmation dialog and removes the item if the user confirms.
      *
-     * @param item the item to remove upon confirmation
+     * @param item the item to remove
      */
     private void confirmAndRemoveItem(T item) {
         String displayText = displayTextFunction.apply(item);
