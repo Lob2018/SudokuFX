@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.viewmodel;
 import java.io.File;
 import java.nio.file.Paths;
 import java.text.MessageFormat;
+import java.util.Objects;
 import java.util.function.Supplier;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
@@ -30,6 +31,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.AudioUtils;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
@@ -706,14 +708,23 @@ public class MenuOptionsViewModel {
      * Sets the background color of the GridPane and updates the ColorPicker based on the color
      * value retrieved from the model.
      *
-     * @param sudokuFX the GridPane to update
-     * @param menuOptionsButtonColor the ColorPicker to update
-     * @param colorValueFromModel the hex color string from the model (e.g., "99b3ffcd")
+     * @param sudokuFX the GridPane to update (must not be null)
+     * @param menuOptionsButtonColor the ColorPicker to update (must not be null)
+     * @param colorValueFromModel the hex color string from the model (must not be null or blank,
+     *     e.g., "99b3ffcd")
+     * @throws NullPointerException if any parameter is null
+     * @throws IllegalArgumentException if {@code colorValueFromModel} is blank
+     * @throws NumberFormatException if {@code colorValueFromModel} is not a valid hex number or too
+     *     large for an int
      */
     private void setColorFromModel(
             GridPane sudokuFX, ColorPicker menuOptionsButtonColor, String colorValueFromModel) {
-        Color color =
-                imageUtils.intToColor(Integer.parseUnsignedInt(colorValueFromModel, HEX_RADIX));
+        Objects.requireNonNull(sudokuFX, "sudokuFX must not be null");
+        Objects.requireNonNull(menuOptionsButtonColor, "menuOptionsButtonColor must not be null");
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                colorValueFromModel, "colorValueFromModel must not be null or blank");
+        int colorInt = Integer.parseUnsignedInt(colorValueFromModel, HEX_RADIX);
+        Color color = imageUtils.intToColor(colorInt);
         menuOptionsButtonColor.setValue(color);
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
@@ -722,11 +733,14 @@ public class MenuOptionsViewModel {
      * Applies the given color as the background of the GridPane, updates the options with the new
      * value, and persists it in the database.
      *
-     * @param sudokuFX the GridPane to update
-     * @param color the color to apply and persist
+     * @param sudokuFX the GridPane to update (must not be null)
+     * @param color the color to apply and persist (must not be null)
+     * @throws NullPointerException if {@code sudokuFX} or {@code color} is null
      */
     public void applyAndPersistOptionsColor(GridPane sudokuFX, Color color) {
-        // TODO persist image=false et color=color.toString().substring(2)  to database via
+        Objects.requireNonNull(sudokuFX, "sudokuFX must not be null");
+        Objects.requireNonNull(color, "color must not be null");
+        // TODO persist hexcolor=color.toString().substring(2) and empty imagepath to database via
         // OptionsService
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
@@ -734,22 +748,26 @@ public class MenuOptionsViewModel {
     /**
      * Applies a background image to the specified GridPane and persists its path in the database.
      *
-     * <p>The method validates that the file is non-null, exists, and is a valid image. If valid, it
-     * delegates asynchronous loading, resizing, and conversion to {@link
-     * AsyncFileProcessorService}. On success, the resulting {@link BackgroundImage} is applied to
-     * the provided {@link GridPane} and an info toast is shown. Errors are logged and shown as an
-     * error toast via {@link ToasterVBox}.
+     * <p>Validate the image file. Load, resize, and convert the image asynchronously using {@link
+     * AsyncFileProcessorService}. Apply the resulting {@link BackgroundImage} to the provided
+     * {@link GridPane} and show an info toast. Persist the image path via {@link OptionsService}.
+     *
+     * <p>If the image file is null, invalid, or does not exist, do not apply a background image.
+     * Show an error toast and persist an empty image path via {@link OptionsService}.
      *
      * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and
      * resizing.
      *
-     * @param selectedFile the image file to load; must not be null, must exist, and be a valid
-     *     image
+     * @param selectedFile the image file to load; may be null. If not null, it must exist and be a
+     *     valid image
      * @param spinner the spinner component to indicate loading; must not be null
-     * @param sudokuFX the GridPane where the background image will be applied; must not be null
+     * @param sudokuFX the GridPane where the background image is applied; must not be null
+     * @throws NullPointerException if {@code spinner} or {@code sudokuFX} is null
      */
     public void applyAndPersistBackgroundImage(
             File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
+        Objects.requireNonNull(sudokuFX, "sudokuFX must not be null");
+        Objects.requireNonNull(spinner, "spinner must not be null");
         if (selectedFile != null
                 && imageUtils.isValidImage(selectedFile)
                 && selectedFile.exists()) {
@@ -770,7 +788,7 @@ public class MenuOptionsViewModel {
                     },
                     backgroundImage -> {
                         sudokuFX.setBackground(new Background(backgroundImage));
-                        // TODO persist image path and image=true to database via OptionsService
+                        // TODO persist imagepath to database via OptionsService
                         toaster.addToast(
                                 MessageFormat.format(
                                         I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
@@ -781,7 +799,7 @@ public class MenuOptionsViewModel {
                     });
             return;
         }
-        // TODO persist image=false et imagepath="" to database via OptionsService
+        // TODO persist empty imagepath to database via OptionsService
         String errorMessage =
                 I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
         LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
