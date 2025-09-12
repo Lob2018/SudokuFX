@@ -376,7 +376,7 @@ public final class MainView implements IMainView {
                 .valueProperty()
                 .addListener(
                         (obs, oldColor, newColor) ->
-                                menuOptionsViewModel.updateOptionsColorAndApply(
+                                menuOptionsViewModel.applyAndPersistOptionsColor(
                                         sudokuFX, newColor));
         bindingConfigurator.configureButton(
                 menuOptionsButtonOpacity,
@@ -849,7 +849,9 @@ public final class MainView implements IMainView {
         fileChooserService
                 .chooseFile(primaryStage, FileChooserService.FileType.IMAGE)
                 .ifPresent(
-                        file -> menuOptionsViewModel.loadBackgroundImage(file, spinner, sudokuFX));
+                        file ->
+                                menuOptionsViewModel.applyAndPersistBackgroundImage(
+                                        file, spinner, sudokuFX));
     }
 
     /**
@@ -866,14 +868,14 @@ public final class MainView implements IMainView {
     /** Clears the song, shows a toast, and refocuses the song button. */
     @FXML
     public void handleSongClear() {
-        menuOptionsViewModel.clearSong();
+        menuOptionsViewModel.resetSongPath();
         menuOptionsButtonSong.requestFocus();
     }
 
     /** Handles grid transparency toggle button action. */
     @FXML
     private void handleGridOpacity() {
-        boolean isOpaque = menuOptionsViewModel.toggleGridOpacity();
+        boolean isOpaque = menuOptionsViewModel.toggleGridOpacityAndPersist();
         applyOpaqueMode(isOpaque);
     }
 
@@ -898,7 +900,7 @@ public final class MainView implements IMainView {
     /** Called when the mute button is pressed. Toggles the audio mute state via the ViewModel. */
     @FXML
     public void handleMute() {
-        menuOptionsViewModel.toggleMute();
+        menuOptionsViewModel.toggleMuteAndPersist();
     }
 
     /** Applies the EASY difficulty level, updates the grid and level view models accordingly. */

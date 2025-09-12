@@ -563,21 +563,22 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Initializes the menu options UI state, including:
+     * Initializes the menu options UI state for the current player, including:
      *
      * <ul>
-     *   <li>Background color from database
-     *   <li>Background image if configured
+     *   <li>Background color or image
      *   <li>Grid opacity mode
      *   <li>Audio mute state
+     *   <li>Selected song
      * </ul>
      *
-     * @param sudokuFX The GridPane to apply background settings
-     * @param menuOptionsButtonColor The ColorPicker to synchronize with the current color
-     * @param toaster The toaster component for user notifications during image loading
-     * @param spinner The spinner component to indicate loading state
-     * @see #setColorFromModel(GridPane, ColorPicker, String)
-     * @see #loadBackgroundImage(File, SpinnerGridPane, GridPane)
+     * <p>This method synchronizes the UI components with the current player's options and prepares
+     * the necessary properties for bindings.
+     *
+     * @param sudokuFX the GridPane to apply background settings
+     * @param menuOptionsButtonColor the ColorPicker to synchronize with the current color
+     * @param toaster the toaster component for user notifications during image loading
+     * @param spinner the spinner component to indicate loading state
      */
     public void init(
             GridPane sudokuFX,
@@ -585,96 +586,28 @@ public class MenuOptionsViewModel {
             ToasterVBox toaster,
             SpinnerGridPane spinner) {
         this.toaster = toaster;
-        // TODO: SERVICE GET & SET
-        // IF COLOR
-        setColorFromModel(sudokuFX, menuOptionsButtonColor, "99b3ffcd");
-        // IF IMAGE
-        loadBackgroundImage(new File("C:\\Users"), spinner, sudokuFX);
-        // IF GRID ISOPAQUE
-        gridOpacityProperty.set(true);
-        // IF MUTE ISMUTED
-        initializeAudio(true);
-        // SONG PATH
-        songProperty.set(
-                Paths.get(playerStateHolder.currentPlayerProperty().get().optionsidDto().songpath())
-                        .getFileName()
-                        .toString());
-    }
-
-    /**
-     * Configures the audio service and updates the ViewModel mute property.
-     *
-     * @param muted true to start muted, false for unmuted
-     */
-    private void initializeAudio(boolean muted) {
-        audioService.setMuted(muted);
-        muteProperty.set(muted);
-    }
-
-    /**
-     * Sets the background color of the given GridPane.
-     *
-     * @param sudokuFX The GridPane to update.
-     * @param color The color to apply as the background.
-     */
-    public void updateOptionsColorAndApply(GridPane sudokuFX, Color color) {
-        // TODO: SERVICE STORE COLOR AS color.toString().substring(2)
-        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
-    }
-
-    /**
-     * Loads a background image asynchronously and applies it to the specified GridPane.
-     *
-     * <p>The method validates that the file is non-null, exists, and is a valid image. If valid, it
-     * delegates asynchronous loading, resizing, and conversion to {@link
-     * AsyncFileProcessorService}. On success, the resulting {@link BackgroundImage} is applied to
-     * the provided {@link GridPane}. Errors are logged and shown as a toast via {@link
-     * ToasterVBox}. Saving the image path to the database should be handled externally.
-     *
-     * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and
-     * resizing.
-     *
-     * @param selectedFile the image file to load; must not be null, must exist, and be a valid
-     *     image
-     * @param spinner the spinner component to indicate loading; must not be null
-     * @param sudokuFX the GridPane where the background image will be applied; must not be null
-     */
-    public void loadBackgroundImage(File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
-        if (selectedFile != null
-                && imageUtils.isValidImage(selectedFile)
-                && selectedFile.exists()) {
-            asyncFileProcessorService.processFileAsync(
-                    selectedFile,
-                    spinner,
-                    toaster,
-                    file -> {
-                        ImageMeta meta = imageUtils.getImageMeta(file);
-                        Image resizedImage =
-                                new Image(
-                                        file.toURI().toString(),
-                                        meta.width() * meta.scaleFactor(),
-                                        meta.height() * meta.scaleFactor(),
-                                        true,
-                                        true);
-                        return imageUtils.createBackgroundImage(resizedImage);
-                    },
-                    backgroundImage -> {
-                        sudokuFX.setBackground(new Background(backgroundImage));
-                        // TODO save the image path to base
-                        toaster.addToast(
-                                MessageFormat.format(
-                                        I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
-                                        selectedFile.getName()),
-                                selectedFile.toURI().toString(),
-                                ToastLevels.INFO,
-                                false);
-                    });
-            return;
+        OptionsDto optionsDto = playerStateHolder.currentPlayerProperty().get().optionsidDto();
+        if (optionsDto.isimage()) {
+            applyAndPersistBackgroundImage(new File(optionsDto.imagepath()), spinner, sudokuFX);
+        } else {
+            setColorFromModel(sudokuFX, menuOptionsButtonColor, optionsDto.hexcolor());
         }
-        String errorMessage =
-                I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
-        LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
-        toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+        gridOpacityProperty.set(optionsDto.isopaque());
+        audioService.setMuted(optionsDto.ismuted());
+        muteProperty.set(optionsDto.ismuted());
+        if (!optionsDto.songpath().isEmpty()) {
+            songProperty.set(Paths.get(optionsDto.songpath()).getFileName().toString());
+        } else {
+            resetSongPath();
+        }
+    }
+
+    /**
+     * Resets the song path by clearing the current selection, persisting the change, and showing a
+     * toast notification.
+     */
+    public void resetSongPath() {
+        persistSongPath("", songProperty.get());
     }
 
     /**
@@ -689,7 +622,7 @@ public class MenuOptionsViewModel {
      */
     public void saveSong(File file) {
         if (file != null && audioUtils.isValidAudio(file) && file.exists()) {
-            updateSongPath(file.getAbsolutePath(), file.getName());
+            persistSongPath(file.getAbsolutePath(), file.getName());
             return;
         }
         String errorMessage =
@@ -699,7 +632,7 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Updates the audio file path (songPath) in the current player's options.
+     * Persists the audio file path (songPath) in the current player's options.
      *
      * <p>A copy of the current {@link OptionsDto} is created with the new path and persisted via
      * {@link OptionsService#updateOptions(OptionsDto)}. On success, the current player is
@@ -709,7 +642,7 @@ public class MenuOptionsViewModel {
      * @param absolutePath the new audio file absolute path
      * @param name the file name, used in toast messages
      */
-    private void updateSongPath(String absolutePath, String name) {
+    private void persistSongPath(String absolutePath, String name) {
         boolean clear = StringUtils.isEmpty(absolutePath);
         OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
         OptionsDto toSaveOptions =
@@ -747,11 +680,36 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Applies a background color to the GridPane and sets it in the ColorPicker.
+     * Toggles the audio mute state, persists the new value in the database, updates the {@link
+     * AudioService}, and reflects the change in {@code muteProperty}.
+     */
+    public void toggleMuteAndPersist() {
+        boolean newState = !muteProperty.get();
+        // TODO persist isMuted to database via OptionsService
+        audioService.setMuted(newState);
+        muteProperty.set(newState);
+    }
+
+    /**
+     * Toggles the grid opacity mode, persists the new state in the database, updates {@code
+     * gridOpacityProperty}, and returns the updated value.
      *
-     * @param sudokuFX The GridPane to update.
-     * @param menuOptionsButtonColor The ColorPicker to update.
-     * @param colorValueFromModel The hex color string (e.g., "99b3ffcd").
+     * @return {@code true} if opaque mode is now active, {@code false} if transparent
+     */
+    public boolean toggleGridOpacityAndPersist() {
+        boolean newState = !gridOpacityProperty.get();
+        gridOpacityProperty.set(newState);
+        // TODO persist opacity to database via OptionsService
+        return newState;
+    }
+
+    /**
+     * Sets the background color of the GridPane and updates the ColorPicker based on the color
+     * value retrieved from the model.
+     *
+     * @param sudokuFX the GridPane to update
+     * @param menuOptionsButtonColor the ColorPicker to update
+     * @param colorValueFromModel the hex color string from the model (e.g., "99b3ffcd")
      */
     private void setColorFromModel(
             GridPane sudokuFX, ColorPicker menuOptionsButtonColor, String colorValueFromModel) {
@@ -762,27 +720,70 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Toggles grid opacity mode and returns the new state.
+     * Applies the given color as the background of the GridPane, updates the options with the new
+     * value, and persists it in the database.
      *
-     * @return true if opaque mode is now active, false if transparent
+     * @param sudokuFX the GridPane to update
+     * @param color the color to apply and persist
      */
-    public boolean toggleGridOpacity() {
-        gridOpacityProperty.set(!gridOpacityProperty.get());
-        return gridOpacityProperty.get();
-    }
-
-    /** Toggles the audio mute state. Updates the AudioService and the muteProperty accordingly. */
-    public void toggleMute() {
-        boolean newState = !muteProperty.get();
-        audioService.setMuted(newState);
-        muteProperty.set(newState);
+    public void applyAndPersistOptionsColor(GridPane sudokuFX, Color color) {
+        // TODO persist color.toString().substring(2) to database via OptionsService
+        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
 
     /**
-     * Clears the selected song, shows a toast notification, and resets {@link #songProperty} to
-     * empty.
+     * Applies a background image to the specified GridPane and persists its path in the database.
+     *
+     * <p>The method validates that the file is non-null, exists, and is a valid image. If valid, it
+     * delegates asynchronous loading, resizing, and conversion to {@link
+     * AsyncFileProcessorService}. On success, the resulting {@link BackgroundImage} is applied to
+     * the provided {@link GridPane} and an info toast is shown. Errors are logged and shown as an
+     * error toast via {@link ToasterVBox}.
+     *
+     * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and
+     * resizing.
+     *
+     * @param selectedFile the image file to load; must not be null, must exist, and be a valid
+     *     image
+     * @param spinner the spinner component to indicate loading; must not be null
+     * @param sudokuFX the GridPane where the background image will be applied; must not be null
      */
-    public void clearSong() {
-        updateSongPath("", songProperty.get());
+    public void applyAndPersistBackgroundImage(
+            File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
+        if (selectedFile != null
+                && imageUtils.isValidImage(selectedFile)
+                && selectedFile.exists()) {
+            asyncFileProcessorService.processFileAsync(
+                    selectedFile,
+                    spinner,
+                    toaster,
+                    file -> {
+                        ImageMeta meta = imageUtils.getImageMeta(file);
+                        Image resizedImage =
+                                new Image(
+                                        file.toURI().toString(),
+                                        meta.width() * meta.scaleFactor(),
+                                        meta.height() * meta.scaleFactor(),
+                                        true,
+                                        true);
+                        return imageUtils.createBackgroundImage(resizedImage);
+                    },
+                    backgroundImage -> {
+                        sudokuFX.setBackground(new Background(backgroundImage));
+                        // TODO persist image path to database via OptionsService
+                        toaster.addToast(
+                                MessageFormat.format(
+                                        I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
+                                        selectedFile.getName()),
+                                selectedFile.toURI().toString(),
+                                ToastLevels.INFO,
+                                false);
+                    });
+            return;
+        }
+        String errorMessage =
+                I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
+        LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
+        toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
     }
 }

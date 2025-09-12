@@ -118,7 +118,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
 
     @Test
     void givenViewModelAndColorPicker_whenInit_thenColorIsSetAndColorPickerUpdated() {
-        Color expectedColor = Color.rgb(153, 179, 255, 0.803921568627451);
+        Color expectedColor = Color.rgb(255, 255, 255, 1);
         assertEquals(expectedColor, colorPicker.getValue());
         BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
         assertEquals(expectedColor, fill.getFill());
@@ -127,7 +127,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     @Test
     void givenGridPaneAndColor_whenUpdateBackgroundColor_thenColorApplied() {
         Color color = Color.web("#12345678");
-        viewModel.updateOptionsColorAndApply(sudokuFX, color);
+        viewModel.applyAndPersistOptionsColor(sudokuFX, color);
         BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
         assertEquals(color, fill.getFill());
     }
@@ -139,7 +139,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         @Test
         void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast() {
             doNothing().when(toasterMock).addToast(anyString(), anyString(), any(), anyBoolean());
-            viewModel.loadBackgroundImage(null, spinnerMock, sudokuFX);
+            viewModel.applyAndPersistBackgroundImage(null, spinnerMock, sudokuFX);
             verifyNoInteractions(asyncServiceMock);
             verify(toasterMock, atLeastOnce())
                     .addToast(
@@ -154,7 +154,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         void givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast() {
             File invalidFile = new File("invalid.txt");
             doNothing().when(toasterMock).addToast(anyString(), anyString(), any(), anyBoolean());
-            viewModel.loadBackgroundImage(invalidFile, spinnerMock, sudokuFX);
+            viewModel.applyAndPersistBackgroundImage(invalidFile, spinnerMock, sudokuFX);
             verifyNoInteractions(asyncServiceMock);
             verify(toasterMock, atLeastOnce())
                     .addToast(
@@ -179,7 +179,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
-            viewModel.loadBackgroundImage(validFile, spinnerMock, sudokuFX);
+            viewModel.applyAndPersistBackgroundImage(validFile, spinnerMock, sudokuFX);
             verify(asyncServiceMock)
                     .processFileAsync(
                             eq(validFile), eq(spinnerMock), eq(toasterMock), any(), any());
@@ -195,7 +195,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
-            viewModel.loadBackgroundImage(nonExistentFile, spinnerMock, sudokuFX);
+            viewModel.applyAndPersistBackgroundImage(nonExistentFile, spinnerMock, sudokuFX);
             verify(asyncServiceMock, never()).processFileAsync(any(), any(), any(), any(), any());
             verify(toasterMock, atLeast(1))
                     .addToast(anyString(), anyString(), eq(ToastLevels.ERROR), eq(true));
@@ -209,7 +209,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         @Test
         void givenInitialGridOpacity_whenToggleGridOpacity_thenPropertyInverted() {
             boolean initial = viewModel.gridOpacityProperty().get();
-            boolean toggled = viewModel.toggleGridOpacity();
+            boolean toggled = viewModel.toggleGridOpacityAndPersist();
             assertEquals(!initial, toggled);
             assertEquals(toggled, viewModel.gridOpacityProperty().get());
         }
@@ -217,7 +217,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         @Test
         void givenInitialMuteState_whenToggleMute_thenAudioServiceAndPropertyUpdated() {
             boolean initial = audioSpy.isMuted();
-            viewModel.toggleMute();
+            viewModel.toggleMuteAndPersist();
             verify(audioSpy).setMuted(!initial);
             assertEquals(!initial, audioSpy.isMuted());
         }
@@ -254,7 +254,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
 
     @Test
     @SuppressWarnings({"unchecked", "rawtypes"})
-    void givenValidFile_whenLoadBackgroundImage_thenAsyncServiceCalledAndBackgroundSet()
+    void givenValidFile_whenApplyAndPersistBackgroundImage_thenAsyncServiceCalledAndBackgroundSet()
             throws Exception {
         File imageFile = new File("src/test/resources/sample.jpg");
         SpinnerGridPane spinnerMockLocal = mock(SpinnerGridPane.class);
@@ -286,7 +286,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                         eq(toasterMockLocal),
                         processorCaptor.capture(),
                         any());
-        vm.loadBackgroundImage(imageFile, spinnerMockLocal, gridMock);
+        vm.applyAndPersistBackgroundImage(imageFile, spinnerMockLocal, gridMock);
         verify(asyncServiceMock)
                 .processFileAsync(
                         eq(imageFile), eq(spinnerMockLocal), eq(toasterMockLocal), any(), any());

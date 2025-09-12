@@ -69,7 +69,7 @@ public abstract class AbstractPlayerStateTest {
                 new MenuDto((byte) 1, (byte) 1),
                 null,
                 "SafePlayer",
-                false,
+                true,
                 LocalDateTime.of(2024, 1, 1, 10, 0, 0),
                 LocalDateTime.of(2024, 1, 1, 10, 0, 0));
     }
