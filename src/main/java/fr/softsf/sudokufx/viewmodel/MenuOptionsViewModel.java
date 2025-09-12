@@ -587,10 +587,10 @@ public class MenuOptionsViewModel {
             SpinnerGridPane spinner) {
         this.toaster = toaster;
         OptionsDto optionsDto = playerStateHolder.currentPlayerProperty().get().optionsidDto();
-        if (optionsDto.image()) {
-            applyAndPersistBackgroundImage(new File(optionsDto.imagepath()), spinner, sudokuFX);
-        } else {
+        if (optionsDto.imagepath().isEmpty()) {
             setColorFromModel(sudokuFX, menuOptionsButtonColor, optionsDto.hexcolor());
+        } else {
+            applyAndPersistBackgroundImage(new File(optionsDto.imagepath()), spinner, sudokuFX);
         }
         gridOpacityProperty.set(optionsDto.opaque());
         audioService.setMuted(optionsDto.muted());
@@ -651,7 +651,6 @@ public class MenuOptionsViewModel {
                         currentOptions.hexcolor(),
                         currentOptions.imagepath(),
                         absolutePath,
-                        currentOptions.image(),
                         currentOptions.opaque(),
                         currentOptions.muted());
         try {

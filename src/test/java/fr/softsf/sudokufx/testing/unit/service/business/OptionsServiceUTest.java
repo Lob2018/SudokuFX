@@ -40,7 +40,7 @@ class OptionsServiceUTest {
     @Test
     void givenValidOptionsDto_whenUpdateOptions_thenReturnsUpdatedDto() {
         OptionsDto dto =
-                new OptionsDto(1L, "#FFFFFF", "path/image.png", "path/song.mp3", true, true, false);
+                new OptionsDto(1L, "#FFFFFF", "path/image.png", "path/song.mp3", true, false);
         Options existingOptions = mock(Options.class);
 
         when(optionsRepository.findById(dto.optionsid())).thenReturn(Optional.of(existingOptions));
@@ -55,7 +55,6 @@ class OptionsServiceUTest {
         verify(existingOptions).setHexcolor(dto.hexcolor());
         verify(existingOptions).setImagepath(dto.imagepath());
         verify(existingOptions).setSongpath(dto.songpath());
-        verify(existingOptions).setImage(dto.image());
         verify(existingOptions).setOpaque(dto.opaque());
         verify(existingOptions).setMuted(dto.muted());
     }
@@ -68,8 +67,7 @@ class OptionsServiceUTest {
 
     @Test
     void givenNonExistentOptions_whenUpdateOptions_thenThrowsIllegalArgumentException() {
-        OptionsDto dto =
-                new OptionsDto(999L, "#FFFFFF", "image.png", "song.mp3", true, true, false);
+        OptionsDto dto = new OptionsDto(999L, "#FFFFFF", "image.png", "song.mp3", true, false);
         when(jakartaValidator.validateOrThrow(dto)).thenReturn(dto);
         when(optionsRepository.findById(999L)).thenReturn(Optional.empty());
         IllegalArgumentException ex =
@@ -80,7 +78,7 @@ class OptionsServiceUTest {
 
     @Test
     void givenValidationFails_whenUpdateOptions_thenThrowsConstraintViolationException() {
-        OptionsDto dto = new OptionsDto(1L, "#FFFFFF", "image.png", "song.mp3", true, true, false);
+        OptionsDto dto = new OptionsDto(1L, "#FFFFFF", "image.png", "song.mp3", true, false);
         when(jakartaValidator.validateOrThrow(dto))
                 .thenThrow(new ConstraintViolationException("Validation failed", Set.of()));
 

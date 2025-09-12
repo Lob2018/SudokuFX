@@ -65,7 +65,7 @@ public abstract class AbstractPlayerStateTest {
         return new PlayerDto(
                 1L,
                 new PlayerLanguageDto(1L, "FR"),
-                new OptionsDto(1L, "FFFFFFFF", "", "", false, true, true),
+                new OptionsDto(1L, "FFFFFFFF", "", "", true, true),
                 new MenuDto((byte) 1, (byte) 1),
                 null,
                 "SafePlayer",

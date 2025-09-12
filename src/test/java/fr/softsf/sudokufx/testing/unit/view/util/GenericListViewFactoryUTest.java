@@ -34,7 +34,7 @@ class GenericListViewFactoryUTest {
         return new PlayerDto(
                 id,
                 new PlayerLanguageDto(id, "FR"),
-                new OptionsDto(id, "#FFFFFF", "", "", false, true, true),
+                new OptionsDto(id, "#FFFFFF", "", "", true, true),
                 new MenuDto((byte) 1, (byte) 1),
                 null,
                 name,

@@ -62,10 +62,6 @@ public class Options {
     @NotNull @Size(max = MAX_PATH_LENGTH) @Column(name = "songpath", nullable = false, length = MAX_PATH_LENGTH)
     private String songpath = EMPTY_PATH;
 
-    /** Flag indicating if a background image is used. */
-    @Column(name = "image", nullable = false)
-    private boolean image = false;
-
     /** Flag indicating if the background image is opaque. */
     @Column(name = "opaque", nullable = false)
     private boolean opaque = true;
@@ -84,7 +80,6 @@ public class Options {
      * @param hexcolor background color in ARGB hex format
      * @param imagepath path to background image
      * @param songpath path to background song
-     * @param image true if using an image
      * @param opaque true if the image is opaque
      * @param muted true if the song is muted
      */
@@ -93,14 +88,12 @@ public class Options {
             @Nonnull @NotNull String hexcolor,
             @Nonnull @NotNull String imagepath,
             @Nonnull @NotNull String songpath,
-            boolean image,
             boolean opaque,
             boolean muted) {
         this.optionsid = optionsid;
         this.hexcolor = validateHexcolor(hexcolor);
         this.imagepath = validatePath(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
         this.songpath = validatePath(songpath, SONGPATH_MUST_NOT_BE_NULL);
-        this.image = image;
         this.opaque = opaque;
         this.muted = muted;
     }
@@ -163,11 +156,6 @@ public class Options {
         return songpath;
     }
 
-    /** Returns true if a background image is used. */
-    public boolean getImage() {
-        return image;
-    }
-
     /** Returns true if the background image is opaque. */
     public boolean getOpaque() {
         return opaque;
@@ -191,11 +179,6 @@ public class Options {
     /** Sets the background song path after validation. */
     public void setSongpath(@Nonnull String songpath) {
         this.songpath = validatePath(songpath, SONGPATH_MUST_NOT_BE_NULL);
-    }
-
-    /** Sets whether a background image is used. */
-    public void setImage(boolean image) {
-        this.image = image;
     }
 
     /** Sets whether the background image is opaque. */
@@ -223,7 +206,6 @@ public class Options {
         private String hexcolor = DEFAULT_HEX_COLOR;
         private String imagepath = EMPTY_PATH;
         private String songpath = EMPTY_PATH;
-        private boolean image = false;
         private boolean opaque = true;
         private boolean muted = true;
 
@@ -251,12 +233,6 @@ public class Options {
             return this;
         }
 
-        /** Sets whether a background image is used. */
-        public OptionsBuilder image(boolean image) {
-            this.image = image;
-            return this;
-        }
-
         /** Sets whether the background image is opaque. */
         public OptionsBuilder opaque(boolean opaque) {
             this.opaque = opaque;
@@ -276,7 +252,7 @@ public class Options {
          * @throws IllegalArgumentException if parameters are invalid
          */
         public Options build() {
-            return new Options(optionsid, hexcolor, imagepath, songpath, image, opaque, muted);
+            return new Options(optionsid, hexcolor, imagepath, songpath, opaque, muted);
         }
     }
 
@@ -287,8 +263,7 @@ public class Options {
             return true;
         }
         if (obj instanceof Options other) {
-            return image == other.image
-                    && opaque == other.opaque
+            return opaque == other.opaque
                     && muted == other.muted
                     && Objects.equals(optionsid, other.optionsid)
                     && Objects.equals(hexcolor, other.hexcolor)
@@ -301,15 +276,15 @@ public class Options {
     /** Computes the hash code based on all fields. */
     @Override
     public int hashCode() {
-        return Objects.hash(optionsid, hexcolor, imagepath, songpath, image, opaque, muted);
+        return Objects.hash(optionsid, hexcolor, imagepath, songpath, opaque, muted);
     }
 
     /** Returns a string representation of the Options object. */
     @Override
     public String toString() {
         return String.format(
-                "Options{optionsid=%s, hexcolor='%s', imagepath='%s', songpath='%s', image=%b,"
+                "Options{optionsid=%s, hexcolor='%s', imagepath='%s', songpath='%s',"
                         + " opaque=%b, muted=%b}",
-                optionsid, hexcolor, imagepath, songpath, image, opaque, muted);
+                optionsid, hexcolor, imagepath, songpath, opaque, muted);
     }
 }

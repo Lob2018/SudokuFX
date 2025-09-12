@@ -58,7 +58,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(1L, "#FFFFFF", "", "", false, true, true),
+                        new OptionsDto(1L, "#FFFFFF", "", "", true, true),
                         new MenuDto((byte) 1, (byte) 1),
                         new GameDto(
                                 1L,
@@ -116,7 +116,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(1L, "#FFFFFF", "", "", false, true, true),
+                        new OptionsDto(1L, "#FFFFFF", "", "", true, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null,
                         "Jean",
@@ -137,7 +137,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(1L, "#FFFFFF", "", "", false, true, true),
+                        new OptionsDto(1L, "#FFFFFF", "", "", true, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null,
                         "Jean",
@@ -158,7 +158,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(1L, "#FFFFFF", "", "", false, true, true),
+                        new OptionsDto(1L, "#FFFFFF", "", "", true, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null,
                         "Jean",
@@ -204,7 +204,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         999L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(1L, "#FFFFFF", "", "", false, true, true),
+                        new OptionsDto(1L, "#FFFFFF", "", "", true, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null,
                         "Jean",
@@ -224,7 +224,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(999L, "FR"),
-                        new OptionsDto(1L, "#FFFFFF", "", "", false, true, true),
+                        new OptionsDto(1L, "#FFFFFF", "", "", true, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null,
                         "Jean",
@@ -247,7 +247,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(999L, "#FFFFFF", "", "", false, true, true),
+                        new OptionsDto(999L, "#FFFFFF", "", "", true, true),
                         new MenuDto((byte) 1, (byte) 1),
                         null,
                         "Jean",
@@ -273,7 +273,7 @@ class PlayerServiceUTest {
                 new PlayerDto(
                         1L,
                         new PlayerLanguageDto(1L, "FR"),
-                        new OptionsDto(1L, "#FFFFFF", "", "", false, true, true),
+                        new OptionsDto(1L, "#FFFFFF", "", "", true, true),
                         new MenuDto((byte) 99, (byte) 1),
                         null,
                         "Jean",

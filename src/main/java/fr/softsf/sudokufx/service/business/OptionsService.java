@@ -72,7 +72,6 @@ public class OptionsService {
         existing.setHexcolor(validatedDto.hexcolor());
         existing.setImagepath(validatedDto.imagepath());
         existing.setSongpath(validatedDto.songpath());
-        existing.setImage(validatedDto.image());
         existing.setOpaque(validatedDto.opaque());
         existing.setMuted(validatedDto.muted());
         Options saved = optionsRepository.save(existing);
