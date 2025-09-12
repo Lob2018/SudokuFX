@@ -185,7 +185,7 @@ class PlayerServiceUTest {
         assertNotNull(result);
         assertEquals("Jean", result.name());
         verify(existingPlayer).setName(dto.name());
-        verify(existingPlayer).setIsselected(dto.isselected());
+        verify(existingPlayer).setSelected(dto.selected());
         verify(existingPlayer).setUpdatedat(dto.updatedat());
         verify(existingPlayer).setPlayerlanguageid(pl);
         verify(existingPlayer).setOptionsid(op);

@@ -55,9 +55,9 @@ class OptionsServiceUTest {
         verify(existingOptions).setHexcolor(dto.hexcolor());
         verify(existingOptions).setImagepath(dto.imagepath());
         verify(existingOptions).setSongpath(dto.songpath());
-        verify(existingOptions).setIsimage(dto.isimage());
-        verify(existingOptions).setIsopaque(dto.isopaque());
-        verify(existingOptions).setIsmuted(dto.ismuted());
+        verify(existingOptions).setImage(dto.image());
+        verify(existingOptions).setOpaque(dto.opaque());
+        verify(existingOptions).setMuted(dto.muted());
     }
 
     @Test

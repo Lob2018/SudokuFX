@@ -85,8 +85,8 @@ public class Player {
     private String name = "";
 
     /** Flag indicating whether this player is selected. */
-    @Column(name = "isselected", nullable = false)
-    private boolean isselected = false;
+    @Column(name = "selected", nullable = false)
+    private boolean selected = false;
 
     /** Creation timestamp of the player. */
     @Nonnull
@@ -110,7 +110,7 @@ public class Player {
      * @param menuid player's menu
      * @param games games associated with the player
      * @param name name of the player
-     * @param isselected whether the player is selected
+     * @param selected whether the player is selected
      * @param createdat creation timestamp
      * @param updatedat update timestamp
      */
@@ -121,7 +121,7 @@ public class Player {
             @Nonnull @NotNull Menu menuid,
             Set<Game> games,
             @Nonnull @NotNull String name,
-            boolean isselected,
+            boolean selected,
             @Nonnull @NotNull LocalDateTime createdat,
             @Nonnull @NotNull LocalDateTime updatedat) {
         this.playerid = playerid;
@@ -130,7 +130,7 @@ public class Player {
         this.menuid = validateMenu(menuid);
         this.games = (games != null) ? games : new LinkedHashSet<>();
         this.name = validateName(name);
-        this.isselected = isselected;
+        this.selected = selected;
         this.createdat = validateCreatedAt(createdat);
         this.updatedat = validateUpdatedAt(updatedat);
     }
@@ -196,8 +196,8 @@ public class Player {
     }
 
     /** Returns whether the player is selected. */
-    public boolean getIsselected() {
-        return isselected;
+    public boolean getSelected() {
+        return selected;
     }
 
     /** Returns the creation timestamp. */
@@ -236,8 +236,8 @@ public class Player {
     }
 
     /** Sets the selection flag. */
-    public void setIsselected(boolean isselected) {
-        this.isselected = isselected;
+    public void setSelected(boolean selected) {
+        this.selected = selected;
     }
 
     /** Sets the update timestamp after validation. */
@@ -262,7 +262,7 @@ public class Player {
         private Menu menuid;
         private Set<Game> games = new LinkedHashSet<>();
         private String name;
-        private boolean isselected = false;
+        private boolean selected = false;
         private LocalDateTime createdat = LocalDateTime.now();
         private LocalDateTime updatedat = LocalDateTime.now();
 
@@ -303,8 +303,8 @@ public class Player {
         }
 
         /** Sets the selection flag. */
-        public PlayerBuilder isselected(boolean isselected) {
-            this.isselected = isselected;
+        public PlayerBuilder selected(boolean selected) {
+            this.selected = selected;
             return this;
         }
 
@@ -334,7 +334,7 @@ public class Player {
                     menuid,
                     games,
                     name,
-                    isselected,
+                    selected,
                     createdat,
                     updatedat);
         }
@@ -352,7 +352,7 @@ public class Player {
                     && Objects.equals(optionsid, other.optionsid)
                     && Objects.equals(menuid, other.menuid)
                     && Objects.equals(name, other.name)
-                    && Objects.equals(isselected, other.isselected)
+                    && Objects.equals(selected, other.selected)
                     && Objects.equals(createdat, other.createdat)
                     && Objects.equals(updatedat, other.updatedat);
         }
@@ -368,7 +368,7 @@ public class Player {
                 optionsid,
                 menuid,
                 name,
-                isselected,
+                selected,
                 createdat,
                 updatedat);
     }
@@ -378,13 +378,13 @@ public class Player {
     public String toString() {
         return String.format(
                 "Player{playerid=%s, playerlanguageid=%s, optionsid=%s, menuid=%s, name=%s,"
-                        + " isselected=%b, createdat=%s, updatedat=%s}",
+                        + " selected=%b, createdat=%s, updatedat=%s}",
                 playerid,
                 playerlanguageid.getPlayerlanguageid(),
                 optionsid.getOptionsid(),
                 menuid.getMenuid(),
                 name,
-                isselected,
+                selected,
                 createdat,
                 updatedat);
     }

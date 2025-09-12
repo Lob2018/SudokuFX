@@ -149,7 +149,7 @@ public class MenuSaveViewModel {
             return;
         }
         backups.stream()
-                .filter(GameDto::isselected)
+                .filter(GameDto::selected)
                 .findFirst()
                 .ifPresentOrElse(selectedBackup::set, () -> selectedBackup.set(backups.getFirst()));
     }

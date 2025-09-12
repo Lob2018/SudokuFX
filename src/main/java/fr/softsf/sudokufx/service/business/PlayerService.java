@@ -137,7 +137,7 @@ public class PlayerService {
                                         ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                                                 "Menu not found"));
         existing.setName(validatedDto.name());
-        existing.setIsselected(validatedDto.isselected());
+        existing.setSelected(validatedDto.selected());
         existing.setUpdatedat(validatedDto.updatedat());
         existing.setPlayerlanguageid(pl);
         existing.setOptionsid(op);

@@ -56,7 +56,7 @@ class GameUTest {
             assertEquals(mockGrid, game.getGridid());
             assertEquals(mockPlayer, game.getPlayerid());
             assertEquals(mockGameLevel, game.getLevelid());
-            assertEquals(expectedIsSelected, game.getIsselected());
+            assertEquals(expectedIsSelected, game.getSelected());
             assertEquals(testCreatedAt, game.getCreatedat());
             assertEquals(testUpdatedAt, game.getUpdatedat());
         }
@@ -217,7 +217,7 @@ class GameUTest {
         @Test
         @DisplayName("Given Game exists when getting IsSelected then IsSelected is returned")
         void givenGameExists_whenGettingIsSelected_thenIsSelectedIsReturned() {
-            boolean actualIsSelected = game.getIsselected();
+            boolean actualIsSelected = game.getSelected();
             assertTrue(actualIsSelected);
         }
 
@@ -280,8 +280,8 @@ class GameUTest {
         @DisplayName("Given valid boolean when setting IsSelected then IsSelected is updated")
         void givenValidBoolean_whenSettingIsSelected_thenIsSelectedIsUpdated() {
             boolean newIsSelected = true;
-            game.setIsselected(newIsSelected);
-            assertTrue(game.getIsselected());
+            game.setSelected(newIsSelected);
+            assertTrue(game.getSelected());
         }
 
         @Test
@@ -322,7 +322,7 @@ class GameUTest {
                             .gridid(mockGrid)
                             .playerid(mockPlayer)
                             .levelid(mockGameLevel)
-                            .isselected(expectedIsSelected)
+                            .selected(expectedIsSelected)
                             .createdat(testCreatedAt)
                             .updatedat(testUpdatedAt)
                             .build();
@@ -331,7 +331,7 @@ class GameUTest {
             assertEquals(mockGrid, game.getGridid());
             assertEquals(mockPlayer, game.getPlayerid());
             assertEquals(mockGameLevel, game.getLevelid());
-            assertEquals(expectedIsSelected, game.getIsselected());
+            assertEquals(expectedIsSelected, game.getSelected());
             assertEquals(testCreatedAt, game.getCreatedat());
             assertEquals(testUpdatedAt, game.getUpdatedat());
         }
@@ -357,7 +357,7 @@ class GameUTest {
                             .levelid(mockGameLevel)
                             .build();
             assertNotNull(game);
-            assertFalse(game.getIsselected());
+            assertFalse(game.getSelected());
             assertNotNull(game.getCreatedat());
             assertNotNull(game.getUpdatedat());
         }
@@ -487,7 +487,7 @@ class GameUTest {
             assertNotNull(result);
             assertTrue(result.contains("Game{"));
             assertTrue(result.contains("gameid=1"));
-            assertTrue(result.contains("isselected=true"));
+            assertTrue(result.contains("selected=true"));
             assertTrue(result.contains("gridid=" + mockGrid.getGridid()));
             assertTrue(result.contains("playerid=" + mockPlayer.getPlayerid()));
             assertTrue(result.contains("levelid=" + mockGameLevel.getLevelid()));
@@ -510,7 +510,7 @@ class GameUTest {
             assertNull(game.getGridid());
             assertNull(game.getPlayerid());
             assertNull(game.getLevelid());
-            assertFalse(game.getIsselected());
+            assertFalse(game.getSelected());
             assertNotNull(game.getCreatedat());
             assertNotNull(game.getUpdatedat());
         }

@@ -70,8 +70,8 @@ public class Game {
     private GameLevel levelid;
 
     /** Whether this game is currently selected. */
-    @Column(name = "isselected", nullable = false)
-    private boolean isselected = false;
+    @Column(name = "selected", nullable = false)
+    private boolean selected = false;
 
     /** Timestamp when this game was created. */
     @Nonnull
@@ -93,7 +93,7 @@ public class Game {
      * @param gridid the grid associated with this game
      * @param playerid the player associated with this game
      * @param levelid the game level
-     * @param isselected whether the game is selected
+     * @param selected whether the game is selected
      * @param createdat creation timestamp
      * @param updatedat last update timestamp
      */
@@ -102,14 +102,14 @@ public class Game {
             @Nonnull @NotNull Grid gridid,
             @Nonnull @NotNull Player playerid,
             @Nonnull @NotNull GameLevel levelid,
-            boolean isselected,
+            boolean selected,
             @Nonnull @NotNull LocalDateTime createdat,
             @Nonnull @NotNull LocalDateTime updatedat) {
         this.gameid = gameid;
         this.gridid = validateGrid(gridid);
         this.playerid = validatePlayer(playerid);
         this.levelid = validateLevel(levelid);
-        this.isselected = isselected;
+        this.selected = selected;
         this.createdat = validateCreatedAt(createdat);
         this.updatedat = validateUpdatedAt(updatedat);
     }
@@ -162,8 +162,8 @@ public class Game {
     }
 
     /** Returns whether the game is currently selected. */
-    public boolean getIsselected() {
-        return isselected;
+    public boolean getSelected() {
+        return selected;
     }
 
     /** Returns the creation timestamp. */
@@ -189,8 +189,8 @@ public class Game {
     }
 
     /** Sets the selection state of this game. */
-    public void setIsselected(boolean isselected) {
-        this.isselected = isselected;
+    public void setSelected(boolean selected) {
+        this.selected = selected;
     }
 
     /** Updates the last modified timestamp. */
@@ -209,7 +209,7 @@ public class Game {
         private Grid gridid;
         private Player playerid;
         private GameLevel levelid;
-        private boolean isselected = false;
+        private boolean selected = false;
         private LocalDateTime createdat = LocalDateTime.now();
         private LocalDateTime updatedat = LocalDateTime.now();
 
@@ -238,8 +238,8 @@ public class Game {
         }
 
         /** Sets whether the game is selected. */
-        public GameBuilder isselected(boolean isselected) {
-            this.isselected = isselected;
+        public GameBuilder selected(boolean selected) {
+            this.selected = selected;
             return this;
         }
 
@@ -257,7 +257,7 @@ public class Game {
 
         /** Builds a validated {@link Game} instance. */
         public Game build() {
-            return new Game(gameid, gridid, playerid, levelid, isselected, createdat, updatedat);
+            return new Game(gameid, gridid, playerid, levelid, selected, createdat, updatedat);
         }
     }
 
@@ -272,7 +272,7 @@ public class Game {
                     && Objects.equals(gridid, other.gridid)
                     && Objects.equals(playerid, other.playerid)
                     && Objects.equals(levelid, other.levelid)
-                    && Objects.equals(isselected, other.isselected)
+                    && Objects.equals(selected, other.selected)
                     && Objects.equals(createdat, other.createdat)
                     && Objects.equals(updatedat, other.updatedat);
         }
@@ -282,20 +282,20 @@ public class Game {
     /** Computes the hash code based on all fields. */
     @Override
     public int hashCode() {
-        return Objects.hash(gameid, gridid, playerid, levelid, isselected, createdat, updatedat);
+        return Objects.hash(gameid, gridid, playerid, levelid, selected, createdat, updatedat);
     }
 
     /** Returns a string representation of the game. */
     @Override
     public String toString() {
         return String.format(
-                "Game{gameid=%s, gridid=%s, playerid=%s, levelid=%s, isselected=%b, createdat=%s,"
+                "Game{gameid=%s, gridid=%s, playerid=%s, levelid=%s, selected=%b, createdat=%s,"
                         + " updatedat=%s}",
                 gameid,
                 gridid.getGridid(),
                 playerid.getPlayerid(),
                 levelid.getLevelid(),
-                isselected,
+                selected,
                 createdat,
                 updatedat);
     }

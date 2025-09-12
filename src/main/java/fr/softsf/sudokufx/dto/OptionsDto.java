@@ -18,15 +18,15 @@ import jakarta.validation.constraints.Size;
  *     null
  * @param songpath the file path to the song associated with the options, max 260 characters, not
  *     null
- * @param isimage flag indicating if the options uses an image (true) or a color (false)
- * @param isopaque flag indicating if the grid's background is opaque (true) or transparent (false)
- * @param ismuted flag indicating if sound is muted (true) or enabled (false)
+ * @param image flag indicating if the options uses an image (true) or a color (false)
+ * @param opaque flag indicating if the grid's background is opaque (true) or transparent (false)
+ * @param muted flag indicating if sound is muted (true) or enabled (false)
  */
 public record OptionsDto(
         Long optionsid,
         @Nonnull @NotNull @Size(min = 8, max = 8) String hexcolor,
         @Nonnull @NotNull @Size(max = 260) String imagepath,
         @Nonnull @NotNull @Size(max = 260) String songpath,
-        boolean isimage,
-        boolean isopaque,
-        boolean ismuted) {}
+        boolean image,
+        boolean opaque,
+        boolean muted) {}

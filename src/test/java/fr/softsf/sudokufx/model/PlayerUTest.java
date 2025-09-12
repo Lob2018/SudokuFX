@@ -58,7 +58,7 @@ class PlayerUTest {
                             .menuid(mockMenu)
                             .games(games)
                             .name("John")
-                            .isselected(true)
+                            .selected(true)
                             .createdat(testNow)
                             .updatedat(testNow)
                             .build();
@@ -69,7 +69,7 @@ class PlayerUTest {
             assertEquals(mockMenu, player.getMenuid());
             assertEquals(games, player.getGames());
             assertEquals("John", player.getName());
-            assertTrue(player.getIsselected());
+            assertTrue(player.getSelected());
             assertEquals(testNow, player.getCreatedat());
             assertEquals(testNow, player.getUpdatedat());
         }
@@ -333,7 +333,7 @@ class PlayerUTest {
         }
 
         @Test
-        @DisplayName("Given isselected flag when setting isselected then field is updated")
+        @DisplayName("Given selected flag when setting selected then field is updated")
         void givenIsselectedFlag_whenSettingIsselected_thenFieldIsUpdated() {
             Player player =
                     Player.builder()
@@ -341,10 +341,10 @@ class PlayerUTest {
                             .optionsid(mockOptions)
                             .menuid(mockMenu)
                             .name("John")
-                            .isselected(false)
+                            .selected(false)
                             .build();
-            player.setIsselected(true);
-            assertTrue(player.getIsselected());
+            player.setSelected(true);
+            assertTrue(player.getSelected());
         }
 
         @Test

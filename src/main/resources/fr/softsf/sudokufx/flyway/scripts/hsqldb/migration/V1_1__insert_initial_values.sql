@@ -16,9 +16,9 @@ INSERT
             hexcolor,
             imagepath,
             songpath,
-            isimage,
-            isopaque,
-            ismuted
+            image,
+            opaque,
+            muted
         )
     VALUES(
         'ffffffff',
@@ -69,7 +69,7 @@ INSERT
             playerlanguageplayerlanguageid,
             optionsoptionsid,
             menumenuid,
-            isselected,
+            selected,
             createdat,
             updatedat
         )
@@ -100,8 +100,8 @@ INSERT
                 mode = 1
         ),
         TRUE,
-        now(),
-        now()
+        NOW(),
+        NOW()
     );
 
 -- Creating values for initial grid
@@ -125,7 +125,7 @@ INSERT
             gridgridid,
             playerplayerid,
             levellevelid,
-            isselected,
+            selected,
             createdat,
             updatedat
         )

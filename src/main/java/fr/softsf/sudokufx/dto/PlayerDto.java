@@ -21,7 +21,7 @@ import jakarta.validation.constraints.Size;
  * @param menuidDto the menu associated with the player, must not be null
  * @param selectedGame the currently selected game for the player, can be null
  * @param name the player's name, must not be null and maximum length 256 characters
- * @param isselected indicates whether this player is selected
+ * @param selected indicates whether this player is selected
  * @param createdat the creation timestamp, must not be null
  * @param updatedat the last update timestamp, must not be null
  */
@@ -32,6 +32,6 @@ public record PlayerDto(
         @Nonnull @NotNull MenuDto menuidDto,
         @Nullable GameDto selectedGame,
         @Nonnull @NotNull @Size(max = 256) String name,
-        boolean isselected,
+        boolean selected,
         @Nonnull @NotNull LocalDateTime createdat,
         @Nonnull @NotNull LocalDateTime updatedat) {}

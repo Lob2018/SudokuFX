@@ -22,9 +22,9 @@ CREATE
             hexcolor VARCHAR(8) NOT NULL,
             imagepath VARCHAR(260) NOT NULL,
             songpath VARCHAR(260) NOT NULL,
-            isimage BOOLEAN DEFAULT FALSE NOT NULL,
-            isopaque BOOLEAN DEFAULT TRUE NOT NULL,
-            ismuted BOOLEAN DEFAULT TRUE NOT NULL
+            image BOOLEAN DEFAULT FALSE NOT NULL,
+            opaque BOOLEAN DEFAULT TRUE NOT NULL,
+            muted BOOLEAN DEFAULT TRUE NOT NULL
         );
 
 -- Creation of the "gamelevel" table
@@ -54,14 +54,14 @@ CREATE
             optionsoptionsid BIGINT FOREIGN KEY REFERENCES playeroptions(optionsid),
             menumenuid TINYINT FOREIGN KEY REFERENCES menu(menuid),
             name VARCHAR(256) NOT NULL UNIQUE,
-            isselected BOOLEAN DEFAULT FALSE NOT NULL,
+            selected BOOLEAN DEFAULT FALSE NOT NULL,
             createdat TIMESTAMP NOT NULL,
             updatedat TIMESTAMP NOT NULL
         );
 
 CREATE
-    INDEX idx_player_isselected ON
-    player(isselected);
+    INDEX idx_player_selected ON
+    player(selected);
 
 -- Creation of the "game" table
 CREATE
@@ -71,11 +71,11 @@ CREATE
             gridgridid BIGINT FOREIGN KEY REFERENCES grid(gridid),
             playerplayerid BIGINT FOREIGN KEY REFERENCES player(playerid),
             levellevelid TINYINT FOREIGN KEY REFERENCES gamelevel(levelid),
-            isselected BOOLEAN DEFAULT FALSE NOT NULL,
+            selected BOOLEAN DEFAULT FALSE NOT NULL,
             createdat TIMESTAMP NOT NULL,
             updatedat TIMESTAMP NOT NULL
         );
 
 CREATE
-    INDEX idx_game_isselected ON
-    game(isselected);
+    INDEX idx_game_selected ON
+    game(selected);

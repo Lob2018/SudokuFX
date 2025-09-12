@@ -61,18 +61,18 @@ class MenuSaveViewModelUTest {
     void givenSelectedBackup_whenLoaded_thenSelectedIsCorrectlySet() {
         GameDto selected = viewModel.selectedBackupProperty().get();
         assertNotNull(selected);
-        assertTrue(selected.isselected());
+        assertTrue(selected.selected());
     }
 
     @Test
     void backupsListShouldBeInitializedWithExpectedBackups() {
         ObservableList<GameDto> backups = viewModel.getBackups();
         assertEquals(21, backups.size(), "Backups list should contain 21 entries");
-        boolean hasSelected = backups.stream().anyMatch(GameDto::isselected);
+        boolean hasSelected = backups.stream().anyMatch(GameDto::selected);
         assertTrue(hasSelected, "At least one backup should be marked as selected");
         GameDto selected = viewModel.selectedBackupProperty().get();
         assertNotNull(selected, "Selected backup should not be null");
-        assertTrue(selected.isselected(), "Selected backup should be the one marked as selected");
+        assertTrue(selected.selected(), "Selected backup should be the one marked as selected");
     }
 
     @Test

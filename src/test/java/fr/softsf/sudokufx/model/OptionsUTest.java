@@ -41,9 +41,9 @@ class OptionsUTest {
             assertEquals(hexcolor, options.getHexcolor());
             assertEquals(imagepath, options.getImagepath());
             assertEquals(songpath, options.getSongpath());
-            assertTrue(options.isImage());
-            assertTrue(options.isOpaque());
-            assertTrue(options.isMuted());
+            assertTrue(options.getImage());
+            assertTrue(options.getOpaque());
+            assertTrue(options.getMuted());
         }
 
         @Test
@@ -54,7 +54,7 @@ class OptionsUTest {
             assertNull(options.getOptionsid());
             assertEquals("FFFFFFFF", options.getHexcolor());
             assertEquals("", options.getImagepath());
-            assertFalse(options.isImage());
+            assertFalse(options.getImage());
         }
     }
 
@@ -179,18 +179,18 @@ class OptionsUTest {
                             .hexcolor(VALID_HEX_8)
                             .imagepath(VALID_PATH)
                             .songpath(VALID_PATH)
-                            .isimage(true)
-                            .isopaque(true)
-                            .ismuted(true)
+                            .image(true)
+                            .opaque(true)
+                            .muted(true)
                             .build();
             assertNotNull(options);
             assertEquals(1L, options.getOptionsid());
             assertEquals(VALID_HEX_8, options.getHexcolor());
             assertEquals(VALID_PATH, options.getImagepath());
             assertEquals(VALID_PATH, options.getSongpath());
-            assertTrue(options.isImage());
-            assertTrue(options.isOpaque());
-            assertTrue(options.isMuted());
+            assertTrue(options.getImage());
+            assertTrue(options.getOpaque());
+            assertTrue(options.getMuted());
         }
 
         @Test
@@ -200,7 +200,7 @@ class OptionsUTest {
             assertNull(options.getOptionsid());
             assertEquals("FFFFFFFF", options.getHexcolor());
             assertEquals("", options.getImagepath());
-            assertFalse(options.isImage());
+            assertFalse(options.getImage());
         }
 
         @Test
@@ -260,8 +260,8 @@ class OptionsUTest {
         @Test
         void givenBooleanValue_whenSettingIsImageFlag_thenIsImageFlagIsUpdated() {
             Options options = new Options();
-            options.setIsimage(true);
-            assertTrue(options.isImage());
+            options.setImage(true);
+            assertTrue(options.getImage());
         }
     }
 
@@ -321,9 +321,9 @@ class OptionsUTest {
             assertTrue(result.contains("hexcolor='FFFFFFFF'"));
             assertTrue(result.contains("imagepath='/images/background.jpg'"));
             assertTrue(result.contains("songpath='/images/background.jpg'"));
-            assertTrue(result.contains("isimage=true"));
-            assertTrue(result.contains("isopaque=true"));
-            assertTrue(result.contains("ismuted=true"));
+            assertTrue(result.contains("image=true"));
+            assertTrue(result.contains("opaque=true"));
+            assertTrue(result.contains("muted=true"));
         }
     }
 

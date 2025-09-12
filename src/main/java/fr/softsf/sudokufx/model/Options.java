@@ -63,16 +63,16 @@ public class Options {
     private String songpath = EMPTY_PATH;
 
     /** Flag indicating if a background image is used. */
-    @Column(name = "isimage", nullable = false)
-    private boolean isimage = false;
+    @Column(name = "image", nullable = false)
+    private boolean image = false;
 
     /** Flag indicating if the background image is opaque. */
-    @Column(name = "isopaque", nullable = false)
-    private boolean isopaque = true;
+    @Column(name = "opaque", nullable = false)
+    private boolean opaque = true;
 
     /** Flag indicating if the background music is muted. */
-    @Column(name = "ismuted", nullable = false)
-    private boolean ismuted = true;
+    @Column(name = "muted", nullable = false)
+    private boolean muted = true;
 
     /** Protected default constructor for JPA. */
     protected Options() {}
@@ -84,25 +84,25 @@ public class Options {
      * @param hexcolor background color in ARGB hex format
      * @param imagepath path to background image
      * @param songpath path to background song
-     * @param isimage true if using an image
-     * @param isopaque true if the image is opaque
-     * @param ismuted true if the song is muted
+     * @param image true if using an image
+     * @param opaque true if the image is opaque
+     * @param muted true if the song is muted
      */
     public Options(
             Long optionsid,
             @Nonnull @NotNull String hexcolor,
             @Nonnull @NotNull String imagepath,
             @Nonnull @NotNull String songpath,
-            boolean isimage,
-            boolean isopaque,
-            boolean ismuted) {
+            boolean image,
+            boolean opaque,
+            boolean muted) {
         this.optionsid = optionsid;
         this.hexcolor = validateHexcolor(hexcolor);
         this.imagepath = validatePath(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
         this.songpath = validatePath(songpath, SONGPATH_MUST_NOT_BE_NULL);
-        this.isimage = isimage;
-        this.isopaque = isopaque;
-        this.ismuted = ismuted;
+        this.image = image;
+        this.opaque = opaque;
+        this.muted = muted;
     }
 
     /**
@@ -164,18 +164,18 @@ public class Options {
     }
 
     /** Returns true if a background image is used. */
-    public boolean isImage() {
-        return isimage;
+    public boolean getImage() {
+        return image;
     }
 
     /** Returns true if the background image is opaque. */
-    public boolean isOpaque() {
-        return isopaque;
+    public boolean getOpaque() {
+        return opaque;
     }
 
     /** Returns true if the background song is muted. */
-    public boolean isMuted() {
-        return ismuted;
+    public boolean getMuted() {
+        return muted;
     }
 
     /** Sets the ARGB hex color after validation. */
@@ -194,18 +194,18 @@ public class Options {
     }
 
     /** Sets whether a background image is used. */
-    public void setIsimage(boolean isimage) {
-        this.isimage = isimage;
+    public void setImage(boolean image) {
+        this.image = image;
     }
 
     /** Sets whether the background image is opaque. */
-    public void setIsopaque(boolean isopaque) {
-        this.isopaque = isopaque;
+    public void setOpaque(boolean opaque) {
+        this.opaque = opaque;
     }
 
     /** Sets whether the background song is muted. */
-    public void setIsmuted(boolean ismuted) {
-        this.ismuted = ismuted;
+    public void setMuted(boolean muted) {
+        this.muted = muted;
     }
 
     /** Returns a new {@link OptionsBuilder} instance for fluent construction. */
@@ -223,9 +223,9 @@ public class Options {
         private String hexcolor = DEFAULT_HEX_COLOR;
         private String imagepath = EMPTY_PATH;
         private String songpath = EMPTY_PATH;
-        private boolean isimage = false;
-        private boolean isopaque = true;
-        private boolean ismuted = true;
+        private boolean image = false;
+        private boolean opaque = true;
+        private boolean muted = true;
 
         /** Sets the unique ID of the Options instance. */
         public OptionsBuilder optionsid(Long optionsid) {
@@ -252,20 +252,20 @@ public class Options {
         }
 
         /** Sets whether a background image is used. */
-        public OptionsBuilder isimage(boolean isimage) {
-            this.isimage = isimage;
+        public OptionsBuilder image(boolean image) {
+            this.image = image;
             return this;
         }
 
         /** Sets whether the background image is opaque. */
-        public OptionsBuilder isopaque(boolean isopaque) {
-            this.isopaque = isopaque;
+        public OptionsBuilder opaque(boolean opaque) {
+            this.opaque = opaque;
             return this;
         }
 
         /** Sets whether the background song is muted. */
-        public OptionsBuilder ismuted(boolean ismuted) {
-            this.ismuted = ismuted;
+        public OptionsBuilder muted(boolean muted) {
+            this.muted = muted;
             return this;
         }
 
@@ -276,8 +276,7 @@ public class Options {
          * @throws IllegalArgumentException if parameters are invalid
          */
         public Options build() {
-            return new Options(
-                    optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
+            return new Options(optionsid, hexcolor, imagepath, songpath, image, opaque, muted);
         }
     }
 
@@ -288,9 +287,9 @@ public class Options {
             return true;
         }
         if (obj instanceof Options other) {
-            return isimage == other.isimage
-                    && isopaque == other.isopaque
-                    && ismuted == other.ismuted
+            return image == other.image
+                    && opaque == other.opaque
+                    && muted == other.muted
                     && Objects.equals(optionsid, other.optionsid)
                     && Objects.equals(hexcolor, other.hexcolor)
                     && Objects.equals(imagepath, other.imagepath)
@@ -302,15 +301,15 @@ public class Options {
     /** Computes the hash code based on all fields. */
     @Override
     public int hashCode() {
-        return Objects.hash(optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
+        return Objects.hash(optionsid, hexcolor, imagepath, songpath, image, opaque, muted);
     }
 
     /** Returns a string representation of the Options object. */
     @Override
     public String toString() {
         return String.format(
-                "Options{optionsid=%s, hexcolor='%s', imagepath='%s', songpath='%s', isimage=%b,"
-                        + " isopaque=%b, ismuted=%b}",
-                optionsid, hexcolor, imagepath, songpath, isimage, isopaque, ismuted);
+                "Options{optionsid=%s, hexcolor='%s', imagepath='%s', songpath='%s', image=%b,"
+                        + " opaque=%b, muted=%b}",
+                optionsid, hexcolor, imagepath, songpath, image, opaque, muted);
     }
 }

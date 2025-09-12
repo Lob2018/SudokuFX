@@ -52,6 +52,6 @@ public interface PlayerRepository extends JpaRepository<Player, Long> {
                     + "join fetch g.levelid "
                     + "join fetch p.menuid "
                     + "join fetch p.playerlanguageid "
-                    + "where p.isselected = true and g.isselected = true")
+                    + "where p.selected = true and g.selected = true")
     List<Player> findSelectedPlayerWithSelectedGame();
 }
