@@ -597,11 +597,10 @@ public class MenuOptionsViewModel {
         gridOpacityProperty.set(optionsDto.opaque());
         audioService.setMuted(optionsDto.muted());
         muteProperty.set(optionsDto.muted());
-        if (!optionsDto.songpath().isEmpty()) {
-            songProperty.set(Paths.get(optionsDto.songpath()).getFileName().toString());
-        } else {
-            resetSongPath();
+        if (optionsDto.songpath().isEmpty()) {
+            return;
         }
+        songProperty.set(Paths.get(optionsDto.songpath()).getFileName().toString());
     }
 
     /**

@@ -412,12 +412,11 @@ public final class MainView implements IMainView {
                 menuOptionsViewModel.optionsClearSongAccessibleTextProperty(),
                 menuOptionsViewModel.optionsClearSongTooltipProperty(),
                 menuOptionsViewModel.optionsClearSongRoleDescriptionProperty());
+        BooleanBinding isSongNotBlank = menuOptionsViewModel.songIsBlankProperty().not();
         bindingConfigurator.configureVisibilityAndManaged(
-                menuOptionsButtonSongClear, menuOptionsViewModel.songIsBlankProperty().not());
+                menuOptionsButtonSongClear, isSongNotBlank);
         bindingConfigurator.configurePseudoClassBinding(
-                menuOptionsButtonSong,
-                menuOptionsViewModel.songIsBlankProperty().not(),
-                REDUCED_SONG_PSEUDO_SELECTED);
+                menuOptionsButtonSong, isSongNotBlank, REDUCED_SONG_PSEUDO_SELECTED);
         menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, toaster, spinner);
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
