@@ -1,17 +1,15 @@
 <map id="fr.softsf.sudokufx.model.OptionsUTest.BuilderPatternTests.givenNoParameters_whenUsingBuilder_thenOptionsIsCreatedWithDefaults" name="fr.softsf.sudokufx.model.OptionsUTest.BuilderPatternTests.givenNoParameters_whenUsingBuilder_thenOptionsIsCreatedWithDefaults">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,180,300,255"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,147,300,221"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_1_1_options_builder.html#aa647a7b44897a0728d7604f989504ee9" title="Builds a validated Options instance." alt="" coords="348,29,534,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,177,268,129,346,82,358,76,360,81,349,86,270,133,203,182"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="221,144,347,82,361,76,363,81,349,86,223,149"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aada8238bf92a8a5d5b6141f66f8bf5c1" title="Returns a new OptionsBuilder instance for fluent construction." alt="" coords="358,96,524,139"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="261,177,362,142,363,147,263,182"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="299,147,342,137,343,143,301,152"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" title="Returns the ARGB hex color string." alt="" coords="358,163,524,205"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="300,198,342,193,342,198,300,203"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="300,181,342,181,342,187,300,187"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" title="Returns the background image path." alt="" coords="358,229,524,272"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="300,232,342,237,342,242,300,237"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="301,216,343,225,342,231,299,221"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" title="Returns the unique ID of this Options instance." alt="" coords="358,296,524,339"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="263,253,363,288,362,293,261,258"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" title="Returns true if a background image is used." alt="" coords="358,363,524,405"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="203,253,270,301,349,348,360,354,358,358,346,353,268,306,200,257"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="223,219,349,282,363,287,361,292,347,286,221,224"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a5fa4145bbd83c86dd0f943e766276ad7" title="Protected default constructor for JPA." alt="" coords="582,29,748,72"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="534,48,567,48,567,53,534,53"/>
 <area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="622,29,621,19,628,10,643,5,665,3,689,5,704,11,701,16,688,10,665,8,644,10,631,15,626,21,628,28"/>

@@ -21,10 +21,10 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a8888f558621e3185b775eb82f95dc160" target="_top" xlink:title="Updates the audio file path (songPath) in the current player&#39;s options.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ae7dd86e7d7c9a04f00bbc8bffe97843b" target="_top" xlink:title="Persists the audio file path (songPath) in the current player&#39;s options.">
 <polygon fill="white" stroke="#666666" points="401,-32 204.25,-32 204.25,0 401,0 401,-32"/>
 <text text-anchor="start" x="212.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="302.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.updateSongPath</text>
+<text text-anchor="middle" x="302.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.persistSongPath</text>
 </a>
 </g>
 </g>

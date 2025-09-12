@@ -1,11 +1,9 @@
 <map id="fr.softsf.sudokufx.model.OptionsUTest.ConstructorTests.givenNoParameters_whenCreatingOptionsWithDefaultConstructor_thenOptionsIsCreatedWithDefaults" name="fr.softsf.sudokufx.model.OptionsUTest.ConstructorTests.givenNoParameters_whenCreatingOptionsWithDefaultConstructor_thenOptionsIsCreatedWithDefaults">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,89,312,164"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,312,131"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" title="Returns the ARGB hex color string." alt="" coords="360,5,526,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,86,364,51,366,56,268,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,55,344,47,345,52,313,60"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" title="Returns the background image path." alt="" coords="360,72,526,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="312,106,344,102,345,107,313,111"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="312,91,344,91,344,96,312,96"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" title="Returns the unique ID of this Options instance." alt="" coords="360,139,526,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="313,142,345,146,344,151,312,147"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" title="Returns true if a background image is used." alt="" coords="360,205,526,248"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,162,366,197,364,202,266,167"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="313,127,345,134,344,140,312,132"/>
 </map>

@@ -70,10 +70,10 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a47483ff6f93896bf7e21b944237fcc91" target="_top" xlink:title="Returns whether the game is currently selected.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a45e9d6ccd85aa60f95f02d7b04b0840c" target="_top" xlink:title="Returns whether the game is currently selected.">
 <polygon fill="white" stroke="#666666" points="374.75,-82 250,-82 250,-50 374.75,-50 374.75,-82"/>
 <text text-anchor="start" x="258" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="middle" x="312.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getIsselected</text>
+<text text-anchor="middle" x="312.38" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getSelected</text>
 </a>
 </g>
 </g>

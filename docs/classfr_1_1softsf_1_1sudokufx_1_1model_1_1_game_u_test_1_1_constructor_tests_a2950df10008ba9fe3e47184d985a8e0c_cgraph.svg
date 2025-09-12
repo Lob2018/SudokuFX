@@ -100,10 +100,10 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a47483ff6f93896bf7e21b944237fcc91" target="_top" xlink:title="Returns whether the game is currently selected.">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a492a381272a23baea55d28d154fa8080" target="_top" xlink:title="Returns the GameLevel of this game.">
 <polygon fill="white" stroke="#666666" points="339.5,-182 214.75,-182 214.75,-150 339.5,-150 339.5,-182"/>
 <text text-anchor="start" x="222.75" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="middle" x="277.12" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getIsselected</text>
+<text text-anchor="middle" x="277.12" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getLevelid</text>
 </a>
 </g>
 </g>
@@ -119,10 +119,10 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a492a381272a23baea55d28d154fa8080" target="_top" xlink:title="Returns the GameLevel of this game.">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1a6fc943d74a5ff7ff96081c78206f1d" target="_top" xlink:title="Returns the Player associated with this game.">
 <polygon fill="white" stroke="#666666" points="339.5,-132 214.75,-132 214.75,-100 339.5,-100 339.5,-132"/>
 <text text-anchor="start" x="222.75" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="middle" x="277.12" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getLevelid</text>
+<text text-anchor="middle" x="277.12" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getPlayerid</text>
 </a>
 </g>
 </g>
@@ -138,10 +138,10 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1a6fc943d74a5ff7ff96081c78206f1d" target="_top" xlink:title="Returns the Player associated with this game.">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a45e9d6ccd85aa60f95f02d7b04b0840c" target="_top" xlink:title="Returns whether the game is currently selected.">
 <polygon fill="white" stroke="#666666" points="339.5,-82 214.75,-82 214.75,-50 339.5,-50 339.5,-82"/>
 <text text-anchor="start" x="222.75" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
-<text text-anchor="middle" x="277.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getPlayerid</text>
+<text text-anchor="middle" x="277.12" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getSelected</text>
 </a>
 </g>
 </g>

@@ -1,19 +1,17 @@
 <map id="fr.softsf.sudokufx.model.OptionsUTest.BuilderPatternTests.givenAllParameters_whenUsingBuilder_thenOptionsIsCreatedCorrectly" name="fr.softsf.sudokufx.model.OptionsUTest.BuilderPatternTests.givenAllParameters_whenUsingBuilder_thenOptionsIsCreatedCorrectly">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,223,260,297"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,189,260,264"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aada8238bf92a8a5d5b6141f66f8bf5c1" title="Returns a new OptionsBuilder instance for fluent construction." alt="" coords="308,5,474,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,220,219,140,260,96,306,58,312,54,315,58,309,62,264,100,223,143,161,224"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,187,226,122,265,88,306,58,314,53,317,58,309,62,268,92,230,126,167,191"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#acc418d26dcb7c51c4aea3db089fa0eb0" title="Returns the ARGB hex color string." alt="" coords="308,72,474,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,220,235,172,306,124,315,119,318,124,309,129,238,176,178,224"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,186,306,124,318,119,320,124,309,129,196,191"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a9649d310a5134e64f8dffe3f4af460ad" title="Returns the background image path." alt="" coords="308,139,474,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="230,220,318,185,320,190,232,225"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" title="Returns the unique ID of this Options instance." alt="" coords="308,205,474,248"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="260,241,292,237,292,242,261,246"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ad2beaeacbb7a558134a3a895cbcb43f4" title="Returns the background song path." alt="" coords="308,272,474,315"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="261,274,292,278,292,283,260,279"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aea3220dab61403b707a1b2c327916f63" title="Returns true if a background image is used." alt="" coords="308,339,474,381"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="232,295,320,330,318,335,230,300"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a03106ccb945e8825288fdc3c17f9bd5c" title="Returns true if the background song is muted." alt="" coords="308,405,474,448"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="178,296,238,344,309,391,318,396,315,401,306,396,235,348,175,300"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a07655c6941e8bf5a7be767254a36af66" title="Returns true if the background image is opaque." alt="" coords="308,472,474,515"/>
-<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="161,296,223,377,264,420,309,458,315,462,312,466,306,462,260,424,219,380,156,300"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="259,191,292,183,293,188,261,196"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a069915a3bec6e01b018ae7a2c72c484f" title="Returns true if the background song is muted." alt="" coords="308,205,474,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="260,224,292,224,292,229,260,229"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a79ffb8f66699ff9b75f99fa22d7baea7" title="Returns true if the background image is opaque." alt="" coords="308,272,474,315"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="261,257,293,265,292,271,259,262"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" title="Returns the unique ID of this Options instance." alt="" coords="308,339,474,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="196,262,309,324,320,330,318,334,306,329,194,267"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ad2beaeacbb7a558134a3a895cbcb43f4" title="Returns the background song path." alt="" coords="308,405,474,448"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="167,263,230,327,268,361,309,391,317,396,314,400,306,396,265,365,226,331,164,266"/>
 </map>

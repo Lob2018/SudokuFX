@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.model.Player.PlayerBuilder" name="fr.softsf.sudokufx.model.Player.PlayerBuilder">
-<area shape="rect" id="Node000001" title="Builder class for creating Player instances with fluent API." alt="" coords="226,1040,514,1600"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" title="Represents a player&#39;s language in the SudokuFX application." alt="" coords="5,227,202,755"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,753,184,865,217,975,234,1023,229,1025,212,977,179,866,151,755"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user&#45;configurable options for the SudokuFX application." alt="" coords="226,5,515,976"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="373,976,373,1024,368,1024,368,976"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" title="Represents a Menu configuration with a unique ID and a mode." alt="" coords="539,344,727,637"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="612,638,578,802,555,890,529,977,512,1025,507,1023,524,975,550,889,573,801,607,637"/>
+<area shape="rect" id="Node000001" title="Builder class for creating Player instances with fluent API." alt="" coords="206,1184,494,1744"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" title="Represents a player&#39;s language in the SudokuFX application." alt="" coords="5,299,202,827"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,826,179,972,217,1119,232,1167,227,1169,212,1121,174,974,143,827"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user&#45;configurable options for the SudokuFX application." alt="" coords="227,5,474,1120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="353,1120,353,1167,348,1167,348,1120"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" title="Represents a Menu configuration with a unique ID and a mode." alt="" coords="498,416,686,709"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="575,710,540,906,517,1015,489,1121,474,1169,469,1167,484,1119,512,1013,535,905,569,709"/>
 </map>

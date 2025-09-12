@@ -49,7 +49,7 @@
 <script type="application/ecmascript">
 var viewWidth = 855;
 var viewHeight = 154;
-var sectionId = 'dynsection-1';
+var sectionId = 'dynsection-7';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -87,7 +87,7 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aa0a5f3c985f2a0ecb72d9942d0a130a7" target="_top" xlink:title="Data Transfer Object representing an Options entity.">
+<g id="a_Node000003"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af3351529e3efa22019c4fe7fcd841d3f" target="_top" xlink:title="Data Transfer Object representing an Options entity.">
 <polygon fill="white" stroke="#666666" points="665.25,-108 503.75,-108 503.75,-88 665.25,-88 665.25,-108"/>
 <text text-anchor="middle" x="584.5" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.OptionsDto</text>
 </a>
@@ -105,7 +105,7 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a6fc9ab31dcedad769c8e003fdac97436" target="_top" xlink:title="Data Transfer Object representing a player.">
+<g id="a_Node000004"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af6e92a76d1c7e2a11c4aef9968bd9210" target="_top" xlink:title="Data Transfer Object representing a player.">
 <polygon fill="white" stroke="#666666" points="467.75,-70 312.25,-70 312.25,-50 467.75,-50 467.75,-70"/>
 <text text-anchor="middle" x="390" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.PlayerDto</text>
 </a>
@@ -160,7 +160,7 @@ var sectionId = 'dynsection-1';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0b4cf476a6a3d3f1f289617aa14a93cb" target="_top" xlink:title="Data Transfer Object representing a game entity.">
+<g id="a_Node000005"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5404f1271af2d911d29e8ce03acbc501" target="_top" xlink:title="Data Transfer Object representing a game entity.">
 <polygon fill="white" stroke="#666666" points="661.5,-70 507.5,-70 507.5,-50 661.5,-50 661.5,-70"/>
 <text text-anchor="middle" x="584.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.GameDto</text>
 </a>

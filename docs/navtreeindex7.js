@@ -1,17 +1,5 @@
 var NAVTREEINDEX7 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a76beb2414cb9e9e68181f08fd930f0b9":[1,0,0,0,0,5,0,7],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a76beb2414cb9e9e68181f08fd930f0b9":[2,0,0,0,0,4,0,7],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a8236a3100b3540f3c96b6b3db3042b30":[1,0,0,0,0,5,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a8236a3100b3540f3c96b6b3db3042b30":[2,0,0,0,0,4,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a84cabb06e38efe9e6b2ed6a0e8b151fb":[1,0,0,0,0,5,0,6],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a84cabb06e38efe9e6b2ed6a0e8b151fb":[2,0,0,0,0,4,0,6],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a960fcad685919fdee92c003c58aec2c0":[1,0,0,0,0,5,0,5],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a960fcad685919fdee92c003c58aec2c0":[2,0,0,0,0,4,0,5],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa12944693adf73a87865a6480b557d2f":[1,0,0,0,0,5,0,3],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa12944693adf73a87865a6480b557d2f":[2,0,0,0,0,4,0,3],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa63a8ea1cf99200dbee0e27a3ce78060":[1,0,0,0,0,5,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa63a8ea1cf99200dbee0e27a3ce78060":[2,0,0,0,0,4,0,0],
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#abcaae859838b7d23fb19c4cded75d16a":[1,0,0,0,0,5,0,12],
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#abcaae859838b7d23fb19c4cded75d16a":[2,0,0,0,0,4,0,12],
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#adde9efab032c0e85f885f5ad7954be1d":[1,0,0,0,0,5,0,11],
@@ -249,5 +237,17 @@ var NAVTREEINDEX7 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#a57b52ce464024d475c0dc9322743c82c":[1,0,0,0,0,8,2,0,0,2,2],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#a57b52ce464024d475c0dc9322743c82c":[2,0,0,0,0,7,2,0,0,2,2],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#a8ddd6d56ca61e6b195710e722f5cc55d":[1,0,0,0,0,8,2,0,0,2,3],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#a8ddd6d56ca61e6b195710e722f5cc55d":[2,0,0,0,0,7,2,0,0,2,3]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#a8ddd6d56ca61e6b195710e722f5cc55d":[2,0,0,0,0,7,2,0,0,2,3],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#aaf21fb591dd3e545c03085b10cdea0de":[1,0,0,0,0,8,2,0,0,2,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#aaf21fb591dd3e545c03085b10cdea0de":[2,0,0,0,0,7,2,0,0,2,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#ad9cca48da8448fc5a8acb75fd8a4ac09":[1,0,0,0,0,8,2,0,0,2,4],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#ad9cca48da8448fc5a8acb75fd8a4ac09":[2,0,0,0,0,7,2,0,0,2,4],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#adfea9e9e3b2d8c15910b149b71d2617d":[1,0,0,0,0,8,2,0,0,2,7],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#adfea9e9e3b2d8c15910b149b71d2617d":[2,0,0,0,0,7,2,0,0,2,7],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#af5e9bdd9140122a0d76edfcae959af3a":[1,0,0,0,0,8,2,0,0,2,6],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html#af5e9bdd9140122a0d76edfcae959af3a":[2,0,0,0,0,7,2,0,0,2,6],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html":[1,0,0,0,0,8,2,0,0,3],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html":[2,0,0,0,0,7,2,0,0,3],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html#a1eda7a2c1d63de4149fab2d6ee654942":[1,0,0,0,0,8,2,0,0,3,2],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html#a1eda7a2c1d63de4149fab2d6ee654942":[2,0,0,0,0,7,2,0,0,3,2]
 };

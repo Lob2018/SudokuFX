@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 229;
+var viewWidth = 256;
 var viewHeight = 640;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,9 +59,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="none" points="220.5,-440 0,-440 0,0 220.5,0 220.5,-440"/>
-<text text-anchor="start" x="44.25" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="44.25" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModelUTest</text>
+<polygon fill="#999999" stroke="none" points="247.5,-440 0,-440 0,0 247.5,0 247.5,-440"/>
+<text text-anchor="start" x="57.75" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="57.75" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModelUTest</text>
 <text text-anchor="start" x="5.5" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">AsyncFileProcessorService</text>
 <text text-anchor="start" x="14" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00"> asyncServiceMock</text>
@@ -95,8 +95,8 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenTestFinished_thenLocaleReset()</text>
 <text text-anchor="start" x="4" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="14" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidFile</text>
-<text text-anchor="start" x="14" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenLoadBackgroundImage</text>
-<text text-anchor="start" x="14" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenAsyncServiceCalledAndBackgroundSet()</text>
+<text text-anchor="start" x="14" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenApplyAndPersistBackground</text>
+<text text-anchor="start" x="14" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image_thenAsyncServiceCalledAndBackgroundSet()</text>
 <text text-anchor="start" x="4" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="14" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModel</text>
 <text text-anchor="start" x="14" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenAccessBindings</text>
@@ -106,10 +106,10 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModelAndColor</text>
 <text text-anchor="start" x="14" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Picker_whenInit_thenColorIsSetAnd</text>
 <text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ColorPickerUpdated()</text>
-<polygon fill="#666666" stroke="#666666" points="0,-410 0,-410 220.5,-410 220.5,-410 0,-410"/>
+<polygon fill="#666666" stroke="#666666" points="0,-410 0,-410 247.5,-410 247.5,-410 0,-410"/>
 <polygon fill="#666666" stroke="#666666" points="0,-242 0,-242 12,-242 12,-242 0,-242"/>
-<polygon fill="#666666" stroke="#666666" points="12,-242 12,-242 220.5,-242 220.5,-242 12,-242"/>
-<polygon fill="none" stroke="#666666" points="0,0 0,-440 220.5,-440 220.5,0 0,0"/>
+<polygon fill="#666666" stroke="#666666" points="12,-242 12,-242 247.5,-242 247.5,-242 12,-242"/>
+<polygon fill="none" stroke="#666666" points="0,0 0,-440 247.5,-440 247.5,0 0,0"/>
 </a>
 </g>
 </g>
@@ -117,28 +117,28 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" target="_top" xlink:title="Abstract base test class that provides:">
-<polygon fill="white" stroke="none" points="192.75,-632 27.75,-632 27.75,-476 192.75,-476 192.75,-632"/>
-<text text-anchor="start" x="33.38" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="57" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>
-<text text-anchor="start" x="32.12" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="41.75" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto defaultPlayer</text>
-<text text-anchor="start" x="32.12" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="41.75" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService playerServiceMock</text>
-<text text-anchor="start" x="32.12" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="41.75" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder player</text>
-<text text-anchor="start" x="41.75" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">StateHolder</text>
-<text text-anchor="start" x="33.25" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="41.75" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
-<text text-anchor="start" x="31.75" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="41.75" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeMocks()</text>
-<text text-anchor="start" x="31.75" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="41.75" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupPlayerStateHolder()</text>
-<text text-anchor="start" x="32.12" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="41.75" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createDefaultPlayer()</text>
-<polygon fill="#666666" stroke="#666666" points="27.75,-602 27.75,-602 192.75,-602 192.75,-602 27.75,-602"/>
-<polygon fill="#666666" stroke="#666666" points="27.75,-526 27.75,-526 39.75,-526 39.75,-526 27.75,-526"/>
-<polygon fill="#666666" stroke="#666666" points="39.75,-526 39.75,-526 192.75,-526 192.75,-526 39.75,-526"/>
-<polygon fill="none" stroke="#666666" points="27.75,-476 27.75,-632 192.75,-632 192.75,-476 27.75,-476"/>
+<polygon fill="white" stroke="none" points="206.25,-632 41.25,-632 41.25,-476 206.25,-476 206.25,-632"/>
+<text text-anchor="start" x="46.88" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="70.5" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>
+<text text-anchor="start" x="45.62" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="55.25" y="-590.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto defaultPlayer</text>
+<text text-anchor="start" x="45.62" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="55.25" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService playerServiceMock</text>
+<text text-anchor="start" x="45.62" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="55.25" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder player</text>
+<text text-anchor="start" x="55.25" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">StateHolder</text>
+<text text-anchor="start" x="46.75" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="55.25" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
+<text text-anchor="start" x="45.25" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="55.25" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeMocks()</text>
+<text text-anchor="start" x="45.25" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="55.25" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupPlayerStateHolder()</text>
+<text text-anchor="start" x="45.62" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="55.25" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createDefaultPlayer()</text>
+<polygon fill="#666666" stroke="#666666" points="41.25,-602 41.25,-602 206.25,-602 206.25,-602 41.25,-602"/>
+<polygon fill="#666666" stroke="#666666" points="41.25,-526 41.25,-526 53.25,-526 53.25,-526 41.25,-526"/>
+<polygon fill="#666666" stroke="#666666" points="53.25,-526 53.25,-526 206.25,-526 206.25,-526 53.25,-526"/>
+<polygon fill="none" stroke="#666666" points="41.25,-476 41.25,-632 206.25,-632 206.25,-476 41.25,-476"/>
 </a>
 </g>
 </g>
@@ -146,8 +146,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M110.25,-465.14C110.25,-457 110.25,-448.53 110.25,-439.85"/>
-<polygon fill="none" stroke="#63b8ff" points="106.75,-464.9 110.25,-474.9 113.75,-464.9 106.75,-464.9"/>
+<path fill="none" stroke="#63b8ff" d="M123.75,-465.14C123.75,-457 123.75,-448.53 123.75,-439.85"/>
+<polygon fill="none" stroke="#63b8ff" points="120.25,-464.9 123.75,-474.9 127.25,-464.9 120.25,-464.9"/>
 </a>
 </g>
 </g>
