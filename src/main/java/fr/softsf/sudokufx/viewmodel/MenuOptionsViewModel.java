@@ -727,7 +727,8 @@ public class MenuOptionsViewModel {
      * @param color the color to apply and persist
      */
     public void applyAndPersistOptionsColor(GridPane sudokuFX, Color color) {
-        // TODO persist color.toString().substring(2) to database via OptionsService
+        // TODO persist image=false et color=color.toString().substring(2)  to database via
+        // OptionsService
         sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
     }
 
@@ -770,7 +771,7 @@ public class MenuOptionsViewModel {
                     },
                     backgroundImage -> {
                         sudokuFX.setBackground(new Background(backgroundImage));
-                        // TODO persist image path to database via OptionsService
+                        // TODO persist image path and image=true to database via OptionsService
                         toaster.addToast(
                                 MessageFormat.format(
                                         I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
@@ -781,6 +782,7 @@ public class MenuOptionsViewModel {
                     });
             return;
         }
+        // TODO persist image=false et imagepath="" to database via OptionsService
         String errorMessage =
                 I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
         LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
