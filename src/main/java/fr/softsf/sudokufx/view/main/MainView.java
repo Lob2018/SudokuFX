@@ -332,6 +332,8 @@ public final class MainView implements IMainView {
      *       with the ViewModel.
      *   <li>Loads and applies saved configuration settings to the UI controls, including background
      *       color, background image, grid transparency, etc.
+     *   <li><strong>Configures reactive UI states: song clear button visibility and song selection
+     *       pseudo-class are bound to song availability state.</strong>
      * </ul>
      */
     private void optionsMenuInitialization() {
