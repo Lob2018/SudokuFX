@@ -34,4 +34,117 @@ public record PlayerDto(
         @Nonnull @NotNull @Size(max = 256) String name,
         boolean selected,
         @Nonnull @NotNull LocalDateTime createdat,
-        @Nonnull @NotNull LocalDateTime updatedat) {}
+        @Nonnull @NotNull LocalDateTime updatedat) {
+
+    /** Returns a new instance with the given player language. */
+    public PlayerDto withPlayerLanguage(@Nonnull PlayerLanguageDto newPlayerLanguage) {
+        return new PlayerDto(
+                playerid,
+                newPlayerLanguage,
+                optionsidDto,
+                menuidDto,
+                selectedGame,
+                name,
+                selected,
+                createdat,
+                updatedat);
+    }
+
+    /** Returns a new instance with the given options. */
+    public PlayerDto withOptions(@Nonnull OptionsDto newOptions) {
+        return new PlayerDto(
+                playerid,
+                playerlanguageidDto,
+                newOptions,
+                menuidDto,
+                selectedGame,
+                name,
+                selected,
+                createdat,
+                updatedat);
+    }
+
+    /** Returns a new instance with the given menu. */
+    public PlayerDto withMenu(@Nonnull MenuDto newMenu) {
+        return new PlayerDto(
+                playerid,
+                playerlanguageidDto,
+                optionsidDto,
+                newMenu,
+                selectedGame,
+                name,
+                selected,
+                createdat,
+                updatedat);
+    }
+
+    /** Returns a new instance with the given selected game. */
+    public PlayerDto withSelectedGame(@Nullable GameDto newSelectedGame) {
+        return new PlayerDto(
+                playerid,
+                playerlanguageidDto,
+                optionsidDto,
+                menuidDto,
+                newSelectedGame,
+                name,
+                selected,
+                createdat,
+                updatedat);
+    }
+
+    /** Returns a new instance with the given name. */
+    public PlayerDto withName(@Nonnull @Size(max = 256) String newName) {
+        return new PlayerDto(
+                playerid,
+                playerlanguageidDto,
+                optionsidDto,
+                menuidDto,
+                selectedGame,
+                newName,
+                selected,
+                createdat,
+                updatedat);
+    }
+
+    /** Returns a new instance with the given selected flag. */
+    public PlayerDto withSelected(boolean newSelected) {
+        return new PlayerDto(
+                playerid,
+                playerlanguageidDto,
+                optionsidDto,
+                menuidDto,
+                selectedGame,
+                name,
+                newSelected,
+                createdat,
+                updatedat);
+    }
+
+    /** Returns a new instance with the given creation timestamp. */
+    public PlayerDto withCreatedAt(@Nonnull LocalDateTime newCreatedAt) {
+        return new PlayerDto(
+                playerid,
+                playerlanguageidDto,
+                optionsidDto,
+                menuidDto,
+                selectedGame,
+                name,
+                selected,
+                newCreatedAt,
+                updatedat);
+    }
+
+    /** Returns a new instance with the given update timestamp. */
+    public PlayerDto withUpdatedAt(@Nonnull LocalDateTime newUpdatedAt) {
+        return new PlayerDto(
+                playerid,
+                playerlanguageidDto,
+                optionsidDto,
+                menuidDto,
+                selectedGame,
+                name,
+                selected,
+                createdat,
+                newUpdatedAt);
+    }
+}

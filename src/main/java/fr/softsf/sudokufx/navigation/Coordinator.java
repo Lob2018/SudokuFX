@@ -13,12 +13,18 @@ import javafx.scene.Scene;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
+import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.dto.PlayerLanguageDto;
+import fr.softsf.sudokufx.service.business.PlayerLanguageService;
+import fr.softsf.sudokufx.service.business.PlayerService;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 
@@ -31,6 +37,10 @@ import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_UR
  */
 @Component
 public class Coordinator {
+
+    @Autowired private PlayerService playerService;
+    @Autowired private PlayerLanguageService playerLanguageService;
+    @Autowired private PlayerStateHolder playerStateHolder;
 
     private static final Logger LOG = LoggerFactory.getLogger(Coordinator.class);
     public static final String FXML_EXTENSION = ".fxml";
@@ -144,12 +154,31 @@ public class Coordinator {
     }
 
     /**
-     * Switches the application language between French and English.
+     * Returns the ISO code of the current player's language.
      *
-     * <p>Note: ViewModels must be notified manually to refresh bound properties.
+     * <p>Use this value to initialize the application's locale at startup.
+     *
+     * @return the current player's language ISO code, e.g., "FR" or "EN"
+     */
+    public String getCurrentPlayerLanguageIso() {
+        return playerStateHolder.getCurrentPlayer().playerlanguageidDto().iso();
+    }
+
+    /**
+     * Toggles the application's language between French ("FR") and English ("EN").
+     *
+     * <p>If the target language differs from the current one, the player's language is updated via
+     * {@link PlayerService}, the current player is refreshed in {@link PlayerStateHolder}, and the
+     * {@link I18n} locale bundle is switched accordingly.
      */
     public void toggleLanguage() {
-        I18n.INSTANCE.setLocaleBundle(I18n.INSTANCE.getLanguage().equals("fr") ? "EN" : "FR");
+        String iso = I18n.INSTANCE.getLanguage().equals("fr") ? "EN" : "FR";
+        PlayerLanguageDto toSaveLanguage = playerLanguageService.getByIso(iso);
+        PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
+        PlayerDto toSavePlayer = currentPlayer.withPlayerLanguage(toSaveLanguage);
+        playerService.updatePlayer(toSavePlayer);
+        playerStateHolder.refreshCurrentPlayer();
+        I18n.INSTANCE.setLocaleBundle(iso);
     }
 
     /** Opens the GitHub repository releases page in the user's default web browser. */
@@ -184,5 +213,20 @@ public class Coordinator {
      */
     void exitPlatform() {
         Platform.exit();
+    }
+
+    /** For testing only: injects a {@link PlayerService}. */
+    void setPlayerService(PlayerService playerService) {
+        this.playerService = playerService;
+    }
+
+    /** For testing only: injects a {@link PlayerLanguageService}. */
+    void setPlayerLanguageService(PlayerLanguageService service) {
+        this.playerLanguageService = service;
+    }
+
+    /** For testing only: injects a {@link PlayerStateHolder}. */
+    void setPlayerStateHolder(PlayerStateHolder holder) {
+        this.playerStateHolder = holder;
     }
 }

@@ -40,6 +40,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
@@ -204,11 +205,20 @@ public final class MainView implements IMainView {
     private Timeline hideMiniMenuTimeline;
 
     /**
-     * Initializes the main view. This method is automatically called by JavaFX after loading the
-     * FXML.
+     * Initializes the main view.
+     *
+     * <p>This method is automatically called by JavaFX after loading the FXML. It performs the
+     * following actions:
+     *
+     * <ul>
+     *   <li>Sets the application's locale based on the current player's language.
+     *   <li>Initializes audio management, menu timelines, and menu components.
+     *   <li>Initializes the grid and active menu manager.
+     * </ul>
      */
     @FXML
     private void initialize() {
+        I18n.INSTANCE.setLocaleBundle(coordinator.getCurrentPlayerLanguageIso());
         stopAudioOnExitInitialization();
         hideMiniMenuTimeline = hideMiniMenuTimelineInitialization();
         hiddenMenuInitialization();

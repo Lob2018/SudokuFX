@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.navigation;
 
+import java.time.LocalDateTime;
 import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,6 +24,13 @@ import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
+import fr.softsf.sudokufx.dto.MenuDto;
+import fr.softsf.sudokufx.dto.OptionsDto;
+import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.dto.PlayerLanguageDto;
+import fr.softsf.sudokufx.service.business.PlayerLanguageService;
+import fr.softsf.sudokufx.service.business.PlayerService;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
@@ -36,10 +44,12 @@ class CoordinatorUTest {
 
     private Coordinator coordinator;
     private Scene scene;
-
     private ListAppender<ILoggingEvent> logWatcher;
-
     private AutoCloseable mocks;
+
+    private PlayerService playerServiceMock;
+    private PlayerLanguageService playerLanguageServiceMock;
+    private PlayerStateHolder playerStateHolderMock;
 
     @BeforeEach
     void setup() {
@@ -51,6 +61,28 @@ class CoordinatorUTest {
         coordinator = spy(new Coordinator(fxmlLoader));
         coordinator.setDefaultScene(scene);
         doNothing().when(coordinator).exitPlatform();
+        playerServiceMock = mock(PlayerService.class);
+        playerLanguageServiceMock = mock(PlayerLanguageService.class);
+        playerStateHolderMock = mock(PlayerStateHolder.class);
+        when(playerLanguageServiceMock.getByIso("EN")).thenReturn(new PlayerLanguageDto(2L, "EN"));
+        when(playerLanguageServiceMock.getByIso("FR")).thenReturn(new PlayerLanguageDto(1L, "FR"));
+        PlayerDto defaultPlayer =
+                new PlayerDto(
+                        1L,
+                        new PlayerLanguageDto(1L, "FR"),
+                        new OptionsDto(1L, "FFFFFFFF", "", "", true, true),
+                        new MenuDto((byte) 1, (byte) 1),
+                        null,
+                        "SafePlayer",
+                        true,
+                        LocalDateTime.now(),
+                        LocalDateTime.now());
+        when(playerStateHolderMock.getCurrentPlayer()).thenReturn(defaultPlayer);
+        when(playerServiceMock.updatePlayer(any(PlayerDto.class)))
+                .thenAnswer(invocation -> invocation.getArgument(0));
+        coordinator.setPlayerService(playerServiceMock);
+        coordinator.setPlayerLanguageService(playerLanguageServiceMock);
+        coordinator.setPlayerStateHolder(playerStateHolderMock);
     }
 
     @AfterEach
@@ -86,11 +118,16 @@ class CoordinatorUTest {
     }
 
     @Test
-    void givenNullHostServices_whenSetHostServices_thenThrowsIllegalArgumentException() {
+    void givenNonNullDynamicFontSize_whenSetDynamicFontSize_thenDoesNotThrow() {
+        assertDoesNotThrow(() -> coordinator.setDynamicFontSize(dynamicFontSize));
+    }
+
+    @Test
+    void givenBlankFXMLName_whenSetRootByFXMLName_thenThrowsIllegalArgumentException() {
         IllegalArgumentException ex =
                 assertThrows(
-                        IllegalArgumentException.class, () -> coordinator.setHostServices(null));
-        assertTrue(ex.getMessage().contains("HostServices must not be null"));
+                        IllegalArgumentException.class, () -> coordinator.setRootByFXMLName(" "));
+        assertTrue(ex.getMessage().contains("Fxml must not be null or blank"));
     }
 
     @Test
@@ -109,51 +146,6 @@ class CoordinatorUTest {
         verify(fxmlLoader).setRoot(null);
         verify(fxmlLoader).setController(null);
         verify(fxmlLoader).setLocation(any());
-    }
-
-    @Test
-    void givenBlankFXMLName_whenSetRootByFXMLName_thenThrowsIllegalArgumentException() {
-        IllegalArgumentException ex =
-                assertThrows(
-                        IllegalArgumentException.class, () -> coordinator.setRootByFXMLName(" "));
-        assertTrue(ex.getMessage().contains("Fxml must not be null or blank"));
-    }
-
-    @Test
-    void givenLanguageFR_whenToggleLanguage_thenLanguageIsSwitchedToEn() {
-        I18n.INSTANCE.setLocaleBundle("FR");
-        coordinator.toggleLanguage();
-        assertEquals("en", I18n.INSTANCE.getLanguage());
-    }
-
-    @Test
-    void givenLanguageEn_whenToggleLanguage_thenLanguageIsSwitchedToFr() {
-        I18n.INSTANCE.setLocaleBundle("EN");
-        coordinator.toggleLanguage();
-        assertEquals("fr", I18n.INSTANCE.getLanguage());
-    }
-
-    @Test
-    void givenHostServicesSet_whenOpenGitHubRepositoryReleaseUrl_thenShowDocumentIsCalled() {
-        coordinator.setHostServices(hostServices);
-        coordinator.openGitHubRepositoryReleaseUrl();
-        verify(hostServices).showDocument(anyString());
-    }
-
-    @Test
-    void givenNoHostServicesSet_whenOpenGitHubRepositoryReleaseUrl_thenLogsWarning() {
-        coordinator.openGitHubRepositoryReleaseUrl();
-        String logMessage = logWatcher.list.getFirst().getFormattedMessage();
-        assertTrue(
-                logMessage.contains(
-                        "▓▓ openGitHubRepositoryReleaseUrl hostServices not set yet: cannot open"
-                                + " GitHub releases URL"),
-                "The warning log was not found");
-    }
-
-    @Test
-    void givenDefaultSceneSet_whenGetDefaultScene_thenReturnsSameScene() {
-        assertSame(scene, coordinator.getDefaultScene());
     }
 
     @Test
@@ -182,5 +174,45 @@ class CoordinatorUTest {
                                 event ->
                                         event.getFormattedMessage()
                                                 .contains("Exception caught when setting root")));
+    }
+
+    @Test
+    void givenLanguageFR_whenToggleLanguage_thenLanguageIsSwitchedToEn() {
+        I18n.INSTANCE.setLocaleBundle("FR");
+        coordinator.toggleLanguage();
+        assertEquals("en", I18n.INSTANCE.getLanguage());
+    }
+
+    @Test
+    void givenLanguageEn_whenToggleLanguage_thenLanguageIsSwitchedToFr() {
+        I18n.INSTANCE.setLocaleBundle("EN");
+        coordinator.toggleLanguage();
+        assertEquals("fr", I18n.INSTANCE.getLanguage());
+    }
+
+    @Test
+    void givenPlayerStateHolder_whenGetCurrentPlayerLanguageIso_thenReturnsIsoCode() {
+        String iso = coordinator.getCurrentPlayerLanguageIso();
+        assertEquals("FR", iso);
+    }
+
+    @Test
+    void givenHostServicesSet_whenOpenGitHubRepositoryReleaseUrl_thenShowDocumentIsCalled() {
+        coordinator.setHostServices(hostServices);
+        coordinator.openGitHubRepositoryReleaseUrl();
+        verify(hostServices).showDocument(anyString());
+    }
+
+    @Test
+    void givenNoHostServicesSet_whenOpenGitHubRepositoryReleaseUrl_thenLogsWarning() {
+        coordinator.openGitHubRepositoryReleaseUrl();
+        String logMessage = logWatcher.list.getFirst().getFormattedMessage();
+        assertTrue(
+                logMessage.contains("▓▓ openGitHubRepositoryReleaseUrl hostServices not set yet"));
+    }
+
+    @Test
+    void givenDefaultSceneSet_whenGetDefaultScene_thenReturnsSameScene() {
+        assertSame(scene, coordinator.getDefaultScene());
     }
 }

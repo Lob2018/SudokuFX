@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.repository;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -19,4 +21,6 @@ import fr.softsf.sudokufx.model.PlayerLanguage;
  * <p>The primary key of PlayerLanguage is of type {@link Long}.
  */
 @Repository
-public interface PlayerLanguageRepository extends JpaRepository<PlayerLanguage, Long> {}
+public interface PlayerLanguageRepository extends JpaRepository<PlayerLanguage, Long> {
+    Optional<PlayerLanguage> findByIso(String iso);
+}
