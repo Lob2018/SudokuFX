@@ -646,14 +646,7 @@ public class MenuOptionsViewModel {
     private void persistSongPath(String absolutePath, String name) {
         boolean clear = StringUtils.isEmpty(absolutePath);
         OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
-        OptionsDto toSaveOptions =
-                new OptionsDto(
-                        currentOptions.optionsid(),
-                        currentOptions.hexcolor(),
-                        currentOptions.imagepath(),
-                        absolutePath,
-                        currentOptions.opaque(),
-                        currentOptions.muted());
+        OptionsDto toSaveOptions = currentOptions.withSongpath(absolutePath);
         try {
             optionsService.updateOptions(toSaveOptions);
             playerStateHolder.refreshCurrentPlayer();

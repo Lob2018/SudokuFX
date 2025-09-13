@@ -27,4 +27,65 @@ public record OptionsDto(
         @Nonnull @NotNull @Size(max = 260) String imagepath,
         @Nonnull @NotNull @Size(max = 260) String songpath,
         boolean opaque,
-        boolean muted) {}
+        boolean muted) {
+
+    /**
+     * Returns a copy of this DTO with a new {@code optionsid}.
+     *
+     * @param optionsid the new options ID
+     * @return a new {@link OptionsDto} instance
+     */
+    public OptionsDto withOptionsid(Long optionsid) {
+        return new OptionsDto(optionsid, hexcolor, imagepath, songpath, opaque, muted);
+    }
+
+    /**
+     * Returns a copy of this DTO with a new {@code hexcolor}.
+     *
+     * @param hexcolor the new hex color
+     * @return a new {@link OptionsDto} instance
+     */
+    public OptionsDto withHexcolor(String hexcolor) {
+        return new OptionsDto(optionsid, hexcolor, imagepath, songpath, opaque, muted);
+    }
+
+    /**
+     * Returns a copy of this DTO with a new {@code imagepath}.
+     *
+     * @param imagepath the new image path
+     * @return a new {@link OptionsDto} instance
+     */
+    public OptionsDto withImagepath(String imagepath) {
+        return new OptionsDto(optionsid, hexcolor, imagepath, songpath, opaque, muted);
+    }
+
+    /**
+     * Returns a copy of this DTO with a new {@code songpath}.
+     *
+     * @param songpath the new song path
+     * @return a new {@link OptionsDto} instance
+     */
+    public OptionsDto withSongpath(String songpath) {
+        return new OptionsDto(optionsid, hexcolor, imagepath, songpath, opaque, muted);
+    }
+
+    /**
+     * Returns a copy of this DTO with a new {@code opaque} flag.
+     *
+     * @param opaque the new opaque value
+     * @return a new {@link OptionsDto} instance
+     */
+    public OptionsDto withOpaque(boolean opaque) {
+        return new OptionsDto(optionsid, hexcolor, imagepath, songpath, opaque, muted);
+    }
+
+    /**
+     * Returns a copy of this DTO with a new {@code muted} flag.
+     *
+     * @param muted the new muted value
+     * @return a new {@link OptionsDto} instance
+     */
+    public OptionsDto withMuted(boolean muted) {
+        return new OptionsDto(optionsid, hexcolor, imagepath, songpath, opaque, muted);
+    }
+}
