@@ -55,6 +55,9 @@ public class MenuOptionsViewModel {
 
     private static final Logger LOG = LoggerFactory.getLogger(MenuOptionsViewModel.class);
     private static final int HEX_RADIX = 16;
+    public static final String SUDOKU_FX_MUST_NOT_BE_NULL = "sudokuFX must not be null";
+    public static final int HEXCOLOR_END_INDEX = 10;
+    public static final int HEXCOLOR_BEGIN_INDEX = 2;
 
     private final AudioService audioService;
     private final AsyncFileProcessorService asyncFileProcessorService;
@@ -761,7 +764,7 @@ public class MenuOptionsViewModel {
      */
     private void setColorFromModel(
             GridPane sudokuFX, ColorPicker menuOptionsButtonColor, String colorValueFromModel) {
-        Objects.requireNonNull(sudokuFX, "sudokuFX must not be null");
+        Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
         Objects.requireNonNull(menuOptionsButtonColor, "menuOptionsButtonColor must not be null");
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 colorValueFromModel, "colorValueFromModel must not be null or blank");
@@ -772,19 +775,40 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Applies the given color as the background of the GridPane, updates the options with the new
-     * value, and persists it in the database.
+     * Applies the given color as the background of the specified {@link GridPane}, persists the new
+     * color (including alpha) in the current player's options, and updates the UI.
      *
-     * @param sudokuFX the GridPane to update (must not be null)
+     * <p>A copy of the current {@link OptionsDto} is created with the new color in hex format
+     * including alpha (RRGGBBAA) and an empty image path, then persisted via {@link
+     * OptionsService#updateOptions(OptionsDto)}. On success, the GridPane background is updated and
+     * a success toast is shown. On failure, the exception is logged and an error toast is
+     * displayed.
+     *
+     * <p>The color is converted from a {@link Color} to a hex string suitable for persistence in
+     * the DTO.
+     *
+     * @param sudokuFX the {@link GridPane} to update (must not be null)
      * @param color the color to apply and persist (must not be null)
      * @throws NullPointerException if {@code sudokuFX} or {@code color} is null
      */
     public void applyAndPersistOptionsColor(GridPane sudokuFX, Color color) {
-        Objects.requireNonNull(sudokuFX, "sudokuFX must not be null");
+        Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
         Objects.requireNonNull(color, "color must not be null");
-        // TODO persist hexcolor=color.toString().substring(2) and empty imagepath to database via
-        // OptionsService
-        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
+        String hexColor = color.toString().substring(HEXCOLOR_BEGIN_INDEX, HEXCOLOR_END_INDEX);
+        OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
+        OptionsDto toSaveOptions = currentOptions.withImagepath("").withHexcolor(hexColor);
+        try {
+            optionsService.updateOptions(toSaveOptions);
+            playerStateHolder.refreshCurrentPlayer();
+            sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
+        } catch (Exception e) {
+            LOG.error("ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
+            toaster.addToast(
+                    I18n.INSTANCE.getValue("toast.error.optionsviewmodel.colorerror"),
+                    Objects.toString(e.getMessage(), ""),
+                    ToastLevels.ERROR,
+                    true);
+        }
     }
 
     /**
@@ -808,7 +832,7 @@ public class MenuOptionsViewModel {
      */
     public void applyAndPersistBackgroundImage(
             File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
-        Objects.requireNonNull(sudokuFX, "sudokuFX must not be null");
+        Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
         Objects.requireNonNull(spinner, "spinner must not be null");
         if (selectedFile != null
                 && imageUtils.isValidImage(selectedFile)
