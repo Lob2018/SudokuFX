@@ -637,8 +637,8 @@ public class MenuOptionsViewModel {
      *
      * <p>A copy of the current {@link OptionsDto} is created with the new path and persisted via
      * {@link OptionsService#updateOptions(OptionsDto)}. On success, the current player is
-     * refreshed, {@code songProperty} is updated, and an info toast is shown. On failure, an error
-     * toast is shown.
+     * refreshed, {@code songProperty} is updated, and an info toast is shown. On failure, the
+     * exception is logged and an error toast with details is displayed.
      *
      * @param absolutePath the new audio file absolute path
      * @param name the file name, used in toast messages
@@ -662,25 +662,49 @@ public class MenuOptionsViewModel {
                     ToastLevels.INFO,
                     false);
         } catch (Exception e) {
+            LOG.error("PersistSongPath failed: {}", e.getMessage(), e);
             toaster.addToast(
                     MessageFormat.format(
                             I18n.INSTANCE.getValue("toast.error.optionsviewmodel.ontaskerror"),
                             name),
-                    absolutePath,
+                    Objects.toString(absolutePath + "\n" + e.getMessage(), ""),
                     ToastLevels.ERROR,
-                    false);
+                    true);
         }
     }
 
     /**
-     * Toggles the audio mute state, persists the new value in the database, updates the {@link
-     * AudioService}, and reflects the change in {@code muteProperty}.
+     * Toggles the audio mute state, persists the new value in {@link OptionsDto}, updates the
+     * {@link AudioService}, and reflects the change in {@code muteProperty}.
+     *
+     * <p>On success, a user-friendly toast indicates the new mute state. On failure, the exception
+     * is logged and an error toast with details is displayed.
      */
     public void toggleMuteAndPersist() {
         boolean newState = !muteProperty.get();
-        // TODO persist isMuted to database via OptionsService
-        audioService.setMuted(newState);
-        muteProperty.set(newState);
+        OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
+        OptionsDto toSaveOptions = currentOptions.withMuted(newState);
+        try {
+            optionsService.updateOptions(toSaveOptions);
+            playerStateHolder.refreshCurrentPlayer();
+            audioService.setMuted(newState);
+            muteProperty.set(newState);
+            toaster.addToast(
+                    I18n.INSTANCE.getValue(
+                            newState
+                                    ? "toast.msg.optionsviewmodel.sound.off"
+                                    : "toast.msg.optionsviewmodel.sound.on"),
+                    "",
+                    ToastLevels.INFO,
+                    false);
+        } catch (Exception e) {
+            LOG.error("ToggleMuteAndPersist failed: {}", e.getMessage(), e);
+            toaster.addToast(
+                    I18n.INSTANCE.getValue("toast.error.optionsviewmodel.sounderror"),
+                    Objects.toString(e.getMessage(), ""),
+                    ToastLevels.ERROR,
+                    true);
+        }
     }
 
     /**
