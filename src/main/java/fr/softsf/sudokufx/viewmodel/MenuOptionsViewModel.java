@@ -20,7 +20,6 @@ import javafx.scene.control.ColorPicker;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 
@@ -42,6 +41,7 @@ import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
+import jakarta.annotation.Nonnull;
 
 /**
  * ViewModel managing menu options UI state and accessibility strings.
@@ -665,7 +665,7 @@ public class MenuOptionsViewModel {
                     ToastLevels.INFO,
                     false);
         } catch (Exception e) {
-            LOG.error("PersistSongPath failed: {}", e.getMessage(), e);
+            LOG.error("██ Exception PersistSongPath failed: {}", e.getMessage(), e);
             toaster.addToast(
                     MessageFormat.format(
                             I18n.INSTANCE.getValue("toast.error.optionsviewmodel.ontaskerror"),
@@ -701,7 +701,7 @@ public class MenuOptionsViewModel {
                     ToastLevels.INFO,
                     false);
         } catch (Exception e) {
-            LOG.error("ToggleMuteAndPersist failed: {}", e.getMessage(), e);
+            LOG.error("██ Exception ToggleMuteAndPersist failed: {}", e.getMessage(), e);
             toaster.addToast(
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.sounderror"),
                     Objects.toString(e.getMessage(), ""),
@@ -738,7 +738,7 @@ public class MenuOptionsViewModel {
                     false);
             return newState;
         } catch (Exception e) {
-            LOG.error("ToggleGridOpacityAndPersist failed: {}", e.getMessage(), e);
+            LOG.error("██ Exception ToggleGridOpacityAndPersist failed: {}", e.getMessage(), e);
             gridOpacityProperty.set(previousState);
             toaster.addToast(
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.opacityerror"),
@@ -802,7 +802,7 @@ public class MenuOptionsViewModel {
             playerStateHolder.refreshCurrentPlayer();
             sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
         } catch (Exception e) {
-            LOG.error("ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
+            LOG.error("██ Exception ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
             toaster.addToast(
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.colorerror"),
                     Objects.toString(e.getMessage(), ""),
@@ -812,22 +812,19 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Applies a background image to the specified GridPane and persists its path in the database.
+     * Applies a background image to the specified {@link GridPane} and persists its path in the
+     * current player's options.
      *
-     * <p>Validate the image file. Load, resize, and convert the image asynchronously using {@link
-     * AsyncFileProcessorService}. Apply the resulting {@link BackgroundImage} to the provided
-     * {@link GridPane} and show an info toast. Persist the image path via {@link OptionsService}.
+     * <p>If a valid image file is provided, it is loaded, resized, and converted asynchronously via
+     * {@link AsyncFileProcessorService}, applied to the GridPane, and persisted. An info toast is
+     * shown on success.
      *
-     * <p>If the image file is null, invalid, or does not exist, do not apply a background image.
-     * Show an error toast and persist an empty image path via {@link OptionsService}.
+     * <p>If the file is null, invalid, or missing, no background is applied, an empty path is
+     * persisted, and an error toast is displayed.
      *
-     * <p>Asynchronous processing ensures the UI thread is not blocked during image loading and
-     * resizing.
-     *
-     * @param selectedFile the image file to load; may be null. If not null, it must exist and be a
-     *     valid image
-     * @param spinner the spinner component to indicate loading; must not be null
-     * @param sudokuFX the GridPane where the background image is applied; must not be null
+     * @param selectedFile the image file to load; may be null
+     * @param spinner the spinner to indicate loading; must not be null
+     * @param sudokuFX the {@link GridPane} to update; must not be null
      * @throws NullPointerException if {@code spinner} or {@code sudokuFX} is null
      */
     public void applyAndPersistBackgroundImage(
@@ -854,21 +851,44 @@ public class MenuOptionsViewModel {
                     },
                     backgroundImage -> {
                         sudokuFX.setBackground(new Background(backgroundImage));
-                        // TODO persist imagepath to database via OptionsService
-                        toaster.addToast(
-                                MessageFormat.format(
-                                        I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.saved"),
-                                        selectedFile.getName()),
-                                selectedFile.toURI().toString(),
-                                ToastLevels.INFO,
-                                false);
+                        persistImagePath(selectedFile.getAbsolutePath());
                     });
             return;
         }
-        // TODO persist empty imagepath to database via OptionsService
+        persistImagePath("");
         String errorMessage =
                 I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
         LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
         toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+    }
+
+    /**
+     * Persists the given image path in the current player's {@link OptionsDto} and refreshes the
+     * player.
+     *
+     * <p>If persisting the path succeeds, the current player is refreshed. If an exception occurs,
+     * the error is logged and an error toast is displayed to the user.
+     *
+     * @param imagePath the image path to persist; may be empty to indicate no background image
+     */
+    private void persistImagePath(@Nonnull String imagePath) {
+        Objects.requireNonNull(imagePath, "imagePath must not be null");
+        OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
+        OptionsDto toSaveOptions = currentOptions.withImagepath(imagePath);
+        try {
+            optionsService.updateOptions(toSaveOptions);
+            playerStateHolder.refreshCurrentPlayer();
+        } catch (Exception e) {
+            LOG.error("PersistImagePath failed: {}", e.getMessage(), e);
+            String i18nKey =
+                    imagePath.isEmpty()
+                            ? "toast.error.optionsviewmodel.imagepathclearerror"
+                            : "toast.error.optionsviewmodel.imagepathsavererror";
+            toaster.addToast(
+                    I18n.INSTANCE.getValue(i18nKey),
+                    Objects.toString(e.getMessage(), ""),
+                    ToastLevels.ERROR,
+                    true);
+        }
     }
 }
