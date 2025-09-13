@@ -99,6 +99,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_op
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
@@ -122,10 +123,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1554981be31a866f51e84ff15c5cfea4" id="r_a1554981be31a866f51e84ff15c5cfea4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1554981be31a866f51e84ff15c5cfea4">MenuOptionsViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a> <a class="el" href="#ad7a9489d3fbd70c4669910faaa8098b5">audioService</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a> <a class="el" href="#ab33d4b1f4ea7a1797bdd8840c7dc7d23">asyncFileProcessorService</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> <a class="el" href="#a80c1101f68fb0789b7c23ced16815c41">playerStateHolder</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html">OptionsService</a> <a class="el" href="#acbec727b5dd4f7a7f2490c24e32c1017">optionsService</a>)</td></tr>
 <tr class="separator:a1554981be31a866f51e84ff15c5cfea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a343e123b20fa7fa3fcd1ef9173d58546" id="r_a343e123b20fa7fa3fcd1ef9173d58546"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a343e123b20fa7fa3fcd1ef9173d58546">applyAndPersistBackgroundImage</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, GridPane sudokuFX)</td></tr>
-<tr class="memdesc:a343e123b20fa7fa3fcd1ef9173d58546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a background image to the specified GridPane and persists its path in the database.  <br /></td></tr>
+<tr class="memdesc:a343e123b20fa7fa3fcd1ef9173d58546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a background image to the specified <code><a class="el" href="">GridPane</a></code> and persists its path in the current player's options.  <br /></td></tr>
 <tr class="separator:a343e123b20fa7fa3fcd1ef9173d58546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37c28fa6e33f850e39a1e63e6696728d" id="r_a37c28fa6e33f850e39a1e63e6696728d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37c28fa6e33f850e39a1e63e6696728d">applyAndPersistOptionsColor</a> (GridPane sudokuFX, Color color)</td></tr>
-<tr class="memdesc:a37c28fa6e33f850e39a1e63e6696728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given color as the background of the GridPane, updates the options with the new value, and persists it in the database.  <br /></td></tr>
+<tr class="memdesc:a37c28fa6e33f850e39a1e63e6696728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code>, persists the new color (including alpha) in the current player's options, and updates the UI.  <br /></td></tr>
 <tr class="separator:a37c28fa6e33f850e39a1e63e6696728d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac757c39194d85a0c29565f186982fbca" id="r_ac757c39194d85a0c29565f186982fbca"><td class="memItemLeft" align="right" valign="top">BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac757c39194d85a0c29565f186982fbca">gridOpacityProperty</a> ()</td></tr>
 <tr class="separator:ac757c39194d85a0c29565f186982fbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,11 +213,20 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6833b400a15d0c8cbd114f344b212b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb35d0d692fc89bd84578617ab2201b7" id="r_aeb35d0d692fc89bd84578617ab2201b7"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb35d0d692fc89bd84578617ab2201b7">toggleGridOpacityAndPersist</a> ()</td></tr>
 <tr class="memdesc:aeb35d0d692fc89bd84578617ab2201b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the grid opacity mode, persists the new state in the database, updates <code class="JavaDocCode"><br/>
-gridOpacityProperty</code>, and returns the updated value.  <br /></td></tr>
+gridOpacityProperty</code>, and returns the actual updated value.  <br /></td></tr>
 <tr class="separator:aeb35d0d692fc89bd84578617ab2201b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae8674e39764f25b12906bd03a537c6b" id="r_aae8674e39764f25b12906bd03a537c6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae8674e39764f25b12906bd03a537c6b">toggleMuteAndPersist</a> ()</td></tr>
-<tr class="memdesc:aae8674e39764f25b12906bd03a537c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the audio mute state, persists the new value in the database, updates the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a></code>, and reflects the change in <code class="JavaDocCode">muteProperty</code>.  <br /></td></tr>
+<tr class="memdesc:aae8674e39764f25b12906bd03a537c6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the audio mute state, persists the new value in <code><a class="el" href="">OptionsDto</a></code>, updates the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a></code>, and reflects the change in <code class="JavaDocCode">muteProperty</code>.  <br /></td></tr>
 <tr class="separator:aae8674e39764f25b12906bd03a537c6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a1ba482d277204d92112f219af6b63a5b" id="r_a1ba482d277204d92112f219af6b63a5b"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ba482d277204d92112f219af6b63a5b">HEXCOLOR_BEGIN_INDEX</a> = 2</td></tr>
+<tr class="separator:a1ba482d277204d92112f219af6b63a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a28cf3e1c8c51609bcca4f27e03f869" id="r_a4a28cf3e1c8c51609bcca4f27e03f869"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a28cf3e1c8c51609bcca4f27e03f869">HEXCOLOR_END_INDEX</a> = 10</td></tr>
+<tr class="separator:a4a28cf3e1c8c51609bcca4f27e03f869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fe3abcb39899b32921cb3eb1df6579" id="r_a84fe3abcb39899b32921cb3eb1df6579"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84fe3abcb39899b32921cb3eb1df6579">SUDOKU_FX_MUST_NOT_BE_NULL</a> = &quot;sudokuFX must not be null&quot;</td></tr>
+<tr class="separator:a84fe3abcb39899b32921cb3eb1df6579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -277,6 +287,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a6e733cf8be577984de3b8b21b9a3c696" id="r_a6e733cf8be577984de3b8b21b9a3c696"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e733cf8be577984de3b8b21b9a3c696">muteText</a> (boolean isMuted)</td></tr>
 <tr class="memdesc:a6e733cf8be577984de3b8b21b9a3c696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized text corresponding to the mute state.  <br /></td></tr>
 <tr class="separator:a6e733cf8be577984de3b8b21b9a3c696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db1481483f8867924e414d2a375cd30" id="r_a2db1481483f8867924e414d2a375cd30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2db1481483f8867924e414d2a375cd30">persistImagePath</a> (@Nonnull String imagePath)</td></tr>
+<tr class="memdesc:a2db1481483f8867924e414d2a375cd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists the given image path in the current player's <code><a class="el" href="">OptionsDto</a></code> and refreshes the player.  <br /></td></tr>
+<tr class="separator:a2db1481483f8867924e414d2a375cd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7dd86e7d7c9a04f00bbc8bffe97843b" id="r_ae7dd86e7d7c9a04f00bbc8bffe97843b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7dd86e7d7c9a04f00bbc8bffe97843b">persistSongPath</a> (String absolutePath, String name)</td></tr>
 <tr class="memdesc:ae7dd86e7d7c9a04f00bbc8bffe97843b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists the audio file path (songPath) in the current player's options.  <br /></td></tr>
 <tr class="separator:ae7dd86e7d7c9a04f00bbc8bffe97843b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -467,17 +480,30 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a background image to the specified GridPane and persists its path in the database. </p>
-<p>The method validates that the file is non-null, exists, and is a valid image. If valid, it delegates asynchronous loading, resizing, and conversion to <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></code>. On success, the resulting <code><a class="el" href="">BackgroundImage</a></code> is applied to the provided <code><a class="el" href="">GridPane</a></code> and an info toast is shown. Errors are logged and shown as an error toast via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code>.</p>
-<p>Asynchronous processing ensures the UI thread is not blocked during image loading and resizing.</p>
+<p>Applies a background image to the specified <code><a class="el" href="">GridPane</a></code> and persists its path in the current player's options. </p>
+<p>If a valid image file is provided, it is loaded, resized, and converted asynchronously via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></code>, applied to the GridPane, and persisted. An info toast is shown on success.</p>
+<p>If the file is null, invalid, or missing, no background is applied, an empty path is persisted, and an error toast is displayed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">selectedFile</td><td>the image file to load; must not be null, must exist, and be a valid image </td></tr>
-    <tr><td class="paramname">spinner</td><td>the spinner component to indicate loading; must not be null </td></tr>
-    <tr><td class="paramname">sudokuFX</td><td>the GridPane where the background image will be applied; must not be null </td></tr>
+    <tr><td class="paramname">selectedFile</td><td>the image file to load; may be null </td></tr>
+    <tr><td class="paramname">spinner</td><td>the spinner to indicate loading; must not be null </td></tr>
+    <tr><td class="paramname">sudokuFX</td><td>the <code><a class="el" href="">GridPane</a></code> to update; must not be null </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">spinner</code> or <code class="JavaDocCode">sudokuFX</code> is null </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a343e123b20fa7fa3fcd1ef9173d58546_cgraph.svg" width="588" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -500,11 +526,19 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Applies the given color as the background of the GridPane, updates the options with the new value, and persists it in the database. </p>
+<p>Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code>, persists the new color (including alpha) in the current player's options, and updates the UI. </p>
+<p>A copy of the current <code><a class="el" href="">OptionsDto</a></code> is created with the new color in hex format including alpha (RRGGBBAA) and an empty image path, then persisted via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html#a95d1252d2c9e75cfd15d38cba0707398">OptionsService#updateOptions(OptionsDto)</a></code>. On success, the GridPane background is updated and a success toast is shown. On failure, the exception is logged and an error toast is displayed.</p>
+<p>The color is converted from a <code><a class="el" href="">Color</a></code> to a hex string suitable for persistence in the DTO.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sudokuFX</td><td>the GridPane to update </td></tr>
-    <tr><td class="paramname">color</td><td>the color to apply and persist </td></tr>
+    <tr><td class="paramname">sudokuFX</td><td>the <code><a class="el" href="">GridPane</a></code> to update (must not be null) </td></tr>
+    <tr><td class="paramname">color</td><td>the color to apply and persist (must not be null) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">sudokuFX</code> or <code class="JavaDocCode">color</code> is null </td></tr>
   </table>
   </dd>
 </dl>
@@ -577,11 +611,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Creates a localized binding combining a formatted message and a suffix. </p>
 <p>Updates when locale or any of the given dependencies change. </p>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ab375565a060bffec779b340dc14f7c43_cgraph.svg" width="608" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -660,11 +694,11 @@ Static Private Attributes</h2></td></tr>
 
 <p>Creates a formatted localized binding with one dynamic argument. </p>
 <p>Updates when locale or any of the given dependencies change. </p>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-3-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a218b89fb8384b0edf79c7c1d70f9b292_cgraph.svg" width="608" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -805,12 +839,12 @@ Selected song </li>
   </table>
   </dd>
 </dl>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a52dadaf5fba37f78cc096f5d55487246_cgraph.svg" width="100%" height="452"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a52dadaf5fba37f78cc096f5d55487246_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -839,11 +873,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the accessibility label for the mute button, based on the current mute state. </p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a8920334361b12271411cb8f6b2e32a8a_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -900,11 +934,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the visible label for the mute button, reflecting the current mute state. </p>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_af241419d9819c8b2012c3a0d3638ac2f_cgraph.svg" width="516" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -934,11 +968,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the tooltip for the mute button, combining dynamic mute info and submenu role. </p>
-<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ab5fddee7152e0b956c92a65fe426051c_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -968,11 +1002,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the accessibility label for the opacity button, based on the inverse of the current grid opacity state. </p>
-<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ac0e36364f613ccaed2292028fcdbbd60_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1029,11 +1063,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the visible label for the opacity button, reflecting the current grid opacity value. </p>
-<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-9-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aa1571dd95cf44f265efbd2bd5e07a95f_cgraph.svg" width="570" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1063,11 +1097,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the tooltip for the opacity button, combining dynamic label and submenu role. </p>
-<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-10-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aeb626611d7bd2c093f2043b67f4476b4_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1097,11 +1131,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the accessibility label for the song button, depending on whether the song field is empty. </p>
-<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a6d84c23dacad6dd546e8574da7d69b46_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1131,11 +1165,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the visible label for the song button, adapting to whether a song is present or not. </p>
-<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a7c45bfa11fa017fafba683a9c63c60b2_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1165,11 +1199,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the tooltip for the song button, combining dynamic song info and submenu role. </p>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a7ef223f7e057ce1c5d33dd4aebe3f337_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1839,6 +1873,40 @@ Selected song </li>
 
 </div>
 </div>
+<a id="a2db1481483f8867924e414d2a375cd30" name="a2db1481483f8867924e414d2a375cd30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db1481483f8867924e414d2a375cd30">&#9670;&#160;</a></span>persistImagePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.persistImagePath </td>
+          <td>(</td>
+          <td class="paramtype">@Nonnull String</td>          <td class="paramname"><span class="paramname"><em>imagePath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Persists the given image path in the current player's <code><a class="el" href="">OptionsDto</a></code> and refreshes the player. </p>
+<p>If persisting the path succeeds, the current player is refreshed. If an exception occurs, the error is logged and an error toast is displayed to the user.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imagePath</td><td>the image path to persist; may be empty to indicate no background image </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae7dd86e7d7c9a04f00bbc8bffe97843b" name="ae7dd86e7d7c9a04f00bbc8bffe97843b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7dd86e7d7c9a04f00bbc8bffe97843b">&#9670;&#160;</a></span>persistSongPath()</h2>
 
@@ -1867,7 +1935,7 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Persists the audio file path (songPath) in the current player's options. </p>
-<p>A copy of the current <code><a class="el" href="">OptionsDto</a></code> is created with the new path and persisted via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html#a95d1252d2c9e75cfd15d38cba0707398">OptionsService#updateOptions(OptionsDto)</a></code>. On success, the current player is refreshed, <code class="JavaDocCode">songProperty</code> is updated, and an info toast is shown. On failure, an error toast is shown.</p>
+<p>A copy of the current <code><a class="el" href="">OptionsDto</a></code> is created with the new path and persisted via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html#a95d1252d2c9e75cfd15d38cba0707398">OptionsService#updateOptions(OptionsDto)</a></code>. On success, the current player is refreshed, <code class="JavaDocCode">songProperty</code> is updated, and an info toast is shown. On failure, the exception is logged and an error toast with details is displayed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">absolutePath</td><td>the new audio file absolute path </td></tr>
@@ -1894,11 +1962,11 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Resets the song path by clearing the current selection, persisting the change, and showing a toast notification. </p>
-<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a053a37df40819f189c10a076302ec47c_cgraph.svg" width="574" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1927,11 +1995,11 @@ Selected song </li>
   </table>
   </dd>
 </dl>
-<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-16-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ad2431f22d487e230013fec9a9ff6fc20_cgraph.svg" width="546" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1972,9 +2040,17 @@ Selected song </li>
 <p>Sets the background color of the GridPane and updates the ColorPicker based on the color value retrieved from the model. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sudokuFX</td><td>the GridPane to update </td></tr>
-    <tr><td class="paramname">menuOptionsButtonColor</td><td>the ColorPicker to update </td></tr>
-    <tr><td class="paramname">colorValueFromModel</td><td>the hex color string from the model (e.g., "99b3ffcd") </td></tr>
+    <tr><td class="paramname">sudokuFX</td><td>the GridPane to update (must not be null) </td></tr>
+    <tr><td class="paramname">menuOptionsButtonColor</td><td>the ColorPicker to update (must not be null) </td></tr>
+    <tr><td class="paramname">colorValueFromModel</td><td>the hex color string from the model (must not be null or blank, e.g., "99b3ffcd") </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if any parameter is null </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">colorValueFromModel</code> is blank </td></tr>
+    <tr><td class="paramname">NumberFormatException</td><td>if <code class="JavaDocCode">colorValueFromModel</code> is not a valid hex number or too large for an int </td></tr>
   </table>
   </dd>
 </dl>
@@ -2014,7 +2090,8 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Toggles the grid opacity mode, persists the new state in the database, updates <code class="JavaDocCode"><br/>
-gridOpacityProperty</code>, and returns the updated value. </p>
+gridOpacityProperty</code>, and returns the actual updated value. </p>
+<p>On success, an info toast indicates the new state. On failure, the exception is logged, an error toast is shown, and the property is restored to its previous value.</p>
 <dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if opaque mode is now active, <code class="JavaDocCode">false</code> if transparent </dd></dl>
 
 </div>
@@ -2034,7 +2111,8 @@ gridOpacityProperty</code>, and returns the updated value. </p>
       </table>
 </div><div class="memdoc">
 
-<p>Toggles the audio mute state, persists the new value in the database, updates the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a></code>, and reflects the change in <code class="JavaDocCode">muteProperty</code>. </p>
+<p>Toggles the audio mute state, persists the new value in <code><a class="el" href="">OptionsDto</a></code>, updates the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a></code>, and reflects the change in <code class="JavaDocCode">muteProperty</code>. </p>
+<p>On success, a user-friendly toast indicates the new mute state. On failure, the exception is logged and an error toast with details is displayed. </p>
 
 </div>
 </div>
@@ -2143,6 +2221,50 @@ gridOpacityProperty</code>, and returns the updated value. </p>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ba482d277204d92112f219af6b63a5b" name="a1ba482d277204d92112f219af6b63a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ba482d277204d92112f219af6b63a5b">&#9670;&#160;</a></span>HEXCOLOR_BEGIN_INDEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.HEXCOLOR_BEGIN_INDEX = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a28cf3e1c8c51609bcca4f27e03f869" name="a4a28cf3e1c8c51609bcca4f27e03f869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a28cf3e1c8c51609bcca4f27e03f869">&#9670;&#160;</a></span>HEXCOLOR_END_INDEX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.HEXCOLOR_END_INDEX = 10</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -3229,6 +3351,28 @@ gridOpacityProperty</code>, and returns the updated value. </p>
 
 </div>
 </div>
+<a id="a84fe3abcb39899b32921cb3eb1df6579" name="a84fe3abcb39899b32921cb3eb1df6579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84fe3abcb39899b32921cb3eb1df6579">&#9670;&#160;</a></span>SUDOKU_FX_MUST_NOT_BE_NULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.SUDOKU_FX_MUST_NOT_BE_NULL = &quot;sudokuFX must not be null&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a5bb32d3804162389e184d81f30dd190f" name="a5bb32d3804162389e184d81f30dd190f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5bb32d3804162389e184d81f30dd190f">&#9670;&#160;</a></span>toaster</h2>
 
@@ -3260,7 +3404,7 @@ gridOpacityProperty</code>, and returns the updated value. </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></li>
-    <li class="footer">Generated on Fri Sep 12 2025 17:00:50 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Sep 13 2025 16:14:47 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

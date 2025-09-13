@@ -1,5 +1,13 @@
 var NAVTREEINDEX16 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ab98e087572e0b23e5d5e3a9239312f88":[1,0,0,0,0,10,16,19],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ab98e087572e0b23e5d5e3a9239312f88":[2,0,0,0,0,9,16,19],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#abc77bfbb1db5def8a7084796bc0348b9":[1,0,0,0,0,10,16,5],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#abc77bfbb1db5def8a7084796bc0348b9":[2,0,0,0,0,9,16,5],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ac476b1854446ba00a445de6b9e29be1b":[1,0,0,0,0,10,16,25],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ac476b1854446ba00a445de6b9e29be1b":[2,0,0,0,0,9,16,25],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ac55bbce1266f95be0283786289266b34":[1,0,0,0,0,10,16,13],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ac55bbce1266f95be0283786289266b34":[2,0,0,0,0,9,16,13],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae48034c1b5565cc3afd8b338ee9f76ff":[1,0,0,0,0,10,16,4],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae48034c1b5565cc3afd8b338ee9f76ff":[2,0,0,0,0,9,16,4],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae75fe14e7136bfb46e63b2f9361f720f":[1,0,0,0,0,10,16,17],
@@ -241,13 +249,5 @@ var NAVTREEINDEX16 =
 "dir_d000aabb83e6483c599d2a59aa86bd54.html":[3,0,1,1,0,0,0,0,4,1,0,0],
 "dir_d1a24550bb8caec420db541cf087836b.html":[3,0,1,0,0,0,0,0,3,0],
 "dir_d6cc364c5a8ed2fd560af72f65d4aeee.html":[3,0,1,1,0,0,0,0,1,1],
-"dir_dab53baab79d134588a4cfb121627eb7.html":[3,0,1,1,0,0,0,0,2],
-"dir_dd04a4ae82f1957e0345908a447559bb.html":[3,0,1,0,0,0,0,0,1,2],
-"dir_df66706d7efa0a9fd8002f7f6346de3d.html":[3,0,1,0,0,0,0],
-"dir_e041c7dd798154dcbbef296bb2348b1e.html":[3,0,1,0,0,0,0,0,9,1],
-"dir_e12103ed684aa7039f4f603209f95d58.html":[3,0,1,1,0,0,0,0,0,0,0],
-"dir_ee8477f11136cd562570148c9f458d32.html":[3,0,1,0,0,0,0,0,7,1],
-"dir_eee43682c2d4ebe4079c3cfc44bc0448.html":[3,0,0,0],
-"dir_ef1e010f932025bd60b33bdd5f4fac05.html":[3,0,1,0,0,0,0,0,2,1],
-"dir_f7f1075d3ce4cc18cf0ed62a5e1b2887.html":[3,0,1,1,0,0,0,0,4,1]
+"dir_dab53baab79d134588a4cfb121627eb7.html":[3,0,1,1,0,0,0,0,2]
 };

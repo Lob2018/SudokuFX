@@ -1,5 +1,7 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidFile_whenApplyAndPersistBackgroundImage_thenAsyncServiceCalledAndBackgroundSet" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidFile_whenApplyAndPersistBackgroundImage_thenAsyncServiceCalledAndBackgroundSet">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,5,289,80"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a343e123b20fa7fa3fcd1ef9173d58546" title="Applies a background image to the specified GridPane and persists its path in the database." alt="" coords="337,13,598,72"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a343e123b20fa7fa3fcd1ef9173d58546" title="Applies a background image to the specified GridPane and persists its path in the current player&#39;s op..." alt="" coords="337,13,598,72"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,40,321,40,321,45,289,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a2db1481483f8867924e414d2a375cd30" title="Persists the given image path in the current player&#39;s OptionsDto and refreshes the player." alt="" coords="646,21,914,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="598,40,631,40,631,45,598,45"/>
 </map>

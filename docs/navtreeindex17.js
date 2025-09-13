@@ -1,5 +1,13 @@
 var NAVTREEINDEX17 =
 {
+"dir_dd04a4ae82f1957e0345908a447559bb.html":[3,0,1,0,0,0,0,0,1,2],
+"dir_df66706d7efa0a9fd8002f7f6346de3d.html":[3,0,1,0,0,0,0],
+"dir_e041c7dd798154dcbbef296bb2348b1e.html":[3,0,1,0,0,0,0,0,9,1],
+"dir_e12103ed684aa7039f4f603209f95d58.html":[3,0,1,1,0,0,0,0,0,0,0],
+"dir_ee8477f11136cd562570148c9f458d32.html":[3,0,1,0,0,0,0,0,7,1],
+"dir_eee43682c2d4ebe4079c3cfc44bc0448.html":[3,0,0,0],
+"dir_ef1e010f932025bd60b33bdd5f4fac05.html":[3,0,1,0,0,0,0,0,2,1],
+"dir_f7f1075d3ce4cc18cf0ed62a5e1b2887.html":[3,0,1,1,0,0,0,0,4,1],
 "dir_fd3f6763802dee1ad875f6c80eac0bda.html":[3,0,1,0,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html":[1,0,0,0,0,1,1,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html":[2,0,0,0,0,1,1,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX17 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a33c43396be67fddc278c5df16bba97c1":[2,0,0,0,0,1,4,6,6],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a68f77aa53053bded5a83fa4a1e952775":[1,0,0,0,0,1,4,6,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a68f77aa53053bded5a83fa4a1e952775":[2,0,0,0,0,1,4,6,4],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ab82bc53a8fad4c8cb7706a88b8446aab":[1,0,0,0,0,1,4,6,2],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ab82bc53a8fad4c8cb7706a88b8446aab":[2,0,0,0,0,1,4,6,2],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ac9bf81a6125aaca1e99d8f88a4351ee2":[1,0,0,0,0,1,4,6,3],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ac9bf81a6125aaca1e99d8f88a4351ee2":[2,0,0,0,0,1,4,6,3],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ae3483da12855a10304f3a7ea9ea1ff14":[1,0,0,0,0,1,4,6,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ae3483da12855a10304f3a7ea9ea1ff14":[2,0,0,0,0,1,4,6,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#afac3bd375f19318b72f190fb317a2fcb":[1,0,0,0,0,1,4,6,5],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#afac3bd375f19318b72f190fb317a2fcb":[2,0,0,0,0,1,4,6,5],
-"enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html":[1,0,0,0,0,2,3]
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ab82bc53a8fad4c8cb7706a88b8446aab":[1,0,0,0,0,1,4,6,2]
 };

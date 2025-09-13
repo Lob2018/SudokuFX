@@ -13,8 +13,9 @@
 <area shape="poly" id="edge7_Node000005_Node000002" title=" " alt="" coords="553,152,725,84,727,89,555,157"/>
 <area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" title="Data Transfer Object representing a menu entity." alt="" coords="676,155,878,181"/>
 <area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="622,165,660,165,660,171,622,171"/>
-<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af3351529e3efa22019c4fe7fcd841d3f" title="Data Transfer Object representing an Options entity." alt="" coords="669,205,884,232"/>
-<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="590,179,691,199,690,204,589,185"/>
-<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565" title="Data Transfer Object representing a player&#39;s language." alt="" coords="684,256,870,299"/>
-<area shape="poly" id="edge10_Node000005_Node000008" title=" " alt="" coords="544,180,601,210,670,242,687,248,685,253,668,246,599,214,542,184"/>
+<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af3351529e3efa22019c4fe7fcd841d3f" title="Data Transfer Object representing an Options entity." alt="" coords="669,229,884,256"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="567,179,714,222,712,227,566,184"/>
+<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565" title="Data Transfer Object representing a player&#39;s language." alt="" coords="684,280,870,323"/>
+<area shape="poly" id="edge11_Node000005_Node000008" title=" " alt="" coords="537,180,595,221,670,266,684,272,681,276,668,270,592,226,534,184"/>
+<area shape="poly" id="edge10_Node000007_Node000007" title=" " alt="" coords="734,231,727,221,732,211,749,205,777,203,807,205,823,212,821,217,806,210,777,208,750,210,735,215,732,220,739,227"/>
 </map>
