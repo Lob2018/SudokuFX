@@ -41,7 +41,6 @@ import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
-import jakarta.annotation.Nonnull;
 
 /**
  * ViewModel managing menu options UI state and accessibility strings.
@@ -775,20 +774,18 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Applies the given color as the background of the specified {@link GridPane}, persists the new
-     * color (including alpha) in the current player's options, and updates the UI.
+     * Applies the given color as the background of the specified {@link GridPane} and persists it
+     * in the current player's options if it has changed.
      *
-     * <p>A copy of the current {@link OptionsDto} is created with the new color in hex format
-     * including alpha (RRGGBBAA) and an empty image path, then persisted via {@link
-     * OptionsService#updateOptions(OptionsDto)}. On success, the GridPane background is updated and
-     * a success toast is shown. On failure, the exception is logged and an error toast is
-     * displayed.
+     * <p>The color is converted to a hex string including alpha (RRGGBBAA) and stored in a copy of
+     * the current {@link OptionsDto} with an empty image path. If the color is identical to the
+     * currently persisted value, no database update occurs.
      *
-     * <p>The color is converted from a {@link Color} to a hex string suitable for persistence in
-     * the DTO.
+     * <p>On successful persistence, the GridPane background is updated. On failure, the exception
+     * is logged and an error toast is shown to the user.
      *
-     * @param sudokuFX the {@link GridPane} to update (must not be null)
-     * @param color the color to apply and persist (must not be null)
+     * @param sudokuFX the {@link GridPane} to update; must not be null
+     * @param color the color to apply and persist; must not be null
      * @throws NullPointerException if {@code sudokuFX} or {@code color} is null
      */
     public void applyAndPersistOptionsColor(GridPane sudokuFX, Color color) {
@@ -796,13 +793,17 @@ public class MenuOptionsViewModel {
         Objects.requireNonNull(color, "color must not be null");
         String hexColor = color.toString().substring(HEXCOLOR_BEGIN_INDEX, HEXCOLOR_END_INDEX);
         OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
+        if (hexColor.equals(currentOptions.hexcolor())) {
+            sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
+            return;
+        }
         OptionsDto toSaveOptions = currentOptions.withImagepath("").withHexcolor(hexColor);
         try {
             optionsService.updateOptions(toSaveOptions);
             playerStateHolder.refreshCurrentPlayer();
             sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
         } catch (Exception e) {
-            LOG.error("██ Exception ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
+            LOG.error("ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
             toaster.addToast(
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.colorerror"),
                     Objects.toString(e.getMessage(), ""),
@@ -831,49 +832,52 @@ public class MenuOptionsViewModel {
             File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
         Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
         Objects.requireNonNull(spinner, "spinner must not be null");
-        if (selectedFile != null
-                && imageUtils.isValidImage(selectedFile)
-                && selectedFile.exists()) {
-            asyncFileProcessorService.processFileAsync(
-                    selectedFile,
-                    spinner,
-                    toaster,
-                    file -> {
-                        ImageMeta meta = imageUtils.getImageMeta(file);
-                        Image resizedImage =
-                                new Image(
-                                        file.toURI().toString(),
-                                        meta.width() * meta.scaleFactor(),
-                                        meta.height() * meta.scaleFactor(),
-                                        true,
-                                        true);
-                        return imageUtils.createBackgroundImage(resizedImage);
-                    },
-                    backgroundImage -> {
-                        sudokuFX.setBackground(new Background(backgroundImage));
-                        persistImagePath(selectedFile.getAbsolutePath());
-                    });
+        if (selectedFile == null
+                || !selectedFile.exists()
+                || !imageUtils.isValidImage(selectedFile)) {
+            persistImagePath("");
+            String errorMessage =
+                    I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
+            LOG.error("HandleFileImageChooser error: {}", errorMessage);
+            toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
             return;
         }
-        persistImagePath("");
-        String errorMessage =
-                I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
-        LOG.error("██ Exception handleFileImageChooser : {}", errorMessage);
-        toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+        asyncFileProcessorService.processFileAsync(
+                selectedFile,
+                spinner,
+                toaster,
+                file -> {
+                    ImageMeta meta = imageUtils.getImageMeta(file);
+                    Image resizedImage =
+                            new Image(
+                                    file.toURI().toString(),
+                                    meta.width() * meta.scaleFactor(),
+                                    meta.height() * meta.scaleFactor(),
+                                    true,
+                                    true);
+                    return imageUtils.createBackgroundImage(resizedImage);
+                },
+                backgroundImage -> {
+                    sudokuFX.setBackground(new Background(backgroundImage));
+                    persistImagePath(selectedFile.getAbsolutePath());
+                });
     }
 
     /**
-     * Persists the given image path in the current player's {@link OptionsDto} and refreshes the
-     * player.
+     * Persists the given image path in the current player's {@link OptionsDto} if it differs from
+     * the existing path, then refreshes the player.
      *
      * <p>If persisting the path succeeds, the current player is refreshed. If an exception occurs,
      * the error is logged and an error toast is displayed to the user.
      *
      * @param imagePath the image path to persist; may be empty to indicate no background image
      */
-    private void persistImagePath(@Nonnull String imagePath) {
+    private void persistImagePath(String imagePath) {
         Objects.requireNonNull(imagePath, "imagePath must not be null");
         OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
+        if (imagePath.equals(currentOptions.imagepath())) {
+            return;
+        }
         OptionsDto toSaveOptions = currentOptions.withImagepath(imagePath);
         try {
             optionsService.updateOptions(toSaveOptions);
