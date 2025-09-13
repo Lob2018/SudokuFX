@@ -709,15 +709,41 @@ public class MenuOptionsViewModel {
 
     /**
      * Toggles the grid opacity mode, persists the new state in the database, updates {@code
-     * gridOpacityProperty}, and returns the updated value.
+     * gridOpacityProperty}, and returns the actual updated value.
+     *
+     * <p>On success, an info toast indicates the new state. On failure, the exception is logged, an
+     * error toast is shown, and the property is restored to its previous value.
      *
      * @return {@code true} if opaque mode is now active, {@code false} if transparent
      */
     public boolean toggleGridOpacityAndPersist() {
-        boolean newState = !gridOpacityProperty.get();
-        gridOpacityProperty.set(newState);
-        // TODO persist opacity to database via OptionsService
-        return newState;
+        boolean previousState = gridOpacityProperty.get();
+        boolean newState = !previousState;
+        OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
+        OptionsDto toSaveOptions = currentOptions.withOpaque(newState);
+        try {
+            optionsService.updateOptions(toSaveOptions);
+            playerStateHolder.refreshCurrentPlayer();
+            gridOpacityProperty.set(newState);
+            toaster.addToast(
+                    I18n.INSTANCE.getValue(
+                            newState
+                                    ? "toast.msg.optionsviewmodel.opaque.on"
+                                    : "toast.msg.optionsviewmodel.opaque.off"),
+                    "",
+                    ToastLevels.INFO,
+                    false);
+            return newState;
+        } catch (Exception e) {
+            LOG.error("ToggleGridOpacityAndPersist failed: {}", e.getMessage(), e);
+            gridOpacityProperty.set(previousState);
+            toaster.addToast(
+                    I18n.INSTANCE.getValue("toast.error.optionsviewmodel.opacityerror"),
+                    Objects.toString(e.getMessage(), ""),
+                    ToastLevels.ERROR,
+                    true);
+            return previousState;
+        }
     }
 
     /**
