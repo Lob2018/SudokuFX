@@ -10,10 +10,10 @@
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1535,273,1489,302,1418,338,1343,371,1197,424,1196,419,1341,366,1415,334,1487,298,1532,268"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="1517,5,1664,91"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1593,106,1593,170,1588,170,1588,106"/>
-<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" title="Repository interface for PlayerLanguage entities." alt="" coords="337,177,514,263"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="478,260,529,298,601,340,677,376,754,405,828,429,827,434,753,410,675,381,598,345,527,302,475,265"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" title="Repository interface for PlayerLanguage entities." alt="" coords="337,169,514,271"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="488,268,529,298,601,340,677,376,754,405,828,429,827,434,753,410,675,381,598,345,527,302,485,273"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="324,5,527,91"/>
-<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="428,106,428,177,423,177,423,106"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="428,106,428,170,423,170,423,106"/>
 <area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" title="Repository interface for Options entities." alt="" coords="540,177,716,263"/>
 <area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="682,260,731,298,787,338,830,365,827,370,784,342,728,302,679,265"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="552,5,707,91"/>

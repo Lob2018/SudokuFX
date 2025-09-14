@@ -7,7 +7,8 @@ var searchData=
   ['updatelabelfontsizeandborderontextchange_4',['updateLabelFontSizeAndBorderOnTextChange',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a9544acad3febede6981c9d8440674d3c',1,'fr::softsf::sudokufx::viewmodel::grid::GridCellViewModel']]],
   ['updateoptions_5',['updateOptions',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html#a95d1252d2c9e75cfd15d38cba0707398',1,'fr::softsf::sudokufx::service::business::OptionsService']]],
   ['updateplayer_6',['updatePlayer',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a6f6b31510b7e15b031f2feb95df7ed4a',1,'fr::softsf::sudokufx::service::business::PlayerService']]],
-  ['updateselectedlevel_7',['updateSelectedLevel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a76e3858283a44df2008e93c998e4e37a',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
-  ['urls_8',['Urls',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#aba9198c3a613a4ecce57d6836e0e4117',1,'fr::softsf::sudokufx::common::enums::Urls']]],
-  ['utilitytextmethodsprovider_9',['utilityTextMethodsProvider',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_utility_text_methods_tests.html#a5d827857c2eb0d7857b04dadbeaef117',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModelUTest::UtilityTextMethodsTests']]]
+  ['updateplayerlanguage_7',['updatePlayerLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aff34e77864185144dffd978d6ee2cdd4',1,'fr::softsf::sudokufx::navigation::Coordinator']]],
+  ['updateselectedlevel_8',['updateSelectedLevel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a76e3858283a44df2008e93c998e4e37a',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
+  ['urls_9',['Urls',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#aba9198c3a613a4ecce57d6836e0e4117',1,'fr::softsf::sudokufx::common::enums::Urls']]],
+  ['utilitytextmethodsprovider_10',['utilityTextMethodsProvider',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_utility_text_methods_tests.html#a5d827857c2eb0d7857b04dadbeaef117',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModelUTest::UtilityTextMethodsTests']]]
 ];

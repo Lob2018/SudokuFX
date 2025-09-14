@@ -89,14 +89,16 @@
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" target="_top" xlink:title="Repository interface for PlayerLanguage entities.">
-<polygon fill="white" stroke="none" points="287.5,-308 155,-308 155,-244 287.5,-244 287.5,-308"/>
-<text text-anchor="start" x="159" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="162.75" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
-<text text-anchor="start" x="219.75" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="219.75" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="155,-278 155,-278 287.5,-278 287.5,-278 155,-278"/>
-<polygon fill="#666666" stroke="#666666" points="155,-262 155,-262 287.5,-262 287.5,-262 155,-262"/>
-<polygon fill="none" stroke="#666666" points="155,-244 155,-308 287.5,-308 287.5,-244 155,-244"/>
+<polygon fill="white" stroke="none" points="287.62,-314 154.88,-314 154.88,-238 287.62,-238 287.62,-314"/>
+<text text-anchor="start" x="159" y="-300.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="162.75" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
+<text text-anchor="start" x="219.75" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="158.88" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="168.88" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; PlayerLanguage</text>
+<text text-anchor="start" x="168.88" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; findByIso(String iso)</text>
+<polygon fill="#666666" stroke="#666666" points="154.88,-284 154.88,-284 287.62,-284 287.62,-284 154.88,-284"/>
+<polygon fill="#666666" stroke="#666666" points="154.88,-268 154.88,-268 287.62,-268 287.62,-268 154.88,-268"/>
+<polygon fill="none" stroke="#666666" points="154.88,-238 154.88,-314 287.62,-314 287.62,-238 154.88,-238"/>
 </a>
 </g>
 </g>
@@ -104,7 +106,7 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M233.67,-244.28C242.29,-225.76 255.2,-202.61 271.75,-186 283.68,-174.03 297.32,-163 311.62,-152.98"/>
+<path fill="none" stroke="#63b8ff" d="M236.55,-238.24C245.07,-220.92 256.95,-200.85 271.75,-186 283.68,-174.03 297.32,-163 311.62,-152.98"/>
 <polygon fill="none" stroke="#63b8ff" points="311.44,-153.1 314.17,-146.42 321.38,-146.37 318.66,-153.05 311.44,-153.1"/>
 </a>
 </g>
@@ -129,7 +131,7 @@
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node5&#45;&gt;Node4</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M220.58,-361.82C220.72,-344.2 220.88,-324.11 221.01,-307.9"/>
+<path fill="none" stroke="#63b8ff" d="M220.58,-361.82C220.7,-346.28 220.84,-328.81 220.96,-313.79"/>
 <polygon fill="none" stroke="#63b8ff" points="217.08,-361.72 220.5,-371.74 224.08,-361.77 217.08,-361.72"/>
 </a>
 </g>

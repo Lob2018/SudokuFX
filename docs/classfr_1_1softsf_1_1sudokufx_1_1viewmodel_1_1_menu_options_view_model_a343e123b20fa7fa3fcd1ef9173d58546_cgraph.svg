@@ -33,7 +33,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a2db1481483f8867924e414d2a375cd30" target="_top" xlink:title="Persists the given image path in the current player&#39;s OptionsDto and refreshes the player.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#add42eac8d6831cc853249da660b34e14" target="_top" xlink:title="Persists the given image path in the current player&#39;s OptionsDto if it differs from the existing path...">
 <polygon fill="white" stroke="#666666" points="433.25,-38 232,-38 232,-6 433.25,-6 433.25,-38"/>
 <text text-anchor="start" x="240" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="332.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.persistImagePath</text>

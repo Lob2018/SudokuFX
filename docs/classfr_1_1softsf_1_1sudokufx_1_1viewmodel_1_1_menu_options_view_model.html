@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a343e123b20fa7fa3fcd1ef9173d58546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a background image to the specified <code><a class="el" href="">GridPane</a></code> and persists its path in the current player's options.  <br /></td></tr>
 <tr class="separator:a343e123b20fa7fa3fcd1ef9173d58546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37c28fa6e33f850e39a1e63e6696728d" id="r_a37c28fa6e33f850e39a1e63e6696728d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37c28fa6e33f850e39a1e63e6696728d">applyAndPersistOptionsColor</a> (GridPane sudokuFX, Color color)</td></tr>
-<tr class="memdesc:a37c28fa6e33f850e39a1e63e6696728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code>, persists the new color (including alpha) in the current player's options, and updates the UI.  <br /></td></tr>
+<tr class="memdesc:a37c28fa6e33f850e39a1e63e6696728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code> and persists it in the current player's options if it has changed.  <br /></td></tr>
 <tr class="separator:a37c28fa6e33f850e39a1e63e6696728d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac757c39194d85a0c29565f186982fbca" id="r_ac757c39194d85a0c29565f186982fbca"><td class="memItemLeft" align="right" valign="top">BooleanProperty&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac757c39194d85a0c29565f186982fbca">gridOpacityProperty</a> ()</td></tr>
 <tr class="separator:ac757c39194d85a0c29565f186982fbca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,9 +287,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a6e733cf8be577984de3b8b21b9a3c696" id="r_a6e733cf8be577984de3b8b21b9a3c696"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e733cf8be577984de3b8b21b9a3c696">muteText</a> (boolean isMuted)</td></tr>
 <tr class="memdesc:a6e733cf8be577984de3b8b21b9a3c696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized text corresponding to the mute state.  <br /></td></tr>
 <tr class="separator:a6e733cf8be577984de3b8b21b9a3c696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2db1481483f8867924e414d2a375cd30" id="r_a2db1481483f8867924e414d2a375cd30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2db1481483f8867924e414d2a375cd30">persistImagePath</a> (@Nonnull String imagePath)</td></tr>
-<tr class="memdesc:a2db1481483f8867924e414d2a375cd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists the given image path in the current player's <code><a class="el" href="">OptionsDto</a></code> and refreshes the player.  <br /></td></tr>
-<tr class="separator:a2db1481483f8867924e414d2a375cd30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add42eac8d6831cc853249da660b34e14" id="r_add42eac8d6831cc853249da660b34e14"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add42eac8d6831cc853249da660b34e14">persistImagePath</a> (String imagePath)</td></tr>
+<tr class="memdesc:add42eac8d6831cc853249da660b34e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists the given image path in the current player's <code><a class="el" href="">OptionsDto</a></code> if it differs from the existing path, then refreshes the player.  <br /></td></tr>
+<tr class="separator:add42eac8d6831cc853249da660b34e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7dd86e7d7c9a04f00bbc8bffe97843b" id="r_ae7dd86e7d7c9a04f00bbc8bffe97843b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7dd86e7d7c9a04f00bbc8bffe97843b">persistSongPath</a> (String absolutePath, String name)</td></tr>
 <tr class="memdesc:ae7dd86e7d7c9a04f00bbc8bffe97843b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists the audio file path (songPath) in the current player's options.  <br /></td></tr>
 <tr class="separator:ae7dd86e7d7c9a04f00bbc8bffe97843b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,13 +526,13 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code>, persists the new color (including alpha) in the current player's options, and updates the UI. </p>
-<p>A copy of the current <code><a class="el" href="">OptionsDto</a></code> is created with the new color in hex format including alpha (RRGGBBAA) and an empty image path, then persisted via <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html#a95d1252d2c9e75cfd15d38cba0707398">OptionsService#updateOptions(OptionsDto)</a></code>. On success, the GridPane background is updated and a success toast is shown. On failure, the exception is logged and an error toast is displayed.</p>
-<p>The color is converted from a <code><a class="el" href="">Color</a></code> to a hex string suitable for persistence in the DTO.</p>
+<p>Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code> and persists it in the current player's options if it has changed. </p>
+<p>The color is converted to a hex string including alpha (RRGGBBAA) and stored in a copy of the current <code><a class="el" href="">OptionsDto</a></code> with an empty image path. If the color is identical to the currently persisted value, no database update occurs.</p>
+<p>On successful persistence, the GridPane background is updated. On failure, the exception is logged and an error toast is shown to the user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sudokuFX</td><td>the <code><a class="el" href="">GridPane</a></code> to update (must not be null) </td></tr>
-    <tr><td class="paramname">color</td><td>the color to apply and persist (must not be null) </td></tr>
+    <tr><td class="paramname">sudokuFX</td><td>the <code><a class="el" href="">GridPane</a></code> to update; must not be null </td></tr>
+    <tr><td class="paramname">color</td><td>the color to apply and persist; must not be null </td></tr>
   </table>
   </dd>
 </dl>
@@ -1873,8 +1873,8 @@ Selected song </li>
 
 </div>
 </div>
-<a id="a2db1481483f8867924e414d2a375cd30" name="a2db1481483f8867924e414d2a375cd30"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2db1481483f8867924e414d2a375cd30">&#9670;&#160;</a></span>persistImagePath()</h2>
+<a id="add42eac8d6831cc853249da660b34e14" name="add42eac8d6831cc853249da660b34e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add42eac8d6831cc853249da660b34e14">&#9670;&#160;</a></span>persistImagePath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1885,7 +1885,7 @@ Selected song </li>
         <tr>
           <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.persistImagePath </td>
           <td>(</td>
-          <td class="paramtype">@Nonnull String</td>          <td class="paramname"><span class="paramname"><em>imagePath</em></span></td><td>)</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>imagePath</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1896,7 +1896,7 @@ Selected song </li>
 </table>
 </div><div class="memdoc">
 
-<p>Persists the given image path in the current player's <code><a class="el" href="">OptionsDto</a></code> and refreshes the player. </p>
+<p>Persists the given image path in the current player's <code><a class="el" href="">OptionsDto</a></code> if it differs from the existing path, then refreshes the player. </p>
 <p>If persisting the path succeeds, the current player is refreshed. If an exception occurs, the error is logged and an error toast is displayed to the user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3404,7 +3404,7 @@ gridOpacityProperty</code>, and returns the actual updated value. </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></li>
-    <li class="footer">Generated on Sat Sep 13 2025 16:14:47 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Sep 14 2025 11:28:26 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

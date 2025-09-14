@@ -203,14 +203,16 @@ var sectionId = 'dynsection-0';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" target="_top" xlink:title="Repository interface for PlayerLanguage entities.">
-<polygon fill="white" stroke="none" points="142.62,-824 10.12,-824 10.12,-760 142.62,-760 142.62,-824"/>
-<text text-anchor="start" x="14.12" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="17.88" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
-<text text-anchor="start" x="74.88" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="74.88" y="-766.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="10.12,-794 10.12,-794 142.62,-794 142.62,-794 10.12,-794"/>
-<polygon fill="#666666" stroke="#666666" points="10.12,-778 10.12,-778 142.62,-778 142.62,-778 10.12,-778"/>
-<polygon fill="none" stroke="#666666" points="10.12,-760 10.12,-824 142.62,-824 142.62,-760 10.12,-760"/>
+<polygon fill="white" stroke="none" points="142.75,-830 10,-830 10,-754 142.75,-754 142.75,-830"/>
+<text text-anchor="start" x="14.12" y="-816.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="17.88" y="-804.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
+<text text-anchor="start" x="74.88" y="-788.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="14" y="-772.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="24" y="-772.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; PlayerLanguage</text>
+<text text-anchor="start" x="24" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; findByIso(String iso)</text>
+<polygon fill="#666666" stroke="#666666" points="10,-800 10,-800 142.75,-800 142.75,-800 10,-800"/>
+<polygon fill="#666666" stroke="#666666" points="10,-784 10,-784 142.75,-784 142.75,-784 10,-784"/>
+<polygon fill="none" stroke="#666666" points="10,-754 10,-830 142.75,-830 142.75,-754 10,-754"/>
 </a>
 </g>
 </g>
@@ -218,7 +220,7 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M66,-760.11C49.87,-706.02 25.28,-592.67 72.88,-516 169.51,-360.31 380.87,-288.24 516.6,-256.9"/>
+<path fill="none" stroke="#63b8ff" d="M64.31,-754.32C48.27,-698.27 26.92,-590.04 72.88,-516 169.51,-360.31 380.87,-288.24 516.6,-256.9"/>
 <polygon fill="none" stroke="#63b8ff" points="516.5,-256.92 521.48,-251.7 528.21,-254.28 523.24,-259.5 516.5,-256.92"/>
 </a>
 </g>
@@ -228,7 +230,7 @@ var sectionId = 'dynsection-0';
 <g id="edge13_Node000012_Node000004" class="edge">
 <title>Node4&#45;&gt;Node12</title>
 <g id="a_edge13_Node000012_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M134.53,-760.04C175.19,-739.91 231.38,-715.07 283.88,-702 377.57,-678.67 408.4,-713.37 500.38,-684 500.95,-683.82 501.52,-683.63 502.09,-683.44"/>
+<path fill="none" stroke="#63b8ff" d="M142.68,-756.04C182.5,-736.72 234.81,-714.22 283.88,-702 377.57,-678.67 408.4,-713.37 500.38,-684 500.95,-683.82 501.52,-683.63 502.09,-683.44"/>
 <polygon fill="none" stroke="#63b8ff" points="501.97,-683.49 506.26,-677.7 513.26,-679.43 508.97,-685.23 501.97,-683.49"/>
 </a>
 </g>
@@ -253,7 +255,7 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node5&#45;&gt;Node4</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M76.38,-877.82C76.38,-860.2 76.38,-840.11 76.38,-823.9"/>
+<path fill="none" stroke="#63b8ff" d="M76.38,-877.82C76.38,-862.28 76.38,-844.81 76.38,-829.79"/>
 <polygon fill="none" stroke="#63b8ff" points="72.88,-877.74 76.38,-887.74 79.88,-877.74 72.88,-877.74"/>
 </a>
 </g>

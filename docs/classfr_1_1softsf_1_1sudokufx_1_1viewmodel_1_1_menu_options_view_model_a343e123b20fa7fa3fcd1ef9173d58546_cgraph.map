@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistBackgroundImage" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistBackgroundImage">
 <area shape="rect" id="Node000001" title="Applies a background image to the specified GridPane and persists its path in the current player&#39;s op..." alt="" coords="5,5,267,64"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a2db1481483f8867924e414d2a375cd30" title="Persists the given image path in the current player&#39;s OptionsDto and refreshes the player." alt="" coords="315,13,583,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#add42eac8d6831cc853249da660b34e14" title="Persists the given image path in the current player&#39;s OptionsDto if it differs from the existing path..." alt="" coords="315,13,583,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,32,299,32,299,37,267,37"/>
 </map>

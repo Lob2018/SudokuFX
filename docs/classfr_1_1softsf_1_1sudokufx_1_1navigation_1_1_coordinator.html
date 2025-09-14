@@ -101,6 +101,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordi
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pac-methods">Package Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator-members.html">List of all members</a>  </div>
@@ -123,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa63a8ea1cf99200dbee0e27a3ce78060" id="r_aa63a8ea1cf99200dbee0e27a3ce78060"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa63a8ea1cf99200dbee0e27a3ce78060">Coordinator</a> (FXMLLoader <a class="el" href="#abcaae859838b7d23fb19c4cded75d16a">fxmlLoader</a>)</td></tr>
 <tr class="memdesc:aa63a8ea1cf99200dbee0e27a3ce78060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring-managed component handling navigation and UI logic in a JavaFX application fo...">Coordinator</a> with the given non-null FXMLLoader.  <br /></td></tr>
 <tr class="separator:aa63a8ea1cf99200dbee0e27a3ce78060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808e570a3279653f27ac99618f7ae175" id="r_a808e570a3279653f27ac99618f7ae175"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a808e570a3279653f27ac99618f7ae175">getCurrentPlayerLanguageIso</a> ()</td></tr>
+<tr class="memdesc:a808e570a3279653f27ac99618f7ae175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ISO code of the current player's language.  <br /></td></tr>
+<tr class="separator:a808e570a3279653f27ac99618f7ae175"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8236a3100b3540f3c96b6b3db3042b30" id="r_a8236a3100b3540f3c96b6b3db3042b30"><td class="memItemLeft" align="right" valign="top">Scene&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8236a3100b3540f3c96b6b3db3042b30">getDefaultScene</a> ()</td></tr>
 <tr class="memdesc:a8236a3100b3540f3c96b6b3db3042b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the JavaFX default scene managed by this coordinator.  <br /></td></tr>
 <tr class="separator:a8236a3100b3540f3c96b6b3db3042b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,9 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a84cabb06e38efe9e6b2ed6a0e8b151fb" id="r_a84cabb06e38efe9e6b2ed6a0e8b151fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84cabb06e38efe9e6b2ed6a0e8b151fb">setHostServices</a> (HostServices <a class="el" href="#ae432bd7392bf7c1570a8b46f5c2a6141">hostServices</a>)</td></tr>
 <tr class="memdesc:a84cabb06e38efe9e6b2ed6a0e8b151fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Injects the non-null <code><a class="el" href="">HostServices</a></code> instance provided by the JavaFX application.  <br /></td></tr>
 <tr class="separator:a84cabb06e38efe9e6b2ed6a0e8b151fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f2ba8f85685181dea0c4a2263a61dc" id="r_a67f2ba8f85685181dea0c4a2263a61dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67f2ba8f85685181dea0c4a2263a61dc">toggleLanguage</a> ()</td></tr>
-<tr class="memdesc:a67f2ba8f85685181dea0c4a2263a61dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches the application language between French and English.  <br /></td></tr>
-<tr class="separator:a67f2ba8f85685181dea0c4a2263a61dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80498d5645b3cf8adb43f0572a0879db" id="r_a80498d5645b3cf8adb43f0572a0879db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80498d5645b3cf8adb43f0572a0879db">toggleLanguage</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster)</td></tr>
+<tr class="memdesc:a80498d5645b3cf8adb43f0572a0879db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the application's language between French ("FR") and English ("EN").  <br /></td></tr>
+<tr class="separator:a80498d5645b3cf8adb43f0572a0879db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -152,9 +156,24 @@ Package Functions</h2></td></tr>
 <tr class="memitem:a64e23a6257dc42929da8e6ee620fdca7" id="r_a64e23a6257dc42929da8e6ee620fdca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64e23a6257dc42929da8e6ee620fdca7">exitPlatform</a> ()</td></tr>
 <tr class="memdesc:a64e23a6257dc42929da8e6ee620fdca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Package-private method to exit the JavaFX platform.  <br /></td></tr>
 <tr class="separator:a64e23a6257dc42929da8e6ee620fdca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a720d4ef56ef50f3adc51463d4d258" id="r_a70a720d4ef56ef50f3adc51463d4d258"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70a720d4ef56ef50f3adc51463d4d258">setPlayerLanguageService</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html">PlayerLanguageService</a> service)</td></tr>
+<tr class="memdesc:a70a720d4ef56ef50f3adc51463d4d258"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing only: injects a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html">PlayerLanguageService</a></code>.  <br /></td></tr>
+<tr class="separator:a70a720d4ef56ef50f3adc51463d4d258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c50e5dbc03930b5cf409356fd95e123" id="r_a5c50e5dbc03930b5cf409356fd95e123"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c50e5dbc03930b5cf409356fd95e123">setPlayerService</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a> <a class="el" href="#a6f8cb9c6e67d3025ebc72d234d865b33">playerService</a>)</td></tr>
+<tr class="memdesc:a5c50e5dbc03930b5cf409356fd95e123"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing only: injects a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a></code>.  <br /></td></tr>
+<tr class="separator:a5c50e5dbc03930b5cf409356fd95e123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f5d854f1b21d991fdfce74daf49d4f" id="r_ae4f5d854f1b21d991fdfce74daf49d4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4f5d854f1b21d991fdfce74daf49d4f">setPlayerStateHolder</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> holder)</td></tr>
+<tr class="memdesc:ae4f5d854f1b21d991fdfce74daf49d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing only: injects a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a></code>.  <br /></td></tr>
+<tr class="separator:ae4f5d854f1b21d991fdfce74daf49d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76beb2414cb9e9e68181f08fd930f0b9" id="r_a76beb2414cb9e9e68181f08fd930f0b9"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76beb2414cb9e9e68181f08fd930f0b9">setRootByFXMLName</a> (final String fxml)</td></tr>
 <tr class="memdesc:a76beb2414cb9e9e68181f08fd930f0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified FXML (without extension), sets it as the scene root, and returns its controller.  <br /></td></tr>
 <tr class="separator:a76beb2414cb9e9e68181f08fd930f0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aff34e77864185144dffd978d6ee2cdd4" id="r_aff34e77864185144dffd978d6ee2cdd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff34e77864185144dffd978d6ee2cdd4">updatePlayerLanguage</a> (String iso)</td></tr>
+<tr class="memdesc:aff34e77864185144dffd978d6ee2cdd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current player's language and refreshes the player state.  <br /></td></tr>
+<tr class="separator:aff34e77864185144dffd978d6ee2cdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -170,6 +189,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae432bd7392bf7c1570a8b46f5c2a6141" id="r_ae432bd7392bf7c1570a8b46f5c2a6141"><td class="memItemLeft" align="right" valign="top">HostServices&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae432bd7392bf7c1570a8b46f5c2a6141">hostServices</a></td></tr>
 <tr class="memdesc:ae432bd7392bf7c1570a8b46f5c2a6141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides access to system-level features like opening URLs in a browser.  <br /></td></tr>
 <tr class="separator:ae432bd7392bf7c1570a8b46f5c2a6141"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10e20022584c70e008a0b1f5b0d5188f" id="r_a10e20022584c70e008a0b1f5b0d5188f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html">PlayerLanguageService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10e20022584c70e008a0b1f5b0d5188f">playerLanguageService</a></td></tr>
+<tr class="separator:a10e20022584c70e008a0b1f5b0d5188f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f8cb9c6e67d3025ebc72d234d865b33" id="r_a6f8cb9c6e67d3025ebc72d234d865b33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f8cb9c6e67d3025ebc72d234d865b33">playerService</a></td></tr>
+<tr class="separator:a6f8cb9c6e67d3025ebc72d234d865b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a09312942b9b4ecd038a33eb86851a8" id="r_a8a09312942b9b4ecd038a33eb86851a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a09312942b9b4ecd038a33eb86851a8">playerStateHolder</a></td></tr>
+<tr class="separator:a8a09312942b9b4ecd038a33eb86851a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -237,6 +262,27 @@ Static Private Attributes</h2></td></tr>
 
 <p>Package-private method to exit the JavaFX platform. </p>
 <p>Overridable in tests to avoid actual exit and allow exception handling verification. </p>
+
+</div>
+</div>
+<a id="a808e570a3279653f27ac99618f7ae175" name="a808e570a3279653f27ac99618f7ae175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a808e570a3279653f27ac99618f7ae175">&#9670;&#160;</a></span>getCurrentPlayerLanguageIso()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String fr.softsf.sudokufx.navigation.Coordinator.getCurrentPlayerLanguageIso </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the ISO code of the current player's language. </p>
+<p>Use this value to initialize the application's locale at startup.</p>
+<dl class="section return"><dt>Returns</dt><dd>the current player's language ISO code, e.g., "FR" or "EN" </dd></dl>
 
 </div>
 </div>
@@ -372,6 +418,87 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a70a720d4ef56ef50f3adc51463d4d258" name="a70a720d4ef56ef50f3adc51463d4d258"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a720d4ef56ef50f3adc51463d4d258">&#9670;&#160;</a></span>setPlayerLanguageService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.navigation.Coordinator.setPlayerLanguageService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html">PlayerLanguageService</a></td>          <td class="paramname"><span class="paramname"><em>service</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For testing only: injects a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html">PlayerLanguageService</a></code>. </p>
+
+</div>
+</div>
+<a id="a5c50e5dbc03930b5cf409356fd95e123" name="a5c50e5dbc03930b5cf409356fd95e123"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c50e5dbc03930b5cf409356fd95e123">&#9670;&#160;</a></span>setPlayerService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.navigation.Coordinator.setPlayerService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a></td>          <td class="paramname"><span class="paramname"><em>playerService</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For testing only: injects a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a></code>. </p>
+
+</div>
+</div>
+<a id="ae4f5d854f1b21d991fdfce74daf49d4f" name="ae4f5d854f1b21d991fdfce74daf49d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f5d854f1b21d991fdfce74daf49d4f">&#9670;&#160;</a></span>setPlayerStateHolder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.navigation.Coordinator.setPlayerStateHolder </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a></td>          <td class="paramname"><span class="paramname"><em>holder</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For testing only: injects a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a></code>. </p>
+
+</div>
+</div>
 <a id="a76beb2414cb9e9e68181f08fd930f0b9" name="a76beb2414cb9e9e68181f08fd930f0b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76beb2414cb9e9e68181f08fd930f0b9">&#9670;&#160;</a></span>setRootByFXMLName()</h2>
 
@@ -422,8 +549,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a67f2ba8f85685181dea0c4a2263a61dc" name="a67f2ba8f85685181dea0c4a2263a61dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67f2ba8f85685181dea0c4a2263a61dc">&#9670;&#160;</a></span>toggleLanguage()</h2>
+<a id="a80498d5645b3cf8adb43f0572a0879db" name="a80498d5645b3cf8adb43f0572a0879db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80498d5645b3cf8adb43f0572a0879db">&#9670;&#160;</a></span>toggleLanguage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -431,14 +558,74 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void fr.softsf.sudokufx.navigation.Coordinator.toggleLanguage </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></td>          <td class="paramname"><span class="paramname"><em>toaster</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Switches the application language between French and English. </p>
-<p>Note: ViewModels must be notified manually to refresh bound properties. </p>
+<p>Toggles the application's language between French ("FR") and English ("EN"). </p>
+<p>Updates the current player's language, refreshes the player state, and switches the translation bundle. Exceptions from updating the player are caught, logged, and displayed as a toast via the provided <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">toaster</td><td>the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code> used to display error messages; must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">toaster</code> is null </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_a80498d5645b3cf8adb43f0572a0879db_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="aff34e77864185144dffd978d6ee2cdd4" name="aff34e77864185144dffd978d6ee2cdd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff34e77864185144dffd978d6ee2cdd4">&#9670;&#160;</a></span>updatePlayerLanguage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.navigation.Coordinator.updatePlayerLanguage </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>iso</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the current player's language and refreshes the player state. </p>
+<p>Called internally by <code><a class="el" href="#a80498d5645b3cf8adb43f0572a0879db">toggleLanguage(ToasterVBox)</a></code>. May throw exceptions if the language does not exist or the player update fails.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iso</td><td>the ISO code of the target language ("FR" or "EN") </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if the language is not found </td></tr>
+    <tr><td class="paramname">RuntimeException</td><td>if updating the player fails </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -583,6 +770,72 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a10e20022584c70e008a0b1f5b0d5188f" name="a10e20022584c70e008a0b1f5b0d5188f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10e20022584c70e008a0b1f5b0d5188f">&#9670;&#160;</a></span>playerLanguageService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html">PlayerLanguageService</a> fr.softsf.sudokufx.navigation.Coordinator.playerLanguageService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f8cb9c6e67d3025ebc72d234d865b33" name="a6f8cb9c6e67d3025ebc72d234d865b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f8cb9c6e67d3025ebc72d234d865b33">&#9670;&#160;</a></span>playerService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a> fr.softsf.sudokufx.navigation.Coordinator.playerService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8a09312942b9b4ecd038a33eb86851a8" name="a8a09312942b9b4ecd038a33eb86851a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a09312942b9b4ecd038a33eb86851a8">&#9670;&#160;</a></span>playerStateHolder</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> fr.softsf.sudokufx.navigation.Coordinator.playerStateHolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/main/java/fr/softsf/sudokufx/navigation/<a class="el" href="_coordinator_8java.html">Coordinator.java</a></li>
 </ul>
@@ -592,7 +845,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html">navigation</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html">Coordinator</a></li>
-    <li class="footer">Generated on Sat Sep 13 2025 16:14:46 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Sep 14 2025 11:28:26 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

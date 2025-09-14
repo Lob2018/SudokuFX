@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.dto.PlayerDto" name="fr.softsf.sudokufx.dto.PlayerDto">
 <area shape="rect" id="Node000001" title="Data Transfer Object representing a player." alt="" coords="5,131,213,157"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="66,132,58,122,63,112,81,106,109,104,140,107,156,113,154,118,139,112,109,109,82,111,67,116,63,121,70,128"/>
 <area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5404f1271af2d911d29e8ce03acbc501" title="Data Transfer Object representing a game entity." alt="" coords="266,43,471,69"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,128,194,103,260,79,286,71,287,76,262,84,196,108,141,133"/>
 <area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" title="Data Transfer Object representing a menu entity." alt="" coords="267,93,470,120"/>
@@ -7,7 +8,7 @@
 <area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af3351529e3efa22019c4fe7fcd841d3f" title="Data Transfer Object representing an Options entity." alt="" coords="261,168,476,195"/>
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="207,155,256,163,255,168,206,161"/>
 <area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565" title="Data Transfer Object representing a player&#39;s language." alt="" coords="275,219,462,261"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="142,155,262,204,281,211,279,216,260,209,140,160"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="142,155,262,204,281,211,279,216,260,209,140,160"/>
 <area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa" title="Data Transfer Object representing a game level entity." alt="" coords="529,5,713,48"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="471,41,513,36,514,42,472,47"/>
 <area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a" title="Data Transfer Object representing a grid entity." alt="" coords="524,72,718,99"/>

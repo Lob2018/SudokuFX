@@ -110,12 +110,13 @@ var annotated_dup =
             [ "GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
             [ "MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],
             [ "OptionsRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html", null ],
-            [ "PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", null ],
+            [ "PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository" ],
             [ "PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository" ]
           ] ],
           [ "service", null, [
             [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", [
               [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service" ],
+              [ "PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service" ],
               [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service" ]
             ] ],
             [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1external.html", [

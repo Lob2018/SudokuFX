@@ -1367,7 +1367,15 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 </div><div class="memdoc">
 
 <p>Initializes the main view. </p>
-<p>This method is automatically called by JavaFX after loading the FXML. </p>
+<p>This method is automatically called by JavaFX after loading the FXML. It performs the following actions:</p>
+<ul>
+<li>
+Sets the application's locale based on the current player's language. </li>
+<li>
+Initializes audio management, menu timelines, and menu components. </li>
+<li>
+Initializes the grid and active menu manager. </li>
+</ul>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
@@ -4322,7 +4330,7 @@ Loads and applies saved configuration settings to the UI controls, including bac
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1main.html">main</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html">MainView</a></li>
-    <li class="footer">Generated on Sat Sep 13 2025 16:14:47 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Sep 14 2025 11:28:26 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

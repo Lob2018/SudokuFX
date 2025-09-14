@@ -1,0 +1,17 @@
+<map id="fr.softsf.sudokufx.navigation.Coordinator.toggleLanguage" name="fr.softsf.sudokufx.navigation.Coordinator.toggleLanguage">
+<area shape="rect" id="Node000001" title="Toggles the application&#39;s language between French (&quot;FR&quot;) and English (&quot;EN&quot;)." alt="" coords="5,105,196,148"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="244,72,513,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="196,113,228,109,229,114,196,118"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aff34e77864185144dffd978d6ee2cdd4" title="Updates the current player&#39;s language and refreshes the player state." alt="" coords="266,139,490,181"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="196,135,251,142,251,147,196,141"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a7df4872b0cf0eeb5cd3a04ce7ccb0fef" title="Sets the accessibility text for the toast based on its level." alt="" coords="561,5,830,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,69,575,49,577,54,484,74"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a1f7607f18913c940c16c9de28f3e7ae7" title="Sets the style of the toast based on its level." alt="" coords="561,72,830,115"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="514,91,546,91,546,96,514,96"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#abd2310564b394c59530d5e7b2a0d0776" title="Sets a timer to automatically remove the toast after a specified duration." alt="" coords="561,139,830,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="484,113,577,132,575,138,483,118"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a67957eac2367e7b8018ef0d2ce354bef" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="878,5,1148,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="831,24,863,24,863,29,831,29"/>
+<area shape="rect" id="Node000006" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a43cd66f6e8b04c4873f35e51fd57a36d" title=" " alt="" coords="901,72,1125,115"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="831,91,885,91,885,96,831,96"/>
+</map>

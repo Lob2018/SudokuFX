@@ -12,9 +12,9 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="229,-95 0,-95 0,-63 229,-63 229,-95"/>
-<text text-anchor="start" x="8" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="middle" x="114.5" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest.setupPlayerStateHolder</text>
+<polygon fill="#999999" stroke="#666666" points="229,-104 0,-104 0,-72 229,-72 229,-104"/>
+<text text-anchor="start" x="8" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="middle" x="114.5" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest.setupPlayerStateHolder</text>
 </a>
 </g>
 </g>
@@ -22,9 +22,9 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html#a1f4cdec20af5483c290c594c37b86f97" target="_top" xlink:title="Factory method to create the default PlayerDto.">
-<polygon fill="white" stroke="#666666" points="476.75,-95 265,-95 265,-63 476.75,-63 476.75,-95"/>
-<text text-anchor="start" x="273" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="middle" x="370.88" y="-69.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest.createDefaultPlayer</text>
+<polygon fill="white" stroke="#666666" points="476.75,-104 265,-104 265,-72 476.75,-72 476.75,-104"/>
+<text text-anchor="start" x="273" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="middle" x="370.88" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest.createDefaultPlayer</text>
 </a>
 </g>
 </g>
@@ -32,8 +32,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M229.3,-79C237.3,-79 245.37,-79 253.39,-79"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="253.16,-82.5 263.16,-79 253.16,-75.5 253.16,-82.5"/>
+<path fill="none" stroke="#63b8ff" d="M229.3,-88C237.3,-88 245.37,-88 253.39,-88"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="253.16,-91.5 263.16,-88 253.16,-84.5 253.16,-91.5"/>
 </a>
 </g>
 </g>
@@ -50,8 +50,8 @@
 <g id="edge2_Node000002_Node000003" class="edge">
 <title>Node2&#45;&gt;Node3</title>
 <g id="a_edge2_Node000002_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M462.32,-95.46C538.52,-109.33 645.91,-128.87 715.24,-141.49"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="714.5,-144.91 724.97,-143.26 715.75,-138.02 714.5,-144.91"/>
+<path fill="none" stroke="#63b8ff" d="M467.32,-104.46C482.51,-107.02 498.06,-109.61 512.75,-112 576.75,-122.41 649.35,-133.62 703.32,-141.84"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="702.64,-145.27 713.05,-143.31 703.69,-138.35 702.64,-145.27"/>
 </a>
 </g>
 </g>
@@ -68,8 +68,8 @@
 <g id="edge3_Node000002_Node000004" class="edge">
 <title>Node2&#45;&gt;Node4</title>
 <g id="a_edge3_Node000002_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M477.2,-83.86C543.8,-86.93 629.01,-90.85 692.72,-93.79"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="692.29,-97.28 702.44,-94.24 692.61,-90.28 692.29,-97.28"/>
+<path fill="none" stroke="#63b8ff" d="M477.23,-95.42C489.2,-96.06 501.24,-96.61 512.75,-97 572.6,-99.02 639.93,-99.28 692.53,-99.03"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="692.37,-102.53 702.35,-98.98 692.33,-95.53 692.37,-102.53"/>
 </a>
 </g>
 </g>
@@ -86,8 +86,8 @@
 <g id="edge5_Node000002_Node000005" class="edge">
 <title>Node2&#45;&gt;Node5</title>
 <g id="a_edge5_Node000002_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M477.18,-69.81C485.13,-69.11 493.1,-68.42 500.92,-67.73"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="501.1,-71.23 510.76,-66.87 500.49,-64.26 501.1,-71.23"/>
+<path fill="none" stroke="#63b8ff" d="M477.18,-74.45C485.13,-73.43 493.1,-72.4 500.92,-71.4"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="501.29,-74.88 510.76,-70.13 500.4,-67.94 501.29,-74.88"/>
 </a>
 </g>
 </g>
@@ -102,11 +102,11 @@
 </g>
 </g>
 <!-- Node2&#45;&gt;Node9 -->
-<g id="edge12_Node000002_Node000009" class="edge">
+<g id="edge13_Node000002_Node000009" class="edge">
 <title>Node2&#45;&gt;Node9</title>
-<g id="a_edge12_Node000002_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M424.24,-62.58C450.55,-54.91 483.08,-46.33 512.75,-41 576.3,-29.59 649.23,-23.24 703.44,-19.8"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="703.44,-23.3 713.21,-19.2 703.01,-16.31 703.44,-23.3"/>
+<g id="a_edge13_Node000002_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M412.79,-71.56C440.54,-61.11 478.31,-48.23 512.75,-41 576.05,-27.71 649.14,-21.48 703.49,-18.57"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="703.47,-22.07 713.28,-18.07 703.11,-15.08 703.47,-22.07"/>
 </a>
 </g>
 </g>
@@ -137,6 +137,15 @@
 </a>
 </g>
 </g>
+<!-- Node5&#45;&gt;Node5 -->
+<g id="edge11_Node000005_Node000005" class="edge">
+<title>Node5&#45;&gt;Node5</title>
+<g id="a_edge11_Node000005_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M559.6,-70.34C546.39,-78.98 556.69,-88 590.5,-88 609.52,-88 621.1,-85.14 625.24,-81.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="628.56,-80.01 621.91,-71.76 621.97,-82.36 628.56,-80.01"/>
+</a>
+</g>
+</g>
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
@@ -156,9 +165,9 @@
 </g>
 </g>
 <!-- Node5&#45;&gt;Node9 -->
-<g id="edge11_Node000005_Node000009" class="edge">
+<g id="edge12_Node000005_Node000009" class="edge">
 <title>Node5&#45;&gt;Node9</title>
-<g id="a_edge11_Node000005_Node000009"><a xlink:title=" ">
+<g id="a_edge12_Node000005_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M637.12,-49.57C657.09,-45.01 681.12,-39.51 703.91,-34.31"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="704.53,-37.75 713.5,-32.11 702.97,-30.93 704.53,-37.75"/>
 </a>

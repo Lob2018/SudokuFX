@@ -59,7 +59,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "optionsSongTooltipProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a01380caf59b1135d5a7e05ad500cb991", null ],
     [ "optionsTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a8d59d35f06ab5ebf9833a140ef0c32a0", null ],
     [ "optionsTooltipProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a2582c58765253be7838375ba8895471a", null ],
-    [ "persistImagePath", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a2db1481483f8867924e414d2a375cd30", null ],
+    [ "persistImagePath", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#add42eac8d6831cc853249da660b34e14", null ],
     [ "persistSongPath", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ae7dd86e7d7c9a04f00bbc8bffe97843b", null ],
     [ "resetSongPath", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a053a37df40819f189c10a076302ec47c", null ],
     [ "saveSong", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ad2431f22d487e230013fec9a9ff6fc20", null ],

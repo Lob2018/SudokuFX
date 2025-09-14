@@ -211,14 +211,16 @@ var sectionId = 'dynsection-1';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" target="_top" xlink:title="Repository interface for PlayerLanguage entities.">
-<polygon fill="white" stroke="none" points="287.5,-696 155,-696 155,-632 287.5,-632 287.5,-696"/>
-<text text-anchor="start" x="159" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
-<text text-anchor="start" x="162.75" y="-670.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
-<text text-anchor="start" x="219.75" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="219.75" y="-638.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="155,-666 155,-666 287.5,-666 287.5,-666 155,-666"/>
-<polygon fill="#666666" stroke="#666666" points="155,-650 155,-650 287.5,-650 287.5,-650 155,-650"/>
-<polygon fill="none" stroke="#666666" points="155,-632 155,-696 287.5,-696 287.5,-632 155,-632"/>
+<polygon fill="white" stroke="none" points="287.62,-702 154.88,-702 154.88,-626 287.62,-626 287.62,-702"/>
+<text text-anchor="start" x="159" y="-688.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
+<text text-anchor="start" x="162.75" y="-676.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
+<text text-anchor="start" x="219.75" y="-660.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="158.88" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="168.88" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">Optional&lt; PlayerLanguage</text>
+<text text-anchor="start" x="168.88" y="-632.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; findByIso(String iso)</text>
+<polygon fill="#666666" stroke="#666666" points="154.88,-672 154.88,-672 287.62,-672 287.62,-672 154.88,-672"/>
+<polygon fill="#666666" stroke="#666666" points="154.88,-656 154.88,-656 287.62,-656 287.62,-656 154.88,-656"/>
+<polygon fill="none" stroke="#666666" points="154.88,-626 154.88,-702 287.62,-702 287.62,-626 154.88,-626"/>
 </a>
 </g>
 </g>
@@ -226,7 +228,7 @@ var sectionId = 'dynsection-1';
 <g id="edge4_Node000002_Node000005" class="edge">
 <title>Node5&#45;&gt;Node2</title>
 <g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M233.67,-632.28C242.29,-613.76 255.2,-590.61 271.75,-574 283.68,-562.03 297.32,-551 311.62,-540.98"/>
+<path fill="none" stroke="#63b8ff" d="M236.55,-626.24C245.07,-608.92 256.95,-588.85 271.75,-574 283.68,-562.03 297.32,-551 311.62,-540.98"/>
 <polygon fill="none" stroke="#63b8ff" points="311.44,-541.1 314.17,-534.42 321.38,-534.37 318.66,-541.05 311.44,-541.1"/>
 </a>
 </g>
@@ -251,7 +253,7 @@ var sectionId = 'dynsection-1';
 <g id="edge5_Node000005_Node000006" class="edge">
 <title>Node6&#45;&gt;Node5</title>
 <g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M220.58,-749.82C220.72,-732.2 220.88,-712.11 221.01,-695.9"/>
+<path fill="none" stroke="#63b8ff" d="M220.58,-749.82C220.7,-734.28 220.84,-716.81 220.96,-701.79"/>
 <polygon fill="none" stroke="#63b8ff" points="217.08,-749.72 220.5,-759.74 224.08,-749.77 217.08,-749.72"/>
 </a>
 </g>
