@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.viewmodel.grid;
 
 import java.io.File;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -88,13 +89,18 @@ public class GridViewModel {
                         .textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
-                                    // TODO only called for tests
+                                    // TODO to remove in production (only for tests)
                                     verifyGrid();
                                     if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
-                                                    != ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE
-                                            && isCompletelyCompleted()) {
-                                        verifyGrid();
+                                            != ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE) {
+                                        // TODO save current grid to database
+                                        if (isCompletelyCompleted()) {
+                                            verifyGrid();
+                                        } else {
+                                            audioService.stopSong();
+                                        }
                                     } else {
+                                        // TODO solve submenu
                                         audioService.stopSong();
                                     }
                                 });
@@ -126,48 +132,69 @@ public class GridViewModel {
     }
 
     /**
-     * Verifies the current grid state by attempting to solve it. Converts cell values to integer
-     * array, calls the grid solver, and outputs solution status and completion percentage.
+     * Verifies the current grid state by attempting to solve it. Converts cell values to an integer
+     * array, calls the grid solver, and outputs solution status and completion percentage. If the
+     * grid is completely solved, triggers victory actions.
      */
     private void verifyGrid() {
-        int[] grilleInt =
-                getAllValues().stream()
-                        .mapToInt(
-                                val ->
-                                        StringUtils.isNotBlank(val)
-                                                        && val.length() == 1
-                                                        && Character.isDigit(val.charAt(0))
-                                                ? Integer.parseInt(val)
-                                                : 0)
-                        .toArray();
+        int[] grilleInt = getAllValues().stream().mapToInt(this::parseCellValue).toArray();
         GrilleResolue grilleResolue = iGridMaster.resoudreLaGrille(grilleInt);
         boolean solved = grilleResolue.solved();
         int[] solvedGrid = grilleResolue.solvedGrid();
         int percentage = grilleResolue.possibilityPercentage();
         System.out.println("\n\nsolvedGrid:" + Arrays.toString(solvedGrid));
-        System.out.println("Solved : " + solved + "\nPourcentage : " + percentage + "%\n\n");
-        // TODO Win !
+        System.out.println("Solved : " + solved + "\nPercentage : " + percentage + "%\n\n");
         if (solved && Arrays.equals(grilleInt, solvedGrid) && isCompletelyCompleted()) {
-            try {
-                String path = playerStateHolder.getCurrentPlayer().optionsidDto().songpath();
-                if (StringUtils.isNotEmpty(path)) {
-                    File file = new File(path);
-                    if (file.exists()) {
-                        audioService.playSong(file);
-                    } else {
-                        throw new IllegalStateException(
-                                "Audio file not found or inaccessible: " + path);
-                    }
+            celebrateVictory();
+        }
+    }
+
+    /**
+     * Converts a cell's string value to an integer. Returns 0 for empty or invalid values.
+     *
+     * @param value the cell value as a string
+     * @return the parsed integer, or 0 if blank/invalid
+     */
+    private int parseCellValue(String value) {
+        if (StringUtils.isNotBlank(value)
+                && value.length() == 1
+                && Character.isDigit(value.charAt(0))) {
+            return Integer.parseInt(value);
+        }
+        return 0;
+    }
+
+    /**
+     * Handles all actions when a grid is successfully completed. Displays a victory toast to the
+     * player and optionally plays their configured victory audio.
+     */
+    private void celebrateVictory() {
+        toaster.addToast(
+                MessageFormat.format(
+                        I18n.INSTANCE.getValue("toast.msg.gridviewmodel.completed"),
+                        playerStateHolder.getCurrentPlayer().name()),
+                "",
+                ToastLevels.INFO,
+                false);
+        try {
+            String path = playerStateHolder.getCurrentPlayer().optionsidDto().songpath();
+            if (StringUtils.isNotEmpty(path)) {
+                File file = new File(path);
+                if (file.exists()) {
+                    audioService.playSong(file);
+                } else {
+                    throw new IllegalStateException(
+                            "Audio file not found or inaccessible: " + path);
                 }
-            } catch (ResourceLoadException | IllegalStateException e) {
-                String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
-                LOG.error("██ Exception - {}: {}", title, e.getMessage(), e);
-                toaster.addToast(
-                        title,
-                        e.getClass().getSimpleName() + ": " + Objects.toString(e.getMessage(), ""),
-                        ToastLevels.ERROR,
-                        true);
             }
+        } catch (ResourceLoadException | IllegalStateException e) {
+            String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
+            LOG.error("██ Exception - {}: {}", title, e.getMessage(), e);
+            toaster.addToast(
+                    title,
+                    e.getClass().getSimpleName() + ": " + Objects.toString(e.getMessage(), ""),
+                    ToastLevels.ERROR,
+                    true);
         }
     }
 
