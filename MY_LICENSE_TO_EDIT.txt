@@ -45,3 +45,18 @@ Modifications made: Lob2018 - Code based on the original MicrosoftEdge/Sudoku re
 Original repository: [MicrosoftEdge/Sudoku](https://github.com/MicrosoftEdge/Sudoku/tree/master)
 
 ---
+
+## Oracle Technology Network License Agreement
+
+* JavaFX Fireworks Sample
+Copyright (c) 2008, 2012 Oracle and/or its affiliates.
+All rights reserved. Use is subject to license terms.
+This product includes code based on Oracle's JavaFX Ensemble 8 "FireworksSample" demonstration.
+Original source: https://www.oracle.com/java/technologies/javafx-samples.html
+Usage under Oracle Technology Network License Agreement for Oracle Java SE.
+The original code has been adapted and modified for integration into this project.
+
+Modifications made: Lob2018 - Code based on and adapted from Oracle's JavaFX Fireworks sample,
+modified for animated celebration fireworks displayed upon successful Sudoku puzzle completion in 2025.
+
+---
