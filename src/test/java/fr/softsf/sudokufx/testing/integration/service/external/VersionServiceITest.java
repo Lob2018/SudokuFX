@@ -137,7 +137,9 @@ class VersionServiceITest {
                         .list
                         .getFirst()
                         .getFormattedMessage()
-                        .contains("██ GitHub API returned non 200 status code: " + httpStatusCode));
+                        .contains(
+                                "██ Exception GitHub API returned non 200 status code: "
+                                        + httpStatusCode));
     }
 
     @Test
@@ -267,6 +269,6 @@ class VersionServiceITest {
                         .list
                         .getFirst()
                         .getFormattedMessage()
-                        .contains("██ Error parsing GitHub API response:"));
+                        .contains("██ Exception error parsing GitHub API response:"));
     }
 }

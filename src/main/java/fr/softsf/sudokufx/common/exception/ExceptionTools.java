@@ -81,11 +81,11 @@ public enum ExceptionTools {
         String safeMessage =
                 StringUtils.isBlank(message) ? "Resource load failed with no message" : message;
         if (Objects.isNull(cause)) {
-            LOG.error("Failed to load resource: {}. Cause: null", safeMessage);
+            LOG.error("██ Exception Failed to load resource: {}. Cause: null", safeMessage);
             return new ResourceLoadException(safeMessage, null);
         } else {
             LOG.error(
-                    "Failed to load resource: {}. Cause: {}",
+                    "██ Exception Failed to load resource: {}. Cause: {}",
                     safeMessage,
                     cause.getMessage(),
                     cause);

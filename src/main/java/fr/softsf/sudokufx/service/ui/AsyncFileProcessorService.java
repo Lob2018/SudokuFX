@@ -95,7 +95,7 @@ public class AsyncFileProcessorService {
     private void handleError(Throwable ex, ToasterVBox toaster, Consumer<Runnable> finishTask) {
         finishTask.accept(
                 () -> {
-                    LOG.error("Async task failed: {}", ex.getMessage(), ex);
+                    LOG.error("██ Exception Async task failed: {}", ex.getMessage(), ex);
                     toaster.addToast(
                             I18n.INSTANCE.getValue("toast.error.optionsviewmodel.ontaskerror"),
                             Objects.toString(ex.getMessage(), ""),

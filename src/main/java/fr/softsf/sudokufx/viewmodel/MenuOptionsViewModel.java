@@ -803,7 +803,7 @@ public class MenuOptionsViewModel {
             playerStateHolder.refreshCurrentPlayer();
             sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
         } catch (Exception e) {
-            LOG.error("ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
+            LOG.error("██ Exception ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
             toaster.addToast(
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.colorerror"),
                     Objects.toString(e.getMessage(), ""),
@@ -838,7 +838,7 @@ public class MenuOptionsViewModel {
             persistImagePath("");
             String errorMessage =
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
-            LOG.error("HandleFileImageChooser error: {}", errorMessage);
+            LOG.error("██ Exception HandleFileImageChooser error: {}", errorMessage);
             toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
             return;
         }
@@ -883,7 +883,7 @@ public class MenuOptionsViewModel {
             optionsService.updateOptions(toSaveOptions);
             playerStateHolder.refreshCurrentPlayer();
         } catch (Exception e) {
-            LOG.error("PersistImagePath failed: {}", e.getMessage(), e);
+            LOG.error("██ Exception PersistImagePath failed: {}", e.getMessage(), e);
             String i18nKey =
                     imagePath.isEmpty()
                             ? "toast.error.optionsviewmodel.imagepathclearerror"

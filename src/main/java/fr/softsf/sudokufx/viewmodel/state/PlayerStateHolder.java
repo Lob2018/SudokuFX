@@ -75,7 +75,10 @@ public class PlayerStateHolder {
             currentPlayer.set(player);
             LOG.info("Player refreshed from database: {}", player);
         } catch (IllegalStateException e) {
-            LOG.error("Error refreshing player: {}, triggering Platform.exit()", e.getMessage(), e);
+            LOG.error(
+                    "██ Exception error refreshing player: {}, triggering Platform.exit()",
+                    e.getMessage(),
+                    e);
             exitPlatform();
         }
     }

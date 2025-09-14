@@ -65,7 +65,7 @@ public enum OsFolderInitializer {
                     LOG.info("▓▓ Folder created successfully: {}", folder.getAbsolutePath());
                 } else {
                     LOG.error(
-                            "██ Failed to create folder with mkdirs(): {}",
+                            "██ Exception failed to create folder with mkdirs(): {}",
                             folder.getAbsolutePath());
                     throw new RuntimeException(
                             "Failed to create folder with mkdirs(): {}" + folder.getAbsolutePath());
@@ -73,7 +73,7 @@ public enum OsFolderInitializer {
             }
         } catch (SecurityException e) {
             LOG.error(
-                    "██ Security error when creating needed folder: {}. █ Path: {}",
+                    "██ Exception security error when creating needed folder: {}. █ Path: {}",
                     e.getMessage(),
                     folder.getAbsolutePath(),
                     e);
@@ -81,7 +81,7 @@ public enum OsFolderInitializer {
                     "Security error when creating needed folder: " + folder.getAbsolutePath(), e);
         } catch (Exception e) {
             LOG.error(
-                    "██ Error when creating needed folder: {}. █ Path: {}",
+                    "██ Exception error when creating needed folder: {}. █ Path: {}",
                     e.getMessage(),
                     folder.getAbsolutePath(),
                     e);

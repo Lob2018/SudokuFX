@@ -64,7 +64,8 @@ public class FileChooserService {
             fileChooser.getExtensionFilters().add(getFilter(type));
             return Optional.ofNullable(fileChooser.showOpenDialog(ownerStage));
         } catch (Exception e) {
-            LOG.error("Error opening file chooser for {}: {}", type, e.getMessage(), e);
+            LOG.error(
+                    "██ Exception error opening file chooser for {}: {}", type, e.getMessage(), e);
             return Optional.empty();
         }
     }

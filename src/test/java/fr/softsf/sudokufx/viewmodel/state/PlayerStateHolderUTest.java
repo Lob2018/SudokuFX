@@ -54,7 +54,7 @@ class PlayerStateHolderUTest extends AbstractPlayerStateTest {
         doThrow(new IllegalStateException("DB down")).when(playerServiceMock).getPlayer();
         playerStateHolder.refreshCurrentPlayer();
         String lastLog = logWatcher.list.getLast().getFormattedMessage();
-        assertTrue(lastLog.contains("Error refreshing player: DB down"));
+        assertTrue(lastLog.contains("██ Exception error refreshing player: DB down"));
     }
 
     @Test

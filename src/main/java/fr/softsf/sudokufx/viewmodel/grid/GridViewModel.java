@@ -161,7 +161,7 @@ public class GridViewModel {
                 }
             } catch (ResourceLoadException | IllegalStateException e) {
                 String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
-                LOG.error("{}: {}", title, e.getMessage(), e);
+                LOG.error("██ Exception - {}: {}", title, e.getMessage(), e);
                 toaster.addToast(
                         title,
                         e.getClass().getSimpleName() + ": " + Objects.toString(e.getMessage(), ""),

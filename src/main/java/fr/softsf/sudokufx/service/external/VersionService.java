@@ -94,7 +94,7 @@ public class VersionService {
                             httpClient.send(request, HttpResponse.BodyHandlers.ofString());
                     if (response.statusCode() != HTTP_STATUS_OK) {
                         LOG.error(
-                                "██ GitHub API returned non 200 status code: {}",
+                                "██ Exception GitHub API returned non 200 status code: {}",
                                 response.statusCode());
                         updateMessage(
                                 I18n.INSTANCE.getValue("githubrepositoryversion.error.statuscode"));
@@ -115,13 +115,13 @@ public class VersionService {
                     Thread.currentThread().interrupt();
                 } catch (IOException ex) {
                     LOG.error(
-                            "██ Network error while retrieving GitHub version: {}",
+                            "██ Exception network error while retrieving GitHub version: {}",
                             ex.getMessage(),
                             ex);
                     updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.error.network"));
                 } catch (Exception ex) {
                     LOG.error(
-                            "██ Unexpected exception retrieving GitHub version: {}",
+                            "██ Exception unexpected exception retrieving GitHub version: {}",
                             ex.getMessage(),
                             ex);
                     updateMessage(
@@ -170,7 +170,7 @@ public class VersionService {
                     lastVersion);
             return true;
         } catch (Exception e) {
-            LOG.error("██ Error parsing GitHub API response: {}", e.getMessage(), e);
+            LOG.error("██ Exception error parsing GitHub API response: {}", e.getMessage(), e);
             return true;
         }
     }
