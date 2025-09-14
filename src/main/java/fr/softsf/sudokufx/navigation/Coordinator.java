@@ -18,12 +18,14 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.Paths;
+import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.service.business.PlayerLanguageService;
 import fr.softsf.sudokufx.service.business.PlayerService;
+import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
@@ -167,18 +169,45 @@ public class Coordinator {
     /**
      * Toggles the application's language between French ("FR") and English ("EN").
      *
-     * <p>If the target language differs from the current one, the player's language is updated via
-     * {@link PlayerService}, the current player is refreshed in {@link PlayerStateHolder}, and the
-     * {@link I18n} locale bundle is switched accordingly.
+     * <p>Updates the current player's language, refreshes the player state, and switches the
+     * translation bundle. Exceptions from updating the player are caught, logged, and displayed as
+     * a toast via the provided {@link ToasterVBox}.
+     *
+     * @param toaster the {@link ToasterVBox} used to display error messages; must not be null
+     * @throws NullPointerException if {@code toaster} is null
      */
-    public void toggleLanguage() {
+    public void toggleLanguage(ToasterVBox toaster) {
+        Objects.requireNonNull(toaster, "toaster must not be null");
         String iso = I18n.INSTANCE.getLanguage().equals("fr") ? "EN" : "FR";
+        try {
+            updatePlayerLanguage(iso);
+            I18n.INSTANCE.setLocaleBundle(iso);
+        } catch (Exception e) {
+            LOG.error("██ Exception ToggleLanguage failed: {}", e.getMessage(), e);
+            toaster.addToast(
+                    I18n.INSTANCE.getValue("toast.error.coordinator.toggleLanguage"),
+                    Objects.toString(e.getMessage(), ""),
+                    ToastLevels.ERROR,
+                    true);
+        }
+    }
+
+    /**
+     * Updates the current player's language and refreshes the player state.
+     *
+     * <p>Called internally by {@link #toggleLanguage(ToasterVBox)}. May throw exceptions if the
+     * language does not exist or the player update fails.
+     *
+     * @param iso the ISO code of the target language ("FR" or "EN")
+     * @throws IllegalArgumentException if the language is not found
+     * @throws RuntimeException if updating the player fails
+     */
+    private void updatePlayerLanguage(String iso) {
         PlayerLanguageDto toSaveLanguage = playerLanguageService.getByIso(iso);
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
         PlayerDto toSavePlayer = currentPlayer.withPlayerLanguage(toSaveLanguage);
         playerService.updatePlayer(toSavePlayer);
         playerStateHolder.refreshCurrentPlayer();
-        I18n.INSTANCE.setLocaleBundle(iso);
     }
 
     /** Opens the GitHub repository releases page in the user's default web browser. */

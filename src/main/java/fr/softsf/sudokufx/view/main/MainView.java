@@ -269,8 +269,8 @@ public final class MainView implements IMainView {
                                 }
                             } catch (Exception e) {
                                 LOG.error(
-                                        "██ MainView > handleMenuMiniShow exception occurred:"
-                                                + " {}",
+                                        "██ Exception MainView > handleMenuMiniShow exception"
+                                                + " occurred: {}",
                                         e.getMessage(),
                                         e);
                             }
@@ -1006,7 +1006,7 @@ public final class MainView implements IMainView {
 
     /** Switches language. */
     public void handleToggleLanguage() {
-        coordinator.toggleLanguage();
+        coordinator.toggleLanguage(toaster);
     }
 
     /** Opens GitHub releases URL via the Coordinator. */
