@@ -67,7 +67,7 @@ class HelpViewModelUTest {
         assertNotNull(sponsorButtonType, "Sponsor button should exist");
         Button sponsorButton =
                 (Button) capturedAlert.getDialogPane().lookupButton(sponsorButtonType);
-        sponsorButton.getOnAction().handle(null); // simulate button click
+        sponsorButton.getOnAction().handle(null);
         verify(mockCoordinator).openGitHubSponsorUrl();
     }
 
