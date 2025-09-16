@@ -88,11 +88,13 @@ public class HelpViewModel {
     }
 
     /**
-     * Displays the given alert and waits for user interaction.
+     * Displays the given alert and waits for user interaction. Applies the hand cursor style to sponsor
+     * button before showing.
      *
      * @param alert the alert to display
      */
-    void displayAlert(Alert alert) {
+    void displayAlert(MyAlert alert) {
+        alert.applyHandCursorToButton();
         alert.showAndWait();
     }
 }

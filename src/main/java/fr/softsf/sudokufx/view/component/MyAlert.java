@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.view.component;
 
 import java.util.Objects;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.DialogPane;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -72,5 +73,22 @@ public class MyAlert extends Alert {
                                                 SudoMain.class.getResource(
                                                         Paths.LOGO_SUDO_PNG_PATH.getPath()))
                                         .toExternalForm()));
+        applyHandCursorToButton();
+    }
+
+    /**
+     * Sets the cursor to HAND for all buttons in the alert's dialog pane. Applies to all existing
+     * buttons, including dynamically added ones.
+     */
+    public void applyHandCursorToButton() {
+        getDialogPane()
+                .getButtonTypes()
+                .forEach(
+                        bt -> {
+                            Button button = (Button) getDialogPane().lookupButton(bt);
+                            if (button != null) {
+                                button.setStyle("-fx-cursor: hand;");
+                            }
+                        });
     }
 }

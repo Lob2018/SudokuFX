@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import javafx.application.Platform;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 
@@ -69,6 +70,23 @@ class HelpViewModelUTest {
                 (Button) capturedAlert.getDialogPane().lookupButton(sponsorButtonType);
         sponsorButton.getOnAction().handle(null);
         verify(mockCoordinator).openGitHubSponsorUrl();
+    }
+
+    @Test
+    void givenMyAlert_whenApplyHandCursorToButton_thenAllButtonsHaveHandCursor(FxRobot robot) {
+        robot.interact(() -> {
+            MyAlert alert = new MyAlert(Alert.AlertType.INFORMATION);
+            ButtonType okButton = ButtonType.OK;
+            ButtonType cancelButton = ButtonType.CANCEL;
+            alert.getButtonTypes().setAll(okButton, cancelButton);
+            alert.applyHandCursorToButton();
+            Button ok = (Button) alert.getDialogPane().lookupButton(okButton);
+            Button cancel = (Button) alert.getDialogPane().lookupButton(cancelButton);
+            assertNotNull(ok);
+            assertNotNull(cancel);
+            assertEquals("-fx-cursor: hand;", ok.getStyle());
+            assertEquals("-fx-cursor: hand;", cancel.getStyle());
+        });
     }
 
     @AfterEach
