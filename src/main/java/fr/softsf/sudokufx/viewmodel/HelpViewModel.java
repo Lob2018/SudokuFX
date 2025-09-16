@@ -7,6 +7,8 @@ package fr.softsf.sudokufx.viewmodel;
 
 import java.text.MessageFormat;
 import java.time.Year;
+import java.util.Objects;
+
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar;
@@ -71,12 +73,15 @@ public class HelpViewModel {
     }
 
     /**
-     * Adds a "Become a sponsor!" button to the given alert. The button is aligned to the left and
-     * opens the GitHub Sponsor page when clicked.
+     * Adds a "Become a sponsor!" button to the given alert.
+     * <p>
+     * The button is aligned to the left and opens the GitHub Sponsor page when clicked.
      *
-     * @param informationAlert the alert to which the sponsor button will be added
+     * @param informationAlert the alert to which the sponsor button will be added; must not be null
+     * @throws NullPointerException if informationAlert is null
      */
     private void addSponsorButton(MyAlert informationAlert) {
+        Objects.requireNonNull(informationAlert, "informationAlert must not be null");
         ButtonType sponsorButtonType =
                 new ButtonType(
                         I18n.INSTANCE.getValue("menu.button.help.dialog.information.sponsor"),
@@ -88,12 +93,15 @@ public class HelpViewModel {
     }
 
     /**
-     * Displays the given alert and waits for user interaction. Applies the hand cursor style to sponsor
-     * button before showing.
+     * Displays the given alert and waits for user interaction.
+     * <p>
+     * Applies the hand cursor style to all alert buttons before showing.
      *
-     * @param alert the alert to display
+     * @param alert the alert to display; must not be null
+     * @throws NullPointerException if alert is null
      */
     void displayAlert(MyAlert alert) {
+        Objects.requireNonNull(alert, "alert must not be null");
         alert.applyHandCursorToButton();
         alert.showAndWait();
     }

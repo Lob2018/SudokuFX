@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
+import fr.softsf.sudokufx.common.enums.I18n;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -19,7 +20,6 @@ import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 
-import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 import fr.softsf.sudokufx.navigation.Coordinator;
@@ -27,6 +27,7 @@ import fr.softsf.sudokufx.view.component.MyAlert;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.verify;
@@ -46,10 +47,10 @@ class HelpViewModelUTest {
     void whenShowHelp_thenAlertIsBuilt_withCorrectTitle_andSponsorButton(FxRobot robot) {
         HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolder, mockCoordinator));
         doAnswer(
-                        invocation -> {
-                            Platform.runLater(invocation.getArgument(0, MyAlert.class)::show);
-                            return null;
-                        })
+                invocation -> {
+                    Platform.runLater(invocation.getArgument(0, MyAlert.class)::show);
+                    return null;
+                })
                 .when(spyViewModel)
                 .displayAlert(any());
         robot.interact(spyViewModel::showHelp);
@@ -87,6 +88,12 @@ class HelpViewModelUTest {
             assertEquals("-fx-cursor: hand;", ok.getStyle());
             assertEquals("-fx-cursor: hand;", cancel.getStyle());
         });
+    }
+
+    @Test
+    void givenNullAlert_whenDisplayAlert_thenThrowsNPE() {
+        HelpViewModel viewModel = new HelpViewModel(iOsFolder, mockCoordinator);
+        assertThrows(NullPointerException.class, () -> viewModel.displayAlert(null));
     }
 
     @AfterEach
