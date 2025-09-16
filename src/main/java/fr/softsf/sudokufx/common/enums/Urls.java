@@ -23,7 +23,8 @@ public enum Urls {
                     + REPOSITORY_OWNER.getUrl()
                     + "/"
                     + REPOSITORY_NAME.getUrl()
-                    + "/tags");
+                    + "/tags"),
+    GITHUB_SPONSOR_URL(GITHUB_URL.getUrl() + "sponsors/" + REPOSITORY_OWNER.getUrl());
 
     private final String url;
 
