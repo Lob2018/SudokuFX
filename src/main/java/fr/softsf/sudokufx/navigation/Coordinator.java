@@ -200,10 +200,12 @@ public class Coordinator {
      * language does not exist or the player update fails.
      *
      * @param iso the ISO code of the target language ("FR" or "EN")
-     * @throws IllegalArgumentException if the language is not found
+     * @throws IllegalArgumentException if {@code iso} is null or blank
      * @throws RuntimeException if updating the player fails
      */
     private void updatePlayerLanguage(String iso) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                iso, "iso must not be null or blank, but was " + iso);
         PlayerLanguageDto toSaveLanguage = playerLanguageService.getByIso(iso);
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
         PlayerDto toSavePlayer = currentPlayer.withPlayerLanguage(toSaveLanguage);
