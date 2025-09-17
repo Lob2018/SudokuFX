@@ -276,6 +276,10 @@ final class ApplicationKeystore implements IKeystore {
                 }
                 // TODO: remove in production
                 LOG.info(
+                        "▓▓▓▓ Keystore pass : {}",
+                        UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
+                // TODO: remove in production
+                LOG.info(
                         "▓▓▓▓ GET alias - username - password - secret : {} - {} - {}",
                         alias,
                         username,
