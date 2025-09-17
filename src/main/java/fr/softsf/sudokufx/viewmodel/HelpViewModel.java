@@ -67,28 +67,28 @@ public class HelpViewModel {
                         JVMApplicationProperties.INSTANCE.getAppOrganization(),
                         Year.now().toString(),
                         JVMApplicationProperties.INSTANCE.getAppLicense()));
-        addSponsorButton(informationAlert);
+        addWebsiteButton(informationAlert);
         displayAlert(informationAlert);
     }
 
     /**
-     * Adds a "Become a sponsor!" button to the given alert.
+     * Adds a "Visit my website" button to the given alert.
      *
-     * <p>The button is aligned to the left and opens the GitHub Sponsor page when clicked.
+     * <p>The button is aligned to the left and opens my website page when clicked.
      *
-     * @param informationAlert the alert to which the sponsor button will be added; must not be null
+     * @param informationAlert the alert to which the website button will be added; must not be null
      * @throws NullPointerException if informationAlert is null
      */
-    private void addSponsorButton(MyAlert informationAlert) {
+    private void addWebsiteButton(MyAlert informationAlert) {
         Objects.requireNonNull(informationAlert, "informationAlert must not be null");
-        ButtonType sponsorButtonType =
+        ButtonType websiteButtonType =
                 new ButtonType(
-                        I18n.INSTANCE.getValue("menu.button.help.dialog.information.sponsor"),
+                        I18n.INSTANCE.getValue("menu.button.help.dialog.information.website"),
                         ButtonBar.ButtonData.LEFT);
-        informationAlert.getButtonTypes().add(sponsorButtonType);
-        Button sponsorButton =
-                (Button) informationAlert.getDialogPane().lookupButton(sponsorButtonType);
-        sponsorButton.setOnAction(e -> coordinator.openGitHubSponsorUrl());
+        informationAlert.getButtonTypes().add(websiteButtonType);
+        Button websiteButton =
+                (Button) informationAlert.getDialogPane().lookupButton(websiteButtonType);
+        websiteButton.setOnAction(e -> coordinator.openMyWebsiteUrl());
     }
 
     /**

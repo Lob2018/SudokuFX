@@ -44,7 +44,7 @@ class HelpViewModelUTest {
     }
 
     @Test
-    void whenShowHelp_thenAlertIsBuilt_withCorrectTitle_andSponsorButton(FxRobot robot) {
+    void whenShowHelp_thenAlertIsBuilt_withCorrectTitle_andWebsiteButton(FxRobot robot) {
         HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolder, mockCoordinator));
         doAnswer(
                         invocation -> {
@@ -60,17 +60,17 @@ class HelpViewModelUTest {
         assertEquals(
                 I18n.INSTANCE.getValue("menu.button.help.dialog.information.title"),
                 capturedAlert.getTitle());
-        String sponsorText = I18n.INSTANCE.getValue("menu.button.help.dialog.information.sponsor");
-        ButtonType sponsorButtonType =
+        String websiteText = I18n.INSTANCE.getValue("menu.button.help.dialog.information.website");
+        ButtonType websiteButtonType =
                 capturedAlert.getButtonTypes().stream()
-                        .filter(bt -> sponsorText.equals(bt.getText()))
+                        .filter(bt -> websiteText.equals(bt.getText()))
                         .findFirst()
                         .orElse(null);
-        assertNotNull(sponsorButtonType, "Sponsor button should exist");
-        Button sponsorButton =
-                (Button) capturedAlert.getDialogPane().lookupButton(sponsorButtonType);
-        sponsorButton.getOnAction().handle(null);
-        verify(mockCoordinator).openGitHubSponsorUrl();
+        assertNotNull(websiteButtonType, "Website button should exist");
+        Button websiteButton =
+                (Button) capturedAlert.getDialogPane().lookupButton(websiteButtonType);
+        websiteButton.getOnAction().handle(null);
+        verify(mockCoordinator).openMyWebsiteUrl();
     }
 
     @Test

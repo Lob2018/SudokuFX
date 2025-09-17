@@ -29,7 +29,7 @@ import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
-import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_SPONSOR_URL;
+import static fr.softsf.sudokufx.common.enums.Urls.MY_WEBSITE_URL;
 
 /**
  * Coordinator is a Spring-managed component handling navigation and UI logic in a JavaFX
@@ -224,13 +224,13 @@ public class Coordinator {
         }
     }
 
-    /** Opens the GitHub Sponsor page in the user's default web browser. */
-    public void openGitHubSponsorUrl() {
+    /** Opens my website's page in the user's default web browser. */
+    public void openMyWebsiteUrl() {
         if (hostServices != null) {
-            hostServices.showDocument(GITHUB_SPONSOR_URL.getUrl());
+            hostServices.showDocument(MY_WEBSITE_URL.getUrl());
         } else {
             LOG.warn(
-                    "▓▓ openGitHubSponsorUrl hostServices not set yet: cannot open GitHub sponsor"
+                    "▓▓ openMyWebsiteUrl hostServices not set yet: cannot open my website"
                             + " URL");
         }
     }

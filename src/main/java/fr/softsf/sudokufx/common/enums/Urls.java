@@ -24,7 +24,7 @@ public enum Urls {
                     + "/"
                     + REPOSITORY_NAME.getUrl()
                     + "/tags"),
-    GITHUB_SPONSOR_URL(GITHUB_URL.getUrl() + "sponsors/" + REPOSITORY_OWNER.getUrl());
+    MY_WEBSITE_URL("https://soft64.fr");
 
     private final String url;
 

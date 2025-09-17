@@ -6,9 +6,8 @@ Dive into the world of Sudoku with a game that offers:
 - ✨ **Create profiles**: Save progress and manage personalized profiles for each player.
 - 💾 **Save anytime**: Effortlessly continue your puzzle-solving journey.
 
-Challenge your mind and enjoy hours of logical fun with SudokuFX! 🚀
+Challenge your mind and enjoy hours of logical fun with SudokuFX!
 
-[![Become a sponsor](https://img.shields.io/badge/Become_a_sponsor-%E2%9D%A4-brightgreen?style=flat&logo=github)](https://github.com/sponsors/lob2018)<br>
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)<br>
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10875/badge)](https://www.bestpractices.dev/projects/10875)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudokuFX/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudokuFX)
