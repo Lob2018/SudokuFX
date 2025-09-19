@@ -278,8 +278,8 @@ public final class MainView implements IMainView {
     }
 
     /**
-     * Adds each cell's Label and TextArea to the GridPane at positions calculated from their index
-     * in a 9x9 grid, after initializing the cell view models.
+     * Initializes the 9x9 Sudoku grid UI and loads the current grid values from the model if they
+     * exist.
      */
     private void gridInitialization() {
         gridViewModel.init(toaster);
@@ -293,6 +293,12 @@ public final class MainView implements IMainView {
             sudokuFXGridPane.add(textArea, col, row);
             index++;
         }
+        gridViewModel
+                .getCurrentGridFromModel()
+                .ifPresent(
+                        currentGrid ->
+                                menuLevelViewModel.updateSelectedLevel(
+                                        currentGrid.level(), currentGrid.percentage()));
     }
 
     /**
@@ -917,13 +923,16 @@ public final class MainView implements IMainView {
     /** Applies the EASY difficulty level, updates the grid and level view models accordingly. */
     public void handleEasyLevelShow() {
         menuLevelViewModel.updateSelectedLevel(
-                DifficultyLevel.EASY, gridViewModel.applyLevel(DifficultyLevel.EASY));
+                DifficultyLevel.EASY, gridViewModel.setCurrentGridWithLevel(DifficultyLevel.EASY));
+        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
     /** Applies the MEDIUM difficulty level, updates the grid and level view models accordingly. */
     public void handleMediumLevelShow() {
         menuLevelViewModel.updateSelectedLevel(
-                DifficultyLevel.MEDIUM, gridViewModel.applyLevel(DifficultyLevel.MEDIUM));
+                DifficultyLevel.MEDIUM,
+                gridViewModel.setCurrentGridWithLevel(DifficultyLevel.MEDIUM));
+        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
     /**
@@ -931,7 +940,9 @@ public final class MainView implements IMainView {
      */
     public void handleDifficultLevelShow() {
         menuLevelViewModel.updateSelectedLevel(
-                DifficultyLevel.DIFFICULT, gridViewModel.applyLevel(DifficultyLevel.DIFFICULT));
+                DifficultyLevel.DIFFICULT,
+                gridViewModel.setCurrentGridWithLevel(DifficultyLevel.DIFFICULT));
+        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
     /**

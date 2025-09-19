@@ -23,4 +23,25 @@ public record GridDto(
         Long gridid,
         @Nonnull @NotNull @Size(max = 81) String defaultgridvalue,
         @Nonnull @NotNull @Size(max = 810) String gridvalue,
-        @Min(0) @Max(100) byte possibilities) {}
+        @Min(0) @Max(100) byte possibilities) {
+
+    /** Returns a new instance with the given grid ID. */
+    public GridDto withGridid(Long newGridid) {
+        return new GridDto(newGridid, defaultgridvalue, gridvalue, possibilities);
+    }
+
+    /** Returns a new instance with the given default grid value. */
+    public GridDto withDefaultgridvalue(String newDefaultgridvalue) {
+        return new GridDto(gridid, newDefaultgridvalue, gridvalue, possibilities);
+    }
+
+    /** Returns a new instance with the given current grid value. */
+    public GridDto withGridvalue(String newGridvalue) {
+        return new GridDto(gridid, defaultgridvalue, newGridvalue, possibilities);
+    }
+
+    /** Returns a new instance with the given possibilities percentage. */
+    public GridDto withPossibilities(byte newPossibilities) {
+        return new GridDto(gridid, defaultgridvalue, gridvalue, newPossibilities);
+    }
+}

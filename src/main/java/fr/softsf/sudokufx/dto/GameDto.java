@@ -28,4 +28,47 @@ public record GameDto(
         @Nonnull @NotNull GameLevelDto levelidDto,
         boolean selected,
         @Nonnull @NotNull LocalDateTime createdat,
-        @Nonnull @NotNull LocalDateTime updatedat) {}
+        @Nonnull @NotNull LocalDateTime updatedat) {
+
+    /** Returns a new instance with the given game ID. */
+    public GameDto withGameid(Long newGameid) {
+        return new GameDto(
+                newGameid, grididDto, playerid, levelidDto, selected, createdat, updatedat);
+    }
+
+    /** Returns a new instance with the given grid DTO. */
+    public GameDto withGrididDto(GridDto newGrididDto) {
+        return new GameDto(
+                gameid, newGrididDto, playerid, levelidDto, selected, createdat, updatedat);
+    }
+
+    /** Returns a new instance with the given player ID. */
+    public GameDto withPlayerid(Long newPlayerid) {
+        return new GameDto(
+                gameid, grididDto, newPlayerid, levelidDto, selected, createdat, updatedat);
+    }
+
+    /** Returns a new instance with the given level DTO. */
+    public GameDto withLevelidDto(GameLevelDto newLevelidDto) {
+        return new GameDto(
+                gameid, grididDto, playerid, newLevelidDto, selected, createdat, updatedat);
+    }
+
+    /** Returns a new instance with the given selected flag. */
+    public GameDto withSelected(boolean newSelected) {
+        return new GameDto(
+                gameid, grididDto, playerid, levelidDto, newSelected, createdat, updatedat);
+    }
+
+    /** Returns a new instance with the given creation timestamp. */
+    public GameDto withCreatedat(LocalDateTime newCreatedat) {
+        return new GameDto(
+                gameid, grididDto, playerid, levelidDto, selected, newCreatedat, updatedat);
+    }
+
+    /** Returns a new instance with the given update timestamp. */
+    public GameDto withUpdatedat(LocalDateTime newUpdatedat) {
+        return new GameDto(
+                gameid, grididDto, playerid, levelidDto, selected, createdat, newUpdatedat);
+    }
+}

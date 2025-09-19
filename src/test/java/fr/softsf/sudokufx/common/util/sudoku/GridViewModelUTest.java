@@ -35,7 +35,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new GridMaster(new JakartaValidator(null)),
                         new ActiveMenuOrSubmenuViewModel(),
                         new AudioService(),
-                        playerStateHolder);
+                        playerStateHolder,
+                        playerServiceMock);
         viewModel.init(new ToasterVBox());
     }
 
@@ -56,31 +57,32 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     @Test
     void givenValidValues_whenSetValues_thenAllCellsContainCorrectValues() {
         List<String> values = IntStream.rangeClosed(1, 81).mapToObj(String::valueOf).toList();
-        viewModel.setValues(values);
+        viewModel.setValues(values, true);
         assertEquals(values, viewModel.getAllValues());
     }
 
     @Test
     void givenNullValues_whenSetValues_thenIllegalArgumentExceptionIsThrown() {
-        assertThrows(IllegalArgumentException.class, () -> viewModel.setValues(null));
+        assertThrows(IllegalArgumentException.class, () -> viewModel.setValues(null, true));
     }
 
     @Test
     void givenWrongSizeList_whenSetValues_thenIllegalArgumentExceptionIsThrown() {
         List<String> shortList = Collections.nCopies(80, "1");
-        assertThrows(IllegalArgumentException.class, () -> viewModel.setValues(shortList));
+        assertThrows(IllegalArgumentException.class, () -> viewModel.setValues(shortList, true));
     }
 
     @Test
     void givenListWithNullElement_whenSetValues_thenIllegalArgumentExceptionIsThrown() {
         List<String> valuesWithNull = new ArrayList<>(Collections.nCopies(81, "1"));
         valuesWithNull.set(5, null);
-        assertThrows(IllegalArgumentException.class, () -> viewModel.setValues(valuesWithNull));
+        assertThrows(
+                IllegalArgumentException.class, () -> viewModel.setValues(valuesWithNull, true));
     }
 
     @Test
-    void givenNullLevel_whenApplyLevel_thenIllegalArgumentExceptionIsThrown() {
-        assertThrows(IllegalArgumentException.class, () -> viewModel.applyLevel(null));
+    void givenNullLevel_whenSetCurrentGridWithLevel_thenIllegalArgumentExceptionIsThrown() {
+        assertThrows(IllegalArgumentException.class, () -> viewModel.setCurrentGridWithLevel(null));
     }
 
     @Test

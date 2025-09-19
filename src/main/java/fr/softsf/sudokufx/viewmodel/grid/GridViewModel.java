@@ -7,12 +7,14 @@ package fr.softsf.sudokufx.viewmodel.grid;
 
 import java.io.File;
 import java.text.MessageFormat;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -27,14 +29,20 @@ import fr.softsf.sudokufx.common.exception.ResourceLoadException;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
+import fr.softsf.sudokufx.dto.GameDto;
+import fr.softsf.sudokufx.dto.GameLevelDto;
+import fr.softsf.sudokufx.dto.GridDto;
+import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 /**
- * ViewModel component managing a 9x9 Sudoku grid. Provides observable cell view models and methods
- * to manipulate grid data.
+ * ViewModel responsible for managing a 9x9 Sudoku grid. Provides observable cell view models,
+ * persistence hooks, and methods for applying difficulty levels, validating completion, and
+ * handling game state updates.
  */
 @Component
 public class GridViewModel {
@@ -49,6 +57,9 @@ public class GridViewModel {
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     private final AudioService audioService;
     private final PlayerStateHolder playerStateHolder;
+    private final PlayerService playerService;
+
+    private boolean suppressCellsListeners = false;
 
     private ToasterVBox toaster;
 
@@ -56,28 +67,32 @@ public class GridViewModel {
             IGridMaster iGridMaster,
             ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,
             AudioService audioService,
-            PlayerStateHolder playerStateHolder) {
+            PlayerStateHolder playerStateHolder,
+            PlayerService playerService) {
         this.iGridMaster = iGridMaster;
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
         this.audioService = audioService;
         this.playerStateHolder = playerStateHolder;
+        this.playerService = playerService;
     }
 
     /**
-     * Initializes the 9x9 Sudoku grid by creating 81 {@link GridCellViewModel} instances, each with
-     * a unique ID and coordinates.
-     *
-     * <p>Also sets up listeners on each cell's text property to:
+     * Initializes the 9x9 Sudoku grid by creating 81 {@link GridCellViewModel} instances with
+     * unique IDs and row/column coordinates. Each cell's text property is attached to a listener
+     * that:
      *
      * <ul>
-     *   <li>Automatically verify the grid when in {@code SOLVE} mode or when all cells are
-     *       completed with one value.
-     *   <li>Stop any playing audio otherwise.
+     *   <li>Ignores changes when {@link #suppressCellsListeners} is {@code true} (used for bulk
+     *       updates).
+     *   <li>Automatically verifies the grid in {@code SOLVE} mode or when the grid is fully filled.
+     *   <li>Stops background audio when appropriate.
+     *   <li>Persists updated grid values if the player-modifiable grid differs from the default.
      * </ul>
      *
-     * <p>This method should be called once after bean construction.
+     * <p>Listeners handle both default grids (editable according to initial values) and
+     * player-entered grids. The {@code ToasterVBox} is used to display notifications if needed.
      *
-     * @param toaster the {@link ToasterVBox} instance for displaying notifications if needed
+     * @param toaster the {@link ToasterVBox} instance used for notifications
      */
     public void init(ToasterVBox toaster) {
         this.toaster = toaster;
@@ -89,11 +104,22 @@ public class GridViewModel {
                         .textProperty()
                         .addListener(
                                 (obs, oldText, newText) -> {
+                                    if (suppressCellsListeners) {
+                                        return;
+                                    }
                                     // TODO to remove in production (only for tests)
-                                    verifyGrid();
+                                    // verifyGrid();
                                     if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
                                             != ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE) {
-                                        // TODO save current grid to database
+                                        if (StringUtils.isNotBlank(
+                                                Objects.requireNonNull(
+                                                                playerStateHolder
+                                                                        .getCurrentPlayer()
+                                                                        .selectedGame())
+                                                        .grididDto()
+                                                        .defaultgridvalue())) {
+                                            persistGridValue();
+                                        }
                                         if (isCompletelyCompleted()) {
                                             verifyGrid();
                                         } else {
@@ -107,6 +133,66 @@ public class GridViewModel {
                 cellViewModels.add(cellVM);
             }
         }
+    }
+
+    /**
+     * Persists the current grid state for the active player’s selected game. Updates the {@link
+     * GridDto} only if the grid values have changed.
+     */
+    private void persistGridValue() {
+        PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
+        GameDto gameDto = currentPlayer.selectedGame();
+        Objects.requireNonNull(gameDto, "gameDto mustn't be null");
+        GridDto currentGridDto = gameDto.grididDto();
+        String result =
+                getAllValues().stream()
+                        .map(value -> StringUtils.isBlank(value) ? "0" : value)
+                        .collect(Collectors.joining(","))
+                        .replace("\n", "");
+        String modelGridValue = currentGridDto.gridvalue();
+        if (modelGridValue.equals(result)) {
+            return;
+        }
+        GridDto toSaveGridDto = currentPlayer.selectedGame().grididDto().withGridvalue(result);
+        PlayerDto toSavePlayer =
+                currentPlayer.withSelectedGame(
+                        currentPlayer.selectedGame().withGrididDto(toSaveGridDto));
+        playerService.updatePlayer(toSavePlayer);
+        playerStateHolder.refreshCurrentPlayer();
+    }
+
+    /**
+     * Loads the current Sudoku grid from the model into the ViewModel.
+     *
+     * <p>This method performs the following steps:
+     *
+     * <ol>
+     *   <li>Checks if a default grid exists for the selected game; returns empty if not.
+     *   <li>Reads the difficulty level and completion percentage directly from the model.
+     *   <li>Loads the default grid values into the ViewModel (with editable or not).
+     *   <li>Loads the current grid values into the ViewModel.
+     * </ol>
+     *
+     * @return an {@link Optional} containing a {@link CurrentGrid} with the difficulty level and
+     *     completion percentage if a grid exists, otherwise {@link Optional#empty()}.
+     */
+    public Optional<CurrentGrid> getCurrentGridFromModel() {
+        GameDto gameDto = playerStateHolder.getCurrentPlayer().selectedGame();
+        Objects.requireNonNull(gameDto, "gameDto mustn't be null");
+        String defaultGridValueFromBase = gameDto.grididDto().defaultgridvalue();
+        if (StringUtils.isBlank(defaultGridValueFromBase)) {
+            return Optional.empty();
+        }
+        DifficultyLevel level = DifficultyLevel.fromGridByte(gameDto.levelidDto().level());
+        int percentage = gameDto.grididDto().possibilities();
+        setValues(defaultGridValueFromBase.chars().mapToObj(Character::toString).toList(), true);
+        String gridValueFromBase = gameDto.grididDto().gridvalue();
+        List<String> gridValuesFromBaseList =
+                Arrays.stream(gridValueFromBase.split(","))
+                        .map(s -> s.replace("\n", "").trim())
+                        .toList();
+        setValues(gridValuesFromBaseList, false);
+        return Optional.of(new CurrentGrid(level, percentage));
     }
 
     /**
@@ -132,9 +218,8 @@ public class GridViewModel {
     }
 
     /**
-     * Verifies the current grid state by attempting to solve it. Converts cell values to an integer
-     * array, calls the grid solver, and outputs solution status and completion percentage. If the
-     * grid is completely solved, triggers victory actions.
+     * Validates the grid by attempting to solve it. If solved and matching the completed state,
+     * triggers victory handling.
      */
     private void verifyGrid() {
         int[] grilleInt = getAllValues().stream().mapToInt(this::parseCellValue).toArray();
@@ -142,8 +227,14 @@ public class GridViewModel {
         boolean solved = grilleResolue.solved();
         int[] solvedGrid = grilleResolue.solvedGrid();
         int percentage = grilleResolue.possibilityPercentage();
-        System.out.println("\n\nsolvedGrid:" + Arrays.toString(solvedGrid));
-        System.out.println("Solved : " + solved + "\nPercentage : " + percentage + "%\n\n");
+        System.out.println(
+                "\n\n--solvedGrid:"
+                        + Arrays.toString(solvedGrid)
+                        + "\nSolved : "
+                        + solved
+                        + "\nPercentage : "
+                        + percentage
+                        + "%\n\n");
         if (solved && Arrays.equals(grilleInt, solvedGrid) && isCompletelyCompleted()) {
             celebrateVictory();
         }
@@ -224,14 +315,21 @@ public class GridViewModel {
     }
 
     /**
-     * Sets the text values and editability of all cells. Cells are editable if their value is "0",
-     * non-editable otherwise.
+     * Sets all 81 cell values and optionally their editability.
      *
-     * @param values list of exactly 81 non-null strings
-     * @throws IllegalArgumentException if values is null, has incorrect size (81), or contains
-     *     nulls
+     * <ul>
+     *   <li>When {@code checkEditable} is {@code true}, cells with value "0" are editable, others
+     *       are not.
+     *   <li>When {@code checkEditable} is {@code false}, editability is left unchanged (used for
+     *       player-entered grids).
+     *   <li>Listeners are suppressed for all cells during bulk updates.
+     * </ul>
+     *
+     * @param values list of 81 non-null strings
+     * @param checkEditable whether to update cell editability
+     * @throws IllegalArgumentException if {@code values} is null, not size 81, or contains nulls
      */
-    public void setValues(List<String> values) {
+    public void setValues(List<String> values, boolean checkEditable) {
         Optional.ofNullable(values)
                 .filter(v -> v.size() == TOTAL_CELLS)
                 .filter(v -> v.stream().allMatch(Objects::nonNull))
@@ -239,31 +337,70 @@ public class GridViewModel {
                         () ->
                                 ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                                         "Grid must have exactly 81 non-null values"));
+        suppressCellsListeners = true;
         for (int i = 0; i < TOTAL_CELLS; i++) {
             String value = values.get(i);
             GridCellViewModel cell = cellViewModels.get(i);
             cell.rawTextProperty().set(value);
-            cell.editableProperty().set("0".equals(value));
+            if (checkEditable) {
+                cell.editableProperty().set("0".equals(value));
+            }
         }
+        suppressCellsListeners = false;
     }
 
     /**
-     * Applies the given difficulty level by generating a new grid (using level-specific
-     * parameters), updating the cell values accordingly, and returning the stars completion
-     * percentage.
+     * Applies the given difficulty level by generating a new grid, updating the cells, and
+     * returning the associated completion percentage.
      *
-     * @param level the difficulty level to apply; must not be null
-     * @return the stars completion percentage associated with the applied level
-     * @throws IllegalArgumentException if the difficulty level is null
+     * @param level the difficulty level to apply (must not be null)
+     * @return the percentage of possibilities for the applied level
+     * @throws IllegalArgumentException if {@code level} is null
      */
-    public int applyLevel(DifficultyLevel level) {
-        // TODO stocker la nouvelle grille en base
+    public int setCurrentGridWithLevel(DifficultyLevel level) {
         if (Objects.isNull(level)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "Difficulty level cannot be null");
         }
         GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level.toGridNumber());
-        setValues(Arrays.stream(grillesCrees.grilleAResoudre()).mapToObj(String::valueOf).toList());
+        persistNewGame(level, grillesCrees);
+        setValues(
+                Arrays.stream(grillesCrees.grilleAResoudre()).mapToObj(String::valueOf).toList(),
+                true);
         return grillesCrees.pourcentageDesPossibilites();
+    }
+
+    private void persistNewGame(DifficultyLevel level, GrillesCrees grillesCrees) {
+        PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
+        String defaultGrid =
+                Arrays.stream(grillesCrees.grilleAResoudre())
+                        .mapToObj(String::valueOf)
+                        .collect(Collectors.joining());
+        String gridValue =
+                String.join(
+                        ",",
+                        Arrays.stream(grillesCrees.grilleAResoudre())
+                                .mapToObj(String::valueOf)
+                                .toList());
+        Objects.requireNonNull(
+                currentPlayer.selectedGame(), "currentPlayer.selectedGame() mustn't be null");
+        GameLevelDto toSaveGameLevelDto =
+                currentPlayer.selectedGame().levelidDto().withLevel((byte) level.toGridNumber());
+        GridDto toSaveGridDto =
+                currentPlayer
+                        .selectedGame()
+                        .grididDto()
+                        .withGridvalue(gridValue)
+                        .withDefaultgridvalue(defaultGrid)
+                        .withPossibilities((byte) grillesCrees.pourcentageDesPossibilites());
+        PlayerDto toSavePlayer =
+                currentPlayer.withSelectedGame(
+                        currentPlayer
+                                .selectedGame()
+                                .withUpdatedat(LocalDateTime.now())
+                                .withGrididDto(toSaveGridDto)
+                                .withLevelidDto(toSaveGameLevelDto));
+        playerService.updatePlayer(toSavePlayer);
+        playerStateHolder.refreshCurrentPlayer();
     }
 }

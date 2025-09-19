@@ -37,7 +37,7 @@ public record PlayerDto(
         @Nonnull @NotNull LocalDateTime updatedat) {
 
     /** Returns a new instance with the given player language. */
-    public PlayerDto withPlayerLanguage(@Nonnull PlayerLanguageDto newPlayerLanguage) {
+    public PlayerDto withPlayerLanguage(PlayerLanguageDto newPlayerLanguage) {
         return new PlayerDto(
                 playerid,
                 newPlayerLanguage,
@@ -51,7 +51,7 @@ public record PlayerDto(
     }
 
     /** Returns a new instance with the given options. */
-    public PlayerDto withOptions(@Nonnull OptionsDto newOptions) {
+    public PlayerDto withOptions(OptionsDto newOptions) {
         return new PlayerDto(
                 playerid,
                 playerlanguageidDto,
@@ -65,7 +65,7 @@ public record PlayerDto(
     }
 
     /** Returns a new instance with the given menu. */
-    public PlayerDto withMenu(@Nonnull MenuDto newMenu) {
+    public PlayerDto withMenu(MenuDto newMenu) {
         return new PlayerDto(
                 playerid,
                 playerlanguageidDto,
@@ -79,7 +79,7 @@ public record PlayerDto(
     }
 
     /** Returns a new instance with the given selected game. */
-    public PlayerDto withSelectedGame(@Nullable GameDto newSelectedGame) {
+    public PlayerDto withSelectedGame(GameDto newSelectedGame) {
         return new PlayerDto(
                 playerid,
                 playerlanguageidDto,
@@ -93,7 +93,7 @@ public record PlayerDto(
     }
 
     /** Returns a new instance with the given name. */
-    public PlayerDto withName(@Nonnull @Size(max = 256) String newName) {
+    public PlayerDto withName(String newName) {
         return new PlayerDto(
                 playerid,
                 playerlanguageidDto,
@@ -121,7 +121,7 @@ public record PlayerDto(
     }
 
     /** Returns a new instance with the given creation timestamp. */
-    public PlayerDto withCreatedAt(@Nonnull LocalDateTime newCreatedAt) {
+    public PlayerDto withCreatedAt(LocalDateTime newCreatedAt) {
         return new PlayerDto(
                 playerid,
                 playerlanguageidDto,
@@ -135,7 +135,7 @@ public record PlayerDto(
     }
 
     /** Returns a new instance with the given update timestamp. */
-    public PlayerDto withUpdatedAt(@Nonnull LocalDateTime newUpdatedAt) {
+    public PlayerDto withUpdatedAt(LocalDateTime newUpdatedAt) {
         return new PlayerDto(
                 playerid,
                 playerlanguageidDto,

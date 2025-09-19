@@ -11,11 +11,18 @@ import org.springframework.transaction.annotation.Transactional;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
+import fr.softsf.sudokufx.dto.GameDto;
+import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.model.Game;
+import fr.softsf.sudokufx.model.Grid;
 import fr.softsf.sudokufx.model.Menu;
 import fr.softsf.sudokufx.model.Options;
 import fr.softsf.sudokufx.model.Player;
 import fr.softsf.sudokufx.model.PlayerLanguage;
+import fr.softsf.sudokufx.repository.GameLevelRepository;
+import fr.softsf.sudokufx.repository.GameRepository;
+import fr.softsf.sudokufx.repository.GridRepository;
 import fr.softsf.sudokufx.repository.MenuRepository;
 import fr.softsf.sudokufx.repository.OptionsRepository;
 import fr.softsf.sudokufx.repository.PlayerLanguageRepository;
@@ -48,6 +55,9 @@ public class PlayerService {
     private final PlayerLanguageRepository playerLanguageRepository;
     private final OptionsRepository optionsRepository;
     private final MenuRepository menuRepository;
+    private final GameRepository gameRepository;
+    private final GridRepository gridRepository;
+    private final GameLevelRepository gameLevelRepository;
     private final IPlayerMapper playerMapper;
     private final JakartaValidator jakartaValidator;
 
@@ -56,12 +66,18 @@ public class PlayerService {
             PlayerLanguageRepository playerLanguageRepository,
             OptionsRepository optionsRepository,
             MenuRepository menuRepository,
+            GameRepository gameRepository,
+            GameLevelRepository gameLevelRepository,
+            GridRepository gridRepository,
             IPlayerMapper playerMapper,
             JakartaValidator jakartaValidator) {
         this.playerRepository = playerRepository;
         this.playerLanguageRepository = playerLanguageRepository;
         this.optionsRepository = optionsRepository;
         this.menuRepository = menuRepository;
+        this.gameRepository = gameRepository;
+        this.gameLevelRepository = gameLevelRepository;
+        this.gridRepository = gridRepository;
         this.playerMapper = playerMapper;
         this.jakartaValidator = jakartaValidator;
     }
@@ -90,19 +106,14 @@ public class PlayerService {
     }
 
     /**
-     * Updates an existing player in the database with the values from the given {@link PlayerDto}.
-     *
-     * <p>This method is transactional: if any referenced entity (Player, PlayerLanguage, Options,
-     * Menu) is missing, the transaction is rolled back.
-     *
-     * <p>Validation is applied both before updating (on the incoming DTO) and after saving (on the
-     * resulting DTO) using {@link JakartaValidator}.
+     * Updates an existing player and its associated entities (Game, GameLevel, Grid) in the
+     * database based on the provided {@link PlayerDto}. All updates are transactional and validated
+     * before and after persistence.
      *
      * @param dto the player data to update; must not be null
      * @return the updated and validated {@link PlayerDto}
      * @throws NullPointerException if {@code dto} is null
-     * @throws IllegalArgumentException if the player, player language, options, or menu does not
-     *     exist
+     * @throws IllegalArgumentException if any referenced entity does not exist
      * @throws ConstraintViolationException if validation fails on the DTO
      */
     @Transactional
@@ -142,6 +153,25 @@ public class PlayerService {
         existing.setPlayerlanguageid(pl);
         existing.setOptionsid(op);
         existing.setMenuid(menu);
+        if (validatedDto.selectedGame() != null) {
+            Game existingGame =
+                    gameRepository
+                            .findById(validatedDto.selectedGame().gameid())
+                            .orElseThrow(
+                                    () ->
+                                            ExceptionTools.INSTANCE
+                                                    .logAndInstantiateIllegalArgument(
+                                                            "No selected game with selected player"
+                                                                    + " found."));
+            GameDto gameDto = validatedDto.selectedGame();
+            existingGame.getLevelid().setLevel(gameDto.levelidDto().level());
+            GridDto gridDto = gameDto.grididDto();
+            Grid grid = existingGame.getGridid();
+            grid.setDefaultgridvalue(gridDto.defaultgridvalue());
+            grid.setGridvalue(gridDto.gridvalue());
+            grid.setPossibilities(gridDto.possibilities());
+            existingGame.setUpdatedat(gameDto.updatedat());
+        }
         Player saved = playerRepository.save(existing);
         PlayerDto result = playerMapper.mapPlayerToDto(saved);
         return jakartaValidator.validateOrThrow(result);

@@ -29,6 +29,11 @@ class PlayerServiceUTest {
     private PlayerLanguageRepository playerLanguageRepository;
     private OptionsRepository optionsRepository;
     private MenuRepository menuRepository;
+
+    private GameRepository gameRepository;
+    private GameLevelRepository gameLevelRepository;
+    private GridRepository gridRepository;
+
     private IPlayerMapper playerMapper;
     private JakartaValidator jakartaValidator;
     private PlayerService playerService;
@@ -39,6 +44,9 @@ class PlayerServiceUTest {
         playerLanguageRepository = mock(PlayerLanguageRepository.class);
         optionsRepository = mock(OptionsRepository.class);
         menuRepository = mock(MenuRepository.class);
+        gameRepository = mock(GameRepository.class);
+        gameLevelRepository = mock(GameLevelRepository.class);
+        gridRepository = mock(GridRepository.class);
         playerMapper = mock(IPlayerMapper.class);
         jakartaValidator = mock(JakartaValidator.class);
         playerService =
@@ -47,6 +55,9 @@ class PlayerServiceUTest {
                         playerLanguageRepository,
                         optionsRepository,
                         menuRepository,
+                        gameRepository,
+                        gameLevelRepository,
+                        gridRepository,
                         playerMapper,
                         jakartaValidator);
     }
