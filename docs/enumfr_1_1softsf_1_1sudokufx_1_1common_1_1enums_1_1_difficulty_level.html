@@ -99,27 +99,35 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_di
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.common.enums.DifficultyLevel Enum Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the difficulty levels of a Sudoku grid.
+<p>Defines the difficulty levels of a Sudoku grid and provides conversions between enum values and their numeric/byte representations.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.common.enums.DifficultyLevel:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level__coll__graph.svg" width="224" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level__coll__graph.svg" width="224" height="198"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1bebf1bd508380d7ace78f40778e05c" id="r_ab1bebf1bd508380d7ace78f40778e05c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab1bebf1bd508380d7ace78f40778e05c">toGridNumber</a> ()</td></tr>
-<tr class="memdesc:ab1bebf1bd508380d7ace78f40778e05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts the difficulty level to its corresponding numeric level.  <br /></td></tr>
+<tr class="memdesc:ab1bebf1bd508380d7ace78f40778e05c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts this difficulty level to its numeric representation.  <br /></td></tr>
 <tr class="separator:ab1bebf1bd508380d7ace78f40778e05c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7df76231e8b2c4e2180213007891b807" id="r_a7df76231e8b2c4e2180213007891b807"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7df76231e8b2c4e2180213007891b807">fromGridByte</a> (byte number)</td></tr>
+<tr class="memdesc:a7df76231e8b2c4e2180213007891b807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a <code><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></code> from its byte representation.  <br /></td></tr>
+<tr class="separator:a7df76231e8b2c4e2180213007891b807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -129,10 +137,55 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac3d991f6191c0ce130420e29d9f4be73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92a4eceebcd367666f5ab31e48164b2e" id="r_a92a4eceebcd367666f5ab31e48164b2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92a4eceebcd367666f5ab31e48164b2e">MEDIUM</a></td></tr>
 <tr class="separator:a92a4eceebcd367666f5ab31e48164b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a54f93d355bd67cba215ededfc8f1771f" id="r_a54f93d355bd67cba215ededfc8f1771f"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54f93d355bd67cba215ededfc8f1771f">LOG</a> = LoggerFactory.getLogger(DifficultyLevel.class)</td></tr>
+<tr class="separator:a54f93d355bd67cba215ededfc8f1771f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the difficulty levels of a Sudoku grid. </p>
+<div class="textblock"><p>Defines the difficulty levels of a Sudoku grid and provides conversions between enum values and their numeric/byte representations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7df76231e8b2c4e2180213007891b807" name="a7df76231e8b2c4e2180213007891b807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7df76231e8b2c4e2180213007891b807">&#9670;&#160;</a></span>fromGridByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> fr.softsf.sudokufx.common.enums.DifficultyLevel.fromGridByte </td>
+          <td>(</td>
+          <td class="paramtype">byte</td>          <td class="paramname"><span class="paramname"><em>number</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resolves a <code><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></code> from its byte representation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">number</td><td>the byte value (<code class="JavaDocCode">1</code>, <code class="JavaDocCode">2</code>, <code class="JavaDocCode">3</code>) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the corresponding <code><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if the value does not match any level </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab1bebf1bd508380d7ace78f40778e05c" name="ab1bebf1bd508380d7ace78f40778e05c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1bebf1bd508380d7ace78f40778e05c">&#9670;&#160;</a></span>toGridNumber()</h2>
 
@@ -148,8 +201,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Converts the difficulty level to its corresponding numeric level. </p>
-<dl class="section return"><dt>Returns</dt><dd>an integer representing the numeric level for this difficulty </dd></dl>
+<p>Converts this difficulty level to its numeric representation. </p>
+<dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">1</code> for EASY, <code class="JavaDocCode">2</code> for MEDIUM, <code class="JavaDocCode">3</code> for DIFFICULT </dd></dl>
 
 </div>
 </div>
@@ -182,6 +235,28 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a54f93d355bd67cba215ededfc8f1771f" name="a54f93d355bd67cba215ededfc8f1771f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f93d355bd67cba215ededfc8f1771f">&#9670;&#160;</a></span>LOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> final Logger fr.softsf.sudokufx.common.enums.DifficultyLevel.LOG = LoggerFactory.getLogger(DifficultyLevel.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a92a4eceebcd367666f5ab31e48164b2e" name="a92a4eceebcd367666f5ab31e48164b2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92a4eceebcd367666f5ab31e48164b2e">&#9670;&#160;</a></span>MEDIUM</h2>
 
@@ -205,7 +280,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums.html">enums</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></li>
-    <li class="footer">Generated on Sun Sep 14 2025 11:28:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Sep 21 2025 01:43:12 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

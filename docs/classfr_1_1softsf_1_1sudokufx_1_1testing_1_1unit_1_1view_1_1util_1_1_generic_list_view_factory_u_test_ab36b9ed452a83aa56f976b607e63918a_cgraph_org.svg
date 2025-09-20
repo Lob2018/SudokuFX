@@ -102,17 +102,17 @@
 <g id="Node000008" class="node">
 <title>Node8</title>
 <g id="a_Node000008"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af6e92a76d1c7e2a11c4aef9968bd9210" target="_top" xlink:title="Data Transfer Object representing a player.">
-<polygon fill="white" stroke="#666666" points="716.25,-176 560.75,-176 560.75,-156 716.25,-156 716.25,-176"/>
-<text text-anchor="middle" x="638.5" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.PlayerDto</text>
+<polygon fill="white" stroke="#666666" points="716.25,-179 560.75,-179 560.75,-159 716.25,-159 716.25,-179"/>
+<text text-anchor="middle" x="638.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.PlayerDto</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
-<g id="edge18_Node000001_Node000008" class="edge">
+<g id="edge21_Node000001_Node000008" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<g id="a_edge18_Node000001_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M278.76,-170.33C365.27,-169.28 474.07,-167.97 549.04,-167.07"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="548.84,-170.57 558.8,-166.95 548.76,-163.57 548.84,-170.57"/>
+<g id="a_edge21_Node000001_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M278.76,-171.16C365.27,-170.64 474.07,-169.99 549.04,-169.53"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="548.82,-173.04 558.8,-169.47 548.78,-166.04 548.82,-173.04"/>
 </a>
 </g>
 </g>
@@ -127,9 +127,9 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
-<g id="edge17_Node000001_Node000013" class="edge">
+<g id="edge20_Node000001_Node000013" class="edge">
 <title>Node1&#45;&gt;Node13</title>
-<g id="a_edge17_Node000001_Node000013"><a xlink:title=" ">
+<g id="a_edge20_Node000001_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M191.41,-149.53C225.77,-134.98 272.31,-116.34 314.5,-103 320.63,-101.06 327.01,-99.19 333.45,-97.4"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="334.11,-100.85 342.86,-94.87 332.3,-94.09 334.11,-100.85"/>
 </a>
@@ -147,9 +147,9 @@
 </g>
 </g>
 <!-- Node1&#45;&gt;Node14 -->
-<g id="edge19_Node000001_Node000014" class="edge">
+<g id="edge22_Node000001_Node000014" class="edge">
 <title>Node1&#45;&gt;Node14</title>
-<g id="a_edge19_Node000001_Node000014"><a xlink:title=" ">
+<g id="a_edge22_Node000001_Node000014"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M167.29,-149.56C200.22,-123.2 258.43,-79.69 314.5,-53 317.63,-51.51 320.86,-50.07 324.14,-48.69"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="325.38,-51.96 333.37,-45.01 322.79,-45.46 325.38,-51.96"/>
 </a>
@@ -159,8 +159,8 @@
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" target="_top" xlink:title="Data Transfer Object representing a menu entity.">
-<polygon fill="white" stroke="#666666" points="908.88,-232 757.12,-232 757.12,-212 908.88,-212 908.88,-232"/>
-<text text-anchor="middle" x="833" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.MenuDto</text>
+<polygon fill="white" stroke="#666666" points="908.88,-238 757.12,-238 757.12,-218 908.88,-218 908.88,-238"/>
+<text text-anchor="middle" x="833" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.MenuDto</text>
 </a>
 </g>
 </g>
@@ -168,8 +168,8 @@
 <g id="edge5_Node000005_Node000006" class="edge">
 <title>Node5&#45;&gt;Node6</title>
 <g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M443.6,-144.26C470.33,-162.21 516.47,-190.24 560.75,-203 620.88,-220.34 691.48,-224.81 745.57,-225.1"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="745.34,-228.6 755.34,-225.1 745.34,-221.6 745.34,-228.6"/>
+<path fill="none" stroke="#63b8ff" d="M446.83,-144.36C480.52,-165.08 537.44,-198.93 560.75,-206 620.69,-224.18 691.29,-229.43 745.44,-230.27"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="745.18,-233.76 755.22,-230.36 745.26,-226.76 745.18,-233.76"/>
 </a>
 </g>
 </g>
@@ -177,8 +177,8 @@
 <g id="Node000007" class="node">
 <title>Node7</title>
 <g id="a_Node000007"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af3351529e3efa22019c4fe7fcd841d3f" target="_top" xlink:title="Data Transfer Object representing an Options entity.">
-<polygon fill="white" stroke="#666666" points="913.75,-88 752.25,-88 752.25,-68 913.75,-68 913.75,-88"/>
-<text text-anchor="middle" x="833" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.OptionsDto</text>
+<polygon fill="white" stroke="#666666" points="913.75,-76 752.25,-76 752.25,-56 913.75,-56 913.75,-76"/>
+<text text-anchor="middle" x="833" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.OptionsDto</text>
 </a>
 </g>
 </g>
@@ -186,8 +186,8 @@
 <g id="edge6_Node000005_Node000007" class="edge">
 <title>Node5&#45;&gt;Node7</title>
 <g id="a_edge6_Node000005_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M522.05,-115.67C588.93,-107.54 675.81,-96.98 740.56,-89.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="740.97,-92.59 750.48,-87.91 740.13,-85.64 740.97,-92.59"/>
+<path fill="none" stroke="#63b8ff" d="M522.05,-112.71C592.78,-102.05 685.88,-88.02 751.52,-78.13"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="751.76,-81.63 761.13,-76.68 750.72,-74.71 751.76,-81.63"/>
 </a>
 </g>
 </g>
@@ -195,8 +195,8 @@
 <g id="edge8_Node000005_Node000008" class="edge">
 <title>Node5&#45;&gt;Node8</title>
 <g id="a_edge8_Node000005_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M514.49,-144.45C531.88,-147.49 549.78,-150.63 566.36,-153.54"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="565.66,-156.97 576.12,-155.24 566.87,-150.07 565.66,-156.97"/>
+<path fill="none" stroke="#63b8ff" d="M507.9,-144.5C528.95,-148.48 551.12,-152.67 571.04,-156.44"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="570.21,-159.84 580.69,-158.26 571.51,-152.96 570.21,-159.84"/>
 </a>
 </g>
 </g>
@@ -204,18 +204,18 @@
 <g id="Node000012" class="node">
 <title>Node12</title>
 <g id="a_Node000012"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565" target="_top" xlink:title="Data Transfer Object representing a player&#39;s language.">
-<polygon fill="white" stroke="#666666" points="902.88,-156 763.12,-156 763.12,-124 902.88,-124 902.88,-156"/>
-<text text-anchor="start" x="771.12" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.Player</text>
-<text text-anchor="middle" x="833" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">LanguageDto</text>
+<polygon fill="white" stroke="#666666" points="902.88,-144 763.12,-144 763.12,-112 902.88,-112 902.88,-144"/>
+<text text-anchor="start" x="771.12" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.Player</text>
+<text text-anchor="middle" x="833" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">LanguageDto</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node12 -->
-<g id="edge16_Node000005_Node000012" class="edge">
+<g id="edge19_Node000005_Node000012" class="edge">
 <title>Node5&#45;&gt;Node12</title>
-<g id="a_edge16_Node000005_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M522.05,-130.96C592.89,-133.03 686.17,-135.75 751.83,-137.66"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="751.33,-141.15 761.42,-137.94 751.53,-134.15 751.33,-141.15"/>
+<g id="a_edge19_Node000005_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M522.05,-128C592.89,-128 686.17,-128 751.83,-128"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="751.42,-131.5 761.42,-128 751.42,-124.5 751.42,-131.5"/>
 </a>
 </g>
 </g>
@@ -223,35 +223,35 @@
 <g id="edge7_Node000007_Node000007" class="edge">
 <title>Node7&#45;&gt;Node7</title>
 <g id="a_edge7_Node000007_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M802.87,-88.34C789.99,-96.98 800.04,-106 833,-106 851.54,-106 862.83,-103.14 866.87,-99.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="870.21,-98.07 863.63,-89.77 863.6,-100.36 870.21,-98.07"/>
+<path fill="none" stroke="#63b8ff" d="M802.87,-76.34C789.99,-84.98 800.04,-94 833,-94 851.54,-94 862.83,-91.14 866.87,-87.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="870.21,-86.07 863.63,-77.77 863.6,-88.36 870.21,-86.07"/>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node6 -->
-<g id="edge12_Node000008_Node000006" class="edge">
+<g id="edge15_Node000008_Node000006" class="edge">
 <title>Node8&#45;&gt;Node6</title>
-<g id="a_edge12_Node000008_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M668.97,-176.42C691.6,-184.23 723.7,-194.93 752.25,-203 759.34,-205.01 766.83,-206.98 774.26,-208.85"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="773.43,-212.24 783.97,-211.24 775.1,-205.45 773.43,-212.24"/>
+<g id="a_edge15_Node000008_Node000006"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M666.12,-179.35C688.8,-187.95 722.37,-200.17 752.25,-209 759.06,-211.01 766.24,-212.96 773.39,-214.8"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="772.53,-218.19 783.08,-217.21 774.22,-211.4 772.53,-218.19"/>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node7 -->
-<g id="edge13_Node000008_Node000007" class="edge">
+<g id="edge16_Node000008_Node000007" class="edge">
 <title>Node8&#45;&gt;Node7</title>
-<g id="a_edge13_Node000008_Node000007"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M662.34,-155.56C696.2,-140.08 759.92,-110.95 798.9,-93.13"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="800.18,-96.4 807.81,-89.06 797.27,-90.03 800.18,-96.4"/>
+<g id="a_edge16_Node000008_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M656.03,-158.65C677.76,-145.21 717.28,-121.29 752.25,-103 766.91,-95.33 783.45,-87.53 797.65,-81.07"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="798.92,-84.34 806.6,-77.05 796.05,-77.95 798.92,-84.34"/>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node8 -->
-<g id="edge14_Node000008_Node000008" class="edge">
+<g id="edge17_Node000008_Node000008" class="edge">
 <title>Node8&#45;&gt;Node8</title>
-<g id="a_edge14_Node000008_Node000008"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M607.6,-176.34C594.39,-184.98 604.69,-194 638.5,-194 657.52,-194 669.1,-191.14 673.24,-187.11"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="676.56,-186.01 669.91,-177.76 669.97,-188.36 676.56,-186.01"/>
+<g id="a_edge17_Node000008_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M607.6,-179.34C594.39,-187.98 604.69,-197 638.5,-197 657.52,-197 669.1,-194.14 673.24,-190.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="676.56,-189.01 669.91,-180.76 669.97,-191.36 676.56,-189.01"/>
 </a>
 </g>
 </g>
@@ -259,8 +259,8 @@
 <g id="Node000009" class="node">
 <title>Node9</title>
 <g id="a_Node000009"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5404f1271af2d911d29e8ce03acbc501" target="_top" xlink:title="Data Transfer Object representing a game entity.">
-<polygon fill="white" stroke="#666666" points="910,-194 756,-194 756,-174 910,-174 910,-194"/>
-<text text-anchor="middle" x="833" y="-180.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.GameDto</text>
+<polygon fill="white" stroke="#666666" points="910,-182 756,-182 756,-162 910,-162 910,-182"/>
+<text text-anchor="middle" x="833" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.GameDto</text>
 </a>
 </g>
 </g>
@@ -268,17 +268,26 @@
 <g id="edge9_Node000008_Node000009" class="edge">
 <title>Node8&#45;&gt;Node9</title>
 <g id="a_edge9_Node000008_Node000009"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M716.69,-173.22C725.83,-174.07 735.22,-174.95 744.5,-175.82"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="743.95,-179.28 754.23,-176.73 744.6,-172.31 743.95,-179.28"/>
+<path fill="none" stroke="#63b8ff" d="M716.69,-170.2C725.83,-170.35 735.22,-170.49 744.5,-170.64"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="744.17,-174.13 754.22,-170.79 744.28,-167.13 744.17,-174.13"/>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node12 -->
-<g id="edge15_Node000008_Node000012" class="edge">
+<g id="edge18_Node000008_Node000012" class="edge">
 <title>Node8&#45;&gt;Node12</title>
-<g id="a_edge15_Node000008_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M716.69,-155.57C728.14,-154.03 739.97,-152.43 751.49,-150.87"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="751.94,-154.35 761.38,-149.54 751,-147.41 751.94,-154.35"/>
+<g id="a_edge18_Node000008_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M688.57,-158.55C707.74,-154.47 730.21,-149.68 751.61,-145.12"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="752.15,-148.59 761.2,-143.08 750.69,-141.74 752.15,-148.59"/>
+</a>
+</g>
+</g>
+<!-- Node9&#45;&gt;Node9 -->
+<g id="edge10_Node000009_Node000009" class="edge">
+<title>Node9&#45;&gt;Node9</title>
+<g id="a_edge10_Node000009_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M802.87,-182.34C789.99,-190.98 800.04,-200 833,-200 851.54,-200 862.83,-197.14 866.87,-193.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="870.21,-192.07 863.63,-183.77 863.6,-194.36 870.21,-192.07"/>
 </a>
 </g>
 </g>
@@ -286,18 +295,18 @@
 <g id="Node000010" class="node">
 <title>Node10</title>
 <g id="a_Node000010"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa" target="_top" xlink:title="Data Transfer Object representing a game level entity.">
-<polygon fill="white" stroke="#666666" points="1091.75,-222 953.5,-222 953.5,-190 1091.75,-190 1091.75,-222"/>
-<text text-anchor="start" x="961.5" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.Game</text>
-<text text-anchor="middle" x="1022.62" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelDto</text>
+<polygon fill="white" stroke="#666666" points="1091.75,-219 953.5,-219 953.5,-187 1091.75,-187 1091.75,-219"/>
+<text text-anchor="start" x="961.5" y="-205.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.Game</text>
+<text text-anchor="middle" x="1022.62" y="-193.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelDto</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node10 -->
-<g id="edge10_Node000009_Node000010" class="edge">
+<g id="edge11_Node000009_Node000010" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<g id="a_edge10_Node000009_Node000010"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M910.31,-192.95C920.75,-194.17 931.48,-195.43 941.96,-196.66"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="941.38,-200.11 951.72,-197.8 942.2,-193.16 941.38,-200.11"/>
+<g id="a_edge11_Node000009_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M897.52,-182.5C911.75,-184.85 927.03,-187.37 941.83,-189.82"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="941.1,-193.24 951.53,-191.42 942.24,-186.34 941.1,-193.24"/>
 </a>
 </g>
 </g>
@@ -305,17 +314,35 @@
 <g id="Node000011" class="node">
 <title>Node11</title>
 <g id="a_Node000011"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a" target="_top" xlink:title="Data Transfer Object representing a grid entity.">
-<polygon fill="white" stroke="#666666" points="1095.5,-172 949.75,-172 949.75,-152 1095.5,-152 1095.5,-172"/>
-<text text-anchor="middle" x="1022.62" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.GridDto</text>
+<polygon fill="white" stroke="#666666" points="1095.5,-151 949.75,-151 949.75,-131 1095.5,-131 1095.5,-151"/>
+<text text-anchor="middle" x="1022.62" y="-137.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.GridDto</text>
 </a>
 </g>
 </g>
 <!-- Node9&#45;&gt;Node11 -->
-<g id="edge11_Node000009_Node000011" class="edge">
+<g id="edge13_Node000009_Node000011" class="edge">
 <title>Node9&#45;&gt;Node11</title>
-<g id="a_edge11_Node000009_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M910.31,-175.05C919.47,-173.98 928.87,-172.88 938.12,-171.79"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="938.29,-175.3 947.82,-170.65 937.48,-168.34 938.29,-175.3"/>
+<g id="a_edge13_Node000009_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M897.52,-161.5C913.41,-158.88 930.61,-156.04 946.99,-153.33"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="947.38,-156.81 956.68,-151.73 946.24,-149.91 947.38,-156.81"/>
+</a>
+</g>
+</g>
+<!-- Node10&#45;&gt;Node10 -->
+<g id="edge12_Node000010_Node000010" class="edge">
+<title>Node10&#45;&gt;Node10</title>
+<g id="a_edge12_Node000010_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M988.77,-219.44C982.45,-228.58 993.74,-237 1022.62,-237 1038.42,-237 1048.96,-234.48 1054.23,-230.71"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1057.65,-231.42 1056.18,-220.93 1050.79,-230.05 1057.65,-231.42"/>
+</a>
+</g>
+</g>
+<!-- Node11&#45;&gt;Node11 -->
+<g id="edge14_Node000011_Node000011" class="edge">
+<title>Node11&#45;&gt;Node11</title>
+<g id="a_edge14_Node000011_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M992.5,-151.34C979.62,-159.98 989.66,-169 1022.62,-169 1041.17,-169 1052.46,-166.14 1056.49,-162.11"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1059.84,-161.07 1053.25,-152.77 1053.22,-163.36 1059.84,-161.07"/>
 </a>
 </g>
 </g>

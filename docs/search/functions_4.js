@@ -7,7 +7,7 @@ var searchData=
   ['deletefile_4',['deleteFile',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html#abf8ac863bf9fd3d181f186e4fcbadd6e',1,'fr::softsf::sudokufx::common::util::FileSystemManager']]],
   ['detachfromplayer_5',['detachFromPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#af9a39220055040a9dac037482e947cdd',1,'fr::softsf::sudokufx::model::Game']]],
   ['detect_6',['detect',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a0fe209f6f8a9c6a7931358c9e60c4fec',1,'fr::softsf::sudokufx::common::enums::OsName']]],
-  ['displayalert_7',['displayAlert',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ac2d2e82d588454116cf17f332997e5e8',1,'fr::softsf::sudokufx::viewmodel::HelpViewModel']]],
+  ['displayalert_7',['displayAlert',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aca840cc2daae5861c308a264e5ab4e07',1,'fr::softsf::sudokufx::viewmodel::HelpViewModel']]],
   ['dureeenms_8',['dureeEnMs',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aee57e1ea56d413431a806492e5bfa40f',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
   ['dynamicfontsize_9',['DynamicFontSize',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a4da97a537f85a8f1dbb1ecc2e16c44f8',1,'fr::softsf::sudokufx::common::util::DynamicFontSize']]]
 ];

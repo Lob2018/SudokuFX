@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest" name="fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest">
-<area shape="rect" id="Node000001" title="Abstract base test class that provides:" alt="" coords="328,5,548,213"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html" title=" " alt="" coords="5,261,248,896"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="318,202,289,231,262,263,250,280,246,277,258,260,285,228,315,198"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html" title=" " alt="" coords="272,285,602,872"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="440,228,440,286,435,286,435,228"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html" title=" " alt="" coords="627,371,862,787"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="561,198,590,228,617,260,651,313,679,370,674,372,646,315,613,263,587,231,557,202"/>
+<area shape="rect" id="Node000001" title="Abstract base test class that provides:" alt="" coords="373,5,593,213"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html" title=" " alt="" coords="5,261,293,1072"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="364,201,334,231,307,263,295,281,291,278,303,260,330,227,360,197"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html" title=" " alt="" coords="318,373,648,960"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="485,228,485,374,480,374,480,228"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html" title=" " alt="" coords="672,459,907,875"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="605,195,636,226,662,260,690,307,713,356,750,458,745,460,709,358,685,309,658,263,632,230,602,199"/>
 </map>

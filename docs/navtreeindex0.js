@@ -20,6 +20,7 @@ var NAVTREEINDEX0 =
 "_coordinator_8java.html":[3,0,1,0,0,0,0,0,5,0],
 "_coordinator_u_test_8java.html":[3,0,1,1,0,0,0,0,3,0],
 "_crash_screen_view_8java.html":[3,0,1,0,0,0,0,0,8,3],
+"_current_grid_8java.html":[3,0,1,0,0,0,0,0,9,0,0],
 "_data_source_config_cds_8java.html":[3,0,1,0,0,0,0,0,2,0,2],
 "_data_source_config_default_8java.html":[3,0,1,0,0,0,0,0,2,0,3],
 "_data_source_config_test_8java.html":[3,0,1,0,0,0,0,0,2,0,4],
@@ -47,13 +48,13 @@ var NAVTREEINDEX0 =
 "_generic_list_view_factory_8java.html":[3,0,1,0,0,0,0,0,8,2,1],
 "_generic_list_view_factory_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,2,0,1],
 "_grid_8java.html":[3,0,1,0,0,0,0,0,4,2],
-"_grid_cell_view_model_8java.html":[3,0,1,0,0,0,0,0,9,0,0],
+"_grid_cell_view_model_8java.html":[3,0,1,0,0,0,0,0,9,0,1],
 "_grid_dto_8java.html":[3,0,1,0,0,0,0,0,3,3],
 "_grid_master_8java.html":[3,0,1,0,0,0,0,0,1,4,0,0],
 "_grid_master_u_test_8java.html":[3,0,1,1,0,0,0,0,0,0,0,0],
 "_grid_repository_8java.html":[3,0,1,0,0,0,0,0,6,2],
 "_grid_u_test_8java.html":[3,0,1,1,0,0,0,0,2,2],
-"_grid_view_model_8java.html":[3,0,1,0,0,0,0,0,9,0,1],
+"_grid_view_model_8java.html":[3,0,1,0,0,0,0,0,9,0,2],
 "_grid_view_model_u_test_8java.html":[3,0,1,1,0,0,0,0,0,0,0,1],
 "_grille_resolue_8java.html":[3,0,1,0,0,0,0,0,1,4,0,1],
 "_grille_resolue_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,3,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#ae15f8b51bfe0cd46c2c474d10a6fa6cd":[1,0,0,0,0,1,3,0,7,1],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#ae15f8b51bfe0cd46c2c474d10a6fa6cd":[2,0,0,0,0,1,3,0,7,1],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#aecfe9a9ed37a430d3481105d171d27d7":[1,0,0,0,0,1,3,0,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#aecfe9a9ed37a430d3481105d171d27d7":[2,0,0,0,0,1,3,0,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html":[1,0,0,0,0,1,4,1]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#aecfe9a9ed37a430d3481105d171d27d7":[2,0,0,0,0,1,3,0,7,2]
 };

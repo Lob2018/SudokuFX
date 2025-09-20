@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.MyAlert.initDialog" name="fr.softsf.sudokufx.view.component.MyAlert.initDialog">
+<area shape="rect" id="Node000001" title="Initializes the alert with optional size and visual styling." alt="" coords="5,5,231,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html#abee4f35ed1cce61e36758fc35a035826" title="Sets the cursor to HAND for all buttons in the alert&#39;s dialog pane." alt="" coords="279,5,504,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,24,263,24,263,29,231,29"/>
+</map>

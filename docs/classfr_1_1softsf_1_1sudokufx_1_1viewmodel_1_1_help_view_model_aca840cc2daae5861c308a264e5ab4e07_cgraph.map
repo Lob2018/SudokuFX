@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.HelpViewModel.displayAlert" name="fr.softsf.sudokufx.viewmodel.HelpViewModel.displayAlert">
+<area shape="rect" id="Node000001" title="Displays the given alert and waits for user interaction." alt="" coords="5,5,199,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html#abee4f35ed1cce61e36758fc35a035826" title="Sets the cursor to HAND for all buttons in the alert&#39;s dialog pane." alt="" coords="247,5,472,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,24,231,24,231,29,199,29"/>
+</map>

@@ -103,20 +103,36 @@ $(function(){initNavTree('_grid_view_model_u_test_8java.html',''); initResizable
   <div class="headertitle"><div class="title">GridViewModelUTest.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import java.util.stream.IntStream;</code><br />
-<code>import java.util.*;</code><br />
+<div class="textblock"><code>import java.text.MessageFormat;</code><br />
+<code>import java.util.ArrayList;</code><br />
+<code>import java.util.Arrays;</code><br />
+<code>import java.util.Collections;</code><br />
+<code>import java.util.List;</code><br />
+<code>import java.util.Objects;</code><br />
+<code>import java.util.Optional;</code><br />
+<code>import java.util.stream.IntStream;</code><br />
 <code>import javafx.beans.property.IntegerProperty;</code><br />
+<code>import org.junit.jupiter.api.BeforeEach;</code><br />
+<code>import org.junit.jupiter.api.Test;</code><br />
 <code>import org.junit.jupiter.api.extension.ExtendWith;</code><br />
-<code>import org.junit.jupiter.api.*;</code><br />
 <code>import org.testfx.framework.junit5.ApplicationExtension;</code><br />
+<code>import fr.softsf.sudokufx.common.enums.DifficultyLevel;</code><br />
+<code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
 <code>import fr.softsf.sudokufx.common.exception.JakartaValidator;</code><br />
+<code>import fr.softsf.sudokufx.dto.GameDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.GridDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.PlayerDto;</code><br />
 <code>import fr.softsf.sudokufx.service.ui.AudioService;</code><br />
 <code>import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.grid.CurrentGrid;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;</code><br />
+<code>import fr.softsf.sudokufx.common.enums.ToastLevels.INFO;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />
+<code>import org.mockito.ArgumentMatchers.any;</code><br />
+<code>import org.mockito.Mockito.*;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for GridViewModelUTest.java:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -141,7 +157,7 @@ Packages</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_120ed4da3e3217b1e7fc0b4f48568e79.html">test</a></li><li class="navelem"><a class="el" href="dir_97debbc39e3b917fca663601bb2b0709.html">java</a></li><li class="navelem"><a class="el" href="dir_8d7deeaf7546933b8f2dc85f32ff302b.html">fr</a></li><li class="navelem"><a class="el" href="dir_306a5b3cb699d06afc248376b3d7d66a.html">softsf</a></li><li class="navelem"><a class="el" href="dir_a649969fb0ce802377fa0d754848ffcd.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_46a088167676daeadf55ad93119dee59.html">common</a></li><li class="navelem"><a class="el" href="dir_9984c184c683b428ac5e773de9032c35.html">util</a></li><li class="navelem"><a class="el" href="dir_e12103ed684aa7039f4f603209f95d58.html">sudoku</a></li><li class="navelem"><a class="el" href="_grid_view_model_u_test_8java.html">GridViewModelUTest.java</a></li>
-    <li class="footer">Generated on Sun Sep 14 2025 11:28:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Sep 21 2025 01:43:12 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

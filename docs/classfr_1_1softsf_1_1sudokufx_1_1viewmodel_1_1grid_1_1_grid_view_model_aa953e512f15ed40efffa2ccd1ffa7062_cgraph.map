@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevel">
+<area shape="rect" id="Node000001" title="Applies the given difficulty level by generating a new grid, updating the cells, and returning the as..." alt="" coords="5,64,262,107"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6" title=" " alt="" coords="310,5,528,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,61,296,49,297,54,241,66"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#ab1bebf1bd508380d7ace78f40778e05c" title="Converts this difficulty level to its numeric representation." alt="" coords="580,31,804,73"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="262,75,564,57,564,62,262,80"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="310,123,528,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,105,297,116,296,122,240,110"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="529,34,564,37,564,43,528,39"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="576,109,807,152"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="528,136,561,134,561,140,529,141"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="576,176,807,219"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="529,163,565,170,564,175,528,168"/>
+</map>

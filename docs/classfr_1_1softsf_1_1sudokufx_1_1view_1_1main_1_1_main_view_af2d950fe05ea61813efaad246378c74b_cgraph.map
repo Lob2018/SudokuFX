@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.handleEasyLevelShow" name="fr.softsf.sudokufx.view.main.MainView.handleEasyLevelShow">
+<area shape="rect" id="Node000001" title="Applies the EASY difficulty level, updates the grid and level view models accordingly." alt="" coords="5,5,219,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="267,5,456,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,24,251,24,251,29,219,29"/>
+</map>

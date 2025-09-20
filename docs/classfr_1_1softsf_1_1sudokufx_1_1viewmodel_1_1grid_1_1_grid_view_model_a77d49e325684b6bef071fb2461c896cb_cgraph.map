@@ -1,8 +1,10 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.verifyGrid" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.verifyGrid">
-<area shape="rect" id="Node000001" title="Verifies the current grid state by attempting to solve it." alt="" coords="5,5,224,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="572,5,790,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,21,272,20,524,20,557,21,557,26,524,25,272,25,224,26"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="272,35,524,77"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,35,256,39,256,44,224,41"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="524,40,556,37,557,42,525,46"/>
+<area shape="rect" id="Node000001" title="Validates the grid by attempting to solve it." alt="" coords="5,64,224,107"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca" title="Handles all actions when a grid is successfully completed." alt="" coords="289,5,507,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,61,276,49,277,54,221,66"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="572,93,790,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,88,557,106,557,111,224,94"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="272,123,524,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,105,277,116,276,122,220,110"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="524,128,556,125,557,130,525,134"/>
 </map>

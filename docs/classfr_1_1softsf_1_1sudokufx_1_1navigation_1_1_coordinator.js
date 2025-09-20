@@ -5,6 +5,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
     [ "getCurrentPlayerLanguageIso", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a808e570a3279653f27ac99618f7ae175", null ],
     [ "getDefaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a8236a3100b3540f3c96b6b3db3042b30", null ],
     [ "openGitHubRepositoryReleaseUrl", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa12944693adf73a87865a6480b557d2f", null ],
+    [ "openMyKoFiUrl", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a4c9b577b2255db3bb76ea8dd8f4070ab", null ],
+    [ "openMyWebsiteUrl", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aaee4522d11b07eeb343f35f3afc4e9b8", null ],
     [ "setDefaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a51f623613b1cd7c8cd7cd2a10f3d420d", null ],
     [ "setDynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a960fcad685919fdee92c003c58aec2c0", null ],
     [ "setHostServices", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a84cabb06e38efe9e6b2ed6a0e8b151fb", null ],

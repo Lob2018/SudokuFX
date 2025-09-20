@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentGridFromModel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentGridFromModel">
+<area shape="rect" id="Node000001" title="Loads the current Sudoku grid from the model into the ViewModel." alt="" coords="5,72,269,115"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8" title="Represents the current loaded Sudoku grid, including its difficulty level and the percentage of possi..." alt="" coords="320,5,538,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,69,317,49,318,55,234,74"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#a7df76231e8b2c4e2180213007891b807" title="Resolves a DifficultyLevel from its byte representation." alt="" coords="317,72,541,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,91,301,91,301,96,269,96"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="320,139,538,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,113,318,132,317,137,233,118"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="590,105,820,148"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="538,144,574,140,575,145,539,149"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="589,172,820,215"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="539,171,574,175,573,180,538,176"/>
+</map>

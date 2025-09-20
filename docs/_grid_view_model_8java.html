@@ -104,12 +104,15 @@ $(function(){initNavTree('_grid_view_model_8java.html',''); initResizable(true);
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>import java.io.File;</code><br />
+<code>import java.text.MessageFormat;</code><br />
+<code>import java.time.LocalDateTime;</code><br />
 <code>import java.util.ArrayList;</code><br />
 <code>import java.util.Arrays;</code><br />
 <code>import java.util.Collections;</code><br />
 <code>import java.util.List;</code><br />
 <code>import java.util.Objects;</code><br />
 <code>import java.util.Optional;</code><br />
+<code>import java.util.stream.Collectors;</code><br />
 <code>import org.apache.commons.lang3.StringUtils;</code><br />
 <code>import org.slf4j.Logger;</code><br />
 <code>import org.slf4j.LoggerFactory;</code><br />
@@ -122,6 +125,11 @@ $(function(){initNavTree('_grid_view_model_8java.html',''); initResizable(true);
 <code>import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;</code><br />
 <code>import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;</code><br />
 <code>import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;</code><br />
+<code>import fr.softsf.sudokufx.dto.GameDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.GameLevelDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.GridDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.PlayerDto;</code><br />
+<code>import fr.softsf.sudokufx.service.business.PlayerService;</code><br />
 <code>import fr.softsf.sudokufx.service.ui.AudioService;</code><br />
 <code>import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;</code><br />
@@ -137,7 +145,7 @@ $(function(){initNavTree('_grid_view_model_8java.html',''); initResizable(true);
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html">fr.softsf.sudokufx.viewmodel.grid.GridViewModel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewModel component managing a 9x9 Sudoku grid.  <a href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ViewModel responsible for managing a 9x9 Sudoku grid.  <a href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -151,7 +159,7 @@ Packages</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5eb159725f84c66aafd839904a4acdd0.html">main</a></li><li class="navelem"><a class="el" href="dir_fd3f6763802dee1ad875f6c80eac0bda.html">java</a></li><li class="navelem"><a class="el" href="dir_91390426c0f30a4fef59e9ae252d2f44.html">fr</a></li><li class="navelem"><a class="el" href="dir_df66706d7efa0a9fd8002f7f6346de3d.html">softsf</a></li><li class="navelem"><a class="el" href="dir_757e38ffca8cea164996faf0234210f9.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_b56e19f1982a33341ef13b7017338f1f.html">viewmodel</a></li><li class="navelem"><a class="el" href="dir_0a730cde17e1af281b393bf018d6d65a.html">grid</a></li><li class="navelem"><a class="el" href="_grid_view_model_8java.html">GridViewModel.java</a></li>
-    <li class="footer">Generated on Sun Sep 14 2025 11:28:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Sep 21 2025 01:43:12 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

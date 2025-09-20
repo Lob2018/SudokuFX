@@ -37,7 +37,7 @@ var searchData=
   ['difficultyleveltest_34',['DifficultyLevelTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]],
   ['difficultyleveltest_2ejava_35',['DifficultyLevelTest.java',['../_difficulty_level_test_8java.html',1,'']]],
   ['dimension_36',['DIMENSION',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a1770bd06a646ed63872568ce3f17817e',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
-  ['displayalert_37',['displayAlert',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ac2d2e82d588454116cf17f332997e5e8',1,'fr::softsf::sudokufx::viewmodel::HelpViewModel']]],
+  ['displayalert_37',['displayAlert',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aca840cc2daae5861c308a264e5ab4e07',1,'fr::softsf::sudokufx::viewmodel::HelpViewModel']]],
   ['displaytextfunction_38',['displayTextFunction',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a11d63a6db6b7a0db119a5ab3ecec145d',1,'fr::softsf::sudokufx::view::component::list::GenericDtoListCell']]],
   ['disposable_5fsize_39',['DISPOSABLE_SIZE',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#abe49159bc73d4522e962bd745f9c8ffd',1,'fr::softsf::sudokufx::common::enums::ScreenSize']]],
   ['documentation_20of_20sudokufx_40',['Documentation of SudokuFX',['../index.html',1,'']]],

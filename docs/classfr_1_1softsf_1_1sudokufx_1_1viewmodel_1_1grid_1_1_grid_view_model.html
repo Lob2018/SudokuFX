@@ -107,7 +107,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>ViewModel component managing a 9x9 Sudoku grid.
+<p>ViewModel responsible for managing a 9x9 Sudoku grid.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.viewmodel.grid.GridViewModel:</div>
@@ -119,11 +119,8 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae0ae47e53b99f8829e4d8b45f317ab7e" id="r_ae0ae47e53b99f8829e4d8b45f317ab7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0ae47e53b99f8829e4d8b45f317ab7e">GridViewModel</a> (IGridMaster <a class="el" href="#a4d99b8d993ea1d81d18c436eea4b8e80">iGridMaster</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a> <a class="el" href="#a0e3033ee54eac7c612f8f73aae8c6742">activeMenuOrSubmenuViewModel</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a> <a class="el" href="#a42da36ba8d2ce37205b34470bfe77837">audioService</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> <a class="el" href="#a283f954f3e29f3f23da75c01172040e9">playerStateHolder</a>)</td></tr>
-<tr class="separator:ae0ae47e53b99f8829e4d8b45f317ab7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae87f46d8f99a5c503ce3d993b1ff6e8f" id="r_ae87f46d8f99a5c503ce3d993b1ff6e8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae87f46d8f99a5c503ce3d993b1ff6e8f">applyLevel</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
-<tr class="memdesc:ae87f46d8f99a5c503ce3d993b1ff6e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given difficulty level by generating a new grid (using level-specific parameters), updating the cell values accordingly, and returning the stars completion percentage.  <br /></td></tr>
-<tr class="separator:ae87f46d8f99a5c503ce3d993b1ff6e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabac10a2a71b715e5543565d040934cc" id="r_aabac10a2a71b715e5543565d040934cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabac10a2a71b715e5543565d040934cc">GridViewModel</a> (IGridMaster <a class="el" href="#a4d99b8d993ea1d81d18c436eea4b8e80">iGridMaster</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a> <a class="el" href="#a0e3033ee54eac7c612f8f73aae8c6742">activeMenuOrSubmenuViewModel</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a> <a class="el" href="#a42da36ba8d2ce37205b34470bfe77837">audioService</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> <a class="el" href="#a283f954f3e29f3f23da75c01172040e9">playerStateHolder</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a> <a class="el" href="#a619c76b766eb92230bd406e37ae30ebd">playerService</a>)</td></tr>
+<tr class="separator:aabac10a2a71b715e5543565d040934cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca7e10ab87fe7e7e3a36ec39588ffdc9" id="r_aca7e10ab87fe7e7e3a36ec39588ffdc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca7e10ab87fe7e7e3a36ec39588ffdc9">clearGrid</a> ()</td></tr>
 <tr class="memdesc:aca7e10ab87fe7e7e3a36ec39588ffdc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the text in all cells.  <br /></td></tr>
 <tr class="separator:aca7e10ab87fe7e7e3a36ec39588ffdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -136,20 +133,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a934f4d646b09b11a0242b353530ea9f3" id="r_a934f4d646b09b11a0242b353530ea9f3"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a934f4d646b09b11a0242b353530ea9f3">getCellViewModels</a> ()</td></tr>
 <tr class="memdesc:a934f4d646b09b11a0242b353530ea9f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an unmodifiable list of all cell view models.  <br /></td></tr>
 <tr class="separator:a934f4d646b09b11a0242b353530ea9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ae2327e3a29d25f4bdc6198657813bf" id="r_a3ae2327e3a29d25f4bdc6198657813bf"><td class="memItemLeft" align="right" valign="top">Optional&lt; <a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8">CurrentGrid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ae2327e3a29d25f4bdc6198657813bf">getCurrentGridFromModel</a> ()</td></tr>
+<tr class="memdesc:a3ae2327e3a29d25f4bdc6198657813bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the current Sudoku grid from the model into the ViewModel.  <br /></td></tr>
+<tr class="separator:a3ae2327e3a29d25f4bdc6198657813bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff873a578f9c184b68af21c6bae828a7" id="r_aff873a578f9c184b68af21c6bae828a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff873a578f9c184b68af21c6bae828a7">init</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> <a class="el" href="#a79f91310cd0f40e67f1fc5ca80fc698c">toaster</a>)</td></tr>
-<tr class="memdesc:aff873a578f9c184b68af21c6bae828a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the 9x9 Sudoku grid by creating 81 <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a></code> instances, each with a unique ID and coordinates.  <br /></td></tr>
+<tr class="memdesc:aff873a578f9c184b68af21c6bae828a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the 9x9 Sudoku grid by creating 81 <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a></code> instances with unique IDs and row/column coordinates.  <br /></td></tr>
 <tr class="separator:aff873a578f9c184b68af21c6bae828a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accb66801fa9a7d8993ba472b4eb28932" id="r_accb66801fa9a7d8993ba472b4eb28932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accb66801fa9a7d8993ba472b4eb28932">setValues</a> (List&lt; String &gt; values)</td></tr>
-<tr class="memdesc:accb66801fa9a7d8993ba472b4eb28932"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the text values and editability of all cells.  <br /></td></tr>
-<tr class="separator:accb66801fa9a7d8993ba472b4eb28932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa953e512f15ed40efffa2ccd1ffa7062" id="r_aa953e512f15ed40efffa2ccd1ffa7062"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa953e512f15ed40efffa2ccd1ffa7062">setCurrentGridWithLevel</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
+<tr class="memdesc:aa953e512f15ed40efffa2ccd1ffa7062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given difficulty level by generating a new grid, updating the cells, and returning the associated completion percentage.  <br /></td></tr>
+<tr class="separator:aa953e512f15ed40efffa2ccd1ffa7062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7607876adb740f7f1d55b5016faba0c" id="r_ab7607876adb740f7f1d55b5016faba0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7607876adb740f7f1d55b5016faba0c">setValues</a> (List&lt; String &gt; values, boolean checkEditable)</td></tr>
+<tr class="memdesc:ab7607876adb740f7f1d55b5016faba0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all 81 cell values and optionally their editability.  <br /></td></tr>
+<tr class="separator:ab7607876adb740f7f1d55b5016faba0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a4fdf2930215eea12812190e33e1ddeca" id="r_a4fdf2930215eea12812190e33e1ddeca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fdf2930215eea12812190e33e1ddeca">celebrateVictory</a> ()</td></tr>
+<tr class="memdesc:a4fdf2930215eea12812190e33e1ddeca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles all actions when a grid is successfully completed.  <br /></td></tr>
+<tr class="separator:a4fdf2930215eea12812190e33e1ddeca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad536719f789ab2bb851aa4b26d44c075" id="r_ad536719f789ab2bb851aa4b26d44c075"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad536719f789ab2bb851aa4b26d44c075">isCompletelyCompleted</a> ()</td></tr>
 <tr class="memdesc:ad536719f789ab2bb851aa4b26d44c075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if all 81 cells contain valid single-digit values (1-9).  <br /></td></tr>
 <tr class="separator:ad536719f789ab2bb851aa4b26d44c075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f5d9454d21ce1290e08937c1dbf483" id="r_a00f5d9454d21ce1290e08937c1dbf483"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00f5d9454d21ce1290e08937c1dbf483">parseCellValue</a> (String value)</td></tr>
+<tr class="memdesc:a00f5d9454d21ce1290e08937c1dbf483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a cell's string value to an integer.  <br /></td></tr>
+<tr class="separator:a00f5d9454d21ce1290e08937c1dbf483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad1610b7e07349137ebf0d3d592a5b09" id="r_aad1610b7e07349137ebf0d3d592a5b09"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad1610b7e07349137ebf0d3d592a5b09">persistGridValue</a> ()</td></tr>
+<tr class="memdesc:aad1610b7e07349137ebf0d3d592a5b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists the current grid state for the active player’s selected game.  <br /></td></tr>
+<tr class="separator:aad1610b7e07349137ebf0d3d592a5b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b73068471edb726968c94d30bc79a6" id="r_a85b73068471edb726968c94d30bc79a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85b73068471edb726968c94d30bc79a6">persistNewGame</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, GrillesCrees grillesCrees)</td></tr>
+<tr class="separator:a85b73068471edb726968c94d30bc79a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d49e325684b6bef071fb2461c896cb" id="r_a77d49e325684b6bef071fb2461c896cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77d49e325684b6bef071fb2461c896cb">verifyGrid</a> ()</td></tr>
-<tr class="memdesc:a77d49e325684b6bef071fb2461c896cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies the current grid state by attempting to solve it.  <br /></td></tr>
+<tr class="memdesc:a77d49e325684b6bef071fb2461c896cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the grid by attempting to solve it.  <br /></td></tr>
 <tr class="separator:a77d49e325684b6bef071fb2461c896cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -162,8 +176,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a08effb35262e7a92de8e4bd41fc8e7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d99b8d993ea1d81d18c436eea4b8e80" id="r_a4d99b8d993ea1d81d18c436eea4b8e80"><td class="memItemLeft" align="right" valign="top">final IGridMaster&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d99b8d993ea1d81d18c436eea4b8e80">iGridMaster</a></td></tr>
 <tr class="separator:a4d99b8d993ea1d81d18c436eea4b8e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619c76b766eb92230bd406e37ae30ebd" id="r_a619c76b766eb92230bd406e37ae30ebd"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a619c76b766eb92230bd406e37ae30ebd">playerService</a></td></tr>
+<tr class="separator:a619c76b766eb92230bd406e37ae30ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a283f954f3e29f3f23da75c01172040e9" id="r_a283f954f3e29f3f23da75c01172040e9"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a283f954f3e29f3f23da75c01172040e9">playerStateHolder</a></td></tr>
 <tr class="separator:a283f954f3e29f3f23da75c01172040e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a871ec83dc104a8d8ca4fbd3a1474af" id="r_a5a871ec83dc104a8d8ca4fbd3a1474af"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a871ec83dc104a8d8ca4fbd3a1474af">suppressCellsListeners</a> = false</td></tr>
+<tr class="separator:a5a871ec83dc104a8d8ca4fbd3a1474af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f91310cd0f40e67f1fc5ca80fc698c" id="r_a79f91310cd0f40e67f1fc5ca80fc698c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79f91310cd0f40e67f1fc5ca80fc698c">toaster</a></td></tr>
 <tr class="separator:a79f91310cd0f40e67f1fc5ca80fc698c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -177,11 +195,11 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:aca2db631f0e0d1eb751367a0c0237867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ViewModel component managing a 9x9 Sudoku grid. </p>
-<p>Provides observable cell view models and methods to manipulate grid data. </p>
+<div class="textblock"><p>ViewModel responsible for managing a 9x9 Sudoku grid. </p>
+<p>Provides observable cell view models, persistence hooks, and methods for applying difficulty levels, validating completion, and handling game state updates. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ae0ae47e53b99f8829e4d8b45f317ab7e" name="ae0ae47e53b99f8829e4d8b45f317ab7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0ae47e53b99f8829e4d8b45f317ab7e">&#9670;&#160;</a></span>GridViewModel()</h2>
+<a id="aabac10a2a71b715e5543565d040934cc" name="aabac10a2a71b715e5543565d040934cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabac10a2a71b715e5543565d040934cc">&#9670;&#160;</a></span>GridViewModel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +222,12 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a></td>          <td class="paramname"><span class="paramname"><em>playerStateHolder</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a></td>          <td class="paramname"><span class="paramname"><em>playerStateHolder</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a></td>          <td class="paramname"><span class="paramname"><em>playerService</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -212,42 +235,31 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae87f46d8f99a5c503ce3d993b1ff6e8f" name="ae87f46d8f99a5c503ce3d993b1ff6e8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae87f46d8f99a5c503ce3d993b1ff6e8f">&#9670;&#160;</a></span>applyLevel()</h2>
+<a id="a4fdf2930215eea12812190e33e1ddeca" name="a4fdf2930215eea12812190e33e1ddeca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fdf2930215eea12812190e33e1ddeca">&#9670;&#160;</a></span>celebrateVictory()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applyLevel </td>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridViewModel.celebrateVictory </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Applies the given difficulty level by generating a new grid (using level-specific parameters), updating the cell values accordingly, and returning the stars completion percentage. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">level</td><td>the difficulty level to apply; must not be null </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the stars completion percentage associated with the applied level </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if the difficulty level is null </td></tr>
-  </table>
-  </dd>
-</dl>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_ae87f46d8f99a5c503ce3d993b1ff6e8f_cgraph.svg" width="100%" height="415"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
+<p>Handles all actions when a grid is successfully completed. </p>
+<p>Displays a victory toast to the player and optionally plays their configured victory audio. </p>
 
 </div>
 </div>
@@ -334,6 +346,44 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a3ae2327e3a29d25f4bdc6198657813bf" name="a3ae2327e3a29d25f4bdc6198657813bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ae2327e3a29d25f4bdc6198657813bf">&#9670;&#160;</a></span>getCurrentGridFromModel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional&lt; <a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8">CurrentGrid</a> &gt; fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentGridFromModel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loads the current Sudoku grid from the model into the ViewModel. </p>
+<p>This method performs the following steps:</p>
+<ol>
+<li>
+Checks if a default grid exists for the selected game; returns empty if not. </li>
+<li>
+Reads the difficulty level and completion percentage directly from the model. </li>
+<li>
+Loads the default grid values into the ViewModel (with editable or not). </li>
+<li>
+Loads the current grid values into the ViewModel. </li>
+</ol>
+<dl class="section return"><dt>Returns</dt><dd>an <code><a class="el" href="">Optional</a></code> containing a <code><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8">CurrentGrid</a></code> with the difficulty level and completion percentage if a grid exists, otherwise <code><a class="el" href="">Optional#empty()</a></code>. </dd></dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_a3ae2327e3a29d25f4bdc6198657813bf_cgraph.svg" width="100%" height="465"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="aff873a578f9c184b68af21c6bae828a7" name="aff873a578f9c184b68af21c6bae828a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff873a578f9c184b68af21c6bae828a7">&#9670;&#160;</a></span>init()</h2>
 
@@ -349,18 +399,22 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the 9x9 Sudoku grid by creating 81 <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a></code> instances, each with a unique ID and coordinates. </p>
-<p>Also sets up listeners on each cell's text property to:</p>
+<p>Initializes the 9x9 Sudoku grid by creating 81 <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a></code> instances with unique IDs and row/column coordinates. </p>
+<p>Each cell's text property is attached to a listener that:</p>
 <ul>
 <li>
-Automatically verify the grid when in <code class="JavaDocCode">SOLVE</code> mode or when all cells are completed with one value. </li>
+Ignores changes when <code><a class="el" href="#a5a871ec83dc104a8d8ca4fbd3a1474af">suppressCellsListeners</a></code> is <code class="JavaDocCode">true</code> (used for bulk updates). </li>
 <li>
-Stop any playing audio otherwise. </li>
+Automatically verifies the grid in <code class="JavaDocCode">SOLVE</code> mode or when the grid is fully filled. </li>
+<li>
+Stops background audio when appropriate. </li>
+<li>
+Persists updated grid values if the player-modifiable grid differs from the default. </li>
 </ul>
-<p>This method should be called once after bean construction.</p>
+<p>Listeners handle both default grids (editable according to initial values) and player-entered grids. The <code class="JavaDocCode">ToasterVBox</code> is used to display notifications if needed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">toaster</td><td>the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code> instance for displaying notifications if needed </td></tr>
+    <tr><td class="paramname">toaster</td><td>the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code> instance used for notifications </td></tr>
   </table>
   </dd>
 </dl>
@@ -369,7 +423,7 @@ Stop any playing audio otherwise. </li>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_aff873a578f9c184b68af21c6bae828a7_cgraph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_aff873a578f9c184b68af21c6bae828a7_cgraph.svg" width="100%" height="522"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -409,8 +463,153 @@ Stop any playing audio otherwise. </li>
 
 </div>
 </div>
-<a id="accb66801fa9a7d8993ba472b4eb28932" name="accb66801fa9a7d8993ba472b4eb28932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accb66801fa9a7d8993ba472b4eb28932">&#9670;&#160;</a></span>setValues()</h2>
+<a id="a00f5d9454d21ce1290e08937c1dbf483" name="a00f5d9454d21ce1290e08937c1dbf483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00f5d9454d21ce1290e08937c1dbf483">&#9670;&#160;</a></span>parseCellValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.viewmodel.grid.GridViewModel.parseCellValue </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a cell's string value to an integer. </p>
+<p>Returns 0 for empty or invalid values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>the cell value as a string </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the parsed integer, or 0 if blank/invalid </dd></dl>
+
+</div>
+</div>
+<a id="aad1610b7e07349137ebf0d3d592a5b09" name="aad1610b7e07349137ebf0d3d592a5b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad1610b7e07349137ebf0d3d592a5b09">&#9670;&#160;</a></span>persistGridValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistGridValue </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Persists the current grid state for the active player’s selected game. </p>
+<p>Updates the <code><a class="el" href="">GridDto</a></code> only if the grid values have changed. </p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_aad1610b7e07349137ebf0d3d592a5b09_cgraph.svg" width="496" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a85b73068471edb726968c94d30bc79a6" name="a85b73068471edb726968c94d30bc79a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b73068471edb726968c94d30bc79a6">&#9670;&#160;</a></span>persistNewGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistNewGame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GrillesCrees</td>          <td class="paramname"><span class="paramname"><em>grillesCrees</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_a85b73068471edb726968c94d30bc79a6_cgraph.svg" width="502" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa953e512f15ed40efffa2ccd1ffa7062" name="aa953e512f15ed40efffa2ccd1ffa7062"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa953e512f15ed40efffa2ccd1ffa7062">&#9670;&#160;</a></span>setCurrentGridWithLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies the given difficulty level by generating a new grid, updating the cells, and returning the associated completion percentage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>the difficulty level to apply (must not be null) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the percentage of possibilities for the applied level </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">level</code> is null </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_aa953e512f15ed40efffa2ccd1ffa7062_cgraph.svg" width="100%" height="468"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab7607876adb740f7f1d55b5016faba0c" name="ab7607876adb740f7f1d55b5016faba0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7607876adb740f7f1d55b5016faba0c">&#9670;&#160;</a></span>setValues()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,32 +617,44 @@ Stop any playing audio otherwise. </li>
         <tr>
           <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setValues </td>
           <td>(</td>
-          <td class="paramtype">List&lt; String &gt;</td>          <td class="paramname"><span class="paramname"><em>values</em></span></td><td>)</td>
+          <td class="paramtype">List&lt; String &gt;</td>          <td class="paramname"><span class="paramname"><em>values</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>checkEditable</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the text values and editability of all cells. </p>
-<p>Cells are editable if their value is "0", non-editable otherwise.</p>
+<p>Sets all 81 cell values and optionally their editability. </p>
+<ul>
+<li>
+When <code class="JavaDocCode">checkEditable</code> is <code class="JavaDocCode">true</code>, cells with value "0" are editable, others are not. </li>
+<li>
+When <code class="JavaDocCode">checkEditable</code> is <code class="JavaDocCode">false</code>, editability is left unchanged (used for player-entered grids). </li>
+<li>
+Listeners are suppressed for all cells during bulk updates. </li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">values</td><td>list of exactly 81 non-null strings </td></tr>
+    <tr><td class="paramname">values</td><td>list of 81 non-null strings </td></tr>
+    <tr><td class="paramname">checkEditable</td><td>whether to update cell editability </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if values is null, has incorrect size (81), or contains nulls </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">values</code> is null, not size 81, or contains nulls </td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_accb66801fa9a7d8993ba472b4eb28932_cgraph.svg" width="508" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_ab7607876adb740f7f1d55b5016faba0c_cgraph.svg" width="508" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -471,14 +682,14 @@ Stop any playing audio otherwise. </li>
 </table>
 </div><div class="memdoc">
 
-<p>Verifies the current grid state by attempting to solve it. </p>
-<p>Converts cell values to integer array, calls the grid solver, and outputs solution status and completion percentage. </p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<p>Validates the grid by attempting to solve it. </p>
+<p>If solved and matching the completed state, triggers victory handling. </p>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-8-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_a77d49e325684b6bef071fb2461c896cb_cgraph.svg" width="100%" height="362"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_a77d49e325684b6bef071fb2461c896cb_cgraph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -616,6 +827,28 @@ Stop any playing audio otherwise. </li>
 
 </div>
 </div>
+<a id="a619c76b766eb92230bd406e37ae30ebd" name="a619c76b766eb92230bd406e37ae30ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a619c76b766eb92230bd406e37ae30ebd">&#9670;&#160;</a></span>playerService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a> fr.softsf.sudokufx.viewmodel.grid.GridViewModel.playerService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a283f954f3e29f3f23da75c01172040e9" name="a283f954f3e29f3f23da75c01172040e9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a283f954f3e29f3f23da75c01172040e9">&#9670;&#160;</a></span>playerStateHolder</h2>
 
@@ -627,6 +860,28 @@ Stop any playing audio otherwise. </li>
       <table class="memname">
         <tr>
           <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> fr.softsf.sudokufx.viewmodel.grid.GridViewModel.playerStateHolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5a871ec83dc104a8d8ca4fbd3a1474af" name="a5a871ec83dc104a8d8ca4fbd3a1474af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a871ec83dc104a8d8ca4fbd3a1474af">&#9670;&#160;</a></span>suppressCellsListeners</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean fr.softsf.sudokufx.viewmodel.grid.GridViewModel.suppressCellsListeners = false</td>
         </tr>
       </table>
   </td>
@@ -691,7 +946,7 @@ Stop any playing audio otherwise. </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html">grid</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html">GridViewModel</a></li>
-    <li class="footer">Generated on Sun Sep 14 2025 11:28:26 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Sep 21 2025 01:43:13 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

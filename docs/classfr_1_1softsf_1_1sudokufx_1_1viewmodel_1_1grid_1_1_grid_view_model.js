@@ -1,14 +1,19 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
 [
-    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ae0ae47e53b99f8829e4d8b45f317ab7e", null ],
-    [ "applyLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ae87f46d8f99a5c503ce3d993b1ff6e8f", null ],
+    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aabac10a2a71b715e5543565d040934cc", null ],
+    [ "celebrateVictory", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca", null ],
     [ "clearGrid", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca7e10ab87fe7e7e3a36ec39588ffdc9", null ],
     [ "getAllValues", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2", null ],
     [ "getCellViewModelById", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aa52d8337a75c3b395b1daee7aa5b3f80", null ],
     [ "getCellViewModels", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a934f4d646b09b11a0242b353530ea9f3", null ],
+    [ "getCurrentGridFromModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a3ae2327e3a29d25f4bdc6198657813bf", null ],
     [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aff873a578f9c184b68af21c6bae828a7", null ],
     [ "isCompletelyCompleted", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075", null ],
-    [ "setValues", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#accb66801fa9a7d8993ba472b4eb28932", null ],
+    [ "parseCellValue", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a00f5d9454d21ce1290e08937c1dbf483", null ],
+    [ "persistGridValue", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09", null ],
+    [ "persistNewGame", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6", null ],
+    [ "setCurrentGridWithLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aa953e512f15ed40efffa2ccd1ffa7062", null ],
+    [ "setValues", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c", null ],
     [ "verifyGrid", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb", null ],
     [ "activeMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a0e3033ee54eac7c612f8f73aae8c6742", null ],
     [ "audioService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a42da36ba8d2ce37205b34470bfe77837", null ],
@@ -16,7 +21,9 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "GRID_SIZE", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#afd1217d7084a63e6556c5c360cee4a07", null ],
     [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4d99b8d993ea1d81d18c436eea4b8e80", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aeef26ff53fb1cefb9fc7b6e68b420d47", null ],
+    [ "playerService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a619c76b766eb92230bd406e37ae30ebd", null ],
     [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a283f954f3e29f3f23da75c01172040e9", null ],
+    [ "suppressCellsListeners", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a5a871ec83dc104a8d8ca4fbd3a1474af", null ],
     [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a79f91310cd0f40e67f1fc5ca80fc698c", null ],
     [ "TOTAL_CELLS", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca2db631f0e0d1eb751367a0c0237867", null ]
 ];
