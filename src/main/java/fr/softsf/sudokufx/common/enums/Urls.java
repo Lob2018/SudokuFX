@@ -24,7 +24,8 @@ public enum Urls {
                     + "/"
                     + REPOSITORY_NAME.getUrl()
                     + "/tags"),
-    MY_WEBSITE_URL("https://soft64.fr");
+    MY_WEBSITE_URL("https://soft64.fr"),
+    MY_KOFI_URL("https://ko-fi.com/lob2018");
 
     private final String url;
 
