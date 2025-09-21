@@ -1,5 +1,6 @@
 var NAVTREEINDEX1 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#aecfe9a9ed37a430d3481105d171d27d7":[2,0,0,0,0,1,3,0,7,2],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html":[1,0,0,0,0,1,4,1],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html":[2,0,0,0,0,1,4,1],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html#a11a4ad49c5d299ff5dd1e434eb2e0295":[1,0,0,0,0,1,4,1,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX1 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ab7a77eec94175438dfe5d10b7b10deb6":[2,0,0,0,0,1,4,0,2,12],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ab965a418e20c7e7b4e55f65420858a5b":[1,0,0,0,0,1,4,0,2,11],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ab965a418e20c7e7b4e55f65420858a5b":[2,0,0,0,0,1,4,0,2,11],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ac43853a781e8ff3b87873821a38a2049":[1,0,0,0,0,1,4,0,2,1],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ac43853a781e8ff3b87873821a38a2049":[2,0,0,0,0,1,4,0,2,1]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ac43853a781e8ff3b87873821a38a2049":[1,0,0,0,0,1,4,0,2,1]
 };

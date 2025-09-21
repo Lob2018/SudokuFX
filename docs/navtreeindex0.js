@@ -141,10 +141,11 @@ var NAVTREEINDEX0 =
 "_player_language_dto_8java.html":[3,0,1,0,0,0,0,0,3,7],
 "_player_language_repository_8java.html":[3,0,1,0,0,0,0,0,6,5],
 "_player_language_service_8java.html":[3,0,1,0,0,0,0,0,7,0,2],
+"_player_language_service_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,1,0,1],
 "_player_language_u_test_8java.html":[3,0,1,1,0,0,0,0,2,5],
 "_player_repository_8java.html":[3,0,1,0,0,0,0,0,6,6],
 "_player_service_8java.html":[3,0,1,0,0,0,0,0,7,0,3],
-"_player_service_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,1,0,1],
+"_player_service_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,1,0,2],
 "_player_state_holder_8java.html":[3,0,1,0,0,0,0,0,9,1,0],
 "_player_state_holder_i_test_8java.html":[3,0,1,1,0,0,0,0,4,1,2,0,0],
 "_player_state_holder_u_test_8java.html":[3,0,1,1,0,0,0,0,5,0,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#a12b7e192b0c4f6bc3a68667aeed2b281":[2,0,0,0,0,1,3,0,7,0],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#ae15f8b51bfe0cd46c2c474d10a6fa6cd":[1,0,0,0,0,1,3,0,7,1],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#ae15f8b51bfe0cd46c2c474d10a6fa6cd":[2,0,0,0,0,1,3,0,7,1],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#aecfe9a9ed37a430d3481105d171d27d7":[1,0,0,0,0,1,3,0,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#aecfe9a9ed37a430d3481105d171d27d7":[2,0,0,0,0,1,3,0,7,2]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#aecfe9a9ed37a430d3481105d171d27d7":[1,0,0,0,0,1,3,0,7,2]
 };

@@ -180,6 +180,7 @@ var annotated_dup =
               [ "service", null, [
                 [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business.html", [
                   [ "OptionsServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test" ],
+                  [ "PlayerLanguageServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_language_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_language_service_u_test" ],
                   [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test" ]
                 ] ],
                 [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui.html", [

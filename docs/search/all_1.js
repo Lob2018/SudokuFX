@@ -16,7 +16,7 @@ var searchData=
   ['activemenuorsubmenuviewmodelutest_13',['ActiveMenuOrSubmenuViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel']]],
   ['activemenuorsubmenuviewmodelutest_2ejava_14',['ActiveMenuOrSubmenuViewModelUTest.java',['../_active_menu_or_submenu_view_model_u_test_8java.html',1,'']]],
   ['activity_20diagram_20for_20invalid_20authorization_15',['Activity diagram for invalid authorization',['../index.html#activity-diagram-for-invalid-authorization',1,'']]],
-  ['addsupportbutton_16',['addSupportButton',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#a6bc4c7f8162ba177b10338061c1ce2e9',1,'fr::softsf::sudokufx::viewmodel::HelpViewModel']]],
+  ['adddonationbutton_16',['addDonationButton',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ae14ec8034ad0e41ba69312b7fd46ee48',1,'fr::softsf::sudokufx::viewmodel::HelpViewModel']]],
   ['addtoast_17',['addToast',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#ad5dd108caa143c370a7e22825923a776',1,'fr::softsf::sudokufx::view::component::toaster::ToasterVBox']]],
   ['addtoastwithduration_18',['addToastWithDuration',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a832c663e6776430ef21c96f38bfa5caf',1,'fr::softsf::sudokufx::view::component::toaster::ToasterVBox']]],
   ['addtokeystore_19',['addToKeystore',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a7b8751ac0c7de3f434f5500915e66c28',1,'fr::softsf::sudokufx::config::database::ApplicationKeystore']]],

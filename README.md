@@ -8,6 +8,8 @@ Dive into the world of Sudoku with a game that offers:
 
 Challenge your mind and enjoy hours of logical fun with SudokuFX!
 
+[![Ko-fi](https://img.shields.io/badge/Make_a_voluntary_donation-016530?logo=ko-fi&logoColor=white)](https://ko-fi.com/I3I61LKFWZ)
+
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)<br>
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10875/badge)](https://www.bestpractices.dev/projects/10875)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudokuFX/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudokuFX)

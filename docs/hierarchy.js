@@ -197,6 +197,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerLanguage.PlayerLanguageBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_1_1_player_language_builder.html", null ],
     [ "fr.softsf.sudokufx.service.business.PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.service.business.PlayerLanguageServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_language_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerLanguageUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html", null ],
     [ "fr.softsf.sudokufx.service.business.PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html", null ],

@@ -1,0 +1,16 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerLanguageServiceUTest" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerLanguageServiceUTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="334,625,621,801"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" title="Repository interface for PlayerLanguage entities." alt="" coords="19,175,196,276"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,277,74,339,63,413,63,452,68,490,79,526,96,560,117,586,141,608,196,645,257,671,319,689,317,694,255,676,193,649,137,612,113,589,92,563,74,528,63,491,58,452,58,412,69,337,86,275"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html" title="Service for managing PlayerLanguage entities." alt="" coords="171,375,481,561"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="137,274,161,312,190,349,201,361,197,365,186,352,157,315,132,277"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,5,209,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,105,110,175,104,175,104,105"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="561,145,792,305"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="666,306,637,429,615,497,588,563,559,613,555,610,583,560,610,495,632,427,661,305"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="571,307,506,353,484,368,481,363,503,348,568,303"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html" title="This interface defines methods for mapping objects of type PlayerLanguage to objects of type PlayerLa..." alt="" coords="245,140,524,311"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="493,309,507,334,519,367,527,403,532,475,526,545,513,609,508,608,520,545,526,475,522,403,514,369,502,336,488,312"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="367,311,355,359,350,358,361,310"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="386,560,417,610,412,612,381,562"/>
+</map>

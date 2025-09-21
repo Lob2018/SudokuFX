@@ -9,6 +9,8 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerLanguageMapper;
@@ -16,8 +18,6 @@ import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.model.PlayerLanguage;
 import fr.softsf.sudokufx.repository.PlayerLanguageRepository;
 import fr.softsf.sudokufx.service.business.PlayerLanguageService;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -41,10 +41,7 @@ class PlayerLanguageServiceUTest {
     @ParameterizedTest
     @ValueSource(strings = {"FR", "EN"})
     void givenExistingIso_whenGetByIso_thenReturnsValidatedDto(String iso) {
-        PlayerLanguage entity = PlayerLanguage.builder()
-                .playerlanguageid(1L)
-                .iso(iso)
-                .build();
+        PlayerLanguage entity = PlayerLanguage.builder().playerlanguageid(1L).iso(iso).build();
         PlayerLanguageDto dto = new PlayerLanguageDto(1L, iso);
         when(repository.findByIso(iso)).thenReturn(Optional.of(entity));
         when(mapper.mapPlayerLanguageToDto(entity)).thenReturn(dto);
