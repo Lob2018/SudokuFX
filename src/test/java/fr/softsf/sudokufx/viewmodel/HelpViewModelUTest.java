@@ -90,13 +90,13 @@ class HelpViewModelUTest {
         assertEquals(
                 I18n.INSTANCE.getValue("menu.button.help.dialog.information.title"),
                 capturedAlert.getTitle());
-        String supportText = I18n.INSTANCE.getValue("menu.button.help.dialog.information.support");
+        String supportText = I18n.INSTANCE.getValue("menu.button.help.dialog.information.donation");
         ButtonType supportButtonType =
                 capturedAlert.getButtonTypes().stream()
                         .filter(bt -> supportText.equals(bt.getText()))
                         .findFirst()
                         .orElse(null);
-        assertNotNull(supportButtonType, "Support button should exist");
+        assertNotNull(supportButtonType, "Donation button should exist");
         Button supportButton =
                 (Button) capturedAlert.getDialogPane().lookupButton(supportButtonType);
         supportButton.getOnAction().handle(null);
