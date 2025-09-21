@@ -29,7 +29,6 @@ import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
-import static fr.softsf.sudokufx.common.enums.Urls.MY_KOFI_URL;
 import static fr.softsf.sudokufx.common.enums.Urls.MY_WEBSITE_URL;
 
 /**
@@ -233,15 +232,6 @@ public class Coordinator {
             LOG.warn(
                     "▓▓ openMyWebsiteUrl hostServices not set yet: cannot open my website"
                             + " URL");
-        }
-    }
-
-    /** Opens my ko-fi's page in the user's default web browser. */
-    public void openMyKoFiUrl() {
-        if (hostServices != null) {
-            hostServices.showDocument(MY_KOFI_URL.getUrl());
-        } else {
-            LOG.warn("▓▓ openMyKoFiUrl hostServices not set yet: cannot open my Ko-fi" + " URL");
         }
     }
 

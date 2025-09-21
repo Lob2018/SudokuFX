@@ -74,36 +74,6 @@ class HelpViewModelUTest {
     }
 
     @Test
-    void whenShowHelp_thenAlertIsBuilt_withCorrectTitle_andSupportButton(FxRobot robot) {
-        HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolder, mockCoordinator));
-        doAnswer(
-                        invocation -> {
-                            Platform.runLater(invocation.getArgument(0, MyAlert.class)::show);
-                            return null;
-                        })
-                .when(spyViewModel)
-                .displayAlert(any());
-        robot.interact(spyViewModel::showHelp);
-        ArgumentCaptor<MyAlert> captor = ArgumentCaptor.forClass(MyAlert.class);
-        verify(spyViewModel).displayAlert(captor.capture());
-        MyAlert capturedAlert = captor.getValue();
-        assertEquals(
-                I18n.INSTANCE.getValue("menu.button.help.dialog.information.title"),
-                capturedAlert.getTitle());
-        String supportText = I18n.INSTANCE.getValue("menu.button.help.dialog.information.donation");
-        ButtonType supportButtonType =
-                capturedAlert.getButtonTypes().stream()
-                        .filter(bt -> supportText.equals(bt.getText()))
-                        .findFirst()
-                        .orElse(null);
-        assertNotNull(supportButtonType, "Donation button should exist");
-        Button supportButton =
-                (Button) capturedAlert.getDialogPane().lookupButton(supportButtonType);
-        supportButton.getOnAction().handle(null);
-        verify(mockCoordinator).openMyKoFiUrl();
-    }
-
-    @Test
     void givenMyAlert_whenApplyHandCursorToButton_thenAllButtonsHaveHandCursor(FxRobot robot) {
         robot.interact(
                 () -> {

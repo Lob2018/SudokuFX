@@ -68,7 +68,6 @@ public class HelpViewModel {
                         Year.now().toString(),
                         JVMApplicationProperties.INSTANCE.getAppLicense()));
         addWebsiteButton(informationAlert);
-        addDonationButton(informationAlert);
         displayAlert(informationAlert);
     }
 
@@ -90,26 +89,6 @@ public class HelpViewModel {
         Button websiteButton =
                 (Button) informationAlert.getDialogPane().lookupButton(websiteButtonType);
         websiteButton.setOnAction(e -> coordinator.openMyWebsiteUrl());
-    }
-
-    /**
-     * Adds a "Make a voluntary donation" button to the given alert.
-     *
-     * <p>The button is aligned to the left and opens my Ko-fi page when clicked.
-     *
-     * @param informationAlert the alert to which the website button will be added; must not be null
-     * @throws NullPointerException if informationAlert is null
-     */
-    private void addDonationButton(MyAlert informationAlert) {
-        Objects.requireNonNull(informationAlert, "informationAlert must not be null");
-        ButtonType donationButtonType =
-                new ButtonType(
-                        I18n.INSTANCE.getValue("menu.button.help.dialog.information.donation"),
-                        ButtonBar.ButtonData.LEFT);
-        informationAlert.getButtonTypes().add(donationButtonType);
-        Button donationButton =
-                (Button) informationAlert.getDialogPane().lookupButton(donationButtonType);
-        donationButton.setOnAction(e -> coordinator.openMyKoFiUrl());
     }
 
     /**

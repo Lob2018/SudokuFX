@@ -237,18 +237,4 @@ class CoordinatorUTest {
                                                 .contains("██ Exception ToggleLanguage failed")));
         toaster.getChildren().clear();
     }
-
-    @Test
-    void givenHostServicesSet_whenOpenMyKoFiUrl_thenShowDocumentIsCalled() {
-        coordinator.setHostServices(hostServices);
-        coordinator.openMyKoFiUrl();
-        verify(hostServices).showDocument(anyString());
-    }
-
-    @Test
-    void givenNoHostServicesSet_whenOpenMyKoFiUrl_thenLogsWarning() {
-        coordinator.openMyKoFiUrl();
-        String logMessage = logWatcher.list.getFirst().getFormattedMessage();
-        assertTrue(logMessage.contains("▓▓ openMyKoFiUrl hostServices not set yet"));
-    }
 }
