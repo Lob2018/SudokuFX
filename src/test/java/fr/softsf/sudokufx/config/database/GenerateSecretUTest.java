@@ -39,15 +39,15 @@ class GenerateSecretUTest {
     void givenInvalidSecrets_whenIsValidatedByRegex_thenReturnsFalse() {
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
         String[] invalidSecrets = {
-                "L".repeat(24),
-                "l".repeat(24),
-                "@".repeat(24),
-                "1".repeat(24),
-                "uCQD1x$^UeWfn#OAb!YjYFHo",
-                "-CQD1x$^UeWfn#OAb!Y1YFH1",
-                "9uCQD1xi^UeWfntOAbmY1YFH",
-                "9uCQD1x$^UeWfn#OAb!Y1YFH1",
-                "9uCQD1x$^UeWfn#OAb!Y1YF"
+            "L".repeat(24),
+            "l".repeat(24),
+            "@".repeat(24),
+            "1".repeat(24),
+            "uCQD1x$^UeWfn#OAb!YjYFHo",
+            "-CQD1x$^UeWfn#OAb!Y1YFH1",
+            "9uCQD1xi^UeWfntOAbmY1YFH",
+            "9uCQD1x$^UeWfn#OAb!Y1YFH1",
+            "9uCQD1x$^UeWfn#OAb!Y1YF"
         };
         for (String secret : invalidSecrets) {
             assertFalse(
