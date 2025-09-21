@@ -124,7 +124,9 @@ class SecretKeyEncryptionServiceAESGCMUTest {
 
     @Test
     void givenInvalidSecretKey_whenEncrypt_thenEmptyStringReturnedAndErrorLogged() {
-        SecretKey invalidKey = new SecretKeySpec(new byte[4], "AES");
+        byte[] invalidBytes = new byte[4];
+        new SecureRandom().nextBytes(invalidBytes);
+        SecretKey invalidKey = new SecretKeySpec(invalidBytes, "AES");
         IEncryptionService brokenEncryptionService =
                 new SecretKeyEncryptionServiceAESGCM(invalidKey);
         String result = brokenEncryptionService.encrypt("failEncrypt");
