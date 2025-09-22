@@ -6,7 +6,6 @@ var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls =
     [ "GITHUB_API_URL", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a2dbfdc86689419f2d977e18b27d85929", null ],
     [ "GITHUB_REPOSITORY_RELEASES_URL", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a8e4b7c7d86677b6e1eab1c89d0237c78", null ],
     [ "GITHUB_URL", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a9a29ee87d8627bbb1ffdd93d6a2b503f", null ],
-    [ "MY_KOFI_URL", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a1ce52a1f24ed487fcf8c8b1ab8a2105c", null ],
     [ "MY_WEBSITE_URL", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#ab1436c5d64b62c153c70cbad4a5ab6e0", null ],
     [ "REPOSITORY_NAME", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a74baea4033e299e0ce2e804a6c653fac", null ],
     [ "REPOSITORY_OWNER", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a6f80c2fcf6bf59a23d1c9437a774f998", null ],

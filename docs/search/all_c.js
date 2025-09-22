@@ -43,7 +43,7 @@ var searchData=
   ['logbacktxt_40',['LogBackTxt',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html',1,'fr.softsf.sudokufx.common.enums.LogBackTxt'],['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#a021b5f0d143009e887ef8dded42041cd',1,'fr.softsf.sudokufx.common.enums.LogBackTxt.LogBackTxt()']]],
   ['logbacktxt_2ejava_41',['LogBackTxt.java',['../_log_back_txt_8java.html',1,'']]],
   ['logo_5fsudo_5fpng_5fpath_42',['LOGO_SUDO_PNG_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a05ed1c739bbdad6fc18cfc3dff560e33',1,'fr::softsf::sudokufx::common::enums::Paths']]],
-  ['logs_5ffile_5fname_43',['LOGS_FILE_NAME',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a3afbfe781979971c23c3b870f9c9a9c6',1,'fr::softsf::sudokufx::common::enums::Paths']]],
+  ['logs_5ffile_5fname_5fpath_43',['LOGS_FILE_NAME_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a80da769d890cdbbc983f4f331d525756',1,'fr::softsf::sudokufx::common::enums::Paths']]],
   ['logs_5ffolder_44',['LOGS_FOLDER',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#adba1e8a22294042743dd44e465c73784',1,'fr::softsf::sudokufx::common::enums::Paths']]],
   ['logsfolderpath_45',['logsFolderPath',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a998d34b307ec71698f5b0417c7a549c5',1,'fr::softsf::sudokufx::config::MyLogbackConfig']]],
   ['logsqlinvalidauthorization_46',['logSqlInvalidAuthorization',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ae8c480e4259c82f2983146fd756ce1e5',1,'fr::softsf::sudokufx::SudoMain']]],

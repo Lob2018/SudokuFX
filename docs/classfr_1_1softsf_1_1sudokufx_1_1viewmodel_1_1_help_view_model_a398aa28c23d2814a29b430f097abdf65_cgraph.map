@@ -1,11 +1,11 @@
 <map id="fr.softsf.sudokufx.viewmodel.HelpViewModel.showHelp" name="fr.softsf.sudokufx.viewmodel.HelpViewModel.showHelp">
 <area shape="rect" id="Node000001" title="Shows the help dialog with application and system information." alt="" coords="5,72,199,115"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ae14ec8034ad0e41ba69312b7fd46ee48" title="Adds a &quot;Make a voluntary donation&quot; button to the given alert." alt="" coords="247,5,474,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,69,259,50,261,55,188,74"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ae423927b79fe021850535dc440baa4ef" title="Adds a &quot;Visit my website&quot; button to the given alert." alt="" coords="249,72,472,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,91,234,91,234,96,199,96"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aca840cc2daae5861c308a264e5ab4e07" title="Displays the given alert and waits for user interaction." alt="" coords="264,139,457,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,113,261,132,259,137,187,118"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html#abee4f35ed1cce61e36758fc35a035826" title="Sets the cursor to HAND for all buttons in the alert&#39;s dialog pane." alt="" coords="522,139,747,181"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="457,157,507,157,507,163,457,163"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ab201c3505f08294cb1ba35e874d72909" title="Adds an &quot;Open log file&quot; button to the given alert." alt="" coords="249,5,466,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,69,258,50,259,55,187,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ae423927b79fe021850535dc440baa4ef" title="Adds a &quot;Visit my website&quot; button to the given alert." alt="" coords="247,72,469,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,91,231,91,231,96,199,96"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aca840cc2daae5861c308a264e5ab4e07" title="Displays the given alert and waits for user interaction." alt="" coords="261,139,454,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="187,113,259,132,258,137,186,118"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html#abee4f35ed1cce61e36758fc35a035826" title="Sets the cursor to HAND for all buttons in the alert&#39;s dialog pane." alt="" coords="517,139,742,181"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="455,157,501,157,501,163,455,163"/>
 </map>

@@ -151,8 +151,7 @@ var searchData=
   ['moyenminpossibilites_148',['moyenMinPossibilites',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a598ad81370ef9bb8e410ffb98a5b3e9e',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
   ['muted_149',['muted',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3a1c07c46846317bccb6ba9620c8b34f',1,'fr.softsf.sudokufx.model.Options.muted'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_1_1_options_builder.html#a4f126b6b75b2733befed07385a834459',1,'fr.softsf.sudokufx.model.Options.OptionsBuilder.muted']]],
   ['muteproperty_150',['muteProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ae0b175c8ab317aac46379150dff8eb7d',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModel']]],
-  ['my_5fkofi_5furl_151',['MY_KOFI_URL',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#a1ce52a1f24ed487fcf8c8b1ab8a2105c',1,'fr::softsf::sudokufx::common::enums::Urls']]],
-  ['my_5fwebsite_5furl_152',['MY_WEBSITE_URL',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#ab1436c5d64b62c153c70cbad4a5ab6e0',1,'fr::softsf::sudokufx::common::enums::Urls']]],
-  ['mydatetime_153',['myDateTime',['../namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a083da94352913e14bf183e3957ae0e2d',1,'fr::softsf::sudokufx::testing::integration::service::external']]],
-  ['mylogbackconfig_154',['myLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#abb6ba629bcd85c88412748a41e6d0390',1,'fr::softsf::sudokufx::config::MyLogbackConfigUTest']]]
+  ['my_5fwebsite_5furl_151',['MY_WEBSITE_URL',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#ab1436c5d64b62c153c70cbad4a5ab6e0',1,'fr::softsf::sudokufx::common::enums::Urls']]],
+  ['mydatetime_152',['myDateTime',['../namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a083da94352913e14bf183e3957ae0e2d',1,'fr::softsf::sudokufx::testing::integration::service::external']]],
+  ['mylogbackconfig_153',['myLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#abb6ba629bcd85c88412748a41e6d0390',1,'fr::softsf::sudokufx::config::MyLogbackConfigUTest']]]
 ];

@@ -13,7 +13,7 @@ var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths =
     [ "LINUX_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a2b2bd5889712f960edb14fd8e74f9131", null ],
     [ "LINUX_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a29be112f77eea13d100a5bd67ba6181e", null ],
     [ "LOGO_SUDO_PNG_PATH", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a05ed1c739bbdad6fc18cfc3dff560e33", null ],
-    [ "LOGS_FILE_NAME", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a3afbfe781979971c23c3b870f9c9a9c6", null ],
+    [ "LOGS_FILE_NAME_PATH", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a80da769d890cdbbc983f4f331d525756", null ],
     [ "LOGS_FOLDER", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#adba1e8a22294042743dd44e465c73784", null ],
     [ "MACOS_BASE_PATH", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a76ae2d247e5220f820c1bd11c847b264", null ],
     [ "MACOS_SUDO_FX_BASE_PATH", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a874c6844978c0a808ca9804767820846", null ],
