@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.navigation;
 
+import java.io.File;
 import java.util.Objects;
 import javafx.application.HostServices;
 import javafx.application.Platform;
@@ -232,6 +233,19 @@ public class Coordinator {
             LOG.warn(
                     "▓▓ openMyWebsiteUrl hostServices not set yet: cannot open my website"
                             + " URL");
+        }
+    }
+
+    /** Opens the given local file in the user's default web browser. */
+    public void openLocalFile(File file) {
+        if (hostServices != null) {
+            if (file != null && file.exists()) {
+                hostServices.showDocument(file.toURI().toString());
+            } else {
+                LOG.warn("▓▓ openLocalFile file is null or does not exist: cannot open");
+            }
+        } else {
+            LOG.warn("▓▓ openLocalFile hostServices not set yet: cannot open local file");
         }
     }
 

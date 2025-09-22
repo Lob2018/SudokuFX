@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.navigation;
 
+import java.io.File;
 import java.time.LocalDateTime;
 import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
@@ -236,5 +237,62 @@ class CoordinatorUTest {
                                         event.getFormattedMessage()
                                                 .contains("██ Exception ToggleLanguage failed")));
         toaster.getChildren().clear();
+    }
+
+    @Test
+    void givenNullHostServices_whenSetHostServices_thenThrowsIllegalArgumentException() {
+        IllegalArgumentException ex =
+                assertThrows(
+                        IllegalArgumentException.class, () -> coordinator.setHostServices(null));
+        assertTrue(ex.getMessage().contains("HostServices must not be null"));
+    }
+
+    @Test
+    void givenHostServicesSet_whenOpenMyWebsiteUrl_thenShowDocumentIsCalled() {
+        coordinator.setHostServices(hostServices);
+        coordinator.openMyWebsiteUrl();
+        verify(hostServices).showDocument(anyString());
+    }
+
+    @Test
+    void givenNoHostServicesSet_whenOpenMyWebsiteUrl_thenLogsWarning() {
+        coordinator.openMyWebsiteUrl();
+        String logMessage = logWatcher.list.getFirst().getFormattedMessage();
+        assertTrue(logMessage.contains("▓▓ openMyWebsiteUrl hostServices not set yet"));
+    }
+
+    @Test
+    void givenHostServicesAndExistingFile_whenOpenLocalFile_thenShowDocumentIsCalled()
+            throws Exception {
+        File tempFile = File.createTempFile("testfile", ".txt");
+        tempFile.deleteOnExit();
+        coordinator.setHostServices(hostServices);
+        coordinator.openLocalFile(tempFile);
+        verify(hostServices).showDocument(tempFile.toURI().toString());
+    }
+
+    @Test
+    void givenHostServicesAndNullFile_whenOpenLocalFile_thenLogsWarning() {
+        coordinator.setHostServices(hostServices);
+        coordinator.openLocalFile(null);
+        String logMessage = logWatcher.list.getFirst().getFormattedMessage();
+        assertTrue(logMessage.contains("▓▓ openLocalFile file is null or does not exist"));
+    }
+
+    @Test
+    void givenHostServicesAndNonExistingFile_whenOpenLocalFile_thenLogsWarning() {
+        coordinator.setHostServices(hostServices);
+        File nonExistingFile = new File("non_existing_file.txt");
+        coordinator.openLocalFile(nonExistingFile);
+        String logMessage = logWatcher.list.getFirst().getFormattedMessage();
+        assertTrue(logMessage.contains("▓▓ openLocalFile file is null or does not exist"));
+    }
+
+    @Test
+    void givenNoHostServicesSet_whenOpenLocalFile_thenLogsWarning() {
+        File tempFile = new File("whatever.txt");
+        coordinator.openLocalFile(tempFile);
+        String logMessage = logWatcher.list.getFirst().getFormattedMessage();
+        assertTrue(logMessage.contains("▓▓ openLocalFile hostServices not set yet"));
     }
 }

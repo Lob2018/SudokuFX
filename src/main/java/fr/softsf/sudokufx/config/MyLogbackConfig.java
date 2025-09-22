@@ -23,7 +23,7 @@ import static fr.softsf.sudokufx.common.enums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.OPTIMIZING;
 import static fr.softsf.sudokufx.common.enums.Paths.CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS;
 import static fr.softsf.sudokufx.common.enums.Paths.CONFIG_LOGBACK_PATH;
-import static fr.softsf.sudokufx.common.enums.Paths.LOGS_FILE_NAME;
+import static fr.softsf.sudokufx.common.enums.Paths.LOGS_FILE_NAME_PATH;
 
 /**
  * Configuration class for Logback logging framework. This class sets up and configures Logback for
@@ -43,7 +43,7 @@ public class MyLogbackConfig {
      */
     public MyLogbackConfig(IOsFolder iOsFolder) {
         logsFolderPath = iOsFolder.getOsLogsFolderPath();
-        System.setProperty("logs", logsFolderPath + "/" + LOGS_FILE_NAME.getPath());
+        System.setProperty("logs", logsFolderPath + LOGS_FILE_NAME_PATH.getPath());
         LoggerContext context = configureLogback();
         printLogStatus(context);
         printLogEntryMessage();

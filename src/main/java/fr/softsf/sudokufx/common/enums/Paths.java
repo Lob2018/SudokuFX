@@ -18,7 +18,7 @@ public enum Paths {
     DATABASE_NAME("sudokufxdb"),
     DATA_FOLDER("data-sudokufx"),
     LOGS_FOLDER("logs-sudokufx"),
-    LOGS_FILE_NAME("SudokuFX.log"),
+    LOGS_FILE_NAME_PATH("/SudokuFX.log"),
     WINDOWS_BASE_PATH("/AppData/Local/Soft64.fr/SudokuFX/"),
     LINUX_BASE_PATH("/.local/share/Soft64.fr/SudokuFX/"),
     MACOS_BASE_PATH("/Library/Application Support/Soft64.fr/SudokuFX/"),

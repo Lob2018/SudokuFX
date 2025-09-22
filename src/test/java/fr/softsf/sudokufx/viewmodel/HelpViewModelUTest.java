@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
+import java.io.File;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -30,6 +31,8 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(ApplicationExtension.class)
@@ -40,12 +43,12 @@ class HelpViewModelUTest {
 
     public HelpViewModelUTest() {
         this.iOsFolder = new OsFoldersConfig().iOsFolderFactory();
-        this.mockCoordinator = Mockito.mock(Coordinator.class);
+        this.mockCoordinator = mock(Coordinator.class);
     }
 
     @Test
     void whenShowHelp_thenAlertIsBuilt_withCorrectTitle_andWebsiteButton(FxRobot robot) {
-        HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolder, mockCoordinator));
+        HelpViewModel spyViewModel = spy(new HelpViewModel(iOsFolder, mockCoordinator));
         doAnswer(
                         invocation -> {
                             Platform.runLater(invocation.getArgument(0, MyAlert.class)::show);
@@ -95,6 +98,32 @@ class HelpViewModelUTest {
     void givenNullAlert_whenDisplayAlert_thenThrowsNPE() {
         HelpViewModel viewModel = new HelpViewModel(iOsFolder, mockCoordinator);
         assertThrows(NullPointerException.class, () -> viewModel.displayAlert(null));
+    }
+
+    @Test
+    void whenShowHelp_thenAlertContainsLogFileButton_andOpensLocalFile(FxRobot robot) {
+        HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolder, mockCoordinator));
+        doAnswer(
+                        invocation -> {
+                            Platform.runLater(invocation.getArgument(0, MyAlert.class)::show);
+                            return null;
+                        })
+                .when(spyViewModel)
+                .displayAlert(any());
+        robot.interact(spyViewModel::showHelp);
+        ArgumentCaptor<MyAlert> captor = ArgumentCaptor.forClass(MyAlert.class);
+        verify(spyViewModel).displayAlert(captor.capture());
+        MyAlert alert = captor.getValue();
+        String logFileText = I18n.INSTANCE.getValue("menu.button.help.dialog.information.logfile");
+        ButtonType logButtonType =
+                alert.getButtonTypes().stream()
+                        .filter(bt -> logFileText.equals(bt.getText()))
+                        .findFirst()
+                        .orElse(null);
+        assertNotNull(logButtonType, "Log file button should exist");
+        Button logButton = (Button) alert.getDialogPane().lookupButton(logButtonType);
+        logButton.getOnAction().handle(null);
+        verify(mockCoordinator).openLocalFile(any(File.class));
     }
 
     @AfterEach

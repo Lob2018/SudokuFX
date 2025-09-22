@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
+import java.io.File;
 import java.text.MessageFormat;
 import java.time.Year;
 import java.util.Objects;
@@ -16,7 +17,9 @@ import javafx.scene.control.ButtonType;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.enums.ScreenSize;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.navigation.Coordinator;
@@ -67,6 +70,7 @@ public class HelpViewModel {
                         JVMApplicationProperties.INSTANCE.getAppOrganization(),
                         Year.now().toString(),
                         JVMApplicationProperties.INSTANCE.getAppLicense()));
+        addLogFileButton(informationAlert);
         addWebsiteButton(informationAlert);
         displayAlert(informationAlert);
     }
@@ -89,6 +93,34 @@ public class HelpViewModel {
         Button websiteButton =
                 (Button) informationAlert.getDialogPane().lookupButton(websiteButtonType);
         websiteButton.setOnAction(e -> coordinator.openMyWebsiteUrl());
+    }
+
+    /**
+     * Adds an "Open log file" button to the given alert.
+     *
+     * <p>The button is aligned to the left and opens the system log file when clicked. The file
+     * path is resolved via {@code iOsFolder.getOsLogsFolderPath()} and validated beforehand.
+     *
+     * @param informationAlert the alert to which the log file button will be added; must not be
+     *     null
+     * @throws NullPointerException if {@code informationAlert} is null or if the resolved file is
+     *     null
+     * @throws IllegalArgumentException if the resolved path is blank
+     */
+    private void addLogFileButton(MyAlert informationAlert) {
+        Objects.requireNonNull(informationAlert, "informationAlert must not be null");
+        String logPath = iOsFolder.getOsLogsFolderPath() + Paths.LOGS_FILE_NAME_PATH.getPath();
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                logPath, "logPath must not be null or blank, but was " + logPath);
+        File file = new File(logPath);
+        Objects.requireNonNull(file, "file must not be null");
+        ButtonType fileButtonType =
+                new ButtonType(
+                        I18n.INSTANCE.getValue("menu.button.help.dialog.information.logfile"),
+                        ButtonBar.ButtonData.LEFT);
+        informationAlert.getButtonTypes().add(fileButtonType);
+        Button fileButton = (Button) informationAlert.getDialogPane().lookupButton(fileButtonType);
+        fileButton.setOnAction(e -> coordinator.openLocalFile(file));
     }
 
     /**
