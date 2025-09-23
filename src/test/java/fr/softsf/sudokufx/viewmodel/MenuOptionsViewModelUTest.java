@@ -7,11 +7,12 @@ package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
 import java.lang.reflect.Field;
-import java.util.function.Function;
+import java.util.function.Consumer;
 import java.util.stream.Stream;
 import java.util.*;
 import javafx.beans.binding.StringBinding;
 import javafx.scene.control.ColorPicker;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.GridPane;
@@ -22,12 +23,10 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.mockito.ArgumentCaptor;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
-import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
 import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
@@ -109,7 +108,14 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                         viewModel.optionsMuteIconProperty(),
                         viewModel.optionsImageAccessibleTextProperty(),
                         viewModel.optionsImageTooltipProperty(),
-                        viewModel.optionsImageRoleDescriptionProperty());
+                        viewModel.optionsImageRoleDescriptionProperty(),
+                        viewModel.optionsSongAccessibleTextProperty(),
+                        viewModel.optionsSongTooltipProperty(),
+                        viewModel.optionsSongRoleDescriptionProperty(),
+                        viewModel.optionsSongTextProperty(),
+                        viewModel.optionsClearSongRoleDescriptionProperty(),
+                        viewModel.optionsClearSongTooltipProperty(),
+                        viewModel.optionsClearSongAccessibleTextProperty());
         for (StringBinding binding : bindings) {
             assertNotNull(binding.get(), "Binding should not return null");
             assertFalse(binding.get().isBlank(), "Binding should not be blank");
@@ -253,44 +259,34 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @Test
-    @SuppressWarnings({"unchecked", "rawtypes"})
-    void givenValidFile_whenApplyAndPersistBackgroundImage_thenAsyncServiceCalledAndBackgroundSet()
-            throws Exception {
+    void givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet() {
         File imageFile = new File("src/test/resources/sample.jpg");
-        SpinnerGridPane spinnerMockLocal = mock(SpinnerGridPane.class);
-        GridPane gridMock = new GridPane();
-        ToasterVBox toasterMockLocal = mock(ToasterVBox.class);
-        ImageUtils imageUtilsSpy = spy(new ImageUtils());
+        SpinnerGridPane spinner = mock(SpinnerGridPane.class);
+        GridPane gridPane = new GridPane();
+        ToasterVBox toaster = mock(ToasterVBox.class);
+        doAnswer(
+                        invocation -> {
+                            File fileArg = invocation.getArgument(0);
+                            Consumer<BackgroundImage> callback = invocation.getArgument(4);
+                            BackgroundImage fakeBackground =
+                                    new BackgroundImage(
+                                            new Image(fileArg.toURI().toString()),
+                                            null,
+                                            null,
+                                            null,
+                                            null);
+                            callback.accept(fakeBackground);
+                            return null;
+                        })
+                .when(asyncServiceMock)
+                .processFileAsync(eq(imageFile), eq(spinner), eq(toaster), any(), any());
         MenuOptionsViewModel vm =
                 new MenuOptionsViewModel(
                         new AudioService(), asyncServiceMock, playerStateHolder, optionsService);
-        Field imageUtilsField = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
-        imageUtilsField.setAccessible(true);
-        imageUtilsField.set(vm, imageUtilsSpy);
-        Field toasterField = MenuOptionsViewModel.class.getDeclaredField("toaster");
-        toasterField.setAccessible(true);
-        toasterField.set(vm, toasterMockLocal);
-        doReturn(true).when(imageUtilsSpy).isValidImage(imageFile);
-        ImageMeta metaMock = mock(ImageMeta.class);
-        doReturn(metaMock).when(imageUtilsSpy).getImageMeta(imageFile);
-        doReturn(100).when(metaMock).width();
-        doReturn(50).when(metaMock).height();
-        doReturn(2.0).when(metaMock).scaleFactor();
-        ArgumentCaptor<Function<File, BackgroundImage>> processorCaptor =
-                ArgumentCaptor.forClass((Class) Function.class);
-        doNothing()
-                .when(asyncServiceMock)
-                .processFileAsync(
-                        eq(imageFile),
-                        eq(spinnerMockLocal),
-                        eq(toasterMockLocal),
-                        processorCaptor.capture(),
-                        any());
-        vm.applyAndPersistBackgroundImage(imageFile, spinnerMockLocal, gridMock);
+        vm.init(new GridPane(), new ColorPicker(), toaster, spinner);
+        vm.applyAndPersistBackgroundImage(imageFile, spinner, gridPane);
         verify(asyncServiceMock)
-                .processFileAsync(
-                        eq(imageFile), eq(spinnerMockLocal), eq(toasterMockLocal), any(), any());
-        BackgroundImage backgroundImage = processorCaptor.getValue().apply(imageFile);
-        assertNotNull(backgroundImage, "The BackgroundImage must be created correctly");
+                .processFileAsync(eq(imageFile), eq(spinner), eq(toaster), any(), any());
+        assertNotNull(gridPane.getBackground(), "Le GridPane doit avoir un Background appliqué");
     }
 }

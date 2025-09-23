@@ -124,6 +124,7 @@ public class MenuOptionsViewModel {
     private final StringBinding optionsClearSongRoleDescription;
     private final StringBinding optionsClearSongTooltip;
 
+    private boolean initialized = false;
     private ToasterVBox toaster;
 
     public MenuOptionsViewModel(
@@ -576,8 +577,8 @@ public class MenuOptionsViewModel {
      *   <li>Selected song
      * </ul>
      *
-     * <p>This method synchronizes the UI components with the current player's options and prepares
-     * the necessary properties for bindings.
+     * <p>This method synchronizes the UI components with the current player's options, prepares the
+     * necessary properties for bindings, and marks the ViewModel as initialized.
      *
      * @param sudokuFX the GridPane to apply background settings
      * @param menuOptionsButtonColor the ColorPicker to synchronize with the current color
@@ -600,9 +601,11 @@ public class MenuOptionsViewModel {
         audioService.setMuted(optionsDto.muted());
         muteProperty.set(optionsDto.muted());
         if (optionsDto.songpath().isEmpty()) {
+            initialized = true;
             return;
         }
         songProperty.set(Paths.get(optionsDto.songpath()).getFileName().toString());
+        initialized = true;
     }
 
     /**
@@ -610,6 +613,7 @@ public class MenuOptionsViewModel {
      * toast notification.
      */
     public void resetSongPath() {
+        checkInitialized();
         persistSongPath("", songProperty.get());
     }
 
@@ -624,6 +628,7 @@ public class MenuOptionsViewModel {
      *     audio file
      */
     public void saveSong(File file) {
+        checkInitialized();
         if (file != null && audioUtils.isValidAudio(file) && file.exists()) {
             persistSongPath(file.getAbsolutePath(), file.getName());
             return;
@@ -683,6 +688,7 @@ public class MenuOptionsViewModel {
      * is logged and an error toast with details is displayed.
      */
     public void toggleMuteAndPersist() {
+        checkInitialized();
         boolean newState = !muteProperty.get();
         OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
         OptionsDto toSaveOptions = currentOptions.withMuted(newState);
@@ -719,6 +725,7 @@ public class MenuOptionsViewModel {
      * @return {@code true} if opaque mode is now active, {@code false} if transparent
      */
     public boolean toggleGridOpacityAndPersist() {
+        checkInitialized();
         boolean previousState = gridOpacityProperty.get();
         boolean newState = !previousState;
         OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
@@ -789,6 +796,7 @@ public class MenuOptionsViewModel {
      * @throws NullPointerException if {@code sudokuFX} or {@code color} is null
      */
     public void applyAndPersistOptionsColor(GridPane sudokuFX, Color color) {
+        checkInitialized();
         Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
         Objects.requireNonNull(color, "color must not be null");
         String hexColor = color.toString().substring(HEXCOLOR_BEGIN_INDEX, HEXCOLOR_END_INDEX);
@@ -830,6 +838,7 @@ public class MenuOptionsViewModel {
      */
     public void applyAndPersistBackgroundImage(
             File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
+        checkInitialized();
         Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
         Objects.requireNonNull(spinner, "spinner must not be null");
         if (selectedFile == null
@@ -893,6 +902,23 @@ public class MenuOptionsViewModel {
                     Objects.toString(e.getMessage(), ""),
                     ToastLevels.ERROR,
                     true);
+        }
+    }
+
+    /**
+     * Checks whether the {@link MenuOptionsViewModel} has been initialized via {@link
+     * #init(GridPane, ColorPicker, ToasterVBox, SpinnerGridPane)}.
+     *
+     * <p>If the menu options have not been initialized, this method throws an exception to prevent
+     * operations on an uninitialized state.
+     *
+     * @throws IllegalStateException if {@link #init(GridPane, ColorPicker, ToasterVBox,
+     *     SpinnerGridPane)} has not been called
+     */
+    private void checkInitialized() {
+        if (!initialized) {
+            throw new IllegalStateException(
+                    "MenuOptionsViewModel not initialized. Call init(...) first.");
         }
     }
 }
