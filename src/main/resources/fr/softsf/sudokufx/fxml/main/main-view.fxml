@@ -446,7 +446,7 @@
         <!---->
         <VBox fx:id="menuSolve" alignment="TOP_CENTER" styleClass="menu">
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
-                <Button fx:id="menuSolveButtonReduce" styleClass="menuButton" onAction="#handleMenuMiniShow">
+                <Button fx:id="menuSolveButtonReduce" styleClass="menuButton" onAction="#handleRestoreGridAndMenuMiniShow">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
@@ -462,7 +462,7 @@
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Button fx:id="menuSolveButtonSolve" styleClass="menuButton,subMenuOpened,colorResolve"
-                        onAction="#handleMenuMaxiShow">
+                        onAction="#handleRestoreGridAndMenuMaxiShow">
                     <graphic>
                         <HBox>
                             <HBox alignment="CENTER_LEFT" styleClass="menuHBoxLeftContainer">

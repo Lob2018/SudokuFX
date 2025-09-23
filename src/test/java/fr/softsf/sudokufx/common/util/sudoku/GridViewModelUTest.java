@@ -46,12 +46,10 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
 
     @BeforeEach
     void givenPlayerStateHolder_whenInitGridViewModel_thenViewModelInitialized() {
-        // mock JakartaValidator pour éviter NullPointerException
         JakartaValidator validatorMock = mock(JakartaValidator.class);
         doAnswer(invocation -> invocation.getArgument(0))
                 .when(validatorMock)
                 .validateOrThrow(any());
-
         viewModel =
                 new GridViewModel(
                         new GridMaster(validatorMock),
@@ -104,8 +102,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @Test
-    void givenNullLevel_whenSetCurrentGridWithLevel_thenIllegalArgumentExceptionIsThrown() {
-        assertThrows(IllegalArgumentException.class, () -> viewModel.setCurrentGridWithLevel(null));
+    void givenNullLevel_whenSetCurrentGridWithLevel_thenNullPointerExceptionIsThrown() {
+        assertThrows(NullPointerException.class, () -> viewModel.setCurrentGridWithLevel(null));
     }
 
     @Test
@@ -207,5 +205,56 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         anyString(),
                         eq(INFO),
                         eq(false));
+    }
+
+    @Test
+    void givenPlayerWithoutDefaultGrid_whenGetCurrentSolvedGridFromModel_thenReturnEmptyOptional() {
+        GridDto gridDto = new GridDto(1L, "", "", (byte) 50);
+        GameDto gameDto =
+                Objects.requireNonNull(playerStateHolder.getCurrentPlayer().selectedGame())
+                        .withGrididDto(gridDto);
+        PlayerDto player = playerStateHolder.getCurrentPlayer().withSelectedGame(gameDto);
+        when(playerServiceMock.getPlayer()).thenReturn(player);
+        playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);
+        GridViewModel localVM =
+                new GridViewModel(
+                        new GridMaster(mock(JakartaValidator.class)),
+                        new ActiveMenuOrSubmenuViewModel(),
+                        new AudioService(),
+                        playerStateHolder,
+                        playerServiceMock,
+                        new GridConverter());
+        localVM.init(new ToasterVBox());
+        Optional<CurrentGrid> result = localVM.getCurrentSolvedGridFromModel();
+        assertTrue(result.isEmpty());
+    }
+
+    @Test
+    void
+            givenPlayerWithDefaultGrid_whenGetCurrentSolvedGridFromModel_thenSolvedGridAndCurrentGridReturned() {
+        String defaultGrid = String.join("", Collections.nCopies(81, "0"));
+        GridDto gridDto = new GridDto(1L, defaultGrid, "", (byte) 30);
+        GameDto gameDto =
+                Objects.requireNonNull(playerStateHolder.getCurrentPlayer().selectedGame())
+                        .withGrididDto(gridDto);
+        PlayerDto player = playerStateHolder.getCurrentPlayer().withSelectedGame(gameDto);
+        when(playerServiceMock.getPlayer()).thenReturn(player);
+        playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);
+        GridViewModel localVM =
+                new GridViewModel(
+                        new GridMaster(mock(JakartaValidator.class)),
+                        new ActiveMenuOrSubmenuViewModel(),
+                        new AudioService(),
+                        playerStateHolder,
+                        playerServiceMock,
+                        new GridConverter());
+        localVM.init(new ToasterVBox());
+        Optional<CurrentGrid> result = localVM.getCurrentSolvedGridFromModel();
+        assertTrue(result.isPresent());
+        CurrentGrid currentGrid = result.get();
+        assertEquals(
+                DifficultyLevel.fromGridByte(gameDto.levelidDto().level()), currentGrid.level());
+        assertEquals(0, currentGrid.percentage());
+        assertEquals(81, localVM.getAllValues().size());
     }
 }

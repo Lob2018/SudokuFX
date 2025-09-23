@@ -293,12 +293,7 @@ public final class MainView implements IMainView {
             sudokuFXGridPane.add(textArea, col, row);
             index++;
         }
-        gridViewModel
-                .getCurrentGridFromModel()
-                .ifPresent(
-                        currentGrid ->
-                                menuLevelViewModel.updateSelectedLevel(
-                                        currentGrid.level(), currentGrid.percentage()));
+        restoreCurrentGridLevelFromModel();
     }
 
     /**
@@ -956,6 +951,33 @@ public final class MainView implements IMainView {
         hideMiniMenuTimeline.play();
     }
 
+    /** Restores the grid and shows the MINI menu. */
+    public void handleRestoreGridAndMenuMiniShow() {
+        restoreCurrentGridLevelFromModel();
+        handleMenuMiniShow();
+    }
+
+    /** Restores the grid and shows the MAXI menu. */
+    public void handleRestoreGridAndMenuMaxiShow(ActionEvent event) {
+        restoreCurrentGridLevelFromModel();
+        handleMenuMaxiShow(event);
+    }
+
+    /**
+     * Loads the current user-entered grid from the model and updates the selected level and
+     * completion percentage in the menu.
+     *
+     * <p>Used to synchronize the ViewModel with the latest grid state stored in the model.
+     */
+    private void restoreCurrentGridLevelFromModel() {
+        gridViewModel
+                .getCurrentGridFromModel()
+                .ifPresent(
+                        currentGrid ->
+                                menuLevelViewModel.updateSelectedLevel(
+                                        currentGrid.level(), currentGrid.percentage()));
+    }
+
     /**
      * Activates the MAXI menu and sets focus on the corresponding button based on the event source.
      * Stops the MINI menu auto-hide timer if running.
@@ -987,10 +1009,19 @@ public final class MainView implements IMainView {
         menuPlayerButtonPlayer.requestFocus();
     }
 
-    /** Activates the SOLVE menu and sets focus on the solve button. */
+    /**
+     * Activates the SOLVE menu, focuses the solve button, and updates the selected level if a
+     * solved grid is available.
+     */
     public void handleMenuSolveShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE);
         menuSolveButtonSolve.requestFocus();
+        gridViewModel
+                .getCurrentSolvedGridFromModel()
+                .ifPresent(
+                        currentGrid ->
+                                menuLevelViewModel.updateSelectedLevel(
+                                        currentGrid.level(), currentGrid.percentage()));
     }
 
     /**
