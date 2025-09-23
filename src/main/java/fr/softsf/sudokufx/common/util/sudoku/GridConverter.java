@@ -7,14 +7,14 @@ package fr.softsf.sudokufx.common.util.sudoku;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
 /**
- * Component that provides conversions between different Sudoku grid representations: /** Component
- * providing conversions between different Sudoku grid representations:
+ * Component providing conversions between different Sudoku grid representations:
  *
  * <ul>
  *   <li>{@code gridValue} : player's input as a comma-separated String of 81 values
@@ -29,16 +29,19 @@ import org.springframework.stereotype.Component;
  * </ul>
  *
  * <p>Validation ensures that each cell in {@link #listToGridValue(List)} contains only valid digits
- * and no repeated numbers. Empty or blank cells are normalized to "0".
+ * and no repeated numbers. Empty or blank cells are normalized to "0". Null arguments will throw
+ * {@link NullPointerException}.
  */
 @Component
 public final class GridConverter implements IGridConverter {
 
     private static final int TOTAL_CELLS = 81;
+    private static final String GRID_ARRAY_MUST_NOT_BE_NULL = "Grid array must not be null";
 
     @Override
     public String listToGridValue(List<String> values) {
-        if (values == null || values.size() != TOTAL_CELLS) {
+        Objects.requireNonNull(values, "The list of entered values must not be null");
+        if (values.size() != TOTAL_CELLS) {
             throw new IllegalArgumentException(
                     "The list of entered values must contain exactly " + TOTAL_CELLS + " values");
         }
@@ -77,16 +80,13 @@ public final class GridConverter implements IGridConverter {
 
     @Override
     public String intArrayToDefaultGridValue(int[] grid) {
+        Objects.requireNonNull(grid, GRID_ARRAY_MUST_NOT_BE_NULL);
         return Arrays.stream(grid).mapToObj(String::valueOf).collect(Collectors.joining());
     }
 
     @Override
-    public List<String> intArrayToDefaultGridValueList(int[] grid) {
-        return Arrays.stream(grid).mapToObj(String::valueOf).toList();
-    }
-
-    @Override
     public int[] listToIntArray(List<String> values) {
+        Objects.requireNonNull(values, "The list of entered values must not be null");
         return values.stream()
                 .mapToInt(v -> (v != null && v.matches("\\d")) ? Integer.parseInt(v) : 0)
                 .toArray();
@@ -94,6 +94,7 @@ public final class GridConverter implements IGridConverter {
 
     @Override
     public List<String> intArrayToList(int[] grid) {
+        Objects.requireNonNull(grid, GRID_ARRAY_MUST_NOT_BE_NULL);
         return Arrays.stream(grid).mapToObj(String::valueOf).toList();
     }
 }

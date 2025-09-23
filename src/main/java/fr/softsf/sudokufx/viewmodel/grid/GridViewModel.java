@@ -343,7 +343,8 @@ public class GridViewModel {
      */
     private void persistNewGame(DifficultyLevel level, GrillesCrees grillesCrees) {
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
-        String defaultGrid = iGridConverter.intArrayToDefaultGridValue(grillesCrees.grilleAResoudre());
+        String defaultGrid =
+                iGridConverter.intArrayToDefaultGridValue(grillesCrees.grilleAResoudre());
         String gridValue =
                 iGridConverter.listToGridValue(
                         iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()));

@@ -48,9 +48,6 @@ public sealed interface IGridConverter permits GridConverter {
      */
     String intArrayToDefaultGridValue(int[] grid);
 
-    /** Converts an int array (81 elements) into a list of 81 Strings. */
-    List<String> intArrayToDefaultGridValueList(int[] grid);
-
     /**
      * Converts a list of 81 cell values into an int array. Non-digit or empty cells are converted
      * to 0.

@@ -93,13 +93,11 @@ class GridConverterUTest {
         Arrays.fill(array, 5);
         String defaultGrid = iConverter.intArrayToDefaultGridValue(array);
         assertEquals(81, defaultGrid.length());
-        List<String> listFromArray = iConverter.intArrayToDefaultGridValueList(array);
-        assertEquals(81, listFromArray.size());
-        assertEquals("5", listFromArray.getFirst());
-        int[] backArray = iConverter.listToIntArray(listFromArray);
+        int[] backArray = iConverter.listToIntArray(iConverter.intArrayToList(array));
         assertEquals(81, backArray.length);
         Arrays.stream(backArray).forEach(v -> assertEquals(5, v));
         List<String> listFromIntArray = iConverter.intArrayToList(array);
         assertEquals(81, listFromIntArray.size());
+        assertEquals("5", listFromIntArray.getFirst());
     }
 }
