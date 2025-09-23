@@ -49,5 +49,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master =
     [ "NOMBRE_CASES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a08af308416abf02bea7c3290f704f39a", null ],
     [ "ORDRE", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a2d5f6ee38f6cfce49848aec5cb18dd45", null ],
     [ "POURCENTAGE_MAX", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aabcd9d892e0cf01c93e417ab7c3c44ee", null ],
-    [ "TEST_PSSIBILITE_MOYENNE_IMPOSSIBLE", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aacaf93475f42629cc5535d98401723a0", null ]
+    [ "TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9b8bd941281b6f721a280a838ec16edc", null ]
 ];

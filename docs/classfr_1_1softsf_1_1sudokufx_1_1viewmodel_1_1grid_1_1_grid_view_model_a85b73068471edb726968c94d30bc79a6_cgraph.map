@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistNewGame" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistNewGame">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,224,48"/>
+<area shape="rect" id="Node000001" title="Persists a newly generated game for the current player, updating the selected game with the difficult..." alt="" coords="5,5,224,48"/>
 <area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#ab1bebf1bd508380d7ace78f40778e05c" title="Converts this difficulty level to its numeric representation." alt="" coords="272,5,496,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,24,256,24,256,29,224,29"/>
 </map>

@@ -43,6 +43,8 @@ var annotated_dup =
             ] ],
             [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html", [
               [ "sudoku", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html", [
+                [ "GridConverter", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter" ],
+                [ "GridConverterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_u_test" ],
                 [ "GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master" ],
                 [ "GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test" ],
                 [ "GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test" ]

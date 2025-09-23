@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevel">
 <area shape="rect" id="Node000001" title="Applies the given difficulty level by generating a new grid, updating the cells, and returning the as..." alt="" coords="5,64,262,107"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6" title=" " alt="" coords="310,5,528,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6" title="Persists a newly generated game for the current player, updating the selected game with the difficult..." alt="" coords="310,5,528,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,61,296,49,297,54,241,66"/>
 <area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#ab1bebf1bd508380d7ace78f40778e05c" title="Converts this difficulty level to its numeric representation." alt="" coords="580,31,804,73"/>
 <area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="262,75,564,57,564,62,262,80"/>

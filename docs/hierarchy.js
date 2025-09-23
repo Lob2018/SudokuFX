@@ -80,6 +80,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", null ],
     [ "fr.softsf.sudokufx.model.Grid.GridBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_1_1_grid_builder.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html", null ],
+    [ "fr.softsf.sudokufx.common.util.sudoku.GridConverterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html", null ],
     [ "GridPane", null, [
       [ "fr.softsf.sudokufx.view.component.SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html", null ]
@@ -107,6 +108,9 @@ var hierarchy =
     ] ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IGameLevelMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html", null ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IGameMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_mapper.html", null ],
+    [ "IGridConverter", null, [
+      [ "fr.softsf.sudokufx.common.util.sudoku.GridConverter", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IGridMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html", null ],
     [ "IGridMaster", null, [
       [ "fr.softsf.sudokufx.common.util.sudoku.GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html", null ]

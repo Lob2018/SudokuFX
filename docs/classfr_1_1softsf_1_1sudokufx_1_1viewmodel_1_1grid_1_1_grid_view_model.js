@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
 [
-    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aabac10a2a71b715e5543565d040934cc", null ],
+    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aa8d0d1bac6ae06abb6d3ce238e49fbc3", null ],
     [ "celebrateVictory", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca", null ],
     [ "clearGrid", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca7e10ab87fe7e7e3a36ec39588ffdc9", null ],
     [ "getAllValues", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2", null ],
@@ -9,7 +9,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "getCurrentGridFromModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a3ae2327e3a29d25f4bdc6198657813bf", null ],
     [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aff873a578f9c184b68af21c6bae828a7", null ],
     [ "isCompletelyCompleted", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075", null ],
-    [ "parseCellValue", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a00f5d9454d21ce1290e08937c1dbf483", null ],
     [ "persistGridValue", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09", null ],
     [ "persistNewGame", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6", null ],
     [ "setCurrentGridWithLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aa953e512f15ed40efffa2ccd1ffa7062", null ],
@@ -19,6 +18,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "audioService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a42da36ba8d2ce37205b34470bfe77837", null ],
     [ "cellViewModels", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a08effb35262e7a92de8e4bd41fc8e7b0", null ],
     [ "GRID_SIZE", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#afd1217d7084a63e6556c5c360cee4a07", null ],
+    [ "iGridConverter", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6cd7398269caba9269095a9cd704dfc8", null ],
     [ "iGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4d99b8d993ea1d81d18c436eea4b8e80", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aeef26ff53fb1cefb9fc7b6e68b420d47", null ],
     [ "playerService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a619c76b766eb92230bd406e37ae30ebd", null ],

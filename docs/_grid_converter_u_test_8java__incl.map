@@ -1,0 +1,15 @@
+<map id="src/test/java/fr/softsf/sudokufx/common/util/sudoku/GridConverterUTest.java" name="src/test/java/fr/softsf/sudokufx/common/util/sudoku/GridConverterUTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="312,5,528,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,128,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,65,132,110,131,105,311,60"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="152,112,261,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="352,67,252,108,250,103,350,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="284,112,420,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="400,66,373,101,369,98,396,63"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="444,112,535,139"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="444,63,472,98,468,101,440,66"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="559,112,715,139"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="491,62,593,103,591,108,489,67"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="740,112,942,139"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="528,56,767,106,766,111,527,61"/>
+</map>

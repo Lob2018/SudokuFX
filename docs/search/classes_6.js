@@ -18,12 +18,14 @@ var searchData=
   ['grid_15',['Grid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html',1,'fr::softsf::sudokufx::model']]],
   ['gridbuilder_16',['GridBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_1_1_grid_builder.html',1,'fr::softsf::sudokufx::model::Grid']]],
   ['gridcellviewmodel_17',['GridCellViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html',1,'fr::softsf::sudokufx::viewmodel::grid']]],
-  ['gridmaster_18',['GridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
-  ['gridmasterutest_19',['GridMasterUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
-  ['gridrepository_20',['GridRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudokufx::repository']]],
-  ['gridutest_21',['GridUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html',1,'fr::softsf::sudokufx::model']]],
-  ['gridviewmodel_22',['GridViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html',1,'fr::softsf::sudokufx::viewmodel::grid']]],
-  ['gridviewmodelutest_23',['GridViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
-  ['grilleresolueutest_24',['GrilleResolueUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::grid']]],
-  ['grillescreesutest_25',['GrillesCreesUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::grid']]]
+  ['gridconverter_18',['GridConverter',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
+  ['gridconverterutest_19',['GridConverterUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
+  ['gridmaster_20',['GridMaster',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
+  ['gridmasterutest_21',['GridMasterUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
+  ['gridrepository_22',['GridRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html',1,'fr::softsf::sudokufx::repository']]],
+  ['gridutest_23',['GridUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html',1,'fr::softsf::sudokufx::model']]],
+  ['gridviewmodel_24',['GridViewModel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html',1,'fr::softsf::sudokufx::viewmodel::grid']]],
+  ['gridviewmodelutest_25',['GridViewModelUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html',1,'fr::softsf::sudokufx::common::util::sudoku']]],
+  ['grilleresolueutest_26',['GrilleResolueUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::grid']]],
+  ['grillescreesutest_27',['GrillesCreesUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel::grid']]]
 ];

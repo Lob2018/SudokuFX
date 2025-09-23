@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridConverter" name="fr.softsf.sudokufx.common.util.sudoku.GridConverter">
+<area shape="rect" id="Node000001" title="Component providing conversions between different Sudoku grid representations:" alt="" coords="5,123,243,736"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="76,5,172,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,90,127,123,122,123,122,90"/>
+</map>
