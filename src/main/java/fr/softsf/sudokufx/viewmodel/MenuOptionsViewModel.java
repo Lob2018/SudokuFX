@@ -577,21 +577,31 @@ public class MenuOptionsViewModel {
      *   <li>Selected song
      * </ul>
      *
-     * <p>This method synchronizes the UI components with the current player's options, prepares the
-     * necessary properties for bindings, and marks the ViewModel as initialized.
+     * <p>This method synchronizes the UI components with the current player's options and prepares
+     * the necessary properties for bindings. The ViewModel is marked as initialized at the start of
+     * this method to allow called methods (like {@code applyAndPersistBackgroundImage}) to safely
+     * check the initialization state.
      *
-     * @param sudokuFX the GridPane to apply background settings
-     * @param menuOptionsButtonColor the ColorPicker to synchronize with the current color
-     * @param toaster the toaster component for user notifications during image loading
-     * @param spinner the spinner component to indicate loading state
+     * @param sudokuFX the GridPane to apply background settings; must not be {@code null}
+     * @param menuOptionsButtonColor the ColorPicker to synchronize with the current color; must not
+     *     be {@code null}
+     * @param toaster the toaster component for user notifications during image loading; must not be
+     *     {@code null}
+     * @param spinner the spinner component to indicate loading state; must not be {@code null}
+     * @throws NullPointerException if any of the parameters are {@code null}
      */
     public void init(
             GridPane sudokuFX,
             ColorPicker menuOptionsButtonColor,
             ToasterVBox toaster,
             SpinnerGridPane spinner) {
+        Objects.requireNonNull(sudokuFX, "sudokuFX mustn't be null");
+        Objects.requireNonNull(menuOptionsButtonColor, "menuOptionsButtonColor mustn't be null");
+        Objects.requireNonNull(toaster, "toaster mustn't be null");
+        Objects.requireNonNull(spinner, "spinner mustn't be null");
         this.toaster = toaster;
         OptionsDto optionsDto = playerStateHolder.currentPlayerProperty().get().optionsidDto();
+        initialized = true;
         if (optionsDto.imagepath().isEmpty()) {
             setColorFromModel(sudokuFX, menuOptionsButtonColor, optionsDto.hexcolor());
         } else {
@@ -601,11 +611,9 @@ public class MenuOptionsViewModel {
         audioService.setMuted(optionsDto.muted());
         muteProperty.set(optionsDto.muted());
         if (optionsDto.songpath().isEmpty()) {
-            initialized = true;
             return;
         }
         songProperty.set(Paths.get(optionsDto.songpath()).getFileName().toString());
-        initialized = true;
     }
 
     /**
