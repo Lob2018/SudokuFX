@@ -14,7 +14,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -24,10 +23,9 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
-import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import fr.softsf.sudokufx.common.exception.ResourceLoadException;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
+import fr.softsf.sudokufx.common.util.sudoku.IGridConverter;
 import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.GameLevelDto;
@@ -48,19 +46,18 @@ import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 public class GridViewModel {
 
     private static final Logger LOG = LoggerFactory.getLogger(GridViewModel.class);
-
     private static final int GRID_SIZE = 9;
     private static final int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
-    private final List<GridCellViewModel> cellViewModels = new ArrayList<>(GRID_SIZE * GRID_SIZE);
 
     private final IGridMaster iGridMaster;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
     private final AudioService audioService;
     private final PlayerStateHolder playerStateHolder;
     private final PlayerService playerService;
+    private final IGridConverter iConverter;
 
+    private final List<GridCellViewModel> cellViewModels = new ArrayList<>(TOTAL_CELLS);
     private boolean suppressCellsListeners = false;
-
     private ToasterVBox toaster;
 
     public GridViewModel(
@@ -68,12 +65,14 @@ public class GridViewModel {
             ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,
             AudioService audioService,
             PlayerStateHolder playerStateHolder,
-            PlayerService playerService) {
+            PlayerService playerService,
+            IGridConverter iConverter) {
         this.iGridMaster = iGridMaster;
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
         this.audioService = audioService;
         this.playerStateHolder = playerStateHolder;
         this.playerService = playerService;
+        this.iConverter = iConverter;
     }
 
     /**
@@ -107,8 +106,6 @@ public class GridViewModel {
                                     if (suppressCellsListeners) {
                                         return;
                                     }
-                                    // TODO to remove in production (only for tests)
-                                    // verifyGrid();
                                     if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
                                             != ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE) {
                                         if (StringUtils.isNotBlank(
@@ -126,7 +123,6 @@ public class GridViewModel {
                                             audioService.stopSong();
                                         }
                                     } else {
-                                        // TODO solve submenu
                                         audioService.stopSong();
                                     }
                                 });
@@ -143,17 +139,12 @@ public class GridViewModel {
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
         GameDto gameDto = currentPlayer.selectedGame();
         Objects.requireNonNull(gameDto, "gameDto mustn't be null");
-        GridDto currentGridDto = gameDto.grididDto();
-        String result =
-                getAllValues().stream()
-                        .map(value -> StringUtils.isBlank(value) ? "0" : value)
-                        .collect(Collectors.joining(","))
-                        .replace("\n", "");
-        String modelGridValue = currentGridDto.gridvalue();
+        String result = iConverter.listToGridValue(getAllValues());
+        String modelGridValue = gameDto.grididDto().gridvalue();
         if (modelGridValue.equals(result)) {
             return;
         }
-        GridDto toSaveGridDto = currentPlayer.selectedGame().grididDto().withGridvalue(result);
+        GridDto toSaveGridDto = gameDto.grididDto().withGridvalue(result);
         PlayerDto toSavePlayer =
                 currentPlayer.withSelectedGame(
                         currentPlayer.selectedGame().withGrididDto(toSaveGridDto));
@@ -185,13 +176,8 @@ public class GridViewModel {
         }
         DifficultyLevel level = DifficultyLevel.fromGridByte(gameDto.levelidDto().level());
         int percentage = gameDto.grididDto().possibilities();
-        setValues(defaultGridValueFromBase.chars().mapToObj(Character::toString).toList(), true);
-        String gridValueFromBase = gameDto.grididDto().gridvalue();
-        List<String> gridValuesFromBaseList =
-                Arrays.stream(gridValueFromBase.split(","))
-                        .map(s -> s.replace("\n", "").trim())
-                        .toList();
-        setValues(gridValuesFromBaseList, false);
+        setValues(iConverter.defaultGridValueToList(defaultGridValueFromBase), true);
+        setValues(iConverter.gridValueToList(gameDto.grididDto().gridvalue()), false);
         return Optional.of(new CurrentGrid(level, percentage));
     }
 
@@ -202,19 +188,15 @@ public class GridViewModel {
      */
     private boolean isCompletelyCompleted() {
         List<String> values = getAllValues();
-        if (values == null || values.size() != TOTAL_CELLS) {
-            return false;
-        }
-        for (String value : values) {
-            if (value == null || value.length() != 1) {
-                return false;
-            }
-            char c = value.charAt(0);
-            if (c < '1' || c > '9') {
-                return false;
-            }
-        }
-        return true;
+        return values != null
+                && values.size() == TOTAL_CELLS
+                && values.stream()
+                        .allMatch(
+                                v ->
+                                        v != null
+                                                && v.length() == 1
+                                                && Character.isDigit(v.charAt(0))
+                                                && v.charAt(0) != '0');
     }
 
     /**
@@ -222,7 +204,7 @@ public class GridViewModel {
      * triggers victory handling.
      */
     private void verifyGrid() {
-        int[] grilleInt = getAllValues().stream().mapToInt(this::parseCellValue).toArray();
+        int[] grilleInt = iConverter.listToIntArray(getAllValues());
         GrilleResolue grilleResolue = iGridMaster.resoudreLaGrille(grilleInt);
         boolean solved = grilleResolue.solved();
         int[] solvedGrid = grilleResolue.solvedGrid();
@@ -238,21 +220,6 @@ public class GridViewModel {
         if (solved && Arrays.equals(grilleInt, solvedGrid) && isCompletelyCompleted()) {
             celebrateVictory();
         }
-    }
-
-    /**
-     * Converts a cell's string value to an integer. Returns 0 for empty or invalid values.
-     *
-     * @param value the cell value as a string
-     * @return the parsed integer, or 0 if blank/invalid
-     */
-    private int parseCellValue(String value) {
-        if (StringUtils.isNotBlank(value)
-                && value.length() == 1
-                && Character.isDigit(value.charAt(0))) {
-            return Integer.parseInt(value);
-        }
-        return 0;
     }
 
     /**
@@ -274,11 +241,10 @@ public class GridViewModel {
                 if (file.exists()) {
                     audioService.playSong(file);
                 } else {
-                    throw new IllegalStateException(
-                            "Audio file not found or inaccessible: " + path);
+                    throw new IllegalStateException("Audio file not found: " + path);
                 }
             }
-        } catch (ResourceLoadException | IllegalStateException e) {
+        } catch (Exception e) {
             String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
             LOG.error("██ Exception - {}: {}", title, e.getMessage(), e);
             toaster.addToast(
@@ -335,7 +301,7 @@ public class GridViewModel {
                 .filter(v -> v.stream().allMatch(Objects::nonNull))
                 .orElseThrow(
                         () ->
-                                ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                                new IllegalArgumentException(
                                         "Grid must have exactly 81 non-null values"));
         suppressCellsListeners = true;
         for (int i = 0; i < TOTAL_CELLS; i++) {
@@ -358,30 +324,29 @@ public class GridViewModel {
      * @throws IllegalArgumentException if {@code level} is null
      */
     public int setCurrentGridWithLevel(DifficultyLevel level) {
-        if (Objects.isNull(level)) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "Difficulty level cannot be null");
+        if (level == null) {
+            throw new IllegalArgumentException("Difficulty level cannot be null");
         }
         GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level.toGridNumber());
         persistNewGame(level, grillesCrees);
-        setValues(
-                Arrays.stream(grillesCrees.grilleAResoudre()).mapToObj(String::valueOf).toList(),
-                true);
+        setValues(iConverter.intArrayToList(grillesCrees.grilleAResoudre()), true);
         return grillesCrees.pourcentageDesPossibilites();
     }
 
+    /**
+     * Persists a newly generated game for the current player, updating the selected game with the
+     * difficulty level, generated grids, possibility percentage, and last modified timestamp.
+     *
+     * @param level the {@link DifficultyLevel} of the new game
+     * @param grillesCrees the {@link GrillesCrees} containing generated grids and possibility
+     *     percentage
+     */
     private void persistNewGame(DifficultyLevel level, GrillesCrees grillesCrees) {
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
-        String defaultGrid =
-                Arrays.stream(grillesCrees.grilleAResoudre())
-                        .mapToObj(String::valueOf)
-                        .collect(Collectors.joining());
+        String defaultGrid = iConverter.intArrayToDefaultGridValue(grillesCrees.grilleAResoudre());
         String gridValue =
-                String.join(
-                        ",",
-                        Arrays.stream(grillesCrees.grilleAResoudre())
-                                .mapToObj(String::valueOf)
-                                .toList());
+                iConverter.listToGridValue(
+                        iConverter.intArrayToList(grillesCrees.grilleAResoudre()));
         Objects.requireNonNull(
                 currentPlayer.selectedGame(), "currentPlayer.selectedGame() mustn't be null");
         GameLevelDto toSaveGameLevelDto =

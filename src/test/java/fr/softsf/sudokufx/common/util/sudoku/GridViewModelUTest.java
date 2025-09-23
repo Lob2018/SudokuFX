@@ -58,7 +58,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new ActiveMenuOrSubmenuViewModel(),
                         new AudioService(),
                         playerStateHolder,
-                        playerServiceMock);
+                        playerServiceMock,
+                        new GridConverter());
         viewModel.init(new ToasterVBox());
     }
 
@@ -160,7 +161,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new ActiveMenuOrSubmenuViewModel(),
                         new AudioService(),
                         playerStateHolder,
-                        playerServiceMock);
+                        playerServiceMock,
+                        new GridConverter());
         viewModelLocal.init(new ToasterVBox());
         Optional<CurrentGrid> currentGrid = viewModelLocal.getCurrentGridFromModel();
         assertTrue(currentGrid.isPresent());
@@ -181,7 +183,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new ActiveMenuOrSubmenuViewModel(),
                         new AudioService(),
                         playerStateHolder,
-                        playerServiceMock);
+                        playerServiceMock,
+                        new GridConverter());
         gridVM.init(toasterMock);
         List<String> completedGrid =
                 Arrays.asList(
