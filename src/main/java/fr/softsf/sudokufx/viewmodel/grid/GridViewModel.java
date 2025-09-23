@@ -54,7 +54,7 @@ public class GridViewModel {
     private final AudioService audioService;
     private final PlayerStateHolder playerStateHolder;
     private final PlayerService playerService;
-    private final IGridConverter iConverter;
+    private final IGridConverter iGridConverter;
 
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(TOTAL_CELLS);
     private boolean suppressCellsListeners = false;
@@ -66,13 +66,13 @@ public class GridViewModel {
             AudioService audioService,
             PlayerStateHolder playerStateHolder,
             PlayerService playerService,
-            IGridConverter iConverter) {
+            IGridConverter iGridConverter) {
         this.iGridMaster = iGridMaster;
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
         this.audioService = audioService;
         this.playerStateHolder = playerStateHolder;
         this.playerService = playerService;
-        this.iConverter = iConverter;
+        this.iGridConverter = iGridConverter;
     }
 
     /**
@@ -139,7 +139,7 @@ public class GridViewModel {
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
         GameDto gameDto = currentPlayer.selectedGame();
         Objects.requireNonNull(gameDto, "gameDto mustn't be null");
-        String result = iConverter.listToGridValue(getAllValues());
+        String result = iGridConverter.listToGridValue(getAllValues());
         String modelGridValue = gameDto.grididDto().gridvalue();
         if (modelGridValue.equals(result)) {
             return;
@@ -176,8 +176,8 @@ public class GridViewModel {
         }
         DifficultyLevel level = DifficultyLevel.fromGridByte(gameDto.levelidDto().level());
         int percentage = gameDto.grididDto().possibilities();
-        setValues(iConverter.defaultGridValueToList(defaultGridValueFromBase), true);
-        setValues(iConverter.gridValueToList(gameDto.grididDto().gridvalue()), false);
+        setValues(iGridConverter.defaultGridValueToList(defaultGridValueFromBase), true);
+        setValues(iGridConverter.gridValueToList(gameDto.grididDto().gridvalue()), false);
         return Optional.of(new CurrentGrid(level, percentage));
     }
 
@@ -204,7 +204,7 @@ public class GridViewModel {
      * triggers victory handling.
      */
     private void verifyGrid() {
-        int[] grilleInt = iConverter.listToIntArray(getAllValues());
+        int[] grilleInt = iGridConverter.listToIntArray(getAllValues());
         GrilleResolue grilleResolue = iGridMaster.resoudreLaGrille(grilleInt);
         boolean solved = grilleResolue.solved();
         int[] solvedGrid = grilleResolue.solvedGrid();
@@ -329,7 +329,7 @@ public class GridViewModel {
         }
         GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level.toGridNumber());
         persistNewGame(level, grillesCrees);
-        setValues(iConverter.intArrayToList(grillesCrees.grilleAResoudre()), true);
+        setValues(iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()), true);
         return grillesCrees.pourcentageDesPossibilites();
     }
 
@@ -343,10 +343,10 @@ public class GridViewModel {
      */
     private void persistNewGame(DifficultyLevel level, GrillesCrees grillesCrees) {
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
-        String defaultGrid = iConverter.intArrayToDefaultGridValue(grillesCrees.grilleAResoudre());
+        String defaultGrid = iGridConverter.intArrayToDefaultGridValue(grillesCrees.grilleAResoudre());
         String gridValue =
-                iConverter.listToGridValue(
-                        iConverter.intArrayToList(grillesCrees.grilleAResoudre()));
+                iGridConverter.listToGridValue(
+                        iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()));
         Objects.requireNonNull(
                 currentPlayer.selectedGame(), "currentPlayer.selectedGame() mustn't be null");
         GameLevelDto toSaveGameLevelDto =
