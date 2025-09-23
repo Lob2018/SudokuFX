@@ -37,7 +37,7 @@ public final class GridMaster implements IGridMaster {
     private static final int MIN_POSSIBILITES = 4800;
     private static final int MAX_POSSIBILITES = 40000;
     private static final int POURCENTAGE_MAX = 100;
-    private static final int TEST_PSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
+    private static final int TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     private int moyenMinPossibilites = 16533;
     // Durée entre les demandes
@@ -483,14 +483,25 @@ public final class GridMaster implements IGridMaster {
         }
         // Remplir la grille
         boolean grilleRemplie = remplirLaGrille(grille, possibilites);
+        GrilleResolue grilleResolue;
         // La grille est remplie avec succès
         if (grilleRemplie) {
-            return new GrilleResolue(
-                    true,
-                    grille,
-                    getPourcentageDesPossibilites(sommeDesPossibilitesDeLaGrille(possibilites)));
+            grilleResolue =
+                    new GrilleResolue(
+                            true,
+                            grille,
+                            getPourcentageDesPossibilites(
+                                    sommeDesPossibilitesDeLaGrille(possibilites)));
+            // Valide l'intégrité du record
+            jakartaValidator.validateOrThrow(grilleResolue);
+            // Retourne la grille résolue
+            return grilleResolue;
         }
-        return new GrilleResolue(false, grille, 0);
+        grilleResolue = new GrilleResolue(false, grille, 0);
+        // Valide l'intégrité du record
+        jakartaValidator.validateOrThrow(grilleResolue);
+        // Retourne la grille d'origine
+        return grilleResolue;
     }
 
     @Override
@@ -531,7 +542,7 @@ public final class GridMaster implements IGridMaster {
      * seconde. Cette méthode est uniquement utilisée pour les tests.
      */
     void setAverageImpossiblePossibilitiesForTests() {
-        this.moyenMinPossibilites = TEST_PSSIBILITE_MOYENNE_IMPOSSIBLE;
+        this.moyenMinPossibilites = TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE;
         this.moyenMaxPossibilites = -1;
     }
 
@@ -540,6 +551,6 @@ public final class GridMaster implements IGridMaster {
      * seconde. Cette méthode est uniquement utilisée pour les tests.
      */
     void setDifficultImpossiblePossibilitiesForTests() {
-        this.moyenMaxPossibilites = TEST_PSSIBILITE_MOYENNE_IMPOSSIBLE;
+        this.moyenMaxPossibilites = TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE;
     }
 }
