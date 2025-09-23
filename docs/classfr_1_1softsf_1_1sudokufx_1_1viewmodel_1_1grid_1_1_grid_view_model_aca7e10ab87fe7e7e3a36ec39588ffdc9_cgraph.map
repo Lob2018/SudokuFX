@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.clearGrid" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.clearGrid">
+<area shape="rect" id="Node000001" title="Clears the text in all cells." alt="" coords="5,5,224,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init(ToasterVBox)." alt="" coords="272,5,490,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,24,256,24,256,29,224,29"/>
+</map>

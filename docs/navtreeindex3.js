@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html":[1,0,0,0,0,2,0,3],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html":[2,0,0,0,0,2,0,3],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html#a87391e63adf50ca1e64fa8fd28d48e0d":[1,0,0,0,0,2,0,3,2],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html#a87391e63adf50ca1e64fa8fd28d48e0d":[2,0,0,0,0,2,0,3,2],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html#a9cd69e32d7f55b5aa31ffa7775d15c85":[1,0,0,0,0,2,0,3,4],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html#a9cd69e32d7f55b5aa31ffa7775d15c85":[2,0,0,0,0,2,0,3,4],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html#ace29735c523275e2e91a72f199371264":[1,0,0,0,0,2,0,3,6],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3b98a4670237731506a41f0fcb036efd":[1,0,0,0,0,4,1,9],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3b98a4670237731506a41f0fcb036efd":[2,0,0,0,0,3,1,9],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3d507e4525d0d37323a6afc077e37a4d":[1,0,0,0,0,4,1,4],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3d507e4525d0d37323a6afc077e37a4d":[2,0,0,0,0,3,1,4],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3dbb7779e391585b833acc0f2f030d1c":[1,0,0,0,0,4,1,8],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3dbb7779e391585b833acc0f2f030d1c":[2,0,0,0,0,3,1,8],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a48e867b7b81bfbd3b5c2830637fdc06d":[1,0,0,0,0,4,1,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a48e867b7b81bfbd3b5c2830637fdc06d":[2,0,0,0,0,3,1,3]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3d507e4525d0d37323a6afc077e37a4d":[2,0,0,0,0,3,1,4]
 };

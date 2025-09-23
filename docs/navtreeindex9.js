@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a270708b3af47043027406367a5f1e8f6":[1,0,0,0,0,8,2,0,2,6,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a270708b3af47043027406367a5f1e8f6":[2,0,0,0,0,7,2,0,2,6,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a5dc4f0ce75ad22979f441b56e6c72620":[1,0,0,0,0,8,2,0,2,6,3],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a5dc4f0ce75ad22979f441b56e6c72620":[2,0,0,0,0,7,2,0,2,6,3],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a65d61c5263049912f55db6097ef8ffb3":[1,0,0,0,0,8,2,0,2,6,1],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a65d61c5263049912f55db6097ef8ffb3":[2,0,0,0,0,7,2,0,2,6,1],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a698d8551ad82fb39fcb5f2cbe21f3c1d":[1,0,0,0,0,8,2,0,2,6,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#a8a6e85e57617985b0ef689df86412ae4":[1,0,0,0,0,8,2,2,0,0,7],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#a8a6e85e57617985b0ef689df86412ae4":[2,0,0,0,0,7,2,2,0,0,7],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#a915d4d5d914ead51905250b2ac35a742":[1,0,0,0,0,8,2,2,0,0,8],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#a915d4d5d914ead51905250b2ac35a742":[2,0,0,0,0,7,2,2,0,0,8],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#ac290f275ff0ca583a1b778e8c13168b5":[1,0,0,0,0,8,2,2,0,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#ac290f275ff0ca583a1b778e8c13168b5":[2,0,0,0,0,7,2,2,0,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#acf37fd35c98fc16d1fb655ef1c75da72":[1,0,0,0,0,8,2,2,0,0,5],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#acf37fd35c98fc16d1fb655ef1c75da72":[2,0,0,0,0,7,2,2,0,0,5]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html#a915d4d5d914ead51905250b2ac35a742":[2,0,0,0,0,7,2,2,0,0,8]
 };

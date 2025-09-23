@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.handleRestoreGridAndMenuMaxiShow" name="fr.softsf.sudokufx.view.main.MainView.handleRestoreGridAndMenuMaxiShow">
+<area shape="rect" id="Node000001" title="Restores the grid and shows the MAXI menu." alt="" coords="5,35,250,93"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7a5e9379f9400a112803ed3dcd19063d" title="Activates the MAXI menu and sets focus on the corresponding button based on the event source." alt="" coords="301,5,514,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,45,285,40,286,45,250,50"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a805ba50257c2565844220d96b618c2c9" title="Loads the current user&#45;entered grid from the model and updates the selected level and completion perc..." alt="" coords="298,72,517,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,78,283,82,282,87,250,83"/>
+</map>

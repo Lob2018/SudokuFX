@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html":[1,0,0,0,0,4,13,2],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html":[2,0,0,0,0,3,13,2],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html#a168adfc75fb4d8c4b3397daabbb8feed":[1,0,0,0,0,4,13,2,3],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html#a168adfc75fb4d8c4b3397daabbb8feed":[2,0,0,0,0,3,13,2,3],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html#a9a15904683eb8e0c3c6c3bd2fe06b27b":[1,0,0,0,0,4,13,2,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html#a9a15904683eb8e0c3c6c3bd2fe06b27b":[2,0,0,0,0,3,13,2,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html#ab734d51ead39f55c201ef744578275d1":[1,0,0,0,0,4,13,2,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a17857477810faf7ff01baa389f16fc30":[1,0,0,0,0,7,2,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a17857477810faf7ff01baa389f16fc30":[2,0,0,0,0,6,2,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a21be365726d7183c416ff4947b6dc822":[1,0,0,0,0,7,2,1,14],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a21be365726d7183c416ff4947b6dc822":[2,0,0,0,0,6,2,1,14],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a2455be6008c3a0e1b5d144f494a31e1d":[1,0,0,0,0,7,2,1,12],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a2455be6008c3a0e1b5d144f494a31e1d":[2,0,0,0,0,6,2,1,12],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a29315a491b800d503ebfe13ca49c853a":[1,0,0,0,0,7,2,1,9],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a29315a491b800d503ebfe13ca49c853a":[2,0,0,0,0,6,2,1,9]
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a21be365726d7183c416ff4947b6dc822":[2,0,0,0,0,6,2,1,14]
 };

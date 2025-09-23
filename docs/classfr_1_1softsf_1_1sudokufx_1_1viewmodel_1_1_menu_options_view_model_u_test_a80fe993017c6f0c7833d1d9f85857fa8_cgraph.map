@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,52,288,127"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a343e123b20fa7fa3fcd1ef9173d58546" title="Applies a background image to the specified GridPane and persists its path in the current player&#39;s op..." alt="" coords="586,31,848,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,79,571,65,572,70,288,85"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a52dadaf5fba37f78cc096f5d55487246" title="Initializes the menu options UI state for the current player, including:" alt="" coords="336,97,529,140"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="288,101,320,105,320,110,288,107"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker,..." alt="" coords="911,5,1168,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="848,44,896,39,896,44,848,49"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#add42eac8d6831cc853249da660b34e14" title="Persists the given image path in the current player&#39;s OptionsDto if it differs from the existing path..." alt="" coords="905,72,1174,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="848,71,890,75,889,81,848,76"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="529,96,571,87,572,93,530,101"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a3b1dee2b684cd6f89f245ff46623b8a5" title="Sets the background color of the GridPane and updates the ColorPicker based on the color value retrie..." alt="" coords="577,113,857,156"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="530,121,562,123,561,129,529,127"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.gridInitialization" name="fr.softsf.sudokufx.view.main.MainView.gridInitialization">
+<area shape="rect" id="Node000001" title="Initializes the 9x9 Sudoku grid UI and loads the current grid values from the model if they exist." alt="" coords="5,13,195,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a805ba50257c2565844220d96b618c2c9" title="Loads the current user&#45;entered grid from the model and updates the selected level and completion perc..." alt="" coords="243,5,462,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,32,227,32,227,37,195,37"/>
+</map>

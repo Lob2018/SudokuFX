@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html":[1,0,0,0,0,4,10],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html":[2,0,0,0,0,3,10],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a026951bada7d16d7220aaf6bd25f5268":[1,0,0,0,0,4,10,5],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a026951bada7d16d7220aaf6bd25f5268":[2,0,0,0,0,3,10,5],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0470d6c6cbdb3a3524a4895aaa0412d7":[1,0,0,0,0,4,10,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0470d6c6cbdb3a3524a4895aaa0412d7":[2,0,0,0,0,3,10,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0577745d0567a7787eb3fa0e85cd895e":[1,0,0,0,0,4,10,38],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#adf0a053fbd445b9d58332a2b6a70c170":[1,0,0,0,0,4,13,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#adf0a053fbd445b9d58332a2b6a70c170":[2,0,0,0,0,3,13,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#af917c19e9efbc9a714a4c6aefeb5b990":[1,0,0,0,0,4,13,1,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#af917c19e9efbc9a714a4c6aefeb5b990":[2,0,0,0,0,3,13,1,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html":[1,0,0,0,0,4,13,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html":[2,0,0,0,0,3,13,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html#a168adfc75fb4d8c4b3397daabbb8feed":[1,0,0,0,0,4,13,2,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html#a168adfc75fb4d8c4b3397daabbb8feed":[2,0,0,0,0,3,13,2,3]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#af917c19e9efbc9a714a4c6aefeb5b990":[2,0,0,0,0,3,13,1,0]
 };

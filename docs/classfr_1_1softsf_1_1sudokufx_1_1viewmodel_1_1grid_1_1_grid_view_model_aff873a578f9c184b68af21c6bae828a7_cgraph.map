@@ -1,18 +1,26 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init">
-<area shape="rect" id="Node000001" title="Initializes the 9x9 Sudoku grid by creating 81 GridCellViewModel instances with unique IDs and row/co..." alt="" coords="5,93,224,136"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="272,5,490,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,90,299,51,301,56,183,95"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="538,64,790,107"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,106,522,90,523,96,224,112"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09" title="Persists the current grid state for the active player’s selected game." alt="" coords="555,248,773,291"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="166,134,272,175,410,213,540,243,539,248,409,218,271,180,164,139"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" title="Validates the grid by attempting to solve it." alt="" coords="272,123,490,165"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="225,124,256,128,256,133,224,129"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="838,123,1057,165"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="771,105,827,116,826,122,770,110"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="758,245,789,234,849,204,901,172,904,176,851,209,791,238,759,250"/>
-<area shape="poly" id="edge9_Node000006_Node000003" title=" " alt="" coords="487,119,542,108,543,113,488,125"/>
-<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="490,141,823,141,823,147,490,147"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca" title="Handles all actions when a grid is successfully completed." alt="" coords="555,181,773,224"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="488,163,543,175,542,180,487,169"/>
+<area shape="rect" id="Node000001" title="Initializes the 9x9 Sudoku grid by creating 81 GridCellViewModel instances with unique IDs and row/co..." alt="" coords="5,68,224,111"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="285,35,503,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,74,269,68,270,73,224,79"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9a196b605ead50c78f40edd67484d60a" title="Handles updates to a cell&#39;s text when the user modifies the grid." alt="" coords="272,101,516,144"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,100,256,104,256,109,224,105"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c7bd2140fad9b3091830f3f81c64827" title="Returns whether the current game has a non&#45;empty default grid." alt="" coords="564,5,782,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="484,98,515,87,539,73,563,58,577,51,580,56,565,62,541,77,517,92,486,103"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="830,131,1083,173"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="516,126,815,142,815,147,516,132"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09" title="Persists the current grid state for the active player’s selected game." alt="" coords="564,72,782,115"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="516,107,548,104,549,109,517,112"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" title="Validates the grid by attempting to solve it." alt="" coords="564,197,782,240"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="459,142,595,189,593,194,457,147"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="1131,131,1349,173"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1083,149,1115,149,1115,155,1083,155"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init(ToasterVBox)." alt="" coords="1397,131,1615,173"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1350,149,1381,149,1381,155,1350,155"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="783,93,926,100,1083,116,1132,124,1132,130,1082,121,926,106,783,98"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="766,194,848,175,849,180,767,199"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="700,238,757,281,793,301,831,316,901,336,958,345,986,344,1014,339,1082,316,1125,290,1162,256,1193,219,1217,185,1221,188,1198,222,1166,259,1128,294,1084,321,1016,345,986,349,958,350,900,341,829,321,791,306,754,285,697,243"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca" title="Handles all actions when a grid is successfully completed." alt="" coords="847,197,1066,240"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="783,216,832,216,832,221,783,221"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#af41c64cb771df8f4fa5bbf0c3a34431b" title="Solves the given 9x9 Sudoku grid." alt="" coords="846,264,1067,307"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="767,238,849,257,848,263,766,243"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistOptionsColor" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistOptionsColor">
+<area shape="rect" id="Node000001" title="Applies the given color as the background of the specified GridPane and persists it in the current pl..." alt="" coords="5,5,267,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker,..." alt="" coords="315,13,571,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,32,299,32,299,37,267,37"/>
+</map>
