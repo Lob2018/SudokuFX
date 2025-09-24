@@ -222,6 +222,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.common.util.SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.StopOperationsTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_stop_operations_tests.html", null ],
+    [ "fr.softsf.sudokufx.service.ui.ToasterService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html", null ],
     [ "fr.softsf.sudokufx.common.enums.ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html", null ],
     [ "fr.softsf.sudokufx.model.GameUTest.ToStringTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_to_string_tests.html", null ],
     [ "fr.softsf.sudokufx.model.OptionsUTest.ToStringTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html", null ],

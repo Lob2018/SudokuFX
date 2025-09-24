@@ -17,7 +17,7 @@ var searchData=
   ['benchgridmaster_2ejava_14',['BenchGridMaster.java',['../_bench_grid_master_8java.html',1,'']]],
   ['bindingcheck_15',['BindingCheck',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html#ab2c30bc23ed2068e028a3d845756cba2',1,'fr::softsf::sudokufx::testing::unit::viewmodel::MenuNewViewModelUTest']]],
   ['bindingconfigurator_16',['BindingConfigurator',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html',1,'fr::softsf::sudokufx::view::util']]],
-  ['bindingconfigurator_17',['bindingConfigurator',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3b26f6de08bc14a7040f3ad186dcf330',1,'fr::softsf::sudokufx::view::main::MainView']]],
+  ['bindingconfigurator_17',['bindingConfigurator',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a57f2b55f2901784ee41aaae15872fc83',1,'fr::softsf::sudokufx::view::main::MainView']]],
   ['bindingconfigurator_2ejava_18',['BindingConfigurator.java',['../_binding_configurator_8java.html',1,'']]],
   ['bindingconfiguratorutest_19',['BindingConfiguratorUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html',1,'fr::softsf::sudokufx::testing::unit::view::util']]],
   ['bindingconfiguratorutest_2ejava_20',['BindingConfiguratorUTest.java',['../_binding_configurator_u_test_8java.html',1,'']]],

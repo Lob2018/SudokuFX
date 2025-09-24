@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
 [
-    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aa8d0d1bac6ae06abb6d3ce238e49fbc3", null ],
+    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#afc82ba7bf261381e3528351a77874a5c", null ],
     [ "celebrateVictory", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca", null ],
     [ "checkInitialized", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157", null ],
     [ "clearGrid", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca7e10ab87fe7e7e3a36ec39588ffdc9", null ],
@@ -12,7 +12,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "getCurrentSolvedGridFromModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a293a2d059c297f4ff13190d0b7695452", null ],
     [ "handleCellTextChange", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9a196b605ead50c78f40edd67484d60a", null ],
     [ "hasDefaultGrid", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c7bd2140fad9b3091830f3f81c64827", null ],
-    [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aff873a578f9c184b68af21c6bae828a7", null ],
+    [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a159c0e18f45f9bd105fb03964f5f9374", null ],
     [ "isCompletelyCompleted", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075", null ],
     [ "persistGridValue", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09", null ],
     [ "persistNewGame", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6", null ],
@@ -31,6 +31,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "playerService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a619c76b766eb92230bd406e37ae30ebd", null ],
     [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a283f954f3e29f3f23da75c01172040e9", null ],
     [ "suppressCellsListeners", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a5a871ec83dc104a8d8ca4fbd3a1474af", null ],
-    [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a79f91310cd0f40e67f1fc5ca80fc698c", null ],
+    [ "toasterService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7e33dcac8e47a0672b897df696efc93", null ],
     [ "TOTAL_CELLS", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca2db631f0e0d1eb751367a0c0237867", null ]
 ];

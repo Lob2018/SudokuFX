@@ -7,5 +7,6 @@ var dir_312f66a432e0f9af30adae5d0c1eacbb =
     [ "MenuDto.java", "_menu_dto_8java.html", "_menu_dto_8java" ],
     [ "OptionsDto.java", "_options_dto_8java.html", "_options_dto_8java" ],
     [ "PlayerDto.java", "_player_dto_8java.html", "_player_dto_8java" ],
-    [ "PlayerLanguageDto.java", "_player_language_dto_8java.html", "_player_language_dto_8java" ]
+    [ "PlayerLanguageDto.java", "_player_language_dto_8java.html", "_player_language_dto_8java" ],
+    [ "ToastData.java", "_toast_data_8java.html", "_toast_data_8java" ]
 ];

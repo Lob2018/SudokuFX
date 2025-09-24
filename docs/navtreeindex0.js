@@ -167,8 +167,10 @@ var NAVTREEINDEX0 =
 "_spring_context_initializer_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,0,2,7],
 "_sudo_main_8java.html":[3,0,1,0,0,0,0,0,11],
 "_tag_dto_8java.html":[3,0,1,0,0,0,0,0,3,0,1],
+"_toast_data_8java.html":[3,0,1,0,0,0,0,0,3,8],
 "_toast_levels_8java.html":[3,0,1,0,0,0,0,0,1,1,8],
 "_toaster_button_8java.html":[3,0,1,0,0,0,0,0,8,0,1,0],
+"_toaster_service_8java.html":[3,0,1,0,0,0,0,0,7,2,4],
 "_toaster_v_box_8java.html":[3,0,1,0,0,0,0,0,8,0,1,1],
 "_urls_8java.html":[3,0,1,0,0,0,0,0,1,1,9],
 "_version_service_8java.html":[3,0,1,0,0,0,0,0,7,1,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html":[1,0,0,0,0,1,3,0,7],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html":[2,0,0,0,0,1,3,0,7],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#a10adcf2dfc24a5c1b3a055797588279b":[1,0,0,0,0,1,3,0,7,3],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#a10adcf2dfc24a5c1b3a055797588279b":[2,0,0,0,0,1,3,0,7,3],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#a12b7e192b0c4f6bc3a68667aeed2b281":[1,0,0,0,0,1,3,0,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#a12b7e192b0c4f6bc3a68667aeed2b281":[2,0,0,0,0,1,3,0,7,0]
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html#a10adcf2dfc24a5c1b3a055797588279b":[2,0,0,0,0,1,3,0,7,3]
 };

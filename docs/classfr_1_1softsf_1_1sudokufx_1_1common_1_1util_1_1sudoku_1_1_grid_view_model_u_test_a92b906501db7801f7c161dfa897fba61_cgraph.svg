@@ -89,7 +89,7 @@ var sectionId = 'dynsection-6';
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aff873a578f9c184b68af21c6bae828a7" target="_top" xlink:title="Initializes the 9x9 Sudoku grid by creating 81 GridCellViewModel instances with unique IDs and row/co...">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a159c0e18f45f9bd105fb03964f5f9374" target="_top" xlink:title="Initializes the 9x9 Sudoku grid by creating 81 GridCellViewModel instances with unique IDs and row/co...">
 <polygon fill="white" stroke="#666666" points="427.25,-120 263.5,-120 263.5,-88 427.25,-88 427.25,-120"/>
 <text text-anchor="start" x="271.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="345.38" y="-94.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.init</text>
@@ -108,7 +108,7 @@ var sectionId = 'dynsection-6';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init(ToasterVBox).">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init().">
 <polygon fill="white" stroke="#666666" points="1518.62,-268 1354.88,-268 1354.88,-236 1518.62,-236 1518.62,-268"/>
 <text text-anchor="start" x="1362.88" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="1436.75" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.checkInitialized</text>

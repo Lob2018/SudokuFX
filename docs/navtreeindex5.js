@@ -1,5 +1,9 @@
 var NAVTREEINDEX5 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html#a5fa0a05bb6527c9e871b390e7f8f84cd":[1,0,0,0,0,4,5,15],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html#a5fa0a05bb6527c9e871b390e7f8f84cd":[2,0,0,0,0,3,5,15],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html#a83ffd504be51404647da28384140e98c":[1,0,0,0,0,4,5,9],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html#a83ffd504be51404647da28384140e98c":[2,0,0,0,0,3,5,9],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html#a9f882f3a8246dfbddaa1bf479f533a88":[1,0,0,0,0,4,5,8],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html#a9f882f3a8246dfbddaa1bf479f533a88":[2,0,0,0,0,3,5,8],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html#aac8e97a2ad0710b8ee164e82764ebd88":[1,0,0,0,0,4,5,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX5 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ad9c0d6437b6fd72eb6ab71e6282046f5":[1,0,0,0,0,4,9,6,3],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ad9c0d6437b6fd72eb6ab71e6282046f5":[2,0,0,0,0,3,9,6,3],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ae90187a06ee81a6e30bfddbed25010e5":[1,0,0,0,0,4,9,6,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ae90187a06ee81a6e30bfddbed25010e5":[2,0,0,0,0,3,9,6,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html":[1,0,0,0,0,4,9,7],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html":[2,0,0,0,0,3,9,7],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html#a8f73920eac562cf9014f6c30396eda32":[1,0,0,0,0,4,9,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html#a8f73920eac562cf9014f6c30396eda32":[2,0,0,0,0,3,9,7,0]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ae90187a06ee81a6e30bfddbed25010e5":[2,0,0,0,0,3,9,6,1]
 };

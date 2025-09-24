@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Loads the specified FXML (without extension), sets it as the scene root, and returns its controller.">
+<g id="a_Node000001"><a xlink:title="Loads the specified FXML file (without the &quot;.fxml&quot; extension), sets it as the root of the current Jav...">
 <polygon fill="#999999" stroke="#666666" points="168.25,-32 0,-32 0,0 168.25,0 168.25,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.navigation.</text>
 <text text-anchor="middle" x="84.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator.setRootByFXMLName</text>

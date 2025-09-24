@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init(ToasterVBox).">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init().">
 <polygon fill="white" stroke="#666666" points="606.38,-166 442.62,-166 442.62,-134 606.38,-134 606.38,-166"/>
 <text text-anchor="start" x="450.62" y="-152.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="524.5" y="-140.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.checkInitialized</text>

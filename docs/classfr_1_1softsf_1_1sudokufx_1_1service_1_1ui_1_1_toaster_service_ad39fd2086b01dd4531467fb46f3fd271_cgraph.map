@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.ui.ToasterService.showInfo" name="fr.softsf.sudokufx.service.ui.ToasterService.showInfo">
+<area shape="rect" id="Node000001" title="Sends an informational toast." alt="" coords="5,5,193,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a42cf10308d40bac7e86db44f70d96218" title="Creates a ToastData and publishes it to the toastRequest property." alt="" coords="241,5,428,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,24,225,24,225,29,193,29"/>
+</map>

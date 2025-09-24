@@ -1,5 +1,9 @@
 var NAVTREEINDEX3 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aeed33d7485183a1af72690e28967288e":[1,0,0,0,0,2,0,2,18],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aeed33d7485183a1af72690e28967288e":[2,0,0,0,0,2,0,2,18],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aef6d24f743ee77011229198633853c28":[1,0,0,0,0,2,0,2,29],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aef6d24f743ee77011229198633853c28":[2,0,0,0,0,2,0,2,29],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html":[1,0,0,0,0,2,0,3],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html":[2,0,0,0,0,2,0,3],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html#a87391e63adf50ca1e64fa8fd28d48e0d":[1,0,0,0,0,2,0,3,2],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a27185e215323e1ca00cfa3b86696c28f":[1,0,0,0,0,4,1,11],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a27185e215323e1ca00cfa3b86696c28f":[2,0,0,0,0,3,1,11],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a30acebe3e44d732af26eeb01384dd129":[1,0,0,0,0,4,1,10],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a30acebe3e44d732af26eeb01384dd129":[2,0,0,0,0,3,1,10],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3b98a4670237731506a41f0fcb036efd":[1,0,0,0,0,4,1,9],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3b98a4670237731506a41f0fcb036efd":[2,0,0,0,0,3,1,9],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3d507e4525d0d37323a6afc077e37a4d":[1,0,0,0,0,4,1,4],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3d507e4525d0d37323a6afc077e37a4d":[2,0,0,0,0,3,1,4]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a30acebe3e44d732af26eeb01384dd129":[2,0,0,0,0,3,1,10]
 };

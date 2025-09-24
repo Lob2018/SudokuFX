@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentSolvedGridFromModel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentSolvedGridFromModel">
 <area shape="rect" id="Node000001" title="Loads the solved Sudoku grid from the model into the ViewModel." alt="" coords="5,143,309,186"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init(ToasterVBox)." alt="" coords="636,177,854,219"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="636,177,854,219"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,141,211,113,253,81,303,51,356,29,418,11,470,3,521,8,582,29,628,56,667,91,700,128,725,162,720,165,696,131,664,94,625,60,580,34,520,14,470,9,420,16,358,34,305,56,256,86,215,117,183,145"/>
 <area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8" title="Represents the current loaded Sudoku grid, including its difficulty level and the percentage of possi..." alt="" coords="360,43,578,86"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,140,356,96,378,89,380,94,357,101,223,145"/>

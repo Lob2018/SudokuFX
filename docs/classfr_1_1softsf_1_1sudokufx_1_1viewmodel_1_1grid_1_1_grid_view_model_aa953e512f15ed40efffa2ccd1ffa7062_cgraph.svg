@@ -68,7 +68,7 @@ var sectionId = 'dynsection-12';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init(ToasterVBox).">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init().">
 <polygon fill="white" stroke="#666666" points="596.62,-132 432.88,-132 432.88,-100 596.62,-100 596.62,-132"/>
 <text text-anchor="start" x="440.88" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="514.75" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.checkInitialized</text>

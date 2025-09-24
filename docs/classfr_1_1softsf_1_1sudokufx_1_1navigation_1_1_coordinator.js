@@ -16,6 +16,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
     [ "setRootByFXMLName", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a76beb2414cb9e9e68181f08fd930f0b9", null ],
     [ "toggleLanguage", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a80498d5645b3cf8adb43f0572a0879db", null ],
     [ "updatePlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aff34e77864185144dffd978d6ee2cdd4", null ],
+    [ "applicationContext", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a73459121b4bec5be9c5eea58bec75086", null ],
     [ "defaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a0b25ad20a22e1cdfda2b4469d88a587d", null ],
     [ "dynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a709ac37adbaff7acbc20e18366a85239", null ],
     [ "FXML_EXTENSION", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#adde9efab032c0e85f885f5ad7954be1d", null ],

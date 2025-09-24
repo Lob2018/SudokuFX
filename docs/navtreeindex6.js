@@ -1,5 +1,9 @@
 var NAVTREEINDEX6 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html":[1,0,0,0,0,4,9,7],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html":[2,0,0,0,0,3,9,7],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html#a8f73920eac562cf9014f6c30396eda32":[1,0,0,0,0,4,9,7,0],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html#a8f73920eac562cf9014f6c30396eda32":[2,0,0,0,0,3,9,7,0],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html":[1,0,0,0,0,4,10],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html":[2,0,0,0,0,3,10],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a026951bada7d16d7220aaf6bd25f5268":[1,0,0,0,0,4,10,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX6 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a32fb731b988ffecb0933251b81e8efc4":[1,0,0,0,0,4,13,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a32fb731b988ffecb0933251b81e8efc4":[2,0,0,0,0,3,13,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a511b74fa9bfaa27e30c8a7a6581d0c92":[1,0,0,0,0,4,13,1,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a511b74fa9bfaa27e30c8a7a6581d0c92":[2,0,0,0,0,3,13,1,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#adf0a053fbd445b9d58332a2b6a70c170":[1,0,0,0,0,4,13,1,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#adf0a053fbd445b9d58332a2b6a70c170":[2,0,0,0,0,3,13,1,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#af917c19e9efbc9a714a4c6aefeb5b990":[1,0,0,0,0,4,13,1,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#af917c19e9efbc9a714a4c6aefeb5b990":[2,0,0,0,0,3,13,1,0]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a511b74fa9bfaa27e30c8a7a6581d0c92":[2,0,0,0,0,3,13,1,3]
 };

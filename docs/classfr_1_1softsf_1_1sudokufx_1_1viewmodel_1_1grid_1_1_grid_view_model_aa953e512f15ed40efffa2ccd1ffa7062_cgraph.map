@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevel">
 <area shape="rect" id="Node000001" title="Generates a new grid for the given difficulty level, updates the cells, and returns the associated co..." alt="" coords="5,89,262,132"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init(ToasterVBox)." alt="" coords="582,112,801,155"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="582,112,801,155"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,113,567,126,567,131,262,119"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6" title="Persists a newly generated game for the current player, updating the selected game with grids,..." alt="" coords="310,5,528,48"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="208,86,328,50,330,56,209,91"/>

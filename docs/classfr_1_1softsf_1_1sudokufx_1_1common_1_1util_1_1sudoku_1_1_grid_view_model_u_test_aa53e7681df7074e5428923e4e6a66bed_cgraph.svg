@@ -127,7 +127,7 @@ var sectionId = 'dynsection-4';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aff873a578f9c184b68af21c6bae828a7" target="_top" xlink:title="Initializes the 9x9 Sudoku grid by creating 81 GridCellViewModel instances with unique IDs and row/co...">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a159c0e18f45f9bd105fb03964f5f9374" target="_top" xlink:title="Initializes the 9x9 Sudoku grid by creating 81 GridCellViewModel instances with unique IDs and row/co...">
 <polygon fill="white" stroke="#666666" points="478.62,-153.79 314.88,-153.79 314.88,-121.79 478.62,-121.79 478.62,-153.79"/>
 <text text-anchor="start" x="322.88" y="-140.29" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="396.75" y="-128.29" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.init</text>
@@ -146,7 +146,7 @@ var sectionId = 'dynsection-4';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init(ToasterVBox).">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init().">
 <polygon fill="white" stroke="#666666" points="1549,-335.79 1385.25,-335.79 1385.25,-303.79 1549,-303.79 1549,-335.79"/>
 <text text-anchor="start" x="1393.25" y="-322.29" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="1467.12" y="-310.29" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.checkInitialized</text>
