@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.IntStream;
-import javafx.beans.property.IntegerProperty;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,14 +26,13 @@ import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.ui.AudioService;
-import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
+import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.CurrentGrid;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;
 
-import static fr.softsf.sudokufx.common.enums.ToastLevels.INFO;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
@@ -43,13 +41,15 @@ import static org.mockito.Mockito.*;
 class GridViewModelUTest extends AbstractPlayerStateTest {
 
     private GridViewModel viewModel;
+    private ToasterService toasterServiceMock;
 
     @BeforeEach
-    void givenPlayerStateHolder_whenInitGridViewModel_thenViewModelInitialized() {
+    void setUp() {
         JakartaValidator validatorMock = mock(JakartaValidator.class);
         doAnswer(invocation -> invocation.getArgument(0))
                 .when(validatorMock)
                 .validateOrThrow(any());
+        toasterServiceMock = mock(ToasterService.class);
         viewModel =
                 new GridViewModel(
                         new GridMaster(validatorMock),
@@ -57,8 +57,9 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
-                        new GridConverter());
-        viewModel.init(new ToasterVBox());
+                        new GridConverter(),
+                        toasterServiceMock);
+        viewModel.init();
     }
 
     @Test
@@ -108,10 +109,10 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
 
     @Test
     void givenValidLevel_whenSetCurrentGridWithLevel_thenGridIsUpdatedAndPlayerServiceCalled() {
-        var player = playerStateHolder.getCurrentPlayer();
         int percentage = viewModel.setCurrentGridWithLevel(DifficultyLevel.EASY);
         assertTrue(percentage >= 0 && percentage <= 100);
         verify(playerServiceMock).updatePlayer(any());
+        PlayerDto player = playerStateHolder.getCurrentPlayer();
         assertNotNull(player.selectedGame());
         assertNotNull(player.selectedGame().grididDto().gridvalue());
     }
@@ -119,11 +120,9 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     @Test
     void givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues() {
         GridCellViewModel cell = viewModel.getCellViewModels().getFirst();
-        IntegerProperty idProp = cell.idProperty();
-        assertNotNull(idProp);
-        assertEquals(cell.getId(), idProp.get());
         assertEquals(0, cell.getRow());
         assertEquals(0, cell.getCol());
+        assertEquals(1, cell.getId());
         assertNotNull(cell.getLabel());
         assertNotNull(cell.getTextArea());
     }
@@ -153,37 +152,27 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
         PlayerDto newPlayer = playerStateHolder.getCurrentPlayer().withSelectedGame(newGameDto);
         when(playerServiceMock.getPlayer()).thenReturn(newPlayer);
         playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);
-        GridViewModel viewModelLocal =
+        GridViewModel localVM =
                 new GridViewModel(
                         new GridMaster(mock(JakartaValidator.class)),
                         new ActiveMenuOrSubmenuViewModel(),
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
-                        new GridConverter());
-        viewModelLocal.init(new ToasterVBox());
-        Optional<CurrentGrid> currentGrid = viewModelLocal.getCurrentGridFromModel();
+                        new GridConverter(),
+                        toasterServiceMock);
+        localVM.init();
+        Optional<CurrentGrid> currentGrid = localVM.getCurrentGridFromModel();
         assertTrue(currentGrid.isPresent());
-        assertNotNull(currentGrid.get());
         assertEquals(
                 DifficultyLevel.fromGridByte(newGameDto.levelidDto().level()),
                 currentGrid.get().level());
         assertEquals(newGameDto.grididDto().possibilities(), currentGrid.get().percentage());
-        assertTrue(viewModelLocal.getAllValues().stream().allMatch(v -> v.equals("0")));
+        assertTrue(localVM.getAllValues().stream().allMatch(v -> v.equals("0")));
     }
 
     @Test
     void givenPlayerWithCompletedGrid_whenGridIsComplete_thenToastTriggered() {
-        ToasterVBox toasterMock = mock(ToasterVBox.class);
-        GridViewModel gridVM =
-                new GridViewModel(
-                        new GridMaster(mock(JakartaValidator.class)),
-                        new ActiveMenuOrSubmenuViewModel(),
-                        new AudioService(),
-                        playerStateHolder,
-                        playerServiceMock,
-                        new GridConverter());
-        gridVM.init(toasterMock);
         List<String> completedGrid =
                 Arrays.asList(
                         "3", "1", "6", "9", "7", "2", "4", "5", "8", "7", "8", "9", "4", "5", "3",
@@ -192,19 +181,16 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         "5", "3", "2", "1", "6", "9", "7", "8", "4", "2", "5", "4", "6", "9", "1",
                         "8", "7", "3", "1", "7", "3", "2", "8", "5", "6", "4", "9", "9", "6", "8",
                         "3", "4", "7", "5", "1", "2");
-        gridVM.setValues(completedGrid, true);
-        assertTrue(gridVM.getCellViewModelById(1).isPresent());
-        gridVM.getCellViewModelById(1).get().getTextArea().setText("");
-        gridVM.getCellViewModelById(1).get().getTextArea().setText("3");
-        verify(toasterMock, atLeastOnce())
-                .addToast(
-                        eq(
-                                MessageFormat.format(
-                                        I18n.INSTANCE.getValue("toast.msg.gridviewmodel.completed"),
-                                        playerStateHolder.getCurrentPlayer().name())),
-                        anyString(),
-                        eq(INFO),
-                        eq(false));
+        viewModel.setValues(completedGrid, true);
+        GridCellViewModel firstCell = viewModel.getCellViewModelById(1).orElseThrow();
+        firstCell.getTextArea().setText("");
+        firstCell.getTextArea().setText("3");
+        verify(toasterServiceMock, atLeastOnce())
+                .showInfo(
+                        MessageFormat.format(
+                                I18n.INSTANCE.getValue("toast.msg.gridviewmodel.completed"),
+                                playerStateHolder.getCurrentPlayer().name()),
+                        "");
     }
 
     @Test
@@ -223,8 +209,9 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
-                        new GridConverter());
-        localVM.init(new ToasterVBox());
+                        new GridConverter(),
+                        toasterServiceMock);
+        localVM.init();
         Optional<CurrentGrid> result = localVM.getCurrentSolvedGridFromModel();
         assertTrue(result.isEmpty());
     }
@@ -247,8 +234,9 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
-                        new GridConverter());
-        localVM.init(new ToasterVBox());
+                        new GridConverter(),
+                        toasterServiceMock);
+        localVM.init();
         Optional<CurrentGrid> result = localVM.getCurrentSolvedGridFromModel();
         assertTrue(result.isPresent());
         CurrentGrid currentGrid = result.get();

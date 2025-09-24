@@ -22,7 +22,6 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridConverter;
@@ -33,7 +32,7 @@ import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.service.ui.AudioService;
-import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
+import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
@@ -56,11 +55,11 @@ public class GridViewModel {
     private final PlayerStateHolder playerStateHolder;
     private final PlayerService playerService;
     private final IGridConverter iGridConverter;
+    private final ToasterService toasterService;
 
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(TOTAL_CELLS);
     private boolean initialized = false;
     private boolean suppressCellsListeners = false;
-    private ToasterVBox toaster;
 
     public GridViewModel(
             IGridMaster iGridMaster,
@@ -68,41 +67,26 @@ public class GridViewModel {
             AudioService audioService,
             PlayerStateHolder playerStateHolder,
             PlayerService playerService,
-            IGridConverter iGridConverter) {
+            IGridConverter iGridConverter,
+            ToasterService toasterService) {
         this.iGridMaster = iGridMaster;
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
         this.audioService = audioService;
         this.playerStateHolder = playerStateHolder;
         this.playerService = playerService;
         this.iGridConverter = iGridConverter;
+        this.toasterService = toasterService;
     }
 
     /**
      * Initializes the 9x9 Sudoku grid by creating 81 {@link GridCellViewModel} instances with
      * unique IDs and row/column coordinates. Each cell's text property is attached to a listener
-     * that:
+     * that calls {@link #handleCellTextChange()} whenever the text changes.
      *
-     * <ul>
-     *   <li>Ignores changes when {@link #suppressCellsListeners} is {@code true} (used for bulk
-     *       updates).
-     *   <li>Automatically verifies the grid in {@code SOLVE} mode or when the grid is fully filled.
-     *   <li>Stops background audio when appropriate.
-     *   <li>Persists updated grid values if the player-modifiable grid differs from the default.
-     * </ul>
-     *
-     * <p>Listeners handle both default grids (editable according to initial values) and
-     * player-entered grids. The {@code ToasterVBox} is used to display notifications if needed.
-     *
-     * <p><b>Important:</b> This method <b>must</b> be called before any other method that
-     * manipulates or queries the grid, otherwise an {@link IllegalStateException} may be thrown.
-     *
-     * @param toaster the {@link ToasterVBox} instance used for notifications (must not be {@code
-     *     null})
-     * @throws NullPointerException if {@code toaster} is {@code null}
+     * <p>Must be called before accessing or manipulating grid cells; otherwise, {@link
+     * IllegalStateException} may be thrown.
      */
-    public void init(ToasterVBox toaster) {
-        Objects.requireNonNull(toaster, "toaster mustn't be null");
-        this.toaster = toaster;
+    public void init() {
         int id = 1;
         for (int row = 0; row < GRID_SIZE; row++) {
             for (int col = 0; col < GRID_SIZE; col++) {
@@ -302,13 +286,11 @@ public class GridViewModel {
      * player and optionally plays their configured victory audio.
      */
     private void celebrateVictory() {
-        toaster.addToast(
+        toasterService.showInfo(
                 MessageFormat.format(
                         I18n.INSTANCE.getValue("toast.msg.gridviewmodel.completed"),
                         playerStateHolder.getCurrentPlayer().name()),
-                "",
-                ToastLevels.INFO,
-                false);
+                "");
         try {
             String path = playerStateHolder.getCurrentPlayer().optionsidDto().songpath();
             if (StringUtils.isNotEmpty(path)) {
@@ -322,11 +304,9 @@ public class GridViewModel {
         } catch (Exception e) {
             String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
             LOG.error("██ Exception - {}: {}", title, e.getMessage(), e);
-            toaster.addToast(
+            toasterService.showError(
                     title,
-                    e.getClass().getSimpleName() + ": " + Objects.toString(e.getMessage(), ""),
-                    ToastLevels.ERROR,
-                    true);
+                    e.getClass().getSimpleName() + ": " + Objects.toString(e.getMessage(), ""));
         }
     }
 
@@ -453,12 +433,12 @@ public class GridViewModel {
     }
 
     /**
-     * Checks whether the {@link GridViewModel} has been initialized via {@link #init(ToasterVBox)}.
+     * Checks whether the {@link GridViewModel} has been initialized via {@link #init()}.
      *
      * <p>If the grid has not been initialized, this method throws an exception to prevent
      * operations on an uninitialized state.
      *
-     * @throws IllegalStateException if {@link #init(ToasterVBox)} has not been called
+     * @throws IllegalStateException if {@link #init()} has not been called
      */
     private void checkInitialized() {
         if (!initialized) {

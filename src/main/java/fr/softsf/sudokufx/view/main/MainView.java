@@ -36,7 +36,7 @@ import javafx.util.Duration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
@@ -50,6 +50,7 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.FileChooserService;
+import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
@@ -73,6 +74,7 @@ import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
  * Main view class of the Sudoku application. This class is responsible for displaying and managing
  * the UI.
  */
+@Component
 public final class MainView implements IMainView {
 
     private static final Logger LOG = LoggerFactory.getLogger(MainView.class);
@@ -85,25 +87,26 @@ public final class MainView implements IMainView {
             PseudoClass.getPseudoClass("opaque-mode");
     private static final int AUTO_HIDE_MINI_MENU_DELAY_MS = 5_000;
 
-    private final Stage primaryStage = new Stage();
+    private Stage primaryStage;
 
-    @Autowired private ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
-    @Autowired private Coordinator coordinator;
-    @Autowired private HelpViewModel helpViewModel;
-    @Autowired private MenuHiddenViewModel menuHiddenViewModel;
-    @Autowired private MenuMiniViewModel menuMiniViewModel;
-    @Autowired private MenuLevelViewModel menuLevelViewModel;
-    @Autowired private MenuMaxiViewModel menuMaxiViewModel;
-    @Autowired private MenuPlayerViewModel menuPlayerViewModel;
-    @Autowired private MenuSaveViewModel menuSaveViewModel;
-    @Autowired private MenuSolveViewModel menuSolveViewModel;
-    @Autowired private MenuOptionsViewModel menuOptionsViewModel;
-    @Autowired private MenuNewViewModel menuNewViewModel;
-    @Autowired private GridViewModel gridViewModel;
-    @Autowired private AudioService audioService;
-    @Autowired private FileChooserService fileChooserService;
-    @Autowired private BindingConfigurator bindingConfigurator;
-    @Autowired private GenericListViewFactory genericListViewFactory;
+    private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
+    private final Coordinator coordinator;
+    private final HelpViewModel helpViewModel;
+    private final MenuHiddenViewModel menuHiddenViewModel;
+    private final MenuMiniViewModel menuMiniViewModel;
+    private final MenuLevelViewModel menuLevelViewModel;
+    private final MenuMaxiViewModel menuMaxiViewModel;
+    private final MenuPlayerViewModel menuPlayerViewModel;
+    private final MenuSaveViewModel menuSaveViewModel;
+    private final MenuSolveViewModel menuSolveViewModel;
+    private final MenuOptionsViewModel menuOptionsViewModel;
+    private final MenuNewViewModel menuNewViewModel;
+    private final GridViewModel gridViewModel;
+    private final AudioService audioService;
+    private final FileChooserService fileChooserService;
+    private final BindingConfigurator bindingConfigurator;
+    private final GenericListViewFactory genericListViewFactory;
+    private final ToasterService toasterService;
 
     @FXML private ToasterVBox toaster;
     @FXML private SpinnerGridPane spinner;
@@ -204,6 +207,45 @@ public final class MainView implements IMainView {
 
     private Timeline hideMiniMenuTimeline;
 
+    public MainView(
+            ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,
+            Coordinator coordinator,
+            HelpViewModel helpViewModel,
+            MenuHiddenViewModel menuHiddenViewModel,
+            MenuMiniViewModel menuMiniViewModel,
+            MenuLevelViewModel menuLevelViewModel,
+            MenuMaxiViewModel menuMaxiViewModel,
+            MenuPlayerViewModel menuPlayerViewModel,
+            MenuSaveViewModel menuSaveViewModel,
+            MenuSolveViewModel menuSolveViewModel,
+            MenuOptionsViewModel menuOptionsViewModel,
+            MenuNewViewModel menuNewViewModel,
+            GridViewModel gridViewModel,
+            AudioService audioService,
+            FileChooserService fileChooserService,
+            BindingConfigurator bindingConfigurator,
+            GenericListViewFactory genericListViewFactory,
+            ToasterService toasterService) {
+        this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
+        this.coordinator = coordinator;
+        this.helpViewModel = helpViewModel;
+        this.menuHiddenViewModel = menuHiddenViewModel;
+        this.menuMiniViewModel = menuMiniViewModel;
+        this.menuLevelViewModel = menuLevelViewModel;
+        this.menuMaxiViewModel = menuMaxiViewModel;
+        this.menuPlayerViewModel = menuPlayerViewModel;
+        this.menuSaveViewModel = menuSaveViewModel;
+        this.menuSolveViewModel = menuSolveViewModel;
+        this.menuOptionsViewModel = menuOptionsViewModel;
+        this.menuNewViewModel = menuNewViewModel;
+        this.gridViewModel = gridViewModel;
+        this.audioService = audioService;
+        this.fileChooserService = fileChooserService;
+        this.bindingConfigurator = bindingConfigurator;
+        this.genericListViewFactory = genericListViewFactory;
+        this.toasterService = toasterService;
+    }
+
     /**
      * Initializes the main view.
      *
@@ -218,8 +260,10 @@ public final class MainView implements IMainView {
      */
     @FXML
     private void initialize() {
+        primaryStage = new Stage();
         I18n.INSTANCE.setLocaleBundle(coordinator.getCurrentPlayerLanguageIso());
         stopAudioOnExitInitialization();
+        toasterInitialization();
         hideMiniMenuTimeline = hideMiniMenuTimelineInitialization();
         hiddenMenuInitialization();
         miniMenuInitialization();
@@ -232,6 +276,25 @@ public final class MainView implements IMainView {
         newMenuInitialization();
         activeMenuManagerInitialization();
         gridInitialization();
+    }
+
+    /**
+     * Initializes the toaster by subscribing to the ToasterService. When a new ToastData is
+     * published, it adds the toast to the ToasterVBox.
+     */
+    private void toasterInitialization() {
+        toasterService
+                .toastRequestProperty()
+                .addListener(
+                        (obs, oldVal, newVal) -> {
+                            if (newVal != null) {
+                                toaster.addToast(
+                                        newVal.visibleText(),
+                                        newVal.detailedText(),
+                                        newVal.level(),
+                                        newVal.requestFocus());
+                            }
+                        });
     }
 
     /**
@@ -282,7 +345,7 @@ public final class MainView implements IMainView {
      * exist.
      */
     private void gridInitialization() {
-        gridViewModel.init(toaster);
+        gridViewModel.init();
         int index = 0;
         for (GridCellViewModel cellVM : gridViewModel.getCellViewModels()) {
             Label label = cellVM.getLabel();
@@ -874,7 +937,7 @@ public final class MainView implements IMainView {
     private void handleFileSongChooser() {
         fileChooserService
                 .chooseFile(primaryStage, FileChooserService.FileType.AUDIO)
-                .ifPresent(file -> menuOptionsViewModel.saveSong(file));
+                .ifPresent(menuOptionsViewModel::saveSong);
     }
 
     /** Clears the song, shows a toast, and refocuses the song button. */

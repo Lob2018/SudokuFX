@@ -15,6 +15,7 @@ import javafx.scene.Scene;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
@@ -34,10 +35,15 @@ import static fr.softsf.sudokufx.common.enums.Urls.MY_WEBSITE_URL;
 
 /**
  * Coordinator is a Spring-managed component handling navigation and UI logic in a JavaFX
- * application following the MVVM-C pattern.
+ * application (MVVM-C pattern).
  *
- * <p>Responsibilities include loading FXML views, switching scenes, dynamic font scaling, language
- * toggling, and integration with system services.
+ * <p>Key responsibilities:
+ *
+ * <ul>
+ *   <li>Load FXML views and set them as the scene root with Spring-managed controllers.
+ *   <li>Switch scenes and manage dynamic font resizing.
+ *   <li>Manage player's language and provide host system integrations (URLs, local files).
+ * </ul>
  */
 @Component
 public class Coordinator {
@@ -45,6 +51,7 @@ public class Coordinator {
     @Autowired private PlayerService playerService;
     @Autowired private PlayerLanguageService playerLanguageService;
     @Autowired private PlayerStateHolder playerStateHolder;
+    @Autowired private ApplicationContext applicationContext;
 
     private static final Logger LOG = LoggerFactory.getLogger(Coordinator.class);
     public static final String FXML_EXTENSION = ".fxml";
@@ -113,16 +120,27 @@ public class Coordinator {
     }
 
     /**
-     * Loads the specified FXML (without extension), sets it as the scene root, and returns its
-     * controller.
+     * Loads the specified FXML file (without the ".fxml" extension), sets it as the root of the
+     * current JavaFX scene, and returns its controller.
      *
-     * <p>Logs errors and calls {@link Platform#exit()} on failure.
+     * <p>This method uses {@link FXMLLoader} together with Spring's {@link ApplicationContext} to
+     * instantiate the controller and inject Spring-managed beans **if the context is available**.
      *
-     * <p>If {@code dynamicFontSize} is set, updates font size after loading.
+     * <p><b>Important:</b> If the Spring application context is not yet initialized, or if a bean
+     * failed to initialize, the {@code applicationContext} field will be {@code null}. In that
+     * case, the controller is instantiated by {@link FXMLLoader} alone, without Spring injection.
+     * This prevents a {@link NullPointerException} when calling {@code
+     * applicationContext.getBean(...)}.
+     *
+     * <p>If {@link #dynamicFontSize} is set, font sizes are updated after loading.
+     *
+     * <p>Any exception during loading (e.g., FXML not found, controller instantiation failure) is
+     * logged. The application is terminated via {@link Platform#exit()} in case of critical errors.
      *
      * @param <T> the controller type
      * @param fxml the FXML filename without extension; must not be null or blank
-     * @return the controller instance, or null if loading fails
+     * @return the controller instance, or {@code null} if loading fails or Spring context is
+     *     unavailable
      * @throws IllegalArgumentException if {@code fxml} is null or blank
      */
     public <T> T setRootByFXMLName(final String fxml) {
@@ -133,6 +151,9 @@ public class Coordinator {
             fxmlLoader.setRoot(null);
             fxmlLoader.setController(null);
             fxmlLoader.setLocation(getClass().getResource(path));
+            if (applicationContext != null) {
+                fxmlLoader.setControllerFactory(clazz -> applicationContext.getBean(clazz));
+            }
             defaultScene.setRoot(fxmlLoader.load());
             if (dynamicFontSize != null) {
                 dynamicFontSize.updateFontSize();
