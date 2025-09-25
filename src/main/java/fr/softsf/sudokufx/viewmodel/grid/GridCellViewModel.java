@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
+import java.text.MessageFormat;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
@@ -25,15 +26,24 @@ import javafx.scene.layout.Region;
 
 import org.apache.commons.lang3.StringUtils;
 
+import fr.softsf.sudokufx.common.enums.I18n;
+
 /**
- * ViewModel representing an editable cell in a 9x9 Sudoku grid.
+ * ViewModel for an editable cell in a 9x9 Sudoku grid.
  *
- * <p>Maintains observable properties (id, raw text, editable) and JavaFX controls (Label for
- * display, TextArea for input). Manages text formatting, visual styling, and interaction logic for
- * toggling between read-only and edit modes.
+ * <p>Manages cell state and UI representation with:
  *
- * <p>Filters input to digits 1–9, removes duplicates, sorts, and formats text into a 3×3 multiline
- * grid display. Binds UI components bidirectionally to the data properties.
+ * <ul>
+ *   <li>Observable properties: {@code id}, {@code rawText}, {@code editable}.
+ *   <li>JavaFX controls: {@link Label} for display and {@link TextArea} for editing.
+ *   <li>Dynamic styling based on content length, focus, and editable state.
+ *   <li>Text formatting: filters digits 1–9, removes duplicates, sorts, and formats into a 3×3
+ *       multiline grid.
+ *   <li>Accessibility: {@link Label#accessibleTextProperty()} bound to i18n string reflecting
+ *       formatted value and 1-based row/column.
+ *   <li>Edit mode switching via mouse click or key input, with bidirectional binding to {@code
+ *       rawText}.
+ * </ul>
  */
 public class GridCellViewModel {
 
@@ -70,7 +80,30 @@ public class GridCellViewModel {
                 Bindings.createStringBinding(() -> formatText(rawText.get()), rawText);
         label.textProperty().bind(formattedText);
         textArea.textProperty().bindBidirectional(rawText);
+        setLabelAccessibleText();
         setupListeners();
+    }
+
+    /**
+     * Binds the label's accessible text to a localized, formatted string reflecting the cell's
+     * value and 1-based row/column indices. Updates automatically on locale or cell content
+     * changes.
+     *
+     * <p>Uses i18n key {@code grid.cell.accessibility}: "{0}, ligne {1}, colonne {2}", where: {0} →
+     * formatted cell text, {1} → row + 1, {2} → col + 1.
+     */
+    private void setLabelAccessibleText() {
+        label.accessibleTextProperty()
+                .bind(
+                        Bindings.createStringBinding(
+                                () ->
+                                        MessageFormat.format(
+                                                I18n.INSTANCE.getValue("grid.cell.accessibility"),
+                                                formatText(rawText.get()),
+                                                row + 1,
+                                                col + 1),
+                                I18n.INSTANCE.localeProperty(),
+                                rawText));
     }
 
     /**
