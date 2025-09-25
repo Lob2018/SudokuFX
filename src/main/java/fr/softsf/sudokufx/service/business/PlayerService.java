@@ -20,9 +20,7 @@ import fr.softsf.sudokufx.model.Menu;
 import fr.softsf.sudokufx.model.Options;
 import fr.softsf.sudokufx.model.Player;
 import fr.softsf.sudokufx.model.PlayerLanguage;
-import fr.softsf.sudokufx.repository.GameLevelRepository;
 import fr.softsf.sudokufx.repository.GameRepository;
-import fr.softsf.sudokufx.repository.GridRepository;
 import fr.softsf.sudokufx.repository.MenuRepository;
 import fr.softsf.sudokufx.repository.OptionsRepository;
 import fr.softsf.sudokufx.repository.PlayerLanguageRepository;
@@ -56,8 +54,6 @@ public class PlayerService {
     private final OptionsRepository optionsRepository;
     private final MenuRepository menuRepository;
     private final GameRepository gameRepository;
-    private final GridRepository gridRepository;
-    private final GameLevelRepository gameLevelRepository;
     private final IPlayerMapper playerMapper;
     private final JakartaValidator jakartaValidator;
 
@@ -67,8 +63,6 @@ public class PlayerService {
             OptionsRepository optionsRepository,
             MenuRepository menuRepository,
             GameRepository gameRepository,
-            GameLevelRepository gameLevelRepository,
-            GridRepository gridRepository,
             IPlayerMapper playerMapper,
             JakartaValidator jakartaValidator) {
         this.playerRepository = playerRepository;
@@ -76,8 +70,6 @@ public class PlayerService {
         this.optionsRepository = optionsRepository;
         this.menuRepository = menuRepository;
         this.gameRepository = gameRepository;
-        this.gameLevelRepository = gameLevelRepository;
-        this.gridRepository = gridRepository;
         this.playerMapper = playerMapper;
         this.jakartaValidator = jakartaValidator;
     }

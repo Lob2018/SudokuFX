@@ -56,8 +56,6 @@ class PlayerServiceUTest {
                         optionsRepository,
                         menuRepository,
                         gameRepository,
-                        gameLevelRepository,
-                        gridRepository,
                         playerMapper,
                         jakartaValidator);
     }
