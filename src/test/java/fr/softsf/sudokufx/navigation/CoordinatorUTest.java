@@ -31,7 +31,7 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.service.business.PlayerLanguageService;
 import fr.softsf.sudokufx.service.business.PlayerService;
-import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
+import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -43,6 +43,7 @@ class CoordinatorUTest {
     @Mock private FXMLLoader fxmlLoader;
     @Mock private DynamicFontSize dynamicFontSize;
     @Mock private HostServices hostServices;
+    @Mock private ToasterService toasterService;
 
     private Coordinator coordinator;
     private Scene scene;
@@ -52,7 +53,6 @@ class CoordinatorUTest {
     private PlayerService playerServiceMock;
     private PlayerLanguageService playerLanguageServiceMock;
     private PlayerStateHolder playerStateHolderMock;
-    private ToasterVBox toaster;
 
     @BeforeEach
     void setup() {
@@ -61,7 +61,6 @@ class CoordinatorUTest {
         ((Logger) LoggerFactory.getLogger(Coordinator.class)).addAppender(logWatcher);
         mocks = MockitoAnnotations.openMocks(this);
         scene = new Scene(new VBox(), 200, 200);
-        toaster = new ToasterVBox();
         coordinator = spy(new Coordinator(fxmlLoader));
         coordinator.setDefaultScene(scene);
         doNothing().when(coordinator).exitPlatform();
@@ -87,6 +86,7 @@ class CoordinatorUTest {
         coordinator.setPlayerService(playerServiceMock);
         coordinator.setPlayerLanguageService(playerLanguageServiceMock);
         coordinator.setPlayerStateHolder(playerStateHolderMock);
+        coordinator.setToasterService(toasterService);
     }
 
     @AfterEach
@@ -183,14 +183,14 @@ class CoordinatorUTest {
     @Test
     void givenLanguageFR_whenToggleLanguage_thenLanguageIsSwitchedToEn() {
         I18n.INSTANCE.setLocaleBundle("FR");
-        coordinator.toggleLanguage(toaster);
+        coordinator.toggleLanguage();
         assertEquals("en", I18n.INSTANCE.getLanguage());
     }
 
     @Test
     void givenLanguageEn_whenToggleLanguage_thenLanguageIsSwitchedToFr() {
         I18n.INSTANCE.setLocaleBundle("EN");
-        coordinator.toggleLanguage(toaster);
+        coordinator.toggleLanguage();
         assertEquals("fr", I18n.INSTANCE.getLanguage());
     }
 
@@ -225,18 +225,19 @@ class CoordinatorUTest {
         I18n.INSTANCE.setLocaleBundle("FR");
         when(playerLanguageServiceMock.getByIso("EN"))
                 .thenThrow(new RuntimeException("Forced exception"));
-        int beforeToastCount = toaster.getChildren().size();
         String isoBefore = I18n.INSTANCE.getLanguage();
-        coordinator.toggleLanguage(toaster);
+        coordinator.toggleLanguage();
         assertEquals(isoBefore, I18n.INSTANCE.getLanguage());
-        assertEquals(beforeToastCount + 1, toaster.getChildren().size());
+        verify(toasterService)
+                .showError(
+                        I18n.INSTANCE.getValue("toast.error.coordinator.toggleLanguage"),
+                        "Forced exception");
         assertTrue(
                 logWatcher.list.stream()
                         .anyMatch(
                                 event ->
                                         event.getFormattedMessage()
                                                 .contains("██ Exception ToggleLanguage failed")));
-        toaster.getChildren().clear();
     }
 
     @Test

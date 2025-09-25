@@ -1111,7 +1111,7 @@ public final class MainView implements IMainView {
 
     /** Switches language. */
     public void handleToggleLanguage() {
-        coordinator.toggleLanguage(toaster);
+        coordinator.toggleLanguage();
     }
 
     /** Opens GitHub releases URL via the Coordinator. */

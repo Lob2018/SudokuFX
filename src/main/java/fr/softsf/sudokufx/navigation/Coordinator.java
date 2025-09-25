@@ -20,13 +20,13 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.service.business.PlayerLanguageService;
 import fr.softsf.sudokufx.service.business.PlayerService;
+import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
@@ -52,6 +52,7 @@ public class Coordinator {
     @Autowired private PlayerLanguageService playerLanguageService;
     @Autowired private PlayerStateHolder playerStateHolder;
     @Autowired private ApplicationContext applicationContext;
+    @Autowired private ToasterService toasterService;
 
     private static final Logger LOG = LoggerFactory.getLogger(Coordinator.class);
     public static final String FXML_EXTENSION = ".fxml";
@@ -194,32 +195,31 @@ public class Coordinator {
      *
      * <p>Updates the current player's language, refreshes the player state, and switches the
      * translation bundle. Exceptions from updating the player are caught, logged, and displayed as
-     * a toast via the provided {@link ToasterVBox}.
+     * a toast notification via the {@link ToasterService}.
      *
-     * @param toaster the {@link ToasterVBox} used to display error messages; must not be null
-     * @throws NullPointerException if {@code toaster} is null
+     * <p>This method no longer requires an explicit {@link ToasterVBox} parameter since error
+     * handling is delegated to the injected {@link ToasterService}.
+     *
+     * @see ToasterService#showError(String, String)
      */
-    public void toggleLanguage(ToasterVBox toaster) {
-        Objects.requireNonNull(toaster, "toaster must not be null");
+    public void toggleLanguage() {
         String iso = I18n.INSTANCE.getLanguage().equals("fr") ? "EN" : "FR";
         try {
             updatePlayerLanguage(iso);
             I18n.INSTANCE.setLocaleBundle(iso);
         } catch (Exception e) {
             LOG.error("██ Exception ToggleLanguage failed: {}", e.getMessage(), e);
-            toaster.addToast(
+            toasterService.showError(
                     I18n.INSTANCE.getValue("toast.error.coordinator.toggleLanguage"),
-                    Objects.toString(e.getMessage(), ""),
-                    ToastLevels.ERROR,
-                    true);
+                    Objects.toString(e.getMessage(), ""));
         }
     }
 
     /**
      * Updates the current player's language and refreshes the player state.
      *
-     * <p>Called internally by {@link #toggleLanguage(ToasterVBox)}. May throw exceptions if the
-     * language does not exist or the player update fails.
+     * <p>Called internally by {@link #toggleLanguage()}. May throw exceptions if the language does
+     * not exist or the player update fails.
      *
      * @param iso the ISO code of the target language ("FR" or "EN")
      * @throws IllegalArgumentException if {@code iso} is null or blank
@@ -306,5 +306,10 @@ public class Coordinator {
     /** For testing only: injects a {@link PlayerStateHolder}. */
     void setPlayerStateHolder(PlayerStateHolder holder) {
         this.playerStateHolder = holder;
+    }
+
+    /** For testing only: injects a {@link ToasterService}. */
+    void setToasterService(ToasterService toasterService) {
+        this.toasterService = toasterService;
     }
 }
