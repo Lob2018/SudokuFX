@@ -122,7 +122,7 @@ class AsyncFileProcessorServiceUTest {
     }
 
     @Test
-    void givenValidFile_whenProcessFileAsync_thenDoesNotBlockCallingThread() throws Exception {
+    void givenValidFile_whenProcessFileAsync_thenDoesNotBlockCallingThread() {
         when(mockFile.toURI()).thenReturn(java.net.URI.create("file://test.txt"));
         long startTime = System.currentTimeMillis();
         service.processFileAsync(
