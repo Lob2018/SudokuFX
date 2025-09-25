@@ -128,7 +128,7 @@
 <text text-anchor="start" x="252.88" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="261.38" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridPane sudokuFX</text>
 <text text-anchor="start" x="252.88" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="261.38" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox toasterMock</text>
+<text text-anchor="start" x="261.38" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterService toasterService</text>
 <text text-anchor="start" x="252.88" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="261.38" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel</text>
 <text text-anchor="start" x="261.38" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00"> viewModel</text>

@@ -1,42 +1,34 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="760,2364,1049,2705"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="796,668,1012,908"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="900,908,898,972,890,1345,888,1636,898,2300,899,2347,894,2347,892,2300,882,1636,884,1345,892,972,895,908"/>
-<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html" title="ViewModel managing player menu UI state and localized accessibility texts." alt="" coords="1020,972,1250,2300"/>
-<area shape="poly" id="edge20_Node000020_Node000002" title=" " alt="" coords="975,906,1003,971,1017,1012,1012,1014,998,973,970,909"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" title="Service for managing Player entities." alt="" coords="708,364,1100,604"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="907,604,907,651,902,651,902,604"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="558,2348,848,2689"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="595,652,811,892"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="699,892,696,956,688,1329,686,1620,696,2284,698,2331,692,2331,691,2284,681,1620,683,1329,691,956,693,892"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html" title="ViewModel managing player menu UI state and localized accessibility texts." alt="" coords="818,956,1049,2284"/>
+<area shape="poly" id="edge16_Node000016_Node000002" title=" " alt="" coords="774,890,801,955,816,996,810,998,797,957,769,893"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" title="Service for managing Player entities." alt="" coords="534,364,872,588"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="706,588,706,635,700,635,700,588"/>
 <area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title="Repository interface for Player entities." alt="" coords="5,169,187,271"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="155,268,202,298,323,350,451,392,577,425,692,449,691,454,575,430,450,397,322,355,199,302,152,273"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="159,268,202,298,278,340,360,376,441,406,519,430,518,435,440,411,358,381,276,345,199,302,156,273"/>
 <area shape="rect" id="Node000005" title=" " alt="" coords="22,5,170,91"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="99,106,99,170,94,170,94,106"/>
 <area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" title="Repository interface for PlayerLanguage entities." alt="" coords="212,169,389,271"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="362,268,403,298,472,338,546,373,621,402,693,427,692,432,619,407,544,378,470,343,400,302,359,273"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="338,268,369,305,407,338,462,373,520,404,518,409,459,378,403,342,366,308,334,272"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="197,5,401,91"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="302,106,303,170,297,170,297,106"/>
 <area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" title="Repository interface for Options entities." alt="" coords="413,177,590,263"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="554,260,605,298,696,358,693,362,601,302,551,265"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="531,261,587,338,595,349,591,353,583,342,526,264"/>
 <area shape="rect" id="Node000009" title=" " alt="" coords="425,5,581,91"/>
 <area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="505,106,505,177,499,177,500,106"/>
 <area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html" title="Repository interface for Menu entities." alt="" coords="615,177,791,263"/>
-<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="737,261,805,349,800,352,732,264"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="706,263,706,347,700,347,700,263"/>
 <area shape="rect" id="Node000011" title=" " alt="" coords="632,5,774,91"/>
 <area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="706,106,706,177,700,177,700,106"/>
 <area shape="rect" id="Node000012" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html" title="Repository interface for Game entities." alt="" coords="816,177,993,263"/>
-<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="907,262,907,347,902,347,902,262"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="874,264,813,342,804,352,800,349,809,338,870,261"/>
 <area shape="rect" id="Node000013" title=" " alt="" coords="832,5,977,91"/>
 <area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="907,106,907,177,902,177,902,106"/>
-<area shape="rect" id="Node000014" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html" title="Repository interface for Grid entities." alt="" coords="1017,177,1194,263"/>
-<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="1076,264,1008,352,1004,349,1072,261"/>
-<area shape="rect" id="Node000015" title=" " alt="" coords="1038,5,1173,91"/>
-<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1108,106,1108,177,1103,177,1103,106"/>
-<area shape="rect" id="Node000016" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html" title="Repository interface for GameLevel entities." alt="" coords="1219,177,1395,263"/>
-<area shape="poly" id="edge15_Node000003_Node000016" title=" " alt="" coords="1258,265,1207,302,1116,362,1113,357,1204,298,1255,260"/>
-<area shape="rect" id="Node000017" title=" " alt="" coords="1219,5,1395,91"/>
-<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="1310,106,1310,177,1304,177,1304,106"/>
-<area shape="rect" id="Node000018" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" title="Mapper interface for converting between Player entity and PlayerDto data transfer object." alt="" coords="1420,151,1698,289"/>
-<area shape="poly" id="edge17_Node000003_Node000018" title=" " alt="" coords="1431,292,1408,302,1262,364,1117,416,1115,411,1260,359,1406,298,1429,287"/>
-<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="1722,140,1953,300"/>
-<area shape="poly" id="edge18_Node000003_Node000019" title=" " alt="" coords="1724,297,1712,302,1561,356,1404,399,1253,433,1117,457,1117,452,1252,427,1403,394,1559,351,1710,298,1721,293"/>
-<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="1022,2234,1003,2301,987,2349,982,2348,998,2299,1017,2233"/>
+<area shape="rect" id="Node000014" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" title="Mapper interface for converting between Player entity and PlayerDto data transfer object." alt="" coords="1017,151,1296,289"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="1036,292,887,375,885,370,1034,287"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="1320,140,1550,300"/>
+<area shape="poly" id="edge14_Node000003_Node000015" title=" " alt="" coords="1321,297,1309,302,1203,345,1094,382,888,438,887,433,1092,377,1202,340,1307,298,1319,292"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="821,2218,802,2285,785,2333,780,2332,796,2283,816,2217"/>
 </map>

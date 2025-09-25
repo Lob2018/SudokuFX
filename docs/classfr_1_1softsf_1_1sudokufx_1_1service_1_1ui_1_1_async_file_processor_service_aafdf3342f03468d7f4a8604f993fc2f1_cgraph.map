@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.processFileAsync" name="fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.processFileAsync">
+<area shape="rect" id="Node000001" title="Executes a file&#45;processing task asynchronously with spinner and toast feedback." alt="" coords="5,31,238,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html#aa434577520d862e52f71b24617b5dc0a" title="Handles task errors by logging and showing a toast notification on the JavaFX thread." alt="" coords="286,5,538,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,44,270,40,270,46,238,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#a170661e162609697b2bd6e2cd9a22b60" title="Shows or hides the spinner." alt="" coords="299,72,524,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,71,284,76,283,81,238,76"/>
+</map>

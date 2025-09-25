@@ -14,7 +14,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
     [ "setPlayerService", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a5c50e5dbc03930b5cf409356fd95e123", null ],
     [ "setPlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#ae4f5d854f1b21d991fdfce74daf49d4f", null ],
     [ "setRootByFXMLName", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a76beb2414cb9e9e68181f08fd930f0b9", null ],
-    [ "toggleLanguage", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a80498d5645b3cf8adb43f0572a0879db", null ],
+    [ "setToasterService", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa72cc768af7602e1627d020ad3d135a8", null ],
+    [ "toggleLanguage", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a67f2ba8f85685181dea0c4a2263a61dc", null ],
     [ "updatePlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aff34e77864185144dffd978d6ee2cdd4", null ],
     [ "applicationContext", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a73459121b4bec5be9c5eea58bec75086", null ],
     [ "defaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a0b25ad20a22e1cdfda2b4469d88a587d", null ],
@@ -25,5 +26,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a66a48328e2130c3860f656e525ca48f1", null ],
     [ "playerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a10e20022584c70e008a0b1f5b0d5188f", null ],
     [ "playerService", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a6f8cb9c6e67d3025ebc72d234d865b33", null ],
-    [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a8a09312942b9b4ecd038a33eb86851a8", null ]
+    [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a8a09312942b9b4ecd038a33eb86851a8", null ],
+    [ "toasterService", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a564c946156873a27ebce99a138931aca", null ]
 ];

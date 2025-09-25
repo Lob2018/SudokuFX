@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setLabelAccessibleText" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setLabelAccessibleText">
+<area shape="rect" id="Node000001" title="Binds the label&#39;s accessible text to a localized, formatted string reflecting the cell&#39;s value and 1&#45;..." alt="" coords="5,39,280,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a0d1630abe71ae622f3522fbed9855750" title="Formats a raw digit string (1–9) into a 3&#45;line spaced grid display." alt="" coords="328,39,546,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,57,312,57,312,63,280,63"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="594,5,815,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="546,44,578,40,579,45,547,49"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="594,72,815,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="547,71,579,75,578,80,546,76"/>
+</map>

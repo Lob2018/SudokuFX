@@ -34,5 +34,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test =
     [ "playerServiceMock", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a44c332b7bddf7661ebc260152c13faed", null ],
     [ "playerStateHolderMock", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#acd7e5f395cb2a93b5897ee41453cafb0", null ],
     [ "scene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a5231725b1f22cb345d48cf82e2eed86a", null ],
-    [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a50d7ae61a5e5303a52f7ea7d823bf32c", null ]
+    [ "toasterService", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a601caac69aafb779fe112ad76b77d7f6", null ]
 ];

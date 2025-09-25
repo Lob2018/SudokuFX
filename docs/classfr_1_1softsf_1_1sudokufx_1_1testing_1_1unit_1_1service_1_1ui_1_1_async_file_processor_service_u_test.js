@@ -4,7 +4,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_
     [ "givenNullOnSuccess_whenProcessFileAsync_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#a1787e7628d8804cc5c5bf00f4ad00c55", null ],
     [ "givenNullSpinner_whenProcessFileAsync_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#a54d08e12cb66e33d68df270cc625e8ae", null ],
     [ "givenNullTaskFunction_whenProcessFileAsync_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#a9b6245195e7c80b142d112bc86a27b09", null ],
-    [ "givenNullToaster_whenProcessFileAsync_thenThrowsNullPointerException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#aa9460af204c8c0a6d11a4525dadde038", null ],
     [ "givenValidFile_whenProcessFileAsync_thenDoesNotBlockCallingThread", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#a60b320f1811b0b7284601b5b8ab17a4d", null ],
     [ "givenValidFile_whenProcessFileAsync_thenShowsSpinnerAndInfoToast", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#af096c41cd014adedef14df7464e26c74", null ],
     [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#a550a011a79f7a1a2e28e3aa748443f59", null ],
@@ -12,6 +11,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_
     [ "mockOnSuccess", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#abfbb0157a0451741cd899b3fa698b092", null ],
     [ "mockSpinner", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#abb30f7de6314673be99fb25c77c97336", null ],
     [ "mockTaskFunction", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#aa7f75b175ef76a7093cc7b992fe10671", null ],
-    [ "mockToaster", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#a89c8fc468e7ad200b08583875dd029a6", null ],
-    [ "service", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#af73c326a173156d518fdbf82ce969bdd", null ]
+    [ "service", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#af73c326a173156d518fdbf82ce969bdd", null ],
+    [ "toasterService", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html#aa3f943d53737ccd29ffe9c88ee216e85", null ]
 ];

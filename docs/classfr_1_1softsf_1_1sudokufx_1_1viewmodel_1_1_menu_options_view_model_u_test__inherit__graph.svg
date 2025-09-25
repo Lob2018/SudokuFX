@@ -78,7 +78,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="5.5" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridPane sudokuFX</text>
 <text text-anchor="start" x="5.5" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterVBox toasterMock</text>
+<text text-anchor="start" x="14" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterService toasterService</text>
 <text text-anchor="start" x="5.5" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel</text>
 <text text-anchor="start" x="14" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00"> viewModel</text>

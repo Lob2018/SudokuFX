@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
 [
-    [ "MenuOptionsViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a1554981be31a866f51e84ff15c5cfea4", null ],
+    [ "MenuOptionsViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a26692d9c46e3bf02ab8a0a19d228f92a", null ],
     [ "applyAndPersistBackgroundImage", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a343e123b20fa7fa3fcd1ef9173d58546", null ],
     [ "applyAndPersistOptionsColor", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a37c28fa6e33f850e39a1e63e6696728d", null ],
     [ "checkInitialized", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090", null ],
@@ -11,7 +11,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "createStringBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#acc42c19bd4c6eafc97a5826eb787c906", null ],
     [ "gridOpacityProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac757c39194d85a0c29565f186982fbca", null ],
     [ "gridOpacityText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a89500f671995a3ab11b253bf65cafdfb", null ],
-    [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a52dadaf5fba37f78cc096f5d55487246", null ],
+    [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4b32cc6e6b373a8728d66455c2baa4bf", null ],
     [ "initMuteAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a8920334361b12271411cb8f6b2e32a8a", null ],
     [ "initMuteIcon", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#affb61921e2b3545de6b96d4fbb216fff", null ],
     [ "initMuteText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#af241419d9819c8b2012c3a0d3638ac2f", null ],
@@ -126,5 +126,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "songIsBlankProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#aeb7a2eb176c5969f7a032d79129060d9", null ],
     [ "songProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#aafd3a7fb1f114cbb682e87e9fc91a4c5", null ],
     [ "SUDOKU_FX_MUST_NOT_BE_NULL", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a84fe3abcb39899b32921cb3eb1df6579", null ],
-    [ "toaster", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a5bb32d3804162389e184d81f30dd190f", null ]
+    [ "toasterService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac71a75c1458236108550cf97dc408ff7", null ]
 ];

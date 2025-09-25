@@ -15,6 +15,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model 
     [ "normalizeInput", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33", null ],
     [ "rawTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b", null ],
     [ "setEditableStyle", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a2a551d4792b3263e749994098c3b3748", null ],
+    [ "setLabelAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aadd59b021db2e0fdad7e24de4a6a7cd8", null ],
     [ "setupListeners", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aaf198f919d0c3422e9f0150483873163", null ],
     [ "switchToEditMode", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ac95db9585f2ba2ed12d60dd5cca39461", null ],
     [ "updateLabelFontSizeAndBorderOnTextChange", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a9544acad3febede6981c9d8440674d3c", null ],

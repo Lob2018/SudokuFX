@@ -1,5 +1,17 @@
 var NAVTREEINDEX20 =
 {
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a6365b6eb46fc0d9e43b6bd3d77cfa80c":[1,0,0,0,0,2,0,9,2],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a6365b6eb46fc0d9e43b6bd3d77cfa80c":[2,0,0,0,0,2,0,9,2],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a66cc04621459c064363508faf452c1ce":[1,0,0,0,0,2,0,9,4],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a66cc04621459c064363508faf452c1ce":[2,0,0,0,0,2,0,9,4],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a8ab499002edd848cfc34950c2a6a5610":[1,0,0,0,0,2,0,9,6],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a8ab499002edd848cfc34950c2a6a5610":[2,0,0,0,0,2,0,9,6],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#aa188149cb4fea127b5ff8426988851d5":[1,0,0,0,0,2,0,9,8],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#aa188149cb4fea127b5ff8426988851d5":[2,0,0,0,0,2,0,9,8],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#abeb7ab95db096f4e046c4c538f730077":[1,0,0,0,0,2,0,9,0],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#abeb7ab95db096f4e046c4c538f730077":[2,0,0,0,0,2,0,9,0],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#af16a5c3dfb1c284a6aa554b606d84491":[1,0,0,0,0,2,0,9,7],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#af16a5c3dfb1c284a6aa554b606d84491":[2,0,0,0,0,2,0,9,7],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#af3c389837e9929fd5b3c543260d6827a":[1,0,0,0,0,2,0,9,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#af3c389837e9929fd5b3c543260d6827a":[2,0,0,0,0,2,0,9,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html":[1,0,0,0,0,2,1,4],

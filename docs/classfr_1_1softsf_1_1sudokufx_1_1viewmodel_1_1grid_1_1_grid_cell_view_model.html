@@ -108,7 +108,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>ViewModel representing an editable cell in a 9x9 Sudoku grid.
+<p>ViewModel for an editable cell in a 9x9 Sudoku grid.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel:</div>
@@ -152,6 +152,9 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a2a551d4792b3263e749994098c3b3748" id="r_a2a551d4792b3263e749994098c3b3748"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a551d4792b3263e749994098c3b3748">setEditableStyle</a> (Boolean isNowEditable)</td></tr>
 <tr class="memdesc:a2a551d4792b3263e749994098c3b3748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates CSS style classes on label and text area to reflect the editable state.  <br /></td></tr>
 <tr class="separator:a2a551d4792b3263e749994098c3b3748"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd59b021db2e0fdad7e24de4a6a7cd8" id="r_aadd59b021db2e0fdad7e24de4a6a7cd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadd59b021db2e0fdad7e24de4a6a7cd8">setLabelAccessibleText</a> ()</td></tr>
+<tr class="memdesc:aadd59b021db2e0fdad7e24de4a6a7cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the label's accessible text to a localized, formatted string reflecting the cell's value and 1-based row/column indices.  <br /></td></tr>
+<tr class="separator:aadd59b021db2e0fdad7e24de4a6a7cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf198f919d0c3422e9f0150483873163" id="r_aaf198f919d0c3422e9f0150483873163"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf198f919d0c3422e9f0150483873163">setupListeners</a> ()</td></tr>
 <tr class="memdesc:aaf198f919d0c3422e9f0150483873163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures UI listeners and formatting logic:  <br /></td></tr>
 <tr class="separator:aaf198f919d0c3422e9f0150483873163"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,9 +209,23 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:a6b9c2053ef7c59ad8a394da7f9cb0cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>ViewModel representing an editable cell in a 9x9 Sudoku grid. </p>
-<p>Maintains observable properties (id, raw text, editable) and JavaFX controls (Label for display, TextArea for input). Manages text formatting, visual styling, and interaction logic for toggling between read-only and edit modes.</p>
-<p>Filters input to digits 1–9, removes duplicates, sorts, and formats text into a 3×3 multiline grid display. Binds UI components bidirectionally to the data properties. </p>
+<div class="textblock"><p>ViewModel for an editable cell in a 9x9 Sudoku grid. </p>
+<p>Manages cell state and UI representation with:</p>
+<ul>
+<li>
+Observable properties: <code class="JavaDocCode">id</code>, <code class="JavaDocCode">rawText</code>, <code class="JavaDocCode">editable</code>. </li>
+<li>
+JavaFX controls: <code><a class="el" href="">Label</a></code> for display and <code><a class="el" href="">TextArea</a></code> for editing. </li>
+<li>
+Dynamic styling based on content length, focus, and editable state. </li>
+<li>
+Text formatting: filters digits 1–9, removes duplicates, sorts, and formats into a 3×3 multiline grid. </li>
+<li>
+Accessibility: <code><a class="el" href="">Label#accessibleTextProperty()</a></code> bound to i18n string reflecting formatted value and 1-based row/column. </li>
+<li>
+Edit mode switching via mouse click or key input, with bidirectional binding to <code class="JavaDocCode"><br/>
+      rawText</code>. </li>
+</ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6dd80845ee5865e89cbe229b0ee933c3" name="a6dd80845ee5865e89cbe229b0ee933c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dd80845ee5865e89cbe229b0ee933c3">&#9670;&#160;</a></span>GridCellViewModel()</h2>
@@ -589,6 +606,42 @@ Grid position (cumulative translation to form 3×3 blocks) </li>
 
 </div>
 </div>
+<a id="aadd59b021db2e0fdad7e24de4a6a7cd8" name="aadd59b021db2e0fdad7e24de4a6a7cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd59b021db2e0fdad7e24de4a6a7cd8">&#9670;&#160;</a></span>setLabelAccessibleText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setLabelAccessibleText </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Binds the label's accessible text to a localized, formatted string reflecting the cell's value and 1-based row/column indices. </p>
+<p>Updates automatically on locale or cell content changes.</p>
+<p>Uses i18n key <code class="JavaDocCode">grid.cell.accessibility</code>: "{0}, ligne {1}, colonne {2}", where: {0} → formatted cell text, {1} → row + 1, {2} → col + 1. </p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_aadd59b021db2e0fdad7e24de4a6a7cd8_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="aaf198f919d0c3422e9f0150483873163" name="aaf198f919d0c3422e9f0150483873163"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaf198f919d0c3422e9f0150483873163">&#9670;&#160;</a></span>setupListeners()</h2>
 
@@ -629,11 +682,11 @@ Formats input into a multiline 3×3 grid inside the TextArea. </li>
 <li>
 Switches back to label mode on focus loss or certain key presses. </li>
 </ul>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-4-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_aaf198f919d0c3422e9f0150483873163_cgraph.svg" width="100%" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -663,11 +716,11 @@ Switches back to label mode on focus loss or certain key presses. </li>
 </div><div class="memdoc">
 
 <p>Switches from read-only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea and positioning the caret at the end. </p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-5-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_ac95db9585f2ba2ed12d60dd5cca39461_cgraph.svg" width="520" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -704,11 +757,11 @@ Switches back to label mode on focus loss or certain key presses. </li>
   </table>
   </dd>
 </dl>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-6-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-7-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model_a9544acad3febede6981c9d8440674d3c_cgraph.svg" width="540" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1032,7 +1085,7 @@ Switches back to label mode on focus loss or certain key presses. </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html">grid</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a></li>
-    <li class="footer">Generated on Thu Sep 25 2025 14:00:39 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Sep 25 2025 19:44:51 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -98,8 +98,10 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_asy
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.service.ui.AsyncFileProcessorService Class Reference</div></div>
@@ -113,20 +115,30 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_asy
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service__coll__graph.svg" width="246" height="230"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a50c735bc8d97d756fc79ca6f8bce87df" id="r_a50c735bc8d97d756fc79ca6f8bce87df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50c735bc8d97d756fc79ca6f8bce87df">AsyncFileProcessorService</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a> <a class="el" href="#ac0d8da287eb4006277550e0353e14736">toasterService</a>)</td></tr>
+<tr class="separator:a50c735bc8d97d756fc79ca6f8bce87df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
-<tr class="memitem:a575b3c705cc0bf1d3cb5f2cabd5ceadc" id="r_a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a575b3c705cc0bf1d3cb5f2cabd5ceadc">processFileAsync</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess)</td></tr>
-<tr class="memdesc:a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a file-processing task asynchronously with spinner and toast feedback.  <br /></td></tr>
-<tr class="separator:a575b3c705cc0bf1d3cb5f2cabd5ceadc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafdf3342f03468d7f4a8604f993fc2f1" id="r_aafdf3342f03468d7f4a8604f993fc2f1"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafdf3342f03468d7f4a8604f993fc2f1">processFileAsync</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess)</td></tr>
+<tr class="memdesc:aafdf3342f03468d7f4a8604f993fc2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a file-processing task asynchronously with spinner and toast feedback.  <br /></td></tr>
+<tr class="separator:aafdf3342f03468d7f4a8604f993fc2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a393483a203a8dc1868b81c7a210114f1" id="r_a393483a203a8dc1868b81c7a210114f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a393483a203a8dc1868b81c7a210114f1">handleError</a> (Throwable ex, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a> toaster, Consumer&lt; Runnable &gt; finishTask)</td></tr>
-<tr class="memdesc:a393483a203a8dc1868b81c7a210114f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles task errors by logging and showing a toast notification on the JavaFX thread.  <br /></td></tr>
-<tr class="separator:a393483a203a8dc1868b81c7a210114f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa434577520d862e52f71b24617b5dc0a" id="r_aa434577520d862e52f71b24617b5dc0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa434577520d862e52f71b24617b5dc0a">handleError</a> (Throwable ex, Consumer&lt; Runnable &gt; finishTask)</td></tr>
+<tr class="memdesc:aa434577520d862e52f71b24617b5dc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles task errors by logging and showing a toast notification on the JavaFX thread.  <br /></td></tr>
+<tr class="separator:aa434577520d862e52f71b24617b5dc0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ac0d8da287eb4006277550e0353e14736" id="r_ac0d8da287eb4006277550e0353e14736"><td class="memItemLeft" align="right" valign="top">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0d8da287eb4006277550e0353e14736">toasterService</a></td></tr>
+<tr class="separator:ac0d8da287eb4006277550e0353e14736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -136,9 +148,27 @@ Static Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Service to execute file-processing tasks asynchronously with JavaFX UI feedback. </p>
 <p>Displays a spinner and toast messages during task execution. Handles success and error reporting automatically on the JavaFX Application Thread. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a393483a203a8dc1868b81c7a210114f1" name="a393483a203a8dc1868b81c7a210114f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a393483a203a8dc1868b81c7a210114f1">&#9670;&#160;</a></span>handleError()</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a50c735bc8d97d756fc79ca6f8bce87df" name="a50c735bc8d97d756fc79ca6f8bce87df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c735bc8d97d756fc79ca6f8bce87df">&#9670;&#160;</a></span>AsyncFileProcessorService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.AsyncFileProcessorService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a></td>          <td class="paramname"><span class="paramname"><em>toasterService</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa434577520d862e52f71b24617b5dc0a" name="aa434577520d862e52f71b24617b5dc0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa434577520d862e52f71b24617b5dc0a">&#9670;&#160;</a></span>handleError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,11 +180,6 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">void fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.handleError </td>
           <td>(</td>
           <td class="paramtype">Throwable</td>          <td class="paramname"><span class="paramname"><em>ex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></td>          <td class="paramname"><span class="paramname"><em>toaster</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -173,23 +198,15 @@ Static Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ex</td><td>the exception thrown by the task; must not be null </td></tr>
-    <tr><td class="paramname">toaster</td><td>UI toaster to display the error message; must not be null </td></tr>
     <tr><td class="paramname">finishTask</td><td>function to run code on the JavaFX Application Thread; must not be null </td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_a393483a203a8dc1868b81c7a210114f1_cgraph.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
-<a id="a575b3c705cc0bf1d3cb5f2cabd5ceadc" name="a575b3c705cc0bf1d3cb5f2cabd5ceadc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a575b3c705cc0bf1d3cb5f2cabd5ceadc">&#9670;&#160;</a></span>processFileAsync()</h2>
+<a id="aafdf3342f03468d7f4a8604f993fc2f1" name="aafdf3342f03468d7f4a8604f993fc2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafdf3342f03468d7f4a8604f993fc2f1">&#9670;&#160;</a></span>processFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,11 +223,6 @@ Static Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a></td>          <td class="paramname"><span class="paramname"><em>spinner</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></td>          <td class="paramname"><span class="paramname"><em>toaster</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -238,7 +250,6 @@ onSuccess</code>. On failure, the error is logged and shown in a toast.</p>
     <tr><td class="paramname">&lt;T&gt;</td><td>the result type </td></tr>
     <tr><td class="paramname">selectedFile</td><td>the file to process; must not be null </td></tr>
     <tr><td class="paramname">spinner</td><td>UI spinner to indicate progress; must not be null </td></tr>
-    <tr><td class="paramname">toaster</td><td>UI toaster to display messages; must not be null </td></tr>
     <tr><td class="paramname">taskFunction</td><td>function to process the file and return a result; must not be null </td></tr>
     <tr><td class="paramname">onSuccess</td><td>callback executed on the UI thread upon success; must not be null </td></tr>
   </table>
@@ -250,12 +261,12 @@ onSuccess</code>. On failure, the error is logged and shown in a toast.</p>
   </table>
   </dd>
 </dl>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_a575b3c705cc0bf1d3cb5f2cabd5ceadc_cgraph.svg" width="100%" height="484"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_aafdf3342f03468d7f4a8604f993fc2f1_cgraph.svg" width="544" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -283,6 +294,28 @@ onSuccess</code>. On failure, the error is logged and shown in a toast.</p>
 
 </div>
 </div>
+<a id="ac0d8da287eb4006277550e0353e14736" name="ac0d8da287eb4006277550e0353e14736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d8da287eb4006277550e0353e14736">&#9670;&#160;</a></span>toasterService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a> fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.toasterService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/main/java/fr/softsf/sudokufx/service/ui/<a class="el" href="_async_file_processor_service_8java.html">AsyncFileProcessorService.java</a></li>
 </ul>
@@ -292,7 +325,7 @@ onSuccess</code>. On failure, the error is logged and shown in a toast.</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html">ui</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a></li>
-    <li class="footer">Generated on Thu Sep 25 2025 14:00:39 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Sep 25 2025 19:44:51 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

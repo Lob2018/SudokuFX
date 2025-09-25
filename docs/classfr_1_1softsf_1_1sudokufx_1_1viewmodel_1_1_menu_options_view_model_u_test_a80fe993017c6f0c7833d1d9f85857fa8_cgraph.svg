@@ -90,7 +90,7 @@ var sectionId = 'dynsection-2';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a52dadaf5fba37f78cc096f5d55487246" target="_top" xlink:title="Initializes the menu options UI state for the current player, including:">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4b32cc6e6b373a8728d66455c2baa4bf" target="_top" xlink:title="Initializes the menu options UI state for the current player, including:">
 <polygon fill="white" stroke="#666666" points="392.75,-44 247.75,-44 247.75,-12 392.75,-12 392.75,-44"/>
 <text text-anchor="start" x="255.75" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="320.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.init</text>

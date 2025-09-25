@@ -17,5 +17,6 @@ var searchData=
   ['applyopaquemode_14',['applyOpaqueMode',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875',1,'fr::softsf::sudokufx::view::main::MainView']]],
   ['apppaths_15',['AppPaths',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4d18a51a00d5ccc5e0433f5ff032a67f',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
   ['assertgrillescreesvalides_16',['assertGrillesCreesValides',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a6c422bba2397fd4cf7c8711518450621',1,'fr::softsf::sudokufx::common::util::sudoku::GridMasterUTest']]],
-  ['assertthrowswithmessage_17',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]]
+  ['assertthrowswithmessage_17',['assertThrowsWithMessage',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html#abfe3c72c3d42954caf2ac52e81196bd8',1,'fr::softsf::sudokufx::testing::unit::common::enums::MyRegexUTest']]],
+  ['asyncfileprocessorservice_18',['AsyncFileProcessorService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html#a50c735bc8d97d756fc79ca6f8bce87df',1,'fr::softsf::sudokufx::service::ui::AsyncFileProcessorService']]]
 ];
