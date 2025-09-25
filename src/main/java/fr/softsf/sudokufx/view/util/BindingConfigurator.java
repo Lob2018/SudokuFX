@@ -98,15 +98,11 @@ public class BindingConfigurator {
         colorPicker.setOnKeyPressed(
                 event -> {
                     switch (event.getCode()) {
-                        case SPACE:
-                        case ENTER:
-                            colorPicker.show();
-                            break;
-                        case ESCAPE:
-                            colorPicker.hide();
-                            break;
-                        default:
+                        case SPACE, ENTER -> colorPicker.show();
+                        case ESCAPE -> colorPicker.hide();
+                        default -> {
                             return;
+                        }
                     }
                     event.consume();
                 });
