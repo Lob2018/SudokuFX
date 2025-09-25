@@ -28,10 +28,10 @@ public enum AppPaths {
     LOGS_FILE_NAME_PATH("/SudokuFX.log"),
     WINDOWS_BASE_PATH("/AppData/Local/Soft64.fr/SudokuFX/"),
     MACOS_BASE_PATH("/Library/Application Support/Soft64.fr/SudokuFX/"),
-    LINUX_BASE_PATH(resolveXdgDataHome() + "/Soft64.fr/SudokuFX/"),
+    LINUX_BASE_PATH(resolveXdgDataHome()),
     WINDOWS_SUDO_FX_BASE_PATH(USER_HOME.getPath() + WINDOWS_BASE_PATH.getPath()),
     MACOS_SUDO_FX_BASE_PATH(USER_HOME.getPath() + MACOS_BASE_PATH.getPath()),
-    LINUX_SUDO_FX_BASE_PATH(USER_HOME.getPath() + LINUX_BASE_PATH.getPath()),
+    LINUX_SUDO_FX_BASE_PATH(LINUX_BASE_PATH.getPath() + "/Soft64.fr/SudokuFX/"),
     WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX(
             WINDOWS_SUDO_FX_BASE_PATH.getPath() + DATA_FOLDER.getPath()),
     MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX(
