@@ -42,7 +42,6 @@ import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.dto.GameDto;
@@ -387,7 +386,7 @@ public final class MainView implements IMainView {
                 .addListener(
                         (obs, oldMsg, newMsg) -> {
                             if (newMsg != null && !newMsg.isEmpty()) {
-                                toaster.addToast(newMsg, newMsg, ToastLevels.INFO, false);
+                                toasterService.showInfo(newMsg, newMsg);
                             }
                         });
     }
