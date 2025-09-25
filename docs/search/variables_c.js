@@ -1,10 +1,10 @@
 var searchData=
 [
   ['mac_0',['MAC',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html#a7dacde684608f19de5d60e9998434702',1,'fr::softsf::sudokufx::common::enums::OsName']]],
-  ['macos_5fbase_5fpath_1',['MACOS_BASE_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a76ae2d247e5220f820c1bd11c847b264',1,'fr::softsf::sudokufx::common::enums::Paths']]],
-  ['macos_5fsudo_5ffx_5fbase_5fpath_2',['MACOS_SUDO_FX_BASE_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a874c6844978c0a808ca9804767820846',1,'fr::softsf::sudokufx::common::enums::Paths']]],
-  ['macos_5fsupposed_5fdata_5ffolder_5ffor_5fsudo_5ffx_3',['MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#ab8cd21ae98dacbfbd9e7f99c40b6d299',1,'fr::softsf::sudokufx::common::enums::Paths']]],
-  ['macos_5fsupposed_5flogs_5ffolder_5ffor_5fsudo_5ffx_4',['MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a6bff79cec180d39be6a04c73701a4b0a',1,'fr::softsf::sudokufx::common::enums::Paths']]],
+  ['macos_5fbase_5fpath_1',['MACOS_BASE_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a1a9d0d6a93e8571993cdd0e975a923ff',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
+  ['macos_5fsudo_5ffx_5fbase_5fpath_2',['MACOS_SUDO_FX_BASE_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a90ae3c9709f3d596cc39a07fd5037650',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
+  ['macos_5fsupposed_5fdata_5ffolder_5ffor_5fsudo_5ffx_3',['MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#afd3e7b05a932081068ae38bd38965272',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
+  ['macos_5fsupposed_5flogs_5ffolder_5ffor_5fsudo_5ffx_4',['MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#abec975e02ebfa9a69ae79b2721202955',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
   ['macosintendedpathdatafolder_5',['macosIntendedPathDataFolder',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#ac24676f5c9a4a53a8d14272a8837601a',1,'fr::softsf::sudokufx::config::os::OsFoldersConfig']]],
   ['macosintendedpathlogsfolder_6',['macosIntendedPathLogsFolder',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a95dbff048d41ce4364f8a542c7eb4b6a',1,'fr::softsf::sudokufx::config::os::OsFoldersConfig']]],
   ['main_5fview_5ffxml_5fname_7',['MAIN_VIEW_FXML_NAME',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a74bea2cf927de58140635575daf94046',1,'fr::softsf::sudokufx::SudoMain']]],

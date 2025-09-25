@@ -2,7 +2,7 @@ var searchData=
 [
   ['i18n_0',['I18n',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html',1,'fr::softsf::sudokufx::common::enums']]],
   ['i18n_2ejava_1',['I18n.java',['../_i18n_8java.html',1,'']]],
-  ['i18n_5fpath_2',['I18N_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#aad43027b889beaabb801b287cfa043c8',1,'fr::softsf::sudokufx::common::enums::Paths']]],
+  ['i18n_5fpath_2',['I18N_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a9cd3e62ff46d4e169921f4e156734d2b',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
   ['i18nutest_3',['I18nUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
   ['i18nutest_2ejava_4',['I18nUTest.java',['../_i18n_u_test_8java.html',1,'']]],
   ['i_5f18_5fn_5fpath_5',['I_18_N_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#a964e916d5712fc4ec8be11692c27ce30',1,'fr::softsf::sudokufx::common::enums::I18n']]],

@@ -62,7 +62,7 @@
 <g id="a_Node000004"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="608.75,-32 440.5,-32 440.5,0 608.75,0 608.75,-32"/>
 <text text-anchor="start" x="448.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="524.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsName</text>
+<text text-anchor="middle" x="524.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppPaths</text>
 </a>
 </g>
 </g>
@@ -81,7 +81,7 @@
 <g id="a_Node000005"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="794.75,-32 626.5,-32 626.5,0 794.75,0 794.75,-32"/>
 <text text-anchor="start" x="634.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="710.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths</text>
+<text text-anchor="middle" x="710.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">OsName</text>
 </a>
 </g>
 </g>

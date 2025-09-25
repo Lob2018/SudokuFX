@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 2508;
+var viewWidth = 2554;
 var viewHeight = 120;
 var sectionId = 'dynsection-0';
 </script>
@@ -273,9 +273,10 @@ var sectionId = 'dynsection-0';
 <g id="Node000013" class="node">
 <title>Node13</title>
 <g id="a_Node000013"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="1741.88,-38 1573.62,-38 1573.62,-6 1741.88,-6 1741.88,-38"/>
-<text text-anchor="start" x="1581.62" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="1657.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogBackTxt.ASCII_LOGO</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="1771.88,-44 1573.62,-44 1573.62,0 1771.88,0 1771.88,-44"/>
+<text text-anchor="start" x="1581.62" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
+<text text-anchor="start" x="1581.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppPaths.CONFIG_LOGBACK_INVALID</text>
+<text text-anchor="middle" x="1672.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_PATH_FOR_TESTS</text>
 </a>
 </g>
 </g>
@@ -283,8 +284,8 @@ var sectionId = 'dynsection-0';
 <g id="edge12_Node000001_Node000013" class="edge">
 <title>Node1&#45;&gt;Node13</title>
 <g id="a_edge12_Node000001_Node000013"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1199.54,-87.55C1293.08,-79.54 1439.28,-65.04 1564.75,-44 1570.62,-43.02 1576.67,-41.89 1582.74,-40.69"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1583.07,-44.2 1592.17,-38.76 1581.67,-37.34 1583.07,-44.2"/>
+<path fill="none" stroke="#63b8ff" d="M1199.4,-86.72C1290.29,-78.33 1431.02,-63.96 1562.3,-44.32"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1562.49,-47.83 1571.85,-42.87 1561.44,-40.91 1562.49,-47.83"/>
 </a>
 </g>
 </g>
@@ -292,9 +293,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000014" class="node">
 <title>Node14</title>
 <g id="a_Node000014"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="1927.88,-38 1759.62,-38 1759.62,-6 1927.88,-6 1927.88,-38"/>
-<text text-anchor="start" x="1767.62" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="1843.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogBackTxt.OPTIMIZING</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="1975.12,-38 1790.38,-38 1790.38,-6 1975.12,-6 1975.12,-38"/>
+<text text-anchor="start" x="1798.38" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
+<text text-anchor="middle" x="1882.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppPaths.CONFIG_LOGBACK_PATH</text>
 </a>
 </g>
 </g>
@@ -302,8 +303,8 @@ var sectionId = 'dynsection-0';
 <g id="edge13_Node000001_Node000014" class="edge">
 <title>Node1&#45;&gt;Node14</title>
 <g id="a_edge13_Node000001_Node000014"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1199.61,-91.74C1326.35,-86.45 1556.35,-73.45 1750.75,-44 1757.04,-43.05 1763.54,-41.91 1770.04,-40.66"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1770.35,-44.16 1779.47,-38.76 1768.97,-37.3 1770.35,-44.16"/>
+<path fill="none" stroke="#63b8ff" d="M1199.46,-91.65C1330.98,-86.16 1574.72,-72.85 1780.75,-44 1787.82,-43.01 1795.15,-41.82 1802.47,-40.53"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1802.86,-44.02 1812.06,-38.76 1801.59,-37.13 1802.86,-44.02"/>
 </a>
 </g>
 </g>
@@ -311,10 +312,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000015" class="node">
 <title>Node15</title>
 <g id="a_Node000015"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="2127.25,-44 1946.25,-44 1946.25,0 2127.25,0 2127.25,-44"/>
-<text text-anchor="start" x="1954.25" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="start" x="1954.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths.CONFIG_LOGBACK_INVALID</text>
-<text text-anchor="middle" x="2036.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">_PATH_FOR_TESTS</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="2173.88,-38 1993.62,-38 1993.62,-6 2173.88,-6 2173.88,-38"/>
+<text text-anchor="start" x="2001.62" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
+<text text-anchor="middle" x="2083.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppPaths.LOGS_FILE_NAME_PATH</text>
 </a>
 </g>
 </g>
@@ -322,8 +322,8 @@ var sectionId = 'dynsection-0';
 <g id="edge14_Node000001_Node000015" class="edge">
 <title>Node1&#45;&gt;Node15</title>
 <g id="a_edge14_Node000001_Node000015"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1199.45,-93.67C1352.69,-90.54 1662.67,-80.1 1934.55,-44.19"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1934.88,-47.67 1944.33,-42.88 1933.95,-40.74 1934.88,-47.67"/>
+<path fill="none" stroke="#63b8ff" d="M1199.58,-94.11C1361.73,-91.57 1700.27,-81.77 1983.75,-44 1990.93,-43.04 1998.37,-41.86 2005.79,-40.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="2006.34,-44 2015.53,-38.73 2005.06,-37.12 2006.34,-44"/>
 </a>
 </g>
 </g>
@@ -331,9 +331,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000016" class="node">
 <title>Node16</title>
 <g id="a_Node000016"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="2313.88,-38 2145.62,-38 2145.62,-6 2313.88,-6 2313.88,-38"/>
-<text text-anchor="start" x="2153.62" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="2229.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths.CONFIG_LOGBACK_PATH</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="2359.88,-38 2191.62,-38 2191.62,-6 2359.88,-6 2359.88,-38"/>
+<text text-anchor="start" x="2199.62" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
+<text text-anchor="middle" x="2275.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogBackTxt.ASCII_LOGO</text>
 </a>
 </g>
 </g>
@@ -341,8 +341,8 @@ var sectionId = 'dynsection-0';
 <g id="edge15_Node000001_Node000016" class="edge">
 <title>Node1&#45;&gt;Node16</title>
 <g id="a_edge15_Node000001_Node000016"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1199.32,-95.77C1382.22,-96.04 1794.05,-90.79 2136.75,-44 2143.48,-43.08 2150.44,-41.92 2157.38,-40.61"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="2157.63,-44.13 2166.76,-38.75 2156.27,-37.26 2157.63,-44.13"/>
+<path fill="none" stroke="#63b8ff" d="M1199.51,-92.62C1426.87,-86.63 1994.24,-69.54 2182.75,-44 2189.48,-43.09 2196.44,-41.93 2203.38,-40.63"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="2203.63,-44.15 2212.76,-38.77 2202.27,-37.28 2203.63,-44.15"/>
 </a>
 </g>
 </g>
@@ -350,9 +350,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000017" class="node">
 <title>Node17</title>
 <g id="a_Node000017"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="2499.88,-38 2331.62,-38 2331.62,-6 2499.88,-6 2499.88,-38"/>
-<text text-anchor="start" x="2339.62" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="2415.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths.LOGS_FILE_NAME_PATH</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="2545.88,-38 2377.62,-38 2377.62,-6 2545.88,-6 2545.88,-38"/>
+<text text-anchor="start" x="2385.62" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
+<text text-anchor="middle" x="2461.75" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">LogBackTxt.OPTIMIZING</text>
 </a>
 </g>
 </g>
@@ -360,8 +360,8 @@ var sectionId = 'dynsection-0';
 <g id="edge16_Node000001_Node000017" class="edge">
 <title>Node1&#45;&gt;Node17</title>
 <g id="a_edge16_Node000001_Node000017"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1199.43,-93.23C1447.34,-88.27 2106.21,-72.74 2322.75,-44 2329.45,-43.11 2336.39,-41.97 2343.3,-40.68"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="2343.88,-44.13 2353.02,-38.76 2342.53,-37.27 2343.88,-44.13"/>
+<path fill="none" stroke="#63b8ff" d="M1199.33,-93.4C1453.66,-88.77 2142.94,-73.79 2368.75,-44 2375.45,-43.12 2382.39,-41.98 2389.3,-40.69"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="2389.88,-44.15 2399.02,-38.78 2388.53,-37.28 2389.88,-44.15"/>
 </a>
 </g>
 </g>

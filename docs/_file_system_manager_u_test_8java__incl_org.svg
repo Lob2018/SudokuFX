@@ -299,7 +299,7 @@
 <g id="a_Node000017"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="2207.88,-32 2039.62,-32 2039.62,0 2207.88,0 2207.88,-32"/>
 <text text-anchor="start" x="2047.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="2123.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths.DATA_FOLDER</text>
+<text text-anchor="middle" x="2123.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppPaths.DATA_FOLDER</text>
 </a>
 </g>
 </g>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['i18n_5fpath_0',['I18N_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#aad43027b889beaabb801b287cfa043c8',1,'fr::softsf::sudokufx::common::enums::Paths']]],
+  ['i18n_5fpath_0',['I18N_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a9cd3e62ff46d4e169921f4e156734d2b',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
   ['i_5f18_5fn_5fpath_1',['I_18_N_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#a964e916d5712fc4ec8be11692c27ce30',1,'fr::softsf::sudokufx::common::enums::I18n']]],
   ['i_5ffile_5fsystem_2',['I_FILE_SYSTEM',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a40f2448e55d8941436854a6a8481e85c',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
   ['i_5fos_5ffolder_5ffactory_3',['I_OS_FOLDER_FACTORY',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aa2c7afc8c929fd52d91a5534e8639e13',1,'fr::softsf::sudokufx::view::CrashScreenView']]],

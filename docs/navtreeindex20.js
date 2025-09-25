@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#af3c389837e9929fd5b3c543260d6827a":[1,0,0,0,0,2,0,9,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#af3c389837e9929fd5b3c543260d6827a":[2,0,0,0,0,2,0,9,1],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html":[1,0,0,0,0,2,1,4],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html":[2,0,0,0,0,2,1,4],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html#a4cc757ae9fc93eed2eb4dadadee9eaff":[1,0,0,0,0,2,1,4,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html#a4cc757ae9fc93eed2eb4dadadee9eaff":[2,0,0,0,0,2,1,4,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html#ae58290840aa93adb5840c618da541591":[1,0,0,0,0,2,1,4,0],

@@ -22,6 +22,7 @@ var hierarchy =
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.config.database.ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html", null ],
+    [ "fr.softsf.sudokufx.common.enums.AppPaths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html", null ],
     [ "fr.softsf.sudokufx.service.ui.AsyncFileProcessorService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.service.ui.AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html", null ],
@@ -194,7 +195,6 @@ var hierarchy =
     [ "fr.softsf.sudokufx.config.os.OsInitializedFolders", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html", null ],
     [ "fr.softsf.sudokufx.common.enums.OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.enums.OsNameUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html", null ],
-    [ "fr.softsf.sudokufx.common.enums.Paths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlayEffectTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_effect_tests.html", null ],
     [ "fr.softsf.sudokufx.model.Player", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html", null ],
     [ "fr.softsf.sudokufx.model.Player.PlayerBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_1_1_player_builder.html", null ],

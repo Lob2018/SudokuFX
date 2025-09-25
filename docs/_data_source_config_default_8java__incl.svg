@@ -223,7 +223,7 @@ var sectionId = 'dynsection-0';
 <g id="a_Node000010"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="1744.75,-32 1576.5,-32 1576.5,0 1744.75,0 1744.75,-32"/>
 <text text-anchor="start" x="1584.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="1660.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths.DATABASE_NAME</text>
+<text text-anchor="middle" x="1660.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppPaths.DATABASE_NAME</text>
 </a>
 </g>
 </g>

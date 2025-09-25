@@ -43,7 +43,7 @@
 <g id="a_Node000003"><a xlink:title=" ">
 <polygon fill="#e0e0e0" stroke="#999999" points="303.75,-38 135.5,-38 135.5,-6 303.75,-6 303.75,-38"/>
 <text text-anchor="start" x="143.5" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="219.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths.*</text>
+<text text-anchor="middle" x="219.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppPaths.*</text>
 </a>
 </g>
 </g>

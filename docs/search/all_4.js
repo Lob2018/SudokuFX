@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['data_5ffolder_0',['DATA_FOLDER',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#adf3e8356b5da060e40c2d7263acf23a1',1,'fr::softsf::sudokufx::common::enums::Paths']]],
-  ['database_5fmigration_5fpath_1',['DATABASE_MIGRATION_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#ad6cc2235d3f793f998fd81fbf828a901',1,'fr::softsf::sudokufx::common::enums::Paths']]],
-  ['database_5fname_2',['DATABASE_NAME',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_paths.html#a192c74acac34f5a5392da8e3a6ffd950',1,'fr::softsf::sudokufx::common::enums::Paths']]],
+  ['data_5ffolder_0',['DATA_FOLDER',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#aefa3e5181cdb1c6812167ba8759ac0a2',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
+  ['database_5fmigration_5fpath_1',['DATABASE_MIGRATION_PATH',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a7ae4a8cd07b3004ed0ab662da197c69d',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
+  ['database_5fname_2',['DATABASE_NAME',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a0804141295ba4230f1ad66b0205612dc',1,'fr::softsf::sudokufx::common::enums::AppPaths']]],
   ['datasourceconfigcds_3',['DataSourceConfigCds',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds.html',1,'fr::softsf::sudokufx::config::database']]],
   ['datasourceconfigcds_2ejava_4',['DataSourceConfigCds.java',['../_data_source_config_cds_8java.html',1,'']]],
   ['datasourceconfigdefault_5',['DataSourceConfigDefault',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_default.html',1,'fr::softsf::sudokufx::config::database']]],

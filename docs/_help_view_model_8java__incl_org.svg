@@ -186,8 +186,9 @@
 <g id="Node000011" class="node">
 <title>Node11</title>
 <g id="a_Node000011"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="1429.12,-26 1242.12,-26 1242.12,-6 1429.12,-6 1429.12,-26"/>
-<text text-anchor="middle" x="1335.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.I18n</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="1409.75,-32 1241.5,-32 1241.5,0 1409.75,0 1409.75,-32"/>
+<text text-anchor="start" x="1249.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
+<text text-anchor="middle" x="1325.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">AppPaths</text>
 </a>
 </g>
 </g>
@@ -195,8 +196,8 @@
 <g id="edge10_Node000001_Node000011" class="edge">
 <title>Node1&#45;&gt;Node11</title>
 <g id="a_edge10_Node000001_Node000011"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1202.12,-67.59C1233.84,-55.57 1272.47,-40.93 1299.99,-30.5"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1301.17,-33.8 1309.28,-26.98 1298.69,-27.26 1301.17,-33.8"/>
+<path fill="none" stroke="#63b8ff" d="M1199.14,-67.59C1223.59,-57.81 1252.35,-46.31 1276.27,-36.74"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1277.5,-40.02 1285.48,-33.06 1274.9,-33.52 1277.5,-40.02"/>
 </a>
 </g>
 </g>
@@ -204,9 +205,8 @@
 <g id="Node000012" class="node">
 <title>Node12</title>
 <g id="a_Node000012"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="1615.75,-32 1447.5,-32 1447.5,0 1615.75,0 1615.75,-32"/>
-<text text-anchor="start" x="1455.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
-<text text-anchor="middle" x="1531.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Paths</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="1615.12,-26 1428.12,-26 1428.12,-6 1615.12,-6 1615.12,-26"/>
+<text text-anchor="middle" x="1521.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.I18n</text>
 </a>
 </g>
 </g>
@@ -214,8 +214,8 @@
 <g id="edge11_Node000001_Node000012" class="edge">
 <title>Node1&#45;&gt;Node12</title>
 <g id="a_edge11_Node000001_Node000012"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1222.35,-74.69C1284.18,-63.16 1371.4,-46.89 1437.46,-34.57"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1438.02,-38.02 1447.21,-32.75 1436.74,-31.14 1438.02,-38.02"/>
+<path fill="none" stroke="#63b8ff" d="M1222.62,-74.26C1293.15,-60.75 1396.17,-41.02 1461.01,-28.61"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1461.61,-32.06 1470.77,-26.74 1460.29,-25.18 1461.61,-32.06"/>
 </a>
 </g>
 </g>
