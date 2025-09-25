@@ -9,6 +9,7 @@ Dive into the world of Sudoku with a game that offers:
 Challenge your mind and enjoy hours of logical fun with SudokuFX!
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)<br>
+[![Accessibility](https://img.shields.io/badge/accessibility-WCAG%202.1%20AA-brightgreen)](https://www.w3.org/WAI/WCAG21/quickref/)<br>
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10875/badge)](https://www.bestpractices.dev/projects/10875)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudokuFX/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudokuFX)
 [![Snyk Scan](https://img.shields.io/badge/Snyk%20Scan-authentication%20required-brightgreen?logo=snyk)](https://app.snyk.io/org/lob2018/project/eb67e66c-32ab-4713-af25-6438d35db490)
