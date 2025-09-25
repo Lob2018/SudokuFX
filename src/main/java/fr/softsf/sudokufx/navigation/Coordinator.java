@@ -48,10 +48,11 @@ import static fr.softsf.sudokufx.common.enums.Urls.MY_WEBSITE_URL;
 @Component
 public class Coordinator {
 
+    @Autowired private ApplicationContext applicationContext;
+
     @Autowired private PlayerService playerService;
     @Autowired private PlayerLanguageService playerLanguageService;
     @Autowired private PlayerStateHolder playerStateHolder;
-    @Autowired private ApplicationContext applicationContext;
     @Autowired private ToasterService toasterService;
 
     private static final Logger LOG = LoggerFactory.getLogger(Coordinator.class);

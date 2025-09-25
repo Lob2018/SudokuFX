@@ -278,8 +278,12 @@ public final class MainView implements IMainView {
     }
 
     /**
-     * Initializes the toaster by subscribing to the ToasterService. When a new ToastData is
-     * published, it adds the toast to the ToasterVBox.
+     * Initializes the toaster by subscribing to the ToasterService.
+     *
+     * <p>When a new {@link fr.softsf.sudokufx.dto.ToastData} is published via {@link
+     * ToasterService#toastRequestProperty()}, this method adds the toast to the {@link
+     * ToasterVBox}. It also listens to {@link ToasterService#removeToastRequestProperty()} to
+     * remove the currently displayed toast when requested.
      */
     private void toasterInitialization() {
         toasterService
@@ -294,6 +298,9 @@ public final class MainView implements IMainView {
                                         newVal.requestFocus());
                             }
                         });
+        toasterService
+                .removeToastRequestProperty()
+                .addListener((obs, oldVal, newVal) -> toaster.removeToast());
     }
 
     /**
@@ -492,7 +499,7 @@ public final class MainView implements IMainView {
                 menuOptionsButtonSongClear, isSongNotBlank);
         bindingConfigurator.configurePseudoClassBinding(
                 menuOptionsButtonSong, isSongNotBlank, REDUCED_SONG_PSEUDO_SELECTED);
-        menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, toaster, spinner);
+        menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, spinner);
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 

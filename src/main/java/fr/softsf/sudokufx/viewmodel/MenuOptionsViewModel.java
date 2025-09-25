@@ -29,7 +29,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.AudioUtils;
 import fr.softsf.sudokufx.common.util.ImageMeta;
@@ -38,6 +37,7 @@ import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.ui.AudioService;
+import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
@@ -64,6 +64,7 @@ public class MenuOptionsViewModel {
     private final AudioUtils audioUtils;
     private final PlayerStateHolder playerStateHolder;
     private final OptionsService optionsService;
+    private final ToasterService toasterService;
 
     private static final String ROLE_CLOSED = "menu.accessibility.role.description.closed";
     private static final String ROLE_OPENED = "menu.accessibility.role.description.opened";
@@ -125,19 +126,20 @@ public class MenuOptionsViewModel {
     private final StringBinding optionsClearSongTooltip;
 
     private boolean initialized = false;
-    private ToasterVBox toaster;
 
     public MenuOptionsViewModel(
             AudioService audioService,
             AsyncFileProcessorService asyncFileProcessorService,
             PlayerStateHolder playerStateHolder,
-            OptionsService optionsService) {
+            OptionsService optionsService,
+            ToasterService toasterService) {
         this.imageUtils = new ImageUtils();
         this.audioUtils = new AudioUtils();
         this.audioService = audioService;
         this.optionsService = optionsService;
         this.asyncFileProcessorService = asyncFileProcessorService;
         this.playerStateHolder = playerStateHolder;
+        this.toasterService = toasterService;
         optionsMenuMaxiAccessibleText =
                 createStringBinding("menu.maxi.button.options.accessibility");
         optionsMenuMaxiTooltip =
@@ -148,7 +150,6 @@ public class MenuOptionsViewModel {
                 createStringBinding("menu.options.button.reduce.accessibility");
         optionsReduceTooltip = createStringBinding("menu.options.button.reduce.accessibility");
         optionsReduceText = createStringBinding("menu.options.button.reduce.text");
-
         optionsAccessibleText = createStringBinding("menu.options.button.options.accessibility");
         optionsTooltip =
                 createFormattedBinding("menu.options.button.options.accessibility", ROLE_OPENED);
@@ -585,21 +586,14 @@ public class MenuOptionsViewModel {
      * @param sudokuFX the GridPane to apply background settings; must not be {@code null}
      * @param menuOptionsButtonColor the ColorPicker to synchronize with the current color; must not
      *     be {@code null}
-     * @param toaster the toaster component for user notifications during image loading; must not be
-     *     {@code null}
      * @param spinner the spinner component to indicate loading state; must not be {@code null}
      * @throws NullPointerException if any of the parameters are {@code null}
      */
     public void init(
-            GridPane sudokuFX,
-            ColorPicker menuOptionsButtonColor,
-            ToasterVBox toaster,
-            SpinnerGridPane spinner) {
+            GridPane sudokuFX, ColorPicker menuOptionsButtonColor, SpinnerGridPane spinner) {
         Objects.requireNonNull(sudokuFX, "sudokuFX mustn't be null");
         Objects.requireNonNull(menuOptionsButtonColor, "menuOptionsButtonColor mustn't be null");
-        Objects.requireNonNull(toaster, "toaster mustn't be null");
         Objects.requireNonNull(spinner, "spinner mustn't be null");
-        this.toaster = toaster;
         OptionsDto optionsDto = playerStateHolder.currentPlayerProperty().get().optionsidDto();
         initialized = true;
         if (optionsDto.imagepath().isEmpty()) {
@@ -644,7 +638,7 @@ public class MenuOptionsViewModel {
         String errorMessage =
                 I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileaudiochooser");
         LOG.error("██ Exception handleFileAudioChooser : {}", errorMessage);
-        toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+        toasterService.showError(errorMessage, "");
     }
 
     /**
@@ -666,25 +660,21 @@ public class MenuOptionsViewModel {
             optionsService.updateOptions(toSaveOptions);
             playerStateHolder.refreshCurrentPlayer();
             songProperty.set(clear ? "" : name);
-            toaster.addToast(
+            toasterService.showInfo(
                     MessageFormat.format(
                             I18n.INSTANCE.getValue(
                                     clear
                                             ? "toast.msg.optionsviewmodel.disabled"
                                             : "toast.msg.optionsviewmodel.saved"),
                             name),
-                    absolutePath,
-                    ToastLevels.INFO,
-                    false);
+                    absolutePath);
         } catch (Exception e) {
             LOG.error("██ Exception PersistSongPath failed: {}", e.getMessage(), e);
-            toaster.addToast(
+            toasterService.showError(
                     MessageFormat.format(
                             I18n.INSTANCE.getValue("toast.error.optionsviewmodel.ontaskerror"),
                             name),
-                    Objects.toString(absolutePath + "\n" + e.getMessage(), ""),
-                    ToastLevels.ERROR,
-                    true);
+                    Objects.toString(absolutePath + "\n" + e.getMessage(), ""));
         }
     }
 
@@ -705,21 +695,17 @@ public class MenuOptionsViewModel {
             playerStateHolder.refreshCurrentPlayer();
             audioService.setMuted(newState);
             muteProperty.set(newState);
-            toaster.addToast(
+            toasterService.showInfo(
                     I18n.INSTANCE.getValue(
                             newState
                                     ? "toast.msg.optionsviewmodel.sound.off"
                                     : "toast.msg.optionsviewmodel.sound.on"),
-                    "",
-                    ToastLevels.INFO,
-                    false);
+                    "");
         } catch (Exception e) {
             LOG.error("██ Exception ToggleMuteAndPersist failed: {}", e.getMessage(), e);
-            toaster.addToast(
+            toasterService.showError(
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.sounderror"),
-                    Objects.toString(e.getMessage(), ""),
-                    ToastLevels.ERROR,
-                    true);
+                    Objects.toString(e.getMessage(), ""));
         }
     }
 
@@ -742,23 +728,19 @@ public class MenuOptionsViewModel {
             optionsService.updateOptions(toSaveOptions);
             playerStateHolder.refreshCurrentPlayer();
             gridOpacityProperty.set(newState);
-            toaster.addToast(
+            toasterService.showInfo(
                     I18n.INSTANCE.getValue(
                             newState
                                     ? "toast.msg.optionsviewmodel.opaque.on"
                                     : "toast.msg.optionsviewmodel.opaque.off"),
-                    "",
-                    ToastLevels.INFO,
-                    false);
+                    "");
             return newState;
         } catch (Exception e) {
             LOG.error("██ Exception ToggleGridOpacityAndPersist failed: {}", e.getMessage(), e);
             gridOpacityProperty.set(previousState);
-            toaster.addToast(
+            toasterService.showError(
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.opacityerror"),
-                    Objects.toString(e.getMessage(), ""),
-                    ToastLevels.ERROR,
-                    true);
+                    Objects.toString(e.getMessage(), ""));
             return previousState;
         }
     }
@@ -820,11 +802,9 @@ public class MenuOptionsViewModel {
             sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
         } catch (Exception e) {
             LOG.error("██ Exception ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
-            toaster.addToast(
+            toasterService.showError(
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.colorerror"),
-                    Objects.toString(e.getMessage(), ""),
-                    ToastLevels.ERROR,
-                    true);
+                    Objects.toString(e.getMessage(), ""));
         }
     }
 
@@ -856,13 +836,12 @@ public class MenuOptionsViewModel {
             String errorMessage =
                     I18n.INSTANCE.getValue("toast.error.optionsviewmodel.handlefileimagechooser");
             LOG.error("██ Exception HandleFileImageChooser error: {}", errorMessage);
-            toaster.addToast(errorMessage, "", ToastLevels.ERROR, true);
+            toasterService.showError(errorMessage, "");
             return;
         }
         asyncFileProcessorService.processFileAsync(
                 selectedFile,
                 spinner,
-                toaster,
                 file -> {
                     ImageMeta meta = imageUtils.getImageMeta(file);
                     Image resizedImage =
@@ -905,23 +884,20 @@ public class MenuOptionsViewModel {
                     imagePath.isEmpty()
                             ? "toast.error.optionsviewmodel.imagepathclearerror"
                             : "toast.error.optionsviewmodel.imagepathsavererror";
-            toaster.addToast(
-                    I18n.INSTANCE.getValue(i18nKey),
-                    Objects.toString(e.getMessage(), ""),
-                    ToastLevels.ERROR,
-                    true);
+            toasterService.showError(
+                    I18n.INSTANCE.getValue(i18nKey), Objects.toString(e.getMessage(), ""));
         }
     }
 
     /**
      * Checks whether the {@link MenuOptionsViewModel} has been initialized via {@link
-     * #init(GridPane, ColorPicker, ToasterVBox, SpinnerGridPane)}.
+     * #init(GridPane, ColorPicker, SpinnerGridPane)}.
      *
      * <p>If the menu options have not been initialized, this method throws an exception to prevent
      * operations on an uninitialized state.
      *
-     * @throws IllegalStateException if {@link #init(GridPane, ColorPicker, ToasterVBox,
-     *     SpinnerGridPane)} has not been called
+     * @throws IllegalStateException if {@link #init(GridPane, ColorPicker, SpinnerGridPane)} has
+     *     not been called
      */
     private void checkInitialized() {
         if (!initialized) {

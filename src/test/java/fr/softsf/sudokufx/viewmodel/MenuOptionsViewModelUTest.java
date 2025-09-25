@@ -28,11 +28,12 @@ import org.testfx.framework.junit5.ApplicationExtension;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.util.ImageUtils;
+import fr.softsf.sudokufx.dto.ToastData;
 import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.ui.AudioService;
+import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
-import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -45,11 +46,11 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     private MenuOptionsViewModel viewModel;
     private GridPane sudokuFX;
     private ColorPicker colorPicker;
-    private ToasterVBox toasterMock;
     private SpinnerGridPane spinnerMock;
     private AsyncFileProcessorService asyncServiceMock;
     private AudioService audioSpy;
     private OptionsService optionsService;
+    private ToasterService toasterService;
 
     @BeforeEach
     void givenDependencies_whenInitViewModel_thenViewModelInitialized() {
@@ -57,16 +58,28 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         I18n.INSTANCE.setLocaleBundle("FR");
         sudokuFX = new GridPane();
         colorPicker = new ColorPicker();
-        toasterMock = mock(ToasterVBox.class);
         spinnerMock = mock(SpinnerGridPane.class);
         asyncServiceMock = mock(AsyncFileProcessorService.class);
         audioSpy = spy(new AudioService());
         optionsService = mock(OptionsService.class);
+        toasterService = new ToasterService();
+        viewModel =
+                new MenuOptionsViewModel(
+                        audioSpy,
+                        asyncServiceMock,
+                        playerStateHolder,
+                        optionsService,
+                        toasterService);
+        viewModel.init(sudokuFX, colorPicker, spinnerMock);
         viewModel =
                 spy(
                         new MenuOptionsViewModel(
-                                audioSpy, asyncServiceMock, playerStateHolder, optionsService));
-        viewModel.init(sudokuFX, colorPicker, toasterMock, spinnerMock);
+                                audioSpy,
+                                asyncServiceMock,
+                                playerStateHolder,
+                                optionsService,
+                                toasterService));
+        viewModel.init(sudokuFX, colorPicker, spinnerMock);
     }
 
     @AfterEach
@@ -144,31 +157,35 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
 
         @Test
         void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast() {
-            doNothing().when(toasterMock).addToast(anyString(), anyString(), any(), anyBoolean());
             viewModel.applyAndPersistBackgroundImage(null, spinnerMock, sudokuFX);
             verifyNoInteractions(asyncServiceMock);
-            verify(toasterMock, atLeastOnce())
-                    .addToast(
-                            I18n.INSTANCE.getValue(
-                                    "toast.error.optionsviewmodel.handlefileimagechooser"),
-                            "",
-                            ToastLevels.ERROR,
-                            true);
+            ToastData toastData = toasterService.toastRequestProperty().get();
+            assertNotNull(toastData, "Un toast d'erreur doit être émis");
+            assertEquals(ToastLevels.ERROR, toastData.level());
+            assertTrue(
+                    toastData
+                            .visibleText()
+                            .contains(
+                                    I18n.INSTANCE.getValue(
+                                            "toast.error.optionsviewmodel.handlefileimagechooser")));
+            assertTrue(toastData.requestFocus());
         }
 
         @Test
         void givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast() {
             File invalidFile = new File("invalid.txt");
-            doNothing().when(toasterMock).addToast(anyString(), anyString(), any(), anyBoolean());
             viewModel.applyAndPersistBackgroundImage(invalidFile, spinnerMock, sudokuFX);
             verifyNoInteractions(asyncServiceMock);
-            verify(toasterMock, atLeastOnce())
-                    .addToast(
-                            I18n.INSTANCE.getValue(
-                                    "toast.error.optionsviewmodel.handlefileimagechooser"),
-                            "",
-                            ToastLevels.ERROR,
-                            true);
+            ToastData toastData = toasterService.toastRequestProperty().get();
+            assertNotNull(toastData, "Un toast d'erreur doit être émis");
+            assertEquals(ToastLevels.ERROR, toastData.level());
+            assertTrue(
+                    toastData
+                            .visibleText()
+                            .contains(
+                                    I18n.INSTANCE.getValue(
+                                            "toast.error.optionsviewmodel.handlefileimagechooser")));
+            assertTrue(toastData.requestFocus());
         }
     }
 
@@ -186,32 +203,64 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
             viewModel.applyAndPersistBackgroundImage(validFile, spinnerMock, sudokuFX);
-            verify(asyncServiceMock)
-                    .processFileAsync(
-                            eq(validFile), eq(spinnerMock), eq(toasterMock), any(), any());
+            verify(asyncServiceMock).processFileAsync(eq(validFile), eq(spinnerMock), any(), any());
         }
 
         @Test
         void givenNonExistentFile_whenLoadBackgroundImage_thenToastErrorAndNoAsyncCall()
                 throws Exception {
             File nonExistentFile = mock(File.class);
-            doReturn(false).when(nonExistentFile).exists(); // Fichier inexistant
+            doReturn(true).when(nonExistentFile).exists();
+            doReturn("fake.jpg").when(nonExistentFile).getName();
             ImageUtils imageUtilsSpy = spy(new ImageUtils());
-            doReturn(true).when(imageUtilsSpy).isValidImage(nonExistentFile);
+            doReturn(false).when(imageUtilsSpy).isValidImage(nonExistentFile);
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
             viewModel.applyAndPersistBackgroundImage(nonExistentFile, spinnerMock, sudokuFX);
-            verify(asyncServiceMock, never()).processFileAsync(any(), any(), any(), any(), any());
-            verify(toasterMock, atLeast(1))
-                    .addToast(anyString(), anyString(), eq(ToastLevels.ERROR), eq(true));
+            verify(asyncServiceMock, never()).processFileAsync(any(), any(), any(), any());
+            ToastData toastData = toasterService.toastRequestProperty().get();
+            assertNotNull(toastData);
+            assertEquals(ToastLevels.ERROR, toastData.level());
+        }
+
+        @Test
+        void givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet() {
+            File imageFile = new File("src/test/resources/sample.jpg");
+            SpinnerGridPane spinner = mock(SpinnerGridPane.class);
+            GridPane gridPane = new GridPane();
+            doAnswer(
+                            invocation -> {
+                                File fileArg = invocation.getArgument(0);
+                                Consumer<BackgroundImage> callback = invocation.getArgument(3);
+                                callback.accept(
+                                        new BackgroundImage(
+                                                new Image(fileArg.toURI().toString()),
+                                                null,
+                                                null,
+                                                null,
+                                                null));
+                                return null;
+                            })
+                    .when(asyncServiceMock)
+                    .processFileAsync(eq(imageFile), eq(spinner), any(), any());
+            MenuOptionsViewModel vm =
+                    new MenuOptionsViewModel(
+                            new AudioService(),
+                            asyncServiceMock,
+                            playerStateHolder,
+                            optionsService,
+                            toasterService);
+            vm.init(new GridPane(), new ColorPicker(), spinner);
+            vm.applyAndPersistBackgroundImage(imageFile, spinner, gridPane);
+            verify(asyncServiceMock).processFileAsync(eq(imageFile), eq(spinner), any(), any());
+            assertNotNull(gridPane.getBackground());
         }
     }
 
     @Nested
     @DisplayName("Options Toggle Tests")
     class OptionsToggleTests {
-
         @Test
         void givenInitialGridOpacity_whenToggleGridOpacity_thenPropertyInverted() {
             boolean initial = viewModel.gridOpacityProperty().get();
@@ -232,7 +281,6 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     @Nested
     @DisplayName("Utility Text Methods Tests")
     class UtilityTextMethodsTests {
-
         static Stream<Arguments> utilityTextMethodsProvider() {
             return Stream.of(
                     Arguments.of(
@@ -263,11 +311,10 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         File imageFile = new File("src/test/resources/sample.jpg");
         SpinnerGridPane spinner = mock(SpinnerGridPane.class);
         GridPane gridPane = new GridPane();
-        ToasterVBox toaster = mock(ToasterVBox.class);
         doAnswer(
                         invocation -> {
                             File fileArg = invocation.getArgument(0);
-                            Consumer<BackgroundImage> callback = invocation.getArgument(4);
+                            Consumer<BackgroundImage> callback = invocation.getArgument(3);
                             BackgroundImage fakeBackground =
                                     new BackgroundImage(
                                             new Image(fileArg.toURI().toString()),
@@ -279,14 +326,17 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                             return null;
                         })
                 .when(asyncServiceMock)
-                .processFileAsync(eq(imageFile), eq(spinner), eq(toaster), any(), any());
+                .processFileAsync(eq(imageFile), eq(spinner), any(), any());
         MenuOptionsViewModel vm =
                 new MenuOptionsViewModel(
-                        new AudioService(), asyncServiceMock, playerStateHolder, optionsService);
-        vm.init(new GridPane(), new ColorPicker(), toaster, spinner);
+                        new AudioService(),
+                        asyncServiceMock,
+                        playerStateHolder,
+                        optionsService,
+                        toasterService);
+        vm.init(new GridPane(), new ColorPicker(), spinner);
         vm.applyAndPersistBackgroundImage(imageFile, spinner, gridPane);
-        verify(asyncServiceMock)
-                .processFileAsync(eq(imageFile), eq(spinner), eq(toaster), any(), any());
+        verify(asyncServiceMock).processFileAsync(eq(imageFile), eq(spinner), any(), any());
         assertNotNull(gridPane.getBackground(), "Le GridPane doit avoir un Background appliqué");
     }
 }

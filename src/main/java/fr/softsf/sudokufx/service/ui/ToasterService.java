@@ -6,8 +6,11 @@
 package fr.softsf.sudokufx.service.ui;
 
 import java.util.Objects;
+import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleObjectProperty;
 
 import org.springframework.stereotype.Service;
@@ -23,10 +26,26 @@ import fr.softsf.sudokufx.dto.ToastData;
 public class ToasterService {
 
     private final ObjectProperty<ToastData> toastRequest = new SimpleObjectProperty<>();
+    private final BooleanProperty removeToastRequest = new SimpleBooleanProperty(false);
 
     /** Returns a read-only observable property for toast notifications. */
     public ReadOnlyObjectProperty<ToastData> toastRequestProperty() {
         return toastRequest;
+    }
+
+    /** Returns a read-only observable property that signals requests to remove a toast. */
+    public ReadOnlyBooleanProperty removeToastRequestProperty() {
+        return removeToastRequest;
+    }
+
+    /**
+     * Requests the removal of the currently displayed toast.
+     *
+     * <p>This triggers the {@link #removeToastRequestProperty()} listener in the UI to remove the
+     * toast.
+     */
+    public void requestRemoveToast() {
+        removeToastRequest.set(!removeToastRequest.get());
     }
 
     /**

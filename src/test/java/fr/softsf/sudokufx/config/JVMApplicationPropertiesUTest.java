@@ -75,11 +75,9 @@ class JVMApplicationPropertiesUTest {
         JVMApplicationProperties.INSTANCE.setOnRefreshSpringContextExitForTests();
         assertEquals("SudokuFX", JVMApplicationProperties.INSTANCE.getAppName());
         assertFalse(JVMApplicationProperties.INSTANCE.getAppVersion().isEmpty());
-
         System.out.println(
                 "Organization :" + JVMApplicationProperties.INSTANCE.getAppOrganization());
         System.out.println("License :" + JVMApplicationProperties.INSTANCE.getAppLicense());
-
         assertFalse(JVMApplicationProperties.INSTANCE.getAppOrganization().isEmpty());
         assertFalse(JVMApplicationProperties.INSTANCE.getAppLicense().isEmpty());
         assertTrue(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
