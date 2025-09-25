@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.common.enums.Paths" name="fr.softsf.sudokufx.common.enums.Paths">
+<map id="fr.softsf.sudokufx.common.enums.AppPaths" name="fr.softsf.sudokufx.common.enums.AppPaths">
 <area shape="rect" id="Node000001" title="Utility enum for various application&#45;specific paths." alt="" coords="5,5,223,411"/>
 </map>

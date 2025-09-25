@@ -18,8 +18,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
@@ -146,7 +146,7 @@ public class Coordinator {
     public <T> T setRootByFXMLName(final String fxml) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 fxml, "Fxml must not be null or blank, but was " + fxml);
-        String path = Paths.RESOURCES_FXML_PATH.getPath() + fxml + FXML_EXTENSION;
+        String path = AppPaths.RESOURCES_FXML_PATH.getPath() + fxml + FXML_EXTENSION;
         try {
             fxmlLoader.setRoot(null);
             fxmlLoader.setController(null);

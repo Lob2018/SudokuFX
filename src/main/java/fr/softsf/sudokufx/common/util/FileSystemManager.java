@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
-import static fr.softsf.sudokufx.common.enums.Paths.DATA_FOLDER;
+import static fr.softsf.sudokufx.common.enums.AppPaths.DATA_FOLDER;
 
 /**
  * Manages file system operations related to the application's data folder.

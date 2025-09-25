@@ -15,6 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
@@ -57,7 +58,7 @@ public class FileChooserService {
         Objects.requireNonNull(type, "FileType must not be null");
         try {
             FileChooser fileChooser = new FileChooser();
-            File initialDir = new File(System.getProperty("user.home"));
+            File initialDir = new File(AppPaths.USER_HOME.getPath());
             if (initialDir.exists() && initialDir.isDirectory()) {
                 fileChooser.setInitialDirectory(initialDir);
             }

@@ -16,8 +16,8 @@ import javafx.scene.control.ButtonType;
 
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.enums.ScreenSize;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
@@ -109,7 +109,7 @@ public class HelpViewModel {
      */
     private void addLogFileButton(MyAlert informationAlert) {
         Objects.requireNonNull(informationAlert, "informationAlert must not be null");
-        String logPath = iOsFolder.getOsLogsFolderPath() + Paths.LOGS_FILE_NAME_PATH.getPath();
+        String logPath = iOsFolder.getOsLogsFolderPath() + AppPaths.LOGS_FILE_NAME_PATH.getPath();
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 logPath, "logPath must not be null or blank, but was " + logPath);
         File file = new File(logPath);

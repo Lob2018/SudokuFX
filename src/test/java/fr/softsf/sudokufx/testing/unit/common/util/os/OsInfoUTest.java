@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 
 import fr.softsf.sudokufx.common.enums.OsName;
 
-import static fr.softsf.sudokufx.common.enums.Paths.USER_HOME;
+import static fr.softsf.sudokufx.common.enums.AppPaths.USER_HOME;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

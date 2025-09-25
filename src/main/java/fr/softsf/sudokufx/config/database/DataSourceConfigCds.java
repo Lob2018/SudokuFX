@@ -16,7 +16,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 
-import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_NAME;
+import static fr.softsf.sudokufx.common.enums.AppPaths.DATABASE_NAME;
 
 /**
  * Overrides Abstract DataSource hikariDataSource for the CDS profile. CDS optimizes the startup and

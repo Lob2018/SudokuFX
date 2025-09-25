@@ -29,7 +29,7 @@ public enum I18n {
 
     private static final Locale LOCALE_FR = Locale.of("fr", "FR");
     private static final Locale LOCALE_EN = Locale.of("en", "US");
-    private static final String I_18_N_PATH = Paths.I18N_PATH.getPath();
+    private static final String I_18_N_PATH = AppPaths.I18N_PATH.getPath();
 
     private static final ResourceBundle FRENCH_BUNDLE;
     private static final ResourceBundle ENGLISH_BUNDLE;

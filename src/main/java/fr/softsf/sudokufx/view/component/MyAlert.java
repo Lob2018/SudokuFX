@@ -15,7 +15,7 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import fr.softsf.sudokufx.SudoMain;
-import fr.softsf.sudokufx.common.enums.Paths;
+import fr.softsf.sudokufx.common.enums.AppPaths;
 
 /**
  * A styled JavaFX alert dialog with optional sizing and custom appearance. Applies a radial
@@ -71,7 +71,7 @@ public class MyAlert extends Alert {
                         new Image(
                                 Objects.requireNonNull(
                                                 SudoMain.class.getResource(
-                                                        Paths.LOGO_SUDO_PNG_PATH.getPath()))
+                                                        AppPaths.LOGO_SUDO_PNG_PATH.getPath()))
                                         .toExternalForm()));
         applyHandCursorToButton();
     }

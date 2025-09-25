@@ -19,11 +19,11 @@ import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 
+import static fr.softsf.sudokufx.common.enums.AppPaths.CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS;
+import static fr.softsf.sudokufx.common.enums.AppPaths.CONFIG_LOGBACK_PATH;
+import static fr.softsf.sudokufx.common.enums.AppPaths.LOGS_FILE_NAME_PATH;
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.ASCII_LOGO;
 import static fr.softsf.sudokufx.common.enums.LogBackTxt.OPTIMIZING;
-import static fr.softsf.sudokufx.common.enums.Paths.CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS;
-import static fr.softsf.sudokufx.common.enums.Paths.CONFIG_LOGBACK_PATH;
-import static fr.softsf.sudokufx.common.enums.Paths.LOGS_FILE_NAME_PATH;
 
 /**
  * Configuration class for Logback logging framework. This class sets up and configures Logback for

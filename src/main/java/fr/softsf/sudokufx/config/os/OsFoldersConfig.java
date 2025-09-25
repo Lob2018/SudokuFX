@@ -8,8 +8,8 @@ package fr.softsf.sudokufx.config.os;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.OsName;
-import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /** Configuration class for managing OS-specific dynamically. */
@@ -19,17 +19,17 @@ public class OsFoldersConfig {
     private OsName os = OsName.detect();
 
     private String windowsIntendedPathDataFolder =
-            Paths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
+            AppPaths.WINDOWS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
     private String windowsIntendedPathLogsFolder =
-            Paths.WINDOWS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
+            AppPaths.WINDOWS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
     private String linuxIntendedPathDataFolder =
-            Paths.LINUX_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
+            AppPaths.LINUX_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
     private String linuxIntendedPathLogsFolder =
-            Paths.LINUX_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
+            AppPaths.LINUX_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
     private String macosIntendedPathDataFolder =
-            Paths.MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
+            AppPaths.MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX.getPath();
     private String macosIntendedPathLogsFolder =
-            Paths.MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
+            AppPaths.MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX.getPath();
 
     /**
      * Creates and returns the initialized OS-specific folders.

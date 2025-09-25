@@ -39,9 +39,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.enums.Paths;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
@@ -1127,7 +1127,7 @@ public final class MainView implements IMainView {
                         new Image(
                                 (Objects.requireNonNull(
                                                 SudoMain.class.getResource(
-                                                        Paths.LOGO_SUDO_PNG_PATH.getPath())))
+                                                        AppPaths.LOGO_SUDO_PNG_PATH.getPath())))
                                         .toExternalForm()));
         primaryStage.initStyle(StageStyle.DECORATED);
         primaryStage.setScene(coordinator.getDefaultScene());

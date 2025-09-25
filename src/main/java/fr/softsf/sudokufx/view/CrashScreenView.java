@@ -40,7 +40,7 @@ import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 
-import static fr.softsf.sudokufx.common.enums.Paths.LOGO_SUDO_PNG_PATH;
+import static fr.softsf.sudokufx.common.enums.AppPaths.LOGO_SUDO_PNG_PATH;
 import static fr.softsf.sudokufx.common.enums.ScreenSize.DISPOSABLE_SIZE;
 
 /**

@@ -17,7 +17,7 @@ import com.zaxxer.hikari.HikariDataSource;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 
-import static fr.softsf.sudokufx.common.enums.Paths.DATABASE_MIGRATION_PATH;
+import static fr.softsf.sudokufx.common.enums.AppPaths.DATABASE_MIGRATION_PATH;
 
 /**
  * Abstract configuration class for setting up the application's data source. Provides configuration

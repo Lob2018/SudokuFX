@@ -212,12 +212,13 @@ For additional help, check the application logs or [file an issue](https://githu
    >     C:/Users/\<USERNAME\>**[^1]**/AppData/Local/Soft64.fr/SudokuFX
 >- Linux:
    >
-   >     /home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX
+   >     /home/\<USERNAME\>**[^1]**/.local/share/Soft64.fr/SudokuFX **[^2]**
 >- MacOS:
    >
    >     /Users/\<USERNAME\>**[^1]**/Library/Application Support/Soft64.fr/SudokuFX
 
 [^1]:Replace \<USERNAME\> with your actual username on the system.
+[^2]: `.local/share` may be replaced by `$XDG_DATA_HOME` if defined.
 
 ## Project
 

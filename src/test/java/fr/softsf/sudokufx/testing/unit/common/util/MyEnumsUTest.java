@@ -7,7 +7,7 @@ package fr.softsf.sudokufx.testing.unit.common.util;
 
 import org.junit.jupiter.api.Test;
 
-import static fr.softsf.sudokufx.common.enums.Paths.*;
+import static fr.softsf.sudokufx.common.enums.AppPaths.*;
 import static fr.softsf.sudokufx.common.enums.ToastLevels.*;
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
