@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.common.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.util.Objects;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BackgroundImage;
@@ -94,8 +95,9 @@ public class ImageUtils {
      *
      * @param file the image file; must not be {@code null}
      * @return ImageMeta containing width, height and scaleFactor
-     * @throws IllegalArgumentException if file is {@code null}
-     * @throws RuntimeException if the image cannot be read or format is unsupported
+     * @throws IllegalArgumentException if file is {@code null}, cannot be opened as image stream,
+     *     has unsupported format, invalid structure, or zero dimensions
+     * @throws UncheckedIOException if an I/O error occurs while reading the image file
      */
     public ImageMeta getImageMeta(File file) {
         if (file == null) {
@@ -125,10 +127,13 @@ public class ImageUtils {
             }
             String msg = "Unsupported image format: " + file.getName();
             LOG.error("██ {}", msg);
-            throw new RuntimeException(msg);
+            throw new IllegalArgumentException(msg);
         } catch (IOException e) {
-            LOG.error("██ Failed to read image: {} - {}", file.getName(), e.getMessage(), e);
-            throw new RuntimeException("Failed to read image: " + file.getName(), e);
+            throw new UncheckedIOException(
+                    "Failed to read image: " + file.getName() + " - " + e.getMessage(), e);
+        } catch (Exception e) {
+            throw new IllegalArgumentException(
+                    "Failed to process image: " + file.getName() + " - " + e.getMessage(), e);
         }
     }
 
