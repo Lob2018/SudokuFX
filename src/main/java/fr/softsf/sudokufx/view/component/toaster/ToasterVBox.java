@@ -43,7 +43,8 @@ public final class ToasterVBox extends VBox {
      * @param visibleText The text content of the toast
      * @param detailedText The detailed content of the text added to the system clipboard copy
      * @param duration The display duration of the toast in milliseconds
-     * @param requestFocus Whether the toast should request focus upon being shown.
+     * @param requestFocus ⚠ Non WCAG-compliant : Whether the toast should request focus upon being
+     *     shown.
      */
     @FXML
     public void addToastWithDuration(
@@ -71,7 +72,8 @@ public final class ToasterVBox extends VBox {
      * @param visibleText The text content of the toast
      * @param detailedText The detailed content of the text added to the system clipboard copy
      * @param toastLevel The severity level of the toast (info, warn, error)
-     * @param requestFocus Whether the toast should request focus upon being shown.
+     * @param requestFocus ⚠ Non WCAG-compliant : Whether the toast should request focus upon being
+     *     shown.
      */
     @FXML
     public void addToast(

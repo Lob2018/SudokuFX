@@ -54,7 +54,7 @@ public class ToasterService {
      * @throws NullPointerException if visibleText or detailedText is null
      */
     public void showInfo(String visibleText, String detailedText) throws NullPointerException {
-        sendToast(visibleText, detailedText, ToastLevels.INFO, false);
+        sendToast(visibleText, detailedText, ToastLevels.INFO);
     }
 
     /**
@@ -63,7 +63,7 @@ public class ToasterService {
      * @throws NullPointerException if visibleText or detailedText is null
      */
     public void showWarning(String visibleText, String detailedText) throws NullPointerException {
-        sendToast(visibleText, detailedText, ToastLevels.WARN, false);
+        sendToast(visibleText, detailedText, ToastLevels.WARN);
     }
 
     /**
@@ -72,25 +72,25 @@ public class ToasterService {
      * @throws NullPointerException if visibleText or detailedText is null
      */
     public void showError(String visibleText, String detailedText) throws NullPointerException {
-        sendToast(visibleText, detailedText, ToastLevels.ERROR, true);
+        sendToast(visibleText, detailedText, ToastLevels.ERROR);
     }
 
     /**
-     * Creates a ToastData and publishes it to the toastRequest property.
+     * Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire
+     * even if identical to the previous value.
      *
      * @param visibleText The text displayed in the toast
      * @param detailedText The detailed text for clipboard copy
      * @param level The severity level of the toast
-     * @param requestFocus Whether the toast should request focus
      * @throws NullPointerException if visibleText or detailedText is null
      */
-    private void sendToast(
-            String visibleText, String detailedText, ToastLevels level, boolean requestFocus) {
+    private void sendToast(String visibleText, String detailedText, ToastLevels level) {
+        toastRequest.set(null);
         toastRequest.set(
                 new ToastData(
                         Objects.requireNonNull(visibleText, "visibleText must not be null"),
                         Objects.requireNonNull(detailedText, "detailedText must not be null"),
                         level,
-                        requestFocus));
+                        false));
     }
 }
