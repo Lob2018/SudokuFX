@@ -85,6 +85,7 @@ public final class MainView implements IMainView {
     private static final PseudoClass OPAQUE_MODE_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("opaque-mode");
     private static final int AUTO_HIDE_MINI_MENU_DELAY_MS = 5_000;
+    private static final int MAX_STARS_PERCENTAGE = 100;
 
     private Stage primaryStage;
 
@@ -507,14 +508,17 @@ public final class MainView implements IMainView {
      * Sets up bindings between the solve menu UI components and menuSolveViewModel.
      *
      * <p>Binds accessibility texts, tooltips, role descriptions, and labels, and synchronizes stars
-     * percentage from menuLevelViewModel to menuSolveViewModel.
+     * percentage from menuLevelViewModel to menuSolveViewModel (bindBidirectional).
      */
     private void solveMenuInitialization() {
-        menuSolveViewModel.solvePercentageProperty().bind(menuLevelViewModel.percentageProperty());
+        menuSolveViewModel
+                .solvePercentageProperty()
+                .bindBidirectional(menuLevelViewModel.percentageProperty());
         menuSolveHBoxPossibilities
                 .getPercentage()
                 .bind(menuSolveViewModel.solvePercentageProperty());
         menuSolveHBoxPossibilities.setVisible(true);
+
         bindingConfigurator.configureButton(
                 menuMaxiButtonSolve,
                 null,
@@ -1030,6 +1034,13 @@ public final class MainView implements IMainView {
     public void handleRestoreGridAndMenuMaxiShow(ActionEvent event) {
         restoreCurrentGridLevelFromModel();
         handleMenuMaxiShow(event);
+    }
+
+    /** Clear the grid in solve submenu. */
+    public void handleSolveClearGrid() {
+        gridViewModel.clearGrid();
+        menuSolveViewModel.setSolvePercentage(MAX_STARS_PERCENTAGE);
+        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
     /**
