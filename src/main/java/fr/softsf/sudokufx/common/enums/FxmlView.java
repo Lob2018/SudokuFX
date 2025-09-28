@@ -12,8 +12,8 @@ package fr.softsf.sudokufx.common.enums;
  * loading.
  */
 public enum FxmlView {
-    MAIN("main/main-view"),
-    CRASH_SCREEN("crash-screen-view");
+    MAIN("main/main-view.fxml"),
+    CRASH_SCREEN("crash-screen-view.fxml");
 
     private final String fxmlPath;
 
