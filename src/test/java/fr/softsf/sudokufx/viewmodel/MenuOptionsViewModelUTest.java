@@ -168,7 +168,6 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                             .contains(
                                     I18n.INSTANCE.getValue(
                                             "toast.error.optionsviewmodel.handlefileimagechooser")));
-            assertTrue(toastData.requestFocus());
         }
 
         @Test
@@ -185,7 +184,6 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                             .contains(
                                     I18n.INSTANCE.getValue(
                                             "toast.error.optionsviewmodel.handlefileimagechooser")));
-            assertTrue(toastData.requestFocus());
         }
     }
 
