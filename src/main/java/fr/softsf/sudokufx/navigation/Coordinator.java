@@ -56,7 +56,6 @@ public class Coordinator {
     @Autowired private ToasterService toasterService;
 
     private static final Logger LOG = LoggerFactory.getLogger(Coordinator.class);
-    public static final String FXML_EXTENSION = ".fxml";
 
     /** The main JavaFX scene managed by this coordinator. */
     private Scene defaultScene;
@@ -122,8 +121,8 @@ public class Coordinator {
     }
 
     /**
-     * Loads the specified FXML file (without the ".fxml" extension), sets it as the root of the
-     * current JavaFX scene, and returns its controller.
+     * Loads the specified FXML file, sets it as the root of the current JavaFX scene, and returns
+     * its controller.
      *
      * <p>This method uses {@link FXMLLoader} together with Spring's {@link ApplicationContext} to
      * instantiate the controller and inject Spring-managed beans **if the context is available**.
@@ -140,7 +139,7 @@ public class Coordinator {
      * logged. The application is terminated via {@link Platform#exit()} in case of critical errors.
      *
      * @param <T> the controller type
-     * @param fxml the FXML filename without extension; must not be null or blank
+     * @param fxml the FXML filename; must not be null or blank
      * @return the controller instance, or {@code null} if loading fails or Spring context is
      *     unavailable
      * @throws IllegalArgumentException if {@code fxml} is null or blank
@@ -148,7 +147,7 @@ public class Coordinator {
     public <T> T setRootByFXMLName(final String fxml) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 fxml, "Fxml must not be null or blank, but was " + fxml);
-        String path = AppPaths.RESOURCES_FXML_PATH.getPath() + fxml + FXML_EXTENSION;
+        String path = AppPaths.RESOURCES_FXML_PATH.getPath() + fxml;
         try {
             fxmlLoader.setRoot(null);
             fxmlLoader.setController(null);
