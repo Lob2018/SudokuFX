@@ -20,7 +20,7 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 public final class DynamicFontSize {
 
     private static final double FONT_SIZE_RATIO = 0.0219;
-    private static final Duration DEBOUNCE_DELAY = Duration.millis(500);
+    private static final Duration DEBOUNCE_DELAY = Duration.millis(50);
     private final Scene scene;
     private final PauseTransition debounce;
     private double currentFontSize;
