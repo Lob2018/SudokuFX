@@ -47,11 +47,11 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
   - [Build with](#build-with)
   - [Required Application Properties to Run](#required-application-properties-to-run)
   - [How to develop on Windows with IntelliJ IDEA](#how-to-develop-on-windows-with-intellij-idea)
+    - [Optional runtime monitoring with VisualVM](#optional-runtime-monitoring-with-visualvm-dev-only)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Contributors](#contributors)
 - [Licence](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)
-
 
 ## System requirements
 
@@ -348,6 +348,17 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
                 3. Manage your benchmark tests in the `fr.softsf.sudokufx.benchmark` package
                 4. **Once benchmarking is complete, uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`
                    and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`**
+
+#### Optional runtime monitoring with VisualVM (DEV only)
+
+- Install [VisualVM](https://visualvm.github.io/) and the following plugins:
+    - **VisualVM-MBeans**
+      Enables real-time monitoring of JMX-exposed metrics (e.g., internal HikariCP connection pool metrics) via the MBeans tab
+      • Add `config.setRegisterMbeans(true)` in HikariCP configuration or `config.properties`
+      • Plugin adds a new **MBeans** tab
+    - **VisualGC**
+      Visualizes JVM memory regions and garbage collection activity; useful for diagnosing memory usage and detecting leaks
+      • Plugin adds a new **Visual GC** tab
 
 ## Contributing
 
