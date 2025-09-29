@@ -354,11 +354,11 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 - Install [VisualVM](https://visualvm.github.io/) and the following plugins:
     - **VisualVM-MBeans**
       Enables real-time monitoring of JMX-exposed metrics (e.g., internal HikariCP connection pool metrics) via the MBeans tab
-      • Add `config.setRegisterMbeans(true)` in HikariCP configuration or `config.properties`
-      • Plugin adds a new **MBeans** tab
+      - Add `config.setRegisterMbeans(true)` in HikariCP configuration or `config.properties`
+      - Plugin adds a new **MBeans** tab
     - **VisualGC**
       Visualizes JVM memory regions and garbage collection activity; useful for diagnosing memory usage and detecting leaks
-      • Plugin adds a new **Visual GC** tab
+      - Plugin adds a new **Visual GC** tab
 
 ## Contributing
 
