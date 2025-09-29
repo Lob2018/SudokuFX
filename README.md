@@ -360,6 +360,12 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
       Visualizes JVM memory regions and garbage collection activity; useful for diagnosing memory usage and detecting leaks
       - Plugin adds a new **Visual GC** tab
 
+- Use the dedicated Maven profile `visualvm-monitoring` to launch the application with JMX and GC logging enabled
+    - Profile declared in `pom.xml`
+    - Run Configuration: `SudokuFX run with VisualVM Monitoring`
+        - Command: `clean javafx:run -Pvisualvm-monitoring -f pom.xml`
+        - Enables VisualVM sampling and MBeans access via JMX (`localhost:9010`)
+
 ## Contributing
 
 We welcome all contributions to SudokuFX — whether it's bug fixes, new features, documentation, or ideas.

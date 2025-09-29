@@ -484,6 +484,35 @@
     </plugins>
   </build>
   <profiles>
+    <!-- JavaFX plugin with JVM flags for VisualVM sampling and GC analysis -->
+    <profile>
+      <id>visualvm-monitoring</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-maven-plugin</artifactId>
+            <version>0.0.8</version>
+            <configuration>
+              <jlinkVerbose>true</jlinkVerbose>
+              <mainClass>${start-class}</mainClass>
+              <options>
+                <option>-Dapp.name=${project.artifactId}</option>
+                <option>-Dapp.version=${project.version}</option>
+                <option>-Dapp.organization=${project.organization.name}</option>
+                <option>-Dapp.license=${license.name}</option>
+                <option>-Dcom.sun.management.jmxremote</option>
+                <option>-Dcom.sun.management.jmxremote.port=9010</option>
+                <option>-Dcom.sun.management.jmxremote.authenticate=false</option>
+                <option>-Dcom.sun.management.jmxremote.ssl=false</option>
+                <option>-Xlog:gc</option>
+                <option>-XX:+PrintGCDetails</option>
+              </options>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
     <!-- Exec plugin to generate JMH benchmarks for id:jmh (see the README for instructions) -->
     <profile>
       <id>jmh</id>
