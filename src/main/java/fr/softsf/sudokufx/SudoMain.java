@@ -23,6 +23,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.gluonhq.ignite.spring.SpringContext;
 
+import fr.softsf.sudokufx.common.enums.FxmlView;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.LogBackTxt;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
@@ -52,9 +53,7 @@ import fr.softsf.sudokufx.view.SplashScreenView;
 public class SudoMain extends Application {
 
     private static final Logger LOG = LoggerFactory.getLogger(SudoMain.class);
-    private static final long MINIMUM_TRANSITION_DELAY_MS = 1000L;
-    public static final String MAIN_VIEW_FXML_NAME = "main/main-view";
-    public static final String CRASH_SCREEN_VIEW = "crash-screen-view";
+    private static final long MINIMUM_TRANSITION_DELAY_MS = 500L;
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
@@ -151,7 +150,7 @@ public class SudoMain extends Application {
      * initialization task completes successfully.
      *
      * @param startTime The time (in milliseconds) when the initialization started. This is used to
-     *     apply the minimum delay of 1s before starting the transition.
+     *     apply the minimum delay before starting the transition.
      */
     private void handleSpringContextTaskSuccess(long startTime) {
         try {
@@ -160,7 +159,7 @@ public class SudoMain extends Application {
                     Math.max(
                             0,
                             MINIMUM_TRANSITION_DELAY_MS - (System.currentTimeMillis() - startTime));
-            createViewTransition(MAIN_VIEW_FXML_NAME, minimumTimelapse).play();
+            createViewTransition(FxmlView.MAIN.getPath(), minimumTimelapse).play();
         } catch (Exception ex) {
             LOG.error(
                     "██ Exception caught after Spring Context initialization with FXML : {},"
@@ -206,7 +205,7 @@ public class SudoMain extends Application {
                 LOG.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
                 logSqlInvalidAuthorization(
                         (Exception) throwable, sqlInvalidAuthorizationSpecException);
-                PauseTransition pause = createViewTransition(CRASH_SCREEN_VIEW, 0);
+                PauseTransition pause = createViewTransition(FxmlView.CRASH_SCREEN.getPath(), 0);
                 pause.play();
             }
         } catch (Exception ex) {
