@@ -363,8 +363,9 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 - Use the dedicated Maven profile `visualvm-monitoring` to launch the application with JMX and GC logging enabled
     - Profile declared in `pom.xml`
     - Run Configuration: `SudokuFX run with VisualVM Monitoring`
-        - Command: `clean javafx:run -Pvisualvm-monitoring -f pom.xml`
-        - Enables VisualVM sampling and MBeans access via JMX (`localhost:9010`)
+      - Command: `clean javafx:run -Pvisualvm-monitoring -f pom.xml`
+      - Enables VisualVM sampling and MBeans access via JMX (`localhost:9010`)
+      - In VisualVM, **Add JMX Connection for localhost:9010** in order to access full JMX metrics, otherwise only a local jvmstat connection is available.
 
 ## Contributing
 
