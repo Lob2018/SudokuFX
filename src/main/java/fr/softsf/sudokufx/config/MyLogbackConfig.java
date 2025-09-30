@@ -17,6 +17,8 @@ import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.joran.JoranConfigurator;
 import ch.qos.logback.core.joran.spi.JoranException;
 import ch.qos.logback.core.util.StatusPrinter2;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.exception.LogbackConfigurationException;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 
 import static fr.softsf.sudokufx.common.enums.AppPaths.CONFIG_LOGBACK_INVALID_PATH_FOR_TESTS;
@@ -79,10 +81,10 @@ public class MyLogbackConfig {
     /**
      * Configures Logback using the specified configuration file.
      *
-     * @return The configured LoggerContext
+     * @return the configured {@link LoggerContext}
      * @throws IllegalArgumentException if the configuration resource cannot be found (inputStream
      *     is null)
-     * @throws RuntimeException if there's an error during configuration
+     * @throws LogbackConfigurationException if an error occurs during Logback configuration
      */
     LoggerContext configureLogback() {
         LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
@@ -95,7 +97,8 @@ public class MyLogbackConfig {
             context.reset();
             configurator.doConfigure(inputStream);
         } catch (JoranException | IOException e) {
-            throw new RuntimeException(e);
+            throw ExceptionTools.INSTANCE.logAndInstantiateLogbackConfig(
+                    "Failed to configure Logback with " + logBackPath, e);
         }
         return context;
     }

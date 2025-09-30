@@ -92,4 +92,31 @@ public enum ExceptionTools {
             return new ResourceLoadException(safeMessage, cause);
         }
     }
+
+    /**
+     * Logs an error and returns a {@link LogbackConfigurationException}.
+     *
+     * <p>The exception is instantiated (not thrown) to allow flexible handling by the caller.
+     *
+     * @param message descriptive message of the failure; may be null or blank
+     * @param cause the original exception that triggered the failure; may be null
+     * @return a new {@link LogbackConfigurationException} instance
+     */
+    public LogbackConfigurationException logAndInstantiateLogbackConfig(
+            String message, Throwable cause) {
+        String safeMessage =
+                StringUtils.isBlank(message)
+                        ? "Logback configuration failed with no message"
+                        : message;
+        if (Objects.isNull(cause)) {
+            LOG.error("██ Logback configuration failed: {}. Cause: null", safeMessage);
+        } else {
+            LOG.error(
+                    "██ Logback configuration failed: {}. Cause: {}",
+                    safeMessage,
+                    cause.getMessage(),
+                    cause);
+        }
+        return new LogbackConfigurationException(safeMessage, cause);
+    }
 }
