@@ -24,7 +24,8 @@ import javafx.util.Duration;
 public final class SpinnerGridPane extends GridPane {
 
     private static final Duration DEFAULT_SECOND_PHASE_DELAY = Duration.seconds(.5);
-    private final Animation spinnerAnimation1, spinnerAnimation2;
+    private final Animation spinnerAnimation1;
+    private final Animation spinnerAnimation2;
 
     /**
      * Constructs a SpinnerGridPane with two animated text icons centered in the pane. Initializes
