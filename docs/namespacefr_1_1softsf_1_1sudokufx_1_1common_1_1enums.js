@@ -2,6 +2,7 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums =
 [
     [ "AppPaths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths" ],
     [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level" ],
+    [ "FxmlView", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view" ],
     [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n" ],
     [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt" ],
     [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex" ],

@@ -13,6 +13,7 @@ var annotated_dup =
             [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums.html", [
               [ "AppPaths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths" ],
               [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level" ],
+              [ "FxmlView", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view" ],
               [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n" ],
               [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt" ],
               [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex" ],
@@ -24,7 +25,9 @@ var annotated_dup =
             ] ],
             [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html", [
               [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools" ],
+              [ "FolderCreationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception" ],
               [ "JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator" ],
+              [ "LogbackConfigurationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception" ],
               [ "ResourceLoadException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception" ]
             ] ],
             [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html", [
@@ -160,6 +163,7 @@ var annotated_dup =
               [ "common", null, [
                 [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums.html", [
                   [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test" ],
+                  [ "FxmlViewUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_fxml_view_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_fxml_view_u_test" ],
                   [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test" ],
                   [ "OsNameUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test" ],
                   [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test" ]

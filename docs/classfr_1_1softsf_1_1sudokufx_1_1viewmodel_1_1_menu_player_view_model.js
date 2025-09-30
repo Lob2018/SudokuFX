@@ -39,6 +39,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model =
     [ "maxiPlayerTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a17f217482958b028bbce3b40fe608e3b", null ],
     [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aed045d4bae342fcd3bc066272c520beb", null ],
     [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a8ed723a1864b6ad561268adcf3b3f6a4", null ],
+    [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a63a39943e55f6f690e39ecbbbd35239d", null ],
     [ "MENU_PLAYER_BUTTON_PLAYER_ACCESSIBILITY", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a1e967796000515ab434a0e940e9a1866", null ],
     [ "newAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a7dff50edf66738581a042ec046e55e66", null ],
     [ "newRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a67174a752b88187e55e8a740e2be55ca", null ],

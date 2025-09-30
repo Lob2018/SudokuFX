@@ -41,7 +41,8 @@ public class MenuPlayerViewModel {
             "menu.accessibility.role.description.opened";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
-    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION = "menu.accessibility.role.description.submenu.option";
+    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION =
+            "menu.accessibility.role.description.submenu.option";
 
     private final PlayerStateHolder playerStateHolder;
 
@@ -156,7 +157,7 @@ public class MenuPlayerViewModel {
                 () ->
                         I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION),
+                                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION),
                 I18n.INSTANCE.localeProperty());
     }
 

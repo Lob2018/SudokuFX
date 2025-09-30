@@ -99,7 +99,6 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordi
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -152,11 +151,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a67f2ba8f85685181dea0c4a2263a61dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the application's language between French ("FR") and English ("EN").  <br /></td></tr>
 <tr class="separator:a67f2ba8f85685181dea0c4a2263a61dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:adde9efab032c0e85f885f5ad7954be1d" id="r_adde9efab032c0e85f885f5ad7954be1d"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adde9efab032c0e85f885f5ad7954be1d">FXML_EXTENSION</a> = &quot;.fxml&quot;</td></tr>
-<tr class="separator:adde9efab032c0e85f885f5ad7954be1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
 <tr class="memitem:a64e23a6257dc42929da8e6ee620fdca7" id="r_a64e23a6257dc42929da8e6ee620fdca7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64e23a6257dc42929da8e6ee620fdca7">exitPlatform</a> ()</td></tr>
@@ -172,7 +166,7 @@ Package Functions</h2></td></tr>
 <tr class="memdesc:ae4f5d854f1b21d991fdfce74daf49d4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing only: injects a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a></code>.  <br /></td></tr>
 <tr class="separator:ae4f5d854f1b21d991fdfce74daf49d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76beb2414cb9e9e68181f08fd930f0b9" id="r_a76beb2414cb9e9e68181f08fd930f0b9"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76beb2414cb9e9e68181f08fd930f0b9">setRootByFXMLName</a> (final String fxml)</td></tr>
-<tr class="memdesc:a76beb2414cb9e9e68181f08fd930f0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified FXML file (without the ".fxml" extension), sets it as the root of the current JavaFX scene, and returns its controller.  <br /></td></tr>
+<tr class="memdesc:a76beb2414cb9e9e68181f08fd930f0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the specified FXML file, sets it as the root of the current JavaFX scene, and returns its controller.  <br /></td></tr>
 <tr class="separator:a76beb2414cb9e9e68181f08fd930f0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa72cc768af7602e1627d020ad3d135a8" id="r_aa72cc768af7602e1627d020ad3d135a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa72cc768af7602e1627d020ad3d135a8">setToasterService</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a> <a class="el" href="#a564c946156873a27ebce99a138931aca">toasterService</a>)</td></tr>
 <tr class="memdesc:aa72cc768af7602e1627d020ad3d135a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">For testing only: injects a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a></code>.  <br /></td></tr>
@@ -581,7 +575,7 @@ Manage player's language and provide host system integrations (URLs, local files
 </table>
 </div><div class="memdoc">
 
-<p>Loads the specified FXML file (without the ".fxml" extension), sets it as the root of the current JavaFX scene, and returns its controller. </p>
+<p>Loads the specified FXML file, sets it as the root of the current JavaFX scene, and returns its controller. </p>
 <p>This method uses <code><a class="el" href="">FXMLLoader</a></code> together with Spring's <code><a class="el" href="">ApplicationContext</a></code> to instantiate the controller and inject Spring-managed beans <b>if the context is available</b>.</p>
 <p><b>Important:</b> If the Spring application context is not yet initialized, or if a bean failed to initialize, the <code class="JavaDocCode">applicationContext</code> field will be <code class="JavaDocCode">null</code>. In that case, the controller is instantiated by <code><a class="el" href="">FXMLLoader</a></code> alone, without Spring injection. This prevents a <code><a class="el" href="">NullPointerException</a></code> when calling <code class="JavaDocCode"><br/>
 applicationContext.getBean(...)</code>.</p>
@@ -590,7 +584,7 @@ applicationContext.getBean(...)</code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">&lt;T&gt;</td><td>the controller type </td></tr>
-    <tr><td class="paramname">fxml</td><td>the FXML filename without extension; must not be null or blank </td></tr>
+    <tr><td class="paramname">fxml</td><td>the FXML filename; must not be null or blank </td></tr>
   </table>
   </dd>
 </dl>
@@ -779,28 +773,6 @@ applicationContext.getBean(...)</code>.</p>
 
 </div>
 </div>
-<a id="adde9efab032c0e85f885f5ad7954be1d" name="adde9efab032c0e85f885f5ad7954be1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adde9efab032c0e85f885f5ad7954be1d">&#9670;&#160;</a></span>FXML_EXTENSION</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final String fr.softsf.sudokufx.navigation.Coordinator.FXML_EXTENSION = &quot;.fxml&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="abcaae859838b7d23fb19c4cded75d16a" name="abcaae859838b7d23fb19c4cded75d16a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abcaae859838b7d23fb19c4cded75d16a">&#9670;&#160;</a></span>fxmlLoader</h2>
 
@@ -968,7 +940,7 @@ applicationContext.getBean(...)</code>.</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html">navigation</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html">Coordinator</a></li>
-    <li class="footer">Generated on Thu Sep 25 2025 19:44:51 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Sep 30 2025 18:34:20 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

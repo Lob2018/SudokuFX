@@ -154,7 +154,7 @@
 <text text-anchor="start" x="201.38" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">void sendToast(String</text>
 <text text-anchor="start" x="201.38" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00"> visibleText, String</text>
 <text text-anchor="start" x="201.38" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00"> detailedText, ToastLevels</text>
-<text text-anchor="start" x="201.38" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00"> level, boolean requestFocus)</text>
+<text text-anchor="start" x="201.38" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00"> level)</text>
 <polygon fill="#666666" stroke="#666666" points="187.38,-926 187.38,-926 371.88,-926 371.88,-926 187.38,-926"/>
 <polygon fill="#666666" stroke="#666666" points="187.38,-870 187.38,-870 199.38,-870 199.38,-870 187.38,-870"/>
 <polygon fill="#666666" stroke="#666666" points="199.38,-870 199.38,-870 371.88,-870 371.88,-870 199.38,-870"/>

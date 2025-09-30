@@ -2,6 +2,7 @@ var dir_12779a24be85975a4455f90e90173dd6 =
 [
     [ "AppPaths.java", "_app_paths_8java.html", "_app_paths_8java" ],
     [ "DifficultyLevel.java", "_difficulty_level_8java.html", "_difficulty_level_8java" ],
+    [ "FxmlView.java", "_fxml_view_8java.html", "_fxml_view_8java" ],
     [ "I18n.java", "_i18n_8java.html", "_i18n_8java" ],
     [ "LogBackTxt.java", "_log_back_txt_8java.html", "_log_back_txt_8java" ],
     [ "MyRegex.java", "_my_regex_8java.html", "_my_regex_8java" ],

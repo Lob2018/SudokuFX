@@ -107,49 +107,55 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dy
 </div><!--header-->
 <div class="contents">
 
-<p>Manages dynamic font sizing based on the dimensions of a JavaFX Scene.
+<p>Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.common.util.DynamicFontSize:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size__coll__graph.svg" width="203" height="235"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size__coll__graph.svg" width="211" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4da97a537f85a8f1dbb1ecc2e16c44f8" id="r_a4da97a537f85a8f1dbb1ecc2e16c44f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4da97a537f85a8f1dbb1ecc2e16c44f8">DynamicFontSize</a> (Scene <a class="el" href="#a0fbaa90a87ac30130bf43611af8fea4b">scene</a>)</td></tr>
-<tr class="memdesc:a4da97a537f85a8f1dbb1ecc2e16c44f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene.">DynamicFontSize</a> instance and initializes Scene listeners for testing purposes only.  <br /></td></tr>
+<tr class="memdesc:a4da97a537f85a8f1dbb1ecc2e16c44f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.">DynamicFontSize</a> instance for the specified Scene.  <br /></td></tr>
 <tr class="separator:a4da97a537f85a8f1dbb1ecc2e16c44f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8db1ddff5ceeebfb60a76b8168a5f7d" id="r_ab8db1ddff5ceeebfb60a76b8168a5f7d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8db1ddff5ceeebfb60a76b8168a5f7d">getCurrentFontSize</a> ()</td></tr>
+<tr class="memdesc:ab8db1ddff5ceeebfb60a76b8168a5f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current calculated font size in pixels.  <br /></td></tr>
 <tr class="separator:ab8db1ddff5ceeebfb60a76b8168a5f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f" id="r_a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a047fbfb7e3d7b9e30ddeaefbeb3c9a3f">updateFontSize</a> ()</td></tr>
-<tr class="memdesc:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the font size based on the current Scene dimensions.  <br /></td></tr>
+<tr class="memdesc:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the font size of the scene's root node using a dynamic stylesheet.  <br /></td></tr>
 <tr class="separator:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aa3d91d324b478e27405559ffe52b04de" id="r_aa3d91d324b478e27405559ffe52b04de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3d91d324b478e27405559ffe52b04de">initialize</a> ()</td></tr>
-<tr class="memdesc:aa3d91d324b478e27405559ffe52b04de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the dynamic font size functionality.  <br /></td></tr>
+<tr class="memdesc:aa3d91d324b478e27405559ffe52b04de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up dynamic font resizing by adding listeners to the scene's width and height.  <br /></td></tr>
 <tr class="separator:aa3d91d324b478e27405559ffe52b04de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a57007497ac42d19ba42d8122b8cba38e" id="r_a57007497ac42d19ba42d8122b8cba38e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57007497ac42d19ba42d8122b8cba38e">currentFontSize</a></td></tr>
-<tr class="memdesc:a57007497ac42d19ba42d8122b8cba38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current font size calculated based on the Scene's dimensions.  <br /></td></tr>
+<tr class="memitem:a57007497ac42d19ba42d8122b8cba38e" id="r_a57007497ac42d19ba42d8122b8cba38e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57007497ac42d19ba42d8122b8cba38e">currentFontSize</a> = -1</td></tr>
 <tr class="separator:a57007497ac42d19ba42d8122b8cba38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb15ae13b6b053bee2b87f85e2d08c2" id="r_a8fb15ae13b6b053bee2b87f85e2d08c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fb15ae13b6b053bee2b87f85e2d08c2">dynamicStylesheetIndex</a> = -1</td></tr>
+<tr class="separator:a8fb15ae13b6b053bee2b87f85e2d08c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fbaa90a87ac30130bf43611af8fea4b" id="r_a0fbaa90a87ac30130bf43611af8fea4b"><td class="memItemLeft" align="right" valign="top">final Scene&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fbaa90a87ac30130bf43611af8fea4b">scene</a></td></tr>
 <tr class="separator:a0fbaa90a87ac30130bf43611af8fea4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
+<tr class="memitem:af2623ba6bf01a58e60f9f071b70b417d" id="r_af2623ba6bf01a58e60f9f071b70b417d"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2623ba6bf01a58e60f9f071b70b417d">EPSILON</a> = 0.01</td></tr>
+<tr class="separator:af2623ba6bf01a58e60f9f071b70b417d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0c423b995a530d5a430fd60d60d8ba4" id="r_af0c423b995a530d5a430fd60d60d8ba4"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0c423b995a530d5a430fd60d60d8ba4">FONT_SIZE_RATIO</a> = 0.0219</td></tr>
 <tr class="separator:af0c423b995a530d5a430fd60d60d8ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748f6ccae2053b8487ddd23ba51a541f" id="r_a748f6ccae2053b8487ddd23ba51a541f"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a748f6ccae2053b8487ddd23ba51a541f">ROOT_FONT_CSS_PREFIX</a> = &quot;data:text/css,.root { -fx-font-size: &quot;</td></tr>
+<tr class="separator:a748f6ccae2053b8487ddd23ba51a541f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Manages dynamic font sizing based on the dimensions of a JavaFX Scene. </p>
-<p>This class automatically adjusts the font size of the Scene's root node when the Scene's dimensions change. </p>
+<div class="textblock"><p>Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions. </p>
+<p>Uses a debounced dynamic stylesheet to minimize memory allocations and reduce GC pressure. Updates occur only when the font size changes significantly, leveraging JavaFX's stylesheet caching. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4da97a537f85a8f1dbb1ecc2e16c44f8" name="a4da97a537f85a8f1dbb1ecc2e16c44f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4da97a537f85a8f1dbb1ecc2e16c44f8">&#9670;&#160;</a></span>DynamicFontSize()</h2>
@@ -166,7 +172,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Manages dynamic font sizing based on the dimensions of a JavaFX Scene.">DynamicFontSize</a> instance and initializes Scene listeners for testing purposes only. </p>
+<p>Constructs a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.">DynamicFontSize</a> instance for the specified Scene. </p>
+<p>Attaches listeners to the scene's width and height properties to automatically update the font size when the scene is resized.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">scene</td><td>the JavaFX Scene to observe; must not be null </td></tr>
@@ -175,7 +182,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if the scene is null, with logging performed via <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html" title="Utility enum for handling and analyzing exceptions.">ExceptionTools</a> </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if the scene is null, with logging via <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html" title="Utility enum for handling and analyzing exceptions.">ExceptionTools</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -205,6 +212,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the current calculated font size in pixels. </p>
+<dl class="section return"><dt>Returns</dt><dd>current font size </dd></dl>
+
 </div>
 </div>
 <a id="aa3d91d324b478e27405559ffe52b04de" name="aa3d91d324b478e27405559ffe52b04de"></a>
@@ -230,8 +240,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initializes the dynamic font size functionality. </p>
-<p>This method sets up listeners for the scene's width and height properties. When the scene's dimensions change, the <code><a class="el" href="#a047fbfb7e3d7b9e30ddeaefbeb3c9a3f">updateFontSize()</a></code> method is called to adjust the font size dynamically. </p>
+<p>Sets up dynamic font resizing by adding listeners to the scene's width and height. </p>
+<p>An initial font size update is performed immediately after attaching the listeners. </p>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
@@ -257,8 +267,9 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Updates the font size based on the current Scene dimensions. </p>
-<p>The font size is calculated as 2.19% of the smaller dimension (width or height) of the Scene. This method is called automatically when the Scene's dimensions change. </p>
+<p>Updates the font size of the scene's root node using a dynamic stylesheet. </p>
+<p>The new font size is applied only if it differs by at least <code><a class="el" href="#af2623ba6bf01a58e60f9f071b70b417d">EPSILON</a></code> from the current size. This reduces unnecessary stylesheet updates and memory allocations.</p>
+<p>A dynamic stylesheet is created or updated, leveraging JavaFX's caching mechanism for efficiency. The font size is calculated proportionally to the smaller dimension of the scene using <code><a class="el" href="#af0c423b995a530d5a430fd60d60d8ba4">FONT_SIZE_RATIO</a></code>. </p>
 
 </div>
 </div>
@@ -273,7 +284,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double fr.softsf.sudokufx.common.util.DynamicFontSize.currentFontSize</td>
+          <td class="memname">double fr.softsf.sudokufx.common.util.DynamicFontSize.currentFontSize = -1</td>
         </tr>
       </table>
   </td>
@@ -283,7 +294,49 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The current font size calculated based on the Scene's dimensions. </p>
+</div>
+</div>
+<a id="a8fb15ae13b6b053bee2b87f85e2d08c2" name="a8fb15ae13b6b053bee2b87f85e2d08c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb15ae13b6b053bee2b87f85e2d08c2">&#9670;&#160;</a></span>dynamicStylesheetIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.DynamicFontSize.dynamicStylesheetIndex = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2623ba6bf01a58e60f9f071b70b417d" name="af2623ba6bf01a58e60f9f071b70b417d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2623ba6bf01a58e60f9f071b70b417d">&#9670;&#160;</a></span>EPSILON</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final double fr.softsf.sudokufx.common.util.DynamicFontSize.EPSILON = 0.01</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -298,6 +351,28 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">final double fr.softsf.sudokufx.common.util.DynamicFontSize.FONT_SIZE_RATIO = 0.0219</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a748f6ccae2053b8487ddd23ba51a541f" name="a748f6ccae2053b8487ddd23ba51a541f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748f6ccae2053b8487ddd23ba51a541f">&#9670;&#160;</a></span>ROOT_FONT_CSS_PREFIX</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final String fr.softsf.sudokufx.common.util.DynamicFontSize.ROOT_FONT_CSS_PREFIX = &quot;data:text/css,.root { -fx-font-size: &quot;</td>
         </tr>
       </table>
   </td>
@@ -340,7 +415,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html">DynamicFontSize</a></li>
-    <li class="footer">Generated on Thu Sep 25 2025 19:44:51 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Sep 30 2025 18:34:19 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -66,6 +66,8 @@ var hierarchy =
     [ "fr.softsf.sudokufx.testing.unit.service.ui.FileChooserServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html", null ],
     [ "fr.softsf.sudokufx.common.util.FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html", null ],
     [ "fr.softsf.sudokufx.service.ui.FileChooserService.FileType", "enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html", null ],
+    [ "fr.softsf.sudokufx.common.enums.FxmlView", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.common.enums.FxmlViewUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_fxml_view_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", null ],
     [ "fr.softsf.sudokufx.model.Game.GameBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_1_1_game_builder.html", null ],
     [ "fr.softsf.sudokufx.model.GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html", null ],
@@ -211,6 +213,10 @@ var hierarchy =
     [ "fr.softsf.sudokufx.testing.integration.viewmodel.state.PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlaySongTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html", null ],
+    [ "RuntimeException", null, [
+      [ "fr.softsf.sudokufx.common.exception.FolderCreationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html", null ],
+      [ "fr.softsf.sudokufx.common.exception.LogbackConfigurationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html", null ]
+    ] ],
     [ "fr.softsf.sudokufx.common.enums.ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", null ],
     [ "fr.softsf.sudokufx.testing.integration.common.enums.ScreenSizeITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test.html", null ],
     [ "fr.softsf.sudokufx.config.database.SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", null ],

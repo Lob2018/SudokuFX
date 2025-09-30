@@ -9,12 +9,13 @@ import java.io.File;
 import java.nio.file.Path;
 import java.util.stream.Stream;
 
-import fr.softsf.sudokufx.common.exception.FolderCreationException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+
+import fr.softsf.sudokufx.common.exception.FolderCreationException;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.*;
@@ -51,9 +52,7 @@ class OsFolderInitializerUTest {
                 assertThrows(
                         RuntimeException.class,
                         () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
-        assertEquals(
-                "Error when creating folder: " + mockFolder.getPath(),
-                exception.getMessage());
+        assertEquals("Error when creating folder: " + mockFolder.getPath(), exception.getMessage());
         verify(mockFolder).exists();
         verify(mockFolder).mkdirs();
     }
@@ -73,10 +72,12 @@ class OsFolderInitializerUTest {
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new SecurityException("Security violation"));
         when(mockFolder.getAbsolutePath()).thenReturn("/fake/path");
-        RuntimeException exception = assertThrows(
-                RuntimeException.class,
-                () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
-        assertTrue(exception.getMessage().contains("Security error")
+        RuntimeException exception =
+                assertThrows(
+                        RuntimeException.class,
+                        () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
+        assertTrue(
+                exception.getMessage().contains("Security error")
                         || exception.getMessage().contains("folder"),
                 "Expected message to indicate security error or folder creation issue");
         verify(mockFolder).exists();

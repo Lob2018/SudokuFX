@@ -1,9 +1,11 @@
 <map id="src/main/java/fr/softsf/sudokufx/common/util/DynamicFontSize.java" name="src/main/java/fr/softsf/sudokufx/common/util/DynamicFontSize.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="134,5,291,64"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="235,5,392,64"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="5,120,121,147"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,67,97,113,94,109,166,62"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="144,120,280,147"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="215,64,215,104,210,104,210,64"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="305,112,546,155"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="277,62,367,103,365,108,275,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,67,111,116,109,112,238,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="144,112,310,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="290,66,257,103,253,99,286,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="334,120,470,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="342,62,382,107,378,110,338,66"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="494,112,736,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="394,59,537,104,535,109,392,64"/>
 </map>

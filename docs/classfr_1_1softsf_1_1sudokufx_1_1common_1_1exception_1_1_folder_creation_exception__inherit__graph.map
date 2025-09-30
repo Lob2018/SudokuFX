@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.exception.FolderCreationException" name="fr.softsf.sudokufx.common.exception.FolderCreationException">
+<area shape="rect" id="Node000001" title="Runtime exception thrown when a folder cannot be created." alt="" coords="5,123,236,261"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="62,5,180,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,90,123,123,118,123,118,90"/>
+</map>

@@ -36,8 +36,9 @@ var searchData=
   ['role_5fclosed_33',['ROLE_CLOSED',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a850a746a954e67e89876a4e531d7a8ab',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModel']]],
   ['role_5fopened_34',['ROLE_OPENED',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a82de9d6cb1b1520d3ff612e1cd4a19b2',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModel']]],
   ['role_5fsubmenu_5foption_35',['ROLE_SUBMENU_OPTION',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a0b37cdc48c38ef1c1df3b0a610052558',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModel']]],
-  ['rotate_5ffrom_5fangle_36',['ROTATE_FROM_ANGLE',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2b82d397a0c519a3f923935e546412ce',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
-  ['rotate_5fto_5fangle_37',['ROTATE_TO_ANGLE',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a7514cee3625c087bbd9da4e59cc6bfd4',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
-  ['row_38',['row',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a78b1fe91de19200c1ad2fc3c9cb0ef38',1,'fr::softsf::sudokufx::viewmodel::grid::GridCellViewModel']]],
-  ['runinitializationtask_39',['runInitializationTask',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html#a7185e1ba2b9219e85f8308a3425fb26e',1,'fr::softsf::sudokufx::common::util::SpringContextInitializer']]]
+  ['root_5ffont_5fcss_5fprefix_36',['ROOT_FONT_CSS_PREFIX',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a748f6ccae2053b8487ddd23ba51a541f',1,'fr::softsf::sudokufx::common::util::DynamicFontSize']]],
+  ['rotate_5ffrom_5fangle_37',['ROTATE_FROM_ANGLE',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2b82d397a0c519a3f923935e546412ce',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
+  ['rotate_5fto_5fangle_38',['ROTATE_TO_ANGLE',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a7514cee3625c087bbd9da4e59cc6bfd4',1,'fr::softsf::sudokufx::view::SplashScreenView']]],
+  ['row_39',['row',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a78b1fe91de19200c1ad2fc3c9cb0ef38',1,'fr::softsf::sudokufx::viewmodel::grid::GridCellViewModel']]],
+  ['runinitializationtask_40',['runInitializationTask',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html#a7185e1ba2b9219e85f8308a3425fb26e',1,'fr::softsf::sudokufx::common::util::SpringContextInitializer']]]
 ];

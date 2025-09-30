@@ -914,7 +914,7 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="283.69" y="-2354.5" font-family="Helvetica,sans-Serif" font-size="10.00">void sendToast(String</text>
 <text text-anchor="start" x="283.69" y="-2342.5" font-family="Helvetica,sans-Serif" font-size="10.00"> visibleText, String</text>
 <text text-anchor="start" x="283.69" y="-2330.5" font-family="Helvetica,sans-Serif" font-size="10.00"> detailedText, ToastLevels</text>
-<text text-anchor="start" x="283.69" y="-2318.5" font-family="Helvetica,sans-Serif" font-size="10.00"> level, boolean requestFocus)</text>
+<text text-anchor="start" x="283.69" y="-2318.5" font-family="Helvetica,sans-Serif" font-size="10.00"> level)</text>
 <polygon fill="#666666" stroke="#666666" points="269.69,-2602 269.69,-2602 454.19,-2602 454.19,-2602 269.69,-2602"/>
 <polygon fill="#666666" stroke="#666666" points="269.69,-2546 269.69,-2546 281.69,-2546 281.69,-2546 269.69,-2546"/>
 <polygon fill="#666666" stroke="#666666" points="281.69,-2546 281.69,-2546 454.19,-2546 454.19,-2546 281.69,-2546"/>

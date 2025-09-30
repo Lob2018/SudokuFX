@@ -60,7 +60,7 @@ var searchData=
   ['coordinatorutest_57',['CoordinatorUTest',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html',1,'fr::softsf::sudokufx::navigation']]],
   ['coordinatorutest_2ejava_58',['CoordinatorUTest.java',['../_coordinator_u_test_8java.html',1,'']]],
   ['copytoclipboard_59',['copyToClipboard',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html#a195f049dfd2a8adedb7150202b04f807',1,'fr::softsf::sudokufx::view::component::toaster::ToasterVBox']]],
-  ['crash_5fscreen_5fview_60',['CRASH_SCREEN_VIEW',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a15ebb829b7fd626b802071158db12e7b',1,'fr::softsf::sudokufx::SudoMain']]],
+  ['crash_5fscreen_60',['CRASH_SCREEN',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view.html#a831701eec1a92764e87c69b9f5e85a00',1,'fr::softsf::sudokufx::common::enums::FxmlView']]],
   ['crashscreen_5ffont_5fratio_61',['CRASHSCREEN_FONT_RATIO',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a362f4e64a539c303fe9e8afbe86aa9a7',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
   ['crashscreen_5fsize_5fratio_62',['CRASHSCREEN_SIZE_RATIO',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9734099f3b19ee83a9f3ccfd51a56239',1,'fr::softsf::sudokufx::view::CrashScreenView']]],
   ['crashscreen_5fstage_5fratio_63',['CRASHSCREEN_STAGE_RATIO',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49ad75ae1ed688e05c69038c7f5f7173',1,'fr::softsf::sudokufx::view::CrashScreenView']]],

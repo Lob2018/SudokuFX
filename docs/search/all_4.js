@@ -52,5 +52,6 @@ var searchData=
   ['dynamicfontsize_49',['dynamicFontSize',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a709ac37adbaff7acbc20e18366a85239',1,'fr.softsf.sudokufx.navigation.Coordinator.dynamicFontSize'],['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6467f71053ff1d307ded7648135fb648',1,'fr.softsf.sudokufx.navigation.CoordinatorUTest.dynamicFontSize'],['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html#abea292008d6c6675f7bfc0dd89b766c3',1,'fr.softsf.sudokufx.testing.e2e.common.util.DynamicFontSizeChangeE2ETest.dynamicFontSize']]],
   ['dynamicfontsize_2ejava_50',['DynamicFontSize.java',['../_dynamic_font_size_8java.html',1,'']]],
   ['dynamicfontsizechangee2etest_51',['DynamicFontSizeChangeE2ETest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html',1,'fr::softsf::sudokufx::testing::e2e::common::util']]],
-  ['dynamicfontsizechangee2etest_2ejava_52',['DynamicFontSizeChangeE2ETest.java',['../_dynamic_font_size_change_e2_e_test_8java.html',1,'']]]
+  ['dynamicfontsizechangee2etest_2ejava_52',['DynamicFontSizeChangeE2ETest.java',['../_dynamic_font_size_change_e2_e_test_8java.html',1,'']]],
+  ['dynamicstylesheetindex_53',['dynamicStylesheetIndex',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a8fb15ae13b6b053bee2b87f85e2d08c2',1,'fr::softsf::sudokufx::common::util::DynamicFontSize']]]
 ];

@@ -170,6 +170,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1a99e6862d927a588ef76899251a631b" id="r_a1a99e6862d927a588ef76899251a631b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a99e6862d927a588ef76899251a631b">handleRestoreGridAndMenuMiniShow</a> ()</td></tr>
 <tr class="memdesc:a1a99e6862d927a588ef76899251a631b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the grid and shows the MINI menu.  <br /></td></tr>
 <tr class="separator:a1a99e6862d927a588ef76899251a631b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0060e7df58c15c5fc435b807a20a5739" id="r_a0060e7df58c15c5fc435b807a20a5739"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0060e7df58c15c5fc435b807a20a5739">handleSolveClearGrid</a> ()</td></tr>
+<tr class="memdesc:a0060e7df58c15c5fc435b807a20a5739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the grid in solve submenu.  <br /></td></tr>
+<tr class="separator:a0060e7df58c15c5fc435b807a20a5739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d8009b22f68055f5d44665464c4c542" id="r_a6d8009b22f68055f5d44665464c4c542"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d8009b22f68055f5d44665464c4c542">handleSongClear</a> ()</td></tr>
 <tr class="memdesc:a6d8009b22f68055f5d44665464c4c542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the song, shows a toast, and refocuses the song button.  <br /></td></tr>
 <tr class="separator:a6d8009b22f68055f5d44665464c4c542"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -508,6 +511,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:ae05d9f1253bb8adeb65f3137f65e16d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46133cf602827b5ebe74e531a228b546" id="r_a46133cf602827b5ebe74e531a228b546"><td class="memItemLeft" align="right" valign="top">static final Logger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46133cf602827b5ebe74e531a228b546">LOG</a> = LoggerFactory.getLogger(MainView.class)</td></tr>
 <tr class="separator:a46133cf602827b5ebe74e531a228b546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b35c1b62933e3392b002b6d267bb6b" id="r_a31b35c1b62933e3392b002b6d267bb6b"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31b35c1b62933e3392b002b6d267bb6b">MAX_STARS_PERCENTAGE</a> = 100</td></tr>
+<tr class="separator:a31b35c1b62933e3392b002b6d267bb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00caba87172254137873b04de9ca0ef4" id="r_a00caba87172254137873b04de9ca0ef4"><td class="memItemLeft" align="right" valign="top">static final PseudoClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a00caba87172254137873b04de9ca0ef4">OPAQUE_MODE_PSEUDO_SELECTED</a></td></tr>
 <tr class="separator:a00caba87172254137873b04de9ca0ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff5fc50528b46214314d1ac499e71b9" id="r_a5ff5fc50528b46214314d1ac499e71b9"><td class="memItemLeft" align="right" valign="top">static final PseudoClass&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff5fc50528b46214314d1ac499e71b9">REDUCED_SONG_PSEUDO_SELECTED</a></td></tr>
@@ -1447,6 +1452,32 @@ OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class. </p>
 
 </div>
 </div>
+<a id="a0060e7df58c15c5fc435b807a20a5739" name="a0060e7df58c15c5fc435b807a20a5739"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0060e7df58c15c5fc435b807a20a5739">&#9670;&#160;</a></span>handleSolveClearGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.main.MainView.handleSolveClearGrid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear the grid in solve submenu. </p>
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a0060e7df58c15c5fc435b807a20a5739_cgraph.svg" width="456" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a6d8009b22f68055f5d44665464c4c542" name="a6d8009b22f68055f5d44665464c4c542"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d8009b22f68055f5d44665464c4c542">&#9670;&#160;</a></span>handleSongClear()</h2>
 
@@ -1574,11 +1605,11 @@ Initializes audio management, menu timelines, and menu components. </li>
 <li>
 Initializes the grid and active menu manager. </li>
 </ul>
-<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-11-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_afccc317d7f06806de15357b5fd1e5684_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1608,11 +1639,11 @@ Initializes the grid and active menu manager. </li>
 </div><div class="memdoc">
 
 <p>Initializes each difficulty level section in the menu by binding UI components to ViewModel properties for EASY, MEDIUM, and DIFFICULT levels. </p>
-<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-12-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_aaf10a0f151e5b327c746c1b7174081ef_cgraph.svg" width="100%" height="590"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1783,11 +1814,11 @@ Initializes the grid and active menu manager. </li>
 </dl>
 
 <p>Implements <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html#af5213ac1409a8e916a73f929188c28ad">fr.softsf.sudokufx.common.interfaces.IMainView</a>.</p>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-13-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a39af891bdb0af2c2abfd7a68bdfe87e8_cgraph.svg" width="510" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1883,11 +1914,11 @@ Loads and applies saved configuration settings to the UI controls, including bac
 <li>
 <b>Configures reactive UI states: song clear button visibility and song selection pseudo-class are bound to song availability state.</b> </li>
 </ul>
-<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
-  <img id="dynsection-14-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-15-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a640abc39ab4c9e393253742341427eb4_cgraph.svg" width="472" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -2001,7 +2032,7 @@ Loads and applies saved configuration settings to the UI controls, including bac
 </div><div class="memdoc">
 
 <p>Sets up bindings between the solve menu UI components and menuSolveViewModel. </p>
-<p>Binds accessibility texts, tooltips, role descriptions, and labels, and synchronizes stars percentage from menuLevelViewModel to menuSolveViewModel. </p>
+<p>Binds accessibility texts, tooltips, role descriptions, and labels, and synchronizes stars percentage from menuLevelViewModel to menuSolveViewModel (bindBidirectional). </p>
 
 </div>
 </div>
@@ -2338,6 +2369,28 @@ Loads and applies saved configuration settings to the UI controls, including bac
       <table class="memname">
         <tr>
           <td class="memname">final Logger fr.softsf.sudokufx.view.main.MainView.LOG = LoggerFactory.getLogger(MainView.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31b35c1b62933e3392b002b6d267bb6b" name="a31b35c1b62933e3392b002b6d267bb6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31b35c1b62933e3392b002b6d267bb6b">&#9670;&#160;</a></span>MAX_STARS_PERCENTAGE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int fr.softsf.sudokufx.view.main.MainView.MAX_STARS_PERCENTAGE = 100</td>
         </tr>
       </table>
   </td>
@@ -4606,7 +4659,7 @@ Loads and applies saved configuration settings to the UI controls, including bac
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1main.html">main</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html">MainView</a></li>
-    <li class="footer">Generated on Thu Sep 25 2025 19:44:51 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Tue Sep 30 2025 18:34:20 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

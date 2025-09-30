@@ -1,7 +1,10 @@
 var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools =
 [
     [ "findSQLInvalidAuthException", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a5d6f889834dd95ceab9cd6cb57a57d78", null ],
+    [ "logAndInstantiateFolderCreation", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aa99236a6233f7bfcb9edb4e4adb23c01", null ],
+    [ "logAndInstantiateFolderCreation", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a498b093adbded8e3f2781465d351d7b0", null ],
     [ "logAndInstantiateIllegalArgument", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a4c20704e8a8d81f57c6775c3939ee2f1", null ],
+    [ "logAndInstantiateLogbackConfig", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a86f1c0d6468d0bb1f2aa06f4f3b6d087", null ],
     [ "logAndInstantiateResourceLoad", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#af411e1e1abd6747d3e8b7df51da2a879", null ],
     [ "logAndThrowIllegalArgumentIfBlank", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a0d77e90c3561b0aea542126cb69de6a3", null ],
     [ "INSTANCE", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a00cbb76ccd6022c7d9620f160571b866", null ],

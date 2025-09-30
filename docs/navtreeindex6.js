@@ -1,5 +1,17 @@
 var NAVTREEINDEX6 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_image_path_validation_tests.html#af1322ce0cd330526874164cd2cfc4a1a":[1,0,0,0,0,4,9,5,0],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_image_path_validation_tests.html#af1322ce0cd330526874164cd2cfc4a1a":[2,0,0,0,0,3,9,5,0],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html":[1,0,0,0,0,4,9,6],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html":[2,0,0,0,0,3,9,6],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#a213df217d3f84dda6e99763c5712689e":[1,0,0,0,0,4,9,6,0],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#a213df217d3f84dda6e99763c5712689e":[2,0,0,0,0,3,9,6,0],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#a6dbe30709f1ebbe60587a641ea8c630c":[1,0,0,0,0,4,9,6,2],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#a6dbe30709f1ebbe60587a641ea8c630c":[2,0,0,0,0,3,9,6,2],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ad9c0d6437b6fd72eb6ab71e6282046f5":[1,0,0,0,0,4,9,6,3],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ad9c0d6437b6fd72eb6ab71e6282046f5":[2,0,0,0,0,3,9,6,3],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ae90187a06ee81a6e30bfddbed25010e5":[1,0,0,0,0,4,9,6,1],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html#ae90187a06ee81a6e30bfddbed25010e5":[2,0,0,0,0,3,9,6,1],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html":[1,0,0,0,0,4,9,7],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html":[2,0,0,0,0,3,9,7],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_to_string_tests.html#a8f73920eac562cf9014f6c30396eda32":[1,0,0,0,0,4,9,7,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX6 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#ad47beddb24b7c64e54948676556886ec":[1,0,0,0,0,4,13,5],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#ad47beddb24b7c64e54948676556886ec":[2,0,0,0,0,3,13,5],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#aeefa2837e0f77d5117c6056dcb23b671":[1,0,0,0,0,4,13,8],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#aeefa2837e0f77d5117c6056dcb23b671":[2,0,0,0,0,3,13,8],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_constructor_and_builder_tests.html":[1,0,0,0,0,4,13,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_constructor_and_builder_tests.html":[2,0,0,0,0,3,13,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_constructor_and_builder_tests.html#a55467d77cc96aaff0e63e420d71d074d":[1,0,0,0,0,4,13,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_constructor_and_builder_tests.html#a55467d77cc96aaff0e63e420d71d074d":[2,0,0,0,0,3,13,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_constructor_and_builder_tests.html#aee4833d80f5954c20af3fe053a974fe4":[1,0,0,0,0,4,13,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_constructor_and_builder_tests.html#aee4833d80f5954c20af3fe053a974fe4":[2,0,0,0,0,3,13,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html":[1,0,0,0,0,4,13,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html":[2,0,0,0,0,3,13,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a32fb731b988ffecb0933251b81e8efc4":[1,0,0,0,0,4,13,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a32fb731b988ffecb0933251b81e8efc4":[2,0,0,0,0,3,13,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a511b74fa9bfaa27e30c8a7a6581d0c92":[1,0,0,0,0,4,13,1,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_equals_and_hash_code_tests.html#a511b74fa9bfaa27e30c8a7a6581d0c92":[2,0,0,0,0,3,13,1,3]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#aeefa2837e0f77d5117c6056dcb23b671":[2,0,0,0,0,3,13,8]
 };

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.handleSolveClearGrid" name="fr.softsf.sudokufx.view.main.MainView.handleSolveClearGrid">
+<area shape="rect" id="Node000001" title="Clear the grid in solve submenu." alt="" coords="5,5,213,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="261,5,450,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,24,245,24,245,29,213,29"/>
+</map>

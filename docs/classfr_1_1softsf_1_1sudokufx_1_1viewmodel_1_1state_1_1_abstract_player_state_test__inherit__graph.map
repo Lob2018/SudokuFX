@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest" name="fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest">
 <area shape="rect" id="Node000001" title="Abstract base test class that provides:" alt="" coords="350,5,570,213"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html" title=" " alt="" coords="5,261,311,901"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="354,226,326,263,313,281,309,278,321,260,349,223"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html" title=" " alt="" coords="335,288,584,875"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="462,228,462,288,457,288,457,228"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html" title=" " alt="" coords="609,373,844,789"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="572,223,598,260,629,315,656,372,651,375,624,317,593,263,568,226"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html" title=" " alt="" coords="5,261,311,1061"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="352,226,326,263,314,283,309,280,321,260,347,223"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html" title=" " alt="" coords="335,368,584,955"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="462,228,462,368,457,368,457,228"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html" title=" " alt="" coords="609,453,844,869"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="574,224,598,260,644,355,679,453,674,455,639,357,593,263,569,227"/>
 </map>

@@ -11,5 +11,6 @@ var searchData=
   ['empty_5fpath_8',['EMPTY_PATH',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a7f71ba764b7a7a1de6dd89b4e715b36c',1,'fr::softsf::sudokufx::model::Options']]],
   ['english_5fbundle_9',['ENGLISH_BUNDLE',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#ac4679380d2cec013f0d38b8efba70c08',1,'fr::softsf::sudokufx::common::enums::I18n']]],
   ['englishformatter_10',['englishFormatter',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ac9bf81a6125aaca1e99d8f88a4351ee2',1,'fr::softsf::sudokufx::common::util::MyDateTime']]],
-  ['error_11',['ERROR',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a332271018abb3425c11ad29b7e7d8613',1,'fr::softsf::sudokufx::common::enums::ToastLevels']]]
+  ['epsilon_11',['EPSILON',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#af2623ba6bf01a58e60f9f071b70b417d',1,'fr::softsf::sudokufx::common::util::DynamicFontSize']]],
+  ['error_12',['ERROR',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a332271018abb3425c11ad29b7e7d8613',1,'fr::softsf::sudokufx::common::enums::ToastLevels']]]
 ];

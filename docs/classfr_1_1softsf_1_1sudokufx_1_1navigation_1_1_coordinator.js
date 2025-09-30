@@ -20,7 +20,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
     [ "applicationContext", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a73459121b4bec5be9c5eea58bec75086", null ],
     [ "defaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a0b25ad20a22e1cdfda2b4469d88a587d", null ],
     [ "dynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a709ac37adbaff7acbc20e18366a85239", null ],
-    [ "FXML_EXTENSION", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#adde9efab032c0e85f885f5ad7954be1d", null ],
     [ "fxmlLoader", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#abcaae859838b7d23fb19c4cded75d16a", null ],
     [ "hostServices", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#ae432bd7392bf7c1570a8b46f5c2a6141", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a66a48328e2130c3860f656e525ca48f1", null ],

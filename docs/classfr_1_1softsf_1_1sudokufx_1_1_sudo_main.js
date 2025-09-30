@@ -9,11 +9,9 @@ var classfr_1_1softsf_1_1sudokufx_1_1_sudo_main =
     [ "start", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a02c95d6bd90a947ce68e7b6a1221c110", null ],
     [ "context", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a2f1a22f74c20256e9598246c07b7e849", null ],
     [ "coordinator", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aa4cf1d2493d70cd889064148b7af4509", null ],
-    [ "CRASH_SCREEN_VIEW", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a15ebb829b7fd626b802071158db12e7b", null ],
     [ "iMainView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a5c7edddbb48f485df00edd6b29959ba4", null ],
     [ "iSplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aebbc7ede26b016d9caa1e29247dd7180", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a1ed8a6eae7155fa65a56147fa51668f6", null ],
-    [ "MAIN_VIEW_FXML_NAME", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a74bea2cf927de58140635575daf94046", null ],
     [ "MINIMUM_TRANSITION_DELAY_MS", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aaae41c5c9baaa1559bd3a69cc3873147", null ],
     [ "stage", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#a930416594df6fe160c9722805261e444", null ]
 ];
