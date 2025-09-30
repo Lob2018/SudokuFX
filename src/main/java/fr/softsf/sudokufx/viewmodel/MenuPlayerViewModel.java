@@ -41,6 +41,7 @@ public class MenuPlayerViewModel {
             "menu.accessibility.role.description.opened";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
+    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION = "menu.accessibility.role.description.submenu.option";
 
     private final PlayerStateHolder playerStateHolder;
 
@@ -92,15 +93,15 @@ public class MenuPlayerViewModel {
         editTooltip =
                 createFormattedAndConcatenatedBinding(
                         "menu.player.button.edit.accessibility",
-                        "menu.accessibility.role.description.submenu.option");
+                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION);
         editRoleDescription =
-                createStringBinding("menu.accessibility.role.description.submenu.option");
+                createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION);
 
         newAccessibleText = createStringBinding("menu.player.button.new.player.accessibility");
         newTooltip = createAppendedStringBinding();
         newText = createStringBinding("menu.player.button.new.player.text");
         newRoleDescription =
-                createStringBinding("menu.accessibility.role.description.submenu.option");
+                createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION);
 
         reduceAccessibleText = createStringBinding("menu.player.button.reduce.accessibility");
         reduceTooltip = createStringBinding("menu.player.button.reduce.accessibility");
@@ -155,7 +156,7 @@ public class MenuPlayerViewModel {
                 () ->
                         I18n.INSTANCE.getValue("menu.player.button.new.player.accessibility")
                                 + I18n.INSTANCE.getValue(
-                                        "menu.accessibility.role.description.submenu.option"),
+                                MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION),
                 I18n.INSTANCE.localeProperty());
     }
 
