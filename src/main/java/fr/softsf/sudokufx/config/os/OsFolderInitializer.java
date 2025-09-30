@@ -12,6 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.exception.FolderCreationException;
 
 /**
  * Utility enum to initialize required application folders (data and logs). Provides static-like
@@ -50,7 +51,7 @@ public enum OsFolderInitializer {
      *
      * @param folder the folder to create; must not be null
      * @throws IllegalArgumentException if folder is null
-     * @throws RuntimeException if folder creation fails or a security error occurs
+     * @throws FolderCreationException if folder creation fails or a security error occurs
      */
     void createFolder(final File folder) {
         if (Objects.isNull(folder)) {
@@ -64,29 +65,16 @@ public enum OsFolderInitializer {
                 if (folder.mkdirs()) {
                     LOG.info("▓▓ Folder created successfully: {}", folder.getAbsolutePath());
                 } else {
-                    LOG.error(
-                            "██ Exception failed to create folder with mkdirs(): {}",
-                            folder.getAbsolutePath());
-                    throw new RuntimeException(
-                            "Failed to create folder with mkdirs(): {}" + folder.getAbsolutePath());
+                    throw ExceptionTools.INSTANCE.logAndInstantiateFolderCreation(
+                            "Failed to create folder with mkdirs(): " + folder.getAbsolutePath());
                 }
             }
         } catch (SecurityException e) {
-            LOG.error(
-                    "██ Exception security error when creating needed folder: {}. █ Path: {}",
-                    e.getMessage(),
-                    folder.getAbsolutePath(),
-                    e);
-            throw new RuntimeException(
-                    "Security error when creating needed folder: " + folder.getAbsolutePath(), e);
+            throw ExceptionTools.INSTANCE.logAndInstantiateFolderCreation(
+                    "Security error when creating folder: " + folder.getAbsolutePath(), e);
         } catch (Exception e) {
-            LOG.error(
-                    "██ Exception error when creating needed folder: {}. █ Path: {}",
-                    e.getMessage(),
-                    folder.getAbsolutePath(),
-                    e);
-            throw new RuntimeException(
-                    "Error when creating needed folder: " + folder.getAbsolutePath(), e);
+            throw ExceptionTools.INSTANCE.logAndInstantiateFolderCreation(
+                    "Error when creating folder: " + folder.getAbsolutePath(), e);
         }
     }
 }

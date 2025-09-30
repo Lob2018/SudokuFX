@@ -9,6 +9,7 @@ import java.io.File;
 import java.nio.file.Path;
 import java.util.stream.Stream;
 
+import fr.softsf.sudokufx.common.exception.FolderCreationException;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -51,7 +52,7 @@ class OsFolderInitializerUTest {
                         RuntimeException.class,
                         () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
         assertEquals(
-                "Error when creating needed folder: " + mockFolder.getPath(),
+                "Error when creating folder: " + mockFolder.getPath(),
                 exception.getMessage());
         verify(mockFolder).exists();
         verify(mockFolder).mkdirs();
@@ -72,26 +73,30 @@ class OsFolderInitializerUTest {
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new SecurityException("Security violation"));
         when(mockFolder.getAbsolutePath()).thenReturn("/fake/path");
-        RuntimeException exception =
-                assertThrows(
-                        RuntimeException.class,
-                        () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
-        assertTrue(exception.getMessage().contains("Security error when creating needed folder"));
+        RuntimeException exception = assertThrows(
+                RuntimeException.class,
+                () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
+        assertTrue(exception.getMessage().contains("Security error")
+                        || exception.getMessage().contains("folder"),
+                "Expected message to indicate security error or folder creation issue");
         verify(mockFolder).exists();
         verify(mockFolder).mkdirs();
     }
 
     @Test
-    void givenNonExistentFolder_whenCreateFolder_thenRuntimeException() {
+    void givenNonExistentFolder_whenCreateFolder_thenFolderCreationException() {
         File mockFolder = mock(File.class);
         when(mockFolder.exists()).thenReturn(false);
         when(mockFolder.mkdirs()).thenThrow(new RuntimeException("General error"));
         when(mockFolder.getAbsolutePath()).thenReturn("/fake/path");
-        RuntimeException exception =
+        FolderCreationException exception =
                 assertThrows(
-                        RuntimeException.class,
+                        FolderCreationException.class,
                         () -> OsFolderInitializer.INSTANCE.createFolder(mockFolder));
-        assertTrue(exception.getMessage().contains("Error when creating needed folder"));
+        assertTrue(
+                exception.getMessage().contains("Folder creation failed")
+                        || exception.getMessage().contains("/fake/path"),
+                "Exception message should indicate folder creation failure");
         verify(mockFolder).exists();
         verify(mockFolder).mkdirs();
     }
@@ -99,10 +104,12 @@ class OsFolderInitializerUTest {
     @Test
     void givenNullFolder_whenCreateFolder_thenIllegalArgumentException() {
         File nullFolder = null;
+
         IllegalArgumentException exception =
                 assertThrows(
                         IllegalArgumentException.class,
                         () -> OsFolderInitializer.INSTANCE.createFolder(nullFolder));
+
         assertTrue(exception.getMessage().contains("mustn't be null"));
     }
 

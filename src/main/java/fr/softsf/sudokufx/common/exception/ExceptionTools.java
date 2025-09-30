@@ -119,4 +119,35 @@ public enum ExceptionTools {
         }
         return new LogbackConfigurationException(safeMessage, cause);
     }
+
+    /**
+     * Logs an error and creates a {@link FolderCreationException} with an optional cause.
+     *
+     * @param message descriptive message of the failure; if null or blank, a default message is
+     *     used
+     * @param cause the underlying exception that triggered the failure; may be null
+     * @return a new {@link FolderCreationException} instance
+     */
+    public FolderCreationException logAndInstantiateFolderCreation(
+            String message, Throwable cause) {
+        String safeMessage =
+                StringUtils.isBlank(message) ? "Folder creation failed with no message" : message;
+        LOG.error(
+                "██ Folder creation failed: {}. Cause: {}",
+                safeMessage,
+                cause == null ? "null" : cause.getMessage(),
+                cause);
+        return new FolderCreationException(safeMessage, cause);
+    }
+
+    /**
+     * Logs an error and creates a {@link FolderCreationException} without a cause.
+     *
+     * @param message descriptive message of the failure; if null or blank, a default message is
+     *     used
+     * @return a new {@link FolderCreationException} instance
+     */
+    public FolderCreationException logAndInstantiateFolderCreation(String message) {
+        return logAndInstantiateFolderCreation(message, null);
+    }
 }
