@@ -17,9 +17,9 @@ import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 import org.testfx.framework.junit5.Start;
+import org.testfx.util.WaitForAsyncUtils;
 
 import fr.softsf.sudokufx.common.util.DynamicFontSize;
-import org.testfx.util.WaitForAsyncUtils;
 
 import static fr.softsf.sudokufx.common.enums.ScreenSize.DISPOSABLE_SIZE;
 import static org.junit.jupiter.api.Assertions.*;
@@ -41,10 +41,11 @@ class DynamicFontSizeChangeE2ETest {
 
     @Test
     void givenStageResized_whenUpdateFontSize_thenFontSizeAdjustedCorrectly(FxRobot robot) {
-        robot.interact(() -> {
-            stage.setWidth(300);
-            stage.setHeight(350);
-        });
+        robot.interact(
+                () -> {
+                    stage.setWidth(300);
+                    stage.setHeight(350);
+                });
         WaitForAsyncUtils.waitForFxEvents();
         assertTrue(Double.isFinite(DISPOSABLE_SIZE.getSize()));
         assertEquals(6.57, dynamicFontSize.getCurrentFontSize(), 0.01);
