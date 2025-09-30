@@ -24,7 +24,7 @@ import fr.softsf.sudokufx.common.enums.I18n;
  */
 @Component
 public class MenuSolveViewModel {
-    private final IntegerProperty solvePercentage = new SimpleIntegerProperty(100);
+    private final IntegerProperty solvePercentage = new SimpleIntegerProperty(-1);
 
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";

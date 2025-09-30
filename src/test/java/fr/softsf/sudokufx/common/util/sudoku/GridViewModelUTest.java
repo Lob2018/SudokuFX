@@ -68,12 +68,12 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @Test
-    void givenFilledGrid_whenClearGrid_thenAllCellsAreEmpty() {
+    void givenFilledGrid_whenClearGrid_thenAllCellsAreZero() {
         viewModel.getCellViewModels().forEach(vm -> vm.rawTextProperty().set("5"));
         viewModel.clearGrid();
         assertTrue(
                 viewModel.getCellViewModels().stream()
-                        .allMatch(vm -> vm.rawTextProperty().get().isEmpty()));
+                        .allMatch(vm -> vm.rawTextProperty().get().equals("0")));
     }
 
     @Test
@@ -128,19 +128,6 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @Test
-    void givenExistingId_whenGetCellViewModelById_thenCellIsReturned() {
-        var result = viewModel.getCellViewModelById(1);
-        assertTrue(result.isPresent());
-        assertEquals(1, result.get().getId());
-    }
-
-    @Test
-    void givenNonExistingId_whenGetCellViewModelById_thenEmptyOptionalIsReturned() {
-        var result = viewModel.getCellViewModelById(100);
-        assertTrue(result.isEmpty());
-    }
-
-    @Test
     void
             givenPlayerWithDefaultGrid_whenGetCurrentGridFromModel_thenValuesLoadedAndCurrentGridReturned() {
         String defaultGrid = String.join("", Collections.nCopies(81, "0"));
@@ -182,7 +169,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         "8", "7", "3", "1", "7", "3", "2", "8", "5", "6", "4", "9", "9", "6", "8",
                         "3", "4", "7", "5", "1", "2");
         viewModel.setValues(completedGrid, true);
-        GridCellViewModel firstCell = viewModel.getCellViewModelById(1).orElseThrow();
+        GridCellViewModel firstCell = viewModel.getCellViewModels().getFirst();
         firstCell.getTextArea().setText("");
         firstCell.getTextArea().setText("3");
         verify(toasterServiceMock, atLeastOnce())

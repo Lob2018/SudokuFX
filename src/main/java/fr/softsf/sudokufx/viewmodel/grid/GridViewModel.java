@@ -316,21 +316,12 @@ public class GridViewModel {
         return Collections.unmodifiableList(cellViewModels);
     }
 
-    /**
-     * Finds a cell view model by its unique id.
-     *
-     * @param id cell id
-     * @return Optional containing the cell VM if found
-     */
-    public Optional<GridCellViewModel> getCellViewModelById(int id) {
-        checkInitialized();
-        return cellViewModels.stream().filter(vm -> vm.getId() == id).findFirst();
-    }
-
     /** Clears the text in all cells. */
     public void clearGrid() {
+        // TODO WILL BE USED FOR SOLVE CLEAR BUTTON
         checkInitialized();
-        cellViewModels.forEach(vm -> vm.rawTextProperty().set(""));
+        cellViewModels.forEach(vm -> vm.rawTextProperty().set("0"));
+        setValues(getAllValues(), true);
     }
 
     /** Gets a list of all cell text values in row-major order. */

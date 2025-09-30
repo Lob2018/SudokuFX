@@ -480,7 +480,7 @@
                         <Tooltip/>
                     </tooltip>
                 </Button>
-                <Button fx:id="menuSolveButtonSolveClear" text="&#xe16c;" styleClass="menuButtonCircle, material">
+                <Button fx:id="menuSolveButtonSolveClear" text="&#xe16c;" styleClass="menuButtonCircle, material" onAction="#handleSolveClearGrid">
                     <tooltip>
                         <Tooltip/>
                     </tooltip>

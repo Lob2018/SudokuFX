@@ -31,23 +31,20 @@ class MenuSolveViewModelUTest {
 
     @BeforeEach
     void setUp() {
-        // Sauvegarder la locale originale
         originalLocale = I18n.INSTANCE.localeProperty().get();
-        // Forcer locale française (ou autre) pour test de départ
         I18n.INSTANCE.setLocaleBundle("FR");
         viewModel = new MenuSolveViewModel();
     }
 
     @AfterEach
     void tearDown() {
-        // Restaure la locale originale après chaque test
         I18n.INSTANCE.localeProperty().set(originalLocale);
     }
 
     @Test
     void percentageProperty_shouldHaveInitialValue_100_and_setterShouldWork() {
         IntegerProperty percentage = viewModel.solvePercentageProperty();
-        assertEquals(100, percentage.get());
+        assertEquals(-1, percentage.get());
         viewModel.setSolvePercentage(42);
         assertEquals(42, percentage.get());
     }

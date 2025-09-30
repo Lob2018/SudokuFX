@@ -1,16 +1,22 @@
+/*
+ * SudokuFX - Copyright © 2024-present SOFT64.FR Lob2018
+ * Licensed under the MIT License (MIT).
+ * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
+ */
 package fr.softsf.sudokufx.common.util;
 
-import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import java.util.Objects;
 import javafx.beans.InvalidationListener;
 import javafx.scene.Scene;
 
-import java.util.Objects;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /**
  * Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.
- * <p>
- * Uses a debounced dynamic stylesheet to minimize memory allocations and reduce GC pressure.
- * Updates occur only when the font size changes significantly, leveraging JavaFX's stylesheet caching.
+ *
+ * <p>Uses a debounced dynamic stylesheet to minimize memory allocations and reduce GC pressure.
+ * Updates occur only when the font size changes significantly, leveraging JavaFX's stylesheet
+ * caching.
  */
 public final class DynamicFontSize {
 
@@ -33,9 +39,9 @@ public final class DynamicFontSize {
 
     /**
      * Constructs a DynamicFontSize instance for the specified Scene.
-     * <p>
-     * Attaches listeners to the scene's width and height properties to automatically update
-     * the font size when the scene is resized.
+     *
+     * <p>Attaches listeners to the scene's width and height properties to automatically update the
+     * font size when the scene is resized.
      *
      * @param scene the JavaFX Scene to observe; must not be null
      * @throws IllegalArgumentException if the scene is null, with logging via ExceptionTools
@@ -53,8 +59,8 @@ public final class DynamicFontSize {
 
     /**
      * Sets up dynamic font resizing by adding listeners to the scene's width and height.
-     * <p>
-     * An initial font size update is performed immediately after attaching the listeners.
+     *
+     * <p>An initial font size update is performed immediately after attaching the listeners.
      */
     private void initialize() {
         InvalidationListener listener = obs -> updateFontSize();
@@ -65,13 +71,13 @@ public final class DynamicFontSize {
 
     /**
      * Updates the font size of the scene's root node using a dynamic stylesheet.
-     * <p>
-     * The new font size is applied only if it differs by at least {@link #EPSILON} from the
+     *
+     * <p>The new font size is applied only if it differs by at least {@link #EPSILON} from the
      * current size. This reduces unnecessary stylesheet updates and memory allocations.
-     * <p>
-     * A dynamic stylesheet is created or updated, leveraging JavaFX's caching mechanism for
-     * efficiency. The font size is calculated proportionally to the smaller dimension of the
-     * scene using {@link #FONT_SIZE_RATIO}.
+     *
+     * <p>A dynamic stylesheet is created or updated, leveraging JavaFX's caching mechanism for
+     * efficiency. The font size is calculated proportionally to the smaller dimension of the scene
+     * using {@link #FONT_SIZE_RATIO}.
      */
     public void updateFontSize() {
         double fontSize = Math.min(scene.getWidth(), scene.getHeight()) * FONT_SIZE_RATIO;
