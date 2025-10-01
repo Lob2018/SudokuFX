@@ -26,8 +26,8 @@ public sealed interface IGridMaster permits GridMaster {
      *       - Possibilités pratiques : 28266 à 40000
      * </ul>
      *
-     * <p>Le pourcentage de possibilités est calculé à partir de la plage 4800 (0%) à 40000
-     * (100%), afin d’estimer la difficulté réelle de la grille générée.
+     * <p>Le pourcentage de possibilités est calculé à partir de la plage 4800 (0%) à 40000 (100%),
+     * afin d’estimer la difficulté réelle de la grille générée.
      *
      * @param niveau le niveau de difficulté à appliquer (1 à 3)
      * @return un objet {@link GrillesCrees} contenant :
