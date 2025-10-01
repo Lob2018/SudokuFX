@@ -552,3 +552,57 @@
     -fx-border-insets: 0;
     -fx-padding: 0;
 }
+
+.splashscreen-label {
+    -fx-font-size: 0.8em;
+    -fx-text-fill: white;
+}
+
+.splashscreen-flowersvg {
+    -fx-background-color: radial-gradient(
+        focus-angle 45deg,
+        focus-distance 5%,
+        center 50% 50%,
+        radius 55%,
+        #1a0a26 0,
+        #1b0a28 0.12,
+        #1f0c2f 0.17,
+        #220d33 0.18,
+        #44123a 0.18,
+        #701844 0.18,
+        #961e4c 0.19,
+        #b72353 0.19,
+        #d12658 0.19,
+        #e6295d 0.19,
+        #f42b60 0.2,
+        #fc2d61 0.2,
+        #ff2d62 0.21,
+        #fb4374 0.23,
+        #f5638e 0.25,
+        #f07ea4 0.29,
+        #ec95b7 0.32,
+        #e9a6c5 0.36,
+        #e7b2cf 0.41,
+        #e5b9d4 0.48,
+        #e5bbd6 0.66,
+        #e5bbd6 1
+    );
+    -fx-background-position: center center;
+}
+
+.splashscreen-soft64-bg {
+    -fx-background-color: #E12957;
+    -fx-background-radius: 20;
+}
+
+.splashscreen-sudosvg-bg {
+    -fx-background-color: linear-gradient(
+        to bottom,
+        #FFBE99 0%,
+        #FF4340 70%
+    );
+    -fx-border-radius: 18;
+    -fx-border-width: 0.05596em;
+    -fx-border-color: #1D1D30;
+    -fx-background-radius: 18;
+}

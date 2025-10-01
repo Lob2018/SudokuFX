@@ -44,9 +44,6 @@ import static javafx.scene.layout.Priority.ALWAYS;
  */
 public final class SplashScreenView implements ISplashScreenView {
 
-    private static final String FX_FONT_SIZE_0_8_EM = "-fx-font-size: 0.8em;";
-
-    // Constantes extraites pour Magic Numbers
     private static final double SPLASHSCREEN_WIDTH_FACTOR = 0.612;
     private static final double SPLASHSCREEN_HEIGHT_FACTOR = 0.3;
     private static final double FONT_SIZE_FACTOR = 0.0219;
@@ -62,10 +59,7 @@ public final class SplashScreenView implements ISplashScreenView {
     private static final double SOFT64_SVG_WIDTH_SCALE = 14.23;
     private static final double SOFT64_SVG_HEIGHT_SCALE = 2.0;
     private static final double STROKE_DIVISOR_FOR_SUDOSVG = 17;
-    private static final String SOFT64_BG_COLOR = "#E12957";
-    private static final String SUDOSVG_BG_COLOR_TOP = "#FFBE99";
-    private static final String SUDOSVG_BG_COLOR_BOTTOM = "#FF4340";
-    private static final String SUDOSVG_BORDER_COLOR = "#1D1D30";
+    private static final String SPLASHSCREEN_LABEL = "splashscreen-label";
 
     private final VBox splashscreenvbox = new VBox();
     private final HBox splashScreenvboxtophbox = new HBox();
@@ -141,7 +135,6 @@ public final class SplashScreenView implements ISplashScreenView {
                         (Objects.requireNonNull(
                                         getClass().getResource(RESOURCES_CSS_PATH.getPath())))
                                 .toExternalForm());
-        final Color splashDefaultFontColor = Color.web("#ffffff");
         splashScreenStage
                 .getIcons()
                 .add(
@@ -160,18 +153,14 @@ public final class SplashScreenView implements ISplashScreenView {
         dropShadow.setOffsetX(splashScreenFontSize / DROP_SHADOW_OFFSET_DIVISOR);
         dropShadow.setOffsetY(splashScreenFontSize / DROP_SHADOW_OFFSET_DIVISOR);
         splashscreenvboxTophboxNamelabel.setText(JVMApplicationProperties.INSTANCE.getAppName());
-        splashscreenvboxTophboxNamelabel.setTextFill(splashDefaultFontColor);
         setSplashscreenvboxTophboxLogosudosvg();
         splashscreenvboxCenterhbox.setSpacing(splashScreenFontSize);
         setSplashscreenvboxCenterhboxStackpaneLogoflowersvg();
         animateFlowerSvg();
         splashscreenvboxBottomhboxYearlabel.setText(Year.now() + "");
-        splashscreenvboxBottomhboxYearlabel.setTextFill(splashDefaultFontColor);
         splashscreenvboxBottomhboxHboxLoaderlabel.setText(getLoadingOrOptimizingMessage());
-        splashscreenvboxBottomhboxHboxLoaderlabel.setTextFill(splashDefaultFontColor);
         splashscreenvboxBottomhboxVersionlabel.setText(
                 JVMApplicationProperties.INSTANCE.getAppVersion());
-        splashscreenvboxBottomhboxVersionlabel.setTextFill(splashDefaultFontColor);
         setSplashscreenvboxCenterhboxLogosoft64textsvg();
     }
 
@@ -215,18 +204,18 @@ public final class SplashScreenView implements ISplashScreenView {
         splashScreenvboxtophbox.setAlignment(Pos.CENTER_LEFT);
         HBox.setHgrow(splashScreenvboxtophbox, ALWAYS);
         HBox.setHgrow(splashScreenvboxtophboxpane, ALWAYS);
-        splashscreenvboxTophboxNamelabel.setStyle(FX_FONT_SIZE_0_8_EM);
+        splashscreenvboxTophboxNamelabel.getStyleClass().add(SPLASHSCREEN_LABEL);
         splashscreenvboxCenterhbox.setAlignment(Pos.CENTER);
         HBox.setHgrow(splashscreenvboxCenterhbox, ALWAYS);
         VBox.setVgrow(splashscreenvboxCenterhbox, ALWAYS);
         splashscreenvboxbottomhbox.setAlignment(Pos.CENTER_RIGHT);
         HBox.setHgrow(splashscreenvboxbottomhbox, ALWAYS);
-        splashscreenvboxBottomhboxYearlabel.setStyle(FX_FONT_SIZE_0_8_EM);
+        splashscreenvboxBottomhboxYearlabel.getStyleClass().add(SPLASHSCREEN_LABEL);
         HBox.setHgrow(splashscreenvboxBottomhboxYearlabel, ALWAYS);
         splashscreenvboxbottomhboxhbox.setAlignment(Pos.CENTER);
         HBox.setHgrow(splashscreenvboxbottomhboxhbox, ALWAYS);
-        splashscreenvboxBottomhboxHboxLoaderlabel.setStyle(FX_FONT_SIZE_0_8_EM);
-        splashscreenvboxBottomhboxVersionlabel.setStyle(FX_FONT_SIZE_0_8_EM);
+        splashscreenvboxBottomhboxHboxLoaderlabel.getStyleClass().add(SPLASHSCREEN_LABEL);
+        splashscreenvboxBottomhboxVersionlabel.getStyleClass().add(SPLASHSCREEN_LABEL);
     }
 
     /** Sets up the SVG for the flower logo in the center of the splash screen. */
@@ -238,17 +227,7 @@ public final class SplashScreenView implements ISplashScreenView {
                 splashScreenFontSize * FLOWER_SVG_SCALE_FACTOR,
                 0,
                 0);
-        splashscreenvboxCenterhboxRegionflowersvg.setStyle(
-                "-fx-background-color: radial-gradient("
-                        + "focus-angle 45deg, focus-distance 5%, "
-                        + "center 50% 50%, radius 55%, "
-                        + "#1a0a26 0, #1b0a28 0.12, #1f0c2f 0.17, #220d33 0.18, "
-                        + "#44123a 0.18, #701844 0.18, #961e4c 0.19, #b72353 0.19, "
-                        + "#d12658 0.19, #e6295d 0.19, #f42b60 0.2, #fc2d61 0.2, "
-                        + "#ff2d62 0.21, #fb4374 0.23, #f5638e 0.25, #f07ea4 0.29, "
-                        + "#ec95b7 0.32, #e9a6c5 0.36, #e7b2cf 0.41, #e5b9d4 0.48, "
-                        + "#e5bbd6 0.66, #e5bbd6 1);"
-                        + "-fx-background-position: center center;");
+        splashscreenvboxCenterhboxRegionflowersvg.getStyleClass().add("splashscreen-flowersvg");
     }
 
     /** Sets up the SVG for the Soft64 text logo in the center of the splash screen. */
@@ -268,8 +247,7 @@ public final class SplashScreenView implements ISplashScreenView {
                 splashScreenFontSize * SOFT64_SVG_HEIGHT_SCALE,
                 0,
                 0);
-        splashscreenvboxCenterhboxRegiontextsvg.setStyle(
-                "-fx-background-color: " + SOFT64_BG_COLOR + "; -fx-background-radius: 20;");
+        splashscreenvboxCenterhboxRegiontextsvg.getStyleClass().add("splashscreen-soft64-bg");
     }
 
     /** Sets up the SVG for the "sudo.svg" text logo in the center of the splash screen. */
@@ -281,19 +259,7 @@ public final class SplashScreenView implements ISplashScreenView {
                 splashScreenFontSize,
                 1.0 / STROKE_DIVISOR_FOR_SUDOSVG,
                 1.0 / STROKE_DIVISOR_FOR_SUDOSVG);
-        splashscreenvboxTophboxRegionsudosvg.setStyle(
-                "-fx-background-color: linear-gradient("
-                        + "to bottom, "
-                        + SUDOSVG_BG_COLOR_TOP
-                        + " 0%, "
-                        + SUDOSVG_BG_COLOR_BOTTOM
-                        + " 70%); "
-                        + "-fx-border-radius: 18; "
-                        + "-fx-border-width: 1px; "
-                        + "-fx-border-color: "
-                        + SUDOSVG_BORDER_COLOR
-                        + "; "
-                        + "-fx-background-radius: 18;");
+        splashscreenvboxTophboxRegionsudosvg.getStyleClass().add("splashscreen-sudosvg-bg");
     }
 
     /**
