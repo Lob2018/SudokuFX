@@ -126,14 +126,11 @@ public class HelpViewModel {
     /**
      * Displays the given alert and waits for user interaction.
      *
-     * <p>Applies the hand cursor style to all alert buttons before showing.
-     *
      * @param alert the alert to display; must not be null
      * @throws NullPointerException if alert is null
      */
     void displayAlert(MyAlert alert) {
         Objects.requireNonNull(alert, "alert must not be null");
-        alert.applyHandCursorToButton();
         alert.showAndWait();
     }
 }

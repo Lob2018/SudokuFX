@@ -16,6 +16,7 @@ import org.apache.commons.lang3.StringUtils;
 public enum AppPaths {
     RESOURCES_FXML_PATH("/fr/softsf/sudokufx/fxml/"),
     RESOURCES_CSS_PATH("/fr/softsf/sudokufx/style/style.css"),
+    RESOURCES_CSS_ALERT_PATH("/fr/softsf/sudokufx/style/alert.css"),
     I18N_PATH("fr/softsf/sudokufx/i18n/resource"),
     DATABASE_MIGRATION_PATH("/fr/softsf/sudokufx/flyway/scripts/hsqldb/migration"),
     LOGO_SUDO_PNG_PATH("/fr/softsf/sudokufx/images/stage-icon.png"),

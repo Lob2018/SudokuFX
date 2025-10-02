@@ -1,0 +1,25 @@
+.my-alert {
+    -fx-background-color: radial-gradient(center 50% 150%, radius 100%, #A83449, #12020B);
+}
+
+.my-alert, .my-alert .content {
+        -fx-font-family: 'Luciole';
+        -fx-font-size: .9em;
+        -fx-line-spacing: 1.5;
+        -fx-text-fill: white;
+}
+
+.my-alert-button {
+    -fx-cursor: hand;
+}
+
+.button:focused {
+    -fx-border-width: .2em;
+    -fx-border-insets: -.2em;
+    -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
+    -fx-border-radius: .25em;
+}
+
+.button {
+    -fx-cursor: hand;
+}
