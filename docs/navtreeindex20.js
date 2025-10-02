@@ -1,11 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html#aad38e9a1e0db8cf5768d80d0e487ec8b":[1,0,0,0,0,1,3,0,3,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html#aad38e9a1e0db8cf5768d80d0e487ec8b":[2,0,0,0,0,1,3,0,3,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html":[1,0,0,0,0,1,3,0,4],
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html":[2,0,0,0,0,1,3,0,4],
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html#a2864dc658643933a8475d861036d7221":[1,0,0,0,0,1,3,0,4,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html#a2864dc658643933a8475d861036d7221":[2,0,0,0,0,1,3,0,4,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html#af037a4728944959e433e3ea3d3a79fa1":[1,0,0,0,0,1,3,0,4,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html#af037a4728944959e433e3ea3d3a79fa1":[2,0,0,0,0,1,3,0,4,0],
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html":[1,0,0,0,0,1,3,0,5],

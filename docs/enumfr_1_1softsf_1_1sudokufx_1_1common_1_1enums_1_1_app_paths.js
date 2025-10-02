@@ -22,6 +22,7 @@ var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths =
     [ "MACOS_SUPPOSED_DATA_FOLDER_FOR_SUDO_FX", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#afd3e7b05a932081068ae38bd38965272", null ],
     [ "MACOS_SUPPOSED_LOGS_FOLDER_FOR_SUDO_FX", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#abec975e02ebfa9a69ae79b2721202955", null ],
     [ "path", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a0cf663d5b7717149a5187e5cfa2ac709", null ],
+    [ "RESOURCES_CSS_ALERT_PATH", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a05e4b557698cfd18806b8fcf69578550", null ],
     [ "RESOURCES_CSS_PATH", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#ad45de899c3cec157ff51d4012a7af9b9", null ],
     [ "RESOURCES_FXML_PATH", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#af2c8e30d8b09d86e463ec798b33089ac", null ],
     [ "USER_HOME", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a80f7c73b0c37965a748da5af099c4181", null ],

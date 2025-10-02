@@ -18,7 +18,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view =
     [ "dropShadow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a01c167e7e90f8ed24d30a5502ce17c9c", null ],
     [ "FLOWER_SVG_SCALE_FACTOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a1ba1062a520b2198c7947556ca848092", null ],
     [ "FONT_SIZE_FACTOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a8a6a34e9e1983942fcb6389218e28656", null ],
-    [ "FX_FONT_SIZE_0_8_EM", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#abf917fd760e0f30aeef7318058fc3358", null ],
     [ "INTERPOLATOR_CONTROL_X1", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#adc4564fe12c693169ec46bb751df4745", null ],
     [ "INTERPOLATOR_CONTROL_X2", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a3ad6e447387b63d1f2a73492d4858f83", null ],
     [ "INTERPOLATOR_CONTROL_Y1", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a818ef96cfd7a46a62f83ffc1a56a7455", null ],
@@ -26,10 +25,10 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view =
     [ "ROTATE_FROM_ANGLE", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2b82d397a0c519a3f923935e546412ce", null ],
     [ "ROTATE_TO_ANGLE", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a7514cee3625c087bbd9da4e59cc6bfd4", null ],
     [ "scene", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a69f21b44b521dee6a05d4bd6f97db164", null ],
-    [ "SOFT64_BG_COLOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a911430061d6914a10cec96e3b3ea3dde", null ],
     [ "SOFT64_SVG_HEIGHT_SCALE", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#add71594b2a89de488d71b67f459e9e88", null ],
     [ "SOFT64_SVG_WIDTH_SCALE", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#ae854de0755fd716bb15ecb066884be4b", null ],
     [ "SPLASHSCREEN_HEIGHT_FACTOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aca64ec6dafd9b4e2ecff8d602a4e8e22", null ],
+    [ "SPLASHSCREEN_LABEL", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#af246fe7ce55edadd7e16519d801a7942", null ],
     [ "SPLASHSCREEN_WIDTH_FACTOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a333a2763d9e5d6849708ebe3943cde0d", null ],
     [ "splashScreenFontSize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a147f53a9cd82c5c0819a15bf02e62fb5", null ],
     [ "splashScreenStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2c24f64b9b16418191a871f8d595ff57", null ],
@@ -47,7 +46,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view =
     [ "splashScreenvboxtophboxpane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a712d389a8f3828bdf7f19f6691cf294d", null ],
     [ "splashscreenvboxTophboxRegionsudosvg", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a0623eff92a8e92248783d3766e6b0353", null ],
     [ "STROKE_DIVISOR_FOR_SUDOSVG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aac3a4a1d9468aa662e3e0bb84592836c", null ],
-    [ "SUDOSVG_BG_COLOR_BOTTOM", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a2c84d99a8ad60e8cc70abefae7b949c1", null ],
-    [ "SUDOSVG_BG_COLOR_TOP", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#ab6b9154071e7546ca6f9359efd698216", null ],
-    [ "SUDOSVG_BORDER_COLOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a1271a029b342ab0d26a43cf8c5b019fe", null ]
+    [ "STYLE_CSS", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#a22253972b5a902f3e47e640ce6d9bce4", null ]
 ];
