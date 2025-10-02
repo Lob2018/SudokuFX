@@ -26,6 +26,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
+import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
@@ -44,6 +45,9 @@ import static javafx.scene.layout.Priority.ALWAYS;
  */
 public final class SplashScreenView implements ISplashScreenView {
 
+    private static final String STYLE_CSS =
+            Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_PATH.getPath()))
+                    .toExternalForm();
     private static final double SPLASHSCREEN_WIDTH_FACTOR = 0.612;
     private static final double SPLASHSCREEN_HEIGHT_FACTOR = 0.3;
     private static final double FONT_SIZE_FACTOR = 0.0219;
@@ -130,11 +134,7 @@ public final class SplashScreenView implements ISplashScreenView {
                         DISPOSABLE_SIZE.getSize() * SPLASHSCREEN_WIDTH_FACTOR,
                         DISPOSABLE_SIZE.getSize() * SPLASHSCREEN_HEIGHT_FACTOR,
                         Color.TRANSPARENT);
-        scene.getStylesheets()
-                .add(
-                        (Objects.requireNonNull(
-                                        getClass().getResource(RESOURCES_CSS_PATH.getPath())))
-                                .toExternalForm());
+        scene.getStylesheets().add(STYLE_CSS);
         splashScreenStage
                 .getIcons()
                 .add(
