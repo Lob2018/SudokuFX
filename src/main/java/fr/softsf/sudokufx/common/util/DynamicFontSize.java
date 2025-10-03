@@ -10,6 +10,7 @@ import javafx.beans.InvalidationListener;
 import javafx.scene.Scene;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.util.math.NumberUtils;
 
 /**
  * Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.
@@ -22,7 +23,6 @@ public final class DynamicFontSize {
 
     private static final double FONT_SIZE_RATIO = 0.0219;
     private static final String ROOT_FONT_CSS_PREFIX = "data:text/css,.root { -fx-font-size: ";
-    private static final double EPSILON = 0.01;
 
     private final Scene scene;
     private double currentFontSize = -1;
@@ -70,18 +70,16 @@ public final class DynamicFontSize {
     }
 
     /**
-     * Updates the font size of the scene's root node using a dynamic stylesheet.
+     * Updates the font size of the scene's root node based on its current dimensions.
      *
-     * <p>The new font size is applied only if it differs by at least {@link #EPSILON} from the
-     * current size. This reduces unnecessary stylesheet updates and memory allocations.
-     *
-     * <p>A dynamic stylesheet is created or updated, leveraging JavaFX's caching mechanism for
-     * efficiency. The font size is calculated proportionally to the smaller dimension of the scene
-     * using {@link #FONT_SIZE_RATIO}.
+     * <p>The font size scales with the smaller dimension of the scene using {@link
+     * #FONT_SIZE_RATIO}. Updates are applied only if the size changes significantly, reducing
+     * unnecessary stylesheet refreshes and memory allocations. A dynamic stylesheet is created or
+     * updated in the scene's stylesheets, leveraging JavaFX's internal caching.
      */
     public void updateFontSize() {
         double fontSize = Math.min(scene.getWidth(), scene.getHeight()) * FONT_SIZE_RATIO;
-        if (Math.abs(fontSize - currentFontSize) < EPSILON) {
+        if (NumberUtils.INSTANCE.areDoublesEqualCenti(fontSize, currentFontSize)) {
             return;
         }
         currentFontSize = fontSize;

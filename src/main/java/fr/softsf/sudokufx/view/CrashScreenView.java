@@ -9,6 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Year;
 import java.util.Objects;
+import java.util.OptionalDouble;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -36,6 +37,7 @@ import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.common.util.FileSystemManager;
 import fr.softsf.sudokufx.common.util.IFileSystem;
+import fr.softsf.sudokufx.common.util.math.NumberUtils;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.config.os.OsFoldersConfig;
@@ -202,20 +204,19 @@ public final class CrashScreenView implements IMainView {
                 crashScreenFontSize,
                 0,
                 0);
-        String strokeWidth = "" + crashScreenFontSize / SVG_STROKE_DIVISOR;
+        OptionalDouble optionalStroke =
+                NumberUtils.INSTANCE.safeDivide(crashScreenFontSize, SVG_STROKE_DIVISOR);
+        if (optionalStroke.isEmpty()) {
+            return;
+        }
+        double strokeWidth = optionalStroke.getAsDouble();
         crashscreenvboxTophboxRegionsudosvg.setStyle(
-                "-fx-background-color: linear-gradient(to bottom, #FFBE99,"
-                        + " #FF4340);-fx-border-color: #1D1D30;-fx-border-width: "
-                        + strokeWidth
-                        + "px;-fx-border-insets: -"
-                        + strokeWidth
-                        + " -"
-                        + strokeWidth
-                        + " -"
-                        + strokeWidth
-                        + " -"
-                        + strokeWidth
-                        + ";");
+                String.format(
+                        "-fx-background-color: linear-gradient(to bottom, #FFBE99, #FF4340);"
+                                + "-fx-border-color: #1D1D30;"
+                                + "-fx-border-width: %.1fpx;"
+                                + "-fx-border-insets: -%.1f;",
+                        strokeWidth, strokeWidth));
     }
 
     /**
