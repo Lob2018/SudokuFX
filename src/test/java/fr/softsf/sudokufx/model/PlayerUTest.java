@@ -5,7 +5,10 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -24,7 +27,7 @@ class PlayerUTest {
     private Menu mockMenu;
     private Game mockGame1;
     private Game mockGame2;
-    private LocalDateTime testNow;
+    private Instant testNow;
 
     @BeforeEach
     void setUp() {
@@ -33,7 +36,7 @@ class PlayerUTest {
         mockMenu = mock(Menu.class);
         mockGame1 = mock(Game.class);
         mockGame2 = mock(Game.class);
-        testNow = LocalDateTime.now();
+        testNow = Instant.now();
 
         when(mockPlayerLanguage.getPlayerlanguageid()).thenReturn(1L);
         when(mockOptions.getOptionsid()).thenReturn(1L);
@@ -127,7 +130,7 @@ class PlayerUTest {
         @Test
         @DisplayName("Given two Players with same ID when comparing then they are equal")
         void givenTwoPlayersWithSameId_whenComparing_thenTheyAreEqual() {
-            LocalDateTime fixedTime = LocalDateTime.of(1, 1, 1, 1, 1, 1, 1);
+            Instant fixedTime = LocalDateTime.of(1, 1, 1, 1, 1, 1, 1).toInstant(ZoneOffset.UTC);
             Player p1 =
                     Player.builder()
                             .playerid(1L)
@@ -357,7 +360,8 @@ class PlayerUTest {
                             .menuid(mockMenu)
                             .name("John")
                             .build();
-            LocalDateTime newUpdatedAt = LocalDateTime.now().plusDays(1);
+            Instant newUpdatedAt =
+                    LocalDateTime.now().plusDays(1).atZone(ZoneId.systemDefault()).toInstant();
             player.setUpdatedat(newUpdatedAt);
             assertEquals(newUpdatedAt, player.getUpdatedat());
         }

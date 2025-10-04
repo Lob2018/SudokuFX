@@ -5,7 +5,7 @@
  */
 package fr.softsf.sudokufx.model;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -91,12 +91,12 @@ public class Player {
     /** Creation timestamp of the player. */
     @Nonnull
     @NotNull @Column(name = "createdat", nullable = false)
-    private LocalDateTime createdat = LocalDateTime.now();
+    private Instant createdat = Instant.now();
 
     /** Last update timestamp of the player. */
     @Nonnull
     @NotNull @Column(name = "updatedat", nullable = false)
-    private LocalDateTime updatedat = LocalDateTime.now();
+    private Instant updatedat = Instant.now();
 
     /** Protected default constructor for JPA. */
     protected Player() {}
@@ -122,8 +122,8 @@ public class Player {
             Set<Game> games,
             @Nonnull @NotNull String name,
             boolean selected,
-            @Nonnull @NotNull LocalDateTime createdat,
-            @Nonnull @NotNull LocalDateTime updatedat) {
+            @Nonnull @NotNull Instant createdat,
+            @Nonnull @NotNull Instant updatedat) {
         this.playerid = playerid;
         this.playerlanguageid = validatePlayerLanguage(playerlanguageid);
         this.optionsid = validateOptions(optionsid);
@@ -156,12 +156,12 @@ public class Player {
     }
 
     /** Validates that the creation date is not null. */
-    private static LocalDateTime validateCreatedAt(LocalDateTime createdat) {
+    private static Instant validateCreatedAt(Instant createdat) {
         return Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
     }
 
     /** Validates that the update date is not null. */
-    private static LocalDateTime validateUpdatedAt(LocalDateTime updatedat) {
+    private static Instant validateUpdatedAt(Instant updatedat) {
         return Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
     }
 
@@ -201,12 +201,12 @@ public class Player {
     }
 
     /** Returns the creation timestamp. */
-    public LocalDateTime getCreatedat() {
+    public Instant getCreatedat() {
         return createdat;
     }
 
     /** Returns the update timestamp. */
-    public LocalDateTime getUpdatedat() {
+    public Instant getUpdatedat() {
         return updatedat;
     }
 
@@ -241,7 +241,7 @@ public class Player {
     }
 
     /** Sets the update timestamp after validation. */
-    public void setUpdatedat(@Nonnull LocalDateTime updatedat) {
+    public void setUpdatedat(@Nonnull Instant updatedat) {
         this.updatedat = validateUpdatedAt(updatedat);
     }
 
@@ -263,8 +263,8 @@ public class Player {
         private Set<Game> games = new LinkedHashSet<>();
         private String name;
         private boolean selected = false;
-        private LocalDateTime createdat = LocalDateTime.now();
-        private LocalDateTime updatedat = LocalDateTime.now();
+        private Instant createdat = Instant.now();
+        private Instant updatedat = Instant.now();
 
         /** Sets the unique ID of the player. */
         public PlayerBuilder playerid(Long playerid) {
@@ -309,13 +309,13 @@ public class Player {
         }
 
         /** Sets the creation timestamp. */
-        public PlayerBuilder createdat(@Nonnull LocalDateTime createdat) {
+        public PlayerBuilder createdat(@Nonnull Instant createdat) {
             this.createdat = validateCreatedAt(createdat);
             return this;
         }
 
         /** Sets the update timestamp. */
-        public PlayerBuilder updatedat(@Nonnull LocalDateTime updatedat) {
+        public PlayerBuilder updatedat(@Nonnull Instant updatedat) {
             this.updatedat = validateUpdatedAt(updatedat);
             return this;
         }

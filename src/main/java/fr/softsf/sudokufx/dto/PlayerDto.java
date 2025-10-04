@@ -5,7 +5,7 @@
  */
 package fr.softsf.sudokufx.dto;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 
 import jakarta.annotation.Nonnull;
 import jakarta.annotation.Nullable;
@@ -33,8 +33,8 @@ public record PlayerDto(
         @Nullable GameDto selectedGame,
         @Nonnull @NotNull @Size(max = 256) String name,
         boolean selected,
-        @Nonnull @NotNull LocalDateTime createdat,
-        @Nonnull @NotNull LocalDateTime updatedat) {
+        @Nonnull @NotNull Instant createdat,
+        @Nonnull @NotNull Instant updatedat) {
 
     /** Returns a new instance with the given player language. */
     public PlayerDto withPlayerLanguage(PlayerLanguageDto newPlayerLanguage) {
@@ -121,7 +121,7 @@ public record PlayerDto(
     }
 
     /** Returns a new instance with the given creation timestamp. */
-    public PlayerDto withCreatedAt(LocalDateTime newCreatedAt) {
+    public PlayerDto withCreatedAt(Instant newCreatedAt) {
         return new PlayerDto(
                 playerid,
                 playerlanguageidDto,
@@ -135,7 +135,7 @@ public record PlayerDto(
     }
 
     /** Returns a new instance with the given update timestamp. */
-    public PlayerDto withUpdatedAt(LocalDateTime newUpdatedAt) {
+    public PlayerDto withUpdatedAt(Instant newUpdatedAt) {
         return new PlayerDto(
                 playerid,
                 playerlanguageidDto,

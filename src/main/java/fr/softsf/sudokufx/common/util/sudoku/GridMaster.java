@@ -6,7 +6,7 @@
 package fr.softsf.sudokufx.common.util.sudoku;
 
 import java.time.Duration;
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.Arrays;
 import java.util.function.IntPredicate;
 import java.util.stream.IntStream;
@@ -60,7 +60,7 @@ public final class GridMaster implements IGridMaster {
         return moyenMaxPossibilites;
     }
 
-    private LocalDateTime derniereDemande = LocalDateTime.now();
+    private Instant derniereDemande = Instant.now();
 
     /**
      * Calcule la somme des possibilités de toutes les cases de la grille de Sudoku.
@@ -246,7 +246,7 @@ public final class GridMaster implements IGridMaster {
                 dureeEnMs() < DUREE_MAXIMALE_POUR_MASQUE_PRECIS
                         ? casesAPrecis
                         : nombreAleatoire(casesAMin, casesAMax);
-        derniereDemande = LocalDateTime.now();
+        derniereDemande = Instant.now();
         do {
             sommeDesPossibilites =
                     getPossibilitesGrilleWhileNok(
@@ -255,7 +255,7 @@ public final class GridMaster implements IGridMaster {
                 break;
             }
         } while (!conditionValidation.test(sommeDesPossibilites));
-        derniereDemande = LocalDateTime.now();
+        derniereDemande = Instant.now();
         return sommeDesPossibilites;
     }
 
@@ -346,7 +346,7 @@ public final class GridMaster implements IGridMaster {
      * @return Durée en millisecondes
      */
     private long dureeEnMs() {
-        LocalDateTime nouvelleDemande = LocalDateTime.now();
+        Instant nouvelleDemande = Instant.now();
         return Duration.between(derniereDemande, nouvelleDemande).toMillis();
     }
 

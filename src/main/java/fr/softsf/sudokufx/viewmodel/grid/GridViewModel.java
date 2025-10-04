@@ -7,7 +7,7 @@ package fr.softsf.sudokufx.viewmodel.grid;
 
 import java.io.File;
 import java.text.MessageFormat;
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -416,7 +416,7 @@ public class GridViewModel {
                 currentPlayer.withSelectedGame(
                         currentPlayer
                                 .selectedGame()
-                                .withUpdatedat(LocalDateTime.now())
+                                .withUpdatedat(Instant.now())
                                 .withGrididDto(toSaveGridDto)
                                 .withLevelidDto(toSaveGameLevelDto));
         playerService.updatePlayer(toSavePlayer);

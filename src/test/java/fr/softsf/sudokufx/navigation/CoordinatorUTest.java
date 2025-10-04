@@ -6,7 +6,7 @@
 package fr.softsf.sudokufx.navigation;
 
 import java.io.File;
-import java.time.LocalDateTime;
+import java.time.Instant;
 import javafx.application.HostServices;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -78,8 +78,8 @@ class CoordinatorUTest {
                         null,
                         "SafePlayer",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         when(playerStateHolderMock.getCurrentPlayer()).thenReturn(defaultPlayer);
         when(playerServiceMock.updatePlayer(any(PlayerDto.class)))
                 .thenAnswer(invocation -> invocation.getArgument(0));

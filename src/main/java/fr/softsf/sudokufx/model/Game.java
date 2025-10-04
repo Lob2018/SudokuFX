@@ -5,7 +5,7 @@
  */
 package fr.softsf.sudokufx.model;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.Objects;
 
 import org.hibernate.annotations.Cascade;
@@ -76,12 +76,12 @@ public class Game {
     /** Timestamp when this game was created. */
     @Nonnull
     @NotNull @Column(name = "createdat", nullable = false)
-    private LocalDateTime createdat = LocalDateTime.now();
+    private Instant createdat = Instant.now();
 
     /** Timestamp when this game was last updated. */
     @Nonnull
     @NotNull @Column(name = "updatedat", nullable = false)
-    private LocalDateTime updatedat = LocalDateTime.now();
+    private Instant updatedat = Instant.now();
 
     /** Protected default constructor for JPA. */
     protected Game() {}
@@ -103,8 +103,8 @@ public class Game {
             @Nonnull @NotNull Player playerid,
             @Nonnull @NotNull GameLevel levelid,
             boolean selected,
-            @Nonnull @NotNull LocalDateTime createdat,
-            @Nonnull @NotNull LocalDateTime updatedat) {
+            @Nonnull @NotNull Instant createdat,
+            @Nonnull @NotNull Instant updatedat) {
         this.gameid = gameid;
         this.gridid = validateGrid(gridid);
         this.playerid = validatePlayer(playerid);
@@ -130,12 +130,12 @@ public class Game {
     }
 
     /** Ensures that the creation timestamp is not null. */
-    private static LocalDateTime validateCreatedAt(LocalDateTime createdat) {
+    private static Instant validateCreatedAt(Instant createdat) {
         return Objects.requireNonNull(createdat, CREATEDAT_MUST_NOT_BE_NULL);
     }
 
     /** Ensures that the update timestamp is not null. */
-    private static LocalDateTime validateUpdatedAt(LocalDateTime updatedat) {
+    private static Instant validateUpdatedAt(Instant updatedat) {
         return Objects.requireNonNull(updatedat, UPDATEDAT_MUST_NOT_BE_NULL);
     }
 
@@ -168,13 +168,13 @@ public class Game {
 
     /** Returns the creation timestamp. */
     @Nonnull
-    public LocalDateTime getCreatedat() {
+    public Instant getCreatedat() {
         return createdat;
     }
 
     /** Returns the last update timestamp. */
     @Nonnull
-    public LocalDateTime getUpdatedat() {
+    public Instant getUpdatedat() {
         return updatedat;
     }
 
@@ -194,7 +194,7 @@ public class Game {
     }
 
     /** Updates the last modified timestamp. */
-    public void setUpdatedat(@Nonnull LocalDateTime updatedat) {
+    public void setUpdatedat(@Nonnull Instant updatedat) {
         this.updatedat = validateUpdatedAt(updatedat);
     }
 
@@ -210,8 +210,8 @@ public class Game {
         private Player playerid;
         private GameLevel levelid;
         private boolean selected = false;
-        private LocalDateTime createdat = LocalDateTime.now();
-        private LocalDateTime updatedat = LocalDateTime.now();
+        private Instant createdat = Instant.now();
+        private Instant updatedat = Instant.now();
 
         /** Sets the game ID. */
         public GameBuilder gameid(Long gameid) {
@@ -244,13 +244,13 @@ public class Game {
         }
 
         /** Sets the creation timestamp. */
-        public GameBuilder createdat(@Nonnull LocalDateTime createdat) {
+        public GameBuilder createdat(@Nonnull Instant createdat) {
             this.createdat = validateCreatedAt(createdat);
             return this;
         }
 
         /** Sets the last update timestamp. */
-        public GameBuilder updatedat(@Nonnull LocalDateTime updatedat) {
+        public GameBuilder updatedat(@Nonnull Instant updatedat) {
             this.updatedat = validateUpdatedAt(updatedat);
             return this;
         }

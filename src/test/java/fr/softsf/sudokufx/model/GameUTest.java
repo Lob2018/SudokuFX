@@ -5,7 +5,8 @@
  */
 package fr.softsf.sudokufx.model;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
+import java.time.temporal.ChronoUnit;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -21,16 +22,16 @@ class GameUTest {
     private Grid mockGrid;
     private Player mockPlayer;
     private GameLevel mockGameLevel;
-    private LocalDateTime testCreatedAt;
-    private LocalDateTime testUpdatedAt;
+    private Instant testCreatedAt;
+    private Instant testUpdatedAt;
 
     @BeforeEach
     void setUp() {
         mockGrid = mock(Grid.class);
         mockPlayer = mock(Player.class);
         mockGameLevel = mock(GameLevel.class);
-        testCreatedAt = LocalDateTime.now().minusDays(1);
-        testUpdatedAt = LocalDateTime.now();
+        testCreatedAt = Instant.now().minus(1, ChronoUnit.DAYS);
+        testUpdatedAt = Instant.now();
     }
 
     @Nested
@@ -128,7 +129,7 @@ class GameUTest {
         @DisplayName("Given null CreatedAt when creating Game then NullPointerException is thrown")
         @SuppressWarnings("ConstantConditions")
         void givenNullCreatedAt_whenCreatingGame_thenNullPointerExceptionIsThrown() {
-            LocalDateTime nullCreatedAt = null;
+            Instant nullCreatedAt = null;
             NullPointerException exception =
                     assertThrows(
                             NullPointerException.class,
@@ -149,7 +150,7 @@ class GameUTest {
         @DisplayName("Given null UpdatedAt when creating Game then NullPointerException is thrown")
         @SuppressWarnings("ConstantConditions")
         void givenNullUpdatedAt_whenCreatingGame_thenNullPointerExceptionIsThrown() {
-            LocalDateTime nullUpdatedAt = null;
+            Instant nullUpdatedAt = null;
             NullPointerException exception =
                     assertThrows(
                             NullPointerException.class,
@@ -224,14 +225,14 @@ class GameUTest {
         @Test
         @DisplayName("Given Game exists when getting CreatedAt then CreatedAt is returned")
         void givenGameExists_whenGettingCreatedAt_thenCreatedAtIsReturned() {
-            LocalDateTime actualCreatedAt = game.getCreatedat();
+            Instant actualCreatedAt = game.getCreatedat();
             assertEquals(testCreatedAt, actualCreatedAt);
         }
 
         @Test
         @DisplayName("Given Game exists when getting UpdatedAt then UpdatedAt is returned")
         void givenGameExists_whenGettingUpdatedAt_thenUpdatedAtIsReturned() {
-            LocalDateTime actualUpdatedAt = game.getUpdatedat();
+            Instant actualUpdatedAt = game.getUpdatedat();
             assertEquals(testUpdatedAt, actualUpdatedAt);
         }
     }
@@ -287,7 +288,7 @@ class GameUTest {
         @Test
         @DisplayName("Given valid UpdatedAt when setting UpdatedAt then UpdatedAt is updated")
         void givenValidUpdatedAt_whenSettingUpdatedAt_thenUpdatedAtIsUpdated() {
-            LocalDateTime newUpdatedAt = LocalDateTime.now().plusDays(1);
+            Instant newUpdatedAt = Instant.now().minus(1, ChronoUnit.DAYS);
             game.setUpdatedat(newUpdatedAt);
             assertEquals(newUpdatedAt, game.getUpdatedat());
         }
@@ -297,7 +298,7 @@ class GameUTest {
                 "Given null UpdatedAt when setting UpdatedAt then NullPointerException is thrown")
         @SuppressWarnings("ConstantConditions")
         void givenNullUpdatedAt_whenSettingUpdatedAt_thenNullPointerExceptionIsThrown() {
-            LocalDateTime nullUpdatedAt = null;
+            Instant nullUpdatedAt = null;
             NullPointerException exception =
                     assertThrows(
                             NullPointerException.class,

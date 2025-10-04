@@ -21,8 +21,8 @@ public class ObjectMapperConfig {
 
     /**
      * Creates and configures an ObjectMapper bean. - Automatically registers available Jackson
-     * modules (e.g., JavaTimeModule for LocalDateTime). - Disables writing dates as timestamps to
-     * use ISO-8601 format.
+     * modules (e.g., JavaTimeModule for Instant). - Disables writing dates as timestamps to use
+     * ISO-8601 format.
      *
      * @return a pre-configured ObjectMapper instance.
      */

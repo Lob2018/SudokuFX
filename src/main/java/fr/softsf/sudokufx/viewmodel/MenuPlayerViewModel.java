@@ -6,7 +6,7 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import java.text.MessageFormat;
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.function.Supplier;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
@@ -202,8 +202,8 @@ public class MenuPlayerViewModel {
                 null,
                 name,
                 false,
-                LocalDateTime.now(),
-                LocalDateTime.now());
+                Instant.now(),
+                Instant.now());
     }
 
     public ObservableList<PlayerDto> getPlayers() {

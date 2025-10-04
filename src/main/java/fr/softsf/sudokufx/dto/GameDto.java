@@ -5,7 +5,7 @@
  */
 package fr.softsf.sudokufx.dto;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 
 import jakarta.annotation.Nonnull;
 import jakarta.validation.constraints.NotNull;
@@ -27,8 +27,8 @@ public record GameDto(
         @Nonnull @NotNull Long playerid,
         @Nonnull @NotNull GameLevelDto levelidDto,
         boolean selected,
-        @Nonnull @NotNull LocalDateTime createdat,
-        @Nonnull @NotNull LocalDateTime updatedat) {
+        @Nonnull @NotNull Instant createdat,
+        @Nonnull @NotNull Instant updatedat) {
 
     /** Returns a new instance with the given game ID. */
     public GameDto withGameid(Long newGameid) {
@@ -61,13 +61,13 @@ public record GameDto(
     }
 
     /** Returns a new instance with the given creation timestamp. */
-    public GameDto withCreatedat(LocalDateTime newCreatedat) {
+    public GameDto withCreatedat(Instant newCreatedat) {
         return new GameDto(
                 gameid, grididDto, playerid, levelidDto, selected, newCreatedat, updatedat);
     }
 
     /** Returns a new instance with the given update timestamp. */
-    public GameDto withUpdatedat(LocalDateTime newUpdatedat) {
+    public GameDto withUpdatedat(Instant newUpdatedat) {
         return new GameDto(
                 gameid, grididDto, playerid, levelidDto, selected, createdat, newUpdatedat);
     }

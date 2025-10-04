@@ -5,7 +5,9 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;
@@ -133,9 +135,21 @@ public class MenuSaveViewModel {
         backups.clear();
         for (int i = TEST_BACKUP_START; i >= TEST_BACKUP_END; i--) {
             if (i == TEST_BACKUP_SELECTED_MINUTE) {
-                backups.add(createBackupGameDto(LocalDateTime.now().plusMinutes(i), true));
+                backups.add(
+                        createBackupGameDto(
+                                LocalDateTime.now()
+                                        .plusMinutes(i)
+                                        .atZone(ZoneId.systemDefault())
+                                        .toInstant(),
+                                true));
             } else {
-                backups.add(createBackupGameDto(LocalDateTime.now().plusMinutes(i), false));
+                backups.add(
+                        createBackupGameDto(
+                                LocalDateTime.now()
+                                        .plusMinutes(i)
+                                        .atZone(ZoneId.systemDefault())
+                                        .toInstant(),
+                                false));
             }
         }
     }
@@ -161,7 +175,7 @@ public class MenuSaveViewModel {
      * @param isSelected whether the backup is selected
      * @return a GameDto populated with mock data
      */
-    private GameDto createBackupGameDto(LocalDateTime date, boolean isSelected) {
+    private GameDto createBackupGameDto(Instant date, boolean isSelected) {
         return new GameDto(
                 0L,
                 new GridDto(
@@ -172,7 +186,7 @@ public class MenuSaveViewModel {
                 0L,
                 new GameLevelDto((byte) 1, (byte) 1),
                 isSelected,
-                LocalDateTime.now(),
+                Instant.now(),
                 date);
     }
 

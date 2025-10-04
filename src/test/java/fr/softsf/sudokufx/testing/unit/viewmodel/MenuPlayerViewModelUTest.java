@@ -6,7 +6,7 @@
 package fr.softsf.sudokufx.testing.unit.viewmodel;
 
 import java.text.MessageFormat;
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -54,8 +54,8 @@ class MenuPlayerViewModelUTest {
                         null,
                         "TestPlayer",
                         false,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         when(playerServiceMock.getPlayer()).thenReturn(testPlayer);
         playerStateHolder = new PlayerStateHolder(playerServiceMock);
         viewModel = new MenuPlayerViewModel(playerStateHolder);
@@ -211,8 +211,8 @@ class MenuPlayerViewModelUTest {
                         null,
                         "NewTestPlayer",
                         false,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         playerStateHolder.currentPlayerProperty().set(newPlayer);
         String bindingValue = viewModel.playerAccessibleTextProperty().get();
         assertTrue(bindingValue.contains("NewTestPlayer"));

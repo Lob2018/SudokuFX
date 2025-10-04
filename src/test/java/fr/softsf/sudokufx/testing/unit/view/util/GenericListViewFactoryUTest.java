@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.testing.unit.view.util;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
@@ -39,8 +40,8 @@ class GenericListViewFactoryUTest {
                 null,
                 name,
                 false,
-                LocalDateTime.of(2024, 1, 1, 10, 0),
-                LocalDateTime.of(2024, 1, 1, 10, 0));
+                LocalDateTime.of(2024, 1, 1, 10, 0).atZone(ZoneId.systemDefault()).toInstant(),
+                LocalDateTime.of(2024, 1, 1, 10, 0).atZone(ZoneId.systemDefault()).toInstant());
     }
 
     private GameDto createGame(long id) {
@@ -52,8 +53,8 @@ class GenericListViewFactoryUTest {
                 100L,
                 level,
                 false,
-                LocalDateTime.of(2024, 1, 1, 10, 0),
-                LocalDateTime.of(2024, 1, 1, 10, 0));
+                LocalDateTime.of(2024, 1, 1, 10, 0).atZone(ZoneId.systemDefault()).toInstant(),
+                LocalDateTime.of(2024, 1, 1, 10, 0).atZone(ZoneId.systemDefault()).toInstant());
     }
 
     @Test

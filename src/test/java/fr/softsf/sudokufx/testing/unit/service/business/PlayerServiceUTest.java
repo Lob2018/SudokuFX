@@ -5,7 +5,7 @@
  */
 package fr.softsf.sudokufx.testing.unit.service.business;
 
-import java.time.LocalDateTime;
+import java.time.Instant;
 import java.util.List;
 import java.util.Set;
 
@@ -69,12 +69,12 @@ class PlayerServiceUTest {
                                 1L,
                                 new GameLevelDto((byte) 1, (byte) 1),
                                 true,
-                                LocalDateTime.now(),
-                                LocalDateTime.now()),
+                                Instant.now(),
+                                Instant.now()),
                         "Jean",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         when(playerRepository.findSelectedPlayerWithSelectedGame()).thenReturn(List.of(mockEntity));
         when(playerMapper.mapPlayerToDto(mockEntity)).thenReturn(dto);
         when(jakartaValidator.validateOrThrow(dto)).thenReturn(dto);
@@ -105,8 +105,8 @@ class PlayerServiceUTest {
                                 1L,
                                 new GameLevelDto((byte) 1, (byte) 1),
                                 true,
-                                LocalDateTime.now(),
-                                LocalDateTime.now()));
+                                Instant.now(),
+                                Instant.now()));
         when(jakartaValidator.validateOrThrow(invalidDto))
                 .thenThrow(new ConstraintViolationException("Validation failed", Set.of()));
         assertThrows(ConstraintViolationException.class, () -> playerService.getPlayer());
@@ -124,8 +124,8 @@ class PlayerServiceUTest {
                         null,
                         "Jean",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
 
         when(playerRepository.findSelectedPlayerWithSelectedGame()).thenReturn(List.of(player));
         when(playerMapper.mapPlayerToDto(player)).thenReturn(dtoWithNullGame);
@@ -145,8 +145,8 @@ class PlayerServiceUTest {
                         null,
                         "Jean",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         when(jakartaValidator.validateOrThrow(dto))
                 .thenThrow(new ConstraintViolationException("DTO invalid", Set.of()));
         ConstraintViolationException ex =
@@ -166,8 +166,8 @@ class PlayerServiceUTest {
                         null,
                         "Jean",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         Player existingPlayer = mock(Player.class);
         PlayerLanguage pl = mock(PlayerLanguage.class);
         Options op = mock(Options.class);
@@ -212,8 +212,8 @@ class PlayerServiceUTest {
                         null,
                         "Jean",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         when(jakartaValidator.validateOrThrow(dto)).thenReturn(dto); // ← important
         when(playerRepository.findById(999L)).thenReturn(java.util.Optional.empty());
         IllegalArgumentException ex =
@@ -232,8 +232,8 @@ class PlayerServiceUTest {
                         null,
                         "Jean",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         Player existingPlayer = mock(Player.class);
         when(jakartaValidator.validateOrThrow(dto)).thenReturn(dto);
         when(playerRepository.findById(dto.playerid()))
@@ -255,8 +255,8 @@ class PlayerServiceUTest {
                         null,
                         "Jean",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         Player existingPlayer = mock(Player.class);
         PlayerLanguage pl = mock(PlayerLanguage.class);
         when(jakartaValidator.validateOrThrow(dto)).thenReturn(dto);
@@ -281,8 +281,8 @@ class PlayerServiceUTest {
                         null,
                         "Jean",
                         true,
-                        LocalDateTime.now(),
-                        LocalDateTime.now());
+                        Instant.now(),
+                        Instant.now());
         Player existingPlayer = mock(Player.class);
         PlayerLanguage pl = mock(PlayerLanguage.class);
         Options op = mock(Options.class);
