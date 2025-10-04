@@ -157,7 +157,10 @@ public class GridViewModel {
         GridDto toSaveGridDto = gameDto.grididDto().withGridvalue(result);
         PlayerDto toSavePlayer =
                 currentPlayer.withSelectedGame(
-                        currentPlayer.selectedGame().withGrididDto(toSaveGridDto));
+                        currentPlayer
+                                .selectedGame()
+                                .withGrididDto(toSaveGridDto)
+                                .withUpdatedat(Instant.now()));
         playerService.updatePlayer(toSavePlayer);
         playerStateHolder.refreshCurrentPlayer();
     }
