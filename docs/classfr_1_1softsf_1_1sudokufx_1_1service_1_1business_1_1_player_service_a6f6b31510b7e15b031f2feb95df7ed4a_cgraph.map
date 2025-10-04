@@ -22,9 +22,9 @@
 <area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="139,447,199,517,239,556,284,591,292,596,289,600,281,596,236,560,195,521,135,450"/>
 <area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ade99f107878b74490ae3d014ff294f60" title="Sets the selection flag." alt="" coords="289,672,456,715"/>
 <area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="133,447,155,491,188,548,232,606,257,634,284,658,290,662,286,666,281,662,253,638,228,610,184,551,150,494,129,450"/>
-<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#aa604283113f595d9d19bb0e3e64850bb" title="Updates the last modified timestamp." alt="" coords="289,739,456,781"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a3f1136b2325dfb043388d60e8cc3fc78" title="Updates the last modified timestamp." alt="" coords="289,739,456,781"/>
 <area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="130,448,148,503,179,577,224,656,253,692,284,725,288,728,285,732,281,729,249,696,220,659,174,579,143,505,125,449"/>
-<area shape="rect" id="Node000021" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac4232209b56a87f81f1248303f09b02d" title="Sets the update timestamp after validation." alt="" coords="289,805,456,848"/>
+<area shape="rect" id="Node000021" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="289,805,456,848"/>
 <area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="128,448,142,514,171,606,192,656,217,705,248,751,285,791,288,794,284,798,281,795,244,754,213,707,187,658,166,608,137,516,122,449"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af49e1b436868180644535afda35cd5cd" title="Validates that the default grid value is not null." alt="" coords="516,139,704,181"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="456,157,500,157,500,163,456,163"/>
@@ -38,8 +38,8 @@
 <area shape="poly" id="edge13_Node000013_Node000014" title=" " alt="" coords="456,491,511,491,511,496,456,496"/>
 <area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0" title="Validates that the player language is not null." alt="" coords="510,539,710,581"/>
 <area shape="poly" id="edge15_Node000015_Node000016" title=" " alt="" coords="463,557,494,557,494,563,463,563"/>
-<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1f2a473434f154a034fb766d02213295" title="Ensures that the update timestamp is not null." alt="" coords="526,739,694,781"/>
+<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a516b5c422b3c8945a39d4351db9fc9f8" title="Ensures that the update timestamp is not null." alt="" coords="526,739,694,781"/>
 <area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="456,757,511,757,511,763,456,763"/>
-<area shape="rect" id="Node000022" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9be097e3c5eee99752c203f22fe774a3" title="Validates that the update date is not null." alt="" coords="526,805,695,848"/>
+<area shape="rect" id="Node000022" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="526,805,695,848"/>
 <area shape="poly" id="edge21_Node000021_Node000022" title=" " alt="" coords="456,824,510,824,510,829,456,829"/>
 </map>

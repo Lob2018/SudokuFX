@@ -1,9 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/dto/GameDto.java" name="src/main/java/fr/softsf/sudokufx/dto/GameDto.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="188,5,376,48"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,172,131"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,51,131,99,129,95,235,46"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="196,104,368,131"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="284,48,284,88,279,88,279,48"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="392,96,583,139"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="331,46,426,87,424,92,329,51"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="140,5,328,48"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,104,124,131"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,51,103,99,101,94,193,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="148,104,320,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,48,236,88,231,88,231,48"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="344,96,535,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="283,46,378,87,376,92,281,51"/>
 </map>

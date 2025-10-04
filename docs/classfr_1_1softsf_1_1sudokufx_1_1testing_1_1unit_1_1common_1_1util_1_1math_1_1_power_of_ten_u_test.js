@@ -1,0 +1,6 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test =
+[
+    [ "givenCentiEpsilon_whenGetValue_thenReturnsCorrectDouble", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html#aa3da453842afd396c6e4efc2226cd776", null ],
+    [ "givenDoubleEpsilon_whenGetValue_thenReturnsCorrectDouble", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html#ab30d8e05056a1e8bd2aefe8492a2d923", null ],
+    [ "givenPowerOfTenEnum_whenValuesCalled_thenContainsOnlyExpectedConstants", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html#ade3d26bd176ee1b72bc7e31e9a84d62f", null ]
+];

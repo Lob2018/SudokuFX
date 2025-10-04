@@ -1,12 +1,12 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenValidationFails_whenGetPlayer_thenThrowsConstraintViolationException" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenValidationFails_whenGetPlayer_thenThrowsConstraintViolationException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,111,366,169"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5404f1271af2d911d29e8ce03acbc501" title="Data Transfer Object representing a game entity." alt="" coords="674,101,879,128"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#ae38935c6457d95aaad3c079efbf428a1" title="Data Transfer Object representing a game entity." alt="" coords="674,101,879,128"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="366,130,658,117,658,122,366,135"/>
 <area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa" title="Data Transfer Object representing a game level entity." alt="" coords="937,29,1122,72"/>
 <area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="349,107,504,83,669,63,800,53,921,49,922,55,800,59,669,68,505,88,350,113"/>
 <area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a" title="Data Transfer Object representing a grid entity." alt="" coords="932,131,1127,157"/>
 <area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="366,138,917,141,917,146,366,144"/>
-<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af6e92a76d1c7e2a11c4aef9968bd9210" title="Data Transfer Object representing a player." alt="" coords="414,227,621,253"/>
+<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1946024ef99efea4b043ed98388fdc94" title="Data Transfer Object representing a player." alt="" coords="414,227,621,253"/>
 <area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="286,167,457,219,455,224,284,172"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="734,103,727,93,732,83,749,77,777,75,807,77,823,84,821,89,806,82,777,80,750,82,735,87,732,92,739,99"/>
 <area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="832,98,927,74,928,79,833,103"/>

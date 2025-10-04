@@ -1,0 +1,9 @@
+<map id="src/test/java/fr/softsf/sudokufx/testing/unit/common/util/math/PowerOfTenUTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/common/util/math/PowerOfTenUTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="169,5,438,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,162,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,67,127,116,125,111,237,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="186,112,421,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="306,64,306,97,301,97,301,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="445,120,647,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="377,62,501,111,499,116,375,67"/>
+</map>

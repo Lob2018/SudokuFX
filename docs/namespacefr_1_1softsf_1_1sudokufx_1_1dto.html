@@ -111,9 +111,9 @@ Packages</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a5404f1271af2d911d29e8ce03acbc501" id="r_a5404f1271af2d911d29e8ce03acbc501"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5404f1271af2d911d29e8ce03acbc501">GameDto</a> (Long gameid, @Nonnull @NotNull <a class="el" href="#a1d1f24319f3fea4ea795946c4be7803a">GridDto</a> grididDto, @Nonnull @NotNull Long playerid, @Nonnull @NotNull <a class="el" href="#a0218c64c4488c809ab03588009d721aa">GameLevelDto</a> levelidDto, boolean selected, @Nonnull @NotNull LocalDateTime createdat, @Nonnull @NotNull LocalDateTime updatedat)</td></tr>
-<tr class="memdesc:a5404f1271af2d911d29e8ce03acbc501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a game entity.  <br /></td></tr>
-<tr class="separator:a5404f1271af2d911d29e8ce03acbc501"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae38935c6457d95aaad3c079efbf428a1" id="r_ae38935c6457d95aaad3c079efbf428a1"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae38935c6457d95aaad3c079efbf428a1">GameDto</a> (Long gameid, @Nonnull @NotNull <a class="el" href="#a1d1f24319f3fea4ea795946c4be7803a">GridDto</a> grididDto, @Nonnull @NotNull Long playerid, @Nonnull @NotNull <a class="el" href="#a0218c64c4488c809ab03588009d721aa">GameLevelDto</a> levelidDto, boolean selected, @Nonnull @NotNull Instant createdat, @Nonnull @NotNull Instant updatedat)</td></tr>
+<tr class="memdesc:ae38935c6457d95aaad3c079efbf428a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a game entity.  <br /></td></tr>
+<tr class="separator:ae38935c6457d95aaad3c079efbf428a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0218c64c4488c809ab03588009d721aa" id="r_a0218c64c4488c809ab03588009d721aa"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0218c64c4488c809ab03588009d721aa">GameLevelDto</a> (Byte levelid, @Min(1) @Max(3) byte level)</td></tr>
 <tr class="memdesc:a0218c64c4488c809ab03588009d721aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a game level entity.  <br /></td></tr>
 <tr class="separator:a0218c64c4488c809ab03588009d721aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,9 +126,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af3351529e3efa22019c4fe7fcd841d3f" id="r_af3351529e3efa22019c4fe7fcd841d3f"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3351529e3efa22019c4fe7fcd841d3f">OptionsDto</a> (Long optionsid, @Nonnull @NotNull @Size(min=8, max=8) String hexcolor, @Nonnull @NotNull @Size(max=260) String imagepath, @Nonnull @NotNull @Size(max=260) String songpath, boolean opaque, boolean muted)</td></tr>
 <tr class="memdesc:af3351529e3efa22019c4fe7fcd841d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing an Options entity.  <br /></td></tr>
 <tr class="separator:af3351529e3efa22019c4fe7fcd841d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6e92a76d1c7e2a11c4aef9968bd9210" id="r_af6e92a76d1c7e2a11c4aef9968bd9210"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6e92a76d1c7e2a11c4aef9968bd9210">PlayerDto</a> (Long playerid, @Nonnull @NotNull <a class="el" href="#aef56b61038752e56cf2b168708082565">PlayerLanguageDto</a> playerlanguageidDto, @Nonnull @NotNull <a class="el" href="#af3351529e3efa22019c4fe7fcd841d3f">OptionsDto</a> optionsidDto, @Nonnull @NotNull <a class="el" href="#a5ce2a48c45e6d7c67df2cfb0bced67e9">MenuDto</a> menuidDto, @Nullable <a class="el" href="#a5404f1271af2d911d29e8ce03acbc501">GameDto</a> selectedGame, @Nonnull @NotNull @Size(max=256) String name, boolean selected, @Nonnull @NotNull LocalDateTime createdat, @Nonnull @NotNull LocalDateTime updatedat)</td></tr>
-<tr class="memdesc:af6e92a76d1c7e2a11c4aef9968bd9210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a player.  <br /></td></tr>
-<tr class="separator:af6e92a76d1c7e2a11c4aef9968bd9210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1946024ef99efea4b043ed98388fdc94" id="r_a1946024ef99efea4b043ed98388fdc94"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1946024ef99efea4b043ed98388fdc94">PlayerDto</a> (Long playerid, @Nonnull @NotNull <a class="el" href="#aef56b61038752e56cf2b168708082565">PlayerLanguageDto</a> playerlanguageidDto, @Nonnull @NotNull <a class="el" href="#af3351529e3efa22019c4fe7fcd841d3f">OptionsDto</a> optionsidDto, @Nonnull @NotNull <a class="el" href="#a5ce2a48c45e6d7c67df2cfb0bced67e9">MenuDto</a> menuidDto, @Nullable <a class="el" href="#ae38935c6457d95aaad3c079efbf428a1">GameDto</a> selectedGame, @Nonnull @NotNull @Size(max=256) String name, boolean selected, @Nonnull @NotNull Instant createdat, @Nonnull @NotNull Instant updatedat)</td></tr>
+<tr class="memdesc:a1946024ef99efea4b043ed98388fdc94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a player.  <br /></td></tr>
+<tr class="separator:a1946024ef99efea4b043ed98388fdc94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef56b61038752e56cf2b168708082565" id="r_aef56b61038752e56cf2b168708082565"><td class="memItemLeft" align="right" valign="top">record&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef56b61038752e56cf2b168708082565">PlayerLanguageDto</a> (Long playerlanguageid, @Nonnull @NotNull @Pattern(regexp=&quot;^(FR|EN)$&quot;, message=&quot;iso must be either 'FR' or 'EN'&quot;) String iso)</td></tr>
 <tr class="memdesc:aef56b61038752e56cf2b168708082565"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data Transfer Object representing a player's language.  <br /></td></tr>
 <tr class="separator:aef56b61038752e56cf2b168708082565"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,8 +137,8 @@ Functions</h2></td></tr>
 <tr class="separator:a64116dfd18a91768156409d5a791a173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a5404f1271af2d911d29e8ce03acbc501" name="a5404f1271af2d911d29e8ce03acbc501"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5404f1271af2d911d29e8ce03acbc501">&#9670;&#160;</a></span>GameDto()</h2>
+<a id="ae38935c6457d95aaad3c079efbf428a1" name="ae38935c6457d95aaad3c079efbf428a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae38935c6457d95aaad3c079efbf428a1">&#9670;&#160;</a></span>GameDto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,12 +171,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Nonnull @NotNull LocalDateTime</td>          <td class="paramname"><span class="paramname"><em>createdat</em></span>, </td>
+          <td class="paramtype">@Nonnull @NotNull Instant</td>          <td class="paramname"><span class="paramname"><em>createdat</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Nonnull @NotNull LocalDateTime</td>          <td class="paramname"><span class="paramname"><em>updatedat</em></span>&#160;)</td>
+          <td class="paramtype">@Nonnull @NotNull Instant</td>          <td class="paramname"><span class="paramname"><em>updatedat</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -206,7 +206,7 @@ Functions</h2></td></tr>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1dto_a5404f1271af2d911d29e8ce03acbc501_cgraph.svg" width="459" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1dto_ae38935c6457d95aaad3c079efbf428a1_cgraph.svg" width="459" height="152"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -456,8 +456,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af6e92a76d1c7e2a11c4aef9968bd9210" name="af6e92a76d1c7e2a11c4aef9968bd9210"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6e92a76d1c7e2a11c4aef9968bd9210">&#9670;&#160;</a></span>PlayerDto()</h2>
+<a id="a1946024ef99efea4b043ed98388fdc94" name="a1946024ef99efea4b043ed98388fdc94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1946024ef99efea4b043ed98388fdc94">&#9670;&#160;</a></span>PlayerDto()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -485,7 +485,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Nullable <a class="el" href="#a5404f1271af2d911d29e8ce03acbc501">GameDto</a></td>          <td class="paramname"><span class="paramname"><em>selectedGame</em></span>, </td>
+          <td class="paramtype">@Nullable <a class="el" href="#ae38935c6457d95aaad3c079efbf428a1">GameDto</a></td>          <td class="paramname"><span class="paramname"><em>selectedGame</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -500,12 +500,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Nonnull @NotNull LocalDateTime</td>          <td class="paramname"><span class="paramname"><em>createdat</em></span>, </td>
+          <td class="paramtype">@Nonnull @NotNull Instant</td>          <td class="paramname"><span class="paramname"><em>createdat</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Nonnull @NotNull LocalDateTime</td>          <td class="paramname"><span class="paramname"><em>updatedat</em></span>&#160;)</td>
+          <td class="paramtype">@Nonnull @NotNull Instant</td>          <td class="paramname"><span class="paramname"><em>updatedat</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -538,7 +538,7 @@ Functions</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1dto_af6e92a76d1c7e2a11c4aef9968bd9210_cgraph.svg" width="100%" height="527"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1dto_a1946024ef99efea4b043ed98388fdc94_cgraph.svg" width="100%" height="527"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -612,7 +612,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html">dto</a></li>
-    <li class="footer">Generated on Thu Oct 2 2025 21:07:08 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Oct 4 2025 15:53:48 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

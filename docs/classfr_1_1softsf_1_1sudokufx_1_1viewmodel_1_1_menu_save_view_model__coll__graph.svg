@@ -151,8 +151,8 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 11 more...</text>
 <text text-anchor="start" x="5.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameDto createBackupGame</text>
-<text text-anchor="start" x="14" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Dto(LocalDateTime date,</text>
-<text text-anchor="start" x="14" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> boolean isSelected)</text>
+<text text-anchor="start" x="14" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Dto(Instant date, boolean</text>
+<text text-anchor="start" x="14" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isSelected)</text>
 <text text-anchor="start" x="5.5" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
 <text text-anchor="start" x="14" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndConcatenatedBinding(String</text>

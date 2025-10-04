@@ -243,7 +243,7 @@ var searchData=
   ['mydatetime_240',['MyDateTime',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html',1,'fr::softsf::sudokufx::common::util']]],
   ['mydatetime_241',['myDateTime',['../namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a083da94352913e14bf183e3957ae0e2d',1,'fr::softsf::sudokufx::testing::integration::service::external']]],
   ['mydatetime_2ejava_242',['MyDateTime.java',['../_my_date_time_8java.html',1,'']]],
-  ['mydatetimeutest_243',['MyDateTimeUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
+  ['mydatetimeutest_243',['MyDateTimeUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time_u_test.html',1,'fr::softsf::sudokufx::common::util']]],
   ['mydatetimeutest_2ejava_244',['MyDateTimeUTest.java',['../_my_date_time_u_test_8java.html',1,'']]],
   ['myenumsutest_245',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
   ['myenumsutest_2ejava_246',['MyEnumsUTest.java',['../_my_enums_u_test_8java.html',1,'']]],

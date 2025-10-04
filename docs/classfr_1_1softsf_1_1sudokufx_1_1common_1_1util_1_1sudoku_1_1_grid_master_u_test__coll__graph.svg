@@ -116,7 +116,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="11.38" y="-1882.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="start" x="72.5" y="-1870.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster</text>
 <text text-anchor="start" x="13.75" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="23.12" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime derniereDemande</text>
+<text text-anchor="start" x="23.12" y="-1854.5" font-family="Helvetica,sans-Serif" font-size="10.00">Instant derniereDemande</text>
 <text text-anchor="start" x="13.75" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="23.12" y="-1838.5" font-family="Helvetica,sans-Serif" font-size="10.00">int moyenMaxPossibilites</text>
 <text text-anchor="start" x="13.75" y="-1822.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

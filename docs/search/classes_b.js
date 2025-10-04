@@ -27,7 +27,7 @@ var searchData=
   ['muteunmutetests_24',['MuteUnmuteTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::ui::AudioServiceUTest']]],
   ['myalert_25',['MyAlert',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html',1,'fr::softsf::sudokufx::view::component']]],
   ['mydatetime_26',['MyDateTime',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html',1,'fr::softsf::sudokufx::common::util']]],
-  ['mydatetimeutest_27',['MyDateTimeUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
+  ['mydatetimeutest_27',['MyDateTimeUTest',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time_u_test.html',1,'fr::softsf::sudokufx::common::util']]],
   ['myenumsutest_28',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
   ['mylogbackconfig_29',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::config']]],
   ['mylogbackconfigutest_30',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::config']]],

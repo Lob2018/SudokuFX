@@ -148,7 +148,7 @@ var sectionId = 'dynsection-6';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af6e92a76d1c7e2a11c4aef9968bd9210" target="_top" xlink:title="Data Transfer Object representing a player.">
+<g id="a_Node000008"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1946024ef99efea4b043ed98388fdc94" target="_top" xlink:title="Data Transfer Object representing a player.">
 <polygon fill="white" stroke="#666666" points="716.25,-179 560.75,-179 560.75,-159 716.25,-159 716.25,-179"/>
 <text text-anchor="middle" x="638.5" y="-165.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.PlayerDto</text>
 </a>
@@ -305,7 +305,7 @@ var sectionId = 'dynsection-6';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5404f1271af2d911d29e8ce03acbc501" target="_top" xlink:title="Data Transfer Object representing a game entity.">
+<g id="a_Node000009"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#ae38935c6457d95aaad3c079efbf428a1" target="_top" xlink:title="Data Transfer Object representing a game entity.">
 <polygon fill="white" stroke="#666666" points="910,-182 756,-182 756,-162 910,-162 910,-182"/>
 <text text-anchor="middle" x="833" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.dto.GameDto</text>
 </a>

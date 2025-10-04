@@ -43,7 +43,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0930ceebcad98c4a5907feda4348d5d4" target="_top" xlink:title="Returns the creation timestamp.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#ab3e3c86412ae70c7102e512a980568c0" target="_top" xlink:title="Returns the creation timestamp.">
 <polygon fill="white" stroke="#666666" points="365,-332 240.25,-332 240.25,-300 365,-300 365,-332"/>
 <text text-anchor="start" x="248.25" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="302.62" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getCreatedat</text>
@@ -157,7 +157,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a6b77600e01ae0a7529d6a4914d105ea1" target="_top" xlink:title="Returns the last update timestamp.">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a4011299b15b8321fc006067e66f50cb3" target="_top" xlink:title="Returns the last update timestamp.">
 <polygon fill="white" stroke="#666666" points="365,-32 240.25,-32 240.25,0 365,0 365,-32"/>
 <text text-anchor="start" x="248.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="302.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Game.getUpdatedat</text>

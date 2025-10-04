@@ -1,0 +1,9 @@
+<map id="src/main/java/fr/softsf/sudokufx/common/util/math/NumberUtils.java" name="src/main/java/fr/softsf/sudokufx/common/util/math/NumberUtils.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="164,5,323,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,112,165,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,67,122,107,119,102,191,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="188,112,299,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,64,246,96,241,96,241,64"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="322,112,477,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="296,62,366,102,363,106,293,67"/>
+</map>

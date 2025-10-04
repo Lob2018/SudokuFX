@@ -98,7 +98,7 @@ var sectionId = 'dynsection-7';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac4232209b56a87f81f1248303f09b02d" target="_top" xlink:title="Sets the update timestamp after validation.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" target="_top" xlink:title="Sets the update timestamp after validation.">
 <polygon fill="white" stroke="#666666" points="332.75,-32 208,-32 208,0 332.75,0 332.75,-32"/>
 <text text-anchor="start" x="216" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="270.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.setUpdatedat</text>
@@ -117,7 +117,7 @@ var sectionId = 'dynsection-7';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9be097e3c5eee99752c203f22fe774a3" target="_top" xlink:title="Validates that the update date is not null.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" target="_top" xlink:title="Validates that the update date is not null.">
 <polygon fill="white" stroke="#666666" points="495.75,-32 368.75,-32 368.75,0 495.75,0 495.75,-32"/>
 <text text-anchor="start" x="376.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="432.25" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateUpdatedAt</text>

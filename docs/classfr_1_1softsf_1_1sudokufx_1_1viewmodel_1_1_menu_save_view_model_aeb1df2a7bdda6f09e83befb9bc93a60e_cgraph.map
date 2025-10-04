@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.loadBackups" name="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.loadBackups">
 <area shape="rect" id="Node000001" title="Loads test backups into the observable list." alt="" coords="5,5,232,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a3e2539c5dbbdb42f1a149cfbe74cfb49" title="Generates a sample GameDto instance for testing purposes." alt="" coords="280,5,567,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a2902ae5da523abf8235a857f79449f24" title="Generates a sample GameDto instance for testing purposes." alt="" coords="280,5,567,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,24,264,24,264,29,232,29"/>
 </map>

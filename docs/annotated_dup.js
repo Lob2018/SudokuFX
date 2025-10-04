@@ -45,6 +45,10 @@ var annotated_dup =
               [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view" ]
             ] ],
             [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html", [
+              [ "math", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math.html", [
+                [ "NumberUtils", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils" ],
+                [ "PowerOfTen", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten" ]
+              ] ],
               [ "sudoku", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html", [
                 [ "GridConverter", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter" ],
                 [ "GridConverterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_u_test" ],
@@ -58,6 +62,7 @@ var annotated_dup =
               [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test" ],
               [ "ImageUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils" ],
               [ "MyDateTime", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time" ],
+              [ "MyDateTimeUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time_u_test" ],
               [ "SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer" ]
             ] ]
           ] ],
@@ -172,6 +177,10 @@ var annotated_dup =
                   [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1_exception_tools_u_test" ]
                 ] ],
                 [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util.html", [
+                  [ "math", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math.html", [
+                    [ "NumberUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test" ],
+                    [ "PowerOfTenUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test" ]
+                  ] ],
                   [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os.html", [
                     [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test" ]
                   ] ],
@@ -179,7 +188,6 @@ var annotated_dup =
                   [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_exception_tools_u_test" ],
                   [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test" ],
                   [ "ImageUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test" ],
-                  [ "MyDateTimeUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_date_time_u_test" ],
                   [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test" ],
                   [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test" ]
                 ] ]

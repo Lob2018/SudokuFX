@@ -3,10 +3,10 @@
 <area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="71,55,73,45,83,37,98,31,119,29,144,32,159,40,157,44,142,37,119,35,99,36,86,41,78,48,76,56"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="281,5,447,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,60,267,50,269,55,234,65"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a636c644e61f487ae0736a0ef77326e4c" title="Returns the update timestamp." alt="" coords="281,72,447,115"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7b5aecb095900d44b68cf4b4b5691d3c" title="Returns the update timestamp." alt="" coords="281,72,447,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="233,91,265,91,265,96,233,96"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac4232209b56a87f81f1248303f09b02d" title="Sets the update timestamp after validation." alt="" coords="281,139,447,181"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="281,139,447,181"/>
 <area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="234,122,269,131,267,137,233,127"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9be097e3c5eee99752c203f22fe774a3" title="Validates that the update date is not null." alt="" coords="495,139,664,181"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="495,139,664,181"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="448,157,479,157,479,163,448,163"/>
 </map>

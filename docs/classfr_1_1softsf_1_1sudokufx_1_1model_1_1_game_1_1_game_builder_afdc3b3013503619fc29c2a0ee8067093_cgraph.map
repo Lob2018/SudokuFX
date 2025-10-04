@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.Game.GameBuilder.updatedat" name="fr.softsf.sudokufx.model.Game.GameBuilder.updatedat">
+<area shape="rect" id="Node000001" title="Sets the last update timestamp." alt="" coords="5,5,202,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a516b5c422b3c8945a39d4351db9fc9f8" title="Ensures that the update timestamp is not null." alt="" coords="250,5,417,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,24,234,24,234,29,202,29"/>
+</map>

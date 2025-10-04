@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.createGame" name="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.createGame">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,93,276,136"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5404f1271af2d911d29e8ce03acbc501" title="Data Transfer Object representing a game entity." alt="" coords="324,101,529,128"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#ae38935c6457d95aaad3c079efbf428a1" title="Data Transfer Object representing a game entity." alt="" coords="324,101,529,128"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,112,308,112,308,117,276,117"/>
 <area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa" title="Data Transfer Object representing a game level entity." alt="" coords="582,29,766,72"/>
 <area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="208,90,264,75,323,63,449,50,566,46,566,52,449,55,324,68,265,80,209,95"/>

@@ -100,6 +100,7 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time-members.html">List of all members</a>  </div>
@@ -114,25 +115,42 @@ $(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time__coll__graph.svg" width="212" height="299"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time__coll__graph.svg" width="212" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3483da12855a10304f3a7ea9ea1ff14" id="r_ae3483da12855a10304f3a7ea9ea1ff14"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3483da12855a10304f3a7ea9ea1ff14">getFormatted</a> (LocalDateTime updatedAt)</td></tr>
-<tr class="memdesc:ae3483da12855a10304f3a7ea9ea1ff14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the given <code><a class="el" href="">LocalDateTime</a></code> based on the current locale.  <br /></td></tr>
-<tr class="separator:ae3483da12855a10304f3a7ea9ea1ff14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4355b60620f127440fd44f1669784e4a" id="r_a4355b60620f127440fd44f1669784e4a"><td class="memItemLeft" align="right" valign="top">Instant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4355b60620f127440fd44f1669784e4a">getCurrentInstant</a> ()</td></tr>
+<tr class="memdesc:a4355b60620f127440fd44f1669784e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current instant (UTC timestamp).  <br /></td></tr>
+<tr class="separator:a4355b60620f127440fd44f1669784e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd18d48049b40bb79e3b00fcff2af69" id="r_afbd18d48049b40bb79e3b00fcff2af69"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbd18d48049b40bb79e3b00fcff2af69">getFormatted</a> (Instant timestamp)</td></tr>
+<tr class="memdesc:afbd18d48049b40bb79e3b00fcff2af69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the given <code><a class="el" href="">Instant</a></code> based on the current locale.  <br /></td></tr>
+<tr class="separator:afbd18d48049b40bb79e3b00fcff2af69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a116a54fadfce8a8d742478d05100a886" id="r_a116a54fadfce8a8d742478d05100a886"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a116a54fadfce8a8d742478d05100a886">getFormattedCurrentTime</a> ()</td></tr>
-<tr class="memdesc:a116a54fadfce8a8d742478d05100a886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as "HH:mm:ss".  <br /></td></tr>
+<tr class="memdesc:a116a54fadfce8a8d742478d05100a886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current time formatted as "HH:mm:ss" in the system timezone.  <br /></td></tr>
 <tr class="separator:a116a54fadfce8a8d742478d05100a886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b97f78c396fface10682e7899e6046" id="r_a74b97f78c396fface10682e7899e6046"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74b97f78c396fface10682e7899e6046">resetClock</a> ()</td></tr>
+<tr class="memdesc:a74b97f78c396fface10682e7899e6046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the clock to system default zone.  <br /></td></tr>
+<tr class="separator:a74b97f78c396fface10682e7899e6046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53ae059496336e4031a459f25af146a" id="r_ad53ae059496336e4031a459f25af146a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad53ae059496336e4031a459f25af146a">setClock</a> (Clock <a class="el" href="#ad71533cc2d4fecff8714068f0ab663de">clock</a>)</td></tr>
+<tr class="memdesc:ad53ae059496336e4031a459f25af146a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the clock (useful for testing).  <br /></td></tr>
+<tr class="separator:ad53ae059496336e4031a459f25af146a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:afac3bd375f19318b72f190fb317a2fcb" id="r_afac3bd375f19318b72f190fb317a2fcb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afac3bd375f19318b72f190fb317a2fcb">INSTANCE</a></td></tr>
 <tr class="separator:afac3bd375f19318b72f190fb317a2fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a09175f364852bc9360747563b879ff60" id="r_a09175f364852bc9360747563b879ff60"><td class="memItemLeft" align="right" valign="top">DateTimeFormatter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09175f364852bc9360747563b879ff60">getLocaleFormatter</a> ()</td></tr>
+<tr class="memdesc:a09175f364852bc9360747563b879ff60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the appropriate formatter based on current locale.  <br /></td></tr>
+<tr class="separator:a09175f364852bc9360747563b879ff60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:ad71533cc2d4fecff8714068f0ab663de" id="r_ad71533cc2d4fecff8714068f0ab663de"><td class="memItemLeft" align="right" valign="top">Clock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad71533cc2d4fecff8714068f0ab663de">clock</a> = Clock.systemDefaultZone()</td></tr>
+<tr class="separator:ad71533cc2d4fecff8714068f0ab663de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9bf81a6125aaca1e99d8f88a4351ee2" id="r_ac9bf81a6125aaca1e99d8f88a4351ee2"><td class="memItemLeft" align="right" valign="top">final DateTimeFormatter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac9bf81a6125aaca1e99d8f88a4351ee2">englishFormatter</a></td></tr>
 <tr class="separator:ac9bf81a6125aaca1e99d8f88a4351ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68f77aa53053bded5a83fa4a1e952775" id="r_a68f77aa53053bded5a83fa4a1e952775"><td class="memItemLeft" align="right" valign="top">final DateTimeFormatter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a68f77aa53053bded5a83fa4a1e952775">frenchFormatter</a></td></tr>
@@ -140,16 +158,36 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ab82bc53a8fad4c8cb7706a88b8446aab" id="r_ab82bc53a8fad4c8cb7706a88b8446aab"><td class="memItemLeft" align="right" valign="top">static final Clock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab82bc53a8fad4c8cb7706a88b8446aab">CLOCK</a> = Clock.systemDefaultZone()</td></tr>
-<tr class="separator:ab82bc53a8fad4c8cb7706a88b8446aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c43396be67fddc278c5df16bba97c1" id="r_a33c43396be67fddc278c5df16bba97c1"><td class="memItemLeft" align="right" valign="top">static final DateTimeFormatter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33c43396be67fddc278c5df16bba97c1">TIME_FORMATTER</a> = DateTimeFormatter.ofPattern(&quot;HH:mm:ss&quot;)</td></tr>
 <tr class="separator:a33c43396be67fddc278c5df16bba97c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Enum singleton working with date and time operations. </p>
+<p>Handles timezone conversions and daylight saving time automatically. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae3483da12855a10304f3a7ea9ea1ff14" name="ae3483da12855a10304f3a7ea9ea1ff14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3483da12855a10304f3a7ea9ea1ff14">&#9670;&#160;</a></span>getFormatted()</h2>
+<a id="a4355b60620f127440fd44f1669784e4a" name="a4355b60620f127440fd44f1669784e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4355b60620f127440fd44f1669784e4a">&#9670;&#160;</a></span>getCurrentInstant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Instant fr.softsf.sudokufx.common.util.MyDateTime.getCurrentInstant </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current instant (UTC timestamp). </p>
+<p>No ambiguity with daylight saving time changes.</p>
+<dl class="section return"><dt>Returns</dt><dd>the current instant </dd></dl>
+
+</div>
+</div>
+<a id="afbd18d48049b40bb79e3b00fcff2af69" name="afbd18d48049b40bb79e3b00fcff2af69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbd18d48049b40bb79e3b00fcff2af69">&#9670;&#160;</a></span>getFormatted()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,26 +195,34 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">String fr.softsf.sudokufx.common.util.MyDateTime.getFormatted </td>
           <td>(</td>
-          <td class="paramtype">LocalDateTime</td>          <td class="paramname"><span class="paramname"><em>updatedAt</em></span></td><td>)</td>
+          <td class="paramtype">Instant</td>          <td class="paramname"><span class="paramname"><em>timestamp</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Formats the given <code><a class="el" href="">LocalDateTime</a></code> based on the current locale. </p>
+<p>Formats the given <code><a class="el" href="">Instant</a></code> based on the current locale. </p>
+<p>Uses the clock's timezone for conversion (defaults to system timezone). Automatically handles daylight saving time transitions.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">updatedAt</td><td>the date-time to format; must not be <code class="JavaDocCode">null</code> </td></tr>
+    <tr><td class="paramname">timestamp</td><td>the timestamp to format; must not be <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the formatted date-time string </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">updatedAt</code> is <code class="JavaDocCode">null</code> </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">timestamp</code> is <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time_afbd18d48049b40bb79e3b00fcff2af69_cgraph.svg" width="474" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -195,14 +241,14 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the current time formatted as "HH:mm:ss". </p>
+<p>Returns the current time formatted as "HH:mm:ss" in the system timezone. </p>
+<p>Automatically handles daylight saving time transitions.</p>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the current time in "HH:mm:ss" format. </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab82bc53a8fad4c8cb7706a88b8446aab" name="ab82bc53a8fad4c8cb7706a88b8446aab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab82bc53a8fad4c8cb7706a88b8446aab">&#9670;&#160;</a></span>CLOCK</h2>
+<a id="a09175f364852bc9360747563b879ff60" name="a09175f364852bc9360747563b879ff60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09175f364852bc9360747563b879ff60">&#9670;&#160;</a></span>getLocaleFormatter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,12 +257,93 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"> final Clock fr.softsf.sudokufx.common.util.MyDateTime.CLOCK = Clock.systemDefaultZone()</td>
+          <td class="memname">DateTimeFormatter fr.softsf.sudokufx.common.util.MyDateTime.getLocaleFormatter </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the appropriate formatter based on current locale. </p>
+<dl class="section return"><dt>Returns</dt><dd>DateTimeFormatter for French or English </dd></dl>
+
+</div>
+</div>
+<a id="a74b97f78c396fface10682e7899e6046" name="a74b97f78c396fface10682e7899e6046"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74b97f78c396fface10682e7899e6046">&#9670;&#160;</a></span>resetClock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.common.util.MyDateTime.resetClock </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the clock to system default zone. </p>
+<p>Package-private to restrict usage to test classes. </p>
+
+</div>
+</div>
+<a id="ad53ae059496336e4031a459f25af146a" name="ad53ae059496336e4031a459f25af146a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53ae059496336e4031a459f25af146a">&#9670;&#160;</a></span>setClock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.common.util.MyDateTime.setClock </td>
+          <td>(</td>
+          <td class="paramtype">Clock</td>          <td class="paramname"><span class="paramname"><em>clock</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the clock (useful for testing). </p>
+<p>Package-private to restrict usage to test classes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clock</td><td>the clock to use; must not be <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">clock</code> is <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ad71533cc2d4fecff8714068f0ab663de" name="ad71533cc2d4fecff8714068f0ab663de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad71533cc2d4fecff8714068f0ab663de">&#9670;&#160;</a></span>clock</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Clock fr.softsf.sudokufx.common.util.MyDateTime.clock = Clock.systemDefaultZone()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -316,7 +443,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html">MyDateTime</a></li>
-    <li class="footer">Generated on Thu Oct 2 2025 21:07:08 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Oct 4 2025 15:53:48 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

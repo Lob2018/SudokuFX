@@ -114,7 +114,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dy
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size__coll__graph.svg" width="211" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size__coll__graph.svg" width="211" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -126,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab8db1ddff5ceeebfb60a76b8168a5f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current calculated font size in pixels.  <br /></td></tr>
 <tr class="separator:ab8db1ddff5ceeebfb60a76b8168a5f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f" id="r_a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a047fbfb7e3d7b9e30ddeaefbeb3c9a3f">updateFontSize</a> ()</td></tr>
-<tr class="memdesc:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the font size of the scene's root node using a dynamic stylesheet.  <br /></td></tr>
+<tr class="memdesc:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the font size of the scene's root node based on its current dimensions.  <br /></td></tr>
 <tr class="separator:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -146,8 +146,6 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:af2623ba6bf01a58e60f9f071b70b417d" id="r_af2623ba6bf01a58e60f9f071b70b417d"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2623ba6bf01a58e60f9f071b70b417d">EPSILON</a> = 0.01</td></tr>
-<tr class="separator:af2623ba6bf01a58e60f9f071b70b417d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0c423b995a530d5a430fd60d60d8ba4" id="r_af0c423b995a530d5a430fd60d60d8ba4"><td class="memItemLeft" align="right" valign="top">static final double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0c423b995a530d5a430fd60d60d8ba4">FONT_SIZE_RATIO</a> = 0.0219</td></tr>
 <tr class="separator:af0c423b995a530d5a430fd60d60d8ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a748f6ccae2053b8487ddd23ba51a541f" id="r_a748f6ccae2053b8487ddd23ba51a541f"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a748f6ccae2053b8487ddd23ba51a541f">ROOT_FONT_CSS_PREFIX</a> = &quot;data:text/css,.root { -fx-font-size: &quot;</td></tr>
@@ -267,9 +265,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Updates the font size of the scene's root node using a dynamic stylesheet. </p>
-<p>The new font size is applied only if it differs by at least <code><a class="el" href="#af2623ba6bf01a58e60f9f071b70b417d">EPSILON</a></code> from the current size. This reduces unnecessary stylesheet updates and memory allocations.</p>
-<p>A dynamic stylesheet is created or updated, leveraging JavaFX's caching mechanism for efficiency. The font size is calculated proportionally to the smaller dimension of the scene using <code><a class="el" href="#af0c423b995a530d5a430fd60d60d8ba4">FONT_SIZE_RATIO</a></code>. </p>
+<p>Updates the font size of the scene's root node based on its current dimensions. </p>
+<p>The font size scales with the smaller dimension of the scene using <code><a class="el" href="#af0c423b995a530d5a430fd60d60d8ba4">FONT_SIZE_RATIO</a></code>. Updates are applied only if the size changes significantly, reducing unnecessary stylesheet refreshes and memory allocations. A dynamic stylesheet is created or updated in the scene's stylesheets, leveraging JavaFX's internal caching. </p>
 
 </div>
 </div>
@@ -312,28 +309,6 @@ Static Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af2623ba6bf01a58e60f9f071b70b417d" name="af2623ba6bf01a58e60f9f071b70b417d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2623ba6bf01a58e60f9f071b70b417d">&#9670;&#160;</a></span>EPSILON</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final double fr.softsf.sudokufx.common.util.DynamicFontSize.EPSILON = 0.01</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -415,7 +390,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html">DynamicFontSize</a></li>
-    <li class="footer">Generated on Thu Oct 2 2025 21:07:08 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sat Oct 4 2025 15:53:48 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

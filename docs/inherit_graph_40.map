@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html" title="Utility class for generating secure passwords using the Passay library." alt="" coords="5,5,229,48"/>
+<area shape="rect" id="Node000000" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html" title="Abstract configuration class for setting up the application&#39;s data source." alt="" coords="5,121,229,164"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test_1_1_test_data_source_config.html" title=" " alt="" coords="277,5,546,64"/>
+<area shape="poly" id="edge8_Node000000_Node000001" title=" " alt="" coords="180,112,276,74,309,62,310,67,278,78,182,117"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds.html" title="Overrides Abstract DataSource hikariDataSource for the CDS profile." alt="" coords="300,88,523,131"/>
+<area shape="poly" id="edge9_Node000000_Node000002" title=" " alt="" coords="243,126,299,119,300,125,244,131"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_default.html" title="Overrides Abstract DataSource hikariDataSource for the default profile." alt="" coords="300,155,523,197"/>
+<area shape="poly" id="edge10_Node000000_Node000003" title=" " alt="" coords="244,154,300,161,299,166,243,160"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_test.html" title="Overrides Abstract DataSource hikariDataSource for the test profile." alt="" coords="300,221,523,264"/>
+<area shape="poly" id="edge11_Node000000_Node000004" title=" " alt="" coords="180,168,278,207,315,218,314,223,276,212,178,173"/>
 </map>

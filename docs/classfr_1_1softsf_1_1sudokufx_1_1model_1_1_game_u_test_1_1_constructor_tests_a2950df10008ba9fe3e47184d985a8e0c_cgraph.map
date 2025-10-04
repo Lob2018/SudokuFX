@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.model.GameUTest.ConstructorTests.givenValidParameters_whenCreatingGame_thenGameIsCreatedSuccessfully" name="fr.softsf.sudokufx.model.GameUTest.ConstructorTests.givenValidParameters_whenCreatingGame_thenGameIsCreatedSuccessfully">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,189,244,264"/>
 <area shape="poly" id="edge8_Node000001_Node000001" title=" " alt="" coords="75,188,78,178,88,170,103,165,125,163,150,165,166,173,163,178,148,171,124,168,104,170,90,175,82,181,80,190"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0930ceebcad98c4a5907feda4348d5d4" title="Returns the creation timestamp." alt="" coords="292,5,458,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#ab3e3c86412ae70c7102e512a980568c0" title="Returns the creation timestamp." alt="" coords="292,5,458,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,187,213,122,250,88,290,58,297,54,300,58,293,62,254,92,217,126,158,191"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a39eab33459e7da99e902a0ea83b1d77e" title="Returns the unique ID of the game." alt="" coords="292,72,458,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="182,186,290,124,302,119,304,124,293,129,185,191"/>
@@ -13,6 +13,6 @@
 <area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="245,256,278,265,277,270,244,261"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a45e9d6ccd85aa60f95f02d7b04b0840c" title="Returns whether the game is currently selected." alt="" coords="292,339,458,381"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="185,262,293,324,304,330,302,334,290,329,182,267"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a6b77600e01ae0a7529d6a4914d105ea1" title="Returns the last update timestamp." alt="" coords="292,405,458,448"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a4011299b15b8321fc006067e66f50cb3" title="Returns the last update timestamp." alt="" coords="292,405,458,448"/>
 <area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="158,263,217,327,254,361,293,391,300,395,297,400,290,396,250,365,213,331,154,266"/>
 </map>

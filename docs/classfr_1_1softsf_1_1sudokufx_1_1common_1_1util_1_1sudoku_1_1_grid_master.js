@@ -30,7 +30,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master =
     [ "sommeDesPossibilitesDeLaGrille", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380", null ],
     [ "verifieQueChaqueValeurEstUnePossibilite", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9f77177ae439a5e7b1cfa0394be13ae8", null ],
     [ "DEFAULT_INDICES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#afe4fd2bdabd6aa74645efa0f9588398b", null ],
-    [ "derniereDemande", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#ad1a4301c6ca7706813dfe6f71f619269", null ],
+    [ "derniereDemande", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aafd69742820af4b4d6352212598c40a4", null ],
     [ "DIFFICILE_MAX_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a395e4852c17ef149cfff3f7d38db91a3", null ],
     [ "DIFFICILE_MOY_CACHEES", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a119f60876136e9b4d4929d0e8e2328ea", null ],
     [ "DIMENSION", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a1770bd06a646ed63872568ce3f17817e", null ],

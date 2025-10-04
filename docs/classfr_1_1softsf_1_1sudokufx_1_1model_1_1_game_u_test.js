@@ -12,6 +12,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test =
     [ "mockGameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#a93e179eecff30ff8095187bbc540bfdb", null ],
     [ "mockGrid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#a6a8ba4e0c77a4230a32e935947f8b956", null ],
     [ "mockPlayer", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#ade52965ca581f7a3935077795716d807", null ],
-    [ "testCreatedAt", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#a512466cb71da96bfff000005c8b0a536", null ],
-    [ "testUpdatedAt", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#a9da9468d21ebc1b9fbf3650f30e93c25", null ]
+    [ "testCreatedAt", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#a45dc7939f1b08db7b07e4c5145a0ac6e", null ],
+    [ "testUpdatedAt", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html#a8aa48868b148c3b1985c784d55c4a7ec", null ]
 ];

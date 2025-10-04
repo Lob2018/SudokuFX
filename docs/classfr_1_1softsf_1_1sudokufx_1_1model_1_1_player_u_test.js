@@ -11,5 +11,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test =
     [ "mockMenu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#aeefa2837e0f77d5117c6056dcb23b671", null ],
     [ "mockOptions", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#a0c7b67895e76bf5c5bc79914c70aa90d", null ],
     [ "mockPlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#a7a44fc8c3f0db2512a753b44b5bddeb5", null ],
-    [ "testNow", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#a698a106f311ad4e9f6926f474d2b9f0a", null ]
+    [ "testNow", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html#afb5a35b660f457e3f3b5ed11f52acd78", null ]
 ];

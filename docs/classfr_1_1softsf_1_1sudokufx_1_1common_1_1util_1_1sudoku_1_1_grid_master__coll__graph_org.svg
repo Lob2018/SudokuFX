@@ -16,7 +16,7 @@
 <text text-anchor="start" x="11.38" y="-1414.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="start" x="72.5" y="-1402.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster</text>
 <text text-anchor="start" x="13.75" y="-1386.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="23.12" y="-1386.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalDateTime derniereDemande</text>
+<text text-anchor="start" x="23.12" y="-1386.5" font-family="Helvetica,sans-Serif" font-size="10.00">Instant derniereDemande</text>
 <text text-anchor="start" x="13.75" y="-1370.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="23.12" y="-1370.5" font-family="Helvetica,sans-Serif" font-size="10.00">int moyenMaxPossibilites</text>
 <text text-anchor="start" x="13.75" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

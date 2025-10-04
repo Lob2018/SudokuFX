@@ -1,4 +1,24 @@
 var searchData=
 [
-  ['resourceloadexception_0',['ResourceLoadException',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception.html',1,'fr::softsf::sudokufx::common::exception']]]
+  ['playeffecttests_0',['PlayEffectTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_effect_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::ui::AudioServiceUTest']]],
+  ['player_1',['Player',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html',1,'fr::softsf::sudokufx::model']]],
+  ['playerbuilder_2',['PlayerBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_1_1_player_builder.html',1,'fr::softsf::sudokufx::model::Player']]],
+  ['playerlanguage_3',['PlayerLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html',1,'fr::softsf::sudokufx::model']]],
+  ['playerlanguagebuilder_4',['PlayerLanguageBuilder',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_1_1_player_language_builder.html',1,'fr::softsf::sudokufx::model::PlayerLanguage']]],
+  ['playerlanguagerepository_5',['PlayerLanguageRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html',1,'fr::softsf::sudokufx::repository']]],
+  ['playerlanguageservice_6',['PlayerLanguageService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html',1,'fr::softsf::sudokufx::service::business']]],
+  ['playerlanguageserviceutest_7',['PlayerLanguageServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_language_service_u_test.html',1,'fr::softsf::sudokufx::testing::unit::service::business']]],
+  ['playerlanguageutest_8',['PlayerLanguageUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html',1,'fr::softsf::sudokufx::model']]],
+  ['playerrepository_9',['PlayerRepository',['../interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html',1,'fr::softsf::sudokufx::repository']]],
+  ['playerservice_10',['PlayerService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html',1,'fr::softsf::sudokufx::service::business']]],
+  ['playerserviceutest_11',['PlayerServiceUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html',1,'fr::softsf::sudokufx::testing::unit::service::business']]],
+  ['playerstateholder_12',['PlayerStateHolder',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
+  ['playerstateholderitest_13',['PlayerStateHolderITest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html',1,'fr::softsf::sudokufx::testing::integration::viewmodel::state']]],
+  ['playerstateholderutest_14',['PlayerStateHolderUTest',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html',1,'fr::softsf::sudokufx::viewmodel::state']]],
+  ['playerutest_15',['PlayerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html',1,'fr::softsf::sudokufx::model']]],
+  ['playsongtests_16',['PlaySongTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::ui::AudioServiceUTest']]],
+  ['possibilitystarshbox_17',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html',1,'fr::softsf::sudokufx::view::component']]],
+  ['possibilitystarshboxstub_18',['PossibilityStarsHBoxStub',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModelUTest']]],
+  ['poweroften_19',['PowerOfTen',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten.html',1,'fr::softsf::sudokufx::common::util::math']]],
+  ['poweroftenutest_20',['PowerOfTenUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util::math']]]
 ];

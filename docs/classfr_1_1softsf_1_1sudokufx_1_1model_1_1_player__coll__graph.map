@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.model.Player" name="fr.softsf.sudokufx.model.Player">
-<area shape="rect" id="Node000001" title="Represents a player in the SudokuFX application." alt="" coords="200,1184,502,2336"/>
+<area shape="rect" id="Node000001" title="Represents a player in the SudokuFX application." alt="" coords="212,1184,490,2304"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" title="Represents a player&#39;s language in the SudokuFX application." alt="" coords="5,299,202,827"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,826,217,1119,227,1167,222,1168,212,1121,153,827"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,826,217,1119,227,1167,222,1168,212,1121,152,827"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user&#45;configurable options for the SudokuFX application." alt="" coords="227,5,474,1120"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="353,1120,353,1167,348,1167,348,1120"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" title="Represents a Menu configuration with a unique ID and a mode." alt="" coords="498,416,686,709"/>

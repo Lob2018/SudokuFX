@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a636c644e61f487ae0736a0ef77326e4c" target="_top" xlink:title="Returns the update timestamp.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7b5aecb095900d44b68cf4b4b5691d3c" target="_top" xlink:title="Returns the update timestamp.">
 <polygon fill="white" stroke="#666666" points="331.25,-82 206.5,-82 206.5,-50 331.25,-50 331.25,-82"/>
 <text text-anchor="start" x="214.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="268.88" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getUpdatedat</text>
@@ -70,7 +70,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac4232209b56a87f81f1248303f09b02d" target="_top" xlink:title="Sets the update timestamp after validation.">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" target="_top" xlink:title="Sets the update timestamp after validation.">
 <polygon fill="white" stroke="#666666" points="331.25,-32 206.5,-32 206.5,0 331.25,0 331.25,-32"/>
 <text text-anchor="start" x="214.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="268.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.setUpdatedat</text>
@@ -89,7 +89,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9be097e3c5eee99752c203f22fe774a3" target="_top" xlink:title="Validates that the update date is not null.">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" target="_top" xlink:title="Validates that the update date is not null.">
 <polygon fill="white" stroke="#666666" points="494.25,-32 367.25,-32 367.25,0 494.25,0 494.25,-32"/>
 <text text-anchor="start" x="375.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="430.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.validateUpdatedAt</text>

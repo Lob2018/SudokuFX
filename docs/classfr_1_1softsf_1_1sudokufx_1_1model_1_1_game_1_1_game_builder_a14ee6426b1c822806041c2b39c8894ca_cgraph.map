@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.Game.GameBuilder.createdat" name="fr.softsf.sudokufx.model.Game.GameBuilder.createdat">
+<area shape="rect" id="Node000001" title="Sets the creation timestamp." alt="" coords="5,5,199,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a232242cd4ddeae26b3c8e116fd53887b" title="Ensures that the creation timestamp is not null." alt="" coords="247,5,413,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,24,231,24,231,29,199,29"/>
+</map>

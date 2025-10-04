@@ -1,0 +1,13 @@
+<map id="src/test/java/fr/softsf/sudokufx/testing/unit/common/util/math/NumberUtilsUTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/common/util/math/NumberUtilsUTest.java">
+<area shape="rect" id="Node000001" title=" " alt="" coords="352,5,621,64"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,120,165,147"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="368,67,153,119,152,113,366,62"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="188,120,344,147"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="422,67,310,116,308,111,420,62"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="369,112,604,155"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="489,64,489,97,484,97,484,64"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="629,112,864,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="565,62,677,104,675,109,563,67"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="888,120,1090,147"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="622,59,908,114,907,119,621,64"/>
+</map>

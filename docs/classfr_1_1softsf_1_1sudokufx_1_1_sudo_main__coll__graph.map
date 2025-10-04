@@ -45,6 +45,6 @@
 <area shape="poly" id="edge22_Node000005_Node000021" title=" " alt="" coords="1042,995,1049,1062,1061,1129,1067,1155,1061,1157,1055,1130,1044,1063,1036,996"/>
 <area shape="rect" id="Node000022" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html" title="A centralized service for sending toast notifications to the UI." alt="" coords="1356,663,1602,1089"/>
 <area shape="poly" id="edge24_Node000005_Node000022" title=" " alt="" coords="1386,1090,1319,1239,1314,1237,1381,1088"/>
-<area shape="rect" id="Node000023" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions." alt="" coords="1626,716,1826,1036"/>
-<area shape="poly" id="edge25_Node000005_Node000023" title=" " alt="" coords="1651,1037,1616,1091,1547,1178,1471,1262,1395,1339,1323,1407,1319,1403,1391,1335,1467,1258,1543,1175,1612,1088,1647,1034"/>
+<area shape="rect" id="Node000023" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions." alt="" coords="1626,735,1826,1017"/>
+<area shape="poly" id="edge25_Node000005_Node000023" title=" " alt="" coords="1662,1019,1616,1091,1547,1178,1471,1262,1395,1339,1323,1407,1319,1403,1391,1335,1467,1258,1543,1175,1612,1088,1657,1016"/>
 </map>

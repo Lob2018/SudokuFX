@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a3e2539c5dbbdb42f1a149cfbe74cfb49" target="_top" xlink:title="Generates a sample GameDto instance for testing purposes.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a2902ae5da523abf8235a857f79449f24" target="_top" xlink:title="Generates a sample GameDto instance for testing purposes.">
 <polygon fill="white" stroke="#666666" points="421.25,-32 205.75,-32 205.75,0 421.25,0 421.25,-32"/>
 <text text-anchor="start" x="213.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="313.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.createBackupGameDto</text>

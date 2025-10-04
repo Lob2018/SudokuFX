@@ -8,7 +8,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model =
     [ "cellConfirmationMessageProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#ae8fd54720d3bf9eed7e6818910574eb0", null ],
     [ "cellConfirmationTitleProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a5ab4585818714dcc320d52514c418a23", null ],
     [ "cellDeleteAccessibleTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a0ff146482b5bc658c0f2d6525ebc793a", null ],
-    [ "createBackupGameDto", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a3e2539c5dbbdb42f1a149cfbe74cfb49", null ],
+    [ "createBackupGameDto", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a2902ae5da523abf8235a857f79449f24", null ],
     [ "createFormattedAndConcatenatedBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#aba24d6de5b6e7dcd4d1ad46be452c356", null ],
     [ "createStringBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a8ce6e7af8609d5814b7c1635a89be8ad", null ],
     [ "getBackups", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a9096435064acd108290c71d223487b2a", null ],

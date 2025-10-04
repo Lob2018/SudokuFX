@@ -98,7 +98,7 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a026951bada7d16d7220aaf6bd25f5268" target="_top" xlink:title="Returns the creation timestamp.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0e8299c8545c4559edf798a8d8cc894e" target="_top" xlink:title="Returns the creation timestamp.">
 <polygon fill="white" stroke="#666666" points="347.38,-432 222.62,-432 222.62,-400 347.38,-400 347.38,-432"/>
 <text text-anchor="start" x="230.62" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getCreatedat</text>
@@ -250,7 +250,7 @@ var sectionId = 'dynsection-1';
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a636c644e61f487ae0736a0ef77326e4c" target="_top" xlink:title="Returns the update timestamp.">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7b5aecb095900d44b68cf4b4b5691d3c" target="_top" xlink:title="Returns the update timestamp.">
 <polygon fill="white" stroke="#666666" points="347.38,-32 222.62,-32 222.62,0 347.38,0 347.38,-32"/>
 <text text-anchor="start" x="230.62" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.model.</text>
 <text text-anchor="middle" x="285" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player.getUpdatedat</text>
