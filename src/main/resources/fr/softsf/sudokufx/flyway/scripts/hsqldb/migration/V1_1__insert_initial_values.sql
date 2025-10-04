@@ -100,8 +100,8 @@ INSERT
                 mode = 1
         ),
         TRUE,
-        NOW(),
-        NOW()
+        CURRENT_TIMESTAMP AT TIME ZONE 'UTC',
+        CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
     );
 
 -- Creating values for initial grid
@@ -155,6 +155,6 @@ INSERT
                 LEVEL = 1 LIMIT 1
         ),
         TRUE,
-        NOW(),
-        NOW()
+        CURRENT_TIMESTAMP AT TIME ZONE 'UTC',
+        CURRENT_TIMESTAMP AT TIME ZONE 'UTC'
     );
