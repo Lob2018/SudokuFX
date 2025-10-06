@@ -5,44 +5,27 @@
  */
 package fr.softsf.sudokufx.common.util.math;
 
-import java.util.OptionalDouble;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Utility singleton for safe and approximate numeric operations.
- *
- * <p>Implemented as an {@code enum} singleton to ensure thread-safety and single-instance semantics
- * without relying on dependency injection frameworks. This guarantees availability even in
- * non-managed environments.
- *
- * <p>Usage example:
- *
- * <pre>{@code
- * OptionalDouble ratio = NumberUtils.INSTANCE.safeDivide(10.0, 2.0);
- * boolean equal = NumberUtils.INSTANCE.areDoublesEqual(0.1 + 0.2, 0.3);
- * }</pre>
- */
+/** Singleton utility for safe and approximate numeric operations. */
 public enum NumberUtils {
     INSTANCE;
 
     private static final Logger LOG = LoggerFactory.getLogger(NumberUtils.class);
     private static final double DEFAULT_DOUBLE_EPSILON = PowerOfTen.DOUBLE_EPSILON.getValue();
-    private static final double DEFAULT_CENTI_EPSILON = PowerOfTen.CENTI_EPSILON.getValue();
 
     /**
      * Safely divides two doubles, treating near-zero denominators as invalid.
      *
-     * <p>Returns an empty {@link OptionalDouble} if the denominator is zero or its absolute value
-     * is strictly less than the internal epsilon threshold, or if the result is NaN or Infinity.
-     * Errors are logged.
+     * <p>Returns {@link Double#NaN} if the denominator is zero, too small, or if the division
+     * produces NaN or Infinity. Errors are logged.
      *
      * @param numerator the numerator
      * @param denominator the denominator
-     * @return an {@link OptionalDouble} containing the result, or empty if invalid
+     * @return the division result, or {@link Double#NaN} if invalid
      */
-    public OptionalDouble safeDivide(double numerator, double denominator) {
+    public double safeDivide(double numerator, double denominator) {
         double epsilon = DEFAULT_DOUBLE_EPSILON;
         if (Math.abs(denominator) < epsilon) {
             LOG.error(
@@ -50,7 +33,7 @@ public enum NumberUtils {
                     numerator,
                     denominator,
                     epsilon);
-            return OptionalDouble.empty();
+            return Double.NaN;
         }
         double result = numerator / denominator;
         if (Double.isNaN(result) || Double.isInfinite(result)) {
@@ -58,38 +41,42 @@ public enum NumberUtils {
                     "SafeDivide invalid division result: numerator={} / denominator={}",
                     numerator,
                     denominator);
-            return OptionalDouble.empty();
+            return Double.NaN;
         }
-        return OptionalDouble.of(result);
+        return result;
     }
 
     /**
-     * Compares two doubles for approximate equality using the default epsilon threshold.
-     *
-     * <p>Returns {@code true} if the absolute difference between {@code a} and {@code b} is less
-     * than or equal to {@code DEFAULT_DOUBLE_EPSILON}, currently sourced from {@link
-     * PowerOfTen#DOUBLE_EPSILON}.
-     *
-     * @param a the first value
-     * @param b the second value
-     * @return {@code true} if the values are approximately equal, {@code false} otherwise
+     * Compares two doubles using one ULP tolerance (very strict). Equivalent to Apache's equals(x,
+     * y).
      */
-    public boolean areDoublesEqual(double a, double b) {
-        return Math.abs(a - b) <= DEFAULT_DOUBLE_EPSILON;
+    public boolean areDoublesEqual(double x, double y) {
+        return equalsUlps(x, y, 1);
     }
 
     /**
-     * Compares two doubles for approximate equality using a relaxed epsilon threshold.
-     *
-     * <p>Returns {@code true} if the absolute difference between {@code a} and {@code b} is less
-     * than or equal to {@code DEFAULT_CENTI_EPSILON}, currently sourced from {@link
-     * PowerOfTen#CENTI_EPSILON}.
-     *
-     * @param a the first value
-     * @param b the second value
-     * @return {@code true} if the values are approximately equal, {@code false} otherwise
+     * Compares two doubles with a given decimal tolerance (epsilon). Returns true if |x - y| <= eps
+     * or if they differ by <= 1 ULP.
      */
-    public boolean areDoublesEqualCenti(double a, double b) {
-        return Math.abs(a - b) <= DEFAULT_CENTI_EPSILON;
+    public boolean areDoublesEqualEpsilon(double x, double y, double eps) {
+        return equalsUlps(x, y, 1) || Math.abs(x - y) <= eps;
+    }
+
+    /**
+     * Common ULP-based comparison (used internally). Returns true if both doubles differ by at most
+     * maxUlps units.
+     */
+    private boolean equalsUlps(double x, double y, int maxUlps) {
+        if (Double.isNaN(x) || Double.isNaN(y)) {
+            return false;
+        }
+        long xBits = Double.doubleToRawLongBits(x);
+        long yBits = Double.doubleToRawLongBits(y);
+        if ((xBits ^ yBits) < 0) {
+            long xMag = xBits & Long.MAX_VALUE;
+            long yMag = yBits & Long.MAX_VALUE;
+            return xMag <= maxUlps && yMag <= (maxUlps - xMag);
+        }
+        return Math.abs(xBits - yBits) <= maxUlps;
     }
 }

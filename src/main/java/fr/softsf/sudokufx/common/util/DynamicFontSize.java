@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.math.NumberUtils;
+import fr.softsf.sudokufx.common.util.math.PowerOfTen;
 
 /**
  * Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.
@@ -23,6 +24,7 @@ public final class DynamicFontSize {
 
     private static final double FONT_SIZE_RATIO = 0.0219;
     private static final String ROOT_FONT_CSS_PREFIX = "data:text/css,.root { -fx-font-size: ";
+    private static final double DEFAULT_CENTI_EPSILON = PowerOfTen.CENTI_EPSILON.getValue();
 
     private final Scene scene;
     private double currentFontSize = -1;
@@ -79,7 +81,8 @@ public final class DynamicFontSize {
      */
     public void updateFontSize() {
         double fontSize = Math.min(scene.getWidth(), scene.getHeight()) * FONT_SIZE_RATIO;
-        if (NumberUtils.INSTANCE.areDoublesEqualCenti(fontSize, currentFontSize)) {
+        if (NumberUtils.INSTANCE.areDoublesEqualEpsilon(
+                fontSize, currentFontSize, DEFAULT_CENTI_EPSILON)) {
             return;
         }
         currentFontSize = fontSize;

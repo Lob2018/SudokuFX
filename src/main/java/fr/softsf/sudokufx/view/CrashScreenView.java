@@ -9,7 +9,6 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.Year;
 import java.util.Objects;
-import java.util.OptionalDouble;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -204,12 +203,11 @@ public final class CrashScreenView implements IMainView {
                 crashScreenFontSize,
                 0,
                 0);
-        OptionalDouble optionalStroke =
+        double strokeWidth =
                 NumberUtils.INSTANCE.safeDivide(crashScreenFontSize, SVG_STROKE_DIVISOR);
-        if (optionalStroke.isEmpty()) {
+        if (Double.isNaN(strokeWidth)) {
             return;
         }
-        double strokeWidth = optionalStroke.getAsDouble();
         crashscreenvboxTophboxRegionsudosvg.setStyle(
                 String.format(
                         "-fx-background-color: linear-gradient(to bottom, #FFBE99, #FF4340);"

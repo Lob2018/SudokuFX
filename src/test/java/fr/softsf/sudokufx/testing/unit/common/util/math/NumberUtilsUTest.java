@@ -5,8 +5,6 @@
  */
 package fr.softsf.sudokufx.testing.unit.common.util.math;
 
-import java.util.OptionalDouble;
-
 import org.junit.jupiter.api.Test;
 
 import fr.softsf.sudokufx.common.util.math.NumberUtils;
@@ -18,34 +16,33 @@ class NumberUtilsUTest {
 
     @Test
     void givenValidNumeratorAndDenominator_whenSafeDivide_thenReturnsCorrectResult() {
-        OptionalDouble result = NumberUtils.INSTANCE.safeDivide(10.0, 2.0);
-        assertTrue(result.isPresent());
-        assertEquals(5.0, result.getAsDouble(), 1e-12);
+        double result = NumberUtils.INSTANCE.safeDivide(10.0, 2.0);
+        assertEquals(5.0, result, 1e-12);
     }
 
     @Test
-    void givenZeroDenominator_whenSafeDivide_thenReturnsEmpty() {
-        OptionalDouble result = NumberUtils.INSTANCE.safeDivide(10.0, 0.0);
-        assertTrue(result.isEmpty());
+    void givenZeroDenominator_whenSafeDivide_thenReturnsNaN() {
+        double result = NumberUtils.INSTANCE.safeDivide(10.0, 0.0);
+        assertTrue(Double.isNaN(result));
     }
 
     @Test
-    void givenVerySmallDenominator_whenSafeDivide_thenReturnsEmpty() {
+    void givenVerySmallDenominator_whenSafeDivide_thenReturnsNaN() {
         double tiny = PowerOfTen.DOUBLE_EPSILON.getValue() / 2;
-        OptionalDouble result = NumberUtils.INSTANCE.safeDivide(1.0, tiny);
-        assertTrue(result.isEmpty());
+        double result = NumberUtils.INSTANCE.safeDivide(1.0, tiny);
+        assertTrue(Double.isNaN(result));
     }
 
     @Test
-    void givenDivisionProducingNaN_whenSafeDivide_thenReturnsEmpty() {
-        OptionalDouble result = NumberUtils.INSTANCE.safeDivide(0.0, 0.0);
-        assertTrue(result.isEmpty());
+    void givenDivisionProducingNaN_whenSafeDivide_thenReturnsNaN() {
+        double result = NumberUtils.INSTANCE.safeDivide(0.0, 0.0);
+        assertTrue(Double.isNaN(result));
     }
 
     @Test
-    void givenDivisionProducingInfinity_whenSafeDivide_thenReturnsEmpty() {
-        OptionalDouble result = NumberUtils.INSTANCE.safeDivide(Double.MAX_VALUE, 1e-300);
-        assertTrue(result.isEmpty());
+    void givenDivisionProducingInfinity_whenSafeDivide_thenReturnsNaN() {
+        double result = NumberUtils.INSTANCE.safeDivide(Double.MAX_VALUE, 1e-300);
+        assertTrue(Double.isNaN(result));
     }
 
     @Test
@@ -55,11 +52,15 @@ class NumberUtilsUTest {
     }
 
     @Test
-    void givenTwoDoublesWithinCentiEpsilon_whenAreDoublesEqualCenti_thenReturnsTrue() {
+    void givenTwoDoublesWithinCentiEpsilon_whenAreDoublesEqualEpsilon_thenReturnsTrue() {
         double a = 0.1;
         double b = 0.1 + PowerOfTen.CENTI_EPSILON.getValue() / 2;
-        assertTrue(NumberUtils.INSTANCE.areDoublesEqualCenti(a, b));
+        assertTrue(
+                NumberUtils.INSTANCE.areDoublesEqualEpsilon(
+                        a, b, PowerOfTen.CENTI_EPSILON.getValue()));
         double c = 0.1 + PowerOfTen.CENTI_EPSILON.getValue() * 2;
-        assertFalse(NumberUtils.INSTANCE.areDoublesEqualCenti(a, c));
+        assertFalse(
+                NumberUtils.INSTANCE.areDoublesEqualEpsilon(
+                        a, c, PowerOfTen.CENTI_EPSILON.getValue()));
     }
 }
