@@ -665,34 +665,37 @@
 <g id="Node000020" class="node">
 <title>Node20</title>
 <g id="a_Node000020"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" target="_top" xlink:title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.">
-<polygon fill="white" stroke="none" points="1412.5,-1114 1262.5,-1114 1262.5,-902 1412.5,-902 1412.5,-1114"/>
-<text text-anchor="start" x="1269.62" y="-1100.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
-<text text-anchor="start" x="1298.5" y="-1088.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize</text>
-<text text-anchor="start" x="1268" y="-1072.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1276.5" y="-1072.5" font-family="Helvetica,sans-Serif" font-size="10.00">double currentFontSize</text>
-<text text-anchor="start" x="1268" y="-1056.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1276.5" y="-1056.5" font-family="Helvetica,sans-Serif" font-size="10.00">int dynamicStylesheetIndex</text>
-<text text-anchor="start" x="1268" y="-1040.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1276.5" y="-1040.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Scene scene</text>
-<text text-anchor="start" x="1268" y="-1024.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1276.5" y="-1024.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="1276.5" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FONT_SIZE_RATIO</text>
-<text text-anchor="start" x="1268" y="-996.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1276.5" y="-996.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="1276.5" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROOT_FONT_CSS_PREFIX</text>
-<text text-anchor="start" x="1266.5" y="-968.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1276.5" y="-968.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize(Scene</text>
-<text text-anchor="start" x="1276.5" y="-956.5" font-family="Helvetica,sans-Serif" font-size="10.00"> scene)</text>
-<text text-anchor="start" x="1266.5" y="-940.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1276.5" y="-940.5" font-family="Helvetica,sans-Serif" font-size="10.00">double getCurrentFontSize()</text>
-<text text-anchor="start" x="1266.5" y="-924.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1276.5" y="-924.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateFontSize()</text>
-<text text-anchor="start" x="1268" y="-908.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1276.5" y="-908.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
-<polygon fill="#666666" stroke="#666666" points="1262.5,-1084 1262.5,-1084 1412.5,-1084 1412.5,-1084 1262.5,-1084"/>
-<polygon fill="#666666" stroke="#666666" points="1262.5,-980 1262.5,-980 1274.5,-980 1274.5,-980 1262.5,-980"/>
-<polygon fill="#666666" stroke="#666666" points="1274.5,-980 1274.5,-980 1412.5,-980 1412.5,-980 1274.5,-980"/>
-<polygon fill="none" stroke="#666666" points="1262.5,-902 1262.5,-1114 1412.5,-1114 1412.5,-902 1262.5,-902"/>
+<polygon fill="white" stroke="none" points="1412.5,-1128 1262.5,-1128 1262.5,-888 1412.5,-888 1412.5,-1128"/>
+<text text-anchor="start" x="1269.62" y="-1114.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
+<text text-anchor="start" x="1298.5" y="-1102.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize</text>
+<text text-anchor="start" x="1268" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1276.5" y="-1086.5" font-family="Helvetica,sans-Serif" font-size="10.00">double currentFontSize</text>
+<text text-anchor="start" x="1268" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1276.5" y="-1070.5" font-family="Helvetica,sans-Serif" font-size="10.00">int dynamicStylesheetIndex</text>
+<text text-anchor="start" x="1268" y="-1054.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1276.5" y="-1054.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Scene scene</text>
+<text text-anchor="start" x="1268" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1276.5" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="1276.5" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00"> DEFAULT_CENTI_EPSILON</text>
+<text text-anchor="start" x="1268" y="-1010.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1276.5" y="-1010.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="1276.5" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FONT_SIZE_RATIO</text>
+<text text-anchor="start" x="1268" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1276.5" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="1276.5" y="-970.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ROOT_FONT_CSS_PREFIX</text>
+<text text-anchor="start" x="1266.5" y="-954.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1276.5" y="-954.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize(Scene</text>
+<text text-anchor="start" x="1276.5" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00"> scene)</text>
+<text text-anchor="start" x="1266.5" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1276.5" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00">double getCurrentFontSize()</text>
+<text text-anchor="start" x="1266.5" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1276.5" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateFontSize()</text>
+<text text-anchor="start" x="1268" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1276.5" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initialize()</text>
+<polygon fill="#666666" stroke="#666666" points="1262.5,-1098 1262.5,-1098 1412.5,-1098 1412.5,-1098 1262.5,-1098"/>
+<polygon fill="#666666" stroke="#666666" points="1262.5,-966 1262.5,-966 1274.5,-966 1274.5,-966 1262.5,-966"/>
+<polygon fill="#666666" stroke="#666666" points="1274.5,-966 1274.5,-966 1412.5,-966 1412.5,-966 1274.5,-966"/>
+<polygon fill="none" stroke="#666666" points="1262.5,-888 1262.5,-1128 1412.5,-1128 1412.5,-888 1262.5,-888"/>
 </a>
 </g>
 </g>
@@ -700,7 +703,7 @@
 <g id="edge22_Node000002_Node000020" class="edge">
 <title>Node20&#45;&gt;Node2</title>
 <g id="a_edge22_Node000002_Node000020"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1287.74,-902.14C1277.34,-883.52 1265.77,-864.74 1253.5,-848 1189.08,-760.13 1101.21,-672.96 1034,-611.37"/>
+<path fill="none" stroke="#63b8ff" d="M1279.79,-888.28C1271.56,-874.33 1262.73,-860.59 1253.5,-848 1189.08,-760.13 1101.21,-672.96 1034,-611.37"/>
 <polygon fill="none" stroke="#63b8ff" points="1034.19,-611.55 1027.06,-610.46 1025.32,-603.46 1032.45,-604.55 1034.19,-611.55"/>
 </a>
 </g>

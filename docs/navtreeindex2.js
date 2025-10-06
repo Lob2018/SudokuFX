@@ -1,5 +1,15 @@
 var NAVTREEINDEX2 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a87cce49067a5dce9e0fa26ca41c7a684":[1,0,0,0,0,1,4,1,2,38],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a87cce49067a5dce9e0fa26ca41c7a684":[2,0,0,0,0,1,4,1,2,38],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a94424450acb912e32c7548e6659b617a":[1,0,0,0,0,1,4,1,2,22],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a94424450acb912e32c7548e6659b617a":[1,0,0,0,0,1,4,1,2,23],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a94424450acb912e32c7548e6659b617a":[2,0,0,0,0,1,4,1,2,22],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a94424450acb912e32c7548e6659b617a":[2,0,0,0,0,1,4,1,2,23],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a973a5ac2260605b8a260934b7e68373d":[1,0,0,0,0,1,4,1,2,19],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a973a5ac2260605b8a260934b7e68373d":[2,0,0,0,0,1,4,1,2,19],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9b8bd941281b6f721a280a838ec16edc":[1,0,0,0,0,1,4,1,2,49],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9b8bd941281b6f721a280a838ec16edc":[2,0,0,0,0,1,4,1,2,49],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9f77177ae439a5e7b1cfa0394be13ae8":[1,0,0,0,0,1,4,1,2,28],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9f77177ae439a5e7b1cfa0394be13ae8":[2,0,0,0,0,1,4,1,2,28],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa02cf3b663a01c00a69643a5f7716eb7":[1,0,0,0,0,1,4,1,2,36],
@@ -239,15 +249,5 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a1d981fbc5ac12da9cacc785a8052e318":[1,0,0,0,0,2,0,2,16],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a1d981fbc5ac12da9cacc785a8052e318":[2,0,0,0,0,2,0,2,16],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a29d06446266f63c94e41b8eb82b32847":[1,0,0,0,0,2,0,2,3],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a29d06446266f63c94e41b8eb82b32847":[2,0,0,0,0,2,0,2,3],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a330834fe482f315261f10da3290614dd":[1,0,0,0,0,2,0,2,19],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a330834fe482f315261f10da3290614dd":[2,0,0,0,0,2,0,2,19],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a408a4b06612f40c1c700c61dfded635b":[1,0,0,0,0,2,0,2,14],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a408a4b06612f40c1c700c61dfded635b":[2,0,0,0,0,2,0,2,14],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a4e0c9cd1616de5732520be76f91ebd85":[1,0,0,0,0,2,0,2,10],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a4e0c9cd1616de5732520be76f91ebd85":[2,0,0,0,0,2,0,2,10],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5b0d0ea827857752fe45ac9bfc4edae3":[1,0,0,0,0,2,0,2,15],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5b0d0ea827857752fe45ac9bfc4edae3":[2,0,0,0,0,2,0,2,15],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5b35f5af429100ab131dc83ac4b9a2ca":[1,0,0,0,0,2,0,2,11],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5b35f5af429100ab131dc83ac4b9a2ca":[1,0,0,0,0,2,0,2,12]
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a29d06446266f63c94e41b8eb82b32847":[2,0,0,0,0,2,0,2,3]
 };

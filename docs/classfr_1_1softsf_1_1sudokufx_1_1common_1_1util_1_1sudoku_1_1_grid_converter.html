@@ -99,6 +99,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sud
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.common.util.sudoku.GridConverter Interface Reference</div></div>
@@ -156,10 +157,18 @@ gridValue</code>.  <br /></td></tr>
 <tr class="memdesc:a2a8668e694bf146ee26957238c1a0869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a list of 81 cell values into an int array.  <br /></td></tr>
 <tr class="separator:a2a8668e694bf146ee26957238c1a0869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6df86568a12e78df95dddcb3426a59bf" id="r_a6df86568a12e78df95dddcb3426a59bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6df86568a12e78df95dddcb3426a59bf">validateDigitsAndNoRepeats</a> (String cell)</td></tr>
+<tr class="memdesc:a6df86568a12e78df95dddcb3426a59bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates that the cell contains only digits 1-9 with no repeats.  <br /></td></tr>
+<tr class="separator:a6df86568a12e78df95dddcb3426a59bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:afb36d4b7771e958c393f902d10e036ed" id="r_afb36d4b7771e958c393f902d10e036ed"><td class="memItemLeft" align="right" valign="top">static final String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb36d4b7771e958c393f902d10e036ed">GRID_ARRAY_MUST_NOT_BE_NULL</a> = &quot;Grid array must not be null&quot;</td></tr>
 <tr class="separator:afb36d4b7771e958c393f902d10e036ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1dc9511179c3d3870d167a2f2d2f16" id="r_a5e1dc9511179c3d3870d167a2f2d2f16"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e1dc9511179c3d3870d167a2f2d2f16">MAXIMUM_GRID_VALUE_LENGTH</a> = <a class="el" href="#a35a3740282186056366e17b029ab32b5">TOTAL_CELLS</a> * 10</td></tr>
+<tr class="separator:a5e1dc9511179c3d3870d167a2f2d2f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35a3740282186056366e17b029ab32b5" id="r_a35a3740282186056366e17b029ab32b5"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35a3740282186056366e17b029ab32b5">TOTAL_CELLS</a> = 81</td></tr>
 <tr class="separator:a35a3740282186056366e17b029ab32b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -359,6 +368,13 @@ or "0" / empty string if the cell is empty </li>
         </tr>
       </table>
 </div><div class="memdoc">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_a0a620cc7c73ec5b86140b25db3f2d6bb_cgraph.svg" width="582" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -379,7 +395,7 @@ or "0" / empty string if the cell is empty </li>
 
 <p>Converts a list of 81 cell values into a comma-separated String suitable for <code class="JavaDocCode"><br/>
 gridValue</code>. </p>
-<p>Empty or blank cells are normalized to "0". Each non-empty cell must contain digits 1-9 without repetitions. </p>
+<p>Null or blank cells are normalized to "0". Leading/trailing whitespace is removed with <code class="JavaDocCode">strip()</code>, and all newline characters are removed. Each non-zero cell must contain digits 1-9 without repetitions. </p>
 
 </div>
 </div>
@@ -420,6 +436,33 @@ gridValue</code>. </p>
 
 </div>
 </div>
+<a id="a6df86568a12e78df95dddcb3426a59bf" name="a6df86568a12e78df95dddcb3426a59bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df86568a12e78df95dddcb3426a59bf">&#9670;&#160;</a></span>validateDigitsAndNoRepeats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.common.util.sudoku.GridConverter.validateDigitsAndNoRepeats </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>cell</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validates that the cell contains only digits 1-9 with no repeats. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="afb36d4b7771e958c393f902d10e036ed" name="afb36d4b7771e958c393f902d10e036ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb36d4b7771e958c393f902d10e036ed">&#9670;&#160;</a></span>GRID_ARRAY_MUST_NOT_BE_NULL</h2>
@@ -432,6 +475,28 @@ gridValue</code>. </p>
       <table class="memname">
         <tr>
           <td class="memname">final String fr.softsf.sudokufx.common.util.sudoku.GridConverter.GRID_ARRAY_MUST_NOT_BE_NULL = &quot;Grid array must not be null&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e1dc9511179c3d3870d167a2f2d2f16" name="a5e1dc9511179c3d3870d167a2f2d2f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1dc9511179c3d3870d167a2f2d2f16">&#9670;&#160;</a></span>MAXIMUM_GRID_VALUE_LENGTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridConverter.MAXIMUM_GRID_VALUE_LENGTH = <a class="el" href="#a35a3740282186056366e17b029ab32b5">TOTAL_CELLS</a> * 10</td>
         </tr>
       </table>
   </td>
@@ -475,7 +540,7 @@ gridValue</code>. </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html">sudoku</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter.html">GridConverter</a></li>
-    <li class="footer">Generated on Sat Oct 4 2025 15:53:48 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon Oct 6 2025 15:49:13 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

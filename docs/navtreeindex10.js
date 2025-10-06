@@ -1,5 +1,15 @@
 var NAVTREEINDEX10 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html":[1,0,0,0,0,8,2,1,1,1,2],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html":[2,0,0,0,0,7,2,1,1,1,2],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#a8e0c10fe9db34d34e463b6ca4bad7703":[1,0,0,0,0,8,2,1,1,1,2,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#a8e0c10fe9db34d34e463b6ca4bad7703":[2,0,0,0,0,7,2,1,1,1,2,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#aba7284e034bef0bcd09219fd3b59dbcf":[1,0,0,0,0,8,2,1,1,1,2,2],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#aba7284e034bef0bcd09219fd3b59dbcf":[2,0,0,0,0,7,2,1,1,1,2,2],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#aff2a97b51ee9b99829971506b6050071":[1,0,0,0,0,8,2,1,1,1,2,1],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_mute_unmute_tests.html#aff2a97b51ee9b99829971506b6050071":[2,0,0,0,0,7,2,1,1,1,2,1],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_effect_tests.html":[1,0,0,0,0,8,2,1,1,1,3],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_effect_tests.html":[2,0,0,0,0,7,2,1,1,1,3],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_effect_tests.html#a1d5ff0c15b1e998272c99f8bd8f6b65f":[1,0,0,0,0,8,2,1,1,1,3,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_effect_tests.html#a1d5ff0c15b1e998272c99f8bd8f6b65f":[2,0,0,0,0,7,2,1,1,1,3,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_effect_tests.html#a6545cc46680e2f5e965267f2ca28f089":[1,0,0,0,0,8,2,1,1,1,3,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX10 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a2bd155d3952ef5639003acbedbacf045":[1,0,0,0,0,8,2,3,0,1,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a2bd155d3952ef5639003acbedbacf045":[2,0,0,0,0,7,2,3,0,1,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a2faaa868e8b22c7b2b49c16cfbb6c726":[1,0,0,0,0,8,2,3,0,1,11],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a2faaa868e8b22c7b2b49c16cfbb6c726":[2,0,0,0,0,7,2,3,0,1,11],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a38f6a91473def30f868156afa149d016":[1,0,0,0,0,8,2,3,0,1,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a38f6a91473def30f868156afa149d016":[2,0,0,0,0,7,2,3,0,1,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a3c53ec4d9566659433d04d388f0baeda":[1,0,0,0,0,8,2,3,0,1,12],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a3c53ec4d9566659433d04d388f0baeda":[2,0,0,0,0,7,2,3,0,1,12],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a447a1038dee595ca67d2768483034c94":[1,0,0,0,0,8,2,3,0,1,9],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a447a1038dee595ca67d2768483034c94":[2,0,0,0,0,7,2,3,0,1,9],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a4c51c4d9975e7a2e2afb6d7587e59a45":[1,0,0,0,0,8,2,3,0,1,14],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a4c51c4d9975e7a2e2afb6d7587e59a45":[2,0,0,0,0,7,2,3,0,1,14],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a67cda6022e141d795153f853304c2f0a":[1,0,0,0,0,8,2,3,0,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a67cda6022e141d795153f853304c2f0a":[2,0,0,0,0,7,2,3,0,1,2]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a2faaa868e8b22c7b2b49c16cfbb6c726":[2,0,0,0,0,7,2,3,0,1,11]
 };

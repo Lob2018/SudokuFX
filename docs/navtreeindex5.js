@@ -1,5 +1,15 @@
 var NAVTREEINDEX5 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#aad08f86fdc10a1917560567c804fb0d0":[1,0,0,0,0,4,4,2],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#aad08f86fdc10a1917560567c804fb0d0":[2,0,0,0,0,3,4,2],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ac86f1c843073498a022a4c0295b1097b":[1,0,0,0,0,4,4,10],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ac86f1c843073498a022a4c0295b1097b":[2,0,0,0,0,3,4,10],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad092dc4e84219eb511ad4de17a4a43bf":[1,0,0,0,0,4,4,18],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad092dc4e84219eb511ad4de17a4a43bf":[2,0,0,0,0,3,4,18],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad178f4e4a4f286d044c17f7411368300":[1,0,0,0,0,4,4,5],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad178f4e4a4f286d044c17f7411368300":[2,0,0,0,0,3,4,5],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af49e1b436868180644535afda35cd5cd":[1,0,0,0,0,4,4,14],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af49e1b436868180644535afda35cd5cd":[2,0,0,0,0,3,4,14],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af5ceb9c15f560b7911d984193f2d935a":[1,0,0,0,0,4,4,1],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af5ceb9c15f560b7911d984193f2d935a":[2,0,0,0,0,3,4,1],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#afa8be5013fdfb85b8bdfdcb799b452ed":[1,0,0,0,0,4,4,17],
@@ -239,15 +249,5 @@ var NAVTREEINDEX5 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_constructor_tests.html#aef205dcc5610cf98f62120c0d2b85fe5":[1,0,0,0,0,4,9,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_constructor_tests.html#aef205dcc5610cf98f62120c0d2b85fe5":[2,0,0,0,0,3,9,1,1],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html":[1,0,0,0,0,4,9,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html":[2,0,0,0,0,3,9,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html#a5570f008092132508b62eead0f25dc14":[1,0,0,0,0,4,9,2,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html#a5570f008092132508b62eead0f25dc14":[2,0,0,0,0,3,9,2,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html#a683dc11b7ef8d21721ff5722077bd509":[1,0,0,0,0,4,9,2,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html#a683dc11b7ef8d21721ff5722077bd509":[2,0,0,0,0,3,9,2,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html#aeb472bfb8b9347519a7abfe1ce2cbc22":[1,0,0,0,0,4,9,2,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html#aeb472bfb8b9347519a7abfe1ce2cbc22":[2,0,0,0,0,3,9,2,2],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html#aed90ff06ede7fd0ab497a169164dea81":[1,0,0,0,0,4,9,2,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html#aed90ff06ede7fd0ab497a169164dea81":[2,0,0,0,0,3,9,2,1],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_equals_and_hash_code_tests.html":[1,0,0,0,0,4,9,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_equals_and_hash_code_tests.html":[2,0,0,0,0,3,9,3]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_edge_case_tests.html":[2,0,0,0,0,3,9,2]
 };

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['safedivide_0',['safeDivide',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#a969886325a661c329b766698b7b3fdde',1,'fr::softsf::sudokufx::common::util::math::NumberUtils']]],
+  ['safedivide_0',['safeDivide',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#a27f49b500e71bb26b59fa3c442c49596',1,'fr::softsf::sudokufx::common::util::math::NumberUtils']]],
   ['saveaccessibletext_1',['saveAccessibleText',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a442446d401baff6a081d17133c5ffc60',1,'fr::softsf::sudokufx::viewmodel::MenuSaveViewModel']]],
   ['saveaccessibletextproperty_2',['saveAccessibleTextProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a973b993b8ca4e2a90e4d1008b0fabe10',1,'fr::softsf::sudokufx::viewmodel::MenuSaveViewModel']]],
   ['savemenuinitialization_3',['saveMenuInitialization',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aebaf39d672a3997a3b90c42333b0689b',1,'fr::softsf::sudokufx::view::main::MainView']]],

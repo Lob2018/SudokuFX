@@ -1,5 +1,15 @@
 var NAVTREEINDEX11 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a38f6a91473def30f868156afa149d016":[1,0,0,0,0,8,2,3,0,1,7],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a38f6a91473def30f868156afa149d016":[2,0,0,0,0,7,2,3,0,1,7],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a3c53ec4d9566659433d04d388f0baeda":[1,0,0,0,0,8,2,3,0,1,12],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a3c53ec4d9566659433d04d388f0baeda":[2,0,0,0,0,7,2,3,0,1,12],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a447a1038dee595ca67d2768483034c94":[1,0,0,0,0,8,2,3,0,1,9],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a447a1038dee595ca67d2768483034c94":[2,0,0,0,0,7,2,3,0,1,9],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a4c51c4d9975e7a2e2afb6d7587e59a45":[1,0,0,0,0,8,2,3,0,1,14],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a4c51c4d9975e7a2e2afb6d7587e59a45":[2,0,0,0,0,7,2,3,0,1,14],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a67cda6022e141d795153f853304c2f0a":[1,0,0,0,0,8,2,3,0,1,2],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#a67cda6022e141d795153f853304c2f0a":[2,0,0,0,0,7,2,3,0,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#aa163091aa3a91d552e76bba4f50b89ab":[1,0,0,0,0,8,2,3,0,1,10],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#aa163091aa3a91d552e76bba4f50b89ab":[2,0,0,0,0,7,2,3,0,1,10],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html#aa27c54a686ffb9fced91dfccb0546b53":[1,0,0,0,0,8,2,3,0,1,3],
@@ -239,15 +249,5 @@ var NAVTREEINDEX11 =
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aab78ed4db66d82e654b8fde919fd0758":[1,0,0,0,0,9,0,0,0,4],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aab78ed4db66d82e654b8fde919fd0758":[2,0,0,0,0,8,0,0,0,4],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aaf76983db113703424d3daa8e2e70d5f":[1,0,0,0,0,9,0,0,0,9],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aaf76983db113703424d3daa8e2e70d5f":[2,0,0,0,0,8,0,0,0,9],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#acd5440f488e08198106fa85fec744914":[1,0,0,0,0,9,0,0,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#acd5440f488e08198106fa85fec744914":[2,0,0,0,0,8,0,0,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aef103444f453d74e5ca78eb5d5bbe8a8":[1,0,0,0,0,9,0,0,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aef103444f453d74e5ca78eb5d5bbe8a8":[2,0,0,0,0,8,0,0,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#af2245b19dc50988f34bc439ab123b213":[1,0,0,0,0,9,0,0,0,12],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#af2245b19dc50988f34bc439ab123b213":[2,0,0,0,0,8,0,0,0,12],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html":[1,0,0,0,0,9,0,1,0],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html":[2,0,0,0,0,8,0,1,0],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html#a417aa0f03f83aae1bfdc19efd48276b7":[1,0,0,0,0,9,0,1,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html#a417aa0f03f83aae1bfdc19efd48276b7":[2,0,0,0,0,8,0,1,0,2]
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aaf76983db113703424d3daa8e2e70d5f":[2,0,0,0,0,8,0,0,0,9]
 };
