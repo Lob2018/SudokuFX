@@ -26,7 +26,8 @@ public sealed interface IGridConverter permits GridConverter {
 
     /**
      * Converts a list of 81 cell values into a comma-separated String suitable for {@code
-     * gridValue}. Empty or blank cells are normalized to "0". Each non-empty cell must contain
+     * gridValue}. Null or blank cells are normalized to "0". Leading/trailing whitespace is removed
+     * with {@code strip()}, and all newline characters are removed. Each non-zero cell must contain
      * digits 1-9 without repetitions.
      */
     String listToGridValue(List<String> values);

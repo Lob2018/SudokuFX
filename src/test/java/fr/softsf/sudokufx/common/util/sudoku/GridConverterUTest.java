@@ -1,7 +1,6 @@
 /*
  * SudokuFX - Copyright © 2024-present SOFT64.FR Lob2018
  * Licensed under the MIT License (MIT).
- * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
 package fr.softsf.sudokufx.common.util.sudoku;
 
@@ -39,13 +38,25 @@ class GridConverterUTest {
     }
 
     @Test
-    void givenRepeatedDigitsInCell_whenListToGridValue_thenThrowsException() {
+    void givenRepeatedDigitsInCell_whenListToGridValue_thenThrowsRepeatedDigitException() {
         List<String> values = new ArrayList<>(Collections.nCopies(81, "1"));
         values.set(0, "112");
         IllegalArgumentException ex =
                 assertThrows(
                         IllegalArgumentException.class, () -> iConverter.listToGridValue(values));
-        assertTrue(ex.getMessage().contains("Invalid or repeated digits in cell"));
+        assertTrue(ex.getMessage().contains("Repeated digit in cell"),
+                "Expected exception for repeated digits, but got: " + ex.getMessage());
+    }
+
+    @Test
+    void givenInvalidDigitInCell_whenListToGridValue_thenThrowsInvalidDigitException() {
+        List<String> values = new ArrayList<>(Collections.nCopies(81, "1"));
+        values.set(0, "1a2");
+        IllegalArgumentException ex =
+                assertThrows(
+                        IllegalArgumentException.class, () -> iConverter.listToGridValue(values));
+        assertTrue(ex.getMessage().contains("Invalid digit in cell"),
+                "Expected exception for invalid digit, but got: " + ex.getMessage());
     }
 
     @Test
@@ -99,5 +110,14 @@ class GridConverterUTest {
         List<String> listFromIntArray = iConverter.intArrayToList(array);
         assertEquals(81, listFromIntArray.size());
         assertEquals("5", listFromIntArray.getFirst());
+    }
+
+    @Test
+    void givenDefaultGridWithNewlines_whenListToGridValue_thenNormalizesCells() {
+        List<String> values = new ArrayList<>(Collections.nCopies(81, "123\n456\n789"));
+        String result = iConverter.listToGridValue(values);
+        String[] cells = result.split(",");
+        assertEquals(81, cells.length);
+        Arrays.stream(cells).forEach(c -> assertEquals("123456789", c));
     }
 }

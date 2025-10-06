@@ -36,6 +36,7 @@ import org.springframework.stereotype.Component;
 public final class GridConverter implements IGridConverter {
 
     private static final int TOTAL_CELLS = 81;
+    private static final int MAXIMUM_GRID_VALUE_LENGTH = TOTAL_CELLS * 10;
     private static final String GRID_ARRAY_MUST_NOT_BE_NULL = "Grid array must not be null";
 
     @Override
@@ -45,21 +46,37 @@ public final class GridConverter implements IGridConverter {
             throw new IllegalArgumentException(
                     "The list of entered values must contain exactly " + TOTAL_CELLS + " values");
         }
-        return values.stream()
-                .map(
-                        v -> {
-                            String cell = (v == null || v.isBlank()) ? "0" : v.strip();
-                            if ("0".equals(cell)) {
-                                return cell;
-                            }
-                            if (cell.chars().allMatch(c -> c >= '1' && c <= '9')
-                                    && cell.chars().distinct().count() == cell.length()) {
-                                return cell;
-                            }
-                            throw new IllegalArgumentException(
-                                    "Invalid or repeated digits in cell: " + cell);
-                        })
-                .collect(Collectors.joining(","));
+        StringBuilder sb = new StringBuilder(MAXIMUM_GRID_VALUE_LENGTH);
+        for (int i = 0; i < TOTAL_CELLS; i++) {
+            String cell = values.get(i);
+            cell = cell == null || cell.isBlank() ? "0" : cell.strip().replace("\n", "");
+            if (!"0".equals(cell)) {
+                validateDigitsAndNoRepeats(cell);
+            }
+            sb.append(cell);
+            sb.append(',');
+        }
+        sb.setLength(sb.length() - 1);
+        return sb.toString();
+    }
+
+    /** Validates that the cell contains only digits 1-9 with no repeats. */
+    private void validateDigitsAndNoRepeats(String cell) {
+        if (cell.length() > 9) {
+            throw new IllegalArgumentException("Cell contains too many digits: " + cell);
+        }
+        int seen = 0;
+        for (int i = 0; i < cell.length(); i++) {
+            char c = cell.charAt(i);
+            if (c < '1' || c > '9') {
+                throw new IllegalArgumentException("Invalid digit in cell: " + cell);
+            }
+            int mask = 1 << (c - '1');
+            if ((seen & mask) != 0) {
+                throw new IllegalArgumentException("Repeated digit in cell: " + cell);
+            }
+            seen |= mask;
+        }
     }
 
     @Override
