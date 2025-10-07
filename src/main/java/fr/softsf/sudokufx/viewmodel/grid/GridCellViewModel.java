@@ -124,13 +124,7 @@ public class GridCellViewModel {
         editable.addListener((obs, wasEditable, isNowEditable) -> setEditableStyle(isNowEditable));
         label.focusedProperty()
                 .addListener(
-                        (obs, oldV, newV) -> {
-                            if (Boolean.TRUE.equals(newV)) {
-                                label.setStyle(getBorderStyle(label.getText().length(), true));
-                            } else {
-                                label.setStyle(getBorderStyle(label.getText().length(), false));
-                            }
-                        });
+                        (obs, oldV, newV) -> applyBorderStyle(label, Boolean.TRUE.equals(newV)));
         label.setOnMouseClicked(e -> switchToEditMode());
         label.setOnKeyPressed(
                 e -> {
@@ -189,11 +183,26 @@ public class GridCellViewModel {
                 return;
             }
             label.getStyleClass().add(SUDOKU_FX_GRID_CELL_LARGE_FONT);
-            label.setStyle(getBorderStyle(label.getText().length(), false));
+            applyBorderStyle(label, false);
         } else {
             label.getStyleClass().remove(SUDOKU_FX_GRID_CELL_LARGE_FONT);
-            label.setStyle(getBorderStyle(label.getText().length(), false));
+            applyBorderStyle(label, false);
         }
+    }
+
+    /**
+     * Applies a computed border style to a JavaFX node, based on content length, focus state, and
+     * grid position. Skips updating if the style is unchanged.
+     *
+     * @param node the Region to style (e.g., Label)
+     * @param focusedBorder true if the node is focused
+     */
+    private void applyBorderStyle(Region node, boolean focusedBorder) {
+        String newStyle = getBorderStyle(label.getText().length(), focusedBorder);
+        if (newStyle.equals(node.getStyle())) {
+            return;
+        }
+        node.setStyle(newStyle);
     }
 
     /**
