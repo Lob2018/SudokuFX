@@ -68,9 +68,8 @@ public class GridCellViewModel {
         this.col = col;
         label.setId(String.valueOf(id));
         textArea.setId(String.valueOf(id));
-        String borderStyle = getBorderStyle(label.getText().length(), false);
-        label.setStyle(borderStyle);
-        textArea.setStyle(borderStyle);
+        applyBorderStyle(label, false);
+        applyBorderStyle(textArea, false);
         textArea.setPrefRowCount(3);
         textArea.setWrapText(true);
         label.setFocusTraversable(true);
