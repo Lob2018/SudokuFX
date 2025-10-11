@@ -484,6 +484,18 @@
     </plugins>
   </build>
   <profiles>
+    <!-- Datasource proxy for SQL logging and query interception, used for dev local called run and run with details -->
+    <profile>
+      <id>dev</id>
+      <dependencies>
+        <dependency>
+          <groupId>com.github.gavlyukovskiy</groupId>
+          <artifactId>datasource-proxy-spring-boot-starter</artifactId>
+          <version>1.12.0</version>
+          <scope>runtime</scope>
+        </dependency>
+      </dependencies>
+    </profile>
     <!-- JavaFX plugin with JVM flags for VisualVM sampling and GC analysis -->
     <profile>
       <id>visualvm-monitoring</id>

@@ -18,6 +18,9 @@
     <logger name="fr.softsf.sudokufx" level="info" additivity="false">
         <appender-ref ref="FILE-ROLLING"/>
     </logger>
+    <logger name="net.ttddyy.dsproxy.listener" level="DEBUG" additivity="false">
+        <appender-ref ref="FILE-ROLLING"/>
+    </logger>
     <root level="info">
         <appender-ref ref="FILE-ROLLING"/>
     </root>

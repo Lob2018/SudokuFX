@@ -302,6 +302,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
             - Starter validation
         - flyway (database migration)
         - passay (generate and validate secrets)
+        - datasource-proxy-spring-boot-starter (intercepts and logs SQL queries for debugging and performance analysis)
     - Logs
         - logback from Spring Boot
     - Build dependencies:

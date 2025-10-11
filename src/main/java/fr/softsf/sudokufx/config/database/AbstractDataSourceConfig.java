@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.config.database;
 
 import java.util.Objects;
+import javax.sql.DataSource;
 
 import org.flywaydb.core.Flyway;
 import org.springframework.context.annotation.Bean;
@@ -89,12 +90,13 @@ abstract class AbstractDataSourceConfig {
     /**
      * Configures Flyway database migration tool.
      *
-     * @param hikariDataSource Data source used by Flyway; must not be null
+     * @param hikariDataSource Data source used by Flyway; must not be null (can be a proxy-wrapped
+     *     instance)
      * @return configured Flyway instance
      * @throws IllegalArgumentException if {@code hikariDataSource} is null
      */
     @Bean(initMethod = "migrate")
-    Flyway flyway(final HikariDataSource hikariDataSource) {
+    Flyway flyway(final DataSource hikariDataSource) {
         if (Objects.isNull(hikariDataSource)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The hikariDataSource must not be null");
