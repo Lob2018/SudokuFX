@@ -1,19 +1,21 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setupListeners" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setupListeners">
-<area shape="rect" id="Node000001" title="Configures UI listeners and formatting logic:" alt="" coords="5,160,227,203"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="293,5,514,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,157,199,111,273,64,303,51,305,56,276,69,202,115,143,162"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Builds the CSS style for a Sudoku grid cell." alt="" coords="581,131,803,173"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="153,157,209,130,274,108,346,96,403,93,461,98,533,108,608,123,607,129,533,113,460,104,403,99,347,101,275,113,211,135,155,162"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="293,123,514,165"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="227,164,278,158,278,163,228,170"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a2a551d4792b3263e749994098c3b3748" title="Updates CSS style classes on label and text area to reflect the editable state." alt="" coords="288,272,520,315"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="156,201,212,230,276,258,296,264,294,270,274,262,210,234,154,205"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ac95db9585f2ba2ed12d60dd5cca39461" title="Switches from read&#45;only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea a..." alt="" coords="282,339,526,381"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="137,201,194,263,233,296,276,324,287,330,284,335,273,329,230,300,191,267,133,205"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a9544acad3febede6981c9d8440674d3c" title="Updates the label&#39;s font size CSS class and border style based on the current text content." alt="" coords="275,189,533,248"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="228,193,259,197,259,203,227,198"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title=" " alt="" coords="583,305,801,348"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="520,304,568,310,567,315,520,309"/>
-<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="526,343,568,338,568,344,526,349"/>
-<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="533,186,582,175,583,180,534,191"/>
+<area shape="rect" id="Node000001" title="Configures UI listeners and formatting logic:" alt="" coords="5,147,227,189"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a38d783156f2f2ad694cfbec5062de472" title="Applies a computed border style to a JavaFX node, based on content length, focus state,..." alt="" coords="581,84,816,127"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,144,156,116,189,83,229,52,274,28,344,8,402,4,461,12,534,28,595,48,649,74,647,78,593,53,532,33,460,17,402,9,345,13,276,33,232,56,192,87,160,119,136,148"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="293,43,514,85"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,144,214,119,274,95,296,88,297,93,276,100,216,124,162,148"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="293,109,514,152"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="227,151,278,144,278,150,228,156"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a2a551d4792b3263e749994098c3b3748" title="Updates CSS style classes on label and text area to reflect the editable state." alt="" coords="288,259,520,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="156,187,212,216,276,244,296,251,294,256,274,249,210,221,154,192"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ac95db9585f2ba2ed12d60dd5cca39461" title="Switches from read&#45;only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea a..." alt="" coords="282,325,526,368"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="137,188,194,249,233,283,276,311,287,316,284,321,273,316,230,287,191,253,133,192"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a9544acad3febede6981c9d8440674d3c" title="Updates the label&#39;s font size CSS class and border style based on the current text content." alt="" coords="275,176,533,235"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="228,180,259,184,259,189,227,185"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Builds the CSS style for a Sudoku grid cell." alt="" coords="864,84,1087,127"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="817,103,849,103,849,108,817,108"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title=" " alt="" coords="590,292,808,335"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="520,290,575,297,574,302,519,296"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="526,330,574,325,574,330,526,335"/>
+<area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="498,173,532,161,622,130,624,135,534,166,500,178"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.applyBorderStyle" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.applyBorderStyle">
+<area shape="rect" id="Node000001" title="Applies a computed border style to a JavaFX node, based on content length, focus state,..." alt="" coords="5,5,241,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Builds the CSS style for a Sudoku grid cell." alt="" coords="289,5,511,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,24,273,24,273,29,241,29"/>
+</map>

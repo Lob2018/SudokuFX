@@ -1,6 +1,7 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model =
 [
     [ "GridCellViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a6dd80845ee5865e89cbe229b0ee933c3", null ],
+    [ "applyBorderStyle", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a38d783156f2f2ad694cfbec5062de472", null ],
     [ "editableProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c", null ],
     [ "formatMultiline", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec", null ],
     [ "formatText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a0d1630abe71ae622f3522fbed9855750", null ],

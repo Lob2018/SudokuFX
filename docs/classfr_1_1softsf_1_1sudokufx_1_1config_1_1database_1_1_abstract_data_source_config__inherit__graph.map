@@ -1,11 +1,11 @@
 <map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig">
-<area shape="rect" id="Node000001" title="Abstract configuration class for setting up the application&#39;s data source." alt="" coords="408,5,624,309"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test_1_1_test_data_source_config.html" title=" " alt="" coords="5,365,264,467"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,242,209,368,206,363,394,237"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds.html" title="Overrides Abstract DataSource hikariDataSource for the CDS profile." alt="" coords="288,357,504,475"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="442,324,425,359,420,357,437,321"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_default.html" title="Overrides Abstract DataSource hikariDataSource for the default profile." alt="" coords="528,357,744,475"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="595,321,612,357,607,359,590,324"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_test.html" title="Overrides Abstract DataSource hikariDataSource for the test profile." alt="" coords="768,357,984,475"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="638,242,797,356,794,360,634,246"/>
+<area shape="rect" id="Node000001" title="Abstract configuration class for setting up the application&#39;s data source." alt="" coords="408,5,624,293"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test_1_1_test_data_source_config.html" title=" " alt="" coords="5,349,264,451"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,231,212,352,209,347,394,227"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds.html" title="Overrides Abstract DataSource hikariDataSource for the CDS profile." alt="" coords="288,341,504,459"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="443,308,426,343,421,340,438,305"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_default.html" title="Overrides Abstract DataSource hikariDataSource for the default profile." alt="" coords="528,341,744,459"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="594,305,611,340,606,343,589,308"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_test.html" title="Overrides Abstract DataSource hikariDataSource for the test profile." alt="" coords="768,341,984,459"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="637,231,795,339,792,344,634,235"/>
 </map>
