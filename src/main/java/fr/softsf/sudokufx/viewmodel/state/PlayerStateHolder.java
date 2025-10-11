@@ -73,7 +73,10 @@ public class PlayerStateHolder {
         try {
             PlayerDto player = playerService.getPlayer();
             currentPlayer.set(player);
-            LOG.info("Player refreshed from database: {}", player);
+            PlayerDto maskedPlayer =
+                    player.withOptions(
+                            player.optionsidDto().withImagepath("...").withSongpath("..."));
+            LOG.info("Player refreshed from database: {}", maskedPlayer);
         } catch (IllegalStateException e) {
             LOG.error(
                     "██ Exception error refreshing player: {}, triggering Platform.exit()",
