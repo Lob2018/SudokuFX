@@ -145,8 +145,9 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
         MyAlert confirmationAlert = new MyAlert(Alert.AlertType.CONFIRMATION);
         confirmationAlert.setTitle(confirmationTitleSupplier.get());
         confirmationAlert.setHeaderText(null);
-        confirmationAlert.setContentText(
-                MessageFormat.format(confirmationMessageSupplier.get(), displayText));
+        Label content =
+                new Label(MessageFormat.format(confirmationMessageSupplier.get(), displayText));
+        confirmationAlert.getDialogPane().setContent(content);
         confirmationAlert
                 .showAndWait()
                 .ifPresent(
