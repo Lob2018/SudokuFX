@@ -109,10 +109,10 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
         if (empty || item == null) {
             setGraphic(null);
             setAccessibleText(null);
+            label.setText(null);
             button.setAccessibleText(null);
             button.setTooltip(null);
             button.setOnAction(null);
-            label.setText(null);
         } else {
             String displayText = displayTextFunction.apply(item);
             label.setText(displayText);
@@ -121,13 +121,17 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
             String buttonTextFormatted =
                     MessageFormat.format(buttonAccessibleTextSupplier.get(), displayText);
             button.setAccessibleText(buttonTextFormatted);
-            button.setTooltip(new Tooltip(buttonTextFormatted));
+            Tooltip tooltip = button.getTooltip();
+            if (tooltip == null) {
+                tooltip = new Tooltip();
+                button.setTooltip(tooltip);
+            }
+            tooltip.setText(buttonTextFormatted);
             button.setOnAction(
                     event -> {
                         T currentItem = getItem();
                         if (currentItem != null) {
-                            confirmAndRemoveItem(
-                                    currentItem, displayTextFunction.apply(currentItem));
+                            confirmAndRemoveItem(currentItem, displayText);
                         } else {
                             LOG.warn(
                                     "getItem() returned null in GenericDtoListCell button action.");
