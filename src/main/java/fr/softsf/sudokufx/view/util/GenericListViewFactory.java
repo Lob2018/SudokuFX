@@ -17,7 +17,6 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
-import fr.softsf.sudokufx.view.component.MyAlert;
 import fr.softsf.sudokufx.view.component.list.GenericDtoListCell;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
@@ -69,7 +68,6 @@ public class GenericListViewFactory {
                                 viewModel.cellButtonAccessibleTextProperty(),
                                 viewModel.cellConfirmationTitleProperty(),
                                 viewModel.cellConfirmationMessageProperty(),
-                                new MyAlert(javafx.scene.control.Alert.AlertType.CONFIRMATION),
                                 PlayerDto::name));
         setupBidirectionalSelection(listView, viewModel.selectedPlayerProperty());
         Platform.runLater(
@@ -107,7 +105,6 @@ public class GenericListViewFactory {
                                 viewModel.cellDeleteAccessibleTextProperty(),
                                 viewModel.cellConfirmationTitleProperty(),
                                 viewModel.cellConfirmationMessageProperty(),
-                                new MyAlert(javafx.scene.control.Alert.AlertType.CONFIRMATION),
                                 gameDto -> {
                                     if (gameDto == null) {
                                         return "";
