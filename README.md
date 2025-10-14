@@ -47,7 +47,8 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
   - [Build with](#build-with)
   - [Required Application Properties to Run](#required-application-properties-to-run)
   - [How to develop on Windows with IntelliJ IDEA](#how-to-develop-on-windows-with-intellij-idea)
-    - [Optional runtime monitoring with VisualVM](#optional-runtime-monitoring-with-visualvm-dev-only)
+    - [DEV Runtime monitoring with VisualVM](#dev-runtime-monitoring-with-visualvm)
+    - [DEV Diagnostic Commands Examples](#dev-diagnostic-commands-examples)
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Contributors](#contributors)
@@ -350,7 +351,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
                 4. **Once benchmarking is complete, uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`
                    and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`**
 
-#### Optional runtime monitoring with VisualVM (DEV only)
+#### DEV Runtime monitoring with VisualVM
 
 - Install [VisualVM](https://visualvm.github.io/) and the following plugins:
     - **VisualVM-MBeans**
@@ -367,6 +368,18 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
       - Command: `clean javafx:run -Pvisualvm-monitoring -f pom.xml`
       - Enables VisualVM sampling and MBeans access via JMX (`localhost:9010`)
       - In VisualVM, **Add JMX Connection for localhost:9010** in order to access full JMX metrics, otherwise only a local jvmstat connection is available.
+
+#### DEV Diagnostic Commands Examples
+
+Detecting classloader leaks, Metaspace growth, and memory retention patterns in JVM-based applications. Each command is paired with actionable observations and example outputs to support reproducible diagnostics.
+
+Run Configuration: `SudokuFX run with VisualVM Monitoring`
+
+| JVM Component | Command | Analysis Focus | Diagnostic Indicators |
+| :---: | :--- | :--- | :--- |
+| **🔍 Native Memory** | `jcmd <pid> VM.native_memory summary` | Assess the gap between **reserved** and **committed** memory and monitor growth in critical native memory regions. | **Fragmentation:** $200\text{MB}$ reserved vs $50\text{MB}$ committed. **Growth Alert:** Metaspace increases from $80\text{MB}$ to $150\text{MB}$. |
+| **📦 Classloader Leak Detection & Validation** | `jmap -clstats <pid>` **and** `jcmd <pid> GC.run && jmap -clstats <pid>` | **Track and Confirm** classloader retention over time and after a forced Garbage Collection cycle. | **Leak Confirmed:** Loader count remains stable (e.g., 80) despite the forced GC. **Leak Indicators:** Loader count increases over time (e.g., 56 to 80+); excessive instances of `DelegatingClassLoader`. |
+| **🧮 Heap Objects** | `jmap -histo:live <pid> \| head -50` | Detect **abnormal object instance counts** and identify memory hotspots (e.g., framework properties, listeners) on the heap. | **Alert Count:** $32,000+$ instances of `SimpleBooleanProperty` for only 81 UI cells. **Retention Check:** $+109$ classes loaded between measurements, indicating a retention issue. |
 
 ## Contributing
 
