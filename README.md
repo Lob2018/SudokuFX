@@ -375,7 +375,7 @@ Detecting **classloader leaks**, **Metaspace growth**, and **heap retention patt
 
 Run Configuration: `SudokuFX run with VisualVM Monitoring`
 
-| Component | Commands                                                                    | Purpose | Diagnostic Indicators |
+| Component | Commands | Purpose | Diagnostic Indicators |
 |:--|:--|:--|:--|
 | **🧠 Native Memory** | `jcmd <pid> VM.native_memory summary` | Monitor off-heap growth and Metaspace usage | **Off-Heap Leak:** Sustained increase in `Internal` or `Unknown` regions<br>**Metaspace Growth:** Committed size and class count increase between runs |
 | **📦 Classloaders** | `jcmd <pid> GC.run` **THEN** `jmap -clstats <pid>` (requires full JDK) | Trigger GC and validate loader retention | **Leak Evidence:** Loader count remains stable (e.g., 80) after forced GC |
