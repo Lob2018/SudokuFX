@@ -369,17 +369,17 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
       - Enables VisualVM sampling and MBeans access via JMX (`localhost:9010`)
       - In VisualVM, **Add JMX Connection for localhost:9010** in order to access full JMX metrics, otherwise only a local jvmstat connection is available.
 
-#### DEV Diagnostic Commands Examples
+#### DEV Diagnostic Commands – VisualVM Monitoring
 
-Detecting classloader leaks, Metaspace growth, and memory retention patterns in JVM-based applications. Each command is paired with actionable observations and example outputs to support reproducible diagnostics.
+Detecting **classloader leaks**, **Metaspace growth**, and **heap retention patterns** in JVM applications. Each command is paired with actionable indicators to support reproducible analysis.
 
 Run Configuration: `SudokuFX run with VisualVM Monitoring`
 
-| JVM Component | Command | Analysis Focus | Diagnostic Indicators |
-| :---: | :--- | :--- | :--- |
-| **🔍 Native Memory** | `jcmd <pid> VM.native_memory summary` | Assess the gap between **reserved** and **committed** memory and monitor growth in critical native memory regions. | **Fragmentation:** $200\text{MB}$ reserved vs $50\text{MB}$ committed. **Growth Alert:** Metaspace increases from $80\text{MB}$ to $150\text{MB}$. |
-| **📦 Classloader Leak Detection & Validation** | `jmap -clstats <pid>` **and** `jcmd <pid> GC.run && jmap -clstats <pid>` | **Track and Confirm** classloader retention over time and after a forced Garbage Collection cycle. | **Leak Confirmed:** Loader count remains stable (e.g., 80) despite the forced GC. **Leak Indicators:** Loader count increases over time (e.g., 56 to 80+); excessive instances of `DelegatingClassLoader`. |
-| **🧮 Heap Objects** | `jmap -histo:live <pid> \| head -50` | Detect **abnormal object instance counts** and identify memory hotspots (e.g., framework properties, listeners) on the heap. | **Alert Count:** $32,000+$ instances of `SimpleBooleanProperty` for only 81 UI cells. **Retention Check:** $+109$ classes loaded between measurements, indicating a retention issue. |
+| Component | Commands                                                                    | Purpose | Diagnostic Indicators |
+|:--|:--|:--|:--|
+| **🧠 Native Memory** | `jcmd <pid> VM.native_memory summary` | Monitor off-heap growth and Metaspace usage | **Off-Heap Leak:** Sustained increase in `Internal` or `Unknown` regions<br>**Metaspace Growth:** Committed size and class count increase between runs |
+| **📦 Classloaders** | `jcmd <pid> GC.run` **THEN** `jmap -clstats <pid>` (requires full JDK) | Trigger GC and validate loader retention | **Leak Evidence:** Loader count remains stable (e.g., 80) after forced GC |
+| **🧮 Heap Objects** | `jcmd <pid> GC.class_histogram` **OR** `jmap -histo:live <pid> \| head -50` (requires full JDK) | Identify dominant heap objects and retention | **Retention Alert:** 32,000+ `SimpleBooleanProperty` instances persist post-cleanup |
 
 ## Contributing
 
