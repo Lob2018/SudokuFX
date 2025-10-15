@@ -369,7 +369,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
       - Enables VisualVM sampling and MBeans access via JMX (`localhost:9010`)
       - In VisualVM, **Add JMX Connection for localhost:9010** in order to access full JMX metrics, otherwise only a local jvmstat connection is available.
 
-#### DEV Diagnostic Commands – VisualVM Monitoring
+#### DEV Diagnostic Commands Examples
 
 Detecting **classloader leaks**, **Metaspace growth**, and **heap retention patterns** in JVM applications. Each command is paired with actionable indicators to support reproducible analysis.
 
@@ -377,8 +377,8 @@ Run Configuration: `SudokuFX run with VisualVM Monitoring`
 
 | Component | Commands | Purpose | Diagnostic Indicators |
 |:--|:--|:--|:--|
-| **🧠 Native Memory** | `jcmd <pid> VM.native_memory summary` | Monitor off-heap growth and Metaspace usage | **Off-Heap Leak:** Sustained increase in `Internal` or `Unknown` regions<br>**Metaspace Growth:** Continued increase in committed size and class count after application has reached steady state |
-| **📦 Classloaders** | `jcmd <pid> GC.run` **THEN** `jmap -clstats <pid>` (requires full JDK) | Trigger GC and validate loader retention | **Leak Evidence:** Loader count remains stable (e.g., 80) after forced GC |
+| **🧠 Native Memory** | `jcmd <pid> VM.native_memory summary`<br>**with** `-XX:MaxMetaspaceSize=128m` (adjust as needed) | Monitor off-heap growth and Metaspace usage under constrained conditions | **Off-Heap Leak:** Sustained increase in `Internal` or `Unknown` regions<br>**Metaspace Growth:** Continued increase in committed size and class count after application has reached steady state |
+| **📦 Classloaders** | `jcmd <pid> GC.run` **THEN** `jmap -clstats <pid>` (requires full JDK)<br>**with** `-XX:MaxMetaspaceSize=128m` (adjust as needed) | Trigger GC and validate loader retention under constrained Metaspace | **Leak Evidence:** Loader count remains stable (e.g., 80) after forced GC<br>**Metaspace Pressure:** Class count per loader remains high despite GC<br>**OOM Trigger:** `OutOfMemoryError: Metaspace` occurs earlier if loaders are retained |
 | **🧮 Heap Objects** | `jcmd <pid> GC.class_histogram` **OR** `jmap -histo:live <pid> \| head -50` (requires full JDK) | Identify dominant heap objects and retention | **Retention Alert:** 32,000+ `SimpleBooleanProperty` instances persist post-cleanup |
 
 ## Contributing
