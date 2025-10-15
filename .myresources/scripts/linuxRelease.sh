@@ -50,7 +50,7 @@ cp "$jarName" "input/$jarName"
 
 echo "# OUTPUT   : CREATING THE DEB FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xmx2048m -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$7 -Dapp.license=$8" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$7 -Dapp.license=$8" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target || exit
@@ -80,7 +80,7 @@ echo -e "\033[0m"
 
 sleep 1
 
-JAVA_VERSION=\$(java -version 2>&1 | awk -F '"' '/version/ {print \$2}' | cut -d'.' -f1)
+JAVA_VERSION=\$(java -version 2>&1 | awk -F'"' '/version/ {split(\$2,a,/[._]/); print (a[1]=="1" ? a[2] : a[1])}')
 JAVA_REQUIRED=$5
 FOLDER=$1
 
@@ -91,7 +91,7 @@ if [[ -z "\$JAVA_VERSION" ]]; then
     exit 1
 fi
 
-if [[ "\$JAVA_VERSION" < "$5" ]]; then
+if [[ "\$JAVA_VERSION" -lt "$5" ]]; then
     echo " ██ A newer version of Java is required to run this application."
     echo " ██ Your Java version is \$JAVA_VERSION, and requires version $5."
     echo " ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒."
@@ -107,14 +107,14 @@ if [[ ! -d "$1" ]]; then
     rm "$1-$2.jar"
     echo "Training the SudokuFX application..."
     cd "$1" || exit
-    java -Xmx2048m -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null && \
-    java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
+    java -Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null && \
+    java -Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
 fi
 
 if [[ -d "$1" ]]; then
     echo "Running the SudokuFX application..."
     cd "$1" || exit
-    java -Xmx2048m -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
+    java -Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
 fi
 EOF
 
