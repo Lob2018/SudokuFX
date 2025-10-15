@@ -1,13 +1,12 @@
 var classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell =
 [
-    [ "GenericDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a714dbddf5603434c90e8d93c6defef08", null ],
-    [ "confirmAndRemoveItem", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aef103444f453d74e5ca78eb5d5bbe8a8", null ],
+    [ "GenericDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a7fcd6b9ec5a30fdb094ddbaad2efd70e", null ],
+    [ "confirmAndRemoveItem", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#ac5b99c9356bd3b7da2f679c3f8cea892", null ],
     [ "updateItem", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#acd5440f488e08198106fa85fec744914", null ],
     [ "button", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a364a0c55c7a2867fa5efc519f2aa9f37", null ],
-    [ "buttonAccessibleTextBinding", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aab78ed4db66d82e654b8fde919fd0758", null ],
-    [ "confirmationAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a647bffb41467b7a749378c3bf636a586", null ],
-    [ "confirmationMessageBinding", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a42365b87c7071f516418054a3da1d828", null ],
-    [ "confirmationTitleBinding", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a3bd91e5b909b76295f7edfa2dbd78472", null ],
+    [ "buttonAccessibleTextSupplier", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a03beab6a9fb8f17d04b809c943609242", null ],
+    [ "confirmationMessageSupplier", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a3911e6f951c69865797af1618a3851da", null ],
+    [ "confirmationTitleSupplier", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#ac8fa06e22001af5e51db89787e97ca58", null ],
     [ "displayTextFunction", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a11d63a6db6b7a0db119a5ab3ecec145d", null ],
     [ "hBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#aaf76983db113703424d3daa8e2e70d5f", null ],
     [ "label", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html#a3a89680cdf5e09240ad65e4503e90995", null ],

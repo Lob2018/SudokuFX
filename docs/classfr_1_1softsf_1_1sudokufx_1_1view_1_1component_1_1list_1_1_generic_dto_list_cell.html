@@ -108,7 +108,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1
 </div><!--header-->
 <div class="contents">
 
-<p>A generic <code class="JavaDocCode">ListCell</code> for displaying items of type <code class="JavaDocCode">T</code> in a <code><a class="el" href="">ListView</a></code> with a label and a remove button.
+<p>A reusable <code><a class="el" href="">ListCell</a></code> for displaying items of type <code class="JavaDocCode">T</code> in a <code><a class="el" href="">ListView</a></code>.
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for fr.softsf.sudokufx.view.component.list.GenericDtoListCell&lt; T &gt;:</div>
@@ -127,9 +127,9 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a714dbddf5603434c90e8d93c6defef08" id="r_a714dbddf5603434c90e8d93c6defef08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a714dbddf5603434c90e8d93c6defef08">GenericDtoListCell</a> (ListView&lt; T &gt; <a class="el" href="#a231deddace9a2b0a8d142f7b0c9183f8">listView</a>, String buttonText, StringBinding <a class="el" href="#aab78ed4db66d82e654b8fde919fd0758">buttonAccessibleTextBinding</a>, StringBinding <a class="el" href="#a3bd91e5b909b76295f7edfa2dbd78472">confirmationTitleBinding</a>, StringBinding <a class="el" href="#a42365b87c7071f516418054a3da1d828">confirmationMessageBinding</a>, Alert <a class="el" href="#a647bffb41467b7a749378c3bf636a586">confirmationAlert</a>, Function&lt; T, String &gt; <a class="el" href="#a11d63a6db6b7a0db119a5ab3ecec145d">displayTextFunction</a>)</td></tr>
-<tr class="memdesc:a714dbddf5603434c90e8d93c6defef08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A generic ListCell for displaying items of type T in a ListView with a label and a remove button.">GenericDtoListCell</a>.  <br /></td></tr>
-<tr class="separator:a714dbddf5603434c90e8d93c6defef08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fcd6b9ec5a30fdb094ddbaad2efd70e" id="r_a7fcd6b9ec5a30fdb094ddbaad2efd70e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fcd6b9ec5a30fdb094ddbaad2efd70e">GenericDtoListCell</a> (ListView&lt; T &gt; <a class="el" href="#a231deddace9a2b0a8d142f7b0c9183f8">listView</a>, String buttonText, StringBinding buttonAccessibleTextBinding, StringBinding confirmationTitleBinding, StringBinding confirmationMessageBinding, Function&lt; T, String &gt; <a class="el" href="#a11d63a6db6b7a0db119a5ab3ecec145d">displayTextFunction</a>)</td></tr>
+<tr class="memdesc:a7fcd6b9ec5a30fdb094ddbaad2efd70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A reusable ListCell for displaying items of type T in a ListView.">GenericDtoListCell</a>.  <br /></td></tr>
+<tr class="separator:a7fcd6b9ec5a30fdb094ddbaad2efd70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -139,22 +139,20 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aef103444f453d74e5ca78eb5d5bbe8a8" id="r_aef103444f453d74e5ca78eb5d5bbe8a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef103444f453d74e5ca78eb5d5bbe8a8">confirmAndRemoveItem</a> (T item)</td></tr>
-<tr class="memdesc:aef103444f453d74e5ca78eb5d5bbe8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a confirmation dialog and removes the item if the user confirms.  <br /></td></tr>
-<tr class="separator:aef103444f453d74e5ca78eb5d5bbe8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5b99c9356bd3b7da2f679c3f8cea892" id="r_ac5b99c9356bd3b7da2f679c3f8cea892"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5b99c9356bd3b7da2f679c3f8cea892">confirmAndRemoveItem</a> (T item, String displayText)</td></tr>
+<tr class="memdesc:ac5b99c9356bd3b7da2f679c3f8cea892"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a confirmation dialog and removes the item if the user confirms.  <br /></td></tr>
+<tr class="separator:ac5b99c9356bd3b7da2f679c3f8cea892"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a364a0c55c7a2867fa5efc519f2aa9f37" id="r_a364a0c55c7a2867fa5efc519f2aa9f37"><td class="memItemLeft" align="right" valign="top">final Button&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a364a0c55c7a2867fa5efc519f2aa9f37">button</a> = new Button()</td></tr>
 <tr class="separator:a364a0c55c7a2867fa5efc519f2aa9f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab78ed4db66d82e654b8fde919fd0758" id="r_aab78ed4db66d82e654b8fde919fd0758"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab78ed4db66d82e654b8fde919fd0758">buttonAccessibleTextBinding</a></td></tr>
-<tr class="separator:aab78ed4db66d82e654b8fde919fd0758"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a647bffb41467b7a749378c3bf636a586" id="r_a647bffb41467b7a749378c3bf636a586"><td class="memItemLeft" align="right" valign="top">final Alert&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a647bffb41467b7a749378c3bf636a586">confirmationAlert</a></td></tr>
-<tr class="separator:a647bffb41467b7a749378c3bf636a586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42365b87c7071f516418054a3da1d828" id="r_a42365b87c7071f516418054a3da1d828"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42365b87c7071f516418054a3da1d828">confirmationMessageBinding</a></td></tr>
-<tr class="separator:a42365b87c7071f516418054a3da1d828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd91e5b909b76295f7edfa2dbd78472" id="r_a3bd91e5b909b76295f7edfa2dbd78472"><td class="memItemLeft" align="right" valign="top">final StringBinding&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bd91e5b909b76295f7edfa2dbd78472">confirmationTitleBinding</a></td></tr>
-<tr class="separator:a3bd91e5b909b76295f7edfa2dbd78472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03beab6a9fb8f17d04b809c943609242" id="r_a03beab6a9fb8f17d04b809c943609242"><td class="memItemLeft" align="right" valign="top">final Supplier&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03beab6a9fb8f17d04b809c943609242">buttonAccessibleTextSupplier</a></td></tr>
+<tr class="separator:a03beab6a9fb8f17d04b809c943609242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3911e6f951c69865797af1618a3851da" id="r_a3911e6f951c69865797af1618a3851da"><td class="memItemLeft" align="right" valign="top">final Supplier&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3911e6f951c69865797af1618a3851da">confirmationMessageSupplier</a></td></tr>
+<tr class="separator:a3911e6f951c69865797af1618a3851da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8fa06e22001af5e51db89787e97ca58" id="r_ac8fa06e22001af5e51db89787e97ca58"><td class="memItemLeft" align="right" valign="top">final Supplier&lt; String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8fa06e22001af5e51db89787e97ca58">confirmationTitleSupplier</a></td></tr>
+<tr class="separator:ac8fa06e22001af5e51db89787e97ca58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11d63a6db6b7a0db119a5ab3ecec145d" id="r_a11d63a6db6b7a0db119a5ab3ecec145d"><td class="memItemLeft" align="right" valign="top">final Function&lt; T, String &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11d63a6db6b7a0db119a5ab3ecec145d">displayTextFunction</a></td></tr>
 <tr class="separator:a11d63a6db6b7a0db119a5ab3ecec145d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf76983db113703424d3daa8e2e70d5f" id="r_aaf76983db113703424d3daa8e2e70d5f"><td class="memItemLeft" align="right" valign="top">final HBox&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf76983db113703424d3daa8e2e70d5f">hBox</a> = new HBox()</td></tr>
@@ -170,17 +168,18 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:af2245b19dc50988f34bc439ab123b213"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A generic <code class="JavaDocCode">ListCell</code> for displaying items of type <code class="JavaDocCode">T</code> in a <code><a class="el" href="">ListView</a></code> with a label and a remove button. </p>
-<p>The label displays text generated via a provided <code><a class="el" href="">Function</a></code>. The remove button shows a confirmation dialog before removing the item. Accessibility text and tooltips are updated dynamically via <code><a class="el" href="">StringBinding</a></code>s.</p>
+<div class="textblock"><p>A reusable <code><a class="el" href="">ListCell</a></code> for displaying items of type <code class="JavaDocCode">T</code> in a <code><a class="el" href="">ListView</a></code>. </p>
+<p>Each cell shows a label with text generated by a <code><a class="el" href="">Function</a></code> and a remove button. Accessible texts, tooltips, and confirmation messages are dynamically retrieved via <code><a class="el" href="">java.util.function.Supplier</a></code>. When the remove button is pressed, a confirmation <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html">fr.softsf.sudokufx.view.component.MyAlert</a></code> is created and shown, allowing the user to confirm the removal of the item.</p>
+<p>The cell clears its content when empty to avoid memory leaks and ensure proper reuse.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">&lt;T&gt;</td><td>the type of the items displayed in the ListView </td></tr>
+    <tr><td class="paramname">&lt;T&gt;</td><td>the type of items displayed in the <code><a class="el" href="">ListView</a></code> </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a714dbddf5603434c90e8d93c6defef08" name="a714dbddf5603434c90e8d93c6defef08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a714dbddf5603434c90e8d93c6defef08">&#9670;&#160;</a></span>GenericDtoListCell()</h2>
+<a id="a7fcd6b9ec5a30fdb094ddbaad2efd70e" name="a7fcd6b9ec5a30fdb094ddbaad2efd70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fcd6b9ec5a30fdb094ddbaad2efd70e">&#9670;&#160;</a></span>GenericDtoListCell()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,25 +212,20 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Alert</td>          <td class="paramname"><span class="paramname"><em>confirmationAlert</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">Function&lt; T, String &gt;</td>          <td class="paramname"><span class="paramname"><em>displayTextFunction</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Constructs a new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A generic ListCell for displaying items of type T in a ListView with a label and a remove button.">GenericDtoListCell</a>. </p>
+<p>Constructs a new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A reusable ListCell for displaying items of type T in a ListView.">GenericDtoListCell</a>. </p>
+<p>The provided <code class="JavaDocCode">StringBinding</code>s are internally converted to <code><a class="el" href="">Supplier&lt;String&gt;</a></code> so that their values are evaluated when needed, avoiding memory leaks and keeping the ListCell lightweight.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">listView</td><td>the ListView containing this cell </td></tr>
     <tr><td class="paramname">buttonText</td><td>the text displayed on the remove button </td></tr>
-    <tr><td class="paramname">buttonAccessibleTextBinding</td><td>binding for the button's accessible text (localized) </td></tr>
-    <tr><td class="paramname">confirmationTitleBinding</td><td>binding for the confirmation dialog title (localized) </td></tr>
-    <tr><td class="paramname">confirmationMessageBinding</td><td>binding for the confirmation dialog message (localized) </td></tr>
-    <tr><td class="paramname">confirmationAlert</td><td>the alert dialog used for removal confirmation </td></tr>
+    <tr><td class="paramname">buttonAccessibleTextBinding</td><td>binding to provide the button's accessible text (localized) </td></tr>
+    <tr><td class="paramname">confirmationTitleBinding</td><td>binding to provide the confirmation dialog title (localized) </td></tr>
+    <tr><td class="paramname">confirmationMessageBinding</td><td>binding to provide the confirmation dialog message (localized) </td></tr>
     <tr><td class="paramname">displayTextFunction</td><td>function to generate the display text for each item </td></tr>
   </table>
   </dd>
@@ -240,8 +234,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aef103444f453d74e5ca78eb5d5bbe8a8" name="aef103444f453d74e5ca78eb5d5bbe8a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef103444f453d74e5ca78eb5d5bbe8a8">&#9670;&#160;</a></span>confirmAndRemoveItem()</h2>
+<a id="ac5b99c9356bd3b7da2f679c3f8cea892" name="ac5b99c9356bd3b7da2f679c3f8cea892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5b99c9356bd3b7da2f679c3f8cea892">&#9670;&#160;</a></span>confirmAndRemoveItem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,8 +246,12 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.confirmAndRemoveItem </td>
           <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>item</em></span></td><td>)</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>item</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>displayText</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -342,8 +340,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aab78ed4db66d82e654b8fde919fd0758" name="aab78ed4db66d82e654b8fde919fd0758"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aab78ed4db66d82e654b8fde919fd0758">&#9670;&#160;</a></span>buttonAccessibleTextBinding</h2>
+<a id="a03beab6a9fb8f17d04b809c943609242" name="a03beab6a9fb8f17d04b809c943609242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03beab6a9fb8f17d04b809c943609242">&#9670;&#160;</a></span>buttonAccessibleTextSupplier</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,7 +350,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final StringBinding <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.buttonAccessibleTextBinding</td>
+          <td class="memname">final Supplier&lt;String&gt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.buttonAccessibleTextSupplier</td>
         </tr>
       </table>
   </td>
@@ -364,8 +362,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a647bffb41467b7a749378c3bf636a586" name="a647bffb41467b7a749378c3bf636a586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a647bffb41467b7a749378c3bf636a586">&#9670;&#160;</a></span>confirmationAlert</h2>
+<a id="a3911e6f951c69865797af1618a3851da" name="a3911e6f951c69865797af1618a3851da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3911e6f951c69865797af1618a3851da">&#9670;&#160;</a></span>confirmationMessageSupplier</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -374,7 +372,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final Alert <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.confirmationAlert</td>
+          <td class="memname">final Supplier&lt;String&gt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.confirmationMessageSupplier</td>
         </tr>
       </table>
   </td>
@@ -386,8 +384,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a42365b87c7071f516418054a3da1d828" name="a42365b87c7071f516418054a3da1d828"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42365b87c7071f516418054a3da1d828">&#9670;&#160;</a></span>confirmationMessageBinding</h2>
+<a id="ac8fa06e22001af5e51db89787e97ca58" name="ac8fa06e22001af5e51db89787e97ca58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8fa06e22001af5e51db89787e97ca58">&#9670;&#160;</a></span>confirmationTitleSupplier</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,29 +394,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final StringBinding <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.confirmationMessageBinding</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3bd91e5b909b76295f7edfa2dbd78472" name="a3bd91e5b909b76295f7edfa2dbd78472"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bd91e5b909b76295f7edfa2dbd78472">&#9670;&#160;</a></span>confirmationTitleBinding</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final StringBinding <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.confirmationTitleBinding</td>
+          <td class="memname">final Supplier&lt;String&gt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.confirmationTitleSupplier</td>
         </tr>
       </table>
   </td>
@@ -549,7 +525,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view.html">view</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html">component</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html">list</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">GenericDtoListCell</a></li>
-    <li class="footer">Generated on Sat Oct 11 2025 15:03:24 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Wed Oct 15 2025 19:20:11 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
