@@ -520,6 +520,7 @@
                 <option>-Xmx2048m</option>
                 <option>-Xlog:gc*=info,heap=debug,age=trace</option>
                 <option>-XX:NativeMemoryTracking=summary</option>
+                <option>-XX:MaxMetaspaceSize=128m</option>
               </options>
             </configuration>
           </plugin>
