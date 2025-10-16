@@ -1072,7 +1072,7 @@ public final class MainView implements IMainView {
                 case "menuPlayerButtonPlayer" -> menuMaxiButtonPlayer.requestFocus();
                 case "menuSolveButtonSolve" -> menuMaxiButtonSolve.requestFocus();
                 case "menuSaveButtonSave" -> menuMaxiButtonBackup.requestFocus();
-                case "menuOptionsButtonBackground" -> menuMaxiButtonOptions.requestFocus();
+                case "menuOptionsButtonOptions" -> menuMaxiButtonOptions.requestFocus();
                 default -> menuMaxiButtonReduce.requestFocus();
             }
             hideMiniMenuTimeline.stop();
