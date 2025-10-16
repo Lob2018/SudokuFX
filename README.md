@@ -395,11 +395,11 @@ Detecting **classloader leaks**, **Metaspace growth**, and **heap retention patt
 
 Run Configuration: `SudokuFX run with VisualVM Monitoring`
 
-| Component | Commands | Purpose | Diagnostic Indicators |
-|:--|:--|:--|:--|
-| **🧠 Native Memory** | `jcmd <pid> VM.native_memory summary`<br>**with** `-XX:MaxMetaspaceSize=128m` (adjust as needed) | Monitor off-heap growth and Metaspace usage under constrained conditions | **Off-Heap Leak:** Sustained increase in `Internal` or `Unknown` regions<br>**Metaspace Growth:** Continued increase in committed size and class count after application has reached steady state |
+| Component | Commands | Purpose | Diagnostic Indicators                                                                                                                                                                                                                        |
+|:--|:--|:--|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **🧠 Native Memory** | `jcmd <pid> VM.native_memory summary`<br>**with** `-XX:MaxMetaspaceSize=128m` (adjust as needed) | Monitor off-heap growth and Metaspace usage under constrained conditions | **Off-Heap Leak:** Sustained increase in `Internal` or `Unknown` regions<br>**Metaspace Growth:** Continued increase in committed size and class count after application has reached steady state                                            |
 | **📦 Classloaders** | `jcmd <pid> GC.run` **THEN** `jmap -clstats <pid>` (requires full JDK)<br>**with** `-XX:MaxMetaspaceSize=128m` (adjust as needed) | Trigger GC and validate loader retention under constrained Metaspace | **Leak Evidence:** Loader count remains stable (e.g., 80) after forced GC<br>**Metaspace Pressure:** Class count per loader remains high despite GC<br>**OOM Trigger:** `OutOfMemoryError: Metaspace` occurs earlier if loaders are retained |
-| **🧮 Heap Objects** | `jcmd <pid> GC.class_histogram` **OR** `jmap -histo:live <pid> \| head -50` (requires full JDK) | Identify dominant heap objects and retention | **Retention Alert:** 32,000+ `SimpleBooleanProperty` instances persist post-cleanup |
+| **🧮 Heap Objects** | `jcmd <pid> GC.class_histogram` **OR** `jmap -histo:live <pid> \| head -50` (requires full JDK) | Identify dominant heap objects and retention | **Dominant heap objects:** 32Mo domain object (e.g. `Model.Grid`)                                                                                                                                                                            |
 
 ## Contributing
 
