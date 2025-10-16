@@ -47,6 +47,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
   - [Build with](#build-with)
   - [Required Application Properties to Run](#required-application-properties-to-run)
   - [How to develop on Windows with IntelliJ IDEA](#how-to-develop-on-windows-with-intellij-idea)
+    - [DEV Debugging with Remote JVM](#dev-debugging-with-remote-jvm)
     - [DEV Runtime monitoring with VisualVM](#dev-runtime-monitoring-with-visualvm)
     - [DEV Diagnostic Commands Examples](#dev-diagnostic-commands-examples)
 - [Contributing](#contributing)
@@ -350,6 +351,25 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
                 3. Manage your benchmark tests in the `fr.softsf.sudokufx.benchmark` package
                 4. **Once benchmarking is complete, uncomment `<excludeGroupIds>org.openjdk.jmh</excludeGroupIds>`
                    and `<exclude>fr/softsf/sudokufx/benchmark/**/*.java</exclude>` in the `pom.xml`**
+
+#### DEV Debugging with Remote JVM
+
+- Use the following IntelliJ Run Configurations to debug the application via a suspended JVM:
+    - Run Configuration: `SudokuFX [debug]`
+      Launches the application using Maven with JDWP enabled on port `5005`, using `suspend=y` to pause execution until a debugger is attached
+        - Command: `clean javafx:run -Pdev -f pom.xml`
+        - Environment variable: `JAVA_TOOL_OPTIONS=-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=*:5005`
+        - JVM starts and waits for debugger connection
+    - Run Configuration: `Debug JavaFX Maven`
+      Attaches IntelliJ's debugger to the suspended JVM on port `5005`
+        - Configuration type: Remote JVM Debug
+        - Host: `localhost`, Port: `5005`, Transport: `Socket`
+
+- Debug workflow:
+    - Add breakpoints in the source code
+    - Run `SudokuFX [debug]` (Run mode) to start the JVM in suspended state
+    - Immediately launch `Debug JavaFX Maven` (Debug mode) to attach and resume execution
+    - Application starts with breakpoints active
 
 #### DEV Runtime monitoring with VisualVM
 
