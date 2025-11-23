@@ -14,7 +14,7 @@ jobs:
     environment: production
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a # v2.13.1
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
         with:
           egress-policy: audit
 
@@ -52,7 +52,7 @@ jobs:
             -Dsonar.qualitygate.wait=true \
             -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
       - name: Upload output folder (Linux)
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
           name: output-folder-linux
           path: output
@@ -63,7 +63,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a # v2.13.1
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
         with:
           egress-policy: audit
 
@@ -109,7 +109,7 @@ jobs:
         run: mvn package -f pom.xml
 
       - name: Upload output folder
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
           name: output-folder-windows
           path: output
@@ -120,7 +120,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a # v2.13.1
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
         with:
           egress-policy: audit
 
@@ -143,7 +143,7 @@ jobs:
       - name: Compile, Test, and Package with Maven (macOS)
         run: mvn package -P mac -f pom.xml
       - name: Upload output folder (macOS)
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
           name: output-folder-macos
           path: output
@@ -154,7 +154,7 @@ jobs:
     runs-on: macos-15-intel
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a # v2.13.1
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
         with:
           egress-policy: audit
 
@@ -177,7 +177,7 @@ jobs:
       - name: Compile, Test, and Package with Maven (macOS)
         run: mvn package -P mac-x86_64 -f pom.xml
       - name: Upload output folder (macOS-x86_64)
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@330a01c490aca151604b8cf639adc76d48f6c5d4 # v5.0.0
         with:
           name: output-folder-macos-x86_64
           path: output
@@ -192,7 +192,7 @@ jobs:
       GPG_PUBLIC_KEY: ${{ secrets.GPG_PUBLIC_KEY }}
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@f4a75cfd619ee5ce8d5b864b0d183aff3c69b55a # v2.13.1
+        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
         with:
           egress-policy: audit
 
@@ -200,22 +200,22 @@ jobs:
       - name: Extract version
         run: echo "POM_VERSION=$(awk '/<parent>/,/<\/parent>/ {next} /<version>/ {gsub(/.*<version>|<\/version>.*/, ""); print; exit}' pom.xml)" >> $GITHUB_ENV
       - name: Download output folder (Windows)
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           name: output-folder-windows
           path: output
       - name: Download output folder (Linux)
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           name: output-folder-linux
           path: output
       - name: Download output folder (MacOS)
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           name: output-folder-macos
           path: output
       - name: Download output folder (MacOS-x86_64)
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           name: output-folder-macos-x86_64
           path: output
