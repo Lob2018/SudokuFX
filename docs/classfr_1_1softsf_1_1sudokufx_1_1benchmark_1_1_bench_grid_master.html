@@ -98,108 +98,76 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_g
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.benchmark.BenchGridMaster Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Classe de benchmark pour mesurer les performances des opérations sur la grille Sudoku, notamment le masquage de cases dans une grille résolue.
+<p>Classe de benchmark pour mesurer les performances des méthodes principales de la classe <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> (génération et résolution de grilles de Sudoku).
  <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Collaboration diagram for fr.softsf.sudokufx.benchmark.BenchGridMaster:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master__coll__graph.svg" width="226" height="278"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master__coll__graph.svg" width="215" height="240"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html">GridState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contient l'état de la grille et l'instance de <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> pour le benchmark.  <a href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a83424bf6ea858a7cc811cd70876f0a82" id="r_a83424bf6ea858a7cc811cd70876f0a82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83424bf6ea858a7cc811cd70876f0a82">measureSudo</a> (Blackhole bh)</td></tr>
-<tr class="memdesc:a83424bf6ea858a7cc811cd70876f0a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Benchmarks the <code><a class="el" href="#a2afe77e82860a2ce4a3656a1911b851f">cacherLesCases(int, int[])</a></code> method by hiding a fixed number of cells in a copy of the solved Sudoku grid.  <br /></td></tr>
-<tr class="separator:a83424bf6ea858a7cc811cd70876f0a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a2afe77e82860a2ce4a3656a1911b851f" id="r_a2afe77e82860a2ce4a3656a1911b851f"><td class="memItemLeft" align="right" valign="top">Object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2afe77e82860a2ce4a3656a1911b851f">cacherLesCases</a> (int nombreDeCasesACacher, final int[] grilleAResoudre)</td></tr>
-<tr class="memdesc:a2afe77e82860a2ce4a3656a1911b851f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.  <br /></td></tr>
-<tr class="separator:a2afe77e82860a2ce4a3656a1911b851f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4c461ca0bc6198cc6dd38f8a86e6761" id="r_aa4c461ca0bc6198cc6dd38f8a86e6761"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4c461ca0bc6198cc6dd38f8a86e6761">measureCreerLesGrilles</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html">GridState</a> state, Blackhole bh)</td></tr>
+<tr class="memdesc:aa4c461ca0bc6198cc6dd38f8a86e6761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesure la performance de la méthode creerLesGrilles.  <br /></td></tr>
+<tr class="separator:aa4c461ca0bc6198cc6dd38f8a86e6761"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293df9aaea17f3d168a9ef3e9152f008" id="r_a293df9aaea17f3d168a9ef3e9152f008"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a293df9aaea17f3d168a9ef3e9152f008">measureResoudreLaGrille</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html">GridState</a> state, Blackhole bh)</td></tr>
+<tr class="memdesc:a293df9aaea17f3d168a9ef3e9152f008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesure la performance de la méthode resoudreLaGrille.  <br /></td></tr>
+<tr class="separator:a293df9aaea17f3d168a9ef3e9152f008"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ac14d9bd13ba2978f2cabbb4ab5f3c73d" id="r_ac14d9bd13ba2978f2cabbb4ab5f3c73d"><td class="memItemLeft" align="right" valign="top">static final int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac14d9bd13ba2978f2cabbb4ab5f3c73d">DEFAULT_INDICES</a> = IntStream.range(0, <a class="el" href="#a3ee3fc9c5c27f6bc22de6c55981d07e8">NOMBRE_CASES</a>).toArray()</td></tr>
-<tr class="separator:ac14d9bd13ba2978f2cabbb4ab5f3c73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a328ee5f933afa7f9923aa970875ab823" id="r_a328ee5f933afa7f9923aa970875ab823"><td class="memItemLeft" align="right" valign="top">static final int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a328ee5f933afa7f9923aa970875ab823">GRILLE_RESOLUE</a></td></tr>
-<tr class="separator:a328ee5f933afa7f9923aa970875ab823"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73df550f511e6fb8330df3f4582bcaad" id="r_a73df550f511e6fb8330df3f4582bcaad"><td class="memItemLeft" align="right" valign="top">static final int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73df550f511e6fb8330df3f4582bcaad">GRILLE_A_BENCHMARKER</a></td></tr>
+<tr class="memdesc:a73df550f511e6fb8330df3f4582bcaad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grille spécifique fournie pour un benchmark reproductible.  <br /></td></tr>
+<tr class="separator:a73df550f511e6fb8330df3f4582bcaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9215a35c9a6ca3890f7842cec2676ac" id="r_af9215a35c9a6ca3890f7842cec2676ac"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9215a35c9a6ca3890f7842cec2676ac">NIVEAU_DIFFICULTE_MOYEN</a> = 2</td></tr>
+<tr class="separator:af9215a35c9a6ca3890f7842cec2676ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ee3fc9c5c27f6bc22de6c55981d07e8" id="r_a3ee3fc9c5c27f6bc22de6c55981d07e8"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ee3fc9c5c27f6bc22de6c55981d07e8">NOMBRE_CASES</a> = 81</td></tr>
 <tr class="separator:a3ee3fc9c5c27f6bc22de6c55981d07e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a420dd14d54e0139bdb78be3e39ae403e" id="r_a420dd14d54e0139bdb78be3e39ae403e"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a420dd14d54e0139bdb78be3e39ae403e">NOMBRE_DE_CASES_A_CACHER</a> = 50</td></tr>
-<tr class="separator:a420dd14d54e0139bdb78be3e39ae403e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Classe de benchmark pour mesurer les performances des opérations sur la grille Sudoku, notamment le masquage de cases dans une grille résolue. </p>
-<p>Utilise JMH pour exécuter des tests de performance en mesurant le temps moyen d'exécution. </p>
+<div class="textblock"><p>Classe de benchmark pour mesurer les performances des méthodes principales de la classe <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> (génération et résolution de grilles de Sudoku). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2afe77e82860a2ce4a3656a1911b851f" name="a2afe77e82860a2ce4a3656a1911b851f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2afe77e82860a2ce4a3656a1911b851f">&#9670;&#160;</a></span>cacherLesCases()</h2>
+<a id="aa4c461ca0bc6198cc6dd38f8a86e6761" name="aa4c461ca0bc6198cc6dd38f8a86e6761"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4c461ca0bc6198cc6dd38f8a86e6761">&#9670;&#160;</a></span>measureCreerLesGrilles()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Object fr.softsf.sudokufx.benchmark.BenchGridMaster.cacherLesCases </td>
+          <td class="memname">void fr.softsf.sudokufx.benchmark.BenchGridMaster.measureCreerLesGrilles </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nombreDeCasesACacher</em></span>, </td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html">GridState</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">final int[]</td>          <td class="paramname"><span class="paramname"><em>grilleAResoudre</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nombreDeCasesACacher</td><td>Le nombre de cases à cacher dans la grille (au maximum 81 cases). </td></tr>
-    <tr><td class="paramname">grilleAResoudre</td><td>Le tableau représentant la grille, où les cases sélectionnées seront mises à 0. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a83424bf6ea858a7cc811cd70876f0a82" name="a83424bf6ea858a7cc811cd70876f0a82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83424bf6ea858a7cc811cd70876f0a82">&#9670;&#160;</a></span>measureSudo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fr.softsf.sudokufx.benchmark.BenchGridMaster.measureSudo </td>
-          <td>(</td>
-          <td class="paramtype">Blackhole</td>          <td class="paramname"><span class="paramname"><em>bh</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype">Blackhole</td>          <td class="paramname"><span class="paramname"><em>bh</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Benchmarks the <code><a class="el" href="#a2afe77e82860a2ce4a3656a1911b851f">cacherLesCases(int, int[])</a></code> method by hiding a fixed number of cells in a copy of the solved Sudoku grid. </p>
+<p>Mesure la performance de la méthode creerLesGrilles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bh</td><td>the <code><a class="el" href="">Blackhole</a></code> to consume the result and avoid dead code elimination during benchmarking </td></tr>
+    <tr><td class="paramname">state</td><td>l'état de la grille et l'instance de <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a>. </td></tr>
+    <tr><td class="paramname">bh</td><td>le Blackhole pour consommer le résultat. </td></tr>
   </table>
   </dd>
 </dl>
@@ -208,14 +176,52 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_a83424bf6ea858a7cc811cd70876f0a82_cgraph.svg" width="490" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_aa4c461ca0bc6198cc6dd38f8a86e6761_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a293df9aaea17f3d168a9ef3e9152f008" name="a293df9aaea17f3d168a9ef3e9152f008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293df9aaea17f3d168a9ef3e9152f008">&#9670;&#160;</a></span>measureResoudreLaGrille()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.benchmark.BenchGridMaster.measureResoudreLaGrille </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html">GridState</a></td>          <td class="paramname"><span class="paramname"><em>state</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Blackhole</td>          <td class="paramname"><span class="paramname"><em>bh</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mesure la performance de la méthode resoudreLaGrille. </p>
+<p>Utilise la grille fixe pour un test reproductible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>l'état de la grille et l'instance de <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a>. </td></tr>
+    <tr><td class="paramname">bh</td><td>le Blackhole pour consommer le résultat. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_a293df9aaea17f3d168a9ef3e9152f008_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac14d9bd13ba2978f2cabbb4ab5f3c73d" name="ac14d9bd13ba2978f2cabbb4ab5f3c73d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac14d9bd13ba2978f2cabbb4ab5f3c73d">&#9670;&#160;</a></span>DEFAULT_INDICES</h2>
+<a id="a73df550f511e6fb8330df3f4582bcaad" name="a73df550f511e6fb8330df3f4582bcaad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73df550f511e6fb8330df3f4582bcaad">&#9670;&#160;</a></span>GRILLE_A_BENCHMARKER</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,29 +230,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int [] fr.softsf.sudokufx.benchmark.BenchGridMaster.DEFAULT_INDICES = IntStream.range(0, <a class="el" href="#a3ee3fc9c5c27f6bc22de6c55981d07e8">NOMBRE_CASES</a>).toArray()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a328ee5f933afa7f9923aa970875ab823" name="a328ee5f933afa7f9923aa970875ab823"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a328ee5f933afa7f9923aa970875ab823">&#9670;&#160;</a></span>GRILLE_RESOLUE</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int [] fr.softsf.sudokufx.benchmark.BenchGridMaster.GRILLE_RESOLUE</td>
+          <td class="memname">final int [] fr.softsf.sudokufx.benchmark.BenchGridMaster.GRILLE_A_BENCHMARKER</td>
         </tr>
       </table>
   </td>
@@ -256,17 +240,42 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">        3, 5, 9, 4, 6, 7, 2, 8, 1,</div>
-<div class="line">        7, 6, 8, 5, 2, 1, 9, 4, 3,</div>
-<div class="line">        4, 2, 1, 9, 8, 3, 5, 7, 6,</div>
-<div class="line">        8, 3, 7, 1, 5, 2, 4, 6, 9,</div>
-<div class="line">        2, 4, 6, 7, 3, 9, 8, 1, 5,</div>
-<div class="line">        1, 9, 5, 8, 4, 6, 7, 3, 2,</div>
-<div class="line">        6, 8, 4, 3, 9, 5, 1, 2, 7,</div>
-<div class="line">        9, 7, 3, 2, 1, 8, 6, 5, 4,</div>
-<div class="line">        5, 1, 2, 6, 7, 4, 3, 9, 8</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 0, 2,</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 0, 8,</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 0, 7,</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 0, 3,</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 0, 1,</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 5, 6,</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 0, 4,</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 3, 5,</div>
+<div class="line">        0, 0, 0, 0, 0, 0, 0, 0, 9</div>
 <div class="line">    }</div>
 </div><!-- fragment -->
+<p>Grille spécifique fournie pour un benchmark reproductible. </p>
+<p>Cette grille contient déjà 70 cases vides (marquées par 0). </p>
+
+</div>
+</div>
+<a id="af9215a35c9a6ca3890f7842cec2676ac" name="af9215a35c9a6ca3890f7842cec2676ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9215a35c9a6ca3890f7842cec2676ac">&#9670;&#160;</a></span>NIVEAU_DIFFICULTE_MOYEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int fr.softsf.sudokufx.benchmark.BenchGridMaster.NIVEAU_DIFFICULTE_MOYEN = 2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a3ee3fc9c5c27f6bc22de6c55981d07e8" name="a3ee3fc9c5c27f6bc22de6c55981d07e8"></a>
@@ -291,28 +300,6 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a420dd14d54e0139bdb78be3e39ae403e" name="a420dd14d54e0139bdb78be3e39ae403e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a420dd14d54e0139bdb78be3e39ae403e">&#9670;&#160;</a></span>NOMBRE_DE_CASES_A_CACHER</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int fr.softsf.sudokufx.benchmark.BenchGridMaster.NOMBRE_DE_CASES_A_CACHER = 50</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/main/java/fr/softsf/sudokufx/benchmark/<a class="el" href="_bench_grid_master_8java.html">BenchGridMaster.java</a></li>
 </ul>
@@ -322,7 +309,7 @@ Static Private Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html">benchmark</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html">BenchGridMaster</a></li>
-    <li class="footer">Generated on Wed Oct 15 2025 19:20:09 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Nov 23 2025 16:57:39 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

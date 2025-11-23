@@ -6,7 +6,7 @@ var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n =
     [ "getValue", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#a238663fe2261f4b136a13fb722285688", null ],
     [ "localeProperty", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#aec30533d4a2ace2d0e62e4310a3e3b89", null ],
     [ "setLanguageBasedOnTheHostEnvironment", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#ab51cba3ba0b453f6219dc223664bb91a", null ],
-    [ "setLocaleBundle", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#a351ad8fa380f63805462d6e8d7057071", null ],
+    [ "setLocaleBundle", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#aff99f2da4efc70fd4c804973d919ad5c", null ],
     [ "bundle", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#abe06a1e5c58653e4f2f33af68379d2f2", null ],
     [ "ENGLISH_BUNDLE", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#ac4679380d2cec013f0d38b8efba70c08", null ],
     [ "FRENCH_BUNDLE", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#a614734550e457fda786578f53de95bc3", null ],

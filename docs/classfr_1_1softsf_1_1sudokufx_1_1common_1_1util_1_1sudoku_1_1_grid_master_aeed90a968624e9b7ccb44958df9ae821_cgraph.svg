@@ -49,7 +49,7 @@
 <script type="application/ecmascript">
 var viewWidth = 639;
 var viewHeight = 40;
-var sectionId = 'dynsection-5';
+var sectionId = 'dynsection-9';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -87,7 +87,7 @@ var sectionId = 'dynsection-5';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeb3e9bacbc9f3e23515e88a3c887f78e" target="_top" xlink:title="Élimine la valeur des possibilités des cases alentours.">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a6f8a7a32d9421be5ec0e87fab69bb351" target="_top" xlink:title="Élimine la valeur des possibilités des cases voisines (ligne, colonne, carré).">
 <polygon fill="white" stroke="#666666" points="630.75,-32 444.5,-32 444.5,0 630.75,0 630.75,-32"/>
 <text text-anchor="start" x="452.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="middle" x="537.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.eliminerPossibilite</text>

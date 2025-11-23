@@ -32,7 +32,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeb3e9bacbc9f3e23515e88a3c887f78e" target="_top" xlink:title="Élimine la valeur des possibilités des cases alentours.">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a6f8a7a32d9421be5ec0e87fab69bb351" target="_top" xlink:title="Élimine la valeur des possibilités des cases voisines (ligne, colonne, carré).">
 <polygon fill="white" stroke="#666666" points="408.5,-32 222.25,-32 222.25,0 408.5,0 408.5,-32"/>
 <text text-anchor="start" x="230.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="middle" x="315.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.eliminerPossibilite</text>

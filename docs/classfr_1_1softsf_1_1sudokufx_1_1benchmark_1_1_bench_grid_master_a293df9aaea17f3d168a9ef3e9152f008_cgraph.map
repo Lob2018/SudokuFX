@@ -1,0 +1,29 @@
+<map id="fr.softsf.sudokufx.benchmark.BenchGridMaster.measureResoudreLaGrille" name="fr.softsf.sudokufx.benchmark.BenchGridMaster.measureResoudreLaGrille">
+<area shape="rect" id="Node000001" title="Mesure la performance de la méthode resoudreLaGrille." alt="" coords="5,200,252,259"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a94424450acb912e32c7548e6659b617a" title="Tente de résoudre la grille de Sudoku fournie en utilisant un algorithme de backtracking optimisé (pr..." alt="" coords="300,208,548,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,227,284,227,284,232,252,232"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeed90a968624e9b7ccb44958df9ae821" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="614,5,862,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,206,501,133,545,92,595,58,606,52,608,57,597,62,548,96,505,136,442,210"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af7a1c9df1f82cefc39447ed221fafd76" title="Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités." alt="" coords="602,72,874,115"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="454,205,517,164,595,124,614,117,616,122,597,129,520,169,457,210"/>
+<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ad9235162514fff9999f723bb791d4da1" title="Record representing the result of solving a Sudoku grid." alt="" coords="614,163,862,205"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="548,209,598,201,599,207,549,214"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#ae544691a2f6f2b54de8f88d3babcc221" title="Remplit récursivement la grille Sudoku (backtracking)." alt="" coords="614,253,862,296"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="549,245,599,252,598,257,548,250"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku." alt="" coords="596,320,880,363"/>
+<area shape="poly" id="edge14_Node000002_Node000011" title=" " alt="" coords="468,249,528,278,597,305,620,313,618,318,595,311,526,283,466,254"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9f77177ae439a5e7b1cfa0394be13ae8" title="Vérifie que chaque valeur dans la grille est bien une possibilité respectant les règles." alt="" coords="602,387,875,445"/>
+<area shape="poly" id="edge15_Node000002_Node000012" title=" " alt="" coords="446,249,510,310,552,343,597,372,608,378,605,382,595,377,549,348,506,314,443,253"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="964,24,1212,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="863,31,949,35,948,41,863,36"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a6f8a7a32d9421be5ec0e87fab69bb351" title="Élimine la valeur des possibilités des cases voisines (ligne, colonne, carré)." alt="" coords="1296,63,1544,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1213,57,1281,65,1280,70,1212,62"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="679,163,677,153,687,143,707,138,738,136,772,138,792,145,790,150,771,144,738,141,708,143,689,148,682,154,685,161"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="801,250,879,215,902,198,927,182,1016,149,1108,125,1198,107,1279,94,1280,100,1199,112,1109,130,1018,154,930,186,905,202,882,220,803,255"/>
+<area shape="poly" id="edge13_Node000008_Node000008" title=" " alt="" coords="679,253,677,243,687,234,707,229,738,227,772,229,792,235,790,240,771,234,738,232,708,234,689,239,682,245,685,252"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3f17ab078f894717a1f3dfaffed0b987" title="Choisit une valeur aléatoire parmi les possibilités données." alt="" coords="964,220,1212,263"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="863,260,948,252,949,257,863,265"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a973a5ac2260605b8a260934b7e68373d" title="Trouve la case vide avec le moins de possibilités." alt="" coords="928,287,1248,329"/>
+<area shape="poly" id="edge12_Node000008_Node000010" title=" " alt="" coords="863,284,913,289,913,294,863,289"/>
+<area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="1026,220,1024,210,1034,201,1055,195,1088,193,1123,196,1144,202,1143,207,1122,201,1088,199,1056,201,1036,206,1029,211,1031,219"/>
+</map>

@@ -88,6 +88,7 @@ var hierarchy =
     [ "GridPane", null, [
       [ "fr.softsf.sudokufx.view.component.SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.benchmark.BenchGridMaster.GridState", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html", null ],
     [ "fr.softsf.sudokufx.model.GridUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.grid.GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.grid.GrilleResolueUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test.html", null ],

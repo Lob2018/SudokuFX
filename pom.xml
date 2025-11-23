@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.5.6</version>
+    <version>3.5.7</version>
     <relativePath/>
     <!-- lookup parent from repository -->
   </parent>
@@ -32,7 +32,7 @@
     <deployment-folder>output</deployment-folder>
     <java.version>21</java.version>
     <javafx.version>23.0.2</javafx.version>
-    <license.name>MIT</license.name>
+    <license.name>GPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
@@ -252,7 +252,7 @@
               <content><![CDATA[
 /*
  * SudokuFX - Copyright © 2024-present SOFT64.FR Lob2018
- * Licensed under the MIT License (MIT).
+ * Licensed under the GNU General Public License v3.0 (GPL-3.0).
  * See the full license at: https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme
  */
 ]]></content>

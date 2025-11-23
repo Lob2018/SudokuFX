@@ -105,17 +105,20 @@ $(function(){initNavTree('_bench_grid_master_8java.html',''); initResizable(true
 <div class="contents">
 <div class="textblock"><code>import java.util.Arrays;</code><br />
 <code>import java.util.concurrent.TimeUnit;</code><br />
-<code>import java.util.stream.IntStream;</code><br />
 <code>import org.openjdk.jmh.annotations.Benchmark;</code><br />
 <code>import org.openjdk.jmh.annotations.BenchmarkMode;</code><br />
 <code>import org.openjdk.jmh.annotations.Fork;</code><br />
+<code>import org.openjdk.jmh.annotations.Level;</code><br />
 <code>import org.openjdk.jmh.annotations.Measurement;</code><br />
 <code>import org.openjdk.jmh.annotations.Mode;</code><br />
 <code>import org.openjdk.jmh.annotations.OutputTimeUnit;</code><br />
+<code>import org.openjdk.jmh.annotations.Scope;</code><br />
+<code>import org.openjdk.jmh.annotations.Setup;</code><br />
+<code>import org.openjdk.jmh.annotations.State;</code><br />
 <code>import org.openjdk.jmh.annotations.Threads;</code><br />
 <code>import org.openjdk.jmh.annotations.Warmup;</code><br />
 <code>import org.openjdk.jmh.infra.Blackhole;</code><br />
-<code>import fr.softsf.sudokufx.common.enums.SecureRandomGenerator;</code><br />
+<code>import fr.softsf.sudokufx.common.util.sudoku.GridMaster;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Include dependency graph for BenchGridMaster.java:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -127,7 +130,10 @@ $(function(){initNavTree('_bench_grid_master_8java.html',''); initResizable(true
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html">fr.softsf.sudokufx.benchmark.BenchGridMaster</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe de benchmark pour mesurer les performances des opérations sur la grille Sudoku, notamment le masquage de cases dans une grille résolue.  <a href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe de benchmark pour mesurer les performances des méthodes principales de la classe <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> (génération et résolution de grilles de Sudoku).  <a href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html">fr.softsf.sudokufx.benchmark.BenchGridMaster.GridState</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contient l'état de la grille et l'instance de <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> pour le benchmark.  <a href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -141,7 +147,7 @@ Packages</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_5eb159725f84c66aafd839904a4acdd0.html">main</a></li><li class="navelem"><a class="el" href="dir_fd3f6763802dee1ad875f6c80eac0bda.html">java</a></li><li class="navelem"><a class="el" href="dir_91390426c0f30a4fef59e9ae252d2f44.html">fr</a></li><li class="navelem"><a class="el" href="dir_df66706d7efa0a9fd8002f7f6346de3d.html">softsf</a></li><li class="navelem"><a class="el" href="dir_757e38ffca8cea164996faf0234210f9.html">sudokufx</a></li><li class="navelem"><a class="el" href="dir_13419210c44e3cf7da80d3e1d672d568.html">benchmark</a></li><li class="navelem"><a class="el" href="_bench_grid_master_8java.html">BenchGridMaster.java</a></li>
-    <li class="footer">Generated on Wed Oct 15 2025 19:20:09 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Nov 23 2025 16:57:39 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
