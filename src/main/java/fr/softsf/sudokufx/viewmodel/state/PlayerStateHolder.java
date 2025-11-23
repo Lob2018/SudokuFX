@@ -12,6 +12,7 @@ import javafx.beans.property.SimpleObjectProperty;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.dto.PlayerDto;
@@ -31,8 +32,12 @@ import fr.softsf.sudokufx.service.business.PlayerService;
  * </ul>
  *
  * <p>Note: If initialization or refresh fails, the application exits gracefully.
+ *
+ * <p>Uses {@code @DependsOn("flyway")} to prevent in-memory integration tests from failing due to
+ * premature database access in the constructor.
  */
 @Component
+@DependsOn("flyway")
 public class PlayerStateHolder {
 
     private static final Logger LOG = LoggerFactory.getLogger(PlayerStateHolder.class);
