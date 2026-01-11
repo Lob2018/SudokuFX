@@ -2,7 +2,7 @@
 output/
 target/
 # Ignore Maven Wrapper binary files
-.mvn/wrapper/maven-wrapper.jar
+#.mvn/wrapper/maven-wrapper.jar
 
 ### Ignore Maven configuration file ###
 ### For NVD API key ###
