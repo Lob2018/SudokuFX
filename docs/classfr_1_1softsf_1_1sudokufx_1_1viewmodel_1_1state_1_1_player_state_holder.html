@@ -169,7 +169,8 @@ Expose an observable property for ViewModels and Views. </li>
 <li>
 Reload the current player passively from the database via <code><a class="el" href="#a62ff7ab823da335406fbc8600999a979">refreshCurrentPlayer()</a></code>. </li>
 </ul>
-<p>Note: If initialization or refresh fails, the application exits gracefully. </p>
+<p>Note: If initialization or refresh fails, the application exits gracefully.</p>
+<p>Uses <code class="JavaDocCode">@DependsOn("flyway")</code> to prevent in-memory integration tests from failing due to premature database access in the constructor. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="acf9ab855d83a7c6993fbe1f268ada09b" name="acf9ab855d83a7c6993fbe1f268ada09b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf9ab855d83a7c6993fbe1f268ada09b">&#9670;&#160;</a></span>PlayerStateHolder()</h2>
@@ -383,7 +384,7 @@ Reload the current player passively from the database via <code><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html">state</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a></li>
-    <li class="footer">Generated on Sun Nov 23 2025 16:57:40 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jan 11 2026 20:58:15 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>
