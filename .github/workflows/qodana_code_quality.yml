@@ -20,15 +20,15 @@ jobs:
       checks: write
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@95d9a5deda9de15063e7595e9719c11c38c90ae2 # v2.13.2
+        uses: step-security/harden-runner@df199fb7be9f65074067a9eb93f12bb4c5547cf2 # v2.13.3
         with:
           egress-policy: audit
 
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
           fetch-depth: 0
       - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@27de2a744479d1d731934eeaf79287575ebc5dd3 # v2025.2.1
+        uses: JetBrains/qodana-action@e5d20b1260e99a93210d46ec8882c83978a09036 # v2025.2.2
         with:
           args: --apply-fixes
           pr-mode: false
