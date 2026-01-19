@@ -10,12 +10,11 @@ import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
 
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 import jakarta.annotation.Nonnull;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -54,29 +53,25 @@ public class Player {
     private Long playerid;
 
     /** Language of the player. */
-    @NotNull @ManyToOne
-    @Cascade(CascadeType.ALL)
+    @NotNull @ManyToOne(cascade = CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerlanguageplayerlanguageid", nullable = false)
     private PlayerLanguage playerlanguageid;
 
     /** Options associated with the player. */
-    @NotNull @OneToOne
-    @Cascade(CascadeType.ALL)
+    @NotNull @OneToOne(cascade = CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "optionsoptionsid", nullable = false)
     private Options optionsid;
 
     /** Menu associated with the player. */
-    @NotNull @ManyToOne
-    @Cascade(CascadeType.ALL)
+    @NotNull @ManyToOne(cascade = CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "menumenuid", nullable = false)
     private Menu menuid;
 
     /** Games played by the player. */
-    @OneToMany(mappedBy = "playerid", orphanRemoval = true)
-    @Cascade(CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "playerid", orphanRemoval = true)
     private Set<Game> games = new LinkedHashSet<>();
 
     /** Name of the player. */

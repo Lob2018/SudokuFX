@@ -8,12 +8,11 @@ package fr.softsf.sudokufx.model;
 import java.time.Instant;
 import java.util.Objects;
 
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 import jakarta.annotation.Nonnull;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -49,22 +48,19 @@ public class Game {
     private Long gameid;
 
     /** The grid associated with this game. */
-    @Valid @OneToOne
-    @Cascade(CascadeType.ALL)
+    @Valid @OneToOne(cascade = CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "gridgridid")
     private Grid gridid;
 
     /** The player who owns this game. */
-    @Valid @ManyToOne
-    @Cascade(CascadeType.ALL)
+    @Valid @ManyToOne(cascade = CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerplayerid")
     private Player playerid;
 
     /** The difficulty level of this game. */
-    @Valid @ManyToOne
-    @Cascade(CascadeType.ALL)
+    @Valid @ManyToOne(cascade = CascadeType.ALL)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "levellevelid")
     private GameLevel levelid;
