@@ -71,12 +71,12 @@ public class BenchGridMaster {
         public GridMaster gridMaster;
 
         /**
-         * Configure l'état du benchmark avant chaque essai complet (Level.Trial).
-         * * Démarche pour reproduire un setup avec validation (si besoin de tester l'impact du validateur) :
-         * 1. Rendre le constructeur de GridMaster public.
-         * 2. Instancier GridMaster avec un JakartaValidator encapsulant un Validator "No-Op".
-         * 3. Implémenter les méthodes de l'interface Validator (Set.of() pour les validations, null pour le reste).
-         * * Puis la grille est chargée directement.
+         * Configure l'état du benchmark avant chaque essai complet (Level.Trial). * Démarche pour
+         * reproduire un setup avec validation (si besoin de tester l'impact du validateur) : 1.
+         * Rendre le constructeur de GridMaster public. 2. Instancier GridMaster avec un
+         * JakartaValidator encapsulant un Validator "No-Op". 3. Implémenter les méthodes de
+         * l'interface Validator (Set.of() pour les validations, null pour le reste). * Puis la
+         * grille est chargée directement.
          */
         @Setup(Level.Trial)
         public void setup() {
