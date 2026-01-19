@@ -49,7 +49,7 @@ public enum I18n {
      * @param i18n Language code.
      * @return Singleton instance.
      */
-    public I18n setLocaleBundle(final String i18n) {
+    public static I18n setLocaleBundle(final String i18n) {
         bundle = "EN".equals(i18n) ? ENGLISH_BUNDLE : FRENCH_BUNDLE;
         LOCALE.set(bundle.getLocale());
         return INSTANCE;
