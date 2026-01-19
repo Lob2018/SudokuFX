@@ -32,9 +32,9 @@
     <deployment-folder>output</deployment-folder>
     <java.version>21</java.version>
     <javafx.version>23.0.2</javafx.version>
-    <maven.version>3.9.9</maven.version>
     <license.name>GPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
+    <maven.version>3.9.9</maven.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <sonar.organization>lob2018</sonar.organization>
