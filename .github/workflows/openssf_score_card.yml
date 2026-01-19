@@ -4,11 +4,9 @@
 
 name: "OpenSSF scorecard"
 on:
-  # For Branch-Protection check. Only the default branch is supported. See
-  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection
+  # Only default branch supported: https://github.com/ossf/scorecard/blob/main/docs/checks.md
+  # Cron set to Monday (1) at 06:27 UTC.
   branch_protection_rule:
-  # To guarantee Maintained check is occasionally updated. See
-  # https://github.com/ossf/scorecard/blob/main/docs/checks.md#maintained
   schedule:
     - cron: '27 6 * * 1'
   push:
