@@ -13,6 +13,7 @@
         </rollingPolicy>
         <encoder>
             <pattern>%d %p %c{1} [%t] %m%n</pattern>
+            <charset>UTF-8</charset>
         </encoder>
     </appender>
     <logger name="fr.softsf.sudokufx" level="info" additivity="false">
