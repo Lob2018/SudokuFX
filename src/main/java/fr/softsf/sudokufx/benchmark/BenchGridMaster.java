@@ -71,57 +71,16 @@ public class BenchGridMaster {
         public GridMaster gridMaster;
 
         /**
-         * Configure l'état avant chaque essai complet du benchmark (Level.Trial). Initialise
-         * GridMaster et utilise la grille fixe fournie (il faut rendre le constructeur de
-         * GridMaster public).
+         * Configure l'état du benchmark avant chaque essai complet (Level.Trial).
+         * * Démarche pour reproduire un setup avec validation (si besoin de tester l'impact du validateur) :
+         * 1. Rendre le constructeur de GridMaster public.
+         * 2. Instancier GridMaster avec un JakartaValidator encapsulant un Validator "No-Op".
+         * 3. Implémenter les méthodes de l'interface Validator (Set.of() pour les validations, null pour le reste).
+         * * Puis la grille est chargée directement.
          */
         @Setup(Level.Trial)
         public void setup() {
-            //            gridMaster =
-            //                    new GridMaster(
-            //                            new JakartaValidator(
-            //                                    new Validator() {
-            //                                        @Override
-            //                                        public <T> Set<ConstraintViolation<T>>
-            // validate(
-            //                                                T t, Class<?>... classes) {
-            //                                            return Set.of();
-            //                                        }
-            //
-            //                                        @Override
-            //                                        public <T> Set<ConstraintViolation<T>>
-            // validateProperty(
-            //                                                T t, String s, Class<?>... classes) {
-            //                                            return Set.of();
-            //                                        }
-            //
-            //                                        @Override
-            //                                        public <T> Set<ConstraintViolation<T>>
-            // validateValue(
-            //                                                Class<T> aClass,
-            //                                                String s,
-            //                                                Object o,
-            //                                                Class<?>... classes) {
-            //                                            return Set.of();
-            //                                        }
-            //
-            //                                        @Override
-            //                                        public BeanDescriptor getConstraintsForClass(
-            //                                                Class<?> aClass) {
-            //                                            return null;
-            //                                        }
-            //
-            //                                        @Override
-            //                                        public <T> T unwrap(Class<T> aClass) {
-            //                                            return null;
-            //                                        }
-            //
-            //                                        @Override
-            //                                        public ExecutableValidator forExecutables() {
-            //                                            return null;
-            //                                        }
-            //                                    }));
-            // La grille de benchmark est chargée directement.
+            // Chargement direct de la grille à partir de la constante de référence
             initialGrid = Arrays.copyOf(GRILLE_A_BENCHMARKER, NOMBRE_CASES);
         }
     }
