@@ -19,6 +19,7 @@ import javafx.scene.text.Text;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.testfx.api.FxRobot;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.view.util.BindingConfigurator;
@@ -124,13 +125,18 @@ class BindingConfiguratorUTest {
     }
 
     @Test
-    void givenColorPicker_whenConfigureColorPicker_thenKeyboardEventsDoNotThrowExceptions() {
-        ColorPicker colorPicker = new ColorPicker();
-        colorPicker.setTooltip(new Tooltip());
+    void givenColorPicker_whenConfigureColorPicker_thenKeyboardEventsDoNotThrowExceptions(
+            FxRobot robot) {
+        final ColorPicker colorPicker = new ColorPicker();
         SimpleStringProperty accessibleProp = new SimpleStringProperty("Color picker");
         SimpleStringProperty tooltipProp = new SimpleStringProperty("Choose a color");
         SimpleStringProperty roleDescProp = new SimpleStringProperty("Color selection");
-        configurator.configureColorPicker(colorPicker, accessibleProp, tooltipProp, roleDescProp);
+        robot.interact(
+                () -> {
+                    colorPicker.setTooltip(new Tooltip());
+                    configurator.configureColorPicker(
+                            colorPicker, accessibleProp, tooltipProp, roleDescProp);
+                });
         KeyEvent spaceKeyEvent =
                 new KeyEvent(
                         KeyEvent.KEY_PRESSED, "", "", KeyCode.SPACE, false, false, false, false);
@@ -142,9 +148,14 @@ class BindingConfiguratorUTest {
                         KeyEvent.KEY_PRESSED, "", "", KeyCode.ESCAPE, false, false, false, false);
         KeyEvent tabKeyEvent =
                 new KeyEvent(KeyEvent.KEY_PRESSED, "", "", KeyCode.TAB, false, false, false, false);
-        assertDoesNotThrow(() -> colorPicker.fireEvent(spaceKeyEvent));
-        assertDoesNotThrow(() -> colorPicker.fireEvent(enterKeyEvent));
-        assertDoesNotThrow(() -> colorPicker.fireEvent(escapeKeyEvent));
-        assertDoesNotThrow(() -> colorPicker.fireEvent(tabKeyEvent));
+        assertDoesNotThrow(
+                () ->
+                        robot.interact(
+                                () -> {
+                                    colorPicker.fireEvent(spaceKeyEvent);
+                                    colorPicker.fireEvent(enterKeyEvent);
+                                    colorPicker.fireEvent(escapeKeyEvent);
+                                    colorPicker.fireEvent(tabKeyEvent);
+                                }));
     }
 }
