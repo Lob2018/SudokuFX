@@ -6,15 +6,20 @@
 version: 2
 updates:
   # Maintain dependencies for Maven
-  - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/" # Location of the pom.xml file
+  - package-ecosystem: "maven"
+    directory: "/"
     schedule:
       interval: "weekly"
-    ignore:
-      - dependency-name: "org.openjfx:*"
-        versions: [ ">=24" ] # Blocks versions higher than JavaFX 23
+    groups:
+      maven-dependencies:
+        patterns:
+          - "*"
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+    groups:
+      actions-dependencies:
+        patterns:
+          - "*"
