@@ -285,7 +285,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 
 ### Build with
 
-- Java LTS (e.g. 21)
+- Java LTS (e.g. 25)
 - JavaFX
 - WiX Toolset v3.11
 - Dependencies:
@@ -333,7 +333,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 - Configured the necessary environment variables
     - JDK
         - name:JAVA_HOME
-        - value LTS (e.g. 21):C:\Program Files\Eclipse Adoptium\jdk-21.0.3.9-hotspot
+        - value LTS (e.g. 25):C:\Program Files\Eclipse Adoptium\jdk-25.0.1
     - WiX
         - name:WIX
         - value:C:\Program Files (x86)\WiX Toolset v3.11\

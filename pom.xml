@@ -12,7 +12,7 @@
   <!-- Project information -->
   <groupId>fr.softsf</groupId>
   <artifactId>SudokuFX</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <name>Sudoku</name>
   <organization>
     <name>Soft64.fr</name>
@@ -30,8 +30,8 @@
   <!-- Project properties -->
   <properties>
     <deployment-folder>output</deployment-folder>
-    <java.version>21</java.version>
-    <javafx.version>23.0.2</javafx.version>
+    <java.version>25</java.version>
+    <javafx.version>25.0.1</javafx.version>
     <license.name>GPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
     <maven.version>3.9.9</maven.version>

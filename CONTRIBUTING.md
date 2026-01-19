@@ -102,7 +102,7 @@ For feature requests, please describe:
 
 ### 🛠 Prerequisites
 
-- Java 21+
+- Java 25+
 - Git
 - No need to install Maven manually — we use the **Maven Wrapper** (`./mvnw`)
 - Recommended IDE: **IntelliJ IDEA**
