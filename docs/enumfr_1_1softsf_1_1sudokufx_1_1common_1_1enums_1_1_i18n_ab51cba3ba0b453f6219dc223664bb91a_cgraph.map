@@ -2,6 +2,6 @@
 <area shape="rect" id="Node000001" title="Sets the language to match host system (defaulting to English if not French)." alt="" coords="5,39,307,81"/>
 <area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#a4abdeab180f6423118ec0091f2f5dd07" title=" " alt="" coords="355,5,611,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,42,339,39,340,44,307,47"/>
-<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#aff99f2da4efc70fd4c804973d919ad5c" title="Updates the current locale and bundle based on language code." alt="" coords="371,72,595,115"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#aab343d57678e6dd734d97f313394a060" title="Updates the current locale and bundle based on language code." alt="" coords="371,72,595,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="307,73,355,78,355,83,307,78"/>
 </map>

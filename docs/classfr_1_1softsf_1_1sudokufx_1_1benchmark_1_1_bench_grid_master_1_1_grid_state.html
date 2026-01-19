@@ -118,7 +118,7 @@ $(function(){initNavTree('classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_g
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7cb4473d90ff66127b813572213c7ec" id="r_ac7cb4473d90ff66127b813572213c7ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7cb4473d90ff66127b813572213c7ec">setup</a> ()</td></tr>
-<tr class="memdesc:ac7cb4473d90ff66127b813572213c7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure l'état avant chaque essai complet du benchmark (Level.Trial).  <br /></td></tr>
+<tr class="memdesc:ac7cb4473d90ff66127b813572213c7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure l'état du benchmark avant chaque essai complet (Level.Trial).  <br /></td></tr>
 <tr class="separator:ac7cb4473d90ff66127b813572213c7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -147,8 +147,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Configure l'état avant chaque essai complet du benchmark (Level.Trial). </p>
-<p>Initialise <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> et utilise la grille fixe fournie (il faut rendre le constructeur de <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> public). </p>
+<p>Configure l'état du benchmark avant chaque essai complet (Level.Trial). </p>
+<ul>
+<li>Démarche pour reproduire un setup avec validation (si besoin de tester l'impact du validateur) : 1. Rendre le constructeur de <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> public. 2. Instancier <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku.">GridMaster</a> avec un JakartaValidator encapsulant un Validator "No-Op". 3. Implémenter les méthodes de l'interface Validator (Set.of() pour les validations, null pour le reste). * Puis la grille est chargée directement. </li>
+</ul>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -197,7 +199,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html">benchmark</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html">BenchGridMaster</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master_1_1_grid_state.html">GridState</a></li>
-    <li class="footer">Generated on Mon Jan 19 2026 10:07:25 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Mon Jan 19 2026 18:03:46 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

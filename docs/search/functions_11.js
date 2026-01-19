@@ -53,7 +53,7 @@ var searchData=
   ['setlanguagebasedonthehostenvironment_50',['setLanguageBasedOnTheHostEnvironment',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#ab51cba3ba0b453f6219dc223664bb91a',1,'fr::softsf::sudokufx::common::enums::I18n']]],
   ['setlevel_51',['setLevel',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a3dbb7779e391585b833acc0f2f030d1c',1,'fr::softsf::sudokufx::model::GameLevel']]],
   ['setlinuxosfortests_52',['setLinuxOsForTests',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a6e5478eda6526c2af2bdebd4d045554a',1,'fr::softsf::sudokufx::config::os::OsFoldersConfig']]],
-  ['setlocalebundle_53',['setLocaleBundle',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#aff99f2da4efc70fd4c804973d919ad5c',1,'fr::softsf::sudokufx::common::enums::I18n']]],
+  ['setlocalebundle_53',['setLocaleBundle',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#aab343d57678e6dd734d97f313394a060',1,'fr::softsf::sudokufx::common::enums::I18n']]],
   ['setlogbackpathfortests_54',['setLogBackPathForTests',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a033f281c559f5f1b58ba375ce2b3c3d9',1,'fr::softsf::sudokufx::config::MyLogbackConfig']]],
   ['setmacosfortests_55',['setMacOSForTests',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a8d708ea54b032826ae290c99585af179',1,'fr::softsf::sudokufx::config::os::OsFoldersConfig']]],
   ['setmenuid_56',['setMenuid',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0c578d68480f93172709babb1224f573',1,'fr::softsf::sudokufx::model::Player']]],

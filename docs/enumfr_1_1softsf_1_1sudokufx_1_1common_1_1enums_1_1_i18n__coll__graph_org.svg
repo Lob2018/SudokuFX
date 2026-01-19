@@ -54,10 +54,10 @@
 <text text-anchor="start" x="27.75" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setLanguageBasedOnThe</text>
 <text text-anchor="start" x="27.75" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">HostEnvironment()</text>
 <text text-anchor="start" x="10.88" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="27.75" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">I18n setLocaleBundle</text>
-<text text-anchor="start" x="27.75" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String i18n)</text>
-<text text-anchor="start" x="10.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="27.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">[static initializer]</text>
+<text text-anchor="start" x="27.75" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">[static initializer]</text>
+<text text-anchor="start" x="10.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="27.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">static I18n setLocaleBundle</text>
+<text text-anchor="start" x="27.75" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String i18n)</text>
 <polygon fill="#666666" stroke="#666666" points="0,-402 0,-402 179,-402 179,-402 0,-402"/>
 <polygon fill="#666666" stroke="#666666" points="0,-174 0,-174 25.75,-174 25.75,-174 0,-174"/>
 <polygon fill="#666666" stroke="#666666" points="25.75,-174 25.75,-174 179,-174 179,-174 25.75,-174"/>
