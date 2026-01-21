@@ -167,35 +167,43 @@ To use them:
 
 ## 6. Git Hooks and Code Quality with pre-commit
 
-We use [pre-commit](https://pre-commit.com/) to enforce code quality and prevent common issues before commits are made.
+We use [pre-commit](https://pre-commit.com/) to enforce code quality and prevent common issues before commits are made. This also helps keep our dependencies secure and monitored.
 
 ### ✅ Enabled Hooks
 
-- `mvn-checkstyle`: Runs Checkstyle on Java files
-- `gitleaks`: Scans for hardcoded secrets and credentials
-- `shellcheck`: Lints shell scripts (excluding `mvnw`)
-- `end-of-file-fixer`: Ensures a newline at the end of files
-- `trailing-whitespace`: Removes trailing whitespace
+- `mvn-checkstyle`: Runs Checkstyle on Java files.
+- `gitleaks`: Scans for hardcoded secrets and credentials.
+- `shellcheck`: Lints shell scripts (excluding `mvnw`).
+- `end-of-file-fixer`: Ensures a newline at the end of files.
+- `trailing-whitespace`: Removes trailing whitespace.
 
-### ⚙️ Setup Instructions
+### ⚙️ Setup and Maintenance Instructions
+
+To ensure you are using the latest, most secure versions of our tools, follow these steps:
 
 ```bash
-
 # 1. Install Python (via Microsoft Store on Windows)
-# 2. Install pre-commit
-py -m pip install pre-commit
+# 2. Install/Update pre-commit
+# Use --upgrade to ensure you have the latest runner and security patches
+py -m pip install --upgrade pre-commit
 
 # 3. Install Git hooks for this repository
 py -m pre_commit install
 
-# 4. (Optional) Run hooks on all files
+# 4. (Optional) Run hooks on all files to verify everything is clean
 py -m pre_commit run --all-files --verbose
 
-# 5. (Optional) Update hooks to latest versions
+# 5. (Optional) Update hooks to their latest versions
+# This updates the 'rev' tags in your .pre-commit-config.yaml
 py -m pre_commit autoupdate
 
-# 6. Install ShellCheck via winget
+# 6. Install ShellCheck via winget (required for shellcheck hook)
 winget install --id=koalaman.shellcheck
+
+# 7. IMPORTANT: Update requirements.txt for Snyk/Security scanning
+# If you updated pre-commit, you must synchronize the requirements file
+# so that security scanners (like Snyk) can verify transitive dependencies.
+py -m pip freeze > requirements.txt
 ```
 
 ## 7. Testing Guidelines
