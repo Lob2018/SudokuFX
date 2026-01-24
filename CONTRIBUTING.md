@@ -59,13 +59,38 @@ If you encounter a bug, have a feature request, or need help with SudokuFX, plea
 
 ### 🐛 Bug Reports
 
-When reporting bugs, please include:
+To ensure your report is actionable, we require a **Clean Bug Report**. Please follow this structured format to help maintainers reproduce and fix the issue quickly.
 
-- A clear description of the issue
-- Steps to reproduce the problem
-- Expected vs actual behavior
-- Your operating system and Java version
-- **Application logs** (see below)
+#### **Recommended Bug Report Template**
+
+* **Scenario**: A brief description of what you were doing.
+    * *Example*: "The application fails to create a manual entry when using the 'Backup' sub-menu during active gameplay."
+
+
+* **Platform**: OS version (e.g., Windows 11), Java version, and Display resolution/Scaling.
+   * *Example*: "Windows 11 Pro, OpenJDK 25, 1920x1080 (125% scaling)."
+
+
+* **Steps to Reproduce**: Detailed sequence of actions to trigger the bug.
+  * *Example*:
+    1. Open **SudokuFX** and start a new game.
+    2. Access the **Backup** sub-menu.
+    3. Click on the action to trigger a manual backup.
+
+
+* **Expected Behaviour**: What should have happened.
+  * *Example*: "A success message should appear and the backup file should be listed in the backup history."
+
+
+* **Actual Behaviour**: What actually happened.
+  * *Example*: "The sub-menu closes abruptly, no backup is created, and the auto-save feature stops working."
+
+
+* **Technical Note**: Relevant logs (see below), stacktraces, or error codes.
+  * *Example*: `ERROR --- [JavaFX-EventThread] f.s.service.BackupService : IOException: Disk full or access denied`.
+
+> [!TIP]
+> **Why this matters:** High-quality reports save time. Including logs and specific steps allows us to jump straight into the code rather than guessing the context.
 
 ### 📋 Application Logs
 
