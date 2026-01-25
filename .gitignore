@@ -43,3 +43,14 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Python (Virtual Environments) ###
+.venv/
+venv/
+ENV/
+env/
+# Fichiers de configuration contenant des secrets ou chemins locaux
+.env
+.python-version
+pip-log.txt
+pip-delete-this-directory.txt
