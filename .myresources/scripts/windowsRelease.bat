@@ -62,7 +62,7 @@
     cd ./target
     (
         echo @echo off
-        echo     chcp 65001
+        echo     chcp 65001 ^>nul
         echo     color 0A
         echo     echo.
         echo     echo           ▒▒▒▒▒
@@ -86,30 +86,15 @@
         echo     echo.
         echo     timeout /t 1 /nobreak ^>nul
         echo     set JAVA_VERSION=0
+        echo     set JAVA_REQUIRED=%5
+        echo     set FOLDER=%1
+        echo     where java ^>nul 2^>^&1
+        echo     if %%errorlevel%% neq 0 goto :java_error
         echo     for /f "tokens=3" %%%%g in ('java -version 2^^^>^^^&1 ^^^| findstr /i "version"'^) do set JAVA_FULL_VERSION=%%%%g
+        echo     if "%%JAVA_FULL_VERSION%%" == "" goto :java_error
         echo     set JAVA_FULL_VERSION=%%JAVA_FULL_VERSION:"=%%
         echo     for /f "tokens=1,2 delims=." %%%%a in ("%%JAVA_FULL_VERSION%%"^) do if "%%%%a"=="1" (set JAVA_VERSION=%%%%b^) else (set JAVA_VERSION=%%%%a^)
-        echo     set /a JAVA_REQUIRED=%5
-        echo     set FOLDER=%1
-        echo     if %%JAVA_VERSION%% EQU 0 (
-        echo         echo.
-        echo         echo  ██ Java minimum version %%JAVA_REQUIRED%% is required to run this application.
-        echo         echo  ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒.
-        echo         echo  ████ You can now close this window ████
-        echo         echo.
-        echo         pause
-        echo         exit /b 1
-        echo     ^)
-        echo     if %%JAVA_VERSION%% LSS %%JAVA_REQUIRED%% (
-        echo         echo.
-        echo         echo  ██ A newer version of Java is required to run this application.
-        echo         echo  ██ Your Java version is %%JAVA_VERSION%%, and requires version %%JAVA_REQUIRED%%.
-        echo         echo  ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒.
-        echo         echo  ████ You can now close this window ████
-        echo         echo.
-        echo         pause
-        echo         exit /b 1
-        echo     ^)
+        echo     if %%JAVA_VERSION%% LSS %%JAVA_REQUIRED%% goto :java_error
         echo     if not exist %%FOLDER%% (
         echo         mkdir %%FOLDER%%
         echo         echo Extracting the contents of the SudokuFX JAR file...
@@ -124,9 +109,21 @@
         echo     if exist %%FOLDER%% (
         echo         echo Running the SudokuFX application...
         echo         cd %%FOLDER%%
-        echo         start /min cmd /c "java -Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -Dapp.organization=%8 -Dapp.license=%9 -jar %1-%2.jar > nul & exit"
+        echo         start /min cmd /c "java -Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile=%%FOLDER%%.jsa -Dapp.name=%1 -Dapp.version=%2 -Dapp.organization=%8 -Dapp.license=%9 -jar %1-%2.jar > nul ^& exit"
         echo     ^)
         echo     exit
+        echo :java_error
+        echo     echo.
+        echo     echo  ██ Java version %%JAVA_REQUIRED%% is required.
+        echo     echo  ██ Your version: %%JAVA_VERSION%% ^(0 = Not Found^)
+        echo     echo  ██ Please install the latest Windows Java Adoptium Temurin JRE from:
+        echo     echo  ██ https://adoptium.net/temurin/releases
+        echo     echo.
+        echo     echo.
+        echo     echo  ████ You can now close this window ████
+        echo     echo.
+        echo     pause
+        echo     exit /b 1
     ) > %1-%2.bat
     echo.
     echo # TARGET   : COPY THE BATCH AND THE UBERJAR TO OUTPUT AS A ZIP FILE

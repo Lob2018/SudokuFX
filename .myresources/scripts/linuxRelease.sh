@@ -86,16 +86,23 @@ FOLDER=$1
 
 if [[ -z "\$JAVA_VERSION" ]]; then
     echo " ██ Java minimum version $5 is required to run this application."
-    echo " ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒."
+    echo " ██ Please install the latest Java Adoptium Temurin JRE from"
+    echo " ██ https://adoptium.net/temurin/releases"
+    echo " "
     echo " ████ You can now close this window ████"
+    echo " "
     exit 1
 fi
 
 if [[ "\$JAVA_VERSION" -lt "$5" ]]; then
     echo " ██ A newer version of Java is required to run this application."
     echo " ██ Your Java version is \$JAVA_VERSION, and requires version $5."
-    echo " ██ Please install the latest Java Adoptium Temurin JRE available at ▒▒ https://adoptium.net/temurin/releases/?package=jre ▒▒."
+    echo " ██ Please install the latest Java Adoptium Temurin JRE from:"
+    echo " ██ https://adoptium.net/temurin/releases"
+    echo " "
+    echo " "
     echo " ████ You can now close this window ████"
+    echo " "
     exit 1
 fi
 
