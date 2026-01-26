@@ -197,8 +197,11 @@ jobs:
           egress-policy: audit
 
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-      - name: Extract version
-        run: echo "POM_VERSION=$(awk '/<parent>/,/<\/parent>/ {next} /<version>/ {gsub(/.*<version>|<\/version>.*/, ""); print; exit}' pom.xml)" >> $GITHUB_ENV
+      - name: Extract version from pom.xml
+        shell: bash
+        run: |
+          version=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout)
+          echo "POM_VERSION=$version" >> $GITHUB_ENV
       - name: Download output folder (Windows)
         uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7.0.0
         with:
