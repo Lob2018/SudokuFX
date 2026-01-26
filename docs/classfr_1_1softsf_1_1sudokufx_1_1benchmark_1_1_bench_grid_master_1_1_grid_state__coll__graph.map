@@ -1,9 +1,9 @@
 <map id="fr.softsf.sudokufx.benchmark.BenchGridMaster.GridState" name="fr.softsf.sudokufx.benchmark.BenchGridMaster.GridState">
-<area shape="rect" id="Node000001" title="Contient l&#39;état de la grille et l&#39;instance de GridMaster pour le benchmark." alt="" coords="42,2272,226,2357"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku." alt="" coords="15,229,253,2208"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,2208,137,2255,131,2255,131,2208"/>
+<area shape="rect" id="Node000001" title="Contient l&#39;état de la grille et l&#39;instance de GridMaster pour le benchmark." alt="" coords="42,2288,226,2373"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html" title="Fournit les fonctionnalités essentielles pour générer et résoudre des grilles de Sudoku." alt="" coords="15,237,253,2216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,2216,137,2271,131,2271,131,2216"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,51,84,120"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="51,135,59,230,53,230,46,135"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="51,135,59,237,54,238,46,135"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="108,5,339,165"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="220,165,216,213,211,213,214,165"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="220,165,215,221,210,220,215,165"/>
 </map>

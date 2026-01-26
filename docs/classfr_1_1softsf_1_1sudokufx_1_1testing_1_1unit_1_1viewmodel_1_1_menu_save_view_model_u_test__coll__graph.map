@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSaveViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSaveViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,1403,287,1781"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1411,287,1789"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html" title="ViewModel for managing backup menu UI state and accessibility texts." alt="" coords="31,5,262,1339"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,1338,149,1386,144,1386,144,1338"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,1338,149,1394,144,1394,144,1338"/>
 </map>

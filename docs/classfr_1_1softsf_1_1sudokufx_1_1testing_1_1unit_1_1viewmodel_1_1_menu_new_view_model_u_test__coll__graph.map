@@ -1,8 +1,8 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,1232,256,1445"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1248,256,1461"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="24,5,237,384"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,384,125,448,120,808,125,1168,126,1215,121,1215,119,1168,114,808,119,448,121,384"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status." alt="" coords="228,448,452,1168"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="198,383,225,463,220,465,193,385"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="231,1122,212,1169,191,1218,186,1216,207,1167,226,1120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,384,125,456,120,816,125,1176,127,1231,121,1232,119,1176,114,816,119,456,121,384"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status." alt="" coords="232,456,456,1176"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="198,383,229,473,224,475,193,385"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,1130,216,1177,191,1233,186,1231,211,1175,230,1128"/>
 </map>

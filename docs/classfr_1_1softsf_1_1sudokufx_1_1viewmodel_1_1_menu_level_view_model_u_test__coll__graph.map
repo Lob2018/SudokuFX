@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,608,251,1029"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,616,251,1037"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html" title="ViewModel for managing difficulty level selection in the menu." alt="" coords="24,5,232,544"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,544,131,591,126,591,126,544"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,544,131,599,126,599,126,544"/>
 </map>

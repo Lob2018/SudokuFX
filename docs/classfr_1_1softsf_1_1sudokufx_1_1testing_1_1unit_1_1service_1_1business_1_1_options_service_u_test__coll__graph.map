@@ -1,16 +1,16 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.business.OptionsServiceUTest" name="fr.softsf.sudokufx.testing.unit.service.business.OptionsServiceUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="300,599,586,897"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="301,615,588,913"/>
 <area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" title="Repository interface for Options entities." alt="" coords="5,177,182,263"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,263,74,320,68,390,69,427,74,464,84,500,99,533,135,583,181,625,233,660,286,689,283,693,230,665,178,629,131,587,94,536,79,502,69,465,64,428,63,390,69,319,80,262"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html" title="Service for managing Options entities." alt="" coords="222,364,454,535"/>
-<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="140,260,237,351,233,355,136,264"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,263,73,321,67,393,68,431,73,470,82,507,98,541,134,593,181,636,233,673,287,702,284,707,230,677,177,640,130,596,93,544,77,508,67,471,62,432,61,393,68,320,79,262"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html" title="Service for managing Options entities." alt="" coords="224,372,456,543"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="138,260,242,358,238,362,135,264"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="16,5,172,91"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,106,96,177,91,177,91,106"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html" title="This interface defines methods for mapping objects of type Options to objects of type OptionsDto and ..." alt="" coords="512,151,790,289"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="648,289,630,407,613,472,591,536,566,585,561,583,586,534,608,471,624,406,643,289"/>
-<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="559,291,469,356,466,352,556,287"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="240,140,470,300"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="437,298,456,329,468,363,481,422,487,468,488,515,483,575,482,582,477,581,478,574,483,515,482,469,476,423,463,365,451,332,432,301"/>
-<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="352,300,348,347,343,347,346,300"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="370,533,387,582,382,584,365,535"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html" title="This interface defines methods for mapping objects of type Options to objects of type OptionsDto and ..." alt="" coords="517,151,796,289"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="655,289,637,410,621,478,599,544,570,601,565,599,594,542,616,477,632,409,649,289"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="567,291,469,364,466,360,563,287"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="244,140,474,300"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="444,298,460,323,468,347,471,372,490,481,493,529,488,591,487,598,482,597,483,590,487,529,484,481,466,372,463,348,455,325,440,301"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="355,300,351,355,346,355,350,299"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="372,542,391,598,386,599,367,543"/>
 </map>

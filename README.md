@@ -8,7 +8,7 @@ Dive into the world of Sudoku with a game that offers:
 
 Challenge your mind and enjoy hours of logical fun with SudokuFX!
 
-[![License](https://img.shields.io/badge/license-GPLv3.0-brightgreen.svg)](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)<br>
+[![License](https://img.shields.io/badge/license-GPLv3.0-brightgreen.svg)](https://github.com/Lob2018/SudokuFX/blob/main/LICENSE.txt)<br>
 [![Accessibility](https://img.shields.io/badge/accessibility-WCAG%202.1%20AA-brightgreen)](https://www.w3.org/WAI/WCAG21/quickref/)<br>
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10875/badge)](https://www.bestpractices.dev/projects/10875)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudokuFX/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudokuFX)
@@ -53,7 +53,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Contributors](#contributors)
-- [Licence](https://github.com/Lob2018/SudokuFX?tab=License-1-ov-file#readme)
+- [Licence](https://github.com/Lob2018/SudokuFX/blob/main/LICENSE.txt)
 
 ## System requirements
 

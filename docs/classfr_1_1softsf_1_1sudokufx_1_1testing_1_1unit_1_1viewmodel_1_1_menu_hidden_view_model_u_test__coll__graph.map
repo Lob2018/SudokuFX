@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuHiddenViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuHiddenViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="16,208,266,400"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="16,216,266,408"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html" title="MenuHiddenViewModel (not final) handles the business logic for the &quot;Show Menu&quot; button&#39;s accessibility..." alt="" coords="5,5,276,144"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,143,144,191,138,191,138,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="144,144,144,199,138,199,138,144"/>
 </map>

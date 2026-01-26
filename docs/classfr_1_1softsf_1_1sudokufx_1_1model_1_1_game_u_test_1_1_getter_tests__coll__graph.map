@@ -1,17 +1,17 @@
 <map id="fr.softsf.sudokufx.model.GameUTest.GetterTests" name="fr.softsf.sudokufx.model.GameUTest.GetterTests">
-<area shape="rect" id="Node000001" title=" " alt="" coords="297,3488,514,3947"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html" title="Represents a Sudoku game instance stored in the database." alt="" coords="277,2368,534,3424"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="408,3424,408,3471,402,3471,402,3424"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" title="Represents a Sudoku grid with default values, current values, and the number of possibilities." alt="" coords="5,1376,242,2112"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,2111,257,2303,275,2377,270,2378,252,2305,206,2112"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" title="Represents a player in the SudokuFX application." alt="" coords="266,1184,544,2304"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="408,2304,408,2351,402,2351,402,2304"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="297,3512,514,3971"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html" title="Represents a Sudoku game instance stored in the database." alt="" coords="277,2384,534,3440"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="408,3440,408,3495,402,3495,402,3440"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html" title="Represents a Sudoku grid with default values, current values, and the number of possibilities." alt="" coords="5,1384,242,2120"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="211,2119,257,2311,275,2386,270,2387,252,2313,206,2120"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html" title="Represents a player in the SudokuFX application." alt="" coords="266,1192,544,2312"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="408,2312,408,2367,402,2367,402,2312"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html" title="Represents a player&#39;s language in the SudokuFX application." alt="" coords="60,299,257,827"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,826,272,1119,282,1167,277,1168,267,1121,207,827"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="212,826,272,1119,283,1175,278,1176,267,1121,207,827"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user&#45;configurable options for the SudokuFX application." alt="" coords="282,5,529,1120"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="408,1120,408,1167,402,1167,402,1120"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="408,1120,408,1175,402,1175,402,1120"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html" title="Represents a Menu configuration with a unique ID and a mode." alt="" coords="553,416,740,709"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="623,709,544,1121,534,1168,529,1167,539,1119,618,708"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html" title="Represents a difficulty level for a Sudoku game." alt="" coords="568,1581,736,1907"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="630,1907,598,2098,558,2305,540,2387,535,2386,553,2303,593,2097,625,1906"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="623,709,544,1121,532,1176,527,1175,539,1119,617,708"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html" title="Represents a difficulty level for a Sudoku game." alt="" coords="568,1589,736,1915"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="630,1915,598,2106,558,2313,540,2396,535,2395,553,2311,593,2105,625,1914"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.config.os.OsFoldersConfigUTest" name="fr.softsf.sudokufx.config.os.OsFoldersConfigUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="9,907,264,1205"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="5,304,267,843"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,842,139,890,134,890,134,842"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="9,923,264,1221"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="5,312,267,851"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,851,139,906,134,906,134,851"/>
 <area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html" title="Utility enum for operating system names." alt="" coords="30,5,243,240"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,240,139,287,134,287,134,240"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,240,139,295,134,295,134,240"/>
 </map>

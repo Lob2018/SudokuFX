@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.service.ui.AsyncFileProcessorService" name="fr.softsf.sudokufx.service.ui.AsyncFileProcessorService">
-<area shape="rect" id="Node000001" title="Service to execute file&#45;processing tasks asynchronously with JavaFX UI feedback." alt="" coords="18,496,239,736"/>
+<area shape="rect" id="Node000001" title="Service to execute file&#45;processing tasks asynchronously with JavaFX UI feedback." alt="" coords="18,504,239,744"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html" title="A centralized service for sending toast notifications to the UI." alt="" coords="5,5,251,432"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,432,131,479,126,479,126,432"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,432,131,487,126,487,126,432"/>
 </map>
