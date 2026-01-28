@@ -1,42 +1,30 @@
 # This file defines hooks that will run automatically before commits.
 # To install pre-commit and enable hooks on Windows, follow these steps:
 
-# 1. Install Python (required to run pre-commit)
-#    On Windows, the recommended way is to use the Python Install Manager (Beta)
-#    available via the Microsoft Store app.
+# 1. Setup Virtual Environment (.venv):
+#    Create:
+#      py -m venv .venv
+#    Activate:
+#      source .venv/Scripts/activate
 
-# 2. Install/Update pre-commit:
-#    Run:
+# 2. Install Tools and External Dependencies:
+#    A. Install/Update pre-commit:
 #      py -m pip install --upgrade pre-commit
-#    This ensures you use the latest runner and avoid security issues (like CVE-2024-5569).
-
-# 3. Install git hooks for this repository:
-#    Run:
+#    B. Install ShellCheck (Required for shellcheck hook - restart required):
+#      winget install --id=koalaman.shellcheck
+#    C. Maven: Ensure Maven is installed and in PATH (Required for mvn-checkstyle).
+#    D. Install git hooks for this repository:
 #      py -m pre_commit install
 
-# 4. To run hooks on all files and check which are active, run:
-#    py -m pre_commit run --all-files --verbose
-
-# 5. To update hooks to their latest versions:
-#    Run:
-#      py -m pre_commit autoupdate
-#    Then commit the updated '.pre-commit-config.yaml'.
-
-# 6. Install ShellCheck on Windows (required for the shellcheck hook):
-#    ShellCheck is not bundled with the hook and must be installed separately.
-#    On Windows, install it using winget (restart required):
-#      winget install --id=koalaman.shellcheck
-
-# 7. IMPORTANT: Update requirements.txt for security scanning:
-#    After any update, synchronize your dependencies manifest:
-#      py -m pip freeze > requirements.txt
-#    Then commit the updated 'requirements.txt'. This fixes transitive issues like 'zipp'.
-
-# Note:
-# - If your PATH does not include the Python Scripts directory,
-#   always prefix Python commands with `py -m` (e.g., `py -m pre_commit run`).
-#
-# - Maven must be installed and in PATH for the mvn-checkstyle hook to work.
+# 3. Maintenance (Required for Dependabot / Security updates):
+#    A. Ensure the environment is active:
+#       . .venv/Scripts/activate
+#    B. Update all .venv packages & hooks:
+#       py -c "import importlib.metadata; from subprocess import call; [call(['pip', 'install', '--upgrade', d.metadata['Name']]) for d in importlib.metadata.distributions()]" && py -m pre_commit autoupdate
+#    C. Synchronize manifest (Critical for security scanning):
+#       py -m pip freeze > requirements.txt
+#    D. Verify changes:
+#       py -m pre_commit run --all-files --verbose
 
 repos:
   - repo: local
