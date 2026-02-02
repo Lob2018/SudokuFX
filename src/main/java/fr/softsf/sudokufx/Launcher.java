@@ -7,12 +7,18 @@ package fr.softsf.sudokufx;
 
 /** A launcher class to workaround classpath issues. */
 public final class Launcher {
+
+    /** Private constructor to prevent instantiation of utility class. */
+    private Launcher() {
+        throw new UnsupportedOperationException("Utility class");
+    }
+
     /**
      * The application's entry point, delegates execution to the SudoMain class.
      *
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    static void main(String[] args) {
         SudoMain.main(args);
     }
 }

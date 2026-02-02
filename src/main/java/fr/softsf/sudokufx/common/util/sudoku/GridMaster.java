@@ -95,7 +95,7 @@ public final class GridMaster implements IGridMaster {
             int count = 0;
             // Démarrage des méthodes déléguées
             count = addLinearNeighbors(i, row, col, count);
-            count = addBoxNeighbors(i, row, col, boxRow, boxCol, count);
+            addBoxNeighbors(i, row, col, boxRow, boxCol, count);
         }
     }
 
