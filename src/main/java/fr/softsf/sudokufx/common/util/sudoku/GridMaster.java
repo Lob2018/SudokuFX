@@ -358,6 +358,43 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
+     * Vérifie l'unicité par backtracking en utilisant la propagation de contraintes.
+     *
+     * @param grille État de la grille.
+     * @param possibilites Masques de possibilités actuels.
+     * @param nbSolutions Nombre de solutions trouvées.
+     * @return Total de solutions (capé à 2).
+     */
+    private int verifierUnicite(int[] grille, int[] possibilites, int nbSolutions) {
+        // Sélection de la cellule via l'heuristique MRV pour réduire l'arborescence de recherche
+        int index = laCaseVideAvecLeMoinsDePossibilites(grille, possibilites);
+        // Condition de sortie : aucune case vide trouvée signifie qu'une solution complète est
+        // validée
+        if (index < 0) {
+            return nbSolutions + 1;
+        }
+        int possDeLaCase = possibilites[index];
+        // Exploration récursive tant qu'il reste des candidats et que l'unicité n'est pas déjà
+        // invalidée
+        while (possDeLaCase != 0 && nbSolutions < 2) {
+            // Extraction d'une valeur candidate et mise à jour du masque local pour l'itération
+            // suivante
+            int valeur = choisirValeurAleatoire(possDeLaCase);
+            possDeLaCase &= ~BIT_MASKS[valeur];
+            // Application de la valeur et isolation de l'état pour la branche de recherche actuelle
+            grille[index] = valeur;
+            int[] nouvellesPoss = Arrays.copyOf(possibilites, NOMBRE_CASES);
+            // Propagation des contraintes : élimination de la valeur chez les voisins
+            eliminerPossibilite(nouvellesPoss, index, valeur);
+            // Descente récursive pour explorer les conséquences de ce choix
+            nbSolutions = verifierUnicite(grille, nouvellesPoss, nbSolutions);
+            // Restauration de l'état (Backtrack) pour tester les autres candidats potentiels
+            grille[index] = 0;
+        }
+        return nbSolutions;
+    }
+
+    /**
      * Génère une grille de Sudoku avec un nombre de cases cachées selon les critères spécifiés.
      *
      * <p>Le nombre de cases à cacher est sélectionné selon la durée écoulée depuis la dernière
@@ -369,16 +406,18 @@ public final class GridMaster implements IGridMaster {
      *       (mode variabilité/entropie).
      * </ul>
      *
-     * L'algorithme boucle ensuite pour s'assurer que la somme des possibilités restante
-     * (difficulté) satisfait la condition de validation, avec un *fail safe* après 1000ms.
+     * <p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation
+     * exhaustive via backtracking à chaque itération. Il boucle ensuite pour s'assurer que la somme
+     * des possibilités (difficulté) satisfait la condition de validation, avec un <i>fail-safe</i>
+     * interrompant la recherche après 1000ms.
      *
      * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
      * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @param casesAPrecis Nombre de cases à cacher si la durée est inférieure au minimum (valeur
+     * @param casesAPrecis Nombre de cases à cacher si la durée est inférieure au seuil (valeur
      *     médiane).
      * @param casesAMin Nombre minimum de cases à cacher en mode aléatoire.
      * @param casesAMax Nombre maximum de cases à cacher en mode aléatoire.
-     * @param conditionValidation Prédicat pour valider la somme des possibilités (le niveau de
+     * @param conditionValidation Prédicat pour valider la somme des possibilités (niveau de
      *     difficulté atteint).
      * @return La somme des possibilités dans la grille à résoudre.
      */
@@ -403,6 +442,12 @@ public final class GridMaster implements IGridMaster {
                             grilleResolue, grilleAResoudre, nombreDeCasesACacher);
             if (dureeEnMs() > DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE) {
                 break;
+            }
+            // Valide par backtracking qu'aucune solution alternative n'existe pour cette
+            // configuration
+            if (verifierUnicite(grilleAResoudre.clone(), getPossibilites(grilleAResoudre), 0)
+                    != 1) {
+                continue;
             }
             // Petite variation pour éviter de boucler indéfiniment sur le même nombre si ça coince
             if (!conditionValidation.test(sommeDesPossibilites)) {
