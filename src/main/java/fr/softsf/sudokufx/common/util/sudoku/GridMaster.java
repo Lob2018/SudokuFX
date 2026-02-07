@@ -133,9 +133,8 @@ public final class GridMaster implements IGridMaster {
      * @param boxRow La ligne de début du carré.
      * @param boxCol La colonne de début du carré.
      * @param count Le nombre actuel de voisins déjà ajoutés.
-     * @return Le nouveau nombre de voisins après l'ajout des voisins de carré.
      */
-    private static int addBoxNeighbors(
+    private static void addBoxNeighbors(
             int index, int row, int col, int boxRow, int boxCol, int count) {
         for (int r = boxRow; r < boxRow + ORDRE; r++) {
             for (int c = boxCol; c < boxCol + ORDRE; c++) {
@@ -145,7 +144,6 @@ public final class GridMaster implements IGridMaster {
                 }
             }
         }
-        return count;
     }
 
     private static final int MIN_POSSIBILITES = 4800;
@@ -440,20 +438,18 @@ public final class GridMaster implements IGridMaster {
             sommeDesPossibilites =
                     getPossibilitesGrilleWhileNok(
                             grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-            if (dureeEnMs() > DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE) {
-                break;
-            }
-            // Valide par backtracking qu'aucune solution alternative n'existe pour cette
-            // configuration
+            // Évite les tests de difficulté/mutation si non unique
             if (verifierUnicite(grilleAResoudre.clone(), getPossibilites(grilleAResoudre), 0)
                     != 1) {
                 continue;
             }
-            // Petite variation pour éviter de boucler indéfiniment sur le même nombre si ça coince
+            // Si unique, on teste la difficulté. Mutation si NOK.
             if (!conditionValidation.test(sommeDesPossibilites)) {
                 nombreDeCasesACacher = ThreadLocalRandom.current().nextInt(casesAMin, casesAMax);
             }
-        } while (!conditionValidation.test(sommeDesPossibilites));
+            // Sortie si succès OU temps dépassé
+        } while (!conditionValidation.test(sommeDesPossibilites)
+                && dureeEnMs() <= DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE);
         derniereDemande = Instant.now();
         return sommeDesPossibilites;
     }
