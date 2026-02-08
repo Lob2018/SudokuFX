@@ -15,18 +15,18 @@ public sealed interface IGridMaster permits GridMaster {
      * <p>Les niveaux disponibles sont :
      *
      * <ul>
-     *   <li><b>Facile (1)</b> : 35 à 45 cases cachées<br>
-     *       - Possibilités théoriques : 0 à 13797<br>
-     *       - Possibilités pratiques : 4800 à 16533
-     *   <li><b>Moyen (2)</b> : 45 à 49 cases cachées<br>
-     *       - Possibilités théoriques : 13797 à 27594<br>
-     *       - Possibilités pratiques : 16533 à 28266
-     *   <li><b>Difficile (3)</b> : 49 à 59 cases cachées<br>
-     *       - Possibilités théoriques : 27594 à 41391<br>
-     *       - Possibilités pratiques : 28266 à 40000
+     *   <li><b>Facile (1)</b> : 34 à 39 cases cachées<br>
+     *       - Possibilités théoriques : 0 à 11000<br>
+     *       - Possibilités pratiques : 4800 à 10500
+     *   <li><b>Moyen (2)</b> : 39 à 44 cases cachées<br>
+     *       - Possibilités théoriques : 11000 à 22000<br>
+     *       - Possibilités pratiques : 10500 à 12500
+     *   <li><b>Difficile (3)</b> : 44 à 48 cases cachées<br>
+     *       - Possibilités théoriques : 22000 à 33000<br>
+     *       - Possibilités pratiques : 12500 à 33000
      * </ul>
      *
-     * <p>Le pourcentage de possibilités est calculé à partir de la plage 4800 (0%) à 40000 (100%),
+     * <p>Le pourcentage de possibilités est calculé à partir de la plage 4800 (0%) à 33000 (100%),
      * afin d’estimer la difficulté réelle de la grille générée.
      *
      * @param niveau le niveau de difficulté à appliquer (1 à 3)

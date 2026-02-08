@@ -21,14 +21,14 @@ import fr.softsf.sudokufx.common.exception.JakartaValidator;
  * <p>Cette classe implémente un algorithme de backtracking optimisé utilisant :
  *
  * <ul>
- * <li><b>La propagation de contraintes :</b> Réduction immédiate du domaine des cases adjacentes
- * lors d'une affectation.
- * <li><b>L'heuristique MRV (Minimum Remaining Values) :</b> Priorisation des cases à plus faible
- * entropie pour maximiser l'élagage de l'arbre de recherche.
- * <li><b>Opérations bit à bit :</b> Gestion des ensembles de possibilités via des masques
- * binaires pour des performances accrues.
- * <li><b>Tables de pré-calcul (Look-up Tables) :</b> Accès instantané aux voisinages (NEIGHBORS)
- * sans calcul de coordonnées.
+ *   <li><b>La propagation de contraintes :</b> Réduction immédiate du domaine des cases adjacentes
+ *       lors d'une affectation.
+ *   <li><b>L'heuristique MRV (Minimum Remaining Values) :</b> Priorisation des cases à plus faible
+ *       entropie pour maximiser l'élagage de l'arbre de recherche.
+ *   <li><b>Opérations bit à bit :</b> Gestion des ensembles de possibilités via des masques
+ *       binaires pour des performances accrues.
+ *   <li><b>Tables de pré-calcul (Look-up Tables) :</b> Accès instantané aux voisinages (NEIGHBORS)
+ *       sans calcul de coordonnées.
  * </ul>
  *
  * <p>La génération de grilles repose sur une <b>recherche stochastique récursive</b>. Elle garantit
@@ -142,11 +142,9 @@ public final class GridMaster implements IGridMaster {
     }
 
     private static final int MIN_POSSIBILITES = 4800;
-    private static final int MAX_POSSIBILITES = 40000;
+    private static final int MAX_POSSIBILITES = 33000;
     private static final int POURCENTAGE_MAX = 100;
     private static final int TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
-    // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
-    private int moyenMinPossibilites = 16533;
 
     /** Durée maximale d'une recherche de configuration valide (fail safe) pour un essai donné. */
     private static final int DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS = 300;
@@ -159,6 +157,8 @@ public final class GridMaster implements IGridMaster {
     GridMaster(JakartaValidator jakartaValidator) {
         this.jakartaValidator = jakartaValidator;
     }
+
+    private int moyenMinPossibilites = 10500;
 
     /**
      * Récupère la borne inférieure de la somme des possibilités pour une grille de difficulté
@@ -173,13 +173,13 @@ public final class GridMaster implements IGridMaster {
      *
      * La somme correspond à l'addition des valeurs entières des masques binaires de chaque case.
      *
-     * @return Le seuil minimal de possibilités pour le niveau moyen (par défaut 16533).
+     * @return Le seuil minimal de possibilités pour le niveau moyen (par défaut 10500).
      */
     public int getMoyenMinPossibilites() {
         return moyenMinPossibilites;
     }
 
-    private int moyenMaxPossibilites = 28266;
+    private int moyenMaxPossibilites = 12500;
 
     /**
      * Récupère la borne supérieure de la somme des possibilités pour une grille de difficulté
@@ -194,7 +194,7 @@ public final class GridMaster implements IGridMaster {
      *
      * La somme correspond à l'addition des valeurs entières des masques binaires de chaque case.
      *
-     * @return Le seuil maximal de possibilités pour le niveau moyen (par défaut 28266).
+     * @return Le seuil maximal de possibilités pour le niveau moyen (par défaut 12500).
      */
     public int getMoyenMaxPossibilites() {
         return moyenMaxPossibilites;
@@ -332,10 +332,10 @@ public final class GridMaster implements IGridMaster {
      *
      * @param niveau Le niveau de difficulté : 1 (facile), 2 (moyen), 3 (difficile).
      * @param grilleResolue La grille complète servant de référence pour le masquage.
-     * @param grilleAResoudre Le tableau de destination qui recevra la grille à trous.
-     * <b>IMPORTANT :</b> Ce tableau est modifié par effet de bord.
-     * @return La somme des possibilités (score de difficulté) de la grille finale,
-     * ou -1 en cas d'échec critique de génération.
+     * @param grilleAResoudre Le tableau de destination qui recevra la grille à trous. <b>IMPORTANT
+     *     :</b> Ce tableau est modifié par effet de bord.
+     * @return La somme des possibilités (score de difficulté) de la grille finale, ou -1 en cas
+     *     d'échec critique de génération.
      */
     private int genererLaGrilleAResoudre(
             final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
@@ -702,15 +702,16 @@ public final class GridMaster implements IGridMaster {
      * Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté
      * spécifié.
      *
-     * <p>L'algorithme génère une grille complète, puis applique un masquage stochastique
-     * jusqu'à satisfaire l'unicité de la solution et le prédicat de difficulté.
-     * * <p><b>Sécurité et Fail-safe :</b> La génération est protégée par un watchdog temporel
-     * et une limite de tentatives récursives. En cas d'échec critique à générer une grille
-     * valide dans les limites imparties, une grille réinitialisée (vide) est retournée.
+     * <p>L'algorithme génère une grille complète, puis applique un masquage stochastique jusqu'à
+     * satisfaire l'unicité de la solution et le prédicat de difficulté. *
+     *
+     * <p><b>Sécurité et Fail-safe :</b> La génération est protégée par un watchdog temporel et une
+     * limite de tentatives récursives. En cas d'échec critique à générer une grille valide dans les
+     * limites imparties, une grille réinitialisée (vide) est retournée.
      *
      * @param niveau Niveau de difficulté désiré : 1 (Facile), 2 (Moyen), 3 (Difficile).
      * @return Un enregistrement {@code GrillesCrees} contenant la grille résolue, la grille à
-     * résoudre, et le pourcentage de difficulté estimé (score de complexité).
+     *     résoudre, et le pourcentage de difficulté estimé (score de complexité).
      * @throws IllegalArgumentException si le niveau n'est pas compris entre 1 et 3.
      */
     @Override
