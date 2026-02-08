@@ -21,19 +21,20 @@ import fr.softsf.sudokufx.common.exception.JakartaValidator;
  * <p>Cette classe implémente un algorithme de backtracking optimisé utilisant :
  *
  * <ul>
- *   <li><b>La propagation de contraintes :</b> Réduction immédiate du domaine des cases adjacentes
- *       lors d'une affectation.
- *   <li><b>L'heuristique MRV (Minimum Remaining Values) :</b> Priorisation des cases à plus faible
- *       entropie pour maximiser l'élagage de l'arbre de recherche.
- *   <li><b>Opérations bit à bit :</b> Gestion des ensembles de possibilités via des masques
- *       binaires pour des performances accrues.
- *   <li><b>Tables de pré-calcul (Look-up Tables) :</b> Accès instantané aux voisinages (NEIGHBORS)
- *       sans calcul de coordonnées.
+ * <li><b>La propagation de contraintes :</b> Réduction immédiate du domaine des cases adjacentes
+ * lors d'une affectation.
+ * <li><b>L'heuristique MRV (Minimum Remaining Values) :</b> Priorisation des cases à plus faible
+ * entropie pour maximiser l'élagage de l'arbre de recherche.
+ * <li><b>Opérations bit à bit :</b> Gestion des ensembles de possibilités via des masques
+ * binaires pour des performances accrues.
+ * <li><b>Tables de pré-calcul (Look-up Tables) :</b> Accès instantané aux voisinages (NEIGHBORS)
+ * sans calcul de coordonnées.
  * </ul>
  *
- * <p>La génération de grilles repose sur une <b>recherche stochastique</b> dans des plages de
- * masquage définies. Elle garantit l'<b>unicité absolue</b> de la solution et le respect d'un
- * niveau de difficulté via un prédicat de validation, sécurisé par un <i>fail-safe</i> temporel.
+ * <p>La génération de grilles repose sur une <b>recherche stochastique récursive</b>. Elle garantit
+ * l'<b>unicité absolue</b> de la solution et le respect d'un niveau de difficulté via un prédicat
+ * de validation. Le processus est sécurisé par un <b>watchdog temporel par itération</b> et un
+ * <b>limiteur de tentatives globales</b> (fail-safe) pour assurer la réactivité du système.
  */
 @Component
 public final class GridMaster implements IGridMaster {
@@ -319,28 +320,22 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku à résoudre en cachant des cases selon le niveau de difficulté
-     * spécifié.
+     * Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté.
      *
-     * <p>Cette méthode agit comme un dispatcheur, déléguant la logique de masquage aux méthodes
-     * spécifiques à chaque niveau getPossibilitesGrilleAResoudreXxx.
+     * <p>Cette méthode fait office de dispatcheur vers les implémentations spécifiques (Facile,
+     * Moyen, Difficile). Le masquage est désormais purement stochastique, basé sur les plages de
+     * cellules à cacher définies pour chaque niveau.
      *
-     * <p>**Comportement temporel (mode prédictible/aléatoire) :** La sélection du nombre de cases à
-     * cacher utilise le temps écoulé dureeEnMs() depuis la dernière demande.
-     *
-     * <ul>
-     *   <li>Si la durée est **inférieure à 500ms** : un nombre de cases caché **précis** (médiane)
-     *       est utilisé pour garantir une difficulté standard/prédictible.
-     *   <li>Si la durée est **supérieure ou égale à 500ms** : un nombre de cases caché
-     *       **aléatoire** (entre min et max du niveau) est utilisé pour garantir la variabilité et
-     *       l'entropie.
-     * </ul>
+     * <p><b>Gestion des échecs :</b> Si la génération échoue (difficulté non atteinte ou unicité
+     * non garantie après le nombre maximal d'essais), la méthode peut retourner une grille
+     * réinitialisée à zéro.
      *
      * @param niveau Le niveau de difficulté : 1 (facile), 2 (moyen), 3 (difficile).
-     * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
-     * @param grilleAResoudre La grille à résoudre, avec ses cases cachées à 0. IMPORTANT : Ce
-     *     tableau est modifié directement par la fonction.
-     * @return La somme du nombre de possibilités (score de complexité) pour la grille à résoudre.
+     * @param grilleResolue La grille complète servant de référence pour le masquage.
+     * @param grilleAResoudre Le tableau de destination qui recevra la grille à trous.
+     * <b>IMPORTANT :</b> Ce tableau est modifié par effet de bord.
+     * @return La somme des possibilités (score de difficulté) de la grille finale,
+     * ou -1 en cas d'échec critique de génération.
      */
     private int genererLaGrilleAResoudre(
             final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
@@ -707,15 +702,15 @@ public final class GridMaster implements IGridMaster {
      * Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté
      * spécifié.
      *
-     * <p>L'algorithme génère une grille complète, puis masque un nombre de cases ajusté pour
-     * satisfaire le niveau de difficulté (basé sur la somme des possibilités).
+     * <p>L'algorithme génère une grille complète, puis applique un masquage stochastique
+     * jusqu'à satisfaire l'unicité de la solution et le prédicat de difficulté.
+     * * <p><b>Sécurité et Fail-safe :</b> La génération est protégée par un watchdog temporel
+     * et une limite de tentatives récursives. En cas d'échec critique à générer une grille
+     * valide dans les limites imparties, une grille réinitialisée (vide) est retournée.
      *
      * @param niveau Niveau de difficulté désiré : 1 (Facile), 2 (Moyen), 3 (Difficile).
      * @return Un enregistrement {@code GrillesCrees} contenant la grille résolue, la grille à
-     *     résoudre, et le pourcentage de difficulté estimé.
-     *     <p>**Calibration de la difficulté :** Le niveau est calibré en ajustant le masquage des
-     *     cases jusqu'à ce que la **somme des possibilités** (score de complexité interne) se situe
-     *     dans la plage propre à chaque niveau.
+     * résoudre, et le pourcentage de difficulté estimé (score de complexité).
      * @throws IllegalArgumentException si le niveau n'est pas compris entre 1 et 3.
      */
     @Override
@@ -733,8 +728,10 @@ public final class GridMaster implements IGridMaster {
         resoudreLaGrille(grilleResolue);
         // Initialiser la grille à résoudre (vide au départ)
         int[] grilleAResoudre = new int[NOMBRE_CASES];
+
         // En fonction du niveau, cacher un certain nombre de cases et tenir compte des possibilités
         int sommeDesPossibilites = genererLaGrilleAResoudre(niveau, grilleResolue, grilleAResoudre);
+
         // Récupérer le pourcentage de possibilités estimé
         int pourcentageDesPossibilites = getPourcentageDesPossibilites(sommeDesPossibilites);
         // Crée un record GrillesCrees structuré contenant les deux grilles et le pourcentage
