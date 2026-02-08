@@ -5,8 +5,6 @@
  */
 package fr.softsf.sudokufx.common.util.sudoku;
 
-import java.time.Duration;
-import java.time.Instant;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.IntPredicate;
@@ -23,19 +21,19 @@ import fr.softsf.sudokufx.common.exception.JakartaValidator;
  * <p>Cette classe implémente un algorithme de backtracking optimisé utilisant :
  *
  * <ul>
- *   <li>La propagation de contraintes (Constraint Propagation). (Exemple : Si vous placez un '5'
- *       dans une case, le '5' est immédiatement retiré des possibilités de toutes les 20 cases
- *       adjacentes.)
- *   <li>L'heuristique MRV (Minimum Remaining Values) pour le choix des variables. (Exemple : Le
- *       solveur cherche en priorité la case vide qui n'a que 2 possibilités restantes, au lieu de
- *       la première case trouvée, pour forcer les échecs rapides.)
- *   <li>Des opérations bit à bit (Bitwise operations) pour la gestion des ensembles de valeurs.
- *       (Exemple : L'ensemble des 9 possibilités pour une case est stocké dans un seul entier au
- *       lieu d'un tableau de booléens, permettant des mises à jour ultra-rapides.)
- *   <li>Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (Exemple :
- *       Les 20 voisins d'une case donnée sont stockés dans le tableau statique 'NEIGHBORS' et sont
- *       accessibles instantanément sans calcul de coordonnées ni boucles.)
+ *   <li><b>La propagation de contraintes :</b> Réduction immédiate du domaine des cases adjacentes
+ *       lors d'une affectation.
+ *   <li><b>L'heuristique MRV (Minimum Remaining Values) :</b> Priorisation des cases à plus faible
+ *       entropie pour maximiser l'élagage de l'arbre de recherche.
+ *   <li><b>Opérations bit à bit :</b> Gestion des ensembles de possibilités via des masques
+ *       binaires pour des performances accrues.
+ *   <li><b>Tables de pré-calcul (Look-up Tables) :</b> Accès instantané aux voisinages (NEIGHBORS)
+ *       sans calcul de coordonnées.
  * </ul>
+ *
+ * <p>La génération de grilles repose sur une <b>recherche stochastique</b> dans des plages de
+ * masquage définies. Elle garantit l'<b>unicité absolue</b> de la solution et le respect d'un
+ * niveau de difficulté via un prédicat de validation, sécurisé par un <i>fail-safe</i> temporel.
  */
 @Component
 public final class GridMaster implements IGridMaster {
@@ -48,14 +46,10 @@ public final class GridMaster implements IGridMaster {
     private static final int ALL_POSSIBILITIES = (1 << DIMENSION) - 1;
 
     // Nombre de cases à cacher en fonction du niveau
-    private static final int FACILE_MIN_CACHEES = 35;
-    private static final int MOYEN_MIN_CACHEES = 45;
-    private static final int FACILE_MOY_CACHEES = (FACILE_MIN_CACHEES + MOYEN_MIN_CACHEES) / 2;
-    private static final int MOYEN_MAX_CACHEES = 50;
-    private static final int MOYEN_MOY_CACHEES = (MOYEN_MIN_CACHEES + MOYEN_MAX_CACHEES) / 2;
-    private static final int DIFFICILE_MAX_CACHEES = 59;
-    private static final int DIFFICILE_MOY_CACHEES =
-            (MOYEN_MAX_CACHEES + DIFFICILE_MAX_CACHEES) / 2;
+    private static final int FACILE_MIN_CACHEES = 34;
+    private static final int MOYEN_MIN_CACHEES = 39;
+    private static final int MOYEN_MAX_CACHEES = 44;
+    private static final int DIFFICILE_MAX_CACHEES = 48;
     private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
 
     /**
@@ -152,9 +146,13 @@ public final class GridMaster implements IGridMaster {
     private static final int TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
     // Possibilités (théorique 0 à 41391, pratique 4800 à 40000) de la grille en fonction du niveau
     private int moyenMinPossibilites = 16533;
-    // Durée entre les demandes
-    private static final int DUREE_MAXIMALE_POUR_MASQUE_PRECIS = 500;
-    private static final int DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE = 1000;
+
+    /** Durée maximale d'une recherche de configuration valide (fail safe) pour un essai donné. */
+    private static final int DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS = 300;
+
+    /** Nombre maximal de tentatives de génération globale avant abandon (sécurité récursion). */
+    private static final int MAX_ESSAIS_POUR_GENERATION_DE_GRILLE = 10;
+
     private final JakartaValidator jakartaValidator;
 
     GridMaster(JakartaValidator jakartaValidator) {
@@ -200,8 +198,6 @@ public final class GridMaster implements IGridMaster {
     public int getMoyenMaxPossibilites() {
         return moyenMaxPossibilites;
     }
-
-    private Instant derniereDemande = Instant.now();
 
     /**
      * Calcule la somme des possibilités de toutes les cases de la grille de Sudoku.
@@ -393,64 +389,92 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku avec un nombre de cases cachées selon les critères spécifiés.
-     *
-     * <p>Le nombre de cases à cacher est sélectionné selon la durée écoulée depuis la dernière
-     * demande :
-     *
-     * <ul>
-     *   <li><b>Si durée < 500ms :</b> Utilisation d'une valeur précise (mode standard/prédictible).
-     *   <li><b>Si durée >= 500ms :</b> Utilisation d'une valeur aléatoire dans la plage [min, max]
-     *       (mode variabilité/entropie).
-     * </ul>
+     * Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté.
      *
      * <p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation
-     * exhaustive via backtracking à chaque itération. Il boucle ensuite pour s'assurer que la somme
-     * des possibilités (difficulté) satisfait la condition de validation, avec un <i>fail-safe</i>
-     * interrompant la recherche après 1000ms.
+     * exhaustive via backtracking. Il itère jusqu'à ce que la <b>somme des possibilités</b>
+     * satisfasse le prédicat de difficulté. *
      *
-     * @param grilleResolue La grille résolue à partir de laquelle les cases seront cachées.
-     * @param grilleAResoudre La grille à résoudre, avec ses cases cachées (valeur à zéro).
-     * @param casesAPrecis Nombre de cases à cacher si la durée est inférieure au seuil (valeur
-     *     médiane).
-     * @param casesAMin Nombre minimum de cases à cacher en mode aléatoire.
-     * @param casesAMax Nombre maximum de cases à cacher en mode aléatoire.
-     * @param conditionValidation Prédicat pour valider la somme des possibilités (niveau de
-     *     difficulté atteint).
-     * @return La somme des possibilités dans la grille à résoudre.
+     * <p><b>Optimisations et Sécurités :</b>
+     *
+     * <ul>
+     *   <li><b>Watchdog :</b> Limite chaque essai à {@link #DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS}.
+     *   <li><b>Récursion :</b> Relance une génération globale jusqu'à {@link
+     *       #MAX_ESSAIS_POUR_GENERATION_DE_GRILLE}.
+     * </ul>
+     *
+     * @param grilleResolue La grille complète servant de base.
+     * @param grilleAResoudre La structure de destination pour la grille à trous (modifiée).
+     * @param casesAMin Borne inférieure (incluse) du nombre de cases à masquer.
+     * @param casesAMax Borne supérieure (exclue) du nombre de cases à masquer.
+     * @param conditionValidation Prédicat de validation de la difficulté.
+     * @param compteurEssais Le numéro de la tentative actuelle pour le suivi récursif.
+     * @return La somme des possibilités de la grille finale, ou -1 en cas d'échec.
      */
     @SuppressWarnings("java:S2245")
     private int genererGrilleAvecCasesCachees(
             int[] grilleResolue,
             int[] grilleAResoudre,
-            int casesAPrecis,
             int casesAMin,
             int casesAMax,
-            IntPredicate conditionValidation) {
+            IntPredicate conditionValidation,
+            int compteurEssais) {
         int sommeDesPossibilites;
-        // Utilisation de ThreadLocalRandom pour la performance lors de la génération intensive
-        int nombreDeCasesACacher =
-                dureeEnMs() < DUREE_MAXIMALE_POUR_MASQUE_PRECIS
-                        ? casesAPrecis
-                        : ThreadLocalRandom.current().nextInt(casesAMin, casesAMax);
-        derniereDemande = Instant.now();
+        boolean estValide = false;
+        var random = ThreadLocalRandom.current();
+        int nombreDeCasesACacher = random.nextInt(casesAMin, casesAMax);
+        long debutAppel = System.currentTimeMillis();
         do {
             sommeDesPossibilites =
                     getPossibilitesGrilleWhileNok(
                             grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-            // Évite les tests de difficulté/mutation si non unique
+            // Vérification Unicité
             if (verifierUnicite(grilleAResoudre.clone(), getPossibilites(grilleAResoudre), 0)
-                    != 1) {
-                continue;
+                    == 1) {
+                // Vérification Difficulté
+                if (conditionValidation.test(sommeDesPossibilites)) {
+                    estValide = true;
+                } else {
+                    nombreDeCasesACacher = random.nextInt(casesAMin, casesAMax);
+                }
             }
-            // Si unique, on teste la difficulté. Mutation si NOK.
-            if (!conditionValidation.test(sommeDesPossibilites)) {
-                nombreDeCasesACacher = ThreadLocalRandom.current().nextInt(casesAMin, casesAMax);
+            // Vérifier validité et durée de génération
+        } while (!estValide
+                && (System.currentTimeMillis() - debutAppel)
+                        <= DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS);
+        if (!estValide) {
+            compteurEssais++;
+            // Vérifier le nombre de tentatives
+            if (compteurEssais >= MAX_ESSAIS_POUR_GENERATION_DE_GRILLE) {
+                System.out.println(
+                        "Échec critique : Nombre max d'essais atteint ("
+                                + MAX_ESSAIS_POUR_GENERATION_DE_GRILLE
+                                + ")");
+                // Retourner une grille vide avec 0 possibilités
+                Arrays.fill(grilleAResoudre, 0);
+                return -1;
             }
-            // Sortie si succès OU temps dépassé
-        } while (!conditionValidation.test(sommeDesPossibilites)
-                && dureeEnMs() <= DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE);
-        derniereDemande = Instant.now();
+            System.out.println(
+                    "Timeout 1s atteint sans succès. Relance globale..."
+                            + (System.currentTimeMillis() - debutAppel)
+                            + "ms");
+            // Réinitialisation
+            return genererGrilleAvecCasesCachees(
+                    grilleResolue,
+                    grilleAResoudre,
+                    casesAMin,
+                    casesAMax,
+                    conditionValidation,
+                    compteurEssais);
+        }
+        System.out.println(
+                "Fin durée="
+                        + (System.currentTimeMillis() - debutAppel)
+                        + "ms | Valide="
+                        + estValide
+                        + " | "
+                        + compteurEssais
+                        + " essais\n");
         return sommeDesPossibilites;
     }
 
@@ -465,10 +489,10 @@ public final class GridMaster implements IGridMaster {
         return genererGrilleAvecCasesCachees(
                 grilleResolue,
                 grilleAResoudre,
-                FACILE_MOY_CACHEES,
                 FACILE_MIN_CACHEES,
                 MOYEN_MIN_CACHEES,
-                somme -> somme <= moyenMinPossibilites);
+                somme -> somme <= moyenMinPossibilites,
+                1);
     }
 
     /**
@@ -482,10 +506,10 @@ public final class GridMaster implements IGridMaster {
         return genererGrilleAvecCasesCachees(
                 grilleResolue,
                 grilleAResoudre,
-                MOYEN_MOY_CACHEES,
                 MOYEN_MIN_CACHEES,
                 MOYEN_MAX_CACHEES,
-                somme -> somme >= moyenMinPossibilites && somme <= moyenMaxPossibilites);
+                somme -> somme >= moyenMinPossibilites && somme <= moyenMaxPossibilites,
+                1);
     }
 
     /**
@@ -500,10 +524,10 @@ public final class GridMaster implements IGridMaster {
         return genererGrilleAvecCasesCachees(
                 grilleResolue,
                 grilleAResoudre,
-                DIFFICILE_MOY_CACHEES,
                 MOYEN_MAX_CACHEES,
                 DIFFICILE_MAX_CACHEES,
-                somme -> somme >= moyenMaxPossibilites);
+                somme -> somme >= moyenMaxPossibilites,
+                1);
     }
 
     /**
@@ -519,16 +543,6 @@ public final class GridMaster implements IGridMaster {
         System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
         cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
         return sommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
-    }
-
-    /**
-     * Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en
-     * millisecondes.
-     *
-     * @return Durée en millisecondes.
-     */
-    private long dureeEnMs() {
-        return Duration.between(derniereDemande, Instant.now()).toMillis();
     }
 
     /**
