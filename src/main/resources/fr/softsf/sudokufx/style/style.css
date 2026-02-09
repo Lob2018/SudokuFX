@@ -62,8 +62,8 @@
     -fx-font-size: 12em;
     -fx-line-spacing: 1.5;
     -fx-fill: radial-gradient(center 50% 50%, radius 100%,
-            white 40%,
-            #66b6f1 41%);
+            white 38%,
+            #66b6f1 39%);
 }
 
 .tooltip {

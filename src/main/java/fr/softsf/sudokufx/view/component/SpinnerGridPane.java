@@ -10,26 +10,28 @@ import javafx.animation.FadeTransition;
 import javafx.animation.Interpolator;
 import javafx.animation.ParallelTransition;
 import javafx.animation.ScaleTransition;
+import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 
 /**
- * A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons. The
- * spinner consists of two overlapping Text nodes with pulsing animations, creating a visual loading
- * indicator. By default, the spinner is hidden and not managed by the layout. It can be shown or
- * hidden using the {@link #showSpinner(boolean)} method.
+ * A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons.
+ * The spinner visibility is managed by an internal counter to handle multiple concurrent
+ * asynchronous calls and features a smooth fade-out transition.
  */
 public final class SpinnerGridPane extends GridPane {
 
-    private static final Duration DEFAULT_SECOND_PHASE_DELAY = Duration.seconds(.5);
+    private static final Duration ANIMATION_DURATION = Duration.seconds(2);
+    private static final Duration ANIMATION_SECOND_PHASE_DELAY = Duration.seconds(1);
+    public static final int ANIMATION_FADE_OUT_DURATION = 150;
     private final Animation spinnerAnimation1;
     private final Animation spinnerAnimation2;
+    private int activeRequests = 0;
 
     /**
-     * Constructs a SpinnerGridPane with two animated text icons centered in the pane. Initializes
-     * pulsing animations with staggered delays for a dynamic effect.
+     * Constructs a SpinnerGridPane with centered animated icons and initialized pulse animations.
      */
     public SpinnerGridPane() {
         super();
@@ -42,51 +44,91 @@ public final class SpinnerGridPane extends GridPane {
         add(spinnerText2, 0, 0);
         setMouseTransparent(true);
         spinnerAnimation1 = createPulse(spinnerText1, Duration.seconds(0));
-        spinnerAnimation2 = createPulse(spinnerText2, DEFAULT_SECOND_PHASE_DELAY);
+        spinnerAnimation2 = createPulse(spinnerText2, ANIMATION_SECOND_PHASE_DELAY);
         setVisible(false);
         setManaged(false);
     }
 
     /**
-     * Shows or hides the spinner. When visible, animations are started; otherwise, they are
-     * stopped.
-     *
-     * @param b true to show and play the spinner, false to hide and stop it.
+     * Updates the request counter and toggles the spinner visibility.
+     * This method is thread-safe and ensures UI updates occur on the JavaFX Application Thread.
+     * @param show true to increment the active request count, false to decrement it.
      */
-    public void showSpinner(boolean b) {
-        setVisible(b);
-        setManaged(b);
-        if (b) {
-            spinnerAnimation1.play();
-            spinnerAnimation2.play();
+    public void showSpinner(boolean show) {
+        if (!Platform.isFxApplicationThread()) {
+            Platform.runLater(() -> updateState(show));
         } else {
-            spinnerAnimation1.stop();
-            spinnerAnimation2.stop();
+            updateState(show);
         }
     }
 
     /**
-     * Creates a pulsing animation for a given text element with scaling and fading effects.
-     *
-     * @param text the Text node to apply the animation to.
-     * @param delay the delay before the animation starts.
-     * @return a ParallelTransition combining scale and fade animations.
+     * Manages the internal counter state and triggers start or stop transitions.
+     * * @param increment true to add a request, false to remove one.
+     */
+    private void updateState(boolean increment) {
+        if (increment) {
+            activeRequests++;
+        } else {
+            activeRequests = Math.max(0, activeRequests - 1);
+        }
+        boolean shouldBeVisible = activeRequests > 0;
+        if (shouldBeVisible && !isVisible()) {
+            startAnimation();
+        } else if (!shouldBeVisible && isVisible()) {
+            stopAnimation();
+        }
+    }
+
+    /**
+     * Resets opacity and starts the infinite pulse animations.
+     */
+    private void startAnimation() {
+        setOpacity(1.0);
+        setVisible(true);
+        setManaged(true);
+        spinnerAnimation1.play();
+        spinnerAnimation2.play();
+    }
+
+    /**
+     * Executes a fade-out transition before stopping animations and hiding the component.
+     * The final cleanup only occurs if no new requests were initiated during the fade duration.
+     */
+    private void stopAnimation() {
+        FadeTransition fadeOut =
+                new FadeTransition(Duration.millis(ANIMATION_FADE_OUT_DURATION), this);
+        fadeOut.setFromValue(getOpacity());
+        fadeOut.setToValue(0.0);
+        fadeOut.setOnFinished(
+                e -> {
+                    if (activeRequests == 0) {
+                        setVisible(false);
+                        setManaged(false);
+                        spinnerAnimation1.stop();
+                        spinnerAnimation2.stop();
+                    }
+                });
+        fadeOut.play();
+    }
+
+    /**
+     * Creates a synchronized pulsing animation (scale and fade) for a specific text node.
+     * * @param text The node to animate.
+     * @param delay The initial delay before starting the pulse cycle.
+     * @return A ParallelTransition configured for infinite looping.
      */
     private Animation createPulse(Text text, Duration delay) {
-        ScaleTransition scale = new ScaleTransition(Duration.seconds(2), text);
-        scale.setInterpolator(Interpolator.EASE_BOTH);
+        ScaleTransition scale = new ScaleTransition(ANIMATION_DURATION, text);
         scale.setFromX(0);
         scale.setFromY(0);
         scale.setToX(1);
         scale.setToY(1);
-        scale.setCycleCount(Animation.INDEFINITE);
-        scale.setDelay(delay);
-        FadeTransition fade = new FadeTransition(Duration.seconds(2), text);
         scale.setInterpolator(Interpolator.EASE_OUT);
+        FadeTransition fade = new FadeTransition(ANIMATION_DURATION, text);
         fade.setFromValue(1);
         fade.setToValue(0);
-        fade.setCycleCount(Animation.INDEFINITE);
-        fade.setDelay(delay);
+        fade.setInterpolator(Interpolator.EASE_OUT);
         ParallelTransition pulse = new ParallelTransition(scale, fade);
         pulse.setCycleCount(Animation.INDEFINITE);
         pulse.setDelay(delay);
