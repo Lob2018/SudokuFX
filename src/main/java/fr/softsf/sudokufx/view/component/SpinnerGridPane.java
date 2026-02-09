@@ -17,9 +17,9 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 
 /**
- * A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons.
- * The spinner visibility is managed by an internal counter to handle multiple concurrent
- * asynchronous calls and features a smooth fade-out transition.
+ * A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons. The
+ * spinner visibility is managed by an internal counter to handle multiple concurrent asynchronous
+ * calls and features a smooth fade-out transition.
  */
 public final class SpinnerGridPane extends GridPane {
 
@@ -50,8 +50,9 @@ public final class SpinnerGridPane extends GridPane {
     }
 
     /**
-     * Updates the request counter and toggles the spinner visibility.
-     * This method is thread-safe and ensures UI updates occur on the JavaFX Application Thread.
+     * Updates the request counter and toggles the spinner visibility. This method is thread-safe
+     * and ensures UI updates occur on the JavaFX Application Thread.
+     *
      * @param show true to increment the active request count, false to decrement it.
      */
     public void showSpinner(boolean show) {
@@ -63,8 +64,8 @@ public final class SpinnerGridPane extends GridPane {
     }
 
     /**
-     * Manages the internal counter state and triggers start or stop transitions.
-     * * @param increment true to add a request, false to remove one.
+     * Manages the internal counter state and triggers start or stop transitions. * @param increment
+     * true to add a request, false to remove one.
      */
     private void updateState(boolean increment) {
         if (increment) {
@@ -80,9 +81,7 @@ public final class SpinnerGridPane extends GridPane {
         }
     }
 
-    /**
-     * Resets opacity and starts the infinite pulse animations.
-     */
+    /** Resets opacity and starts the infinite pulse animations. */
     private void startAnimation() {
         setOpacity(1.0);
         setVisible(true);
@@ -92,8 +91,8 @@ public final class SpinnerGridPane extends GridPane {
     }
 
     /**
-     * Executes a fade-out transition before stopping animations and hiding the component.
-     * The final cleanup only occurs if no new requests were initiated during the fade duration.
+     * Executes a fade-out transition before stopping animations and hiding the component. The final
+     * cleanup only occurs if no new requests were initiated during the fade duration.
      */
     private void stopAnimation() {
         FadeTransition fadeOut =
@@ -113,8 +112,9 @@ public final class SpinnerGridPane extends GridPane {
     }
 
     /**
-     * Creates a synchronized pulsing animation (scale and fade) for a specific text node.
-     * * @param text The node to animate.
+     * Creates a synchronized pulsing animation (scale and fade) for a specific text node. * @param
+     * text The node to animate.
+     *
      * @param delay The initial delay before starting the pulse cycle.
      * @return A ParallelTransition configured for infinite looping.
      */
