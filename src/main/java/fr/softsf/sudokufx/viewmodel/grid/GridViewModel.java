@@ -61,6 +61,40 @@ public class GridViewModel {
     private boolean initialized = false;
     private boolean suppressCellsListeners = false;
 
+    public static final int DESIRED_POSSIBILITIES_STEP = 10;
+    public static final int MAXIMUM_DESIRED_POSSIBILITIES_VALUE = 100;
+    private static final int DEFAULT_DESIRED_POSSIBILITIES = -1;
+    private int desiredPossibilities = DEFAULT_DESIRED_POSSIBILITIES;
+
+    /**
+     * Returns the user's desired completion percentage (0-100). A value of -1 indicates that the
+     * default generator logic should be used.
+     *
+     * @return the current desired possibilities value
+     */
+    public int getDesiredPossibilities() {
+        return desiredPossibilities;
+    }
+
+    /** Resets the desired possibilities to the default state. */
+    public void resetDesiredPossibilities() {
+        desiredPossibilities = DEFAULT_DESIRED_POSSIBILITIES;
+    }
+
+    /**
+     * Increments the desired possibilities value cyclically. Cycle: -1 (Default) -> 0 -> 10 -> 20
+     * ... -> 90 -> 0.
+     */
+    public void incrementDesiredPossibilities() {
+        desiredPossibilities =
+                (desiredPossibilities == DEFAULT_DESIRED_POSSIBILITIES
+                                || desiredPossibilities
+                                        >= (MAXIMUM_DESIRED_POSSIBILITIES_VALUE
+                                                - DESIRED_POSSIBILITIES_STEP))
+                        ? 0
+                        : desiredPossibilities + DESIRED_POSSIBILITIES_STEP;
+    }
+
     public GridViewModel(
             IGridMaster iGridMaster,
             ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,
@@ -380,6 +414,13 @@ public class GridViewModel {
     public int setCurrentGridWithLevel(DifficultyLevel level) {
         checkInitialized();
         Objects.requireNonNull(level, "level mustn't be null");
+        String label =
+                (desiredPossibilities == -1)
+                        ? "Default"
+                        : desiredPossibilities
+                                + " à "
+                                + (desiredPossibilities + GridViewModel.DESIRED_POSSIBILITIES_STEP);
+        System.out.println("Possibilities: " + label);
         GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level.toGridNumber());
         persistNewGame(level, grillesCrees);
         setValues(iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()), true);

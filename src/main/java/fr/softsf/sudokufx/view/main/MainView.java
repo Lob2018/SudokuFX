@@ -24,6 +24,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
+import javafx.scene.input.InputEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
@@ -55,6 +56,7 @@ import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.view.util.BindingConfigurator;
 import fr.softsf.sudokufx.view.util.GenericListViewFactory;
+import fr.softsf.sudokufx.view.util.LevelInteractionHandler;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.HelpViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel;
@@ -107,6 +109,7 @@ public final class MainView implements IMainView {
     private final BindingConfigurator bindingConfigurator;
     private final GenericListViewFactory genericListViewFactory;
     private final ToasterService toasterService;
+    private final LevelInteractionHandler levelInteractionHandler;
 
     @FXML private ToasterVBox toaster;
     @FXML private SpinnerGridPane spinner;
@@ -225,7 +228,8 @@ public final class MainView implements IMainView {
             FileChooserService fileChooserService,
             BindingConfigurator bindingConfigurator,
             GenericListViewFactory genericListViewFactory,
-            ToasterService toasterService) {
+            ToasterService toasterService,
+            LevelInteractionHandler levelInteractionHandler) {
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
         this.coordinator = coordinator;
         this.helpViewModel = helpViewModel;
@@ -244,6 +248,7 @@ public final class MainView implements IMainView {
         this.bindingConfigurator = bindingConfigurator;
         this.genericListViewFactory = genericListViewFactory;
         this.toasterService = toasterService;
+        this.levelInteractionHandler = levelInteractionHandler;
     }
 
     /**
@@ -988,35 +993,22 @@ public final class MainView implements IMainView {
         menuOptionsViewModel.toggleMuteAndPersist();
     }
 
-    /** Applies the EASY difficulty level, updates the grid and level view models accordingly. */
-    public void handleEasyLevelShow() {
-        menuLevelViewModel.updateSelectedLevel(
-                DifficultyLevel.EASY, gridViewModel.setCurrentGridWithLevel(DifficultyLevel.EASY));
-        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
-    }
-
-    /** Applies the MEDIUM difficulty level, updates the grid and level view models accordingly. */
-    public void handleMediumLevelShow() {
-        menuLevelViewModel.updateSelectedLevel(
-                DifficultyLevel.MEDIUM,
-                gridViewModel.setCurrentGridWithLevel(DifficultyLevel.MEDIUM));
-        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
-    }
-
     /**
-     * Applies the DIFFICULT difficulty level, updates the grid and level view models accordingly.
+     * Dispatches level-related interaction events to the specialized handler. Provides a callback
+     * to maintain UI styling encapsulation.
+     *
+     * @param event the mouse or keyboard event captured from the UI
      */
-    public void handleDifficultLevelShow() {
-        menuLevelViewModel.updateSelectedLevel(
-                DifficultyLevel.DIFFICULT,
-                gridViewModel.setCurrentGridWithLevel(DifficultyLevel.DIFFICULT));
-        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
+    @FXML
+    private void handleLevelAction(InputEvent event) {
+        levelInteractionHandler.handleAction(event, this::applyOpaqueMode);
     }
 
     /**
      * Activates the MINI menu and starts a timer to auto-hide it after N seconds if it remains
      * active and the "menuMiniButtonShow" button still has focus.
      */
+    @FXML
     public void handleMenuMiniShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI);
         menuMiniButtonShow.requestFocus();
@@ -1025,18 +1017,21 @@ public final class MainView implements IMainView {
     }
 
     /** Restores the grid and shows the MINI menu. */
+    @FXML
     public void handleRestoreGridAndMenuMiniShow() {
         restoreCurrentGridLevelFromModel();
         handleMenuMiniShow();
     }
 
     /** Restores the grid and shows the MAXI menu. */
+    @FXML
     public void handleRestoreGridAndMenuMaxiShow(ActionEvent event) {
         restoreCurrentGridLevelFromModel();
         handleMenuMaxiShow(event);
     }
 
     /** Clear the grid in solve submenu. */
+    @FXML
     public void handleSolveClearGrid() {
         gridViewModel.clearGrid();
         menuSolveViewModel.setSolvePercentage(MAX_STARS_PERCENTAGE);
@@ -1064,6 +1059,7 @@ public final class MainView implements IMainView {
      *
      * @param event the event triggered by a submenu button click
      */
+    @FXML
     public void handleMenuMaxiShow(ActionEvent event) {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.MAXI);
         Object source = event.getSource();
@@ -1083,6 +1079,7 @@ public final class MainView implements IMainView {
      * Activates the PLAYER menu, refreshes the player list to reflect potential localization
      * changes, and sets focus on the player button to assist keyboard and accessibility navigation.
      */
+    @FXML
     public void handleMenuPlayerShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER);
         menuPlayerListView.refresh();
@@ -1093,6 +1090,7 @@ public final class MainView implements IMainView {
      * Activates the SOLVE menu, focuses the solve button, and updates the selected level if a
      * solved grid is available.
      */
+    @FXML
     public void handleMenuSolveShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE);
         menuSolveButtonSolve.requestFocus();
@@ -1109,6 +1107,7 @@ public final class MainView implements IMainView {
      * up-to-date, and sets focus on the save button to facilitate keyboard navigation and
      * accessibility.
      */
+    @FXML
     public void handleMenuBackupShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP);
         menuSaveListView.refresh();
@@ -1116,22 +1115,26 @@ public final class MainView implements IMainView {
     }
 
     /** Activates the OPTIONS menu and sets focus on the options button. */
+    @FXML
     public void handleMenuOptionsShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.OPTIONS);
         menuOptionsButtonOptions.requestFocus();
     }
 
     /** Displays the Help menu dialog with game rules and the application log path. */
+    @FXML
     public void handleMenuHelpShow() {
         helpViewModel.showHelp();
     }
 
     /** Switches language. */
+    @FXML
     public void handleToggleLanguage() {
         coordinator.toggleLanguage();
     }
 
     /** Opens GitHub releases URL via the Coordinator. */
+    @FXML
     public void handleMenuNewShow() {
         coordinator.openGitHubRepositoryReleaseUrl();
     }
