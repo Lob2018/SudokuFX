@@ -17,7 +17,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
 <StackPane fx:id="sudokuFXStackPane" alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1"
-           xmlns="http://javafx.com/javafx/23"
+           xmlns="http://javafx.com/javafx/25"
            fx:controller="fr.softsf.sudokufx.view.main.MainView">
     <!---->
     <!--SudokuFX container-->
