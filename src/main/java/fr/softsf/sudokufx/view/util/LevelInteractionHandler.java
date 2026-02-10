@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.view.util;
 
+import java.text.MessageFormat;
 import java.util.Objects;
 import java.util.Set;
 import java.util.function.Consumer;
@@ -21,6 +22,7 @@ import javafx.util.Duration;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
+import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;
@@ -124,11 +126,15 @@ public class LevelInteractionHandler {
     /** Formats and pushes the current possibilities state to the notification service. */
     private void notifyUser() {
         int val = gridViewModel.getDesiredPossibilities();
-        String label =
-                (val == -DURATION_BETWEEN_INCREMENTS_IN_MS)
-                        ? "Default"
-                        : val + " to " + (val + GridViewModel.DESIRED_POSSIBILITIES_STEP);
-        toasterService.showInfo("Possibilities: " + label, "Possibilities: " + label);
+        String minimumValue = String.valueOf(val);
+        String maximumValue = String.valueOf((val + GridViewModel.DESIRED_POSSIBILITIES_STEP));
+        toasterService.showInfo(
+                MessageFormat.format(
+                        I18n.INSTANCE.getValue(
+                                "toast.msg.levelInteractionHandler.desiredpossibilities"),
+                        minimumValue,
+                        maximumValue),
+                "");
     }
 
     /**

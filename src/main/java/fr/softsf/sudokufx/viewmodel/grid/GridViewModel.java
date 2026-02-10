@@ -411,16 +411,10 @@ public class GridViewModel {
      * @return the percentage of possibilities for the generated grid
      * @throws NullPointerException if {@code level} is {@code null}
      */
+    // TODO : To overload with desiredPossibilities min and max %
     public int setCurrentGridWithLevel(DifficultyLevel level) {
         checkInitialized();
         Objects.requireNonNull(level, "level mustn't be null");
-        String label =
-                (desiredPossibilities == -1)
-                        ? "Default"
-                        : desiredPossibilities
-                                + " à "
-                                + (desiredPossibilities + GridViewModel.DESIRED_POSSIBILITIES_STEP);
-        System.out.println("Possibilities: " + label);
         GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level.toGridNumber());
         persistNewGame(level, grillesCrees);
         setValues(iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()), true);
