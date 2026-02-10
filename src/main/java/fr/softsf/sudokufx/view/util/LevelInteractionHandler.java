@@ -35,6 +35,7 @@ import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 public class LevelInteractionHandler {
 
     public static final String EVENT_MUST_NOT_BE_NULL = "event mustn't be null";
+    public static final int DURATION_BETWEEN_INCREMENTS_IN_MS = 500;
     private final GridViewModel gridViewModel;
     private final MenuLevelViewModel menuLevelViewModel;
     private final MenuOptionsViewModel menuOptionsViewModel;
@@ -90,7 +91,7 @@ public class LevelInteractionHandler {
                 .getKeyFrames()
                 .setAll(
                         new KeyFrame(
-                                Duration.seconds(1),
+                                Duration.millis(DURATION_BETWEEN_INCREMENTS_IN_MS),
                                 _ -> {
                                     gridViewModel.incrementDesiredPossibilities();
                                     notifyUser();
@@ -124,7 +125,7 @@ public class LevelInteractionHandler {
     private void notifyUser() {
         int val = gridViewModel.getDesiredPossibilities();
         String label =
-                (val == -1)
+                (val == -DURATION_BETWEEN_INCREMENTS_IN_MS)
                         ? "Default"
                         : val + " to " + (val + GridViewModel.DESIRED_POSSIBILITIES_STEP);
         toasterService.showInfo("Possibilities: " + label, "Possibilities: " + label);
