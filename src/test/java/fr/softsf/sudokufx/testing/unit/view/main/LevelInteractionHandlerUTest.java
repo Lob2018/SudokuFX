@@ -3,7 +3,7 @@
  * Licensed under the GNU General Public License v3.0 (GPL-3.0).
  * See the full license at: https://github.com/Lob2018/SudokuFX/blob/main/LICENSE.txt
  */
-package fr.softsf.sudokufx.testing.unit.view.util;
+package fr.softsf.sudokufx.testing.unit.view.main;
 
 import java.util.function.Consumer;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -20,7 +20,7 @@ import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.service.ui.ToasterService;
-import fr.softsf.sudokufx.view.util.LevelInteractionHandler;
+import fr.softsf.sudokufx.view.main.LevelInteractionHandler;
 import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;

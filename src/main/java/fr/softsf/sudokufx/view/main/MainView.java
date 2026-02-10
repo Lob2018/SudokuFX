@@ -56,7 +56,6 @@ import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.view.util.BindingConfigurator;
 import fr.softsf.sudokufx.view.util.GenericListViewFactory;
-import fr.softsf.sudokufx.view.util.LevelInteractionHandler;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.HelpViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel;
