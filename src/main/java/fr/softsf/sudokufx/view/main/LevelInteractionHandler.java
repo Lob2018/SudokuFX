@@ -128,6 +128,7 @@ public class LevelInteractionHandler {
         int val = gridViewModel.getDesiredPossibilities();
         String minimumValue = String.valueOf(val);
         String maximumValue = String.valueOf((val + GridViewModel.DESIRED_POSSIBILITIES_STEP));
+        toasterService.requestRemoveToast();
         toasterService.showInfo(
                 MessageFormat.format(
                         I18n.INSTANCE.getValue(
