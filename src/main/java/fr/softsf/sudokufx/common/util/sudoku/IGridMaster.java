@@ -5,10 +5,72 @@
  */
 package fr.softsf.sudokufx.common.util.sudoku;
 
+import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import jakarta.validation.ConstraintViolationException;
 
 /** Interface defining methods to generate and solve Sudoku puzzles */
 public sealed interface IGridMaster permits GridMaster {
+
+    int POURCENTAGE_MAX = 100;
+    int DESIRED_POSSIBILITIES_STEP = 10;
+
+    int MIN_POSSIBILITES = 4800;
+    int MOYEN_MIN_POSSIBILITES = 10500;
+    int MOYEN_MAX_POSSIBILITES = 12500;
+    int MAX_POSSIBILITES = 33000;
+    // Nombre de cases à cacher en fonction du niveau
+    int FACILE_MIN_CACHEES = 34;
+    int MOYEN_MIN_CACHEES = 39;
+    int MOYEN_MAX_CACHEES = 44;
+    int DIFFICILE_MAX_CACHEES = 48;
+    // Pourcentage de possibilités par niveau
+    int FACILE_MIN_PERCENT = 0;
+    int FACILE_MAX_PERCENT = 19;
+    int MOYEN_MIN_PERCENT = 20;
+    int MOYEN_MAX_PERCENT = 26;
+    int DIFFICILE_MIN_PERCENT = 27;
+    int DIFFICILE_MAX_PERCENT = 100;
+
+    /**
+     * Calcule le pourcentage de difficultés basé sur la somme des possibilités.
+     *
+     * @param sommeDesPossibilites La somme brute calculée.
+     * @return Le pourcentage entre 0 et 100.
+     */
+    default int getPourcentageDepuisPossibilites(int sommeDesPossibilites) {
+        int pourcentage =
+                ((sommeDesPossibilites - MIN_POSSIBILITES) * POURCENTAGE_MAX)
+                        / (MAX_POSSIBILITES - MIN_POSSIBILITES);
+        return Math.clamp(pourcentage, 0, POURCENTAGE_MAX);
+    }
+
+    /**
+     * Récupère l'intervalle de pourcentages autorisé pour un niveau de difficulté donné.
+     *
+     * @param level le niveau de difficulté cible
+     * @return un objet {@link LevelPossibilityBounds} définissant le min et le max du niveau
+     */
+    default LevelPossibilityBounds getIntervallePourcentageNiveau(DifficultyLevel level) {
+        return switch (level) {
+            case EASY -> new LevelPossibilityBounds(FACILE_MIN_PERCENT, FACILE_MAX_PERCENT);
+            case MEDIUM -> new LevelPossibilityBounds(MOYEN_MIN_PERCENT, MOYEN_MAX_PERCENT);
+            case DIFFICULT ->
+                    new LevelPossibilityBounds(DIFFICILE_MIN_PERCENT, DIFFICILE_MAX_PERCENT);
+        };
+    }
+
+    /**
+     * Calcule la valeur supérieure du segment actuel en fonction du pas d'incrémentation.
+     *
+     * @param bounds l'intervalle min/max du niveau
+     * @param current la valeur de départ du segment
+     * @return la borne supérieure calculée, bridée par le maximum de l'intervalle
+     */
+    default int calculerValeurSuperieureDuSegment(LevelPossibilityBounds bounds, int current) {
+        int next = ((current / DESIRED_POSSIBILITIES_STEP) + 1) * DESIRED_POSSIBILITIES_STEP;
+        return Math.min(next, bounds.max());
+    }
+
     /**
      * Crée les grilles de Sudoku (résolue et à résoudre) selon un niveau de difficulté donné.
      *

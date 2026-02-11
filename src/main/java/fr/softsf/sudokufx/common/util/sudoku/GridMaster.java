@@ -46,11 +46,6 @@ public final class GridMaster implements IGridMaster {
     /** Masque représentant toutes les possibilités (511 en décimal, 111111111 en binaire). */
     private static final int ALL_POSSIBILITIES = (1 << DIMENSION) - 1;
 
-    // Nombre de cases à cacher en fonction du niveau
-    private static final int FACILE_MIN_CACHEES = 34;
-    private static final int MOYEN_MIN_CACHEES = 39;
-    private static final int MOYEN_MAX_CACHEES = 44;
-    private static final int DIFFICILE_MAX_CACHEES = 48;
     private static final int[] DEFAULT_INDICES = IntStream.range(0, NOMBRE_CASES).toArray();
 
     /**
@@ -141,9 +136,6 @@ public final class GridMaster implements IGridMaster {
         }
     }
 
-    private static final int MIN_POSSIBILITES = 4800;
-    private static final int MAX_POSSIBILITES = 33000;
-    private static final int POURCENTAGE_MAX = 100;
     private static final int TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
 
     /** Durée maximale d'une recherche de configuration valide (fail safe) pour un essai donné. */
@@ -158,7 +150,7 @@ public final class GridMaster implements IGridMaster {
         this.jakartaValidator = jakartaValidator;
     }
 
-    private int moyenMinPossibilites = 10500;
+    private int moyenMinPossibilites = MOYEN_MIN_POSSIBILITES;
 
     /**
      * Récupère la borne inférieure de la somme des possibilités pour une grille de difficulté
@@ -179,7 +171,7 @@ public final class GridMaster implements IGridMaster {
         return moyenMinPossibilites;
     }
 
-    private int moyenMaxPossibilites = 12500;
+    private int moyenMaxPossibilites = MOYEN_MAX_POSSIBILITES;
 
     /**
      * Récupère la borne supérieure de la somme des possibilités pour une grille de difficulté
@@ -625,20 +617,6 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités.
-     *
-     * @param sommeDesPossibilites La somme des possibilités.
-     * @return Le pourcentage des possibilités, compris entre 0 et 100.
-     */
-    private int getPourcentageDesPossibilites(int sommeDesPossibilites) {
-        int pourcentageDesPossibilites =
-                ((sommeDesPossibilites - MIN_POSSIBILITES) * POURCENTAGE_MAX)
-                        / (MAX_POSSIBILITES - MIN_POSSIBILITES);
-        // Borne la valeur entre 0 et POURCENTAGE_MAX (100)
-        return Math.clamp(pourcentageDesPossibilites, 0, POURCENTAGE_MAX);
-    }
-
-    /**
      * Tente de résoudre la grille de Sudoku fournie en utilisant un algorithme de backtracking
      * optimisé (propagation de contraintes et heuristique MRV).
      *
@@ -688,7 +666,7 @@ public final class GridMaster implements IGridMaster {
             int scorePossibilites = sommeDesPossibilitesDeLaGrille(possibilites);
             grilleResolue =
                     new GrilleResolue(
-                            true, grille, getPourcentageDesPossibilites(scorePossibilites));
+                            true, grille, getPourcentageDepuisPossibilites(scorePossibilites));
             // Valide l'intégrité du record
             jakartaValidator.validateOrThrow(grilleResolue);
             return grilleResolue;
@@ -734,7 +712,7 @@ public final class GridMaster implements IGridMaster {
         int sommeDesPossibilites = genererLaGrilleAResoudre(niveau, grilleResolue, grilleAResoudre);
 
         // Récupérer le pourcentage de possibilités estimé
-        int pourcentageDesPossibilites = getPourcentageDesPossibilites(sommeDesPossibilites);
+        int pourcentageDesPossibilites = getPourcentageDepuisPossibilites(sommeDesPossibilites);
         // Crée un record GrillesCrees structuré contenant les deux grilles et le pourcentage
         GrillesCrees grillesCrees =
                 new GrillesCrees(grilleResolue, grilleAResoudre, pourcentageDesPossibilites);

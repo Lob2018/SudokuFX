@@ -19,7 +19,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
-import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.main.LevelInteractionHandler;
 import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel;
@@ -39,7 +38,6 @@ class LevelInteractionHandlerUTest {
     private GridViewModel gridViewModel;
     private MenuLevelViewModel menuLevelViewModel;
     private MenuOptionsViewModel menuOptionsViewModel;
-    private ToasterService toasterService;
     private LevelInteractionHandler handler;
     private Consumer<Boolean> opaqueApplier;
 
@@ -48,13 +46,12 @@ class LevelInteractionHandlerUTest {
         gridViewModel = mock(GridViewModel.class);
         menuLevelViewModel = mock(MenuLevelViewModel.class);
         menuOptionsViewModel = mock(MenuOptionsViewModel.class);
-        toasterService = mock(ToasterService.class);
         opaqueApplier = mock(Consumer.class);
         when(menuOptionsViewModel.gridOpacityProperty())
                 .thenReturn(new SimpleBooleanProperty(false));
         handler =
                 new LevelInteractionHandler(
-                        menuOptionsViewModel, menuLevelViewModel, gridViewModel, toasterService);
+                        menuOptionsViewModel, menuLevelViewModel, gridViewModel);
     }
 
     @Test

@@ -5,7 +5,6 @@
  */
 package fr.softsf.sudokufx.view.main;
 
-import java.text.MessageFormat;
 import java.util.Objects;
 import java.util.Set;
 import java.util.function.Consumer;
@@ -22,9 +21,7 @@ import javafx.util.Duration;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
-import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
-import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
@@ -41,10 +38,10 @@ public class LevelInteractionHandler {
     private final GridViewModel gridViewModel;
     private final MenuLevelViewModel menuLevelViewModel;
     private final MenuOptionsViewModel menuOptionsViewModel;
-    private final ToasterService toasterService;
     private final Timeline desiredPossibilitiesTimeline = new Timeline();
-
     private static final Set<KeyCode> LEVEL_VALID_KEYS = Set.of(KeyCode.ENTER, KeyCode.SPACE);
+
+    private DifficultyLevel level;
 
     /**
      * Initializes the handler with required reactive view models and notification services.
@@ -52,17 +49,14 @@ public class LevelInteractionHandler {
      * @param menuOptionsViewModel the view model for grid display options
      * @param menuLevelViewModel the view model for level state updates
      * @param gridViewModel the view model for core grid operations
-     * @param toasterService the service for UI notifications
      */
     public LevelInteractionHandler(
             MenuOptionsViewModel menuOptionsViewModel,
             MenuLevelViewModel menuLevelViewModel,
-            GridViewModel gridViewModel,
-            ToasterService toasterService) {
+            GridViewModel gridViewModel) {
         this.menuOptionsViewModel = menuOptionsViewModel;
         this.menuLevelViewModel = menuLevelViewModel;
         this.gridViewModel = gridViewModel;
-        this.toasterService = toasterService;
         setupTimeline();
     }
 
@@ -79,10 +73,10 @@ public class LevelInteractionHandler {
         if (!(event.getSource() instanceof Button btn)) {
             return;
         }
+        level = getLevelWithId(btn.getId());
         switch (event) {
             case InputEvent e when isStartEvent(e) -> startCycle();
-            case InputEvent e when isEndEvent(e) ->
-                    applyLevel(getLevelWithId(btn.getId()), opaqueApplier);
+            case InputEvent e when isEndEvent(e) -> applyLevel(opaqueApplier);
             default -> desiredPossibilitiesTimeline.stop();
         }
     }
@@ -95,7 +89,7 @@ public class LevelInteractionHandler {
                         new KeyFrame(
                                 Duration.millis(DURATION_BETWEEN_INCREMENTS_IN_MS),
                                 _ -> {
-                                    gridViewModel.incrementDesiredPossibilities();
+                                    gridViewModel.incrementDesiredPossibilities(level);
                                     notifyUser();
                                 }));
         desiredPossibilitiesTimeline.setCycleCount(Animation.INDEFINITE);
@@ -112,10 +106,9 @@ public class LevelInteractionHandler {
     /**
      * Finalizes level selection and updates reactive state across view models.
      *
-     * @param level the DifficultyLevel to apply
      * @param opaqueApplier callback to refresh visual opacity based on the current options state
      */
-    private void applyLevel(DifficultyLevel level, Consumer<Boolean> opaqueApplier) {
+    private void applyLevel(Consumer<Boolean> opaqueApplier) {
         Objects.requireNonNull(level, "level mustn't be null");
         Objects.requireNonNull(opaqueApplier, "opaqueApplier mustn't be null");
         desiredPossibilitiesTimeline.stop();
@@ -123,19 +116,14 @@ public class LevelInteractionHandler {
         opaqueApplier.accept(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
-    /** Formats and pushes the current possibilities state to the notification service. */
+    /**
+     * Triggers a notification displaying the current difficulty percentage boundaries. *
+     *
+     * <p>Delegates to the {@link GridViewModel} to format and push the active percentage range to
+     * the toaster service.
+     */
     private void notifyUser() {
-        int val = gridViewModel.getDesiredPossibilities();
-        String minimumValue = String.valueOf(val);
-        String maximumValue = String.valueOf((val + GridViewModel.DESIRED_POSSIBILITIES_STEP));
-        toasterService.requestRemoveToast();
-        toasterService.showInfo(
-                MessageFormat.format(
-                        I18n.INSTANCE.getValue(
-                                "toast.msg.levelInteractionHandler.desiredpossibilities"),
-                        minimumValue,
-                        maximumValue),
-                "");
+        gridViewModel.notifyLevelPossibilityBounds(level);
     }
 
     /**
@@ -145,7 +133,6 @@ public class LevelInteractionHandler {
      * @return true if it is a valid start trigger
      */
     private boolean isStartEvent(InputEvent event) {
-        Objects.requireNonNull(event, EVENT_MUST_NOT_BE_NULL);
         return (event instanceof MouseEvent me && me.getEventType() == MouseEvent.MOUSE_PRESSED)
                 || (event instanceof KeyEvent ke
                         && ke.getEventType() == KeyEvent.KEY_PRESSED
@@ -159,7 +146,6 @@ public class LevelInteractionHandler {
      * @return true if it is a valid end trigger
      */
     private boolean isEndEvent(InputEvent event) {
-        Objects.requireNonNull(event, EVENT_MUST_NOT_BE_NULL);
         return (event instanceof MouseEvent me && me.getEventType() == MouseEvent.MOUSE_RELEASED)
                 || (event instanceof KeyEvent ke
                         && ke.getEventType() == KeyEvent.KEY_RELEASED

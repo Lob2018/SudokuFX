@@ -26,6 +26,7 @@ import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridConverter;
 import fr.softsf.sudokufx.common.util.sudoku.IGridMaster;
+import fr.softsf.sudokufx.common.util.sudoku.LevelPossibilityBounds;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.GameLevelDto;
 import fr.softsf.sudokufx.dto.GridDto;
@@ -48,6 +49,7 @@ public class GridViewModel {
     private static final int GRID_SIZE = 9;
     private static final int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
     private static final String GAME_DTO_MUSTN_T_BE_NULL = "gameDto mustn't be null";
+    private static final int DEFAULT_DESIRED_POSSIBILITIES = -1;
 
     private final IGridMaster iGridMaster;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
@@ -60,21 +62,7 @@ public class GridViewModel {
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(TOTAL_CELLS);
     private boolean initialized = false;
     private boolean suppressCellsListeners = false;
-
-    public static final int DESIRED_POSSIBILITIES_STEP = 10;
-    public static final int MAXIMUM_DESIRED_POSSIBILITIES_VALUE = 100;
-    private static final int DEFAULT_DESIRED_POSSIBILITIES = -1;
     private int desiredPossibilities = DEFAULT_DESIRED_POSSIBILITIES;
-
-    /**
-     * Returns the user's desired completion percentage (0-100). A value of -1 indicates that the
-     * default generator logic should be used.
-     *
-     * @return the current desired possibilities value
-     */
-    public int getDesiredPossibilities() {
-        return desiredPossibilities;
-    }
 
     /** Resets the desired possibilities to the default state. */
     public void resetDesiredPossibilities() {
@@ -82,17 +70,39 @@ public class GridViewModel {
     }
 
     /**
-     * Increments the desired possibilities value cyclically. Cycle: -1 (Default) -> 0 -> 10 -> 20
-     * ... -> 90 -> 0.
+     * Increments the starting point of the difficulty bracket cyclically.
+     *
+     * @param level the difficulty level providing the percentage boundaries
      */
-    public void incrementDesiredPossibilities() {
-        desiredPossibilities =
-                (desiredPossibilities == DEFAULT_DESIRED_POSSIBILITIES
-                                || desiredPossibilities
-                                        >= (MAXIMUM_DESIRED_POSSIBILITIES_VALUE
-                                                - DESIRED_POSSIBILITIES_STEP))
-                        ? 0
-                        : desiredPossibilities + DESIRED_POSSIBILITIES_STEP;
+    public void incrementDesiredPossibilities(DifficultyLevel level) {
+        LevelPossibilityBounds bounds = iGridMaster.getIntervallePourcentageNiveau(level);
+        if (desiredPossibilities == DEFAULT_DESIRED_POSSIBILITIES
+                || iGridMaster.calculerValeurSuperieureDuSegment(bounds, desiredPossibilities)
+                        >= bounds.max()) {
+            desiredPossibilities = bounds.min();
+        } else {
+            desiredPossibilities =
+                    ((desiredPossibilities / IGridMaster.DESIRED_POSSIBILITIES_STEP) + 1)
+                            * IGridMaster.DESIRED_POSSIBILITIES_STEP;
+        }
+    }
+
+    /**
+     * Formats and pushes the current difficulty bracket to the notification service. * @param level
+     * the current difficulty level
+     */
+    public void notifyLevelPossibilityBounds(DifficultyLevel level) {
+        LevelPossibilityBounds bounds = iGridMaster.getIntervallePourcentageNiveau(level);
+        int minVal = desiredPossibilities;
+        int maxVal = iGridMaster.calculerValeurSuperieureDuSegment(bounds, minVal);
+        toasterService.requestRemoveToast();
+        toasterService.showInfo(
+                MessageFormat.format(
+                        I18n.INSTANCE.getValue(
+                                "toast.msg.levelInteractionHandler.desiredpossibilities"),
+                        String.valueOf(minVal),
+                        String.valueOf(maxVal)),
+                "");
     }
 
     public GridViewModel(
@@ -411,7 +421,7 @@ public class GridViewModel {
      * @return the percentage of possibilities for the generated grid
      * @throws NullPointerException if {@code level} is {@code null}
      */
-    // TODO : To overload with desiredPossibilities min and max %
+    // TODO : Overload creerLesGrillesTo with desiredPossibilities
     public int setCurrentGridWithLevel(DifficultyLevel level) {
         checkInitialized();
         Objects.requireNonNull(level, "level mustn't be null");
