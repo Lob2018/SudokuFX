@@ -70,6 +70,16 @@ public class GridViewModel {
     }
 
     /**
+     * Returns the user's desired completion percentage (0-100). A value of -1
+     * indicates that the default generation logic should be used.
+     *
+     * @return the current desired possibilities value
+     */
+    public int getDesiredPossibilities() {
+        return desiredPossibilities;
+    }
+
+    /**
      * Increments the starting point of the difficulty bracket cyclically.
      *
      * @param level the difficulty level providing the percentage boundaries

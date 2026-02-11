@@ -232,4 +232,62 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
         assertEquals(0, currentGrid.percentage());
         assertEquals(81, localVM.getAllValues().size());
     }
+
+    @Test
+    void givenModifiedState_whenResetDesiredPossibilities_thenReturnsDefaultValue() {
+        assertEquals(-1, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        assertNotEquals(-1, viewModel.getDesiredPossibilities());
+        viewModel.resetDesiredPossibilities();
+        assertEquals(-1, viewModel.getDesiredPossibilities());
+    }
+
+    @Test
+    void givenInitialState_whenResetDesiredPossibilities_thenValueIsDefault() {
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        viewModel.resetDesiredPossibilities();
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        assertEquals(IGridMaster.FACILE_MIN_PERCENT, viewModel.getDesiredPossibilities());
+    }
+
+    @Test
+    void givenEasyLevel_whenIncrementDesiredPossibilities_thenCyclesCorrectly() {
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        assertEquals(0, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        assertEquals(10, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        assertEquals(0, viewModel.getDesiredPossibilities());
+    }
+
+    @Test
+    void givenMediumLevel_whenIncrementDesiredPossibilities_thenStartsAtMediumMin() {
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.MEDIUM);
+        assertEquals(IGridMaster.MOYEN_MIN_PERCENT, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.MEDIUM);
+        assertEquals(IGridMaster.MOYEN_MIN_PERCENT, viewModel.getDesiredPossibilities());
+    }
+
+    @Test
+    void givenDifficultLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly() {
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
+        assertEquals(27, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
+        assertEquals(30, viewModel.getDesiredPossibilities());
+        for (int i = 0; i < 6; i++) {
+            viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
+        }
+        assertEquals(90, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
+        assertEquals(27, viewModel.getDesiredPossibilities());
+    }
+
+    @Test
+    void givenLevel_whenNotifyLevelPossibilityBounds_thenToasterServiceIsCalled() {
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        viewModel.notifyLevelPossibilityBounds(DifficultyLevel.EASY);
+        verify(toasterServiceMock).requestRemoveToast();
+        verify(toasterServiceMock)
+                .showInfo(argThat(msg -> msg.contains("0") && msg.contains("10")), eq(""));
+    }
 }

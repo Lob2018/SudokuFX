@@ -9,11 +9,13 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -22,17 +24,55 @@ class GridMasterUTest {
 
     @Autowired private GridMaster gridMaster;
 
+    @Test
+    void givenPossibilitiesSum_whenGetPourcentage_thenReturnsClampedValue() {
+        assertEquals(0, gridMaster.getPourcentageDepuisPossibilites(IGridMaster.MIN_POSSIBILITES));
+        assertEquals(
+                100, gridMaster.getPourcentageDepuisPossibilites(IGridMaster.MAX_POSSIBILITES));
+        assertEquals(0, gridMaster.getPourcentageDepuisPossibilites(0));
+        assertEquals(100, gridMaster.getPourcentageDepuisPossibilites(50000));
+        int middleSum = (IGridMaster.MIN_POSSIBILITES + IGridMaster.MAX_POSSIBILITES) / 2;
+        assertEquals(50, gridMaster.getPourcentageDepuisPossibilites(middleSum));
+    }
+
+    @ParameterizedTest
+    @EnumSource(DifficultyLevel.class)
+    void givenLevel_whenGetIntervalle_thenReturnsCorrectBounds(DifficultyLevel level) {
+        LevelPossibilityBounds bounds = gridMaster.getIntervallePourcentageNiveau(level);
+        switch (level) {
+            case EASY -> {
+                assertEquals(IGridMaster.FACILE_MIN_PERCENT, bounds.min());
+                assertEquals(IGridMaster.FACILE_MAX_PERCENT, bounds.max());
+            }
+            case MEDIUM -> {
+                assertEquals(IGridMaster.MOYEN_MIN_PERCENT, bounds.min());
+                assertEquals(IGridMaster.MOYEN_MAX_PERCENT, bounds.max());
+            }
+            case DIFFICULT -> {
+                assertEquals(IGridMaster.DIFFICILE_MIN_PERCENT, bounds.min());
+                assertEquals(IGridMaster.DIFFICILE_MAX_PERCENT, bounds.max());
+            }
+        }
+    }
+
+    @Test
+    void givenCurrentValue_whenCalculerValeurSuperieureDuSegment_thenReturnsCorrectStepOrMax() {
+        LevelPossibilityBounds bounds = new LevelPossibilityBounds(20, 26); // Niveau Moyen
+        assertEquals(26, gridMaster.calculerValeurSuperieureDuSegment(bounds, 20));
+        LevelPossibilityBounds largeBounds = new LevelPossibilityBounds(27, 100);
+        assertEquals(40, gridMaster.calculerValeurSuperieureDuSegment(largeBounds, 30));
+        assertEquals(100, gridMaster.calculerValeurSuperieureDuSegment(largeBounds, 95));
+    }
+
     private void assertGrillesCreesValides(GrillesCrees grillesCrees) {
         assertNotNull(grillesCrees);
         assertNotNull(grillesCrees.grilleResolue());
         assertNotNull(grillesCrees.grilleAResoudre());
         assertEquals(81, grillesCrees.grilleResolue().length);
         assertEquals(81, grillesCrees.grilleAResoudre().length);
-
         long countZerosResolved =
                 Arrays.stream(grillesCrees.grilleResolue()).filter(v -> v == 0).count();
         assertEquals(0, countZerosResolved);
-
         long countZerosPuzzle =
                 Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
         assertTrue(countZerosPuzzle > 0);
