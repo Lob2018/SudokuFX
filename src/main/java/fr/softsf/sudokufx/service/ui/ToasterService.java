@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.service.ui;
 
 import java.util.Objects;
+import javafx.application.Platform;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.ReadOnlyBooleanProperty;
@@ -39,13 +40,13 @@ public class ToasterService {
     }
 
     /**
-     * Requests the removal of the currently displayed toast.
+     * Requests the removal of the currently displayed toast. Thread-safe via Platform.runLater.
      *
      * <p>This triggers the {@link #removeToastRequestProperty()} listener in the UI to remove the
      * toast.
      */
     public void requestRemoveToast() {
-        removeToastRequest.set(!removeToastRequest.get());
+        Platform.runLater(() -> removeToastRequest.set(!removeToastRequest.get()));
     }
 
     /**
@@ -77,7 +78,7 @@ public class ToasterService {
 
     /**
      * Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire
-     * even if identical to the previous value.
+     * even if identical to the previous value. Thread-safe via Platform.runLater.
      *
      * @param visibleText The text displayed in the toast
      * @param detailedText The detailed text for clipboard copy
@@ -85,12 +86,12 @@ public class ToasterService {
      * @throws NullPointerException if visibleText or detailedText is null
      */
     private void sendToast(String visibleText, String detailedText, ToastLevels level) {
-        toastRequest.set(null);
-        toastRequest.set(
-                new ToastData(
-                        Objects.requireNonNull(visibleText, "visibleText must not be null"),
-                        Objects.requireNonNull(detailedText, "detailedText must not be null"),
-                        level,
-                        false));
+        Objects.requireNonNull(visibleText, "visibleText must not be null");
+        Objects.requireNonNull(detailedText, "detailedText must not be null");
+        Platform.runLater(
+                () -> {
+                    toastRequest.set(null);
+                    toastRequest.set(new ToastData(visibleText, detailedText, level, false));
+                });
     }
 }
