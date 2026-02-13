@@ -124,18 +124,39 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af2d45060700f699fc8517cdf138bc7c2" id="r_af2d45060700f699fc8517cdf138bc7c2"><td class="memItemLeft">default int&#160;</td><td class="memItemRight"><a class="el" href="#af2d45060700f699fc8517cdf138bc7c2">calculerValeurSuperieureDuSegment</a> (<a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a> bounds, int current)</td></tr>
+<tr class="memdesc:af2d45060700f699fc8517cdf138bc7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la valeur supérieure du segment actuel en fonction du pas d'incrémentation.  <br /></td></tr>
 <tr class="memitem:af9f6b678d373391cd629f1ab2973b775" id="r_af9f6b678d373391cd629f1ab2973b775"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ac3d62f66e8acd5749e3037a6ad06f21e">GrillesCrees</a>&#160;</td><td class="memItemRight"><a class="el" href="#af9f6b678d373391cd629f1ab2973b775">creerLesGrilles</a> (final int niveau)</td></tr>
 <tr class="memdesc:af9f6b678d373391cd629f1ab2973b775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté spécifié.  <br /></td></tr>
 <tr class="memitem:af9f6b678d373391cd629f1ab2973b775" id="r_af9f6b678d373391cd629f1ab2973b775"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ac3d62f66e8acd5749e3037a6ad06f21e">GrillesCrees</a>&#160;</td><td class="memItemRight"><a class="el" href="#af9f6b678d373391cd629f1ab2973b775">creerLesGrilles</a> (final int niveau)</td></tr>
 <tr class="memdesc:af9f6b678d373391cd629f1ab2973b775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée les grilles de Sudoku (résolue et à résoudre) selon un niveau de difficulté donné.  <br /></td></tr>
-<tr class="memitem:a0da08290853426fd59e6838c6baf7d62" id="r_a0da08290853426fd59e6838c6baf7d62"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a0da08290853426fd59e6838c6baf7d62">getMoyenMaxPossibilites</a> ()</td></tr>
-<tr class="memdesc:a0da08290853426fd59e6838c6baf7d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère la borne supérieure de la somme des possibilités pour une grille de difficulté moyenne.  <br /></td></tr>
-<tr class="memitem:a33de6533af2bc2ab49cfc58c27084cdc" id="r_a33de6533af2bc2ab49cfc58c27084cdc"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a33de6533af2bc2ab49cfc58c27084cdc">getMoyenMinPossibilites</a> ()</td></tr>
-<tr class="memdesc:a33de6533af2bc2ab49cfc58c27084cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère la borne inférieure de la somme des possibilités pour une grille de difficulté moyenne.  <br /></td></tr>
+<tr class="memitem:a409da4117c58966b842279006d9546dd" id="r_a409da4117c58966b842279006d9546dd"><td class="memItemLeft">default <a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a>&#160;</td><td class="memItemRight"><a class="el" href="#a409da4117c58966b842279006d9546dd">getIntervallePourcentageNiveau</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
+<tr class="memdesc:a409da4117c58966b842279006d9546dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère l'intervalle de pourcentages autorisé pour un niveau de difficulté donné.  <br /></td></tr>
+<tr class="memitem:a3307d58848c5c2f12ba5f33c2eb6ebb7" id="r_a3307d58848c5c2f12ba5f33c2eb6ebb7"><td class="memItemLeft">default int&#160;</td><td class="memItemRight"><a class="el" href="#a3307d58848c5c2f12ba5f33c2eb6ebb7">getPourcentageDepuisPossibilites</a> (int sommeDesPossibilites)</td></tr>
+<tr class="memdesc:a3307d58848c5c2f12ba5f33c2eb6ebb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le pourcentage de difficultés basé sur la somme des possibilités.  <br /></td></tr>
 <tr class="memitem:a94424450acb912e32c7548e6659b617a" id="r_a94424450acb912e32c7548e6659b617a"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ad9235162514fff9999f723bb791d4da1">GrilleResolue</a>&#160;</td><td class="memItemRight"><a class="el" href="#a94424450acb912e32c7548e6659b617a">resoudreLaGrille</a> (final int[] grille)</td></tr>
 <tr class="memdesc:a94424450acb912e32c7548e6659b617a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tente de résoudre la grille de Sudoku fournie en utilisant un algorithme de backtracking optimisé (propagation de contraintes et heuristique MRV).  <br /></td></tr>
 <tr class="memitem:a94424450acb912e32c7548e6659b617a" id="r_a94424450acb912e32c7548e6659b617a"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ad9235162514fff9999f723bb791d4da1">GrilleResolue</a>&#160;</td><td class="memItemRight"><a class="el" href="#a94424450acb912e32c7548e6659b617a">resoudreLaGrille</a> (final int[] grille)</td></tr>
 <tr class="memdesc:a94424450acb912e32c7548e6659b617a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Résout une grille de Sudoku en remplissant les cases vides avec des valeurs valides.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:ad0c0fed77312974e8ff34c6e54c96310" id="r_ad0c0fed77312974e8ff34c6e54c96310"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad0c0fed77312974e8ff34c6e54c96310">DESIRED_POSSIBILITIES_STEP</a> = 10</td></tr>
+<tr class="memitem:a9428fe6c6bc8fe46f7d944ce277930e0" id="r_a9428fe6c6bc8fe46f7d944ce277930e0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a9428fe6c6bc8fe46f7d944ce277930e0">DIFFICILE_MAX_CACHEES</a> = 48</td></tr>
+<tr class="memitem:a231c75a32e16d525f90a38e75a995f29" id="r_a231c75a32e16d525f90a38e75a995f29"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a231c75a32e16d525f90a38e75a995f29">DIFFICILE_MAX_PERCENT</a> = 100</td></tr>
+<tr class="memitem:a3d7c66638db4adf7fc9a6bee7678bd48" id="r_a3d7c66638db4adf7fc9a6bee7678bd48"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3d7c66638db4adf7fc9a6bee7678bd48">DIFFICILE_MIN_PERCENT</a> = 27</td></tr>
+<tr class="memitem:a02492f82e3fb6f0400d7c0282633b4b1" id="r_a02492f82e3fb6f0400d7c0282633b4b1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a02492f82e3fb6f0400d7c0282633b4b1">FACILE_MAX_PERCENT</a> = 19</td></tr>
+<tr class="memitem:a088b9d222f9b0e98ac58029423809b2b" id="r_a088b9d222f9b0e98ac58029423809b2b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a088b9d222f9b0e98ac58029423809b2b">FACILE_MIN_CACHEES</a> = 34</td></tr>
+<tr class="memitem:a7bb60de1167c4b02affd7aa4520647ab" id="r_a7bb60de1167c4b02affd7aa4520647ab"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7bb60de1167c4b02affd7aa4520647ab">FACILE_MIN_PERCENT</a> = 0</td></tr>
+<tr class="memitem:afe3eae2686ac44293d7ddb11e483c3a6" id="r_afe3eae2686ac44293d7ddb11e483c3a6"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#afe3eae2686ac44293d7ddb11e483c3a6">MAX_POSSIBILITES</a> = 33000</td></tr>
+<tr class="memitem:a779d0c96ca310fff99c2dbe6928b537c" id="r_a779d0c96ca310fff99c2dbe6928b537c"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a779d0c96ca310fff99c2dbe6928b537c">MIN_POSSIBILITES</a> = 4800</td></tr>
+<tr class="memitem:a3faf3acf6c86e98dfeede721ec505295" id="r_a3faf3acf6c86e98dfeede721ec505295"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3faf3acf6c86e98dfeede721ec505295">MOYEN_MAX_CACHEES</a> = 44</td></tr>
+<tr class="memitem:a2f9346abf1f71b7335b3b6992311e991" id="r_a2f9346abf1f71b7335b3b6992311e991"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a2f9346abf1f71b7335b3b6992311e991">MOYEN_MAX_PERCENT</a> = 26</td></tr>
+<tr class="memitem:ae9ca4fdf4156f6e09aac34b4cf7a2ab4" id="r_ae9ca4fdf4156f6e09aac34b4cf7a2ab4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae9ca4fdf4156f6e09aac34b4cf7a2ab4">MOYEN_MAX_POSSIBILITES</a> = 12500</td></tr>
+<tr class="memitem:aad607678d0dab89c8c314ea0b8acfae0" id="r_aad607678d0dab89c8c314ea0b8acfae0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aad607678d0dab89c8c314ea0b8acfae0">MOYEN_MIN_CACHEES</a> = 39</td></tr>
+<tr class="memitem:ad78b2a3fff02902fb5ac1a5e10fd3bf0" id="r_ad78b2a3fff02902fb5ac1a5e10fd3bf0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad78b2a3fff02902fb5ac1a5e10fd3bf0">MOYEN_MIN_PERCENT</a> = 20</td></tr>
+<tr class="memitem:aa48618cce00173d13566be809279b4c1" id="r_aa48618cce00173d13566be809279b4c1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa48618cce00173d13566be809279b4c1">MOYEN_MIN_POSSIBILITES</a> = 10500</td></tr>
+<tr class="memitem:a8b9d6899ad3a6e547faa7819d63268eb" id="r_a8b9d6899ad3a6e547faa7819d63268eb"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8b9d6899ad3a6e547faa7819d63268eb">POURCENTAGE_MAX</a> = 100</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
@@ -157,12 +178,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:aedafc76e589c715c380e2732e0ff04d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro.  <br /></td></tr>
 <tr class="memitem:a3f17ab078f894717a1f3dfaffed0b987" id="r_a3f17ab078f894717a1f3dfaffed0b987"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3f17ab078f894717a1f3dfaffed0b987">choisirValeurAleatoire</a> (final int possibilitesDeLaCase)</td></tr>
 <tr class="memdesc:a3f17ab078f894717a1f3dfaffed0b987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choisit une valeur aléatoire parmi les possibilités données.  <br /></td></tr>
-<tr class="memitem:aee57e1ea56d413431a806492e5bfa40f" id="r_aee57e1ea56d413431a806492e5bfa40f"><td class="memItemLeft">long&#160;</td><td class="memItemRight"><a class="el" href="#aee57e1ea56d413431a806492e5bfa40f">dureeEnMs</a> ()</td></tr>
-<tr class="memdesc:aee57e1ea56d413431a806492e5bfa40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en millisecondes.  <br /></td></tr>
-<tr class="memitem:ad962ba16fc274782e22bdf56d85f71b1" id="r_ad962ba16fc274782e22bdf56d85f71b1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad962ba16fc274782e22bdf56d85f71b1">genererGrilleAvecCasesCachees</a> (int[] grilleResolue, int[] grilleAResoudre, int casesAPrecis, int casesAMin, int casesAMax, IntPredicate conditionValidation)</td></tr>
-<tr class="memdesc:ad962ba16fc274782e22bdf56d85f71b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku avec un nombre de cases cachées selon les critères spécifiés.  <br /></td></tr>
+<tr class="memitem:af6461bfbf866d4c2ed591179e96eb56b" id="r_af6461bfbf866d4c2ed591179e96eb56b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af6461bfbf866d4c2ed591179e96eb56b">genererGrilleAvecCasesCachees</a> (int[] grilleResolue, int[] grilleAResoudre, int casesAMin, int casesAMax, IntPredicate conditionValidation, int compteurEssais)</td></tr>
+<tr class="memdesc:af6461bfbf866d4c2ed591179e96eb56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté.  <br /></td></tr>
 <tr class="memitem:a4ee8cc0d8a933568aeb12ca14f8ab649" id="r_a4ee8cc0d8a933568aeb12ca14f8ab649"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4ee8cc0d8a933568aeb12ca14f8ab649">genererLaGrilleAResoudre</a> (final int niveau, final int[] grilleResolue, final int[] grilleAResoudre)</td></tr>
-<tr class="memdesc:a4ee8cc0d8a933568aeb12ca14f8ab649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku à résoudre en cachant des cases selon le niveau de difficulté spécifié.  <br /></td></tr>
+<tr class="memdesc:a4ee8cc0d8a933568aeb12ca14f8ab649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté.  <br /></td></tr>
 <tr class="memitem:aa77557d49c6d3377a6409b74f6386595" id="r_aa77557d49c6d3377a6409b74f6386595"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa77557d49c6d3377a6409b74f6386595">getPossibilitesGrilleAresoudreDifficile</a> (int[] grilleResolue, int[] grilleAResoudre)</td></tr>
 <tr class="memdesc:aa77557d49c6d3377a6409b74f6386595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku de niveau difficile.  <br /></td></tr>
 <tr class="memitem:a14a9157214a31a7be5f08c78c129a96d" id="r_a14a9157214a31a7be5f08c78c129a96d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a14a9157214a31a7be5f08c78c129a96d">getPossibilitesGrilleAResoudreFacile</a> (int[] grilleResolue, int[] grilleAResoudre)</td></tr>
@@ -171,17 +190,17 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:ab77d72c8f1612e20c9d7b27f6869b08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku de niveau moyen.  <br /></td></tr>
 <tr class="memitem:a7b8b865b518ad50e3d77814a16bf9634" id="r_a7b8b865b518ad50e3d77814a16bf9634"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7b8b865b518ad50e3d77814a16bf9634">getPossibilitesGrilleWhileNok</a> (int[] grilleResolue, int[] grilleAResoudre, int nombreDeCasesACacher)</td></tr>
 <tr class="memdesc:a7b8b865b518ad50e3d77814a16bf9634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache des cases dans la grille et calcule la somme des possibilités restantes.  <br /></td></tr>
-<tr class="memitem:af7a1c9df1f82cefc39447ed221fafd76" id="r_af7a1c9df1f82cefc39447ed221fafd76"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af7a1c9df1f82cefc39447ed221fafd76">getPourcentageDesPossibilites</a> (int sommeDesPossibilites)</td></tr>
-<tr class="memdesc:af7a1c9df1f82cefc39447ed221fafd76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités.  <br /></td></tr>
 <tr class="memitem:ae544691a2f6f2b54de8f88d3babcc221" id="r_ae544691a2f6f2b54de8f88d3babcc221"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#ae544691a2f6f2b54de8f88d3babcc221">remplirLaGrille</a> (final int[] grille, final int[] possibilites)</td></tr>
 <tr class="memdesc:ae544691a2f6f2b54de8f88d3babcc221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplit récursivement la grille Sudoku (backtracking).  <br /></td></tr>
 <tr class="memitem:ac7a6a027f90ee968f0be179797d663cf" id="r_ac7a6a027f90ee968f0be179797d663cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac7a6a027f90ee968f0be179797d663cf">remplirPremiereLigneAleatoirement</a> (int[] grille)</td></tr>
 <tr class="memdesc:ac7a6a027f90ee968f0be179797d663cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplit aléatoirement la première ligne de la grille avec les chiffres de 1 à 9.  <br /></td></tr>
+<tr class="memitem:aa3aa3945ebc4549be49be1e0c481f9da" id="r_aa3aa3945ebc4549be49be1e0c481f9da"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa3aa3945ebc4549be49be1e0c481f9da">verifierUnicite</a> (int[] grille, int[] possibilites, int nbSolutions)</td></tr>
+<tr class="memdesc:aa3aa3945ebc4549be49be1e0c481f9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie l'unicité par backtracking en utilisant la propagation de contraintes.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-methods" class="groupheader"><a id="pri-static-methods" name="pri-static-methods"></a>
 Static Private Member Functions</h2></td></tr>
-<tr class="memitem:a16dbf6442a962a93e5145430b587dc3d" id="r_a16dbf6442a962a93e5145430b587dc3d"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a16dbf6442a962a93e5145430b587dc3d">addBoxNeighbors</a> (int index, int row, int col, int boxRow, int boxCol, int count)</td></tr>
-<tr class="memdesc:a16dbf6442a962a93e5145430b587dc3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les voisins du carré (box) pour l'index donné dans la table NEIGHBORS.  <br /></td></tr>
+<tr class="memitem:a5248b7b6a995e1f92d53f39bd77dbf38" id="r_a5248b7b6a995e1f92d53f39bd77dbf38"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a5248b7b6a995e1f92d53f39bd77dbf38">addBoxNeighbors</a> (int index, int row, int col, int boxRow, int boxCol, int count)</td></tr>
+<tr class="memdesc:a5248b7b6a995e1f92d53f39bd77dbf38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les voisins du carré (box) pour l'index donné dans la table NEIGHBORS.  <br /></td></tr>
 <tr class="memitem:a4435fa6d316221911a6531db7dcd9bf3" id="r_a4435fa6d316221911a6531db7dcd9bf3"><td class="memItemLeft">static int&#160;</td><td class="memItemRight"><a class="el" href="#a4435fa6d316221911a6531db7dcd9bf3">addLinearNeighbors</a> (int index, int row, int col, int count)</td></tr>
 <tr class="memdesc:a4435fa6d316221911a6531db7dcd9bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute les voisins de ligne et de colonne pour l'index donné dans la table NEIGHBORS.  <br /></td></tr>
 <tr class="memitem:a6f8a7a32d9421be5ec0e87fab69bb351" id="r_a6f8a7a32d9421be5ec0e87fab69bb351"><td class="memItemLeft">static void&#160;</td><td class="memItemRight"><a class="el" href="#a6f8a7a32d9421be5ec0e87fab69bb351">eliminerPossibilite</a> (final int[] possibilites, final int index, final int valeur)</td></tr>
@@ -199,10 +218,9 @@ Static Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:aafd69742820af4b4d6352212598c40a4" id="r_aafd69742820af4b4d6352212598c40a4"><td class="memItemLeft">Instant&#160;</td><td class="memItemRight"><a class="el" href="#aafd69742820af4b4d6352212598c40a4">derniereDemande</a> = Instant.now()</td></tr>
 <tr class="memitem:a87cce49067a5dce9e0fa26ca41c7a684" id="r_a87cce49067a5dce9e0fa26ca41c7a684"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html">JakartaValidator</a>&#160;</td><td class="memItemRight"><a class="el" href="#a87cce49067a5dce9e0fa26ca41c7a684">jakartaValidator</a></td></tr>
-<tr class="memitem:a32add7ceed98dd8f25c8706282a0f698" id="r_a32add7ceed98dd8f25c8706282a0f698"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a32add7ceed98dd8f25c8706282a0f698">moyenMaxPossibilites</a> = 28266</td></tr>
-<tr class="memitem:a598ad81370ef9bb8e410ffb98a5b3e9e" id="r_a598ad81370ef9bb8e410ffb98a5b3e9e"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a598ad81370ef9bb8e410ffb98a5b3e9e">moyenMinPossibilites</a> = 16533</td></tr>
+<tr class="memitem:a32add7ceed98dd8f25c8706282a0f698" id="r_a32add7ceed98dd8f25c8706282a0f698"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a32add7ceed98dd8f25c8706282a0f698">moyenMaxPossibilites</a> = <a class="el" href="#ae9ca4fdf4156f6e09aac34b4cf7a2ab4">MOYEN_MAX_POSSIBILITES</a></td></tr>
+<tr class="memitem:a598ad81370ef9bb8e410ffb98a5b3e9e" id="r_a598ad81370ef9bb8e410ffb98a5b3e9e"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a598ad81370ef9bb8e410ffb98a5b3e9e">moyenMinPossibilites</a> = <a class="el" href="#aa48618cce00173d13566be809279b4c1">MOYEN_MIN_POSSIBILITES</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -211,23 +229,15 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a14a713d8983498c63b0b3ee3f18bf364" id="r_a14a713d8983498c63b0b3ee3f18bf364"><td class="memItemLeft">static final int[]&#160;</td><td class="memItemRight"><a class="el" href="#a14a713d8983498c63b0b3ee3f18bf364">BIT_MASKS</a> = new int[<a class="el" href="#a1770bd06a646ed63872568ce3f17817e">DIMENSION</a> + 1]</td></tr>
 <tr class="memdesc:a14a713d8983498c63b0b3ee3f18bf364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Table de pré-calcul des masques binaires pour les valeurs 1 à 9.  <br /></td></tr>
 <tr class="memitem:afe4fd2bdabd6aa74645efa0f9588398b" id="r_afe4fd2bdabd6aa74645efa0f9588398b"><td class="memItemLeft">static final int[]&#160;</td><td class="memItemRight"><a class="el" href="#afe4fd2bdabd6aa74645efa0f9588398b">DEFAULT_INDICES</a> = IntStream.range(0, <a class="el" href="#a08af308416abf02bea7c3290f704f39a">NOMBRE_CASES</a>).toArray()</td></tr>
-<tr class="memitem:a395e4852c17ef149cfff3f7d38db91a3" id="r_a395e4852c17ef149cfff3f7d38db91a3"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a395e4852c17ef149cfff3f7d38db91a3">DIFFICILE_MAX_CACHEES</a> = 59</td></tr>
-<tr class="memitem:a119f60876136e9b4d4929d0e8e2328ea" id="r_a119f60876136e9b4d4929d0e8e2328ea"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a119f60876136e9b4d4929d0e8e2328ea">DIFFICILE_MOY_CACHEES</a></td></tr>
 <tr class="memitem:a1770bd06a646ed63872568ce3f17817e" id="r_a1770bd06a646ed63872568ce3f17817e"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a1770bd06a646ed63872568ce3f17817e">DIMENSION</a> = <a class="el" href="#a2d5f6ee38f6cfce49848aec5cb18dd45">ORDRE</a> * <a class="el" href="#a2d5f6ee38f6cfce49848aec5cb18dd45">ORDRE</a></td></tr>
-<tr class="memitem:ac55736610813f2f42b04ec014ec59d6c" id="r_ac55736610813f2f42b04ec014ec59d6c"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#ac55736610813f2f42b04ec014ec59d6c">DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE</a> = 1000</td></tr>
-<tr class="memitem:ab4c72861c001247f81c9128b3b56c87e" id="r_ab4c72861c001247f81c9128b3b56c87e"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#ab4c72861c001247f81c9128b3b56c87e">DUREE_MAXIMALE_POUR_MASQUE_PRECIS</a> = 500</td></tr>
-<tr class="memitem:aa02cf3b663a01c00a69643a5f7716eb7" id="r_aa02cf3b663a01c00a69643a5f7716eb7"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#aa02cf3b663a01c00a69643a5f7716eb7">FACILE_MIN_CACHEES</a> = 35</td></tr>
-<tr class="memitem:a37a7890a0e1a55e30fbff603bf26c06a" id="r_a37a7890a0e1a55e30fbff603bf26c06a"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a37a7890a0e1a55e30fbff603bf26c06a">FACILE_MOY_CACHEES</a> = (<a class="el" href="#aa02cf3b663a01c00a69643a5f7716eb7">FACILE_MIN_CACHEES</a> + <a class="el" href="#afe2ab64d30be20986a6999abcc8ce582">MOYEN_MIN_CACHEES</a>) / 2</td></tr>
-<tr class="memitem:a6a8a46e7c914e6a6a8d9bf2ae2030f01" id="r_a6a8a46e7c914e6a6a8d9bf2ae2030f01"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a6a8a46e7c914e6a6a8d9bf2ae2030f01">MAX_POSSIBILITES</a> = 40000</td></tr>
-<tr class="memitem:a4157184ed95baf8844fc9874c6a53afb" id="r_a4157184ed95baf8844fc9874c6a53afb"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a4157184ed95baf8844fc9874c6a53afb">MIN_POSSIBILITES</a> = 4800</td></tr>
-<tr class="memitem:af5574e4e6eb1ae83aed307a79473e897" id="r_af5574e4e6eb1ae83aed307a79473e897"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#af5574e4e6eb1ae83aed307a79473e897">MOYEN_MAX_CACHEES</a> = 50</td></tr>
-<tr class="memitem:afe2ab64d30be20986a6999abcc8ce582" id="r_afe2ab64d30be20986a6999abcc8ce582"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#afe2ab64d30be20986a6999abcc8ce582">MOYEN_MIN_CACHEES</a> = 45</td></tr>
-<tr class="memitem:a49db1430ceaaab842beb5cabda355b96" id="r_a49db1430ceaaab842beb5cabda355b96"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a49db1430ceaaab842beb5cabda355b96">MOYEN_MOY_CACHEES</a> = (<a class="el" href="#afe2ab64d30be20986a6999abcc8ce582">MOYEN_MIN_CACHEES</a> + <a class="el" href="#af5574e4e6eb1ae83aed307a79473e897">MOYEN_MAX_CACHEES</a>) / 2</td></tr>
+<tr class="memitem:af26248c2c6aa8c6c63b3bc157ab33fb8" id="r_af26248c2c6aa8c6c63b3bc157ab33fb8"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#af26248c2c6aa8c6c63b3bc157ab33fb8">DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS</a> = 300</td></tr>
+<tr class="memdesc:af26248c2c6aa8c6c63b3bc157ab33fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Durée maximale d'une recherche de configuration valide (fail safe) pour un essai donné.  <br /></td></tr>
+<tr class="memitem:a6d4062dcd109b1b2a2200dff31730a56" id="r_a6d4062dcd109b1b2a2200dff31730a56"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a6d4062dcd109b1b2a2200dff31730a56">MAX_ESSAIS_POUR_GENERATION_DE_GRILLE</a> = 10</td></tr>
+<tr class="memdesc:a6d4062dcd109b1b2a2200dff31730a56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de tentatives de génération globale avant abandon (sécurité récursion).  <br /></td></tr>
 <tr class="memitem:a5ea61aaddf6c0df94078865db51bc51e" id="r_a5ea61aaddf6c0df94078865db51bc51e"><td class="memItemLeft">static final int[][]&#160;</td><td class="memItemRight"><a class="el" href="#a5ea61aaddf6c0df94078865db51bc51e">NEIGHBORS</a> = new int[<a class="el" href="#a08af308416abf02bea7c3290f704f39a">NOMBRE_CASES</a>][20]</td></tr>
 <tr class="memdesc:a5ea61aaddf6c0df94078865db51bc51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Table de correspondance (Look-up Table) des voisins (Peers) pour chaque case.  <br /></td></tr>
 <tr class="memitem:a08af308416abf02bea7c3290f704f39a" id="r_a08af308416abf02bea7c3290f704f39a"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a08af308416abf02bea7c3290f704f39a">NOMBRE_CASES</a> = <a class="el" href="#a1770bd06a646ed63872568ce3f17817e">DIMENSION</a> * <a class="el" href="#a1770bd06a646ed63872568ce3f17817e">DIMENSION</a></td></tr>
 <tr class="memitem:a2d5f6ee38f6cfce49848aec5cb18dd45" id="r_a2d5f6ee38f6cfce49848aec5cb18dd45"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a2d5f6ee38f6cfce49848aec5cb18dd45">ORDRE</a> = 3</td></tr>
-<tr class="memitem:aabcd9d892e0cf01c93e417ab7c3c44ee" id="r_aabcd9d892e0cf01c93e417ab7c3c44ee"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#aabcd9d892e0cf01c93e417ab7c3c44ee">POURCENTAGE_MAX</a> = 100</td></tr>
 <tr class="memitem:a9b8bd941281b6f721a280a838ec16edc" id="r_a9b8bd941281b6f721a280a838ec16edc"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a9b8bd941281b6f721a280a838ec16edc">TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE</a> = 50000</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
@@ -236,14 +246,15 @@ Static Private Attributes</h2></td></tr>
 <p>Cette classe implémente un algorithme de backtracking optimisé utilisant :</p>
 <ul>
 <li>
-La propagation de contraintes (Constraint Propagation). (Exemple : Si vous placez un '5' dans une case, le '5' est immédiatement retiré des possibilités de toutes les 20 cases adjacentes.) </li>
+<b>La propagation de contraintes :</b> Réduction immédiate du domaine des cases adjacentes lors d'une affectation. </li>
 <li>
-L'heuristique MRV (Minimum Remaining Values) pour le choix des variables. (Exemple : Le solveur cherche en priorité la case vide qui n'a que 2 possibilités restantes, au lieu de la première case trouvée, pour forcer les échecs rapides.) </li>
+<b>L'heuristique MRV (Minimum Remaining Values) :</b> Priorisation des cases à plus faible entropie pour maximiser l'élagage de l'arbre de recherche. </li>
 <li>
-Des opérations bit à bit (Bitwise operations) pour la gestion des ensembles de valeurs. (Exemple : L'ensemble des 9 possibilités pour une case est stocké dans un seul entier au lieu d'un tableau de booléens, permettant des mises à jour ultra-rapides.) </li>
+<b>Opérations bit à bit :</b> Gestion des ensembles de possibilités via des masques binaires pour des performances accrues. </li>
 <li>
-Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (Exemple : Les 20 voisins d'une case donnée sont stockés dans le tableau statique 'NEIGHBORS' et sont accessibles instantanément sans calcul de coordonnées ni boucles.) </li>
+<b>Tables de pré-calcul (Look-up Tables) :</b> Accès instantané aux voisinages (NEIGHBORS) sans calcul de coordonnées. </li>
 </ul>
+<p>La génération de grilles repose sur une <b>recherche stochastique récursive</b>. Elle garantit l'<b>unicité absolue</b> de la solution et le respect d'un niveau de difficulté via un prédicat de validation. Le processus est sécurisé par un <b>watchdog temporel par itération</b> et un <b>limiteur de tentatives globales</b> (fail-safe) pour assurer la réactivité du système. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6fb68710cd31ac8edf6531a93d7c8db8" name="a6fb68710cd31ac8edf6531a93d7c8db8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6fb68710cd31ac8edf6531a93d7c8db8">&#9670;&#160;</a></span>GridMaster()</h2>
@@ -299,8 +310,8 @@ Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (
 
 </div>
 </div>
-<a id="a16dbf6442a962a93e5145430b587dc3d" name="a16dbf6442a962a93e5145430b587dc3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16dbf6442a962a93e5145430b587dc3d">&#9670;&#160;</a></span>addBoxNeighbors()</h2>
+<a id="a5248b7b6a995e1f92d53f39bd77dbf38" name="a5248b7b6a995e1f92d53f39bd77dbf38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5248b7b6a995e1f92d53f39bd77dbf38">&#9670;&#160;</a></span>addBoxNeighbors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +320,7 @@ Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.addBoxNeighbors </td>
+          <td class="memname">void fr.softsf.sudokufx.common.util.sudoku.GridMaster.addBoxNeighbors </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>, </td>
         </tr>
@@ -358,7 +369,6 @@ Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Le nouveau nombre de voisins après l'ajout des voisins de carré. </dd></dl>
 
 </div>
 </div>
@@ -458,6 +468,43 @@ Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (
 
 </div>
 </div>
+<a id="af2d45060700f699fc8517cdf138bc7c2" name="af2d45060700f699fc8517cdf138bc7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d45060700f699fc8517cdf138bc7c2">&#9670;&#160;</a></span>calculerValeurSuperieureDuSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default int fr.softsf.sudokufx.common.util.sudoku.GridMaster.calculerValeurSuperieureDuSegment </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a></td>          <td class="paramname"><span class="paramname"><em>bounds</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>current</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule la valeur supérieure du segment actuel en fonction du pas d'incrémentation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bounds</td><td>l'intervalle min/max du niveau </td></tr>
+    <tr><td class="paramname">current</td><td>la valeur de départ du segment </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>la borne supérieure calculée, bridée par le maximum de l'intervalle </dd></dl>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af2d45060700f699fc8517cdf138bc7c2_cgraph.svg" width="608" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a3f17ab078f894717a1f3dfaffed0b987" name="a3f17ab078f894717a1f3dfaffed0b987"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f17ab078f894717a1f3dfaffed0b987">&#9670;&#160;</a></span>choisirValeurAleatoire()</h2>
 
@@ -489,10 +536,10 @@ Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Une valeur choisie aléatoirement parmi les bits à 1. </dd></dl>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a3f17ab078f894717a1f3dfaffed0b987_cgraph.svg" width="259" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -514,25 +561,26 @@ Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (
 </div><div class="memdoc">
 
 <p>Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté spécifié. </p>
-<p>L'algorithme génère une grille complète, puis masque un nombre de cases ajusté pour satisfaire le niveau de difficulté (basé sur la somme des possibilités).</p>
+<p>L'algorithme génère une grille complète, puis applique un masquage stochastique jusqu'à satisfaire l'unicité de la solution et le prédicat de difficulté. *</p>
+<p><b>Sécurité et Fail-safe :</b> La génération est protégée par un watchdog temporel et une limite de tentatives récursives. En cas d'échec critique à générer une grille valide dans les limites imparties, une grille réinitialisée (vide) est retournée.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">niveau</td><td>Niveau de difficulté désiré : 1 (Facile), 2 (Moyen), 3 (Difficile). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Un enregistrement <code class="JavaDocCode">GrillesCrees</code> contenant la grille résolue, la grille à résoudre, et le pourcentage de difficulté estimé. </dd></dl>
-<p><b>Calibration de la difficulté :</b> Le niveau est calibré en ajustant le masquage des cases jusqu'à ce que la <b>somme des possibilités</b> (score de complexité interne) se situe dans la plage propre à chaque niveau. </p><dl class="exception"><dt>Exceptions</dt><dd>
+<dl class="section return"><dt>Returns</dt><dd>Un enregistrement <code class="JavaDocCode">GrillesCrees</code> contenant la grille résolue, la grille à résoudre, et le pourcentage de difficulté estimé (score de complexité). </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">IllegalArgumentException</td><td>si le niveau n'est pas compris entre 1 et 3. </td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af9f6b678d373391cd629f1ab2973b775_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af9f6b678d373391cd629f1ab2973b775_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -556,31 +604,31 @@ Des tables de pré-calcul (Look-up Tables) pour les voisinages et les masques. (
 <p>Les niveaux disponibles sont :</p>
 <ul>
 <li>
-<b>Facile (1)</b> : 35 à 45 cases cachées<br  />
+<b>Facile (1)</b> : 34 à 39 cases cachées<br  />
 <ul>
-<li>Possibilités théoriques : 0 à 13797<br  />
+<li>Possibilités théoriques : 0 à 11000<br  />
 </li>
-<li>Possibilités pratiques : 4800 à 16533 </li>
+<li>Possibilités pratiques : 4800 à 10500 </li>
 </ul>
 </li>
 <li>
-<b>Moyen (2)</b> : 45 à 49 cases cachées<br  />
+<b>Moyen (2)</b> : 39 à 44 cases cachées<br  />
 <ul>
-<li>Possibilités théoriques : 13797 à 27594<br  />
+<li>Possibilités théoriques : 11000 à 22000<br  />
 </li>
-<li>Possibilités pratiques : 16533 à 28266 </li>
+<li>Possibilités pratiques : 10500 à 12500 </li>
 </ul>
 </li>
 <li>
-<b>Difficile (3)</b> : 49 à 59 cases cachées<br  />
+<b>Difficile (3)</b> : 44 à 48 cases cachées<br  />
 <ul>
-<li>Possibilités théoriques : 27594 à 41391<br  />
+<li>Possibilités théoriques : 22000 à 33000<br  />
 </li>
-<li>Possibilités pratiques : 28266 à 40000 </li>
+<li>Possibilités pratiques : 12500 à 33000 </li>
 </ul>
 </li>
 </ul>
-<p>Le pourcentage de possibilités est calculé à partir de la plage 4800 (0%) à 40000 (100%), afin d’estimer la difficulté réelle de la grille générée.</p>
+<p>Le pourcentage de possibilités est calculé à partir de la plage 4800 (0%) à 33000 (100%), afin d’estimer la difficulté réelle de la grille générée.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">niveau</td><td>le niveau de difficulté à appliquer (1 à 3) </td></tr>
@@ -603,40 +651,12 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
   </table>
   </dd>
 </dl>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af9f6b678d373391cd629f1ab2973b775_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-
-</div>
-</div>
-<a id="aee57e1ea56d413431a806492e5bfa40f" name="aee57e1ea56d413431a806492e5bfa40f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee57e1ea56d413431a806492e5bfa40f">&#9670;&#160;</a></span>dureeEnMs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">long fr.softsf.sudokufx.common.util.sudoku.GridMaster.dureeEnMs </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en millisecondes. </p>
-<dl class="section return"><dt>Returns</dt><dd>Durée en millisecondes. </dd></dl>
 
 </div>
 </div>
@@ -685,8 +705,8 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 
 </div>
 </div>
-<a id="ad962ba16fc274782e22bdf56d85f71b1" name="ad962ba16fc274782e22bdf56d85f71b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad962ba16fc274782e22bdf56d85f71b1">&#9670;&#160;</a></span>genererGrilleAvecCasesCachees()</h2>
+<a id="af6461bfbf866d4c2ed591179e96eb56b" name="af6461bfbf866d4c2ed591179e96eb56b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6461bfbf866d4c2ed591179e96eb56b">&#9670;&#160;</a></span>genererGrilleAvecCasesCachees()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,11 +727,6 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>casesAPrecis</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>casesAMin</em></span>, </td>
         </tr>
         <tr>
@@ -722,7 +737,12 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IntPredicate</td>          <td class="paramname"><span class="paramname"><em>conditionValidation</em></span>&#160;)</td>
+          <td class="paramtype">IntPredicate</td>          <td class="paramname"><span class="paramname"><em>conditionValidation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>compteurEssais</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -732,32 +752,32 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 </table>
 </div><div class="memdoc">
 
-<p>Génère une grille de Sudoku avec un nombre de cases cachées selon les critères spécifiés. </p>
-<p>Le nombre de cases à cacher est sélectionné selon la durée écoulée depuis la dernière demande :</p>
+<p>Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté. </p>
+<p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation exhaustive via backtracking. Il itère jusqu'à ce que la <b>somme des possibilités</b> satisfasse le prédicat de difficulté. *</p>
+<p><b>Optimisations et Sécurités :</b></p>
 <ul>
 <li>
-<b>Si durée &lt; 500ms :</b> Utilisation d'une valeur précise (mode standard/prédictible). </li>
+<b>Watchdog :</b> Limite chaque essai à <code><a class="el" href="#af26248c2c6aa8c6c63b3bc157ab33fb8">DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS</a></code>. </li>
 <li>
-<b>Si durée &gt;= 500ms :</b> Utilisation d'une valeur aléatoire dans la plage [min, max] (mode variabilité/entropie). </li>
+<b>Récursion :</b> Relance une génération globale jusqu'à <code><a class="el" href="#a6d4062dcd109b1b2a2200dff31730a56">MAX_ESSAIS_POUR_GENERATION_DE_GRILLE</a></code>. </li>
 </ul>
-<p>L'algorithme boucle ensuite pour s'assurer que la somme des possibilités restante (difficulté) satisfait la condition de validation, avec un <em>fail safe</em> après 1000ms.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grilleResolue</td><td>La grille résolue à partir de laquelle les cases seront cachées. </td></tr>
-    <tr><td class="paramname">grilleAResoudre</td><td>La grille à résoudre, avec ses cases cachées (valeur à zéro). </td></tr>
-    <tr><td class="paramname">casesAPrecis</td><td>Nombre de cases à cacher si la durée est inférieure au minimum (valeur médiane). </td></tr>
-    <tr><td class="paramname">casesAMin</td><td>Nombre minimum de cases à cacher en mode aléatoire. </td></tr>
-    <tr><td class="paramname">casesAMax</td><td>Nombre maximum de cases à cacher en mode aléatoire. </td></tr>
-    <tr><td class="paramname">conditionValidation</td><td>Prédicat pour valider la somme des possibilités (le niveau de difficulté atteint). </td></tr>
+    <tr><td class="paramname">grilleResolue</td><td>La grille complète servant de base. </td></tr>
+    <tr><td class="paramname">grilleAResoudre</td><td>La structure de destination pour la grille à trous (modifiée). </td></tr>
+    <tr><td class="paramname">casesAMin</td><td>Borne inférieure (incluse) du nombre de cases à masquer. </td></tr>
+    <tr><td class="paramname">casesAMax</td><td>Borne supérieure (exclue) du nombre de cases à masquer. </td></tr>
+    <tr><td class="paramname">conditionValidation</td><td>Prédicat de validation de la difficulté. </td></tr>
+    <tr><td class="paramname">compteurEssais</td><td>Le numéro de la tentative actuelle pour le suivi récursif. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités dans la grille à résoudre. </dd></dl>
-<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités de la grille finale, ou -1 en cas d'échec. </dd></dl>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ad962ba16fc274782e22bdf56d85f71b1_cgraph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af6461bfbf866d4c2ed591179e96eb56b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -794,86 +814,56 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 </table>
 </div><div class="memdoc">
 
-<p>Génère une grille de Sudoku à résoudre en cachant des cases selon le niveau de difficulté spécifié. </p>
-<p>Cette méthode agit comme un dispatcheur, déléguant la logique de masquage aux méthodes spécifiques à chaque niveau getPossibilitesGrilleAResoudreXxx.</p>
-<p><b>Comportement temporel (mode prédictible/aléatoire) :</b> La sélection du nombre de cases à cacher utilise le temps écoulé <a class="el" href="#aee57e1ea56d413431a806492e5bfa40f" title="Calcule la durée de temps écoulé entre la dernière et la nouvelle demande de grille en millisecondes.">dureeEnMs()</a> depuis la dernière demande.</p>
-<ul>
-<li>
-Si la durée est <b>inférieure à 500ms</b> : un nombre de cases caché <b>précis</b> (médiane) est utilisé pour garantir une difficulté standard/prédictible. </li>
-<li>
-Si la durée est <b>supérieure ou égale à 500ms</b> : un nombre de cases caché <b>aléatoire</b> (entre min et max du niveau) est utilisé pour garantir la variabilité et l'entropie. </li>
-</ul>
+<p>Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté. </p>
+<p>Cette méthode fait office de dispatcheur vers les implémentations spécifiques (Facile, Moyen, Difficile). Le masquage est désormais purement stochastique, basé sur les plages de cellules à cacher définies pour chaque niveau.</p>
+<p><b>Gestion des échecs :</b> Si la génération échoue (difficulté non atteinte ou unicité non garantie après le nombre maximal d'essais), la méthode peut retourner une grille réinitialisée à zéro.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">niveau</td><td>Le niveau de difficulté : 1 (facile), 2 (moyen), 3 (difficile). </td></tr>
-    <tr><td class="paramname">grilleResolue</td><td>La grille résolue à partir de laquelle les cases seront cachées. </td></tr>
-    <tr><td class="paramname">grilleAResoudre</td><td>La grille à résoudre, avec ses cases cachées à 0. IMPORTANT : Ce tableau est modifié directement par la fonction. </td></tr>
+    <tr><td class="paramname">grilleResolue</td><td>La grille complète servant de référence pour le masquage. </td></tr>
+    <tr><td class="paramname">grilleAResoudre</td><td>Le tableau de destination qui recevra la grille à trous. <b>IMPORTANT :</b> Ce tableau est modifié par effet de bord. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>La somme du nombre de possibilités (score de complexité) pour la grille à résoudre. </dd></dl>
-<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités (score de difficulté) de la grille finale, ou -1 en cas d'échec critique de génération. </dd></dl>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a4ee8cc0d8a933568aeb12ca14f8ab649_cgraph.svg" width="100%" height="477"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a4ee8cc0d8a933568aeb12ca14f8ab649_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
-<a id="a0da08290853426fd59e6838c6baf7d62" name="a0da08290853426fd59e6838c6baf7d62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0da08290853426fd59e6838c6baf7d62">&#9670;&#160;</a></span>getMoyenMaxPossibilites()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getMoyenMaxPossibilites </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Récupère la borne supérieure de la somme des possibilités pour une grille de difficulté moyenne. </p>
-<p>Cette valeur est utilisée pour calibrer la génération des grilles :</p>
-<ul>
-<li>
-En dessous ou égal à ce seuil : Difficulté <b>Moyenne</b> (si supérieur au min). </li>
-<li>
-Au-dessus de ce seuil : Difficulté <b>Difficile</b>. </li>
-</ul>
-<p>La somme correspond à l'addition des valeurs entières des masques binaires de chaque case.</p>
-<dl class="section return"><dt>Returns</dt><dd>Le seuil maximal de possibilités pour le niveau moyen (par défaut 28266). </dd></dl>
-
-</div>
-</div>
-<a id="a33de6533af2bc2ab49cfc58c27084cdc" name="a33de6533af2bc2ab49cfc58c27084cdc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33de6533af2bc2ab49cfc58c27084cdc">&#9670;&#160;</a></span>getMoyenMinPossibilites()</h2>
+<a id="a409da4117c58966b842279006d9546dd" name="a409da4117c58966b842279006d9546dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a409da4117c58966b842279006d9546dd">&#9670;&#160;</a></span>getIntervallePourcentageNiveau()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getMoyenMinPossibilites </td>
+          <td class="memname">default <a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a> fr.softsf.sudokufx.common.util.sudoku.GridMaster.getIntervallePourcentageNiveau </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Récupère la borne inférieure de la somme des possibilités pour une grille de difficulté moyenne. </p>
-<p>Cette valeur est utilisée pour calibrer la génération des grilles :</p>
-<ul>
-<li>
-En dessous ou égal à ce seuil : Difficulté <b>Facile</b>. </li>
-<li>
-Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
-</ul>
-<p>La somme correspond à l'addition des valeurs entières des masques binaires de chaque case.</p>
-<dl class="section return"><dt>Returns</dt><dd>Le seuil minimal de possibilités pour le niveau moyen (par défaut 16533). </dd></dl>
+<p>Récupère l'intervalle de pourcentages autorisé pour un niveau de difficulté donné. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>le niveau de difficulté cible </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>un objet <code><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a></code> définissant le min et le max du niveau </dd></dl>
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a409da4117c58966b842279006d9546dd_cgraph.svg" width="582" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -908,10 +898,10 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Tableau des possibilités par case (511 = toutes possibilités). </dd></dl>
-<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_aeed90a968624e9b7ccb44958df9ae821_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -953,11 +943,11 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Somme des possibilités restantes dans la grille à résoudre. </dd></dl>
-<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_aa77557d49c6d3377a6409b74f6386595_cgraph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_aa77557d49c6d3377a6409b74f6386595_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -998,11 +988,11 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Somme des possibilités restantes dans la grille à résoudre. </dd></dl>
-<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a14a9157214a31a7be5f08c78c129a96d_cgraph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a14a9157214a31a7be5f08c78c129a96d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1043,11 +1033,11 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Somme des possibilités restantes dans la grille à résoudre. </dd></dl>
-<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ab77d72c8f1612e20c9d7b27f6869b08b_cgraph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ab77d72c8f1612e20c9d7b27f6869b08b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1094,46 +1084,38 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>La somme des possibilités après avoir caché des cases. </dd></dl>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a7b8b865b518ad50e3d77814a16bf9634_cgraph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
-<a id="af7a1c9df1f82cefc39447ed221fafd76" name="af7a1c9df1f82cefc39447ed221fafd76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7a1c9df1f82cefc39447ed221fafd76">&#9670;&#160;</a></span>getPourcentageDesPossibilites()</h2>
+<a id="a3307d58848c5c2f12ba5f33c2eb6ebb7" name="a3307d58848c5c2f12ba5f33c2eb6ebb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3307d58848c5c2f12ba5f33c2eb6ebb7">&#9670;&#160;</a></span>getPourcentageDepuisPossibilites()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPourcentageDesPossibilites </td>
+          <td class="memname">default int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPourcentageDepuisPossibilites </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>sommeDesPossibilites</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Calcule le pourcentage de possibilités estimé en fonction de la somme des possibilités. </p>
+<p>Calcule le pourcentage de difficultés basé sur la somme des possibilités. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">sommeDesPossibilites</td><td>La somme des possibilités. </td></tr>
+    <tr><td class="paramname">sommeDesPossibilites</td><td>La somme brute calculée. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Le pourcentage des possibilités, compris entre 0 et 100. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Le pourcentage entre 0 et 100. </dd></dl>
 
 </div>
 </div>
@@ -1172,10 +1154,10 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </table>
   </dd>
 </dl>
-<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a27aa242e0289c28db22cd6caa98aec06_cgraph.svg" width="556" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1257,10 +1239,10 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true si la grille est remplie avec succès, false sinon. </dd></dl>
-<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ae544691a2f6f2b54de8f88d3babcc221_cgraph.svg" width="627" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1297,10 +1279,10 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </table>
   </dd>
 </dl>
-<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ac7a6a027f90ee968f0be179797d663cf_cgraph.svg" width="303" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1335,11 +1317,11 @@ Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max). </li>
   </table>
   </dd>
 </dl>
-<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a94424450acb912e32c7548e6659b617a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a94424450acb912e32c7548e6659b617a_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -1404,10 +1386,10 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
   </table>
   </dd>
 </dl>
-<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a94424450acb912e32c7548e6659b617a_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1571,6 +1553,57 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
 
 </div>
 </div>
+<a id="aa3aa3945ebc4549be49be1e0c481f9da" name="aa3aa3945ebc4549be49be1e0c481f9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3aa3945ebc4549be49be1e0c481f9da">&#9670;&#160;</a></span>verifierUnicite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.verifierUnicite </td>
+          <td>(</td>
+          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grille</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>possibilites</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nbSolutions</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Vérifie l'unicité par backtracking en utilisant la propagation de contraintes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>État de la grille. </td></tr>
+    <tr><td class="paramname">possibilites</td><td>Masques de possibilités actuels. </td></tr>
+    <tr><td class="paramname">nbSolutions</td><td>Nombre de solutions trouvées. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Total de solutions (capé à 2). </dd></dl>
+<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_aa3aa3945ebc4549be49be1e0c481f9da_cgraph.svg" width="627" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="aff16f3999031e9e198457d1502ce52e1" name="aff16f3999031e9e198457d1502ce52e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff16f3999031e9e198457d1502ce52e1">&#9670;&#160;</a></span>ALL_POSSIBILITIES</h2>
@@ -1643,74 +1676,60 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
 
 </div>
 </div>
-<a id="aafd69742820af4b4d6352212598c40a4" name="aafd69742820af4b4d6352212598c40a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafd69742820af4b4d6352212598c40a4">&#9670;&#160;</a></span>derniereDemande</h2>
+<a id="ad0c0fed77312974e8ff34c6e54c96310" name="ad0c0fed77312974e8ff34c6e54c96310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c0fed77312974e8ff34c6e54c96310">&#9670;&#160;</a></span>DESIRED_POSSIBILITIES_STEP</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Instant fr.softsf.sudokufx.common.util.sudoku.GridMaster.derniereDemande = Instant.now()</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DESIRED_POSSIBILITIES_STEP = 10</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a395e4852c17ef149cfff3f7d38db91a3" name="a395e4852c17ef149cfff3f7d38db91a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a395e4852c17ef149cfff3f7d38db91a3">&#9670;&#160;</a></span>DIFFICILE_MAX_CACHEES</h2>
+<a id="a9428fe6c6bc8fe46f7d944ce277930e0" name="a9428fe6c6bc8fe46f7d944ce277930e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9428fe6c6bc8fe46f7d944ce277930e0">&#9670;&#160;</a></span>DIFFICILE_MAX_CACHEES</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DIFFICILE_MAX_CACHEES = 59</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DIFFICILE_MAX_CACHEES = 48</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a119f60876136e9b4d4929d0e8e2328ea" name="a119f60876136e9b4d4929d0e8e2328ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a119f60876136e9b4d4929d0e8e2328ea">&#9670;&#160;</a></span>DIFFICILE_MOY_CACHEES</h2>
+<a id="a231c75a32e16d525f90a38e75a995f29" name="a231c75a32e16d525f90a38e75a995f29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231c75a32e16d525f90a38e75a995f29">&#9670;&#160;</a></span>DIFFICILE_MAX_PERCENT</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DIFFICILE_MOY_CACHEES</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DIFFICILE_MAX_PERCENT = 100</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                       =</div>
-<div class="line">(<a class="code hl_variable" href="#af5574e4e6eb1ae83aed307a79473e897">MOYEN_MAX_CACHEES</a> + <a class="code hl_variable" href="#a395e4852c17ef149cfff3f7d38db91a3">DIFFICILE_MAX_CACHEES</a>) / 2</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_html_a395e4852c17ef149cfff3f7d38db91a3"><div class="ttname"><a href="#a395e4852c17ef149cfff3f7d38db91a3">fr.softsf.sudokufx.common.util.sudoku.GridMaster.DIFFICILE_MAX_CACHEES</a></div><div class="ttdeci">static final int DIFFICILE_MAX_CACHEES</div><div class="ttdef"><b>Definition</b> GridMaster.java:56</div></div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_html_af5574e4e6eb1ae83aed307a79473e897"><div class="ttname"><a href="#af5574e4e6eb1ae83aed307a79473e897">fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MAX_CACHEES</a></div><div class="ttdeci">static final int MOYEN_MAX_CACHEES</div><div class="ttdef"><b>Definition</b> GridMaster.java:54</div></div>
-</div><!-- fragment -->
+
+</div>
+</div>
+<a id="a3d7c66638db4adf7fc9a6bee7678bd48" name="a3d7c66638db4adf7fc9a6bee7678bd48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7c66638db4adf7fc9a6bee7678bd48">&#9670;&#160;</a></span>DIFFICILE_MIN_PERCENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DIFFICILE_MIN_PERCENT = 27</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 </div>
 </div>
 <a id="a1770bd06a646ed63872568ce3f17817e" name="a1770bd06a646ed63872568ce3f17817e"></a>
@@ -1735,8 +1754,8 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
 
 </div>
 </div>
-<a id="ac55736610813f2f42b04ec014ec59d6c" name="ac55736610813f2f42b04ec014ec59d6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac55736610813f2f42b04ec014ec59d6c">&#9670;&#160;</a></span>DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE</h2>
+<a id="af26248c2c6aa8c6c63b3bc157ab33fb8" name="af26248c2c6aa8c6c63b3bc157ab33fb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26248c2c6aa8c6c63b3bc157ab33fb8">&#9670;&#160;</a></span>DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1745,7 +1764,7 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DUREE_MAXIMALE_POUR_MASQUE_ALEATOIRE = 1000</td>
+          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS = 300</td>
         </tr>
       </table>
   </td>
@@ -1755,70 +1774,48 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
 </table>
 </div><div class="memdoc">
 
+<p>Durée maximale d'une recherche de configuration valide (fail safe) pour un essai donné. </p>
+
 </div>
 </div>
-<a id="ab4c72861c001247f81c9128b3b56c87e" name="ab4c72861c001247f81c9128b3b56c87e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4c72861c001247f81c9128b3b56c87e">&#9670;&#160;</a></span>DUREE_MAXIMALE_POUR_MASQUE_PRECIS</h2>
+<a id="a02492f82e3fb6f0400d7c0282633b4b1" name="a02492f82e3fb6f0400d7c0282633b4b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02492f82e3fb6f0400d7c0282633b4b1">&#9670;&#160;</a></span>FACILE_MAX_PERCENT</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.DUREE_MAXIMALE_POUR_MASQUE_PRECIS = 500</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.FACILE_MAX_PERCENT = 19</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa02cf3b663a01c00a69643a5f7716eb7" name="aa02cf3b663a01c00a69643a5f7716eb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa02cf3b663a01c00a69643a5f7716eb7">&#9670;&#160;</a></span>FACILE_MIN_CACHEES</h2>
+<a id="a088b9d222f9b0e98ac58029423809b2b" name="a088b9d222f9b0e98ac58029423809b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a088b9d222f9b0e98ac58029423809b2b">&#9670;&#160;</a></span>FACILE_MIN_CACHEES</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.FACILE_MIN_CACHEES = 35</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.FACILE_MIN_CACHEES = 34</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a37a7890a0e1a55e30fbff603bf26c06a" name="a37a7890a0e1a55e30fbff603bf26c06a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37a7890a0e1a55e30fbff603bf26c06a">&#9670;&#160;</a></span>FACILE_MOY_CACHEES</h2>
+<a id="a7bb60de1167c4b02affd7aa4520647ab" name="a7bb60de1167c4b02affd7aa4520647ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bb60de1167c4b02affd7aa4520647ab">&#9670;&#160;</a></span>FACILE_MIN_PERCENT</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.FACILE_MOY_CACHEES = (<a class="el" href="#aa02cf3b663a01c00a69643a5f7716eb7">FACILE_MIN_CACHEES</a> + <a class="el" href="#afe2ab64d30be20986a6999abcc8ce582">MOYEN_MIN_CACHEES</a>) / 2</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.FACILE_MIN_PERCENT = 0</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -1845,8 +1842,8 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
 
 </div>
 </div>
-<a id="a6a8a46e7c914e6a6a8d9bf2ae2030f01" name="a6a8a46e7c914e6a6a8d9bf2ae2030f01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a8a46e7c914e6a6a8d9bf2ae2030f01">&#9670;&#160;</a></span>MAX_POSSIBILITES</h2>
+<a id="a6d4062dcd109b1b2a2200dff31730a56" name="a6d4062dcd109b1b2a2200dff31730a56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4062dcd109b1b2a2200dff31730a56">&#9670;&#160;</a></span>MAX_ESSAIS_POUR_GENERATION_DE_GRILLE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1855,7 +1852,7 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MAX_POSSIBILITES = 40000</td>
+          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MAX_ESSAIS_POUR_GENERATION_DE_GRILLE = 10</td>
         </tr>
       </table>
   </td>
@@ -1865,92 +1862,118 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
 </table>
 </div><div class="memdoc">
 
+<p>Nombre de tentatives de génération globale avant abandon (sécurité récursion). </p>
+
 </div>
 </div>
-<a id="a4157184ed95baf8844fc9874c6a53afb" name="a4157184ed95baf8844fc9874c6a53afb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4157184ed95baf8844fc9874c6a53afb">&#9670;&#160;</a></span>MIN_POSSIBILITES</h2>
+<a id="afe3eae2686ac44293d7ddb11e483c3a6" name="afe3eae2686ac44293d7ddb11e483c3a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3eae2686ac44293d7ddb11e483c3a6">&#9670;&#160;</a></span>MAX_POSSIBILITES</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MIN_POSSIBILITES = 4800</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MAX_POSSIBILITES = 33000</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af5574e4e6eb1ae83aed307a79473e897" name="af5574e4e6eb1ae83aed307a79473e897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5574e4e6eb1ae83aed307a79473e897">&#9670;&#160;</a></span>MOYEN_MAX_CACHEES</h2>
+<a id="a779d0c96ca310fff99c2dbe6928b537c" name="a779d0c96ca310fff99c2dbe6928b537c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a779d0c96ca310fff99c2dbe6928b537c">&#9670;&#160;</a></span>MIN_POSSIBILITES</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MAX_CACHEES = 50</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MIN_POSSIBILITES = 4800</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="afe2ab64d30be20986a6999abcc8ce582" name="afe2ab64d30be20986a6999abcc8ce582"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe2ab64d30be20986a6999abcc8ce582">&#9670;&#160;</a></span>MOYEN_MIN_CACHEES</h2>
+<a id="a3faf3acf6c86e98dfeede721ec505295" name="a3faf3acf6c86e98dfeede721ec505295"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3faf3acf6c86e98dfeede721ec505295">&#9670;&#160;</a></span>MOYEN_MAX_CACHEES</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MIN_CACHEES = 45</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MAX_CACHEES = 44</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a49db1430ceaaab842beb5cabda355b96" name="a49db1430ceaaab842beb5cabda355b96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49db1430ceaaab842beb5cabda355b96">&#9670;&#160;</a></span>MOYEN_MOY_CACHEES</h2>
+<a id="a2f9346abf1f71b7335b3b6992311e991" name="a2f9346abf1f71b7335b3b6992311e991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9346abf1f71b7335b3b6992311e991">&#9670;&#160;</a></span>MOYEN_MAX_PERCENT</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MOY_CACHEES = (<a class="el" href="#afe2ab64d30be20986a6999abcc8ce582">MOYEN_MIN_CACHEES</a> + <a class="el" href="#af5574e4e6eb1ae83aed307a79473e897">MOYEN_MAX_CACHEES</a>) / 2</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MAX_PERCENT = 26</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9ca4fdf4156f6e09aac34b4cf7a2ab4" name="ae9ca4fdf4156f6e09aac34b4cf7a2ab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9ca4fdf4156f6e09aac34b4cf7a2ab4">&#9670;&#160;</a></span>MOYEN_MAX_POSSIBILITES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MAX_POSSIBILITES = 12500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad607678d0dab89c8c314ea0b8acfae0" name="aad607678d0dab89c8c314ea0b8acfae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad607678d0dab89c8c314ea0b8acfae0">&#9670;&#160;</a></span>MOYEN_MIN_CACHEES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MIN_CACHEES = 39</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad78b2a3fff02902fb5ac1a5e10fd3bf0" name="ad78b2a3fff02902fb5ac1a5e10fd3bf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad78b2a3fff02902fb5ac1a5e10fd3bf0">&#9670;&#160;</a></span>MOYEN_MIN_PERCENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MIN_PERCENT = 20</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa48618cce00173d13566be809279b4c1" name="aa48618cce00173d13566be809279b4c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48618cce00173d13566be809279b4c1">&#9670;&#160;</a></span>MOYEN_MIN_POSSIBILITES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.MOYEN_MIN_POSSIBILITES = 10500</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1965,7 +1988,7 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.moyenMaxPossibilites = 28266</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.moyenMaxPossibilites = <a class="el" href="#ae9ca4fdf4156f6e09aac34b4cf7a2ab4">MOYEN_MAX_POSSIBILITES</a></td>
         </tr>
       </table>
   </td>
@@ -1987,7 +2010,7 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.moyenMinPossibilites = 16533</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.moyenMinPossibilites = <a class="el" href="#aa48618cce00173d13566be809279b4c1">MOYEN_MIN_POSSIBILITES</a></td>
         </tr>
       </table>
   </td>
@@ -2069,24 +2092,16 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
 
 </div>
 </div>
-<a id="aabcd9d892e0cf01c93e417ab7c3c44ee" name="aabcd9d892e0cf01c93e417ab7c3c44ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabcd9d892e0cf01c93e417ab7c3c44ee">&#9670;&#160;</a></span>POURCENTAGE_MAX</h2>
+<a id="a8b9d6899ad3a6e547faa7819d63268eb" name="a8b9d6899ad3a6e547faa7819d63268eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b9d6899ad3a6e547faa7819d63268eb">&#9670;&#160;</a></span>POURCENTAGE_MAX</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.common.util.sudoku.GridMaster.POURCENTAGE_MAX = 100</td>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.POURCENTAGE_MAX = 100</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

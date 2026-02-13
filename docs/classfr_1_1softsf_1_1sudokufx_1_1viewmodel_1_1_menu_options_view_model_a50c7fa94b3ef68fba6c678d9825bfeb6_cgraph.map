@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init">
+<area shape="rect" id="Node000001" title="Initializes the menu options UI state for the current player, including:" alt="" coords="5,76,199,119"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a2a736732b455c4c2ad787f5e4a9a76da" title="Applies a background image to the specified GridPane and persists its path in the current player&#39;s op..." alt="" coords="256,31,518,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,82,240,77,241,82,200,87"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a3b1dee2b684cd6f89f245ff46623b8a5" title="Sets the background color of the GridPane and updates the ColorPicker based on the color value retrie..." alt="" coords="247,113,527,156"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="200,107,232,112,231,117,199,113"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker)." alt="" coords="581,5,837,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="517,44,565,39,566,44,518,49"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#add42eac8d6831cc853249da660b34e14" title="Persists the given image path in the current player&#39;s OptionsDto if it differs from the existing path..." alt="" coords="575,72,843,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="518,71,560,75,559,81,517,76"/>
+</map>

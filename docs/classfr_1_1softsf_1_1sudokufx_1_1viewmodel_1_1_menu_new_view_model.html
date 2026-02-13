@@ -138,7 +138,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a09fd30f08f8dd544cf2c7e73f0fe8190" id="r_a09fd30f08f8dd544cf2c7e73f0fe8190"><td class="memItemLeft">Task&lt; Boolean &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a09fd30f08f8dd544cf2c7e73f0fe8190">currentTask</a></td></tr>
+<tr class="memitem:a83cff91743a4a9c0d163d2cc9cdae925" id="r_a83cff91743a4a9c0d163d2cc9cdae925"><td class="memItemLeft">Task&lt; Boolean &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a83cff91743a4a9c0d163d2cc9cdae925">checkVersionTask</a></td></tr>
 <tr class="memitem:a9aa9e1895b0a8b9633eae73a84c6ceb2" id="r_a9aa9e1895b0a8b9633eae73a84c6ceb2"><td class="memItemLeft">final BooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#a9aa9e1895b0a8b9633eae73a84c6ceb2">isOutOfDate</a> = new SimpleBooleanProperty(false)</td></tr>
 <tr class="memitem:a82d76fa6b66a1cd0c014b65ce3ce1942" id="r_a82d76fa6b66a1cd0c014b65ce3ce1942"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a82d76fa6b66a1cd0c014b65ce3ce1942">maxiNewAccessibleText</a></td></tr>
 <tr class="memitem:ae55681e823ef6c160c8a0a6f91d13f09" id="r_ae55681e823ef6c160c8a0a6f91d13f09"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#ae55681e823ef6c160c8a0a6f91d13f09">maxiNewText</a></td></tr>
@@ -152,7 +152,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ViewModel for managing the "New" menu UI state, accessibility labels, and update status. </p>
 <p>Provides localized StringBindings for button texts, accessible texts, and tooltips for both maxi and mini "New" buttons.</p>
-<p>Checks asynchronously via <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub.">VersionService</a> if the application is up-to-date, exposing update status and related messages to the view.</p>
+<p>Checks asynchronously via <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" title="Service for checking if the application version is up to date by querying the GitHub API.">VersionService</a> if the application is up-to-date, exposing update status and related messages to the view.</p>
 <p>Uses the <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html" title="Singleton enum for internationalization (i18n) support.">I18n</a> singleton for localization with automatic updates on locale changes. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0fd457752b40e1cc02053e6485491b6f" name="a0fd457752b40e1cc02053e6485491b6f"></a>
@@ -369,8 +369,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a09fd30f08f8dd544cf2c7e73f0fe8190" name="a09fd30f08f8dd544cf2c7e73f0fe8190"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09fd30f08f8dd544cf2c7e73f0fe8190">&#9670;&#160;</a></span>currentTask</h2>
+<a id="a83cff91743a4a9c0d163d2cc9cdae925" name="a83cff91743a4a9c0d163d2cc9cdae925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83cff91743a4a9c0d163d2cc9cdae925">&#9670;&#160;</a></span>checkVersionTask</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +379,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Task&lt;Boolean&gt; fr.softsf.sudokufx.viewmodel.MenuNewViewModel.currentTask</td>
+          <td class="memname">Task&lt;Boolean&gt; fr.softsf.sudokufx.viewmodel.MenuNewViewModel.checkVersionTask</td>
         </tr>
       </table>
   </td>

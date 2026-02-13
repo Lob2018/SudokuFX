@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.saveSong" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.saveSong">
 <area shape="rect" id="Node000001" title="Saves the provided song file path to the database and shows a confirmation toast." alt="" coords="5,39,230,81"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker,..." alt="" coords="281,5,537,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker)." alt="" coords="281,5,537,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,45,265,40,265,46,230,50"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ae7dd86e7d7c9a04f00bbc8bffe97843b" title="Persists the audio file path (songPath) in the current player&#39;s options." alt="" coords="278,72,540,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,70,262,74,262,79,230,75"/>

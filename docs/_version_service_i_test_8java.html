@@ -106,11 +106,9 @@ $(function() {
   <div class="headertitle"><div class="title">VersionServiceITest.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import java.io.IOException;</code><br />
-<code>import java.net.http.HttpClient;</code><br />
+<div class="textblock"><code>import java.net.http.HttpClient;</code><br />
 <code>import java.net.http.HttpRequest;</code><br />
 <code>import java.net.http.HttpResponse;</code><br />
-<code>import java.util.concurrent.ExecutionException;</code><br />
 <code>import javafx.concurrent.Task;</code><br />
 <code>import org.junit.jupiter.api.AfterEach;</code><br />
 <code>import org.junit.jupiter.api.BeforeEach;</code><br />
@@ -118,7 +116,6 @@ $(function() {
 <code>import org.junit.jupiter.api.extension.ExtendWith;</code><br />
 <code>import org.junit.jupiter.params.ParameterizedTest;</code><br />
 <code>import org.junit.jupiter.params.provider.ValueSource;</code><br />
-<code>import org.mockito.ArgumentMatchers;</code><br />
 <code>import org.mockito.Mock;</code><br />
 <code>import org.mockito.Mockito;</code><br />
 <code>import org.mockito.MockitoAnnotations;</code><br />
@@ -127,9 +124,9 @@ $(function() {
 <code>import com.fasterxml.jackson.databind.ObjectMapper;</code><br />
 <code>import ch.qos.logback.classic.spi.ILoggingEvent;</code><br />
 <code>import ch.qos.logback.core.read.ListAppender;</code><br />
-<code>import fr.softsf.sudokufx.common.util.MyDateTime;</code><br />
 <code>import fr.softsf.sudokufx.config.JVMApplicationProperties;</code><br />
 <code>import fr.softsf.sudokufx.service.external.VersionService;</code><br />
+<code>import fr.softsf.sudokufx.service.ui.SpinnerService;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />
 <code>import org.mockito.ArgumentMatchers.any;</code><br />
 <code>import org.mockito.Mockito.*;</code><br />
@@ -152,14 +149,12 @@ Packages</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a9ac0b8c60706a61685430f3c12086b96" id="r_a9ac0b8c60706a61685430f3c12086b96"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a9ac0b8c60706a61685430f3c12086b96">fr.softsf.sudokufx.testing.integration.service.external.[instance initializer]</a></td></tr>
 <tr class="memitem:af47ba9e0d8410ef2ca7c414381da7d9e" id="r_af47ba9e0d8410ef2ca7c414381da7d9e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#af47ba9e0d8410ef2ca7c414381da7d9e">fr.softsf.sudokufx.testing.integration.service.external.cleanup</a> ()  throws Exception </td></tr>
-<tr class="memitem:a448b31954748b60131d3cf14421cdcd4" id="r_a448b31954748b60131d3cf14421cdcd4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a448b31954748b60131d3cf14421cdcd4">fr.softsf.sudokufx.testing.integration.service.external.compareVersions</a> (final String version1, final String version2)</td></tr>
-<tr class="memdesc:a448b31954748b60131d3cf14421cdcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two semantic versions (major.minor.patch).  <br /></td></tr>
 <tr class="memitem:a50ee706a9e5f07c3c5ecb856c80160bd" id="r_a50ee706a9e5f07c3c5ecb856c80160bd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a50ee706a9e5f07c3c5ecb856c80160bd">fr.softsf.sudokufx.testing.integration.service.external.eachSetup</a> ()</td></tr>
+<tr class="memitem:a5397e1aef357c582a75d975b8bf0f616" id="r_a5397e1aef357c582a75d975b8bf0f616"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a5397e1aef357c582a75d975b8bf0f616">fr.softsf.sudokufx.testing.integration.service.external.givenDifferentVersionOnGitHub_whenCheckLatestVersion_thenReturnsFalse</a> ()  throws Exception </td></tr>
 <tr class="memitem:ab0522c9757b12382a05587528519be61" id="r_ab0522c9757b12382a05587528519be61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#ab0522c9757b12382a05587528519be61">fr.softsf.sudokufx.testing.integration.service.external.givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue</a> ()  throws Exception </td></tr>
-<tr class="memitem:af34b3d17c1be8c6ab1baba0e98b640b2" id="r_af34b3d17c1be8c6ab1baba0e98b640b2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#af34b3d17c1be8c6ab1baba0e98b640b2">fr.softsf.sudokufx.testing.integration.service.external.givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue</a> (String onLineVersion)  throws ExecutionException, InterruptedException, IOException </td></tr>
 <tr class="memitem:aaa5f11a3752df14c0a8567ab0ba1a056" id="r_aaa5f11a3752df14c0a8567ab0ba1a056"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#aaa5f11a3752df14c0a8567ab0ba1a056">fr.softsf.sudokufx.testing.integration.service.external.givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError</a> ()  throws Exception </td></tr>
-<tr class="memitem:a47e1946073be3b18dc90f333adda98ae" id="r_a47e1946073be3b18dc90f333adda98ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a47e1946073be3b18dc90f333adda98ae">fr.softsf.sudokufx.testing.integration.service.external.givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue</a> (int httpStatusCode)  throws IOException, InterruptedException, ExecutionException </td></tr>
-<tr class="memitem:adb468afb55164996409f99430b084906" id="r_adb468afb55164996409f99430b084906"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#adb468afb55164996409f99430b084906">fr.softsf.sudokufx.testing.integration.service.external.givenRealCurrentVersion_whenCheckLatestVersion_thenCompareWithNearbyVersions</a> ()  throws Exception </td></tr>
+<tr class="memitem:a131fc2e2045c6d654723863b1050f134" id="r_a131fc2e2045c6d654723863b1050f134"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a131fc2e2045c6d654723863b1050f134">fr.softsf.sudokufx.testing.integration.service.external.givenMatchingVersionOnGitHub_whenCheckLatestVersion_thenReturnsTrue</a> ()  throws Exception </td></tr>
+<tr class="memitem:a47e1946073be3b18dc90f333adda98ae" id="r_a47e1946073be3b18dc90f333adda98ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a47e1946073be3b18dc90f333adda98ae">fr.softsf.sudokufx.testing.integration.service.external.givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue</a> (int httpStatusCode)  throws Exception </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -167,8 +162,8 @@ Variables</h2></td></tr>
 <tr class="memitem:a1b55bbaa4ddf33f7b2bdb8b128f303b8" id="r_a1b55bbaa4ddf33f7b2bdb8b128f303b8"><td class="memItemLeft">ListAppender&lt; ILoggingEvent &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a1b55bbaa4ddf33f7b2bdb8b128f303b8">fr.softsf.sudokufx.testing.integration.service.external.logWatcher</a></td></tr>
 <tr class="memitem:ae6dba74fe0a371da4d20e0edc6f981d7" id="r_ae6dba74fe0a371da4d20e0edc6f981d7"><td class="memItemLeft">HttpClient&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#ae6dba74fe0a371da4d20e0edc6f981d7">fr.softsf.sudokufx.testing.integration.service.external.mockHttpClient</a></td></tr>
 <tr class="memitem:a69fddfbb9d536f6c3c79165dc3cb59fe" id="r_a69fddfbb9d536f6c3c79165dc3cb59fe"><td class="memItemLeft">HttpResponse&lt; String &gt;&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a69fddfbb9d536f6c3c79165dc3cb59fe">fr.softsf.sudokufx.testing.integration.service.external.mockResponse</a></td></tr>
-<tr class="memitem:a083da94352913e14bf183e3957ae0e2d" id="r_a083da94352913e14bf183e3957ae0e2d"><td class="memItemLeft"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html">MyDateTime</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a083da94352913e14bf183e3957ae0e2d">fr.softsf.sudokufx.testing.integration.service.external.myDateTime</a></td></tr>
 <tr class="memitem:a7fef1f2128ab251935302ab0d01e02c8" id="r_a7fef1f2128ab251935302ab0d01e02c8"><td class="memItemLeft">final ObjectMapper&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a7fef1f2128ab251935302ab0d01e02c8">fr.softsf.sudokufx.testing.integration.service.external.objectMapper</a> = new ObjectMapper()</td></tr>
+<tr class="memitem:a400cc110c9c6e159853d3092abde7c36" id="r_a400cc110c9c6e159853d3092abde7c36"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a>&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a400cc110c9c6e159853d3092abde7c36">fr.softsf.sudokufx.testing.integration.service.external.spinnerService</a></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

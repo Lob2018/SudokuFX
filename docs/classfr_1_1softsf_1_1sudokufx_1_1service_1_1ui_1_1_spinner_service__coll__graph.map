@@ -1,0 +1,3 @@
+<map id="fr.softsf.sudokufx.service.ui.SpinnerService" name="fr.softsf.sudokufx.service.ui.SpinnerService">
+<area shape="rect" id="Node000001" title="A centralized service for managing the global loading state through a thread&#45;safe reference counter." alt="" coords="5,5,210,203"/>
+</map>

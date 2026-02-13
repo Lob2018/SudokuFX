@@ -729,7 +729,7 @@ Modifications made: Lob2018 - Portions of the logic and documentation adjusted f
 
 ===
 
-Lists of 110 third-party dependencies.
+Lists of 112 third-party dependencies.
      (ASF 2.0) Code Generation Library (cglib:cglib:3.1 - http://cglib.sourceforge.net/)
      (Eclipse Public License - v 1.0) (GNU Lesser General Public License) Logback Classic Module (ch.qos.logback:logback-classic:1.5.25 - http://logback.qos.ch/logback-classic)
      (Eclipse Public License - v 1.0) (GNU Lesser General Public License) Logback Core Module (ch.qos.logback:logback-core:1.5.25 - http://logback.qos.ch/logback-core)
@@ -737,8 +737,10 @@ Lists of 110 third-party dependencies.
      (The Apache Software License, Version 2.0) Jackson-annotations (com.fasterxml.jackson.core:jackson-annotations:2.20 - https://github.com/FasterXML/jackson)
      (The Apache Software License, Version 2.0) Jackson-core (com.fasterxml.jackson.core:jackson-core:2.20.2 - https://github.com/FasterXML/jackson-core)
      (The Apache Software License, Version 2.0) jackson-databind (com.fasterxml.jackson.core:jackson-databind:2.20.2 - https://github.com/FasterXML/jackson)
+     (GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1) SpotBugs Annotations (com.github.spotbugs:spotbugs-annotations:4.9.8 - https://spotbugs.github.io/)
      (The 3-Clause BSD License) Gluon Ignite Common (com.gluonhq:ignite-common:1.2.2 - http://gluonhq.com/open-source/ignite/)
      (The 3-Clause BSD License) Gluon Ignite Spring (com.gluonhq:ignite-spring:1.2.2 - http://gluonhq.com/open-source/ignite/)
+     (The Apache Software License, Version 2.0) FindBugs-jsr305 (com.google.code.findbugs:jsr305:3.0.2 - http://findbugs.sourceforge.net/)
      (The Apache Software License, Version 2.0) json-path (com.jayway.jsonpath:json-path:2.10.0 - https://github.com/jayway/JsonPath)
      (Eclipse Distribution License - v 1.0) istack common utility code runtime (com.sun.istack:istack-commons-runtime:4.1.2 - https://projects.eclipse.org/projects/ee4j/istack-commons/istack-commons-runtime)
      (Apache License 2.0) JSON library from Android SDK (com.vaadin.external.google:android-json:0.0.20131108.vaadin1 - http://developer.android.com/sdk)
@@ -770,7 +772,7 @@ Lists of 110 third-party dependencies.
      (Apache 2.0) Awaitility (org.awaitility:awaitility:4.3.0 - http://awaitility.org)
      (EDL 1.0) Angus Activation Registries (org.eclipse.angus:angus-activation:2.0.3 - https://github.com/eclipse-ee4j/angus-activation/angus-activation)
      (Apache License, Version 2.0) flyway-core (org.flywaydb:flyway-core:11.14.1 - https://flywaydb.org/flyway-core)
-     (Apache License, Version 2.0) flyway-database-hsqldb (org.flywaydb:flyway-database-hsqldb:11.20.2 - https://flywaydb.org/flyway-database-hsqldb)
+     (Apache License, Version 2.0) flyway-database-hsqldb (org.flywaydb:flyway-database-hsqldb:12.0.0 - https://flywaydb.org/flyway-database-hsqldb)
      (Eclipse Distribution License - v 1.0) JAXB Core (org.glassfish.jaxb:jaxb-core:4.0.6 - https://eclipse-ee4j.github.io/jaxb-ri/)
      (Eclipse Distribution License - v 1.0) JAXB Runtime (org.glassfish.jaxb:jaxb-runtime:4.0.6 - https://eclipse-ee4j.github.io/jaxb-ri/)
      (Eclipse Distribution License - v 1.0) TXW2 Runtime (org.glassfish.jaxb:txw2:4.0.6 - https://eclipse-ee4j.github.io/jaxb-ri/)

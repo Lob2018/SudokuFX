@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.handleAction" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.handleAction">
+<area shape="rect" id="Node000001" title="Processes input events to drive the iterative selection cycle or finalize level application." alt="" coords="5,155,243,197"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a329d9d8175dc720f37a7546dd4f980c9" title="Finalizes level selection and updates reactive state across view models." alt="" coords="296,5,520,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,152,211,105,249,80,289,58,303,52,305,56,292,62,252,84,214,109,152,156"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a5790fc56904861e9e5cfc4ce38c2d9a1" title="Resolves a button identifier to its corresponding difficulty level." alt="" coords="302,72,514,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="207,151,286,130,288,136,209,157"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#ae8d837dde8efce5e0b4187659b875767" title="Evaluates if the event corresponds to a selection finalization trigger." alt="" coords="293,155,522,197"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="243,173,277,173,277,179,243,179"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a316ee5b36c9bd2a7a05c8fe9f8f8791f" title="Evaluates if the event corresponds to a cycle initiation trigger." alt="" coords="291,221,525,264"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="218,195,300,215,299,220,217,201"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a6a5cd1051229e079639796c50abacd5b" title="Initiates the possibilities increment cycle after resetting the current state." alt="" coords="297,288,519,331"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="157,196,218,235,292,274,307,280,305,285,290,278,215,239,154,200"/>
+</map>

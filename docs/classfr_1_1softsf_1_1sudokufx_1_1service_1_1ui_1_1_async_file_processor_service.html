@@ -118,20 +118,23 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a50c735bc8d97d756fc79ca6f8bce87df" id="r_a50c735bc8d97d756fc79ca6f8bce87df"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a50c735bc8d97d756fc79ca6f8bce87df">AsyncFileProcessorService</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a> <a class="el" href="#ac0d8da287eb4006277550e0353e14736">toasterService</a>)</td></tr>
+<tr class="memitem:a79e9b2026e05e669877042bc5a234ba0" id="r_a79e9b2026e05e669877042bc5a234ba0"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a79e9b2026e05e669877042bc5a234ba0">AsyncFileProcessorService</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a> <a class="el" href="#ac0d8da287eb4006277550e0353e14736">toasterService</a>, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a> <a class="el" href="#a4ab1f9cfb7faaa7866ae172ecb9ea9a4">spinnerService</a>)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
-<tr class="memitem:aafdf3342f03468d7f4a8604f993fc2f1" id="r_aafdf3342f03468d7f4a8604f993fc2f1"><td class="memItemLeft">public&lt; T &gt; void&#160;</td><td class="memItemRight"><a class="el" href="#aafdf3342f03468d7f4a8604f993fc2f1">processFileAsync</a> (File selectedFile, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a> spinner, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess)</td></tr>
-<tr class="memdesc:aafdf3342f03468d7f4a8604f993fc2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a file-processing task asynchronously with spinner and toast feedback.  <br /></td></tr>
+<tr class="memitem:acedc5b1df76d009bd5ecd422fe7d70ed" id="r_acedc5b1df76d009bd5ecd422fe7d70ed"><td class="memItemLeft">private&lt; T &gt; Task&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acedc5b1df76d009bd5ecd422fe7d70ed">fileProcessingTask</a> (File file, Function&lt; File, T &gt; function, Consumer&lt; T &gt; successCallback)</td></tr>
+<tr class="memdesc:acedc5b1df76d009bd5ecd422fe7d70ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the file processing task with lifecycle overrides for optimal performance.  <br /></td></tr>
+<tr class="memitem:ad5894c5a6a0de2338807b24b1e331eba" id="r_ad5894c5a6a0de2338807b24b1e331eba"><td class="memItemLeft">public&lt; T &gt; void&#160;</td><td class="memItemRight"><a class="el" href="#ad5894c5a6a0de2338807b24b1e331eba">processFileAsync</a> (File selectedFile, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess)</td></tr>
+<tr class="memdesc:ad5894c5a6a0de2338807b24b1e331eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a file-processing task asynchronously with spinner and toast feedback.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:aa434577520d862e52f71b24617b5dc0a" id="r_aa434577520d862e52f71b24617b5dc0a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa434577520d862e52f71b24617b5dc0a">handleError</a> (Throwable ex, Consumer&lt; Runnable &gt; finishTask)</td></tr>
-<tr class="memdesc:aa434577520d862e52f71b24617b5dc0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles task errors by logging and showing a toast notification on the JavaFX thread.  <br /></td></tr>
+<tr class="memitem:aa4dad32003ec44fc20f2a7e504f76f16" id="r_aa4dad32003ec44fc20f2a7e504f76f16"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa4dad32003ec44fc20f2a7e504f76f16">handleError</a> (Throwable ex)</td></tr>
+<tr class="memdesc:aa4dad32003ec44fc20f2a7e504f76f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles task errors by logging and showing a toast notification.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
+<tr class="memitem:a4ab1f9cfb7faaa7866ae172ecb9ea9a4" id="r_a4ab1f9cfb7faaa7866ae172ecb9ea9a4"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4ab1f9cfb7faaa7866ae172ecb9ea9a4">spinnerService</a></td></tr>
 <tr class="memitem:ac0d8da287eb4006277550e0353e14736" id="r_ac0d8da287eb4006277550e0353e14736"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a>&#160;</td><td class="memItemRight"><a class="el" href="#ac0d8da287eb4006277550e0353e14736">toasterService</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
@@ -142,8 +145,8 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>Service to execute file-processing tasks asynchronously with JavaFX UI feedback. </p>
 <p>Displays a spinner and toast messages during task execution. Handles success and error reporting automatically on the JavaFX Application Thread. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a50c735bc8d97d756fc79ca6f8bce87df" name="a50c735bc8d97d756fc79ca6f8bce87df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50c735bc8d97d756fc79ca6f8bce87df">&#9670;&#160;</a></span>AsyncFileProcessorService()</h2>
+<a id="a79e9b2026e05e669877042bc5a234ba0" name="a79e9b2026e05e669877042bc5a234ba0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79e9b2026e05e669877042bc5a234ba0">&#9670;&#160;</a></span>AsyncFileProcessorService()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -151,8 +154,12 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.AsyncFileProcessorService </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a></td>          <td class="paramname"><span class="paramname"><em>toasterService</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a></td>          <td class="paramname"><span class="paramname"><em>toasterService</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a></td>          <td class="paramname"><span class="paramname"><em>spinnerService</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -160,8 +167,60 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aa434577520d862e52f71b24617b5dc0a" name="aa434577520d862e52f71b24617b5dc0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa434577520d862e52f71b24617b5dc0a">&#9670;&#160;</a></span>handleError()</h2>
+<a id="acedc5b1df76d009bd5ecd422fe7d70ed" name="acedc5b1df76d009bd5ecd422fe7d70ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acedc5b1df76d009bd5ecd422fe7d70ed">&#9670;&#160;</a></span>fileProcessingTask()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">private&lt; T &gt; Task&lt; T &gt; fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.fileProcessingTask </td>
+          <td>(</td>
+          <td class="paramtype">File</td>          <td class="paramname"><span class="paramname"><em>file</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Function&lt; File, T &gt;</td>          <td class="paramname"><span class="paramname"><em>function</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Consumer&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>successCallback</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instantiates the file processing task with lifecycle overrides for optimal performance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;T&gt;</td><td>result type </td></tr>
+    <tr><td class="paramname">file</td><td>file to process </td></tr>
+    <tr><td class="paramname">function</td><td>processing logic </td></tr>
+    <tr><td class="paramname">successCallback</td><td>UI thread success handler </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>configured Task instance </dd></dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_acedc5b1df76d009bd5ecd422fe7d70ed_cgraph.svg" width="608" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa4dad32003ec44fc20f2a7e504f76f16" name="aa4dad32003ec44fc20f2a7e504f76f16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4dad32003ec44fc20f2a7e504f76f16">&#9670;&#160;</a></span>handleError()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,12 +231,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.handleError </td>
           <td>(</td>
-          <td class="paramtype">Throwable</td>          <td class="paramname"><span class="paramname"><em>ex</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">Throwable</td>          <td class="paramname"><span class="paramname"><em>ex</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">Consumer&lt; Runnable &gt;</td>          <td class="paramname"><span class="paramname"><em>finishTask</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -187,19 +242,18 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Handles task errors by logging and showing a toast notification on the JavaFX thread. </p>
+<p>Handles task errors by logging and showing a toast notification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ex</td><td>the exception thrown by the task; must not be null </td></tr>
-    <tr><td class="paramname">finishTask</td><td>function to run code on the JavaFX Application Thread; must not be null </td></tr>
+    <tr><td class="paramname">ex</td><td>the exception thrown by the task </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aafdf3342f03468d7f4a8604f993fc2f1" name="aafdf3342f03468d7f4a8604f993fc2f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafdf3342f03468d7f4a8604f993fc2f1">&#9670;&#160;</a></span>processFileAsync()</h2>
+<a id="ad5894c5a6a0de2338807b24b1e331eba" name="ad5894c5a6a0de2338807b24b1e331eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5894c5a6a0de2338807b24b1e331eba">&#9670;&#160;</a></span>processFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,11 +265,6 @@ Static Private Attributes</h2></td></tr>
           <td class="memname">public&lt; T &gt; void fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.processFileAsync </td>
           <td>(</td>
           <td class="paramtype">File</td>          <td class="paramname"><span class="paramname"><em>selectedFile</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a></td>          <td class="paramname"><span class="paramname"><em>spinner</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -236,29 +285,20 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Executes a file-processing task asynchronously with spinner and toast feedback. </p>
-<p>Runs the task in a background thread. On success, the result is passed to <code class="JavaDocCode"><br/>
-onSuccess</code>. On failure, the error is logged and shown in a toast.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">&lt;T&gt;</td><td>the result type </td></tr>
     <tr><td class="paramname">selectedFile</td><td>the file to process; must not be null </td></tr>
-    <tr><td class="paramname">spinner</td><td>UI spinner to indicate progress; must not be null </td></tr>
     <tr><td class="paramname">taskFunction</td><td>function to process the file and return a result; must not be null </td></tr>
     <tr><td class="paramname">onSuccess</td><td>callback executed on the UI thread upon success; must not be null </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">NullPointerException</td><td>if any required parameter is null </td></tr>
-  </table>
-  </dd>
-</dl>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_aafdf3342f03468d7f4a8604f993fc2f1_cgraph.svg" width="544" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_ad5894c5a6a0de2338807b24b1e331eba_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -280,6 +320,28 @@ onSuccess</code>. On failure, the error is logged and shown in a toast.</p>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ab1f9cfb7faaa7866ae172ecb9ea9a4" name="a4ab1f9cfb7faaa7866ae172ecb9ea9a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ab1f9cfb7faaa7866ae172ecb9ea9a4">&#9670;&#160;</a></span>spinnerService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a> fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.spinnerService</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

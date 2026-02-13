@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistBackgroundImage" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistBackgroundImage">
+<area shape="rect" id="Node000001" title="Applies a background image to the specified GridPane and persists its path in the current player&#39;s op..." alt="" coords="5,31,267,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker)." alt="" coords="321,5,577,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,43,305,39,306,45,267,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#add42eac8d6831cc853249da660b34e14" title="Persists the given image path in the current player&#39;s OptionsDto if it differs from the existing path..." alt="" coords="315,72,583,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,71,299,75,299,80,267,77"/>
+</map>

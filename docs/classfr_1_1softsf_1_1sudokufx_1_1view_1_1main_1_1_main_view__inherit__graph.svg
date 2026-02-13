@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 419;
+var viewWidth = 514;
 var viewHeight = 1368;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,9 +59,9 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Main view class of the Sudoku application.">
-<polygon fill="#999999" stroke="none" points="411,-1236 0,-1236 0,0 411,0 411,-1236"/>
-<text text-anchor="start" x="142.5" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.main.</text>
-<text text-anchor="start" x="184.12" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainView</text>
+<polygon fill="#999999" stroke="none" points="505.5,-1236 0,-1236 0,0 505.5,0 505.5,-1236"/>
+<text text-anchor="start" x="189.75" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.main.</text>
+<text text-anchor="start" x="231.38" y="-1210.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainView</text>
 <text text-anchor="start" x="5.5" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ActiveMenuOrSubmenu</text>
 <text text-anchor="start" x="14" y="-1182.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel activeMenuOrSubmenuViewModel</text>
@@ -88,65 +88,65 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="5.5" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00">Timeline hideMiniMenuTimeline</text>
 <text text-anchor="start" x="5.5" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">VBox menuHidden</text>
-<text text-anchor="start" x="14" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 99 more...</text>
-<text text-anchor="start" x="5.5" y="-934.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-934.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int AUTO</text>
-<text text-anchor="start" x="14" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">_HIDE_MINI_MENU_DELAY_MS</text>
-<text text-anchor="start" x="5.5" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-906.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final PseudoClass</text>
-<text text-anchor="start" x="14" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00"> DIFFICULTY_LEVEL_PSEUDO</text>
-<text text-anchor="start" x="14" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SELECTED</text>
-<text text-anchor="start" x="5.5" y="-866.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-866.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="14" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="14" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="5.5" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-826.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="5.5" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-810.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAX</text>
-<text text-anchor="start" x="14" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00">_STARS_PERCENTAGE</text>
-<text text-anchor="start" x="5.5" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final PseudoClass</text>
-<text text-anchor="start" x="14" y="-770.5" font-family="Helvetica,sans-Serif" font-size="10.00"> OPAQUE_MODE_PSEUDO_SELECTED</text>
-<text text-anchor="start" x="5.5" y="-754.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-754.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final PseudoClass</text>
-<text text-anchor="start" x="14" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00"> REDUCED_SONG_PSEUDO_SELECTED</text>
-<text text-anchor="start" x="4" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainView(ActiveMenuOrSubmenu</text>
-<text text-anchor="start" x="14" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel activeMenuOrSubmenuView</text>
-<text text-anchor="start" x="14" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">Model, Coordinator coordinator,</text>
-<text text-anchor="start" x="14" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> HelpViewModel helpViewModel, MenuHidden</text>
-<text text-anchor="start" x="14" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel menuHiddenViewModel, MenuMiniViewModel</text>
-<text text-anchor="start" x="14" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuMiniViewModel, MenuLevelViewModel menuLevelViewModel,</text>
-<text text-anchor="start" x="14" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MenuMaxiViewModel menuMaxiViewModel, MenuPlayerViewModel</text>
-<text text-anchor="start" x="14" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuPlayerViewModel, MenuSaveViewModel menuSaveViewModel,</text>
-<text text-anchor="start" x="14" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MenuSolveViewModel menuSolveViewModel, MenuOptionsViewModel</text>
-<text text-anchor="start" x="14" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuOptionsViewModel, MenuNewViewModel menuNewViewModel, GridViewModel</text>
-<text text-anchor="start" x="14" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gridViewModel, AudioService audioService, FileChooserService fileChooserService,</text>
-<text text-anchor="start" x="14" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BindingConfigurator bindingConfigurator, GenericListViewFactory genericListViewFactory,</text>
-<text text-anchor="start" x="14" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterService toasterService)</text>
-<text text-anchor="start" x="4" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleDifficultLevel</text>
-<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">Show()</text>
+<text text-anchor="start" x="14" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">final LevelInteractionHandler</text>
+<text text-anchor="start" x="14" y="-954.5" font-family="Helvetica,sans-Serif" font-size="10.00"> levelInteractionHandler</text>
+<text text-anchor="start" x="14" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 101 more...</text>
+<text text-anchor="start" x="5.5" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-922.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int AUTO</text>
+<text text-anchor="start" x="14" y="-910.5" font-family="Helvetica,sans-Serif" font-size="10.00">_HIDE_MINI_MENU_DELAY_MS</text>
+<text text-anchor="start" x="5.5" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-894.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final PseudoClass</text>
+<text text-anchor="start" x="14" y="-882.5" font-family="Helvetica,sans-Serif" font-size="10.00"> DIFFICULTY_LEVEL_PSEUDO</text>
+<text text-anchor="start" x="14" y="-870.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SELECTED</text>
+<text text-anchor="start" x="5.5" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-854.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="14" y="-842.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="14" y="-830.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
+<text text-anchor="start" x="5.5" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-814.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="5.5" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-798.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAX</text>
+<text text-anchor="start" x="14" y="-786.5" font-family="Helvetica,sans-Serif" font-size="10.00">_STARS_PERCENTAGE</text>
+<text text-anchor="start" x="5.5" y="-770.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-770.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final PseudoClass</text>
+<text text-anchor="start" x="14" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00"> OPAQUE_MODE_PSEUDO_SELECTED</text>
+<text text-anchor="start" x="5.5" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final PseudoClass</text>
+<text text-anchor="start" x="14" y="-730.5" font-family="Helvetica,sans-Serif" font-size="10.00"> REDUCED_SONG_PSEUDO_SELECTED</text>
+<text text-anchor="start" x="4" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainView(ActiveMenuOrSubmenu</text>
+<text text-anchor="start" x="14" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel activeMenuOrSubmenuView</text>
+<text text-anchor="start" x="14" y="-690.5" font-family="Helvetica,sans-Serif" font-size="10.00">Model, Coordinator coordinator,</text>
+<text text-anchor="start" x="14" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00"> HelpViewModel helpViewModel, MenuHidden</text>
+<text text-anchor="start" x="14" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel menuHiddenViewModel, MenuMiniViewModel</text>
+<text text-anchor="start" x="14" y="-654.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuMiniViewModel, MenuLevelViewModel menuLevelViewModel,</text>
+<text text-anchor="start" x="14" y="-642.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MenuMaxiViewModel menuMaxiViewModel, MenuPlayerViewModel</text>
+<text text-anchor="start" x="14" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuPlayerViewModel, MenuSaveViewModel menuSaveViewModel,</text>
+<text text-anchor="start" x="14" y="-618.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MenuSolveViewModel menuSolveViewModel, MenuOptionsViewModel</text>
+<text text-anchor="start" x="14" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> menuOptionsViewModel, MenuNewViewModel menuNewViewModel, GridViewModel</text>
+<text text-anchor="start" x="14" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gridViewModel, AudioService audioService, FileChooserService fileChooserService,</text>
+<text text-anchor="start" x="14" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BindingConfigurator bindingConfigurator, GenericListViewFactory genericListViewFactory,</text>
+<text text-anchor="start" x="14" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterService toasterService, LevelInteractionHandler levelInteractionHandler, SpinnerService spinnerService)</text>
+<text text-anchor="start" x="4" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuBackupShow()</text>
 <text text-anchor="start" x="4" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleEasyLevelShow()</text>
+<text text-anchor="start" x="14" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuHelpShow()</text>
 <text text-anchor="start" x="4" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMediumLevelShow()</text>
-<text text-anchor="start" x="4" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuBackupShow()</text>
-<text text-anchor="start" x="4" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-490.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuHelpShow()</text>
-<text text-anchor="start" x="4" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuMaxiShow</text>
-<text text-anchor="start" x="14" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
+<text text-anchor="start" x="14" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuMaxiShow</text>
+<text text-anchor="start" x="14" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
+<text text-anchor="start" x="4" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuMiniShow()</text>
+<text text-anchor="start" x="4" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuNewShow()</text>
+<text text-anchor="start" x="4" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuOptionsShow()</text>
 <text text-anchor="start" x="4" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuMiniShow()</text>
+<text text-anchor="start" x="14" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuPlayerShow()</text>
 <text text-anchor="start" x="4" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuNewShow()</text>
+<text text-anchor="start" x="14" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuSolveShow()</text>
 <text text-anchor="start" x="4" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuOptionsShow()</text>
-<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 9 more...</text>
+<text text-anchor="start" x="14" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMute()</text>
+<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 6 more...</text>
 <text text-anchor="start" x="5.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">void activeMenuManagerInitialization()</text>
 <text text-anchor="start" x="5.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
@@ -185,11 +185,11 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-38.5" font-family="Helvetica,sans-Serif" font-size="10.00">ViewModel.ActiveMenu menuType)</text>
 <text text-anchor="start" x="5.5" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">void gridInitialization()</text>
-<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 21 more...</text>
-<polygon fill="#666666" stroke="#666666" points="0,-1206 0,-1206 411,-1206 411,-1206 0,-1206"/>
-<polygon fill="#666666" stroke="#666666" points="0,-738 0,-738 12,-738 12,-738 0,-738"/>
-<polygon fill="#666666" stroke="#666666" points="12,-738 12,-738 411,-738 411,-738 12,-738"/>
-<polygon fill="none" stroke="#666666" points="0,0 0,-1236 411,-1236 411,0 0,0"/>
+<text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 23 more...</text>
+<polygon fill="#666666" stroke="#666666" points="0,-1206 0,-1206 505.5,-1206 505.5,-1206 0,-1206"/>
+<polygon fill="#666666" stroke="#666666" points="0,-726 0,-726 12,-726 12,-726 0,-726"/>
+<polygon fill="#666666" stroke="#666666" points="12,-726 12,-726 505.5,-726 505.5,-726 12,-726"/>
+<polygon fill="none" stroke="#666666" points="0,0 0,-1236 505.5,-1236 505.5,0 0,0"/>
 </a>
 </g>
 </g>
@@ -197,17 +197,17 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" target="_top" xlink:title="Interface defining method to open the main stage.">
-<polygon fill="white" stroke="none" points="292.38,-1360 118.62,-1360 118.62,-1272 292.38,-1272 292.38,-1360"/>
-<text text-anchor="start" x="122.62" y="-1346.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.</text>
-<text text-anchor="start" x="182.62" y="-1334.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainView</text>
-<text text-anchor="start" x="204" y="-1318.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="122.94" y="-1302.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="133.25" y="-1302.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="133.25" y="-1290.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
-<text text-anchor="start" x="133.25" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
-<polygon fill="#666666" stroke="#666666" points="118.62,-1330 118.62,-1330 292.38,-1330 292.38,-1330 118.62,-1330"/>
-<polygon fill="#666666" stroke="#666666" points="118.62,-1314 118.62,-1314 292.38,-1314 292.38,-1314 118.62,-1314"/>
-<polygon fill="none" stroke="#666666" points="118.62,-1272 118.62,-1360 292.38,-1360 292.38,-1272 118.62,-1272"/>
+<polygon fill="white" stroke="none" points="339.62,-1360 165.88,-1360 165.88,-1272 339.62,-1272 339.62,-1360"/>
+<text text-anchor="start" x="169.88" y="-1346.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.</text>
+<text text-anchor="start" x="229.88" y="-1334.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainView</text>
+<text text-anchor="start" x="251.25" y="-1318.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="170.19" y="-1302.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="180.5" y="-1302.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="180.5" y="-1290.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
+<text text-anchor="start" x="180.5" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
+<polygon fill="#666666" stroke="#666666" points="165.88,-1330 165.88,-1330 339.62,-1330 339.62,-1330 165.88,-1330"/>
+<polygon fill="#666666" stroke="#666666" points="165.88,-1314 165.88,-1314 339.62,-1314 339.62,-1314 165.88,-1314"/>
+<polygon fill="none" stroke="#666666" points="165.88,-1272 165.88,-1360 339.62,-1360 339.62,-1272 165.88,-1272"/>
 </a>
 </g>
 </g>
@@ -215,8 +215,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M205.5,-1260.84C205.5,-1253.21 205.5,-1244.9 205.5,-1235.98"/>
-<polygon fill="none" stroke="#63b8ff" points="202,-1260.74 205.5,-1270.74 209,-1260.74 202,-1260.74"/>
+<path fill="none" stroke="#63b8ff" d="M252.75,-1260.84C252.75,-1253.21 252.75,-1244.9 252.75,-1235.98"/>
+<polygon fill="none" stroke="#63b8ff" points="249.25,-1260.74 252.75,-1270.74 256.25,-1260.74 249.25,-1260.74"/>
 </a>
 </g>
 </g>

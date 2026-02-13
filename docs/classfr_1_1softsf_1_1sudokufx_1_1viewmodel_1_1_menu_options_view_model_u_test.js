@@ -15,7 +15,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_tes
     [ "colorPicker", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#a0584ed64e577b34bbc1ccc52cfa30c43", null ],
     [ "optionsService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#a1bf2d5fc4a47d3f7969e84857ebc8f2d", null ],
     [ "originalLocale", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#ae810e664b7d80a16a0b64bc6786f1c1e", null ],
-    [ "spinnerMock", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#a023753ac5385d5b83065d208d74603ba", null ],
     [ "sudokuFX", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#af6a7b16c424376ef0fc26d611daa72cd", null ],
     [ "toasterService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#ad86a565eb775eeec5863a551c792a14a", null ],
     [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#ab3658008b5d5497555eb972a16e53b55", null ]

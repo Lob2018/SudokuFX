@@ -1,7 +1,5 @@
 <map id="fr.softsf.sudokufx.service.external.VersionService.checkLatestVersion" name="fr.softsf.sudokufx.service.external.VersionService.checkLatestVersion">
-<area shape="rect" id="Node000001" title="Checks if the current application version is up&#45;to&#45;date by querying the GitHub API." alt="" coords="5,5,232,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#ab930aa0e6a148933c50de5ae9038bc96" title="Parses the JSON response from the GitHub API to extract the latest published version." alt="" coords="280,5,503,48"/>
+<area shape="rect" id="Node000001" title="Checks if the current application version matches the latest release on GitHub." alt="" coords="5,5,232,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#ab930aa0e6a148933c50de5ae9038bc96" title="Parses the GitHub API JSON response to identify the latest version tag." alt="" coords="280,5,503,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,24,264,24,264,29,232,29"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a67496982422db94de8447dbf0c46a410" title="Compares two version strings in the format MAJOR.MINOR.PATCH (e.g., &quot;1.2.3&quot;)." alt="" coords="551,5,774,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="503,24,536,24,536,29,503,29"/>
 </map>

@@ -115,14 +115,12 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a9ac0b8c60706a61685430f3c12086b96" id="r_a9ac0b8c60706a61685430f3c12086b96"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a9ac0b8c60706a61685430f3c12086b96">[instance initializer]</a></td></tr>
 <tr class="memitem:af47ba9e0d8410ef2ca7c414381da7d9e" id="r_af47ba9e0d8410ef2ca7c414381da7d9e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af47ba9e0d8410ef2ca7c414381da7d9e">cleanup</a> ()  throws Exception </td></tr>
-<tr class="memitem:a448b31954748b60131d3cf14421cdcd4" id="r_a448b31954748b60131d3cf14421cdcd4"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a448b31954748b60131d3cf14421cdcd4">compareVersions</a> (final String version1, final String version2)</td></tr>
-<tr class="memdesc:a448b31954748b60131d3cf14421cdcd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two semantic versions (major.minor.patch).  <br /></td></tr>
 <tr class="memitem:a50ee706a9e5f07c3c5ecb856c80160bd" id="r_a50ee706a9e5f07c3c5ecb856c80160bd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50ee706a9e5f07c3c5ecb856c80160bd">eachSetup</a> ()</td></tr>
+<tr class="memitem:a5397e1aef357c582a75d975b8bf0f616" id="r_a5397e1aef357c582a75d975b8bf0f616"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5397e1aef357c582a75d975b8bf0f616">givenDifferentVersionOnGitHub_whenCheckLatestVersion_thenReturnsFalse</a> ()  throws Exception </td></tr>
 <tr class="memitem:ab0522c9757b12382a05587528519be61" id="r_ab0522c9757b12382a05587528519be61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab0522c9757b12382a05587528519be61">givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue</a> ()  throws Exception </td></tr>
-<tr class="memitem:af34b3d17c1be8c6ab1baba0e98b640b2" id="r_af34b3d17c1be8c6ab1baba0e98b640b2"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af34b3d17c1be8c6ab1baba0e98b640b2">givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue</a> (String onLineVersion)  throws ExecutionException, InterruptedException, IOException </td></tr>
 <tr class="memitem:aaa5f11a3752df14c0a8567ab0ba1a056" id="r_aaa5f11a3752df14c0a8567ab0ba1a056"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaa5f11a3752df14c0a8567ab0ba1a056">givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError</a> ()  throws Exception </td></tr>
-<tr class="memitem:a47e1946073be3b18dc90f333adda98ae" id="r_a47e1946073be3b18dc90f333adda98ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a47e1946073be3b18dc90f333adda98ae">givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue</a> (int httpStatusCode)  throws IOException, InterruptedException, ExecutionException </td></tr>
-<tr class="memitem:adb468afb55164996409f99430b084906" id="r_adb468afb55164996409f99430b084906"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adb468afb55164996409f99430b084906">givenRealCurrentVersion_whenCheckLatestVersion_thenCompareWithNearbyVersions</a> ()  throws Exception </td></tr>
+<tr class="memitem:a131fc2e2045c6d654723863b1050f134" id="r_a131fc2e2045c6d654723863b1050f134"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a131fc2e2045c6d654723863b1050f134">givenMatchingVersionOnGitHub_whenCheckLatestVersion_thenReturnsTrue</a> ()  throws Exception </td></tr>
+<tr class="memitem:a47e1946073be3b18dc90f333adda98ae" id="r_a47e1946073be3b18dc90f333adda98ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a47e1946073be3b18dc90f333adda98ae">givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue</a> (int httpStatusCode)  throws Exception </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -130,8 +128,8 @@ Variables</h2></td></tr>
 <tr class="memitem:a1b55bbaa4ddf33f7b2bdb8b128f303b8" id="r_a1b55bbaa4ddf33f7b2bdb8b128f303b8"><td class="memItemLeft">ListAppender&lt; ILoggingEvent &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1b55bbaa4ddf33f7b2bdb8b128f303b8">logWatcher</a></td></tr>
 <tr class="memitem:ae6dba74fe0a371da4d20e0edc6f981d7" id="r_ae6dba74fe0a371da4d20e0edc6f981d7"><td class="memItemLeft">HttpClient&#160;</td><td class="memItemRight"><a class="el" href="#ae6dba74fe0a371da4d20e0edc6f981d7">mockHttpClient</a></td></tr>
 <tr class="memitem:a69fddfbb9d536f6c3c79165dc3cb59fe" id="r_a69fddfbb9d536f6c3c79165dc3cb59fe"><td class="memItemLeft">HttpResponse&lt; String &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a69fddfbb9d536f6c3c79165dc3cb59fe">mockResponse</a></td></tr>
-<tr class="memitem:a083da94352913e14bf183e3957ae0e2d" id="r_a083da94352913e14bf183e3957ae0e2d"><td class="memItemLeft"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html">MyDateTime</a>&#160;</td><td class="memItemRight"><a class="el" href="#a083da94352913e14bf183e3957ae0e2d">myDateTime</a></td></tr>
 <tr class="memitem:a7fef1f2128ab251935302ab0d01e02c8" id="r_a7fef1f2128ab251935302ab0d01e02c8"><td class="memItemLeft">final ObjectMapper&#160;</td><td class="memItemRight"><a class="el" href="#a7fef1f2128ab251935302ab0d01e02c8">objectMapper</a> = new ObjectMapper()</td></tr>
+<tr class="memitem:a400cc110c9c6e159853d3092abde7c36" id="r_a400cc110c9c6e159853d3092abde7c36"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a400cc110c9c6e159853d3092abde7c36">spinnerService</a></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a9ac0b8c60706a61685430f3c12086b96" name="a9ac0b8c60706a61685430f3c12086b96"></a>
@@ -181,45 +179,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a448b31954748b60131d3cf14421cdcd4" name="a448b31954748b60131d3cf14421cdcd4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a448b31954748b60131d3cf14421cdcd4">&#9670;&#160;</a></span>compareVersions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fr.softsf.sudokufx.testing.integration.service.external.compareVersions </td>
-          <td>(</td>
-          <td class="paramtype">final String</td>          <td class="paramname"><span class="paramname"><em>version1</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">final String</td>          <td class="paramname"><span class="paramname"><em>version2</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compares two semantic versions (major.minor.patch). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">version1</td><td>the first version </td></tr>
-    <tr><td class="paramname">version2</td><td>the second version </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>negative if version1 &lt; version2, positive if version1 &gt; version2, zero if equal </dd></dl>
-
-</div>
-</div>
 <a id="a50ee706a9e5f07c3c5ecb856c80160bd" name="a50ee706a9e5f07c3c5ecb856c80160bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50ee706a9e5f07c3c5ecb856c80160bd">&#9670;&#160;</a></span>eachSetup()</h2>
 
@@ -234,6 +193,31 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5397e1aef357c582a75d975b8bf0f616" name="a5397e1aef357c582a75d975b8bf0f616"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5397e1aef357c582a75d975b8bf0f616">&#9670;&#160;</a></span>givenDifferentVersionOnGitHub_whenCheckLatestVersion_thenReturnsFalse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenDifferentVersionOnGitHub_whenCheckLatestVersion_thenReturnsFalse </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
         </tr>
       </table>
   </td>
@@ -270,31 +254,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="af34b3d17c1be8c6ab1baba0e98b640b2" name="af34b3d17c1be8c6ab1baba0e98b640b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af34b3d17c1be8c6ab1baba0e98b640b2">&#9670;&#160;</a></span>givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenInvalidGitHubVersions_whenCheckLatestVersion_thenLatestVersionTrue </td>
-          <td>(</td>
-          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>onLineVersion</em></span></td><td>)</td>
-          <td> throws ExecutionException, InterruptedException, IOException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aaa5f11a3752df14c0a8567ab0ba1a056" name="aaa5f11a3752df14c0a8567ab0ba1a056"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa5f11a3752df14c0a8567ab0ba1a056">&#9670;&#160;</a></span>givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError()</h2>
 
@@ -306,6 +265,31 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a131fc2e2045c6d654723863b1050f134" name="a131fc2e2045c6d654723863b1050f134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a131fc2e2045c6d654723863b1050f134">&#9670;&#160;</a></span>givenMatchingVersionOnGitHub_whenCheckLatestVersion_thenReturnsTrue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenMatchingVersionOnGitHub_whenCheckLatestVersion_thenReturnsTrue </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> throws Exception</td>
@@ -333,31 +317,6 @@ Variables</h2></td></tr>
           <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>httpStatusCode</em></span></td><td>)</td>
-          <td> throws IOException, InterruptedException, ExecutionException</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adb468afb55164996409f99430b084906" name="adb468afb55164996409f99430b084906"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb468afb55164996409f99430b084906">&#9670;&#160;</a></span>givenRealCurrentVersion_whenCheckLatestVersion_thenCompareWithNearbyVersions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenRealCurrentVersion_whenCheckLatestVersion_thenCompareWithNearbyVersions </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> throws Exception</td>
         </tr>
       </table>
@@ -459,28 +418,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a083da94352913e14bf183e3957ae0e2d" name="a083da94352913e14bf183e3957ae0e2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a083da94352913e14bf183e3957ae0e2d">&#9670;&#160;</a></span>myDateTime</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html">MyDateTime</a> fr.softsf.sudokufx.testing.integration.service.external.myDateTime</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7fef1f2128ab251935302ab0d01e02c8" name="a7fef1f2128ab251935302ab0d01e02c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7fef1f2128ab251935302ab0d01e02c8">&#9670;&#160;</a></span>objectMapper</h2>
 
@@ -492,6 +429,28 @@ Variables</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">final ObjectMapper fr.softsf.sudokufx.testing.integration.service.external.objectMapper = new ObjectMapper()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a400cc110c9c6e159853d3092abde7c36" name="a400cc110c9c6e159853d3092abde7c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a400cc110c9c6e159853d3092abde7c36">&#9670;&#160;</a></span>spinnerService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a> fr.softsf.sudokufx.testing.integration.service.external.spinnerService</td>
         </tr>
       </table>
   </td>

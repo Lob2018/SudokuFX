@@ -1,8 +1,10 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,1248,256,1461"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" title="Service for checking if the application version is up to date by querying GitHub." alt="" coords="24,5,237,384"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,384,125,456,120,816,125,1176,127,1231,121,1232,119,1176,114,816,119,456,121,384"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status." alt="" coords="232,456,456,1176"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="198,383,229,473,224,475,193,385"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,1130,216,1177,191,1233,186,1231,211,1175,230,1128"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1517,256,1731"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" title="Service for checking if the application version is up to date by querying the GitHub API." alt="" coords="24,275,237,653"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,653,125,725,120,1085,125,1445,127,1501,121,1501,119,1445,114,1085,119,725,121,653"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html" title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status." alt="" coords="232,725,464,1445"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="199,652,228,735,223,737,194,654"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html" title="A centralized service for managing the global loading state through a thread&#45;safe reference counter." alt="" coords="28,5,233,203"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,203,133,258,128,258,128,203"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,1402,216,1446,191,1503,186,1501,211,1444,229,1400"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.resetSongPath" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.resetSongPath">
 <area shape="rect" id="Node000001" title="Resets the song path by clearing the current selection, persisting the change, and showing a toast no..." alt="" coords="5,39,258,81"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker,..." alt="" coords="309,5,565,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker)." alt="" coords="309,5,565,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="258,44,293,40,294,45,258,49"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ae7dd86e7d7c9a04f00bbc8bffe97843b" title="Persists the audio file path (songPath) in the current player&#39;s options." alt="" coords="306,72,568,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="258,71,291,75,290,80,258,76"/>

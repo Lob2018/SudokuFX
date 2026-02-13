@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,261,311,1061"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" title="Abstract base test class that provides:" alt="" coords="48,5,268,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,228,161,262,156,262,156,228"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,261,248,901"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" title="Abstract base test class that provides:" alt="" coords="17,5,237,213"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,228,130,262,124,262,124,228"/>
 </map>

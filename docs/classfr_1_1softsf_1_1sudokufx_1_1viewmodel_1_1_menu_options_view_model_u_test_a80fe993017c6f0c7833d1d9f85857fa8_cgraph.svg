@@ -70,7 +70,7 @@ var sectionId = 'dynsection-2';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a343e123b20fa7fa3fcd1ef9173d58546" target="_top" xlink:title="Applies a background image to the specified GridPane and persists its path in the current player&#39;s op...">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a2a736732b455c4c2ad787f5e4a9a76da" target="_top" xlink:title="Applies a background image to the specified GridPane and persists its path in the current player&#39;s op...">
 <polygon fill="white" stroke="#666666" points="631.88,-94 435.88,-94 435.88,-50 631.88,-50 631.88,-94"/>
 <text text-anchor="start" x="443.88" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="443.88" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.applyAndPersist</text>
@@ -90,7 +90,7 @@ var sectionId = 'dynsection-2';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4b32cc6e6b373a8728d66455c2baa4bf" target="_top" xlink:title="Initializes the menu options UI state for the current player, including:">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a50c7fa94b3ef68fba6c678d9825bfeb6" target="_top" xlink:title="Initializes the menu options UI state for the current player, including:">
 <polygon fill="white" stroke="#666666" points="392.75,-44 247.75,-44 247.75,-12 392.75,-12 392.75,-44"/>
 <text text-anchor="start" x="255.75" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="320.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.init</text>
@@ -109,7 +109,7 @@ var sectionId = 'dynsection-2';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" target="_top" xlink:title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker,...">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" target="_top" xlink:title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker).">
 <polygon fill="white" stroke="#666666" points="871.75,-113 679.5,-113 679.5,-81 871.75,-81 871.75,-113"/>
 <text text-anchor="start" x="687.5" y="-99.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="775.62" y="-87.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.checkInitialized</text>

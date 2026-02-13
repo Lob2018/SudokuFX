@@ -46,6 +46,7 @@ var namespacefr_1_1softsf_1_1sudokufx =
           [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui" ]
         ] ],
         [ "view", null, [
+          [ "main", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main" ],
           [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util" ]
         ] ],
         [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel" ]

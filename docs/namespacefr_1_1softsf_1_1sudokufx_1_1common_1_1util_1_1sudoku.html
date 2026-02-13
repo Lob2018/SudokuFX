@@ -123,6 +123,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad9235162514fff9999f723bb791d4da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record representing the result of solving a Sudoku grid.  <br /></td></tr>
 <tr class="memitem:ac3d62f66e8acd5749e3037a6ad06f21e" id="r_ac3d62f66e8acd5749e3037a6ad06f21e"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="#ac3d62f66e8acd5749e3037a6ad06f21e">GrillesCrees</a> ( @Nonnull @NotNull(message=&quot;grilleResolue must not be null&quot;) @Size(min=81, max=81, message=&quot;grilleResolue must contain exactly 81 elements&quot;) int[] grilleResolue, @Nonnull @NotNull(message=&quot;grilleAResoudre must not be null&quot;) @Size(min=81, max=81, message=&quot;grilleAResoudre must contain exactly 81 elements&quot;) int[] grilleAResoudre, @Min(value=0, message=&quot;pourcentageDesPossibilites must be &gt;= 0&quot;) @Max(value=100, message=&quot;pourcentageDesPossibilites must be &lt;= 100&quot;) int pourcentageDesPossibilites)</td></tr>
 <tr class="memdesc:ac3d62f66e8acd5749e3037a6ad06f21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record representing the result of a grid generation: the solved grid, the puzzle grid, and the estimated possibility percentage.  <br /></td></tr>
+<tr class="memitem:adc44f4bbb0133e984077a0acaf24cf55" id="r_adc44f4bbb0133e984077a0acaf24cf55"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a> (int min, int max)</td></tr>
+<tr class="memdesc:adc44f4bbb0133e984077a0acaf24cf55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immutable container for level-specific possibility boundaries.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="ad9235162514fff9999f723bb791d4da1" name="ad9235162514fff9999f723bb791d4da1"></a>
@@ -200,6 +202,36 @@ Functions</h2></td></tr>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_ac3d62f66e8acd5749e3037a6ad06f21e_cgraph.svg" width="259" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="adc44f4bbb0133e984077a0acaf24cf55" name="adc44f4bbb0133e984077a0acaf24cf55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc44f4bbb0133e984077a0acaf24cf55">&#9670;&#160;</a></span>LevelPossibilityBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">record fr.softsf.sudokufx.common.util.sudoku.LevelPossibilityBounds </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>min</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>max</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Immutable container for level-specific possibility boundaries. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>the lower bound of the current level </td></tr>
+    <tr><td class="paramname">max</td><td>the upper bound of the current level </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

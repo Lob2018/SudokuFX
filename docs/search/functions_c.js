@@ -1,7 +1,7 @@
 var searchData=
 [
   ['main_0',['main',['../classfr_1_1softsf_1_1sudokufx_1_1_launcher.html#ac4c24ccb3aefac6c14a27ef47a2040d3',1,'fr.softsf.sudokufx.Launcher.main()'],['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aba1c3ad97432396d58d7f157ddaa0e4d',1,'fr.softsf.sudokufx.SudoMain.main()']]],
-  ['mainview_1',['MainView',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ab9a4f05ef470acd72f6322e24973fc37',1,'fr::softsf::sudokufx::view::main::MainView']]],
+  ['mainview_1',['MainView',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ab5c712bd4804a0a64fd34fb5089a1368',1,'fr::softsf::sudokufx::view::main::MainView']]],
   ['mapgamedtotogame_2',['mapGameDtoToGame',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_mapper.html#aa5f8fb2beb4108410b6885b101c8d5aa',1,'fr::softsf::sudokufx::common::interfaces::mapper::IGameMapper']]],
   ['mapgameleveldtotogamelevel_3',['mapGameLevelDtoToGameLevel',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#a2a2b7d205c721098b375d9bd27d6ebcb',1,'fr::softsf::sudokufx::common::interfaces::mapper::IGameLevelMapper']]],
   ['mapgameleveltodto_4',['mapGameLevelToDto',['../interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html#aff19ddebfdc48309c6741aac2a721efe',1,'fr::softsf::sudokufx::common::interfaces::mapper::IGameLevelMapper']]],

@@ -18,6 +18,7 @@ var searchData=
   ['validateplayerlanguage_15',['validatePlayerLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0',1,'fr::softsf::sudokufx::model::Player']]],
   ['validateupdatedat_16',['validateUpdatedAt',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a516b5c422b3c8945a39d4351db9fc9f8',1,'fr.softsf.sudokufx.model.Game.validateUpdatedAt()'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54',1,'fr.softsf.sudokufx.model.Player.validateUpdatedAt()']]],
   ['verifiequechaquevaleurestunepossibilite_17',['verifieQueChaqueValeurEstUnePossibilite',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9f77177ae439a5e7b1cfa0394be13ae8',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
-  ['verifygrid_18',['verifyGrid',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
-  ['versionservice_19',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a3c4cf250cecf7d339823859b02e9e2b9',1,'fr::softsf::sudokufx::service::external::VersionService']]]
+  ['verifierunicite_18',['verifierUnicite',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa3aa3945ebc4549be49be1e0c481f9da',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
+  ['verifygrid_19',['verifyGrid',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
+  ['versionservice_20',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a7917ee24ca79bc7cf9b3ac92c2b3aabb',1,'fr::softsf::sudokufx::service::external::VersionService']]]
 ];

@@ -19,8 +19,10 @@ var searchData=
   ['nombre_5fcases_16',['NOMBRE_CASES',['../classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#a3ee3fc9c5c27f6bc22de6c55981d07e8',1,'fr.softsf.sudokufx.benchmark.BenchGridMaster.NOMBRE_CASES'],['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a08af308416abf02bea7c3290f704f39a',1,'fr.softsf.sudokufx.common.util.sudoku.GridMaster.NOMBRE_CASES']]],
   ['none_17',['NONE',['../enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#acefcfe5de1c118296760eb4b610c5a4e',1,'fr::softsf::sudokufx::viewmodel::ActiveMenuOrSubmenuViewModel::ActiveMenu']]],
   ['normalizeinput_18',['normalizeInput',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33',1,'fr::softsf::sudokufx::viewmodel::grid::GridCellViewModel']]],
-  ['numberutils_19',['NumberUtils',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html',1,'fr::softsf::sudokufx::common::util::math']]],
-  ['numberutils_2ejava_20',['NumberUtils.java',['../_number_utils_8java.html',1,'']]],
-  ['numberutilsutest_21',['NumberUtilsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util::math']]],
-  ['numberutilsutest_2ejava_22',['NumberUtilsUTest.java',['../_number_utils_u_test_8java.html',1,'']]]
+  ['notifylevelpossibilitybounds_19',['notifyLevelPossibilityBounds',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a5118c47e6bc8b75240c8e2c16131e339',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
+  ['notifyuser_20',['notifyUser',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a9dfb9544ddbf4ffb4d55f31edf1590b7',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]],
+  ['numberutils_21',['NumberUtils',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html',1,'fr::softsf::sudokufx::common::util::math']]],
+  ['numberutils_2ejava_22',['NumberUtils.java',['../_number_utils_8java.html',1,'']]],
+  ['numberutilsutest_23',['NumberUtilsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util::math']]],
+  ['numberutilsutest_2ejava_24',['NumberUtilsUTest.java',['../_number_utils_u_test_8java.html',1,'']]]
 ];

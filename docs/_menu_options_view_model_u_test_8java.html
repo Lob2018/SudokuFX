@@ -108,6 +108,8 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>import java.io.File;</code><br />
 <code>import java.lang.reflect.Field;</code><br />
+<code>import java.util.concurrent.CountDownLatch;</code><br />
+<code>import java.util.concurrent.TimeUnit;</code><br />
 <code>import java.util.function.Consumer;</code><br />
 <code>import java.util.stream.Stream;</code><br />
 <code>import java.util.*;</code><br />
@@ -132,7 +134,6 @@ $(function() {
 <code>import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;</code><br />
 <code>import fr.softsf.sudokufx.service.ui.AudioService;</code><br />
 <code>import fr.softsf.sudokufx.service.ui.ToasterService;</code><br />
-<code>import fr.softsf.sudokufx.view.component.SpinnerGridPane;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />
 <code>import org.mockito.Mockito.*;</code><br />

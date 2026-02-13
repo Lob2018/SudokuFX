@@ -180,6 +180,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Requests the removal of the currently displayed toast. </p>
+<p>Thread-safe via Platform.runLater.</p>
 <p>This triggers the <code><a class="el" href="#a4f24da0b7a93ee5b66111c673dbf2f61">removeToastRequestProperty()</a></code> listener in the UI to remove the toast. </p>
 
 </div>
@@ -217,6 +218,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire even if identical to the previous value. </p>
+<p>Thread-safe via Platform.runLater.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">visibleText</td><td>The text displayed in the toast </td></tr>

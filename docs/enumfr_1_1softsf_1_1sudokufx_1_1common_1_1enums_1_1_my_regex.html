@@ -143,7 +143,7 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a61699365f8c6a077b23d5926fc3fd35e" id="r_a61699365f8c6a077b23d5926fc3fd35e"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#a61699365f8c6a077b23d5926fc3fd35e">SPECIAL_CHARACTERS</a> = &quot;@#$%^&amp;()!&quot;</td></tr>
 <tr class="memdesc:a61699365f8c6a077b23d5926fc3fd35e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allowed special characters for password validation.  <br /></td></tr>
 <tr class="memitem:a55b0df40733e282ef94b9c3f137c4825" id="r_a55b0df40733e282ef94b9c3f137c4825"><td class="memItemLeft">static final Pattern&#160;</td><td class="memItemRight"><a class="el" href="#a55b0df40733e282ef94b9c3f137c4825">VERSION_PATTERN</a></td></tr>
-<tr class="memdesc:a55b0df40733e282ef94b9c3f137c4825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precompiled regex pattern for semantic versioning (e.g., X.Y.Z format).  <br /></td></tr>
+<tr class="memdesc:a55b0df40733e282ef94b9c3f137c4825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precompiled regex pattern for semantic versioning (supports X.Y.Z or X.Y.Z.W formats).  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class for managing and validating text against precompiled regular expressions. </p>
@@ -434,10 +434,11 @@ Includes at least 2 special characters from <code class="JavaDocCode">@#$%^&amp;
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">                                     =</div>
-<div class="line">Pattern.compile(<span class="stringliteral">&quot;^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$&quot;</span>)</div>
+<div class="line">Pattern.compile(</div>
+<div class="line">        <span class="stringliteral">&quot;^(0|[1-9]\\d{0,8})\\.(0|[1-9]\\d{0,8})\\.(0|[1-9]\\d{0,8})(?:\\.(0|[1-9]\\d{0,8}))?$&quot;</span>)</div>
 </div><!-- fragment -->
-<p>Precompiled regex pattern for semantic versioning (e.g., X.Y.Z format). </p>
-<p>Requirements: - Major, minor, and patch versions must be non-negative integers. - Each version component must be separated by a '.' character. </p>
+<p>Precompiled regex pattern for semantic versioning (supports X.Y.Z or X.Y.Z.W formats). </p>
+<p>Requirements: - 3 or 4 numeric components separated by dots. - Each component: 1 to 9 digits (prevents Integer overflow and UI breakage). - Leading zeros are forbidden (except for the digit '0' itself). - Total string length is naturally constrained by segment limits. </p>
 
 </div>
 </div>

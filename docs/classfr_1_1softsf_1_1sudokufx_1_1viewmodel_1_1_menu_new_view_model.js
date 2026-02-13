@@ -10,7 +10,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model =
     [ "newAccessibleTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ac797f09c3891a7667ddf246c15bf36cb", null ],
     [ "newTooltipProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#a9a47f3cef3d973876e93e5faf9f3f24c", null ],
     [ "statusMessageProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ab4294d431b70ef61e3bc773e1863d955", null ],
-    [ "currentTask", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#a09fd30f08f8dd544cf2c7e73f0fe8190", null ],
+    [ "checkVersionTask", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#a83cff91743a4a9c0d163d2cc9cdae925", null ],
     [ "isOutOfDate", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#a9aa9e1895b0a8b9633eae73a84c6ceb2", null ],
     [ "maxiNewAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#a82d76fa6b66a1cd0c014b65ce3ce1942", null ],
     [ "maxiNewText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ae55681e823ef6c160c8a0a6f91d13f09", null ],

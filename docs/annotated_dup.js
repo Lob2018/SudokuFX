@@ -136,6 +136,7 @@ var annotated_dup =
               [ "AsyncFileProcessorService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service" ],
               [ "AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service" ],
               [ "FileChooserService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service" ],
+              [ "SpinnerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service" ],
               [ "ToasterService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service" ]
             ] ]
           ] ],
@@ -205,6 +206,9 @@ var annotated_dup =
                 ] ]
               ] ],
               [ "view", null, [
+                [ "main", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main.html", [
+                  [ "LevelInteractionHandlerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test" ]
+                ] ],
                 [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util.html", [
                   [ "BindingConfiguratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test" ],
                   [ "GenericListViewFactoryUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test" ]
@@ -239,6 +243,7 @@ var annotated_dup =
               [ "SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane" ]
             ] ],
             [ "main", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1main.html", [
+              [ "LevelInteractionHandler", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler" ],
               [ "MainView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view" ]
             ] ],
             [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1util.html", [

@@ -1,8 +1,14 @@
 var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test =
 [
+    [ "givenDifficultLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#af14ffcc2f9d0e1976fc12bbb6a235513", null ],
+    [ "givenEasyLevel_whenIncrementDesiredPossibilities_thenCyclesCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a3c55e30ed102973b006a41180713884a", null ],
     [ "givenFilledGrid_whenClearGrid_thenAllCellsAreZero", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a07542e62276c3629ad805724d27d1bd2", null ],
     [ "givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a45659fa03e7694bbd1c051da3b865485", null ],
+    [ "givenInitialState_whenResetDesiredPossibilities_thenValueIsDefault", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a1e3f6fdebd17b15b2e4c122a243989d5", null ],
+    [ "givenLevel_whenNotifyLevelPossibilityBounds_thenToasterServiceIsCalled", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#aa7f389fb7521567944783015392712da", null ],
     [ "givenListWithNullElement_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a48bc3185ff996ac91c4374adac55b870", null ],
+    [ "givenMediumLevel_whenIncrementDesiredPossibilities_thenStartsAtMediumMin", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a3e5a1f9a135deb7a822814cd05ef0f77", null ],
+    [ "givenModifiedState_whenResetDesiredPossibilities_thenReturnsDefaultValue", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a5161b5d62b08b347351a1141ca07f104", null ],
     [ "givenNullLevel_whenSetCurrentGridWithLevel_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a941defce8e4552d9e12fbb0bb4998f89", null ],
     [ "givenNullValues_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#aad131c9fecce1bd53e4699f218e7000f", null ],
     [ "givenPlayerWithCompletedGrid_whenGridIsComplete_thenToastTriggered", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a5cb8de8d368daea64311f64f0b98f1db", null ],

@@ -150,6 +150,8 @@ var hierarchy =
     [ "fr.softsf.sudokufx.config.JVMApplicationProperties", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html", null ],
     [ "fr.softsf.sudokufx.config.JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html", null ],
     [ "fr.softsf.sudokufx.Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", null ],
+    [ "fr.softsf.sudokufx.view.main.LevelInteractionHandler", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.view.main.LevelInteractionHandlerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html", null ],
     [ "ListCell", null, [
       [ "fr.softsf.sudokufx.view.component.list.GenericDtoListCell< T >", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html", null ]
     ] ],
@@ -230,6 +232,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.model.GameUTest.SetterTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_setter_tests.html", null ],
     [ "fr.softsf.sudokufx.model.OptionsUTest.SetterTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test_1_1_setter_tests.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerUTest.SetterTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_setter_tests.html", null ],
+    [ "fr.softsf.sudokufx.service.ui.SpinnerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html", null ],
     [ "fr.softsf.sudokufx.common.util.SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.StopOperationsTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_stop_operations_tests.html", null ],

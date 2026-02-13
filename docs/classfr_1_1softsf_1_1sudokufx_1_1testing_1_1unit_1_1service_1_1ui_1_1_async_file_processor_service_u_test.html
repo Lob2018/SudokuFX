@@ -117,10 +117,9 @@ $(function() {
 Package Functions</h2></td></tr>
 <tr class="memitem:a495701798c0d68cf2befec01f113e75e" id="r_a495701798c0d68cf2befec01f113e75e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a495701798c0d68cf2befec01f113e75e">givenNullFile_whenProcessFileAsync_thenThrowsNullPointerException</a> ()</td></tr>
 <tr class="memitem:a1787e7628d8804cc5c5bf00f4ad00c55" id="r_a1787e7628d8804cc5c5bf00f4ad00c55"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1787e7628d8804cc5c5bf00f4ad00c55">givenNullOnSuccess_whenProcessFileAsync_thenThrowsNullPointerException</a> ()</td></tr>
-<tr class="memitem:a54d08e12cb66e33d68df270cc625e8ae" id="r_a54d08e12cb66e33d68df270cc625e8ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a54d08e12cb66e33d68df270cc625e8ae">givenNullSpinner_whenProcessFileAsync_thenThrowsNullPointerException</a> ()</td></tr>
 <tr class="memitem:a9b6245195e7c80b142d112bc86a27b09" id="r_a9b6245195e7c80b142d112bc86a27b09"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b6245195e7c80b142d112bc86a27b09">givenNullTaskFunction_whenProcessFileAsync_thenThrowsNullPointerException</a> ()</td></tr>
 <tr class="memitem:a60b320f1811b0b7284601b5b8ab17a4d" id="r_a60b320f1811b0b7284601b5b8ab17a4d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a60b320f1811b0b7284601b5b8ab17a4d">givenValidFile_whenProcessFileAsync_thenDoesNotBlockCallingThread</a> ()</td></tr>
-<tr class="memitem:af096c41cd014adedef14df7464e26c74" id="r_af096c41cd014adedef14df7464e26c74"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af096c41cd014adedef14df7464e26c74">givenValidFile_whenProcessFileAsync_thenShowsSpinnerAndInfoToast</a> ()</td></tr>
+<tr class="memitem:af7b00a3f9661b9f816ff4643e90ae6e6" id="r_af7b00a3f9661b9f816ff4643e90ae6e6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af7b00a3f9661b9f816ff4643e90ae6e6">givenValidFile_whenProcessFileAsync_thenShowsInfoToast</a> ()</td></tr>
 <tr class="memitem:a550a011a79f7a1a2e28e3aa748443f59" id="r_a550a011a79f7a1a2e28e3aa748443f59"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a550a011a79f7a1a2e28e3aa748443f59">setUp</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -130,6 +129,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abb30f7de6314673be99fb25c77c97336" id="r_abb30f7de6314673be99fb25c77c97336"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html">SpinnerGridPane</a>&#160;</td><td class="memItemRight"><a class="el" href="#abb30f7de6314673be99fb25c77c97336">mockSpinner</a></td></tr>
 <tr class="memitem:aa7f75b175ef76a7093cc7b992fe10671" id="r_aa7f75b175ef76a7093cc7b992fe10671"><td class="memItemLeft">Function&lt; File, String &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aa7f75b175ef76a7093cc7b992fe10671">mockTaskFunction</a></td></tr>
 <tr class="memitem:af73c326a173156d518fdbf82ce969bdd" id="r_af73c326a173156d518fdbf82ce969bdd"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a>&#160;</td><td class="memItemRight"><a class="el" href="#af73c326a173156d518fdbf82ce969bdd">service</a></td></tr>
+<tr class="memitem:a1d2e8efce6cc62e62388be792f6bb053" id="r_a1d2e8efce6cc62e62388be792f6bb053"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a1d2e8efce6cc62e62388be792f6bb053">spinnerService</a></td></tr>
 <tr class="memitem:aa3f943d53737ccd29ffe9c88ee216e85" id="r_aa3f943d53737ccd29ffe9c88ee216e85"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa3f943d53737ccd29ffe9c88ee216e85">toasterService</a></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
@@ -169,31 +169,6 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest.givenNullOnSuccess_whenProcessFileAsync_thenThrowsNullPointerException </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a54d08e12cb66e33d68df270cc625e8ae" name="a54d08e12cb66e33d68df270cc625e8ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54d08e12cb66e33d68df270cc625e8ae">&#9670;&#160;</a></span>givenNullSpinner_whenProcessFileAsync_thenThrowsNullPointerException()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest.givenNullSpinner_whenProcessFileAsync_thenThrowsNullPointerException </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -258,8 +233,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af096c41cd014adedef14df7464e26c74" name="af096c41cd014adedef14df7464e26c74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af096c41cd014adedef14df7464e26c74">&#9670;&#160;</a></span>givenValidFile_whenProcessFileAsync_thenShowsSpinnerAndInfoToast()</h2>
+<a id="af7b00a3f9661b9f816ff4643e90ae6e6" name="af7b00a3f9661b9f816ff4643e90ae6e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b00a3f9661b9f816ff4643e90ae6e6">&#9670;&#160;</a></span>givenValidFile_whenProcessFileAsync_thenShowsInfoToast()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +243,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest.givenValidFile_whenProcessFileAsync_thenShowsSpinnerAndInfoToast </td>
+          <td class="memname">void fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest.givenValidFile_whenProcessFileAsync_thenShowsInfoToast </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -408,6 +383,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a> fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest.service</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1d2e8efce6cc62e62388be792f6bb053" name="a1d2e8efce6cc62e62388be792f6bb053"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d2e8efce6cc62e62388be792f6bb053">&#9670;&#160;</a></span>spinnerService</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a> fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest.spinnerService</td>
         </tr>
       </table>
   </td>

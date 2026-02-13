@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.fileProcessingTask" name="fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.fileProcessingTask">
+<area shape="rect" id="Node000001" title="Instantiates the file processing task with lifecycle overrides for optimal performance." alt="" coords="5,5,302,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html#aa4dad32003ec44fc20f2a7e504f76f16" title="Handles task errors by logging and showing a toast notification." alt="" coords="350,5,602,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,24,334,24,334,29,302,29"/>
+</map>

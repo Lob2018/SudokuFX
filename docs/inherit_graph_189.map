@@ -1,7 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,47,134,73"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html" title="Runtime exception thrown when a folder cannot be created." alt="" coords="182,5,423,48"/>
-<area shape="poly" id="edge32_Node000000_Node000001" title=" " alt="" coords="148,46,181,41,181,47,149,51"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html" title="Runtime exception thrown when Logback configuration fails." alt="" coords="182,72,423,115"/>
-<area shape="poly" id="edge33_Node000000_Node000002" title=" " alt="" coords="149,69,181,73,181,79,148,74"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,83,40"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html" title="Manages the application&#39;s keystore for secure storage of a symmetric key and database credentials." alt="" coords="131,5,354,48"/>
+<area shape="poly" id="edge23_Node000000_Node000001" title=" " alt="" coords="98,24,130,24,130,29,98,29"/>
 </map>

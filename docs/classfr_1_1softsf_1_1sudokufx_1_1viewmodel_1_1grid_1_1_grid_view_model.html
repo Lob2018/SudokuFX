@@ -129,8 +129,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3ae2327e3a29d25f4bdc6198657813bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the current Sudoku grid from the model into the ViewModel.  <br /></td></tr>
 <tr class="memitem:a293a2d059c297f4ff13190d0b7695452" id="r_a293a2d059c297f4ff13190d0b7695452"><td class="memItemLeft">Optional&lt; <a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8">CurrentGrid</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a293a2d059c297f4ff13190d0b7695452">getCurrentSolvedGridFromModel</a> ()</td></tr>
 <tr class="memdesc:a293a2d059c297f4ff13190d0b7695452"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the solved Sudoku grid from the model into the ViewModel.  <br /></td></tr>
+<tr class="memitem:ab95eb242497ba2febdde84bda3d62bf1" id="r_ab95eb242497ba2febdde84bda3d62bf1"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab95eb242497ba2febdde84bda3d62bf1">getDesiredPossibilities</a> ()</td></tr>
+<tr class="memdesc:ab95eb242497ba2febdde84bda3d62bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the user's desired completion percentage (0-100).  <br /></td></tr>
+<tr class="memitem:a96368d8212ad04d19b4cb11e06c3e839" id="r_a96368d8212ad04d19b4cb11e06c3e839"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a96368d8212ad04d19b4cb11e06c3e839">incrementDesiredPossibilities</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
+<tr class="memdesc:a96368d8212ad04d19b4cb11e06c3e839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increments the starting point of the difficulty bracket cyclically.  <br /></td></tr>
 <tr class="memitem:a159c0e18f45f9bd105fb03964f5f9374" id="r_a159c0e18f45f9bd105fb03964f5f9374"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a159c0e18f45f9bd105fb03964f5f9374">init</a> ()</td></tr>
 <tr class="memdesc:a159c0e18f45f9bd105fb03964f5f9374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the 9x9 Sudoku grid by creating 81 <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a></code> instances with unique IDs and row/column coordinates.  <br /></td></tr>
+<tr class="memitem:a5118c47e6bc8b75240c8e2c16131e339" id="r_a5118c47e6bc8b75240c8e2c16131e339"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5118c47e6bc8b75240c8e2c16131e339">notifyLevelPossibilityBounds</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
+<tr class="memdesc:a5118c47e6bc8b75240c8e2c16131e339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats and pushes the current difficulty bracket to the notification service.  <br /></td></tr>
+<tr class="memitem:a470fd386610579e0d2264263eb8e6303" id="r_a470fd386610579e0d2264263eb8e6303"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a470fd386610579e0d2264263eb8e6303">resetDesiredPossibilities</a> ()</td></tr>
+<tr class="memdesc:a470fd386610579e0d2264263eb8e6303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the desired possibilities to the default state.  <br /></td></tr>
 <tr class="memitem:aa953e512f15ed40efffa2ccd1ffa7062" id="r_aa953e512f15ed40efffa2ccd1ffa7062"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa953e512f15ed40efffa2ccd1ffa7062">setCurrentGridWithLevel</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
 <tr class="memdesc:aa953e512f15ed40efffa2ccd1ffa7062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a new grid for the given difficulty level, updates the cells, and returns the associated completion percentage.  <br /></td></tr>
 <tr class="memitem:ab7607876adb740f7f1d55b5016faba0c" id="r_ab7607876adb740f7f1d55b5016faba0c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab7607876adb740f7f1d55b5016faba0c">setValues</a> (List&lt; String &gt; values, boolean checkEditable)</td></tr>
@@ -162,6 +170,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a0e3033ee54eac7c612f8f73aae8c6742" id="r_a0e3033ee54eac7c612f8f73aae8c6742"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html">ActiveMenuOrSubmenuViewModel</a>&#160;</td><td class="memItemRight"><a class="el" href="#a0e3033ee54eac7c612f8f73aae8c6742">activeMenuOrSubmenuViewModel</a></td></tr>
 <tr class="memitem:a42da36ba8d2ce37205b34470bfe77837" id="r_a42da36ba8d2ce37205b34470bfe77837"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a42da36ba8d2ce37205b34470bfe77837">audioService</a></td></tr>
 <tr class="memitem:a08effb35262e7a92de8e4bd41fc8e7b0" id="r_a08effb35262e7a92de8e4bd41fc8e7b0"><td class="memItemLeft">final List&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a08effb35262e7a92de8e4bd41fc8e7b0">cellViewModels</a> = new ArrayList&lt;&gt;(<a class="el" href="#aca2db631f0e0d1eb751367a0c0237867">TOTAL_CELLS</a>)</td></tr>
+<tr class="memitem:adfaa2f2aa5e00495aa03ef0b1b725bd0" id="r_adfaa2f2aa5e00495aa03ef0b1b725bd0"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#adfaa2f2aa5e00495aa03ef0b1b725bd0">desiredPossibilities</a> = <a class="el" href="#a696f9f7b19bfb201f888615c790d0cd4">DEFAULT_DESIRED_POSSIBILITIES</a></td></tr>
 <tr class="memitem:a6cd7398269caba9269095a9cd704dfc8" id="r_a6cd7398269caba9269095a9cd704dfc8"><td class="memItemLeft">final IGridConverter&#160;</td><td class="memItemRight"><a class="el" href="#a6cd7398269caba9269095a9cd704dfc8">iGridConverter</a></td></tr>
 <tr class="memitem:a4d99b8d993ea1d81d18c436eea4b8e80" id="r_a4d99b8d993ea1d81d18c436eea4b8e80"><td class="memItemLeft">final IGridMaster&#160;</td><td class="memItemRight"><a class="el" href="#a4d99b8d993ea1d81d18c436eea4b8e80">iGridMaster</a></td></tr>
 <tr class="memitem:aed055b55c1a7f157cd4efb752f95a234" id="r_aed055b55c1a7f157cd4efb752f95a234"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#aed055b55c1a7f157cd4efb752f95a234">initialized</a> = false</td></tr>
@@ -172,6 +181,7 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
+<tr class="memitem:a696f9f7b19bfb201f888615c790d0cd4" id="r_a696f9f7b19bfb201f888615c790d0cd4"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a696f9f7b19bfb201f888615c790d0cd4">DEFAULT_DESIRED_POSSIBILITIES</a> = -1</td></tr>
 <tr class="memitem:a3db2ff09d3fc66a3ba56bd941ca2d0eb" id="r_a3db2ff09d3fc66a3ba56bd941ca2d0eb"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#a3db2ff09d3fc66a3ba56bd941ca2d0eb">GAME_DTO_MUSTN_T_BE_NULL</a> = &quot;gameDto mustn't be null&quot;</td></tr>
 <tr class="memitem:afd1217d7084a63e6556c5c360cee4a07" id="r_afd1217d7084a63e6556c5c360cee4a07"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#afd1217d7084a63e6556c5c360cee4a07">GRID_SIZE</a> = 9</td></tr>
 <tr class="memitem:aeef26ff53fb1cefb9fc7b6e68b420d47" id="r_aeef26ff53fb1cefb9fc7b6e68b420d47"><td class="memItemLeft">static final Logger&#160;</td><td class="memItemRight"><a class="el" href="#aeef26ff53fb1cefb9fc7b6e68b420d47">LOG</a> = LoggerFactory.getLogger(GridViewModel.class)</td></tr>
@@ -494,6 +504,27 @@ Loads the solved grid values into the ViewModel (non-editable). </li>
 
 </div>
 </div>
+<a id="ab95eb242497ba2febdde84bda3d62bf1" name="ab95eb242497ba2febdde84bda3d62bf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab95eb242497ba2febdde84bda3d62bf1">&#9670;&#160;</a></span>getDesiredPossibilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getDesiredPossibilities </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the user's desired completion percentage (0-100). </p>
+<p>A value of -1 indicates that the default generation logic should be used.</p>
+<dl class="section return"><dt>Returns</dt><dd>the current desired possibilities value </dd></dl>
+
+</div>
+</div>
 <a id="a9a196b605ead50c78f40edd67484d60a" name="a9a196b605ead50c78f40edd67484d60a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a196b605ead50c78f40edd67484d60a">&#9670;&#160;</a></span>handleCellTextChange()</h2>
 
@@ -556,6 +587,31 @@ Loads the solved grid values into the ViewModel (non-editable). </li>
 
 </div>
 </div>
+<a id="a96368d8212ad04d19b4cb11e06c3e839" name="a96368d8212ad04d19b4cb11e06c3e839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96368d8212ad04d19b4cb11e06c3e839">&#9670;&#160;</a></span>incrementDesiredPossibilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridViewModel.incrementDesiredPossibilities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Increments the starting point of the difficulty bracket cyclically. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>the difficulty level providing the percentage boundaries </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a159c0e18f45f9bd105fb03964f5f9374" name="a159c0e18f45f9bd105fb03964f5f9374"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a159c0e18f45f9bd105fb03964f5f9374">&#9670;&#160;</a></span>init()</h2>
 
@@ -614,6 +670,31 @@ Loads the solved grid values into the ViewModel (non-editable). </li>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_ad536719f789ab2bb851aa4b26d44c075_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
+
+</div>
+</div>
+<a id="a5118c47e6bc8b75240c8e2c16131e339" name="a5118c47e6bc8b75240c8e2c16131e339"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5118c47e6bc8b75240c8e2c16131e339">&#9670;&#160;</a></span>notifyLevelPossibilityBounds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridViewModel.notifyLevelPossibilityBounds </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Formats and pushes the current difficulty bracket to the notification service. </p>
+<p>*</p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>the current difficulty level </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -698,6 +779,25 @@ Loads the solved grid values into the ViewModel (non-editable). </li>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model_a85b73068471edb726968c94d30bc79a6_cgraph.svg" width="502" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a470fd386610579e0d2264263eb8e6303" name="a470fd386610579e0d2264263eb8e6303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a470fd386610579e0d2264263eb8e6303">&#9670;&#160;</a></span>resetDesiredPossibilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetDesiredPossibilities </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets the desired possibilities to the default state. </p>
 
 </div>
 </div>
@@ -879,6 +979,50 @@ Listeners are suppressed for all cells during bulk updates. </li>
       <table class="memname">
         <tr>
           <td class="memname">final List&lt;<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a>&gt; fr.softsf.sudokufx.viewmodel.grid.GridViewModel.cellViewModels = new ArrayList&lt;&gt;(<a class="el" href="#aca2db631f0e0d1eb751367a0c0237867">TOTAL_CELLS</a>)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a696f9f7b19bfb201f888615c790d0cd4" name="a696f9f7b19bfb201f888615c790d0cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a696f9f7b19bfb201f888615c790d0cd4">&#9670;&#160;</a></span>DEFAULT_DESIRED_POSSIBILITIES</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int fr.softsf.sudokufx.viewmodel.grid.GridViewModel.DEFAULT_DESIRED_POSSIBILITIES = -1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adfaa2f2aa5e00495aa03ef0b1b725bd0" name="adfaa2f2aa5e00495aa03ef0b1b725bd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfaa2f2aa5e00495aa03ef0b1b725bd0">&#9670;&#160;</a></span>desiredPossibilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.viewmodel.grid.GridViewModel.desiredPossibilities = <a class="el" href="#a696f9f7b19bfb201f888615c790d0cd4">DEFAULT_DESIRED_POSSIBILITIES</a></td>
         </tr>
       </table>
   </td>

@@ -1,7 +1,7 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
 [
     [ "MenuOptionsViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a26692d9c46e3bf02ab8a0a19d228f92a", null ],
-    [ "applyAndPersistBackgroundImage", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a343e123b20fa7fa3fcd1ef9173d58546", null ],
+    [ "applyAndPersistBackgroundImage", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a2a736732b455c4c2ad787f5e4a9a76da", null ],
     [ "applyAndPersistOptionsColor", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a37c28fa6e33f850e39a1e63e6696728d", null ],
     [ "checkInitialized", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090", null ],
     [ "concatDependencies", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a359e959bd335e531fe59f4eb942c0813", null ],
@@ -11,7 +11,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "createStringBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#acc42c19bd4c6eafc97a5826eb787c906", null ],
     [ "gridOpacityProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac757c39194d85a0c29565f186982fbca", null ],
     [ "gridOpacityText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a89500f671995a3ab11b253bf65cafdfb", null ],
-    [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4b32cc6e6b373a8728d66455c2baa4bf", null ],
+    [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a50c7fa94b3ef68fba6c678d9825bfeb6", null ],
     [ "initMuteAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a8920334361b12271411cb8f6b2e32a8a", null ],
     [ "initMuteIcon", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#affb61921e2b3545de6b96d4fbb216fff", null ],
     [ "initMuteText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#af241419d9819c8b2012c3a0d3638ac2f", null ],
