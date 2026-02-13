@@ -6,6 +6,8 @@
 package fr.softsf.sudokufx.service.ui;
 
 import java.util.concurrent.atomic.AtomicInteger;
+
+import javafx.application.Platform;
 import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.ReadOnlyBooleanWrapper;
 
@@ -33,22 +35,22 @@ public class SpinnerService {
 
     /**
      * Increments the active task counter and activates the loading state upon the first
-     * registration.
+     * registration. Executed on the JavaFX Application Thread.
      */
     public void startLoading() {
         if (taskCount.getAndIncrement() == 0) {
-            loading.set(true);
+            Platform.runLater(() -> loading.set(true));
         }
     }
 
     /**
      * Decrements the active task counter and deactivates the loading state only when no more tasks
-     * are pending.
+     * are pending. Executed on the JavaFX Application Thread.
      */
     public void stopLoading() {
         if (taskCount.decrementAndGet() <= 0) {
             taskCount.set(0);
-            loading.set(false);
+            Platform.runLater(() -> loading.set(false));
         }
     }
 }
