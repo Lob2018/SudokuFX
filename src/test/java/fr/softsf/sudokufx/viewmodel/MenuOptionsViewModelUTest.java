@@ -33,7 +33,6 @@ import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
-import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -46,7 +45,6 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     private MenuOptionsViewModel viewModel;
     private GridPane sudokuFX;
     private ColorPicker colorPicker;
-    private SpinnerGridPane spinnerMock;
     private AsyncFileProcessorService asyncServiceMock;
     private AudioService audioSpy;
     private OptionsService optionsService;
@@ -58,7 +56,6 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         I18n.INSTANCE.setLocaleBundle("FR");
         sudokuFX = new GridPane();
         colorPicker = new ColorPicker();
-        spinnerMock = mock(SpinnerGridPane.class);
         asyncServiceMock = mock(AsyncFileProcessorService.class);
         audioSpy = spy(new AudioService());
         optionsService = mock(OptionsService.class);
@@ -70,7 +67,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                         playerStateHolder,
                         optionsService,
                         toasterService);
-        viewModel.init(sudokuFX, colorPicker, spinnerMock);
+        viewModel.init(sudokuFX, colorPicker);
         viewModel =
                 spy(
                         new MenuOptionsViewModel(
@@ -79,7 +76,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                                 playerStateHolder,
                                 optionsService,
                                 toasterService));
-        viewModel.init(sudokuFX, colorPicker, spinnerMock);
+        viewModel.init(sudokuFX, colorPicker);
     }
 
     @AfterEach
@@ -157,7 +154,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
 
         @Test
         void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast() {
-            viewModel.applyAndPersistBackgroundImage(null, spinnerMock, sudokuFX);
+            viewModel.applyAndPersistBackgroundImage(null, sudokuFX);
             verifyNoInteractions(asyncServiceMock);
             ToastData toastData = toasterService.toastRequestProperty().get();
             assertNotNull(toastData, "Un toast d'erreur doit être émis");
@@ -173,7 +170,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         @Test
         void givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast() {
             File invalidFile = new File("invalid.txt");
-            viewModel.applyAndPersistBackgroundImage(invalidFile, spinnerMock, sudokuFX);
+            viewModel.applyAndPersistBackgroundImage(invalidFile, sudokuFX);
             verifyNoInteractions(asyncServiceMock);
             ToastData toastData = toasterService.toastRequestProperty().get();
             assertNotNull(toastData, "Un toast d'erreur doit être émis");
@@ -200,8 +197,8 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
-            viewModel.applyAndPersistBackgroundImage(validFile, spinnerMock, sudokuFX);
-            verify(asyncServiceMock).processFileAsync(eq(validFile), eq(spinnerMock), any(), any());
+            viewModel.applyAndPersistBackgroundImage(validFile, sudokuFX);
+            verify(asyncServiceMock).processFileAsync(eq(validFile), any(), any());
         }
 
         @Test
@@ -215,8 +212,8 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
-            viewModel.applyAndPersistBackgroundImage(nonExistentFile, spinnerMock, sudokuFX);
-            verify(asyncServiceMock, never()).processFileAsync(any(), any(), any(), any());
+            viewModel.applyAndPersistBackgroundImage(nonExistentFile, sudokuFX);
+            verify(asyncServiceMock, never()).processFileAsync(any(), any(), any());
             ToastData toastData = toasterService.toastRequestProperty().get();
             assertNotNull(toastData);
             assertEquals(ToastLevels.ERROR, toastData.level());
@@ -225,12 +222,11 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         @Test
         void givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet() {
             File imageFile = new File("src/test/resources/sample.jpg");
-            SpinnerGridPane spinner = mock(SpinnerGridPane.class);
             GridPane gridPane = new GridPane();
             doAnswer(
                             invocation -> {
                                 File fileArg = invocation.getArgument(0);
-                                Consumer<BackgroundImage> callback = invocation.getArgument(3);
+                                Consumer<BackgroundImage> callback = invocation.getArgument(2);
                                 callback.accept(
                                         new BackgroundImage(
                                                 new Image(fileArg.toURI().toString()),
@@ -241,7 +237,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                                 return null;
                             })
                     .when(asyncServiceMock)
-                    .processFileAsync(eq(imageFile), eq(spinner), any(), any());
+                    .processFileAsync(eq(imageFile), any(), any());
             MenuOptionsViewModel vm =
                     new MenuOptionsViewModel(
                             new AudioService(),
@@ -249,9 +245,9 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                             playerStateHolder,
                             optionsService,
                             toasterService);
-            vm.init(new GridPane(), new ColorPicker(), spinner);
-            vm.applyAndPersistBackgroundImage(imageFile, spinner, gridPane);
-            verify(asyncServiceMock).processFileAsync(eq(imageFile), eq(spinner), any(), any());
+            vm.init(new GridPane(), new ColorPicker());
+            vm.applyAndPersistBackgroundImage(imageFile, gridPane);
+            verify(asyncServiceMock).processFileAsync(eq(imageFile), any(), any());
             assertNotNull(gridPane.getBackground());
         }
     }
@@ -307,12 +303,11 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     @Test
     void givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet() {
         File imageFile = new File("src/test/resources/sample.jpg");
-        SpinnerGridPane spinner = mock(SpinnerGridPane.class);
         GridPane gridPane = new GridPane();
         doAnswer(
                         invocation -> {
                             File fileArg = invocation.getArgument(0);
-                            Consumer<BackgroundImage> callback = invocation.getArgument(3);
+                            Consumer<BackgroundImage> callback = invocation.getArgument(2);
                             BackgroundImage fakeBackground =
                                     new BackgroundImage(
                                             new Image(fileArg.toURI().toString()),
@@ -324,7 +319,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                             return null;
                         })
                 .when(asyncServiceMock)
-                .processFileAsync(eq(imageFile), eq(spinner), any(), any());
+                .processFileAsync(eq(imageFile), any(), any());
         MenuOptionsViewModel vm =
                 new MenuOptionsViewModel(
                         new AudioService(),
@@ -332,9 +327,9 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                         playerStateHolder,
                         optionsService,
                         toasterService);
-        vm.init(new GridPane(), new ColorPicker(), spinner);
-        vm.applyAndPersistBackgroundImage(imageFile, spinner, gridPane);
-        verify(asyncServiceMock).processFileAsync(eq(imageFile), eq(spinner), any(), any());
+        vm.init(new GridPane(), new ColorPicker());
+        vm.applyAndPersistBackgroundImage(imageFile, gridPane);
+        verify(asyncServiceMock).processFileAsync(eq(imageFile), any(), any());
         assertNotNull(gridPane.getBackground(), "Le GridPane doit avoir un Background appliqué");
     }
 }

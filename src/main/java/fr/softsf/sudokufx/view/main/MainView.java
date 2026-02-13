@@ -50,6 +50,7 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.FileChooserService;
+import fr.softsf.sudokufx.service.ui.SpinnerService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
@@ -109,6 +110,7 @@ public final class MainView implements IMainView {
     private final GenericListViewFactory genericListViewFactory;
     private final ToasterService toasterService;
     private final LevelInteractionHandler levelInteractionHandler;
+    private final SpinnerService spinnerService;
 
     @FXML private ToasterVBox toaster;
     @FXML private SpinnerGridPane spinner;
@@ -228,7 +230,8 @@ public final class MainView implements IMainView {
             BindingConfigurator bindingConfigurator,
             GenericListViewFactory genericListViewFactory,
             ToasterService toasterService,
-            LevelInteractionHandler levelInteractionHandler) {
+            LevelInteractionHandler levelInteractionHandler,
+            SpinnerService spinnerService) {
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
         this.coordinator = coordinator;
         this.helpViewModel = helpViewModel;
@@ -248,6 +251,7 @@ public final class MainView implements IMainView {
         this.genericListViewFactory = genericListViewFactory;
         this.toasterService = toasterService;
         this.levelInteractionHandler = levelInteractionHandler;
+        this.spinnerService = spinnerService;
     }
 
     /**
@@ -267,6 +271,7 @@ public final class MainView implements IMainView {
         primaryStage = new Stage();
         I18n.INSTANCE.setLocaleBundle(coordinator.getCurrentPlayerLanguageIso());
         stopAudioOnExitInitialization();
+        spinnerInitialization();
         toasterInitialization();
         hideMiniMenuTimeline = hideMiniMenuTimelineInitialization();
         hiddenMenuInitialization();
@@ -280,6 +285,14 @@ public final class MainView implements IMainView {
         newMenuInitialization();
         activeMenuManagerInitialization();
         gridInitialization();
+    }
+
+    /**
+     * Establishes a unidirectional binding between the SpinnerGridPane visibility and the
+     * SpinnerViewModel loading state.
+     */
+    private void spinnerInitialization() {
+        spinner.loadingProperty().bind(spinnerService.loadingProperty());
     }
 
     /**
@@ -504,7 +517,7 @@ public final class MainView implements IMainView {
                 menuOptionsButtonSongClear, isSongNotBlank);
         bindingConfigurator.configurePseudoClassBinding(
                 menuOptionsButtonSong, isSongNotBlank, REDUCED_SONG_PSEUDO_SELECTED);
-        menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor, spinner);
+        menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor);
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
@@ -940,7 +953,7 @@ public final class MainView implements IMainView {
                 .ifPresent(
                         file ->
                                 menuOptionsViewModel.applyAndPersistBackgroundImage(
-                                        file, spinner, sudokuFX));
+                                        file, sudokuFX));
     }
 
     /**

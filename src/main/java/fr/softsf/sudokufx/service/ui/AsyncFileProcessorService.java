@@ -17,7 +17,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 
 /**
  * Service to execute file-processing tasks asynchronously with JavaFX UI feedback.
@@ -30,9 +29,11 @@ public class AsyncFileProcessorService {
 
     private static final Logger LOG = LoggerFactory.getLogger(AsyncFileProcessorService.class);
     private final ToasterService toasterService;
+    private final SpinnerService spinnerService;
 
-    public AsyncFileProcessorService(ToasterService toasterService) {
+    public AsyncFileProcessorService(ToasterService toasterService, SpinnerService spinnerService) {
         this.toasterService = toasterService;
+        this.spinnerService = spinnerService;
     }
 
     /**
@@ -43,21 +44,16 @@ public class AsyncFileProcessorService {
      *
      * @param <T> the result type
      * @param selectedFile the file to process; must not be null
-     * @param spinner UI spinner to indicate progress; must not be null
      * @param taskFunction function to process the file and return a result; must not be null
      * @param onSuccess callback executed on the UI thread upon success; must not be null
      * @throws NullPointerException if any required parameter is null
      */
     public <T> void processFileAsync(
-            File selectedFile,
-            SpinnerGridPane spinner,
-            Function<File, T> taskFunction,
-            Consumer<T> onSuccess) {
+            File selectedFile, Function<File, T> taskFunction, Consumer<T> onSuccess) {
         Objects.requireNonNull(selectedFile, "selectedFile must not be null");
-        Objects.requireNonNull(spinner, "spinner must not be null");
         Objects.requireNonNull(taskFunction, "taskFunction must not be null");
         Objects.requireNonNull(onSuccess, "onSuccess must not be null");
-        spinner.showSpinner(true);
+        spinnerService.startLoading();
         toasterService.showInfo(
                 I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.load"),
                 selectedFile.toURI().toString());
@@ -74,7 +70,7 @@ public class AsyncFileProcessorService {
                                 () -> {
                                     toasterService.requestRemoveToast();
                                     action.run();
-                                    spinner.showSpinner(false);
+                                    spinnerService.stopLoading();
                                 });
         task.setOnSucceeded(e -> finishTask.accept(() -> onSuccess.accept(task.getValue())));
         task.setOnFailed(e -> handleError(task.getException(), finishTask));

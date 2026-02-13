@@ -38,7 +38,6 @@ import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
-import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
@@ -586,20 +585,17 @@ public class MenuOptionsViewModel {
      * @param sudokuFX the GridPane to apply background settings; must not be {@code null}
      * @param menuOptionsButtonColor the ColorPicker to synchronize with the current color; must not
      *     be {@code null}
-     * @param spinner the spinner component to indicate loading state; must not be {@code null}
      * @throws NullPointerException if any of the parameters are {@code null}
      */
-    public void init(
-            GridPane sudokuFX, ColorPicker menuOptionsButtonColor, SpinnerGridPane spinner) {
+    public void init(GridPane sudokuFX, ColorPicker menuOptionsButtonColor) {
         Objects.requireNonNull(sudokuFX, "sudokuFX mustn't be null");
         Objects.requireNonNull(menuOptionsButtonColor, "menuOptionsButtonColor mustn't be null");
-        Objects.requireNonNull(spinner, "spinner mustn't be null");
         OptionsDto optionsDto = playerStateHolder.currentPlayerProperty().get().optionsidDto();
         initialized = true;
         if (optionsDto.imagepath().isEmpty()) {
             setColorFromModel(sudokuFX, menuOptionsButtonColor, optionsDto.hexcolor());
         } else {
-            applyAndPersistBackgroundImage(new File(optionsDto.imagepath()), spinner, sudokuFX);
+            applyAndPersistBackgroundImage(new File(optionsDto.imagepath()), sudokuFX);
         }
         gridOpacityProperty.set(optionsDto.opaque());
         audioService.setMuted(optionsDto.muted());
@@ -820,15 +816,11 @@ public class MenuOptionsViewModel {
      * persisted, and an error toast is displayed.
      *
      * @param selectedFile the image file to load; may be null
-     * @param spinner the spinner to indicate loading; must not be null
      * @param sudokuFX the {@link GridPane} to update; must not be null
-     * @throws NullPointerException if {@code spinner} or {@code sudokuFX} is null
      */
-    public void applyAndPersistBackgroundImage(
-            File selectedFile, SpinnerGridPane spinner, GridPane sudokuFX) {
+    public void applyAndPersistBackgroundImage(File selectedFile, GridPane sudokuFX) {
         checkInitialized();
         Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
-        Objects.requireNonNull(spinner, "spinner must not be null");
         if (selectedFile == null
                 || !selectedFile.exists()
                 || !imageUtils.isValidImage(selectedFile)) {
@@ -841,7 +833,6 @@ public class MenuOptionsViewModel {
         }
         asyncFileProcessorService.processFileAsync(
                 selectedFile,
-                spinner,
                 file -> {
                     ImageMeta meta = imageUtils.getImageMeta(file);
                     Image resizedImage =
@@ -891,13 +882,12 @@ public class MenuOptionsViewModel {
 
     /**
      * Checks whether the {@link MenuOptionsViewModel} has been initialized via {@link
-     * #init(GridPane, ColorPicker, SpinnerGridPane)}.
+     * #init(GridPane, ColorPicker)}.
      *
      * <p>If the menu options have not been initialized, this method throws an exception to prevent
      * operations on an uninitialized state.
      *
-     * @throws IllegalStateException if {@link #init(GridPane, ColorPicker, SpinnerGridPane)} has
-     *     not been called
+     * @throws IllegalStateException if {@link #init(GridPane, ColorPicker)} has not been called
      */
     private void checkInitialized() {
         if (!initialized) {

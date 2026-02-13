@@ -16,6 +16,7 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
+import fr.softsf.sudokufx.service.ui.SpinnerService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
 
@@ -30,12 +31,13 @@ class AsyncFileProcessorServiceUTest {
     @Mock private Function<File, String> mockTaskFunction;
     @Mock private Consumer<String> mockOnSuccess;
     @Mock private ToasterService toasterService;
+    @Mock private SpinnerService spinnerService;
 
     private AsyncFileProcessorService service;
 
     @BeforeEach
     void setUp() {
-        service = new AsyncFileProcessorService(toasterService);
+        service = new AsyncFileProcessorService(toasterService, spinnerService);
     }
 
     @Test
@@ -43,21 +45,8 @@ class AsyncFileProcessorServiceUTest {
         NullPointerException exception =
                 assertThrows(
                         NullPointerException.class,
-                        () ->
-                                service.processFileAsync(
-                                        null, mockSpinner, mockTaskFunction, mockOnSuccess));
+                        () -> service.processFileAsync(null, mockTaskFunction, mockOnSuccess));
         assertEquals("selectedFile must not be null", exception.getMessage());
-    }
-
-    @Test
-    void givenNullSpinner_whenProcessFileAsync_thenThrowsNullPointerException() {
-        NullPointerException exception =
-                assertThrows(
-                        NullPointerException.class,
-                        () ->
-                                service.processFileAsync(
-                                        mockFile, null, mockTaskFunction, mockOnSuccess));
-        assertEquals("spinner must not be null", exception.getMessage());
     }
 
     @Test
@@ -65,7 +54,7 @@ class AsyncFileProcessorServiceUTest {
         NullPointerException exception =
                 assertThrows(
                         NullPointerException.class,
-                        () -> service.processFileAsync(mockFile, mockSpinner, null, mockOnSuccess));
+                        () -> service.processFileAsync(mockFile, null, mockOnSuccess));
         assertEquals("taskFunction must not be null", exception.getMessage());
     }
 
@@ -74,17 +63,14 @@ class AsyncFileProcessorServiceUTest {
         NullPointerException exception =
                 assertThrows(
                         NullPointerException.class,
-                        () ->
-                                service.processFileAsync(
-                                        mockFile, mockSpinner, mockTaskFunction, null));
+                        () -> service.processFileAsync(mockFile, mockTaskFunction, null));
         assertEquals("onSuccess must not be null", exception.getMessage());
     }
 
     @Test
-    void givenValidFile_whenProcessFileAsync_thenShowsSpinnerAndInfoToast() {
+    void givenValidFile_whenProcessFileAsync_thenShowsInfoToast() {
         when(mockFile.toURI()).thenReturn(java.net.URI.create("file://test.txt"));
-        service.processFileAsync(mockFile, mockSpinner, f -> "result", result -> {});
-        verify(mockSpinner).showSpinner(true);
+        service.processFileAsync(mockFile, f -> "result", result -> {});
         verify(toasterService).showInfo(anyString(), eq("file://test.txt"));
     }
 
@@ -92,9 +78,8 @@ class AsyncFileProcessorServiceUTest {
     void givenValidFile_whenProcessFileAsync_thenDoesNotBlockCallingThread() {
         when(mockFile.toURI()).thenReturn(java.net.URI.create("file://test.txt"));
         long startTime = System.currentTimeMillis();
-        service.processFileAsync(mockFile, mockSpinner, mockTaskFunction, mockOnSuccess);
+        service.processFileAsync(mockFile, mockTaskFunction, mockOnSuccess);
         long endTime = System.currentTimeMillis();
         assertTrue((endTime - startTime) < 100, "Method should not block the calling thread");
-        verify(mockSpinner).showSpinner(true);
     }
 }

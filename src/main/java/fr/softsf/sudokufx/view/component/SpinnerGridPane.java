@@ -10,7 +10,8 @@ import javafx.animation.FadeTransition;
 import javafx.animation.Interpolator;
 import javafx.animation.ParallelTransition;
 import javafx.animation.ScaleTransition;
-import javafx.application.Platform;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 import javafx.geometry.Pos;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
@@ -18,8 +19,8 @@ import javafx.util.Duration;
 
 /**
  * A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons. The
- * spinner visibility is managed by an internal counter to handle multiple concurrent asynchronous
- * calls and features a smooth fade-out transition.
+ * spinner visibility is reactive and managed via a BooleanProperty, typically bound to a ViewModel
+ * to handle multiple concurrent asynchronous calls and features a smooth fade-out transition.
  */
 public final class SpinnerGridPane extends GridPane {
 
@@ -28,7 +29,19 @@ public final class SpinnerGridPane extends GridPane {
     public static final int ANIMATION_FADE_OUT_DURATION = 150;
     private final Animation spinnerAnimation1;
     private final Animation spinnerAnimation2;
-    private int activeRequests = 0;
+    private FadeTransition fadeOut;
+
+    private final BooleanProperty loading =
+            new SimpleBooleanProperty(false) {
+                @Override
+                protected void invalidated() {
+                    if (get()) {
+                        startAnimation();
+                    } else {
+                        stopAnimation();
+                    }
+                }
+            };
 
     /**
      * Constructs a SpinnerGridPane with centered animated icons and initialized pulse animations.
@@ -47,42 +60,21 @@ public final class SpinnerGridPane extends GridPane {
         spinnerAnimation2 = createPulse(spinnerText2, ANIMATION_SECOND_PHASE_DELAY);
         setVisible(false);
         setManaged(false);
+        initFadeOut();
     }
 
     /**
-     * Updates the request counter and toggles the spinner visibility. This method is thread-safe
-     * and ensures UI updates occur on the JavaFX Application Thread.
-     *
-     * @param show true to increment the active request count, false to decrement it.
+     * @return The property controlling the spinner visibility and animation lifecycle.
      */
-    public void showSpinner(boolean show) {
-        if (!Platform.isFxApplicationThread()) {
-            Platform.runLater(() -> updateState(show));
-        } else {
-            updateState(show);
-        }
-    }
-
-    /**
-     * Manages the internal counter state and triggers start or stop transitions. * @param increment
-     * true to add a request, false to remove one.
-     */
-    private void updateState(boolean increment) {
-        if (increment) {
-            activeRequests++;
-        } else {
-            activeRequests = Math.max(0, activeRequests - 1);
-        }
-        boolean shouldBeVisible = activeRequests > 0;
-        if (shouldBeVisible && !isVisible()) {
-            startAnimation();
-        } else if (!shouldBeVisible && isVisible()) {
-            stopAnimation();
-        }
+    public BooleanProperty loadingProperty() {
+        return loading;
     }
 
     /** Resets opacity and starts the infinite pulse animations. */
     private void startAnimation() {
+        if (fadeOut != null) {
+            fadeOut.stop();
+        }
         setOpacity(1.0);
         setVisible(true);
         setManaged(true);
@@ -92,29 +84,32 @@ public final class SpinnerGridPane extends GridPane {
 
     /**
      * Executes a fade-out transition before stopping animations and hiding the component. The final
-     * cleanup only occurs if no new requests were initiated during the fade duration.
+     * cleanup only occurs if the loading property remains false during the fade duration.
      */
     private void stopAnimation() {
-        FadeTransition fadeOut =
-                new FadeTransition(Duration.millis(ANIMATION_FADE_OUT_DURATION), this);
-        fadeOut.setFromValue(getOpacity());
+        fadeOut.playFromStart();
+    }
+
+    /** Initializes the fade-out transition and its completion logic. */
+    private void initFadeOut() {
+        fadeOut = new FadeTransition(Duration.millis(ANIMATION_FADE_OUT_DURATION), this);
+        fadeOut.setFromValue(1.0);
         fadeOut.setToValue(0.0);
         fadeOut.setOnFinished(
                 e -> {
-                    if (activeRequests == 0) {
+                    if (!loading.get()) {
                         setVisible(false);
                         setManaged(false);
                         spinnerAnimation1.stop();
                         spinnerAnimation2.stop();
                     }
                 });
-        fadeOut.play();
     }
 
     /**
-     * Creates a synchronized pulsing animation (scale and fade) for a specific text node. * @param
-     * text The node to animate.
+     * Creates a synchronized pulsing animation (scale and fade) for a specific text node.
      *
+     * @param text The node to animate.
      * @param delay The initial delay before starting the pulse cycle.
      * @return A ParallelTransition configured for infinite looping.
      */
