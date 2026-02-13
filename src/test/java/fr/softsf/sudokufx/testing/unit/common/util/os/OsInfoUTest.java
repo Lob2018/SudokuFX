@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.testing.unit.common.util.os;
 
+import java.util.Locale;
+
 import org.junit.jupiter.api.Test;
 
 import fr.softsf.sudokufx.common.enums.OsName;
@@ -22,7 +24,7 @@ class OsInfoUTest {
 
     @Test
     void givenOsName_whenGetOs_thenOsMatchesSystemProperty() {
-        String expectedLowercaseOsName = System.getProperty("os.name").toLowerCase();
+        String expectedLowercaseOsName = System.getProperty("os.name").toLowerCase(Locale.ROOT);
         assertTrue(
                 expectedLowercaseOsName.contains(OsName.detect().getOs()),
                 "L'OS détecté doit contenir : " + OsName.detect().getOs());

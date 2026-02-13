@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.common.util;
 import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
+import java.util.Locale;
 import java.util.Objects;
 import javafx.scene.image.Image;
 import javafx.scene.layout.BackgroundImage;
@@ -81,7 +82,7 @@ public class ImageUtils {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The image file mustn't be null");
         }
-        String fileName = file.getName().toLowerCase();
+        String fileName = file.getName().toLowerCase(Locale.ROOT);
         return fileName.endsWith(".jpg")
                 || fileName.endsWith(".jpeg")
                 || fileName.endsWith(".png")

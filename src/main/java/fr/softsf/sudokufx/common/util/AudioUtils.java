@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.common.util;
 
 import java.io.File;
+import java.util.Locale;
 import java.util.Objects;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
@@ -39,7 +40,7 @@ public class AudioUtils {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The audio file mustn't be null");
         }
-        String fileName = file.getName().toLowerCase();
+        String fileName = file.getName().toLowerCase(Locale.ROOT);
         return fileName.endsWith(".mp3")
                 || fileName.endsWith(".wav")
                 || fileName.endsWith(".aac")

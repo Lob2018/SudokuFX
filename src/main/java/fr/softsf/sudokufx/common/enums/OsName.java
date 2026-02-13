@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.common.enums;
 
+import java.util.Locale;
+
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /** Utility enum for operating system names. */
@@ -32,7 +34,7 @@ public enum OsName {
      * @throws IllegalArgumentException if the OS name is null, blank, or unsupported
      */
     public static OsName detect() {
-        String current = System.getProperty("os.name").toLowerCase();
+        String current = System.getProperty("os.name").toLowerCase(Locale.ROOT);
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 current, "Operating system must not be null or blank, but was " + current);
         if (current.contains(WINDOWS.os)) {
