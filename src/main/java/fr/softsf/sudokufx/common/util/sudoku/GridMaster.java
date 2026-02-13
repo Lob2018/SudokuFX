@@ -68,6 +68,18 @@ public final class GridMaster implements IGridMaster {
      */
     private static final int[][] NEIGHBORS = new int[NOMBRE_CASES][20];
 
+    private static final int TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
+
+    /** Durée maximale d'une recherche de configuration valide (fail safe) pour un essai donné. */
+    private static final int DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS = 300;
+
+    /** Nombre de tentatives de génération globale avant abandon (sécurité récursion). */
+    private static final int MAX_ESSAIS_POUR_GENERATION_DE_GRILLE = 10;
+
+    private final JakartaValidator jakartaValidator;
+    private int moyenMinPossibilites = MOYEN_MIN_POSSIBILITES;
+    private int moyenMaxPossibilites = MOYEN_MAX_POSSIBILITES;
+
     /*
      * Bloc d'initialisation statique pour les structures de données constantes.
      */
@@ -136,60 +148,8 @@ public final class GridMaster implements IGridMaster {
         }
     }
 
-    private static final int TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
-
-    /** Durée maximale d'une recherche de configuration valide (fail safe) pour un essai donné. */
-    private static final int DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS = 300;
-
-    /** Nombre maximal de tentatives de génération globale avant abandon (sécurité récursion). */
-    private static final int MAX_ESSAIS_POUR_GENERATION_DE_GRILLE = 10;
-
-    private final JakartaValidator jakartaValidator;
-
     GridMaster(JakartaValidator jakartaValidator) {
         this.jakartaValidator = jakartaValidator;
-    }
-
-    private int moyenMinPossibilites = MOYEN_MIN_POSSIBILITES;
-
-    /**
-     * Récupère la borne inférieure de la somme des possibilités pour une grille de difficulté
-     * moyenne.
-     *
-     * <p>Cette valeur est utilisée pour calibrer la génération des grilles :
-     *
-     * <ul>
-     *   <li>En dessous ou égal à ce seuil : Difficulté <b>Facile</b>.
-     *   <li>Au-dessus de ce seuil : Difficulté <b>Moyenne</b> (si inférieur au max).
-     * </ul>
-     *
-     * La somme correspond à l'addition des valeurs entières des masques binaires de chaque case.
-     *
-     * @return Le seuil minimal de possibilités pour le niveau moyen (par défaut 10500).
-     */
-    public int getMoyenMinPossibilites() {
-        return moyenMinPossibilites;
-    }
-
-    private int moyenMaxPossibilites = MOYEN_MAX_POSSIBILITES;
-
-    /**
-     * Récupère la borne supérieure de la somme des possibilités pour une grille de difficulté
-     * moyenne.
-     *
-     * <p>Cette valeur est utilisée pour calibrer la génération des grilles :
-     *
-     * <ul>
-     *   <li>En dessous ou égal à ce seuil : Difficulté <b>Moyenne</b> (si supérieur au min).
-     *   <li>Au-dessus de ce seuil : Difficulté <b>Difficile</b>.
-     * </ul>
-     *
-     * La somme correspond à l'addition des valeurs entières des masques binaires de chaque case.
-     *
-     * @return Le seuil maximal de possibilités pour le niveau moyen (par défaut 12500).
-     */
-    public int getMoyenMaxPossibilites() {
-        return moyenMaxPossibilites;
     }
 
     /**
