@@ -42,12 +42,14 @@ public enum MyRegex {
     }
 
     /**
-     * Precompiled regex pattern for semantic versioning (e.g., X.Y.Z format). Requirements: -
-     * Major, minor, and patch versions must be non-negative integers. - Each version component must
-     * be separated by a '.' character.
+     * Precompiled regex pattern for semantic versioning (supports X.Y.Z or X.Y.Z.W formats).
+     * Requirements: - 3 or 4 numeric components separated by dots. - Each component: 1 to 9 digits
+     * (prevents Integer overflow and UI breakage). - Leading zeros are forbidden (except for the
+     * digit '0' itself). - Total string length is naturally constrained by segment limits.
      */
     private static final Pattern VERSION_PATTERN =
-            Pattern.compile("^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$");
+            Pattern.compile(
+                    "^(0|[1-9]\\d{0,8})\\.(0|[1-9]\\d{0,8})\\.(0|[1-9]\\d{0,8})(?:\\.(0|[1-9]\\d{0,8}))?$");
 
     public Pattern getVersionPattern() {
         return VERSION_PATTERN;

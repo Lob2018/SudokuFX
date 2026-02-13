@@ -28,10 +28,10 @@ release, and disclosure processes, as well as general security posture.
 The following versions are currently supported and receive security updates.
 Release candidates will not receive security updates.
 
-| Version | Supported          |
-|---------| ------------------ |
-| >=2.x.x | :white_check_mark: |
-| <=1.x.x | :x:                |
+| Version   | Supported          |
+|-----------| ------------------ |
+| >=1.x.x.x | :white_check_mark: |
+| <=1.x.x.x | :x:                |
 
 ## Reporting a Vulnerability
 

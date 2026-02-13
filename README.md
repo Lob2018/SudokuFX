@@ -92,7 +92,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 - Linux (Debian-based distributions)
   - Application with Java Runtime Environment (JRE) included
     - Download and install the latest Linux version of the DEB file, [available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)
-    - Run `sudo apt install ./sudokufx-jvm_v.v.v_amd64.deb`
+    - Run `sudo apt install ./sudokufx-jvm_v.v.v.v_amd64.deb`
   - Application without Java Runtime Environment (JRE) included
     - [The latest Adoptium Temurin JRE](https://adoptium.net/temurin/releases/?package=jre) must be installed on your machine with the corresponding JAVA_HOME environment variable set
     - Download, untar, and keep all the files together, from the latest Linux version of the TAR file, [available in Assets.](https://github.com/Lob2018/SudokuFX/releases/latest)

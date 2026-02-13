@@ -8,6 +8,8 @@ package fr.softsf.sudokufx.config;
 import java.util.regex.Pattern;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import fr.softsf.sudokufx.common.enums.MyRegex;
 
@@ -15,13 +17,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class JVMApplicationPropertiesUTest {
 
-    private static final String VERSION_REGEX = "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$";
+    private static final String VERSION_REGEX =
+            "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$";
     private static final String ALPHANUMERIC_REGEX = "^[a-zA-Z0-9\\s.]+$";
 
     @Test
     void givenValidNameVersionOrganizationLicense_whenValidateByRegex_thenValidationSucceeds() {
         String validName = "MyApp";
-        String validVersion = "0.0.1";
+        String validVersion = "0.0.0.1";
         String validOrganization = "Soft64.fr";
         String validLicense = "GPLv3.0";
         assertTrue(
@@ -35,6 +38,37 @@ class JVMApplicationPropertiesUTest {
                         validLicense, Pattern.compile(ALPHANUMERIC_REGEX)));
         assertTrue(
                 MyRegex.INSTANCE.isValidatedByRegex(validVersion, Pattern.compile(VERSION_REGEX)));
+    }
+
+    @ParameterizedTest
+    @ValueSource(
+            strings = {
+                "1.0.0", // Ancien format (X.Y.Z)
+                "1.0.0.0", // Nouveau format (X.Y.Z.W)
+                "999999999.0.0.1", // Limite haute (9 chiffres)
+                "0.0.0", // Version minimale
+                "10.20.30.40" // Version standard
+            })
+    void givenValidVersions_whenValidateByRegex_thenSucceeds(String version) {
+        assertTrue(
+                MyRegex.INSTANCE.isValidatedByRegex(version, MyRegex.INSTANCE.getVersionPattern()),
+                "Version should be valid: " + version);
+    }
+
+    @ParameterizedTest
+    @ValueSource(
+            strings = {
+                "1.0", // Trop court
+                "1.0.0.0.0", // Trop long (5 segments)
+                "01.0.0", // Zéro non significatif
+                "1.0.0.1234567890", // Segment trop long (> 9 chiffres)
+                "a.b.c", // Non numérique
+                "1.0 .0" // Contient des espaces
+            })
+    void givenInvalidVersions_whenValidateByRegex_thenFails(String version) {
+        assertFalse(
+                MyRegex.INSTANCE.isValidatedByRegex(version, MyRegex.INSTANCE.getVersionPattern()),
+                "Version should be invalid: " + version);
     }
 
     @Test
