@@ -43,7 +43,7 @@ public class MenuNewViewModel {
     private final VersionService versionService;
     private final BooleanProperty isOutOfDate = new SimpleBooleanProperty(false);
     private final StringProperty statusMessage = new SimpleStringProperty();
-    private Task<Boolean> currentTask;
+    private Task<Boolean> checkVersionTask;
     private ChangeListener<Boolean> versionListener;
 
     public MenuNewViewModel(VersionService versionService) {
@@ -96,19 +96,19 @@ public class MenuNewViewModel {
         if (statusMessage.isBound()) {
             statusMessage.unbind();
         }
-        if (currentTask != null && versionListener != null) {
-            currentTask.valueProperty().removeListener(versionListener);
+        if (checkVersionTask != null && versionListener != null) {
+            checkVersionTask.valueProperty().removeListener(versionListener);
         }
-        currentTask = versionService.checkLatestVersion();
-        statusMessage.bind(currentTask.messageProperty());
+        checkVersionTask = versionService.checkLatestVersion();
+        statusMessage.bind(checkVersionTask.messageProperty());
         versionListener =
                 (obs, oldVal, newVal) -> {
                     if (newVal != null) {
                         Platform.runLater(() -> isOutOfDate.set(!newVal));
                     }
                 };
-        currentTask.valueProperty().addListener(versionListener);
-        Thread thread = new Thread(currentTask);
+        checkVersionTask.valueProperty().addListener(versionListener);
+        Thread thread = new Thread(checkVersionTask);
         thread.setDaemon(true);
         thread.start();
     }
