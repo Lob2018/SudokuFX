@@ -29,6 +29,7 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.github.TagDto;
+import fr.softsf.sudokufx.service.ui.SpinnerService;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
 
@@ -52,6 +53,7 @@ public class VersionService {
                     : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1);
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
+    private final SpinnerService spinnerService;
 
     /**
      * Initializes the VersionService with the provided HttpClient. This service is responsible for
@@ -59,9 +61,11 @@ public class VersionService {
      *
      * @param httpClient the HttpClient used to perform HTTP requests.
      */
-    public VersionService(HttpClient httpClient, ObjectMapper objectMapper) {
+    public VersionService(
+            HttpClient httpClient, ObjectMapper objectMapper, SpinnerService spinnerService) {
         this.httpClient = httpClient;
         this.objectMapper = objectMapper;
+        this.spinnerService = spinnerService;
     }
 
     /**
@@ -79,6 +83,7 @@ public class VersionService {
             @Override
             protected Boolean call() {
                 try {
+                    spinnerService.startLoading();
                     updateMessage(
                             I18n.INSTANCE.getValue("githubrepositoryversion.checking")
                                     + MyDateTime.INSTANCE.getFormattedCurrentTime()
@@ -105,7 +110,7 @@ public class VersionService {
                                     + MyDateTime.INSTANCE.getFormattedCurrentTime()
                                     + ")");
                     return parseResponse(response.body());
-                } catch (HttpTimeoutException ex) {
+                } catch (HttpTimeoutException _) {
                     LOG.warn("▓▓ Timeout while checking GitHub version");
                     updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.warn.timeout"));
                 } catch (InterruptedException ex) {
@@ -126,6 +131,8 @@ public class VersionService {
                             ex);
                     updateMessage(
                             I18n.INSTANCE.getValue("githubrepositoryversion.error.unexpected"));
+                } finally {
+                    spinnerService.stopLoading();
                 }
                 return true;
             }

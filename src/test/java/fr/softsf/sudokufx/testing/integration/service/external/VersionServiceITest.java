@@ -29,9 +29,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
-import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.service.external.VersionService;
+import fr.softsf.sudokufx.service.ui.SpinnerService;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -69,7 +69,7 @@ class VersionServiceITest {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
     @Mock private HttpClient mockHttpClient;
-    @Mock private MyDateTime myDateTime;
+    @Mock private SpinnerService spinnerService;
     @Mock private HttpResponse<String> mockResponse;
 
     @BeforeEach
@@ -98,7 +98,8 @@ class VersionServiceITest {
                         ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
-                new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
+                new VersionService(mockHttpClient, objectMapper, spinnerService)
+                        .checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
@@ -124,7 +125,8 @@ class VersionServiceITest {
                         ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
-                new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
+                new VersionService(mockHttpClient, objectMapper, spinnerService)
+                        .checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
@@ -167,7 +169,8 @@ class VersionServiceITest {
                                     ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                             .thenReturn(mockResponse);
                     Task<Boolean> versionCheckTask =
-                            new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
+                            new VersionService(mockHttpClient, objectMapper, spinnerService)
+                                    .checkLatestVersion();
                     versionCheckTask.run();
                     boolean isLatestVersion = versionCheckTask.get();
                     int comparison = compareVersions(currentVersion, onlineVersion.substring(1));
@@ -226,7 +229,8 @@ class VersionServiceITest {
                         ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                 .thenReturn(mockResponse);
         Task<Boolean> versionCheckTask =
-                new VersionService(mockHttpClient, objectMapper).checkLatestVersion();
+                new VersionService(mockHttpClient, objectMapper, spinnerService)
+                        .checkLatestVersion();
         versionCheckTask.run();
         boolean isLatestVersion = versionCheckTask.get();
         assertTrue(isLatestVersion);
@@ -259,7 +263,8 @@ class VersionServiceITest {
                         any(HttpRequest.class),
                         ArgumentMatchers.<HttpResponse.BodyHandler<String>>any()))
                 .thenReturn(mockResponse);
-        VersionService service = new VersionService(mockHttpClient, new ObjectMapper());
+        VersionService service =
+                new VersionService(mockHttpClient, new ObjectMapper(), spinnerService);
         Task<Boolean> task = service.checkLatestVersion();
         task.run();
         boolean result = task.get();
