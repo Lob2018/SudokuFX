@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.testing.unit.common.util;
 
 import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import javafx.concurrent.Task;
 
 import org.junit.jupiter.api.Test;
@@ -58,7 +59,8 @@ class SpringContextInitializerUTest {
         task.setOnSucceeded(e -> latch.countDown());
         task.setOnFailed(e -> latch.countDown());
         initializer.runInitializationTask(task);
-        latch.await();
+        boolean completed = latch.await(2, TimeUnit.SECONDS);
+        assertTrue(completed, "La tâche d'initialisation a expiré (timeout de 2s)");
         verify(context, times(1)).init(any());
     }
 }

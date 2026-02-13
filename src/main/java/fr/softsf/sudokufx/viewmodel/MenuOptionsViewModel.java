@@ -808,12 +808,9 @@ public class MenuOptionsViewModel {
      * Applies a background image to the specified {@link GridPane} and persists its path in the
      * current player's options.
      *
-     * <p>If a valid image file is provided, it is loaded, resized, and converted asynchronously via
-     * {@link AsyncFileProcessorService}, applied to the GridPane, and persisted. An info toast is
-     * shown on success.
-     *
-     * <p>If the file is null, invalid, or missing, no background is applied, an empty path is
-     * persisted, and an error toast is displayed.
+     * <p>Validates the file before starting an asynchronous task. On success, updates the
+     * background and persists the path. All UI feedback and persistence are managed through
+     * thread-safe services.
      *
      * @param selectedFile the image file to load; may be null
      * @param sudokuFX the {@link GridPane} to update; must not be null

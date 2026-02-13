@@ -70,13 +70,9 @@ public class VersionService {
 
     /**
      * Checks if the current application version is up-to-date by querying the GitHub API. This
-     * method runs in the background using a JavaFX `Task` to avoid blocking the UI thread. It
-     * retrieves the latest release version from the repository and compares it with the current
-     * application version. In case of errors (e.g., timeout, interruption, or network issues), it
-     * assumes the version is up-to-date and logs the exception details.
+     * method runs in the background using a JavaFX `Task`.
      *
-     * @return A `Task<Boolean>` that returns `true` if the version is up-to-date or if an error
-     *     occurs, and `false` if an update is available.
+     * @return A `Task<Boolean>` returns true if up-to-date or error, false if update available.
      */
     public Task<Boolean> checkLatestVersion() {
         return new Task<>() {
@@ -131,10 +127,24 @@ public class VersionService {
                             ex);
                     updateMessage(
                             I18n.INSTANCE.getValue("githubrepositoryversion.error.unexpected"));
-                } finally {
-                    spinnerService.stopLoading();
                 }
                 return true;
+            }
+
+            @Override
+            protected void succeeded() {
+                LOG.debug("▓▓ GitHub version check task finished successfully");
+            }
+
+            @Override
+            protected void failed() {
+                Throwable ex = getException();
+                LOG.error("██ Exception Task failed: {}", ex.getMessage(), ex);
+            }
+
+            @Override
+            protected void done() {
+                spinnerService.stopLoading();
             }
         };
     }

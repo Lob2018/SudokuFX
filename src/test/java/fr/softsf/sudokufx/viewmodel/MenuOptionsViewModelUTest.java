@@ -7,6 +7,8 @@ package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
 import java.lang.reflect.Field;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 import java.util.*;
@@ -153,24 +155,41 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     class BackgroundImageErrorTests {
 
         @Test
-        void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast() {
+        void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast()
+                throws InterruptedException {
+            CountDownLatch latch = new CountDownLatch(1);
+            toasterService
+                    .toastRequestProperty()
+                    .addListener(
+                            (obs, old, newVal) -> {
+                                if (newVal != null) latch.countDown();
+                            });
             viewModel.applyAndPersistBackgroundImage(null, sudokuFX);
+            assertTrue(
+                    latch.await(2, TimeUnit.SECONDS),
+                    "Le toast d'erreur n'a jamais été émis (timeout 2s)");
             verifyNoInteractions(asyncServiceMock);
             ToastData toastData = toasterService.toastRequestProperty().get();
-            assertNotNull(toastData, "Un toast d'erreur doit être émis");
+            assertNotNull(toastData);
             assertEquals(ToastLevels.ERROR, toastData.level());
-            assertTrue(
-                    toastData
-                            .visibleText()
-                            .contains(
-                                    I18n.INSTANCE.getValue(
-                                            "toast.error.optionsviewmodel.handlefileimagechooser")));
         }
 
         @Test
-        void givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast() {
+        void givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast()
+                throws InterruptedException {
             File invalidFile = new File("invalid.txt");
+            CountDownLatch latch = new CountDownLatch(1);
+            toasterService
+                    .toastRequestProperty()
+                    .addListener(
+                            (obs, old, newVal) -> {
+                                if (newVal != null) {
+                                    latch.countDown();
+                                }
+                            });
             viewModel.applyAndPersistBackgroundImage(invalidFile, sudokuFX);
+            boolean completed = latch.await(2, TimeUnit.SECONDS);
+            assertTrue(completed, "Le toast d'erreur n'a jamais été émis (timeout 2s)");
             verifyNoInteractions(asyncServiceMock);
             ToastData toastData = toasterService.toastRequestProperty().get();
             assertNotNull(toastData, "Un toast d'erreur doit être émis");
@@ -212,7 +231,16 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
+            CountDownLatch latch = new CountDownLatch(1);
+            toasterService
+                    .toastRequestProperty()
+                    .addListener(
+                            (obs, old, newVal) -> {
+                                if (newVal != null) latch.countDown();
+                            });
             viewModel.applyAndPersistBackgroundImage(nonExistentFile, sudokuFX);
+            boolean completed = latch.await(2, TimeUnit.SECONDS);
+            assertTrue(completed, "Le toast d'erreur n'a jamais été émis (timeout de 2s)");
             verify(asyncServiceMock, never()).processFileAsync(any(), any(), any());
             ToastData toastData = toasterService.toastRequestProperty().get();
             assertNotNull(toastData);

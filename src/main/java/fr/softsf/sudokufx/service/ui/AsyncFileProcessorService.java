@@ -9,7 +9,6 @@ import java.io.File;
 import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.Function;
-import javafx.application.Platform;
 import javafx.concurrent.Task;
 
 import org.jspecify.annotations.NonNull;
@@ -40,21 +39,16 @@ public class AsyncFileProcessorService {
     /**
      * Executes a file-processing task asynchronously with spinner and toast feedback.
      *
-     * <p>Runs the task in a background thread. On success, the result is passed to {@code
-     * onSuccess}. On failure, the error is logged and shown in a toast.
-     *
      * @param <T> the result type
      * @param selectedFile the file to process; must not be null
      * @param taskFunction function to process the file and return a result; must not be null
      * @param onSuccess callback executed on the UI thread upon success; must not be null
-     * @throws NullPointerException if any required parameter is null
      */
     public <T> void processFileAsync(
             File selectedFile, Function<File, T> taskFunction, Consumer<T> onSuccess) {
         Objects.requireNonNull(selectedFile, "selectedFile must not be null");
         Objects.requireNonNull(taskFunction, "taskFunction must not be null");
         Objects.requireNonNull(onSuccess, "onSuccess must not be null");
-        spinnerService.startLoading();
         toasterService.showInfo(
                 I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.load"),
                 selectedFile.toURI().toString());
@@ -65,9 +59,7 @@ public class AsyncFileProcessorService {
     }
 
     /**
-     * Instantiates the file processing task and orchestrates the UI feedback lifecycle, including
-     * background execution, loader termination, and notification management on the JavaFX
-     * Application Thread.
+     * Instantiates the file processing task with lifecycle overrides for optimal performance.
      *
      * @param <T> result type
      * @param file file to process
@@ -77,50 +69,45 @@ public class AsyncFileProcessorService {
      */
     private <T> @NonNull Task<T> fileProcessingTask(
             File file, Function<File, T> function, Consumer<T> successCallback) {
-        Task<T> task =
-                new Task<>() {
-                    @Override
-                    protected T call() throws Exception {
-                        return function.apply(file);
-                    }
-                };
-        Consumer<Runnable> finishTask =
-                action ->
-                        Platform.runLater(
-                                () -> {
-                                    try {
-                                        toasterService.requestRemoveToast();
-                                        action.run();
-                                    } finally {
-                                        spinnerService.stopLoading();
-                                    }
-                                });
-        task.setOnSucceeded(e -> finishTask.accept(() -> successCallback.accept(task.getValue())));
-        task.setOnFailed(e -> handleError(task.getException(), finishTask));
-        task.setOnCancelled(
-                e ->
-                        finishTask.accept(
-                                () ->
-                                        LOG.info(
-                                                "██ fileProcessingTask's async task cancelled for"
-                                                        + " file: {}",
-                                                file.getName())));
-        return task;
+        return new Task<>() {
+            @Override
+            protected T call() {
+                spinnerService.startLoading();
+                return function.apply(file);
+            }
+
+            @Override
+            protected void succeeded() {
+                successCallback.accept(getValue());
+            }
+
+            @Override
+            protected void failed() {
+                handleError(getException());
+            }
+
+            @Override
+            protected void cancelled() {
+                LOG.info("██ fileProcessingTask's task cancelled for file: {}", file.getName());
+            }
+
+            @Override
+            protected void done() {
+                toasterService.requestRemoveToast();
+                spinnerService.stopLoading();
+            }
+        };
     }
 
     /**
-     * Handles task errors by logging and showing a toast notification on the JavaFX thread.
+     * Handles task errors by logging and showing a toast notification.
      *
-     * @param ex the exception thrown by the task; must not be null
-     * @param finishTask function to run code on the JavaFX Application Thread; must not be null
+     * @param ex the exception thrown by the task
      */
-    private void handleError(Throwable ex, Consumer<Runnable> finishTask) {
-        finishTask.accept(
-                () -> {
-                    LOG.error("██ Exception Async task failed: {}", ex.getMessage(), ex);
-                    toasterService.showError(
-                            I18n.INSTANCE.getValue("toast.error.optionsviewmodel.ontaskerror"),
-                            Objects.toString(ex.getMessage(), ""));
-                });
+    private void handleError(Throwable ex) {
+        LOG.error("██ Exception Async task failed: {}", ex.getMessage(), ex);
+        toasterService.showError(
+                I18n.INSTANCE.getValue("toast.error.optionsviewmodel.ontaskerror"),
+                Objects.toString(ex.getMessage(), ""));
     }
 }
