@@ -12,6 +12,7 @@ import java.util.function.Function;
 import javafx.application.Platform;
 import javafx.concurrent.Task;
 
+import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -57,26 +58,54 @@ public class AsyncFileProcessorService {
         toasterService.showInfo(
                 I18n.INSTANCE.getValue("toast.msg.optionsviewmodel.load"),
                 selectedFile.toURI().toString());
+        Task<T> task = fileProcessingTask(selectedFile, taskFunction, onSuccess);
+        Thread thread = new Thread(task, "AsyncFileProcessorThread");
+        thread.setDaemon(true);
+        thread.start();
+    }
+
+    /**
+     * Instantiates the file processing task and orchestrates the UI feedback lifecycle, including
+     * background execution, loader termination, and notification management on the JavaFX
+     * Application Thread.
+     *
+     * @param <T> result type
+     * @param file file to process
+     * @param function processing logic
+     * @param successCallback UI thread success handler
+     * @return configured Task instance
+     */
+    private <T> @NonNull Task<T> fileProcessingTask(
+            File file, Function<File, T> function, Consumer<T> successCallback) {
         Task<T> task =
                 new Task<>() {
                     @Override
                     protected T call() throws Exception {
-                        return taskFunction.apply(selectedFile);
+                        return function.apply(file);
                     }
                 };
         Consumer<Runnable> finishTask =
                 action ->
                         Platform.runLater(
                                 () -> {
-                                    toasterService.requestRemoveToast();
-                                    action.run();
-                                    spinnerService.stopLoading();
+                                    try {
+                                        toasterService.requestRemoveToast();
+                                        action.run();
+                                    } finally {
+                                        spinnerService.stopLoading();
+                                    }
                                 });
-        task.setOnSucceeded(e -> finishTask.accept(() -> onSuccess.accept(task.getValue())));
+        task.setOnSucceeded(e -> finishTask.accept(() -> successCallback.accept(task.getValue())));
         task.setOnFailed(e -> handleError(task.getException(), finishTask));
-        Thread thread = new Thread(task, "AsyncFileProcessorThread");
-        thread.setDaemon(true);
-        thread.start();
+        task.setOnCancelled(
+                e ->
+                        finishTask.accept(
+                                () ->
+                                        LOG.info(
+                                                "██ fileProcessingTask's async task cancelled for"
+                                                        + " file: {}",
+                                                file.getName())));
+        return task;
     }
 
     /**
