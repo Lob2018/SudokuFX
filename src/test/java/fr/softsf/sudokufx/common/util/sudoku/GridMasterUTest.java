@@ -57,7 +57,7 @@ class GridMasterUTest {
 
     @Test
     void givenCurrentValue_whenCalculerValeurSuperieureDuSegment_thenReturnsCorrectStepOrMax() {
-        LevelPossibilityBounds bounds = new LevelPossibilityBounds(20, 26); // Niveau Moyen
+        LevelPossibilityBounds bounds = new LevelPossibilityBounds(20, 26);
         assertEquals(26, gridMaster.calculerValeurSuperieureDuSegment(bounds, 20));
         LevelPossibilityBounds largeBounds = new LevelPossibilityBounds(27, 100);
         assertEquals(40, gridMaster.calculerValeurSuperieureDuSegment(largeBounds, 30));

@@ -49,7 +49,6 @@ class GrillesCreesUTest {
     @Test
     void givenInvalidGrilleResolueLength_whenConstruct_thenThrowException() {
         int[] shortGrid = new int[80];
-        // Le constructeur bloque désormais l'instanciation
         assertThrows(
                 IllegalArgumentException.class, () -> new GrillesCrees(shortGrid, VALID_GRID, 50));
     }
