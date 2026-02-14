@@ -20,6 +20,7 @@ import jakarta.validation.Validator;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.testfx.assertions.api.Assertions.assertThat;
 
@@ -50,22 +51,25 @@ class GrilleResolueUTest {
     }
 
     @Test
-    void givenInvalidSolvedGridLength_whenValidate_thenViolation() {
+    void givenInvalidSolvedGridLength_whenConstruct_thenThrowException() {
         int[] shortGrid = new int[80];
-        GrilleResolue grille = new GrilleResolue(true, shortGrid, 50);
-        Set<ConstraintViolation<GrilleResolue>> violations = validator.validate(grille);
-        assertFalse(violations.isEmpty());
-        assertThat(violations.iterator().next().getMessage())
-                .contains("must contain exactly 81 elements");
+        IllegalArgumentException exception =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> new GrilleResolue(true, shortGrid, 50));
+        assertThat(exception.getMessage())
+                .contains(
+                        "Invalid solvedGrid: must contain exactly "
+                                + GrilleResolue.CASES_NUMBER
+                                + " elements (found: "
+                                + shortGrid.length
+                                + ")");
     }
 
     @Test
     @SuppressWarnings("DataFlowIssue")
-    void givenNullSolvedGrid_whenValidate_thenViolation() {
-        GrilleResolue grille = new GrilleResolue(true, null, 50);
-        Set<ConstraintViolation<GrilleResolue>> violations = validator.validate(grille);
-        assertFalse(violations.isEmpty());
-        assertThat(violations.iterator().next().getMessage()).contains("must not be null");
+    void givenNullSolvedGrid_whenConstruct_thenThrowException() {
+        assertThrows(IllegalArgumentException.class, () -> new GrilleResolue(true, null, 50));
     }
 
     @Test

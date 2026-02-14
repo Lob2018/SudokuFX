@@ -47,39 +47,48 @@ class GrillesCreesUTest {
     }
 
     @Test
-    void givenInvalidGrilleResolueLength_whenValidate_thenViolation() {
+    void givenInvalidGrilleResolueLength_whenConstruct_thenThrowException() {
         int[] shortGrid = new int[80];
-        GrillesCrees grilles = new GrillesCrees(shortGrid, VALID_GRID, 50);
-        Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
-        assertFalse(violations.isEmpty());
-        assertThat(violations.iterator().next().getMessage())
-                .contains("must contain exactly 81 elements");
+        // Le constructeur bloque désormais l'instanciation
+        assertThrows(
+                IllegalArgumentException.class, () -> new GrillesCrees(shortGrid, VALID_GRID, 50));
     }
 
     @Test
-    void givenInvalidGrilleAResoudreLength_whenValidate_thenViolation() {
+    void givenInvalidGrilleAResoudreLength_whenConstruct_thenThrowException() {
         int[] longGrid = new int[82];
-        GrillesCrees grilles = new GrillesCrees(VALID_GRID, longGrid, 50);
-        Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
-        assertFalse(violations.isEmpty());
+        assertThrows(
+                IllegalArgumentException.class, () -> new GrillesCrees(VALID_GRID, longGrid, 50));
     }
 
     @Test
     @SuppressWarnings("DataFlowIssue")
+    void givenNullGrilleResolue_whenConstruct_thenThrowException() {
+        assertThrows(IllegalArgumentException.class, () -> new GrillesCrees(null, VALID_GRID, 50));
+    }
+
+    @Test
+    @SuppressWarnings("DataFlowIssue")
+    void givenNullGrilleAResoudre_whenConstruct_thenThrowException() {
+        assertThrows(IllegalArgumentException.class, () -> new GrillesCrees(VALID_GRID, null, 50));
+    }
+
+    @Test
     void givenPourcentageDesPossibilitesBelowZero_whenValidate_thenViolation() {
         GrillesCrees grilles = new GrillesCrees(VALID_GRID, VALID_GRID, -1);
         Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
         assertFalse(violations.isEmpty());
-        assertThat(violations.iterator().next().getMessage()).contains(">= 0");
+        assertThat(violations.iterator().next().getMessage())
+                .contains("possibilityPercentage must be >= 0");
     }
 
     @Test
-    @SuppressWarnings("DataFlowIssue")
     void givenPourcentageDesPossibilitesAboveHundred_whenValidate_thenViolation() {
         GrillesCrees grilles = new GrillesCrees(VALID_GRID, VALID_GRID, 101);
         Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
         assertFalse(violations.isEmpty());
-        assertThat(violations.iterator().next().getMessage()).contains("<= 100");
+        assertThat(violations.iterator().next().getMessage())
+                .contains("possibilityPercentage must be <= 100");
     }
 
     @Test
@@ -104,25 +113,5 @@ class GrillesCreesUTest {
         assertTrue(str.contains("grilleResolue"));
         assertTrue(str.contains("grilleAResoudre"));
         assertTrue(str.contains("pourcentageDesPossibilites"));
-    }
-
-    @Test
-    @SuppressWarnings("DataFlowIssue")
-    void givenNullGrilleResolue_whenValidate_thenViolation() {
-        GrillesCrees grilles = new GrillesCrees(null, VALID_GRID, 50);
-        Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
-        assertFalse(violations.isEmpty());
-        assertThat(violations.iterator().next().getMessage())
-                .contains("grilleResolue must not be null");
-    }
-
-    @Test
-    @SuppressWarnings("DataFlowIssue")
-    void givenNullGrilleAResoudre_whenValidate_thenViolation() {
-        GrillesCrees grilles = new GrillesCrees(VALID_GRID, null, 50);
-        Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
-        assertFalse(violations.isEmpty());
-        assertThat(violations.iterator().next().getMessage())
-                .contains("grilleAResoudre must not be null");
     }
 }

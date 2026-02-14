@@ -8,8 +8,8 @@ package fr.softsf.sudokufx.common.enums;
 import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.ReadOnlyObjectProperty;
+import javafx.beans.property.ReadOnlyObjectWrapper;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -24,8 +24,8 @@ public enum I18n {
 
     private static final Logger LOG = LoggerFactory.getLogger(I18n.class);
 
-    private static final ObjectProperty<Locale> LOCALE =
-            new SimpleObjectProperty<>(Locale.getDefault());
+    private static final ReadOnlyObjectWrapper<Locale> LOCALE =
+            new ReadOnlyObjectWrapper<>(Locale.getDefault());
 
     private static final Locale LOCALE_FR = Locale.of("fr", "FR");
     private static final Locale LOCALE_EN = Locale.of("en", "US");
@@ -56,10 +56,10 @@ public enum I18n {
     }
 
     /**
-     * @return Observable locale property.
+     * @return Read-only observable locale property.
      */
-    public ObjectProperty<Locale> localeProperty() {
-        return LOCALE;
+    public ReadOnlyObjectProperty<Locale> localeProperty() {
+        return LOCALE.getReadOnlyProperty();
     }
 
     /**

@@ -54,7 +54,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
 
     @BeforeEach
     void givenDependencies_whenInitViewModel_thenViewModelInitialized() {
-        originalLocale = I18n.INSTANCE.localeProperty().get();
+        originalLocale = I18n.INSTANCE.localeProperty().getValue();
         I18n.INSTANCE.setLocaleBundle("FR");
         sudokuFX = new GridPane();
         colorPicker = new ColorPicker();
@@ -82,8 +82,12 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @AfterEach
-    void givenLocaleRestored_whenTestFinished_thenLocaleReset() {
-        I18n.INSTANCE.localeProperty().set(originalLocale);
+    void tearDown() {
+        String langCode =
+                (originalLocale != null && "en".equalsIgnoreCase(originalLocale.getLanguage()))
+                        ? "EN"
+                        : "FR";
+        I18n.INSTANCE.setLocaleBundle(langCode);
     }
 
     @Test

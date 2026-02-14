@@ -37,7 +37,7 @@ class MenuNewViewModelUTest {
 
     @BeforeEach
     void setUp() {
-        originalLocale = I18n.INSTANCE.localeProperty().get();
+        originalLocale = I18n.INSTANCE.localeProperty().getValue();
         I18n.INSTANCE.setLocaleBundle("FR");
         when(versionService.checkLatestVersion())
                 .thenReturn(
@@ -53,7 +53,11 @@ class MenuNewViewModelUTest {
 
     @AfterEach
     void tearDown() {
-        I18n.INSTANCE.localeProperty().set(originalLocale);
+        String langCode =
+                (originalLocale != null && "en".equalsIgnoreCase(originalLocale.getLanguage()))
+                        ? "EN"
+                        : "FR";
+        I18n.INSTANCE.setLocaleBundle(langCode);
     }
 
     @Test
