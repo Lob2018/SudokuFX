@@ -21,7 +21,7 @@ import static org.passay.IllegalCharacterRule.ERROR_CODE;
 
 /** Utility class for generating secure passwords using the Passay library. */
 @Component
-final class GenerateSecret {
+public class GenerateSecret {
 
     private static final int PASSAY_SECRET_LENGTH = 24;
 

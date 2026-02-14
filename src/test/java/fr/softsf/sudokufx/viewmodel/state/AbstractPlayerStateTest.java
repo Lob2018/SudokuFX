@@ -46,6 +46,7 @@ public abstract class AbstractPlayerStateTest {
         defaultPlayer = createDefaultPlayer();
         when(playerServiceMock.getPlayer()).thenReturn(defaultPlayer);
         playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);
+        playerStateHolder.init();
     }
 
     @AfterEach

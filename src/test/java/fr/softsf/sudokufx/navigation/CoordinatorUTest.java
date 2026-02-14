@@ -99,9 +99,11 @@ class CoordinatorUTest {
     }
 
     @Test
-    void givenNullFXMLLoader_whenConstructCoordinator_thenThrowsIllegalArgumentException() {
+    void givenNullFXMLLoader_whenValidateConfiguration_thenThrowsIllegalArgumentException() {
+        Coordinator localCoordinator = new Coordinator(null);
         IllegalArgumentException ex =
-                assertThrows(IllegalArgumentException.class, () -> new Coordinator(null));
+                assertThrows(
+                        IllegalArgumentException.class, localCoordinator::validateConfiguration);
         assertTrue(ex.getMessage().contains("FxmlLoader must not be null"));
     }
 

@@ -27,17 +27,16 @@ import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
-import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
+import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(ApplicationExtension.class)
-class MenuPlayerViewModelUTest {
+class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
 
     private Locale originalLocale;
-    private PlayerStateHolder playerStateHolder;
     private MenuPlayerViewModel viewModel;
 
     @BeforeEach
@@ -57,7 +56,6 @@ class MenuPlayerViewModelUTest {
                         Instant.now(),
                         Instant.now());
         when(playerServiceMock.getPlayer()).thenReturn(testPlayer);
-        playerStateHolder = new PlayerStateHolder(playerServiceMock);
         viewModel = new MenuPlayerViewModel(playerStateHolder);
     }
 

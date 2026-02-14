@@ -55,8 +55,10 @@ public class PlayerLanguage {
      * @param iso two-letter ISO code ("FR" or "EN")
      */
     public PlayerLanguage(Long playerlanguageid, @Nonnull @NotNull String iso) {
+        String vIso = validateIso(iso);
+        super();
         this.playerlanguageid = playerlanguageid;
-        this.iso = validateIso(iso);
+        this.iso = vIso;
     }
 
     /**

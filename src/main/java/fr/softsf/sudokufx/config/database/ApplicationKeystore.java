@@ -34,12 +34,14 @@ import fr.softsf.sudokufx.config.os.IOsFolder;
  * credentials. Ensures dependencies are validated at construction to guarantee correct setup.
  */
 @Component
-final class ApplicationKeystore implements IKeystore {
+public final class ApplicationKeystore implements IKeystore {
 
     private static final Logger LOG = LoggerFactory.getLogger(ApplicationKeystore.class);
 
     private static final String KEYSTORE_PASSWORD_FROM_UUID =
-            String.valueOf(UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
+            String.valueOf(
+                    UUID.nameUUIDFromBytes(
+                            System.getProperty("user.name").getBytes(StandardCharsets.UTF_8)));
     private static final String KEYSTORE_TYPE = "pkcs12";
     private static final char[] PWD_ARRAY = KEYSTORE_PASSWORD_FROM_UUID.toCharArray();
     private static final String SYMMETRIC_KEY_ALIAS = "db-encryption-secret";
@@ -249,7 +251,7 @@ final class ApplicationKeystore implements IKeystore {
                             yield "";
                         }
                     };
-            SecretKey secretKey = new SecretKeySpec(secret.getBytes(), "AES");
+            SecretKey secretKey = new SecretKeySpec(secret.getBytes(StandardCharsets.UTF_8), "AES");
             addToKeystore(alias, secretKey);
         } catch (Exception e) {
             LOG.error("██ Exception catch inside setCredentials(alias) : {}", e.getMessage(), e);
@@ -275,17 +277,7 @@ final class ApplicationKeystore implements IKeystore {
                     password = value;
                 }
                 // TODO: remove in production
-                //                LOG.info(
-                //                        "▓▓▓▓ Keystore pass : {}",
-                //
-                // UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes()));
-                // TODO: remove in production
-                //                LOG.info(
-                //                        "▓▓▓▓ GET alias - username - password - secret : {} - {} -
-                // {}",
-                //                        alias,
-                //                        username,
-                //                        password);
+                // UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes(StandardCharsets.UTF_8)) alias username password
             } else {
                 LOG.warn("▓▓ Entry is not an instance of the Keystore");
             }

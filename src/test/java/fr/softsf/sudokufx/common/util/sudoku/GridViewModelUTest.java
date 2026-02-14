@@ -139,6 +139,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
         PlayerDto newPlayer = playerStateHolder.getCurrentPlayer().withSelectedGame(newGameDto);
         when(playerServiceMock.getPlayer()).thenReturn(newPlayer);
         playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);
+        playerStateHolder.init();
         GridViewModel localVM =
                 new GridViewModel(
                         new GridMaster(mock(JakartaValidator.class)),
@@ -189,6 +190,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
         PlayerDto player = playerStateHolder.getCurrentPlayer().withSelectedGame(gameDto);
         when(playerServiceMock.getPlayer()).thenReturn(player);
         playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);
+        playerStateHolder.init();
         GridViewModel localVM =
                 new GridViewModel(
                         new GridMaster(mock(JakartaValidator.class)),
@@ -214,6 +216,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
         PlayerDto player = playerStateHolder.getCurrentPlayer().withSelectedGame(gameDto);
         when(playerServiceMock.getPlayer()).thenReturn(player);
         playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);
+        playerStateHolder.init();
         GridViewModel localVM =
                 new GridViewModel(
                         new GridMaster(mock(JakartaValidator.class)),

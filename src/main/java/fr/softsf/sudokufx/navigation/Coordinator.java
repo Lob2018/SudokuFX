@@ -29,6 +29,7 @@ import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
+import jakarta.annotation.PostConstruct;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 import static fr.softsf.sudokufx.common.enums.Urls.MY_WEBSITE_URL;
@@ -70,17 +71,25 @@ public class Coordinator {
     private HostServices hostServices;
 
     /**
-     * Creates a Coordinator with the given non-null FXMLLoader.
+     * Constructs the coordinator.
      *
-     * @param fxmlLoader shared FXML loader
-     * @throws IllegalArgumentException if null
+     * @param fxmlLoader shared loader
      */
     public Coordinator(FXMLLoader fxmlLoader) {
+        this.fxmlLoader = fxmlLoader;
+    }
+
+    /**
+     * Validates the component state after injection.
+     *
+     * @throws IllegalArgumentException if the FXML loader is null
+     */
+    @PostConstruct
+    public void validateConfiguration() {
         if (Objects.isNull(fxmlLoader)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "FxmlLoader must not be null");
         }
-        this.fxmlLoader = fxmlLoader;
     }
 
     /**
@@ -151,7 +160,7 @@ public class Coordinator {
         try {
             fxmlLoader.setRoot(null);
             fxmlLoader.setController(null);
-            fxmlLoader.setLocation(getClass().getResource(path));
+            fxmlLoader.setLocation(Coordinator.class.getResource(path));
             if (applicationContext != null) {
                 fxmlLoader.setControllerFactory(clazz -> applicationContext.getBean(clazz));
             }

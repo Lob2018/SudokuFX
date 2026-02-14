@@ -18,7 +18,7 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
  * Manages asynchronous initialization of the Spring application context via JavaFX Tasks, providing
  * methods to create and run these tasks in background threads.
  */
-public class SpringContextInitializer {
+public final class SpringContextInitializer {
     private final SpringContext context;
 
     /**

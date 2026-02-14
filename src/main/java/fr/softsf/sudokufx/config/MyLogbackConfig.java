@@ -45,6 +45,11 @@ public class MyLogbackConfig {
      */
     public MyLogbackConfig(IOsFolder iOsFolder) {
         logsFolderPath = iOsFolder.getOsLogsFolderPath();
+    }
+
+    /** Post-construction initialization. Secure way to handle logic that can throw exceptions. */
+    @jakarta.annotation.PostConstruct
+    public void init() {
         System.setProperty("logs", logsFolderPath + LOGS_FILE_NAME_PATH.getPath());
         LoggerContext context = configureLogback();
         printLogStatus(context);
@@ -68,7 +73,7 @@ public class MyLogbackConfig {
     /**
      * Logs the ASCII logo (with app name and version), an optional optimization message at startup.
      */
-    public void printLogEntryMessage() {
+    public final void printLogEntryMessage() {
         LOG.info(
                 ASCII_LOGO.getLogBackMessage(),
                 JVMApplicationProperties.INSTANCE.getAppName(),
@@ -86,7 +91,7 @@ public class MyLogbackConfig {
      *     is null)
      * @throws LogbackConfigurationException if an error occurs during Logback configuration
      */
-    LoggerContext configureLogback() {
+    final LoggerContext configureLogback() {
         LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
         try (InputStream inputStream = MyLogbackConfig.class.getResourceAsStream(logBackPath)) {
             if (Objects.isNull(inputStream)) {

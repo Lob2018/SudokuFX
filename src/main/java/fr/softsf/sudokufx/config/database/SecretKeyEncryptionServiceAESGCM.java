@@ -71,7 +71,7 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
         try {
             RANDOM.nextBytes(iv);
             cipher.init(Cipher.ENCRYPT_MODE, secretKey, new GCMParameterSpec(GCM_TAG_LENGTH, iv));
-            byte[] encryptedData = cipher.doFinal(original.getBytes());
+            byte[] encryptedData = cipher.doFinal(original.getBytes(StandardCharsets.UTF_8));
             Base64.Encoder encoder = Base64.getEncoder();
             String encrypt64 = encoder.encodeToString(encryptedData);
             String iv64 = encoder.encodeToString(iv);

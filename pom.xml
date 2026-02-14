@@ -344,6 +344,8 @@
           <consoleOutput>true</consoleOutput>
           <!-- Minimum severity level that fails the build -->
           <violationSeverity>error</violationSeverity>
+          <!-- Exclude to bypass parser crash on JEP 482 statements before super() -->
+          <excludes>**/model/Options.java,**/model/PlayerLanguage.java</excludes>
         </configuration>
         <dependencies>
           <!-- Use a specific version of Checkstyle (must match your checkstyle.xml DTD) -->

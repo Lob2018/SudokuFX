@@ -45,7 +45,7 @@ import fr.softsf.sudokufx.common.enums.I18n;
  *       rawText}.
  * </ul>
  */
-public class GridCellViewModel {
+public final class GridCellViewModel {
 
     private static final double SCALE_SINGLE_CHAR = .38;
     private static final double BORDER_THICK_BASE = .2;

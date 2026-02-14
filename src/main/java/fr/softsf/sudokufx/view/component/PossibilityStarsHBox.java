@@ -35,7 +35,7 @@ import fr.softsf.sudokufx.common.enums.I18n;
  * <p>MVVM-compliant if the percentage property is updated externally; the component does not modify
  * its bound value.
  */
-public class PossibilityStarsHBox extends HBox {
+public final class PossibilityStarsHBox extends HBox {
     private static final double STAR_DIVISOR = 0.1;
     private static final double HALF_STAR_THRESHOLD = 0.5;
     private final IntegerProperty percentage = new SimpleIntegerProperty(100);

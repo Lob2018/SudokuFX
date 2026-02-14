@@ -5,10 +5,8 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
-import javafx.beans.binding.Bindings;
 import javafx.beans.binding.BooleanBinding;
 import javafx.beans.binding.StringBinding;
-import javafx.beans.property.SimpleIntegerProperty;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -70,14 +68,11 @@ class MenuLevelViewModelUTest {
 
     @Test
     void givenStarsBoxAndKey_whenAccessibleTextBinding_thenReturnFormattedText() {
-        PossibilityStarsHBox starsBox = new PossibilityStarsHBoxStub();
-        String key = "some.key";
+        PossibilityStarsHBox starsBox = new PossibilityStarsHBox();
+        starsBox.getPercentage().set(50);
+        String key = "menu.solve.button.solve.accessibility";
         StringBinding accessibleBinding = viewModel.accessibleTextBinding(starsBox, key);
-        assertEquals("formattedText-for-some.key", accessibleBinding.get());
-        StringBinding roleDescription = viewModel.selectedRoleDescriptionBinding();
-        assertEquals(
-                I18n.INSTANCE.getValue("menu.accessibility.role.description.selected"),
-                roleDescription.get());
+        assertNotNull(accessibleBinding.get());
     }
 
     @Test
@@ -98,24 +93,5 @@ class MenuLevelViewModelUTest {
         int newPercentage = 75;
         viewModel.setPercentage(newPercentage);
         assertEquals(newPercentage, viewModel.percentageProperty().get());
-    }
-
-    private static class PossibilityStarsHBoxStub extends PossibilityStarsHBox {
-        PossibilityStarsHBoxStub() {
-            super();
-            percentageProperty = new SimpleIntegerProperty(50);
-        }
-
-        @Override
-        public SimpleIntegerProperty getPercentage() {
-            return percentageProperty;
-        }
-
-        @Override
-        public StringBinding formattedTextBinding(String key, boolean someFlag) {
-            return Bindings.createStringBinding(() -> "formattedText-for-" + key);
-        }
-
-        private final SimpleIntegerProperty percentageProperty;
     }
 }

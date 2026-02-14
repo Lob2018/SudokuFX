@@ -74,7 +74,7 @@ public class Options {
     protected Options() {}
 
     /**
-     * Full constructor to initialize all fields of options.
+     * Full constructor using JEP 482 (Statements before super()).
      *
      * @param optionsid unique ID of the options
      * @param hexcolor background color in ARGB hex format
@@ -90,10 +90,14 @@ public class Options {
             @Nonnull @NotNull String songpath,
             boolean opaque,
             boolean muted) {
+        String vHex = validateHexcolor(hexcolor);
+        String vImg = validatePath(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
+        String vSong = validatePath(songpath, SONGPATH_MUST_NOT_BE_NULL);
+        super();
         this.optionsid = optionsid;
-        this.hexcolor = validateHexcolor(hexcolor);
-        this.imagepath = validatePath(imagepath, IMAGEPATH_MUST_NOT_BE_NULL);
-        this.songpath = validatePath(songpath, SONGPATH_MUST_NOT_BE_NULL);
+        this.hexcolor = vHex;
+        this.imagepath = vImg;
+        this.songpath = vSong;
         this.opaque = opaque;
         this.muted = muted;
     }

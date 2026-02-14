@@ -17,6 +17,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
+import jakarta.annotation.PostConstruct;
 
 /**
  * Holds the current {@link PlayerDto} for the application.
@@ -55,12 +56,17 @@ public class PlayerStateHolder {
     }
 
     /**
-     * Constructs the state holder and initializes the current player from {@link PlayerService}.
+     * Constructs the state holder. Dependency injection only.
      *
      * @param playerService the service used to fetch the player
      */
     public PlayerStateHolder(PlayerService playerService) {
         this.playerService = playerService;
+    }
+
+    /** Initializes the current player after dependency injection is complete. */
+    @PostConstruct
+    public void init() {
         if (Objects.isNull(currentPlayer.get())) {
             refreshCurrentPlayer();
         }
