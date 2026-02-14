@@ -15,6 +15,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
 import org.mockito.InOrder;
 import org.mockito.MockedConstruction;
 import org.mockito.Mockito;
@@ -43,6 +44,17 @@ class AudioServiceUTest {
         audioService = new AudioService();
         validEffectFile = new File("test_effect.mp3");
         validSongFile = new File("test_song.mp3");
+    }
+
+    /**
+     * Triggers the setOnReady callback on the provided MediaPlayer mock.
+     *
+     * @param player the mocked MediaPlayer.
+     */
+    private void triggerOnReady(MediaPlayer player) {
+        ArgumentCaptor<Runnable> captor = ArgumentCaptor.forClass(Runnable.class);
+        verify(player).setOnReady(captor.capture());
+        captor.getValue().run();
     }
 
     @Nested
@@ -103,6 +115,7 @@ class AudioServiceUTest {
                 MediaPlayer player = playerMocked.constructed().getFirst();
                 verify(player).setVolume(1.0);
                 verify(player).setOnEndOfMedia(any(Runnable.class));
+                triggerOnReady(player);
                 verify(player).play();
             }
         }
@@ -116,6 +129,7 @@ class AudioServiceUTest {
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playEffect(validEffectFile, VALID_EFFECT_KEY);
                 MediaPlayer firstPlayer = playerMocked.constructed().getFirst();
+                triggerOnReady(firstPlayer);
                 audioService.playEffect(validEffectFile, VALID_EFFECT_KEY);
                 assertThat(playerMocked.constructed()).hasSize(1);
                 verify(firstPlayer).stop();
@@ -134,6 +148,7 @@ class AudioServiceUTest {
                 audioService.playEffect(validEffectFile, VALID_EFFECT_KEY);
                 MediaPlayer player = playerMocked.constructed().getFirst();
                 verify(player).setVolume(0.0);
+                triggerOnReady(player);
                 verify(player).play();
             }
         }
@@ -164,6 +179,7 @@ class AudioServiceUTest {
                 MediaPlayer player = playerMocked.constructed().getFirst();
                 verify(player).setCycleCount(MediaPlayer.INDEFINITE);
                 verify(player).setVolume(1.0);
+                triggerOnReady(player);
                 verify(player).play();
             }
         }
@@ -195,6 +211,7 @@ class AudioServiceUTest {
                 MediaPlayer player = playerMocked.constructed().getFirst();
                 verify(player).setVolume(0.0);
                 verify(player).setCycleCount(MediaPlayer.INDEFINITE);
+                triggerOnReady(player);
                 verify(player).play();
             }
         }

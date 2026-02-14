@@ -67,18 +67,18 @@ public class AudioService {
             if (existingPlayer == null) {
                 try {
                     Media media = new Media(effectFile.toURI().toString());
-                    MediaPlayer player = new MediaPlayer(media);
+                    final MediaPlayer localEffectPlayer = new MediaPlayer(media);
                     double volume = originalEffectVolumes.getOrDefault(key, 1.0);
                     originalEffectVolumes.put(key, volume);
-                    player.setVolume(isMuted ? 0 : volume);
-                    player.setOnEndOfMedia(
+                    localEffectPlayer.setVolume(isMuted ? 0 : volume);
+                    localEffectPlayer.setOnEndOfMedia(
                             () -> {
-                                player.dispose();
+                                localEffectPlayer.dispose();
                                 effectsPlayers.remove(key);
                                 originalEffectVolumes.remove(key);
                             });
-                    effectsPlayers.put(key, player);
-                    player.play();
+                    effectsPlayers.put(key, localEffectPlayer);
+                    localEffectPlayer.setOnReady(localEffectPlayer::play);
                 } catch (Exception e) {
                     throw ExceptionTools.INSTANCE.logAndInstantiateResourceLoad(
                             "Failed to play effect " + effectFile.getName(), e);
@@ -112,10 +112,11 @@ public class AudioService {
         }
         try {
             Media media = new Media(songFile.toURI().toString());
-            songPlayer = new MediaPlayer(media);
-            songPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-            songPlayer.setVolume(isMuted ? 0 : originalSongVolume);
-            songPlayer.play();
+            final MediaPlayer localSongPlayer = new MediaPlayer(media);
+            localSongPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+            localSongPlayer.setVolume(isMuted ? 0 : originalSongVolume);
+            localSongPlayer.setOnReady(localSongPlayer::play);
+            this.songPlayer = localSongPlayer;
         } catch (Exception e) {
             throw ExceptionTools.INSTANCE.logAndInstantiateResourceLoad(
                     "Failed to play song " + songFile.getName(), e);
