@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.view.main.MainView.initialize" name="fr.softsf.sudokufx.view.main.MainView.initialize">
 <area shape="rect" id="Node000001" title="Initializes the main view." alt="" coords="5,477,195,520"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="47,477,45,467,54,458,72,453,100,451,130,453,148,459,146,464,129,458,100,456,73,458,56,463,50,469,52,476"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a1343a98d2023ae2f641b7bebd6ad9976" title="Initializes bindings between each menu pane&#39;s visibility and managed state and the corresponding valu..." alt="" coords="249,9,516,52"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,477,104,399,112,346,124,287,142,227,166,167,199,112,241,63,246,59,249,63,245,67,203,115,171,170,147,229,129,288,117,346,110,399,104,477"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ac88a722293c271e57a26d51c3cf01ffc" title="Initializes the 9x9 Sudoku grid UI and loads the current grid values from the model if they exist." alt="" coords="288,77,477,120"/>
@@ -9,45 +10,46 @@
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3a91238dd9fbbfd65f850f1906685c60" title="Initializes a Timeline that hides the MINI menu after AUTO_HIDE_MINI_MENU_DELAY_MS milliseconds if it..." alt="" coords="243,211,522,253"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="106,476,123,431,151,373,190,314,214,286,241,263,248,259,251,263,244,267,218,290,194,317,155,376,128,433,111,478"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aaf10a0f151e5b327c746c1b7174081ef" title="Initializes each difficulty level section in the menu by binding UI components to ViewModel propertie..." alt="" coords="274,277,490,320"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="111,476,132,443,161,403,198,363,241,330,258,321,261,325,244,334,202,367,165,407,136,446,116,478"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="111,476,132,443,161,403,198,363,241,330,258,321,261,325,244,334,202,367,165,407,136,446,116,478"/>
 <area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae7c8bc6f1d6298d2a0e8069c2dd65c0f" title="Initializes the maxi menu components by binding their labels, accessible texts, and tooltips to the c..." alt="" coords="277,344,488,387"/>
-<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="124,475,176,435,241,396,262,388,264,393,244,401,179,439,128,479"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="124,475,176,435,241,396,262,388,264,393,244,401,179,439,128,479"/>
 <area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7a4626dc62d90505d1254613e1d92d55" title="Initializes the mini menu by binding all buttons&#39; texts and tooltips to their respective ViewModel pr..." alt="" coords="279,411,486,453"/>
-<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="193,474,274,455,275,460,194,479"/>
+<area shape="poly" id="edge18_Node000001_Node000017" title=" " alt="" coords="193,474,274,455,275,460,194,479"/>
 <area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a81f5511143e1d17c0ce7be039d87c819" title="Binds &quot;New&quot; menu UI elements to the ViewModel for text, accessibility, visibility,..." alt="" coords="279,477,486,520"/>
-<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="195,496,264,496,264,501,195,501"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="195,496,264,496,264,501,195,501"/>
 <area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a640abc39ab4c9e393253742341427eb4" title="Initializes and binds all UI components of the options menu to the MenuOptionsViewModel." alt="" coords="270,544,494,587"/>
-<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="194,518,275,537,274,543,193,523"/>
+<area shape="poly" id="edge20_Node000001_Node000019" title=" " alt="" coords="194,518,275,537,274,543,193,523"/>
 <area shape="rect" id="Node000021" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a8214e802af406ccfc0129318f77bf170" title="Initializes bindings and event listeners for the player menu components." alt="" coords="274,611,491,653"/>
-<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="128,519,179,558,244,596,260,603,258,608,241,601,176,563,124,523"/>
+<area shape="poly" id="edge22_Node000001_Node000021" title=" " alt="" coords="128,519,179,558,244,596,260,603,258,608,241,601,176,563,124,523"/>
 <area shape="rect" id="Node000022" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aebaf39d672a3997a3b90c42333b0689b" title="Initializes bindings and event listeners for the save menu components." alt="" coords="277,677,488,720"/>
-<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="116,519,136,551,165,591,202,630,244,663,263,673,261,678,241,668,198,634,161,594,132,554,111,522"/>
+<area shape="poly" id="edge23_Node000001_Node000022" title=" " alt="" coords="116,519,136,551,165,591,202,630,244,663,263,673,261,678,241,668,198,634,161,594,132,554,111,522"/>
 <area shape="rect" id="Node000023" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#afc29c6470627f78c17cd71121df17d21" title="Sets up bindings between the solve menu UI components and menuSolveViewModel." alt="" coords="276,744,489,787"/>
-<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="111,520,128,565,155,622,194,681,218,707,244,730,263,741,260,745,241,734,214,711,190,684,151,624,123,567,106,522"/>
+<area shape="poly" id="edge24_Node000001_Node000023" title=" " alt="" coords="111,520,128,565,155,622,194,681,218,707,244,730,263,741,260,745,241,734,214,711,190,684,151,624,123,567,106,522"/>
 <area shape="rect" id="Node000024" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aa73cee45a3fae93369d5d33cb8ce90c6" title="Establishes a unidirectional binding between the SpinnerGridPane visibility and the SpinnerViewModel ..." alt="" coords="286,811,478,853"/>
-<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="108,520,121,576,146,651,164,691,186,730,213,766,244,797,273,813,270,818,241,801,209,769,182,733,159,694,141,653,115,577,102,521"/>
+<area shape="poly" id="edge25_Node000001_Node000024" title=" " alt="" coords="108,520,121,576,146,651,164,691,186,730,213,766,244,797,273,813,270,818,241,801,209,769,182,733,159,694,141,653,115,577,102,521"/>
 <area shape="rect" id="Node000025" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a1b8c6fff77d4f65ca424cc6a2c943b19" title="Registers a listener on the primary stage to stop all audio when the application window is closed." alt="" coords="258,877,506,920"/>
-<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="106,520,115,587,137,680,155,730,178,779,208,824,244,863,248,866,245,871,241,867,204,828,174,782,150,732,132,682,109,588,100,521"/>
+<area shape="poly" id="edge26_Node000001_Node000025" title=" " alt="" coords="106,520,115,587,137,680,155,730,178,779,208,824,244,863,248,866,245,871,241,867,204,828,174,782,150,732,132,682,109,588,100,521"/>
 <area shape="rect" id="Node000026" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ad474475f22dddcdfa8ccfc64bddef3dc" title="Initializes the toaster by subscribing to the ToasterService." alt="" coords="287,944,478,987"/>
-<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="104,520,109,598,117,651,129,709,146,769,171,828,203,883,244,930,274,949,271,953,241,934,199,886,166,830,141,771,123,710,111,652,104,599,99,521"/>
+<area shape="poly" id="edge27_Node000001_Node000026" title=" " alt="" coords="104,520,109,598,117,651,129,709,146,769,171,828,203,883,244,930,274,949,271,953,241,934,199,886,166,830,141,771,123,710,111,652,104,599,99,521"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a8c2b1b6c63e1cc2a2c777ce0a8ceebb9" title=" " alt="" coords="570,5,790,48"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="517,26,554,26,555,31,517,32"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a805ba50257c2565844220d96b618c2c9" title="Loads the current user&#45;entered grid from the model and updates the selected level and completion perc..." alt="" coords="570,72,790,131"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="477,97,555,98,555,103,477,102"/>
 <area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a706b53dd0716935b0976068f04d748c4" title="Binds UI components related to a specific difficulty level in both the maxi and mini menus." alt="" coords="586,277,775,320"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="491,296,570,296,570,301,491,301"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="491,296,570,296,570,301,491,301"/>
 <area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7caecbd9de214c2c554a4056960ceca0" title="Binds accessibility properties (accessible text and role description) for the specified difficulty le..." alt="" coords="850,111,1060,153"/>
-<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="699,275,758,219,796,189,837,163,849,157,851,162,840,168,799,193,761,223,703,279"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="699,275,758,219,796,189,837,163,849,157,851,162,840,168,799,193,761,223,703,279"/>
 <area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a0f55758246f2163248dc5f8b797dfd35" title="Binds the label&#39;s text to the localized name of the specified difficulty level." alt="" coords="859,177,1051,220"/>
-<area shape="poly" id="edge10_Node000009_Node000011" title=" " alt="" coords="728,274,837,230,858,223,860,228,839,234,730,279"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="728,274,837,230,858,223,860,228,839,234,730,279"/>
 <area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#afb3f11d45da403642574d63feff83fa6" title="Binds the pseudo&#45;class &quot;:selected&quot; state of the given buttons to the specified difficulty level." alt="" coords="841,244,1069,287"/>
-<area shape="poly" id="edge11_Node000009_Node000012" title=" " alt="" coords="775,285,826,278,826,284,775,290"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="775,285,826,278,826,284,775,290"/>
 <area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a280b2edb14468c04a0006653c1f75367" title="Binds the visibility of the stars box to whether the specified difficulty level is selected." alt="" coords="847,311,1063,353"/>
-<area shape="poly" id="edge12_Node000009_Node000013" title=" " alt="" coords="775,307,832,314,831,320,775,313"/>
+<area shape="poly" id="edge13_Node000009_Node000013" title=" " alt="" coords="775,307,832,314,831,320,775,313"/>
 <area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a5ebf700eadaca00234fe04813df0b09f" title="Binds the tooltip text properties of both buttons to the accessible text corresponding to the specifi..." alt="" coords="855,377,1055,420"/>
-<area shape="poly" id="edge13_Node000009_Node000014" title=" " alt="" coords="730,318,839,363,860,370,858,375,837,368,728,323"/>
-<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a7746116cfca8394695053b9c60c076fd" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="838,444,1072,487"/>
-<area shape="poly" id="edge14_Node000009_Node000015" title=" " alt="" coords="703,318,761,374,799,404,840,430,851,435,849,440,837,434,796,408,758,378,699,322"/>
+<area shape="poly" id="edge14_Node000009_Node000014" title=" " alt="" coords="730,318,839,363,860,370,858,375,837,368,728,323"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a7746116cfca8394695053b9c60c076fd" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="838,468,1072,511"/>
+<area shape="poly" id="edge15_Node000009_Node000015" title=" " alt="" coords="705,318,764,372,840,430,891,459,889,463,837,434,761,376,702,322"/>
+<area shape="poly" id="edge16_Node000015_Node000015" title=" " alt="" coords="903,468,901,458,910,449,928,443,955,441,985,444,1002,450,1000,455,983,449,955,447,929,449,913,453,906,459,909,467"/>
 <area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="586,544,775,587"/>
-<area shape="poly" id="edge19_Node000019_Node000020" title=" " alt="" coords="495,563,570,563,570,568,495,568"/>
+<area shape="poly" id="edge21_Node000019_Node000020" title=" " alt="" coords="495,563,570,563,570,568,495,568"/>
 </map>

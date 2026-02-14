@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.view.CrashScreenView.closeButtonClick" name="fr.softsf.sudokufx.view.CrashScreenView.closeButtonClick">
-<area shape="rect" id="Node000001" title="Handles the close button click event." alt="" coords="5,5,234,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae8a4111090a512677b14743dd3aa21d3" title="Hides and closes the crash screen stage." alt="" coords="282,5,506,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,24,266,24,266,29,234,29"/>
+<area shape="rect" id="Node000001" title="Handles the close button click event." alt="" coords="5,29,234,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="68,29,66,19,75,10,92,5,120,3,149,5,166,11,165,16,148,10,119,8,93,10,77,15,71,21,73,28"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae8a4111090a512677b14743dd3aa21d3" title="Hides and closes the crash screen stage." alt="" coords="282,29,506,72"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="234,48,266,48,266,53,234,53"/>
 </map>

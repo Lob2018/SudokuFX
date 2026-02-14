@@ -84,32 +84,32 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="756.88" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenGetDefaultScene_thenReturns</text>
 <text text-anchor="start" x="756.88" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">SameScene()</text>
 <text text-anchor="start" x="746.88" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="756.88" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenExceptionDuring</text>
-<text text-anchor="start" x="756.88" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToggleLanguage_whenToggleLanguage</text>
-<text text-anchor="start" x="756.88" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenCatchAndToast()</text>
+<text text-anchor="start" x="756.88" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenException</text>
+<text text-anchor="start" x="756.88" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenLoad_thenCatchAndReturn</text>
+<text text-anchor="start" x="756.88" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">Null()</text>
 <text text-anchor="start" x="746.88" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="756.88" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenGenericException</text>
-<text text-anchor="start" x="756.88" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenLoad_thenCatchAndReturnNull()</text>
-<text text-anchor="start" x="746.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="756.88" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenHostServicesAnd</text>
-<text text-anchor="start" x="756.88" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExistingFile_whenOpenLocalFile</text>
-<text text-anchor="start" x="756.88" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenShowDocumentIsCalled()</text>
+<text text-anchor="start" x="756.88" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenExceptionDuring</text>
+<text text-anchor="start" x="756.88" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToggleLanguage_whenToggleLanguage</text>
+<text text-anchor="start" x="756.88" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenCatchAndToast()</text>
+<text text-anchor="start" x="746.88" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="756.88" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenGenericException</text>
+<text text-anchor="start" x="756.88" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenLoad_thenCatchAndReturnNull()</text>
 <text text-anchor="start" x="746.88" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="756.88" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenHostServicesAnd</text>
-<text text-anchor="start" x="756.88" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">NonExistingFile_whenOpenLocalFile</text>
-<text text-anchor="start" x="756.88" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogsWarning()</text>
+<text text-anchor="start" x="756.88" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExistingFile_whenOpenLocalFile</text>
+<text text-anchor="start" x="756.88" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenShowDocumentIsCalled()</text>
 <text text-anchor="start" x="746.88" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="756.88" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenHostServicesAnd</text>
-<text text-anchor="start" x="756.88" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">NullFile_whenOpenLocalFile</text>
+<text text-anchor="start" x="756.88" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">NonExistingFile_whenOpenLocalFile</text>
 <text text-anchor="start" x="756.88" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogsWarning()</text>
 <text text-anchor="start" x="746.88" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="756.88" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenHostServicesSet</text>
-<text text-anchor="start" x="756.88" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenOpenGitHubRepositoryRelease</text>
-<text text-anchor="start" x="756.88" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">Url_thenShowDocumentIsCalled()</text>
+<text text-anchor="start" x="756.88" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenHostServicesAnd</text>
+<text text-anchor="start" x="756.88" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">NullFile_whenOpenLocalFile</text>
+<text text-anchor="start" x="756.88" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogsWarning()</text>
 <text text-anchor="start" x="746.88" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="756.88" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenHostServicesSet</text>
-<text text-anchor="start" x="756.88" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenOpenMyWebsiteUrl_thenShow</text>
-<text text-anchor="start" x="756.88" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">DocumentIsCalled()</text>
+<text text-anchor="start" x="756.88" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenOpenGitHubRepositoryRelease</text>
+<text text-anchor="start" x="756.88" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00">Url_thenShowDocumentIsCalled()</text>
 <text text-anchor="start" x="756.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 14 more...</text>
 <polygon fill="#666666" stroke="#666666" points="742.88,-474 742.88,-474 934.12,-474 934.12,-474 742.88,-474"/>
 <polygon fill="#666666" stroke="#666666" points="742.88,-382 742.88,-382 754.88,-382 754.88,-382 742.88,-382"/>

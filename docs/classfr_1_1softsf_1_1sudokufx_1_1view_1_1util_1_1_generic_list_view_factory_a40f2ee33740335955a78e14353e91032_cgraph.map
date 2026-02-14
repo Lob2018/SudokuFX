@@ -1,17 +1,21 @@
 <map id="fr.softsf.sudokufx.view.util.GenericListViewFactory.configurePlayerListView" name="fr.softsf.sudokufx.view.util.GenericListViewFactory.configurePlayerListView">
-<area shape="rect" id="Node000001" title="Configures the ListView used in the player menu." alt="" coords="5,245,222,304"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" title=" " alt="" coords="270,5,550,64"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,244,151,205,182,159,222,113,268,74,275,70,278,74,271,78,226,117,186,163,155,208,132,246"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" title=" " alt="" coords="284,88,536,147"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="145,243,201,199,268,156,280,151,283,155,271,161,204,203,149,247"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" title=" " alt="" coords="284,171,536,229"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,245,276,231,277,236,223,250"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" title=" " alt="" coords="300,253,520,296"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="222,272,284,272,284,277,222,277"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" title=" " alt="" coords="288,320,532,379"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="223,299,277,313,276,318,221,305"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#a649020523675d71d2bdf3040a1aa0c13" title="Binds the selection of a ListView bidirectionally with a Property." alt="" coords="277,403,543,461"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="149,302,204,346,271,388,283,394,280,399,268,393,201,351,145,306"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="302,485,518,544"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="132,303,155,341,186,387,226,432,271,471,289,481,286,486,268,476,222,436,182,390,151,344,128,306"/>
+<area shape="rect" id="Node000001" title="Configures the ListView used in the player menu." alt="" coords="5,341,222,400"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" title=" " alt="" coords="270,29,550,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,340,140,288,170,223,213,156,239,125,268,98,273,94,276,99,271,102,243,128,217,159,175,225,145,290,126,342"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" title=" " alt="" coords="284,136,536,195"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="133,339,189,271,227,235,268,204,277,200,279,204,271,209,230,239,193,275,137,342"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" title=" " alt="" coords="284,243,536,301"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="192,338,269,311,290,304,291,309,271,316,193,343"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" title=" " alt="" coords="300,349,520,392"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="222,368,284,368,284,373,222,373"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" title=" " alt="" coords="288,416,532,475"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="223,395,277,409,276,414,221,401"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#a649020523675d71d2bdf3040a1aa0c13" title="Binds the selection of a ListView bidirectionally with a Property." alt="" coords="277,499,543,557"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="149,398,204,442,271,484,283,490,280,495,268,489,201,447,145,402"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="302,581,518,640"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="132,399,155,437,186,483,226,528,271,567,289,577,286,582,268,572,222,532,182,486,151,440,128,402"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="352,29,353,19,364,10,383,5,410,3,441,5,460,13,458,17,440,11,410,8,384,10,367,15,358,21,358,29"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="352,135,353,125,364,117,383,111,410,109,441,112,460,119,458,124,440,117,410,115,384,117,367,121,358,128,358,136"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="352,242,353,232,364,223,383,218,410,216,441,219,460,226,458,231,440,224,410,221,384,223,367,228,358,235,358,243"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="354,349,352,339,361,330,381,325,410,323,442,325,460,331,459,336,441,330,410,328,382,330,364,335,357,341,360,348"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenPlayerWithCompletedGrid_whenGridIsComplete_thenToastTriggered" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenPlayerWithCompletedGrid_whenGridIsComplete_thenToastTriggered">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,312,64"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="360,13,578,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,32,344,32,344,37,312,37"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,21,312,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="360,29,578,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,48,344,48,344,53,312,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="411,29,409,19,418,10,438,5,469,3,502,5,522,11,520,16,501,10,469,8,439,10,421,15,414,21,416,28"/>
 </map>

@@ -1,8 +1,9 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.GamesCollectionTests.givenPlayer_whenConstructed_thenGamesIsNeverNull" name="fr.softsf.sudokufx.model.PlayerUTest.GamesCollectionTests.givenPlayer_whenConstructed_thenGamesIsNeverNull">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,316,89"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="105,30,106,20,116,11,134,6,161,4,191,7,209,14,207,19,189,12,160,9,135,11,119,16,111,23,110,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,316,101"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="105,42,106,32,116,23,134,18,161,16,191,19,209,26,207,31,189,24,160,21,135,23,119,28,111,35,110,43"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="364,5,530,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="316,39,348,35,349,41,316,45"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad6ffdca54d9d371b10b65b623dbbdeaf" title="Returns the games played by the player." alt="" coords="364,72,530,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,75,349,79,348,85,316,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="316,45,348,40,349,45,317,50"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad6ffdca54d9d371b10b65b623dbbdeaf" title="Returns the games played by the player." alt="" coords="364,96,530,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,94,349,99,348,104,316,99"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="393,96,391,86,400,77,419,71,447,69,478,72,496,78,494,83,476,77,447,75,420,77,403,81,396,87,398,95"/>
 </map>

@@ -1,7 +1,8 @@
 <map id="fr.softsf.sudokufx.navigation.Coordinator.setRootByFXMLName" name="fr.softsf.sudokufx.navigation.Coordinator.setRootByFXMLName">
-<area shape="rect" id="Node000001" title="Loads the specified FXML file, sets it as the root of the current JavaFX scene, and returns its contr..." alt="" coords="5,39,230,81"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa63a8ea1cf99200dbee0e27a3ce78060" title="Constructs the coordinator." alt="" coords="278,5,468,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,43,262,38,263,44,230,48"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a64e23a6257dc42929da8e6ee620fdca7" title="Package&#45;private method to exit the JavaFX platform." alt="" coords="278,72,468,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,72,263,76,262,82,230,77"/>
+<area shape="rect" id="Node000001" title="Loads the specified FXML file, sets it as the root of the current JavaFX scene, and returns its contr..." alt="" coords="5,63,230,105"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa63a8ea1cf99200dbee0e27a3ce78060" title="Constructs the coordinator." alt="" coords="278,29,468,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,67,262,62,263,68,230,72"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a64e23a6257dc42929da8e6ee620fdca7" title="Package&#45;private method to exit the JavaFX platform." alt="" coords="278,96,468,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="230,96,263,100,262,106,230,101"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="325,29,323,19,331,10,348,5,373,3,400,5,416,11,414,16,399,10,373,8,349,10,334,15,328,21,330,28"/>
 </map>

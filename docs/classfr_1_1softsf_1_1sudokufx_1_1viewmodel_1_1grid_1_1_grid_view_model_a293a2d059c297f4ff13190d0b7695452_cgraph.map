@@ -13,9 +13,11 @@
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="360,310,578,353"/>
 <area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="187,184,261,239,309,269,358,296,372,302,369,307,356,300,306,274,258,244,183,189"/>
 <area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="579,195,620,195,620,201,579,201"/>
-<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="553,307,580,296,604,280,628,263,690,225,693,230,630,267,607,285,582,300,555,312"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="630,277,860,319"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="578,316,614,311,615,316,579,321"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="629,343,860,386"/>
-<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="579,342,614,346,613,351,578,347"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="556,307,580,296,594,285,604,274,627,251,674,224,677,229,631,255,607,278,598,289,582,300,558,312"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="630,289,860,331"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="578,320,614,317,614,323,579,326"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="629,379,860,422"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="557,351,643,373,642,378,556,356"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="693,289,691,279,699,270,717,264,745,262,774,264,792,271,790,276,773,270,745,267,718,269,702,274,696,280,698,288"/>
+<area shape="poly" id="edge12_Node000009_Node000009" title=" " alt="" coords="693,379,691,369,699,360,717,355,745,353,774,355,792,361,790,366,773,360,745,358,718,360,702,365,696,371,698,378"/>
 </map>

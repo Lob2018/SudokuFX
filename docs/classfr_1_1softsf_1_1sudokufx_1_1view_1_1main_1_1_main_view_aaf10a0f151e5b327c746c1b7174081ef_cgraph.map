@@ -12,6 +12,7 @@
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="460,203,500,208,500,213,459,208"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a5ebf700eadaca00234fe04813df0b09f" title="Binds the tooltip text properties of both buttons to the accessible text corresponding to the specifi..." alt="" coords="524,272,723,315"/>
 <area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="409,213,508,258,527,264,525,269,506,262,406,218"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a7746116cfca8394695053b9c60c076fd" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="507,339,740,381"/>
-<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="385,213,437,269,471,299,508,324,519,330,516,334,506,329,468,303,433,273,381,217"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a7746116cfca8394695053b9c60c076fd" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="507,363,740,405"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="387,213,439,267,509,324,559,354,556,358,505,329,436,271,383,217"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="575,363,573,353,581,344,598,338,624,336,651,338,668,345,666,350,650,344,624,341,599,343,584,348,578,354,580,361"/>
 </map>

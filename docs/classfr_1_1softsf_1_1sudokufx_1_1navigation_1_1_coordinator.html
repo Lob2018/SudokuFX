@@ -165,7 +165,6 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a73459121b4bec5be9c5eea58bec75086" id="r_a73459121b4bec5be9c5eea58bec75086"><td class="memItemLeft">ApplicationContext&#160;</td><td class="memItemRight"><a class="el" href="#a73459121b4bec5be9c5eea58bec75086">applicationContext</a></td></tr>
 <tr class="memitem:a0b25ad20a22e1cdfda2b4469d88a587d" id="r_a0b25ad20a22e1cdfda2b4469d88a587d"><td class="memItemLeft">Scene&#160;</td><td class="memItemRight"><a class="el" href="#a0b25ad20a22e1cdfda2b4469d88a587d">defaultScene</a></td></tr>
-<tr class="memdesc:a0b25ad20a22e1cdfda2b4469d88a587d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The main JavaFX scene managed by this coordinator.  <br /></td></tr>
 <tr class="memitem:a709ac37adbaff7acbc20e18366a85239" id="r_a709ac37adbaff7acbc20e18366a85239"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html">DynamicFontSize</a>&#160;</td><td class="memItemRight"><a class="el" href="#a709ac37adbaff7acbc20e18366a85239">dynamicFontSize</a></td></tr>
 <tr class="memdesc:a709ac37adbaff7acbc20e18366a85239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility for responsive font resizing based on scene dimensions.  <br /></td></tr>
 <tr class="memitem:abcaae859838b7d23fb19c4cded75d16a" id="r_abcaae859838b7d23fb19c4cded75d16a"><td class="memItemLeft">final FXMLLoader&#160;</td><td class="memItemRight"><a class="el" href="#abcaae859838b7d23fb19c4cded75d16a">fxmlLoader</a></td></tr>
@@ -215,6 +214,12 @@ Manage player's language and provide host system integrations (URLs, local files
   </table>
   </dd>
 </dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_aa63a8ea1cf99200dbee0e27a3ce78060_cgraph.svg" width="202" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -285,6 +290,12 @@ Manage player's language and provide host system integrations (URLs, local files
 
 <p>Returns the JavaFX default scene managed by this coordinator. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current default scene </dd></dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_a8236a3100b3540f3c96b6b3db3042b30_cgraph.svg" width="202" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -373,6 +384,12 @@ Manage player's language and provide host system integrations (URLs, local files
   </table>
   </dd>
 </dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_a51f623613b1cd7c8cd7cd2a10f3d420d_cgraph.svg" width="202" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -543,11 +560,11 @@ Manage player's language and provide host system integrations (URLs, local files
 </div><div class="memdoc">
 
 <p>Loads the specified FXML file, sets it as the root of the current JavaFX scene, and returns its controller. </p>
-<p>This method uses <code><a class="el" href="">FXMLLoader</a></code> together with Spring's <code><a class="el" href="">ApplicationContext</a></code> to instantiate the controller and inject Spring-managed beans <b>if the context is available</b>.</p>
-<p><b>Important:</b> If the Spring application context is not yet initialized, or if a bean failed to initialize, the <code class="JavaDocCode">applicationContext</code> field will be <code class="JavaDocCode">null</code>. In that case, the controller is instantiated by <code><a class="el" href="">FXMLLoader</a></code> alone, without Spring injection. This prevents a <code><a class="el" href="">NullPointerException</a></code> when calling <code class="JavaDocCode"><br/>
-applicationContext.getBean(...)</code>.</p>
+<p>This method uses <code><a class="el" href="">FXMLLoader</a></code> together with Spring's <code><a class="el" href="">ApplicationContext</a></code> to instantiate the controller and inject Spring-managed beans when the context is available.</p>
+<p><b>Initialization requirements:</b> <code><a class="el" href="#a51f623613b1cd7c8cd7cd2a10f3d420d">setDefaultScene(Scene)</a></code> must have been called before invoking this method. If the default scene or the shared <code><a class="el" href="">FXMLLoader</a></code> is not initialized, an <code><a class="el" href="">IllegalStateException</a></code> is thrown immediately rather than catching a <code><a class="el" href="">NullPointerException</a></code>.</p>
+<p>If the Spring application context is not yet initialized, the controller is instantiated by <code><a class="el" href="">FXMLLoader</a></code> alone, without Spring injection.</p>
 <p>If <code><a class="el" href="#a709ac37adbaff7acbc20e18366a85239">dynamicFontSize</a></code> is set, font sizes are updated after loading.</p>
-<p>Any exception during loading (e.g., FXML not found, controller instantiation failure) is logged. The application is terminated via <code><a class="el" href="">Platform#exit()</a></code> in case of critical errors.</p>
+<p>Any exception during loading (e.g., FXML not found, controller instantiation failure) is logged, and the application exits via <code><a class="el" href="">Platform#exit()</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">&lt;T&gt;</td><td>the controller type </td></tr>
@@ -555,18 +572,19 @@ applicationContext.getBean(...)</code>.</p>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the controller instance, or <code class="JavaDocCode">null</code> if loading fails or Spring context is unavailable </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the controller instance, or <code class="JavaDocCode">null</code> if loading fails </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">fxml</code> is null or blank </td></tr>
+    <tr><td class="paramname">IllegalStateException</td><td>if required components (scene or loader) are not initialized </td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_a76beb2414cb9e9e68181f08fd930f0b9_cgraph.svg" width="474" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_a76beb2414cb9e9e68181f08fd930f0b9_cgraph.svg" width="474" height="144"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -617,10 +635,10 @@ applicationContext.getBean(...)</code>.</p>
 <p>Updates the current player's language, refreshes the player state, and switches the translation bundle. Exceptions from updating the player are caught, logged, and displayed as a toast notification via the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a></code>.</p>
 <p>This method no longer requires an explicit <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html">ToasterVBox</a></code> parameter since error handling is delegated to the injected <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a></code>.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a8b0b569fe624474d8fbb3765f11e1c00" title="Sends an error toast.">ToasterService.showError(String, String)</a> </dd></dl>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_a67f2ba8f85685181dea0c4a2263a61dc_cgraph.svg" width="474" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -734,8 +752,6 @@ applicationContext.getBean(...)</code>.</p>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>The main JavaFX scene managed by this coordinator. </p>
 
 </div>
 </div>

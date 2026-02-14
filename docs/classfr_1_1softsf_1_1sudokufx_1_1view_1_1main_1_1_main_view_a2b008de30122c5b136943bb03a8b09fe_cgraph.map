@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.view.main.MainView.handleGridOpacity" name="fr.softsf.sudokufx.view.main.MainView.handleGridOpacity">
-<area shape="rect" id="Node000001" title="Handles grid transparency toggle button action." alt="" coords="5,5,195,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="243,5,432,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,24,227,24,227,29,195,29"/>
+<area shape="rect" id="Node000001" title="Handles grid transparency toggle button action." alt="" coords="5,29,195,72"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="55,29,53,19,61,10,76,5,100,3,125,5,141,11,139,16,124,10,100,8,78,10,64,15,58,21,60,28"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="243,29,432,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,48,227,48,227,53,195,53"/>
 </map>

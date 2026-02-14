@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.service.ui.ToasterService.removeToastRequestProperty" name="fr.softsf.sudokufx.service.ui.ToasterService.removeToastRequestProperty">
+<area shape="rect" id="Node000001" title="Returns a read&#45;only observable property that signals requests to remove a toast." alt="" coords="5,29,242,88"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="77,29,78,19,87,10,102,5,124,3,149,5,164,13,162,17,147,11,123,8,103,10,89,15,83,21,82,29"/>
+</map>

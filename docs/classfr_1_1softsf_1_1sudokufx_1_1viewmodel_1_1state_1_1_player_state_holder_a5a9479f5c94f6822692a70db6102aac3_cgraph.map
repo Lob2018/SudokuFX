@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.currentPlayerProperty" name="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.currentPlayerProperty">
+<area shape="rect" id="Node000001" title="Returns the property holding the current player for JavaFX bindings." alt="" coords="5,29,263,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="85,29,84,19,92,10,109,5,134,3,161,5,178,11,176,16,160,10,134,8,110,10,95,15,89,21,91,28"/>
+</map>

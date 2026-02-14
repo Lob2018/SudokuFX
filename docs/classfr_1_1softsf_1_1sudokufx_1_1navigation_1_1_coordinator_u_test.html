@@ -118,6 +118,7 @@ Package Functions</h2></td></tr>
 <tr class="memitem:a24a23c29ced2f041243d9cece9cefde4" id="r_a24a23c29ced2f041243d9cece9cefde4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a24a23c29ced2f041243d9cece9cefde4">cleanup</a> ()  throws Exception </td></tr>
 <tr class="memitem:ae7f6fdece18ac2cd66e6d86db50bcc6e" id="r_ae7f6fdece18ac2cd66e6d86db50bcc6e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae7f6fdece18ac2cd66e6d86db50bcc6e">givenBlankFXMLName_whenSetRootByFXMLName_thenThrowsIllegalArgumentException</a> ()</td></tr>
 <tr class="memitem:a5e00d5cafb51cb95835da7746690c202" id="r_a5e00d5cafb51cb95835da7746690c202"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5e00d5cafb51cb95835da7746690c202">givenDefaultSceneSet_whenGetDefaultScene_thenReturnsSameScene</a> ()</td></tr>
+<tr class="memitem:a9410ad8b9ab11a253965426b5bb68873" id="r_a9410ad8b9ab11a253965426b5bb68873"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9410ad8b9ab11a253965426b5bb68873">givenException_whenLoad_thenCatchAndReturnNull</a> ()  throws Exception </td></tr>
 <tr class="memitem:ab3e9d81bc331ed2bd25dd5c6a8c60646" id="r_ab3e9d81bc331ed2bd25dd5c6a8c60646"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab3e9d81bc331ed2bd25dd5c6a8c60646">givenExceptionDuringToggleLanguage_whenToggleLanguage_thenCatchAndToast</a> ()</td></tr>
 <tr class="memitem:a612ceceb60686254906437b532699bc0" id="r_a612ceceb60686254906437b532699bc0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a612ceceb60686254906437b532699bc0">givenGenericException_whenLoad_thenCatchAndReturnNull</a> ()  throws Exception </td></tr>
 <tr class="memitem:a2b11e80d88857cf1e01db270b129d862" id="r_a2b11e80d88857cf1e01db270b129d862"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b11e80d88857cf1e01db270b129d862">givenHostServicesAndExistingFile_whenOpenLocalFile_thenShowDocumentIsCalled</a> ()  throws Exception </td></tr>
@@ -134,7 +135,6 @@ Package Functions</h2></td></tr>
 <tr class="memitem:a6edc9f68c5b029401870d56b46ccc6e3" id="r_a6edc9f68c5b029401870d56b46ccc6e3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6edc9f68c5b029401870d56b46ccc6e3">givenNullDynamicFontSize_whenSetDynamicFontSize_thenThrowsIllegalArgumentException</a> ()</td></tr>
 <tr class="memitem:a1791068100211c7d65405a797a990904" id="r_a1791068100211c7d65405a797a990904"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1791068100211c7d65405a797a990904">givenNullFXMLLoader_whenValidateConfiguration_thenThrowsIllegalArgumentException</a> ()</td></tr>
 <tr class="memitem:ac1c1b33947d97fe12f108bfd91344d31" id="r_ac1c1b33947d97fe12f108bfd91344d31"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac1c1b33947d97fe12f108bfd91344d31">givenNullHostServices_whenSetHostServices_thenThrowsIllegalArgumentException</a> ()</td></tr>
-<tr class="memitem:ae165b82d9d71ea754e7d0f77c91d5dda" id="r_ae165b82d9d71ea754e7d0f77c91d5dda"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae165b82d9d71ea754e7d0f77c91d5dda">givenNullPointerException_whenLoad_thenCatchAndReturnNull</a> ()  throws Exception </td></tr>
 <tr class="memitem:ae9d391865052e17a211105f3bd2cb97f" id="r_ae9d391865052e17a211105f3bd2cb97f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae9d391865052e17a211105f3bd2cb97f">givenNullScene_whenSetDefaultScene_thenThrowsIllegalArgumentException</a> ()</td></tr>
 <tr class="memitem:a57abd13a6c01a755494ef657ed24be57" id="r_a57abd13a6c01a755494ef657ed24be57"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57abd13a6c01a755494ef657ed24be57">givenPlayerStateHolder_whenGetCurrentPlayerLanguageIso_thenReturnsIsoCode</a> ()</td></tr>
 <tr class="memitem:a761650dcef5c2c98d3330f3f99fae9b0" id="r_a761650dcef5c2c98d3330f3f99fae9b0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a761650dcef5c2c98d3330f3f99fae9b0">givenValidFXMLName_whenSetRootByFXMLName_thenSetsRootAndReturnsController</a> ()  throws Exception </td></tr>
@@ -219,6 +219,31 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9410ad8b9ab11a253965426b5bb68873" name="a9410ad8b9ab11a253965426b5bb68873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9410ad8b9ab11a253965426b5bb68873">&#9670;&#160;</a></span>givenException_whenLoad_thenCatchAndReturnNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.navigation.CoordinatorUTest.givenException_whenLoad_thenCatchAndReturnNull </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
         </tr>
       </table>
   </td>
@@ -619,31 +644,6 @@ Private Attributes</h2></td></tr>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae165b82d9d71ea754e7d0f77c91d5dda" name="ae165b82d9d71ea754e7d0f77c91d5dda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae165b82d9d71ea754e7d0f77c91d5dda">&#9670;&#160;</a></span>givenNullPointerException_whenLoad_thenCatchAndReturnNull()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNullPointerException_whenLoad_thenCatchAndReturnNull </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> throws Exception</td>
         </tr>
       </table>
   </td>
