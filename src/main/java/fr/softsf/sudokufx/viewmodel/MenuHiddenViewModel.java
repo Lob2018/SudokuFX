@@ -10,6 +10,7 @@ import javafx.beans.binding.StringBinding;
 
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
@@ -40,6 +41,11 @@ public class MenuHiddenViewModel {
      *
      * @return the StringBinding for the button's accessibility text.
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding menuHiddenButtonShowAccessibilityTextProperty() {
         return menuHiddenButtonShowAccessibilityText;
     }

@@ -13,6 +13,7 @@ import java.util.Set;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -166,21 +167,41 @@ public class Player {
     }
 
     /** Returns the language of the player. */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JPA entities must be returned by reference; defensive copies break"
+                            + " persistence.")
     public PlayerLanguage getPlayerlanguageid() {
         return playerlanguageid;
     }
 
     /** Returns the options associated with the player. */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JPA entities must be returned by reference; defensive copies break"
+                            + " persistence.")
     public Options getOptionsid() {
         return optionsid;
     }
 
     /** Returns the menu associated with the player. */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JPA entities must be returned by reference; defensive copies break"
+                            + " persistence.")
     public Menu getMenuid() {
         return menuid;
     }
 
     /** Returns the games played by the player. */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JPA entities must be returned by reference; defensive copies break"
+                            + " persistence.")
     public Set<Game> getGames() {
         return games;
     }

@@ -10,6 +10,7 @@ import javafx.beans.binding.StringBinding;
 
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
@@ -87,62 +88,137 @@ public class MenuMiniViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding showAccessibleTextProperty() {
         return showAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding playerAccessibleTextProperty() {
         return playerAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding solveAccessibleTextProperty() {
         return solveAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding backupAccessibleTextProperty() {
         return backupAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding optionsAccessibleTextProperty() {
         return optionsAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding languageAccessibleTextProperty() {
         return languageAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding helpAccessibleTextProperty() {
         return helpAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding menuMiniButtonLanguageIsoTextProperty() {
         return languageIso;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding showTooltipProperty() {
         return showTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding playerTooltipProperty() {
         return playerTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding solveTooltipProperty() {
         return solveTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding backupTooltipProperty() {
         return backupTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding optionsTooltipProperty() {
         return optionsTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding languageTooltipProperty() {
         return languageTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding helpTooltipProperty() {
         return helpTooltip;
     }

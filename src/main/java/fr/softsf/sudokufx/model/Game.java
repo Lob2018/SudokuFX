@@ -11,6 +11,7 @@ import java.util.Objects;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -142,17 +143,32 @@ public class Game {
 
     /** Returns the {@link Grid} associated with this game. */
     @Nonnull
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JPA entities must be returned by reference; defensive copies break"
+                            + " persistence.")
     public Grid getGridid() {
         return gridid;
     }
 
     /** Returns the {@link Player} associated with this game. */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JPA entities must be returned by reference; defensive copies break"
+                            + " persistence.")
     public Player getPlayerid() {
         return playerid;
     }
 
     /** Returns the {@link GameLevel} of this game. */
     @Nonnull
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JPA entities must be returned by reference; defensive copies break"
+                            + " persistence.")
     public GameLevel getLevelid() {
         return levelid;
     }

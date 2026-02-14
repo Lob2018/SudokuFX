@@ -16,6 +16,7 @@ import javafx.collections.ObservableList;
 
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.dto.MenuDto;
 import fr.softsf.sudokufx.dto.OptionsDto;
@@ -206,82 +207,182 @@ public class MenuPlayerViewModel {
                 Instant.now());
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public ObservableList<PlayerDto> getPlayers() {
         return players;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public ObjectProperty<PlayerDto> selectedPlayerProperty() {
         return playerStateHolder.currentPlayerProperty();
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding playerAccessibleTextProperty() {
         return playerAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding playerTooltipProperty() {
         return playerTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding playerRoleDescriptionProperty() {
         return playerRoleDescription;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding maxiPlayerTooltipProperty() {
         return maxiPlayerTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding maxiPlayerRoleDescriptionProperty() {
         return maxiPlayerRoleDescription;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding editAccessibleTextProperty() {
         return editAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding editTooltipProperty() {
         return editTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding editRoleDescriptionProperty() {
         return editRoleDescription;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding newAccessibleTextProperty() {
         return newAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding newTooltipProperty() {
         return newTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding newTextProperty() {
         return newText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding newRoleDescriptionProperty() {
         return newRoleDescription;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding reduceAccessibleTextProperty() {
         return reduceAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding reduceTooltipProperty() {
         return reduceTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding reduceTextProperty() {
         return reduceText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding cellButtonAccessibleTextProperty() {
         return cellButtonAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding cellConfirmationTitleProperty() {
         return cellConfirmationTitle;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding cellConfirmationMessageProperty() {
         return cellConfirmationMessage;
     }

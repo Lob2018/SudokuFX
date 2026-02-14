@@ -23,6 +23,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.gluonhq.ignite.spring.SpringContext;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.FxmlView;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.LogBackTxt;
@@ -57,6 +58,12 @@ public class SudoMain extends Application {
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
     private IMainView iMainView;
+
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "JavaFX Stage must be stored by reference; defensive copies are impossible and"
+                            + " break the JavaFX lifecycle.")
     private Stage stage;
 
     @Autowired private Coordinator coordinator;

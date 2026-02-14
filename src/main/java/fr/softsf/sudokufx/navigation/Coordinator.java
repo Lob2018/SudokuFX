@@ -18,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
@@ -75,6 +76,11 @@ public class Coordinator {
      *
      * @param fxmlLoader shared loader
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "FXMLLoader must be stored by reference; defensive copies are impossible and"
+                            + " break JavaFX/Spring controller injection.")
     public Coordinator(FXMLLoader fxmlLoader) {
         this.fxmlLoader = fxmlLoader;
     }
@@ -97,6 +103,10 @@ public class Coordinator {
      *
      * @return the current default scene
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX Scene must be returned by reference; no defensive copy is possible.")
     public Scene getDefaultScene() {
         return defaultScene;
     }
@@ -107,6 +117,11 @@ public class Coordinator {
      * @param scene non-null scene
      * @throws IllegalArgumentException if null
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "JavaFX Scene must be stored by reference; defensive copies are impossible and"
+                            + " break UI behavior.")
     public void setDefaultScene(Scene scene) {
         if (Objects.isNull(scene)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(

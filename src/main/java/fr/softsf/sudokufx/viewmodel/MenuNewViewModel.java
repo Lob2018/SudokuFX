@@ -17,6 +17,7 @@ import javafx.concurrent.Task;
 
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.service.external.VersionService;
 
@@ -68,22 +69,47 @@ public class MenuNewViewModel {
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding maxiNewAccessibleTextProperty() {
         return maxiNewAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding maxiNewTextProperty() {
         return maxiNewText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding newAccessibleTextProperty() {
         return newAccessibleText;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding maxiNewTooltipProperty() {
         return maxiNewTooltip;
     }
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringBinding newTooltipProperty() {
         return newTooltip;
     }
@@ -119,6 +145,11 @@ public class MenuNewViewModel {
      *
      * @return a BooleanProperty representing out-of-date status
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public BooleanProperty isOutOfDateProperty() {
         return isOutOfDate;
     }
@@ -128,6 +159,11 @@ public class MenuNewViewModel {
      *
      * @return a StringProperty with status messages
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public StringProperty statusMessageProperty() {
         return statusMessage;
     }

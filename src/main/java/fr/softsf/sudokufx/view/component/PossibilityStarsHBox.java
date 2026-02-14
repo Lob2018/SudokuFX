@@ -15,6 +15,7 @@ import javafx.geometry.Pos;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
@@ -47,6 +48,11 @@ public final class PossibilityStarsHBox extends HBox {
      *
      * @return the percentage property
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public IntegerProperty getPercentage() {
         return percentage;
     }

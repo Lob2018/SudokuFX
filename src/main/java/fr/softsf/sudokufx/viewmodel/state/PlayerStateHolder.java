@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
 import jakarta.annotation.PostConstruct;
@@ -51,6 +52,11 @@ public class PlayerStateHolder {
      *
      * @return the observable {@link ObjectProperty} of {@link PlayerDto}
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public ObjectProperty<PlayerDto> currentPlayerProperty() {
         return currentPlayer;
     }

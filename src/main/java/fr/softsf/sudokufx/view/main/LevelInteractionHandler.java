@@ -18,6 +18,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
 
+import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
@@ -50,6 +51,9 @@ public class LevelInteractionHandler {
      * @param menuLevelViewModel the view model for level state updates
      * @param gridViewModel the view model for core grid operations
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification = "Spring ViewModels are singletons and must be stored by reference.")
     public LevelInteractionHandler(
             MenuOptionsViewModel menuOptionsViewModel,
             MenuLevelViewModel menuLevelViewModel,

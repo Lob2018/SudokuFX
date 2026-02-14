@@ -11,6 +11,8 @@ import javafx.beans.property.SimpleObjectProperty;
 
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 /**
  * ViewModel component managing the currently active menu or submenu. Provides observable state for
  * UI bindings and enforces non-null values.
@@ -34,6 +36,11 @@ public class ActiveMenuOrSubmenuViewModel {
             new SimpleObjectProperty<>(ActiveMenu.MAXI);
 
     /** Returns the observable property representing the active menu. */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public ObjectProperty<ActiveMenu> getActiveMenu() {
         return activeMenu;
     }

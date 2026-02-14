@@ -27,6 +27,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
+import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -82,6 +83,9 @@ public final class CrashScreenView implements IMainView {
 
     /** Handles the close button click event. Logs the action and exits the application. */
     @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void closeButtonClick() {
         LOG.info("▓▓▓▓ The user choose to close the application, triggering Platform.exit()");
         hidecrashscreen();
@@ -93,6 +97,9 @@ public final class CrashScreenView implements IMainView {
      * then exits the application.
      */
     @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void resetButtonClick() {
         LOG.info("▓▓▓▓ The user choose to reset the application data");
         Path pathToDelete = Paths.get(I_OS_FOLDER_FACTORY.getOsDataFolderPath());
@@ -137,6 +144,9 @@ public final class CrashScreenView implements IMainView {
      * loading the FXML.
      */
     @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Lifecycle method invoked by FXML loader via reflection.")
     private void initialize() {
         final Color crashDefaultFontColor = Color.web("#ffffff");
         crashscreenStage

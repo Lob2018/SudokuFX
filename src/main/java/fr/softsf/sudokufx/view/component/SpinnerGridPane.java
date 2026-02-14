@@ -17,6 +17,8 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 /**
  * A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons. The
  * spinner visibility is reactive and managed via a BooleanProperty, typically bound to a ViewModel
@@ -66,6 +68,11 @@ public final class SpinnerGridPane extends GridPane {
     /**
      * @return The property controlling the spinner visibility and animation lifecycle.
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public BooleanProperty loadingProperty() {
         return loading;
     }

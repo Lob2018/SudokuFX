@@ -16,6 +16,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -115,6 +116,25 @@ public class GridViewModel {
                 "");
     }
 
+    /**
+     * Initializes the GridViewModel with essential domain services and reactive state holders.
+     *
+     * <p>This constructor orchestrates dependencies for Sudoku generation, validation, player
+     * persistence, and UI feedback.
+     *
+     * @param iGridMaster service for Sudoku grid generation and solving algorithms
+     * @param activeMenuOrSubmenuViewModel view model for tracking the active UI context
+     * @param audioService service for managing game sound effects and music
+     * @param playerStateHolder global holder for the current player's state
+     * @param playerService business service for player and game persistence
+     * @param iGridConverter utility for converting between grid formats (arrays, strings, lists)
+     * @param toasterService service for pushing notifications to the user interface
+     */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "Domain services and state holders must be stored by reference to ensure"
+                            + " cross-layer reactivity.")
     public GridViewModel(
             IGridMaster iGridMaster,
             ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,

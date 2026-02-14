@@ -16,6 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
@@ -31,6 +32,17 @@ public class AsyncFileProcessorService {
     private final ToasterService toasterService;
     private final SpinnerService spinnerService;
 
+    /**
+     * Constructs the service with required UI notification and feedback components.
+     *
+     * @param toasterService the {@link ToasterService} for displaying UI messages
+     * @param spinnerService the {@link SpinnerService} for managing the loading indicator
+     */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "Spring-managed services must be stored by reference; defensive copies are"
+                            + " impossible and break dependency injection.")
     public AsyncFileProcessorService(ToasterService toasterService, SpinnerService spinnerService) {
         this.toasterService = toasterService;
         this.spinnerService = spinnerService;

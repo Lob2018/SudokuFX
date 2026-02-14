@@ -16,6 +16,7 @@ import javafx.beans.property.SimpleObjectProperty;
 
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
@@ -39,6 +40,11 @@ public class MenuLevelViewModel {
      *
      * @return the selected difficulty level property
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public ObjectProperty<DifficultyLevel> selectedLevelProperty() {
         return selectedLevel;
     }
@@ -144,6 +150,11 @@ public class MenuLevelViewModel {
      *
      * @return the stars completion percentage property
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public IntegerProperty percentageProperty() {
         return starsPercentage;
     }

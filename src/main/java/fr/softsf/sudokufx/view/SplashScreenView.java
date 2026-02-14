@@ -26,6 +26,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
@@ -88,6 +89,10 @@ public final class SplashScreenView implements ISplashScreenView {
      *
      * @param splashScreenStageP The Stage to use for the splash screen
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "The Stage is a mandatory JavaFX container that must be stored by reference.")
     public SplashScreenView(final Stage splashScreenStageP) {
         splashScreenStage = splashScreenStageP;
         fxmlLikeStructure();
@@ -305,6 +310,11 @@ public final class SplashScreenView implements ISplashScreenView {
     }
 
     @Override
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX Scene must be returned by reference; defensive copies are impossible"
+                            + " and break UI behavior.")
     public Scene getSplashScreenScene() {
         return scene;
     }

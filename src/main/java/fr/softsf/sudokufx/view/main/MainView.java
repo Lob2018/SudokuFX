@@ -35,6 +35,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.util.Duration;
 
+import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -211,6 +212,11 @@ public final class MainView implements IMainView {
 
     private Timeline hideMiniMenuTimeline;
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "MainView is a central hub for Spring-managed singletons; reference storage is"
+                            + " mandatory for binding and coordination.")
     public MainView(
             ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,
             Coordinator coordinator,
@@ -267,6 +273,9 @@ public final class MainView implements IMainView {
      * </ul>
      */
     @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Lifecycle method invoked by FXML loader via reflection.")
     private void initialize() {
         primaryStage = new Stage();
         I18n.INSTANCE.setLocaleBundle(coordinator.getCurrentPlayerLanguageIso());
@@ -947,6 +956,9 @@ public final class MainView implements IMainView {
      * asynchronous loading.
      */
     @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void handleFileImageChooser() {
         fileChooserService
                 .chooseFile(primaryStage, FileChooserService.FileType.IMAGE)
@@ -961,6 +973,9 @@ public final class MainView implements IMainView {
      * path.
      */
     @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void handleFileSongChooser() {
         fileChooserService
                 .chooseFile(primaryStage, FileChooserService.FileType.AUDIO)
@@ -976,6 +991,9 @@ public final class MainView implements IMainView {
 
     /** Handles grid transparency toggle button action. */
     @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void handleGridOpacity() {
         boolean isOpaque = menuOptionsViewModel.toggleGridOpacityAndPersist();
         applyOpaqueMode(isOpaque);
@@ -1012,6 +1030,9 @@ public final class MainView implements IMainView {
      * @param event the mouse or keyboard event captured from the UI
      */
     @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void handleLevelAction(InputEvent event) {
         levelInteractionHandler.handleAction(event, this::applyOpaqueMode);
     }

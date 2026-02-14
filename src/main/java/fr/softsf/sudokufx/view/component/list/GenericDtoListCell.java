@@ -19,6 +19,7 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 
+import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -68,6 +69,9 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
      *     (localized)
      * @param displayTextFunction function to generate the display text for each item
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification = "The ListView must be stored by reference to modify its items list.")
     public GenericDtoListCell(
             ListView<T> listView,
             String buttonText,

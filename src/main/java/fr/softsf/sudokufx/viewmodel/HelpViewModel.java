@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ButtonType;
 
+import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.AppPaths;
@@ -42,6 +43,11 @@ public class HelpViewModel {
      * @param iOsFolder service providing OS folder paths
      * @param coordinator navigation coordinator for external actions
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "Injected infrastructure services must be stored by reference for"
+                            + " cross-component coordination.")
     public HelpViewModel(IOsFolder iOsFolder, Coordinator coordinator) {
         this.iOsFolder = iOsFolder;
         this.coordinator = coordinator;

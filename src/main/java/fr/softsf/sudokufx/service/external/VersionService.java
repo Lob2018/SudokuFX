@@ -21,6 +21,7 @@ import org.springframework.stereotype.Service;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.MyDateTime;
@@ -63,6 +64,11 @@ public class VersionService {
      * @param objectMapper the {@link ObjectMapper} for JSON deserialization
      * @param spinnerService the {@link SpinnerService} for UI loading feedback
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "Spring-managed ObjectMapper must be stored by reference; defensive copies are"
+                            + " impossible and break JSON configuration consistency.")
     public VersionService(
             HttpClient httpClient, ObjectMapper objectMapper, SpinnerService spinnerService) {
         this.httpClient = httpClient;

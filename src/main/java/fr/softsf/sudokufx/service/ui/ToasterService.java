@@ -16,6 +16,7 @@ import javafx.beans.property.SimpleObjectProperty;
 
 import org.springframework.stereotype.Service;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.dto.ToastData;
 
@@ -30,11 +31,21 @@ public class ToasterService {
     private final BooleanProperty removeToastRequest = new SimpleBooleanProperty(false);
 
     /** Returns a read-only observable property for toast notifications. */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for binding; defensive copies are"
+                            + " impossible and break UI reactivity.")
     public ReadOnlyObjectProperty<ToastData> toastRequestProperty() {
         return toastRequest;
     }
 
     /** Returns a read-only observable property that signals requests to remove a toast. */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for listeners and bindings;"
+                            + " defensive copies break UI reactivity.")
     public ReadOnlyBooleanProperty removeToastRequestProperty() {
         return removeToastRequest;
     }
