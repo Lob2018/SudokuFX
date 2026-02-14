@@ -119,16 +119,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad9235162514fff9999f723bb791d4da1" id="r_ad9235162514fff9999f723bb791d4da1"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="#ad9235162514fff9999f723bb791d4da1">GrilleResolue</a> (boolean solved, @Nonnull @NotNull(message=&quot;solvedGrid must not be null&quot;) @Size(min=81, max=81, message=&quot;solvedGrid must contain exactly 81 elements&quot;) int[] solvedGrid, @Min(value=0, message=&quot;possibilityPercentage must be &gt;= 0&quot;) @Max(value=100, message=&quot;possibilityPercentage must be &lt;= 100&quot;) int possibilityPercentage)</td></tr>
-<tr class="memdesc:ad9235162514fff9999f723bb791d4da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record representing the result of solving a Sudoku grid.  <br /></td></tr>
-<tr class="memitem:ac3d62f66e8acd5749e3037a6ad06f21e" id="r_ac3d62f66e8acd5749e3037a6ad06f21e"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="#ac3d62f66e8acd5749e3037a6ad06f21e">GrillesCrees</a> ( @Nonnull @NotNull(message=&quot;grilleResolue must not be null&quot;) @Size(min=81, max=81, message=&quot;grilleResolue must contain exactly 81 elements&quot;) int[] grilleResolue, @Nonnull @NotNull(message=&quot;grilleAResoudre must not be null&quot;) @Size(min=81, max=81, message=&quot;grilleAResoudre must contain exactly 81 elements&quot;) int[] grilleAResoudre, @Min(value=0, message=&quot;pourcentageDesPossibilites must be &gt;= 0&quot;) @Max(value=100, message=&quot;pourcentageDesPossibilites must be &lt;= 100&quot;) int pourcentageDesPossibilites)</td></tr>
-<tr class="memdesc:ac3d62f66e8acd5749e3037a6ad06f21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record representing the result of a grid generation: the solved grid, the puzzle grid, and the estimated possibility percentage.  <br /></td></tr>
+<tr class="memitem:aa86aff33589489ef55f1a9747a8f6d5d" id="r_aa86aff33589489ef55f1a9747a8f6d5d"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="#aa86aff33589489ef55f1a9747a8f6d5d">GrilleResolue</a> (boolean solved, @Nonnull @NotNull(message=&quot;solvedGrid must not be null&quot;) @Size(min=CASES_NUMBER, max=CASES_NUMBER, message=&quot;solvedGrid must contain exactly 81 elements&quot;) int[] solvedGrid, @Min(value=0, message=&quot;possibilityPercentage must be &gt;= 0&quot;) @Max(value=100, message=&quot;possibilityPercentage must be &lt;= 100&quot;) int possibilityPercentage)</td></tr>
+<tr class="memdesc:aa86aff33589489ef55f1a9747a8f6d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immutable record representing a Sudoku grid resolution result.  <br /></td></tr>
+<tr class="memitem:a96eda4804ac4a3c9f57c9960599f724c" id="r_a96eda4804ac4a3c9f57c9960599f724c"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="#a96eda4804ac4a3c9f57c9960599f724c">GrillesCrees</a> ( @Nonnull @NotNull(message=&quot;grilleResolue must not be null&quot;) @Size(min=81, max=81) int[] grilleResolue, @Nonnull @NotNull(message=&quot;grilleAResoudre must not be null&quot;) @Size(min=81, max=81) int[] grilleAResoudre, @Min(value=0, message=&quot;possibilityPercentage must be &gt;= 0&quot;) @Max(value=100, message=&quot;possibilityPercentage must be &lt;= 100&quot;) int pourcentageDesPossibilites)</td></tr>
+<tr class="memdesc:a96eda4804ac4a3c9f57c9960599f724c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immutable record representing the dual output of a Sudoku grid generation.  <br /></td></tr>
 <tr class="memitem:adc44f4bbb0133e984077a0acaf24cf55" id="r_adc44f4bbb0133e984077a0acaf24cf55"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a> (int min, int max)</td></tr>
 <tr class="memdesc:adc44f4bbb0133e984077a0acaf24cf55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immutable container for level-specific possibility boundaries.  <br /></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="ad9235162514fff9999f723bb791d4da1" name="ad9235162514fff9999f723bb791d4da1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9235162514fff9999f723bb791d4da1">&#9670;&#160;</a></span>GrilleResolue()</h2>
+<a id="aa86aff33589489ef55f1a9747a8f6d5d" name="aa86aff33589489ef55f1a9747a8f6d5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa86aff33589489ef55f1a9747a8f6d5d">&#9670;&#160;</a></span>GrilleResolue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +141,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Nonnull @NotNull(message=&quot;solvedGrid must not be null&quot;) @Size(min=81, max=81, message=&quot;solvedGrid must contain exactly 81 elements&quot;) int[]</td>          <td class="paramname"><span class="paramname"><em>solvedGrid</em></span>, </td>
+          <td class="paramtype">@Nonnull @NotNull(message=&quot;solvedGrid must not be null&quot;) @Size(min=CASES_NUMBER, max=CASES_NUMBER, message=&quot;solvedGrid must contain exactly 81 elements&quot;) int[]</td>          <td class="paramname"><span class="paramname"><em>solvedGrid</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -151,27 +151,57 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Record representing the result of solving a Sudoku grid. </p>
-<p>Contains :</p>
-<ul>
-<li>
-<code class="JavaDocCode">solved</code>: whether the grid was successfully solved </li>
-<li>
-<code class="JavaDocCode">solvedGrid</code>: the solved grid or partially filled grid if no complete solution was found </li>
-<li>
-<code class="JavaDocCode">possibilityPercentage</code>: percentage of possibilities, between 0 and 100, estimating coherence or difficulty </li>
-</ul>
+<p>Immutable record representing a Sudoku grid resolution result. </p>
+<p>Ensures data integrity through a fail-fast canonical constructor and defensive cloning to prevent representation exposure (SpotBugs EI_EXPOSE_REP).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">solved</td><td>True if the resolution was successful. </td></tr>
+    <tr><td class="paramname">solvedGrid</td><td>Non-null array of {@value #CASES_NUMBER} elements [0-9]. </td></tr>
+    <tr><td class="paramname">possibilityPercentage</td><td>Resolution progress estimate (0-100). </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Canonical constructor with deep validation and defensive cloning.</p>
+<p>Performs a fail-fast check on <code class="JavaDocCode">solvedGrid</code> integrity. Any violation (nullity, length, or range) is logged with a "██" marker before throwing an <code><a class="el" href="">IllegalArgumentException</a></code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">solved</td><td>Resolution status. </td></tr>
+    <tr><td class="paramname">solvedGrid</td><td>The grid array to be cloned. </td></tr>
+    <tr><td class="paramname">possibilityPercentage</td><td>Progress percentage (0-100). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">solvedGrid</code> is null, has an invalid length, or contains values outside the [0-9] range.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Returns a defensive copy of the solved grid.</p>
+<dl class="section return"><dt>Returns</dt><dd>A clone of <code class="JavaDocCode">solvedGrid</code>.</dd></dl>
+<p>Compares equality based on components and array content via <code><a class="el" href="">Arrays#equals</a></code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>The object to compare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if all components and grid contents are equal.</dd></dl>
+<p>Returns a hash code based on all components and array content.</p>
+<dl class="section return"><dt>Returns</dt><dd>Content-based hash code.</dd></dl>
+<p>Returns a string representation of the record, including the content of the grid.</p>
+<dl class="section return"><dt>Returns</dt><dd>String representation with array contents.</dd></dl>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_ad9235162514fff9999f723bb791d4da1_cgraph.svg" width="259" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_aa86aff33589489ef55f1a9747a8f6d5d_cgraph.svg" width="259" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="ac3d62f66e8acd5749e3037a6ad06f21e" name="ac3d62f66e8acd5749e3037a6ad06f21e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3d62f66e8acd5749e3037a6ad06f21e">&#9670;&#160;</a></span>GrillesCrees()</h2>
+<a id="a96eda4804ac4a3c9f57c9960599f724c" name="a96eda4804ac4a3c9f57c9960599f724c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96eda4804ac4a3c9f57c9960599f724c">&#9670;&#160;</a></span>GrillesCrees()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,28 +209,76 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">record fr.softsf.sudokufx.common.util.sudoku.GrillesCrees </td>
           <td>(</td>
-          <td class="paramtype">@Nonnull @NotNull(message=&quot;grilleResolue must not be null&quot;) @Size(min=81, max=81, message=&quot;grilleResolue must contain exactly 81 elements&quot;) int[]</td>          <td class="paramname"><span class="paramname"><em>grilleResolue</em></span>, </td>
+          <td class="paramtype">@Nonnull @NotNull(message=&quot;grilleResolue must not be null&quot;) @Size(min=81, max=81) int[]</td>          <td class="paramname"><span class="paramname"><em>grilleResolue</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Nonnull @NotNull(message=&quot;grilleAResoudre must not be null&quot;) @Size(min=81, max=81, message=&quot;grilleAResoudre must contain exactly 81 elements&quot;) int[]</td>          <td class="paramname"><span class="paramname"><em>grilleAResoudre</em></span>, </td>
+          <td class="paramtype">@Nonnull @NotNull(message=&quot;grilleAResoudre must not be null&quot;) @Size(min=81, max=81) int[]</td>          <td class="paramname"><span class="paramname"><em>grilleAResoudre</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">@Min(value=0, message=&quot;pourcentageDesPossibilites must be &gt;= 0&quot;) @Max(value=100, message=&quot;pourcentageDesPossibilites must be &lt;= 100&quot;) int</td>          <td class="paramname"><span class="paramname"><em>pourcentageDesPossibilites</em></span>&#160;)</td>
+          <td class="paramtype">@Min(value=0, message=&quot;possibilityPercentage must be &gt;= 0&quot;) @Max(value=100, message=&quot;possibilityPercentage must be &lt;= 100&quot;) int</td>          <td class="paramname"><span class="paramname"><em>pourcentageDesPossibilites</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Record representing the result of a grid generation: the solved grid, the puzzle grid, and the estimated possibility percentage. </p>
-<p>Line="33" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml). </p>
+<p>Immutable record representing the dual output of a Sudoku grid generation. </p>
+<p>Holds both the complete solution and the initial puzzle state. Ensures state integrity through a fail-fast canonical constructor and defensive cloning of internal arrays to prevent representation exposure (SpotBugs EI_EXPOSE_REP).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grilleResolue</td><td>The fully solved Sudoku grid (81 elements, values 0-9). </td></tr>
+    <tr><td class="paramname">grilleAResoudre</td><td>The initial puzzle grid with holes (81 elements, values 0-9). </td></tr>
+    <tr><td class="paramname">pourcentageDesPossibilites</td><td>Resolution progress or difficulty estimate (0-100). </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Canonical constructor with deep validation and defensive cloning.</p>
+<p>Validates both grids for nullity, length, and value ranges. Logs failures with a "██" marker before throwing <code><a class="el" href="">IllegalArgumentException</a></code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grilleResolue</td><td>The solved grid to be cloned. </td></tr>
+    <tr><td class="paramname">grilleAResoudre</td><td>The puzzle grid to be cloned. </td></tr>
+    <tr><td class="paramname">pourcentageDesPossibilites</td><td>Progress percentage. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if any grid validation fails.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Performs fail-fast validation on a grid array.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grid</td><td>The array to validate. </td></tr>
+    <tr><td class="paramname">fieldName</td><td>Name of the field for error reporting.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Returns a defensive copy of the solved grid.</p>
+<dl class="section return"><dt>Returns</dt><dd>A clone of <code class="JavaDocCode">grilleResolue</code>.</dd></dl>
+<p>Returns a defensive copy of the puzzle grid.</p>
+<dl class="section return"><dt>Returns</dt><dd>A clone of <code class="JavaDocCode">grilleAResoudre</code>.</dd></dl>
+<p>Compares equality based on components and array contents via <code><a class="el" href="">Arrays#equals</a></code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">o</td><td>The object to compare with this instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if both records hold equivalent data and array contents.</dd></dl>
+<p>Returns a hash code based on all components and array contents.</p>
+<dl class="section return"><dt>Returns</dt><dd>Content-based hash code.</dd></dl>
+<p>Returns a string representation including array contents via <code><a class="el" href="">Arrays#toString</a></code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>Formatted string containing all fields and grid values.</dd></dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_ac3d62f66e8acd5749e3037a6ad06f21e_cgraph.svg" width="259" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_a96eda4804ac4a3c9f57c9960599f724c_cgraph.svg" width="259" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

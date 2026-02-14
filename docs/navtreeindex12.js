@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aac3a4a1d9468aa662e3e0bb84592836c":[1,0,0,0,0,9,4,45],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aac3a4a1d9468aa662e3e0bb84592836c":[2,0,0,0,0,8,4,45],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aad29682d5237886ff77bb51701d421ba":[1,0,0,0,0,9,4,40],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aad29682d5237886ff77bb51701d421ba":[2,0,0,0,0,8,4,40],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aafe300850c83d75b03d338a68d19c892":[1,0,0,0,0,9,4,9],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#aafe300850c83d75b03d338a68d19c892":[2,0,0,0,0,8,4,9],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html#abe063bf7b79bce818e0d42c0c9b9d229":[1,0,0,0,0,9,4,3],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a341d52b84113e6edd3e241b78f3b4e36":[1,0,0,0,0,9,1,1,80],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a341d52b84113e6edd3e241b78f3b4e36":[2,0,0,0,0,8,1,1,80],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a34afd96b6992c1be45122ee05ab1a895":[1,0,0,0,0,9,1,1,70],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a34afd96b6992c1be45122ee05ab1a895":[2,0,0,0,0,8,1,1,70],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3787b3219128cad2b43648b298ef35d7":[1,0,0,0,0,9,1,1,163],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3787b3219128cad2b43648b298ef35d7":[2,0,0,0,0,8,1,1,163],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a39af891bdb0af2c2abfd7a68bdfe87e8":[1,0,0,0,0,9,1,1,38],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a39af891bdb0af2c2abfd7a68bdfe87e8":[2,0,0,0,0,8,1,1,38]
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a34afd96b6992c1be45122ee05ab1a895":[2,0,0,0,0,8,1,1,70]
 };

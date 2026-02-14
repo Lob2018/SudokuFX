@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder" name="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder">
-<area shape="rect" id="Node000001" title="Holds the current PlayerDto for the application." alt="" coords="19,5,234,283"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test_1_1_testable_player_state_holder.html" title="Testable inner subclass of PlayerStateHolder." alt="" coords="5,331,248,469"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,298,129,331,124,331,124,298"/>
+<area shape="rect" id="Node000001" title="Holds the current PlayerDto for the application." alt="" coords="19,5,234,304"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test_1_1_testable_player_state_holder.html" title="Testable inner subclass of PlayerStateHolder." alt="" coords="5,352,248,491"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,319,129,353,124,353,124,319"/>
 </map>

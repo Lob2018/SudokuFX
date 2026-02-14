@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.creerLesGrilles" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.creerLesGrilles">
 <area shape="rect" id="Node000001" title="Crée les grilles de Sudoku (résolue et à résoudre) selon un niveau de difficulté donné." alt="" coords="5,29,254,72"/>
-<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ac3d62f66e8acd5749e3037a6ad06f21e" title="Record representing the result of a grid generation: the solved grid, the puzzle grid,..." alt="" coords="302,29,550,72"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a96eda4804ac4a3c9f57c9960599f724c" title="Immutable record representing the dual output of a Sudoku grid generation." alt="" coords="302,29,550,72"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,48,286,48,286,53,254,53"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="370,29,368,19,377,10,397,5,426,3,458,5,476,11,475,16,457,10,426,8,398,10,380,15,373,21,376,28"/>
 </map>

@@ -113,7 +113,7 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder__inherit__graph.svg" width="254" height="475"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder__inherit__graph.svg" width="254" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
@@ -125,11 +125,13 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:acf9ab855d83a7c6993fbe1f268ada09b" id="r_acf9ab855d83a7c6993fbe1f268ada09b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acf9ab855d83a7c6993fbe1f268ada09b">PlayerStateHolder</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a> <a class="el" href="#a7e4fa2be516f67597c3c62c8b0bc7e2a">playerService</a>)</td></tr>
-<tr class="memdesc:acf9ab855d83a7c6993fbe1f268ada09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state holder and initializes the current player from <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a></code>.  <br /></td></tr>
+<tr class="memdesc:acf9ab855d83a7c6993fbe1f268ada09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state holder.  <br /></td></tr>
 <tr class="memitem:a5a9479f5c94f6822692a70db6102aac3" id="r_a5a9479f5c94f6822692a70db6102aac3"><td class="memItemLeft">ObjectProperty&lt; PlayerDto &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5a9479f5c94f6822692a70db6102aac3">currentPlayerProperty</a> ()</td></tr>
 <tr class="memdesc:a5a9479f5c94f6822692a70db6102aac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the property holding the current player for JavaFX bindings.  <br /></td></tr>
 <tr class="memitem:a21f04c69326d6540965b85dc026e21f1" id="r_a21f04c69326d6540965b85dc026e21f1"><td class="memItemLeft">PlayerDto&#160;</td><td class="memItemRight"><a class="el" href="#a21f04c69326d6540965b85dc026e21f1">getCurrentPlayer</a> ()</td></tr>
 <tr class="memdesc:a21f04c69326d6540965b85dc026e21f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the currently stored player.  <br /></td></tr>
+<tr class="memitem:a9b19df56f461c42ea6f3cd5afe73d5ab" id="r_a9b19df56f461c42ea6f3cd5afe73d5ab"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b19df56f461c42ea6f3cd5afe73d5ab">init</a> ()</td></tr>
+<tr class="memdesc:a9b19df56f461c42ea6f3cd5afe73d5ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the current player after dependency injection is complete.  <br /></td></tr>
 <tr class="memitem:a62ff7ab823da335406fbc8600999a979" id="r_a62ff7ab823da335406fbc8600999a979"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a62ff7ab823da335406fbc8600999a979">refreshCurrentPlayer</a> ()</td></tr>
 <tr class="memdesc:a62ff7ab823da335406fbc8600999a979"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads the current player from the database.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -177,19 +179,14 @@ Reload the current player passively from the database via <code><a class="el" hr
       </table>
 </div><div class="memdoc">
 
-<p>Constructs the state holder and initializes the current player from <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a></code>. </p>
+<p>Constructs the state holder. </p>
+<p>Dependency injection only.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname"><a class="el" href="#a7e4fa2be516f67597c3c62c8b0bc7e2a">playerService</a></td><td>the service used to fetch the player </td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_acf9ab855d83a7c6993fbe1f268ada09b_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
 
 </div>
 </div>
@@ -260,6 +257,31 @@ Reload the current player passively from the database via <code><a class="el" hr
 
 <p>Returns the currently stored player. </p>
 <dl class="section return"><dt>Returns</dt><dd>the current <code><a class="el" href="">PlayerDto</a></code> </dd></dl>
+
+</div>
+</div>
+<a id="a9b19df56f461c42ea6f3cd5afe73d5ab" name="a9b19df56f461c42ea6f3cd5afe73d5ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b19df56f461c42ea6f3cd5afe73d5ab">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the current player after dependency injection is complete. </p>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_a9b19df56f461c42ea6f3cd5afe73d5ab_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>

@@ -1,5 +1,4 @@
 var _menu_level_view_model_u_test_8java =
 [
-    [ "fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test" ],
-    [ "fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.PossibilityStarsHBoxStub", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub" ]
+    [ "fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test" ]
 ];

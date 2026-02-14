@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 590;
+var viewWidth = 820;
 var viewHeight = 680;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,28 +59,28 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Abstract base test class that provides:">
-<polygon fill="#999999" stroke="none" points="376.62,-672 211.62,-672 211.62,-516 376.62,-516 376.62,-672"/>
-<text text-anchor="start" x="217.25" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="240.88" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>
-<text text-anchor="start" x="216" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="225.62" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto defaultPlayer</text>
-<text text-anchor="start" x="216" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="225.62" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService playerServiceMock</text>
-<text text-anchor="start" x="216" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="225.62" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder player</text>
-<text text-anchor="start" x="225.62" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">StateHolder</text>
-<text text-anchor="start" x="217.12" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="225.62" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
-<text text-anchor="start" x="215.62" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="225.62" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeMocks()</text>
-<text text-anchor="start" x="215.62" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="225.62" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupPlayerStateHolder()</text>
-<text text-anchor="start" x="216" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
-<text text-anchor="start" x="225.62" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createDefaultPlayer()</text>
-<polygon fill="#666666" stroke="#666666" points="211.62,-642 211.62,-642 376.62,-642 376.62,-642 211.62,-642"/>
-<polygon fill="#666666" stroke="#666666" points="211.62,-566 211.62,-566 223.62,-566 223.62,-566 211.62,-566"/>
-<polygon fill="#666666" stroke="#666666" points="223.62,-566 223.62,-566 376.62,-566 376.62,-566 223.62,-566"/>
-<polygon fill="none" stroke="#666666" points="211.62,-516 211.62,-672 376.62,-672 376.62,-516 211.62,-516"/>
+<polygon fill="#999999" stroke="none" points="500.62,-672 335.62,-672 335.62,-516 500.62,-516 500.62,-672"/>
+<text text-anchor="start" x="341.25" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="364.88" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">AbstractPlayerStateTest</text>
+<text text-anchor="start" x="340" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="349.62" y="-630.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto defaultPlayer</text>
+<text text-anchor="start" x="340" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="349.62" y="-614.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService playerServiceMock</text>
+<text text-anchor="start" x="340" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="349.62" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder player</text>
+<text text-anchor="start" x="349.62" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">StateHolder</text>
+<text text-anchor="start" x="341.12" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="349.62" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
+<text text-anchor="start" x="339.62" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="349.62" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">void closeMocks()</text>
+<text text-anchor="start" x="339.62" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="349.62" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setupPlayerStateHolder()</text>
+<text text-anchor="start" x="340" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="349.62" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto createDefaultPlayer()</text>
+<polygon fill="#666666" stroke="#666666" points="335.62,-642 335.62,-642 500.62,-642 500.62,-642 335.62,-642"/>
+<polygon fill="#666666" stroke="#666666" points="335.62,-566 335.62,-566 347.62,-566 347.62,-566 335.62,-566"/>
+<polygon fill="#666666" stroke="#666666" points="347.62,-566 347.62,-566 500.62,-566 500.62,-566 347.62,-566"/>
+<polygon fill="none" stroke="#666666" points="335.62,-516 335.62,-672 500.62,-672 500.62,-516 335.62,-516"/>
 </a>
 </g>
 </g>
@@ -147,64 +147,49 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M211.58,-507.27C204.6,-498.36 197.98,-489.2 192.12,-480 188.74,-474.68 185.42,-469.23 182.17,-463.67"/>
-<polygon fill="none" stroke="#63b8ff" points="208.72,-509.3 217.72,-514.9 214.18,-504.92 208.72,-509.3"/>
+<path fill="none" stroke="#63b8ff" d="M325.17,-563.77C280.15,-545.67 228.18,-518.43 192.12,-480 188.66,-476.3 185.3,-472.47 182.05,-468.52"/>
+<polygon fill="none" stroke="#63b8ff" points="323.86,-567.01 334.45,-567.39 326.41,-560.49 323.86,-567.01"/>
 </a>
 </g>
 </g>
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="387.5,-452 200.75,-452 200.75,-28 387.5,-28 387.5,-452"/>
-<text text-anchor="start" x="228.12" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="228.12" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModelUTest</text>
-<text text-anchor="start" x="206.25" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">AsyncFileProcessorService</text>
-<text text-anchor="start" x="214.75" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00"> asyncServiceMock</text>
-<text text-anchor="start" x="206.25" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">AudioService audioSpy</text>
-<text text-anchor="start" x="206.25" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">ColorPicker colorPicker</text>
-<text text-anchor="start" x="206.25" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-350.5" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsService optionsService</text>
-<text text-anchor="start" x="206.25" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-334.5" font-family="Helvetica,sans-Serif" font-size="10.00">Locale originalLocale</text>
-<text text-anchor="start" x="206.25" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridPane sudokuFX</text>
-<text text-anchor="start" x="206.25" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterService toasterService</text>
-<text text-anchor="start" x="206.25" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel</text>
-<text text-anchor="start" x="214.75" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00"> viewModel</text>
-<text text-anchor="start" x="204.75" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenDependencies</text>
-<text text-anchor="start" x="214.75" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitViewModel_thenViewModel</text>
-<text text-anchor="start" x="214.75" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">Initialized()</text>
-<text text-anchor="start" x="204.75" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenGridPaneAndColor</text>
-<text text-anchor="start" x="214.75" y="-206.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenUpdateBackgroundColor</text>
-<text text-anchor="start" x="214.75" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenColorApplied()</text>
-<text text-anchor="start" x="204.75" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenLocaleRestored</text>
-<text text-anchor="start" x="214.75" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenTestFinished_thenLocaleReset()</text>
-<text text-anchor="start" x="204.75" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-150.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidFile</text>
-<text text-anchor="start" x="214.75" y="-138.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenApplyAndPersistBackground</text>
-<text text-anchor="start" x="214.75" y="-126.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image_thenGridPaneBackgroundSet()</text>
-<text text-anchor="start" x="204.75" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-110.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModel</text>
-<text text-anchor="start" x="214.75" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenAccessBindings</text>
-<text text-anchor="start" x="214.75" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenAllBindingsReturnNonNull</text>
-<text text-anchor="start" x="214.75" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndNonBlank()</text>
-<text text-anchor="start" x="204.75" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModelAndColor</text>
-<text text-anchor="start" x="214.75" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">Picker_whenInit_thenColorIsSetAnd</text>
-<text text-anchor="start" x="214.75" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">ColorPickerUpdated()</text>
-<polygon fill="#666666" stroke="#666666" points="200.75,-422 200.75,-422 387.5,-422 387.5,-422 200.75,-422"/>
-<polygon fill="#666666" stroke="#666666" points="200.75,-270 200.75,-270 212.75,-270 212.75,-270 200.75,-270"/>
-<polygon fill="#666666" stroke="#666666" points="212.75,-270 212.75,-270 387.5,-270 387.5,-270 212.75,-270"/>
-<polygon fill="none" stroke="#666666" points="200.75,-28 200.75,-452 387.5,-452 387.5,-28 200.75,-28"/>
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="none" points="417.5,-382 200.75,-382 200.75,-98 417.5,-98 417.5,-382"/>
+<text text-anchor="start" x="219.12" y="-368.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.testing.unit.viewmodel.</text>
+<text text-anchor="start" x="246.12" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModelUTest</text>
+<text text-anchor="start" x="206.25" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="214.75" y="-340.5" font-family="Helvetica,sans-Serif" font-size="10.00">Locale originalLocale</text>
+<text text-anchor="start" x="206.25" y="-324.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="214.75" y="-324.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
+<text text-anchor="start" x="214.75" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00"> viewModel</text>
+<text text-anchor="start" x="204.75" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">void allBindingsShouldReturn</text>
+<text text-anchor="start" x="214.75" y="-284.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExpectedI18nValues()</text>
+<text text-anchor="start" x="204.75" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenCurrentPlayer</text>
+<text text-anchor="start" x="214.75" y="-256.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenLocaleChanges_thenBinding</text>
+<text text-anchor="start" x="214.75" y="-244.5" font-family="Helvetica,sans-Serif" font-size="10.00">Updates()</text>
+<text text-anchor="start" x="204.75" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNewSelectedPlayer</text>
+<text text-anchor="start" x="214.75" y="-216.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenChanged_thenBindingsUpdate()</text>
+<text text-anchor="start" x="204.75" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModel</text>
+<text text-anchor="start" x="214.75" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitialized_thenPlayers</text>
+<text text-anchor="start" x="214.75" y="-176.5" font-family="Helvetica,sans-Serif" font-size="10.00">LoadedAndBindingsNotNull()</text>
+<text text-anchor="start" x="204.75" y="-160.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-160.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setUp()</text>
+<text text-anchor="start" x="204.75" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tearDown()</text>
+<text text-anchor="start" x="206.25" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="214.75" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Map&lt; StringBinding,</text>
+<text text-anchor="start" x="214.75" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Supplier&lt; String &gt; &gt; getString</text>
+<text text-anchor="start" x="214.75" y="-104.5" font-family="Helvetica,sans-Serif" font-size="10.00">BindingStringMap(MenuPlayerViewModel vm)</text>
+<polygon fill="#666666" stroke="#666666" points="200.75,-352 200.75,-352 417.5,-352 417.5,-352 200.75,-352"/>
+<polygon fill="#666666" stroke="#666666" points="200.75,-308 200.75,-308 212.75,-308 212.75,-308 200.75,-308"/>
+<polygon fill="#666666" stroke="#666666" points="212.75,-308 212.75,-308 417.5,-308 417.5,-308 212.75,-308"/>
+<polygon fill="none" stroke="#666666" points="200.75,-98 200.75,-382 417.5,-382 417.5,-98 200.75,-98"/>
 </a>
 </g>
 </g>
@@ -212,52 +197,63 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M294.12,-504.96C294.12,-488.41 294.12,-470.46 294.12,-451.98"/>
-<polygon fill="none" stroke="#63b8ff" points="290.63,-504.67 294.13,-514.67 297.63,-504.67 290.63,-504.67"/>
+<path fill="none" stroke="#63b8ff" d="M390.98,-505.35C379.43,-468.03 365.66,-423.56 352.73,-381.83"/>
+<polygon fill="none" stroke="#63b8ff" points="387.59,-506.22 393.89,-514.74 394.28,-504.15 387.59,-506.22"/>
 </a>
 </g>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="582.25,-396 406,-396 406,-84 582.25,-84 582.25,-396"/>
-<text text-anchor="start" x="417.25" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="441.25" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolderUTest</text>
-<text text-anchor="start" x="411.5" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="420" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
-<text text-anchor="start" x="420" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
-<text text-anchor="start" x="411.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="420" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
-<text text-anchor="start" x="410" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="420" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">void cleanup()</text>
-<text text-anchor="start" x="410" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="420" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">void currentPlayerProperty</text>
-<text text-anchor="start" x="420" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">_returnsObjectProperty()</text>
-<text text-anchor="start" x="410" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="420" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform_doesNot</text>
-<text text-anchor="start" x="420" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">Throw_whenCalled()</text>
-<text text-anchor="start" x="410" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="420" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">void getCurrentPlayer</text>
-<text text-anchor="start" x="420" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">_returnsCorrectPlayer()</text>
-<text text-anchor="start" x="410" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="420" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenException</text>
-<text text-anchor="start" x="420" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenRefreshingPlayer</text>
-<text text-anchor="start" x="420" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogErrorIsProduced()</text>
-<text text-anchor="start" x="410" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="420" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenPlayerService</text>
-<text text-anchor="start" x="420" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">_returnsPlayer_thenCurrentPlayer</text>
-<text text-anchor="start" x="420" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsSet()</text>
-<text text-anchor="start" x="410" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="420" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenPlayerService</text>
-<text text-anchor="start" x="420" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">_returnsPlayer_whenRefreshCurrent</text>
-<text text-anchor="start" x="420" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player_thenPropertyUpdated()</text>
-<text text-anchor="start" x="410" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="420" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setup()</text>
-<polygon fill="#666666" stroke="#666666" points="406,-366 406,-366 582.25,-366 582.25,-366 406,-366"/>
-<polygon fill="#666666" stroke="#666666" points="406,-322 406,-322 418,-322 418,-322 406,-322"/>
-<polygon fill="#666666" stroke="#666666" points="418,-322 418,-322 582.25,-322 582.25,-322 418,-322"/>
-<polygon fill="none" stroke="#666666" points="406,-84 406,-396 582.25,-396 582.25,-84 406,-84"/>
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="none" points="618.25,-446 436,-446 436,-34 618.25,-34 618.25,-446"/>
+<text text-anchor="start" x="461.12" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="461.12" y="-420.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModelUTest</text>
+<text text-anchor="start" x="441.5" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="450" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">AsyncFileProcessorService</text>
+<text text-anchor="start" x="450" y="-392.5" font-family="Helvetica,sans-Serif" font-size="10.00"> asyncServiceMock</text>
+<text text-anchor="start" x="441.5" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="450" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">AudioService audioSpy</text>
+<text text-anchor="start" x="441.5" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="450" y="-360.5" font-family="Helvetica,sans-Serif" font-size="10.00">ColorPicker colorPicker</text>
+<text text-anchor="start" x="441.5" y="-344.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="450" y="-344.5" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsService optionsService</text>
+<text text-anchor="start" x="441.5" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="450" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">Locale originalLocale</text>
+<text text-anchor="start" x="441.5" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="450" y="-312.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridPane sudokuFX</text>
+<text text-anchor="start" x="441.5" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="450" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterService toasterService</text>
+<text text-anchor="start" x="441.5" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="450" y="-280.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel</text>
+<text text-anchor="start" x="450" y="-268.5" font-family="Helvetica,sans-Serif" font-size="10.00"> viewModel</text>
+<text text-anchor="start" x="440" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="450" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenDependencies</text>
+<text text-anchor="start" x="450" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitViewModel_thenViewModel</text>
+<text text-anchor="start" x="450" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">Initialized()</text>
+<text text-anchor="start" x="440" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="450" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenGridPaneAndColor</text>
+<text text-anchor="start" x="450" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenUpdateBackgroundColor</text>
+<text text-anchor="start" x="450" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenColorApplied()</text>
+<text text-anchor="start" x="440" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="450" y="-172.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidFile</text>
+<text text-anchor="start" x="450" y="-160.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenApplyAndPersistBackground</text>
+<text text-anchor="start" x="450" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image_thenGridPaneBackgroundSet()</text>
+<text text-anchor="start" x="440" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="450" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModel</text>
+<text text-anchor="start" x="450" y="-120.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenAccessBindings</text>
+<text text-anchor="start" x="450" y="-108.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenAllBindingsReturnNonNull</text>
+<text text-anchor="start" x="450" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndNonBlank()</text>
+<text text-anchor="start" x="440" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="450" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModelAndColor</text>
+<text text-anchor="start" x="450" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">Picker_whenInit_thenColorIsSetAnd</text>
+<text text-anchor="start" x="450" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">ColorPickerUpdated()</text>
+<text text-anchor="start" x="440" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="450" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tearDown()</text>
+<polygon fill="#666666" stroke="#666666" points="436,-416 436,-416 618.25,-416 618.25,-416 436,-416"/>
+<polygon fill="#666666" stroke="#666666" points="436,-264 436,-264 448,-264 448,-264 436,-264"/>
+<polygon fill="#666666" stroke="#666666" points="448,-264 448,-264 618.25,-264 618.25,-264 448,-264"/>
+<polygon fill="none" stroke="#666666" points="436,-34 436,-446 618.25,-446 618.25,-34 436,-34"/>
 </a>
 </g>
 </g>
@@ -265,8 +261,61 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M376.78,-507.33C383.73,-498.41 390.32,-489.23 396.12,-480 412.49,-454 427.11,-424.8 439.75,-395.98"/>
-<polygon fill="none" stroke="#63b8ff" points="374.17,-504.98 370.65,-514.98 379.64,-509.36 374.17,-504.98"/>
+<path fill="none" stroke="#63b8ff" d="M445.3,-505.25C451,-486.83 457.25,-466.66 463.66,-445.95"/>
+<polygon fill="none" stroke="#63b8ff" points="441.97,-504.15 442.36,-514.74 448.66,-506.22 441.97,-504.15"/>
+</a>
+</g>
+</g>
+<!-- Node5 -->
+<g id="Node000005" class="node">
+<title>Node5</title>
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html" target="_top" xlink:title=" ">
+<polygon fill="white" stroke="none" points="812.25,-396 636,-396 636,-84 812.25,-84 812.25,-396"/>
+<text text-anchor="start" x="647.25" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="671.25" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolderUTest</text>
+<text text-anchor="start" x="641.5" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="650" y="-354.5" font-family="Helvetica,sans-Serif" font-size="10.00">ListAppender&lt; ILoggingEvent</text>
+<text text-anchor="start" x="650" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; logWatcher</text>
+<text text-anchor="start" x="641.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="650" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">AutoCloseable mocks</text>
+<text text-anchor="start" x="640" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="650" y="-310.5" font-family="Helvetica,sans-Serif" font-size="10.00">void cleanup()</text>
+<text text-anchor="start" x="640" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="650" y="-294.5" font-family="Helvetica,sans-Serif" font-size="10.00">void currentPlayerProperty</text>
+<text text-anchor="start" x="650" y="-282.5" font-family="Helvetica,sans-Serif" font-size="10.00">_returnsObjectProperty()</text>
+<text text-anchor="start" x="640" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="650" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform_doesNot</text>
+<text text-anchor="start" x="650" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">Throw_whenCalled()</text>
+<text text-anchor="start" x="640" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="650" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">void getCurrentPlayer</text>
+<text text-anchor="start" x="650" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">_returnsCorrectPlayer()</text>
+<text text-anchor="start" x="640" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="650" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenException</text>
+<text text-anchor="start" x="650" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenRefreshingPlayer</text>
+<text text-anchor="start" x="650" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenLogErrorIsProduced()</text>
+<text text-anchor="start" x="640" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="650" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenPlayerService</text>
+<text text-anchor="start" x="650" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">_returnsPlayer_thenCurrentPlayer</text>
+<text text-anchor="start" x="650" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">IsSet()</text>
+<text text-anchor="start" x="640" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="650" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenPlayerService</text>
+<text text-anchor="start" x="650" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">_returnsPlayer_whenRefreshCurrent</text>
+<text text-anchor="start" x="650" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player_thenPropertyUpdated()</text>
+<text text-anchor="start" x="640" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="650" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setup()</text>
+<polygon fill="#666666" stroke="#666666" points="636,-366 636,-366 812.25,-366 812.25,-366 636,-366"/>
+<polygon fill="#666666" stroke="#666666" points="636,-322 636,-322 648,-322 648,-322 636,-322"/>
+<polygon fill="#666666" stroke="#666666" points="648,-322 648,-322 812.25,-322 812.25,-322 648,-322"/>
+<polygon fill="none" stroke="#666666" points="636,-84 636,-396 812.25,-396 812.25,-84 636,-84"/>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node5 -->
+<g id="edge4_Node000001_Node000005" class="edge">
+<title>Node1&#45;&gt;Node5</title>
+<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M510.91,-559.52C551,-541.2 595.8,-514.98 627.12,-480 648.86,-455.73 666.07,-425.96 679.58,-395.76"/>
+<polygon fill="none" stroke="#63b8ff" points="509.66,-556.25 501.95,-563.52 512.51,-562.65 509.66,-556.25"/>
 </a>
 </g>
 </g>

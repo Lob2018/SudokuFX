@@ -493,30 +493,32 @@ var sectionId = 'dynsection-0';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" target="_top" xlink:title="Holds the current PlayerDto for the application.">
-<polygon fill="white" stroke="none" points="943.38,-2228 781.62,-2228 781.62,-2048 943.38,-2048 943.38,-2228"/>
-<text text-anchor="start" x="785.62" y="-2214.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
-<text text-anchor="start" x="822.75" y="-2202.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
-<text text-anchor="start" x="790.81" y="-2186.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="803" y="-2186.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
-<text text-anchor="start" x="803" y="-2174.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; PlayerDto &gt; currentPlayer</text>
-<text text-anchor="start" x="790.81" y="-2158.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="803" y="-2158.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="789.31" y="-2142.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="803" y="-2142.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
-<text text-anchor="start" x="803" y="-2130.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerService playerService)</text>
-<text text-anchor="start" x="789.31" y="-2114.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="803" y="-2114.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; PlayerDto</text>
-<text text-anchor="start" x="803" y="-2102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; currentPlayerProperty()</text>
-<text text-anchor="start" x="789.31" y="-2086.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="803" y="-2086.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getCurrentPlayer()</text>
-<text text-anchor="start" x="789.31" y="-2070.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="803" y="-2070.5" font-family="Helvetica,sans-Serif" font-size="10.00">void refreshCurrentPlayer()</text>
-<text text-anchor="start" x="789.31" y="-2054.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="803" y="-2054.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
-<polygon fill="#666666" stroke="#666666" points="781.62,-2198 781.62,-2198 943.38,-2198 943.38,-2198 781.62,-2198"/>
-<polygon fill="#666666" stroke="#666666" points="781.62,-2154 781.62,-2154 801,-2154 801,-2154 781.62,-2154"/>
-<polygon fill="#666666" stroke="#666666" points="801,-2154 801,-2154 943.38,-2154 943.38,-2154 801,-2154"/>
-<polygon fill="none" stroke="#666666" points="781.62,-2048 781.62,-2228 943.38,-2228 943.38,-2048 781.62,-2048"/>
+<polygon fill="white" stroke="none" points="943.38,-2236 781.62,-2236 781.62,-2040 943.38,-2040 943.38,-2236"/>
+<text text-anchor="start" x="785.62" y="-2222.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
+<text text-anchor="start" x="822.75" y="-2210.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
+<text text-anchor="start" x="790.81" y="-2194.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="803" y="-2194.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
+<text text-anchor="start" x="803" y="-2182.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; PlayerDto &gt; currentPlayer</text>
+<text text-anchor="start" x="790.81" y="-2166.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="803" y="-2166.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="789.31" y="-2150.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="803" y="-2150.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
+<text text-anchor="start" x="803" y="-2138.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerService playerService)</text>
+<text text-anchor="start" x="789.31" y="-2122.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="803" y="-2122.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; PlayerDto</text>
+<text text-anchor="start" x="803" y="-2110.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; currentPlayerProperty()</text>
+<text text-anchor="start" x="789.31" y="-2094.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="803" y="-2094.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerDto getCurrentPlayer()</text>
+<text text-anchor="start" x="789.31" y="-2078.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="803" y="-2078.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init()</text>
+<text text-anchor="start" x="789.31" y="-2062.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="803" y="-2062.5" font-family="Helvetica,sans-Serif" font-size="10.00">void refreshCurrentPlayer()</text>
+<text text-anchor="start" x="789.31" y="-2046.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="803" y="-2046.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
+<polygon fill="#666666" stroke="#666666" points="781.62,-2206 781.62,-2206 943.38,-2206 943.38,-2206 781.62,-2206"/>
+<polygon fill="#666666" stroke="#666666" points="781.62,-2162 781.62,-2162 801,-2162 801,-2162 781.62,-2162"/>
+<polygon fill="#666666" stroke="#666666" points="801,-2162 801,-2162 943.38,-2162 943.38,-2162 801,-2162"/>
+<polygon fill="none" stroke="#666666" points="781.62,-2040 781.62,-2236 943.38,-2236 943.38,-2040 781.62,-2040"/>
 </a>
 </g>
 </g>
@@ -524,7 +526,7 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000002_Node000005" class="edge">
 <title>Node5&#45;&gt;Node2</title>
 <g id="a_edge4_Node000002_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M846.02,-2048.22C833.25,-2003.55 810.97,-1952.2 772.5,-1920 743.89,-1896.05 716.5,-1928.76 690.5,-1902 608.64,-1817.73 566.72,-1701.67 546.84,-1586.23"/>
+<path fill="none" stroke="#63b8ff" d="M843.66,-2040.25C830.57,-1997.56 808.7,-1950.3 772.5,-1920 743.89,-1896.05 716.5,-1928.76 690.5,-1902 608.64,-1817.73 566.72,-1701.67 546.84,-1586.23"/>
 <polygon fill="none" stroke="#63b8ff" points="546.86,-1586.34 541.94,-1581.07 544.9,-1574.5 549.83,-1579.77 546.86,-1586.34"/>
 </a>
 </g>
@@ -534,7 +536,7 @@ var sectionId = 'dynsection-0';
 <g id="edge28_Node000021_Node000005" class="edge">
 <title>Node5&#45;&gt;Node21</title>
 <g id="a_edge28_Node000021_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M865.59,-2048.07C867.97,-1995.57 871.98,-1927.88 878.5,-1868 878.7,-1866.2 878.89,-1864.4 879.09,-1862.6"/>
+<path fill="none" stroke="#63b8ff" d="M865.97,-2040C868.38,-1988.75 872.31,-1924.86 878.5,-1868 878.7,-1866.2 878.89,-1864.4 879.09,-1862.6"/>
 <polygon fill="none" stroke="#63b8ff" points="879.09,-1862.57 875.79,-1856.16 880.43,-1850.65 883.74,-1857.05 879.09,-1862.57"/>
 </a>
 </g>
@@ -580,8 +582,8 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000005_Node000006" class="edge">
 <title>Node6&#45;&gt;Node5</title>
 <g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M572.84,-2509.85C639.55,-2473.34 718.54,-2421.04 772.5,-2356 800.29,-2322.51 820.55,-2279.23 834.73,-2240.15"/>
-<polygon fill="none" stroke="#63b8ff" points="834.76,-2240.07 832.97,-2233.09 838.73,-2228.75 840.52,-2235.74 834.76,-2240.07"/>
+<path fill="none" stroke="#63b8ff" d="M572.84,-2509.85C639.55,-2473.34 718.54,-2421.04 772.5,-2356 798.53,-2324.63 817.95,-2284.69 831.95,-2247.64"/>
+<polygon fill="none" stroke="#63b8ff" points="831.88,-2247.84 830.19,-2240.83 836,-2236.57 837.7,-2243.58 831.88,-2247.84"/>
 </a>
 </g>
 <text text-anchor="start" x="754.54" y="-2379.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerService</text>

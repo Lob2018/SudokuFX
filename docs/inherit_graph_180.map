@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html" title="ViewModel for managing &quot;solve&quot; menu UI state and accessibility texts." alt="" coords="5,5,199,48"/>
+<area shape="rect" id="Node000000" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" title="Abstract base test class that provides:" alt="" coords="5,105,232,148"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html" title=" " alt="" coords="286,5,534,48"/>
+<area shape="poly" id="edge12_Node000000_Node000001" title=" " alt="" coords="180,96,279,57,316,46,318,51,281,63,182,101"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html" title=" " alt="" coords="280,72,541,115"/>
+<area shape="poly" id="edge13_Node000000_Node000002" title=" " alt="" coords="247,109,279,106,279,111,247,115"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html" title=" " alt="" coords="312,139,509,181"/>
+<area shape="poly" id="edge14_Node000000_Node000003" title=" " alt="" coords="247,139,312,146,311,151,247,144"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html" title=" " alt="" coords="297,205,524,248"/>
+<area shape="poly" id="edge15_Node000000_Node000004" title=" " alt="" coords="182,152,281,191,318,202,316,207,279,196,180,157"/>
 </map>

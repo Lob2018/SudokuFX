@@ -79,7 +79,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ad9235162514fff9999f723bb791d4da1" target="_top" xlink:title="Record representing the result of solving a Sudoku grid.">
+<g id="a_Node000007"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#aa86aff33589489ef55f1a9747a8f6d5d" target="_top" xlink:title="Immutable record representing a Sudoku grid resolution result.">
 <polygon fill="white" stroke="#666666" points="644.25,-212 458,-212 458,-180 644.25,-180 644.25,-212"/>
 <text text-anchor="start" x="466" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="middle" x="551.12" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrilleResolue</text>

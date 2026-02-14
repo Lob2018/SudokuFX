@@ -47,7 +47,7 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 837;
+var viewWidth = 1520;
 var viewHeight = 120;
 var sectionId = 'dynsection-0';
 </script>
@@ -59,10 +59,10 @@ var sectionId = 'dynsection-0';
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title=" ">
-<polygon fill="#999999" stroke="#666666" points="471.88,-112 343.38,-112 343.38,-68 471.88,-68 471.88,-112"/>
-<text text-anchor="start" x="351.38" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
-<text text-anchor="start" x="351.38" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/common/util</text>
-<text text-anchor="middle" x="407.62" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudoku/GrillesCrees.java</text>
+<polygon fill="#999999" stroke="#666666" points="674.88,-112 546.38,-112 546.38,-68 674.88,-68 674.88,-112"/>
+<text text-anchor="start" x="554.38" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">src/main/java/fr/softsf</text>
+<text text-anchor="start" x="554.38" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudokufx/common/util</text>
+<text text-anchor="middle" x="610.62" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">/sudoku/GrillesCrees.java</text>
 </a>
 </g>
 </g>
@@ -70,8 +70,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="129.25,-26 0,-26 0,-6 129.25,-6 129.25,-26"/>
-<text text-anchor="middle" x="64.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.annotation.Nonnull</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="81.25,-26 0,-26 0,-6 81.25,-6 81.25,-26"/>
+<text text-anchor="middle" x="40.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.util.Arrays</text>
 </a>
 </g>
 </g>
@@ -79,8 +79,8 @@ var sectionId = 'dynsection-0';
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node1&#45;&gt;Node2</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M343.11,-75.46C278.99,-62 181.64,-41.56 120.66,-28.76"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="121.7,-25.4 111.19,-26.78 120.26,-32.25 121.7,-25.4"/>
+<path fill="none" stroke="#63b8ff" d="M546,-85.71C447.1,-79.82 252.61,-64.89 90.62,-32 87.07,-31.28 83.41,-30.42 79.76,-29.48"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="80.98,-26.18 70.41,-26.88 79.11,-32.93 80.98,-26.18"/>
 </a>
 </g>
 </g>
@@ -88,8 +88,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="309.75,-26 147.5,-26 147.5,-6 309.75,-6 309.75,-26"/>
-<text text-anchor="middle" x="228.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.Max</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="185.88,-26 99.38,-26 99.38,-6 185.88,-6 185.88,-26"/>
+<text text-anchor="middle" x="142.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.util.Objects</text>
 </a>
 </g>
 </g>
@@ -97,8 +97,8 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M354.4,-67.59C324.65,-55.62 288.45,-41.06 262.54,-30.64"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="264.1,-27.5 253.52,-27.01 261.49,-33.99 264.1,-27.5"/>
+<path fill="none" stroke="#63b8ff" d="M546.17,-82.96C464.16,-74.63 318.42,-57.68 195.62,-32 191.86,-31.21 187.97,-30.3 184.09,-29.33"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="185.3,-26.03 174.74,-26.84 183.5,-32.79 185.3,-26.03"/>
 </a>
 </g>
 </g>
@@ -106,8 +106,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="487.25,-26 328,-26 328,-6 487.25,-6 487.25,-26"/>
-<text text-anchor="middle" x="407.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.Min</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="293,-26 204.25,-26 204.25,-6 293,-6 293,-26"/>
+<text text-anchor="middle" x="248.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.util.Optional</text>
 </a>
 </g>
 </g>
@@ -115,8 +115,8 @@ var sectionId = 'dynsection-0';
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node1&#45;&gt;Node4</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M407.62,-67.79C407.62,-58.32 407.62,-47.2 407.62,-37.78"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="411.13,-37.82 407.63,-27.82 404.13,-37.82 411.13,-37.82"/>
+<path fill="none" stroke="#63b8ff" d="M545.98,-78.74C483.43,-68.41 386.08,-51.27 302.62,-32 299.07,-31.18 295.4,-30.28 291.72,-29.33"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="292.8,-26 282.24,-26.82 291,-32.77 292.8,-26"/>
 </a>
 </g>
 </g>
@@ -124,9 +124,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000005" class="node">
 <title>Node5</title>
 <g id="a_Node000005"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="648.38,-32 504.88,-32 504.88,0 648.38,0 648.38,-32"/>
-<text text-anchor="start" x="512.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.</text>
-<text text-anchor="middle" x="576.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">NotNull</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="394,-26 311.25,-26 311.25,-6 394,-6 394,-26"/>
+<text text-anchor="middle" x="352.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.slf4j.Logger</text>
 </a>
 </g>
 </g>
@@ -134,8 +133,8 @@ var sectionId = 'dynsection-0';
 <g id="edge4_Node000001_Node000005" class="edge">
 <title>Node1&#45;&gt;Node5</title>
 <g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M457.87,-67.59C480.62,-57.9 507.34,-46.52 529.68,-37"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="531.03,-40.23 538.86,-33.09 528.29,-33.79 531.03,-40.23"/>
+<path fill="none" stroke="#63b8ff" d="M546.33,-71.81C505.17,-60.7 450.67,-45.79 402.62,-32 400.05,-31.26 397.41,-30.49 394.74,-29.71"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="395.83,-26.39 385.25,-26.91 393.85,-33.1 395.83,-26.39"/>
 </a>
 </g>
 </g>
@@ -143,8 +142,8 @@ var sectionId = 'dynsection-0';
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="829.12,-26 666.12,-26 666.12,-6 829.12,-6 829.12,-26"/>
-<text text-anchor="middle" x="747.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.Size</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="527.5,-26 411.75,-26 411.75,-6 527.5,-6 527.5,-26"/>
+<text text-anchor="middle" x="469.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.slf4j.LoggerFactory</text>
 </a>
 </g>
 </g>
@@ -152,8 +151,118 @@ var sectionId = 'dynsection-0';
 <g id="edge5_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
 <g id="a_edge5_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M471.98,-75.37C535.37,-61.95 631.23,-41.65 691.58,-28.87"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="692.25,-32.3 701.31,-26.81 690.8,-25.46 692.25,-32.3"/>
+<path fill="none" stroke="#63b8ff" d="M568.7,-67.59C545.99,-56 518.53,-41.97 498.28,-31.63"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="499.97,-28.57 489.48,-27.14 496.79,-34.8 499.97,-28.57"/>
+</a>
+</g>
+</g>
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="675.25,-26 546,-26 546,-6 675.25,-6 675.25,-26"/>
+<text text-anchor="middle" x="610.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.annotation.Nonnull</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node7 -->
+<g id="edge6_Node000001_Node000007" class="edge">
+<title>Node1&#45;&gt;Node7</title>
+<g id="a_edge6_Node000001_Node000007"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M610.62,-67.79C610.62,-58.32 610.62,-47.2 610.62,-37.78"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="614.13,-37.82 610.63,-27.82 607.13,-37.82 614.13,-37.82"/>
+</a>
+</g>
+</g>
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="855.75,-26 693.5,-26 693.5,-6 855.75,-6 855.75,-26"/>
+<text text-anchor="middle" x="774.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.Max</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node8 -->
+<g id="edge7_Node000001_Node000008" class="edge">
+<title>Node1&#45;&gt;Node8</title>
+<g id="a_edge7_Node000001_Node000008"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M659.39,-67.59C686.28,-55.78 718.93,-41.45 742.59,-31.06"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="743.97,-34.28 751.72,-27.06 741.16,-27.87 743.97,-34.28"/>
+</a>
+</g>
+</g>
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1033.25,-26 874,-26 874,-6 1033.25,-6 1033.25,-26"/>
+<text text-anchor="middle" x="953.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.Min</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node9 -->
+<g id="edge8_Node000001_Node000009" class="edge">
+<title>Node1&#45;&gt;Node9</title>
+<g id="a_edge8_Node000001_Node000009"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M675.14,-75.46C739.26,-62 836.61,-41.56 897.59,-28.76"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="897.99,-32.25 907.06,-26.78 896.55,-25.4 897.99,-32.25"/>
+</a>
+</g>
+</g>
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1194.38,-32 1050.88,-32 1050.88,0 1194.38,0 1194.38,-32"/>
+<text text-anchor="start" x="1058.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.</text>
+<text text-anchor="middle" x="1122.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">NotNull</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node10 -->
+<g id="edge9_Node000001_Node000010" class="edge">
+<title>Node1&#45;&gt;Node10</title>
+<g id="a_edge9_Node000001_Node000010"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M675.19,-81.59C757.47,-71.9 904.33,-53.77 1039.34,-32.48"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1039.88,-35.94 1049.2,-30.91 1038.78,-29.03 1039.88,-35.94"/>
+</a>
+</g>
+</g>
+<!-- Node11 -->
+<g id="Node000011" class="node">
+<title>Node11</title>
+<g id="a_Node000011"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1375.12,-26 1212.12,-26 1212.12,-6 1375.12,-6 1375.12,-26"/>
+<text text-anchor="middle" x="1293.62" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">jakarta.validation.constraints.Size</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node11 -->
+<g id="edge10_Node000001_Node000011" class="edge">
+<title>Node1&#45;&gt;Node11</title>
+<g id="a_edge10_Node000001_Node000011"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M675.29,-84.26C784.45,-75.93 1012.12,-57.13 1203.62,-32 1211.92,-30.91 1220.63,-29.63 1229.23,-28.29"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1229.6,-31.77 1238.92,-26.74 1228.49,-24.86 1229.6,-31.77"/>
+</a>
+</g>
+</g>
+<!-- Node12 -->
+<g id="Node000012" class="node">
+<title>Node12</title>
+<g id="a_Node000012"><a xlink:title=" ">
+<polygon fill="#e0e0e0" stroke="#999999" points="1512,-32 1393.25,-32 1393.25,0 1512,0 1512,-32"/>
+<text text-anchor="start" x="1401.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">java.util.Objects.require</text>
+<text text-anchor="middle" x="1452.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">NonNull</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node12 -->
+<g id="edge11_Node000001_Node000012" class="edge">
+<title>Node1&#45;&gt;Node12</title>
+<g id="a_edge11_Node000001_Node000012"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M675.18,-87.38C806.61,-83.39 1114.74,-70.6 1381.92,-32.27"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1382.12,-35.78 1391.51,-30.88 1381.11,-28.85 1382.12,-35.78"/>
 </a>
 </g>
 </g>

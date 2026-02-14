@@ -1,9 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a92cf623d601382dc482c6be1eb89588c":[2,0,0,0,0,1,3,0,6,0],
-"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html":[1,0,0,0,0,2,0,9],
-"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html":[2,0,0,0,0,2,0,9],
-"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a05fbace17a9722a19f8d36838c84e1e4":[1,0,0,0,0,2,0,9,5],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a05fbace17a9722a19f8d36838c84e1e4":[2,0,0,0,0,2,0,9,5],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a105fa89c6c3118890264ca5c12e400ff":[1,0,0,0,0,2,0,9,10],
 "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a105fa89c6c3118890264ca5c12e400ff":[2,0,0,0,0,2,0,9,10],
@@ -60,8 +56,8 @@ var NAVTREEINDEX21 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html#a1e5a9996cd7904625fb67abf6994cc1f":[1,0,0,0,0,1,4,10],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math.html":[1,0,0,0,0,1,4,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html":[1,0,0,0,0,1,4,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ac3d62f66e8acd5749e3037a6ad06f21e":[1,0,0,0,0,1,4,1,6],
-"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ad9235162514fff9999f723bb791d4da1":[1,0,0,0,0,1,4,1,5],
+"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a96eda4804ac4a3c9f57c9960599f724c":[1,0,0,0,0,1,4,1,6],
+"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#aa86aff33589489ef55f1a9747a8f6d5d":[1,0,0,0,0,1,4,1,5],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55":[1,0,0,0,0,1,4,1,7],
 "namespacefr_1_1softsf_1_1sudokufx_1_1config.html":[1,0,0,0,0,2],
 "namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1database.html":[1,0,0,0,0,2,0],

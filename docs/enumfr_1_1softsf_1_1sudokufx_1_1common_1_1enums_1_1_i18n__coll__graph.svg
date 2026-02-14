@@ -40,8 +40,8 @@
 <text text-anchor="start" x="27.75" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="27.75" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00"> I_18_N_PATH</text>
 <text text-anchor="start" x="12.38" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="27.75" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final ObjectProperty</text>
-<text text-anchor="start" x="27.75" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Locale &gt; LOCALE</text>
+<text text-anchor="start" x="27.75" y="-262.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final ReadOnlyObject</text>
+<text text-anchor="start" x="27.75" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">Wrapper&lt; Locale &gt; LOCALE</text>
 <text text-anchor="start" x="12.38" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="27.75" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Locale</text>
 <text text-anchor="start" x="27.75" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00"> LOCALE_EN</text>
@@ -59,8 +59,8 @@
 <text text-anchor="start" x="27.75" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getValue(final</text>
 <text text-anchor="start" x="27.75" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> String key)</text>
 <text text-anchor="start" x="10.88" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="27.75" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; Locale</text>
-<text text-anchor="start" x="27.75" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; localeProperty()</text>
+<text text-anchor="start" x="27.75" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyObjectProperty</text>
+<text text-anchor="start" x="27.75" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Locale &gt; localeProperty()</text>
 <text text-anchor="start" x="10.88" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="27.75" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setLanguageBasedOnThe</text>
 <text text-anchor="start" x="27.75" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">HostEnvironment()</text>

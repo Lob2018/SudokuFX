@@ -106,11 +106,17 @@ $(function() {
   <div class="headertitle"><div class="title">GrilleResolue.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import jakarta.annotation.Nonnull;</code><br />
+<div class="textblock"><code>import java.util.Arrays;</code><br />
+<code>import java.util.Objects;</code><br />
+<code>import java.util.Optional;</code><br />
+<code>import org.slf4j.Logger;</code><br />
+<code>import org.slf4j.LoggerFactory;</code><br />
+<code>import jakarta.annotation.Nonnull;</code><br />
 <code>import jakarta.validation.constraints.Max;</code><br />
 <code>import jakarta.validation.constraints.Min;</code><br />
 <code>import jakarta.validation.constraints.NotNull;</code><br />
 <code>import jakarta.validation.constraints.Size;</code><br />
+<code>import java.util.Objects.requireNonNull;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for GrilleResolue.java:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
@@ -124,8 +130,8 @@ Packages</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad9235162514fff9999f723bb791d4da1" id="r_ad9235162514fff9999f723bb791d4da1"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ad9235162514fff9999f723bb791d4da1">fr.softsf.sudokufx.common.util.sudoku.GrilleResolue</a> (boolean solved, @Nonnull @NotNull(message=&quot;solvedGrid must not be null&quot;) @Size(min=81, max=81, message=&quot;solvedGrid must contain exactly 81 elements&quot;) int[] solvedGrid, @Min(value=0, message=&quot;possibilityPercentage must be &gt;= 0&quot;) @Max(value=100, message=&quot;possibilityPercentage must be &lt;= 100&quot;) int possibilityPercentage)</td></tr>
-<tr class="memdesc:ad9235162514fff9999f723bb791d4da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record representing the result of solving a Sudoku grid.  <br /></td></tr>
+<tr class="memitem:aa86aff33589489ef55f1a9747a8f6d5d" id="r_aa86aff33589489ef55f1a9747a8f6d5d"><td class="memItemLeft">record&#160;</td><td class="memItemRight"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#aa86aff33589489ef55f1a9747a8f6d5d">fr.softsf.sudokufx.common.util.sudoku.GrilleResolue</a> (boolean solved, @Nonnull @NotNull(message=&quot;solvedGrid must not be null&quot;) @Size(min=CASES_NUMBER, max=CASES_NUMBER, message=&quot;solvedGrid must contain exactly 81 elements&quot;) int[] solvedGrid, @Min(value=0, message=&quot;possibilityPercentage must be &gt;= 0&quot;) @Max(value=100, message=&quot;possibilityPercentage must be &lt;= 100&quot;) int possibilityPercentage)</td></tr>
+<tr class="memdesc:aa86aff33589489ef55f1a9747a8f6d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Immutable record representing a Sudoku grid resolution result.  <br /></td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -4,11 +4,11 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,1035,342,1169,364,1244,390,1318,452,1465,522,1609,518,1611,448,1468,385,1320,359,1246,337,1170,305,1037"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html" title="Service managing audio playback for the application." alt="" coords="423,668,633,1249"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="568,1249,579,1318,580,1325,574,1326,573,1319,563,1249"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="796,839,1012,1079"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="879,1079,820,1327,815,1325,874,1078"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="796,828,1012,1089"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="876,1090,820,1327,815,1325,871,1088"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" title="Service for managing Player entities." alt="" coords="534,372,872,596"/>
 <area shape="poly" id="edge17_Node000001_Node000005" title=" " alt="" coords="699,596,696,668,688,1000,685,1326,679,1326,683,1000,691,668,694,596"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="753,595,849,822,844,824,748,597"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="753,595,845,811,840,814,748,597"/>
 <area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title="Repository interface for Player entities." alt="" coords="5,169,187,271"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="148,269,198,309,254,346,318,376,386,402,519,442,517,447,384,407,316,381,252,350,195,314,145,273"/>
 <area shape="rect" id="Node000007" title=" " alt="" coords="22,5,170,91"/>

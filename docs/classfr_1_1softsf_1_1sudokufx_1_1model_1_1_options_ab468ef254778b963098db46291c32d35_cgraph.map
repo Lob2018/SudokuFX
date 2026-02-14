@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.model.Options.Options" name="fr.softsf.sudokufx.model.Options.Options">
-<area shape="rect" id="Node000001" title="Full constructor to initialize all fields of options." alt="" coords="5,39,172,81"/>
+<area shape="rect" id="Node000001" title="Full constructor using JEP 482 (Statements before super())." alt="" coords="5,39,172,81"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format." alt="" coords="220,5,387,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,44,204,39,204,45,172,50"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates a file path for non&#45;null and maximum length." alt="" coords="220,72,386,115"/>

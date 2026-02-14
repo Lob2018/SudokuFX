@@ -122,7 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21406498eb603015be4646bea9e27e40" id="r_a21406498eb603015be4646bea9e27e40"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a21406498eb603015be4646bea9e27e40">getLanguage</a> ()</td></tr>
 <tr class="memitem:a238663fe2261f4b136a13fb722285688" id="r_a238663fe2261f4b136a13fb722285688"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a238663fe2261f4b136a13fb722285688">getValue</a> (final String key)</td></tr>
 <tr class="memdesc:a238663fe2261f4b136a13fb722285688"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localized string for the given key.  <br /></td></tr>
-<tr class="memitem:aec30533d4a2ace2d0e62e4310a3e3b89" id="r_aec30533d4a2ace2d0e62e4310a3e3b89"><td class="memItemLeft">ObjectProperty&lt; Locale &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aec30533d4a2ace2d0e62e4310a3e3b89">localeProperty</a> ()</td></tr>
+<tr class="memitem:a2e44f991b7288866c005de0089781abf" id="r_a2e44f991b7288866c005de0089781abf"><td class="memItemLeft">ReadOnlyObjectProperty&lt; Locale &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a2e44f991b7288866c005de0089781abf">localeProperty</a> ()</td></tr>
 <tr class="memitem:ab51cba3ba0b453f6219dc223664bb91a" id="r_ab51cba3ba0b453f6219dc223664bb91a"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab51cba3ba0b453f6219dc223664bb91a">setLanguageBasedOnTheHostEnvironment</a> ()</td></tr>
 <tr class="memdesc:ab51cba3ba0b453f6219dc223664bb91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the language to match host system (defaulting to English if not French).  <br /></td></tr>
 </table><table class="memberdecls">
@@ -142,7 +142,7 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:ac4679380d2cec013f0d38b8efba70c08" id="r_ac4679380d2cec013f0d38b8efba70c08"><td class="memItemLeft">static final ResourceBundle&#160;</td><td class="memItemRight"><a class="el" href="#ac4679380d2cec013f0d38b8efba70c08">ENGLISH_BUNDLE</a></td></tr>
 <tr class="memitem:a614734550e457fda786578f53de95bc3" id="r_a614734550e457fda786578f53de95bc3"><td class="memItemLeft">static final ResourceBundle&#160;</td><td class="memItemRight"><a class="el" href="#a614734550e457fda786578f53de95bc3">FRENCH_BUNDLE</a></td></tr>
 <tr class="memitem:a964e916d5712fc4ec8be11692c27ce30" id="r_a964e916d5712fc4ec8be11692c27ce30"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#a964e916d5712fc4ec8be11692c27ce30">I_18_N_PATH</a> = AppPaths.I18N_PATH.getPath()</td></tr>
-<tr class="memitem:aec49d8d21d0b04dec73aa3b9c56c75ef" id="r_aec49d8d21d0b04dec73aa3b9c56c75ef"><td class="memItemLeft">static final ObjectProperty&lt; Locale &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aec49d8d21d0b04dec73aa3b9c56c75ef">LOCALE</a></td></tr>
+<tr class="memitem:a8e3b3dcafa8f151bfe6bec675ed310b6" id="r_a8e3b3dcafa8f151bfe6bec675ed310b6"><td class="memItemLeft">static final ReadOnlyObjectWrapper&lt; Locale &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8e3b3dcafa8f151bfe6bec675ed310b6">LOCALE</a></td></tr>
 <tr class="memitem:adf3d3262a70ee59cd2244806470bf164" id="r_adf3d3262a70ee59cd2244806470bf164"><td class="memItemLeft">static final Locale&#160;</td><td class="memItemRight"><a class="el" href="#adf3d3262a70ee59cd2244806470bf164">LOCALE_EN</a> = Locale.of(&quot;en&quot;, &quot;US&quot;)</td></tr>
 <tr class="memitem:a3a7563e6c7dbc659786c9d423a019cd3" id="r_a3a7563e6c7dbc659786c9d423a019cd3"><td class="memItemLeft">static final Locale&#160;</td><td class="memItemRight"><a class="el" href="#a3a7563e6c7dbc659786c9d423a019cd3">LOCALE_FR</a> = Locale.of(&quot;fr&quot;, &quot;FR&quot;)</td></tr>
 <tr class="memitem:a0d056497715899fc21ec8e13f0618b74" id="r_a0d056497715899fc21ec8e13f0618b74"><td class="memItemLeft">static final Logger&#160;</td><td class="memItemRight"><a class="el" href="#a0d056497715899fc21ec8e13f0618b74">LOG</a> = LoggerFactory.getLogger(I18n.class)</td></tr>
@@ -235,21 +235,21 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aec30533d4a2ace2d0e62e4310a3e3b89" name="aec30533d4a2ace2d0e62e4310a3e3b89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec30533d4a2ace2d0e62e4310a3e3b89">&#9670;&#160;</a></span>localeProperty()</h2>
+<a id="a2e44f991b7288866c005de0089781abf" name="a2e44f991b7288866c005de0089781abf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e44f991b7288866c005de0089781abf">&#9670;&#160;</a></span>localeProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">ObjectProperty&lt; Locale &gt; fr.softsf.sudokufx.common.enums.I18n.localeProperty </td>
+          <td class="memname">ReadOnlyObjectProperty&lt; Locale &gt; fr.softsf.sudokufx.common.enums.I18n.localeProperty </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Observable locale property. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Read-only observable locale property. </dd></dl>
 
 </div>
 </div>
@@ -416,8 +416,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aec49d8d21d0b04dec73aa3b9c56c75ef" name="aec49d8d21d0b04dec73aa3b9c56c75ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec49d8d21d0b04dec73aa3b9c56c75ef">&#9670;&#160;</a></span>LOCALE</h2>
+<a id="a8e3b3dcafa8f151bfe6bec675ed310b6" name="a8e3b3dcafa8f151bfe6bec675ed310b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3b3dcafa8f151bfe6bec675ed310b6">&#9670;&#160;</a></span>LOCALE</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -426,7 +426,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"> final ObjectProperty&lt;Locale&gt; fr.softsf.sudokufx.common.enums.I18n.LOCALE</td>
+          <td class="memname"> final ReadOnlyObjectWrapper&lt;Locale&gt; fr.softsf.sudokufx.common.enums.I18n.LOCALE</td>
         </tr>
       </table>
   </td>
@@ -435,8 +435,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                   =</div>
-<div class="line"><span class="keyword">new</span> SimpleObjectProperty&lt;&gt;(Locale.getDefault())</div>
+<b>Initial value:</b><div class="fragment"><div class="line">                                          =</div>
+<div class="line"><span class="keyword">new</span> ReadOnlyObjectWrapper&lt;&gt;(Locale.getDefault())</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -9,6 +9,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html", [
       [ "fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html", null ],
+      [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html", null ],
       [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html", null ],
       [ "fr.softsf.sudokufx.viewmodel.state.PlayerStateHolderUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html", null ]
     ] ],
@@ -94,9 +95,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.grid.GrilleResolueUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.grid.GrillesCreesUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html", null ],
     [ "HBox", null, [
-      [ "fr.softsf.sudokufx.view.component.PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html", [
-        [ "fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.PossibilityStarsHBoxStub", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html", null ]
-      ] ]
+      [ "fr.softsf.sudokufx.view.component.PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.viewmodel.HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.HelpViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test.html", null ],
@@ -171,7 +170,6 @@ var hierarchy =
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", null ],
-    [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuSaveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", null ],

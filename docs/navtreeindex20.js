@@ -1,9 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#a41fad477ba699d8b5c17104e3065f8ae":[1,0,0,0,0,1,4,0,0,6],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#a41fad477ba699d8b5c17104e3065f8ae":[2,0,0,0,0,1,4,0,0,6],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#a5cc2d74d9e008fb9a27c13d7c4f20fd3":[1,0,0,0,0,1,4,0,0,1],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#a5cc2d74d9e008fb9a27c13d7c4f20fd3":[2,0,0,0,0,1,4,0,0,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#a908d5de0c65d43aacdf825bb7fcd3a26":[1,0,0,0,0,1,4,0,0,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#a908d5de0c65d43aacdf825bb7fcd3a26":[2,0,0,0,0,1,4,0,0,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html#ac51a58b57cc2aff68c05ab9637cc20cc":[1,0,0,0,0,1,4,0,0,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX20 =
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html":[2,0,0,0,0,1,3,0,6],
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a7952718f0a731bf5b78c8b7d7a085bef":[1,0,0,0,0,1,3,0,6,1],
 "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a7952718f0a731bf5b78c8b7d7a085bef":[2,0,0,0,0,1,3,0,6,1],
-"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a92cf623d601382dc482c6be1eb89588c":[1,0,0,0,0,1,3,0,6,0]
+"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a92cf623d601382dc482c6be1eb89588c":[1,0,0,0,0,1,3,0,6,0],
+"interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a92cf623d601382dc482c6be1eb89588c":[2,0,0,0,0,1,3,0,6,0],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html":[1,0,0,0,0,2,0,9],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html":[2,0,0,0,0,2,0,9],
+"interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#a05fbace17a9722a19f8d36838c84e1e4":[1,0,0,0,0,2,0,9,5]
 };

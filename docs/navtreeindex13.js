@@ -1,5 +1,9 @@
 var NAVTREEINDEX13 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3787b3219128cad2b43648b298ef35d7":[1,0,0,0,0,9,1,1,163],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3787b3219128cad2b43648b298ef35d7":[2,0,0,0,0,8,1,1,163],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a39af891bdb0af2c2abfd7a68bdfe87e8":[1,0,0,0,0,9,1,1,38],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a39af891bdb0af2c2abfd7a68bdfe87e8":[2,0,0,0,0,8,1,1,38],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a39b3e85044cada73e25205987e4a0200":[1,0,0,0,0,9,1,1,126],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a39b3e85044cada73e25205987e4a0200":[2,0,0,0,0,8,1,1,126],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3a91238dd9fbbfd65f850f1906685c60":[1,0,0,0,0,9,1,1,30],
@@ -245,9 +249,5 @@ var NAVTREEINDEX13 =
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae6f58435b49703c5dd91a28297e6d828":[1,0,0,0,0,9,1,1,72],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae6f58435b49703c5dd91a28297e6d828":[2,0,0,0,0,8,1,1,72],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae7c8bc6f1d6298d2a0e8069c2dd65c0f":[1,0,0,0,0,9,1,1,33],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae7c8bc6f1d6298d2a0e8069c2dd65c0f":[2,0,0,0,0,8,1,1,33],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aebaf39d672a3997a3b90c42333b0689b":[1,0,0,0,0,9,1,1,44],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aebaf39d672a3997a3b90c42333b0689b":[2,0,0,0,0,8,1,1,44],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#af1c5dfa6eeaf4690e2009a3e894d4a52":[1,0,0,0,0,9,1,1,89],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#af1c5dfa6eeaf4690e2009a3e894d4a52":[2,0,0,0,0,8,1,1,89]
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae7c8bc6f1d6298d2a0e8069c2dd65c0f":[2,0,0,0,0,8,1,1,33]
 };

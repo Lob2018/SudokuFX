@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenStarsBoxAndKey_whenAccessibleTextBinding_thenReturnFormattedText" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenStarsBoxAndKey_whenAccessibleTextBinding_thenReturnFormattedText">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,266,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html#a7746116cfca8394695053b9c60c076fd" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="314,21,547,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,40,298,40,298,45,266,45"/>
+</map>

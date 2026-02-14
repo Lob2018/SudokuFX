@@ -17,6 +17,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
     [ "setToasterService", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa72cc768af7602e1627d020ad3d135a8", null ],
     [ "toggleLanguage", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a67f2ba8f85685181dea0c4a2263a61dc", null ],
     [ "updatePlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aff34e77864185144dffd978d6ee2cdd4", null ],
+    [ "validateConfiguration", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a74bb41a68d3d0049e95267d15d98d1c9", null ],
     [ "applicationContext", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a73459121b4bec5be9c5eea58bec75086", null ],
     [ "defaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a0b25ad20a22e1cdfda2b4469d88a587d", null ],
     [ "dynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a709ac37adbaff7acbc20e18366a85239", null ],

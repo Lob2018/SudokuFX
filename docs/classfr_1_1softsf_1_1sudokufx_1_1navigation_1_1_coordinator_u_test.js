@@ -17,7 +17,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test =
     [ "givenNoHostServicesSet_whenOpenMyWebsiteUrl_thenLogsWarning", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6cb209b6d09612d84733468b1cf2bb70", null ],
     [ "givenNonNullDynamicFontSize_whenSetDynamicFontSize_thenDoesNotThrow", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a1e9f72acdd36221b009e9560e63954c5", null ],
     [ "givenNullDynamicFontSize_whenSetDynamicFontSize_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6edc9f68c5b029401870d56b46ccc6e3", null ],
-    [ "givenNullFXMLLoader_whenConstructCoordinator_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a73136058d71dca3c641289ed5f36ac6b", null ],
+    [ "givenNullFXMLLoader_whenValidateConfiguration_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a1791068100211c7d65405a797a990904", null ],
     [ "givenNullHostServices_whenSetHostServices_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ac1c1b33947d97fe12f108bfd91344d31", null ],
     [ "givenNullPointerException_whenLoad_thenCatchAndReturnNull", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ae165b82d9d71ea754e7d0f77c91d5dda", null ],
     [ "givenNullScene_whenSetDefaultScene_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#ae9d391865052e17a211105f3bd2cb97f", null ],

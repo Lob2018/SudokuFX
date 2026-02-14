@@ -18,7 +18,6 @@ var searchData=
   ['playerutest_15',['PlayerUTest',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html',1,'fr::softsf::sudokufx::model']]],
   ['playsongtests_16',['PlaySongTests',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html',1,'fr::softsf::sudokufx::testing::unit::service::ui::AudioServiceUTest']]],
   ['possibilitystarshbox_17',['PossibilityStarsHBox',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html',1,'fr::softsf::sudokufx::view::component']]],
-  ['possibilitystarshboxstub_18',['PossibilityStarsHBoxStub',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test_1_1_possibility_stars_h_box_stub.html',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModelUTest']]],
-  ['poweroften_19',['PowerOfTen',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten.html',1,'fr::softsf::sudokufx::common::util::math']]],
-  ['poweroftenutest_20',['PowerOfTenUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util::math']]]
+  ['poweroften_18',['PowerOfTen',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten.html',1,'fr::softsf::sudokufx::common::util::math']]],
+  ['poweroftenutest_19',['PowerOfTenUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util::math']]]
 ];

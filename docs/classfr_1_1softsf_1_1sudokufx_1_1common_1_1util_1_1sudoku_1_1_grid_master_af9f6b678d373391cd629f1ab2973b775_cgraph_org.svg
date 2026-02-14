@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#ac3d62f66e8acd5749e3037a6ad06f21e" target="_top" xlink:title="Record representing the result of a grid generation: the solved grid, the puzzle grid,...">
+<g id="a_Node000002"><a xlink:href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a96eda4804ac4a3c9f57c9960599f724c" target="_top" xlink:title="Immutable record representing the dual output of a Sudoku grid generation.">
 <polygon fill="white" stroke="#666666" points="408.5,-32 222.25,-32 222.25,0 408.5,0 408.5,-32"/>
 <text text-anchor="start" x="230.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="middle" x="315.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GrillesCrees</text>
