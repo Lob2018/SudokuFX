@@ -216,11 +216,6 @@ public class MenuPlayerViewModel {
         return players;
     }
 
-    @SuppressFBWarnings(
-            value = "EI_EXPOSE_REP",
-            justification =
-                    "JavaFX properties are intentionally exposed for bindings and listeners;"
-                            + " defensive copies break UI reactivity.")
     public ObjectProperty<PlayerDto> selectedPlayerProperty() {
         return playerStateHolder.currentPlayerProperty();
     }

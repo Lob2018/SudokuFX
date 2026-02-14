@@ -18,6 +18,7 @@ import javax.crypto.spec.GCMParameterSpec;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
@@ -64,6 +65,11 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     }
 
     @Override
+    @SuppressFBWarnings(
+            value = "REC_CATCH_EXCEPTION",
+            justification =
+                    "Wide catch is intentional for AES-GCM encryption; JCE providers may throw"
+                            + " unexpected RuntimeExceptions.")
     public String encrypt(final String original) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 original, "original must not be null or blank, but was " + original);
@@ -83,6 +89,11 @@ final class SecretKeyEncryptionServiceAESGCM implements IEncryptionService {
     }
 
     @Override
+    @SuppressFBWarnings(
+            value = "REC_CATCH_EXCEPTION",
+            justification =
+                    "Wide catch is intentional for AES-GCM decryption; JCE providers may throw"
+                            + " unexpected RuntimeExceptions.")
     public String decrypt(final String cypher) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 cypher, "cypher must not be null or blank, but was " + cypher);

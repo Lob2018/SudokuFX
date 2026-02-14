@@ -26,6 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 
@@ -79,6 +80,11 @@ public final class ApplicationKeystore implements IKeystore {
      * @param keystoreFileName the output file path (must not be null or blank)
      * @throws IllegalArgumentException if any parameter is invalid
      */
+    @SuppressFBWarnings(
+            value = "REC_CATCH_EXCEPTION",
+            justification =
+                    "Wide catch is intentional for cryptographic and keystore operations; providers"
+                            + " may throw unexpected RuntimeExceptions.")
     private static void writeTheKeystore(final KeyStore ks, final String keystoreFileName) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 keystoreFileName,
@@ -135,6 +141,11 @@ public final class ApplicationKeystore implements IKeystore {
     }
 
     /** Load the Keystore */
+    @SuppressFBWarnings(
+            value = "REC_CATCH_EXCEPTION",
+            justification =
+                    "Wide catch is intentional for keystore loading; JCE providers and IO"
+                            + " operations may throw unexpected RuntimeExceptions.")
     private void loadKeyStore() {
         try (FileInputStream fileInputStream = new FileInputStream(keystoreFilePath)) {
             ks.load(fileInputStream, PWD_ARRAY);
@@ -264,6 +275,11 @@ public final class ApplicationKeystore implements IKeystore {
      *
      * @param alias the keystore alias for the credential
      */
+    @SuppressFBWarnings(
+            value = "REC_CATCH_EXCEPTION",
+            justification =
+                    "Wide catch is intentional for keystore credential retrieval; JCE providers and"
+                            + " decryption routines may throw unexpected RuntimeExceptions.")
     private void getCredentials(final String alias) {
         try {
             KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(PWD_ARRAY));

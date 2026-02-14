@@ -37,7 +37,6 @@ import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.common.util.FileSystemManager;
 import fr.softsf.sudokufx.common.util.IFileSystem;
-import fr.softsf.sudokufx.common.util.math.NumberUtils;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.config.os.OsFoldersConfig;
@@ -67,6 +66,12 @@ public final class CrashScreenView implements IMainView {
     private final DropShadow dropShadow = new DropShadow();
     private final Stage primaryStage = new Stage();
 
+    @SuppressFBWarnings(
+            value = "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR",
+            justification =
+                    "The ISplashScreenView is injected via openingMainStage() before any usage."
+                        + " CrashScreenView is never used before this callback, making the field"
+                        + " safe by design.")
     private ISplashScreenView iSplashScreenView;
 
     @FXML private VBox crashscreenvbox;
@@ -213,8 +218,8 @@ public final class CrashScreenView implements IMainView {
                 crashScreenFontSize,
                 0,
                 0);
-        double strokeWidth =
-                NumberUtils.INSTANCE.safeDivide(crashScreenFontSize, SVG_STROKE_DIVISOR);
+        double strokeWidth = crashScreenFontSize / SVG_STROKE_DIVISOR;
+        strokeWidth = Math.max(strokeWidth, 1.0);
         if (Double.isNaN(strokeWidth)) {
             return;
         }

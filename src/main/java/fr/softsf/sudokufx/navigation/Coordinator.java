@@ -59,7 +59,6 @@ public class Coordinator {
 
     private static final Logger LOG = LoggerFactory.getLogger(Coordinator.class);
 
-    /** The main JavaFX scene managed by this coordinator. */
     private Scene defaultScene;
 
     /** Shared FXMLLoader for FXML view loading and controller injection. */
@@ -149,28 +148,38 @@ public class Coordinator {
      * its controller.
      *
      * <p>This method uses {@link FXMLLoader} together with Spring's {@link ApplicationContext} to
-     * instantiate the controller and inject Spring-managed beans **if the context is available**.
+     * instantiate the controller and inject Spring-managed beans when the context is available.
      *
-     * <p><b>Important:</b> If the Spring application context is not yet initialized, or if a bean
-     * failed to initialize, the {@code applicationContext} field will be {@code null}. In that
-     * case, the controller is instantiated by {@link FXMLLoader} alone, without Spring injection.
-     * This prevents a {@link NullPointerException} when calling {@code
-     * applicationContext.getBean(...)}.
+     * <p><b>Initialization requirements:</b> {@link #setDefaultScene(Scene)} must have been called
+     * before invoking this method. If the default scene or the shared {@link FXMLLoader} is not
+     * initialized, an {@link IllegalStateException} is thrown immediately rather than catching a
+     * {@link NullPointerException}.
+     *
+     * <p>If the Spring application context is not yet initialized, the controller is instantiated
+     * by {@link FXMLLoader} alone, without Spring injection.
      *
      * <p>If {@link #dynamicFontSize} is set, font sizes are updated after loading.
      *
      * <p>Any exception during loading (e.g., FXML not found, controller instantiation failure) is
-     * logged. The application is terminated via {@link Platform#exit()} in case of critical errors.
+     * logged, and the application exits via {@link Platform#exit()}.
      *
      * @param <T> the controller type
      * @param fxml the FXML filename; must not be null or blank
-     * @return the controller instance, or {@code null} if loading fails or Spring context is
-     *     unavailable
+     * @return the controller instance, or {@code null} if loading fails
      * @throws IllegalArgumentException if {@code fxml} is null or blank
+     * @throws IllegalStateException if required components (scene or loader) are not initialized
      */
     public <T> T setRootByFXMLName(final String fxml) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 fxml, "Fxml must not be null or blank, but was " + fxml);
+        if (defaultScene == null) {
+            throw new IllegalStateException(
+                    "defaultScene must be set before calling setRootByFXMLName()");
+        }
+        if (fxmlLoader == null) {
+            throw new IllegalStateException(
+                    "fxmlLoader must not be null before calling setRootByFXMLName()");
+        }
         String path = AppPaths.RESOURCES_FXML_PATH.getPath() + fxml;
         try {
             fxmlLoader.setRoot(null);
@@ -184,13 +193,6 @@ public class Coordinator {
                 dynamicFontSize.updateFontSize();
             }
             return fxmlLoader.getController();
-        } catch (NullPointerException npe) {
-            LOG.error(
-                    "██ Exception NullPointerException caught in setRootByFXMLName.Verify that"
-                            + " setDefaultScene, setDynamicFontSize, and setHostServices have been"
-                            + " called with non-null arguments (triggering Platform.exit(). {}",
-                    npe.getMessage(),
-                    npe);
         } catch (Exception e) {
             LOG.error(
                     "██ Exception caught when setting root by FXML name: {} █ The FXML path was"
@@ -198,9 +200,9 @@ public class Coordinator {
                     e.getMessage(),
                     path,
                     e);
+            exitPlatform();
+            return null;
         }
-        exitPlatform();
-        return null;
     }
 
     /**

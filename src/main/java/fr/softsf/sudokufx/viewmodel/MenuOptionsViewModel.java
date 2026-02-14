@@ -805,7 +805,9 @@ public class MenuOptionsViewModel {
         if (optionsDto.songpath().isEmpty()) {
             return;
         }
-        songProperty.set(Paths.get(optionsDto.songpath()).getFileName().toString());
+        String rawPath = optionsDto.songpath();
+        var fileName = StringUtils.isBlank(rawPath) ? null : Paths.get(rawPath).getFileName();
+        songProperty.set(fileName == null ? "" : fileName.toString());
     }
 
     /**

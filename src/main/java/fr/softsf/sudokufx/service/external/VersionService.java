@@ -168,6 +168,11 @@ public class VersionService {
      *     version is detected
      * @throws IllegalArgumentException if the JSON input is blank
      */
+    @SuppressFBWarnings(
+            value = "REC_CATCH_EXCEPTION",
+            justification =
+                    "Wide catch is intentional for JSON parsing; Jackson and stream operations may"
+                            + " throw unexpected RuntimeExceptions.")
     private boolean parseResponse(String json) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(json, "json must not be blank");
         try {

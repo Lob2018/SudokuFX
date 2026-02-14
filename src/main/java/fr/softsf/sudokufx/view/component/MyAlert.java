@@ -76,14 +76,15 @@ public class MyAlert extends Alert {
                                 btn.getStyleClass().add("my-alert-button");
                             }
                         });
-        Stage alertStage = (Stage) dialogPane.getScene().getWindow();
-        alertStage
-                .getIcons()
-                .add(
-                        new Image(
-                                Objects.requireNonNull(
-                                                SudoMain.class.getResource(
-                                                        AppPaths.LOGO_SUDO_PNG_PATH.getPath()))
-                                        .toExternalForm()));
+        if (dialogPane.getScene().getWindow() instanceof Stage alertStage) {
+            alertStage
+                    .getIcons()
+                    .add(
+                            new Image(
+                                    Objects.requireNonNull(
+                                                    SudoMain.class.getResource(
+                                                            AppPaths.LOGO_SUDO_PNG_PATH.getPath()))
+                                            .toExternalForm()));
+        }
     }
 }

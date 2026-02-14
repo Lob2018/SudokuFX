@@ -362,6 +362,11 @@ public class GridViewModel {
      * Handles all actions when a grid is successfully completed. Displays a victory toast to the
      * player and optionally plays their configured victory audio.
      */
+    @SuppressFBWarnings(
+            value = "REC_CATCH_EXCEPTION",
+            justification =
+                    "Wide catch is intentional in UI victory handling: any audio or file error must"
+                        + " be logged and surfaced as a toast without crashing the application.")
     private void celebrateVictory() {
         toasterService.showInfo(
                 MessageFormat.format(

@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.Optional;
 
+import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -101,6 +102,11 @@ public record GrilleResolue(
      * @return True if all components and grid contents are equal.
      */
     @Override
+    @SuppressFBWarnings(
+            value = "DLS_DEAD_LOCAL_STORE",
+            justification =
+                    "False positive: pattern variables from instanceof record matching are used in"
+                            + " equality checks.")
     public boolean equals(Object o) {
         return this == o
                 || (o instanceof GrilleResolue(boolean s, int[] g, int p)

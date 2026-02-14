@@ -155,7 +155,7 @@ class CoordinatorUTest {
     }
 
     @Test
-    void givenNullPointerException_whenLoad_thenCatchAndReturnNull() throws Exception {
+    void givenException_whenLoad_thenCatchAndReturnNull() throws Exception {
         when(fxmlLoader.load()).thenThrow(new NullPointerException("Forced NPE"));
         Object result = coordinator.setRootByFXMLName("dummy");
         assertNull(result);
@@ -165,7 +165,9 @@ class CoordinatorUTest {
                         .anyMatch(
                                 event ->
                                         event.getFormattedMessage()
-                                                .contains("NullPointerException caught")));
+                                                .contains(
+                                                        "Exception caught when setting root by FXML"
+                                                                + " name")));
     }
 
     @Test

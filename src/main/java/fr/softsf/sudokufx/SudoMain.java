@@ -60,10 +60,10 @@ public class SudoMain extends Application {
     private IMainView iMainView;
 
     @SuppressFBWarnings(
-            value = "EI_EXPOSE_REP2",
+            value = {"EI_EXPOSE_REP2", "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"},
             justification =
-                    "JavaFX Stage must be stored by reference; defensive copies are impossible and"
-                            + " break the JavaFX lifecycle.")
+                    "The JavaFX Stage is provided by the runtime via start(Stage). It cannot be"
+                        + " initialized in the constructor, but is guaranteed non-null before use.")
     private Stage stage;
 
     @Autowired private Coordinator coordinator;
@@ -210,8 +210,9 @@ public class SudoMain extends Application {
                 Platform.exit();
             } else {
                 LOG.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
-                logSqlInvalidAuthorization(
-                        (Exception) throwable, sqlInvalidAuthorizationSpecException);
+                if (throwable instanceof Exception ex) {
+                    logSqlInvalidAuthorization(ex, sqlInvalidAuthorizationSpecException);
+                }
                 PauseTransition pause = createViewTransition(FxmlView.CRASH_SCREEN.getPath(), 0);
                 pause.play();
             }
