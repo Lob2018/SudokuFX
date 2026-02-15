@@ -5,28 +5,26 @@
  */
 package fr.softsf.sudokufx.service.external;
 
+import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpTimeoutException;
 import java.time.Duration;
-import java.util.List;
 import javafx.concurrent.Task;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
-import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
-import fr.softsf.sudokufx.dto.github.TagDto;
 import fr.softsf.sudokufx.service.ui.SpinnerService;
 
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;
@@ -34,24 +32,17 @@ import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_UR
 /**
  * Service for checking if the application version is up to date by querying the GitHub API. It
  * retrieves the latest release tag from the repository and compares it with the current application
- * version. This service manages UI feedback through a spinner and status messages.
- *
- * <p>All method parameters and return values in this package are non-null by default, thanks to the
- * {@code @NonNullApi} annotation at the package level.
+ * version.
  */
 @Service
 public class VersionService {
 
     private static final Logger LOG = LoggerFactory.getLogger(VersionService.class);
     private static final int HTTP_STATUS_OK = 200;
-
-    /**
-     * Current application version extracted from properties, stripped of its 'v' prefix if present.
-     */
     private static final String CURRENT_VERSION =
             JVMApplicationProperties.INSTANCE.getAppVersion().replaceFirst("^v", "");
-
-    public static final int MAX_BODY_RESPONSE_SIZE = 1_048_576;
+    public static final int MAX_TAGS_RESPONSE_SIZE = 65_536;
+    public static final int MAX_TAG_NAME_LENGTH = 256;
 
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
@@ -66,9 +57,7 @@ public class VersionService {
      */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP2",
-            justification =
-                    "Spring-managed ObjectMapper must be stored by reference; defensive copies are"
-                            + " impossible and break JSON configuration consistency.")
+            justification = "Spring-managed ObjectMapper must be stored by reference.")
     public VersionService(
             HttpClient httpClient, ObjectMapper objectMapper, SpinnerService spinnerService) {
         this.httpClient = httpClient;
@@ -77,14 +66,10 @@ public class VersionService {
     }
 
     /**
-     * Checks if the current application version matches the latest release on GitHub. *
+     * Checks if the current application version matches the latest release on GitHub.
      *
-     * <p>Runs asynchronously using a JavaFX {@link Task}. It manages the loading spinner through
-     * the task's lifecycle and updates status messages for the UI. In case of network errors or
-     * timeouts, it defaults to assuming the version is up-to-date to avoid blocking the user.
-     *
-     * @return a {@link Task} returning {@code true} if the version is up-to-date or if an error
-     *     occurred, {@code false} if a new update is available
+     * @return a {@link Task} returning {@code true} if up-to-date, {@code false} if update
+     *     available
      */
     public Task<Boolean> checkLatestVersion() {
         return new Task<>() {
@@ -103,8 +88,8 @@ public class VersionService {
                                     .timeout(Duration.ofSeconds(5))
                                     .GET()
                                     .build();
-                    HttpResponse<String> response =
-                            httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+                    HttpResponse<InputStream> response =
+                            httpClient.send(request, HttpResponse.BodyHandlers.ofInputStream());
                     if (response.statusCode() != HTTP_STATUS_OK) {
                         LOG.error(
                                 "██ Exception GitHub API error: status {}", response.statusCode());
@@ -112,18 +97,14 @@ public class VersionService {
                                 I18n.INSTANCE.getValue("githubrepositoryversion.error.statuscode"));
                         return true;
                     }
-                    String body = response.body();
-                    if (body == null || body.length() > MAX_BODY_RESPONSE_SIZE) {
-                        LOG.error(
-                                "██ Exception GitHub response invalid or too large: {} chars",
-                                body == null ? "null" : body.length());
-                        return true;
+                    try (InputStream is = response.body()) {
+                        updateMessage(
+                                I18n.INSTANCE.getValue("githubrepositoryversion.checked")
+                                        + MyDateTime.INSTANCE.getFormattedCurrentTime()
+                                        + ")");
+                        byte[] data = is.readNBytes(MAX_TAGS_RESPONSE_SIZE);
+                        return parseResponse(data);
                     }
-                    updateMessage(
-                            I18n.INSTANCE.getValue("githubrepositoryversion.checked")
-                                    + MyDateTime.INSTANCE.getFormattedCurrentTime()
-                                    + ")");
-                    return parseResponse(body);
                 } catch (HttpTimeoutException _) {
                     LOG.warn("▓▓ Timeout while checking GitHub version");
                     updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.warn.timeout"));
@@ -158,42 +139,48 @@ public class VersionService {
     }
 
     /**
-     * Parses the GitHub API JSON response to identify the latest version tag. *
+     * Parses the byte array directly.
      *
-     * <p>The method extracts the first tag name, normalizes it by removing the 'v' prefix, and
-     * performs a strict equality check against the current version.
-     *
-     * @param json the JSON response string from GitHub API
+     * @param data the byte array containing the JSON response, limited by MAX_TAGS_RESPONSE_SIZE
      * @return {@code true} if versions match or if parsing fails; {@code false} if a different
      *     version is detected
-     * @throws IllegalArgumentException if the JSON input is blank
      */
-    @SuppressFBWarnings(
-            value = "REC_CATCH_EXCEPTION",
-            justification =
-                    "Wide catch is intentional for JSON parsing; Jackson and stream operations may"
-                            + " throw unexpected RuntimeExceptions.")
-    private boolean parseResponse(String json) {
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(json, "json must not be blank");
+    private boolean parseResponse(byte[] data) {
+        if (data.length == 0) {
+            LOG.warn("▓▓ Version check: GitHub returned an empty response body");
+            return true;
+        }
         try {
-            List<TagDto> list = objectMapper.readValue(json, new TypeReference<>() {});
-            return list.stream()
-                    .findFirst()
-                    .map(TagDto::name)
-                    .map(name -> name.replaceFirst("^v", "").trim())
-                    .map(
-                            lastVersion -> {
-                                boolean isLatest = CURRENT_VERSION.equals(lastVersion);
-                                LOG.info(
-                                        "▓▓ Version check: current={}, latest={}, match={}",
-                                        CURRENT_VERSION,
-                                        lastVersion,
-                                        isLatest);
-                                return isLatest;
-                            })
-                    .orElse(true);
+            JsonNode root = objectMapper.readTree(data);
+            if (root == null || !root.isArray() || root.isEmpty()) {
+                LOG.warn("▓▓ Version check: GitHub returned an empty or invalid tag list");
+                return true;
+            }
+            JsonNode firstTag = root.get(0).path("name");
+            if (!firstTag.isTextual()) {
+                LOG.error("██ Version check error: tag name field is not textual");
+                return true;
+            }
+            String rawName = firstTag.asText();
+            if (rawName.length() > MAX_TAG_NAME_LENGTH) {
+                LOG.error(
+                        "██ Version check error: tag name too large ({} chars)", rawName.length());
+                return true;
+            }
+            String latestVersion = rawName.replaceFirst("^v", "").trim();
+            if (latestVersion.isEmpty()) {
+                LOG.warn("▓▓ Version check: tag name is empty after normalization");
+                return true;
+            }
+            boolean isLatest = CURRENT_VERSION.equals(latestVersion);
+            LOG.info(
+                    "▓▓ Version check: current={}, latest={}, match={}",
+                    CURRENT_VERSION,
+                    latestVersion,
+                    isLatest);
+            return isLatest;
         } catch (Exception e) {
-            LOG.error("██ Exception parsing GitHub API response: {}", e.getMessage(), e);
+            LOG.error("██ Exception during GitHub JSON parsing: {}", e.getMessage());
             return true;
         }
     }

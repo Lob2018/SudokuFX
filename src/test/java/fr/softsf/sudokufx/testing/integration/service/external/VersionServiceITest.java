@@ -5,9 +5,12 @@
  */
 package fr.softsf.sudokufx.testing.integration.service.external;
 
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
 import javafx.concurrent.Task;
 
 import org.junit.jupiter.api.AfterEach;
@@ -67,7 +70,7 @@ class VersionServiceITest {
 
     @Mock private HttpClient mockHttpClient;
     @Mock private SpinnerService spinnerService;
-    @Mock private HttpResponse<String> mockResponse;
+    @Mock private HttpResponse<InputStream> mockResponse;
 
     @BeforeEach
     void eachSetup() {
@@ -89,15 +92,19 @@ class VersionServiceITest {
     @Test
     @SuppressWarnings("unchecked")
     void givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue() throws Exception {
+        String emptyArray = "[]";
+        InputStream inputStream =
+                new ByteArrayInputStream(
+                        emptyArray.getBytes(java.nio.charset.StandardCharsets.UTF_8));
         when(mockResponse.statusCode()).thenReturn(200);
-        when(mockResponse.body()).thenReturn("[]");
+        when(mockResponse.body()).thenReturn(inputStream);
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
         Task<Boolean> task =
                 new VersionService(mockHttpClient, objectMapper, spinnerService)
                         .checkLatestVersion();
         task.run();
-        assertTrue(task.get());
+        assertTrue(task.get(), "Should return true (up-to-date) when GitHub returns an empty list");
     }
 
     @ParameterizedTest
@@ -124,17 +131,20 @@ class VersionServiceITest {
     @Test
     @SuppressWarnings("unchecked")
     void givenDifferentVersionOnGitHub_whenCheckLatestVersion_thenReturnsFalse() throws Exception {
+        HttpResponse<InputStream> localMockResponse = mock(HttpResponse.class);
         String onlineVersion = "v9.9.9.9";
         String jsonResponse = String.format(JSON, onlineVersion);
-        when(mockResponse.statusCode()).thenReturn(200);
-        when(mockResponse.body()).thenReturn(jsonResponse);
+        InputStream inputStream =
+                new ByteArrayInputStream(jsonResponse.getBytes(StandardCharsets.UTF_8));
+        when(localMockResponse.statusCode()).thenReturn(200);
+        when(localMockResponse.body()).thenReturn(inputStream);
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
-                .thenReturn(mockResponse);
+                .thenReturn(localMockResponse);
         Task<Boolean> task =
                 new VersionService(mockHttpClient, objectMapper, spinnerService)
                         .checkLatestVersion();
         task.run();
-        assertFalse(task.get(), "Should return false as 9.9.9.9 != current version");
+        assertFalse(task.get());
     }
 
     @Test
@@ -142,8 +152,11 @@ class VersionServiceITest {
     void givenMatchingVersionOnGitHub_whenCheckLatestVersion_thenReturnsTrue() throws Exception {
         String currentVersionRaw = JVMApplicationProperties.INSTANCE.getAppVersion();
         String jsonResponse = String.format(JSON, currentVersionRaw);
+        InputStream inputStream =
+                new ByteArrayInputStream(
+                        jsonResponse.getBytes(java.nio.charset.StandardCharsets.UTF_8));
         when(mockResponse.statusCode()).thenReturn(200);
-        when(mockResponse.body()).thenReturn(jsonResponse);
+        when(mockResponse.body()).thenReturn(inputStream);
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
         Task<Boolean> task =
@@ -157,8 +170,34 @@ class VersionServiceITest {
     @SuppressWarnings("unchecked")
     void givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError()
             throws Exception {
+        String invalidJson = "{ invalid json }";
+        InputStream inputStream =
+                new ByteArrayInputStream(
+                        invalidJson.getBytes(java.nio.charset.StandardCharsets.UTF_8));
         when(mockResponse.statusCode()).thenReturn(200);
-        when(mockResponse.body()).thenReturn("{ invalid json }");
+        when(mockResponse.body()).thenReturn(inputStream);
+        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        Task<Boolean> task =
+                new VersionService(mockHttpClient, objectMapper, spinnerService)
+                        .checkLatestVersion();
+        task.run();
+        assertTrue(task.get(), "Should return true on parsing failure");
+        assertTrue(
+                logWatcher
+                        .list
+                        .getFirst()
+                        .getFormattedMessage()
+                        .contains("██ Exception during GitHub JSON parsing:"),
+                "Error log should be present");
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    void givenEmptyResponseBody_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn()
+            throws Exception {
+        when(mockResponse.statusCode()).thenReturn(200);
+        when(mockResponse.body()).thenReturn(new ByteArrayInputStream(new byte[0]));
         when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
                 .thenReturn(mockResponse);
         Task<Boolean> task =
@@ -167,10 +206,80 @@ class VersionServiceITest {
         task.run();
         assertTrue(task.get());
         assertTrue(
-                logWatcher
-                        .list
-                        .getFirst()
-                        .getFormattedMessage()
-                        .contains("██ Exception parsing GitHub API response:"));
+                logWatcher.list.stream()
+                        .anyMatch(
+                                event ->
+                                        event.getFormattedMessage()
+                                                .contains(
+                                                        "▓▓ Version check: GitHub returned an empty"
+                                                                + " response body")));
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    void givenTagTooLong_whenCheckLatestVersion_thenReturnsTrueAndLogsError() throws Exception {
+        String longTagName = "v" + "1".repeat(257);
+        String jsonResponse = String.format(JSON, longTagName);
+        InputStream inputStream =
+                new ByteArrayInputStream(jsonResponse.getBytes(StandardCharsets.UTF_8));
+        when(mockResponse.statusCode()).thenReturn(200);
+        when(mockResponse.body()).thenReturn(inputStream);
+        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        Task<Boolean> task =
+                new VersionService(mockHttpClient, objectMapper, spinnerService)
+                        .checkLatestVersion();
+        task.run();
+        assertTrue(task.get());
+        assertTrue(
+                logWatcher.list.stream()
+                        .anyMatch(
+                                event ->
+                                        event.getFormattedMessage()
+                                                .contains(
+                                                        "██ Version check error: tag name too"
+                                                                + " large")));
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    void givenEmptyNormalizedTagName_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn()
+            throws Exception {
+        String jsonResponse = String.format(JSON, "v ");
+        InputStream inputStream =
+                new ByteArrayInputStream(jsonResponse.getBytes(StandardCharsets.UTF_8));
+        when(mockResponse.statusCode()).thenReturn(200);
+        when(mockResponse.body()).thenReturn(inputStream);
+        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenReturn(mockResponse);
+        Task<Boolean> task =
+                new VersionService(mockHttpClient, objectMapper, spinnerService)
+                        .checkLatestVersion();
+        task.run();
+        assertTrue(task.get());
+        assertTrue(
+                logWatcher.list.stream()
+                        .anyMatch(
+                                event ->
+                                        event.getFormattedMessage()
+                                                .contains(
+                                                        "▓▓ Version check: tag name is empty after"
+                                                                + " normalization")));
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    void givenInterruptedThread_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn()
+            throws Exception {
+        when(mockHttpClient.send(any(HttpRequest.class), any(HttpResponse.BodyHandler.class)))
+                .thenThrow(new InterruptedException("Interrupted"));
+        Task<Boolean> task =
+                new VersionService(mockHttpClient, objectMapper, spinnerService)
+                        .checkLatestVersion();
+        task.run();
+        assertTrue(task.get(), "Should return true on interruption");
+        assertTrue(
+                logWatcher.list.stream()
+                        .anyMatch(event -> event.getFormattedMessage().contains("▓▓ Interrupted")));
     }
 }
