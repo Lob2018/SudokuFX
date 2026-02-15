@@ -7,6 +7,9 @@ on:
 permissions: # added using https://github.com/step-security/secure-repo
   contents: read
 
+env:
+  MAVEN_OPTS: "-Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED"
+
 jobs:
   package_for_linux:
     name: Package for Linux and Analyze with SonarCloud
