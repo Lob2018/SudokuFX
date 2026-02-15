@@ -32,6 +32,7 @@
     <deployment-folder>output</deployment-folder>
     <java.version>25</java.version>
     <javafx.version>25.0.2</javafx.version>
+    <jvm.args>-Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</jvm.args>
     <license.name>GPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
     <maven.version>3.9.9</maven.version>
@@ -413,7 +414,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>3.5.4</version>
         <configuration>
-          <argLine>@{jacoco.argLine} -Dapp.name=${project.artifactId} -Dapp.version=${project.version}
+          <argLine>@{jacoco.argLine} ${jvm.args} -Dapp.name=${project.artifactId} -Dapp.version=${project.version}
                         -Dapp.organization=${project.organization.name} -Dapp.license=${license.name}
                         -XX:+EnableDynamicAgentLoading -Xshare:off</argLine>
         </configuration>
@@ -488,6 +489,7 @@
           <jlinkVerbose>true</jlinkVerbose>
           <mainClass>${start-class}</mainClass>
           <options>
+            <option>${jvm.args}</option>
             <option>-Dapp.name=${project.artifactId}</option>
             <option>-Dapp.version=${project.version}</option>
             <option>-Dapp.organization=${project.organization.name}</option>
@@ -502,6 +504,7 @@
         <configuration>
           <mainClass>${start-class}</mainClass>
           <jvmArguments>
+            <jvmArgument>${jvm.args}</jvmArgument>
             <jvmArgument>-Dapp.name=${project.artifactId}</jvmArgument>
             <jvmArgument>-Dapp.version=${project.version}</jvmArgument>
             <jvmArgument>-Dapp.organization=${project.organization.name}</jvmArgument>
@@ -545,6 +548,7 @@
               <jlinkVerbose>true</jlinkVerbose>
               <mainClass>${start-class}</mainClass>
               <options>
+                <option>${jvm.args}</option>
                 <option>-Dapp.name=${project.artifactId}</option>
                 <option>-Dapp.version=${project.version}</option>
                 <option>-Dapp.organization=${project.organization.name}</option>
