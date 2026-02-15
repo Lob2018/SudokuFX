@@ -1127,44 +1127,42 @@
 <g id="Node000024" class="node">
 <title>Node24</title>
 <g id="a_Node000024"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" target="_top" xlink:title="Utility class providing helper methods for common image&#45;related operations in JavaFX.">
-<polygon fill="white" stroke="none" points="1431.75,-2296 1253.25,-2296 1253.25,-1980 1431.75,-1980 1431.75,-2296"/>
-<text text-anchor="start" x="1274.62" y="-2282.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
-<text text-anchor="start" x="1318.88" y="-2270.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>
-<text text-anchor="start" x="1258.75" y="-2254.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1267.25" y="-2254.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="1267.25" y="-2242.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALPHA_NORMALIZATION</text>
-<text text-anchor="start" x="1258.75" y="-2226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1267.25" y="-2226.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int ALPHA</text>
-<text text-anchor="start" x="1267.25" y="-2214.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="1258.75" y="-2198.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1267.25" y="-2198.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BLUE</text>
-<text text-anchor="start" x="1267.25" y="-2186.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="1258.75" y="-2170.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1267.25" y="-2170.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BYTE_MASK</text>
-<text text-anchor="start" x="1258.75" y="-2154.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1267.25" y="-2154.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int GREEN</text>
-<text text-anchor="start" x="1267.25" y="-2142.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="1258.75" y="-2126.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1267.25" y="-2126.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="1258.75" y="-2110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1267.25" y="-2110.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int RED</text>
-<text text-anchor="start" x="1267.25" y="-2098.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="1257.25" y="-2082.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1267.25" y="-2082.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundImage createBackground</text>
-<text text-anchor="start" x="1267.25" y="-2070.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image(Image resizedImage)</text>
-<text text-anchor="start" x="1257.25" y="-2054.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1267.25" y="-2054.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageMeta getImageMeta</text>
-<text text-anchor="start" x="1267.25" y="-2042.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
-<text text-anchor="start" x="1257.25" y="-2026.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1267.25" y="-2026.5" font-family="Helvetica,sans-Serif" font-size="10.00">Color intToColor(int</text>
-<text text-anchor="start" x="1267.25" y="-2014.5" font-family="Helvetica,sans-Serif" font-size="10.00"> colorValue)</text>
-<text text-anchor="start" x="1257.25" y="-1998.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1267.25" y="-1998.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isValidImage</text>
-<text text-anchor="start" x="1267.25" y="-1986.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
-<polygon fill="#666666" stroke="#666666" points="1253.25,-2266 1253.25,-2266 1431.75,-2266 1431.75,-2266 1253.25,-2266"/>
-<polygon fill="#666666" stroke="#666666" points="1253.25,-2094 1253.25,-2094 1265.25,-2094 1265.25,-2094 1253.25,-2094"/>
-<polygon fill="#666666" stroke="#666666" points="1265.25,-2094 1265.25,-2094 1431.75,-2094 1431.75,-2094 1265.25,-2094"/>
-<polygon fill="none" stroke="#666666" points="1253.25,-1980 1253.25,-2296 1431.75,-2296 1431.75,-1980 1253.25,-1980"/>
+<polygon fill="white" stroke="none" points="1431.75,-2288 1253.25,-2288 1253.25,-1988 1431.75,-1988 1431.75,-2288"/>
+<text text-anchor="start" x="1274.62" y="-2274.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
+<text text-anchor="start" x="1318.88" y="-2262.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>
+<text text-anchor="start" x="1258.75" y="-2246.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1267.25" y="-2246.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="1267.25" y="-2234.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALPHA_NORMALIZATION</text>
+<text text-anchor="start" x="1258.75" y="-2218.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1267.25" y="-2218.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int ALPHA</text>
+<text text-anchor="start" x="1267.25" y="-2206.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="1258.75" y="-2190.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1267.25" y="-2190.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BLUE</text>
+<text text-anchor="start" x="1267.25" y="-2178.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="1258.75" y="-2162.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1267.25" y="-2162.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BYTE_MASK</text>
+<text text-anchor="start" x="1258.75" y="-2146.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1267.25" y="-2146.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int GREEN</text>
+<text text-anchor="start" x="1267.25" y="-2134.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="1258.75" y="-2118.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1267.25" y="-2118.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int RED</text>
+<text text-anchor="start" x="1267.25" y="-2106.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="1257.25" y="-2090.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1267.25" y="-2090.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundImage createBackground</text>
+<text text-anchor="start" x="1267.25" y="-2078.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image(Image resizedImage)</text>
+<text text-anchor="start" x="1257.25" y="-2062.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1267.25" y="-2062.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageMeta getImageMeta</text>
+<text text-anchor="start" x="1267.25" y="-2050.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
+<text text-anchor="start" x="1257.25" y="-2034.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1267.25" y="-2034.5" font-family="Helvetica,sans-Serif" font-size="10.00">Color intToColor(int</text>
+<text text-anchor="start" x="1267.25" y="-2022.5" font-family="Helvetica,sans-Serif" font-size="10.00"> colorValue)</text>
+<text text-anchor="start" x="1257.25" y="-2006.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1267.25" y="-2006.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isValidImage</text>
+<text text-anchor="start" x="1267.25" y="-1994.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
+<polygon fill="#666666" stroke="#666666" points="1253.25,-2258 1253.25,-2258 1431.75,-2258 1431.75,-2258 1253.25,-2258"/>
+<polygon fill="#666666" stroke="#666666" points="1253.25,-2102 1253.25,-2102 1265.25,-2102 1265.25,-2102 1253.25,-2102"/>
+<polygon fill="#666666" stroke="#666666" points="1265.25,-2102 1265.25,-2102 1431.75,-2102 1431.75,-2102 1265.25,-2102"/>
+<polygon fill="none" stroke="#666666" points="1253.25,-1988 1253.25,-2288 1431.75,-2288 1431.75,-1988 1253.25,-1988"/>
 </a>
 </g>
 </g>
@@ -1172,7 +1170,7 @@
 <g id="edge26_Node000021_Node000024" class="edge">
 <title>Node24&#45;&gt;Node21</title>
 <g id="a_edge26_Node000021_Node000024"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1316.98,-1980.16C1302.66,-1937.92 1280.34,-1896.18 1245.5,-1868 1199.46,-1830.76 1156.17,-1891.05 1113.5,-1850 1113.4,-1849.9 1113.3,-1849.81 1113.2,-1849.71"/>
+<path fill="none" stroke="#63b8ff" d="M1319.61,-1988.24C1305.46,-1943.29 1282.55,-1897.97 1245.5,-1868 1199.46,-1830.76 1156.17,-1891.05 1113.5,-1850 1113.4,-1849.9 1113.3,-1849.81 1113.2,-1849.71"/>
 <polygon fill="none" stroke="#63b8ff" points="1113.25,-1849.76 1106.17,-1848.34 1104.76,-1841.27 1111.83,-1842.69 1113.25,-1849.76"/>
 </a>
 </g>

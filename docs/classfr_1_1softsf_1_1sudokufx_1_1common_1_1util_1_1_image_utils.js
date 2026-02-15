@@ -9,6 +9,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils =
     [ "BLUE_SHIFT", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#ad0b4754fbb9ccb02bf37b7cf19c6b6f8", null ],
     [ "BYTE_MASK", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#a2743bcb3cb58005ed103267e058867d5", null ],
     [ "GREEN_SHIFT", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#a65cbddedd709e118121eaffeca4e374c", null ],
-    [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aa8dd9d2893c29cc28f3d58b8ce48dbcc", null ],
     [ "RED_SHIFT", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aa0d92ea3c9b1a95fbe8792a8b64e4fc0", null ]
 ];

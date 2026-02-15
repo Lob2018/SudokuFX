@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateIllegalState" name="fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateIllegalState">
+<area shape="rect" id="Node000001" title="Logs an error and returns an IllegalStateException." alt="" coords="5,5,286,48"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aee373055482e24b44505bb4b699551c3" title="Internal generic helper to centralize logging logic and exception instantiation." alt="" coords="334,5,575,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,24,318,24,318,29,286,29"/>
+</map>

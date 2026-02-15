@@ -106,25 +106,23 @@ $(function() {
   <div class="headertitle"><div class="title">VersionService.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import java.net.URI;</code><br />
+<div class="textblock"><code>import java.io.InputStream;</code><br />
+<code>import java.net.URI;</code><br />
 <code>import java.net.http.HttpClient;</code><br />
 <code>import java.net.http.HttpRequest;</code><br />
 <code>import java.net.http.HttpResponse;</code><br />
 <code>import java.net.http.HttpTimeoutException;</code><br />
 <code>import java.time.Duration;</code><br />
-<code>import java.util.List;</code><br />
 <code>import javafx.concurrent.Task;</code><br />
 <code>import org.slf4j.Logger;</code><br />
 <code>import org.slf4j.LoggerFactory;</code><br />
 <code>import org.springframework.stereotype.Service;</code><br />
-<code>import com.fasterxml.jackson.core.type.TypeReference;</code><br />
+<code>import com.fasterxml.jackson.databind.JsonNode;</code><br />
 <code>import com.fasterxml.jackson.databind.ObjectMapper;</code><br />
 <code>import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
-<code>import fr.softsf.sudokufx.common.exception.ExceptionTools;</code><br />
 <code>import fr.softsf.sudokufx.common.util.MyDateTime;</code><br />
 <code>import fr.softsf.sudokufx.config.JVMApplicationProperties;</code><br />
-<code>import fr.softsf.sudokufx.dto.github.TagDto;</code><br />
 <code>import fr.softsf.sudokufx.service.ui.SpinnerService;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.Urls.GITHUB_API_REPOSITORY_TAGS_URL;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for VersionService.java:</div>

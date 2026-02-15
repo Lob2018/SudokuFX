@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.service.external.VersionService" name="fr.softsf.sudokufx.service.external.VersionService">
-<area shape="rect" id="Node000001" title="Service for checking if the application version is up to date by querying the GitHub API." alt="" coords="5,275,218,653"/>
+<area shape="rect" id="Node000001" title="Service for checking if the application version is up to date by querying the GitHub API." alt="" coords="5,275,218,691"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html" title="A centralized service for managing the global loading state through a thread&#45;safe reference counter." alt="" coords="9,5,214,203"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,203,114,258,109,258,109,203"/>
 </map>

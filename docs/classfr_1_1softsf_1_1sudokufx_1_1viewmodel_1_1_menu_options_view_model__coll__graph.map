@@ -9,8 +9,8 @@
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="351,798,432,998,427,1000,346,800"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html" title="A centralized service for managing the global loading state through a thread&#45;safe reference counter." alt="" coords="410,487,616,684"/>
 <area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="512,684,502,998,497,997,507,684"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="629,951,867,1372"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="750,1372,750,1507,745,1507,745,1372"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="629,961,867,1361"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="750,1361,750,1507,745,1507,745,1361"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html" title="Utility class providing helper methods for common audio&#45;related operations." alt="" coords="890,1111,1082,1212"/>
 <area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="980,1212,904,1622,899,1621,975,1211"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="1106,1031,1322,1292"/>

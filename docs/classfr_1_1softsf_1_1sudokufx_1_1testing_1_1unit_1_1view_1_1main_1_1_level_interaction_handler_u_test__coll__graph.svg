@@ -1242,44 +1242,42 @@ var sectionId = 'dynsection-0';
 <g id="Node000024" class="node">
 <title>Node24</title>
 <g id="a_Node000024"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" target="_top" xlink:title="Utility class providing helper methods for common image&#45;related operations in JavaFX.">
-<polygon fill="white" stroke="none" points="332.62,-2614 154.12,-2614 154.12,-2298 332.62,-2298 332.62,-2614"/>
-<text text-anchor="start" x="175.49" y="-2600.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
-<text text-anchor="start" x="219.74" y="-2588.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>
-<text text-anchor="start" x="159.62" y="-2572.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="168.12" y="-2572.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="168.12" y="-2560.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALPHA_NORMALIZATION</text>
-<text text-anchor="start" x="159.62" y="-2544.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="168.12" y="-2544.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int ALPHA</text>
-<text text-anchor="start" x="168.12" y="-2532.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="159.62" y="-2516.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="168.12" y="-2516.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BLUE</text>
-<text text-anchor="start" x="168.12" y="-2504.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="159.62" y="-2488.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="168.12" y="-2488.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BYTE_MASK</text>
-<text text-anchor="start" x="159.62" y="-2472.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="168.12" y="-2472.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int GREEN</text>
-<text text-anchor="start" x="168.12" y="-2460.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="159.62" y="-2444.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="168.12" y="-2444.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="159.62" y="-2428.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="168.12" y="-2428.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int RED</text>
-<text text-anchor="start" x="168.12" y="-2416.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="158.12" y="-2400.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="168.12" y="-2400.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundImage createBackground</text>
-<text text-anchor="start" x="168.12" y="-2388.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image(Image resizedImage)</text>
-<text text-anchor="start" x="158.12" y="-2372.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="168.12" y="-2372.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageMeta getImageMeta</text>
-<text text-anchor="start" x="168.12" y="-2360.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
-<text text-anchor="start" x="158.12" y="-2344.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="168.12" y="-2344.5" font-family="Helvetica,sans-Serif" font-size="10.00">Color intToColor(int</text>
-<text text-anchor="start" x="168.12" y="-2332.5" font-family="Helvetica,sans-Serif" font-size="10.00"> colorValue)</text>
-<text text-anchor="start" x="158.12" y="-2316.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="168.12" y="-2316.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isValidImage</text>
-<text text-anchor="start" x="168.12" y="-2304.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
-<polygon fill="#666666" stroke="#666666" points="154.12,-2584 154.12,-2584 332.62,-2584 332.62,-2584 154.12,-2584"/>
-<polygon fill="#666666" stroke="#666666" points="154.12,-2412 154.12,-2412 166.12,-2412 166.12,-2412 154.12,-2412"/>
-<polygon fill="#666666" stroke="#666666" points="166.12,-2412 166.12,-2412 332.62,-2412 332.62,-2412 166.12,-2412"/>
-<polygon fill="none" stroke="#666666" points="154.12,-2298 154.12,-2614 332.62,-2614 332.62,-2298 154.12,-2298"/>
+<polygon fill="white" stroke="none" points="332.62,-2606 154.12,-2606 154.12,-2306 332.62,-2306 332.62,-2606"/>
+<text text-anchor="start" x="175.49" y="-2592.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
+<text text-anchor="start" x="219.74" y="-2580.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>
+<text text-anchor="start" x="159.62" y="-2564.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="168.12" y="-2564.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="168.12" y="-2552.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALPHA_NORMALIZATION</text>
+<text text-anchor="start" x="159.62" y="-2536.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="168.12" y="-2536.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int ALPHA</text>
+<text text-anchor="start" x="168.12" y="-2524.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="159.62" y="-2508.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="168.12" y="-2508.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BLUE</text>
+<text text-anchor="start" x="168.12" y="-2496.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="159.62" y="-2480.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="168.12" y="-2480.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BYTE_MASK</text>
+<text text-anchor="start" x="159.62" y="-2464.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="168.12" y="-2464.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int GREEN</text>
+<text text-anchor="start" x="168.12" y="-2452.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="159.62" y="-2436.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="168.12" y="-2436.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int RED</text>
+<text text-anchor="start" x="168.12" y="-2424.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="158.12" y="-2408.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="168.12" y="-2408.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundImage createBackground</text>
+<text text-anchor="start" x="168.12" y="-2396.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image(Image resizedImage)</text>
+<text text-anchor="start" x="158.12" y="-2380.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="168.12" y="-2380.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageMeta getImageMeta</text>
+<text text-anchor="start" x="168.12" y="-2368.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
+<text text-anchor="start" x="158.12" y="-2352.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="168.12" y="-2352.5" font-family="Helvetica,sans-Serif" font-size="10.00">Color intToColor(int</text>
+<text text-anchor="start" x="168.12" y="-2340.5" font-family="Helvetica,sans-Serif" font-size="10.00"> colorValue)</text>
+<text text-anchor="start" x="158.12" y="-2324.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="168.12" y="-2324.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isValidImage</text>
+<text text-anchor="start" x="168.12" y="-2312.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
+<polygon fill="#666666" stroke="#666666" points="154.12,-2576 154.12,-2576 332.62,-2576 332.62,-2576 154.12,-2576"/>
+<polygon fill="#666666" stroke="#666666" points="154.12,-2420 154.12,-2420 166.12,-2420 166.12,-2420 154.12,-2420"/>
+<polygon fill="#666666" stroke="#666666" points="166.12,-2420 166.12,-2420 332.62,-2420 332.62,-2420 166.12,-2420"/>
+<polygon fill="none" stroke="#666666" points="154.12,-2306 154.12,-2606 332.62,-2606 332.62,-2306 154.12,-2306"/>
 </a>
 </g>
 </g>
@@ -1287,7 +1285,7 @@ var sectionId = 'dynsection-0';
 <g id="edge26_Node000021_Node000024" class="edge">
 <title>Node24&#45;&gt;Node21</title>
 <g id="a_edge26_Node000021_Node000024"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M300.11,-2298.24C311.81,-2276.67 325.5,-2255.84 341.37,-2238 371.17,-2204.48 385.36,-2200.33 427.87,-2186 459.79,-2175.24 548.74,-2190.18 591.13,-2166.59"/>
+<path fill="none" stroke="#63b8ff" d="M295.95,-2306.11C308.52,-2281.77 323.58,-2258 341.37,-2238 371.17,-2204.48 385.36,-2200.33 427.87,-2186 459.79,-2175.24 548.74,-2190.18 591.13,-2166.59"/>
 <polygon fill="none" stroke="#63b8ff" points="591.08,-2166.63 593.6,-2159.88 600.81,-2159.61 598.29,-2166.37 591.08,-2166.63"/>
 </a>
 </g>

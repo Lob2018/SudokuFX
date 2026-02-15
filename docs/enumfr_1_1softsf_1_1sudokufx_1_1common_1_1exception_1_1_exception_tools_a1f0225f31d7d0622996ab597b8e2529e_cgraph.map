@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateUnsupportedOperation" name="fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateUnsupportedOperation">
+<area shape="rect" id="Node000001" title="Logs an error and returns an UnsupportedOperationException without a cause." alt="" coords="5,5,295,64"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a31dea53788372095b2d4a4a2f062e5e7" title="Logs an error and returns an UnsupportedOperationException." alt="" coords="343,5,632,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,32,327,32,327,37,295,37"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aee373055482e24b44505bb4b699551c3" title="Internal generic helper to centralize logging logic and exception instantiation." alt="" coords="680,13,921,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="633,32,664,32,664,37,633,37"/>
+</map>

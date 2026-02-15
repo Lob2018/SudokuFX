@@ -125,12 +125,13 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a14d80f72994165834755ec6a11a65f99" id="r_a14d80f72994165834755ec6a11a65f99"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a14d80f72994165834755ec6a11a65f99">MAX_BODY_RESPONSE_SIZE</a> = 1_048_576</td></tr>
+<tr class="memitem:a6d42fa6836616f2bb6989db2045f49eb" id="r_a6d42fa6836616f2bb6989db2045f49eb"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a6d42fa6836616f2bb6989db2045f49eb">MAX_TAG_NAME_LENGTH</a> = 256</td></tr>
+<tr class="memitem:a505fb22cce965f3ed49ec7df7b05e1fa" id="r_a505fb22cce965f3ed49ec7df7b05e1fa"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a505fb22cce965f3ed49ec7df7b05e1fa">MAX_TAGS_RESPONSE_SIZE</a> = 65_536</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:ab930aa0e6a148933c50de5ae9038bc96" id="r_ab930aa0e6a148933c50de5ae9038bc96"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#ab930aa0e6a148933c50de5ae9038bc96">parseResponse</a> (String json)</td></tr>
-<tr class="memdesc:ab930aa0e6a148933c50de5ae9038bc96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the GitHub API JSON response to identify the latest version tag.  <br /></td></tr>
+<tr class="memitem:ab958b18950641d25ff145c6c990a0cbf" id="r_ab958b18950641d25ff145c6c990a0cbf"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#ab958b18950641d25ff145c6c990a0cbf">parseResponse</a> (byte[] data)</td></tr>
+<tr class="memdesc:ab958b18950641d25ff145c6c990a0cbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the byte array directly.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -141,14 +142,12 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a5b2fd32cb2ada69d1aec5d5fe0210c61" id="r_a5b2fd32cb2ada69d1aec5d5fe0210c61"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#a5b2fd32cb2ada69d1aec5d5fe0210c61">CURRENT_VERSION</a></td></tr>
-<tr class="memdesc:a5b2fd32cb2ada69d1aec5d5fe0210c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current application version extracted from properties, stripped of its 'v' prefix if present.  <br /></td></tr>
 <tr class="memitem:adfbca5c66180807148457569d5a897bc" id="r_adfbca5c66180807148457569d5a897bc"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#adfbca5c66180807148457569d5a897bc">HTTP_STATUS_OK</a> = 200</td></tr>
 <tr class="memitem:a08886b7212a2911578d7480117fbde5f" id="r_a08886b7212a2911578d7480117fbde5f"><td class="memItemLeft">static final Logger&#160;</td><td class="memItemRight"><a class="el" href="#a08886b7212a2911578d7480117fbde5f">LOG</a> = LoggerFactory.getLogger(VersionService.class)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Service for checking if the application version is up to date by querying the GitHub API. </p>
-<p>It retrieves the latest release tag from the repository and compares it with the current application version. This service manages UI feedback through a spinner and status messages.</p>
-<p>All method parameters and return values in this package are non-null by default, thanks to the <code class="JavaDocCode">@NonNullApi</code> annotation at the package level. </p>
+<p>It retrieves the latest release tag from the repository and compares it with the current application version. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7917ee24ca79bc7cf9b3ac92c2b3aabb" name="a7917ee24ca79bc7cf9b3ac92c2b3aabb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7917ee24ca79bc7cf9b3ac92c2b3aabb">&#9670;&#160;</a></span>VersionService()</h2>
@@ -209,22 +208,18 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the current application version matches the latest release on GitHub. </p>
-<ul>
-<li></li>
-</ul>
-<p>Runs asynchronously using a JavaFX <code><a class="el" href="">Task</a></code>. It manages the loading spinner through the task's lifecycle and updates status messages for the UI. In case of network errors or timeouts, it defaults to assuming the version is up-to-date to avoid blocking the user.</p>
-<dl class="section return"><dt>Returns</dt><dd>a <code><a class="el" href="">Task</a></code> returning <code class="JavaDocCode">true</code> if the version is up-to-date or if an error occurred, <code class="JavaDocCode">false</code> if a new update is available </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>a <code><a class="el" href="">Task</a></code> returning <code class="JavaDocCode">true</code> if up-to-date, <code class="JavaDocCode">false</code> if update available </dd></dl>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service_a9f482cd64f10ed8b140463fab1030d39_cgraph.svg" width="508" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service_a9f482cd64f10ed8b140463fab1030d39_cgraph.svg" width="508" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="ab930aa0e6a148933c50de5ae9038bc96" name="ab930aa0e6a148933c50de5ae9038bc96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab930aa0e6a148933c50de5ae9038bc96">&#9670;&#160;</a></span>parseResponse()</h2>
+<a id="ab958b18950641d25ff145c6c990a0cbf" name="ab958b18950641d25ff145c6c990a0cbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab958b18950641d25ff145c6c990a0cbf">&#9670;&#160;</a></span>parseResponse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +230,7 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">boolean fr.softsf.sudokufx.service.external.VersionService.parseResponse </td>
           <td>(</td>
-          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>json</em></span></td><td>)</td>
+          <td class="paramtype">byte[]</td>          <td class="paramname"><span class="paramname"><em>data</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -246,30 +241,14 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Parses the GitHub API JSON response to identify the latest version tag. </p>
-<ul>
-<li></li>
-</ul>
-<p>The method extracts the first tag name, normalizes it by removing the 'v' prefix, and performs a strict equality check against the current version.</p>
+<p>Parses the byte array directly. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">json</td><td>the JSON response string from GitHub API </td></tr>
+    <tr><td class="paramname">data</td><td>the byte array containing the JSON response, limited by MAX_TAGS_RESPONSE_SIZE </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if versions match or if parsing fails; <code class="JavaDocCode">false</code> if a different version is detected </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if the JSON input is blank </td></tr>
-  </table>
-  </dd>
-</dl>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service_ab930aa0e6a148933c50de5ae9038bc96_cgraph.svg" width="235" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
 
 </div>
 </div>
@@ -298,8 +277,6 @@ Static Private Attributes</h2></td></tr>
 <div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_html"><div class="ttname"><a href="enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html">fr.softsf.sudokufx.config.JVMApplicationProperties</a></div><div class="ttdoc">Utility enum for managing JVM application properties.</div><div class="ttdef"><b>Definition</b> JVMApplicationProperties.java:17</div></div>
 <div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_html_aacaf840095a96129ca1fa0ea91e1b00f"><div class="ttname"><a href="enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#aacaf840095a96129ca1fa0ea91e1b00f">fr.softsf.sudokufx.config.JVMApplicationProperties.INSTANCE</a></div><div class="ttdeci">INSTANCE</div><div class="ttdef"><b>Definition</b> JVMApplicationProperties.java:18</div></div>
 </div><!-- fragment -->
-<p>Current application version extracted from properties, stripped of its 'v' prefix if present. </p>
-
 </div>
 </div>
 <a id="adfbca5c66180807148457569d5a897bc" name="adfbca5c66180807148457569d5a897bc"></a>
@@ -368,8 +345,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a14d80f72994165834755ec6a11a65f99" name="a14d80f72994165834755ec6a11a65f99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14d80f72994165834755ec6a11a65f99">&#9670;&#160;</a></span>MAX_BODY_RESPONSE_SIZE</h2>
+<a id="a6d42fa6836616f2bb6989db2045f49eb" name="a6d42fa6836616f2bb6989db2045f49eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d42fa6836616f2bb6989db2045f49eb">&#9670;&#160;</a></span>MAX_TAG_NAME_LENGTH</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -378,7 +355,29 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.service.external.VersionService.MAX_BODY_RESPONSE_SIZE = 1_048_576</td>
+          <td class="memname">final int fr.softsf.sudokufx.service.external.VersionService.MAX_TAG_NAME_LENGTH = 256</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a505fb22cce965f3ed49ec7df7b05e1fa" name="a505fb22cce965f3ed49ec7df7b05e1fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a505fb22cce965f3ed49ec7df7b05e1fa">&#9670;&#160;</a></span>MAX_TAGS_RESPONSE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final int fr.softsf.sudokufx.service.external.VersionService.MAX_TAGS_RESPONSE_SIZE = 65_536</td>
         </tr>
       </table>
   </td>

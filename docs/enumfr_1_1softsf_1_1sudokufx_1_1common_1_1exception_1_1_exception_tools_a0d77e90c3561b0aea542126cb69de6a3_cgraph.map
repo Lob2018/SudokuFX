@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.common.exception.ExceptionTools.logAndThrowIllegalArgumentIfBlank" name="fr.softsf.sudokufx.common.exception.ExceptionTools.logAndThrowIllegalArgumentIfBlank">
+<area shape="rect" id="Node000001" title="Logs the given message and throws an IllegalArgumentException if the given string is null,..." alt="" coords="5,5,286,64"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a4c20704e8a8d81f57c6775c3939ee2f1" title="Logs the given message and returns an instance of IllegalArgumentException with it." alt="" coords="334,5,583,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,32,318,32,318,37,286,37"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aee373055482e24b44505bb4b699551c3" title="Internal generic helper to centralize logging logic and exception instantiation." alt="" coords="631,13,872,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="583,32,615,32,615,37,583,37"/>
+</map>

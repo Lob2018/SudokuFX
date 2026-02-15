@@ -12,5 +12,6 @@ var searchData=
   ['english_5fbundle_9',['ENGLISH_BUNDLE',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#ac4679380d2cec013f0d38b8efba70c08',1,'fr::softsf::sudokufx::common::enums::I18n']]],
   ['englishformatter_10',['englishFormatter',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ac9bf81a6125aaca1e99d8f88a4351ee2',1,'fr::softsf::sudokufx::common::util::MyDateTime']]],
   ['error_11',['ERROR',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a332271018abb3425c11ad29b7e7d8613',1,'fr::softsf::sudokufx::common::enums::ToastLevels']]],
-  ['event_5fmust_5fnot_5fbe_5fnull_12',['EVENT_MUST_NOT_BE_NULL',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a52abac8e03fdac882d138dce0b2bc571',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]]
+  ['event_5fmust_5fnot_5fbe_5fnull_12',['EVENT_MUST_NOT_BE_NULL',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a52abac8e03fdac882d138dce0b2bc571',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]],
+  ['exception_13',['EXCEPTION',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#afa547c309aea4ec2fcd86e39ec592a98',1,'fr::softsf::sudokufx::common::exception::ExceptionTools']]]
 ];

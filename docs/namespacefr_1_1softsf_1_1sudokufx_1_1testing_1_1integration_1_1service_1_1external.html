@@ -118,16 +118,20 @@ Functions</h2></td></tr>
 <tr class="memitem:a50ee706a9e5f07c3c5ecb856c80160bd" id="r_a50ee706a9e5f07c3c5ecb856c80160bd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50ee706a9e5f07c3c5ecb856c80160bd">eachSetup</a> ()</td></tr>
 <tr class="memitem:a5397e1aef357c582a75d975b8bf0f616" id="r_a5397e1aef357c582a75d975b8bf0f616"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5397e1aef357c582a75d975b8bf0f616">givenDifferentVersionOnGitHub_whenCheckLatestVersion_thenReturnsFalse</a> ()  throws Exception </td></tr>
 <tr class="memitem:ab0522c9757b12382a05587528519be61" id="r_ab0522c9757b12382a05587528519be61"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab0522c9757b12382a05587528519be61">givenEmptyGitHubResponse_whenCheckLatestVersion_thenLatestVersionTrue</a> ()  throws Exception </td></tr>
+<tr class="memitem:a36959b1d4d3d84a6d0de8a7052bf4646" id="r_a36959b1d4d3d84a6d0de8a7052bf4646"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a36959b1d4d3d84a6d0de8a7052bf4646">givenEmptyNormalizedTagName_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn</a> ()  throws Exception </td></tr>
+<tr class="memitem:af4ea72d9669b38d9894fdf23390f47bd" id="r_af4ea72d9669b38d9894fdf23390f47bd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#af4ea72d9669b38d9894fdf23390f47bd">givenEmptyResponseBody_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn</a> ()  throws Exception </td></tr>
+<tr class="memitem:a67dee57bbbdd6054d8ae07070b5c733d" id="r_a67dee57bbbdd6054d8ae07070b5c733d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a67dee57bbbdd6054d8ae07070b5c733d">givenInterruptedThread_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn</a> ()  throws Exception </td></tr>
 <tr class="memitem:aaa5f11a3752df14c0a8567ab0ba1a056" id="r_aaa5f11a3752df14c0a8567ab0ba1a056"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aaa5f11a3752df14c0a8567ab0ba1a056">givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError</a> ()  throws Exception </td></tr>
 <tr class="memitem:a131fc2e2045c6d654723863b1050f134" id="r_a131fc2e2045c6d654723863b1050f134"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a131fc2e2045c6d654723863b1050f134">givenMatchingVersionOnGitHub_whenCheckLatestVersion_thenReturnsTrue</a> ()  throws Exception </td></tr>
 <tr class="memitem:a47e1946073be3b18dc90f333adda98ae" id="r_a47e1946073be3b18dc90f333adda98ae"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a47e1946073be3b18dc90f333adda98ae">givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue</a> (int httpStatusCode)  throws Exception </td></tr>
+<tr class="memitem:ad7bc4dd60f45b59e1fc20bfd27a8af55" id="r_ad7bc4dd60f45b59e1fc20bfd27a8af55"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad7bc4dd60f45b59e1fc20bfd27a8af55">givenTagTooLong_whenCheckLatestVersion_thenReturnsTrueAndLogsError</a> ()  throws Exception </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a241cc229af33e1480ccefc4ad30a7f04" id="r_a241cc229af33e1480ccefc4ad30a7f04"><td class="memItemLeft">AutoCloseable&#160;</td><td class="memItemRight"><a class="el" href="#a241cc229af33e1480ccefc4ad30a7f04">closeable</a></td></tr>
 <tr class="memitem:a1b55bbaa4ddf33f7b2bdb8b128f303b8" id="r_a1b55bbaa4ddf33f7b2bdb8b128f303b8"><td class="memItemLeft">ListAppender&lt; ILoggingEvent &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a1b55bbaa4ddf33f7b2bdb8b128f303b8">logWatcher</a></td></tr>
 <tr class="memitem:ae6dba74fe0a371da4d20e0edc6f981d7" id="r_ae6dba74fe0a371da4d20e0edc6f981d7"><td class="memItemLeft">HttpClient&#160;</td><td class="memItemRight"><a class="el" href="#ae6dba74fe0a371da4d20e0edc6f981d7">mockHttpClient</a></td></tr>
-<tr class="memitem:a69fddfbb9d536f6c3c79165dc3cb59fe" id="r_a69fddfbb9d536f6c3c79165dc3cb59fe"><td class="memItemLeft">HttpResponse&lt; String &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a69fddfbb9d536f6c3c79165dc3cb59fe">mockResponse</a></td></tr>
+<tr class="memitem:a2c0657812a87523f2c633b1d475f2063" id="r_a2c0657812a87523f2c633b1d475f2063"><td class="memItemLeft">HttpResponse&lt; InputStream &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a2c0657812a87523f2c633b1d475f2063">mockResponse</a></td></tr>
 <tr class="memitem:a7fef1f2128ab251935302ab0d01e02c8" id="r_a7fef1f2128ab251935302ab0d01e02c8"><td class="memItemLeft">final ObjectMapper&#160;</td><td class="memItemRight"><a class="el" href="#a7fef1f2128ab251935302ab0d01e02c8">objectMapper</a> = new ObjectMapper()</td></tr>
 <tr class="memitem:a400cc110c9c6e159853d3092abde7c36" id="r_a400cc110c9c6e159853d3092abde7c36"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html">SpinnerService</a>&#160;</td><td class="memItemRight"><a class="el" href="#a400cc110c9c6e159853d3092abde7c36">spinnerService</a></td></tr>
 </table>
@@ -254,6 +258,81 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a36959b1d4d3d84a6d0de8a7052bf4646" name="a36959b1d4d3d84a6d0de8a7052bf4646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36959b1d4d3d84a6d0de8a7052bf4646">&#9670;&#160;</a></span>givenEmptyNormalizedTagName_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenEmptyNormalizedTagName_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af4ea72d9669b38d9894fdf23390f47bd" name="af4ea72d9669b38d9894fdf23390f47bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ea72d9669b38d9894fdf23390f47bd">&#9670;&#160;</a></span>givenEmptyResponseBody_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenEmptyResponseBody_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67dee57bbbdd6054d8ae07070b5c733d" name="a67dee57bbbdd6054d8ae07070b5c733d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67dee57bbbdd6054d8ae07070b5c733d">&#9670;&#160;</a></span>givenInterruptedThread_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenInterruptedThread_whenCheckLatestVersion_thenReturnsTrueAndLogsWarn </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aaa5f11a3752df14c0a8567ab0ba1a056" name="aaa5f11a3752df14c0a8567ab0ba1a056"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa5f11a3752df14c0a8567ab0ba1a056">&#9670;&#160;</a></span>givenInvalidJsonResponse_whenCheckLatestVersion_thenReturnsTrueAndLogsError()</h2>
 
@@ -317,6 +396,31 @@ Variables</h2></td></tr>
           <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenNon200HttpStatus_whenCheckLatestVersion_thenLatestVersionTrue </td>
           <td>(</td>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>httpStatusCode</em></span></td><td>)</td>
+          <td> throws Exception</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7bc4dd60f45b59e1fc20bfd27a8af55" name="ad7bc4dd60f45b59e1fc20bfd27a8af55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7bc4dd60f45b59e1fc20bfd27a8af55">&#9670;&#160;</a></span>givenTagTooLong_whenCheckLatestVersion_thenReturnsTrueAndLogsError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.testing.integration.service.external.givenTagTooLong_whenCheckLatestVersion_thenReturnsTrueAndLogsError </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> throws Exception</td>
         </tr>
       </table>
@@ -396,8 +500,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a69fddfbb9d536f6c3c79165dc3cb59fe" name="a69fddfbb9d536f6c3c79165dc3cb59fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69fddfbb9d536f6c3c79165dc3cb59fe">&#9670;&#160;</a></span>mockResponse</h2>
+<a id="a2c0657812a87523f2c633b1d475f2063" name="a2c0657812a87523f2c633b1d475f2063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0657812a87523f2c633b1d475f2063">&#9670;&#160;</a></span>mockResponse</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -406,7 +510,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">HttpResponse&lt;String&gt; fr.softsf.sudokufx.testing.integration.service.external.mockResponse</td>
+          <td class="memname">HttpResponse&lt;InputStream&gt; fr.softsf.sudokufx.testing.integration.service.external.mockResponse</td>
         </tr>
       </table>
   </td>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateIllegalArgument" name="fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateIllegalArgument">
+<area shape="rect" id="Node000001" title="Logs the given message and returns an instance of IllegalArgumentException with it." alt="" coords="5,5,255,64"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aee373055482e24b44505bb4b699551c3" title="Internal generic helper to centralize logging logic and exception instantiation." alt="" coords="303,13,544,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,32,287,32,287,37,255,37"/>
+</map>

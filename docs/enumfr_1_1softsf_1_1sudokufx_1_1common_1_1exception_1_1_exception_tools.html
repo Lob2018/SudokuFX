@@ -113,23 +113,35 @@ $(function() {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools__coll__graph.svg" width="267" height="470"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d6f889834dd95ceab9cd6cb57a57d78" id="r_a5d6f889834dd95ceab9cd6cb57a57d78"><td class="memItemLeft">SQLInvalidAuthorizationSpecException&#160;</td><td class="memItemRight"><a class="el" href="#a5d6f889834dd95ceab9cd6cb57a57d78">findSQLInvalidAuthException</a> (Throwable e)</td></tr>
 <tr class="memdesc:a5d6f889834dd95ceab9cd6cb57a57d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches recursively through the exception chain to find the first <code><a class="el" href="">SQLInvalidAuthorizationSpecException</a></code>, starting from the given Throwable.  <br /></td></tr>
+<tr class="memitem:aee373055482e24b44505bb4b699551c3" id="r_aee373055482e24b44505bb4b699551c3"><td class="memItemLeft">private&lt; T extends Throwable &gt; T&#160;</td><td class="memItemRight"><a class="el" href="#aee373055482e24b44505bb4b699551c3">logAndInstantiate</a> (String message, Throwable cause, BiFunction&lt; String, Throwable, T &gt; factory, String defaultMsg, String logPrefix)</td></tr>
+<tr class="memdesc:aee373055482e24b44505bb4b699551c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal generic helper to centralize logging logic and exception instantiation.  <br /></td></tr>
 <tr class="memitem:aa99236a6233f7bfcb9edb4e4adb23c01" id="r_aa99236a6233f7bfcb9edb4e4adb23c01"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html">FolderCreationException</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa99236a6233f7bfcb9edb4e4adb23c01">logAndInstantiateFolderCreation</a> (String message)</td></tr>
 <tr class="memdesc:aa99236a6233f7bfcb9edb4e4adb23c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error and creates a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html">FolderCreationException</a></code> without a cause.  <br /></td></tr>
 <tr class="memitem:a498b093adbded8e3f2781465d351d7b0" id="r_a498b093adbded8e3f2781465d351d7b0"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html">FolderCreationException</a>&#160;</td><td class="memItemRight"><a class="el" href="#a498b093adbded8e3f2781465d351d7b0">logAndInstantiateFolderCreation</a> (String message, Throwable cause)</td></tr>
 <tr class="memdesc:a498b093adbded8e3f2781465d351d7b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error and creates a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html">FolderCreationException</a></code> with an optional cause.  <br /></td></tr>
 <tr class="memitem:a4c20704e8a8d81f57c6775c3939ee2f1" id="r_a4c20704e8a8d81f57c6775c3939ee2f1"><td class="memItemLeft">IllegalArgumentException&#160;</td><td class="memItemRight"><a class="el" href="#a4c20704e8a8d81f57c6775c3939ee2f1">logAndInstantiateIllegalArgument</a> (String message)</td></tr>
 <tr class="memdesc:a4c20704e8a8d81f57c6775c3939ee2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the given message and returns an instance of <code><a class="el" href="">IllegalArgumentException</a></code> with it.  <br /></td></tr>
+<tr class="memitem:aa7b105f11b6d87c5d123b5da7face094" id="r_aa7b105f11b6d87c5d123b5da7face094"><td class="memItemLeft">IllegalArgumentException&#160;</td><td class="memItemRight"><a class="el" href="#aa7b105f11b6d87c5d123b5da7face094">logAndInstantiateIllegalArgument</a> (String message, Throwable cause)</td></tr>
+<tr class="memdesc:aa7b105f11b6d87c5d123b5da7face094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the message and cause, then returns an <code><a class="el" href="">IllegalArgumentException</a></code>.  <br /></td></tr>
+<tr class="memitem:aff235c207117f07f4429b73c469b3a79" id="r_aff235c207117f07f4429b73c469b3a79"><td class="memItemLeft">IllegalStateException&#160;</td><td class="memItemRight"><a class="el" href="#aff235c207117f07f4429b73c469b3a79">logAndInstantiateIllegalState</a> (String message)</td></tr>
+<tr class="memdesc:aff235c207117f07f4429b73c469b3a79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error and returns an <code><a class="el" href="">IllegalStateException</a></code>.  <br /></td></tr>
 <tr class="memitem:a86f1c0d6468d0bb1f2aa06f4f3b6d087" id="r_a86f1c0d6468d0bb1f2aa06f4f3b6d087"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html">LogbackConfigurationException</a>&#160;</td><td class="memItemRight"><a class="el" href="#a86f1c0d6468d0bb1f2aa06f4f3b6d087">logAndInstantiateLogbackConfig</a> (String message, Throwable cause)</td></tr>
 <tr class="memdesc:a86f1c0d6468d0bb1f2aa06f4f3b6d087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error and returns a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html">LogbackConfigurationException</a></code>.  <br /></td></tr>
 <tr class="memitem:af411e1e1abd6747d3e8b7df51da2a879" id="r_af411e1e1abd6747d3e8b7df51da2a879"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception.html">ResourceLoadException</a>&#160;</td><td class="memItemRight"><a class="el" href="#af411e1e1abd6747d3e8b7df51da2a879">logAndInstantiateResourceLoad</a> (String message, Throwable cause)</td></tr>
 <tr class="memdesc:af411e1e1abd6747d3e8b7df51da2a879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error and creates a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception.html">ResourceLoadException</a></code> for any resource (audio, image, etc.).  <br /></td></tr>
+<tr class="memitem:ad35d1523a15278f8ee905399f76f77ed" id="r_ad35d1523a15278f8ee905399f76f77ed"><td class="memItemLeft">UncheckedIOException&#160;</td><td class="memItemRight"><a class="el" href="#ad35d1523a15278f8ee905399f76f77ed">logAndInstantiateUncheckedIO</a> (String message, IOException cause)</td></tr>
+<tr class="memdesc:ad35d1523a15278f8ee905399f76f77ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error and returns an <code><a class="el" href="">UncheckedIOException</a></code>.  <br /></td></tr>
+<tr class="memitem:a1f0225f31d7d0622996ab597b8e2529e" id="r_a1f0225f31d7d0622996ab597b8e2529e"><td class="memItemLeft">UnsupportedOperationException&#160;</td><td class="memItemRight"><a class="el" href="#a1f0225f31d7d0622996ab597b8e2529e">logAndInstantiateUnsupportedOperation</a> (String message)</td></tr>
+<tr class="memdesc:a1f0225f31d7d0622996ab597b8e2529e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error and returns an <code><a class="el" href="">UnsupportedOperationException</a></code> without a cause.  <br /></td></tr>
+<tr class="memitem:a31dea53788372095b2d4a4a2f062e5e7" id="r_a31dea53788372095b2d4a4a2f062e5e7"><td class="memItemLeft">UnsupportedOperationException&#160;</td><td class="memItemRight"><a class="el" href="#a31dea53788372095b2d4a4a2f062e5e7">logAndInstantiateUnsupportedOperation</a> (String message, Throwable cause)</td></tr>
+<tr class="memdesc:a31dea53788372095b2d4a4a2f062e5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs an error and returns an <code><a class="el" href="">UnsupportedOperationException</a></code>.  <br /></td></tr>
 <tr class="memitem:a0d77e90c3561b0aea542126cb69de6a3" id="r_a0d77e90c3561b0aea542126cb69de6a3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0d77e90c3561b0aea542126cb69de6a3">logAndThrowIllegalArgumentIfBlank</a> (String value, String message)</td></tr>
 <tr class="memdesc:a0d77e90c3561b0aea542126cb69de6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs the given message and throws an <code><a class="el" href="">IllegalArgumentException</a></code> if the given string is <code class="JavaDocCode">null</code>, empty, or blank (only whitespace).  <br /></td></tr>
 </table><table class="memberdecls">
@@ -137,13 +149,17 @@ Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a00cbb76ccd6022c7d9620f160571b866" id="r_a00cbb76ccd6022c7d9620f160571b866"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a00cbb76ccd6022c7d9620f160571b866">INSTANCE</a></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:afa547c309aea4ec2fcd86e39ec592a98" id="r_afa547c309aea4ec2fcd86e39ec592a98"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#afa547c309aea4ec2fcd86e39ec592a98">EXCEPTION</a> = &quot;Exception&quot;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a673610f3ccc85d932106d51866d25552" id="r_a673610f3ccc85d932106d51866d25552"><td class="memItemLeft">static final Logger&#160;</td><td class="memItemRight"><a class="el" href="#a673610f3ccc85d932106d51866d25552">LOG</a> = LoggerFactory.getLogger(ExceptionTools.class)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility enum for handling and analyzing exceptions. </p>
-<p>This enum provides methods to search for specific exception types within exception chains. </p>
+<p>This enum provides methods to search for specific exception types within exception chains and centralizes error logging. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a5d6f889834dd95ceab9cd6cb57a57d78" name="a5d6f889834dd95ceab9cd6cb57a57d78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5d6f889834dd95ceab9cd6cb57a57d78">&#9670;&#160;</a></span>findSQLInvalidAuthException()</h2>
@@ -168,6 +184,56 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the first SQLInvalidAuthorizationSpecException found, or <code class="JavaDocCode">null</code> if not found </dd></dl>
+
+</div>
+</div>
+<a id="aee373055482e24b44505bb4b699551c3" name="aee373055482e24b44505bb4b699551c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee373055482e24b44505bb4b699551c3">&#9670;&#160;</a></span>logAndInstantiate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private&lt; T extends Throwable &gt; T fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiate </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Throwable</td>          <td class="paramname"><span class="paramname"><em>cause</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BiFunction&lt; String, Throwable, T &gt;</td>          <td class="paramname"><span class="paramname"><em>factory</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>defaultMsg</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>logPrefix</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Internal generic helper to centralize logging logic and exception instantiation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&lt;T&gt;</td><td>the type of the exception to instantiate </td></tr>
+    <tr><td class="paramname">message</td><td>custom context message; if null or blank, a default message is used </td></tr>
+    <tr><td class="paramname">cause</td><td>original exception cause; may be null </td></tr>
+    <tr><td class="paramname">factory</td><td>functional interface to create the exception (e.g., Exception::new) </td></tr>
+    <tr><td class="paramname">defaultMsg</td><td>default message if the provided one is blank </td></tr>
+    <tr><td class="paramname">logPrefix</td><td>specific prefix for the log message </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the instantiated exception </dd></dl>
 
 </div>
 </div>
@@ -198,7 +264,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_aa99236a6233f7bfcb9edb4e4adb23c01_cgraph.svg" width="562" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_aa99236a6233f7bfcb9edb4e4adb23c01_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -231,11 +297,17 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a new <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html">FolderCreationException</a></code> instance </dd></dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_a498b093adbded8e3f2781465d351d7b0_cgraph.svg" width="552" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
 <a id="a4c20704e8a8d81f57c6775c3939ee2f1" name="a4c20704e8a8d81f57c6775c3939ee2f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c20704e8a8d81f57c6775c3939ee2f1">&#9670;&#160;</a></span>logAndInstantiateIllegalArgument()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c20704e8a8d81f57c6775c3939ee2f1">&#9670;&#160;</a></span>logAndInstantiateIllegalArgument() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,6 +329,81 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the IllegalArgumentException instance (not thrown) </dd></dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_a4c20704e8a8d81f57c6775c3939ee2f1_cgraph.svg" width="550" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aa7b105f11b6d87c5d123b5da7face094" name="aa7b105f11b6d87c5d123b5da7face094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7b105f11b6d87c5d123b5da7face094">&#9670;&#160;</a></span>logAndInstantiateIllegalArgument() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IllegalArgumentException fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateIllegalArgument </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Throwable</td>          <td class="paramname"><span class="paramname"><em>cause</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs the message and cause, then returns an <code><a class="el" href="">IllegalArgumentException</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>the error message </td></tr>
+    <tr><td class="paramname">cause</td><td>the original exception that triggered the failure; may be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the IllegalArgumentException instance (not thrown) </dd></dl>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_aa7b105f11b6d87c5d123b5da7face094_cgraph.svg" width="550" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aff235c207117f07f4429b73c469b3a79" name="aff235c207117f07f4429b73c469b3a79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff235c207117f07f4429b73c469b3a79">&#9670;&#160;</a></span>logAndInstantiateIllegalState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IllegalStateException fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateIllegalState </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs an error and returns an <code><a class="el" href="">IllegalStateException</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>descriptive message </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new IllegalStateException instance </dd></dl>
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_aff235c207117f07f4429b73c469b3a79_cgraph.svg" width="580" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -280,7 +427,6 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Logs an error and returns a <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html">LogbackConfigurationException</a></code>. </p>
-<p>The exception is instantiated (not thrown) to allow flexible handling by the caller.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">message</td><td>descriptive message of the failure; may be null or blank </td></tr>
@@ -289,6 +435,12 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a new <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html">LogbackConfigurationException</a></code> instance </dd></dl>
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_a86f1c0d6468d0bb1f2aa06f4f3b6d087_cgraph.svg" width="603" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -321,6 +473,118 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>a new <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception.html">ResourceLoadException</a></code> instance </dd></dl>
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_af411e1e1abd6747d3e8b7df51da2a879_cgraph.svg" width="600" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ad35d1523a15278f8ee905399f76f77ed" name="ad35d1523a15278f8ee905399f76f77ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad35d1523a15278f8ee905399f76f77ed">&#9670;&#160;</a></span>logAndInstantiateUncheckedIO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UncheckedIOException fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateUncheckedIO </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IOException</td>          <td class="paramname"><span class="paramname"><em>cause</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs an error and returns an <code><a class="el" href="">UncheckedIOException</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>descriptive message </td></tr>
+    <tr><td class="paramname">cause</td><td>the original IOException </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new UncheckedIOException instance </dd></dl>
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_ad35d1523a15278f8ee905399f76f77ed_cgraph.svg" width="596" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a1f0225f31d7d0622996ab597b8e2529e" name="a1f0225f31d7d0622996ab597b8e2529e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f0225f31d7d0622996ab597b8e2529e">&#9670;&#160;</a></span>logAndInstantiateUnsupportedOperation() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnsupportedOperationException fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateUnsupportedOperation </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs an error and returns an <code><a class="el" href="">UnsupportedOperationException</a></code> without a cause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>descriptive message </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new UnsupportedOperationException instance </dd></dl>
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_a1f0225f31d7d0622996ab597b8e2529e_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a31dea53788372095b2d4a4a2f062e5e7" name="a31dea53788372095b2d4a4a2f062e5e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31dea53788372095b2d4a4a2f062e5e7">&#9670;&#160;</a></span>logAndInstantiateUnsupportedOperation() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UnsupportedOperationException fr.softsf.sudokufx.common.exception.ExceptionTools.logAndInstantiateUnsupportedOperation </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>message</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Throwable</td>          <td class="paramname"><span class="paramname"><em>cause</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Logs an error and returns an <code><a class="el" href="">UnsupportedOperationException</a></code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>descriptive message </td></tr>
+    <tr><td class="paramname">cause</td><td>the original exception; may be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>a new UnsupportedOperationException instance </dd></dl>
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_a31dea53788372095b2d4a4a2f062e5e7_cgraph.svg" width="590" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -357,10 +621,38 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools_a0d77e90c3561b0aea542126cb69de6a3_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="afa547c309aea4ec2fcd86e39ec592a98" name="afa547c309aea4ec2fcd86e39ec592a98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa547c309aea4ec2fcd86e39ec592a98">&#9670;&#160;</a></span>EXCEPTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> final String fr.softsf.sudokufx.common.exception.ExceptionTools.EXCEPTION = &quot;Exception&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a00cbb76ccd6022c7d9620f160571b866" name="a00cbb76ccd6022c7d9620f160571b866"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a00cbb76ccd6022c7d9620f160571b866">&#9670;&#160;</a></span>INSTANCE</h2>
 

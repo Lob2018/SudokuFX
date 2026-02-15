@@ -2203,40 +2203,43 @@ var sectionId = 'dynsection-1';
 <g id="Node000040" class="node">
 <title>Node40</title>
 <g id="a_Node000040"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html" target="_top" xlink:title="Service for checking if the application version is up to date by querying the GitHub API.">
-<polygon fill="white" stroke="none" points="2846.62,-5144 2687.12,-5144 2687.12,-4860 2846.62,-4860 2846.62,-5144"/>
-<text text-anchor="start" x="2691.12" y="-5130.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.external.</text>
-<text text-anchor="start" x="2734.25" y="-5118.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService</text>
-<text text-anchor="start" x="2693.12" y="-5102.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="2705.12" y="-5102.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAX</text>
-<text text-anchor="start" x="2705.12" y="-5090.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BODY_RESPONSE_SIZE</text>
-<text text-anchor="start" x="2694.62" y="-5074.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2705.12" y="-5074.5" font-family="Helvetica,sans-Serif" font-size="10.00">final HttpClient httpClient</text>
-<text text-anchor="start" x="2694.62" y="-5058.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2705.12" y="-5058.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectMapper</text>
-<text text-anchor="start" x="2705.12" y="-5046.5" font-family="Helvetica,sans-Serif" font-size="10.00"> objectMapper</text>
-<text text-anchor="start" x="2694.62" y="-5030.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2705.12" y="-5030.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="2705.12" y="-5018.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CURRENT_VERSION</text>
-<text text-anchor="start" x="2694.62" y="-5002.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2705.12" y="-5002.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int HTTP</text>
-<text text-anchor="start" x="2705.12" y="-4990.5" font-family="Helvetica,sans-Serif" font-size="10.00">_STATUS_OK</text>
-<text text-anchor="start" x="2694.62" y="-4974.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2705.12" y="-4974.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="2693.12" y="-4958.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="2705.12" y="-4958.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService(HttpClient</text>
-<text text-anchor="start" x="2705.12" y="-4946.5" font-family="Helvetica,sans-Serif" font-size="10.00"> httpClient, ObjectMapper</text>
-<text text-anchor="start" x="2705.12" y="-4934.5" font-family="Helvetica,sans-Serif" font-size="10.00"> objectMapper, SpinnerService</text>
-<text text-anchor="start" x="2705.12" y="-4922.5" font-family="Helvetica,sans-Serif" font-size="10.00"> spinnerService)</text>
-<text text-anchor="start" x="2693.12" y="-4906.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="2705.12" y="-4906.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task&lt; Boolean &gt; checkLatest</text>
-<text text-anchor="start" x="2705.12" y="-4894.5" font-family="Helvetica,sans-Serif" font-size="10.00">Version()</text>
-<text text-anchor="start" x="2694.62" y="-4878.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2705.12" y="-4878.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean parseResponse</text>
-<text text-anchor="start" x="2705.12" y="-4866.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String json)</text>
-<polygon fill="#666666" stroke="#666666" points="2687.12,-5114 2687.12,-5114 2846.62,-5114 2846.62,-5114 2687.12,-5114"/>
-<polygon fill="#666666" stroke="#666666" points="2687.12,-4970 2687.12,-4970 2703.12,-4970 2703.12,-4970 2687.12,-4970"/>
-<polygon fill="#666666" stroke="#666666" points="2703.12,-4970 2703.12,-4970 2846.62,-4970 2846.62,-4970 2703.12,-4970"/>
-<polygon fill="none" stroke="#666666" points="2687.12,-4860 2687.12,-5144 2846.62,-5144 2846.62,-4860 2687.12,-4860"/>
+<polygon fill="white" stroke="none" points="2846.62,-5158 2687.12,-5158 2687.12,-4846 2846.62,-4846 2846.62,-5158"/>
+<text text-anchor="start" x="2691.12" y="-5144.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.external.</text>
+<text text-anchor="start" x="2734.25" y="-5132.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService</text>
+<text text-anchor="start" x="2693.12" y="-5116.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="2705.12" y="-5116.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAX</text>
+<text text-anchor="start" x="2705.12" y="-5104.5" font-family="Helvetica,sans-Serif" font-size="10.00">_TAG_NAME_LENGTH</text>
+<text text-anchor="start" x="2693.12" y="-5088.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="2705.12" y="-5088.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAX</text>
+<text text-anchor="start" x="2705.12" y="-5076.5" font-family="Helvetica,sans-Serif" font-size="10.00">_TAGS_RESPONSE_SIZE</text>
+<text text-anchor="start" x="2694.62" y="-5060.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2705.12" y="-5060.5" font-family="Helvetica,sans-Serif" font-size="10.00">final HttpClient httpClient</text>
+<text text-anchor="start" x="2694.62" y="-5044.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2705.12" y="-5044.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectMapper</text>
+<text text-anchor="start" x="2705.12" y="-5032.5" font-family="Helvetica,sans-Serif" font-size="10.00"> objectMapper</text>
+<text text-anchor="start" x="2694.62" y="-5016.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2705.12" y="-5016.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="2705.12" y="-5004.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CURRENT_VERSION</text>
+<text text-anchor="start" x="2694.62" y="-4988.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2705.12" y="-4988.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int HTTP</text>
+<text text-anchor="start" x="2705.12" y="-4976.5" font-family="Helvetica,sans-Serif" font-size="10.00">_STATUS_OK</text>
+<text text-anchor="start" x="2694.62" y="-4960.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2705.12" y="-4960.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="2693.12" y="-4944.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="2705.12" y="-4944.5" font-family="Helvetica,sans-Serif" font-size="10.00">VersionService(HttpClient</text>
+<text text-anchor="start" x="2705.12" y="-4932.5" font-family="Helvetica,sans-Serif" font-size="10.00"> httpClient, ObjectMapper</text>
+<text text-anchor="start" x="2705.12" y="-4920.5" font-family="Helvetica,sans-Serif" font-size="10.00"> objectMapper, SpinnerService</text>
+<text text-anchor="start" x="2705.12" y="-4908.5" font-family="Helvetica,sans-Serif" font-size="10.00"> spinnerService)</text>
+<text text-anchor="start" x="2693.12" y="-4892.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="2705.12" y="-4892.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task&lt; Boolean &gt; checkLatest</text>
+<text text-anchor="start" x="2705.12" y="-4880.5" font-family="Helvetica,sans-Serif" font-size="10.00">Version()</text>
+<text text-anchor="start" x="2694.62" y="-4864.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2705.12" y="-4864.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean parseResponse</text>
+<text text-anchor="start" x="2705.12" y="-4852.5" font-family="Helvetica,sans-Serif" font-size="10.00">(byte[] data)</text>
+<polygon fill="#666666" stroke="#666666" points="2687.12,-5128 2687.12,-5128 2846.62,-5128 2846.62,-5128 2687.12,-5128"/>
+<polygon fill="#666666" stroke="#666666" points="2687.12,-4956 2687.12,-4956 2703.12,-4956 2703.12,-4956 2687.12,-4956"/>
+<polygon fill="#666666" stroke="#666666" points="2703.12,-4956 2703.12,-4956 2846.62,-4956 2846.62,-4956 2703.12,-4956"/>
+<polygon fill="none" stroke="#666666" points="2687.12,-4846 2687.12,-5158 2846.62,-5158 2846.62,-4846 2687.12,-4846"/>
 </a>
 </g>
 </g>
@@ -2254,44 +2257,42 @@ var sectionId = 'dynsection-1';
 <g id="Node000035" class="node">
 <title>Node35</title>
 <g id="a_Node000035"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" target="_top" xlink:title="Utility class providing helper methods for common image&#45;related operations in JavaFX.">
-<polygon fill="white" stroke="none" points="2228.12,-5160 2049.62,-5160 2049.62,-4844 2228.12,-4844 2228.12,-5160"/>
-<text text-anchor="start" x="2071" y="-5146.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
-<text text-anchor="start" x="2115.25" y="-5134.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>
-<text text-anchor="start" x="2055.12" y="-5118.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2063.62" y="-5118.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="2063.62" y="-5106.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALPHA_NORMALIZATION</text>
-<text text-anchor="start" x="2055.12" y="-5090.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2063.62" y="-5090.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int ALPHA</text>
-<text text-anchor="start" x="2063.62" y="-5078.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="2055.12" y="-5062.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2063.62" y="-5062.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BLUE</text>
-<text text-anchor="start" x="2063.62" y="-5050.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="2055.12" y="-5034.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2063.62" y="-5034.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BYTE_MASK</text>
-<text text-anchor="start" x="2055.12" y="-5018.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2063.62" y="-5018.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int GREEN</text>
-<text text-anchor="start" x="2063.62" y="-5006.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="2055.12" y="-4990.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2063.62" y="-4990.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="2055.12" y="-4974.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="2063.62" y="-4974.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int RED</text>
-<text text-anchor="start" x="2063.62" y="-4962.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
-<text text-anchor="start" x="2053.62" y="-4946.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="2063.62" y="-4946.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundImage createBackground</text>
-<text text-anchor="start" x="2063.62" y="-4934.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image(Image resizedImage)</text>
-<text text-anchor="start" x="2053.62" y="-4918.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="2063.62" y="-4918.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageMeta getImageMeta</text>
-<text text-anchor="start" x="2063.62" y="-4906.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
-<text text-anchor="start" x="2053.62" y="-4890.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="2063.62" y="-4890.5" font-family="Helvetica,sans-Serif" font-size="10.00">Color intToColor(int</text>
-<text text-anchor="start" x="2063.62" y="-4878.5" font-family="Helvetica,sans-Serif" font-size="10.00"> colorValue)</text>
-<text text-anchor="start" x="2053.62" y="-4862.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="2063.62" y="-4862.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isValidImage</text>
-<text text-anchor="start" x="2063.62" y="-4850.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
-<polygon fill="#666666" stroke="#666666" points="2049.62,-5130 2049.62,-5130 2228.12,-5130 2228.12,-5130 2049.62,-5130"/>
-<polygon fill="#666666" stroke="#666666" points="2049.62,-4958 2049.62,-4958 2061.62,-4958 2061.62,-4958 2049.62,-4958"/>
-<polygon fill="#666666" stroke="#666666" points="2061.62,-4958 2061.62,-4958 2228.12,-4958 2228.12,-4958 2061.62,-4958"/>
-<polygon fill="none" stroke="#666666" points="2049.62,-4844 2049.62,-5160 2228.12,-5160 2228.12,-4844 2049.62,-4844"/>
+<polygon fill="white" stroke="none" points="2228.12,-5152 2049.62,-5152 2049.62,-4852 2228.12,-4852 2228.12,-5152"/>
+<text text-anchor="start" x="2071" y="-5138.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
+<text text-anchor="start" x="2115.25" y="-5126.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageUtils</text>
+<text text-anchor="start" x="2055.12" y="-5110.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2063.62" y="-5110.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="2063.62" y="-5098.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALPHA_NORMALIZATION</text>
+<text text-anchor="start" x="2055.12" y="-5082.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2063.62" y="-5082.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int ALPHA</text>
+<text text-anchor="start" x="2063.62" y="-5070.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="2055.12" y="-5054.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2063.62" y="-5054.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BLUE</text>
+<text text-anchor="start" x="2063.62" y="-5042.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="2055.12" y="-5026.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2063.62" y="-5026.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int BYTE_MASK</text>
+<text text-anchor="start" x="2055.12" y="-5010.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2063.62" y="-5010.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int GREEN</text>
+<text text-anchor="start" x="2063.62" y="-4998.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="2055.12" y="-4982.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="2063.62" y="-4982.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int RED</text>
+<text text-anchor="start" x="2063.62" y="-4970.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SHIFT</text>
+<text text-anchor="start" x="2053.62" y="-4954.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="2063.62" y="-4954.5" font-family="Helvetica,sans-Serif" font-size="10.00">BackgroundImage createBackground</text>
+<text text-anchor="start" x="2063.62" y="-4942.5" font-family="Helvetica,sans-Serif" font-size="10.00">Image(Image resizedImage)</text>
+<text text-anchor="start" x="2053.62" y="-4926.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="2063.62" y="-4926.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageMeta getImageMeta</text>
+<text text-anchor="start" x="2063.62" y="-4914.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
+<text text-anchor="start" x="2053.62" y="-4898.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="2063.62" y="-4898.5" font-family="Helvetica,sans-Serif" font-size="10.00">Color intToColor(int</text>
+<text text-anchor="start" x="2063.62" y="-4886.5" font-family="Helvetica,sans-Serif" font-size="10.00"> colorValue)</text>
+<text text-anchor="start" x="2053.62" y="-4870.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="2063.62" y="-4870.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isValidImage</text>
+<text text-anchor="start" x="2063.62" y="-4858.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
+<polygon fill="#666666" stroke="#666666" points="2049.62,-5122 2049.62,-5122 2228.12,-5122 2228.12,-5122 2049.62,-5122"/>
+<polygon fill="#666666" stroke="#666666" points="2049.62,-4966 2049.62,-4966 2061.62,-4966 2061.62,-4966 2049.62,-4966"/>
+<polygon fill="#666666" stroke="#666666" points="2061.62,-4966 2061.62,-4966 2228.12,-4966 2228.12,-4966 2061.62,-4966"/>
+<polygon fill="none" stroke="#666666" points="2049.62,-4852 2049.62,-5152 2228.12,-5152 2228.12,-4852 2049.62,-4852"/>
 </a>
 </g>
 </g>
@@ -2299,8 +2300,8 @@ var sectionId = 'dynsection-1';
 <g id="edge36_Node000031_Node000035" class="edge">
 <title>Node35&#45;&gt;Node31</title>
 <g id="a_edge36_Node000031_Node000035"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M2107.97,-4844.09C2094.74,-4776.89 2078.38,-4693.83 2061.19,-4606.55"/>
-<polygon fill="none" stroke="#63b8ff" points="2061.2,-4606.59 2056.12,-4601.47 2058.88,-4594.81 2063.96,-4599.93 2061.2,-4606.59"/>
+<path fill="none" stroke="#63b8ff" d="M2109.56,-4852.16C2096.07,-4783.63 2079.09,-4697.42 2061.21,-4606.65"/>
+<polygon fill="none" stroke="#63b8ff" points="2061.23,-4606.76 2056.15,-4601.65 2058.92,-4594.99 2064,-4600.1 2061.23,-4606.76"/>
 </a>
 </g>
 <text text-anchor="start" x="2095.23" y="-4745.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;imageUtils</text>
@@ -2455,8 +2456,8 @@ var sectionId = 'dynsection-1';
 <g id="edge45_Node000039_Node000040" class="edge">
 <title>Node40&#45;&gt;Node39</title>
 <g id="a_edge45_Node000039_Node000040"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M2782.94,-4860.28C2823.95,-4501.08 2933.11,-3544.97 2987.76,-3066.27"/>
-<polygon fill="none" stroke="#63b8ff" points="2987.74,-3066.47 2984.45,-3060.06 2989.1,-3054.55 2992.39,-3060.96 2987.74,-3066.47"/>
+<path fill="none" stroke="#63b8ff" d="M2784.56,-4846.06C2826.76,-4476.49 2933.79,-3538.97 2987.75,-3066.41"/>
+<polygon fill="none" stroke="#63b8ff" points="2987.75,-3066.42 2984.45,-3060.01 2989.11,-3054.5 2992.4,-3060.91 2987.75,-3066.42"/>
 </a>
 </g>
 <text text-anchor="start" x="2799.75" y="-4745.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;versionService</text>
