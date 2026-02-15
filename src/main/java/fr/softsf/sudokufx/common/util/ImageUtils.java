@@ -20,9 +20,6 @@ import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import fr.softsf.sudokufx.common.enums.ScreenSize;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
@@ -43,8 +40,6 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
  * <p>This class is not instantiable and is intended to be used statically.
  */
 public class ImageUtils {
-
-    private static final Logger LOG = LoggerFactory.getLogger(ImageUtils.class);
 
     private static final int RED_SHIFT = 24;
     private static final int GREEN_SHIFT = 16;
@@ -117,8 +112,8 @@ public class ImageUtils {
                     reader.setInput(in);
                     int imageWidth = reader.getWidth(0);
                     int imageHeight = reader.getHeight(0);
-                    double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3;
-                    double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3;
+                    double gridPaneWidth = ScreenSize.VISUAL_WIDTH.getSize() * 3.0;
+                    double gridPaneHeight = ScreenSize.VISUAL_HEIGHT.getSize() * 3.0;
                     double scaleFactor =
                             Math.max(gridPaneWidth / imageWidth, gridPaneHeight / imageHeight);
                     return new ImageMeta(imageWidth, imageHeight, scaleFactor);
@@ -126,15 +121,14 @@ public class ImageUtils {
                     reader.dispose();
                 }
             }
-            String msg = "Unsupported image format: " + file.getName();
-            LOG.error("██ {}", msg);
-            throw new IllegalArgumentException(msg);
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "Unsupported image format: " + file.getName());
         } catch (IOException e) {
-            throw new UncheckedIOException(
-                    "Failed to read image: " + file.getName() + " - " + e.getMessage(), e);
+            throw ExceptionTools.INSTANCE.logAndInstantiateUncheckedIO(
+                    "Failed to read image: " + file.getName(), e);
         } catch (Exception e) {
-            throw new IllegalArgumentException(
-                    "Failed to process image: " + file.getName() + " - " + e.getMessage(), e);
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "Failed to process image: " + file.getName(), e);
         }
     }
 

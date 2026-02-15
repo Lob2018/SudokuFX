@@ -10,6 +10,7 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -111,12 +112,13 @@ public class Options {
      */
     private static String validateHexcolor(String hexcolor) {
         if (StringUtils.isBlank(hexcolor)) {
-            throw new IllegalArgumentException(HEXCOLOR_MUST_NOT_BE_NULL_OR_BLANK);
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    HEXCOLOR_MUST_NOT_BE_NULL_OR_BLANK);
         }
         if (HEX_COLOR_PATTERN.matcher(hexcolor).matches()) {
             return hexcolor;
         }
-        throw new IllegalArgumentException(INVALID_HEX_COLOR_FORMAT);
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(INVALID_HEX_COLOR_FORMAT);
     }
 
     /**
@@ -131,7 +133,7 @@ public class Options {
     private static String validatePath(String path, String nullMsg) {
         Objects.requireNonNull(path, nullMsg);
         if (path.length() > MAX_PATH_LENGTH) {
-            throw new IllegalArgumentException(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "Path must not exceed " + MAX_PATH_LENGTH + " characters");
         }
         return path;

@@ -23,6 +23,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridConverter;
@@ -353,7 +354,8 @@ public class GridViewModel {
     private GrilleResolue getCurrentSolution(int[] grilleInt) {
         Objects.requireNonNull(grilleInt, "grilleInt mustn't be null");
         if (grilleInt.length != TOTAL_CELLS) {
-            throw new IllegalArgumentException("Grid must contain exactly 81 integers");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "Grid must contain exactly 81 integers");
         }
         return iGridMaster.resoudreLaGrille(grilleInt);
     }
@@ -380,7 +382,8 @@ public class GridViewModel {
                 if (file.exists()) {
                     audioService.playSong(file);
                 } else {
-                    throw new IllegalStateException("Audio file not found: " + path);
+                    throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
+                            "Audio file not found: " + path);
                 }
             }
         } catch (Exception e) {
@@ -516,7 +519,8 @@ public class GridViewModel {
      */
     private void checkInitialized() {
         if (!initialized) {
-            throw new IllegalStateException("GridViewModel not initialized. Call init() first.");
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
+                    "GridViewModel not initialized. Call init() first.");
         }
     }
 }

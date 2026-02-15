@@ -5,8 +5,11 @@
  */
 package fr.softsf.sudokufx.common.exception;
 
+import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.sql.SQLInvalidAuthorizationSpecException;
 import java.util.Objects;
+import java.util.function.BiFunction;
 
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -14,12 +17,39 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Utility enum for handling and analyzing exceptions. This enum provides methods to search for
- * specific exception types within exception chains.
+ * specific exception types within exception chains and centralizes error logging.
  */
 public enum ExceptionTools {
     INSTANCE;
 
     private static final Logger LOG = LoggerFactory.getLogger(ExceptionTools.class);
+    public static final String EXCEPTION = "Exception";
+
+    /**
+     * Internal generic helper to centralize logging logic and exception instantiation.
+     *
+     * @param <T> the type of the exception to instantiate
+     * @param message custom context message; if null or blank, a default message is used
+     * @param cause original exception cause; may be null
+     * @param factory functional interface to create the exception (e.g., Exception::new)
+     * @param defaultMsg default message if the provided one is blank
+     * @param logPrefix specific prefix for the log message
+     * @return the instantiated exception
+     */
+    private <T extends Throwable> T logAndInstantiate(
+            String message,
+            Throwable cause,
+            BiFunction<String, Throwable, T> factory,
+            String defaultMsg,
+            String logPrefix) {
+        String safeMessage = StringUtils.isBlank(message) ? defaultMsg : message;
+        if (Objects.isNull(cause)) {
+            LOG.error("██ {}: {}. Cause: null", logPrefix, safeMessage);
+        } else {
+            LOG.error("██ {}: {}. Cause: {}", logPrefix, safeMessage, cause.getMessage(), cause);
+        }
+        return factory.apply(safeMessage, cause);
+    }
 
     /**
      * Logs the given message and returns an instance of {@link IllegalArgumentException} with it.
@@ -28,10 +58,67 @@ public enum ExceptionTools {
      * @return the IllegalArgumentException instance (not thrown)
      */
     public IllegalArgumentException logAndInstantiateIllegalArgument(String message) {
-        String safeMessage = StringUtils.isBlank(message) ? "No message provided" : message;
-        IllegalArgumentException exception = new IllegalArgumentException(safeMessage);
-        LOG.error("██ Exception : {}", safeMessage, exception);
-        return exception;
+        return logAndInstantiate(
+                message,
+                null,
+                (m, c) -> new IllegalArgumentException(m),
+                "No message provided",
+                EXCEPTION);
+    }
+
+    /**
+     * Logs the message and cause, then returns an {@link IllegalArgumentException}.
+     *
+     * @param message the error message
+     * @param cause the original exception that triggered the failure; may be null
+     * @return the IllegalArgumentException instance (not thrown)
+     */
+    public IllegalArgumentException logAndInstantiateIllegalArgument(
+            String message, Throwable cause) {
+        return logAndInstantiate(
+                message, cause, IllegalArgumentException::new, "No message provided", EXCEPTION);
+    }
+
+    /**
+     * Logs an error and returns an {@link IllegalStateException}.
+     *
+     * @param message descriptive message
+     * @return a new IllegalStateException instance
+     */
+    public IllegalStateException logAndInstantiateIllegalState(String message) {
+        return logAndInstantiate(
+                message,
+                null,
+                (m, c) -> new IllegalStateException(m),
+                "Illegal state reached",
+                EXCEPTION);
+    }
+
+    /**
+     * Logs an error and returns an {@link UnsupportedOperationException}.
+     *
+     * @param message descriptive message
+     * @param cause the original exception; may be null
+     * @return a new UnsupportedOperationException instance
+     */
+    public UnsupportedOperationException logAndInstantiateUnsupportedOperation(
+            String message, Throwable cause) {
+        return logAndInstantiate(
+                message,
+                cause,
+                UnsupportedOperationException::new,
+                "Operation not supported",
+                "Unsupported Operation");
+    }
+
+    /**
+     * Logs an error and returns an {@link UnsupportedOperationException} without a cause.
+     *
+     * @param message descriptive message
+     * @return a new UnsupportedOperationException instance
+     */
+    public UnsupportedOperationException logAndInstantiateUnsupportedOperation(String message) {
+        return logAndInstantiateUnsupportedOperation(message, null);
     }
 
     /**
@@ -44,29 +131,8 @@ public enum ExceptionTools {
      */
     public void logAndThrowIllegalArgumentIfBlank(String value, String message) {
         if (StringUtils.isBlank(value)) {
-            IllegalArgumentException exception = new IllegalArgumentException(message);
-            LOG.error("██ Exception : {}", message, exception);
-            throw exception;
+            throw logAndInstantiateIllegalArgument(message);
         }
-    }
-
-    /**
-     * Searches recursively through the exception chain to find the first {@link
-     * SQLInvalidAuthorizationSpecException}, starting from the given Throwable.
-     *
-     * @param e the Throwable to inspect (may be null)
-     * @return the first SQLInvalidAuthorizationSpecException found, or {@code null} if not found
-     */
-    public SQLInvalidAuthorizationSpecException findSQLInvalidAuthException(Throwable e) {
-        while (e != null) {
-            if (e
-                    instanceof
-                    SQLInvalidAuthorizationSpecException sqlinvalidauthorizationspecexception) {
-                return sqlinvalidauthorizationspecexception;
-            }
-            e = e.getCause();
-        }
-        return null;
     }
 
     /**
@@ -78,25 +144,16 @@ public enum ExceptionTools {
      * @return a new {@link ResourceLoadException} instance
      */
     public ResourceLoadException logAndInstantiateResourceLoad(String message, Throwable cause) {
-        String safeMessage =
-                StringUtils.isBlank(message) ? "Resource load failed with no message" : message;
-        if (Objects.isNull(cause)) {
-            LOG.error("██ Exception Failed to load resource: {}. Cause: null", safeMessage);
-            return new ResourceLoadException(safeMessage, null);
-        } else {
-            LOG.error(
-                    "██ Exception Failed to load resource: {}. Cause: {}",
-                    safeMessage,
-                    cause.getMessage(),
-                    cause);
-            return new ResourceLoadException(safeMessage, cause);
-        }
+        return logAndInstantiate(
+                message,
+                cause,
+                ResourceLoadException::new,
+                "Resource load failed with no message",
+                "Exception Failed to load resource");
     }
 
     /**
      * Logs an error and returns a {@link LogbackConfigurationException}.
-     *
-     * <p>The exception is instantiated (not thrown) to allow flexible handling by the caller.
      *
      * @param message descriptive message of the failure; may be null or blank
      * @param cause the original exception that triggered the failure; may be null
@@ -104,20 +161,12 @@ public enum ExceptionTools {
      */
     public LogbackConfigurationException logAndInstantiateLogbackConfig(
             String message, Throwable cause) {
-        String safeMessage =
-                StringUtils.isBlank(message)
-                        ? "Logback configuration failed with no message"
-                        : message;
-        if (Objects.isNull(cause)) {
-            LOG.error("██ Logback configuration failed: {}. Cause: null", safeMessage);
-        } else {
-            LOG.error(
-                    "██ Logback configuration failed: {}. Cause: {}",
-                    safeMessage,
-                    cause.getMessage(),
-                    cause);
-        }
-        return new LogbackConfigurationException(safeMessage, cause);
+        return logAndInstantiate(
+                message,
+                cause,
+                LogbackConfigurationException::new,
+                "Logback configuration failed with no message",
+                "Logback configuration failed");
     }
 
     /**
@@ -130,14 +179,28 @@ public enum ExceptionTools {
      */
     public FolderCreationException logAndInstantiateFolderCreation(
             String message, Throwable cause) {
-        String safeMessage =
-                StringUtils.isBlank(message) ? "Folder creation failed with no message" : message;
-        LOG.error(
-                "██ Folder creation failed: {}. Cause: {}",
-                safeMessage,
-                cause == null ? "null" : cause.getMessage(),
-                cause);
-        return new FolderCreationException(safeMessage, cause);
+        return logAndInstantiate(
+                message,
+                cause,
+                FolderCreationException::new,
+                "Folder creation failed with no message",
+                "Folder creation failed");
+    }
+
+    /**
+     * Logs an error and returns an {@link UncheckedIOException}.
+     *
+     * @param message descriptive message
+     * @param cause the original IOException
+     * @return a new UncheckedIOException instance
+     */
+    public UncheckedIOException logAndInstantiateUncheckedIO(String message, IOException cause) {
+        return logAndInstantiate(
+                message,
+                cause,
+                (m, c) -> new UncheckedIOException(m, (IOException) c),
+                "I/O error occurred",
+                EXCEPTION);
     }
 
     /**
@@ -149,5 +212,23 @@ public enum ExceptionTools {
      */
     public FolderCreationException logAndInstantiateFolderCreation(String message) {
         return logAndInstantiateFolderCreation(message, null);
+    }
+
+    /**
+     * Searches recursively through the exception chain to find the first {@link
+     * SQLInvalidAuthorizationSpecException}, starting from the given Throwable.
+     *
+     * @param e the Throwable to inspect (may be null)
+     * @return the first SQLInvalidAuthorizationSpecException found, or {@code null} if not found
+     */
+    public SQLInvalidAuthorizationSpecException findSQLInvalidAuthException(Throwable e) {
+        Throwable current = e;
+        while (current != null) {
+            if (current instanceof SQLInvalidAuthorizationSpecException sqlEx) {
+                return sqlEx;
+            }
+            current = current.getCause();
+        }
+        return null;
     }
 }

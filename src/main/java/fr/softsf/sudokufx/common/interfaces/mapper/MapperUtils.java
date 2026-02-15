@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.CollectionUtils;
 
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.model.Game;
 import fr.softsf.sudokufx.model.Player;
 
@@ -26,9 +27,14 @@ public final class MapperUtils {
 
     private static final Logger LOG = LoggerFactory.getLogger(MapperUtils.class);
 
+    /**
+     * Private constructor to prevent instantiation.
+     *
+     * @throws UnsupportedOperationException always
+     */
     private MapperUtils() {
-        LOG.error("██ Attempted to instantiate MapperUtils utility class.");
-        throw new UnsupportedOperationException("Utility class should not be instantiated");
+        throw ExceptionTools.INSTANCE.logAndInstantiateUnsupportedOperation(
+                "Utility class should not be instantiated");
     }
 
     /**

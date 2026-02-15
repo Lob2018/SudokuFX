@@ -1092,7 +1092,7 @@ public class MenuOptionsViewModel {
      */
     private void checkInitialized() {
         if (!initialized) {
-            throw new IllegalStateException(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
                     "MenuOptionsViewModel not initialized. Call init(...) first.");
         }
     }

@@ -173,11 +173,11 @@ public class Coordinator {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 fxml, "Fxml must not be null or blank, but was " + fxml);
         if (defaultScene == null) {
-            throw new IllegalStateException(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
                     "defaultScene must be set before calling setRootByFXMLName()");
         }
         if (fxmlLoader == null) {
-            throw new IllegalStateException(
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
                     "fxmlLoader must not be null before calling setRootByFXMLName()");
         }
         String path = AppPaths.RESOURCES_FXML_PATH.getPath() + fxml;

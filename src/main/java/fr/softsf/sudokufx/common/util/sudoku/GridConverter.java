@@ -8,10 +8,13 @@ package fr.softsf.sudokufx.common.util.sudoku;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
+
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /**
  * Component providing conversions between different Sudoku grid representations:
@@ -41,14 +44,19 @@ public final class GridConverter implements IGridConverter {
 
     @Override
     public String listToGridValue(List<String> values) {
-        Objects.requireNonNull(values, "The list of entered values must not be null");
-        if (values.size() != TOTAL_CELLS) {
-            throw new IllegalArgumentException(
-                    "The list of entered values must contain exactly " + TOTAL_CELLS + " values");
-        }
+        List<String> validatedList =
+                Optional.ofNullable(values)
+                        .filter(v -> v.size() == TOTAL_CELLS)
+                        .orElseThrow(
+                                () ->
+                                        ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                                                "The list of entered values must not be null and"
+                                                        + " must contain exactly "
+                                                        + TOTAL_CELLS
+                                                        + " values"));
         StringBuilder sb = new StringBuilder(MAXIMUM_GRID_VALUE_LENGTH);
         for (int i = 0; i < TOTAL_CELLS; i++) {
-            String cell = values.get(i);
+            String cell = validatedList.get(i);
             cell = cell == null || cell.isBlank() ? "0" : cell.strip().replace("\n", "");
             if (!"0".equals(cell)) {
                 validateDigitsAndNoRepeats(cell);
@@ -63,17 +71,20 @@ public final class GridConverter implements IGridConverter {
     /** Validates that the cell contains only digits 1-9 with no repeats. */
     private void validateDigitsAndNoRepeats(String cell) {
         if (cell.length() > 9) {
-            throw new IllegalArgumentException("Cell contains too many digits: " + cell);
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "Cell contains too many digits: " + cell);
         }
         int seen = 0;
         for (int i = 0; i < cell.length(); i++) {
             char c = cell.charAt(i);
             if (c < '1' || c > '9') {
-                throw new IllegalArgumentException("Invalid digit in cell: " + cell);
+                throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                        "Invalid digit in cell: " + cell);
             }
             int mask = 1 << (c - '1');
             if ((seen & mask) != 0) {
-                throw new IllegalArgumentException("Repeated digit in cell: " + cell);
+                throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                        "Repeated digit in cell: " + cell);
             }
             seen |= mask;
         }

@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.model;
 
 import java.util.Objects;
 
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import jakarta.annotation.Nonnull;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -74,7 +75,7 @@ public class PlayerLanguage {
         if (VALID_ISO_REGEX.matcher(iso).matches()) {
             return iso;
         }
-        throw new IllegalArgumentException(ISO_INVALID_VALUE);
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(ISO_INVALID_VALUE);
     }
 
     /** Returns the unique ID of this PlayerLanguage instance. */
