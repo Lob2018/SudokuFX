@@ -5,8 +5,11 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-import fr.softsf.sudokufx.common.enums.I18n;
+import java.text.MessageFormat;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
+import java.util.function.UnaryOperator;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.BooleanProperty;
@@ -20,13 +23,11 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Region;
+
 import org.apache.commons.lang3.StringUtils;
 
-import java.text.MessageFormat;
-import java.util.List;
-import java.util.Locale;
-import java.util.Set;
-import java.util.function.UnaryOperator;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import fr.softsf.sudokufx.common.enums.I18n;
 
 /**
  * ViewModel for an editable cell in a 9x9 Sudoku grid.
