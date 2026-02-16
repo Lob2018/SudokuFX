@@ -559,9 +559,10 @@
                 <option>-Dcom.sun.management.jmxremote.ssl=false</option>
                 <option>-Xlog:gc*=info,heap=debug,age=trace</option>
                 <option>-XX:NativeMemoryTracking=summary</option>
-                <option>-XX:MaxMetaspaceSize=256m</option>
-                <option>-Xms1g</option>
-                <option>-Xmx2g</option>
+                <option>-XX:MaxMetaspaceSize=192m</option>
+                <option>-XX:+UseG1GC</option>
+                <option>-Xms512m</option>
+                <option>-Xmx1g</option>
               </options>
             </configuration>
           </plugin>
