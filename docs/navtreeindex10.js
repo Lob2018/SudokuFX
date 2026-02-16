@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html#a938000ca2fb7d88acfd17a4ccd7495c8":[1,0,0,0,0,8,2,1,0,2,13],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html#a938000ca2fb7d88acfd17a4ccd7495c8":[2,0,0,0,0,7,2,1,0,2,13],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html#a9a3c9b5d759ce4cde59f0325a2083d2d":[1,0,0,0,0,8,2,1,0,2,16],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html#a9a3c9b5d759ce4cde59f0325a2083d2d":[2,0,0,0,0,7,2,1,0,2,16],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html#a9e7f61f53d23f440ab924503a55f9ebd":[1,0,0,0,0,8,2,1,0,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html#a7a129e51b29dc5b25b0a1da705bc9fb4":[1,0,0,0,0,8,2,3,4,4],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html#a7a129e51b29dc5b25b0a1da705bc9fb4":[2,0,0,0,0,7,2,3,4,4],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html#ab2c30bc23ed2068e028a3d845756cba2":[1,0,0,0,0,8,2,3,4,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html#ab2c30bc23ed2068e028a3d845756cba2":[2,0,0,0,0,7,2,3,4,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html#ab90cd13cab0acba91ffc65d075a1d34a":[1,0,0,0,0,8,2,3,4,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html#ab90cd13cab0acba91ffc65d075a1d34a":[2,0,0,0,0,7,2,3,4,2]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html#ab2c30bc23ed2068e028a3d845756cba2":[2,0,0,0,0,7,2,3,4,0]
 };

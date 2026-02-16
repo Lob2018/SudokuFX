@@ -57,6 +57,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view =
     [ "DIFFICULTY_LEVEL_PSEUDO_SELECTED", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ad45b889ad165145617acae110e8f87e5", null ],
     [ "FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae05d9f1253bb8adeb65f3137f65e16d1", null ],
     [ "fileChooserService", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a893261e3d83608553bea84d78b2c71b8", null ],
+    [ "firework", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7a7aa4a2a7810cb026bd0641c1137f5c", null ],
     [ "genericListViewFactory", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ac50fbebd063d943058b9d204391d28fa", null ],
     [ "gridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aaba35fb54ebac616ee1eecf261d183e3", null ],
     [ "helpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae22012b532eeae8ac9842c638eb1011b", null ],

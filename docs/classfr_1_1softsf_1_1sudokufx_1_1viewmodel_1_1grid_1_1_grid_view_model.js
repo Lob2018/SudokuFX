@@ -22,6 +22,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "setCurrentGridWithLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aa953e512f15ed40efffa2ccd1ffa7062", null ],
     [ "setValues", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c", null ],
     [ "verifyGrid", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb", null ],
+    [ "victoryProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4c909182bac10b921d29ee29a6a5a9ae", null ],
     [ "activeMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a0e3033ee54eac7c612f8f73aae8c6742", null ],
     [ "audioService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a42da36ba8d2ce37205b34470bfe77837", null ],
     [ "cellViewModels", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a08effb35262e7a92de8e4bd41fc8e7b0", null ],
@@ -37,5 +38,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a283f954f3e29f3f23da75c01172040e9", null ],
     [ "suppressCellsListeners", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a5a871ec83dc104a8d8ca4fbd3a1474af", null ],
     [ "toasterService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7e33dcac8e47a0672b897df696efc93", null ],
-    [ "TOTAL_CELLS", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca2db631f0e0d1eb751367a0c0237867", null ]
+    [ "TOTAL_CELLS", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aca2db631f0e0d1eb751367a0c0237867", null ],
+    [ "victory", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4ff1b0176ffc72fdb9ad1c267225bd2f", null ]
 ];

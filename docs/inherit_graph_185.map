@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,97,40"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html" title="Manages file system operations related to the application&#39;s data folder." alt="" coords="145,5,347,48"/>
-<area shape="poly" id="edge20_Node000000_Node000001" title=" " alt="" coords="112,24,144,24,144,29,112,29"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,60,40"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html" title="A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100)." alt="" coords="108,5,333,48"/>
+<area shape="poly" id="edge19_Node000000_Node000001" title=" " alt="" coords="75,24,107,24,107,29,75,29"/>
 </map>

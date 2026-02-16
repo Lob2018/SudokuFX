@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,83,40"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html" title="Manages the application&#39;s keystore for secure storage of a symmetric key and database credentials." alt="" coords="131,5,354,48"/>
-<area shape="poly" id="edge23_Node000000_Node000001" title=" " alt="" coords="98,24,130,24,130,29,98,29"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,13,112,40"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter.html" title="Component providing conversions between different Sudoku grid representations:" alt="" coords="160,5,408,48"/>
+<area shape="poly" id="edge22_Node000000_Node000001" title=" " alt="" coords="127,24,159,24,159,29,127,29"/>
 </map>

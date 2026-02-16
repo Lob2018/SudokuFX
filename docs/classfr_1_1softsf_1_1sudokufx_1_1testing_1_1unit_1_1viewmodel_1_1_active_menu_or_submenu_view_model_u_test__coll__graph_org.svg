@@ -37,22 +37,22 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" target="_top" xlink:title="ViewModel component managing the currently active menu or submenu.">
-<polygon fill="white" stroke="none" points="173.75,-318 14.25,-318 14.25,-202 173.75,-202 173.75,-318"/>
+<polygon fill="white" stroke="none" points="174.62,-318 13.38,-318 13.38,-202 174.62,-202 174.62,-318"/>
 <text text-anchor="start" x="18.25" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="18.25" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">ActiveMenuOrSubmenuViewModel</text>
-<text text-anchor="start" x="23.81" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="36.38" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
-<text text-anchor="start" x="36.38" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ActiveMenu &gt; activeMenu</text>
-<text text-anchor="start" x="22.31" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="36.38" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; ActiveMenu</text>
-<text text-anchor="start" x="36.38" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getActiveMenu()</text>
-<text text-anchor="start" x="22.31" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="36.38" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setActiveMenu</text>
-<text text-anchor="start" x="36.38" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActiveMenu menu)</text>
-<polygon fill="#666666" stroke="#666666" points="14.25,-288 14.25,-288 173.75,-288 173.75,-288 14.25,-288"/>
-<polygon fill="#666666" stroke="#666666" points="14.25,-260 14.25,-260 34.38,-260 34.38,-260 14.25,-260"/>
-<polygon fill="#666666" stroke="#666666" points="34.38,-260 34.38,-260 173.75,-260 173.75,-260 34.38,-260"/>
-<polygon fill="none" stroke="#666666" points="14.25,-202 14.25,-318 173.75,-318 173.75,-202 14.25,-202"/>
+<text text-anchor="start" x="18.88" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="27.38" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyObjectWrapper</text>
+<text text-anchor="start" x="27.38" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ActiveMenu &gt; activeMenu</text>
+<text text-anchor="start" x="17.38" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="27.38" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyObjectProperty</text>
+<text text-anchor="start" x="27.38" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; ActiveMenu &gt; getActiveMenu()</text>
+<text text-anchor="start" x="17.38" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="27.38" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setActiveMenu</text>
+<text text-anchor="start" x="27.38" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActiveMenu menu)</text>
+<polygon fill="#666666" stroke="#666666" points="13.38,-288 13.38,-288 174.62,-288 174.62,-288 13.38,-288"/>
+<polygon fill="#666666" stroke="#666666" points="13.38,-260 13.38,-260 25.38,-260 25.38,-260 13.38,-260"/>
+<polygon fill="#666666" stroke="#666666" points="25.38,-260 25.38,-260 174.62,-260 174.62,-260 25.38,-260"/>
+<polygon fill="none" stroke="#666666" points="13.38,-202 13.38,-318 174.62,-318 174.62,-202 13.38,-202"/>
 </a>
 </g>
 </g>

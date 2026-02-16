@@ -38,11 +38,12 @@ var searchData=
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3atesting_3a_3aunit_3a_3aviewmodel_3a_3agrid_35',['grid',['../namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid.html',1,'fr::softsf::sudokufx::testing::unit::viewmodel']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_36',['view',['../namespacefr_1_1softsf_1_1sudokufx_1_1view.html',1,'fr::softsf::sudokufx']]],
   ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponent_37',['component',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html',1,'fr::softsf::sudokufx::view']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponent_3a_3alist_38',['list',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html',1,'fr::softsf::sudokufx::view::component']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponent_3a_3atoaster_39',['toaster',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster.html',1,'fr::softsf::sudokufx::view::component']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3amain_40',['main',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1main.html',1,'fr::softsf::sudokufx::view']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3autil_41',['util',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1util.html',1,'fr::softsf::sudokufx::view']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_42',['viewmodel',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html',1,'fr::softsf::sudokufx']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_3a_3agrid_43',['grid',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html',1,'fr::softsf::sudokufx::viewmodel']]],
-  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_3a_3astate_44',['state',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html',1,'fr::softsf::sudokufx::viewmodel']]]
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponent_3a_3afirework_38',['firework',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework.html',1,'fr::softsf::sudokufx::view::component']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponent_3a_3alist_39',['list',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html',1,'fr::softsf::sudokufx::view::component']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3acomponent_3a_3atoaster_40',['toaster',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster.html',1,'fr::softsf::sudokufx::view::component']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3amain_41',['main',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1main.html',1,'fr::softsf::sudokufx::view']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aview_3a_3autil_42',['util',['../namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1util.html',1,'fr::softsf::sudokufx::view']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_43',['viewmodel',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html',1,'fr::softsf::sudokufx']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_3a_3agrid_44',['grid',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html',1,'fr::softsf::sudokufx::viewmodel']]],
+  ['fr_3a_3asoftsf_3a_3asudokufx_3a_3aviewmodel_3a_3astate_45',['state',['../namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html',1,'fr::softsf::sudokufx::viewmodel']]]
 ];

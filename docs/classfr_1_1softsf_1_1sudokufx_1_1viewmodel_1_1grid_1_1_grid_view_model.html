@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa953e512f15ed40efffa2ccd1ffa7062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a new grid for the given difficulty level, updates the cells, and returns the associated completion percentage.  <br /></td></tr>
 <tr class="memitem:ab7607876adb740f7f1d55b5016faba0c" id="r_ab7607876adb740f7f1d55b5016faba0c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab7607876adb740f7f1d55b5016faba0c">setValues</a> (List&lt; String &gt; values, boolean checkEditable)</td></tr>
 <tr class="memdesc:ab7607876adb740f7f1d55b5016faba0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all 81 cell values and optionally their editability.  <br /></td></tr>
+<tr class="memitem:a4c909182bac10b921d29ee29a6a5a9ae" id="r_a4c909182bac10b921d29ee29a6a5a9ae"><td class="memItemLeft">ReadOnlyBooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#a4c909182bac10b921d29ee29a6a5a9ae">victoryProperty</a> ()</td></tr>
+<tr class="memdesc:a4c909182bac10b921d29ee29a6a5a9ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the victory status property for binding the firework animation.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -179,6 +181,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a283f954f3e29f3f23da75c01172040e9" id="r_a283f954f3e29f3f23da75c01172040e9"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a>&#160;</td><td class="memItemRight"><a class="el" href="#a283f954f3e29f3f23da75c01172040e9">playerStateHolder</a></td></tr>
 <tr class="memitem:a5a871ec83dc104a8d8ca4fbd3a1474af" id="r_a5a871ec83dc104a8d8ca4fbd3a1474af"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#a5a871ec83dc104a8d8ca4fbd3a1474af">suppressCellsListeners</a> = false</td></tr>
 <tr class="memitem:ab7e33dcac8e47a0672b897df696efc93" id="r_ab7e33dcac8e47a0672b897df696efc93"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab7e33dcac8e47a0672b897df696efc93">toasterService</a></td></tr>
+<tr class="memitem:a4ff1b0176ffc72fdb9ad1c267225bd2f" id="r_a4ff1b0176ffc72fdb9ad1c267225bd2f"><td class="memItemLeft">final BooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#a4ff1b0176ffc72fdb9ad1c267225bd2f">victory</a> = new SimpleBooleanProperty(false)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -951,6 +954,26 @@ Listeners are suppressed for all cells during bulk updates. </li>
 
 </div>
 </div>
+<a id="a4c909182bac10b921d29ee29a6a5a9ae" name="a4c909182bac10b921d29ee29a6a5a9ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c909182bac10b921d29ee29a6a5a9ae">&#9670;&#160;</a></span>victoryProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReadOnlyBooleanProperty fr.softsf.sudokufx.viewmodel.grid.GridViewModel.victoryProperty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the victory status property for binding the firework animation. </p>
+<dl class="section return"><dt>Returns</dt><dd>the victory property </dd></dl>
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="a0e3033ee54eac7c612f8f73aae8c6742" name="a0e3033ee54eac7c612f8f73aae8c6742"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e3033ee54eac7c612f8f73aae8c6742">&#9670;&#160;</a></span>activeMenuOrSubmenuViewModel</h2>
@@ -1298,6 +1321,28 @@ Listeners are suppressed for all cells during bulk updates. </li>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ff1b0176ffc72fdb9ad1c267225bd2f" name="a4ff1b0176ffc72fdb9ad1c267225bd2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ff1b0176ffc72fdb9ad1c267225bd2f">&#9670;&#160;</a></span>victory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final BooleanProperty fr.softsf.sudokufx.viewmodel.grid.GridViewModel.victory = new SimpleBooleanProperty(false)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

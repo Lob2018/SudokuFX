@@ -231,6 +231,10 @@ var annotated_dup =
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
             [ "component", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html", [
+              [ "firework", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework.html", [
+                [ "Firework", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework" ],
+                [ "FireworkParticle", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle" ]
+              ] ],
               [ "list", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html", [
                 [ "GenericDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell" ]
               ] ],

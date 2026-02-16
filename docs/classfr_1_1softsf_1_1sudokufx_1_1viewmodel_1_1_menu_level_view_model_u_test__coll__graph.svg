@@ -100,52 +100,52 @@ var sectionId = 'dynsection-0';
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html" target="_top" xlink:title="ViewModel for managing difficulty level selection in the menu.">
-<polygon fill="white" stroke="none" points="170.25,-774 14.25,-774 14.25,-370 170.25,-370 170.25,-774"/>
+<polygon fill="white" stroke="none" points="172.5,-774 12,-774 12,-370 172.5,-370 172.5,-774"/>
 <text text-anchor="start" x="27.75" y="-760.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="44.62" y="-748.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuLevelViewModel</text>
-<text text-anchor="start" x="19.75" y="-732.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="28.25" y="-732.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
-<text text-anchor="start" x="28.25" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; DifficultyLevel &gt; selected</text>
-<text text-anchor="start" x="28.25" y="-708.5" font-family="Helvetica,sans-Serif" font-size="10.00">Level</text>
-<text text-anchor="start" x="19.75" y="-692.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="28.25" y="-692.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IntegerProperty</text>
-<text text-anchor="start" x="28.25" y="-680.5" font-family="Helvetica,sans-Serif" font-size="10.00"> starsPercentage</text>
-<text text-anchor="start" x="18.25" y="-664.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-664.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding accessible</text>
-<text text-anchor="start" x="28.25" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextBinding(PossibilityStars</text>
-<text text-anchor="start" x="28.25" y="-640.5" font-family="Helvetica,sans-Serif" font-size="10.00">HBox starsBox, String key)</text>
-<text text-anchor="start" x="18.25" y="-624.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-624.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getAccessibilityKey</text>
-<text text-anchor="start" x="28.25" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00">ForLevel(DifficultyLevel level)</text>
-<text text-anchor="start" x="18.25" y="-596.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-596.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanBinding isSelected</text>
-<text text-anchor="start" x="28.25" y="-584.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(DifficultyLevel level)</text>
-<text text-anchor="start" x="18.25" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding labelTextBinding</text>
-<text text-anchor="start" x="28.25" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DifficultyLevel level)</text>
-<text text-anchor="start" x="18.25" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">IntegerProperty percentage</text>
-<text text-anchor="start" x="28.25" y="-528.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
-<text text-anchor="start" x="18.25" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectProperty&lt; Difficulty</text>
-<text text-anchor="start" x="28.25" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00">Level &gt; selectedLevelProperty()</text>
-<text text-anchor="start" x="18.25" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding selectedRole</text>
-<text text-anchor="start" x="28.25" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">DescriptionBinding()</text>
-<text text-anchor="start" x="18.25" y="-456.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-456.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPercentage</text>
-<text text-anchor="start" x="28.25" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int value)</text>
-<text text-anchor="start" x="18.25" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="28.25" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateSelectedLevel</text>
-<text text-anchor="start" x="28.25" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DifficultyLevel level,</text>
-<text text-anchor="start" x="28.25" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int stars)</text>
-<text text-anchor="start" x="19.75" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="28.25" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getLevelNameKey</text>
-<text text-anchor="start" x="28.25" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DifficultyLevel level)</text>
-<polygon fill="#666666" stroke="#666666" points="14.25,-744 14.25,-744 170.25,-744 170.25,-744 14.25,-744"/>
-<polygon fill="#666666" stroke="#666666" points="14.25,-676 14.25,-676 26.25,-676 26.25,-676 14.25,-676"/>
-<polygon fill="#666666" stroke="#666666" points="26.25,-676 26.25,-676 170.25,-676 170.25,-676 26.25,-676"/>
-<polygon fill="none" stroke="#666666" points="14.25,-370 14.25,-774 170.25,-774 170.25,-370 14.25,-370"/>
+<text text-anchor="start" x="17.5" y="-732.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="26" y="-732.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyObjectWrapper</text>
+<text text-anchor="start" x="26" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; DifficultyLevel &gt; selectedLevel</text>
+<text text-anchor="start" x="17.5" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="26" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IntegerProperty</text>
+<text text-anchor="start" x="26" y="-692.5" font-family="Helvetica,sans-Serif" font-size="10.00"> starsPercentage</text>
+<text text-anchor="start" x="16" y="-676.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-676.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding accessible</text>
+<text text-anchor="start" x="26" y="-664.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextBinding(PossibilityStars</text>
+<text text-anchor="start" x="26" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00">HBox starsBox, String key)</text>
+<text text-anchor="start" x="16" y="-636.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-636.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getAccessibilityKey</text>
+<text text-anchor="start" x="26" y="-624.5" font-family="Helvetica,sans-Serif" font-size="10.00">ForLevel(DifficultyLevel level)</text>
+<text text-anchor="start" x="16" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-608.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanBinding isSelected</text>
+<text text-anchor="start" x="26" y="-596.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(DifficultyLevel level)</text>
+<text text-anchor="start" x="16" y="-580.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-580.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding labelTextBinding</text>
+<text text-anchor="start" x="26" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DifficultyLevel level)</text>
+<text text-anchor="start" x="16" y="-552.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-552.5" font-family="Helvetica,sans-Serif" font-size="10.00">IntegerProperty percentage</text>
+<text text-anchor="start" x="26" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="16" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyObjectProperty</text>
+<text text-anchor="start" x="26" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; DifficultyLevel &gt; selected</text>
+<text text-anchor="start" x="26" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelProperty()</text>
+<text text-anchor="start" x="16" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-484.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding selectedRole</text>
+<text text-anchor="start" x="26" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">DescriptionBinding()</text>
+<text text-anchor="start" x="16" y="-456.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-456.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPercentage</text>
+<text text-anchor="start" x="26" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">(int value)</text>
+<text text-anchor="start" x="16" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="26" y="-428.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateSelectedLevel</text>
+<text text-anchor="start" x="26" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DifficultyLevel level,</text>
+<text text-anchor="start" x="26" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00"> int stars)</text>
+<text text-anchor="start" x="17.5" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="26" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getLevelNameKey</text>
+<text text-anchor="start" x="26" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DifficultyLevel level)</text>
+<polygon fill="#666666" stroke="#666666" points="12,-744 12,-744 172.5,-744 172.5,-744 12,-744"/>
+<polygon fill="#666666" stroke="#666666" points="12,-688 12,-688 24,-688 24,-688 12,-688"/>
+<polygon fill="#666666" stroke="#666666" points="24,-688 24,-688 172.5,-688 172.5,-688 24,-688"/>
+<polygon fill="none" stroke="#666666" points="12,-370 12,-774 172.5,-774 172.5,-370 12,-370"/>
 </a>
 </g>
 </g>

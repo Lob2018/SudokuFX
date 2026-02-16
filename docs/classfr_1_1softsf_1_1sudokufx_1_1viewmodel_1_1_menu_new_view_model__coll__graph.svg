@@ -65,7 +65,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="5.5" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task&lt; Boolean &gt; checkVersionTask</text>
 <text text-anchor="start" x="5.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
+<text text-anchor="start" x="14" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyBooleanWrapper</text>
 <text text-anchor="start" x="14" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isOutOfDate</text>
 <text text-anchor="start" x="5.5" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
@@ -83,7 +83,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
 <text text-anchor="start" x="14" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00"> newTooltip</text>
 <text text-anchor="start" x="5.5" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringProperty</text>
+<text text-anchor="start" x="14" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyStringWrapper</text>
 <text text-anchor="start" x="14" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00"> statusMessage</text>
 <text text-anchor="start" x="5.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">ChangeListener&lt; Boolean</text>
@@ -92,8 +92,8 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuNewViewModel(Version</text>
 <text text-anchor="start" x="14" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">Service versionService)</text>
 <text text-anchor="start" x="4" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty isOutOfDate</text>
-<text text-anchor="start" x="14" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyBooleanProperty</text>
+<text text-anchor="start" x="14" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isOutOfDateProperty()</text>
 <text text-anchor="start" x="4" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding maxiNewAccessible</text>
 <text text-anchor="start" x="14" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
@@ -110,8 +110,8 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding newTooltip</text>
 <text text-anchor="start" x="14" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
 <text text-anchor="start" x="4" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringProperty statusMessage</text>
-<text text-anchor="start" x="14" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="14" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyStringProperty</text>
+<text text-anchor="start" x="14" y="-50.5" font-family="Helvetica,sans-Serif" font-size="10.00"> statusMessageProperty()</text>
 <text text-anchor="start" x="5.5" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">void checkVersion()</text>
 <text text-anchor="start" x="5.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

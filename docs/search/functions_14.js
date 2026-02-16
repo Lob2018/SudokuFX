@@ -21,5 +21,6 @@ var searchData=
   ['verifiequechaquevaleurestunepossibilite_18',['verifieQueChaqueValeurEstUnePossibilite',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a9f77177ae439a5e7b1cfa0394be13ae8',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
   ['verifierunicite_19',['verifierUnicite',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa3aa3945ebc4549be49be1e0c481f9da',1,'fr::softsf::sudokufx::common::util::sudoku::GridMaster']]],
   ['verifygrid_20',['verifyGrid',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
-  ['versionservice_21',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a7917ee24ca79bc7cf9b3ac92c2b3aabb',1,'fr::softsf::sudokufx::service::external::VersionService']]]
+  ['versionservice_21',['VersionService',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a7917ee24ca79bc7cf9b3ac92c2b3aabb',1,'fr::softsf::sudokufx::service::external::VersionService']]],
+  ['victoryproperty_22',['victoryProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4c909182bac10b921d29ee29a6a5a9ae',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]]
 ];

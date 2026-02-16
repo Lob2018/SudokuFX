@@ -100,7 +100,7 @@
 <text text-anchor="start" x="175.12" y="-712.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="183.62" y="-712.5" font-family="Helvetica,sans-Serif" font-size="10.00">Task&lt; Boolean &gt; checkVersionTask</text>
 <text text-anchor="start" x="175.12" y="-696.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="183.62" y="-696.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
+<text text-anchor="start" x="183.62" y="-696.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyBooleanWrapper</text>
 <text text-anchor="start" x="183.62" y="-684.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isOutOfDate</text>
 <text text-anchor="start" x="175.12" y="-668.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="183.62" y="-668.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
@@ -118,7 +118,7 @@
 <text text-anchor="start" x="183.62" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
 <text text-anchor="start" x="183.62" y="-544.5" font-family="Helvetica,sans-Serif" font-size="10.00"> newTooltip</text>
 <text text-anchor="start" x="175.12" y="-528.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="183.62" y="-528.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringProperty</text>
+<text text-anchor="start" x="183.62" y="-528.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyStringWrapper</text>
 <text text-anchor="start" x="183.62" y="-516.5" font-family="Helvetica,sans-Serif" font-size="10.00"> statusMessage</text>
 <text text-anchor="start" x="175.12" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="183.62" y="-500.5" font-family="Helvetica,sans-Serif" font-size="10.00">ChangeListener&lt; Boolean</text>
@@ -127,8 +127,8 @@
 <text text-anchor="start" x="183.62" y="-472.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuNewViewModel(Version</text>
 <text text-anchor="start" x="183.62" y="-460.5" font-family="Helvetica,sans-Serif" font-size="10.00">Service versionService)</text>
 <text text-anchor="start" x="173.62" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="183.62" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty isOutOfDate</text>
-<text text-anchor="start" x="183.62" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="183.62" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyBooleanProperty</text>
+<text text-anchor="start" x="183.62" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00"> isOutOfDateProperty()</text>
 <text text-anchor="start" x="173.62" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="183.62" y="-416.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding maxiNewAccessible</text>
 <text text-anchor="start" x="183.62" y="-404.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
@@ -145,8 +145,8 @@
 <text text-anchor="start" x="183.62" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding newTooltip</text>
 <text text-anchor="start" x="183.62" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
 <text text-anchor="start" x="173.62" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="183.62" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringProperty statusMessage</text>
-<text text-anchor="start" x="183.62" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="183.62" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyStringProperty</text>
+<text text-anchor="start" x="183.62" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00"> statusMessageProperty()</text>
 <text text-anchor="start" x="175.12" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="183.62" y="-248.5" font-family="Helvetica,sans-Serif" font-size="10.00">void checkVersion()</text>
 <text text-anchor="start" x="175.12" y="-232.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

@@ -1,6 +1,7 @@
 <map id="src/main/java/fr/softsf/sudokufx/view/component" name="src/main/java/fr/softsf/sudokufx/view/component">
-<area shape="rect" id="node2" href="dir_67fa8e0dd09e39f35c4bff58215d1d33.html" title="list" alt="" coords="146,64,185,91"/>
-<area shape="rect" id="node3" href="dir_4d8d1702048aca3c36ab4e79d3495ef8.html" title="toaster" alt="" coords="208,64,269,91"/>
-<area shape="rect" id="clust2" href="dir_3043cbf7c584eba6150e8f4005133cbb.html" alt="" coords="27,53,280,101"/>
-<area shape="rect" id="clust1" href="dir_664d5835105ddaaeb330d567537f6eef.html" title="view" alt="" coords="16,16,291,112"/>
+<area shape="rect" id="node2" href="dir_7a9391dc63d23bd9efae7bbf76492e5f.html" title="firework" alt="" coords="146,64,214,91"/>
+<area shape="rect" id="node3" href="dir_67fa8e0dd09e39f35c4bff58215d1d33.html" title="list" alt="" coords="238,64,277,91"/>
+<area shape="rect" id="node4" href="dir_4d8d1702048aca3c36ab4e79d3495ef8.html" title="toaster" alt="" coords="300,64,361,91"/>
+<area shape="rect" id="clust2" href="dir_3043cbf7c584eba6150e8f4005133cbb.html" alt="" coords="27,53,372,101"/>
+<area shape="rect" id="clust1" href="dir_664d5835105ddaaeb330d567537f6eef.html" title="view" alt="" coords="16,16,383,112"/>
 </map>

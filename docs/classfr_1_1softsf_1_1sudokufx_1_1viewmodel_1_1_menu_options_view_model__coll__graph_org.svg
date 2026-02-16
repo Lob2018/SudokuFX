@@ -26,12 +26,12 @@
 <text text-anchor="start" x="457.88" y="-1278.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SUDOKU_FX_MUST_NOT</text>
 <text text-anchor="start" x="457.88" y="-1266.5" font-family="Helvetica,sans-Serif" font-size="10.00">_BE_NULL</text>
 <text text-anchor="start" x="449.38" y="-1250.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="457.88" y="-1250.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
+<text text-anchor="start" x="457.88" y="-1250.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyBooleanWrapper</text>
 <text text-anchor="start" x="457.88" y="-1238.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gridOpacityProperty</text>
 <text text-anchor="start" x="449.38" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="457.88" y="-1222.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean initialized</text>
 <text text-anchor="start" x="449.38" y="-1206.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="457.88" y="-1206.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
+<text text-anchor="start" x="457.88" y="-1206.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyBooleanWrapper</text>
 <text text-anchor="start" x="457.88" y="-1194.5" font-family="Helvetica,sans-Serif" font-size="10.00"> muteProperty</text>
 <text text-anchor="start" x="449.38" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="457.88" y="-1178.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
@@ -98,8 +98,8 @@
 <text text-anchor="start" x="457.88" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">Color(GridPane sudokuFX,</text>
 <text text-anchor="start" x="457.88" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Color color)</text>
 <text text-anchor="start" x="447.88" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="457.88" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty gridOpacity</text>
-<text text-anchor="start" x="457.88" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="457.88" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyBooleanProperty</text>
+<text text-anchor="start" x="457.88" y="-546.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gridOpacityProperty()</text>
 <text text-anchor="start" x="447.88" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="457.88" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(GridPane</text>
 <text text-anchor="start" x="457.88" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00"> sudokuFX, ColorPicker</text>
