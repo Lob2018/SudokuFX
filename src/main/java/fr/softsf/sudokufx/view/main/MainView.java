@@ -55,6 +55,7 @@ import fr.softsf.sudokufx.service.ui.SpinnerService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 import fr.softsf.sudokufx.view.component.SpinnerGridPane;
+import fr.softsf.sudokufx.view.component.firework.Firework;
 import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.view.util.BindingConfigurator;
 import fr.softsf.sudokufx.view.util.GenericListViewFactory;
@@ -115,6 +116,7 @@ public final class MainView implements IMainView {
 
     @FXML private ToasterVBox toaster;
     @FXML private SpinnerGridPane spinner;
+    @FXML private Firework firework;
     @FXML private GridPane sudokuFX;
     @FXML private GridPane sudokuFXGridPane;
 
@@ -378,6 +380,7 @@ public final class MainView implements IMainView {
      * exist.
      */
     private void gridInitialization() {
+        firework.firingProperty().bind(gridViewModel.victoryProperty());
         gridViewModel.init();
         int index = 0;
         for (GridCellViewModel cellVM : gridViewModel.getCellViewModels()) {

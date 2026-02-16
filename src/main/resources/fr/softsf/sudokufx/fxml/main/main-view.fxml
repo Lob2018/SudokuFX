@@ -3,6 +3,7 @@
 <?import fr.softsf.sudokufx.view.component.PossibilityStarsHBox?>
 <?import fr.softsf.sudokufx.view.component.SpinnerGridPane?>
 <?import fr.softsf.sudokufx.view.component.toaster.ToasterVBox?>
+<?import fr.softsf.sudokufx.view.component.firework.Firework?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ColorPicker?>
 <?import javafx.scene.control.Label?>
@@ -723,5 +724,9 @@
     <!---->
     <SpinnerGridPane fx:id="spinner"/>
 
+    <!---->
+    <!--Firework-->
+    <!---->
+    <Firework fx:id="firework" mouseTransparent="true" />
 
 </StackPane>

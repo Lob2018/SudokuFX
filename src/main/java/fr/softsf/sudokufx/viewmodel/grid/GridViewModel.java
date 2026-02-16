@@ -14,6 +14,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.ReadOnlyBooleanProperty;
+import javafx.beans.property.SimpleBooleanProperty;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
@@ -65,6 +68,22 @@ public class GridViewModel {
     private boolean initialized = false;
     private boolean suppressCellsListeners = false;
     private int desiredPossibilities = DEFAULT_DESIRED_POSSIBILITIES;
+
+    private final BooleanProperty victory = new SimpleBooleanProperty(false);
+
+    /**
+     * Returns the victory status property for binding the firework animation.
+     *
+     * @return the victory property
+     */
+    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
+    public ReadOnlyBooleanProperty victoryProperty() {
+        return victory;
+    }
 
     /** Resets the desired possibilities to the default state. */
     public void resetDesiredPossibilities() {
@@ -189,6 +208,7 @@ public class GridViewModel {
                 ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE.equals(
                         activeMenuOrSubmenuViewModel.getActiveMenu().getValue());
         if (isSolveMenu) {
+            victory.set(false);
             audioService.stopSong();
             return;
         }
@@ -198,6 +218,7 @@ public class GridViewModel {
         if (isCompletelyCompleted()) {
             verifyGrid();
         } else {
+            victory.set(false);
             audioService.stopSong();
         }
     }
@@ -370,6 +391,7 @@ public class GridViewModel {
                     "Wide catch is intentional in UI victory handling: any audio or file error must"
                         + " be logged and surfaced as a toast without crashing the application.")
     private void celebrateVictory() {
+        victory.set(true);
         toasterService.showInfo(
                 MessageFormat.format(
                         I18n.INSTANCE.getValue("toast.msg.gridviewmodel.completed"),

@@ -10,9 +10,9 @@ import javafx.beans.binding.Bindings;
 import javafx.beans.binding.BooleanBinding;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.ReadOnlyObjectProperty;
+import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleObjectProperty;
 
 import org.springframework.stereotype.Component;
 
@@ -32,7 +32,8 @@ import fr.softsf.sudokufx.view.component.PossibilityStarsHBox;
 @Component
 public class MenuLevelViewModel {
 
-    private final ObjectProperty<DifficultyLevel> selectedLevel = new SimpleObjectProperty<>(null);
+    private final ReadOnlyObjectWrapper<DifficultyLevel> selectedLevel =
+            new ReadOnlyObjectWrapper<>(null);
     private final IntegerProperty starsPercentage = new SimpleIntegerProperty(100);
 
     /**
@@ -40,13 +41,8 @@ public class MenuLevelViewModel {
      *
      * @return the selected difficulty level property
      */
-    @SuppressFBWarnings(
-            value = "EI_EXPOSE_REP",
-            justification =
-                    "JavaFX properties are intentionally exposed for bindings and listeners;"
-                            + " defensive copies break UI reactivity.")
-    public ObjectProperty<DifficultyLevel> selectedLevelProperty() {
-        return selectedLevel;
+    public ReadOnlyObjectProperty<DifficultyLevel> selectedLevelProperty() {
+        return selectedLevel.getReadOnlyProperty();
     }
 
     /**

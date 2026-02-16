@@ -8,10 +8,10 @@ package fr.softsf.sudokufx.viewmodel;
 import javafx.application.Platform;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.ReadOnlyBooleanProperty;
+import javafx.beans.property.ReadOnlyBooleanWrapper;
+import javafx.beans.property.ReadOnlyStringProperty;
+import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.beans.value.ChangeListener;
 import javafx.concurrent.Task;
 
@@ -42,8 +42,8 @@ public class MenuNewViewModel {
     private final StringBinding newTooltip;
 
     private final VersionService versionService;
-    private final BooleanProperty isOutOfDate = new SimpleBooleanProperty(false);
-    private final StringProperty statusMessage = new SimpleStringProperty();
+    private final ReadOnlyBooleanWrapper isOutOfDate = new ReadOnlyBooleanWrapper(false);
+    private final ReadOnlyStringWrapper statusMessage = new ReadOnlyStringWrapper();
     private Task<Boolean> checkVersionTask;
     private ChangeListener<Boolean> versionListener;
 
@@ -145,13 +145,8 @@ public class MenuNewViewModel {
      *
      * @return a BooleanProperty representing out-of-date status
      */
-    @SuppressFBWarnings(
-            value = "EI_EXPOSE_REP",
-            justification =
-                    "JavaFX properties are intentionally exposed for bindings and listeners;"
-                            + " defensive copies break UI reactivity.")
-    public BooleanProperty isOutOfDateProperty() {
-        return isOutOfDate;
+    public ReadOnlyBooleanProperty isOutOfDateProperty() {
+        return isOutOfDate.getReadOnlyProperty();
     }
 
     /**
@@ -159,12 +154,7 @@ public class MenuNewViewModel {
      *
      * @return a StringProperty with status messages
      */
-    @SuppressFBWarnings(
-            value = "EI_EXPOSE_REP",
-            justification =
-                    "JavaFX properties are intentionally exposed for bindings and listeners;"
-                            + " defensive copies break UI reactivity.")
-    public StringProperty statusMessageProperty() {
-        return statusMessage;
+    public ReadOnlyStringProperty statusMessageProperty() {
+        return statusMessage.getReadOnlyProperty();
     }
 }

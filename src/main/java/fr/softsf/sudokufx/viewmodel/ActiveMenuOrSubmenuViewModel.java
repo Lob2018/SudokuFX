@@ -6,8 +6,8 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import java.util.Objects;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.ReadOnlyObjectProperty;
+import javafx.beans.property.ReadOnlyObjectWrapper;
 
 import org.springframework.stereotype.Component;
 
@@ -32,8 +32,8 @@ public class ActiveMenuOrSubmenuViewModel {
         OPTIONS
     }
 
-    private final ObjectProperty<ActiveMenu> activeMenu =
-            new SimpleObjectProperty<>(ActiveMenu.MAXI);
+    private final ReadOnlyObjectWrapper<ActiveMenu> activeMenu =
+            new ReadOnlyObjectWrapper<>(ActiveMenu.MAXI);
 
     /** Returns the observable property representing the active menu. */
     @SuppressFBWarnings(
@@ -41,7 +41,7 @@ public class ActiveMenuOrSubmenuViewModel {
             justification =
                     "JavaFX properties are intentionally exposed for bindings and listeners;"
                             + " defensive copies break UI reactivity.")
-    public ObjectProperty<ActiveMenu> getActiveMenu() {
+    public ReadOnlyObjectProperty<ActiveMenu> getActiveMenu() {
         return activeMenu;
     }
 

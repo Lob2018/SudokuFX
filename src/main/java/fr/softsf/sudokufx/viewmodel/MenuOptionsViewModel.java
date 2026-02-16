@@ -13,9 +13,9 @@ import java.util.function.Supplier;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
-import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.ReadOnlyBooleanProperty;
+import javafx.beans.property.ReadOnlyBooleanWrapper;
+import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
@@ -94,7 +94,7 @@ public class MenuOptionsViewModel {
     private final StringBinding optionsColorTooltip;
     private final StringBinding optionsColorRoleDescription;
 
-    private final BooleanProperty gridOpacityProperty = new SimpleBooleanProperty(false);
+    private final ReadOnlyBooleanWrapper gridOpacityProperty = new ReadOnlyBooleanWrapper(false);
     private final StringBinding optionsOpacityAccessibleText;
     private final StringBinding optionsOpacityTooltip;
     private final StringBinding optionsOpacityRoleDescription;
@@ -104,7 +104,7 @@ public class MenuOptionsViewModel {
     private static final String ICON_OPACITY_ON = "\ue891";
     private static final String ICON_OPACITY_OFF = "\ue0c4";
 
-    private final BooleanProperty muteProperty = new SimpleBooleanProperty(true);
+    private final ReadOnlyBooleanWrapper muteProperty = new ReadOnlyBooleanWrapper(true);
     private final StringBinding optionsMuteAccessibleText;
     private final StringBinding optionsMuteTooltip;
     private final StringBinding optionsMuteRoleDescription;
@@ -114,8 +114,8 @@ public class MenuOptionsViewModel {
     private static final String ICON_MUTE_ON = "\ue050";
     private static final String ICON_MUTE_OFF = "\ue04f";
 
-    private final SimpleStringProperty songProperty = new SimpleStringProperty("");
-    private final BooleanProperty songIsBlankProperty = new SimpleBooleanProperty(true);
+    private final ReadOnlyStringWrapper songProperty = new ReadOnlyStringWrapper("");
+    private final ReadOnlyBooleanWrapper songIsBlankProperty = new ReadOnlyBooleanWrapper(true);
     private final StringBinding optionsSongAccessibleText;
     private final StringBinding optionsSongTooltip;
     private final StringBinding optionsSongRoleDescription;
@@ -436,13 +436,8 @@ public class MenuOptionsViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
-    @SuppressFBWarnings(
-            value = "EI_EXPOSE_REP",
-            justification =
-                    "JavaFX properties are intentionally exposed for bindings and listeners;"
-                            + " defensive copies break UI reactivity.")
-    public BooleanProperty gridOpacityProperty() {
-        return gridOpacityProperty;
+    public ReadOnlyBooleanProperty gridOpacityProperty() {
+        return gridOpacityProperty.getReadOnlyProperty();
     }
 
     @SuppressFBWarnings(
@@ -760,13 +755,8 @@ public class MenuOptionsViewModel {
         return optionsClearSongAccessibleText;
     }
 
-    @SuppressFBWarnings(
-            value = "EI_EXPOSE_REP",
-            justification =
-                    "JavaFX properties are intentionally exposed for bindings and listeners;"
-                            + " defensive copies break UI reactivity.")
-    public BooleanProperty songIsBlankProperty() {
-        return songIsBlankProperty;
+    public ReadOnlyBooleanProperty songIsBlankProperty() {
+        return songIsBlankProperty.getReadOnlyProperty();
     }
 
     /**

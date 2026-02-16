@@ -5,17 +5,14 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
-import java.text.MessageFormat;
-import java.util.List;
-import java.util.Locale;
-import java.util.Set;
-import java.util.function.UnaryOperator;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import fr.softsf.sudokufx.common.enums.I18n;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.ReadOnlyIntegerProperty;
+import javafx.beans.property.ReadOnlyIntegerWrapper;
 import javafx.beans.property.SimpleBooleanProperty;
-import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.scene.control.Label;
@@ -23,11 +20,13 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Region;
-
 import org.apache.commons.lang3.StringUtils;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
-import fr.softsf.sudokufx.common.enums.I18n;
+import java.text.MessageFormat;
+import java.util.List;
+import java.util.Locale;
+import java.util.Set;
+import java.util.function.UnaryOperator;
 
 /**
  * ViewModel for an editable cell in a 9x9 Sudoku grid.
@@ -55,7 +54,7 @@ public final class GridCellViewModel {
     private static final String SUDOKU_FX_GRID_CELL_LARGE_FONT = "sudokuFXGridCellLargeFont";
     private static final String SUDOKU_FX_GRID_CELL_NON_EDITABLE = "sudokuFXGridCellNonEditable";
     private static final String SUDOKU_FX_GRID_CELL = "sudokuFXGridCell";
-    private final IntegerProperty id = new SimpleIntegerProperty();
+    private final ReadOnlyIntegerWrapper id = new ReadOnlyIntegerWrapper();
     private final StringProperty rawText = new SimpleStringProperty("");
     private final BooleanProperty editable = new SimpleBooleanProperty(true);
     private final Label label = new Label();
@@ -385,13 +384,8 @@ public final class GridCellViewModel {
         return editable.get();
     }
 
-    @SuppressFBWarnings(
-            value = "EI_EXPOSE_REP",
-            justification =
-                    "JavaFX properties are intentionally exposed for bindings and listeners;"
-                            + " defensive copies break UI reactivity.")
-    public IntegerProperty idProperty() {
-        return id;
+    public ReadOnlyIntegerProperty idProperty() {
+        return id.getReadOnlyProperty();
     }
 
     @SuppressFBWarnings(
