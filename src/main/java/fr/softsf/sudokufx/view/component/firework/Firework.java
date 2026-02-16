@@ -126,6 +126,7 @@ public class Firework extends Group {
             };
 
     /** Initializes the component and its reusable animation loop. */
+    @SuppressWarnings("java:S2245")
     public Firework() {
         setManaged(false);
         this.timer =
@@ -157,6 +158,7 @@ public class Firework extends Group {
     }
 
     /** Generates a circular particle burst at a random screen location. */
+    @SuppressWarnings("java:S2245")
     private void ignite() {
         var random = ThreadLocalRandom.current();
         FireworkContext context = getFireworkContext();

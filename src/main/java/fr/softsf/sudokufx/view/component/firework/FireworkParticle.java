@@ -5,9 +5,10 @@
  */
 package fr.softsf.sudokufx.view.component.firework;
 
-import java.util.concurrent.ThreadLocalRandom;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+
+import java.util.concurrent.ThreadLocalRandom;
 
 /** Individual particle entity with physics and fade-out logic. */
 public class FireworkParticle {
@@ -38,6 +39,7 @@ public class FireworkParticle {
      * @param color Particle color.
      * @param radius Particle radius.
      */
+    @SuppressWarnings("java:S2245")
     public FireworkParticle(
             double ratio, double startX, double startY, Color color, double radius) {
         this.ratio = ratio;
