@@ -5,19 +5,22 @@
  */
 package fr.softsf.sudokufx.view.component.firework;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import javafx.animation.AnimationTimer;
+import javafx.animation.FadeTransition;
+import javafx.animation.PauseTransition;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.BooleanPropertyBase;
 import javafx.scene.Group;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
+import javafx.util.Duration;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Reactive container for firework animation logic. Lifecycle is strictly controlled by the firing
@@ -28,18 +31,21 @@ public class Firework extends Group {
     private double spawnRatio = 0;
 
     public static final double MINIMUM_PARTICLE_RADIUS = 0.2;
-    private static final double REFERENCE_SCREEN_WIDTH = 1536.0;
+    private static final double REFERENCE_SCREEN_WIDTH = 1000;
 
-    private static final int DEFAULT_COUNTDOWN = 1;
+    private static final int DEFAULT_COUNTDOWN = 4;
     public static final int MAXIMUM_HUE = 360;
-    public static final int MINIMUM_PARTICLES = 15;
-    public static final int PARTICLE_COUNT_VARIANCE = 20;
+    public static final int MINIMUM_PARTICLES = 8;
+    public static final int PARTICLE_COUNT_VARIANCE = 10;
     public static final int PARTICLE_RADIUS_VARIANCE = 5;
     public static final int SPEED_VARIANCE = 4;
 
     private final List<FireworkParticle> particles = new ArrayList<>();
     private final AnimationTimer timer;
     private int countdown = DEFAULT_COUNTDOWN * 2;
+
+    private final PauseTransition delay = new PauseTransition(Duration.seconds(1));
+    private final FadeTransition fadeIn = new FadeTransition(Duration.seconds(1), this);
 
     /**
      * Snapshot of the rendering environment including scaling metrics.
@@ -77,12 +83,28 @@ public class Firework extends Group {
             new BooleanPropertyBase(false) {
                 @Override
                 protected void invalidated() {
+                    delay.stop();
+                    fadeIn.stop();
                     if (get()) {
                         clearParticles();
                         countdown = DEFAULT_COUNTDOWN * 2;
+                        setVisible(false);
+                        setOpacity(0.0);
+                        delay.setOnFinished(
+                                e -> {
+                                    if (get()) {
+                                        setVisible(true);
+                                        fadeIn.setFromValue(0.0);
+                                        fadeIn.setToValue(1.0);
+                                        fadeIn.play();
+                                    }
+                                });
+                        delay.play();
                         timer.start();
                     } else {
                         timer.stop();
+                        setVisible(false);
+                        setOpacity(0.0);
                         clearParticles();
                     }
                 }

@@ -15,13 +15,13 @@ public class FireworkParticle {
     private static final double GRAVITY_FORCE = 0.1;
     private static final double AIR_FRICTION = 0.98;
     private static final double MIN_BLUR_RADIUS = 1.5;
-    private static final double BLUR_VARIANCE = 7.0;
+    private static final double BLUR_VARIANCE = 3.0;
 
-    public static final int MIN_DISPLAY_DURATION = 50;
-    public static final int DISPLAY_DURATION_VARIANCE = 66;
+    public static final int MIN_DISPLAY_DURATION = 25;
+    public static final int DISPLAY_DURATION_VARIANCE = 33;
 
     final Circle circle;
-    private final double ratio; // Fixé à la naissance
+    private final double ratio;
     private final int maxDurationTicks;
     private double x;
     private double y;
