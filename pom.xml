@@ -32,7 +32,7 @@
     <deployment-folder>output</deployment-folder>
     <java.version>25</java.version>
     <javafx.version>25.0.2</javafx.version>
-    <jvm.args>-Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</jvm.args>
+    <jvm.args>-Dfile.encoding=UTF-8 -Dprism.order=d3d,es2,sw -Dprism.vsync=true --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</jvm.args>
     <license.name>GPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
     <maven.version>3.9.9</maven.version>
@@ -557,10 +557,11 @@
                 <option>-Dcom.sun.management.jmxremote.port=9010</option>
                 <option>-Dcom.sun.management.jmxremote.authenticate=false</option>
                 <option>-Dcom.sun.management.jmxremote.ssl=false</option>
-                <option>-Xmx2048m</option>
                 <option>-Xlog:gc*=info,heap=debug,age=trace</option>
                 <option>-XX:NativeMemoryTracking=summary</option>
-                <option>-XX:MaxMetaspaceSize=128m</option>
+                <option>-XX:MaxMetaspaceSize=256m</option>
+                <option>-Xms1g</option>
+                <option>-Xmx2g</option>
               </options>
             </configuration>
           </plugin>

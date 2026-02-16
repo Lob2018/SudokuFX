@@ -50,7 +50,7 @@ cp "$jarName" "input/$jarName"
 
 echo "# OUTPUT   : CREATING THE DEB FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$7 -Dapp.license=$8" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xms1g -Xmx2g -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$7 -Dapp.license=$8" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target || exit
@@ -114,14 +114,14 @@ if [[ ! -d "$1" ]]; then
     rm "$1-$2.jar"
     echo "Training the SudokuFX application..."
     cd "$1" || exit
-    java -Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null && \
-    java -Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
+    java -Xms1g -Xmx2g -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null && \
+    java -Xms1g -Xmx2g -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
 fi
 
 if [[ -d "$1" ]]; then
     echo "Running the SudokuFX application..."
     cd "$1" || exit
-    java -Xms512m -Xmx2048m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=192m -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
+    java -Xms1g -Xmx2g -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=256m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
 fi
 EOF
 
