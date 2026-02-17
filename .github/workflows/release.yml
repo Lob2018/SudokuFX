@@ -273,6 +273,8 @@ jobs:
           name: SudokuFX release v${{ env.POM_VERSION }}
           tag: v${{ env.POM_VERSION }}
           body: |
+            # 🧪 Early Access 🚧 Work in Progress
+
             ## MSI, DMG, and DEB Files
 
             **These installation packages include the Java Runtime Environment (JRE) and will automatically install the application on your machine**

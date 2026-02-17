@@ -106,7 +106,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 
 ### Verifying downloaded assets
 
-To ensure the integrity of downloaded assets, import the GPG public key with `gpg --import sudokufx-public-key.asc`, then verify the files, e.g., the MSI file, using `gpg --verify SudokuFX_JVM-v.v.v.msi.asc SudokuFX_JVM-v.v.v.msi`. For more information, refer to the [GnuPG Manual](https://www.gnupg.org/gph/en/manual.html).
+To ensure the integrity of downloaded assets, import the GPG public key with `gpg --import sudokufx-public-key.asc`, then verify the files, e.g., the MSI file, using `gpg --verify SudokuFX_JVM-v.v.v.v.msi.asc SudokuFX_JVM-v.v.v.v.msi`. For more information, refer to the [GnuPG Manual](https://www.gnupg.org/gph/en/manual.html).
 
 ## Use
 
@@ -116,7 +116,7 @@ To ensure the integrity of downloaded assets, import the GPG public key with `gp
 - **Application with Java Runtime Environment (JRE) included**: Launch SudokuFX from the Start Menu after installing the MSI file.
 - **Application without Java Runtime Environment (JRE) included**: Run from the extracted ZIP folder:
 ```
-./SudokuFX-v.v.v.bat
+./SudokuFX-v.v.v.v.bat
 ```
 
 #### Linux
@@ -126,14 +126,14 @@ To ensure the integrity of downloaded assets, import the GPG public key with `gp
 ```
 - **Application without Java Runtime Environment (JRE) included**: Navigate to the extracted TAR folder and run:
 ```
-./SudokuFX-v.v.v.sh
+./SudokuFX-v.v.v.v.sh
 ```
 
 #### MacOS
 - **Application with Java Runtime Environment (JRE) included**: Launch from the Applications folder or Launchpad after installing the DMG file.
 - **Application without Java Runtime Environment (JRE) included**: Navigate to the extracted ZIP folder and run:
 ```
-./SudokuFX-v.v.v.sh
+./SudokuFX-v.v.v.v.sh
 ```
 
 ### Basic gameplay
@@ -195,19 +195,19 @@ For additional help, check the application logs or [file an issue](https://githu
         3. Press and hold (or right-click) on the program you want to remove and select **Uninstall** or *
            *Uninstall/Change**. Then follow the directions on the screen.
   - Application without Java Runtime Environment (JRE) included (ZIP file with the .bat file and the JAR)
-    - **Delete your unzipped folder from SudokuFX-v.v.v_windows.zip**
+    - **Delete your unzipped folder from SudokuFX-v.v.v.v_windows.zip**
 
 - Linux
   - Application with Java Runtime Environment (JRE) included (from .deb file)
     - Run `sudo apt purge sudokufx-jvm`
   - Application without Java Runtime Environment (JRE) included (TAR file with the .sh file and the JAR)
-    - **Delete your untarred folder from SudokuFX-v.v.v_linux.tar.gz**
+    - **Delete your untarred folder from SudokuFX-v.v.v.v_linux.tar.gz**
 
 - MacOS
   - Application with Java Runtime Environment (JRE) included (from .dmg file)
     - Drag the application to the Trash
   - Application without Java Runtime Environment (JRE) included (ZIP file with the .sh file and the JAR)
-    - **Delete your unzipped folder from SudokuFX-v.v.v_macos.zip**
+    - **Delete your unzipped folder from SudokuFX-v.v.v.v_macos.zip**
 
 > [!IMPORTANT]
 > **To completely remove your application data and logs, delete the following folder (this action is irreversible):**
