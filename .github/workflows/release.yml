@@ -272,6 +272,7 @@ jobs:
         with:
           name: SudokuFX release v${{ env.POM_VERSION }}
           tag: v${{ env.POM_VERSION }}
+          prerelease: true
           body: |
             # 🧪 Early Access 🚧 Work in Progress
 
