@@ -5,7 +5,10 @@
  */
 package fr.softsf.sudokufx.view.component.firework;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 import javafx.animation.AnimationTimer;
 import javafx.animation.FadeTransition;
 import javafx.animation.PauseTransition;
@@ -17,10 +20,7 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.util.Duration;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 /**
  * Reactive container for firework animation logic. Lifecycle is strictly controlled by the firing
