@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.config.os;
 
 import java.io.File;
-import java.nio.file.Path;
 import java.util.Objects;
 
 import org.slf4j.Logger;
@@ -14,7 +13,6 @@ import org.slf4j.LoggerFactory;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.exception.FolderCreationException;
-import fr.softsf.sudokufx.common.util.PathValidator;
 
 /**
  * Utility enum to initialize required application folders (data and logs). Provides static-like
@@ -34,7 +32,7 @@ public enum OsFolderInitializer {
      * @param logsFolderPath path to the logs folder to create
      * @return an OsInitializedFolders object containing the created folder paths
      * @throws IllegalArgumentException if either folder path is null or blank
-     * @throws RuntimeException if folder creation fails
+     * @throws FolderCreationException if folder creation fails
      */
     OsInitializedFolders initializeFolders(String dataFolderPath, String logsFolderPath) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
@@ -43,8 +41,8 @@ public enum OsFolderInitializer {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 logsFolderPath,
                 "logsFolderPath must not be null or blank, but was: " + logsFolderPath);
-        createFolder(PathValidator.INSTANCE.validateExists(Path.of(dataFolderPath)));
-        createFolder(PathValidator.INSTANCE.validateExists(Path.of(logsFolderPath)));
+        createFolder(new File(dataFolderPath));
+        createFolder(new File(logsFolderPath));
         return new OsInitializedFolders(dataFolderPath, logsFolderPath);
     }
 
