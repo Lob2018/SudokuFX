@@ -18,12 +18,16 @@
     <suppress checks="LineLength"
               files="GrillesCrees.java"
               lines="33"/>
+    <!-- REGEX -->
+    <suppress checks="LineLength"
+              files="MyRegex.java"
+              lines="52"/>
     <!-- SVG path string -->
     <suppress checks="LineLength"
               files="CrashScreenView.java"
-              lines="200"/>
+              lines="217"/>
     <!-- SVG path string -->
     <suppress checks="LineLength"
               files="SplashScreenView.java"
-              lines="236,258-279"/>
+              lines="229,230,241-250,261"/>
 </suppressions>

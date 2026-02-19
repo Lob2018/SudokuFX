@@ -41,8 +41,7 @@ import static javafx.scene.layout.Priority.ALWAYS;
  * View class for the splash screen of the Sudoku application. This class is responsible for
  * creating and managing the splash screen UI.
  *
- * <p>Lines="0-34" are excluded from Checkstyle's LineLength check (see
- * checkstyle-suppressions.xml).
+ * <p>Some lines are excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml).
  */
 public final class SplashScreenView implements ISplashScreenView {
 

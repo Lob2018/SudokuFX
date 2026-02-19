@@ -8,7 +8,7 @@ package fr.softsf.sudokufx.common.util;
 import java.nio.file.Path;
 
 /** Defines file system operations related to the application's data management. */
-public sealed interface IFileSystem permits FileSystemManager {
+public sealed interface IUserDataPurger permits LocalUserDataPurger {
 
     /**
      * Recursively deletes the application's data folder and all its contents.

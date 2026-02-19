@@ -5,20 +5,25 @@
  */
 package fr.softsf.sudokufx.config.os;
 
-/** Interface defining methods to access OS-specific folder paths. */
+/**
+ * * Defines the contract for accessing operating system specific storage paths. *
+ *
+ * <p>Implementations must provide standardized paths for application data and logging based on the
+ * host environment.
+ */
 public sealed interface IOsFolder permits OsInitializedFolders {
 
     /**
-     * Retrieves the path to the OS-specific data folder.
+     * Returns the absolute path to the application's data directory.
      *
-     * @return A String representing the path to the data folder
+     * @return The data folder path as a String.
      */
     String getOsDataFolderPath();
 
     /**
-     * Retrieves the path to the OS-specific logs folder.
+     * Returns the absolute path to the application's logs directory.
      *
-     * @return A String representing the path to the logs folder
+     * @return The logs folder path as a String.
      */
     String getOsLogsFolderPath();
 }

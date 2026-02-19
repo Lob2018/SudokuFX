@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.service.ui;
 
 import java.io.File;
+import java.nio.file.Path;
 import java.util.Objects;
 import java.util.Optional;
 import javafx.stage.FileChooser;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.util.PathValidator;
 
 /**
  * A Spring service that provides a reusable and type-safe file chooser utility for selecting
@@ -58,10 +60,9 @@ public class FileChooserService {
         Objects.requireNonNull(type, "FileType must not be null");
         try {
             FileChooser fileChooser = new FileChooser();
-            File initialDir = new File(AppPaths.USER_HOME.getPath());
-            if (initialDir.exists() && initialDir.isDirectory()) {
-                fileChooser.setInitialDirectory(initialDir);
-            }
+            File initialDir =
+                    PathValidator.INSTANCE.validateDirectory(Path.of(AppPaths.USER_HOME.getPath()));
+            fileChooser.setInitialDirectory(initialDir);
             fileChooser.getExtensionFilters().add(getFilter(type));
             return Optional.ofNullable(fileChooser.showOpenDialog(ownerStage));
         } catch (Exception e) {

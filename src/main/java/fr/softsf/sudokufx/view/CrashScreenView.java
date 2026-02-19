@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.view;
 
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.Year;
 import java.util.Objects;
 import javafx.animation.FadeTransition;
@@ -35,8 +34,9 @@ import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
-import fr.softsf.sudokufx.common.util.FileSystemManager;
-import fr.softsf.sudokufx.common.util.IFileSystem;
+import fr.softsf.sudokufx.common.util.IUserDataPurger;
+import fr.softsf.sudokufx.common.util.LocalUserDataPurger;
+import fr.softsf.sudokufx.common.util.PathValidator;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.config.os.OsFoldersConfig;
@@ -48,14 +48,14 @@ import static fr.softsf.sudokufx.common.enums.ScreenSize.DISPOSABLE_SIZE;
  * View class for the crash screen without business logic. This class is responsible for displaying
  * and managing the crash screen UI.
  *
- * <p>Line="200" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml).
+ * <p>Line="217" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml).
  */
 public final class CrashScreenView implements IMainView {
 
     private static final Logger LOG = LoggerFactory.getLogger(CrashScreenView.class);
 
-    private static final IOsFolder I_OS_FOLDER_FACTORY = new OsFoldersConfig().iOsFolderFactory();
-    private static final IFileSystem I_FILE_SYSTEM = new FileSystemManager();
+    private static final IOsFolder OS_FOLDER_PROVIDER = new OsFoldersConfig().iOsFolderFactory();
+    private static final IUserDataPurger DATA_PURGER = new LocalUserDataPurger();
     private static final double FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN = 0.5;
     private static final double CRASHSCREEN_SIZE_RATIO = 0.7;
     private static final double CRASHSCREEN_FONT_RATIO = 0.02;
@@ -98,8 +98,8 @@ public final class CrashScreenView implements IMainView {
     }
 
     /**
-     * Handles the reset button click event. Attempts to delete the application data directory and
-     * then exits the application.
+     * Handles the reset button click event. Validates the path before attempting recursive deletion
+     * of the application data directory.
      */
     @FXML
     @SuppressFBWarnings(
@@ -107,8 +107,9 @@ public final class CrashScreenView implements IMainView {
             justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void resetButtonClick() {
         LOG.info("▓▓▓▓ The user choose to reset the application data");
-        Path pathToDelete = Paths.get(I_OS_FOLDER_FACTORY.getOsDataFolderPath());
-        if (I_FILE_SYSTEM.deleteDataFolderRecursively(pathToDelete)) {
+        final Path pathToDelete = Path.of(OS_FOLDER_PROVIDER.getOsDataFolderPath());
+        PathValidator.INSTANCE.validateDirectory(pathToDelete);
+        if (DATA_PURGER.deleteDataFolderRecursively(pathToDelete)) {
             LOG.info("▓▓▓▓ The directory is deleted, triggering Platform.exit()");
         } else {
             LOG.info("▓▓▓▓ The directory isn't deleted, triggering Platform.exit()");
@@ -180,7 +181,7 @@ public final class CrashScreenView implements IMainView {
         crashscreenvboxCenterhboxLabel2.setText(
                 I18n.INSTANCE.getValue("crashscreen.extramessage")
                         + "\n"
-                        + I_OS_FOLDER_FACTORY.getOsDataFolderPath());
+                        + OS_FOLDER_PROVIDER.getOsDataFolderPath());
         crashscreenvboxCenterhboxLabel2.setWrapText(true);
         crashscreenvboxCenterhboxLabel2.setTextFill(crashDefaultFontColor);
         buttonReset.setText(I18n.INSTANCE.getValue("crashscreen.reset"));

@@ -5,7 +5,7 @@
  */
 package fr.softsf.sudokufx.viewmodel.grid;
 
-import java.io.File;
+import java.nio.file.Path;
 import java.text.MessageFormat;
 import java.time.Instant;
 import java.util.ArrayList;
@@ -27,6 +27,7 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.util.PathValidator;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
 import fr.softsf.sudokufx.common.util.sudoku.IGridConverter;
@@ -398,16 +399,13 @@ public class GridViewModel {
                         playerStateHolder.getCurrentPlayer().name()),
                 "");
         try {
-            String path = playerStateHolder.getCurrentPlayer().optionsidDto().songpath();
-            if (StringUtils.isNotEmpty(path)) {
-                File file = new File(path);
-                if (file.exists()) {
-                    audioService.playSong(file);
-                } else {
-                    throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
-                            "Audio file not found: " + path);
-                }
-            }
+            audioService.playSong(
+                    PathValidator.INSTANCE.validateExists(
+                            Path.of(
+                                    playerStateHolder
+                                            .getCurrentPlayer()
+                                            .optionsidDto()
+                                            .songpath())));
         } catch (Exception e) {
             String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
             LOG.error("██ Exception - {}: {}", title, e.getMessage(), e);

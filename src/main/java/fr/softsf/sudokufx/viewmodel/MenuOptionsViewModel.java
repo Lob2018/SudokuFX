@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.MessageFormat;
 import java.util.Objects;
@@ -34,6 +35,7 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.AudioUtils;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
+import fr.softsf.sudokufx.common.util.PathValidator;
 import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
@@ -787,7 +789,9 @@ public class MenuOptionsViewModel {
         if (optionsDto.imagepath().isEmpty()) {
             setColorFromModel(sudokuFX, menuOptionsButtonColor, optionsDto.hexcolor());
         } else {
-            applyAndPersistBackgroundImage(new File(optionsDto.imagepath()), sudokuFX);
+            applyAndPersistBackgroundImage(
+                    PathValidator.INSTANCE.validateExists(Path.of(optionsDto.imagepath())),
+                    sudokuFX);
         }
         gridOpacityProperty.set(optionsDto.opaque());
         audioService.setMuted(optionsDto.muted());

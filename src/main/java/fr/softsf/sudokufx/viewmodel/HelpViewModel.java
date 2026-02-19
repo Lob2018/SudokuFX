@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
+import java.nio.file.Path;
 import java.text.MessageFormat;
 import java.time.Year;
 import java.util.Objects;
@@ -15,12 +16,14 @@ import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ButtonType;
 
 import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ScreenSize;
-import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.util.PathValidator;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.navigation.Coordinator;
@@ -32,6 +35,8 @@ import fr.softsf.sudokufx.view.component.MyAlert;
  */
 @Component
 public class HelpViewModel {
+
+    private static final Logger LOG = LoggerFactory.getLogger(HelpViewModel.class);
 
     private static final double ALERT_SIZE_RATIO = 0.6;
     private final IOsFolder iOsFolder;
@@ -102,24 +107,28 @@ public class HelpViewModel {
     }
 
     /**
-     * Adds an "Open log file" button to the given alert.
+     * Adds an "Open log file" button to the given alert if the log file exists.
      *
-     * <p>The button is aligned to the left and opens the system log file when clicked. The file
-     * path is resolved via {@code iOsFolder.getOsLogsFolderPath()} and validated beforehand.
+     * <p>The button is aligned to the left and opens the system log file when clicked. If the path
+     * is invalid or the file is missing, no button is added.
      *
      * @param informationAlert the alert to which the log file button will be added; must not be
      *     null
-     * @throws NullPointerException if {@code informationAlert} is null or if the resolved file is
-     *     null
-     * @throws IllegalArgumentException if the resolved path is blank
+     * @throws NullPointerException if {@code informationAlert} is null
      */
     private void addLogFileButton(MyAlert informationAlert) {
         Objects.requireNonNull(informationAlert, "informationAlert must not be null");
-        String logPath = iOsFolder.getOsLogsFolderPath() + AppPaths.LOGS_FILE_NAME_PATH.getPath();
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
-                logPath, "logPath must not be null or blank, but was " + logPath);
-        File file = new File(logPath);
-        Objects.requireNonNull(file, "file must not be null");
+        File file;
+        try {
+            file =
+                    PathValidator.INSTANCE.validateExists(
+                            Path.of(
+                                    iOsFolder.getOsLogsFolderPath(),
+                                    AppPaths.LOGS_FILE_NAME_PATH.getPath()));
+        } catch (IllegalStateException | IllegalArgumentException e) {
+            LOG.warn("▓▓ Log file button not added: {}", e.getMessage());
+            return;
+        }
         ButtonType fileButtonType =
                 new ButtonType(
                         I18n.INSTANCE.getValue("menu.button.help.dialog.information.logfile"),

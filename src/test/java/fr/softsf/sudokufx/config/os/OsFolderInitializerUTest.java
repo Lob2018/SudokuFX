@@ -17,9 +17,14 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import fr.softsf.sudokufx.common.exception.FolderCreationException;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 class OsFolderInitializerUTest {
 
@@ -130,13 +135,21 @@ class OsFolderInitializerUTest {
 
     @Test
     void givenValidPaths_whenInitializeFolders_thenFoldersCreated() {
-        String dataPath = tempDir.resolve("testDataFolder").toString();
-        String logsPath = tempDir.resolve("testLogsFolder").toString();
+        Path dataPath = tempDir.resolve("testDataFolder");
+        Path logsPath = tempDir.resolve("testLogsFolder");
+        try {
+            java.nio.file.Files.createDirectories(dataPath);
+            java.nio.file.Files.createDirectories(logsPath);
+        } catch (java.io.IOException e) {
+            fail("Failed to setup test folders: " + e.getMessage());
+        }
+        String dataPathStr = dataPath.toString();
+        String logsPathStr = logsPath.toString();
         OsInitializedFolders osInitializedFolders =
-                OsFolderInitializer.INSTANCE.initializeFolders(dataPath, logsPath);
-        assertEquals(dataPath, osInitializedFolders.dataFolderPath());
-        assertEquals(logsPath, osInitializedFolders.logsFolderPath());
-        assertTrue(new File(dataPath).exists());
-        assertTrue(new File(logsPath).exists());
+                OsFolderInitializer.INSTANCE.initializeFolders(dataPathStr, logsPathStr);
+        assertEquals(dataPathStr, osInitializedFolders.dataFolderPath());
+        assertEquals(logsPathStr, osInitializedFolders.logsFolderPath());
+        assertTrue(new File(dataPathStr).exists());
+        assertTrue(new File(logsPathStr).exists());
     }
 }

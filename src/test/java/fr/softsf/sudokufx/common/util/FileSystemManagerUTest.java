@@ -22,14 +22,16 @@ import org.slf4j.LoggerFactory;
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 import static fr.softsf.sudokufx.common.enums.AppPaths.DATA_FOLDER;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.mock;
+import static org.junit.jupiter.api.Assertions.assertInstanceOf;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class FileSystemManagerUTest {
     private final String suffix = DATA_FOLDER.getPath();
-    private final FileSystemManager fileSystemManager = new FileSystemManager();
+    private final LocalUserDataPurger fileSystemManager = new LocalUserDataPurger();
     @TempDir Path tempDir;
     private Path path1;
     private ListAppender<ILoggingEvent> logWatcher;
@@ -38,12 +40,12 @@ class FileSystemManagerUTest {
     void setup() {
         logWatcher = new ListAppender<>();
         logWatcher.start();
-        ((Logger) LoggerFactory.getLogger(FileSystemManager.class)).addAppender(logWatcher);
+        ((Logger) LoggerFactory.getLogger(LocalUserDataPurger.class)).addAppender(logWatcher);
     }
 
     @AfterEach
     void tearDown() {
-        ((Logger) LoggerFactory.getLogger(FileSystemManager.class)).detachAndStopAllAppenders();
+        ((Logger) LoggerFactory.getLogger(LocalUserDataPurger.class)).detachAndStopAllAppenders();
     }
 
     @BeforeEach
@@ -51,7 +53,7 @@ class FileSystemManagerUTest {
         try {
             Files.createDirectories(tempDir.resolve("testFolder/" + suffix + "/toto.txt"));
             path1 = tempDir.resolve("testFolder/" + suffix + "/toto.txt");
-        } catch (InvalidPathException | IOException ipe) {
+        } catch (InvalidPathException | IOException _) {
             System.err.println(
                     "error creating temporary test file in " + getClass().getSimpleName());
         }
@@ -64,19 +66,21 @@ class FileSystemManagerUTest {
     }
 
     @Test
-    void givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenDeletionFails() {
-        Path base =
-                Paths.get(
-                        "root",
-                        "segment1",
-                        "segment2",
-                        "segment3",
-                        "segment4",
-                        "segment5",
-                        "segment6");
-        Path invalidPath = base.subpath(0, 5);
-        boolean result = fileSystemManager.deleteDataFolderRecursively(invalidPath);
-        assertFalse(result);
+    void
+            givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenIllegalStateExceptionThrown() {
+        ((Logger) LoggerFactory.getLogger(ExceptionTools.class)).addAppender(logWatcher);
+        Path base = Paths.get("root", "segment1", "segment2");
+        IllegalStateException exception =
+                assertThrows(
+                        IllegalStateException.class,
+                        () -> fileSystemManager.deleteDataFolderRecursively(base));
+        assertTrue(exception.getMessage().contains("Path does not exist"));
+        assertTrue(
+                logWatcher
+                        .list
+                        .getLast()
+                        .getFormattedMessage()
+                        .contains("██ Exception: Path does not exist"));
     }
 
     @Test
@@ -107,27 +111,36 @@ class FileSystemManagerUTest {
 
     @Test
     void givenNullPath_whenDeleteDataFolderRecursively_thenIllegalArgumentExceptionThrown() {
+        ((Logger) LoggerFactory.getLogger(ExceptionTools.class)).addAppender(logWatcher);
         IllegalArgumentException exception =
                 assertThrows(
                         IllegalArgumentException.class,
                         () -> fileSystemManager.deleteDataFolderRecursively(null));
-        assertTrue(exception.getMessage().contains("The folderPath mustn't be null"));
+        assertTrue(exception.getMessage().contains("mustn't be null"));
+        assertTrue(
+                logWatcher.list.stream()
+                        .anyMatch(
+                                event ->
+                                        event.getFormattedMessage()
+                                                .contains("Exception: The path mustn't be null")),
+                "The error should be logged by ExceptionTools");
     }
 
     @Test
-    void givenIOException_whenDeleteFile_thenExceptionReturnedAndLogged() {
-        Path mockPath = mock(Path.class);
+    void givenIOException_whenDeleteFile_thenExceptionReturnedAndLogged() throws IOException {
+        ((Logger) LoggerFactory.getLogger(LocalUserDataPurger.class)).addAppender(logWatcher);
+        Path realPath = tempDir.resolve("toDelete.txt");
+        Files.createFile(realPath);
         try (MockedStatic<Files> mockedFiles = Mockito.mockStatic(Files.class)) {
             mockedFiles
-                    .when(() -> Files.delete(mockPath))
+                    .when(() -> Files.delete(realPath))
                     .thenThrow(new IOException("Test IOException"));
-            assertInstanceOf(IOException.class, fileSystemManager.deleteFile(mockPath));
+            Object result = fileSystemManager.deleteFile(realPath);
+            assertInstanceOf(IOException.class, result);
             assertTrue(
-                    logWatcher
-                            .list
-                            .getLast()
-                            .getFormattedMessage()
-                            .contains("Failed to delete file"));
+                    logWatcher.list.stream()
+                            .anyMatch(event -> event.getFormattedMessage().contains("IO failure")),
+                    "Log message should contain 'IO failure'");
         }
     }
 }
