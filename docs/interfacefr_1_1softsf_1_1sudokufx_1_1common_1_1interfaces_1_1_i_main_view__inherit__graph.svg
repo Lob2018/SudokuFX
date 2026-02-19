@@ -127,17 +127,17 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
 <text text-anchor="start" x="14" y="-594.5" font-family="Helvetica,sans-Serif" font-size="10.00"> CRASHSCREEN_SIZE_RATIO</text>
 <text text-anchor="start" x="5.5" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="14" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
-<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
-<text text-anchor="start" x="5.5" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IFileSystem</text>
-<text text-anchor="start" x="14" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00"> I_FILE_SYSTEM</text>
+<text text-anchor="start" x="14" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IUserDataPurger</text>
+<text text-anchor="start" x="14" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00"> DATA_PURGER</text>
+<text text-anchor="start" x="5.5" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-550.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="14" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FADE_IN_IN_SECONDS</text>
+<text text-anchor="start" x="14" y="-526.5" font-family="Helvetica,sans-Serif" font-size="10.00">_AFTER_SPLASHSCREEN</text>
 <text text-anchor="start" x="5.5" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IOsFolder</text>
-<text text-anchor="start" x="14" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00"> I_OS_FOLDER_FACTORY</text>
-<text text-anchor="start" x="5.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="14" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="14" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="5.5" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="14" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final IOsFolder</text>
+<text text-anchor="start" x="14" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00"> OS_FOLDER_PROVIDER</text>
 <text text-anchor="start" x="5.5" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
 <text text-anchor="start" x="14" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00"> SVG_STROKE_DIVISOR</text>

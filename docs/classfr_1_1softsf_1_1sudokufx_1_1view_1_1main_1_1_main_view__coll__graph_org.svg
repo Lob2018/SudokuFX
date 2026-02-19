@@ -407,33 +407,35 @@
 <g id="Node000023" class="node">
 <title>Node23</title>
 <g id="a_Node000023"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html" target="_top" xlink:title="ViewModel responsible for displaying the help dialog.">
-<polygon fill="white" stroke="none" points="1972.38,-1850 1835.38,-1850 1835.38,-1634 1972.38,-1634 1972.38,-1850"/>
-<text text-anchor="start" x="1839.38" y="-1836.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="1869.75" y="-1824.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel</text>
-<text text-anchor="start" x="1842.12" y="-1808.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1851.88" y="-1808.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolder iOsFolder</text>
-<text text-anchor="start" x="1842.12" y="-1792.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1851.88" y="-1792.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="1851.88" y="-1780.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALERT_SIZE_RATIO</text>
-<text text-anchor="start" x="1840.62" y="-1764.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1851.88" y="-1764.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel(IOsFolder</text>
-<text text-anchor="start" x="1851.88" y="-1752.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolder, Coordinator</text>
-<text text-anchor="start" x="1851.88" y="-1740.5" font-family="Helvetica,sans-Serif" font-size="10.00"> coordinator)</text>
-<text text-anchor="start" x="1840.62" y="-1724.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1851.88" y="-1724.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showHelp()</text>
-<text text-anchor="start" x="1840.62" y="-1708.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="1851.88" y="-1708.5" font-family="Helvetica,sans-Serif" font-size="10.00">void displayAlert(MyAlert</text>
-<text text-anchor="start" x="1851.88" y="-1696.5" font-family="Helvetica,sans-Serif" font-size="10.00"> alert)</text>
-<text text-anchor="start" x="1842.12" y="-1680.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1851.88" y="-1680.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addLogFileButton</text>
-<text text-anchor="start" x="1851.88" y="-1668.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
-<text text-anchor="start" x="1842.12" y="-1652.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="1851.88" y="-1652.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addWebsiteButton</text>
-<text text-anchor="start" x="1851.88" y="-1640.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
-<polygon fill="#666666" stroke="#666666" points="1835.38,-1820 1835.38,-1820 1972.38,-1820 1972.38,-1820 1835.38,-1820"/>
-<polygon fill="#666666" stroke="#666666" points="1835.38,-1776 1835.38,-1776 1849.88,-1776 1849.88,-1776 1835.38,-1776"/>
-<polygon fill="#666666" stroke="#666666" points="1849.88,-1776 1849.88,-1776 1972.38,-1776 1972.38,-1776 1849.88,-1776"/>
-<polygon fill="none" stroke="#666666" points="1835.38,-1634 1835.38,-1850 1972.38,-1850 1972.38,-1634 1835.38,-1634"/>
+<polygon fill="white" stroke="none" points="1972.38,-1858 1835.38,-1858 1835.38,-1626 1972.38,-1626 1972.38,-1858"/>
+<text text-anchor="start" x="1839.38" y="-1844.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="1869.75" y="-1832.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel</text>
+<text text-anchor="start" x="1842.12" y="-1816.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1851.88" y="-1816.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolder iOsFolder</text>
+<text text-anchor="start" x="1842.12" y="-1800.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1851.88" y="-1800.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="1851.88" y="-1788.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALERT_SIZE_RATIO</text>
+<text text-anchor="start" x="1842.12" y="-1772.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1851.88" y="-1772.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="1840.62" y="-1756.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1851.88" y="-1756.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel(IOsFolder</text>
+<text text-anchor="start" x="1851.88" y="-1744.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolder, Coordinator</text>
+<text text-anchor="start" x="1851.88" y="-1732.5" font-family="Helvetica,sans-Serif" font-size="10.00"> coordinator)</text>
+<text text-anchor="start" x="1840.62" y="-1716.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="1851.88" y="-1716.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showHelp()</text>
+<text text-anchor="start" x="1840.62" y="-1700.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="1851.88" y="-1700.5" font-family="Helvetica,sans-Serif" font-size="10.00">void displayAlert(MyAlert</text>
+<text text-anchor="start" x="1851.88" y="-1688.5" font-family="Helvetica,sans-Serif" font-size="10.00"> alert)</text>
+<text text-anchor="start" x="1842.12" y="-1672.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1851.88" y="-1672.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addLogFileButton</text>
+<text text-anchor="start" x="1851.88" y="-1660.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
+<text text-anchor="start" x="1842.12" y="-1644.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="1851.88" y="-1644.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addWebsiteButton</text>
+<text text-anchor="start" x="1851.88" y="-1632.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
+<polygon fill="#666666" stroke="#666666" points="1835.38,-1828 1835.38,-1828 1972.38,-1828 1972.38,-1828 1835.38,-1828"/>
+<polygon fill="#666666" stroke="#666666" points="1835.38,-1768 1835.38,-1768 1849.88,-1768 1849.88,-1768 1835.38,-1768"/>
+<polygon fill="#666666" stroke="#666666" points="1849.88,-1768 1849.88,-1768 1972.38,-1768 1972.38,-1768 1849.88,-1768"/>
+<polygon fill="none" stroke="#666666" points="1835.38,-1626 1835.38,-1858 1972.38,-1858 1972.38,-1626 1835.38,-1626"/>
 </a>
 </g>
 </g>
@@ -441,8 +443,8 @@
 <g id="edge21_Node000023_Node000004" class="edge">
 <title>Node4&#45;&gt;Node23</title>
 <g id="a_edge21_Node000023_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1903.88,-3736.2C1903.88,-3235.25 1903.88,-2211.83 1903.88,-1862.76"/>
-<polygon fill="none" stroke="#63b8ff" points="1903.88,-1862.78 1899.88,-1856.78 1903.88,-1850.78 1907.88,-1856.78 1903.88,-1862.78"/>
+<path fill="none" stroke="#63b8ff" d="M1903.88,-3736.2C1903.88,-3239.09 1903.88,-2227.52 1903.88,-1870.92"/>
+<polygon fill="none" stroke="#63b8ff" points="1903.88,-1870.9 1899.88,-1864.9 1903.88,-1858.9 1907.88,-1864.9 1903.88,-1870.9"/>
 </a>
 </g>
 <text text-anchor="start" x="1906.88" y="-2780.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;coordinator</text>
@@ -1349,7 +1351,7 @@
 <g id="edge20_Node000001_Node000023" class="edge">
 <title>Node23&#45;&gt;Node1</title>
 <g id="a_edge20_Node000001_Node000023"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1894.63,-1634.17C1887.22,-1516.08 1883.29,-1321.01 1919.88,-1158 1920.61,-1154.73 1921.36,-1151.46 1922.13,-1148.19"/>
+<path fill="none" stroke="#63b8ff" d="M1894.15,-1626.27C1887.07,-1507.53 1884.09,-1317.43 1919.88,-1158 1920.61,-1154.73 1921.36,-1151.46 1922.13,-1148.19"/>
 <polygon fill="none" stroke="#63b8ff" points="1922.16,-1148.08 1919.68,-1141.31 1924.97,-1136.41 1927.45,-1143.19 1922.16,-1148.08"/>
 </a>
 </g>
@@ -2821,64 +2823,70 @@
 <g id="Node000053" class="node">
 <title>Node53</title>
 <g id="a_Node000053"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html" target="_top" xlink:title="Reactive container for firework animation logic.">
-<polygon fill="white" stroke="none" points="4628.12,-1988 4429.62,-1988 4429.62,-1496 4628.12,-1496 4628.12,-1988"/>
-<text text-anchor="start" x="4433.62" y="-1974.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.firework.</text>
-<text text-anchor="start" x="4510.12" y="-1962.5" font-family="Helvetica,sans-Serif" font-size="10.00">Firework</text>
-<text text-anchor="start" x="4440.5" y="-1946.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="4457.38" y="-1946.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAXIMUM_HUE</text>
+<polygon fill="white" stroke="none" points="4628.12,-2016 4429.62,-2016 4429.62,-1468 4628.12,-1468 4628.12,-2016"/>
+<text text-anchor="start" x="4433.62" y="-2002.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.firework.</text>
+<text text-anchor="start" x="4510.12" y="-1990.5" font-family="Helvetica,sans-Serif" font-size="10.00">Firework</text>
+<text text-anchor="start" x="4440.5" y="-1974.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="4457.38" y="-1974.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAXIMUM_HUE</text>
+<text text-anchor="start" x="4440.5" y="-1958.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="4457.38" y="-1958.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="4457.38" y="-1946.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MINIMUM_PARTICLE_RADIUS</text>
 <text text-anchor="start" x="4440.5" y="-1930.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="4457.38" y="-1930.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="4457.38" y="-1918.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MINIMUM_PARTICLE_RADIUS</text>
+<text text-anchor="start" x="4457.38" y="-1930.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MINIMUM</text>
+<text text-anchor="start" x="4457.38" y="-1918.5" font-family="Helvetica,sans-Serif" font-size="10.00">_PARTICLES</text>
 <text text-anchor="start" x="4440.5" y="-1902.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="4457.38" y="-1902.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MINIMUM</text>
-<text text-anchor="start" x="4457.38" y="-1890.5" font-family="Helvetica,sans-Serif" font-size="10.00">_PARTICLES</text>
+<text text-anchor="start" x="4457.38" y="-1902.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int PARTICLE</text>
+<text text-anchor="start" x="4457.38" y="-1890.5" font-family="Helvetica,sans-Serif" font-size="10.00">_COUNT_VARIANCE</text>
 <text text-anchor="start" x="4440.5" y="-1874.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="4457.38" y="-1874.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int PARTICLE</text>
-<text text-anchor="start" x="4457.38" y="-1862.5" font-family="Helvetica,sans-Serif" font-size="10.00">_COUNT_VARIANCE</text>
+<text text-anchor="start" x="4457.38" y="-1862.5" font-family="Helvetica,sans-Serif" font-size="10.00">_RADIUS_VARIANCE</text>
 <text text-anchor="start" x="4440.5" y="-1846.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="4457.38" y="-1846.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int PARTICLE</text>
-<text text-anchor="start" x="4457.38" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">_RADIUS_VARIANCE</text>
-<text text-anchor="start" x="4440.5" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="4457.38" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int SPEED</text>
-<text text-anchor="start" x="4457.38" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00">_VARIANCE</text>
-<text text-anchor="start" x="4442" y="-1790.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1790.5" font-family="Helvetica,sans-Serif" font-size="10.00">int countdown</text>
+<text text-anchor="start" x="4457.38" y="-1846.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int SPEED</text>
+<text text-anchor="start" x="4457.38" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">_VARIANCE</text>
+<text text-anchor="start" x="4442" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="4457.38" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">int countdown</text>
+<text text-anchor="start" x="4442" y="-1802.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="4457.38" y="-1802.5" font-family="Helvetica,sans-Serif" font-size="10.00">final PauseTransition</text>
+<text text-anchor="start" x="4457.38" y="-1790.5" font-family="Helvetica,sans-Serif" font-size="10.00"> delay</text>
 <text text-anchor="start" x="4442" y="-1774.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1774.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
-<text text-anchor="start" x="4457.38" y="-1762.5" font-family="Helvetica,sans-Serif" font-size="10.00"> firingProperty</text>
+<text text-anchor="start" x="4457.38" y="-1774.5" font-family="Helvetica,sans-Serif" font-size="10.00">final FadeTransition</text>
+<text text-anchor="start" x="4457.38" y="-1762.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fadeIn</text>
 <text text-anchor="start" x="4442" y="-1746.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1746.5" font-family="Helvetica,sans-Serif" font-size="10.00">final List&lt; FireworkParticle</text>
-<text text-anchor="start" x="4457.38" y="-1734.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; particles</text>
+<text text-anchor="start" x="4457.38" y="-1746.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
+<text text-anchor="start" x="4457.38" y="-1734.5" font-family="Helvetica,sans-Serif" font-size="10.00"> firingProperty</text>
 <text text-anchor="start" x="4442" y="-1718.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1718.5" font-family="Helvetica,sans-Serif" font-size="10.00">double spawnRatio</text>
-<text text-anchor="start" x="4442" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1702.5" font-family="Helvetica,sans-Serif" font-size="10.00">final AnimationTimer</text>
-<text text-anchor="start" x="4457.38" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> timer</text>
+<text text-anchor="start" x="4457.38" y="-1718.5" font-family="Helvetica,sans-Serif" font-size="10.00">final List&lt; FireworkParticle</text>
+<text text-anchor="start" x="4457.38" y="-1706.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; particles</text>
+<text text-anchor="start" x="4442" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="4457.38" y="-1690.5" font-family="Helvetica,sans-Serif" font-size="10.00">double spawnRatio</text>
 <text text-anchor="start" x="4442" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int DEFAULT</text>
-<text text-anchor="start" x="4457.38" y="-1662.5" font-family="Helvetica,sans-Serif" font-size="10.00">_COUNTDOWN</text>
+<text text-anchor="start" x="4457.38" y="-1674.5" font-family="Helvetica,sans-Serif" font-size="10.00">final AnimationTimer</text>
+<text text-anchor="start" x="4457.38" y="-1662.5" font-family="Helvetica,sans-Serif" font-size="10.00"> timer</text>
 <text text-anchor="start" x="4442" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="4457.38" y="-1634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> REFERENCE_SCREEN_WIDTH</text>
-<text text-anchor="start" x="4440.5" y="-1618.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="4457.38" y="-1618.5" font-family="Helvetica,sans-Serif" font-size="10.00">Firework()</text>
-<text text-anchor="start" x="4440.5" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="4457.38" y="-1602.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty firingProperty()</text>
-<text text-anchor="start" x="4442" y="-1586.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1586.5" font-family="Helvetica,sans-Serif" font-size="10.00">record FireworkContext</text>
-<text text-anchor="start" x="4457.38" y="-1574.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Firework firework, int</text>
-<text text-anchor="start" x="4457.38" y="-1562.5" font-family="Helvetica,sans-Serif" font-size="10.00"> width, int height, double ratio)</text>
-<text text-anchor="start" x="4442" y="-1546.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1546.5" font-family="Helvetica,sans-Serif" font-size="10.00">FireworkContext getFirework</text>
-<text text-anchor="start" x="4457.38" y="-1534.5" font-family="Helvetica,sans-Serif" font-size="10.00">Context()</text>
+<text text-anchor="start" x="4457.38" y="-1646.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int DEFAULT</text>
+<text text-anchor="start" x="4457.38" y="-1634.5" font-family="Helvetica,sans-Serif" font-size="10.00">_COUNTDOWN</text>
+<text text-anchor="start" x="4442" y="-1618.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="4457.38" y="-1618.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="4457.38" y="-1606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> REFERENCE_SCREEN_WIDTH</text>
+<text text-anchor="start" x="4440.5" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="4457.38" y="-1590.5" font-family="Helvetica,sans-Serif" font-size="10.00">Firework()</text>
+<text text-anchor="start" x="4440.5" y="-1574.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="4457.38" y="-1574.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty firingProperty()</text>
+<text text-anchor="start" x="4442" y="-1558.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="4457.38" y="-1558.5" font-family="Helvetica,sans-Serif" font-size="10.00">record FireworkContext</text>
+<text text-anchor="start" x="4457.38" y="-1546.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Firework firework, int</text>
+<text text-anchor="start" x="4457.38" y="-1534.5" font-family="Helvetica,sans-Serif" font-size="10.00"> width, int height, double ratio)</text>
 <text text-anchor="start" x="4442" y="-1518.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1518.5" font-family="Helvetica,sans-Serif" font-size="10.00">void ignite()</text>
-<text text-anchor="start" x="4442" y="-1502.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="4457.38" y="-1502.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateParticles()</text>
-<polygon fill="#666666" stroke="#666666" points="4429.62,-1958 4429.62,-1958 4628.12,-1958 4628.12,-1958 4429.62,-1958"/>
-<polygon fill="#666666" stroke="#666666" points="4429.62,-1630 4429.62,-1630 4455.38,-1630 4455.38,-1630 4429.62,-1630"/>
-<polygon fill="#666666" stroke="#666666" points="4455.38,-1630 4455.38,-1630 4628.12,-1630 4628.12,-1630 4455.38,-1630"/>
-<polygon fill="none" stroke="#666666" points="4429.62,-1496 4429.62,-1988 4628.12,-1988 4628.12,-1496 4429.62,-1496"/>
+<text text-anchor="start" x="4457.38" y="-1518.5" font-family="Helvetica,sans-Serif" font-size="10.00">FireworkContext getFirework</text>
+<text text-anchor="start" x="4457.38" y="-1506.5" font-family="Helvetica,sans-Serif" font-size="10.00">Context()</text>
+<text text-anchor="start" x="4442" y="-1490.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="4457.38" y="-1490.5" font-family="Helvetica,sans-Serif" font-size="10.00">void ignite()</text>
+<text text-anchor="start" x="4442" y="-1474.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="4457.38" y="-1474.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updateParticles()</text>
+<polygon fill="#666666" stroke="#666666" points="4429.62,-1986 4429.62,-1986 4628.12,-1986 4628.12,-1986 4429.62,-1986"/>
+<polygon fill="#666666" stroke="#666666" points="4429.62,-1602 4429.62,-1602 4455.38,-1602 4455.38,-1602 4429.62,-1602"/>
+<polygon fill="#666666" stroke="#666666" points="4455.38,-1602 4455.38,-1602 4628.12,-1602 4628.12,-1602 4455.38,-1602"/>
+<polygon fill="none" stroke="#666666" points="4429.62,-1468 4429.62,-2016 4628.12,-2016 4628.12,-1468 4429.62,-1468"/>
 </a>
 </g>
 </g>
@@ -2886,7 +2894,7 @@
 <g id="edge68_Node000001_Node000053" class="edge">
 <title>Node53&#45;&gt;Node1</title>
 <g id="a_edge68_Node000001_Node000053"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M4521.62,-1496.15C4507.98,-1407.96 4479.17,-1312.84 4420.88,-1242 4166.97,-933.48 2980.09,-703.07 2443.04,-612.77"/>
+<path fill="none" stroke="#63b8ff" d="M4516.8,-1468.16C4501.6,-1388.24 4473.05,-1305.39 4420.88,-1242 4166.97,-933.48 2980.09,-703.07 2443.04,-612.77"/>
 <polygon fill="none" stroke="#63b8ff" points="2443.2,-612.8 2436.62,-615.75 2431.36,-610.81 2437.94,-607.86 2443.2,-612.8"/>
 </a>
 </g>
@@ -2910,7 +2918,7 @@
 <g id="edge69_Node000053_Node000054" class="edge">
 <title>Node54&#45;&gt;Node53</title>
 <g id="a_edge69_Node000053_Node000054"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M4528.88,-3982.7C4528.88,-3755.42 4528.88,-2520.53 4528.88,-1987.82"/>
+<path fill="none" stroke="#63b8ff" d="M4528.88,-3982.91C4528.88,-3760.07 4528.88,-2562.76 4528.88,-2015.83"/>
 <polygon fill="none" stroke="#63b8ff" points="4525.38,-3982.7 4528.88,-3992.7 4532.38,-3982.7 4525.38,-3982.7"/>
 </a>
 </g>

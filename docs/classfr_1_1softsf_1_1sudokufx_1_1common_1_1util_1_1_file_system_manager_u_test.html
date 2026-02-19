@@ -115,8 +115,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
-<tr class="memitem:acf8b1d76c763621a0d4c701e765fabc4" id="r_acf8b1d76c763621a0d4c701e765fabc4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#acf8b1d76c763621a0d4c701e765fabc4">givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenDeletionFails</a> ()</td></tr>
-<tr class="memitem:aa78f4df104a4f42b69e9c01bbb6310ef" id="r_aa78f4df104a4f42b69e9c01bbb6310ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa78f4df104a4f42b69e9c01bbb6310ef">givenIOException_whenDeleteFile_thenExceptionReturnedAndLogged</a> ()</td></tr>
+<tr class="memitem:aa4d5ad0cf32c45b8c28d16b4b920467d" id="r_aa4d5ad0cf32c45b8c28d16b4b920467d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa4d5ad0cf32c45b8c28d16b4b920467d">givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenIllegalStateExceptionThrown</a> ()</td></tr>
+<tr class="memitem:aa78f4df104a4f42b69e9c01bbb6310ef" id="r_aa78f4df104a4f42b69e9c01bbb6310ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa78f4df104a4f42b69e9c01bbb6310ef">givenIOException_whenDeleteFile_thenExceptionReturnedAndLogged</a> ()  throws IOException </td></tr>
 <tr class="memitem:a018b48f0ee7e805d5ae225368c9dcd1c" id="r_a018b48f0ee7e805d5ae225368c9dcd1c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a018b48f0ee7e805d5ae225368c9dcd1c">givenNullPath_whenDeleteDataFolderRecursively_thenIllegalArgumentExceptionThrown</a> ()</td></tr>
 <tr class="memitem:a54cbf9c9aa3a0d5bb1e14d44d9f7924e" id="r_a54cbf9c9aa3a0d5bb1e14d44d9f7924e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a54cbf9c9aa3a0d5bb1e14d44d9f7924e">givenNullPath_whenDeleteFile_thenIllegalArgumentExceptionThrown</a> ()</td></tr>
 <tr class="memitem:a955b7e6c928903b49037a35575b1c35d" id="r_a955b7e6c928903b49037a35575b1c35d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a955b7e6c928903b49037a35575b1c35d">givenNullPointerException_whenFilesWalk_thenErrorHandled</a> ()</td></tr>
@@ -131,14 +131,14 @@ Package Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a26bf32efab390b2c359ee04f17333ea9" id="r_a26bf32efab390b2c359ee04f17333ea9"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html">FileSystemManager</a>&#160;</td><td class="memItemRight"><a class="el" href="#a26bf32efab390b2c359ee04f17333ea9">fileSystemManager</a> = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html">FileSystemManager</a>()</td></tr>
+<tr class="memitem:aeba89bc58b81d73692ef4f5accf316da" id="r_aeba89bc58b81d73692ef4f5accf316da"><td class="memItemLeft">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html">LocalUserDataPurger</a>&#160;</td><td class="memItemRight"><a class="el" href="#aeba89bc58b81d73692ef4f5accf316da">fileSystemManager</a> = new <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html">LocalUserDataPurger</a>()</td></tr>
 <tr class="memitem:a80fa97ceea5b2decf5063326203d6700" id="r_a80fa97ceea5b2decf5063326203d6700"><td class="memItemLeft">ListAppender&lt; ILoggingEvent &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a80fa97ceea5b2decf5063326203d6700">logWatcher</a></td></tr>
 <tr class="memitem:afd6182720bce0252b557f3e9e6e8c325" id="r_afd6182720bce0252b557f3e9e6e8c325"><td class="memItemLeft">Path&#160;</td><td class="memItemRight"><a class="el" href="#afd6182720bce0252b557f3e9e6e8c325">path1</a></td></tr>
 <tr class="memitem:a68aba38d9d9ba466d4cb2f82e6156e13" id="r_a68aba38d9d9ba466d4cb2f82e6156e13"><td class="memItemLeft">final String&#160;</td><td class="memItemRight"><a class="el" href="#a68aba38d9d9ba466d4cb2f82e6156e13">suffix</a> = DATA_FOLDER.getPath()</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="acf8b1d76c763621a0d4c701e765fabc4" name="acf8b1d76c763621a0d4c701e765fabc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf8b1d76c763621a0d4c701e765fabc4">&#9670;&#160;</a></span>givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenDeletionFails()</h2>
+<a id="aa4d5ad0cf32c45b8c28d16b4b920467d" name="aa4d5ad0cf32c45b8c28d16b4b920467d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4d5ad0cf32c45b8c28d16b4b920467d">&#9670;&#160;</a></span>givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenIllegalStateExceptionThrown()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,7 +147,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.common.util.FileSystemManagerUTest.givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenDeletionFails </td>
+          <td class="memname">void fr.softsf.sudokufx.common.util.FileSystemManagerUTest.givenInvalidDirectoryPath_whenDeleteDataFolderRecursively_thenIllegalStateExceptionThrown </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -175,7 +175,7 @@ Private Attributes</h2></td></tr>
           <td class="memname">void fr.softsf.sudokufx.common.util.FileSystemManagerUTest.givenIOException_whenDeleteFile_thenExceptionReturnedAndLogged </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
+          <td> throws IOException</td>
         </tr>
       </table>
   </td>
@@ -369,8 +369,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a26bf32efab390b2c359ee04f17333ea9" name="a26bf32efab390b2c359ee04f17333ea9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26bf32efab390b2c359ee04f17333ea9">&#9670;&#160;</a></span>fileSystemManager</h2>
+<a id="aeba89bc58b81d73692ef4f5accf316da" name="aeba89bc58b81d73692ef4f5accf316da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeba89bc58b81d73692ef4f5accf316da">&#9670;&#160;</a></span>fileSystemManager</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -379,7 +379,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html">FileSystemManager</a> fr.softsf.sudokufx.common.util.FileSystemManagerUTest.fileSystemManager = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html">FileSystemManager</a>()</td>
+          <td class="memname">final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html">LocalUserDataPurger</a> fr.softsf.sudokufx.common.util.FileSystemManagerUTest.fileSystemManager = new <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html">LocalUserDataPurger</a>()</td>
         </tr>
       </table>
   </td>

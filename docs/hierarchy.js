@@ -110,9 +110,6 @@ var hierarchy =
     [ "IEncryptionService", null, [
       [ "fr.softsf.sudokufx.config.database.SecretKeyEncryptionServiceAESGCM", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", null ]
     ] ],
-    [ "IFileSystem", null, [
-      [ "fr.softsf.sudokufx.common.util.FileSystemManager", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html", null ]
-    ] ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IGameLevelMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html", null ],
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IGameMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_mapper.html", null ],
     [ "IGridConverter", null, [
@@ -139,6 +136,9 @@ var hierarchy =
     [ "fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", null ],
     [ "fr.softsf.sudokufx.common.interfaces.ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html", [
       [ "fr.softsf.sudokufx.view.SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", null ]
+    ] ],
+    [ "IUserDataPurger", null, [
+      [ "fr.softsf.sudokufx.common.util.LocalUserDataPurger", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html", null ]
     ] ],
     [ "fr.softsf.sudokufx.common.exception.JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html", null ],
     [ "JpaRepository", null, [
@@ -204,6 +204,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.config.os.OsInitializedFolders", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html", null ],
     [ "fr.softsf.sudokufx.common.enums.OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.enums.OsNameUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html", null ],
+    [ "fr.softsf.sudokufx.common.util.PathValidator", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_path_validator.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlayEffectTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_effect_tests.html", null ],
     [ "fr.softsf.sudokufx.model.Player", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html", null ],
     [ "fr.softsf.sudokufx.model.Player.PlayerBuilder", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_1_1_player_builder.html", null ],

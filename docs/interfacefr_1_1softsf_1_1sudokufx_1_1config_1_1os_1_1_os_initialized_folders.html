@@ -106,9 +106,6 @@ $(function() {
   <div class="headertitle"><div class="title">fr.softsf.sudokufx.config.os.OsInitializedFolders Interface Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Interface defining methods to access OS-specific folder paths.
- <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for fr.softsf.sudokufx.config.os.OsInitializedFolders:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
@@ -119,12 +116,15 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae58290840aa93adb5840c618da541591" id="r_ae58290840aa93adb5840c618da541591"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#ae58290840aa93adb5840c618da541591">getOsDataFolderPath</a> ()</td></tr>
-<tr class="memdesc:ae58290840aa93adb5840c618da541591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the path to the OS-specific data folder.  <br /></td></tr>
+<tr class="memdesc:ae58290840aa93adb5840c618da541591"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the absolute path to the application's data directory.  <br /></td></tr>
 <tr class="memitem:a4cc757ae9fc93eed2eb4dadadee9eaff" id="r_a4cc757ae9fc93eed2eb4dadadee9eaff"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a4cc757ae9fc93eed2eb4dadadee9eaff">getOsLogsFolderPath</a> ()</td></tr>
-<tr class="memdesc:a4cc757ae9fc93eed2eb4dadadee9eaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the path to the OS-specific logs folder.  <br /></td></tr>
+<tr class="memdesc:a4cc757ae9fc93eed2eb4dadadee9eaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the absolute path to the application's logs directory.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface defining methods to access OS-specific folder paths. </p>
+<div class="textblock"><ul>
+<li>Defines the contract for accessing operating system specific storage paths. *</li>
+</ul>
+<p>Implementations must provide standardized paths for application data and logging based on the host environment. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ae58290840aa93adb5840c618da541591" name="ae58290840aa93adb5840c618da541591"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae58290840aa93adb5840c618da541591">&#9670;&#160;</a></span>getOsDataFolderPath()</h2>
@@ -141,8 +141,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the path to the OS-specific data folder. </p>
-<dl class="section return"><dt>Returns</dt><dd>A String representing the path to the data folder </dd></dl>
+<p>Returns the absolute path to the application's data directory. </p>
+<dl class="section return"><dt>Returns</dt><dd>The data folder path as a String. </dd></dl>
 
 </div>
 </div>
@@ -161,8 +161,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves the path to the OS-specific logs folder. </p>
-<dl class="section return"><dt>Returns</dt><dd>A String representing the path to the logs folder </dd></dl>
+<p>Returns the absolute path to the application's logs directory. </p>
+<dl class="section return"><dt>Returns</dt><dd>The logs folder path as a String. </dd></dl>
 
 </div>
 </div>

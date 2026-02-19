@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.view.component.firework.Firework" name="fr.softsf.sudokufx.view.component.firework.Firework">
-<area shape="rect" id="Node000001" title="Reactive container for firework animation logic." alt="" coords="5,123,270,779"/>
+<area shape="rect" id="Node000001" title="Reactive container for firework animation logic." alt="" coords="5,123,270,853"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="115,5,160,75"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,89,140,123,135,123,135,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,90,140,123,135,123,135,90"/>
 </map>

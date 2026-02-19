@@ -1,14 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aade3fbed167a40c3b5ad30c792d07539":[1,0,0,0,0,2,0,0,4],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aade3fbed167a40c3b5ad30c792d07539":[2,0,0,0,0,2,0,0,4],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ad76a570bcd95346dd5504b203b8a9f8b":[1,0,0,0,0,2,0,0,6],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ad76a570bcd95346dd5504b203b8a9f8b":[2,0,0,0,0,2,0,0,6],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ae3cc0c04426aaa4718bc3cef02e32154":[1,0,0,0,0,2,0,0,5],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ae3cc0c04426aaa4718bc3cef02e32154":[2,0,0,0,0,2,0,0,5],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html":[1,0,0,0,0,2,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html":[2,0,0,0,0,2,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a0a83e5275d5bb4d8c5aaa3d265bcf102":[1,0,0,0,0,2,0,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a0a83e5275d5bb4d8c5aaa3d265bcf102":[2,0,0,0,0,2,0,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a0e80e92a2e9fce8af0c83f6d171f90fe":[1,0,0,0,0,2,0,1,5],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html#a0e80e92a2e9fce8af0c83f6d171f90fe":[2,0,0,0,0,2,0,1,5],
@@ -249,5 +240,14 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0ab90848c9715b8f02bfdaf999d8e212":[1,0,0,0,0,4,0,20],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0ab90848c9715b8f02bfdaf999d8e212":[2,0,0,0,0,3,0,20],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838":[1,0,0,0,0,4,0,3],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838":[2,0,0,0,0,3,0,3]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838":[2,0,0,0,0,3,0,3],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1a6fc943d74a5ff7ff96081c78206f1d":[1,0,0,0,0,4,0,10],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1a6fc943d74a5ff7ff96081c78206f1d":[2,0,0,0,0,3,0,10],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1fa26095322324f412ff22213e27b14f":[1,0,0,0,0,4,0,13],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1fa26095322324f412ff22213e27b14f":[2,0,0,0,0,3,0,13],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a232242cd4ddeae26b3c8e116fd53887b":[1,0,0,0,0,4,0,18],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a232242cd4ddeae26b3c8e116fd53887b":[2,0,0,0,0,3,0,18],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a24de0f7edd5c866f16a25c667b6e37c1":[1,0,0,0,0,4,0,34],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a24de0f7edd5c866f16a25c667b6e37c1":[2,0,0,0,0,3,0,34],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a3283f92b4a646c37b0b4c4decf4747e2":[1,0,0,0,0,4,0,29]
 };

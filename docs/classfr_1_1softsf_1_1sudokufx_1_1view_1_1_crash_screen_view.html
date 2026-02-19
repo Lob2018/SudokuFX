@@ -172,16 +172,16 @@ Private Attributes</h2></td></tr>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a362f4e64a539c303fe9e8afbe86aa9a7" id="r_a362f4e64a539c303fe9e8afbe86aa9a7"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#a362f4e64a539c303fe9e8afbe86aa9a7">CRASHSCREEN_FONT_RATIO</a> = 0.02</td></tr>
 <tr class="memitem:a9734099f3b19ee83a9f3ccfd51a56239" id="r_a9734099f3b19ee83a9f3ccfd51a56239"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#a9734099f3b19ee83a9f3ccfd51a56239">CRASHSCREEN_SIZE_RATIO</a> = 0.7</td></tr>
+<tr class="memitem:a4fbe39a61341e00fabc5007def75d56a" id="r_a4fbe39a61341e00fabc5007def75d56a"><td class="memItemLeft">static final IUserDataPurger&#160;</td><td class="memItemRight"><a class="el" href="#a4fbe39a61341e00fabc5007def75d56a">DATA_PURGER</a> = new <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html">LocalUserDataPurger</a>()</td></tr>
 <tr class="memitem:a9abd8cec04433b385cf595d25df8e01c" id="r_a9abd8cec04433b385cf595d25df8e01c"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#a9abd8cec04433b385cf595d25df8e01c">FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN</a> = 0.5</td></tr>
-<tr class="memitem:a40f2448e55d8941436854a6a8481e85c" id="r_a40f2448e55d8941436854a6a8481e85c"><td class="memItemLeft">static final IFileSystem&#160;</td><td class="memItemRight"><a class="el" href="#a40f2448e55d8941436854a6a8481e85c">I_FILE_SYSTEM</a> = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html">FileSystemManager</a>()</td></tr>
-<tr class="memitem:aa2c7afc8c929fd52d91a5534e8639e13" id="r_aa2c7afc8c929fd52d91a5534e8639e13"><td class="memItemLeft">static final IOsFolder&#160;</td><td class="memItemRight"><a class="el" href="#aa2c7afc8c929fd52d91a5534e8639e13">I_OS_FOLDER_FACTORY</a> = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html">OsFoldersConfig</a>().iOsFolderFactory()</td></tr>
 <tr class="memitem:aefcbc1edb1959f06721ea31a15c7e95c" id="r_aefcbc1edb1959f06721ea31a15c7e95c"><td class="memItemLeft">static final Logger&#160;</td><td class="memItemRight"><a class="el" href="#aefcbc1edb1959f06721ea31a15c7e95c">LOG</a> = LoggerFactory.getLogger(CrashScreenView.class)</td></tr>
+<tr class="memitem:af18ae3dcd3a79e0d1cdb519f2d3174ab" id="r_af18ae3dcd3a79e0d1cdb519f2d3174ab"><td class="memItemLeft">static final IOsFolder&#160;</td><td class="memItemRight"><a class="el" href="#af18ae3dcd3a79e0d1cdb519f2d3174ab">OS_FOLDER_PROVIDER</a> = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html">OsFoldersConfig</a>().iOsFolderFactory()</td></tr>
 <tr class="memitem:ac9448e4ebd346fc8d96b9a43aebde679" id="r_ac9448e4ebd346fc8d96b9a43aebde679"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#ac9448e4ebd346fc8d96b9a43aebde679">SVG_STROKE_DIVISOR</a> = 17.0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>View class for the crash screen without business logic. </p>
 <p>This class is responsible for displaying and managing the crash screen UI.</p>
-<p>Line="200" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml). </p>
+<p>Line="217" is excluded from Checkstyle's LineLength check (see checkstyle-suppressions.xml). </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a06bf010806175e6f960b1ee805a2eb3d" name="a06bf010806175e6f960b1ee805a2eb3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a06bf010806175e6f960b1ee805a2eb3d">&#9670;&#160;</a></span>closeButtonClick()</h2>
@@ -436,7 +436,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Handles the reset button click event. </p>
-<p>Attempts to delete the application data directory and then exits the application. </p>
+<p>Validates the path before attempting recursive deletion of the application data directory. </p>
 <div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
@@ -837,6 +837,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4fbe39a61341e00fabc5007def75d56a" name="a4fbe39a61341e00fabc5007def75d56a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fbe39a61341e00fabc5007def75d56a">&#9670;&#160;</a></span>DATA_PURGER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final IUserDataPurger fr.softsf.sudokufx.view.CrashScreenView.DATA_PURGER = new <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html">LocalUserDataPurger</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeafb2651c347d16a52b08b48563f8476" name="aeafb2651c347d16a52b08b48563f8476"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeafb2651c347d16a52b08b48563f8476">&#9670;&#160;</a></span>dropShadow</h2>
 
@@ -881,50 +903,6 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a40f2448e55d8941436854a6a8481e85c" name="a40f2448e55d8941436854a6a8481e85c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40f2448e55d8941436854a6a8481e85c">&#9670;&#160;</a></span>I_FILE_SYSTEM</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final IFileSystem fr.softsf.sudokufx.view.CrashScreenView.I_FILE_SYSTEM = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html">FileSystemManager</a>()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa2c7afc8c929fd52d91a5534e8639e13" name="aa2c7afc8c929fd52d91a5534e8639e13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa2c7afc8c929fd52d91a5534e8639e13">&#9670;&#160;</a></span>I_OS_FOLDER_FACTORY</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final IOsFolder fr.softsf.sudokufx.view.CrashScreenView.I_OS_FOLDER_FACTORY = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html">OsFoldersConfig</a>().iOsFolderFactory()</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a49c11cdc15fbf969de8ca00ec9817ead" name="a49c11cdc15fbf969de8ca00ec9817ead"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49c11cdc15fbf969de8ca00ec9817ead">&#9670;&#160;</a></span>iSplashScreenView</h2>
 
@@ -958,6 +936,28 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">final Logger fr.softsf.sudokufx.view.CrashScreenView.LOG = LoggerFactory.getLogger(CrashScreenView.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af18ae3dcd3a79e0d1cdb519f2d3174ab" name="af18ae3dcd3a79e0d1cdb519f2d3174ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af18ae3dcd3a79e0d1cdb519f2d3174ab">&#9670;&#160;</a></span>OS_FOLDER_PROVIDER</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final IOsFolder fr.softsf.sudokufx.view.CrashScreenView.OS_FOLDER_PROVIDER = new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html">OsFoldersConfig</a>().iOsFolderFactory()</td>
         </tr>
       </table>
   </td>

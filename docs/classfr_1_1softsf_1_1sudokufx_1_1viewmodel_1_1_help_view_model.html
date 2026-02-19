@@ -131,7 +131,7 @@ Package Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab201c3505f08294cb1ba35e874d72909" id="r_ab201c3505f08294cb1ba35e874d72909"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab201c3505f08294cb1ba35e874d72909">addLogFileButton</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html">MyAlert</a> informationAlert)</td></tr>
-<tr class="memdesc:ab201c3505f08294cb1ba35e874d72909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an "Open log file" button to the given alert.  <br /></td></tr>
+<tr class="memdesc:ab201c3505f08294cb1ba35e874d72909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an "Open log file" button to the given alert if the log file exists.  <br /></td></tr>
 <tr class="memitem:ae423927b79fe021850535dc440baa4ef" id="r_ae423927b79fe021850535dc440baa4ef"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae423927b79fe021850535dc440baa4ef">addWebsiteButton</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html">MyAlert</a> informationAlert)</td></tr>
 <tr class="memdesc:ae423927b79fe021850535dc440baa4ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a "Visit my website" button to the given alert.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -143,6 +143,7 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:aa814377d4cbbf3d548d8a88689a77c62" id="r_aa814377d4cbbf3d548d8a88689a77c62"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#aa814377d4cbbf3d548d8a88689a77c62">ALERT_SIZE_RATIO</a> = 0.6</td></tr>
+<tr class="memitem:ac7c986346cc7cedb0e351889167a70c5" id="r_ac7c986346cc7cedb0e351889167a70c5"><td class="memItemLeft">static final Logger&#160;</td><td class="memItemRight"><a class="el" href="#ac7c986346cc7cedb0e351889167a70c5">LOG</a> = LoggerFactory.getLogger(HelpViewModel.class)</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ViewModel responsible for displaying the help dialog. </p>
@@ -208,8 +209,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adds an "Open log file" button to the given alert. </p>
-<p>The button is aligned to the left and opens the system log file when clicked. The file path is resolved via <code class="JavaDocCode">iOsFolder.getOsLogsFolderPath()</code> and validated beforehand.</p>
+<p>Adds an "Open log file" button to the given alert if the log file exists. </p>
+<p>The button is aligned to the left and opens the system log file when clicked. If the path is invalid or the file is missing, no button is added.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">informationAlert</td><td>the alert to which the log file button will be added; must not be null </td></tr>
@@ -218,8 +219,7 @@ Static Private Attributes</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">informationAlert</code> is null or if the resolved file is null </td></tr>
-    <tr><td class="paramname">IllegalArgumentException</td><td>if the resolved path is blank </td></tr>
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">informationAlert</code> is null </td></tr>
   </table>
   </dd>
 </dl>
@@ -392,6 +392,28 @@ Static Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7c986346cc7cedb0e351889167a70c5" name="ac7c986346cc7cedb0e351889167a70c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c986346cc7cedb0e351889167a70c5">&#9670;&#160;</a></span>LOG</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Logger fr.softsf.sudokufx.viewmodel.HelpViewModel.LOG = LoggerFactory.getLogger(HelpViewModel.class)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

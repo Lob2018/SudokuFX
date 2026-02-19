@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.HelpViewModel.showHelp" name="fr.softsf.sudokufx.viewmodel.HelpViewModel.showHelp">
 <area shape="rect" id="Node000001" title="Shows the help dialog with application and system information." alt="" coords="5,72,199,115"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ab201c3505f08294cb1ba35e874d72909" title="Adds an &quot;Open log file&quot; button to the given alert." alt="" coords="249,5,466,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ab201c3505f08294cb1ba35e874d72909" title="Adds an &quot;Open log file&quot; button to the given alert if the log file exists." alt="" coords="249,5,466,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,69,258,50,259,55,187,74"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ae423927b79fe021850535dc440baa4ef" title="Adds a &quot;Visit my website&quot; button to the given alert." alt="" coords="247,72,469,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="199,91,231,91,231,96,199,96"/>

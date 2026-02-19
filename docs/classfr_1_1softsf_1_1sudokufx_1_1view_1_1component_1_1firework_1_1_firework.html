@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:ae902222347b7179fc0e78a3b23a5cf5e" id="r_ae902222347b7179fc0e78a3b23a5cf5e"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#ae902222347b7179fc0e78a3b23a5cf5e">MAXIMUM_HUE</a> = 360</td></tr>
 <tr class="memitem:a7e5ceb66418318f1082b19c90a7d24d9" id="r_a7e5ceb66418318f1082b19c90a7d24d9"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#a7e5ceb66418318f1082b19c90a7d24d9">MINIMUM_PARTICLE_RADIUS</a> = 0.2</td></tr>
-<tr class="memitem:a1baf5e70d85dee4706ca0fe0f92b0dd7" id="r_a1baf5e70d85dee4706ca0fe0f92b0dd7"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a1baf5e70d85dee4706ca0fe0f92b0dd7">MINIMUM_PARTICLES</a> = 15</td></tr>
-<tr class="memitem:a58b87a389e8024cccbb9a139946e706d" id="r_a58b87a389e8024cccbb9a139946e706d"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a58b87a389e8024cccbb9a139946e706d">PARTICLE_COUNT_VARIANCE</a> = 20</td></tr>
+<tr class="memitem:a1baf5e70d85dee4706ca0fe0f92b0dd7" id="r_a1baf5e70d85dee4706ca0fe0f92b0dd7"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a1baf5e70d85dee4706ca0fe0f92b0dd7">MINIMUM_PARTICLES</a> = 8</td></tr>
+<tr class="memitem:a58b87a389e8024cccbb9a139946e706d" id="r_a58b87a389e8024cccbb9a139946e706d"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a58b87a389e8024cccbb9a139946e706d">PARTICLE_COUNT_VARIANCE</a> = 10</td></tr>
 <tr class="memitem:a923cd64cf3402003bbf2981219e6fdff" id="r_a923cd64cf3402003bbf2981219e6fdff"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a923cd64cf3402003bbf2981219e6fdff">PARTICLE_RADIUS_VARIANCE</a> = 5</td></tr>
 <tr class="memitem:a67892d3a8a6a877eee524393e1233820" id="r_a67892d3a8a6a877eee524393e1233820"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a67892d3a8a6a877eee524393e1233820">SPEED_VARIANCE</a> = 4</td></tr>
 </table><table class="memberdecls">
@@ -152,6 +152,8 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a610a00e46722107ba62ea9360238fad8" id="r_a610a00e46722107ba62ea9360238fad8"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a610a00e46722107ba62ea9360238fad8">countdown</a> = <a class="el" href="#aa4052c0cc8f76fe23fd176a56aa8841c">DEFAULT_COUNTDOWN</a> * 2</td></tr>
+<tr class="memitem:ad80ad9a3a5e5a869a1a4928969221b6e" id="r_ad80ad9a3a5e5a869a1a4928969221b6e"><td class="memItemLeft">final PauseTransition&#160;</td><td class="memItemRight"><a class="el" href="#ad80ad9a3a5e5a869a1a4928969221b6e">delay</a> = new PauseTransition(Duration.seconds(1))</td></tr>
+<tr class="memitem:a61620074efb6445cb51a5c79efd1baf1" id="r_a61620074efb6445cb51a5c79efd1baf1"><td class="memItemLeft">final FadeTransition&#160;</td><td class="memItemRight"><a class="el" href="#a61620074efb6445cb51a5c79efd1baf1">fadeIn</a> = new FadeTransition(Duration.seconds(1), this)</td></tr>
 <tr class="memitem:a8e376fa6c20da2cd1d416b7b19241bf2" id="r_a8e376fa6c20da2cd1d416b7b19241bf2"><td class="memItemLeft">final BooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#a8e376fa6c20da2cd1d416b7b19241bf2">firingProperty</a></td></tr>
 <tr class="memdesc:a8e376fa6c20da2cd1d416b7b19241bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Managed property handling the animation lifecycle.  <br /></td></tr>
 <tr class="memitem:a3ec836b34e0c87b85a84ca094c0b1f29" id="r_a3ec836b34e0c87b85a84ca094c0b1f29"><td class="memItemLeft">final List&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html">FireworkParticle</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3ec836b34e0c87b85a84ca094c0b1f29">particles</a> = new ArrayList&lt;&gt;()</td></tr>
@@ -160,8 +162,8 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:aa4052c0cc8f76fe23fd176a56aa8841c" id="r_aa4052c0cc8f76fe23fd176a56aa8841c"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#aa4052c0cc8f76fe23fd176a56aa8841c">DEFAULT_COUNTDOWN</a> = 1</td></tr>
-<tr class="memitem:af70d4e9b6fb1079a082c743e99ef03e0" id="r_af70d4e9b6fb1079a082c743e99ef03e0"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#af70d4e9b6fb1079a082c743e99ef03e0">REFERENCE_SCREEN_WIDTH</a> = 1536.0</td></tr>
+<tr class="memitem:aa4052c0cc8f76fe23fd176a56aa8841c" id="r_aa4052c0cc8f76fe23fd176a56aa8841c"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#aa4052c0cc8f76fe23fd176a56aa8841c">DEFAULT_COUNTDOWN</a> = 4</td></tr>
+<tr class="memitem:af70d4e9b6fb1079a082c743e99ef03e0" id="r_af70d4e9b6fb1079a082c743e99ef03e0"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#af70d4e9b6fb1079a082c743e99ef03e0">REFERENCE_SCREEN_WIDTH</a> = 1000</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Reactive container for firework animation logic. </p>
@@ -187,7 +189,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_ac6cc6c251a94b02e939acfbce3009d5a_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_ac6cc6c251a94b02e939acfbce3009d5a_cgraph.svg" width="100%" height="481"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -244,7 +246,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_adc1e8659376adaf0c3bdc4a8742cd87c_cgraph.svg" width="100%" height="410"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_adc1e8659376adaf0c3bdc4a8742cd87c_cgraph.svg" width="100%" height="435"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -298,7 +300,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-4-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_a238e975882b916d63349843dd54fbd33_cgraph.svg" width="100%" height="428"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_a238e975882b916d63349843dd54fbd33_cgraph.svg" width="100%" height="446"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -331,7 +333,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_a497b0b27502d30d1844cd54e4dd6fcf0_cgraph.svg" width="100%" height="424"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_a497b0b27502d30d1844cd54e4dd6fcf0_cgraph.svg" width="100%" height="442"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -364,7 +366,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_ab989e17fd615336c73186f7f80b6c976_cgraph.svg" width="100%" height="452"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_ab989e17fd615336c73186f7f80b6c976_cgraph.svg" width="100%" height="455"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -402,12 +404,56 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.view.component.firework.Firework.DEFAULT_COUNTDOWN = 1</td>
+          <td class="memname">final int fr.softsf.sudokufx.view.component.firework.Firework.DEFAULT_COUNTDOWN = 4</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad80ad9a3a5e5a869a1a4928969221b6e" name="ad80ad9a3a5e5a869a1a4928969221b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80ad9a3a5e5a869a1a4928969221b6e">&#9670;&#160;</a></span>delay</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final PauseTransition fr.softsf.sudokufx.view.component.firework.Firework.delay = new PauseTransition(Duration.seconds(1))</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a61620074efb6445cb51a5c79efd1baf1" name="a61620074efb6445cb51a5c79efd1baf1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61620074efb6445cb51a5c79efd1baf1">&#9670;&#160;</a></span>fadeIn</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final FadeTransition fr.softsf.sudokufx.view.component.firework.Firework.fadeIn = new FadeTransition(Duration.seconds(1), this)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -433,39 +479,7 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">                                     =</div>
-<div class="line"><span class="keyword">new</span> BooleanPropertyBase(<span class="keyword">false</span>) {</div>
-<div class="line">    @Override</div>
-<div class="line">    <span class="keyword">protected</span> <span class="keywordtype">void</span> invalidated() {</div>
-<div class="line">        <span class="keywordflow">if</span> (<span class="keyword">get</span>()) {</div>
-<div class="line">            clearParticles();</div>
-<div class="line">            <a class="code hl_variable" href="#a610a00e46722107ba62ea9360238fad8">countdown</a> = <a class="code hl_variable" href="#aa4052c0cc8f76fe23fd176a56aa8841c">DEFAULT_COUNTDOWN</a> * 2;</div>
-<div class="line">            <a class="code hl_variable" href="#ae5531b9cb1655a17ddfee7fd85df0b5e">timer</a>.start();</div>
-<div class="line">        } <span class="keywordflow">else</span> {</div>
-<div class="line">            <a class="code hl_variable" href="#ae5531b9cb1655a17ddfee7fd85df0b5e">timer</a>.stop();</div>
-<div class="line">            clearParticles();</div>
-<div class="line">        }</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    @Override</div>
-<div class="line">    <span class="keyword">public</span> Object getBean() {</div>
-<div class="line">        <span class="keywordflow">return</span> Firework.this;</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    @Override</div>
-<div class="line">    <span class="keyword">public</span> String getName() {</div>
-<div class="line">        <span class="keywordflow">return</span> <span class="stringliteral">&quot;firing&quot;</span>;</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keyword">private</span> <span class="keywordtype">void</span> clearParticles() {</div>
-<div class="line">        particles.clear();</div>
-<div class="line">        getChildren().clear();</div>
-<div class="line">    }</div>
-<div class="line">}</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_html_a610a00e46722107ba62ea9360238fad8"><div class="ttname"><a href="#a610a00e46722107ba62ea9360238fad8">fr.softsf.sudokufx.view.component.firework.Firework.countdown</a></div><div class="ttdeci">int countdown</div><div class="ttdef"><b>Definition</b> Firework.java:42</div></div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_html_aa4052c0cc8f76fe23fd176a56aa8841c"><div class="ttname"><a href="#aa4052c0cc8f76fe23fd176a56aa8841c">fr.softsf.sudokufx.view.component.firework.Firework.DEFAULT_COUNTDOWN</a></div><div class="ttdeci">static final int DEFAULT_COUNTDOWN</div><div class="ttdef"><b>Definition</b> Firework.java:33</div></div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_html_ae5531b9cb1655a17ddfee7fd85df0b5e"><div class="ttname"><a href="#ae5531b9cb1655a17ddfee7fd85df0b5e">fr.softsf.sudokufx.view.component.firework.Firework.timer</a></div><div class="ttdeci">final AnimationTimer timer</div><div class="ttdef"><b>Definition</b> Firework.java:41</div></div>
-</div><!-- fragment -->
+
 <p>Managed property handling the animation lifecycle. </p>
 <p>Invalidation triggers internal start/stop methods, ensuring atomic state transitions. </p>
 
@@ -525,7 +539,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.view.component.firework.Firework.MINIMUM_PARTICLES = 15</td>
+          <td class="memname">final int fr.softsf.sudokufx.view.component.firework.Firework.MINIMUM_PARTICLES = 8</td>
         </tr>
       </table>
   </td>
@@ -547,7 +561,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int fr.softsf.sudokufx.view.component.firework.Firework.PARTICLE_COUNT_VARIANCE = 20</td>
+          <td class="memname">final int fr.softsf.sudokufx.view.component.firework.Firework.PARTICLE_COUNT_VARIANCE = 10</td>
         </tr>
       </table>
   </td>
@@ -613,7 +627,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final double fr.softsf.sudokufx.view.component.firework.Firework.REFERENCE_SCREEN_WIDTH = 1536.0</td>
+          <td class="memname">final double fr.softsf.sudokufx.view.component.firework.Firework.REFERENCE_SCREEN_WIDTH = 1000</td>
         </tr>
       </table>
   </td>

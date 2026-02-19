@@ -107,7 +107,6 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>import java.nio.file.Path;</code><br />
-<code>import java.nio.file.Paths;</code><br />
 <code>import java.time.Year;</code><br />
 <code>import java.util.Objects;</code><br />
 <code>import javafx.animation.FadeTransition;</code><br />
@@ -134,8 +133,9 @@ $(function() {
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
 <code>import fr.softsf.sudokufx.common.interfaces.IMainView;</code><br />
 <code>import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;</code><br />
-<code>import fr.softsf.sudokufx.common.util.FileSystemManager;</code><br />
-<code>import fr.softsf.sudokufx.common.util.IFileSystem;</code><br />
+<code>import fr.softsf.sudokufx.common.util.IUserDataPurger;</code><br />
+<code>import fr.softsf.sudokufx.common.util.LocalUserDataPurger;</code><br />
+<code>import fr.softsf.sudokufx.common.util.PathValidator;</code><br />
 <code>import fr.softsf.sudokufx.config.JVMApplicationProperties;</code><br />
 <code>import fr.softsf.sudokufx.config.os.IOsFolder;</code><br />
 <code>import fr.softsf.sudokufx.config.os.OsFoldersConfig;</code><br />

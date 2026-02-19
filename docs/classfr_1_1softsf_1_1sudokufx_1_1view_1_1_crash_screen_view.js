@@ -24,12 +24,12 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
     [ "crashscreenvboxCenterhboxLabel2", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ab032d43c230b364907df5773c4c707a6", null ],
     [ "crashscreenvboxTophboxNamelabel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ab753c564732eae1c06da73062e89b3e7", null ],
     [ "crashscreenvboxTophboxRegionsudosvg", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a3977f5d0b2fced21d632dcfde8f79c8e", null ],
+    [ "DATA_PURGER", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a4fbe39a61341e00fabc5007def75d56a", null ],
     [ "dropShadow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aeafb2651c347d16a52b08b48563f8476", null ],
     [ "FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9abd8cec04433b385cf595d25df8e01c", null ],
-    [ "I_FILE_SYSTEM", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a40f2448e55d8941436854a6a8481e85c", null ],
-    [ "I_OS_FOLDER_FACTORY", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aa2c7afc8c929fd52d91a5534e8639e13", null ],
     [ "iSplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49c11cdc15fbf969de8ca00ec9817ead", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aefcbc1edb1959f06721ea31a15c7e95c", null ],
+    [ "OS_FOLDER_PROVIDER", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#af18ae3dcd3a79e0d1cdb519f2d3174ab", null ],
     [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f", null ],
     [ "SVG_STROKE_DIVISOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac9448e4ebd346fc8d96b9a43aebde679", null ]
 ];

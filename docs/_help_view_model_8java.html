@@ -107,6 +107,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>import java.io.File;</code><br />
+<code>import java.nio.file.Path;</code><br />
 <code>import java.text.MessageFormat;</code><br />
 <code>import java.time.Year;</code><br />
 <code>import java.util.Objects;</code><br />
@@ -115,11 +116,13 @@ $(function() {
 <code>import javafx.scene.control.ButtonBar;</code><br />
 <code>import javafx.scene.control.ButtonType;</code><br />
 <code>import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;</code><br />
+<code>import org.slf4j.Logger;</code><br />
+<code>import org.slf4j.LoggerFactory;</code><br />
 <code>import org.springframework.stereotype.Component;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.AppPaths;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.ScreenSize;</code><br />
-<code>import fr.softsf.sudokufx.common.exception.ExceptionTools;</code><br />
+<code>import fr.softsf.sudokufx.common.util.PathValidator;</code><br />
 <code>import fr.softsf.sudokufx.config.JVMApplicationProperties;</code><br />
 <code>import fr.softsf.sudokufx.config.os.IOsFolder;</code><br />
 <code>import fr.softsf.sudokufx.navigation.Coordinator;</code><br />

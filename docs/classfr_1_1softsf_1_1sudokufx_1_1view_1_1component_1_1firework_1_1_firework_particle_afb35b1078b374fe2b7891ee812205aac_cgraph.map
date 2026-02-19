@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.view.component.firework.FireworkParticle.FireworkParticle" name="fr.softsf.sudokufx.view.component.firework.FireworkParticle.FireworkParticle">
+<area shape="rect" id="Node000001" title="Represents a visual particle with a limited display time." alt="" coords="5,29,281,72"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="91,29,89,19,98,10,116,5,143,3,173,5,190,11,188,16,171,10,143,8,117,10,101,15,94,21,96,28"/>
+</map>

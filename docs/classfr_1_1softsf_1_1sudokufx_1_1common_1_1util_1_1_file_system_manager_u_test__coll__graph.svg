@@ -74,7 +74,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="4" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="14" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenInvalidDirectory</text>
 <text text-anchor="start" x="14" y="-254.5" font-family="Helvetica,sans-Serif" font-size="10.00">Path_whenDeleteDataFolderRecursively</text>
-<text text-anchor="start" x="14" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenDeletionFails()</text>
+<text text-anchor="start" x="14" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenIllegalStateExceptionThrown()</text>
 <text text-anchor="start" x="4" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="14" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenIOException</text>
 <text text-anchor="start" x="14" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenDeleteFile_thenException</text>
@@ -110,10 +110,10 @@ var sectionId = 'dynsection-0';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager.html" target="_top" xlink:title="Manages file system operations related to the application&#39;s data folder.">
+<g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html" target="_top" xlink:title="Defines file system operations related to the application&#39;s data management.">
 <polygon fill="white" stroke="none" points="169.38,-582 25.62,-582 25.62,-438 169.38,-438 169.38,-582"/>
 <text text-anchor="start" x="29.62" y="-568.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
-<text text-anchor="start" x="54" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">FileSystemManager</text>
+<text text-anchor="start" x="50.62" y="-556.5" font-family="Helvetica,sans-Serif" font-size="10.00">LocalUserDataPurger</text>
 <text text-anchor="start" x="31.25" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="39.88" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
 <text text-anchor="start" x="29.75" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
@@ -147,13 +147,13 @@ var sectionId = 'dynsection-0';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="127.75,-671 67.25,-671 67.25,-619 127.75,-619 127.75,-671"/>
-<text text-anchor="start" x="71.25" y="-657.5" font-family="Helvetica,sans-Serif" font-size="10.00">IFileSystem</text>
+<polygon fill="white" stroke="none" points="138.25,-671 56.75,-671 56.75,-619 138.25,-619 138.25,-671"/>
+<text text-anchor="start" x="60.75" y="-657.5" font-family="Helvetica,sans-Serif" font-size="10.00">IUserDataPurger</text>
 <text text-anchor="start" x="96" y="-641.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 <text text-anchor="start" x="96" y="-625.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="67.25,-653 67.25,-653 127.75,-653 127.75,-653 67.25,-653"/>
-<polygon fill="#666666" stroke="#666666" points="67.25,-637 67.25,-637 127.75,-637 127.75,-637 67.25,-637"/>
-<polygon fill="none" stroke="#666666" points="67.25,-619 67.25,-671 127.75,-671 127.75,-619 67.25,-619"/>
+<polygon fill="#666666" stroke="#666666" points="56.75,-653 56.75,-653 138.25,-653 138.25,-653 56.75,-653"/>
+<polygon fill="#666666" stroke="#666666" points="56.75,-637 56.75,-637 138.25,-637 138.25,-637 56.75,-637"/>
+<polygon fill="none" stroke="#666666" points="56.75,-619 56.75,-671 138.25,-671 138.25,-619 56.75,-619"/>
 </a>
 </g>
 </g>

@@ -8,6 +8,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework 
     [ "updateParticles", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#ab989e17fd615336c73186f7f80b6c976", null ],
     [ "countdown", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#a610a00e46722107ba62ea9360238fad8", null ],
     [ "DEFAULT_COUNTDOWN", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#aa4052c0cc8f76fe23fd176a56aa8841c", null ],
+    [ "delay", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#ad80ad9a3a5e5a869a1a4928969221b6e", null ],
+    [ "fadeIn", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#a61620074efb6445cb51a5c79efd1baf1", null ],
     [ "firingProperty", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#a8e376fa6c20da2cd1d416b7b19241bf2", null ],
     [ "MAXIMUM_HUE", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#ae902222347b7179fc0e78a3b23a5cf5e", null ],
     [ "MINIMUM_PARTICLE_RADIUS", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#a7e5ceb66418318f1082b19c90a7d24d9", null ],
