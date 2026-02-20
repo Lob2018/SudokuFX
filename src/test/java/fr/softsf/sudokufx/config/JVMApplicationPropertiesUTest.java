@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import fr.softsf.sudokufx.common.enums.MyRegex;
+import fr.softsf.sudokufx.common.util.MyRegex;
 
 import static org.junit.jupiter.api.Assertions.*;
 

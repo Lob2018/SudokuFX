@@ -7,7 +7,7 @@ package fr.softsf.sudokufx.config;
 
 import java.util.Objects;
 
-import fr.softsf.sudokufx.common.enums.MyRegex;
+import fr.softsf.sudokufx.common.util.MyRegex;
 
 /**
  * Utility enum for managing JVM application properties. Provides methods to retrieve and validate

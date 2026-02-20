@@ -3,7 +3,7 @@
  * Licensed under the GNU General Public License v3.0 (GPL-3.0).
  * See the full license at: https://github.com/Lob2018/SudokuFX/blob/main/LICENSE.txt
  */
-package fr.softsf.sudokufx.common.enums;
+package fr.softsf.sudokufx.common.util;
 
 import java.util.Objects;
 import java.util.regex.Pattern;
