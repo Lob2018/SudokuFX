@@ -1,3 +1,3 @@
-<map id="fr.softsf.sudokufx.common.enums.MyRegex" name="fr.softsf.sudokufx.common.enums.MyRegex">
+<map id="fr.softsf.sudokufx.common.util.MyRegex" name="fr.softsf.sudokufx.common.util.MyRegex">
 <area shape="rect" id="Node000001" title="Utility class for managing and validating text against precompiled regular expressions." alt="" coords="5,5,222,395"/>
 </map>

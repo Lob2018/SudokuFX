@@ -7,7 +7,7 @@
 <svg width="326pt" height="40pt"
  viewBox="0.00 0.00 325.75 40.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 36)">
-<title>fr.softsf.sudokufx.common.enums.MyRegex.isValidatedByRegex</title>
+<title>fr.softsf.sudokufx.common.util.MyRegex.isValidatedByRegex</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
