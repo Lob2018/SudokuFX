@@ -373,14 +373,16 @@ public final class GridMaster implements IGridMaster {
      *
      * <p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation
      * exhaustive via backtracking. Il itère jusqu'à ce que la <b>somme des possibilités</b>
-     * satisfasse le prédicat de difficulté. *
+     * satisfasse le prédicat de difficulté.
      *
      * <p><b>Optimisations et Sécurités :</b>
      *
      * <ul>
+     *   <li><b>Interruption :</b> Vérifie {@link Thread#isInterrupted()} pour stopper le calcul
+     *       immédiatement si la {@link Task} est annulée.
      *   <li><b>Watchdog :</b> Limite chaque essai à {@link #DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS}.
      *   <li><b>Récursion :</b> Relance une génération globale jusqu'à {@link
-     *       #MAX_ESSAIS_POUR_GENERATION_DE_GRILLE}.
+     *       #MAX_ESSAIS_POUR_GENERATION_DE_GRILLE} en cas de timeout de l'essai actuel.
      * </ul>
      *
      * @param grilleResolue La grille complète servant de base.
@@ -389,7 +391,8 @@ public final class GridMaster implements IGridMaster {
      * @param casesAMax Borne supérieure (exclue) du nombre de cases à masquer.
      * @param conditionValidation Prédicat de validation de la difficulté.
      * @param compteurEssais Le numéro de la tentative actuelle pour le suivi récursif.
-     * @return La somme des possibilités de la grille finale, ou -1 en cas d'échec.
+     * @return La somme des possibilités de la grille finale, ou -1 en cas d'échec (timeout, nombre
+     *     max d'essais atteint ou interruption du thread).
      */
     @SuppressWarnings("java:S2245")
     private int genererGrilleAvecCasesCachees(
@@ -405,6 +408,10 @@ public final class GridMaster implements IGridMaster {
         int nombreDeCasesACacher = random.nextInt(casesAMin, casesAMax);
         long debutAppel = System.currentTimeMillis();
         do {
+            if (Thread.currentThread().isInterrupted()) {
+                Arrays.fill(grilleAResoudre, 0);
+                return -1;
+            }
             sommeDesPossibilites =
                     getPossibilitesGrilleWhileNok(
                             grilleResolue, grilleAResoudre, nombreDeCasesACacher);
@@ -426,18 +433,9 @@ public final class GridMaster implements IGridMaster {
             compteurEssais++;
             // Vérifier le nombre de tentatives
             if (compteurEssais >= MAX_ESSAIS_POUR_GENERATION_DE_GRILLE) {
-                System.out.println(
-                        "Échec critique : Nombre max d'essais atteint ("
-                                + MAX_ESSAIS_POUR_GENERATION_DE_GRILLE
-                                + ")");
-                // Retourner une grille vide avec 0 possibilités
                 Arrays.fill(grilleAResoudre, 0);
                 return -1;
             }
-            System.out.println(
-                    "Timeout 1s atteint sans succès. Relance globale..."
-                            + (System.currentTimeMillis() - debutAppel)
-                            + "ms");
             // Réinitialisation
             return genererGrilleAvecCasesCachees(
                     grilleResolue,
@@ -447,14 +445,6 @@ public final class GridMaster implements IGridMaster {
                     conditionValidation,
                     compteurEssais);
         }
-        System.out.println(
-                "Fin durée="
-                        + (System.currentTimeMillis() - debutAppel)
-                        + "ms | Valide="
-                        + estValide
-                        + " | "
-                        + compteurEssais
-                        + " essais\n");
         return sommeDesPossibilites;
     }
 

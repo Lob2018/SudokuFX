@@ -26,6 +26,7 @@ import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.ui.AudioService;
+import fr.softsf.sudokufx.service.ui.SpinnerService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.CurrentGrid;
@@ -42,6 +43,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
 
     private GridViewModel viewModel;
     private ToasterService toasterServiceMock;
+    private SpinnerService spinnerServiceMock;
 
     @BeforeEach
     void setUp() {
@@ -50,6 +52,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                 .when(validatorMock)
                 .validateOrThrow(any());
         toasterServiceMock = mock(ToasterService.class);
+        spinnerServiceMock = mock(SpinnerService.class);
         viewModel =
                 new GridViewModel(
                         new GridMaster(validatorMock),
@@ -58,7 +61,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         playerStateHolder,
                         playerServiceMock,
                         new GridConverter(),
-                        toasterServiceMock);
+                        toasterServiceMock,
+                        spinnerServiceMock);
         viewModel.init();
     }
 
@@ -103,13 +107,15 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @Test
-    void givenNullLevel_whenSetCurrentGridWithLevel_thenNullPointerExceptionIsThrown() {
-        assertThrows(NullPointerException.class, () -> viewModel.setCurrentGridWithLevel(null));
+    void givenNullLevel_whenSetCurrentGridWithLevel_ForTests_thenNullPointerExceptionIsThrown() {
+        assertThrows(
+                NullPointerException.class, () -> viewModel.setCurrentGridWithLevelForTests(null));
     }
 
     @Test
-    void givenValidLevel_whenSetCurrentGridWithLevel_thenGridIsUpdatedAndPlayerServiceCalled() {
-        int percentage = viewModel.setCurrentGridWithLevel(DifficultyLevel.EASY);
+    void
+            givenValidLevel_whenSetCurrentGridWithLevel_thenGridIsUpdatedAndPlayerServiceCalledForTests() {
+        int percentage = viewModel.setCurrentGridWithLevelForTests(DifficultyLevel.EASY);
         assertTrue(percentage >= 0 && percentage <= 100);
         verify(playerServiceMock).updatePlayer(any());
         PlayerDto player = playerStateHolder.getCurrentPlayer();
@@ -148,7 +154,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         playerStateHolder,
                         playerServiceMock,
                         new GridConverter(),
-                        toasterServiceMock);
+                        toasterServiceMock,
+                        spinnerServiceMock);
         localVM.init();
         Optional<CurrentGrid> currentGrid = localVM.getCurrentGridFromModel();
         assertTrue(currentGrid.isPresent());
@@ -199,7 +206,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         playerStateHolder,
                         playerServiceMock,
                         new GridConverter(),
-                        toasterServiceMock);
+                        toasterServiceMock,
+                        spinnerServiceMock);
         localVM.init();
         Optional<CurrentGrid> result = localVM.getCurrentSolvedGridFromModel();
         assertTrue(result.isEmpty());
@@ -225,7 +233,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         playerStateHolder,
                         playerServiceMock,
                         new GridConverter(),
-                        toasterServiceMock);
+                        toasterServiceMock,
+                        spinnerServiceMock);
         localVM.init();
         Optional<CurrentGrid> result = localVM.getCurrentSolvedGridFromModel();
         assertTrue(result.isPresent());

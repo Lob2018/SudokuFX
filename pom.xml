@@ -439,6 +439,7 @@
             <exclude>fr/softsf/sudokufx/viewmodel/MenuOptionsViewModel$*</exclude>
             <exclude>fr/softsf/sudokufx/service/ui/AsyncFileProcessorService$*</exclude>
             <exclude>fr/softsf/sudokufx/service/external/VersionService$*</exclude>
+            <exclude>fr/softsf/sudokufx/viewmodel/grid/GridViewModel$*</exclude>
           </excludes>
         </configuration>
         <executions>

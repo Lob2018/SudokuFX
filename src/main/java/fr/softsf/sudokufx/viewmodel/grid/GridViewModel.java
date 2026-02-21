@@ -17,6 +17,7 @@ import java.util.Optional;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
+import javafx.concurrent.Task;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
@@ -39,6 +40,7 @@ import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.service.ui.AudioService;
+import fr.softsf.sudokufx.service.ui.SpinnerService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
@@ -56,6 +58,7 @@ public class GridViewModel {
     private static final int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
     private static final String GAME_DTO_MUSTN_T_BE_NULL = "gameDto mustn't be null";
     private static final int DEFAULT_DESIRED_POSSIBILITIES = -1;
+    public static final String LEVEL_MUSTN_T_BE_NULL = "level mustn't be null";
 
     private final IGridMaster iGridMaster;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
@@ -64,6 +67,7 @@ public class GridViewModel {
     private final PlayerService playerService;
     private final IGridConverter iGridConverter;
     private final ToasterService toasterService;
+    private final SpinnerService spinnerService;
 
     private final List<GridCellViewModel> cellViewModels = new ArrayList<>(TOTAL_CELLS);
     private boolean initialized = false;
@@ -71,6 +75,20 @@ public class GridViewModel {
     private int desiredPossibilities = DEFAULT_DESIRED_POSSIBILITIES;
 
     private final BooleanProperty victory = new SimpleBooleanProperty(false);
+
+    private final BooleanProperty generating = new SimpleBooleanProperty(false);
+
+    /**
+     * Returns the generating status property for binding the UI spinner.
+     *
+     * @return the generating property
+     */
+    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification = "JavaFX properties are exposed for UI bindings.")
+    public ReadOnlyBooleanProperty generatingProperty() {
+        return generating;
+    }
 
     /**
      * Returns the victory status property for binding the firework animation.
@@ -163,7 +181,8 @@ public class GridViewModel {
             PlayerStateHolder playerStateHolder,
             PlayerService playerService,
             IGridConverter iGridConverter,
-            ToasterService toasterService) {
+            ToasterService toasterService,
+            SpinnerService spinnerService) {
         this.iGridMaster = iGridMaster;
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
         this.audioService = audioService;
@@ -171,6 +190,7 @@ public class GridViewModel {
         this.playerService = playerService;
         this.iGridConverter = iGridConverter;
         this.toasterService = toasterService;
+        this.spinnerService = spinnerService;
     }
 
     /**
@@ -472,29 +492,98 @@ public class GridViewModel {
     }
 
     /**
-     * Generates a new grid for the given difficulty level, updates the cells, and returns the
-     * associated completion percentage.
+     * Synchronously generates and applies a new grid.
+     *
+     * <p><b>Warning:</b> This method is blocking and bypasses the asynchronous Task safety. It is
+     * strictly intended for <b>Unit Tests</b> or internal synchronous logic. For UI interactions,
+     * always use {@link #setCurrentGridTask(DifficultyLevel)}.
      *
      * @param level the difficulty level (must not be {@code null})
-     * @return the percentage of possibilities for the generated grid
+     * @return the percentage of possibilities for the generated grid, or -1 on failure
      * @throws NullPointerException if {@code level} is {@code null}
      */
-    public int setCurrentGridWithLevel(DifficultyLevel level) {
+    public int setCurrentGridWithLevelForTests(DifficultyLevel level) {
         checkInitialized();
-        Objects.requireNonNull(level, "level mustn't be null");
+        Objects.requireNonNull(level, LEVEL_MUSTN_T_BE_NULL);
         GrillesCrees grillesCrees =
                 iGridMaster.creerLesGrilles(level.toGridNumber(), desiredPossibilities);
-        if (grillesCrees.pourcentageDesPossibilites() == -1) {
-            toasterService.requestRemoveToast();
-            toasterService.showInfo(
-                    I18n.INSTANCE.getValue(
-                            "toast.msg.levelInteractionHandler.desiredpossibilities.failed"),
-                    "");
+        return applyGeneratedGrid(level, grillesCrees);
+    }
+
+    /**
+     * Creates an asynchronous {@link Task} for non-blocking grid generation.
+     *
+     * <p>The heavy calculation is performed in a background thread, while UI updates are delegated
+     * to the FX Application Thread via {@link #applyGeneratedGrid}.
+     *
+     * @param level the difficulty level to apply
+     * @return a Task returning the possibilities percentage or -1 on failure
+     */
+    public Task<Integer> setCurrentGridTask(DifficultyLevel level) {
+        return new Task<>() {
+            private GrillesCrees result;
+
+            @Override
+            protected Integer call() {
+                spinnerService.startLoading();
+                checkInitialized();
+                Objects.requireNonNull(level, LEVEL_MUSTN_T_BE_NULL);
+                this.result =
+                        iGridMaster.creerLesGrilles(level.toGridNumber(), desiredPossibilities);
+                return result.pourcentageDesPossibilites();
+            }
+
+            @Override
+            protected void succeeded() {
+                applyGeneratedGrid(level, result);
+                LOG.debug("▓▓ Grid generation and UI update success");
+            }
+
+            @Override
+            protected void failed() {
+                LOG.error(
+                        "██ Grid generation task failed: {}",
+                        getException().getMessage(),
+                        getException());
+            }
+
+            @Override
+            protected void cancelled() {
+                LOG.warn("▓▓ Grid generation cancelled");
+            }
+
+            @Override
+            protected void done() {
+                spinnerService.stopLoading();
+            }
+        };
+    }
+
+    /**
+     * Applies the generated grid data to the player state and UI cells.
+     *
+     * @param level current difficulty level
+     * @param grillesCrees data containing the solved and unsolved grids
+     * @return the percentage of possibilities or -1 if the generation failed
+     */
+    private int applyGeneratedGrid(DifficultyLevel level, GrillesCrees grillesCrees) {
+        int percentage = grillesCrees.pourcentageDesPossibilites();
+        if (percentage == -1) {
+            handleGenerationFailure();
             return -1;
         }
         persistNewGame(level, grillesCrees);
         setValues(iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()), true);
-        return grillesCrees.pourcentageDesPossibilites();
+        return percentage;
+    }
+
+    /** Handles UI notifications when grid generation fails. */
+    private void handleGenerationFailure() {
+        toasterService.requestRemoveToast();
+        toasterService.showInfo(
+                I18n.INSTANCE.getValue(
+                        "toast.msg.levelInteractionHandler.desiredpossibilities.failed"),
+                "");
     }
 
     /**
@@ -507,7 +596,7 @@ public class GridViewModel {
      *     {@code null}
      */
     private void persistNewGame(DifficultyLevel level, GrillesCrees grillesCrees) {
-        Objects.requireNonNull(level, "level mustn't be null");
+        Objects.requireNonNull(level, LEVEL_MUSTN_T_BE_NULL);
         Objects.requireNonNull(grillesCrees, "grillesCrees mustn't be null");
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
         String defaultGrid =

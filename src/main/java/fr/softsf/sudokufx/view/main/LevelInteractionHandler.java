@@ -11,6 +11,7 @@ import java.util.function.Consumer;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.concurrent.Task;
 import javafx.scene.control.Button;
 import javafx.scene.input.InputEvent;
 import javafx.scene.input.KeyCode;
@@ -19,6 +20,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
 
 import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
@@ -34,6 +37,8 @@ import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 @Component
 public class LevelInteractionHandler {
 
+    private static final Logger LOG = LoggerFactory.getLogger(LevelInteractionHandler.class);
+
     public static final String EVENT_MUST_NOT_BE_NULL = "event mustn't be null";
     public static final int DURATION_BETWEEN_INCREMENTS_IN_MS = 500;
     private final GridViewModel gridViewModel;
@@ -41,8 +46,8 @@ public class LevelInteractionHandler {
     private final MenuOptionsViewModel menuOptionsViewModel;
     private final Timeline desiredPossibilitiesTimeline = new Timeline();
     private static final Set<KeyCode> LEVEL_VALID_KEYS = Set.of(KeyCode.ENTER, KeyCode.SPACE);
-
     private DifficultyLevel level;
+    private Task<Integer> currentGridTask;
 
     /**
      * Initializes the handler with required reactive view models and notification services.
@@ -108,23 +113,38 @@ public class LevelInteractionHandler {
     }
 
     /**
-     * Finalizes level selection and updates reactive state across view models. *
+     * Finalizes level selection and synchronizes reactive state across ViewModels asynchronously.
      *
-     * <p>The process is aborted if {@link GridViewModel#setCurrentGridWithLevel} returns -1,
-     * indicating that the grid generation failed (e.g., watchdog timeout).
+     * <p>Uses a {@link Task} to offload grid generation from the JavaFX Application Thread. Any
+     * pending generation task is canceled before starting a new one to prevent race conditions.
+     * State updates are skipped if the engine returns -1 or if the task is interrupted.
      *
-     * @param opaqueApplier callback to refresh visual opacity based on the current options state
+     * @param opaqueApplier callback to synchronize grid visual opacity with current option states
      */
     private void applyLevel(Consumer<Boolean> opaqueApplier) {
-        Objects.requireNonNull(level, "level mustn't be null");
-        Objects.requireNonNull(opaqueApplier, "opaqueApplier mustn't be null");
         desiredPossibilitiesTimeline.stop();
-        int possibilitiesPercentage = gridViewModel.setCurrentGridWithLevel(level);
-        if (possibilitiesPercentage == -1) {
-            return;
+        if (currentGridTask != null && currentGridTask.isRunning()) {
+            currentGridTask.cancel();
         }
-        menuLevelViewModel.updateSelectedLevel(level, possibilitiesPercentage);
-        opaqueApplier.accept(menuOptionsViewModel.gridOpacityProperty().get());
+        currentGridTask = gridViewModel.setCurrentGridTask(level);
+        final Task<Integer> task = currentGridTask;
+        task.setOnSucceeded(
+                _ -> {
+                    int possibilitiesPercentage = task.getValue();
+                    if (possibilitiesPercentage != -1) {
+                        menuLevelViewModel.updateSelectedLevel(level, possibilitiesPercentage);
+                        opaqueApplier.accept(menuOptionsViewModel.gridOpacityProperty().get());
+                    }
+                });
+        task.setOnFailed(
+                _ ->
+                        LOG.error(
+                                "██ Level application failed: {}",
+                                task.getException().getMessage(),
+                                task.getException()));
+        Thread thread = new Thread(task);
+        thread.setDaemon(true);
+        thread.start();
     }
 
     /**

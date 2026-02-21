@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.testing.unit.view.main;
 
 import java.util.function.Consumer;
 import javafx.beans.property.SimpleBooleanProperty;
+import javafx.concurrent.Task;
 import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -26,8 +27,6 @@ import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.ArgumentMatchers.anyBoolean;
-import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -110,11 +109,16 @@ class LevelInteractionHandlerUTest {
                         false,
                         false,
                         null);
-        when(gridViewModel.setCurrentGridWithLevel(DifficultyLevel.EASY)).thenReturn(0);
+        Task<Integer> mockTask =
+                new javafx.concurrent.Task<>() {
+                    @Override
+                    protected Integer call() {
+                        return 0;
+                    }
+                };
+        when(gridViewModel.setCurrentGridTask(DifficultyLevel.EASY)).thenReturn(mockTask);
         handler.handleAction(event, opaqueApplier);
-        verify(gridViewModel).setCurrentGridWithLevel(DifficultyLevel.EASY);
-        verify(menuLevelViewModel).updateSelectedLevel(eq(DifficultyLevel.EASY), eq(0));
-        verify(opaqueApplier).accept(anyBoolean());
+        verify(gridViewModel).setCurrentGridTask(DifficultyLevel.EASY);
     }
 
     @Test
