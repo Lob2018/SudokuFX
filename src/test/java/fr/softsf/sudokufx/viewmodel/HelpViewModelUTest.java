@@ -6,11 +6,13 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
+import java.nio.file.Path;
 import javafx.application.Platform;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
@@ -19,6 +21,7 @@ import org.testfx.api.FxRobot;
 import org.testfx.api.FxToolkit;
 import org.testfx.framework.junit5.ApplicationExtension;
 
+import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 import fr.softsf.sudokufx.config.os.OsFoldersConfig;
@@ -37,8 +40,16 @@ import static org.mockito.Mockito.verify;
 @ExtendWith(ApplicationExtension.class)
 class HelpViewModelUTest {
 
-    private final IOsFolder iOsFolder;
-    private final Coordinator mockCoordinator;
+    private IOsFolder iOsFolder;
+    private Coordinator mockCoordinator;
+
+    @org.junit.jupiter.api.io.TempDir Path tempDir;
+
+    @BeforeEach
+    void setUp() {
+        iOsFolder = new OsFoldersConfig().iOsFolderFactory();
+        mockCoordinator = mock(Coordinator.class);
+    }
 
     public HelpViewModelUTest() {
         this.iOsFolder = new OsFoldersConfig().iOsFolderFactory();
@@ -82,8 +93,16 @@ class HelpViewModelUTest {
     }
 
     @Test
-    void whenShowHelp_thenAlertContainsLogFileButton_andOpensLocalFile(FxRobot robot) {
-        HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(iOsFolder, mockCoordinator));
+    void whenShowHelp_thenAlertContainsLogFileButton_andOpensLocalFile(FxRobot robot)
+            throws java.io.IOException {
+        String fileName = new File(AppPaths.LOGS_FILE_NAME_PATH.getPath()).getName();
+        Path logFilePath = tempDir.resolve(fileName);
+        if (java.nio.file.Files.notExists(logFilePath)) {
+            java.nio.file.Files.createFile(logFilePath);
+        }
+        IOsFolder spyOsFolder = Mockito.spy(iOsFolder);
+        Mockito.doReturn(tempDir.toString()).when(spyOsFolder).getOsLogsFolderPath();
+        HelpViewModel spyViewModel = Mockito.spy(new HelpViewModel(spyOsFolder, mockCoordinator));
         doAnswer(
                         invocation -> {
                             Platform.runLater(invocation.getArgument(0, MyAlert.class)::show);
