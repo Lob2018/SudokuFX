@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.service.external;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -108,6 +109,9 @@ public class VersionService {
                 } catch (HttpTimeoutException _) {
                     LOG.warn("▓▓ Timeout while checking GitHub version");
                     updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.warn.timeout"));
+                } catch (IOException ex) {
+                    LOG.error("██ Network error: {}", ex.getMessage(), ex);
+                    updateMessage(I18n.INSTANCE.getValue("githubrepositoryversion.error.network"));
                 } catch (InterruptedException ex) {
                     LOG.warn("▓▓ Interrupted", ex);
                     updateMessage(
