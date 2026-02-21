@@ -31,6 +31,6 @@ var searchData=
   ['myenumsutest_28',['MyEnumsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util']]],
   ['mylogbackconfig_29',['MyLogbackConfig',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html',1,'fr::softsf::sudokufx::config']]],
   ['mylogbackconfigutest_30',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr::softsf::sudokufx::config']]],
-  ['myregex_31',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::enums']]],
+  ['myregex_31',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::util']]],
   ['myregexutest_32',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]]
 ];

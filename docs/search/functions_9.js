@@ -37,8 +37,8 @@ var searchData=
   ['isselectedbinding_34',['isSelectedBinding',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a526715c7454e1e8e77e7996c5b901385',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
   ['isspringcontextexitonrefresh_35',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a8e83f73acbc106647965ccd74951e76a',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['isstartevent_36',['isStartEvent',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a316ee5b36c9bd2a7a05c8fe9f8f8791f',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]],
-  ['isvalidatedbyregex_37',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a8e52b7027a3e57d2616e255ea0c68874',1,'fr::softsf::sudokufx::common::enums::MyRegex']]],
+  ['isvalidatedbyregex_37',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a423142d558d45f6e0ffbe705f1aae781',1,'fr::softsf::sudokufx::common::util::MyRegex']]],
   ['isvalidaudio_38',['isValidAudio',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html#a11a4ad49c5d299ff5dd1e434eb2e0295',1,'fr::softsf::sudokufx::common::util::AudioUtils']]],
   ['isvalidimage_39',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
-  ['isvalidpassword_40',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html#a3cba29299fcf22555fcd6751c1f69771',1,'fr::softsf::sudokufx::common::enums::MyRegex']]]
+  ['isvalidpassword_40',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a909b2c7b687e5961a5ef292754a774b6',1,'fr::softsf::sudokufx::common::util::MyRegex']]]
 ];

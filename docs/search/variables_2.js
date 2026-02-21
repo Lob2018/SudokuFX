@@ -42,5 +42,6 @@ var searchData=
   ['createdat_5fmust_5fnot_5fbe_5fnull_39',['CREATEDAT_MUST_NOT_BE_NULL',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a8ac89672e3af7a67236c51d1f4bd4420',1,'fr.softsf.sudokufx.model.Game.CREATEDAT_MUST_NOT_BE_NULL'],['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aec7936cdd13cf7f3f2260ed2a0e1dc31',1,'fr.softsf.sudokufx.model.Player.CREATEDAT_MUST_NOT_BE_NULL']]],
   ['current_5fversion_40',['CURRENT_VERSION',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html#a5b2fd32cb2ada69d1aec5d5fe0210c61',1,'fr::softsf::sudokufx::service::external::VersionService']]],
   ['currentfontsize_41',['currentFontSize',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a57007497ac42d19ba42d8122b8cba38e',1,'fr::softsf::sudokufx::common::util::DynamicFontSize']]],
-  ['currentplayer_42',['currentPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#afc81fc802e0c186f48b27411fcf7a494',1,'fr::softsf::sudokufx::viewmodel::state::PlayerStateHolder']]]
+  ['currentgridtask_42',['currentGridTask',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#ae66b49141eb7184972244adb0ab4597a',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]],
+  ['currentplayer_43',['currentPlayer',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#afc81fc802e0c186f48b27411fcf7a494',1,'fr::softsf::sudokufx::viewmodel::state::PlayerStateHolder']]]
 ];

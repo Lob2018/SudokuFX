@@ -265,7 +265,7 @@ var searchData=
   ['mylogbackconfig_2ejava_262',['MyLogbackConfig.java',['../_my_logback_config_8java.html',1,'']]],
   ['mylogbackconfigutest_263',['MyLogbackConfigUTest',['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html',1,'fr.softsf.sudokufx.config.MyLogbackConfigUTest'],['../classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#a9080c4a2fb0799bf5314168a5498f2f1',1,'fr.softsf.sudokufx.config.MyLogbackConfigUTest.MyLogbackConfigUTest()']]],
   ['mylogbackconfigutest_2ejava_264',['MyLogbackConfigUTest.java',['../_my_logback_config_u_test_8java.html',1,'']]],
-  ['myregex_265',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::enums']]],
+  ['myregex_265',['MyRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html',1,'fr::softsf::sudokufx::common::util']]],
   ['myregex_2ejava_266',['MyRegex.java',['../_my_regex_8java.html',1,'']]],
   ['myregexutest_267',['MyRegexUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::enums']]],
   ['myregexutest_2ejava_268',['MyRegexUTest.java',['../_my_regex_u_test_8java.html',1,'']]]

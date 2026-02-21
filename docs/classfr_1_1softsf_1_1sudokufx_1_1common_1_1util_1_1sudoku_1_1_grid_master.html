@@ -126,12 +126,14 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af2d45060700f699fc8517cdf138bc7c2" id="r_af2d45060700f699fc8517cdf138bc7c2"><td class="memItemLeft">default int&#160;</td><td class="memItemRight"><a class="el" href="#af2d45060700f699fc8517cdf138bc7c2">calculerValeurSuperieureDuSegment</a> (<a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a> bounds, int current)</td></tr>
 <tr class="memdesc:af2d45060700f699fc8517cdf138bc7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la valeur supérieure du segment actuel en fonction du pas d'incrémentation.  <br /></td></tr>
-<tr class="memitem:af9f6b678d373391cd629f1ab2973b775" id="r_af9f6b678d373391cd629f1ab2973b775"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a96eda4804ac4a3c9f57c9960599f724c">GrillesCrees</a>&#160;</td><td class="memItemRight"><a class="el" href="#af9f6b678d373391cd629f1ab2973b775">creerLesGrilles</a> (final int niveau)</td></tr>
-<tr class="memdesc:af9f6b678d373391cd629f1ab2973b775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté spécifié.  <br /></td></tr>
-<tr class="memitem:af9f6b678d373391cd629f1ab2973b775" id="r_af9f6b678d373391cd629f1ab2973b775"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a96eda4804ac4a3c9f57c9960599f724c">GrillesCrees</a>&#160;</td><td class="memItemRight"><a class="el" href="#af9f6b678d373391cd629f1ab2973b775">creerLesGrilles</a> (final int niveau)</td></tr>
-<tr class="memdesc:af9f6b678d373391cd629f1ab2973b775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée les grilles de Sudoku (résolue et à résoudre) selon un niveau de difficulté donné.  <br /></td></tr>
+<tr class="memitem:a189b01658ea110e5c7ef6d4797cb7e47" id="r_a189b01658ea110e5c7ef6d4797cb7e47"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a9b767d7f5930ee45e7ce2467faedf322">GrillesCrees</a>&#160;</td><td class="memItemRight"><a class="el" href="#a189b01658ea110e5c7ef6d4797cb7e47">creerLesGrilles</a> (final int niveau, final int pourcentageDesire)</td></tr>
+<tr class="memdesc:a189b01658ea110e5c7ef6d4797cb7e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté et du pourcentage de possibilités désirés (-1 pour les possibilités correspondantes au niveau choisit).  <br /></td></tr>
+<tr class="memitem:a189b01658ea110e5c7ef6d4797cb7e47" id="r_a189b01658ea110e5c7ef6d4797cb7e47"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a9b767d7f5930ee45e7ce2467faedf322">GrillesCrees</a>&#160;</td><td class="memItemRight"><a class="el" href="#a189b01658ea110e5c7ef6d4797cb7e47">creerLesGrilles</a> (final int niveau, final int pourcentageDesire)</td></tr>
+<tr class="memdesc:a189b01658ea110e5c7ef6d4797cb7e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates Sudoku grids (solved and unsolved) based on a level and a target difficulty percentage (-1 for level's default possibilities).  <br /></td></tr>
 <tr class="memitem:a409da4117c58966b842279006d9546dd" id="r_a409da4117c58966b842279006d9546dd"><td class="memItemLeft">default <a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a>&#160;</td><td class="memItemRight"><a class="el" href="#a409da4117c58966b842279006d9546dd">getIntervallePourcentageNiveau</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
 <tr class="memdesc:a409da4117c58966b842279006d9546dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère l'intervalle de pourcentages autorisé pour un niveau de difficulté donné.  <br /></td></tr>
+<tr class="memitem:a7da72c06bb28816dc19695add4cbdb27" id="r_a7da72c06bb28816dc19695add4cbdb27"><td class="memItemLeft">default int&#160;</td><td class="memItemRight"><a class="el" href="#a7da72c06bb28816dc19695add4cbdb27">getPossibilitesDepuisPourcentage</a> (int pourcentage)</td></tr>
+<tr class="memdesc:a7da72c06bb28816dc19695add4cbdb27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la somme des possibilités basée sur un pourcentage de difficulté.  <br /></td></tr>
 <tr class="memitem:a3307d58848c5c2f12ba5f33c2eb6ebb7" id="r_a3307d58848c5c2f12ba5f33c2eb6ebb7"><td class="memItemLeft">default int&#160;</td><td class="memItemRight"><a class="el" href="#a3307d58848c5c2f12ba5f33c2eb6ebb7">getPourcentageDepuisPossibilites</a> (int sommeDesPossibilites)</td></tr>
 <tr class="memdesc:a3307d58848c5c2f12ba5f33c2eb6ebb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le pourcentage de difficultés basé sur la somme des possibilités.  <br /></td></tr>
 <tr class="memitem:a94424450acb912e32c7548e6659b617a" id="r_a94424450acb912e32c7548e6659b617a"><td class="memItemLeft"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#aa86aff33589489ef55f1a9747a8f6d5d">GrilleResolue</a>&#160;</td><td class="memItemRight"><a class="el" href="#a94424450acb912e32c7548e6659b617a">resoudreLaGrille</a> (final int[] grille)</td></tr>
@@ -180,14 +182,14 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:a3f17ab078f894717a1f3dfaffed0b987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choisit une valeur aléatoire parmi les possibilités données.  <br /></td></tr>
 <tr class="memitem:af6461bfbf866d4c2ed591179e96eb56b" id="r_af6461bfbf866d4c2ed591179e96eb56b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af6461bfbf866d4c2ed591179e96eb56b">genererGrilleAvecCasesCachees</a> (int[] grilleResolue, int[] grilleAResoudre, int casesAMin, int casesAMax, IntPredicate conditionValidation, int compteurEssais)</td></tr>
 <tr class="memdesc:af6461bfbf866d4c2ed591179e96eb56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté.  <br /></td></tr>
-<tr class="memitem:a4ee8cc0d8a933568aeb12ca14f8ab649" id="r_a4ee8cc0d8a933568aeb12ca14f8ab649"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a4ee8cc0d8a933568aeb12ca14f8ab649">genererLaGrilleAResoudre</a> (final int niveau, final int[] grilleResolue, final int[] grilleAResoudre)</td></tr>
-<tr class="memdesc:a4ee8cc0d8a933568aeb12ca14f8ab649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté.  <br /></td></tr>
-<tr class="memitem:aa77557d49c6d3377a6409b74f6386595" id="r_aa77557d49c6d3377a6409b74f6386595"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#aa77557d49c6d3377a6409b74f6386595">getPossibilitesGrilleAresoudreDifficile</a> (int[] grilleResolue, int[] grilleAResoudre)</td></tr>
-<tr class="memdesc:aa77557d49c6d3377a6409b74f6386595"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku de niveau difficile.  <br /></td></tr>
-<tr class="memitem:a14a9157214a31a7be5f08c78c129a96d" id="r_a14a9157214a31a7be5f08c78c129a96d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a14a9157214a31a7be5f08c78c129a96d">getPossibilitesGrilleAResoudreFacile</a> (int[] grilleResolue, int[] grilleAResoudre)</td></tr>
-<tr class="memdesc:a14a9157214a31a7be5f08c78c129a96d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku de niveau facile.  <br /></td></tr>
-<tr class="memitem:ab77d72c8f1612e20c9d7b27f6869b08b" id="r_ab77d72c8f1612e20c9d7b27f6869b08b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ab77d72c8f1612e20c9d7b27f6869b08b">getPossibilitesGrilleAResoudreMoyenne</a> (int[] grilleResolue, int[] grilleAResoudre)</td></tr>
-<tr class="memdesc:ab77d72c8f1612e20c9d7b27f6869b08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku de niveau moyen.  <br /></td></tr>
+<tr class="memitem:ae62111abf551659353a37d6eff7fe472" id="r_ae62111abf551659353a37d6eff7fe472"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae62111abf551659353a37d6eff7fe472">genererLaGrilleAResoudre</a> (final int niveau, final int pourcentageDesire, final int[] grilleResolue, final int[] grilleAResoudre)</td></tr>
+<tr class="memdesc:ae62111abf551659353a37d6eff7fe472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté ou un pourcentage cible.  <br /></td></tr>
+<tr class="memitem:ad31ef7f7a7317855025cfc0d38e53f57" id="r_ad31ef7f7a7317855025cfc0d38e53f57"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad31ef7f7a7317855025cfc0d38e53f57">getPossibilitesGrilleAresoudreDifficile</a> (IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre)</td></tr>
+<tr class="memdesc:ad31ef7f7a7317855025cfc0d38e53f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku de niveau difficile.  <br /></td></tr>
+<tr class="memitem:ae83c327f3d5249d60832f189c5365c4d" id="r_ae83c327f3d5249d60832f189c5365c4d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae83c327f3d5249d60832f189c5365c4d">getPossibilitesGrilleAResoudreFacile</a> (IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre)</td></tr>
+<tr class="memdesc:ae83c327f3d5249d60832f189c5365c4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku de niveau moyen.  <br /></td></tr>
+<tr class="memitem:ad39a6631de24a15e6bd8e3f71279e758" id="r_ad39a6631de24a15e6bd8e3f71279e758"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ad39a6631de24a15e6bd8e3f71279e758">getPossibilitesGrilleAResoudreMoyenne</a> (IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre)</td></tr>
+<tr class="memdesc:ad39a6631de24a15e6bd8e3f71279e758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku de niveau moyen.  <br /></td></tr>
 <tr class="memitem:a7b8b865b518ad50e3d77814a16bf9634" id="r_a7b8b865b518ad50e3d77814a16bf9634"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7b8b865b518ad50e3d77814a16bf9634">getPossibilitesGrilleWhileNok</a> (int[] grilleResolue, int[] grilleAResoudre, int nombreDeCasesACacher)</td></tr>
 <tr class="memdesc:a7b8b865b518ad50e3d77814a16bf9634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache des cases dans la grille et calcule la somme des possibilités restantes.  <br /></td></tr>
 <tr class="memitem:ae544691a2f6f2b54de8f88d3babcc221" id="r_ae544691a2f6f2b54de8f88d3babcc221"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#ae544691a2f6f2b54de8f88d3babcc221">remplirLaGrille</a> (final int[] grille, final int[] possibilites)</td></tr>
@@ -545,27 +547,32 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af9f6b678d373391cd629f1ab2973b775" name="af9f6b678d373391cd629f1ab2973b775"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9f6b678d373391cd629f1ab2973b775">&#9670;&#160;</a></span>creerLesGrilles() <span class="overload">[1/2]</span></h2>
+<a id="a189b01658ea110e5c7ef6d4797cb7e47" name="a189b01658ea110e5c7ef6d4797cb7e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189b01658ea110e5c7ef6d4797cb7e47">&#9670;&#160;</a></span>creerLesGrilles() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a96eda4804ac4a3c9f57c9960599f724c">GrillesCrees</a> fr.softsf.sudokufx.common.util.sudoku.GridMaster.creerLesGrilles </td>
+          <td class="memname"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a9b767d7f5930ee45e7ce2467faedf322">GrillesCrees</a> fr.softsf.sudokufx.common.util.sudoku.GridMaster.creerLesGrilles </td>
           <td>(</td>
-          <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>niveau</em></span></td><td>)</td>
+          <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>niveau</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>pourcentageDesire</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté spécifié. </p>
-<p>L'algorithme génère une grille complète, puis applique un masquage stochastique jusqu'à satisfaire l'unicité de la solution et le prédicat de difficulté. *</p>
+<p>Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté et du pourcentage de possibilités désirés (-1 pour les possibilités correspondantes au niveau choisit). </p>
+<p>L'algorithme génère une grille complète, puis applique un masquage stochastique jusqu'à satisfaire l'unicité de la solution et le prédicat de difficulté, potentiellement contraint par le pourcentage désiré.</p>
 <p><b>Sécurité et Fail-safe :</b> La génération est protégée par un watchdog temporel et une limite de tentatives récursives. En cas d'échec critique à générer une grille valide dans les limites imparties, une grille réinitialisée (vide) est retournée.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">niveau</td><td>Niveau de difficulté désiré : 1 (Facile), 2 (Moyen), 3 (Difficile). </td></tr>
+    <tr><td class="paramname">pourcentageDesire</td><td>Pourcentage minimum de possibilités souhaité (0-100), ou -1. </td></tr>
   </table>
   </dd>
 </dl>
@@ -580,74 +587,61 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af9f6b678d373391cd629f1ab2973b775_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a189b01658ea110e5c7ef6d4797cb7e47_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="af9f6b678d373391cd629f1ab2973b775" name="af9f6b678d373391cd629f1ab2973b775"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9f6b678d373391cd629f1ab2973b775">&#9670;&#160;</a></span>creerLesGrilles() <span class="overload">[2/2]</span></h2>
+<a id="a189b01658ea110e5c7ef6d4797cb7e47" name="a189b01658ea110e5c7ef6d4797cb7e47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a189b01658ea110e5c7ef6d4797cb7e47">&#9670;&#160;</a></span>creerLesGrilles() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a96eda4804ac4a3c9f57c9960599f724c">GrillesCrees</a> fr.softsf.sudokufx.common.util.sudoku.GridMaster.creerLesGrilles </td>
+          <td class="memname"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a9b767d7f5930ee45e7ce2467faedf322">GrillesCrees</a> fr.softsf.sudokufx.common.util.sudoku.GridMaster.creerLesGrilles </td>
           <td>(</td>
-          <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>niveau</em></span></td><td>)</td>
+          <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>niveau</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>pourcentageDesire</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Crée les grilles de Sudoku (résolue et à résoudre) selon un niveau de difficulté donné. </p>
-<p>Les niveaux disponibles sont :</p>
+<p>Creates Sudoku grids (solved and unsolved) based on a level and a target difficulty percentage (-1 for level's default possibilities). </p>
+<p>Difficulty levels:</p>
 <ul>
 <li>
-<b>Facile (1)</b> : 34 à 39 cases cachées<br  />
-<ul>
-<li>Possibilités théoriques : 0 à 11000<br  />
-</li>
-<li>Possibilités pratiques : 4800 à 10500 </li>
-</ul>
-</li>
+<b>Easy (1)</b>: 34-39 hidden cells (Practical possibilities: 4,800 - 10,500) </li>
 <li>
-<b>Moyen (2)</b> : 39 à 44 cases cachées<br  />
-<ul>
-<li>Possibilités théoriques : 11000 à 22000<br  />
-</li>
-<li>Possibilités pratiques : 10500 à 12500 </li>
-</ul>
-</li>
+<b>Medium (2)</b>: 39-44 hidden cells (Practical possibilities: 10,500 - 12,500) </li>
 <li>
-<b>Difficile (3)</b> : 44 à 48 cases cachées<br  />
-<ul>
-<li>Possibilités théoriques : 22000 à 33000<br  />
-</li>
-<li>Possibilités pratiques : 12500 à 33000 </li>
+<b>Difficult (3)</b>: 44-48 hidden cells (Practical possibilities: 12,500 - 33,000) </li>
 </ul>
-</li>
-</ul>
-<p>Le pourcentage de possibilités est calculé à partir de la plage 4800 (0%) à 33000 (100%), afin d’estimer la difficulté réelle de la grille générée.</p>
+<p>Percentage is mapped from the range 4,800 (0%) to 33,000 (100%).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">niveau</td><td>le niveau de difficulté à appliquer (1 à 3) </td></tr>
+    <tr><td class="paramname">niveau</td><td>difficulty level (1 to 3) </td></tr>
+    <tr><td class="paramname">pourcentageDesire</td><td>target minimum possibility percentage (0-100), or -1 for default logic </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>un objet <code><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a96eda4804ac4a3c9f57c9960599f724c">GrillesCrees</a></code> contenant : <ul>
+<dl class="section return"><dt>Returns</dt><dd>a <code><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a9b767d7f5930ee45e7ce2467faedf322">GrillesCrees</a></code> object containing: <ul>
 <li>
-la grille résolue (<code class="JavaDocCode">grilleResolue</code>) </li>
+<code class="JavaDocCode">grilleResolue</code>: the completed grid </li>
 <li>
-la grille à résoudre (<code class="JavaDocCode">grilleAResoudre</code>) </li>
+<code class="JavaDocCode">grilleAResoudre</code>: the initial puzzle grid </li>
 <li>
-le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossibilites</code>) </li>
+<code class="JavaDocCode">pourcentageDesPossibilites</code>: the actual calculated difficulty percentage </li>
 </ul>
 </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>si <code class="JavaDocCode">niveau</code> est en dehors de l’intervalle [1, 3] </td></tr>
-    <tr><td class="paramname">ConstraintViolationException</td><td>si les données retournées ne respectent pas les contraintes de validation </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if niveau is outside [1, 3] </td></tr>
+    <tr><td class="paramname">ConstraintViolationException</td><td>if returned data violates validation constraints </td></tr>
   </table>
   </dd>
 </dl>
@@ -655,7 +649,7 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af9f6b678d373391cd629f1ab2973b775_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a189b01658ea110e5c7ef6d4797cb7e47_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -753,13 +747,15 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 </div><div class="memdoc">
 
 <p>Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté. </p>
-<p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation exhaustive via backtracking. Il itère jusqu'à ce que la <b>somme des possibilités</b> satisfasse le prédicat de difficulté. *</p>
+<p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation exhaustive via backtracking. Il itère jusqu'à ce que la <b>somme des possibilités</b> satisfasse le prédicat de difficulté.</p>
 <p><b>Optimisations et Sécurités :</b></p>
 <ul>
 <li>
+<b>Interruption :</b> Vérifie <code><a class="el" href="">Thread#isInterrupted()</a></code> pour stopper le calcul immédiatement si la <code><a class="el" href="">Task</a></code> est annulée. </li>
+<li>
 <b>Watchdog :</b> Limite chaque essai à <code><a class="el" href="#af26248c2c6aa8c6c63b3bc157ab33fb8">DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS</a></code>. </li>
 <li>
-<b>Récursion :</b> Relance une génération globale jusqu'à <code><a class="el" href="#a6d4062dcd109b1b2a2200dff31730a56">MAX_ESSAIS_POUR_GENERATION_DE_GRILLE</a></code>. </li>
+<b>Récursion :</b> Relance une génération globale jusqu'à <code><a class="el" href="#a6d4062dcd109b1b2a2200dff31730a56">MAX_ESSAIS_POUR_GENERATION_DE_GRILLE</a></code> en cas de timeout de l'essai actuel. </li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -772,7 +768,7 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités de la grille finale, ou -1 en cas d'échec. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités de la grille finale, ou -1 en cas d'échec (timeout, nombre max d'essais atteint ou interruption du thread). </dd></dl>
 <div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
@@ -782,8 +778,8 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 
 </div>
 </div>
-<a id="a4ee8cc0d8a933568aeb12ca14f8ab649" name="a4ee8cc0d8a933568aeb12ca14f8ab649"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ee8cc0d8a933568aeb12ca14f8ab649">&#9670;&#160;</a></span>genererLaGrilleAResoudre()</h2>
+<a id="ae62111abf551659353a37d6eff7fe472" name="ae62111abf551659353a37d6eff7fe472"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62111abf551659353a37d6eff7fe472">&#9670;&#160;</a></span>genererLaGrilleAResoudre()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -795,6 +791,11 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
           <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.genererLaGrilleAResoudre </td>
           <td>(</td>
           <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>niveau</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final int</td>          <td class="paramname"><span class="paramname"><em>pourcentageDesire</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -814,23 +815,25 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 </table>
 </div><div class="memdoc">
 
-<p>Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté. </p>
-<p>Cette méthode fait office de dispatcheur vers les implémentations spécifiques (Facile, Moyen, Difficile). Le masquage est désormais purement stochastique, basé sur les plages de cellules à cacher définies pour chaque niveau.</p>
+<p>Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté ou un pourcentage cible. </p>
+<p>Cette méthode fait office de dispatcheur. Elle construit dynamiquement une condition de validation (<code><a class="el" href="">IntPredicate</a></code>) basée soit sur les seuils standards du niveau, soit sur une plage de possibilités calculée à partir du <code class="JavaDocCode">pourcentageDesire</code>.</p>
+<p>Le masquage est purement stochastique, basé sur les plages de cellules à cacher définies pour chaque niveau (Facile, Moyen, Difficile).</p>
 <p><b>Gestion des échecs :</b> Si la génération échoue (difficulté non atteinte ou unicité non garantie après le nombre maximal d'essais), la méthode peut retourner une grille réinitialisée à zéro.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">niveau</td><td>Le niveau de difficulté : 1 (facile), 2 (moyen), 3 (difficile). </td></tr>
+    <tr><td class="paramname">pourcentageDesire</td><td>Le pourcentage minimum de possibilités souhaité (0 à 100), ou -1 pour le comportement standard du niveau. </td></tr>
     <tr><td class="paramname">grilleResolue</td><td>La grille complète servant de référence pour le masquage. </td></tr>
-    <tr><td class="paramname">grilleAResoudre</td><td>Le tableau de destination qui recevra la grille à trous. <b>IMPORTANT :</b> Ce tableau est modifié par effet de bord. </td></tr>
+    <tr><td class="paramname">grilleAResoudre</td><td>Le tableau de destination (81 cases) modifié par effet de bord. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités (score de difficulté) de la grille finale, ou -1 en cas d'échec critique de génération. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités brute de la grille finale, ou -1 en cas d'échec. </dd></dl>
 <div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-9-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a4ee8cc0d8a933568aeb12ca14f8ab649_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ae62111abf551659353a37d6eff7fe472_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -907,8 +910,34 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 
 </div>
 </div>
-<a id="aa77557d49c6d3377a6409b74f6386595" name="aa77557d49c6d3377a6409b74f6386595"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa77557d49c6d3377a6409b74f6386595">&#9670;&#160;</a></span>getPossibilitesGrilleAresoudreDifficile()</h2>
+<a id="a7da72c06bb28816dc19695add4cbdb27" name="a7da72c06bb28816dc19695add4cbdb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7da72c06bb28816dc19695add4cbdb27">&#9670;&#160;</a></span>getPossibilitesDepuisPourcentage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesDepuisPourcentage </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pourcentage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule la somme des possibilités basée sur un pourcentage de difficulté. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pourcentage</td><td>Le pourcentage de difficulté (0 à 100). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>La somme brute des possibilités correspondante. </dd></dl>
+
+</div>
+</div>
+<a id="ad31ef7f7a7317855025cfc0d38e53f57" name="ad31ef7f7a7317855025cfc0d38e53f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31ef7f7a7317855025cfc0d38e53f57">&#9670;&#160;</a></span>getPossibilitesGrilleAresoudreDifficile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -919,6 +948,11 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
         <tr>
           <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleAresoudreDifficile </td>
           <td>(</td>
+          <td class="paramtype">IntPredicate</td>          <td class="paramname"><span class="paramname"><em>conditionValidation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grilleResolue</em></span>, </td>
         </tr>
         <tr>
@@ -937,6 +971,7 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 <p>Génère une grille de Sudoku de niveau difficile. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">conditionValidation</td><td>Prédicat définissant les bornes de difficulté acceptables. </td></tr>
     <tr><td class="paramname">grilleResolue</td><td>Grille complètement remplie servant de base. </td></tr>
     <tr><td class="paramname">grilleAResoudre</td><td>Grille à remplir avec les cases masquées (modifiée par la méthode). </td></tr>
   </table>
@@ -947,13 +982,13 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_aa77557d49c6d3377a6409b74f6386595_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ad31ef7f7a7317855025cfc0d38e53f57_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
 </div>
-<a id="a14a9157214a31a7be5f08c78c129a96d" name="a14a9157214a31a7be5f08c78c129a96d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14a9157214a31a7be5f08c78c129a96d">&#9670;&#160;</a></span>getPossibilitesGrilleAResoudreFacile()</h2>
+<a id="ae83c327f3d5249d60832f189c5365c4d" name="ae83c327f3d5249d60832f189c5365c4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83c327f3d5249d60832f189c5365c4d">&#9670;&#160;</a></span>getPossibilitesGrilleAResoudreFacile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -964,51 +999,11 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
         <tr>
           <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleAResoudreFacile </td>
           <td>(</td>
-          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grilleResolue</em></span>, </td>
+          <td class="paramtype">IntPredicate</td>          <td class="paramname"><span class="paramname"><em>conditionValidation</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grilleAResoudre</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Génère une grille de Sudoku de niveau facile. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">grilleResolue</td><td>Grille complètement remplie servant de base. </td></tr>
-    <tr><td class="paramname">grilleAResoudre</td><td>Grille à remplir avec les cases masquées (modifiée par la méthode). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Somme des possibilités restantes dans la grille à résoudre. </dd></dl>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
-</div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a14a9157214a31a7be5f08c78c129a96d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
-</div>
-
-</div>
-</div>
-<a id="ab77d72c8f1612e20c9d7b27f6869b08b" name="ab77d72c8f1612e20c9d7b27f6869b08b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab77d72c8f1612e20c9d7b27f6869b08b">&#9670;&#160;</a></span>getPossibilitesGrilleAResoudreMoyenne()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleAResoudreMoyenne </td>
-          <td>(</td>
           <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grilleResolue</em></span>, </td>
         </tr>
         <tr>
@@ -1027,6 +1022,58 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 <p>Génère une grille de Sudoku de niveau moyen. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">conditionValidation</td><td>Prédicat définissant les bornes de difficulté acceptables. </td></tr>
+    <tr><td class="paramname">grilleResolue</td><td>Grille complètement remplie servant de base. </td></tr>
+    <tr><td class="paramname">grilleAResoudre</td><td>Grille à remplir avec les cases masquées (modifiée par la méthode). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Somme des possibilités restantes dans la grille à résoudre. </dd></dl>
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ae83c327f3d5249d60832f189c5365c4d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ad39a6631de24a15e6bd8e3f71279e758" name="ad39a6631de24a15e6bd8e3f71279e758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39a6631de24a15e6bd8e3f71279e758">&#9670;&#160;</a></span>getPossibilitesGrilleAResoudreMoyenne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleAResoudreMoyenne </td>
+          <td>(</td>
+          <td class="paramtype">IntPredicate</td>          <td class="paramname"><span class="paramname"><em>conditionValidation</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grilleResolue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grilleAResoudre</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Génère une grille de Sudoku de niveau moyen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">conditionValidation</td><td>Prédicat définissant les bornes de difficulté acceptables. </td></tr>
     <tr><td class="paramname">grilleResolue</td><td>Grille complètement remplie servant de base. </td></tr>
     <tr><td class="paramname">grilleAResoudre</td><td>Grille à remplir avec les cases masquées (modifiée par la méthode). </td></tr>
   </table>
@@ -1037,7 +1084,7 @@ le pourcentage des possibilités (<code class="JavaDocCode">pourcentageDesPossib
 <div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-14-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ab77d72c8f1612e20c9d7b27f6869b08b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ad39a6631de24a15e6bd8e3f71279e758_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

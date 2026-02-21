@@ -1,0 +1,23 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevelForTests" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevelForTests">
+<area shape="rect" id="Node000001" title="Synchronously generates and applies a new grid." alt="" coords="5,121,262,180"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9c424a4b389a43cdaad40bb2bddacfca" title="Applies the generated grid data to the player state and UI cells." alt="" coords="310,129,538,172"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,148,294,148,294,153,262,153"/>
+<area shape="rect" id="Node000005" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#ab1bebf1bd508380d7ace78f40778e05c" title="Converts this difficulty level to its numeric representation." alt="" coords="891,5,1115,48"/>
+<area shape="poly" id="edge12_Node000001_Node000005" title=" " alt="" coords="245,118,406,81,586,48,736,33,875,26,876,31,736,38,586,53,407,86,247,123"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="894,253,1112,296"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="247,178,407,216,586,248,738,263,879,270,878,275,738,268,586,253,406,221,245,183"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9b97547be6bd1bf9961ff859ae23afd7" title="Handles UI notifications when grid generation fails." alt="" coords="586,196,839,239"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="520,170,603,189,602,195,519,175"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6" title="Persists a newly generated game for the current player, updating the selected game with grids,..." alt="" coords="604,63,822,105"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="519,126,602,107,603,112,520,131"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="604,129,822,172"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="538,148,588,148,588,153,538,153"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="822,60,876,49,877,54,823,65"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="819,170,841,182,857,196,866,211,874,226,889,239,896,244,894,248,886,243,870,229,861,214,853,200,838,186,816,175"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="888,96,1118,139"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="822,135,872,130,872,135,823,141"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="887,187,1119,229"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="823,170,877,180,876,186,822,175"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="949,96,946,86,956,77,974,71,1003,69,1034,72,1053,78,1051,83,1033,77,1003,75,975,77,958,81,952,87,954,95"/>
+<area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="949,187,946,177,956,167,974,162,1003,160,1034,162,1053,169,1051,174,1033,168,1003,165,975,167,958,172,952,178,954,185"/>
+</map>
