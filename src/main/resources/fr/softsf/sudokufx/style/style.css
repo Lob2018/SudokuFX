@@ -137,7 +137,7 @@
     -fx-padding: -.1em;
     -fx-text-overrun: clip;
     -fx-wrap-text: false;
-    -fx-background-color: black;
+    -fx-background-color: #555;
     -fx-text-fill: white;
 }
 
