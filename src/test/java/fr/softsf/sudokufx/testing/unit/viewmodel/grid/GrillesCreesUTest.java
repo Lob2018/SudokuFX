@@ -73,12 +73,12 @@ class GrillesCreesUTest {
     }
 
     @Test
-    void givenPourcentageDesPossibilitesBelowZero_whenValidate_thenViolation() {
-        GrillesCrees grilles = new GrillesCrees(VALID_GRID, VALID_GRID, -1);
+    void givenPourcentageDesPossibilitesBelowMinusOne_whenValidate_thenViolation() {
+        GrillesCrees grilles = new GrillesCrees(VALID_GRID, VALID_GRID, -2);
         Set<ConstraintViolation<GrillesCrees>> violations = validator.validate(grilles);
         assertFalse(violations.isEmpty());
         assertThat(violations.iterator().next().getMessage())
-                .contains("possibilityPercentage must be >= 0");
+                .contains("possibilityPercentage must be >= -1");
     }
 
     @Test

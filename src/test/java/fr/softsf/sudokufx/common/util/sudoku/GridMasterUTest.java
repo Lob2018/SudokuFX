@@ -81,13 +81,13 @@ class GridMasterUTest {
     @ParameterizedTest
     @ValueSource(ints = {-1, -100, 300})
     void givenInvalidLevel_whenCreateGrids_thenThrowsIllegalArgumentException(int level) {
-        assertThrows(IllegalArgumentException.class, () -> gridMaster.creerLesGrilles(level));
+        assertThrows(IllegalArgumentException.class, () -> gridMaster.creerLesGrilles(level, -1));
     }
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     void givenValidLevel_whenCreateGrids_thenGridsGeneratedSuccessfully(int level) {
-        GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level);
+        GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level, -1);
         assertGrillesCreesValides(grillesCrees);
     }
 
@@ -144,7 +144,7 @@ class GridMasterUTest {
             case 3 -> gridMaster.setDifficultImpossiblePossibilitiesForTests();
             default -> gridMaster.setEasyImpossiblePossibilitiesForTests();
         }
-        GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level);
+        GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level, -1);
         long countZerosPuzzle =
                 Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
         assertEquals(81, countZerosPuzzle);

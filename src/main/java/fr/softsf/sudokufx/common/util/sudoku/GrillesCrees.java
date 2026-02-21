@@ -29,12 +29,13 @@ import static java.util.Objects.requireNonNull;
  *
  * @param grilleResolue The fully solved Sudoku grid (81 elements, values 0-9).
  * @param grilleAResoudre The initial puzzle grid with holes (81 elements, values 0-9).
- * @param pourcentageDesPossibilites Resolution progress or difficulty estimate (0-100).
+ * @param pourcentageDesPossibilites Resolution progress or difficulty estimate (0-100), or -1 if
+ *     the grid generation failed (e.g., watchdog timeout).
  */
 public record GrillesCrees(
         @Nonnull @NotNull(message = "grilleResolue must not be null") @Size(min = 81, max = 81) int[] grilleResolue,
         @Nonnull @NotNull(message = "grilleAResoudre must not be null") @Size(min = 81, max = 81) int[] grilleAResoudre,
-        @Min(value = 0, message = "possibilityPercentage must be >= 0") @Max(value = 100, message = "possibilityPercentage must be <= 100") int pourcentageDesPossibilites) {
+        @Min(value = -1, message = "possibilityPercentage must be >= -1") @Max(value = 100, message = "possibilityPercentage must be <= 100") int pourcentageDesPossibilites) {
 
     private static final Logger LOG = LoggerFactory.getLogger(GrillesCrees.class);
     private static final int GRID_SIZE = 81;

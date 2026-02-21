@@ -45,6 +45,19 @@ public sealed interface IGridMaster permits GridMaster {
     }
 
     /**
+     * Calcule la somme des possibilités basée sur un pourcentage de difficulté.
+     *
+     * @param pourcentage Le pourcentage de difficulté (0 à 100).
+     * @return La somme brute des possibilités correspondante.
+     */
+    default int getPossibilitesDepuisPourcentage(int pourcentage) {
+        int somme =
+                MIN_POSSIBILITES
+                        + (pourcentage * (MAX_POSSIBILITES - MIN_POSSIBILITES)) / POURCENTAGE_MAX;
+        return Math.clamp(somme, MIN_POSSIBILITES, MAX_POSSIBILITES);
+    }
+
+    /**
      * Récupère l'intervalle de pourcentages autorisé pour un niveau de difficulté donné.
      *
      * @param level le niveau de difficulté cible
@@ -72,38 +85,33 @@ public sealed interface IGridMaster permits GridMaster {
     }
 
     /**
-     * Crée les grilles de Sudoku (résolue et à résoudre) selon un niveau de difficulté donné.
+     * Creates Sudoku grids (solved and unsolved) based on a level and a target difficulty
+     * percentage (-1 for level's default possibilities).
      *
-     * <p>Les niveaux disponibles sont :
+     * <p>Difficulty levels:
      *
      * <ul>
-     *   <li><b>Facile (1)</b> : 34 à 39 cases cachées<br>
-     *       - Possibilités théoriques : 0 à 11000<br>
-     *       - Possibilités pratiques : 4800 à 10500
-     *   <li><b>Moyen (2)</b> : 39 à 44 cases cachées<br>
-     *       - Possibilités théoriques : 11000 à 22000<br>
-     *       - Possibilités pratiques : 10500 à 12500
-     *   <li><b>Difficile (3)</b> : 44 à 48 cases cachées<br>
-     *       - Possibilités théoriques : 22000 à 33000<br>
-     *       - Possibilités pratiques : 12500 à 33000
+     *   <li><b>Easy (1)</b>: 34-39 hidden cells (Practical possibilities: 4,800 - 10,500)
+     *   <li><b>Medium (2)</b>: 39-44 hidden cells (Practical possibilities: 10,500 - 12,500)
+     *   <li><b>Difficult (3)</b>: 44-48 hidden cells (Practical possibilities: 12,500 - 33,000)
      * </ul>
      *
-     * <p>Le pourcentage de possibilités est calculé à partir de la plage 4800 (0%) à 33000 (100%),
-     * afin d’estimer la difficulté réelle de la grille générée.
+     * <p>Percentage is mapped from the range 4,800 (0%) to 33,000 (100%).
      *
-     * @param niveau le niveau de difficulté à appliquer (1 à 3)
-     * @return un objet {@link GrillesCrees} contenant :
+     * @param niveau difficulty level (1 to 3)
+     * @param pourcentageDesire target minimum possibility percentage (0-100), or -1 for default
+     *     logic
+     * @return a {@link GrillesCrees} object containing:
      *     <ul>
-     *       <li>la grille résolue ({@code grilleResolue})
-     *       <li>la grille à résoudre ({@code grilleAResoudre})
-     *       <li>le pourcentage des possibilités ({@code pourcentageDesPossibilites})
+     *       <li>{@code grilleResolue}: the completed grid
+     *       <li>{@code grilleAResoudre}: the initial puzzle grid
+     *       <li>{@code pourcentageDesPossibilites}: the actual calculated difficulty percentage
      *     </ul>
      *
-     * @throws IllegalArgumentException si {@code niveau} est en dehors de l’intervalle [1, 3]
-     * @throws ConstraintViolationException si les données retournées ne respectent pas les
-     *     contraintes de validation
+     * @throws IllegalArgumentException if niveau is outside [1, 3]
+     * @throws ConstraintViolationException if returned data violates validation constraints
      */
-    GrillesCrees creerLesGrilles(final int niveau);
+    GrillesCrees creerLesGrilles(final int niveau, final int pourcentageDesire);
 
     /**
      * Résout une grille de Sudoku en remplissant les cases vides avec des valeurs valides.

@@ -12,6 +12,7 @@ import java.util.stream.IntStream;
 
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
 
@@ -272,29 +273,61 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté.
+     * Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté ou
+     * un pourcentage cible.
      *
-     * <p>Cette méthode fait office de dispatcheur vers les implémentations spécifiques (Facile,
-     * Moyen, Difficile). Le masquage est désormais purement stochastique, basé sur les plages de
-     * cellules à cacher définies pour chaque niveau.
+     * <p>Cette méthode fait office de dispatcheur. Elle construit dynamiquement une condition de
+     * validation ({@link IntPredicate}) basée soit sur les seuils standards du niveau, soit sur une
+     * plage de possibilités calculée à partir du {@code pourcentageDesire}.
+     *
+     * <p>Le masquage est purement stochastique, basé sur les plages de cellules à cacher définies
+     * pour chaque niveau (Facile, Moyen, Difficile).
      *
      * <p><b>Gestion des échecs :</b> Si la génération échoue (difficulté non atteinte ou unicité
      * non garantie après le nombre maximal d'essais), la méthode peut retourner une grille
      * réinitialisée à zéro.
      *
      * @param niveau Le niveau de difficulté : 1 (facile), 2 (moyen), 3 (difficile).
+     * @param pourcentageDesire Le pourcentage minimum de possibilités souhaité (0 à 100), ou -1
+     *     pour le comportement standard du niveau.
      * @param grilleResolue La grille complète servant de référence pour le masquage.
-     * @param grilleAResoudre Le tableau de destination qui recevra la grille à trous. <b>IMPORTANT
-     *     :</b> Ce tableau est modifié par effet de bord.
-     * @return La somme des possibilités (score de difficulté) de la grille finale, ou -1 en cas
-     *     d'échec critique de génération.
+     * @param grilleAResoudre Le tableau de destination (81 cases) modifié par effet de bord.
+     * @return La somme des possibilités brute de la grille finale, ou -1 en cas d'échec.
      */
     private int genererLaGrilleAResoudre(
-            final int niveau, final int[] grilleResolue, final int[] grilleAResoudre) {
-        return switch (niveau) {
-            case 2 -> getPossibilitesGrilleAResoudreMoyenne(grilleResolue, grilleAResoudre);
-            case 3 -> getPossibilitesGrilleAresoudreDifficile(grilleResolue, grilleAResoudre);
-            default -> getPossibilitesGrilleAResoudreFacile(grilleResolue, grilleAResoudre);
+            final int niveau,
+            final int pourcentageDesire,
+            final int[] grilleResolue,
+            final int[] grilleAResoudre) {
+        final DifficultyLevel level = DifficultyLevel.fromGridByte((byte) niveau);
+        IntPredicate condition;
+        if (pourcentageDesire == -1) {
+            condition =
+                    switch (level) {
+                        case EASY -> somme -> somme <= this.moyenMinPossibilites;
+                        case MEDIUM ->
+                                somme ->
+                                        somme >= this.moyenMinPossibilites
+                                                && somme <= this.moyenMaxPossibilites;
+                        case DIFFICULT -> somme -> somme >= this.moyenMaxPossibilites;
+                    };
+        } else {
+            int min = getPossibilitesDepuisPourcentage(pourcentageDesire);
+            int max =
+                    getPossibilitesDepuisPourcentage(
+                            calculerValeurSuperieureDuSegment(
+                                    getIntervallePourcentageNiveau(level), pourcentageDesire));
+            condition = somme -> somme >= min && somme <= max;
+        }
+        return switch (level) {
+            case MEDIUM ->
+                    getPossibilitesGrilleAResoudreMoyenne(
+                            condition, grilleResolue, grilleAResoudre);
+            case DIFFICULT ->
+                    getPossibilitesGrilleAresoudreDifficile(
+                            condition, grilleResolue, grilleAResoudre);
+            default ->
+                    getPossibilitesGrilleAResoudreFacile(condition, grilleResolue, grilleAResoudre);
         };
     }
 
@@ -426,54 +459,59 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku de niveau facile.
+     * Génère une grille de Sudoku de niveau moyen.
      *
+     * @param conditionValidation Prédicat définissant les bornes de difficulté acceptables.
      * @param grilleResolue Grille complètement remplie servant de base.
      * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
      * @return Somme des possibilités restantes dans la grille à résoudre.
      */
-    private int getPossibilitesGrilleAResoudreFacile(int[] grilleResolue, int[] grilleAResoudre) {
+    private int getPossibilitesGrilleAResoudreFacile(
+            IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre) {
         return genererGrilleAvecCasesCachees(
                 grilleResolue,
                 grilleAResoudre,
                 FACILE_MIN_CACHEES,
                 MOYEN_MIN_CACHEES,
-                somme -> somme <= moyenMinPossibilites,
+                conditionValidation,
                 1);
     }
 
     /**
      * Génère une grille de Sudoku de niveau moyen.
      *
+     * @param conditionValidation Prédicat définissant les bornes de difficulté acceptables.
      * @param grilleResolue Grille complètement remplie servant de base.
      * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
      * @return Somme des possibilités restantes dans la grille à résoudre.
      */
-    private int getPossibilitesGrilleAResoudreMoyenne(int[] grilleResolue, int[] grilleAResoudre) {
+    private int getPossibilitesGrilleAResoudreMoyenne(
+            IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre) {
         return genererGrilleAvecCasesCachees(
                 grilleResolue,
                 grilleAResoudre,
                 MOYEN_MIN_CACHEES,
                 MOYEN_MAX_CACHEES,
-                somme -> somme >= moyenMinPossibilites && somme <= moyenMaxPossibilites,
+                conditionValidation,
                 1);
     }
 
     /**
      * Génère une grille de Sudoku de niveau difficile.
      *
+     * @param conditionValidation Prédicat définissant les bornes de difficulté acceptables.
      * @param grilleResolue Grille complètement remplie servant de base.
      * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
      * @return Somme des possibilités restantes dans la grille à résoudre.
      */
     private int getPossibilitesGrilleAresoudreDifficile(
-            int[] grilleResolue, int[] grilleAResoudre) {
+            IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre) {
         return genererGrilleAvecCasesCachees(
                 grilleResolue,
                 grilleAResoudre,
                 MOYEN_MAX_CACHEES,
                 DIFFICILE_MAX_CACHEES,
-                somme -> somme >= moyenMaxPossibilites,
+                conditionValidation,
                 1);
     }
 
@@ -637,23 +675,26 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté
-     * spécifié.
+     * Crée une paire de grilles (résolue et à résoudre) en fonction du niveau de difficulté et du
+     * pourcentage de possibilités désirés (-1 pour les possibilités correspondantes au niveau
+     * choisit).
      *
      * <p>L'algorithme génère une grille complète, puis applique un masquage stochastique jusqu'à
-     * satisfaire l'unicité de la solution et le prédicat de difficulté. *
+     * satisfaire l'unicité de la solution et le prédicat de difficulté, potentiellement contraint
+     * par le pourcentage désiré.
      *
      * <p><b>Sécurité et Fail-safe :</b> La génération est protégée par un watchdog temporel et une
      * limite de tentatives récursives. En cas d'échec critique à générer une grille valide dans les
      * limites imparties, une grille réinitialisée (vide) est retournée.
      *
      * @param niveau Niveau de difficulté désiré : 1 (Facile), 2 (Moyen), 3 (Difficile).
+     * @param pourcentageDesire Pourcentage minimum de possibilités souhaité (0-100), ou -1.
      * @return Un enregistrement {@code GrillesCrees} contenant la grille résolue, la grille à
      *     résoudre, et le pourcentage de difficulté estimé (score de complexité).
      * @throws IllegalArgumentException si le niveau n'est pas compris entre 1 et 3.
      */
     @Override
-    public GrillesCrees creerLesGrilles(final int niveau) {
+    public GrillesCrees creerLesGrilles(final int niveau, final int pourcentageDesire) {
         // Lever une exception si le niveau n'existe pas
         if (niveau < 1 || niveau > 3) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
@@ -667,12 +708,15 @@ public final class GridMaster implements IGridMaster {
         resoudreLaGrille(grilleResolue);
         // Initialiser la grille à résoudre (vide au départ)
         int[] grilleAResoudre = new int[NOMBRE_CASES];
-
-        // En fonction du niveau, cacher un certain nombre de cases et tenir compte des possibilités
-        int sommeDesPossibilites = genererLaGrilleAResoudre(niveau, grilleResolue, grilleAResoudre);
-
+        // En fonction du niveau, cacher un nombre de cases et tenir compte de pourcentage de
+        // possibilités desiré
+        int sommeDesPossibilites =
+                genererLaGrilleAResoudre(niveau, pourcentageDesire, grilleResolue, grilleAResoudre);
         // Récupérer le pourcentage de possibilités estimé
-        int pourcentageDesPossibilites = getPourcentageDepuisPossibilites(sommeDesPossibilites);
+        int pourcentageDesPossibilites =
+                sommeDesPossibilites == -1
+                        ? -1
+                        : getPourcentageDepuisPossibilites(sommeDesPossibilites);
         // Crée un record GrillesCrees structuré contenant les deux grilles et le pourcentage
         GrillesCrees grillesCrees =
                 new GrillesCrees(grilleResolue, grilleAResoudre, pourcentageDesPossibilites);

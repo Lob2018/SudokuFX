@@ -105,6 +105,6 @@ public class BenchGridMaster {
      */
     @Benchmark
     public void measureCreerLesGrilles(GridState state, Blackhole bh) {
-        bh.consume(state.gridMaster.creerLesGrilles(NIVEAU_DIFFICULTE_MOYEN));
+        bh.consume(state.gridMaster.creerLesGrilles(NIVEAU_DIFFICULTE_MOYEN, -1));
     }
 }

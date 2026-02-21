@@ -108,7 +108,10 @@ public class LevelInteractionHandler {
     }
 
     /**
-     * Finalizes level selection and updates reactive state across view models.
+     * Finalizes level selection and updates reactive state across view models. *
+     *
+     * <p>The process is aborted if {@link GridViewModel#setCurrentGridWithLevel} returns -1,
+     * indicating that the grid generation failed (e.g., watchdog timeout).
      *
      * @param opaqueApplier callback to refresh visual opacity based on the current options state
      */
@@ -116,7 +119,11 @@ public class LevelInteractionHandler {
         Objects.requireNonNull(level, "level mustn't be null");
         Objects.requireNonNull(opaqueApplier, "opaqueApplier mustn't be null");
         desiredPossibilitiesTimeline.stop();
-        menuLevelViewModel.updateSelectedLevel(level, gridViewModel.setCurrentGridWithLevel(level));
+        int possibilitiesPercentage = gridViewModel.setCurrentGridWithLevel(level);
+        if (possibilitiesPercentage == -1) {
+            return;
+        }
+        menuLevelViewModel.updateSelectedLevel(level, possibilitiesPercentage);
         opaqueApplier.accept(menuOptionsViewModel.gridOpacityProperty().get());
     }
 

@@ -479,11 +479,19 @@ public class GridViewModel {
      * @return the percentage of possibilities for the generated grid
      * @throws NullPointerException if {@code level} is {@code null}
      */
-    // TODO : Overload creerLesGrillesTo with desiredPossibilities
     public int setCurrentGridWithLevel(DifficultyLevel level) {
         checkInitialized();
         Objects.requireNonNull(level, "level mustn't be null");
-        GrillesCrees grillesCrees = iGridMaster.creerLesGrilles(level.toGridNumber());
+        GrillesCrees grillesCrees =
+                iGridMaster.creerLesGrilles(level.toGridNumber(), desiredPossibilities);
+        if (grillesCrees.pourcentageDesPossibilites() == -1) {
+            toasterService.requestRemoveToast();
+            toasterService.showInfo(
+                    I18n.INSTANCE.getValue(
+                            "toast.msg.levelInteractionHandler.desiredpossibilities.failed"),
+                    "");
+            return -1;
+        }
         persistNewGame(level, grillesCrees);
         setValues(iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()), true);
         return grillesCrees.pourcentageDesPossibilites();
