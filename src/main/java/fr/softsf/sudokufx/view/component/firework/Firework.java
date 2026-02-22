@@ -40,7 +40,7 @@ public class Firework extends Group {
     public static final int PARTICLE_RADIUS_VARIANCE = 5;
     public static final int SPEED_VARIANCE = 4;
 
-    private static final long NS_PER_FRAME = 1_000_000_000L / 72;
+    private static final long NS_PER_FRAME = 1_000_000_000L / 60;
     private long lastUpdate = 0;
 
     private final List<FireworkParticle> particles = new ArrayList<>();
