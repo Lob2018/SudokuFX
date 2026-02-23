@@ -12,7 +12,7 @@
   <!-- Project information -->
   <groupId>fr.softsf</groupId>
   <artifactId>SudokuFX</artifactId>
-  <version>1.4.2</version>
+  <version>1.4.3</version>
   <name>Sudoku</name>
   <organization>
     <name>Soft64.fr</name>
