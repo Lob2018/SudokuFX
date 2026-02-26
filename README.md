@@ -25,7 +25,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 [![Open Issues](https://img.shields.io/github/issues/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/issues)
 [![Open Pull Requests](https://img.shields.io/github/issues-pr/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/pulls)
 [![GitHub release](https://img.shields.io/github/v/release/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/releases)
-[![Downloads](https://img.shields.io/github/downloads/lob2018/sudokufx/total?logo=github)](https://github.com/lob2018/sudokufx/releases)
+[![Downloads](https://img.shields.io/github/downloads/Lob2018/sudokufx/total?logo=github)](https://github.com/Lob2018/sudokufx/releases)
 
 # [![SudokuFX in action](https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg)](https://github.com/Lob2018/SudokuFX/releases/latest)
 
