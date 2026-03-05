@@ -156,6 +156,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a61620074efb6445cb51a5c79efd1baf1" id="r_a61620074efb6445cb51a5c79efd1baf1"><td class="memItemLeft">final FadeTransition&#160;</td><td class="memItemRight"><a class="el" href="#a61620074efb6445cb51a5c79efd1baf1">fadeIn</a> = new FadeTransition(Duration.seconds(1), this)</td></tr>
 <tr class="memitem:a8e376fa6c20da2cd1d416b7b19241bf2" id="r_a8e376fa6c20da2cd1d416b7b19241bf2"><td class="memItemLeft">final BooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#a8e376fa6c20da2cd1d416b7b19241bf2">firingProperty</a></td></tr>
 <tr class="memdesc:a8e376fa6c20da2cd1d416b7b19241bf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Managed property handling the animation lifecycle.  <br /></td></tr>
+<tr class="memitem:af271afb69bfb6dc543d571879752424a" id="r_af271afb69bfb6dc543d571879752424a"><td class="memItemLeft">long&#160;</td><td class="memItemRight"><a class="el" href="#af271afb69bfb6dc543d571879752424a">lastUpdate</a> = 0</td></tr>
 <tr class="memitem:a3ec836b34e0c87b85a84ca094c0b1f29" id="r_a3ec836b34e0c87b85a84ca094c0b1f29"><td class="memItemLeft">final List&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html">FireworkParticle</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a3ec836b34e0c87b85a84ca094c0b1f29">particles</a> = new ArrayList&lt;&gt;()</td></tr>
 <tr class="memitem:a75f00957ef98edb146c28f3645157111" id="r_a75f00957ef98edb146c28f3645157111"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a75f00957ef98edb146c28f3645157111">spawnRatio</a> = 0</td></tr>
 <tr class="memitem:ae5531b9cb1655a17ddfee7fd85df0b5e" id="r_ae5531b9cb1655a17ddfee7fd85df0b5e"><td class="memItemLeft">final AnimationTimer&#160;</td><td class="memItemRight"><a class="el" href="#ae5531b9cb1655a17ddfee7fd85df0b5e">timer</a></td></tr>
@@ -163,6 +164,7 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:aa4052c0cc8f76fe23fd176a56aa8841c" id="r_aa4052c0cc8f76fe23fd176a56aa8841c"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#aa4052c0cc8f76fe23fd176a56aa8841c">DEFAULT_COUNTDOWN</a> = 4</td></tr>
+<tr class="memitem:ae24e4151f33d0d95b39737b1dde63549" id="r_ae24e4151f33d0d95b39737b1dde63549"><td class="memItemLeft">static final long&#160;</td><td class="memItemRight"><a class="el" href="#ae24e4151f33d0d95b39737b1dde63549">NS_PER_FRAME</a> = 1_000_000_000L / 60</td></tr>
 <tr class="memitem:af70d4e9b6fb1079a082c743e99ef03e0" id="r_af70d4e9b6fb1079a082c743e99ef03e0"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#af70d4e9b6fb1079a082c743e99ef03e0">REFERENCE_SCREEN_WIDTH</a> = 1000</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
@@ -485,6 +487,28 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af271afb69bfb6dc543d571879752424a" name="af271afb69bfb6dc543d571879752424a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af271afb69bfb6dc543d571879752424a">&#9670;&#160;</a></span>lastUpdate</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">long fr.softsf.sudokufx.view.component.firework.Firework.lastUpdate = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ae902222347b7179fc0e78a3b23a5cf5e" name="ae902222347b7179fc0e78a3b23a5cf5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae902222347b7179fc0e78a3b23a5cf5e">&#9670;&#160;</a></span>MAXIMUM_HUE</h2>
 
@@ -545,6 +569,28 @@ Static Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae24e4151f33d0d95b39737b1dde63549" name="ae24e4151f33d0d95b39737b1dde63549"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24e4151f33d0d95b39737b1dde63549">&#9670;&#160;</a></span>NS_PER_FRAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final long fr.softsf.sudokufx.view.component.firework.Firework.NS_PER_FRAME = 1_000_000_000L / 60</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

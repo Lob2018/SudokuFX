@@ -1,5 +1,13 @@
 var NAVTREEINDEX21 =
 {
+"functions_func.html":[2,3,1,0],
+"functions_func_a.html":[2,3,1,1],
+"functions_func_b.html":[2,3,1,2],
+"functions_func_c.html":[2,3,1,3],
+"functions_func_d.html":[2,3,1,4],
+"functions_func_e.html":[2,3,1,5],
+"functions_func_f.html":[2,3,1,6],
+"functions_func_g.html":[2,3,1,7],
 "functions_func_h.html":[2,3,1,8],
 "functions_func_i.html":[2,3,1,9],
 "functions_func_j.html":[2,3,1,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX21 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#af47ba9e0d8410ef2ca7c414381da7d9e":[1,0,0,0,0,8,1,1,0,2],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#af4ea72d9669b38d9894fdf23390f47bd":[1,0,0,0,0,8,1,1,0,7],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state.html":[1,0,0,0,0,8,1,2,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums.html":[1,0,0,0,0,8,2,0,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception.html":[1,0,0,0,0,8,2,0,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util.html":[1,0,0,0,0,8,2,0,2],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math.html":[1,0,0,0,0,8,2,0,2,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os.html":[1,0,0,0,0,8,2,0,2,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business.html":[1,0,0,0,0,8,2,1,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui.html":[1,0,0,0,0,8,2,1,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main.html":[1,0,0,0,0,8,2,2,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util.html":[1,0,0,0,0,8,2,2,1]
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums.html":[1,0,0,0,0,8,2,0,0]
 };

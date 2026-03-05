@@ -1,5 +1,13 @@
 var NAVTREEINDEX22 =
 {
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception.html":[1,0,0,0,0,8,2,0,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util.html":[1,0,0,0,0,8,2,0,2],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math.html":[1,0,0,0,0,8,2,0,2,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os.html":[1,0,0,0,0,8,2,0,2,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business.html":[1,0,0,0,0,8,2,1,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui.html":[1,0,0,0,0,8,2,1,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main.html":[1,0,0,0,0,8,2,2,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util.html":[1,0,0,0,0,8,2,2,1],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html":[1,0,0,0,0,8,2,3],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid.html":[1,0,0,0,0,8,2,3,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1view.html":[1,0,0,0,0,9],

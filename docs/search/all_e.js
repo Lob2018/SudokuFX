@@ -21,8 +21,9 @@ var searchData=
   ['normalizeinput_18',['normalizeInput',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33',1,'fr::softsf::sudokufx::viewmodel::grid::GridCellViewModel']]],
   ['notifylevelpossibilitybounds_19',['notifyLevelPossibilityBounds',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a5118c47e6bc8b75240c8e2c16131e339',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
   ['notifyuser_20',['notifyUser',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a9dfb9544ddbf4ffb4d55f31edf1590b7',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]],
-  ['numberutils_21',['NumberUtils',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html',1,'fr::softsf::sudokufx::common::util::math']]],
-  ['numberutils_2ejava_22',['NumberUtils.java',['../_number_utils_8java.html',1,'']]],
-  ['numberutilsutest_23',['NumberUtilsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util::math']]],
-  ['numberutilsutest_2ejava_24',['NumberUtilsUTest.java',['../_number_utils_u_test_8java.html',1,'']]]
+  ['ns_5fper_5fframe_21',['NS_PER_FRAME',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#ae24e4151f33d0d95b39737b1dde63549',1,'fr::softsf::sudokufx::view::component::firework::Firework']]],
+  ['numberutils_22',['NumberUtils',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html',1,'fr::softsf::sudokufx::common::util::math']]],
+  ['numberutils_2ejava_23',['NumberUtils.java',['../_number_utils_8java.html',1,'']]],
+  ['numberutilsutest_24',['NumberUtilsUTest',['../classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html',1,'fr::softsf::sudokufx::testing::unit::common::util::math']]],
+  ['numberutilsutest_2ejava_25',['NumberUtilsUTest.java',['../_number_utils_u_test_8java.html',1,'']]]
 ];

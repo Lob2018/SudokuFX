@@ -107,10 +107,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>import java.io.File;</code><br />
+<code>import java.nio.file.Path;</code><br />
 <code>import javafx.application.Platform;</code><br />
 <code>import javafx.scene.control.Button;</code><br />
 <code>import javafx.scene.control.ButtonType;</code><br />
 <code>import org.junit.jupiter.api.AfterEach;</code><br />
+<code>import org.junit.jupiter.api.BeforeEach;</code><br />
 <code>import org.junit.jupiter.api.Test;</code><br />
 <code>import org.junit.jupiter.api.extension.ExtendWith;</code><br />
 <code>import org.mockito.ArgumentCaptor;</code><br />
@@ -118,6 +120,7 @@ $(function() {
 <code>import org.testfx.api.FxRobot;</code><br />
 <code>import org.testfx.api.FxToolkit;</code><br />
 <code>import org.testfx.framework.junit5.ApplicationExtension;</code><br />
+<code>import fr.softsf.sudokufx.common.enums.AppPaths;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
 <code>import fr.softsf.sudokufx.config.os.IOsFolder;</code><br />
 <code>import fr.softsf.sudokufx.config.os.OsFoldersConfig;</code><br />
