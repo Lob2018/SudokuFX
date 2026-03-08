@@ -418,14 +418,12 @@ public class GridViewModel {
                         I18n.INSTANCE.getValue("toast.msg.gridviewmodel.completed"),
                         playerStateHolder.getCurrentPlayer().name()),
                 "");
+        String songPath = playerStateHolder.getCurrentPlayer().optionsidDto().songpath();
+        if (songPath.isBlank()) {
+            return;
+        }
         try {
-            audioService.playSong(
-                    PathValidator.INSTANCE.validateExists(
-                            Path.of(
-                                    playerStateHolder
-                                            .getCurrentPlayer()
-                                            .optionsidDto()
-                                            .songpath())));
+            audioService.playSong(PathValidator.INSTANCE.validateExists(Path.of(songPath)));
         } catch (Exception e) {
             String title = I18n.INSTANCE.getValue("toast.error.optionsviewmodel.audioerror");
             LOG.error("██ Exception - {}: {}", title, e.getMessage(), e);
