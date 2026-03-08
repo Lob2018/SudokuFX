@@ -49,8 +49,7 @@ echo "# TARGET/INPUT   : PASTE UBERJAR"
 cp "$jarName" "input/$jarName"
 
 echo "# CONFIGURATION  : RESOLVING METADATA PATHS"
-SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
-METADATA_DIR="$SCRIPT_DIR/linux-metadata"
+METADATA_DIR="$PWD/.myresources/scripts/linux-metadata"
 echo "# METADATA       : USING CUSTOM LINUX RESOURCES FROM $METADATA_DIR"
 echo "#"
 
