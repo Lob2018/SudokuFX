@@ -48,9 +48,15 @@ mkdir -p input
 echo "# TARGET/INPUT   : PASTE UBERJAR"
 cp "$jarName" "input/$jarName"
 
+echo "# CONFIGURATION  : RESOLVING METADATA PATHS"
+SCRIPT_DIR=$(cd "$(dirname "$0")" && pwd)
+METADATA_DIR="$SCRIPT_DIR/linux-metadata"
+echo "# METADATA       : USING CUSTOM LINUX RESOURCES FROM $METADATA_DIR"
+echo "#"
+
 echo "# OUTPUT   : CREATING THE DEB FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$7 -Dapp.license=$8" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --resource-dir "$METADATA_DIR" --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$7 -Dapp.license=$8" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target || exit

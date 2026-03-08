@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=SudokuFX
+Comment=Sudoku Game
+Exec=SudokuFX-JVM
+Icon=SudokuFX-JVM
+Terminal=false
+Type=Application
+Categories=Game;
+StartupWMClass=fr.softsf.sudokufx.SudoMain
