@@ -41,17 +41,17 @@ appNameWithTheJVM="${1}-JVM"
 echo "# OUTPUT   : CLEAN"
 rm -rf "$6" 2>/dev/null
 
+echo "# CONFIGURATION  : RESOLVING METADATA PATHS"
+METADATA_DIR="$PWD/.myresources/scripts/linux-metadata"
+echo "# METADATA       : USING CUSTOM LINUX RESOURCES FROM $METADATA_DIR"
+echo "#"
+
 echo "# TARGET/INPUT   : CREATE"
 cd ./target || exit
 mkdir -p input
 
 echo "# TARGET/INPUT   : PASTE UBERJAR"
 cp "$jarName" "input/$jarName"
-
-echo "# CONFIGURATION  : RESOLVING METADATA PATHS"
-METADATA_DIR="$PWD/.myresources/scripts/linux-metadata"
-echo "# METADATA       : USING CUSTOM LINUX RESOURCES FROM $METADATA_DIR"
-echo "#"
 
 echo "# OUTPUT   : CREATING THE DEB FROM TARGET/INPUT..."
 cd ..
