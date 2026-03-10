@@ -120,6 +120,22 @@ public enum JVMApplicationProperties {
         return appLicense;
     }
 
+    /**
+     * Generates the standardized window title for the application.
+     *
+     * <p>The title follows the pattern: {@code "AppName Version • Organization"}. If the version
+     * string is empty, the leading space and version segment are omitted.
+     *
+     * @return a formatted {@code String} representing the full application identity
+     */
+    public String getWindowTitle() {
+        final String name = getAppName();
+        final String version = getAppVersion();
+        final String organization = getAppOrganization();
+        final String versionSuffix = version.isEmpty() ? "" : " " + version;
+        return String.format("%s%s • %s", name, versionSuffix, organization);
+    }
+
     /** Initialize the Spring context exit behavior to null for testing purposes. */
     void setInitSpringContextExitForTests() {
         springContextExit = null;
@@ -153,5 +169,20 @@ public enum JVMApplicationProperties {
     /** Resets the application license for testing purposes. */
     void setEmptyAppLicensePropertyForTests() {
         appLicense = "";
+    }
+
+    /** Sets the application name for testing purposes. */
+    void setAppNameForTests() {
+        this.appName = "SudokuFX1";
+    }
+
+    /** Sets the application version for testing purposes. */
+    void setAppVersionForTests() {
+        this.appVersion = "v0.0.0";
+    }
+
+    /** Sets the application organization for testing purposes. */
+    void setAppOrganizationForTests() {
+        this.appOrganization = "MySoft64.fr";
     }
 }

@@ -46,6 +46,7 @@ import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
+import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.navigation.Coordinator;
@@ -280,6 +281,7 @@ public final class MainView implements IMainView {
             justification = "Lifecycle method invoked by FXML loader via reflection.")
     private void initialize() {
         primaryStage = new Stage();
+        primaryStage.setTitle(JVMApplicationProperties.INSTANCE.getWindowTitle());
         I18n.INSTANCE.setLocaleBundle(coordinator.getCurrentPlayerLanguageIso());
         stopAudioOnExitInitialization();
         spinnerInitialization();
@@ -318,7 +320,7 @@ public final class MainView implements IMainView {
         toasterService
                 .toastRequestProperty()
                 .addListener(
-                        (obs, oldVal, newVal) -> {
+                        (_, _, newVal) -> {
                             if (newVal != null) {
                                 toaster.addToast(
                                         newVal.visibleText(),
@@ -327,9 +329,7 @@ public final class MainView implements IMainView {
                                         newVal.requestFocus());
                             }
                         });
-        toasterService
-                .removeToastRequestProperty()
-                .addListener((obs, oldVal, newVal) -> toaster.removeToast());
+        toasterService.removeToastRequestProperty().addListener((_, _, _) -> toaster.removeToast());
     }
 
     /**
@@ -337,7 +337,7 @@ public final class MainView implements IMainView {
      * closed.
      */
     private void stopAudioOnExitInitialization() {
-        primaryStage.setOnCloseRequest(event -> audioService.stopAll());
+        primaryStage.setOnCloseRequest(_ -> audioService.stopAll());
     }
 
     /**
@@ -351,7 +351,7 @@ public final class MainView implements IMainView {
         return new Timeline(
                 new KeyFrame(
                         Duration.millis(AUTO_HIDE_MINI_MENU_DELAY_MS),
-                        event -> {
+                        _ -> {
                             try {
                                 if (activeMenuOrSubmenuViewModel.getActiveMenu().get()
                                                 == ActiveMenuOrSubmenuViewModel.ActiveMenu.MINI
@@ -421,7 +421,7 @@ public final class MainView implements IMainView {
         menuNewViewModel
                 .statusMessageProperty()
                 .addListener(
-                        (obs, oldMsg, newMsg) -> {
+                        (_, _, newMsg) -> {
                             if (newMsg != null && !newMsg.isEmpty()) {
                                 toasterService.showInfo(newMsg, newMsg);
                             }
@@ -487,7 +487,7 @@ public final class MainView implements IMainView {
         menuOptionsButtonColor
                 .valueProperty()
                 .addListener(
-                        (obs, oldColor, newColor) ->
+                        (_, _, newColor) ->
                                 menuOptionsViewModel.applyAndPersistOptionsColor(
                                         sudokuFX, newColor));
         bindingConfigurator.configureButton(
@@ -945,7 +945,7 @@ public final class MainView implements IMainView {
         menuLevelViewModel
                 .selectedLevelProperty()
                 .addListener(
-                        (obs, oldVal, newVal) -> {
+                        (_, _, newVal) -> {
                             boolean selected = newVal == level;
                             maxi.pseudoClassStateChanged(
                                     DIFFICULTY_LEVEL_PSEUDO_SELECTED, selected);

@@ -151,6 +151,13 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
+    <!-- TestFX Monocle provide a UI Glass stub for headless testing environments -->
+    <dependency>
+      <groupId>org.testfx</groupId>
+      <artifactId>openjfx-monocle</artifactId>
+      <version>21.0.2</version>
+      <scope>test</scope>
+    </dependency>
     <!-- TestFX for JavaFX testing -->
     <dependency>
       <groupId>org.testfx</groupId>

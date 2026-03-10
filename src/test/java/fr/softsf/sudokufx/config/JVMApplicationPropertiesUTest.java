@@ -129,4 +129,14 @@ class JVMApplicationPropertiesUTest {
         JVMApplicationProperties.INSTANCE.setInitSpringContextExitForTests();
         assertFalse(JVMApplicationProperties.INSTANCE.isSpringContextExitOnRefresh());
     }
+
+    @Test
+    void givenValidProperties_whenGetWindowTitle_thenCorrectTitleReturned() {
+        JVMApplicationProperties.INSTANCE.setAppNameForTests();
+        JVMApplicationProperties.INSTANCE.setAppVersionForTests();
+        JVMApplicationProperties.INSTANCE.setAppOrganizationForTests();
+        assertEquals(
+                "SudokuFX1 v0.0.0 • MySoft64.fr",
+                JVMApplicationProperties.INSTANCE.getWindowTitle());
+    }
 }

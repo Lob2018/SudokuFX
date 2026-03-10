@@ -6,7 +6,9 @@
 package fr.softsf.sudokufx.common.util.sudoku;
 
 import java.util.Arrays;
+import javafx.application.Platform;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -23,6 +25,26 @@ import static org.junit.jupiter.api.Assertions.*;
 class GridMasterUTest {
 
     @Autowired private GridMaster gridMaster;
+
+    /**
+     * Initializes the JavaFX Toolkit in Headless mode. * Uses Monocle to provide a Glass stub,
+     * allowing the instantiation and binding of JavaFX properties during Spring integration tests.
+     */
+    @BeforeAll
+    static void initJfx() {
+        System.setProperty("glass.platform", "Monocle");
+        System.setProperty("monocle.platform", "Headless");
+        System.setProperty("prism.order", "sw");
+        System.setProperty("testfx.robot", "glass");
+        System.setProperty("testfx.headless", "true");
+        try {
+            if (!Platform.isFxApplicationThread()) {
+                Platform.startup(() -> {});
+            }
+        } catch (IllegalStateException _) {
+            // Toolkit already initialized
+        }
+    }
 
     @Test
     void givenPossibilitiesSum_whenGetPourcentage_thenReturnsClampedValue() {

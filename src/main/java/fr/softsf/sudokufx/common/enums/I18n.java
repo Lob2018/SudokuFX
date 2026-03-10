@@ -16,57 +16,61 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Singleton enum for internationalization (i18n) support. Manages language resources and locale
- * synchronization.
+ * Internationalization (i18n) support. Manages language resources and locale synchronization
+ * through JavaFX properties. Technical Note: Accessing INSTANCE triggers the initialization of
+ * JavaFX properties, requiring an active JavaFX Toolkit.
  */
 public enum I18n {
     INSTANCE;
 
     private static final Logger LOG = LoggerFactory.getLogger(I18n.class);
 
-    private static final ReadOnlyObjectWrapper<Locale> LOCALE =
+    /** Observable locale property. Requires JavaFX Toolkit for instantiation. */
+    private final ReadOnlyObjectWrapper<Locale> locale =
             new ReadOnlyObjectWrapper<>(Locale.getDefault());
 
-    private static final Locale LOCALE_FR = Locale.of("fr", "FR");
-    private static final Locale LOCALE_EN = Locale.of("en", "US");
-    private static final String I_18_N_PATH = AppPaths.I18N_PATH.getPath();
+    private final ResourceBundle frenchBundle;
+    private final ResourceBundle englishBundle;
+    private ResourceBundle bundle;
 
-    private static final ResourceBundle FRENCH_BUNDLE;
-    private static final ResourceBundle ENGLISH_BUNDLE;
-    private static ResourceBundle bundle;
-
-    static {
-        FRENCH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_FR);
-        ENGLISH_BUNDLE = ResourceBundle.getBundle(I_18_N_PATH, LOCALE_EN);
-        bundle = FRENCH_BUNDLE;
-        LOCALE.addListener((obs, oldLocale, newLocale) -> Locale.setDefault(newLocale));
+    /**
+     * Initializes bundles and binds the locale property to the system default. Triggers JavaFX
+     * Toolkit check via ReadOnlyObjectWrapper.
+     */
+    I18n() {
+        Locale localeFr = Locale.of("fr", "FR");
+        String i18NPathPath = AppPaths.I18N_PATH.getPath();
+        frenchBundle = ResourceBundle.getBundle(i18NPathPath, localeFr);
+        Locale localeEn = Locale.of("en", "US");
+        englishBundle = ResourceBundle.getBundle(i18NPathPath, localeEn);
+        bundle = frenchBundle;
+        locale.addListener((_, _, newLocale) -> Locale.setDefault(newLocale));
     }
 
     /**
-     * Updates the current locale and bundle based on language code. "EN" sets English; any other
-     * value defaults to French.
+     * Updates the current bundle and synchronizes the locale property.
      *
-     * @param i18n Language code.
-     * @return Singleton instance.
+     * @param i18n Language code. "EN" for English, defaults to French otherwise.
+     * @return The singleton instance.
      */
-    public static I18n setLocaleBundle(final String i18n) {
-        bundle = "EN".equals(i18n) ? ENGLISH_BUNDLE : FRENCH_BUNDLE;
-        LOCALE.set(bundle.getLocale());
+    public I18n setLocaleBundle(final String i18n) {
+        bundle = "EN".equals(i18n) ? englishBundle : frenchBundle;
+        locale.set(bundle.getLocale());
         return INSTANCE;
     }
 
     /**
-     * @return Read-only observable locale property.
+     * @return Read-only observable locale property for UI binding.
      */
     public ReadOnlyObjectProperty<Locale> localeProperty() {
-        return LOCALE.getReadOnlyProperty();
+        return locale.getReadOnlyProperty();
     }
 
     /**
-     * Returns the localized string for the given key.
+     * Retrieves a translated string from the active bundle.
      *
-     * @param key Resource key.
-     * @return Translated value or fallback.
+     * @param key Resource bundle key.
+     * @return The localized value, or a formatted error string if not found.
      */
     public String getValue(final String key) {
         if (StringUtils.isBlank(key)) {
@@ -85,20 +89,23 @@ public enum I18n {
     }
 
     /**
-     * @return Current language code ("en", "fr", etc.).
+     * @return Current ISO 639-1 language code ("en", "fr", etc.).
      */
     public String getLanguage() {
         return bundle.getLocale().getLanguage();
     }
 
     /**
-     * @return Host system language code.
+     * @return Host system ISO 639-1 language code.
      */
     public String getHostEnvironmentLanguageCode() {
         return Locale.getDefault().getLanguage();
     }
 
-    /** Sets the language to match host system (defaulting to English if not French). */
+    /**
+     * Matches the application language to the host environment. Defaults to English for any
+     * language other than French.
+     */
     public void setLanguageBasedOnTheHostEnvironment() {
         setLocaleBundle("fr".equals(getHostEnvironmentLanguageCode()) ? "" : "EN");
     }

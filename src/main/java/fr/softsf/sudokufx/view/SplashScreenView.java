@@ -28,6 +28,7 @@ import javafx.util.Duration;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.SudoMain;
+import fr.softsf.sudokufx.common.enums.AppIcons;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
@@ -258,7 +259,7 @@ public final class SplashScreenView implements ISplashScreenView {
     private void setSplashscreenvboxTophboxLogosudosvg() {
         createSVG(
                 splashscreenvboxTophboxRegionsudosvg,
-                "M26.9,53.4c-.86,0-1.73,0-2.6,0l-1.43-.09c-.38,0-.74-.07-1.11-.12l-.35,0c-.82-.09-1.78-.21-2.73-.39a28.17,28.17,0,0,1-3.67-1,19.33,19.33,0,0,1-6.43-3.54l-.39-.35A10.24,10.24,0,0,1,5.5,44.14a10.53,10.53,0,0,1-.77-3.89V37.14c0-3.09,2-5.43,4.59-5.43l6.4.25q-1.08-.45-2-.9c-.46-.21-.9-.43-1.29-.64a19.36,19.36,0,0,1-5.76-4.59,10.55,10.55,0,0,1-2.45-6.89,11.48,11.48,0,0,1,3.43-8.26A15.79,15.79,0,0,1,9.17,9.33a18.86,18.86,0,0,1,5-2.56A44.35,44.35,0,0,1,23,4.7c1.16-.15,2.35-.28,3.53-.36,1.4-.1,2.8-.15,4.17-.15.87,0,1.74,0,2.6.06q.72,0,1.44.09c.37,0,.74.07,1.1.11l.35,0c.82.1,1.78.22,2.74.4a26.52,26.52,0,0,1,3.66,1A19.38,19.38,0,0,1,49,9.39l.38.34a10.12,10.12,0,0,1,2.69,3.73,10.44,10.44,0,0,1,.77,3.88v3.11c0,3.1-2,5.43-4.6,5.43l-6.4-.24c.72.3,1.41.59,2,.89.46.22.9.44,1.29.65A19.49,19.49,0,0,1,51,31.76a10.54,10.54,0,0,1,2.45,6.9A11.46,11.46,0,0,1,50,46.92a14.66,14.66,0,0,1-1.54,1.34,18.64,18.64,0,0,1-5,2.56,43.5,43.5,0,0,1-8.78,2.07c-1.16.16-2.34.28-3.53.37-1.39.09-2.79.14-4.17.14Z",
+                AppIcons.LOGO.getPath(),
                 splashScreenFontSize,
                 splashScreenFontSize,
                 1.0 / STROKE_DIVISOR_FOR_SUDOSVG,
