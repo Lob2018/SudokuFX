@@ -11,6 +11,7 @@ var annotated_dup =
               [ "ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1_excluded_from_coverage_report_generated.html", null ]
             ] ],
             [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums.html", [
+              [ "AppIcons", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons" ],
               [ "AppPaths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths" ],
               [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level" ],
               [ "FxmlView", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view" ],
@@ -169,6 +170,7 @@ var annotated_dup =
             [ "unit", null, [
               [ "common", null, [
                 [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums.html", [
+                  [ "AppIconsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test" ],
                   [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test" ],
                   [ "FxmlViewUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_fxml_view_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_fxml_view_u_test" ],
                   [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_my_regex_u_test" ],

@@ -10,5 +10,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_
     [ "givenPossibilitiesSum_whenGetPourcentage_thenReturnsClampedValue", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#ad7ea3f9eb1f723b384b0b1a9ce191db0", null ],
     [ "givenValidGrid_whenResolveGrid_thenGridResolvedSuccessfully", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#ae6a7ea8edd652fed7e2f56af5e3a7f76", null ],
     [ "givenValidLevel_whenCreateGrids_thenGridsGeneratedSuccessfully", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#abb91b14302c28418bc499bc7bf5a7931", null ],
+    [ "initJfx", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a5a09a5e4ab029f6dcde867dd5dc02924", null ],
     [ "gridMaster", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a64f616a44c2b27d05f9877900a89d956", null ]
 ];

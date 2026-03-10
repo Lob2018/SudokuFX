@@ -1,5 +1,11 @@
 var NAVTREEINDEX4 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838":[2,0,0,0,0,3,0,3],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1a6fc943d74a5ff7ff96081c78206f1d":[1,0,0,0,0,4,0,10],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1a6fc943d74a5ff7ff96081c78206f1d":[2,0,0,0,0,3,0,10],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1fa26095322324f412ff22213e27b14f":[1,0,0,0,0,4,0,13],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1fa26095322324f412ff22213e27b14f":[2,0,0,0,0,3,0,13],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a232242cd4ddeae26b3c8e116fd53887b":[1,0,0,0,0,4,0,18],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a232242cd4ddeae26b3c8e116fd53887b":[2,0,0,0,0,3,0,18],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a24de0f7edd5c866f16a25c667b6e37c1":[1,0,0,0,0,4,0,34],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a24de0f7edd5c866f16a25c667b6e37c1":[2,0,0,0,0,3,0,34],
@@ -243,11 +249,5 @@ var NAVTREEINDEX4 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_getter_tests.html#aca2b7cf63f5ddf1ed1ea823d12f26c03":[2,0,0,0,0,3,3,5,7],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_getter_tests.html#ad7322caded996ae586dd6b7278e4f863":[1,0,0,0,0,4,3,5,0],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_getter_tests.html#ad7322caded996ae586dd6b7278e4f863":[2,0,0,0,0,3,3,5,0],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_getter_tests.html#aeed7a9d62346e98ff3551ede661bd437":[1,0,0,0,0,4,3,5,5],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_getter_tests.html#aeed7a9d62346e98ff3551ede661bd437":[2,0,0,0,0,3,3,5,5],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_setter_tests.html":[1,0,0,0,0,4,3,6],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_setter_tests.html":[2,0,0,0,0,3,3,6],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_setter_tests.html#a05a232b4421a2068ce6639bb34219f70":[1,0,0,0,0,4,3,6,6],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_setter_tests.html#a05a232b4421a2068ce6639bb34219f70":[2,0,0,0,0,3,3,6,6],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_setter_tests.html#a3140b752748809e68be430f84047a267":[1,0,0,0,0,4,3,6,1]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test_1_1_getter_tests.html#aeed7a9d62346e98ff3551ede661bd437":[1,0,0,0,0,4,3,5,5]
 };

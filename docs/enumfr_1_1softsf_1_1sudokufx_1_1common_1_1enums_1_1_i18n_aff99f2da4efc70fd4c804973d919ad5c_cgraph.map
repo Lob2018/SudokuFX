@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.enums.I18n.setLocaleBundle" name="fr.softsf.sudokufx.common.enums.I18n.setLocaleBundle">
+<area shape="rect" id="Node000001" title="Updates the current bundle and synchronizes the locale property." alt="" coords="5,5,230,48"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#a7d240d087e362c89be2194b8932d4a11" title="Initializes bundles and binds the locale property to the system default." alt="" coords="278,5,502,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,24,262,24,262,29,230,29"/>
+</map>

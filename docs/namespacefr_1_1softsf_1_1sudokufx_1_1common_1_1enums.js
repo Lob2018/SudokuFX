@@ -1,5 +1,6 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums =
 [
+    [ "AppIcons", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons" ],
     [ "AppPaths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths" ],
     [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level" ],
     [ "FxmlView", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view" ],

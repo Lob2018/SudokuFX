@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html" target="_top" xlink:title="Configuration class for Logback logging framework.">
 <polygon fill="white" stroke="#666666" points="124.75,-32 0,-32 0,0 124.75,0 124.75,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.</text>
-<text text-anchor="middle" x="62.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogbackConfigUTest</text>
+<text text-anchor="middle" x="62.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MyLogbackConfig</text>
 </a>
 </g>
 </g>

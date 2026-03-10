@@ -1,5 +1,6 @@
 var dir_12779a24be85975a4455f90e90173dd6 =
 [
+    [ "AppIcons.java", "_app_icons_8java.html", "_app_icons_8java" ],
     [ "AppPaths.java", "_app_paths_8java.html", "_app_paths_8java" ],
     [ "DifficultyLevel.java", "_difficulty_level_8java.html", "_difficulty_level_8java" ],
     [ "FxmlView.java", "_fxml_view_8java.html", "_fxml_view_8java" ],

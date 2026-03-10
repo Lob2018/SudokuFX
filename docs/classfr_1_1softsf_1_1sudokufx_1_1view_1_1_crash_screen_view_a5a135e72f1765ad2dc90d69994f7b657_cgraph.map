@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.view.CrashScreenView.setCrashscreenvboxTophboxLogosudosvg" name="fr.softsf.sudokufx.view.CrashScreenView.setCrashscreenvboxTophboxLogosudosvg">
 <area shape="rect" id="Node000001" title="Sets up the SVG logo for the crash screen." alt="" coords="5,5,255,64"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aef8eba37009f641a92196a638a62d82c" title="Creates an SVG shape and applies it to a Region." alt="" coords="303,13,496,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a305193c17a1a057dd87beb7f8c3fb263" title="Creates an SVG shape and applies it to a Region." alt="" coords="303,13,496,56"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,32,287,32,287,37,255,37"/>
 </map>

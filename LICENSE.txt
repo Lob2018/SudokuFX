@@ -729,14 +729,14 @@ Modifications made: Lob2018 - Portions of the logic and documentation adjusted f
 
 ===
 
-Lists of 112 third-party dependencies.
+Lists of 113 third-party dependencies.
      (ASF 2.0) Code Generation Library (cglib:cglib:3.1 - http://cglib.sourceforge.net/)
      (Eclipse Public License - v 2.0) (GNU Lesser General Public License) Logback Classic Module (ch.qos.logback:logback-classic:1.5.32 - http://logback.qos.ch/logback-classic)
      (Eclipse Public License - v 2.0) (GNU Lesser General Public License) Logback Core Module (ch.qos.logback:logback-core:1.5.32 - http://logback.qos.ch/logback-core)
      (Apache License, Version 2.0) ClassMate (com.fasterxml:classmate:1.7.3 - https://github.com/FasterXML/java-classmate)
-     (The Apache Software License, Version 2.0) Jackson-annotations (com.fasterxml.jackson.core:jackson-annotations:2.20 - https://github.com/FasterXML/jackson)
-     (The Apache Software License, Version 2.0) Jackson-core (com.fasterxml.jackson.core:jackson-core:2.20.2 - https://github.com/FasterXML/jackson-core)
-     (The Apache Software License, Version 2.0) jackson-databind (com.fasterxml.jackson.core:jackson-databind:2.20.2 - https://github.com/FasterXML/jackson)
+     (The Apache Software License, Version 2.0) Jackson-annotations (com.fasterxml.jackson.core:jackson-annotations:2.21 - https://github.com/FasterXML/jackson)
+     (The Apache Software License, Version 2.0) Jackson-core (com.fasterxml.jackson.core:jackson-core:2.21.1 - https://github.com/FasterXML/jackson-core)
+     (The Apache Software License, Version 2.0) jackson-databind (com.fasterxml.jackson.core:jackson-databind:2.21.1 - https://github.com/FasterXML/jackson)
      (GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1) SpotBugs Annotations (com.github.spotbugs:spotbugs-annotations:4.9.8 - https://spotbugs.github.io/)
      (The 3-Clause BSD License) Gluon Ignite Common (com.gluonhq:ignite-common:1.2.2 - http://gluonhq.com/open-source/ignite/)
      (The 3-Clause BSD License) Gluon Ignite Spring (com.gluonhq:ignite-spring:1.2.2 - http://gluonhq.com/open-source/ignite/)
@@ -838,6 +838,7 @@ Lists of 112 third-party dependencies.
      (Apache License, Version 2.0) spring-boot-validation (org.springframework.boot:spring-boot-validation:4.0.3 - https://spring.io/projects/spring-boot)
      (Apache License, Version 2.0) Spring Data Core (org.springframework.data:spring-data-commons:4.0.3 - https://spring.io/projects/spring-data)
      (Apache License, Version 2.0) Spring Data JPA (org.springframework.data:spring-data-jpa:4.0.3 - https://projects.spring.io/spring-data-jpa)
+     (GNU General Public License, version 2, with the Classpath Exception) OpenJFX Monocle (org.testfx:openjfx-monocle:21.0.2 - https://openjfx.io/)
      (European Union Public Licence, Version 1.1) TestFX Core (org.testfx:testfx-core:4.0.18 - http://testfx.org/)
      (European Union Public Licence, Version 1.1) TestFX JUnit5 (org.testfx:testfx-junit5:4.0.18 - http://testfx.org/)
      (The Apache Software License, Version 2.0) org.xmlunit:xmlunit-core (org.xmlunit:xmlunit-core:2.10.4 - https://www.xmlunit.org/)

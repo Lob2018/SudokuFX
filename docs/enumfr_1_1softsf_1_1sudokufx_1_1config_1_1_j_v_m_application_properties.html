@@ -126,8 +126,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a72a94500d5d54352794c70cee90ebdfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current application organization from system properties.  <br /></td></tr>
 <tr class="memitem:aec84ca60d9dd5a7c2d66b3b9515863bc" id="r_aec84ca60d9dd5a7c2d66b3b9515863bc"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#aec84ca60d9dd5a7c2d66b3b9515863bc">getAppVersion</a> ()</td></tr>
 <tr class="memdesc:aec84ca60d9dd5a7c2d66b3b9515863bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current application version from system properties.  <br /></td></tr>
+<tr class="memitem:ad00a141ec01f04436ae73e2ca1a4dac5" id="r_ad00a141ec01f04436ae73e2ca1a4dac5"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#ad00a141ec01f04436ae73e2ca1a4dac5">getWindowTitle</a> ()</td></tr>
+<tr class="memdesc:ad00a141ec01f04436ae73e2ca1a4dac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the standardized window title for the application.  <br /></td></tr>
 <tr class="memitem:a8e83f73acbc106647965ccd74951e76a" id="r_a8e83f73acbc106647965ccd74951e76a"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#a8e83f73acbc106647965ccd74951e76a">isSpringContextExitOnRefresh</a> ()</td></tr>
 <tr class="memdesc:a8e83f73acbc106647965ccd74951e76a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the Spring context should exit on refresh.  <br /></td></tr>
+<tr class="memitem:a2964b2314355be0264419f0849a9847c" id="r_a2964b2314355be0264419f0849a9847c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2964b2314355be0264419f0849a9847c">setAppNameForTests</a> ()</td></tr>
+<tr class="memdesc:a2964b2314355be0264419f0849a9847c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the application name for testing purposes.  <br /></td></tr>
+<tr class="memitem:a65953f644149ffc6f6f278604169b42e" id="r_a65953f644149ffc6f6f278604169b42e"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a65953f644149ffc6f6f278604169b42e">setAppOrganizationForTests</a> ()</td></tr>
+<tr class="memdesc:a65953f644149ffc6f6f278604169b42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the application organization for testing purposes.  <br /></td></tr>
+<tr class="memitem:a61d0ce1f6c27a61934b2302ad7de282c" id="r_a61d0ce1f6c27a61934b2302ad7de282c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a61d0ce1f6c27a61934b2302ad7de282c">setAppVersionForTests</a> ()</td></tr>
+<tr class="memdesc:a61d0ce1f6c27a61934b2302ad7de282c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the application version for testing purposes.  <br /></td></tr>
 <tr class="memitem:a9b47829a1cae7feed50a0b902f525226" id="r_a9b47829a1cae7feed50a0b902f525226"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b47829a1cae7feed50a0b902f525226">setEmptyAppLicensePropertyForTests</a> ()</td></tr>
 <tr class="memdesc:a9b47829a1cae7feed50a0b902f525226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the application license for testing purposes.  <br /></td></tr>
 <tr class="memitem:a57bff2db0919ea610ee13d3f93fb5841" id="r_a57bff2db0919ea610ee13d3f93fb5841"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a57bff2db0919ea610ee13d3f93fb5841">setEmptyAppNamePropertyForTests</a> ()</td></tr>
@@ -250,6 +258,33 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad00a141ec01f04436ae73e2ca1a4dac5" name="ad00a141ec01f04436ae73e2ca1a4dac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00a141ec01f04436ae73e2ca1a4dac5">&#9670;&#160;</a></span>getWindowTitle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">String fr.softsf.sudokufx.config.JVMApplicationProperties.getWindowTitle </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates the standardized window title for the application. </p>
+<p>The title follows the pattern: <code class="JavaDocCode">"AppName Version • Organization"</code>. If the version string is empty, the leading space and version segment are omitted.</p>
+<dl class="section return"><dt>Returns</dt><dd>a formatted <code class="JavaDocCode">String</code> representing the full application identity </dd></dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_ad00a141ec01f04436ae73e2ca1a4dac5_cgraph.svg" width="576" height="219"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a8e83f73acbc106647965ccd74951e76a" name="a8e83f73acbc106647965ccd74951e76a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8e83f73acbc106647965ccd74951e76a">&#9670;&#160;</a></span>isSpringContextExitOnRefresh()</h2>
 
@@ -267,6 +302,63 @@ Static Private Attributes</h2></td></tr>
 
 <p>Determines if the Spring context should exit on refresh. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if springContextExit is "onRefresh"; false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a2964b2314355be0264419f0849a9847c" name="a2964b2314355be0264419f0849a9847c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2964b2314355be0264419f0849a9847c">&#9670;&#160;</a></span>setAppNameForTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.config.JVMApplicationProperties.setAppNameForTests </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the application name for testing purposes. </p>
+
+</div>
+</div>
+<a id="a65953f644149ffc6f6f278604169b42e" name="a65953f644149ffc6f6f278604169b42e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65953f644149ffc6f6f278604169b42e">&#9670;&#160;</a></span>setAppOrganizationForTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.config.JVMApplicationProperties.setAppOrganizationForTests </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the application organization for testing purposes. </p>
+
+</div>
+</div>
+<a id="a61d0ce1f6c27a61934b2302ad7de282c" name="a61d0ce1f6c27a61934b2302ad7de282c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d0ce1f6c27a61934b2302ad7de282c">&#9670;&#160;</a></span>setAppVersionForTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.config.JVMApplicationProperties.setAppVersionForTests </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the application version for testing purposes. </p>
 
 </div>
 </div>

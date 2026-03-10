@@ -7,6 +7,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_t
     [ "givenNullSpringContext_whenGetAppNameAndVersion_thenDefaultValuesReturned", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a9950ebaeca7a6222c188e5da48230390", null ],
     [ "givenUnknownSpringContext_whenCheckExitOnRefresh_thenExitNotTriggered", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#abd9ceb195d02f692fed29c0d7ad2d9c6", null ],
     [ "givenValidNameVersionOrganizationLicense_whenValidateByRegex_thenValidationSucceeds", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a486a9e1175c3e479573965c13fdd6b3a", null ],
+    [ "givenValidProperties_whenGetWindowTitle_thenCorrectTitleReturned", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a3d0019685e6f2d05dbf66696a706eb1c", null ],
     [ "givenValidVersions_whenValidateByRegex_thenSucceeds", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#aef513a414bfa6bdf0276f74f916c2e93", null ],
     [ "ALPHANUMERIC_REGEX", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#accebd50d7f2ba32538726e195acf76c6", null ],
     [ "VERSION_REGEX", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html#a78cbe288d3467bba2f5b70266c54d92a", null ]

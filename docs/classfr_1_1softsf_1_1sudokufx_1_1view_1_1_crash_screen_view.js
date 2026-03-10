@@ -1,7 +1,7 @@
 var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
 [
     [ "closeButtonClick", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a06bf010806175e6f960b1ee805a2eb3d", null ],
-    [ "createSVG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aef8eba37009f641a92196a638a62d82c", null ],
+    [ "createSVG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a305193c17a1a057dd87beb7f8c3fb263", null ],
     [ "fadeIn", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a203d7b4943637a03090230742bb99208", null ],
     [ "hidecrashscreen", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ae8a4111090a512677b14743dd3aa21d3", null ],
     [ "initialize", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a3112d5c4618e967b16dce35a5a584eca", null ],
@@ -30,6 +30,5 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view =
     [ "iSplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49c11cdc15fbf969de8ca00ec9817ead", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#aefcbc1edb1959f06721ea31a15c7e95c", null ],
     [ "OS_FOLDER_PROVIDER", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#af18ae3dcd3a79e0d1cdb519f2d3174ab", null ],
-    [ "primaryStage", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac8f1e2c035b0d7b5947c0a1e32e7a41f", null ],
     [ "SVG_STROKE_DIVISOR", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#ac9448e4ebd346fc8d96b9a43aebde679", null ]
 ];

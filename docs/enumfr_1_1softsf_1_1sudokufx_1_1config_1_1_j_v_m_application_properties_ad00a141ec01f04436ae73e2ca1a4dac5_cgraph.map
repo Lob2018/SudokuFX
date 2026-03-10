@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.config.JVMApplicationProperties.getWindowTitle" name="fr.softsf.sudokufx.config.JVMApplicationProperties.getWindowTitle">
+<area shape="rect" id="Node000001" title="Generates the standardized window title for the application." alt="" coords="5,80,271,123"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a51c0bfa1f6ee72a7a3d849bf61a897db" title="Retrieves the current application name from system properties." alt="" coords="319,5,570,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,77,338,50,340,55,229,82"/>
+<area shape="rect" id="Node000003" href="$enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a72a94500d5d54352794c70cee90ebdfc" title="Retrieves the current application organization from system properties." alt="" coords="336,72,552,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="271,99,321,99,321,104,271,104"/>
+<area shape="rect" id="Node000004" href="$enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#aec84ca60d9dd5a7c2d66b3b9515863bc" title="Retrieves the current application version from system properties." alt="" coords="336,155,552,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,121,322,148,321,153,219,126"/>
+</map>

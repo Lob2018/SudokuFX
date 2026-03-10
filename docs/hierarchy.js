@@ -19,6 +19,8 @@ var hierarchy =
     [ "Alert", null, [
       [ "fr.softsf.sudokufx.view.component.MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html", null ]
     ] ],
+    [ "fr.softsf.sudokufx.common.enums.AppIcons", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.common.enums.AppIconsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test.html", null ],
     [ "Application", null, [
       [ "fr.softsf.sudokufx.SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", null ]
     ] ],

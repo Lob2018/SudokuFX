@@ -1,0 +1,7 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test =
+[
+    [ "givenEnumValues_whenAccessed_thenCorrectLengthAndValues", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test.html#ac5483fce318a6a09658363ddf544ae4b", null ],
+    [ "givenInvalidEnumString_whenValueOfCalled_thenThrowsException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test.html#a1afbdfc54e2a87fb65eb7db26ebf0006", null ],
+    [ "givenLogoIcon_whenGetPathCalled_thenPathIsNotEmpty", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test.html#adee9cb74725bf4e42495d0e079650f77", null ],
+    [ "givenValidEnumString_whenValueOfCalled_thenCorrectEnum", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test.html#a6663242e49b05afff361720582165968", null ]
+];
