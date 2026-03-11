@@ -642,6 +642,10 @@ public final class GridMaster implements IGridMaster {
         // possibilités desiré
         int sommeDesPossibilites =
                 genererLaGrilleAResoudre(niveau, pourcentageDesire, grilleResolue, grilleAResoudre);
+        // Forcer la remise à zéro de la grille en cas d'échec de génération
+        if (sommeDesPossibilites == -1) {
+            Arrays.fill(grilleAResoudre, 0);
+        }
         // Récupérer le pourcentage de possibilités estimé
         int pourcentageDesPossibilites =
                 sommeDesPossibilites == -1
