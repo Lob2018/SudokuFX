@@ -22,6 +22,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Region;
 
 import org.apache.commons.lang3.StringUtils;
@@ -117,6 +118,8 @@ public final class GridCellViewModel {
      *   <li>Filters input to digits 1–9, removing duplicates and sorting.
      *   <li>Formats input into a multiline 3×3 grid inside the TextArea.
      *   <li>Switches back to label mode on focus loss or certain key presses.
+     *   <li>Forces property updates via an EventFilter when a suggested value is re-entered,
+     *       ensuring listeners are triggered even if the digit remains identical.
      * </ul>
      */
     private void setupListeners() {
@@ -157,13 +160,19 @@ public final class GridCellViewModel {
                             }
                         });
         Set<KeyCode> keys = Set.of(KeyCode.ENTER, KeyCode.ESCAPE, KeyCode.TAB, KeyCode.SPACE);
-        textArea.setOnKeyPressed(
+        textArea.addEventFilter(
+                KeyEvent.KEY_PRESSED,
                 e -> {
                     if (keys.contains(e.getCode())) {
                         e.consume();
                         textArea.setVisible(false);
                         label.setVisible(true);
                         label.requestFocus();
+                        return;
+                    }
+                    if (e.getText().matches("[1-9]") && e.getText().equals(rawText.get())) {
+                        rawText.set("");
+                        rawText.set(e.getText());
                     }
                 });
     }

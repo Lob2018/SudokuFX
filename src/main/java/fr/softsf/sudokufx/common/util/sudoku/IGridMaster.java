@@ -14,21 +14,19 @@ public sealed interface IGridMaster permits GridMaster {
     int POURCENTAGE_MAX = 100;
     int DESIRED_POSSIBILITIES_STEP = 10;
 
-    int MIN_POSSIBILITES = 4800;
-    int MOYEN_MIN_POSSIBILITES = 10500;
-    int MOYEN_MAX_POSSIBILITES = 12500;
-    int MAX_POSSIBILITES = 33000;
+    int MIN_POSSIBILITES = 150;
+    int MOYEN_MIN_POSSIBILITES = 220;
+    int MOYEN_MAX_POSSIBILITES = 320;
+    int MAX_POSSIBILITES = 330;
     // Nombre de cases à cacher en fonction du niveau
-    int FACILE_MIN_CACHEES = 34;
-    int MOYEN_MIN_CACHEES = 39;
-    int MOYEN_MAX_CACHEES = 44;
-    int DIFFICILE_MAX_CACHEES = 48;
+    int MIN_CACHEES = 30;
+    int MAX_CACHEES = 62;
     // Pourcentage de possibilités par niveau
     int FACILE_MIN_PERCENT = 0;
-    int FACILE_MAX_PERCENT = 19;
-    int MOYEN_MIN_PERCENT = 20;
-    int MOYEN_MAX_PERCENT = 26;
-    int DIFFICILE_MIN_PERCENT = 27;
+    int FACILE_MAX_PERCENT = 33;
+    int MOYEN_MIN_PERCENT = 34;
+    int MOYEN_MAX_PERCENT = 66;
+    int DIFFICILE_MIN_PERCENT = 67;
     int DIFFICILE_MAX_PERCENT = 100;
 
     /**
@@ -88,26 +86,22 @@ public sealed interface IGridMaster permits GridMaster {
      * Creates Sudoku grids (solved and unsolved) based on a level and a target difficulty
      * percentage (-1 for level's default possibilities).
      *
-     * <p>Difficulty levels:
+     * <p>Difficulty levels based on entropy (sum of possibilities):
      *
      * <ul>
-     *   <li><b>Easy (1)</b>: 34-39 hidden cells (Practical possibilities: 4,800 - 10,500)
-     *   <li><b>Medium (2)</b>: 39-44 hidden cells (Practical possibilities: 10,500 - 12,500)
-     *   <li><b>Difficult (3)</b>: 44-48 hidden cells (Practical possibilities: 12,500 - 33,000)
+     *   <li><b>Easy (1)</b>: 0% to 33% (approx. 150 - 209 possibilities)
+     *   <li><b>Medium (2)</b>: 34% to 66% (approx. 210 - 269 possibilities)
+     *   <li><b>Difficult (3)</b>: 67% to 100% (approx. 270 - 330 possibilities)
      * </ul>
      *
-     * <p>Percentage is mapped from the range 4,800 (0%) to 33,000 (100%).
+     * <p>The number of hidden cells ranges from {@value #MIN_CACHEES} to {@value #MAX_CACHEES}
+     * depending on the target entropy and uniqueness constraints.
      *
      * @param niveau difficulty level (1 to 3)
      * @param pourcentageDesire target minimum possibility percentage (0-100), or -1 for default
      *     logic
-     * @return a {@link GrillesCrees} object containing:
-     *     <ul>
-     *       <li>{@code grilleResolue}: the completed grid
-     *       <li>{@code grilleAResoudre}: the initial puzzle grid
-     *       <li>{@code pourcentageDesPossibilites}: the actual calculated difficulty percentage
-     *     </ul>
-     *
+     * @return a {@link GrillesCrees} object containing the solved grid, the puzzle, and the actual
+     *     calculated difficulty percentage
      * @throws IllegalArgumentException if niveau is outside [1, 3]
      * @throws ConstraintViolationException if returned data violates validation constraints
      */

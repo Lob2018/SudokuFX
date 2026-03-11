@@ -43,6 +43,7 @@ import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.SpinnerService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuSolveViewModel;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 /**
@@ -62,6 +63,7 @@ public class GridViewModel {
 
     private final IGridMaster iGridMaster;
     private final ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel;
+    private final MenuSolveViewModel menuSolveViewModel;
     private final AudioService audioService;
     private final PlayerStateHolder playerStateHolder;
     private final PlayerService playerService;
@@ -177,6 +179,7 @@ public class GridViewModel {
     public GridViewModel(
             IGridMaster iGridMaster,
             ActiveMenuOrSubmenuViewModel activeMenuOrSubmenuViewModel,
+            MenuSolveViewModel menuSolveViewModel,
             AudioService audioService,
             PlayerStateHolder playerStateHolder,
             PlayerService playerService,
@@ -185,6 +188,7 @@ public class GridViewModel {
             SpinnerService spinnerService) {
         this.iGridMaster = iGridMaster;
         this.activeMenuOrSubmenuViewModel = activeMenuOrSubmenuViewModel;
+        this.menuSolveViewModel = menuSolveViewModel;
         this.audioService = audioService;
         this.playerStateHolder = playerStateHolder;
         this.playerService = playerService;
@@ -194,12 +198,11 @@ public class GridViewModel {
     }
 
     /**
-     * Initializes the 9x9 Sudoku grid by creating 81 {@link GridCellViewModel} instances with
-     * unique IDs and row/column coordinates. Each cell's text property is attached to a listener
-     * that calls {@link #handleCellTextChange()} whenever the text changes.
+     * Instantiates the 81 {@link GridCellViewModel} and binds text change listeners.
      *
-     * <p>Must be called before accessing or manipulating grid cells; otherwise, {@link
-     * IllegalStateException} may be thrown.
+     * <p>Each listener passes the specific cell context to {@link
+     * #handleCellTextChange(GridCellViewModel)}. Must be called prior to any grid interaction to
+     * avoid {@link IllegalStateException}.
      */
     public void init() {
         int id = 1;
@@ -208,7 +211,7 @@ public class GridViewModel {
                 GridCellViewModel cellVM = new GridCellViewModel(id++, row, col);
                 cellVM.getTextArea()
                         .textProperty()
-                        .addListener((obs, oldText, newText) -> handleCellTextChange());
+                        .addListener((_, _, _) -> handleCellTextChange(cellVM));
                 cellViewModels.add(cellVM);
             }
         }
@@ -216,23 +219,121 @@ public class GridViewModel {
     }
 
     /**
-     * Handles updates to a cell's text when the user modifies the grid.
+     * Synchronizes the grid state and manages side effects based on the current application mode.
      *
-     * <p>Skips processing if listeners are suppressed. Depending on the active menu and grid state,
-     * this method may persist the grid, verify it, or stop background audio.
+     * @param cellVM the cell view model that triggered the change
      */
-    private void handleCellTextChange() {
+    private void handleCellTextChange(GridCellViewModel cellVM) {
         if (suppressCellsListeners) {
             return;
         }
-        boolean isSolveMenu =
-                ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE.equals(
-                        activeMenuOrSubmenuViewModel.getActiveMenu().getValue());
-        if (isSolveMenu) {
-            victory.set(false);
-            audioService.stopSong();
+        if (isSolveModeActive()) {
+            applySolveModeState(cellVM);
+        } else {
+            applyStandardPlayFlow();
+        }
+    }
+
+    /**
+     * Checks if the current UI context is set to the Solve menu.
+     *
+     * @return true if the SOLVE menu is active, false otherwise
+     */
+    private boolean isSolveModeActive() {
+        return ActiveMenuOrSubmenuViewModel.ActiveMenu.SOLVE.equals(
+                activeMenuOrSubmenuViewModel.getActiveMenu().getValue());
+    }
+
+    /**
+     * Synchronizes the grid state during manual solving. Validates input, locks the cell if valid,
+     * and triggers the solver. If no solution is found, it rolls back the change. * @param cellVM
+     * The cell being modified.
+     */
+    private void applySolveModeState(GridCellViewModel cellVM) {
+        victory.set(false);
+        audioService.stopSong();
+        String value = cellVM.getTextArea().getText();
+        // 1. Handle deletion or invalid multi-character input
+        if (StringUtils.isBlank(value) || "0".equals(value) || value.length() > 1) {
+            resetCellToEditable(cellVM);
             return;
         }
+        char firstChar = value.trim().charAt(0);
+        // 2. Validate digit (1-9)
+        if (Character.isDigit(firstChar) && firstChar != '0') {
+            suppressCellsListeners = true;
+            try {
+                // Anchor the user input as a fixed value
+                cellVM.rawTextProperty().set(String.valueOf(firstChar));
+                cellVM.editableProperty().set(false);
+                cellVM.getTextArea().setVisible(false);
+                cellVM.getLabel().setVisible(true);
+            } finally {
+                suppressCellsListeners = false;
+            }
+            // 3. Attempt to solve the grid with the new anchor
+            boolean success = updateSolveProgress();
+            // 4. Rollback if the new digit creates a contradiction
+            if (!success) {
+                toasterService.showWarning(
+                        MessageFormat.format(
+                                I18n.INSTANCE.getValue("toast.warning.gridviewmodel.nosolution"),
+                                firstChar),
+                        "");
+                resetCellToEditable(cellVM);
+                updateSolveProgress(); // Refresh visual state to previous valid solution
+            }
+        }
+    }
+
+    /**
+     * Calculates the solution based on anchored cells and updates editable cells. * @return true if
+     * the current configuration is solvable, false otherwise.
+     */
+    private boolean updateSolveProgress() {
+        int[] inputGrid = new int[TOTAL_CELLS];
+        // Collect anchored values (where editable is false)
+        for (int i = 0; i < TOTAL_CELLS; i++) {
+            GridCellViewModel vm = cellViewModels.get(i);
+            inputGrid[i] =
+                    !vm.editableProperty().get() ? Integer.parseInt(vm.rawTextProperty().get()) : 0;
+        }
+        GrilleResolue result = iGridMaster.resoudreLaGrille(inputGrid);
+        menuSolveViewModel.setSolvePercentage(result.solved() ? result.possibilityPercentage() : 0);
+        if (result.solved()) {
+            int[] solvedValues = result.solvedGrid();
+            suppressCellsListeners = true;
+            try {
+                for (int i = 0; i < TOTAL_CELLS; i++) {
+                    GridCellViewModel cellVM = cellViewModels.get(i);
+                    // Fill only empty (editable) cells with calculated values
+                    if (cellVM.editableProperty().get()) {
+                        cellVM.rawTextProperty().set(String.valueOf(solvedValues[i]));
+                    }
+                }
+            } finally {
+                suppressCellsListeners = false;
+            }
+        }
+        return result.solved();
+    }
+
+    /** Utility method to reset a cell to its initial editable state. */
+    private void resetCellToEditable(GridCellViewModel cellVM) {
+        suppressCellsListeners = true;
+        try {
+            cellVM.rawTextProperty().set("0");
+            cellVM.editableProperty().set(true);
+            cellVM.getTextArea().setVisible(true);
+            cellVM.getLabel().setVisible(false);
+            cellVM.getTextArea().clear();
+        } finally {
+            suppressCellsListeners = false;
+        }
+    }
+
+    /** Handles grid persistence and completion verification during regular gameplay. */
+    private void applyStandardPlayFlow() {
         if (hasDefaultGrid()) {
             persistGridValue();
         }
@@ -439,12 +540,13 @@ public class GridViewModel {
         return Collections.unmodifiableList(cellViewModels);
     }
 
-    /** Clears the text in all cells. */
+    /** Resets cell's values to "0" and enables all cells edition without triggering listeners. */
     public void clearGrid() {
-        // TODO WILL BE USED FOR SOLVE CLEAR BUTTON
         checkInitialized();
+        suppressCellsListeners = true;
         cellViewModels.forEach(vm -> vm.rawTextProperty().set("0"));
         setValues(getAllValues(), true);
+        suppressCellsListeners = false;
     }
 
     /** Gets a list of all cell text values in row-major order. */

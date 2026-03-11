@@ -29,6 +29,7 @@ import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.SpinnerService;
 import fr.softsf.sudokufx.service.ui.ToasterService;
 import fr.softsf.sudokufx.viewmodel.ActiveMenuOrSubmenuViewModel;
+import fr.softsf.sudokufx.viewmodel.MenuSolveViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.CurrentGrid;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
@@ -42,6 +43,7 @@ import static org.mockito.Mockito.*;
 class GridViewModelUTest extends AbstractPlayerStateTest {
 
     private GridViewModel viewModel;
+    private MenuSolveViewModel menuSolveViewModel;
     private ToasterService toasterServiceMock;
     private SpinnerService spinnerServiceMock;
 
@@ -53,10 +55,12 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                 .validateOrThrow(any());
         toasterServiceMock = mock(ToasterService.class);
         spinnerServiceMock = mock(SpinnerService.class);
+        menuSolveViewModel = mock(MenuSolveViewModel.class);
         viewModel =
                 new GridViewModel(
                         new GridMaster(validatorMock),
                         new ActiveMenuOrSubmenuViewModel(),
+                        menuSolveViewModel,
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
@@ -150,6 +154,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                 new GridViewModel(
                         new GridMaster(mock(JakartaValidator.class)),
                         new ActiveMenuOrSubmenuViewModel(),
+                        menuSolveViewModel,
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
@@ -202,6 +207,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                 new GridViewModel(
                         new GridMaster(mock(JakartaValidator.class)),
                         new ActiveMenuOrSubmenuViewModel(),
+                        menuSolveViewModel,
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
@@ -229,6 +235,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                 new GridViewModel(
                         new GridMaster(mock(JakartaValidator.class)),
                         new ActiveMenuOrSubmenuViewModel(),
+                        menuSolveViewModel,
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
@@ -265,17 +272,25 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     @Test
     void givenEasyLevel_whenIncrementDesiredPossibilities_thenCyclesCorrectly() {
         viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        assertEquals(IGridMaster.FACILE_MIN_PERCENT, viewModel.getDesiredPossibilities());
         assertEquals(0, viewModel.getDesiredPossibilities());
         viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
-        assertEquals(10, viewModel.getDesiredPossibilities());
         viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
-        assertEquals(0, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        assertEquals(30, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.EASY);
+        assertEquals(IGridMaster.FACILE_MIN_PERCENT, viewModel.getDesiredPossibilities());
     }
 
     @Test
-    void givenMediumLevel_whenIncrementDesiredPossibilities_thenStartsAtMediumMin() {
+    void givenMediumLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly() {
         viewModel.incrementDesiredPossibilities(DifficultyLevel.MEDIUM);
         assertEquals(IGridMaster.MOYEN_MIN_PERCENT, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.MEDIUM);
+        assertEquals(40, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.MEDIUM);
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.MEDIUM);
+        assertEquals(60, viewModel.getDesiredPossibilities());
         viewModel.incrementDesiredPossibilities(DifficultyLevel.MEDIUM);
         assertEquals(IGridMaster.MOYEN_MIN_PERCENT, viewModel.getDesiredPossibilities());
     }
@@ -283,15 +298,14 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     @Test
     void givenDifficultLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly() {
         viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
-        assertEquals(27, viewModel.getDesiredPossibilities());
+        assertEquals(IGridMaster.DIFFICILE_MIN_PERCENT, viewModel.getDesiredPossibilities());
         viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
-        assertEquals(30, viewModel.getDesiredPossibilities());
-        for (int i = 0; i < 6; i++) {
-            viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
-        }
+        assertEquals(70, viewModel.getDesiredPossibilities());
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
+        viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
         assertEquals(90, viewModel.getDesiredPossibilities());
         viewModel.incrementDesiredPossibilities(DifficultyLevel.DIFFICULT);
-        assertEquals(27, viewModel.getDesiredPossibilities());
+        assertEquals(IGridMaster.DIFFICILE_MIN_PERCENT, viewModel.getDesiredPossibilities());
     }
 
     @Test

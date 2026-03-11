@@ -69,8 +69,6 @@ public final class GridMaster implements IGridMaster {
      */
     private static final int[][] NEIGHBORS = new int[NOMBRE_CASES][20];
 
-    private static final int TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE = 50000;
-
     /** Durée maximale d'une recherche de configuration valide (fail safe) pour un essai donné. */
     private static final int DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS = 300;
 
@@ -78,8 +76,6 @@ public final class GridMaster implements IGridMaster {
     private static final int MAX_ESSAIS_POUR_GENERATION_DE_GRILLE = 10;
 
     private final JakartaValidator jakartaValidator;
-    private int moyenMinPossibilites = MOYEN_MIN_POSSIBILITES;
-    private int moyenMaxPossibilites = MOYEN_MAX_POSSIBILITES;
 
     /*
      * Bloc d'initialisation statique pour les structures de données constantes.
@@ -154,17 +150,19 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Calcule la somme des possibilités de toutes les cases de la grille de Sudoku.
+     * Calcule le nombre total de candidats (entropie) sur l'ensemble de la grille.
      *
-     * @param possibilites Tableau des possibilités par case (511 = toutes possibilités).
-     * @return La somme des possibilités.
+     * <p>Utilise {@link Integer#bitCount(int)} pour garantir un poids linéaire à chaque candidat,
+     * s'alignant ainsi sur les seuils de difficulté définis dans {@link IGridMaster}.
+     *
+     * @param possibilites Tableau de 81 masques de bits (bitmasks).
+     * @return Somme totale des candidats restants. La plage pratique pour les grilles valides
+     *     s'étend de {@value IGridMaster#MIN_POSSIBILITES} à {@value IGridMaster#MAX_POSSIBILITES}.
      */
     private static int sommeDesPossibilitesDeLaGrille(final int[] possibilites) {
         int somme = 0;
         for (int possibilite : possibilites) {
-            // On somme la valeur du masque (ex: 511) pour rester cohérent avec les constantes de
-            // seuil (MIN_POSSIBILITES, etc.)
-            somme += possibilite;
+            somme += Integer.bitCount(possibilite);
         }
         return somme;
     }
@@ -200,22 +198,22 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Élimine la valeur des possibilités des cases voisines (ligne, colonne, carré).
+     * Élimine une valeur des candidats des cellules voisines (ligne, colonne, bloc).
      *
-     * <p>Cette méthode utilise la table de correspondance {@link #NEIGHBORS} pour identifier
-     * instantanément les cases à mettre à jour, sans recalculer de coordonnées.
+     * <p>Les voisins affectés incluent toutes les cellules partageant la même ligne, colonne ou
+     * région 3x3, telles que définies dans la table pré-calculée {@code NEIGHBORS}.
      *
-     * @param possibilites Tableau des possibilités.
-     * @param index L'index plat de la case (0-80) dont la valeur vient d'être fixée.
-     * @param valeur Valeur à éliminer des voisins.
+     * @param possibilities Tableau des 81 masques de bits à mettre à jour.
+     * @param index Index à plat de la cellule (0-80) venant d'être assignée.
+     * @param value La valeur (chiffre du Sudoku) à retirer des voisins.
      */
     private static void eliminerPossibilite(
-            final int[] possibilites, final int index, final int valeur) {
+            final int[] possibilities, final int index, final int value) {
         // Masque inverse : tous les bits à 1 sauf celui de la valeur
-        final int masque = ~BIT_MASKS[valeur];
+        final int mask = ~BIT_MASKS[value];
         // Parcours du tableau pré-calculé (beaucoup plus rapide que les boucles imbriquées)
         for (int neighborIndex : NEIGHBORS[index]) {
-            possibilites[neighborIndex] &= masque;
+            possibilities[neighborIndex] &= mask;
         }
     }
 
@@ -276,23 +274,24 @@ public final class GridMaster implements IGridMaster {
      * Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté ou
      * un pourcentage cible.
      *
-     * <p>Cette méthode fait office de dispatcheur. Elle construit dynamiquement une condition de
-     * validation ({@link IntPredicate}) basée soit sur les seuils standards du niveau, soit sur une
-     * plage de possibilités calculée à partir du {@code pourcentageDesire}.
+     * <p>Cette méthode agit comme un <b>dispatcheur de difficulté</b>. Elle construit dynamiquement
+     * un {@link IntPredicate} de validation basé soit sur les seuils globaux du niveau (clic
+     * simple), soit sur une plage d'entropie restreinte calculée par segments de 10% (clic sur
+     * curseur).
      *
-     * <p>Le masquage est purement stochastique, basé sur les plages de cellules à cacher définies
-     * pour chaque niveau (Facile, Moyen, Difficile).
+     * <p>Le processus repose sur un masquage stochastique (aléatoire) calibré pour respecter
+     * simultanément l'<b>unicité de la solution</b> et la <b>somme des candidats</b> (entropie)
+     * définie par {@link IGridMaster#MIN_POSSIBILITES} et {@link IGridMaster#MAX_POSSIBILITES}.
      *
-     * <p><b>Gestion des échecs :</b> Si la génération échoue (difficulté non atteinte ou unicité
-     * non garantie après le nombre maximal d'essais), la méthode peut retourner une grille
-     * réinitialisée à zéro.
+     * <p><b>Gestion des échecs :</b> En cas de timeout (watchdog) ou si le nombre maximal d'essais
+     * est atteint sans satisfaire la condition d'unicité/difficulté, la grille est remise à zéro.
      *
-     * @param niveau Le niveau de difficulté : 1 (facile), 2 (moyen), 3 (difficile).
-     * @param pourcentageDesire Le pourcentage minimum de possibilités souhaité (0 à 100), ou -1
-     *     pour le comportement standard du niveau.
-     * @param grilleResolue La grille complète servant de référence pour le masquage.
+     * @param niveau Le niveau de difficulté cible : 1 (EASY), 2 (MEDIUM), 3 (DIFFICULT).
+     * @param pourcentageDesire Le pourcentage de difficulté (0 à 100), ou -1 pour utiliser
+     *     l'intégralité de la plage du niveau.
+     * @param grilleResolue La grille complète servant de matrice source.
      * @param grilleAResoudre Le tableau de destination (81 cases) modifié par effet de bord.
-     * @return La somme des possibilités brute de la grille finale, ou -1 en cas d'échec.
+     * @return La somme finale des possibilités (entropie), ou -1 en cas d'échec de génération.
      */
     private int genererLaGrilleAResoudre(
             final int niveau,
@@ -302,33 +301,19 @@ public final class GridMaster implements IGridMaster {
         final DifficultyLevel level = DifficultyLevel.fromGridByte((byte) niveau);
         IntPredicate condition;
         if (pourcentageDesire == -1) {
-            condition =
-                    switch (level) {
-                        case EASY -> somme -> somme <= this.moyenMinPossibilites;
-                        case MEDIUM ->
-                                somme ->
-                                        somme >= this.moyenMinPossibilites
-                                                && somme <= this.moyenMaxPossibilites;
-                        case DIFFICULT -> somme -> somme >= this.moyenMaxPossibilites;
-                    };
+            final LevelPossibilityBounds bounds = getIntervallePourcentageNiveau(level);
+            final int minBrut = getPossibilitesDepuisPourcentage(bounds.min());
+            final int maxBrut = getPossibilitesDepuisPourcentage(bounds.max());
+            condition = somme -> somme >= minBrut && somme <= maxBrut;
         } else {
-            int min = getPossibilitesDepuisPourcentage(pourcentageDesire);
-            int max =
+            final int min = getPossibilitesDepuisPourcentage(pourcentageDesire);
+            final LevelPossibilityBounds bounds = getIntervallePourcentageNiveau(level);
+            final int max =
                     getPossibilitesDepuisPourcentage(
-                            calculerValeurSuperieureDuSegment(
-                                    getIntervallePourcentageNiveau(level), pourcentageDesire));
+                            calculerValeurSuperieureDuSegment(bounds, pourcentageDesire));
             condition = somme -> somme >= min && somme <= max;
         }
-        return switch (level) {
-            case MEDIUM ->
-                    getPossibilitesGrilleAResoudreMoyenne(
-                            condition, grilleResolue, grilleAResoudre);
-            case DIFFICULT ->
-                    getPossibilitesGrilleAresoudreDifficile(
-                            condition, grilleResolue, grilleAResoudre);
-            default ->
-                    getPossibilitesGrilleAResoudreFacile(condition, grilleResolue, grilleAResoudre);
-        };
+        return getPossibilitesGrilleAResoudre(condition, grilleResolue, grilleAResoudre);
     }
 
     /**
@@ -369,30 +354,38 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté.
+     * Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté cible.
      *
      * <p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation
-     * exhaustive via backtracking. Il itère jusqu'à ce que la <b>somme des possibilités</b>
-     * satisfasse le prédicat de difficulté.
+     * exhaustive via backtracking. Il itère de manière stochastique jusqu'à ce que la <b>somme des
+     * possibilités</b> (entropie) satisfasse le prédicat de difficulté.
      *
      * <p><b>Optimisations et Sécurités :</b>
      *
      * <ul>
-     *   <li><b>Interruption :</b> Vérifie {@link Thread#isInterrupted()} pour stopper le calcul
-     *       immédiatement si la {@link Task} est annulée.
-     *   <li><b>Watchdog :</b> Limite chaque essai à {@link #DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS}.
-     *   <li><b>Récursion :</b> Relance une génération globale jusqu'à {@link
-     *       #MAX_ESSAIS_POUR_GENERATION_DE_GRILLE} en cas de timeout de l'essai actuel.
+     *   <li><b>Élagage hâtif :</b> La validation de l'unicité (coûteuse) n'est déclenchée que si la
+     *       grille générée atteint d'abord le seuil d'entropie requis.
+     *   <li><b>Gestion mémoire :</b> Utilisation d'un tableau de travail local pour minimiser la
+     *       pression sur le Garbage Collector (GC) durant les itérations rapides.
+     *   <li><b>Interruption :</b> Surveillance de {@link Thread#isInterrupted()} pour un arrêt
+     *       immédiat en cas d'annulation de la tâche.
+     *   <li><b>Watchdog :</b> Limite chaque tentative à {@link
+     *       #DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS} pour éviter les blocages sur des configurations
+     *       hautement improbables.
+     *   <li><b>Récursion contrôlée :</b> Relance une génération globale jusqu'à {@link
+     *       #MAX_ESSAIS_POUR_GENERATION_DE_GRILLE} avant de déclarer un échec.
      * </ul>
      *
-     * @param grilleResolue La grille complète servant de base.
-     * @param grilleAResoudre La structure de destination pour la grille à trous (modifiée).
+     * @param grilleResolue La grille complète servant de matrice source.
+     * @param grilleAResoudre La structure de destination pour la grille à trous (modifiée par effet
+     *     de bord).
      * @param casesAMin Borne inférieure (incluse) du nombre de cases à masquer.
      * @param casesAMax Borne supérieure (exclue) du nombre de cases à masquer.
-     * @param conditionValidation Prédicat de validation de la difficulté.
-     * @param compteurEssais Le numéro de la tentative actuelle pour le suivi récursif.
-     * @return La somme des possibilités de la grille finale, ou -1 en cas d'échec (timeout, nombre
-     *     max d'essais atteint ou interruption du thread).
+     * @param conditionValidation Prédicat validant que la somme des candidats correspond à la
+     *     difficulté voulue.
+     * @param compteurEssais Compteur de tentatives pour la gestion de la récursion.
+     * @return La somme des possibilités de la grille finale, ou -1 en cas d'échec (timeout, limite
+     *     d'essais atteinte ou interruption).
      */
     @SuppressWarnings("java:S2245")
     private int genererGrilleAvecCasesCachees(
@@ -404,25 +397,28 @@ public final class GridMaster implements IGridMaster {
             int compteurEssais) {
         int sommeDesPossibilites;
         boolean estValide = false;
-        var random = ThreadLocalRandom.current();
-        int nombreDeCasesACacher = random.nextInt(casesAMin, casesAMax);
-        long debutAppel = System.currentTimeMillis();
+        final var random = ThreadLocalRandom.current();
+        final long debutAppel = System.currentTimeMillis();
+        // Tableau de travail pour éviter l'allocation dans la boucle (0 allocation GC)
+        int[] possibilitesTravail = new int[NOMBRE_CASES];
         do {
             if (Thread.currentThread().isInterrupted()) {
                 Arrays.fill(grilleAResoudre, 0);
                 return -1;
             }
-            sommeDesPossibilites =
-                    getPossibilitesGrilleWhileNok(
-                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
-            // Vérification Unicité
-            if (verifierUnicite(grilleAResoudre.clone(), getPossibilites(grilleAResoudre), 0)
-                    == 1) {
-                // Vérification Difficulté
-                if (conditionValidation.test(sommeDesPossibilites)) {
+            int tirageTrous = random.nextInt(casesAMin, casesAMax);
+            // Opération rapide : Copie manuelle ou System.arraycopy
+            System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
+            // Masquage direct
+            cacherLesCases(tirageTrous, grilleAResoudre);
+            // Calcul d'entropie léger
+            initialiserPossibilites(grilleAResoudre, possibilitesTravail);
+            sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilitesTravail);
+            // FILTRE CRITIQUE : 90% des grilles sont rejetées ici sans coûter de CPU
+            if (conditionValidation.test(sommeDesPossibilites)) {
+                // Unicité : On ne clone que si on a une chance de valider la difficulté
+                if (verifierUnicite(grilleAResoudre.clone(), possibilitesTravail.clone(), 0) == 1) {
                     estValide = true;
-                } else {
-                    nombreDeCasesACacher = random.nextInt(casesAMin, casesAMax);
                 }
             }
             // Vérifier validité et durée de génération
@@ -430,9 +426,8 @@ public final class GridMaster implements IGridMaster {
                 && (System.currentTimeMillis() - debutAppel)
                         <= DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS);
         if (!estValide) {
-            compteurEssais++;
             // Vérifier le nombre de tentatives
-            if (compteurEssais >= MAX_ESSAIS_POUR_GENERATION_DE_GRILLE) {
+            if (++compteurEssais >= MAX_ESSAIS_POUR_GENERATION_DE_GRILLE) {
                 Arrays.fill(grilleAResoudre, 0);
                 return -1;
             }
@@ -449,75 +444,20 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku de niveau moyen.
+     * Génère une grille de Sudoku.
+     *
+     * <p>Cette méthode sert de point d'entrée simplifié en déléguant la logique de masquage et de
+     * validation d'unicité à {@link #genererGrilleAvecCasesCachees}.
      *
      * @param conditionValidation Prédicat définissant les bornes de difficulté acceptables.
-     * @param grilleResolue Grille complètement remplie servant de base.
-     * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
-     * @return Somme des possibilités restantes dans la grille à résoudre.
+     * @param grilleResolue Grille complète servant de matrice source.
+     * @param grilleAResoudre Grille de destination pour le puzzle (modifiée par la méthode).
+     * @return Somme des possibilités (entropie) de la grille finale, ou -1 en cas d'échec.
      */
-    private int getPossibilitesGrilleAResoudreFacile(
+    private int getPossibilitesGrilleAResoudre(
             IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre) {
         return genererGrilleAvecCasesCachees(
-                grilleResolue,
-                grilleAResoudre,
-                FACILE_MIN_CACHEES,
-                MOYEN_MIN_CACHEES,
-                conditionValidation,
-                1);
-    }
-
-    /**
-     * Génère une grille de Sudoku de niveau moyen.
-     *
-     * @param conditionValidation Prédicat définissant les bornes de difficulté acceptables.
-     * @param grilleResolue Grille complètement remplie servant de base.
-     * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
-     * @return Somme des possibilités restantes dans la grille à résoudre.
-     */
-    private int getPossibilitesGrilleAResoudreMoyenne(
-            IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre) {
-        return genererGrilleAvecCasesCachees(
-                grilleResolue,
-                grilleAResoudre,
-                MOYEN_MIN_CACHEES,
-                MOYEN_MAX_CACHEES,
-                conditionValidation,
-                1);
-    }
-
-    /**
-     * Génère une grille de Sudoku de niveau difficile.
-     *
-     * @param conditionValidation Prédicat définissant les bornes de difficulté acceptables.
-     * @param grilleResolue Grille complètement remplie servant de base.
-     * @param grilleAResoudre Grille à remplir avec les cases masquées (modifiée par la méthode).
-     * @return Somme des possibilités restantes dans la grille à résoudre.
-     */
-    private int getPossibilitesGrilleAresoudreDifficile(
-            IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre) {
-        return genererGrilleAvecCasesCachees(
-                grilleResolue,
-                grilleAResoudre,
-                MOYEN_MAX_CACHEES,
-                DIFFICILE_MAX_CACHEES,
-                conditionValidation,
-                1);
-    }
-
-    /**
-     * Cache des cases dans la grille et calcule la somme des possibilités restantes.
-     *
-     * @param grilleResolue La grille de Sudoku résolue (source).
-     * @param grilleAResoudre La grille de Sudoku à résoudre (destination), MODIFIÉE par la méthode.
-     * @param nombreDeCasesACacher Nombre de cases à cacher.
-     * @return La somme des possibilités après avoir caché des cases.
-     */
-    private int getPossibilitesGrilleWhileNok(
-            int[] grilleResolue, int[] grilleAResoudre, int nombreDeCasesACacher) {
-        System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
-        cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
-        return sommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
+                grilleResolue, grilleAResoudre, MIN_CACHEES, MAX_CACHEES, conditionValidation, 1);
     }
 
     /**
@@ -736,30 +676,5 @@ public final class GridMaster implements IGridMaster {
             valeurs[i] = a;
         }
         System.arraycopy(valeurs, 0, grille, 0, 9);
-    }
-
-    /**
-     * Définit une possibilité facile inaccessible, pour générer une grille par défaut après une
-     * seconde. Cette méthode est uniquement utilisée pour les tests.
-     */
-    void setEasyImpossiblePossibilitiesForTests() {
-        this.moyenMinPossibilites = -1;
-    }
-
-    /**
-     * Définit une possibilité moyenne inaccessible, pour générer une grille par défaut après une
-     * seconde. Cette méthode est uniquement utilisée pour les tests.
-     */
-    void setAverageImpossiblePossibilitiesForTests() {
-        this.moyenMinPossibilites = TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE;
-        this.moyenMaxPossibilites = -1;
-    }
-
-    /**
-     * Définit une possibilité difficile inaccessible, pour générer une grille par défaut après une
-     * seconde. Cette méthode est uniquement utilisée pour les tests.
-     */
-    void setDifficultImpossiblePossibilitiesForTests() {
-        this.moyenMaxPossibilites = TEST_POSSIBILITE_MOYENNE_IMPOSSIBLE;
     }
 }
