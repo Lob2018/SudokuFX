@@ -414,12 +414,10 @@ public final class GridMaster implements IGridMaster {
             // Calcul d'entropie léger
             initialiserPossibilites(grilleAResoudre, possibilitesTravail);
             sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilitesTravail);
-            // FILTRE CRITIQUE : 90% des grilles sont rejetées ici sans coûter de CPU
-            if (conditionValidation.test(sommeDesPossibilites)) {
-                // Unicité : On ne clone que si on a une chance de valider la difficulté
-                if (verifierUnicite(grilleAResoudre.clone(), possibilitesTravail.clone(), 0) == 1) {
-                    estValide = true;
-                }
+            // L'unicité n'est vérifiée que si l'entropie est valide.
+            if (conditionValidation.test(sommeDesPossibilites)
+                    && verifierUnicite(grilleAResoudre.clone(), possibilitesTravail.clone(), 0) == 1) {
+                estValide = true;
             }
             // Vérifier validité et durée de génération
         } while (!estValide
