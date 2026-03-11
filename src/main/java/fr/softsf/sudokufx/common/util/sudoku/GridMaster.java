@@ -9,6 +9,7 @@ import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.IntPredicate;
 import java.util.stream.IntStream;
+import javafx.concurrent.Task;
 
 import org.springframework.stereotype.Component;
 
@@ -354,38 +355,30 @@ public final class GridMaster implements IGridMaster {
     }
 
     /**
-     * Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté cible.
+     * Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté.
      *
      * <p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation
-     * exhaustive via backtracking. Il itère de manière stochastique jusqu'à ce que la <b>somme des
-     * possibilités</b> (entropie) satisfasse le prédicat de difficulté.
+     * exhaustive via backtracking. Il itère jusqu'à ce que la <b>somme des possibilités</b>
+     * satisfasse le prédicat de difficulté.
      *
      * <p><b>Optimisations et Sécurités :</b>
      *
      * <ul>
-     *   <li><b>Élagage hâtif :</b> La validation de l'unicité (coûteuse) n'est déclenchée que si la
-     *       grille générée atteint d'abord le seuil d'entropie requis.
-     *   <li><b>Gestion mémoire :</b> Utilisation d'un tableau de travail local pour minimiser la
-     *       pression sur le Garbage Collector (GC) durant les itérations rapides.
-     *   <li><b>Interruption :</b> Surveillance de {@link Thread#isInterrupted()} pour un arrêt
-     *       immédiat en cas d'annulation de la tâche.
-     *   <li><b>Watchdog :</b> Limite chaque tentative à {@link
-     *       #DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS} pour éviter les blocages sur des configurations
-     *       hautement improbables.
-     *   <li><b>Récursion contrôlée :</b> Relance une génération globale jusqu'à {@link
-     *       #MAX_ESSAIS_POUR_GENERATION_DE_GRILLE} avant de déclarer un échec.
+     *   <li><b>Interruption :</b> Vérifie {@link Thread#isInterrupted()} pour stopper le calcul
+     *       immédiatement si la {@link Task} est annulée.
+     *   <li><b>Watchdog :</b> Limite chaque essai à {@link #DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS}.
+     *   <li><b>Récursion :</b> Relance une génération globale jusqu'à {@link
+     *       #MAX_ESSAIS_POUR_GENERATION_DE_GRILLE} en cas de timeout de l'essai actuel.
      * </ul>
      *
-     * @param grilleResolue La grille complète servant de matrice source.
-     * @param grilleAResoudre La structure de destination pour la grille à trous (modifiée par effet
-     *     de bord).
+     * @param grilleResolue La grille complète servant de base.
+     * @param grilleAResoudre La structure de destination pour la grille à trous (modifiée).
      * @param casesAMin Borne inférieure (incluse) du nombre de cases à masquer.
      * @param casesAMax Borne supérieure (exclue) du nombre de cases à masquer.
-     * @param conditionValidation Prédicat validant que la somme des candidats correspond à la
-     *     difficulté voulue.
-     * @param compteurEssais Compteur de tentatives pour la gestion de la récursion.
-     * @return La somme des possibilités de la grille finale, ou -1 en cas d'échec (timeout, limite
-     *     d'essais atteinte ou interruption).
+     * @param conditionValidation Prédicat de validation de la difficulté.
+     * @param compteurEssais Le numéro de la tentative actuelle pour le suivi récursif.
+     * @return La somme des possibilités de la grille finale, ou -1 en cas d'échec (timeout, nombre
+     *     max d'essais atteint ou interruption du thread).
      */
     @SuppressWarnings("java:S2245")
     private int genererGrilleAvecCasesCachees(
@@ -397,36 +390,35 @@ public final class GridMaster implements IGridMaster {
             int compteurEssais) {
         int sommeDesPossibilites;
         boolean estValide = false;
-        final var random = ThreadLocalRandom.current();
-        final long debutAppel = System.currentTimeMillis();
-        // Tableau de travail pour éviter l'allocation dans la boucle (0 allocation GC)
-        int[] possibilitesTravail = new int[NOMBRE_CASES];
+        var random = ThreadLocalRandom.current();
+        int nombreDeCasesACacher = random.nextInt(casesAMin, casesAMax);
+        long debutAppel = System.currentTimeMillis();
         do {
             if (Thread.currentThread().isInterrupted()) {
                 Arrays.fill(grilleAResoudre, 0);
                 return -1;
             }
-            int tirageTrous = random.nextInt(casesAMin, casesAMax);
-            // Opération rapide : Copie manuelle ou System.arraycopy
-            System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
-            // Masquage direct
-            cacherLesCases(tirageTrous, grilleAResoudre);
-            // Calcul d'entropie léger
-            initialiserPossibilites(grilleAResoudre, possibilitesTravail);
-            sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilitesTravail);
-            // L'unicité n'est vérifiée que si l'entropie est valide.
-            if (conditionValidation.test(sommeDesPossibilites)
-                    && verifierUnicite(grilleAResoudre.clone(), possibilitesTravail.clone(), 0)
-                            == 1) {
-                estValide = true;
+            sommeDesPossibilites =
+                    getPossibilitesGrilleWhileNok(
+                            grilleResolue, grilleAResoudre, nombreDeCasesACacher);
+            // Vérification Unicité
+            if (verifierUnicite(grilleAResoudre.clone(), getPossibilites(grilleAResoudre), 0)
+                    == 1) {
+                // Vérification Difficulté
+                if (conditionValidation.test(sommeDesPossibilites)) {
+                    estValide = true;
+                } else {
+                    nombreDeCasesACacher = random.nextInt(casesAMin, casesAMax);
+                }
             }
             // Vérifier validité et durée de génération
         } while (!estValide
                 && (System.currentTimeMillis() - debutAppel)
                         <= DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS);
         if (!estValide) {
+            compteurEssais++;
             // Vérifier le nombre de tentatives
-            if (++compteurEssais >= MAX_ESSAIS_POUR_GENERATION_DE_GRILLE) {
+            if (compteurEssais >= MAX_ESSAIS_POUR_GENERATION_DE_GRILLE) {
                 Arrays.fill(grilleAResoudre, 0);
                 return -1;
             }
@@ -457,6 +449,21 @@ public final class GridMaster implements IGridMaster {
             IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre) {
         return genererGrilleAvecCasesCachees(
                 grilleResolue, grilleAResoudre, MIN_CACHEES, MAX_CACHEES, conditionValidation, 1);
+    }
+
+    /**
+     * Cache des cases dans la grille et calcule la somme des possibilités restantes.
+     *
+     * @param grilleResolue La grille de Sudoku résolue (source).
+     * @param grilleAResoudre La grille de Sudoku à résoudre (destination), MODIFIÉE par la méthode.
+     * @param nombreDeCasesACacher Nombre de cases à cacher.
+     * @return La somme des possibilités après avoir caché des cases.
+     */
+    private int getPossibilitesGrilleWhileNok(
+            int[] grilleResolue, int[] grilleAResoudre, int nombreDeCasesACacher) {
+        System.arraycopy(grilleResolue, 0, grilleAResoudre, 0, NOMBRE_CASES);
+        cacherLesCases(nombreDeCasesACacher, grilleAResoudre);
+        return sommeDesPossibilitesDeLaGrille(getPossibilites(grilleAResoudre));
     }
 
     /**
@@ -641,10 +648,6 @@ public final class GridMaster implements IGridMaster {
         // possibilités desiré
         int sommeDesPossibilites =
                 genererLaGrilleAResoudre(niveau, pourcentageDesire, grilleResolue, grilleAResoudre);
-        // Forcer la remise à zéro de la grille en cas d'échec de génération
-        if (sommeDesPossibilites == -1) {
-            Arrays.fill(grilleAResoudre, 0);
-        }
         // Récupérer le pourcentage de possibilités estimé
         int pourcentageDesPossibilites =
                 sommeDesPossibilites == -1
