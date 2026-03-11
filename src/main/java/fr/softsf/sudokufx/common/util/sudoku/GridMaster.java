@@ -416,7 +416,8 @@ public final class GridMaster implements IGridMaster {
             sommeDesPossibilites = sommeDesPossibilitesDeLaGrille(possibilitesTravail);
             // L'unicité n'est vérifiée que si l'entropie est valide.
             if (conditionValidation.test(sommeDesPossibilites)
-                    && verifierUnicite(grilleAResoudre.clone(), possibilitesTravail.clone(), 0) == 1) {
+                    && verifierUnicite(grilleAResoudre.clone(), possibilitesTravail.clone(), 0)
+                            == 1) {
                 estValide = true;
             }
             // Vérifier validité et durée de génération
