@@ -1,0 +1,24 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleAResoudre" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleAResoudre">
+<area shape="rect" id="Node000001" title="Génère une grille de Sudoku." alt="" coords="5,129,275,172"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af6461bfbf866d4c2ed591179e96eb56b" title="Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté cible." alt="" coords="323,129,605,172"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,148,307,148,307,153,275,153"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="403,129,401,119,411,110,432,105,464,103,498,105,519,111,517,116,497,110,464,108,433,110,414,115,406,121,409,128"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aedafc76e589c715c380e2732e0ff04d2" title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro." alt="" coords="671,29,919,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="521,126,652,81,680,74,681,79,654,87,523,131"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="671,96,919,139"/>
+<area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="605,134,655,129,656,134,606,139"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" title="Calcule le nombre total de candidats (entropie) sur l&#39;ensemble de la grille." alt="" coords="653,163,937,205"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="606,162,638,165,637,171,605,168"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa3aa3945ebc4549be49be1e0c481f9da" title="Vérifie l&#39;unicité par backtracking en utilisant la propagation de contraintes." alt="" coords="671,253,919,296"/>
+<area shape="poly" id="edge8_Node000002_Node000007" title=" " alt="" coords="524,170,723,245,721,250,522,175"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="733,29,731,19,741,10,763,5,795,3,831,5,852,11,850,16,830,10,795,8,763,10,744,15,736,21,739,28"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeabb85bac7acd0ff179f259fa13b17ea" title="Élimine une valeur des candidats des cellules voisines (ligne, colonne, bloc)." alt="" coords="1021,113,1269,156"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="920,121,1006,125,1005,130,920,126"/>
+<area shape="poly" id="edge11_Node000007_Node000005" title=" " alt="" coords="858,250,936,215,960,198,984,182,1041,159,1043,164,987,186,963,202,939,220,860,255"/>
+<area shape="poly" id="edge13_Node000007_Node000007" title=" " alt="" coords="733,253,731,243,741,234,763,229,795,227,831,229,852,235,850,240,830,234,795,232,763,234,744,239,736,245,739,252"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3f17ab078f894717a1f3dfaffed0b987" title="Choisit une valeur aléatoire parmi les possibilités données." alt="" coords="1021,220,1269,263"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="920,260,1005,252,1006,257,920,265"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a973a5ac2260605b8a260934b7e68373d" title="Trouve la case vide avec le moins de possibilités." alt="" coords="985,287,1305,329"/>
+<area shape="poly" id="edge12_Node000007_Node000009" title=" " alt="" coords="920,284,970,289,970,294,920,289"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="1080,220,1077,210,1088,201,1111,195,1145,193,1182,196,1204,202,1203,207,1181,201,1145,199,1112,201,1091,206,1082,211,1085,219"/>
+</map>

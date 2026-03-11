@@ -7,7 +7,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_mode
     [ "givenInitialState_whenResetDesiredPossibilities_thenValueIsDefault", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a1e3f6fdebd17b15b2e4c122a243989d5", null ],
     [ "givenLevel_whenNotifyLevelPossibilityBounds_thenToasterServiceIsCalled", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#aa7f389fb7521567944783015392712da", null ],
     [ "givenListWithNullElement_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a48bc3185ff996ac91c4374adac55b870", null ],
-    [ "givenMediumLevel_whenIncrementDesiredPossibilities_thenStartsAtMediumMin", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a3e5a1f9a135deb7a822814cd05ef0f77", null ],
+    [ "givenMediumLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#aa94a2ce4f1a5ded532d017548d2e654f", null ],
     [ "givenModifiedState_whenResetDesiredPossibilities_thenReturnsDefaultValue", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a5161b5d62b08b347351a1141ca07f104", null ],
     [ "givenNullLevel_whenSetCurrentGridWithLevel_ForTests_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a768e18222c3107633845d99b08bd3417", null ],
     [ "givenNullValues_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#aad131c9fecce1bd53e4699f218e7000f", null ],
@@ -20,6 +20,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_mode
     [ "givenViewModelInitialized_whenInit_then81CellsAreCreated", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#ab7a77eec94175438dfe5d10b7b10deb6", null ],
     [ "givenWrongSizeList_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a35e688f27a42935950ffe9a7aaf6f768", null ],
     [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a86fa89ece365d93a0aa08ca82537e02d", null ],
+    [ "menuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a80976ada421cfb426bb5dda9eef5295a", null ],
     [ "spinnerServiceMock", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a53416b1dc23c15c3f0e0e55818664b28", null ],
     [ "toasterServiceMock", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a6ca0cb7adcb0bb0690a5ce024fc7e3f0", null ],
     [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html#a5f9ab63ab1ff7635efbbc8f020a2cc3d", null ]

@@ -1,13 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#a1742da706022ba5b01dc3dff23ebbfd1":[1,0,0,0,0,10,2,0,6],
-"enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#a1742da706022ba5b01dc3dff23ebbfd1":[2,0,0,0,0,9,2,0,6],
-"enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#a39d63dbea95ded0c7c0fbcd7d6187e7f":[1,0,0,0,0,10,2,0,7],
-"enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#a39d63dbea95ded0c7c0fbcd7d6187e7f":[2,0,0,0,0,9,2,0,7],
-"enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#a89a84d76d897c905586e51a5112a8485":[1,0,0,0,0,10,2,0,2],
-"enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#a89a84d76d897c905586e51a5112a8485":[2,0,0,0,0,9,2,0,2],
-"enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#ace2e1b581831e07f24d7bc79de52fc38":[1,0,0,0,0,10,2,0,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#ace2e1b581831e07f24d7bc79de52fc38":[2,0,0,0,0,9,2,0,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#acefcfe5de1c118296760eb4b610c5a4e":[1,0,0,0,0,10,2,0,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#acefcfe5de1c118296760eb4b610c5a4e":[2,0,0,0,0,9,2,0,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html#af70200fd6cd8cedefc255d307d85cb4e":[1,0,0,0,0,10,2,0,3],
@@ -249,5 +241,13 @@ var NAVTREEINDEX21 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto_1_1github.html#aef6943e661f3de43f62d419240170be5":[1,0,0,0,0,3,0,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1model.html":[1,0,0,0,0,4],
 "namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html":[1,0,0,0,0,5],
-"namespacefr_1_1softsf_1_1sudokufx_1_1repository.html":[1,0,0,0,0,6]
+"namespacefr_1_1softsf_1_1sudokufx_1_1repository.html":[1,0,0,0,0,6],
+"namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html":[1,0,0,0,0,7,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1external.html":[1,0,0,0,0,7,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html":[1,0,0,0,0,7,2],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util.html":[1,0,0,0,0,8,0,0,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums.html":[1,0,0,0,0,8,1,0,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html":[1,0,0,0,0,8,1,1,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a131fc2e2045c6d654723863b1050f134":[1,0,0,0,0,8,1,1,0,10],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a1b55bbaa4ddf33f7b2bdb8b128f303b8":[1,0,0,0,0,8,1,1,0,14]
 };

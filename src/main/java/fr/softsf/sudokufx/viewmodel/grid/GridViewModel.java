@@ -140,8 +140,9 @@ public class GridViewModel {
     }
 
     /**
-     * Formats and pushes the current difficulty bracket to the notification service. * @param level
-     * the current difficulty level
+     * Formats and pushes the current difficulty bracket to the notification service.
+     *
+     * @param level the current difficulty level
      */
     public void notifyLevelPossibilityBounds(DifficultyLevel level) {
         LevelPossibilityBounds bounds = iGridMaster.getIntervallePourcentageNiveau(level);
@@ -246,8 +247,9 @@ public class GridViewModel {
 
     /**
      * Synchronizes the grid state during manual solving. Validates input, locks the cell if valid,
-     * and triggers the solver. If no solution is found, it rolls back the change. * @param cellVM
-     * The cell being modified.
+     * and triggers the solver. If no solution is found, it rolls back the change.
+     *
+     * @param cellVM the cell being modified.
      */
     private void applySolveModeState(GridCellViewModel cellVM) {
         victory.set(false);
@@ -287,8 +289,9 @@ public class GridViewModel {
     }
 
     /**
-     * Calculates the solution based on anchored cells and updates editable cells. * @return true if
-     * the current configuration is solvable, false otherwise.
+     * Calculates the solution based on anchored cells and updates editable cells.
+     *
+     * @return true if the current configuration is solvable, false otherwise.
      */
     private boolean updateSolveProgress() {
         int[] inputGrid = new int[TOTAL_CELLS];
@@ -318,7 +321,13 @@ public class GridViewModel {
         return result.solved();
     }
 
-    /** Utility method to reset a cell to its initial editable state. */
+    /**
+     * Resets a cell to its default editable state and clears content.
+     * * <p>Restores editability, toggles visibility back to TextArea, and sets raw value to "0".
+     * Listeners are suppressed to prevent side effects during the rollback.</p>
+     *
+     * @param cellVM The cell to reset.
+     */
     private void resetCellToEditable(GridCellViewModel cellVM) {
         suppressCellsListeners = true;
         try {

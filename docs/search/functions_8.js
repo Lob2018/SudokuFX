@@ -1,7 +1,7 @@
 var searchData=
 [
   ['handleaction_0',['handleAction',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a07e140b04d8ee48d497c7d51c563546d',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]],
-  ['handlecelltextchange_1',['handleCellTextChange',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9a196b605ead50c78f40edd67484d60a',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
+  ['handlecelltextchange_1',['handleCellTextChange',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#add773c382452e7476099209f6898f991',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
   ['handleerror_2',['handleError',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html#aa4dad32003ec44fc20f2a7e504f76f16',1,'fr::softsf::sudokufx::service::ui::AsyncFileProcessorService']]],
   ['handlefileimagechooser_3',['handleFileImageChooser',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ac4ee981308a8cfe39db1ef0acca51b68',1,'fr::softsf::sudokufx::view::main::MainView']]],
   ['handlefilesongchooser_4',['handleFileSongChooser',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#afd25b9774bafe5aba28e08eef9d881e5',1,'fr::softsf::sudokufx::view::main::MainView']]],

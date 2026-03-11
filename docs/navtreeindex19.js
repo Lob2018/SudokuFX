@@ -1,13 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"dir_04f94ca34d05c13535ee6e7b8a99278d.html":[3,0,1,1,0,0,0,0,4,1,2],
-"dir_0a730cde17e1af281b393bf018d6d65a.html":[3,0,1,0,0,0,0,0,9,0],
-"dir_0ac5b2b50e20189639d9e50459bd1d0c.html":[3,0,1,1,0,0,0,0,4,2,0,2,0],
-"dir_0ce3f87bcc4ded93038b8c78bcdcad0d.html":[3,0,1,1,0,0,0,0,5,0],
-"dir_120ed4da3e3217b1e7fc0b4f48568e79.html":[3,0,1,1],
-"dir_12779a24be85975a4455f90e90173dd6.html":[3,0,1,0,0,0,0,0,1,1],
-"dir_13419210c44e3cf7da80d3e1d672d568.html":[3,0,1,0,0,0,0,0,0],
-"dir_13f5623da1adebc733daf34fff753157.html":[3,0,1,0,0,0,0,0,6],
 "dir_16777681ebfd7480a6128512ff0d4b4a.html":[3,0,1,1,0,0,0,0,4,1,2,0],
 "dir_1a3c94203ddb35bf8a6cccc0d80c7ad5.html":[3,0,1,0,0,0,0,0,7],
 "dir_2061c1a7efe83dc797a3172aa96d1afa.html":[3,0,1,0,0,0,0,0,2,0],
@@ -249,5 +241,13 @@ var NAVTREEINDEX19 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#abe49159bc73d4522e962bd745f9c8ffd":[1,0,0,0,0,1,1,7,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#abe49159bc73d4522e962bd745f9c8ffd":[2,0,0,0,0,1,1,7,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#ae18f360365c814fe21893cd780cf5482":[1,0,0,0,0,1,1,7,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#ae18f360365c814fe21893cd780cf5482":[2,0,0,0,0,1,1,7,0]
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#ae18f360365c814fe21893cd780cf5482":[2,0,0,0,0,1,1,7,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afd0c92bbe085315fc5420ede9075ef7a":[1,0,0,0,0,1,1,7,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afd0c92bbe085315fc5420ede9075ef7a":[2,0,0,0,0,1,1,7,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afe454c3e4a5d934e2a46ac9ee19f7861":[1,0,0,0,0,1,1,7,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afe454c3e4a5d934e2a46ac9ee19f7861":[2,0,0,0,0,1,1,7,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html":[1,0,0,0,0,1,1,8],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html":[2,0,0,0,0,1,1,8],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a25e76a69f55467861bd047078b7ffcd3":[1,0,0,0,0,1,1,8,5],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a25e76a69f55467861bd047078b7ffcd3":[2,0,0,0,0,1,1,8,5]
 };

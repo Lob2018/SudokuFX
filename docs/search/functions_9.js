@@ -37,10 +37,11 @@ var searchData=
   ['iso_34',['iso',['../classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_1_1_player_language_builder.html#ab787aaeaa1715c76a3ab041f4471f07b',1,'fr::softsf::sudokufx::model::PlayerLanguage::PlayerLanguageBuilder']]],
   ['isoutofdateproperty_35',['isOutOfDateProperty',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#a1f43952ea33a4b60f97869fe76b831cd',1,'fr::softsf::sudokufx::viewmodel::MenuNewViewModel']]],
   ['isselectedbinding_36',['isSelectedBinding',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a526715c7454e1e8e77e7996c5b901385',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
-  ['isspringcontextexitonrefresh_37',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a8e83f73acbc106647965ccd74951e76a',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
-  ['isstartevent_38',['isStartEvent',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a316ee5b36c9bd2a7a05c8fe9f8f8791f',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]],
-  ['isvalidatedbyregex_39',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a423142d558d45f6e0ffbe705f1aae781',1,'fr::softsf::sudokufx::common::util::MyRegex']]],
-  ['isvalidaudio_40',['isValidAudio',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html#a11a4ad49c5d299ff5dd1e434eb2e0295',1,'fr::softsf::sudokufx::common::util::AudioUtils']]],
-  ['isvalidimage_41',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
-  ['isvalidpassword_42',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a909b2c7b687e5961a5ef292754a774b6',1,'fr::softsf::sudokufx::common::util::MyRegex']]]
+  ['issolvemodeactive_37',['isSolveModeActive',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad1b7ef7994bef2d64edd271bf77a9cbc',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
+  ['isspringcontextexitonrefresh_38',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html#a8e83f73acbc106647965ccd74951e76a',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
+  ['isstartevent_39',['isStartEvent',['../classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a316ee5b36c9bd2a7a05c8fe9f8f8791f',1,'fr::softsf::sudokufx::view::main::LevelInteractionHandler']]],
+  ['isvalidatedbyregex_40',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a423142d558d45f6e0ffbe705f1aae781',1,'fr::softsf::sudokufx::common::util::MyRegex']]],
+  ['isvalidaudio_41',['isValidAudio',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html#a11a4ad49c5d299ff5dd1e434eb2e0295',1,'fr::softsf::sudokufx::common::util::AudioUtils']]],
+  ['isvalidimage_42',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
+  ['isvalidpassword_43',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a909b2c7b687e5961a5ef292754a774b6',1,'fr::softsf::sudokufx::common::util::MyRegex']]]
 ];

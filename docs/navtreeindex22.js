@@ -1,13 +1,5 @@
 var NAVTREEINDEX22 =
 {
-"namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html":[1,0,0,0,0,7,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1external.html":[1,0,0,0,0,7,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html":[1,0,0,0,0,7,2],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util.html":[1,0,0,0,0,8,0,0,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums.html":[1,0,0,0,0,8,1,0,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html":[1,0,0,0,0,8,1,1,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a131fc2e2045c6d654723863b1050f134":[1,0,0,0,0,8,1,1,0,10],
-"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a1b55bbaa4ddf33f7b2bdb8b128f303b8":[1,0,0,0,0,8,1,1,0,14],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a241cc229af33e1480ccefc4ad30a7f04":[1,0,0,0,0,8,1,1,0,13],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a2c0657812a87523f2c633b1d475f2063":[1,0,0,0,0,8,1,1,0,16],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a36959b1d4d3d84a6d0de8a7052bf4646":[1,0,0,0,0,8,1,1,0,6],

@@ -11,7 +11,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title="Clears the text in all cells.">
+<g id="a_Node000001"><a xlink:title="Resets cell&#39;s values to &quot;0&quot; and enables all cells edition without triggering listeners.">
 <polygon fill="#999999" stroke="#666666" points="163.75,-150 0,-150 0,-118 163.75,-118 163.75,-150"/>
 <text text-anchor="start" x="8" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="81.88" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.clearGrid</text>

@@ -1,0 +1,25 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applySolveModeState" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applySolveModeState">
+<area shape="rect" id="Node000001" title="Synchronizes the grid state during manual solving." alt="" coords="5,153,246,196"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="580,29,810,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,151,207,97,248,71,293,51,361,34,431,27,500,26,564,29,564,34,500,31,432,32,362,40,295,56,251,75,211,102,149,155"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title=" " alt="" coords="586,211,804,253"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="173,194,230,217,294,235,365,244,436,247,570,243,570,248,436,253,364,249,293,240,228,222,171,199"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="586,301,804,344"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="165,194,225,225,295,253,364,273,436,288,570,309,569,314,435,294,363,278,293,259,223,230,163,199"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="579,120,810,163"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="246,165,563,146,564,152,246,170"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Utility method to reset a cell to its initial editable state." alt="" coords="299,183,526,225"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="246,184,284,188,283,194,246,190"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14ed923537d42b9a3273e937ac7b7073" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="294,65,531,108"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="197,150,326,110,327,115,199,155"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="642,29,640,19,648,10,667,5,695,3,725,5,743,11,741,16,724,10,695,8,668,10,651,15,645,21,647,28"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="642,211,640,201,648,192,667,186,695,184,725,186,743,193,741,198,724,192,695,189,668,191,651,196,645,202,647,209"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="642,301,640,291,648,282,667,277,695,275,725,277,743,283,741,288,724,282,695,280,668,282,651,287,645,293,647,300"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="642,120,640,110,648,101,667,95,695,93,725,96,743,102,741,107,724,101,695,99,668,101,651,105,645,111,647,119"/>
+<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="443,180,529,118,553,98,578,82,591,76,593,81,580,86,556,103,533,122,446,184"/>
+<area shape="poly" id="edge11_Node000006_Node000003" title=" " alt="" coords="526,213,570,217,570,222,526,218"/>
+<area shape="poly" id="edge12_Node000006_Node000004" title=" " alt="" coords="466,223,629,293,627,298,464,228"/>
+<area shape="poly" id="edge13_Node000006_Node000005" title=" " alt="" coords="511,179,580,164,581,169,512,185"/>
+<area shape="poly" id="edge15_Node000007_Node000002" title=" " alt="" coords="531,69,564,65,565,70,532,74"/>
+<area shape="poly" id="edge16_Node000007_Node000005" title=" " alt="" coords="527,106,567,114,566,119,526,111"/>
+</map>

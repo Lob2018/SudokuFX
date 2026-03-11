@@ -11,6 +11,7 @@ var searchData=
   ['updateplayer_8',['updatePlayer',['../classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a6f6b31510b7e15b031f2feb95df7ed4a',1,'fr::softsf::sudokufx::service::business::PlayerService']]],
   ['updateplayerlanguage_9',['updatePlayerLanguage',['../classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aff34e77864185144dffd978d6ee2cdd4',1,'fr::softsf::sudokufx::navigation::Coordinator']]],
   ['updateselectedlevel_10',['updateSelectedLevel',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a76e3858283a44df2008e93c998e4e37a',1,'fr::softsf::sudokufx::viewmodel::MenuLevelViewModel']]],
-  ['urls_11',['Urls',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#aba9198c3a613a4ecce57d6836e0e4117',1,'fr::softsf::sudokufx::common::enums::Urls']]],
-  ['utilitytextmethodsprovider_12',['utilityTextMethodsProvider',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_utility_text_methods_tests.html#a5d827857c2eb0d7857b04dadbeaef117',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModelUTest::UtilityTextMethodsTests']]]
+  ['updatesolveprogress_11',['updateSolveProgress',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14ed923537d42b9a3273e937ac7b7073',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
+  ['urls_12',['Urls',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html#aba9198c3a613a4ecce57d6836e0e4117',1,'fr::softsf::sudokufx::common::enums::Urls']]],
+  ['utilitytextmethodsprovider_13',['utilityTextMethodsProvider',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_utility_text_methods_tests.html#a5d827857c2eb0d7857b04dadbeaef117',1,'fr::softsf::sudokufx::viewmodel::MenuOptionsViewModelUTest::UtilityTextMethodsTests']]]
 ];
