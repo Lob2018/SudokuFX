@@ -106,7 +106,7 @@ var sectionId = 'dynsection-13';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" target="_top" xlink:title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku.">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" target="_top" xlink:title="Calcule le nombre total de candidats (entropie) sur l&#39;ensemble de la grille.">
 <polygon fill="white" stroke="#666666" points="445.25,-32 232,-32 232,0 445.25,0 445.25,-32"/>
 <text text-anchor="start" x="240" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="middle" x="338.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.sommeDesPossibilitesDeLaGrille</text>
@@ -153,7 +153,7 @@ var sectionId = 'dynsection-13';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a6f8a7a32d9421be5ec0e87fab69bb351" target="_top" xlink:title="Élimine la valeur des possibilités des cases voisines (ligne, colonne, carré).">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeabb85bac7acd0ff179f259fa13b17ea" target="_top" xlink:title="Élimine une valeur des candidats des cellules voisines (ligne, colonne, bloc).">
 <polygon fill="white" stroke="#666666" points="889.75,-82 703.5,-82 703.5,-50 889.75,-50 889.75,-82"/>
 <text text-anchor="start" x="711.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.sudoku.</text>
 <text text-anchor="middle" x="796.62" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridMaster.eliminerPossibilite</text>

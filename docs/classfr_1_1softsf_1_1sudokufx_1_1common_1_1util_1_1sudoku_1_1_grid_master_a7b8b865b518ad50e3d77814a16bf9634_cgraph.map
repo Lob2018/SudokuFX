@@ -4,11 +4,11 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,93,335,73,336,78,243,98"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeed90a968624e9b7ccb44958df9ae821" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="333,96,581,139"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="267,115,317,115,317,120,267,120"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" title="Calcule la somme des possibilités de toutes les cases de la grille de Sudoku." alt="" coords="315,163,599,205"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aa9fd5688b3effcfb97c226e04a5ff380" title="Calcule le nombre total de candidats (entropie) sur l&#39;ensemble de la grille." alt="" coords="315,163,599,205"/>
 <area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="243,137,336,156,335,162,241,142"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="398,29,396,19,406,10,426,5,457,3,490,5,510,11,509,16,489,10,457,8,427,10,408,15,401,21,403,28"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="647,96,895,139"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="581,115,631,115,631,120,581,120"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a6f8a7a32d9421be5ec0e87fab69bb351" title="Élimine la valeur des possibilités des cases voisines (ligne, colonne, carré)." alt="" coords="943,96,1192,139"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeabb85bac7acd0ff179f259fa13b17ea" title="Élimine une valeur des candidats des cellules voisines (ligne, colonne, bloc)." alt="" coords="943,96,1192,139"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="896,115,928,115,928,120,896,120"/>
 </map>

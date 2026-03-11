@@ -16,6 +16,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master =
     [ "getPossibilites", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeed90a968624e9b7ccb44958df9ae821", null ],
     [ "getPossibilitesDepuisPourcentage", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a7da72c06bb28816dc19695add4cbdb27", null ],
     [ "getPossibilitesGrilleAResoudre", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#abcd3c0f06734738979bb31e4063dfb1d", null ],
+    [ "getPossibilitesGrilleWhileNok", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a7b8b865b518ad50e3d77814a16bf9634", null ],
     [ "getPourcentageDepuisPossibilites", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3307d58848c5c2f12ba5f33c2eb6ebb7", null ],
     [ "initialiserPossibilites", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06", null ],
     [ "laCaseVideAvecLeMoinsDePossibilites", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a973a5ac2260605b8a260934b7e68373d", null ],

@@ -1,5 +1,7 @@
 var NAVTREEINDEX19 =
 {
+"dir_13419210c44e3cf7da80d3e1d672d568.html":[3,0,1,0,0,0,0,0,0],
+"dir_13f5623da1adebc733daf34fff753157.html":[3,0,1,0,0,0,0,0,6],
 "dir_16777681ebfd7480a6128512ff0d4b4a.html":[3,0,1,1,0,0,0,0,4,1,2,0],
 "dir_1a3c94203ddb35bf8a6cccc0d80c7ad5.html":[3,0,1,0,0,0,0,0,7],
 "dir_2061c1a7efe83dc797a3172aa96d1afa.html":[3,0,1,0,0,0,0,0,2,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX19 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afe454c3e4a5d934e2a46ac9ee19f7861":[1,0,0,0,0,1,1,7,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afe454c3e4a5d934e2a46ac9ee19f7861":[2,0,0,0,0,1,1,7,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html":[1,0,0,0,0,1,1,8],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html":[2,0,0,0,0,1,1,8],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a25e76a69f55467861bd047078b7ffcd3":[1,0,0,0,0,1,1,8,5],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a25e76a69f55467861bd047078b7ffcd3":[2,0,0,0,0,1,1,8,5]
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html":[2,0,0,0,0,1,1,8]
 };

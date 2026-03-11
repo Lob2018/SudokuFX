@@ -173,11 +173,13 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a3f17ab078f894717a1f3dfaffed0b987" id="r_a3f17ab078f894717a1f3dfaffed0b987"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a3f17ab078f894717a1f3dfaffed0b987">choisirValeurAleatoire</a> (final int possibilitesDeLaCase)</td></tr>
 <tr class="memdesc:a3f17ab078f894717a1f3dfaffed0b987"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choisit une valeur aléatoire parmi les possibilités données.  <br /></td></tr>
 <tr class="memitem:af6461bfbf866d4c2ed591179e96eb56b" id="r_af6461bfbf866d4c2ed591179e96eb56b"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#af6461bfbf866d4c2ed591179e96eb56b">genererGrilleAvecCasesCachees</a> (int[] grilleResolue, int[] grilleAResoudre, int casesAMin, int casesAMax, IntPredicate conditionValidation, int compteurEssais)</td></tr>
-<tr class="memdesc:af6461bfbf866d4c2ed591179e96eb56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté cible.  <br /></td></tr>
+<tr class="memdesc:af6461bfbf866d4c2ed591179e96eb56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté.  <br /></td></tr>
 <tr class="memitem:ae62111abf551659353a37d6eff7fe472" id="r_ae62111abf551659353a37d6eff7fe472"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#ae62111abf551659353a37d6eff7fe472">genererLaGrilleAResoudre</a> (final int niveau, final int pourcentageDesire, final int[] grilleResolue, final int[] grilleAResoudre)</td></tr>
 <tr class="memdesc:ae62111abf551659353a37d6eff7fe472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku à résoudre en masquant des cases selon le niveau de difficulté ou un pourcentage cible.  <br /></td></tr>
 <tr class="memitem:abcd3c0f06734738979bb31e4063dfb1d" id="r_abcd3c0f06734738979bb31e4063dfb1d"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#abcd3c0f06734738979bb31e4063dfb1d">getPossibilitesGrilleAResoudre</a> (IntPredicate conditionValidation, int[] grilleResolue, int[] grilleAResoudre)</td></tr>
 <tr class="memdesc:abcd3c0f06734738979bb31e4063dfb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère une grille de Sudoku.  <br /></td></tr>
+<tr class="memitem:a7b8b865b518ad50e3d77814a16bf9634" id="r_a7b8b865b518ad50e3d77814a16bf9634"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a7b8b865b518ad50e3d77814a16bf9634">getPossibilitesGrilleWhileNok</a> (int[] grilleResolue, int[] grilleAResoudre, int nombreDeCasesACacher)</td></tr>
+<tr class="memdesc:a7b8b865b518ad50e3d77814a16bf9634"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache des cases dans la grille et calcule la somme des possibilités restantes.  <br /></td></tr>
 <tr class="memitem:ae544691a2f6f2b54de8f88d3babcc221" id="r_ae544691a2f6f2b54de8f88d3babcc221"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#ae544691a2f6f2b54de8f88d3babcc221">remplirLaGrille</a> (final int[] grille, final int[] possibilites)</td></tr>
 <tr class="memdesc:ae544691a2f6f2b54de8f88d3babcc221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplit récursivement la grille Sudoku (backtracking).  <br /></td></tr>
 <tr class="memitem:ac7a6a027f90ee968f0be179797d663cf" id="r_ac7a6a027f90ee968f0be179797d663cf"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac7a6a027f90ee968f0be179797d663cf">remplirPremiereLigneAleatoirement</a> (int[] grille)</td></tr>
@@ -570,7 +572,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a189b01658ea110e5c7ef6d4797cb7e47_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a189b01658ea110e5c7ef6d4797cb7e47_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -721,38 +723,34 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté cible. </p>
-<p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation exhaustive via backtracking. Il itère de manière stochastique jusqu'à ce que la <b>somme des possibilités</b> (entropie) satisfasse le prédicat de difficulté.</p>
+<p>Génère une grille de Sudoku avec un masquage aléatoire borné selon la difficulté. </p>
+<p>L'algorithme garantit l'<b>unicité absolue</b> de la solution par une validation exhaustive via backtracking. Il itère jusqu'à ce que la <b>somme des possibilités</b> satisfasse le prédicat de difficulté.</p>
 <p><b>Optimisations et Sécurités :</b></p>
 <ul>
 <li>
-<b>Élagage hâtif :</b> La validation de l'unicité (coûteuse) n'est déclenchée que si la grille générée atteint d'abord le seuil d'entropie requis. </li>
+<b>Interruption :</b> Vérifie <code><a class="el" href="">Thread#isInterrupted()</a></code> pour stopper le calcul immédiatement si la <code><a class="el" href="">Task</a></code> est annulée. </li>
 <li>
-<b>Gestion mémoire :</b> Utilisation d'un tableau de travail local pour minimiser la pression sur le Garbage Collector (GC) durant les itérations rapides. </li>
+<b>Watchdog :</b> Limite chaque essai à <code><a class="el" href="#af26248c2c6aa8c6c63b3bc157ab33fb8">DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS</a></code>. </li>
 <li>
-<b>Interruption :</b> Surveillance de <code><a class="el" href="">Thread#isInterrupted()</a></code> pour un arrêt immédiat en cas d'annulation de la tâche. </li>
-<li>
-<b>Watchdog :</b> Limite chaque tentative à <code><a class="el" href="#af26248c2c6aa8c6c63b3bc157ab33fb8">DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS</a></code> pour éviter les blocages sur des configurations hautement improbables. </li>
-<li>
-<b>Récursion contrôlée :</b> Relance une génération globale jusqu'à <code><a class="el" href="#a6d4062dcd109b1b2a2200dff31730a56">MAX_ESSAIS_POUR_GENERATION_DE_GRILLE</a></code> avant de déclarer un échec. </li>
+<b>Récursion :</b> Relance une génération globale jusqu'à <code><a class="el" href="#a6d4062dcd109b1b2a2200dff31730a56">MAX_ESSAIS_POUR_GENERATION_DE_GRILLE</a></code> en cas de timeout de l'essai actuel. </li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">grilleResolue</td><td>La grille complète servant de matrice source. </td></tr>
-    <tr><td class="paramname">grilleAResoudre</td><td>La structure de destination pour la grille à trous (modifiée par effet de bord). </td></tr>
+    <tr><td class="paramname">grilleResolue</td><td>La grille complète servant de base. </td></tr>
+    <tr><td class="paramname">grilleAResoudre</td><td>La structure de destination pour la grille à trous (modifiée). </td></tr>
     <tr><td class="paramname">casesAMin</td><td>Borne inférieure (incluse) du nombre de cases à masquer. </td></tr>
     <tr><td class="paramname">casesAMax</td><td>Borne supérieure (exclue) du nombre de cases à masquer. </td></tr>
-    <tr><td class="paramname">conditionValidation</td><td>Prédicat validant que la somme des candidats correspond à la difficulté voulue. </td></tr>
-    <tr><td class="paramname">compteurEssais</td><td>Compteur de tentatives pour la gestion de la récursion. </td></tr>
+    <tr><td class="paramname">conditionValidation</td><td>Prédicat de validation de la difficulté. </td></tr>
+    <tr><td class="paramname">compteurEssais</td><td>Le numéro de la tentative actuelle pour le suivi récursif. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités de la grille finale, ou -1 en cas d'échec (timeout, limite d'essais atteinte ou interruption). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités de la grille finale, ou -1 en cas d'échec (timeout, nombre max d'essais atteint ou interruption du thread). </dd></dl>
 <div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-8-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af6461bfbf866d4c2ed591179e96eb56b_cgraph.svg" width="100%" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_af6461bfbf866d4c2ed591179e96eb56b_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -962,7 +960,58 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-12-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_abcd3c0f06734738979bb31e4063dfb1d_cgraph.svg" width="100%" height="551"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_abcd3c0f06734738979bb31e4063dfb1d_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a7b8b865b518ad50e3d77814a16bf9634" name="a7b8b865b518ad50e3d77814a16bf9634"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8b865b518ad50e3d77814a16bf9634">&#9670;&#160;</a></span>getPossibilitesGrilleWhileNok()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilitesGrilleWhileNok </td>
+          <td>(</td>
+          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grilleResolue</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int[]</td>          <td class="paramname"><span class="paramname"><em>grilleAResoudre</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>nombreDeCasesACacher</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cache des cases dans la grille et calcule la somme des possibilités restantes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grilleResolue</td><td>La grille de Sudoku résolue (source). </td></tr>
+    <tr><td class="paramname">grilleAResoudre</td><td>La grille de Sudoku à résoudre (destination), MODIFIÉE par la méthode. </td></tr>
+    <tr><td class="paramname">nombreDeCasesACacher</td><td>Nombre de cases à cacher. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>La somme des possibilités après avoir caché des cases. </dd></dl>
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a7b8b865b518ad50e3d77814a16bf9634_cgraph.svg" width="100%" height="458"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1028,10 +1077,10 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a27aa242e0289c28db22cd6caa98aec06_cgraph.svg" width="556" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1113,10 +1162,10 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true si la grille est remplie avec succès, false sinon. </dd></dl>
-<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ae544691a2f6f2b54de8f88d3babcc221_cgraph.svg" width="627" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1153,10 +1202,10 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_ac7a6a027f90ee968f0be179797d663cf_cgraph.svg" width="303" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1191,11 +1240,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a94424450acb912e32c7548e6659b617a_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a94424450acb912e32c7548e6659b617a_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1260,10 +1309,10 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
   </table>
   </dd>
 </dl>
-<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a94424450acb912e32c7548e6659b617a_cgraph.svg" width="556" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1386,10 +1435,10 @@ Continue le processus jusqu'à ce que la grille soit complètement remplie ou qu
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Total de solutions (capé à 2). </dd></dl>
-<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_aa3aa3945ebc4549be49be1e0c481f9da_cgraph.svg" width="627" height="211"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
