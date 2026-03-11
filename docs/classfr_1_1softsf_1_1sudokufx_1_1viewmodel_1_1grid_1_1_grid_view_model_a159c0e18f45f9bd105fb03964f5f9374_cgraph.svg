@@ -238,7 +238,7 @@ var sectionId = 'dynsection-12';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" target="_top" xlink:title="Utility method to reset a cell to its initial editable state.">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" target="_top" xlink:title="Resets a cell to its default editable state and clears content.">
 <polygon fill="white" stroke="#666666" points="816.62,-150.39 646.88,-150.39 646.88,-118.39 816.62,-118.39 816.62,-150.39"/>
 <text text-anchor="start" x="654.88" y="-136.89" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="731.75" y="-124.89" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.resetCellToEditable</text>

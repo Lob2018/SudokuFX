@@ -184,7 +184,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:a85b73068471edb726968c94d30bc79a6" id="r_a85b73068471edb726968c94d30bc79a6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a85b73068471edb726968c94d30bc79a6">persistNewGame</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level, GrillesCrees grillesCrees)</td></tr>
 <tr class="memdesc:a85b73068471edb726968c94d30bc79a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists a newly generated game for the current player, updating the selected game with grids, difficulty level, possibility percentage, and last modified timestamp.  <br /></td></tr>
 <tr class="memitem:a784d6f09a416df51f857b06ef14d4df5" id="r_a784d6f09a416df51f857b06ef14d4df5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a784d6f09a416df51f857b06ef14d4df5">resetCellToEditable</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html">GridCellViewModel</a> cellVM)</td></tr>
-<tr class="memdesc:a784d6f09a416df51f857b06ef14d4df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility method to reset a cell to its initial editable state.  <br /></td></tr>
+<tr class="memdesc:a784d6f09a416df51f857b06ef14d4df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets a cell to its default editable state and clears content.  <br /></td></tr>
 <tr class="memitem:a14ed923537d42b9a3273e937ac7b7073" id="r_a14ed923537d42b9a3273e937ac7b7073"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#a14ed923537d42b9a3273e937ac7b7073">updateSolveProgress</a> ()</td></tr>
 <tr class="memdesc:a14ed923537d42b9a3273e937ac7b7073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the solution based on anchored cells and updates editable cells.  <br /></td></tr>
 <tr class="memitem:a77d49e325684b6bef071fb2461c896cb" id="r_a77d49e325684b6bef071fb2461c896cb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a77d49e325684b6bef071fb2461c896cb">verifyGrid</a> ()</td></tr>
@@ -367,9 +367,10 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Synchronizes the grid state during manual solving. </p>
-<p>Validates input, locks the cell if valid, and triggers the solver. If no solution is found, it rolls back the change. *</p><dl class="params"><dt>Parameters</dt><dd>
+<p>Validates input, locks the cell if valid, and triggers the solver. If no solution is found, it rolls back the change.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cellVM</td><td>The cell being modified. </td></tr>
+    <tr><td class="paramname">cellVM</td><td>the cell being modified. </td></tr>
   </table>
   </dd>
 </dl>
@@ -951,7 +952,7 @@ Loads the solved grid values into the ViewModel (non-editable). </li>
 </div><div class="memdoc">
 
 <p>Formats and pushes the current difficulty bracket to the notification service. </p>
-<p>*</p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">level</td><td>the current difficulty level </td></tr>
   </table>
@@ -1067,7 +1068,17 @@ Loads the solved grid values into the ViewModel (non-editable). </li>
 </table>
 </div><div class="memdoc">
 
-<p>Utility method to reset a cell to its initial editable state. </p>
+<p>Resets a cell to its default editable state and clears content. </p>
+<ul>
+<li></li>
+</ul>
+<p>Restores editability, toggles visibility back to TextArea, and sets raw value to "0". Listeners are suppressed to prevent side effects during the rollback.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cellVM</td><td>The cell to reset. </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1242,10 +1253,7 @@ Listeners are suppressed for all cells during bulk updates. </li>
 </div><div class="memdoc">
 
 <p>Calculates the solution based on anchored cells and updates editable cells. </p>
-<ul>
-<li><dl class="section return"><dt>Returns</dt><dd>true if the current configuration is solvable, false otherwise. </dd></dl>
-</li>
-</ul>
+<dl class="section return"><dt>Returns</dt><dd>true if the current configuration is solvable, false otherwise. </dd></dl>
 <div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>

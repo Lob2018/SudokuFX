@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetCellToEditable" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetCellToEditable">
-<area shape="rect" id="Node000001" title="Utility method to reset a cell to its initial editable state." alt="" coords="5,165,232,208"/>
+<area shape="rect" id="Node000001" title="Resets a cell to its default editable state and clears content." alt="" coords="5,165,232,208"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="280,29,510,72"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,162,206,122,279,82,293,75,295,80,281,86,209,126,150,167"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title=" " alt="" coords="286,120,504,163"/>

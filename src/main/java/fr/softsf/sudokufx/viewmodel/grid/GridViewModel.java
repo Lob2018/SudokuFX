@@ -322,9 +322,10 @@ public class GridViewModel {
     }
 
     /**
-     * Resets a cell to its default editable state and clears content.
-     * * <p>Restores editability, toggles visibility back to TextArea, and sets raw value to "0".
-     * Listeners are suppressed to prevent side effects during the rollback.</p>
+     * Resets a cell to its default editable state and clears content. *
+     *
+     * <p>Restores editability, toggles visibility back to TextArea, and sets raw value to "0".
+     * Listeners are suppressed to prevent side effects during the rollback.
      *
      * @param cellVM The cell to reset.
      */

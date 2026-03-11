@@ -389,7 +389,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" target="_top" xlink:title="Utility method to reset a cell to its initial editable state.">
+<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" target="_top" xlink:title="Resets a cell to its default editable state and clears content.">
 <polygon fill="white" stroke="#666666" points="1124.38,-425.37 954.62,-425.37 954.62,-393.37 1124.38,-393.37 1124.38,-425.37"/>
 <text text-anchor="start" x="962.62" y="-411.87" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="1039.5" y="-399.87" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.resetCellToEditable</text>

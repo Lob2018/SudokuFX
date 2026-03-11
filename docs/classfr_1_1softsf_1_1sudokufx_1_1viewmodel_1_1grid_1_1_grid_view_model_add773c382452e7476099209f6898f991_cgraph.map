@@ -14,7 +14,7 @@
 <area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="504,233,597,255,745,282,883,303,882,309,744,287,595,260,503,238"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="892,120,1123,163"/>
 <area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="528,189,596,177,741,160,876,148,877,153,741,165,596,183,529,194"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Utility method to reset a cell to its initial editable state." alt="" coords="602,192,828,235"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="602,192,828,235"/>
 <area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="543,211,586,211,586,216,543,216"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14ed923537d42b9a3273e937ac7b7073" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="596,75,833,117"/>
 <area shape="poly" id="edge15_Node000002_Node000008" title=" " alt="" coords="469,189,595,134,630,120,632,125,597,138,471,194"/>
