@@ -276,6 +276,11 @@ jobs:
           body: |
             # 🧪 Early Access 🚧 Work in Progress
 
+            ✅ 🧩 Play challenging 9x9 puzzles
+            ✅ 🤖️ Solve any 9x9 Sudoku grid
+            ❌ ✨ Create profiles
+            ❌ 💾 Save anytime
+
             ## MSI, DMG, and DEB Files
 
             **These installation packages include the Java Runtime Environment (JRE) and will automatically install the application on your machine**
