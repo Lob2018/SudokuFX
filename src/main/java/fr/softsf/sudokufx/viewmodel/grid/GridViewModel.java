@@ -276,15 +276,16 @@ public class GridViewModel {
             // 3. Attempt to solve the grid with the new anchor
             boolean success = updateSolveProgress();
             // 4. Rollback if the new digit creates a contradiction
-            if (!success) {
-                toasterService.showWarning(
-                        MessageFormat.format(
-                                I18n.INSTANCE.getValue("toast.warning.gridviewmodel.nosolution"),
-                                firstChar),
-                        "");
-                resetCellToEditable(cellVM);
-                updateSolveProgress(); // Refresh visual state to previous valid solution
+            if (success) {
+                return;
             }
+            toasterService.showWarning(
+                    MessageFormat.format(
+                            I18n.INSTANCE.getValue("toast.warning.gridviewmodel.nosolution"),
+                            firstChar),
+                    "");
+            resetCellToEditable(cellVM);
+            updateSolveProgress(); // Refresh visual state to previous valid solution
         }
     }
 
@@ -745,9 +746,10 @@ public class GridViewModel {
      * @throws IllegalStateException if {@link #init()} has not been called
      */
     private void checkInitialized() {
-        if (!initialized) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
-                    "GridViewModel not initialized. Call init() first.");
+        if (initialized) {
+            return;
         }
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
+                "GridViewModel not initialized. Call init() first.");
     }
 }

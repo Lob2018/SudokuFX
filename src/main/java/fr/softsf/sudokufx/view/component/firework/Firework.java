@@ -211,8 +211,9 @@ public class Firework extends Group {
                 expiredNodes.add(particle.circle);
             }
         }
-        if (!expiredNodes.isEmpty()) {
-            getChildren().removeAll(expiredNodes);
+        if (expiredNodes.isEmpty()) {
+            return;
         }
+        getChildren().removeAll(expiredNodes);
     }
 }

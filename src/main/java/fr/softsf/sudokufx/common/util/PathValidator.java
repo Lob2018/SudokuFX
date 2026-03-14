@@ -34,11 +34,10 @@ public enum PathValidator {
                     "The path mustn't be null");
         }
         File file = path.toFile();
-        if (!file.exists()) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
-                    "Path does not exist: " + path);
+        if (file.exists()) {
+            return file;
         }
-        return file;
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState("Path does not exist: " + path);
     }
 
     /**
@@ -50,10 +49,10 @@ public enum PathValidator {
      */
     public File validateDirectory(Path path) {
         File file = validateExists(path);
-        if (!file.isDirectory()) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
-                    "Path is not a directory: " + path);
+        if (file.isDirectory()) {
+            return file;
         }
-        return file;
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
+                "Path is not a directory: " + path);
     }
 }

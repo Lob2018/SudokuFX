@@ -56,15 +56,18 @@ public final class GridConverter implements IGridConverter {
                                                         + " values"));
         StringBuilder sb = new StringBuilder(MAXIMUM_GRID_VALUE_LENGTH);
         for (int i = 0; i < TOTAL_CELLS; i++) {
+            if (i > 0) {
+                sb.append(',');
+            }
             String cell = validatedList.get(i);
             cell = cell == null || cell.isBlank() ? "0" : cell.strip().replace("\n", "");
-            if (!"0".equals(cell)) {
-                validateDigitsAndNoRepeats(cell);
+            if ("0".equals(cell)) {
+                sb.append(cell);
+                continue;
             }
+            validateDigitsAndNoRepeats(cell);
             sb.append(cell);
-            sb.append(',');
         }
-        sb.setLength(sb.length() - 1);
         return sb.toString();
     }
 

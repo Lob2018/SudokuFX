@@ -79,14 +79,13 @@ public class LevelInteractionHandler {
     public void handleAction(InputEvent event, Consumer<Boolean> opaqueApplier) {
         Objects.requireNonNull(event, EVENT_MUST_NOT_BE_NULL);
         Objects.requireNonNull(opaqueApplier, "opaqueApplier mustn't be null");
-        if (!(event.getSource() instanceof Button btn)) {
-            return;
-        }
-        level = getLevelWithId(btn.getId());
-        switch (event) {
-            case InputEvent e when isStartEvent(e) -> startCycle();
-            case InputEvent e when isEndEvent(e) -> applyLevel(opaqueApplier);
-            default -> desiredPossibilitiesTimeline.stop();
+        if (event.getSource() instanceof Button btn) {
+            level = getLevelWithId(btn.getId());
+            switch (event) {
+                case InputEvent e when isStartEvent(e) -> startCycle();
+                case InputEvent e when isEndEvent(e) -> applyLevel(opaqueApplier);
+                default -> desiredPossibilitiesTimeline.stop();
+            }
         }
     }
 

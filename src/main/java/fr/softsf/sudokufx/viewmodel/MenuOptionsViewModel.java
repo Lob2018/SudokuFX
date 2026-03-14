@@ -1085,9 +1085,10 @@ public class MenuOptionsViewModel {
      * @throws IllegalStateException if {@link #init(GridPane, ColorPicker)} has not been called
      */
     private void checkInitialized() {
-        if (!initialized) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
-                    "MenuOptionsViewModel not initialized. Call init(...) first.");
+        if (initialized) {
+            return;
         }
+        throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
+                "MenuOptionsViewModel not initialized. Call init(...) first.");
     }
 }

@@ -104,12 +104,13 @@ public final class SpinnerGridPane extends GridPane {
         fadeOut.setToValue(0.0);
         fadeOut.setOnFinished(
                 e -> {
-                    if (!loading.get()) {
-                        setVisible(false);
-                        setManaged(false);
-                        spinnerAnimation1.stop();
-                        spinnerAnimation2.stop();
+                    if (loading.get()) {
+                        return;
                     }
+                    setVisible(false);
+                    setManaged(false);
+                    spinnerAnimation1.stop();
+                    spinnerAnimation2.stop();
                 });
     }
 

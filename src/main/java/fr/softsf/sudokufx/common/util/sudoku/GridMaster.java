@@ -415,23 +415,23 @@ public final class GridMaster implements IGridMaster {
         } while (!estValide
                 && (System.currentTimeMillis() - debutAppel)
                         <= DUREE_MAX_PAR_GENERATION_DE_GRILLE_MS);
-        if (!estValide) {
-            compteurEssais++;
-            // Vérifier le nombre de tentatives
-            if (compteurEssais >= MAX_ESSAIS_POUR_GENERATION_DE_GRILLE) {
-                Arrays.fill(grilleAResoudre, 0);
-                return -1;
-            }
-            // Réinitialisation
-            return genererGrilleAvecCasesCachees(
-                    grilleResolue,
-                    grilleAResoudre,
-                    casesAMin,
-                    casesAMax,
-                    conditionValidation,
-                    compteurEssais);
+        if (estValide) {
+            return sommeDesPossibilites;
         }
-        return sommeDesPossibilites;
+        compteurEssais++;
+        // Vérifier le nombre de tentatives
+        if (compteurEssais >= MAX_ESSAIS_POUR_GENERATION_DE_GRILLE) {
+            Arrays.fill(grilleAResoudre, 0);
+            return -1;
+        }
+        // Réinitialisation
+        return genererGrilleAvecCasesCachees(
+                grilleResolue,
+                grilleAResoudre,
+                casesAMin,
+                casesAMax,
+                conditionValidation,
+                compteurEssais);
     }
 
     /**
