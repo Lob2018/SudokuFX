@@ -8,22 +8,24 @@ package fr.softsf.sudokufx.config.database;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.passay.CharacterData;
-import org.passay.CharacterRule;
-import org.passay.EnglishCharacterData;
-import org.passay.PasswordGenerator;
-import org.passay.Rule;
+import org.passay.data.CharacterData;
+import org.passay.data.EnglishCharacterData;
+import org.passay.generate.PasswordGenerator;
+import org.passay.rule.CharacterRule;
+import org.passay.rule.Rule;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.util.SecureRandomGenerator;
 
-import static org.passay.IllegalCharacterRule.ERROR_CODE;
+import static org.passay.rule.IllegalCharacterRule.ERROR_CODE;
 
 /** Utility class for generating secure passwords using the Passay library. */
 @Component
 public class GenerateSecret {
 
-    private static final int PASSAY_SECRET_LENGTH = 24;
+    private static final int MIN_SECRET_LENGTH = 24;
+    private static final int MAX_SECRET_LENGTH = 32;
 
     /**
      * Define the secret special characters
@@ -32,11 +34,13 @@ public class GenerateSecret {
      */
     private static CharacterData createSpecialChars() {
         return new CharacterData() {
+            @Override
             @ExcludedFromCoverageReportGenerated
             public String getErrorCode() {
                 return ERROR_CODE;
             }
 
+            @Override
             public String getCharacters() {
                 return "!@#$%^&()";
             }
@@ -44,29 +48,23 @@ public class GenerateSecret {
     }
 
     /**
-     * Generate Passay secret
+     * Generate Passay secret with random length using SecureRandomGenerator.
      *
      * @return The Passay secret
      */
     public String generatePassaySecret() {
-        PasswordGenerator gen = new PasswordGenerator();
-        CharacterData lowerCaseChars = EnglishCharacterData.LowerCase;
-        CharacterRule lowerCaseRule = new CharacterRule(lowerCaseChars);
-        lowerCaseRule.setNumberOfCharacters(2);
-        CharacterData upperCaseChars = EnglishCharacterData.UpperCase;
-        CharacterRule upperCaseRule = new CharacterRule(upperCaseChars);
-        upperCaseRule.setNumberOfCharacters(2);
-        CharacterData digitChars = EnglishCharacterData.Digit;
-        CharacterRule digitRule = new CharacterRule(digitChars);
-        digitRule.setNumberOfCharacters(2);
-        CharacterData specialChars = createSpecialChars();
-        CharacterRule specialCharsRule = new CharacterRule(specialChars);
-        specialCharsRule.setNumberOfCharacters(2);
+        int randomLength =
+                SecureRandomGenerator.INSTANCE.nextInt(MIN_SECRET_LENGTH, MAX_SECRET_LENGTH + 1);
+        CharacterRule lowerCaseRule = new CharacterRule(EnglishCharacterData.LowerCase, 2);
+        CharacterRule upperCaseRule = new CharacterRule(EnglishCharacterData.UpperCase, 2);
+        CharacterRule digitRule = new CharacterRule(EnglishCharacterData.Digit, 2);
+        CharacterRule specialCharsRule = new CharacterRule(createSpecialChars(), 2);
         List<Rule> rules = new ArrayList<>();
         rules.add(specialCharsRule);
         rules.add(lowerCaseRule);
         rules.add(upperCaseRule);
         rules.add(digitRule);
-        return gen.generatePassword(PASSAY_SECRET_LENGTH, rules);
+        PasswordGenerator gen = new PasswordGenerator(randomLength, rules);
+        return gen.generate().toString();
     }
 }

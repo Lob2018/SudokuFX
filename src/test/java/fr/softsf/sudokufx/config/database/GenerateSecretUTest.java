@@ -29,26 +29,31 @@ class GenerateSecretUTest {
     @Test
     void givenPassayGenerator_whenGeneratePassaySecret_thenSecretIsValid() {
         String secret = generateSecret.generatePassaySecret();
+        assertTrue(
+                secret.length() >= 24 && secret.length() <= 32,
+                "Le secret doit avoir une longueur comprise entre 24 et 32. Actuelle : "
+                        + secret.length());
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
         assertTrue(
                 MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
-                "Generated secret should be valid according to secretPattern");
+                "Generated secret should be valid according to secretPattern: " + secret);
     }
 
     @Test
     void givenInvalidSecrets_whenIsValidatedByRegex_thenReturnsFalse() {
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
         String[] invalidSecrets = {
-            "L".repeat(24),
-            "l".repeat(24),
-            "@".repeat(24),
-            "1".repeat(24),
-            "uCQD1x$^UeWfn#OAb!YjYFHo",
-            "-CQD1x$^UeWfn#OAb!Y1YFH1",
-            "9uCQD1xi^UeWfntOAbmY1YFH",
-            "9uCQD1x$^UeWfn#OAb!Y1YFH1",
-            "9uCQD1x$^UeWfn#OAb!Y1YF"
+            "L".repeat(24), // Pas de minuscules/chiffres/spéciaux
+            "l".repeat(32), // Pas de majuscules/chiffres/spéciaux
+            "@".repeat(28), // Pas de lettres/chiffres
+            "1".repeat(24), // Pas de lettres/spéciaux
+            "9uCQD1x$^UeWfn#OAb!Y1YF", // Trop court (23 caractères)
+            "9uCQD1x$^UeWfn#OAb!Y1YFH1AABBC123", // Trop long (plus de 32)
+            "uCQD1x$^UeWfn#OAb!YjYFHo", // Manque un chiffre
+            "-CQD1x$^UeWfn#OAb!Y1YFH1", // Caractère interdit '-' (si votre regex l'exclut)
+            "9uCQD1xi^UeWfntOAbmY1YFH" // Manque un caractère spécial
         };
+
         for (String secret : invalidSecrets) {
             assertFalse(
                     MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),

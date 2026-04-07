@@ -30,12 +30,18 @@ public enum MyRegex {
     private static final String SPECIAL_CHARACTERS = "@#$%^&()!";
 
     /**
-     * Precompiled regex pattern for validating passwords. Requirements: - Only letters
-     * (lowercase/uppercase), digits, and special characters @#$%^&()! are allowed. - Exactly 24
-     * characters in total.
+     * Precompiled regex pattern for validating passwords. Requirements: - Between 24 and 32
+     * characters. - At least one uppercase, one lowercase, one digit, one special char. - Only
+     * allowed characters: letters, digits, and @#$%^&()!
      */
     private static final Pattern SECRET_PATTERN =
-            Pattern.compile("^[a-zA-Z0-9" + SPECIAL_CHARACTERS + "]{24}$");
+            Pattern.compile(
+                    "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*["
+                            + Pattern.quote(SPECIAL_CHARACTERS)
+                            + "])"
+                            + "[a-zA-Z0-9"
+                            + Pattern.quote(SPECIAL_CHARACTERS)
+                            + "]{24,32}$");
 
     public Pattern getSecretPattern() {
         return SECRET_PATTERN;
