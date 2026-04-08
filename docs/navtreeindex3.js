@@ -117,8 +117,10 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_test.html#ae665625ded2425716c85dccdef4821e5":[2,0,0,0,0,2,0,6,0],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html":[1,0,0,0,0,2,0,7],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html":[2,0,0,0,0,2,0,7],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#a0b0c55d0eef850a7a811b573de061080":[1,0,0,0,0,2,0,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#a0b0c55d0eef850a7a811b573de061080":[2,0,0,0,0,2,0,7,2],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#a4a1d17a33225b457cbd3916471aad1c3":[1,0,0,0,0,2,0,7,2],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#a4a1d17a33225b457cbd3916471aad1c3":[2,0,0,0,0,2,0,7,2],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#a59367e525e6564753eba455f3aa42c5c":[1,0,0,0,0,2,0,7,3],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#a59367e525e6564753eba455f3aa42c5c":[2,0,0,0,0,2,0,7,3],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#aa5e3b34a5f9cce05a371d49487fafa6b":[1,0,0,0,0,2,0,7,0],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#aa5e3b34a5f9cce05a371d49487fafa6b":[2,0,0,0,0,2,0,7,0],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#ab46050602ef7785e238336c087e052c6":[1,0,0,0,0,2,0,7,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a35846507635cbcc95bb2cc3ddfd751dc":[2,0,0,0,0,3,0,14],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a39eab33459e7da99e902a0ea83b1d77e":[1,0,0,0,0,4,0,7],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a39eab33459e7da99e902a0ea83b1d77e":[2,0,0,0,0,3,0,7],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a3f1136b2325dfb043388d60e8cc3fc78":[1,0,0,0,0,4,0,16],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a3f1136b2325dfb043388d60e8cc3fc78":[2,0,0,0,0,3,0,16],
-"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a4011299b15b8321fc006067e66f50cb3":[1,0,0,0,0,4,0,12]
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a3f1136b2325dfb043388d60e8cc3fc78":[1,0,0,0,0,4,0,16]
 };

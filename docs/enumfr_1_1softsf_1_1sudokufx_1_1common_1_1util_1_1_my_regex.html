@@ -382,11 +382,17 @@ Includes at least 2 special characters from <code class="JavaDocCode">@#$%^&amp;
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">                                    =</div>
-<div class="line">Pattern.compile(<span class="stringliteral">&quot;^[a-zA-Z0-9&quot;</span> + <a class="code hl_variable" href="#a9aeed92159c93dabcfd2eb8de75ca1ba">SPECIAL_CHARACTERS</a> + <span class="stringliteral">&quot;]{24}$&quot;</span>)</div>
+<div class="line">Pattern.compile(</div>
+<div class="line">        <span class="stringliteral">&quot;^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[&quot;</span></div>
+<div class="line">                + Pattern.quote(<a class="code hl_variable" href="#a9aeed92159c93dabcfd2eb8de75ca1ba">SPECIAL_CHARACTERS</a>)</div>
+<div class="line">                + <span class="stringliteral">&quot;])&quot;</span></div>
+<div class="line">                + <span class="stringliteral">&quot;[a-zA-Z0-9&quot;</span></div>
+<div class="line">                + Pattern.quote(<a class="code hl_variable" href="#a9aeed92159c93dabcfd2eb8de75ca1ba">SPECIAL_CHARACTERS</a>)</div>
+<div class="line">                + <span class="stringliteral">&quot;]{24,32}$&quot;</span>)</div>
 <div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex_html_a9aeed92159c93dabcfd2eb8de75ca1ba"><div class="ttname"><a href="#a9aeed92159c93dabcfd2eb8de75ca1ba">fr.softsf.sudokufx.common.util.MyRegex.SPECIAL_CHARACTERS</a></div><div class="ttdeci">static final String SPECIAL_CHARACTERS</div><div class="ttdoc">Allowed special characters for password validation.</div><div class="ttdef"><b>Definition</b> MyRegex.java:30</div></div>
 </div><!-- fragment -->
 <p>Precompiled regex pattern for validating passwords. </p>
-<p>Requirements: - Only letters (lowercase/uppercase), digits, and special characters #$%^&amp;()! are allowed. - Exactly 24 characters in total. </p>
+<p>Requirements: - Between 24 and 32 characters. - At least one uppercase, one lowercase, one digit, one special char. - Only allowed characters: letters, digits, and #$%^&amp;()! </p>
 
 </div>
 </div>

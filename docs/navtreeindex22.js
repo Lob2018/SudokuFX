@@ -1,5 +1,7 @@
 var NAVTREEINDEX22 =
 {
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums.html":[1,0,0,0,0,8,1,0,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html":[1,0,0,0,0,8,1,1,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a131fc2e2045c6d654723863b1050f134":[1,0,0,0,0,8,1,1,0,10],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a1b55bbaa4ddf33f7b2bdb8b128f303b8":[1,0,0,0,0,8,1,1,0,14],
 "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a241cc229af33e1480ccefc4ad30a7f04":[1,0,0,0,0,8,1,1,0,13],

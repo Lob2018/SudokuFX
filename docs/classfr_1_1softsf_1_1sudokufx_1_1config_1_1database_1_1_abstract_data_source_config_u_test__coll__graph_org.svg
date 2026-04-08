@@ -262,21 +262,24 @@
 <g id="Node000006" class="node">
 <title>Node6</title>
 <g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html" target="_top" xlink:title="Utility class for generating secure passwords using the Passay library.">
-<polygon fill="white" stroke="none" points="469.75,-1428 310.25,-1428 310.25,-1324 469.75,-1324 469.75,-1428"/>
-<text text-anchor="start" x="314.25" y="-1414.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.database.</text>
-<text text-anchor="start" x="355.88" y="-1402.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenerateSecret</text>
-<text text-anchor="start" x="317.75" y="-1386.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="328.25" y="-1386.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int PASSAY</text>
-<text text-anchor="start" x="328.25" y="-1374.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SECRET_LENGTH</text>
-<text text-anchor="start" x="316.25" y="-1358.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="328.25" y="-1358.5" font-family="Helvetica,sans-Serif" font-size="10.00">String generatePassaySecret()</text>
-<text text-anchor="start" x="317.75" y="-1342.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="328.25" y="-1342.5" font-family="Helvetica,sans-Serif" font-size="10.00">static CharacterData</text>
-<text text-anchor="start" x="328.25" y="-1330.5" font-family="Helvetica,sans-Serif" font-size="10.00"> createSpecialChars()</text>
-<polygon fill="#666666" stroke="#666666" points="310.25,-1398 310.25,-1398 469.75,-1398 469.75,-1398 310.25,-1398"/>
-<polygon fill="#666666" stroke="#666666" points="310.25,-1370 310.25,-1370 326.25,-1370 326.25,-1370 310.25,-1370"/>
-<polygon fill="#666666" stroke="#666666" points="326.25,-1370 326.25,-1370 469.75,-1370 469.75,-1370 326.25,-1370"/>
-<polygon fill="none" stroke="#666666" points="310.25,-1324 310.25,-1428 469.75,-1428 469.75,-1324 310.25,-1324"/>
+<polygon fill="white" stroke="none" points="469.75,-1442 310.25,-1442 310.25,-1310 469.75,-1310 469.75,-1442"/>
+<text text-anchor="start" x="314.25" y="-1428.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.config.database.</text>
+<text text-anchor="start" x="355.88" y="-1416.5" font-family="Helvetica,sans-Serif" font-size="10.00">GenerateSecret</text>
+<text text-anchor="start" x="317.75" y="-1400.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="328.25" y="-1400.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAX</text>
+<text text-anchor="start" x="328.25" y="-1388.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SECRET_LENGTH</text>
+<text text-anchor="start" x="317.75" y="-1372.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="328.25" y="-1372.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MIN</text>
+<text text-anchor="start" x="328.25" y="-1360.5" font-family="Helvetica,sans-Serif" font-size="10.00">_SECRET_LENGTH</text>
+<text text-anchor="start" x="316.25" y="-1344.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="328.25" y="-1344.5" font-family="Helvetica,sans-Serif" font-size="10.00">String generatePassaySecret()</text>
+<text text-anchor="start" x="317.75" y="-1328.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="328.25" y="-1328.5" font-family="Helvetica,sans-Serif" font-size="10.00">static CharacterData</text>
+<text text-anchor="start" x="328.25" y="-1316.5" font-family="Helvetica,sans-Serif" font-size="10.00"> createSpecialChars()</text>
+<polygon fill="#666666" stroke="#666666" points="310.25,-1412 310.25,-1412 469.75,-1412 469.75,-1412 310.25,-1412"/>
+<polygon fill="#666666" stroke="#666666" points="310.25,-1356 310.25,-1356 326.25,-1356 326.25,-1356 310.25,-1356"/>
+<polygon fill="#666666" stroke="#666666" points="326.25,-1356 326.25,-1356 469.75,-1356 469.75,-1356 326.25,-1356"/>
+<polygon fill="none" stroke="#666666" points="310.25,-1310 310.25,-1442 469.75,-1442 469.75,-1310 310.25,-1310"/>
 </a>
 </g>
 </g>
@@ -284,8 +287,8 @@
 <g id="edge5_Node000004_Node000006" class="edge">
 <title>Node6&#45;&gt;Node4</title>
 <g id="a_edge5_Node000004_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M383.19,-1324.09C379.74,-1298.36 375.21,-1264.5 370.12,-1226.4"/>
-<polygon fill="none" stroke="#63b8ff" points="370.15,-1226.67 365.39,-1221.25 368.56,-1214.77 373.32,-1220.19 370.15,-1226.67"/>
+<path fill="none" stroke="#63b8ff" d="M381.32,-1310.12C378.17,-1286.61 374.34,-1257.99 370.13,-1226.47"/>
+<polygon fill="none" stroke="#63b8ff" points="370.14,-1226.55 365.38,-1221.13 368.55,-1214.66 373.31,-1220.07 370.14,-1226.55"/>
 </a>
 </g>
 <text text-anchor="start" x="374.63" y="-1237.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;generateSecret</text>
