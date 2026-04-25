@@ -111,22 +111,23 @@ if [[ "\$JAVA_VERSION" -lt "$5" ]]; then
     exit 1
 fi
 
-if [[ ! -d "$1" ]]; then
+if [[ ! -f "$1/$1-$2.jar" ]]; then
     mkdir -p "$1"
-    echo "Extracting the contents of the SudokuFX JAR file..."
-    java -Djarmode=tools -jar "$1-$2.jar" extract --destination "$1"
-    echo "Delete the SudokuFX JAR file..."
-    rm "$1-$2.jar"
-    echo "Training the SudokuFX application..."
+    echo "Extracting the contents..."
+    java -Djarmode=tools -jar "$1-$2.jar" extract --destination "$1" > /dev/null 2>&1
+    echo "Organizing files..."
+    mv "$1-$2.jar" "$1/"
     cd "$1" || exit
-    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null && \
-    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
-fi
-
-if [[ -d "$1" ]]; then
+    echo "Training the SudokuFX application..."
+    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -Xshare:off -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1
+    echo "Waiting for database release..."
+    sleep 2
+    echo "Running the SudokuFX application..."
+    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1 &
+else
     echo "Running the SudokuFX application..."
     cd "$1" || exit
-    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null &
+    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1 &
 fi
 EOF
 
