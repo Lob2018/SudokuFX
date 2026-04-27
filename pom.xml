@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>4.0.5</version>
+    <version>4.0.6</version>
     <relativePath/>
     <!-- lookup parent from repository -->
   </parent>
@@ -31,7 +31,7 @@
   <properties>
     <deployment-folder>output</deployment-folder>
     <java.version>25</java.version>
-    <javafx.version>26</javafx.version>
+    <javafx.version>26.0.1</javafx.version>
     <jvm.args>-Dfile.encoding=UTF-8 -Dprism.order=d3d,es2,sw -Dprism.vsync=true --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</jvm.args>
     <license.name>GPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
@@ -67,7 +67,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-hsqldb</artifactId>
-      <version>12.3.0</version>
+      <version>12.4.0</version>
     </dependency>
     <!-- HSQLDB database dependency -->
     <dependency>
