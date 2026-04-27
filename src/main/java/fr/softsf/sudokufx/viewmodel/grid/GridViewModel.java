@@ -152,7 +152,7 @@ public class GridViewModel {
         toasterService.showInfo(
                 MessageFormat.format(
                         I18n.INSTANCE.getValue(
-                                "toast.msg.levelInteractionHandler.desiredpossibilities"),
+                                "toast.msg.levelinteractionhandler.desiredpossibilities"),
                         String.valueOf(minVal),
                         String.valueOf(maxVal)),
                 "");
@@ -652,15 +652,23 @@ public class GridViewModel {
 
             @Override
             protected void failed() {
-                LOG.error(
-                        "██ Grid generation task failed: {}",
-                        getException().getMessage(),
-                        getException());
+                Throwable cause = getException();
+                LOG.error("██ Grid generation task failed: {}", cause.getMessage(), cause);
+                toasterService.requestRemoveToast();
+                toasterService.showError(
+                        I18n.INSTANCE.getValue(
+                                "toast.error.levelinteractionhandler.currentgridtask.failed"),
+                        Objects.toString(cause.getMessage(), ""));
             }
 
             @Override
             protected void cancelled() {
                 LOG.warn("▓▓ Grid generation cancelled");
+                toasterService.requestRemoveToast();
+                toasterService.showWarning(
+                        I18n.INSTANCE.getValue(
+                                "toast.warning.levelinteractionhandler.currentgridtask.cancelled"),
+                        "");
             }
 
             @Override
@@ -693,7 +701,7 @@ public class GridViewModel {
         toasterService.requestRemoveToast();
         toasterService.showInfo(
                 I18n.INSTANCE.getValue(
-                        "toast.msg.levelInteractionHandler.desiredpossibilities.failed"),
+                        "toast.msg.levelinteractionhandler.desiredpossibilities.failed"),
                 "");
     }
 

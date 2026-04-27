@@ -160,12 +160,12 @@ class GridMasterUTest {
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
-    void givenImpossiblePercentage_whenCreateGrids_thenReturnsEmptyGridAfterFailSafe(int level) {
+    void givenImpossiblePercentage_whenCreateGrids_thenThrowsException(int level) {
         int impossiblePercent = 500;
-        GrillesCrees grillesCrees = gridMaster.creerLesGrilles(level, impossiblePercent);
-        long countZerosPuzzle =
-                Arrays.stream(grillesCrees.grilleAResoudre()).filter(v -> v == 0).count();
-        assertEquals(81, countZerosPuzzle);
-        assertEquals(-1, grillesCrees.pourcentageDesPossibilites());
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> {
+                    gridMaster.creerLesGrilles(level, impossiblePercent);
+                });
     }
 }

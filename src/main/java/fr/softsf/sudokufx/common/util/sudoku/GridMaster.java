@@ -636,6 +636,13 @@ public final class GridMaster implements IGridMaster {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The grid level must be between 1 and 3, but was " + niveau);
         }
+        // Validation du pourcentage (en autorisant -1 pour la logique par défaut)
+        if (pourcentageDesire != -1
+                && (pourcentageDesire < 0 || pourcentageDesire > POURCENTAGE_MAX)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The target percentage must be between 0 and 100 (or -1), but was "
+                            + pourcentageDesire);
+        }
         // Initialiser la grille résolue
         int[] grilleResolue = new int[NOMBRE_CASES];
         // Initialiser la première ligne aléatoirement pour garantir la diversité
