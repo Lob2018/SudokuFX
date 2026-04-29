@@ -31,7 +31,7 @@
   <properties>
     <deployment-folder>output</deployment-folder>
     <java.version>25</java.version>
-    <javafx.version>26</javafx.version>
+    <javafx.version>26.0.1</javafx.version>
     <jvm.args>-Dfile.encoding=UTF-8 -Dprism.order=d3d,es2,sw -Dprism.vsync=true --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</jvm.args>
     <license.name>GPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
