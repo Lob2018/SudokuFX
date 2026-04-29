@@ -2,7 +2,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_
 [
     [ "assertGrillesCreesValides", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a6c422bba2397fd4cf7c8711518450621", null ],
     [ "givenCurrentValue_whenCalculerValeurSuperieureDuSegment_thenReturnsCorrectStepOrMax", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a75e235195b217277dfb2293952cba74c", null ],
-    [ "givenImpossiblePercentage_whenCreateGrids_thenReturnsEmptyGridAfterFailSafe", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#aab1eb627e738713b3418abdcec86f723", null ],
+    [ "givenImpossiblePercentage_whenCreateGrids_thenThrowsException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a95de3e845f7175f088434ecf9fdf3094", null ],
     [ "givenInvalidGridSize_whenResoudreLaGrille_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a987476f20b494e5d8b3502d79b0f9007", null ],
     [ "givenInvalidLevel_whenCreateGrids_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#aedf306ebfb0722a596755b978bea8381", null ],
     [ "givenLevel_whenGetIntervalle_thenReturnsCorrectBounds", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a1e8a92844fb23a8bbf2d50e59e255987", null ],
