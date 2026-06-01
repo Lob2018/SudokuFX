@@ -5,6 +5,7 @@ var dir_13f5623da1adebc733daf34fff753157 =
     [ "GridRepository.java", "_grid_repository_8java.html", "_grid_repository_8java" ],
     [ "MenuRepository.java", "_menu_repository_8java.html", "_menu_repository_8java" ],
     [ "OptionsRepository.java", "_options_repository_8java.html", "_options_repository_8java" ],
+    [ "package-info.java", "repository_2package-info_8java.html", null ],
     [ "PlayerLanguageRepository.java", "_player_language_repository_8java.html", "_player_language_repository_8java" ],
     [ "PlayerRepository.java", "_player_repository_8java.html", "_player_repository_8java" ]
 ];

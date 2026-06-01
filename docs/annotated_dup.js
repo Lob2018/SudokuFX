@@ -6,7 +6,7 @@ var annotated_dup =
           [ "benchmark", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html", [
             [ "BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master" ]
           ] ],
-          [ "common", null, [
+          [ "common", "namespacefr_1_1softsf_1_1sudokufx_1_1common.html", [
             [ "annotation", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation.html", [
               [ "ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1_excluded_from_coverage_report_generated.html", null ]
             ] ],
@@ -125,7 +125,7 @@ var annotated_dup =
             [ "PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository" ],
             [ "PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository" ]
           ] ],
-          [ "service", null, [
+          [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
             [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", [
               [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service" ],
               [ "PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service" ],

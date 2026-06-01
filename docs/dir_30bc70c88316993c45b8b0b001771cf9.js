@@ -5,5 +5,6 @@ var dir_30bc70c88316993c45b8b0b001771cf9 =
     [ "HttpClientConfig.java", "_http_client_config_8java.html", "_http_client_config_8java" ],
     [ "JVMApplicationProperties.java", "_j_v_m_application_properties_8java.html", "_j_v_m_application_properties_8java" ],
     [ "MyLogbackConfig.java", "_my_logback_config_8java.html", "_my_logback_config_8java" ],
-    [ "ObjectMapperConfig.java", "_object_mapper_config_8java.html", "_object_mapper_config_8java" ]
+    [ "ObjectMapperConfig.java", "_object_mapper_config_8java.html", "_object_mapper_config_8java" ],
+    [ "package-info.java", "config_2package-info_8java.html", null ]
 ];

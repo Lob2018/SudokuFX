@@ -8,5 +8,6 @@ var dir_2061c1a7efe83dc797a3172aa96d1afa =
     [ "GenerateSecret.java", "_generate_secret_8java.html", "_generate_secret_8java" ],
     [ "IEncryptionService.java", "_i_encryption_service_8java.html", "_i_encryption_service_8java" ],
     [ "IKeystore.java", "_i_keystore_8java.html", "_i_keystore_8java" ],
+    [ "package-info.java", "config_2database_2package-info_8java.html", null ],
     [ "SecretKeyEncryptionServiceAESGCM.java", "_secret_key_encryption_service_a_e_s_g_c_m_8java.html", "_secret_key_encryption_service_a_e_s_g_c_m_8java" ]
 ];

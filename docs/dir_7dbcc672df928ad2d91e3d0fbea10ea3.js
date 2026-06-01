@@ -7,5 +7,6 @@ var dir_7dbcc672df928ad2d91e3d0fbea10ea3 =
     [ "IOptionsMapper.java", "_i_options_mapper_8java.html", "_i_options_mapper_8java" ],
     [ "IPlayerLanguageMapper.java", "_i_player_language_mapper_8java.html", "_i_player_language_mapper_8java" ],
     [ "IPlayerMapper.java", "_i_player_mapper_8java.html", "_i_player_mapper_8java" ],
-    [ "MapperUtils.java", "_mapper_utils_8java.html", "_mapper_utils_8java" ]
+    [ "MapperUtils.java", "_mapper_utils_8java.html", "_mapper_utils_8java" ],
+    [ "package-info.java", "common_2interfaces_2mapper_2package-info_8java.html", null ]
 ];

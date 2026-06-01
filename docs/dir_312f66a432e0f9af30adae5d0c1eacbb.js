@@ -6,6 +6,7 @@ var dir_312f66a432e0f9af30adae5d0c1eacbb =
     [ "GridDto.java", "_grid_dto_8java.html", "_grid_dto_8java" ],
     [ "MenuDto.java", "_menu_dto_8java.html", "_menu_dto_8java" ],
     [ "OptionsDto.java", "_options_dto_8java.html", "_options_dto_8java" ],
+    [ "package-info.java", "dto_2package-info_8java.html", null ],
     [ "PlayerDto.java", "_player_dto_8java.html", "_player_dto_8java" ],
     [ "PlayerLanguageDto.java", "_player_language_dto_8java.html", "_player_language_dto_8java" ],
     [ "ToastData.java", "_toast_data_8java.html", "_toast_data_8java" ]

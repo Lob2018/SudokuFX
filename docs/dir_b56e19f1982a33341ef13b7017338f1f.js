@@ -12,5 +12,6 @@ var dir_b56e19f1982a33341ef13b7017338f1f =
     [ "MenuOptionsViewModel.java", "_menu_options_view_model_8java.html", "_menu_options_view_model_8java" ],
     [ "MenuPlayerViewModel.java", "_menu_player_view_model_8java.html", "_menu_player_view_model_8java" ],
     [ "MenuSaveViewModel.java", "_menu_save_view_model_8java.html", "_menu_save_view_model_8java" ],
-    [ "MenuSolveViewModel.java", "_menu_solve_view_model_8java.html", "_menu_solve_view_model_8java" ]
+    [ "MenuSolveViewModel.java", "_menu_solve_view_model_8java.html", "_menu_solve_view_model_8java" ],
+    [ "package-info.java", "viewmodel_2package-info_8java.html", null ]
 ];

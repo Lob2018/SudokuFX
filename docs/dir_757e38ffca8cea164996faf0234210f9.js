@@ -11,5 +11,6 @@ var dir_757e38ffca8cea164996faf0234210f9 =
     [ "view", "dir_664d5835105ddaaeb330d567537f6eef.html", "dir_664d5835105ddaaeb330d567537f6eef" ],
     [ "viewmodel", "dir_b56e19f1982a33341ef13b7017338f1f.html", "dir_b56e19f1982a33341ef13b7017338f1f" ],
     [ "Launcher.java", "_launcher_8java.html", "_launcher_8java" ],
+    [ "package-info.java", "package-info_8java.html", null ],
     [ "SudoMain.java", "_sudo_main_8java.html", "_sudo_main_8java" ]
 ];

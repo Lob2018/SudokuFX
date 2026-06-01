@@ -10,6 +10,7 @@ var dir_50ff30975495cc452199a501fc286db7 =
     [ "LocalUserDataPurger.java", "_local_user_data_purger_8java.html", "_local_user_data_purger_8java" ],
     [ "MyDateTime.java", "_my_date_time_8java.html", "_my_date_time_8java" ],
     [ "MyRegex.java", "_my_regex_8java.html", "_my_regex_8java" ],
+    [ "package-info.java", "common_2util_2package-info_8java.html", null ],
     [ "PathValidator.java", "_path_validator_8java.html", "_path_validator_8java" ],
     [ "SecureRandomGenerator.java", "_secure_random_generator_8java.html", "_secure_random_generator_8java" ],
     [ "SpringContextInitializer.java", "_spring_context_initializer_8java.html", "_spring_context_initializer_8java" ]
