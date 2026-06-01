@@ -1,5 +1,6 @@
 /**
- * Service layer where all parameters and return types are non-null by default.
+ * This package contains integration with external APIs or systems. Service layer where all
+ * parameters and return types are non-null by default.
  *
  * <p>Applies {@link org.springframework.lang.NonNullApi} to enforce non-null contract unless
  * explicitly overridden.

@@ -242,6 +242,7 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 │   ├── interfaces      // reusable interfaces
 │   │   └── mapper      // data mapping interfaces
 │   └── util            // general utility classes
+│       ├── math        // mathematical operations and numerical precision utilities
 │       └── sudoku      // sudoku-related utilities
 ├── config              // application configuration (database, OS settings)
 │   ├── database        // database configurations
@@ -256,12 +257,14 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 │   ├── external        // integration with external APIs or systems
 │   └── ui              // services interacting with the UI (audio, file processing, etc.)
 ├── view                // UI views and components
-│   ├── main            // MainView
-│   └── component       // reusable UI components
+│   ├── component       // reusable UI components
+│   │   ├── firework    // particle system animations for game-winning celebrations
 │   │   ├── list        // list components
 │   │   └── toaster     // toaster notifications
+│   ├── main            // the primary JavaFX views and event handlers, integrated with Spring contexts to interact with corresponding ViewModels.
 │   └── util            // utilities for bindings and factories
 └── viewmodel           // view models for MVVM pattern
+    ├── grid            // sudoku grid cell states management, formatting, and validation
     └── state           // state holders (observable state for ViewModels, e.g., PlayerStateHolder)
 ```
 
