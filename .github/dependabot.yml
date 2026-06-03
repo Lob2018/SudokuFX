@@ -5,7 +5,7 @@
 
 version: 2
 updates:
-  # Maintain dependencies for Maven
+  # Maven : maintain dependencies for Maven
   - package-ecosystem: "maven"
     directory: "/"
     schedule:
@@ -14,7 +14,7 @@ updates:
       maven-dependencies:
         patterns:
           - "*"
-  # Maintain dependencies for GitHub Actions
+  # GitHub Actions : maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
