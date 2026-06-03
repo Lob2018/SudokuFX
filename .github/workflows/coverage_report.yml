@@ -40,7 +40,7 @@ jobs:
         run: mvn test -f pom.xml
       - name: JaCoCo Code Coverage Report
         id: jacoco_reporter
-        uses: PavanMudigonda/jacoco-reporter@e8b54bfea6a667d1a68624dae8a06ba31670667d # v5.1
+        uses: PavanMudigonda/jacoco-reporter@e41a5cba383f5475371c5f0846dd37f8f1d95912 # v5.1
         with:
           coverage_results_path: target/site/jacoco/jacoco.xml
           coverage_report_name: Coverage
