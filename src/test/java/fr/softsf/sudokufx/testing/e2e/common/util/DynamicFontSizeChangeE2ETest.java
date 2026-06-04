@@ -46,7 +46,7 @@ class DynamicFontSizeChangeE2ETest {
                     stage.setHeight(350);
                 });
         assertTrue(Double.isFinite(DISPOSABLE_SIZE.getSize()));
-        assertEquals(6.57, dynamicFontSize.getCurrentFontSize(), 0.01);
+        assertEquals(6.57, dynamicFontSize.currentFontSizeProperty().get(), 0.01);
     }
 
     @Test

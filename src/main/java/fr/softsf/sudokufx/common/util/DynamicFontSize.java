@@ -7,6 +7,8 @@ package fr.softsf.sudokufx.common.util;
 
 import java.util.Objects;
 import javafx.beans.InvalidationListener;
+import javafx.beans.property.ReadOnlyDoubleProperty;
+import javafx.beans.property.ReadOnlyDoubleWrapper;
 import javafx.scene.Scene;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
@@ -27,16 +29,16 @@ public final class DynamicFontSize {
     private static final double DEFAULT_CENTI_EPSILON = PowerOfTen.CENTI_EPSILON.getValue();
 
     private final Scene scene;
-    private double currentFontSize = -1;
+    private final ReadOnlyDoubleWrapper currentFontSize = new ReadOnlyDoubleWrapper(-1);
     private int dynamicStylesheetIndex = -1;
 
     /**
-     * Returns the current calculated font size in pixels.
+     * Returns the read-only property of the current font size.
      *
-     * @return current font size
+     * @return the read-only double property
      */
-    public double getCurrentFontSize() {
-        return currentFontSize;
+    public ReadOnlyDoubleProperty currentFontSizeProperty() {
+        return currentFontSize.getReadOnlyProperty();
     }
 
     /**
@@ -82,10 +84,10 @@ public final class DynamicFontSize {
     public void updateFontSize() {
         double fontSize = Math.min(scene.getWidth(), scene.getHeight()) * FONT_SIZE_RATIO;
         if (NumberUtils.INSTANCE.areDoublesEqualEpsilon(
-                fontSize, currentFontSize, DEFAULT_CENTI_EPSILON)) {
+                fontSize, currentFontSize.get(), DEFAULT_CENTI_EPSILON)) {
             return;
         }
-        currentFontSize = fontSize;
+        currentFontSize.set(fontSize);
         var stylesheets = scene.getStylesheets();
         String css = ROOT_FONT_CSS_PREFIX + fontSize + "px; }";
         if (dynamicStylesheetIndex >= 0 && dynamicStylesheetIndex < stylesheets.size()) {
