@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.repository;
 
 import java.util.List;
 
+import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -54,4 +55,21 @@ public interface PlayerRepository extends JpaRepository<Player, Long> {
                     + "join fetch p.playerlanguageid "
                     + "where p.selected = true and g.selected = true")
     List<Player> findSelectedPlayerWithSelectedGame();
+
+    /**
+     * Finds all unselected players along with their selected game and all related associations.
+     *
+     * @param sort the sorting configuration
+     * @return a list of unselected players sorted and with their selected games
+     */
+    @Query(
+            "select distinct p from Player p "
+                    + "join fetch p.games g "
+                    + "join fetch p.optionsid "
+                    + "join fetch g.gridid "
+                    + "join fetch g.levelid "
+                    + "join fetch p.menuid "
+                    + "join fetch p.playerlanguageid "
+                    + "where p.selected = false and g.selected = true")
+    List<Player> findAllUnselectedWithSelectedGame(Sort sort);
 }

@@ -5,8 +5,14 @@
  */
 package fr.softsf.sudokufx.service.business;
 
+import java.util.Collection;
+import java.util.Objects;
+import java.util.Optional;
+
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
@@ -167,5 +173,30 @@ public class PlayerService {
         Player saved = playerRepository.save(existing);
         PlayerDto result = playerMapper.mapPlayerToDto(saved);
         return jakartaValidator.validateOrThrow(result);
+    }
+
+    /**
+     * Retrieves and validates all unselected players with a selected game.
+     *
+     * <p>The players are sorted alphabetically by name. Each player must pass all Jakarta Bean
+     * Validation constraints.
+     *
+     * @return a sorted collection of validated PlayerDto elements, or an empty collection if none
+     *     found
+     * @throws ConstraintViolationException if validation fails on any mapped PlayerDto
+     */
+    @Transactional(readOnly = true)
+    public Collection<PlayerDto> getPlayers() {
+        return Optional.ofNullable(
+                        playerRepository.findAllUnselectedWithSelectedGame(
+                                Sort.by(Sort.Direction.ASC, "name")))
+                .filter(items -> !CollectionUtils.isEmpty(items))
+                .stream()
+                .flatMap(Collection::stream)
+                .filter(Objects::nonNull)
+                .map(playerMapper::mapPlayerToDto)
+                .filter(Objects::nonNull)
+                .map(jakartaValidator::validateOrThrow)
+                .toList();
     }
 }

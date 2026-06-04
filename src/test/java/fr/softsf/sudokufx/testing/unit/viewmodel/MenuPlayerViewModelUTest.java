@@ -56,7 +56,7 @@ class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
                         Instant.now(),
                         Instant.now());
         when(playerServiceMock.getPlayer()).thenReturn(testPlayer);
-        viewModel = new MenuPlayerViewModel(playerStateHolder);
+        viewModel = new MenuPlayerViewModel(playerStateHolder, playerServiceMock);
     }
 
     @AfterEach
@@ -187,7 +187,7 @@ class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
     @Test
     void givenViewModel_whenInitialized_thenPlayersLoadedAndBindingsNotNull() {
         ObservableList<PlayerDto> players = viewModel.getPlayers();
-        assertEquals(51, players.size());
+        assertEquals(1, players.size());
         assertNotNull(viewModel.playerAccessibleTextProperty());
         assertNotNull(viewModel.editTooltipProperty());
         assertNotNull(viewModel.newTextProperty());
