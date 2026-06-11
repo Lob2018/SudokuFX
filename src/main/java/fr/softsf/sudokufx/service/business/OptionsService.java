@@ -39,6 +39,15 @@ public class OptionsService {
     private final IOptionsMapper optionsMapper;
     private final JakartaValidator jakartaValidator;
 
+    /**
+     * Constructs a new {@code OptionsService} with the required database, mapping, and validation
+     * dependencies.
+     *
+     * @param optionsRepository the repository used to access and persist {@link Options} entities
+     * @param optionsMapper the mapper used to convert {@link Options} entities to {@link
+     *     OptionsDto}
+     * @param jakartaValidator the validator used to ensure data integrity of processed DTOs
+     */
     public OptionsService(
             OptionsRepository optionsRepository,
             IOptionsMapper optionsMapper,

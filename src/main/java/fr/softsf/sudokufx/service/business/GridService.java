@@ -39,6 +39,13 @@ public class GridService {
     private final IGridMapper gridMapper;
     private final JakartaValidator jakartaValidator;
 
+    /**
+     * Constructs a new {@code GridService} with the required database and mapping dependencies.
+     *
+     * @param gridRepository the repository used to access and persist {@link Grid} entities
+     * @param gridMapper the mapper used to convert {@link Grid} entities to {@link GridDto}
+     * @param jakartaValidator the validator used to ensure data integrity of processed DTOs
+     */
     public GridService(
             GridRepository gridRepository,
             IGridMapper gridMapper,

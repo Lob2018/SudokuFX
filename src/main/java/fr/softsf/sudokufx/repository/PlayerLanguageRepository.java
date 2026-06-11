@@ -22,5 +22,12 @@ import fr.softsf.sudokufx.model.PlayerLanguage;
  */
 @Repository
 public interface PlayerLanguageRepository extends JpaRepository<PlayerLanguage, Long> {
+    /**
+     * Retrieves a {@link PlayerLanguage} by its ISO code.
+     *
+     * @param iso the ISO code of the language to retrieve
+     * @return an {@link Optional} containing the found {@link PlayerLanguage}, or an empty {@link
+     *     Optional} if no such language exists
+     */
     Optional<PlayerLanguage> findByIso(String iso);
 }

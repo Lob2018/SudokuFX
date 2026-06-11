@@ -227,6 +227,34 @@ public final class MainView implements IMainView {
 
     private Timeline hideMiniMenuTimeline;
 
+    /**
+     * Constructs a new {@code MainView} with all required view-models, services, and navigation
+     * components.
+     *
+     * <p>Initializes the central hub for the application UI, ensuring all dependencies are
+     * injected for proper view binding and event orchestration.
+     *
+     * @param activeMenuOrSubmenuViewModel the view-model for active menu state management
+     * @param coordinator the navigation coordinator for the application
+     * @param helpViewModel the view-model for help content
+     * @param menuHiddenViewModel the view-model for the hidden menu state
+     * @param menuMiniViewModel the view-model for the mini menu state
+     * @param menuLevelViewModel the view-model for level selection
+     * @param menuMaxiViewModel the view-model for the expanded menu state
+     * @param menuPlayerViewModel the view-model for player management
+     * @param menuSaveViewModel the view-model for saved game management
+     * @param menuSolveViewModel the view-model for solver functionality
+     * @param menuOptionsViewModel the view-model for application settings
+     * @param menuNewViewModel the view-model for new game creation
+     * @param gridViewModel the view-model for the Sudoku grid state
+     * @param audioService the service for audio playback management
+     * @param fileChooserService the service for file selection dialogs
+     * @param bindingConfigurator the utility for configuring UI bindings
+     * @param genericListViewFactory the factory for creating specialized list views
+     * @param toasterService the service for displaying UI notifications
+     * @param levelInteractionHandler the handler for level interaction events
+     * @param spinnerService the service for managing loading spinners
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP2",
             justification =
@@ -788,6 +816,16 @@ public final class MainView implements IMainView {
                 menuPlayerListView, menuPlayerClipListView, menuPlayerViewModel);
     }
 
+    /**
+     * Updates the CSS pseudo-classes of the new player button based on the provided validation
+     * status.
+     *
+     * <p>Clears existing status pseudo-classes before applying the one corresponding to the given
+     * {@link PlayerNameStatus}.
+     *
+     * @param status the current validation status to reflect in the UI; if null, no state is
+     *     applied
+     */
     private void updatePlayerNamePseudoClasses(PlayerNameStatus status) {
         clearStatusPseudoClasses();
         if (status == null) {
@@ -799,11 +837,17 @@ public final class MainView implements IMainView {
                     menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_UNAVAILABLE, true);
             case VALID -> menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_VALID, true);
             case EMPTY -> {
-                /* Conserve le fond gris par défaut */
+                /* Keep the default gray background */
             }
         }
     }
 
+    /**
+     * Removes all validation-related pseudo-classes from the new player button.
+     *
+     * <p>Resets the visual state of the button to its default appearance by clearing the valid,
+     * invalid, and unavailable status indicators.
+     */
     private void clearStatusPseudoClasses() {
         menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_VALID, false);
         menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_INVALID, false);

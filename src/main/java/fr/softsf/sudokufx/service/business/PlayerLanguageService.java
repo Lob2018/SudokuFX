@@ -32,6 +32,15 @@ public class PlayerLanguageService {
     private final JakartaValidator jakartaValidator;
     private final IPlayerLanguageMapper playerLanguageMapper;
 
+    /**
+     * Constructs a new {@code PlayerLanguageService} with the required database, validation, and
+     * mapping dependencies.
+     *
+     * @param playerLanguageRepository the repository used to access {@link PlayerLanguage} entities
+     * @param jakartaValidator the validator used to ensure data integrity of processed DTOs
+     * @param playerLanguageMapper the mapper used to convert {@link PlayerLanguage} entities to
+     *     {@link PlayerLanguageDto}
+     */
     public PlayerLanguageService(
             PlayerLanguageRepository playerLanguageRepository,
             JakartaValidator jakartaValidator,

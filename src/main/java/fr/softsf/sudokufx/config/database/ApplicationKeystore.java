@@ -60,6 +60,17 @@ public final class ApplicationKeystore implements IKeystore {
     private String username;
     private String password;
 
+    /**
+     * Constructs a new {@code ApplicationKeystore} with required infrastructure dependencies.
+     *
+     * <p>Validates that the provided folder service and secret generator are non-null to ensure
+     * proper keystore initialization and credential management.
+     *
+     * @param iOsFolder the OS-specific folder utility for locating the keystore file
+     * @param generateSecret the service used to generate secure secrets for credentials
+     * @throws IllegalArgumentException if {@code iOsFolder} or {@code generateSecret} is {@code
+     *     null}
+     */
     public ApplicationKeystore(IOsFolder iOsFolder, GenerateSecret generateSecret) {
         if (Objects.isNull(iOsFolder)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(

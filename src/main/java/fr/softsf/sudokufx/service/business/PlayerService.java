@@ -74,6 +74,22 @@ public class PlayerService {
 
     private final JakartaValidator jakartaValidator;
 
+    /**
+     * Constructs a new {@code PlayerService} with the required infrastructure, service, and mapping
+     * dependencies.
+     *
+     * @param playerRepository the repository for {@link Player} entities
+     * @param playerLanguageRepository the repository for {@link PlayerLanguage} entities
+     * @param optionsRepository the repository for {@link Options} entities
+     * @param menuRepository the repository for {@link Menu} entities
+     * @param gameRepository the repository for {@link Game} entities
+     * @param gridRepository the repository for {@link Grid} entities
+     * @param gameLevelRepository the repository for {@link GameLevel} entities
+     * @param playerMapper the mapper used to convert {@link Player} entities to {@link PlayerDto}
+     * @param optionsService the service providing {@link Options} duplication logic
+     * @param gridService the service providing {@link Grid} duplication logic
+     * @param jakartaValidator the validator used to ensure data integrity of processed DTOs
+     */
     public PlayerService(
             PlayerRepository playerRepository,
             PlayerLanguageRepository playerLanguageRepository,
