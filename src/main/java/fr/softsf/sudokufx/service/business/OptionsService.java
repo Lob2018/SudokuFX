@@ -78,4 +78,41 @@ public class OptionsService {
         OptionsDto result = optionsMapper.mapOptionsToDto(saved);
         return jakartaValidator.validateOrThrow(result);
     }
+
+    /**
+     * Duplicates an existing Options entity by creating a new record with a generated ID using the
+     * fluent builder.
+     *
+     * <p>Fetches the source entity, copies its properties via the builder API, persists it, and
+     * validates the resulting DTO before returning.
+     *
+     * @param optionsId the ID of the Options entity to duplicate; must not be null
+     * @return the newly created and validated {@link OptionsDto}
+     * @throws NullPointerException if {@code sourceId} is null
+     * @throws IllegalArgumentException if the source Options entity does not exist
+     * @throws jakarta.validation.ConstraintViolationException if validation fails on the resulting
+     *     DTO
+     */
+    @Transactional
+    public OptionsDto duplicateOptions(Long optionsId) {
+        java.util.Objects.requireNonNull(optionsId, "optionsId must not be null");
+        Options source =
+                optionsRepository
+                        .findById(optionsId)
+                        .orElseThrow(
+                                () ->
+                                        ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                                                "Options not found: " + optionsId));
+        Options duplicate =
+                Options.builder()
+                        .hexcolor(source.getHexcolor())
+                        .imagepath(source.getImagepath())
+                        .opaque(source.getOpaque())
+                        .songpath(source.getSongpath())
+                        .muted(source.getMuted())
+                        .build();
+        Options saved = optionsRepository.save(duplicate);
+        OptionsDto result = optionsMapper.mapOptionsToDto(saved);
+        return jakartaValidator.validateOrThrow(result);
+    }
 }

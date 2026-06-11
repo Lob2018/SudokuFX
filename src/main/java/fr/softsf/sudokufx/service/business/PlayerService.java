@@ -5,11 +5,13 @@
  */
 package fr.softsf.sudokufx.service.business;
 
+import java.time.Instant;
 import java.util.Collection;
 import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.data.domain.Sort;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
@@ -17,16 +19,20 @@ import org.springframework.util.CollectionUtils;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
+import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.model.Game;
+import fr.softsf.sudokufx.model.GameLevel;
 import fr.softsf.sudokufx.model.Grid;
 import fr.softsf.sudokufx.model.Menu;
 import fr.softsf.sudokufx.model.Options;
 import fr.softsf.sudokufx.model.Player;
 import fr.softsf.sudokufx.model.PlayerLanguage;
+import fr.softsf.sudokufx.repository.GameLevelRepository;
 import fr.softsf.sudokufx.repository.GameRepository;
+import fr.softsf.sudokufx.repository.GridRepository;
 import fr.softsf.sudokufx.repository.MenuRepository;
 import fr.softsf.sudokufx.repository.OptionsRepository;
 import fr.softsf.sudokufx.repository.PlayerLanguageRepository;
@@ -60,7 +66,12 @@ public class PlayerService {
     private final OptionsRepository optionsRepository;
     private final MenuRepository menuRepository;
     private final GameRepository gameRepository;
+    private final GridRepository gridRepository;
+    private final GameLevelRepository gameLevelRepository;
     private final IPlayerMapper playerMapper;
+    private final OptionsService optionsService;
+    private final GridService gridService;
+
     private final JakartaValidator jakartaValidator;
 
     public PlayerService(
@@ -69,14 +80,22 @@ public class PlayerService {
             OptionsRepository optionsRepository,
             MenuRepository menuRepository,
             GameRepository gameRepository,
+            GridRepository gridRepository,
+            GameLevelRepository gameLevelRepository,
             IPlayerMapper playerMapper,
+            OptionsService optionsService,
+            GridService gridService,
             JakartaValidator jakartaValidator) {
         this.playerRepository = playerRepository;
         this.playerLanguageRepository = playerLanguageRepository;
         this.optionsRepository = optionsRepository;
         this.menuRepository = menuRepository;
         this.gameRepository = gameRepository;
+        this.gridRepository = gridRepository;
+        this.gameLevelRepository = gameLevelRepository;
         this.playerMapper = playerMapper;
+        this.optionsService = optionsService;
+        this.gridService = gridService;
         this.jakartaValidator = jakartaValidator;
     }
 
@@ -189,7 +208,7 @@ public class PlayerService {
     public Collection<PlayerDto> getPlayers() {
         return Optional.ofNullable(
                         playerRepository.findAllUnselectedWithSelectedGame(
-                                Sort.by(Sort.Direction.ASC, "name")))
+                                Sort.by(Sort.Order.asc("name").ignoreCase())))
                 .filter(items -> !CollectionUtils.isEmpty(items))
                 .stream()
                 .flatMap(Collection::stream)
@@ -198,5 +217,144 @@ public class PlayerService {
                 .filter(Objects::nonNull)
                 .map(jakartaValidator::validateOrThrow)
                 .toList();
+    }
+
+    /**
+     * Creates a new player by duplicating the configuration and current game state of the source
+     * player.
+     *
+     * <p>The process clones {@link Options} and {@link Grid} resources, creates a new {@link
+     * Player} instance, and initializes a new {@link Game} linked to the original game level. The
+     * source player is then marked as unselected.
+     *
+     * <p>Business operations performed:
+     *
+     * <ul>
+     *   <li>Validates source {@link PlayerDto} and its {@link GameDto}.
+     *   <li>Duplicates configurations via {@link OptionsService} and {@link GridService}.
+     *   <li>Resolves existing {@link Menu}, {@link PlayerLanguage}, and {@link GameLevel} entities.
+     *   <li>Constructs a new {@link Player} with initialized timestamps.
+     *   <li>Persists the new {@link Player} and its associated {@link Game}.
+     *   <li>Unselects the previous player.
+     * </ul>
+     *
+     * <p>This method is fully transactional: all operations succeed or fail as a unit.
+     *
+     * @param dto the source player DTO; must not be null
+     * @param newName the name for the new player; must not be null or blank
+     * @throws IllegalArgumentException if {@code newName} is null/blank, or if required entities
+     *     are not found in the database
+     * @throws jakarta.validation.ConstraintViolationException if validation fails on the resulting
+     *     entities
+     */
+    @Transactional
+    public void createNewPlayerWithCurrent(PlayerDto dto, String newName) {
+        PlayerDto currentPlayerDto = jakartaValidator.validateOrThrow(dto);
+        GameDto currentGameDto = jakartaValidator.validateOrThrow(currentPlayerDto.selectedGame());
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                newName, "newName must not be null or blank");
+        Instant now = MyDateTime.INSTANCE.getCurrentInstant();
+        Player newPlayer =
+                Player.builder()
+                        .playerlanguageid(
+                                findOrThrow(
+                                        playerLanguageRepository,
+                                        currentPlayerDto.playerlanguageidDto().playerlanguageid(),
+                                        "Language"))
+                        .optionsid(
+                                findOrThrow(
+                                        optionsRepository,
+                                        optionsService
+                                                .duplicateOptions(
+                                                        currentPlayerDto.optionsidDto().optionsid())
+                                                .optionsid(),
+                                        "Options"))
+                        .menuid(
+                                findOrThrow(
+                                        menuRepository,
+                                        currentPlayerDto.menuidDto().menuid(),
+                                        "Menu"))
+                        .name(newName)
+                        .selected(true)
+                        .createdat(now)
+                        .updatedat(now)
+                        .build();
+        Game newGame =
+                Game.builder()
+                        .gridid(
+                                findOrThrow(
+                                        gridRepository,
+                                        gridService
+                                                .duplicateGrid(currentGameDto.grididDto().gridid())
+                                                .gridid(),
+                                        "Grid"))
+                        .playerid(newPlayer)
+                        .levelid(
+                                findOrThrow(
+                                        gameLevelRepository,
+                                        currentGameDto.levelidDto().levelid(),
+                                        "GameLevel"))
+                        .selected(true)
+                        .createdat(now)
+                        .updatedat(now)
+                        .build();
+        newPlayer.getGames().add(newGame);
+        unselectPlayer(currentPlayerDto.playerid());
+        jakartaValidator.validateOrThrow(
+                playerMapper.mapPlayerToDto(playerRepository.save(newPlayer)));
+    }
+
+    /**
+     * Retrieves an entity by its identifier from the provided repository or throws an exception if
+     * not found.
+     *
+     * <p>This utility method standardizes error handling across the service layer when resolving
+     * database dependencies. It ensures that required entities are managed within the current
+     * transaction and throws a consistent exception if they are missing.
+     *
+     * @param <T> the type of the entity
+     * @param <K> the type of the entity identifier
+     * @param repo the {@link CrudRepository} used to query the entity
+     * @param k the identifier of the entity to retrieve
+     * @param entityName a descriptive name of the entity, used for error message construction
+     * @return the managed entity instance
+     * @throws IllegalArgumentException if the entity with the specified identifier does not exist
+     */
+    private <T, K> T findOrThrow(CrudRepository<T, K> repo, K k, String entityName) {
+        return repo.findById(k)
+                .orElseThrow(
+                        () ->
+                                ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                                        entityName + " not found: " + k));
+    }
+
+    /**
+     * Marks the specified player as unselected and updates its timestamp.
+     *
+     * <p>The player is retrieved by ID and must exist; otherwise an {@link
+     * IllegalArgumentException} is thrown. The {@code selected} flag is set to {@code false}, the
+     * {@code updatedat} timestamp is refreshed, and the entity is persisted.
+     *
+     * <p>The persisted state is mapped to a {@link PlayerDto} and validated to ensure data
+     * integrity before transaction completion.
+     *
+     * @param playerId the identifier of the player to unselect
+     * @throws IllegalArgumentException if the player does not exist
+     * @throws jakarta.validation.ConstraintViolationException if validation of the updated player
+     *     fails
+     */
+    private void unselectPlayer(long playerId) {
+        Player existing =
+                playerRepository
+                        .findById(playerId)
+                        .orElseThrow(
+                                () ->
+                                        ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                                                "Player not found: " + playerId));
+        existing.setSelected(false);
+        existing.setUpdatedat(MyDateTime.INSTANCE.getCurrentInstant());
+        Player saved = playerRepository.save(existing);
+        PlayerDto dto = playerMapper.mapPlayerToDto(saved);
+        jakartaValidator.validateOrThrow(dto);
     }
 }

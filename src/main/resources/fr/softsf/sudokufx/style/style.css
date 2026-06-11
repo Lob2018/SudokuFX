@@ -606,3 +606,23 @@
     -fx-border-color: #1D1D30;
     -fx-background-radius: 18;
 }
+
+.button:name-parent-focused {
+    -fx-border-radius: .9em;
+    -fx-background-color: #DDDDDD;
+    -fx-border-width: .2em;
+    -fx-border-insets: -.2em;
+    -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
+}
+
+.button:name-parent-focused:name-valid {
+    -fx-background-color: #AAFF99;
+}
+
+.button:name-parent-focused:name-invalid {
+    -fx-background-color: #FEBE98;
+}
+
+.button:name-parent-focused:name-unavailable {
+    -fx-background-color: #F1FF99;
+}

@@ -8,12 +8,14 @@ package fr.softsf.sudokufx.view.util;
 import java.util.Objects;
 import javafx.beans.binding.BooleanBinding;
 import javafx.beans.property.BooleanProperty;
+import javafx.beans.property.Property;
 import javafx.beans.value.ObservableValue;
 import javafx.css.PseudoClass;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
 import org.springframework.stereotype.Component;
@@ -119,6 +121,19 @@ public class BindingConfigurator {
         Objects.requireNonNull(labelNode, "Label must not be null");
         Objects.requireNonNull(textProperty, "Text property must not be null");
         labelNode.textProperty().bind(textProperty);
+    }
+
+    /**
+     * Configures a {@link TextField} with a bidirectional text binding.
+     *
+     * @param textFieldNode the {@link TextField} to configure
+     * @param textProperty property bound bidirectionally to the text field's content
+     * @throws NullPointerException if any parameter is {@code null}
+     */
+    public void configureTextField(TextField textFieldNode, Property<String> textProperty) {
+        Objects.requireNonNull(textFieldNode, "TextField must not be null");
+        Objects.requireNonNull(textProperty, "Text property must not be null");
+        textFieldNode.textProperty().bindBidirectional(textProperty);
     }
 
     /**

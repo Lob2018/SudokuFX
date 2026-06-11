@@ -10,9 +10,17 @@ import java.util.List;
 import java.util.function.Supplier;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
+import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.Property;
+import javafx.beans.property.ReadOnlyObjectProperty;
+import javafx.beans.property.ReadOnlyObjectWrapper;
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.TextFormatter;
 
 import org.springframework.stereotype.Component;
 
@@ -41,6 +49,9 @@ public class MenuPlayerViewModel {
             "menu.accessibility.role.description.closed";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION =
             "menu.accessibility.role.description.submenu.option";
+    private static final String UNKNOWN_PLAYER_CHARACTER = "—";
+    public static final String MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT =
+            "menu.player.button.new.player.text";
 
     private final PlayerStateHolder playerStateHolder;
     private final PlayerService playerService;
@@ -71,6 +82,15 @@ public class MenuPlayerViewModel {
     private final StringBinding cellConfirmationTitle;
     private final StringBinding cellConfirmationMessage;
 
+    private static final java.util.regex.Pattern ALLOWED_NAME_PATTERN =
+            java.util.regex.Pattern.compile("^[A-Za-z]+(?: [A-Za-z]+)* *$|^ *$");
+    private static final int MAX_NAME_LENGTH = 50;
+    private final ReadOnlyObjectWrapper<PlayerNameStatus> playerNameStatus =
+            new ReadOnlyObjectWrapper<>(PlayerNameStatus.EMPTY);
+    private final StringProperty playerNameInput =
+            new SimpleStringProperty(I18n.INSTANCE.getValue(MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT));
+    private final BooleanProperty editing = new SimpleBooleanProperty(false);
+
     public MenuPlayerViewModel(PlayerStateHolder playerStateHolder, PlayerService playerService) {
         this.playerStateHolder = playerStateHolder;
         this.playerService = playerService;
@@ -100,7 +120,7 @@ public class MenuPlayerViewModel {
 
         newAccessibleText = createStringBinding("menu.player.button.new.player.accessibility");
         newTooltip = createAppendedStringBinding();
-        newText = createStringBinding("menu.player.button.new.player.text");
+        newText = createStringBinding(MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT);
         newRoleDescription =
                 createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION);
 
@@ -114,7 +134,6 @@ public class MenuPlayerViewModel {
                 createStringBinding("menu.player.button.new.player.dialog.confirmation.title");
         cellConfirmationMessage =
                 createStringBinding("menu.player.button.new.player.dialog.confirmation.message");
-
         loadPlayers();
         setSelectedPlayer();
     }
@@ -362,5 +381,101 @@ public class MenuPlayerViewModel {
                             + " defensive copies break UI reactivity.")
     public StringBinding cellConfirmationMessageProperty() {
         return cellConfirmationMessage;
+    }
+
+    public ReadOnlyObjectProperty<PlayerNameStatus> playerNameStatusProperty() {
+        return playerNameStatus.getReadOnlyProperty();
+    }
+
+    public Property<String> playerNameInputProperty() {
+        return playerNameInput;
+    }
+
+    public BooleanProperty editingProperty() {
+        return editing;
+    }
+
+    /** Prepares the text field for a new player. */
+    public void prepareNewPlayer() {
+        playerNameInput.set("");
+        editing.set(true);
+    }
+
+    /** Validates and sets the player name into the state holder ONLY on Enter key. */
+    public void commitNewPlayerName() {
+        if (!editing.get() || playerNameStatus.get() != PlayerNameStatus.VALID) {
+            return;
+        }
+        String finalName = playerNameInput.get().trim();
+        // TODO
+        playerService.createNewPlayerWithCurrent(playerStateHolder.getCurrentPlayer(), finalName);
+        playerStateHolder.refreshCurrentPlayer();
+        editing.set(false);
+        loadPlayers();
+    }
+
+    /** Clears the text field and stops editing when focus is lost. */
+    public void cancelNewPlayer() {
+        playerNameInput.set(I18n.INSTANCE.getValue(MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT));
+        if (!editing.get()) {
+            return;
+        }
+        editing.set(false);
+    }
+
+    /**
+     * Validates the input player name against formatting and availability constraints. *
+     *
+     * <p>Updates the status property to:
+     *
+     * <ul>
+     *   <li>{@link PlayerNameStatus#EMPTY}: if text is null or blank.
+     *   <li>{@link PlayerNameStatus#INVALID}: if length exceeds 50 or pattern mismatches.
+     *   <li>{@link PlayerNameStatus#UNAVAILABLE}: if name matches current player, the anonymous
+     *       token {@code "—"}, or an existing player.
+     *   <li>{@link PlayerNameStatus#VALID}: if all checks pass.
+     * </ul>
+     *
+     * @param currentText the raw text input from the view
+     */
+    public void validatePlayerName(String currentText) {
+        if (currentText == null || currentText.isBlank()) {
+            playerNameStatus.set(PlayerNameStatus.EMPTY);
+            return;
+        }
+        String cleanedText = currentText.trim();
+        boolean isValid =
+                cleanedText.length() <= MAX_NAME_LENGTH
+                        && ALLOWED_NAME_PATTERN.matcher(cleanedText).matches();
+        boolean isAvailable =
+                !cleanedText.equalsIgnoreCase(playerStateHolder.getCurrentPlayer().name())
+                        && !cleanedText.equals(UNKNOWN_PLAYER_CHARACTER)
+                        && playerService.getPlayers().stream()
+                                .noneMatch(p -> p.name().equalsIgnoreCase(cleanedText));
+        if (!isValid) {
+            playerNameStatus.set(PlayerNameStatus.INVALID);
+        } else if (!isAvailable) {
+            playerNameStatus.set(PlayerNameStatus.UNAVAILABLE);
+        } else {
+            playerNameStatus.set(PlayerNameStatus.VALID);
+        }
+    }
+
+    /**
+     * Filters input changes to enforce character and length constraints.
+     *
+     * @param change the JavaFX text formatter change context
+     * @return the permitted change, or null to reject the input alteration
+     */
+    public TextFormatter.Change filterPlayerNameInput(TextFormatter.Change change) {
+        if (!change.isContentChange()) {
+            return change;
+        }
+        String newName = change.getControlNewText();
+        if (newName.length() <= MAX_NAME_LENGTH
+                && ALLOWED_NAME_PATTERN.matcher(newName).matches()) {
+            return change;
+        }
+        return null;
     }
 }

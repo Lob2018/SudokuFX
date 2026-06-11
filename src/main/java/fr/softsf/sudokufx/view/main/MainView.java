@@ -23,6 +23,8 @@ import javafx.scene.control.ColorPicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import javafx.scene.control.TextFormatter;
 import javafx.scene.image.Image;
 import javafx.scene.input.InputEvent;
 import javafx.scene.layout.GridPane;
@@ -71,6 +73,7 @@ import fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSolveViewModel;
+import fr.softsf.sudokufx.viewmodel.PlayerNameStatus;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 
@@ -89,6 +92,15 @@ public final class MainView implements IMainView {
             PseudoClass.getPseudoClass("reduced");
     private static final PseudoClass OPAQUE_MODE_PSEUDO_SELECTED =
             PseudoClass.getPseudoClass("opaque-mode");
+
+    private static final PseudoClass NAME_PSEUDO_FOCUSED =
+            PseudoClass.getPseudoClass("name-parent-focused");
+    private static final PseudoClass NAME_PSEUDO_VALID = PseudoClass.getPseudoClass("name-valid");
+    private static final PseudoClass NAME_PSEUDO_INVALID =
+            PseudoClass.getPseudoClass("name-invalid");
+    private static final PseudoClass NAME_PSEUDO_UNAVAILABLE =
+            PseudoClass.getPseudoClass("name-unavailable");
+
     private static final int AUTO_HIDE_MINI_MENU_DELAY_MS = 5_000;
     private static final int MAX_STARS_PERCENTAGE = 100;
 
@@ -176,7 +188,7 @@ public final class MainView implements IMainView {
     @FXML private Label menuPlayerButtonPlayerText;
     @FXML private Button menuPlayerButtonPlayerEdit;
     @FXML private Button menuPlayerButtonNew;
-    @FXML private Label menuPlayerButtonNewText;
+    @FXML private TextField menuPlayerButtonNewText;
     @FXML private ListView<PlayerDto> menuPlayerListView;
     @FXML private Rectangle menuPlayerClipListView;
 
@@ -648,10 +660,25 @@ public final class MainView implements IMainView {
     }
 
     /**
-     * Initializes bindings and event listeners for the player menu components. Binds accessible
-     * texts, tooltips, and displayed texts to the ViewModel. Synchronizes selected player state
-     * between the ListView and ViewModel. Sets up the player ListView with custom cells and
-     * refreshes UI state.
+     * Initializes all player menu components by configuring JavaFX property bindings, event
+     * handlers, and input lifecycle listeners.
+     *
+     * <p>This method sets up the following structural behaviors:
+     *
+     * <ul>
+     *   <li>Binds accessible texts, tooltips, and role descriptions for static and dynamic menu
+     *       buttons.
+     *   <li>Configures the player name input text field with bidirectional value binding and input
+     *       character filtering.
+     *   <li>Manages the new player creation state machine by handling edit mode transitions, focus
+     *       requests, and real-time validation status tracking.
+     *   <li>Registers keyboard and action triggers to commit data on ENTER or rollback changes on
+     *       ESCAPE.
+     *   <li>Synchronizes component focus states and business logic validation statuses with custom
+     *       CSS pseudo-classes.
+     *   <li>Delegates the multi-column player layout initialization to the structural list view
+     *       factory.
+     * </ul>
      */
     private void playerMenuInitialization() {
         bindingConfigurator.configureButton(
@@ -702,10 +729,85 @@ public final class MainView implements IMainView {
                 menuPlayerViewModel.newAccessibleTextProperty(),
                 menuPlayerViewModel.newTooltipProperty(),
                 menuPlayerViewModel.newRoleDescriptionProperty());
-        bindingConfigurator.configureLabel(
-                menuPlayerButtonNewText, menuPlayerViewModel.newTextProperty());
+        TextFormatter<String> formatter =
+                new TextFormatter<>(menuPlayerViewModel::filterPlayerNameInput);
+        menuPlayerButtonNewText.setMouseTransparent(true);
+        menuPlayerButtonNewText.setTextFormatter(formatter);
+        menuPlayerButtonNewText.setFocusTraversable(false);
+        bindingConfigurator.configureTextField(
+                menuPlayerButtonNewText, menuPlayerViewModel.playerNameInputProperty());
+        menuPlayerViewModel
+                .editingProperty()
+                .addListener(
+                        (obs, oldState, isEditing) -> {
+                            boolean editing = Boolean.TRUE.equals(isEditing);
+                            menuPlayerButtonNewText.setEditable(editing);
+                            if (editing) {
+                                menuPlayerButtonNewText.requestFocus();
+                                menuPlayerViewModel.validatePlayerName(
+                                        menuPlayerButtonNewText.getText());
+                                updatePlayerNamePseudoClasses(
+                                        menuPlayerViewModel.playerNameStatusProperty().get());
+                            }
+                        });
+        menuPlayerButtonNewText.setOnAction(event -> menuPlayerViewModel.commitNewPlayerName());
+        menuPlayerButtonNewText
+                .focusedProperty()
+                .addListener(
+                        (obs, wasFocused, isFocused) -> {
+                            boolean focused = Boolean.TRUE.equals(isFocused);
+                            menuPlayerButtonNew.pseudoClassStateChanged(
+                                    NAME_PSEUDO_FOCUSED, focused);
+                            if (!focused) {
+                                clearStatusPseudoClasses();
+                                menuPlayerViewModel.cancelNewPlayer();
+                            }
+                        });
+        menuPlayerButtonNewText.setOnKeyPressed(
+                event -> {
+                    if (event.getCode() == javafx.scene.input.KeyCode.ESCAPE
+                            && menuPlayerViewModel.editingProperty().get()) {
+                        menuPlayerViewModel.cancelNewPlayer();
+                        menuPlayerButtonNewText.getParent().requestFocus();
+                        event.consume();
+                    }
+                });
+        menuPlayerViewModel
+                .playerNameStatusProperty()
+                .addListener(
+                        (obs, oldStatus, newStatus) -> updatePlayerNamePseudoClasses(newStatus));
+        menuPlayerButtonNewText
+                .textProperty()
+                .addListener(
+                        (obs, oldText, newText) -> {
+                            if (menuPlayerViewModel.editingProperty().get()) {
+                                menuPlayerViewModel.validatePlayerName(newText);
+                            }
+                        });
         genericListViewFactory.configurePlayerListView(
                 menuPlayerListView, menuPlayerClipListView, menuPlayerViewModel);
+    }
+
+    private void updatePlayerNamePseudoClasses(PlayerNameStatus status) {
+        clearStatusPseudoClasses();
+        if (status == null) {
+            return;
+        }
+        switch (status) {
+            case INVALID -> menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_INVALID, true);
+            case UNAVAILABLE ->
+                    menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_UNAVAILABLE, true);
+            case VALID -> menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_VALID, true);
+            case EMPTY -> {
+                /* Conserve le fond gris par défaut */
+            }
+        }
+    }
+
+    private void clearStatusPseudoClasses() {
+        menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_VALID, false);
+        menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_INVALID, false);
+        menuPlayerButtonNew.pseudoClassStateChanged(NAME_PSEUDO_UNAVAILABLE, false);
     }
 
     /**
@@ -1120,6 +1222,12 @@ public final class MainView implements IMainView {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.PLAYER);
         menuPlayerListView.refresh();
         menuPlayerButtonPlayer.requestFocus();
+    }
+
+    /** Make the name field editable in order to create a new player if that name doesn't exist. */
+    @FXML
+    public void handleMenuNewPlayer() {
+        menuPlayerViewModel.prepareNewPlayer();
     }
 
     /**

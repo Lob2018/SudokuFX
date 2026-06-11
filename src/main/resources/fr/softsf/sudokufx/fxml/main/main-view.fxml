@@ -17,6 +17,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TextField?>
 <StackPane fx:id="sudokuFXStackPane" alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml/1"
            xmlns="http://javafx.com/javafx/25"
            fx:controller="fr.softsf.sudokufx.view.main.MainView">
@@ -453,12 +454,12 @@
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Region styleClass="submenuIndentation" visible="false"/>
-                <Button fx:id="menuPlayerButtonNew" styleClass="menuButton">
+                <Button fx:id="menuPlayerButtonNew" styleClass="menuButton" onAction="#handleMenuNewPlayer">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>
                             <Text text="&#xef65;" styleClass="material"/>
-                            <Label fx:id="menuPlayerButtonNewText" styleClass="root,menuButtonLabel"/>
+                            <TextField fx:id="menuPlayerButtonNewText" styleClass="root,menuButtonLabel"/>
                         </HBox>
                     </graphic>
                     <tooltip>
