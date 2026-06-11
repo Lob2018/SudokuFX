@@ -10,6 +10,8 @@ import javafx.application.Platform;
 import javafx.beans.binding.DoubleBinding;
 import javafx.beans.property.Property;
 import javafx.scene.control.ListView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.shape.Rectangle;
 
 import org.springframework.stereotype.Component;
@@ -139,13 +141,16 @@ public class GenericListViewFactory {
     }
 
     /**
-     * Binds the selection of a {@link ListView} bidirectionally with a {@link Property}.
+     * Configures a {@link ListView} to update the provided {@link Property} only upon explicit user
+     * confirmation.
      *
-     * <p>Ensures that changes in the UI reflect in the ViewModel and vice versa.
+     * <p>This method sets up event handlers for {@code ENTER}/{@code SPACE} key presses and
+     * double-click mouse events to commit the current list selection to the model. This prevents
+     * premature updates during list navigation.
      *
-     * @param listView the ListView whose selection is bound (must not be {@code null})
-     * @param selectedProperty the property representing the selected item (must not be {@code
-     *     null})
+     * @param listView the {@link ListView} to configure; must not be {@code null}
+     * @param selectedProperty the model property to be updated upon confirmation; must not be
+     *     {@code null}
      * @param <T> the type of items in the ListView
      * @throws NullPointerException if any argument is {@code null}
      */
@@ -153,21 +158,26 @@ public class GenericListViewFactory {
             ListView<T> listView, Property<T> selectedProperty) {
         Objects.requireNonNull(listView, LIST_VIEW_MUST_NOT_BE_NULL);
         Objects.requireNonNull(selectedProperty, "selectedProperty must not be null");
-        listView.getSelectionModel()
-                .selectedItemProperty()
-                .addListener(
-                        (obs, old, selected) -> {
-                            if (selected != null && !selected.equals(selectedProperty.getValue())) {
-                                selectedProperty.setValue(selected);
-                            }
-                        });
-        selectedProperty.addListener(
-                (obs, old, selected) -> {
-                    if (selected != null
-                            && !selected.equals(listView.getSelectionModel().getSelectedItem())) {
-                        listView.getSelectionModel().select(selected);
+        listView.addEventFilter(
+                KeyEvent.KEY_PRESSED,
+                event -> {
+                    if (event.getCode() == KeyCode.ENTER || event.getCode() == KeyCode.SPACE) {
+                        T selectedItem = listView.getSelectionModel().getSelectedItem();
+                        if (selectedItem != null) {
+                            // TODO : viewmodel update
+                            selectedProperty.setValue(selectedItem);
+                            event.consume();
+                        }
                     }
                 });
-        listView.getSelectionModel().select(selectedProperty.getValue());
+        listView.setOnMouseClicked(
+                event -> {
+                    if (event.getClickCount() == 2) {
+                        T selectedItem = listView.getSelectionModel().getSelectedItem();
+                        if (selectedItem != null) {
+                            selectedProperty.setValue(selectedItem);
+                        }
+                    }
+                });
     }
 }

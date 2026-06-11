@@ -12,6 +12,8 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.ListView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.shape.Rectangle;
 
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -93,11 +95,16 @@ class GenericListViewFactoryUTest {
         ListView<PlayerDto> listView = new ListView<>();
         Rectangle clip = new Rectangle();
         factory.configurePlayerListView(listView, clip, viewModel);
-        assertEquals(player1, listView.getSelectionModel().getSelectedItem());
+        listView.getSelectionModel().select(player1);
+        listView.fireEvent(
+                new KeyEvent(
+                        KeyEvent.KEY_PRESSED, "", "", KeyCode.ENTER, false, false, false, false));
+        assertEquals(player1, selected.get());
         listView.getSelectionModel().select(player2);
+        listView.fireEvent(
+                new KeyEvent(
+                        KeyEvent.KEY_PRESSED, "", "", KeyCode.ENTER, false, false, false, false));
         assertEquals(player2, selected.get());
-        selected.set(player1);
-        assertEquals(player1, listView.getSelectionModel().getSelectedItem());
     }
 
     @Test
@@ -156,43 +163,19 @@ class GenericListViewFactoryUTest {
         GameDto game1 = createGame(1L);
         GameDto game2 = createGame(2L);
         ObservableList<GameDto> backups = FXCollections.observableArrayList(game1, game2);
-        SimpleObjectProperty<GameDto> selected = new SimpleObjectProperty<>(game1);
+        SimpleObjectProperty<GameDto> selected = new SimpleObjectProperty<>(null);
         MenuSaveViewModel viewModel = mock(MenuSaveViewModel.class);
         when(viewModel.getBackups()).thenReturn(backups);
         when(viewModel.selectedBackupProperty()).thenReturn(selected);
-        when(viewModel.cellDeleteAccessibleTextProperty())
-                .thenReturn(
-                        new StringBinding() {
-                            @Override
-                            protected String computeValue() {
-                                return "Delete";
-                            }
-                        });
-        when(viewModel.cellConfirmationTitleProperty())
-                .thenReturn(
-                        new StringBinding() {
-                            @Override
-                            protected String computeValue() {
-                                return "Confirm";
-                            }
-                        });
-        when(viewModel.cellConfirmationMessageProperty())
-                .thenReturn(
-                        new StringBinding() {
-                            @Override
-                            protected String computeValue() {
-                                return "Are you sure?";
-                            }
-                        });
         ListView<GameDto> listView = new ListView<>();
         Rectangle clip = new Rectangle();
         factory.configureGameListView(listView, clip, viewModel);
-        assertEquals(backups, listView.getItems());
-        assertEquals(game1, listView.getSelectionModel().getSelectedItem());
-        listView.getSelectionModel().select(game2);
-        assertEquals(game2, selected.get());
-        selected.set(game1);
-        assertEquals(game1, listView.getSelectionModel().getSelectedItem());
+        listView.getSelectionModel().select(game1);
+        listView.fireEvent(
+                new KeyEvent(
+                        KeyEvent.KEY_PRESSED, "", "", KeyCode.ENTER, false, false, false, false));
+        assertEquals(
+                game1, selected.get(), "Le modèle devrait être mis à jour après la touche Entrée");
     }
 
     @Test
