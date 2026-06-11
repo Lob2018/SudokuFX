@@ -11,11 +11,11 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_success_tests.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html" target="_top" xlink:title=" ">
 <polygon fill="white" stroke="#666666" points="202.75,-44 0,-44 0,0 202.75,0 202.75,-44"/>
 <text text-anchor="start" x="8" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModelUTest.Background</text>
-<text text-anchor="middle" x="101.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageSuccessTests</text>
+<text text-anchor="middle" x="101.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">ImageErrorTests</text>
 </a>
 </g>
 </g>

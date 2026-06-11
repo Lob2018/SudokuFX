@@ -140,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a375391385c715121ea157f2fb8f58ebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a pseudo-class state on a <code><a class="el" href="">Node</a></code>, applying it immediately and updating it reactively.  <br /></td></tr>
 <tr class="memitem:aea558a8dabb30fa8d62a3f3f113dd810" id="r_aea558a8dabb30fa8d62a3f3f113dd810"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aea558a8dabb30fa8d62a3f3f113dd810">configureText</a> (Text textNode, ObservableValue&lt; String &gt; textProperty)</td></tr>
 <tr class="memdesc:aea558a8dabb30fa8d62a3f3f113dd810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a <code><a class="el" href="">Text</a></code> node with a text binding.  <br /></td></tr>
+<tr class="memitem:ab87141d666b4dd61fce7ef6f5d6e332d" id="r_ab87141d666b4dd61fce7ef6f5d6e332d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab87141d666b4dd61fce7ef6f5d6e332d">configureTextField</a> (TextField textFieldNode, Property&lt; String &gt; textProperty)</td></tr>
+<tr class="memdesc:ab87141d666b4dd61fce7ef6f5d6e332d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a <code><a class="el" href="">TextField</a></code> with a bidirectional text binding.  <br /></td></tr>
 <tr class="memitem:a23b1de906070b29c510049d372b76e43" id="r_a23b1de906070b29c510049d372b76e43"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a23b1de906070b29c510049d372b76e43">configureVisibilityAndManaged</a> (Node node, ObservableValue&lt; Boolean &gt; visibilityBinding)</td></tr>
 <tr class="memdesc:a23b1de906070b29c510049d372b76e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures both visibility and managed state of a <code><a class="el" href="">Node</a></code> using a shared boolean binding.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -404,6 +406,42 @@ Private Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">textNode</td><td>the <code><a class="el" href="">Text</a></code> node to configure </td></tr>
     <tr><td class="paramname">textProperty</td><td>property bound to the text content </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if any parameter is <code class="JavaDocCode">null</code> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab87141d666b4dd61fce7ef6f5d6e332d" name="ab87141d666b4dd61fce7ef6f5d6e332d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab87141d666b4dd61fce7ef6f5d6e332d">&#9670;&#160;</a></span>configureTextField()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.util.BindingConfigurator.configureTextField </td>
+          <td>(</td>
+          <td class="paramtype">TextField</td>          <td class="paramname"><span class="paramname"><em>textFieldNode</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Property&lt; String &gt;</td>          <td class="paramname"><span class="paramname"><em>textProperty</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configures a <code><a class="el" href="">TextField</a></code> with a bidirectional text binding. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">textFieldNode</td><td>the <code><a class="el" href="">TextField</a></code> to configure </td></tr>
+    <tr><td class="paramname">textProperty</td><td>property bound bidirectionally to the text field's content </td></tr>
   </table>
   </dd>
 </dl>

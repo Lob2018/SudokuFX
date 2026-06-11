@@ -119,20 +119,26 @@ document.addEventListener('DOMContentLoaded', () => {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>import java.text.MessageFormat;</code><br />
-<code>import java.time.Instant;</code><br />
+<code>import java.util.List;</code><br />
 <code>import java.util.function.Supplier;</code><br />
 <code>import javafx.beans.binding.Bindings;</code><br />
 <code>import javafx.beans.binding.StringBinding;</code><br />
+<code>import javafx.beans.property.BooleanProperty;</code><br />
 <code>import javafx.beans.property.ObjectProperty;</code><br />
+<code>import javafx.beans.property.Property;</code><br />
+<code>import javafx.beans.property.ReadOnlyObjectProperty;</code><br />
+<code>import javafx.beans.property.ReadOnlyObjectWrapper;</code><br />
+<code>import javafx.beans.property.SimpleBooleanProperty;</code><br />
+<code>import javafx.beans.property.SimpleStringProperty;</code><br />
+<code>import javafx.beans.property.StringProperty;</code><br />
 <code>import javafx.collections.FXCollections;</code><br />
 <code>import javafx.collections.ObservableList;</code><br />
+<code>import javafx.scene.control.TextFormatter;</code><br />
 <code>import org.springframework.stereotype.Component;</code><br />
 <code>import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
-<code>import fr.softsf.sudokufx.dto.MenuDto;</code><br />
-<code>import fr.softsf.sudokufx.dto.OptionsDto;</code><br />
 <code>import fr.softsf.sudokufx.dto.PlayerDto;</code><br />
-<code>import fr.softsf.sudokufx.dto.PlayerLanguageDto;</code><br />
+<code>import fr.softsf.sudokufx.service.business.PlayerService;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for MenuPlayerViewModel.java:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">

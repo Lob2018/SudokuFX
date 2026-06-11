@@ -125,15 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size__coll__graph.svg" width="211" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size__coll__graph.svg" width="211" height="363"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4da97a537f85a8f1dbb1ecc2e16c44f8" id="r_a4da97a537f85a8f1dbb1ecc2e16c44f8"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a4da97a537f85a8f1dbb1ecc2e16c44f8">DynamicFontSize</a> (Scene scene)</td></tr>
 <tr class="memdesc:a4da97a537f85a8f1dbb1ecc2e16c44f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.">DynamicFontSize</a> instance for the specified Scene.  <br /></td></tr>
-<tr class="memitem:ab8db1ddff5ceeebfb60a76b8168a5f7d" id="r_ab8db1ddff5ceeebfb60a76b8168a5f7d"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#ab8db1ddff5ceeebfb60a76b8168a5f7d">getCurrentFontSize</a> ()</td></tr>
-<tr class="memdesc:ab8db1ddff5ceeebfb60a76b8168a5f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current calculated font size in pixels.  <br /></td></tr>
+<tr class="memitem:a6775be885b61c16dabfb7428c7d56520" id="r_a6775be885b61c16dabfb7428c7d56520"><td class="memItemLeft">ReadOnlyDoubleProperty&#160;</td><td class="memItemRight"><a class="el" href="#a6775be885b61c16dabfb7428c7d56520">currentFontSizeProperty</a> ()</td></tr>
+<tr class="memdesc:a6775be885b61c16dabfb7428c7d56520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the read-only property of the current font size.  <br /></td></tr>
 <tr class="memitem:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f" id="r_a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a047fbfb7e3d7b9e30ddeaefbeb3c9a3f">updateFontSize</a> ()</td></tr>
 <tr class="memdesc:a047fbfb7e3d7b9e30ddeaefbeb3c9a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the font size of the scene's root node based on its current dimensions.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -144,7 +144,7 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a57007497ac42d19ba42d8122b8cba38e" id="r_a57007497ac42d19ba42d8122b8cba38e"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a57007497ac42d19ba42d8122b8cba38e">currentFontSize</a> = -1</td></tr>
+<tr class="memitem:ab93ef53aedbdbd1b2635e9eed8d7d5fb" id="r_ab93ef53aedbdbd1b2635e9eed8d7d5fb"><td class="memItemLeft">final ReadOnlyDoubleWrapper&#160;</td><td class="memItemRight"><a class="el" href="#ab93ef53aedbdbd1b2635e9eed8d7d5fb">currentFontSize</a> = new ReadOnlyDoubleWrapper(-1)</td></tr>
 <tr class="memitem:a8fb15ae13b6b053bee2b87f85e2d08c2" id="r_a8fb15ae13b6b053bee2b87f85e2d08c2"><td class="memItemLeft">int&#160;</td><td class="memItemRight"><a class="el" href="#a8fb15ae13b6b053bee2b87f85e2d08c2">dynamicStylesheetIndex</a> = -1</td></tr>
 <tr class="memitem:a0fbaa90a87ac30130bf43611af8fea4b" id="r_a0fbaa90a87ac30130bf43611af8fea4b"><td class="memItemLeft">final Scene&#160;</td><td class="memItemRight"><a class="el" href="#a0fbaa90a87ac30130bf43611af8fea4b">scene</a></td></tr>
 </table><table class="memberdecls">
@@ -197,14 +197,14 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="ab8db1ddff5ceeebfb60a76b8168a5f7d" name="ab8db1ddff5ceeebfb60a76b8168a5f7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8db1ddff5ceeebfb60a76b8168a5f7d">&#9670;&#160;</a></span>getCurrentFontSize()</h2>
+<a id="a6775be885b61c16dabfb7428c7d56520" name="a6775be885b61c16dabfb7428c7d56520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6775be885b61c16dabfb7428c7d56520">&#9670;&#160;</a></span>currentFontSizeProperty()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double fr.softsf.sudokufx.common.util.DynamicFontSize.getCurrentFontSize </td>
+          <td class="memname">ReadOnlyDoubleProperty fr.softsf.sudokufx.common.util.DynamicFontSize.currentFontSizeProperty </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -212,8 +212,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the current calculated font size in pixels. </p>
-<dl class="section return"><dt>Returns</dt><dd>current font size </dd></dl>
+<p>Returns the read-only property of the current font size. </p>
+<dl class="section return"><dt>Returns</dt><dd>the read-only double property </dd></dl>
 
 </div>
 </div>
@@ -272,8 +272,8 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
-<a id="a57007497ac42d19ba42d8122b8cba38e" name="a57007497ac42d19ba42d8122b8cba38e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57007497ac42d19ba42d8122b8cba38e">&#9670;&#160;</a></span>currentFontSize</h2>
+<a id="ab93ef53aedbdbd1b2635e9eed8d7d5fb" name="ab93ef53aedbdbd1b2635e9eed8d7d5fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab93ef53aedbdbd1b2635e9eed8d7d5fb">&#9670;&#160;</a></span>currentFontSize</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -282,7 +282,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double fr.softsf.sudokufx.common.util.DynamicFontSize.currentFontSize = -1</td>
+          <td class="memname">final ReadOnlyDoubleWrapper fr.softsf.sudokufx.common.util.DynamicFontSize.currentFontSize = new ReadOnlyDoubleWrapper(-1)</td>
         </tr>
       </table>
   </td>

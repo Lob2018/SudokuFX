@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.playerMenuInitialization" name="fr.softsf.sudokufx.view.main.MainView.playerMenuInitialization">
+<area shape="rect" id="Node000001" title="Initializes all player menu components by configuring JavaFX property bindings, event handlers,..." alt="" coords="5,5,223,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ab4665322434dd5f9b0c37686ac3cc0d2" title="Removes all validation&#45;related pseudo&#45;classes from the new player button." alt="" coords="603,5,842,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,21,271,20,555,20,588,21,588,26,555,25,271,25,223,26"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a0c413fa0dec2327ebc2348e34c9e7135" title="Updates the CSS pseudo&#45;classes of the new player button based on the provided validation status." alt="" coords="271,35,555,77"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="223,35,256,38,255,43,223,40"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="555,40,587,37,588,42,556,45"/>
+</map>

@@ -124,10 +124,13 @@ document.addEventListener('DOMContentLoaded', () => {
 <code>import org.junit.jupiter.api.BeforeEach;</code><br />
 <code>import org.junit.jupiter.api.Test;</code><br />
 <code>import fr.softsf.sudokufx.common.exception.JakartaValidator;</code><br />
+<code>import fr.softsf.sudokufx.common.interfaces.mapper.IGridMapper;</code><br />
 <code>import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;</code><br />
 <code>import fr.softsf.sudokufx.dto.*;</code><br />
 <code>import fr.softsf.sudokufx.model.*;</code><br />
 <code>import fr.softsf.sudokufx.repository.*;</code><br />
+<code>import fr.softsf.sudokufx.service.business.GridService;</code><br />
+<code>import fr.softsf.sudokufx.service.business.OptionsService;</code><br />
 <code>import fr.softsf.sudokufx.service.business.PlayerService;</code><br />
 <code>import jakarta.validation.ConstraintViolationException;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />

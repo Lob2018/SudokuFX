@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.service.business.PlayerService.unselectPlayer" name="fr.softsf.sudokufx.service.business.PlayerService.unselectPlayer">
+<area shape="rect" id="Node000001" title="Marks the specified player as unselected and updates its timestamp." alt="" coords="5,39,235,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ade99f107878b74490ae3d014ff294f60" title="Sets the selection flag." alt="" coords="283,5,449,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,42,267,37,267,43,235,47"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="283,72,449,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,73,267,77,267,83,235,78"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="497,72,666,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="450,91,481,91,481,96,450,96"/>
+</map>

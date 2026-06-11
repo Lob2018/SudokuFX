@@ -118,21 +118,32 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="headertitle"><div class="title">PlayerService.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import org.springframework.stereotype.Service;</code><br />
+<div class="textblock"><code>import java.time.Instant;</code><br />
+<code>import java.util.Collection;</code><br />
+<code>import java.util.Objects;</code><br />
+<code>import java.util.Optional;</code><br />
+<code>import org.springframework.data.domain.Sort;</code><br />
+<code>import org.springframework.data.repository.CrudRepository;</code><br />
+<code>import org.springframework.stereotype.Service;</code><br />
 <code>import org.springframework.transaction.annotation.Transactional;</code><br />
+<code>import org.springframework.util.CollectionUtils;</code><br />
 <code>import fr.softsf.sudokufx.common.exception.ExceptionTools;</code><br />
 <code>import fr.softsf.sudokufx.common.exception.JakartaValidator;</code><br />
 <code>import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;</code><br />
+<code>import fr.softsf.sudokufx.common.util.MyDateTime;</code><br />
 <code>import fr.softsf.sudokufx.dto.GameDto;</code><br />
 <code>import fr.softsf.sudokufx.dto.GridDto;</code><br />
 <code>import fr.softsf.sudokufx.dto.PlayerDto;</code><br />
 <code>import fr.softsf.sudokufx.model.Game;</code><br />
+<code>import fr.softsf.sudokufx.model.GameLevel;</code><br />
 <code>import fr.softsf.sudokufx.model.Grid;</code><br />
 <code>import fr.softsf.sudokufx.model.Menu;</code><br />
 <code>import fr.softsf.sudokufx.model.Options;</code><br />
 <code>import fr.softsf.sudokufx.model.Player;</code><br />
 <code>import fr.softsf.sudokufx.model.PlayerLanguage;</code><br />
+<code>import fr.softsf.sudokufx.repository.GameLevelRepository;</code><br />
 <code>import fr.softsf.sudokufx.repository.GameRepository;</code><br />
+<code>import fr.softsf.sudokufx.repository.GridRepository;</code><br />
 <code>import fr.softsf.sudokufx.repository.MenuRepository;</code><br />
 <code>import fr.softsf.sudokufx.repository.OptionsRepository;</code><br />
 <code>import fr.softsf.sudokufx.repository.PlayerLanguageRepository;</code><br />

@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.service.business.GridService" name="fr.softsf.sudokufx.service.business.GridService">
+<area shape="rect" id="Node000001" title="Service for managing Grid entities." alt="" coords="236,372,455,543"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html" title="Repository interface for Grid entities." alt="" coords="5,177,182,263"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,260,245,359,242,363,136,264"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="26,5,161,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,106,96,177,91,177,91,106"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html" title="This interface defines methods for mapping objects of type Grid to objects of type GridDto and vice v..." alt="" coords="206,151,485,289"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="348,289,348,355,343,355,343,289"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="509,140,740,300"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="533,302,460,363,457,359,529,298"/>
+</map>

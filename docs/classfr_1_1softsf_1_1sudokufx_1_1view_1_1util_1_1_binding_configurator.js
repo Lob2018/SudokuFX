@@ -6,5 +6,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator =
     [ "configureLabel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html#a42201c9ed83310d8026b684674cc60c8", null ],
     [ "configurePseudoClassBinding", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html#a375391385c715121ea157f2fb8f58ebe", null ],
     [ "configureText", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html#aea558a8dabb30fa8d62a3f3f113dd810", null ],
+    [ "configureTextField", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html#ab87141d666b4dd61fce7ef6f5d6e332d", null ],
     [ "configureVisibilityAndManaged", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html#a23b1de906070b29c510049d372b76e43", null ]
 ];

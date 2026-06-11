@@ -231,8 +231,8 @@ public final class MainView implements IMainView {
      * Constructs a new {@code MainView} with all required view-models, services, and navigation
      * components.
      *
-     * <p>Initializes the central hub for the application UI, ensuring all dependencies are
-     * injected for proper view binding and event orchestration.
+     * <p>Initializes the central hub for the application UI, ensuring all dependencies are injected
+     * for proper view binding and event orchestration.
      *
      * @param activeMenuOrSubmenuViewModel the view-model for active menu state management
      * @param coordinator the navigation coordinator for the application

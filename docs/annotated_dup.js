@@ -127,6 +127,7 @@ var annotated_dup =
           ] ],
           [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
             [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", [
+              [ "GridService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service" ],
               [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service" ],
               [ "PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service" ],
               [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service" ]
@@ -284,7 +285,8 @@ var annotated_dup =
             [ "MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test" ],
             [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model" ],
             [ "MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model" ],
-            [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ]
+            [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ],
+            [ "PlayerNameStatus", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status.html", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status" ]
           ] ],
           [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1_launcher" ],
           [ "SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main" ]

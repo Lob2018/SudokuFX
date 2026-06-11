@@ -131,6 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a60fe97948fca4c99755db5755d2afd71" id="r_a60fe97948fca4c99755db5755d2afd71"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a60fe97948fca4c99755db5755d2afd71">OptionsService</a> (<a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html">OptionsRepository</a> optionsRepository, <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html">IOptionsMapper</a> optionsMapper, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html">JakartaValidator</a> jakartaValidator)</td></tr>
+<tr class="memdesc:a60fe97948fca4c99755db5755d2afd71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <code class="JavaDocCode">OptionsService</code> with the required database, mapping, and validation dependencies.  <br /></td></tr>
+<tr class="memitem:ab46d9276b5503ca130b8baab0556af9c" id="r_ab46d9276b5503ca130b8baab0556af9c"><td class="memItemLeft">OptionsDto&#160;</td><td class="memItemRight"><a class="el" href="#ab46d9276b5503ca130b8baab0556af9c">duplicateOptions</a> (Long optionsId)</td></tr>
+<tr class="memdesc:ab46d9276b5503ca130b8baab0556af9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates an existing <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user-configurable options for the SudokuFX application.">Options</a> entity by creating a new record with a generated ID using the fluent builder.  <br /></td></tr>
 <tr class="memitem:a95d1252d2c9e75cfd15d38cba0707398" id="r_a95d1252d2c9e75cfd15d38cba0707398"><td class="memItemLeft">OptionsDto&#160;</td><td class="memItemRight"><a class="el" href="#a95d1252d2c9e75cfd15d38cba0707398">updateOptions</a> (OptionsDto dto)</td></tr>
 <tr class="memdesc:a95d1252d2c9e75cfd15d38cba0707398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an existing <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user-configurable options for the SudokuFX application.">Options</a> entity with the values from the given <code><a class="el" href="">OptionsDto</a></code>.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -174,9 +177,60 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructs a new <code class="JavaDocCode">OptionsService</code> with the required database, mapping, and validation dependencies. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">optionsRepository</td><td>the repository used to access and persist <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html">Options</a></code> entities </td></tr>
+    <tr><td class="paramname">optionsMapper</td><td>the mapper used to convert <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html">Options</a></code> entities to <code><a class="el" href="">OptionsDto</a></code> </td></tr>
+    <tr><td class="paramname">jakartaValidator</td><td>the validator used to ensure data integrity of processed DTOs </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ab46d9276b5503ca130b8baab0556af9c" name="ab46d9276b5503ca130b8baab0556af9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46d9276b5503ca130b8baab0556af9c">&#9670;&#160;</a></span>duplicateOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OptionsDto fr.softsf.sudokufx.service.business.OptionsService.duplicateOptions </td>
+          <td>(</td>
+          <td class="paramtype">Long</td>          <td class="paramname"><span class="paramname"><em>optionsId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplicates an existing <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user-configurable options for the SudokuFX application.">Options</a> entity by creating a new record with a generated ID using the fluent builder. </p>
+<p>Fetches the source entity, copies its properties via the builder API, persists it, and validates the resulting DTO before returning.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">optionsId</td><td>the ID of the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user-configurable options for the SudokuFX application.">Options</a> entity to duplicate; must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the newly created and validated <code><a class="el" href="">OptionsDto</a></code> </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">sourceId</code> is null </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if the source <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html" title="Represents user-configurable options for the SudokuFX application.">Options</a> entity does not exist </td></tr>
+    <tr><td class="paramname">jakarta.validation.ConstraintViolationException</td><td>if validation fails on the resulting DTO </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service_ab46d9276b5503ca130b8baab0556af9c_cgraph.svg" width="455" height="387"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a95d1252d2c9e75cfd15d38cba0707398" name="a95d1252d2c9e75cfd15d38cba0707398"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95d1252d2c9e75cfd15d38cba0707398">&#9670;&#160;</a></span>updateOptions()</h2>
 
@@ -209,10 +263,10 @@ Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service_a95d1252d2c9e75cfd15d38cba0707398_cgraph.svg" width="100%" height="540"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 

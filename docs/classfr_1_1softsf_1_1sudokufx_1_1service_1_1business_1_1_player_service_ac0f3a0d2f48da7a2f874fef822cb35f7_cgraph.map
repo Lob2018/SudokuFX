@@ -1,0 +1,20 @@
+<map id="fr.softsf.sudokufx.service.business.PlayerService.createNewPlayerWithCurrent" name="fr.softsf.sudokufx.service.business.PlayerService.createNewPlayerWithCurrent">
+<area shape="rect" id="Node000001" title="Creates a new player by duplicating the configuration and current game state of the source player." alt="" coords="5,139,282,181"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838" title="Creates a new GameBuilder for fluent construction." alt="" coords="361,5,528,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,136,247,97,329,58,346,51,348,56,331,62,249,102,181,140"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="361,72,528,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,135,345,112,347,118,243,141"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a90613affe76be522308478a5acb661ba" title="Retrieves an entity by its identifier from the provided repository or throws an exception if not foun..." alt="" coords="330,139,559,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,157,314,157,314,163,282,163"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad6ffdca54d9d371b10b65b623dbbdeaf" title="Returns the games played by the player." alt="" coords="361,229,528,272"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="218,179,357,222,356,227,216,184"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#aad80490c41d9f8df4f9fd1fa5f7e2ee3" title="Marks the specified player as unselected and updates its timestamp." alt="" coords="330,296,559,339"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="173,180,242,230,286,258,331,282,345,288,342,292,329,286,283,262,239,235,170,184"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="398,229,396,219,404,210,420,205,444,203,471,205,486,211,484,216,469,210,444,208,421,210,407,215,401,221,403,228"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ade99f107878b74490ae3d014ff294f60" title="Sets the selection flag." alt="" coords="607,263,773,305"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="559,299,591,295,592,300,560,304"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="607,329,773,372"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="560,330,592,335,591,340,559,336"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="821,329,991,372"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="774,348,805,348,805,353,774,353"/>
+</map>
