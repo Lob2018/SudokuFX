@@ -195,6 +195,11 @@ public class Game {
         this.playerid = validatePlayer(playerid);
     }
 
+    /** Sets the difficulty level of this game. */
+    public void setLevelid(@Nonnull GameLevel levelid) {
+        this.levelid = validateLevel(levelid);
+    }
+
     /** Detaches this game from its current player. */
     public void detachFromPlayer() {
         this.playerid = null;

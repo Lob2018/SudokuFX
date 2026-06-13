@@ -7,12 +7,14 @@ package fr.softsf.sudokufx.viewmodel;
 
 import java.text.MessageFormat;
 import java.util.List;
+import java.util.Objects;
 import java.util.function.Supplier;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.Property;
+import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.beans.property.SimpleBooleanProperty;
@@ -90,6 +92,7 @@ public class MenuPlayerViewModel {
     private final StringProperty playerNameInput =
             new SimpleStringProperty(I18n.INSTANCE.getValue(MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT));
     private final BooleanProperty editing = new SimpleBooleanProperty(false);
+    private final BooleanProperty playerSwitchedSignal = new SimpleBooleanProperty(false);
 
     public MenuPlayerViewModel(PlayerStateHolder playerStateHolder, PlayerService playerService) {
         this.playerStateHolder = playerStateHolder;
@@ -134,6 +137,20 @@ public class MenuPlayerViewModel {
                 createStringBinding("menu.player.button.new.player.dialog.confirmation.title");
         cellConfirmationMessage =
                 createStringBinding("menu.player.button.new.player.dialog.confirmation.message");
+        playerStateHolder
+                .currentPlayerProperty()
+                .addListener(
+                        (obs, old, newValue) -> {
+                            if (newValue == null
+                                    || Objects.equals(newValue.playerid(), old.playerid())) {
+                                return;
+                            }
+                            playerService.switchAndSelectNewPlayer(
+                                    old.playerid(), newValue.playerid());
+                            loadPlayers();
+                            playerStateHolder.refreshCurrentPlayer();
+                            playerSwitchedSignal.set(!playerSwitchedSignal.get());
+                        });
         loadPlayers();
         setSelectedPlayer();
     }
@@ -387,6 +404,10 @@ public class MenuPlayerViewModel {
         return playerNameStatus.getReadOnlyProperty();
     }
 
+    public ReadOnlyBooleanProperty playerSwitchedSignalProperty() {
+        return playerSwitchedSignal;
+    }
+
     public Property<String> playerNameInputProperty() {
         return playerNameInput;
     }
@@ -402,12 +423,11 @@ public class MenuPlayerViewModel {
     }
 
     /** Validates and sets the player name into the state holder ONLY on Enter key. */
-    public void commitNewPlayerName() {
+    public void createNewPlayerByName() {
         if (!editing.get() || playerNameStatus.get() != PlayerNameStatus.VALID) {
             return;
         }
         String finalName = playerNameInput.get().trim();
-        // TODO
         playerService.createNewPlayerWithCurrent(playerStateHolder.getCurrentPlayer(), finalName);
         playerStateHolder.refreshCurrentPlayer();
         editing.set(false);

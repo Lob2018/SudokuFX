@@ -69,7 +69,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                         playerStateHolder,
                         optionsService,
                         toasterService);
-        viewModel.init(sudokuFX, colorPicker);
+        viewModel.init(sudokuFX);
         viewModel =
                 spy(
                         new MenuOptionsViewModel(
@@ -78,7 +78,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                                 playerStateHolder,
                                 optionsService,
                                 toasterService));
-        viewModel.init(sudokuFX, colorPicker);
+        viewModel.init(sudokuFX);
     }
 
     @AfterEach
@@ -149,7 +149,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     @Test
     void givenGridPaneAndColor_whenUpdateBackgroundColor_thenColorApplied() {
         Color color = Color.web("#12345678");
-        viewModel.applyAndPersistOptionsColor(sudokuFX, color);
+        viewModel.applyAndPersistIfNeededOptionsColor(sudokuFX, color, true);
         BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
         assertEquals(color, fill.getFill());
     }
@@ -168,7 +168,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                             (obs, old, newVal) -> {
                                 if (newVal != null) latch.countDown();
                             });
-            viewModel.applyAndPersistBackgroundImage(null, sudokuFX);
+            viewModel.applyAndPersistIfNeededBackgroundImage(null, sudokuFX, true);
             assertTrue(
                     latch.await(2, TimeUnit.SECONDS),
                     "Le toast d'erreur n'a jamais été émis (timeout 2s)");
@@ -191,7 +191,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                                     latch.countDown();
                                 }
                             });
-            viewModel.applyAndPersistBackgroundImage(invalidFile, sudokuFX);
+            viewModel.applyAndPersistIfNeededBackgroundImage(invalidFile, sudokuFX, true);
             boolean completed = latch.await(2, TimeUnit.SECONDS);
             assertTrue(completed, "Le toast d'erreur n'a jamais été émis (timeout 2s)");
             verifyNoInteractions(asyncServiceMock);
@@ -220,7 +220,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
-            viewModel.applyAndPersistBackgroundImage(validFile, sudokuFX);
+            viewModel.applyAndPersistIfNeededBackgroundImage(validFile, sudokuFX, true);
             verify(asyncServiceMock).processFileAsync(eq(validFile), any(), any());
         }
 
@@ -242,7 +242,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                             (obs, old, newVal) -> {
                                 if (newVal != null) latch.countDown();
                             });
-            viewModel.applyAndPersistBackgroundImage(nonExistentFile, sudokuFX);
+            viewModel.applyAndPersistIfNeededBackgroundImage(nonExistentFile, sudokuFX, true);
             boolean completed = latch.await(2, TimeUnit.SECONDS);
             assertTrue(completed, "Le toast d'erreur n'a jamais été émis (timeout de 2s)");
             verify(asyncServiceMock, never()).processFileAsync(any(), any(), any());
@@ -277,8 +277,8 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                             playerStateHolder,
                             optionsService,
                             toasterService);
-            vm.init(new GridPane(), new ColorPicker());
-            vm.applyAndPersistBackgroundImage(imageFile, gridPane);
+            vm.init(new GridPane());
+            vm.applyAndPersistIfNeededBackgroundImage(imageFile, gridPane, true);
             verify(asyncServiceMock).processFileAsync(eq(imageFile), any(), any());
             assertNotNull(gridPane.getBackground());
         }
@@ -333,7 +333,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @Test
-    void givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet() {
+    void givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneIfNeededBackgroundSet() {
         File imageFile = new File("src/test/resources/sample.jpg");
         GridPane gridPane = new GridPane();
         doAnswer(
@@ -359,8 +359,8 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                         playerStateHolder,
                         optionsService,
                         toasterService);
-        vm.init(new GridPane(), new ColorPicker());
-        vm.applyAndPersistBackgroundImage(imageFile, gridPane);
+        vm.init(new GridPane());
+        vm.applyAndPersistIfNeededBackgroundImage(imageFile, gridPane, true);
         verify(asyncServiceMock).processFileAsync(eq(imageFile), any(), any());
         assertNotNull(gridPane.getBackground(), "Le GridPane doit avoir un Background appliqué");
     }

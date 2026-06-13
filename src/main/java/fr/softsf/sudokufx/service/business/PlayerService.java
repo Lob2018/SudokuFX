@@ -139,15 +139,19 @@ public class PlayerService {
     }
 
     /**
-     * Updates an existing player and its associated entities (Game, GameLevel, Grid) in the
-     * database based on the provided {@link PlayerDto}. All updates are transactional and validated
-     * before and after persistence.
+     * Updates an existing player and its associated nested entities (language, options, menu, and
+     * game state).
      *
-     * @param dto the player data to update; must not be null
-     * @return the updated and validated {@link PlayerDto}
+     * <p>Performs validation on the input DTO, retrieves required associations, and applies updates
+     * to the persistent entity. Uses JPA dirty checking within a single transaction to ensure
+     * atomicity. If a {@code selectedGame} is provided, associated game, level, and grid state are
+     * also synchronized.
+     *
+     * @param dto the player data containing updated fields and nested DTOs; must not be null
+     * @return the persisted and validated {@link PlayerDto} representing the updated state
      * @throws NullPointerException if {@code dto} is null
-     * @throws IllegalArgumentException if any referenced entity does not exist
-     * @throws ConstraintViolationException if validation fails on the DTO
+     * @throws IllegalArgumentException if the player or any required nested entity is missing
+     * @throws ConstraintViolationException if post-update validation fails
      */
     @Transactional
     public PlayerDto updatePlayer(PlayerDto dto) {
@@ -187,27 +191,35 @@ public class PlayerService {
         existing.setOptionsid(op);
         existing.setMenuid(menu);
         if (validatedDto.selectedGame() != null) {
+            GameDto gameDto = validatedDto.selectedGame();
             Game existingGame =
                     gameRepository
-                            .findById(validatedDto.selectedGame().gameid())
+                            .findById(gameDto.gameid())
                             .orElseThrow(
                                     () ->
                                             ExceptionTools.INSTANCE
                                                     .logAndInstantiateIllegalArgument(
-                                                            "No selected game with selected player"
-                                                                    + " found."));
-            GameDto gameDto = validatedDto.selectedGame();
-            existingGame.getLevelid().setLevel(gameDto.levelidDto().level());
-            GridDto gridDto = gameDto.grididDto();
+                                                            "Game not found: " + gameDto.gameid()));
+            GameLevel gameLevel =
+                    gameLevelRepository
+                            .findByLevel(gameDto.levelidDto().level())
+                            .orElseThrow(
+                                    () ->
+                                            ExceptionTools.INSTANCE
+                                                    .logAndInstantiateIllegalArgument(
+                                                            "GameLevel not found for level: "
+                                                                    + gameDto.levelidDto()
+                                                                            .level()));
+            existingGame.setLevelid(gameLevel);
+            existingGame.setUpdatedat(gameDto.updatedat());
             Grid grid = existingGame.getGridid();
+            GridDto gridDto = gameDto.grididDto();
             grid.setDefaultgridvalue(gridDto.defaultgridvalue());
             grid.setGridvalue(gridDto.gridvalue());
             grid.setPossibilities(gridDto.possibilities());
-            existingGame.setUpdatedat(gameDto.updatedat());
         }
         Player saved = playerRepository.save(existing);
-        PlayerDto result = playerMapper.mapPlayerToDto(saved);
-        return jakartaValidator.validateOrThrow(result);
+        return jakartaValidator.validateOrThrow(playerMapper.mapPlayerToDto(saved));
     }
 
     /**
@@ -248,7 +260,8 @@ public class PlayerService {
      * <ul>
      *   <li>Validates source {@link PlayerDto} and its {@link GameDto}.
      *   <li>Duplicates configurations via {@link OptionsService} and {@link GridService}.
-     *   <li>Resolves existing {@link Menu}, {@link PlayerLanguage}, and {@link GameLevel} entities.
+     *   <li>Resolves existing {@link Menu} and {@link PlayerLanguage} by ID.
+     *   <li>Resolves the existing {@link GameLevel} by its business level value.
      *   <li>Constructs a new {@link Player} with initialized timestamps.
      *   <li>Persists the new {@link Player} and its associated {@link Game}.
      *   <li>Unselects the previous player.
@@ -306,16 +319,23 @@ public class PlayerService {
                                         "Grid"))
                         .playerid(newPlayer)
                         .levelid(
-                                findOrThrow(
-                                        gameLevelRepository,
-                                        currentGameDto.levelidDto().levelid(),
-                                        "GameLevel"))
+                                gameLevelRepository
+                                        .findByLevel(currentGameDto.levelidDto().level())
+                                        .orElseThrow(
+                                                () ->
+                                                        ExceptionTools.INSTANCE
+                                                                .logAndInstantiateIllegalArgument(
+                                                                        "GameLevel not found for"
+                                                                                + " level value: "
+                                                                                + currentGameDto
+                                                                                        .levelidDto()
+                                                                                        .level())))
                         .selected(true)
                         .createdat(now)
                         .updatedat(now)
                         .build();
         newPlayer.getGames().add(newGame);
-        unselectPlayer(currentPlayerDto.playerid());
+        updatePlayerSelection(currentPlayerDto.playerid(), false);
         jakartaValidator.validateOrThrow(
                 playerMapper.mapPlayerToDto(playerRepository.save(newPlayer)));
     }
@@ -345,32 +365,41 @@ public class PlayerService {
     }
 
     /**
-     * Marks the specified player as unselected and updates its timestamp.
+     * Internal utility to update player selection state and persist changes.
      *
-     * <p>The player is retrieved by ID and must exist; otherwise an {@link
-     * IllegalArgumentException} is thrown. The {@code selected} flag is set to {@code false}, the
-     * {@code updatedat} timestamp is refreshed, and the entity is persisted.
-     *
-     * <p>The persisted state is mapped to a {@link PlayerDto} and validated to ensure data
-     * integrity before transaction completion.
-     *
-     * @param playerId the identifier of the player to unselect
+     * @param playerId the identifier of the player to update
+     * @param selected the new selection state
      * @throws IllegalArgumentException if the player does not exist
-     * @throws jakarta.validation.ConstraintViolationException if validation of the updated player
-     *     fails
+     * @throws jakarta.validation.ConstraintViolationException if validation fails
      */
-    private void unselectPlayer(long playerId) {
-        Player existing =
+    private void updatePlayerSelection(long playerId, boolean selected) {
+        Player player =
                 playerRepository
                         .findById(playerId)
                         .orElseThrow(
                                 () ->
                                         ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                                                 "Player not found: " + playerId));
-        existing.setSelected(false);
-        existing.setUpdatedat(MyDateTime.INSTANCE.getCurrentInstant());
-        Player saved = playerRepository.save(existing);
-        PlayerDto dto = playerMapper.mapPlayerToDto(saved);
-        jakartaValidator.validateOrThrow(dto);
+        player.setSelected(selected);
+        player.setUpdatedat(MyDateTime.INSTANCE.getCurrentInstant());
+        Player saved = playerRepository.save(player);
+        jakartaValidator.validateOrThrow(playerMapper.mapPlayerToDto(saved));
+    }
+
+    /**
+     * Atomically switches the selected player status.
+     *
+     * <p>Ensures data consistency by unselecting the previous player and selecting the new one
+     * within a single database transaction.
+     *
+     * @param oldPlayerId the identifier of the player to be unselected
+     * @param newPlayerId the identifier of the player to be selected
+     * @throws IllegalArgumentException if either player is not found
+     * @throws jakarta.validation.ConstraintViolationException if validation fails
+     */
+    @Transactional
+    public void switchAndSelectNewPlayer(long oldPlayerId, long newPlayerId) {
+        updatePlayerSelection(oldPlayerId, false);
+        updatePlayerSelection(newPlayerId, true);
     }
 }

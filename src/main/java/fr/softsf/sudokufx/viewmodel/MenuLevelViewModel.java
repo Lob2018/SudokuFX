@@ -116,28 +116,32 @@ public class MenuLevelViewModel {
     /**
      * Returns the i18n key used for accessibility descriptions of a given difficulty level.
      *
-     * @param level the difficulty level
-     * @return the localization key string for accessibility description
+     * @param level the difficulty level, can be {@code null} to indicate no selection
+     * @return the localization key string for accessibility description, or an empty string if
+     *     {@code level} is {@code null}
      */
     public String getAccessibilityKeyForLevel(DifficultyLevel level) {
         return switch (level) {
             case EASY -> "menu.accessibility.button.easy";
             case MEDIUM -> "menu.accessibility.button.medium";
             case DIFFICULT -> "menu.accessibility.button.difficult";
+            case null -> "";
         };
     }
 
     /**
      * Returns the i18n key used for the display text of a given difficulty level.
      *
-     * @param level the difficulty level
-     * @return the localization key string for the level display text
+     * @param level the difficulty level, can be {@code null} to indicate no selection
+     * @return the localization key string for the level display text, or an empty string if {@code
+     *     level} is {@code null}
      */
     private String getLevelNameKey(DifficultyLevel level) {
         return switch (level) {
             case EASY -> "menu.maxi.button.easy.text";
             case MEDIUM -> "menu.maxi.button.medium.text";
             case DIFFICULT -> "menu.maxi.button.difficult.text";
+            case null -> "";
         };
     }
 
@@ -162,5 +166,13 @@ public class MenuLevelViewModel {
      */
     public void setPercentage(int value) {
         this.starsPercentage.set(value);
+    }
+
+    /**
+     * Clears the currently selected difficulty level, effectively resetting the UI selection state
+     * to a non-selected status.
+     */
+    public void clearSelectedLevel() {
+        selectedLevel.set(null);
     }
 }

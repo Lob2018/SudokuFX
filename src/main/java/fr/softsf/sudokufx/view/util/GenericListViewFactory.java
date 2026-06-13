@@ -164,7 +164,6 @@ public class GenericListViewFactory {
                     if (event.getCode() == KeyCode.ENTER || event.getCode() == KeyCode.SPACE) {
                         T selectedItem = listView.getSelectionModel().getSelectedItem();
                         if (selectedItem != null) {
-                            // TODO : viewmodel update
                             selectedProperty.setValue(selectedItem);
                             event.consume();
                         }

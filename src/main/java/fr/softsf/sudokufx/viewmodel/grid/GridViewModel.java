@@ -713,18 +713,20 @@ public class GridViewModel {
      * @param grillesCrees the generated grids and possibility percentage (must not be {@code null})
      * @throws NullPointerException if {@code level}, {@code grillesCrees}, or the selected game is
      *     {@code null}
+     * @throws IllegalArgumentException if the player or game cannot be found in the database
+     * @throws jakarta.validation.ConstraintViolationException if validation fails during update
      */
     private void persistNewGame(DifficultyLevel level, GrillesCrees grillesCrees) {
         Objects.requireNonNull(level, LEVEL_MUSTN_T_BE_NULL);
         Objects.requireNonNull(grillesCrees, "grillesCrees mustn't be null");
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
+        Objects.requireNonNull(
+                currentPlayer.selectedGame(), "currentPlayer.selectedGame() mustn't be null");
         String defaultGrid =
                 iGridConverter.intArrayToDefaultGridValue(grillesCrees.grilleAResoudre());
         String gridValue =
                 iGridConverter.listToGridValue(
                         iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()));
-        Objects.requireNonNull(
-                currentPlayer.selectedGame(), "currentPlayer.selectedGame() mustn't be null");
         GameLevelDto toSaveGameLevelDto =
                 currentPlayer.selectedGame().levelidDto().withLevel((byte) level.toGridNumber());
         GridDto toSaveGridDto =

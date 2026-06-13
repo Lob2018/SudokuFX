@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.repository;
 
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -19,4 +21,14 @@ import fr.softsf.sudokufx.model.GameLevel;
  * <p>The primary key of GameLevel is of type {@link Byte}.
  */
 @Repository
-public interface GameLevelRepository extends JpaRepository<GameLevel, Byte> {}
+public interface GameLevelRepository extends JpaRepository<GameLevel, Byte> {
+
+    /**
+     * Retrieves a {@link GameLevel} by its numerical level value.
+     *
+     * @param level the level value to retrieve
+     * @return an {@link Optional} containing the found {@link GameLevel}, or an empty {@link
+     *     Optional} if no such level exists
+     */
+    Optional<GameLevel> findByLevel(int level);
+}

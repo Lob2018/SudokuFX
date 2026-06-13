@@ -470,20 +470,20 @@ public final class MainView implements IMainView {
 
     /**
      * Initializes and binds all UI components of the options menu to the {@link
-     * MenuOptionsViewModel}. Loads saved options from the database and applies them to the
-     * corresponding UI controls.
+     * MenuOptionsViewModel}.
      *
      * <p>This method performs the following tasks:
      *
      * <ul>
      *   <li>Binds accessibility texts, tooltips, role descriptions, and labels for all options
      *       buttons.
-     *   <li>Synchronizes user interactions (color selection, opacity adjustment, mute toggle, etc.)
-     *       with the ViewModel.
-     *   <li>Loads and applies saved configuration settings to the UI controls, including background
-     *       color, background image, grid transparency, etc.
-     *   <li><strong>Configures reactive UI states: song clear button visibility and song selection
-     *       pseudo-class are bound to song availability state.</strong>
+     *   <li>Synchronizes user interactions (color selection, opacity, mute, etc.) with the
+     *       ViewModel using bidirectional bindings and listeners.
+     *   <li>Configures reactive UI states: clear song button visibility and pseudo-class styling
+     *       are dynamically bound to the song availability state.
+     *   <li>Performs the final ViewModel initialization to apply loaded configuration settings to
+     *       the UI controls.
+     *   <li>Configures the initial opacity mode based on the current persisted state.
      * </ul>
      */
     private void optionsMenuInitialization() {
@@ -528,8 +528,8 @@ public final class MainView implements IMainView {
                 .valueProperty()
                 .addListener(
                         (_, _, newColor) ->
-                                menuOptionsViewModel.applyAndPersistOptionsColor(
-                                        sudokuFX, newColor));
+                                menuOptionsViewModel.applyAndPersistIfNeededOptionsColor(
+                                        sudokuFX, newColor, true));
         bindingConfigurator.configureButton(
                 menuOptionsButtonOpacity,
                 null,
@@ -569,7 +569,19 @@ public final class MainView implements IMainView {
                 menuOptionsButtonSongClear, isSongNotBlank);
         bindingConfigurator.configurePseudoClassBinding(
                 menuOptionsButtonSong, isSongNotBlank, REDUCED_SONG_PSEUDO_SELECTED);
-        menuOptionsViewModel.init(sudokuFX, menuOptionsButtonColor);
+        menuOptionsViewModel.init(sudokuFX);
+        menuOptionsButtonColor
+                .valueProperty()
+                .bindBidirectional(menuOptionsViewModel.optionsColorProperty());
+        menuOptionsButtonColor
+                .valueProperty()
+                .addListener(
+                        (_, oldColor, newColor) -> {
+                            if (newColor != null && !newColor.equals(oldColor)) {
+                                menuOptionsViewModel.applyAndPersistIfNeededOptionsColor(
+                                        sudokuFX, newColor, true);
+                            }
+                        });
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
@@ -694,18 +706,16 @@ public final class MainView implements IMainView {
      * <p>This method sets up the following structural behaviors:
      *
      * <ul>
-     *   <li>Binds accessible texts, tooltips, and role descriptions for static and dynamic menu
-     *       buttons.
-     *   <li>Configures the player name input text field with bidirectional value binding and input
-     *       character filtering.
-     *   <li>Manages the new player creation state machine by handling edit mode transitions, focus
-     *       requests, and real-time validation status tracking.
-     *   <li>Registers keyboard and action triggers to commit data on ENTER or rollback changes on
-     *       ESCAPE.
-     *   <li>Synchronizes component focus states and business logic validation statuses with custom
-     *       CSS pseudo-classes.
-     *   <li>Delegates the multi-column player layout initialization to the structural list view
-     *       factory.
+     *   <li>Binds accessibility texts, tooltips, role descriptions, and labels for all buttons.
+     *   <li>Configures the player name input text field with bidirectional binding, character
+     *       filtering, and real-time validation.
+     *   <li>Manages the creation state machine, handling edit mode transitions, focus management,
+     *       and commit/rollback triggers (ENTER/ESCAPE).
+     *   <li>Synchronizes component focus and business logic validation statuses with custom CSS
+     *       pseudo-classes.
+     *   <li>Registers reactive observers to synchronize the UI automatically when the active player
+     *       is switched.
+     *   <li>Delegates the multi-column layout initialization to the structural list view factory.
      * </ul>
      */
     private void playerMenuInitialization() {
@@ -778,7 +788,7 @@ public final class MainView implements IMainView {
                                         menuPlayerViewModel.playerNameStatusProperty().get());
                             }
                         });
-        menuPlayerButtonNewText.setOnAction(event -> menuPlayerViewModel.commitNewPlayerName());
+        menuPlayerButtonNewText.setOnAction(event -> menuPlayerViewModel.createNewPlayerByName());
         menuPlayerButtonNewText
                 .focusedProperty()
                 .addListener(
@@ -812,8 +822,28 @@ public final class MainView implements IMainView {
                                 menuPlayerViewModel.validatePlayerName(newText);
                             }
                         });
+        menuPlayerViewModel
+                .playerSwitchedSignalProperty()
+                .addListener(
+                        (obs, old, newValue) ->
+                                Platform.runLater(this::synchronizeUIAfterPlayerSwitch));
         genericListViewFactory.configurePlayerListView(
                 menuPlayerListView, menuPlayerClipListView, menuPlayerViewModel);
+    }
+
+    /**
+     * Synchronizes the user interface with the current player's profile data.
+     *
+     * <p>Updates the application locale, restores the grid level state, applies specific player
+     * options (such as background and colors), and adjusts the grid opacity mode based on the new
+     * player's configuration.
+     */
+    private void synchronizeUIAfterPlayerSwitch() {
+        PlayerDto currentPlayer = menuPlayerViewModel.selectedPlayerProperty().get();
+        I18n.INSTANCE.setLocaleBundle(currentPlayer.playerlanguageidDto().iso());
+        restoreCurrentGridLevelFromModel();
+        menuOptionsViewModel.restoreCurrentOptions(sudokuFX);
+        applyOpaqueMode(currentPlayer.optionsidDto().opaque());
     }
 
     /**
@@ -1113,8 +1143,8 @@ public final class MainView implements IMainView {
                 .chooseFile(primaryStage, FileChooserService.FileType.IMAGE)
                 .ifPresent(
                         file ->
-                                menuOptionsViewModel.applyAndPersistBackgroundImage(
-                                        file, sudokuFX));
+                                menuOptionsViewModel.applyAndPersistIfNeededBackgroundImage(
+                                        file, sudokuFX, true));
     }
 
     /**
@@ -1221,18 +1251,23 @@ public final class MainView implements IMainView {
     }
 
     /**
-     * Loads the current user-entered grid from the model and updates the selected level and
-     * completion percentage in the menu.
+     * Synchronizes the menu UI with the current game model state.
      *
-     * <p>Used to synchronize the ViewModel with the latest grid state stored in the model.
+     * <p>Resets the grid view and level selection, then retrieves the active grid from the model to
+     * update the UI with the corresponding level and completion percentage. Finally, synchronizes
+     * the grid opacity mode to ensure visual consistency.
      */
     private void restoreCurrentGridLevelFromModel() {
+        gridViewModel.clearGrid();
+        menuSolveViewModel.setSolvePercentage(MAX_STARS_PERCENTAGE);
+        menuLevelViewModel.clearSelectedLevel();
         gridViewModel
                 .getCurrentGridFromModel()
                 .ifPresent(
                         currentGrid ->
                                 menuLevelViewModel.updateSelectedLevel(
                                         currentGrid.level(), currentGrid.percentage()));
+        applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 
     /**

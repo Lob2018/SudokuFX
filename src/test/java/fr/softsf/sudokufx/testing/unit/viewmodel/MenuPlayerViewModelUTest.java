@@ -12,6 +12,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.function.Supplier;
 import javafx.beans.binding.StringBinding;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.ObservableList;
 
 import org.junit.jupiter.api.AfterEach;
@@ -28,6 +30,7 @@ import fr.softsf.sudokufx.dto.PlayerLanguageDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
 import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
@@ -203,7 +206,7 @@ class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @Test
-    void givenNewSelectedPlayer_whenChanged_thenBindingsUpdate() {
+    void givenNewSelectedPlayer_whenChanged_thenBindingsUpdate() throws Exception {
         PlayerDto newPlayer =
                 new PlayerDto(
                         999L,
@@ -212,11 +215,15 @@ class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
                         new MenuDto((byte) 2, (byte) 2),
                         null,
                         "NewTestPlayer",
-                        false,
+                        true,
                         Instant.now(),
                         Instant.now());
-        playerStateHolder.currentPlayerProperty().set(newPlayer);
-        String bindingValue = viewModel.playerAccessibleTextProperty().get();
+        PlayerStateHolder mockStateHolder = mock(PlayerStateHolder.class);
+        ObjectProperty<PlayerDto> prop = new SimpleObjectProperty<>(newPlayer);
+        when(mockStateHolder.currentPlayerProperty()).thenReturn(prop);
+        when(mockStateHolder.getCurrentPlayer()).thenReturn(newPlayer);
+        MenuPlayerViewModel testVm = new MenuPlayerViewModel(mockStateHolder, playerServiceMock);
+        String bindingValue = testVm.playerAccessibleTextProperty().get();
         assertTrue(bindingValue.contains("NewTestPlayer"));
     }
 }

@@ -51,12 +51,17 @@ public class AsyncFileProcessorService {
     /**
      * Executes a file-processing task asynchronously with spinner and toast feedback.
      *
+     * <p>Configures a daemon thread to handle the background processing, manages UI indicators
+     * (spinner and toaster), and returns the {@link Task} instance to allow for lifecycle control,
+     * such as manual cancellation.
+     *
      * @param <T> the result type
      * @param selectedFile the file to process; must not be null
      * @param taskFunction function to process the file and return a result; must not be null
      * @param onSuccess callback executed on the UI thread upon success; must not be null
+     * @return the {@link Task} instance managing the asynchronous execution
      */
-    public <T> void processFileAsync(
+    public <T> javafx.concurrent.Task<T> processFileAsync(
             File selectedFile, Function<File, T> taskFunction, Consumer<T> onSuccess) {
         Objects.requireNonNull(selectedFile, "selectedFile must not be null");
         Objects.requireNonNull(taskFunction, "taskFunction must not be null");
@@ -68,6 +73,7 @@ public class AsyncFileProcessorService {
         Thread thread = new Thread(task, "AsyncFileProcessorThread");
         thread.setDaemon(true);
         thread.start();
+        return task;
     }
 
     /**

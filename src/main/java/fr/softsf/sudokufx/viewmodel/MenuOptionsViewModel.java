@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.text.MessageFormat;
 import java.util.Objects;
@@ -14,10 +13,12 @@ import java.util.function.Supplier;
 import javafx.beans.Observable;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
+import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.ReadOnlyBooleanWrapper;
 import javafx.beans.property.ReadOnlyStringWrapper;
-import javafx.scene.control.ColorPicker;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.concurrent.Task;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
@@ -35,7 +36,6 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.AudioUtils;
 import fr.softsf.sudokufx.common.util.ImageMeta;
 import fr.softsf.sudokufx.common.util.ImageUtils;
-import fr.softsf.sudokufx.common.util.PathValidator;
 import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
@@ -118,6 +118,8 @@ public class MenuOptionsViewModel {
 
     private final ReadOnlyStringWrapper songProperty = new ReadOnlyStringWrapper("");
     private final ReadOnlyBooleanWrapper songIsBlankProperty = new ReadOnlyBooleanWrapper(true);
+    private final ObjectProperty<Color> optionsColorProperty =
+            new SimpleObjectProperty<>(Color.WHITE);
     private final StringBinding optionsSongAccessibleText;
     private final StringBinding optionsSongTooltip;
     private final StringBinding optionsSongRoleDescription;
@@ -128,6 +130,8 @@ public class MenuOptionsViewModel {
     private final StringBinding optionsClearSongTooltip;
 
     private boolean initialized = false;
+
+    private Task<?> currentTask;
 
     /**
      * Initializes the MenuOptionsViewModel with necessary infrastructure and reactive bindings.
@@ -213,6 +217,10 @@ public class MenuOptionsViewModel {
                         ROLE_SUBMENU_OPTION,
                         songProperty);
         optionsClearSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+    }
+
+    public ObjectProperty<Color> optionsColorProperty() {
+        return optionsColorProperty;
     }
 
     /**
@@ -777,29 +785,37 @@ public class MenuOptionsViewModel {
      * check the initialization state.
      *
      * @param sudokuFX the GridPane to apply background settings; must not be {@code null}
-     * @param menuOptionsButtonColor the ColorPicker to synchronize with the current color; must not
-     *     be {@code null}
-     * @throws NullPointerException if any of the parameters are {@code null}
+     * @throws NullPointerException if {@code sudokuFX} is {@code null}
      */
-    public void init(GridPane sudokuFX, ColorPicker menuOptionsButtonColor) {
+    public void init(GridPane sudokuFX) {
         Objects.requireNonNull(sudokuFX, "sudokuFX mustn't be null");
-        Objects.requireNonNull(menuOptionsButtonColor, "menuOptionsButtonColor mustn't be null");
-        OptionsDto optionsDto = playerStateHolder.currentPlayerProperty().get().optionsidDto();
-        initialized = true;
-        if (optionsDto.imagepath().isEmpty()) {
-            setColorFromModel(sudokuFX, menuOptionsButtonColor, optionsDto.hexcolor());
-        } else {
-            applyAndPersistBackgroundImage(
-                    PathValidator.INSTANCE.validateExists(Path.of(optionsDto.imagepath())),
-                    sudokuFX);
+        OptionsDto optionsDto = playerStateHolder.getCurrentPlayer().optionsidDto();
+        this.initialized = true;
+        if (StringUtils.isNotBlank(optionsDto.imagepath())) {
+            File file = new File(optionsDto.imagepath());
+            if (file.exists()) {
+                applyAndPersistIfNeededBackgroundImage(file, sudokuFX, false);
+            }
+        } else if (StringUtils.isNotBlank(optionsDto.hexcolor())) {
+            Color color = Color.web(optionsDto.hexcolor());
+            optionsColorProperty.set(color);
+            sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
         }
         gridOpacityProperty.set(optionsDto.opaque());
         audioService.setMuted(optionsDto.muted());
         muteProperty.set(optionsDto.muted());
-        if (optionsDto.songpath().isEmpty()) {
+        if (StringUtils.isBlank(optionsDto.songpath())) {
             return;
         }
-        String rawPath = optionsDto.songpath();
+        updateSongNameFromPath(optionsDto.songpath());
+    }
+
+    /**
+     * Updates the song display name by extracting the filename from the provided path.
+     *
+     * @param rawPath the full file path string; may be blank or null
+     */
+    private void updateSongNameFromPath(String rawPath) {
         var fileName = StringUtils.isBlank(rawPath) ? null : Paths.get(rawPath).getFileName();
         songProperty.set(fileName == null ? "" : fileName.toString());
     }
@@ -940,60 +956,41 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Sets the background color of the GridPane and updates the ColorPicker based on the color
-     * value retrieved from the model.
+     * Applies the given color as the background of the specified {@link GridPane}. Optionally
+     * persists the color in the current player's options.
      *
-     * @param sudokuFX the GridPane to update (must not be null)
-     * @param menuOptionsButtonColor the ColorPicker to update (must not be null)
-     * @param colorValueFromModel the hex color string from the model (must not be null or blank,
-     *     e.g., "99b3ffcd")
-     * @throws NullPointerException if any parameter is null
-     * @throws IllegalArgumentException if {@code colorValueFromModel} is blank
-     * @throws NumberFormatException if {@code colorValueFromModel} is not a valid hex number or too
-     *     large for an int
-     */
-    private void setColorFromModel(
-            GridPane sudokuFX, ColorPicker menuOptionsButtonColor, String colorValueFromModel) {
-        Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
-        Objects.requireNonNull(menuOptionsButtonColor, "menuOptionsButtonColor must not be null");
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
-                colorValueFromModel, "colorValueFromModel must not be null or blank");
-        int colorInt = Integer.parseUnsignedInt(colorValueFromModel, HEX_RADIX);
-        Color color = imageUtils.intToColor(colorInt);
-        menuOptionsButtonColor.setValue(color);
-        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
-    }
-
-    /**
-     * Applies the given color as the background of the specified {@link GridPane} and persists it
-     * in the current player's options if it has changed.
-     *
-     * <p>The color is converted to a hex string including alpha (RRGGBBAA) and stored in a copy of
-     * the current {@link OptionsDto} with an empty image path. If the color is identical to the
-     * currently persisted value, no database update occurs.
-     *
-     * <p>On successful persistence, the GridPane background is updated. On failure, the exception
-     * is logged and an error toast is shown to the user.
+     * <p>The color is converted to a hex string (RRGGBBAA). If persistence is enabled, the update
+     * only occurs if the color differs from the currently stored value.
      *
      * @param sudokuFX the {@link GridPane} to update; must not be null
-     * @param color the color to apply and persist; must not be null
+     * @param color the color to apply; must not be null
+     * @param shouldPersist true to save to database, false for UI update only
      * @throws NullPointerException if {@code sudokuFX} or {@code color} is null
      */
-    public void applyAndPersistOptionsColor(GridPane sudokuFX, Color color) {
+    public void applyAndPersistIfNeededOptionsColor(
+            GridPane sudokuFX, Color color, boolean shouldPersist) {
         checkInitialized();
+        if (currentTask != null && currentTask.isRunning()) {
+            currentTask.cancel();
+        }
         Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
         Objects.requireNonNull(color, "color must not be null");
         String hexColor = color.toString().substring(HEXCOLOR_BEGIN_INDEX, HEXCOLOR_END_INDEX);
+        sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
+        if (!optionsColorProperty.get().equals(color)) {
+            optionsColorProperty.set(color);
+        }
+        if (!shouldPersist) {
+            return;
+        }
         OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
         if (hexColor.equals(currentOptions.hexcolor())) {
-            sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
             return;
         }
         OptionsDto toSaveOptions = currentOptions.withImagepath("").withHexcolor(hexColor);
         try {
             optionsService.updateOptions(toSaveOptions);
             playerStateHolder.refreshCurrentPlayer();
-            sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
         } catch (Exception e) {
             LOG.error("██ Exception ApplyAndPersistOptionsColor failed: {}", e.getMessage(), e);
             toasterService.showError(
@@ -1003,18 +1000,23 @@ public class MenuOptionsViewModel {
     }
 
     /**
-     * Applies a background image to the specified {@link GridPane} and persists its path in the
-     * current player's options.
+     * Applies a background image to the specified {@link GridPane}.
      *
      * <p>Validates the file before starting an asynchronous task. On success, updates the
-     * background and persists the path. All UI feedback and persistence are managed through
-     * thread-safe services.
+     * background. Persistence of the image path occurs only if {@code shouldPersist} is true. All
+     * UI feedback and persistence are managed through thread-safe services.
      *
      * @param selectedFile the image file to load; may be null
      * @param sudokuFX the {@link GridPane} to update; must not be null
+     * @param shouldPersist true to save the file path to the player's options, false to update UI
+     *     only
      */
-    public void applyAndPersistBackgroundImage(File selectedFile, GridPane sudokuFX) {
+    public void applyAndPersistIfNeededBackgroundImage(
+            File selectedFile, GridPane sudokuFX, boolean shouldPersist) {
         checkInitialized();
+        if (currentTask != null && currentTask.isRunning()) {
+            currentTask.cancel();
+        }
         Objects.requireNonNull(sudokuFX, SUDOKU_FX_MUST_NOT_BE_NULL);
         if (selectedFile == null
                 || !selectedFile.exists()
@@ -1026,23 +1028,26 @@ public class MenuOptionsViewModel {
             toasterService.showError(errorMessage, "");
             return;
         }
-        asyncFileProcessorService.processFileAsync(
-                selectedFile,
-                file -> {
-                    ImageMeta meta = imageUtils.getImageMeta(file);
-                    Image resizedImage =
-                            new Image(
-                                    file.toURI().toString(),
-                                    meta.width() * meta.scaleFactor(),
-                                    meta.height() * meta.scaleFactor(),
-                                    true,
-                                    true);
-                    return imageUtils.createBackgroundImage(resizedImage);
-                },
-                backgroundImage -> {
-                    sudokuFX.setBackground(new Background(backgroundImage));
-                    persistImagePath(selectedFile.getAbsolutePath());
-                });
+        currentTask =
+                asyncFileProcessorService.processFileAsync(
+                        selectedFile,
+                        file -> {
+                            ImageMeta meta = imageUtils.getImageMeta(file);
+                            Image resizedImage =
+                                    new Image(
+                                            file.toURI().toString(),
+                                            meta.width() * meta.scaleFactor(),
+                                            meta.height() * meta.scaleFactor(),
+                                            true,
+                                            true);
+                            return imageUtils.createBackgroundImage(resizedImage);
+                        },
+                        backgroundImage -> {
+                            sudokuFX.setBackground(new Background(backgroundImage));
+                            if (shouldPersist) {
+                                persistImagePath(selectedFile.getAbsolutePath());
+                            }
+                        });
     }
 
     /**
@@ -1077,12 +1082,12 @@ public class MenuOptionsViewModel {
 
     /**
      * Checks whether the {@link MenuOptionsViewModel} has been initialized via {@link
-     * #init(GridPane, ColorPicker)}.
+     * #init(GridPane)}.
      *
      * <p>If the menu options have not been initialized, this method throws an exception to prevent
      * operations on an uninitialized state.
      *
-     * @throws IllegalStateException if {@link #init(GridPane, ColorPicker)} has not been called
+     * @throws IllegalStateException if {@link #init(GridPane)} has not been called
      */
     private void checkInitialized() {
         if (initialized) {
@@ -1090,5 +1095,27 @@ public class MenuOptionsViewModel {
         }
         throw ExceptionTools.INSTANCE.logAndInstantiateIllegalState(
                 "MenuOptionsViewModel not initialized. Call init(...) first.");
+    }
+
+    public void restoreCurrentOptions(GridPane sudokuFX) {
+        OptionsDto options = playerStateHolder.getCurrentPlayer().optionsidDto();
+        applyOptionsToUI(options, sudokuFX);
+    }
+
+    /**
+     * Applique les options visuelles au composant sudokuFX. Méthode factorisée : ne contient AUCUN
+     * appel de persistance.
+     */
+    private void applyOptionsToUI(OptionsDto options, GridPane sudokuFX) {
+        if (StringUtils.isNotBlank(options.hexcolor())) {
+            optionsColorProperty.set(Color.web(options.hexcolor()));
+        }
+        if (StringUtils.isNotBlank(options.imagepath())) {
+            applyAndPersistIfNeededBackgroundImage(new File(options.imagepath()), sudokuFX, false);
+        } else if (StringUtils.isNotBlank(options.hexcolor())) {
+            applyAndPersistIfNeededOptionsColor(sudokuFX, Color.web(options.hexcolor()), false);
+        }
+        muteProperty.set(options.muted());
+        updateSongNameFromPath(options.songpath());
     }
 }
