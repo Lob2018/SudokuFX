@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.view.component.list;
 
 import java.text.MessageFormat;
 import java.util.Objects;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import javafx.beans.binding.StringBinding;
@@ -23,6 +24,7 @@ import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.view.component.MyAlert;
 
 /**
@@ -53,6 +55,8 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
     private final Supplier<String> confirmationTitleSupplier;
     private final Supplier<String> confirmationMessageSupplier;
 
+    private final Consumer<T> onRemoveAction;
+
     /**
      * Constructs a new GenericDtoListCell.
      *
@@ -78,7 +82,8 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
             StringBinding buttonAccessibleTextBinding,
             StringBinding confirmationTitleBinding,
             StringBinding confirmationMessageBinding,
-            Function<T, String> displayTextFunction) {
+            Function<T, String> displayTextFunction,
+            Consumer<T> onRemoveAction) {
         this.listView = Objects.requireNonNull(listView);
         this.buttonAccessibleTextSupplier =
                 () -> Objects.requireNonNull(buttonAccessibleTextBinding).get();
@@ -87,6 +92,7 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
         this.confirmationMessageSupplier =
                 () -> Objects.requireNonNull(confirmationMessageBinding).get();
         this.displayTextFunction = Objects.requireNonNull(displayTextFunction);
+        this.onRemoveAction = Objects.requireNonNull(onRemoveAction);
         HBox.setHgrow(label, Priority.ALWAYS);
         hBox.setFocusTraversable(false);
         label.setFocusTraversable(true);
@@ -101,8 +107,11 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
     /**
      * Updates the cell's content.
      *
-     * <p>If the item is not null, sets the label text and button behavior. If empty, clears the
-     * cell's content.
+     * <p>If the item is not null, sets the label text and button behavior. If empty or null, clears
+     * the cell's content and resets component visibility.
+     *
+     * <p>For {@link PlayerDto} items with the name "—", the delete button is hidden and removed
+     * from the layout to prevent deletion of the anonymous player.
      *
      * @param item the item to display
      * @param empty whether this cell is empty
@@ -121,26 +130,33 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
             String displayText = displayTextFunction.apply(item);
             label.setText(displayText);
             setGraphic(hBox);
-            setAccessibleText(displayText);
-            String buttonTextFormatted =
-                    MessageFormat.format(buttonAccessibleTextSupplier.get(), displayText);
-            button.setAccessibleText(buttonTextFormatted);
-            Tooltip tooltip = button.getTooltip();
-            if (tooltip == null) {
-                tooltip = new Tooltip();
-                button.setTooltip(tooltip);
+            boolean isAnonymous =
+                    (item instanceof PlayerDto playerDto) && "—".equals(playerDto.name());
+            button.setVisible(!isAnonymous);
+            button.setManaged(!isAnonymous);
+            if (!isAnonymous) {
+                setAccessibleText(displayText);
+                String buttonTextFormatted =
+                        MessageFormat.format(buttonAccessibleTextSupplier.get(), displayText);
+                button.setAccessibleText(buttonTextFormatted);
+                Tooltip tooltip = button.getTooltip();
+                if (tooltip == null) {
+                    tooltip = new Tooltip();
+                    button.setTooltip(tooltip);
+                }
+                tooltip.setText(buttonTextFormatted);
+                button.setOnAction(
+                        event -> {
+                            T currentItem = getItem();
+                            if (currentItem != null) {
+                                confirmAndRemoveItem(currentItem, displayText);
+                            } else {
+                                LOG.warn(
+                                        "getItem() returned null in GenericDtoListCell button"
+                                                + " action.");
+                            }
+                        });
             }
-            tooltip.setText(buttonTextFormatted);
-            button.setOnAction(
-                    event -> {
-                        T currentItem = getItem();
-                        if (currentItem != null) {
-                            confirmAndRemoveItem(currentItem, displayText);
-                        } else {
-                            LOG.warn(
-                                    "getItem() returned null in GenericDtoListCell button action.");
-                        }
-                    });
         }
     }
 
@@ -161,6 +177,7 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
                 .ifPresent(
                         response -> {
                             if ("OK".equals(response.getText())) {
+                                onRemoveAction.accept(item);
                                 listView.getItems().remove(item);
                             }
                         });

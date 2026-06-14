@@ -21,6 +21,7 @@ import fr.softsf.sudokufx.common.exception.JakartaValidator;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.dto.GameDto;
+import fr.softsf.sudokufx.dto.GameLevelDto;
 import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.model.Game;
@@ -30,7 +31,6 @@ import fr.softsf.sudokufx.model.Menu;
 import fr.softsf.sudokufx.model.Options;
 import fr.softsf.sudokufx.model.Player;
 import fr.softsf.sudokufx.model.PlayerLanguage;
-import fr.softsf.sudokufx.repository.GameLevelRepository;
 import fr.softsf.sudokufx.repository.GameRepository;
 import fr.softsf.sudokufx.repository.GridRepository;
 import fr.softsf.sudokufx.repository.MenuRepository;
@@ -67,7 +67,7 @@ public class PlayerService {
     private final MenuRepository menuRepository;
     private final GameRepository gameRepository;
     private final GridRepository gridRepository;
-    private final GameLevelRepository gameLevelRepository;
+    private final GameLevelService gameLevelService;
     private final IPlayerMapper playerMapper;
     private final OptionsService optionsService;
     private final GridService gridService;
@@ -84,10 +84,10 @@ public class PlayerService {
      * @param menuRepository the repository for {@link Menu} entities
      * @param gameRepository the repository for {@link Game} entities
      * @param gridRepository the repository for {@link Grid} entities
-     * @param gameLevelRepository the repository for {@link GameLevel} entities
      * @param playerMapper the mapper used to convert {@link Player} entities to {@link PlayerDto}
      * @param optionsService the service providing {@link Options} duplication logic
      * @param gridService the service providing {@link Grid} duplication logic
+     * @param gameLevelService the service providing {@link GameLevel} duplication logic
      * @param jakartaValidator the validator used to ensure data integrity of processed DTOs
      */
     public PlayerService(
@@ -97,10 +97,10 @@ public class PlayerService {
             MenuRepository menuRepository,
             GameRepository gameRepository,
             GridRepository gridRepository,
-            GameLevelRepository gameLevelRepository,
             IPlayerMapper playerMapper,
             OptionsService optionsService,
             GridService gridService,
+            GameLevelService gameLevelService,
             JakartaValidator jakartaValidator) {
         this.playerRepository = playerRepository;
         this.playerLanguageRepository = playerLanguageRepository;
@@ -108,10 +108,10 @@ public class PlayerService {
         this.menuRepository = menuRepository;
         this.gameRepository = gameRepository;
         this.gridRepository = gridRepository;
-        this.gameLevelRepository = gameLevelRepository;
         this.playerMapper = playerMapper;
         this.optionsService = optionsService;
         this.gridService = gridService;
+        this.gameLevelService = gameLevelService;
         this.jakartaValidator = jakartaValidator;
     }
 
@@ -200,16 +200,7 @@ public class PlayerService {
                                             ExceptionTools.INSTANCE
                                                     .logAndInstantiateIllegalArgument(
                                                             "Game not found: " + gameDto.gameid()));
-            GameLevel gameLevel =
-                    gameLevelRepository
-                            .findByLevel(gameDto.levelidDto().level())
-                            .orElseThrow(
-                                    () ->
-                                            ExceptionTools.INSTANCE
-                                                    .logAndInstantiateIllegalArgument(
-                                                            "GameLevel not found for level: "
-                                                                    + gameDto.levelidDto()
-                                                                            .level()));
+            GameLevel gameLevel = gameLevelService.findByLevelOrThrow(gameDto.levelidDto().level());
             existingGame.setLevelid(gameLevel);
             existingGame.setUpdatedat(gameDto.updatedat());
             Grid grid = existingGame.getGridid();
@@ -308,6 +299,9 @@ public class PlayerService {
                         .createdat(now)
                         .updatedat(now)
                         .build();
+        GameLevelDto gameLevelDto =
+                jakartaValidator.validateOrThrow(currentPlayerDto.selectedGame().levelidDto());
+        GameLevel gameLevel = gameLevelService.findByLevelOrThrow(gameLevelDto.level());
         Game newGame =
                 Game.builder()
                         .gridid(
@@ -318,18 +312,7 @@ public class PlayerService {
                                                 .gridid(),
                                         "Grid"))
                         .playerid(newPlayer)
-                        .levelid(
-                                gameLevelRepository
-                                        .findByLevel(currentGameDto.levelidDto().level())
-                                        .orElseThrow(
-                                                () ->
-                                                        ExceptionTools.INSTANCE
-                                                                .logAndInstantiateIllegalArgument(
-                                                                        "GameLevel not found for"
-                                                                                + " level value: "
-                                                                                + currentGameDto
-                                                                                        .levelidDto()
-                                                                                        .level())))
+                        .levelid(gameLevel)
                         .selected(true)
                         .createdat(now)
                         .updatedat(now)
@@ -401,5 +384,31 @@ public class PlayerService {
     public void switchAndSelectNewPlayer(long oldPlayerId, long newPlayerId) {
         updatePlayerSelection(oldPlayerId, false);
         updatePlayerSelection(newPlayerId, true);
+    }
+
+    @Transactional
+    public void deletePlayer(long playerIdToDelete) {
+        Player playerToDelete =
+                playerRepository
+                        .findById(playerIdToDelete)
+                        .orElseThrow(
+                                () ->
+                                        ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                                                "Player not found: " + playerIdToDelete));
+        if ("—".equals(playerToDelete.getName())) {
+            return;
+        }
+        playerRepository.delete(playerToDelete);
+        if (playerToDelete.getSelected()) {
+            Player anonymousPlayer =
+                    playerRepository
+                            .findByName("—")
+                            .orElseThrow(
+                                    () ->
+                                            ExceptionTools.INSTANCE
+                                                    .logAndInstantiateIllegalArgument(
+                                                            "Anonymous player not found"));
+            updatePlayerSelection(anonymousPlayer.getPlayerid(), true);
+        }
     }
 }

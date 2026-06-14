@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -72,4 +73,12 @@ public interface PlayerRepository extends JpaRepository<Player, Long> {
                     + "join fetch p.playerlanguageid "
                     + "where p.selected = false and g.selected = true")
     List<Player> findAllUnselectedWithSelectedGame(Sort sort);
+
+    /**
+     * Finds a player by their exact name.
+     *
+     * @param name the name of the player
+     * @return an Optional containing the player if found, or empty otherwise
+     */
+    Optional<Player> findByName(String name);
 }

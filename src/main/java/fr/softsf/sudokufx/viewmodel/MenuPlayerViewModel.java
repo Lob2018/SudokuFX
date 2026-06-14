@@ -498,4 +498,11 @@ public class MenuPlayerViewModel {
         }
         return null;
     }
+
+    public void deletePlayer(PlayerDto playerDto) {
+        playerService.deletePlayer(playerDto.playerid());
+        playerStateHolder.refreshCurrentPlayer();
+        playerSwitchedSignal.set(!playerSwitchedSignal.get());
+        loadPlayers();
+    }
 }

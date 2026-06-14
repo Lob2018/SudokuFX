@@ -73,8 +73,9 @@ public class Player {
 
     /** Games played by the player (Parent owner). */
     @OneToMany(
-            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, mappedBy = "playerid", orphanRemoval = true
-    )
+            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE},
+            mappedBy = "playerid",
+            orphanRemoval = true)
     private Set<Game> games = new LinkedHashSet<>();
 
     /** Name of the player. */

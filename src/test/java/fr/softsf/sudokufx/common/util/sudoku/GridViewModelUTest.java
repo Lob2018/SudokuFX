@@ -22,6 +22,7 @@ import org.testfx.framework.junit5.ApplicationExtension;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
+import fr.softsf.sudokufx.common.interfaces.mapper.IGameLevelMapper;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
@@ -46,6 +47,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
     private MenuSolveViewModel menuSolveViewModel;
     private ToasterService toasterServiceMock;
     private SpinnerService spinnerServiceMock;
+    private IGameLevelMapper gameLevelMapperMock;
 
     @BeforeEach
     void setUp() {
@@ -56,6 +58,7 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
         toasterServiceMock = mock(ToasterService.class);
         spinnerServiceMock = mock(SpinnerService.class);
         menuSolveViewModel = mock(MenuSolveViewModel.class);
+        gameLevelMapperMock = mock(IGameLevelMapper.class);
         viewModel =
                 new GridViewModel(
                         new GridMaster(validatorMock),
@@ -64,6 +67,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
+                        gameLevelServiceMock,
+                        gameLevelMapperMock,
                         new GridConverter(),
                         toasterServiceMock,
                         spinnerServiceMock);
@@ -158,6 +163,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
+                        gameLevelServiceMock,
+                        gameLevelMapperMock,
                         new GridConverter(),
                         toasterServiceMock,
                         spinnerServiceMock);
@@ -211,6 +218,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
+                        gameLevelServiceMock,
+                        gameLevelMapperMock,
                         new GridConverter(),
                         toasterServiceMock,
                         spinnerServiceMock);
@@ -239,6 +248,8 @@ class GridViewModelUTest extends AbstractPlayerStateTest {
                         new AudioService(),
                         playerStateHolder,
                         playerServiceMock,
+                        gameLevelServiceMock,
+                        gameLevelMapperMock,
                         new GridConverter(),
                         toasterServiceMock,
                         spinnerServiceMock);

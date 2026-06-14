@@ -70,7 +70,8 @@ public class GenericListViewFactory {
                                 viewModel.cellButtonAccessibleTextProperty(),
                                 viewModel.cellConfirmationTitleProperty(),
                                 viewModel.cellConfirmationMessageProperty(),
-                                PlayerDto::name));
+                                PlayerDto::name,
+                                viewModel::deletePlayer));
         setupBidirectionalSelection(listView, viewModel.selectedPlayerProperty());
         Platform.runLater(
                 () -> {
@@ -112,7 +113,8 @@ public class GenericListViewFactory {
                                         return "";
                                     }
                                     return MyDateTime.INSTANCE.getFormatted(gameDto.updatedat());
-                                }));
+                                },
+                                viewModel::deleteGame));
         setupBidirectionalSelection(listView, viewModel.selectedBackupProperty());
         Platform.runLater(
                 () -> {

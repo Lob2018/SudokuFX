@@ -12,6 +12,7 @@ import org.junit.jupiter.api.*;
 import org.mockito.MockitoAnnotations;
 
 import fr.softsf.sudokufx.dto.*;
+import fr.softsf.sudokufx.service.business.GameLevelService;
 import fr.softsf.sudokufx.service.business.PlayerService;
 
 import static org.mockito.Mockito.*;
@@ -30,6 +31,8 @@ public abstract class AbstractPlayerStateTest {
     /** Mocked PlayerService shared across test cases. */
     protected PlayerService playerServiceMock;
 
+    protected GameLevelService gameLevelServiceMock;
+
     /** Real PlayerStateHolder using the mocked PlayerService — JavaFX properties remain intact. */
     protected PlayerStateHolder playerStateHolder;
 
@@ -43,6 +46,7 @@ public abstract class AbstractPlayerStateTest {
     void setupPlayerStateHolder() {
         mocks = MockitoAnnotations.openMocks(this);
         playerServiceMock = mock(PlayerService.class);
+        gameLevelServiceMock = mock(GameLevelService.class);
         defaultPlayer = createDefaultPlayer();
         when(playerServiceMock.getPlayer()).thenReturn(defaultPlayer);
         playerStateHolder = new TestablePlayerStateHolder(playerServiceMock);

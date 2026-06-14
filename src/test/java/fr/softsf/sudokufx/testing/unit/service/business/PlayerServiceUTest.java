@@ -18,6 +18,7 @@ import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.dto.*;
 import fr.softsf.sudokufx.model.*;
 import fr.softsf.sudokufx.repository.*;
+import fr.softsf.sudokufx.service.business.GameLevelService;
 import fr.softsf.sudokufx.service.business.GridService;
 import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.business.PlayerService;
@@ -34,7 +35,6 @@ class PlayerServiceUTest {
     private MenuRepository menuRepository;
     private GameRepository gameRepository;
     private GridRepository gridRepository;
-    private GameLevelRepository gameLevelRepository;
 
     private IPlayerMapper playerMapper;
     private IGridMapper gridMapper;
@@ -42,6 +42,7 @@ class PlayerServiceUTest {
     private PlayerService playerService;
     private OptionsService optionsService;
     private GridService gridService;
+    private GameLevelService gameLevelService;
 
     @BeforeEach
     void setUp() {
@@ -51,7 +52,6 @@ class PlayerServiceUTest {
         menuRepository = mock(MenuRepository.class);
         gameRepository = mock(GameRepository.class);
         gridRepository = mock(GridRepository.class);
-        gameLevelRepository = mock(GameLevelRepository.class);
         playerMapper = mock(IPlayerMapper.class);
         gridMapper = mock(IGridMapper.class);
         jakartaValidator = mock(JakartaValidator.class);
@@ -63,10 +63,10 @@ class PlayerServiceUTest {
                         menuRepository,
                         gameRepository,
                         gridRepository,
-                        gameLevelRepository,
                         playerMapper,
                         optionsService,
                         gridService,
+                        gameLevelService,
                         jakartaValidator);
     }
 

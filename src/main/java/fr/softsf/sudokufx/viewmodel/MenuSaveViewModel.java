@@ -370,4 +370,6 @@ public class MenuSaveViewModel {
     public StringBinding cellConfirmationMessageProperty() {
         return cellConfirmationMessage;
     }
+
+    public void deleteGame(GameDto gameDto) {}
 }

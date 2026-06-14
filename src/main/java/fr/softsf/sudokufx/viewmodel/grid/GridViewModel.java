@@ -28,6 +28,7 @@ import org.springframework.stereotype.Component;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
+import fr.softsf.sudokufx.common.interfaces.mapper.IGameLevelMapper;
 import fr.softsf.sudokufx.common.util.PathValidator;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
@@ -38,6 +39,8 @@ import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.GameLevelDto;
 import fr.softsf.sudokufx.dto.GridDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.model.GameLevel;
+import fr.softsf.sudokufx.service.business.GameLevelService;
 import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.SpinnerService;
@@ -67,6 +70,8 @@ public class GridViewModel {
     private final AudioService audioService;
     private final PlayerStateHolder playerStateHolder;
     private final PlayerService playerService;
+    private final GameLevelService gameLevelService;
+    private final IGameLevelMapper gameLevelMapper;
     private final IGridConverter iGridConverter;
     private final ToasterService toasterService;
     private final SpinnerService spinnerService;
@@ -184,6 +189,8 @@ public class GridViewModel {
             AudioService audioService,
             PlayerStateHolder playerStateHolder,
             PlayerService playerService,
+            GameLevelService gameLevelService,
+            IGameLevelMapper gameLevelMapper,
             IGridConverter iGridConverter,
             ToasterService toasterService,
             SpinnerService spinnerService) {
@@ -193,6 +200,8 @@ public class GridViewModel {
         this.audioService = audioService;
         this.playerStateHolder = playerStateHolder;
         this.playerService = playerService;
+        this.gameLevelService = gameLevelService;
+        this.gameLevelMapper = gameLevelMapper;
         this.iGridConverter = iGridConverter;
         this.toasterService = toasterService;
         this.spinnerService = spinnerService;
@@ -261,11 +270,9 @@ public class GridViewModel {
             return;
         }
         char firstChar = value.trim().charAt(0);
-        // 2. Validate digit (1-9)
         if (Character.isDigit(firstChar) && firstChar != '0') {
             suppressCellsListeners = true;
             try {
-                // Anchor the user input as a fixed value
                 cellVM.rawTextProperty().set(String.valueOf(firstChar));
                 cellVM.editableProperty().set(false);
                 cellVM.getTextArea().setVisible(false);
@@ -273,9 +280,7 @@ public class GridViewModel {
             } finally {
                 suppressCellsListeners = false;
             }
-            // 3. Attempt to solve the grid with the new anchor
             boolean success = updateSolveProgress();
-            // 4. Rollback if the new digit creates a contradiction
             if (success) {
                 return;
             }
@@ -285,7 +290,7 @@ public class GridViewModel {
                             firstChar),
                     "");
             resetCellToEditable(cellVM);
-            updateSolveProgress(); // Refresh visual state to previous valid solution
+            updateSolveProgress();
         }
     }
 
@@ -727,8 +732,7 @@ public class GridViewModel {
         String gridValue =
                 iGridConverter.listToGridValue(
                         iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()));
-        GameLevelDto toSaveGameLevelDto =
-                currentPlayer.selectedGame().levelidDto().withLevel((byte) level.toGridNumber());
+        // TODO
         GridDto toSaveGridDto =
                 currentPlayer
                         .selectedGame()
@@ -736,13 +740,15 @@ public class GridViewModel {
                         .withGridvalue(gridValue)
                         .withDefaultgridvalue(defaultGrid)
                         .withPossibilities((byte) grillesCrees.pourcentageDesPossibilites());
+        GameLevel newLevelEntity = gameLevelService.findByLevelOrThrow((byte) level.toGridNumber());
+        GameLevelDto newLevelDto = gameLevelMapper.mapGameLevelToDto(newLevelEntity);
         PlayerDto toSavePlayer =
                 currentPlayer.withSelectedGame(
                         currentPlayer
                                 .selectedGame()
                                 .withUpdatedat(Instant.now())
                                 .withGrididDto(toSaveGridDto)
-                                .withLevelidDto(toSaveGameLevelDto));
+                                .withLevelidDto(newLevelDto));
         playerService.updatePlayer(toSavePlayer);
         playerStateHolder.refreshCurrentPlayer();
     }
