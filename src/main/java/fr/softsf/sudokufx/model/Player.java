@@ -54,25 +54,27 @@ public class Player {
     private Long playerid;
 
     /** Language of the player. */
-    @NotNull @ManyToOne(cascade = CascadeType.ALL)
+    @NotNull @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerlanguageplayerlanguageid", nullable = false)
     private PlayerLanguage playerlanguageid;
 
-    /** Options associated with the player. */
-    @NotNull @OneToOne(cascade = CascadeType.ALL)
+    /** Options associated with the player (Exclusive ownership). */
+    @NotNull @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "optionsoptionsid", nullable = false)
     private Options optionsid;
 
     /** Menu associated with the player. */
-    @NotNull @ManyToOne(cascade = CascadeType.ALL)
+    @NotNull @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "menumenuid", nullable = false)
     private Menu menuid;
 
-    /** Games played by the player. */
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "playerid", orphanRemoval = true)
+    /** Games played by the player (Parent owner). */
+    @OneToMany(
+            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE}, mappedBy = "playerid", orphanRemoval = true
+    )
     private Set<Game> games = new LinkedHashSet<>();
 
     /** Name of the player. */

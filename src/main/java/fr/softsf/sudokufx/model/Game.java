@@ -49,19 +49,19 @@ public class Game {
     private Long gameid;
 
     /** The grid associated with this game. */
-    @Valid @OneToOne(cascade = CascadeType.ALL)
+    @Valid @OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "gridgridid")
     private Grid gridid;
 
     /** The player who owns this game. */
-    @Valid @ManyToOne(cascade = CascadeType.ALL)
+    @Valid @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "playerplayerid")
     private Player playerid;
 
     /** The difficulty level of this game. */
-    @Valid @ManyToOne(cascade = CascadeType.ALL)
+    @Valid @ManyToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "levellevelid")
     private GameLevel levelid;
