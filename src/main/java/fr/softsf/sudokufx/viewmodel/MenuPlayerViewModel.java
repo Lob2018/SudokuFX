@@ -156,6 +156,15 @@ public class MenuPlayerViewModel {
                             playerStateHolder.refreshCurrentPlayer();
                             playerSwitchedSignal.set(!playerSwitchedSignal.get());
                         });
+        I18n.INSTANCE
+                .localeProperty()
+                .addListener(
+                        obs -> {
+                            if (!editing.get()) {
+                                playerNameInput.set(
+                                        I18n.INSTANCE.getValue(MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT));
+                            }
+                        });
         loadPlayers();
         setSelectedPlayer();
     }
