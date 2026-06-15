@@ -131,11 +131,11 @@ document.addEventListener('DOMContentLoaded', () => {
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5b3325f228a6c9a84e06ac1f722239a" id="r_aa5b3325f228a6c9a84e06ac1f722239a"><td class="memItemLeft">ObjectMapper&#160;</td><td class="memItemRight"><a class="el" href="#aa5b3325f228a6c9a84e06ac1f722239a">objectMapper</a> ()</td></tr>
-<tr class="memdesc:aa5b3325f228a6c9a84e06ac1f722239a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and configures an ObjectMapper bean.  <br /></td></tr>
+<tr class="memdesc:aa5b3325f228a6c9a84e06ac1f722239a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and configures an ObjectMapper bean using the JsonMapper builder.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Configuration class for Jackson's ObjectMapper. </p>
-<p>This bean provides a pre-configured ObjectMapper with support for Java 8 date/time API and ensures that dates are serialized in ISO-8601 format instead of timestamps. </p>
+<p>This bean provides a pre-configured ObjectMapper with support for Java 8 date/time API, relying on Jackson 3.x native ISO-8601 serialization. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="aa5b3325f228a6c9a84e06ac1f722239a" name="aa5b3325f228a6c9a84e06ac1f722239a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5b3325f228a6c9a84e06ac1f722239a">&#9670;&#160;</a></span>objectMapper()</h2>
@@ -152,9 +152,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates and configures an ObjectMapper bean. </p>
+<p>Creates and configures an ObjectMapper bean using the JsonMapper builder. </p>
 <ul>
-<li>Automatically registers available Jackson modules (e.g., JavaTimeModule for Instant). - Disables writing dates as timestamps to use ISO-8601 format.</li>
+<li>Automatically registers available Jackson modules (e.g., JavaTimeModule for Instant). - Uses native ISO-8601 format for date/time serialization as per Jackson 3.x defaults.</li>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>a pre-configured ObjectMapper instance. </dd></dl>
 
