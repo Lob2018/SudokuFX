@@ -84,11 +84,13 @@ class LevelInteractionHandlerUTest {
     }
 
     @Test
-    void givenNullArguments_whenHandleEnd_thenThrowsNullPointerException() {
+    void givenNullArguments_whenHandleEnd_thenThrowsIllegalArgumentException() {
         assertAll(
-                () ->
-                        assertThrows(
-                                NullPointerException.class,
-                                () -> handler.handleEnd("menuMiniButtonEasy", null)));
+                () -> assertThrows(
+                        IllegalArgumentException.class,
+                        () -> handler.handleEnd("menuMiniButtonEasy", null),
+                        "Should throw IllegalArgumentException when opaqueApplier is null"
+                )
+        );
     }
 }

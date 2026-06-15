@@ -29,6 +29,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.PlayerConstants;
 import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
+import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.MyRegex;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
@@ -502,7 +503,7 @@ public class MenuPlayerViewModel {
      * @return the permitted change, or null to reject the input alteration
      */
     public TextFormatter.Change filterPlayerNameInput(TextFormatter.Change change) {
-        if (!change.isContentChange()) {
+        if (change == null || !change.isContentChange()) {
             return change;
         }
         String newName = change.getControlNewText();
@@ -513,7 +514,17 @@ public class MenuPlayerViewModel {
         return null;
     }
 
+    /**
+     * Deletes the specified player from the system and refreshes the UI state.
+     *
+     * @param playerDto the player to delete; must not be null
+     * @throws IllegalArgumentException if playerDto is null
+     */
     public void deletePlayer(PlayerDto playerDto) {
+        if (Objects.isNull(playerDto)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The playerDto must not be null");
+        }
         playerService.deletePlayer(playerDto.playerid());
         playerStateHolder.refreshCurrentPlayer();
         playerSwitchedSignal.set(!playerSwitchedSignal.get());

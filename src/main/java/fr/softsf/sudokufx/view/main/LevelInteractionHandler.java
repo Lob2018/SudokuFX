@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.view.main;
 
+import java.util.Objects;
 import java.util.function.Consumer;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
@@ -68,6 +69,8 @@ public class LevelInteractionHandler {
      * @param buttonId the identifier of the button triggered
      */
     public void handleStart(String buttonId) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                buttonId, "ButtonId must not be null or blank, but was " + buttonId);
         this.level = getLevelWithId(buttonId);
         this.startTime = System.currentTimeMillis();
         startCycle();
@@ -81,6 +84,12 @@ public class LevelInteractionHandler {
      * @param opaqueApplier callback to synchronize grid visual opacity
      */
     public void handleEnd(String buttonId, Consumer<Boolean> opaqueApplier) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                buttonId, "ButtonId must not be null or blank, but was " + buttonId);
+        if (Objects.isNull(opaqueApplier)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The opaqueApplier must not be null");
+        }
         long duration = System.currentTimeMillis() - startTime;
         LOG.debug("Interaction duration for {}: {}ms", buttonId, duration);
         applyLevel(opaqueApplier);
@@ -120,6 +129,10 @@ public class LevelInteractionHandler {
      * @param opaqueApplier callback to synchronize grid visual opacity with current option states
      */
     private void applyLevel(Consumer<Boolean> opaqueApplier) {
+        if (Objects.isNull(opaqueApplier)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The opaqueApplier must not be null");
+        }
         desiredPossibilitiesTimeline.stop();
         if (currentGridTask != null && currentGridTask.isRunning()) {
             currentGridTask.cancel();
@@ -154,6 +167,8 @@ public class LevelInteractionHandler {
      * @throws IllegalArgumentException if the identifier is unknown
      */
     private DifficultyLevel getLevelWithId(String id) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                id, "Id must not be null or blank, but was " + id);
         return switch (id) {
             case "menuMiniButtonEasy", "menuMaxiButtonEasy" -> DifficultyLevel.EASY;
             case "menuMiniButtonMedium", "menuMaxiButtonMedium" -> DifficultyLevel.MEDIUM;

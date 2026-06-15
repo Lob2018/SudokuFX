@@ -5,9 +5,17 @@
  */
 package fr.softsf.sudokufx.common.enums;
 
+/** Utility enum representing the validation status of a player name. */
 public enum PlayerNameStatus {
+    /** The player name is empty or consists only of whitespace. */
     EMPTY,
+
+    /** The player name conforms to all naming conventions and is acceptable. */
     VALID,
+
+    /** The player name violates length or character constraints. */
     INVALID,
+
+    /** The player name is already in use. */
     UNAVAILABLE
 }
