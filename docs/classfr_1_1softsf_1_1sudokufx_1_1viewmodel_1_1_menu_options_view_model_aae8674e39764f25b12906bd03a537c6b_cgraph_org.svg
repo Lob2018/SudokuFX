@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.toggleMuteAndPersist Pages: 1 -->
 <svg width="426pt" height="52pt"
  viewBox="0.00 0.00 426.25 52.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 48)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 48)">
 <title>fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.toggleMuteAndPersist</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" target="_top" xlink:title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane, ColorPicker).">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" target="_top" xlink:title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane).">
 <polygon fill="white" stroke="#666666" points="418.25,-38 226,-38 226,-6 418.25,-6 418.25,-38"/>
 <text text-anchor="start" x="234" y="-24.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="322.12" y="-12.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.checkInitialized</text>

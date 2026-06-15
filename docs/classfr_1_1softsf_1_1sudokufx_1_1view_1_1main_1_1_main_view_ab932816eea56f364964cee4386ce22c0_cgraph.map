@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.synchronizeUIAfterPlayerSwitch" name="fr.softsf.sudokufx.view.main.MainView.synchronizeUIAfterPlayerSwitch">
+<area shape="rect" id="Node000001" title="Synchronizes the user interface with the current player&#39;s profile data." alt="" coords="5,5,236,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="551,13,740,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,26,284,24,393,22,503,24,535,25,535,31,503,29,393,27,284,29,236,31"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a805ba50257c2565844220d96b618c2c9" title="Synchronizes the menu UI with the current game model state." alt="" coords="284,39,503,97"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="236,46,269,50,268,55,236,51"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="503,51,535,47,536,52,504,56"/>
+</map>

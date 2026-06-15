@@ -14,6 +14,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game =
     [ "getSelected", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a45e9d6ccd85aa60f95f02d7b04b0840c", null ],
     [ "getUpdatedat", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a4011299b15b8321fc006067e66f50cb3", null ],
     [ "hashCode", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a1fa26095322324f412ff22213e27b14f", null ],
+    [ "setLevelid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a7894aa82e469c02f8b7fbb7210c04ed7", null ],
     [ "setPlayerid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a35846507635cbcc95bb2cc3ddfd751dc", null ],
     [ "setSelected", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a60d86d25fb2cffb5acccc81e107561e6", null ],
     [ "setUpdatedat", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a3f1136b2325dfb043388d60e8cc3fc78", null ],

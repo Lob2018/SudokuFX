@@ -136,8 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acf9ab855d83a7c6993fbe1f268ada09b" id="r_acf9ab855d83a7c6993fbe1f268ada09b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acf9ab855d83a7c6993fbe1f268ada09b">PlayerStateHolder</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a> playerService)</td></tr>
-<tr class="memdesc:acf9ab855d83a7c6993fbe1f268ada09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state holder.  <br /></td></tr>
 <tr class="memitem:a5a9479f5c94f6822692a70db6102aac3" id="r_a5a9479f5c94f6822692a70db6102aac3"><td class="memItemLeft">ObjectProperty&lt; PlayerDto &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5a9479f5c94f6822692a70db6102aac3">currentPlayerProperty</a> ()</td></tr>
 <tr class="memdesc:a5a9479f5c94f6822692a70db6102aac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the property holding the current player for JavaFX bindings.  <br /></td></tr>
 <tr class="memitem:a21f04c69326d6540965b85dc026e21f1" id="r_a21f04c69326d6540965b85dc026e21f1"><td class="memItemLeft">PlayerDto&#160;</td><td class="memItemRight"><a class="el" href="#a21f04c69326d6540965b85dc026e21f1">getCurrentPlayer</a> ()</td></tr>
@@ -149,6 +147,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
+<tr class="memitem:acf9ab855d83a7c6993fbe1f268ada09b" id="r_acf9ab855d83a7c6993fbe1f268ada09b"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#acf9ab855d83a7c6993fbe1f268ada09b">PlayerStateHolder</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html">PlayerService</a> playerService)</td></tr>
+<tr class="memdesc:acf9ab855d83a7c6993fbe1f268ada09b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the state holder.  <br /></td></tr>
 <tr class="memitem:a776dbf8d4bd6db641d84313659051d51" id="r_a776dbf8d4bd6db641d84313659051d51"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a776dbf8d4bd6db641d84313659051d51">exitPlatform</a> ()</td></tr>
 <tr class="memdesc:a776dbf8d4bd6db641d84313659051d51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminates the JavaFX application.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -181,6 +181,9 @@ Reload the current player passively from the database via <code><a class="el" hr
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder.PlayerStateHolder </td>
@@ -189,10 +192,15 @@ Reload the current player passively from the database via <code><a class="el" hr
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Constructs the state holder. </p>
-<p>Dependency injection only.</p>
+<p>For dependency injection and testing purposes only.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">playerService</td><td>the service used to fetch the player </td></tr>

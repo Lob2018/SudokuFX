@@ -50,6 +50,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view =
     [ "solveMenuInitialization", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#afc29c6470627f78c17cd71121df17d21", null ],
     [ "spinnerInitialization", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aa73cee45a3fae93369d5d33cb8ce90c6", null ],
     [ "stopAudioOnExitInitialization", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a1b8c6fff77d4f65ca424cc6a2c943b19", null ],
+    [ "synchronizeUIAfterPlayerSwitch", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ab932816eea56f364964cee4386ce22c0", null ],
     [ "toasterInitialization", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ad474475f22dddcdfa8ccfc64bddef3dc", null ],
     [ "updatePlayerNamePseudoClasses", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a0c413fa0dec2327ebc2348e34c9e7135", null ],
     [ "activeMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a333f7ac3526fea1de39dd17668869264", null ],

@@ -120,15 +120,16 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="contents">
 <div class="textblock"><code>import java.text.MessageFormat;</code><br />
 <code>import java.util.List;</code><br />
+<code>import java.util.Objects;</code><br />
 <code>import java.util.function.Supplier;</code><br />
 <code>import javafx.beans.binding.Bindings;</code><br />
 <code>import javafx.beans.binding.StringBinding;</code><br />
-<code>import javafx.beans.property.BooleanProperty;</code><br />
 <code>import javafx.beans.property.ObjectProperty;</code><br />
 <code>import javafx.beans.property.Property;</code><br />
+<code>import javafx.beans.property.ReadOnlyBooleanProperty;</code><br />
+<code>import javafx.beans.property.ReadOnlyBooleanWrapper;</code><br />
 <code>import javafx.beans.property.ReadOnlyObjectProperty;</code><br />
 <code>import javafx.beans.property.ReadOnlyObjectWrapper;</code><br />
-<code>import javafx.beans.property.SimpleBooleanProperty;</code><br />
 <code>import javafx.beans.property.SimpleStringProperty;</code><br />
 <code>import javafx.beans.property.StringProperty;</code><br />
 <code>import javafx.collections.FXCollections;</code><br />
@@ -137,6 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
 <code>import org.springframework.stereotype.Component;</code><br />
 <code>import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
+<code>import fr.softsf.sudokufx.common.enums.PlayerConstants;</code><br />
+<code>import fr.softsf.sudokufx.common.enums.PlayerNameStatus;</code><br />
+<code>import fr.softsf.sudokufx.common.util.MyRegex;</code><br />
 <code>import fr.softsf.sudokufx.dto.PlayerDto;</code><br />
 <code>import fr.softsf.sudokufx.service.business.PlayerService;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;</code><br />

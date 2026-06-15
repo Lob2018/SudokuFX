@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.restoreCurrentGridLevelFromModel" name="fr.softsf.sudokufx.view.main.MainView.restoreCurrentGridLevelFromModel">
+<area shape="rect" id="Node000001" title="Synchronizes the menu UI with the current game model state." alt="" coords="5,5,225,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="273,13,462,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="225,32,257,32,257,37,225,37"/>
+</map>

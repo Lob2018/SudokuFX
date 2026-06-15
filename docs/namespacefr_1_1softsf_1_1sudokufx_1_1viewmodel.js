@@ -16,6 +16,5 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel =
     [ "MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test" ],
     [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model" ],
     [ "MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model" ],
-    [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ],
-    [ "PlayerNameStatus", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status.html", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status" ]
+    [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ]
 ];

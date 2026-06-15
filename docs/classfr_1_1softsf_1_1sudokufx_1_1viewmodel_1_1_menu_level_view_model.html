@@ -125,13 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model__coll__graph.svg" width="226" height="550"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model__coll__graph.svg" width="226" height="571"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2534445f2247fda713a1b90d2e194d91" id="r_a2534445f2247fda713a1b90d2e194d91"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a2534445f2247fda713a1b90d2e194d91">accessibleTextBinding</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a> starsBox, String key)</td></tr>
 <tr class="memdesc:a2534445f2247fda713a1b90d2e194d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a StringBinding for the accessibility text of the stars UI component associated with a difficulty level.  <br /></td></tr>
+<tr class="memitem:a0b08c9a4b8770f60035c0a8a20959220" id="r_a0b08c9a4b8770f60035c0a8a20959220"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0b08c9a4b8770f60035c0a8a20959220">clearSelectedLevel</a> ()</td></tr>
+<tr class="memdesc:a0b08c9a4b8770f60035c0a8a20959220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the currently selected difficulty level, effectively resetting the UI selection state to a non-selected status.  <br /></td></tr>
 <tr class="memitem:ae4b3a75047cdd734fefea0992390b2be" id="r_ae4b3a75047cdd734fefea0992390b2be"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#ae4b3a75047cdd734fefea0992390b2be">getAccessibilityKeyForLevel</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
 <tr class="memdesc:ae4b3a75047cdd734fefea0992390b2be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the i18n key used for accessibility descriptions of a given difficulty level.  <br /></td></tr>
 <tr class="memitem:a526715c7454e1e8e77e7996c5b901385" id="r_a526715c7454e1e8e77e7996c5b901385"><td class="memItemLeft">BooleanBinding&#160;</td><td class="memItemRight"><a class="el" href="#a526715c7454e1e8e77e7996c5b901385">isSelectedBinding</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
@@ -201,6 +203,25 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a0b08c9a4b8770f60035c0a8a20959220" name="a0b08c9a4b8770f60035c0a8a20959220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b08c9a4b8770f60035c0a8a20959220">&#9670;&#160;</a></span>clearSelectedLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuLevelViewModel.clearSelectedLevel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the currently selected difficulty level, effectively resetting the UI selection state to a non-selected status. </p>
+
+</div>
+</div>
 <a id="ae4b3a75047cdd734fefea0992390b2be" name="ae4b3a75047cdd734fefea0992390b2be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4b3a75047cdd734fefea0992390b2be">&#9670;&#160;</a></span>getAccessibilityKeyForLevel()</h2>
 
@@ -219,11 +240,11 @@ Private Attributes</h2></td></tr>
 <p>Returns the i18n key used for accessibility descriptions of a given difficulty level. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">level</td><td>the difficulty level </td></tr>
+    <tr><td class="paramname">level</td><td>the difficulty level, can be <code class="JavaDocCode">null</code> to indicate no selection </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the localization key string for accessibility description </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the localization key string for accessibility description, or an empty string if <code class="JavaDocCode">level</code> is <code class="JavaDocCode">null</code> </dd></dl>
 
 </div>
 </div>
@@ -253,11 +274,12 @@ Private Attributes</h2></td></tr>
 <p>Returns the i18n key used for the display text of a given difficulty level. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">level</td><td>the difficulty level </td></tr>
+    <tr><td class="paramname">level</td><td>the difficulty level, can be <code class="JavaDocCode">null</code> to indicate no selection </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the localization key string for the level display text </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the localization key string for the level display text, or an empty string if <code class="JavaDocCode"><br/>
+    level</code> is <code class="JavaDocCode">null</code> </dd></dl>
 
 </div>
 </div>

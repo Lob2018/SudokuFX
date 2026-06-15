@@ -137,8 +137,8 @@ Public Member Functions</h2></td></tr>
 Package Functions</h2></td></tr>
 <tr class="memitem:acedc5b1df76d009bd5ecd422fe7d70ed" id="r_acedc5b1df76d009bd5ecd422fe7d70ed"><td class="memItemLeft">private&lt; T &gt; Task&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#acedc5b1df76d009bd5ecd422fe7d70ed">fileProcessingTask</a> (File file, Function&lt; File, T &gt; function, Consumer&lt; T &gt; successCallback)</td></tr>
 <tr class="memdesc:acedc5b1df76d009bd5ecd422fe7d70ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the file processing task with lifecycle overrides for optimal performance.  <br /></td></tr>
-<tr class="memitem:ad5894c5a6a0de2338807b24b1e331eba" id="r_ad5894c5a6a0de2338807b24b1e331eba"><td class="memItemLeft">public&lt; T &gt; void&#160;</td><td class="memItemRight"><a class="el" href="#ad5894c5a6a0de2338807b24b1e331eba">processFileAsync</a> (File selectedFile, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess)</td></tr>
-<tr class="memdesc:ad5894c5a6a0de2338807b24b1e331eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a file-processing task asynchronously with spinner and toast feedback.  <br /></td></tr>
+<tr class="memitem:a67d31a592e57167381036afd1f59aeeb" id="r_a67d31a592e57167381036afd1f59aeeb"><td class="memItemLeft">public&lt; T &gt; javafx.concurrent.Task&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a67d31a592e57167381036afd1f59aeeb">processFileAsync</a> (File selectedFile, Function&lt; File, T &gt; taskFunction, Consumer&lt; T &gt; onSuccess)</td></tr>
+<tr class="memdesc:a67d31a592e57167381036afd1f59aeeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a file-processing task asynchronously with spinner and toast feedback.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -280,8 +280,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5894c5a6a0de2338807b24b1e331eba" name="ad5894c5a6a0de2338807b24b1e331eba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5894c5a6a0de2338807b24b1e331eba">&#9670;&#160;</a></span>processFileAsync()</h2>
+<a id="a67d31a592e57167381036afd1f59aeeb" name="a67d31a592e57167381036afd1f59aeeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d31a592e57167381036afd1f59aeeb">&#9670;&#160;</a></span>processFileAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -290,7 +290,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">public&lt; T &gt; void fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.processFileAsync </td>
+          <td class="memname">public&lt; T &gt; javafx.concurrent.Task&lt; T &gt; fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.processFileAsync </td>
           <td>(</td>
           <td class="paramtype">File</td>          <td class="paramname"><span class="paramname"><em>selectedFile</em></span>, </td>
         </tr>
@@ -313,6 +313,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Executes a file-processing task asynchronously with spinner and toast feedback. </p>
+<p>Configures a daemon thread to handle the background processing, manages UI indicators (spinner and toaster), and returns the <code><a class="el" href="">Task</a></code> instance to allow for lifecycle control, such as manual cancellation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">&lt;T&gt;</td><td>the result type </td></tr>
@@ -322,11 +323,12 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the <code><a class="el" href="">Task</a></code> instance managing the asynchronous execution </dd></dl>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_ad5894c5a6a0de2338807b24b1e331eba_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service_a67d31a592e57167381036afd1f59aeeb_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>

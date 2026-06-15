@@ -125,19 +125,21 @@ document.addEventListener('DOMContentLoaded', () => {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository__inherit__graph.svg" width="223" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository__inherit__graph.svg" width="223" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Collaboration diagram for fr.softsf.sudokufx.repository.PlayerRepository:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository__coll__graph.svg" width="223" height="283"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository__coll__graph.svg" width="223" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af6b4503194f42cbdff1e5e9009fa49a3" id="r_af6b4503194f42cbdff1e5e9009fa49a3"><td class="memItemLeft">List&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af6b4503194f42cbdff1e5e9009fa49a3">findAllUnselectedWithSelectedGame</a> (Sort sort)</td></tr>
 <tr class="memdesc:af6b4503194f42cbdff1e5e9009fa49a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all unselected players along with their selected game and all related associations.  <br /></td></tr>
+<tr class="memitem:a8cd8be0e08565e4d3c5924c578c2f14d" id="r_a8cd8be0e08565e4d3c5924c578c2f14d"><td class="memItemLeft">Optional&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8cd8be0e08565e4d3c5924c578c2f14d">findByName</a> (String name)</td></tr>
+<tr class="memdesc:a8cd8be0e08565e4d3c5924c578c2f14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds a player by their exact name.  <br /></td></tr>
 <tr class="memitem:af99d8aaa4f5bd6c0e161a01e6803e9d7" id="r_af99d8aaa4f5bd6c0e161a01e6803e9d7"><td class="memItemLeft">List&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> &gt;&#160;</td><td class="memItemRight"><a class="el" href="#af99d8aaa4f5bd6c0e161a01e6803e9d7">findSelectedPlayerWithSelectedGame</a> ()</td></tr>
 <tr class="memdesc:af99d8aaa4f5bd6c0e161a01e6803e9d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the currently selected player along with their selected game and all related associations.  <br /></td></tr>
 </table>
@@ -178,6 +180,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8cd8be0e08565e4d3c5924c578c2f14d" name="a8cd8be0e08565e4d3c5924c578c2f14d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd8be0e08565e4d3c5924c578c2f14d">&#9670;&#160;</a></span>findByName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Optional&lt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html">Player</a> &gt; fr.softsf.sudokufx.repository.PlayerRepository.findByName </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds a player by their exact name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>the name of the player </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an Optional containing the player if found, or empty otherwise </dd></dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository_a8cd8be0e08565e4d3c5924c578c2f14d_cgraph.svg" width="207" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="af99d8aaa4f5bd6c0e161a01e6803e9d7" name="af99d8aaa4f5bd6c0e161a01e6803e9d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af99d8aaa4f5bd6c0e161a01e6803e9d7">&#9670;&#160;</a></span>findSelectedPlayerWithSelectedGame()</h2>
 
@@ -211,10 +245,10 @@ Each game's level </li>
 </ul>
 <p>Only players and games marked as selected are returned.</p>
 <dl class="section return"><dt>Returns</dt><dd>a list of selected players with their selected games and all associations </dd></dl>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository_af99d8aaa4f5bd6c0e161a01e6803e9d7_cgraph.svg" width="244" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 

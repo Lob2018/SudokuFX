@@ -1,6 +1,6 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
 [
-    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9d34f240b51d8ea5888b7b522ae35403", null ],
+    [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a3786408da8d6566b412d56a347e64e08", null ],
     [ "applyGeneratedGrid", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9c424a4b389a43cdaad40bb2bddacfca", null ],
     [ "applySolveModeState", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a3be7edba49a294b63514cac2edba058e", null ],
     [ "applyStandardPlayFlow", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ac30ea1feb669d014d0d0a58bd85cfc87", null ],
@@ -38,6 +38,8 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model =
     [ "DEFAULT_DESIRED_POSSIBILITIES", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a696f9f7b19bfb201f888615c790d0cd4", null ],
     [ "desiredPossibilities", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#adfaa2f2aa5e00495aa03ef0b1b725bd0", null ],
     [ "GAME_DTO_MUSTN_T_BE_NULL", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a3db2ff09d3fc66a3ba56bd941ca2d0eb", null ],
+    [ "gameLevelMapper", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a02bcb8b119de9c9dd1a744272d96ee84", null ],
+    [ "gameLevelService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c51680b6ade5101e302c6ed29db2352", null ],
     [ "generating", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a828e4109b9665602495781e2bc9cd1f6", null ],
     [ "GRID_SIZE", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#afd1217d7084a63e6556c5c360cee4a07", null ],
     [ "iGridConverter", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6cd7398269caba9269095a9cd704dfc8", null ],

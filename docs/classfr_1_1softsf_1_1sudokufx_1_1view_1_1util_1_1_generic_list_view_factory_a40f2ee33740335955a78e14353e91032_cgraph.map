@@ -10,7 +10,7 @@
 <area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="222,368,284,368,284,373,222,373"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" title=" " alt="" coords="288,416,532,475"/>
 <area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="223,395,277,409,276,414,221,401"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#a649020523675d71d2bdf3040a1aa0c13" title="Binds the selection of a ListView bidirectionally with a Property." alt="" coords="277,499,543,557"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#a649020523675d71d2bdf3040a1aa0c13" title="Configures a ListView to update the provided Property only upon explicit user confirmation." alt="" coords="277,499,543,557"/>
 <area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="149,398,204,442,271,484,283,490,280,495,268,489,201,447,145,402"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="302,581,518,640"/>
 <area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="132,399,155,437,186,483,226,528,271,567,289,577,286,582,268,572,222,532,182,486,151,440,128,402"/>

@@ -46,6 +46,7 @@ import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
@@ -73,7 +74,6 @@ import fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSolveViewModel;
-import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 

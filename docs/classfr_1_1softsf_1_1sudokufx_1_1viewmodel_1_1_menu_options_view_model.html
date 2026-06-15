@@ -132,18 +132,20 @@ document.addEventListener('DOMContentLoaded', () => {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a26692d9c46e3bf02ab8a0a19d228f92a" id="r_a26692d9c46e3bf02ab8a0a19d228f92a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a26692d9c46e3bf02ab8a0a19d228f92a">MenuOptionsViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a> audioService, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a> asyncFileProcessorService, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html">PlayerStateHolder</a> playerStateHolder, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html">OptionsService</a> optionsService, <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html">ToasterService</a> toasterService)</td></tr>
 <tr class="memdesc:a26692d9c46e3bf02ab8a0a19d228f92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html" title="ViewModel managing menu options UI state and accessibility strings.">MenuOptionsViewModel</a> with necessary infrastructure and reactive bindings.  <br /></td></tr>
-<tr class="memitem:a2a736732b455c4c2ad787f5e4a9a76da" id="r_a2a736732b455c4c2ad787f5e4a9a76da"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2a736732b455c4c2ad787f5e4a9a76da">applyAndPersistBackgroundImage</a> (File selectedFile, GridPane sudokuFX)</td></tr>
-<tr class="memdesc:a2a736732b455c4c2ad787f5e4a9a76da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a background image to the specified <code><a class="el" href="">GridPane</a></code> and persists its path in the current player's options.  <br /></td></tr>
-<tr class="memitem:a37c28fa6e33f850e39a1e63e6696728d" id="r_a37c28fa6e33f850e39a1e63e6696728d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a37c28fa6e33f850e39a1e63e6696728d">applyAndPersistOptionsColor</a> (GridPane sudokuFX, Color color)</td></tr>
-<tr class="memdesc:a37c28fa6e33f850e39a1e63e6696728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code> and persists it in the current player's options if it has changed.  <br /></td></tr>
+<tr class="memitem:aae209f8a3ddfd8a72731b3fee828ca7b" id="r_aae209f8a3ddfd8a72731b3fee828ca7b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aae209f8a3ddfd8a72731b3fee828ca7b">applyAndPersistIfNeededBackgroundImage</a> (File selectedFile, GridPane sudokuFX, boolean shouldPersist)</td></tr>
+<tr class="memdesc:aae209f8a3ddfd8a72731b3fee828ca7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a background image to the specified <code><a class="el" href="">GridPane</a></code>.  <br /></td></tr>
+<tr class="memitem:a0295191f6793f349fc6bc02231f01875" id="r_a0295191f6793f349fc6bc02231f01875"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0295191f6793f349fc6bc02231f01875">applyAndPersistIfNeededOptionsColor</a> (GridPane sudokuFX, Color color, boolean shouldPersist)</td></tr>
+<tr class="memdesc:a0295191f6793f349fc6bc02231f01875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code>.  <br /></td></tr>
 <tr class="memitem:a7f59ea6dfd086c59134f98291ee3797e" id="r_a7f59ea6dfd086c59134f98291ee3797e"><td class="memItemLeft">ReadOnlyBooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#a7f59ea6dfd086c59134f98291ee3797e">gridOpacityProperty</a> ()</td></tr>
-<tr class="memitem:a50c7fa94b3ef68fba6c678d9825bfeb6" id="r_a50c7fa94b3ef68fba6c678d9825bfeb6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a50c7fa94b3ef68fba6c678d9825bfeb6">init</a> (GridPane sudokuFX, ColorPicker menuOptionsButtonColor)</td></tr>
-<tr class="memdesc:a50c7fa94b3ef68fba6c678d9825bfeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the menu options UI state for the current player, including:  <br /></td></tr>
+<tr class="memitem:a231db409f6a7e4cb554d176ea8c7a3b1" id="r_a231db409f6a7e4cb554d176ea8c7a3b1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a231db409f6a7e4cb554d176ea8c7a3b1">init</a> (GridPane sudokuFX)</td></tr>
+<tr class="memdesc:a231db409f6a7e4cb554d176ea8c7a3b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the menu options UI state for the current player, including:  <br /></td></tr>
 <tr class="memitem:aea9e28fdb65810f49af1900c17d5b26c" id="r_aea9e28fdb65810f49af1900c17d5b26c"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#aea9e28fdb65810f49af1900c17d5b26c">optionsAccessibleTextProperty</a> ()</td></tr>
 <tr class="memitem:a10d3d8c0a4d60f61a33f963e3e7b5959" id="r_a10d3d8c0a4d60f61a33f963e3e7b5959"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a10d3d8c0a4d60f61a33f963e3e7b5959">optionsClearSongAccessibleTextProperty</a> ()</td></tr>
 <tr class="memitem:aeef43cf8f6c8a4e017a0aea2b856a1cc" id="r_aeef43cf8f6c8a4e017a0aea2b856a1cc"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#aeef43cf8f6c8a4e017a0aea2b856a1cc">optionsClearSongRoleDescriptionProperty</a> ()</td></tr>
 <tr class="memitem:a4635b8ec2a3b98036c990918e02dc45a" id="r_a4635b8ec2a3b98036c990918e02dc45a"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a4635b8ec2a3b98036c990918e02dc45a">optionsClearSongTooltipProperty</a> ()</td></tr>
 <tr class="memitem:a38413e89ff9529a68f90a23d6a392c1b" id="r_a38413e89ff9529a68f90a23d6a392c1b"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a38413e89ff9529a68f90a23d6a392c1b">optionsColorAccessibleTextProperty</a> ()</td></tr>
+<tr class="memitem:a8c12ec83d606adb1ef04d8129fb6919b" id="r_a8c12ec83d606adb1ef04d8129fb6919b"><td class="memItemLeft">ObjectProperty&lt; Color &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a8c12ec83d606adb1ef04d8129fb6919b">optionsColorProperty</a> ()</td></tr>
+<tr class="memdesc:a8c12ec83d606adb1ef04d8129fb6919b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the options color property, allowing UI components to bind to or observe changes in the selected color.  <br /></td></tr>
 <tr class="memitem:a5f293e9233bd045bc8fd3ce88e255ea9" id="r_a5f293e9233bd045bc8fd3ce88e255ea9"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a5f293e9233bd045bc8fd3ce88e255ea9">optionsColorRoleDescriptionProperty</a> ()</td></tr>
 <tr class="memitem:ae24799a8e71f0ad37cdcc7f69f638765" id="r_ae24799a8e71f0ad37cdcc7f69f638765"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#ae24799a8e71f0ad37cdcc7f69f638765">optionsColorTooltipProperty</a> ()</td></tr>
 <tr class="memitem:a757e0aeb912648ef046ea87468bf252f" id="r_a757e0aeb912648ef046ea87468bf252f"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a757e0aeb912648ef046ea87468bf252f">optionsImageAccessibleTextProperty</a> ()</td></tr>
@@ -176,6 +178,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2582c58765253be7838375ba8895471a" id="r_a2582c58765253be7838375ba8895471a"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a2582c58765253be7838375ba8895471a">optionsTooltipProperty</a> ()</td></tr>
 <tr class="memitem:a053a37df40819f189c10a076302ec47c" id="r_a053a37df40819f189c10a076302ec47c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a053a37df40819f189c10a076302ec47c">resetSongPath</a> ()</td></tr>
 <tr class="memdesc:a053a37df40819f189c10a076302ec47c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the song path by clearing the current selection, persisting the change, and showing a toast notification.  <br /></td></tr>
+<tr class="memitem:a4b6078df49079d667e9f1d6e6852af93" id="r_a4b6078df49079d667e9f1d6e6852af93"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4b6078df49079d667e9f1d6e6852af93">restoreCurrentOptions</a> (GridPane sudokuFX)</td></tr>
 <tr class="memitem:ad2431f22d487e230013fec9a9ff6fc20" id="r_ad2431f22d487e230013fec9a9ff6fc20"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad2431f22d487e230013fec9a9ff6fc20">saveSong</a> (File file)</td></tr>
 <tr class="memdesc:ad2431f22d487e230013fec9a9ff6fc20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves the provided song file path to the database and shows a confirmation toast.  <br /></td></tr>
 <tr class="memitem:ab38998a6e43d6e55edb1b4be6955e3e6" id="r_ab38998a6e43d6e55edb1b4be6955e3e6"><td class="memItemLeft">ReadOnlyBooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#ab38998a6e43d6e55edb1b4be6955e3e6">songIsBlankProperty</a> ()</td></tr>
@@ -193,8 +196,10 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:ae69e26e90632888bdc5a5223219578d3" id="r_ae69e26e90632888bdc5a5223219578d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae69e26e90632888bdc5a5223219578d3">applyOptionsToUI</a> (OptionsDto options, GridPane sudokuFX)</td></tr>
+<tr class="memdesc:ae69e26e90632888bdc5a5223219578d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applique les options visuelles au composant sudokuFX.  <br /></td></tr>
 <tr class="memitem:ac437c4e3c7dce984a2b491eb1d9da090" id="r_ac437c4e3c7dce984a2b491eb1d9da090"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac437c4e3c7dce984a2b491eb1d9da090">checkInitialized</a> ()</td></tr>
-<tr class="memdesc:ac437c4e3c7dce984a2b491eb1d9da090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></code> has been initialized via <code><a class="el" href="#a50c7fa94b3ef68fba6c678d9825bfeb6">init(GridPane, ColorPicker)</a></code>.  <br /></td></tr>
+<tr class="memdesc:ac437c4e3c7dce984a2b491eb1d9da090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></code> has been initialized via <code><a class="el" href="#a231db409f6a7e4cb554d176ea8c7a3b1">init(GridPane)</a></code>.  <br /></td></tr>
 <tr class="memitem:a359e959bd335e531fe59f4eb942c0813" id="r_a359e959bd335e531fe59f4eb942c0813"><td class="memItemLeft">Observable[]&#160;</td><td class="memItemRight"><a class="el" href="#a359e959bd335e531fe59f4eb942c0813">concatDependencies</a> (Observable... dependencies)</td></tr>
 <tr class="memdesc:a359e959bd335e531fe59f4eb942c0813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility: always observe the locale in addition to custom dependencies.  <br /></td></tr>
 <tr class="memitem:ab375565a060bffec779b340dc14f7c43" id="r_ab375565a060bffec779b340dc14f7c43"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#ab375565a060bffec779b340dc14f7c43">createFormattedAndConcatenatedBinding</a> (Supplier&lt; String &gt; keySupplier, Supplier&lt; String &gt; argSupplier, String suffixKey, Observable... dependencies)</td></tr>
@@ -237,14 +242,15 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:add42eac8d6831cc853249da660b34e14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists the given image path in the current player's <code><a class="el" href="">OptionsDto</a></code> if it differs from the existing path, then refreshes the player.  <br /></td></tr>
 <tr class="memitem:ae7dd86e7d7c9a04f00bbc8bffe97843b" id="r_ae7dd86e7d7c9a04f00bbc8bffe97843b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae7dd86e7d7c9a04f00bbc8bffe97843b">persistSongPath</a> (String absolutePath, String name)</td></tr>
 <tr class="memdesc:ae7dd86e7d7c9a04f00bbc8bffe97843b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persists the audio file path (songPath) in the current player's options.  <br /></td></tr>
-<tr class="memitem:a3b1dee2b684cd6f89f245ff46623b8a5" id="r_a3b1dee2b684cd6f89f245ff46623b8a5"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3b1dee2b684cd6f89f245ff46623b8a5">setColorFromModel</a> (GridPane sudokuFX, ColorPicker menuOptionsButtonColor, String colorValueFromModel)</td></tr>
-<tr class="memdesc:a3b1dee2b684cd6f89f245ff46623b8a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the background color of the GridPane and updates the ColorPicker based on the color value retrieved from the model.  <br /></td></tr>
+<tr class="memitem:a37e1c6ac123057100967340aa9e1c18f" id="r_a37e1c6ac123057100967340aa9e1c18f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a37e1c6ac123057100967340aa9e1c18f">updateSongNameFromPath</a> (String rawPath)</td></tr>
+<tr class="memdesc:a37e1c6ac123057100967340aa9e1c18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the song display name by extracting the filename from the provided path.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab33d4b1f4ea7a1797bdd8840c7dc7d23" id="r_ab33d4b1f4ea7a1797bdd8840c7dc7d23"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html">AsyncFileProcessorService</a>&#160;</td><td class="memItemRight"><a class="el" href="#ab33d4b1f4ea7a1797bdd8840c7dc7d23">asyncFileProcessorService</a></td></tr>
 <tr class="memitem:ad7a9489d3fbd70c4669910faaa8098b5" id="r_ad7a9489d3fbd70c4669910faaa8098b5"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a>&#160;</td><td class="memItemRight"><a class="el" href="#ad7a9489d3fbd70c4669910faaa8098b5">audioService</a></td></tr>
 <tr class="memitem:a4b4c0f8767c31233d18060add72c4952" id="r_a4b4c0f8767c31233d18060add72c4952"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html">AudioUtils</a>&#160;</td><td class="memItemRight"><a class="el" href="#a4b4c0f8767c31233d18060add72c4952">audioUtils</a></td></tr>
+<tr class="memitem:a5be2f626f28b3df28cc248c42c02c820" id="r_a5be2f626f28b3df28cc248c42c02c820"><td class="memItemLeft">Task&lt;?&gt;&#160;</td><td class="memItemRight"><a class="el" href="#a5be2f626f28b3df28cc248c42c02c820">currentTask</a></td></tr>
 <tr class="memitem:a318a63b85fc63af334c5b58cc2873584" id="r_a318a63b85fc63af334c5b58cc2873584"><td class="memItemLeft">final ReadOnlyBooleanWrapper&#160;</td><td class="memItemRight"><a class="el" href="#a318a63b85fc63af334c5b58cc2873584">gridOpacityProperty</a> = new ReadOnlyBooleanWrapper(false)</td></tr>
 <tr class="memitem:aa5030b2797eb9c3ac1984830cea8dbab" id="r_aa5030b2797eb9c3ac1984830cea8dbab"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html">ImageUtils</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa5030b2797eb9c3ac1984830cea8dbab">imageUtils</a></td></tr>
 <tr class="memitem:a0fbc60abd92654034abba21115f5dc6f" id="r_a0fbc60abd92654034abba21115f5dc6f"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#a0fbc60abd92654034abba21115f5dc6f">initialized</a> = false</td></tr>
@@ -254,6 +260,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ae8073d1432e09d1b3b64ed1187b7353f" id="r_ae8073d1432e09d1b3b64ed1187b7353f"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#ae8073d1432e09d1b3b64ed1187b7353f">optionsClearSongRoleDescription</a></td></tr>
 <tr class="memitem:a9319fbf3c784e0cb9a954e9e14e2eba7" id="r_a9319fbf3c784e0cb9a954e9e14e2eba7"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a9319fbf3c784e0cb9a954e9e14e2eba7">optionsClearSongTooltip</a></td></tr>
 <tr class="memitem:a747d7489decea07cf8cafa78e7750ef5" id="r_a747d7489decea07cf8cafa78e7750ef5"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a747d7489decea07cf8cafa78e7750ef5">optionsColorAccessibleText</a></td></tr>
+<tr class="memitem:a26ff63d7b02e4ab1bcfe67b9bedd1ab5" id="r_a26ff63d7b02e4ab1bcfe67b9bedd1ab5"><td class="memItemLeft">final ObjectProperty&lt; Color &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a26ff63d7b02e4ab1bcfe67b9bedd1ab5">optionsColorProperty</a></td></tr>
 <tr class="memitem:a9fd4c40353b64f9acb38b42fc14a77e4" id="r_a9fd4c40353b64f9acb38b42fc14a77e4"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a9fd4c40353b64f9acb38b42fc14a77e4">optionsColorRoleDescription</a></td></tr>
 <tr class="memitem:afe4bda9a4e2a9bdaf18cfb33ea0e130b" id="r_afe4bda9a4e2a9bdaf18cfb33ea0e130b"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#afe4bda9a4e2a9bdaf18cfb33ea0e130b">optionsColorTooltip</a></td></tr>
 <tr class="memitem:a9e37b16a3da39078f92b4e2e013759b3" id="r_a9e37b16a3da39078f92b4e2e013759b3"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a9e37b16a3da39078f92b4e2e013759b3">optionsImageAccessibleText</a></td></tr>
@@ -362,31 +369,37 @@ Static Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a2a736732b455c4c2ad787f5e4a9a76da" name="a2a736732b455c4c2ad787f5e4a9a76da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a736732b455c4c2ad787f5e4a9a76da">&#9670;&#160;</a></span>applyAndPersistBackgroundImage()</h2>
+<a id="aae209f8a3ddfd8a72731b3fee828ca7b" name="aae209f8a3ddfd8a72731b3fee828ca7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae209f8a3ddfd8a72731b3fee828ca7b">&#9670;&#160;</a></span>applyAndPersistIfNeededBackgroundImage()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistBackgroundImage </td>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistIfNeededBackgroundImage </td>
           <td>(</td>
           <td class="paramtype">File</td>          <td class="paramname"><span class="paramname"><em>selectedFile</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GridPane</td>          <td class="paramname"><span class="paramname"><em>sudokuFX</em></span>&#160;)</td>
+          <td class="paramtype">GridPane</td>          <td class="paramname"><span class="paramname"><em>sudokuFX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>shouldPersist</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Applies a background image to the specified <code><a class="el" href="">GridPane</a></code> and persists its path in the current player's options. </p>
-<p>Validates the file before starting an asynchronous task. On success, updates the background and persists the path. All UI feedback and persistence are managed through thread-safe services.</p>
+<p>Applies a background image to the specified <code><a class="el" href="">GridPane</a></code>. </p>
+<p>Validates the file before starting an asynchronous task. On success, updates the background. Persistence of the image path occurs only if <code class="JavaDocCode">shouldPersist</code> is true. All UI feedback and persistence are managed through thread-safe services.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">selectedFile</td><td>the image file to load; may be null </td></tr>
     <tr><td class="paramname">sudokuFX</td><td>the <code><a class="el" href="">GridPane</a></code> to update; must not be null </td></tr>
+    <tr><td class="paramname">shouldPersist</td><td>true to save the file path to the player's options, false to update UI only </td></tr>
   </table>
   </dd>
 </dl>
@@ -394,37 +407,43 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a2a736732b455c4c2ad787f5e4a9a76da_cgraph.svg" width="588" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aae209f8a3ddfd8a72731b3fee828ca7b_cgraph.svg" width="588" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a37c28fa6e33f850e39a1e63e6696728d" name="a37c28fa6e33f850e39a1e63e6696728d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37c28fa6e33f850e39a1e63e6696728d">&#9670;&#160;</a></span>applyAndPersistOptionsColor()</h2>
+<a id="a0295191f6793f349fc6bc02231f01875" name="a0295191f6793f349fc6bc02231f01875"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0295191f6793f349fc6bc02231f01875">&#9670;&#160;</a></span>applyAndPersistIfNeededOptionsColor()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistOptionsColor </td>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistIfNeededOptionsColor </td>
           <td>(</td>
           <td class="paramtype">GridPane</td>          <td class="paramname"><span class="paramname"><em>sudokuFX</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>&#160;)</td>
+          <td class="paramtype">Color</td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean</td>          <td class="paramname"><span class="paramname"><em>shouldPersist</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code> and persists it in the current player's options if it has changed. </p>
-<p>The color is converted to a hex string including alpha (RRGGBBAA) and stored in a copy of the current <code><a class="el" href="">OptionsDto</a></code> with an empty image path. If the color is identical to the currently persisted value, no database update occurs.</p>
-<p>On successful persistence, the GridPane background is updated. On failure, the exception is logged and an error toast is shown to the user.</p>
+<p>Applies the given color as the background of the specified <code><a class="el" href="">GridPane</a></code>. </p>
+<p>Optionally persists the color in the current player's options.</p>
+<p>The color is converted to a hex string (RRGGBBAA). If persistence is enabled, the update only occurs if the color differs from the currently stored value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sudokuFX</td><td>the <code><a class="el" href="">GridPane</a></code> to update; must not be null </td></tr>
-    <tr><td class="paramname">color</td><td>the color to apply and persist; must not be null </td></tr>
+    <tr><td class="paramname">color</td><td>the color to apply; must not be null </td></tr>
+    <tr><td class="paramname">shouldPersist</td><td>true to save to database, false for UI update only </td></tr>
   </table>
   </dd>
 </dl>
@@ -438,7 +457,45 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-3-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a37c28fa6e33f850e39a1e63e6696728d_cgraph.svg" width="576" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a0295191f6793f349fc6bc02231f01875_cgraph.svg" width="576" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae69e26e90632888bdc5a5223219578d3" name="ae69e26e90632888bdc5a5223219578d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69e26e90632888bdc5a5223219578d3">&#9670;&#160;</a></span>applyOptionsToUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyOptionsToUI </td>
+          <td>(</td>
+          <td class="paramtype">OptionsDto</td>          <td class="paramname"><span class="paramname"><em>options</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">GridPane</td>          <td class="paramname"><span class="paramname"><em>sudokuFX</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applique les options visuelles au composant sudokuFX. </p>
+<p>Méthode factorisée : ne contient AUCUN appel de persistance. </p>
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ae69e26e90632888bdc5a5223219578d3_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -466,11 +523,11 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks whether the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></code> has been initialized via <code><a class="el" href="#a50c7fa94b3ef68fba6c678d9825bfeb6">init(GridPane, ColorPicker)</a></code>. </p>
+<p>Checks whether the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></code> has been initialized via <code><a class="el" href="#a231db409f6a7e4cb554d176ea8c7a3b1">init(GridPane)</a></code>. </p>
 <p>If the menu options have not been initialized, this method throws an exception to prevent operations on an uninitialized state.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IllegalStateException</td><td>if <code><a class="el" href="#a50c7fa94b3ef68fba6c678d9825bfeb6">init(GridPane, ColorPicker)</a></code> has not been called </td></tr>
+    <tr><td class="paramname">IllegalStateException</td><td>if <code><a class="el" href="#a231db409f6a7e4cb554d176ea8c7a3b1">init(GridPane)</a></code> has not been called </td></tr>
   </table>
   </dd>
 </dl>
@@ -543,10 +600,10 @@ Static Private Attributes</h2></td></tr>
 
 <p>Creates a localized binding combining a formatted message and a suffix. </p>
 <p>Updates when locale or any of the given dependencies change. </p>
-<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ab375565a060bffec779b340dc14f7c43_cgraph.svg" width="608" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -625,10 +682,10 @@ Static Private Attributes</h2></td></tr>
 
 <p>Creates a formatted localized binding with one dynamic argument. </p>
 <p>Updates when locale or any of the given dependencies change. </p>
-<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-5-content" class="dyncontent" style="display:none;">
+<div id="dynsection-6-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a218b89fb8384b0edf79c7c1d70f9b292_cgraph.svg" width="608" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -719,8 +776,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a50c7fa94b3ef68fba6c678d9825bfeb6" name="a50c7fa94b3ef68fba6c678d9825bfeb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a50c7fa94b3ef68fba6c678d9825bfeb6">&#9670;&#160;</a></span>init()</h2>
+<a id="a231db409f6a7e4cb554d176ea8c7a3b1" name="a231db409f6a7e4cb554d176ea8c7a3b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a231db409f6a7e4cb554d176ea8c7a3b1">&#9670;&#160;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -728,12 +785,8 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.init </td>
           <td>(</td>
-          <td class="paramtype">GridPane</td>          <td class="paramname"><span class="paramname"><em>sudokuFX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">GridPane</td>          <td class="paramname"><span class="paramname"><em>sudokuFX</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">ColorPicker</td>          <td class="paramname"><span class="paramname"><em>menuOptionsButtonColor</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -753,21 +806,20 @@ Selected song </li>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sudokuFX</td><td>the GridPane to apply background settings; must not be <code class="JavaDocCode">null</code> </td></tr>
-    <tr><td class="paramname">menuOptionsButtonColor</td><td>the ColorPicker to synchronize with the current color; must not be <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">NullPointerException</td><td>if any of the parameters are <code class="JavaDocCode">null</code> </td></tr>
+    <tr><td class="paramname">NullPointerException</td><td>if <code class="JavaDocCode">sudokuFX</code> is <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-6-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-6-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a50c7fa94b3ef68fba6c678d9825bfeb6_cgraph.svg" width="100%" height="421"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a231db409f6a7e4cb554d176ea8c7a3b1_cgraph.svg" width="100%" height="433"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -796,10 +848,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the accessibility label for the mute button, based on the current mute state. </p>
-<div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-7-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-7-content" class="dyncontent" style="display:none;">
+<div id="dynsection-8-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a8920334361b12271411cb8f6b2e32a8a_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -856,10 +908,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the visible label for the mute button, reflecting the current mute state. </p>
-<div id="dynsection-8" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-8-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-8-content" class="dyncontent" style="display:none;">
+<div id="dynsection-9-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_af241419d9819c8b2012c3a0d3638ac2f_cgraph.svg" width="516" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -889,10 +941,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the tooltip for the mute button, combining dynamic mute info and submenu role. </p>
-<div id="dynsection-9" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-9-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-9-content" class="dyncontent" style="display:none;">
+<div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ab5fddee7152e0b956c92a65fe426051c_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -922,10 +974,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the accessibility label for the opacity button, based on the inverse of the current grid opacity state. </p>
-<div id="dynsection-10" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-10-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-10-content" class="dyncontent" style="display:none;">
+<div id="dynsection-11-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ac0e36364f613ccaed2292028fcdbbd60_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -982,10 +1034,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the visible label for the opacity button, reflecting the current grid opacity value. </p>
-<div id="dynsection-11" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-11-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-11-content" class="dyncontent" style="display:none;">
+<div id="dynsection-12-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aa1571dd95cf44f265efbd2bd5e07a95f_cgraph.svg" width="570" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1015,10 +1067,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the tooltip for the opacity button, combining dynamic label and submenu role. </p>
-<div id="dynsection-12" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-12-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-12-content" class="dyncontent" style="display:none;">
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aeb626611d7bd2c093f2043b67f4476b4_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1048,10 +1100,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the accessibility label for the song button, depending on whether the song field is empty. </p>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a6d84c23dacad6dd546e8574da7d69b46_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1081,10 +1133,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the visible label for the song button, adapting to whether a song is present or not. </p>
-<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a7c45bfa11fa017fafba683a9c63c60b2_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1114,10 +1166,10 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Creates the tooltip for the song button, combining dynamic song info and submenu role. </p>
-<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a7ef223f7e057ce1c5d33dd4aebe3f337_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1206,10 +1258,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aea9e28fdb65810f49af1900c17d5b26c_cgraph.svg" width="283" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1229,10 +1281,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a10d3d8c0a4d60f61a33f963e3e7b5959_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1252,10 +1304,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aeef43cf8f6c8a4e017a0aea2b856a1cc_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1275,10 +1327,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a4635b8ec2a3b98036c990918e02dc45a_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1298,12 +1350,32 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a38413e89ff9529a68f90a23d6a392c1b_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a8c12ec83d606adb1ef04d8129fb6919b" name="a8c12ec83d606adb1ef04d8129fb6919b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c12ec83d606adb1ef04d8129fb6919b">&#9670;&#160;</a></span>optionsColorProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ObjectProperty&lt; Color &gt; fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.optionsColorProperty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the options color property, allowing UI components to bind to or observe changes in the selected color. </p>
+<dl class="section return"><dt>Returns</dt><dd>the ObjectProperty managing the options color </dd></dl>
 
 </div>
 </div>
@@ -1321,10 +1393,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a5f293e9233bd045bc8fd3ce88e255ea9_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1344,10 +1416,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-23" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-22-content" class="dyncontent" style="display:none;">
+<div id="dynsection-23-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ae24799a8e71f0ad37cdcc7f69f638765_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1367,10 +1439,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-23" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-23-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-24" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-23-content" class="dyncontent" style="display:none;">
+<div id="dynsection-24-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a757e0aeb912648ef046ea87468bf252f_cgraph.svg" width="255" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1390,10 +1462,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-24" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-24-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-25" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-24-content" class="dyncontent" style="display:none;">
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a2710e7a7e48792053b13d387e7410131_cgraph.svg" width="255" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1413,10 +1485,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-25" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-26" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div id="dynsection-26-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a553357d1eb4ad0b9506f48329d9502e5_cgraph.svg" width="255" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1436,10 +1508,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-26" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-26-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-27" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-26-content" class="dyncontent" style="display:none;">
+<div id="dynsection-27-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a9dc41dd19e6ee112d3e6830acafd4c02_cgraph.svg" width="255" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1459,10 +1531,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-27" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-27-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-28" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-27-content" class="dyncontent" style="display:none;">
+<div id="dynsection-28-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_abd00c6d92fd2700564e562b13cef6c36_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1482,10 +1554,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-28" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-28-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-29" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-28-content" class="dyncontent" style="display:none;">
+<div id="dynsection-29-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a1dad69ed037fea7f49ab3ba6281b868d_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1505,10 +1577,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-29" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-29-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-30" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-29-content" class="dyncontent" style="display:none;">
+<div id="dynsection-30-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a5816131e73707fe8d832cf6d822fa27a_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1528,10 +1600,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-30" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-30-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-31" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-30-content" class="dyncontent" style="display:none;">
+<div id="dynsection-31-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a3c561508e151b96c60e98f0ae130fb69_cgraph.svg" width="251" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1551,10 +1623,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-31" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-31-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-32" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-31-content" class="dyncontent" style="display:none;">
+<div id="dynsection-32-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a2ce39b7deaec4d2c9884682528474969_cgraph.svg" width="248" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1574,10 +1646,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-32" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-32-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-33" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-32-content" class="dyncontent" style="display:none;">
+<div id="dynsection-33-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ac34e184de17a8668e0c45261749b2cd3_cgraph.svg" width="248" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1597,10 +1669,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-33" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-33-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-34" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-33-content" class="dyncontent" style="display:none;">
+<div id="dynsection-34-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aa9f69ba482487d87941a7e83385ccd92_cgraph.svg" width="248" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1620,10 +1692,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-34" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-34-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-35" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-34-content" class="dyncontent" style="display:none;">
+<div id="dynsection-35-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aa6c990634375c53a41092f33ae477e97_cgraph.svg" width="248" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1643,10 +1715,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-35" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-35-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-36" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-35-content" class="dyncontent" style="display:none;">
+<div id="dynsection-36-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a3c4fd3162c5383e0fb6e7698660ef2be_cgraph.svg" width="248" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1666,10 +1738,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-36" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-36-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-37" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-36-content" class="dyncontent" style="display:none;">
+<div id="dynsection-37-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aca17fe144649e70b1415e4c9a79e0a8f_cgraph.svg" width="264" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1689,10 +1761,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-37" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-37-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-38" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-37-content" class="dyncontent" style="display:none;">
+<div id="dynsection-38-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a8c2ef1dce55ef5f0721a40bac34270c1_cgraph.svg" width="264" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1712,10 +1784,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-38" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-38-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-39" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-38-content" class="dyncontent" style="display:none;">
+<div id="dynsection-39-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ab4199b208f3b8f08f12216cdb768c41f_cgraph.svg" width="264" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1735,10 +1807,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-39" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-39-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-40" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-39-content" class="dyncontent" style="display:none;">
+<div id="dynsection-40-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a07b24db12acfeacb654cd863fb5bbfad_cgraph.svg" width="264" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1758,10 +1830,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-40" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-40-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-41" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-40-content" class="dyncontent" style="display:none;">
+<div id="dynsection-41-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a416dd2806dcdf3ed1e916e32478694e4_cgraph.svg" width="264" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1781,10 +1853,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-41" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-41-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-42" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-41-content" class="dyncontent" style="display:none;">
+<div id="dynsection-42-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a95cb440d4511baa1fb9478ee18480cfb_cgraph.svg" width="264" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1804,10 +1876,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-42" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-42-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-43" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-42-content" class="dyncontent" style="display:none;">
+<div id="dynsection-43-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ace93df87454e4cefaa1b2c46c4fd2633_cgraph.svg" width="264" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1827,10 +1899,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-43" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-43-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-44" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-43-content" class="dyncontent" style="display:none;">
+<div id="dynsection-44-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aaabad417c605a62eef21446c4e8b27b3_cgraph.svg" width="264" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1850,10 +1922,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-44" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-44-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-45" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-44-content" class="dyncontent" style="display:none;">
+<div id="dynsection-45-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a3de18f99452f027eeafc866818b921f7_cgraph.svg" width="247" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1873,10 +1945,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-45" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-45-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-46" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-46-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-45-content" class="dyncontent" style="display:none;">
+<div id="dynsection-46-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a4c9eb5a4f0fdadf9dfab68d2e6efe100_cgraph.svg" width="250" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1896,10 +1968,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-46" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-46-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-47" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-46-content" class="dyncontent" style="display:none;">
+<div id="dynsection-47-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ade36733ec6e018d4a8e5df1f5d121902_cgraph.svg" width="250" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1919,10 +1991,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-47" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-47-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-48" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-48-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-47-content" class="dyncontent" style="display:none;">
+<div id="dynsection-48-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aef5ed0bb22bcb7d342bf4641ca4af116_cgraph.svg" width="250" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1942,10 +2014,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-48" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-48-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-49" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-48-content" class="dyncontent" style="display:none;">
+<div id="dynsection-49-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a01380caf59b1135d5a7e05ad500cb991_cgraph.svg" width="250" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1965,10 +2037,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-49" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-49-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-50" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-50-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-49-content" class="dyncontent" style="display:none;">
+<div id="dynsection-50-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a8d59d35f06ab5ebf9833a140ef0c32a0_cgraph.svg" width="244" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1988,10 +2060,10 @@ Selected song </li>
         </tr>
       </table>
 </div><div class="memdoc">
-<div id="dynsection-50" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-50-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-51" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-51-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-50-content" class="dyncontent" style="display:none;">
+<div id="dynsection-51-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a2582c58765253be7838375ba8895471a_cgraph.svg" width="258" height="94"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -2086,11 +2158,34 @@ Selected song </li>
 </div><div class="memdoc">
 
 <p>Resets the song path by clearing the current selection, persisting the change, and showing a toast notification. </p>
-<div id="dynsection-51" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-51-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-52" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-52-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-51-content" class="dyncontent" style="display:none;">
+<div id="dynsection-52-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a053a37df40819f189c10a076302ec47c_cgraph.svg" width="574" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a4b6078df49079d667e9f1d6e6852af93" name="a4b6078df49079d667e9f1d6e6852af93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b6078df49079d667e9f1d6e6852af93">&#9670;&#160;</a></span>restoreCurrentOptions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.restoreCurrentOptions </td>
+          <td>(</td>
+          <td class="paramtype">GridPane</td>          <td class="paramname"><span class="paramname"><em>sudokuFX</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div id="dynsection-53" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-53-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-53-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_a4b6078df49079d667e9f1d6e6852af93_cgraph.svg" width="100%" height="476"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -2118,64 +2213,12 @@ Selected song </li>
   </table>
   </dd>
 </dl>
-<div id="dynsection-52" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-52-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-54" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-54-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-52-content" class="dyncontent" style="display:none;">
+<div id="dynsection-54-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_ad2431f22d487e230013fec9a9ff6fc20_cgraph.svg" width="546" height="120"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
-
-</div>
-</div>
-<a id="a3b1dee2b684cd6f89f245ff46623b8a5" name="a3b1dee2b684cd6f89f245ff46623b8a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b1dee2b684cd6f89f245ff46623b8a5">&#9670;&#160;</a></span>setColorFromModel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.setColorFromModel </td>
-          <td>(</td>
-          <td class="paramtype">GridPane</td>          <td class="paramname"><span class="paramname"><em>sudokuFX</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ColorPicker</td>          <td class="paramname"><span class="paramname"><em>menuOptionsButtonColor</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>colorValueFromModel</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the background color of the GridPane and updates the ColorPicker based on the color value retrieved from the model. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sudokuFX</td><td>the GridPane to update (must not be null) </td></tr>
-    <tr><td class="paramname">menuOptionsButtonColor</td><td>the ColorPicker to update (must not be null) </td></tr>
-    <tr><td class="paramname">colorValueFromModel</td><td>the hex color string from the model (must not be null or blank, e.g., "99b3ffcd") </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">NullPointerException</td><td>if any parameter is null </td></tr>
-    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">colorValueFromModel</code> is blank </td></tr>
-    <tr><td class="paramname">NumberFormatException</td><td>if <code class="JavaDocCode">colorValueFromModel</code> is not a valid hex number or too large for an int </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -2215,10 +2258,10 @@ Selected song </li>
 gridOpacityProperty</code>, and returns the actual updated value. </p>
 <p>On success, an info toast indicates the new state. On failure, the exception is logged, an error toast is shown, and the property is restored to its previous value.</p>
 <dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if opaque mode is now active, <code class="JavaDocCode">false</code> if transparent </dd></dl>
-<div id="dynsection-53" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-53-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-55" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-55-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-53-content" class="dyncontent" style="display:none;">
+<div id="dynsection-55-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aeb35d0d692fc89bd84578617ab2201b7_cgraph.svg" width="586" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -2241,12 +2284,45 @@ gridOpacityProperty</code>, and returns the actual updated value. </p>
 
 <p>Toggles the audio mute state, persists the new value in <code><a class="el" href="">OptionsDto</a></code>, updates the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html">AudioService</a></code>, and reflects the change in <code class="JavaDocCode">muteProperty</code>. </p>
 <p>On success, a user-friendly toast indicates the new mute state. On failure, the exception is logged and an error toast with details is displayed. </p>
-<div id="dynsection-54" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-54-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-56" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-56-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-54-content" class="dyncontent" style="display:none;">
+<div id="dynsection-56-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_aae8674e39764f25b12906bd03a537c6b_cgraph.svg" width="568" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a37e1c6ac123057100967340aa9e1c18f" name="a37e1c6ac123057100967340aa9e1c18f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37e1c6ac123057100967340aa9e1c18f">&#9670;&#160;</a></span>updateSongNameFromPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.updateSongNameFromPath </td>
+          <td>(</td>
+          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>rawPath</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the song display name by extracting the filename from the provided path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rawPath</td><td>the full file path string; may be blank or null </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2306,6 +2382,28 @@ gridOpacityProperty</code>, and returns the actual updated value. </p>
       <table class="memname">
         <tr>
           <td class="memname">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html">AudioUtils</a> fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.audioUtils</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5be2f626f28b3df28cc248c42c02c820" name="a5be2f626f28b3df28cc248c42c02c820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5be2f626f28b3df28cc248c42c02c820">&#9670;&#160;</a></span>currentTask</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task&lt;?&gt; fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.currentTask</td>
         </tr>
       </table>
   </td>
@@ -2689,6 +2787,30 @@ gridOpacityProperty</code>, and returns the actual updated value. </p>
 </table>
 </div><div class="memdoc">
 
+</div>
+</div>
+<a id="a26ff63d7b02e4ab1bcfe67b9bedd1ab5" name="a26ff63d7b02e4ab1bcfe67b9bedd1ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26ff63d7b02e4ab1bcfe67b9bedd1ab5">&#9670;&#160;</a></span>optionsColorProperty</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final ObjectProperty&lt;Color&gt; fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.optionsColorProperty</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">                                          =</div>
+<div class="line"><span class="keyword">new</span> SimpleObjectProperty&lt;&gt;(Color.WHITE)</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9fd4c40353b64f9acb38b42fc14a77e4" name="a9fd4c40353b64f9acb38b42fc14a77e4"></a>

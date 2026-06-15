@@ -18,6 +18,8 @@ var annotated_dup =
               [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n" ],
               [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt" ],
               [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name" ],
+              [ "PlayerConstants", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_constants.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_constants" ],
+              [ "PlayerNameStatus", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status" ],
               [ "ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size" ],
               [ "ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels" ],
               [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls" ]
@@ -117,7 +119,7 @@ var annotated_dup =
             [ "CoordinatorUTest", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test" ]
           ] ],
           [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", [
-            [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", null ],
+            [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository" ],
             [ "GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html", null ],
             [ "GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
             [ "MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],
@@ -127,6 +129,7 @@ var annotated_dup =
           ] ],
           [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
             [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", [
+              [ "GameLevelService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service" ],
               [ "GridService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service" ],
               [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service" ],
               [ "PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service" ],
@@ -285,8 +288,7 @@ var annotated_dup =
             [ "MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test" ],
             [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model" ],
             [ "MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model" ],
-            [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ],
-            [ "PlayerNameStatus", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status.html", "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status" ]
+            [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ]
           ] ],
           [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1_launcher" ],
           [ "SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main" ]

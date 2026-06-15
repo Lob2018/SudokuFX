@@ -143,7 +143,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
 Package Functions</h2></td></tr>
 <tr class="memitem:a649020523675d71d2bdf3040a1aa0c13" id="r_a649020523675d71d2bdf3040a1aa0c13"><td class="memItemLeft">private&lt; T &gt; void&#160;</td><td class="memItemRight"><a class="el" href="#a649020523675d71d2bdf3040a1aa0c13">setupBidirectionalSelection</a> (ListView&lt; T &gt; listView, Property&lt; T &gt; selectedProperty)</td></tr>
-<tr class="memdesc:a649020523675d71d2bdf3040a1aa0c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds the selection of a <code><a class="el" href="">ListView</a></code> bidirectionally with a <code><a class="el" href="">Property</a></code>.  <br /></td></tr>
+<tr class="memdesc:a649020523675d71d2bdf3040a1aa0c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures a <code><a class="el" href="">ListView</a></code> to update the provided <code><a class="el" href="">Property</a></code> only upon explicit user confirmation.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -288,13 +288,12 @@ Bidirectional selection binding between the view and its ViewModel </li>
 </table>
 </div><div class="memdoc">
 
-<p>Binds the selection of a <code><a class="el" href="">ListView</a></code> bidirectionally with a <code><a class="el" href="">Property</a></code>. </p>
-<p>Ensures that changes in the UI reflect in the ViewModel and vice versa.</p>
+<p>Configures a <code><a class="el" href="">ListView</a></code> to update the provided <code><a class="el" href="">Property</a></code> only upon explicit user confirmation. </p>
+<p>This method sets up event handlers for <code class="JavaDocCode">ENTER</code>/<code class="JavaDocCode">SPACE</code> key presses and double-click mouse events to commit the current list selection to the model. This prevents premature updates during list navigation.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">listView</td><td>the ListView whose selection is bound (must not be <code class="JavaDocCode">null</code>) </td></tr>
-    <tr><td class="paramname">selectedProperty</td><td>the property representing the selected item (must not be <code class="JavaDocCode"><br/>
-    null</code>) </td></tr>
+    <tr><td class="paramname">listView</td><td>the <code><a class="el" href="">ListView</a></code> to configure; must not be <code class="JavaDocCode">null</code> </td></tr>
+    <tr><td class="paramname">selectedProperty</td><td>the model property to be updated upon confirmation; must not be <code class="JavaDocCode">null</code> </td></tr>
     <tr><td class="paramname">&lt;T&gt;</td><td>the type of items in the ListView </td></tr>
   </table>
   </dd>

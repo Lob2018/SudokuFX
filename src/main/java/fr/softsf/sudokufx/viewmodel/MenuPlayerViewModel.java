@@ -9,8 +9,6 @@ import java.text.MessageFormat;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
-
-import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;
@@ -30,6 +28,7 @@ import org.springframework.stereotype.Component;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.PlayerConstants;
+import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
 import fr.softsf.sudokufx.common.util.MyRegex;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;

@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.service.business.GameLevelService" name="fr.softsf.sudokufx.service.business.GameLevelService">
+<area shape="rect" id="Node000001" title="Service managing fr.softsf.sudokufx.model.GameLevel entities." alt="" coords="5,313,226,452"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html" title="Repository interface for GameLevel entities." alt="" coords="28,140,204,241"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,241,118,296,113,296,113,241"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="28,5,204,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,106,118,140,113,140,113,106"/>
+</map>

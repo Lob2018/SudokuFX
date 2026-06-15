@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.service.business.PlayerService.switchAndSelectNewPlayer" name="fr.softsf.sudokufx.service.business.PlayerService.switchAndSelectNewPlayer">
+<area shape="rect" id="Node000001" title="Atomically switches the selected player status." alt="" coords="5,39,274,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#aba49426ee6f1106aeb7cac16ebd06e91" title="Internal utility to update player selection state and persist changes." alt="" coords="322,39,558,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,57,306,57,306,63,274,63"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ade99f107878b74490ae3d014ff294f60" title="Sets the selection flag." alt="" coords="606,5,772,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="558,42,590,37,591,42,559,47"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="606,72,772,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="559,73,591,78,590,83,558,78"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="820,72,990,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="773,91,804,91,804,96,773,96"/>
+</map>

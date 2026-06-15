@@ -231,7 +231,7 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 <tr class="memitem:a8214e802af406ccfc0129318f77bf170" id="r_a8214e802af406ccfc0129318f77bf170"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8214e802af406ccfc0129318f77bf170">playerMenuInitialization</a> ()</td></tr>
 <tr class="memdesc:a8214e802af406ccfc0129318f77bf170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes all player menu components by configuring JavaFX property bindings, event handlers, and input lifecycle listeners.  <br /></td></tr>
 <tr class="memitem:a805ba50257c2565844220d96b618c2c9" id="r_a805ba50257c2565844220d96b618c2c9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a805ba50257c2565844220d96b618c2c9">restoreCurrentGridLevelFromModel</a> ()</td></tr>
-<tr class="memdesc:a805ba50257c2565844220d96b618c2c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the current user-entered grid from the model and updates the selected level and completion percentage in the menu.  <br /></td></tr>
+<tr class="memdesc:a805ba50257c2565844220d96b618c2c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes the menu UI with the current game model state.  <br /></td></tr>
 <tr class="memitem:aebaf39d672a3997a3b90c42333b0689b" id="r_aebaf39d672a3997a3b90c42333b0689b"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aebaf39d672a3997a3b90c42333b0689b">saveMenuInitialization</a> ()</td></tr>
 <tr class="memdesc:aebaf39d672a3997a3b90c42333b0689b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes bindings and event listeners for the save menu components.  <br /></td></tr>
 <tr class="memitem:afc29c6470627f78c17cd71121df17d21" id="r_afc29c6470627f78c17cd71121df17d21"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#afc29c6470627f78c17cd71121df17d21">solveMenuInitialization</a> ()</td></tr>
@@ -240,9 +240,11 @@ AUTO_HIDE_MINI_MENU_DELAY_MS</code> milliseconds if it is still active and the "
 <tr class="memdesc:aa73cee45a3fae93369d5d33cb8ce90c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establishes a unidirectional binding between the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html" title="A custom JavaFX GridPane that displays a two-phase animated spinner using Unicode icons.">SpinnerGridPane</a> visibility and the SpinnerViewModel loading state.  <br /></td></tr>
 <tr class="memitem:a1b8c6fff77d4f65ca424cc6a2c943b19" id="r_a1b8c6fff77d4f65ca424cc6a2c943b19"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1b8c6fff77d4f65ca424cc6a2c943b19">stopAudioOnExitInitialization</a> ()</td></tr>
 <tr class="memdesc:a1b8c6fff77d4f65ca424cc6a2c943b19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a listener on the primary stage to stop all audio when the application window is closed.  <br /></td></tr>
+<tr class="memitem:ab932816eea56f364964cee4386ce22c0" id="r_ab932816eea56f364964cee4386ce22c0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab932816eea56f364964cee4386ce22c0">synchronizeUIAfterPlayerSwitch</a> ()</td></tr>
+<tr class="memdesc:ab932816eea56f364964cee4386ce22c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes the user interface with the current player's profile data.  <br /></td></tr>
 <tr class="memitem:ad474475f22dddcdfa8ccfc64bddef3dc" id="r_ad474475f22dddcdfa8ccfc64bddef3dc"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ad474475f22dddcdfa8ccfc64bddef3dc">toasterInitialization</a> ()</td></tr>
 <tr class="memdesc:ad474475f22dddcdfa8ccfc64bddef3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the toaster by subscribing to the <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html" title="A centralized service for sending toast notifications to the UI.">ToasterService</a>.  <br /></td></tr>
-<tr class="memitem:a0c413fa0dec2327ebc2348e34c9e7135" id="r_a0c413fa0dec2327ebc2348e34c9e7135"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0c413fa0dec2327ebc2348e34c9e7135">updatePlayerNamePseudoClasses</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status.html">PlayerNameStatus</a> status)</td></tr>
+<tr class="memitem:a0c413fa0dec2327ebc2348e34c9e7135" id="r_a0c413fa0dec2327ebc2348e34c9e7135"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a0c413fa0dec2327ebc2348e34c9e7135">updatePlayerNamePseudoClasses</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html">PlayerNameStatus</a> status)</td></tr>
 <tr class="memdesc:a0c413fa0dec2327ebc2348e34c9e7135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the CSS pseudo-classes of the new player button based on the provided validation status.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-attribs" class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -975,7 +977,7 @@ OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class. </p>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-5-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_ac88a722293c271e57a26d51c3cf01ffc_cgraph.svg" width="468" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_ac88a722293c271e57a26d51c3cf01ffc_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1337,7 +1339,7 @@ OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class. </p>
 <div id="dynsection-10-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a9637b2403823a125ec7a5bf275401609_cgraph.svg" width="523" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a9637b2403823a125ec7a5bf275401609_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1362,7 +1364,7 @@ OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class. </p>
 <div id="dynsection-11-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-11-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a1a99e6862d927a588ef76899251a631b_cgraph.svg" width="523" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a1a99e6862d927a588ef76899251a631b_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1813,17 +1815,18 @@ Initializes the grid and active menu manager. </li>
 </div><div class="memdoc">
 
 <p>Initializes and binds all UI components of the options menu to the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></code>. </p>
-<p>Loads saved options from the database and applies them to the corresponding UI controls.</p>
 <p>This method performs the following tasks:</p>
 <ul>
 <li>
 Binds accessibility texts, tooltips, role descriptions, and labels for all options buttons. </li>
 <li>
-Synchronizes user interactions (color selection, opacity adjustment, mute toggle, etc.) with the ViewModel. </li>
+Synchronizes user interactions (color selection, opacity, mute, etc.) with the ViewModel using bidirectional bindings and listeners. </li>
 <li>
-Loads and applies saved configuration settings to the UI controls, including background color, background image, grid transparency, etc. </li>
+Configures reactive UI states: clear song button visibility and pseudo-class styling are dynamically bound to the song availability state. </li>
 <li>
-<b>Configures reactive UI states: song clear button visibility and song selection pseudo-class are bound to song availability state.</b> </li>
+Performs the final ViewModel initialization to apply loaded configuration settings to the UI controls. </li>
+<li>
+Configures the initial opacity mode based on the current persisted state. </li>
 </ul>
 <div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-16-summary" class="dynsummary" style="display:block;">
@@ -1861,17 +1864,17 @@ Loads and applies saved configuration settings to the UI controls, including bac
 <p>This method sets up the following structural behaviors:</p>
 <ul>
 <li>
-Binds accessible texts, tooltips, and role descriptions for static and dynamic menu buttons. </li>
+Binds accessibility texts, tooltips, role descriptions, and labels for all buttons. </li>
 <li>
-Configures the player name input text field with bidirectional value binding and input character filtering. </li>
+Configures the player name input text field with bidirectional binding, character filtering, and real-time validation. </li>
 <li>
-Manages the new player creation state machine by handling edit mode transitions, focus requests, and real-time validation status tracking. </li>
+Manages the creation state machine, handling edit mode transitions, focus management, and commit/rollback triggers (ENTER/ESCAPE). </li>
 <li>
-Registers keyboard and action triggers to commit data on ENTER or rollback changes on ESCAPE. </li>
+Synchronizes component focus and business logic validation statuses with custom CSS pseudo-classes. </li>
 <li>
-Synchronizes component focus states and business logic validation statuses with custom CSS pseudo-classes. </li>
+Registers reactive observers to synchronize the UI automatically when the active player is switched. </li>
 <li>
-Delegates the multi-column player layout initialization to the structural list view factory. </li>
+Delegates the multi-column layout initialization to the structural list view factory. </li>
 </ul>
 <div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-17-summary" class="dynsummary" style="display:block;">
@@ -1905,8 +1908,14 @@ Delegates the multi-column player layout initialization to the structural list v
 </table>
 </div><div class="memdoc">
 
-<p>Loads the current user-entered grid from the model and updates the selected level and completion percentage in the menu. </p>
-<p>Used to synchronize the ViewModel with the latest grid state stored in the model. </p>
+<p>Synchronizes the menu UI with the current game model state. </p>
+<p>Resets the grid view and level selection, then retrieves the active grid from the model to update the UI with the corresponding level and completion percentage. Finally, synchronizes the grid opacity mode to ensure visual consistency. </p>
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a805ba50257c2565844220d96b618c2c9_cgraph.svg" width="468" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>
@@ -2020,6 +2029,40 @@ Delegates the multi-column player layout initialization to the structural list v
 
 </div>
 </div>
+<a id="ab932816eea56f364964cee4386ce22c0" name="ab932816eea56f364964cee4386ce22c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab932816eea56f364964cee4386ce22c0">&#9670;&#160;</a></span>synchronizeUIAfterPlayerSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.main.MainView.synchronizeUIAfterPlayerSwitch </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Synchronizes the user interface with the current player's profile data. </p>
+<p>Updates the application locale, restores the grid level state, applies specific player options (such as background and colors), and adjusts the grid opacity mode based on the new player's configuration. </p>
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_ab932816eea56f364964cee4386ce22c0_cgraph.svg" width="100%" height="377"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="ad474475f22dddcdfa8ccfc64bddef3dc" name="ad474475f22dddcdfa8ccfc64bddef3dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad474475f22dddcdfa8ccfc64bddef3dc">&#9670;&#160;</a></span>toasterInitialization()</h2>
 
@@ -2060,7 +2103,7 @@ Delegates the multi-column player layout initialization to the structural list v
         <tr>
           <td class="memname">void fr.softsf.sudokufx.view.main.MainView.updatePlayerNamePseudoClasses </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status.html">PlayerNameStatus</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html">PlayerNameStatus</a></td>          <td class="paramname"><span class="paramname"><em>status</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2072,17 +2115,17 @@ Delegates the multi-column player layout initialization to the structural list v
 </div><div class="memdoc">
 
 <p>Updates the CSS pseudo-classes of the new player button based on the provided validation status. </p>
-<p>Clears existing status pseudo-classes before applying the one corresponding to the given <code><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_player_name_status.html">PlayerNameStatus</a></code>.</p>
+<p>Clears existing status pseudo-classes before applying the one corresponding to the given <code><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html">PlayerNameStatus</a></code>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">status</td><td>the current validation status to reflect in the UI; if null, no state is applied </td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a0c413fa0dec2327ebc2348e34c9e7135_cgraph.svg" width="583" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 

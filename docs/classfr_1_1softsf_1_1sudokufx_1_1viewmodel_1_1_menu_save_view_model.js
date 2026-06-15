@@ -11,6 +11,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model =
     [ "createBackupGameDto", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a2902ae5da523abf8235a857f79449f24", null ],
     [ "createFormattedAndConcatenatedBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#aba24d6de5b6e7dcd4d1ad46be452c356", null ],
     [ "createStringBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a8ce6e7af8609d5814b7c1635a89be8ad", null ],
+    [ "deleteGame", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#ae074de536bcdd80e8726d329f38a6700", null ],
     [ "getBackups", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a9096435064acd108290c71d223487b2a", null ],
     [ "loadBackups", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#aeb1df2a7bdda6f09e83befb9bc93a60e", null ],
     [ "maxiBackupAccessibleTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a87d4a065eb583cd28939b0a94d0d9309", null ],

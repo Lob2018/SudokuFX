@@ -119,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>import java.io.File;</code><br />
-<code>import java.nio.file.Path;</code><br />
 <code>import java.nio.file.Paths;</code><br />
 <code>import java.text.MessageFormat;</code><br />
 <code>import java.util.Objects;</code><br />
@@ -127,10 +126,12 @@ document.addEventListener('DOMContentLoaded', () => {
 <code>import javafx.beans.Observable;</code><br />
 <code>import javafx.beans.binding.Bindings;</code><br />
 <code>import javafx.beans.binding.StringBinding;</code><br />
+<code>import javafx.beans.property.ObjectProperty;</code><br />
 <code>import javafx.beans.property.ReadOnlyBooleanProperty;</code><br />
 <code>import javafx.beans.property.ReadOnlyBooleanWrapper;</code><br />
 <code>import javafx.beans.property.ReadOnlyStringWrapper;</code><br />
-<code>import javafx.scene.control.ColorPicker;</code><br />
+<code>import javafx.beans.property.SimpleObjectProperty;</code><br />
+<code>import javafx.concurrent.Task;</code><br />
 <code>import javafx.scene.image.Image;</code><br />
 <code>import javafx.scene.layout.Background;</code><br />
 <code>import javafx.scene.layout.BackgroundFill;</code><br />
@@ -146,7 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
 <code>import fr.softsf.sudokufx.common.util.AudioUtils;</code><br />
 <code>import fr.softsf.sudokufx.common.util.ImageMeta;</code><br />
 <code>import fr.softsf.sudokufx.common.util.ImageUtils;</code><br />
-<code>import fr.softsf.sudokufx.common.util.PathValidator;</code><br />
 <code>import fr.softsf.sudokufx.dto.OptionsDto;</code><br />
 <code>import fr.softsf.sudokufx.service.business.OptionsService;</code><br />
 <code>import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;</code><br />

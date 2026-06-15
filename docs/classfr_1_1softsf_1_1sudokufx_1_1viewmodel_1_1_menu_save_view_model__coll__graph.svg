@@ -143,12 +143,12 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-230.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellDelete</text>
 <text text-anchor="start" x="14" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
 <text text-anchor="start" x="4" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObservableList&lt; GameDto</text>
-<text text-anchor="start" x="14" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getBackups()</text>
+<text text-anchor="start" x="14" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00">void deleteGame(GameDto</text>
+<text text-anchor="start" x="14" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gameDto)</text>
 <text text-anchor="start" x="4" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding maxiBackup</text>
-<text text-anchor="start" x="14" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
-<text text-anchor="start" x="14" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 11 more...</text>
+<text text-anchor="start" x="14" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObservableList&lt; GameDto</text>
+<text text-anchor="start" x="14" y="-162.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &gt; getBackups()</text>
+<text text-anchor="start" x="14" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 12 more...</text>
 <text text-anchor="start" x="5.5" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameDto createBackupGame</text>
 <text text-anchor="start" x="14" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Dto(Instant date, boolean</text>

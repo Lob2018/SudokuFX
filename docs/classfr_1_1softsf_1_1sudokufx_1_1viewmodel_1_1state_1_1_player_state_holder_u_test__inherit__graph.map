@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolderUTest" name="fr.softsf.sudokufx.viewmodel.state.PlayerStateHolderUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,261,240,677"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" title="Abstract base test class that provides:" alt="" coords="13,5,233,213"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,228,126,261,120,261,120,228"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,299,240,715"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" title="Abstract base test class that provides:" alt="" coords="13,5,233,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,266,126,299,120,299,120,266"/>
 </map>

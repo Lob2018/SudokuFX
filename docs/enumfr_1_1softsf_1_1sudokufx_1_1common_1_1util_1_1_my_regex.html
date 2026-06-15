@@ -125,12 +125,13 @@ document.addEventListener('DOMContentLoaded', () => {
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex__coll__graph.svg" width="228" height="400"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex__coll__graph.svg" width="247" height="459"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1cc8f12aa07267b12d67d1c87b711e98" id="r_a1cc8f12aa07267b12d67d1c87b711e98"><td class="memItemLeft">Pattern&#160;</td><td class="memItemRight"><a class="el" href="#a1cc8f12aa07267b12d67d1c87b711e98">getAlphanumericPattern</a> ()</td></tr>
+<tr class="memitem:a17503232a730d311406b7cd2d0f85902" id="r_a17503232a730d311406b7cd2d0f85902"><td class="memItemLeft">Pattern&#160;</td><td class="memItemRight"><a class="el" href="#a17503232a730d311406b7cd2d0f85902">getPlayerNamePattern</a> ()</td></tr>
 <tr class="memitem:a8774bba51d6c3deb394edc546c8ba251" id="r_a8774bba51d6c3deb394edc546c8ba251"><td class="memItemLeft">Pattern&#160;</td><td class="memItemRight"><a class="el" href="#a8774bba51d6c3deb394edc546c8ba251">getSecretPattern</a> ()</td></tr>
 <tr class="memitem:a4ba83d33607c3d2efe17d75923e44f43" id="r_a4ba83d33607c3d2efe17d75923e44f43"><td class="memItemLeft">Pattern&#160;</td><td class="memItemRight"><a class="el" href="#a4ba83d33607c3d2efe17d75923e44f43">getVersionPattern</a> ()</td></tr>
 <tr class="memitem:a423142d558d45f6e0ffbe705f1aae781" id="r_a423142d558d45f6e0ffbe705f1aae781"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#a423142d558d45f6e0ffbe705f1aae781">isValidatedByRegex</a> (final String text, final Pattern pattern)</td></tr>
@@ -150,6 +151,8 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:ac2890435ae41d8c24bca202918525756" id="r_ac2890435ae41d8c24bca202918525756"><td class="memItemLeft">static final Pattern&#160;</td><td class="memItemRight"><a class="el" href="#ac2890435ae41d8c24bca202918525756">ALPHANUMERIC_PATTERN</a> = Pattern.compile(&quot;^[a-zA-Z0-9\\s.]+$&quot;)</td></tr>
 <tr class="memdesc:ac2890435ae41d8c24bca202918525756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precompiled regex pattern for validating alphanumeric strings.  <br /></td></tr>
 <tr class="memitem:a0b53b964190e0b5eb34f94ce4e363a58" id="r_a0b53b964190e0b5eb34f94ce4e363a58"><td class="memItemLeft">static final Logger&#160;</td><td class="memItemRight"><a class="el" href="#a0b53b964190e0b5eb34f94ce4e363a58">LOG</a> = LoggerFactory.getLogger(MyRegex.class)</td></tr>
+<tr class="memitem:a6010be44cc9e55a33ea271b02988d73e" id="r_a6010be44cc9e55a33ea271b02988d73e"><td class="memItemLeft">static final java.util.regex.Pattern&#160;</td><td class="memItemRight"><a class="el" href="#a6010be44cc9e55a33ea271b02988d73e">PLAYER_NAME_PATTERN</a></td></tr>
+<tr class="memdesc:a6010be44cc9e55a33ea271b02988d73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precompiled regex pattern for validating player names.  <br /></td></tr>
 <tr class="memitem:ad5dfc39bbe129cf3f0e0468ca88540f0" id="r_ad5dfc39bbe129cf3f0e0468ca88540f0"><td class="memItemLeft">static final Pattern&#160;</td><td class="memItemRight"><a class="el" href="#ad5dfc39bbe129cf3f0e0468ca88540f0">SECRET_PATTERN</a></td></tr>
 <tr class="memdesc:ad5dfc39bbe129cf3f0e0468ca88540f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precompiled regex pattern for validating passwords.  <br /></td></tr>
 <tr class="memitem:a9aeed92159c93dabcfd2eb8de75ca1ba" id="r_a9aeed92159c93dabcfd2eb8de75ca1ba"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#a9aeed92159c93dabcfd2eb8de75ca1ba">SPECIAL_CHARACTERS</a> = &quot;@#$%^&amp;()!&quot;</td></tr>
@@ -170,6 +173,23 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">Pattern fr.softsf.sudokufx.common.util.MyRegex.getAlphanumericPattern </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17503232a730d311406b7cd2d0f85902" name="a17503232a730d311406b7cd2d0f85902"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17503232a730d311406b7cd2d0f85902">&#9670;&#160;</a></span>getPlayerNamePattern()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Pattern fr.softsf.sudokufx.common.util.MyRegex.getPlayerNamePattern </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -371,6 +391,33 @@ Includes at least 2 special characters from <code class="JavaDocCode">@#$%^&amp;
   </tr>
 </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6010be44cc9e55a33ea271b02988d73e" name="a6010be44cc9e55a33ea271b02988d73e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6010be44cc9e55a33ea271b02988d73e">&#9670;&#160;</a></span>PLAYER_NAME_PATTERN</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"> final java.util.regex.Pattern fr.softsf.sudokufx.common.util.MyRegex.PLAYER_NAME_PATTERN</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">                                                      =</div>
+<div class="line">java.util.regex.Pattern.compile(<span class="stringliteral">&quot;^[A-Za-z]+(?: [A-Za-z]+)* *$|^ *$&quot;</span>)</div>
+</div><!-- fragment -->
+<p>Precompiled regex pattern for validating player names. </p>
+<p>Requirements: - Alphabetic characters only, optional spaces between words. </p>
 
 </div>
 </div>

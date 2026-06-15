@@ -1,6 +1,6 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1repository =
 [
-    [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", null ],
+    [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository" ],
     [ "GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html", null ],
     [ "GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
     [ "MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],

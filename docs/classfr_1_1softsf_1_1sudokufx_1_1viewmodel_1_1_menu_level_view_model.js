@@ -1,6 +1,7 @@
 var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model =
 [
     [ "accessibleTextBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a2534445f2247fda713a1b90d2e194d91", null ],
+    [ "clearSelectedLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a0b08c9a4b8770f60035c0a8a20959220", null ],
     [ "getAccessibilityKeyForLevel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#ae4b3a75047cdd734fefea0992390b2be", null ],
     [ "getLevelNameKey", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#aa1425d8463b87749afe0f822c34fe8b9", null ],
     [ "isSelectedBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a526715c7454e1e8e77e7996c5b901385", null ],

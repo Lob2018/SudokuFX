@@ -1,5 +1,6 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business =
 [
+    [ "GameLevelService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service" ],
     [ "GridService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service" ],
     [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service" ],
     [ "PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service" ],

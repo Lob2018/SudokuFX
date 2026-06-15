@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.repository.PlayerRepository" name="fr.softsf.sudokufx.repository.PlayerRepository">
-<area shape="rect" id="Node000001" title="Repository interface for Player entities." alt="" coords="5,139,217,277"/>
+<area shape="rect" id="Node000001" title="Repository interface for Player entities." alt="" coords="5,139,217,315"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="38,5,185,91"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,105,114,139,109,139,109,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="114,106,114,139,109,139,109,106"/>
 </map>

@@ -6,7 +6,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_tes
     [ "UtilityTextMethodsTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_utility_text_methods_tests.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_utility_text_methods_tests" ],
     [ "givenDependencies_whenInitViewModel_thenViewModelInitialized", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#a58cf1999f6ae6a52aa78609d35881251", null ],
     [ "givenGridPaneAndColor_whenUpdateBackgroundColor_thenColorApplied", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#a542402406e3b662d9d6a24e4162dc8ae", null ],
-    [ "givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#a80fe993017c6f0c7833d1d9f85857fa8", null ],
+    [ "givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneIfNeededBackgroundSet", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#aa0d945584656120912324d7094f7b071", null ],
     [ "givenViewModel_whenAccessBindings_thenAllBindingsReturnNonNullAndNonBlank", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#a16c7cbef854df305eb117c00454bbc74", null ],
     [ "givenViewModelAndColorPicker_whenInit_thenColorIsSetAndColorPickerUpdated", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#ae32f87840732c0396cbef4a9a389ad76", null ],
     [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html#aece413f177758a0b8e9e219c4c1402c3", null ],
