@@ -25,13 +25,12 @@ import org.mockito.MockitoAnnotations;
 import org.slf4j.LoggerFactory;
 import org.testfx.framework.junit5.ApplicationExtension;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.service.external.VersionService;
 import fr.softsf.sudokufx.service.ui.SpinnerService;
+import tools.jackson.databind.ObjectMapper;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
