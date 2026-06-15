@@ -5,25 +5,18 @@
  */
 package fr.softsf.sudokufx.view.main;
 
-import java.util.Objects;
-import java.util.Set;
 import java.util.function.Consumer;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.concurrent.Task;
-import javafx.scene.control.Button;
-import javafx.scene.input.InputEvent;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.util.Duration;
 
-import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;
@@ -32,21 +25,21 @@ import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 
 /**
  * Utility component managing interaction logic for level selection. Encapsulates Timeline lifecycle
- * management, input event filtering, and multi-ViewModel synchronization.
+ * management, interaction duration measurement, and multi-ViewModel synchronization.
  */
 @Component
 public class LevelInteractionHandler {
 
     private static final Logger LOG = LoggerFactory.getLogger(LevelInteractionHandler.class);
-
-    public static final String EVENT_MUST_NOT_BE_NULL = "event mustn't be null";
     public static final int DURATION_BETWEEN_INCREMENTS_IN_MS = 500;
+
     private final GridViewModel gridViewModel;
     private final MenuLevelViewModel menuLevelViewModel;
     private final MenuOptionsViewModel menuOptionsViewModel;
     private final Timeline desiredPossibilitiesTimeline = new Timeline();
-    private static final Set<KeyCode> LEVEL_VALID_KEYS = Set.of(KeyCode.ENTER, KeyCode.SPACE);
+
     private DifficultyLevel level;
+    private long startTime;
     private Task<Integer> currentGridTask;
 
     /**
@@ -70,23 +63,33 @@ public class LevelInteractionHandler {
     }
 
     /**
-     * Processes input events to drive the iterative selection cycle or finalize level application.
-     * Uses pattern matching to dispatch actions based on the event state.
+     * Records the start of an interaction and initiates the selection cycle.
      *
-     * @param event the interaction event to be dispatched
-     * @param opaqueApplier a functional callback to apply visual styling to the grid
+     * @param buttonId the identifier of the button triggered
      */
-    public void handleAction(InputEvent event, Consumer<Boolean> opaqueApplier) {
-        Objects.requireNonNull(event, EVENT_MUST_NOT_BE_NULL);
-        Objects.requireNonNull(opaqueApplier, "opaqueApplier mustn't be null");
-        if (event.getSource() instanceof Button btn) {
-            level = getLevelWithId(btn.getId());
-            switch (event) {
-                case InputEvent e when isStartEvent(e) -> startCycle();
-                case InputEvent e when isEndEvent(e) -> applyLevel(opaqueApplier);
-                default -> desiredPossibilitiesTimeline.stop();
-            }
-        }
+    public void handleStart(String buttonId) {
+        this.level = getLevelWithId(buttonId);
+        this.startTime = System.currentTimeMillis();
+        startCycle();
+    }
+
+    /**
+     * Finalizes the interaction, calculates the duration of the press, and applies the level
+     * selection.
+     *
+     * @param buttonId the identifier of the button triggered
+     * @param opaqueApplier callback to synchronize grid visual opacity
+     */
+    public void handleEnd(String buttonId, Consumer<Boolean> opaqueApplier) {
+        long duration = System.currentTimeMillis() - startTime;
+        LOG.debug("Interaction duration for {}: {}ms", buttonId, duration);
+        applyLevel(opaqueApplier);
+    }
+
+    /** Explicitly interrupts the interaction cycle. */
+    public void stopCycle() {
+        desiredPossibilitiesTimeline.stop();
+        LOG.debug("Interaction interrupted, cycle stopped.");
     }
 
     /** Configures the cyclical Timeline for periodic desired possibilities increments. */
@@ -114,10 +117,6 @@ public class LevelInteractionHandler {
     /**
      * Finalizes level selection and synchronizes reactive state across ViewModels asynchronously.
      *
-     * <p>Uses a {@link Task} to offload grid generation from the JavaFX Application Thread. Any
-     * pending generation task is canceled before starting a new one to prevent race conditions.
-     * State updates are skipped if the engine returns -1 or if the task is interrupted.
-     *
      * @param opaqueApplier callback to synchronize grid visual opacity with current option states
      */
     private void applyLevel(Consumer<Boolean> opaqueApplier) {
@@ -136,50 +135,15 @@ public class LevelInteractionHandler {
                     }
                 });
         task.setOnFailed(
-                _ ->
-                        LOG.error(
-                                "██ Level application failed: {}",
-                                task.getException().getMessage(),
-                                task.getException()));
+                _ -> LOG.error("Level application failed: {}", task.getException().getMessage()));
         Thread thread = new Thread(task);
         thread.setDaemon(true);
         thread.start();
     }
 
-    /**
-     * Triggers a notification displaying the current difficulty percentage boundaries. *
-     *
-     * <p>Delegates to the {@link GridViewModel} to format and push the active percentage range to
-     * the toaster service.
-     */
+    /** Triggers a notification displaying the current difficulty percentage boundaries. */
     private void notifyUser() {
         gridViewModel.notifyLevelPossibilityBounds(level);
-    }
-
-    /**
-     * Evaluates if the event corresponds to a cycle initiation trigger.
-     *
-     * @param event the event to evaluate
-     * @return true if it is a valid start trigger
-     */
-    private boolean isStartEvent(InputEvent event) {
-        return (event instanceof MouseEvent me && me.getEventType() == MouseEvent.MOUSE_PRESSED)
-                || (event instanceof KeyEvent ke
-                        && ke.getEventType() == KeyEvent.KEY_PRESSED
-                        && LEVEL_VALID_KEYS.contains(ke.getCode()));
-    }
-
-    /**
-     * Evaluates if the event corresponds to a selection finalization trigger.
-     *
-     * @param event the event to evaluate
-     * @return true if it is a valid end trigger
-     */
-    private boolean isEndEvent(InputEvent event) {
-        return (event instanceof MouseEvent me && me.getEventType() == MouseEvent.MOUSE_RELEASED)
-                || (event instanceof KeyEvent ke
-                        && ke.getEventType() == KeyEvent.KEY_RELEASED
-                        && LEVEL_VALID_KEYS.contains(ke.getCode()));
     }
 
     /**

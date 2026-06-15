@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.view.main;
 
 import java.util.Objects;
+import java.util.Set;
 import javafx.animation.FadeTransition;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -27,6 +28,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.TextFormatter;
 import javafx.scene.image.Image;
 import javafx.scene.input.InputEvent;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
@@ -103,6 +107,8 @@ public final class MainView implements IMainView {
 
     private static final int AUTO_HIDE_MINI_MENU_DELAY_MS = 5_000;
     private static final int MAX_STARS_PERCENTAGE = 100;
+
+    private static final Set<KeyCode> LEVEL_VALID_KEYS = Set.of(KeyCode.ENTER, KeyCode.SPACE);
 
     private Stage primaryStage;
 
@@ -1203,8 +1209,10 @@ public final class MainView implements IMainView {
     }
 
     /**
-     * Dispatches level-related interaction events to the specialized handler. Provides a callback
-     * to maintain UI styling encapsulation.
+     * Dispatches level-related interaction events to the {@link LevelInteractionHandler}.
+     *
+     * <p>Acts as a central router for UI events, mapping physical interactions to business logic in
+     * the handler while maintaining visual encapsulation via the opacity callback.
      *
      * @param event the mouse or keyboard event captured from the UI
      */
@@ -1213,7 +1221,28 @@ public final class MainView implements IMainView {
             value = "UPM_UNCALLED_PRIVATE_METHOD",
             justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void handleLevelAction(InputEvent event) {
-        levelInteractionHandler.handleAction(event, this::applyOpaqueMode);
+        String id = ((Button) event.getSource()).getId();
+        switch (event) {
+            case MouseEvent me when me.getEventType() == MouseEvent.MOUSE_EXITED ->
+                    levelInteractionHandler.stopCycle();
+            case MouseEvent me -> {
+                if (me.getEventType() == MouseEvent.MOUSE_PRESSED) {
+                    levelInteractionHandler.handleStart(id);
+                } else if (me.getEventType() == MouseEvent.MOUSE_RELEASED) {
+                    levelInteractionHandler.handleEnd(id, this::applyOpaqueMode);
+                }
+            }
+            case KeyEvent ke when LEVEL_VALID_KEYS.contains(ke.getCode()) -> {
+                if (ke.getEventType() == KeyEvent.KEY_PRESSED) {
+                    levelInteractionHandler.handleStart(id);
+                } else if (ke.getEventType() == KeyEvent.KEY_RELEASED) {
+                    levelInteractionHandler.handleEnd(id, this::applyOpaqueMode);
+                }
+            }
+            default -> {
+                // Ignore other events that do not require state changes.
+            }
+        }
     }
 
     /**

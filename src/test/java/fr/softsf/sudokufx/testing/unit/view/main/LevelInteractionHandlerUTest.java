@@ -8,11 +8,6 @@ package fr.softsf.sudokufx.testing.unit.view.main;
 import java.util.function.Consumer;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.concurrent.Task;
-import javafx.scene.control.Button;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -28,6 +23,7 @@ import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -35,16 +31,15 @@ import static org.mockito.Mockito.when;
 class LevelInteractionHandlerUTest {
 
     private GridViewModel gridViewModel;
-    private MenuLevelViewModel menuLevelViewModel;
-    private MenuOptionsViewModel menuOptionsViewModel;
     private LevelInteractionHandler handler;
     private Consumer<Boolean> opaqueApplier;
 
     @BeforeEach
+    @SuppressWarnings("unchecked")
     void setUp() {
         gridViewModel = mock(GridViewModel.class);
-        menuLevelViewModel = mock(MenuLevelViewModel.class);
-        menuOptionsViewModel = mock(MenuOptionsViewModel.class);
+        MenuLevelViewModel menuLevelViewModel = mock(MenuLevelViewModel.class);
+        MenuOptionsViewModel menuOptionsViewModel = mock(MenuOptionsViewModel.class);
         opaqueApplier = mock(Consumer.class);
         when(menuOptionsViewModel.gridOpacityProperty())
                 .thenReturn(new SimpleBooleanProperty(false));
@@ -54,135 +49,46 @@ class LevelInteractionHandlerUTest {
     }
 
     @Test
-    void givenLevelButton_whenMousePressed_thenStartsCycle() {
-        Button btn = new Button();
-        btn.setId("menuMiniButtonEasy");
-        MouseEvent event =
-                new MouseEvent(
-                        btn,
-                        btn,
-                        MouseEvent.MOUSE_PRESSED,
-                        0,
-                        0,
-                        0,
-                        0,
-                        MouseButton.PRIMARY,
-                        1,
-                        false,
-                        false,
-                        false,
-                        false,
-                        true,
-                        false,
-                        false,
-                        false,
-                        false,
-                        false,
-                        null);
-        handler.handleAction(event, opaqueApplier);
+    void givenLevelButtonId_whenHandleStart_thenStartsCycle() {
+        handler.handleStart("menuMiniButtonEasy");
         verify(gridViewModel).resetDesiredPossibilities();
     }
 
     @Test
-    void givenLevelButton_whenMouseReleased_thenAppliesLevel() {
-        Button btn = new Button();
-        btn.setId("menuMiniButtonEasy");
-        MouseEvent event =
-                new MouseEvent(
-                        btn,
-                        btn,
-                        MouseEvent.MOUSE_RELEASED,
-                        0,
-                        0,
-                        0,
-                        0,
-                        MouseButton.PRIMARY,
-                        1,
-                        false,
-                        false,
-                        false,
-                        false,
-                        true,
-                        false,
-                        false,
-                        false,
-                        false,
-                        false,
-                        null);
+    void givenLevelButtonId_whenHandleEnd_thenAppliesLevel() {
         Task<Integer> mockTask =
-                new javafx.concurrent.Task<>() {
+                new Task<>() {
                     @Override
                     protected Integer call() {
                         return 0;
                     }
                 };
         when(gridViewModel.setCurrentGridTask(DifficultyLevel.EASY)).thenReturn(mockTask);
-        handler.handleAction(event, opaqueApplier);
+
+        handler.handleStart("menuMiniButtonEasy");
+        handler.handleEnd("menuMiniButtonEasy", opaqueApplier);
+
         verify(gridViewModel).setCurrentGridTask(DifficultyLevel.EASY);
     }
 
     @Test
-    void givenLevelButton_whenKeyPressedEnter_thenStartsCycle() {
-        Button btn = new Button();
-        btn.setId("menuMaxiButtonDifficult");
-        KeyEvent event =
-                new KeyEvent(
-                        btn,
-                        btn,
-                        KeyEvent.KEY_PRESSED,
-                        "",
-                        "",
-                        KeyCode.ENTER,
-                        false,
-                        false,
-                        false,
-                        false);
-        handler.handleAction(event, opaqueApplier);
-        verify(gridViewModel).resetDesiredPossibilities();
+    void givenInteraction_whenStopCycleCalled_thenInterrupts() {
+        handler.handleStart("menuMiniButtonEasy");
+        handler.stopCycle();
+        verify(gridViewModel, times(1)).resetDesiredPossibilities();
     }
 
     @Test
-    void givenUnknownButtonId_whenEndEvent_thenThrowsException() {
-        Button btn = new Button();
-        btn.setId("unknownId");
-        MouseEvent event =
-                new MouseEvent(
-                        btn,
-                        btn,
-                        MouseEvent.MOUSE_RELEASED,
-                        0,
-                        0,
-                        0,
-                        0,
-                        MouseButton.PRIMARY,
-                        1,
-                        false,
-                        false,
-                        false,
-                        false,
-                        true,
-                        false,
-                        false,
-                        false,
-                        false,
-                        false,
-                        null);
-        assertThrows(
-                IllegalArgumentException.class, () -> handler.handleAction(event, opaqueApplier));
+    void givenUnknownButtonId_thenThrowsException() {
+        assertThrows(IllegalArgumentException.class, () -> handler.handleStart("unknownId"));
     }
 
     @Test
-    @SuppressWarnings("java:S5778")
-    void givenNullArguments_whenHandleAction_thenThrowsNullPointerException() {
-        MouseEvent event = mock(MouseEvent.class);
+    void givenNullArguments_whenHandleEnd_thenThrowsNullPointerException() {
         assertAll(
                 () ->
                         assertThrows(
                                 NullPointerException.class,
-                                () -> handler.handleAction(null, opaqueApplier)),
-                () ->
-                        assertThrows(
-                                NullPointerException.class,
-                                () -> handler.handleAction(event, null)));
+                                () -> handler.handleEnd("menuMiniButtonEasy", null)));
     }
 }
