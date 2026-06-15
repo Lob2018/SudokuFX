@@ -28,6 +28,7 @@ import org.springframework.stereotype.Component;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.PlayerConstants;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
@@ -51,7 +52,6 @@ public class MenuPlayerViewModel {
             "menu.accessibility.role.description.closed";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION =
             "menu.accessibility.role.description.submenu.option";
-    private static final String UNKNOWN_PLAYER_CHARACTER = "—";
     public static final String MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT =
             "menu.player.button.new.player.text";
 
@@ -469,7 +469,7 @@ public class MenuPlayerViewModel {
                         && ALLOWED_NAME_PATTERN.matcher(cleanedText).matches();
         boolean isAvailable =
                 !cleanedText.equalsIgnoreCase(playerStateHolder.getCurrentPlayer().name())
-                        && !cleanedText.equals(UNKNOWN_PLAYER_CHARACTER)
+                        && !cleanedText.equals(PlayerConstants.ANONYMOUS_NAME.getValue())
                         && playerService.getPlayers().stream()
                                 .noneMatch(p -> p.name().equalsIgnoreCase(cleanedText));
         if (!isValid) {

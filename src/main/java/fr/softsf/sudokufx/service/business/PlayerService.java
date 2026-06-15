@@ -16,6 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
+import fr.softsf.sudokufx.common.enums.PlayerConstants;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
@@ -395,14 +396,14 @@ public class PlayerService {
                                 () ->
                                         ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                                                 "Player not found: " + playerIdToDelete));
-        if ("—".equals(playerToDelete.getName())) {
+        if (PlayerConstants.ANONYMOUS_NAME.getValue().equals(playerToDelete.getName())) {
             return;
         }
         playerRepository.delete(playerToDelete);
         if (playerToDelete.getSelected()) {
             Player anonymousPlayer =
                     playerRepository
-                            .findByName("—")
+                            .findByName(PlayerConstants.ANONYMOUS_NAME.getValue())
                             .orElseThrow(
                                     () ->
                                             ExceptionTools.INSTANCE

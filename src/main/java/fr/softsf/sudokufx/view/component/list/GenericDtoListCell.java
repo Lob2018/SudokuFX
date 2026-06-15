@@ -24,6 +24,7 @@ import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import fr.softsf.sudokufx.common.enums.PlayerConstants;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.view.component.MyAlert;
 
@@ -131,7 +132,8 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
             label.setText(displayText);
             setGraphic(hBox);
             boolean isAnonymous =
-                    (item instanceof PlayerDto playerDto) && "—".equals(playerDto.name());
+                    (item instanceof PlayerDto playerDto)
+                            && PlayerConstants.ANONYMOUS_NAME.getValue().equals(playerDto.name());
             button.setVisible(!isAnonymous);
             button.setManaged(!isAnonymous);
             if (!isAnonymous) {
