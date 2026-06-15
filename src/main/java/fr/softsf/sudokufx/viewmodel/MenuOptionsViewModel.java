@@ -219,6 +219,17 @@ public class MenuOptionsViewModel {
         optionsClearSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
     }
 
+    /**
+     * Returns the options color property, allowing UI components to bind to or observe changes in
+     * the selected color.
+     *
+     * @return the ObjectProperty managing the options color
+     */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
     public ObjectProperty<Color> optionsColorProperty() {
         return optionsColorProperty;
     }

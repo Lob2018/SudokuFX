@@ -62,11 +62,11 @@ public class PlayerStateHolder {
     }
 
     /**
-     * Constructs the state holder. Dependency injection only.
+     * Constructs the state holder. For dependency injection and testing purposes only.
      *
      * @param playerService the service used to fetch the player
      */
-    public PlayerStateHolder(PlayerService playerService) {
+    PlayerStateHolder(PlayerService playerService) {
         this.playerService = playerService;
     }
 

@@ -11,13 +11,12 @@ import java.util.Objects;
 import java.util.function.Supplier;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
-import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.Property;
 import javafx.beans.property.ReadOnlyBooleanProperty;
+import javafx.beans.property.ReadOnlyBooleanWrapper;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.ReadOnlyObjectWrapper;
-import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
@@ -29,6 +28,7 @@ import org.springframework.stereotype.Component;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.PlayerConstants;
+import fr.softsf.sudokufx.common.util.MyRegex;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
@@ -84,16 +84,19 @@ public class MenuPlayerViewModel {
     private final StringBinding cellConfirmationTitle;
     private final StringBinding cellConfirmationMessage;
 
-    private static final java.util.regex.Pattern ALLOWED_NAME_PATTERN =
-            java.util.regex.Pattern.compile("^[A-Za-z]+(?: [A-Za-z]+)* *$|^ *$");
     private static final int MAX_NAME_LENGTH = 50;
     private final ReadOnlyObjectWrapper<PlayerNameStatus> playerNameStatus =
             new ReadOnlyObjectWrapper<>(PlayerNameStatus.EMPTY);
     private final StringProperty playerNameInput =
             new SimpleStringProperty(I18n.INSTANCE.getValue(MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT));
-    private final BooleanProperty editing = new SimpleBooleanProperty(false);
-    private final BooleanProperty playerSwitchedSignal = new SimpleBooleanProperty(false);
+    private final ReadOnlyBooleanWrapper editing = new ReadOnlyBooleanWrapper(false);
+    private final ReadOnlyBooleanWrapper playerSwitchedSignal = new ReadOnlyBooleanWrapper(false);
 
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "Infrastructure services must be stored by reference to maintain reactive state"
+                            + " and binding integrity.")
     public MenuPlayerViewModel(PlayerStateHolder playerStateHolder, PlayerService playerService) {
         this.playerStateHolder = playerStateHolder;
         this.playerService = playerService;
@@ -405,15 +408,25 @@ public class MenuPlayerViewModel {
     }
 
     public ReadOnlyBooleanProperty playerSwitchedSignalProperty() {
-        return playerSwitchedSignal;
+        return playerSwitchedSignal.getReadOnlyProperty();
     }
 
+    /**
+     * Returns the property for the new player name input.
+     *
+     * @return the Property managing the new player name
+     */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX Property exposure is required for bidirectional binding with the UI;"
+                            + " preventing this exposure would break input synchronization.")
     public Property<String> playerNameInputProperty() {
         return playerNameInput;
     }
 
-    public BooleanProperty editingProperty() {
-        return editing;
+    public ReadOnlyBooleanProperty editingProperty() {
+        return editing.getReadOnlyProperty();
     }
 
     /** Prepares the text field for a new player. */
@@ -466,7 +479,7 @@ public class MenuPlayerViewModel {
         String cleanedText = currentText.trim();
         boolean isValid =
                 cleanedText.length() <= MAX_NAME_LENGTH
-                        && ALLOWED_NAME_PATTERN.matcher(cleanedText).matches();
+                        && MyRegex.INSTANCE.getPlayerNamePattern().matcher(cleanedText).matches();
         boolean isAvailable =
                 !cleanedText.equalsIgnoreCase(playerStateHolder.getCurrentPlayer().name())
                         && !cleanedText.equals(PlayerConstants.ANONYMOUS_NAME.getValue())
@@ -493,7 +506,7 @@ public class MenuPlayerViewModel {
         }
         String newName = change.getControlNewText();
         if (newName.length() <= MAX_NAME_LENGTH
-                && ALLOWED_NAME_PATTERN.matcher(newName).matches()) {
+                && MyRegex.INSTANCE.getPlayerNamePattern().matcher(newName).matches()) {
             return change;
         }
         return null;
