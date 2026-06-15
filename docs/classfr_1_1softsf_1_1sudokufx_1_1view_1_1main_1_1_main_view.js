@@ -66,6 +66,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view =
     [ "gridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aaba35fb54ebac616ee1eecf261d183e3", null ],
     [ "helpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ae22012b532eeae8ac9842c638eb1011b", null ],
     [ "hideMiniMenuTimeline", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a53072ef5fdb65701b3696c103fc46288", null ],
+    [ "LEVEL_VALID_KEYS", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a816343dd72eed1c6b065274724399840", null ],
     [ "levelInteractionHandler", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a2961b5bd25fd569881f098683e346148", null ],
     [ "LOG", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a46133cf602827b5ebe74e531a228b546", null ],
     [ "MAX_STARS_PERCENTAGE", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a31b35c1b62933e3392b002b6d267bb6b", null ],

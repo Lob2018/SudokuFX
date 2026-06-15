@@ -1,7 +1,7 @@
 <map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler">
-<area shape="rect" id="Node000001" title="Utility component managing interaction logic for level selection." alt="" coords="2562,4537,2813,5124"/>
+<area shape="rect" id="Node000001" title="Utility component managing interaction logic for level selection." alt="" coords="2562,4537,2813,5055"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html" title="ViewModel responsible for managing a 9x9 Sudoku grid." alt="" coords="1118,2919,1527,4161"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1529,3732,2552,4698,2549,4702,1525,3736"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1529,3727,2552,4666,2548,4670,1525,3731"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html" title="ViewModel component managing the currently active menu or submenu." alt="" coords="828,1817,1043,1972"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="949,1971,992,2245,1023,2417,1059,2590,1137,2902,1131,2903,1054,2591,1018,2418,987,2246,944,1972"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html" title="ViewModel for managing &quot;solve&quot; menu UI state and accessibility texts." alt="" coords="1067,1268,1298,2521"/>
@@ -75,13 +75,13 @@
 <area shape="poly" id="edge36_Node000002_Node000031" title=" " alt="" coords="1717,974,1597,1026,1448,1086,1283,1146,1115,1199,1053,1210,996,1211,894,1201,849,1200,805,1208,762,1230,720,1269,713,1291,707,1335,699,1477,696,1670,697,1889,706,2305,713,2450,720,2521,753,2624,793,2726,840,2827,891,2925,945,3019,1000,3108,1110,3269,1106,3272,996,3111,940,3022,886,2928,835,2829,788,2729,748,2626,715,2522,708,2451,701,2305,692,1890,691,1670,694,1477,702,1334,708,1290,716,1267,759,1225,803,1203,848,1195,895,1196,996,1206,1052,1205,1114,1193,1281,1141,1446,1081,1595,1021,1715,969"/>
 <area shape="poly" id="edge42_Node000034_Node000031" title=" " alt="" coords="1922,980,2000,1032,2085,1098,2166,1177,2202,1220,2233,1267,2262,1321,2286,1378,2306,1437,2322,1498,2344,1615,2356,1723,2350,1724,2339,1616,2317,1499,2301,1439,2281,1380,2257,1323,2228,1269,2197,1224,2162,1180,2081,1102,1997,1036,1919,985"/>
 <area shape="rect" id="Node000032" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html" title="ViewModel for managing difficulty level selection in the menu." alt="" coords="2674,3260,2888,3820"/>
-<area shape="poly" id="edge37_Node000001_Node000032" title=" " alt="" coords="2764,3820,2713,4521,2708,4520,2758,3819"/>
-<area shape="poly" id="edge38_Node000001_Node000033" title=" " alt="" coords="2546,4465,2556,4513,2560,4530,2555,4531,2551,4514,2540,4466"/>
+<area shape="poly" id="edge37_Node000001_Node000032" title=" " alt="" coords="2763,3820,2711,4521,2706,4520,2758,3820"/>
+<area shape="poly" id="edge38_Node000001_Node000033" title=" " alt="" coords="2542,4464,2553,4513,2560,4535,2555,4536,2548,4514,2537,4466"/>
 <area shape="poly" id="edge40_Node000033_Node000034" title=" " alt="" coords="2365,2049,2376,2303,2394,2590,2395,2598,2389,2598,2389,2591,2370,2303,2359,2049"/>
 <area shape="rect" id="Node000035" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="2497,1695,2735,2095"/>
 <area shape="poly" id="edge43_Node000033_Node000035" title=" " alt="" coords="2604,2095,2569,2598,2564,2597,2599,2094"/>
 <area shape="rect" id="Node000036" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html" title="Utility class providing helper methods for common audio&#45;related operations." alt="" coords="2759,1844,2950,1945"/>
 <area shape="poly" id="edge44_Node000033_Node000036" title=" " alt="" coords="2858,1945,2854,2054,2839,2200,2825,2281,2806,2364,2781,2445,2749,2523,2728,2552,2706,2570,2684,2588,2665,2616,2660,2626,2655,2624,2660,2613,2681,2584,2703,2566,2725,2548,2744,2520,2776,2443,2801,2363,2820,2280,2834,2200,2849,2053,2852,1945"/>
 <area shape="rect" id="Node000037" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html" title="Defines the difficulty levels of a Sudoku grid and provides conversions between enum values and their..." alt="" coords="2912,3447,3125,3633"/>
-<area shape="poly" id="edge48_Node000001_Node000037" title=" " alt="" coords="3021,3633,3016,3794,2998,4003,2983,4119,2963,4236,2936,4353,2902,4466,2867,4551,2824,4633,2820,4631,2863,4549,2897,4464,2931,4352,2957,4235,2978,4118,2993,4003,3010,3793,3016,3633"/>
+<area shape="poly" id="edge48_Node000001_Node000037" title=" " alt="" coords="3023,3633,3019,3794,3002,4004,2987,4119,2966,4237,2938,4354,2902,4466,2868,4544,2825,4618,2820,4616,2863,4542,2897,4464,2933,4352,2961,4236,2982,4119,2997,4004,3013,3794,3017,3633"/>
 </map>

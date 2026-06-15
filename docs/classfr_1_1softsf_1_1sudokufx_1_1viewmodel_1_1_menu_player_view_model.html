@@ -139,6 +139,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aab67599bb1bb0bde8159c8cf63d3a2c0" id="r_aab67599bb1bb0bde8159c8cf63d3a2c0"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aab67599bb1bb0bde8159c8cf63d3a2c0">createNewPlayerByName</a> ()</td></tr>
 <tr class="memdesc:aab67599bb1bb0bde8159c8cf63d3a2c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates and sets the player name into the state holder ONLY on Enter key.  <br /></td></tr>
 <tr class="memitem:abbf3fb3646c18f07d341e7ff34150533" id="r_abbf3fb3646c18f07d341e7ff34150533"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abbf3fb3646c18f07d341e7ff34150533">deletePlayer</a> (PlayerDto playerDto)</td></tr>
+<tr class="memdesc:abbf3fb3646c18f07d341e7ff34150533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the specified player from the system and refreshes the UI state.  <br /></td></tr>
 <tr class="memitem:aead6d85f968c99227b0d1b9f584cdb71" id="r_aead6d85f968c99227b0d1b9f584cdb71"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#aead6d85f968c99227b0d1b9f584cdb71">editAccessibleTextProperty</a> ()</td></tr>
 <tr class="memitem:a613329fdad6481104d7dd03c3bb06b47" id="r_a613329fdad6481104d7dd03c3bb06b47"><td class="memItemLeft">ReadOnlyBooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#a613329fdad6481104d7dd03c3bb06b47">editingProperty</a> ()</td></tr>
 <tr class="memitem:afecc236caf62291584a8150c4531b665" id="r_afecc236caf62291584a8150c4531b665"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#afecc236caf62291584a8150c4531b665">editRoleDescriptionProperty</a> ()</td></tr>
@@ -511,6 +512,20 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deletes the specified player from the system and refreshes the UI state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerDto</td><td>the player to delete; must not be null </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if playerDto is null </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-7" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
@@ -1620,7 +1635,7 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">                                     =</div>
 <div class="line"><span class="keyword">new</span> SimpleStringProperty(<a class="code hl_class" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html">I18n</a>.<a class="code hl_variable" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#af4a68fada4a8f957ca9ac80a316af741">INSTANCE</a>.getValue(<a class="code hl_variable" href="#a86dc8bbdeace2a48eab92fb3bb234321">MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT</a>))</div>
-<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_html_a86dc8bbdeace2a48eab92fb3bb234321"><div class="ttname"><a href="#a86dc8bbdeace2a48eab92fb3bb234321">fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT</a></div><div class="ttdeci">static final String MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT</div><div class="ttdef"><b>Definition</b> MenuPlayerViewModel.java:56</div></div>
+<div class="ttc" id="aclassfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_html_a86dc8bbdeace2a48eab92fb3bb234321"><div class="ttname"><a href="#a86dc8bbdeace2a48eab92fb3bb234321">fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT</a></div><div class="ttdeci">static final String MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT</div><div class="ttdef"><b>Definition</b> MenuPlayerViewModel.java:57</div></div>
 <div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n_html"><div class="ttname"><a href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html">fr.softsf.sudokufx.common.enums.I18n</a></div><div class="ttdoc">Internationalization (i18n) support.</div><div class="ttdef"><b>Definition</b> I18n.java:23</div></div>
 <div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n_html_af4a68fada4a8f957ca9ac80a316af741"><div class="ttname"><a href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html#af4a68fada4a8f957ca9ac80a316af741">fr.softsf.sudokufx.common.enums.I18n.INSTANCE</a></div><div class="ttdeci">INSTANCE</div><div class="ttdef"><b>Definition</b> I18n.java:24</div></div>
 </div><!-- fragment -->
@@ -1647,8 +1662,8 @@ Static Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">                                             =</div>
 <div class="line"><span class="keyword">new</span> ReadOnlyObjectWrapper&lt;&gt;(<a class="code hl_class" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html">PlayerNameStatus</a>.<a class="code hl_variable" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html#ac2fc7861d4c0cbe18912f178496d0d2b">EMPTY</a>)</div>
-<div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status_html"><div class="ttname"><a href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html">fr.softsf.sudokufx.common.enums.PlayerNameStatus</a></div><div class="ttdef"><b>Definition</b> PlayerNameStatus.java:8</div></div>
-<div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status_html_ac2fc7861d4c0cbe18912f178496d0d2b"><div class="ttname"><a href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html#ac2fc7861d4c0cbe18912f178496d0d2b">fr.softsf.sudokufx.common.enums.PlayerNameStatus.EMPTY</a></div><div class="ttdeci">EMPTY</div><div class="ttdef"><b>Definition</b> PlayerNameStatus.java:9</div></div>
+<div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status_html"><div class="ttname"><a href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html">fr.softsf.sudokufx.common.enums.PlayerNameStatus</a></div><div class="ttdoc">Utility enum representing the validation status of a player name.</div><div class="ttdef"><b>Definition</b> PlayerNameStatus.java:9</div></div>
+<div class="ttc" id="aenumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status_html_ac2fc7861d4c0cbe18912f178496d0d2b"><div class="ttname"><a href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html#ac2fc7861d4c0cbe18912f178496d0d2b">fr.softsf.sudokufx.common.enums.PlayerNameStatus.EMPTY</a></div><div class="ttdeci">EMPTY</div><div class="ttdoc">The player name is empty or consists only of whitespace.</div><div class="ttdef"><b>Definition</b> PlayerNameStatus.java:11</div></div>
 </div><!-- fragment -->
 </div>
 </div>

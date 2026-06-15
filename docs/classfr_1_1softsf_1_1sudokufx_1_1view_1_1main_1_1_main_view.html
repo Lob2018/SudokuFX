@@ -202,7 +202,7 @@ OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class.  <br /></td></tr>
 <tr class="memitem:a2b008de30122c5b136943bb03a8b09fe" id="r_a2b008de30122c5b136943bb03a8b09fe"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2b008de30122c5b136943bb03a8b09fe">handleGridOpacity</a> ()</td></tr>
 <tr class="memdesc:a2b008de30122c5b136943bb03a8b09fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles grid transparency toggle button action.  <br /></td></tr>
 <tr class="memitem:a92c208fc0f6234d3052ac0c7b971619f" id="r_a92c208fc0f6234d3052ac0c7b971619f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a92c208fc0f6234d3052ac0c7b971619f">handleLevelAction</a> (InputEvent event)</td></tr>
-<tr class="memdesc:a92c208fc0f6234d3052ac0c7b971619f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches level-related interaction events to the specialized handler.  <br /></td></tr>
+<tr class="memdesc:a92c208fc0f6234d3052ac0c7b971619f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispatches level-related interaction events to the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html">LevelInteractionHandler</a></code>.  <br /></td></tr>
 <tr class="memitem:ac70998c26718d8e4b12d0197942e1be9" id="r_ac70998c26718d8e4b12d0197942e1be9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac70998c26718d8e4b12d0197942e1be9">hiddenMenuInitialization</a> ()</td></tr>
 <tr class="memdesc:ac70998c26718d8e4b12d0197942e1be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the hidden menu by binding its show button's accessible text and tooltip to the ViewModel.  <br /></td></tr>
 <tr class="memitem:a3a91238dd9fbbfd65f850f1906685c60" id="r_a3a91238dd9fbbfd65f850f1906685c60"><td class="memItemLeft">Timeline&#160;</td><td class="memItemRight"><a class="el" href="#a3a91238dd9fbbfd65f850f1906685c60">hideMiniMenuTimelineInitialization</a> ()</td></tr>
@@ -367,6 +367,7 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:ae01ec3cb613bf9ec7ac4492f584ee9a8" id="r_ae01ec3cb613bf9ec7ac4492f584ee9a8"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#ae01ec3cb613bf9ec7ac4492f584ee9a8">AUTO_HIDE_MINI_MENU_DELAY_MS</a> = 5_000</td></tr>
 <tr class="memitem:ad45b889ad165145617acae110e8f87e5" id="r_ad45b889ad165145617acae110e8f87e5"><td class="memItemLeft">static final PseudoClass&#160;</td><td class="memItemRight"><a class="el" href="#ad45b889ad165145617acae110e8f87e5">DIFFICULTY_LEVEL_PSEUDO_SELECTED</a></td></tr>
 <tr class="memitem:ae05d9f1253bb8adeb65f3137f65e16d1" id="r_ae05d9f1253bb8adeb65f3137f65e16d1"><td class="memItemLeft">static final double&#160;</td><td class="memItemRight"><a class="el" href="#ae05d9f1253bb8adeb65f3137f65e16d1">FADE_IN_IN_SECONDS_AFTER_SPLASHSCREEN</a> = 0.3</td></tr>
+<tr class="memitem:a816343dd72eed1c6b065274724399840" id="r_a816343dd72eed1c6b065274724399840"><td class="memItemLeft">static final Set&lt; KeyCode &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a816343dd72eed1c6b065274724399840">LEVEL_VALID_KEYS</a> = Set.of(KeyCode.ENTER, KeyCode.SPACE)</td></tr>
 <tr class="memitem:a46133cf602827b5ebe74e531a228b546" id="r_a46133cf602827b5ebe74e531a228b546"><td class="memItemLeft">static final Logger&#160;</td><td class="memItemRight"><a class="el" href="#a46133cf602827b5ebe74e531a228b546">LOG</a> = LoggerFactory.getLogger(MainView.class)</td></tr>
 <tr class="memitem:a31b35c1b62933e3392b002b6d267bb6b" id="r_a31b35c1b62933e3392b002b6d267bb6b"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#a31b35c1b62933e3392b002b6d267bb6b">MAX_STARS_PERCENTAGE</a> = 100</td></tr>
 <tr class="memitem:a423dae53248783c4013c279d8fc1b7a6" id="r_a423dae53248783c4013c279d8fc1b7a6"><td class="memItemLeft">static final PseudoClass&#160;</td><td class="memItemRight"><a class="el" href="#a423dae53248783c4013c279d8fc1b7a6">NAME_PSEUDO_FOCUSED</a></td></tr>
@@ -1104,8 +1105,8 @@ OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class. </p>
 </table>
 </div><div class="memdoc">
 
-<p>Dispatches level-related interaction events to the specialized handler. </p>
-<p>Provides a callback to maintain UI styling encapsulation.</p>
+<p>Dispatches level-related interaction events to the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html">LevelInteractionHandler</a></code>. </p>
+<p>Acts as a central router for UI events, mapping physical interactions to business logic in the handler while maintaining visual encapsulation via the opacity callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>the mouse or keyboard event captured from the UI </td></tr>
@@ -2414,6 +2415,28 @@ Delegates the multi-column layout initialization to the structural list view fac
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a816343dd72eed1c6b065274724399840" name="a816343dd72eed1c6b065274724399840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a816343dd72eed1c6b065274724399840">&#9670;&#160;</a></span>LEVEL_VALID_KEYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Set&lt;KeyCode&gt; fr.softsf.sudokufx.view.main.MainView.LEVEL_VALID_KEYS = Set.of(KeyCode.ENTER, KeyCode.SPACE)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

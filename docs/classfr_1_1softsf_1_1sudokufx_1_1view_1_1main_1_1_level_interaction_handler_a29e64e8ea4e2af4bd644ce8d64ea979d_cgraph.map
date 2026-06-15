@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.handleEnd" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.handleEnd">
+<area shape="rect" id="Node000001" title="Finalizes the interaction, calculates the duration of the press, and applies the level selection." alt="" coords="5,5,229,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a329d9d8175dc720f37a7546dd4f980c9" title="Finalizes level selection and synchronizes reactive state across ViewModels asynchronously." alt="" coords="277,5,501,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,24,261,24,261,29,229,29"/>
+</map>

@@ -1,9 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#afbba9e440a57ccf639c68cf734d62270":[2,0,0,0,0,9,12,80],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#afe4bda9a4e2a9bdaf18cfb33ea0e130b":[1,0,0,0,0,10,12,94],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#afe4bda9a4e2a9bdaf18cfb33ea0e130b":[2,0,0,0,0,9,12,94],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#affb61921e2b3545de6b96d4fbb216fff":[1,0,0,0,0,10,12,14],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#affb61921e2b3545de6b96d4fbb216fff":[2,0,0,0,0,9,12,14],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html":[1,0,0,0,0,10,13],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html":[2,0,0,0,0,9,13],
@@ -249,5 +245,9 @@ var NAVTREEINDEX17 =
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a660c84b74631fdb1eb81728b6964d96a":[2,0,0,0,0,9,15,29],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a70c496b17fe209580cd7fd0b3186c4dc":[1,0,0,0,0,10,15,49],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a70c496b17fe209580cd7fd0b3186c4dc":[2,0,0,0,0,9,15,49],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7887293ee90b072f1fd4c94800f948a4":[1,0,0,0,0,10,15,48]
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7887293ee90b072f1fd4c94800f948a4":[1,0,0,0,0,10,15,48],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7887293ee90b072f1fd4c94800f948a4":[2,0,0,0,0,9,15,48],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7943ef327bf3140fe8094b4866a47223":[1,0,0,0,0,10,15,25],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7943ef327bf3140fe8094b4866a47223":[2,0,0,0,0,9,15,25],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a87d4a065eb583cd28939b0a94d0d9309":[1,0,0,0,0,10,15,14]
 };

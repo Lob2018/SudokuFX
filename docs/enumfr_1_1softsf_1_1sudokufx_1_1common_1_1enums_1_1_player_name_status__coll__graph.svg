@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Utility enum representing the validation status of a player name.">
 <polygon fill="#999999" stroke="none" points="160.25,-112 0,-112 0,0 160.25,0 160.25,-112"/>
 <text text-anchor="start" x="4" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.enums.</text>
 <text text-anchor="start" x="38.88" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerNameStatus</text>

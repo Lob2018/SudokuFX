@@ -119,22 +119,16 @@ document.addEventListener('DOMContentLoaded', () => {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>import java.util.Objects;</code><br />
-<code>import java.util.Set;</code><br />
 <code>import java.util.function.Consumer;</code><br />
 <code>import javafx.animation.Animation;</code><br />
 <code>import javafx.animation.KeyFrame;</code><br />
 <code>import javafx.animation.Timeline;</code><br />
 <code>import javafx.concurrent.Task;</code><br />
-<code>import javafx.scene.control.Button;</code><br />
-<code>import javafx.scene.input.InputEvent;</code><br />
-<code>import javafx.scene.input.KeyCode;</code><br />
-<code>import javafx.scene.input.KeyEvent;</code><br />
-<code>import javafx.scene.input.MouseEvent;</code><br />
 <code>import javafx.util.Duration;</code><br />
-<code>import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;</code><br />
 <code>import org.slf4j.Logger;</code><br />
 <code>import org.slf4j.LoggerFactory;</code><br />
 <code>import org.springframework.stereotype.Component;</code><br />
+<code>import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.DifficultyLevel;</code><br />
 <code>import fr.softsf.sudokufx.common.exception.ExceptionTools;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.MenuLevelViewModel;</code><br />
