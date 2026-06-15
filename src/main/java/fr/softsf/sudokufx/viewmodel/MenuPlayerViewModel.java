@@ -9,6 +9,8 @@ import java.text.MessageFormat;
 import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
+
+import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;

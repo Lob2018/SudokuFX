@@ -73,7 +73,7 @@ import fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
 import fr.softsf.sudokufx.viewmodel.MenuSolveViewModel;
-import fr.softsf.sudokufx.viewmodel.PlayerNameStatus;
+import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
 import fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel;
 import fr.softsf.sudokufx.viewmodel.grid.GridViewModel;
 
