@@ -1128,5 +1128,6 @@ public class MenuOptionsViewModel {
         }
         muteProperty.set(options.muted());
         updateSongNameFromPath(options.songpath());
+        gridOpacityProperty.set(options.opaque());
     }
 }
