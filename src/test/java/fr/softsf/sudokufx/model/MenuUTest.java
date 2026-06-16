@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -33,17 +35,29 @@ class MenuUTest {
     }
 
     @Test
-    @DisplayName("Should create Menu with default constructor")
-    void givenNothing_whenCreateMenuWithDefaultConstructor_thenMenuHasDefaultValues() {
-        Menu menu = new Menu();
+    @DisplayName("Should create Menu with default constructor via reflection")
+    void givenNothing_whenCreateMenuWithDefaultConstructor_thenMenuHasDefaultValues()
+            throws NoSuchMethodException,
+                    InvocationTargetException,
+                    InstantiationException,
+                    IllegalAccessException {
+        java.lang.reflect.Constructor<Menu> constructor = Menu.class.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        Menu menu = constructor.newInstance();
         assertNull(menu.getMenuid());
         assertEquals(0, menu.getMode());
     }
 
     @Test
-    @DisplayName("Should set mode using setter")
-    void givenExistingMenu_whenSetModeUsingSetter_thenModeIsUpdated() {
-        Menu menu = new Menu();
+    @DisplayName("Should instanciate via reflection and set mode using setter")
+    void givenExistingMenu_whenSetModeUsingSetter_thenModeIsUpdated()
+            throws NoSuchMethodException,
+                    InvocationTargetException,
+                    InstantiationException,
+                    IllegalAccessException {
+        java.lang.reflect.Constructor<Menu> constructor = Menu.class.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        Menu menu = constructor.newInstance();
         byte newMode = 1;
         menu.setMode(newMode);
         assertEquals(newMode, menu.getMode());

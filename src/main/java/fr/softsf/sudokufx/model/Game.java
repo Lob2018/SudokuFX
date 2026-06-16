@@ -34,7 +34,7 @@ import jakarta.validation.constraints.NotNull;
  */
 @Entity
 @Table(name = "game")
-public class Game {
+public final class Game {
 
     private static final String GRIDID_MUST_NOT_BE_NULL = "gridid must not be null";
     private static final String PLAYERID_MUST_NOT_BE_NULL = "playerid must not be null";
@@ -81,7 +81,7 @@ public class Game {
     private Instant updatedat = Instant.now();
 
     /** Protected default constructor for JPA. */
-    protected Game() {}
+    private Game() {}
 
     /**
      * Full constructor initializing all fields of the game.

@@ -23,7 +23,7 @@ import jakarta.validation.constraints.Min;
  */
 @Entity
 @Table(name = "gamelevel")
-public class GameLevel {
+public final class GameLevel {
 
     /** Unique identifier of the game level (primary key). */
     @Id
@@ -36,7 +36,7 @@ public class GameLevel {
     private byte level;
 
     /** Protected default constructor for JPA. */
-    protected GameLevel() {}
+    private GameLevel() {}
 
     /**
      * Full constructor to initialize a game level.

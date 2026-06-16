@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -50,16 +52,30 @@ class PlayerLanguageUTest {
     @Test
     @DisplayName("Should create PlayerLanguage with default constructor")
     void
-            givenNothing_whenCreatePlayerLanguageWithDefaultConstructor_thenPlayerLanguageHasDefaultValues() {
-        PlayerLanguage playerLanguage = new PlayerLanguage();
+            givenNothing_whenCreatePlayerLanguageWithDefaultConstructor_thenPlayerLanguageHasDefaultValues()
+                    throws InvocationTargetException,
+                            InstantiationException,
+                            IllegalAccessException,
+                            NoSuchMethodException {
+        java.lang.reflect.Constructor<PlayerLanguage> constructor =
+                PlayerLanguage.class.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        PlayerLanguage playerLanguage = constructor.newInstance();
         assertNull(playerLanguage.getPlayerlanguageid());
         assertEquals("FR", playerLanguage.getIso());
     }
 
     @Test
     @DisplayName("Should set iso using setter with valid value")
-    void givenExistingPlayerLanguage_whenSetValidIsoUsingSetter_thenIsoIsUpdated() {
-        PlayerLanguage playerLanguage = new PlayerLanguage();
+    void givenExistingPlayerLanguage_whenSetValidIsoUsingSetter_thenIsoIsUpdated()
+            throws InvocationTargetException,
+                    InstantiationException,
+                    IllegalAccessException,
+                    NoSuchMethodException {
+        java.lang.reflect.Constructor<PlayerLanguage> constructor =
+                PlayerLanguage.class.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        PlayerLanguage playerLanguage = constructor.newInstance();
         String newIso = "EN";
         playerLanguage.setIso(newIso);
         assertEquals(newIso, playerLanguage.getIso());

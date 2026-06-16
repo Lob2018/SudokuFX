@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -45,8 +47,15 @@ class OptionsUTest {
 
         @Test
         void
-                givenNoParameters_whenCreatingOptionsWithDefaultConstructor_thenOptionsIsCreatedWithDefaults() {
-            Options options = new Options();
+                givenNoParameters_whenCreatingOptionsWithDefaultConstructor_thenOptionsIsCreatedWithDefaults()
+                        throws InvocationTargetException,
+                                InstantiationException,
+                                IllegalAccessException,
+                                NoSuchMethodException {
+            java.lang.reflect.Constructor<Options> constructor =
+                    Options.class.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            Options options = constructor.newInstance();
             assertNotNull(options);
             assertNull(options.getOptionsid());
             assertEquals("FFFFFFFF", options.getHexcolor());
@@ -200,16 +209,30 @@ class OptionsUTest {
     @DisplayName("Setter Tests")
     class SetterTests {
         @Test
-        void givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated() {
-            Options options = new Options();
+        void givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated()
+                throws NoSuchMethodException,
+                        InvocationTargetException,
+                        InstantiationException,
+                        IllegalAccessException {
+            java.lang.reflect.Constructor<Options> constructor =
+                    Options.class.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            Options options = constructor.newInstance();
             String newHexColor = "FF000000";
             options.setHexcolor(newHexColor);
             assertEquals(newHexColor, options.getHexcolor());
         }
 
         @Test
-        void givenInvalidHexColor_whenSettingHexColor_thenIllegalArgumentExceptionIsThrown() {
-            Options options = new Options();
+        void givenInvalidHexColor_whenSettingHexColor_thenIllegalArgumentExceptionIsThrown()
+                throws NoSuchMethodException,
+                        InvocationTargetException,
+                        InstantiationException,
+                        IllegalAccessException {
+            java.lang.reflect.Constructor<Options> constructor =
+                    Options.class.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            Options options = constructor.newInstance();
             IllegalArgumentException exception =
                     assertThrows(
                             IllegalArgumentException.class, () -> options.setHexcolor("invalid"));
@@ -219,8 +242,15 @@ class OptionsUTest {
         }
 
         @Test
-        void givenValidImagePath_whenSettingImagePath_thenImagePathIsUpdated() {
-            Options options = new Options();
+        void givenValidImagePath_whenSettingImagePath_thenImagePathIsUpdated()
+                throws InvocationTargetException,
+                        InstantiationException,
+                        IllegalAccessException,
+                        NoSuchMethodException {
+            java.lang.reflect.Constructor<Options> constructor =
+                    Options.class.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            Options options = constructor.newInstance();
             String newImagePath = "/new/path/image.png";
             options.setImagepath(newImagePath);
             assertEquals(newImagePath, options.getImagepath());
@@ -228,8 +258,15 @@ class OptionsUTest {
 
         @Test
         @SuppressWarnings("ConstantConditions")
-        void givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown() {
-            Options options = new Options();
+        void givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown()
+                throws InvocationTargetException,
+                        InstantiationException,
+                        IllegalAccessException,
+                        NoSuchMethodException {
+            java.lang.reflect.Constructor<Options> constructor =
+                    Options.class.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            Options options = constructor.newInstance();
             NullPointerException exception =
                     assertThrows(NullPointerException.class, () -> options.setImagepath(null));
             assertEquals("imagepath must not be null", exception.getMessage());

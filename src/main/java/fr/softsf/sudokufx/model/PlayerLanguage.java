@@ -26,7 +26,7 @@ import jakarta.validation.constraints.Pattern;
  */
 @Entity
 @Table(name = "playerlanguage")
-public class PlayerLanguage {
+public final class PlayerLanguage {
 
     private static final String DEFAULT_ISO = "FR";
     private static final String ISO_MUST_NOT_BE_NULL = "iso must not be null";
@@ -47,7 +47,7 @@ public class PlayerLanguage {
     private String iso = DEFAULT_ISO;
 
     /** Protected default constructor for JPA. */
-    protected PlayerLanguage() {}
+    private PlayerLanguage() {}
 
     /**
      * Full constructor to initialize all fields of PlayerLanguage.

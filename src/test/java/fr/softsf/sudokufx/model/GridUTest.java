@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -27,9 +29,15 @@ class GridUTest {
     }
 
     @Test
-    @DisplayName("Should create Grid with default constructor")
-    void givenNothing_whenCreateGridWithDefaultConstructor_thenGridHasDefaultValues() {
-        Grid grid = new Grid();
+    @DisplayName("Should create Grid with default constructor via reflection")
+    void givenNothing_whenCreateGridWithDefaultConstructor_thenGridHasDefaultValues()
+            throws InvocationTargetException,
+                    InstantiationException,
+                    IllegalAccessException,
+                    NoSuchMethodException {
+        java.lang.reflect.Constructor<Grid> constructor = Grid.class.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        Grid grid = constructor.newInstance();
         assertNull(grid.getGridid());
         assertEquals("", grid.getDefaultgridvalue());
         assertEquals("", grid.getGridvalue());

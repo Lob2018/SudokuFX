@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.lang.reflect.InvocationTargetException;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -24,11 +26,19 @@ class GameLevelUTest {
 
     @Test
     @DisplayName(
-            "Given default constructor when creating GameLevel then should have default values")
-    void givenDefaultConstructor_whenCreatingGameLevel_thenShouldHaveDefaultValues() {
-        GameLevel gameLevel = new GameLevel();
+            "Given default constructor via reflection when creating GameLevel then should have"
+                    + " default values")
+    void givenDefaultConstructor_whenCreatingGameLevel_thenShouldHaveDefaultValues()
+            throws NoSuchMethodException,
+                    InvocationTargetException,
+                    InstantiationException,
+                    IllegalAccessException {
+        java.lang.reflect.Constructor<GameLevel> constructor =
+                GameLevel.class.getDeclaredConstructor();
+        constructor.setAccessible(true);
+        GameLevel gameLevel = constructor.newInstance();
         assertNull(gameLevel.getLevelid());
-        assertEquals(0, gameLevel.getLevel()); // byte default value
+        assertEquals(0, gameLevel.getLevel());
     }
 
     @Test

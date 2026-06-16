@@ -37,7 +37,7 @@ import jakarta.validation.constraints.Size;
  */
 @Entity
 @Table(name = "player")
-public class Player {
+public final class Player {
 
     private static final String PLAYERLANGUAGEID_MUST_NOT_BE_NULL =
             "playerlanguageid must not be null";
@@ -98,7 +98,7 @@ public class Player {
     private Instant updatedat = Instant.now();
 
     /** Protected default constructor for JPA. */
-    protected Player() {}
+    private Player() {}
 
     /**
      * Full constructor to initialize all fields of Player.

@@ -26,7 +26,7 @@ import jakarta.validation.constraints.Size;
  */
 @Entity
 @Table(name = "grid")
-public class Grid {
+public final class Grid {
 
     private static final String EMPTY_GRID = "";
     private static final String DEFAULTGRIDVALUE_MUST_NOT_BE_NULL =
@@ -54,7 +54,7 @@ public class Grid {
     private byte possibilities;
 
     /** Protected default constructor for JPA. */
-    protected Grid() {}
+    private Grid() {}
 
     /**
      * Full constructor to initialize a grid with all fields.

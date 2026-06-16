@@ -29,7 +29,7 @@ import jakarta.validation.constraints.Size;
  */
 @Entity
 @Table(name = "playeroptions")
-public class Options {
+public final class Options {
 
     private static final String DEFAULT_HEX_COLOR = "FFFFFFFF";
     private static final String EMPTY_PATH = "";
@@ -72,7 +72,7 @@ public class Options {
     private boolean muted = true;
 
     /** Protected default constructor for JPA. */
-    protected Options() {}
+    private Options() {}
 
     /**
      * Full constructor using JEP 482 (Statements before super()).

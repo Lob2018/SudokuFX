@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.model;
 
+import java.lang.reflect.InvocationTargetException;
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 
@@ -502,10 +503,16 @@ class GameUTest {
 
         @Test
         @DisplayName(
-                "Given default constructor when creating Game then Game is created with default"
-                        + " values")
-        void givenDefaultConstructor_whenCreatingGame_thenGameIsCreatedWithDefaultValues() {
-            Game game = new Game();
+                "Given default constructor via reflection when creating Game then Game is created"
+                        + " with default values")
+        void givenDefaultConstructor_whenCreatingGame_thenGameIsCreatedWithDefaultValues()
+                throws InvocationTargetException,
+                        InstantiationException,
+                        IllegalAccessException,
+                        NoSuchMethodException {
+            java.lang.reflect.Constructor<Game> constructor = Game.class.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            Game game = constructor.newInstance();
             assertNotNull(game);
             assertNull(game.getGameid());
             assertNull(game.getGridid());

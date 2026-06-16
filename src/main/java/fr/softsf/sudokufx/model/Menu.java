@@ -23,7 +23,7 @@ import jakarta.validation.constraints.Min;
  */
 @Entity
 @Table(name = "menu")
-public class Menu {
+public final class Menu {
 
     /** Unique identifier of the menu (primary key). */
     @Id
@@ -36,7 +36,7 @@ public class Menu {
     private byte mode;
 
     /** Protected default constructor for JPA. */
-    protected Menu() {}
+    private Menu() {}
 
     /**
      * Full constructor to initialize a menu with all fields.
