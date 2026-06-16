@@ -94,6 +94,8 @@ public class MenuPlayerViewModel {
     private final ReadOnlyBooleanWrapper editing = new ReadOnlyBooleanWrapper(false);
     private final ReadOnlyBooleanWrapper playerSwitchedSignal = new ReadOnlyBooleanWrapper(false);
 
+    private boolean isLockedWhileUpdating = false;
+
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP2",
             justification =
@@ -150,11 +152,14 @@ public class MenuPlayerViewModel {
                                     || Objects.equals(newValue.playerid(), old.playerid())) {
                                 return;
                             }
-                            playerService.switchAndSelectNewPlayer(
-                                    old.playerid(), newValue.playerid());
-                            loadPlayers();
-                            playerStateHolder.refreshCurrentPlayer();
-                            playerSwitchedSignal.set(!playerSwitchedSignal.get());
+                            runGuarded(
+                                    () -> {
+                                        playerService.switchAndSelectNewPlayer(
+                                                old.playerid(), newValue.playerid());
+                                        loadPlayers();
+                                        playerStateHolder.refreshCurrentPlayer();
+                                        playerSwitchedSignal.set(!playerSwitchedSignal.get());
+                                    });
                         });
         I18n.INSTANCE
                 .localeProperty()
@@ -534,7 +539,36 @@ public class MenuPlayerViewModel {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The playerDto must not be null");
         }
-        playerService.deletePlayer(playerDto.playerid());
+        runGuarded(
+                () -> {
+                    playerService.deletePlayer(playerDto.playerid());
+                    refreshUI();
+                });
+    }
+
+    /**
+     * Executes the provided action within a guarded block to prevent reentrant updates and state
+     * corruption.
+     *
+     * @param action the action to execute
+     */
+    private void runGuarded(Runnable action) {
+        if (isLockedWhileUpdating) {
+            return;
+        }
+        isLockedWhileUpdating = true;
+        try {
+            action.run();
+        } finally {
+            isLockedWhileUpdating = false;
+        }
+    }
+
+    /**
+     * Refreshes the UI state by synchronizing the current player, toggling the switched signal, and
+     * reloading the player list.
+     */
+    private void refreshUI() {
         playerStateHolder.refreshCurrentPlayer();
         playerSwitchedSignal.set(!playerSwitchedSignal.get());
         loadPlayers();
