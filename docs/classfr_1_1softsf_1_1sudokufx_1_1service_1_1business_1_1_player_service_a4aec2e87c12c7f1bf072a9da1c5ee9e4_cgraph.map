@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.service.business.PlayerService.deletePlayer" name="fr.softsf.sudokufx.service.business.PlayerService.deletePlayer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,105,235,148"/>
+<area shape="rect" id="Node000001" title="Deletes a player entity and ensures the system remains in a valid state." alt="" coords="5,105,235,148"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a697b2c1beaa343f3fb9ad3a3c4f3d220" title="Returns the name of the player." alt="" coords="318,5,484,48"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,102,282,57,303,51,304,56,284,63,171,107"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a14eea5e4e2fcee41313fe89f00b4249e" title="Returns the unique ID of the player." alt="" coords="318,72,484,115"/>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.refreshUI" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.refreshUI">
+<area shape="rect" id="Node000001" title="Refreshes the UI state by synchronizing the current player, toggling the switched signal,..." alt="" coords="5,5,218,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ae780866cb629a7b3fb902530ee8b4098" title="Loads players into the observable list." alt="" coords="266,5,492,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,24,250,24,250,29,218,29"/>
+</map>

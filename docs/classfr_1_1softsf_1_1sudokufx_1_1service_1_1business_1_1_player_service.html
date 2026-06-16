@@ -135,6 +135,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0f3a0d2f48da7a2f874fef822cb35f7" id="r_ac0f3a0d2f48da7a2f874fef822cb35f7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac0f3a0d2f48da7a2f874fef822cb35f7">createNewPlayerWithCurrent</a> (PlayerDto dto, String newName)</td></tr>
 <tr class="memdesc:ac0f3a0d2f48da7a2f874fef822cb35f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new player by duplicating the configuration and current game state of the source player.  <br /></td></tr>
 <tr class="memitem:a4aec2e87c12c7f1bf072a9da1c5ee9e4" id="r_a4aec2e87c12c7f1bf072a9da1c5ee9e4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a4aec2e87c12c7f1bf072a9da1c5ee9e4">deletePlayer</a> (long playerIdToDelete)</td></tr>
+<tr class="memdesc:a4aec2e87c12c7f1bf072a9da1c5ee9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a player entity and ensures the system remains in a valid state.  <br /></td></tr>
 <tr class="memitem:ae0e635b455827f61c43bf618b7374914" id="r_ae0e635b455827f61c43bf618b7374914"><td class="memItemLeft">PlayerDto&#160;</td><td class="memItemRight"><a class="el" href="#ae0e635b455827f61c43bf618b7374914">getPlayer</a> ()</td></tr>
 <tr class="memdesc:ae0e635b455827f61c43bf618b7374914"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and validates the first player with a selected game.  <br /></td></tr>
 <tr class="memitem:abb7b5c81662bbb92861d17b3645acba4" id="r_abb7b5c81662bbb92861d17b3645acba4"><td class="memItemLeft">Collection&lt; PlayerDto &gt;&#160;</td><td class="memItemRight"><a class="el" href="#abb7b5c81662bbb92861d17b3645acba4">getPlayers</a> ()</td></tr>
@@ -341,6 +342,22 @@ Unselects the previous player. </li>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Deletes a player entity and ensures the system remains in a valid state. </p>
+<p>If the player being deleted is the currently selected player, the system automatically switches the selection to the anonymous player. Anonymized player accounts cannot be deleted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerIdToDelete</td><td>the unique identifier of the player to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalArgumentException</td><td>if the player is not found, or if the anonymous player is missing during a mandatory selection switch </td></tr>
+    <tr><td class="paramname">jakarta.validation.ConstraintViolationException</td><td>if validation fails after switching the selection to the anonymous player </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
@@ -594,7 +611,6 @@ Unselects the previous player. </li>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">IllegalArgumentException</td><td>if the player does not exist </td></tr>
-    <tr><td class="paramname">jakarta.validation.ConstraintViolationException</td><td>if validation fails </td></tr>
   </table>
   </dd>
 </dl>

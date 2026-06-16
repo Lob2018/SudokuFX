@@ -1,5 +1,9 @@
 var NAVTREEINDEX20 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4d18a51a00d5ccc5e0433f5ff032a67f":[1,0,0,0,0,1,1,1,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4d18a51a00d5ccc5e0433f5ff032a67f":[2,0,0,0,0,1,1,1,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4e26da0da35dce50862fe1115fc44acb":[1,0,0,0,0,1,1,1,11],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4e26da0da35dce50862fe1115fc44acb":[2,0,0,0,0,1,1,1,11],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a506a2d6b959bf7217bcc40bb4a2199c0":[1,0,0,0,0,1,1,1,26],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a506a2d6b959bf7217bcc40bb4a2199c0":[2,0,0,0,0,1,1,1,26],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a5ef9e7bbf0272ca562a9676b7b27e9bc":[1,0,0,0,0,1,1,1,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX20 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a68f77aa53053bded5a83fa4a1e952775":[1,0,0,0,0,1,4,7,8],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a68f77aa53053bded5a83fa4a1e952775":[2,0,0,0,0,1,4,7,8],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a74b97f78c396fface10682e7899e6046":[1,0,0,0,0,1,4,7,4],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a74b97f78c396fface10682e7899e6046":[2,0,0,0,0,1,4,7,4],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ac9bf81a6125aaca1e99d8f88a4351ee2":[1,0,0,0,0,1,4,7,7],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ac9bf81a6125aaca1e99d8f88a4351ee2":[2,0,0,0,0,1,4,7,7],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ad53ae059496336e4031a459f25af146a":[1,0,0,0,0,1,4,7,5],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#ad53ae059496336e4031a459f25af146a":[2,0,0,0,0,1,4,7,5]
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a74b97f78c396fface10682e7899e6046":[2,0,0,0,0,1,4,7,4]
 };

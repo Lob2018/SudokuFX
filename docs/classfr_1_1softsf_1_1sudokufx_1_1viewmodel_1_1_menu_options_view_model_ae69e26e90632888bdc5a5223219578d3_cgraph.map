@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyOptionsToUI" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyOptionsToUI">
-<area shape="rect" id="Node000001" title="Applique les options visuelles au composant sudokuFX." alt="" coords="5,96,276,139"/>
+<area shape="rect" id="Node000001" title="Applies visual options to the sudokuFX component." alt="" coords="5,96,276,139"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#aae209f8a3ddfd8a72731b3fee828ca7b" title="Applies a background image to the specified GridPane." alt="" coords="328,88,590,147"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,115,313,115,313,120,276,120"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a0295191f6793f349fc6bc02231f01875" title="Applies the given color as the background of the specified GridPane." alt="" coords="328,5,590,64"/>
