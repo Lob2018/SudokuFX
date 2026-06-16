@@ -32,7 +32,7 @@ import fr.softsf.sudokufx.dto.GridDto;
  * <p>Uses I18n singleton for localization with automatic updates on locale changes.
  */
 @Component
-public class MenuSaveViewModel {
+public final class MenuSaveViewModel {
 
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
             "menu.accessibility.role.description.opened";
@@ -371,5 +371,7 @@ public class MenuSaveViewModel {
         return cellConfirmationMessage;
     }
 
-    public void deleteGame(GameDto gameDto) {}
+    public void deleteGame(GameDto gameDto) {
+        // TODO work in progress
+    }
 }

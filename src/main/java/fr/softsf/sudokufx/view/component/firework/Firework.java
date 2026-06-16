@@ -114,6 +114,11 @@ public class Firework extends Group {
                 }
 
                 @Override
+                @SuppressFBWarnings(
+                        value = "EI_EXPOSE_REP",
+                        justification =
+                                "Required by JavaFX property binding mechanism; Firework.this is"
+                                        + " necessary for property association.")
                 public Object getBean() {
                     return Firework.this;
                 }

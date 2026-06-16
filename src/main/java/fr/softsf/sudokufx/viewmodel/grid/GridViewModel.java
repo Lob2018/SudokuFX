@@ -391,10 +391,7 @@ public class GridViewModel {
         GridDto toSaveGridDto = gameDto.grididDto().withGridvalue(result);
         PlayerDto toSavePlayer =
                 currentPlayer.withSelectedGame(
-                        currentPlayer
-                                .selectedGame()
-                                .withGrididDto(toSaveGridDto)
-                                .withUpdatedat(Instant.now()));
+                        gameDto.withGrididDto(toSaveGridDto).withUpdatedat(Instant.now()));
         playerService.updatePlayer(toSavePlayer);
         playerStateHolder.refreshCurrentPlayer();
     }
@@ -725,18 +722,17 @@ public class GridViewModel {
         Objects.requireNonNull(level, LEVEL_MUSTN_T_BE_NULL);
         Objects.requireNonNull(grillesCrees, "grillesCrees mustn't be null");
         PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
-        Objects.requireNonNull(
-                currentPlayer.selectedGame(), "currentPlayer.selectedGame() mustn't be null");
+        GameDto gameDto =
+                Objects.requireNonNull(
+                        currentPlayer.selectedGame(),
+                        "currentPlayer.selectedGame() mustn't be null");
         String defaultGrid =
                 iGridConverter.intArrayToDefaultGridValue(grillesCrees.grilleAResoudre());
         String gridValue =
                 iGridConverter.listToGridValue(
                         iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()));
-        // TODO
         GridDto toSaveGridDto =
-                currentPlayer
-                        .selectedGame()
-                        .grididDto()
+                gameDto.grididDto()
                         .withGridvalue(gridValue)
                         .withDefaultgridvalue(defaultGrid)
                         .withPossibilities((byte) grillesCrees.pourcentageDesPossibilites());
@@ -744,9 +740,7 @@ public class GridViewModel {
         GameLevelDto newLevelDto = gameLevelMapper.mapGameLevelToDto(newLevelEntity);
         PlayerDto toSavePlayer =
                 currentPlayer.withSelectedGame(
-                        currentPlayer
-                                .selectedGame()
-                                .withUpdatedat(Instant.now())
+                        gameDto.withUpdatedat(Instant.now())
                                 .withGrididDto(toSaveGridDto)
                                 .withLevelidDto(newLevelDto));
         playerService.updatePlayer(toSavePlayer);

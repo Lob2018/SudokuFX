@@ -52,10 +52,9 @@ import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
  * including asynchronous image loading with user feedback.
  */
 @Component
-public class MenuOptionsViewModel {
+public final class MenuOptionsViewModel {
 
     private static final Logger LOG = LoggerFactory.getLogger(MenuOptionsViewModel.class);
-    private static final int HEX_RADIX = 16;
     public static final String SUDOKU_FX_MUST_NOT_BE_NULL = "sudokuFX must not be null";
     public static final int HEXCOLOR_END_INDEX = 10;
     public static final int HEXCOLOR_BEGIN_INDEX = 2;

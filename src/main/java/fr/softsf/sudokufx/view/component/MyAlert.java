@@ -15,6 +15,7 @@ import javafx.stage.Stage;
 
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.AppPaths;
+import jakarta.annotation.Nullable;
 
 import static fr.softsf.sudokufx.common.enums.AppPaths.RESOURCES_CSS_ALERT_PATH;
 
@@ -22,7 +23,7 @@ import static fr.softsf.sudokufx.common.enums.AppPaths.RESOURCES_CSS_ALERT_PATH;
  * A styled JavaFX alert dialog with optional sizing and custom appearance. Applies a radial
  * gradient background, white text, and a custom window icon.
  */
-public class MyAlert extends Alert {
+public final class MyAlert extends Alert {
 
     private static final String ALERT_FONT_CSS =
             Objects.requireNonNull(SudoMain.class.getResource(RESOURCES_CSS_ALERT_PATH.getPath()))
@@ -41,9 +42,9 @@ public class MyAlert extends Alert {
      * Creates a styled alert with a fixed size.
      *
      * @param alertType the alert type (e.g., INFORMATION, CONFIRMATION)
-     * @param size the fixed width and height for the dialog pane
+     * @param size the fixed width and height for the dialog pane, or null for default sizing
      */
-    public MyAlert(AlertType alertType, Double size) {
+    public MyAlert(AlertType alertType, @Nullable Double size) {
         super(alertType);
         initDialog(size);
     }
@@ -53,7 +54,7 @@ public class MyAlert extends Alert {
      *
      * @param size the optional size; if null, the dialog uses default sizing
      */
-    private void initDialog(Double size) {
+    private void initDialog(@Nullable Double size) {
         DialogPane dialogPane = getDialogPane();
         if (size != null) {
             dialogPane.setMinWidth(size);

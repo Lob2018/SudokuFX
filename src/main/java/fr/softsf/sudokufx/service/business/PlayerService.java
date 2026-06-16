@@ -193,14 +193,16 @@ public class PlayerService {
         existing.setMenuid(menu);
         if (validatedDto.selectedGame() != null) {
             GameDto gameDto = validatedDto.selectedGame();
+            Long gameId =
+                    Objects.requireNonNull(gameDto.gameid(), "Game ID must not be null for update");
             Game existingGame =
                     gameRepository
-                            .findById(gameDto.gameid())
+                            .findById(gameId)
                             .orElseThrow(
                                     () ->
                                             ExceptionTools.INSTANCE
                                                     .logAndInstantiateIllegalArgument(
-                                                            "Game not found: " + gameDto.gameid()));
+                                                            "Game not found: " + gameId));
             GameLevel gameLevel = gameLevelService.findByLevelOrThrow(gameDto.levelidDto().level());
             existingGame.setLevelid(gameLevel);
             existingGame.setUpdatedat(gameDto.updatedat());
@@ -300,8 +302,8 @@ public class PlayerService {
                         .createdat(now)
                         .updatedat(now)
                         .build();
-        GameLevelDto gameLevelDto =
-                jakartaValidator.validateOrThrow(currentPlayerDto.selectedGame().levelidDto());
+        GameDto selectedGame = jakartaValidator.validateOrThrow(currentPlayerDto.selectedGame());
+        GameLevelDto gameLevelDto = jakartaValidator.validateOrThrow(selectedGame.levelidDto());
         GameLevel gameLevel = gameLevelService.findByLevelOrThrow(gameLevelDto.level());
         Game newGame =
                 Game.builder()
