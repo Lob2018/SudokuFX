@@ -47,7 +47,7 @@
 <text text-anchor="start" x="5.81" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="17.62" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">static MenuBuilder</text>
 <text text-anchor="start" x="17.62" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="6.19" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="7.31" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="17.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-202 0,-202 140.75,-202 140.75,-202 0,-202"/>
 <polygon fill="#666666" stroke="#666666" points="0,-170 0,-170 15.62,-170 15.62,-170 0,-170"/>

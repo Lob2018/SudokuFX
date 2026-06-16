@@ -58,7 +58,7 @@ var sectionId = 'dynsection-2';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Deletes a player entity and ensures the system remains in a valid state.">
 <polygon fill="#999999" stroke="#666666" points="172,-132 0,-132 0,-100 172,-100 172,-132"/>
 <text text-anchor="start" x="8" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
 <text text-anchor="middle" x="86" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService.deletePlayer</text>

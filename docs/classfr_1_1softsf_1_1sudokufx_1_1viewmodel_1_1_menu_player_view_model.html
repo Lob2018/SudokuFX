@@ -187,6 +187,10 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:ae780866cb629a7b3fb902530ee8b4098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads players into the observable list.  <br /></td></tr>
 <tr class="memitem:a062c453d8d6794a32f0f8246057d0604" id="r_a062c453d8d6794a32f0f8246057d0604"><td class="memItemLeft">String&#160;</td><td class="memItemRight"><a class="el" href="#a062c453d8d6794a32f0f8246057d0604">playerName</a> ()</td></tr>
 <tr class="memdesc:a062c453d8d6794a32f0f8246057d0604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the currently selected player.  <br /></td></tr>
+<tr class="memitem:a6e8fa34df63047e169ef52d3168a5de7" id="r_a6e8fa34df63047e169ef52d3168a5de7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a6e8fa34df63047e169ef52d3168a5de7">refreshUI</a> ()</td></tr>
+<tr class="memdesc:a6e8fa34df63047e169ef52d3168a5de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refreshes the UI state by synchronizing the current player, toggling the switched signal, and reloading the player list.  <br /></td></tr>
+<tr class="memitem:a8f8c1ded5be3fc82046472ea3fca63bb" id="r_a8f8c1ded5be3fc82046472ea3fca63bb"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8f8c1ded5be3fc82046472ea3fca63bb">runGuarded</a> (Runnable action)</td></tr>
+<tr class="memdesc:a8f8c1ded5be3fc82046472ea3fca63bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the provided action within a guarded block to prevent reentrant updates and state corruption.  <br /></td></tr>
 <tr class="memitem:add46cd4d4ea1ec7cb88a67a5f54f0a71" id="r_add46cd4d4ea1ec7cb88a67a5f54f0a71"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#add46cd4d4ea1ec7cb88a67a5f54f0a71">setSelectedPlayer</a> ()</td></tr>
 <tr class="memdesc:add46cd4d4ea1ec7cb88a67a5f54f0a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the selected player to the one marked as selected or first in the list.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -199,6 +203,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abf705c78079c6352a8b5dacd67de801c" id="r_abf705c78079c6352a8b5dacd67de801c"><td class="memItemLeft">final ReadOnlyBooleanWrapper&#160;</td><td class="memItemRight"><a class="el" href="#abf705c78079c6352a8b5dacd67de801c">editing</a> = new ReadOnlyBooleanWrapper(false)</td></tr>
 <tr class="memitem:af6c5b42e11c36f814dccdacba5df41e4" id="r_af6c5b42e11c36f814dccdacba5df41e4"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#af6c5b42e11c36f814dccdacba5df41e4">editRoleDescription</a></td></tr>
 <tr class="memitem:a00880e49c13258aa24e9280353ee004b" id="r_a00880e49c13258aa24e9280353ee004b"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a00880e49c13258aa24e9280353ee004b">editTooltip</a></td></tr>
+<tr class="memitem:a46f8271f617cb20f1811f886b8b79ed0" id="r_a46f8271f617cb20f1811f886b8b79ed0"><td class="memItemLeft">boolean&#160;</td><td class="memItemRight"><a class="el" href="#a46f8271f617cb20f1811f886b8b79ed0">isLockedWhileUpdating</a> = false</td></tr>
 <tr class="memitem:a5b2acc8f65105d283d4b1d7047ec556c" id="r_a5b2acc8f65105d283d4b1d7047ec556c"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a5b2acc8f65105d283d4b1d7047ec556c">maxiPlayerRoleDescription</a></td></tr>
 <tr class="memitem:a17f217482958b028bbce3b40fe608e3b" id="r_a17f217482958b028bbce3b40fe608e3b"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a17f217482958b028bbce3b40fe608e3b">maxiPlayerTooltip</a></td></tr>
 <tr class="memitem:a7dff50edf66738581a042ec046e55e66" id="r_a7dff50edf66738581a042ec046e55e66"><td class="memItemLeft">final StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a7dff50edf66738581a042ec046e55e66">newAccessibleText</a></td></tr>
@@ -530,7 +535,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-7-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-7-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_abbf3fb3646c18f07d341e7ff34150533_cgraph.svg" width="516" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_abbf3fb3646c18f07d341e7ff34150533_cgraph.svg" width="100%" height="390"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -1080,6 +1085,72 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a6e8fa34df63047e169ef52d3168a5de7" name="a6e8fa34df63047e169ef52d3168a5de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8fa34df63047e169ef52d3168a5de7">&#9670;&#160;</a></span>refreshUI()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.refreshUI </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refreshes the UI state by synchronizing the current player, toggling the switched signal, and reloading the player list. </p>
+<div id="dynsection-25" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-25-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-25-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model_a6e8fa34df63047e169ef52d3168a5de7_cgraph.svg" width="498" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a8f8c1ded5be3fc82046472ea3fca63bb" name="a8f8c1ded5be3fc82046472ea3fca63bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f8c1ded5be3fc82046472ea3fca63bb">&#9670;&#160;</a></span>runGuarded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.runGuarded </td>
+          <td>(</td>
+          <td class="paramtype">Runnable</td>          <td class="paramname"><span class="paramname"><em>action</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes the provided action within a guarded block to prevent reentrant updates and state corruption. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">action</td><td>the action to execute </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a71605f1cde24d333d9e5cb4b445c274c" name="a71605f1cde24d333d9e5cb4b445c274c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a71605f1cde24d333d9e5cb4b445c274c">&#9670;&#160;</a></span>selectedPlayerProperty()</h2>
 
@@ -1307,6 +1378,28 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">final StringBinding fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.editTooltip</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46f8271f617cb20f1811f886b8b79ed0" name="a46f8271f617cb20f1811f886b8b79ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46f8271f617cb20f1811f886b8b79ed0">&#9670;&#160;</a></span>isLockedWhileUpdating</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.isLockedWhileUpdating = false</td>
         </tr>
       </table>
   </td>

@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.model.Grid Pages: 1 -->
 <svg width="186pt" height="560pt"
  viewBox="0.00 0.00 185.75 560.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 556)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 556)">
 <title>fr.softsf.sudokufx.model.Grid</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -65,7 +65,7 @@
 <text text-anchor="start" x="4" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">static GridBuilder</text>
 <text text-anchor="start" x="14" y="-78.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="4.38" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="5.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">Grid()</text>
 <text text-anchor="start" x="5.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateDefaultgridvalue</text>

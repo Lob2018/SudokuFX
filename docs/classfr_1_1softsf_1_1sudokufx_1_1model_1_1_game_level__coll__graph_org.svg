@@ -38,7 +38,7 @@
 <text text-anchor="start" x="4" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-34.5" font-family="Helvetica,sans-Serif" font-size="10.00">static GameLevelBuilder</text>
 <text text-anchor="start" x="14" y="-22.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="4.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="5.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevel()</text>
 <polygon fill="#666666" stroke="#666666" points="0,-214 0,-214 126,-214 126,-214 0,-214"/>
 <polygon fill="#666666" stroke="#666666" points="0,-182 0,-182 12,-182 12,-182 0,-182"/>

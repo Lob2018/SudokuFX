@@ -1,5 +1,9 @@
 var NAVTREEINDEX19 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a696f9f7b19bfb201f888615c790d0cd4":[2,0,0,0,0,9,0,1,35],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c0cc287352035d18fd5c5b2df3c3c47":[1,0,0,0,0,10,0,1,45],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c0cc287352035d18fd5c5b2df3c3c47":[2,0,0,0,0,9,0,1,45],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c51680b6ade5101e302c6ed29db2352":[1,0,0,0,0,10,0,1,39],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c51680b6ade5101e302c6ed29db2352":[2,0,0,0,0,9,0,1,39],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c7bd2140fad9b3091830f3f81c64827":[1,0,0,0,0,10,0,1,16],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c7bd2140fad9b3091830f3f81c64827":[2,0,0,0,0,9,0,1,16],
@@ -245,9 +249,5 @@ var NAVTREEINDEX19 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a284f2568dbae9be9591539319ce8c253":[1,0,0,0,0,1,1,1,14],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a284f2568dbae9be9591539319ce8c253":[2,0,0,0,0,1,1,1,14],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a47089954327a9e1021536c8ebd936e2d":[1,0,0,0,0,1,1,1,10],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a47089954327a9e1021536c8ebd936e2d":[2,0,0,0,0,1,1,1,10],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4d18a51a00d5ccc5e0433f5ff032a67f":[1,0,0,0,0,1,1,1,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4d18a51a00d5ccc5e0433f5ff032a67f":[2,0,0,0,0,1,1,1,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4e26da0da35dce50862fe1115fc44acb":[1,0,0,0,0,1,1,1,11],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a4e26da0da35dce50862fe1115fc44acb":[2,0,0,0,0,1,1,1,11]
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a47089954327a9e1021536c8ebd936e2d":[2,0,0,0,0,1,1,1,10]
 };

@@ -197,7 +197,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ae69e26e90632888bdc5a5223219578d3" id="r_ae69e26e90632888bdc5a5223219578d3"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae69e26e90632888bdc5a5223219578d3">applyOptionsToUI</a> (OptionsDto options, GridPane sudokuFX)</td></tr>
-<tr class="memdesc:ae69e26e90632888bdc5a5223219578d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applique les options visuelles au composant sudokuFX.  <br /></td></tr>
+<tr class="memdesc:ae69e26e90632888bdc5a5223219578d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies visual options to the sudokuFX component.  <br /></td></tr>
 <tr class="memitem:ac437c4e3c7dce984a2b491eb1d9da090" id="r_ac437c4e3c7dce984a2b491eb1d9da090"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac437c4e3c7dce984a2b491eb1d9da090">checkInitialized</a> ()</td></tr>
 <tr class="memdesc:ac437c4e3c7dce984a2b491eb1d9da090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the <code><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html">MenuOptionsViewModel</a></code> has been initialized via <code><a class="el" href="#a231db409f6a7e4cb554d176ea8c7a3b1">init(GridPane)</a></code>.  <br /></td></tr>
 <tr class="memitem:a359e959bd335e531fe59f4eb942c0813" id="r_a359e959bd335e531fe59f4eb942c0813"><td class="memItemLeft">Observable[]&#160;</td><td class="memItemRight"><a class="el" href="#a359e959bd335e531fe59f4eb942c0813">concatDependencies</a> (Observable... dependencies)</td></tr>
@@ -299,7 +299,6 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-static-attribs" class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:ad7ed63dd3a1d09d846174cb17ce4cae7" id="r_ad7ed63dd3a1d09d846174cb17ce4cae7"><td class="memItemLeft">static final int&#160;</td><td class="memItemRight"><a class="el" href="#ad7ed63dd3a1d09d846174cb17ce4cae7">HEX_RADIX</a> = 16</td></tr>
 <tr class="memitem:ad98bc108e931e564608c32d470e63269" id="r_ad98bc108e931e564608c32d470e63269"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#ad98bc108e931e564608c32d470e63269">ICON_MUTE_OFF</a> = &quot;\ue04f&quot;</td></tr>
 <tr class="memitem:afbba9e440a57ccf639c68cf734d62270" id="r_afbba9e440a57ccf639c68cf734d62270"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#afbba9e440a57ccf639c68cf734d62270">ICON_MUTE_ON</a> = &quot;\ue050&quot;</td></tr>
 <tr class="memitem:a0660b4d7a07c8603493948a5459dda52" id="r_a0660b4d7a07c8603493948a5459dda52"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#a0660b4d7a07c8603493948a5459dda52">ICON_OPACITY_OFF</a> = &quot;\ue0c4&quot;</td></tr>
@@ -489,8 +488,15 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Applique les options visuelles au composant sudokuFX. </p>
-<p>Méthode factorisée : ne contient AUCUN appel de persistance. </p>
+<p>Applies visual options to the sudokuFX component. </p>
+<p>This is a refactored utility method that contains NO persistence logic.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>the visual options DTO containing colors, background, and UI settings </td></tr>
+    <tr><td class="paramname">sudokuFX</td><td>the target grid component to which the styles are applied </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
@@ -2431,28 +2437,6 @@ gridOpacityProperty</code>, and returns the actual updated value. </p>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel private">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad7ed63dd3a1d09d846174cb17ce4cae7" name="ad7ed63dd3a1d09d846174cb17ce4cae7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ed63dd3a1d09d846174cb17ce4cae7">&#9670;&#160;</a></span>HEX_RADIX</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final int fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.HEX_RADIX = 16</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel private">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

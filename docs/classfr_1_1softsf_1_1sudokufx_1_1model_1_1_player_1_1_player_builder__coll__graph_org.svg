@@ -106,7 +106,7 @@
 <text text-anchor="start" x="4" y="-732.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-732.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerLanguageBuilder</text>
 <text text-anchor="start" x="14" y="-720.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="4.38" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="5.5" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-704.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage()</text>
 <text text-anchor="start" x="5.5" y="-688.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-688.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateIso</text>
@@ -216,7 +216,7 @@
 <text text-anchor="start" x="170.25" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="180.25" y="-540.5" font-family="Helvetica,sans-Serif" font-size="10.00">static OptionsBuilder</text>
 <text text-anchor="start" x="180.25" y="-528.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="170.62" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="171.75" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="180.25" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options()</text>
 <text text-anchor="start" x="171.75" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="180.25" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateHexcolor</text>
@@ -269,7 +269,7 @@
 <text text-anchor="start" x="375.31" y="-792.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="387.12" y="-792.5" font-family="Helvetica,sans-Serif" font-size="10.00">static MenuBuilder</text>
 <text text-anchor="start" x="387.12" y="-780.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="375.69" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="376.81" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="387.12" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu()</text>
 <polygon fill="#666666" stroke="#666666" points="369.5,-960 369.5,-960 510.25,-960 510.25,-960 369.5,-960"/>
 <polygon fill="#666666" stroke="#666666" points="369.5,-928 369.5,-928 385.12,-928 385.12,-928 369.5,-928"/>

@@ -128,7 +128,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="158.62" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="168.62" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerBuilder</text>
 <text text-anchor="start" x="168.62" y="-202.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="159" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="160.12" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="168.62" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">Player()</text>
 <text text-anchor="start" x="160.12" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="168.62" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Instant validateCreated</text>
@@ -199,7 +199,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="4" y="-1176.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-1176.5" font-family="Helvetica,sans-Serif" font-size="10.00">static PlayerLanguageBuilder</text>
 <text text-anchor="start" x="14" y="-1164.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="4.38" y="-1148.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="5.5" y="-1148.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-1148.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguage()</text>
 <text text-anchor="start" x="5.5" y="-1132.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-1132.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateIso</text>
@@ -309,7 +309,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="170.25" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="180.25" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00">static OptionsBuilder</text>
 <text text-anchor="start" x="180.25" y="-972.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="170.62" y="-956.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="171.75" y="-956.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="180.25" y="-956.5" font-family="Helvetica,sans-Serif" font-size="10.00">Options()</text>
 <text text-anchor="start" x="171.75" y="-940.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="180.25" y="-940.5" font-family="Helvetica,sans-Serif" font-size="10.00">static String validateHexcolor</text>
@@ -362,7 +362,7 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="375.31" y="-1236.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="387.12" y="-1236.5" font-family="Helvetica,sans-Serif" font-size="10.00">static MenuBuilder</text>
 <text text-anchor="start" x="387.12" y="-1224.5" font-family="Helvetica,sans-Serif" font-size="10.00"> builder()</text>
-<text text-anchor="start" x="375.69" y="-1208.5" font-family="Helvetica,sans-Serif" font-size="10.00">#</text>
+<text text-anchor="start" x="376.81" y="-1208.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="387.12" y="-1208.5" font-family="Helvetica,sans-Serif" font-size="10.00">Menu()</text>
 <polygon fill="#666666" stroke="#666666" points="369.5,-1404 369.5,-1404 510.25,-1404 510.25,-1404 369.5,-1404"/>
 <polygon fill="#666666" stroke="#666666" points="369.5,-1372 369.5,-1372 385.12,-1372 385.12,-1372 369.5,-1372"/>

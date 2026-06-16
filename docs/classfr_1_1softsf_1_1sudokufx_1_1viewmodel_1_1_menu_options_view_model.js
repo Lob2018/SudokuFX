@@ -76,7 +76,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "audioUtils", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4b4c0f8767c31233d18060add72c4952", null ],
     [ "currentTask", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a5be2f626f28b3df28cc248c42c02c820", null ],
     [ "gridOpacityProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a318a63b85fc63af334c5b58cc2873584", null ],
-    [ "HEX_RADIX", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ad7ed63dd3a1d09d846174cb17ce4cae7", null ],
     [ "HEXCOLOR_BEGIN_INDEX", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a1ba482d277204d92112f219af6b63a5b", null ],
     [ "HEXCOLOR_END_INDEX", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4a28cf3e1c8c51609bcca4f27e03f869", null ],
     [ "ICON_MUTE_OFF", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ad98bc108e931e564608c32d470e63269", null ],
