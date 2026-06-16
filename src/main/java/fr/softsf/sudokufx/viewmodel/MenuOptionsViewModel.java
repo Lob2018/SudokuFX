@@ -1113,8 +1113,11 @@ public final class MenuOptionsViewModel {
     }
 
     /**
-     * Applique les options visuelles au composant sudokuFX. Méthode factorisée : ne contient AUCUN
-     * appel de persistance.
+     * Applies visual options to the sudokuFX component. This is a refactored utility method that
+     * contains NO persistence logic.
+     *
+     * @param options the visual options DTO containing colors, background, and UI settings
+     * @param sudokuFX the target grid component to which the styles are applied
      */
     private void applyOptionsToUI(OptionsDto options, GridPane sudokuFX) {
         if (StringUtils.isNotBlank(options.hexcolor())) {

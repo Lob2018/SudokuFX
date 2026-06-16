@@ -356,7 +356,6 @@ public class PlayerService {
      * @param playerId the identifier of the player to update
      * @param selected the new selection state
      * @throws IllegalArgumentException if the player does not exist
-     * @throws jakarta.validation.ConstraintViolationException if validation fails
      */
     private void updatePlayerSelection(long playerId, boolean selected) {
         Player player =
@@ -368,8 +367,7 @@ public class PlayerService {
                                                 "Player not found: " + playerId));
         player.setSelected(selected);
         player.setUpdatedat(MyDateTime.INSTANCE.getCurrentInstant());
-        Player saved = playerRepository.save(player);
-        jakartaValidator.validateOrThrow(playerMapper.mapPlayerToDto(saved));
+        playerRepository.save(player);
     }
 
     /**
@@ -389,6 +387,18 @@ public class PlayerService {
         updatePlayerSelection(newPlayerId, true);
     }
 
+    /**
+     * Deletes a player entity and ensures the system remains in a valid state.
+     *
+     * <p>If the player being deleted is the currently selected player, the system automatically
+     * switches the selection to the anonymous player. Anonymized player accounts cannot be deleted.
+     *
+     * @param playerIdToDelete the unique identifier of the player to be removed
+     * @throws IllegalArgumentException if the player is not found, or if the anonymous player is
+     *     missing during a mandatory selection switch
+     * @throws jakarta.validation.ConstraintViolationException if validation fails after switching
+     *     the selection to the anonymous player
+     */
     @Transactional
     public void deletePlayer(long playerIdToDelete) {
         Player playerToDelete =

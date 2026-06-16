@@ -58,7 +58,7 @@ class MenuSaveViewModelUTest {
         I18n.INSTANCE.setLocaleBundle("EN");
         String englishSave = viewModel.saveTextProperty().get();
         assertNotEquals(frenchSave, englishSave);
-        assertEquals("Backups", englishSave); // Remplacez par la vraie valeur attendue
+        assertEquals("Backups", englishSave);
     }
 
     @Test
