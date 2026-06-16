@@ -18,6 +18,11 @@ public class GameLevelService {
 
     private final GameLevelRepository gameLevelRepository;
 
+    /**
+     * Constructs a new {@code GameLevelService} with the required repository dependency.
+     *
+     * @param gameLevelRepository the repository for {@link GameLevel} entities
+     */
     public GameLevelService(GameLevelRepository gameLevelRepository) {
         this.gameLevelRepository = gameLevelRepository;
     }
