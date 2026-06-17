@@ -8,13 +8,9 @@ package fr.softsf.sudokufx.testing.unit.viewmodel;
 import java.text.MessageFormat;
 import java.time.Instant;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.function.Supplier;
-
-import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
-import fr.softsf.sudokufx.model.Player;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -27,6 +23,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
 import fr.softsf.sudokufx.dto.MenuDto;
 import fr.softsf.sudokufx.dto.OptionsDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
