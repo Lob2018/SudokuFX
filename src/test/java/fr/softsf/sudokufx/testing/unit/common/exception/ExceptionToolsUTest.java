@@ -61,18 +61,17 @@ class ExceptionToolsUTest {
         SQLInvalidAuthorizationSpecException target =
                 new SQLInvalidAuthorizationSpecException("auth failed");
         RuntimeException wrapped = new RuntimeException(new RuntimeException(target));
-        SQLInvalidAuthorizationSpecException result =
-                ExceptionTools.INSTANCE.findSQLInvalidAuthException(wrapped);
+        Throwable result = ExceptionTools.INSTANCE.findCriticalDatabaseException(wrapped);
         assertNotNull(result);
-        assertSame(target, result);
+        assertTrue(result instanceof SQLInvalidAuthorizationSpecException);
+        assertSame(target, (SQLInvalidAuthorizationSpecException) result);
     }
 
     @Test
     void givenExceptionChainWithoutSQLInvalidAuthorizationSpecException_whenGet_thenReturnsNull() {
         RuntimeException wrapped =
                 new RuntimeException(new IllegalStateException("no SQL exception"));
-        SQLInvalidAuthorizationSpecException result =
-                ExceptionTools.INSTANCE.findSQLInvalidAuthException(wrapped);
+        Throwable result = ExceptionTools.INSTANCE.findCriticalDatabaseException(wrapped);
         assertNull(result);
     }
 }

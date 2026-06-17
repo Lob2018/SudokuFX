@@ -27,6 +27,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.FxmlView;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.LogBackTxt;
+import fr.softsf.sudokufx.common.exception.DatabaseIntegrityException;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
@@ -78,37 +79,30 @@ public class SudoMain extends Application {
     }
 
     /**
-     * Logs an SQLInvalidAuthorizationSpecException with optional authentication details.
+     * Logs a critical database exception. Handles SQL authorization specs with special logging, and
+     * standard integrity exceptions with error logs.
      *
-     * <p>Throws an {@link IllegalArgumentException} if any argument is {@code null}. Logs the
-     * exception, and if the SQL state is {@code "28000"} or {@code "28501"}, logs a specific
-     * authentication message.
-     *
-     * @param e the general exception (must not be {@code null})
-     * @param sqlException the SQL authorization exception (must not be {@code null})
-     * @throws IllegalArgumentException if either argument is {@code null}
+     * @param e the general exception (must not be null)
+     * @param criticalEx the critical exception (must not be null)
      */
-    private static void logSqlInvalidAuthorization(
-            Exception e, SQLInvalidAuthorizationSpecException sqlException) {
+    private static void logCriticalDatabaseException(Exception e, Throwable criticalEx) {
         if (Objects.isNull(e)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "sqlInvalidAuthorization argument e must not be null");
+                    "logCriticalDatabaseException argument e must not be null");
         }
-        if (Objects.isNull(sqlException)) {
+        if (Objects.isNull(criticalEx)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "sqlInvalidAuthorization argument sqlException must not be null");
+                    "logCriticalDatabaseException argument criticalEx must not be null");
         }
-        LOG.error("██ SQLInvalidAuthorizationSpecException catch : {}", e.getMessage(), e);
-        String sqlState = sqlException.getSQLState();
-        if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
-            LOG.error(
-                    "██ SQLInvalidAuthorizationSpecException with sqlstate==(28000||28501) catch :"
-                            + " {}",
-                    e.getMessage(),
-                    e);
-            LOG.info(
-                    "\n\n{}",
-                    LogBackTxt.SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION.getLogBackMessage());
+        if (criticalEx instanceof SQLInvalidAuthorizationSpecException sqlEx) {
+            String sqlState = sqlEx.getSQLState();
+            if ("28000".equals(sqlState) || "28501".equals(sqlState)) {
+                LOG.error("██ Critical auth error (28000/28501) : {}", e.getMessage(), e);
+                LOG.info("\n\n{}", LogBackTxt.CRITICAL_DATABASE_EXCEPTION.getLogBackMessage());
+            }
+        } else if (criticalEx instanceof DatabaseIntegrityException) {
+            LOG.error("██ Database integrity violation detected : {}", criticalEx.getMessage(), e);
+            LOG.info("\n\n{}", LogBackTxt.CRITICAL_DATABASE_EXCEPTION.getLogBackMessage());
         }
     }
 
@@ -203,15 +197,15 @@ public class SudoMain extends Application {
             }
             initializeCoordinator();
             String msg = "██ Error in splash screen initialization thread {} : {}";
-            SQLInvalidAuthorizationSpecException sqlInvalidAuthorizationSpecException =
-                    ExceptionTools.INSTANCE.findSQLInvalidAuthException(throwable);
-            if (Objects.isNull(sqlInvalidAuthorizationSpecException)) {
+            Throwable criticalEx = ExceptionTools.INSTANCE.findCriticalDatabaseException(throwable);
+            if (Objects.isNull(criticalEx)) {
                 LOG.error(msg, " – triggering Platform.exit()", throwable.getMessage(), throwable);
                 Platform.exit();
+
             } else {
                 LOG.error(msg, " – displaying crash screen", throwable.getMessage(), throwable);
                 if (throwable instanceof Exception ex) {
-                    logSqlInvalidAuthorization(ex, sqlInvalidAuthorizationSpecException);
+                    logCriticalDatabaseException(ex, criticalEx);
                 }
                 PauseTransition pause = createViewTransition(FxmlView.CRASH_SCREEN.getPath(), 0);
                 pause.play();

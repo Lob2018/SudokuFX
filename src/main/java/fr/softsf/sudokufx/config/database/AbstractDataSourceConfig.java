@@ -6,7 +6,6 @@
 package fr.softsf.sudokufx.config.database;
 
 import java.sql.SQLException;
-import java.sql.SQLInvalidAuthorizationSpecException;
 import java.util.Objects;
 import javax.sql.DataSource;
 
@@ -17,6 +16,7 @@ import org.springframework.context.annotation.DependsOn;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
+import fr.softsf.sudokufx.common.exception.DatabaseIntegrityException;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.os.IOsFolder;
 
@@ -116,14 +116,15 @@ abstract class AbstractDataSourceConfig {
     /**
      * Validates {@code gamelevel} table integrity post-Flyway migration.
      *
-     * <p>Ensures exactly 3 distinct levels exist.
+     * <p>Ensures exactly 3 distinct levels exist in the database.
      *
-     * <p><b>Note:</b> Throws {@link SQLInvalidAuthorizationSpecException} to satisfy the {@code
-     * SudoMain} crash handler, which treats this specific exception as a trigger to display the
-     * recovery screen for data restoration.
+     * <p><b>Note:</b> Throws {@link DatabaseIntegrityException} to trigger the {@code SudoMain}
+     * crash handler, which displays the recovery screen for data restoration when the integrity
+     * check fails or a SQL exception occurs.
      *
      * @param dataSource the data source to validate
-     * @throws RuntimeException if validation fails or a SQL error occurs
+     * @throws DatabaseIntegrityException if the level count is incorrect or a SQL system error
+     *     occurs
      */
     private void validateDatabaseState(DataSource dataSource) {
         String query = "SELECT COUNT(DISTINCT LEVEL) FROM gamelevel";
@@ -133,12 +134,14 @@ abstract class AbstractDataSourceConfig {
             if (resultSet.next()) {
                 int count = resultSet.getInt(1);
                 if (count != 3) {
-                    throw new SQLInvalidAuthorizationSpecException(
-                            "DATABASE INTEGRITY ERROR: Expected 3 distinct levels, found " + count);
+                    throw new DatabaseIntegrityException(
+                            "DATABASE INTEGRITY ERROR: Expected 3 distinct levels, found " + count,
+                            null);
                 }
             }
         } catch (SQLException e) {
-            throw new RuntimeException("Failed to validate database state", e);
+            throw new DatabaseIntegrityException(
+                    "Critical failure accessing database during validation", e);
         }
     }
 }
