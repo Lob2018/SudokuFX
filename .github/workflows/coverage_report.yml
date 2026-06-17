@@ -2,12 +2,11 @@ name: "JaCoCo line covered ratio (from the pom.xml)"
 
 on:
   push:
-    branches: [ "main","develop" ]
+    branches: [ "main", "develop" ]
   pull_request:
-    branches: [ "main","develop" ]
+    branches: [ "main", "develop" ]
 
-permissions: # added using https://github.com/step-security/secure-repo
-  checks: write
+permissions:
   contents: read
 
 jobs:
@@ -28,8 +27,6 @@ jobs:
           java-version: '25'
           check-latest: true
           cache: 'maven'
-      - name: Verify Java Installation
-        run: java -version
       - name: Install Xvfb
         run: sudo apt-get install -y xvfb
       - name: Start Xvfb
@@ -38,23 +35,41 @@ jobs:
           echo "DISPLAY=:99" >> $GITHUB_ENV
       - name: Test
         run: mvn test -f pom.xml
-      - name: JaCoCo Code Coverage Report
-        id: jacoco_reporter
-        uses: PavanMudigonda/jacoco-reporter@865836ba1c886171b18ca8c19e49807882a434e6 # v5.2
-        with:
-          coverage_results_path: target/site/jacoco/jacoco.xml
-          coverage_report_name: Coverage
-          coverage_report_title: JaCoCo
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          skip_check_run: false
-          minimum_coverage: 80
-          fail_below_threshold: true
-          publish_only_summary: false
-      - name: Add JaCoCo report to workflow run summary
+
+      - name: Install libxml2-utils
+        run: sudo apt-get update && sudo apt-get install -y libxml2-utils
+
+      - name: Generate Coverage Summary
+        if: always()
         run: |
-          echo "| Outcome | Value |" >> $GITHUB_STEP_SUMMARY
-          echo "| --- | ---: |" >> $GITHUB_STEP_SUMMARY
-          echo "| Code Coverage % | **${{ steps.jacoco_reporter.outputs.coverage_percentage }}** |" >> $GITHUB_STEP_SUMMARY
-          echo "| :heavy_check_mark: Number of Lines Covered | ${{ steps.jacoco_reporter.outputs.covered_lines }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| :x: Number of Lines Missed | ${{ steps.jacoco_reporter.outputs.missed_lines }} |" >> $GITHUB_STEP_SUMMARY
-          echo "| Total Number of Lines | ${{ steps.jacoco_reporter.outputs.total_lines }} |" >> $GITHUB_STEP_SUMMARY
+          # Utilisation de string() pour capturer tout le texte de la cellule
+          # On nettoie les espaces insécables et virgules avec tr/sed
+          RAW_MISSED=$(xmllint --html --xpath 'string(//tfoot/tr/td[8])' target/site/jacoco/index.html 2>/dev/null | tr -d '[:space:],')
+          RAW_TOTAL=$(xmllint --html --xpath 'string(//tfoot/tr/td[9])' target/site/jacoco/index.html 2>/dev/null | tr -d '[:space:],')
+
+          # Nettoyage forcé pour ne garder que les chiffres
+          MISSED=$(echo "$RAW_MISSED" | grep -oE '[0-9]+' | head -1)
+          TOTAL_LINES=$(echo "$RAW_TOTAL" | grep -oE '[0-9]+' | head -1)
+
+          if [ -z "$MISSED" ] || [ -z "$TOTAL_LINES" ]; then
+            echo "::error::Extraction des données échouée. Vérifiez le chemin xpath."
+            exit 1
+          fi
+
+          COVERED=$((TOTAL_LINES - MISSED))
+          PERCENT=$(( (COVERED * 100) / TOTAL_LINES ))
+
+          {
+            echo "### JaCoCo Code Coverage Report"
+            echo "| Indicateur | Valeur |"
+            echo "| --- | ---: |"
+            echo "| Code Coverage % | **$PERCENT %** |"
+            echo "| :heavy_check_mark: Lignes couvertes | $COVERED |"
+            echo "| :x: Lignes manquées | $MISSED |"
+            echo "| Total lignes | $TOTAL_LINES |"
+          } >> $GITHUB_STEP_SUMMARY
+
+          if [ "$PERCENT" -lt 80 ]; then
+            echo "::error::Coverage is $PERCENT%, below 80%."
+            exit 1
+          fi
