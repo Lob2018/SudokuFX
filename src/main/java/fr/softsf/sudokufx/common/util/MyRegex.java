@@ -47,8 +47,8 @@ public enum MyRegex {
      * Precompiled regex pattern for validating player names. Requirements: - Alphabetic characters
      * only, optional spaces between words.
      */
-    private static final java.util.regex.Pattern PLAYER_NAME_PATTERN =
-            java.util.regex.Pattern.compile("^[A-Za-z]+(?: [A-Za-z]+)* *$|^ *$");
+    private static final Pattern PLAYER_NAME_PATTERN =
+            Pattern.compile("^[A-Za-z]+(?:\\s[A-Za-z]+)*+\\s*+$|^\\s*+$");
 
     public Pattern getSecretPattern() {
         return SECRET_PATTERN;
