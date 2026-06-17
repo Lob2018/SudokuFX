@@ -23,7 +23,7 @@
 <text text-anchor="start" x="16.12" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">WithMessage()</text>
 <text text-anchor="start" x="5.06" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="16.12" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenThrowable</text>
-<text text-anchor="start" x="16.12" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenFindSQLInvalidAuthException</text>
+<text text-anchor="start" x="16.12" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenFindCriticalDatabaseException</text>
 <text text-anchor="start" x="16.12" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenReturnsNull()</text>
 <text text-anchor="start" x="5.06" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
 <text text-anchor="start" x="16.12" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenThrowable</text>

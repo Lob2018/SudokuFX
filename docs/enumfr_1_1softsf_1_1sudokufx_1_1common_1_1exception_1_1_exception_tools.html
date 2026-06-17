@@ -130,8 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5d6f889834dd95ceab9cd6cb57a57d78" id="r_a5d6f889834dd95ceab9cd6cb57a57d78"><td class="memItemLeft">SQLInvalidAuthorizationSpecException&#160;</td><td class="memItemRight"><a class="el" href="#a5d6f889834dd95ceab9cd6cb57a57d78">findSQLInvalidAuthException</a> (Throwable e)</td></tr>
-<tr class="memdesc:a5d6f889834dd95ceab9cd6cb57a57d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches recursively through the exception chain to find the first <code><a class="el" href="">SQLInvalidAuthorizationSpecException</a></code>, starting from the given Throwable.  <br /></td></tr>
+<tr class="memitem:a610f944ab8f74d4fe132b14d590c6f4e" id="r_a610f944ab8f74d4fe132b14d590c6f4e"><td class="memItemLeft">Throwable&#160;</td><td class="memItemRight"><a class="el" href="#a610f944ab8f74d4fe132b14d590c6f4e">findCriticalDatabaseException</a> (Throwable e)</td></tr>
+<tr class="memdesc:a610f944ab8f74d4fe132b14d590c6f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively inspects the exception chain to find if it contains a critical database exception (either SQLInvalidAuthorizationSpecException or <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html" title="Thrown to indicate that the database state is inconsistent with the application&#39;s requirements,...">DatabaseIntegrityException</a>).  <br /></td></tr>
 <tr class="memitem:aee373055482e24b44505bb4b699551c3" id="r_aee373055482e24b44505bb4b699551c3"><td class="memItemLeft">private&lt; T extends Throwable &gt; T&#160;</td><td class="memItemRight"><a class="el" href="#aee373055482e24b44505bb4b699551c3">logAndInstantiate</a> (String message, Throwable cause, BiFunction&lt; String, Throwable, T &gt; factory, String defaultMsg, String logPrefix)</td></tr>
 <tr class="memdesc:aee373055482e24b44505bb4b699551c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal generic helper to centralize logging logic and exception instantiation.  <br /></td></tr>
 <tr class="memitem:aa99236a6233f7bfcb9edb4e4adb23c01" id="r_aa99236a6233f7bfcb9edb4e4adb23c01"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html">FolderCreationException</a>&#160;</td><td class="memItemRight"><a class="el" href="#aa99236a6233f7bfcb9edb4e4adb23c01">logAndInstantiateFolderCreation</a> (String message)</td></tr>
@@ -173,14 +173,14 @@ Static Private Attributes</h2></td></tr>
 <div class="textblock"><p>Utility enum for handling and analyzing exceptions. </p>
 <p>This enum provides methods to search for specific exception types within exception chains and centralizes error logging. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a5d6f889834dd95ceab9cd6cb57a57d78" name="a5d6f889834dd95ceab9cd6cb57a57d78"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d6f889834dd95ceab9cd6cb57a57d78">&#9670;&#160;</a></span>findSQLInvalidAuthException()</h2>
+<a id="a610f944ab8f74d4fe132b14d590c6f4e" name="a610f944ab8f74d4fe132b14d590c6f4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a610f944ab8f74d4fe132b14d590c6f4e">&#9670;&#160;</a></span>findCriticalDatabaseException()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">SQLInvalidAuthorizationSpecException fr.softsf.sudokufx.common.exception.ExceptionTools.findSQLInvalidAuthException </td>
+          <td class="memname">Throwable fr.softsf.sudokufx.common.exception.ExceptionTools.findCriticalDatabaseException </td>
           <td>(</td>
           <td class="paramtype">Throwable</td>          <td class="paramname"><span class="paramname"><em>e</em></span></td><td>)</td>
           <td></td>
@@ -188,14 +188,14 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Searches recursively through the exception chain to find the first <code><a class="el" href="">SQLInvalidAuthorizationSpecException</a></code>, starting from the given Throwable. </p>
+<p>Recursively inspects the exception chain to find if it contains a critical database exception (either SQLInvalidAuthorizationSpecException or <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html" title="Thrown to indicate that the database state is inconsistent with the application&#39;s requirements,...">DatabaseIntegrityException</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">e</td><td>the Throwable to inspect (may be null) </td></tr>
+    <tr><td class="paramname">e</td><td>the <code><a class="el" href="">Throwable</a></code> to inspect (can be null) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the first SQLInvalidAuthorizationSpecException found, or <code class="JavaDocCode">null</code> if not found </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the found <code><a class="el" href="">Throwable</a></code> instance, or <code class="JavaDocCode">null</code> if none match </dd></dl>
 
 </div>
 </div>

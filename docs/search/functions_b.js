@@ -30,5 +30,5 @@ var searchData=
   ['logandthrowillegalargumentifblank_27',['logAndThrowIllegalArgumentIfBlank',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a0d77e90c3561b0aea542126cb69de6a3',1,'fr::softsf::sudokufx::common::exception::ExceptionTools']]],
   ['logbackconfigurationexception_28',['LogbackConfigurationException',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html#a0058cc6692cd0608372ff43b83242eef',1,'fr::softsf::sudokufx::common::exception::LogbackConfigurationException']]],
   ['logbacktxt_29',['LogBackTxt',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#a021b5f0d143009e887ef8dded42041cd',1,'fr::softsf::sudokufx::common::enums::LogBackTxt']]],
-  ['logsqlinvalidauthorization_30',['logSqlInvalidAuthorization',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#ae8c480e4259c82f2983146fd756ce1e5',1,'fr::softsf::sudokufx::SudoMain']]]
+  ['logcriticaldatabaseexception_30',['logCriticalDatabaseException',['../classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html#aec160d5f2d8dc866edebccc8f89710f6',1,'fr::softsf::sudokufx::SudoMain']]]
 ];
