@@ -215,17 +215,18 @@ public enum ExceptionTools {
     }
 
     /**
-     * Searches recursively through the exception chain to find the first {@link
-     * SQLInvalidAuthorizationSpecException}, starting from the given Throwable.
+     * Recursively inspects the exception chain to find if it contains a critical database exception
+     * (either SQLInvalidAuthorizationSpecException or DatabaseIntegrityException).
      *
-     * @param e the Throwable to inspect (may be null)
-     * @return the first SQLInvalidAuthorizationSpecException found, or {@code null} if not found
+     * @param e the {@link Throwable} to inspect (can be null)
+     * @return the found {@link Throwable} instance, or {@code null} if none match
      */
-    public SQLInvalidAuthorizationSpecException findSQLInvalidAuthException(Throwable e) {
+    public Throwable findCriticalDatabaseException(Throwable e) {
         Throwable current = e;
         while (current != null) {
-            if (current instanceof SQLInvalidAuthorizationSpecException sqlEx) {
-                return sqlEx;
+            if (current instanceof SQLInvalidAuthorizationSpecException
+                    || current instanceof DatabaseIntegrityException) {
+                return current;
             }
             current = current.getCause();
         }

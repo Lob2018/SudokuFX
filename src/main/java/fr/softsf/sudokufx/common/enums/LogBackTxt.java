@@ -12,7 +12,7 @@ package fr.softsf.sudokufx.common.enums;
  * checkstyle-suppressions.xml).
  */
 public enum LogBackTxt {
-    SQL_INVALID_AUTHORIZATION_SPEC_EXCEPTION(
+    CRITICAL_DATABASE_EXCEPTION(
             """
             ██ Risk of loss of application data because database authentication is not valid:
             ██ You can say no and try restarting the application and if the problem persists, reset the application database.

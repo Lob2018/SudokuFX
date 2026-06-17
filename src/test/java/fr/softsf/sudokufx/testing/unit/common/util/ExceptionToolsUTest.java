@@ -19,16 +19,16 @@ class ExceptionToolsUTest {
     void
             givenThrowable_whenFindSQLInvalidAuthorizationSpecException_thenReturnsSQLInvalidAuthException() {
         Throwable t = new Throwable(new SQLInvalidAuthorizationSpecException());
-        SQLInvalidAuthorizationSpecException result =
-                ExceptionTools.INSTANCE.findSQLInvalidAuthException(t);
+        Throwable result = ExceptionTools.INSTANCE.findCriticalDatabaseException(t);
         assertInstanceOf(SQLInvalidAuthorizationSpecException.class, result);
+        SQLInvalidAuthorizationSpecException sqlEx = (SQLInvalidAuthorizationSpecException) result;
+        assertNotNull(sqlEx);
     }
 
     @Test
-    void givenThrowable_whenFindSQLInvalidAuthException_thenReturnsNull() {
+    void givenThrowable_whenFindCriticalDatabaseException_thenReturnsNull() {
         Throwable t = new Throwable(new Exception());
-        SQLInvalidAuthorizationSpecException result =
-                ExceptionTools.INSTANCE.findSQLInvalidAuthException(t);
+        Throwable result = ExceptionTools.INSTANCE.findCriticalDatabaseException(t);
         assertNull(result);
     }
 
