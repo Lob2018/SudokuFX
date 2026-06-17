@@ -8,9 +8,13 @@ package fr.softsf.sudokufx.testing.unit.viewmodel;
 import java.text.MessageFormat;
 import java.time.Instant;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.function.Supplier;
+
+import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
+import fr.softsf.sudokufx.model.Player;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
@@ -225,5 +229,41 @@ class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
         MenuPlayerViewModel testVm = new MenuPlayerViewModel(mockStateHolder, playerServiceMock);
         String bindingValue = testVm.playerAccessibleTextProperty().get();
         assertTrue(bindingValue.contains("NewTestPlayer"));
+    }
+
+    @Test
+    void givenEmptyOrNullInput_whenValidatePlayerName_thenStatusIsSetToEmpty() {
+        viewModel.validatePlayerName("");
+        assertEquals(PlayerNameStatus.EMPTY, viewModel.playerNameStatusProperty().get());
+        viewModel.validatePlayerName(null);
+        assertEquals(PlayerNameStatus.EMPTY, viewModel.playerNameStatusProperty().get());
+    }
+
+    @Test
+    void givenInvalidInput_whenValidatePlayerName_thenStatusIsSetToInvalid() {
+        viewModel.validatePlayerName("a".repeat(51));
+        assertEquals(PlayerNameStatus.INVALID, viewModel.playerNameStatusProperty().get());
+        viewModel.validatePlayerName("Player@123");
+        assertEquals(PlayerNameStatus.INVALID, viewModel.playerNameStatusProperty().get());
+        viewModel.validatePlayerName("Safe  player");
+        assertEquals(PlayerNameStatus.INVALID, viewModel.playerNameStatusProperty().get());
+    }
+
+    @Test
+    void givenExistingName_whenValidatePlayerName_thenStatusIsSetToUnavailable() {
+        viewModel.validatePlayerName("SafePlayer");
+        assertEquals(PlayerNameStatus.UNAVAILABLE, viewModel.playerNameStatusProperty().get());
+    }
+
+    @Test
+    void givenReservedName_whenValidatePlayerName_thenStatusIsSetToInvalid() {
+        viewModel.validatePlayerName("—");
+        assertEquals(PlayerNameStatus.INVALID, viewModel.playerNameStatusProperty().get());
+    }
+
+    @Test
+    void givenValidAndAvailableName_whenValidatePlayerName_thenStatusIsSetToValid() {
+        viewModel.validatePlayerName("UniquePlayerName");
+        assertEquals(PlayerNameStatus.VALID, viewModel.playerNameStatusProperty().get());
     }
 }
