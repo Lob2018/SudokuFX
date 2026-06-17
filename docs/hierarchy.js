@@ -230,6 +230,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.common.util.math.PowerOfTen", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.math.PowerOfTenUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html", null ],
     [ "RuntimeException", null, [
+      [ "fr.softsf.sudokufx.common.exception.DatabaseIntegrityException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html", null ],
       [ "fr.softsf.sudokufx.common.exception.FolderCreationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html", null ],
       [ "fr.softsf.sudokufx.common.exception.LogbackConfigurationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html", null ]
     ] ],

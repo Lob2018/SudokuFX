@@ -25,6 +25,7 @@ var annotated_dup =
               [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls" ]
             ] ],
             [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html", [
+              [ "DatabaseIntegrityException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception" ],
               [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools" ],
               [ "FolderCreationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception" ],
               [ "JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator" ],

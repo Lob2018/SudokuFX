@@ -1,6 +1,6 @@
 var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools =
 [
-    [ "findSQLInvalidAuthException", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a5d6f889834dd95ceab9cd6cb57a57d78", null ],
+    [ "findCriticalDatabaseException", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a610f944ab8f74d4fe132b14d590c6f4e", null ],
     [ "logAndInstantiate", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aee373055482e24b44505bb4b699551c3", null ],
     [ "logAndInstantiateFolderCreation", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aa99236a6233f7bfcb9edb4e4adb23c01", null ],
     [ "logAndInstantiateFolderCreation", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#a498b093adbded8e3f2781465d351d7b0", null ],

@@ -1,13 +1,13 @@
 <map id="fr.softsf.sudokufx.SudoMain" name="fr.softsf.sudokufx.SudoMain">
-<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="1056,2596,1270,3033"/>
+<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="1052,2596,1274,3017"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="820,2111,895,2180"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="858,2195,858,2262,864,2346,880,2436,893,2481,909,2523,939,2578,976,2630,1017,2678,1058,2720,1054,2723,1013,2681,972,2633,935,2581,905,2525,888,2482,875,2437,859,2346,853,2262,853,2195"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="858,2195,858,2262,864,2346,880,2436,893,2481,909,2523,939,2576,975,2625,1014,2671,1054,2712,1051,2715,1010,2675,970,2629,934,2579,905,2525,888,2482,875,2437,858,2347,852,2262,852,2195"/>
 <area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="919,2081,1151,2209"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1050,2208,1121,2579,1115,2580,1044,2209"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1050,2209,1122,2579,1116,2580,1045,2210"/>
 <area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="1175,2087,1407,2204"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1291,2204,1278,2370,1265,2472,1247,2573,1245,2580,1240,2579,1242,2571,1260,2471,1273,2370,1286,2204"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1291,2204,1279,2370,1266,2472,1247,2573,1245,2580,1240,2579,1242,2571,1260,2471,1273,2370,1286,2204"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application (M..." alt="" coords="1430,1767,1672,2524"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1433,2505,1421,2525,1391,2573,1357,2618,1284,2701,1280,2698,1353,2615,1387,2569,1417,2523,1428,2502"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1433,2505,1421,2525,1392,2571,1358,2614,1288,2694,1284,2690,1354,2611,1387,2568,1417,2523,1428,2502"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" title="Service for managing Player entities." alt="" coords="981,652,1363,1196"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1106,1196,1093,1322,1093,1387,1097,1453,1108,1517,1126,1579,1152,1638,1186,1693,1210,1717,1236,1729,1263,1734,1292,1734,1323,1734,1354,1736,1387,1746,1419,1765,1417,1770,1385,1751,1353,1742,1322,1739,1292,1739,1263,1739,1234,1734,1207,1721,1182,1696,1147,1641,1121,1581,1103,1518,1092,1453,1087,1387,1088,1322,1100,1196"/>
 <area shape="rect" id="Node000030" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="1287,1351,1503,1612"/>

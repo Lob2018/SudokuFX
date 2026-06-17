@@ -118,13 +118,15 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="headertitle"><div class="title">AbstractDataSourceConfig.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import java.util.Objects;</code><br />
+<div class="textblock"><code>import java.sql.SQLException;</code><br />
+<code>import java.util.Objects;</code><br />
 <code>import javax.sql.DataSource;</code><br />
 <code>import org.flywaydb.core.Flyway;</code><br />
 <code>import org.springframework.context.annotation.Bean;</code><br />
 <code>import org.springframework.context.annotation.DependsOn;</code><br />
 <code>import com.zaxxer.hikari.HikariConfig;</code><br />
 <code>import com.zaxxer.hikari.HikariDataSource;</code><br />
+<code>import fr.softsf.sudokufx.common.exception.DatabaseIntegrityException;</code><br />
 <code>import fr.softsf.sudokufx.common.exception.ExceptionTools;</code><br />
 <code>import fr.softsf.sudokufx.config.os.IOsFolder;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.AppPaths.DATABASE_MIGRATION_PATH;</code><br />
