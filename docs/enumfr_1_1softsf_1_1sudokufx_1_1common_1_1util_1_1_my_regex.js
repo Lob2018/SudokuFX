@@ -9,7 +9,7 @@ var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex =
     [ "ALPHANUMERIC_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#ac2890435ae41d8c24bca202918525756", null ],
     [ "INSTANCE", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a02ef7e3197e438cd703c30ed1eebd26a", null ],
     [ "LOG", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a0b53b964190e0b5eb34f94ce4e363a58", null ],
-    [ "PLAYER_NAME_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a6010be44cc9e55a33ea271b02988d73e", null ],
+    [ "PLAYER_NAME_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a8546e90e0ec83ea0cffcf721bd191150", null ],
     [ "SECRET_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#ad5dfc39bbe129cf3f0e0468ca88540f0", null ],
     [ "SPECIAL_CHARACTERS", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a9aeed92159c93dabcfd2eb8de75ca1ba", null ],
     [ "VERSION_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a7c57835dac8061ece43a644ad5948814", null ]
