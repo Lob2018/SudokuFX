@@ -160,11 +160,11 @@ public class VersionService {
                 return true;
             }
             JsonNode firstTag = root.get(0).path("name");
-            if (!firstTag.isTextual()) {
+            if (!firstTag.isString()) {
                 LOG.error("██ Version check error: tag name field is not textual");
                 return true;
             }
-            String rawName = firstTag.asText();
+            String rawName = firstTag.asString();
             if (rawName.length() > MAX_TAG_NAME_LENGTH) {
                 LOG.error(
                         "██ Version check error: tag name too large ({} chars)", rawName.length());
