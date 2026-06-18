@@ -13,6 +13,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 [![Accessibility](https://img.shields.io/badge/accessibility-WCAG%202.1%20AA-brightgreen)](https://www.w3.org/WAI/WCAG21/quickref/)<br>
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/10875/badge)](https://www.bestpractices.dev/projects/10875)
 [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Lob2018/SudokuFX/badge)](https://scorecard.dev/viewer/?uri=github.com/Lob2018/SudokuFX)
+[![OSV-Scanner](https://github.com/Lob2018/SudokuFX/actions/workflows/osv-scanner-scheduled.yml/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/osv-scanner-scheduled.yml)<br>
 [![Snyk Scan](https://img.shields.io/badge/Snyk%20Scan-authentication%20required-brightgreen?logo=snyk)](https://app.snyk.io/org/lob2018/project/eb67e66c-32ab-4713-af25-6438d35db490)
 [![CodeQL Analysis](https://github.com/lob2018/SudokuFX/actions/workflows/codeql.yml/badge.svg)](https://github.com/lob2018/SudokuFX/actions/workflows/codeql.yml)<br>
 [![Dependabot Updates](https://github.com/Lob2018/SudokuFX/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Lob2018/SudokuFX/actions/workflows/dependabot/dependabot-updates)
