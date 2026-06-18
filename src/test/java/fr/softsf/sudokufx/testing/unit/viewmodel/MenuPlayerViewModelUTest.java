@@ -207,7 +207,7 @@ class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
     }
 
     @Test
-    void givenNewSelectedPlayer_whenChanged_thenBindingsUpdate() throws Exception {
+    void givenNewSelectedPlayer_whenChanged_thenBindingsUpdate() {
         PlayerDto newPlayer =
                 new PlayerDto(
                         999L,

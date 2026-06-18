@@ -2,10 +2,10 @@
  * This package contains services interacting with the UI (audio, file processing, etc.). Service
  * layer where all parameters and return types are non-null by default.
  *
- * <p>Applies {@link org.springframework.lang.NonNullApi} to enforce non-null contract unless
+ * <p>Applies {@link org.jspecify.annotations.NullMarked} to enforce non-null contract unless
  * explicitly overridden.
  */
-@NonNullApi
+@NullMarked
 package fr.softsf.sudokufx.service.ui;
 
-import org.springframework.lang.NonNullApi;
+import org.jspecify.annotations.NullMarked;
