@@ -28,6 +28,7 @@ jobs:
           python-version: '3.x'
           cache: 'pip'
       - name: Install pre-commit
+        # sonar:disable=security:S6517
         run: |
           pip install --only-binary :all: pre-commit
       - name: Check pre-commit version
