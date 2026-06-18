@@ -30,6 +30,8 @@ import jakarta.annotation.Nullable;
 @Component
 public class BindingConfigurator {
 
+    public static final String TEXT_PROPERTY_MUST_NOT_BE_NULL = "Text property must not be null";
+
     /**
      * Configures a {@link Button} with optional text, accessibility, tooltip, and role description
      * bindings. Ensures consistent UI behavior and accessibility support.
@@ -119,7 +121,7 @@ public class BindingConfigurator {
      */
     public void configureLabel(Label labelNode, ObservableValue<String> textProperty) {
         Objects.requireNonNull(labelNode, "Label must not be null");
-        Objects.requireNonNull(textProperty, "Text property must not be null");
+        Objects.requireNonNull(textProperty, TEXT_PROPERTY_MUST_NOT_BE_NULL);
         labelNode.textProperty().bind(textProperty);
     }
 
@@ -132,7 +134,7 @@ public class BindingConfigurator {
      */
     public void configureTextField(TextField textFieldNode, Property<String> textProperty) {
         Objects.requireNonNull(textFieldNode, "TextField must not be null");
-        Objects.requireNonNull(textProperty, "Text property must not be null");
+        Objects.requireNonNull(textProperty, TEXT_PROPERTY_MUST_NOT_BE_NULL);
         textFieldNode.textProperty().bindBidirectional(textProperty);
     }
 
@@ -145,7 +147,7 @@ public class BindingConfigurator {
      */
     public void configureText(Text textNode, ObservableValue<String> textProperty) {
         Objects.requireNonNull(textNode, "Text node must not be null");
-        Objects.requireNonNull(textProperty, "Text property must not be null");
+        Objects.requireNonNull(textProperty, TEXT_PROPERTY_MUST_NOT_BE_NULL);
         textNode.textProperty().bind(textProperty);
     }
 
