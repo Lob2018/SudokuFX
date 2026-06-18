@@ -1,5 +1,7 @@
 var NAVTREEINDEX10 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a01219303e2aa669646fdeba85bdc9206":[1,0,0,0,0,8,2,1,0,0,2],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a01219303e2aa669646fdeba85bdc9206":[2,0,0,0,0,7,2,1,0,0,2],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a045abca197c15290bb6409abf46fc307":[1,0,0,0,0,8,2,1,0,0,3],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a045abca197c15290bb6409abf46fc307":[2,0,0,0,0,7,2,1,0,0,3],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html#a63d8a76df7ce45131505632015aa421b":[1,0,0,0,0,8,2,1,0,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX10 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a0ed3e0ea14ab3ef2e0cff011d0430021":[1,0,0,0,0,8,2,2,1,1,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a0ed3e0ea14ab3ef2e0cff011d0430021":[2,0,0,0,0,7,2,2,1,1,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a22a726e203f4c39738d249570e88b20a":[1,0,0,0,0,8,2,2,1,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a22a726e203f4c39738d249570e88b20a":[2,0,0,0,0,7,2,2,1,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a90d36198eaa9a5c89c9827051cee6197":[1,0,0,0,0,8,2,2,1,1,1],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a90d36198eaa9a5c89c9827051cee6197":[2,0,0,0,0,7,2,2,1,1,1]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a22a726e203f4c39738d249570e88b20a":[2,0,0,0,0,7,2,2,1,1,2]
 };

@@ -2875,45 +2875,41 @@ var sectionId = 'dynsection-1';
 <g id="Node000059" class="node">
 <title>Node59</title>
 <g id="a_Node000059"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html" target="_top" xlink:title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons.">
-<polygon fill="white" stroke="none" points="3754.88,-2038 3553.12,-2038 3553.12,-1726 3754.88,-1726 3754.88,-2038"/>
-<text text-anchor="start" x="3577.5" y="-2024.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
-<text text-anchor="start" x="3617.25" y="-2012.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane</text>
-<text text-anchor="start" x="3557.12" y="-1996.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="3567.12" y="-1996.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int ANIMATION</text>
-<text text-anchor="start" x="3567.12" y="-1984.5" font-family="Helvetica,sans-Serif" font-size="10.00">_FADE_OUT_DURATION</text>
-<text text-anchor="start" x="3558.62" y="-1968.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1968.5" font-family="Helvetica,sans-Serif" font-size="10.00">FadeTransition fadeOut</text>
+<polygon fill="white" stroke="none" points="3754.88,-2022 3553.12,-2022 3553.12,-1742 3754.88,-1742 3754.88,-2022"/>
+<text text-anchor="start" x="3577.5" y="-2008.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.view.component.</text>
+<text text-anchor="start" x="3617.25" y="-1996.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane</text>
+<text text-anchor="start" x="3557.12" y="-1980.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="3567.12" y="-1980.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int ANIMATION</text>
+<text text-anchor="start" x="3567.12" y="-1968.5" font-family="Helvetica,sans-Serif" font-size="10.00">_FADE_OUT_DURATION</text>
 <text text-anchor="start" x="3558.62" y="-1952.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1952.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
-<text text-anchor="start" x="3567.12" y="-1940.5" font-family="Helvetica,sans-Serif" font-size="10.00"> loading</text>
-<text text-anchor="start" x="3558.62" y="-1924.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1924.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Animation spinnerAnimation1</text>
+<text text-anchor="start" x="3567.12" y="-1952.5" font-family="Helvetica,sans-Serif" font-size="10.00">FadeTransition fadeOut</text>
+<text text-anchor="start" x="3558.62" y="-1936.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="3567.12" y="-1936.5" font-family="Helvetica,sans-Serif" font-size="10.00">final BooleanProperty</text>
+<text text-anchor="start" x="3567.12" y="-1924.5" font-family="Helvetica,sans-Serif" font-size="10.00"> loading</text>
 <text text-anchor="start" x="3558.62" y="-1908.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1908.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Animation spinnerAnimation2</text>
+<text text-anchor="start" x="3567.12" y="-1908.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Animation spinnerAnimation1</text>
 <text text-anchor="start" x="3558.62" y="-1892.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1892.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Duration</text>
-<text text-anchor="start" x="3567.12" y="-1880.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ANIMATION_DURATION</text>
-<text text-anchor="start" x="3558.62" y="-1864.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1864.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Duration</text>
-<text text-anchor="start" x="3567.12" y="-1852.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ANIMATION_SECOND_PHASE_DELAY</text>
-<text text-anchor="start" x="3557.12" y="-1836.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="3567.12" y="-1836.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane()</text>
+<text text-anchor="start" x="3567.12" y="-1892.5" font-family="Helvetica,sans-Serif" font-size="10.00">final Animation spinnerAnimation2</text>
+<text text-anchor="start" x="3558.62" y="-1876.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="3567.12" y="-1876.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Duration</text>
+<text text-anchor="start" x="3567.12" y="-1864.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ANIMATION_DURATION</text>
+<text text-anchor="start" x="3558.62" y="-1848.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="3567.12" y="-1848.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Duration</text>
+<text text-anchor="start" x="3567.12" y="-1836.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ANIMATION_SECOND_PHASE_DELAY</text>
 <text text-anchor="start" x="3557.12" y="-1820.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="3567.12" y="-1820.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty loadingProperty()</text>
-<text text-anchor="start" x="3558.62" y="-1804.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1804.5" font-family="Helvetica,sans-Serif" font-size="10.00">Animation createPulse</text>
-<text text-anchor="start" x="3567.12" y="-1792.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Text text, Duration</text>
-<text text-anchor="start" x="3567.12" y="-1780.5" font-family="Helvetica,sans-Serif" font-size="10.00"> delay)</text>
-<text text-anchor="start" x="3558.62" y="-1764.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1764.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initFadeOut()</text>
+<text text-anchor="start" x="3567.12" y="-1820.5" font-family="Helvetica,sans-Serif" font-size="10.00">SpinnerGridPane()</text>
+<text text-anchor="start" x="3557.12" y="-1804.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="3567.12" y="-1804.5" font-family="Helvetica,sans-Serif" font-size="10.00">BooleanProperty loadingProperty()</text>
+<text text-anchor="start" x="3558.62" y="-1788.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="3567.12" y="-1788.5" font-family="Helvetica,sans-Serif" font-size="10.00">Animation createPulse</text>
+<text text-anchor="start" x="3567.12" y="-1776.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Text text, Duration</text>
+<text text-anchor="start" x="3567.12" y="-1764.5" font-family="Helvetica,sans-Serif" font-size="10.00"> delay)</text>
 <text text-anchor="start" x="3558.62" y="-1748.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1748.5" font-family="Helvetica,sans-Serif" font-size="10.00">void startAnimation()</text>
-<text text-anchor="start" x="3558.62" y="-1732.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="3567.12" y="-1732.5" font-family="Helvetica,sans-Serif" font-size="10.00">void stopAnimation()</text>
-<polygon fill="#666666" stroke="#666666" points="3553.12,-2008 3553.12,-2008 3754.88,-2008 3754.88,-2008 3553.12,-2008"/>
-<polygon fill="#666666" stroke="#666666" points="3553.12,-1848 3553.12,-1848 3565.12,-1848 3565.12,-1848 3553.12,-1848"/>
-<polygon fill="#666666" stroke="#666666" points="3565.12,-1848 3565.12,-1848 3754.88,-1848 3754.88,-1848 3565.12,-1848"/>
-<polygon fill="none" stroke="#666666" points="3553.12,-1726 3553.12,-2038 3754.88,-2038 3754.88,-1726 3553.12,-1726"/>
+<text text-anchor="start" x="3567.12" y="-1748.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initFadeOut()</text>
+<polygon fill="#666666" stroke="#666666" points="3553.12,-1992 3553.12,-1992 3754.88,-1992 3754.88,-1992 3553.12,-1992"/>
+<polygon fill="#666666" stroke="#666666" points="3553.12,-1832 3553.12,-1832 3565.12,-1832 3565.12,-1832 3553.12,-1832"/>
+<polygon fill="#666666" stroke="#666666" points="3565.12,-1832 3565.12,-1832 3754.88,-1832 3754.88,-1832 3565.12,-1832"/>
+<polygon fill="none" stroke="#666666" points="3553.12,-1742 3553.12,-2022 3754.88,-2022 3754.88,-1742 3553.12,-1742"/>
 </a>
 </g>
 </g>
@@ -2921,7 +2917,7 @@ var sectionId = 'dynsection-1';
 <g id="edge69_Node000001_Node000059" class="edge">
 <title>Node59&#45;&gt;Node1</title>
 <g id="a_edge69_Node000001_Node000059"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M3654.08,-1726.25C3646.58,-1619.34 3620.87,-1479.41 3544,-1382 3224.02,-976.55 2626.39,-779 2280.98,-694.69"/>
+<path fill="none" stroke="#63b8ff" d="M3655.08,-1742.04C3649.02,-1633.45 3624.72,-1484.28 3544,-1382 3224.02,-976.55 2626.39,-779 2280.98,-694.69"/>
 <polygon fill="none" stroke="#63b8ff" points="2281.09,-694.71 2274.31,-697.19 2269.43,-691.89 2276.2,-689.41 2281.09,-694.71"/>
 </a>
 </g>
@@ -2945,7 +2941,7 @@ var sectionId = 'dynsection-1';
 <g id="edge70_Node000059_Node000060" class="edge">
 <title>Node60&#45;&gt;Node59</title>
 <g id="a_edge70_Node000059_Node000060"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M3654,-3600.93C3654,-3400.78 3654,-2421.96 3654,-2037.99"/>
+<path fill="none" stroke="#63b8ff" d="M3654,-3600.75C3654,-3397.36 3654,-2393.76 3654,-2021.91"/>
 <polygon fill="none" stroke="#63b8ff" points="3650.5,-3600.69 3654,-3610.69 3657.5,-3600.69 3650.5,-3600.69"/>
 </a>
 </g>

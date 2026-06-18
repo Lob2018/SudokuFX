@@ -168,60 +168,63 @@ var sectionId = 'dynsection-0';
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="none" points="417.5,-524 200.75,-524 200.75,-40 417.5,-40 417.5,-524"/>
-<text text-anchor="start" x="219.12" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.testing.unit.viewmodel.</text>
-<text text-anchor="start" x="246.12" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModelUTest</text>
-<text text-anchor="start" x="206.25" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">Locale originalLocale</text>
-<text text-anchor="start" x="206.25" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
-<text text-anchor="start" x="214.75" y="-454.5" font-family="Helvetica,sans-Serif" font-size="10.00"> viewModel</text>
-<text text-anchor="start" x="204.75" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-438.5" font-family="Helvetica,sans-Serif" font-size="10.00">void allBindingsShouldReturn</text>
-<text text-anchor="start" x="214.75" y="-426.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExpectedI18nValues()</text>
-<text text-anchor="start" x="204.75" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-410.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenCurrentPlayer</text>
-<text text-anchor="start" x="214.75" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenLocaleChanges_thenBinding</text>
-<text text-anchor="start" x="214.75" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">Updates()</text>
-<text text-anchor="start" x="204.75" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenEmptyOrNullInput</text>
-<text text-anchor="start" x="214.75" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidatePlayerName</text>
-<text text-anchor="start" x="214.75" y="-346.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToEmpty()</text>
-<text text-anchor="start" x="204.75" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-330.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenExistingName</text>
-<text text-anchor="start" x="214.75" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidatePlayerName</text>
-<text text-anchor="start" x="214.75" y="-306.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToUnavailable()</text>
-<text text-anchor="start" x="204.75" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-290.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenInvalidInput</text>
-<text text-anchor="start" x="214.75" y="-278.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidatePlayerName</text>
-<text text-anchor="start" x="214.75" y="-266.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToInvalid()</text>
-<text text-anchor="start" x="204.75" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-250.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNewSelectedPlayer</text>
-<text text-anchor="start" x="214.75" y="-238.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenChanged_thenBindingsUpdate()</text>
-<text text-anchor="start" x="204.75" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenReservedName</text>
-<text text-anchor="start" x="214.75" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidatePlayerName</text>
-<text text-anchor="start" x="214.75" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToInvalid()</text>
-<text text-anchor="start" x="204.75" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-182.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidAndAvailable</text>
-<text text-anchor="start" x="214.75" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">Name_whenValidatePlayerName</text>
-<text text-anchor="start" x="214.75" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToValid()</text>
-<text text-anchor="start" x="204.75" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModel</text>
-<text text-anchor="start" x="214.75" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitialized_thenPlayers</text>
-<text text-anchor="start" x="214.75" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">LoadedAndBindingsNotNull()</text>
-<text text-anchor="start" x="204.75" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setUp()</text>
-<text text-anchor="start" x="204.75" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="214.75" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tearDown()</text>
-<text text-anchor="start" x="206.25" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="214.75" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Map&lt; StringBinding,</text>
-<text text-anchor="start" x="214.75" y="-58.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Supplier&lt; String &gt; &gt; getString</text>
-<text text-anchor="start" x="214.75" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">BindingStringMap(MenuPlayerViewModel vm)</text>
-<polygon fill="#666666" stroke="#666666" points="200.75,-494 200.75,-494 417.5,-494 417.5,-494 200.75,-494"/>
-<polygon fill="#666666" stroke="#666666" points="200.75,-450 200.75,-450 212.75,-450 212.75,-450 200.75,-450"/>
-<polygon fill="#666666" stroke="#666666" points="212.75,-450 212.75,-450 417.5,-450 417.5,-450 212.75,-450"/>
-<polygon fill="none" stroke="#666666" points="200.75,-40 200.75,-524 417.5,-524 417.5,-40 200.75,-40"/>
+<polygon fill="white" stroke="none" points="417.5,-538 200.75,-538 200.75,-26 417.5,-26 417.5,-538"/>
+<text text-anchor="start" x="219.12" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.testing.unit.viewmodel.</text>
+<text text-anchor="start" x="246.12" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModelUTest</text>
+<text text-anchor="start" x="206.25" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="214.75" y="-496.5" font-family="Helvetica,sans-Serif" font-size="10.00">Locale originalLocale</text>
+<text text-anchor="start" x="206.25" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="214.75" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
+<text text-anchor="start" x="214.75" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00"> viewModel</text>
+<text text-anchor="start" x="206.25" y="-452.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="214.75" y="-452.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Instant</text>
+<text text-anchor="start" x="214.75" y="-440.5" font-family="Helvetica,sans-Serif" font-size="10.00"> FIXED_INSTANT</text>
+<text text-anchor="start" x="204.75" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-424.5" font-family="Helvetica,sans-Serif" font-size="10.00">void allBindingsShouldReturn</text>
+<text text-anchor="start" x="214.75" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExpectedI18nValues()</text>
+<text text-anchor="start" x="204.75" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-396.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenCurrentPlayer</text>
+<text text-anchor="start" x="214.75" y="-384.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenLocaleChanges_thenBinding</text>
+<text text-anchor="start" x="214.75" y="-372.5" font-family="Helvetica,sans-Serif" font-size="10.00">Updates()</text>
+<text text-anchor="start" x="204.75" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-356.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenEmptyOrNullInput</text>
+<text text-anchor="start" x="214.75" y="-344.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidatePlayerName</text>
+<text text-anchor="start" x="214.75" y="-332.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToEmpty()</text>
+<text text-anchor="start" x="204.75" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-316.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenExistingName</text>
+<text text-anchor="start" x="214.75" y="-304.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidatePlayerName</text>
+<text text-anchor="start" x="214.75" y="-292.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToUnavailable()</text>
+<text text-anchor="start" x="204.75" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-276.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenInvalidInput</text>
+<text text-anchor="start" x="214.75" y="-264.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidatePlayerName</text>
+<text text-anchor="start" x="214.75" y="-252.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToInvalid()</text>
+<text text-anchor="start" x="204.75" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-236.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenNewSelectedPlayer</text>
+<text text-anchor="start" x="214.75" y="-224.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenChanged_thenBindingsUpdate()</text>
+<text text-anchor="start" x="204.75" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-208.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenReservedName</text>
+<text text-anchor="start" x="214.75" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenValidatePlayerName</text>
+<text text-anchor="start" x="214.75" y="-184.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToInvalid()</text>
+<text text-anchor="start" x="204.75" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenValidAndAvailable</text>
+<text text-anchor="start" x="214.75" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">Name_whenValidatePlayerName</text>
+<text text-anchor="start" x="214.75" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">_thenStatusIsSetToValid()</text>
+<text text-anchor="start" x="204.75" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">void givenViewModel</text>
+<text text-anchor="start" x="214.75" y="-116.5" font-family="Helvetica,sans-Serif" font-size="10.00">_whenInitialized_thenPlayers</text>
+<text text-anchor="start" x="214.75" y="-104.5" font-family="Helvetica,sans-Serif" font-size="10.00">LoadedAndBindingsNotNull()</text>
+<text text-anchor="start" x="204.75" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-88.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setUp()</text>
+<text text-anchor="start" x="204.75" y="-72.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="214.75" y="-72.5" font-family="Helvetica,sans-Serif" font-size="10.00">void tearDown()</text>
+<text text-anchor="start" x="206.25" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="214.75" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">static Map&lt; StringBinding,</text>
+<text text-anchor="start" x="214.75" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Supplier&lt; String &gt; &gt; getString</text>
+<text text-anchor="start" x="214.75" y="-32.5" font-family="Helvetica,sans-Serif" font-size="10.00">BindingStringMap(MenuPlayerViewModel vm)</text>
+<polygon fill="#666666" stroke="#666666" points="200.75,-508 200.75,-508 417.5,-508 417.5,-508 200.75,-508"/>
+<polygon fill="#666666" stroke="#666666" points="200.75,-436 200.75,-436 212.75,-436 212.75,-436 200.75,-436"/>
+<polygon fill="#666666" stroke="#666666" points="212.75,-436 212.75,-436 417.5,-436 417.5,-436 212.75,-436"/>
+<polygon fill="none" stroke="#666666" points="200.75,-26 200.75,-538 417.5,-538 417.5,-26 200.75,-26"/>
 </a>
 </g>
 </g>
@@ -229,7 +232,7 @@ var sectionId = 'dynsection-0';
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node1&#45;&gt;Node3</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M397.74,-589.38C391.83,-568.97 385.4,-546.72 378.78,-523.83"/>
+<path fill="none" stroke="#63b8ff" d="M397.67,-589.17C392.98,-572.96 387.96,-555.58 382.77,-537.65"/>
 <polygon fill="none" stroke="#63b8ff" points="394.3,-590.11 400.44,-598.74 401.03,-588.17 394.3,-590.11"/>
 </a>
 </g>

@@ -34,9 +34,9 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="#e0e0e0" stroke="#999999" points="129.62,-32 1.12,-32 1.12,0 129.62,0 129.62,-32"/>
-<text text-anchor="start" x="9.12" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.springframework.lang.</text>
-<text text-anchor="middle" x="65.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">NonNullApi</text>
+<polygon fill="#e0e0e0" stroke="#999999" points="126.25,-32 4.5,-32 4.5,0 126.25,0 126.25,-32"/>
+<text text-anchor="start" x="12.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">org.jspecify.annotations.</text>
+<text text-anchor="middle" x="65.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">NullMarked</text>
 </a>
 </g>
 </g>
