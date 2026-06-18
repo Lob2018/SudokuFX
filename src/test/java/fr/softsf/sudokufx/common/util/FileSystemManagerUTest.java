@@ -41,15 +41,6 @@ class FileSystemManagerUTest {
         logWatcher = new ListAppender<>();
         logWatcher.start();
         ((Logger) LoggerFactory.getLogger(LocalUserDataPurger.class)).addAppender(logWatcher);
-    }
-
-    @AfterEach
-    void tearDown() {
-        ((Logger) LoggerFactory.getLogger(LocalUserDataPurger.class)).detachAndStopAllAppenders();
-    }
-
-    @BeforeEach
-    void setUp() {
         try {
             Files.createDirectories(tempDir.resolve("testFolder/" + suffix + "/toto.txt"));
             path1 = tempDir.resolve("testFolder/" + suffix + "/toto.txt");
@@ -57,6 +48,11 @@ class FileSystemManagerUTest {
             System.err.println(
                     "error creating temporary test file in " + getClass().getSimpleName());
         }
+    }
+
+    @AfterEach
+    void tearDown() {
+        ((Logger) LoggerFactory.getLogger(LocalUserDataPurger.class)).detachAndStopAllAppenders();
     }
 
     @Test
