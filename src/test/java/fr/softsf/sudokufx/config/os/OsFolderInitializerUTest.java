@@ -17,10 +17,10 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import fr.softsf.sudokufx.common.exception.FolderCreationException;
 
+import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
@@ -137,12 +137,12 @@ class OsFolderInitializerUTest {
     void givenValidPaths_whenInitializeFolders_thenFoldersCreated() {
         Path dataPath = tempDir.resolve("testDataFolder");
         Path logsPath = tempDir.resolve("testLogsFolder");
-        try {
-            java.nio.file.Files.createDirectories(dataPath);
-            java.nio.file.Files.createDirectories(logsPath);
-        } catch (java.io.IOException e) {
-            fail("Failed to setup test folders: " + e.getMessage());
-        }
+        assertDoesNotThrow(
+                () -> {
+                    java.nio.file.Files.createDirectories(dataPath);
+                    java.nio.file.Files.createDirectories(logsPath);
+                },
+                "Failed to setup test folders");
         String dataPathStr = dataPath.toString();
         String logsPathStr = logsPath.toString();
         OsInitializedFolders osInitializedFolders =

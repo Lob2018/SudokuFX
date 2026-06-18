@@ -43,6 +43,27 @@ public final class SpinnerGridPane extends GridPane {
                         stopAnimation();
                     }
                 }
+
+                /** Resets opacity and starts the infinite pulse animations. */
+                private void startAnimation() {
+                    if (fadeOut != null) {
+                        fadeOut.stop();
+                    }
+                    setOpacity(1.0);
+                    setVisible(true);
+                    setManaged(true);
+                    spinnerAnimation1.play();
+                    spinnerAnimation2.play();
+                }
+
+                /**
+                 * Executes a fade-out transition before stopping animations and hiding the
+                 * component. The final cleanup only occurs if the loading property remains false
+                 * during the fade duration.
+                 */
+                private void stopAnimation() {
+                    fadeOut.playFromStart();
+                }
             };
 
     /**
@@ -75,26 +96,6 @@ public final class SpinnerGridPane extends GridPane {
                             + " defensive copies break UI reactivity.")
     public BooleanProperty loadingProperty() {
         return loading;
-    }
-
-    /** Resets opacity and starts the infinite pulse animations. */
-    private void startAnimation() {
-        if (fadeOut != null) {
-            fadeOut.stop();
-        }
-        setOpacity(1.0);
-        setVisible(true);
-        setManaged(true);
-        spinnerAnimation1.play();
-        spinnerAnimation2.play();
-    }
-
-    /**
-     * Executes a fade-out transition before stopping animations and hiding the component. The final
-     * cleanup only occurs if the loading property remains false during the fade duration.
-     */
-    private void stopAnimation() {
-        fadeOut.playFromStart();
     }
 
     /** Initializes the fade-out transition and its completion logic. */

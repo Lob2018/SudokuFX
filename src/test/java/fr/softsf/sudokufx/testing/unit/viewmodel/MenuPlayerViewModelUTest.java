@@ -40,6 +40,7 @@ import static org.mockito.Mockito.when;
 @ExtendWith(ApplicationExtension.class)
 class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
 
+    private static final Instant FIXED_INSTANT = Instant.parse("2026-06-18T10:00:00Z");
     private Locale originalLocale;
     private MenuPlayerViewModel viewModel;
 
@@ -57,8 +58,8 @@ class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
                         null,
                         "TestPlayer",
                         false,
-                        Instant.now(),
-                        Instant.now());
+                        FIXED_INSTANT,
+                        FIXED_INSTANT);
         when(playerServiceMock.getPlayer()).thenReturn(testPlayer);
         viewModel = new MenuPlayerViewModel(playerStateHolder, playerServiceMock);
     }
@@ -217,8 +218,8 @@ class MenuPlayerViewModelUTest extends AbstractPlayerStateTest {
                         null,
                         "NewTestPlayer",
                         true,
-                        Instant.now(),
-                        Instant.now());
+                        FIXED_INSTANT,
+                        FIXED_INSTANT);
         PlayerStateHolder mockStateHolder = mock(PlayerStateHolder.class);
         ObjectProperty<PlayerDto> prop = new SimpleObjectProperty<>(newPlayer);
         when(mockStateHolder.currentPlayerProperty()).thenReturn(prop);

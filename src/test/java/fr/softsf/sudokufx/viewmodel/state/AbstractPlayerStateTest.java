@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.viewmodel.state;
 
 import java.time.LocalDateTime;
+import java.time.Month;
 import java.time.ZoneId;
 
 import org.junit.jupiter.api.*;
@@ -79,16 +80,20 @@ public abstract class AbstractPlayerStateTest {
                         1L,
                         new GameLevelDto((byte) 1, (byte) 1),
                         true,
-                        LocalDateTime.of(2024, 1, 1, 10, 0, 0)
+                        LocalDateTime.of(2024, Month.JANUARY, 1, 10, 0, 0)
                                 .atZone(ZoneId.systemDefault())
                                 .toInstant(),
-                        LocalDateTime.of(2024, 1, 1, 10, 0, 0)
+                        LocalDateTime.of(2024, Month.JANUARY, 1, 10, 0, 0)
                                 .atZone(ZoneId.systemDefault())
                                 .toInstant()),
                 "SafePlayer",
                 true,
-                LocalDateTime.of(2024, 1, 1, 10, 0, 0).atZone(ZoneId.systemDefault()).toInstant(),
-                LocalDateTime.of(2024, 1, 1, 10, 0, 0).atZone(ZoneId.systemDefault()).toInstant());
+                LocalDateTime.of(2024, Month.JANUARY, 1, 10, 0, 0)
+                        .atZone(ZoneId.systemDefault())
+                        .toInstant(),
+                LocalDateTime.of(2024, Month.JANUARY, 1, 10, 0, 0)
+                        .atZone(ZoneId.systemDefault())
+                        .toInstant());
     }
 
     /**

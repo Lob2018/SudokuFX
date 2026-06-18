@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.view;
 
 import java.time.Year;
+import java.time.ZoneId;
 import java.util.Objects;
 import javafx.animation.Animation;
 import javafx.animation.Interpolator;
@@ -162,7 +163,7 @@ public final class SplashScreenView implements ISplashScreenView {
         splashscreenvboxCenterhbox.setSpacing(splashScreenFontSize);
         setSplashscreenvboxCenterhboxStackpaneLogoflowersvg();
         animateFlowerSvg();
-        splashscreenvboxBottomhboxYearlabel.setText(Year.now() + "");
+        splashscreenvboxBottomhboxYearlabel.setText(Year.now(ZoneId.systemDefault()).toString());
         splashscreenvboxBottomhboxHboxLoaderlabel.setText(getLoadingOrOptimizingMessage());
         splashscreenvboxBottomhboxVersionlabel.setText(
                 JVMApplicationProperties.INSTANCE.getAppVersion());
@@ -179,7 +180,7 @@ public final class SplashScreenView implements ISplashScreenView {
         rotateTransition.setCycleCount(Animation.INDEFINITE);
         rotateTransition.setAutoReverse(true);
         rotateTransition.setInterpolator(
-                Interpolator.SPLINE(
+                Interpolator.ofSpline(
                         INTERPOLATOR_CONTROL_X1,
                         INTERPOLATOR_CONTROL_Y1,
                         INTERPOLATOR_CONTROL_X2,
