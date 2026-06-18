@@ -62,6 +62,7 @@ import jakarta.validation.ConstraintViolationException;
 @Service
 public class PlayerService {
 
+    public static final String PLAYER_NOT_FOUND = "Player not found: ";
     private final PlayerRepository playerRepository;
     private final PlayerLanguageRepository playerLanguageRepository;
     private final OptionsRepository optionsRepository;
@@ -163,7 +164,7 @@ public class PlayerService {
                         .orElseThrow(
                                 () ->
                                         ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                                                "Player not found: " + validatedDto.playerid()));
+                                                PLAYER_NOT_FOUND + validatedDto.playerid()));
         PlayerLanguage pl =
                 playerLanguageRepository
                         .findById(validatedDto.playerlanguageidDto().playerlanguageid())
@@ -364,7 +365,7 @@ public class PlayerService {
                         .orElseThrow(
                                 () ->
                                         ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                                                "Player not found: " + playerId));
+                                                PLAYER_NOT_FOUND + playerId));
         player.setSelected(selected);
         player.setUpdatedat(MyDateTime.INSTANCE.getCurrentInstant());
         playerRepository.save(player);
@@ -407,7 +408,7 @@ public class PlayerService {
                         .orElseThrow(
                                 () ->
                                         ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                                                "Player not found: " + playerIdToDelete));
+                                                PLAYER_NOT_FOUND + playerIdToDelete));
         if (PlayerConstants.ANONYMOUS_NAME.getValue().equals(playerToDelete.getName())) {
             return;
         }
