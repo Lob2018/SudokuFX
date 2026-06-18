@@ -4,8 +4,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane =
     [ "createPulse", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#a1e8616aa12d875d5bf7ddaad918c392a", null ],
     [ "initFadeOut", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#ab1f7544f028b59508be298f9df7361fb", null ],
     [ "loadingProperty", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#a647e7dd9cdb543e8a456a6908a4da03e", null ],
-    [ "startAnimation", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#a51775ff8acff60af3b32568e266e9f73", null ],
-    [ "stopAnimation", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#ac4aaf7c79d7c8cc7da6553d232a516b8", null ],
     [ "ANIMATION_DURATION", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#aa49ecde5a64c5d0f2b55f939df655892", null ],
     [ "ANIMATION_FADE_OUT_DURATION", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#a597c151181283e08c3a622b452f4eb0a", null ],
     [ "ANIMATION_SECOND_PHASE_DELAY", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html#aa7bbb66a81c32723477a3c08f9e87e47", null ],

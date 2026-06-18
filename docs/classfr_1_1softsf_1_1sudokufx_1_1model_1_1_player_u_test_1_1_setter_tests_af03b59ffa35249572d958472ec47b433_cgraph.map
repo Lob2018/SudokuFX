@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenSelectedFalse_whenBuilding_thenPlayerIsNotSelected" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenSelectedFalse_whenBuilding_thenPlayerIsNotSelected">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,295,89"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="96,30,97,20,107,11,125,6,150,4,179,7,197,14,195,19,178,12,150,9,126,11,110,16,102,23,102,31"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="343,5,509,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,40,327,36,327,41,295,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad53401e6c11eb0dbb7558bed4aef41f6" title="Returns whether the player is selected." alt="" coords="343,72,509,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,75,327,79,327,84,295,80"/>
+</map>

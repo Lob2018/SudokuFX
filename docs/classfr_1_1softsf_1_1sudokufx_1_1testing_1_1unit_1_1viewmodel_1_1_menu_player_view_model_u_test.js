@@ -12,6 +12,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_playe
     [ "givenViewModel_whenInitialized_thenPlayersLoadedAndBindingsNotNull", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a1a2f782dfb951d637743f974957d8930", null ],
     [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a9eb53f321f6ac81bbfb658d83f8a83de", null ],
     [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a5fe1b4bc14f8b8f2e457c66f32582836", null ],
+    [ "FIXED_INSTANT", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a18ebde9acce036e94cf2bdfc7aaba63d", null ],
     [ "originalLocale", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a9deeafc3c8d87fe40937030d6feba8a8", null ],
     [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html#a9836b1dcbf07547f9fcd5aa6915748ec", null ]
 ];

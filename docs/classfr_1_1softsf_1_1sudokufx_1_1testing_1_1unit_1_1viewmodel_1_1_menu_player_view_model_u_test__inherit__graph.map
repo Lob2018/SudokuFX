@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,299,294,944"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,299,294,981"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html" title="Abstract base test class that provides:" alt="" coords="40,5,260,251"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,266,152,299,147,299,147,266"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,265,152,299,147,299,147,265"/>
 </map>
