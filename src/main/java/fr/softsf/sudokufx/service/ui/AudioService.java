@@ -14,6 +14,7 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
 
+import org.jspecify.annotations.Nullable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -32,7 +33,7 @@ public class AudioService {
 
     private static final Logger LOG = LoggerFactory.getLogger(AudioService.class);
 
-    private MediaPlayer songPlayer;
+    @Nullable private MediaPlayer songPlayer;
     private final Map<String, MediaPlayer> effectsPlayers = new HashMap<>();
     private final Map<String, Double> originalEffectVolumes = new HashMap<>();
     private static final Set<String> VALID_EFFECT_KEYS = Set.of("button_click", "case_click");
