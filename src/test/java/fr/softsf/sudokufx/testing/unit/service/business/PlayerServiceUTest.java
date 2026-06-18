@@ -13,7 +13,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import fr.softsf.sudokufx.common.exception.JakartaValidator;
-import fr.softsf.sudokufx.common.interfaces.mapper.IGridMapper;
 import fr.softsf.sudokufx.common.interfaces.mapper.IPlayerMapper;
 import fr.softsf.sudokufx.dto.*;
 import fr.softsf.sudokufx.model.*;
@@ -33,11 +32,8 @@ class PlayerServiceUTest {
     private PlayerLanguageRepository playerLanguageRepository;
     private OptionsRepository optionsRepository;
     private MenuRepository menuRepository;
-    private GameRepository gameRepository;
-    private GridRepository gridRepository;
 
     private IPlayerMapper playerMapper;
-    private IGridMapper gridMapper;
     private JakartaValidator jakartaValidator;
     private PlayerService playerService;
     private OptionsService optionsService;
@@ -50,10 +46,9 @@ class PlayerServiceUTest {
         playerLanguageRepository = mock(PlayerLanguageRepository.class);
         optionsRepository = mock(OptionsRepository.class);
         menuRepository = mock(MenuRepository.class);
-        gameRepository = mock(GameRepository.class);
-        gridRepository = mock(GridRepository.class);
+        GameRepository gameRepository = mock(GameRepository.class);
+        GridRepository gridRepository = mock(GridRepository.class);
         playerMapper = mock(IPlayerMapper.class);
-        gridMapper = mock(IGridMapper.class);
         jakartaValidator = mock(JakartaValidator.class);
         playerService =
                 new PlayerService(
