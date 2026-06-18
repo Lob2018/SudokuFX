@@ -28,7 +28,8 @@ jobs:
           python-version: '3.x'
           cache: 'pip'
       - name: Install pre-commit
-        run: pip install pre-commit
+        run: |
+          pip install --only-binary :all: pre-commit
       - name: Check pre-commit version
         run: python -m pre_commit --version
       - name: Run pre-commit autoupdate and check for changes
