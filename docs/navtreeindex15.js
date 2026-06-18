@@ -1,9 +1,5 @@
 var NAVTREEINDEX15 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ac540b8f820affa237b271b35af349584":[1,0,0,0,0,10,3,6],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ac540b8f820affa237b271b35af349584":[2,0,0,0,0,9,3,6],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ac7c986346cc7cedb0e351889167a70c5":[1,0,0,0,0,10,3,8],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ac7c986346cc7cedb0e351889167a70c5":[2,0,0,0,0,9,3,8],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aca840cc2daae5861c308a264e5ab4e07":[1,0,0,0,0,10,3,3],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aca840cc2daae5861c308a264e5ab4e07":[2,0,0,0,0,9,3,3],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#ae423927b79fe021850535dc440baa4ef":[1,0,0,0,0,10,3,2],
@@ -249,5 +245,9 @@ var NAVTREEINDEX15 =
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ac797f09c3891a7667ddf246c15bf36cb":[1,0,0,0,0,10,11,7],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ac797f09c3891a7667ddf246c15bf36cb":[2,0,0,0,0,9,11,7],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ae55681e823ef6c160c8a0a6f91d13f09":[1,0,0,0,0,10,11,13],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ae55681e823ef6c160c8a0a6f91d13f09":[2,0,0,0,0,9,11,13]
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ae55681e823ef6c160c8a0a6f91d13f09":[2,0,0,0,0,9,11,13],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ae85367e712db5a94a81bc859475e7c54":[1,0,0,0,0,10,11,18],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html#ae85367e712db5a94a81bc859475e7c54":[2,0,0,0,0,9,11,18],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html":[1,0,0,0,0,10,12],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html":[2,0,0,0,0,9,12]
 };

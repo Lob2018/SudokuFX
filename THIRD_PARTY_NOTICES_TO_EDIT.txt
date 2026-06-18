@@ -1,0 +1,50 @@
+This product includes software, licensed under:
+
+===
+
+## CC BY 4.0 licence
+
+* Luciole typeface
+These fonts are freely available under Creative Commons Attribution 4.0 International Public License:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Luciole © Laurent Bourcellier & Jonathan Perez
+
+===
+
+## Apache 2.0 licence
+
+* Sudoku Copyright 2014 Microsoft Corporation
+Licensed under the Apache License, Version 2.0 (the "License")
+You may not use this file except in compliance with the License.
+You may obtain a copy of the License at [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+Modifications made: Lob2018 - Code based on the original MicrosoftEdge/Sudoku repository, transpiled from JavaScript to Java and further modified/adapted for this project in 2025.
+Original repository: [MicrosoftEdge/Sudoku](https://github.com/MicrosoftEdge/Sudoku/tree/master)
+
+===
+
+## Oracle Technology Network License Agreement
+
+* JavaFX Fireworks Sample
+Copyright (c) 2008, 2012 Oracle and/or its affiliates.
+All rights reserved. Use is subject to license terms.
+This product includes code based on Oracle's JavaFX Ensemble 8 "FireworksSample" demonstration.
+Original source: https://www.oracle.com/java/technologies/javafx-samples.html
+Usage under Oracle Technology Network License Agreement for Oracle Java SE.
+The original code has been adapted and modified for integration into this project.
+
+Modifications made: Lob2018 - Code based on and adapted from Oracle's JavaFX Fireworks sample,
+modified for animated celebration fireworks displayed upon successful Sudoku puzzle completion in 2025.
+
+===
+
+* Apache Commons Numbers – Precision module
+Licensed under the Apache License, Version 2.0 (the "License")
+You may not use this file except in compliance with the License.
+You may obtain a copy of the License at [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+Modifications made: Lob2018 - Portions of the logic and documentation adjusted for SudokuFX (2025).
+
+===

@@ -1,9 +1,5 @@
 var NAVTREEINDEX21 =
 {
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#afa547c309aea4ec2fcd86e39ec592a98":[2,0,0,0,0,1,2,1,13],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aff235c207117f07f4429b73c469b3a79":[1,0,0,0,0,1,2,1,6],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html#aff235c207117f07f4429b73c469b3a79":[2,0,0,0,0,1,2,1,6],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html":[1,0,0,0,0,1,4,7],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html":[2,0,0,0,0,1,4,7],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a09175f364852bc9360747563b879ff60":[1,0,0,0,0,1,4,7,3],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html#a09175f364852bc9360747563b879ff60":[2,0,0,0,0,1,4,7,3],
@@ -249,5 +245,9 @@ var NAVTREEINDEX21 =
 "functions_vars.html":[2,3,2,0],
 "functions_vars_b.html":[2,3,2,1],
 "functions_vars_c.html":[2,3,2,2],
-"functions_vars_d.html":[2,3,2,3]
+"functions_vars_d.html":[2,3,2,3],
+"functions_vars_e.html":[2,3,2,4],
+"functions_vars_f.html":[2,3,2,5],
+"functions_vars_g.html":[2,3,2,6],
+"functions_vars_h.html":[2,3,2,7]
 };

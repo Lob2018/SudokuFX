@@ -1,8 +1,8 @@
 @echo off
 	chcp 65001
 	color 0A
-	:: WINDOWS GENERATING LICENSE.TXT
-	title GENERATING LICENSE.TXT
+	:: WINDOWS GENERATING THIRD_PARTY_NOTICES.TXT
+	title THIRD_PARTY_NOTICES.TXT
     echo.
     echo          ▒▒▒▒▒
     echo         ▒▒▒▒▒▒▒
@@ -20,18 +20,18 @@
     echo       ▒▒▒▒▒▒▒▒▒    ▒▒▒▒▒▒
     echo        ▒▒▒▒▒
     echo.
-	echo ####################################################################################################
-	echo #                                      GENERATING LICENSE.TXT                                      #
-	echo ####################################################################################################
+	echo #####################################################################################################
+	echo #                                      THIRD_PARTY_NOTICES.TXT                                      #
+	echo #####################################################################################################
 	echo.
-    if not exist MY_LICENSE_TO_EDIT.txt (
-        echo Missing: MY_LICENSE_TO_EDIT.txt
+    if not exist THIRD_PARTY_NOTICES_TO_EDIT.txt (
+        echo Missing: THIRD_PARTY_NOTICES_TO_EDIT.txt
     ) else if not exist target\generated-sources\license\THIRD-PARTY.txt (
         echo Missing: THIRD-PARTY.txt
     ) else (
-        del /f /q LICENSE.txt >nul 2>&1
-        copy /b MY_LICENSE_TO_EDIT.txt + target\generated-sources\license\THIRD-PARTY.txt LICENSE.txt >nul
-        echo LICENSE.txt successfully generated.
+        del /f /q THIRD_PARTY_NOTICES.txt >nul 2>&1
+        copy /b THIRD_PARTY_NOTICES_TO_EDIT.txt + target\generated-sources\license\THIRD-PARTY.txt THIRD_PARTY_NOTICES.txt >nul
+        echo THIRD_PARTY_NOTICES.txt successfully generated.
     )
 	echo.
     echo ####################################################################################################
