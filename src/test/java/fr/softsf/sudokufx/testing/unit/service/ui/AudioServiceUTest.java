@@ -107,7 +107,7 @@ class AudioServiceUTest {
         @DisplayName("Should create and play MediaPlayer for valid effect")
         void givenValidEffect_whenPlayEffect_thenMediaPlayerCreatedAndPlayed()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playEffect(validEffectFile, VALID_EFFECT_KEY);
@@ -124,7 +124,7 @@ class AudioServiceUTest {
         @DisplayName("Should reuse existing MediaPlayer when same effect key is played twice")
         void givenSameEffectKeyPlayedTwice_whenPlayEffect_thenPlayerReusedAndRestarted()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playEffect(validEffectFile, VALID_EFFECT_KEY);
@@ -142,7 +142,7 @@ class AudioServiceUTest {
         @DisplayName("Should set volume to zero when muted")
         void givenMutedState_whenPlayEffect_thenVolumeIsZero() throws ResourceLoadException {
             audioService.muteAll();
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playEffect(validEffectFile, VALID_EFFECT_KEY);
@@ -171,7 +171,7 @@ class AudioServiceUTest {
         @DisplayName("Should create MediaPlayer with infinite loop for valid song")
         void givenValidSong_whenPlaySong_thenMediaPlayerCreatedAndLooped()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);
@@ -188,7 +188,7 @@ class AudioServiceUTest {
         @DisplayName("Should stop and dispose previous song when playing new one")
         void givenNewSong_whenPlaySong_thenPreviousPlayerStoppedAndDisposed()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);
@@ -204,7 +204,7 @@ class AudioServiceUTest {
         @DisplayName("Should set volume to zero when muted")
         void givenMutedState_whenPlaySong_thenVolumeIsZero() throws ResourceLoadException {
             audioService.muteAll();
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);
@@ -225,7 +225,7 @@ class AudioServiceUTest {
         @DisplayName("Should clamp song volume to valid range")
         void givenVolumeOutOfRange_whenSetSongVolume_thenVolumeClamped()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);
@@ -246,7 +246,7 @@ class AudioServiceUTest {
         @DisplayName("Should clamp effect volume to valid range")
         void givenVolumeOutOfRange_whenSetEffectVolume_thenVolumeClamped()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playEffect(validEffectFile, VALID_EFFECT_KEY);
@@ -292,7 +292,7 @@ class AudioServiceUTest {
         @Test
         @DisplayName("Should mute all audio and set isMuted to true")
         void whenMuteAll_thenAllAudioMutedAndStateUpdated() throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);
@@ -309,7 +309,7 @@ class AudioServiceUTest {
         @DisplayName("Should unmute all audio and restore original volumes")
         void givenMutedAudio_whenUnmuteAll_thenOriginalVolumesRestored()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);
@@ -344,7 +344,7 @@ class AudioServiceUTest {
         @DisplayName("Should stop and dispose song player")
         void givenPlayingSong_whenStopSong_thenSongPlayerStoppedAndDisposed()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);
@@ -359,7 +359,7 @@ class AudioServiceUTest {
         @DisplayName("Should stop and dispose all players")
         void givenPlayingAudio_whenStopAll_thenAllPlayersStoppedAndDisposed()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);
@@ -393,14 +393,13 @@ class AudioServiceUTest {
         @Test
         @DisplayName("Should throw ResourceLoadException for invalid media file")
         void givenInvalidMediaFile_whenPlaySong_thenThrowsResourceLoadException() {
-            try (MockedConstruction<Media> mediaMocked =
+            try (var _ =
                             Mockito.mockConstruction(
                                     Media.class,
                                     (media, context) -> {
                                         throw new RuntimeException("media error");
                                     });
-                    MockedConstruction<MediaPlayer> playerMocked =
-                            Mockito.mockConstruction(MediaPlayer.class)) {
+                    var _ = Mockito.mockConstruction(MediaPlayer.class)) {
                 File fakeFile = new File("fake.mp3");
                 ResourceLoadException exception =
                         assertThrows(
@@ -418,7 +417,7 @@ class AudioServiceUTest {
         @DisplayName("Should maintain consistent state through complex operations")
         void givenComplexOperations_whenExecuted_thenStateRemainsConsistent()
                 throws ResourceLoadException {
-            try (MockedConstruction<Media> mediaMocked = Mockito.mockConstruction(Media.class);
+            try (var _ = Mockito.mockConstruction(Media.class);
                     MockedConstruction<MediaPlayer> playerMocked =
                             Mockito.mockConstruction(MediaPlayer.class)) {
                 audioService.playSong(validSongFile);

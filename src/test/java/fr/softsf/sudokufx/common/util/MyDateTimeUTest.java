@@ -8,6 +8,7 @@ package fr.softsf.sudokufx.common.util;
 import java.time.Clock;
 import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.Month;
 import java.time.ZoneId;
 
 import org.junit.jupiter.api.AfterEach;
@@ -60,9 +61,9 @@ class MyDateTimeUTest {
     @Test
     void givenFrenchLocale_whenGetFormattedWithInstant_thenReturnsFrenchFormat() {
         I18n.INSTANCE.setLocaleBundle("FR");
-        LocalDateTime localDateTime = LocalDateTime.of(2024, 6, 24, 14, 30);
+        LocalDateTime localDateTime = LocalDateTime.of(2024, Month.JUNE, 24, 14, 30);
         Instant instant = localDateTime.atZone(PARIS_ZONE).toInstant();
-        MyDateTime.INSTANCE.setClock(Clock.system(PARIS_ZONE));
+        MyDateTime.INSTANCE.setClock(Clock.fixed(instant, PARIS_ZONE));
         String formatted = MyDateTime.INSTANCE.getFormatted(instant);
         assertEquals("24/06/24 14:30", formatted);
     }
@@ -70,9 +71,9 @@ class MyDateTimeUTest {
     @Test
     void givenEnglishLocale_whenGetFormattedWithInstant_thenReturnsEnglishFormat() {
         I18n.INSTANCE.setLocaleBundle("EN");
-        LocalDateTime localDateTime = LocalDateTime.of(2024, 6, 24, 14, 30);
+        LocalDateTime localDateTime = LocalDateTime.of(2024, Month.JUNE, 24, 14, 30);
         Instant instant = localDateTime.atZone(PARIS_ZONE).toInstant();
-        MyDateTime.INSTANCE.setClock(Clock.system(PARIS_ZONE));
+        MyDateTime.INSTANCE.setClock(Clock.fixed(instant, PARIS_ZONE));
         String formatted = MyDateTime.INSTANCE.getFormatted(instant);
         assertEquals("06/24/24 14:30", formatted);
     }
@@ -90,7 +91,9 @@ class MyDateTimeUTest {
     void givenFrenchLocale_whenGetFormattedLocalWithInstant_thenReturnsFrenchFormat() {
         I18n.INSTANCE.setLocaleBundle("FR");
         Instant dateTime =
-                LocalDateTime.of(2024, 6, 24, 14, 30).atZone(ZoneId.systemDefault()).toInstant();
+                LocalDateTime.of(2024, Month.JUNE, 24, 14, 30)
+                        .atZone(ZoneId.systemDefault())
+                        .toInstant();
         String formatted = MyDateTime.INSTANCE.getFormatted(dateTime);
         assertEquals("24/06/24 14:30", formatted);
     }
@@ -99,17 +102,22 @@ class MyDateTimeUTest {
     void givenEnglishLocale_whenGetFormattedLocalWithInstant_thenReturnsEnglishFormat() {
         I18n.INSTANCE.setLocaleBundle("EN");
         Instant dateTime =
-                LocalDateTime.of(2024, 6, 24, 14, 30).atZone(ZoneId.systemDefault()).toInstant();
+                LocalDateTime.of(2024, Month.JUNE, 24, 14, 30)
+                        .atZone(ZoneId.systemDefault())
+                        .toInstant();
         String formatted = MyDateTime.INSTANCE.getFormatted(dateTime);
         assertEquals("06/24/24 14:30", formatted);
     }
 
     @Test
     void givenGetCurrentInstant_whenCalled_thenReturnsNonNullInstant() {
+        long start = System.currentTimeMillis();
         Instant result = MyDateTime.INSTANCE.getCurrentInstant();
+        long end = System.currentTimeMillis();
         assertNotNull(result);
-        Instant now = Instant.now();
-        long diffSeconds = Math.abs(now.getEpochSecond() - result.getEpochSecond());
-        assertTrue(diffSeconds < 5, "Instant should be within 5 seconds of now");
+        long resultMillis = result.toEpochMilli();
+        assertTrue(
+                resultMillis >= start && resultMillis <= end,
+                "Result should be within the execution window");
     }
 }

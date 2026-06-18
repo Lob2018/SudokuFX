@@ -7,6 +7,7 @@ package fr.softsf.sudokufx.model;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
+import java.time.Month;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.util.LinkedHashSet;
@@ -130,7 +131,8 @@ class PlayerUTest {
         @Test
         @DisplayName("Given two Players with same ID when comparing then they are equal")
         void givenTwoPlayersWithSameId_whenComparing_thenTheyAreEqual() {
-            Instant fixedTime = LocalDateTime.of(1, 1, 1, 1, 1, 1, 1).toInstant(ZoneOffset.UTC);
+            Instant fixedTime =
+                    LocalDateTime.of(1, Month.JANUARY, 1, 1, 1, 1, 1).toInstant(ZoneOffset.UTC);
             Player p1 =
                     Player.builder()
                             .playerid(1L)
@@ -336,8 +338,8 @@ class PlayerUTest {
         }
 
         @Test
-        @DisplayName("Given selected flag when setting selected then field is updated")
-        void givenIsselectedFlag_whenSettingIsselected_thenFieldIsUpdated() {
+        @DisplayName("Given selected=false when building then player is not selected")
+        void givenSelectedFalse_whenBuilding_thenPlayerIsNotSelected() {
             Player player =
                     Player.builder()
                             .playerlanguageid(mockPlayerLanguage)
@@ -346,8 +348,21 @@ class PlayerUTest {
                             .name("John")
                             .selected(false)
                             .build();
-            player.setSelected(true);
-            assertTrue(player.getSelected());
+            assertFalse(player.getSelected(), "Player should be initialized as not selected");
+        }
+
+        @Test
+        @DisplayName("Given selected=true when building then player is selected")
+        void givenSelectedTrue_whenBuilding_thenPlayerIsSelected() {
+            Player player =
+                    Player.builder()
+                            .playerlanguageid(mockPlayerLanguage)
+                            .optionsid(mockOptions)
+                            .menuid(mockMenu)
+                            .name("John")
+                            .selected(true)
+                            .build();
+            assertTrue(player.getSelected(), "Player should be initialized as selected");
         }
 
         @Test
@@ -361,7 +376,9 @@ class PlayerUTest {
                             .name("John")
                             .build();
             Instant newUpdatedAt =
-                    LocalDateTime.now().plusDays(1).atZone(ZoneId.systemDefault()).toInstant();
+                    LocalDateTime.of(2026, Month.JUNE, 19, 10, 0)
+                            .atZone(ZoneId.of("UTC"))
+                            .toInstant();
             player.setUpdatedat(newUpdatedAt);
             assertEquals(newUpdatedAt, player.getUpdatedat());
         }
