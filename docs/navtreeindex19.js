@@ -1,9 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4c909182bac10b921d29ee29a6a5a9ae":[1,0,0,0,0,10,0,1,31],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4c909182bac10b921d29ee29a6a5a9ae":[2,0,0,0,0,9,0,1,31],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4d99b8d993ea1d81d18c436eea4b8e80":[1,0,0,0,0,10,0,1,43],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4d99b8d993ea1d81d18c436eea4b8e80":[2,0,0,0,0,9,0,1,43],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca":[1,0,0,0,0,10,0,1,4],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca":[2,0,0,0,0,9,0,1,4],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4ff1b0176ffc72fdb9ad1c267225bd2f":[1,0,0,0,0,10,0,1,54],
@@ -249,5 +245,9 @@ var NAVTREEINDEX19 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons.html#ab41a1400f00c0bc952aa16858146e29b":[2,0,0,0,0,1,1,0,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons.html#afe432977274d1e6eec9546b5dc017267":[1,0,0,0,0,1,1,0,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons.html#afe432977274d1e6eec9546b5dc017267":[2,0,0,0,0,1,1,0,2],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html":[1,0,0,0,0,1,1,1]
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html":[1,0,0,0,0,1,1,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html":[2,0,0,0,0,1,1,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a05e4b557698cfd18806b8fcf69578550":[1,0,0,0,0,1,1,1,22],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a05e4b557698cfd18806b8fcf69578550":[2,0,0,0,0,1,1,1,22],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html#a07f3940f779ade4cbdaf5262bea8a9ab":[1,0,0,0,0,1,1,1,5]
 };

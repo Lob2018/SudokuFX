@@ -657,7 +657,7 @@
                 </configuration>
               </execution>
               <execution>
-                <id>merge-license-files-windows</id>
+                <id>merge-third-party-notices-files-windows</id>
                 <goals>
                   <goal>exec</goal>
                 </goals>
@@ -666,7 +666,7 @@
                   <executable>cmd</executable>
                   <arguments>
                     <argument>/c</argument>
-                    <argument>.myresources\scripts\windowsLicense.bat</argument>
+                    <argument>.myresources\scripts\windowsThirdPartyNotices.bat</argument>
                   </arguments>
                 </configuration>
               </execution>
@@ -725,7 +725,7 @@
                 </configuration>
               </execution>
               <execution>
-                <id>merge-license-files-unix</id>
+                <id>merge-third-party-notices-files-unix</id>
                 <goals>
                   <goal>exec</goal>
                 </goals>
@@ -733,7 +733,7 @@
                 <configuration>
                   <executable>bash</executable>
                   <arguments>
-                    <argument>.myresources/scripts/unixLicense.sh</argument>
+                    <argument>.myresources/scripts/unixThirdPartyNotices.sh</argument>
                   </arguments>
                 </configuration>
               </execution>
