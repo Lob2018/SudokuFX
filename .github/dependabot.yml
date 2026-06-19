@@ -23,3 +23,12 @@ updates:
       actions-dependencies:
         patterns:
           - "*"
+  # Python/pip : maintain dependencies for pre-commit and environment tools via requirements.txt
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      pip-dependencies:
+        patterns:
+          - "*"

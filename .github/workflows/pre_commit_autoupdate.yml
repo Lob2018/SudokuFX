@@ -28,9 +28,8 @@ jobs:
           python-version: '3.x'
           cache: 'pip'
       - name: Install pre-commit
-        # nosec - This is a dev/ci tool, not an application dependency
         run: |
-          pip install --only-binary :all: pre-commit
+          pip install --only-binary :all: -r requirements.txt
       - name: Check pre-commit version
         run: python -m pre_commit --version
       - name: Run pre-commit autoupdate and check for changes
