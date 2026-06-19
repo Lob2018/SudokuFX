@@ -156,9 +156,7 @@ public class MenuPlayerViewModel {
                                     () -> {
                                         playerService.switchAndSelectNewPlayer(
                                                 old.playerid(), newValue.playerid());
-                                        loadPlayers();
-                                        playerStateHolder.refreshCurrentPlayer();
-                                        playerSwitchedSignal.set(!playerSwitchedSignal.get());
+                                        refreshUI();
                                     });
                         });
         I18n.INSTANCE
