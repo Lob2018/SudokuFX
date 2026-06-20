@@ -1,0 +1,39 @@
+# Configuration to ignore false positives in ignite-spring
+# The use of 'mvn dependency:build-classpath' confirms that :
+# version 7.0.8 is used at runtime, overriding the vulnerable version 5.3.1.
+
+[[IgnoredVulns]]
+id = "GHSA-36p3-wjmg-h94x"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
+
+[[IgnoredVulns]]
+id = "GHSA-hh26-6xwr-ggv7"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
+
+[[IgnoredVulns]]
+id = "GHSA-4gc7-5j7h-4qph"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
+
+[[IgnoredVulns]]
+id = "GHSA-4wp7-92pw-q264"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
+
+[[IgnoredVulns]]
+id = "GHSA-g5mm-vmx4-3rg7"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
+
+[[IgnoredVulns]]
+id = "GHSA-558x-2xjg-6232"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
+
+[[IgnoredVulns]]
+id = "GHSA-564r-hj7v-mcr5"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
+
+[[IgnoredVulns]]
+id = "GHSA-9cmq-m9j5-mvww"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
+
+[[IgnoredVulns]]
+id = "GHSA-wxqc-pxw9-g2p8"
+reason = "Vulnerable version (5.3.1) overridden by Maven mediation; version 7.0.8 used at runtime."
