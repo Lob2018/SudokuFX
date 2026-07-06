@@ -11,7 +11,6 @@ import java.util.function.Consumer;
 import java.util.function.Function;
 import javafx.concurrent.Task;
 
-import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -85,7 +84,7 @@ public class AsyncFileProcessorService {
      * @param successCallback UI thread success handler
      * @return configured Task instance
      */
-    private <T> @NonNull Task<T> fileProcessingTask(
+    private <T> Task<T> fileProcessingTask(
             File file, Function<File, T> function, Consumer<T> successCallback) {
         return new Task<>() {
             @Override

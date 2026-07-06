@@ -210,6 +210,7 @@ public final class Player {
     }
 
     /** Returns the name of the player. */
+    @Nonnull
     public String getName() {
         return name;
     }
@@ -220,11 +221,13 @@ public final class Player {
     }
 
     /** Returns the creation timestamp. */
+    @Nonnull
     public Instant getCreatedat() {
         return createdat;
     }
 
     /** Returns the update timestamp. */
+    @Nonnull
     public Instant getUpdatedat() {
         return updatedat;
     }

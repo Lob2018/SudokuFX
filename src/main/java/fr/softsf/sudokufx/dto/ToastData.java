@@ -9,4 +9,6 @@ import fr.softsf.sudokufx.common.enums.ToastLevels;
 
 /** A data transfer object representing a toast notification. */
 public record ToastData(
-        String visibleText, String detailedText, ToastLevels level, boolean requestFocus) {}
+        String visibleText, String detailedText, ToastLevels level, boolean requestFocus) {
+    public static final ToastData EMPTY = new ToastData("", "", null, false);
+}

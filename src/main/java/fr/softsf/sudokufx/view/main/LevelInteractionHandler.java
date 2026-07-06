@@ -13,6 +13,7 @@ import javafx.animation.Timeline;
 import javafx.concurrent.Task;
 import javafx.util.Duration;
 
+import org.jspecify.annotations.NonNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -138,20 +139,37 @@ public class LevelInteractionHandler {
             currentGridTask.cancel();
         }
         currentGridTask = gridViewModel.setCurrentGridTask(level);
+        getSyncLevelThread(opaqueApplier).start();
+    }
+
+    /**
+     * Creates and configures a daemon thread to finalize level synchronization.
+     *
+     * @param opaqueApplier callback for UI synchronization
+     * @return the configured worker thread
+     */
+    private @NonNull Thread getSyncLevelThread(Consumer<Boolean> opaqueApplier) {
         final Task<Integer> task = currentGridTask;
-        task.setOnSucceeded(
-                _ -> {
-                    int possibilitiesPercentage = task.getValue();
-                    if (possibilitiesPercentage != -1) {
-                        menuLevelViewModel.updateSelectedLevel(level, possibilitiesPercentage);
-                        opaqueApplier.accept(menuOptionsViewModel.gridOpacityProperty().get());
-                    }
-                });
+        task.setOnSucceeded(_ -> finalizeLevelState(task, opaqueApplier));
         task.setOnFailed(
                 _ -> LOG.error("Level application failed: {}", task.getException().getMessage()));
-        Thread thread = new Thread(task);
+        Thread thread = new Thread(task, "LevelSyncWorker");
         thread.setDaemon(true);
-        thread.start();
+        return thread;
+    }
+
+    /**
+     * Synchronizes ViewModels post-generation.
+     *
+     * @param task the completed task
+     * @param opaqueApplier callback for UI synchronization
+     */
+    private void finalizeLevelState(Task<Integer> task, Consumer<Boolean> opaqueApplier) {
+        int possibilitiesPercentage = task.getValue();
+        if (possibilitiesPercentage != -1) {
+            menuLevelViewModel.updateSelectedLevel(level, possibilitiesPercentage);
+            opaqueApplier.accept(menuOptionsViewModel.gridOpacityProperty().get());
+        }
     }
 
     /** Triggers a notification displaying the current difficulty percentage boundaries. */

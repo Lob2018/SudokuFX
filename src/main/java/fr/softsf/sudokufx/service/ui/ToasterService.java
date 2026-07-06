@@ -101,7 +101,7 @@ public class ToasterService {
         Objects.requireNonNull(detailedText, "detailedText must not be null");
         Platform.runLater(
                 () -> {
-                    toastRequest.set(null);
+                    toastRequest.set(ToastData.EMPTY);
                     toastRequest.set(new ToastData(visibleText, detailedText, level, false));
                 });
     }

@@ -56,6 +56,7 @@ import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.dto.ToastData;
 import fr.softsf.sudokufx.navigation.Coordinator;
 import fr.softsf.sudokufx.service.ui.AudioService;
 import fr.softsf.sudokufx.service.ui.FileChooserService;
@@ -367,7 +368,7 @@ public final class MainView implements IMainView {
                 .toastRequestProperty()
                 .addListener(
                         (_, _, newVal) -> {
-                            if (newVal != null) {
+                            if (newVal != ToastData.EMPTY) {
                                 toaster.addToast(
                                         newVal.visibleText(),
                                         newVal.detailedText(),
@@ -1277,6 +1278,12 @@ public final class MainView implements IMainView {
         gridViewModel.clearGrid();
         menuSolveViewModel.setSolvePercentage(MAX_STARS_PERCENTAGE);
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
+    }
+
+    /** backup of the current game state. */
+    @FXML
+    public void handleGameBackup() {
+        menuSaveViewModel.createABackup();
     }
 
     /**
