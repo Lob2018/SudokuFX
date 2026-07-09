@@ -851,6 +851,7 @@ public final class MainView implements IMainView {
         restoreCurrentGridLevelFromModel();
         menuOptionsViewModel.restoreCurrentOptions(sudokuFX);
         applyOpaqueMode(currentPlayer.optionsidDto().opaque());
+        menuSaveViewModel.refreshGames();
     }
 
     /**

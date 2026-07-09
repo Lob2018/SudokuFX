@@ -114,7 +114,7 @@ public class GenericListViewFactory {
                                     }
                                     return MyDateTime.INSTANCE.getFormatted(gameDto.updatedat());
                                 },
-                                viewModel::deleteGame));
+                                viewModel::deleteABackup));
         setupBidirectionalSelection(listView, viewModel.selectedBackupProperty());
         Platform.runLater(
                 () -> {

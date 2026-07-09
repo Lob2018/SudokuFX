@@ -570,7 +570,7 @@
             </HBox>
             <HBox alignment="CENTER" styleClass="menuMaxiHBoxContainer">
                 <Region styleClass="submenuIndentation" visible="false"/>
-                <Button fx:id="menuSaveButtonBackup" styleClass="menuButton">
+                <Button fx:id="menuSaveButtonBackup" styleClass="menuButton" onAction="#handleGameBackup">
                     <graphic>
                         <HBox alignment="CENTER_LEFT" styleClass="menuHBoxContainer">
                             <Region styleClass="menuDropdownOpen" visible="false"/>

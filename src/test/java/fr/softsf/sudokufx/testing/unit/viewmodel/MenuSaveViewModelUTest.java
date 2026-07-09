@@ -5,6 +5,9 @@
  */
 package fr.softsf.sudokufx.testing.unit.viewmodel;
 
+import java.time.Instant;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
@@ -20,21 +23,68 @@ import org.testfx.framework.junit5.ApplicationExtension;
 
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.dto.GameDto;
+import fr.softsf.sudokufx.dto.GameLevelDto;
+import fr.softsf.sudokufx.dto.GridDto;
+import fr.softsf.sudokufx.dto.MenuDto;
+import fr.softsf.sudokufx.dto.OptionsDto;
+import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.dto.PlayerLanguageDto;
+import fr.softsf.sudokufx.service.business.GameService;
+import fr.softsf.sudokufx.service.business.PlayerService;
 import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
+import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 @ExtendWith(ApplicationExtension.class)
-class MenuSaveViewModelUTest {
+class MenuSaveViewModelUTest extends AbstractPlayerStateTest {
 
+    private static final Instant FIXED_INSTANT = Instant.parse("2026-06-18T10:00:00Z");
     private Locale originalLocale;
     private MenuSaveViewModel viewModel;
+
+    private static final String VALID_GRID;
+
+    static {
+        int[] grid = new int[81];
+        Arrays.fill(grid, 1);
+        VALID_GRID = Arrays.toString(grid);
+    }
 
     @BeforeEach
     void setUp() {
         originalLocale = I18n.INSTANCE.localeProperty().getValue();
         I18n.INSTANCE.setLocaleBundle("FR");
-        viewModel = new MenuSaveViewModel();
+
+        GameDto testGame =
+                new GameDto(
+                        2L,
+                        new GridDto(1L, VALID_GRID, VALID_GRID, (byte) 100),
+                        42L,
+                        new GameLevelDto((byte) 0, (byte) 1),
+                        false,
+                        FIXED_INSTANT,
+                        FIXED_INSTANT);
+
+        PlayerDto testPlayer =
+                new PlayerDto(
+                        42L,
+                        new PlayerLanguageDto(1L, "FR"),
+                        new OptionsDto(1L, "#ffffff", "", "", true, true),
+                        new MenuDto((byte) 1, (byte) 1),
+                        null,
+                        "TestPlayer",
+                        false,
+                        FIXED_INSTANT,
+                        FIXED_INSTANT);
+        PlayerService playerServiceMock = mock(PlayerService.class);
+        when(playerServiceMock.getPlayer()).thenReturn(testPlayer);
+        GameService gameServiceMock = mock(GameService.class);
+        when(gameServiceMock.getGames(playerServiceMock.getPlayer().playerid()))
+                .thenReturn(Collections.singleton(testGame));
+        viewModel = new MenuSaveViewModel(playerStateHolder, gameServiceMock);
     }
 
     @AfterEach
@@ -71,7 +121,7 @@ class MenuSaveViewModelUTest {
     @Test
     void backupsListShouldBeInitializedWithExpectedBackups() {
         ObservableList<GameDto> backups = viewModel.getBackups();
-        assertEquals(21, backups.size(), "Backups list should contain 21 entries");
+        assertEquals(1, backups.size(), "Backups list should contain 1 entries");
         boolean hasSelected = backups.stream().anyMatch(GameDto::selected);
         assertTrue(hasSelected, "At least one backup should be marked as selected");
         GameDto selected = viewModel.selectedBackupProperty().get();

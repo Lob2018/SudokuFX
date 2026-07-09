@@ -5,9 +5,8 @@
  */
 package fr.softsf.sudokufx.viewmodel;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
+import java.util.List;
+import java.util.Objects;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.StringBinding;
 import javafx.beans.property.ObjectProperty;
@@ -20,8 +19,9 @@ import org.springframework.stereotype.Component;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.dto.GameDto;
-import fr.softsf.sudokufx.dto.GameLevelDto;
-import fr.softsf.sudokufx.dto.GridDto;
+import fr.softsf.sudokufx.dto.PlayerDto;
+import fr.softsf.sudokufx.service.business.GameService;
+import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 
 /**
  * ViewModel for managing backup menu UI state and accessibility texts.
@@ -38,12 +38,9 @@ public final class MenuSaveViewModel {
             "menu.accessibility.role.description.opened";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED =
             "menu.accessibility.role.description.closed";
-    private static final int TEST_BACKUP_START = 31;
-    private static final int TEST_BACKUP_END = 11;
-    private static final int TEST_BACKUP_SELECTED_MINUTE = 25;
-    private static final int TEST_GRID_STRING_LENGTH = 81;
-    private static final int TEST_GRID_STRING_LENGTH_ALT = 810;
-    private static final int TEST_GRID_BYTE_VALUE = 75;
+
+    private final PlayerStateHolder playerStateHolder;
+    private final GameService gameService;
 
     private final ObservableList<GameDto> backups = FXCollections.observableArrayList();
     private final ObjectProperty<GameDto> selectedBackup = new SimpleObjectProperty<>();
@@ -67,7 +64,14 @@ public final class MenuSaveViewModel {
     private final StringBinding cellConfirmationTitle;
     private final StringBinding cellConfirmationMessage;
 
-    public MenuSaveViewModel() {
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "Infrastructure services must be stored by reference to maintain reactive state"
+                            + " and binding integrity.")
+    public MenuSaveViewModel(PlayerStateHolder playerStateHolder, GameService gameService) {
+        this.playerStateHolder = playerStateHolder;
+        this.gameService = gameService;
         saveAccessibleText = createStringBinding("menu.save.button.save.accessibility");
         saveTooltip =
                 createFormattedAndConcatenatedBinding(
@@ -99,8 +103,7 @@ public final class MenuSaveViewModel {
                 createStringBinding("menu.save.button.backup.dialog.confirmation.title");
         cellConfirmationMessage =
                 createStringBinding("menu.save.button.backup.dialog.confirmation.message");
-        loadBackups();
-        setSelectedBackup();
+        refreshGames();
     }
 
     /**
@@ -130,28 +133,25 @@ public final class MenuSaveViewModel {
     }
 
     /**
-     * Loads test backups into the observable list. The backup at minute +25 is marked as selected.
+     * Refreshes the game list and re-synchronizes the selected backup. Used when the active player
+     * changes to update the UI state.
      */
-    private void loadBackups() {
+    public void refreshGames() {
+        loadGames();
+        setSelectedBackup();
+    }
+
+    /** Loads games into the observable list. */
+    private void loadGames() {
         backups.clear();
-        for (int i = TEST_BACKUP_START; i >= TEST_BACKUP_END; i--) {
-            if (i == TEST_BACKUP_SELECTED_MINUTE) {
-                backups.add(
-                        createBackupGameDto(
-                                LocalDateTime.now()
-                                        .plusMinutes(i)
-                                        .atZone(ZoneId.systemDefault())
-                                        .toInstant(),
-                                true));
-            } else {
-                backups.add(
-                        createBackupGameDto(
-                                LocalDateTime.now()
-                                        .plusMinutes(i)
-                                        .atZone(ZoneId.systemDefault())
-                                        .toInstant(),
-                                false));
+        PlayerDto player = playerStateHolder.getCurrentPlayer();
+        if (player != null) {
+            backups.add(player.selectedGame());
+            List<GameDto> otherGames = gameService.getGames(player.playerid()).stream().toList();
+            if (otherGames.isEmpty()) {
+                return;
             }
+            backups.addAll(otherGames);
         }
     }
 
@@ -167,28 +167,6 @@ public final class MenuSaveViewModel {
                 .filter(GameDto::selected)
                 .findFirst()
                 .ifPresentOrElse(selectedBackup::set, () -> selectedBackup.set(backups.getFirst()));
-    }
-
-    /**
-     * Generates a sample GameDto instance for testing purposes.
-     *
-     * @param date the timestamp of the backup
-     * @param isSelected whether the backup is selected
-     * @return a GameDto populated with mock data
-     */
-    private GameDto createBackupGameDto(Instant date, boolean isSelected) {
-        return new GameDto(
-                0L,
-                new GridDto(
-                        0L,
-                        "0".repeat(TEST_GRID_STRING_LENGTH),
-                        "1".repeat(TEST_GRID_STRING_LENGTH_ALT),
-                        (byte) TEST_GRID_BYTE_VALUE),
-                0L,
-                new GameLevelDto((byte) 1, (byte) 1),
-                isSelected,
-                Instant.now(),
-                date);
     }
 
     @SuppressFBWarnings(
@@ -371,7 +349,25 @@ public final class MenuSaveViewModel {
         return cellConfirmationMessage;
     }
 
-    public void deleteGame(GameDto gameDto) {
-        // TODO work in progress
+    /**
+     * Backup the player's game.
+     *
+     * <p>Creates a copy of the current game state and refreshes the player's game list.
+     *
+     * @throws NullPointerException if the current player or selected game is null.
+     */
+    public void createABackup() {
+        PlayerDto playerDto =
+                Objects.requireNonNull(
+                        playerStateHolder.getCurrentPlayer(), "Current player cannot be null");
+        GameDto selectedGame =
+                Objects.requireNonNull(playerDto.selectedGame(), "Selected game cannot be null");
+        gameService.createNewGameWithCurrent(selectedGame, playerDto.playerid());
+        playerStateHolder.refreshCurrentPlayer();
+        loadGames();
+    }
+
+    public void deleteABackup(GameDto gameDto) {
+        // TODO work in progress (latest selected)
     }
 }

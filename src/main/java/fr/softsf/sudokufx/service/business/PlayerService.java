@@ -11,7 +11,6 @@ import java.util.Objects;
 import java.util.Optional;
 
 import org.springframework.data.domain.Sort;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
@@ -38,6 +37,7 @@ import fr.softsf.sudokufx.repository.MenuRepository;
 import fr.softsf.sudokufx.repository.OptionsRepository;
 import fr.softsf.sudokufx.repository.PlayerLanguageRepository;
 import fr.softsf.sudokufx.repository.PlayerRepository;
+import fr.softsf.sudokufx.repository.util.RepositoryTools;
 import jakarta.validation.ConstraintViolationException;
 
 /**
@@ -281,12 +281,12 @@ public class PlayerService {
         Player newPlayer =
                 Player.builder()
                         .playerlanguageid(
-                                findOrThrow(
+                                RepositoryTools.INSTANCE.findOrThrow(
                                         playerLanguageRepository,
                                         currentPlayerDto.playerlanguageidDto().playerlanguageid(),
                                         "Language"))
                         .optionsid(
-                                findOrThrow(
+                                RepositoryTools.INSTANCE.findOrThrow(
                                         optionsRepository,
                                         optionsService
                                                 .duplicateOptions(
@@ -294,7 +294,7 @@ public class PlayerService {
                                                 .optionsid(),
                                         "Options"))
                         .menuid(
-                                findOrThrow(
+                                RepositoryTools.INSTANCE.findOrThrow(
                                         menuRepository,
                                         currentPlayerDto.menuidDto().menuid(),
                                         "Menu"))
@@ -309,7 +309,7 @@ public class PlayerService {
         Game newGame =
                 Game.builder()
                         .gridid(
-                                findOrThrow(
+                                RepositoryTools.INSTANCE.findOrThrow(
                                         gridRepository,
                                         gridService
                                                 .duplicateGrid(currentGameDto.grididDto().gridid())
@@ -325,30 +325,6 @@ public class PlayerService {
         updatePlayerSelection(currentPlayerDto.playerid(), false);
         jakartaValidator.validateOrThrow(
                 playerMapper.mapPlayerToDto(playerRepository.save(newPlayer)));
-    }
-
-    /**
-     * Retrieves an entity by its identifier from the provided repository or throws an exception if
-     * not found.
-     *
-     * <p>This utility method standardizes error handling across the service layer when resolving
-     * database dependencies. It ensures that required entities are managed within the current
-     * transaction and throws a consistent exception if they are missing.
-     *
-     * @param <T> the type of the entity
-     * @param <K> the type of the entity identifier
-     * @param repo the {@link CrudRepository} used to query the entity
-     * @param k the identifier of the entity to retrieve
-     * @param entityName a descriptive name of the entity, used for error message construction
-     * @return the managed entity instance
-     * @throws IllegalArgumentException if the entity with the specified identifier does not exist
-     */
-    private <T, K> T findOrThrow(CrudRepository<T, K> repo, K k, String entityName) {
-        return repo.findById(k)
-                .orElseThrow(
-                        () ->
-                                ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                                        entityName + " not found: " + k));
     }
 
     /**
