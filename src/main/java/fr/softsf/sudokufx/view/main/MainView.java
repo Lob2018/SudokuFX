@@ -842,8 +842,8 @@ public final class MainView implements IMainView {
      * Synchronizes the user interface with the current player's profile data.
      *
      * <p>Updates the application locale, restores the grid level state, applies specific player
-     * options (such as background and colors), and adjusts the grid opacity mode based on the new
-     * player's configuration.
+     * options (such as background and colors), adjusts the grid opacity mode based on the new
+     * player's configuration, and updates the available game backups list.
      */
     private void synchronizeUIAfterPlayerSwitch() {
         PlayerDto currentPlayer = menuPlayerViewModel.selectedPlayerProperty().get();
