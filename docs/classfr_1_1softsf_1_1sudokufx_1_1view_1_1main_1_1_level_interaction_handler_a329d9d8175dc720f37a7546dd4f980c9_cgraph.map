@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.applyLevel" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.applyLevel">
+<area shape="rect" id="Node000001" title="Finalizes level selection and synchronizes reactive state across ViewModels asynchronously." alt="" coords="5,13,230,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a48dd0becf3e611f590a748ddd8b5bea2" title="Creates and configures a daemon thread to finalize level synchronization." alt="" coords="278,5,519,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,32,262,32,262,37,230,37"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#ab0c2229840635461fd71e1446a0bef7d" title="Synchronizes ViewModels post&#45;generation." alt="" coords="567,5,770,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="519,32,551,32,551,37,519,37"/>
+</map>

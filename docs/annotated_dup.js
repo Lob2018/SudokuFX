@@ -120,8 +120,11 @@ var annotated_dup =
             [ "CoordinatorUTest", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test" ]
           ] ],
           [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", [
+            [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1repository_1_1util.html", [
+              [ "RepositoryTools", "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools" ]
+            ] ],
             [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository" ],
-            [ "GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html", null ],
+            [ "GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository" ],
             [ "GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
             [ "MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],
             [ "OptionsRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html", null ],
@@ -131,6 +134,7 @@ var annotated_dup =
           [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
             [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", [
               [ "GameLevelService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service" ],
+              [ "GameService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service" ],
               [ "GridService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service" ],
               [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service" ],
               [ "PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service" ],

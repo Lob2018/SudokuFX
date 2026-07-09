@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.refreshGames" name="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.refreshGames">
+<area shape="rect" id="Node000001" title="Refreshes the game list and re&#45;synchronizes the selected backup." alt="" coords="5,39,239,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a74002017cc6a85275aed0b298ecf2232" title="Loads games into the observable list." alt="" coords="310,5,528,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,44,295,38,295,43,239,50"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a8cf5fc063d8c7472d2c580f0f36c958d" title="Sets the selected backup to the one marked as selected, or defaults to the first in the list if none ..." alt="" coords="287,72,551,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="239,70,271,74,271,79,239,76"/>
+</map>

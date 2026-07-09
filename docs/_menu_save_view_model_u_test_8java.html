@@ -118,7 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="headertitle"><div class="title">MenuSaveViewModelUTest.java File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>import java.util.HashMap;</code><br />
+<div class="textblock"><code>import java.time.Instant;</code><br />
+<code>import java.util.Arrays;</code><br />
+<code>import java.util.Collections;</code><br />
+<code>import java.util.HashMap;</code><br />
 <code>import java.util.Locale;</code><br />
 <code>import java.util.Map;</code><br />
 <code>import java.util.function.Supplier;</code><br />
@@ -131,8 +134,19 @@ document.addEventListener('DOMContentLoaded', () => {
 <code>import org.testfx.framework.junit5.ApplicationExtension;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
 <code>import fr.softsf.sudokufx.dto.GameDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.GameLevelDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.GridDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.MenuDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.OptionsDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.PlayerDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.PlayerLanguageDto;</code><br />
+<code>import fr.softsf.sudokufx.service.business.GameService;</code><br />
+<code>import fr.softsf.sudokufx.service.business.PlayerService;</code><br />
 <code>import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;</code><br />
+<code>import fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest;</code><br />
 <code>import org.junit.jupiter.api.Assertions.*;</code><br />
+<code>import org.mockito.Mockito.mock;</code><br />
+<code>import org.mockito.Mockito.when;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Include dependency graph for MenuSaveViewModelUTest.java:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>

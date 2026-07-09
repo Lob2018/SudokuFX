@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.business.GameService.createNewGameWithCurrent" name="fr.softsf.sudokufx.service.business.GameService.createNewGameWithCurrent">
+<area shape="rect" id="Node000001" title="Creates a new game by duplicating the grid of the source game." alt="" coords="5,5,278,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838" title="Creates a new GameBuilder for fluent construction." alt="" coords="326,5,492,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,24,310,24,310,29,278,29"/>
+</map>

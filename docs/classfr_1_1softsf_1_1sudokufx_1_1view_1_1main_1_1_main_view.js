@@ -14,6 +14,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view =
     [ "gridInitialization", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ac88a722293c271e57a26d51c3cf01ffc", null ],
     [ "handleFileImageChooser", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#ac4ee981308a8cfe39db1ef0acca51b68", null ],
     [ "handleFileSongChooser", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#afd25b9774bafe5aba28e08eef9d881e5", null ],
+    [ "handleGameBackup", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a3cfd182bef3180918bca6a34dd61a631", null ],
     [ "handleGridOpacity", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a2b008de30122c5b136943bb03a8b09fe", null ],
     [ "handleLevelAction", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a92c208fc0f6234d3052ac0c7b971619f", null ],
     [ "handleMenuBackupShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7bc2d3401e4ef3125cf136ebd95a2273", null ],

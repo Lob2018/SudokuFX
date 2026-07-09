@@ -147,8 +147,12 @@ Static Public Attributes</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a329d9d8175dc720f37a7546dd4f980c9" id="r_a329d9d8175dc720f37a7546dd4f980c9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a329d9d8175dc720f37a7546dd4f980c9">applyLevel</a> (Consumer&lt; Boolean &gt; opaqueApplier)</td></tr>
 <tr class="memdesc:a329d9d8175dc720f37a7546dd4f980c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes level selection and synchronizes reactive state across ViewModels asynchronously.  <br /></td></tr>
+<tr class="memitem:ab0c2229840635461fd71e1446a0bef7d" id="r_ab0c2229840635461fd71e1446a0bef7d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ab0c2229840635461fd71e1446a0bef7d">finalizeLevelState</a> (Task&lt; Integer &gt; task, Consumer&lt; Boolean &gt; opaqueApplier)</td></tr>
+<tr class="memdesc:ab0c2229840635461fd71e1446a0bef7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes ViewModels post-generation.  <br /></td></tr>
 <tr class="memitem:a5790fc56904861e9e5cfc4ce38c2d9a1" id="r_a5790fc56904861e9e5cfc4ce38c2d9a1"><td class="memItemLeft"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a>&#160;</td><td class="memItemRight"><a class="el" href="#a5790fc56904861e9e5cfc4ce38c2d9a1">getLevelWithId</a> (String id)</td></tr>
 <tr class="memdesc:a5790fc56904861e9e5cfc4ce38c2d9a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a button identifier to its corresponding difficulty level.  <br /></td></tr>
+<tr class="memitem:a48dd0becf3e611f590a748ddd8b5bea2" id="r_a48dd0becf3e611f590a748ddd8b5bea2"><td class="memItemLeft">Thread&#160;</td><td class="memItemRight"><a class="el" href="#a48dd0becf3e611f590a748ddd8b5bea2">getSyncLevelThread</a> (Consumer&lt; Boolean &gt; opaqueApplier)</td></tr>
+<tr class="memdesc:a48dd0becf3e611f590a748ddd8b5bea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and configures a daemon thread to finalize level synchronization.  <br /></td></tr>
 <tr class="memitem:a9dfb9544ddbf4ffb4d55f31edf1590b7" id="r_a9dfb9544ddbf4ffb4d55f31edf1590b7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9dfb9544ddbf4ffb4d55f31edf1590b7">notifyUser</a> ()</td></tr>
 <tr class="memdesc:a9dfb9544ddbf4ffb4d55f31edf1590b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggers a notification displaying the current difficulty percentage boundaries.  <br /></td></tr>
 <tr class="memitem:ac14e8afed6bf5c0b770de7e5022ac671" id="r_ac14e8afed6bf5c0b770de7e5022ac671"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ac14e8afed6bf5c0b770de7e5022ac671">setupTimeline</a> ()</td></tr>
@@ -247,6 +251,50 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler_a329d9d8175dc720f37a7546dd4f980c9_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="ab0c2229840635461fd71e1446a0bef7d" name="ab0c2229840635461fd71e1446a0bef7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0c2229840635461fd71e1446a0bef7d">&#9670;&#160;</a></span>finalizeLevelState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.main.LevelInteractionHandler.finalizeLevelState </td>
+          <td>(</td>
+          <td class="paramtype">Task&lt; Integer &gt;</td>          <td class="paramname"><span class="paramname"><em>task</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Consumer&lt; Boolean &gt;</td>          <td class="paramname"><span class="paramname"><em>opaqueApplier</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Synchronizes ViewModels post-generation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">task</td><td>the completed task </td></tr>
+    <tr><td class="paramname">opaqueApplier</td><td>callback for UI synchronization </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -290,6 +338,46 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a48dd0becf3e611f590a748ddd8b5bea2" name="a48dd0becf3e611f590a748ddd8b5bea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48dd0becf3e611f590a748ddd8b5bea2">&#9670;&#160;</a></span>getSyncLevelThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Thread fr.softsf.sudokufx.view.main.LevelInteractionHandler.getSyncLevelThread </td>
+          <td>(</td>
+          <td class="paramtype">Consumer&lt; Boolean &gt;</td>          <td class="paramname"><span class="paramname"><em>opaqueApplier</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates and configures a daemon thread to finalize level synchronization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opaqueApplier</td><td>callback for UI synchronization </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the configured worker thread </dd></dl>
+<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler_a48dd0becf3e611f590a748ddd8b5bea2_cgraph.svg" width="504" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
 <a id="a29e64e8ea4e2af4bd644ce8d64ea979d" name="a29e64e8ea4e2af4bd644ce8d64ea979d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29e64e8ea4e2af4bd644ce8d64ea979d">&#9670;&#160;</a></span>handleEnd()</h2>
 
@@ -317,11 +405,11 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler_a29e64e8ea4e2af4bd644ce8d64ea979d_cgraph.svg" width="507" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div id="dynsection-4-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler_a29e64e8ea4e2af4bd644ce8d64ea979d_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -348,10 +436,10 @@ Static Private Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div id="dynsection-5-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler_acc27803017086da63f3b7f9da535815c_cgraph.svg" width="510" height="136"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 

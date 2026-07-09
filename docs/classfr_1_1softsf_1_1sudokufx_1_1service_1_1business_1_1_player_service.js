@@ -3,7 +3,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service =
     [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a4b56af9085575c1f508b0df66b3b3b51", null ],
     [ "createNewPlayerWithCurrent", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#ac0f3a0d2f48da7a2f874fef822cb35f7", null ],
     [ "deletePlayer", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a4aec2e87c12c7f1bf072a9da1c5ee9e4", null ],
-    [ "findOrThrow", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a90613affe76be522308478a5acb661ba", null ],
     [ "getPlayer", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#ae0e635b455827f61c43bf618b7374914", null ],
     [ "getPlayers", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#abb7b5c81662bbb92861d17b3645acba4", null ],
     [ "switchAndSelectNewPlayer", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#ab72e7c8208e8d621c87ca6df248ae42c", null ],

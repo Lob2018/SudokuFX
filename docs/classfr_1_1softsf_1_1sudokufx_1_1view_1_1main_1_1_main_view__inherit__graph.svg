@@ -142,25 +142,25 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="14" y="-582.5" font-family="Helvetica,sans-Serif" font-size="10.00"> BindingConfigurator bindingConfigurator, GenericListViewFactory genericListViewFactory,</text>
 <text text-anchor="start" x="14" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ToasterService toasterService, LevelInteractionHandler levelInteractionHandler, SpinnerService spinnerService)</text>
 <text text-anchor="start" x="4" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuBackupShow()</text>
+<text text-anchor="start" x="14" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleGameBackup()</text>
 <text text-anchor="start" x="4" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuHelpShow()</text>
+<text text-anchor="start" x="14" y="-538.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuBackupShow()</text>
 <text text-anchor="start" x="4" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuMaxiShow</text>
-<text text-anchor="start" x="14" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
-<text text-anchor="start" x="4" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuMiniShow()</text>
+<text text-anchor="start" x="14" y="-522.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuHelpShow()</text>
+<text text-anchor="start" x="4" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="14" y="-506.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuMaxiShow</text>
+<text text-anchor="start" x="14" y="-494.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ActionEvent event)</text>
 <text text-anchor="start" x="4" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuNewPlayer()</text>
+<text text-anchor="start" x="14" y="-478.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuMiniShow()</text>
 <text text-anchor="start" x="4" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuNewShow()</text>
+<text text-anchor="start" x="14" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuNewPlayer()</text>
 <text text-anchor="start" x="4" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuOptionsShow()</text>
+<text text-anchor="start" x="14" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuNewShow()</text>
 <text text-anchor="start" x="4" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuPlayerShow()</text>
+<text text-anchor="start" x="14" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuOptionsShow()</text>
 <text text-anchor="start" x="4" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="14" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuSolveShow()</text>
-<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 7 more...</text>
+<text text-anchor="start" x="14" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuPlayerShow()</text>
+<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 8 more...</text>
 <text text-anchor="start" x="5.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">void activeMenuManagerInitialization()</text>
 <text text-anchor="start" x="5.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

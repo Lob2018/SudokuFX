@@ -2,7 +2,9 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler 
 [
     [ "LevelInteractionHandler", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a3103a54a74ec08d88aaf0c8eb2ea2e76", null ],
     [ "applyLevel", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a329d9d8175dc720f37a7546dd4f980c9", null ],
+    [ "finalizeLevelState", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#ab0c2229840635461fd71e1446a0bef7d", null ],
     [ "getLevelWithId", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a5790fc56904861e9e5cfc4ce38c2d9a1", null ],
+    [ "getSyncLevelThread", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a48dd0becf3e611f590a748ddd8b5bea2", null ],
     [ "handleEnd", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a29e64e8ea4e2af4bd644ce8d64ea979d", null ],
     [ "handleStart", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#acc27803017086da63f3b7f9da535815c", null ],
     [ "notifyUser", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a9dfb9544ddbf4ffb4d55f31edf1590b7", null ],

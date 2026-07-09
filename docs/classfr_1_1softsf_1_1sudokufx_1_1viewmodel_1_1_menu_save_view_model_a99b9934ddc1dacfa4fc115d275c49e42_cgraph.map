@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.createABackup" name="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.createABackup">
+<area shape="rect" id="Node000001" title="Backup the player&#39;s game." alt="" coords="5,5,246,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a74002017cc6a85275aed0b298ecf2232" title="Loads games into the observable list." alt="" coords="294,5,511,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,24,278,24,278,29,246,29"/>
+</map>

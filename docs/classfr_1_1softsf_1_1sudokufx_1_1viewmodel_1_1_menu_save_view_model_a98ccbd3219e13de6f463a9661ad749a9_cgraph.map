@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.MenuSaveViewModel" name="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.MenuSaveViewModel">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,283,131"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="85,88,82,78,92,69,113,63,144,61,178,64,198,70,197,75,177,69,144,67,114,69,95,73,87,79,90,87"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#aba24d6de5b6e7dcd4d1ad46be452c356" title="Creates a localized StringBinding by concatenating the value of two keys." alt="" coords="340,5,586,64"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="238,85,324,64,325,70,239,90"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a8ce6e7af8609d5814b7c1635a89be8ad" title="Creates a simple localized StringBinding for the given key." alt="" coords="331,88,595,131"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="283,107,315,107,315,112,283,112"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a87d9ad3167195e57f2732a4bd91fa692" title="Refreshes the game list and re&#45;synchronizes the selected backup." alt="" coords="346,155,580,197"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="250,129,343,148,342,154,249,134"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a74002017cc6a85275aed0b298ecf2232" title="Loads games into the observable list." alt="" coords="666,121,884,164"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="580,161,650,153,651,159,580,166"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a8cf5fc063d8c7472d2c580f0f36c958d" title="Sets the selected backup to the one marked as selected, or defaults to the first in the list if none ..." alt="" coords="643,188,907,231"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="580,186,628,191,627,196,580,191"/>
+</map>

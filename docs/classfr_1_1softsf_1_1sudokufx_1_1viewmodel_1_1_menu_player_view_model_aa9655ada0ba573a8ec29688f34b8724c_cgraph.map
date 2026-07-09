@@ -1,20 +1,23 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MenuPlayerViewModel" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MenuPlayerViewModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,261,297,304"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="90,261,88,251,98,242,119,237,151,235,186,237,206,243,205,248,185,242,151,240,120,242,100,247,93,253,95,260"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,295,297,337"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="90,295,88,284,98,275,119,270,151,268,186,270,206,277,205,282,185,276,151,273,120,275,100,280,93,286,95,293"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ab85707b9c1970d47449a515c65882ba9" title="Creates a localized binding by concatenating two keys." alt="" coords="351,5,603,64"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="164,260,193,220,234,170,285,118,343,74,351,69,354,74,346,78,289,122,238,174,197,223,169,263"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="162,293,188,247,229,188,281,127,311,99,343,74,350,70,353,74,346,78,315,103,285,131,233,192,193,250,166,296"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a74c09c6a0ee599311a4d665b4e86488b" title="Creates a localized binding combining a formatted message and suffix." alt="" coords="350,88,604,147"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="179,259,252,208,343,156,356,151,359,155,346,161,255,213,182,263"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="172,292,244,226,292,189,343,156,354,151,356,156,346,161,295,193,247,230,175,296"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#af4331b2f8f2bcf2558e9d281688015f2" title="Creates a formatted localized binding with player name argument." alt="" coords="350,171,604,229"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="237,258,343,231,344,236,239,263"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="205,292,344,239,363,232,365,237,346,244,207,297"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ad991246df2f102a8432071881b5fd5a7" title="Creates a simple localized binding for a given key." alt="" coords="363,253,591,312"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="297,280,347,280,347,285,297,285"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ae780866cb629a7b3fb902530ee8b4098" title="Loads players into the observable list." alt="" coords="364,336,590,379"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="248,302,367,329,365,335,247,307"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a8f8c1ded5be3fc82046472ea3fca63bb" title="Executes the provided action within a guarded block to prevent reentrant updates and state corruption..." alt="" coords="364,403,590,445"/>
-<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="186,302,258,345,346,388,364,395,362,400,344,393,255,350,184,307"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#add46cd4d4ea1ec7cb88a67a5f54f0a71" title="Sets the selected player to the one marked as selected or first in the list." alt="" coords="345,469,609,512"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="172,303,243,378,292,420,346,455,358,461,355,465,343,460,289,424,239,382,168,306"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="297,298,347,293,347,299,297,304"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ae780866cb629a7b3fb902530ee8b4098" title="Loads players into the observable list." alt="" coords="658,357,884,400"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="297,328,643,363,642,368,297,333"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a6e8fa34df63047e169ef52d3168a5de7" title="Refreshes the UI state by synchronizing the current player, toggling the switched signal,..." alt="" coords="371,387,583,429"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="230,335,385,379,384,385,229,340"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a8f8c1ded5be3fc82046472ea3fca63bb" title="Executes the provided action within a guarded block to prevent reentrant updates and state corruption..." alt="" coords="364,453,590,496"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="181,336,253,387,298,415,346,439,362,445,360,450,344,444,296,420,250,392,178,340"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#add46cd4d4ea1ec7cb88a67a5f54f0a71" title="Sets the selected player to the one marked as selected or first in the list." alt="" coords="345,520,609,563"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="170,336,199,373,240,419,290,466,346,506,356,511,354,516,343,510,286,470,236,423,195,377,166,339"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a062c453d8d6794a32f0f8246057d0604" title="Returns the name of the currently selected player." alt="" coords="657,96,885,139"/>
 <area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="604,115,641,115,641,120,604,120"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="583,395,643,389,643,394,584,400"/>
 </map>

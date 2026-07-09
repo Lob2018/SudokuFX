@@ -10,6 +10,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html", [
       [ "fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html", null ],
       [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html", null ],
+      [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuSaveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test.html", null ],
       [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html", null ],
       [ "fr.softsf.sudokufx.viewmodel.state.PlayerStateHolderUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html", null ]
     ] ],
@@ -79,6 +80,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.service.business.GameLevelService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html", null ],
     [ "fr.softsf.sudokufx.model.GameLevelUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.PlayerUTest.GamesCollectionTests", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test_1_1_games_collection_tests.html", null ],
+    [ "fr.softsf.sudokufx.service.business.GameService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service.html", null ],
     [ "fr.softsf.sudokufx.model.GameUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html", null ],
     [ "fr.softsf.sudokufx.config.database.GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html", null ],
     [ "fr.softsf.sudokufx.config.database.GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret_u_test.html", null ],
@@ -179,7 +181,6 @@ var hierarchy =
     [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", null ],
-    [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuSaveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.viewmodel.MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.viewmodel.MenuSolveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test.html", null ],
     [ "fr.softsf.sudokufx.model.MenuUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_u_test.html", null ],
@@ -229,6 +230,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlaySongTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test_1_1_play_song_tests.html", null ],
     [ "fr.softsf.sudokufx.common.util.math.PowerOfTen", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.math.PowerOfTenUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html", null ],
+    [ "fr.softsf.sudokufx.repository.util.RepositoryTools", "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html", null ],
     [ "RuntimeException", null, [
       [ "fr.softsf.sudokufx.common.exception.DatabaseIntegrityException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html", null ],
       [ "fr.softsf.sudokufx.common.exception.FolderCreationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html", null ],

@@ -149,11 +149,6 @@ Public Member Functions</h2></td></tr>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aaf0c1309bd33c202990b2cdeb3c3926f" id="r_aaf0c1309bd33c202990b2cdeb3c3926f"><td class="memItemLeft">static final String&#160;</td><td class="memItemRight"><a class="el" href="#aaf0c1309bd33c202990b2cdeb3c3926f">PLAYER_NOT_FOUND</a> = &quot;Player not found: &quot;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a90613affe76be522308478a5acb661ba" id="r_a90613affe76be522308478a5acb661ba"><td class="memItemLeft">private&lt; T, K &gt; T&#160;</td><td class="memItemRight"><a class="el" href="#a90613affe76be522308478a5acb661ba">findOrThrow</a> (CrudRepository&lt; T, K &gt; repo, K k, String entityName)</td></tr>
-<tr class="memdesc:a90613affe76be522308478a5acb661ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an entity by its identifier from the provided repository or throws an exception if not found.  <br /></td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aba49426ee6f1106aeb7cac16ebd06e91" id="r_aba49426ee6f1106aeb7cac16ebd06e91"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aba49426ee6f1106aeb7cac16ebd06e91">updatePlayerSelection</a> (long playerId, boolean selected)</td></tr>
@@ -327,7 +322,7 @@ Unselects the previous player. </li>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service_ac0f3a0d2f48da7a2f874fef822cb35f7_cgraph.svg" width="100%" height="583"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service_ac0f3a0d2f48da7a2f874fef822cb35f7_cgraph.svg" width="100%" height="533"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
 </div>
@@ -368,60 +363,6 @@ Unselects the previous player. </li>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service_a4aec2e87c12c7f1bf072a9da1c5ee9e4_cgraph.svg" width="100%" height="515"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
-
-</div>
-</div>
-<a id="a90613affe76be522308478a5acb661ba" name="a90613affe76be522308478a5acb661ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90613affe76be522308478a5acb661ba">&#9670;&#160;</a></span>findOrThrow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">private&lt; T, K &gt; T fr.softsf.sudokufx.service.business.PlayerService.findOrThrow </td>
-          <td>(</td>
-          <td class="paramtype">CrudRepository&lt; T, K &gt;</td>          <td class="paramname"><span class="paramname"><em>repo</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">K</td>          <td class="paramname"><span class="paramname"><em>k</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String</td>          <td class="paramname"><span class="paramname"><em>entityName</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel package">package</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Retrieves an entity by its identifier from the provided repository or throws an exception if not found. </p>
-<p>This utility method standardizes error handling across the service layer when resolving database dependencies. It ensures that required entities are managed within the current transaction and throws a consistent exception if they are missing.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">&lt;T&gt;</td><td>the type of the entity </td></tr>
-    <tr><td class="paramname">&lt;K&gt;</td><td>the type of the entity identifier </td></tr>
-    <tr><td class="paramname">repo</td><td>the <code><a class="el" href="">CrudRepository</a></code> used to query the entity </td></tr>
-    <tr><td class="paramname">k</td><td>the identifier of the entity to retrieve </td></tr>
-    <tr><td class="paramname">entityName</td><td>a descriptive name of the entity, used for error message construction </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the managed entity instance </dd></dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if the entity with the specified identifier does not exist </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
