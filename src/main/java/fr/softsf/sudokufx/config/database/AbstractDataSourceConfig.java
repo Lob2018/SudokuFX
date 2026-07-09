@@ -28,6 +28,9 @@ import static fr.softsf.sudokufx.common.enums.AppPaths.DATABASE_MIGRATION_PATH;
  */
 abstract class AbstractDataSourceConfig {
 
+    private static final String SQL_VALIDATE_LEVEL_COUNT =
+            "SELECT COUNT(DISTINCT LEVEL) FROM gamelevel";
+
     private String jdbcUrl;
     private String poolName;
 
@@ -127,9 +130,8 @@ abstract class AbstractDataSourceConfig {
      *     occurs
      */
     private void validateDatabaseState(DataSource dataSource) {
-        String query = "SELECT COUNT(DISTINCT LEVEL) FROM gamelevel";
         try (var connection = dataSource.getConnection();
-                var preparedStatement = connection.prepareStatement(query);
+                var preparedStatement = connection.prepareStatement(SQL_VALIDATE_LEVEL_COUNT);
                 var resultSet = preparedStatement.executeQuery()) {
             if (resultSet.next()) {
                 int count = resultSet.getInt(1);
