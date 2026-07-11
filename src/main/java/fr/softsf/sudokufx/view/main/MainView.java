@@ -699,7 +699,6 @@ public final class MainView implements IMainView {
                                     .getActiveMenu()
                                     .get()
                                     .equals(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP)) {
-                                System.out.println("## Liste màj");
                                 menuSaveViewModel.refreshGames();
                             }
                         });
