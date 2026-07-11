@@ -682,6 +682,15 @@ public final class MainView implements IMainView {
                 menuSaveButtonBackupText, menuSaveViewModel.backupTextProperty());
         genericListViewFactory.configureGameListView(
                 menuSaveListView, menuSaveClipListView, menuSaveViewModel);
+        menuSaveViewModel
+                .selectedBackupProperty()
+                .addListener(
+                        (_, oldGame, newGame) -> {
+                            if (newGame != null && !newGame.equals(oldGame)) {
+                                menuSaveViewModel.restoreABackup(newGame);
+                                restoreCurrentGridLevelFromModel();
+                            }
+                        });
     }
 
     /**

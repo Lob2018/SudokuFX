@@ -131,16 +131,54 @@ public class GameService {
         gameRepository.save(newGame);
     }
 
+    /**
+     * Internal utility to retrieve a game entity by its identifier.
+     *
+     * @param gameId the identifier of the game to retrieve
+     * @return the found game entity
+     * @throws IllegalArgumentException if the game does not exist
+     */
+    private Game getGameOrThrow(long gameId) {
+        return gameRepository
+                .findById(gameId)
+                .orElseThrow(
+                        () ->
+                                ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                                        GAME_NOT_FOUND + gameId));
+    }
+
     /** Deletes a game entity. */
     @Transactional
     public void deleteGame(long gameId) {
-        Game game =
-                gameRepository
-                        .findById(gameId)
-                        .orElseThrow(
-                                () ->
-                                        ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                                                GAME_NOT_FOUND + gameId));
-        gameRepository.delete(game);
+        gameRepository.delete(getGameOrThrow(gameId));
+    }
+
+    /**
+     * Internal utility to update game selection state and persist changes.
+     *
+     * @param gameId the identifier of the game to update
+     * @param selected the new selection state
+     */
+    private void updateGameSelection(long gameId, boolean selected) {
+        Game game = getGameOrThrow(gameId);
+        game.setSelected(selected);
+        gameRepository.save(game);
+    }
+
+    /**
+     * Atomically switches the selected game status.
+     *
+     * <p>Ensures data consistency by unselecting the previous game and selecting the new one within
+     * a single database transaction.
+     *
+     * @param oldGameId the identifier of the game to be unselected
+     * @param newGameId the identifier of the game to be selected
+     * @throws IllegalArgumentException if either game is not found
+     * @throws jakarta.validation.ConstraintViolationException if validation fails
+     */
+    @Transactional
+    public void switchAndSelectNewGame(long oldGameId, long newGameId) {
+        updateGameSelection(oldGameId, false);
+        updateGameSelection(newGameId, true);
     }
 }

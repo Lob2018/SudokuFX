@@ -98,8 +98,7 @@ public class GenericListViewFactory {
         Objects.requireNonNull(viewModel, "viewModel must not be null");
         setupListViewClip(listView, clipView);
         listView.setItems(
-                Objects.requireNonNull(
-                        viewModel.getBackups(), "getBackups() must not return null"));
+                Objects.requireNonNull(viewModel.getGames(), "getGames() must not return null"));
         listView.setCellFactory(
                 param ->
                         new GenericDtoListCell<>(

@@ -120,7 +120,7 @@ class MenuSaveViewModelUTest extends AbstractPlayerStateTest {
 
     @Test
     void backupsListShouldBeInitializedWithExpectedBackups() {
-        ObservableList<GameDto> backups = viewModel.getBackups();
+        ObservableList<GameDto> backups = viewModel.getGames();
         assertEquals(1, backups.size(), "Backups list should contain 1 entries");
         boolean hasSelected = backups.stream().anyMatch(GameDto::selected);
         assertTrue(hasSelected, "At least one backup should be marked as selected");

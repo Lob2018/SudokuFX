@@ -42,7 +42,7 @@ public final class MenuSaveViewModel {
     private final PlayerStateHolder playerStateHolder;
     private final GameService gameService;
 
-    private final ObservableList<GameDto> backups = FXCollections.observableArrayList();
+    private final ObservableList<GameDto> games = FXCollections.observableArrayList();
     private final ObjectProperty<GameDto> selectedBackup = new SimpleObjectProperty<>();
 
     private final StringBinding saveAccessibleText;
@@ -143,15 +143,15 @@ public final class MenuSaveViewModel {
 
     /** Loads games into the observable list. */
     private void loadGames() {
-        backups.clear();
+        games.clear();
         PlayerDto player = playerStateHolder.getCurrentPlayer();
         if (player != null) {
-            backups.add(player.selectedGame());
+            games.add(player.selectedGame());
             List<GameDto> otherGames = gameService.getGames(player.playerid()).stream().toList();
             if (otherGames.isEmpty()) {
                 return;
             }
-            backups.addAll(otherGames);
+            games.addAll(otherGames);
         }
     }
 
@@ -160,13 +160,13 @@ public final class MenuSaveViewModel {
      * if none are selected.
      */
     private void setSelectedBackup() {
-        if (backups.isEmpty()) {
+        if (games.isEmpty()) {
             return;
         }
-        backups.stream()
+        games.stream()
                 .filter(GameDto::selected)
                 .findFirst()
-                .ifPresentOrElse(selectedBackup::set, () -> selectedBackup.set(backups.getFirst()));
+                .ifPresentOrElse(selectedBackup::set, () -> selectedBackup.set(games.getFirst()));
     }
 
     @SuppressFBWarnings(
@@ -174,8 +174,8 @@ public final class MenuSaveViewModel {
             justification =
                     "JavaFX properties are intentionally exposed for bindings and listeners;"
                             + " defensive copies break UI reactivity.")
-    public ObservableList<GameDto> getBackups() {
-        return backups;
+    public ObservableList<GameDto> getGames() {
+        return games;
     }
 
     @SuppressFBWarnings(
@@ -364,7 +364,25 @@ public final class MenuSaveViewModel {
                 Objects.requireNonNull(playerDto.selectedGame(), "Selected game cannot be null");
         gameService.createNewGameWithCurrent(selectedGame, playerDto.playerid());
         playerStateHolder.refreshCurrentPlayer();
-        loadGames();
+        refreshGames();
+    }
+
+    /**
+     * Restores a specific game backup.
+     *
+     * <p>Switches the active selection to the provided game and refreshes the inventory.
+     *
+     * @param gameToRestore the target game to restore; must not be null.
+     * @throws NullPointerException if the current player's game context is missing.
+     */
+    public void restoreABackup(GameDto gameToRestore) {
+        GameDto gameDto =
+                Objects.requireNonNull(
+                        playerStateHolder.getCurrentPlayer().selectedGame(),
+                        "Current player's game cannot be null");
+        gameService.switchAndSelectNewGame(gameDto.gameid(), gameToRestore.gameid());
+        playerStateHolder.refreshCurrentPlayer();
+        refreshGames();
     }
 
     public void deleteABackup(GameDto gameDto) {

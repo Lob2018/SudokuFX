@@ -174,7 +174,7 @@ class GenericListViewFactoryUTest {
         ObservableList<GameDto> backups = FXCollections.observableArrayList(game1, game2);
         SimpleObjectProperty<GameDto> selected = new SimpleObjectProperty<>(null);
         MenuSaveViewModel viewModel = mock(MenuSaveViewModel.class);
-        when(viewModel.getBackups()).thenReturn(backups);
+        when(viewModel.getGames()).thenReturn(backups);
         when(viewModel.selectedBackupProperty()).thenReturn(selected);
         ListView<GameDto> listView = new ListView<>();
         Rectangle clip = new Rectangle();
@@ -191,7 +191,7 @@ class GenericListViewFactoryUTest {
     @SuppressWarnings("java:S5778")
     void givenNullArguments_whenConfigureGameListView_thenThrowsNullPointerException() {
         MenuSaveViewModel dummy = mock(MenuSaveViewModel.class);
-        when(dummy.getBackups()).thenReturn(FXCollections.emptyObservableList());
+        when(dummy.getGames()).thenReturn(FXCollections.emptyObservableList());
         when(dummy.selectedBackupProperty()).thenReturn(new SimpleObjectProperty<>());
         when(dummy.cellDeleteAccessibleTextProperty())
                 .thenReturn(
