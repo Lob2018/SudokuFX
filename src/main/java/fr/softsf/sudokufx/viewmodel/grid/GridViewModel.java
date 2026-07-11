@@ -85,6 +85,8 @@ public class GridViewModel {
 
     private final BooleanProperty generating = new SimpleBooleanProperty(false);
 
+    private final BooleanProperty gridChanged = new SimpleBooleanProperty(false);
+
     /**
      * Returns the generating status property for binding the UI spinner.
      *
@@ -109,6 +111,20 @@ public class GridViewModel {
                             + " defensive copies break UI reactivity.")
     public ReadOnlyBooleanProperty victoryProperty() {
         return victory;
+    }
+
+    /**
+     * Returns the grid change status property.
+     *
+     * @return the gridChanged property
+     */
+    @edu.umd.cs.findbugs.annotations.SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
+    public ReadOnlyBooleanProperty gridChangedProperty() {
+        return gridChanged;
     }
 
     /** Resets the desired possibilities to the default state. */
@@ -231,6 +247,9 @@ public class GridViewModel {
     /**
      * Synchronizes the grid state and manages side effects based on the current application mode.
      *
+     * <p>Triggers a toggle on the {@link #gridChangedProperty()} to notify observers of any cell
+     * modification.
+     *
      * @param cellVM the cell view model that triggered the change
      */
     private void handleCellTextChange(GridCellViewModel cellVM) {
@@ -242,6 +261,7 @@ public class GridViewModel {
         } else {
             applyStandardPlayFlow();
         }
+        gridChanged.set(!gridChanged.get());
     }
 
     /**
@@ -683,6 +703,9 @@ public class GridViewModel {
     /**
      * Applies the generated grid data to the player state and UI cells.
      *
+     * <p>Triggers a toggle on the {@link #gridChangedProperty()} to notify observers that a new
+     * grid has been generated and applied.
+     *
      * @param level current difficulty level
      * @param grillesCrees data containing the solved and unsolved grids
      * @return the percentage of possibilities or -1 if the generation failed
@@ -695,6 +718,7 @@ public class GridViewModel {
         }
         persistNewGame(level, grillesCrees);
         setValues(iGridConverter.intArrayToList(grillesCrees.grilleAResoudre()), true);
+        gridChanged.set(!gridChanged.get());
         return percentage;
     }
 

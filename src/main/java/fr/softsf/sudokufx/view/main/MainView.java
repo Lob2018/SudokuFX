@@ -644,8 +644,8 @@ public final class MainView implements IMainView {
     /**
      * Initializes bindings and event listeners for the save menu components. Binds accessibility
      * texts, tooltips, and labels to the ViewModel. Synchronizes the selected backup between the
-     * ListView and the ViewModel. Sets up the ListView with custom backup cells and refreshes UI
-     * state.
+     * ListView and the ViewModel. Sets up the ListView with custom backup cells, registers grid
+     * change listeners for automatic refresh, and refreshes UI state.
      */
     private void saveMenuInitialization() {
         bindingConfigurator.configureButton(
@@ -689,6 +689,18 @@ public final class MainView implements IMainView {
                             if (newGame != null && !newGame.equals(oldGame)) {
                                 menuSaveViewModel.restoreABackup(newGame);
                                 restoreCurrentGridLevelFromModel();
+                            }
+                        });
+        gridViewModel
+                .gridChangedProperty()
+                .addListener(
+                        (_, _, _) -> {
+                            if (activeMenuOrSubmenuViewModel
+                                    .getActiveMenu()
+                                    .get()
+                                    .equals(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP)) {
+                                System.out.println("## Liste màj");
+                                menuSaveViewModel.refreshGames();
                             }
                         });
     }
@@ -1372,15 +1384,15 @@ public final class MainView implements IMainView {
     }
 
     /**
-     * Activates the BACKUP menu, refreshes the backup list to ensure the displayed data is
-     * up-to-date, and sets focus on the save button to facilitate keyboard navigation and
-     * accessibility.
+     * Activates the BACKUP menu, refreshes the backup list, and sets focus on the save button to
+     * facilitate keyboard navigation and accessibility.
      */
     @FXML
     public void handleMenuBackupShow() {
         activeMenuOrSubmenuViewModel.setActiveMenu(ActiveMenuOrSubmenuViewModel.ActiveMenu.BACKUP);
         menuSaveListView.refresh();
         menuSaveButtonSave.requestFocus();
+        menuSaveViewModel.refreshGames();
     }
 
     /** Activates the OPTIONS menu and sets focus on the options button. */
