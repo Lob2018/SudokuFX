@@ -9,6 +9,7 @@ import java.text.MessageFormat;
 import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 import javafx.beans.binding.StringBinding;
 import javafx.scene.control.Alert;
@@ -24,8 +25,6 @@ import org.apache.logging.log4j.internal.annotation.SuppressFBWarnings;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import fr.softsf.sudokufx.common.enums.PlayerConstants;
-import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.view.component.MyAlert;
 
 /**
@@ -57,6 +56,7 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
     private final Supplier<String> confirmationMessageSupplier;
 
     private final Consumer<T> onRemoveAction;
+    private final Predicate<T> isRemovable;
 
     /**
      * Constructs a new GenericDtoListCell.
@@ -73,6 +73,8 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
      * @param confirmationMessageBinding binding to provide the confirmation dialog message
      *     (localized)
      * @param displayTextFunction function to generate the display text for each item
+     * @param isRemovable predicate determining if the item can be removed
+     * @param onRemoveAction action to execute upon confirmed removal
      */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP2",
@@ -84,6 +86,7 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
             StringBinding confirmationTitleBinding,
             StringBinding confirmationMessageBinding,
             Function<T, String> displayTextFunction,
+            Predicate<T> isRemovable,
             Consumer<T> onRemoveAction) {
         this.listView = Objects.requireNonNull(listView);
         this.buttonAccessibleTextSupplier =
@@ -93,6 +96,7 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
         this.confirmationMessageSupplier =
                 () -> Objects.requireNonNull(confirmationMessageBinding).get();
         this.displayTextFunction = Objects.requireNonNull(displayTextFunction);
+        this.isRemovable = Objects.requireNonNull(isRemovable);
         this.onRemoveAction = Objects.requireNonNull(onRemoveAction);
         HBox.setHgrow(label, Priority.ALWAYS);
         hBox.setFocusTraversable(false);
@@ -111,8 +115,8 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
      * <p>If the item is not null, sets the label text and button behavior. If empty or null, clears
      * the cell's content and resets component visibility.
      *
-     * <p>For {@link PlayerDto} items with the name "—", the delete button is hidden and removed
-     * from the layout to prevent deletion of the anonymous player.
+     * <p>The visibility of the remove button is controlled by the provided {@code isRemovable}
+     * predicate, ensuring that protected items cannot be deleted.
      *
      * @param item the item to display
      * @param empty whether this cell is empty
@@ -131,12 +135,10 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
             String displayText = displayTextFunction.apply(item);
             label.setText(displayText);
             setGraphic(hBox);
-            boolean isAnonymous =
-                    (item instanceof PlayerDto playerDto)
-                            && PlayerConstants.ANONYMOUS_NAME.getValue().equals(playerDto.name());
-            button.setVisible(!isAnonymous);
-            button.setManaged(!isAnonymous);
-            if (!isAnonymous) {
+            boolean canRemove = isRemovable.test(item);
+            button.setVisible(canRemove);
+            button.setManaged(canRemove);
+            if (canRemove) {
                 setAccessibleText(displayText);
                 String buttonTextFormatted =
                         MessageFormat.format(buttonAccessibleTextSupplier.get(), displayText);

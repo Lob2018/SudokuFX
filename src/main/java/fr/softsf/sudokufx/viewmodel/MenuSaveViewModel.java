@@ -376,16 +376,31 @@ public final class MenuSaveViewModel {
      * @throws NullPointerException if the current player's game context is missing.
      */
     public void restoreABackup(GameDto gameToRestore) {
-        GameDto gameDto =
-                Objects.requireNonNull(
-                        playerStateHolder.getCurrentPlayer().selectedGame(),
-                        "Current player's game cannot be null");
+        GameDto gameDto = getCurrentSelectedGameDto();
         gameService.switchAndSelectNewGame(gameDto.gameid(), gameToRestore.gameid());
         playerStateHolder.refreshCurrentPlayer();
         refreshGames();
     }
 
-    public void deleteABackup(GameDto gameDto) {
-        // TODO work in progress (latest selected)
+    /**
+     * Deletes the specified game backup and refreshes the list.
+     *
+     * @param gameToDelete game backup to be removed; must not be null
+     */
+    public void deleteABackup(GameDto gameToDelete) {
+        gameService.deleteGame(gameToDelete.gameid());
+        refreshGames();
+    }
+
+    /**
+     * Retrieves the currently selected game for the active player.
+     *
+     * @return the active {@link GameDto}
+     * @throws NullPointerException if the player or their selected game is null
+     */
+    public GameDto getCurrentSelectedGameDto() {
+        return Objects.requireNonNull(
+                playerStateHolder.getCurrentPlayer().selectedGame(),
+                "Current player's game cannot be null");
     }
 }

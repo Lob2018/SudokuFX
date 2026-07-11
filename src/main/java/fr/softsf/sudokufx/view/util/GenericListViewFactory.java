@@ -16,6 +16,7 @@ import javafx.scene.shape.Rectangle;
 
 import org.springframework.stereotype.Component;
 
+import fr.softsf.sudokufx.common.enums.PlayerConstants;
 import fr.softsf.sudokufx.common.util.MyDateTime;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
@@ -45,8 +46,8 @@ public class GenericListViewFactory {
     /**
      * Configures the {@link ListView} used in the player menu.
      *
-     * <p>Sets up clipping, populates the list with players, applies a custom cell factory, and
-     * synchronizes selection with the {@link MenuPlayerViewModel}.
+     * <p>Sets up clipping, populates the list with players, applies a custom cell factory with
+     * deletion restrictions, and synchronizes selection with the {@link MenuPlayerViewModel}.
      *
      * @param listView the ListView to configure (must not be {@code null})
      * @param clipView the Rectangle used for rounded clipping (must not be {@code null})
@@ -71,6 +72,10 @@ public class GenericListViewFactory {
                                 viewModel.cellConfirmationTitleProperty(),
                                 viewModel.cellConfirmationMessageProperty(),
                                 PlayerDto::name,
+                                playerDto ->
+                                        !PlayerConstants.ANONYMOUS_NAME
+                                                .getValue()
+                                                .equals(playerDto.name()),
                                 viewModel::deletePlayer));
         setupBidirectionalSelection(listView, viewModel.selectedPlayerProperty());
         Platform.runLater(
@@ -83,8 +88,9 @@ public class GenericListViewFactory {
     /**
      * Configures the {@link ListView} used in the save menu.
      *
-     * <p>Sets up clipping, populates the list with saved games, applies a custom cell factory, and
-     * synchronizes selection with the {@link MenuSaveViewModel}.
+     * <p>Sets up clipping, populates the list with saved games, applies a custom cell factory with
+     * deletion protection for the active session, and synchronizes selection with the {@link
+     * MenuSaveViewModel}.
      *
      * @param listView the ListView to configure (must not be {@code null})
      * @param clipView the Rectangle used for rounded clipping (must not be {@code null})
@@ -113,6 +119,12 @@ public class GenericListViewFactory {
                                     }
                                     return MyDateTime.INSTANCE.getFormatted(gameDto.updatedat());
                                 },
+                                gameDto ->
+                                        !gameDto.gameid()
+                                                .equals(
+                                                        viewModel
+                                                                .getCurrentSelectedGameDto()
+                                                                .gameid()),
                                 viewModel::deleteABackup));
         setupBidirectionalSelection(listView, viewModel.selectedBackupProperty());
         Platform.runLater(
