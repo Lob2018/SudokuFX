@@ -50,6 +50,7 @@ import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.common.enums.AppPaths;
 import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
+import fr.softsf.sudokufx.common.enums.PlayerConstants;
 import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
 import fr.softsf.sudokufx.common.interfaces.IMainView;
 import fr.softsf.sudokufx.common.interfaces.ISplashScreenView;
@@ -859,6 +860,18 @@ public final class MainView implements IMainView {
                                 Platform.runLater(this::synchronizeUIAfterPlayerSwitch));
         genericListViewFactory.configurePlayerListView(
                 menuPlayerListView, menuPlayerClipListView, menuPlayerViewModel);
+        menuPlayerButtonPlayerEdit
+                .disableProperty()
+                .bind(
+                        Bindings.createBooleanBinding(
+                                () -> {
+                                    var player = menuPlayerViewModel.selectedPlayerProperty().get();
+                                    return player != null
+                                            && PlayerConstants.ANONYMOUS_NAME
+                                                    .getValue()
+                                                    .equals(player.name());
+                                },
+                                menuPlayerViewModel.selectedPlayerProperty()));
     }
 
     /**
