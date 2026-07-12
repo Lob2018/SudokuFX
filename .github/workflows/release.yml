@@ -272,14 +272,14 @@ jobs:
         with:
           name: SudokuFX release v${{ env.POM_VERSION }}
           tag: v${{ env.POM_VERSION }}
-          prerelease: true
+          prerelease: false
           body: |
-            # 🧪 Early Access 🚧 Work in Progress
+            # 🎲 SudokuFX
 
             ✅ 🧩 Play challenging 9x9 puzzles
             ✅ 🤖️ Solve any 9x9 Sudoku grid
-            🚧 ✨ Create profiles
-            ❌ 💾 Save anytime
+            ✅ ✨ Create profiles
+            ✅ 💾 Save anytime
 
             ## MSI, DMG, and DEB Files
 
