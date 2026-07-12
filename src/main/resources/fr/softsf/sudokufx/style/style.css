@@ -259,6 +259,18 @@
     -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
 }
 
+.menuList .list-cell:first-in-list {
+    -fx-background-color: #FFFFFF;
+}
+
+.menuList .list-cell:first-in-list:focused {
+    -fx-background-radius: 1em;
+    -fx-background-color: #FFFFFF;
+    -fx-border-radius: .9em;
+    -fx-border-width: .2em;
+    -fx-border-color: radial-gradient(center 50% 150%, radius 100%, derive(#0C8CE9, -90%), derive(#0C8CE9, 55%));
+}
+
 .color-palette .hyperlink {
     -fx-font-size: .7em;
 }

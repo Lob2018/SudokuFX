@@ -12,6 +12,7 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import javafx.beans.binding.StringBinding;
+import javafx.css.PseudoClass;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -43,7 +44,8 @@ import fr.softsf.sudokufx.view.component.MyAlert;
 public final class GenericDtoListCell<T> extends ListCell<T> {
 
     private static final Logger LOG = LoggerFactory.getLogger(GenericDtoListCell.class);
-
+    private static final PseudoClass FIRST_PSEUDO_CLASS =
+            PseudoClass.getPseudoClass("first-in-list");
     private final HBox hBox = new HBox();
     private final Label label = new Label();
     private final Button button = new Button();
@@ -124,6 +126,7 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
     @Override
     protected void updateItem(T item, boolean empty) {
         super.updateItem(item, empty);
+        pseudoClassStateChanged(FIRST_PSEUDO_CLASS, false);
         if (empty || item == null) {
             setGraphic(null);
             setAccessibleText(null);
@@ -135,6 +138,9 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
             String displayText = displayTextFunction.apply(item);
             label.setText(displayText);
             setGraphic(hBox);
+            if (getIndex() == 0) {
+                pseudoClassStateChanged(FIRST_PSEUDO_CLASS, true);
+            }
             boolean canRemove = isRemovable.test(item);
             button.setVisible(canRemove);
             button.setManaged(canRemove);
