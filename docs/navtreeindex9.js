@@ -1,5 +1,16 @@
 var NAVTREEINDEX9 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html":[2,0,0,0,0,6,2,4],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a0eb10ea687d03a7106c18ecb81bdd4fb":[1,0,0,0,0,7,2,4,5],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a0eb10ea687d03a7106c18ecb81bdd4fb":[2,0,0,0,0,6,2,4,5],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a1545a8b5a73d481bc4a48ba8a6cb1b55":[1,0,0,0,0,7,2,4,1],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a1545a8b5a73d481bc4a48ba8a6cb1b55":[2,0,0,0,0,6,2,4,1],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a155a051e8a616922418efa519c3e8316":[1,0,0,0,0,7,2,4,6],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a155a051e8a616922418efa519c3e8316":[2,0,0,0,0,6,2,4,6],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a4d8e6e4c22908565406ec3bd603a394d":[1,0,0,0,0,7,2,4,8],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a4d8e6e4c22908565406ec3bd603a394d":[2,0,0,0,0,6,2,4,8],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a4f24da0b7a93ee5b66111c673dbf2f61":[1,0,0,0,0,7,2,4,0],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a4f24da0b7a93ee5b66111c673dbf2f61":[2,0,0,0,0,6,2,4,0],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31":[1,0,0,0,0,7,2,4,2],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31":[2,0,0,0,0,6,2,4,2],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a8b0b569fe624474d8fbb3765f11e1c00":[1,0,0,0,0,7,2,4,3],
@@ -238,16 +249,5 @@ var NAVTREEINDEX9 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ae28676472e877a08b6c8ce95a28a366a":[2,0,0,0,0,7,2,0,2,6,7],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html":[1,0,0,0,0,8,2,0,2,7],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html":[2,0,0,0,0,7,2,0,2,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a1f42ef270aa0002b735d31a0e2f09af6":[1,0,0,0,0,8,2,0,2,7,1],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a1f42ef270aa0002b735d31a0e2f09af6":[2,0,0,0,0,7,2,0,2,7,1],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a3b1accd89500caf5c6a432092bdba823":[1,0,0,0,0,8,2,0,2,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a3b1accd89500caf5c6a432092bdba823":[2,0,0,0,0,7,2,0,2,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a59067ce2d98a76a9c55084e595cc7477":[1,0,0,0,0,8,2,0,2,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a59067ce2d98a76a9c55084e595cc7477":[2,0,0,0,0,7,2,0,2,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html":[1,0,0,0,0,8,2,0,2,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html":[2,0,0,0,0,7,2,0,2,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html#a7c0691af946e6b76b7883f2e59ea1fa9":[1,0,0,0,0,8,2,0,2,0,0,4],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html#a7c0691af946e6b76b7883f2e59ea1fa9":[2,0,0,0,0,7,2,0,2,0,0,4],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html#a954e84dcb5456047945966861202dc8b":[1,0,0,0,0,8,2,0,2,0,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html#a954e84dcb5456047945966861202dc8b":[2,0,0,0,0,7,2,0,2,0,0,2]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a1f42ef270aa0002b735d31a0e2f09af6":[1,0,0,0,0,8,2,0,2,7,1]
 };

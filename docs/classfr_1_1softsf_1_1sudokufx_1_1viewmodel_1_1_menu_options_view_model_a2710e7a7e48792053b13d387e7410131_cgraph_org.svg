@@ -6,12 +6,12 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.optionsImageRoleDescriptionProperty Pages: 1 -->
 <svg width="191pt" height="70pt"
  viewBox="0.00 0.00 191.25 70.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 66)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 66)">
 <title>fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.optionsImageRoleDescriptionProperty</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Returns the reactive binding for the options image role description property.">
 <polygon fill="#999999" stroke="#666666" points="183.25,-44 0,-44 0,0 183.25,0 183.25,-44"/>
 <text text-anchor="start" x="8" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuOptionsViewModel.optionsImage</text>

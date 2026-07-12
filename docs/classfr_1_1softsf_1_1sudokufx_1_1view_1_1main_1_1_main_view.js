@@ -18,6 +18,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view =
     [ "handleGridOpacity", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a2b008de30122c5b136943bb03a8b09fe", null ],
     [ "handleLevelAction", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a92c208fc0f6234d3052ac0c7b971619f", null ],
     [ "handleMenuBackupShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7bc2d3401e4ef3125cf136ebd95a2273", null ],
+    [ "handleMenuEditPlayerName", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#aa1bcdaca3356c78d0f11c512eb3720fd", null ],
     [ "handleMenuHelpShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a5fb4cecc5b9992812b2e601b1ad82fe9", null ],
     [ "handleMenuMaxiShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7a5e9379f9400a112803ed3dcd19063d", null ],
     [ "handleMenuMiniShow", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a903f6d90ee4f2958cea06a59514ec696", null ],

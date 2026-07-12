@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.testing.unit.viewmodel.MenuMiniViewModelUTest.getStringBindingStringMap Pages: 1 -->
 <svg width="501pt" height="1130pt"
  viewBox="0.00 0.00 500.50 1130.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1126)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1126)">
 <title>fr.softsf.sudokufx.testing.unit.viewmodel.MenuMiniViewModelUTest.getStringBindingStringMap</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a44ab37e4046e8f241098b89b99318a63" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a44ab37e4046e8f241098b89b99318a63" target="_top" xlink:title="Returns the reactive binding for the backup button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="483.88,-1104 295.38,-1104 295.38,-1060 483.88,-1060 483.88,-1104"/>
 <text text-anchor="start" x="303.38" y="-1090.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="303.38" y="-1078.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.backupAccessible</text>
@@ -41,7 +41,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a24604acaf6c4431e995c301af88913e6" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a24604acaf6c4431e995c301af88913e6" target="_top" xlink:title="Returns the reactive binding for the backup button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="492.5,-1024 286.75,-1024 286.75,-992 492.5,-992 492.5,-1024"/>
 <text text-anchor="start" x="294.75" y="-1010.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="389.62" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.backupTooltipProperty</text>
@@ -60,7 +60,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ad05910dc7b6162af916048b7dcbe6878" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ad05910dc7b6162af916048b7dcbe6878" target="_top" xlink:title="Returns the reactive binding for the help button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="477.12,-956 302.12,-956 302.12,-912 477.12,-912 477.12,-956"/>
 <text text-anchor="start" x="310.12" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="310.12" y="-930.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.helpAccessible</text>
@@ -80,7 +80,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a918fc80965395290d03bb4b061ca6e9c" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a918fc80965395290d03bb4b061ca6e9c" target="_top" xlink:title="Returns the reactive binding for the help button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="485.75,-876 293.5,-876 293.5,-844 485.75,-844 485.75,-876"/>
 <text text-anchor="start" x="301.5" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="389.62" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.helpTooltipProperty</text>
@@ -99,7 +99,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#aa77d006b3b649f79a1c30444373f7c69" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#aa77d006b3b649f79a1c30444373f7c69" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="487.62,-808 291.62,-808 291.62,-764 487.62,-764 487.62,-808"/>
 <text text-anchor="start" x="299.62" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="299.62" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.languageAccessible</text>
@@ -119,7 +119,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ac44317ae972e2c50ff0eb6b51d2d24d4" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ac44317ae972e2c50ff0eb6b51d2d24d4" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="477.88,-728 301.38,-728 301.38,-684 477.88,-684 477.88,-728"/>
 <text text-anchor="start" x="309.38" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="309.38" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.languageTooltip</text>
@@ -139,7 +139,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ac962c57f81a4ea89d21dd66a3cca1c22" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ac962c57f81a4ea89d21dd66a3cca1c22" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s ISO text.">
 <polygon fill="white" stroke="#666666" points="479.38,-648 299.88,-648 299.88,-604 479.38,-604 479.38,-648"/>
 <text text-anchor="start" x="307.88" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="307.88" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.menuMiniButton</text>
@@ -159,7 +159,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a4b09dc4877f0c9c17bf025c22b77007b" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a4b09dc4877f0c9c17bf025c22b77007b" target="_top" xlink:title="Returns the reactive binding for the options button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="483.88,-568 295.38,-568 295.38,-524 483.88,-524 483.88,-568"/>
 <text text-anchor="start" x="303.38" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="303.38" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.optionsAccessible</text>
@@ -179,7 +179,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a5654c351a2aa65fcd96cd994e033f9de" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a5654c351a2aa65fcd96cd994e033f9de" target="_top" xlink:title="Returns the reactive binding for the options button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="474.12,-488 305.12,-488 305.12,-444 474.12,-444 474.12,-488"/>
 <text text-anchor="start" x="313.12" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="313.12" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.optionsTooltip</text>
@@ -199,7 +199,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a8451ee29da040a7c11b843c11b14246d" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a8451ee29da040a7c11b843c11b14246d" target="_top" xlink:title="Returns the reactive binding for the player button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="481.25,-408 298,-408 298,-364 481.25,-364 481.25,-408"/>
 <text text-anchor="start" x="306" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="306" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.playerAccessible</text>
@@ -219,7 +219,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a3a6777f890f24d093d94ee8b3e555eef" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a3a6777f890f24d093d94ee8b3e555eef" target="_top" xlink:title="Returns the reactive binding for the player button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="489.88,-328 289.38,-328 289.38,-296 489.88,-296 489.88,-328"/>
 <text text-anchor="start" x="297.38" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="389.62" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.playerTooltipProperty</text>
@@ -238,7 +238,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a449820dbe25fbba06711484997bb071f" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a449820dbe25fbba06711484997bb071f" target="_top" xlink:title="Returns the reactive binding for the show button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="479.75,-260 299.5,-260 299.5,-216 479.75,-216 479.75,-260"/>
 <text text-anchor="start" x="307.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="307.5" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.showAccessible</text>
@@ -258,7 +258,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a6518f36192a4e7504ae83b1594e04ab6" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a6518f36192a4e7504ae83b1594e04ab6" target="_top" xlink:title="Returns the reactive binding for the show button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="488.38,-180 290.88,-180 290.88,-148 488.38,-148 488.38,-180"/>
 <text text-anchor="start" x="298.88" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="389.62" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.showTooltipProperty</text>
@@ -277,7 +277,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#afe70fbe2104168ec3dce78ee0dad50d0" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#afe70fbe2104168ec3dce78ee0dad50d0" target="_top" xlink:title="Returns the reactive binding for the solve button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="479.75,-112 299.5,-112 299.5,-68 479.75,-68 479.75,-112"/>
 <text text-anchor="start" x="307.5" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="307.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.solveAccessible</text>
@@ -297,7 +297,7 @@
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ae3de397d22f6ed600b63d880731222cf" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ae3de397d22f6ed600b63d880731222cf" target="_top" xlink:title="Returns the reactive binding for the solve button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="488.38,-32 290.88,-32 290.88,0 488.38,0 488.38,-32"/>
 <text text-anchor="start" x="298.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="389.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.solveTooltipProperty</text>

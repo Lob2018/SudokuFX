@@ -10,6 +10,7 @@ var dir_12779a24be85975a4455f90e90173dd6 =
     [ "package-info.java", "common_2enums_2package-info_8java.html", null ],
     [ "PlayerConstants.java", "_player_constants_8java.html", "_player_constants_8java" ],
     [ "PlayerNameStatus.java", "_player_name_status_8java.html", "_player_name_status_8java" ],
+    [ "PlayerSaveMode.java", "_player_save_mode_8java.html", "_player_save_mode_8java" ],
     [ "ScreenSize.java", "_screen_size_8java.html", "_screen_size_8java" ],
     [ "ToastLevels.java", "_toast_levels_8java.html", "_toast_levels_8java" ],
     [ "Urls.java", "_urls_8java.html", "_urls_8java" ]

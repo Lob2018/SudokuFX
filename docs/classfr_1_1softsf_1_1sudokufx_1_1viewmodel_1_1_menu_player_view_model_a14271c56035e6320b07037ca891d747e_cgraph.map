@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.prepareUpdatePlayerNameField" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.prepareUpdatePlayerNameField">
+<area shape="rect" id="Node000001" title="Prepares the name text field for current player." alt="" coords="5,31,249,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a20f7f738b189732aea75f18de4341d29" title="Centralizes UI initialization for player name input." alt="" coords="297,5,572,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,44,281,41,281,46,249,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a062c453d8d6794a32f0f8246057d0604" title="Returns the name of the currently selected player." alt="" coords="320,72,548,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,71,305,77,304,82,249,76"/>
+</map>

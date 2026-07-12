@@ -6,12 +6,12 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.MenuNewViewModel.MenuNewViewModel Pages: 1 -->
 <svg width="444pt" height="90pt"
  viewBox="0.00 0.00 443.50 90.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 86)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 86)">
 <title>fr.softsf.sudokufx.viewmodel.MenuNewViewModel.MenuNewViewModel</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Constructs a new MenuNewViewModel, initializes localized bindings, and triggers an asynchronous versi...">
 <polygon fill="#999999" stroke="#666666" points="203.5,-57 0,-57 0,-25 203.5,-25 203.5,-57"/>
 <text text-anchor="start" x="8" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="101.75" y="-31.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuNewViewModel.MenuNewViewModel</text>

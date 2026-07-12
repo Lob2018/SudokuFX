@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevelForTests Pages: 1 -->
 <svg width="843pt" height="226pt"
  viewBox="0.00 0.00 843.00 226.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 222)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 222)">
 <title>fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridWithLevelForTests</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -154,7 +154,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" target="_top" xlink:title="Returns the property representing the editable state of the cell.">
 <polygon fill="white" stroke="#666666" points="834.62,-150 661.88,-150 661.88,-118 834.62,-118 834.62,-150"/>
 <text text-anchor="start" x="669.88" y="-136.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="748.25" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.editableProperty</text>
@@ -173,7 +173,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" target="_top" xlink:title="Returns the property representing the raw unformatted text of the cell.">
 <polygon fill="white" stroke="#666666" points="835,-82 661.5,-82 661.5,-50 835,-50 835,-82"/>
 <text text-anchor="start" x="669.5" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="748.25" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.rawTextProperty</text>

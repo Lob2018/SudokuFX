@@ -131,13 +131,19 @@ document.addEventListener('DOMContentLoaded', () => {
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0fd457752b40e1cc02053e6485491b6f" id="r_a0fd457752b40e1cc02053e6485491b6f"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a0fd457752b40e1cc02053e6485491b6f">MenuNewViewModel</a> (<a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html">VersionService</a> versionService)</td></tr>
+<tr class="memdesc:a0fd457752b40e1cc02053e6485491b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <code class="JavaDocCode">MenuNewViewModel</code>, initializes localized bindings, and triggers an asynchronous version check.  <br /></td></tr>
 <tr class="memitem:a1f43952ea33a4b60f97869fe76b831cd" id="r_a1f43952ea33a4b60f97869fe76b831cd"><td class="memItemLeft">ReadOnlyBooleanProperty&#160;</td><td class="memItemRight"><a class="el" href="#a1f43952ea33a4b60f97869fe76b831cd">isOutOfDateProperty</a> ()</td></tr>
 <tr class="memdesc:a1f43952ea33a4b60f97869fe76b831cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the application is out-of-date.  <br /></td></tr>
 <tr class="memitem:a744676990438ca2f6e9d2f5bd25b9c22" id="r_a744676990438ca2f6e9d2f5bd25b9c22"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a744676990438ca2f6e9d2f5bd25b9c22">maxiNewAccessibleTextProperty</a> ()</td></tr>
+<tr class="memdesc:a744676990438ca2f6e9d2f5bd25b9c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reactive binding for the maxi "New" button's accessible text.  <br /></td></tr>
 <tr class="memitem:a48cee7ba9894ed8b7eda06deb162877c" id="r_a48cee7ba9894ed8b7eda06deb162877c"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a48cee7ba9894ed8b7eda06deb162877c">maxiNewTextProperty</a> ()</td></tr>
+<tr class="memdesc:a48cee7ba9894ed8b7eda06deb162877c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reactive binding for the maxi "New" button's label text.  <br /></td></tr>
 <tr class="memitem:a8e69dcfb65d95987ebc4f3a619bbe69c" id="r_a8e69dcfb65d95987ebc4f3a619bbe69c"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a8e69dcfb65d95987ebc4f3a619bbe69c">maxiNewTooltipProperty</a> ()</td></tr>
+<tr class="memdesc:a8e69dcfb65d95987ebc4f3a619bbe69c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reactive binding for the maxi "New" button's tooltip.  <br /></td></tr>
 <tr class="memitem:ac797f09c3891a7667ddf246c15bf36cb" id="r_ac797f09c3891a7667ddf246c15bf36cb"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#ac797f09c3891a7667ddf246c15bf36cb">newAccessibleTextProperty</a> ()</td></tr>
+<tr class="memdesc:ac797f09c3891a7667ddf246c15bf36cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reactive binding for the maxi "New" button's tooltip.  <br /></td></tr>
 <tr class="memitem:a9a47f3cef3d973876e93e5faf9f3f24c" id="r_a9a47f3cef3d973876e93e5faf9f3f24c"><td class="memItemLeft">StringBinding&#160;</td><td class="memItemRight"><a class="el" href="#a9a47f3cef3d973876e93e5faf9f3f24c">newTooltipProperty</a> ()</td></tr>
+<tr class="memdesc:a9a47f3cef3d973876e93e5faf9f3f24c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reactive binding for the mini "New" button's tooltip.  <br /></td></tr>
 <tr class="memitem:a762b24e9ed0420bf513821356d1f3d5b" id="r_a762b24e9ed0420bf513821356d1f3d5b"><td class="memItemLeft">ReadOnlyStringProperty&#160;</td><td class="memItemRight"><a class="el" href="#a762b24e9ed0420bf513821356d1f3d5b">statusMessageProperty</a> ()</td></tr>
 <tr class="memdesc:a762b24e9ed0420bf513821356d1f3d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the current status message from the version check.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -181,6 +187,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs a new <code class="JavaDocCode">MenuNewViewModel</code>, initializes localized bindings, and triggers an asynchronous version check. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">versionService</td><td>the service used to verify application version status </td></tr>
+  </table>
+  </dd>
+</dl>
 <div id="dynsection-1" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
@@ -289,6 +303,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the reactive binding for the maxi "New" button's accessible text. </p>
+<dl class="section return"><dt>Returns</dt><dd>the StringBinding for the accessible text </dd></dl>
 <div id="dynsection-2" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
@@ -312,6 +329,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the reactive binding for the maxi "New" button's label text. </p>
+<dl class="section return"><dt>Returns</dt><dd>the StringBinding for the button text </dd></dl>
 <div id="dynsection-3" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-3-summary" class="dynsummary" style="display:block;">
 </div>
@@ -335,6 +355,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the reactive binding for the maxi "New" button's tooltip. </p>
+<dl class="section return"><dt>Returns</dt><dd>the StringBinding for the tooltip </dd></dl>
 <div id="dynsection-4" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-4-summary" class="dynsummary" style="display:block;">
 </div>
@@ -358,6 +381,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the reactive binding for the maxi "New" button's tooltip. </p>
+<dl class="section return"><dt>Returns</dt><dd>the StringBinding for the tooltip </dd></dl>
 <div id="dynsection-5" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-5-summary" class="dynsummary" style="display:block;">
 </div>
@@ -381,6 +407,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the reactive binding for the mini "New" button's tooltip. </p>
+<dl class="section return"><dt>Returns</dt><dd>the StringBinding for the tooltip </dd></dl>
 <div id="dynsection-6" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
 <div id="dynsection-6-summary" class="dynsummary" style="display:block;">
 </div>

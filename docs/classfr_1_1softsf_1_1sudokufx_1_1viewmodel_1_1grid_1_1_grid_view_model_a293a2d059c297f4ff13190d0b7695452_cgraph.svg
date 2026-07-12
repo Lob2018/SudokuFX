@@ -49,7 +49,7 @@
 <script type="application/ecmascript">
 var viewWidth = 649;
 var viewHeight = 321;
-var sectionId = 'dynsection-7';
+var sectionId = 'dynsection-10';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -200,7 +200,7 @@ var sectionId = 'dynsection-7';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" target="_top" xlink:title="Returns the property representing the editable state of the cell.">
 <polygon fill="white" stroke="#666666" points="640.88,-100 468.12,-100 468.12,-68 640.88,-68 640.88,-100"/>
 <text text-anchor="start" x="476.12" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="554.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.editableProperty</text>
@@ -219,7 +219,7 @@ var sectionId = 'dynsection-7';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" target="_top" xlink:title="Returns the property representing the raw unformatted text of the cell.">
 <polygon fill="white" stroke="#666666" points="641.25,-32 467.75,-32 467.75,0 641.25,0 641.25,-32"/>
 <text text-anchor="start" x="475.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="554.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.rawTextProperty</text>

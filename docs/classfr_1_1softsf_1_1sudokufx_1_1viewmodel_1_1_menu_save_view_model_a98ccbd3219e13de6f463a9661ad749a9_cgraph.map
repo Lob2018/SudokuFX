@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.MenuSaveViewModel" name="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.MenuSaveViewModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,283,131"/>
+<area shape="rect" id="Node000001" title="Initializes the MenuSaveViewModel with necessary infrastructure and reactive bindings." alt="" coords="5,88,283,131"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="85,88,82,78,92,69,113,63,144,61,178,64,198,70,197,75,177,69,144,67,114,69,95,73,87,79,90,87"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#aba24d6de5b6e7dcd4d1ad46be452c356" title="Creates a localized StringBinding by concatenating the value of two keys." alt="" coords="340,5,586,64"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="238,85,324,64,325,70,239,90"/>

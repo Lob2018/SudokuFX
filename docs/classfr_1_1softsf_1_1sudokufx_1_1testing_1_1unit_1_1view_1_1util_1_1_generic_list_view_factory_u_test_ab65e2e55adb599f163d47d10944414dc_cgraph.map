@@ -1,15 +1,15 @@
 <map id="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigurePlayerListView_thenThrowsNullPointerException" name="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigurePlayerListView_thenThrowsNullPointerException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,243,405,301"/>
 <area shape="poly" id="edge9_Node000001_Node000001" title=" " alt="" coords="131,242,132,232,146,223,170,218,205,216,246,219,271,226,269,231,245,224,205,221,171,223,148,228,137,235,136,243"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" title=" " alt="" coords="453,29,733,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" title="Returns the reactive binding for the cell button accessible text property." alt="" coords="453,29,733,88"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,240,332,169,390,131,451,98,464,92,466,97,454,102,393,136,335,174,243,244"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" title=" " alt="" coords="467,136,719,195"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" title="Returns the reactive binding for the cell confirmation message property." alt="" coords="467,136,719,195"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="314,239,468,197,470,202,315,245"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" title=" " alt="" coords="467,243,719,301"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" title="Returns the reactive binding for the cell button accessible text property." alt="" coords="467,243,719,301"/>
 <area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="405,269,451,269,451,275,405,275"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" title=" " alt="" coords="483,349,703,392"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" title="Returns the observable list of players." alt="" coords="483,349,703,392"/>
 <area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="324,299,492,343,491,348,322,304"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" title=" " alt="" coords="471,416,715,475"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" title="Returns the property for the currently selected player." alt="" coords="471,416,715,475"/>
 <area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="256,300,347,350,454,402,470,408,468,413,452,406,344,355,254,304"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="518,29,520,19,534,10,558,5,593,3,634,5,659,13,657,18,633,11,593,8,558,10,536,15,524,21,524,29"/>
 <area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="518,135,520,125,534,117,558,111,593,109,634,112,659,120,657,125,633,117,593,115,558,117,536,122,524,128,524,136"/>

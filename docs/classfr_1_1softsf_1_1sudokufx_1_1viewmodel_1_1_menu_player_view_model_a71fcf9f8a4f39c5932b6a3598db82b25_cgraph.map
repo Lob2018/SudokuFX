@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.prepareCreatePlayerNameField" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.prepareCreatePlayerNameField">
+<area shape="rect" id="Node000001" title="Prepares the name text field for a new player." alt="" coords="5,5,246,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a20f7f738b189732aea75f18de4341d29" title="Centralizes UI initialization for player name input." alt="" coords="294,13,569,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,32,278,32,278,37,246,37"/>
+</map>

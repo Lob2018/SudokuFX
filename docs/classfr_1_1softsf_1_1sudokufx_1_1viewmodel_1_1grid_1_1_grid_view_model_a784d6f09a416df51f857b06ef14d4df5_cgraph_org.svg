@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetCellToEditable Pages: 1 -->
 <svg width="387pt" height="262pt"
  viewBox="0.00 0.00 387.25 262.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 258)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 258)">
 <title>fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetCellToEditable</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" target="_top" xlink:title="Returns the property representing the editable state of the cell.">
 <polygon fill="white" stroke="#666666" points="378.88,-236 206.12,-236 206.12,-204 378.88,-204 378.88,-236"/>
 <text text-anchor="start" x="214.12" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="292.5" y="-210.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.editableProperty</text>
@@ -40,7 +40,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" target="_top" xlink:title="Returns the label control representing the cell in display mode.">
 <polygon fill="white" stroke="#666666" points="374.38,-168 210.62,-168 210.62,-136 374.38,-136 374.38,-168"/>
 <text text-anchor="start" x="218.62" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="292.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.getLabel</text>
@@ -59,7 +59,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" target="_top" xlink:title="Returns the text area control used for editing the cell.">
 <polygon fill="white" stroke="#666666" points="374.38,-100 210.62,-100 210.62,-68 374.38,-68 374.38,-100"/>
 <text text-anchor="start" x="218.62" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="292.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.getTextArea</text>
@@ -78,7 +78,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" target="_top" xlink:title="Returns the property representing the raw unformatted text of the cell.">
 <polygon fill="white" stroke="#666666" points="379.25,-32 205.75,-32 205.75,0 379.25,0 379.25,-32"/>
 <text text-anchor="start" x="213.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="292.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.rawTextProperty</text>

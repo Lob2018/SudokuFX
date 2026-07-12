@@ -240,7 +240,7 @@ var sectionId = 'dynsection-6';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" target="_top" xlink:title="Returns the property representing the editable state of the cell.">
 <polygon fill="white" stroke="#666666" points="1568.12,-193 1395.38,-193 1395.38,-161 1568.12,-161 1568.12,-193"/>
 <text text-anchor="start" x="1403.38" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="1481.75" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.editableProperty</text>
@@ -259,7 +259,7 @@ var sectionId = 'dynsection-6';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" target="_top" xlink:title="Returns the property representing the raw unformatted text of the cell.">
 <polygon fill="white" stroke="#666666" points="1568.5,-263 1395,-263 1395,-231 1568.5,-231 1568.5,-263"/>
 <text text-anchor="start" x="1403" y="-249.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="1481.75" y="-237.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.rawTextProperty</text>
@@ -296,7 +296,7 @@ var sectionId = 'dynsection-6';
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" target="_top" xlink:title="Returns the text area control used for editing the cell.">
 <polygon fill="white" stroke="#666666" points="1563.62,-54 1399.88,-54 1399.88,-22 1563.62,-22 1563.62,-54"/>
 <text text-anchor="start" x="1407.88" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="1481.75" y="-28.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.getTextArea</text>
@@ -427,7 +427,7 @@ var sectionId = 'dynsection-6';
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" target="_top" xlink:title="Returns the label control representing the cell in display mode.">
 <polygon fill="white" stroke="#666666" points="1563.62,-123 1399.88,-123 1399.88,-91 1563.62,-91 1563.62,-123"/>
 <text text-anchor="start" x="1407.88" y="-109.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="1481.75" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.getLabel</text>

@@ -1,18 +1,18 @@
 <map id="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenValidViewModel_whenConfigurePlayerListView_thenSelectionIsBound" name="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenValidViewModel_whenConfigurePlayerListView_thenSelectionIsBound">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,309,377,368"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" title=" " alt="" coords="425,29,705,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" title="Returns the reactive binding for the cell button accessible text property." alt="" coords="425,29,705,88"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="211,307,247,261,296,205,356,147,423,98,432,93,434,98,426,102,359,151,300,209,251,265,215,311"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" title=" " alt="" coords="439,136,691,195"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" title="Returns the reactive binding for the cell confirmation message property." alt="" coords="439,136,691,195"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="236,307,321,255,424,204,439,198,441,203,426,209,324,260,239,311"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" title=" " alt="" coords="439,243,691,301"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" title="Returns the reactive binding for the cell button accessible text property." alt="" coords="439,243,691,301"/>
 <area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="358,306,423,295,423,300,359,311"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html#a90d36198eaa9a5c89c9827051cee6197" title=" " alt="" coords="429,376,701,419"/>
 <area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="377,365,414,371,413,376,376,370"/>
 <area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1946024ef99efea4b043ed98388fdc94" title="Data Transfer Object representing a player." alt="" coords="753,329,960,356"/>
 <area shape="poly" id="edge25_Node000001_Node000008" title=" " alt="" coords="377,337,737,339,737,345,377,342"/>
-<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" title=" " alt="" coords="455,467,675,509"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" title="Returns the observable list of players." alt="" coords="455,467,675,509"/>
 <area shape="poly" id="edge23_Node000001_Node000013" title=" " alt="" coords="268,366,496,458,494,463,266,371"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" title=" " alt="" coords="443,533,687,592"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" title="Returns the property for the currently selected player." alt="" coords="443,533,687,592"/>
 <area shape="poly" id="edge26_Node000001_Node000014" title=" " alt="" coords="224,367,311,442,367,483,426,519,437,524,435,529,423,524,364,488,307,446,221,371"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="508,29,509,19,520,10,538,5,565,3,596,5,614,13,612,17,594,11,565,8,539,10,522,15,514,21,513,29"/>
 <area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="508,135,509,125,520,117,538,111,565,109,596,112,614,119,612,124,594,117,565,115,539,117,522,121,514,128,513,136"/>

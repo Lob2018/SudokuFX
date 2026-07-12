@@ -6,12 +6,12 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.getTextArea Pages: 1 -->
 <svg width="172pt" height="58pt"
  viewBox="0.00 0.00 171.75 58.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 54)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 54)">
 <title>fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.getTextArea</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Returns the text area control used for editing the cell.">
 <polygon fill="#999999" stroke="#666666" points="163.75,-32 0,-32 0,0 163.75,0 163.75,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="81.88" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.getTextArea</text>

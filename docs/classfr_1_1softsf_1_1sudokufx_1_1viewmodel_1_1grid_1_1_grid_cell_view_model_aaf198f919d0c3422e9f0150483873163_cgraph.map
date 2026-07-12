@@ -14,7 +14,7 @@
 <area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="228,180,259,184,259,189,227,185"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Builds the CSS style for a Sudoku grid cell." alt="" coords="864,84,1087,127"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="817,103,849,103,849,108,817,108"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title=" " alt="" coords="590,292,808,335"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title="Checks if the cell is currently editable." alt="" coords="590,292,808,335"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="520,290,575,297,574,302,519,296"/>
 <area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="526,330,574,325,574,330,526,335"/>
 <area shape="poly" id="edge10_Node000009_Node000002" title=" " alt="" coords="498,173,532,161,622,130,624,135,534,166,500,178"/>

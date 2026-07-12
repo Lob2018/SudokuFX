@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigurePlayerListView_thenThrowsNullPointerException Pages: 1 -->
 <svg width="554pt" height="360pt"
  viewBox="0.00 0.00 553.75 360.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 356)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 356)">
 <title>fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigurePlayerListView_thenThrowsNullPointerException</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" target="_top" xlink:title="Returns the reactive binding for the cell button accessible text property.">
 <polygon fill="white" stroke="#666666" points="545.75,-334 335.5,-334 335.5,-290 545.75,-290 545.75,-334"/>
 <text text-anchor="start" x="343.5" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="343.5" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellButtonAccessible</text>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" target="_top" xlink:title="Returns the reactive binding for the cell confirmation message property.">
 <polygon fill="white" stroke="#666666" points="535.25,-254 346,-254 346,-210 535.25,-210 535.25,-254"/>
 <text text-anchor="start" x="354" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="354" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellConfirmation</text>
@@ -71,7 +71,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" target="_top" xlink:title="Returns the reactive binding for the cell button accessible text property.">
 <polygon fill="white" stroke="#666666" points="535.25,-174 346,-174 346,-130 535.25,-130 535.25,-174"/>
 <text text-anchor="start" x="354" y="-160.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="354" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellConfirmation</text>
@@ -91,7 +91,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" target="_top" xlink:title="Returns the observable list of players.">
 <polygon fill="white" stroke="#666666" points="523.25,-94 358,-94 358,-62 523.25,-62 523.25,-94"/>
 <text text-anchor="start" x="366" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="440.62" y="-68.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.getPlayers</text>
@@ -110,7 +110,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" target="_top" xlink:title="Returns the property for the currently selected player.">
 <polygon fill="white" stroke="#666666" points="532.25,-44 349,-44 349,0 532.25,0 532.25,-44"/>
 <text text-anchor="start" x="357" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="357" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.selectedPlayer</text>

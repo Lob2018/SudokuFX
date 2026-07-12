@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.MenuMaxiViewModelUTest.getStringBindingStringMap Pages: 1 -->
 <svg width="428pt" height="718pt"
  viewBox="0.00 0.00 427.75 718.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 714)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 714)">
 <title>fr.softsf.sudokufx.viewmodel.MenuMaxiViewModelUTest.getStringBindingStringMap</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a324f237415042cbb3012e226206faace" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a324f237415042cbb3012e226206faace" target="_top" xlink:title="Returns the reactive binding for the help button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="405.5,-692 227.5,-692 227.5,-648 405.5,-648 405.5,-692"/>
 <text text-anchor="start" x="235.5" y="-678.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="235.5" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.helpAccessible</text>
@@ -42,7 +42,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#af81523f519ba718a2a055beb12359274" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#af81523f519ba718a2a055beb12359274" target="_top" xlink:title="Returns the reactive binding for the help button&#39;s label text.">
 <polygon fill="white" stroke="#666666" points="409.25,-612 223.75,-612 223.75,-580 409.25,-580 409.25,-612"/>
 <text text-anchor="start" x="231.75" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="316.5" y="-586.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.helpTextProperty</text>
@@ -61,7 +61,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a07f20f7beb00a594a1e7e7e57eb47346" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a07f20f7beb00a594a1e7e7e57eb47346" target="_top" xlink:title="Returns the reactive binding for the help button&#39;s label text.">
 <polygon fill="white" stroke="#666666" points="414.12,-544 218.88,-544 218.88,-512 414.12,-512 414.12,-544"/>
 <text text-anchor="start" x="226.88" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="316.5" y="-518.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.helpTooltipProperty</text>
@@ -80,7 +80,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a350bbbd82f6ca06c9ca8c2f65d629d54" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a350bbbd82f6ca06c9ca8c2f65d629d54" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="416,-476 217,-476 217,-432 416,-432 416,-476"/>
 <text text-anchor="start" x="225" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="225" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.languageAccessible</text>
@@ -100,7 +100,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a4a498daafe5ccd252eace9b27e6585ec" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a4a498daafe5ccd252eace9b27e6585ec" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s ISO code text.">
 <polygon fill="white" stroke="#666666" points="417.12,-396 215.88,-396 215.88,-364 417.12,-364 417.12,-396"/>
 <text text-anchor="start" x="223.88" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="316.5" y="-370.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.languageIsoProperty</text>
@@ -119,7 +119,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a6b17874f73512f0285b016eb8e0703ff" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a6b17874f73512f0285b016eb8e0703ff" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s label text.">
 <polygon fill="white" stroke="#666666" points="419.75,-328 213.25,-328 213.25,-296 419.75,-296 419.75,-328"/>
 <text text-anchor="start" x="221.25" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="316.5" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.languageTextProperty</text>
@@ -138,7 +138,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#ab673a1ba73ff3c07577d0125e61de003" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#ab673a1ba73ff3c07577d0125e61de003" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s ISO code text.">
 <polygon fill="white" stroke="#666666" points="406.25,-260 226.75,-260 226.75,-216 406.25,-216 406.25,-260"/>
 <text text-anchor="start" x="234.75" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="234.75" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.languageTooltip</text>
@@ -158,7 +158,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#aa99304c9df9e923b4b34517ee4bf778e" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#aa99304c9df9e923b4b34517ee4bf778e" target="_top" xlink:title="Returns the reactive binding for the reduce button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="411.12,-180 221.88,-180 221.88,-136 411.12,-136 411.12,-180"/>
 <text text-anchor="start" x="229.88" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="229.88" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.reduceAccessible</text>
@@ -178,7 +178,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#ae397eebd320b121063226f5eabe4ec14" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#ae397eebd320b121063226f5eabe4ec14" target="_top" xlink:title="Returns the reactive binding for the reduce button&#39;s label text.">
 <polygon fill="white" stroke="#666666" points="414.88,-100 218.12,-100 218.12,-68 414.88,-68 414.88,-100"/>
 <text text-anchor="start" x="226.12" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="316.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.reduceTextProperty</text>
@@ -197,7 +197,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a1019a031561562b8e05f396339d11807" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html#a1019a031561562b8e05f396339d11807" target="_top" xlink:title="Returns the reactive binding for the reduce button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="419.75,-32 213.25,-32 213.25,0 419.75,0 419.75,-32"/>
 <text text-anchor="start" x="221.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="316.5" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.reduceTooltipProperty</text>

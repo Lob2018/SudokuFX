@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.GridCellViewModel" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.GridCellViewModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,265,253,308"/>
+<area shape="rect" id="Node000001" title="Constructs a GridCellViewModel and initializes UI bindings." alt="" coords="5,265,253,308"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a38d783156f2f2ad694cfbec5062de472" title="Applies a computed border style to a JavaFX node, based on content length, focus state,..." alt="" coords="929,16,1165,59"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,263,233,209,345,139,409,104,478,71,550,42,622,20,697,7,773,3,847,5,914,12,914,17,846,10,773,8,697,12,624,25,552,47,481,76,412,109,347,144,236,213,160,267"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a0d1630abe71ae622f3522fbed9855750" title="Formats a raw digit string (1–9) into a 3&#45;line spaced grid display." alt="" coords="643,392,861,435"/>
@@ -24,7 +24,7 @@
 <area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="541,221,633,201,634,206,542,226"/>
 <area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a9544acad3febede6981c9d8440674d3c" title="Updates the label&#39;s font size CSS class and border style based on the current text content." alt="" coords="623,75,881,133"/>
 <area shape="poly" id="edge16_Node000008_Node000012" title=" " alt="" coords="473,221,541,182,622,143,637,137,639,142,624,148,544,187,476,226"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title=" " alt="" coords="938,191,1156,233"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title="Checks if the cell is currently editable." alt="" coords="938,191,1156,233"/>
 <area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="868,230,922,223,923,229,868,235"/>
 <area shape="poly" id="edge15_Node000011_Node000010" title=" " alt="" coords="875,190,923,195,922,201,874,195"/>
 <area shape="poly" id="edge17_Node000012_Node000002" title=" " alt="" coords="881,72,935,60,936,65,882,77"/>

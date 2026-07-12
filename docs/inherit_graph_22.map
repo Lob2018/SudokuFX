@@ -1,5 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="5,5,248,48"/>
-<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html" title="View class for the splash screen of the Sudoku application." alt="" coords="296,5,453,48"/>
-<area shape="poly" id="edge7_Node000000_Node000001" title=" " alt="" coords="264,24,295,24,295,29,264,29"/>
+<area shape="rect" id="Node000000" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" title="Interface defining method to open the main stage." alt="" coords="5,39,248,81"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html" title="View class for the crash screen without business logic." alt="" coords="312,5,469,48"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="263,40,311,34,311,39,264,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html" title="Main view class of the Sudoku application." alt="" coords="296,72,485,115"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="264,75,296,79,295,84,263,80"/>
 </map>

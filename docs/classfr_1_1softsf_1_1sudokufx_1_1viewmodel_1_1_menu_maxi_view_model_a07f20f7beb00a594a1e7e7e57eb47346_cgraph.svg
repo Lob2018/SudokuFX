@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Returns the reactive binding for the help button&#39;s label text.">
 <polygon fill="#999999" stroke="#666666" points="195.25,-32 0,-32 0,0 195.25,0 195.25,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="97.62" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMaxiViewModel.helpTooltipProperty</text>

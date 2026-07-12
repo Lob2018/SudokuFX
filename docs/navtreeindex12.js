@@ -1,5 +1,16 @@
 var NAVTREEINDEX12 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49ad75ae1ed688e05c69038c7f5f7173":[2,0,0,0,0,8,3,13],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49c11cdc15fbf969de8ca00ec9817ead":[1,0,0,0,0,9,3,27],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49c11cdc15fbf969de8ca00ec9817ead":[2,0,0,0,0,8,3,27],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a4fbe39a61341e00fabc5007def75d56a":[1,0,0,0,0,9,3,24],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a4fbe39a61341e00fabc5007def75d56a":[2,0,0,0,0,8,3,24],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a55073b0acd6f2e5fa4c2525cd5fc5930":[1,0,0,0,0,9,3,19],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a55073b0acd6f2e5fa4c2525cd5fc5930":[2,0,0,0,0,8,3,19],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a5a135e72f1765ad2dc90d69994f7b657":[1,0,0,0,0,9,3,7],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a5a135e72f1765ad2dc90d69994f7b657":[2,0,0,0,0,8,3,7],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a6adfb5fb2e02a8b14771a861c29a50c5":[1,0,0,0,0,9,3,17],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a6adfb5fb2e02a8b14771a861c29a50c5":[2,0,0,0,0,8,3,17],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a7e5f099b70c5a8a4ee33fdab4dd144bd":[1,0,0,0,0,9,3,9],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a7e5f099b70c5a8a4ee33fdab4dd144bd":[2,0,0,0,0,8,3,9],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a9734099f3b19ee83a9f3ccfd51a56239":[1,0,0,0,0,9,3,12],
@@ -238,16 +249,5 @@ var NAVTREEINDEX12 =
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a41a53e9bd71fc6a947e9b3b41bbb148a":[2,0,0,0,0,8,0,0,1,10],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a49a20d2a891c95aab0b81ddf327e26fb":[1,0,0,0,0,9,0,0,1,3],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a49a20d2a891c95aab0b81ddf327e26fb":[2,0,0,0,0,8,0,0,1,3],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a5b102ec9fe9b0865a0c54d5e16593a09":[1,0,0,0,0,9,0,0,1,8],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a5b102ec9fe9b0865a0c54d5e16593a09":[2,0,0,0,0,8,0,0,1,8],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a5d6e5b88456462048c25c5b6e8a5a7de":[1,0,0,0,0,9,0,0,1,4],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a5d6e5b88456462048c25c5b6e8a5a7de":[2,0,0,0,0,8,0,0,1,4],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a9987571c6ec6f2c6d6e1cc22476146bf":[1,0,0,0,0,9,0,0,1,5],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a9987571c6ec6f2c6d6e1cc22476146bf":[2,0,0,0,0,8,0,0,1,5],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a9f9047ed462410ed68792265bf1a913d":[1,0,0,0,0,9,0,0,1,13],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a9f9047ed462410ed68792265bf1a913d":[2,0,0,0,0,8,0,0,1,13],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#aac14dd449a5d5df5903bc40d8f557d71":[1,0,0,0,0,9,0,0,1,12],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#aac14dd449a5d5df5903bc40d8f557d71":[2,0,0,0,0,8,0,0,1,12],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#aad1d4e0edd190fc5e23a05c6b3e48aa4":[1,0,0,0,0,9,0,0,1,14],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#aad1d4e0edd190fc5e23a05c6b3e48aa4":[2,0,0,0,0,8,0,0,1,14]
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a5b102ec9fe9b0865a0c54d5e16593a09":[1,0,0,0,0,9,0,0,1,8]
 };

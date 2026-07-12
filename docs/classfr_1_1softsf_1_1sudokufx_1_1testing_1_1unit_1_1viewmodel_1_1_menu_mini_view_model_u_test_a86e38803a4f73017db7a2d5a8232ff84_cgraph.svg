@@ -88,7 +88,7 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a44ab37e4046e8f241098b89b99318a63" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a44ab37e4046e8f241098b89b99318a63" target="_top" xlink:title="Returns the reactive binding for the backup button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="732.38,-1104 543.88,-1104 543.88,-1060 732.38,-1060 732.38,-1104"/>
 <text text-anchor="start" x="551.88" y="-1090.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="551.88" y="-1078.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.backupAccessible</text>
@@ -108,7 +108,7 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a24604acaf6c4431e995c301af88913e6" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a24604acaf6c4431e995c301af88913e6" target="_top" xlink:title="Returns the reactive binding for the backup button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="741,-1024 535.25,-1024 535.25,-992 741,-992 741,-1024"/>
 <text text-anchor="start" x="543.25" y="-1010.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="638.12" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.backupTooltipProperty</text>
@@ -127,7 +127,7 @@ var sectionId = 'dynsection-1';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ad05910dc7b6162af916048b7dcbe6878" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ad05910dc7b6162af916048b7dcbe6878" target="_top" xlink:title="Returns the reactive binding for the help button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="725.62,-956 550.62,-956 550.62,-912 725.62,-912 725.62,-956"/>
 <text text-anchor="start" x="558.62" y="-942.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="558.62" y="-930.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.helpAccessible</text>
@@ -147,7 +147,7 @@ var sectionId = 'dynsection-1';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a918fc80965395290d03bb4b061ca6e9c" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a918fc80965395290d03bb4b061ca6e9c" target="_top" xlink:title="Returns the reactive binding for the help button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="734.25,-876 542,-876 542,-844 734.25,-844 734.25,-876"/>
 <text text-anchor="start" x="550" y="-862.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="638.12" y="-850.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.helpTooltipProperty</text>
@@ -166,7 +166,7 @@ var sectionId = 'dynsection-1';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#aa77d006b3b649f79a1c30444373f7c69" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#aa77d006b3b649f79a1c30444373f7c69" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="736.12,-808 540.12,-808 540.12,-764 736.12,-764 736.12,-808"/>
 <text text-anchor="start" x="548.12" y="-794.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="548.12" y="-782.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.languageAccessible</text>
@@ -186,7 +186,7 @@ var sectionId = 'dynsection-1';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ac44317ae972e2c50ff0eb6b51d2d24d4" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ac44317ae972e2c50ff0eb6b51d2d24d4" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="726.38,-728 549.88,-728 549.88,-684 726.38,-684 726.38,-728"/>
 <text text-anchor="start" x="557.88" y="-714.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="557.88" y="-702.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.languageTooltip</text>
@@ -206,7 +206,7 @@ var sectionId = 'dynsection-1';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ac962c57f81a4ea89d21dd66a3cca1c22" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ac962c57f81a4ea89d21dd66a3cca1c22" target="_top" xlink:title="Returns the reactive binding for the language button&#39;s ISO text.">
 <polygon fill="white" stroke="#666666" points="727.88,-648 548.38,-648 548.38,-604 727.88,-604 727.88,-648"/>
 <text text-anchor="start" x="556.38" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="556.38" y="-622.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.menuMiniButton</text>
@@ -226,7 +226,7 @@ var sectionId = 'dynsection-1';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a4b09dc4877f0c9c17bf025c22b77007b" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a4b09dc4877f0c9c17bf025c22b77007b" target="_top" xlink:title="Returns the reactive binding for the options button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="732.38,-568 543.88,-568 543.88,-524 732.38,-524 732.38,-568"/>
 <text text-anchor="start" x="551.88" y="-554.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="551.88" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.optionsAccessible</text>
@@ -246,7 +246,7 @@ var sectionId = 'dynsection-1';
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a5654c351a2aa65fcd96cd994e033f9de" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a5654c351a2aa65fcd96cd994e033f9de" target="_top" xlink:title="Returns the reactive binding for the options button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="722.62,-488 553.62,-488 553.62,-444 722.62,-444 722.62,-488"/>
 <text text-anchor="start" x="561.62" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="561.62" y="-462.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.optionsTooltip</text>
@@ -266,7 +266,7 @@ var sectionId = 'dynsection-1';
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a8451ee29da040a7c11b843c11b14246d" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a8451ee29da040a7c11b843c11b14246d" target="_top" xlink:title="Returns the reactive binding for the player button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="729.75,-408 546.5,-408 546.5,-364 729.75,-364 729.75,-408"/>
 <text text-anchor="start" x="554.5" y="-394.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="554.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.playerAccessible</text>
@@ -286,7 +286,7 @@ var sectionId = 'dynsection-1';
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a3a6777f890f24d093d94ee8b3e555eef" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a3a6777f890f24d093d94ee8b3e555eef" target="_top" xlink:title="Returns the reactive binding for the player button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="738.38,-328 537.88,-328 537.88,-296 738.38,-296 738.38,-328"/>
 <text text-anchor="start" x="545.88" y="-314.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="638.12" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.playerTooltipProperty</text>
@@ -305,7 +305,7 @@ var sectionId = 'dynsection-1';
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a449820dbe25fbba06711484997bb071f" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a449820dbe25fbba06711484997bb071f" target="_top" xlink:title="Returns the reactive binding for the show button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="728.25,-260 548,-260 548,-216 728.25,-216 728.25,-260"/>
 <text text-anchor="start" x="556" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="556" y="-234.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.showAccessible</text>
@@ -325,7 +325,7 @@ var sectionId = 'dynsection-1';
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a6518f36192a4e7504ae83b1594e04ab6" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a6518f36192a4e7504ae83b1594e04ab6" target="_top" xlink:title="Returns the reactive binding for the show button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="736.88,-180 539.38,-180 539.38,-148 736.88,-148 736.88,-180"/>
 <text text-anchor="start" x="547.38" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="638.12" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.showTooltipProperty</text>
@@ -344,7 +344,7 @@ var sectionId = 'dynsection-1';
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#afe70fbe2104168ec3dce78ee0dad50d0" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#afe70fbe2104168ec3dce78ee0dad50d0" target="_top" xlink:title="Returns the reactive binding for the solve button&#39;s accessible text.">
 <polygon fill="white" stroke="#666666" points="728.25,-112 548,-112 548,-68 728.25,-68 728.25,-112"/>
 <text text-anchor="start" x="556" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="556" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.solveAccessible</text>
@@ -364,7 +364,7 @@ var sectionId = 'dynsection-1';
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ae3de397d22f6ed600b63d880731222cf" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#ae3de397d22f6ed600b63d880731222cf" target="_top" xlink:title="Returns the reactive binding for the solve button&#39;s tooltip.">
 <polygon fill="white" stroke="#666666" points="736.88,-32 539.38,-32 539.38,0 736.88,0 736.88,-32"/>
 <text text-anchor="start" x="547.38" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="638.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuMiniViewModel.solveTooltipProperty</text>

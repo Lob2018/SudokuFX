@@ -29,8 +29,8 @@ public class MenuHiddenViewModel {
     private final StringBinding menuHiddenButtonShowAccessibilityText;
 
     /**
-     * Constructs a new {@code MenuHiddenViewModel} and initializes the reactive accessibility
-     * text binding.
+     * Constructs a new {@code MenuHiddenViewModel} and initializes the reactive accessibility text
+     * binding.
      */
     public MenuHiddenViewModel() {
         menuHiddenButtonShowAccessibilityText =

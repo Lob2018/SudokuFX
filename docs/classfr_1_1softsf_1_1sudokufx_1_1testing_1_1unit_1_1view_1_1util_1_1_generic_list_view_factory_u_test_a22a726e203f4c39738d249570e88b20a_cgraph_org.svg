@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigureGameListView_thenThrowsNullPointerException Pages: 1 -->
 <svg width="547pt" height="378pt"
  viewBox="0.00 0.00 547.00 378.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 374)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 374)">
 <title>fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigureGameListView_thenThrowsNullPointerException</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -31,7 +31,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#ae8fd54720d3bf9eed7e6818910574eb0" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#ae8fd54720d3bf9eed7e6818910574eb0" target="_top" xlink:title="Returns the reactive binding for the cell confirmation message property.">
 <polygon fill="white" stroke="#666666" points="528.5,-352 344.5,-352 344.5,-308 528.5,-308 528.5,-352"/>
 <text text-anchor="start" x="352.5" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="352.5" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.cellConfirmation</text>
@@ -51,7 +51,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a5ab4585818714dcc320d52514c418a23" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a5ab4585818714dcc320d52514c418a23" target="_top" xlink:title="Returns the reactive binding for the cell delete accessible text property.">
 <polygon fill="white" stroke="#666666" points="528.5,-272 344.5,-272 344.5,-228 528.5,-228 528.5,-272"/>
 <text text-anchor="start" x="352.5" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="352.5" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.cellConfirmation</text>
@@ -71,7 +71,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a0ff146482b5bc658c0f2d6525ebc793a" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a0ff146482b5bc658c0f2d6525ebc793a" target="_top" xlink:title="Returns the reactive binding for the cell delete accessible text property.">
 <polygon fill="white" stroke="#666666" points="539,-192 334,-192 334,-148 539,-148 539,-192"/>
 <text text-anchor="start" x="342" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="342" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.cellDeleteAccessible</text>
@@ -91,10 +91,10 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a9096435064acd108290c71d223487b2a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="519.12,-112 353.88,-112 353.88,-80 519.12,-80 519.12,-112"/>
-<text text-anchor="start" x="361.88" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="436.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.getBackups</text>
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#af227c1d499f693ab59c4c80ac7a5b4d1" target="_top" xlink:title="Returns the observable list of games.">
+<polygon fill="white" stroke="#666666" points="515.75,-112 357.25,-112 357.25,-80 515.75,-80 515.75,-112"/>
+<text text-anchor="start" x="365.25" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="middle" x="436.5" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.getGames</text>
 </a>
 </g>
 </g>
@@ -110,7 +110,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7943ef327bf3140fe8094b4866a47223" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7943ef327bf3140fe8094b4866a47223" target="_top" xlink:title="Returns the property for the currently selected backup.">
 <polygon fill="white" stroke="#666666" points="528.12,-44 344.88,-44 344.88,0 528.12,0 528.12,-44"/>
 <text text-anchor="start" x="352.88" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="352.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.selectedBackup</text>

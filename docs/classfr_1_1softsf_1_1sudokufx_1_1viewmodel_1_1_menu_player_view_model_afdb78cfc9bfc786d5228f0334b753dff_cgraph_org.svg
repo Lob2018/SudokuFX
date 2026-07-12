@@ -6,12 +6,12 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.newTooltipProperty Pages: 1 -->
 <svg width="210pt" height="58pt"
  viewBox="0.00 0.00 210.00 58.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 54)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 54)">
 <title>fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.newTooltipProperty</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Returns the reactive binding for the new player tooltip property.">
 <polygon fill="#999999" stroke="#666666" points="202,-32 0,-32 0,0 202,0 202,-32"/>
 <text text-anchor="start" x="8" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="101" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.newTooltipProperty</text>

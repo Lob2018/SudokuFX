@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init">
 <area shape="rect" id="Node000001" title="Instantiates the 81 GridCellViewModel and binds text change listeners." alt="" coords="5,397,224,440"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="1165,405,1383,448"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="1165,405,1383,448"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,413,272,412,543,410,814,412,1149,420,1149,425,814,417,543,415,272,417,224,418"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#add773c382452e7476099209f6898f991" title="Synchronizes the grid state and manages side effects based on the current application mode." alt="" coords="272,427,516,469"/>
 <area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="224,427,256,431,256,436,224,433"/>
@@ -12,11 +12,11 @@
 <area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad1b7ef7994bef2d64edd271bf77a9cbc" title="Checks if the current UI context is set to the Solve menu." alt="" coords="576,427,802,469"/>
 <area shape="poly" id="edge33_Node000003_Node000019" title=" " alt="" coords="516,445,561,445,561,451,516,451"/>
 <area shape="poly" id="edge9_Node000004_Node000002" title=" " alt="" coords="750,525,862,491,1010,460,1149,439,1150,444,1011,466,863,496,751,530"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="1159,587,1389,629"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="1159,587,1389,629"/>
 <area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="792,569,863,580,1007,594,1143,602,1143,607,1007,599,862,585,791,574"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title=" " alt="" coords="1165,496,1383,539"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="1165,496,1383,539"/>
 <area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="786,525,862,513,1011,506,1149,508,1149,513,1011,511,863,519,787,530"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="1158,677,1390,720"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="1158,677,1390,720"/>
 <area shape="poly" id="edge10_Node000004_Node000007" title=" " alt="" coords="709,569,735,601,771,637,814,672,863,698,933,716,1005,725,1076,725,1142,720,1143,725,1076,730,1005,730,932,722,861,702,811,676,767,641,731,604,704,573"/>
 <area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="868,528,1094,571"/>
 <area shape="poly" id="edge12_Node000004_Node000008" title=" " alt="" coords="810,547,852,547,852,552,810,552"/>

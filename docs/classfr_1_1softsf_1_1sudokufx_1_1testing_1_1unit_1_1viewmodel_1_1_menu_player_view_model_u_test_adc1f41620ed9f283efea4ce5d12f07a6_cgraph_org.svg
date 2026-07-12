@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest.allBindingsShouldReturnExpectedI18nValues Pages: 1 -->
 <svg width="733pt" height="1444pt"
  viewBox="0.00 0.00 733.25 1444.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1440)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1440)">
 <title>fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest.allBindingsShouldReturnExpectedI18nValues</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -42,7 +42,7 @@
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" target="_top" xlink:title="Returns the reactive binding for the cell button accessible text property.">
 <polygon fill="white" stroke="#666666" points="723,-1418 512.75,-1418 512.75,-1374 723,-1374 723,-1418"/>
 <text text-anchor="start" x="520.75" y="-1404.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="520.75" y="-1392.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellButtonAccessible</text>
@@ -62,7 +62,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" target="_top" xlink:title="Returns the reactive binding for the cell confirmation message property.">
 <polygon fill="white" stroke="#666666" points="712.5,-1338 523.25,-1338 523.25,-1294 712.5,-1294 712.5,-1338"/>
 <text text-anchor="start" x="531.25" y="-1324.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="531.25" y="-1312.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellConfirmation</text>
@@ -82,7 +82,7 @@
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" target="_top" xlink:title="Returns the reactive binding for the cell button accessible text property.">
 <polygon fill="white" stroke="#666666" points="712.5,-1258 523.25,-1258 523.25,-1214 712.5,-1214 712.5,-1258"/>
 <text text-anchor="start" x="531.25" y="-1244.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="531.25" y="-1232.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellConfirmation</text>
@@ -102,7 +102,7 @@
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aead6d85f968c99227b0d1b9f584cdb71" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aead6d85f968c99227b0d1b9f584cdb71" target="_top" xlink:title="Returns the reactive binding for the edit accessible text property.">
 <polygon fill="white" stroke="#666666" points="709.12,-1178 526.62,-1178 526.62,-1134 709.12,-1134 709.12,-1178"/>
 <text text-anchor="start" x="534.62" y="-1164.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="534.62" y="-1152.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.editAccessible</text>
@@ -122,7 +122,7 @@
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#afecc236caf62291584a8150c4531b665" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#afecc236caf62291584a8150c4531b665" target="_top" xlink:title="Returns the reactive binding for the edit role description property.">
 <polygon fill="white" stroke="#666666" points="720,-1098 515.75,-1098 515.75,-1054 720,-1054 720,-1098"/>
 <text text-anchor="start" x="523.75" y="-1084.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="523.75" y="-1072.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.editRoleDescription</text>
@@ -142,7 +142,7 @@
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a5f84e0be598369a963f9bb1c92742748" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a5f84e0be598369a963f9bb1c92742748" target="_top" xlink:title="Returns the reactive binding for the edit tooltip property.">
 <polygon fill="white" stroke="#666666" points="717.75,-1018 518,-1018 518,-986 717.75,-986 717.75,-1018"/>
 <text text-anchor="start" x="526" y="-1004.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="617.88" y="-992.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.editTooltipProperty</text>
@@ -161,7 +161,7 @@
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa87c01f9089e55012ea44f20b6c5ab20" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa87c01f9089e55012ea44f20b6c5ab20" target="_top" xlink:title="Returns the reactive binding for the maxi player role description property.">
 <polygon fill="white" stroke="#666666" points="711.75,-950 524,-950 524,-906 711.75,-906 711.75,-950"/>
 <text text-anchor="start" x="532" y="-936.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="532" y="-924.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.maxiPlayerRole</text>
@@ -181,7 +181,7 @@
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a345ef8c84dc577c2a27307a9f67aa707" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a345ef8c84dc577c2a27307a9f67aa707" target="_top" xlink:title="Returns the reactive binding for the maxi player tooltip property.">
 <polygon fill="white" stroke="#666666" points="715.88,-870 519.88,-870 519.88,-826 715.88,-826 715.88,-870"/>
 <text text-anchor="start" x="527.88" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="527.88" y="-844.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.maxiPlayerTooltip</text>
@@ -201,7 +201,7 @@
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aaf79a24e500132e50467100467039bdb" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aaf79a24e500132e50467100467039bdb" target="_top" xlink:title="Returns the reactive binding for the new player accessible text property.">
 <polygon fill="white" stroke="#666666" points="710.25,-790 525.5,-790 525.5,-746 710.25,-746 710.25,-790"/>
 <text text-anchor="start" x="533.5" y="-776.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="533.5" y="-764.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.newAccessible</text>
@@ -221,7 +221,7 @@
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ad88e8e7bd351e860ee56ac701df41a5f" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ad88e8e7bd351e860ee56ac701df41a5f" target="_top" xlink:title="Returns the reactive binding for the new player role description property.">
 <polygon fill="white" stroke="#666666" points="721.12,-710 514.62,-710 514.62,-666 721.12,-666 721.12,-710"/>
 <text text-anchor="start" x="522.62" y="-696.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="522.62" y="-684.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.newRoleDescription</text>
@@ -241,7 +241,7 @@
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#abff199bd6c33225ab11ee0e568096c69" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#abff199bd6c33225ab11ee0e568096c69" target="_top" xlink:title="Returns the reactive binding for the new player text property.">
 <polygon fill="white" stroke="#666666" points="714,-630 521.75,-630 521.75,-598 714,-598 714,-630"/>
 <text text-anchor="start" x="529.75" y="-616.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="617.88" y="-604.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.newTextProperty</text>
@@ -260,7 +260,7 @@
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#afdb78cfc9bfc786d5228f0334b753dff" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#afdb78cfc9bfc786d5228f0334b753dff" target="_top" xlink:title="Returns the reactive binding for the new player tooltip property.">
 <polygon fill="white" stroke="#666666" points="718.88,-562 516.88,-562 516.88,-530 718.88,-530 718.88,-562"/>
 <text text-anchor="start" x="524.88" y="-548.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="617.88" y="-536.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.newTooltipProperty</text>
@@ -279,7 +279,7 @@
 <!-- Node15 -->
 <g id="Node000015" class="node">
 <title>Node15</title>
-<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ad3daf2b1a845c26ceb77e25c328b1da6" target="_top" xlink:title=" ">
+<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ad3daf2b1a845c26ceb77e25c328b1da6" target="_top" xlink:title="Returns the reactive binding for the player accessible text property.">
 <polygon fill="white" stroke="#666666" points="714.38,-494 521.38,-494 521.38,-450 714.38,-450 714.38,-494"/>
 <text text-anchor="start" x="529.38" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="529.38" y="-468.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.playerAccessible</text>
@@ -299,7 +299,7 @@
 <!-- Node16 -->
 <g id="Node000016" class="node">
 <title>Node16</title>
-<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa1e1584f75e36209ff8c7bb627856618" target="_top" xlink:title=" ">
+<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa1e1584f75e36209ff8c7bb627856618" target="_top" xlink:title="Returns the reactive binding for the player role description property.">
 <polygon fill="white" stroke="#666666" points="725.25,-414 510.5,-414 510.5,-370 725.25,-370 725.25,-414"/>
 <text text-anchor="start" x="518.5" y="-400.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="518.5" y="-388.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.playerRoleDescription</text>
@@ -319,7 +319,7 @@
 <!-- Node17 -->
 <g id="Node000017" class="node">
 <title>Node17</title>
-<g id="a_Node000017"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#adb388f8bfb86d9d985ed9bf3ea2f8349" target="_top" xlink:title=" ">
+<g id="a_Node000017"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#adb388f8bfb86d9d985ed9bf3ea2f8349" target="_top" xlink:title="Returns the reactive binding for the player tooltip property.">
 <polygon fill="white" stroke="#666666" points="704.62,-334 531.12,-334 531.12,-290 704.62,-290 704.62,-334"/>
 <text text-anchor="start" x="539.12" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="539.12" y="-308.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.playerTooltip</text>
@@ -339,7 +339,7 @@
 <!-- Node18 -->
 <g id="Node000018" class="node">
 <title>Node18</title>
-<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#abc49d66c764b8f00256e91ff5ba19dcf" target="_top" xlink:title=" ">
+<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#abc49d66c764b8f00256e91ff5ba19dcf" target="_top" xlink:title="Returns the reactive binding for the reduce button accessible text property.">
 <polygon fill="white" stroke="#666666" points="715.88,-254 519.88,-254 519.88,-210 715.88,-210 715.88,-254"/>
 <text text-anchor="start" x="527.88" y="-240.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="527.88" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.reduceAccessible</text>
@@ -359,7 +359,7 @@
 <!-- Node19 -->
 <g id="Node000019" class="node">
 <title>Node19</title>
-<g id="a_Node000019"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ab0badcfbbda88ad34f90c1bafa8f5d5c" target="_top" xlink:title=" ">
+<g id="a_Node000019"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ab0badcfbbda88ad34f90c1bafa8f5d5c" target="_top" xlink:title="Returns the reactive binding for the reduce button tooltip property.">
 <polygon fill="white" stroke="#666666" points="719.62,-174 516.12,-174 516.12,-142 719.62,-142 719.62,-174"/>
 <text text-anchor="start" x="524.12" y="-160.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="617.88" y="-148.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.reduceTextProperty</text>
@@ -378,7 +378,7 @@
 <!-- Node20 -->
 <g id="Node000020" class="node">
 <title>Node20</title>
-<g id="a_Node000020"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3ca1f3bb44f9c4f0e245f7905d7396cf" target="_top" xlink:title=" ">
+<g id="a_Node000020"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3ca1f3bb44f9c4f0e245f7905d7396cf" target="_top" xlink:title="Returns the reactive binding for the reduce button tooltip property.">
 <polygon fill="white" stroke="#666666" points="706.12,-106 529.62,-106 529.62,-62 706.12,-62 706.12,-106"/>
 <text text-anchor="start" x="537.62" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="537.62" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.reduceTooltip</text>
@@ -398,7 +398,7 @@
 <!-- Node21 -->
 <g id="Node000021" class="node">
 <title>Node21</title>
-<g id="a_Node000021"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" target="_top" xlink:title=" ">
+<g id="a_Node000021"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" target="_top" xlink:title="Returns the property for the currently selected player.">
 <polygon fill="white" stroke="#666666" points="709.5,-44 526.25,-44 526.25,0 709.5,0 709.5,-44"/>
 <text text-anchor="start" x="534.25" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="534.25" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.selectedPlayer</text>

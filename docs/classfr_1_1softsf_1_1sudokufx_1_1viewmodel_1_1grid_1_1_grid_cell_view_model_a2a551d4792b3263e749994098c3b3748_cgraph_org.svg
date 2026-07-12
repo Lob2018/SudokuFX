@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setEditableStyle Pages: 1 -->
 <svg width="381pt" height="40pt"
  viewBox="0.00 0.00 381.25 40.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 36)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 36)">
 <title>fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setEditableStyle</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" target="_top" xlink:title="Checks if the cell is currently editable.">
 <polygon fill="white" stroke="#666666" points="373.25,-32 209.5,-32 209.5,0 373.25,0 373.25,-32"/>
 <text text-anchor="start" x="217.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="291.38" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.isEditable</text>

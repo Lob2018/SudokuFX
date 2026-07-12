@@ -141,7 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3cfd182bef3180918bca6a34dd61a631" id="r_a3cfd182bef3180918bca6a34dd61a631"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a3cfd182bef3180918bca6a34dd61a631">handleGameBackup</a> ()</td></tr>
 <tr class="memdesc:a3cfd182bef3180918bca6a34dd61a631"><td class="mdescLeft">&#160;</td><td class="mdescRight">backup of the current game state.  <br /></td></tr>
 <tr class="memitem:a7bc2d3401e4ef3125cf136ebd95a2273" id="r_a7bc2d3401e4ef3125cf136ebd95a2273"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7bc2d3401e4ef3125cf136ebd95a2273">handleMenuBackupShow</a> ()</td></tr>
-<tr class="memdesc:a7bc2d3401e4ef3125cf136ebd95a2273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the BACKUP menu, refreshes the backup list to ensure the displayed data is up-to-date, and sets focus on the save button to facilitate keyboard navigation and accessibility.  <br /></td></tr>
+<tr class="memdesc:a7bc2d3401e4ef3125cf136ebd95a2273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates the BACKUP menu, refreshes the backup list, and sets focus on the save button to facilitate keyboard navigation and accessibility.  <br /></td></tr>
+<tr class="memitem:aa1bcdaca3356c78d0f11c512eb3720fd" id="r_aa1bcdaca3356c78d0f11c512eb3720fd"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aa1bcdaca3356c78d0f11c512eb3720fd">handleMenuEditPlayerName</a> ()</td></tr>
+<tr class="memdesc:aa1bcdaca3356c78d0f11c512eb3720fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make the name field editable in order to update current player name if that name doesn't exist.  <br /></td></tr>
 <tr class="memitem:a5fb4cecc5b9992812b2e601b1ad82fe9" id="r_a5fb4cecc5b9992812b2e601b1ad82fe9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5fb4cecc5b9992812b2e601b1ad82fe9">handleMenuHelpShow</a> ()</td></tr>
 <tr class="memdesc:a5fb4cecc5b9992812b2e601b1ad82fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays the Help menu dialog with game rules and the application log path.  <br /></td></tr>
 <tr class="memitem:a7a5e9379f9400a112803ed3dcd19063d" id="r_a7a5e9379f9400a112803ed3dcd19063d"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a7a5e9379f9400a112803ed3dcd19063d">handleMenuMaxiShow</a> (ActionEvent event)</td></tr>
@@ -1158,7 +1160,26 @@ OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class. </p>
       </table>
 </div><div class="memdoc">
 
-<p>Activates the BACKUP menu, refreshes the backup list to ensure the displayed data is up-to-date, and sets focus on the save button to facilitate keyboard navigation and accessibility. </p>
+<p>Activates the BACKUP menu, refreshes the backup list, and sets focus on the save button to facilitate keyboard navigation and accessibility. </p>
+
+</div>
+</div>
+<a id="aa1bcdaca3356c78d0f11c512eb3720fd" name="aa1bcdaca3356c78d0f11c512eb3720fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1bcdaca3356c78d0f11c512eb3720fd">&#9670;&#160;</a></span>handleMenuEditPlayerName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.main.MainView.handleMenuEditPlayerName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make the name field editable in order to update current player name if that name doesn't exist. </p>
 
 </div>
 </div>
@@ -1965,7 +1986,13 @@ Delegates the multi-column layout initialization to the structural list view fac
 </div><div class="memdoc">
 
 <p>Initializes bindings and event listeners for the save menu components. </p>
-<p>Binds accessibility texts, tooltips, and labels to the ViewModel. Synchronizes the selected backup between the ListView and the ViewModel. Sets up the ListView with custom backup cells and refreshes UI state. </p>
+<p>Binds accessibility texts, tooltips, and labels to the ViewModel. Synchronizes the selected backup between the ListView and the ViewModel. Sets up the ListView with custom backup cells, registers grid change listeners for automatic refresh, and refreshes UI state. </p>
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_aebaf39d672a3997a3b90c42333b0689b_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
 
 </div>
 </div>
@@ -2076,10 +2103,10 @@ Delegates the multi-column layout initialization to the structural list view fac
 
 <p>Synchronizes the user interface with the current player's profile data. </p>
 <p>Updates the application locale, restores the grid level state, applies specific player options (such as background and colors), adjusts the grid opacity mode based on the new player's configuration, and updates the available game backups list. </p>
-<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_ab932816eea56f364964cee4386ce22c0_cgraph.svg" width="100%" height="377"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -2144,10 +2171,10 @@ Delegates the multi-column layout initialization to the structural list view fac
   </table>
   </dd>
 </dl>
-<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a0c413fa0dec2327ebc2348e34c9e7135_cgraph.svg" width="583" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 

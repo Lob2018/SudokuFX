@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.service.business.GameService.updateGameSelection" name="fr.softsf.sudokufx.service.business.GameService.updateGameSelection">
+<area shape="rect" id="Node000001" title="Internal utility to update game selection state and persist changes." alt="" coords="5,39,238,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service.html#a2005d65aacae89774f20f99dfb29b2cd" title="Internal utility to retrieve a game entity by its identifier." alt="" coords="286,5,515,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,43,270,40,271,45,238,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a60d86d25fb2cffb5acccc81e107561e6" title="Sets the selection state of this game." alt="" coords="317,72,484,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,71,302,79,302,84,238,77"/>
+</map>

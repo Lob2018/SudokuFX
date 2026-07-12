@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.service.business.GameService.switchAndSelectNewGame" name="fr.softsf.sudokufx.service.business.GameService.switchAndSelectNewGame">
+<area shape="rect" id="Node000001" title="Atomically switches the selected game status." alt="" coords="5,39,270,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service.html#ad86439cdff7ea56a7b630cd3b25aae15" title="Internal utility to update game selection state and persist changes." alt="" coords="318,39,550,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="270,57,302,57,302,63,270,63"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service.html#a2005d65aacae89774f20f99dfb29b2cd" title="Internal utility to retrieve a game entity by its identifier." alt="" coords="598,5,827,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="550,43,582,40,583,45,551,49"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a60d86d25fb2cffb5acccc81e107561e6" title="Sets the selection state of this game." alt="" coords="630,72,796,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="551,71,615,79,614,84,550,77"/>
+</map>

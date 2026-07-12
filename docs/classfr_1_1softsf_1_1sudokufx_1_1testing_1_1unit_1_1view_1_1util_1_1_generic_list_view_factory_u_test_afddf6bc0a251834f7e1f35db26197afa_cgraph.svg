@@ -106,10 +106,10 @@ var sectionId = 'dynsection-5';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a9096435064acd108290c71d223487b2a" target="_top" xlink:title=" ">
-<polygon fill="white" stroke="#666666" points="497,-112 331.75,-112 331.75,-80 497,-80 497,-112"/>
-<text text-anchor="start" x="339.75" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="middle" x="414.38" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.getBackups</text>
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#af227c1d499f693ab59c4c80ac7a5b4d1" target="_top" xlink:title="Returns the observable list of games.">
+<polygon fill="white" stroke="#666666" points="493.62,-112 335.12,-112 335.12,-80 493.62,-80 493.62,-112"/>
+<text text-anchor="start" x="343.12" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="middle" x="414.38" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.getGames</text>
 </a>
 </g>
 </g>
@@ -117,15 +117,15 @@ var sectionId = 'dynsection-5';
 <g id="edge11_Node000001_Node000006" class="edge">
 <title>Node1&#45;&gt;Node6</title>
 <g id="a_edge11_Node000001_Node000006"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M277.24,-112.9C291.7,-111.1 306.16,-109.31 319.95,-107.6"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="320.38,-111.07 329.87,-106.37 319.52,-104.13 320.38,-111.07"/>
+<path fill="none" stroke="#63b8ff" d="M277.24,-112.9C292.95,-110.95 308.65,-109 323.5,-107.16"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="323.69,-110.66 333.18,-105.96 322.82,-103.71 323.69,-110.66"/>
 </a>
 </g>
 </g>
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7943ef327bf3140fe8094b4866a47223" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#a7943ef327bf3140fe8094b4866a47223" target="_top" xlink:title="Returns the property for the currently selected backup.">
 <polygon fill="white" stroke="#666666" points="506,-44 322.75,-44 322.75,0 506,0 506,-44"/>
 <text text-anchor="start" x="330.75" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="330.75" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel.selectedBackup</text>

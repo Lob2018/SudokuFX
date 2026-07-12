@@ -58,7 +58,7 @@ var sectionId = 'dynsection-1';
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Constructs a GridCellViewModel and initializes UI bindings.">
 <polygon fill="#999999" stroke="#666666" points="185.5,-127 0,-127 0,-95 185.5,-95 185.5,-127"/>
 <text text-anchor="start" x="8" y="-113.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="92.75" y="-101.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.GridCellViewModel</text>
@@ -295,7 +295,7 @@ var sectionId = 'dynsection-1';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" target="_top" xlink:title="Checks if the cell is currently editable.">
 <polygon fill="white" stroke="#666666" points="863.12,-183 699.38,-183 699.38,-151 863.12,-151 863.12,-183"/>
 <text text-anchor="start" x="707.38" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="781.25" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridCellViewModel.isEditable</text>

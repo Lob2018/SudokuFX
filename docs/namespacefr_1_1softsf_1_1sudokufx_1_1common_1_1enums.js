@@ -9,6 +9,7 @@ var namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums =
     [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name" ],
     [ "PlayerConstants", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_constants.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_constants" ],
     [ "PlayerNameStatus", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status" ],
+    [ "PlayerSaveMode", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_save_mode.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_save_mode" ],
     [ "ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size" ],
     [ "ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels" ],
     [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls" ]

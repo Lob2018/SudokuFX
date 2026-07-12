@@ -69,7 +69,7 @@ var sectionId = 'dynsection-2';
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#acc1ffae6b7e4a182e7e7a1eca17481a3" target="_top" xlink:title="Returns the reactive binding for the cell button accessible text property.">
 <polygon fill="white" stroke="#666666" points="408.5,-458 198.25,-458 198.25,-414 408.5,-414 408.5,-458"/>
 <text text-anchor="start" x="206.25" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="206.25" y="-432.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellButtonAccessible</text>
@@ -89,7 +89,7 @@ var sectionId = 'dynsection-2';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" target="_top" xlink:title="Returns the reactive binding for the cell confirmation message property.">
 <polygon fill="white" stroke="#666666" points="398,-378 208.75,-378 208.75,-334 398,-334 398,-378"/>
 <text text-anchor="start" x="216.75" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="216.75" y="-352.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellConfirmation</text>
@@ -109,7 +109,7 @@ var sectionId = 'dynsection-2';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a3eafd2b6fcea2b1e01fb6691993d0f64" target="_top" xlink:title="Returns the reactive binding for the cell button accessible text property.">
 <polygon fill="white" stroke="#666666" points="398,-298 208.75,-298 208.75,-254 398,-254 398,-298"/>
 <text text-anchor="start" x="216.75" y="-284.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="216.75" y="-272.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.cellConfirmation</text>
@@ -129,7 +129,7 @@ var sectionId = 'dynsection-2';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" target="_top" xlink:title="Returns the observable list of players.">
 <polygon fill="white" stroke="#666666" points="386,-218 220.75,-218 220.75,-186 386,-186 386,-218"/>
 <text text-anchor="start" x="228.75" y="-204.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="303.38" y="-192.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.getPlayers</text>
@@ -148,7 +148,7 @@ var sectionId = 'dynsection-2';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" target="_top" xlink:title="Returns the property for the currently selected player.">
 <polygon fill="white" stroke="#666666" points="395,-168 211.75,-168 211.75,-124 395,-124 395,-168"/>
 <text text-anchor="start" x="219.75" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="219.75" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel.selectedPlayer</text>

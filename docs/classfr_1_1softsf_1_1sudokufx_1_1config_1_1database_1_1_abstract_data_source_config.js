@@ -7,5 +7,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source
     [ "setPoolName", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aade3fbed167a40c3b5ad30c792d07539", null ],
     [ "validateDatabaseState", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ae0f4d86f6855bfe5df36fa0195199b1c", null ],
     [ "jdbcUrl", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ae3cc0c04426aaa4718bc3cef02e32154", null ],
-    [ "poolName", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ad76a570bcd95346dd5504b203b8a9f8b", null ]
+    [ "poolName", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ad76a570bcd95346dd5504b203b8a9f8b", null ],
+    [ "SQL_VALIDATE_LEVEL_COUNT", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#acba71313514cf58e00cebe397abbd0a8", null ]
 ];

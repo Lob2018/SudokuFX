@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.business.GameService.deleteGame" name="fr.softsf.sudokufx.service.business.GameService.deleteGame">
+<area shape="rect" id="Node000001" title="Deletes a game entity." alt="" coords="5,5,235,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service.html#a2005d65aacae89774f20f99dfb29b2cd" title="Internal utility to retrieve a game entity by its identifier." alt="" coords="283,5,512,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,24,267,24,267,29,235,29"/>
+</map>

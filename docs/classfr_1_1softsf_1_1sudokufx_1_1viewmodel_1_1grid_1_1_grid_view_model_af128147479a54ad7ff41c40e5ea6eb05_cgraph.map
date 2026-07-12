@@ -14,9 +14,9 @@
 <area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="508,148,558,148,558,153,508,153"/>
 <area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="792,60,846,49,847,54,793,65"/>
 <area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="789,170,811,182,827,196,836,211,844,226,859,239,866,244,864,248,856,243,840,229,831,214,823,200,808,186,786,175"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="858,96,1088,139"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="858,96,1088,139"/>
 <area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="792,135,842,130,842,135,793,141"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="857,187,1089,229"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="857,187,1089,229"/>
 <area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="793,170,847,180,846,186,792,175"/>
 <area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="919,96,916,86,926,77,944,71,973,69,1004,72,1023,78,1021,83,1003,77,973,75,945,77,928,81,922,87,924,95"/>
 <area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="919,187,916,177,926,167,944,162,973,160,1004,162,1023,169,1021,174,1003,168,973,165,945,167,928,172,922,178,924,185"/>

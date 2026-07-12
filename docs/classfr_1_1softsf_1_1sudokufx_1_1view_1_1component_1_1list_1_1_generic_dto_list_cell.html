@@ -136,8 +136,8 @@ document.addEventListener('DOMContentLoaded', () => {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7d2057bb5ba7750cd17b7fea5660caa4" id="r_a7d2057bb5ba7750cd17b7fea5660caa4"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#a7d2057bb5ba7750cd17b7fea5660caa4">GenericDtoListCell</a> (ListView&lt; T &gt; listView, String buttonText, StringBinding buttonAccessibleTextBinding, StringBinding confirmationTitleBinding, StringBinding confirmationMessageBinding, Function&lt; T, String &gt; displayTextFunction, Consumer&lt; T &gt; onRemoveAction)</td></tr>
-<tr class="memdesc:a7d2057bb5ba7750cd17b7fea5660caa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A reusable ListCell for displaying items of type T in a ListView.">GenericDtoListCell</a>.  <br /></td></tr>
+<tr class="memitem:aba15764e3f39428d524e7b4390dfa98a" id="r_aba15764e3f39428d524e7b4390dfa98a"><td class="memItemLeft">&#160;</td><td class="memItemRight"><a class="el" href="#aba15764e3f39428d524e7b4390dfa98a">GenericDtoListCell</a> (ListView&lt; T &gt; listView, String buttonText, StringBinding buttonAccessibleTextBinding, StringBinding confirmationTitleBinding, StringBinding confirmationMessageBinding, Function&lt; T, String &gt; displayTextFunction, Predicate&lt; T &gt; isRemovable, Consumer&lt; T &gt; onRemoveAction)</td></tr>
+<tr class="memdesc:aba15764e3f39428d524e7b4390dfa98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html" title="A reusable ListCell for displaying items of type T in a ListView.">GenericDtoListCell</a>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -157,6 +157,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac8fa06e22001af5e51db89787e97ca58" id="r_ac8fa06e22001af5e51db89787e97ca58"><td class="memItemLeft">final Supplier&lt; String &gt;&#160;</td><td class="memItemRight"><a class="el" href="#ac8fa06e22001af5e51db89787e97ca58">confirmationTitleSupplier</a></td></tr>
 <tr class="memitem:a11d63a6db6b7a0db119a5ab3ecec145d" id="r_a11d63a6db6b7a0db119a5ab3ecec145d"><td class="memItemLeft">final Function&lt; T, String &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a11d63a6db6b7a0db119a5ab3ecec145d">displayTextFunction</a></td></tr>
 <tr class="memitem:aaf76983db113703424d3daa8e2e70d5f" id="r_aaf76983db113703424d3daa8e2e70d5f"><td class="memItemLeft">final HBox&#160;</td><td class="memItemRight"><a class="el" href="#aaf76983db113703424d3daa8e2e70d5f">hBox</a> = new HBox()</td></tr>
+<tr class="memitem:a30c90801b529128ce8cdef6c54e05086" id="r_a30c90801b529128ce8cdef6c54e05086"><td class="memItemLeft">final Predicate&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a30c90801b529128ce8cdef6c54e05086">isRemovable</a></td></tr>
 <tr class="memitem:a3a89680cdf5e09240ad65e4503e90995" id="r_a3a89680cdf5e09240ad65e4503e90995"><td class="memItemLeft">final Label&#160;</td><td class="memItemRight"><a class="el" href="#a3a89680cdf5e09240ad65e4503e90995">label</a> = new Label()</td></tr>
 <tr class="memitem:a231deddace9a2b0a8d142f7b0c9183f8" id="r_a231deddace9a2b0a8d142f7b0c9183f8"><td class="memItemLeft">final ListView&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#a231deddace9a2b0a8d142f7b0c9183f8">listView</a></td></tr>
 <tr class="memitem:aea70aa3dac52114fd67055c21e08bf44" id="r_aea70aa3dac52114fd67055c21e08bf44"><td class="memItemLeft">final Consumer&lt; T &gt;&#160;</td><td class="memItemRight"><a class="el" href="#aea70aa3dac52114fd67055c21e08bf44">onRemoveAction</a></td></tr>
@@ -176,8 +177,8 @@ Static Private Attributes</h2></td></tr>
   </dd>
 </dl>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7d2057bb5ba7750cd17b7fea5660caa4" name="a7d2057bb5ba7750cd17b7fea5660caa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d2057bb5ba7750cd17b7fea5660caa4">&#9670;&#160;</a></span>GenericDtoListCell()</h2>
+<a id="aba15764e3f39428d524e7b4390dfa98a" name="aba15764e3f39428d524e7b4390dfa98a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba15764e3f39428d524e7b4390dfa98a">&#9670;&#160;</a></span>GenericDtoListCell()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,6 +216,11 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Predicate&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>isRemovable</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">Consumer&lt; T &gt;</td>          <td class="paramname"><span class="paramname"><em>onRemoveAction</em></span>&#160;)</td>
         </tr>
       </table>
@@ -230,6 +236,8 @@ Static Private Attributes</h2></td></tr>
     <tr><td class="paramname">confirmationTitleBinding</td><td>binding to provide the confirmation dialog title (localized) </td></tr>
     <tr><td class="paramname">confirmationMessageBinding</td><td>binding to provide the confirmation dialog message (localized) </td></tr>
     <tr><td class="paramname">displayTextFunction</td><td>function to generate the display text for each item </td></tr>
+    <tr><td class="paramname">isRemovable</td><td>predicate determining if the item can be removed </td></tr>
+    <tr><td class="paramname">onRemoveAction</td><td>action to execute upon confirmed removal </td></tr>
   </table>
   </dd>
 </dl>
@@ -237,7 +245,7 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-2-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-2-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell_a7d2057bb5ba7750cd17b7fea5660caa4_cgraph.svg" width="258" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell_aba15764e3f39428d524e7b4390dfa98a_cgraph.svg" width="258" height="78"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
@@ -309,7 +317,7 @@ Static Private Attributes</h2></td></tr>
 
 <p>Updates the cell's content. </p>
 <p>If the item is not null, sets the label text and button behavior. If empty or null, clears the cell's content and resets component visibility.</p>
-<p>For <code><a class="el" href="">PlayerDto</a></code> items with the name "—", the delete button is hidden and removed from the layout to prevent deletion of the anonymous player.</p>
+<p>The visibility of the remove button is controlled by the provided <code class="JavaDocCode">isRemovable</code> predicate, ensuring that protected items cannot be deleted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">item</td><td>the item to display </td></tr>
@@ -448,6 +456,28 @@ Static Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">final HBox <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.hBox = new HBox()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30c90801b529128ce8cdef6c54e05086" name="a30c90801b529128ce8cdef6c54e05086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c90801b529128ce8cdef6c54e05086">&#9670;&#160;</a></span>isRemovable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">final Predicate&lt;T&gt; <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html">fr.softsf.sudokufx.view.component.list.GenericDtoListCell</a>&lt; T &gt;.isRemovable</td>
         </tr>
       </table>
   </td>

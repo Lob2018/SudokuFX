@@ -6,13 +6,13 @@
 <area shape="poly" id="edge18_Node000001_Node000009" title=" " alt="" coords="250,477,282,477,282,483,250,483"/>
 <area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad1b7ef7994bef2d64edd271bf77a9cbc" title="Checks if the current UI context is set to the Solve menu." alt="" coords="310,525,536,568"/>
 <area shape="poly" id="edge31_Node000001_Node000018" title=" " alt="" coords="226,499,311,519,310,524,224,505"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="892,29,1123,72"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="892,29,1123,72"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,190,465,159,501,122,545,87,595,60,665,40,738,29,810,27,877,30,877,35,810,32,739,35,666,45,597,65,548,92,504,126,468,163,442,193"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title=" " alt="" coords="898,211,1117,253"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="898,211,1117,253"/>
 <area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="520,233,596,244,670,249,745,249,883,242,883,247,745,254,670,254,596,249,520,238"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title=" " alt="" coords="898,301,1117,344"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="898,301,1117,344"/>
 <area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="504,233,597,255,745,282,883,303,882,309,744,287,595,260,503,238"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="892,120,1123,163"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="892,120,1123,163"/>
 <area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="528,189,596,177,741,160,876,148,877,153,741,165,596,183,529,194"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="602,192,828,235"/>
 <area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="543,211,586,211,586,216,543,216"/>

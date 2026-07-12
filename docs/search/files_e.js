@@ -13,13 +13,14 @@ var searchData=
   ['playerlanguageutest_2ejava_10',['PlayerLanguageUTest.java',['../_player_language_u_test_8java.html',1,'']]],
   ['playernamestatus_2ejava_11',['PlayerNameStatus.java',['../_player_name_status_8java.html',1,'']]],
   ['playerrepository_2ejava_12',['PlayerRepository.java',['../_player_repository_8java.html',1,'']]],
-  ['playerservice_2ejava_13',['PlayerService.java',['../_player_service_8java.html',1,'']]],
-  ['playerserviceutest_2ejava_14',['PlayerServiceUTest.java',['../_player_service_u_test_8java.html',1,'']]],
-  ['playerstateholder_2ejava_15',['PlayerStateHolder.java',['../_player_state_holder_8java.html',1,'']]],
-  ['playerstateholderitest_2ejava_16',['PlayerStateHolderITest.java',['../_player_state_holder_i_test_8java.html',1,'']]],
-  ['playerstateholderutest_2ejava_17',['PlayerStateHolderUTest.java',['../_player_state_holder_u_test_8java.html',1,'']]],
-  ['playerutest_2ejava_18',['PlayerUTest.java',['../_player_u_test_8java.html',1,'']]],
-  ['possibilitystarshbox_2ejava_19',['PossibilityStarsHBox.java',['../_possibility_stars_h_box_8java.html',1,'']]],
-  ['poweroften_2ejava_20',['PowerOfTen.java',['../_power_of_ten_8java.html',1,'']]],
-  ['poweroftenutest_2ejava_21',['PowerOfTenUTest.java',['../_power_of_ten_u_test_8java.html',1,'']]]
+  ['playersavemode_2ejava_13',['PlayerSaveMode.java',['../_player_save_mode_8java.html',1,'']]],
+  ['playerservice_2ejava_14',['PlayerService.java',['../_player_service_8java.html',1,'']]],
+  ['playerserviceutest_2ejava_15',['PlayerServiceUTest.java',['../_player_service_u_test_8java.html',1,'']]],
+  ['playerstateholder_2ejava_16',['PlayerStateHolder.java',['../_player_state_holder_8java.html',1,'']]],
+  ['playerstateholderitest_2ejava_17',['PlayerStateHolderITest.java',['../_player_state_holder_i_test_8java.html',1,'']]],
+  ['playerstateholderutest_2ejava_18',['PlayerStateHolderUTest.java',['../_player_state_holder_u_test_8java.html',1,'']]],
+  ['playerutest_2ejava_19',['PlayerUTest.java',['../_player_u_test_8java.html',1,'']]],
+  ['possibilitystarshbox_2ejava_20',['PossibilityStarsHBox.java',['../_possibility_stars_h_box_8java.html',1,'']]],
+  ['poweroften_2ejava_21',['PowerOfTen.java',['../_power_of_ten_8java.html',1,'']]],
+  ['poweroftenutest_2ejava_22',['PowerOfTenUTest.java',['../_power_of_ten_u_test_8java.html',1,'']]]
 ];

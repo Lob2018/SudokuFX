@@ -88,7 +88,7 @@ var sectionId = 'dynsection-1';
 <!-- Node3 -->
 <g id="Node000003" class="node">
 <title>Node3</title>
-<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae48034c1b5565cc3afd8b338ee9f76ff" target="_top" xlink:title=" ">
+<g id="a_Node000003"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae48034c1b5565cc3afd8b338ee9f76ff" target="_top" xlink:title="Returns the reactive binding for the solve clear accessible text property.">
 <polygon fill="white" stroke="#666666" points="788.25,-912 578,-912 578,-868 788.25,-868 788.25,-912"/>
 <text text-anchor="start" x="586" y="-898.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="586" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveClearAccessible</text>
@@ -108,7 +108,7 @@ var sectionId = 'dynsection-1';
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#abc77bfbb1db5def8a7084796bc0348b9" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#abc77bfbb1db5def8a7084796bc0348b9" target="_top" xlink:title="Returns the reactive binding for the solve clear role description property.">
 <polygon fill="white" stroke="#666666" points="774.38,-832 591.88,-832 591.88,-788 774.38,-788 774.38,-832"/>
 <text text-anchor="start" x="599.88" y="-818.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="599.88" y="-806.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveClearRole</text>
@@ -128,7 +128,7 @@ var sectionId = 'dynsection-1';
 <!-- Node5 -->
 <g id="Node000005" class="node">
 <title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a7e8f4d8c1391ac081300b9cc21771cd1" target="_top" xlink:title=" ">
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a7e8f4d8c1391ac081300b9cc21771cd1" target="_top" xlink:title="Returns the reactive binding for the solve clear tooltip property.">
 <polygon fill="white" stroke="#666666" points="778.5,-752 587.75,-752 587.75,-708 778.5,-708 778.5,-752"/>
 <text text-anchor="start" x="595.75" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="595.75" y="-726.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveClearTooltip</text>
@@ -148,7 +148,7 @@ var sectionId = 'dynsection-1';
 <!-- Node6 -->
 <g id="Node000006" class="node">
 <title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a0d2913780cf90612d34d6b2304670609" target="_top" xlink:title=" ">
+<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a0d2913780cf90612d34d6b2304670609" target="_top" xlink:title="Returns the reactive binding for the solve menu maxi accessible text property.">
 <polygon fill="white" stroke="#666666" points="775.12,-672 591.12,-672 591.12,-628 775.12,-628 775.12,-672"/>
 <text text-anchor="start" x="599.12" y="-658.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="599.12" y="-646.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveMenuMaxi</text>
@@ -168,7 +168,7 @@ var sectionId = 'dynsection-1';
 <!-- Node7 -->
 <g id="Node000007" class="node">
 <title>Node7</title>
-<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a62d0a338055b023523e967123676352b" target="_top" xlink:title=" ">
+<g id="a_Node000007"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a62d0a338055b023523e967123676352b" target="_top" xlink:title="Returns the reactive binding for the solve menu maxi role description property.">
 <polygon fill="white" stroke="#666666" points="775.12,-592 591.12,-592 591.12,-548 775.12,-548 775.12,-592"/>
 <text text-anchor="start" x="599.12" y="-578.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="599.12" y="-566.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveMenuMaxi</text>
@@ -188,7 +188,7 @@ var sectionId = 'dynsection-1';
 <!-- Node8 -->
 <g id="Node000008" class="node">
 <title>Node8</title>
-<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a2bea1d273cba2904bfc7631fe78fb882" target="_top" xlink:title=" ">
+<g id="a_Node000008"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a2bea1d273cba2904bfc7631fe78fb882" target="_top" xlink:title="Returns the reactive binding for the solve menu maxi text property.">
 <polygon fill="white" stroke="#666666" points="775.12,-512 591.12,-512 591.12,-468 775.12,-468 775.12,-512"/>
 <text text-anchor="start" x="599.12" y="-498.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="599.12" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveMenuMaxi</text>
@@ -208,7 +208,7 @@ var sectionId = 'dynsection-1';
 <!-- Node9 -->
 <g id="Node000009" class="node">
 <title>Node9</title>
-<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#aad2a6cea94a081a27ec5815558f6f2fa" target="_top" xlink:title=" ">
+<g id="a_Node000009"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#aad2a6cea94a081a27ec5815558f6f2fa" target="_top" xlink:title="Returns the reactive binding for the solve menu maxi tooltip property.">
 <polygon fill="white" stroke="#666666" points="775.12,-432 591.12,-432 591.12,-388 775.12,-388 775.12,-432"/>
 <text text-anchor="start" x="599.12" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="599.12" y="-406.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveMenuMaxi</text>
@@ -228,7 +228,7 @@ var sectionId = 'dynsection-1';
 <!-- Node10 -->
 <g id="Node000010" class="node">
 <title>Node10</title>
-<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a9c090f51f85e2b592a3406e35a5ba810" target="_top" xlink:title=" ">
+<g id="a_Node000010"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a9c090f51f85e2b592a3406e35a5ba810" target="_top" xlink:title="Returns the reactive binding for the solve reduce accessible text property.">
 <polygon fill="white" stroke="#666666" points="793.5,-352 572.75,-352 572.75,-308 793.5,-308 793.5,-352"/>
 <text text-anchor="start" x="580.75" y="-338.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="580.75" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveReduceAccessible</text>
@@ -248,7 +248,7 @@ var sectionId = 'dynsection-1';
 <!-- Node11 -->
 <g id="Node000011" class="node">
 <title>Node11</title>
-<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ac55bbce1266f95be0283786289266b34" target="_top" xlink:title=" ">
+<g id="a_Node000011"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ac55bbce1266f95be0283786289266b34" target="_top" xlink:title="Returns the reactive binding for the solve reduce text property.">
 <polygon fill="white" stroke="#666666" points="778.88,-272 587.38,-272 587.38,-228 778.88,-228 778.88,-272"/>
 <text text-anchor="start" x="595.38" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="595.38" y="-246.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveReduceText</text>
@@ -268,7 +268,7 @@ var sectionId = 'dynsection-1';
 <!-- Node12 -->
 <g id="Node000012" class="node">
 <title>Node12</title>
-<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#af00eec56891007110fb789e20c80311c" target="_top" xlink:title=" ">
+<g id="a_Node000012"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#af00eec56891007110fb789e20c80311c" target="_top" xlink:title="Returns the reactive binding for the solve reduce tooltip property.">
 <polygon fill="white" stroke="#666666" points="783.75,-192 582.5,-192 582.5,-148 783.75,-148 783.75,-192"/>
 <text text-anchor="start" x="590.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="590.5" y="-166.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveReduceTooltip</text>
@@ -288,7 +288,7 @@ var sectionId = 'dynsection-1';
 <!-- Node13 -->
 <g id="Node000013" class="node">
 <title>Node13</title>
-<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a83bcf4a5c8f152652fc8af977249aecd" target="_top" xlink:title=" ">
+<g id="a_Node000013"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a83bcf4a5c8f152652fc8af977249aecd" target="_top" xlink:title="Returns the reactive binding for the solve role description property.">
 <polygon fill="white" stroke="#666666" points="787.5,-112 578.75,-112 578.75,-68 787.5,-68 787.5,-112"/>
 <text text-anchor="start" x="586.75" y="-98.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="start" x="586.75" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveRoleDescription</text>
@@ -308,7 +308,7 @@ var sectionId = 'dynsection-1';
 <!-- Node14 -->
 <g id="Node000014" class="node">
 <title>Node14</title>
-<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a4000e922b751d35e050aa225eac8d6aa" target="_top" xlink:title=" ">
+<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a4000e922b751d35e050aa225eac8d6aa" target="_top" xlink:title="Returns the reactive binding for the solve text property.">
 <polygon fill="white" stroke="#666666" points="780.38,-32 585.88,-32 585.88,0 780.38,0 780.38,-32"/>
 <text text-anchor="start" x="593.88" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
 <text text-anchor="middle" x="683.12" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSolveViewModel.solveTextProperty</text>

@@ -10,9 +10,9 @@
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="518,82,571,78,572,83,518,87"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="590,116,808,159"/>
 <area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="518,163,574,154,575,159,518,168"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title=" " alt="" coords="584,207,814,249"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="584,207,814,249"/>
 <area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="518,197,568,205,567,210,518,202"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title=" " alt="" coords="583,297,814,340"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="583,297,814,340"/>
 <area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="457,202,639,288,636,293,455,207"/>
 <area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="644,207,642,197,651,187,670,182,699,180,730,182,748,189,747,194,729,188,699,185,671,187,654,192,647,198,649,205"/>
 <area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="644,297,642,287,651,278,670,273,699,271,730,273,748,279,747,284,729,278,699,276,671,278,654,283,647,289,649,296"/>

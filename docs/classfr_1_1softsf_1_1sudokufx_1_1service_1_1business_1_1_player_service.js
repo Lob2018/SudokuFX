@@ -6,6 +6,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service =
     [ "getPlayer", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#ae0e635b455827f61c43bf618b7374914", null ],
     [ "getPlayers", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#abb7b5c81662bbb92861d17b3645acba4", null ],
     [ "switchAndSelectNewPlayer", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#ab72e7c8208e8d621c87ca6df248ae42c", null ],
+    [ "updateCurrentPlayerName", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a7af0dcca2a12868cdc6f444ce50924ea", null ],
     [ "updatePlayer", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a6f6b31510b7e15b031f2feb95df7ed4a", null ],
     [ "updatePlayerSelection", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#aba49426ee6f1106aeb7cac16ebd06e91", null ],
     [ "gameLevelService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#aaa1fa0e5da910df8cbad3d21d8dbb2ff", null ],

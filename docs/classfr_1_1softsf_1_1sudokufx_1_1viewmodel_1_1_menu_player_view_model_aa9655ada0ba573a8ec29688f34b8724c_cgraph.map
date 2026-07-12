@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MenuPlayerViewModel" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MenuPlayerViewModel">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,295,297,337"/>
+<area shape="rect" id="Node000001" title="Initializes the MenuPlayerViewModel with necessary infrastructure and reactive bindings." alt="" coords="5,295,297,337"/>
 <area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="90,295,88,284,98,275,119,270,151,268,186,270,206,277,205,282,185,276,151,273,120,275,100,280,93,286,95,293"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ab85707b9c1970d47449a515c65882ba9" title="Creates a localized binding by concatenating two keys." alt="" coords="351,5,603,64"/>
 <area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="162,293,188,247,229,188,281,127,311,99,343,74,350,70,353,74,346,78,315,103,285,131,233,192,193,250,166,296"/>

@@ -167,6 +167,7 @@ var NAVTREEINDEX0 =
 "_player_language_u_test_8java.html":[3,0,1,1,0,0,0,0,2,5],
 "_player_name_status_8java.html":[3,0,1,0,0,0,0,0,1,1,9],
 "_player_repository_8java.html":[3,0,1,0,0,0,0,0,6,8],
+"_player_save_mode_8java.html":[3,0,1,0,0,0,0,0,1,1,10],
 "_player_service_8java.html":[3,0,1,0,0,0,0,0,7,0,6],
 "_player_service_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,1,0,2],
 "_player_state_holder_8java.html":[3,0,1,0,0,0,0,0,9,1,1],
@@ -178,7 +179,7 @@ var NAVTREEINDEX0 =
 "_power_of_ten_u_test_8java.html":[3,0,1,1,0,0,0,0,4,2,0,2,0,1],
 "_repository_tools_8java.html":[3,0,1,0,0,0,0,0,6,0,0],
 "_resource_load_exception_8java.html":[3,0,1,0,0,0,0,0,1,2,6],
-"_screen_size_8java.html":[3,0,1,0,0,0,0,0,1,1,10],
+"_screen_size_8java.html":[3,0,1,0,0,0,0,0,1,1,11],
 "_screen_size_i_test_8java.html":[3,0,1,1,0,0,0,0,4,1,0,0,0],
 "_secret_key_encryption_service_a_e_s_g_c_m_8java.html":[3,0,1,0,0,0,0,0,2,0,9],
 "_secret_key_encryption_service_a_e_s_g_c_m_u_test_8java.html":[3,0,1,1,0,0,0,0,1,0,3],
@@ -192,11 +193,11 @@ var NAVTREEINDEX0 =
 "_sudo_main_8java.html":[3,0,1,0,0,0,0,0,12],
 "_tag_dto_8java.html":[3,0,1,0,0,0,0,0,3,0,2],
 "_toast_data_8java.html":[3,0,1,0,0,0,0,0,3,9],
-"_toast_levels_8java.html":[3,0,1,0,0,0,0,0,1,1,11],
+"_toast_levels_8java.html":[3,0,1,0,0,0,0,0,1,1,12],
 "_toaster_button_8java.html":[3,0,1,0,0,0,0,0,8,0,2,1],
 "_toaster_service_8java.html":[3,0,1,0,0,0,0,0,7,2,5],
 "_toaster_v_box_8java.html":[3,0,1,0,0,0,0,0,8,0,2,2],
-"_urls_8java.html":[3,0,1,0,0,0,0,0,1,1,12],
+"_urls_8java.html":[3,0,1,0,0,0,0,0,1,1,13],
 "_version_service_8java.html":[3,0,1,0,0,0,0,0,7,1,1],
 "_version_service_i_test_8java.html":[3,0,1,1,0,0,0,0,4,1,1,0,0],
 "annotated.html":[2,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#a73df550f511e6fb8330df3f4582bcaad":[2,0,0,0,0,0,0,3],
 "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#aa4c461ca0bc6198cc6dd38f8a86e6761":[1,0,0,0,0,0,0,1],
 "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#aa4c461ca0bc6198cc6dd38f8a86e6761":[2,0,0,0,0,0,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#af9215a35c9a6ca3890f7842cec2676ac":[1,0,0,0,0,0,0,4],
-"classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#af9215a35c9a6ca3890f7842cec2676ac":[2,0,0,0,0,0,0,4]
+"classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html#af9215a35c9a6ca3890f7842cec2676ac":[1,0,0,0,0,0,0,4]
 };
