@@ -743,6 +743,7 @@ public final class MainView implements IMainView {
      *       pseudo-classes.
      *   <li>Registers reactive observers to synchronize the UI automatically when the active player
      *       is switched.
+     *   <li>Binds the edit button state to the anonymous player status.
      *   <li>Delegates the multi-column layout initialization to the structural list view factory.
      * </ul>
      */
