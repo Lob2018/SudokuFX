@@ -815,7 +815,11 @@ public final class MainView implements IMainView {
                                         menuPlayerViewModel.playerNameStatusProperty().get());
                             }
                         });
-        menuPlayerButtonNewText.setOnAction(event -> menuPlayerViewModel.createNewPlayerByName());
+        menuPlayerButtonNewText.setOnAction(
+                event -> {
+                    menuPlayerViewModel.savePlayer();
+                    Platform.runLater(() -> menuPlayerButtonPlayer.requestFocus());
+                });
         menuPlayerButtonNewText
                 .focusedProperty()
                 .addListener(
@@ -832,8 +836,7 @@ public final class MainView implements IMainView {
                 event -> {
                     if (event.getCode() == javafx.scene.input.KeyCode.ESCAPE
                             && menuPlayerViewModel.editingProperty().get()) {
-                        menuPlayerViewModel.cancelNewPlayer();
-                        menuPlayerButtonNewText.getParent().requestFocus();
+                        Platform.runLater(() -> menuPlayerButtonPlayer.requestFocus());
                         event.consume();
                     }
                 });
@@ -1360,10 +1363,19 @@ public final class MainView implements IMainView {
         menuPlayerButtonPlayer.requestFocus();
     }
 
+    /**
+     * Make the name field editable in order to update current player name if that name doesn't
+     * exist.
+     */
+    @FXML
+    public void handleMenuEditPlayerName() {
+        menuPlayerViewModel.prepareUpdatePlayerNameField();
+    }
+
     /** Make the name field editable in order to create a new player if that name doesn't exist. */
     @FXML
     public void handleMenuNewPlayer() {
-        menuPlayerViewModel.prepareNewPlayer();
+        menuPlayerViewModel.prepareCreatePlayerNameField();
     }
 
     /**

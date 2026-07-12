@@ -328,6 +328,32 @@ public class PlayerService {
     }
 
     /**
+     * Updates the current player name and persists the change.
+     *
+     * @param currentPlayer the current player DTO to identify the entity
+     * @param finalName the new validated name to assign
+     * @throws IllegalArgumentException if the player is not found
+     * @throws jakarta.validation.ConstraintViolationException if validation fails
+     */
+    @Transactional
+    public void updateCurrentPlayerName(PlayerDto currentPlayer, String finalName) {
+        PlayerDto currentPlayerDto = jakartaValidator.validateOrThrow(currentPlayer);
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                finalName, "finalName must not be null or blank");
+        long playerId = currentPlayerDto.playerid();
+        Player player =
+                playerRepository
+                        .findById(playerId)
+                        .orElseThrow(
+                                () ->
+                                        ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                                                PLAYER_NOT_FOUND + playerId));
+        player.setName(finalName.trim());
+        player.setUpdatedat(MyDateTime.INSTANCE.getCurrentInstant());
+        playerRepository.save(player);
+    }
+
+    /**
      * Internal utility to update player selection state and persist changes.
      *
      * @param playerId the identifier of the player to update

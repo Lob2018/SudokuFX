@@ -446,7 +446,7 @@
                         <Tooltip/>
                     </tooltip>
                 </Button>
-                <Button fx:id="menuPlayerButtonPlayerEdit" text="&#xe3c9;" styleClass="menuButtonCircle, material">
+                <Button fx:id="menuPlayerButtonPlayerEdit" text="&#xe3c9;" styleClass="menuButtonCircle, material" onAction="#handleMenuEditPlayerName">
                     <tooltip>
                         <Tooltip/>
                     </tooltip>

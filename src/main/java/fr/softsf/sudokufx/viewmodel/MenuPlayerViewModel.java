@@ -17,18 +17,23 @@ import javafx.beans.property.ReadOnlyBooleanProperty;
 import javafx.beans.property.ReadOnlyBooleanWrapper;
 import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.beans.property.ReadOnlyObjectWrapper;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TextFormatter;
 
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.PlayerConstants;
 import fr.softsf.sudokufx.common.enums.PlayerNameStatus;
+import fr.softsf.sudokufx.common.enums.PlayerSaveMode;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.util.MyRegex;
 import fr.softsf.sudokufx.dto.PlayerDto;
@@ -46,6 +51,7 @@ import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 @Component
 public class MenuPlayerViewModel {
 
+    private static final Logger LOG = LoggerFactory.getLogger(MenuPlayerViewModel.class);
     private static final String MENU_PLAYER_BUTTON_PLAYER_ACCESSIBILITY =
             "menu.player.button.player.accessibility";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
@@ -93,6 +99,8 @@ public class MenuPlayerViewModel {
             new SimpleStringProperty(I18n.INSTANCE.getValue(MENU_PLAYER_BUTTON_NEW_PLAYER_TEXT));
     private final ReadOnlyBooleanWrapper editing = new ReadOnlyBooleanWrapper(false);
     private final ReadOnlyBooleanWrapper playerSwitchedSignal = new ReadOnlyBooleanWrapper(false);
+    private final ObjectProperty<PlayerSaveMode> currentSaveMode =
+            new SimpleObjectProperty<>(PlayerSaveMode.CREATE);
 
     private boolean isLockedWhileUpdating = false;
 
@@ -443,19 +451,47 @@ public class MenuPlayerViewModel {
         return editing.getReadOnlyProperty();
     }
 
-    /** Prepares the text field for a new player. */
-    public void prepareNewPlayer() {
-        playerNameInput.set("");
+    /** Prepares the name text field for current player. */
+    public void prepareUpdatePlayerNameField() {
+        initPlayerNameField(PlayerSaveMode.UPDATE, playerName());
+    }
+
+    /** Prepares the name text field for a new player. */
+    public void prepareCreatePlayerNameField() {
+        initPlayerNameField(PlayerSaveMode.CREATE, "");
+    }
+
+    /** Centralizes UI initialization for player name input. */
+    private void initPlayerNameField(PlayerSaveMode mode, String initialValue) {
+        if (Objects.isNull(mode)) {
+            LOG.error(
+                    "██ Exception initPlayerNameField : Attempted to prepare player name field with"
+                            + " null mode");
+            return;
+        }
+        currentSaveMode.set(mode);
+        playerNameInput.set(StringUtils.defaultString(initialValue));
         editing.set(true);
     }
 
-    /** Validates and sets the player name into the state holder ONLY on Enter key. */
-    public void createNewPlayerByName() {
+    /**
+     * Validates and saves the player name into the state holder only on Enter key.
+     *
+     * <p>Depending on the current {@link PlayerSaveMode}, this method either creates a new player
+     * or updates the name of the existing current player.
+     */
+    public void savePlayer() {
         if (!editing.get() || playerNameStatus.get() != PlayerNameStatus.VALID) {
             return;
         }
         String finalName = playerNameInput.get().trim();
-        playerService.createNewPlayerWithCurrent(playerStateHolder.getCurrentPlayer(), finalName);
+        PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
+        PlayerSaveMode playerSaveMode = currentSaveMode.get();
+        if (Objects.requireNonNull(playerSaveMode) == PlayerSaveMode.CREATE) {
+            playerService.createNewPlayerWithCurrent(currentPlayer, finalName);
+        } else if (playerSaveMode == PlayerSaveMode.UPDATE) {
+            playerService.updateCurrentPlayerName(currentPlayer, finalName);
+        }
         playerStateHolder.refreshCurrentPlayer();
         editing.set(false);
         loadPlayers();
