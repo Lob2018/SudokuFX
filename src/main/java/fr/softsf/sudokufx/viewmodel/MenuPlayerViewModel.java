@@ -104,6 +104,15 @@ public class MenuPlayerViewModel {
 
     private boolean isLockedWhileUpdating = false;
 
+    /**
+     * Initializes the MenuPlayerViewModel with necessary infrastructure and reactive bindings.
+     *
+     * <p>Configures i18n-aware StringBindings for UI labels, tooltips, and accessibility roles.
+     * Sets up listeners for player selection and locale changes to maintain UI synchronization.
+     *
+     * @param playerStateHolder holder for persistent player state
+     * @param playerService service for player management operations
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP2",
             justification =
@@ -250,6 +259,11 @@ public class MenuPlayerViewModel {
         playerStateHolder.currentPlayerProperty().set(playerStateHolder.getCurrentPlayer());
     }
 
+    /**
+     * Returns the observable list of players.
+     *
+     * @return the observable list containing player data transfer objects
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -259,10 +273,20 @@ public class MenuPlayerViewModel {
         return players;
     }
 
+    /**
+     * Returns the property for the currently selected player.
+     *
+     * @return the ObjectProperty managing the selected player
+     */
     public ObjectProperty<PlayerDto> selectedPlayerProperty() {
         return playerStateHolder.currentPlayerProperty();
     }
 
+    /**
+     * Returns the reactive binding for the player accessible text property.
+     *
+     * @return the StringBinding for the player accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -272,6 +296,11 @@ public class MenuPlayerViewModel {
         return playerAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the player tooltip property.
+     *
+     * @return the StringBinding for the player tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -281,6 +310,11 @@ public class MenuPlayerViewModel {
         return playerTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the player role description property.
+     *
+     * @return the StringBinding for the player role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -290,6 +324,11 @@ public class MenuPlayerViewModel {
         return playerRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the maxi player tooltip property.
+     *
+     * @return the StringBinding for the maxi player tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -299,6 +338,11 @@ public class MenuPlayerViewModel {
         return maxiPlayerTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the maxi player role description property.
+     *
+     * @return the StringBinding for the maxi player role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -308,6 +352,11 @@ public class MenuPlayerViewModel {
         return maxiPlayerRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the edit accessible text property.
+     *
+     * @return the StringBinding for the edit accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -317,6 +366,11 @@ public class MenuPlayerViewModel {
         return editAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the edit tooltip property.
+     *
+     * @return the StringBinding for the edit tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -326,6 +380,11 @@ public class MenuPlayerViewModel {
         return editTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the edit role description property.
+     *
+     * @return the StringBinding for the edit role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -335,6 +394,11 @@ public class MenuPlayerViewModel {
         return editRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the new player accessible text property.
+     *
+     * @return the StringBinding for the new player accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -344,6 +408,11 @@ public class MenuPlayerViewModel {
         return newAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the new player tooltip property.
+     *
+     * @return the StringBinding for the new player tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -353,6 +422,11 @@ public class MenuPlayerViewModel {
         return newTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the new player text property.
+     *
+     * @return the StringBinding for the new player text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -362,6 +436,11 @@ public class MenuPlayerViewModel {
         return newText;
     }
 
+    /**
+     * Returns the reactive binding for the new player role description property.
+     *
+     * @return the StringBinding for the new player role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -371,6 +450,11 @@ public class MenuPlayerViewModel {
         return newRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the reduce button accessible text property.
+     *
+     * @return the StringBinding for the reduce button accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -380,6 +464,11 @@ public class MenuPlayerViewModel {
         return reduceAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the reduce button tooltip property.
+     *
+     * @return the StringBinding for the reduce button tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -389,6 +478,11 @@ public class MenuPlayerViewModel {
         return reduceTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the reduce button tooltip property.
+     *
+     * @return the StringBinding for the reduce button tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -398,6 +492,11 @@ public class MenuPlayerViewModel {
         return reduceText;
     }
 
+    /**
+     * Returns the reactive binding for the cell button accessible text property.
+     *
+     * @return the StringBinding for the cell button accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -407,6 +506,11 @@ public class MenuPlayerViewModel {
         return cellButtonAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the cell button accessible text property.
+     *
+     * @return the StringBinding for the cell button accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -416,6 +520,11 @@ public class MenuPlayerViewModel {
         return cellConfirmationTitle;
     }
 
+    /**
+     * Returns the reactive binding for the cell confirmation message property.
+     *
+     * @return the StringBinding for the cell confirmation message
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -425,10 +534,20 @@ public class MenuPlayerViewModel {
         return cellConfirmationMessage;
     }
 
+    /**
+     * Returns the read-only object property for the player name status.
+     *
+     * @return the ReadOnlyObjectProperty for the player name status
+     */
     public ReadOnlyObjectProperty<PlayerNameStatus> playerNameStatusProperty() {
         return playerNameStatus.getReadOnlyProperty();
     }
 
+    /**
+     * Returns the read-only boolean property for the player switched signal.
+     *
+     * @return the ReadOnlyBooleanProperty for the player switched signal
+     */
     public ReadOnlyBooleanProperty playerSwitchedSignalProperty() {
         return playerSwitchedSignal.getReadOnlyProperty();
     }
@@ -447,6 +566,12 @@ public class MenuPlayerViewModel {
         return playerNameInput;
     }
 
+    /**
+     * Returns the read-only boolean property indicating if the player name is currently being
+     * edited.
+     *
+     * @return the ReadOnlyBooleanProperty for the editing state
+     */
     public ReadOnlyBooleanProperty editingProperty() {
         return editing.getReadOnlyProperty();
     }

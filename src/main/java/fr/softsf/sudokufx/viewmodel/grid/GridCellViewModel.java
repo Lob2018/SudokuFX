@@ -64,6 +64,13 @@ public final class GridCellViewModel {
     private final int row;
     private final int col;
 
+    /**
+     * Constructs a {@code GridCellViewModel} and initializes UI bindings.
+     *
+     * @param id the unique cell identifier
+     * @param row the row index (0-8)
+     * @param col the column index (0-8)
+     */
     public GridCellViewModel(int id, int row, int col) {
         this.id.set(id);
         this.row = row;
@@ -360,14 +367,29 @@ public final class GridCellViewModel {
         return sb.toString();
     }
 
+    /**
+     * Returns the row index of the cell.
+     *
+     * @return row index (0-8)
+     */
     public int getRow() {
         return row;
     }
 
+    /**
+     * Returns the column index of the cell.
+     *
+     * @return column index (0-8)
+     */
     public int getCol() {
         return col;
     }
 
+    /**
+     * Returns the label control representing the cell in display mode.
+     *
+     * @return the {@link Label} component
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -377,6 +399,11 @@ public final class GridCellViewModel {
         return label;
     }
 
+    /**
+     * Returns the text area control used for editing the cell.
+     *
+     * @return the {@link TextArea} component
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -386,18 +413,38 @@ public final class GridCellViewModel {
         return textArea;
     }
 
+    /**
+     * Returns the unique identifier of the cell.
+     *
+     * @return cell ID
+     */
     public int getId() {
         return id.get();
     }
 
+    /**
+     * Checks if the cell is currently editable.
+     *
+     * @return {@code true} if editable, {@code false} otherwise
+     */
     public boolean isEditable() {
         return editable.get();
     }
 
+    /**
+     * Checks if the cell is currently editable.
+     *
+     * @return {@code true} if editable, {@code false} otherwise
+     */
     public ReadOnlyIntegerProperty idProperty() {
         return id.getReadOnlyProperty();
     }
 
+    /**
+     * Returns the property representing the raw unformatted text of the cell.
+     *
+     * @return {@link StringProperty} for the raw text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -407,6 +454,11 @@ public final class GridCellViewModel {
         return rawText;
     }
 
+    /**
+     * Returns the property representing the editable state of the cell.
+     *
+     * @return {@link BooleanProperty} for the editable state
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =

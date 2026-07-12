@@ -28,6 +28,10 @@ public class MenuHiddenViewModel {
     /** Reactive binding for the accessibility text of the "Show Menu" button when hidden. */
     private final StringBinding menuHiddenButtonShowAccessibilityText;
 
+    /**
+     * Constructs a new {@code MenuHiddenViewModel} and initializes the reactive accessibility
+     * text binding.
+     */
     public MenuHiddenViewModel() {
         menuHiddenButtonShowAccessibilityText =
                 Bindings.createStringBinding(

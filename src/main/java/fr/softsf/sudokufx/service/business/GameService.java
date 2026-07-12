@@ -42,6 +42,18 @@ public class GameService {
     private final GameLevelService gameLevelService;
     private final JakartaValidator jakartaValidator;
 
+    /**
+     * Constructs a new {@code GameService} with the required infrastructure, service, and mapping
+     * dependencies.
+     *
+     * @param gameRepository the repository for {@link Game} entities
+     * @param playerRepository the repository for {@link Player} entities
+     * @param gridRepository the repository for {@link Grid} entities
+     * @param gameMapper the mapper used to convert {@link Game} entities to {@link GameDto}
+     * @param gridService the service providing {@link Grid} duplication logic
+     * @param gameLevelService the service providing {@link GameLevel} lookup logic
+     * @param jakartaValidator the validator used to ensure data integrity of processed DTOs
+     */
     public GameService(
             GameRepository gameRepository,
             PlayerRepository playerRepository,

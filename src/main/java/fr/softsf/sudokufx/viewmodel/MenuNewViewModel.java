@@ -47,6 +47,12 @@ public class MenuNewViewModel {
     private Task<Boolean> checkVersionTask;
     private ChangeListener<Boolean> versionListener;
 
+    /**
+     * Constructs a new {@code MenuNewViewModel}, initializes localized bindings, and triggers an
+     * asynchronous version check.
+     *
+     * @param versionService the service used to verify application version status
+     */
     public MenuNewViewModel(VersionService versionService) {
         this.versionService = versionService;
         maxiNewAccessibleText = createStringBinding("menu.maxi.button.new.accessibility");
@@ -69,6 +75,11 @@ public class MenuNewViewModel {
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
     }
 
+    /**
+     * Returns the reactive binding for the maxi "New" button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -78,6 +89,11 @@ public class MenuNewViewModel {
         return maxiNewAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the maxi "New" button's label text.
+     *
+     * @return the StringBinding for the button text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -87,6 +103,11 @@ public class MenuNewViewModel {
         return maxiNewText;
     }
 
+    /**
+     * Returns the reactive binding for the maxi "New" button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -96,6 +117,11 @@ public class MenuNewViewModel {
         return newAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the maxi "New" button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -105,6 +131,11 @@ public class MenuNewViewModel {
         return maxiNewTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the mini "New" button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =

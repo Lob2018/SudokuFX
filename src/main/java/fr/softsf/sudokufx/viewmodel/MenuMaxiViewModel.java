@@ -65,6 +65,11 @@ public class MenuMaxiViewModel {
                 () -> I18n.INSTANCE.getValue(key), I18n.INSTANCE.localeProperty());
     }
 
+    /**
+     * Returns the reactive binding for the reduce button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -74,6 +79,11 @@ public class MenuMaxiViewModel {
         return reduceAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the reduce button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -83,6 +93,11 @@ public class MenuMaxiViewModel {
         return reduceTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the reduce button's label text.
+     *
+     * @return the StringBinding for the label text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -92,6 +107,11 @@ public class MenuMaxiViewModel {
         return reduceText;
     }
 
+    /**
+     * Returns the reactive binding for the language button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -101,6 +121,11 @@ public class MenuMaxiViewModel {
         return languageAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the language button's ISO code text.
+     *
+     * @return the StringBinding for the ISO code
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -110,6 +135,11 @@ public class MenuMaxiViewModel {
         return languageTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the language button's ISO code text.
+     *
+     * @return the StringBinding for the ISO code
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -119,6 +149,11 @@ public class MenuMaxiViewModel {
         return languageIso;
     }
 
+    /**
+     * Returns the reactive binding for the language button's label text.
+     *
+     * @return the StringBinding for the label text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -128,6 +163,11 @@ public class MenuMaxiViewModel {
         return languageText;
     }
 
+    /**
+     * Returns the reactive binding for the help button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -137,6 +177,11 @@ public class MenuMaxiViewModel {
         return helpAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the help button's label text.
+     *
+     * @return the StringBinding for the label text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -146,6 +191,11 @@ public class MenuMaxiViewModel {
         return helpTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the help button's label text.
+     *
+     * @return the StringBinding for the label text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =

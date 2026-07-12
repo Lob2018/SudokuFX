@@ -456,10 +456,20 @@ public final class MenuOptionsViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
+    /**
+     * Returns the read-only boolean property for the grid opacity state.
+     *
+     * @return the ReadOnlyBooleanProperty for grid opacity
+     */
     public ReadOnlyBooleanProperty gridOpacityProperty() {
         return gridOpacityProperty.getReadOnlyProperty();
     }
 
+    /**
+     * Returns the reactive binding for the menu maxi accessible text property.
+     *
+     * @return the StringBinding for the menu maxi accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -469,6 +479,11 @@ public final class MenuOptionsViewModel {
         return optionsMenuMaxiAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the menu maxi tooltip property.
+     *
+     * @return the StringBinding for the menu maxi tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -478,6 +493,11 @@ public final class MenuOptionsViewModel {
         return optionsMenuMaxiTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the menu maxi role description property.
+     *
+     * @return the StringBinding for the menu maxi role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -487,6 +507,11 @@ public final class MenuOptionsViewModel {
         return optionsMenuMaxiRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the menu maxi text property.
+     *
+     * @return the StringBinding for the menu maxi text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -496,6 +521,11 @@ public final class MenuOptionsViewModel {
         return optionsMenuMaxiText;
     }
 
+    /**
+     * Returns the reactive binding for the options reduce accessible text property.
+     *
+     * @return the StringBinding for the options reduce accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -505,6 +535,11 @@ public final class MenuOptionsViewModel {
         return optionsReduceAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the options reduce tooltip property.
+     *
+     * @return the StringBinding for the options reduce tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -514,6 +549,11 @@ public final class MenuOptionsViewModel {
         return optionsReduceTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options reduce text property.
+     *
+     * @return the StringBinding for the options reduce text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -523,6 +563,11 @@ public final class MenuOptionsViewModel {
         return optionsReduceText;
     }
 
+    /**
+     * Returns the reactive binding for the options accessible text property.
+     *
+     * @return the StringBinding for the options accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -532,6 +577,11 @@ public final class MenuOptionsViewModel {
         return optionsAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the options tooltip property.
+     *
+     * @return the StringBinding for the options tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -541,6 +591,11 @@ public final class MenuOptionsViewModel {
         return optionsTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options role description property.
+     *
+     * @return the StringBinding for the options role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -550,6 +605,11 @@ public final class MenuOptionsViewModel {
         return optionsRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the options text property.
+     *
+     * @return the StringBinding for the options text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -559,6 +619,11 @@ public final class MenuOptionsViewModel {
         return optionsText;
     }
 
+    /**
+     * Returns the reactive binding for the options image accessible text property.
+     *
+     * @return the StringBinding for the options image accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -568,6 +633,11 @@ public final class MenuOptionsViewModel {
         return optionsImageAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the options image tooltip property.
+     *
+     * @return the StringBinding for the options image tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -577,6 +647,11 @@ public final class MenuOptionsViewModel {
         return optionsImageTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options image role description property.
+     *
+     * @return the StringBinding for the options image role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -586,6 +661,11 @@ public final class MenuOptionsViewModel {
         return optionsImageRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the options image text property.
+     *
+     * @return the StringBinding for the options image text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -595,6 +675,11 @@ public final class MenuOptionsViewModel {
         return optionsImageText;
     }
 
+    /**
+     * Returns the reactive binding for the options color accessible text property.
+     *
+     * @return the StringBinding for the options color accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -604,6 +689,11 @@ public final class MenuOptionsViewModel {
         return optionsColorAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the options color tooltip property.
+     *
+     * @return the StringBinding for the options color tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -613,6 +703,11 @@ public final class MenuOptionsViewModel {
         return optionsColorTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options color role description property.
+     *
+     * @return the StringBinding for the options color role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -622,6 +717,11 @@ public final class MenuOptionsViewModel {
         return optionsColorRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the options color role description property.
+     *
+     * @return the StringBinding for the options color role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -631,6 +731,11 @@ public final class MenuOptionsViewModel {
         return optionsOpacityAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the options opacity tooltip property.
+     *
+     * @return the StringBinding for the options opacity tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -640,6 +745,11 @@ public final class MenuOptionsViewModel {
         return optionsOpacityTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options opacity role description property.
+     *
+     * @return the StringBinding for the options opacity role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -649,6 +759,11 @@ public final class MenuOptionsViewModel {
         return optionsOpacityRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the options opacity text property.
+     *
+     * @return the StringBinding for the options opacity text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -658,6 +773,11 @@ public final class MenuOptionsViewModel {
         return optionsOpacityText;
     }
 
+    /**
+     * Returns the reactive binding for the options opacity icon property.
+     *
+     * @return the StringBinding for the options opacity icon
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -667,6 +787,11 @@ public final class MenuOptionsViewModel {
         return optionsOpacityIcon;
     }
 
+    /**
+     * Returns the reactive binding for the options mute accessible text property.
+     *
+     * @return the StringBinding for the options mute accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -676,6 +801,11 @@ public final class MenuOptionsViewModel {
         return optionsMuteAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the options mute tooltip property.
+     *
+     * @return the StringBinding for the options mute tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -685,6 +815,11 @@ public final class MenuOptionsViewModel {
         return optionsMuteTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options mute role description property.
+     *
+     * @return the StringBinding for the options mute role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -694,6 +829,11 @@ public final class MenuOptionsViewModel {
         return optionsMuteRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the options mute role description property.
+     *
+     * @return the StringBinding for the options mute role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -703,6 +843,11 @@ public final class MenuOptionsViewModel {
         return optionsMuteText;
     }
 
+    /**
+     * Returns the reactive binding for the options mute icon property.
+     *
+     * @return the StringBinding for the options mute icon
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -712,6 +857,11 @@ public final class MenuOptionsViewModel {
         return optionsMuteIcon;
     }
 
+    /**
+     * Returns the reactive binding for the options song accessible text property.
+     *
+     * @return the StringBinding for the options song accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -721,6 +871,11 @@ public final class MenuOptionsViewModel {
         return optionsSongAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the options song tooltip property.
+     *
+     * @return the StringBinding for the options song tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -730,6 +885,11 @@ public final class MenuOptionsViewModel {
         return optionsSongTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options song role description property.
+     *
+     * @return the StringBinding for the options song role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -739,6 +899,11 @@ public final class MenuOptionsViewModel {
         return optionsSongRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the options song text property.
+     *
+     * @return the StringBinding for the options song text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -748,6 +913,11 @@ public final class MenuOptionsViewModel {
         return optionsSongText;
     }
 
+    /**
+     * Returns the reactive binding for the options clear song role description property.
+     *
+     * @return the StringBinding for the options clear song role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -757,6 +927,11 @@ public final class MenuOptionsViewModel {
         return optionsClearSongRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the options clear song tooltip property.
+     *
+     * @return the StringBinding for the options clear song tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -766,6 +941,11 @@ public final class MenuOptionsViewModel {
         return optionsClearSongTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options clear song accessible text property.
+     *
+     * @return the StringBinding for the options clear song accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -775,6 +955,11 @@ public final class MenuOptionsViewModel {
         return optionsClearSongAccessibleText;
     }
 
+    /**
+     * Returns the read-only boolean property for the song blank state.
+     *
+     * @return the ReadOnlyBooleanProperty for song blank state
+     */
     public ReadOnlyBooleanProperty songIsBlankProperty() {
         return songIsBlankProperty.getReadOnlyProperty();
     }
@@ -1107,6 +1292,12 @@ public final class MenuOptionsViewModel {
                 "MenuOptionsViewModel not initialized. Call init(...) first.");
     }
 
+    /**
+     * Restores the current options from the player state holder and applies them to the provided
+     * GridPane.
+     *
+     * @param sudokuFX the GridPane to which the options are applied
+     */
     public void restoreCurrentOptions(GridPane sudokuFX) {
         OptionsDto options = playerStateHolder.getCurrentPlayer().optionsidDto();
         applyOptionsToUI(options, sudokuFX);

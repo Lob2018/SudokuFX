@@ -88,6 +88,11 @@ public class MenuMiniViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
+    /**
+     * Returns the reactive binding for the show button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -97,6 +102,11 @@ public class MenuMiniViewModel {
         return showAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the player button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -106,6 +116,11 @@ public class MenuMiniViewModel {
         return playerAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the solve button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -115,6 +130,11 @@ public class MenuMiniViewModel {
         return solveAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the backup button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -124,6 +144,11 @@ public class MenuMiniViewModel {
         return backupAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the options button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -133,6 +158,11 @@ public class MenuMiniViewModel {
         return optionsAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the language button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -142,6 +172,11 @@ public class MenuMiniViewModel {
         return languageAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the help button's accessible text.
+     *
+     * @return the StringBinding for the accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -151,6 +186,11 @@ public class MenuMiniViewModel {
         return helpAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the language button's ISO text.
+     *
+     * @return the StringBinding for the ISO text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -160,6 +200,11 @@ public class MenuMiniViewModel {
         return languageIso;
     }
 
+    /**
+     * Returns the reactive binding for the show button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -169,6 +214,11 @@ public class MenuMiniViewModel {
         return showTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the player button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -178,6 +228,11 @@ public class MenuMiniViewModel {
         return playerTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the solve button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -187,6 +242,11 @@ public class MenuMiniViewModel {
         return solveTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the backup button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -196,6 +256,11 @@ public class MenuMiniViewModel {
         return backupTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the options button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -205,6 +270,11 @@ public class MenuMiniViewModel {
         return optionsTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the language button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -214,6 +284,11 @@ public class MenuMiniViewModel {
         return languageTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the help button's tooltip.
+     *
+     * @return the StringBinding for the tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =

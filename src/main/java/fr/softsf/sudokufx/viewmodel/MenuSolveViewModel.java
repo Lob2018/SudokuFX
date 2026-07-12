@@ -48,6 +48,11 @@ public class MenuSolveViewModel {
     private final StringBinding solveClearRoleDescription;
     private final StringBinding solveClearTooltip;
 
+    /**
+     * Initializes the MenuSolveViewModel with necessary reactive bindings.
+     *
+     * <p>Configures i18n-aware StringBindings for UI labels, tooltips, and accessibility roles.
+     */
     public MenuSolveViewModel() {
         solveMenuMaxiAccessibleText = createStringBinding("menu.maxi.button.solve.accessibility");
         solveMenuMaxiTooltip =
@@ -98,6 +103,11 @@ public class MenuSolveViewModel {
                 I18n.INSTANCE.localeProperty());
     }
 
+    /**
+     * Returns the reactive binding for the solve menu maxi accessible text property.
+     *
+     * @return the StringBinding for the solve menu maxi accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -107,6 +117,11 @@ public class MenuSolveViewModel {
         return solveMenuMaxiAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the solve menu maxi tooltip property.
+     *
+     * @return the StringBinding for the solve menu maxi tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -116,6 +131,11 @@ public class MenuSolveViewModel {
         return solveMenuMaxiTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the solve menu maxi role description property.
+     *
+     * @return the StringBinding for the solve menu maxi role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -125,6 +145,11 @@ public class MenuSolveViewModel {
         return solveMenuMaxiRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the solve menu maxi text property.
+     *
+     * @return the StringBinding for the solve menu maxi text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -134,6 +159,11 @@ public class MenuSolveViewModel {
         return solveMenuMaxiText;
     }
 
+    /**
+     * Returns the reactive binding for the solve reduce accessible text property.
+     *
+     * @return the StringBinding for the solve reduce accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -143,6 +173,11 @@ public class MenuSolveViewModel {
         return solveReduceAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the solve reduce tooltip property.
+     *
+     * @return the StringBinding for the solve reduce tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -152,6 +187,11 @@ public class MenuSolveViewModel {
         return solveReduceTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the solve reduce text property.
+     *
+     * @return the StringBinding for the solve reduce text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -161,6 +201,11 @@ public class MenuSolveViewModel {
         return solveReduceText;
     }
 
+    /**
+     * Returns the reactive binding for the solve role description property.
+     *
+     * @return the StringBinding for the solve role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -170,6 +215,11 @@ public class MenuSolveViewModel {
         return solveRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the solve text property.
+     *
+     * @return the StringBinding for the solve text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -179,6 +229,11 @@ public class MenuSolveViewModel {
         return solveText;
     }
 
+    /**
+     * Returns the reactive binding for the solve clear accessible text property.
+     *
+     * @return the StringBinding for the solve clear accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -188,6 +243,11 @@ public class MenuSolveViewModel {
         return solveClearAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the solve clear role description property.
+     *
+     * @return the StringBinding for the solve clear role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -197,6 +257,11 @@ public class MenuSolveViewModel {
         return solveClearRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the solve clear tooltip property.
+     *
+     * @return the StringBinding for the solve clear tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -206,6 +271,11 @@ public class MenuSolveViewModel {
         return solveClearTooltip;
     }
 
+    /**
+     * Returns the integer property for the solve percentage.
+     *
+     * @return the IntegerProperty for solve percentage
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =

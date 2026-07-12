@@ -64,6 +64,15 @@ public final class MenuSaveViewModel {
     private final StringBinding cellConfirmationTitle;
     private final StringBinding cellConfirmationMessage;
 
+    /**
+     * Initializes the MenuSaveViewModel with necessary infrastructure and reactive bindings.
+     *
+     * <p>Configures i18n-aware StringBindings for UI labels, tooltips, and accessibility roles.
+     * Triggers initial game list population.
+     *
+     * @param playerStateHolder holder for persistent player state
+     * @param gameService service for game management operations
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP2",
             justification =
@@ -169,6 +178,11 @@ public final class MenuSaveViewModel {
                 .ifPresentOrElse(selectedBackup::set, () -> selectedBackup.set(games.getFirst()));
     }
 
+    /**
+     * Returns the observable list of games.
+     *
+     * @return the ObservableList of GameDto
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -178,6 +192,11 @@ public final class MenuSaveViewModel {
         return games;
     }
 
+    /**
+     * Returns the property for the currently selected backup.
+     *
+     * @return the ObjectProperty for selected GameDto
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -187,6 +206,11 @@ public final class MenuSaveViewModel {
         return selectedBackup;
     }
 
+    /**
+     * Returns the property for the currently selected backup.
+     *
+     * @return the ObjectProperty for selected GameDto
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -196,6 +220,11 @@ public final class MenuSaveViewModel {
         return saveAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the save tooltip property.
+     *
+     * @return the StringBinding for the save tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -205,6 +234,11 @@ public final class MenuSaveViewModel {
         return saveTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the save tooltip property.
+     *
+     * @return the StringBinding for the save tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -214,6 +248,11 @@ public final class MenuSaveViewModel {
         return saveRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the save text property.
+     *
+     * @return the StringBinding for the save text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -223,6 +262,11 @@ public final class MenuSaveViewModel {
         return saveText;
     }
 
+    /**
+     * Returns the reactive binding for the reduce button accessible text property.
+     *
+     * @return the StringBinding for the reduce button accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -232,6 +276,11 @@ public final class MenuSaveViewModel {
         return reduceAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the reduce button accessible text property.
+     *
+     * @return the StringBinding for the reduce button accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -241,6 +290,11 @@ public final class MenuSaveViewModel {
         return reduceTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the reduce button text property.
+     *
+     * @return the StringBinding for the reduce button text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -250,6 +304,11 @@ public final class MenuSaveViewModel {
         return reduceText;
     }
 
+    /**
+     * Returns the reactive binding for the backup accessible text property.
+     *
+     * @return the StringBinding for the backup accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -259,6 +318,11 @@ public final class MenuSaveViewModel {
         return backupAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the backup tooltip property.
+     *
+     * @return the StringBinding for the backup tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -268,6 +332,11 @@ public final class MenuSaveViewModel {
         return backupTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the backup role description property.
+     *
+     * @return the StringBinding for the backup role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -277,6 +346,11 @@ public final class MenuSaveViewModel {
         return backupRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the backup text property.
+     *
+     * @return the StringBinding for the backup text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -286,6 +360,11 @@ public final class MenuSaveViewModel {
         return backupText;
     }
 
+    /**
+     * Returns the reactive binding for the maxi backup accessible text property.
+     *
+     * @return the StringBinding for the maxi backup accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -295,6 +374,11 @@ public final class MenuSaveViewModel {
         return maxiBackupAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the maxi backup tooltip property.
+     *
+     * @return the StringBinding for the maxi backup tooltip
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -304,6 +388,11 @@ public final class MenuSaveViewModel {
         return maxiBackupTooltip;
     }
 
+    /**
+     * Returns the reactive binding for the maxi backup role description property.
+     *
+     * @return the StringBinding for the maxi backup role description
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -313,6 +402,11 @@ public final class MenuSaveViewModel {
         return maxiBackupRoleDescription;
     }
 
+    /**
+     * Returns the reactive binding for the maxi backup text property.
+     *
+     * @return the StringBinding for the maxi backup text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -322,6 +416,11 @@ public final class MenuSaveViewModel {
         return maxiBackupText;
     }
 
+    /**
+     * Returns the reactive binding for the cell delete accessible text property.
+     *
+     * @return the StringBinding for the cell delete accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -331,6 +430,11 @@ public final class MenuSaveViewModel {
         return cellDeleteAccessibleText;
     }
 
+    /**
+     * Returns the reactive binding for the cell delete accessible text property.
+     *
+     * @return the StringBinding for the cell delete accessible text
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
@@ -340,6 +444,11 @@ public final class MenuSaveViewModel {
         return cellConfirmationTitle;
     }
 
+    /**
+     * Returns the reactive binding for the cell confirmation message property.
+     *
+     * @return the StringBinding for the cell confirmation message
+     */
     @SuppressFBWarnings(
             value = "EI_EXPOSE_REP",
             justification =
