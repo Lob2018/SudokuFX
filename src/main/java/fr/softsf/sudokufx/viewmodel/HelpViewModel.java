@@ -8,7 +8,8 @@ package fr.softsf.sudokufx.viewmodel;
 import java.io.File;
 import java.nio.file.Path;
 import java.text.MessageFormat;
-import java.time.Year;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Objects;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -79,7 +80,7 @@ public class HelpViewModel {
                                 ? ""
                                 : JVMApplicationProperties.INSTANCE.getAppVersion().substring(1),
                         JVMApplicationProperties.INSTANCE.getAppOrganization(),
-                        Year.now().toString(),
+                        String.valueOf(LocalDateTime.now(ZoneId.systemDefault()).getYear()),
                         JVMApplicationProperties.INSTANCE.getAppLicense()));
         addLogFileButton(informationAlert);
         addWebsiteButton(informationAlert);

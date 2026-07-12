@@ -6,7 +6,8 @@
 package fr.softsf.sudokufx.view;
 
 import java.nio.file.Path;
-import java.time.Year;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Objects;
 import javafx.animation.FadeTransition;
 import javafx.application.Platform;
@@ -187,7 +188,8 @@ public final class CrashScreenView implements IMainView {
         buttonReset.setText(I18n.INSTANCE.getValue("crashscreen.reset"));
         buttonClose.setText(I18n.INSTANCE.getValue("crashscreen.close"));
         crashscreenvboxCenterhboxHbox.setSpacing(crashScreenFontSize);
-        crashscreenvboxBottomhboxYearlabel.setText(Year.now() + "");
+        crashscreenvboxBottomhboxYearlabel.setText(
+                String.valueOf(LocalDateTime.now(ZoneId.systemDefault()).getYear()));
         crashscreenvboxBottomhboxVersionlabel.setText(
                 JVMApplicationProperties.INSTANCE.getAppVersion());
         crashscreenvboxBottomhboxYearlabel.setTextFill(crashDefaultFontColor);
