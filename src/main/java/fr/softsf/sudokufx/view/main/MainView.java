@@ -532,12 +532,6 @@ public final class MainView implements IMainView {
                 menuOptionsViewModel.optionsColorAccessibleTextProperty(),
                 menuOptionsViewModel.optionsColorTooltipProperty(),
                 menuOptionsViewModel.optionsColorRoleDescriptionProperty());
-        menuOptionsButtonColor
-                .valueProperty()
-                .addListener(
-                        (_, _, newColor) ->
-                                menuOptionsViewModel.applyAndPersistIfNeededOptionsColor(
-                                        sudokuFX, newColor, true));
         bindingConfigurator.configureButton(
                 menuOptionsButtonOpacity,
                 null,
@@ -581,15 +575,6 @@ public final class MainView implements IMainView {
         menuOptionsButtonColor
                 .valueProperty()
                 .bindBidirectional(menuOptionsViewModel.optionsColorProperty());
-        menuOptionsButtonColor
-                .valueProperty()
-                .addListener(
-                        (_, oldColor, newColor) -> {
-                            if (newColor != null && !newColor.equals(oldColor)) {
-                                menuOptionsViewModel.applyAndPersistIfNeededOptionsColor(
-                                        sudokuFX, newColor, true);
-                            }
-                        });
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 

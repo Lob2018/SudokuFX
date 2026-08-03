@@ -117,8 +117,7 @@ public final class MenuOptionsViewModel {
 
     private final ReadOnlyStringWrapper songProperty = new ReadOnlyStringWrapper("");
     private final ReadOnlyBooleanWrapper songIsBlankProperty = new ReadOnlyBooleanWrapper(true);
-    private final ObjectProperty<Color> optionsColorProperty =
-            new SimpleObjectProperty<>(Color.WHITE);
+    private final ObjectProperty<Color> optionsColorProperty = new SimpleObjectProperty<>();
     private final StringBinding optionsSongAccessibleText;
     private final StringBinding optionsSongTooltip;
     private final StringBinding optionsSongRoleDescription;
@@ -128,12 +127,16 @@ public final class MenuOptionsViewModel {
     private final StringBinding optionsClearSongRoleDescription;
     private final StringBinding optionsClearSongTooltip;
 
+    private GridPane sudokuFXGridPane;
+
     private boolean initialized = false;
+    private boolean persistColor = false;
 
     private Task<?> currentTask;
 
     /**
-     * Initializes the MenuOptionsViewModel with necessary infrastructure and reactive bindings.
+     * Initializes the MenuOptionsViewModel with necessary infrastructure, reactive bindings, and
+     * the color property listener for UI persistence.
      *
      * <p>Configures i18n-aware StringBindings for UI labels, tooltips, and accessibility roles.
      *
@@ -216,6 +219,16 @@ public final class MenuOptionsViewModel {
                         ROLE_SUBMENU_OPTION,
                         songProperty);
         optionsClearSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
+        this.optionsColorProperty.addListener(
+                (obs, oldColor, newColor) -> {
+                    if (initialized
+                            && sudokuFXGridPane != null
+                            && newColor != null
+                            && !newColor.equals(oldColor)) {
+                        applyAndPersistIfNeededOptionsColor(
+                                this.sudokuFXGridPane, newColor, persistColor);
+                    }
+                });
     }
 
     /**
@@ -975,26 +988,31 @@ public final class MenuOptionsViewModel {
      * </ul>
      *
      * <p>This method synchronizes the UI components with the current player's options and prepares
-     * the necessary properties for bindings. The ViewModel is marked as initialized at the start of
-     * this method to allow called methods (like {@code applyAndPersistBackgroundImage}) to safely
-     * check the initialization state.
+     * the necessary properties for bindings. The ViewModel is marked as initialized only at the end
+     * of this method to ensure that internal listeners do not trigger persistence during the
+     * initial loading phase.
      *
      * @param sudokuFX the GridPane to apply background settings; must not be {@code null}
      * @throws NullPointerException if {@code sudokuFX} is {@code null}
      */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP2",
+            justification =
+                    "GridPane reference is stored to allow reactive UI updates from ViewModel"
+                            + " listeners.")
     public void init(GridPane sudokuFX) {
         Objects.requireNonNull(sudokuFX, "sudokuFX mustn't be null");
+        this.sudokuFXGridPane = sudokuFX;
         OptionsDto optionsDto = playerStateHolder.getCurrentPlayer().optionsidDto();
         this.initialized = true;
+        if (StringUtils.isNotBlank(optionsDto.hexcolor())) {
+            optionsColorProperty.set(Color.web(optionsDto.hexcolor()));
+        }
         if (StringUtils.isNotBlank(optionsDto.imagepath())) {
             File file = new File(optionsDto.imagepath());
             if (file.exists()) {
                 applyAndPersistIfNeededBackgroundImage(file, sudokuFX, false);
             }
-        } else if (StringUtils.isNotBlank(optionsDto.hexcolor())) {
-            Color color = Color.web(optionsDto.hexcolor());
-            optionsColorProperty.set(color);
-            sudokuFX.setBackground(new Background(new BackgroundFill(color, null, null)));
         }
         gridOpacityProperty.set(optionsDto.opaque());
         audioService.setMuted(optionsDto.muted());
@@ -1312,12 +1330,12 @@ public final class MenuOptionsViewModel {
      */
     private void applyOptionsToUI(OptionsDto options, GridPane sudokuFX) {
         if (StringUtils.isNotBlank(options.hexcolor())) {
+            persistColor = false;
             optionsColorProperty.set(Color.web(options.hexcolor()));
+            persistColor = true;
         }
         if (StringUtils.isNotBlank(options.imagepath())) {
             applyAndPersistIfNeededBackgroundImage(new File(options.imagepath()), sudokuFX, false);
-        } else if (StringUtils.isNotBlank(options.hexcolor())) {
-            applyAndPersistIfNeededOptionsColor(sudokuFX, Color.web(options.hexcolor()), false);
         }
         muteProperty.set(options.muted());
         updateSongNameFromPath(options.songpath());
