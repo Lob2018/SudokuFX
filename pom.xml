@@ -165,6 +165,18 @@
       <version>4.0.18</version>
       <scope>test</scope>
     </dependency>
+    <!-- Temporary override for Flyway's transitive dependency to align with jackson-databind (jackson-core 3.1.4 -> 3.1.5) -->
+    <dependency>
+      <groupId>tools.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>3.1.5</version>
+    </dependency>
+    <!-- Temporary override for Flyway's transitive dependency to fix CVE (jackson-databind 3.1.4 -> 3.1.5) -->
+    <dependency>
+      <groupId>tools.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>3.1.5</version>
+    </dependency>
   </dependencies>
   <!-- Build configuration -->
   <build>
