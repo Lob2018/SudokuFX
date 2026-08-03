@@ -1,5 +1,11 @@
 var NAVTREEINDEX21 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#ae18f360365c814fe21893cd780cf5482":[2,0,0,0,0,1,1,10,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afd0c92bbe085315fc5420ede9075ef7a":[1,0,0,0,0,1,1,10,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afd0c92bbe085315fc5420ede9075ef7a":[2,0,0,0,0,1,1,10,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afe454c3e4a5d934e2a46ac9ee19f7861":[1,0,0,0,0,1,1,10,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html#afe454c3e4a5d934e2a46ac9ee19f7861":[2,0,0,0,0,1,1,10,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html":[1,0,0,0,0,1,1,11],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html":[2,0,0,0,0,1,1,11],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a25e76a69f55467861bd047078b7ffcd3":[1,0,0,0,0,1,1,11,5],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html#a25e76a69f55467861bd047078b7ffcd3":[2,0,0,0,0,1,1,11,5],
@@ -243,11 +249,5 @@ var NAVTREEINDEX21 =
 "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html":[2,0,0,0,0,5,0,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html#a795dbba95c77ccabe0dbbf7efa1391c7":[1,0,0,0,0,6,0,0,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html#a795dbba95c77ccabe0dbbf7efa1391c7":[2,0,0,0,0,5,0,0,1],
-"enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html#a88d0bc66ed6719e67752194495f38369":[1,0,0,0,0,6,0,0,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html#a88d0bc66ed6719e67752194495f38369":[2,0,0,0,0,5,0,0,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html":[1,0,0,0,0,7,2,2,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html":[2,0,0,0,0,6,2,2,0],
-"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html#a97b5e13c9ee0821f7a28fa0011896a0e":[1,0,0,0,0,7,2,2,0,1],
-"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html#a97b5e13c9ee0821f7a28fa0011896a0e":[2,0,0,0,0,6,2,2,0,1],
-"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html#ad5f4bf9eb3a980bc3024e1a974c4c9e7":[1,0,0,0,0,7,2,2,0,0]
+"enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html#a88d0bc66ed6719e67752194495f38369":[1,0,0,0,0,6,0,0,0]
 };

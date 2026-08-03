@@ -123,6 +123,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "optionsSongTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#aa97f31eacebc12664af5af78ff76de72", null ],
     [ "optionsText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a0b49dd6d1908aa246a3d6060b8436cf7", null ],
     [ "optionsTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#af2cdd730c9cbd5664153747ea987cd1d", null ],
+    [ "persistColor", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a76aa6a152d09d4073037cdd410e7439f", null ],
     [ "playerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a80c1101f68fb0789b7c23ced16815c41", null ],
     [ "ROLE_CLOSED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a850a746a954e67e89876a4e531d7a8ab", null ],
     [ "ROLE_OPENED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a82de9d6cb1b1520d3ff612e1cd4a19b2", null ],
@@ -130,5 +131,6 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "songIsBlankProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a673255b38406f8fc0e8c91887364faec", null ],
     [ "songProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a3a194bfccba24ab22c212004c98914fb", null ],
     [ "SUDOKU_FX_MUST_NOT_BE_NULL", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a84fe3abcb39899b32921cb3eb1df6579", null ],
+    [ "sudokuFXGridPane", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a52d4cb287c2dec943f9d962b6af1e912", null ],
     [ "toasterService", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac71a75c1458236108550cf97dc408ff7", null ]
 ];

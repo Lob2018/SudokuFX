@@ -1,5 +1,11 @@
 var NAVTREEINDEX23 =
 {
+"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55":[1,0,0,0,0,1,4,1,7],
+"namespacefr_1_1softsf_1_1sudokufx_1_1config.html":[1,0,0,0,0,2],
+"namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1database.html":[1,0,0,0,0,2,0],
+"namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html":[1,0,0,0,0,2,1],
+"namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a290ee7b4103931a0a658a7391d5739bc":[1,0,0,0,0,2,1,5],
+"namespacefr_1_1softsf_1_1sudokufx_1_1dto.html":[1,0,0,0,0,3],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa":[1,0,0,0,0,3,2],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1946024ef99efea4b043ed98388fdc94":[1,0,0,0,0,3,6],
 "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a":[1,0,0,0,0,3,3],

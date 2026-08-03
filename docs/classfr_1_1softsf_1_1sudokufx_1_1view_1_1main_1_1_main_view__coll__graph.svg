@@ -1182,7 +1182,7 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="2126.88" y="-3796.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="2135.38" y="-3796.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
 <text text-anchor="start" x="2135.38" y="-3784.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Color &gt; optionsColorProperty</text>
-<text text-anchor="start" x="2135.38" y="-3768.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 32 more...</text>
+<text text-anchor="start" x="2135.38" y="-3768.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 34 more...</text>
 <text text-anchor="start" x="2126.88" y="-3752.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="2135.38" y="-3752.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="2135.38" y="-3740.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_MUTE_OFF</text>

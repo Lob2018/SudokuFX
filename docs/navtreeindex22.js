@@ -1,5 +1,11 @@
 var NAVTREEINDEX22 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html#a88d0bc66ed6719e67752194495f38369":[2,0,0,0,0,5,0,0,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html":[1,0,0,0,0,7,2,2,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html":[2,0,0,0,0,6,2,2,0],
+"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html#a97b5e13c9ee0821f7a28fa0011896a0e":[1,0,0,0,0,7,2,2,0,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html#a97b5e13c9ee0821f7a28fa0011896a0e":[2,0,0,0,0,6,2,2,0,1],
+"enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html#ad5f4bf9eb3a980bc3024e1a974c4c9e7":[1,0,0,0,0,7,2,2,0,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service_1_1_file_type.html#ad5f4bf9eb3a980bc3024e1a974c4c9e7":[2,0,0,0,0,6,2,2,0,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html":[1,0,0,0,0,10,2,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model_1_1_active_menu.html":[2,0,0,0,0,9,2,0],
@@ -243,11 +249,5 @@ var NAVTREEINDEX22 =
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math.html":[1,0,0,0,0,1,4,0],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html":[1,0,0,0,0,1,4,1],
 "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a9b767d7f5930ee45e7ce2467faedf322":[1,0,0,0,0,1,4,1,6],
-"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#aa86aff33589489ef55f1a9747a8f6d5d":[1,0,0,0,0,1,4,1,5],
-"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55":[1,0,0,0,0,1,4,1,7],
-"namespacefr_1_1softsf_1_1sudokufx_1_1config.html":[1,0,0,0,0,2],
-"namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1database.html":[1,0,0,0,0,2,0],
-"namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html":[1,0,0,0,0,2,1],
-"namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html#a290ee7b4103931a0a658a7391d5739bc":[1,0,0,0,0,2,1,5],
-"namespacefr_1_1softsf_1_1sudokufx_1_1dto.html":[1,0,0,0,0,3]
+"namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#aa86aff33589489ef55f1a9747a8f6d5d":[1,0,0,0,0,1,4,1,5]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX19 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a9544acad3febede6981c9d8440674d3c":[2,0,0,0,0,9,0,0,19],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33":[1,0,0,0,0,10,0,0,13],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33":[2,0,0,0,0,9,0,0,13],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aadd59b021db2e0fdad7e24de4a6a7cd8":[1,0,0,0,0,10,0,0,16],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aadd59b021db2e0fdad7e24de4a6a7cd8":[2,0,0,0,0,9,0,0,16],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aaf198f919d0c3422e9f0150483873163":[1,0,0,0,0,10,0,0,17],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aaf198f919d0c3422e9f0150483873163":[2,0,0,0,0,9,0,0,17],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215":[1,0,0,0,0,10,0,0,12],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215":[2,0,0,0,0,9,0,0,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX19 =
 "dir_46a088167676daeadf55ad93119dee59.html":[3,0,1,1,0,0,0,0,0],
 "dir_48933ca349d8f90a27e4d61bc604e542.html":[3,0,1,0,0,0,0,0,1],
 "dir_4d8d1702048aca3c36ab4e79d3495ef8.html":[3,0,1,0,0,0,0,0,8,0,2],
-"dir_4f9d27e3006ced5a41c7b516e099ae2b.html":[3,0,1,1,0,0,0,0,4,2,2,0],
-"dir_50ff30975495cc452199a501fc286db7.html":[3,0,1,0,0,0,0,0,1,4],
-"dir_5468e24ffddc63823e4ccc3ca6bfdc6f.html":[3,0,1,1,0,0,0,0,4,1,0],
-"dir_55ec8e12fcfa63166f91cde8cefb972b.html":[3,0,1,0,0,0,0,0,8,1],
-"dir_5a243f92d5e90940165ff569edb8a82d.html":[3,0,1,0,0,0,0,0,1,0],
-"dir_5ad69ac566f56756f7551705d23eb12e.html":[3,0,1,1,0,0,0,0,4,2,3,0],
-"dir_5eb159725f84c66aafd839904a4acdd0.html":[3,0,1,0]
+"dir_4f9d27e3006ced5a41c7b516e099ae2b.html":[3,0,1,1,0,0,0,0,4,2,2,0]
 };

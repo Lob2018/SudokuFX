@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel Pages: 1 -->
 <svg width="2553pt" height="2805pt"
  viewBox="0.00 0.00 2553.12 2805.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2801)">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2801)">
 <title>fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -53,7 +53,7 @@
 <text text-anchor="start" x="457.38" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="465.88" y="-994.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
 <text text-anchor="start" x="465.88" y="-982.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Color &gt; optionsColorProperty</text>
-<text text-anchor="start" x="465.88" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 32 more...</text>
+<text text-anchor="start" x="465.88" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 34 more...</text>
 <text text-anchor="start" x="457.38" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="465.88" y="-950.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
 <text text-anchor="start" x="465.88" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ICON_MUTE_OFF</text>

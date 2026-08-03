@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.view.component.list.GenericDtoListCell&lt; T &gt;" name="fr.softsf.sudokufx.view.component.list.GenericDtoListCell&lt; T &gt;">
-<area shape="rect" id="Node000001" title="A reusable ListCell for displaying items of type T in a ListView." alt="" coords="5,123,298,736"/>
+<area shape="rect" id="Node000001" title="A reusable ListCell for displaying items of type T in a ListView." alt="" coords="5,123,298,773"/>
 <area shape="rect" id="Node000002" title=" " alt="" coords="109,5,195,75"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,90,154,123,149,123,149,90"/>
 </map>
