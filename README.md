@@ -31,13 +31,15 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 
 # [![SudokuFX in action](https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg)](https://github.com/Lob2018/SudokuFX/releases/latest)
 
+## 🎬 Demo
+
+[<img src="https://raw.githubusercontent.com/Lob2018/CanScan/master/.myresources/design_and_modeling/images/Miniature-tuto-SudokuFX.jpg" alt="SudokuFX tutorial" width="100" height="56"/>](https://youtu.be/82_GDc7s1dY)
+
 ## Contents
 
 - [System requirements](#system-requirements)
 - [Installation](#installation)
   - [Verifying downloaded assets](#verifying-downloaded-assets)
-- [Use](#use)
-- [Examples](#examples)
 - [Update](#update)
 - [Uninstallation](#uninstallation)
 - [Documentation](https://lob2018.github.io/SudokuFX/)
@@ -111,8 +113,6 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 
 To ensure the integrity of downloaded assets, import the GPG public key with `gpg --import sudokufx-public-key.asc`, then verify the files, e.g., the MSI file, using `gpg --verify SudokuFX_JVM-v.v.v.v.msi.asc SudokuFX_JVM-v.v.v.v.msi`. For more information, refer to the [GnuPG Manual](https://www.gnupg.org/gph/en/manual.html).
 
-## Use
-
 ### Launch and play SudokuFX
 
 #### Windows
@@ -165,8 +165,6 @@ If you encounter any issues:
 4. **Save and load issues**: Verify that SudokuFX has write permissions to your user directory.
 
 For additional help, check the application logs or [file an issue](https://github.com/Lob2018/SudokuFX/issues) on GitHub.
-
-## Examples
 
 ## Update
 
