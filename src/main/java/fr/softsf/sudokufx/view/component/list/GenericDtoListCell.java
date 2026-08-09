@@ -106,7 +106,7 @@ public final class GenericDtoListCell<T> extends ListCell<T> {
         button.setFocusTraversable(true);
         button.getStyleClass().addAll("material", "menuListLineButton");
         button.setText(buttonText);
-        label.getStyleClass().addAll("root", "menuButtonLabel");
+        label.getStyleClass().addAll("root", "menuListButtonLabel");
         hBox.getStyleClass().add("menuListLineContainer");
         hBox.getChildren().addAll(label, button);
     }

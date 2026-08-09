@@ -529,6 +529,13 @@
     -fx-background-color: transparent;
 }
 
+.menuListButtonLabel {
+    -fx-padding: 0;
+    -fx-max-width: 10.3em;
+    -fx-text-overrun: ellipsis;
+    -fx-background-color: transparent;
+}
+
 .submenuIndentation {
     -fx-pref-width: 0;
     -fx-max-width: 0;

@@ -65,7 +65,7 @@ class MyDateTimeUTest {
         Instant instant = localDateTime.atZone(PARIS_ZONE).toInstant();
         MyDateTime.INSTANCE.setClock(Clock.fixed(instant, PARIS_ZONE));
         String formatted = MyDateTime.INSTANCE.getFormatted(instant);
-        assertEquals("24/06/24 14:30", formatted);
+        assertEquals("24/06/24 14:30:00", formatted);
     }
 
     @Test
@@ -75,7 +75,7 @@ class MyDateTimeUTest {
         Instant instant = localDateTime.atZone(PARIS_ZONE).toInstant();
         MyDateTime.INSTANCE.setClock(Clock.fixed(instant, PARIS_ZONE));
         String formatted = MyDateTime.INSTANCE.getFormatted(instant);
-        assertEquals("06/24/24 14:30", formatted);
+        assertEquals("06/24/24 14:30:00", formatted);
     }
 
     @Test
@@ -95,7 +95,7 @@ class MyDateTimeUTest {
                         .atZone(ZoneId.systemDefault())
                         .toInstant();
         String formatted = MyDateTime.INSTANCE.getFormatted(dateTime);
-        assertEquals("24/06/24 14:30", formatted);
+        assertEquals("24/06/24 14:30:00", formatted);
     }
 
     @Test
@@ -106,7 +106,7 @@ class MyDateTimeUTest {
                         .atZone(ZoneId.systemDefault())
                         .toInstant();
         String formatted = MyDateTime.INSTANCE.getFormatted(dateTime);
-        assertEquals("06/24/24 14:30", formatted);
+        assertEquals("06/24/24 14:30:00", formatted);
     }
 
     @Test

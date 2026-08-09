@@ -25,9 +25,9 @@ public enum MyDateTime {
 
     private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
     private final DateTimeFormatter frenchFormatter =
-            DateTimeFormatter.ofPattern("dd/MM/yy HH:mm", Locale.FRENCH);
+            DateTimeFormatter.ofPattern("dd/MM/yy HH:mm:ss", Locale.FRENCH);
     private final DateTimeFormatter englishFormatter =
-            DateTimeFormatter.ofPattern("MM/dd/yy HH:mm", Locale.ENGLISH);
+            DateTimeFormatter.ofPattern("MM/dd/yy HH:mm:ss", Locale.ENGLISH);
     private Clock clock = Clock.systemDefaultZone();
 
     /**
