@@ -33,7 +33,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 
 ## 🎬 Demo
 
-[<img src="https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/Miniature-tuto-SudokuFX.jpg" alt="SudokuFX tutorial" width="100" height="56"/>](https://youtu.be/82_GDc7s1dY)
+[<img src="https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/Miniature-tuto-SudokuFX.jpg" alt="SudokuFX tutorial" width="100" height="56"/>](https://youtu.be/QAxPMZnJ-k0)
 
 ## Contents
 
