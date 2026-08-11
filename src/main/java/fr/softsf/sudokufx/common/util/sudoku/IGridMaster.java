@@ -83,6 +83,23 @@ public sealed interface IGridMaster permits GridMaster {
     }
 
     /**
+     * Détermine le niveau de difficulté en fonction du pourcentage de difficulté.
+     *
+     * @param pourcentage le pourcentage de difficulté (0 à 100)
+     * @return le {@link DifficultyLevel} correspondant
+     */
+    default DifficultyLevel getNiveauDepuisPourcentage(int pourcentage) {
+        int clamped = Math.clamp(pourcentage, 0, POURCENTAGE_MAX);
+        if (clamped <= FACILE_MAX_PERCENT) {
+            return DifficultyLevel.EASY;
+        }
+        if (clamped <= MOYEN_MAX_PERCENT) {
+            return DifficultyLevel.MEDIUM;
+        }
+        return DifficultyLevel.DIFFICULT;
+    }
+
+    /**
      * Creates Sudoku grids (solved and unsolved) based on a level and a target difficulty
      * percentage (-1 for level's default possibilities).
      *

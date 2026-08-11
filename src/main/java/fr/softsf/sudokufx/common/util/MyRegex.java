@@ -30,6 +30,11 @@ public enum MyRegex {
     private static final String SPECIAL_CHARACTERS = "@#$%^&()!";
 
     /**
+     * Precompiled regex pattern for validating empty or zero-only grid values containing commas.
+     */
+    private static final Pattern ZERO_COMMA_GRID_PATTERN = Pattern.compile("^[0,]*$");
+
+    /**
      * Precompiled regex pattern for validating passwords. Requirements: - Between 24 and 32
      * characters. - At least one uppercase, one lowercase, one digit, one special char. - Only
      * allowed characters: letters, digits, and @#$%^&()!
@@ -56,6 +61,10 @@ public enum MyRegex {
 
     public Pattern getPlayerNamePattern() {
         return PLAYER_NAME_PATTERN;
+    }
+
+    public Pattern getZeroCommaGridPattern() {
+        return ZERO_COMMA_GRID_PATTERN;
     }
 
     /**

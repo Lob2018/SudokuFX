@@ -168,4 +168,28 @@ class GridMasterUTest {
                     gridMaster.creerLesGrilles(level, impossiblePercent);
                 });
     }
+
+    @Test
+    void givenPercentage_whenGetNiveauDepuisPourcentage_thenReturnsCorrectDifficultyLevel() {
+        assertEquals(
+                DifficultyLevel.EASY,
+                gridMaster.getNiveauDepuisPourcentage(IGridMaster.FACILE_MIN_PERCENT));
+        assertEquals(
+                DifficultyLevel.EASY,
+                gridMaster.getNiveauDepuisPourcentage(IGridMaster.FACILE_MAX_PERCENT));
+        assertEquals(
+                DifficultyLevel.MEDIUM,
+                gridMaster.getNiveauDepuisPourcentage(IGridMaster.MOYEN_MIN_PERCENT));
+        assertEquals(
+                DifficultyLevel.MEDIUM,
+                gridMaster.getNiveauDepuisPourcentage(IGridMaster.MOYEN_MAX_PERCENT));
+        assertEquals(
+                DifficultyLevel.DIFFICULT,
+                gridMaster.getNiveauDepuisPourcentage(IGridMaster.DIFFICILE_MIN_PERCENT));
+        assertEquals(
+                DifficultyLevel.DIFFICULT,
+                gridMaster.getNiveauDepuisPourcentage(IGridMaster.DIFFICILE_MAX_PERCENT));
+        assertEquals(DifficultyLevel.EASY, gridMaster.getNiveauDepuisPourcentage(-10));
+        assertEquals(DifficultyLevel.DIFFICULT, gridMaster.getNiveauDepuisPourcentage(150));
+    }
 }

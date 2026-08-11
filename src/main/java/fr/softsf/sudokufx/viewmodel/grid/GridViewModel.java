@@ -29,6 +29,7 @@ import fr.softsf.sudokufx.common.enums.DifficultyLevel;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.common.interfaces.mapper.IGameLevelMapper;
+import fr.softsf.sudokufx.common.util.MyRegex;
 import fr.softsf.sudokufx.common.util.PathValidator;
 import fr.softsf.sudokufx.common.util.sudoku.GrilleResolue;
 import fr.softsf.sudokufx.common.util.sudoku.GrillesCrees;
@@ -275,8 +276,9 @@ public class GridViewModel {
     }
 
     /**
-     * Synchronizes the grid state during manual solving. Validates input, locks the cell if valid,
-     * and triggers the solver. If no solution is found, it rolls back the change.
+     * Synchronizes the grid state during manual solving. Validates input with only one valid
+     * character, locks the cell if valid, and triggers the solver. If no solution is found, it
+     * rolls back the change.
      *
      * @param cellVM the cell being modified.
      */
@@ -284,7 +286,6 @@ public class GridViewModel {
         victory.set(false);
         audioService.stopSong();
         String value = cellVM.getTextArea().getText();
-        // 1. Handle deletion or invalid multi-character input
         if (StringUtils.isBlank(value) || "0".equals(value) || value.length() > 1) {
             resetCellToEditable(cellVM);
             return;
@@ -382,6 +383,19 @@ public class GridViewModel {
     }
 
     /**
+     * Persists the user-defined grid from the solve submenu as the active game state and verifies
+     * completion.
+     *
+     * @return {@code true} if the grid was successfully persisted, otherwise {@code false}
+     */
+    public boolean applyUseThisGrid() {
+        if (hasDefaultGrid()) {
+            return persistUseThisGridValue();
+        }
+        return false;
+    }
+
+    /**
      * Returns whether the current game has a non-empty default grid.
      *
      * @return {@code true} if a default grid is defined, {@code false} otherwise
@@ -414,6 +428,37 @@ public class GridViewModel {
                         gameDto.withGrididDto(toSaveGridDto).withUpdatedat(Instant.now()));
         playerService.updatePlayer(toSavePlayer);
         playerStateHolder.refreshCurrentPlayer();
+    }
+
+    /**
+     * Persists the user-defined grid from the solve submenu for the active player's game if
+     * modified and valid.
+     *
+     * @return {@code true} if the grid was successfully persisted, otherwise {@code false}
+     */
+    private boolean persistUseThisGridValue() {
+        PlayerDto currentPlayer = playerStateHolder.getCurrentPlayer();
+        GameDto gameDto = currentPlayer.selectedGame();
+        Objects.requireNonNull(gameDto, GAME_DTO_MUSTN_T_BE_NULL);
+        String result = iGridConverter.listToGridValue(getAllValues(true));
+        if (MyRegex.INSTANCE.getZeroCommaGridPattern().matcher(result).matches()) {
+            return false;
+        }
+        String modelGridValue = gameDto.grididDto().gridvalue();
+        if (modelGridValue.equals(result)) {
+            return false;
+        }
+        int percentage = menuSolveViewModel.solvePercentageProperty().get();
+        GridDto toSaveGridDto =
+                gameDto.grididDto().withGridvalue(result).withPossibilities((byte) percentage);
+        DifficultyLevel difficulty = iGridMaster.getNiveauDepuisPourcentage(percentage);
+        int[] gridArray =
+                iGridConverter.gridValueToList(toSaveGridDto.gridvalue()).stream()
+                        .mapToInt(Integer::parseInt)
+                        .toArray();
+        GrillesCrees grillesCorrespondantes = new GrillesCrees(gridArray, gridArray, percentage);
+        applyGeneratedGrid(difficulty, grillesCorrespondantes);
+        return true;
     }
 
     /**
@@ -584,8 +629,25 @@ public class GridViewModel {
 
     /** Gets a list of all cell text values in row-major order. */
     public List<String> getAllValues() {
+        return getAllValues(false);
+    }
+
+    /**
+     * Gets a list of all cell text values in row-major order, optionally filtering out editable
+     * cells.
+     *
+     * @param onlyNonEditable if true, returns empty string for editable cells
+     * @return the list of cell text values
+     */
+    private List<String> getAllValues(boolean onlyNonEditable) {
         checkInitialized();
-        return cellViewModels.stream().map(vm -> vm.rawTextProperty().get()).toList();
+        return cellViewModels.stream()
+                .map(
+                        vm ->
+                                (onlyNonEditable && vm.editableProperty().get())
+                                        ? ""
+                                        : vm.rawTextProperty().get())
+                .toList();
     }
 
     /**

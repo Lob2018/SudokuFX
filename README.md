@@ -2,7 +2,7 @@
 
 Dive into the world of Sudoku with a game that offers:
 - 🧩 **Play challenging 9x9 puzzles**: Enjoy grids ranging from beginner to expert levels.
-- 🤖️ **Solve any 9x9 Sudoku grid**: Let the game solve your puzzles or input custom ones.
+- 🤖️ **Solve and use any 9x9 Sudoku grid**: Let the game solve your puzzles or input custom ones.
 - ✨ **Create profiles**: Save progress and manage personalized profiles for each player.
 - 💾 **Save anytime**: Effortlessly continue your puzzle-solving journey.
 

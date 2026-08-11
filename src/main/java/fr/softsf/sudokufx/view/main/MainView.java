@@ -206,6 +206,8 @@ public final class MainView implements IMainView {
     @FXML private Label menuSolveButtonSolveText;
     @FXML private Button menuSolveButtonSolveClear;
     @FXML private PossibilityStarsHBox menuSolveHBoxPossibilities;
+    @FXML private Button menuSolveButtonUseThisGrid;
+    @FXML private Label menuSolveButtonUseThisGridText;
 
     @FXML private Button menuSaveButtonReduce;
     @FXML private Label menuSaveButtonReduceText;
@@ -625,6 +627,14 @@ public final class MainView implements IMainView {
                 menuSolveViewModel.solveClearAccessibleTextProperty(),
                 menuSolveViewModel.solveClearTooltipProperty(),
                 menuSolveViewModel.solveClearRoleDescriptionProperty());
+        bindingConfigurator.configureButton(
+                menuSolveButtonUseThisGrid,
+                null,
+                menuSolveViewModel.solveUseThisGridAccessibleTextProperty(),
+                menuSolveViewModel.solveUseThisGridTooltipProperty(),
+                menuSolveViewModel.solveUseThisGridRoleDescriptionProperty());
+        bindingConfigurator.configureLabel(
+                menuSolveButtonUseThisGridText, menuSolveViewModel.solveUseThisGridTextProperty());
     }
 
     /**
@@ -1342,7 +1352,8 @@ public final class MainView implements IMainView {
         if (source instanceof Button button) {
             switch (button.getId()) {
                 case "menuPlayerButtonPlayer" -> menuMaxiButtonPlayer.requestFocus();
-                case "menuSolveButtonSolve" -> menuMaxiButtonSolve.requestFocus();
+                case "menuSolveButtonSolve", "menuSolveButtonUseThisGrid" ->
+                        menuMaxiButtonSolve.requestFocus();
                 case "menuSaveButtonSave" -> menuMaxiButtonBackup.requestFocus();
                 case "menuOptionsButtonOptions" -> menuMaxiButtonOptions.requestFocus();
                 default -> menuMaxiButtonReduce.requestFocus();
@@ -1391,6 +1402,19 @@ public final class MainView implements IMainView {
                         currentGrid ->
                                 menuLevelViewModel.updateSelectedLevel(
                                         currentGrid.level(), currentGrid.percentage()));
+    }
+
+    /**
+     * Applies the user-defined grid from the solve submenu as the current active grid and restores
+     * the menu view.
+     *
+     * @param event the action event triggered by the user interaction
+     */
+    @FXML
+    public void handleUseThisGrid(ActionEvent event) {
+        if (gridViewModel.applyUseThisGrid()) {
+            handleRestoreGridAndMenuMaxiShow(event);
+        }
     }
 
     /**

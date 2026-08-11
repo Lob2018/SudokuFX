@@ -31,6 +31,8 @@ public class MenuSolveViewModel {
             "menu.accessibility.role.description.closed";
     private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED =
             "menu.accessibility.role.description.opened";
+    private static final String MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION =
+            "menu.accessibility.role.description.submenu.option";
 
     private final StringBinding solveMenuMaxiAccessibleText;
     private final StringBinding solveMenuMaxiTooltip;
@@ -47,6 +49,11 @@ public class MenuSolveViewModel {
     private final StringBinding solveClearAccessibleText;
     private final StringBinding solveClearRoleDescription;
     private final StringBinding solveClearTooltip;
+
+    private final StringBinding solveUseThisGridAccessibleText;
+    private final StringBinding solveUseThisGridText;
+    private final StringBinding solveUseThisGridRoleDescription;
+    private final StringBinding solveUseThisGridTooltip;
 
     /**
      * Initializes the MenuSolveViewModel with necessary reactive bindings.
@@ -70,11 +77,20 @@ public class MenuSolveViewModel {
         solveClearAccessibleText =
                 createStringBinding("menu.solve.button.solve.clear.accessibility");
         solveClearRoleDescription =
-                createStringBinding("menu.accessibility.role.description.submenu.option");
+                createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION);
         solveClearTooltip =
                 createFormattedAndConcatenatedBinding(
                         "menu.solve.button.solve.clear.accessibility",
-                        "menu.accessibility.role.description.submenu.option");
+                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION);
+        solveUseThisGridAccessibleText =
+                createStringBinding("menu.solve.button.use.this.grid.accessibility");
+        solveUseThisGridTooltip =
+                createFormattedAndConcatenatedBinding(
+                        "menu.solve.button.use.this.grid.accessibility",
+                        MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION);
+        solveUseThisGridRoleDescription =
+                createStringBinding(MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION);
+        solveUseThisGridText = createStringBinding("menu.solve.button.use.this.grid.text");
     }
 
     /**
@@ -292,5 +308,61 @@ public class MenuSolveViewModel {
      */
     public void setSolvePercentage(int value) {
         this.solvePercentage.set(value);
+    }
+
+    /**
+     * Returns the reactive binding for the solve use this grid accessible text property.
+     *
+     * @return the StringBinding for the solve use this grid accessible text
+     */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
+    public StringBinding solveUseThisGridAccessibleTextProperty() {
+        return solveUseThisGridAccessibleText;
+    }
+
+    /**
+     * Returns the reactive binding for the solve use this grid tooltip property.
+     *
+     * @return the StringBinding for the solve use this grid tooltip
+     */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
+    public StringBinding solveUseThisGridTooltipProperty() {
+        return solveUseThisGridTooltip;
+    }
+
+    /**
+     * Returns the reactive binding for the solve use this grid role description property.
+     *
+     * @return the StringBinding for the solve use this grid role description
+     */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
+    public StringBinding solveUseThisGridRoleDescriptionProperty() {
+        return solveUseThisGridRoleDescription;
+    }
+
+    /**
+     * Returns the reactive binding for the solve use this grid text property.
+     *
+     * @return the StringBinding for the solve use this grid text
+     */
+    @SuppressFBWarnings(
+            value = "EI_EXPOSE_REP",
+            justification =
+                    "JavaFX properties are intentionally exposed for bindings and listeners;"
+                            + " defensive copies break UI reactivity.")
+    public StringBinding solveUseThisGridTextProperty() {
+        return solveUseThisGridText;
     }
 }
