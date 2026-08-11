@@ -47,9 +47,9 @@
   </g>
 </defs>
 <script type="application/ecmascript">
-var viewWidth = 1454;
+var viewWidth = 1254;
 var viewHeight = 550;
-var sectionId = 'dynsection-12';
+var sectionId = 'dynsection-14';
 </script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
 <svg id="graph" class="graph">
@@ -150,20 +150,20 @@ var sectionId = 'dynsection-12';
 </a>
 </g>
 </g>
-<!-- Node19 -->
-<g id="Node000019" class="node">
-<title>Node19</title>
-<g id="a_Node000019"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad1b7ef7994bef2d64edd271bf77a9cbc" target="_top" xlink:title="Checks if the current UI context is set to the Solve menu.">
+<!-- Node18 -->
+<g id="Node000018" class="node">
+<title>Node18</title>
+<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad1b7ef7994bef2d64edd271bf77a9cbc" target="_top" xlink:title="Checks if the current UI context is set to the Solve menu.">
 <polygon fill="white" stroke="#666666" points="597.38,-226.39 428.38,-226.39 428.38,-194.39 597.38,-194.39 597.38,-226.39"/>
 <text text-anchor="start" x="436.38" y="-212.89" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="512.88" y="-200.89" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.isSolveModeActive</text>
 </a>
 </g>
 </g>
-<!-- Node3&#45;&gt;Node19 -->
-<g id="edge33_Node000003_Node000019" class="edge">
-<title>Node3&#45;&gt;Node19</title>
-<g id="a_edge33_Node000003_Node000019"><a xlink:title=" ">
+<!-- Node3&#45;&gt;Node18 -->
+<g id="edge33_Node000003_Node000018" class="edge">
+<title>Node3&#45;&gt;Node18</title>
+<g id="a_edge33_Node000003_Node000018"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M383.24,-210.39C394.27,-210.39 405.56,-210.39 416.65,-210.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="416.6,-213.89 426.6,-210.39 416.6,-206.89 416.6,-213.89"/>
 </a>
@@ -392,39 +392,39 @@ var sectionId = 'dynsection-12';
 </a>
 </g>
 </g>
-<!-- Node15 -->
-<g id="Node000015" class="node">
-<title>Node15</title>
-<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09" target="_top" xlink:title="Persists the current grid state for the active player’s selected game.">
+<!-- Node14 -->
+<g id="Node000014" class="node">
+<title>Node14</title>
+<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09" target="_top" xlink:title="Persists the current grid state for the active player’s selected game.">
 <polygon fill="white" stroke="#666666" points="813.62,-314.39 649.88,-314.39 649.88,-282.39 813.62,-282.39 813.62,-314.39"/>
 <text text-anchor="start" x="657.88" y="-300.89" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="731.75" y="-288.89" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.persistGridValue</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node15 -->
-<g id="edge25_Node000010_Node000015" class="edge">
-<title>Node10&#45;&gt;Node15</title>
-<g id="a_edge25_Node000010_Node000015"><a xlink:title=" ">
+<!-- Node10&#45;&gt;Node14 -->
+<g id="edge25_Node000010_Node000014" class="edge">
+<title>Node10&#45;&gt;Node14</title>
+<g id="a_edge25_Node000010_Node000014"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M585.19,-331.94C605.39,-327.29 627.54,-322.18 648.33,-317.39"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="648.96,-320.83 657.92,-315.18 647.39,-314.01 648.96,-320.83"/>
 </a>
 </g>
 </g>
-<!-- Node16 -->
-<g id="Node000016" class="node">
-<title>Node16</title>
-<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" target="_top" xlink:title="Validates the grid by attempting to solve it.">
+<!-- Node15 -->
+<g id="Node000015" class="node">
+<title>Node15</title>
+<g id="a_Node000015"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" target="_top" xlink:title="Validates the grid by attempting to solve it.">
 <polygon fill="white" stroke="#666666" points="813.62,-452.39 649.88,-452.39 649.88,-420.39 813.62,-420.39 813.62,-452.39"/>
 <text text-anchor="start" x="657.88" y="-438.89" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="731.75" y="-426.89" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.verifyGrid</text>
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node16 -->
-<g id="edge27_Node000010_Node000016" class="edge">
-<title>Node10&#45;&gt;Node16</title>
-<g id="a_edge27_Node000010_Node000016"><a xlink:title=" ">
+<!-- Node10&#45;&gt;Node15 -->
+<g id="edge27_Node000010_Node000015" class="edge">
+<title>Node10&#45;&gt;Node15</title>
+<g id="a_edge27_Node000010_Node000015"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M547.96,-364.79C573.72,-376.92 610.11,-393.51 642.75,-406.39 651.18,-409.71 660.15,-413.02 669.01,-416.17"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="667.71,-419.42 678.3,-419.41 670.01,-412.81 667.71,-419.42"/>
 </a>
@@ -449,94 +449,84 @@ var sectionId = 'dynsection-12';
 </a>
 </g>
 </g>
-<!-- Node14 -->
-<g id="Node000014" class="node">
-<title>Node14</title>
-<g id="a_Node000014"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" target="_top" xlink:title="Checks whether the GridViewModel has been initialized via init().">
-<polygon fill="white" stroke="#666666" points="1445.5,-386.39 1281.75,-386.39 1281.75,-354.39 1445.5,-354.39 1445.5,-386.39"/>
-<text text-anchor="start" x="1289.75" y="-372.89" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
-<text text-anchor="middle" x="1363.62" y="-360.89" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.checkInitialized</text>
+<!-- Node13&#45;&gt;Node13 -->
+<g id="edge24_Node000013_Node000013" class="edge">
+<title>Node13&#45;&gt;Node13</title>
+<g id="a_edge24_Node000013_Node000013"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1125.94,-386.83C1118.86,-395.97 1131.5,-404.39 1163.88,-404.39 1181.83,-404.39 1193.72,-401.8 1199.54,-397.93"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="1202.93,-398.81 1201.51,-388.31 1196.07,-397.4 1202.93,-398.81"/>
 </a>
 </g>
 </g>
-<!-- Node13&#45;&gt;Node14 -->
-<g id="edge24_Node000013_Node000014" class="edge">
-<title>Node13&#45;&gt;Node14</title>
-<g id="a_edge24_Node000013_Node000014"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1246.16,-370.39C1254.06,-370.39 1262.1,-370.39 1270.09,-370.39"/>
-<polygon fill="#63b8ff" stroke="#63b8ff" points="1269.82,-373.89 1279.82,-370.39 1269.82,-366.89 1269.82,-373.89"/>
-</a>
-</g>
-</g>
-<!-- Node15&#45;&gt;Node13 -->
-<g id="edge26_Node000015_Node000013" class="edge">
-<title>Node15&#45;&gt;Node13</title>
-<g id="a_edge26_Node000015_Node000013"><a xlink:title=" ">
+<!-- Node14&#45;&gt;Node13 -->
+<g id="edge26_Node000014_Node000013" class="edge">
+<title>Node14&#45;&gt;Node13</title>
+<g id="a_edge26_Node000014_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M814.11,-309.19C877.47,-317.94 967.55,-331.12 1046,-345.39 1056.38,-347.27 1067.25,-349.4 1078,-351.59"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="1077.15,-354.99 1087.65,-353.58 1078.56,-348.13 1077.15,-354.99"/>
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node12 -->
-<g id="edge32_Node000016_Node000012" class="edge">
-<title>Node16&#45;&gt;Node12</title>
-<g id="a_edge32_Node000016_Node000012"><a xlink:title=" ">
+<!-- Node15&#45;&gt;Node12 -->
+<g id="edge32_Node000015_Node000012" class="edge">
+<title>Node15&#45;&gt;Node12</title>
+<g id="a_edge32_Node000015_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M787.1,-419.9C816.95,-410.85 854.16,-399.57 885.51,-390.06"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="886.33,-393.47 894.89,-387.21 884.3,-386.77 886.33,-393.47"/>
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node13 -->
-<g id="edge30_Node000016_Node000013" class="edge">
-<title>Node16&#45;&gt;Node13</title>
-<g id="a_edge30_Node000016_Node000013"><a xlink:title=" ">
+<!-- Node15&#45;&gt;Node13 -->
+<g id="edge30_Node000015_Node000013" class="edge">
+<title>Node15&#45;&gt;Node13</title>
+<g id="a_edge30_Node000015_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M813.82,-427.59C877.23,-420.28 967.49,-408.9 1046,-395.39 1056.81,-393.52 1068.14,-391.37 1079.32,-389.11"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="1079.84,-392.58 1088.94,-387.14 1078.44,-385.72 1079.84,-392.58"/>
 </a>
 </g>
 </g>
-<!-- Node17 -->
-<g id="Node000017" class="node">
-<title>Node17</title>
-<g id="a_Node000017"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca" target="_top" xlink:title="Handles all actions when a grid is successfully completed.">
+<!-- Node16 -->
+<g id="Node000016" class="node">
+<title>Node16</title>
+<g id="a_Node000016"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca" target="_top" xlink:title="Handles all actions when a grid is successfully completed.">
 <polygon fill="white" stroke="#666666" points="1033.25,-524.39 869.5,-524.39 869.5,-492.39 1033.25,-492.39 1033.25,-524.39"/>
 <text text-anchor="start" x="877.5" y="-510.89" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="951.38" y="-498.89" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.celebrateVictory</text>
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node17 -->
-<g id="edge28_Node000016_Node000017" class="edge">
-<title>Node16&#45;&gt;Node17</title>
-<g id="a_edge28_Node000016_Node000017"><a xlink:title=" ">
+<!-- Node15&#45;&gt;Node16 -->
+<g id="edge28_Node000015_Node000016" class="edge">
+<title>Node15&#45;&gt;Node16</title>
+<g id="a_edge28_Node000015_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M772.87,-452.78C796.97,-462.33 828.37,-474.24 856.75,-483.39 862.5,-485.24 868.49,-487.07 874.52,-488.83"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="873.37,-492.15 883.95,-491.54 875.3,-485.42 873.37,-492.15"/>
 </a>
 </g>
 </g>
-<!-- Node18 -->
-<g id="Node000018" class="node">
-<title>Node18</title>
-<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#af41c64cb771df8f4fa5bbf0c3a34431b" target="_top" xlink:title="Solves the given 9x9 Sudoku grid.">
+<!-- Node17 -->
+<g id="Node000017" class="node">
+<title>Node17</title>
+<g id="a_Node000017"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#af41c64cb771df8f4fa5bbf0c3a34431b" target="_top" xlink:title="Solves the given 9x9 Sudoku grid.">
 <polygon fill="white" stroke="#666666" points="1034.38,-474.39 868.38,-474.39 868.38,-442.39 1034.38,-442.39 1034.38,-474.39"/>
 <text text-anchor="start" x="876.38" y="-460.89" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.grid.</text>
 <text text-anchor="middle" x="951.38" y="-448.89" font-family="Helvetica,sans-Serif" font-size="10.00">GridViewModel.getCurrentSolution</text>
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node18 -->
-<g id="edge31_Node000016_Node000018" class="edge">
-<title>Node16&#45;&gt;Node18</title>
-<g id="a_edge31_Node000016_Node000018"><a xlink:title=" ">
+<!-- Node15&#45;&gt;Node17 -->
+<g id="edge31_Node000015_Node000017" class="edge">
+<title>Node15&#45;&gt;Node17</title>
+<g id="a_edge31_Node000015_Node000017"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M814.09,-444.61C828,-446.02 842.55,-447.49 856.75,-448.92"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="856.23,-452.39 866.54,-449.91 856.94,-445.42 856.23,-452.39"/>
 </a>
 </g>
 </g>
-<!-- Node17&#45;&gt;Node17 -->
-<g id="edge29_Node000017_Node000017" class="edge">
-<title>Node17&#45;&gt;Node17</title>
-<g id="a_edge29_Node000017_Node000017"><a xlink:title=" ">
+<!-- Node16&#45;&gt;Node16 -->
+<g id="edge29_Node000016_Node000016" class="edge">
+<title>Node16&#45;&gt;Node16</title>
+<g id="a_edge29_Node000016_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M913.44,-524.83C906.36,-533.97 919,-542.39 951.38,-542.39 969.33,-542.39 981.22,-539.8 987.04,-535.93"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="990.43,-536.81 989.01,-526.31 983.57,-535.4 990.43,-536.81"/>
 </a>

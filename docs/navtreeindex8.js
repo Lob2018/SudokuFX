@@ -1,5 +1,9 @@
 var NAVTREEINDEX8 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6cb209b6d09612d84733468b1cf2bb70":[2,0,0,0,0,4,1,15],
+"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6edc9f68c5b029401870d56b46ccc6e3":[1,0,0,0,0,5,1,17],
+"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6edc9f68c5b029401870d56b46ccc6e3":[2,0,0,0,0,4,1,17],
+"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a761650dcef5c2c98d3330f3f99fae9b0":[1,0,0,0,0,5,1,22],
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a761650dcef5c2c98d3330f3f99fae9b0":[2,0,0,0,0,4,1,22],
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a78ed152767322e1df20ba4c612e1a7b2":[1,0,0,0,0,5,1,14],
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a78ed152767322e1df20ba4c612e1a7b2":[2,0,0,0,0,4,1,14],
@@ -245,9 +249,5 @@ var NAVTREEINDEX8 =
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a6058e985daece8cd355a8baa515e8c9e":[2,0,0,0,0,6,2,3,0],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a63917cda40d8e3a3c40101e99ab3c13f":[1,0,0,0,0,7,2,3,4],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a63917cda40d8e3a3c40101e99ab3c13f":[2,0,0,0,0,6,2,3,4],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a679cac643ad756d71ff38a8fc4086128":[1,0,0,0,0,7,2,3,1],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a679cac643ad756d71ff38a8fc4086128":[2,0,0,0,0,6,2,3,1],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#aed85e533277f8aef32c61f1d66471302":[1,0,0,0,0,7,2,3,2],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#aed85e533277f8aef32c61f1d66471302":[2,0,0,0,0,6,2,3,2],
-"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html":[1,0,0,0,0,7,2,4]
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a679cac643ad756d71ff38a8fc4086128":[1,0,0,0,0,7,2,3,1]
 };

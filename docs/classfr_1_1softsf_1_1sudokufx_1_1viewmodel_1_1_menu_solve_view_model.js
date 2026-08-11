@@ -17,8 +17,13 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model =
     [ "solveReduceTooltipProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#af00eec56891007110fb789e20c80311c", null ],
     [ "solveRoleDescriptionProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a83bcf4a5c8f152652fc8af977249aecd", null ],
     [ "solveTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a4000e922b751d35e050aa225eac8d6aa", null ],
+    [ "solveUseThisGridAccessibleTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a5e76d6fff5e0e3e1f0ef15a8df660b04", null ],
+    [ "solveUseThisGridRoleDescriptionProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a67163618261e57c7bc6e876ca1e573e5", null ],
+    [ "solveUseThisGridTextProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a18c7bfc13bcf549e82b04ea92f9d2518", null ],
+    [ "solveUseThisGridTooltipProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#afb507761f123062c1d4929d763c966d6", null ],
     [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_CLOSED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae75fe14e7136bfb46e63b2f9361f720f", null ],
     [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_OPENED", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a98c8bb9d88b54f2657b043a84bc7eb27", null ],
+    [ "MENU_ACCESSIBILITY_ROLE_DESCRIPTION_SUBMENU_OPTION", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae81dec4b6b155842760cbc571724ef38", null ],
     [ "solveClearAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ab98e087572e0b23e5d5e3a9239312f88", null ],
     [ "solveClearRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a7a0d4ab964a8893ccf96312ad1857b0b", null ],
     [ "solveClearTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a8b44d308d42a21dec12a7eb2a399b952", null ],
@@ -31,5 +36,9 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model =
     [ "solveReduceText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a6cc9fe13e8151ba8f34856fceea2832c", null ],
     [ "solveReduceTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a48dfbdac7cbe0a9925e01fe3f8e5854d", null ],
     [ "solveRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a9e5ffb98cc0758af38cf01e7487c80ca", null ],
-    [ "solveText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a3b8c9172f41469cae40187e0b8bb2cb6", null ]
+    [ "solveText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a3b8c9172f41469cae40187e0b8bb2cb6", null ],
+    [ "solveUseThisGridAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ad82d9d7ec7344b042017f1fc7f316fd9", null ],
+    [ "solveUseThisGridRoleDescription", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#aaebcd4761d667415c3fbf944503262cd", null ],
+    [ "solveUseThisGridText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ab01d5e9828827c15a58a49918a8780d3", null ],
+    [ "solveUseThisGridTooltip", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#af6698bd997f29f06753429c23b892679", null ]
 ];

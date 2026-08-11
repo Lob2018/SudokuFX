@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.handleUseThisGrid" name="fr.softsf.sudokufx.view.main.MainView.handleUseThisGrid">
+<area shape="rect" id="Node000001" title="Applies the user&#45;defined grid from the solve submenu as the current active grid and restores the menu..." alt="" coords="5,43,198,85"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a9637b2403823a125ec7a5bf275401609" title="Restores the grid and shows the MAXI menu." alt="" coords="246,35,490,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,61,230,61,230,67,198,67"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a7a5e9379f9400a112803ed3dcd19063d" title="Activates the MAXI menu and sets focus on the corresponding button based on the event source." alt="" coords="542,5,754,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="490,45,526,40,526,45,491,50"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a805ba50257c2565844220d96b618c2c9" title="Synchronizes the menu UI with the current game model state." alt="" coords="538,72,757,131"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="491,78,523,82,522,87,490,83"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="805,80,995,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="758,99,789,99,789,104,758,104"/>
+</map>

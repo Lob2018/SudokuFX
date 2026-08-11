@@ -42,7 +42,7 @@
 <text text-anchor="start" x="14" y="-1122.5" font-family="Helvetica,sans-Serif" font-size="10.00"> helpViewModel</text>
 <text text-anchor="start" x="5.5" y="-1106.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-1106.5" font-family="Helvetica,sans-Serif" font-size="10.00">Timeline hideMiniMenuTimeline</text>
-<text text-anchor="start" x="14" y="-1090.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 102 more...</text>
+<text text-anchor="start" x="14" y="-1090.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 104 more...</text>
 <text text-anchor="start" x="5.5" y="-1074.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-1074.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int AUTO</text>
 <text text-anchor="start" x="14" y="-1062.5" font-family="Helvetica,sans-Serif" font-size="10.00">_HIDE_MINI_MENU_DELAY_MS</text>
@@ -114,7 +114,7 @@
 <text text-anchor="start" x="14" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuNewShow()</text>
 <text text-anchor="start" x="4" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="14" y="-414.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleMenuOptionsShow()</text>
-<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 9 more...</text>
+<text text-anchor="start" x="14" y="-398.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
 <text text-anchor="start" x="5.5" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="14" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00">void activeMenuManagerInitialization()</text>
 <text text-anchor="start" x="5.5" y="-366.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>

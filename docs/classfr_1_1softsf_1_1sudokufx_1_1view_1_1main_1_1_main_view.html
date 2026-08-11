@@ -172,6 +172,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6d8009b22f68055f5d44665464c4c542"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the song, shows a toast, and refocuses the song button.  <br /></td></tr>
 <tr class="memitem:abfa927409a1af0731e803ce96ba23e01" id="r_abfa927409a1af0731e803ce96ba23e01"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#abfa927409a1af0731e803ce96ba23e01">handleToggleLanguage</a> ()</td></tr>
 <tr class="memdesc:abfa927409a1af0731e803ce96ba23e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches language.  <br /></td></tr>
+<tr class="memitem:a2a6ea282e3045f8584defe150472a34f" id="r_a2a6ea282e3045f8584defe150472a34f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a2a6ea282e3045f8584defe150472a34f">handleUseThisGrid</a> (ActionEvent event)</td></tr>
+<tr class="memdesc:a2a6ea282e3045f8584defe150472a34f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the user-defined grid from the solve submenu as the current active grid and restores the menu view.  <br /></td></tr>
 <tr class="memitem:a39af891bdb0af2c2abfd7a68bdfe87e8" id="r_a39af891bdb0af2c2abfd7a68bdfe87e8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a39af891bdb0af2c2abfd7a68bdfe87e8">openingMainStage</a> (final <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html">ISplashScreenView</a> iSplashScreenView)</td></tr>
 <tr class="memdesc:a39af891bdb0af2c2abfd7a68bdfe87e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the main stage and handles the transition from splash screen to full menu.  <br /></td></tr>
 </table><table class="memberdecls">
@@ -356,6 +358,8 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a5ece58296358f80943bd901d1eb131c1" id="r_a5ece58296358f80943bd901d1eb131c1"><td class="memItemLeft">Button&#160;</td><td class="memItemRight"><a class="el" href="#a5ece58296358f80943bd901d1eb131c1">menuSolveButtonSolve</a></td></tr>
 <tr class="memitem:a3aa2cbdb9e555aef465b0d7312faee54" id="r_a3aa2cbdb9e555aef465b0d7312faee54"><td class="memItemLeft">Button&#160;</td><td class="memItemRight"><a class="el" href="#a3aa2cbdb9e555aef465b0d7312faee54">menuSolveButtonSolveClear</a></td></tr>
 <tr class="memitem:aa60263bc94d13be317c0b32e317a1706" id="r_aa60263bc94d13be317c0b32e317a1706"><td class="memItemLeft">Label&#160;</td><td class="memItemRight"><a class="el" href="#aa60263bc94d13be317c0b32e317a1706">menuSolveButtonSolveText</a></td></tr>
+<tr class="memitem:a58f19b187b98a3d5cbb2c896c50ac110" id="r_a58f19b187b98a3d5cbb2c896c50ac110"><td class="memItemLeft">Button&#160;</td><td class="memItemRight"><a class="el" href="#a58f19b187b98a3d5cbb2c896c50ac110">menuSolveButtonUseThisGrid</a></td></tr>
+<tr class="memitem:a2eb99d0b58f21d2f3ec3ca7a3c0ca87c" id="r_a2eb99d0b58f21d2f3ec3ca7a3c0ca87c"><td class="memItemLeft">Label&#160;</td><td class="memItemRight"><a class="el" href="#a2eb99d0b58f21d2f3ec3ca7a3c0ca87c">menuSolveButtonUseThisGridText</a></td></tr>
 <tr class="memitem:a7490414a3e3479528a167f291facc83a" id="r_a7490414a3e3479528a167f291facc83a"><td class="memItemLeft"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html">PossibilityStarsHBox</a>&#160;</td><td class="memItemRight"><a class="el" href="#a7490414a3e3479528a167f291facc83a">menuSolveHBoxPossibilities</a></td></tr>
 <tr class="memitem:a666daa013b0e3da1792cd2be089ef7a6" id="r_a666daa013b0e3da1792cd2be089ef7a6"><td class="memItemLeft">final <a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html">MenuSolveViewModel</a>&#160;</td><td class="memItemRight"><a class="el" href="#a666daa013b0e3da1792cd2be089ef7a6">menuSolveViewModel</a></td></tr>
 <tr class="memitem:a6dab1bc02ffc93c33a9464ab75533d75" id="r_a6dab1bc02ffc93c33a9464ab75533d75"><td class="memItemLeft">Stage&#160;</td><td class="memItemRight"><a class="el" href="#a6dab1bc02ffc93c33a9464ab75533d75">primaryStage</a></td></tr>
@@ -1475,6 +1479,37 @@ OPAQUE_MODE_PSEUDO_SELECTED</code> pseudo-class. </p>
 
 </div>
 </div>
+<a id="a2a6ea282e3045f8584defe150472a34f" name="a2a6ea282e3045f8584defe150472a34f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a6ea282e3045f8584defe150472a34f">&#9670;&#160;</a></span>handleUseThisGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fr.softsf.sudokufx.view.main.MainView.handleUseThisGrid </td>
+          <td>(</td>
+          <td class="paramtype">ActionEvent</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies the user-defined grid from the solve submenu as the current active grid and restores the menu view. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>the action event triggered by the user interaction </td></tr>
+  </table>
+  </dd>
+</dl>
+<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a2a6ea282e3045f8584defe150472a34f_cgraph.svg" width="100%" height="402"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
 <a id="ac70998c26718d8e4b12d0197942e1be9" name="ac70998c26718d8e4b12d0197942e1be9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac70998c26718d8e4b12d0197942e1be9">&#9670;&#160;</a></span>hiddenMenuInitialization()</h2>
 
@@ -1564,10 +1599,10 @@ Initializes audio management, menu timelines, and menu components. </li>
 <li>
 Initializes the grid and active menu manager. </li>
 </ul>
-<div id="dynsection-13" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-13-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-13-content" class="dyncontent" style="display:none;">
+<div id="dynsection-14-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_afccc317d7f06806de15357b5fd1e5684_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1597,10 +1632,10 @@ Initializes the grid and active menu manager. </li>
 </div><div class="memdoc">
 
 <p>Initializes each difficulty level section in the menu by binding UI components to ViewModel properties for EASY, MEDIUM, and DIFFICULT levels. </p>
-<div id="dynsection-14" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-14-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-14-content" class="dyncontent" style="display:none;">
+<div id="dynsection-15-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_aaf10a0f151e5b327c746c1b7174081ef_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1771,10 +1806,10 @@ Initializes the grid and active menu manager. </li>
 </dl>
 
 <p>Implements <a class="el" href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html#af5213ac1409a8e916a73f929188c28ad">fr.softsf.sudokufx.common.interfaces.IMainView</a>.</p>
-<div id="dynsection-15" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-15-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-15-content" class="dyncontent" style="display:none;">
+<div id="dynsection-16-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a39af891bdb0af2c2abfd7a68bdfe87e8_cgraph.svg" width="510" height="320"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1871,10 +1906,10 @@ Performs the final ViewModel initialization to apply loaded configuration settin
 <li>
 Configures the initial opacity mode based on the current persisted state. </li>
 </ul>
-<div id="dynsection-16" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-16-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-16-content" class="dyncontent" style="display:none;">
+<div id="dynsection-17-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a640abc39ab4c9e393253742341427eb4_cgraph.svg" width="472" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1921,10 +1956,10 @@ Binds the edit button state to the anonymous player status. </li>
 <li>
 Delegates the multi-column layout initialization to the structural list view factory. </li>
 </ul>
-<div id="dynsection-17" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-17-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-17-content" class="dyncontent" style="display:none;">
+<div id="dynsection-18-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a8214e802af406ccfc0129318f77bf170_cgraph.svg" width="100%" height="362"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -1955,10 +1990,10 @@ Delegates the multi-column layout initialization to the structural list view fac
 
 <p>Synchronizes the menu UI with the current game model state. </p>
 <p>Resets the grid view and level selection, then retrieves the active grid from the model to update the UI with the corresponding level and completion percentage. Finally, synchronizes the grid opacity mode to ensure visual consistency. </p>
-<div id="dynsection-18" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-18-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-18-content" class="dyncontent" style="display:none;">
+<div id="dynsection-19-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a805ba50257c2565844220d96b618c2c9_cgraph.svg" width="468" height="70"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -1989,10 +2024,10 @@ Delegates the multi-column layout initialization to the structural list view fac
 
 <p>Initializes bindings and event listeners for the save menu components. </p>
 <p>Binds accessibility texts, tooltips, and labels to the ViewModel. Synchronizes the selected backup between the ListView and the ViewModel. Sets up the ListView with custom backup cells, registers grid change listeners for automatic refresh, and refreshes UI state. </p>
-<div id="dynsection-19" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-19-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-19-content" class="dyncontent" style="display:none;">
+<div id="dynsection-20-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_aebaf39d672a3997a3b90c42333b0689b_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -2105,10 +2140,10 @@ Delegates the multi-column layout initialization to the structural list view fac
 
 <p>Synchronizes the user interface with the current player's profile data. </p>
 <p>Updates the application locale, restores the grid level state, applies specific player options (such as background and colors), adjusts the grid opacity mode based on the new player's configuration, and updates the available game backups list. </p>
-<div id="dynsection-20" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-20-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-20-content" class="dyncontent" style="display:none;">
+<div id="dynsection-21-content" class="dyncontent" style="display:none;">
 <div class="center"><div class="zoom"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_ab932816eea56f364964cee4386ce22c0_cgraph.svg" width="100%" height="377"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 
@@ -2173,10 +2208,10 @@ Delegates the multi-column layout initialization to the structural list view fac
   </table>
   </dd>
 </dl>
-<div id="dynsection-21" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
-<div id="dynsection-21-summary" class="dynsummary" style="display:block;">
+<div id="dynsection-22" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;"><span class="dynarrow"><span class="arrowhead closed"></span></span>Here is the call graph for this function:</div>
+<div id="dynsection-22-summary" class="dynsummary" style="display:block;">
 </div>
-<div id="dynsection-21-content" class="dyncontent" style="display:none;">
+<div id="dynsection-22-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view_a0c413fa0dec2327ebc2348e34c9e7135_cgraph.svg" width="583" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
@@ -4572,6 +4607,50 @@ Delegates the multi-column layout initialization to the structural list view fac
       <table class="memname">
         <tr>
           <td class="memname">Label fr.softsf.sudokufx.view.main.MainView.menuSolveButtonSolveText</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a58f19b187b98a3d5cbb2c896c50ac110" name="a58f19b187b98a3d5cbb2c896c50ac110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58f19b187b98a3d5cbb2c896c50ac110">&#9670;&#160;</a></span>menuSolveButtonUseThisGrid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Button fr.softsf.sudokufx.view.main.MainView.menuSolveButtonUseThisGrid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2eb99d0b58f21d2f3ec3ca7a3c0ca87c" name="a2eb99d0b58f21d2f3ec3ca7a3c0ca87c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2eb99d0b58f21d2f3ec3ca7a3c0ca87c">&#9670;&#160;</a></span>menuSolveButtonUseThisGridText</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Label fr.softsf.sudokufx.view.main.MainView.menuSolveButtonUseThisGridText</td>
         </tr>
       </table>
   </td>

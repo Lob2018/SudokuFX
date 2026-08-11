@@ -4,6 +4,7 @@ var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex =
     [ "getPlayerNamePattern", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a17503232a730d311406b7cd2d0f85902", null ],
     [ "getSecretPattern", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a8774bba51d6c3deb394edc546c8ba251", null ],
     [ "getVersionPattern", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a4ba83d33607c3d2efe17d75923e44f43", null ],
+    [ "getZeroCommaGridPattern", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a0047fca63240954484e9c921161af29e", null ],
     [ "isValidatedByRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a423142d558d45f6e0ffbe705f1aae781", null ],
     [ "isValidPassword", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a909b2c7b687e5961a5ef292754a774b6", null ],
     [ "ALPHANUMERIC_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#ac2890435ae41d8c24bca202918525756", null ],
@@ -12,5 +13,6 @@ var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex =
     [ "PLAYER_NAME_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a8546e90e0ec83ea0cffcf721bd191150", null ],
     [ "SECRET_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#ad5dfc39bbe129cf3f0e0468ca88540f0", null ],
     [ "SPECIAL_CHARACTERS", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a9aeed92159c93dabcfd2eb8de75ca1ba", null ],
-    [ "VERSION_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a7c57835dac8061ece43a644ad5948814", null ]
+    [ "VERSION_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a7c57835dac8061ece43a644ad5948814", null ],
+    [ "ZERO_COMMA_GRID_PATTERN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html#a748b83099bdf6bb18593de75fc3b81cb", null ]
 ];

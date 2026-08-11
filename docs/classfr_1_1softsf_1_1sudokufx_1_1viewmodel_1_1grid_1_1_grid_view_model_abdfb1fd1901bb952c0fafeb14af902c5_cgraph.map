@@ -1,0 +1,24 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistUseThisGridValue" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistUseThisGridValue">
+<area shape="rect" id="Node000001" title="Persists the user&#45;defined grid from the solve submenu for the active player&#39;s game if modified and va..." alt="" coords="5,117,263,160"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9c424a4b389a43cdaad40bb2bddacfca" title="Applies the generated grid data to the player state and UI cells." alt="" coords="311,72,539,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,116,295,111,296,116,263,121"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="316,163,534,205"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="263,156,301,162,300,167,263,161"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a9b97547be6bd1bf9961ff859ae23afd7" title="Handles UI notifications when grid generation fails." alt="" coords="587,5,840,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="520,69,603,49,604,55,521,74"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a85b73068471edb726968c94d30bc79a6" title="Persists a newly generated game for the current player, updating the selected game with grids,..." alt="" coords="604,72,823,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="539,91,589,91,589,96,539,96"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="604,161,823,204"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="502,113,540,124,632,154,631,159,538,129,501,118"/>
+<area shape="rect" id="Node000005" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#ab1bebf1bd508380d7ace78f40778e05c" title="Converts this difficulty level to its numeric representation." alt="" coords="892,49,1116,92"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="823,82,877,78,877,83,824,87"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="895,116,1113,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="823,163,879,154,880,159,824,168"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="889,207,1119,249"/>
+<area shape="poly" id="edge7_Node000006_Node000008" title=" " alt="" coords="824,197,873,205,873,210,823,202"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="888,297,1120,340"/>
+<area shape="poly" id="edge9_Node000006_Node000009" title=" " alt="" coords="762,202,944,288,942,293,760,207"/>
+<area shape="poly" id="edge8_Node000008_Node000008" title=" " alt="" coords="950,207,947,197,957,187,975,182,1004,180,1035,182,1054,189,1052,194,1034,188,1004,185,976,187,959,192,953,198,955,205"/>
+<area shape="poly" id="edge10_Node000009_Node000009" title=" " alt="" coords="950,297,947,287,957,278,975,273,1004,271,1035,273,1054,279,1052,284,1034,278,1004,276,976,278,959,283,953,289,955,296"/>
+<area shape="poly" id="edge12_Node000010_Node000010" title=" " alt="" coords="371,163,369,153,378,143,396,138,425,136,456,138,474,145,472,150,455,144,425,141,397,143,380,148,374,154,376,161"/>
+</map>

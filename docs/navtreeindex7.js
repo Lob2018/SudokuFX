@@ -1,5 +1,9 @@
 var NAVTREEINDEX7 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a":[2,0,0,0,0,3,11,6],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a527ea4735720b2731552ee8a73329d86":[1,0,0,0,0,4,11,14],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a527ea4735720b2731552ee8a73329d86":[2,0,0,0,0,3,11,14],
+"classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a551c772e482e524f1f4bb7928760fd07":[1,0,0,0,0,4,11,8],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a551c772e482e524f1f4bb7928760fd07":[2,0,0,0,0,3,11,8],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a58c8da4f13f4c3a61115b6ff363197a5":[1,0,0,0,0,4,11,4],
 "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a58c8da4f13f4c3a61115b6ff363197a5":[2,0,0,0,0,3,11,4],
@@ -245,9 +249,5 @@ var NAVTREEINDEX7 =
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a612ceceb60686254906437b532699bc0":[2,0,0,0,0,4,1,5],
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6467f71053ff1d307ded7648135fb648":[1,0,0,0,0,5,1,25],
 "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6467f71053ff1d307ded7648135fb648":[2,0,0,0,0,4,1,25],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6cb209b6d09612d84733468b1cf2bb70":[1,0,0,0,0,5,1,15],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6cb209b6d09612d84733468b1cf2bb70":[2,0,0,0,0,4,1,15],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6edc9f68c5b029401870d56b46ccc6e3":[1,0,0,0,0,5,1,17],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6edc9f68c5b029401870d56b46ccc6e3":[2,0,0,0,0,4,1,17],
-"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a761650dcef5c2c98d3330f3f99fae9b0":[1,0,0,0,0,5,1,22]
+"classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html#a6cb209b6d09612d84733468b1cf2bb70":[1,0,0,0,0,5,1,15]
 };

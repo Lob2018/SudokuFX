@@ -7,6 +7,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_
     [ "givenInvalidLevel_whenCreateGrids_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#aedf306ebfb0722a596755b978bea8381", null ],
     [ "givenLevel_whenGetIntervalle_thenReturnsCorrectBounds", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#a1e8a92844fb23a8bbf2d50e59e255987", null ],
     [ "givenNullGrid_whenResoudreLaGrille_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#ad9ca136642e42ffd442b1fe8bf7a6cd4", null ],
+    [ "givenPercentage_whenGetNiveauDepuisPourcentage_thenReturnsCorrectDifficultyLevel", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#aaf39b1f11c46e91512853e44ed342ae2", null ],
     [ "givenPossibilitiesSum_whenGetPourcentage_thenReturnsClampedValue", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#ad7ea3f9eb1f723b384b0b1a9ce191db0", null ],
     [ "givenValidGrid_whenResolveGrid_thenGridResolvedSuccessfully", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#ae6a7ea8edd652fed7e2f56af5e3a7f76", null ],
     [ "givenValidLevel_whenCreateGrids_thenGridsGeneratedSuccessfully", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html#abb91b14302c28418bc499bc7bf5a7931", null ],

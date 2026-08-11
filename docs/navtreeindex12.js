@@ -1,5 +1,9 @@
 var NAVTREEINDEX12 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a3977f5d0b2fced21d632dcfde8f79c8e":[2,0,0,0,0,8,3,23],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a48ab7b260aa31acaa35f49a17a0fe667":[1,0,0,0,0,9,3,14],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a48ab7b260aa31acaa35f49a17a0fe667":[2,0,0,0,0,8,3,14],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49ad75ae1ed688e05c69038c7f5f7173":[1,0,0,0,0,9,3,13],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49ad75ae1ed688e05c69038c7f5f7173":[2,0,0,0,0,8,3,13],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49c11cdc15fbf969de8ca00ec9817ead":[1,0,0,0,0,9,3,27],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html#a49c11cdc15fbf969de8ca00ec9817ead":[2,0,0,0,0,8,3,27],
@@ -245,9 +249,5 @@ var NAVTREEINDEX12 =
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html":[2,0,0,0,0,8,0,0,1],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a019ea5df9d91c4a740a2ae0947f2beac":[1,0,0,0,0,9,0,0,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a019ea5df9d91c4a740a2ae0947f2beac":[2,0,0,0,0,8,0,0,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a41a53e9bd71fc6a947e9b3b41bbb148a":[1,0,0,0,0,9,0,0,1,10],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a41a53e9bd71fc6a947e9b3b41bbb148a":[2,0,0,0,0,8,0,0,1,10],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a49a20d2a891c95aab0b81ddf327e26fb":[1,0,0,0,0,9,0,0,1,3],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a49a20d2a891c95aab0b81ddf327e26fb":[2,0,0,0,0,8,0,0,1,3],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a5b102ec9fe9b0865a0c54d5e16593a09":[1,0,0,0,0,9,0,0,1,8]
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html#a41a53e9bd71fc6a947e9b3b41bbb148a":[1,0,0,0,0,9,0,0,1,10]
 };

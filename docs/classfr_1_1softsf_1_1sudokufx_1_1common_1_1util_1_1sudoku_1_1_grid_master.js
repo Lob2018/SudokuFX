@@ -13,6 +13,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master =
     [ "genererGrilleAvecCasesCachees", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#af6461bfbf866d4c2ed591179e96eb56b", null ],
     [ "genererLaGrilleAResoudre", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#ae62111abf551659353a37d6eff7fe472", null ],
     [ "getIntervallePourcentageNiveau", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a409da4117c58966b842279006d9546dd", null ],
+    [ "getNiveauDepuisPourcentage", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a08445be939f63d3cef948efb3ea208ce", null ],
     [ "getPossibilites", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#aeed90a968624e9b7ccb44958df9ae821", null ],
     [ "getPossibilitesDepuisPourcentage", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a7da72c06bb28816dc19695add4cbdb27", null ],
     [ "getPossibilitesGrilleAResoudre", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#abcd3c0f06734738979bb31e4063dfb1d", null ],

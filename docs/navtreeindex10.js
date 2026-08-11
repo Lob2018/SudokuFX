@@ -1,5 +1,9 @@
 var NAVTREEINDEX10 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ae28676472e877a08b6c8ce95a28a366a":[2,0,0,0,0,7,2,0,2,6,7],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html":[1,0,0,0,0,8,2,0,2,7],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html":[2,0,0,0,0,7,2,0,2,7],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a1f42ef270aa0002b735d31a0e2f09af6":[1,0,0,0,0,8,2,0,2,7,1],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a1f42ef270aa0002b735d31a0e2f09af6":[2,0,0,0,0,7,2,0,2,7,1],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a3b1accd89500caf5c6a432092bdba823":[1,0,0,0,0,8,2,0,2,7,0],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a3b1accd89500caf5c6a432092bdba823":[2,0,0,0,0,7,2,0,2,7,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX10 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a43a8dc85485252b5ecc58c7ca12b38ca":[2,0,0,0,0,7,2,2,0,0,0],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a5c46e02cbe6a58ba49df969ea8c49671":[1,0,0,0,0,8,2,2,0,0,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a5c46e02cbe6a58ba49df969ea8c49671":[2,0,0,0,0,7,2,2,0,0,6],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a8557ae510e418471d4592de5434e4d3f":[1,0,0,0,0,8,2,2,0,0,8],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a8557ae510e418471d4592de5434e4d3f":[2,0,0,0,0,7,2,2,0,0,8],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a8a7c43b4d80466206da4ffb0b1ccb565":[1,0,0,0,0,8,2,2,0,0,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a8a7c43b4d80466206da4ffb0b1ccb565":[2,0,0,0,0,7,2,2,0,0,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#ac63433555a09b9442b68ad4e6dcdd970":[1,0,0,0,0,8,2,2,0,0,4]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a8557ae510e418471d4592de5434e4d3f":[1,0,0,0,0,8,2,2,0,0,8]
 };

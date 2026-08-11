@@ -1,5 +1,9 @@
 var NAVTREEINDEX9 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a679cac643ad756d71ff38a8fc4086128":[2,0,0,0,0,6,2,3,1],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#aed85e533277f8aef32c61f1d66471302":[1,0,0,0,0,7,2,3,2],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#aed85e533277f8aef32c61f1d66471302":[2,0,0,0,0,6,2,3,2],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html":[1,0,0,0,0,7,2,4],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html":[2,0,0,0,0,6,2,4],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a0eb10ea687d03a7106c18ecb81bdd4fb":[1,0,0,0,0,7,2,4,5],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a0eb10ea687d03a7106c18ecb81bdd4fb":[2,0,0,0,0,6,2,4,5],
@@ -245,9 +249,5 @@ var NAVTREEINDEX9 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac4e1fcc24f4160bfd460aba7f2d6e881":[2,0,0,0,0,7,2,0,2,6,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac9e748ad0b8534d39996752759a71182":[1,0,0,0,0,8,2,0,2,6,9],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac9e748ad0b8534d39996752759a71182":[2,0,0,0,0,7,2,0,2,6,9],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ae28676472e877a08b6c8ce95a28a366a":[1,0,0,0,0,8,2,0,2,6,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ae28676472e877a08b6c8ce95a28a366a":[2,0,0,0,0,7,2,0,2,6,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html":[1,0,0,0,0,8,2,0,2,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html":[2,0,0,0,0,7,2,0,2,7],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html#a1f42ef270aa0002b735d31a0e2f09af6":[1,0,0,0,0,8,2,0,2,7,1]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ae28676472e877a08b6c8ce95a28a366a":[1,0,0,0,0,8,2,0,2,6,7]
 };

@@ -144,6 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a189b01658ea110e5c7ef6d4797cb7e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates Sudoku grids (solved and unsolved) based on a level and a target difficulty percentage (-1 for level's default possibilities).  <br /></td></tr>
 <tr class="memitem:a409da4117c58966b842279006d9546dd" id="r_a409da4117c58966b842279006d9546dd"><td class="memItemLeft">default <a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55">LevelPossibilityBounds</a>&#160;</td><td class="memItemRight"><a class="el" href="#a409da4117c58966b842279006d9546dd">getIntervallePourcentageNiveau</a> (<a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> level)</td></tr>
 <tr class="memdesc:a409da4117c58966b842279006d9546dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère l'intervalle de pourcentages autorisé pour un niveau de difficulté donné.  <br /></td></tr>
+<tr class="memitem:a08445be939f63d3cef948efb3ea208ce" id="r_a08445be939f63d3cef948efb3ea208ce"><td class="memItemLeft">default <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a>&#160;</td><td class="memItemRight"><a class="el" href="#a08445be939f63d3cef948efb3ea208ce">getNiveauDepuisPourcentage</a> (int pourcentage)</td></tr>
+<tr class="memdesc:a08445be939f63d3cef948efb3ea208ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Détermine le niveau de difficulté en fonction du pourcentage de difficulté.  <br /></td></tr>
 <tr class="memitem:a7da72c06bb28816dc19695add4cbdb27" id="r_a7da72c06bb28816dc19695add4cbdb27"><td class="memItemLeft">default int&#160;</td><td class="memItemRight"><a class="el" href="#a7da72c06bb28816dc19695add4cbdb27">getPossibilitesDepuisPourcentage</a> (int pourcentage)</td></tr>
 <tr class="memdesc:a7da72c06bb28816dc19695add4cbdb27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule la somme des possibilités basée sur un pourcentage de difficulté.  <br /></td></tr>
 <tr class="memitem:a3307d58848c5c2f12ba5f33c2eb6ebb7" id="r_a3307d58848c5c2f12ba5f33c2eb6ebb7"><td class="memItemLeft">default int&#160;</td><td class="memItemRight"><a class="el" href="#a3307d58848c5c2f12ba5f33c2eb6ebb7">getPourcentageDepuisPossibilites</a> (int sommeDesPossibilites)</td></tr>
@@ -856,6 +858,32 @@ Static Private Attributes</h2></td></tr>
 <div id="dynsection-10-content" class="dyncontent" style="display:none;">
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_a409da4117c58966b842279006d9546dd_cgraph.svg" width="582" height="54"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
+
+</div>
+</div>
+<a id="a08445be939f63d3cef948efb3ea208ce" name="a08445be939f63d3cef948efb3ea208ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08445be939f63d3cef948efb3ea208ce">&#9670;&#160;</a></span>getNiveauDepuisPourcentage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">default <a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a> fr.softsf.sudokufx.common.util.sudoku.GridMaster.getNiveauDepuisPourcentage </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>pourcentage</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Détermine le niveau de difficulté en fonction du pourcentage de difficulté. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pourcentage</td><td>le pourcentage de difficulté (0 à 100) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>le <code><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html">DifficultyLevel</a></code> correspondant </dd></dl>
 
 </div>
 </div>

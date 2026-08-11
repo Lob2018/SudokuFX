@@ -1,23 +1,23 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentSolvedGridFromModel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentSolvedGridFromModel">
-<area shape="rect" id="Node000001" title="Loads the solved Sudoku grid from the model into the ViewModel." alt="" coords="5,143,309,186"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="636,177,854,219"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,141,211,113,253,81,303,51,356,29,418,11,470,3,521,8,582,29,628,56,667,91,700,128,725,162,720,165,696,131,664,94,625,60,580,34,520,14,470,9,420,16,358,34,305,56,256,86,215,117,183,145"/>
-<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8" title="Represents the current loaded Sudoku grid, including its difficulty level and the percentage of possi..." alt="" coords="360,43,578,86"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="221,140,356,96,378,89,380,94,357,101,223,145"/>
-<area shape="rect" id="Node000004" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#a7df76231e8b2c4e2180213007891b807" title="Resolves a DifficultyLevel from its byte representation." alt="" coords="357,110,581,153"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="309,146,341,142,341,148,310,151"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="360,177,578,219"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="310,178,345,182,344,187,309,184"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#af41c64cb771df8f4fa5bbf0c3a34431b" title="Solves the given 9x9 Sudoku grid." alt="" coords="358,243,580,286"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="223,184,357,229,380,236,378,241,356,234,221,189"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="360,310,578,353"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="187,184,261,239,309,269,358,296,372,302,369,307,356,300,306,274,258,244,183,189"/>
-<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="579,195,620,195,620,201,579,201"/>
-<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="556,307,580,296,594,285,604,274,627,251,674,224,677,229,631,255,607,278,598,289,582,300,558,312"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="630,289,860,331"/>
-<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="578,320,614,317,614,323,579,326"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="629,379,860,422"/>
-<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="557,351,643,373,642,378,556,356"/>
-<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="693,289,691,279,699,270,717,264,745,262,774,264,792,271,790,276,773,270,745,267,718,269,702,274,696,280,698,288"/>
-<area shape="poly" id="edge12_Node000009_Node000009" title=" " alt="" coords="693,379,691,369,699,360,717,355,745,353,774,355,792,361,790,366,773,360,745,358,718,360,702,365,696,371,698,378"/>
+<area shape="rect" id="Node000001" title="Loads the solved Sudoku grid from the model into the ViewModel." alt="" coords="5,150,309,193"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="636,86,854,129"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="176,148,208,117,250,82,301,49,356,24,418,7,468,3,519,9,582,24,645,46,699,75,697,80,643,51,580,29,518,15,468,9,419,12,358,29,303,53,253,86,211,121,180,152"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8" title="Represents the current loaded Sudoku grid, including its difficulty level and the percentage of possi..." alt="" coords="360,38,578,81"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,147,356,90,376,83,378,88,358,95,211,152"/>
+<area shape="rect" id="Node000004" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html#a7df76231e8b2c4e2180213007891b807" title="Resolves a DifficultyLevel from its byte representation." alt="" coords="357,105,581,147"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="308,147,341,142,342,147,308,152"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="360,195,578,238"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="308,191,345,196,344,201,308,196"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#af41c64cb771df8f4fa5bbf0c3a34431b" title="Solves the given 9x9 Sudoku grid." alt="" coords="358,262,580,305"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="211,191,358,248,378,254,376,259,356,253,209,196"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="360,329,578,371"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="184,191,259,252,307,285,358,314,370,320,368,325,355,319,304,290,255,256,181,195"/>
+<area shape="poly" id="edge5_Node000005_Node000005" title=" " alt="" coords="417,195,415,185,424,176,442,171,469,169,498,171,516,178,514,183,497,176,469,174,443,176,426,181,420,187,422,194"/>
+<area shape="poly" id="edge8_Node000007_Node000002" title=" " alt="" coords="560,326,579,315,596,299,606,284,627,246,713,139,717,142,631,249,610,286,600,303,583,319,563,331"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="630,283,860,326"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="578,329,614,324,615,329,579,335"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="629,374,860,417"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="579,365,614,371,613,376,578,371"/>
+<area shape="poly" id="edge10_Node000008_Node000008" title=" " alt="" coords="693,283,691,273,699,264,717,259,745,257,774,259,792,266,790,271,773,264,745,262,718,264,702,269,696,275,698,282"/>
+<area shape="poly" id="edge12_Node000009_Node000009" title=" " alt="" coords="693,374,691,364,699,355,717,349,745,347,774,350,792,356,790,361,773,355,745,353,718,355,702,359,696,365,698,373"/>
 </map>
