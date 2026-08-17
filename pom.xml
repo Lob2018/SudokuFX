@@ -85,7 +85,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-hsqldb</artifactId>
-      <version>13.2.0</version>
+      <version>13.3.0</version>
     </dependency>
     <!-- HSQLDB database dependency -->
     <dependency>
@@ -169,13 +169,13 @@
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>3.1.5</version>
+      <version>3.2.1</version>
     </dependency>
     <!-- Temporary override for Flyway's transitive dependency to fix CVE (jackson-databind 3.1.4 -> 3.1.5) -->
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>3.1.5</version>
+      <version>3.2.1</version>
     </dependency>
   </dependencies>
   <!-- Build configuration -->
@@ -390,7 +390,7 @@
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>13.9.0</version>
+            <version>13.10.0</version>
           </dependency>
         </dependencies>
         <executions>
