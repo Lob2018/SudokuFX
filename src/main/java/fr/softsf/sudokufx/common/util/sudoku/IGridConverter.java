@@ -57,4 +57,7 @@ public sealed interface IGridConverter permits GridConverter {
 
     /** Converts an int array (81 elements) into a list of 81 Strings. */
     List<String> intArrayToList(int[] grid);
+
+    /** Renders the grid value formatted as three lines of sudoku. */
+    String renderGridValueFormattedAsThreeLinesOfSudoku(String gridValue);
 }

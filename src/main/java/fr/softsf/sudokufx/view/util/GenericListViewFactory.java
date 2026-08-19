@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.enums.PlayerConstants;
 import fr.softsf.sudokufx.common.util.MyDateTime;
+import fr.softsf.sudokufx.common.util.sudoku.IGridConverter;
 import fr.softsf.sudokufx.dto.GameDto;
 import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.view.component.list.GenericDtoListCell;
@@ -38,10 +39,17 @@ import fr.softsf.sudokufx.viewmodel.MenuSaveViewModel;
  * <p>This class is designed to be injected via Spring and used to streamline menu initialization.
  */
 @Component
-public class GenericListViewFactory {
+public final class GenericListViewFactory {
 
     public static final String LIST_VIEW_MUST_NOT_BE_NULL = "listView must not be null";
     public static final String CLIP_VIEW_MUST_NOT_BE_NULL = "clipView must not be null";
+
+    private final IGridConverter gridConverter;
+
+    public GenericListViewFactory(IGridConverter gridConverter) {
+        this.gridConverter =
+                Objects.requireNonNull(gridConverter, "gridConverter must not be null");
+    }
 
     /**
      * Configures the {@link ListView} used in the player menu.
@@ -117,7 +125,11 @@ public class GenericListViewFactory {
                                     if (gameDto == null) {
                                         return "";
                                     }
-                                    return MyDateTime.INSTANCE.getFormatted(gameDto.updatedat());
+                                    return MyDateTime.INSTANCE.getFormatted(gameDto.updatedat())
+                                            + "\n"
+                                            + gridConverter
+                                                    .renderGridValueFormattedAsThreeLinesOfSudoku(
+                                                            gameDto.grididDto().gridvalue());
                                 },
                                 gameDto ->
                                         !gameDto.gameid()

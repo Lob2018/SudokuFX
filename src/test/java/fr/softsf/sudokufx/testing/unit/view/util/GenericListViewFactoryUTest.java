@@ -21,6 +21,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.*;
 import org.testfx.framework.junit5.ApplicationExtension;
 
+import fr.softsf.sudokufx.common.util.sudoku.GridConverter;
 import fr.softsf.sudokufx.dto.*;
 import fr.softsf.sudokufx.view.util.GenericListViewFactory;
 import fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel;
@@ -32,7 +33,7 @@ import static org.mockito.Mockito.*;
 @ExtendWith(ApplicationExtension.class)
 class GenericListViewFactoryUTest {
 
-    private final GenericListViewFactory factory = new GenericListViewFactory();
+    private final GenericListViewFactory factory = new GenericListViewFactory(new GridConverter());
 
     private PlayerDto createPlayer(String name, long id) {
         return new PlayerDto(

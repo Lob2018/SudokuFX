@@ -41,6 +41,7 @@ public final class GridConverter implements IGridConverter {
     private static final int TOTAL_CELLS = 81;
     private static final int MAXIMUM_GRID_VALUE_LENGTH = TOTAL_CELLS * 10;
     private static final String GRID_ARRAY_MUST_NOT_BE_NULL = "Grid array must not be null";
+    public static final int SUDOKU_RENDER_CAPACITY = 37;
 
     @Override
     public String listToGridValue(List<String> values) {
@@ -127,5 +128,32 @@ public final class GridConverter implements IGridConverter {
     public List<String> intArrayToList(int[] grid) {
         Objects.requireNonNull(grid, GRID_ARRAY_MUST_NOT_BE_NULL);
         return Arrays.stream(grid).mapToObj(String::valueOf).toList();
+    }
+
+    @Override
+    public String renderGridValueFormattedAsThreeLinesOfSudoku(String gridValue) {
+        if (StringUtils.isBlank(gridValue)) {
+            return StringUtils.EMPTY;
+        }
+        String[] values = gridValue.split(",");
+        if (values.length != TOTAL_CELLS) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "Gridvalue must contain exactly " + TOTAL_CELLS + " values");
+        }
+        StringBuilder sb = new StringBuilder(SUDOKU_RENDER_CAPACITY);
+        for (int row = 0; row < 3; row++) {
+            if (row > 0) {
+                sb.append('\n');
+            }
+            int rowOffset = row * 9;
+            for (int col = 0; col < 9; col++) {
+                sb.append(values[col + rowOffset]);
+                if (col == 2 || col == 5) {
+                    sb.append('|');
+                }
+            }
+        }
+        sb.append("...");
+        return sb.toString();
     }
 }
