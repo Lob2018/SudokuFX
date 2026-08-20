@@ -46,6 +46,11 @@ public final class GenericListViewFactory {
 
     private final IGridConverter gridConverter;
 
+    /**
+     * Initializes the factory with the required grid converter.
+     *
+     * @param gridConverter the converter used to render Sudoku grids
+     */
     public GenericListViewFactory(IGridConverter gridConverter) {
         this.gridConverter =
                 Objects.requireNonNull(gridConverter, "gridConverter must not be null");
