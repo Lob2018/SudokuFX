@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.startCycle" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.startCycle">
+<area shape="rect" id="Node000001" title="Initiates the possibilities increment cycle after resetting the current state." alt="" coords="5,5,228,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a470fd386610579e0d2264263eb8e6303" title="Resets the desired possibilities to the default state." alt="" coords="276,5,533,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,24,260,24,260,29,228,29"/>
+</map>

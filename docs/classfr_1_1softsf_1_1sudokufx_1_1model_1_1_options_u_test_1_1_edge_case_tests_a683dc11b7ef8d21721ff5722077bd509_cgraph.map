@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.OptionsUTest.EdgeCaseTests.givenImageMaximumLengthStrings_whenCreatingOptions_thenNoExceptionIsThrown" name="fr.softsf.sudokufx.model.OptionsUTest.EdgeCaseTests.givenImageMaximumLengthStrings_whenCreatingOptions_thenNoExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,287,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a5fa4145bbd83c86dd0f943e766276ad7" title="Protected default constructor for JPA." alt="" coords="335,29,501,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,48,319,48,319,53,287,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="367,29,365,19,373,10,391,5,418,3,447,5,465,12,463,17,446,10,418,8,392,10,376,15,370,21,372,28"/>
+</map>

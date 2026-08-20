@@ -1,4 +1,7 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenValidBoundaryValues_whenCreatingGameLevel_thenShouldNotThrowException" name="fr.softsf.sudokufx.model.GameLevelUTest.givenValidBoundaryValues_whenCreatingGameLevel_thenShouldNotThrowException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,246,104"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="78,28,81,18,90,10,105,5,126,3,150,5,165,13,163,18,148,11,125,8,106,10,93,15,85,21,83,30"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="76,28,79,18,88,10,104,5,126,3,151,5,167,13,165,18,149,11,125,8,105,10,91,15,83,21,81,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#abb25b8080161c86b7034a8699aafb75d" title="Protected default constructor for JPA." alt="" coords="294,45,460,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,64,278,64,278,69,246,69"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="329,45,327,35,335,26,352,21,377,19,404,21,420,27,418,32,402,26,377,24,353,26,338,31,333,37,335,44"/>
 </map>

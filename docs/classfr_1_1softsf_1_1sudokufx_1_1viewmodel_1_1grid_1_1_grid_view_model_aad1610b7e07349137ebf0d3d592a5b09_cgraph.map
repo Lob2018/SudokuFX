@@ -1,6 +1,73 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistGridValue" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistGridValue">
-<area shape="rect" id="Node000001" title="Persists the current grid state for the active player’s selected game." alt="" coords="5,29,224,72"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="272,29,490,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,48,256,48,256,53,224,53"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="331,29,329,19,337,10,355,5,381,3,409,5,426,11,424,16,408,10,381,8,356,10,340,15,334,21,336,28"/>
+<area shape="rect" id="Node000001" title="Persists the current grid state for the active player’s selected game." alt="" coords="5,129,224,172"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="288,29,506,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,126,271,81,293,74,294,79,273,87,163,131"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a21f04c69326d6540965b85dc026e21f1" title="Returns the currently stored player." alt="" coords="283,96,512,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="224,135,267,130,268,135,224,140"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a62ff7ab823da335406fbc8600999a979" title="Reloads the current player from the database." alt="" coords="272,163,523,205"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="224,161,256,165,256,170,224,166"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a6f6b31510b7e15b031f2feb95df7ed4a" title="Updates an existing player and its associated nested entities (language, options, menu,..." alt="" coords="283,735,512,777"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="128,171,382,719,377,722,124,174"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="344,29,342,19,351,10,369,5,397,3,428,5,446,11,444,16,427,10,397,8,370,10,354,15,347,21,349,28"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a776dbf8d4bd6db641d84313659051d51" title="Terminates the JavaFX application." alt="" coords="602,72,829,115"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="488,160,522,148,546,136,570,124,592,117,594,122,572,129,548,141,524,153,490,165"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#ae0e635b455827f61c43bf618b7374914" title="Retrieves and validates the first player with a selected game." alt="" coords="601,163,830,205"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="523,181,586,181,586,187,523,187"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="658,163,656,153,665,143,685,138,716,136,749,138,768,145,767,150,748,144,716,141,686,143,668,148,661,154,663,161"/>
+<area shape="rect" id="Node000007" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html#af99d8aaa4f5bd6c0e161a01e6803e9d7" title="Finds the currently selected player along with their selected game and all related associations." alt="" coords="908,155,1142,213"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="831,181,893,181,893,187,831,187"/>
+<area shape="poly" id="edge8_Node000007_Node000007" title=" " alt="" coords="965,154,966,144,977,135,997,130,1025,128,1057,131,1077,138,1075,143,1056,136,1025,133,998,135,980,140,971,147,970,155"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html#aec69dc20d643694a70cfa74003161aed" title="Retrieves the GameLevel entity by its business level value." alt="" coords="589,253,842,296"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="397,734,408,653,419,598,435,537,457,474,486,413,523,355,569,306,575,302,578,306,573,310,527,359,490,415,462,476,440,539,424,599,413,654,403,735"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a56b92064eba83dc275bb1b86dd41a986" title="Returns the Grid associated with this game." alt="" coords="632,344,799,387"/>
+<area shape="poly" id="edge14_Node000008_Node000011" title=" " alt="" coords="400,734,415,667,446,576,469,527,496,479,530,435,569,397,592,383,616,373,618,378,594,387,573,401,534,438,501,482,474,529,451,578,421,669,405,735"/>
+<area shape="rect" id="Node000012" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a7952718f0a731bf5b78c8b7d7a085bef" title="Converts a Player entity to a PlayerDto." alt="" coords="571,435,860,477"/>
+<area shape="poly" id="edge16_Node000008_Node000012" title=" " alt="" coords="404,733,425,682,459,615,507,546,537,514,569,487,576,483,579,487,573,491,540,518,511,549,464,618,429,685,409,735"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ac86f1c843073498a022a4c0295b1097b" title="Sets the default grid values." alt="" coords="632,501,799,544"/>
+<area shape="poly" id="edge18_Node000008_Node000013" title=" " alt="" coords="408,733,433,694,469,645,515,596,570,554,616,534,618,539,572,558,519,599,474,649,438,697,413,736"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4e78ed16efa7608347b3f745b512ed8f" title="Sets the current grid values." alt="" coords="632,568,799,611"/>
+<area shape="poly" id="edge20_Node000008_Node000015" title=" " alt="" coords="418,732,483,676,525,646,570,620,616,603,618,608,572,625,527,650,486,680,422,736"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a7894aa82e469c02f8b7fbb7210c04ed7" title="Sets the difficulty level of this game." alt="" coords="632,635,799,677"/>
+<area shape="poly" id="edge22_Node000008_Node000017" title=" " alt="" coords="449,732,570,687,616,674,618,679,572,692,451,737"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0c578d68480f93172709babb1224f573" title="Sets the menu after validation." alt="" coords="632,701,799,744"/>
+<area shape="poly" id="edge24_Node000008_Node000019" title=" " alt="" coords="512,741,617,730,618,736,513,747"/>
+<area shape="rect" id="Node000021" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#af201d3417316b81311308e888df147ac" title="Sets the name after validation." alt="" coords="632,768,799,811"/>
+<area shape="poly" id="edge26_Node000008_Node000021" title=" " alt="" coords="513,765,618,776,617,782,512,771"/>
+<area shape="rect" id="Node000023" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a8d02e23fa141f2d1b08d12d150145112" title="Sets the options after validation." alt="" coords="632,835,799,877"/>
+<area shape="poly" id="edge28_Node000008_Node000023" title=" " alt="" coords="451,775,572,820,618,833,616,838,570,825,449,780"/>
+<area shape="rect" id="Node000025" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9afc39d38139830bb7545ac2f50574f3" title="Sets the language after validation." alt="" coords="626,901,805,944"/>
+<area shape="poly" id="edge30_Node000008_Node000025" title=" " alt="" coords="422,776,486,832,527,862,572,887,612,902,610,907,570,892,525,866,483,836,418,780"/>
+<area shape="rect" id="Node000027" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#affc9639f4c58af1249dc22fa3031d09b" title="Sets the percentage of possibilities for this grid." alt="" coords="632,968,799,1011"/>
+<area shape="poly" id="edge32_Node000008_Node000027" title=" " alt="" coords="413,776,438,815,474,863,519,913,572,954,618,973,616,978,570,958,515,916,469,867,433,818,408,779"/>
+<area shape="rect" id="Node000028" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ade99f107878b74490ae3d014ff294f60" title="Sets the selection flag." alt="" coords="632,1035,799,1077"/>
+<area shape="poly" id="edge33_Node000008_Node000028" title=" " alt="" coords="409,777,429,827,464,894,511,963,540,994,573,1020,594,1033,618,1042,617,1047,592,1038,569,1025,537,998,507,966,459,897,425,830,404,779"/>
+<area shape="rect" id="Node000029" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a3f1136b2325dfb043388d60e8cc3fc78" title="Updates the last modified timestamp." alt="" coords="632,1101,799,1144"/>
+<area shape="poly" id="edge34_Node000008_Node000029" title=" " alt="" coords="406,777,423,839,455,924,477,969,504,1013,536,1053,573,1087,594,1100,618,1110,616,1115,592,1105,569,1091,532,1056,499,1016,472,971,450,926,418,841,401,779"/>
+<area shape="rect" id="Node000031" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="632,1168,799,1211"/>
+<area shape="poly" id="edge36_Node000008_Node000031" title=" " alt="" coords="404,777,417,850,446,953,468,1008,496,1062,531,1111,573,1154,594,1168,618,1177,616,1182,592,1172,569,1158,527,1115,491,1064,463,1010,441,954,412,852,399,778"/>
+<area shape="rect" id="Node000033" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html#ab33fa674fbd5d36667f5f51583e82110" title="Validates the given object." alt="" coords="595,1235,836,1277"/>
+<area shape="poly" id="edge38_Node000008_Node000033" title=" " alt="" coords="402,777,412,861,422,918,437,981,459,1046,488,1110,526,1170,573,1221,583,1229,580,1233,569,1225,522,1173,484,1113,454,1048,432,982,417,919,406,861,397,778"/>
+<area shape="poly" id="edge13_Node000009_Node000009" title=" " alt="" coords="658,253,656,243,665,234,685,229,716,227,749,229,768,235,767,240,748,234,716,232,686,234,668,239,661,245,663,252"/>
+<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html#a871cdd4cb4989a732d251a04267c9a24" title="Retrieves a GameLevel by its numerical level value." alt="" coords="914,253,1136,296"/>
+<area shape="poly" id="edge12_Node000009_Node000010" title=" " alt="" coords="843,272,899,272,899,277,843,277"/>
+<area shape="poly" id="edge15_Node000011_Node000011" title=" " alt="" coords="658,344,656,334,665,325,685,319,716,317,749,320,768,326,767,331,748,325,716,323,686,325,668,329,661,335,663,343"/>
+<area shape="poly" id="edge17_Node000012_Node000012" title=" " alt="" coords="658,435,656,425,665,415,685,410,716,408,749,410,768,417,767,422,748,416,716,413,686,415,668,420,661,426,663,433"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af49e1b436868180644535afda35cd5cd" title="Validates that the default grid value is not null." alt="" coords="931,501,1119,544"/>
+<area shape="poly" id="edge19_Node000013_Node000014" title=" " alt="" coords="799,520,915,520,915,525,799,525"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a151e63c8afa747ec884b000b6a82f065" title="Validates that the grid value is not null." alt="" coords="942,568,1108,611"/>
+<area shape="poly" id="edge21_Node000015_Node000016" title=" " alt="" coords="799,587,926,587,926,592,799,592"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0ab90848c9715b8f02bfdaf999d8e212" title="Ensures that the GameLevel is not null." alt="" coords="942,635,1108,677"/>
+<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="799,653,926,653,926,659,799,659"/>
+<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a7262425d3a1c07b5ffdafba0a6aa51de" title="Validates that the menu is not null." alt="" coords="942,701,1108,744"/>
+<area shape="poly" id="edge25_Node000019_Node000020" title=" " alt="" coords="799,720,926,720,926,725,799,725"/>
+<area shape="rect" id="Node000022" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" title="Validates that the name is not null." alt="" coords="942,768,1108,811"/>
+<area shape="poly" id="edge27_Node000021_Node000022" title=" " alt="" coords="799,787,926,787,926,792,799,792"/>
+<area shape="rect" id="Node000024" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aa248bf09324098ddbaedfb58fc6d73ba" title="Validates that the options are not null." alt="" coords="942,835,1108,877"/>
+<area shape="poly" id="edge29_Node000023_Node000024" title=" " alt="" coords="799,853,926,853,926,859,799,859"/>
+<area shape="rect" id="Node000026" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a67f9d00af3ba036ed39f639a271ee9f0" title="Validates that the player language is not null." alt="" coords="925,901,1125,944"/>
+<area shape="poly" id="edge31_Node000025_Node000026" title=" " alt="" coords="806,920,909,920,909,925,806,925"/>
+<area shape="rect" id="Node000030" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a516b5c422b3c8945a39d4351db9fc9f8" title="Ensures that the update timestamp is not null." alt="" coords="941,1101,1109,1144"/>
+<area shape="poly" id="edge35_Node000029_Node000030" title=" " alt="" coords="799,1120,925,1120,925,1125,799,1125"/>
+<area shape="rect" id="Node000032" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="940,1168,1110,1211"/>
+<area shape="poly" id="edge37_Node000031_Node000032" title=" " alt="" coords="799,1187,925,1187,925,1192,799,1192"/>
 </map>

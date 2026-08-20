@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenHostServicesAndNullFile_whenOpenLocalFile_thenLogsWarning" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenHostServicesAndNullFile_whenOpenLocalFile_thenLogsWarning">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,243,97"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a7e592956d7481906fc0c8c8e81ae83f3" title="Opens the given local file in the user&#39;s default web browser." alt="" coords="291,5,481,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,42,275,38,276,43,244,47"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a84cabb06e38efe9e6b2ed6a0e8b151fb" title="Injects the non&#45;null HostServices instance provided by the JavaFX application." alt="" coords="291,72,481,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="244,73,276,77,275,82,243,78"/>
+</map>

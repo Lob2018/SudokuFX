@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.config.MyLogbackConfigUTest.givenMissingLogbackConfigResource_whenConfigureLogback_thenIllegalArgumentExceptionThrown" name="fr.softsf.sudokufx.config.MyLogbackConfigUTest.givenMissingLogbackConfigResource_whenConfigureLogback_thenIllegalArgumentExceptionThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,313,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#a033f281c559f5f1b58ba375ce2b3c3d9" title="Sets an invalid logback configuration path for testing purposes." alt="" coords="361,13,587,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="313,40,345,40,345,45,313,45"/>
+</map>

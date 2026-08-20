@@ -1,5 +1,15 @@
 <map id="fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.fileProcessingTask" name="fr.softsf.sudokufx.service.ui.AsyncFileProcessorService.fileProcessingTask">
-<area shape="rect" id="Node000001" title="Instantiates the file processing task with lifecycle overrides for optimal performance." alt="" coords="5,5,302,48"/>
+<area shape="rect" id="Node000001" title="Instantiates the file processing task with lifecycle overrides for optimal performance." alt="" coords="5,105,302,148"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html#aa4dad32003ec44fc20f2a7e504f76f16" title="Handles task errors by logging and showing a toast notification." alt="" coords="350,5,602,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,24,334,24,334,29,302,29"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,102,349,57,374,50,375,55,350,63,216,107"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a1545a8b5a73d481bc4a48ba8a6cb1b55" title="Requests the removal of the currently displayed toast." alt="" coords="358,72,594,115"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="302,109,342,104,343,110,302,114"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a679cac643ad756d71ff38a8fc4086128" title="Increments the active task counter and activates the loading state upon the first registration." alt="" coords="382,139,570,181"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="302,139,367,146,367,151,302,145"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#aed85e533277f8aef32c61f1d66471302" title="Decrements the active task counter and deactivates the loading state only when no more tasks are pend..." alt="" coords="382,205,570,248"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="216,146,350,191,375,198,374,203,349,196,215,151"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a8b0b569fe624474d8fbb3765f11e1c00" title="Sends an error toast." alt="" coords="650,5,837,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="602,24,634,24,634,29,602,29"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31" title="Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire even if id..." alt="" coords="885,5,1073,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="838,24,870,24,870,29,838,29"/>
 </map>

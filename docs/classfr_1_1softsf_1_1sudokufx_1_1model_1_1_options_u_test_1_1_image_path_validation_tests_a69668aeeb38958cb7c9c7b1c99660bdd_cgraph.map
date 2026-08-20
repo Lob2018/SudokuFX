@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.OptionsUTest.ImagePathValidationTests.givenEmptySongPath_whenCreatingOptions_thenNoExceptionIsThrown" name="fr.softsf.sudokufx.model.OptionsUTest.ImagePathValidationTests.givenEmptySongPath_whenCreatingOptions_thenNoExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,276,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a5fa4145bbd83c86dd0f943e766276ad7" title="Protected default constructor for JPA." alt="" coords="324,29,490,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,48,308,48,308,53,276,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="357,29,355,19,363,10,381,5,407,3,435,5,452,11,450,16,434,10,407,8,382,10,366,15,360,21,362,28"/>
+</map>

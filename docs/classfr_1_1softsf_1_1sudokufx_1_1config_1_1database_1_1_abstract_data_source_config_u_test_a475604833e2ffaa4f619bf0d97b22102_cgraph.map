@@ -1,0 +1,15 @@
+<map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenNullHikariDataSource_whenFlywayCalled_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenNullHikariDataSource_whenFlywayCalled_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,48,276,123"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aad22b46ef18e07da438ade1fa912e644" title="Configures Flyway database migration tool." alt="" coords="324,64,547,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="276,83,308,83,308,88,276,88"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="380,64,378,54,387,45,406,39,435,37,467,40,486,46,484,51,466,45,435,43,407,45,390,49,383,55,385,63"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a95e551a74c1292b0e82a0b3ce4905e50" title="Creates and configures the main HikariDataSource for the application." alt="" coords="611,29,892,72"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="547,70,595,65,596,70,548,76"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#ae0f4d86f6855bfe5df36fa0195199b1c" title="Validates gamelevel table integrity post&#45;Flyway migration." alt="" coords="595,97,908,140"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="548,94,580,98,579,103,547,100"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="693,29,690,19,700,10,721,5,752,3,785,5,806,11,804,16,784,10,752,8,721,10,703,15,695,21,698,28"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74" title="Configure et retourne un HikariConfig avec les paramètres de connexion et pool." alt="" coords="965,27,1237,69"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="892,47,950,46,950,52,893,52"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html#a493d23b8b71658db3fef3ba6c907754f" title="Constructs a new DatabaseIntegrityException with the specified detail message and cause." alt="" coords="956,93,1246,152"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="909,118,941,118,941,124,909,123"/>
+</map>

@@ -1,4 +1,7 @@
 <map id="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingGrid_thenGridIsReturned" name="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingGrid_thenGridIsReturned">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,288,88"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="92,29,93,19,103,10,121,5,147,3,176,5,194,13,192,17,175,11,146,8,122,10,105,15,97,21,97,29"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="93,29,95,19,104,10,122,5,147,3,175,5,193,13,191,17,174,11,146,8,123,10,107,15,99,21,99,29"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a56b92064eba83dc275bb1b86dd41a986" title="Returns the Grid associated with this game." alt="" coords="336,37,502,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,56,320,56,320,61,288,61"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="368,37,366,27,374,18,392,13,419,11,448,13,465,19,464,24,447,18,419,16,393,18,377,23,371,29,373,36"/>
 </map>

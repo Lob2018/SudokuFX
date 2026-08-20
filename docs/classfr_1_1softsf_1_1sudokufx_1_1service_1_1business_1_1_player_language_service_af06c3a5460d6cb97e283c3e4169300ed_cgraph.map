@@ -1,4 +1,10 @@
 <map id="fr.softsf.sudokufx.service.business.PlayerLanguageService.getByIso" name="fr.softsf.sudokufx.service.business.PlayerLanguageService.getByIso">
-<area shape="rect" id="Node000001" title="Retrieves a PlayerLanguageDto by ISO code." alt="" coords="5,29,235,72"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="76,29,75,19,82,10,97,5,120,3,145,5,159,11,157,16,143,10,120,8,98,10,85,15,80,21,82,28"/>
+<area shape="rect" id="Node000001" title="Retrieves a PlayerLanguageDto by ISO code." alt="" coords="5,72,235,115"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="60,72,58,62,68,53,88,47,120,45,154,48,175,54,173,59,153,53,120,51,89,53,70,57,63,63,65,71"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html#a635c91d2ffaef346386bec4eeacc88bf" title="Retrieves a PlayerLanguage by its ISO code." alt="" coords="324,5,560,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="226,69,320,49,321,54,227,74"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html#a2a01d08b463cf79247442c4b5974b2ba" title="Maps a PlayerLanguage object to a PlayerLanguageDto object." alt="" coords="283,72,601,115"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="235,91,267,91,267,96,235,96"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html#ab33fa674fbd5d36667f5f51583e82110" title="Validates the given object." alt="" coords="321,139,562,181"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="227,113,321,132,320,138,226,118"/>
 </map>

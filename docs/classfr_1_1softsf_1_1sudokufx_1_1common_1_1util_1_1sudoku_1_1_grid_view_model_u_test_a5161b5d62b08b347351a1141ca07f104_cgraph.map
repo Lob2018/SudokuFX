@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenModifiedState_whenResetDesiredPossibilities_thenReturnsDefaultValue" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenModifiedState_whenResetDesiredPossibilities_thenReturnsDefaultValue">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,367,123"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab95eb242497ba2febdde84bda3d62bf1" title="Returns the user&#39;s desired completion percentage (0&#45;100)." alt="" coords="434,5,680,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="352,61,419,49,420,54,353,66"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a96368d8212ad04d19b4cb11e06c3e839" title="Increments the starting point of the difficulty bracket cyclically." alt="" coords="415,72,700,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="367,91,399,91,399,96,367,96"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a470fd386610579e0d2264263eb8e6303" title="Resets the desired possibilities to the default state." alt="" coords="429,139,686,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="353,121,420,133,419,138,352,126"/>
+</map>

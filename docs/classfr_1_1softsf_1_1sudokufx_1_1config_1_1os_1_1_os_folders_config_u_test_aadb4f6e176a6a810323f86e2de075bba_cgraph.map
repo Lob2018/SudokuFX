@@ -1,4 +1,8 @@
 <map id="fr.softsf.sudokufx.config.os.OsFoldersConfigUTest.givenNullOrEmptyOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionTh" name="fr.softsf.sudokufx.config.os.OsFoldersConfigUTest.givenNullOrEmptyOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionTh">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,256,104"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="81,28,84,18,94,10,109,5,131,3,156,5,172,13,169,18,154,11,130,8,110,10,96,15,88,21,86,30"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="72,28,76,18,87,10,105,5,131,3,161,6,180,13,178,18,160,11,130,8,106,10,89,15,80,21,77,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#ae1c16a941a448587dec12cc237a8ed51" title="Sets the OS empty for testing purposes." alt="" coords="304,12,551,55"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="256,50,288,46,288,52,256,55"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a1a62758379fa51d4ea6ec86caf0e9041" title="Sets the OS to an unsupported value for testing purposes." alt="" coords="304,79,550,121"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="256,78,289,82,288,87,256,83"/>
 </map>

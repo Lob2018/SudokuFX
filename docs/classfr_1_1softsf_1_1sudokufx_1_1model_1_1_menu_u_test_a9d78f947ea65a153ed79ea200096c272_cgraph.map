@@ -1,6 +1,9 @@
 <map id="fr.softsf.sudokufx.model.MenuUTest.givenMenusWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent" name="fr.softsf.sudokufx.model.MenuUTest.givenMenusWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,252,104"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="78,28,81,18,91,10,107,5,129,3,154,5,170,13,168,18,153,11,128,8,108,10,94,15,86,21,83,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ad804d9c18a93f8b4ac3ba52d4882e77b" title="Computes the hash code based on all fields." alt="" coords="300,45,466,88"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="252,64,284,64,284,69,252,69"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,252,121"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="78,46,81,36,91,27,107,22,129,20,154,23,170,30,168,35,153,28,128,25,108,27,94,32,86,39,83,47"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ade1fbedef71a431fdbdef9b66e285867" title="Protected default constructor for JPA." alt="" coords="300,29,466,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,65,284,61,284,66,252,70"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ad804d9c18a93f8b4ac3ba52d4882e77b" title="Computes the hash code based on all fields." alt="" coords="300,96,466,139"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="252,98,284,102,284,107,252,103"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="335,29,333,19,341,10,358,5,383,3,410,5,426,11,424,16,409,10,383,8,359,10,344,15,338,21,340,28"/>
 </map>

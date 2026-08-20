@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.spinnerInitialization" name="fr.softsf.sudokufx.view.main.MainView.spinnerInitialization">
+<area shape="rect" id="Node000001" title="Establishes a unidirectional binding between the SpinnerGridPane visibility and the SpinnerViewModel ..." alt="" coords="5,5,198,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a6058e985daece8cd355a8baa515e8c9e" title="Returns a read&#45;only observable property indicating whether a loading process is active." alt="" coords="246,5,449,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,24,230,24,230,29,198,29"/>
+</map>

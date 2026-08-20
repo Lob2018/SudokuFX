@@ -5,24 +5,26 @@
 <area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa" title="Data Transfer Object representing a game level entity." alt="" coords="859,29,1044,72"/>
 <area shape="poly" id="edge7_Node000001_Node000003" title=" " alt="" coords="180,192,249,151,335,112,401,92,469,76,606,55,735,46,843,44,844,49,735,51,607,60,470,81,402,97,337,117,252,156,182,196"/>
 <area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a" title="Data Transfer Object representing a grid entity." alt="" coords="854,131,1049,157"/>
-<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="288,199,335,195,839,151,839,156,336,200,289,204"/>
-<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" title="Data Transfer Object representing a menu entity." alt="" coords="598,203,800,229"/>
-<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="288,213,582,213,582,219,288,219"/>
-<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af3351529e3efa22019c4fe7fcd841d3f" title="Data Transfer Object representing an Options entity." alt="" coords="591,299,806,325"/>
-<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="179,236,249,278,292,298,336,313,400,325,466,329,529,329,588,325,588,330,530,334,465,335,399,330,335,319,290,303,246,283,176,240"/>
+<area shape="poly" id="edge8_Node000001_Node000004" title=" " alt="" coords="288,201,839,151,839,157,288,206"/>
+<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" title="Data Transfer Object representing a menu entity." alt="" coords="598,227,800,253"/>
+<area shape="poly" id="edge9_Node000001_Node000005" title=" " alt="" coords="288,219,582,232,582,238,288,225"/>
+<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af3351529e3efa22019c4fe7fcd841d3f" title="Data Transfer Object representing an Options entity." alt="" coords="591,301,806,328"/>
+<area shape="poly" id="edge11_Node000001_Node000006" title=" " alt="" coords="179,236,249,278,292,298,336,313,396,324,458,330,575,327,576,333,458,335,396,330,335,319,290,303,246,283,176,240"/>
 <area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1946024ef99efea4b043ed98388fdc94" title="Data Transfer Object representing a player." alt="" coords="336,277,543,304"/>
-<area shape="poly" id="edge12_Node000001_Node000007" title=" " alt="" coords="234,235,370,270,369,276,233,241"/>
-<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565" title="Data Transfer Object representing a player&#39;s language." alt="" coords="606,360,792,403"/>
-<area shape="poly" id="edge18_Node000001_Node000008" title=" " alt="" coords="175,236,245,287,289,314,337,335,400,354,466,366,590,378,590,383,466,372,399,359,335,340,287,318,242,292,172,240"/>
+<area shape="poly" id="edge13_Node000001_Node000007" title=" " alt="" coords="234,235,370,270,369,276,233,241"/>
+<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565" title="Data Transfer Object representing a player&#39;s language." alt="" coords="606,376,792,419"/>
+<area shape="poly" id="edge20_Node000001_Node000008" title=" " alt="" coords="175,236,245,287,290,314,337,336,400,357,467,372,591,389,590,394,466,377,399,362,335,341,287,319,242,292,172,240"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="656,103,649,93,654,83,671,77,699,75,729,77,745,84,743,89,728,82,699,80,672,82,657,87,654,92,661,99"/>
 <area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="754,98,849,74,850,79,755,103"/>
 <area shape="poly" id="edge5_Node000002_Node000004" title=" " alt="" coords="802,124,839,128,839,134,801,129"/>
 <area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="904,29,902,19,910,10,926,5,952,3,978,5,995,11,993,16,977,10,951,8,928,10,913,15,907,21,909,28"/>
 <area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="909,132,902,122,907,112,924,106,952,104,982,107,998,113,996,118,981,112,951,109,925,111,910,116,907,121,913,129"/>
-<area shape="poly" id="edge11_Node000006_Node000006" title=" " alt="" coords="656,300,649,290,654,280,671,274,699,272,729,275,745,281,743,286,728,280,699,277,672,279,657,284,654,289,661,297"/>
-<area shape="poly" id="edge13_Node000007_Node000002" title=" " alt="" coords="459,275,663,135,666,139,462,279"/>
-<area shape="poly" id="edge14_Node000007_Node000005" title=" " alt="" coords="488,274,634,232,636,237,489,279"/>
-<area shape="poly" id="edge15_Node000007_Node000006" title=" " alt="" coords="544,297,576,299,575,305,543,302"/>
-<area shape="poly" id="edge16_Node000007_Node000007" title=" " alt="" coords="396,279,388,269,394,259,411,253,439,251,471,253,487,260,485,265,469,258,439,256,412,258,397,263,393,268,400,275"/>
-<area shape="poly" id="edge17_Node000007_Node000008" title=" " alt="" coords="481,302,622,352,620,357,479,307"/>
+<area shape="poly" id="edge10_Node000005_Node000005" title=" " alt="" coords="656,228,649,218,654,208,671,202,699,200,729,203,745,209,743,214,728,208,699,205,672,207,657,212,654,217,661,225"/>
+<area shape="poly" id="edge12_Node000006_Node000006" title=" " alt="" coords="656,303,649,293,654,283,671,277,699,275,729,277,745,284,743,289,728,282,699,280,672,282,657,287,654,292,661,299"/>
+<area shape="poly" id="edge14_Node000007_Node000002" title=" " alt="" coords="459,275,663,135,666,139,462,279"/>
+<area shape="poly" id="edge15_Node000007_Node000005" title=" " alt="" coords="511,274,612,254,613,259,512,279"/>
+<area shape="poly" id="edge16_Node000007_Node000006" title=" " alt="" coords="544,298,576,301,575,306,543,303"/>
+<area shape="poly" id="edge17_Node000007_Node000007" title=" " alt="" coords="396,279,388,269,394,259,411,253,439,251,471,253,487,260,485,265,469,258,439,256,412,258,397,263,393,268,400,275"/>
+<area shape="poly" id="edge18_Node000007_Node000008" title=" " alt="" coords="475,302,632,367,630,372,473,307"/>
+<area shape="poly" id="edge19_Node000008_Node000008" title=" " alt="" coords="651,376,649,366,657,357,674,351,699,349,726,352,742,358,740,363,724,357,699,355,675,357,660,361,654,367,656,375"/>
 </map>

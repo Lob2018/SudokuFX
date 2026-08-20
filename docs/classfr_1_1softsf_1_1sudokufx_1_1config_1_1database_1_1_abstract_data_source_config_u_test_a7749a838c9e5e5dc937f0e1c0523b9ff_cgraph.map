@@ -1,4 +1,9 @@
 <map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenNullIOsFolderFactory_whenHikariDataSourceCalled_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenNullIOsFolderFactory_whenHikariDataSourceCalled_thenThrowsIllegalArgumentException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,306,104"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="97,28,100,18,112,10,130,5,156,3,186,6,205,13,203,18,185,11,155,8,131,10,114,15,105,21,102,30"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="90,28,94,18,106,10,127,5,156,3,190,6,212,13,210,18,189,11,155,8,128,10,108,15,98,21,94,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a95e551a74c1292b0e82a0b3ce4905e50" title="Creates and configures the main HikariDataSource for the application." alt="" coords="354,45,635,88"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="306,64,338,64,338,69,306,69"/>
+<area shape="poly" id="edge4_Node000002_Node000002" title=" " alt="" coords="434,45,431,35,442,26,463,21,494,19,529,21,550,27,548,32,528,26,494,24,463,26,444,31,437,37,439,44"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74" title="Configure et retourne un HikariConfig avec les paramètres de connexion et pool." alt="" coords="683,45,954,88"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="635,64,667,64,667,69,635,69"/>
 </map>

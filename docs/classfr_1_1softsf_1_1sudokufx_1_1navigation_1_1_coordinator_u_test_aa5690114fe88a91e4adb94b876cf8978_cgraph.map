@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenHostServicesSet_whenOpenMyWebsiteUrl_thenShowDocumentIsCalled" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenHostServicesSet_whenOpenMyWebsiteUrl_thenShowDocumentIsCalled">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,323,97"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aaee4522d11b07eeb343f35f3afc4e9b8" title="Opens my website&#39;s page in the user&#39;s default web browser." alt="" coords="371,5,573,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,40,355,37,355,42,324,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a84cabb06e38efe9e6b2ed6a0e8b151fb" title="Injects the non&#45;null HostServices instance provided by the JavaFX application." alt="" coords="377,72,567,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,75,361,79,361,84,323,80"/>
+</map>

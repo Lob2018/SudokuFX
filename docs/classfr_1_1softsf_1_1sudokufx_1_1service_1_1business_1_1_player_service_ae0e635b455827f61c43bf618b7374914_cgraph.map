@@ -1,4 +1,7 @@
 <map id="fr.softsf.sudokufx.service.business.PlayerService.getPlayer" name="fr.softsf.sudokufx.service.business.PlayerService.getPlayer">
-<area shape="rect" id="Node000001" title="Retrieves and validates the first player with a selected game." alt="" coords="5,29,235,72"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="76,29,75,19,82,10,97,5,120,3,145,5,159,11,157,16,143,10,120,8,98,10,85,15,80,21,82,28"/>
+<area shape="rect" id="Node000001" title="Retrieves and validates the first player with a selected game." alt="" coords="5,37,235,80"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="68,37,65,27,74,18,92,13,120,11,150,13,168,19,166,24,149,18,120,16,93,18,77,23,71,29,73,36"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html#af99d8aaa4f5bd6c0e161a01e6803e9d7" title="Finds the currently selected player along with their selected game and all related associations." alt="" coords="283,29,516,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,56,267,56,267,61,235,61"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="345,29,346,19,356,10,374,5,399,3,429,5,447,13,445,17,428,11,399,8,375,10,359,15,351,21,350,29"/>
 </map>

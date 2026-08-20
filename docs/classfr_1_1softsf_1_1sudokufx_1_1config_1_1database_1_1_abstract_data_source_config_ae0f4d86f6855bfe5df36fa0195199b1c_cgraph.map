@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig.validateDatabaseState" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfig.validateDatabaseState">
+<area shape="rect" id="Node000001" title="Validates gamelevel table integrity post&#45;Flyway migration." alt="" coords="5,13,319,56"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html#a493d23b8b71658db3fef3ba6c907754f" title="Constructs a new DatabaseIntegrityException with the specified detail message and cause." alt="" coords="367,5,656,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,32,351,32,351,37,319,37"/>
+</map>

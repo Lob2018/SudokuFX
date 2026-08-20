@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.ActiveMenuOrSubmenuViewModelUTest.defaultActiveMenuIsMAXI" name="fr.softsf.sudokufx.testing.unit.viewmodel.ActiveMenuOrSubmenuViewModelUTest.defaultActiveMenuIsMAXI">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,307,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html#aaa10d471a09d5ea61e1dd7b75d3e89e9" title="Returns the observable property representing the active menu." alt="" coords="355,29,600,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,56,339,56,339,61,307,61"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="415,29,416,19,428,10,448,5,477,3,511,5,532,13,530,18,510,11,477,8,449,10,430,15,421,21,420,29"/>
+</map>

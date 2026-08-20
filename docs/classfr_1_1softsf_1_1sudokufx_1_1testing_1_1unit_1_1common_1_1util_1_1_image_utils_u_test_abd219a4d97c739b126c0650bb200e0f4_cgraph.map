@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.testing.unit.common.util.ImageUtilsUTest.givenValidFile_whenIsValidImage_thenReturnsTrueForSupportedExtensions" name="fr.softsf.sudokufx.testing.unit.common.util.ImageUtilsUTest.givenValidFile_whenIsValidImage_thenReturnsTrueForSupportedExtensions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,310,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#aee9c875f6fd355566c1b8009c034e164" title="Determines if the given file has a supported image extension." alt="" coords="358,13,560,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,32,342,32,342,37,310,37"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.testing.unit.view.util.BindingConfiguratorUTest.givenColorPicker_whenConfigureColorPicker_thenKeyboardEventsDoNotThrowExceptions" name="fr.softsf.sudokufx.testing.unit.view.util.BindingConfiguratorUTest.givenColorPicker_whenConfigureColorPicker_thenKeyboardEventsDoNotThrowExceptions">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,355,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html#a3eb07af495365e92d8486dae1d6af957" title="Configures a ColorPicker with accessibility, tooltip, role description bindings, and keyboard interac..." alt="" coords="403,13,626,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="355,40,387,40,387,45,355,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html#a8030efa9465648dc2520f8b3737cdbb9" title="Configures keyboard support for a ColorPicker with SPACE/ENTER to open and ESCAPE to close the color ..." alt="" coords="674,13,897,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="626,40,659,40,659,45,626,45"/>
+</map>

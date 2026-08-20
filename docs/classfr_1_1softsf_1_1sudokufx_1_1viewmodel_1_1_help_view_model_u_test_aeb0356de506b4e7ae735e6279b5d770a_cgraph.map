@@ -1,5 +1,8 @@
 <map id="fr.softsf.sudokufx.viewmodel.HelpViewModelUTest.givenNullAlert_whenDisplayAlert_thenThrowsNPE" name="fr.softsf.sudokufx.viewmodel.HelpViewModelUTest.givenNullAlert_whenDisplayAlert_thenThrowsNPE">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,239,64"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aca840cc2daae5861c308a264e5ab4e07" title="Displays the given alert and waits for user interaction." alt="" coords="287,13,480,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,32,271,32,271,37,239,37"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,239,113"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#a05efab250b0531081cff6ba228e0b86c" title="Constructs the HelpViewModel with required dependencies." alt="" coords="287,29,494,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,67,271,63,272,68,239,72"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html#aca840cc2daae5861c308a264e5ab4e07" title="Displays the given alert and waits for user interaction." alt="" coords="294,96,487,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="239,96,278,101,278,106,239,101"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="340,29,338,19,346,10,364,5,390,3,420,5,437,12,435,17,418,10,390,8,365,10,349,15,343,21,345,28"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenDifficultyLevels_whenGetAccessibilityKeyForLevel_thenReturnCorrectI18nKeys" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenDifficultyLevels_whenGetAccessibilityKeyForLevel_thenReturnCorrectI18nKeys">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,275,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#ae4b3a75047cdd734fefea0992390b2be" title="Returns the i18n key used for accessibility descriptions of a given difficulty level." alt="" coords="323,13,567,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,40,307,40,307,45,275,45"/>
+</map>

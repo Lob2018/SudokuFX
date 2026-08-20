@@ -1,4 +1,13 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.celebrateVictory" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.celebrateVictory">
-<area shape="rect" id="Node000001" title="Handles all actions when a grid is successfully completed." alt="" coords="5,29,224,72"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="73,29,71,19,78,10,93,5,115,3,138,5,152,11,150,16,137,10,114,8,94,10,81,15,76,21,78,28"/>
+<area shape="rect" id="Node000001" title="Handles all actions when a grid is successfully completed." alt="" coords="5,72,224,115"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="63,72,61,62,70,53,88,47,115,45,144,48,161,54,159,59,143,53,114,51,89,53,73,57,66,63,69,71"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a21f04c69326d6540965b85dc026e21f1" title="Returns the currently stored player." alt="" coords="272,5,501,48"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="204,69,281,50,282,55,205,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a8b0b569fe624474d8fbb3765f11e1c00" title="Sends an error toast." alt="" coords="293,72,480,115"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="224,91,277,91,277,96,224,96"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#ad39fd2086b01dd4531467fb46f3fd271" title="Sends an informational toast." alt="" coords="293,139,480,181"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="205,113,282,132,281,137,204,118"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31" title="Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire even if id..." alt="" coords="549,105,736,148"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="481,103,534,110,533,115,480,108"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="480,145,533,138,534,143,481,150"/>
 </map>

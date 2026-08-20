@@ -1,5 +1,7 @@
 <map id="fr.softsf.sudokufx.config.MyLogbackConfigUTest.MyLogbackConfigUTest" name="fr.softsf.sudokufx.config.MyLogbackConfigUTest.MyLogbackConfigUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,238,64"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a8a62afde4c18429834fba6b91cbdde67" title="Creates and returns the initialized OS&#45;specific folders." alt="" coords="286,13,509,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,32,270,32,270,37,238,37"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,238,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html#ad5c2f554f0e1f109339ad6456751d970" title="Constructor that initializes the logging configuration." alt="" coords="286,5,521,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="238,44,270,40,270,45,238,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a8a62afde4c18429834fba6b91cbdde67" title="Creates and returns the initialized OS&#45;specific folders." alt="" coords="292,72,515,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="238,71,277,76,276,81,238,76"/>
 </map>

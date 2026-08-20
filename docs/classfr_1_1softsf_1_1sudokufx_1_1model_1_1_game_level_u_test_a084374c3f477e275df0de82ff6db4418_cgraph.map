@@ -1,4 +1,7 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenTwoGameLevelObjectsWithSameValues_whenComparingWithEquals_thenShouldReturnTrue" name="fr.softsf.sudokufx.model.GameLevelUTest.givenTwoGameLevelObjectsWithSameValues_whenComparingWithEquals_thenShouldReturnTrue">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,300,104"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="95,28,98,18,110,10,128,5,153,3,183,6,201,13,199,18,181,11,152,8,129,10,112,15,103,21,100,30"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="98,28,101,18,112,10,129,5,153,3,181,6,199,13,197,18,180,11,152,8,130,10,114,15,105,21,103,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#abb25b8080161c86b7034a8699aafb75d" title="Protected default constructor for JPA." alt="" coords="348,45,514,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,64,332,64,332,69,300,69"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="379,45,376,35,385,26,403,21,431,19,461,21,478,27,477,32,460,26,431,24,404,26,388,31,382,37,384,44"/>
 </map>

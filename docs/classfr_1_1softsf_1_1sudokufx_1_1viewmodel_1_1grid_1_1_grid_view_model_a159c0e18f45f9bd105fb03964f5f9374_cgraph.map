@@ -1,53 +1,131 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init">
-<area shape="rect" id="Node000001" title="Instantiates the 81 GridCellViewModel and binds text change listeners." alt="" coords="5,397,224,440"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="1165,405,1383,448"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,413,272,412,543,410,814,412,1149,420,1149,425,814,417,543,415,272,417,224,418"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#add773c382452e7476099209f6898f991" title="Synchronizes the grid state and manages side effects based on the current application mode." alt="" coords="272,427,516,469"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="224,427,256,431,256,436,224,433"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="1221,405,1219,395,1227,386,1246,381,1274,379,1304,381,1322,387,1320,392,1303,386,1274,384,1247,386,1230,391,1224,397,1226,404"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a3be7edba49a294b63514cac2edba058e" title="Synchronizes the grid state during manual solving." alt="" coords="569,528,809,571"/>
-<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="460,467,611,520,609,525,458,473"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ac30ea1feb669d014d0d0a58bd85cfc87" title="Handles grid persistence and completion verification during regular gameplay." alt="" coords="564,243,814,285"/>
-<area shape="poly" id="edge20_Node000003_Node000010" title=" " alt="" coords="428,424,639,291,642,296,431,428"/>
-<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad1b7ef7994bef2d64edd271bf77a9cbc" title="Checks if the current UI context is set to the Solve menu." alt="" coords="576,427,802,469"/>
-<area shape="poly" id="edge33_Node000003_Node000018" title=" " alt="" coords="516,445,561,445,561,451,516,451"/>
-<area shape="poly" id="edge9_Node000004_Node000002" title=" " alt="" coords="750,525,862,491,1010,460,1149,439,1150,444,1011,466,863,496,751,530"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="1159,587,1389,629"/>
-<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="792,569,863,580,1007,594,1143,602,1143,607,1007,599,862,585,791,574"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="1165,496,1383,539"/>
-<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="786,525,862,513,1011,506,1149,508,1149,513,1011,511,863,519,787,530"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="1158,677,1390,720"/>
-<area shape="poly" id="edge10_Node000004_Node000007" title=" " alt="" coords="709,569,735,601,771,637,814,672,863,698,933,716,1005,725,1076,725,1142,720,1143,725,1076,730,1005,730,932,722,861,702,811,676,767,641,731,604,704,573"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="868,528,1094,571"/>
-<area shape="poly" id="edge12_Node000004_Node000008" title=" " alt="" coords="810,547,852,547,852,552,810,552"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14ed923537d42b9a3273e937ac7b7073" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="862,645,1100,688"/>
-<area shape="poly" id="edge17_Node000004_Node000009" title=" " alt="" coords="737,569,863,624,898,637,896,642,861,629,735,574"/>
-<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="1221,587,1219,577,1227,567,1246,562,1274,560,1304,562,1322,569,1320,574,1303,568,1274,565,1247,567,1230,572,1224,578,1226,585"/>
-<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="1221,496,1219,486,1227,477,1246,471,1274,469,1304,472,1322,478,1320,483,1303,477,1274,475,1247,477,1230,481,1224,487,1226,495"/>
-<area shape="poly" id="edge11_Node000007_Node000007" title=" " alt="" coords="1221,677,1219,667,1227,658,1246,653,1274,651,1304,653,1322,659,1320,664,1303,658,1274,656,1247,658,1230,663,1224,669,1226,676"/>
-<area shape="poly" id="edge15_Node000008_Node000002" title=" " alt="" coords="1015,525,1075,491,1147,458,1165,451,1167,456,1149,462,1078,496,1018,530"/>
-<area shape="poly" id="edge13_Node000008_Node000005" title=" " alt="" coords="1091,569,1150,580,1148,586,1090,574"/>
-<area shape="poly" id="edge14_Node000008_Node000006" title=" " alt="" coords="1094,534,1149,528,1150,534,1095,540"/>
-<area shape="poly" id="edge16_Node000008_Node000007" title=" " alt="" coords="1021,569,1149,639,1211,668,1208,673,1146,644,1018,573"/>
-<area shape="poly" id="edge18_Node000009_Node000005" title=" " alt="" coords="1090,642,1148,630,1150,636,1091,647"/>
-<area shape="poly" id="edge19_Node000009_Node000007" title=" " alt="" coords="1100,677,1143,682,1142,687,1100,682"/>
-<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c7bd2140fad9b3091830f3f81c64827" title="Returns whether the current game has a non&#45;empty default grid." alt="" coords="872,243,1090,285"/>
-<area shape="poly" id="edge21_Node000010_Node000011" title=" " alt="" coords="815,261,856,261,856,267,815,267"/>
-<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="1148,213,1400,256"/>
-<area shape="poly" id="edge22_Node000010_Node000012" title=" " alt="" coords="786,239,862,228,1001,221,1132,223,1132,229,1001,227,863,233,787,245"/>
-<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09" title="Persists the current grid state for the active player’s selected game." alt="" coords="872,309,1090,352"/>
-<area shape="poly" id="edge25_Node000010_Node000014" title=" " alt="" coords="786,283,870,303,869,308,785,289"/>
-<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" title="Validates the grid by attempting to solve it." alt="" coords="872,125,1090,168"/>
-<area shape="poly" id="edge27_Node000010_Node000015" title=" " alt="" coords="735,240,861,184,896,171,898,176,863,189,737,245"/>
-<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="1448,213,1666,256"/>
-<area shape="poly" id="edge23_Node000012_Node000013" title=" " alt="" coords="1400,232,1433,232,1433,237,1400,237"/>
-<area shape="poly" id="edge24_Node000013_Node000013" title=" " alt="" coords="1504,213,1502,203,1511,194,1529,189,1557,187,1588,189,1606,195,1604,200,1586,194,1557,192,1530,194,1513,199,1507,205,1509,212"/>
-<area shape="poly" id="edge26_Node000014_Node000013" title=" " alt="" coords="1090,314,1400,265,1442,257,1443,262,1400,271,1091,319"/>
-<area shape="poly" id="edge32_Node000015_Node000012" title=" " alt="" coords="1056,166,1187,206,1185,211,1054,171"/>
-<area shape="poly" id="edge30_Node000015_Node000013" title=" " alt="" coords="1091,156,1238,174,1400,199,1445,207,1444,212,1400,204,1237,179,1090,161"/>
-<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca" title="Handles all actions when a grid is successfully completed." alt="" coords="1165,29,1383,72"/>
-<area shape="poly" id="edge28_Node000015_Node000016" title=" " alt="" coords="1035,122,1147,81,1171,74,1172,79,1149,87,1037,127"/>
-<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#af41c64cb771df8f4fa5bbf0c3a34431b" title="Solves the given 9x9 Sudoku grid." alt="" coords="1163,96,1384,139"/>
-<area shape="poly" id="edge31_Node000015_Node000017" title=" " alt="" coords="1091,133,1147,127,1148,133,1091,138"/>
-<area shape="poly" id="edge29_Node000016_Node000016" title=" " alt="" coords="1221,29,1219,19,1227,10,1246,5,1274,3,1304,5,1322,11,1320,16,1303,10,1274,8,1247,10,1230,15,1224,21,1226,28"/>
+<area shape="rect" id="Node000001" title="Instantiates the 81 GridCellViewModel and binds text change listeners." alt="" coords="5,875,224,917"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a6dd80845ee5865e89cbe229b0ee933c3" title="Constructs a GridCellViewModel and initializes UI bindings." alt="" coords="272,237,519,280"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,873,376,293,381,295,128,875"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="1222,1333,1440,1376"/>
+<area shape="poly" id="edge19_Node000001_Node000014" title=" " alt="" coords="143,915,254,1001,335,1059,430,1122,536,1186,650,1246,769,1299,890,1340,971,1357,1054,1365,1134,1367,1207,1365,1207,1370,1134,1373,1053,1371,970,1362,889,1345,767,1304,648,1251,534,1190,428,1127,332,1064,251,1005,140,920"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#add773c382452e7476099209f6898f991" title="Synchronizes the grid state and manages side effects based on the current application mode." alt="" coords="273,875,518,917"/>
+<area shape="poly" id="edge21_Node000001_Node000015" title=" " alt="" coords="224,893,257,893,257,899,224,899"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a38d783156f2f2ad694cfbec5062de472" title="Applies a computed border style to a JavaFX node, based on content length, focus state,..." alt="" coords="1214,392,1449,435"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,278,521,317,631,363,758,408,824,427,890,441,961,451,1018,453,1147,441,1203,435,1203,440,1148,447,1018,458,961,457,889,447,823,432,756,413,629,368,519,322,438,283"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a0d1630abe71ae622f3522fbed9855750" title="Formats a raw digit string (1–9) into a 3&#45;line spaced grid display." alt="" coords="909,36,1128,79"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="414,235,477,175,520,144,566,119,648,90,734,71,817,60,893,55,894,60,818,65,735,77,650,95,568,124,523,149,481,180,418,239"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aadd59b021db2e0fdad7e24de4a6a7cd8" title="Binds the label&#39;s accessible text to a localized, formatted string reflecting the cell&#39;s value and 1&#45;..." alt="" coords="567,133,841,176"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="460,234,623,179,625,184,462,239"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aaf198f919d0c3422e9f0150483873163" title="Configures UI listeners and formatting logic:" alt="" coords="594,237,815,280"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="519,256,578,256,578,261,519,261"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Builds the CSS style for a Sudoku grid cell." alt="" coords="1530,377,1752,420"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1449,405,1513,402,1514,407,1450,410"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="1221,48,1442,91"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1128,59,1205,62,1205,67,1128,64"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="1221,127,1442,169"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="1096,77,1241,119,1240,124,1094,82"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="775,130,932,81,934,86,777,135"/>
+<area shape="poly" id="edge10_Node000009_Node000003" title=" " alt="" coords="725,278,753,309,792,345,839,380,890,406,967,426,1047,435,1126,436,1198,431,1198,437,1126,441,1047,440,966,431,888,410,836,384,789,349,750,313,721,282"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="749,235,840,186,863,169,888,154,946,136,1027,117,1205,86,1206,91,1028,123,948,141,890,158,866,173,843,190,751,239"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="754,234,818,210,889,189,970,174,1053,162,1205,150,1205,155,1053,168,971,179,890,195,819,215,756,239"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a2a551d4792b3263e749994098c3b3748" title="Updates CSS style classes on label and text area to reflect the editable state." alt="" coords="903,204,1134,247"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="815,244,887,237,888,242,816,250"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ac95db9585f2ba2ed12d60dd5cca39461" title="Switches from read&#45;only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea a..." alt="" coords="897,271,1140,313"/>
+<area shape="poly" id="edge15_Node000009_Node000012" title=" " alt="" coords="816,268,882,275,881,280,815,273"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a9544acad3febede6981c9d8440674d3c" title="Updates the label&#39;s font size CSS class and border style based on the current text content." alt="" coords="889,337,1148,396"/>
+<area shape="poly" id="edge17_Node000009_Node000013" title=" " alt="" coords="765,278,890,323,910,329,908,334,888,328,764,283"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ab27ee3baeb1c9260e8617a680a5ef215" title="Checks if the cell is currently editable." alt="" coords="1222,223,1440,265"/>
+<area shape="poly" id="edge14_Node000010_Node000011" title=" " alt="" coords="1135,230,1207,234,1206,239,1134,235"/>
+<area shape="poly" id="edge16_Node000012_Node000011" title=" " alt="" coords="1140,271,1206,260,1207,266,1141,276"/>
+<area shape="poly" id="edge18_Node000013_Node000003" title=" " alt="" coords="1149,383,1198,391,1198,396,1148,389"/>
+<area shape="poly" id="edge20_Node000014_Node000014" title=" " alt="" coords="1274,1333,1271,1323,1281,1314,1301,1309,1331,1307,1364,1309,1384,1315,1382,1320,1363,1314,1331,1312,1302,1314,1283,1319,1276,1325,1279,1332"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a3be7edba49a294b63514cac2edba058e" title="Synchronizes the grid state during manual solving." alt="" coords="584,1067,824,1109"/>
+<area shape="poly" id="edge22_Node000015_Node000016" title=" " alt="" coords="433,915,656,1056,654,1060,430,920"/>
+<area shape="rect" id="Node000026" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ac30ea1feb669d014d0d0a58bd85cfc87" title="Handles grid persistence and completion verification during regular gameplay." alt="" coords="579,688,829,731"/>
+<area shape="poly" id="edge42_Node000015_Node000026" title=" " alt="" coords="431,872,653,737,655,741,434,876"/>
+<area shape="rect" id="Node000067" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad1b7ef7994bef2d64edd271bf77a9cbc" title="Checks if the current UI context is set to the Solve menu." alt="" coords="592,875,817,917"/>
+<area shape="poly" id="edge77_Node000015_Node000067" title=" " alt="" coords="518,893,576,893,576,899,518,899"/>
+<area shape="poly" id="edge27_Node000016_Node000014" title=" " alt="" coords="721,1108,747,1147,786,1195,834,1243,862,1264,890,1282,947,1301,1027,1318,1207,1341,1207,1347,1026,1323,945,1306,888,1286,859,1268,831,1247,782,1198,743,1150,716,1111"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="1216,1061,1446,1104"/>
+<area shape="poly" id="edge23_Node000016_Node000017" title=" " alt="" coords="808,1063,889,1052,1018,1045,1148,1052,1201,1058,1200,1063,1147,1057,1018,1050,890,1057,808,1069"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="1222,1243,1440,1285"/>
+<area shape="poly" id="edge25_Node000016_Node000018" title=" " alt="" coords="726,1108,754,1139,793,1175,839,1209,890,1236,970,1259,1053,1272,1133,1276,1207,1274,1207,1280,1133,1281,1052,1277,969,1265,888,1241,836,1214,789,1179,750,1143,722,1112"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="1216,1152,1447,1195"/>
+<area shape="poly" id="edge28_Node000016_Node000019" title=" " alt="" coords="821,1107,890,1119,1201,1158,1200,1163,889,1124,820,1113"/>
+<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="905,1184,1132,1227"/>
+<area shape="poly" id="edge30_Node000016_Node000020" title=" " alt="" coords="755,1107,890,1163,929,1176,928,1181,888,1168,753,1112"/>
+<area shape="rect" id="Node000021" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a0eb10ea687d03a7106c18ecb81bdd4fb" title="Sends a warning toast." alt="" coords="923,949,1114,992"/>
+<area shape="poly" id="edge35_Node000016_Node000021" title=" " alt="" coords="753,1064,888,1008,928,995,929,1000,890,1013,755,1069"/>
+<area shape="rect" id="Node000023" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a3565addca908da04490f8a19865ba8a1" title="Stops and disposes the song player." alt="" coords="925,776,1112,819"/>
+<area shape="poly" id="edge37_Node000016_Node000023" title=" " alt="" coords="725,1065,780,1005,839,928,852,900,859,876,867,852,888,829,909,815,912,819,891,833,872,855,864,877,857,902,844,931,784,1008,729,1068"/>
+<area shape="rect" id="Node000024" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14ed923537d42b9a3273e937ac7b7073" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="900,1067,1137,1109"/>
+<area shape="poly" id="edge38_Node000016_Node000024" title=" " alt="" coords="825,1085,885,1085,885,1091,825,1091"/>
+<area shape="poly" id="edge24_Node000017_Node000017" title=" " alt="" coords="1274,1061,1271,1051,1281,1042,1301,1037,1331,1035,1364,1037,1384,1043,1382,1048,1363,1042,1331,1040,1302,1042,1283,1047,1276,1053,1279,1060"/>
+<area shape="poly" id="edge26_Node000018_Node000018" title=" " alt="" coords="1274,1243,1271,1233,1281,1223,1301,1218,1331,1216,1364,1218,1384,1225,1382,1230,1363,1224,1331,1221,1302,1223,1283,1228,1276,1234,1279,1241"/>
+<area shape="poly" id="edge29_Node000019_Node000019" title=" " alt="" coords="1274,1152,1271,1142,1281,1133,1301,1127,1331,1125,1364,1128,1384,1134,1382,1139,1363,1133,1331,1131,1302,1133,1283,1137,1276,1143,1279,1151"/>
+<area shape="poly" id="edge33_Node000020_Node000014" title=" " alt="" coords="1061,1225,1197,1295,1263,1325,1261,1329,1195,1300,1058,1230"/>
+<area shape="poly" id="edge31_Node000020_Node000017" title=" " alt="" coords="1056,1181,1119,1147,1195,1114,1215,1106,1217,1112,1197,1118,1122,1152,1058,1186"/>
+<area shape="poly" id="edge32_Node000020_Node000018" title=" " alt="" coords="1133,1224,1207,1238,1206,1243,1132,1229"/>
+<area shape="poly" id="edge34_Node000020_Node000019" title=" " alt="" coords="1132,1191,1200,1184,1201,1189,1133,1196"/>
+<area shape="rect" id="Node000022" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31" title="Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire even if id..." alt="" coords="1238,904,1425,947"/>
+<area shape="poly" id="edge36_Node000021_Node000022" title=" " alt="" coords="1114,954,1222,938,1223,944,1115,960"/>
+<area shape="poly" id="edge39_Node000024_Node000017" title=" " alt="" coords="1137,1083,1201,1082,1201,1088,1138,1089"/>
+<area shape="poly" id="edge40_Node000024_Node000019" title=" " alt="" coords="1100,1107,1237,1145,1235,1150,1099,1113"/>
+<area shape="rect" id="Node000025" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a1d2b83dfdebc0615c30d21ca2cfceaf8" title="Sets the value of the percentage property." alt="" coords="1196,971,1467,1013"/>
+<area shape="poly" id="edge41_Node000024_Node000025" title=" " alt="" coords="1076,1064,1195,1023,1222,1015,1223,1020,1196,1028,1078,1069"/>
+<area shape="poly" id="edge69_Node000026_Node000023" title=" " alt="" coords="784,729,926,769,925,774,783,734"/>
+<area shape="rect" id="Node000027" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a6c7bd2140fad9b3091830f3f81c64827" title="Returns whether the current game has a non&#45;empty default grid." alt="" coords="909,580,1128,623"/>
+<area shape="poly" id="edge43_Node000026_Node000027" title=" " alt="" coords="768,685,939,626,940,631,770,690"/>
+<area shape="rect" id="Node000029" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="1205,800,1458,843"/>
+<area shape="poly" id="edge45_Node000026_Node000029" title=" " alt="" coords="830,716,983,733,1148,761,1256,792,1255,797,1147,767,982,738,830,721"/>
+<area shape="rect" id="Node000031" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#aad1610b7e07349137ebf0d3d592a5b09" title="Persists the current grid state for the active player’s selected game." alt="" coords="1222,475,1440,517"/>
+<area shape="poly" id="edge48_Node000026_Node000031" title=" " alt="" coords="725,686,793,625,839,592,888,566,968,537,1051,517,1133,505,1207,497,1207,503,1133,510,1053,523,970,542,890,570,842,597,796,629,728,689"/>
+<area shape="rect" id="Node000062" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a77d49e325684b6bef071fb2461c896cb" title="Validates the grid by attempting to solve it." alt="" coords="909,659,1128,701"/>
+<area shape="poly" id="edge70_Node000026_Node000062" title=" " alt="" coords="829,695,894,689,894,694,830,700"/>
+<area shape="rect" id="Node000028" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a21f04c69326d6540965b85dc026e21f1" title="Returns the currently stored player." alt="" coords="1526,612,1755,655"/>
+<area shape="poly" id="edge44_Node000027_Node000028" title=" " alt="" coords="1128,579,1203,570,1289,565,1379,566,1468,577,1492,586,1516,598,1538,605,1536,610,1514,602,1490,591,1466,583,1379,571,1289,570,1204,575,1128,584"/>
+<area shape="rect" id="Node000030" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="1532,741,1750,784"/>
+<area shape="poly" id="edge46_Node000029_Node000030" title=" " alt="" coords="1447,797,1516,784,1517,789,1448,802"/>
+<area shape="poly" id="edge47_Node000030_Node000030" title=" " alt="" coords="1583,741,1581,731,1590,722,1610,717,1641,715,1674,717,1693,723,1692,728,1673,722,1641,720,1611,722,1593,727,1586,733,1588,740"/>
+<area shape="poly" id="edge50_Node000031_Node000028" title=" " alt="" coords="1434,516,1469,534,1485,550,1493,567,1501,583,1517,598,1524,602,1521,607,1513,602,1497,586,1489,569,1481,553,1465,538,1432,520"/>
+<area shape="poly" id="edge49_Node000031_Node000030" title=" " alt="" coords="1381,516,1426,542,1469,578,1486,601,1494,622,1502,642,1517,665,1554,701,1593,730,1589,734,1550,705,1513,668,1497,645,1489,624,1481,604,1465,582,1423,547,1378,520"/>
+<area shape="rect" id="Node000032" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a62ff7ab823da335406fbc8600999a979" title="Reloads the current player from the database." alt="" coords="1515,545,1766,588"/>
+<area shape="poly" id="edge51_Node000031_Node000032" title=" " alt="" coords="1429,515,1530,539,1529,544,1427,521"/>
+<area shape="rect" id="Node000036" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#a6f6b31510b7e15b031f2feb95df7ed4a" title="Updates an existing player and its associated nested entities (language, options, menu,..." alt="" coords="1526,444,1755,487"/>
+<area shape="poly" id="edge55_Node000031_Node000036" title=" " alt="" coords="1441,483,1510,476,1511,481,1441,488"/>
+<area shape="rect" id="Node000033" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a776dbf8d4bd6db641d84313659051d51" title="Terminates the JavaFX application." alt="" coords="1846,744,2072,787"/>
+<area shape="poly" id="edge52_Node000032_Node000033" title=" " alt="" coords="1752,586,1768,598,1782,615,1789,632,1793,666,1796,699,1803,715,1816,730,1834,742,1830,747,1813,734,1798,718,1791,701,1787,667,1784,633,1777,617,1765,602,1749,591"/>
+<area shape="rect" id="Node000034" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#ae0e635b455827f61c43bf618b7374914" title="Retrieves and validates the first player with a selected game." alt="" coords="1844,835,2074,877"/>
+<area shape="poly" id="edge53_Node000032_Node000034" title=" " alt="" coords="1754,587,1768,598,1787,623,1795,648,1796,673,1794,698,1792,723,1793,747,1800,772,1816,797,1833,813,1853,825,1850,830,1830,817,1812,800,1795,774,1788,748,1787,723,1789,698,1791,673,1790,649,1782,626,1764,602,1751,591"/>
+<area shape="poly" id="edge54_Node000034_Node000034" title=" " alt="" coords="1900,835,1897,825,1907,815,1928,810,1959,808,1993,810,2013,817,2012,822,1992,816,1959,813,1929,815,1910,820,1902,826,1905,833"/>
+<area shape="rect" id="Node000037" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html#aec69dc20d643694a70cfa74003161aed" title="Retrieves the GameLevel entity by its business level value." alt="" coords="1832,163,2086,205"/>
+<area shape="poly" id="edge56_Node000036_Node000037" title=" " alt="" coords="1751,441,1764,430,1783,404,1790,378,1790,352,1787,325,1784,297,1785,270,1793,242,1812,216,1818,211,1821,215,1816,219,1798,245,1790,271,1789,297,1793,324,1796,351,1795,379,1787,407,1768,434,1754,446"/>
+<area shape="rect" id="Node000039" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a56b92064eba83dc275bb1b86dd41a986" title="Returns the Grid associated with this game." alt="" coords="1876,253,2042,296"/>
+<area shape="poly" id="edge58_Node000036_Node000039" title=" " alt="" coords="1749,441,1765,430,1777,416,1784,401,1787,369,1792,337,1799,321,1813,306,1835,291,1860,281,1862,286,1838,296,1816,310,1803,324,1797,339,1793,370,1789,402,1781,418,1768,434,1752,446"/>
+<area shape="rect" id="Node000040" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html#a7952718f0a731bf5b78c8b7d7a085bef" title="Converts a Player entity to a PlayerDto." alt="" coords="1814,344,2104,387"/>
+<area shape="poly" id="edge60_Node000036_Node000040" title=" " alt="" coords="1737,441,1765,430,1789,413,1813,396,1830,390,1832,395,1816,401,1792,417,1768,434,1739,446"/>
+<area shape="rect" id="Node000041" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ac86f1c843073498a022a4c0295b1097b" title="Sets the default grid values." alt="" coords="1876,411,2042,453"/>
+<area shape="poly" id="edge62_Node000036_Node000041" title=" " alt="" coords="1756,451,1860,440,1861,445,1756,456"/>
+<area shape="rect" id="Node000043" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4e78ed16efa7608347b3f745b512ed8f" title="Sets the current grid values." alt="" coords="1876,477,2042,520"/>
+<area shape="poly" id="edge63_Node000036_Node000043" title=" " alt="" coords="1756,475,1861,486,1860,491,1756,480"/>
+<area shape="rect" id="Node000045" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a7894aa82e469c02f8b7fbb7210c04ed7" title="Sets the difficulty level of this game." alt="" coords="1876,544,2042,587"/>
+<area shape="poly" id="edge64_Node000036_Node000045" title=" " alt="" coords="1694,485,1815,529,1861,542,1860,547,1814,535,1692,490"/>
+<area shape="rect" id="Node000047" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a0c578d68480f93172709babb1224f573" title="Sets the menu after validation." alt="" coords="1876,611,2042,653"/>
+<area shape="poly" id="edge65_Node000036_Node000047" title=" " alt="" coords="1695,485,1732,505,1768,531,1783,549,1792,566,1800,582,1816,596,1838,608,1862,617,1860,622,1836,613,1813,601,1796,585,1787,569,1779,552,1765,535,1729,510,1692,490"/>
+<area shape="rect" id="Node000049" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#af201d3417316b81311308e888df147ac" title="Sets the name after validation." alt="" coords="1876,677,2042,720"/>
+<area shape="poly" id="edge66_Node000036_Node000049" title=" " alt="" coords="1703,485,1738,505,1768,532,1781,550,1787,568,1791,601,1795,633,1803,648,1816,663,1837,678,1862,687,1860,692,1835,682,1813,667,1798,651,1790,635,1785,602,1782,569,1776,552,1764,535,1735,509,1701,490"/>
+<area shape="rect" id="Node000051" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a8d02e23fa141f2d1b08d12d150145112" title="Sets the options after validation." alt="" coords="1876,5,2042,48"/>
+<area shape="poly" id="edge67_Node000036_Node000051" title=" " alt="" coords="1752,442,1764,430,1781,407,1793,384,1799,361,1802,338,1798,292,1787,246,1776,199,1772,153,1775,129,1782,105,1794,82,1812,58,1834,41,1859,30,1861,35,1837,46,1816,62,1799,85,1787,107,1780,130,1778,153,1782,199,1792,245,1803,291,1807,338,1805,362,1798,386,1786,410,1768,434,1755,446"/>
+<area shape="rect" id="Node000053" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a9afc39d38139830bb7545ac2f50574f3" title="Sets the language after validation." alt="" coords="1869,72,2049,115"/>
+<area shape="poly" id="edge68_Node000036_Node000053" title=" " alt="" coords="1752,441,1764,430,1779,411,1788,393,1797,355,1795,317,1787,279,1780,241,1778,202,1787,164,1797,144,1812,125,1831,110,1853,99,1855,104,1834,114,1816,129,1802,147,1792,165,1783,203,1785,240,1792,278,1800,317,1802,356,1793,395,1783,414,1768,434,1755,445"/>
+<area shape="poly" id="edge57_Node000037_Node000037" title=" " alt="" coords="1900,163,1897,153,1907,143,1928,138,1959,136,1993,138,2013,145,2012,150,1992,144,1959,141,1929,143,1910,148,1902,154,1905,161"/>
+<area shape="poly" id="edge59_Node000039_Node000039" title=" " alt="" coords="1900,253,1897,243,1907,234,1928,229,1959,227,1993,229,2013,235,2012,240,1992,234,1959,232,1929,234,1910,239,1902,245,1905,252"/>
+<area shape="poly" id="edge61_Node000040_Node000040" title=" " alt="" coords="1900,344,1897,334,1907,325,1928,319,1959,317,1993,320,2013,326,2012,331,1992,325,1959,323,1929,325,1910,329,1902,335,1905,343"/>
+<area shape="poly" id="edge76_Node000062_Node000029" title=" " alt="" coords="1114,699,1149,718,1165,734,1174,749,1182,765,1197,779,1218,791,1216,796,1194,783,1178,768,1169,752,1161,737,1146,722,1112,704"/>
+<area shape="poly" id="edge74_Node000062_Node000030" title=" " alt="" coords="1093,699,1149,717,1172,727,1196,735,1278,748,1362,757,1516,762,1516,768,1362,762,1278,753,1195,740,1170,732,1147,723,1091,705"/>
+<area shape="rect" id="Node000063" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a4fdf2930215eea12812190e33e1ddeca" title="Handles all actions when a grid is successfully completed." alt="" coords="1222,616,1440,659"/>
+<area shape="poly" id="edge71_Node000062_Node000063" title=" " alt="" coords="1128,662,1206,652,1207,657,1129,668"/>
+<area shape="rect" id="Node000066" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#af41c64cb771df8f4fa5bbf0c3a34431b" title="Solves the given 9x9 Sudoku grid." alt="" coords="1221,683,1442,725"/>
+<area shape="poly" id="edge75_Node000062_Node000066" title=" " alt="" coords="1129,686,1205,692,1205,697,1128,691"/>
+<area shape="poly" id="edge73_Node000063_Node000028" title=" " alt="" coords="1441,633,1510,632,1510,638,1441,639"/>
+<area shape="poly" id="edge72_Node000063_Node000063" title=" " alt="" coords="1274,616,1271,606,1281,597,1301,591,1331,589,1364,592,1384,598,1382,603,1363,597,1331,595,1302,597,1283,601,1276,607,1279,615"/>
+<area shape="rect" id="Node000068" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html#aaa10d471a09d5ea61e1dd7b75d3e89e9" title="Returns the observable property representing the active menu." alt="" coords="896,867,1141,925"/>
+<area shape="poly" id="edge78_Node000067_Node000068" title=" " alt="" coords="817,893,880,893,880,899,817,899"/>
+<area shape="poly" id="edge79_Node000068_Node000068" title=" " alt="" coords="958,866,959,856,970,847,990,842,1019,840,1051,843,1071,850,1069,855,1050,848,1018,845,991,847,973,852,964,859,963,867"/>
 </map>

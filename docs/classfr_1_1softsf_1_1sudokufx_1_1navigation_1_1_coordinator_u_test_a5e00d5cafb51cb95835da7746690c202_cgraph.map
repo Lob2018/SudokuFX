@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenDefaultSceneSet_whenGetDefaultScene_thenReturnsSameScene" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenDefaultSceneSet_whenGetDefaultScene_thenReturnsSameScene">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,21,334,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a8236a3100b3540f3c96b6b3db3042b30" title="Returns the JavaFX default scene managed by this coordinator." alt="" coords="382,29,572,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="334,48,366,48,366,53,334,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="419,29,417,19,427,10,447,5,477,3,510,5,529,11,528,16,509,10,477,8,448,10,429,15,422,21,425,28"/>
+</map>

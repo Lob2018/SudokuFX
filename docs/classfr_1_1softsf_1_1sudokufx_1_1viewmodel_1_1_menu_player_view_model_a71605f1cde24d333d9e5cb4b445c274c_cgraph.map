@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.selectedPlayerProperty" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.selectedPlayerProperty">
+<area shape="rect" id="Node000001" title="Returns the property for the currently selected player." alt="" coords="5,21,250,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a5a9479f5c94f6822692a70db6102aac3" title="Returns the property holding the current player for JavaFX bindings." alt="" coords="298,29,555,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,48,282,48,282,53,250,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="370,29,368,19,378,10,397,5,426,3,458,5,477,11,476,16,457,10,426,8,398,10,380,15,373,21,376,28"/>
+</map>

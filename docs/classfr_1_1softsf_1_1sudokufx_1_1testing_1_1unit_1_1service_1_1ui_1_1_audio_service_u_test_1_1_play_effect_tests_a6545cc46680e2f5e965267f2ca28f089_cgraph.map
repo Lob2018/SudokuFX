@@ -1,4 +1,6 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlayEffectTests.givenNullEffectFile_whenPlayEffect_thenThrowsNullPointerException" name="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlayEffectTests.givenNullEffectFile_whenPlayEffect_thenThrowsNullPointerException">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,377,88"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="120,29,121,19,134,10,157,5,191,3,231,6,254,13,253,18,230,11,191,8,158,10,136,15,126,21,125,29"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="128,29,129,19,141,10,161,5,191,3,226,5,246,13,245,18,225,11,191,8,162,10,143,15,134,21,133,29"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#abc4a350f4cac0dc1322041aca86ef239" title="Plays a short sound effect." alt="" coords="425,37,612,80"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="377,56,409,56,409,61,377,61"/>
 </map>

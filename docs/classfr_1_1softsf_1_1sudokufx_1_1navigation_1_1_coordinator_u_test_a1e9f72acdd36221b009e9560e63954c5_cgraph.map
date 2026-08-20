@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNonNullDynamicFontSize_whenSetDynamicFontSize_thenDoesNotThrow" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNonNullDynamicFontSize_whenSetDynamicFontSize_thenDoesNotThrow">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,263,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a960fcad685919fdee92c003c58aec2c0" title="Sets the dynamic font resizing utility." alt="" coords="311,21,525,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,40,295,40,295,45,263,45"/>
+</map>

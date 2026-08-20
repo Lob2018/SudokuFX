@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.util.FileSystemManagerUTest.givenValidFolder_whenDeleteDataFolderRecursively_thenDeletionSucceeds" name="fr.softsf.sudokufx.common.util.FileSystemManagerUTest.givenValidFolder_whenDeleteDataFolderRecursively_thenDeletionSucceeds">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,374,64"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html#ad47135a1f8e01f12ebca6b051ca8bb91" title="Recursively deletes the application&#39;s data folder and all its contents." alt="" coords="422,5,671,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="374,32,406,32,406,37,374,37"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="fr.softsf.sudokufx.SudoMain.initializeCoordinator" name="fr.softsf.sudokufx.SudoMain.initializeCoordinator">
+<area shape="rect" id="Node000001" title="Ensures the Coordinator is initialized if not already (e.g., if Spring injection failed)." alt="" coords="5,63,242,105"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa63a8ea1cf99200dbee0e27a3ce78060" title="Constructs the coordinator." alt="" coords="311,29,502,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,67,295,61,296,66,242,73"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a4da97a537f85a8f1dbb1ecc2e16c44f8" title="Constructs a DynamicFontSize instance for the specified Scene." alt="" coords="290,96,523,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="242,95,274,99,274,104,242,101"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="356,29,354,19,363,10,380,5,406,3,435,5,452,11,450,16,433,10,406,8,381,10,365,15,359,21,361,28"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#aa3d91d324b478e27405559ffe52b04de" title="Sets up dynamic font resizing by adding listeners to the scene&#39;s width and height." alt="" coords="571,96,773,139"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="523,115,555,115,555,120,523,120"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a047fbfb7e3d7b9e30ddeaefbeb3c9a3f" title="Updates the font size of the scene&#39;s root node based on its current dimensions." alt="" coords="821,96,1042,139"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="774,115,806,115,806,120,774,120"/>
+</map>

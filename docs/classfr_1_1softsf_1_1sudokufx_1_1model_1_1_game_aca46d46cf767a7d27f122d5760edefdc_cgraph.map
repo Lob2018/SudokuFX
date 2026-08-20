@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.model.Game.toString" name="fr.softsf.sudokufx.model.Game.toString">
+<area shape="rect" id="Node000001" title="Returns a string representation of the game." alt="" coords="5,72,172,115"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4273be2bf866779941f2ba0e0556a8e6" title="Returns the unique identifier of the grid." alt="" coords="220,5,386,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,69,216,51,218,56,160,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ae96ae3832695c27c80bbd4be0604e8f5" title="Returns the unique identifier of this game level." alt="" coords="220,72,386,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,91,204,91,204,96,172,96"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a14eea5e4e2fcee41313fe89f00b4249e" title="Returns the unique ID of the player." alt="" coords="220,139,386,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,113,218,131,216,136,158,118"/>
+</map>

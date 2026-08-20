@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenHostServicesAndNonExistingFile_whenOpenLocalFile_thenLogsWarning" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenHostServicesAndNonExistingFile_whenOpenLocalFile_thenLogsWarning">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,263,97"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a7e592956d7481906fc0c8c8e81ae83f3" title="Opens the given local file in the user&#39;s default web browser." alt="" coords="311,5,501,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,42,295,38,295,43,264,47"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a84cabb06e38efe9e6b2ed6a0e8b151fb" title="Injects the non&#45;null HostServices instance provided by the JavaFX application." alt="" coords="311,72,501,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,73,295,77,295,82,263,78"/>
+</map>

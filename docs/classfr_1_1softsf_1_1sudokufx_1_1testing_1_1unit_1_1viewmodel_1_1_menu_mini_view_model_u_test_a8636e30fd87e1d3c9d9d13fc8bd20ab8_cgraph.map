@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuMiniViewModelUTest.setUp" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuMiniViewModelUTest.setUp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,267,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a4768ab397d7ccbe8da64a17b0f52ad64" title="Initializes all bindings for accessible texts and tooltips, bound to the current locale." alt="" coords="315,39,580,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,57,299,57,299,63,267,63"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a1bb6d0fcca00d363d4bcbdf93462be07" title="Creates a StringBinding for a given key, bound to the current locale." alt="" coords="630,5,888,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="580,43,614,39,615,45,581,48"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html#a14060be40214735dd9f176eeb3c88cac" title="Creates a tooltip StringBinding by appending the default accessibility role description." alt="" coords="628,72,890,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="581,72,613,75,612,80,580,77"/>
+</map>

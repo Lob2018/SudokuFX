@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSaveViewModelUTest.givenFrenchLocale_whenGettingSaveTextProperty_thenReturnsLocalizedValueInFrench" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSaveViewModelUTest.givenFrenchLocale_whenGettingSaveTextProperty_thenReturnsLocalizedValueInFrench">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,344,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html#ababf2835032f45a04ccebe815a8ea54e" title="Returns the reactive binding for the save text property." alt="" coords="392,29,645,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="344,48,376,48,376,53,344,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="454,30,452,19,463,10,485,5,518,3,555,5,577,11,575,17,554,10,518,8,485,10,465,15,457,21,460,28"/>
+</map>

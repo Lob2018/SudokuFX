@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuHiddenViewModelUTest.givenLocaleChange_whenAccessingBinding_thenReturnsUpdatedTranslation" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuHiddenViewModelUTest.givenLocaleChange_whenAccessingBinding_thenReturnsUpdatedTranslation">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,360,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html#a319fbc5d11519ee9d65377d42fe02be3" title="Returns the reactive StringBinding for the accessibility text of the &quot;Show Menu&quot; button when the menu..." alt="" coords="408,29,681,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="360,56,392,56,392,61,360,61"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="475,29,476,19,489,10,512,5,544,3,583,6,606,13,604,18,582,11,544,8,512,10,491,15,481,21,480,29"/>
+</map>

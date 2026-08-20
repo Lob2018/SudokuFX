@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.model.Player.toString" name="fr.softsf.sudokufx.model.Player.toString">
+<area shape="rect" id="Node000001" title="Returns a string representation of the Player object." alt="" coords="5,72,172,115"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html#ab1ff57d1d8f24d28f42af214053d7025" title="Returns the unique identifier of the menu." alt="" coords="254,5,420,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="170,69,240,50,242,55,171,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#ab95e23590badb3ae2d313fc255e5aebc" title="Returns the unique ID of this Options instance." alt="" coords="254,72,420,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,91,239,91,239,96,172,96"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" title="Returns the unique ID of this PlayerLanguage instance." alt="" coords="220,139,455,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="171,113,242,132,240,137,170,118"/>
+</map>

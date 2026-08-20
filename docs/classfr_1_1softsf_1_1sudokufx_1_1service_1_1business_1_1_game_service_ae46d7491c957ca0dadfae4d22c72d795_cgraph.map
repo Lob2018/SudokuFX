@@ -1,5 +1,25 @@
 <map id="fr.softsf.sudokufx.service.business.GameService.createNewGameWithCurrent" name="fr.softsf.sudokufx.service.business.GameService.createNewGameWithCurrent">
-<area shape="rect" id="Node000001" title="Creates a new game by duplicating the grid of the source game." alt="" coords="5,5,278,48"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838" title="Creates a new GameBuilder for fluent construction." alt="" coords="326,5,492,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,24,310,24,310,29,278,29"/>
+<area shape="rect" id="Node000001" title="Creates a new game by duplicating the grid of the source game." alt="" coords="5,249,278,292"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a0dfe478a7e13d2d35b7f85b1985e6838" title="Creates a new GameBuilder for fluent construction." alt="" coords="369,147,536,189"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,246,325,199,353,190,355,195,327,204,197,251"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service.html#af55389b286eecf51f19cba841606a796" title="Duplicates an existing Grid entity by creating a new record with a generated ID using the fluent buil..." alt="" coords="338,213,567,256"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="278,252,322,247,322,252,278,258"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html#ab33fa674fbd5d36667f5f51583e82110" title="Validates the given object." alt="" coords="651,339,892,381"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="279,287,636,338,636,344,278,293"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html#aec69dc20d643694a70cfa74003161aed" title="Retrieves the GameLevel entity by its business level value." alt="" coords="326,376,579,419"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="197,290,385,367,383,372,195,295"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a2b8e0eb68f7ad02dc47d9b6e996e250a" title="Creates a new GridBuilder for fluent construction of Grid instances." alt="" coords="688,5,855,48"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="562,211,577,199,591,183,597,166,600,130,603,94,611,76,625,58,648,43,673,33,675,38,650,47,629,62,615,78,608,95,605,131,603,167,595,185,581,203,565,215"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad178f4e4a4f286d044c17f7411368300" title="Returns the default grid values." alt="" coords="688,72,855,115"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="558,211,577,199,593,182,600,163,608,143,625,125,648,112,673,103,674,108,650,116,629,129,613,146,605,165,598,184,581,203,561,215"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5bd5ea56ca202e9deb4b7f79059e2e5c" title="Returns the current grid values." alt="" coords="688,139,855,181"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="545,210,626,191,673,180,674,185,628,196,546,215"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a44e8b242ad211cc4e4d0107d2389af4a" title="Returns the percentage of possibilities for this grid." alt="" coords="688,205,855,248"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="567,229,673,226,673,232,568,234"/>
+<area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html#a9e5ef27251e510213d9ab184c5118416" title="Maps a Grid object to a GridDto object." alt="" coords="627,272,916,315"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="568,253,637,266,636,271,567,258"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="529,254,580,279,595,291,605,303,614,314,628,324,640,330,638,335,626,329,610,318,601,306,591,295,578,284,526,259"/>
+<area shape="poly" id="edge11_Node000010_Node000010" title=" " alt="" coords="394,376,392,366,402,357,422,351,452,349,486,352,505,358,504,363,485,357,452,355,423,357,404,361,397,367,399,375"/>
+<area shape="rect" id="Node000011" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html#a871cdd4cb4989a732d251a04267c9a24" title="Retrieves a GameLevel by its numerical level value." alt="" coords="661,405,882,448"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="580,406,646,412,646,418,579,412"/>
 </map>

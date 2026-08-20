@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenHostServicesSet_whenOpenGitHubRepositoryReleaseUrl_thenShowDocumentIsCalled" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenHostServicesSet_whenOpenGitHubRepositoryReleaseUrl_thenShowDocumentIsCalled">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,285,109"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa12944693adf73a87865a6480b557d2f" title="Opens the GitHub repository releases page in the user&#39;s default web browser." alt="" coords="333,5,557,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,52,317,48,318,53,285,57"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a84cabb06e38efe9e6b2ed6a0e8b151fb" title="Injects the non&#45;null HostServices instance provided by the JavaFX application." alt="" coords="350,88,540,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="285,87,334,93,334,98,285,92"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerLanguageServiceUTest.givenNonExistingIso_whenGetByIso_thenThrowsException" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerLanguageServiceUTest.givenNonExistingIso_whenGetByIso_thenThrowsException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,323,89"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html#a635c91d2ffaef346386bec4eeacc88bf" title="Retrieves a PlayerLanguage by its ISO code." alt="" coords="690,5,925,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="323,44,371,41,674,28,674,33,371,47,323,50"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html#af06c3a5460d6cb97e283c3e4169300ed" title="Retrieves a PlayerLanguageDto by ISO code." alt="" coords="371,80,600,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="324,78,355,82,355,87,323,83"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="580,77,697,50,698,55,581,82"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="425,80,423,70,433,61,454,55,485,53,520,56,540,62,538,67,519,61,485,59,455,61,436,65,428,71,431,79"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html#a2a01d08b463cf79247442c4b5974b2ba" title="Maps a PlayerLanguage object to a PlayerLanguageDto object." alt="" coords="648,76,966,119"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="601,97,632,97,632,102,601,103"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html#ab33fa674fbd5d36667f5f51583e82110" title="Validates the given object." alt="" coords="686,143,928,185"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="599,121,680,137,679,142,598,126"/>
+</map>

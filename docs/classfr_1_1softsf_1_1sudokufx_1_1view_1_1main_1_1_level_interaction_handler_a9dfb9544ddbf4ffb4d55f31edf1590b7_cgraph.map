@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.notifyUser" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.notifyUser">
+<area shape="rect" id="Node000001" title="Triggers a notification displaying the current difficulty percentage boundaries." alt="" coords="5,39,228,81"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a5118c47e6bc8b75240c8e2c16131e339" title="Formats and pushes the current difficulty bracket to the notification service." alt="" coords="276,39,556,81"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,57,260,57,260,63,228,63"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a1545a8b5a73d481bc4a48ba8a6cb1b55" title="Requests the removal of the currently displayed toast." alt="" coords="604,5,840,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="556,42,588,39,589,44,557,47"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#ad39fd2086b01dd4531467fb46f3fd271" title="Sends an informational toast." alt="" coords="628,72,816,115"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="557,73,613,79,613,84,556,78"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31" title="Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire even if id..." alt="" coords="888,72,1076,115"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="816,91,873,91,873,96,816,96"/>
+</map>

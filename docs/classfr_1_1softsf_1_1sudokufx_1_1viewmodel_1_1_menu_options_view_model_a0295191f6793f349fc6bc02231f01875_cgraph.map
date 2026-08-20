@@ -1,5 +1,42 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistIfNeededOptionsColor" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyAndPersistIfNeededOptionsColor">
-<area shape="rect" id="Node000001" title="Applies the given color as the background of the specified GridPane." alt="" coords="5,5,267,64"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane)." alt="" coords="315,13,571,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,32,299,32,299,37,267,37"/>
+<area shape="rect" id="Node000001" title="Applies the given color as the background of the specified GridPane." alt="" coords="5,131,267,189"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane)." alt="" coords="315,5,571,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,128,243,92,314,58,332,51,334,56,316,62,245,96,184,132"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a21f04c69326d6540965b85dc026e21f1" title="Returns the currently stored player." alt="" coords="328,72,558,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,129,326,116,327,121,268,134"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a62ff7ab823da335406fbc8600999a979" title="Reloads the current player from the database." alt="" coords="317,139,568,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="267,157,302,157,302,163,267,163"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a8b0b569fe624474d8fbb3765f11e1c00" title="Sends an error toast." alt="" coords="349,205,536,248"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="268,186,335,201,334,206,267,191"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html#a95d1252d2c9e75cfd15d38cba0707398" title="Updates an existing Options entity with the values from the given OptionsDto." alt="" coords="328,439,558,481"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="169,188,411,426,407,430,166,192"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a776dbf8d4bd6db641d84313659051d51" title="Terminates the JavaFX application." alt="" coords="650,48,877,91"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="536,136,570,124,594,112,618,100,640,93,642,98,620,105,596,117,572,129,538,141"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#ae0e635b455827f61c43bf618b7374914" title="Retrieves and validates the first player with a selected game." alt="" coords="649,139,878,181"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="569,157,633,157,633,163,569,163"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="706,139,704,129,713,119,733,114,764,112,797,114,816,121,815,126,796,120,764,117,734,119,716,124,709,130,711,137"/>
+<area shape="rect" id="Node000007" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html#af99d8aaa4f5bd6c0e161a01e6803e9d7" title="Finds the currently selected player along with their selected game and all related associations." alt="" coords="956,131,1190,189"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="879,157,941,157,941,163,879,163"/>
+<area shape="poly" id="edge7_Node000007_Node000007" title=" " alt="" coords="1013,130,1014,120,1025,111,1045,106,1073,104,1105,107,1125,114,1123,119,1104,112,1073,109,1046,111,1028,116,1019,123,1018,131"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31" title="Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire even if id..." alt="" coords="670,205,857,248"/>
+<area shape="poly" id="edge10_Node000008_Node000009" title=" " alt="" coords="537,224,654,224,654,229,537,229"/>
+<area shape="rect" id="Node000011" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html#a2864dc658643933a8475d861036d7221" title="Maps an Options object to a OptionsDto object." alt="" coords="619,272,908,315"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="464,436,529,380,572,350,618,324,632,318,635,323,620,329,575,354,533,384,468,440"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" title="Sets the ARGB hex color after validation." alt="" coords="680,339,847,381"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="495,436,618,391,664,378,666,383,620,396,497,441"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" title="Sets the background image path after validation." alt="" coords="680,405,847,448"/>
+<area shape="poly" id="edge15_Node000010_Node000014" title=" " alt="" coords="558,445,665,434,665,440,558,451"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3a3e5476d5d472fabb5eebf4c4401180" title="Sets whether the background song is muted." alt="" coords="680,472,847,515"/>
+<area shape="poly" id="edge17_Node000010_Node000016" title=" " alt="" coords="558,469,665,480,665,486,558,475"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a8bdb160c34a5be54951f894adc330a5e" title="Sets whether the background image is opaque." alt="" coords="680,539,847,581"/>
+<area shape="poly" id="edge18_Node000010_Node000017" title=" " alt="" coords="497,479,620,524,666,537,664,542,618,529,495,484"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ebfc05d23131bff9114c961a5330766" title="Sets the background song path after validation." alt="" coords="680,605,847,648"/>
+<area shape="poly" id="edge19_Node000010_Node000018" title=" " alt="" coords="468,480,533,536,575,566,620,591,666,608,665,613,618,596,572,570,529,540,464,484"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html#ab33fa674fbd5d36667f5f51583e82110" title="Validates the given object." alt="" coords="643,672,884,715"/>
+<area shape="poly" id="edge21_Node000010_Node000019" title=" " alt="" coords="459,480,484,519,520,567,567,617,620,658,630,663,627,668,618,662,563,620,516,571,479,522,454,483"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format." alt="" coords="989,339,1157,381"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="847,357,973,357,973,363,847,363"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates a file path for non&#45;null and maximum length." alt="" coords="990,505,1156,548"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="848,441,909,457,1011,496,1009,501,908,463,847,446"/>
+<area shape="poly" id="edge20_Node000018_Node000015" title=" " alt="" coords="847,607,908,591,1009,552,1011,557,909,596,848,612"/>
 </map>

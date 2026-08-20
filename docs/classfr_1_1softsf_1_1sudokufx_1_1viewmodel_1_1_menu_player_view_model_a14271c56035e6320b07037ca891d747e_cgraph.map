@@ -4,4 +4,6 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="249,44,281,41,281,46,249,49"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a062c453d8d6794a32f0f8246057d0604" title="Returns the name of the currently selected player." alt="" coords="320,72,548,115"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,71,305,77,304,82,249,76"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a21f04c69326d6540965b85dc026e21f1" title="Returns the currently stored player." alt="" coords="620,72,849,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="549,91,605,91,605,96,549,96"/>
 </map>

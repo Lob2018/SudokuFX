@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.config.os.OsFoldersConfigUTest.givenInvalidOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionThrown" name="fr.softsf.sudokufx.config.os.OsFoldersConfigUTest.givenInvalidOs_whenCreateOsFolderFactory_thenIllegalArgumentExceptionThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,284,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a1a62758379fa51d4ea6ec86caf0e9041" title="Sets the OS to an unsupported value for testing purposes." alt="" coords="332,21,578,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,40,316,40,316,45,284,45"/>
+</map>

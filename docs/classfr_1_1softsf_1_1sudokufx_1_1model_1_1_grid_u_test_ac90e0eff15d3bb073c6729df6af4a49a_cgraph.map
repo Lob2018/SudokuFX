@@ -1,14 +1,17 @@
 <map id="fr.softsf.sudokufx.model.GridUTest.givenNullGridid_whenCreateGrid_thenNullGrididIsHandled" name="fr.softsf.sudokufx.model.GridUTest.givenNullGridid_whenCreateGrid_thenNullGrididIsHandled">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,123,228,197"/>
-<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="69,122,71,112,81,103,96,98,117,96,141,99,156,106,154,111,140,104,116,101,97,103,83,108,76,114,74,123"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad178f4e4a4f286d044c17f7411368300" title="Returns the default grid values." alt="" coords="276,5,442,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,120,274,58,285,52,287,57,277,62,174,124"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4273be2bf866779941f2ba0e0556a8e6" title="Returns the unique identifier of the grid." alt="" coords="276,72,442,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="227,127,263,117,265,122,229,132"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5bd5ea56ca202e9deb4b7f79059e2e5c" title="Returns the current grid values." alt="" coords="276,139,442,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,157,260,157,260,163,228,163"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a44e8b242ad211cc4e4d0107d2389af4a" title="Returns the percentage of possibilities for this grid." alt="" coords="276,205,442,248"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="229,188,265,198,263,203,227,193"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a99a6f288c597675ad756380f2c679e25" title="Returns a string representation of the grid." alt="" coords="276,272,442,315"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="174,196,277,258,287,263,285,268,274,262,171,200"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,180,228,255"/>
+<area shape="poly" id="edge7_Node000001_Node000001" title=" " alt="" coords="69,179,71,169,81,161,96,155,117,153,141,156,156,164,154,168,140,161,116,159,97,160,83,165,76,172,74,180"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#af5ceb9c15f560b7911d984193f2d935a" title="Protected default constructor for JPA." alt="" coords="276,29,442,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="154,178,208,129,274,82,283,77,285,82,277,86,212,133,157,182"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#ad178f4e4a4f286d044c17f7411368300" title="Returns the default grid values." alt="" coords="276,96,442,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="206,177,275,148,288,143,290,147,277,153,208,182"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a4273be2bf866779941f2ba0e0556a8e6" title="Returns the unique identifier of the grid." alt="" coords="276,163,442,205"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="228,199,260,195,260,200,229,205"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a5bd5ea56ca202e9deb4b7f79059e2e5c" title="Returns the current grid values." alt="" coords="276,229,442,272"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="229,230,260,234,260,240,228,235"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a44e8b242ad211cc4e4d0107d2389af4a" title="Returns the percentage of possibilities for this grid." alt="" coords="276,296,442,339"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="208,253,277,282,290,287,288,292,275,286,206,258"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html#a99a6f288c597675ad756380f2c679e25" title="Returns a string representation of the grid." alt="" coords="276,363,442,405"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="157,253,212,301,277,348,285,353,283,358,274,353,208,306,154,257"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="313,29,311,19,319,10,335,5,359,3,385,5,400,11,398,16,383,10,359,8,336,10,322,15,316,21,318,28"/>
 </map>

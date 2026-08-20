@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenViewModelInitialized_whenInit_then81CellsAreCreated" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenViewModelInitialized_whenInit_then81CellsAreCreated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,304,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a934f4d646b09b11a0242b353530ea9f3" title="Returns an unmodifiable list of all cell view models." alt="" coords="352,13,577,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="304,32,336,32,336,37,304,37"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="625,13,843,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="577,32,609,32,609,37,577,37"/>
+</map>

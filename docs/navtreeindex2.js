@@ -1,5 +1,17 @@
 var NAVTREEINDEX2 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a231c75a32e16d525f90a38e75a995f29":[2,0,0,0,0,1,4,1,2,32],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06":[1,0,0,0,0,1,4,1,2,19],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a27aa242e0289c28db22cd6caa98aec06":[2,0,0,0,0,1,4,1,2,19],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a2d5f6ee38f6cfce49848aec5cb18dd45":[1,0,0,0,0,1,4,1,2,50],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a2d5f6ee38f6cfce49848aec5cb18dd45":[2,0,0,0,0,1,4,1,2,50],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a2f9346abf1f71b7335b3b6992311e991":[1,0,0,0,0,1,4,1,2,44],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a2f9346abf1f71b7335b3b6992311e991":[2,0,0,0,0,1,4,1,2,44],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3307d58848c5c2f12ba5f33c2eb6ebb7":[1,0,0,0,0,1,4,1,2,18],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3307d58848c5c2f12ba5f33c2eb6ebb7":[2,0,0,0,0,1,4,1,2,18],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3d7c66638db4adf7fc9a6bee7678bd48":[1,0,0,0,0,1,4,1,2,33],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3d7c66638db4adf7fc9a6bee7678bd48":[2,0,0,0,0,1,4,1,2,33],
+"classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3f17ab078f894717a1f3dfaffed0b987":[1,0,0,0,0,1,4,1,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a3f17ab078f894717a1f3dfaffed0b987":[2,0,0,0,0,1,4,1,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a409da4117c58966b842279006d9546dd":[1,0,0,0,0,1,4,1,2,12],
 "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html#a409da4117c58966b842279006d9546dd":[2,0,0,0,0,1,4,1,2,12],
@@ -237,17 +249,5 @@ var NAVTREEINDEX2 =
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html#aec3635e0f4e7524476001cc97fc10b1b":[2,0,0,0,0,2,6,2],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html":[1,0,0,0,0,2,7],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html":[2,0,0,0,0,2,7],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html#aa5b3325f228a6c9a84e06ac1f722239a":[1,0,0,0,0,2,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html#aa5b3325f228a6c9a84e06ac1f722239a":[2,0,0,0,0,2,7,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html":[1,0,0,0,0,2,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html":[2,0,0,0,0,2,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74":[1,0,0,0,0,2,0,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74":[2,0,0,0,0,2,0,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a7627a508aed1a8ca6a8d81604045fbe0":[1,0,0,0,0,2,0,0,3],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a7627a508aed1a8ca6a8d81604045fbe0":[2,0,0,0,0,2,0,0,3],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a95e551a74c1292b0e82a0b3ce4905e50":[1,0,0,0,0,2,0,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a95e551a74c1292b0e82a0b3ce4905e50":[2,0,0,0,0,2,0,0,2],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aad22b46ef18e07da438ade1fa912e644":[1,0,0,0,0,2,0,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aad22b46ef18e07da438ade1fa912e644":[2,0,0,0,0,2,0,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aade3fbed167a40c3b5ad30c792d07539":[1,0,0,0,0,2,0,0,4]
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html#aa5b3325f228a6c9a84e06ac1f722239a":[1,0,0,0,0,2,7,0]
 };

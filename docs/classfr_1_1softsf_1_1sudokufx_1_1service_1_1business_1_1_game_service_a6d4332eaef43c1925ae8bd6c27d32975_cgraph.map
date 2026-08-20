@@ -1,4 +1,7 @@
 <map id="fr.softsf.sudokufx.service.business.GameService.getGames" name="fr.softsf.sudokufx.service.business.GameService.getGames">
 <area shape="rect" id="Node000001" title="Retrieves all non&#45;selected games for a given player, sorted by update date in descending order." alt="" coords="5,29,235,72"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="76,29,75,19,82,10,97,5,120,3,145,5,159,11,157,16,143,10,120,8,98,10,85,15,80,21,82,28"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="68,29,66,19,75,10,93,5,120,3,150,5,167,11,165,16,148,10,120,8,94,10,78,15,71,21,74,28"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html#a6d7b9f7e713840c246394d5627de5821" title="Retrieves all non&#45;selected games for a specific player." alt="" coords="283,29,507,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,48,267,48,267,53,235,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="343,29,341,19,350,10,368,5,395,3,424,5,442,11,440,16,423,10,395,8,369,10,353,15,346,21,348,28"/>
 </map>

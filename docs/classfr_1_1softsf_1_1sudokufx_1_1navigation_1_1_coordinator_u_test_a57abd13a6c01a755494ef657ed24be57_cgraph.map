@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenPlayerStateHolder_whenGetCurrentPlayerLanguageIso_thenReturnsIsoCode" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenPlayerStateHolder_whenGetCurrentPlayerLanguageIso_thenReturnsIsoCode">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,278,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a808e570a3279653f27ac99618f7ae175" title="Returns the ISO code of the current player&#39;s language." alt="" coords="326,21,590,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="278,40,310,40,310,45,278,45"/>
+</map>

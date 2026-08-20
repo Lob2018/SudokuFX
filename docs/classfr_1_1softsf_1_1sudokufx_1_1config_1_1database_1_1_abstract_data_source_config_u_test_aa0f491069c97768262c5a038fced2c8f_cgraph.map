@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenNullPoolName_whenSetPoolName_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenNullPoolName_whenSetPoolName_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,372,80"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aade3fbed167a40c3b5ad30c792d07539" title=" " alt="" coords="420,21,680,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="372,40,404,40,404,45,372,45"/>
+</map>

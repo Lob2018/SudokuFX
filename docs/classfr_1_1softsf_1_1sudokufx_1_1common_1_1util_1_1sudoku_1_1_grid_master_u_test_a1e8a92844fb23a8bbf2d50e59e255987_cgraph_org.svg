@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenLevel_whenGetIntervalle_thenReturnsCorrectBounds Pages: 1 -->
 <svg width="454pt" height="70pt"
  viewBox="0.00 0.00 454.00 70.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 66)">
+<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 66)">
 <title>fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenLevel_whenGetIntervalle_thenReturnsCorrectBounds</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -44,6 +44,15 @@
 <g id="a_edge2_Node000001_Node000002"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M223.98,-22C231.92,-22 239.92,-22 247.82,-22"/>
 <polygon fill="#63b8ff" stroke="#63b8ff" points="247.8,-25.5 257.8,-22 247.8,-18.5 247.8,-25.5"/>
+</a>
+</g>
+</g>
+<!-- Node2&#45;&gt;Node2 -->
+<g id="edge3_Node000002_Node000002" class="edge">
+<title>Node2&#45;&gt;Node2</title>
+<g id="a_edge3_Node000002_Node000002"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M309.85,-38.44C301.82,-47.58 316.16,-56 352.88,-56 373.24,-56 386.72,-53.41 393.32,-49.54"/>
+<polygon fill="#63b8ff" stroke="#63b8ff" points="396.7,-50.45 395.56,-39.92 389.88,-48.86 396.7,-50.45"/>
 </a>
 </g>
 </g>

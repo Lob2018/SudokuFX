@@ -1,5 +1,17 @@
 var NAVTREEINDEX9 =
 {
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service.html#a4cd8c89b7b2cfdafe52b84389acca745":[2,0,0,0,0,6,2,2,2],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service.html#a84173b9311d5d25ff1739b36071fe075":[1,0,0,0,0,7,2,2,3],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service.html#a84173b9311d5d25ff1739b36071fe075":[2,0,0,0,0,6,2,2,3],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html":[1,0,0,0,0,7,2,3],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html":[2,0,0,0,0,6,2,3],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a5850b983ba979fe0b6e326be135c753a":[1,0,0,0,0,7,2,3,3],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a5850b983ba979fe0b6e326be135c753a":[2,0,0,0,0,6,2,3,3],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a6058e985daece8cd355a8baa515e8c9e":[1,0,0,0,0,7,2,3,0],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a6058e985daece8cd355a8baa515e8c9e":[2,0,0,0,0,6,2,3,0],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a63917cda40d8e3a3c40101e99ab3c13f":[1,0,0,0,0,7,2,3,4],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a63917cda40d8e3a3c40101e99ab3c13f":[2,0,0,0,0,6,2,3,4],
+"classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a679cac643ad756d71ff38a8fc4086128":[1,0,0,0,0,7,2,3,1],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#a679cac643ad756d71ff38a8fc4086128":[2,0,0,0,0,6,2,3,1],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#aed85e533277f8aef32c61f1d66471302":[1,0,0,0,0,7,2,3,2],
 "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html#aed85e533277f8aef32c61f1d66471302":[2,0,0,0,0,6,2,3,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX9 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a270708b3af47043027406367a5f1e8f6":[2,0,0,0,0,7,2,0,2,6,0],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a5dc4f0ce75ad22979f441b56e6c72620":[1,0,0,0,0,8,2,0,2,6,3],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a5dc4f0ce75ad22979f441b56e6c72620":[2,0,0,0,0,7,2,0,2,6,3],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a65d61c5263049912f55db6097ef8ffb3":[1,0,0,0,0,8,2,0,2,6,1],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a65d61c5263049912f55db6097ef8ffb3":[2,0,0,0,0,7,2,0,2,6,1],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a698d8551ad82fb39fcb5f2cbe21f3c1d":[1,0,0,0,0,8,2,0,2,6,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a698d8551ad82fb39fcb5f2cbe21f3c1d":[2,0,0,0,0,7,2,0,2,6,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a9ed0597af005912fad256e6ff793fb18":[1,0,0,0,0,8,2,0,2,6,8],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a9ed0597af005912fad256e6ff793fb18":[2,0,0,0,0,7,2,0,2,6,8],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac1fd10e9874d909603d38318cddeace5":[1,0,0,0,0,8,2,0,2,6,4],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac1fd10e9874d909603d38318cddeace5":[2,0,0,0,0,7,2,0,2,6,4],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac4e1fcc24f4160bfd460aba7f2d6e881":[1,0,0,0,0,8,2,0,2,6,6],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac4e1fcc24f4160bfd460aba7f2d6e881":[2,0,0,0,0,7,2,0,2,6,6],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac9e748ad0b8534d39996752759a71182":[1,0,0,0,0,8,2,0,2,6,9],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ac9e748ad0b8534d39996752759a71182":[2,0,0,0,0,7,2,0,2,6,9],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#ae28676472e877a08b6c8ce95a28a366a":[1,0,0,0,0,8,2,0,2,6,7]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html#a65d61c5263049912f55db6097ef8ffb3":[1,0,0,0,0,8,2,0,2,6,1]
 };

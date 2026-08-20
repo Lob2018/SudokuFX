@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.list.GenericDtoListCell.confirmAndRemoveItem" name="fr.softsf.sudokufx.view.component.list.GenericDtoListCell.confirmAndRemoveItem">
+<area shape="rect" id="Node000001" title="Displays a confirmation dialog and removes the item if the user confirms." alt="" coords="5,5,282,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html#af2c73bce669da16b9288644daa3ea618" title="Creates a styled alert with automatic sizing." alt="" coords="330,5,555,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,24,314,24,314,29,282,29"/>
+</map>

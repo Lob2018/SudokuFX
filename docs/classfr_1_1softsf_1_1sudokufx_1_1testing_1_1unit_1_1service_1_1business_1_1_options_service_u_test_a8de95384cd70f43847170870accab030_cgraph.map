@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.business.OptionsServiceUTest.setUp" name="fr.softsf.sudokufx.testing.unit.service.business.OptionsServiceUTest.setUp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,303,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html#a60fe97948fca4c99755db5755d2afd71" title="Constructs a new OptionsService with the required database, mapping, and validation dependencies." alt="" coords="351,5,580,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,24,335,24,335,29,303,29"/>
+</map>

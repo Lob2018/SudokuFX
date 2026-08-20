@@ -1,6 +1,9 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenSameGameLevel_whenCallingHashCodeMultipleTimes_thenShouldReturnConsistentValues" name="fr.softsf.sudokufx.model.GameLevelUTest.givenSameGameLevel_whenCallingHashCodeMultipleTimes_thenShouldReturnConsistentValues">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,263,104"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="83,28,86,18,96,10,112,5,134,3,161,6,177,13,175,18,159,11,134,8,113,10,98,15,90,21,88,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a6d92da7aee775848259d9afe881c07de" title="Computes the hash code based on all fields." alt="" coords="311,45,477,88"/>
-<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="263,64,295,64,295,69,263,69"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,263,121"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="83,46,86,36,96,27,112,22,134,20,161,23,177,31,175,35,159,28,134,25,113,27,98,32,90,39,88,47"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#abb25b8080161c86b7034a8699aafb75d" title="Protected default constructor for JPA." alt="" coords="311,29,477,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,65,295,61,295,66,264,70"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#a6d92da7aee775848259d9afe881c07de" title="Computes the hash code based on all fields." alt="" coords="311,96,477,139"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="264,98,295,102,295,107,263,103"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="345,29,343,19,351,10,368,5,394,3,421,5,438,11,436,16,420,10,394,8,369,10,354,15,348,21,350,28"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNoHostServicesSet_whenOpenMyWebsiteUrl_thenLogsWarning" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNoHostServicesSet_whenOpenMyWebsiteUrl_thenLogsWarning">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,305,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aaee4522d11b07eeb343f35f3afc4e9b8" title="Opens my website&#39;s page in the user&#39;s default web browser." alt="" coords="353,13,555,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,32,337,32,337,37,305,37"/>
+</map>

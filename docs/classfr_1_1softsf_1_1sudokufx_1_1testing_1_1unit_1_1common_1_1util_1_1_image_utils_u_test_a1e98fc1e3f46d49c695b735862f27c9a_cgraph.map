@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.testing.unit.common.util.ImageUtilsUTest.givenColorInt_whenIntToColor_thenReturnsExpectedColor" name="fr.softsf.sudokufx.testing.unit.common.util.ImageUtilsUTest.givenColorInt_whenIntToColor_thenReturnsExpectedColor">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,304,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html#a43e94e44dab7c598796bc421eecf785f" title="Converts a 32&#45;bit integer color value in the format 0xRRGGBBAA into a JavaFX Color object." alt="" coords="352,13,554,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="304,32,336,32,336,37,304,37"/>
+</map>

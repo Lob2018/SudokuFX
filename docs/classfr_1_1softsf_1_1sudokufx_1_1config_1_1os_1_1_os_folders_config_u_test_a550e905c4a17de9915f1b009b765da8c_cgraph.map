@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.config.os.OsFoldersConfigUTest.givenValidOs_whenCreateOsFolderFactory_thenCorrectPathsReturned" name="fr.softsf.sudokufx.config.os.OsFoldersConfigUTest.givenValidOs_whenCreateOsFolderFactory_thenCorrectPathsReturned">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,89,310,164"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a8a62afde4c18429834fba6b91cbdde67" title="Creates and returns the initialized OS&#45;specific folders." alt="" coords="378,5,601,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,86,357,57,384,50,385,55,358,63,268,91"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a6e5478eda6526c2af2bdebd4d045554a" title="Sets Linux OS and set current paths for testing purposes." alt="" coords="369,72,610,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="310,109,354,104,354,110,310,114"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a8d708ea54b032826ae290c99585af179" title="Sets macOS OS and set current paths for testing purposes." alt="" coords="371,139,608,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,139,356,144,356,149,310,145"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html#a6192022e3bb50ece39ea616c9eb2d214" title="Sets Windows OS and set current paths for testing purposes." alt="" coords="358,205,621,248"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="268,162,358,191,385,198,384,203,357,196,266,167"/>
+</map>

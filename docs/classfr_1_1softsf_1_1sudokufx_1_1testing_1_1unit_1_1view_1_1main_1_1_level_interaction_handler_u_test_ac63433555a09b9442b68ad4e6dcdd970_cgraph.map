@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.testing.unit.view.main.LevelInteractionHandlerUTest.givenUnknownButtonId_thenThrowsException" name="fr.softsf.sudokufx.testing.unit.view.main.LevelInteractionHandlerUTest.givenUnknownButtonId_thenThrowsException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,289,101"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#acc27803017086da63f3b7f9da535815c" title="Records the start of an interaction and initiates the selection cycle." alt="" coords="337,51,565,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,69,321,69,321,75,289,75"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a5790fc56904861e9e5cfc4ce38c2d9a1" title="Resolves a button identifier to its corresponding difficulty level." alt="" coords="618,5,830,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="565,54,602,49,603,54,566,59"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a6a5cd1051229e079639796c50abacd5b" title="Initiates the possibilities increment cycle after resetting the current state." alt="" coords="613,88,835,131"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="566,85,598,89,597,95,565,90"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a470fd386610579e0d2264263eb8e6303" title="Resets the desired possibilities to the default state." alt="" coords="883,88,1141,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="836,107,868,107,868,112,836,112"/>
+</map>

@@ -1,4 +1,6 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlayEffectTests.givenMutedState_whenPlayEffect_thenVolumeIsZero" name="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlayEffectTests.givenMutedState_whenPlayEffect_thenVolumeIsZero">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,306,88"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="97,29,98,19,109,10,128,5,156,3,187,5,206,12,204,17,186,11,155,8,129,10,112,15,103,21,103,29"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="99,29,100,19,110,10,129,5,156,3,186,5,205,13,203,17,185,11,155,8,130,10,113,15,105,21,104,29"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a17857477810faf7ff01baa389f16fc30" title="Mutes all audio (song and effects)." alt="" coords="354,37,541,80"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="306,56,338,56,338,61,306,61"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.HelpViewModel.addWebsiteButton" name="fr.softsf.sudokufx.viewmodel.HelpViewModel.addWebsiteButton">
+<area shape="rect" id="Node000001" title="Adds a &quot;Visit my website&quot; button to the given alert." alt="" coords="5,5,228,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aaee4522d11b07eeb343f35f3afc4e9b8" title="Opens my website&#39;s page in the user&#39;s default web browser." alt="" coords="276,5,478,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,24,260,24,260,29,228,29"/>
+</map>

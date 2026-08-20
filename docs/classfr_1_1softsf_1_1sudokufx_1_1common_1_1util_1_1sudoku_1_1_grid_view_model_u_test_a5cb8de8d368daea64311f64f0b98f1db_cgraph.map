@@ -1,6 +1,19 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenPlayerWithCompletedGrid_whenGridIsComplete_thenToastTriggered" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenPlayerWithCompletedGrid_whenGridIsComplete_thenToastTriggered">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,21,312,80"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="360,29,578,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,48,344,48,344,53,312,53"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="411,29,409,19,418,10,438,5,469,3,502,5,522,11,520,16,501,10,469,8,439,10,421,15,414,21,416,28"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,312,147"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a934f4d646b09b11a0242b353530ea9f3" title="Returns an unmodifiable list of all cell view models." alt="" coords="360,5,585,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,85,381,50,382,55,263,90"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="363,96,582,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="312,115,348,115,348,120,312,120"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="363,163,582,205"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="300,145,354,156,353,162,299,150"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="640,39,858,81"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="586,38,624,42,624,48,585,43"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="420,96,418,86,427,77,445,71,472,69,502,72,520,78,518,83,501,77,472,75,446,77,430,81,423,87,426,95"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="559,160,584,148,598,139,607,129,631,107,672,85,675,90,635,112,611,132,601,143,586,153,561,164"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="634,145,864,188"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="582,174,618,172,618,178,582,180"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="633,236,864,279"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="556,203,652,229,650,234,555,208"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="697,145,695,135,703,126,721,121,749,119,778,121,796,127,794,132,777,126,749,124,722,126,706,131,700,137,702,144"/>
+<area shape="poly" id="edge10_Node000007_Node000007" title=" " alt="" coords="697,236,695,226,703,217,721,211,749,209,778,212,796,218,794,223,777,217,749,215,722,217,706,221,700,227,702,235"/>
 </map>

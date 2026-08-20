@@ -1,0 +1,16 @@
+<map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenValidJdbcUrlAndPoolName_whenHikariDataSourceCreated_thenPropertiesAreSet" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenValidJdbcUrlAndPoolName_whenHikariDataSourceCreated_thenPropertiesAreSet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,147,343,221"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a0ded1fe617d9cc3aea14c69f49b192b1" title=" " alt="" coords="420,5,643,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,144,304,99,390,58,409,51,411,56,392,62,306,104,232,148"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aaaf84f6d2df97bf0d9e668722477d7b3" title=" " alt="" coords="420,72,643,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,143,390,124,421,116,422,122,391,129,317,149"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a95e551a74c1292b0e82a0b3ce4905e50" title="Creates and configures the main HikariDataSource for the application." alt="" coords="391,163,672,205"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="343,181,375,181,375,187,343,187"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a7627a508aed1a8ca6a8d81604045fbe0" title=" " alt="" coords="409,229,654,272"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="344,213,399,223,398,229,343,218"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aade3fbed167a40c3b5ad30c792d07539" title=" " alt="" coords="401,296,662,339"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="249,220,317,252,392,281,414,289,412,294,390,287,315,257,246,224"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="471,163,468,152,479,143,500,138,531,136,566,138,587,145,585,150,565,144,531,141,500,143,481,148,474,154,476,161"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74" title="Configure et retourne un HikariConfig avec les paramètres de connexion et pool." alt="" coords="720,163,991,205"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="672,181,704,181,704,187,672,187"/>
+</map>

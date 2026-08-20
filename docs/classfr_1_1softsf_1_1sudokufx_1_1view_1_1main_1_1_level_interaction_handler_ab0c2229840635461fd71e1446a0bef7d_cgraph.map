@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.finalizeLevelState" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.finalizeLevelState">
+<area shape="rect" id="Node000001" title="Synchronizes ViewModels post&#45;generation." alt="" coords="5,5,209,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a76e3858283a44df2008e93c998e4e37a" title="Updates the selected difficulty level and its associated stars percentage." alt="" coords="257,13,530,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,32,241,32,241,37,209,37"/>
+</map>

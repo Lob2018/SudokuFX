@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenListWithNullElement_whenSetValues_thenIllegalArgumentExceptionIsThrown" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenListWithNullElement_whenSetValues_thenIllegalArgumentExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,358,147"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="406,96,624,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="358,115,390,115,390,120,358,120"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="678,5,897,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="572,93,671,57,693,50,695,55,673,63,574,98"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="672,96,903,139"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="624,115,657,115,657,120,624,120"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="672,187,903,229"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="582,137,708,179,706,184,581,142"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="736,96,734,86,743,77,761,71,788,69,817,72,834,78,833,83,816,77,788,75,762,77,746,81,739,87,742,95"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="736,187,734,177,743,168,761,162,788,160,817,162,834,169,833,174,816,168,788,165,762,167,746,172,739,178,742,185"/>
+</map>

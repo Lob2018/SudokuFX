@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.loadGames" name="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.loadGames">
+<area shape="rect" id="Node000001" title="Loads games into the observable list." alt="" coords="5,51,223,93"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a21f04c69326d6540965b85dc026e21f1" title="Returns the currently stored player." alt="" coords="271,5,500,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="223,51,255,46,255,51,224,56"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service.html#a6d4332eaef43c1925ae8bd6c27d32975" title="Retrieves all non&#45;selected games for a given player, sorted by update date in descending order." alt="" coords="271,96,500,139"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="224,88,255,93,255,98,223,93"/>
+<area shape="poly" id="edge5_Node000003_Node000003" title=" " alt="" coords="334,96,332,86,341,77,359,71,385,69,415,72,432,78,430,83,414,77,385,75,360,77,344,81,337,87,339,95"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html#a6d7b9f7e713840c246394d5627de5821" title="Retrieves all non&#45;selected games for a specific player." alt="" coords="548,96,772,139"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="501,115,533,115,533,120,501,120"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="609,96,606,86,615,77,633,71,660,69,690,72,707,78,705,83,689,77,660,75,634,77,618,81,612,87,614,95"/>
+</map>

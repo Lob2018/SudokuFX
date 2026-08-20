@@ -1,0 +1,12 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenBlankFXMLName_whenSetRootByFXMLName_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenBlankFXMLName_whenSetRootByFXMLName_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,308,155"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a76beb2414cb9e9e68181f08fd930f0b9" title="Loads the specified FXML file, sets it as the root of the current JavaFX scene, and returns its contr..." alt="" coords="356,96,580,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,115,340,115,340,120,308,120"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa63a8ea1cf99200dbee0e27a3ce78060" title="Constructs the coordinator." alt="" coords="643,29,833,72"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="557,93,633,74,635,79,558,98"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a64e23a6257dc42929da8e6ee620fdca7" title="Package&#45;private method to exit the JavaFX platform." alt="" coords="643,96,833,139"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="580,115,627,115,627,120,580,120"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a047fbfb7e3d7b9e30ddeaefbeb3c9a3f" title="Updates the font size of the scene&#39;s root node based on its current dimensions." alt="" coords="628,163,848,205"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="558,137,635,156,633,161,557,142"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="687,29,685,19,694,10,711,5,738,3,768,5,785,12,783,17,766,10,738,8,712,10,697,15,690,21,693,28"/>
+</map>

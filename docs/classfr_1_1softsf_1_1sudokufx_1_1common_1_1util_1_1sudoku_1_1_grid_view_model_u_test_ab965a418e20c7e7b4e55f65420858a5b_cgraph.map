@@ -1,0 +1,16 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenValidValues_whenSetValues_thenAllCellsContainCorrectValues" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenValidValues_whenSetValues_thenAllCellsContainCorrectValues">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,328,113"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="376,29,594,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="328,64,360,61,360,66,328,70"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="376,96,594,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="328,98,360,102,360,107,328,104"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="434,29,431,19,440,10,458,5,485,3,514,5,532,11,530,16,513,10,485,8,459,10,443,15,437,21,439,28"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="648,5,867,48"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="562,93,593,82,641,58,659,51,661,56,643,62,595,86,564,98"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="642,96,873,139"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="594,115,627,115,627,120,594,120"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="642,187,873,229"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="552,137,678,179,676,184,551,142"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="706,96,704,86,713,77,731,71,758,69,787,72,804,78,803,83,786,77,758,75,732,77,716,81,709,87,712,95"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="706,187,704,177,713,168,731,162,758,160,787,162,804,169,803,174,786,168,758,165,732,167,716,172,709,178,712,185"/>
+</map>

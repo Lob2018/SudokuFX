@@ -1,0 +1,15 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest.givenInvalidInput_whenValidatePlayerName_thenStatusIsSetToInvalid" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest.givenInvalidInput_whenValidatePlayerName_thenStatusIsSetToInvalid">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,43,336,101"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a2ff24deabea86a4e6835be70fcb74822" title="Returns the read&#45;only object property for the player name status." alt="" coords="388,5,654,64"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="336,52,372,48,373,53,337,57"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa83825926d155ed03bb69f4eeb9efa23" title="Validates the input player name against formatting and availability constraints." alt="" coords="384,88,659,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="337,87,368,90,368,96,336,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a21f04c69326d6540965b85dc026e21f1" title="Returns the currently stored player." alt="" coords="707,43,936,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="659,86,691,81,692,86,660,91"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#abb7b5c81662bbb92861d17b3645acba4" title="Retrieves and validates all unselected players with a selected game." alt="" coords="707,133,936,176"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="660,128,692,132,691,138,659,133"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="770,133,768,123,776,114,794,109,822,107,851,109,869,115,867,120,850,114,822,112,795,114,779,119,773,125,775,132"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html#af6b4503194f42cbdff1e5e9009fa49a3" title="Finds all unselected players along with their selected game and all related associations." alt="" coords="984,125,1211,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="937,152,969,152,969,157,937,157"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="1044,125,1045,115,1055,106,1072,101,1098,99,1127,101,1144,109,1142,113,1125,107,1097,104,1073,106,1057,111,1050,117,1049,125"/>
+</map>

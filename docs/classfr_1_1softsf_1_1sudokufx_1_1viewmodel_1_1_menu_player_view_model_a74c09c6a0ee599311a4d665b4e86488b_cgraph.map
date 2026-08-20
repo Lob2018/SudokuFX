@@ -1,5 +1,10 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.createFormattedAndConcatenatedBinding" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.createFormattedAndConcatenatedBinding">
-<area shape="rect" id="Node000001" title="Creates a localized binding combining a formatted message and suffix." alt="" coords="5,5,259,64"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a062c453d8d6794a32f0f8246057d0604" title="Returns the name of the currently selected player." alt="" coords="307,13,535,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,32,291,32,291,37,259,37"/>
+<area shape="rect" id="Node000001" title="Creates a localized binding combining a formatted message and suffix." alt="" coords="5,55,259,113"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a5a9479f5c94f6822692a70db6102aac3" title="Returns the property holding the current player for JavaFX bindings." alt="" coords="307,29,564,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,67,291,64,292,69,259,73"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a062c453d8d6794a32f0f8246057d0604" title="Returns the name of the currently selected player." alt="" coords="321,96,550,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="259,95,306,100,305,106,259,101"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="381,29,379,19,388,10,407,5,435,3,467,5,485,11,483,16,465,10,435,8,408,10,390,15,384,21,386,28"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a21f04c69326d6540965b85dc026e21f1" title="Returns the currently stored player." alt="" coords="612,96,841,139"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="550,115,596,115,596,120,550,120"/>
 </map>

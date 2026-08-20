@@ -1,6 +1,9 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenConstructedGameLevel_whenTryingToAccessLevelidSetter_thenShouldNotExist" name="fr.softsf.sudokufx.model.GameLevelUTest.givenConstructedGameLevel_whenTryingToAccessLevelidSetter_thenShouldNotExist">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,301,104"/>
-<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="98,28,102,18,112,10,129,5,153,3,182,6,199,13,197,18,180,11,153,8,130,10,115,15,106,21,103,30"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ae96ae3832695c27c80bbd4be0604e8f5" title="Returns the unique identifier of this game level." alt="" coords="349,45,515,88"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,64,333,64,333,69,301,69"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,301,121"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="98,45,102,36,112,27,129,22,153,20,182,23,199,31,197,36,180,28,153,25,130,27,115,32,106,39,103,47"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#abb25b8080161c86b7034a8699aafb75d" title="Protected default constructor for JPA." alt="" coords="349,29,515,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,64,333,60,334,65,302,69"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html#ae96ae3832695c27c80bbd4be0604e8f5" title="Returns the unique identifier of this game level." alt="" coords="349,96,515,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="302,99,334,103,333,108,301,104"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="379,29,377,19,386,10,404,5,432,3,462,5,480,11,478,16,461,10,432,8,405,10,389,15,383,21,385,28"/>
 </map>

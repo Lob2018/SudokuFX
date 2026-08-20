@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenDifficultLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenDifficultLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,260,97"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ab95eb242497ba2febdde84bda3d62bf1" title="Returns the user&#39;s desired completion percentage (0&#45;100)." alt="" coords="327,5,574,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,44,311,39,312,44,260,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a96368d8212ad04d19b4cb11e06c3e839" title="Increments the starting point of the difficulty bracket cyclically." alt="" coords="308,72,593,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,71,292,74,292,79,260,76"/>
+</map>

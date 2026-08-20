@@ -1,17 +1,20 @@
 <map id="fr.softsf.sudokufx.service.business.PlayerService.deletePlayer" name="fr.softsf.sudokufx.service.business.PlayerService.deletePlayer">
-<area shape="rect" id="Node000001" title="Deletes a player entity and ensures the system remains in a valid state." alt="" coords="5,105,235,148"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a697b2c1beaa343f3fb9ad3a3c4f3d220" title="Returns the name of the player." alt="" coords="318,5,484,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="169,102,282,57,303,51,304,56,284,63,171,107"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a14eea5e4e2fcee41313fe89f00b4249e" title="Returns the unique ID of the player." alt="" coords="318,72,484,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,110,302,102,303,108,236,116"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad53401e6c11eb0dbb7558bed4aef41f6" title="Returns whether the player is selected." alt="" coords="318,139,484,181"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="236,138,303,146,302,151,235,143"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#aba49426ee6f1106aeb7cac16ebd06e91" title="Internal utility to update player selection state and persist changes." alt="" coords="283,205,519,248"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="171,146,284,191,304,198,303,203,282,196,169,151"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ade99f107878b74490ae3d014ff294f60" title="Sets the selection flag." alt="" coords="567,172,733,215"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="519,208,551,204,552,209,520,213"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="567,239,733,281"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="520,240,552,244,551,249,519,245"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="781,239,951,281"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="734,257,765,257,765,263,734,263"/>
+<area shape="rect" id="Node000001" title="Deletes a player entity and ensures the system remains in a valid state." alt="" coords="5,163,235,205"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html#a8cd8be0e08565e4d3c5924c578c2f14d" title="Finds a player by their exact name." alt="" coords="303,29,499,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,160,209,121,282,82,297,75,299,80,284,86,212,125,152,164"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a697b2c1beaa343f3fb9ad3a3c4f3d220" title="Returns the name of the player." alt="" coords="318,96,484,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="212,159,302,138,303,143,213,165"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a14eea5e4e2fcee41313fe89f00b4249e" title="Returns the unique ID of the player." alt="" coords="318,163,484,205"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="235,181,302,181,302,187,235,187"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ad53401e6c11eb0dbb7558bed4aef41f6" title="Returns whether the player is selected." alt="" coords="318,229,484,272"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="213,203,303,225,302,230,212,209"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html#aba49426ee6f1106aeb7cac16ebd06e91" title="Internal utility to update player selection state and persist changes." alt="" coords="283,296,519,339"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="152,204,212,243,284,282,299,288,297,293,282,286,209,247,149,208"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="354,29,352,19,360,10,376,5,401,3,427,5,443,11,441,16,426,10,401,8,377,10,363,15,357,21,359,28"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#ade99f107878b74490ae3d014ff294f60" title="Sets the selection flag." alt="" coords="567,263,733,305"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="519,299,551,295,552,300,520,304"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="567,329,733,372"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="520,331,552,335,551,340,519,336"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="781,329,951,372"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="734,348,765,348,765,353,734,353"/>
 </map>

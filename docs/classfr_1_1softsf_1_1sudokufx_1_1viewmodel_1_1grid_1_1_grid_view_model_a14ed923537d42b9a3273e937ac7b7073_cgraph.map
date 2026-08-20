@@ -1,9 +1,11 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.updateSolveProgress" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.updateSolveProgress">
-<area shape="rect" id="Node000001" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="5,75,243,117"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="291,29,522,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,74,276,69,276,74,244,80"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="291,120,522,163"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="244,112,275,118,275,123,243,118"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="353,29,351,19,360,10,379,5,406,3,437,5,455,11,453,16,436,10,406,8,379,10,363,15,356,21,359,28"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="353,120,351,110,360,101,379,95,406,93,437,96,455,102,453,107,436,101,406,99,379,101,363,105,356,111,359,119"/>
+<area shape="rect" id="Node000001" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="5,120,243,163"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="311,29,542,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,117,290,81,317,74,318,79,291,87,185,122"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="311,120,542,163"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="243,139,295,139,295,144,243,144"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a1d2b83dfdebc0615c30d21ca2cfceaf8" title="Sets the value of the percentage property." alt="" coords="291,187,562,229"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="224,161,312,180,311,185,223,166"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="370,29,368,19,377,10,397,5,426,3,459,5,478,11,476,16,458,10,426,8,397,10,380,15,373,21,375,28"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="370,120,368,110,377,101,397,95,426,93,459,96,478,102,476,107,458,101,426,99,397,101,380,105,373,111,375,119"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.OptionsUTest.EqualsAndHashCodeTests.givenOptionsAndNull_whenComparingEquality_thenTheyAreNotEqual" name="fr.softsf.sudokufx.model.OptionsUTest.EqualsAndHashCodeTests.givenOptionsAndNull_whenComparingEquality_thenTheyAreNotEqual">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,286,88"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a5fa4145bbd83c86dd0f943e766276ad7" title="Protected default constructor for JPA." alt="" coords="334,29,500,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,48,318,48,318,53,286,53"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="366,29,364,19,372,10,390,5,417,3,446,5,464,12,462,17,445,10,417,8,391,10,375,15,369,21,371,28"/>
+</map>

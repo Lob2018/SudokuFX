@@ -1,15 +1,19 @@
 <map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,155,329,213"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ac72224355686637ba51642da36977f30" title="Returns the column index of the cell." alt="" coords="377,5,595,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,152,286,105,376,58,391,51,393,56,378,62,288,109,213,156"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#acf79518ead769fe5c4e43d481bec2057" title="Returns the unique identifier of the cell." alt="" coords="377,72,595,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="272,151,393,117,394,122,273,157"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="377,163,595,205"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="329,181,361,181,361,187,329,187"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a7979457170088291407aa39b10908cae" title="Returns the row index of the cell." alt="" coords="377,229,595,272"/>
-<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="311,211,366,223,365,228,310,217"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="377,320,595,363"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="230,212,428,310,425,315,227,216"/>
-<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="426,163,424,152,434,143,455,138,486,136,520,138,540,145,539,150,519,144,486,141,455,143,436,148,429,154,431,161"/>
-<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="426,320,424,310,434,301,455,295,486,293,520,296,540,302,539,307,519,301,486,299,455,301,436,305,429,311,431,319"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,176,329,235"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a934f4d646b09b11a0242b353530ea9f3" title="Returns an unmodifiable list of all cell view models." alt="" coords="377,5,602,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,173,279,115,326,85,375,58,389,52,391,56,378,62,329,89,282,120,205,178"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ac72224355686637ba51642da36977f30" title="Returns the column index of the cell." alt="" coords="380,72,598,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="243,173,376,124,397,117,399,122,378,129,244,178"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#acf79518ead769fe5c4e43d481bec2057" title="Returns the unique identifier of the cell." alt="" coords="380,139,598,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="329,180,364,175,365,180,329,185"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="380,229,598,272"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="329,225,365,231,364,236,329,231"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a7979457170088291407aa39b10908cae" title="Returns the row index of the cell." alt="" coords="380,296,598,339"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="244,233,378,281,399,288,397,293,376,287,243,238"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="380,387,598,429"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="209,233,286,288,378,348,430,377,428,382,375,353,283,293,206,237"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="650,5,868,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="602,24,634,24,634,29,602,29"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="439,229,437,219,445,210,463,205,489,203,519,205,536,212,534,217,517,210,489,208,464,210,448,215,442,221,444,228"/>
+<area shape="poly" id="edge9_Node000008_Node000008" title=" " alt="" coords="439,387,437,377,445,368,463,362,489,360,519,363,536,369,534,374,517,368,489,365,464,367,448,372,442,378,444,385"/>
 </map>

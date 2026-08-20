@@ -1,25 +1,33 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applySolveModeState" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applySolveModeState">
-<area shape="rect" id="Node000001" title="Synchronizes the grid state during manual solving." alt="" coords="5,153,246,196"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="580,29,810,72"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,151,207,97,248,71,293,51,361,34,431,27,500,26,564,29,564,34,500,31,432,32,362,40,295,56,251,75,211,102,149,155"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="586,211,804,253"/>
-<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="173,194,230,217,294,235,365,244,436,247,570,243,570,248,436,253,364,249,293,240,228,222,171,199"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="586,301,804,344"/>
-<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="165,194,225,225,295,253,364,273,436,288,570,309,569,314,435,294,363,278,293,259,223,230,163,199"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="579,120,810,163"/>
-<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="246,165,563,146,564,152,246,170"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="299,183,526,225"/>
-<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="246,184,284,188,283,194,246,190"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14ed923537d42b9a3273e937ac7b7073" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="294,65,531,108"/>
-<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="197,150,326,110,327,115,199,155"/>
-<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="642,29,640,19,648,10,667,5,695,3,725,5,743,11,741,16,724,10,695,8,668,10,651,15,645,21,647,28"/>
-<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="642,211,640,201,648,192,667,186,695,184,725,186,743,193,741,198,724,192,695,189,668,191,651,196,645,202,647,209"/>
-<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="642,301,640,291,648,282,667,277,695,275,725,277,743,283,741,288,724,282,695,280,668,282,651,287,645,293,647,300"/>
-<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="642,120,640,110,648,101,667,95,695,93,725,96,743,102,741,107,724,101,695,99,668,101,651,105,645,111,647,119"/>
-<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="443,180,529,118,553,98,578,82,591,76,593,81,580,86,556,103,533,122,446,184"/>
-<area shape="poly" id="edge11_Node000006_Node000003" title=" " alt="" coords="526,213,570,217,570,222,526,218"/>
-<area shape="poly" id="edge12_Node000006_Node000004" title=" " alt="" coords="466,223,629,293,627,298,464,228"/>
-<area shape="poly" id="edge13_Node000006_Node000005" title=" " alt="" coords="511,179,580,164,581,169,512,185"/>
-<area shape="poly" id="edge15_Node000007_Node000002" title=" " alt="" coords="531,69,564,65,565,70,532,74"/>
-<area shape="poly" id="edge16_Node000007_Node000005" title=" " alt="" coords="527,106,567,114,566,119,526,111"/>
+<area shape="rect" id="Node000001" title="Synchronizes the grid state during manual solving." alt="" coords="5,253,246,296"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="600,120,830,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,251,208,198,248,171,293,151,366,132,442,123,516,120,584,123,584,128,516,126,442,128,367,137,295,156,251,176,211,202,149,255"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="606,29,824,72"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="141,251,202,184,245,147,292,118,366,89,443,69,520,56,590,50,590,55,520,62,445,74,368,94,295,122,248,152,206,188,145,255"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="606,211,824,253"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="246,263,590,238,590,244,246,269"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="599,301,830,344"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="173,294,230,317,294,335,368,344,443,346,583,339,583,344,443,352,367,349,293,340,228,322,171,299"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="299,165,526,208"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="197,250,326,210,327,215,199,255"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a0eb10ea687d03a7106c18ecb81bdd4fb" title="Sends a warning toast." alt="" coords="317,400,508,443"/>
+<area shape="poly" id="edge14_Node000001_Node000007" title=" " alt="" coords="158,294,219,336,295,379,325,392,323,397,292,384,217,341,155,299"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a3565addca908da04490f8a19865ba8a1" title="Stops and disposes the song player." alt="" coords="319,467,506,509"/>
+<area shape="poly" id="edge16_Node000001_Node000009" title=" " alt="" coords="143,295,168,330,203,372,246,416,295,452,306,459,304,463,292,457,243,420,199,376,164,333,139,298"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a14ed923537d42b9a3273e937ac7b7073" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="294,283,531,325"/>
+<area shape="poly" id="edge17_Node000001_Node000010" title=" " alt="" coords="246,284,279,288,278,293,246,290"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="658,120,656,110,665,101,685,95,715,93,747,96,766,102,765,107,746,101,715,99,686,101,668,105,661,111,663,119"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="658,29,656,19,665,10,685,5,715,3,747,5,766,11,765,16,746,10,715,8,686,10,668,15,661,21,663,28"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="658,211,656,201,665,191,685,186,715,184,747,186,766,193,765,198,746,192,715,189,686,191,668,196,661,202,663,209"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="658,301,656,291,665,282,685,277,715,275,747,277,766,283,765,288,746,282,715,280,686,282,668,287,661,293,663,300"/>
+<area shape="poly" id="edge10_Node000006_Node000002" title=" " alt="" coords="526,167,584,158,585,163,527,172"/>
+<area shape="poly" id="edge11_Node000006_Node000003" title=" " alt="" coords="441,163,502,121,578,82,596,75,597,80,580,86,505,126,444,167"/>
+<area shape="poly" id="edge12_Node000006_Node000004" title=" " alt="" coords="527,201,591,211,590,216,526,206"/>
+<area shape="poly" id="edge13_Node000006_Node000005" title=" " alt="" coords="459,206,580,263,648,293,646,297,578,268,457,211"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31" title="Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire even if id..." alt="" coords="621,435,808,477"/>
+<area shape="poly" id="edge15_Node000007_Node000008" title=" " alt="" coords="508,430,606,441,605,446,508,435"/>
+<area shape="poly" id="edge18_Node000010_Node000002" title=" " alt="" coords="445,280,529,218,552,194,562,183,578,172,589,167,591,172,580,177,566,187,556,197,533,222,448,284"/>
+<area shape="poly" id="edge19_Node000010_Node000005" title=" " alt="" coords="531,309,584,312,583,317,531,314"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a1d2b83dfdebc0615c30d21ca2cfceaf8" title="Sets the value of the percentage property." alt="" coords="579,368,850,411"/>
+<area shape="poly" id="edge20_Node000010_Node000011" title=" " alt="" coords="481,323,580,353,608,361,606,366,578,359,479,328"/>
 </map>

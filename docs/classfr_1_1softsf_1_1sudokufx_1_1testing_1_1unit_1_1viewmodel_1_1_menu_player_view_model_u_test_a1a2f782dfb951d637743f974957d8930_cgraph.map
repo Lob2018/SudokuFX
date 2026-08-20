@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest.givenViewModel_whenInitialized_thenPlayersLoadedAndBindingsNotNull" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuPlayerViewModelUTest.givenViewModel_whenInitialized_thenPlayersLoadedAndBindingsNotNull">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,219,355,277"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aca9b0ca160159d7c96f67d5a19062e99" title="Returns the reactive binding for the cell confirmation message property." alt="" coords="410,29,662,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="217,216,299,157,349,126,401,98,414,92,416,97,404,102,352,130,302,162,220,220"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a5f84e0be598369a963f9bb1c92742748" title="Returns the reactive binding for the edit tooltip property." alt="" coords="403,136,669,179"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="296,216,402,188,432,180,433,186,403,193,297,221"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aae474a3cd1a79843b3162b9ac692ac90" title="Returns the observable list of players." alt="" coords="426,227,646,269"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="355,245,411,245,411,251,355,251"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#abff199bd6c33225ab11ee0e568096c69" title="Returns the reactive binding for the new player text property." alt="" coords="408,317,664,360"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="299,275,435,310,434,316,297,281"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#ad3daf2b1a845c26ceb77e25c328b1da6" title="Returns the reactive binding for the player accessible text property." alt="" coords="407,408,664,467"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="234,275,404,370,460,398,458,403,401,374,232,280"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="467,29,469,19,481,10,504,5,536,3,573,5,596,13,594,18,572,11,536,8,504,10,483,15,473,21,473,29"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="470,136,467,126,478,117,501,111,536,109,574,112,596,118,595,123,573,117,536,115,502,117,480,122,472,127,475,135"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="470,227,467,216,478,207,501,202,536,200,574,202,596,209,595,214,573,208,536,205,502,207,480,212,472,218,475,225"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="470,318,467,307,478,298,501,293,536,291,574,293,596,299,595,305,573,298,536,296,502,298,480,303,472,309,475,316"/>
+<area shape="poly" id="edge10_Node000006_Node000006" title=" " alt="" coords="467,407,469,397,481,389,504,383,536,381,573,384,596,391,594,396,572,389,536,387,504,389,483,394,473,400,473,408"/>
+</map>

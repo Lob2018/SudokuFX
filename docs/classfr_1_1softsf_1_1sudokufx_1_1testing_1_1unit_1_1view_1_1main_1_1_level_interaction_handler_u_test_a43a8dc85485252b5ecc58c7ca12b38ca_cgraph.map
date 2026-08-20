@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.testing.unit.view.main.LevelInteractionHandlerUTest.givenInteraction_whenStopCycleCalled_thenInterrupts" name="fr.softsf.sudokufx.testing.unit.view.main.LevelInteractionHandlerUTest.givenInteraction_whenStopCycleCalled_thenInterrupts">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,76,295,135"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#acc27803017086da63f3b7f9da535815c" title="Records the start of an interaction and initiates the selection cycle." alt="" coords="343,51,571,93"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,87,327,83,328,89,295,92"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a7eb7f50c63069224b08a9431648c6ee1" title="Explicitly interrupts the interaction cycle." alt="" coords="346,117,568,160"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="295,118,331,122,330,128,295,124"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a5790fc56904861e9e5cfc4ce38c2d9a1" title="Resolves a button identifier to its corresponding difficulty level." alt="" coords="624,5,836,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="571,54,608,49,609,54,572,59"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a6a5cd1051229e079639796c50abacd5b" title="Initiates the possibilities increment cycle after resetting the current state." alt="" coords="619,88,841,131"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="572,85,604,89,603,95,571,90"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a470fd386610579e0d2264263eb8e6303" title="Resets the desired possibilities to the default state." alt="" coords="889,88,1147,131"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="842,107,874,107,874,112,842,112"/>
+</map>

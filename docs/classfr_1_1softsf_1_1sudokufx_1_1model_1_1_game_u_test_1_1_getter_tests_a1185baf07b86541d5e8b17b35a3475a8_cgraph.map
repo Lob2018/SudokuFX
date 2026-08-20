@@ -1,4 +1,6 @@
 <map id="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingIsSelected_thenIsSelectedIsReturned" name="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingIsSelected_thenIsSelectedIsReturned">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,239,104"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="76,28,78,18,87,10,102,5,122,3,146,5,161,13,158,18,144,11,122,8,103,10,90,15,83,21,81,30"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="73,28,76,18,85,10,101,5,122,3,147,5,163,13,161,18,146,11,122,8,102,10,88,15,80,21,78,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a45e9d6ccd85aa60f95f02d7b04b0840c" title="Returns whether the game is currently selected." alt="" coords="287,45,453,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="239,64,271,64,271,69,239,69"/>
 </map>

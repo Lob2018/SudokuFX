@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.stopAudioOnExitInitialization" name="fr.softsf.sudokufx.view.main.MainView.stopAudioOnExitInitialization">
+<area shape="rect" id="Node000001" title="Registers a listener on the primary stage to stop all audio when the application window is closed." alt="" coords="5,5,254,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#adb1622801b20f32a92754950bd80fa4b" title="Stops and disposes all audio resources." alt="" coords="302,5,489,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,24,286,24,286,29,254,29"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html#a3565addca908da04490f8a19865ba8a1" title="Stops and disposes the song player." alt="" coords="537,5,724,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="490,24,521,24,521,29,490,29"/>
+</map>

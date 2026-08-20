@@ -4,4 +4,6 @@
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,54,271,49,272,54,234,59"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#a6a5cd1051229e079639796c50abacd5b" title="Initiates the possibilities increment cycle after resetting the current state." alt="" coords="282,88,504,131"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="234,85,267,89,266,95,234,90"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a470fd386610579e0d2264263eb8e6303" title="Resets the desired possibilities to the default state." alt="" coords="552,88,809,131"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="504,107,537,107,537,112,504,112"/>
 </map>

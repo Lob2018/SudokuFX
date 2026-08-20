@@ -1,10 +1,13 @@
 <map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenNullPlayerlanguageid_whenCreatePlayerLanguage_thenNullPlayerlanguageidIsHandled" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenNullPlayerlanguageid_whenCreatePlayerLanguage_thenNullPlayerlanguageidIsHandled">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,56,351,131"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="112,55,116,45,129,36,149,31,178,29,213,32,234,40,232,45,212,38,178,35,150,36,131,41,120,48,117,57"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a70c763e120718f9286c4d476b6b7c968" title="Returns the ISO code of this PlayerLanguage." alt="" coords="433,5,600,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="351,57,417,43,418,49,352,62"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" title="Returns the unique ID of this PlayerLanguage instance." alt="" coords="399,72,634,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="351,91,383,91,383,96,351,96"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a411e4ad4b3b7e244697e7dd912d24c02" title="Returns a string representation of the PlayerLanguage object." alt="" coords="433,139,600,181"/>
-<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="352,125,418,138,417,143,351,130"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,113,351,188"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="112,112,116,102,129,94,149,89,178,87,213,90,234,97,232,102,212,95,178,92,150,94,131,99,120,105,117,114"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#abb2cd634e710dbff3cbbbe61f587c86e" title="Protected default constructor for JPA." alt="" coords="411,29,622,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,110,398,81,423,74,424,79,399,87,304,115"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a70c763e120718f9286c4d476b6b7c968" title="Returns the ISO code of this PlayerLanguage." alt="" coords="433,96,600,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="351,131,417,124,418,130,351,136"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a504091d9041e68b49d6cc940d472257a" title="Returns the unique ID of this PlayerLanguage instance." alt="" coords="399,163,634,205"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="351,165,383,168,383,174,351,170"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html#a411e4ad4b3b7e244697e7dd912d24c02" title="Returns a string representation of the PlayerLanguage object." alt="" coords="433,229,600,272"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="304,186,399,215,424,222,423,227,398,220,302,191"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="453,29,451,19,461,10,483,5,516,3,552,5,574,11,572,16,552,10,516,8,484,10,464,15,456,21,458,28"/>
 </map>

@@ -1,18 +1,22 @@
 <map id="fr.softsf.sudokufx.service.business.OptionsService.updateOptions" name="fr.softsf.sudokufx.service.business.OptionsService.updateOptions">
-<area shape="rect" id="Node000001" title="Updates an existing Options entity with the values from the given OptionsDto." alt="" coords="5,139,235,181"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" title="Sets the ARGB hex color after validation." alt="" coords="283,5,449,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,136,211,98,281,58,292,52,294,57,284,62,214,102,155,140"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" title="Sets the background image path after validation." alt="" coords="283,72,449,115"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="201,136,269,117,271,122,202,141"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3a3e5476d5d472fabb5eebf4c4401180" title="Sets whether the background song is muted." alt="" coords="283,139,449,181"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="235,157,267,157,267,163,235,163"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a8bdb160c34a5be54951f894adc330a5e" title="Sets whether the background image is opaque." alt="" coords="283,205,449,248"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="202,179,271,198,269,203,201,184"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ebfc05d23131bff9114c961a5330766" title="Sets the background song path after validation." alt="" coords="283,272,449,315"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="155,180,214,218,284,258,294,263,292,268,281,262,211,222,152,184"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format." alt="" coords="497,5,664,48"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="449,24,481,24,481,29,449,29"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates a file path for non&#45;null and maximum length." alt="" coords="498,172,664,215"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="424,113,450,124,527,162,524,167,448,129,422,118"/>
-<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="422,269,448,258,524,220,527,225,450,262,424,274"/>
+<area shape="rect" id="Node000001" title="Updates an existing Options entity with the values from the given OptionsDto." alt="" coords="5,205,235,248"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html#a2864dc658643933a8475d861036d7221" title="Maps an Options object to a OptionsDto object." alt="" coords="283,5,572,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,203,192,131,234,91,281,58,292,52,294,57,284,62,237,95,196,135,138,207"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a65e4a7ebacda96b9714e3304b1428d44" title="Sets the ARGB hex color after validation." alt="" coords="344,72,510,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,203,208,163,282,124,329,109,330,114,284,129,211,167,152,207"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#aa67cb5a4cf0752e3788b1eab3c747288" title="Sets the background image path after validation." alt="" coords="344,139,510,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="221,202,328,179,329,184,222,207"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3a3e5476d5d472fabb5eebf4c4401180" title="Sets whether the background song is muted." alt="" coords="344,205,510,248"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="235,224,328,224,328,229,235,229"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a8bdb160c34a5be54951f894adc330a5e" title="Sets whether the background image is opaque." alt="" coords="344,272,510,315"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="222,246,329,269,328,275,221,251"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a3ebfc05d23131bff9114c961a5330766" title="Sets the background song path after validation." alt="" coords="344,339,510,381"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="152,246,211,286,284,324,330,340,329,345,282,329,208,291,149,251"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html#ab33fa674fbd5d36667f5f51583e82110" title="Validates the given object." alt="" coords="307,405,548,448"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="138,247,196,319,237,358,284,391,294,396,292,401,281,396,234,362,192,322,134,250"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format." alt="" coords="620,72,787,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="511,91,604,91,604,96,511,96"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates a file path for non&#45;null and maximum length." alt="" coords="620,239,787,281"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="512,173,573,191,654,228,651,233,571,196,510,178"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="510,342,571,324,651,287,654,292,573,329,512,347"/>
 </map>

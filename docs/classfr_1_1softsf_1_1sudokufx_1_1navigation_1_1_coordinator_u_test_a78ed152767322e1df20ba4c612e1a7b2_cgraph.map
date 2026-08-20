@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNoHostServicesSet_whenOpenLocalFile_thenLogsWarning" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNoHostServicesSet_whenOpenLocalFile_thenLogsWarning">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,275,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a7e592956d7481906fc0c8c8e81ae83f3" title="Opens the given local file in the user&#39;s default web browser." alt="" coords="323,13,513,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,32,307,32,307,37,275,37"/>
+</map>

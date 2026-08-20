@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.testing.e2e.common.util.DynamicFontSizeChangeE2ETest.givenStageResized_whenUpdateFontSize_thenFontSizeAdjustedCorrectly" name="fr.softsf.sudokufx.testing.e2e.common.util.DynamicFontSizeChangeE2ETest.givenStageResized_whenUpdateFontSize_thenFontSizeAdjustedCorrectly">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,347,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html#a6775be885b61c16dabfb7428c7d56520" title="Returns the read&#45;only property of the current font size." alt="" coords="395,13,665,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="347,32,379,32,379,37,347,37"/>
+</map>

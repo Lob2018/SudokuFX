@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSolveViewModelUTest.percentageProperty_shouldHaveInitialValue_100_and_setterShouldWork" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSolveViewModelUTest.percentageProperty_shouldHaveInitialValue_100_and_setterShouldWork">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,332,105"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a1d2b83dfdebc0615c30d21ca2cfceaf8" title="Sets the value of the percentage property." alt="" coords="380,5,651,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="331,50,364,46,365,51,332,55"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#a78b4baf86c366546548f10a4ade5fa62" title="Returns the integer property for the solve percentage." alt="" coords="390,96,641,155"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,97,375,103,374,108,331,102"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="448,95,450,85,462,77,484,71,515,69,552,72,574,79,572,84,551,77,515,75,485,77,464,82,454,88,454,96"/>
+</map>

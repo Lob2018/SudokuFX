@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenPercentageValue_whenSetPercentage_thenPercentagePropertyIsUpdated" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenPercentageValue_whenSetPercentage_thenPercentagePropertyIsUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,47,330,121"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a17bb2d9ba7687f5656310dbd8ddf3297" title="Returns the property representing the stars completion percentage." alt="" coords="378,29,643,72"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="330,66,362,62,362,68,330,71"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#aaea368c610137ee814199d290c6d4202" title="Sets the stars completion percentage." alt="" coords="392,96,628,139"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="330,97,377,102,376,107,330,102"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="447,29,444,19,455,10,477,5,510,3,547,5,569,11,567,17,546,10,510,8,478,10,457,15,449,21,452,28"/>
+</map>

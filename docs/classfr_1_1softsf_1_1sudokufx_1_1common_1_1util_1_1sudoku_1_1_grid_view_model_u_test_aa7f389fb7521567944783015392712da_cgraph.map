@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenLevel_whenNotifyLevelPossibilityBounds_thenToasterServiceIsCalled" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenLevel_whenNotifyLevelPossibilityBounds_thenToasterServiceIsCalled">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,254,97"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a96368d8212ad04d19b4cb11e06c3e839" title="Increments the starting point of the difficulty bracket cyclically." alt="" coords="302,5,587,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,44,286,41,287,46,254,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html#a5118c47e6bc8b75240c8e2c16131e339" title="Formats and pushes the current difficulty bracket to the notification service." alt="" coords="304,72,584,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,71,289,74,288,79,254,76"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a1545a8b5a73d481bc4a48ba8a6cb1b55" title="Requests the removal of the currently displayed toast." alt="" coords="635,39,871,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="585,76,619,72,620,77,585,81"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#ad39fd2086b01dd4531467fb46f3fd271" title="Sends an informational toast." alt="" coords="660,105,847,148"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="585,106,644,112,644,118,585,111"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html#a694f9f20c4e9d986f83989fb454c3a31" title="Publishes a ToastData to toastRequest, resetting it to null first to ensure listeners fire even if id..." alt="" coords="919,105,1107,148"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="847,124,904,124,904,129,847,129"/>
+</map>

@@ -10,12 +10,15 @@
 <area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="222,368,284,368,284,373,222,373"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#a71605f1cde24d333d9e5cb4b445c274c" title="Returns the property for the currently selected player." alt="" coords="288,416,532,475"/>
 <area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="223,395,277,409,276,414,221,401"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#a649020523675d71d2bdf3040a1aa0c13" title="Configures a ListView to update the provided Property only upon explicit user confirmation." alt="" coords="277,499,543,557"/>
-<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="149,398,204,442,271,484,283,490,280,495,268,489,201,447,145,402"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="302,581,518,640"/>
-<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="132,399,155,437,186,483,226,528,271,567,289,577,286,582,268,572,222,532,182,486,151,440,128,402"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#a649020523675d71d2bdf3040a1aa0c13" title="Configures a ListView to update the provided Property only upon explicit user confirmation." alt="" coords="277,499,543,557"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="149,398,204,442,271,484,283,490,280,495,268,489,201,447,145,402"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="302,581,518,640"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="132,399,155,437,186,483,226,528,271,567,289,577,286,582,268,572,222,532,182,486,151,440,128,402"/>
 <area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="352,29,353,19,364,10,383,5,410,3,441,5,460,13,458,17,440,11,410,8,384,10,367,15,358,21,358,29"/>
 <area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="352,135,353,125,364,117,383,111,410,109,441,112,460,119,458,124,440,117,410,115,384,117,367,121,358,128,358,136"/>
 <area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="352,242,353,232,364,223,383,218,410,216,441,219,460,226,458,231,440,224,410,221,384,223,367,228,358,235,358,243"/>
 <area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="354,349,352,339,361,330,381,325,410,323,442,325,460,331,459,336,441,330,410,328,382,330,364,335,357,341,360,348"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#a5a9479f5c94f6822692a70db6102aac3" title="Returns the property holding the current player for JavaFX bindings." alt="" coords="598,424,855,467"/>
+<area shape="poly" id="edge10_Node000006_Node000007" title=" " alt="" coords="533,443,582,443,582,448,533,448"/>
+<area shape="poly" id="edge11_Node000007_Node000007" title=" " alt="" coords="668,424,665,414,675,405,696,399,727,397,761,400,781,406,779,411,760,405,727,403,696,405,678,409,670,415,673,423"/>
 </map>

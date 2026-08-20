@@ -2,4 +2,6 @@
 <area shape="rect" id="Node000001" title="Creates and configures a daemon thread to finalize level synchronization." alt="" coords="5,5,247,64"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html#ab0c2229840635461fd71e1446a0bef7d" title="Synchronizes ViewModels post&#45;generation." alt="" coords="295,5,498,64"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,32,279,32,279,37,247,37"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html#a76e3858283a44df2008e93c998e4e37a" title="Updates the selected difficulty level and its associated stars percentage." alt="" coords="546,13,819,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="498,32,530,32,530,37,498,37"/>
 </map>

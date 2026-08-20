@@ -1,4 +1,6 @@
 <map id="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingGameId_thenGameIdIsReturned" name="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingGameId_thenGameIdIsReturned">
 <area shape="rect" id="Node000001" title=" " alt="" coords="5,29,279,104"/>
-<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="88,28,91,18,102,10,119,5,142,3,170,6,187,13,185,18,169,11,142,8,120,10,104,15,96,21,93,30"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="89,28,92,18,103,10,119,5,142,3,170,6,187,13,184,18,168,11,142,8,120,10,105,15,97,21,94,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html#a39eab33459e7da99e902a0ea83b1d77e" title="Returns the unique ID of the game." alt="" coords="327,45,493,88"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,64,311,64,311,69,279,69"/>
 </map>
