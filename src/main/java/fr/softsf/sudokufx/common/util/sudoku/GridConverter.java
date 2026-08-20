@@ -41,7 +41,7 @@ public final class GridConverter implements IGridConverter {
     private static final int TOTAL_CELLS = 81;
     private static final int MAXIMUM_GRID_VALUE_LENGTH = TOTAL_CELLS * 10;
     private static final String GRID_ARRAY_MUST_NOT_BE_NULL = "Grid array must not be null";
-    public static final int SUDOKU_RENDER_CAPACITY = 37;
+    public static final int SUDOKU_RENDER_CAPACITY = 38;
 
     @Override
     public String listToGridValue(List<String> values) {
