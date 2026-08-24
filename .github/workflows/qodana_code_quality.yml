@@ -37,5 +37,6 @@ jobs:
           pr-mode: false
           push-fixes: pull-request
           cache-default-branch-only: true
+          upload-result: true
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN }}
