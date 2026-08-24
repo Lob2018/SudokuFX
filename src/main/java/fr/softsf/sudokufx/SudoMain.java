@@ -58,7 +58,6 @@ public class SudoMain extends Application {
     private static final long MINIMUM_TRANSITION_DELAY_MS = 500L;
     private final SpringContext context = new SpringContext(this);
     private ISplashScreenView iSplashScreenView;
-    private IMainView iMainView;
 
     @SuppressFBWarnings(
             value = {"EI_EXPOSE_REP2", "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"},
@@ -247,7 +246,7 @@ public class SudoMain extends Application {
         PauseTransition pause = new PauseTransition(Duration.millis(minimumTimelapse));
         pause.setOnFinished(
                 e -> {
-                    iMainView = coordinator.setRootByFXMLName(fxmlName);
+                    IMainView iMainView = coordinator.setRootByFXMLName(fxmlName);
                     iMainView.openingMainStage(iSplashScreenView);
                 });
         return pause;
