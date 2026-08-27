@@ -33,6 +33,7 @@ abstract class AbstractDataSourceConfig {
 
     private String jdbcUrl;
     private String poolName;
+    private IKeystore ikeystore;
 
     public void setJdbcUrl(String jdbcUrl) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
@@ -67,6 +68,7 @@ abstract class AbstractDataSourceConfig {
                     "The iOsFolderFactory must not be null");
         }
         iKeystore.setupApplicationKeystore();
+        this.ikeystore = iKeystore;
         return new HikariDataSource(getHikariConfig(iKeystore));
     }
 
@@ -93,7 +95,8 @@ abstract class AbstractDataSourceConfig {
     }
 
     /**
-     * Configures Flyway database migration tool.
+     * Configures Flyway database migration tool, runs migrations, validates the database state, and
+     * enforces the keystore password update if needed.
      *
      * @param hikariDataSource Data source used by Flyway; must not be null (can be a proxy-wrapped
      *     instance)
@@ -113,6 +116,9 @@ abstract class AbstractDataSourceConfig {
                         .load();
         flyway.migrate();
         validateDatabaseState(hikariDataSource);
+        ikeystore.enforceKeystorePasswordIfNeeded();
+        // TODO TO REMOVE AND IMPLEMENT a FIELD WITH A BUTTON - CASE SENSITIVE !!!
+        //        ikeystore.migrateKeystore("System username to export", true);
         return flyway;
     }
 

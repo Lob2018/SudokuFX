@@ -23,7 +23,7 @@
  * \subsection Use Case Diagrams
  * \image html https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/uml/uc/uc.png
  * \subsection activity-diagram-for-invalid-authorization Activity diagram for invalid authorization
- * \image html https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/uml/activity/keystore.invalid.authorization.png
+ * \image html https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/uml/activity/keystore-password-resolution-and-flyway-error-handling.png
  *
  * \section Merise
  * \subsection MCD

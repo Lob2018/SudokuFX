@@ -9,6 +9,9 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
@@ -22,6 +25,7 @@ import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.commons.lang3.ObjectUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -29,6 +33,7 @@ import org.springframework.stereotype.Component;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 import fr.softsf.sudokufx.config.os.IOsFolder;
+import fr.softsf.sudokufx.config.os.OSSecureStore;
 
 /**
  * Manages the application's keystore for secure storage of a symmetric key and database
@@ -38,21 +43,17 @@ import fr.softsf.sudokufx.config.os.IOsFolder;
 public final class ApplicationKeystore implements IKeystore {
 
     private static final Logger LOG = LoggerFactory.getLogger(ApplicationKeystore.class);
-
-    private static final String KEYSTORE_PASSWORD_FROM_UUID =
-            String.valueOf(
-                    UUID.nameUUIDFromBytes(
-                            System.getProperty("user.name").getBytes(StandardCharsets.UTF_8)));
     private static final String KEYSTORE_TYPE = "pkcs12";
-    private static final char[] PWD_ARRAY = KEYSTORE_PASSWORD_FROM_UUID.toCharArray();
     private static final String SYMMETRIC_KEY_ALIAS = "db-encryption-secret";
     private static final String USERNAME_ALIAS = "db-user-alias";
     private static final String PASS_ALIAS = "db-pass-alias";
     private static final String KEYSTORE_FILE_PATH = "/SudokuFXKeyStore.p12";
     private static final String AES_ALGORITHM = "AES";
     private static final int AES_KEY_SIZE_BITS = 256;
+    private final char[] pwdArray;
     private final GenerateSecret generateSecret;
     private final IOsFolder iOsFolder;
+    private final OSSecureStore oSSecureStore;
     private String keystoreFilePath;
     private KeyStore ks;
     private IEncryptionService iEncryptionService;
@@ -68,10 +69,11 @@ public final class ApplicationKeystore implements IKeystore {
      *
      * @param iOsFolder the OS-specific folder utility for locating the keystore file
      * @param generateSecret the service used to generate secure secrets for credentials
-     * @throws IllegalArgumentException if {@code iOsFolder} or {@code generateSecret} is {@code
-     *     null}
+     * @throws IllegalArgumentException if {@code iOsFolder} or {@code generateSecret} or {@code
+     *     oSSecureStore} is {@code null}
      */
-    public ApplicationKeystore(IOsFolder iOsFolder, GenerateSecret generateSecret) {
+    public ApplicationKeystore(
+            IOsFolder iOsFolder, GenerateSecret generateSecret, OSSecureStore oSSecureStore) {
         if (Objects.isNull(iOsFolder)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The iOsFolderFactory must not be null");
@@ -80,8 +82,34 @@ public final class ApplicationKeystore implements IKeystore {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The generateSecret must not be null");
         }
+        if (Objects.isNull(oSSecureStore)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The oSSecureStore must not be null");
+        }
         this.iOsFolder = iOsFolder;
         this.generateSecret = generateSecret;
+        this.oSSecureStore = oSSecureStore;
+        this.pwdArray = resolvePwdArray();
+    }
+
+    /**
+     * Resolves a password character array derived from the secure store or system username.
+     *
+     * <p>Retrieves the source string from the secure store, falling back to the system username if
+     * blank, and generates a deterministic UUID character array from it.
+     *
+     * @return the generated UUID password as a character array
+     * @throws IllegalArgumentException if the resolved password source is blank or null
+     */
+    private char[] resolvePwdArray() {
+        String source = oSSecureStore.getCredentialPassword();
+        if (StringUtils.isBlank(source)) {
+            source = System.getProperty("user.name");
+        }
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                source, "Password source must not be null or blank");
+        return String.valueOf(UUID.nameUUIDFromBytes(source.getBytes(StandardCharsets.UTF_8)))
+                .toCharArray();
     }
 
     /**
@@ -96,7 +124,7 @@ public final class ApplicationKeystore implements IKeystore {
             justification =
                     "Wide catch is intentional for cryptographic and keystore operations; providers"
                             + " may throw unexpected RuntimeExceptions.")
-    private static void writeTheKeystore(final KeyStore ks, final String keystoreFileName) {
+    private void writeTheKeystore(final KeyStore ks, final String keystoreFileName) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 keystoreFileName,
                 "keystoreFileName must not be null or blank, but was " + keystoreFileName);
@@ -104,12 +132,12 @@ public final class ApplicationKeystore implements IKeystore {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The keystore must not be null");
         }
-        if (ObjectUtils.isEmpty(ApplicationKeystore.PWD_ARRAY)) {
+        if (ObjectUtils.isEmpty(pwdArray)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The pwdArray must not be null or empty");
         }
         try (FileOutputStream fos = new FileOutputStream(keystoreFileName)) {
-            ks.store(fos, ApplicationKeystore.PWD_ARRAY);
+            ks.store(fos, pwdArray);
         } catch (Exception e) {
             LOG.error("██ Exception catch inside writeTheKeystore/fos : {}", e.getMessage(), e);
         }
@@ -141,8 +169,8 @@ public final class ApplicationKeystore implements IKeystore {
     /** Create or update the Keystore */
     private void createOrUpdateKeystore() {
         try (FileOutputStream fos = new FileOutputStream(keystoreFilePath, true)) {
-            ks.load(null, PWD_ARRAY);
-            ks.store(fos, PWD_ARRAY);
+            ks.load(null, pwdArray);
+            ks.store(fos, pwdArray);
         } catch (IOException
                 | NoSuchAlgorithmException
                 | CertificateException
@@ -159,7 +187,7 @@ public final class ApplicationKeystore implements IKeystore {
                             + " operations may throw unexpected RuntimeExceptions.")
     private void loadKeyStore() {
         try (FileInputStream fileInputStream = new FileInputStream(keystoreFilePath)) {
-            ks.load(fileInputStream, PWD_ARRAY);
+            ks.load(fileInputStream, pwdArray);
         } catch (Exception e) {
             LOG.error(
                     "██ Exception catch inside loadKeyStore() - JVM doesn't support type OR"
@@ -192,8 +220,7 @@ public final class ApplicationKeystore implements IKeystore {
             KeyStore.SecretKeyEntry entry =
                     (KeyStore.SecretKeyEntry)
                             ks.getEntry(
-                                    SYMMETRIC_KEY_ALIAS,
-                                    new KeyStore.PasswordProtection(PWD_ARRAY));
+                                    SYMMETRIC_KEY_ALIAS, new KeyStore.PasswordProtection(pwdArray));
             if (entry != null) {
                 iEncryptionService = new SecretKeyEncryptionServiceAESGCM(entry.getSecretKey());
             }
@@ -257,11 +284,15 @@ public final class ApplicationKeystore implements IKeystore {
             String secret =
                     switch (alias) {
                         case USERNAME_ALIAS -> {
-                            username = generateSecret.generatePassaySecret();
+                            if (Objects.isNull(username)) {
+                                username = generateSecret.generatePassaySecret();
+                            }
                             yield iEncryptionService.encrypt(username);
                         }
                         case PASS_ALIAS -> {
-                            password = generateSecret.generatePassaySecret();
+                            if (Objects.isNull(password)) {
+                                password = generateSecret.generatePassaySecret();
+                            }
                             yield iEncryptionService.encrypt(password);
                         }
                         default -> {
@@ -293,7 +324,7 @@ public final class ApplicationKeystore implements IKeystore {
                             + " decryption routines may throw unexpected RuntimeExceptions.")
     private void getCredentials(final String alias) {
         try {
-            KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(PWD_ARRAY));
+            KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(pwdArray));
             if (entry instanceof KeyStore.SecretKeyEntry secretEntry) {
                 byte[] keyBytes = secretEntry.getSecretKey().getEncoded();
                 String value =
@@ -338,7 +369,7 @@ public final class ApplicationKeystore implements IKeystore {
                     "SecretKey must not be null");
         }
         KeyStore.SecretKeyEntry secret = new KeyStore.SecretKeyEntry(secretKey);
-        KeyStore.ProtectionParameter entryPassword = new KeyStore.PasswordProtection(PWD_ARRAY);
+        KeyStore.ProtectionParameter entryPassword = new KeyStore.PasswordProtection(pwdArray);
         try {
             ks.setEntry(alias, secret, entryPassword);
         } catch (KeyStoreException e) {
@@ -349,6 +380,126 @@ public final class ApplicationKeystore implements IKeystore {
                     e);
         }
         writeTheKeystore(ks, keystoreFilePath);
+    }
+
+    @Override
+    public void enforceKeystorePasswordIfNeeded() {
+        if (oSSecureStore.isSystemUsernamePassword()) {
+            LOG.info("\n▓▓ Enforcing keystore password replacement");
+            String strongPassword = generateSecret.generatePassaySecret();
+            migrateKeystore(strongPassword, false);
+            oSSecureStore.saveCredential(strongPassword);
+            LOG.info("\n▓▓ Keystore password successfully enforced and overwritten");
+        }
+    }
+
+    @Override
+    public void migrateKeystore(final String newPassword, final boolean isMigrationFile) {
+        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                newPassword,
+                "The newUserNameInput must not be null or empty, but was " + newPassword);
+        if (Objects.isNull(keystoreFilePath)) {
+            keystoreFilePath = iOsFolder.getOsDataFolderPath() + KEYSTORE_FILE_PATH;
+        }
+        Path path = Paths.get(keystoreFilePath);
+        if (Files.exists(path)) {
+            try {
+                KeyStore tempKs = KeyStore.getInstance(KEYSTORE_TYPE);
+                try (FileInputStream fis = new FileInputStream(path.toFile())) {
+                    tempKs.load(fis, pwdArray);
+                }
+                char[] migrationPwdArray =
+                        String.valueOf(
+                                        UUID.nameUUIDFromBytes(
+                                                newPassword.getBytes(StandardCharsets.UTF_8)))
+                                .toCharArray();
+                KeyStore migrationKs = KeyStore.getInstance(KEYSTORE_TYPE);
+                migrationKs.load(null, migrationPwdArray);
+                copyKeystoreEntries(tempKs, migrationKs, migrationPwdArray);
+                Path targetPath;
+                if (isMigrationFile) {
+                    javafx.stage.FileChooser fileChooser = new javafx.stage.FileChooser();
+                    fileChooser.setTitle("Save Migration Keystore");
+                    fileChooser.setInitialFileName("SudokuFXKeyStore.p12.migration");
+                    fileChooser
+                            .getExtensionFilters()
+                            .add(
+                                    new javafx.stage.FileChooser.ExtensionFilter(
+                                            "Migration Files", "*.migration"));
+                    java.io.File selectedFile = fileChooser.showSaveDialog(null);
+                    if (Objects.isNull(selectedFile)) {
+                        LOG.warn("▓▓ Keystore migration cancelled by user");
+                        return;
+                    }
+                    targetPath = selectedFile.toPath();
+                    if (!targetPath.getFileName().toString().endsWith(".migration")) {
+                        targetPath = targetPath.resolveSibling("SudokuFXKeyStore.p12.migration");
+                    }
+                } else {
+                    targetPath = Paths.get(keystoreFilePath);
+                }
+                try (FileOutputStream fos = new FileOutputStream(targetPath.toFile())) {
+                    migrationKs.store(fos, migrationPwdArray);
+                }
+                LOG.info("▓▓ Keystore migration successfully generated at: {}", targetPath);
+            } catch (KeyStoreException
+                    | IOException
+                    | NoSuchAlgorithmException
+                    | CertificateException
+                    | UnrecoverableEntryException e) {
+                LOG.error("██ Exception catch inside migrateKeystore() : {}", e.getMessage(), e);
+            }
+        }
+    }
+
+    /**
+     * Copies required entries from the source keystore to the migration keystore.
+     *
+     * @param sourceKs the source keystore
+     * @param targetKs the target migration keystore
+     * @param targetPwd the target protection password
+     */
+    private void copyKeystoreEntries(
+            final KeyStore sourceKs, final KeyStore targetKs, final char[] targetPwd)
+            throws UnrecoverableEntryException, KeyStoreException, NoSuchAlgorithmException {
+        copySingleEntry(sourceKs, targetKs, targetPwd, SYMMETRIC_KEY_ALIAS);
+        copySingleEntry(sourceKs, targetKs, targetPwd, USERNAME_ALIAS);
+        copySingleEntry(sourceKs, targetKs, targetPwd, PASS_ALIAS);
+    }
+
+    /**
+     * Copies a single entry by alias from source to target keystore if present.
+     *
+     * @param sourceKs the source keystore
+     * @param targetKs the target migration keystore
+     * @param targetPwd the target protection password
+     * @param alias the entry alias
+     */
+    private void copySingleEntry(
+            final KeyStore sourceKs,
+            final KeyStore targetKs,
+            final char[] targetPwd,
+            final String alias)
+            throws KeyStoreException, UnrecoverableEntryException, NoSuchAlgorithmException {
+        if (Objects.isNull(sourceKs)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The sourceKs must not be null");
+        }
+        if (Objects.isNull(targetKs)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The targetKs must not be null");
+        }
+        if (ObjectUtils.isEmpty(targetPwd)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The targetPwd must not be null or empty");
+        }
+        if (sourceKs.containsAlias(alias)) {
+            KeyStore.Entry entry =
+                    sourceKs.getEntry(alias, new KeyStore.PasswordProtection(pwdArray));
+            if (entry != null) {
+                targetKs.setEntry(alias, entry, new KeyStore.PasswordProtection(targetPwd));
+            }
+        }
     }
 
     @Override

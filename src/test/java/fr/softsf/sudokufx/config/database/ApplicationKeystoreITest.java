@@ -13,6 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import fr.softsf.sudokufx.SudoMain;
 import fr.softsf.sudokufx.config.os.IOsFolder;
+import fr.softsf.sudokufx.config.os.OSSecureStore;
 import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -29,22 +30,24 @@ class ApplicationKeystoreITest {
     void setupMocks() {
         IOsFolder iCurrentIOsFolder = spy(new OsFoldersConfig().iOsFolderFactory());
         GenerateSecret generateSecret = spy(new GenerateSecret());
+        OSSecureStore oSSecureStore = spy(new OSSecureStore());
         doReturn(tempDir.toString()).when(iCurrentIOsFolder).getOsDataFolderPath();
         doReturn("fixedUsernameSecret")
                 .doReturn("fixedPasswordSecret")
                 .when(generateSecret)
                 .generatePassaySecret();
-        keystore = new ApplicationKeystore(iCurrentIOsFolder, generateSecret);
+        keystore = new ApplicationKeystore(iCurrentIOsFolder, generateSecret, oSSecureStore);
     }
 
     @Test
     void givenNullIOsFolderFactory_whenConstruct_thenThrowIllegalArgumentException() {
         GenerateSecret generateSecret = new GenerateSecret();
+        OSSecureStore oSSecureStore = new OSSecureStore();
         IllegalArgumentException ex =
                 assertThrows(
                         IllegalArgumentException.class,
                         () -> {
-                            new ApplicationKeystore(null, generateSecret);
+                            new ApplicationKeystore(null, generateSecret, oSSecureStore);
                         });
         assertEquals("The iOsFolderFactory must not be null", ex.getMessage());
     }
@@ -52,13 +55,27 @@ class ApplicationKeystoreITest {
     @Test
     void givenNullGenerateSecret_whenConstruct_thenThrowIllegalArgumentException() {
         IOsFolder iOsFolder = new OsFoldersConfig().iOsFolderFactory();
+        OSSecureStore oSSecureStore = new OSSecureStore();
         IllegalArgumentException ex =
                 assertThrows(
                         IllegalArgumentException.class,
                         () -> {
-                            new ApplicationKeystore(iOsFolder, null);
+                            new ApplicationKeystore(iOsFolder, null, oSSecureStore);
                         });
         assertEquals("The generateSecret must not be null", ex.getMessage());
+    }
+
+    @Test
+    void givenNullOSSecureStore_whenConstruct_thenThrowIllegalArgumentException() {
+        IOsFolder iOsFolder = new OsFoldersConfig().iOsFolderFactory();
+        GenerateSecret generateSecret = new GenerateSecret();
+        IllegalArgumentException ex =
+                assertThrows(
+                        IllegalArgumentException.class,
+                        () -> {
+                            new ApplicationKeystore(iOsFolder, generateSecret, null);
+                        });
+        assertEquals("The oSSecureStore must not be null", ex.getMessage());
     }
 
     @Test

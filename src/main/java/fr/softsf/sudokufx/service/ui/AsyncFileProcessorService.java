@@ -105,7 +105,7 @@ public class AsyncFileProcessorService {
 
             @Override
             protected void cancelled() {
-                LOG.info("██ fileProcessingTask's task cancelled for file: {}", file.getName());
+                LOG.info("▓▓ fileProcessingTask's task cancelled for file: {}", file.getName());
             }
 
             @Override

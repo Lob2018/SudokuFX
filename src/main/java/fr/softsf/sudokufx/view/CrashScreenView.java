@@ -5,7 +5,9 @@
  */
 package fr.softsf.sudokufx.view;
 
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardCopyOption;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.Objects;
@@ -41,6 +43,7 @@ import fr.softsf.sudokufx.common.util.LocalUserDataPurger;
 import fr.softsf.sudokufx.common.util.PathValidator;
 import fr.softsf.sudokufx.config.JVMApplicationProperties;
 import fr.softsf.sudokufx.config.os.IOsFolder;
+import fr.softsf.sudokufx.config.os.OSSecureStore;
 import fr.softsf.sudokufx.config.os.OsFoldersConfig;
 
 import static fr.softsf.sudokufx.common.enums.AppPaths.LOGO_SUDO_PNG_PATH;
@@ -83,6 +86,7 @@ public final class CrashScreenView implements IMainView {
     @FXML private Label crashscreenvboxCenterhboxLabel2;
     @FXML private Button buttonClose;
     @FXML private Button buttonReset;
+    @FXML private Button buttonMigrate;
     @FXML private Label crashscreenvboxBottomhboxYearlabel;
     @FXML private Label crashscreenvboxBottomhboxVersionlabel;
     private double crashScreenFontSize;
@@ -98,9 +102,44 @@ public final class CrashScreenView implements IMainView {
         Platform.exit();
     }
 
+    /** Handles the migration action triggered by the user from the crash screen. */
+    @FXML
+    @SuppressFBWarnings(
+            value = "UPM_UNCALLED_PRIVATE_METHOD",
+            justification = "Invoked by FXML loader via reflection for UI event handling.")
+    private void migrateButtonClick() {
+        LOG.info("▓▓▓▓ The user chose to migrate the application data");
+        try {
+            final boolean cleared = new OSSecureStore().deleteCredential();
+            if (cleared) {
+                LOG.info("▓▓▓▓ Secure credential successfully cleared");
+            } else {
+                LOG.warn("▓▓▓▓ Secure credential could not be cleared or did not exist");
+            }
+            final Path migrationFile =
+                    Path.of(
+                            OS_FOLDER_PROVIDER.getOsDataFolderPath(),
+                            "SudokuFXKeyStore.p12.migration");
+            final Path targetFile =
+                    Path.of(OS_FOLDER_PROVIDER.getOsDataFolderPath(), "SudokuFXKeyStore.p12");
+            if (Files.exists(migrationFile)) {
+                Files.move(migrationFile, targetFile, StandardCopyOption.REPLACE_EXISTING);
+                LOG.info("▓▓▓▓ Migration file successfully applied");
+                Files.deleteIfExists(migrationFile);
+                LOG.info("▓▓▓▓ Migration source file successfully deleted");
+            } else {
+                LOG.warn("▓▓▓▓ Migration file not found");
+            }
+        } catch (final Exception e) {
+            LOG.error("▓▓▓▓ Error during migration process", e);
+        }
+        hidecrashscreen();
+        Platform.exit();
+    }
+
     /**
-     * Handles the reset button click event. Validates the path before attempting recursive deletion
-     * of the application data directory.
+     * Handles the reset button click event. Clears secure credentials and validates the path before
+     * attempting recursive deletion of the application data directory.
      */
     @FXML
     @SuppressFBWarnings(
@@ -108,6 +147,12 @@ public final class CrashScreenView implements IMainView {
             justification = "Invoked by FXML loader via reflection for UI event handling.")
     private void resetButtonClick() {
         LOG.info("▓▓▓▓ The user choose to reset the application data");
+        final boolean cleared = new OSSecureStore().deleteCredential();
+        if (cleared) {
+            LOG.info("▓▓▓▓ Secure credential successfully cleared");
+        } else {
+            LOG.warn("▓▓▓▓ Secure credential could not be cleared or did not exist");
+        }
         final Path pathToDelete = Path.of(OS_FOLDER_PROVIDER.getOsDataFolderPath());
         PathValidator.INSTANCE.validateDirectory(pathToDelete);
         if (DATA_PURGER.deleteDataFolderRecursively(pathToDelete)) {
@@ -187,6 +232,7 @@ public final class CrashScreenView implements IMainView {
         crashscreenvboxCenterhboxLabel2.setTextFill(crashDefaultFontColor);
         buttonReset.setText(I18n.INSTANCE.getValue("crashscreen.reset"));
         buttonClose.setText(I18n.INSTANCE.getValue("crashscreen.close"));
+        buttonMigrate.setText(I18n.INSTANCE.getValue("crashscreen.migrate"));
         crashscreenvboxCenterhboxHbox.setSpacing(crashScreenFontSize);
         crashscreenvboxBottomhboxYearlabel.setText(
                 String.valueOf(LocalDateTime.now(ZoneId.systemDefault()).getYear()));

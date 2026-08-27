@@ -24,4 +24,19 @@ sealed interface IKeystore permits ApplicationKeystore {
      * @return The database password
      */
     String getPassword();
+
+    /**
+     * Migrates the keystore by generating a new file encrypted with the specified new password.
+     *
+     * @param newPassword the new password used to encrypt the keystore; must not be null or empty
+     * @param isMigrationFile true to prompt for a custom location to save the `.migration` file,
+     *     false to overwrite the keystore
+     */
+    void migrateKeystore(final String newPassword, final boolean isMigrationFile);
+
+    /**
+     * Replaces the system username fallback in the OS secure store with a strong generated password
+     * and overwrites the underlying keystore file, if applicable.
+     */
+    void enforceKeystorePasswordIfNeeded();
 }
