@@ -28,15 +28,16 @@ class GenerateSecretUTest {
 
     @Test
     void givenPassayGenerator_whenGeneratePassaySecret_thenSecretIsValid() {
-        String secret = generateSecret.generatePassaySecret();
+        char[] secret = generateSecret.generatePassaySecret();
         assertTrue(
-                secret.length() >= 24 && secret.length() <= 32,
+                secret.length >= 24 && secret.length <= 32,
                 "Le secret doit avoir une longueur comprise entre 24 et 32. Actuelle : "
-                        + secret.length());
+                        + secret.length);
         Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
         assertTrue(
                 MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
-                "Generated secret should be valid according to secretPattern: " + secret);
+                "Generated secret should be valid according to secretPattern: "
+                        + String.valueOf(secret));
     }
 
     @Test
@@ -56,7 +57,7 @@ class GenerateSecretUTest {
 
         for (String secret : invalidSecrets) {
             assertFalse(
-                    MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
+                    MyRegex.INSTANCE.isValidatedByRegex(secret.toCharArray(), secretPattern),
                     "Secret should be invalid: " + secret);
         }
     }

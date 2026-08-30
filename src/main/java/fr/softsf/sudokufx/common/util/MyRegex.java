@@ -5,6 +5,7 @@
  */
 package fr.softsf.sudokufx.common.util;
 
+import java.nio.CharBuffer;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
@@ -92,15 +93,43 @@ public enum MyRegex {
     }
 
     /**
-     * Validates the given text against the specified regex pattern. If {@code pattern} equals the
-     * internal secret pattern, a stricter password validation is performed via {@link
-     * #isValidPassword(String)}.
+     * Validates the given character array against the specified regex pattern. Utilizes a character
+     * array to ensure **memory security** for sensitive data by avoiding String pool persistence.
+     * If {@code pattern} equals the internal secret pattern, a stricter password validation is
+     * performed.
      *
-     * @param text the text to validate; must not be {@code null} or blank
+     * @param text the character array to validate; must not be {@code null}, empty or blank
      * @param pattern the regex pattern to validate against; must not be {@code null}
      * @return {@code true} if the text matches the pattern or meets password criteria; {@code
      *     false} otherwise
-     * @throws IllegalArgumentException if {@code text} is blank or {@code pattern} is {@code null}
+     * @throws IllegalArgumentException if {@code text} is {@code null}, empty, blank, or if {@code
+     *     pattern} is {@code null}
+     */
+    public boolean isValidatedByRegex(final char[] text, final Pattern pattern) {
+        if (text == null
+                || text.length == 0
+                || CharBuffer.wrap(text).chars().allMatch(Character::isWhitespace)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The text to validate must not be null, empty or blank");
+        }
+        if (Objects.isNull(pattern)) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "The pattern must not be null");
+        }
+        if (pattern.pattern().equals(SECRET_PATTERN.pattern())) {
+            return isValidPassword(text);
+        }
+        return pattern.matcher(CharBuffer.wrap(text)).matches();
+    }
+
+    /**
+     * Validates the given string against the specified regex pattern.
+     *
+     * @param text the string to validate; must not be {@code null}, empty, or blank
+     * @param pattern the regex pattern to validate against; must not be {@code null}
+     * @return {@code true} if the text matches the pattern; {@code false} otherwise
+     * @throws IllegalArgumentException if {@code text} is {@code null}, empty, blank, if {@code
+     *     pattern} is {@code null}, or if the pattern equals the secret pattern
      */
     public boolean isValidatedByRegex(final String text, final Pattern pattern) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
@@ -110,13 +139,14 @@ public enum MyRegex {
                     "The pattern must not be null");
         }
         if (pattern.equals(SECRET_PATTERN)) {
-            return isValidPassword(text);
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "text must be a character array and not a String");
         }
         return pattern.matcher(text).matches();
     }
 
     /**
-     * Validates a password string against strict security rules:
+     * Validates a password character array against strict security rules:
      *
      * <ul>
      *   <li>Must be exactly 24 characters long.
@@ -128,19 +158,22 @@ public enum MyRegex {
      *   <li>Includes at least 2 special characters from {@code @#$%^&()!}.
      * </ul>
      *
-     * @param password the password to validate; must not be {@code null} or blank
+     * @param password the password character array to validate; must not be {@code null} or empty
      * @return {@code true} if the password meets all criteria, {@code false} otherwise
-     * @throws IllegalArgumentException if {@code password} is {@code null} or blank
+     * @throws IllegalArgumentException if {@code password} is {@code null} or empty
      */
-    private boolean isValidPassword(final String password) {
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
-                password, "Password must not be null or blank, but was " + password);
-        if (SECRET_PATTERN.matcher(password).matches()) {
-            long lowerCaseCount = password.chars().filter(Character::isLowerCase).count();
-            long upperCaseCount = password.chars().filter(Character::isUpperCase).count();
-            long digitCount = password.chars().filter(Character::isDigit).count();
+    private boolean isValidPassword(final char[] password) {
+        if (password == null || password.length == 0) {
+            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
+                    "Password must not be null or empty");
+        }
+        CharBuffer buffer = CharBuffer.wrap(password);
+        if (SECRET_PATTERN.matcher(buffer).matches()) {
+            long lowerCaseCount = buffer.chars().filter(Character::isLowerCase).count();
+            long upperCaseCount = buffer.chars().filter(Character::isUpperCase).count();
+            long digitCount = buffer.chars().filter(Character::isDigit).count();
             long specialCharCount =
-                    password.chars().filter(c -> SPECIAL_CHARACTERS.indexOf(c) >= 0).count();
+                    buffer.chars().filter(c -> SPECIAL_CHARACTERS.indexOf(c) >= 0).count();
             return lowerCaseCount >= 2
                     && upperCaseCount >= 2
                     && digitCount >= 2

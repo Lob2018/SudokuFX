@@ -5,6 +5,8 @@
  */
 package fr.softsf.sudokufx.config.database;
 
+import java.util.Objects;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -84,14 +86,16 @@ class AbstractDataSourceConfigUTest {
     void givenValidJdbcUrlAndPoolName_whenHikariDataSourceCreated_thenPropertiesAreSet() {
         config.setJdbcUrl("jdbc:hsqldb:mem:testdb");
         config.setPoolName("TestPool");
-
+        keystore.setupApplicationKeystore();
+        final String expectedUser = new String(Objects.requireNonNull(keystore.getUsername()));
+        final String expectedPass = new String(Objects.requireNonNull(keystore.getPassword()));
         try (HikariDataSource ds = config.hikariDataSource(keystore, iCurrentIOsFolder)) {
             assertNotNull(ds);
             assertEquals("TestPool", ds.getPoolName());
             assertEquals("org.hsqldb.jdbc.JDBCDriver", ds.getDriverClassName());
             assertEquals("jdbc:hsqldb:mem:testdb", ds.getJdbcUrl());
-            assertEquals(keystore.getUsername(), ds.getUsername());
-            assertEquals(keystore.getPassword(), ds.getPassword());
+            assertEquals(expectedUser, ds.getUsername());
+            assertEquals(expectedPass, ds.getPassword());
         }
     }
 }

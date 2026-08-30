@@ -8,6 +8,8 @@ package fr.softsf.sudokufx.config.database;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.CharBuffer;
 import java.nio.charset.StandardCharsets;
 import java.security.KeyStore;
 import java.security.KeyStoreException;
@@ -15,6 +17,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.security.UnrecoverableEntryException;
 import java.security.cert.CertificateException;
+import java.util.Arrays;
 import java.util.Objects;
 import java.util.UUID;
 import javax.crypto.KeyGenerator;
@@ -39,12 +42,8 @@ public final class ApplicationKeystore implements IKeystore {
 
     private static final Logger LOG = LoggerFactory.getLogger(ApplicationKeystore.class);
 
-    private static final String KEYSTORE_PASSWORD_FROM_UUID =
-            String.valueOf(
-                    UUID.nameUUIDFromBytes(
-                            System.getProperty("user.name").getBytes(StandardCharsets.UTF_8)));
     private static final String KEYSTORE_TYPE = "pkcs12";
-    private static final char[] PWD_ARRAY = KEYSTORE_PASSWORD_FROM_UUID.toCharArray();
+    private static final char[] PWD_ARRAY = generateKeystorePassword();
     private static final String SYMMETRIC_KEY_ALIAS = "db-encryption-secret";
     private static final String USERNAME_ALIAS = "db-user-alias";
     private static final String PASS_ALIAS = "db-pass-alias";
@@ -57,8 +56,8 @@ public final class ApplicationKeystore implements IKeystore {
     private KeyStore ks;
     private IEncryptionService iEncryptionService;
 
-    private String username;
-    private String password;
+    private char[] username;
+    private char[] password;
 
     /**
      * Constructs a new {@code ApplicationKeystore} with required infrastructure dependencies.
@@ -82,6 +81,18 @@ public final class ApplicationKeystore implements IKeystore {
         }
         this.iOsFolder = iOsFolder;
         this.generateSecret = generateSecret;
+    }
+
+    /**
+     * Generates the keystore password from a UUID derived from the system username.
+     *
+     * @return the keystore password as a character array
+     */
+    private static char[] generateKeystorePassword() {
+        return String.valueOf(
+                        UUID.nameUUIDFromBytes(
+                                System.getProperty("user.name").getBytes(StandardCharsets.UTF_8)))
+                .toCharArray();
     }
 
     /**
@@ -250,11 +261,11 @@ public final class ApplicationKeystore implements IKeystore {
      * Generates and encrypts a credential for the given alias, then stores it securely in the
      * keystore.
      *
-     * @param alias the keystore alias for the credential
+     * @param alias the keystore alias for the credential; must not be null or blank
      */
     private void setCredentials(final String alias) {
         try {
-            String secret =
+            char[] secret =
                     switch (alias) {
                         case USERNAME_ALIAS -> {
                             username = generateSecret.generatePassaySecret();
@@ -270,10 +281,16 @@ public final class ApplicationKeystore implements IKeystore {
                                     "The keystore alias for the credential must not be null or"
                                             + " blank, but was "
                                             + alias);
-                            yield "";
+                            yield new char[0];
                         }
                     };
-            SecretKey secretKey = new SecretKeySpec(secret.getBytes(StandardCharsets.UTF_8), "AES");
+            ByteBuffer byteBuffer = StandardCharsets.UTF_8.encode(CharBuffer.wrap(secret));
+            byte[] keyBytes = new byte[byteBuffer.remaining()];
+            byteBuffer.get(keyBytes);
+            Arrays.fill(byteBuffer.array(), (byte) 0);
+            Arrays.fill(secret, '\0');
+            SecretKey secretKey = new SecretKeySpec(keyBytes, "AES");
+            Arrays.fill(keyBytes, (byte) 0);
             addToKeystore(alias, secretKey);
         } catch (Exception e) {
             LOG.error("██ Exception catch inside setCredentials(alias) : {}", e.getMessage(), e);
@@ -284,7 +301,7 @@ public final class ApplicationKeystore implements IKeystore {
      * Retrieves and decrypts the credential associated with the given alias from the keystore,
      * updating the corresponding field.
      *
-     * @param alias the keystore alias for the credential
+     * @param alias the keystore alias for the credential; must not be null or blank
      */
     @SuppressFBWarnings(
             value = "REC_CATCH_EXCEPTION",
@@ -296,15 +313,29 @@ public final class ApplicationKeystore implements IKeystore {
             KeyStore.Entry entry = ks.getEntry(alias, new KeyStore.PasswordProtection(PWD_ARRAY));
             if (entry instanceof KeyStore.SecretKeyEntry secretEntry) {
                 byte[] keyBytes = secretEntry.getSecretKey().getEncoded();
-                String value =
-                        iEncryptionService.decrypt(new String(keyBytes, StandardCharsets.UTF_8));
-                if (alias.equals(USERNAME_ALIAS)) {
-                    username = value;
-                } else if (alias.equals(PASS_ALIAS)) {
-                    password = value;
+                if (keyBytes == null) {
+                    LOG.error("██ Failed to retrieve encoded key bytes from keystore entry.");
+                    return;
                 }
-                // TODO: remove in production
-                // UUID.nameUUIDFromBytes(System.getProperty("user.name").getBytes(StandardCharsets.UTF_8)) alias username password
+                CharBuffer charBuffer = StandardCharsets.UTF_8.decode(ByteBuffer.wrap(keyBytes));
+                Arrays.fill(keyBytes, (byte) 0);
+                char[] cypherChars = new char[charBuffer.remaining()];
+                charBuffer.get(cypherChars);
+                char[] decrypted = iEncryptionService.decrypt(cypherChars);
+                Arrays.fill(cypherChars, '\0');
+                if (alias.equals(USERNAME_ALIAS)) {
+                    if (username != null) {
+                        Arrays.fill(username, '\0');
+                    }
+                    username = decrypted;
+                } else if (alias.equals(PASS_ALIAS)) {
+                    if (password != null) {
+                        Arrays.fill(password, '\0');
+                    }
+                    password = decrypted;
+                } else {
+                    Arrays.fill(decrypted, '\0');
+                }
             } else {
                 LOG.warn("▓▓ Entry is not an instance of the Keystore");
             }
@@ -352,12 +383,12 @@ public final class ApplicationKeystore implements IKeystore {
     }
 
     @Override
-    public String getUsername() {
-        return username;
+    public char[] getUsername() {
+        return username == null ? null : username.clone();
     }
 
     @Override
-    public String getPassword() {
-        return password;
+    public char[] getPassword() {
+        return password == null ? null : password.clone();
     }
 }

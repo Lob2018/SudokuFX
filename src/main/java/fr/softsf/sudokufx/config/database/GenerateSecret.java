@@ -52,7 +52,7 @@ public class GenerateSecret {
      *
      * @return The Passay secret
      */
-    public String generatePassaySecret() {
+    public char[] generatePassaySecret() {
         int randomLength =
                 SecureRandomGenerator.INSTANCE.nextInt(MIN_SECRET_LENGTH, MAX_SECRET_LENGTH + 1);
         CharacterRule lowerCaseRule = new CharacterRule(EnglishCharacterData.LowerCase, 2);
@@ -65,6 +65,6 @@ public class GenerateSecret {
         rules.add(upperCaseRule);
         rules.add(digitRule);
         PasswordGenerator gen = new PasswordGenerator(randomLength, rules);
-        return gen.generate().toString();
+        return gen.generate().toCharArray();
     }
 }

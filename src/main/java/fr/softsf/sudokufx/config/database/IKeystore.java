@@ -5,23 +5,25 @@
  */
 package fr.softsf.sudokufx.config.database;
 
-/** Interface defining methods to get the database username and his password. */
+/**
+ * Interface defining methods to manage the application keystore and retrieve database credentials.
+ */
 sealed interface IKeystore permits ApplicationKeystore {
 
-    /** Set up the application keystore */
+    /** Sets up and initializes the application keystore and its credentials. */
     void setupApplicationKeystore();
 
     /**
-     * Get database username
+     * Retrieves the database username.
      *
-     * @return The database username
+     * @return the database username as a character array
      */
-    String getUsername();
+    char[] getUsername();
 
     /**
-     * Get database password
+     * Retrieves the database password.
      *
-     * @return The database password
+     * @return the database password as a character array
      */
-    String getPassword();
+    char[] getPassword();
 }

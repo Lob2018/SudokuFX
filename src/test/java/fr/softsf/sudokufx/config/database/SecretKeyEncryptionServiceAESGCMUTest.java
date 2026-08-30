@@ -56,10 +56,10 @@ class SecretKeyEncryptionServiceAESGCMUTest {
 
     @Test
     void givenSecret_whenEncryptAndDecrypt_thenOriginalSecretReturned() {
-        String secret = "Secret";
-        String encrypted = iSecretKeyEncryptionServiceAESGCM.encrypt(secret);
-        String decrypted = iSecretKeyEncryptionServiceAESGCM.decrypt(encrypted);
-        assertEquals(secret, decrypted);
+        char[] secret = {'S', 'e', 'c', 'r', 'e', 't'};
+        char[] encrypted = iSecretKeyEncryptionServiceAESGCM.encrypt(secret);
+        char[] decrypted = iSecretKeyEncryptionServiceAESGCM.decrypt(encrypted);
+        assertArrayEquals(secret, decrypted);
     }
 
     @Test
@@ -78,10 +78,10 @@ class SecretKeyEncryptionServiceAESGCMUTest {
                 () -> iSecretKeyEncryptionServiceAESGCM.encrypt(null));
         assertThrows(
                 IllegalArgumentException.class,
-                () -> iSecretKeyEncryptionServiceAESGCM.encrypt(""));
+                () -> iSecretKeyEncryptionServiceAESGCM.encrypt(new char[0]));
         assertThrows(
                 IllegalArgumentException.class,
-                () -> iSecretKeyEncryptionServiceAESGCM.encrypt("   "));
+                () -> iSecretKeyEncryptionServiceAESGCM.encrypt(new char[] {' ', ' ', ' '}));
     }
 
     @Test
@@ -91,17 +91,17 @@ class SecretKeyEncryptionServiceAESGCMUTest {
                 () -> iSecretKeyEncryptionServiceAESGCM.decrypt(null));
         assertThrows(
                 IllegalArgumentException.class,
-                () -> iSecretKeyEncryptionServiceAESGCM.decrypt(""));
+                () -> iSecretKeyEncryptionServiceAESGCM.decrypt(new char[0]));
         assertThrows(
                 IllegalArgumentException.class,
-                () -> iSecretKeyEncryptionServiceAESGCM.decrypt("   "));
+                () -> iSecretKeyEncryptionServiceAESGCM.decrypt(new char[] {' ', ' ', ' '}));
     }
 
     @Test
-    void givenInvalidCipherText_whenDecrypt_thenEmptyStringReturnedAndErrorLogged() {
-        String invalidCypher = "not#validbase64";
-        String decrypted = iSecretKeyEncryptionServiceAESGCM.decrypt(invalidCypher);
-        assertEquals("", decrypted);
+    void givenInvalidCipherText_whenDecrypt_thenEmptyArrayReturnedAndErrorLogged() {
+        char[] invalidCypher = "not#validbase64".toCharArray();
+        char[] decrypted = iSecretKeyEncryptionServiceAESGCM.decrypt(invalidCypher);
+        assertArrayEquals(new char[0], decrypted);
         assertFalse(logWatcher.list.isEmpty());
         assertTrue(
                 logWatcher
@@ -113,24 +113,27 @@ class SecretKeyEncryptionServiceAESGCMUTest {
 
     @Test
     void givenValidEncryptionOutput_whenSplit_thenContainsEncryptedDataAndIv() {
-        String secret = "TestSecret";
-        String encrypted = iSecretKeyEncryptionServiceAESGCM.encrypt(secret);
+        char[] secret = {'T', 'e', 's', 't', 'S', 'e', 'c', 'r', 'e', 't'};
+        char[] encrypted = iSecretKeyEncryptionServiceAESGCM.encrypt(secret);
         assertNotNull(encrypted);
-        String[] parts = encrypted.split("#");
+        String encryptedStr = new String(encrypted);
+        String[] parts = encryptedStr.split("#");
         assertEquals(2, parts.length);
         Base64.getDecoder().decode(parts[0]);
         Base64.getDecoder().decode(parts[1]);
     }
 
     @Test
-    void givenInvalidSecretKey_whenEncrypt_thenEmptyStringReturnedAndErrorLogged() {
+    void givenInvalidSecretKey_whenEncrypt_thenEmptyArrayReturnedAndErrorLogged() {
         byte[] invalidBytes = new byte[4];
         new SecureRandom().nextBytes(invalidBytes);
         SecretKey invalidKey = new SecretKeySpec(invalidBytes, "AES");
         IEncryptionService brokenEncryptionService =
                 new SecretKeyEncryptionServiceAESGCM(invalidKey);
-        String result = brokenEncryptionService.encrypt("failEncrypt");
-        assertEquals("", result);
+        char[] result =
+                brokenEncryptionService.encrypt(
+                        new char[] {'f', 'a', 'i', 'l', 'E', 'n', 'c', 'r', 'y', 'p', 't'});
+        assertArrayEquals(new char[0], result);
         assertFalse(logWatcher.list.isEmpty());
         assertTrue(
                 logWatcher

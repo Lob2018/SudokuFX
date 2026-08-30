@@ -11,22 +11,23 @@ package fr.softsf.sudokufx.config.database;
 sealed interface IEncryptionService permits SecretKeyEncryptionServiceAESGCM {
 
     /**
-     * Encrypts the given non-null, non-blank string using AES-GCM encryption.
+     * Encrypts the given non-null, non-empty character array using AES-GCM encryption.
      *
-     * @param original the plaintext string to encrypt; must not be null or blank
-     * @return a Base64 encoded string containing the encrypted data and initialization vector,
-     *     separated by '#'
-     * @throws IllegalArgumentException if {@code original} is null or blank
+     * @param original the plaintext character array to encrypt; must not be null or empty
+     * @return a character array containing the Base64 encoded encrypted data and initialization
+     *     vector, separated by '#'
+     * @throws IllegalArgumentException if {@code original} is null or empty
      */
-    String encrypt(String original);
+    char[] encrypt(char[] original);
 
     /**
-     * Decrypts the given non-null, non-blank Base64 encoded cipher text using AES-GCM decryption.
+     * Decrypts the given non-null, non-empty Base64 encoded cipher character array using AES-GCM
+     * decryption.
      *
-     * @param cypher a Base64 encoded string containing the encrypted data and initialization
-     *     vector, separated by '#'; must not be null or blank
-     * @return the decrypted plaintext string, or an empty string if decryption fails
-     * @throws IllegalArgumentException if {@code cypher} is null or blank
+     * @param cypher a character array containing the Base64 encoded encrypted data and
+     *     initialization vector, separated by '#'; must not be null or empty
+     * @return the decrypted plaintext character array, or an empty array if decryption fails
+     * @throws IllegalArgumentException if {@code cypher} is null or empty
      */
-    String decrypt(String cypher);
+    char[] decrypt(char[] cypher);
 }

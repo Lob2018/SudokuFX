@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.config.database;
 
 import java.nio.file.Path;
+import java.util.Objects;
 
 import org.junit.jupiter.api.io.TempDir;
 import org.junit.jupiter.api.*;
@@ -30,8 +31,8 @@ class ApplicationKeystoreITest {
         IOsFolder iCurrentIOsFolder = spy(new OsFoldersConfig().iOsFolderFactory());
         GenerateSecret generateSecret = spy(new GenerateSecret());
         doReturn(tempDir.toString()).when(iCurrentIOsFolder).getOsDataFolderPath();
-        doReturn("fixedUsernameSecret")
-                .doReturn("fixedPasswordSecret")
+        doReturn("fixedUsernameSecret".toCharArray())
+                .doReturn("fixedPasswordSecret".toCharArray())
                 .when(generateSecret)
                 .generatePassaySecret();
         keystore = new ApplicationKeystore(iCurrentIOsFolder, generateSecret);
@@ -64,25 +65,31 @@ class ApplicationKeystoreITest {
     @Test
     void givenNewKeystore_whenSetupKeystore_thenCredentialsInitialized() {
         keystore.setupApplicationKeystore();
-        String user = keystore.getUsername();
-        String pass = keystore.getPassword();
+        char[] user = keystore.getUsername();
+        char[] pass = keystore.getPassword();
         assertNotNull(user, "Username should not be null");
         assertNotNull(pass, "Password should not be null");
-        assertEquals("fixedUsernameSecret", user, "Username should match generated secret");
-        assertEquals("fixedPasswordSecret", pass, "Password should match generated secret");
-        assertEquals(19, user.length(), "Username length should match expected");
-        assertEquals(19, pass.length(), "Password length should match expected");
+        assertArrayEquals(
+                "fixedUsernameSecret".toCharArray(),
+                user,
+                "Username should match generated secret");
+        assertArrayEquals(
+                "fixedPasswordSecret".toCharArray(),
+                pass,
+                "Password should match generated secret");
+        assertEquals(19, user.length, "Username length should match expected");
+        assertEquals(19, pass.length, "Password length should match expected");
     }
 
     @Test
     void givenExistingKeystore_whenSetupKeystore_thenCredentialsMatch() {
         keystore.setupApplicationKeystore();
-        String initialUser = keystore.getUsername();
-        String initialPass = keystore.getPassword();
+        char[] initialUser = Objects.requireNonNull(keystore.getUsername()).clone();
+        char[] initialPass = Objects.requireNonNull(keystore.getPassword()).clone();
         keystore.setupApplicationKeystore();
-        String user = keystore.getUsername();
-        String pass = keystore.getPassword();
-        assertEquals(initialUser, user, "Username should be the same as initial");
-        assertEquals(initialPass, pass, "Password should be the same as initial");
+        char[] user = keystore.getUsername();
+        char[] pass = keystore.getPassword();
+        assertArrayEquals(initialUser, user, "Username should be the same as initial");
+        assertArrayEquals(initialPass, pass, "Password should be the same as initial");
     }
 }

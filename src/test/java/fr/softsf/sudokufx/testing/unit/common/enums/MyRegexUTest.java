@@ -29,8 +29,11 @@ class MyRegexUTest {
     @Test
     void givenNullOrBlankText_whenIsValidatedByRegex_thenThrowsIllegalArgumentException() {
         assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex(null, secretPattern),
+                () -> MyRegex.INSTANCE.isValidatedByRegex((String) null, secretPattern),
                 "The text to validate must not be null or blank, but was null");
+        assertThrowsWithMessage(
+                () -> MyRegex.INSTANCE.isValidatedByRegex((char[]) null, secretPattern),
+                "The text to validate must not be null, empty or blank");
         assertThrowsWithMessage(
                 () -> MyRegex.INSTANCE.isValidatedByRegex("", secretPattern),
                 "The text to validate must not be null or blank, but was ");
@@ -44,6 +47,29 @@ class MyRegexUTest {
         assertThrowsWithMessage(
                 () -> MyRegex.INSTANCE.isValidatedByRegex("someText", null),
                 "The pattern must not be null");
+        assertThrowsWithMessage(
+                () -> MyRegex.INSTANCE.isValidatedByRegex(new char[] {'a'}, null),
+                "The pattern must not be null");
+    }
+
+    @Test
+    void givenNullOrBlankCharArrayText_whenIsValidatedByRegex_thenThrowsIllegalArgumentException() {
+        assertThrowsWithMessage(
+                () -> MyRegex.INSTANCE.isValidatedByRegex(new char[0], secretPattern),
+                "The text to validate must not be null, empty or blank");
+        assertThrowsWithMessage(
+                () -> MyRegex.INSTANCE.isValidatedByRegex(new char[] {' ', ' '}, secretPattern),
+                "The text to validate must not be null, empty or blank");
+    }
+
+    @Test
+    void
+            givenStringTextWithSecretPattern_whenIsValidatedByRegex_thenThrowsIllegalArgumentException() {
+        assertThrowsWithMessage(
+                () ->
+                        MyRegex.INSTANCE.isValidatedByRegex(
+                                "Ab1@Cd2#Ef3$Gh4%Ij5&Kl6!", secretPattern),
+                "text must be a character array and not a String");
     }
 
     @Test
@@ -51,10 +77,11 @@ class MyRegexUTest {
         // valid password example (24 chars, with at least 2 lowercase, 2 uppercase, 2 digits, 2
         // special chars)
         String validPassword = "Ab1@Cd2#Ef3$Gh4%Ij5&Kl6!";
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validPassword, secretPattern));
+        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validPassword.toCharArray(), secretPattern));
         // invalid password: missing special chars
         String invalidPassword = "Ab1Cd2Ef3Gh4Ij5Kl6Mn7Op8";
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex(invalidPassword, secretPattern));
+        assertFalse(
+                MyRegex.INSTANCE.isValidatedByRegex(invalidPassword.toCharArray(), secretPattern));
     }
 
     @Test

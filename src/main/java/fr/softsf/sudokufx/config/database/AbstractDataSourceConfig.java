@@ -6,6 +6,7 @@
 package fr.softsf.sudokufx.config.database;
 
 import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.Objects;
 import javax.sql.DataSource;
 
@@ -81,8 +82,19 @@ abstract class AbstractDataSourceConfig {
         config.setPoolName(poolName);
         config.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
         config.setJdbcUrl(jdbcUrl);
-        config.setUsername(iKeystore.getUsername());
-        config.setPassword(iKeystore.getPassword());
+        char[] userChars = iKeystore.getUsername();
+        char[] passChars = iKeystore.getPassword();
+        try {
+            config.setUsername(userChars != null ? new String(userChars) : null);
+            config.setPassword(passChars != null ? new String(passChars) : null);
+        } finally {
+            if (userChars != null) {
+                Arrays.fill(userChars, '\0');
+            }
+            if (passChars != null) {
+                Arrays.fill(passChars, '\0');
+            }
+        }
         config.setMaximumPoolSize(2);
         config.setMinimumIdle(1);
         config.setAutoCommit(false);
