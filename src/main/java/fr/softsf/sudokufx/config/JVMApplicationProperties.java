@@ -58,11 +58,7 @@ public enum JVMApplicationProperties {
     public String getAppName() {
         if (appName.isEmpty()) {
             String systemValue = System.getProperty(APP_NAME_PROPERTY);
-            appName =
-                    MyRegex.INSTANCE.isValidatedByRegex(
-                                    systemValue, MyRegex.INSTANCE.getAlphanumericPattern())
-                            ? systemValue
-                            : "";
+            appName = MyRegex.INSTANCE.isValidAlphanumeric(systemValue) ? systemValue : "";
         }
         return appName;
     }
@@ -76,11 +72,7 @@ public enum JVMApplicationProperties {
     public String getAppVersion() {
         if (appVersion.isEmpty()) {
             String systemValue = System.getProperty(APP_VERSION_PROPERTY);
-            appVersion =
-                    MyRegex.INSTANCE.isValidatedByRegex(
-                                    systemValue, MyRegex.INSTANCE.getVersionPattern())
-                            ? "v" + systemValue
-                            : "";
+            appVersion = MyRegex.INSTANCE.isValidVersion(systemValue) ? "v" + systemValue : "";
         }
         return appVersion;
     }
@@ -94,11 +86,7 @@ public enum JVMApplicationProperties {
     public String getAppOrganization() {
         if (appOrganization.isEmpty()) {
             String systemValue = System.getProperty(APP_ORGANIZATION_PROPERTY);
-            appOrganization =
-                    MyRegex.INSTANCE.isValidatedByRegex(
-                                    systemValue, MyRegex.INSTANCE.getAlphanumericPattern())
-                            ? systemValue
-                            : "";
+            appOrganization = MyRegex.INSTANCE.isValidAlphanumeric(systemValue) ? systemValue : "";
         }
         return appOrganization;
     }
@@ -111,11 +99,7 @@ public enum JVMApplicationProperties {
     public String getAppLicense() {
         if (appLicense.isEmpty()) {
             String systemValue = System.getProperty(APP_LICENSE_PROPERTY);
-            appLicense =
-                    MyRegex.INSTANCE.isValidatedByRegex(
-                                    systemValue, MyRegex.INSTANCE.getAlphanumericPattern())
-                            ? systemValue
-                            : "";
+            appLicense = MyRegex.INSTANCE.isValidAlphanumeric(systemValue) ? systemValue : "";
         }
         return appLicense;
     }

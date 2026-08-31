@@ -5,8 +5,6 @@
  */
 package fr.softsf.sudokufx.config;
 
-import java.util.regex.Pattern;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
@@ -27,17 +25,10 @@ class JVMApplicationPropertiesUTest {
         String validVersion = "0.0.0.1";
         String validOrganization = "Soft64.fr";
         String validLicense = "GPLv3.0";
-        assertTrue(
-                MyRegex.INSTANCE.isValidatedByRegex(
-                        validName, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertTrue(
-                MyRegex.INSTANCE.isValidatedByRegex(
-                        validOrganization, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertTrue(
-                MyRegex.INSTANCE.isValidatedByRegex(
-                        validLicense, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertTrue(
-                MyRegex.INSTANCE.isValidatedByRegex(validVersion, Pattern.compile(VERSION_REGEX)));
+        assertTrue(MyRegex.INSTANCE.isValidAlphanumeric(validName));
+        assertTrue(MyRegex.INSTANCE.isValidAlphanumeric(validOrganization));
+        assertTrue(MyRegex.INSTANCE.isValidAlphanumeric(validLicense));
+        assertTrue(MyRegex.INSTANCE.isValidVersion(validVersion));
     }
 
     @ParameterizedTest
@@ -50,9 +41,7 @@ class JVMApplicationPropertiesUTest {
                 "10.20.30.40" // Version standard
             })
     void givenValidVersions_whenValidateByRegex_thenSucceeds(String version) {
-        assertTrue(
-                MyRegex.INSTANCE.isValidatedByRegex(version, MyRegex.INSTANCE.getVersionPattern()),
-                "Version should be valid: " + version);
+        assertTrue(MyRegex.INSTANCE.isValidVersion(version), "Version should be valid: " + version);
     }
 
     @ParameterizedTest
@@ -67,8 +56,7 @@ class JVMApplicationPropertiesUTest {
             })
     void givenInvalidVersions_whenValidateByRegex_thenFails(String version) {
         assertFalse(
-                MyRegex.INSTANCE.isValidatedByRegex(version, MyRegex.INSTANCE.getVersionPattern()),
-                "Version should be invalid: " + version);
+                MyRegex.INSTANCE.isValidVersion(version), "Version should be invalid: " + version);
     }
 
     @Test
@@ -77,18 +65,10 @@ class JVMApplicationPropertiesUTest {
         String invalidVersion = "0.0.";
         String invalidOrganization = "Soft64.fr!";
         String invalidLicense = "MIT License!";
-        assertFalse(
-                MyRegex.INSTANCE.isValidatedByRegex(
-                        invalidName, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertFalse(
-                MyRegex.INSTANCE.isValidatedByRegex(
-                        invalidOrganization, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertFalse(
-                MyRegex.INSTANCE.isValidatedByRegex(
-                        invalidLicense, Pattern.compile(ALPHANUMERIC_REGEX)));
-        assertFalse(
-                MyRegex.INSTANCE.isValidatedByRegex(
-                        invalidVersion, Pattern.compile(VERSION_REGEX)));
+        assertFalse(MyRegex.INSTANCE.isValidAlphanumeric(invalidName));
+        assertFalse(MyRegex.INSTANCE.isValidAlphanumeric(invalidOrganization));
+        assertFalse(MyRegex.INSTANCE.isValidAlphanumeric(invalidLicense));
+        assertFalse(MyRegex.INSTANCE.isValidVersion(invalidVersion));
     }
 
     @Test

@@ -441,7 +441,7 @@ public class GridViewModel {
         GameDto gameDto = currentPlayer.selectedGame();
         Objects.requireNonNull(gameDto, GAME_DTO_MUSTN_T_BE_NULL);
         String result = iGridConverter.listToGridValue(getAllValues(true));
-        if (MyRegex.INSTANCE.getZeroCommaGridPattern().matcher(result).matches()) {
+        if (MyRegex.INSTANCE.isValidZeroCommaGrid(result)) {
             return false;
         }
         String modelGridValue = gameDto.grididDto().gridvalue();

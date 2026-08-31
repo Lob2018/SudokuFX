@@ -16,6 +16,7 @@ import org.passay.rule.Rule;
 import org.springframework.stereotype.Component;
 
 import fr.softsf.sudokufx.common.annotation.ExcludedFromCoverageReportGenerated;
+import fr.softsf.sudokufx.common.util.MyRegex;
 import fr.softsf.sudokufx.common.util.SecureRandomGenerator;
 
 import static org.passay.rule.IllegalCharacterRule.ERROR_CODE;
@@ -42,7 +43,7 @@ public class GenerateSecret {
 
             @Override
             public String getCharacters() {
-                return "!@#$%^&()";
+                return MyRegex.INSTANCE.getSpecialChars();
             }
         };
     }

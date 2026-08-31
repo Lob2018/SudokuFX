@@ -5,21 +5,17 @@
  */
 package fr.softsf.sudokufx.testing.unit.common.enums;
 
-import java.util.regex.Pattern;
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
 import fr.softsf.sudokufx.common.util.MyRegex;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class MyRegexUTest {
-
-    private final Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
-    private final Pattern alphaNumPattern = MyRegex.INSTANCE.getAlphanumericPattern();
 
     private void assertThrowsWithMessage(Executable executable, String expectedMessage) {
         IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, executable);
@@ -27,66 +23,43 @@ class MyRegexUTest {
     }
 
     @Test
-    void givenNullOrBlankText_whenIsValidatedByRegex_thenThrowsIllegalArgumentException() {
+    void givenNullOrBlankText_whenIsValidAlphanumeric_thenThrowsIllegalArgumentException() {
         assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex((String) null, secretPattern),
+                () -> MyRegex.INSTANCE.isValidAlphanumeric(null),
                 "The text to validate must not be null or blank, but was null");
         assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex((char[]) null, secretPattern),
-                "The text to validate must not be null, empty or blank");
-        assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex("", secretPattern),
+                () -> MyRegex.INSTANCE.isValidAlphanumeric(""),
                 "The text to validate must not be null or blank, but was ");
         assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex("   ", secretPattern),
+                () -> MyRegex.INSTANCE.isValidAlphanumeric("   "),
                 "The text to validate must not be null or blank, but was    ");
     }
 
     @Test
-    void givenNullPattern_whenIsValidatedByRegex_thenThrowsIllegalArgumentException() {
-        assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex("someText", null),
-                "The pattern must not be null");
-        assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex(new char[] {'a'}, null),
-                "The pattern must not be null");
-    }
-
-    @Test
-    void givenNullOrBlankCharArrayText_whenIsValidatedByRegex_thenThrowsIllegalArgumentException() {
-        assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex(new char[0], secretPattern),
-                "The text to validate must not be null, empty or blank");
-        assertThrowsWithMessage(
-                () -> MyRegex.INSTANCE.isValidatedByRegex(new char[] {' ', ' '}, secretPattern),
-                "The text to validate must not be null, empty or blank");
-    }
-
-    @Test
     void
-            givenStringTextWithSecretPattern_whenIsValidatedByRegex_thenThrowsIllegalArgumentException() {
+            givenNullOrEmptyOrBlankCharArrayText_whenIsValidSecret_thenThrowsIllegalArgumentException() {
         assertThrowsWithMessage(
-                () ->
-                        MyRegex.INSTANCE.isValidatedByRegex(
-                                "Ab1@Cd2#Ef3$Gh4%Ij5&Kl6!", secretPattern),
-                "text must be a character array and not a String");
+                () -> MyRegex.INSTANCE.isValidSecret(null), "The secret must not be null or empty");
+        assertThrowsWithMessage(
+                () -> MyRegex.INSTANCE.isValidSecret(new char[0]),
+                "The secret must not be null or empty");
+        assertThrowsWithMessage(
+                () -> MyRegex.INSTANCE.isValidSecret(new char[] {' ', ' '}),
+                "The secret must not be blank");
     }
 
     @Test
-    void givenSecretPattern_whenIsValidatedByRegex_thenUsesStrictPasswordValidation() {
-        // valid password example (24 chars, with at least 2 lowercase, 2 uppercase, 2 digits, 2
-        // special chars)
+    void givenSecretPattern_whenIsValidSecret_thenUsesStrictPasswordValidation() {
         String validPassword = "Ab1@Cd2#Ef3$Gh4%Ij5&Kl6!";
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex(validPassword.toCharArray(), secretPattern));
-        // invalid password: missing special chars
+        assertTrue(MyRegex.INSTANCE.isValidSecret(validPassword.toCharArray()));
+
         String invalidPassword = "Ab1Cd2Ef3Gh4Ij5Kl6Mn7Op8";
-        assertFalse(
-                MyRegex.INSTANCE.isValidatedByRegex(invalidPassword.toCharArray(), secretPattern));
+        assertFalse(MyRegex.INSTANCE.isValidSecret(invalidPassword.toCharArray()));
     }
 
     @Test
-    void givenOtherPattern_whenIsValidatedByRegex_thenUsesPatternMatching() {
-        assertTrue(MyRegex.INSTANCE.isValidatedByRegex("Hello World.", alphaNumPattern));
-        assertFalse(MyRegex.INSTANCE.isValidatedByRegex("Hello@World!", alphaNumPattern));
+    void givenOtherPattern_whenIsValidAlphanumeric_thenUsesPatternMatching() {
+        assertTrue(MyRegex.INSTANCE.isValidAlphanumeric("Hello World."));
+        assertFalse(MyRegex.INSTANCE.isValidAlphanumeric("Hello@World!"));
     }
 }

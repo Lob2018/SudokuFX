@@ -9,9 +9,6 @@ import java.nio.CharBuffer;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import fr.softsf.sudokufx.common.exception.ExceptionTools;
 
 /**
@@ -25,21 +22,10 @@ import fr.softsf.sudokufx.common.exception.ExceptionTools;
 public enum MyRegex {
     INSTANCE;
 
-    private static final Logger LOG = LoggerFactory.getLogger(MyRegex.class);
-
-    /** Allowed special characters for password validation. */
     private static final String SPECIAL_CHARACTERS = "@#$%^&()!";
 
-    /**
-     * Precompiled regex pattern for validating empty or zero-only grid values containing commas.
-     */
     private static final Pattern ZERO_COMMA_GRID_PATTERN = Pattern.compile("^[0,]*$");
 
-    /**
-     * Precompiled regex pattern for validating passwords. Requirements: - Between 24 and 32
-     * characters. - At least one uppercase, one lowercase, one digit, one special char. - Only
-     * allowed characters: letters, digits, and @#$%^&()!
-     */
     private static final Pattern SECRET_PATTERN =
             Pattern.compile(
                     "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*["
@@ -49,77 +35,56 @@ public enum MyRegex {
                             + Pattern.quote(SPECIAL_CHARACTERS)
                             + "]{24,32}$");
 
-    /**
-     * Precompiled regex pattern for validating player names. Requirements: - Alphabetic characters
-     * only, optional spaces between words.
-     */
     private static final Pattern PLAYER_NAME_PATTERN =
             Pattern.compile("^[A-Za-z]+(?:\\s[A-Za-z]+)*+\\s*+$|^\\s*+$");
 
-    public Pattern getSecretPattern() {
-        return SECRET_PATTERN;
-    }
-
-    public Pattern getPlayerNamePattern() {
-        return PLAYER_NAME_PATTERN;
-    }
-
-    public Pattern getZeroCommaGridPattern() {
-        return ZERO_COMMA_GRID_PATTERN;
-    }
-
-    /**
-     * Precompiled regex pattern for semantic versioning (supports X.Y.Z or X.Y.Z.W formats).
-     * Requirements: - 3 or 4 numeric components separated by dots. - Each component: 1 to 9 digits
-     * (prevents Integer overflow and UI breakage). - Leading zeros are forbidden (except for the
-     * digit '0' itself). - Total string length is naturally constrained by segment limits.
-     */
     private static final Pattern VERSION_PATTERN =
             Pattern.compile(
                     "^(0|[1-9]\\d{0,8})\\.(0|[1-9]\\d{0,8})\\.(0|[1-9]\\d{0,8})(?:\\.(0|[1-9]\\d{0,8}))?$");
 
-    public Pattern getVersionPattern() {
-        return VERSION_PATTERN;
-    }
-
-    /**
-     * Precompiled regex pattern for validating alphanumeric strings. Requirements: - Only letters,
-     * digits, spaces, and dots are allowed.
-     */
     private static final Pattern ALPHANUMERIC_PATTERN = Pattern.compile("^[a-zA-Z0-9\\s.]+$");
 
-    public Pattern getAlphanumericPattern() {
-        return ALPHANUMERIC_PATTERN;
+    /** Returns the allowed special characters for password validation. */
+    public String getSpecialChars() {
+        return SPECIAL_CHARACTERS;
     }
 
     /**
-     * Validates the given character array against the specified regex pattern. Utilizes a character
-     * array to ensure **memory security** for sensitive data by avoiding String pool persistence.
-     * If {@code pattern} equals the internal secret pattern, a stricter password validation is
-     * performed.
+     * Validates the given password character array against strict security rules. Utilizes a
+     * character array to ensure **memory security** for sensitive data by avoiding String pool
+     * persistence.
      *
-     * @param text the character array to validate; must not be {@code null}, empty or blank
-     * @param pattern the regex pattern to validate against; must not be {@code null}
-     * @return {@code true} if the text matches the pattern or meets password criteria; {@code
-     *     false} otherwise
-     * @throws IllegalArgumentException if {@code text} is {@code null}, empty, blank, or if {@code
-     *     pattern} is {@code null}
+     * @param secret the password character array to validate; must not be {@code null} or empty
+     * @return {@code true} if the secret meets all criteria; {@code false} otherwise
+     * @throws IllegalArgumentException if {@code secret} is {@code null}, empty, or blank
      */
-    public boolean isValidatedByRegex(final char[] text, final Pattern pattern) {
-        if (text == null
-                || text.length == 0
-                || CharBuffer.wrap(text).chars().allMatch(Character::isWhitespace)) {
+    public boolean isValidSecret(final char[] secret) {
+        if (secret == null || secret.length == 0) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "The text to validate must not be null, empty or blank");
+                    "The secret must not be null or empty");
         }
-        if (Objects.isNull(pattern)) {
+        final CharBuffer buffer = CharBuffer.wrap(secret);
+        if (buffer.chars().allMatch(Character::isWhitespace)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "The pattern must not be null");
+                    "The secret must not be blank");
         }
-        if (pattern.pattern().equals(SECRET_PATTERN.pattern())) {
-            return isValidPassword(text);
-        }
-        return pattern.matcher(CharBuffer.wrap(text)).matches();
+        return isValidPassword(buffer);
+    }
+
+    public boolean isValidPlayerName(final String playerName) {
+        return isValidatedByRegex(playerName, PLAYER_NAME_PATTERN);
+    }
+
+    public boolean isValidZeroCommaGrid(final String gridText) {
+        return isValidatedByRegex(gridText, ZERO_COMMA_GRID_PATTERN);
+    }
+
+    public boolean isValidVersion(final String version) {
+        return isValidatedByRegex(version, VERSION_PATTERN);
+    }
+
+    public boolean isValidAlphanumeric(final String text) {
+        return isValidatedByRegex(text, ALPHANUMERIC_PATTERN);
     }
 
     /**
@@ -128,28 +93,24 @@ public enum MyRegex {
      * @param text the string to validate; must not be {@code null}, empty, or blank
      * @param pattern the regex pattern to validate against; must not be {@code null}
      * @return {@code true} if the text matches the pattern; {@code false} otherwise
-     * @throws IllegalArgumentException if {@code text} is {@code null}, empty, blank, if {@code
-     *     pattern} is {@code null}, or if the pattern equals the secret pattern
+     * @throws IllegalArgumentException if {@code text} is {@code null}, empty, blank, or if {@code
+     *     pattern} is {@code null}
      */
-    public boolean isValidatedByRegex(final String text, final Pattern pattern) {
+    private boolean isValidatedByRegex(final String text, final Pattern pattern) {
         ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
                 text, "The text to validate must not be null or blank, but was " + text);
         if (Objects.isNull(pattern)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The pattern must not be null");
         }
-        if (pattern.equals(SECRET_PATTERN)) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "text must be a character array and not a String");
-        }
         return pattern.matcher(text).matches();
     }
 
     /**
-     * Validates a password character array against strict security rules:
+     * Validates a password character buffer against strict security rules:
      *
      * <ul>
-     *   <li>Must be exactly 24 characters long.
+     *   <li>Must be between 24 and 32 characters long.
      *   <li>Contains only letters (uppercase and lowercase), digits, and special characters
      *       {@code @#$%^&()!}.
      *   <li>Includes at least 2 lowercase letters.
@@ -158,16 +119,10 @@ public enum MyRegex {
      *   <li>Includes at least 2 special characters from {@code @#$%^&()!}.
      * </ul>
      *
-     * @param password the password character array to validate; must not be {@code null} or empty
+     * @param buffer the password character buffer to validate
      * @return {@code true} if the password meets all criteria, {@code false} otherwise
-     * @throws IllegalArgumentException if {@code password} is {@code null} or empty
      */
-    private boolean isValidPassword(final char[] password) {
-        if (password == null || password.length == 0) {
-            throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
-                    "Password must not be null or empty");
-        }
-        CharBuffer buffer = CharBuffer.wrap(password);
+    private boolean isValidPassword(final CharBuffer buffer) {
         if (SECRET_PATTERN.matcher(buffer).matches()) {
             long lowerCaseCount = buffer.chars().filter(Character::isLowerCase).count();
             long upperCaseCount = buffer.chars().filter(Character::isUpperCase).count();

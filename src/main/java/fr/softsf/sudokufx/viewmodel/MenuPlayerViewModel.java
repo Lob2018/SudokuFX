@@ -654,7 +654,7 @@ public class MenuPlayerViewModel {
         String cleanedText = currentText.trim();
         boolean isValid =
                 cleanedText.length() <= MAX_NAME_LENGTH
-                        && MyRegex.INSTANCE.getPlayerNamePattern().matcher(cleanedText).matches();
+                        && MyRegex.INSTANCE.isValidPlayerName(cleanedText);
         boolean isAvailable =
                 !cleanedText.equalsIgnoreCase(playerStateHolder.getCurrentPlayer().name())
                         && !cleanedText.equals(PlayerConstants.ANONYMOUS_NAME.getValue())
@@ -680,8 +680,7 @@ public class MenuPlayerViewModel {
             return change;
         }
         String newName = change.getControlNewText();
-        if (newName.length() <= MAX_NAME_LENGTH
-                && MyRegex.INSTANCE.getPlayerNamePattern().matcher(newName).matches()) {
+        if (newName.length() <= MAX_NAME_LENGTH && MyRegex.INSTANCE.isValidPlayerName(newName)) {
             return change;
         }
         return null;

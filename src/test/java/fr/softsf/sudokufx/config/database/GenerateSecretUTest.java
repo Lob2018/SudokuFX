@@ -5,8 +5,6 @@
  */
 package fr.softsf.sudokufx.config.database;
 
-import java.util.regex.Pattern;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -33,16 +31,14 @@ class GenerateSecretUTest {
                 secret.length >= 24 && secret.length <= 32,
                 "Le secret doit avoir une longueur comprise entre 24 et 32. Actuelle : "
                         + secret.length);
-        Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
         assertTrue(
-                MyRegex.INSTANCE.isValidatedByRegex(secret, secretPattern),
+                MyRegex.INSTANCE.isValidSecret(secret),
                 "Generated secret should be valid according to secretPattern: "
                         + String.valueOf(secret));
     }
 
     @Test
     void givenInvalidSecrets_whenIsValidatedByRegex_thenReturnsFalse() {
-        Pattern secretPattern = MyRegex.INSTANCE.getSecretPattern();
         String[] invalidSecrets = {
             "L".repeat(24), // Pas de minuscules/chiffres/spéciaux
             "l".repeat(32), // Pas de majuscules/chiffres/spéciaux
@@ -57,7 +53,7 @@ class GenerateSecretUTest {
 
         for (String secret : invalidSecrets) {
             assertFalse(
-                    MyRegex.INSTANCE.isValidatedByRegex(secret.toCharArray(), secretPattern),
+                    MyRegex.INSTANCE.isValidSecret(secret.toCharArray()),
                     "Secret should be invalid: " + secret);
         }
     }
