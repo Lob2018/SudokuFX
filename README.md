@@ -372,9 +372,10 @@ Cross-platform desktop application developed in Java using JavaFX, Spring Boot, 
 
 - Debug workflow:
     - Add breakpoints in the source code
-    - Run `SudokuFX [debug]` (Run mode) to start the JVM in suspended state
-    - Immediately launch `Debug JavaFX Maven` (Debug mode) to attach and resume execution
-    - Application starts with breakpoints active
+    - Run `SudokuFX [debug]` in Run mode to trigger the suspended JVM state during the Maven build phase
+    - Launch `Debug JavaFX Maven` in Debug mode to attach before compilation
+    - Rerun `Debug JavaFX Maven` in Debug mode on the second Listening event once compilation finishes and the application is ready to start
+    - Application runs with active breakpoints
 
 #### DEV Runtime monitoring with VisualVM
 
