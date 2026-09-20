@@ -29,6 +29,9 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 [![GitHub release](https://img.shields.io/github/v/release/lob2018/SudokuFX)](https://github.com/Lob2018/SudokuFX/releases)
 [![Downloads](https://img.shields.io/github/downloads/Lob2018/sudokufx/total?logo=github)](https://github.com/Lob2018/sudokufx/releases)
 
+[![Documentation](https://img.shields.io/badge/🔗_Documentation-0D47A1?style=for-the-badge)](https://lob2018.github.io/SudokuFX/)
+[![CHANGELOG](https://img.shields.io/badge/🔗_CHANGELOG-0D47A1?style=for-the-badge)](https://github.com/lob2018/SudokuFX/blob/main/CHANGELOG.md)
+
 # [![SudokuFX in action](https://raw.githubusercontent.com/Lob2018/SudokuFX/master/.myresources/design_and_modeling/images/SudokuFX_in_action.jpg)](https://github.com/Lob2018/SudokuFX/releases/latest)
 
 ## 🎬 Demo
@@ -58,6 +61,7 @@ Challenge your mind and enjoy hours of logical fun with SudokuFX!
 - [Contributing](#contributing)
 - [Code of Conduct](#code-of-conduct)
 - [Contributors](#contributors)
+- [CHANGELOG.md](./CHANGELOG.md)
 - [Third-party notices](https://github.com/Lob2018/SudokuFX/blob/main/THIRD_PARTY_NOTICES.txt)
 - [Licence](https://github.com/Lob2018/SudokuFX/blob/main/LICENSE.txt)
 
