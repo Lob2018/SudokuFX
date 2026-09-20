@@ -4,6 +4,20 @@
 ## Unreleased - 
 
 
+✨ feat release.yml, mainpage.dox, README.md, pom.xml, CHANGELOG.md: Integrate git-changelog-maven-plugin and add changelog links
+- release.yml :
+  - Add direct CHANGELOG.md link section to the release workflow description body.
+- mainpage.dox :
+  - Add link to CHANGELOG in the Doxygen main page index.
+- README.md :
+  - Add Documentation and CHANGELOG shields badges at the top.
+  - Insert CHANGELOG.md entry in the main project navigation list.
+- pom.xml :
+  - Configure se.bjurr.gitchangelog:git-changelog-maven-plugin v2.4.0 with a custom Handlebars template to generate resources during build.
+- Tests pass.
+
+([438effb372c4770](https://github.com/Lob2018/SudokuFX/commit/438effb372c47701636a6d5cfd1903d87d91803a))
+
 ♻️ refactor SudokuFX__debug_.xml, README.md: Update remote debugging configuration and documentation
 - SudokuFX__debug_.xml : Configure Maven runner settings to add JAVA_TOOL_OPTIONS with JDWP agent parameters
 - README.md : Document the two-step attach process for reliable startup debugging with suspend enabled
