@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.MenuUTest.givenMenusWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent" name="fr.softsf.sudokufx.model.MenuUTest.givenMenusWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,275,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ad804d9c18a93f8b4ac3ba52d4882e77b" title="Computes the hash code based on all fields." alt="" coords="323,20,505,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,37,309,37,309,43,275,43"/>
+</map>

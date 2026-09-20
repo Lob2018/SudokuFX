@@ -1,0 +1,3 @@
+<map id="fr.softsf.sudokufx.model.Grid" name="fr.softsf.sudokufx.model.Grid">
+<area shape="rect" id="Node000001" title="Represents a Sudoku grid with default values, current values, and the number of possibilities." alt="" coords="5,5,279,691"/>
+</map>

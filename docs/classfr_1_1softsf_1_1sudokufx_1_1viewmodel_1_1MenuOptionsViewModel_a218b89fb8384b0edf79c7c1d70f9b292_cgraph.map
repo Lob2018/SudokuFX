@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.createFormattedBinding" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.createFormattedBinding">
+<area shape="rect" id="Node000001" title="Creates a formatted localized binding with one dynamic argument." alt="" coords="5,5,297,60"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a359e959bd335e531fe59f4eb942c0813" title="Utility: always observe the locale in addition to custom dependencies." alt="" coords="345,13,664,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,30,332,30,332,35,298,35"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.repository.GridRepository" name="fr.softsf.sudokufx.repository.GridRepository">
+<area shape="rect" id="Node000001" title="Repository interface for Grid entities." alt="" coords="5,133,203,213"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="29,5,179,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,99,107,133,101,133,101,99"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="fr.softsf.sudokufx.view.component.firework.Firework.ignite" name="fr.softsf.sudokufx.view.component.firework.Firework.ignite">
+<area shape="rect" id="Node000001" title="Generates a circular particle burst at a random screen location." alt="" coords="5,5,311,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#adc1e8659376adaf0c3bdc4a8742cd87c" title="Snapshot of the rendering environment including scaling metrics." alt="" coords="712,5,1017,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,19,359,19,664,19,698,19,698,24,664,24,359,24,311,25"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#a238e975882b916d63349843dd54fbd33" title="Captures the current scene metrics and the firework instance." alt="" coords="359,33,664,73"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,35,345,38,345,43,311,40"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="664,39,698,36,699,41,665,44"/>
+</map>

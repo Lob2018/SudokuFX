@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.SplashScreenView" name="fr.softsf.sudokufx.view.SplashScreenView">
+<area shape="rect" id="Node000001" title="View class for the splash screen of the Sudoku application." alt="" coords="5,119,333,1240"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="101,5,238,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,85,172,119,167,119,167,85"/>
+</map>

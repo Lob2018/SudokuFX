@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerUTest_1_1ConstructorAndBuilderTests =
+[
+    [ "givenAllFields_whenBuildPlayer_thenAllFieldsAreSet", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerUTest_1_1ConstructorAndBuilderTests.html#aee4833d80f5954c20af3fe053a974fe4", null ],
+    [ "givenNullGames_whenBuildPlayer_thenGamesIsInitializedAsEmpty", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerUTest_1_1ConstructorAndBuilderTests.html#a55467d77cc96aaff0e63e420d71d074d", null ]
+];

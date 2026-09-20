@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.OptionsToggleTests.givenInitialGridOpacity_whenToggleGridOpacity_thenPropertyInverted" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.OptionsToggleTests.givenInitialGridOpacity_whenToggleGridOpacity_thenPropertyInverted">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,333,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#aeb35d0d692fc89bd84578617ab2201b7" title="Toggles the grid opacity mode, persists the new state in the database, updates &#160;gridOpacityProperty,..." alt="" coords="381,13,684,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="334,37,368,37,368,43,334,43"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane)." alt="" coords="732,20,1019,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="684,37,718,37,718,43,684,43"/>
+</map>

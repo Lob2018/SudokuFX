@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initMuteText" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initMuteText">
+<area shape="rect" id="Node000001" title="Creates the visible label for the mute button, reflecting the current mute state." alt="" coords="5,5,271,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a6e733cf8be577984de3b8b21b9a3c696" title="Returns the localized text corresponding to the mute state." alt="" coords="319,5,564,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="271,23,305,23,305,28,271,28"/>
+</map>

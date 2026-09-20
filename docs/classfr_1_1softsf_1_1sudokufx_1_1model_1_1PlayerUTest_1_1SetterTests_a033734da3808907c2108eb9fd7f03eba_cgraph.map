@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullName_whenSettingName_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullName_whenSettingName_thenNullPointerExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,365,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="413,5,596,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="365,37,399,33,400,38,366,42"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#af201d3417316b81311308e888df147ac" title="Sets the name after validation." alt="" coords="413,69,596,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="366,73,400,76,399,82,365,78"/>
+</map>

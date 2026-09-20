@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenStarsBoxAndKey_whenAccessibleTextBinding_thenReturnFormattedText" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenStarsBoxAndKey_whenAccessibleTextBinding_thenReturnFormattedText">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,288,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel.html#a2534445f2247fda713a1b90d2e194d91" title="Creates a StringBinding for the accessibility text of the stars UI component associated with a diffic..." alt="" coords="336,13,600,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,37,323,37,323,43,288,43"/>
+</map>

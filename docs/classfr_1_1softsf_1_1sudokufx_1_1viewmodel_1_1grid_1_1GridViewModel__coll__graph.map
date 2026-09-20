@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel">
+<area shape="rect" id="Node000001" title="ViewModel responsible for managing a 9x9 Sudoku grid." alt="" coords="35,1088,493,2363"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1ActiveMenuOrSubmenuViewModel.html" title="ViewModel component managing the currently active menu or submenu." alt="" coords="5,436,253,580"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,580,153,797,179,1064,180,1072,174,1072,173,1064,148,797,132,581"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html" title="ViewModel for managing &quot;solve&quot; menu UI state and accessibility texts." alt="" coords="278,5,519,1011"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="377,1011,372,1064,371,1072,366,1072,367,1064,372,1011"/>
+</map>

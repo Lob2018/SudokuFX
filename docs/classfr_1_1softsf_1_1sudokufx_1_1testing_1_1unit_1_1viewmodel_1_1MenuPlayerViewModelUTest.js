@@ -1,0 +1,18 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest =
+[
+    [ "allBindingsShouldReturnExpectedI18nValues", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#adc1f41620ed9f283efea4ce5d12f07a6", null ],
+    [ "getStringBindingStringMap", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a28840148a965fa0b2fb6772d7b6c4bec", null ],
+    [ "givenCurrentPlayer_whenLocaleChanges_thenBindingUpdates", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a1a897dcdebbdfe52873cfa519dc3cdf4", null ],
+    [ "givenEmptyOrNullInput_whenValidatePlayerName_thenStatusIsSetToEmpty", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a8c652be925c8efc333d9917166648ba2", null ],
+    [ "givenExistingName_whenValidatePlayerName_thenStatusIsSetToUnavailable", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#aac0056e740e78466373b066fedd619a5", null ],
+    [ "givenInvalidInput_whenValidatePlayerName_thenStatusIsSetToInvalid", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#afda1e4357365eae9810df31100ea963e", null ],
+    [ "givenNewSelectedPlayer_whenChanged_thenBindingsUpdate", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#afbaeb3685dceb49fcfc0b559e888e99b", null ],
+    [ "givenReservedName_whenValidatePlayerName_thenStatusIsSetToInvalid", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a9d5875c05ad88eb104c0671d42fcbd9a", null ],
+    [ "givenValidAndAvailableName_whenValidatePlayerName_thenStatusIsSetToValid", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a611c74f4fb5f2e74322cd2eda3b5242f", null ],
+    [ "givenViewModel_whenInitialized_thenPlayersLoadedAndBindingsNotNull", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a1a2f782dfb951d637743f974957d8930", null ],
+    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a9eb53f321f6ac81bbfb658d83f8a83de", null ],
+    [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a5fe1b4bc14f8b8f2e457c66f32582836", null ],
+    [ "FIXED_INSTANT", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a18ebde9acce036e94cf2bdfc7aaba63d", null ],
+    [ "originalLocale", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a9deeafc3c8d87fe40937030d6feba8a8", null ],
+    [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html#a9836b1dcbf07547f9fcd5aa6915748ec", null ]
+];

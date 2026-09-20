@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.view.main.MainView" name="fr.softsf.sudokufx.view.main.MainView">
+<area shape="rect" id="Node000001" title="Main view class of the Sudoku application." alt="" coords="5,757,763,2460"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="239,317,321,383"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,396,316,757,311,758,281,397"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler.html" title="Utility component managing interaction logic for level selection." alt="" coords="345,5,631,695"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="462,695,458,741,453,740,457,695"/>
+</map>

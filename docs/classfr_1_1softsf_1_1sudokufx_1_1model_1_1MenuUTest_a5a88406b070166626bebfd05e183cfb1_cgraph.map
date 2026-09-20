@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.model.MenuUTest.givenNullMenuid_whenCreateMenu_thenNullMenuidIsHandled" name="fr.softsf.sudokufx.model.MenuUTest.givenNullMenuid_whenCreateMenu_thenNullMenuidIsHandled">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,269,124"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ab1ff57d1d8f24d28f42af214053d7025" title="Returns the unique identifier of the menu." alt="" coords="317,5,500,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,56,310,46,311,51,270,61"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" title="Returns the mode of the menu." alt="" coords="317,69,500,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,87,304,87,304,92,269,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#a2124925732695cc264597cf681cbbd4b" title="Returns a string representation of the menu." alt="" coords="317,133,500,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="270,118,311,128,310,133,269,123"/>
+</map>

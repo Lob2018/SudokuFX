@@ -6,7 +6,7 @@ var indexSectionsWithContent =
   3: "abcdefghijlmnoprstuv",
   4: "[abcdefghijlmnoprstuvw",
   5: "abcdefghijklmnoprstuvwxyz",
-  6: "acdefilopstu🎲"
+  6: "dos"
 };
 
 var indexSectionNames =
@@ -30,3 +30,4 @@ var indexSectionLabels =
   5: "Variables",
   6: "Pages"
 };
+

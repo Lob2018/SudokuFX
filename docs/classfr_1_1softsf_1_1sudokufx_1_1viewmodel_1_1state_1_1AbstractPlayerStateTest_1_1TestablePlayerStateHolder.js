@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1AbstractPlayerStateTest_1_1TestablePlayerStateHolder =
+[
+    [ "TestablePlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1AbstractPlayerStateTest_1_1TestablePlayerStateHolder.html#a03bfb3eccc62c2af822c67a2b18260d9", null ],
+    [ "exitPlatform", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1AbstractPlayerStateTest_1_1TestablePlayerStateHolder.html#ac074e7ca5410fc195aa3147e6501a5a5", null ]
+];

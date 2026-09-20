@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.handleStart" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.handleStart">
+<area shape="rect" id="Node000001" title="Records the start of an interaction and initiates the selection cycle." alt="" coords="5,49,261,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler.html#a5790fc56904861e9e5cfc4ce38c2d9a1" title="Resolves a button identifier to its corresponding difficulty level." alt="" coords="314,5,551,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,51,300,46,301,51,262,56"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler.html#a6a5cd1051229e079639796c50abacd5b" title="Initiates the possibilities increment cycle after resetting the current state." alt="" coords="309,85,556,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,81,296,86,296,91,261,87"/>
+</map>

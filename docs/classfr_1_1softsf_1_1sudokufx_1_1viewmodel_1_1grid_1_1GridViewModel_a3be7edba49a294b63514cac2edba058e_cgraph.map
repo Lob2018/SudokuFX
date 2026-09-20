@@ -1,0 +1,23 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applySolveModeState" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applySolveModeState">
+<area shape="rect" id="Node000001" title="Synchronizes the grid state during manual solving." alt="" coords="5,131,272,171"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="651,81,909,121"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="184,128,247,105,320,87,401,77,483,74,637,81,636,86,483,80,401,83,320,92,249,110,186,133"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="659,5,901,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="172,128,238,93,278,76,319,63,402,44,487,32,645,22,645,27,488,38,403,50,321,68,280,81,241,98,174,133"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="659,145,901,185"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="272,151,645,160,645,165,272,156"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="652,209,908,249"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="273,164,639,209,638,215,272,170"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="326,101,577,141"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="272,135,312,132,313,137,273,141"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a14ed923537d42b9a3273e937ac7b7073" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="320,267,583,307"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="173,168,240,207,321,246,361,260,359,265,319,250,238,211,171,173"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="577,111,637,107,637,113,577,116"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="520,99,696,47,698,52,521,104"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="577,135,646,145,645,150,576,141"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="495,139,558,167,632,195,661,203,660,209,630,200,556,172,492,144"/>
+<area shape="poly" id="edge11_Node000007_Node000002" title=" " alt="" coords="468,265,534,198,579,162,629,131,646,124,648,128,632,136,582,166,537,202,472,269"/>
+<area shape="poly" id="edge12_Node000007_Node000005" title=" " alt="" coords="566,264,651,249,652,254,567,269"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a1d2b83dfdebc0615c30d21ca2cfceaf8" title="Sets the value of the percentage property." alt="" coords="631,273,929,313"/>
+<area shape="poly" id="edge13_Node000007_Node000008" title=" " alt="" coords="583,287,617,287,617,293,583,292"/>
+</map>

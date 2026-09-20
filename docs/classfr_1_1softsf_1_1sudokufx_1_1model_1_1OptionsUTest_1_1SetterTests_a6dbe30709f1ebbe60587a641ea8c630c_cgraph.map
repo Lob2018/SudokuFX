@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated" name="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenValidHexColor_whenSettingHexColor_thenHexColorIsUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,268,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#acc418d26dcb7c51c4aea3db089fa0eb0" title="Returns the ARGB hex color string." alt="" coords="316,5,499,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,39,302,35,303,40,268,44"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a65e4a7ebacda96b9714e3304b1428d44" title="Sets the ARGB hex color after validation." alt="" coords="316,69,499,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,70,303,74,302,80,268,76"/>
+</map>

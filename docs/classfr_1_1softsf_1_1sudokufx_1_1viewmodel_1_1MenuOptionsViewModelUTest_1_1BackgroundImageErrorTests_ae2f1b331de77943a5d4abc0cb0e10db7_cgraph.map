@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageErrorTests.givenNullFile_whenLoadBackgroundImage_thenShowErrorToast" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageErrorTests.givenNullFile_whenLoadBackgroundImage_thenShowErrorToast">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,372,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#aae209f8a3ddfd8a72731b3fee828ca7b" title="Applies a background image to the specified GridPane." alt="" coords="420,30,709,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="372,55,406,55,406,60,372,60"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane)." alt="" coords="763,5,1049,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="709,41,749,37,749,43,710,46"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#add42eac8d6831cc853249da660b34e14" title="Persists the given image path in the current player&#39;s OptionsDto if it differs from the existing path..." alt="" coords="757,69,1055,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="710,68,744,71,743,77,709,74"/>
+</map>

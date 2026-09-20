@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenPlayerLanguagesWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenPlayerLanguagesWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,340,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a3456ab24f26679272f0553baa4b724b6" title="Computes the hash code based on all fields." alt="" coords="388,20,583,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,37,374,37,374,43,340,43"/>
+</map>

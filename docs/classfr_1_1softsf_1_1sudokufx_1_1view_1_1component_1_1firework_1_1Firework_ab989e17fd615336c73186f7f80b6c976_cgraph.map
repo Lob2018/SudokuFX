@@ -1,0 +1,10 @@
+<map id="fr.softsf.sudokufx.view.component.firework.Firework.updateParticles" name="fr.softsf.sudokufx.view.component.firework.Firework.updateParticles">
+<area shape="rect" id="Node000001" title="Updates positions for all active particles and prunes expired ones." alt="" coords="5,33,311,73"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#adc1e8659376adaf0c3bdc4a8742cd87c" title="Snapshot of the rendering environment including scaling metrics." alt="" coords="712,5,1017,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,31,358,19,534,12,698,14,698,19,534,17,359,24,264,36"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#a238e975882b916d63349843dd54fbd33" title="Captures the current scene metrics and the firework instance." alt="" coords="359,33,664,73"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,51,345,51,345,56,311,56"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1FireworkParticle.html#ada8ac44a5ea749dd30023ad11ce7d49e" title="Updates physics, position, and opacity." alt="" coords="359,97,664,137"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="270,71,387,92,387,98,269,76"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="664,39,698,36,699,41,665,44"/>
+</map>

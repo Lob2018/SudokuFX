@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="62,1721,393,2197"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,799,175,865"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,878,190,1658,198,1721,193,1721,185,1659,92,878"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="199,5,533,1659"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,1659,261,1705,256,1705,262,1658"/>
+</map>

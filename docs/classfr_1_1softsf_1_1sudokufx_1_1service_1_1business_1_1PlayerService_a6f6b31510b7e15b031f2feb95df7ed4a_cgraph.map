@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.business.PlayerService.updatePlayer" name="fr.softsf.sudokufx.service.business.PlayerService.updatePlayer">
+<area shape="rect" id="Node000001" title="Updates an existing player and its associated nested entities (language, options, menu,..." alt="" coords="5,5,255,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameLevelService.html#aec69dc20d643694a70cfa74003161aed" title="Retrieves the GameLevel entity by its business level value." alt="" coords="303,5,581,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,23,289,23,289,28,255,28"/>
+</map>

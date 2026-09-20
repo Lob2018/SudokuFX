@@ -1,0 +1,8 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1ImagePathValidationTests =
+[
+    [ "givenEmptyImagePath_whenCreatingOptions_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1ImagePathValidationTests.html#af1322ce0cd330526874164cd2cfc4a1a", null ],
+    [ "givenEmptySongPath_whenCreatingOptions_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1ImagePathValidationTests.html#a69668aeeb38958cb7c9c7b1c99660bdd", null ],
+    [ "givenNullImagePath_whenCreatingOptions_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1ImagePathValidationTests.html#a96e5137c2eb3b5d48d5b43ca49d1951f", null ],
+    [ "givenNullSongPath_whenCreatingOptions_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1ImagePathValidationTests.html#a7ebe1eefdf34c2371e954fc23ad7267f", null ],
+    [ "givenValidImagePath_whenCreatingOptions_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1ImagePathValidationTests.html#a0a25d4c8abd77eeba018d7df90aa92ae", null ]
+];

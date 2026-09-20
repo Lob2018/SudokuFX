@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html" title=" " alt="" coords="5,5,229,48"/>
+<area shape="rect" id="Node000000" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfig.html" title="Abstract configuration class for setting up the application&#39;s data source." alt="" coords="5,117,249,157"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfigUTest_1_1TestDataSourceConfig.html" title=" " alt="" coords="297,5,587,60"/>
+<area shape="poly" id="edge9_Node000000_Node000001" title=" " alt="" coords="190,109,296,70,337,58,339,63,298,75,192,114"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigCds.html" title="Overrides Abstract DataSource hikariDataSource for the CDS profile." alt="" coords="320,85,564,125"/>
+<area shape="poly" id="edge10_Node000000_Node000002" title=" " alt="" coords="263,120,319,114,320,120,264,126"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigDefault.html" title="Overrides Abstract DataSource hikariDataSource for the default profile." alt="" coords="320,149,564,189"/>
+<area shape="poly" id="edge11_Node000000_Node000003" title=" " alt="" coords="264,148,320,154,319,159,263,153"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigTest.html" title="Overrides Abstract DataSource hikariDataSource for the test profile." alt="" coords="320,213,564,253"/>
+<area shape="poly" id="edge12_Node000000_Node000004" title=" " alt="" coords="190,159,298,198,343,210,342,215,297,203,188,164"/>
 </map>

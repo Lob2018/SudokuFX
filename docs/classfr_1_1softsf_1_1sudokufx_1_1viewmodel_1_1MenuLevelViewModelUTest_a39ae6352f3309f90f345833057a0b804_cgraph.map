@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenSelectedLevel_whenIsSelectedBinding_thenBindingReflectsSelection" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenSelectedLevel_whenIsSelectedBinding_thenBindingReflectsSelection">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,357,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel.html#a526715c7454e1e8e77e7996c5b901385" title="Returns a reactive BooleanBinding indicating whether the given difficulty level is currently selected..." alt="" coords="415,5,701,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="357,40,401,36,401,41,358,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel.html#a76e3858283a44df2008e93c998e4e37a" title="Updates the selected difficulty level and its associated stars percentage." alt="" coords="405,69,711,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="358,70,392,73,391,78,357,75"/>
+</map>

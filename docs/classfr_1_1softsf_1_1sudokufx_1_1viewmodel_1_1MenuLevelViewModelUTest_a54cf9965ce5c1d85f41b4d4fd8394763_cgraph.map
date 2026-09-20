@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenDifficultyLevel_whenUpdateSelectedLevel_thenSelectedLevelAndStarsAreSet" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenDifficultyLevel_whenUpdateSelectedLevel_thenSelectedLevelAndStarsAreSet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,63,369,132"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel.html#a17bb2d9ba7687f5656310dbd8ddf3297" title="Returns the property representing the stars completion percentage." alt="" coords="421,5,719,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="369,60,449,45,450,50,370,66"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel.html#af7544ad05de1fdd79c9eb582b5d90719" title="Returns the property representing the currently selected difficulty level." alt="" coords="441,70,699,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="370,95,427,95,427,100,370,100"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel.html#a76e3858283a44df2008e93c998e4e37a" title="Updates the selected difficulty level and its associated stars percentage." alt="" coords="417,149,723,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="370,129,450,144,449,149,369,134"/>
+</map>

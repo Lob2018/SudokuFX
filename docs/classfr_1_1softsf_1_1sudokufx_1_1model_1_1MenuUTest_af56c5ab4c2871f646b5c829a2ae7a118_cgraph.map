@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.MenuUTest.givenTwoMenus_whenCompareWithEquals_thenEqualsWorksCorrectly" name="fr.softsf.sudokufx.model.MenuUTest.givenTwoMenus_whenCompareWithEquals_thenEqualsWorksCorrectly">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,280,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#a4f57e5b1e480916c615cff552ab80a46" title="Compares this menu with another object for equality based on all fields." alt="" coords="328,20,511,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,37,314,37,314,43,280,43"/>
+</map>

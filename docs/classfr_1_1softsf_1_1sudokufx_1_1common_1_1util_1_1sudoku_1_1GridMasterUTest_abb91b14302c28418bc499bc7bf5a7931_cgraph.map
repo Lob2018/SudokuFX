@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenValidLevel_whenCreateGrids_thenGridsGeneratedSuccessfully" name="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenValidLevel_whenCreateGrids_thenGridsGeneratedSuccessfully">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,22,365,77"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#a9b767d7f5930ee45e7ce2467faedf322" title="Immutable record representing the dual output of a Sudoku grid generation." alt="" coords="413,29,687,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="366,47,400,47,400,52,366,52"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="484,30,480,20,490,10,514,5,550,3,592,5,614,13,613,18,591,11,550,8,515,10,493,15,485,21,489,28"/>
+</map>

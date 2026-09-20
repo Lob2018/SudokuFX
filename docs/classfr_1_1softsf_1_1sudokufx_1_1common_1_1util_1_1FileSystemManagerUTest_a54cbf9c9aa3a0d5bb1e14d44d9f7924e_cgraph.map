@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.util.FileSystemManagerUTest.givenNullPath_whenDeleteFile_thenIllegalArgumentExceptionThrown" name="fr.softsf.sudokufx.common.util.FileSystemManagerUTest.givenNullPath_whenDeleteFile_thenIllegalArgumentExceptionThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,388,60"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1LocalUserDataPurger.html#a3da91f76f8c48fd2e760d1ee1ad8c287" title="Deletes a filesystem entry." alt="" coords="436,13,663,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="388,30,422,30,422,35,388,35"/>
+</map>

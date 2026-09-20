@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setLabelAccessibleText" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setLabelAccessibleText">
+<area shape="rect" id="Node000001" title="Binds the label&#39;s accessible text to a localized, formatted string reflecting the cell&#39;s value and 1&#45;..." alt="" coords="5,5,307,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a0d1630abe71ae622f3522fbed9855750" title="Formats a raw digit string (1–9) into a 3&#45;line spaced grid display." alt="" coords="355,5,597,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,23,341,23,341,28,307,28"/>
+</map>

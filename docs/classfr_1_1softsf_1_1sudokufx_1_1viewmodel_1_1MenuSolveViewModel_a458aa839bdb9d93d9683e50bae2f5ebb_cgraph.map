@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuSolveViewModel.MenuSolveViewModel" name="fr.softsf.sudokufx.viewmodel.MenuSolveViewModel.MenuSolveViewModel">
+<area shape="rect" id="Node000001" title="Initializes the MenuSolveViewModel with necessary reactive bindings." alt="" coords="5,49,320,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#aa303e99bbf0389e2703dadc1cec72c92" title="Creates a localized StringBinding by concatenating the value of two keys." alt="" coords="378,5,657,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,50,364,46,365,51,321,55"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a44c66899d8d3244cbe940b77048c124e" title="Creates a simple localized StringBinding for the given key." alt="" coords="368,85,667,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="321,82,355,86,354,91,320,87"/>
+</map>

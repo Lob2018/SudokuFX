@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullPlayerLanguage_whenSettingPlayerlanguageid_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullPlayerLanguage_whenSettingPlayerlanguageid_thenNullPointerExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,332,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="388,5,571,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="332,38,374,33,375,39,332,43"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a9afc39d38139830bb7545ac2f50574f3" title="Sets the language after validation." alt="" coords="380,69,579,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="332,72,367,75,366,80,332,77"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setValues" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setValues">
+<area shape="rect" id="Node000001" title="Sets all 81 cell values and optionally their editability." alt="" coords="5,69,248,109"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="304,5,547,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,67,317,46,319,51,221,72"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="296,69,555,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,87,283,87,283,92,248,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="297,133,553,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="221,107,319,128,317,133,220,112"/>
+</map>

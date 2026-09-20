@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.deletePlayer" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.deletePlayer">
+<area shape="rect" id="Node000001" title="Deletes the specified player from the system and refreshes the UI state." alt="" coords="5,37,263,77"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a6e8fa34df63047e169ef52d3168a5de7" title="Refreshes the UI state by synchronizing the current player, toggling the switched signal,..." alt="" coords="319,5,553,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,41,305,37,305,42,263,46"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a8f8c1ded5be3fc82046472ea3fca63bb" title="Executes the provided action within a guarded block to prevent reentrant updates and state corruption..." alt="" coords="311,69,561,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="263,68,297,72,297,77,262,74"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#ae780866cb629a7b3fb902530ee8b4098" title="Loads players into the observable list." alt="" coords="609,5,860,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="553,23,596,23,596,28,553,28"/>
+</map>

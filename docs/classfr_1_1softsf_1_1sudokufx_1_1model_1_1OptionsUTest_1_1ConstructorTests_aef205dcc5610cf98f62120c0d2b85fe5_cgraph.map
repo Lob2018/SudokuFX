@@ -1,0 +1,15 @@
+<map id="fr.softsf.sudokufx.model.OptionsUTest.ConstructorTests.givenValidParameters_whenCreatingOptionsWithConstructor_thenOptionsIsCreatedCorrectly" name="fr.softsf.sudokufx.model.OptionsUTest.ConstructorTests.givenValidParameters_whenCreatingOptionsWithConstructor_thenOptionsIsCreatedCorrectly">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,151,311,220"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#acc418d26dcb7c51c4aea3db089fa0eb0" title="Returns the ARGB hex color string." alt="" coords="359,5,541,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,148,276,101,357,55,373,48,375,53,360,60,278,106,208,153"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a9649d310a5134e64f8dffe3f4af460ad" title="Returns the background image path." alt="" coords="359,69,541,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="263,148,374,111,376,116,265,153"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a069915a3bec6e01b018ae7a2c72c484f" title="Returns true if the background song is muted." alt="" coords="359,133,541,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,166,345,162,345,167,311,171"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a79ffb8f66699ff9b75f99fa22d7baea7" title="Returns true if the background image is opaque." alt="" coords="359,197,541,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="311,199,345,203,345,209,310,205"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#ab95e23590badb3ae2d313fc255e5aebc" title="Returns the unique ID of this Options instance." alt="" coords="359,261,541,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="265,218,376,254,374,260,263,223"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#ad2beaeacbb7a558134a3a895cbcb43f4" title="Returns the background song path." alt="" coords="359,325,541,365"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="208,218,278,265,360,311,375,318,373,323,357,316,276,269,205,222"/>
+</map>

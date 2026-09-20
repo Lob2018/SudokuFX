@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.DetachFromPlayerTests.givenGameWithPlayer_whenDetachingFromPlayer_thenPlayerIsSetToNull" name="fr.softsf.sudokufx.model.GameUTest.DetachFromPlayerTests.givenGameWithPlayer_whenDetachingFromPlayer_thenPlayerIsSetToNull">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,320,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#af9a39220055040a9dac037482e947cdd" title="Detaches this game from its current player." alt="" coords="368,5,551,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,38,354,34,355,39,320,43"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a1a6fc943d74a5ff7ff96081c78206f1d" title="Returns the Player associated with this game." alt="" coords="368,69,551,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="320,72,355,75,354,81,320,77"/>
+</map>

@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1UtilityTextMethodsTests =
+[
+    [ "givenMethodAndInput_whenCallUtilityTextMethod_thenReturnExpectedValue", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1UtilityTextMethodsTests.html#a1be6efaf83757a0f8d96a86be7d24018", null ],
+    [ "utilityTextMethodsProvider", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1UtilityTextMethodsTests.html#a5d827857c2eb0d7857b04dadbeaef117", null ]
+];

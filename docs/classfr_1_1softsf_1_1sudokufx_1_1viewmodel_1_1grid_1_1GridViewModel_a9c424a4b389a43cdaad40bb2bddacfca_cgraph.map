@@ -1,0 +1,15 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applyGeneratedGrid" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.applyGeneratedGrid">
+<area shape="rect" id="Node000001" title="Applies the generated grid data to the player state and UI cells." alt="" coords="5,69,261,109"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a9b97547be6bd1bf9961ff859ae23afd7" title="Handles UI notifications when grid generation fails." alt="" coords="309,5,593,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="233,67,338,45,339,51,234,72"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a85b73068471edb726968c94d30bc79a6" title="Persists a newly generated game for the current player, updating the selected game with grids,..." alt="" coords="330,69,573,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="262,87,316,87,316,92,262,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="330,133,573,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="234,107,339,128,338,133,233,112"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="649,69,892,109"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="551,131,656,109,657,115,553,136"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="641,133,900,173"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="573,151,628,151,628,156,573,156"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="643,197,899,237"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="553,171,657,192,656,197,551,176"/>
+</map>

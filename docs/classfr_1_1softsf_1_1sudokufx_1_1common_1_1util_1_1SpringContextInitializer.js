@@ -1,0 +1,7 @@
+var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer =
+[
+    [ "SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html#a1d70b1c8db446b32e9547d071bb6d663", null ],
+    [ "createInitializationTask", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html#aec80b2c8add2ad3519eeac6c1e8c05cf", null ],
+    [ "runInitializationTask", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html#a7185e1ba2b9219e85f8308a3425fb26e", null ],
+    [ "context", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html#a527f0898149cc382a18fc679cf0a9b04", null ]
+];

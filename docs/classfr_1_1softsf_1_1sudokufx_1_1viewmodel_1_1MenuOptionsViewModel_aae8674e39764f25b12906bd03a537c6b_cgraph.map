@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.toggleMuteAndPersist" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.toggleMuteAndPersist">
+<area shape="rect" id="Node000001" title="Toggles the audio mute state, persists the new value in OptionsDto, updates the AudioService,..." alt="" coords="5,5,288,60"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane)." alt="" coords="336,13,623,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,30,322,30,322,35,288,35"/>
+</map>

@@ -1,0 +1,4 @@
+var PlayerStateHolderITest_8java =
+[
+    [ "fr.softsf.sudokufx.testing.integration.viewmodel.state.PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1PlayerStateHolderITest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1PlayerStateHolderITest" ]
+];

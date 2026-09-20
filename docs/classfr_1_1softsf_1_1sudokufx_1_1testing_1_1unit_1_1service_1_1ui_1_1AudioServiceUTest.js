@@ -1,0 +1,18 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest =
+[
+    [ "ErrorHandlingTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1ErrorHandlingTests.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1ErrorHandlingTests" ],
+    [ "IntegrationTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1IntegrationTests.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1IntegrationTests" ],
+    [ "MuteUnmuteTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1MuteUnmuteTests.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1MuteUnmuteTests" ],
+    [ "PlayEffectTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1PlayEffectTests.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1PlayEffectTests" ],
+    [ "PlaySongTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1PlaySongTests.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1PlaySongTests" ],
+    [ "StopOperationsTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1StopOperationsTests.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1StopOperationsTests" ],
+    [ "VolumeControlTests", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1VolumeControlTests.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1VolumeControlTests" ],
+    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html#a7a2d3fcff60b10ee2ee422ee9229e905", null ],
+    [ "triggerOnReady", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html#a7e7a11dbd3a3431067ea4b01bded1ffa", null ],
+    [ "ANOTHER_VALID_EFFECT_KEY", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html#a3f6a75e424083794a22f61f40e19e50d", null ],
+    [ "audioService", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html#ab71f4109e2b9c17eaf6ab76bc8ecedb5", null ],
+    [ "INVALID_EFFECT_KEY", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html#ab8942caab321fab0f46dd475f37bb75f", null ],
+    [ "VALID_EFFECT_KEY", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html#a8c53114d5798697e7c24493ebb314db1", null ],
+    [ "validEffectFile", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html#adb5b44ca472ab4b5be1fa2c0235d4c2c", null ],
+    [ "validSongFile", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html#ab81705d77822a0df1179889f05c84b3c", null ]
+];

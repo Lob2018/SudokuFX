@@ -1,0 +1,23 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.GridCellViewModel" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.GridCellViewModel">
+<area shape="rect" id="Node000001" title="Constructs a GridCellViewModel and initializes UI bindings." alt="" coords="5,80,280,120"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a38d783156f2f2ad694cfbec5062de472" title="Applies a computed border style to a JavaFX node, based on content length, focus state,..." alt="" coords="689,95,951,135"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,100,675,109,675,114,280,106"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a0d1630abe71ae622f3522fbed9855750" title="Formats a raw digit string (1–9) into a 3&#45;line spaced grid display." alt="" coords="699,5,941,45"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="191,77,255,54,327,36,420,24,514,17,684,16,684,21,514,22,420,29,329,41,256,60,192,82"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#aadd59b021db2e0fdad7e24de4a6a7cd8" title="Binds the label&#39;s accessible text to a localized, formatted string reflecting the cell&#39;s value and 1&#45;..." alt="" coords="328,51,629,91"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="280,85,314,82,314,88,280,91"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#aaf198f919d0c3422e9f0150483873163" title="Configures UI listeners and formatting logic:" alt="" coords="356,231,601,271"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="189,118,422,223,420,228,187,122"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="629,48,684,41,685,46,630,53"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="510,228,584,186,676,144,701,136,703,141,678,149,587,191,513,233"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="695,303,945,343"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="575,268,711,297,710,302,574,273"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="696,367,944,407"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="513,268,587,311,678,352,703,360,701,365,676,357,584,315,510,273"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a2a551d4792b3263e749994098c3b3748" title="Updates CSS style classes on label and text area to reflect the editable state." alt="" coords="692,431,948,471"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="499,269,572,342,623,382,679,416,695,424,693,428,676,421,620,387,569,346,495,273"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ac95db9585f2ba2ed12d60dd5cca39461" title="Switches from read&#45;only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea a..." alt="" coords="687,159,953,199"/>
+<area shape="poly" id="edge10_Node000005_Node000009" title=" " alt="" coords="574,228,710,199,711,204,575,233"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a9544acad3febede6981c9d8440674d3c" title="Updates the label&#39;s font size CSS class and border style based on the current text content." alt="" coords="677,223,963,278"/>
+<area shape="poly" id="edge11_Node000005_Node000010" title=" " alt="" coords="602,248,664,248,664,253,602,253"/>
+</map>

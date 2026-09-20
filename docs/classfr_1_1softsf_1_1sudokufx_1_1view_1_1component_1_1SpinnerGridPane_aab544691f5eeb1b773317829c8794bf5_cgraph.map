@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.view.component.SpinnerGridPane.SpinnerGridPane" name="fr.softsf.sudokufx.view.component.SpinnerGridPane.SpinnerGridPane">
+<area shape="rect" id="Node000001" title="Constructs a SpinnerGridPane with centered animated icons and initialized pulse animations." alt="" coords="5,37,253,77"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1SpinnerGridPane.html#a1e8616aa12d875d5bf7ddaad918c392a" title="Creates a synchronized pulsing animation (scale and fade) for a specific text node." alt="" coords="301,5,549,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,41,288,38,288,43,254,47"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1SpinnerGridPane.html#ab1f7544f028b59508be298f9df7361fb" title="Initializes the fade&#45;out transition and its completion logic." alt="" coords="301,69,549,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,68,288,72,288,77,253,73"/>
+</map>

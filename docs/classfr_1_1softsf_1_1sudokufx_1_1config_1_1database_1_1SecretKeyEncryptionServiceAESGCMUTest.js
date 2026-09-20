@@ -1,0 +1,15 @@
+var classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest =
+[
+    [ "givenInvalidCipherText_whenDecrypt_thenEmptyArrayReturnedAndErrorLogged", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a73bb05af6e61502d2a7fccb175d498c8", null ],
+    [ "givenInvalidSecretKey_whenEncrypt_thenEmptyArrayReturnedAndErrorLogged", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a643e4deff7d6949af07edb6a6453466f", null ],
+    [ "givenNullOrBlankCypher_whenDecrypt_thenIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#ae649ae1f3c14a48440f71e6cf0453dfe", null ],
+    [ "givenNullOrBlankOriginal_whenEncrypt_thenIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a4582bb1e5da3ea5866d625f85833bb19", null ],
+    [ "givenNullSecretKey_whenConstruct_thenIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a249f935ec72fb689ebef0d673153016f", null ],
+    [ "givenSecret_whenEncryptAndDecrypt_thenOriginalSecretReturned", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a33dd50e0874c46bb99df49a445d4ebca", null ],
+    [ "givenValidEncryptionOutput_whenSplit_thenContainsEncryptedDataAndIv", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a3078b63a66a851791d08360e985f18c1", null ],
+    [ "setup", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a5d1c9b5e19b13bea9cebbf473fe2dd9c", null ],
+    [ "setupAll", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a036901a4541b2d3d33edbae5a4df9a6e", null ],
+    [ "tearDown", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#a48415492ceed5d7c8484c57785346603", null ],
+    [ "iSecretKeyEncryptionServiceAESGCM", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#adc6a3ef12a9cc94ea5a802db3319a7fa", null ],
+    [ "logWatcher", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html#adf9c4eca8f12bd88faab167a1393ce5c", null ]
+];

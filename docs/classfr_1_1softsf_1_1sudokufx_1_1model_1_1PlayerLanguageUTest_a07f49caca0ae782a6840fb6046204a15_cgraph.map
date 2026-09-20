@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithInvalidIso_whenBuild_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithInvalidIso_whenBuild_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,319,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#ad803d89c720e8857feac54f62ae5b614" title="Returns a new PlayerLanguageBuilder instance for fluent construction." alt="" coords="367,20,549,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,37,353,37,353,43,319,43"/>
+</map>

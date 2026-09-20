@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.HelpViewModelUTest.whenShowHelp_thenAlertContainsLogFileButton_andOpensLocalFile" name="fr.softsf.sudokufx.viewmodel.HelpViewModelUTest.whenShowHelp_thenAlertContainsLogFileButton_andOpensLocalFile">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,269,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1HelpViewModel.html#aca840cc2daae5861c308a264e5ab4e07" title="Displays the given alert and waits for user interaction." alt="" coords="317,20,531,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,37,304,37,304,43,269,43"/>
+</map>

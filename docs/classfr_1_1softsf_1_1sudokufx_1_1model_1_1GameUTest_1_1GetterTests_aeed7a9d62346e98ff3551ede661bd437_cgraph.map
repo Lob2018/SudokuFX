@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingPlayer_thenPlayerIsReturned" name="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingPlayer_thenPlayerIsReturned">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,285,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a1a6fc943d74a5ff7ff96081c78206f1d" title="Returns the Player associated with this game." alt="" coords="333,20,516,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="285,37,320,37,320,43,285,43"/>
+</map>

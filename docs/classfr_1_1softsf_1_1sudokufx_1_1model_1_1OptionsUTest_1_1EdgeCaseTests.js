@@ -1,0 +1,7 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EdgeCaseTests =
+[
+    [ "givenImageMaximumLengthStrings_whenCreatingOptions_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EdgeCaseTests.html#a683dc11b7ef8d21721ff5722077bd509", null ],
+    [ "givenMixedCaseHexColors_whenCreatingOptions_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EdgeCaseTests.html#aed90ff06ede7fd0ab497a169164dea81", null ],
+    [ "givenNullOptionsId_whenCreatingOptions_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EdgeCaseTests.html#aeb472bfb8b9347519a7abfe1ce2cbc22", null ],
+    [ "givenSongMaximumLengthStrings_whenCreatingOptions_thenNoExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EdgeCaseTests.html#a5570f008092132508b62eead0f25dc14", null ]
+];

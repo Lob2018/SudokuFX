@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.PossibilityStarsHBox" name="fr.softsf.sudokufx.view.component.PossibilityStarsHBox">
+<area shape="rect" id="Node000001" title="A reusable JavaFX HBox component that displays a star rating based on a percentage (0–100)." alt="" coords="5,119,251,387"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="103,5,153,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,85,131,118,125,118,125,85"/>
+</map>

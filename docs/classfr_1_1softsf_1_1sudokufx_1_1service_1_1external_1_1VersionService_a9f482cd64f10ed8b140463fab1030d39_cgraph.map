@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.service.external.VersionService.checkLatestVersion" name="fr.softsf.sudokufx.service.external.VersionService.checkLatestVersion">
+<area shape="rect" id="Node000001" title="Checks if the current application version matches the latest release on GitHub." alt="" coords="5,5,253,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1VersionService.html#ab958b18950641d25ff145c6c990a0cbf" title="Parses the byte array directly." alt="" coords="301,5,548,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,23,288,23,288,28,254,28"/>
+</map>

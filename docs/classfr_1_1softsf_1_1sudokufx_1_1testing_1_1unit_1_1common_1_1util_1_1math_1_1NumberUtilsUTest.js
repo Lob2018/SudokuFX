@@ -1,0 +1,10 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest =
+[
+    [ "givenDivisionProducingInfinity_whenSafeDivide_thenReturnsNaN", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html#aa263f42ae1f7f5f490ce629e11fe57ce", null ],
+    [ "givenDivisionProducingNaN_whenSafeDivide_thenReturnsNaN", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html#ae565c2f49d6ef9b7b1a46438ff6c74e0", null ],
+    [ "givenTwoDoublesWithinCentiEpsilon_whenAreDoublesEqualEpsilon_thenReturnsTrue", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html#a954e84dcb5456047945966861202dc8b", null ],
+    [ "givenTwoDoublesWithinDefaultEpsilon_whenAreDoublesEqual_thenReturnsTrue", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html#ac427941ef4f7e322107b9dbe2a0b8d36", null ],
+    [ "givenValidNumeratorAndDenominator_whenSafeDivide_thenReturnsCorrectResult", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html#a7c0691af946e6b76b7883f2e59ea1fa9", null ],
+    [ "givenVerySmallDenominator_whenSafeDivide_thenReturnsNaN", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html#ace881e7d12bcf54b24d275fe41475386", null ],
+    [ "givenZeroDenominator_whenSafeDivide_thenReturnsNaN", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html#aa996a42d7bf26ed43b72928e62bd0016", null ]
+];

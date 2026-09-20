@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenExistingGameLevel_whenSettingNewLevel_thenShouldUpdateCorrectly" name="fr.softsf.sudokufx.model.GameLevelUTest.givenExistingGameLevel_whenSettingNewLevel_thenShouldUpdateCorrectly">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,295,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#ad70081f09c712d4f3b5836894c2ff15c" title="Returns the difficulty value of this game level." alt="" coords="343,5,525,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="295,38,329,34,329,40,295,44"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#a3dbb7779e391585b833acc0f2f030d1c" title="Sets the difficulty value of this game level." alt="" coords="343,69,525,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="295,71,329,75,329,80,295,76"/>
+</map>

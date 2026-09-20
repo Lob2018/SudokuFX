@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenNullImagePath_whenSettingImagePath_thenNullPointerExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,280,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#aa67cb5a4cf0752e3788b1eab3c747288" title="Sets the background image path after validation." alt="" coords="328,20,511,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,37,314,37,314,43,280,43"/>
+</map>

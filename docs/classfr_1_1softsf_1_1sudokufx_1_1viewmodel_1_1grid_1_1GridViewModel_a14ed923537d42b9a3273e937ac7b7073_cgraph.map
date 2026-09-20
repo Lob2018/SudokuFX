@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.updateSolveProgress" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.updateSolveProgress">
+<area shape="rect" id="Node000001" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="5,69,268,109"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="336,5,595,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,67,348,45,349,51,241,72"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="337,69,593,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,87,324,87,324,92,268,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a1d2b83dfdebc0615c30d21ca2cfceaf8" title="Sets the value of the percentage property." alt="" coords="316,133,615,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="241,107,349,128,348,133,240,112"/>
+</map>

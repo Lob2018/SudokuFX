@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenBlankFXMLName_whenSetRootByFXMLName_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenBlankFXMLName_whenSetRootByFXMLName_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,336,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1Coordinator.html#a76beb2414cb9e9e68181f08fd930f0b9" title="Loads the specified FXML file, sets it as the root of the current JavaFX scene, and returns its contr..." alt="" coords="384,20,627,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="336,37,370,37,370,43,336,43"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1Coordinator.html#a64e23a6257dc42929da8e6ee620fdca7" title="Package&#45;private method to exit the JavaFX platform." alt="" coords="675,20,885,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="627,37,661,37,661,43,627,43"/>
+</map>

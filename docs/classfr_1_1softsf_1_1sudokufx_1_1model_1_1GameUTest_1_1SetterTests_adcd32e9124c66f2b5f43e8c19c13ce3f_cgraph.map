@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.SetterTests.givenValidBoolean_whenSettingIsSelected_thenIsSelectedIsUpdated" name="fr.softsf.sudokufx.model.GameUTest.SetterTests.givenValidBoolean_whenSettingIsSelected_thenIsSelectedIsUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,251,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a45e9d6ccd85aa60f95f02d7b04b0840c" title="Returns whether the game is currently selected." alt="" coords="299,5,481,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,40,285,35,285,41,251,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a60d86d25fb2cffb5acccc81e107561e6" title="Sets the selection state of this game." alt="" coords="299,69,481,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,70,285,74,285,79,251,75"/>
+</map>

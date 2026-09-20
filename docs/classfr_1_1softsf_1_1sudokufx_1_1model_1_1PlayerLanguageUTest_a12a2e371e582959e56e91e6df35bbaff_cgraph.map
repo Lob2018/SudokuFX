@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenExistingPlayerLanguage_whenSetValidIsoUsingSetter_thenIsoIsUpdated" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenExistingPlayerLanguage_whenSetValidIsoUsingSetter_thenIsoIsUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,321,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a70c763e120718f9286c4d476b6b7c968" title="Returns the ISO code of this PlayerLanguage." alt="" coords="369,5,552,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="321,38,356,34,356,39,322,43"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a551c772e482e524f1f4bb7928760fd07" title="Sets the ISO code after validation." alt="" coords="369,69,552,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="322,72,356,75,356,81,321,77"/>
+</map>

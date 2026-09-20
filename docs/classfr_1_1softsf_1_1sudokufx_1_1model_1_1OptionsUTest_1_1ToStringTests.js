@@ -1,0 +1,4 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1ToStringTests =
+[
+    [ "givenOptionsInstance_whenCallingToString_thenFormattedStringIsReturned", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1ToStringTests.html#a8f73920eac562cf9014f6c30396eda32", null ]
+];

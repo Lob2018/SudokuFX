@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageErrorTests =
+[
+    [ "givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageErrorTests.html#ac94ad2bb0c2ccae72a09505cf6422a56", null ],
+    [ "givenNullFile_whenLoadBackgroundImage_thenShowErrorToast", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageErrorTests.html#ae2f1b331de77943a5d4abc0cb0e10db7", null ]
+];

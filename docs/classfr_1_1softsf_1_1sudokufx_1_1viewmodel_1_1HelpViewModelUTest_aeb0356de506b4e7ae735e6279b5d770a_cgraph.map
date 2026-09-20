@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.HelpViewModelUTest.givenNullAlert_whenDisplayAlert_thenThrowsNPE" name="fr.softsf.sudokufx.viewmodel.HelpViewModelUTest.givenNullAlert_whenDisplayAlert_thenThrowsNPE">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,263,60"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1HelpViewModel.html#aca840cc2daae5861c308a264e5ab4e07" title="Displays the given alert and waits for user interaction." alt="" coords="311,13,524,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,30,297,30,297,35,263,35"/>
+</map>

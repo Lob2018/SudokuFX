@@ -1,0 +1,22 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistUseThisGridValue" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.persistUseThisGridValue">
+<area shape="rect" id="Node000001" title="Persists the user&#45;defined grid from the solve submenu for the active player&#39;s game if modified and va..." alt="" coords="5,157,289,197"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a9c424a4b389a43cdaad40bb2bddacfca" title="Applies the generated grid data to the player state and UI cells." alt="" coords="349,69,605,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,155,337,119,371,110,373,115,338,124,213,160"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="355,157,598,197"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="290,175,341,175,341,180,290,180"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a78b4baf86c366546548f10a4ade5fa62" title="Returns the integer property for the solve percentage." alt="" coords="337,222,616,277"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="240,195,339,216,338,222,239,200"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a9b97547be6bd1bf9961ff859ae23afd7" title="Handles UI notifications when grid generation fails." alt="" coords="664,5,948,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="580,67,689,45,690,51,581,72"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a85b73068471edb726968c94d30bc79a6" title="Persists a newly generated game for the current player, updating the selected game with grids,..." alt="" coords="685,69,927,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="605,87,671,87,671,92,605,92"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="685,133,927,173"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="581,107,690,128,689,133,580,112"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="1004,69,1247,109"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="906,131,1011,109,1012,115,907,136"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="996,133,1255,173"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="928,151,983,151,983,156,928,156"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="997,197,1253,237"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="907,171,1012,192,1011,197,906,176"/>
+<area shape="poly" id="edge9_Node000009_Node000009" title=" " alt="" coords="417,158,413,148,423,138,444,133,477,131,514,133,535,141,533,146,513,139,477,136,445,138,425,143,418,149,421,156"/>
+</map>

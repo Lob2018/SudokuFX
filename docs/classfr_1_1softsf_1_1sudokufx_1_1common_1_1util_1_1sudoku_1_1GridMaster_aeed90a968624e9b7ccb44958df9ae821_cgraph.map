@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilites" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.getPossibilites">
+<area shape="rect" id="Node000001" title="Calcule les possibilités pour chaque case de la grille de Sudoku." alt="" coords="5,5,279,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridMaster.html#a27aa242e0289c28db22cd6caa98aec06" title="Initialise le tableau des possibilités pour chaque case." alt="" coords="327,5,600,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,23,313,23,313,28,279,28"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridMaster.html#aeabb85bac7acd0ff179f259fa13b17ea" title="Élimine une valeur des candidats des cellules voisines (ligne, colonne, bloc)." alt="" coords="648,5,921,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="600,23,634,23,634,28,600,28"/>
+</map>

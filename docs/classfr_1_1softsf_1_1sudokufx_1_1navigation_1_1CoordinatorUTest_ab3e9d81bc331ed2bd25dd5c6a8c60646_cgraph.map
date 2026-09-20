@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenExceptionDuringToggleLanguage_whenToggleLanguage_thenCatchAndToast" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenExceptionDuringToggleLanguage_whenToggleLanguage_thenCatchAndToast">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,287,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1Coordinator.html#a67f2ba8f85685181dea0c4a2263a61dc" title="Toggles the application&#39;s language between French (&quot;FR&quot;) and English (&quot;EN&quot;)." alt="" coords="335,20,545,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="287,37,321,37,321,43,287,43"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1Coordinator.html#aff34e77864185144dffd978d6ee2cdd4" title="Updates the current player&#39;s language and refreshes the player state." alt="" coords="593,20,844,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="546,37,580,37,580,43,546,43"/>
+</map>

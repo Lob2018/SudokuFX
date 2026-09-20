@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.BuilderTests.givenMissingRequiredGrid_whenBuilding_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.GameUTest.BuilderTests.givenMissingRequiredGrid_whenBuilding_thenNullPointerExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,316,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a0dfe478a7e13d2d35b7f85b1985e6838" title="Creates a new GameBuilder for fluent construction." alt="" coords="364,20,547,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="316,37,350,37,350,43,316,43"/>
+</map>

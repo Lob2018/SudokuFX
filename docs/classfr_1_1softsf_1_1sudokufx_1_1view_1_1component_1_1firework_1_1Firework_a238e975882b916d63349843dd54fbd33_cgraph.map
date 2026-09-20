@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.firework.Firework.getFireworkContext" name="fr.softsf.sudokufx.view.component.firework.Firework.getFireworkContext">
+<area shape="rect" id="Node000001" title="Captures the current scene metrics and the firework instance." alt="" coords="5,5,311,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#adc1e8659376adaf0c3bdc4a8742cd87c" title="Snapshot of the rendering environment including scaling metrics." alt="" coords="359,5,664,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,23,345,23,345,28,311,28"/>
+</map>

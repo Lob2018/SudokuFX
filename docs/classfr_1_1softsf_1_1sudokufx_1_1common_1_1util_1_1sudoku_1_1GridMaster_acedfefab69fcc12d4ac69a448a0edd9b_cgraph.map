@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.[static initializer]" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.[static initializer]">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,37,279,77"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridMaster.html#a5248b7b6a995e1f92d53f39bd77dbf38" title="Ajoute les voisins du carré (box) pour l&#39;index donné dans la table NEIGHBORS." alt="" coords="327,5,600,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,41,313,38,313,43,279,46"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridMaster.html#a4435fa6d316221911a6531db7dcd9bf3" title="Ajoute les voisins de ligne et de colonne pour l&#39;index donné dans la table NEIGHBORS." alt="" coords="327,69,600,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="279,68,313,72,313,77,279,74"/>
+</map>

@@ -1,0 +1,52 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.init">
+<area shape="rect" id="Node000001" title="Instantiates the 81 GridCellViewModel and binds text change listeners." alt="" coords="5,404,248,444"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="1289,292,1532,332"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,411,1275,321,1276,326,249,416"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#add773c382452e7476099209f6898f991" title="Synchronizes the grid state and manages side effects based on the current application mode." alt="" coords="296,432,567,472"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="248,432,283,436,282,441,248,438"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a3be7edba49a294b63514cac2edba058e" title="Synchronizes the grid state during manual solving." alt="" coords="621,184,887,224"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="457,430,714,230,718,235,460,434"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ac30ea1feb669d014d0d0a58bd85cfc87" title="Handles grid persistence and completion verification during regular gameplay." alt="" coords="615,464,893,504"/>
+<area shape="poly" id="edge17_Node000003_Node000011" title=" " alt="" coords="567,463,601,466,601,472,567,468"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ad1b7ef7994bef2d64edd271bf77a9cbc" title="Checks if the current UI context is set to the Solve menu." alt="" coords="629,589,879,629"/>
+<area shape="poly" id="edge29_Node000003_Node000019" title=" " alt="" coords="475,470,701,581,698,586,473,475"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="830,221,942,247,1116,275,1276,295,1275,301,1115,280,941,252,829,227"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="1281,133,1540,173"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="857,181,941,169,1110,157,1267,152,1267,157,1111,162,942,175,858,187"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="1289,212,1532,252"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="853,221,942,233,1115,240,1275,237,1275,242,1115,246,941,239,853,227"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="1283,69,1539,109"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="770,182,799,151,839,115,887,81,940,55,980,43,1015,37,1075,36,1136,45,1214,55,1293,65,1293,70,1213,60,1136,50,1075,41,1015,42,981,48,942,60,890,85,842,119,803,155,774,186"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a784d6f09a416df51f857b06ef14d4df5" title="Resets a cell to its default editable state and clears content." alt="" coords="952,184,1203,224"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="888,201,938,201,938,207,888,207"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a14ed923537d42b9a3273e937ac7b7073" title="Calculates the solution based on anchored cells and updates editable cells." alt="" coords="946,69,1209,109"/>
+<area shape="poly" id="edge13_Node000004_Node000009" title=" " alt="" coords="800,181,940,125,987,111,989,116,942,131,802,186"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="1140,222,1262,261,1335,285,1334,290,1261,267,1139,227"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="1202,182,1267,172,1268,178,1203,188"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="1203,212,1276,218,1275,223,1203,217"/>
+<area shape="poly" id="edge12_Node000008_Node000007" title=" " alt="" coords="1115,182,1182,150,1260,119,1290,110,1291,115,1262,124,1184,155,1118,186"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="1183,107,1293,128,1292,133,1182,112"/>
+<area shape="poly" id="edge15_Node000009_Node000007" title=" " alt="" coords="1209,87,1269,87,1269,92,1209,92"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a1d2b83dfdebc0615c30d21ca2cfceaf8" title="Sets the value of the percentage property." alt="" coords="1261,5,1560,45"/>
+<area shape="poly" id="edge16_Node000009_Node000010" title=" " alt="" coords="1182,67,1292,45,1293,50,1183,72"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a6c7bd2140fad9b3091830f3f81c64827" title="Returns whether the current game has a non&#45;empty default grid." alt="" coords="956,400,1199,440"/>
+<area shape="poly" id="edge18_Node000011_Node000012" title=" " alt="" coords="855,461,962,440,963,445,856,467"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ad536719f789ab2bb851aa4b26d44c075" title="Checks if all 81 cells contain valid single&#45;digit values (1&#45;9)." alt="" coords="1269,613,1552,653"/>
+<area shape="poly" id="edge19_Node000011_Node000013" title=" " alt="" coords="787,502,857,542,899,561,942,577,1021,597,1102,612,1256,627,1255,632,1102,617,1020,603,941,583,897,566,854,546,785,507"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#aad1610b7e07349137ebf0d3d592a5b09" title="Persists the current grid state for the active player’s selected game." alt="" coords="956,464,1199,504"/>
+<area shape="poly" id="edge22_Node000011_Node000015" title=" " alt="" coords="894,481,942,481,942,487,894,487"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a77d49e325684b6bef071fb2461c896cb" title="Validates the grid by attempting to solve it." alt="" coords="956,528,1199,568"/>
+<area shape="poly" id="edge24_Node000011_Node000016" title=" " alt="" coords="856,501,963,523,962,528,855,507"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a14e2c0c3e0e51a0fee38c181b39fa6e2" title="Gets a list of all cell text values in row&#45;major order." alt="" coords="1608,556,1851,596"/>
+<area shape="poly" id="edge20_Node000013_Node000014" title=" " alt="" coords="1522,611,1604,596,1605,601,1523,616"/>
+<area shape="poly" id="edge21_Node000014_Node000014" title=" " alt="" coords="1671,557,1667,546,1677,537,1698,531,1729,529,1766,532,1786,539,1784,544,1765,537,1729,535,1698,537,1679,542,1673,547,1676,555"/>
+<area shape="poly" id="edge23_Node000015_Node000014" title=" " alt="" coords="1178,461,1212,450,1235,434,1246,426,1260,420,1344,398,1412,389,1445,389,1480,395,1561,420,1607,445,1647,477,1682,512,1708,543,1704,546,1678,515,1644,481,1604,449,1559,425,1478,400,1445,395,1412,394,1345,403,1262,425,1248,431,1239,438,1215,454,1180,466"/>
+<area shape="poly" id="edge28_Node000016_Node000013" title=" " alt="" coords="1157,565,1319,607,1318,612,1156,571"/>
+<area shape="poly" id="edge26_Node000016_Node000014" title=" " alt="" coords="1199,551,1594,568,1594,573,1199,556"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a4fdf2930215eea12812190e33e1ddeca" title="Handles all actions when a grid is successfully completed." alt="" coords="1289,499,1532,539"/>
+<area shape="poly" id="edge25_Node000016_Node000017" title=" " alt="" coords="1199,535,1275,528,1276,533,1199,540"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#af41c64cb771df8f4fa5bbf0c3a34431b" title="Solves the given 9x9 Sudoku grid." alt="" coords="1287,435,1534,475"/>
+<area shape="poly" id="edge27_Node000016_Node000018" title=" " alt="" coords="1178,525,1212,514,1236,499,1260,484,1283,476,1285,481,1262,489,1239,504,1214,518,1180,530"/>
+<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1ActiveMenuOrSubmenuViewModel.html#aaa10d471a09d5ea61e1dd7b75d3e89e9" title="Returns the observable property representing the active menu." alt="" coords="941,643,1213,698"/>
+<area shape="poly" id="edge30_Node000019_Node000020" title=" " alt="" coords="861,627,928,640,927,645,860,632"/>
+</map>

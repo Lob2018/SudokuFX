@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.LevelInteractionHandler" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.LevelInteractionHandler">
+<area shape="rect" id="Node000001" title="Initializes the handler with required reactive view models and notification services." alt="" coords="5,5,292,60"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler.html#ac14e8afed6bf5c0b770de7e5022ac671" title="Configures the cyclical Timeline for periodic desired possibilities increments." alt="" coords="340,13,615,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,30,326,30,326,35,292,35"/>
+</map>

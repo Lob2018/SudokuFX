@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.CrashScreenView" name="fr.softsf.sudokufx.view.CrashScreenView">
+<area shape="rect" id="Node000001" title="View class for the crash screen without business logic." alt="" coords="5,119,292,1101"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="107,5,190,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,84,151,118,146,118,146,84"/>
+</map>

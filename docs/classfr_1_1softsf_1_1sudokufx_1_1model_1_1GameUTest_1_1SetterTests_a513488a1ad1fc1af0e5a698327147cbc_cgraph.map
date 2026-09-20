@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.SetterTests.givenValidUpdatedAt_whenSettingUpdatedAt_thenUpdatedAtIsUpdated" name="fr.softsf.sudokufx.model.GameUTest.SetterTests.givenValidUpdatedAt_whenSettingUpdatedAt_thenUpdatedAtIsUpdated">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,253,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a4011299b15b8321fc006067e66f50cb3" title="Returns the last update timestamp." alt="" coords="301,5,484,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,40,287,35,288,41,254,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a3f1136b2325dfb043388d60e8cc3fc78" title="Updates the last modified timestamp." alt="" coords="301,69,484,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="254,70,288,74,287,79,253,75"/>
+</map>

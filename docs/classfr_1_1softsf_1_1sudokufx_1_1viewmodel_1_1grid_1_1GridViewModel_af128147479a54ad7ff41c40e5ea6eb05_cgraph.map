@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridTask" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.setCurrentGridTask">
+<area shape="rect" id="Node000001" title="Creates an asynchronous Task for non&#45;blocking grid generation." alt="" coords="5,195,255,235"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a9c424a4b389a43cdaad40bb2bddacfca" title="Applies the generated grid data to the player state and UI cells." alt="" coords="303,133,559,173"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,192,318,173,319,179,229,197"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="947,161,1189,201"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="255,220,386,226,545,229,718,226,890,215,973,202,973,207,891,220,718,232,545,234,386,231,255,226"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a9b97547be6bd1bf9961ff859ae23afd7" title="Handles UI notifications when grid generation fails." alt="" coords="607,101,891,141"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="559,138,593,134,593,140,559,143"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#a85b73068471edb726968c94d30bc79a6" title="Persists a newly generated game for the current player, updating the selected game with grids,..." alt="" coords="627,165,870,205"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="559,164,613,169,613,174,559,169"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="627,37,870,77"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="481,131,606,87,638,78,639,83,607,92,482,136"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="858,75,892,87,917,102,940,119,1008,153,1006,158,937,124,914,107,890,92,856,80"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="939,69,1197,109"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="870,67,926,72,925,78,870,72"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="940,5,1196,45"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="870,43,926,37,926,42,870,48"/>
+</map>

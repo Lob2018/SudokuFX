@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.exception.ResourceLoadException" name="fr.softsf.sudokufx.common.exception.ResourceLoadException">
+<area shape="rect" id="Node000001" title="Checked exception thrown when a resource fails to load." alt="" coords="5,119,264,263"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="95,5,174,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,84,137,118,132,118,132,84"/>
+</map>

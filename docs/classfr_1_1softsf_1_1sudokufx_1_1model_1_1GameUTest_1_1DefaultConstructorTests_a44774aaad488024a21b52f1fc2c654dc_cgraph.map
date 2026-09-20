@@ -1,0 +1,17 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.DefaultConstructorTests.givenDefaultConstructor_whenCreatingGame_thenGameIsCreatedWithDefaultValues" name="fr.softsf.sudokufx.model.GameUTest.DefaultConstructorTests.givenDefaultConstructor_whenCreatingGame_thenGameIsCreatedWithDefaultValues">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,183,303,252"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#ab3e3c86412ae70c7102e512a980568c0" title="Returns the creation timestamp." alt="" coords="351,5,533,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,181,259,118,303,84,349,55,362,49,364,53,352,60,306,89,263,122,192,185"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a39eab33459e7da99e902a0ea83b1d77e" title="Returns the unique ID of the game." alt="" coords="351,69,533,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,180,350,119,368,112,370,117,352,124,222,185"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a56b92064eba83dc275bb1b86dd41a986" title="Returns the Grid associated with this game." alt="" coords="351,133,533,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="302,182,337,174,339,179,304,187"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a492a381272a23baea55d28d154fa8080" title="Returns the GameLevel of this game." alt="" coords="351,197,533,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="303,215,337,215,337,220,303,220"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a1a6fc943d74a5ff7ff96081c78206f1d" title="Returns the Player associated with this game." alt="" coords="351,261,533,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="304,248,339,256,337,261,302,253"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a45e9d6ccd85aa60f95f02d7b04b0840c" title="Returns whether the game is currently selected." alt="" coords="351,325,533,365"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="222,250,352,311,370,318,368,323,350,316,220,255"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a4011299b15b8321fc006067e66f50cb3" title="Returns the last update timestamp." alt="" coords="351,389,533,429"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="192,250,263,313,306,346,352,375,364,381,362,386,349,380,303,350,259,317,188,254"/>
+</map>

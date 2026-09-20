@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.SpinnerGridPane" name="fr.softsf.sudokufx.view.component.SpinnerGridPane">
+<area shape="rect" id="Node000001" title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons." alt="" coords="5,119,275,467"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="104,5,176,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,84,143,118,137,118,137,84"/>
+</map>

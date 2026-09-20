@@ -1,0 +1,9 @@
+var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels =
+[
+    [ "ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels.html#a57826bbd1b02bb87e5d47bfb0d9275fa", null ],
+    [ "getLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels.html#a43cd66f6e8b04c4873f35e51fd57a36d", null ],
+    [ "ERROR", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels.html#a332271018abb3425c11ad29b7e7d8613", null ],
+    [ "INFO", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels.html#af7e8a96f3170ab95dc97c3c45a1a2cad", null ],
+    [ "level", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels.html#ac422a23c78bd1ba496b68e30b377ecd2", null ],
+    [ "WARN", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels.html#a25e76a69f55467861bd047078b7ffcd3", null ]
+];

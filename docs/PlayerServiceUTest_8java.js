@@ -1,0 +1,4 @@
+var PlayerServiceUTest_8java =
+[
+    [ "fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1PlayerServiceUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1PlayerServiceUTest" ]
+];

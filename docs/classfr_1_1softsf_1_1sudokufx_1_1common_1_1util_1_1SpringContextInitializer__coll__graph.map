@@ -1,0 +1,3 @@
+<map id="fr.softsf.sudokufx.common.util.SpringContextInitializer" name="fr.softsf.sudokufx.common.util.SpringContextInitializer">
+<area shape="rect" id="Node000001" title="Manages asynchronous initialization of the Spring application context via JavaFX Tasks,..." alt="" coords="5,5,247,184"/>
+</map>

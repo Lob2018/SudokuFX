@@ -1,0 +1,8 @@
+var MenuOptionsViewModelUTest_8java =
+[
+    [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageErrorTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageErrorTests.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageErrorTests" ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageSuccessTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageSuccessTests.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageSuccessTests" ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest" ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.OptionsToggleTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1OptionsToggleTests.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1OptionsToggleTests" ],
+    [ "fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.UtilityTextMethodsTests", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1UtilityTextMethodsTests.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1UtilityTextMethodsTests" ]
+];

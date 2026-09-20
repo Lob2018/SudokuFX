@@ -1,0 +1,5 @@
+var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1OptionsToggleTests =
+[
+    [ "givenInitialGridOpacity_whenToggleGridOpacity_thenPropertyInverted", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1OptionsToggleTests.html#ab7d71966f00f1b88fbfe0de09d046efb", null ],
+    [ "givenInitialMuteState_whenToggleMute_thenAudioServiceAndPropertyUpdated", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1OptionsToggleTests.html#a5161a1d7d80b4e4d13a109b6909af2c8", null ]
+];

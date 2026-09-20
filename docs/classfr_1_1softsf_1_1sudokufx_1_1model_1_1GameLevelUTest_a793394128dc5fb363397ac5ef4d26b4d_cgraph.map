@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenSameGameLevel_whenCallingHashCodeMultipleTimes_thenShouldReturnConsistentValues" name="fr.softsf.sudokufx.model.GameLevelUTest.givenSameGameLevel_whenCallingHashCodeMultipleTimes_thenShouldReturnConsistentValues">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,288,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#a6d92da7aee775848259d9afe881c07de" title="Computes the hash code based on all fields." alt="" coords="336,20,519,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,37,322,37,322,43,288,43"/>
+</map>

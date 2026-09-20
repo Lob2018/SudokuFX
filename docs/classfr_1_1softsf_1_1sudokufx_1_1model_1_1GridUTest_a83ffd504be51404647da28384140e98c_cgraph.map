@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.GridUTest.givenGridWithValues_whenCallToString_thenCorrectStringRepresentationIsReturned" name="fr.softsf.sudokufx.model.GridUTest.givenGridWithValues_whenCallToString_thenCorrectStringRepresentationIsReturned">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,268,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Grid.html#a99a6f288c597675ad756380f2c679e25" title="Returns a string representation of the grid." alt="" coords="316,20,499,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,37,302,37,302,43,268,43"/>
+</map>

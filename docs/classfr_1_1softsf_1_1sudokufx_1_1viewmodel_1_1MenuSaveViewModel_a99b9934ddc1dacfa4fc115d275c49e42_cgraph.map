@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.createABackup" name="fr.softsf.sudokufx.viewmodel.MenuSaveViewModel.createABackup">
+<area shape="rect" id="Node000001" title="Backup the player&#39;s game." alt="" coords="5,37,268,77"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#a87d9ad3167195e57f2732a4bd91fa692" title="Refreshes the game list and re&#45;synchronizes the selected backup." alt="" coords="316,37,575,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,55,302,55,302,60,268,60"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#a74002017cc6a85275aed0b298ecf2232" title="Loads games into the observable list." alt="" coords="647,5,887,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="574,42,634,36,634,41,575,47"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#a8cf5fc063d8c7472d2c580f0f36c958d" title="Sets the selected backup to the one marked as selected, or defaults to the first in the list if none ..." alt="" coords="623,69,912,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="575,68,609,71,609,76,574,73"/>
+</map>

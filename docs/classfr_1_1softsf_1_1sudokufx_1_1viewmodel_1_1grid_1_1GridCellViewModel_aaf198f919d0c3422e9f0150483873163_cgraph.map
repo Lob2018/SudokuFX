@@ -1,0 +1,15 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setupListeners" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setupListeners">
+<area shape="rect" id="Node000001" title="Configures UI listeners and formatting logic:" alt="" coords="5,165,251,205"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a38d783156f2f2ad694cfbec5062de472" title="Applies a computed border style to a JavaFX node, based on content length, focus state,..." alt="" coords="310,5,573,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,163,211,109,253,80,298,55,316,47,318,52,300,60,256,84,215,113,152,167"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="316,69,567,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,163,298,119,330,110,331,115,299,124,178,168"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="317,133,565,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="251,170,303,165,304,170,251,175"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a2a551d4792b3263e749994098c3b3748" title="Updates CSS style classes on label and text area to reflect the editable state." alt="" coords="313,197,569,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="251,195,300,200,299,206,251,200"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ac95db9585f2ba2ed12d60dd5cca39461" title="Switches from read&#45;only mode (Label visible) to edit mode (TextArea visible), focusing the TextArea a..." alt="" coords="308,261,575,301"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="178,203,299,247,331,255,330,261,298,252,176,208"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a9544acad3febede6981c9d8440674d3c" title="Updates the label&#39;s font size CSS class and border style based on the current text content." alt="" coords="299,326,584,381"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="152,204,216,257,256,286,300,311,317,319,314,323,297,316,254,290,212,261,149,208"/>
+</map>

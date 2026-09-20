@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.GridUTest.givenTwoGrids_whenCompareWithEquals_thenEqualsWorksCorrectly" name="fr.softsf.sudokufx.model.GridUTest.givenTwoGrids_whenCompareWithEquals_thenEqualsWorksCorrectly">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,280,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Grid.html#a0d415a4e7450ac4e74b9c4007d2a0726" title="Compares this grid with another object for equality based on all fields." alt="" coords="328,20,511,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,37,314,37,314,43,280,43"/>
+</map>

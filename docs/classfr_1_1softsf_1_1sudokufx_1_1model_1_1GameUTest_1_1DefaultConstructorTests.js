@@ -1,0 +1,4 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameUTest_1_1DefaultConstructorTests =
+[
+    [ "givenDefaultConstructor_whenCreatingGame_thenGameIsCreatedWithDefaultValues", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameUTest_1_1DefaultConstructorTests.html#a44774aaad488024a21b52f1fc2c654dc", null ]
+];

@@ -1,0 +1,28 @@
+var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest =
+[
+    [ "givenDifficultLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#af14ffcc2f9d0e1976fc12bbb6a235513", null ],
+    [ "givenEasyLevel_whenIncrementDesiredPossibilities_thenCyclesCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a3c55e30ed102973b006a41180713884a", null ],
+    [ "givenFilledGrid_whenClearGrid_thenAllCellsAreZero", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a07542e62276c3629ad805724d27d1bd2", null ],
+    [ "givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a45659fa03e7694bbd1c051da3b865485", null ],
+    [ "givenInitialState_whenResetDesiredPossibilities_thenValueIsDefault", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a1e3f6fdebd17b15b2e4c122a243989d5", null ],
+    [ "givenLevel_whenNotifyLevelPossibilityBounds_thenToasterServiceIsCalled", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#aa7f389fb7521567944783015392712da", null ],
+    [ "givenListWithNullElement_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a48bc3185ff996ac91c4374adac55b870", null ],
+    [ "givenMediumLevel_whenIncrementDesiredPossibilities_thenStepsCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#aa94a2ce4f1a5ded532d017548d2e654f", null ],
+    [ "givenModifiedState_whenResetDesiredPossibilities_thenReturnsDefaultValue", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a5161b5d62b08b347351a1141ca07f104", null ],
+    [ "givenNullLevel_whenSetCurrentGridWithLevel_ForTests_thenNullPointerExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a768e18222c3107633845d99b08bd3417", null ],
+    [ "givenNullValues_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#aad131c9fecce1bd53e4699f218e7000f", null ],
+    [ "givenPlayerWithCompletedGrid_whenGridIsComplete_thenToastTriggered", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a5cb8de8d368daea64311f64f0b98f1db", null ],
+    [ "givenPlayerWithDefaultGrid_whenGetCurrentGridFromModel_thenValuesLoadedAndCurrentGridReturned", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#aa53e7681df7074e5428923e4e6a66bed", null ],
+    [ "givenPlayerWithDefaultGrid_whenGetCurrentSolvedGridFromModel_thenSolvedGridAndCurrentGridReturned", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a65ca2a634eb6241fc86679d3734c4476", null ],
+    [ "givenPlayerWithoutDefaultGrid_whenGetCurrentSolvedGridFromModel_thenReturnEmptyOptional", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a92b906501db7801f7c161dfa897fba61", null ],
+    [ "givenValidLevel_whenSetCurrentGridWithLevel_thenGridIsUpdatedAndPlayerServiceCalledForTests", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#aacda5a3a83a16b5441d1401e9a5ab067", null ],
+    [ "givenValidValues_whenSetValues_thenAllCellsContainCorrectValues", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#ab965a418e20c7e7b4e55f65420858a5b", null ],
+    [ "givenViewModelInitialized_whenInit_then81CellsAreCreated", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#ab7a77eec94175438dfe5d10b7b10deb6", null ],
+    [ "givenWrongSizeList_whenSetValues_thenIllegalArgumentExceptionIsThrown", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a35e688f27a42935950ffe9a7aaf6f768", null ],
+    [ "setUp", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a86fa89ece365d93a0aa08ca82537e02d", null ],
+    [ "gameLevelMapperMock", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a8d99dabeb95839d5c5b1714e76899927", null ],
+    [ "menuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a80976ada421cfb426bb5dda9eef5295a", null ],
+    [ "spinnerServiceMock", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a53416b1dc23c15c3f0e0e55818664b28", null ],
+    [ "toasterServiceMock", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a6ca0cb7adcb0bb0690a5ce024fc7e3f0", null ],
+    [ "viewModel", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html#a5f9ab63ab1ff7635efbbc8f020a2cc3d", null ]
+];

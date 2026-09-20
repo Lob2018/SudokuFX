@@ -1,0 +1,13 @@
+<map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="142,1481,443,1907"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfigUTest_1_1TestDataSourceConfig.html" title=" " alt="" coords="5,865,287,959"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,959,252,1465,247,1466,152,960"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfig.html" title="Abstract configuration class for setting up the application&#39;s data source." alt="" coords="26,5,266,343"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="149,357,149,865,143,865,143,357"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1ApplicationKeystore.html" title="Manages the application&#39;s keystore for secure storage of a symmetric key and database credentials." alt="" coords="311,405,568,1419"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="347,1419,338,1465,333,1464,342,1419"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="346,141,421,207"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="389,220,404,405,398,405,384,221"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1GenerateSecret.html" title="Utility class for generating secure passwords using the Passay library." alt="" coords="445,92,681,256"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="552,257,530,390,525,389,547,256"/>
+</map>

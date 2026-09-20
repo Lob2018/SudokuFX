@@ -1,0 +1,8 @@
+var classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EqualsAndHashCodeTests =
+[
+    [ "givenOptionsAndDifferentClass_whenComparingEquality_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EqualsAndHashCodeTests.html#a13b64ba18f35275c9115f09c713ee57f", null ],
+    [ "givenOptionsAndNull_whenComparingEquality_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EqualsAndHashCodeTests.html#a0c7a212f54470567fb51977dd1c5c42d", null ],
+    [ "givenSameOptionsInstance_whenComparingToItself_thenTheyAreEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EqualsAndHashCodeTests.html#a437240416c7e292ed3ab73e5ff536108", null ],
+    [ "givenTwoOptionssWithDifferentProperties_whenComparingEquality_thenTheyAreNotEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EqualsAndHashCodeTests.html#a439e307078199dc7734fd6753eafa304", null ],
+    [ "givenTwoOptionssWithSameProperties_whenComparingEquality_thenTheyAreEqual", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest_1_1EqualsAndHashCodeTests.html#a806ed9ff9631d98d5c28ba4c8b0d1484", null ]
+];

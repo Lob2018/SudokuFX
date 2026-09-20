@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetCellToEditable" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetCellToEditable">
+<area shape="rect" id="Node000001" title="Resets a cell to its default editable state and clears content." alt="" coords="5,101,256,141"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="304,5,563,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,99,303,55,332,46,334,51,305,60,182,104"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="312,69,555,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,105,298,101,299,106,256,111"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="312,133,555,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,132,299,136,298,142,256,137"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="305,197,561,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="182,139,305,183,334,191,332,196,303,188,181,144"/>
+</map>

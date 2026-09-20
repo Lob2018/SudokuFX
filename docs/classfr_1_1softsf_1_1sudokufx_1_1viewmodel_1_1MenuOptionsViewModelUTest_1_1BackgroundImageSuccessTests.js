@@ -1,0 +1,6 @@
+var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageSuccessTests =
+[
+    [ "givenNonExistentFile_whenLoadBackgroundImage_thenToastErrorAndNoAsyncCall", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageSuccessTests.html#aa38c5adb0e036e9fb9d6905356ef7cce", null ],
+    [ "givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneBackgroundSet", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageSuccessTests.html#a4007635f06bdcf387df3bc8fd6403508", null ],
+    [ "givenValidFile_whenLoadBackgroundImage_thenAsyncServiceCalled", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest_1_1BackgroundImageSuccessTests.html#aa7b20041957532afcc24251e48285b23", null ]
+];

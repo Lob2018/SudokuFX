@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initMuteTooltip" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initMuteTooltip">
+<area shape="rect" id="Node000001" title="Creates the tooltip for the mute button, combining dynamic mute info and submenu role." alt="" coords="5,49,287,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ab375565a060bffec779b340dc14f7c43" title="Creates a localized binding combining a formatted message and a suffix." alt="" coords="335,5,627,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="286,51,321,47,321,52,287,56"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ab492d58498724756aa0082dafe071aa4" title="Returns the localized information about the current mute state." alt="" coords="359,85,602,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="287,81,346,88,346,93,286,86"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a359e959bd335e531fe59f4eb942c0813" title="Utility: always observe the locale in addition to custom dependencies." alt="" coords="675,13,993,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="627,30,661,30,661,35,627,35"/>
+</map>

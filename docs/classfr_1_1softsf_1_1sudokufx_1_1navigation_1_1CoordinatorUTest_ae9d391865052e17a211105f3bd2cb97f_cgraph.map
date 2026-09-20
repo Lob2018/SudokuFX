@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNullScene_whenSetDefaultScene_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNullScene_whenSetDefaultScene_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,300,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1Coordinator.html#a51f623613b1cd7c8cd7cd2a10f3d420d" title="Sets the default JavaFX scene." alt="" coords="348,20,559,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,37,334,37,334,43,300,43"/>
+</map>

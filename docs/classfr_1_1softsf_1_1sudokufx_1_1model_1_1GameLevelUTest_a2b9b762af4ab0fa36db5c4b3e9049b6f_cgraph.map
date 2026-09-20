@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenBuilderWithPartialFields_whenBuilding_thenShouldCreateGameLevelWithDefaults" name="fr.softsf.sudokufx.model.GameLevelUTest.givenBuilderWithPartialFields_whenBuilding_thenShouldCreateGameLevelWithDefaults">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,281,124"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#a48e867b7b81bfbd3b5c2830637fdc06d" title="Creates a new GameLevelBuilder for fluent construction." alt="" coords="329,5,512,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,55,319,46,321,51,282,60"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#ad70081f09c712d4f3b5836894c2ff15c" title="Returns the difficulty value of this game level." alt="" coords="329,69,512,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="282,87,316,87,316,92,282,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#ae96ae3832695c27c80bbd4be0604e8f5" title="Returns the unique identifier of this game level." alt="" coords="329,133,512,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="282,119,321,128,319,133,281,124"/>
+</map>

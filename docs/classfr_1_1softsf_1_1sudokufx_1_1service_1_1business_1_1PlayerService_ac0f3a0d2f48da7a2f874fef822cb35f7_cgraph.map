@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.service.business.PlayerService.createNewPlayerWithCurrent" name="fr.softsf.sudokufx.service.business.PlayerService.createNewPlayerWithCurrent">
+<area shape="rect" id="Node000001" title="Creates a new player by duplicating the configuration and current game state of the source player." alt="" coords="5,101,309,141"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GridService.html#af55389b286eecf51f19cba841606a796" title="Duplicates an existing Grid entity by creating a new record with a generated ID using the fluent buil..." alt="" coords="372,5,621,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,99,357,55,390,46,392,51,358,60,217,104"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1OptionsService.html#ab46d9276b5503ca130b8baab0556af9c" title="Duplicates an existing Options entity by creating a new record with a generated ID using the fluent b..." alt="" coords="372,69,621,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="310,104,358,100,359,105,310,110"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameLevelService.html#aec69dc20d643694a70cfa74003161aed" title="Retrieves the GameLevel entity by its business level value." alt="" coords="357,133,636,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="310,133,344,136,343,142,310,138"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1PlayerService.html#aba49426ee6f1106aeb7cac16ebd06e91" title="Internal utility to update player selection state and persist changes." alt="" coords="366,197,627,237"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="217,139,358,183,392,192,390,197,357,188,216,144"/>
+</map>

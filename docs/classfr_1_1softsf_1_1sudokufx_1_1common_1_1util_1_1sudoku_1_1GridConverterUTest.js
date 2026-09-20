@@ -1,0 +1,18 @@
+var classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest =
+[
+    [ "givenBlankOrNullDefaultGrid_whenDefaultGridValueToList_thenReturnsEmptyList", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a774b876a5d1e161785fade626b9f8d9d", null ],
+    [ "givenBlankOrNullGridValue_whenGridValueToList_thenReturnsEmptyList", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a9b96b3a4addea10cf767df302a6f6f3a", null ],
+    [ "givenBlankOrNullGridValue_whenRenderGridValueAsFormattedSudoku_thenReturnsEmpty", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#af80443d44562c4d9d2b6208de77444da", null ],
+    [ "givenDefaultGridWithNewlines_whenListToGridValue_thenNormalizesCells", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#ae9f1a6ae52b0d0335dbde9f18ee73d27", null ],
+    [ "givenEmptyOrNullCells_whenListToGridValue_thenNormalizedToZero", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a9c9a406634ea050fc8abc3bd766c46cc", null ],
+    [ "givenIncorrectListSize_whenListToGridValue_thenThrowsException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a4458df47d5261d4aae24c8e4672f8f65", null ],
+    [ "givenIntArray_whenConvertToDefaultGridAndBack_thenWorksCorrectly", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#acbe867f4ec5b76fbb87a6ae815c4e9dd", null ],
+    [ "givenInvalidDigitInCell_whenListToGridValue_thenThrowsInvalidDigitException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a90950fa63563fe80bf960b05e8307700", null ],
+    [ "givenInvalidGridValueLength_whenRenderGridValueAsFormattedSudoku_thenThrowsException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#ae9ceb7556095cf7216882d0e11660297", null ],
+    [ "givenRepeatedDigitsInCell_whenListToGridValue_thenThrowsRepeatedDigitException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a6cc8a83b4fb9ebd233e4e9e03ad92110", null ],
+    [ "givenValidCsv_whenGridValueToList_thenReturnsList", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a758861075ab47e1441b3cfdb052d6467", null ],
+    [ "givenValidDefaultGrid_whenDefaultGridValueToList_thenReturnsList", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a54ea9afa21848e638cadaea295943e4d", null ],
+    [ "givenValidGridValue_whenRenderGridValueAsFormattedSudoku_thenReturnsFormattedString", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a42fdfabf83885588a54d196b72876bea", null ],
+    [ "givenValidListOfValues_whenListToGridValue_thenReturnsCsv", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a5185cd429b9ecb47deb511572d1bf9df", null ],
+    [ "iConverter", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html#a570f2a0866d7c9fc2736e48652bcbd26", null ]
+];

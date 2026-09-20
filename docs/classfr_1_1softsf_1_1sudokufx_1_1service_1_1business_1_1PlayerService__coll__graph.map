@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.service.business.PlayerService" name="fr.softsf.sudokufx.service.business.PlayerService">
+<area shape="rect" id="Node000001" title="Service for managing Player entities." alt="" coords="194,345,623,1127"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameLevelService.html" title="Service managing fr.softsf.sudokufx.model.GameLevel entities." alt="" coords="5,72,255,216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,215,220,329,215,332,161,218"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1OptionsService.html" title="Service for managing Options entities." alt="" coords="278,5,539,283"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="411,283,411,329,406,329,406,283"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GridService.html" title="Service for managing Grid entities." alt="" coords="564,30,805,258"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="634,259,601,331,596,329,629,257"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.getSyncLevelThread" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.getSyncLevelThread">
+<area shape="rect" id="Node000001" title="Creates and configures a daemon thread to finalize level synchronization." alt="" coords="5,5,273,60"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler.html#ab0c2229840635461fd71e1446a0bef7d" title="Synchronizes ViewModels post&#45;generation." alt="" coords="321,5,549,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,30,308,30,308,35,274,35"/>
+</map>

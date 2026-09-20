@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentGridFromModel" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCurrentGridFromModel">
+<area shape="rect" id="Node000001" title="Loads the current Sudoku grid from the model into the ViewModel." alt="" coords="5,35,300,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="647,5,889,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,32,348,20,416,16,469,16,591,20,633,20,633,26,591,25,469,22,416,22,348,25,256,37"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html#ab18045075b2fc0497b7d6783282145e8" title="Represents the current loaded Sudoku grid, including its difficulty level and the percentage of possi..." alt="" coords="348,35,591,75"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="300,52,334,52,334,57,300,57"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ab7607876adb740f7f1d55b5016faba0c" title="Sets all 81 cell values and optionally their editability." alt="" coords="348,99,591,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="253,72,357,93,356,99,252,77"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="549,96,590,84,699,47,701,53,591,89,550,101"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="639,84,897,124"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="591,110,625,108,625,114,591,115"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="640,148,896,188"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="591,136,633,143,633,148,591,141"/>
+</map>

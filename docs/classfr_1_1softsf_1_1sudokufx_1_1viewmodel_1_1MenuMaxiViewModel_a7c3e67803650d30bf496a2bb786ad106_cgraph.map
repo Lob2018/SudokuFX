@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel.MenuMaxiViewModel" name="fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel.MenuMaxiViewModel">
+<area shape="rect" id="Node000001" title="Initializes all bindings for accessible texts, tooltips, and labels, bound to the current locale." alt="" coords="5,5,312,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#acb595cbedd9c16a4957ebfc9bf3bb4c8" title="Creates a StringBinding for a given key, bound to the current locale." alt="" coords="360,5,655,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,23,346,23,346,28,312,28"/>
+</map>

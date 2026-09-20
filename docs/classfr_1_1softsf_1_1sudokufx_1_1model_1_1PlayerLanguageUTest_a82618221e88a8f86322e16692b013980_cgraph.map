@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithPartialFields_whenBuild_thenCreatesPlayerLanguageWithDefaults" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithPartialFields_whenBuild_thenCreatesPlayerLanguageWithDefaults">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,303,124"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#ad803d89c720e8857feac54f62ae5b614" title="Returns a new PlayerLanguageBuilder instance for fluent construction." alt="" coords="391,5,574,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="303,58,377,43,378,48,304,63"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a70c763e120718f9286c4d476b6b7c968" title="Returns the ISO code of this PlayerLanguage." alt="" coords="391,69,574,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="303,87,377,87,377,92,303,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a504091d9041e68b49d6cc940d472257a" title="Returns the unique ID of this PlayerLanguage instance." alt="" coords="351,133,615,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="304,116,367,128,366,133,303,121"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenGridPaneAndColor_whenUpdateBackgroundColor_thenColorApplied" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenGridPaneAndColor_whenUpdateBackgroundColor_thenColorApplied">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,317,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a0295191f6793f349fc6bc02231f01875" title="Applies the given color as the background of the specified GridPane." alt="" coords="365,13,655,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="317,37,351,37,351,43,317,43"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane)." alt="" coords="703,20,989,60"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="655,37,689,37,689,43,655,43"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenLevel_whenGetIntervalle_thenReturnsCorrectBounds" name="fr.softsf.sudokufx.common.util.sudoku.GridMasterUTest.givenLevel_whenGetIntervalle_thenReturnsCorrectBounds">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,337,60"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html#adc44f4bbb0133e984077a0acaf24cf55" title="Immutable container for level&#45;specific possibility boundaries." alt="" coords="385,13,659,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,30,372,30,372,35,337,35"/>
+</map>

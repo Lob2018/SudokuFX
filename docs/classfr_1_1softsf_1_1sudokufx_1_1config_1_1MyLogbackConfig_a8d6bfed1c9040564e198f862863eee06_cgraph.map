@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.config.MyLogbackConfig.init" name="fr.softsf.sudokufx.config.MyLogbackConfig.init">
+<area shape="rect" id="Node000001" title="Post&#45;construction initialization." alt="" coords="5,69,185,109"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfig.html#aa057c1146ed4d9af552934ed99958eb6" title="Configures Logback using the specified configuration file." alt="" coords="249,5,504,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,67,233,55,272,46,273,51,234,60,183,72"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfig.html#afc7a3e895a346013104f949b69aecb55" title="Logs the ASCII logo (with app name and version), an optional optimization message at startup." alt="" coords="233,69,520,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="186,87,219,87,219,92,186,92"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfig.html#accf2f4cc3c02cec1068849bd4ab833d2" title="Prints the logger status to the log in case of errors or warnings." alt="" coords="259,133,494,173"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,107,234,119,273,128,272,133,233,124,181,112"/>
+</map>

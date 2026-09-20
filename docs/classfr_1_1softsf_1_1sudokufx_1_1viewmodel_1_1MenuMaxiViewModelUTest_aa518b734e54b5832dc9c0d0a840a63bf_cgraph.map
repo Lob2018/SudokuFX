@@ -1,0 +1,23 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuMaxiViewModelUTest.getStringBindingStringMap" name="fr.softsf.sudokufx.viewmodel.MenuMaxiViewModelUTest.getStringBindingStringMap">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,317,267,372"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#a324f237415042cbb3012e226206faace" title="Returns the reactive binding for the help button&#39;s accessible text." alt="" coords="337,5,600,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,316,168,263,203,197,252,129,281,97,313,71,324,64,327,68,316,75,285,101,256,132,208,200,172,266,150,318"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#af81523f519ba718a2a055beb12359274" title="Returns the reactive binding for the help button&#39;s label text." alt="" coords="331,85,607,125"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="150,316,176,275,213,225,259,176,313,134,326,128,328,132,316,139,263,179,217,228,181,278,155,318"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#a07f20f7beb00a594a1e7e7e57eb47346" title="Returns the reactive binding for the help button&#39;s label text." alt="" coords="323,149,615,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="161,315,226,255,268,224,313,198,331,191,334,196,316,203,271,229,229,260,165,319"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#a350bbbd82f6ca06c9ca8c2f65d629d54" title="Returns the reactive binding for the language button&#39;s accessible text." alt="" coords="321,213,616,268"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="208,315,314,278,344,269,346,274,315,283,210,320"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#a4a498daafe5ccd252eace9b27e6585ec" title="Returns the reactive binding for the language button&#39;s ISO code text." alt="" coords="319,293,619,333"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="267,329,305,326,305,331,267,335"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#a6b17874f73512f0285b016eb8e0703ff" title="Returns the reactive binding for the language button&#39;s label text." alt="" coords="315,357,623,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="267,355,301,358,301,363,267,360"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#ab673a1ba73ff3c07577d0125e61de003" title="Returns the reactive binding for the language button&#39;s ISO code text." alt="" coords="334,421,603,476"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="210,370,315,406,346,415,344,420,314,411,208,375"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#aa99304c9df9e923b4b34517ee4bf778e" title="Returns the reactive binding for the reduce button&#39;s accessible text." alt="" coords="329,500,608,555"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="166,370,231,429,272,459,316,485,332,493,330,497,313,490,269,463,228,433,162,374"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#ae397eebd320b121063226f5eabe4ec14" title="Returns the reactive binding for the reduce button&#39;s label text." alt="" coords="323,579,615,619"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="153,371,179,414,215,467,261,520,288,543,316,564,330,571,328,576,313,568,284,548,257,524,211,470,174,417,149,373"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html#a1019a031561562b8e05f396339d11807" title="Returns the reactive binding for the reduce button&#39;s tooltip." alt="" coords="315,643,623,683"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="149,371,170,427,205,497,227,534,253,569,283,602,316,629,325,635,322,639,313,633,279,605,249,573,223,537,200,500,165,429,144,373"/>
+</map>

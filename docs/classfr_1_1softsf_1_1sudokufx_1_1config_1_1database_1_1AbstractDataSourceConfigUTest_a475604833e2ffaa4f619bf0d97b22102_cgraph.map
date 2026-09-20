@@ -1,0 +1,12 @@
+<map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenNullHikariDataSource_whenFlywayCalled_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenNullHikariDataSource_whenFlywayCalled_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,300,92"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfig.html#aad22b46ef18e07da438ade1fa912e644" title="Configures Flyway database migration tool." alt="" coords="348,37,592,77"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="300,55,334,55,334,60,300,60"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="412,38,408,28,418,18,438,13,470,11,507,13,526,21,525,26,505,19,470,16,439,18,420,23,413,29,417,36"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfig.html#a95e551a74c1292b0e82a0b3ce4905e50" title="Creates and configures the main HikariDataSource for the application." alt="" coords="659,5,966,45"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="592,43,645,38,645,44,592,49"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfig.html#ae0f4d86f6855bfe5df36fa0195199b1c" title="Validates gamelevel table integrity post&#45;Flyway migration." alt="" coords="640,69,985,109"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="592,66,626,69,626,75,592,71"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfig.html#a376871112b0401da26f1a5a3936b1e74" title="Configure et retourne un HikariConfig avec les paramètres de connexion et pool." alt="" coords="1033,5,1329,45"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="966,23,1020,23,1020,28,966,28"/>
+</map>

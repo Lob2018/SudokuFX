@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initOpacityText" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initOpacityText">
+<area shape="rect" id="Node000001" title="Creates the visible label for the opacity button, reflecting the current grid opacity value." alt="" coords="5,5,288,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a89500f671995a3ab11b253bf65cafdfb" title="Returns the localized text corresponding to the grid opacity state." alt="" coords="336,5,623,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,23,322,23,322,28,288,28"/>
+</map>

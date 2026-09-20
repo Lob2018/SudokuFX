@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.addToast" name="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.addToast">
+<area shape="rect" id="Node000001" title="Adds a toast notification with an automatically calculated duration based on text length." alt="" coords="5,69,303,109"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1ToasterVBox.html#a7df4872b0cf0eeb5cd3a04ce7ccb0fef" title="Sets the accessibility text for the toast based on its level." alt="" coords="351,5,648,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="262,67,377,45,378,50,263,72"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1ToasterVBox.html#a1f7607f18913c940c16c9de28f3e7ae7" title="Sets the style of the toast based on its level." alt="" coords="351,69,648,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="303,87,337,87,337,92,303,92"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1ToasterVBox.html#abd2310564b394c59530d5e7b2a0d0776" title="Sets a timer to automatically remove the toast after a specified duration." alt="" coords="351,133,648,173"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="263,107,378,128,377,133,262,112"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1ToasterVBox.html#a67957eac2367e7b8018ef0d2ce354bef" title="Retrieves the information text corresponding to the specified toast level." alt="" coords="696,5,993,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="648,23,682,23,682,28,648,28"/>
+</map>

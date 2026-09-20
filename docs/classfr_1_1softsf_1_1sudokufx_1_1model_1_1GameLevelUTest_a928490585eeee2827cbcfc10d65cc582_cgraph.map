@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenDifferentTypeObject_whenComparingWithEquals_thenShouldReturnFalse" name="fr.softsf.sudokufx.model.GameLevelUTest.givenDifferentTypeObject_whenComparingWithEquals_thenShouldReturnFalse">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,264,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#a3d507e4525d0d37323a6afc077e37a4d" title="Compares this game level with another object for equality based on all fields." alt="" coords="312,20,495,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,37,298,37,298,43,264,43"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.savePlayer" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.savePlayer">
+<area shape="rect" id="Node000001" title="Validates and saves the player name into the state holder only on Enter key." alt="" coords="5,5,252,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#ae780866cb629a7b3fb902530ee8b4098" title="Loads players into the observable list." alt="" coords="300,5,551,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="252,23,286,23,286,28,252,28"/>
+</map>

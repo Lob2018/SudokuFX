@@ -1,0 +1,7 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1StopOperationsTests =
+[
+    [ "givenNoPlayingAudio_whenStopAll_thenNoException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1StopOperationsTests.html#a137796ece286a0da62f48e6d475d5a69", null ],
+    [ "givenNoPlayingSong_whenStopSong_thenNoException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1StopOperationsTests.html#ab6aa3f038da99c4e640a85deb03d1302", null ],
+    [ "givenPlayingAudio_whenStopAll_thenAllPlayersStoppedAndDisposed", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1StopOperationsTests.html#a7ea6708d4bae9962918417a9624fbc56", null ],
+    [ "givenPlayingSong_whenStopSong_thenSongPlayerStoppedAndDisposed", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest_1_1StopOperationsTests.html#a42f87e5c48d4e84069dd72ab27d0331b", null ]
+];

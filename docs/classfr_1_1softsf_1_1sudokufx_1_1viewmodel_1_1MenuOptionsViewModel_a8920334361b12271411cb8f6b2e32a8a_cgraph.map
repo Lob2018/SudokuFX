@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initMuteAccessibleText" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.initMuteAccessibleText">
+<area shape="rect" id="Node000001" title="Creates the accessibility label for the mute button, based on the current mute state." alt="" coords="5,49,340,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a218b89fb8384b0edf79c7c1d70f9b292" title="Creates a formatted localized binding with one dynamic argument." alt="" coords="388,5,680,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="340,49,374,46,375,51,340,55"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ab492d58498724756aa0082dafe071aa4" title="Returns the localized information about the current mute state." alt="" coords="413,85,655,125"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="340,83,399,89,398,94,340,88"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a359e959bd335e531fe59f4eb942c0813" title="Utility: always observe the locale in addition to custom dependencies." alt="" coords="728,13,1047,53"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="680,30,715,30,715,35,680,35"/>
+</map>

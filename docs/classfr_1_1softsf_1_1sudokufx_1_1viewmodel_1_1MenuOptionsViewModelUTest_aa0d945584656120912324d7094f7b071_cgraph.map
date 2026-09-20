@@ -1,0 +1,14 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneIfNeededBackgroundSet" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.givenValidFile_whenApplyAndPersistBackgroundImage_thenGridPaneIfNeededBackgroundSet">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,52,316,121"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#aae209f8a3ddfd8a72731b3fee828ca7b" title="Applies a background image to the specified GridPane." alt="" coords="631,30,920,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="316,77,617,62,617,68,316,82"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a231db409f6a7e4cb554d176ea8c7a3b1" title="Initializes the menu options UI state for the current player, including:" alt="" coords="364,95,577,135"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="316,98,351,101,350,106,316,103"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane)." alt="" coords="979,5,1265,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="920,41,965,37,965,42,920,47"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#add42eac8d6831cc853249da660b34e14" title="Persists the given image path in the current player&#39;s OptionsDto if it differs from the existing path..." alt="" coords="973,69,1271,109"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="920,68,960,72,959,77,920,73"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="577,92,616,85,617,90,578,97"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a37e1c6ac123057100967340aa9e1c18f" title="Updates the song display name by extracting the filename from the provided path." alt="" coords="625,109,925,163"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="578,119,612,122,611,127,577,125"/>
+</map>

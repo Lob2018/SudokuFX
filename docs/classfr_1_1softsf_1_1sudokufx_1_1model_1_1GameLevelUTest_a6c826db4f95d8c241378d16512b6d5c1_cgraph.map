@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenGameLevelWithNullLevelid_whenCallingToString_thenShouldHandleNullCorrectly" name="fr.softsf.sudokufx.model.GameLevelUTest.givenGameLevelWithNullLevelid_whenCallingToString_thenShouldHandleNullCorrectly">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,281,75"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#a3b98a4670237731506a41f0fcb036efd" title="Returns a string representation of the game level." alt="" coords="329,20,512,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,37,316,37,316,43,282,43"/>
+</map>

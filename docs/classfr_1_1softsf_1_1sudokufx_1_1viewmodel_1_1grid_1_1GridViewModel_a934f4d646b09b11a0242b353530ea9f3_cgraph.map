@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCellViewModels" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.getCellViewModels">
+<area shape="rect" id="Node000001" title="Returns an unmodifiable list of all cell view models." alt="" coords="5,5,256,45"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ace36956cb99bad46d1144460d8cde157" title="Checks whether the GridViewModel has been initialized via init()." alt="" coords="304,5,547,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="256,23,290,23,290,28,256,28"/>
+</map>

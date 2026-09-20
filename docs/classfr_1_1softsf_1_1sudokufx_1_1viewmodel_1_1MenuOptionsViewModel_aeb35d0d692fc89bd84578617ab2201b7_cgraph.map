@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.toggleGridOpacityAndPersist" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.toggleGridOpacityAndPersist">
+<area shape="rect" id="Node000001" title="Toggles the grid opacity mode, persists the new state in the database, updates &#160;gridOpacityProperty,..." alt="" coords="5,5,308,60"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ac437c4e3c7dce984a2b491eb1d9da090" title="Checks whether the MenuOptionsViewModel has been initialized via init(GridPane)." alt="" coords="356,13,643,53"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,30,342,30,342,35,308,35"/>
+</map>

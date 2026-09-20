@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.exception.DatabaseIntegrityException" name="fr.softsf.sudokufx.common.exception.DatabaseIntegrityException">
+<area shape="rect" id="Node000001" title="Thrown to indicate that the database state is inconsistent with the application&#39;s requirements,..." alt="" coords="5,119,264,213"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="68,5,201,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,84,137,118,132,118,132,84"/>
+</map>
