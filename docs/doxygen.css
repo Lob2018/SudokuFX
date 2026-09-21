@@ -437,7 +437,7 @@ img.light-mode-visible {
 }
 
 img.formulaDsp {
-	
+
 }
 
 img.formulaInl, img.inline {
@@ -506,19 +506,19 @@ span.xmlcdata {
 	color: black;
 }
 
-span.vhdldigit { 
+span.vhdldigit {
 	color: #FF00FF;
 }
 
-span.vhdlchar { 
+span.vhdlchar {
 	color: #000000;
 }
 
-span.vhdlkeyword { 
+span.vhdlkeyword {
 	color: #700070;
 }
 
-span.vhdllogic { 
+span.vhdllogic {
 	color: #FF0000;
 }
 
@@ -1243,12 +1243,12 @@ dl.section dd {
 	vertical-align: bottom;
 	border-collapse: separate;
 }
- 
+
 #projectlogo img
-{ 
+{
 	border: 0px none;
 }
- 
+
 #projectalign
 {
         vertical-align: middle;
@@ -1700,4 +1700,3 @@ body {
 ::-webkit-scrollbar-corner {
         background-color: #F9FAFC;
 }
-

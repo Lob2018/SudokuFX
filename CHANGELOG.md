@@ -1,7 +1,7 @@
 # Changelog
 
 
-## Unreleased - 
+## Unreleased -
 
 
 ✨ feat release.yml, mainpage.dox, README.md, pom.xml, CHANGELOG.md: Integrate git-changelog-maven-plugin and add changelog links

@@ -18,8 +18,9 @@
 
 # 3. Maintenance (Required for Dependabot / Security updates):
 #    A. Ensure the environment is active:
-#       . .venv/Scripts/activate
-#    B. Update all .venv packages & hooks:
+#       . .venv/Scripts/activate (Windows)
+#       source .venv/bin/activate (Linux)
+#    B. Update all .venv packages & hooks (py pour Windows et python3 pour Linux):
 #       py -c "import importlib.metadata; from subprocess import call; [call(['pip', 'install', '--upgrade', d.metadata['Name']]) for d in importlib.metadata.distributions()]" && py -m pre_commit autoupdate
 #    C. Synchronize manifest (Critical for security scanning):
 #       py -m pip freeze > requirements.txt
