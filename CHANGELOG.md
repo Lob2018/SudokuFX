@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+✨ docs, CHANGELOG.md, pom.xml, THIRD_PARTY_NOTICES.txt feat: Bump version 1.10.0 to 1.11.0, and update documentation
+
+([9f6f87351fd7be8](https://github.com/Lob2018/SudokuFX/commit/9f6f87351fd7be874957dbf710fbf9d094f4e703))
+
 🔧 chore spring-boot-starter-parent, spotbugs-annotations, flyway-database-hsqldb, javafx spotbugs, checkstyle, spotless-maven-plugin, maven-compiler-plugin, exec-maven-plugin: Bump the maven-dependencies
 
 ([be4dd5928b41ed1](https://github.com/Lob2018/SudokuFX/commit/be4dd5928b41ed14ce7f85c1ca9dd186c2e1462a))
@@ -4814,12 +4818,12 @@ This refactoring improves code readability, reduces error-prone array usage, and
 
 ([284015163f4ad81](https://github.com/Lob2018/SudokuFX/commit/284015163f4ad812fe727144e7fe0413100d0df3))
 
+## v2.0.0 - 2025-07-09
+
+
 🐛 fix pom.xml: remove macOS-x86_64 useless argument &lt;argument&gt;x86_64&lt;/argument&gt;
 
 ([0f130a330acaa5d](https://github.com/Lob2018/SudokuFX/commit/0f130a330acaa5dd4d02b20b0a63e4f824b5a4b3))
-
-## v2.0.0 - 2025-07-08
-
 
 📚 docs DOXYGEN
 
@@ -6081,9 +6085,6 @@ This refactoring improves code readability, reduces error-prone array usage, and
 - Enhance &#x60;getController&#x60; documentation for UI interaction handling.
 
 ([9d7d587120a14c2](https://github.com/Lob2018/SudokuFX/commit/9d7d587120a14c23fb058110533086df892f3d9d))
-
-## v3.0.0 - 2025-05-12
-
 
 ♻️ refactor pom.xml(Jacoco exclude) : Exclude internal classes of VersionService from JaCoCo coverage report
 
@@ -7472,6 +7473,9 @@ Chore flyway-database-hsqldb : Update
 
 ([095a81c6486dbdf](https://github.com/Lob2018/SudokuFX/commit/095a81c6486dbdff01df3cd1aa258764dd5cda10))
 
+## v1.0.0 - 2025-02-18
+
+
 Chore pom.xml : Rename arch to aarch64
 
 ([9dac4a2b1442577](https://github.com/Lob2018/SudokuFX/commit/9dac4a2b1442577cd04ba1a537114863b6d5b51c))
@@ -8082,9 +8086,6 @@ Feat CDS: Add CDS profile to prevent interactions with remote services during st
 - Update script commands to include -Dspring.profiles.active&#x3D;cds to activate the CDS profile during application training.
 
 ([e99d679a868b980](https://github.com/Lob2018/SudokuFX/commit/e99d679a868b980d4fd976a56ef218d5b1608e0f))
-
-## v1.0.0 - 2025-01-28
-
 
 Chore codeql-action : Updated
 
