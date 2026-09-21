@@ -4,6 +4,14 @@
 ## Unreleased -
 
 
+🔧 chore harden-runner, setup-java, codeql-action, osv-scanner-action, qodana-action: Bump the actions-dependencies
+
+([52457e9ed2b5efc](https://github.com/Lob2018/SudokuFX/commit/52457e9ed2b5efcebfe0f8ba6fa2bb5dde5bfa23))
+
+📚 docs Doxygen
+
+([f583aaec0d23f0b](https://github.com/Lob2018/SudokuFX/commit/f583aaec0d23f0bbeec42a42f91243388e5dfa41))
+
 🔧 chore docs, .pre-commit-config.yaml, CHANGELOG.md, requirements.txt: Bump the python-dependencies
 
 ([2924948ebbea259](https://github.com/Lob2018/SudokuFX/commit/2924948ebbea2597973ff000914b00d6fdf2e342))

@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>4.1.0</version>
+    <version>4.1.1</version>
     <relativePath/>
     <!-- lookup parent from repository -->
   </parent>
@@ -31,10 +31,11 @@
   <properties>
     <deployment-folder>output</deployment-folder>
     <java.version>25</java.version>
-    <javafx.version>26.0.2</javafx.version>
+    <javafx.version>27</javafx.version>
     <jvm.args>-Dfile.encoding=UTF-8 -Dprism.order=d3d,es2,sw -Dprism.vsync=true --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</jvm.args>
     <license.name>GPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
+    <maven.compiler.release>25</maven.compiler.release>
     <maven.version>3.9.9</maven.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
@@ -48,7 +49,7 @@
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>
-      <version>4.10.3</version>
+      <version>4.10.4</version>
       <scope>provided</scope>
     </dependency>
     <!-- Ignite Spring dependency -->
@@ -81,17 +82,11 @@
       <artifactId>commons-lang3</artifactId>
       <version>3.20.0</version>
     </dependency>
-    <!-- Temporary override for Spring Boot's transitive dependency to fix CVE (log4j-api 2.25.4 -> 2.25.5) -->
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-api</artifactId>
-      <version>2.25.5</version>
-    </dependency>
     <!-- Flyway database migration dependencies -->
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-hsqldb</artifactId>
-      <version>13.3.0</version>
+      <version>13.7.0</version>
     </dependency>
     <!-- HSQLDB database dependency -->
     <dependency>
@@ -202,7 +197,7 @@
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
         <artifactId>spotless-maven-plugin</artifactId>
-        <version>3.9.0</version>
+        <version>3.10.2</version>
         <configuration>
           <ratchetFrom>NONE</ratchetFrom>
           <skip>${spotless-maven-plugin.skip}</skip>
@@ -283,7 +278,7 @@
             </includes>
             <!-- Use Google Java Format with AOSP style and string reflow -->
             <googleJavaFormat>
-              <version>1.27.0</version>
+              <version>1.30.0</version>
               <style>AOSP</style>
               <reflowLongStrings>true</reflowLongStrings>
             </googleJavaFormat>
@@ -350,7 +345,7 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.10.3.0</version>
+        <version>4.10.4.0</version>
         <configuration>
           <effort>Max</effort>
           <threshold>Low</threshold>
@@ -396,7 +391,7 @@
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>13.10.0</version>
+            <version>14.1.0</version>
           </dependency>
         </dependencies>
         <executions>
@@ -413,7 +408,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.15.0</version>
+        <version>3.16.0</version>
         <configuration>
           <source>${java.version}</source>
           <target>${java.version}</target>
@@ -455,7 +450,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.6</version>
+        <version>3.6.0</version>
         <configuration>
           <argLine>@{jacoco.argLine} ${jvm.args} -Dapp.name=${project.artifactId} -Dapp.version=${project.version}
                         -Dapp.organization=${project.organization.name} -Dapp.license=${license.name}
@@ -655,7 +650,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.15.0</version>
+            <version>3.16.0</version>
             <configuration>
               <annotationProcessorPaths>
                 <path>
@@ -682,7 +677,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.6.3</version>
+            <version>3.6.4</version>
             <executions>
               <execution>
                 <id>exec-generate-doxygen-docs</id>
@@ -750,7 +745,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.6.3</version>
+            <version>3.6.4</version>
             <executions>
               <execution>
                 <id>exec-generate-doxygen-docs</id>
@@ -823,7 +818,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.6.3</version>
+            <version>3.6.4</version>
             <executions>
               <execution>
                 <!-- Windows package using batch script -->
@@ -867,7 +862,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.6.3</version>
+            <version>3.6.4</version>
             <executions>
               <execution>
                 <!-- Linux package using shell script -->
@@ -910,7 +905,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.6.3</version>
+            <version>3.6.4</version>
             <executions>
               <execution>
                 <!-- macOS package using shell script -->
@@ -954,7 +949,7 @@
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
-            <version>3.6.3</version>
+            <version>3.6.4</version>
             <executions>
               <execution>
                 <!-- macOS package using shell script for x86_64 -->
