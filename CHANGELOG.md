@@ -4,6 +4,25 @@
 ## Unreleased -
 
 
+🔧 chore docs, .pre-commit-config.yaml, CHANGELOG.md, requirements.txt: Bump the python-dependencies
+
+([2924948ebbea259](https://github.com/Lob2018/SudokuFX/commit/2924948ebbea2597973ff000914b00d6fdf2e342))
+
+♻️ refactor SudokuFX__DOC_Doxygen_Unix_LICENSE_txt_.xml, THIRD_PARTY_NOTICES.txt: Update Maven runner configuration and third-party dependencies versions
+- SudokuFX__DOC_Doxygen_Unix_LICENSE_txt_.xml :
+  - Configure Maven runner settings to specify JAVA_HOME environment property and PATH binaries.
+- THIRD_PARTY_NOTICES.txt :
+  - Update Apache Log4j API version to 2.25.5.
+  - Update flyway-database-hsqldb version to 13.3.0.
+  - Update Jackson-core and jackson-databind versions to 3.1.6.
+- Tests pass.
+
+([8b53102e1202cb2](https://github.com/Lob2018/SudokuFX/commit/8b53102e1202cb2092530f240d70b2fda52b8306))
+
+📚 docs Doxygen
+
+([8d5a2ede204db00](https://github.com/Lob2018/SudokuFX/commit/8d5a2ede204db002480f445bed7cbbfbbd669407))
+
 ✨ feat release.yml, mainpage.dox, README.md, pom.xml, CHANGELOG.md: Integrate git-changelog-maven-plugin and add changelog links
 - release.yml :
   - Add direct CHANGELOG.md link section to the release workflow description body.
