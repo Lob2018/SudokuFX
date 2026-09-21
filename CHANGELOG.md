@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+🔧 chore spring-boot-starter-parent, spotbugs-annotations, flyway-database-hsqldb, javafx spotbugs, checkstyle, spotless-maven-plugin, maven-compiler-plugin, exec-maven-plugin: Bump the maven-dependencies
+
+([be4dd5928b41ed1](https://github.com/Lob2018/SudokuFX/commit/be4dd5928b41ed14ce7f85c1ca9dd186c2e1462a))
+
 🔧 chore harden-runner, setup-java, codeql-action, osv-scanner-action, qodana-action: Bump the actions-dependencies
 
 ([52457e9ed2b5efc](https://github.com/Lob2018/SudokuFX/commit/52457e9ed2b5efcebfe0f8ba6fa2bb5dde5bfa23))
