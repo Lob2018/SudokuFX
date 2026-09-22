@@ -105,7 +105,7 @@ var searchData=
   ['issolvemodeactive_102',['isSolveModeActive',['../classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html#ad1b7ef7994bef2d64edd271bf77a9cbc',1,'fr::softsf::sudokufx::viewmodel::grid::GridViewModel']]],
   ['isspringcontextexitonrefresh_103',['isSpringContextExitOnRefresh',['../enumfr_1_1softsf_1_1sudokufx_1_1config_1_1JVMApplicationProperties.html#a8e83f73acbc106647965ccd74951e76a',1,'fr::softsf::sudokufx::config::JVMApplicationProperties']]],
   ['isvalidalphanumeric_104',['isValidAlphanumeric',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a33fc5fa63c90eb5f0d5531dccb9f3e91',1,'fr::softsf::sudokufx::common::util::MyRegex']]],
-  ['isvalidatedbyregex_105',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a423142d558d45f6e0ffbe705f1aae781',1,'fr::softsf::sudokufx::common::util::MyRegex']]],
+  ['isvalidatedbyregex_105',['isValidatedByRegex',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#ab0742c839363f426ae6e9967316e2793',1,'fr::softsf::sudokufx::common::util::MyRegex']]],
   ['isvalidaudio_106',['isValidAudio',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1AudioUtils.html#a11a4ad49c5d299ff5dd1e434eb2e0295',1,'fr::softsf::sudokufx::common::util::AudioUtils']]],
   ['isvalidimage_107',['isValidImage',['../classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1ImageUtils.html#aee9c875f6fd355566c1b8009c034e164',1,'fr::softsf::sudokufx::common::util::ImageUtils']]],
   ['isvalidpassword_108',['isValidPassword',['../enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a403e4d4ee7b25346f854086af09c098b',1,'fr::softsf::sudokufx::common::util::MyRegex']]],

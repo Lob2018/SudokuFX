@@ -195,7 +195,7 @@ var hierarchy =
     [ "fr.softsf.sudokufx.config.MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfig.html", null ],
     [ "fr.softsf.sudokufx.config.MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfigUTest.html", null ],
     [ "fr.softsf.sudokufx.common.util.MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html", null ],
-    [ "fr.softsf.sudokufx.testing.unit.common.enums.MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1MyRegexUTest.html", null ],
+    [ "fr.softsf.sudokufx.testing.unit.common.util.MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyRegexUTest.html", null ],
     [ "fr.softsf.sudokufx.common.util.math.NumberUtils", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1NumberUtils.html", null ],
     [ "fr.softsf.sudokufx.testing.unit.common.util.math.NumberUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html", null ],
     [ "fr.softsf.sudokufx.config.ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1ObjectMapperConfig.html", null ],

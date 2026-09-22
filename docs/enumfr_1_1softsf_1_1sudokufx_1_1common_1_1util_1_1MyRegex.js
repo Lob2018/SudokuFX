@@ -2,7 +2,7 @@ var enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex =
 [
     [ "getSpecialChars", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a5c90ee9e5e04015aded15092a89a3a9a", null ],
     [ "isValidAlphanumeric", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a33fc5fa63c90eb5f0d5531dccb9f3e91", null ],
-    [ "isValidatedByRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a423142d558d45f6e0ffbe705f1aae781", null ],
+    [ "isValidatedByRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#ab0742c839363f426ae6e9967316e2793", null ],
     [ "isValidPassword", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a403e4d4ee7b25346f854086af09c098b", null ],
     [ "isValidPlayerName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#ac3dc371eeb25198dc6a9323d64ead284", null ],
     [ "isValidSecret", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a9b06eaf7468633131880d99aeada3592", null ],

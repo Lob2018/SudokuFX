@@ -1,5 +1,7 @@
 var NAVTREEINDEX11 =
 {
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppPaths.html#a4e26da0da35dce50862fe1115fc44acb":[2,0,0,0,0,1,1,1,11],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppPaths.html#a506a2d6b959bf7217bcc40bb4a2199c0":[2,0,0,0,0,1,1,1,26],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppPaths.html#a5ef9e7bbf0272ca562a9676b7b27e9bc":[2,0,0,0,0,1,1,1,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppPaths.html#a61db9168cba38f14ed651fa4166239b6":[2,0,0,0,0,1,1,1,13],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppPaths.html#a7ae4a8cd07b3004ed0ab662da197c69d":[2,0,0,0,0,1,1,1,7],
@@ -135,7 +137,6 @@ var NAVTREEINDEX11 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a33fc5fa63c90eb5f0d5531dccb9f3e91":[2,0,0,0,0,1,4,9,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a3da13cebd6b4d02ff2c7cca218a1a0f7":[2,0,0,0,0,1,4,9,7],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a403e4d4ee7b25346f854086af09c098b":[2,0,0,0,0,1,4,9,3],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a423142d558d45f6e0ffbe705f1aae781":[2,0,0,0,0,1,4,9,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a5c90ee9e5e04015aded15092a89a3a9a":[2,0,0,0,0,1,4,9,0],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a748b83099bdf6bb18593de75fc3b81cb":[2,0,0,0,0,1,4,9,14],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a7c57835dac8061ece43a644ad5948814":[2,0,0,0,0,1,4,9,13],
@@ -143,6 +144,7 @@ var NAVTREEINDEX11 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a9aeed92159c93dabcfd2eb8de75ca1ba":[2,0,0,0,0,1,4,9,12],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a9b06eaf7468633131880d99aeada3592":[2,0,0,0,0,1,4,9,5],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#aa8a0ff980653f30dae8043221440f362":[2,0,0,0,0,1,4,9,6],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#ab0742c839363f426ae6e9967316e2793":[2,0,0,0,0,1,4,9,2],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#ac2890435ae41d8c24bca202918525756":[2,0,0,0,0,1,4,9,8],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#ac3dc371eeb25198dc6a9323d64ead284":[2,0,0,0,0,1,4,9,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#ad5dfc39bbe129cf3f0e0468ca88540f0":[2,0,0,0,0,1,4,9,11],
@@ -247,7 +249,5 @@ var NAVTREEINDEX11 =
 "functions_func_n.html":[2,3,1,13],
 "functions_func_o.html":[2,3,1,14],
 "functions_func_p.html":[2,3,1,15],
-"functions_func_r.html":[2,3,1,16],
-"functions_func_s.html":[2,3,1,17],
-"functions_func_t.html":[2,3,1,18]
+"functions_func_r.html":[2,3,1,16]
 };

@@ -7,5 +7,6 @@ var dir_2fbdbf3cb67fcc084aed3f4a210666e5 =
     [ "I18nUTest.java", "I18nUTest_8java.html", "I18nUTest_8java" ],
     [ "ImageUtilsUTest.java", "ImageUtilsUTest_8java.html", "ImageUtilsUTest_8java" ],
     [ "MyEnumsUTest.java", "MyEnumsUTest_8java.html", "MyEnumsUTest_8java" ],
+    [ "MyRegexUTest.java", "MyRegexUTest_8java.html", "MyRegexUTest_8java" ],
     [ "SpringContextInitializerUTest.java", "SpringContextInitializerUTest_8java.html", "SpringContextInitializerUTest_8java" ]
 ];

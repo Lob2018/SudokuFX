@@ -1,6 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.restoreCurrentOptions" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.restoreCurrentOptions">
 <area shape="rect" id="Node000001" title="Restores the current options from the player state holder and applies them to the provided GridPane." alt="" coords="5,70,284,125"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ae69e26e90632888bdc5a5223219578d3" title="Applies visual options to the sudokuFX component." alt="" coords="332,77,631,117"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ae69e26e90632888bdc5a5223219578d3" title="Applies visual options to the sudokuFX component after a player switch." alt="" coords="332,77,631,117"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="284,95,318,95,318,100,284,100"/>
 <area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#aae209f8a3ddfd8a72731b3fee828ca7b" title="Applies a background image to the specified GridPane." alt="" coords="684,30,973,85"/>
 <area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="631,77,670,73,670,78,631,83"/>

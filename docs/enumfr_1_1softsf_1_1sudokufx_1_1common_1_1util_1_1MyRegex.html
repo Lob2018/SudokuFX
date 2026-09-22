@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('enumfr_1_1softsf_1_1sudokufx_1_1common
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex__coll__graph.svg" width="244" height="556"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex__coll__graph.svg" width="244" height="571"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -134,9 +134,9 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a423142d558d45f6e0ffbe705f1aae781" id="r_a423142d558d45f6e0ffbe705f1aae781"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a423142d558d45f6e0ffbe705f1aae781">isValidatedByRegex</a> (final String text, final Pattern pattern)</td></tr>
-<tr class="memdesc:a423142d558d45f6e0ffbe705f1aae781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the given string against the specified regex pattern.  <br /></td></tr>
-<tr class="separator:a423142d558d45f6e0ffbe705f1aae781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0742c839363f426ae6e9967316e2793" id="r_ab0742c839363f426ae6e9967316e2793"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#ab0742c839363f426ae6e9967316e2793">isValidatedByRegex</a> (final String text, final Pattern pattern, boolean textMustNotBeNullOrBlank)</td></tr>
+<tr class="memdesc:ab0742c839363f426ae6e9967316e2793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the given string against the specified regex pattern.  <br /></td></tr>
+<tr class="separator:ab0742c839363f426ae6e9967316e2793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a403e4d4ee7b25346f854086af09c098b" id="r_a403e4d4ee7b25346f854086af09c098b"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html#a403e4d4ee7b25346f854086af09c098b">isValidPassword</a> (final CharBuffer buffer)</td></tr>
 <tr class="memdesc:a403e4d4ee7b25346f854086af09c098b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a password character buffer against strict security rules:  <br /></td></tr>
 <tr class="separator:a403e4d4ee7b25346f854086af09c098b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,8 +198,8 @@ Static Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a423142d558d45f6e0ffbe705f1aae781" name="a423142d558d45f6e0ffbe705f1aae781"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a423142d558d45f6e0ffbe705f1aae781">&#9670;&#160;</a></span>isValidatedByRegex()</h2>
+<a id="ab0742c839363f426ae6e9967316e2793" name="ab0742c839363f426ae6e9967316e2793"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0742c839363f426ae6e9967316e2793">&#9670;&#160;</a></span>isValidatedByRegex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +217,13 @@ Static Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">final Pattern&#160;</td>
-          <td class="paramname"><em>pattern</em>&#160;</td>
+          <td class="paramname"><em>pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">boolean&#160;</td>
+          <td class="paramname"><em>textMustNotBeNullOrBlank</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -235,16 +241,16 @@ Static Private Attributes</h2></td></tr>
 <p>Validates the given string against the specified regex pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">text</td><td>the string to validate; must not be <code class="JavaDocCode">null</code>, empty, or blank </td></tr>
+    <tr><td class="paramname">text</td><td>the string to validate </td></tr>
     <tr><td class="paramname">pattern</td><td>the regex pattern to validate against; must not be <code class="JavaDocCode">null</code> </td></tr>
+    <tr><td class="paramname">textMustNotBeNullOrBlank</td><td>if <code class="JavaDocCode">true</code>, throws an exception when <code class="JavaDocCode">text</code> is null, empty, or blank </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><code class="JavaDocCode">true</code> if the text matches the pattern; <code class="JavaDocCode">false</code> otherwise </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">text</code> is <code class="JavaDocCode">null</code>, empty, blank, or if <code class="JavaDocCode"><br/>
-    pattern</code> is <code class="JavaDocCode">null</code> </td></tr>
+    <tr><td class="paramname">IllegalArgumentException</td><td>if <code class="JavaDocCode">textMustNotBeNullOrBlank</code> is <code class="JavaDocCode">true</code> and <code class="JavaDocCode">text</code> is <code class="JavaDocCode">null</code>, empty, or blank, or if <code class="JavaDocCode">pattern</code> is <code class="JavaDocCode">null</code> </td></tr>
   </table>
   </dd>
 </dl>
@@ -558,7 +564,7 @@ Includes at least 2 special characters from <code class="JavaDocCode">@#$%^&amp;
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common.html">common</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html">util</a></li><li class="navelem"><a class="el" href="enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html">MyRegex</a></li>
-    <li class="footer">Generated on Mon Sep 21 2026 18:04:59 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Sep 22 2026 20:35:35 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

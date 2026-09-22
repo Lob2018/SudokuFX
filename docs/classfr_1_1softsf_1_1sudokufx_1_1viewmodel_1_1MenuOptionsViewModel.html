@@ -268,7 +268,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ae69e26e90632888bdc5a5223219578d3" id="r_ae69e26e90632888bdc5a5223219578d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ae69e26e90632888bdc5a5223219578d3">applyOptionsToUI</a> (OptionsDto options, GridPane sudokuFX)</td></tr>
-<tr class="memdesc:ae69e26e90632888bdc5a5223219578d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies visual options to the sudokuFX component.  <br /></td></tr>
+<tr class="memdesc:ae69e26e90632888bdc5a5223219578d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies visual options to the sudokuFX component after a player switch.  <br /></td></tr>
 <tr class="separator:ae69e26e90632888bdc5a5223219578d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac437c4e3c7dce984a2b491eb1d9da090" id="r_ac437c4e3c7dce984a2b491eb1d9da090"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#ac437c4e3c7dce984a2b491eb1d9da090">checkInitialized</a> ()</td></tr>
 <tr class="memdesc:ac437c4e3c7dce984a2b491eb1d9da090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the <code><a class="el" href="">MenuOptionsViewModel</a></code> has been initialized via <code><a class="el" href="">init(GridPane)</a></code>.  <br /></td></tr>
@@ -680,8 +680,9 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Applies visual options to the sudokuFX component. </p>
+<p>Applies visual options to the sudokuFX component after a player switch. </p>
 <p>This is a refactored utility method that contains NO persistence logic.</p>
+<p>Toggles <code class="JavaDocCode">persistColor</code> to prevent unwanted persistence triggers from the bidirectional color binding of the selected color icon during a player switch.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">options</td><td>the visual options DTO containing colors, background, and UI settings </td></tr>
@@ -1035,6 +1036,7 @@ Audio mute state </li>
 Selected song </li>
 </ul>
 <p>This method synchronizes the UI components with the current player's options and prepares the necessary properties for bindings. The ViewModel is marked as initialized only at the end of this method to ensure that internal listeners do not trigger persistence during the initial loading phase.</p>
+<p>Toggles <code class="JavaDocCode">persistColor</code> to prevent unwanted persistence triggers from the bidirectional color binding of the selected color icon during initialization.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sudokuFX</td><td>the GridPane to apply background settings; must not be <code class="JavaDocCode">null</code> </td></tr>
@@ -3868,7 +3870,7 @@ gridOpacityProperty</code>, and returns the actual updated value. </p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>fr</b></li><li class="navelem"><b>softsf</b></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx.html">sudokufx</a></li><li class="navelem"><a class="el" href="namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html">viewmodel</a></li><li class="navelem"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html">MenuOptionsViewModel</a></li>
-    <li class="footer">Generated on Mon Sep 21 2026 18:05:00 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Tue Sep 22 2026 20:35:36 for SudokuFX by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

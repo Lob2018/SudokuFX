@@ -183,7 +183,6 @@ var annotated_dup =
                   [ "AppIconsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1AppIconsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1AppIconsUTest" ],
                   [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1DifficultyLevelTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1DifficultyLevelTest" ],
                   [ "FxmlViewUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1FxmlViewUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1FxmlViewUTest" ],
-                  [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1MyRegexUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1MyRegexUTest" ],
                   [ "OsNameUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1OsNameUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1OsNameUTest" ],
                   [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1SecureRandomGeneratorUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1SecureRandomGeneratorUTest" ]
                 ] ],
@@ -203,6 +202,7 @@ var annotated_dup =
                   [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1I18nUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1I18nUTest" ],
                   [ "ImageUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1ImageUtilsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1ImageUtilsUTest" ],
                   [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyEnumsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyEnumsUTest" ],
+                  [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyRegexUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyRegexUTest" ],
                   [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1SpringContextInitializerUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1SpringContextInitializerUTest" ]
                 ] ]
               ] ],

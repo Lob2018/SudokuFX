@@ -4,6 +4,32 @@
 ## Unreleased -
 
 
+🐛 fix MyRegex, MyRegexUTest: Fix empty player name input validation and deletion errors
+☑ Root cause: An exception was thrown when the player name text was empty during typing or click actions, and deleting the first character failed due to strict blank/empty text validation.
+☑ Fix: Add &#x60;textMustNotBeNullOrBlank&#x60; parameter during input typing to &#x60;isValidatedByRegex&#x60; in &#x60;MyRegex.java&#x60; to allow empty or blank player names, and update &#x60;isValidPlayerName&#x60;, &#x60;isValidZeroCommaGrid&#x60;, &#x60;isValidVersion&#x60;, and &#x60;isValidAlphanumeric&#x60; with Javadoc.
+☑ Update or add tests: Move &#x60;MyRegexUTest.java&#x60; to &#x60;common/util/&#x60; package and add unit tests for empty/blank player name validation and version exception handling.
+☑ Tests pass.
+
+([f46c059442b875b](https://github.com/Lob2018/SudokuFX/commit/f46c059442b875bc823a7f2020fcee6be472c962))
+
+🐛 fix Color persistence for player
+☑ Root cause: the player was unable to persist his color because options restoration did not correctly initialize the persistColor property.
+☑ Fix: Wrapped hex color updates with &#x60;persistColor&#x60; toggles in &#x60;MenuOptionsViewModel&#x60; and updated Javadocs.
+☑ Verified options restoration and color assignment behavior.
+
+([22b5bf05af10620](https://github.com/Lob2018/SudokuFX/commit/22b5bf05af106207f743fc9f7268a8fd96222d14))
+
+🔧 chore requirements.txt: Bump the python-dependencies
+
+([967626b3fe6d956](https://github.com/Lob2018/SudokuFX/commit/967626b3fe6d9568d45ad3aaa3c9c6007d133c53))
+
+## v1.11.0 - 2026-09-21
+
+
+📚 docs CHANGELOG.md
+
+([d8d4181d28351c4](https://github.com/Lob2018/SudokuFX/commit/d8d4181d28351c4ccdfa5a469bf9210ead6501a1))
+
 ✨ docs, CHANGELOG.md, pom.xml, THIRD_PARTY_NOTICES.txt feat: Bump version 1.10.0 to 1.11.0, and update documentation
 
 ([9f6f87351fd7be8](https://github.com/Lob2018/SudokuFX/commit/9f6f87351fd7be874957dbf710fbf9d094f4e703))
@@ -4818,12 +4844,12 @@ This refactoring improves code readability, reduces error-prone array usage, and
 
 ([284015163f4ad81](https://github.com/Lob2018/SudokuFX/commit/284015163f4ad812fe727144e7fe0413100d0df3))
 
-## v2.0.0 - 2025-07-09
-
-
 🐛 fix pom.xml: remove macOS-x86_64 useless argument &lt;argument&gt;x86_64&lt;/argument&gt;
 
 ([0f130a330acaa5d](https://github.com/Lob2018/SudokuFX/commit/0f130a330acaa5dd4d02b20b0a63e4f824b5a4b3))
+
+## v2.0.0 - 2025-07-08
+
 
 📚 docs DOXYGEN
 
@@ -6085,6 +6111,9 @@ This refactoring improves code readability, reduces error-prone array usage, and
 - Enhance &#x60;getController&#x60; documentation for UI interaction handling.
 
 ([9d7d587120a14c2](https://github.com/Lob2018/SudokuFX/commit/9d7d587120a14c23fb058110533086df892f3d9d))
+
+## v3.0.0 - 2025-05-12
+
 
 ♻️ refactor pom.xml(Jacoco exclude) : Exclude internal classes of VersionService from JaCoCo coverage report
 
@@ -7473,9 +7502,6 @@ Chore flyway-database-hsqldb : Update
 
 ([095a81c6486dbdf](https://github.com/Lob2018/SudokuFX/commit/095a81c6486dbdff01df3cd1aa258764dd5cda10))
 
-## v1.0.0 - 2025-02-18
-
-
 Chore pom.xml : Rename arch to aarch64
 
 ([9dac4a2b1442577](https://github.com/Lob2018/SudokuFX/commit/9dac4a2b1442577cd04ba1a537114863b6d5b51c))
@@ -8086,6 +8112,9 @@ Feat CDS: Add CDS profile to prevent interactions with remote services during st
 - Update script commands to include -Dspring.profiles.active&#x3D;cds to activate the CDS profile during application training.
 
 ([e99d679a868b980](https://github.com/Lob2018/SudokuFX/commit/e99d679a868b980d4fd976a56ef218d5b1608e0f))
+
+## v1.0.0 - 2025-01-28
+
 
 Chore codeql-action : Updated
 

@@ -1,5 +1,5 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyOptionsToUI" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel.applyOptionsToUI">
-<area shape="rect" id="Node000001" title="Applies visual options to the sudokuFX component." alt="" coords="5,77,304,117"/>
+<area shape="rect" id="Node000001" title="Applies visual options to the sudokuFX component after a player switch." alt="" coords="5,77,304,117"/>
 <area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#aae209f8a3ddfd8a72731b3fee828ca7b" title="Applies a background image to the specified GridPane." alt="" coords="357,30,647,85"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="304,77,343,73,344,78,304,83"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html#a37e1c6ac123057100967340aa9e1c18f" title="Updates the song display name by extracting the filename from the provided path." alt="" coords="352,109,652,163"/>
