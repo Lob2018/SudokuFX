@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+📚 docs Doxygen
+
+([4be9c41195d593e](https://github.com/Lob2018/SudokuFX/commit/4be9c41195d593e24ea7505a3bc75fec56b42603))
+
 🐛 fix MyRegex, MyRegexUTest: Fix empty player name input validation and deletion errors
 ☑ Root cause: An exception was thrown when the player name text was empty during typing or click actions, and deleting the first character failed due to strict blank/empty text validation.
 ☑ Fix: Add &#x60;textMustNotBeNullOrBlank&#x60; parameter during input typing to &#x60;isValidatedByRegex&#x60; in &#x60;MyRegex.java&#x60; to allow empty or blank player names, and update &#x60;isValidPlayerName&#x60;, &#x60;isValidZeroCommaGrid&#x60;, &#x60;isValidVersion&#x60;, and &#x60;isValidAlphanumeric&#x60; with Javadoc.
