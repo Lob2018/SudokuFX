@@ -220,7 +220,7 @@ public final class MenuOptionsViewModel {
                         songProperty);
         optionsClearSongRoleDescription = createStringBinding(ROLE_SUBMENU_OPTION);
         this.optionsColorProperty.addListener(
-                (obs, oldColor, newColor) -> {
+                (_, oldColor, newColor) -> {
                     if (initialized
                             && sudokuFXGridPane != null
                             && newColor != null
@@ -992,6 +992,9 @@ public final class MenuOptionsViewModel {
      * of this method to ensure that internal listeners do not trigger persistence during the
      * initial loading phase.
      *
+     * <p>Toggles {@code persistColor} to prevent unwanted persistence triggers from the
+     * bidirectional color binding of the selected color icon during initialization.
+     *
      * @param sudokuFX the GridPane to apply background settings; must not be {@code null}
      * @throws NullPointerException if {@code sudokuFX} is {@code null}
      */
@@ -1006,7 +1009,9 @@ public final class MenuOptionsViewModel {
         OptionsDto optionsDto = playerStateHolder.getCurrentPlayer().optionsidDto();
         this.initialized = true;
         if (StringUtils.isNotBlank(optionsDto.hexcolor())) {
+            persistColor = false;
             optionsColorProperty.set(Color.web(optionsDto.hexcolor()));
+            persistColor = true;
         }
         if (StringUtils.isNotBlank(optionsDto.imagepath())) {
             File file = new File(optionsDto.imagepath());
@@ -1322,8 +1327,11 @@ public final class MenuOptionsViewModel {
     }
 
     /**
-     * Applies visual options to the sudokuFX component. This is a refactored utility method that
-     * contains NO persistence logic.
+     * Applies visual options to the sudokuFX component after a player switch. This is a refactored
+     * utility method that contains NO persistence logic.
+     *
+     * <p>Toggles {@code persistColor} to prevent unwanted persistence triggers from the
+     * bidirectional color binding of the selected color icon during a player switch.
      *
      * @param options the visual options DTO containing colors, background, and UI settings
      * @param sudokuFX the target grid component to which the styles are applied
