@@ -72,33 +72,38 @@ public enum MyRegex {
     }
 
     public boolean isValidPlayerName(final String playerName) {
-        return isValidatedByRegex(playerName, PLAYER_NAME_PATTERN);
+        return isValidatedByRegex(playerName, PLAYER_NAME_PATTERN, false);
     }
 
     public boolean isValidZeroCommaGrid(final String gridText) {
-        return isValidatedByRegex(gridText, ZERO_COMMA_GRID_PATTERN);
+        return isValidatedByRegex(gridText, ZERO_COMMA_GRID_PATTERN, true);
     }
 
     public boolean isValidVersion(final String version) {
-        return isValidatedByRegex(version, VERSION_PATTERN);
+        return isValidatedByRegex(version, VERSION_PATTERN, true);
     }
 
     public boolean isValidAlphanumeric(final String text) {
-        return isValidatedByRegex(text, ALPHANUMERIC_PATTERN);
+        return isValidatedByRegex(text, ALPHANUMERIC_PATTERN, true);
     }
 
     /**
      * Validates the given string against the specified regex pattern.
      *
-     * @param text the string to validate; must not be {@code null}, empty, or blank
+     * @param text the string to validate
      * @param pattern the regex pattern to validate against; must not be {@code null}
+     * @param textMustNotBeNullOrBlank if {@code true}, throws an exception when {@code text} is
+     *     null, empty, or blank
      * @return {@code true} if the text matches the pattern; {@code false} otherwise
-     * @throws IllegalArgumentException if {@code text} is {@code null}, empty, blank, or if {@code
-     *     pattern} is {@code null}
+     * @throws IllegalArgumentException if {@code textMustNotBeNullOrBlank} is {@code true} and
+     *     {@code text} is {@code null}, empty, or blank, or if {@code pattern} is {@code null}
      */
-    private boolean isValidatedByRegex(final String text, final Pattern pattern) {
-        ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
-                text, "The text to validate must not be null or blank, but was " + text);
+    private boolean isValidatedByRegex(
+            final String text, final Pattern pattern, boolean textMustNotBeNullOrBlank) {
+        if (textMustNotBeNullOrBlank) {
+            ExceptionTools.INSTANCE.logAndThrowIllegalArgumentIfBlank(
+                    text, "The text to validate must not be null or blank, but was " + text);
+        }
         if (Objects.isNull(pattern)) {
             throw ExceptionTools.INSTANCE.logAndInstantiateIllegalArgument(
                     "The pattern must not be null");

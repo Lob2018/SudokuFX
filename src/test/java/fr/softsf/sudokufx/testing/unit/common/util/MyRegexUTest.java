@@ -3,7 +3,7 @@
  * Licensed under the GNU General Public License v3.0 (GPL-3.0).
  * See the full license at: https://github.com/Lob2018/SudokuFX/blob/main/LICENSE.txt
  */
-package fr.softsf.sudokufx.testing.unit.common.enums;
+package fr.softsf.sudokufx.testing.unit.common.util;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
@@ -61,5 +61,20 @@ class MyRegexUTest {
     void givenOtherPattern_whenIsValidAlphanumeric_thenUsesPatternMatching() {
         assertTrue(MyRegex.INSTANCE.isValidAlphanumeric("Hello World."));
         assertFalse(MyRegex.INSTANCE.isValidAlphanumeric("Hello@World!"));
+    }
+
+    @Test
+    void givenEmptyOrBlankPlayerName_whenIsValidPlayerName_thenReturnsTrueWithoutException() {
+        assertTrue(MyRegex.INSTANCE.isValidPlayerName(""));
+        assertTrue(MyRegex.INSTANCE.isValidPlayerName("   "));
+        assertTrue(MyRegex.INSTANCE.isValidPlayerName("John Doe"));
+        assertFalse(MyRegex.INSTANCE.isValidPlayerName("John123"));
+    }
+
+    @Test
+    void givenNullOrBlankText_whenIsValidVersion_thenThrowsIllegalArgumentException() {
+        assertThrowsWithMessage(
+                () -> MyRegex.INSTANCE.isValidVersion(""),
+                "The text to validate must not be null or blank, but was ");
     }
 }
