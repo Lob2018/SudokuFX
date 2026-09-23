@@ -1327,11 +1327,11 @@ public final class MenuOptionsViewModel {
     }
 
     /**
-     * Applies visual options to the sudokuFX component after a player switch. This is a refactored
-     * utility method that contains NO persistence logic.
+     * Applies visual options to the sudokuFX component after a player switch.
      *
-     * <p>Toggles {@code persistColor} to prevent unwanted persistence triggers from the
-     * bidirectional color binding of the selected color icon during a player switch.
+     * <p>Toggles {@code persistColor} to prevent unwanted persistence triggers. Applies color
+     * directly when switching to a player with an identical color value while the source player has
+     * a background image defined, otherwise updates the property to trigger change listeners.
      *
      * @param options the visual options DTO containing colors, background, and UI settings
      * @param sudokuFX the target grid component to which the styles are applied
@@ -1339,7 +1339,14 @@ public final class MenuOptionsViewModel {
     private void applyOptionsToUI(OptionsDto options, GridPane sudokuFX) {
         if (StringUtils.isNotBlank(options.hexcolor())) {
             persistColor = false;
-            optionsColorProperty.set(Color.web(options.hexcolor()));
+            Color color = Color.web(options.hexcolor());
+            if (color.equals(optionsColorProperty.get())) {
+                if (initialized && sudokuFXGridPane != null) {
+                    applyAndPersistIfNeededOptionsColor(this.sudokuFXGridPane, color, persistColor);
+                }
+            } else {
+                optionsColorProperty.set(color);
+            }
             persistColor = true;
         }
         if (StringUtils.isNotBlank(options.imagepath())) {

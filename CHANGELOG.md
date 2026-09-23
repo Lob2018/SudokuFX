@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+✨ feat pom.xml, CHANGELOG.md: Bump version from 1.11.0 to 1.11.1
+
+([99a1bf512cfea00](https://github.com/Lob2018/SudokuFX/commit/99a1bf512cfea0082755fe31e5cf5bd345201ff8))
+
 📚 docs Doxygen
 
 ([4be9c41195d593e](https://github.com/Lob2018/SudokuFX/commit/4be9c41195d593e24ea7505a3bc75fec56b42603))
