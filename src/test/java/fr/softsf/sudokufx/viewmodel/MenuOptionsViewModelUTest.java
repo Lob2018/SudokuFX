@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 import java.util.*;
-
 import javafx.beans.binding.StringBinding;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.image.Image;
@@ -191,7 +190,6 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         }
     }
 
-
     @Nested
     @DisplayName("Background Image Success Handling")
     class BackgroundImageSuccessTests {
@@ -235,18 +233,18 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             File imageFile = new File("src/test/resources/sample.jpg");
             GridPane gridPane = new GridPane();
             doAnswer(
-                    invocation -> {
-                        File fileArg = invocation.getArgument(0);
-                        Consumer<BackgroundImage> callback = invocation.getArgument(2);
-                        callback.accept(
-                                new BackgroundImage(
-                                        new Image(fileArg.toURI().toString()),
-                                        null,
-                                        null,
-                                        null,
-                                        null));
-                        return null;
-                    })
+                            invocation -> {
+                                File fileArg = invocation.getArgument(0);
+                                Consumer<BackgroundImage> callback = invocation.getArgument(2);
+                                callback.accept(
+                                        new BackgroundImage(
+                                                new Image(fileArg.toURI().toString()),
+                                                null,
+                                                null,
+                                                null,
+                                                null));
+                                return null;
+                            })
                     .when(asyncServiceMock)
                     .processFileAsync(eq(imageFile), any(), any());
             MenuOptionsViewModel vm =
@@ -316,19 +314,19 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         File imageFile = new File("src/test/resources/sample.jpg");
         GridPane gridPane = new GridPane();
         doAnswer(
-                invocation -> {
-                    File fileArg = invocation.getArgument(0);
-                    Consumer<BackgroundImage> callback = invocation.getArgument(2);
-                    BackgroundImage fakeBackground =
-                            new BackgroundImage(
-                                    new Image(fileArg.toURI().toString()),
-                                    null,
-                                    null,
-                                    null,
-                                    null);
-                    callback.accept(fakeBackground);
-                    return null;
-                })
+                        invocation -> {
+                            File fileArg = invocation.getArgument(0);
+                            Consumer<BackgroundImage> callback = invocation.getArgument(2);
+                            BackgroundImage fakeBackground =
+                                    new BackgroundImage(
+                                            new Image(fileArg.toURI().toString()),
+                                            null,
+                                            null,
+                                            null,
+                                            null);
+                            callback.accept(fakeBackground);
+                            return null;
+                        })
                 .when(asyncServiceMock)
                 .processFileAsync(eq(imageFile), any(), any());
         MenuOptionsViewModel vm =

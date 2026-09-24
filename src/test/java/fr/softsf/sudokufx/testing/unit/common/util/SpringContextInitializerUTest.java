@@ -55,9 +55,7 @@ class SpringContextInitializerUTest {
         SpringContextInitializer initializer = new SpringContextInitializer(context);
         Task<Void> task = initializer.createInitializationTask(SudoMain.class);
         initializer.runInitializationTask(task);
-        Awaitility.await()
-                .atMost(2, TimeUnit.SECONDS)
-                .until(task::isDone);
+        Awaitility.await().atMost(2, TimeUnit.SECONDS).until(task::isDone);
         verify(context, times(1)).init(any());
     }
 }

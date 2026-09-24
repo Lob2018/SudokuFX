@@ -4,6 +4,17 @@
 ## Unreleased -
 
 
+♻️ refactor SpringContextInitializerUTest, MenuOptionsViewModelUTest: Replace CountDownLatch with Awaitility for asynchronous tests
+- SpringContextInitializerUTest :
+  - Replace CountDownLatch with Awaitility for task completion synchronization
+  - Remove unused CountDownLatch imports
+- MenuOptionsViewModelUTest :
+  - Replace CountDownLatch with Awaitility for background image toast verification
+  - Remove unused CountDownLatch imports and variables
+- Tests pass.
+
+([21fb4655412d1f1](https://github.com/Lob2018/SudokuFX/commit/21fb4655412d1f17129a0839e218ba81de3abfd9))
+
 🐛 fix MenuOptionsViewModel: Direct color application when color matches and source player has background image
 - Root cause: Property change listeners were not triggered when switching to a player with an identical color value, preventing the UI from updating properly when the source player had a background image.
 - Fix: Update applyOptionsToUI to apply color directly when color matches, and update Javadoc accordingly.
