@@ -577,6 +577,11 @@ public final class MainView implements IMainView {
         menuOptionsButtonColor
                 .valueProperty()
                 .bindBidirectional(menuOptionsViewModel.optionsColorProperty());
+        menuOptionsButtonColor.setOnAction(
+                _ -> {
+                    menuOptionsViewModel.handleColorReapplicationWhenImageActive(
+                            menuOptionsButtonColor.getValue());
+                });
         applyOpaqueMode(menuOptionsViewModel.gridOpacityProperty().get());
     }
 

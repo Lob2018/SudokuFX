@@ -1177,8 +1177,7 @@ public final class MenuOptionsViewModel {
      * Applies the given color as the background of the specified {@link GridPane}. Optionally
      * persists the color in the current player's options.
      *
-     * <p>The color is converted to a hex string (RRGGBBAA). If persistence is enabled, the update
-     * only occurs if the color differs from the currently stored value.
+     * <p>The color is converted to a hex string (RRGGBBAA).
      *
      * @param sudokuFX the {@link GridPane} to update; must not be null
      * @param color the color to apply; must not be null
@@ -1202,9 +1201,6 @@ public final class MenuOptionsViewModel {
             return;
         }
         OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
-        if (hexColor.equals(currentOptions.hexcolor())) {
-            return;
-        }
         OptionsDto toSaveOptions = currentOptions.withImagepath("").withHexcolor(hexColor);
         try {
             optionsService.updateOptions(toSaveOptions);
@@ -1355,5 +1351,22 @@ public final class MenuOptionsViewModel {
         muteProperty.set(options.muted());
         updateSongNameFromPath(options.songpath());
         gridOpacityProperty.set(options.opaque());
+    }
+
+    /**
+     * Handles color reapplication when an image is active and the selected color matches the
+     * current option.
+     *
+     * @param color the color to reapply; must not be null
+     */
+    public void handleColorReapplicationWhenImageActive(Color color) {
+        Objects.requireNonNull(color, "color must not be null");
+        OptionsDto currentOptions = playerStateHolder.getCurrentPlayer().optionsidDto();
+        if (color.equals(optionsColorProperty.get())
+                && !currentOptions.imagepath().isBlank()
+                && initialized
+                && sudokuFXGridPane != null) {
+            applyAndPersistIfNeededOptionsColor(sudokuFXGridPane, color, true);
+        }
     }
 }

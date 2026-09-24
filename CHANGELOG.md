@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+📝 style GridMaster.java: Run automatic code formatter
+
+([621bc982a7ce188](https://github.com/Lob2018/SudokuFX/commit/621bc982a7ce188284f44cff94420e32f5366ef7))
+
 ♻️ refactor SpringContextInitializerUTest, MenuOptionsViewModelUTest: Replace CountDownLatch with Awaitility for asynchronous tests
 - SpringContextInitializerUTest :
   - Replace CountDownLatch with Awaitility for task completion synchronization

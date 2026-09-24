@@ -30,6 +30,8 @@ import org.testfx.framework.junit5.ApplicationExtension;
 import fr.softsf.sudokufx.common.enums.I18n;
 import fr.softsf.sudokufx.common.enums.ToastLevels;
 import fr.softsf.sudokufx.common.util.ImageUtils;
+import fr.softsf.sudokufx.dto.OptionsDto;
+import fr.softsf.sudokufx.dto.PlayerDto;
 import fr.softsf.sudokufx.dto.ToastData;
 import fr.softsf.sudokufx.service.business.OptionsService;
 import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;
@@ -340,5 +342,58 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         vm.applyAndPersistIfNeededBackgroundImage(imageFile, gridPane, true);
         verify(asyncServiceMock).processFileAsync(eq(imageFile), any(), any());
         assertNotNull(gridPane.getBackground(), "Le GridPane doit avoir un Background appliqué");
+    }
+
+    /** Test suite for color reapplication logic when an image is active. */
+    @Nested
+    @DisplayName("Color Reapplication Tests")
+    class ColorReapplicationTests {
+
+        /** Verifies that a null color throws a NullPointerException. */
+        @Test
+        void givenNullColor_whenHandleColorReapplication_thenThrowNullPointerException() {
+            assertThrows(
+                    NullPointerException.class,
+                    () -> viewModel.handleColorReapplicationWhenImageActive(null));
+        }
+
+        @Test
+        void givenMatchingColorAndActiveImage_whenHandleColorReapplication_thenColorApplied() {
+            Color color = Color.RED;
+            viewModel.optionsColorProperty().set(color);
+            PlayerDto player = playerStateHolder.getCurrentPlayer();
+            OptionsDto optionsWithImage = player.optionsidDto().withImagepath("sample.jpg");
+            PlayerDto updatedPlayer = player.withOptions(optionsWithImage);
+            playerStateHolder.currentPlayerProperty().set(updatedPlayer);
+            viewModel.handleColorReapplicationWhenImageActive(color);
+            BackgroundFill fill = sudokuFX.getBackground().getFills().getFirst();
+            assertEquals(color, fill.getFill());
+            verify(optionsService).updateOptions(any());
+        }
+
+        @Test
+        void givenMatchingColorAndNoActiveImage_whenHandleColorReapplication_thenNothingHappens() {
+            Color color = Color.RED;
+            viewModel.optionsColorProperty().set(color);
+            PlayerDto player = playerStateHolder.getCurrentPlayer();
+            OptionsDto optionsWithoutImage = player.optionsidDto().withImagepath("");
+            PlayerDto updatedPlayer = player.withOptions(optionsWithoutImage);
+            playerStateHolder.currentPlayerProperty().set(updatedPlayer);
+            viewModel.handleColorReapplicationWhenImageActive(color);
+            verify(optionsService, never()).updateOptions(any());
+        }
+
+        @Test
+        void givenDifferentColorAndActiveImage_whenHandleColorReapplication_thenNothingHappens() {
+            Color currentColor = Color.RED;
+            Color newColor = Color.BLUE;
+            viewModel.optionsColorProperty().set(currentColor);
+            PlayerDto player = playerStateHolder.getCurrentPlayer();
+            OptionsDto optionsWithImage = player.optionsidDto().withImagepath("sample.jpg");
+            PlayerDto updatedPlayer = player.withOptions(optionsWithImage);
+            playerStateHolder.currentPlayerProperty().set(updatedPlayer);
+            viewModel.handleColorReapplicationWhenImageActive(newColor);
+            verify(optionsService, never()).updateOptions(any());
+        }
     }
 }
