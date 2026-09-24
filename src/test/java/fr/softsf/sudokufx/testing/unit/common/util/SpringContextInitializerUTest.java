@@ -5,10 +5,10 @@
  */
 package fr.softsf.sudokufx.testing.unit.common.util;
 
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import javafx.concurrent.Task;
 
+import org.awaitility.Awaitility;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.testfx.framework.junit5.ApplicationExtension;
@@ -50,17 +50,14 @@ class SpringContextInitializerUTest {
     }
 
     @Test
-    void givenMockedSpringContext_whenRunInitializationTask_thenInitIsCalled()
-            throws InterruptedException {
+    void givenMockedSpringContext_whenRunInitializationTask_thenInitIsCalled() {
         SpringContext context = mock(SpringContext.class);
         SpringContextInitializer initializer = new SpringContextInitializer(context);
         Task<Void> task = initializer.createInitializationTask(SudoMain.class);
-        CountDownLatch latch = new CountDownLatch(1);
-        task.setOnSucceeded(e -> latch.countDown());
-        task.setOnFailed(e -> latch.countDown());
         initializer.runInitializationTask(task);
-        boolean completed = latch.await(2, TimeUnit.SECONDS);
-        assertTrue(completed, "La tâche d'initialisation a expiré (timeout de 2s)");
+        Awaitility.await()
+                .atMost(2, TimeUnit.SECONDS)
+                .until(task::isDone);
         verify(context, times(1)).init(any());
     }
 }

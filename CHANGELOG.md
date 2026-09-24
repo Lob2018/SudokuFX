@@ -4,6 +4,13 @@
 ## Unreleased -
 
 
+🐛 fix MenuOptionsViewModel: Direct color application when color matches and source player has background image
+- Root cause: Property change listeners were not triggered when switching to a player with an identical color value, preventing the UI from updating properly when the source player had a background image.
+- Fix: Update applyOptionsToUI to apply color directly when color matches, and update Javadoc accordingly.
+- Tests pass.
+
+([eb75ee3105c76b6](https://github.com/Lob2018/SudokuFX/commit/eb75ee3105c76b6b1759bb94badcd0ff8a8d75dc))
+
 ✨ feat pom.xml, CHANGELOG.md: Bump version from 1.11.0 to 1.11.1
 
 ([99a1bf512cfea00](https://github.com/Lob2018/SudokuFX/commit/99a1bf512cfea0082755fe31e5cf5bd345201ff8))

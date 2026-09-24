@@ -7,11 +7,11 @@ package fr.softsf.sudokufx.viewmodel;
 
 import java.io.File;
 import java.lang.reflect.Field;
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
 import java.util.stream.Stream;
 import java.util.*;
+
 import javafx.beans.binding.StringBinding;
 import javafx.scene.control.ColorPicker;
 import javafx.scene.image.Image;
@@ -20,6 +20,7 @@ import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 
+import org.awaitility.Awaitility;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -159,19 +160,11 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
     class BackgroundImageErrorTests {
 
         @Test
-        void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast()
-                throws InterruptedException {
-            CountDownLatch latch = new CountDownLatch(1);
-            toasterService
-                    .toastRequestProperty()
-                    .addListener(
-                            (obs, old, newVal) -> {
-                                if (newVal != null) latch.countDown();
-                            });
+        void givenNullFile_whenLoadBackgroundImage_thenShowErrorToast() {
             viewModel.applyAndPersistIfNeededBackgroundImage(null, sudokuFX, true);
-            assertTrue(
-                    latch.await(2, TimeUnit.SECONDS),
-                    "Le toast d'erreur n'a jamais été émis (timeout 2s)");
+            Awaitility.await()
+                    .atMost(2, TimeUnit.SECONDS)
+                    .until(() -> toasterService.toastRequestProperty().get() != null);
             verifyNoInteractions(asyncServiceMock);
             ToastData toastData = toasterService.toastRequestProperty().get();
             assertNotNull(toastData);
@@ -179,21 +172,12 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         }
 
         @Test
-        void givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast()
-                throws InterruptedException {
+        void givenInvalidFile_whenLoadBackgroundImage_thenShowErrorToast() {
             File invalidFile = new File("invalid.txt");
-            CountDownLatch latch = new CountDownLatch(1);
-            toasterService
-                    .toastRequestProperty()
-                    .addListener(
-                            (obs, old, newVal) -> {
-                                if (newVal != null) {
-                                    latch.countDown();
-                                }
-                            });
             viewModel.applyAndPersistIfNeededBackgroundImage(invalidFile, sudokuFX, true);
-            boolean completed = latch.await(2, TimeUnit.SECONDS);
-            assertTrue(completed, "Le toast d'erreur n'a jamais été émis (timeout 2s)");
+            Awaitility.await()
+                    .atMost(2, TimeUnit.SECONDS)
+                    .until(() -> toasterService.toastRequestProperty().get() != null);
             verifyNoInteractions(asyncServiceMock);
             ToastData toastData = toasterService.toastRequestProperty().get();
             assertNotNull(toastData, "Un toast d'erreur doit être émis");
@@ -206,6 +190,7 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
                                             "toast.error.optionsviewmodel.handlefileimagechooser")));
         }
     }
+
 
     @Nested
     @DisplayName("Background Image Success Handling")
@@ -235,16 +220,10 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             Field field = MenuOptionsViewModel.class.getDeclaredField("imageUtils");
             field.setAccessible(true);
             field.set(viewModel, imageUtilsSpy);
-            CountDownLatch latch = new CountDownLatch(1);
-            toasterService
-                    .toastRequestProperty()
-                    .addListener(
-                            (obs, old, newVal) -> {
-                                if (newVal != null) latch.countDown();
-                            });
             viewModel.applyAndPersistIfNeededBackgroundImage(nonExistentFile, sudokuFX, true);
-            boolean completed = latch.await(2, TimeUnit.SECONDS);
-            assertTrue(completed, "Le toast d'erreur n'a jamais été émis (timeout de 2s)");
+            Awaitility.await()
+                    .atMost(2, TimeUnit.SECONDS)
+                    .until(() -> toasterService.toastRequestProperty().get() != null);
             verify(asyncServiceMock, never()).processFileAsync(any(), any(), any());
             ToastData toastData = toasterService.toastRequestProperty().get();
             assertNotNull(toastData);
@@ -256,18 +235,18 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
             File imageFile = new File("src/test/resources/sample.jpg");
             GridPane gridPane = new GridPane();
             doAnswer(
-                            invocation -> {
-                                File fileArg = invocation.getArgument(0);
-                                Consumer<BackgroundImage> callback = invocation.getArgument(2);
-                                callback.accept(
-                                        new BackgroundImage(
-                                                new Image(fileArg.toURI().toString()),
-                                                null,
-                                                null,
-                                                null,
-                                                null));
-                                return null;
-                            })
+                    invocation -> {
+                        File fileArg = invocation.getArgument(0);
+                        Consumer<BackgroundImage> callback = invocation.getArgument(2);
+                        callback.accept(
+                                new BackgroundImage(
+                                        new Image(fileArg.toURI().toString()),
+                                        null,
+                                        null,
+                                        null,
+                                        null));
+                        return null;
+                    })
                     .when(asyncServiceMock)
                     .processFileAsync(eq(imageFile), any(), any());
             MenuOptionsViewModel vm =
@@ -337,19 +316,19 @@ class MenuOptionsViewModelUTest extends AbstractPlayerStateTest {
         File imageFile = new File("src/test/resources/sample.jpg");
         GridPane gridPane = new GridPane();
         doAnswer(
-                        invocation -> {
-                            File fileArg = invocation.getArgument(0);
-                            Consumer<BackgroundImage> callback = invocation.getArgument(2);
-                            BackgroundImage fakeBackground =
-                                    new BackgroundImage(
-                                            new Image(fileArg.toURI().toString()),
-                                            null,
-                                            null,
-                                            null,
-                                            null);
-                            callback.accept(fakeBackground);
-                            return null;
-                        })
+                invocation -> {
+                    File fileArg = invocation.getArgument(0);
+                    Consumer<BackgroundImage> callback = invocation.getArgument(2);
+                    BackgroundImage fakeBackground =
+                            new BackgroundImage(
+                                    new Image(fileArg.toURI().toString()),
+                                    null,
+                                    null,
+                                    null,
+                                    null);
+                    callback.accept(fakeBackground);
+                    return null;
+                })
                 .when(asyncServiceMock)
                 .processFileAsync(eq(imageFile), any(), any());
         MenuOptionsViewModel vm =
