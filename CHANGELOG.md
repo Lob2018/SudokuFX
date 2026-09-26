@@ -4,6 +4,14 @@
 ## Unreleased -
 
 
+🐛 fix MainView, MenuOptionsViewModel, MenuOptionsViewModelUTest: Color reapplication failure when image background is active
+- Root cause: JavaFX valueProperty bindings skip execution if the selected color equals the current value, preventing UI updates when re-selecting a color while an image background is active.
+- Fix: Add setOnAction handler to ColorPicker and implement handleColorReapplicationWhenImageActive method in MenuOptionsViewModel with null-safety checks.
+- Add unit tests covering null color validation, matching color with active image, skip condition with no active image, and skip condition with different color.
+- Tests pass.
+
+([bf3fdef646b70d1](https://github.com/Lob2018/SudokuFX/commit/bf3fdef646b70d1d0360ab803d06cd14ec7e761d))
+
 📝 style GridMaster.java: Run automatic code formatter
 
 ([621bc982a7ce188](https://github.com/Lob2018/SudokuFX/commit/621bc982a7ce188284f44cff94420e32f5366ef7))
@@ -25,6 +33,9 @@
 - Tests pass.
 
 ([eb75ee3105c76b6](https://github.com/Lob2018/SudokuFX/commit/eb75ee3105c76b6b1759bb94badcd0ff8a8d75dc))
+
+## v1.11.1 - 2026-09-22
+
 
 ✨ feat pom.xml, CHANGELOG.md: Bump version from 1.11.0 to 1.11.1
 
@@ -4874,12 +4885,12 @@ This refactoring improves code readability, reduces error-prone array usage, and
 
 ([284015163f4ad81](https://github.com/Lob2018/SudokuFX/commit/284015163f4ad812fe727144e7fe0413100d0df3))
 
+## v2.0.0 - 2025-07-09
+
+
 🐛 fix pom.xml: remove macOS-x86_64 useless argument &lt;argument&gt;x86_64&lt;/argument&gt;
 
 ([0f130a330acaa5d](https://github.com/Lob2018/SudokuFX/commit/0f130a330acaa5dd4d02b20b0a63e4f824b5a4b3))
-
-## v2.0.0 - 2025-07-08
-
 
 📚 docs DOXYGEN
 
@@ -6141,9 +6152,6 @@ This refactoring improves code readability, reduces error-prone array usage, and
 - Enhance &#x60;getController&#x60; documentation for UI interaction handling.
 
 ([9d7d587120a14c2](https://github.com/Lob2018/SudokuFX/commit/9d7d587120a14c23fb058110533086df892f3d9d))
-
-## v3.0.0 - 2025-05-12
-
 
 ♻️ refactor pom.xml(Jacoco exclude) : Exclude internal classes of VersionService from JaCoCo coverage report
 
@@ -7532,6 +7540,9 @@ Chore flyway-database-hsqldb : Update
 
 ([095a81c6486dbdf](https://github.com/Lob2018/SudokuFX/commit/095a81c6486dbdff01df3cd1aa258764dd5cda10))
 
+## v1.0.0 - 2025-02-18
+
+
 Chore pom.xml : Rename arch to aarch64
 
 ([9dac4a2b1442577](https://github.com/Lob2018/SudokuFX/commit/9dac4a2b1442577cd04ba1a537114863b6d5b51c))
@@ -8142,9 +8153,6 @@ Feat CDS: Add CDS profile to prevent interactions with remote services during st
 - Update script commands to include -Dspring.profiles.active&#x3D;cds to activate the CDS profile during application training.
 
 ([e99d679a868b980](https://github.com/Lob2018/SudokuFX/commit/e99d679a868b980d4fd976a56ef218d5b1608e0f))
-
-## v1.0.0 - 2025-01-28
-
 
 Chore codeql-action : Updated
 
