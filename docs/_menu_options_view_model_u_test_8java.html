@@ -111,7 +111,6 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_menu_options_
 <div class="contents">
 <div class="textblock"><code>import java.io.File;</code><br />
 <code>import java.lang.reflect.Field;</code><br />
-<code>import java.util.concurrent.CountDownLatch;</code><br />
 <code>import java.util.concurrent.TimeUnit;</code><br />
 <code>import java.util.function.Consumer;</code><br />
 <code>import java.util.stream.Stream;</code><br />
@@ -123,6 +122,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_menu_options_
 <code>import javafx.scene.layout.BackgroundImage;</code><br />
 <code>import javafx.scene.layout.GridPane;</code><br />
 <code>import javafx.scene.paint.Color;</code><br />
+<code>import org.awaitility.Awaitility;</code><br />
 <code>import org.junit.jupiter.api.extension.ExtendWith;</code><br />
 <code>import org.junit.jupiter.api.*;</code><br />
 <code>import org.junit.jupiter.params.ParameterizedTest;</code><br />
@@ -132,6 +132,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_menu_options_
 <code>import fr.softsf.sudokufx.common.enums.I18n;</code><br />
 <code>import fr.softsf.sudokufx.common.enums.ToastLevels;</code><br />
 <code>import fr.softsf.sudokufx.common.util.ImageUtils;</code><br />
+<code>import fr.softsf.sudokufx.dto.OptionsDto;</code><br />
+<code>import fr.softsf.sudokufx.dto.PlayerDto;</code><br />
 <code>import fr.softsf.sudokufx.dto.ToastData;</code><br />
 <code>import fr.softsf.sudokufx.service.business.OptionsService;</code><br />
 <code>import fr.softsf.sudokufx.service.ui.AsyncFileProcessorService;</code><br />
@@ -151,6 +153,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('_menu_options_
 Classes</h2></td></tr>
 <tr class="memitem:fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EBackgroundImageErrorTests" id="r_fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EBackgroundImageErrorTests"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_error_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageErrorTests</a></td></tr>
 <tr class="memitem:fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EBackgroundImageSuccessTests" id="r_fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EBackgroundImageSuccessTests"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_background_image_success_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.BackgroundImageSuccessTests</a></td></tr>
+<tr class="memitem:fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EColorReapplicationTests" id="r_fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EColorReapplicationTests"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_color_reapplication_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.ColorReapplicationTests</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test suite for color reapplication logic when an image is active.  <a href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_color_reapplication_tests.html#details">More...</a><br /></td></tr>
 <tr class="memitem:fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest" id="r_fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest</a></td></tr>
 <tr class="memitem:fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EOptionsToggleTests" id="r_fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EOptionsToggleTests"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_options_toggle_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.OptionsToggleTests</a></td></tr>
 <tr class="memitem:fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EUtilityTextMethodsTests" id="r_fr_2Esoftsf_2Esudokufx_2Eviewmodel_2EMenuOptionsViewModelUTest_2EUtilityTextMethodsTests"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test_1_1_utility_text_methods_tests.html">fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest.UtilityTextMethodsTests</a></td></tr>

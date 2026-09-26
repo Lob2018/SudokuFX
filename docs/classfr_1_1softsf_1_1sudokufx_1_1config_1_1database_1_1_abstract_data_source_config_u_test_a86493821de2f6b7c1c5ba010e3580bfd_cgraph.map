@@ -1,16 +1,55 @@
 <map id="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenValidJdbcUrlAndPoolName_whenHikariDataSourceCreated_thenPropertiesAreSet" name="fr.softsf.sudokufx.config.database.AbstractDataSourceConfigUTest.givenValidJdbcUrlAndPoolName_whenHikariDataSourceCreated_thenPropertiesAreSet">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,147,343,221"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a0ded1fe617d9cc3aea14c69f49b192b1" title=" " alt="" coords="420,5,643,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="229,144,304,99,390,58,409,51,411,56,392,62,306,104,232,148"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#aaaf84f6d2df97bf0d9e668722477d7b3" title=" " alt="" coords="420,72,643,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,143,390,124,421,116,422,122,391,129,317,149"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,180,343,255"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a145f52cf820ba418a6fecadefb9d833f" title=" " alt="" coords="420,5,643,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,178,292,116,340,84,390,58,404,51,406,56,392,62,342,89,295,120,218,182"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#ae6423c8edbce011f89b6e5dd7f264fee" title=" " alt="" coords="420,72,643,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="255,177,321,150,390,124,414,117,415,122,392,129,322,154,257,182"/>
 <area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a95e551a74c1292b0e82a0b3ce4905e50" title="Creates and configures the main HikariDataSource for the application." alt="" coords="391,163,672,205"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="343,181,375,181,375,187,343,187"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="343,199,375,196,376,201,344,204"/>
 <area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a7627a508aed1a8ca6a8d81604045fbe0" title=" " alt="" coords="409,229,654,272"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="344,213,399,223,398,229,343,218"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="344,230,394,235,393,241,343,236"/>
 <area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#aade3fbed167a40c3b5ad30c792d07539" title=" " alt="" coords="401,296,662,339"/>
-<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="249,220,317,252,392,281,414,289,412,294,390,287,315,257,246,224"/>
-<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="471,163,468,152,479,143,500,138,531,136,566,138,587,145,585,150,565,144,531,141,500,143,481,148,474,154,476,161"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74" title="Configure et retourne un HikariConfig avec les paramètres de connexion et pool." alt="" coords="720,163,991,205"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="672,181,704,181,704,187,672,187"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="294,253,391,281,421,289,419,294,390,287,292,258"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5b35f5af429100ab131dc83ac4b9a2ca" title="Configures the keystore by managing the entire process of creating, loading, and encrypting the neces..." alt="" coords="413,363,650,421"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="229,253,304,302,392,348,406,354,404,359,390,353,302,306,226,257"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="470,163,467,152,477,143,499,138,531,136,567,138,588,145,586,150,566,144,531,141,500,143,480,148,472,154,475,161"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74" title="Configure et retourne un HikariConfig avec les paramètres de connexion et pool." alt="" coords="727,163,998,205"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="673,181,712,181,712,187,673,187"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a66dfcb0f0fdfe459e86abd12e3afa2a2" title="Create or update the Keystore." alt="" coords="720,511,1005,553"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="578,420,644,459,721,496,740,503,738,508,719,501,641,464,575,424"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a29d06446266f63c94e41b8eb82b32847" title="Retrieves credentials if the alias exists in the keystore; otherwise, generates and stores them." alt="" coords="751,245,974,288"/>
+<area shape="poly" id="edge10_Node000008_Node000010" title=" " alt="" coords="638,360,671,348,802,292,804,297,673,353,640,365"/>
+<area shape="rect" id="Node000019" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a8625a13305c544c042426438064b2cb9" title="Load the Keystore." alt="" coords="751,444,974,487"/>
+<area shape="poly" id="edge22_Node000008_Node000019" title=" " alt="" coords="651,416,749,437,748,443,650,421"/>
+<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5f6403006be0ac7d64a1a12cb8e20f2f" title="Check the symmetric key presence." alt="" coords="750,353,975,396"/>
+<area shape="poly" id="edge24_Node000008_Node000020" title=" " alt="" coords="650,383,734,379,734,384,651,388"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5df2015a8cf94b6c6c935e72a9e7980c" title="Retrieves and decrypts the credential associated with the given alias from the keystore,..." alt="" coords="1069,212,1295,255"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="974,252,1053,244,1054,249,975,258"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a4e0c9cd1616de5732520be76f91ebd85" title="Generates and encrypts a credential for the given alias, then stores it securely in the keystore." alt="" coords="1069,279,1295,321"/>
+<area shape="poly" id="edge13_Node000010_Node000012" title=" " alt="" coords="975,276,1054,284,1053,289,974,281"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a1d981fbc5ac12da9cacc785a8052e318" title="Validates that the given alias is not null, empty, or blank." alt="" coords="1695,149,1964,192"/>
+<area shape="poly" id="edge21_Node000010_Node000014" title=" " alt="" coords="943,242,1004,215,1018,204,1027,193,1036,183,1052,174,1137,148,1225,131,1314,121,1403,118,1488,120,1569,126,1706,144,1706,149,1568,131,1488,125,1403,123,1315,127,1226,136,1138,153,1054,178,1040,187,1031,197,1021,208,1007,220,945,247"/>
+<area shape="poly" id="edge12_Node000011_Node000011" title=" " alt="" coords="1122,212,1120,202,1130,193,1151,187,1182,185,1216,188,1236,194,1235,199,1215,193,1182,191,1151,193,1133,197,1125,203,1128,211"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a7b8751ac0c7de3f434f5500915e66c28" title="Stores the given secret key in the keystore under the specified alias." alt="" coords="1389,315,1617,357"/>
+<area shape="poly" id="edge14_Node000012_Node000013" title=" " alt="" coords="1295,310,1374,319,1373,324,1295,315"/>
+<area shape="rect" id="Node000017" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#a342ab43749ccb08f405fca005b2b0c1a" title="Generate Passay secret with random length using SecureRandomGenerator." alt="" coords="1379,244,1627,287"/>
+<area shape="poly" id="edge19_Node000012_Node000017" title=" " alt="" coords="1295,285,1363,278,1364,283,1295,290"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="1616,313,1645,297,1661,279,1669,261,1677,242,1693,222,1735,196,1737,201,1697,226,1681,244,1674,263,1666,282,1649,301,1619,317"/>
+<area shape="rect" id="Node000015" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a9714968659205027206115325bebd480" title="Writes the keystore content to a file." alt="" coords="1708,327,1951,369"/>
+<area shape="poly" id="edge16_Node000013_Node000015" title=" " alt="" coords="1618,338,1693,340,1693,346,1617,343"/>
+<area shape="poly" id="edge18_Node000015_Node000015" title=" " alt="" coords="1772,327,1769,317,1779,307,1799,302,1830,300,1863,302,1883,309,1881,314,1862,308,1830,305,1800,307,1781,312,1774,318,1777,325"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a094e3f98d8644135b26b573ee75bd834" title="Constructs a new ApplicationKeystore with required infrastructure dependencies." alt="" coords="2012,327,2270,369"/>
+<area shape="poly" id="edge17_Node000015_Node000016" title=" " alt="" coords="1952,345,1997,345,1997,351,1952,351"/>
+<area shape="rect" id="Node000018" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html#aa5e3b34a5f9cce05a371d49487fafa6b" title="Define the secret special characters." alt="" coords="1714,236,1945,279"/>
+<area shape="poly" id="edge20_Node000017_Node000018" title=" " alt="" coords="1628,260,1699,258,1699,263,1628,265"/>
+<area shape="poly" id="edge23_Node000019_Node000019" title=" " alt="" coords="803,444,801,434,811,425,831,419,863,417,897,420,917,426,915,431,896,425,863,423,832,425,813,429,806,435,808,443"/>
+<area shape="rect" id="Node000021" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a408a4b06612f40c1c700c61dfded635b" title="Get the symmetric key and set encryption service." alt="" coords="1058,428,1306,487"/>
+<area shape="poly" id="edge25_Node000020_Node000021" title=" " alt="" coords="960,394,1006,405,1063,421,1062,426,1005,411,959,399"/>
+<area shape="rect" id="Node000023" href="$classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html#a5b0d0ea827857752fe45ac9bfc4edae3" title="Set the symmetric key and set encryption service." alt="" coords="1053,345,1311,404"/>
+<area shape="poly" id="edge27_Node000020_Node000023" title=" " alt="" coords="976,381,1038,381,1038,386,976,386"/>
+<area shape="rect" id="Node000022" href="$interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html#abeb7ab95db096f4e046c4c538f730077" title="Constructs a SecretKeyEncryptionServiceAESGCM instance, initializing the cipher for AES encryption/de..." alt="" coords="1359,389,1647,448"/>
+<area shape="poly" id="edge26_Node000021_Node000022" title=" " alt="" coords="1306,440,1343,435,1343,441,1306,445"/>
+<area shape="poly" id="edge29_Node000023_Node000013" title=" " alt="" coords="1311,357,1373,349,1374,354,1311,362"/>
+<area shape="poly" id="edge30_Node000023_Node000020" title=" " alt="" coords="1053,368,990,368,990,363,1053,363"/>
+<area shape="poly" id="edge28_Node000023_Node000022" title=" " alt="" coords="1311,390,1343,394,1343,399,1311,395"/>
 </map>

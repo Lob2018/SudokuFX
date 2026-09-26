@@ -1,0 +1,10 @@
+var classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test =
+[
+    [ "assertThrowsWithMessage", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#af985e6394fc722c23516a4207aa45183", null ],
+    [ "givenEmptyOrBlankPlayerName_whenIsValidPlayerName_thenReturnsTrueWithoutException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#ab90351ec55904188e49ae5a0feeb7449", null ],
+    [ "givenNullOrBlankText_whenIsValidAlphanumeric_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a3e0f6e03d74af24120fb3a53d54823aa", null ],
+    [ "givenNullOrBlankText_whenIsValidVersion_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a2e3626009cb8c41a7ee1b4cde39638da", null ],
+    [ "givenNullOrEmptyOrBlankCharArrayText_whenIsValidSecret_thenThrowsIllegalArgumentException", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a2b2745bf112471db96adb12019c721ee", null ],
+    [ "givenOtherPattern_whenIsValidAlphanumeric_thenUsesPatternMatching", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#ab6d8278f56c54cce9e3254bd62a56f4e", null ],
+    [ "givenSecretPattern_whenIsValidSecret_thenUsesStrictPasswordValidation", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a737c36c8ffd466d0876154f0cfc1c677", null ]
+];

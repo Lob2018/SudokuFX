@@ -12,44 +12,44 @@
 <g id="Node000001" class="node">
 <title>Node1</title>
 <g id="a_Node000001"><a xlink:title="Main JavaFX application class launching the UI and initializing the Spring context.">
-<polygon fill="#999999" stroke="none" points="988.5,-316 822,-316 822,0 988.5,0 988.5,-316"/>
-<text text-anchor="start" x="843.75" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain</text>
-<text text-anchor="start" x="827.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">final SpringContext</text>
-<text text-anchor="start" x="836" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00"> context</text>
-<text text-anchor="start" x="827.5" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage stage</text>
-<text text-anchor="start" x="827.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="827.5" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final long MINIMUM</text>
-<text text-anchor="start" x="836" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">_TRANSITION_DELAY_MS</text>
-<text text-anchor="start" x="826" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="836" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">void start(final Stage</text>
-<text text-anchor="start" x="836" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00"> stage)</text>
-<text text-anchor="start" x="826" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="836" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">static void main(String</text>
-<text text-anchor="start" x="836" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">[] args)</text>
-<text text-anchor="start" x="827.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">PauseTransition createView</text>
-<text text-anchor="start" x="836" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">Transition(String fxmlName,</text>
-<text text-anchor="start" x="836" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00"> long minimumTimelapse)</text>
-<text text-anchor="start" x="827.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleSpringContext</text>
-<text text-anchor="start" x="836" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskFailed(Throwable throwable)</text>
-<text text-anchor="start" x="827.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleSpringContext</text>
-<text text-anchor="start" x="836" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskSuccess(long startTime)</text>
-<text text-anchor="start" x="827.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initializeCoordinator()</text>
-<text text-anchor="start" x="827.5" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="836" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">static void logCriticalDatabase</text>
-<text text-anchor="start" x="836" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Exception(Exception e, Throwable</text>
-<text text-anchor="start" x="836" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> criticalEx)</text>
-<polygon fill="#666666" stroke="#666666" points="822,-298 822,-298 988.5,-298 988.5,-298 822,-298"/>
-<polygon fill="#666666" stroke="#666666" points="822,-210 822,-210 834,-210 834,-210 822,-210"/>
-<polygon fill="#666666" stroke="#666666" points="834,-210 834,-210 988.5,-210 988.5,-210 834,-210"/>
-<polygon fill="none" stroke="#666666" points="822,0 822,-316 988.5,-316 988.5,0 822,0"/>
+<polygon fill="#999999" stroke="none" points="1084.5,-316 918,-316 918,0 1084.5,0 1084.5,-316"/>
+<text text-anchor="start" x="939.75" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.SudoMain</text>
+<text text-anchor="start" x="923.5" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-286.5" font-family="Helvetica,sans-Serif" font-size="10.00">final SpringContext</text>
+<text text-anchor="start" x="932" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00"> context</text>
+<text text-anchor="start" x="923.5" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-258.5" font-family="Helvetica,sans-Serif" font-size="10.00">Stage stage</text>
+<text text-anchor="start" x="923.5" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-242.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="923.5" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-226.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final long MINIMUM</text>
+<text text-anchor="start" x="932" y="-214.5" font-family="Helvetica,sans-Serif" font-size="10.00">_TRANSITION_DELAY_MS</text>
+<text text-anchor="start" x="922" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="932" y="-198.5" font-family="Helvetica,sans-Serif" font-size="10.00">void start(final Stage</text>
+<text text-anchor="start" x="932" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00"> stage)</text>
+<text text-anchor="start" x="922" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="932" y="-170.5" font-family="Helvetica,sans-Serif" font-size="10.00">static void main(String</text>
+<text text-anchor="start" x="932" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">[] args)</text>
+<text text-anchor="start" x="923.5" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-142.5" font-family="Helvetica,sans-Serif" font-size="10.00">PauseTransition createView</text>
+<text text-anchor="start" x="932" y="-130.5" font-family="Helvetica,sans-Serif" font-size="10.00">Transition(String fxmlName,</text>
+<text text-anchor="start" x="932" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00"> long minimumTimelapse)</text>
+<text text-anchor="start" x="923.5" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleSpringContext</text>
+<text text-anchor="start" x="932" y="-90.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskFailed(Throwable throwable)</text>
+<text text-anchor="start" x="923.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleSpringContext</text>
+<text text-anchor="start" x="932" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">TaskSuccess(long startTime)</text>
+<text text-anchor="start" x="923.5" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-46.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initializeCoordinator()</text>
+<text text-anchor="start" x="923.5" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="932" y="-30.5" font-family="Helvetica,sans-Serif" font-size="10.00">static void logCriticalDatabase</text>
+<text text-anchor="start" x="932" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">Exception(Exception e, Throwable</text>
+<text text-anchor="start" x="932" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00"> criticalEx)</text>
+<polygon fill="#666666" stroke="#666666" points="918,-298 918,-298 1084.5,-298 1084.5,-298 918,-298"/>
+<polygon fill="#666666" stroke="#666666" points="918,-210 918,-210 930,-210 930,-210 918,-210"/>
+<polygon fill="#666666" stroke="#666666" points="930,-210 930,-210 1084.5,-210 1084.5,-210 930,-210"/>
+<polygon fill="none" stroke="#666666" points="918,0 918,-316 1084.5,-316 1084.5,0 918,0"/>
 </a>
 </g>
 </g>
@@ -57,13 +57,13 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:title=" ">
-<polygon fill="white" stroke="none" points="704.25,-680 648.25,-680 648.25,-628 704.25,-628 704.25,-680"/>
-<text text-anchor="start" x="652.25" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">Application</text>
-<text text-anchor="start" x="674.75" y="-650.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="674.75" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polygon fill="#666666" stroke="#666666" points="648.25,-662 648.25,-662 704.25,-662 704.25,-662 648.25,-662"/>
-<polygon fill="#666666" stroke="#666666" points="648.25,-646 648.25,-646 704.25,-646 704.25,-646 648.25,-646"/>
-<polygon fill="none" stroke="#666666" points="648.25,-628 648.25,-680 704.25,-680 704.25,-628 648.25,-628"/>
+<polygon fill="white" stroke="none" points="896.25,-680 840.25,-680 840.25,-628 896.25,-628 896.25,-680"/>
+<text text-anchor="start" x="844.25" y="-666.5" font-family="Helvetica,sans-Serif" font-size="10.00">Application</text>
+<text text-anchor="start" x="866.75" y="-650.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="866.75" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="#666666" stroke="#666666" points="840.25,-662 840.25,-662 896.25,-662 896.25,-662 840.25,-662"/>
+<polygon fill="#666666" stroke="#666666" points="840.25,-646 840.25,-646 896.25,-646 896.25,-646 840.25,-646"/>
+<polygon fill="none" stroke="#666666" points="840.25,-628 840.25,-680 896.25,-680 896.25,-628 840.25,-628"/>
 </a>
 </g>
 </g>
@@ -71,8 +71,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M674.24,-616.79C672.6,-561.05 675.19,-452.09 713.25,-370 738.46,-315.63 782.73,-265.52 822.41,-227.79"/>
-<polygon fill="none" stroke="#63b8ff" points="670.74,-616.79 674.61,-626.66 677.74,-616.54 670.74,-616.79"/>
+<path fill="none" stroke="#63b8ff" d="M869.55,-616.83C872.28,-562.33 880.56,-456.37 905.25,-370 910.37,-352.1 916.77,-333.79 923.82,-315.79"/>
+<polygon fill="none" stroke="#63b8ff" points="866.06,-616.61 869.1,-626.77 873.05,-616.94 866.06,-616.61"/>
 </a>
 </g>
 </g>
@@ -80,19 +80,19 @@
 <g id="Node000003" class="node">
 <title>Node3</title>
 <g id="a_Node000003"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" target="_top" xlink:title="Provides basic control over the splash screen visibility and access to its scene.">
-<polygon fill="white" stroke="none" points="896.12,-702 722.38,-702 722.38,-606 896.12,-606 896.12,-702"/>
-<text text-anchor="start" x="726.38" y="-688.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.</text>
-<text text-anchor="start" x="766.5" y="-676.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISplashScreenView</text>
-<text text-anchor="start" x="807.75" y="-660.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="730.62" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="744.88" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene getSplashScreenScene()</text>
-<text text-anchor="start" x="730.62" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="744.88" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00">void hideSplashScreen()</text>
-<text text-anchor="start" x="730.62" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="744.88" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showSplashScreen()</text>
-<polygon fill="#666666" stroke="#666666" points="722.38,-672 722.38,-672 896.12,-672 896.12,-672 722.38,-672"/>
-<polygon fill="#666666" stroke="#666666" points="722.38,-656 722.38,-656 896.12,-656 896.12,-656 722.38,-656"/>
-<polygon fill="none" stroke="#666666" points="722.38,-606 722.38,-702 896.12,-702 896.12,-606 722.38,-606"/>
+<polygon fill="white" stroke="none" points="1088.12,-702 914.38,-702 914.38,-606 1088.12,-606 1088.12,-702"/>
+<text text-anchor="start" x="918.38" y="-688.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.</text>
+<text text-anchor="start" x="958.5" y="-676.5" font-family="Helvetica,sans-Serif" font-size="10.00">ISplashScreenView</text>
+<text text-anchor="start" x="999.75" y="-660.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="922.62" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="936.88" y="-644.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene getSplashScreenScene()</text>
+<text text-anchor="start" x="922.62" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="936.88" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00">void hideSplashScreen()</text>
+<text text-anchor="start" x="922.62" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="936.88" y="-612.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showSplashScreen()</text>
+<polygon fill="#666666" stroke="#666666" points="914.38,-672 914.38,-672 1088.12,-672 1088.12,-672 914.38,-672"/>
+<polygon fill="#666666" stroke="#666666" points="914.38,-656 914.38,-656 1088.12,-656 1088.12,-656 914.38,-656"/>
+<polygon fill="none" stroke="#666666" points="914.38,-606 914.38,-702 1088.12,-702 1088.12,-606 914.38,-606"/>
 </a>
 </g>
 </g>
@@ -100,44 +100,16 @@
 <g id="edge2_Node000001_Node000003" class="edge">
 <title>Node3&#45;&gt;Node1</title>
 <g id="a_edge2_Node000001_Node000003"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M818.37,-606.08C830.66,-542.8 853.22,-426.74 872.27,-328.73"/>
-<polygon fill="none" stroke="#63b8ff" points="872.29,-328.61 869.51,-321.96 874.58,-316.83 877.36,-323.49 872.29,-328.61"/>
+<path fill="none" stroke="#63b8ff" d="M1001.25,-606.08C1001.25,-542.8 1001.25,-426.74 1001.25,-328.73"/>
+<polygon fill="none" stroke="#63b8ff" points="1001.25,-328.85 997.25,-322.85 1001.25,-316.85 1005.25,-322.85 1001.25,-328.85"/>
 </a>
 </g>
-<text text-anchor="start" x="871.67" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;iSplashScreenView</text>
+<text text-anchor="start" x="1004.25" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;iSplashScreenView</text>
 </g>
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" target="_top" xlink:title="Interface defining method to open the main stage.">
-<polygon fill="white" stroke="none" points="1088.12,-698 914.38,-698 914.38,-610 1088.12,-610 1088.12,-698"/>
-<text text-anchor="start" x="918.38" y="-684.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.</text>
-<text text-anchor="start" x="978.38" y="-672.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainView</text>
-<text text-anchor="start" x="999.75" y="-656.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="918.69" y="-640.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="929" y="-640.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="929" y="-628.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
-<text text-anchor="start" x="929" y="-616.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
-<polygon fill="#666666" stroke="#666666" points="914.38,-668 914.38,-668 1088.12,-668 1088.12,-668 914.38,-668"/>
-<polygon fill="#666666" stroke="#666666" points="914.38,-652 914.38,-652 1088.12,-652 1088.12,-652 914.38,-652"/>
-<polygon fill="none" stroke="#666666" points="914.38,-610 914.38,-698 1088.12,-698 1088.12,-610 914.38,-610"/>
-</a>
-</g>
-</g>
-<!-- Node4&#45;&gt;Node1 -->
-<g id="edge3_Node000001_Node000004" class="edge">
-<title>Node4&#45;&gt;Node1</title>
-<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M999.62,-610.18C996.59,-548.48 988.24,-431.27 966.25,-334 965.83,-332.14 965.39,-330.27 964.95,-328.39"/>
-<polygon fill="none" stroke="#63b8ff" points="964.96,-328.43 959.62,-323.59 962.04,-316.79 967.38,-321.64 964.96,-328.43"/>
-</a>
-</g>
-<text text-anchor="start" x="972.89" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;iMainView</text>
-</g>
-<!-- Node5 -->
-<g id="Node000005" class="node">
-<title>Node5</title>
-<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" target="_top" xlink:title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application (M...">
+<g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" target="_top" xlink:title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application (M...">
 <polygon fill="white" stroke="none" points="1286.62,-938 1105.88,-938 1105.88,-370 1286.62,-370 1286.62,-938"/>
 <text text-anchor="start" x="1132.88" y="-924.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.navigation.</text>
 <text text-anchor="start" x="1171.12" y="-912.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator</text>
@@ -208,20 +180,20 @@
 </a>
 </g>
 </g>
-<!-- Node5&#45;&gt;Node1 -->
-<g id="edge4_Node000001_Node000005" class="edge">
-<title>Node5&#45;&gt;Node1</title>
-<g id="a_edge4_Node000001_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1106.03,-385.39C1103.17,-380.17 1100.25,-375.03 1097.25,-370 1070.14,-324.5 1032.17,-280.2 997.15,-244.03"/>
-<polygon fill="none" stroke="#63b8ff" points="997.35,-244.23 990.29,-242.74 988.95,-235.66 996.01,-237.14 997.35,-244.23"/>
+<!-- Node4&#45;&gt;Node1 -->
+<g id="edge3_Node000001_Node000004" class="edge">
+<title>Node4&#45;&gt;Node1</title>
+<g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
+<path fill="none" stroke="#63b8ff" d="M1113.79,-370.03C1109.09,-357.77 1104.24,-345.72 1099.25,-334 1096.32,-327.13 1093.19,-320.17 1089.92,-313.21"/>
+<polygon fill="none" stroke="#63b8ff" points="1089.87,-313.11 1083.67,-309.43 1084.68,-302.29 1090.88,-305.97 1089.87,-313.11"/>
 </a>
 </g>
-<text text-anchor="start" x="1087.94" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;coordinator</text>
+<text text-anchor="start" x="1109.13" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;coordinator</text>
 </g>
-<!-- Node6 -->
-<g id="Node000006" class="node">
-<title>Node6</title>
-<g id="a_Node000006"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" target="_top" xlink:title="Service for managing Player entities.">
+<!-- Node5 -->
+<g id="Node000005" class="node">
+<title>Node5</title>
+<g id="a_Node000005"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" target="_top" xlink:title="Service for managing Player entities.">
 <polygon fill="white" stroke="none" points="1055.5,-1774 769,-1774 769,-1366 1055.5,-1366 1055.5,-1774"/>
 <text text-anchor="start" x="834.25" y="-1760.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
 <text text-anchor="start" x="881.88" y="-1748.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerService</text>
@@ -270,20 +242,20 @@
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node5 -->
-<g id="edge5_Node000005_Node000006" class="edge">
-<title>Node6&#45;&gt;Node5</title>
-<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
+<!-- Node5&#45;&gt;Node4 -->
+<g id="edge4_Node000004_Node000005" class="edge">
+<title>Node5&#45;&gt;Node4</title>
+<g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M860.14,-1366.04C841.72,-1245.84 842.09,-1097.03 921,-992 967.9,-929.57 1031.86,-988.68 1096.45,-937.45"/>
 <polygon fill="none" stroke="#63b8ff" points="1096.3,-937.58 1098.16,-930.62 1105.31,-929.66 1103.45,-936.62 1096.3,-937.58"/>
 </a>
 </g>
 <text text-anchor="start" x="924" y="-1148.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerService</text>
 </g>
-<!-- Node30 -->
-<g id="Node000030" class="node">
-<title>Node30</title>
-<g id="a_Node000030"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" target="_top" xlink:title="Holds the current PlayerDto for the application.">
+<!-- Node29 -->
+<g id="Node000029" class="node">
+<title>Node29</title>
+<g id="a_Node000029"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" target="_top" xlink:title="Holds the current PlayerDto for the application.">
 <polygon fill="white" stroke="none" points="1160.12,-1250 998.38,-1250 998.38,-1054 1160.12,-1054 1160.12,-1250"/>
 <text text-anchor="start" x="1002.38" y="-1236.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.state.</text>
 <text text-anchor="start" x="1039.5" y="-1224.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerStateHolder</text>
@@ -313,20 +285,20 @@
 </a>
 </g>
 </g>
-<!-- Node6&#45;&gt;Node30 -->
-<g id="edge36_Node000030_Node000006" class="edge">
-<title>Node6&#45;&gt;Node30</title>
-<g id="a_edge36_Node000030_Node000006"><a xlink:title=" ">
+<!-- Node5&#45;&gt;Node29 -->
+<g id="edge35_Node000029_Node000005" class="edge">
+<title>Node5&#45;&gt;Node29</title>
+<g id="a_edge35_Node000029_Node000005"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M993.67,-1366.18C1008.11,-1330.21 1022.63,-1294.03 1035.51,-1261.96"/>
 <polygon fill="none" stroke="#63b8ff" points="1035.56,-1261.84 1034.08,-1254.79 1040.03,-1250.71 1041.5,-1257.77 1035.56,-1261.84"/>
 </a>
 </g>
 <text text-anchor="start" x="1008.75" y="-1335.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerService</text>
 </g>
-<!-- Node7 -->
-<g id="Node000007" class="node">
-<title>Node7</title>
-<g id="a_Node000007"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" target="_top" xlink:title="Repository interface for Player entities.">
+<!-- Node6 -->
+<g id="Node000006" class="node">
+<title>Node6</title>
+<g id="a_Node000006"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" target="_top" xlink:title="Repository interface for Player entities.">
 <polygon fill="white" stroke="none" points="1738.75,-1972 1579.75,-1972 1579.75,-1840 1738.75,-1840 1738.75,-1972"/>
 <text text-anchor="start" x="1597" y="-1958.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="1621.75" y="-1946.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerRepository</text>
@@ -346,20 +318,20 @@
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node6 -->
-<g id="edge6_Node000006_Node000007" class="edge">
-<title>Node7&#45;&gt;Node6</title>
-<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
+<!-- Node6&#45;&gt;Node5 -->
+<g id="edge5_Node000005_Node000006" class="edge">
+<title>Node6&#45;&gt;Node5</title>
+<g id="a_edge5_Node000005_Node000006"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1584.85,-1840.07C1578.72,-1835.76 1572.48,-1831.67 1566.25,-1828 1405.86,-1733.38 1204.23,-1660.23 1067.55,-1616.58"/>
 <polygon fill="none" stroke="#63b8ff" points="1067.66,-1616.61 1060.73,-1618.61 1056.22,-1612.98 1063.15,-1610.98 1067.66,-1616.61"/>
 </a>
 </g>
 <text text-anchor="start" x="1536.45" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerRepository</text>
 </g>
-<!-- Node8 -->
-<g id="Node000008" class="node">
-<title>Node8</title>
-<g id="a_Node000008"><a xlink:title=" ">
+<!-- Node7 -->
+<g id="Node000007" class="node">
+<title>Node7</title>
+<g id="a_Node000007"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="1714.62,-2130 1603.88,-2130 1603.88,-2066 1714.62,-2066 1714.62,-2130"/>
 <text text-anchor="start" x="1607.88" y="-2116.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Player,</text>
 <text text-anchor="start" x="1642.75" y="-2104.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
@@ -371,19 +343,19 @@
 </a>
 </g>
 </g>
-<!-- Node8&#45;&gt;Node7 -->
-<g id="edge7_Node000007_Node000008" class="edge">
-<title>Node8&#45;&gt;Node7</title>
-<g id="a_edge7_Node000007_Node000008"><a xlink:title=" ">
+<!-- Node7&#45;&gt;Node6 -->
+<g id="edge6_Node000006_Node000007" class="edge">
+<title>Node7&#45;&gt;Node6</title>
+<g id="a_edge6_Node000006_Node000007"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1659.25,-2054.68C1659.25,-2030.32 1659.25,-1999.2 1659.25,-1971.81"/>
 <polygon fill="none" stroke="#63b8ff" points="1655.75,-2054.54 1659.25,-2064.54 1662.75,-2054.54 1655.75,-2054.54"/>
 </a>
 </g>
 </g>
-<!-- Node9 -->
-<g id="Node000009" class="node">
-<title>Node9</title>
-<g id="a_Node000009"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" target="_top" xlink:title="Repository interface for PlayerLanguage entities.">
+<!-- Node8 -->
+<g id="Node000008" class="node">
+<title>Node8</title>
+<g id="a_Node000008"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html" target="_top" xlink:title="Repository interface for PlayerLanguage entities.">
 <polygon fill="white" stroke="none" points="1889.62,-1944 1756.88,-1944 1756.88,-1868 1889.62,-1868 1889.62,-1944"/>
 <text text-anchor="start" x="1761" y="-1930.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="1764.75" y="-1918.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageRepository</text>
@@ -397,20 +369,20 @@
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node6 -->
-<g id="edge8_Node000006_Node000009" class="edge">
-<title>Node9&#45;&gt;Node6</title>
-<g id="a_edge8_Node000006_Node000009"><a xlink:title=" ">
+<!-- Node8&#45;&gt;Node5 -->
+<g id="edge7_Node000005_Node000008" class="edge">
+<title>Node8&#45;&gt;Node5</title>
+<g id="a_edge7_Node000005_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1795.96,-1868.18C1783.11,-1853.42 1766.57,-1837.66 1748.25,-1828 1706.95,-1806.22 1687.7,-1828.31 1644.75,-1810 1632.32,-1804.7 1632.68,-1797.3 1620.25,-1792 1577.51,-1773.76 1562.3,-1785.42 1517.25,-1774 1361.62,-1734.53 1188.3,-1674.69 1067.21,-1630.19"/>
 <polygon fill="none" stroke="#63b8ff" points="1067.39,-1630.26 1060.38,-1631.94 1056.13,-1626.11 1063.14,-1624.44 1067.39,-1630.26"/>
 </a>
 </g>
 <text text-anchor="start" x="1647.75" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerLanguageRepository</text>
 </g>
-<!-- Node28 -->
-<g id="Node000028" class="node">
-<title>Node28</title>
-<g id="a_Node000028"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html" target="_top" xlink:title="Service for managing PlayerLanguage entities.">
+<!-- Node27 -->
+<g id="Node000027" class="node">
+<title>Node27</title>
+<g id="a_Node000027"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html" target="_top" xlink:title="Service for managing PlayerLanguage entities.">
 <polygon fill="white" stroke="none" points="1758.5,-1640 1526,-1640 1526,-1500 1758.5,-1500 1758.5,-1640"/>
 <text text-anchor="start" x="1564.25" y="-1626.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
 <text text-anchor="start" x="1590.88" y="-1614.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerLanguageService</text>
@@ -430,20 +402,20 @@
 </a>
 </g>
 </g>
-<!-- Node9&#45;&gt;Node28 -->
-<g id="edge32_Node000028_Node000009" class="edge">
-<title>Node9&#45;&gt;Node28</title>
-<g id="a_edge32_Node000028_Node000009"><a xlink:title=" ">
+<!-- Node8&#45;&gt;Node27 -->
+<g id="edge31_Node000027_Node000008" class="edge">
+<title>Node8&#45;&gt;Node27</title>
+<g id="a_edge31_Node000027_Node000008"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1808.23,-1868.1C1798.82,-1845.76 1786.07,-1816.89 1773.25,-1792 1748.64,-1744.24 1718.19,-1692.5 1692.84,-1651.09"/>
 <polygon fill="none" stroke="#63b8ff" points="1692.76,-1650.97 1686.21,-1647.95 1686.47,-1640.74 1693.02,-1643.76 1692.76,-1650.97"/>
 </a>
 </g>
 <text text-anchor="start" x="1783.76" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerLanguageRepository</text>
 </g>
-<!-- Node10 -->
-<g id="Node000010" class="node">
-<title>Node10</title>
-<g id="a_Node000010"><a xlink:title=" ">
+<!-- Node9 -->
+<g id="Node000009" class="node">
+<title>Node9</title>
+<g id="a_Node000009"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="1899.62,-2130 1746.88,-2130 1746.88,-2066 1899.62,-2066 1899.62,-2130"/>
 <text text-anchor="start" x="1750.88" y="-2116.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; PlayerLanguage,</text>
 <text text-anchor="start" x="1806.75" y="-2104.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
@@ -455,19 +427,19 @@
 </a>
 </g>
 </g>
-<!-- Node10&#45;&gt;Node9 -->
-<g id="edge9_Node000009_Node000010" class="edge">
-<title>Node10&#45;&gt;Node9</title>
-<g id="a_edge9_Node000009_Node000010"><a xlink:title=" ">
+<!-- Node9&#45;&gt;Node8 -->
+<g id="edge8_Node000008_Node000009" class="edge">
+<title>Node9&#45;&gt;Node8</title>
+<g id="a_edge8_Node000008_Node000009"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1823.25,-2054.85C1823.25,-2021.57 1823.25,-1975.6 1823.25,-1943.8"/>
 <polygon fill="none" stroke="#63b8ff" points="1819.75,-2054.54 1823.25,-2064.54 1826.75,-2054.54 1819.75,-2054.54"/>
 </a>
 </g>
 </g>
-<!-- Node11 -->
-<g id="Node000011" class="node">
-<title>Node11</title>
-<g id="a_Node000011"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" target="_top" xlink:title="Repository interface for Options entities.">
+<!-- Node10 -->
+<g id="Node000010" class="node">
+<title>Node10</title>
+<g id="a_Node000010"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html" target="_top" xlink:title="Repository interface for Options entities.">
 <polygon fill="white" stroke="none" points="666.5,-2130 534,-2130 534,-2066 666.5,-2066 666.5,-2130"/>
 <text text-anchor="start" x="538" y="-2116.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="559.75" y="-2104.5" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsRepository</text>
@@ -479,20 +451,20 @@
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node6 -->
-<g id="edge10_Node000006_Node000011" class="edge">
-<title>Node11&#45;&gt;Node6</title>
-<g id="a_edge10_Node000006_Node000011"><a xlink:title=" ">
+<!-- Node10&#45;&gt;Node5 -->
+<g id="edge9_Node000005_Node000010" class="edge">
+<title>Node10&#45;&gt;Node5</title>
+<g id="a_edge9_Node000005_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M584.43,-2066.06C560.16,-2013.96 520.53,-1906.71 560.5,-1828 602.19,-1745.9 683.79,-1683.76 757.9,-1641.17"/>
 <polygon fill="none" stroke="#63b8ff" points="758.02,-1641.11 761.27,-1634.67 768.47,-1635.21 765.21,-1641.64 758.02,-1641.11"/>
 </a>
 </g>
 <text text-anchor="start" x="563.5" y="-1902.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;optionsRepository</text>
 </g>
-<!-- Node23 -->
-<g id="Node000023" class="node">
-<title>Node23</title>
-<g id="a_Node000023"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html" target="_top" xlink:title="Service for managing Options entities.">
+<!-- Node22 -->
+<g id="Node000022" class="node">
+<title>Node22</title>
+<g id="a_Node000022"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html" target="_top" xlink:title="Service for managing Options entities.">
 <polygon fill="white" stroke="none" points="1156.25,-1984 982.25,-1984 982.25,-1828 1156.25,-1828 1156.25,-1984"/>
 <text text-anchor="start" x="991.25" y="-1970.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
 <text text-anchor="start" x="1035.88" y="-1958.5" font-family="Helvetica,sans-Serif" font-size="10.00">OptionsService</text>
@@ -514,20 +486,20 @@
 </a>
 </g>
 </g>
-<!-- Node11&#45;&gt;Node23 -->
-<g id="edge23_Node000023_Node000011" class="edge">
-<title>Node11&#45;&gt;Node23</title>
-<g id="a_edge23_Node000023_Node000011"><a xlink:title=" ">
+<!-- Node10&#45;&gt;Node22 -->
+<g id="edge22_Node000022_Node000010" class="edge">
+<title>Node10&#45;&gt;Node22</title>
+<g id="a_edge22_Node000022_Node000010"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M650.79,-2066.06C667.25,-2056.53 685.77,-2046.36 703.25,-2038 742.95,-2019.01 752.72,-2012.32 795.5,-2002 868.51,-1984.38 896.36,-2010.9 970.53,-1984"/>
 <polygon fill="none" stroke="#63b8ff" points="970.3,-1984.09 974.45,-1978.19 981.49,-1979.75 977.34,-1985.65 970.3,-1984.09"/>
 </a>
 </g>
 <text text-anchor="start" x="798.5" y="-2007.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;optionsRepository</text>
 </g>
-<!-- Node12 -->
-<g id="Node000012" class="node">
-<title>Node12</title>
-<g id="a_Node000012"><a xlink:title=" ">
+<!-- Node11 -->
+<g id="Node000011" class="node">
+<title>Node11</title>
+<g id="a_Node000011"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="658.62,-2259 541.88,-2259 541.88,-2195 658.62,-2195 658.62,-2259"/>
 <text text-anchor="start" x="545.88" y="-2245.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Options,</text>
 <text text-anchor="start" x="583.75" y="-2233.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
@@ -539,19 +511,19 @@
 </a>
 </g>
 </g>
-<!-- Node12&#45;&gt;Node11 -->
-<g id="edge11_Node000011_Node000012" class="edge">
-<title>Node12&#45;&gt;Node11</title>
-<g id="a_edge11_Node000011_Node000012"><a xlink:title=" ">
+<!-- Node11&#45;&gt;Node10 -->
+<g id="edge10_Node000010_Node000011" class="edge">
+<title>Node11&#45;&gt;Node10</title>
+<g id="a_edge10_Node000010_Node000011"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M600.25,-2183.82C600.25,-2166.2 600.25,-2146.11 600.25,-2129.9"/>
 <polygon fill="none" stroke="#63b8ff" points="596.75,-2183.74 600.25,-2193.74 603.75,-2183.74 596.75,-2183.74"/>
 </a>
 </g>
 </g>
-<!-- Node13 -->
-<g id="Node000013" class="node">
-<title>Node13</title>
-<g id="a_Node000013"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html" target="_top" xlink:title="Repository interface for Menu entities.">
+<!-- Node12 -->
+<g id="Node000012" class="node">
+<title>Node12</title>
+<g id="a_Node000012"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html" target="_top" xlink:title="Repository interface for Menu entities.">
 <polygon fill="white" stroke="none" points="132.5,-1938 0,-1938 0,-1874 132.5,-1874 132.5,-1938"/>
 <text text-anchor="start" x="4" y="-1924.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="30.62" y="-1912.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuRepository</text>
@@ -563,20 +535,20 @@
 </a>
 </g>
 </g>
-<!-- Node13&#45;&gt;Node6 -->
-<g id="edge12_Node000006_Node000013" class="edge">
-<title>Node13&#45;&gt;Node6</title>
-<g id="a_edge12_Node000006_Node000013"><a xlink:title=" ">
+<!-- Node12&#45;&gt;Node5 -->
+<g id="edge11_Node000005_Node000012" class="edge">
+<title>Node12&#45;&gt;Node5</title>
+<g id="a_edge11_Node000005_Node000012"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M90.36,-1874.36C103.93,-1858.76 122,-1840.5 141.25,-1828 180.08,-1802.79 195.28,-1807.22 239,-1792 415.78,-1730.46 620.25,-1664 757.05,-1620.21"/>
 <polygon fill="none" stroke="#63b8ff" points="756.96,-1620.24 761.46,-1614.6 768.39,-1616.58 763.9,-1622.22 756.96,-1620.24"/>
 </a>
 </g>
 <text text-anchor="start" x="242" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;menuRepository</text>
 </g>
-<!-- Node14 -->
-<g id="Node000014" class="node">
-<title>Node14</title>
-<g id="a_Node000014"><a xlink:title=" ">
+<!-- Node13 -->
+<g id="Node000013" class="node">
+<title>Node13</title>
+<g id="a_Node000013"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="119.75,-2130 12.75,-2130 12.75,-2066 119.75,-2066 119.75,-2130"/>
 <text text-anchor="start" x="16.75" y="-2116.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Menu,</text>
 <text text-anchor="start" x="50.12" y="-2104.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Byte &gt;</text>
@@ -588,19 +560,19 @@
 </a>
 </g>
 </g>
-<!-- Node14&#45;&gt;Node13 -->
-<g id="edge13_Node000013_Node000014" class="edge">
-<title>Node14&#45;&gt;Node13</title>
-<g id="a_edge13_Node000013_Node000014"><a xlink:title=" ">
+<!-- Node13&#45;&gt;Node12 -->
+<g id="edge12_Node000012_Node000013" class="edge">
+<title>Node13&#45;&gt;Node12</title>
+<g id="a_edge12_Node000012_Node000013"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M66.25,-2054.65C66.25,-2019.28 66.25,-1969.67 66.25,-1937.94"/>
 <polygon fill="none" stroke="#63b8ff" points="62.75,-2054.54 66.25,-2064.54 69.75,-2054.54 62.75,-2054.54"/>
 </a>
 </g>
 </g>
-<!-- Node15 -->
-<g id="Node000015" class="node">
-<title>Node15</title>
-<g id="a_Node000015"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html" target="_top" xlink:title="Repository interface for Game entities.">
+<!-- Node14 -->
+<g id="Node000014" class="node">
+<title>Node14</title>
+<g id="a_Node000014"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html" target="_top" xlink:title="Repository interface for Game entities.">
 <polygon fill="white" stroke="none" points="320,-1950 150.5,-1950 150.5,-1862 320,-1862 320,-1950"/>
 <text text-anchor="start" x="173" y="-1936.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="198.5" y="-1924.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameRepository</text>
@@ -615,20 +587,20 @@
 </a>
 </g>
 </g>
-<!-- Node15&#45;&gt;Node6 -->
-<g id="edge14_Node000006_Node000015" class="edge">
-<title>Node15&#45;&gt;Node6</title>
-<g id="a_edge14_Node000006_Node000015"><a xlink:title=" ">
+<!-- Node14&#45;&gt;Node5 -->
+<g id="edge13_Node000005_Node000014" class="edge">
+<title>Node14&#45;&gt;Node5</title>
+<g id="a_edge13_Node000005_Node000014"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M268.58,-1862.17C288.45,-1838.91 315.34,-1811.1 344,-1792 471.83,-1706.83 637.33,-1647.2 756.72,-1611.53"/>
 <polygon fill="none" stroke="#63b8ff" points="756.85,-1611.49 761.47,-1605.96 768.35,-1608.09 763.73,-1613.63 756.85,-1611.49"/>
 </a>
 </g>
 <text text-anchor="start" x="347" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;gameRepository</text>
 </g>
-<!-- Node16 -->
-<g id="Node000016" class="node">
-<title>Node16</title>
-<g id="a_Node000016"><a xlink:title=" ">
+<!-- Node15 -->
+<g id="Node000015" class="node">
+<title>Node15</title>
+<g id="a_Node000015"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="289.88,-2130 180.62,-2130 180.62,-2066 289.88,-2066 289.88,-2130"/>
 <text text-anchor="start" x="184.62" y="-2116.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Game,</text>
 <text text-anchor="start" x="218.75" y="-2104.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
@@ -640,19 +612,19 @@
 </a>
 </g>
 </g>
-<!-- Node16&#45;&gt;Node15 -->
-<g id="edge15_Node000015_Node000016" class="edge">
-<title>Node16&#45;&gt;Node15</title>
-<g id="a_edge15_Node000015_Node000016"><a xlink:title=" ">
+<!-- Node15&#45;&gt;Node14 -->
+<g id="edge14_Node000014_Node000015" class="edge">
+<title>Node15&#45;&gt;Node14</title>
+<g id="a_edge14_Node000014_Node000015"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M235.25,-2054.7C235.25,-2023.54 235.25,-1981.32 235.25,-1950"/>
 <polygon fill="none" stroke="#63b8ff" points="231.75,-2054.54 235.25,-2064.54 238.75,-2054.54 231.75,-2054.54"/>
 </a>
 </g>
 </g>
-<!-- Node17 -->
-<g id="Node000017" class="node">
-<title>Node17</title>
-<g id="a_Node000017"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html" target="_top" xlink:title="Repository interface for Grid entities.">
+<!-- Node16 -->
+<g id="Node000016" class="node">
+<title>Node16</title>
+<g id="a_Node000016"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html" target="_top" xlink:title="Repository interface for Grid entities.">
 <polygon fill="white" stroke="none" points="1072.5,-2130 940,-2130 940,-2066 1072.5,-2066 1072.5,-2130"/>
 <text text-anchor="start" x="944" y="-2116.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="973.62" y="-2104.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridRepository</text>
@@ -664,20 +636,20 @@
 </a>
 </g>
 </g>
-<!-- Node17&#45;&gt;Node6 -->
-<g id="edge16_Node000006_Node000017" class="edge">
-<title>Node17&#45;&gt;Node6</title>
-<g id="a_edge16_Node000006_Node000017"><a xlink:title=" ">
+<!-- Node16&#45;&gt;Node5 -->
+<g id="edge15_Node000005_Node000016" class="edge">
+<title>Node16&#45;&gt;Node5</title>
+<g id="a_edge15_Node000005_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M974.77,-2066.06C961.97,-2055.33 946.4,-2044.39 930.25,-2038 821.72,-1995.05 732.51,-2084.56 673.25,-1984 617.46,-1889.33 683.65,-1781.9 760.38,-1700.33"/>
 <polygon fill="none" stroke="#63b8ff" points="760.37,-1700.34 761.63,-1693.24 768.67,-1691.67 767.41,-1698.77 760.37,-1700.34"/>
 </a>
 </g>
 <text text-anchor="start" x="676.25" y="-1902.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;gridRepository</text>
 </g>
-<!-- Node26 -->
-<g id="Node000026" class="node">
-<title>Node26</title>
-<g id="a_Node000026"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service.html" target="_top" xlink:title="Service for managing Grid entities.">
+<!-- Node25 -->
+<g id="Node000025" class="node">
+<title>Node25</title>
+<g id="a_Node000025"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service.html" target="_top" xlink:title="Service for managing Grid entities.">
 <polygon fill="white" stroke="none" points="1450.25,-1970 1286.25,-1970 1286.25,-1842 1450.25,-1842 1450.25,-1970"/>
 <text text-anchor="start" x="1290.25" y="-1956.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
 <text text-anchor="start" x="1342.75" y="-1944.5" font-family="Helvetica,sans-Serif" font-size="10.00">GridService</text>
@@ -696,20 +668,20 @@
 </a>
 </g>
 </g>
-<!-- Node17&#45;&gt;Node26 -->
-<g id="edge27_Node000026_Node000017" class="edge">
-<title>Node17&#45;&gt;Node26</title>
-<g id="a_edge27_Node000026_Node000017"><a xlink:title=" ">
+<!-- Node16&#45;&gt;Node25 -->
+<g id="edge26_Node000025_Node000016" class="edge">
+<title>Node16&#45;&gt;Node25</title>
+<g id="a_edge26_Node000025_Node000016"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1000.63,-2066.06C998.73,-2044.97 1000.45,-2018.06 1017.25,-2002 1058.31,-1962.74 1219.35,-2004.71 1272.25,-1984 1277.8,-1981.83 1283.28,-1979.21 1288.65,-1976.28"/>
 <polygon fill="none" stroke="#63b8ff" points="1288.38,-1976.44 1291.49,-1969.93 1298.69,-1970.31 1295.58,-1976.81 1288.38,-1976.44"/>
 </a>
 </g>
 <text text-anchor="start" x="1020.25" y="-2007.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;gridRepository</text>
 </g>
-<!-- Node18 -->
-<g id="Node000018" class="node">
-<title>Node18</title>
-<g id="a_Node000018"><a xlink:title=" ">
+<!-- Node17 -->
+<g id="Node000017" class="node">
+<title>Node17</title>
+<g id="a_Node000017"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="1056.75,-2259 955.75,-2259 955.75,-2195 1056.75,-2195 1056.75,-2259"/>
 <text text-anchor="start" x="959.75" y="-2245.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; Grid,</text>
 <text text-anchor="start" x="989.75" y="-2233.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Long &gt;</text>
@@ -721,19 +693,19 @@
 </a>
 </g>
 </g>
-<!-- Node18&#45;&gt;Node17 -->
-<g id="edge17_Node000017_Node000018" class="edge">
-<title>Node18&#45;&gt;Node17</title>
-<g id="a_edge17_Node000017_Node000018"><a xlink:title=" ">
+<!-- Node17&#45;&gt;Node16 -->
+<g id="edge16_Node000016_Node000017" class="edge">
+<title>Node17&#45;&gt;Node16</title>
+<g id="a_edge16_Node000016_Node000017"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1006.25,-2183.82C1006.25,-2166.2 1006.25,-2146.11 1006.25,-2129.9"/>
 <polygon fill="none" stroke="#63b8ff" points="1002.75,-2183.74 1006.25,-2193.74 1009.75,-2183.74 1002.75,-2183.74"/>
 </a>
 </g>
 </g>
-<!-- Node19 -->
-<g id="Node000019" class="node">
-<title>Node19</title>
-<g id="a_Node000019"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html" target="_top" xlink:title="Service managing fr.softsf.sudokufx.model.GameLevel entities.">
+<!-- Node18 -->
+<g id="Node000018" class="node">
+<title>Node18</title>
+<g id="a_Node000018"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html" target="_top" xlink:title="Service managing fr.softsf.sudokufx.model.GameLevel entities.">
 <polygon fill="white" stroke="none" points="504.12,-1958 338.38,-1958 338.38,-1854 504.12,-1854 504.12,-1958"/>
 <text text-anchor="start" x="343.25" y="-1944.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.business.</text>
 <text text-anchor="start" x="380" y="-1932.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevelService</text>
@@ -750,20 +722,20 @@
 </a>
 </g>
 </g>
-<!-- Node19&#45;&gt;Node6 -->
-<g id="edge18_Node000006_Node000019" class="edge">
-<title>Node19&#45;&gt;Node6</title>
-<g id="a_edge18_Node000006_Node000019"><a xlink:title=" ">
+<!-- Node18&#45;&gt;Node5 -->
+<g id="edge17_Node000005_Node000018" class="edge">
+<title>Node18&#45;&gt;Node5</title>
+<g id="a_edge17_Node000005_Node000018"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M418.11,-1854.04C419.27,-1833.05 423.98,-1809.59 437,-1792 513.2,-1689.01 649.35,-1632.45 756.44,-1602.41"/>
 <polygon fill="none" stroke="#63b8ff" points="756.58,-1602.38 761.31,-1596.93 768.15,-1599.21 763.42,-1604.65 756.58,-1602.38"/>
 </a>
 </g>
 <text text-anchor="start" x="440" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;gameLevelService</text>
 </g>
-<!-- Node20 -->
-<g id="Node000020" class="node">
-<title>Node20</title>
-<g id="a_Node000020"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html" target="_top" xlink:title="Repository interface for GameLevel entities.">
+<!-- Node19 -->
+<g id="Node000019" class="node">
+<title>Node19</title>
+<g id="a_Node000019"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html" target="_top" xlink:title="Repository interface for GameLevel entities.">
 <polygon fill="white" stroke="none" points="487.5,-2136 355,-2136 355,-2060 487.5,-2060 487.5,-2136"/>
 <text text-anchor="start" x="359" y="-2122.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.repository.</text>
 <text text-anchor="start" x="372.88" y="-2110.5" font-family="Helvetica,sans-Serif" font-size="10.00">GameLevelRepository</text>
@@ -777,20 +749,20 @@
 </a>
 </g>
 </g>
-<!-- Node20&#45;&gt;Node19 -->
-<g id="edge19_Node000019_Node000020" class="edge">
-<title>Node20&#45;&gt;Node19</title>
-<g id="a_edge19_Node000019_Node000020"><a xlink:title=" ">
+<!-- Node19&#45;&gt;Node18 -->
+<g id="edge18_Node000018_Node000019" class="edge">
+<title>Node19&#45;&gt;Node18</title>
+<g id="a_edge18_Node000018_Node000019"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M421.25,-2060.37C421.25,-2035 421.25,-2000.58 421.25,-1970.77"/>
 <polygon fill="none" stroke="#63b8ff" points="421.25,-1970.79 417.25,-1964.79 421.25,-1958.79 425.25,-1964.79 421.25,-1970.79"/>
 </a>
 </g>
 <text text-anchor="start" x="424.25" y="-2007.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;gameLevelRepository</text>
 </g>
-<!-- Node21 -->
-<g id="Node000021" class="node">
-<title>Node21</title>
-<g id="a_Node000021"><a xlink:title=" ">
+<!-- Node20 -->
+<g id="Node000020" class="node">
+<title>Node20</title>
+<g id="a_Node000020"><a xlink:title=" ">
 <polygon fill="white" stroke="none" points="487.5,-2259 355,-2259 355,-2195 487.5,-2195 487.5,-2259"/>
 <text text-anchor="start" x="359" y="-2245.5" font-family="Helvetica,sans-Serif" font-size="10.00">JpaRepository&lt; GameLevel,</text>
 <text text-anchor="start" x="405.12" y="-2233.5" font-family="Helvetica,sans-Serif" font-size="10.00"> Byte &gt;</text>
@@ -802,19 +774,19 @@
 </a>
 </g>
 </g>
-<!-- Node21&#45;&gt;Node20 -->
-<g id="edge20_Node000020_Node000021" class="edge">
-<title>Node21&#45;&gt;Node20</title>
-<g id="a_edge20_Node000020_Node000021"><a xlink:title=" ">
+<!-- Node20&#45;&gt;Node19 -->
+<g id="edge19_Node000019_Node000020" class="edge">
+<title>Node20&#45;&gt;Node19</title>
+<g id="a_edge19_Node000019_Node000020"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M421.25,-2183.82C421.25,-2168.28 421.25,-2150.81 421.25,-2135.79"/>
 <polygon fill="none" stroke="#63b8ff" points="417.75,-2183.74 421.25,-2193.74 424.75,-2183.74 417.75,-2183.74"/>
 </a>
 </g>
 </g>
-<!-- Node22 -->
-<g id="Node000022" class="node">
-<title>Node22</title>
-<g id="a_Node000022"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" target="_top" xlink:title="Mapper interface for converting between Player entity and PlayerDto data transfer object.">
+<!-- Node21 -->
+<g id="Node000021" class="node">
+<title>Node21</title>
+<g id="a_Node000021"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html" target="_top" xlink:title="Mapper interface for converting between Player entity and PlayerDto data transfer object.">
 <polygon fill="white" stroke="none" points="963.75,-1958 754.75,-1958 754.75,-1854 963.75,-1854 963.75,-1958"/>
 <text text-anchor="start" x="758.75" y="-1944.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
 <text text-anchor="start" x="827.75" y="-1932.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPlayerMapper</text>
@@ -831,30 +803,30 @@
 </a>
 </g>
 </g>
-<!-- Node22&#45;&gt;Node6 -->
-<g id="edge21_Node000006_Node000022" class="edge">
-<title>Node22&#45;&gt;Node6</title>
-<g id="a_edge21_Node000006_Node000022"><a xlink:title=" ">
+<!-- Node21&#45;&gt;Node5 -->
+<g id="edge20_Node000005_Node000021" class="edge">
+<title>Node21&#45;&gt;Node5</title>
+<g id="a_edge20_Node000005_Node000021"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M867.3,-1854.27C870.36,-1834.99 874.07,-1811.61 878.03,-1786.63"/>
 <polygon fill="none" stroke="#63b8ff" points="878.04,-1786.59 875.03,-1780.04 879.92,-1774.74 882.93,-1781.29 878.04,-1786.59"/>
 </a>
 </g>
 <text text-anchor="start" x="879.39" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerMapper</text>
 </g>
-<!-- Node23&#45;&gt;Node6 -->
-<g id="edge22_Node000006_Node000023" class="edge">
-<title>Node23&#45;&gt;Node6</title>
-<g id="a_edge22_Node000006_Node000023"><a xlink:title=" ">
+<!-- Node22&#45;&gt;Node5 -->
+<g id="edge21_Node000005_Node000022" class="edge">
+<title>Node22&#45;&gt;Node5</title>
+<g id="a_edge21_Node000005_Node000022"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1033.23,-1828.37C1026.95,-1815.02 1020.16,-1800.57 1013.1,-1785.55"/>
 <polygon fill="none" stroke="#63b8ff" points="1013.15,-1785.65 1006.97,-1781.92 1008.04,-1774.79 1014.21,-1778.51 1013.15,-1785.65"/>
 </a>
 </g>
 <text text-anchor="start" x="1025.86" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;optionsService</text>
 </g>
-<!-- Node24 -->
-<g id="Node000024" class="node">
-<title>Node24</title>
-<g id="a_Node000024"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type Options to objects of type OptionsDto and ...">
+<!-- Node23 -->
+<g id="Node000023" class="node">
+<title>Node23</title>
+<g id="a_Node000023"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type Options to objects of type OptionsDto and ...">
 <polygon fill="white" stroke="none" points="921.75,-2150 712.75,-2150 712.75,-2046 921.75,-2046 921.75,-2150"/>
 <text text-anchor="start" x="716.75" y="-2136.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
 <text text-anchor="start" x="782.75" y="-2124.5" font-family="Helvetica,sans-Serif" font-size="10.00">IOptionsMapper</text>
@@ -871,20 +843,20 @@
 </a>
 </g>
 </g>
-<!-- Node24&#45;&gt;Node23 -->
-<g id="edge24_Node000023_Node000024" class="edge">
-<title>Node24&#45;&gt;Node23</title>
-<g id="a_edge24_Node000023_Node000024"><a xlink:title=" ">
+<!-- Node23&#45;&gt;Node22 -->
+<g id="edge23_Node000022_Node000023" class="edge">
+<title>Node23&#45;&gt;Node22</title>
+<g id="a_edge23_Node000022_Node000023"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M858.31,-2046.45C873.56,-2030.34 891.96,-2013.68 911.5,-2002 932.84,-1989.25 944.38,-1995.11 971.05,-1983.78"/>
 <polygon fill="none" stroke="#63b8ff" points="970.89,-1983.86 974.57,-1977.66 981.71,-1978.67 978.03,-1984.87 970.89,-1983.86"/>
 </a>
 </g>
 <text text-anchor="start" x="914.5" y="-2007.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;optionsMapper</text>
 </g>
-<!-- Node25 -->
-<g id="Node000025" class="node">
-<title>Node25</title>
-<g id="a_Node000025"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" target="_top" xlink:title="Spring component for validating objects using Jakarta Bean Validation.">
+<!-- Node24 -->
+<g id="Node000024" class="node">
+<title>Node24</title>
+<g id="a_Node000024"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html" target="_top" xlink:title="Spring component for validating objects using Jakarta Bean Validation.">
 <polygon fill="white" stroke="none" points="1278.75,-2158 1105.75,-2158 1105.75,-2038 1278.75,-2038 1278.75,-2158"/>
 <text text-anchor="start" x="1109.75" y="-2144.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.exception.</text>
 <text text-anchor="start" x="1157.38" y="-2132.5" font-family="Helvetica,sans-Serif" font-size="10.00">JakartaValidator</text>
@@ -905,60 +877,60 @@
 </a>
 </g>
 </g>
-<!-- Node25&#45;&gt;Node6 -->
-<g id="edge30_Node000006_Node000025" class="edge">
-<title>Node25&#45;&gt;Node6</title>
-<g id="a_edge30_Node000006_Node000025"><a xlink:title=" ">
+<!-- Node24&#45;&gt;Node5 -->
+<g id="edge29_Node000005_Node000024" class="edge">
+<title>Node24&#45;&gt;Node5</title>
+<g id="a_edge29_Node000005_Node000024"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1197.27,-2038.16C1199.65,-1981.59 1196.71,-1895.03 1165.25,-1828 1141.51,-1777.41 1103.57,-1730.86 1064.22,-1691.68"/>
 <polygon fill="none" stroke="#63b8ff" points="1064.49,-1691.95 1057.41,-1690.61 1055.92,-1683.55 1063,-1684.89 1064.49,-1691.95"/>
 </a>
 </g>
 <text text-anchor="start" x="1200.38" y="-1902.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;jakartaValidator</text>
 </g>
-<!-- Node25&#45;&gt;Node23 -->
-<g id="edge25_Node000023_Node000025" class="edge">
-<title>Node25&#45;&gt;Node23</title>
-<g id="a_edge25_Node000023_Node000025"><a xlink:title=" ">
+<!-- Node24&#45;&gt;Node22 -->
+<g id="edge24_Node000022_Node000024" class="edge">
+<title>Node24&#45;&gt;Node22</title>
+<g id="a_edge24_Node000022_Node000024"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1116.64,-2038.37C1111.43,-2032.52 1106.62,-2026.38 1102.5,-2020 1097.67,-2012.53 1093.52,-2004.34 1089.96,-1995.88"/>
 <polygon fill="none" stroke="#63b8ff" points="1089.95,-1995.84 1084.06,-1991.67 1085.64,-1984.64 1091.52,-1988.8 1089.95,-1995.84"/>
 </a>
 </g>
 <text text-anchor="start" x="1105.5" y="-2007.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;jakartaValidator</text>
 </g>
-<!-- Node25&#45;&gt;Node26 -->
-<g id="edge29_Node000026_Node000025" class="edge">
-<title>Node25&#45;&gt;Node26</title>
-<g id="a_edge29_Node000026_Node000025"><a xlink:title=" ">
+<!-- Node24&#45;&gt;Node25 -->
+<g id="edge28_Node000025_Node000024" class="edge">
+<title>Node24&#45;&gt;Node25</title>
+<g id="a_edge28_Node000025_Node000024"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1246.73,-2038.18C1264,-2019.55 1283.29,-1998.72 1301.32,-1979.25"/>
 <polygon fill="none" stroke="#63b8ff" points="1301.29,-1979.29 1302.43,-1972.17 1309.45,-1970.48 1308.3,-1977.6 1301.29,-1979.29"/>
 </a>
 </g>
 <text text-anchor="start" x="1283.25" y="-2007.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;jakartaValidator</text>
 </g>
-<!-- Node25&#45;&gt;Node28 -->
-<g id="edge33_Node000028_Node000025" class="edge">
-<title>Node25&#45;&gt;Node28</title>
-<g id="a_edge33_Node000028_Node000025"><a xlink:title=" ">
+<!-- Node24&#45;&gt;Node27 -->
+<g id="edge32_Node000027_Node000024" class="edge">
+<title>Node24&#45;&gt;Node27</title>
+<g id="a_edge32_Node000027_Node000024"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1278.72,-2041.23C1281.56,-2040.07 1284.41,-2038.99 1287.25,-2038 1321.27,-2026.21 1420.55,-2042.99 1448.25,-2020 1461.12,-2009.31 1454.91,-2000.16 1459.25,-1984 1482.22,-1898.51 1471.09,-1870.37 1512.25,-1792 1537.28,-1744.35 1567.66,-1692.41 1592.76,-1650.86"/>
 <polygon fill="none" stroke="#63b8ff" points="1592.84,-1650.74 1592.53,-1643.53 1599.06,-1640.48 1599.37,-1647.68 1592.84,-1650.74"/>
 </a>
 </g>
 <text text-anchor="start" x="1497.77" y="-1902.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;jakartaValidator</text>
 </g>
-<!-- Node26&#45;&gt;Node6 -->
-<g id="edge26_Node000006_Node000026" class="edge">
-<title>Node26&#45;&gt;Node6</title>
-<g id="a_edge26_Node000006_Node000026"><a xlink:title=" ">
+<!-- Node25&#45;&gt;Node5 -->
+<g id="edge25_Node000005_Node000025" class="edge">
+<title>Node25&#45;&gt;Node5</title>
+<g id="a_edge25_Node000005_Node000025"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1290.47,-1842.02C1284.34,-1837.23 1278.21,-1832.51 1272.25,-1828 1205.55,-1777.51 1130.43,-1723.45 1066.13,-1678.01"/>
 <polygon fill="none" stroke="#63b8ff" points="1066.04,-1677.94 1058.83,-1677.75 1056.24,-1671.02 1063.44,-1671.21 1066.04,-1677.94"/>
 </a>
 </g>
 <text text-anchor="start" x="1246.59" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;gridService</text>
 </g>
-<!-- Node27 -->
-<g id="Node000027" class="node">
-<title>Node27</title>
-<g id="a_Node000027"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type Grid to objects of type GridDto and vice v...">
+<!-- Node26 -->
+<g id="Node000026" class="node">
+<title>Node26</title>
+<g id="a_Node000026"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type Grid to objects of type GridDto and vice v...">
 <polygon fill="white" stroke="none" points="1505.75,-2150 1296.75,-2150 1296.75,-2046 1505.75,-2046 1505.75,-2150"/>
 <text text-anchor="start" x="1300.75" y="-2136.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
 <text text-anchor="start" x="1374.62" y="-2124.5" font-family="Helvetica,sans-Serif" font-size="10.00">IGridMapper</text>
@@ -975,30 +947,30 @@
 </a>
 </g>
 </g>
-<!-- Node27&#45;&gt;Node26 -->
-<g id="edge28_Node000026_Node000027" class="edge">
-<title>Node27&#45;&gt;Node26</title>
-<g id="a_edge28_Node000026_Node000027"><a xlink:title=" ">
+<!-- Node26&#45;&gt;Node25 -->
+<g id="edge27_Node000025_Node000026" class="edge">
+<title>Node26&#45;&gt;Node25</title>
+<g id="a_edge27_Node000025_Node000026"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1392.41,-2046.08C1389.02,-2026.6 1385.09,-2003.94 1381.39,-1982.64"/>
 <polygon fill="none" stroke="#63b8ff" points="1381.39,-1982.65 1376.42,-1977.43 1379.34,-1970.83 1384.3,-1976.06 1381.39,-1982.65"/>
 </a>
 </g>
 <text text-anchor="start" x="1390.71" y="-2007.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;gridMapper</text>
 </g>
-<!-- Node28&#45;&gt;Node5 -->
-<g id="edge31_Node000005_Node000028" class="edge">
-<title>Node28&#45;&gt;Node5</title>
-<g id="a_edge31_Node000005_Node000028"><a xlink:title=" ">
+<!-- Node27&#45;&gt;Node4 -->
+<g id="edge30_Node000004_Node000027" class="edge">
+<title>Node27&#45;&gt;Node4</title>
+<g id="a_edge30_Node000004_Node000027"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1526.11,-1536.26C1421.84,-1500.05 1274.92,-1430.55 1206,-1312 1187.3,-1279.83 1185.13,-1109.81 1187.49,-950.8"/>
 <polygon fill="none" stroke="#63b8ff" points="1187.49,-950.81 1183.59,-944.75 1187.68,-938.81 1191.59,-944.87 1187.49,-950.81"/>
 </a>
 </g>
 <text text-anchor="start" x="1209" y="-1148.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerLanguageService</text>
 </g>
-<!-- Node29 -->
-<g id="Node000029" class="node">
-<title>Node29</title>
-<g id="a_Node000029"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type PlayerLanguage to objects of type PlayerLa...">
+<!-- Node28 -->
+<g id="Node000028" class="node">
+<title>Node28</title>
+<g id="a_Node000028"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html" target="_top" xlink:title="This interface defines methods for mapping objects of type PlayerLanguage to objects of type PlayerLa...">
 <polygon fill="white" stroke="none" points="2116.75,-1970 1907.75,-1970 1907.75,-1842 2116.75,-1842 2116.75,-1970"/>
 <text text-anchor="start" x="1911.75" y="-1956.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.mapper.</text>
 <text text-anchor="start" x="1959.75" y="-1944.5" font-family="Helvetica,sans-Serif" font-size="10.00">IPlayerLanguageMapper</text>
@@ -1017,30 +989,30 @@
 </a>
 </g>
 </g>
-<!-- Node29&#45;&gt;Node28 -->
-<g id="edge34_Node000028_Node000029" class="edge">
-<title>Node29&#45;&gt;Node28</title>
-<g id="a_edge34_Node000028_Node000029"><a xlink:title=" ">
+<!-- Node28&#45;&gt;Node27 -->
+<g id="edge33_Node000027_Node000028" class="edge">
+<title>Node28&#45;&gt;Node27</title>
+<g id="a_edge33_Node000027_Node000028"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1957.9,-1842.23C1942.62,-1825.47 1925.68,-1807.66 1909.25,-1792 1856.27,-1741.49 1793.36,-1689.09 1741.91,-1647.99"/>
 <polygon fill="none" stroke="#63b8ff" points="1741.88,-1647.96 1734.69,-1647.35 1732.49,-1640.49 1739.67,-1641.09 1741.88,-1647.96"/>
 </a>
 </g>
 <text text-anchor="start" x="1930.06" y="-1797.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerLanguageMapper</text>
 </g>
-<!-- Node30&#45;&gt;Node5 -->
-<g id="edge35_Node000005_Node000030" class="edge">
-<title>Node30&#45;&gt;Node5</title>
-<g id="a_edge35_Node000005_Node000030"><a xlink:title=" ">
+<!-- Node29&#45;&gt;Node4 -->
+<g id="edge34_Node000004_Node000029" class="edge">
+<title>Node29&#45;&gt;Node4</title>
+<g id="a_edge34_Node000004_Node000029"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1082.56,-1054.14C1084.87,-1022.61 1088.75,-987.61 1095.25,-956 1097.49,-945.11 1100,-934.08 1102.73,-922.98"/>
 <polygon fill="none" stroke="#63b8ff" points="1102.74,-922.93 1100.33,-916.14 1105.68,-911.3 1108.09,-918.1 1102.74,-922.93"/>
 </a>
 </g>
 <text text-anchor="start" x="1098.25" y="-961.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerStateHolder</text>
 </g>
-<!-- Node31 -->
-<g id="Node000031" class="node">
-<title>Node31</title>
-<g id="a_Node000031"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html" target="_top" xlink:title="A centralized service for sending toast notifications to the UI.">
+<!-- Node30 -->
+<g id="Node000030" class="node">
+<title>Node30</title>
+<g id="a_Node000030"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html" target="_top" xlink:title="A centralized service for sending toast notifications to the UI.">
 <polygon fill="white" stroke="none" points="1509.5,-1312 1325,-1312 1325,-992 1509.5,-992 1509.5,-1312"/>
 <text text-anchor="start" x="1355" y="-1298.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.service.ui.</text>
 <text text-anchor="start" x="1384.62" y="-1286.5" font-family="Helvetica,sans-Serif" font-size="10.00">ToasterService</text>
@@ -1081,20 +1053,20 @@
 </a>
 </g>
 </g>
-<!-- Node31&#45;&gt;Node5 -->
-<g id="edge37_Node000005_Node000031" class="edge">
-<title>Node31&#45;&gt;Node5</title>
-<g id="a_edge37_Node000005_Node000031"><a xlink:title=" ">
+<!-- Node30&#45;&gt;Node4 -->
+<g id="edge36_Node000004_Node000030" class="edge">
+<title>Node30&#45;&gt;Node4</title>
+<g id="a_edge36_Node000004_Node000030"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1346.41,-992.02C1329.02,-952.99 1310.12,-910.57 1291.78,-869.41"/>
 <polygon fill="none" stroke="#63b8ff" points="1291.75,-869.34 1285.66,-865.49 1286.87,-858.38 1292.96,-862.23 1291.75,-869.34"/>
 </a>
 </g>
 <text text-anchor="start" x="1336.04" y="-961.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;toasterService</text>
 </g>
-<!-- Node32 -->
-<g id="Node000032" class="node">
-<title>Node32</title>
-<g id="a_Node000032"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" target="_top" xlink:title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.">
+<!-- Node31 -->
+<g id="Node000031" class="node">
+<title>Node31</title>
+<g id="a_Node000031"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" target="_top" xlink:title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions.">
 <polygon fill="white" stroke="none" points="1677.25,-1284 1527.25,-1284 1527.25,-1020 1677.25,-1020 1677.25,-1284"/>
 <text text-anchor="start" x="1534.38" y="-1270.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.util.</text>
 <text text-anchor="start" x="1563.25" y="-1258.5" font-family="Helvetica,sans-Serif" font-size="10.00">DynamicFontSize</text>
@@ -1131,10 +1103,10 @@
 </a>
 </g>
 </g>
-<!-- Node32&#45;&gt;Node5 -->
-<g id="edge38_Node000005_Node000032" class="edge">
-<title>Node32&#45;&gt;Node5</title>
-<g id="a_edge38_Node000005_Node000032"><a xlink:title=" ">
+<!-- Node31&#45;&gt;Node4 -->
+<g id="edge37_Node000004_Node000031" class="edge">
+<title>Node31&#45;&gt;Node4</title>
+<g id="a_edge37_Node000004_Node000031"><a xlink:title=" ">
 <path fill="none" stroke="#63b8ff" d="M1537.07,-1020.34C1531.03,-1010.55 1524.73,-1000.99 1518.25,-992 1452.63,-900.92 1363.57,-809.59 1295.75,-745.03"/>
 <polygon fill="none" stroke="#63b8ff" points="1295.69,-744.97 1288.58,-743.75 1286.98,-736.72 1294.08,-737.94 1295.69,-744.97"/>
 </a>

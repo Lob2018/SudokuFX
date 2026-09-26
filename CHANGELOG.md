@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+🔧 chore pom.xml: Bump version from 1.11.1 to 1.11.2
+
+([4112780ed176048](https://github.com/Lob2018/SudokuFX/commit/4112780ed176048c81d9825f7e53131aecd23d7e))
+
 🐛 fix MainView, MenuOptionsViewModel, MenuOptionsViewModelUTest: Color reapplication failure when image background is active
 - Root cause: JavaFX valueProperty bindings skip execution if the selected color equals the current value, preventing UI updates when re-selecting a color while an image background is active.
 - Fix: Add setOnAction handler to ColorPicker and implement handleColorReapplicationWhenImageActive method in MenuOptionsViewModel with null-safety checks.

@@ -12,6 +12,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model =
     [ "createStringBinding", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#acc42c19bd4c6eafc97a5826eb787c906", null ],
     [ "gridOpacityProperty", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a7f59ea6dfd086c59134f98291ee3797e", null ],
     [ "gridOpacityText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a89500f671995a3ab11b253bf65cafdfb", null ],
+    [ "handleColorReapplicationWhenImageActive", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a4ddfc7e380f5fa4d5ed19f5ad39aa834", null ],
     [ "init", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a231db409f6a7e4cb554d176ea8c7a3b1", null ],
     [ "initMuteAccessibleText", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#a8920334361b12271411cb8f6b2e32a8a", null ],
     [ "initMuteIcon", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html#affb61921e2b3545de6b96d4fbb216fff", null ],

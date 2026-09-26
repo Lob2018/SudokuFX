@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['of_20sudokufx_0',['Documentation of SudokuFX',['../index.html',1,'']]]
+  ['case_20diagrams_0',['Case Diagrams',['../index.html#Use',1,'']]]
 ];

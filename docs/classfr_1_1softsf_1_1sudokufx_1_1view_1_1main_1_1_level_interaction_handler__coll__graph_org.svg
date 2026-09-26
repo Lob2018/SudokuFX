@@ -490,24 +490,24 @@
 <text text-anchor="start" x="1799" y="-1080.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyBooleanProperty</text>
 <text text-anchor="start" x="1799" y="-1068.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gridOpacityProperty()</text>
 <text text-anchor="start" x="1789" y="-1052.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1799" y="-1052.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(GridPane</text>
-<text text-anchor="start" x="1799" y="-1040.5" font-family="Helvetica,sans-Serif" font-size="10.00"> sudokuFX)</text>
+<text text-anchor="start" x="1799" y="-1052.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleColorReapplication</text>
+<text text-anchor="start" x="1799" y="-1040.5" font-family="Helvetica,sans-Serif" font-size="10.00">WhenImageActive(Color color)</text>
 <text text-anchor="start" x="1789" y="-1024.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1799" y="-1024.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsAccessible</text>
-<text text-anchor="start" x="1799" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
+<text text-anchor="start" x="1799" y="-1024.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(GridPane</text>
+<text text-anchor="start" x="1799" y="-1012.5" font-family="Helvetica,sans-Serif" font-size="10.00"> sudokuFX)</text>
 <text text-anchor="start" x="1789" y="-996.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1799" y="-996.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
-<text text-anchor="start" x="1799" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongAccessibleTextProperty()</text>
+<text text-anchor="start" x="1799" y="-996.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsAccessible</text>
+<text text-anchor="start" x="1799" y="-984.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="1789" y="-968.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="1799" y="-968.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
-<text text-anchor="start" x="1799" y="-956.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongRoleDescriptionProperty()</text>
+<text text-anchor="start" x="1799" y="-956.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongAccessibleTextProperty()</text>
 <text text-anchor="start" x="1789" y="-940.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="1799" y="-940.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
-<text text-anchor="start" x="1799" y="-928.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongTooltipProperty()</text>
+<text text-anchor="start" x="1799" y="-928.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongRoleDescriptionProperty()</text>
 <text text-anchor="start" x="1789" y="-912.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="1799" y="-912.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsColor</text>
-<text text-anchor="start" x="1799" y="-900.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
-<text text-anchor="start" x="1799" y="-884.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 37 more...</text>
+<text text-anchor="start" x="1799" y="-912.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
+<text text-anchor="start" x="1799" y="-900.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongTooltipProperty()</text>
+<text text-anchor="start" x="1799" y="-884.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 38 more...</text>
 <text text-anchor="start" x="1790.5" y="-868.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="1799" y="-868.5" font-family="Helvetica,sans-Serif" font-size="10.00">void applyOptionsToUI</text>
 <text text-anchor="start" x="1799" y="-856.5" font-family="Helvetica,sans-Serif" font-size="10.00">(OptionsDto options,</text>

@@ -4,300 +4,300 @@ var annotated_dup =
       [ "softsf", null, [
         [ "sudokufx", "namespacefr_1_1softsf_1_1sudokufx.html", [
           [ "benchmark", "namespacefr_1_1softsf_1_1sudokufx_1_1benchmark.html", [
-            [ "BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1BenchGridMaster.html", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1BenchGridMaster" ]
+            [ "BenchGridMaster", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1benchmark_1_1_bench_grid_master" ]
           ] ],
           [ "common", "namespacefr_1_1softsf_1_1sudokufx_1_1common.html", [
             [ "annotation", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation.html", [
-              [ "ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1ExcludedFromCoverageReportGenerated.html", null ]
+              [ "ExcludedFromCoverageReportGenerated", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1annotation_1_1_excluded_from_coverage_report_generated.html", null ]
             ] ],
             [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1enums.html", [
-              [ "AppIcons", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppIcons.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppIcons" ],
-              [ "AppPaths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppPaths.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppPaths" ],
-              [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1DifficultyLevel.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1DifficultyLevel" ],
-              [ "FxmlView", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1FxmlView.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1FxmlView" ],
-              [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1I18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1I18n" ],
-              [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1LogBackTxt.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1LogBackTxt" ],
-              [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1OsName.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1OsName" ],
-              [ "PlayerConstants", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1PlayerConstants.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1PlayerConstants" ],
-              [ "PlayerNameStatus", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1PlayerNameStatus.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1PlayerNameStatus" ],
-              [ "PlayerSaveMode", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1PlayerSaveMode.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1PlayerSaveMode" ],
-              [ "ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ScreenSize.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ScreenSize" ],
-              [ "ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels" ],
-              [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1Urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1Urls" ]
+              [ "AppIcons", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_icons" ],
+              [ "AppPaths", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_app_paths" ],
+              [ "DifficultyLevel", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_difficulty_level" ],
+              [ "FxmlView", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_fxml_view" ],
+              [ "I18n", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_i18n" ],
+              [ "LogBackTxt", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt" ],
+              [ "OsName", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_os_name" ],
+              [ "PlayerConstants", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_constants.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_constants" ],
+              [ "PlayerNameStatus", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_name_status" ],
+              [ "PlayerSaveMode", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_save_mode.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_player_save_mode" ],
+              [ "ScreenSize", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_screen_size" ],
+              [ "ToastLevels", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_toast_levels" ],
+              [ "Urls", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_urls" ]
             ] ],
             [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1exception.html", [
-              [ "DatabaseIntegrityException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1DatabaseIntegrityException.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1DatabaseIntegrityException" ],
-              [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1ExceptionTools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1ExceptionTools" ],
-              [ "FolderCreationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1FolderCreationException.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1FolderCreationException" ],
-              [ "JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1JakartaValidator.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1JakartaValidator" ],
-              [ "LogbackConfigurationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1LogbackConfigurationException.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1LogbackConfigurationException" ],
-              [ "ResourceLoadException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1ResourceLoadException.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1ResourceLoadException" ]
+              [ "DatabaseIntegrityException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception" ],
+              [ "ExceptionTools", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_exception_tools" ],
+              [ "FolderCreationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception" ],
+              [ "JakartaValidator", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_jakarta_validator" ],
+              [ "LogbackConfigurationException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception" ],
+              [ "ResourceLoadException", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_resource_load_exception" ]
             ] ],
             [ "interfaces", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces.html", [
               [ "mapper", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper.html", [
-                [ "IGameLevelMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IGameLevelMapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IGameLevelMapper" ],
-                [ "IGameMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IGameMapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IGameMapper" ],
-                [ "IGridMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IGridMapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IGridMapper" ],
-                [ "IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IMenuMapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IMenuMapper" ],
-                [ "IOptionsMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IOptionsMapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IOptionsMapper" ],
-                [ "IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IPlayerLanguageMapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IPlayerLanguageMapper" ],
-                [ "IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IPlayerMapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IPlayerMapper" ],
-                [ "MapperUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1MapperUtils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1MapperUtils" ]
+                [ "IGameLevelMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_level_mapper" ],
+                [ "IGameMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_game_mapper" ],
+                [ "IGridMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper" ],
+                [ "IMenuMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_menu_mapper" ],
+                [ "IOptionsMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_options_mapper" ],
+                [ "IPlayerLanguageMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper" ],
+                [ "IPlayerMapper", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_mapper" ],
+                [ "MapperUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_mapper_utils" ]
               ] ],
-              [ "IMainView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1IMainView.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1IMainView" ],
-              [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1ISplashScreenView.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1ISplashScreenView" ]
+              [ "IMainView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view" ],
+              [ "ISplashScreenView", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view" ]
             ] ],
             [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util.html", [
               [ "math", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math.html", [
-                [ "NumberUtils", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1NumberUtils.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1NumberUtils" ],
-                [ "PowerOfTen", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1PowerOfTen.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1PowerOfTen" ]
+                [ "NumberUtils", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_number_utils" ],
+                [ "PowerOfTen", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1math_1_1_power_of_ten" ]
               ] ],
               [ "sudoku", "namespacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku.html", [
-                [ "GridConverter", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverter.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverter" ],
-                [ "GridConverterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridConverterUTest" ],
-                [ "GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridMaster.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridMaster" ],
-                [ "GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridMasterUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridMasterUTest" ],
-                [ "GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest" ]
+                [ "GridConverter", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter" ],
+                [ "GridConverterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_converter_u_test" ],
+                [ "GridMaster", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master" ],
+                [ "GridMasterUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_master_u_test" ],
+                [ "GridViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1_grid_view_model_u_test" ]
               ] ],
-              [ "AudioUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1AudioUtils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1AudioUtils" ],
-              [ "DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1DynamicFontSize.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1DynamicFontSize" ],
-              [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1FileSystemManagerUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1FileSystemManagerUTest" ],
-              [ "ImageUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1ImageUtils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1ImageUtils" ],
-              [ "LocalUserDataPurger", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1LocalUserDataPurger.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1LocalUserDataPurger" ],
-              [ "MyDateTime", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyDateTime.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyDateTime" ],
-              [ "MyDateTimeUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyDateTimeUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyDateTimeUTest" ],
-              [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1MyRegex" ],
-              [ "PathValidator", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1PathValidator.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1PathValidator" ],
-              [ "SecureRandomGenerator", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SecureRandomGenerator.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SecureRandomGenerator" ],
-              [ "SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer" ]
+              [ "AudioUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_audio_utils" ],
+              [ "DynamicFontSize", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size" ],
+              [ "FileSystemManagerUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_file_system_manager_u_test" ],
+              [ "ImageUtils", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_image_utils" ],
+              [ "LocalUserDataPurger", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger.html", "interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_local_user_data_purger" ],
+              [ "MyDateTime", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time" ],
+              [ "MyDateTimeUTest", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_date_time_u_test" ],
+              [ "MyRegex", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_my_regex" ],
+              [ "PathValidator", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_path_validator.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_path_validator" ],
+              [ "SecureRandomGenerator", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_secure_random_generator.html", "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_secure_random_generator" ],
+              [ "SpringContextInitializer", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer.html", "classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_spring_context_initializer" ]
             ] ]
           ] ],
           [ "config", "namespacefr_1_1softsf_1_1sudokufx_1_1config.html", [
             [ "database", "namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1database.html", [
-              [ "AbstractDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfig.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfig" ],
-              [ "AbstractDataSourceConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfigUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1AbstractDataSourceConfigUTest" ],
-              [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1ApplicationKeystore.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1ApplicationKeystore" ],
-              [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1ApplicationKeystoreITest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1ApplicationKeystoreITest" ],
-              [ "DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigCds.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigCds" ],
-              [ "DataSourceConfigDefault", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigDefault.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigDefault" ],
-              [ "DataSourceConfigTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigTest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1DataSourceConfigTest" ],
-              [ "GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1GenerateSecret.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1GenerateSecret" ],
-              [ "GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1GenerateSecretUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1GenerateSecretUTest" ],
-              [ "SecretKeyEncryptionServiceAESGCM", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCM.html", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCM" ],
-              [ "SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1SecretKeyEncryptionServiceAESGCMUTest" ]
+              [ "AbstractDataSourceConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config" ],
+              [ "AbstractDataSourceConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config_u_test" ],
+              [ "ApplicationKeystore", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore" ],
+              [ "ApplicationKeystoreITest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_application_keystore_i_test" ],
+              [ "DataSourceConfigCds", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_cds" ],
+              [ "DataSourceConfigDefault", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_default.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_default" ],
+              [ "DataSourceConfigTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_data_source_config_test" ],
+              [ "GenerateSecret", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret" ],
+              [ "GenerateSecretUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_generate_secret_u_test" ],
+              [ "SecretKeyEncryptionServiceAESGCM", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m.html", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m" ],
+              [ "SecretKeyEncryptionServiceAESGCMUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_secret_key_encryption_service_a_e_s_g_c_m_u_test" ]
             ] ],
             [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1config_1_1os.html", [
-              [ "OsFolderInitializer", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsFolderInitializer.html", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsFolderInitializer" ],
-              [ "OsFolderInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsFolderInitializerUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsFolderInitializerUTest" ],
-              [ "OsFoldersConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsFoldersConfig.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsFoldersConfig" ],
-              [ "OsFoldersConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsFoldersConfigUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsFoldersConfigUTest" ],
-              [ "OsInitializedFolders", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsInitializedFolders.html", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1OsInitializedFolders" ]
+              [ "OsFolderInitializer", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer.html", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer" ],
+              [ "OsFolderInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folder_initializer_u_test" ],
+              [ "OsFoldersConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config" ],
+              [ "OsFoldersConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test" ],
+              [ "OsInitializedFolders", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders.html", "interfacefr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_initialized_folders" ]
             ] ],
-            [ "HttpClientConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1HttpClientConfig.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1HttpClientConfig" ],
-            [ "JVMApplicationProperties", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1JVMApplicationProperties.html", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1JVMApplicationProperties" ],
-            [ "JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1JVMApplicationPropertiesUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1JVMApplicationPropertiesUTest" ],
-            [ "MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfig.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfig" ],
-            [ "MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfigUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1MyLogbackConfigUTest" ],
-            [ "ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1ObjectMapperConfig.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1ObjectMapperConfig" ]
+            [ "HttpClientConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_http_client_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_http_client_config" ],
+            [ "JVMApplicationProperties", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties.html", "enumfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties" ],
+            [ "JVMApplicationPropertiesUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_j_v_m_application_properties_u_test" ],
+            [ "MyLogbackConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config" ],
+            [ "MyLogbackConfigUTest", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_my_logback_config_u_test" ],
+            [ "ObjectMapperConfig", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config.html", "classfr_1_1softsf_1_1sudokufx_1_1config_1_1_object_mapper_config" ]
           ] ],
           [ "model", "namespacefr_1_1softsf_1_1sudokufx_1_1model.html", [
-            [ "Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game" ],
-            [ "GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel" ],
-            [ "GameLevelUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevelUTest" ],
-            [ "GameUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameUTest" ],
-            [ "Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Grid.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Grid" ],
-            [ "GridUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GridUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1GridUTest" ],
-            [ "Menu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu" ],
-            [ "MenuUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1MenuUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1MenuUTest" ],
-            [ "Options", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options" ],
-            [ "OptionsUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1OptionsUTest" ],
-            [ "Player", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player" ],
-            [ "PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage" ],
-            [ "PlayerLanguageUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguageUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguageUTest" ],
-            [ "PlayerUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerUTest" ]
+            [ "Game", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game" ],
+            [ "GameLevel", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level" ],
+            [ "GameLevelUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_level_u_test" ],
+            [ "GameUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_game_u_test" ],
+            [ "Grid", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid" ],
+            [ "GridUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_grid_u_test" ],
+            [ "Menu", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu" ],
+            [ "MenuUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_menu_u_test" ],
+            [ "Options", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options" ],
+            [ "OptionsUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_options_u_test" ],
+            [ "Player", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player" ],
+            [ "PlayerLanguage", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language" ],
+            [ "PlayerLanguageUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_language_u_test" ],
+            [ "PlayerUTest", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1model_1_1_player_u_test" ]
           ] ],
           [ "navigation", "namespacefr_1_1softsf_1_1sudokufx_1_1navigation.html", [
-            [ "Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1Coordinator.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1Coordinator" ],
-            [ "CoordinatorUTest", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1CoordinatorUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1CoordinatorUTest" ]
+            [ "Coordinator", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator" ],
+            [ "CoordinatorUTest", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator_u_test" ]
           ] ],
           [ "repository", "namespacefr_1_1softsf_1_1sudokufx_1_1repository.html", [
             [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1repository_1_1util.html", [
-              [ "RepositoryTools", "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1RepositoryTools.html", "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1RepositoryTools" ]
+              [ "RepositoryTools", "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools.html", "enumfr_1_1softsf_1_1sudokufx_1_1repository_1_1util_1_1_repository_tools" ]
             ] ],
-            [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GameLevelRepository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GameLevelRepository" ],
-            [ "GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GameRepository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GameRepository" ],
-            [ "GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GridRepository.html", null ],
-            [ "MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1MenuRepository.html", null ],
-            [ "OptionsRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1OptionsRepository.html", null ],
-            [ "PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1PlayerLanguageRepository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1PlayerLanguageRepository" ],
-            [ "PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1PlayerRepository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1PlayerRepository" ]
+            [ "GameLevelRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_level_repository" ],
+            [ "GameRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_game_repository" ],
+            [ "GridRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_grid_repository.html", null ],
+            [ "MenuRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_menu_repository.html", null ],
+            [ "OptionsRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_options_repository.html", null ],
+            [ "PlayerLanguageRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_language_repository" ],
+            [ "PlayerRepository", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html", "interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository" ]
           ] ],
           [ "service", "namespacefr_1_1softsf_1_1sudokufx_1_1service.html", [
             [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1business.html", [
-              [ "GameLevelService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameLevelService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameLevelService" ],
-              [ "GameService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameService" ],
-              [ "GridService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GridService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GridService" ],
-              [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1OptionsService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1OptionsService" ],
-              [ "PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1PlayerLanguageService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1PlayerLanguageService" ],
-              [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1PlayerService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1PlayerService" ]
+              [ "GameLevelService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_level_service" ],
+              [ "GameService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_game_service" ],
+              [ "GridService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_grid_service" ],
+              [ "OptionsService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_options_service" ],
+              [ "PlayerLanguageService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_language_service" ],
+              [ "PlayerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service" ]
             ] ],
             [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1external.html", [
-              [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1VersionService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1VersionService" ]
+              [ "VersionService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1_version_service" ]
             ] ],
             [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1service_1_1ui.html", [
-              [ "AsyncFileProcessorService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1AsyncFileProcessorService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1AsyncFileProcessorService" ],
-              [ "AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1AudioService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1AudioService" ],
-              [ "FileChooserService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1FileChooserService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1FileChooserService" ],
-              [ "SpinnerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1SpinnerService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1SpinnerService" ],
-              [ "ToasterService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1ToasterService.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1ToasterService" ]
+              [ "AsyncFileProcessorService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_async_file_processor_service" ],
+              [ "AudioService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_audio_service" ],
+              [ "FileChooserService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_file_chooser_service" ],
+              [ "SpinnerService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_spinner_service" ],
+              [ "ToasterService", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html", "classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service" ]
             ] ]
           ] ],
           [ "testing", null, [
             [ "e2e", null, [
               [ "common", null, [
                 [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util.html", [
-                  [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1DynamicFontSizeChangeE2ETest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1DynamicFontSizeChangeE2ETest" ]
+                  [ "DynamicFontSizeChangeE2ETest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1e2e_1_1common_1_1util_1_1_dynamic_font_size_change_e2_e_test" ]
                 ] ]
               ] ]
             ] ],
             [ "integration", null, [
               [ "common", null, [
                 [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums.html", [
-                  [ "ScreenSizeITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1ScreenSizeITest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1ScreenSizeITest" ]
+                  [ "ScreenSizeITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1common_1_1enums_1_1_screen_size_i_test" ]
                 ] ]
               ] ],
               [ "service", null, [
                 [ "external", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html", [
-                  [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1VersionServiceITest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1VersionServiceITest" ]
+                  [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1_version_service_i_test" ]
                 ] ]
               ] ],
               [ "viewmodel", null, [
                 [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state.html", [
-                  [ "PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1PlayerStateHolderITest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1PlayerStateHolderITest" ]
+                  [ "PlayerStateHolderITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1viewmodel_1_1state_1_1_player_state_holder_i_test" ]
                 ] ]
               ] ]
             ] ],
             [ "unit", null, [
               [ "common", null, [
                 [ "enums", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums.html", [
-                  [ "AppIconsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1AppIconsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1AppIconsUTest" ],
-                  [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1DifficultyLevelTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1DifficultyLevelTest" ],
-                  [ "FxmlViewUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1FxmlViewUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1FxmlViewUTest" ],
-                  [ "OsNameUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1OsNameUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1OsNameUTest" ],
-                  [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1SecureRandomGeneratorUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1SecureRandomGeneratorUTest" ]
+                  [ "AppIconsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_app_icons_u_test" ],
+                  [ "DifficultyLevelTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_difficulty_level_test" ],
+                  [ "FxmlViewUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_fxml_view_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_fxml_view_u_test" ],
+                  [ "OsNameUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_os_name_u_test" ],
+                  [ "SecureRandomGeneratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1enums_1_1_secure_random_generator_u_test" ]
                 ] ],
                 [ "exception", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception.html", [
-                  [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1ExceptionToolsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1ExceptionToolsUTest" ]
+                  [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1exception_1_1_exception_tools_u_test" ]
                 ] ],
                 [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util.html", [
                   [ "math", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math.html", [
-                    [ "NumberUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1NumberUtilsUTest" ],
-                    [ "PowerOfTenUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1PowerOfTenUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1PowerOfTenUTest" ]
+                    [ "NumberUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_number_utils_u_test" ],
+                    [ "PowerOfTenUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1math_1_1_power_of_ten_u_test" ]
                   ] ],
                   [ "os", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os.html", [
-                    [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1OsInfoUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1OsInfoUTest" ]
+                    [ "OsInfoUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1os_1_1_os_info_u_test" ]
                   ] ],
-                  [ "AudioUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1AudioUtilsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1AudioUtilsUTest" ],
-                  [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1ExceptionToolsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1ExceptionToolsUTest" ],
-                  [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1I18nUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1I18nUTest" ],
-                  [ "ImageUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1ImageUtilsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1ImageUtilsUTest" ],
-                  [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyEnumsUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyEnumsUTest" ],
-                  [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyRegexUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1MyRegexUTest" ],
-                  [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1SpringContextInitializerUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1SpringContextInitializerUTest" ]
+                  [ "AudioUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_audio_utils_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_audio_utils_u_test" ],
+                  [ "ExceptionToolsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_exception_tools_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_exception_tools_u_test" ],
+                  [ "I18nUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_i18n_u_test" ],
+                  [ "ImageUtilsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_image_utils_u_test" ],
+                  [ "MyEnumsUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_enums_u_test" ],
+                  [ "MyRegexUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test" ],
+                  [ "SpringContextInitializerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_spring_context_initializer_u_test" ]
                 ] ]
               ] ],
               [ "service", null, [
                 [ "business", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business.html", [
-                  [ "OptionsServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1OptionsServiceUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1OptionsServiceUTest" ],
-                  [ "PlayerLanguageServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1PlayerLanguageServiceUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1PlayerLanguageServiceUTest" ],
-                  [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1PlayerServiceUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1PlayerServiceUTest" ]
+                  [ "OptionsServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_options_service_u_test" ],
+                  [ "PlayerLanguageServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_language_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_language_service_u_test" ],
+                  [ "PlayerServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1business_1_1_player_service_u_test" ]
                 ] ],
                 [ "ui", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui.html", [
-                  [ "AsyncFileProcessorServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AsyncFileProcessorServiceUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AsyncFileProcessorServiceUTest" ],
-                  [ "AudioServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1AudioServiceUTest" ],
-                  [ "FileChooserServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1FileChooserServiceUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1FileChooserServiceUTest" ]
+                  [ "AsyncFileProcessorServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_async_file_processor_service_u_test" ],
+                  [ "AudioServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_audio_service_u_test" ],
+                  [ "FileChooserServiceUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test" ]
                 ] ]
               ] ],
               [ "view", null, [
                 [ "main", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main.html", [
-                  [ "LevelInteractionHandlerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1LevelInteractionHandlerUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1LevelInteractionHandlerUTest" ]
+                  [ "LevelInteractionHandlerUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test" ]
                 ] ],
                 [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util.html", [
-                  [ "BindingConfiguratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1BindingConfiguratorUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1BindingConfiguratorUTest" ],
-                  [ "GenericListViewFactoryUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1GenericListViewFactoryUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1GenericListViewFactoryUTest" ]
+                  [ "BindingConfiguratorUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_binding_configurator_u_test" ],
+                  [ "GenericListViewFactoryUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1util_1_1_generic_list_view_factory_u_test" ]
                 ] ]
               ] ],
               [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel.html", [
                 [ "grid", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid.html", [
-                  [ "GrilleResolueUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1GrilleResolueUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1GrilleResolueUTest" ],
-                  [ "GrillesCreesUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1GrillesCreesUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1GrillesCreesUTest" ]
+                  [ "GrilleResolueUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grille_resolue_u_test" ],
+                  [ "GrillesCreesUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1grid_1_1_grilles_crees_u_test" ]
                 ] ],
-                [ "ActiveMenuOrSubmenuViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1ActiveMenuOrSubmenuViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1ActiveMenuOrSubmenuViewModelUTest" ],
-                [ "MenuHiddenViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuHiddenViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuHiddenViewModelUTest" ],
-                [ "MenuMiniViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuMiniViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuMiniViewModelUTest" ],
-                [ "MenuNewViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuNewViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuNewViewModelUTest" ],
-                [ "MenuPlayerViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest" ],
-                [ "MenuSaveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuSaveViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuSaveViewModelUTest" ],
-                [ "MenuSolveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuSolveViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuSolveViewModelUTest" ]
+                [ "ActiveMenuOrSubmenuViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_active_menu_or_submenu_view_model_u_test" ],
+                [ "MenuHiddenViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_hidden_view_model_u_test" ],
+                [ "MenuMiniViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_mini_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_mini_view_model_u_test" ],
+                [ "MenuNewViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_new_view_model_u_test" ],
+                [ "MenuPlayerViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_player_view_model_u_test" ],
+                [ "MenuSaveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_save_view_model_u_test" ],
+                [ "MenuSolveViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1_menu_solve_view_model_u_test" ]
               ] ]
             ] ]
           ] ],
           [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", [
             [ "component", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component.html", [
               [ "firework", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework.html", [
-                [ "Firework", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework" ],
-                [ "FireworkParticle", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1FireworkParticle.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1FireworkParticle" ]
+                [ "Firework", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework" ],
+                [ "FireworkParticle", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle" ]
               ] ],
               [ "list", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list.html", [
-                [ "GenericDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1GenericDtoListCell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1GenericDtoListCell" ]
+                [ "GenericDtoListCell", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1list_1_1_generic_dto_list_cell" ]
               ] ],
               [ "toaster", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster.html", [
-                [ "ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1ToasterButton.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1ToasterButton" ],
-                [ "ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1ToasterVBox.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1ToasterVBox" ]
+                [ "ToasterButton", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_button" ],
+                [ "ToasterVBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1toaster_1_1_toaster_v_box" ]
               ] ],
-              [ "MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1MyAlert.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1MyAlert" ],
-              [ "PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1PossibilityStarsHBox.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1PossibilityStarsHBox" ],
-              [ "SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1SpinnerGridPane.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1SpinnerGridPane" ]
+              [ "MyAlert", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_my_alert" ],
+              [ "PossibilityStarsHBox", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_possibility_stars_h_box" ],
+              [ "SpinnerGridPane", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1_spinner_grid_pane" ]
             ] ],
             [ "main", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1main.html", [
-              [ "LevelInteractionHandler", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler" ],
-              [ "MainView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1MainView.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1MainView" ]
+              [ "LevelInteractionHandler", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_level_interaction_handler" ],
+              [ "MainView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view" ]
             ] ],
             [ "util", "namespacefr_1_1softsf_1_1sudokufx_1_1view_1_1util.html", [
-              [ "BindingConfigurator", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1BindingConfigurator.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1BindingConfigurator" ],
-              [ "GenericListViewFactory", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory" ]
+              [ "BindingConfigurator", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_binding_configurator" ],
+              [ "GenericListViewFactory", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1_generic_list_view_factory" ]
             ] ],
-            [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1CrashScreenView.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1CrashScreenView" ],
-            [ "SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView" ]
+            [ "CrashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_crash_screen_view" ],
+            [ "SplashScreenView", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view.html", "classfr_1_1softsf_1_1sudokufx_1_1view_1_1_splash_screen_view" ]
           ] ],
           [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html", [
             [ "grid", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid.html", [
-              [ "GridCellViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel" ],
-              [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridViewModel" ]
+              [ "GridCellViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_cell_view_model" ],
+              [ "GridViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1_grid_view_model" ]
             ] ],
             [ "state", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state.html", [
-              [ "AbstractPlayerStateTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1AbstractPlayerStateTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1AbstractPlayerStateTest" ],
-              [ "PlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolder.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolder" ],
-              [ "PlayerStateHolderUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolderUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolderUTest" ]
+              [ "AbstractPlayerStateTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test" ],
+              [ "PlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder" ],
+              [ "PlayerStateHolderUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test" ]
             ] ],
-            [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1ActiveMenuOrSubmenuViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1ActiveMenuOrSubmenuViewModel" ],
-            [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1HelpViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1HelpViewModel" ],
-            [ "HelpViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1HelpViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1HelpViewModelUTest" ],
-            [ "MenuHiddenViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuHiddenViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuHiddenViewModel" ],
-            [ "MenuLevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel" ],
-            [ "MenuLevelViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModelUTest" ],
-            [ "MenuMaxiViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModel" ],
-            [ "MenuMaxiViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMaxiViewModelUTest" ],
-            [ "MenuMiniViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMiniViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMiniViewModel" ],
-            [ "MenuNewViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuNewViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuNewViewModel" ],
-            [ "MenuOptionsViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel" ],
-            [ "MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest" ],
-            [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel" ],
-            [ "MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel" ],
-            [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel" ]
+            [ "ActiveMenuOrSubmenuViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_active_menu_or_submenu_view_model" ],
+            [ "HelpViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model" ],
+            [ "HelpViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model_u_test" ],
+            [ "MenuHiddenViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_hidden_view_model" ],
+            [ "MenuLevelViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model" ],
+            [ "MenuLevelViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_level_view_model_u_test" ],
+            [ "MenuMaxiViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model" ],
+            [ "MenuMaxiViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_maxi_view_model_u_test" ],
+            [ "MenuMiniViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_mini_view_model" ],
+            [ "MenuNewViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_new_view_model" ],
+            [ "MenuOptionsViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model" ],
+            [ "MenuOptionsViewModelUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_options_view_model_u_test" ],
+            [ "MenuPlayerViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model" ],
+            [ "MenuSaveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model" ],
+            [ "MenuSolveViewModel", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model" ]
           ] ],
-          [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1Launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1Launcher" ],
-          [ "SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1SudoMain.html", "classfr_1_1softsf_1_1sudokufx_1_1SudoMain" ]
+          [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1_launcher" ],
+          [ "SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main" ]
         ] ]
       ] ]
     ] ]

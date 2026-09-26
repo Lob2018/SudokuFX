@@ -1,17 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,205,117,230"/>
-<area shape="rect" id="Node000001" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GameLevelRepository.html" title="Repository interface for GameLevel entities." alt="" coords="165,5,371,45"/>
-<area shape="poly" id="edge26_Node000000_Node000001" title=" " alt="" coords="70,191,105,123,131,87,164,55,184,43,186,48,167,59,135,90,109,126,75,193"/>
-<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GameRepository.html" title="Repository interface for Game entities." alt="" coords="165,69,371,109"/>
-<area shape="poly" id="edge27_Node000000_Node000002" title=" " alt="" coords="80,192,117,155,164,119,189,107,191,112,167,124,120,159,84,196"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GridRepository.html" title="Repository interface for Grid entities." alt="" coords="165,133,371,173"/>
-<area shape="poly" id="edge28_Node000000_Node000003" title=" " alt="" coords="116,198,202,171,203,176,117,203"/>
-<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1MenuRepository.html" title="Repository interface for Menu entities." alt="" coords="165,197,371,237"/>
-<area shape="poly" id="edge29_Node000000_Node000004" title=" " alt="" coords="131,215,165,215,165,220,131,220"/>
-<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1OptionsRepository.html" title="Repository interface for Options entities." alt="" coords="165,261,371,301"/>
-<area shape="poly" id="edge30_Node000000_Node000005" title=" " alt="" coords="117,232,203,259,202,264,116,237"/>
-<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1PlayerLanguageRepository.html" title="Repository interface for PlayerLanguage entities." alt="" coords="165,325,371,365"/>
-<area shape="poly" id="edge31_Node000000_Node000006" title=" " alt="" coords="84,239,120,276,167,311,191,323,189,328,164,316,117,280,80,243"/>
-<area shape="rect" id="Node000007" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1PlayerRepository.html" title="Repository interface for Player entities." alt="" coords="165,389,371,429"/>
-<area shape="poly" id="edge32_Node000000_Node000007" title=" " alt="" coords="75,241,109,308,135,344,167,375,186,387,184,392,164,379,131,348,105,311,70,244"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,80,134,107"/>
+<area shape="rect" id="Node000001" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_database_integrity_exception.html" title="Thrown to indicate that the database state is inconsistent with the application&#39;s requirements,..." alt="" coords="182,5,423,48"/>
+<area shape="poly" id="edge34_Node000000_Node000001" title=" " alt="" coords="130,72,181,57,221,46,223,51,182,63,132,78"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_folder_creation_exception.html" title="Runtime exception thrown when a folder cannot be created." alt="" coords="182,72,423,115"/>
+<area shape="poly" id="edge35_Node000000_Node000002" title=" " alt="" coords="149,91,181,91,181,96,149,96"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1_logback_configuration_exception.html" title="Runtime exception thrown when Logback configuration fails." alt="" coords="182,139,423,181"/>
+<area shape="poly" id="edge36_Node000000_Node000003" title=" " alt="" coords="132,109,182,124,223,136,221,141,181,129,130,114"/>
 </map>

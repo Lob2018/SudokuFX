@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel Pages: 1 -->
 <!--zoomable 2805 -->
 
-<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onload="init(evt)">
+<svg id="main" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
 
 <style type="text/css"><![CDATA[
 .node, .edge {opacity: 0.7;}
@@ -46,13 +46,8 @@
     <use xlink:href="#rim2" fill="#404040"><set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/></use>
   </g>
 </defs>
-<script type="application/ecmascript">
-var viewWidth = 2553;
-var viewHeight = 2805;
-var sectionId = 'dynsection-0';
-</script>
 <script type="application/ecmascript" xlink:href="svg.min.js"/>
-<svg id="graph" class="graph">
+<svg id="graph" class="graph" data-view-width="2553" data-view-height="2805" data-section-id="dynsection-0">
 <g id="viewport">
 <title>fr.softsf.sudokufx.viewmodel.MenuOptionsViewModel</title>
 <!-- Node1 -->
@@ -144,24 +139,24 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="465.88" y="-570.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyBooleanProperty</text>
 <text text-anchor="start" x="465.88" y="-558.5" font-family="Helvetica,sans-Serif" font-size="10.00"> gridOpacityProperty()</text>
 <text text-anchor="start" x="455.88" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="465.88" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(GridPane</text>
-<text text-anchor="start" x="465.88" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00"> sudokuFX)</text>
+<text text-anchor="start" x="465.88" y="-542.5" font-family="Helvetica,sans-Serif" font-size="10.00">void handleColorReapplication</text>
+<text text-anchor="start" x="465.88" y="-530.5" font-family="Helvetica,sans-Serif" font-size="10.00">WhenImageActive(Color color)</text>
 <text text-anchor="start" x="455.88" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="465.88" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsAccessible</text>
-<text text-anchor="start" x="465.88" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
+<text text-anchor="start" x="465.88" y="-514.5" font-family="Helvetica,sans-Serif" font-size="10.00">void init(GridPane</text>
+<text text-anchor="start" x="465.88" y="-502.5" font-family="Helvetica,sans-Serif" font-size="10.00"> sudokuFX)</text>
 <text text-anchor="start" x="455.88" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="465.88" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
-<text text-anchor="start" x="465.88" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongAccessibleTextProperty()</text>
+<text text-anchor="start" x="465.88" y="-486.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsAccessible</text>
+<text text-anchor="start" x="465.88" y="-474.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
 <text text-anchor="start" x="455.88" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="465.88" y="-458.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
-<text text-anchor="start" x="465.88" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongRoleDescriptionProperty()</text>
+<text text-anchor="start" x="465.88" y="-446.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongAccessibleTextProperty()</text>
 <text text-anchor="start" x="455.88" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
 <text text-anchor="start" x="465.88" y="-430.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
-<text text-anchor="start" x="465.88" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongTooltipProperty()</text>
+<text text-anchor="start" x="465.88" y="-418.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongRoleDescriptionProperty()</text>
 <text text-anchor="start" x="455.88" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="465.88" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsColor</text>
-<text text-anchor="start" x="465.88" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
-<text text-anchor="start" x="465.88" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 37 more...</text>
+<text text-anchor="start" x="465.88" y="-402.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding optionsClear</text>
+<text text-anchor="start" x="465.88" y="-390.5" font-family="Helvetica,sans-Serif" font-size="10.00">SongTooltipProperty()</text>
+<text text-anchor="start" x="465.88" y="-374.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 38 more...</text>
 <text text-anchor="start" x="457.38" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
 <text text-anchor="start" x="465.88" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00">void applyOptionsToUI</text>
 <text text-anchor="start" x="465.88" y="-346.5" font-family="Helvetica,sans-Serif" font-size="10.00">(OptionsDto options,</text>
@@ -1239,13 +1234,13 @@ var sectionId = 'dynsection-0';
 
 <g id="navigator" transform="translate(0 0)" fill="#404254">
   <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-  <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-   <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" onmousedown="handlePan(0,-1)"/>
-  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" onmousedown="handlePan(1,0)"/>
-  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" onmousedown="handlePan(0,1)"/>
-  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" onmousedown="handlePan(-1,0)"/>
+  <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" data-zoom="in"/>
+  <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" data-zoom="out"/>
+  <use id="reset" xlink:href="#resetDef" x="30" y="36" data-reset="true"/>
+  <use id="arrowup" xlink:href="#arrowUp" x="0" y="0" data-pan-x="0" data-pan-y="-1"/>
+  <use id="arrowright" xlink:href="#arrowRight" x="0" y="0" data-pan-x="1" data-pan-y="0"/>
+  <use id="arrowdown" xlink:href="#arrowDown" x="0" y="0" data-pan-x="0" data-pan-y="1"/>
+  <use id="arrowleft" xlink:href="#arrowLeft" x="0" y="0" data-pan-x="-1" data-pan-y="0"/>
 </g>
 <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
  <g id="arrow_out" transform="scale(0.3 0.3)">
@@ -1265,10 +1260,4 @@ var sectionId = 'dynsection-0';
 [data-mouse-over-selected='true']  { opacity: 1.0; }
 ]]>
 </style>
-<script type="application/ecmascript"><![CDATA[
-document.addEventListener('DOMContentLoaded', (event) => {
-  highlightEdges();
-  highlightAdjacentNodes();
-});
-]]></script>
 </svg>
