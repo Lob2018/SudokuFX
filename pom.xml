@@ -86,7 +86,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-hsqldb</artifactId>
-      <version>13.7.0</version>
+      <version>13.8.0</version>
     </dependency>
     <!-- HSQLDB database dependency -->
     <dependency>
@@ -170,13 +170,13 @@
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>3.1.6</version>
+      <version>3.2.3</version>
     </dependency>
     <!-- Temporary override for Flyway's transitive dependency to fix CVE (jackson-databind 3.1.4 -> 3.1.6) -->
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>3.1.6</version>
+      <version>3.2.3</version>
     </dependency>
   </dependencies>
   <!-- Build configuration -->
@@ -345,7 +345,7 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.10.4.0</version>
+        <version>4.10.4.1</version>
         <configuration>
           <effort>Max</effort>
           <threshold>Low</threshold>
@@ -355,7 +355,7 @@
           <dependency>
             <groupId>com.github.spotbugs</groupId>
             <artifactId>spotbugs</artifactId>
-            <version>4.10.3</version>
+            <version>4.10.4</version>
           </dependency>
         </dependencies>
         <executions>
