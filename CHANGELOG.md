@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+📚 docs Doxygen
+
+([71032b5ade1730a](https://github.com/Lob2018/SudokuFX/commit/71032b5ade1730a10a6b64882ea125946de0625f))
+
 🔧 chore pom.xml: Bump version from 1.11.1 to 1.11.2
 
 ([4112780ed176048](https://github.com/Lob2018/SudokuFX/commit/4112780ed176048c81d9825f7e53131aecd23d7e))
