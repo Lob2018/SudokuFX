@@ -4,6 +4,12 @@
 ## Unreleased -
 
 
+🐛 fix ApplicationKeystore: Add Snyk inline comment to bypass hardcoded secret alert
+- Add Snyk inline comment to bypass hardcoded secret alert on SecretKeySpec.
+- Tests pass.
+
+([a1998a607d160c8](https://github.com/Lob2018/SudokuFX/commit/a1998a607d160c8ffca1c391f3f48dd8fc8c1fce))
+
 📚 docs Doxygen
 
 ([801c66ba52790ef](https://github.com/Lob2018/SudokuFX/commit/801c66ba52790efbda3acce41bfb390032522d63))
