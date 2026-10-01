@@ -4,6 +4,12 @@
 ## Unreleased -
 
 
+🔧 chore flyway-database-hsqldb, spotbugs-maven-plugin, spotbugs, logback-classic, logback-core, jackson-core, jackson-databind: Bump the maven-dependencies
+- Fix transitive dependencies CVEs and align logback core and classic to 1.6.5.
+- Tests pass.
+
+([390d18cae221494](https://github.com/Lob2018/SudokuFX/commit/390d18cae2214947d6a7ff125523ace9fef9d367))
+
 🔧 chore setup-java, codeql-action, osv-scanner-action: Bumps the actions-dependencies
 
 ([b2066d457b99c17](https://github.com/Lob2018/SudokuFX/commit/b2066d457b99c17c5e35c970dbf4867f5a90295a))
