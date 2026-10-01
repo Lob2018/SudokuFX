@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+📚 docs Doxygen
+
+([f0f293d90d40d8a](https://github.com/Lob2018/SudokuFX/commit/f0f293d90d40d8a1b6c66bed8fb7b121cdef0273))
+
 ✨ feat HelpViewModel, Coordinator, Urls, CoordinatorUTest, HelpViewModelUTest: Add changelog and update help dialog buttons
 - Urls : Add CHANGELOG_URL constant.
 - Coordinator : Implement openChangelogUrl method.
