@@ -4,6 +4,12 @@
 ## Unreleased -
 
 
+✨ feat src/*, LICENSE.txt, pom.xml, README.md: Update license from GPLv3 to AGPLv3
+- Update license headers and project metadata to AGPLv3.
+- Tests pass.
+
+([c7f3144a72dfcb5](https://github.com/Lob2018/SudokuFX/commit/c7f3144a72dfcb5040d365889184f833b4377920))
+
 📚 docs pom.xml: Add SCM configuration
 - Add connection, developerConnection, url, and tag elements to the pom.xml file.
 - Tests pass.

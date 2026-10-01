@@ -1,9 +1,5 @@
 var NAVTREEINDEX19 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae48034c1b5565cc3afd8b338ee9f76ff":[2,0,0,0,0,9,16,4],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae75fe14e7136bfb46e63b2f9361f720f":[1,0,0,0,0,10,16,21],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae75fe14e7136bfb46e63b2f9361f720f":[2,0,0,0,0,9,16,21],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae81dec4b6b155842760cbc571724ef38":[1,0,0,0,0,10,16,23],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae81dec4b6b155842760cbc571724ef38":[2,0,0,0,0,9,16,23],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#af00eec56891007110fb789e20c80311c":[1,0,0,0,0,10,16,14],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#af00eec56891007110fb789e20c80311c":[2,0,0,0,0,9,16,14],
@@ -249,5 +245,9 @@ var NAVTREEINDEX19 =
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html#afc81fc802e0c186f48b27411fcf7a494":[2,0,0,0,0,9,1,1,6],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html":[1,0,0,0,0,10,1,2],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html":[2,0,0,0,0,9,1,2],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a513255aaed939131c5b9f1462413287a":[1,0,0,0,0,10,1,2,4]
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a513255aaed939131c5b9f1462413287a":[1,0,0,0,0,10,1,2,4],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a513255aaed939131c5b9f1462413287a":[2,0,0,0,0,9,1,2,4],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a66526f358c3cec7761cc9ba103270051":[1,0,0,0,0,10,1,2,9],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a66526f358c3cec7761cc9ba103270051":[2,0,0,0,0,9,1,2,9],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a9741b18a512d1b12d3d4088a86a16474":[1,0,0,0,0,10,1,2,6]
 };

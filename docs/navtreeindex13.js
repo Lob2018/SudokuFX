@@ -1,9 +1,5 @@
 var NAVTREEINDEX13 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#ae902222347b7179fc0e78a3b23a5cf5e":[2,0,0,0,0,8,0,0,0,12],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#af271afb69bfb6dc543d571879752424a":[1,0,0,0,0,9,0,0,0,11],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#af271afb69bfb6dc543d571879752424a":[2,0,0,0,0,8,0,0,0,11],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#af70d4e9b6fb1079a082c743e99ef03e0":[1,0,0,0,0,9,0,0,0,19],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework.html#af70d4e9b6fb1079a082c743e99ef03e0":[2,0,0,0,0,8,0,0,0,19],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html":[1,0,0,0,0,9,0,0,1],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1_firework_particle.html":[2,0,0,0,0,8,0,0,1],
@@ -249,5 +245,9 @@ var NAVTREEINDEX13 =
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a46133cf602827b5ebe74e531a228b546":[2,0,0,0,0,8,1,1,71],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a4864b3fd77f193c5e09c2d8dfb71c2f4":[1,0,0,0,0,9,1,1,84],
 "classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a4864b3fd77f193c5e09c2d8dfb71c2f4":[2,0,0,0,0,8,1,1,84],
-"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a4a50b625ed0940c43384ad2d7b5ca756":[1,0,0,0,0,9,1,1,73]
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a4a50b625ed0940c43384ad2d7b5ca756":[1,0,0,0,0,9,1,1,73],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a4a50b625ed0940c43384ad2d7b5ca756":[2,0,0,0,0,8,1,1,73],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a4b0a7edc6a387141511216519cf10a7d":[1,0,0,0,0,9,1,1,90],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a4b0a7edc6a387141511216519cf10a7d":[2,0,0,0,0,8,1,1,90],
+"classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1_main_view.html#a4f50d10db22c8a703a46841e4de2e879":[1,0,0,0,0,9,1,1,136]
 };

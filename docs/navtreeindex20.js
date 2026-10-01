@@ -1,9 +1,5 @@
 var NAVTREEINDEX20 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a513255aaed939131c5b9f1462413287a":[2,0,0,0,0,9,1,2,4],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a66526f358c3cec7761cc9ba103270051":[1,0,0,0,0,10,1,2,9],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a66526f358c3cec7761cc9ba103270051":[2,0,0,0,0,9,1,2,9],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a9741b18a512d1b12d3d4088a86a16474":[1,0,0,0,0,10,1,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#a9741b18a512d1b12d3d4088a86a16474":[2,0,0,0,0,9,1,2,6],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#aab7a1232adfdfecd90185e3a1c0d3da9":[1,0,0,0,0,10,1,2,2],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html#aab7a1232adfdfecd90185e3a1c0d3da9":[2,0,0,0,0,9,1,2,2],
@@ -249,5 +245,9 @@ var NAVTREEINDEX20 =
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#a11efd9a142bde252d18bd80e8d6da6f7":[2,0,0,0,0,1,1,5,4],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#a4f95f0a1495bfc7ddc6b496fa0911fd3":[1,0,0,0,0,1,1,5,1],
 "enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#a4f95f0a1495bfc7ddc6b496fa0911fd3":[2,0,0,0,0,1,1,5,1],
-"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ac3046e295a3f67e0e04259fd2d7bf66f":[1,0,0,0,0,1,1,5,3]
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ac3046e295a3f67e0e04259fd2d7bf66f":[1,0,0,0,0,1,1,5,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ac3046e295a3f67e0e04259fd2d7bf66f":[2,0,0,0,0,1,1,5,3],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ad676af3ab8af46c96474134d7079fc91":[1,0,0,0,0,1,1,5,2],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#ad676af3ab8af46c96474134d7079fc91":[2,0,0,0,0,1,1,5,2],
+"enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1_log_back_txt.html#adaca3e1ad4a02e5a8b3784c2c51ad9f7":[1,0,0,0,0,1,1,5,5]
 };

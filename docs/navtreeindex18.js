@@ -1,9 +1,5 @@
 var NAVTREEINDEX18 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa34dcb13794f83f9191ad32480357f6a":[2,0,0,0,0,9,14,70],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa83825926d155ed03bb69f4eeb9efa23":[1,0,0,0,0,10,14,41],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa83825926d155ed03bb69f4eeb9efa23":[2,0,0,0,0,9,14,41],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa87c01f9089e55012ea44f20b6c5ab20":[1,0,0,0,0,10,14,18],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa87c01f9089e55012ea44f20b6c5ab20":[2,0,0,0,0,9,14,18],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa9655ada0ba573a8ec29688f34b8724c":[1,0,0,0,0,10,14,0],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html#aa9655ada0ba573a8ec29688f34b8724c":[2,0,0,0,0,9,14,0],
@@ -249,5 +245,9 @@ var NAVTREEINDEX18 =
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ac55bbce1266f95be0283786289266b34":[2,0,0,0,0,9,16,13],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ad82d9d7ec7344b042017f1fc7f316fd9":[1,0,0,0,0,10,16,37],
 "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ad82d9d7ec7344b042017f1fc7f316fd9":[2,0,0,0,0,9,16,37],
-"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae48034c1b5565cc3afd8b338ee9f76ff":[1,0,0,0,0,10,16,4]
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae48034c1b5565cc3afd8b338ee9f76ff":[1,0,0,0,0,10,16,4],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae48034c1b5565cc3afd8b338ee9f76ff":[2,0,0,0,0,9,16,4],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae75fe14e7136bfb46e63b2f9361f720f":[1,0,0,0,0,10,16,21],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae75fe14e7136bfb46e63b2f9361f720f":[2,0,0,0,0,9,16,21],
+"classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_solve_view_model.html#ae81dec4b6b155842760cbc571724ef38":[1,0,0,0,0,10,16,23]
 };

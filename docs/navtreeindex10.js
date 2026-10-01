@@ -1,9 +1,5 @@
 var NAVTREEINDEX10 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a2e3626009cb8c41a7ee1b4cde39638da":[2,0,0,0,0,7,2,0,2,7,3],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a3e0f6e03d74af24120fb3a53d54823aa":[1,0,0,0,0,8,2,0,2,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a3e0f6e03d74af24120fb3a53d54823aa":[2,0,0,0,0,7,2,0,2,7,2],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a737c36c8ffd466d0876154f0cfc1c677":[1,0,0,0,0,8,2,0,2,7,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#a737c36c8ffd466d0876154f0cfc1c677":[2,0,0,0,0,7,2,0,2,7,6],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#ab6d8278f56c54cce9e3254bd62a56f4e":[1,0,0,0,0,8,2,0,2,7,5],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1common_1_1util_1_1_my_regex_u_test.html#ab6d8278f56c54cce9e3254bd62a56f4e":[2,0,0,0,0,7,2,0,2,7,5],
@@ -249,5 +245,9 @@ var NAVTREEINDEX10 =
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#a86a208f0cb74e8435c41ff662d64bdba":[2,0,0,0,0,7,2,1,1,2,2],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#a8b473897da037fa058ac170a07fc8252":[1,0,0,0,0,8,2,1,1,2,1],
 "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#a8b473897da037fa058ac170a07fc8252":[2,0,0,0,0,7,2,1,1,2,1],
-"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#ae842bb7253593afc90c4574b70ce2abd":[1,0,0,0,0,8,2,1,1,2,3]
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#ae842bb7253593afc90c4574b70ce2abd":[1,0,0,0,0,8,2,1,1,2,3],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1service_1_1ui_1_1_file_chooser_service_u_test.html#ae842bb7253593afc90c4574b70ce2abd":[2,0,0,0,0,7,2,1,1,2,3],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html":[1,0,0,0,0,8,2,2,0,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html":[2,0,0,0,0,7,2,2,0,0],
+"classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1view_1_1main_1_1_level_interaction_handler_u_test.html#a3cc8fb02bcefaf1e75066d46930bec0a":[1,0,0,0,0,8,2,2,0,0,5]
 };

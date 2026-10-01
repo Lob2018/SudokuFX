@@ -1,9 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html":[2,0,0,0,0,2,0,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74":[1,0,0,0,0,2,0,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a376871112b0401da26f1a5a3936b1e74":[2,0,0,0,0,2,0,0,1],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a7627a508aed1a8ca6a8d81604045fbe0":[1,0,0,0,0,2,0,0,3],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a7627a508aed1a8ca6a8d81604045fbe0":[2,0,0,0,0,2,0,0,3],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a95e551a74c1292b0e82a0b3ce4905e50":[1,0,0,0,0,2,0,0,2],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1database_1_1_abstract_data_source_config.html#a95e551a74c1292b0e82a0b3ce4905e50":[2,0,0,0,0,2,0,0,2],
@@ -249,5 +245,9 @@ var NAVTREEINDEX3 =
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#a550e905c4a17de9915f1b009b765da8c":[2,0,0,0,0,2,1,3,2],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#a7b553bb1eb98f23020fbaa4db7b28f67":[1,0,0,0,0,2,1,3,0],
 "classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#a7b553bb1eb98f23020fbaa4db7b28f67":[2,0,0,0,0,2,1,3,0],
-"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#aaaa40f72e747e27dd68e3eece2fa60e5":[1,0,0,0,0,2,1,3,4]
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#aaaa40f72e747e27dd68e3eece2fa60e5":[1,0,0,0,0,2,1,3,4],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#aaaa40f72e747e27dd68e3eece2fa60e5":[2,0,0,0,0,2,1,3,4],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#aac42a6e16f63807b08e5ecb581b0b0c5":[1,0,0,0,0,2,1,3,3],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#aac42a6e16f63807b08e5ecb581b0b0c5":[2,0,0,0,0,2,1,3,3],
+"classfr_1_1softsf_1_1sudokufx_1_1config_1_1os_1_1_os_folders_config_u_test.html#aadb4f6e176a6a810323f86e2de075bba":[1,0,0,0,0,2,1,3,1]
 };
