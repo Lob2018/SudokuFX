@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+🔧 chore requirements.txt: Bump the python-dependencies
+
+([7fefce5d36bba70](https://github.com/Lob2018/SudokuFX/commit/7fefce5d36bba7024f26d591ac53faaa874b07d6))
+
 🔧 chore flyway-database-hsqldb, spotbugs-maven-plugin, spotbugs, logback-classic, logback-core, jackson-core, jackson-databind: Bump the maven-dependencies
 - Fix transitive dependencies CVEs and align logback core and classic to 1.6.5.
 - Tests pass.
