@@ -40,7 +40,7 @@
     <java.version>25</java.version>
     <javafx.version>27</javafx.version>
     <jvm.args>-Dfile.encoding=UTF-8 -Dprism.order=d3d,es2,sw -Dprism.vsync=true --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</jvm.args>
-    <license.name>GPLv3.0</license.name>
+    <license.name>AGPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
     <maven.compiler.release>25</maven.compiler.release>
     <maven.version>3.9.9</maven.version>
@@ -306,7 +306,7 @@
               <content><![CDATA[
 /*
  * SudokuFX - Copyright © 2024-present SOFT64.FR Lob2018
- * Licensed under the GNU General Public License v3.0 (GPL-3.0).
+ * Licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
  * See the full license at: https://github.com/Lob2018/SudokuFX/blob/main/LICENSE.txt
  */
 ]]></content>

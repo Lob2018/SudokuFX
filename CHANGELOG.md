@@ -4,6 +4,15 @@
 ## Unreleased -
 
 
+📚 docs pom.xml: Add SCM configuration
+- Add connection, developerConnection, url, and tag elements to the pom.xml file.
+- Tests pass.
+
+([649beb7e93dfdef](https://github.com/Lob2018/SudokuFX/commit/649beb7e93dfdef1297bc0bfaac07b901b792a88))
+
+## v1.11.2 - 2026-09-26
+
+
 📚 docs Doxygen
 
 ([71032b5ade1730a](https://github.com/Lob2018/SudokuFX/commit/71032b5ade1730a10a6b64882ea125946de0625f))

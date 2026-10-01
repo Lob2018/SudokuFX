@@ -1,6 +1,6 @@
 /*
  * SudokuFX - Copyright © 2024-present SOFT64.FR Lob2018
- * Licensed under the GNU General Public License v3.0 (GPL-3.0).
+ * Licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
  * See the full license at: https://github.com/Lob2018/SudokuFX/blob/main/LICENSE.txt
  */
 package fr.softsf.sudokufx.config;
@@ -15,16 +15,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class JVMApplicationPropertiesUTest {
 
-    private static final String VERSION_REGEX =
-            "^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)$";
-    private static final String ALPHANUMERIC_REGEX = "^[a-zA-Z0-9\\s.]+$";
-
     @Test
     void givenValidNameVersionOrganizationLicense_whenValidateByRegex_thenValidationSucceeds() {
         String validName = "MyApp";
         String validVersion = "0.0.0.1";
         String validOrganization = "Soft64.fr";
-        String validLicense = "GPLv3.0";
+        String validLicense = "AGPLv3.0";
         assertTrue(MyRegex.INSTANCE.isValidAlphanumeric(validName));
         assertTrue(MyRegex.INSTANCE.isValidAlphanumeric(validOrganization));
         assertTrue(MyRegex.INSTANCE.isValidAlphanumeric(validLicense));
