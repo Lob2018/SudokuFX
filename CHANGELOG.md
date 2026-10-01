@@ -4,6 +4,10 @@
 ## Unreleased -
 
 
+📚 docs Doxygen
+
+([801c66ba52790ef](https://github.com/Lob2018/SudokuFX/commit/801c66ba52790efbda3acce41bfb390032522d63))
+
 🔧 chore requirements.txt: Bump the python-dependencies
 
 ([7fefce5d36bba70](https://github.com/Lob2018/SudokuFX/commit/7fefce5d36bba7024f26d591ac53faaa874b07d6))

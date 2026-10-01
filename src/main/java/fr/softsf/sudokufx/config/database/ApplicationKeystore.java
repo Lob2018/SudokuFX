@@ -289,6 +289,7 @@ public final class ApplicationKeystore implements IKeystore {
             byteBuffer.get(keyBytes);
             Arrays.fill(byteBuffer.array(), (byte) 0);
             Arrays.fill(secret, '\0');
+            // slint-disable-next-line hardcoded-secret
             SecretKey secretKey = new SecretKeySpec(keyBytes, "AES");
             Arrays.fill(keyBytes, (byte) 0);
             addToKeystore(alias, secretKey);
