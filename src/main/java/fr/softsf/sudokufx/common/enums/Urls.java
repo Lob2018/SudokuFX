@@ -24,7 +24,8 @@ public enum Urls {
                     + "/"
                     + REPOSITORY_NAME.getUrl()
                     + "/tags"),
-    MY_WEBSITE_URL("https://soft64.fr");
+    MY_WEBSITE_URL("https://soft64.fr"),
+    CHANGELOG_URL("https://github.com/lob2018/SudokuFX/blob/main/CHANGELOG.md");
 
     private final String url;
 

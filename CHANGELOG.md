@@ -4,6 +4,12 @@
 ## Unreleased -
 
 
+🔧 chore pom.xml: Bump project version to 1.11.3
+- pom.xml : Bump project version from 1.11.2 to 1.11.3.
+- Tests pass.
+
+([db8ef5b112e2367](https://github.com/Lob2018/SudokuFX/commit/db8ef5b112e23679b1309aaf91dc843712d3a115))
+
 🐛 fix ApplicationKeystore: Add Snyk inline comment to bypass hardcoded secret alert
 - Add Snyk inline comment to bypass hardcoded secret alert on SecretKeySpec.
 - Tests pass.

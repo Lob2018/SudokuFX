@@ -32,6 +32,7 @@ import fr.softsf.sudokufx.view.component.toaster.ToasterVBox;
 import fr.softsf.sudokufx.viewmodel.state.PlayerStateHolder;
 import jakarta.annotation.PostConstruct;
 
+import static fr.softsf.sudokufx.common.enums.Urls.CHANGELOG_URL;
 import static fr.softsf.sudokufx.common.enums.Urls.GITHUB_REPOSITORY_RELEASES_URL;
 import static fr.softsf.sudokufx.common.enums.Urls.MY_WEBSITE_URL;
 
@@ -279,6 +280,17 @@ public class Coordinator {
         } else {
             LOG.warn(
                     "▓▓ openMyWebsiteUrl hostServices not set yet: cannot open my website"
+                            + " URL");
+        }
+    }
+
+    /** Opens the changelog's page in the user's default web browser. */
+    public void openChangelogUrl() {
+        if (hostServices != null) {
+            hostServices.showDocument(CHANGELOG_URL.getUrl());
+        } else {
+            LOG.warn(
+                    "▓▓ openChangelogUrl hostServices not set yet: cannot open my website"
                             + " URL");
         }
     }

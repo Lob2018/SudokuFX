@@ -40,6 +40,8 @@ public class HelpViewModel {
     private static final Logger LOG = LoggerFactory.getLogger(HelpViewModel.class);
 
     private static final double ALERT_SIZE_RATIO = 0.6;
+    public static final String INFORMATION_ALERT_MUST_NOT_BE_NULL =
+            "informationAlert must not be null";
     private final IOsFolder iOsFolder;
     private final Coordinator coordinator;
 
@@ -83,6 +85,7 @@ public class HelpViewModel {
                         String.valueOf(LocalDateTime.now(ZoneId.systemDefault()).getYear()),
                         JVMApplicationProperties.INSTANCE.getAppLicense()));
         addLogFileButton(informationAlert);
+        addChangelogButton(informationAlert);
         addWebsiteButton(informationAlert);
         displayAlert(informationAlert);
     }
@@ -96,7 +99,7 @@ public class HelpViewModel {
      * @throws NullPointerException if informationAlert is null
      */
     private void addWebsiteButton(MyAlert informationAlert) {
-        Objects.requireNonNull(informationAlert, "informationAlert must not be null");
+        Objects.requireNonNull(informationAlert, INFORMATION_ALERT_MUST_NOT_BE_NULL);
         ButtonType websiteButtonType =
                 new ButtonType(
                         I18n.INSTANCE.getValue("menu.button.help.dialog.information.website"),
@@ -105,6 +108,27 @@ public class HelpViewModel {
         Button websiteButton =
                 (Button) informationAlert.getDialogPane().lookupButton(websiteButtonType);
         websiteButton.setOnAction(e -> coordinator.openMyWebsiteUrl());
+    }
+
+    /**
+     * Adds a "Changelog" button to the given alert.
+     *
+     * <p>The button is aligned to the left and opens the changelog page when clicked.
+     *
+     * @param informationAlert the alert to which the changelog button will be added; must not be
+     *     null
+     * @throws NullPointerException if informationAlert is null
+     */
+    private void addChangelogButton(MyAlert informationAlert) {
+        Objects.requireNonNull(informationAlert, INFORMATION_ALERT_MUST_NOT_BE_NULL);
+        ButtonType websiteButtonType =
+                new ButtonType(
+                        I18n.INSTANCE.getValue("menu.button.help.dialog.information.changelog"),
+                        ButtonBar.ButtonData.LEFT);
+        informationAlert.getButtonTypes().add(websiteButtonType);
+        Button websiteButton =
+                (Button) informationAlert.getDialogPane().lookupButton(websiteButtonType);
+        websiteButton.setOnAction(e -> coordinator.openChangelogUrl());
     }
 
     /**
@@ -118,7 +142,7 @@ public class HelpViewModel {
      * @throws NullPointerException if {@code informationAlert} is null
      */
     private void addLogFileButton(MyAlert informationAlert) {
-        Objects.requireNonNull(informationAlert, "informationAlert must not be null");
+        Objects.requireNonNull(informationAlert, INFORMATION_ALERT_MUST_NOT_BE_NULL);
         File file;
         try {
             file =

@@ -300,4 +300,18 @@ class CoordinatorUTest {
         String logMessage = logWatcher.list.getFirst().getFormattedMessage();
         assertTrue(logMessage.contains("▓▓ openLocalFile hostServices not set yet"));
     }
+
+    @Test
+    void givenHostServicesSet_whenOpenChangelogUrl_thenShowDocumentIsCalled() {
+        coordinator.setHostServices(hostServices);
+        coordinator.openChangelogUrl();
+        verify(hostServices).showDocument(anyString());
+    }
+
+    @Test
+    void givenNoHostServicesSet_whenOpenChangelogUrl_thenLogsWarning() {
+        coordinator.openChangelogUrl();
+        String logMessage = logWatcher.list.getFirst().getFormattedMessage();
+        assertTrue(logMessage.contains("▓▓ openChangelogUrl hostServices not set yet"));
+    }
 }

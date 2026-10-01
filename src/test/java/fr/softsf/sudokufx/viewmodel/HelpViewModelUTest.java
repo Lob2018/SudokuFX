@@ -126,6 +126,34 @@ class HelpViewModelUTest {
         verify(mockCoordinator).openLocalFile(any(File.class));
     }
 
+    @Test
+    void whenShowHelp_thenAlertContainsChangelogButton_andOpensChangelogUrl(FxRobot robot) {
+        HelpViewModel spyViewModel = spy(new HelpViewModel(iOsFolder, mockCoordinator));
+        doAnswer(
+                        invocation -> {
+                            Platform.runLater(invocation.getArgument(0, MyAlert.class)::show);
+                            return null;
+                        })
+                .when(spyViewModel)
+                .displayAlert(any());
+        robot.interact(spyViewModel::showHelp);
+        ArgumentCaptor<MyAlert> captor = ArgumentCaptor.forClass(MyAlert.class);
+        verify(spyViewModel).displayAlert(captor.capture());
+        MyAlert capturedAlert = captor.getValue();
+        String changelogText =
+                I18n.INSTANCE.getValue("menu.button.help.dialog.information.changelog");
+        ButtonType changelogButtonType =
+                capturedAlert.getButtonTypes().stream()
+                        .filter(bt -> changelogText.equals(bt.getText()))
+                        .findFirst()
+                        .orElse(null);
+        assertNotNull(changelogButtonType, "Changelog button should exist");
+        Button changelogButton =
+                (Button) capturedAlert.getDialogPane().lookupButton(changelogButtonType);
+        changelogButton.getOnAction().handle(null);
+        verify(mockCoordinator).openChangelogUrl();
+    }
+
     @AfterEach
     void cleanup() throws Exception {
         FxToolkit.cleanupStages();
