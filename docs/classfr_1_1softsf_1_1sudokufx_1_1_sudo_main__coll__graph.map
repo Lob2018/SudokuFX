@@ -1,13 +1,13 @@
 <map id="fr.softsf.sudokufx.SudoMain" name="fr.softsf.sudokufx.SudoMain">
-<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="1229,2596,1451,3017"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="1126,2111,1200,2180"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1167,2195,1180,2343,1194,2434,1215,2523,1240,2595,1235,2597,1210,2525,1189,2435,1175,2344,1162,2195"/>
-<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="1224,2081,1456,2209"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1343,2209,1343,2579,1338,2579,1338,2209"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application (M..." alt="" coords="1480,1767,1721,2524"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1493,2525,1473,2573,1461,2601,1456,2599,1469,2571,1488,2523"/>
+<area shape="rect" id="Node000001" title="Main JavaFX application class launching the UI and initializing the Spring context." alt="" coords="1229,2617,1451,3039"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="1126,2121,1200,2191"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1167,2205,1180,2358,1194,2452,1215,2545,1240,2617,1234,2619,1210,2546,1188,2453,1174,2359,1162,2206"/>
+<area shape="rect" id="Node000003" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_splash_screen_view.html" title="Provides basic control over the splash screen visibility and access to its scene." alt="" coords="1224,2092,1456,2220"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1343,2220,1343,2601,1338,2601,1338,2220"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application (M..." alt="" coords="1480,1767,1721,2545"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1493,2546,1473,2594,1461,2622,1456,2620,1469,2592,1488,2544"/>
 <area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1_player_service.html" title="Service for managing Player entities." alt="" coords="1031,652,1413,1196"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1155,1196,1142,1322,1142,1387,1147,1453,1158,1517,1175,1579,1201,1638,1235,1693,1259,1717,1285,1729,1312,1734,1341,1734,1372,1734,1404,1736,1436,1746,1469,1765,1466,1770,1434,1751,1403,1742,1372,1739,1341,1739,1312,1739,1283,1734,1256,1721,1231,1696,1196,1641,1170,1581,1152,1518,1141,1453,1137,1387,1137,1322,1150,1196"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1155,1196,1142,1322,1142,1387,1147,1453,1158,1517,1175,1579,1201,1638,1235,1693,1259,1717,1285,1729,1312,1734,1342,1734,1372,1734,1404,1736,1436,1745,1469,1765,1466,1770,1434,1750,1403,1741,1372,1739,1342,1739,1312,1739,1283,1734,1256,1721,1231,1696,1196,1641,1170,1581,1152,1518,1141,1453,1137,1387,1137,1322,1150,1196"/>
 <area shape="rect" id="Node000029" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html" title="Holds the current PlayerDto for the application." alt="" coords="1336,1351,1552,1612"/>
 <area shape="poly" id="edge35_Node000029_Node000005" title=" " alt="" coords="1333,1195,1388,1334,1384,1336,1328,1197"/>
 <area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1_player_repository.html" title="Repository interface for Player entities." alt="" coords="2112,388,2324,564"/>
@@ -59,12 +59,12 @@
 <area shape="poly" id="edge25_Node000005_Node000025" title=" " alt="" coords="1728,563,1703,582,1428,782,1425,778,1700,578,1724,559"/>
 <area shape="rect" id="Node000026" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_grid_mapper.html" title="This interface defines methods for mapping objects of type Grid to objects of type GridDto and vice v..." alt="" coords="1734,151,2013,289"/>
 <area shape="poly" id="edge27_Node000025_Node000026" title=" " alt="" coords="1865,290,1850,374,1845,373,1859,289"/>
-<area shape="poly" id="edge30_Node000004_Node000027" title=" " alt="" coords="2041,971,1929,1016,1869,1045,1810,1080,1754,1119,1701,1163,1654,1213,1616,1269,1608,1293,1601,1332,1593,1445,1590,1591,1591,1750,1586,1750,1585,1591,1588,1445,1596,1331,1602,1292,1611,1267,1650,1210,1697,1159,1750,1115,1808,1075,1867,1041,1927,1011,2039,967"/>
+<area shape="poly" id="edge30_Node000004_Node000027" title=" " alt="" coords="2041,971,1929,1016,1869,1045,1810,1080,1754,1119,1701,1163,1654,1213,1616,1269,1608,1293,1601,1332,1593,1445,1590,1590,1591,1749,1586,1749,1585,1590,1588,1445,1596,1331,1602,1292,1611,1267,1650,1210,1697,1159,1750,1115,1808,1075,1867,1041,1927,1011,2039,967"/>
 <area shape="rect" id="Node000028" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1_i_player_language_mapper.html" title="This interface defines methods for mapping objects of type PlayerLanguage to objects of type PlayerLa..." alt="" coords="2549,391,2828,561"/>
 <area shape="poly" id="edge33_Node000027_Node000028" title=" " alt="" coords="2618,563,2553,630,2440,731,2330,822,2326,818,2437,727,2549,626,2614,559"/>
-<area shape="poly" id="edge34_Node000004_Node000029" title=" " alt="" coords="1451,1612,1458,1677,1468,1742,1478,1786,1473,1787,1463,1743,1452,1678,1446,1612"/>
+<area shape="poly" id="edge34_Node000004_Node000029" title=" " alt="" coords="1452,1612,1458,1677,1468,1742,1478,1788,1473,1789,1463,1743,1453,1678,1446,1612"/>
 <area shape="rect" id="Node000030" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1_toaster_service.html" title="A centralized service for sending toast notifications to the UI." alt="" coords="1772,1268,2018,1695"/>
-<area shape="poly" id="edge36_Node000004_Node000030" title=" " alt="" coords="1803,1696,1730,1859,1725,1857,1798,1694"/>
+<area shape="poly" id="edge36_Node000004_Node000030" title=" " alt="" coords="1805,1695,1730,1865,1725,1863,1800,1693"/>
 <area shape="rect" id="Node000031" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1_dynamic_font_size.html" title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions." alt="" coords="2042,1305,2242,1657"/>
-<area shape="poly" id="edge37_Node000004_Node000031" title=" " alt="" coords="2057,1658,2032,1696,1961,1787,1884,1874,1735,2026,1731,2022,1880,1871,1957,1784,2028,1693,2053,1655"/>
+<area shape="poly" id="edge37_Node000004_Node000031" title=" " alt="" coords="2056,1659,2032,1696,1961,1789,1884,1878,1735,2033,1731,2029,1880,1874,1957,1785,2027,1693,2052,1656"/>
 </map>

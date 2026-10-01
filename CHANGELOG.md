@@ -4,6 +4,17 @@
 ## Unreleased -
 
 
+✨ feat HelpViewModel, Coordinator, Urls, CoordinatorUTest, HelpViewModelUTest: Add changelog and update help dialog buttons
+- Urls : Add CHANGELOG_URL constant.
+- Coordinator : Implement openChangelogUrl method.
+- HelpViewModel : Add changelog button to information alert and constants for null checks.
+- resource_en_US.properties &amp; resource_fr_FR.properties : Update button labels for website, changelog, and local log.
+- CoordinatorUTest : Add unit tests for openChangelogUrl (nominal and no HostServices cases).
+- HelpViewModelUTest : Add unit test for verifying changelog button creation and action handling.
+- Tests pass.
+
+([b91b59a68a2d948](https://github.com/Lob2018/SudokuFX/commit/b91b59a68a2d948841b76da8ef2c3d0c4379c142))
+
 🔧 chore pom.xml: Bump project version to 1.11.3
 - pom.xml : Bump project version from 1.11.2 to 1.11.3.
 - Tests pass.

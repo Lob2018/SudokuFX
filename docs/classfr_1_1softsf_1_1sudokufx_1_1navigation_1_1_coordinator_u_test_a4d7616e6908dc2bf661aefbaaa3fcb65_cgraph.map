@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNoHostServicesSet_whenOpenChangelogUrl_thenLogsWarning" name="fr.softsf.sudokufx.navigation.CoordinatorUTest.givenNoHostServicesSet_whenOpenChangelogUrl_thenLogsWarning">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,302,64"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a421268572847ce81efeee19df1bbf282" title="Opens the changelog&#39;s page in the user&#39;s default web browser." alt="" coords="350,13,549,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,32,334,32,334,37,302,37"/>
+</map>

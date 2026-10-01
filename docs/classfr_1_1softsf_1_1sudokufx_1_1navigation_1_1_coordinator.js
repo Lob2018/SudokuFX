@@ -4,6 +4,7 @@ var classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator =
     [ "exitPlatform", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a64e23a6257dc42929da8e6ee620fdca7", null ],
     [ "getCurrentPlayerLanguageIso", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a808e570a3279653f27ac99618f7ae175", null ],
     [ "getDefaultScene", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a8236a3100b3540f3c96b6b3db3042b30", null ],
+    [ "openChangelogUrl", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a421268572847ce81efeee19df1bbf282", null ],
     [ "openGitHubRepositoryReleaseUrl", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aa12944693adf73a87865a6480b557d2f", null ],
     [ "openLocalFile", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a7e592956d7481906fc0c8c8e81ae83f3", null ],
     [ "openMyWebsiteUrl", "classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#aaee4522d11b07eeb343f35f3afc4e9b8", null ],

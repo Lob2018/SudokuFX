@@ -6,7 +6,7 @@
 <!-- Title: fr.softsf.sudokufx.view.main.MainView Pages: 1 -->
 <svg width="4247pt" height="5964pt"
  viewBox="0.00 0.00 4247.25 5964.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="page0,1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 5960)">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 5960)">
 <title>fr.softsf.sudokufx.view.main.MainView</title>
 <!-- Node1 -->
 <g id="Node000001" class="node">
@@ -158,17 +158,17 @@
 <g id="Node000002" class="node">
 <title>Node2</title>
 <g id="a_Node000002"><a xlink:href="interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1_i_main_view.html" target="_top" xlink:title="Interface defining method to open the main stage.">
-<polygon fill="white" stroke="none" points="481.12,-1854 307.38,-1854 307.38,-1766 481.12,-1766 481.12,-1854"/>
-<text text-anchor="start" x="311.38" y="-1840.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.</text>
-<text text-anchor="start" x="371.38" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainView</text>
-<text text-anchor="start" x="392.75" y="-1812.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<text text-anchor="start" x="311.69" y="-1796.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="322" y="-1796.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
-<text text-anchor="start" x="322" y="-1784.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
-<text text-anchor="start" x="322" y="-1772.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
-<polygon fill="#666666" stroke="#666666" points="307.38,-1824 307.38,-1824 481.12,-1824 481.12,-1824 307.38,-1824"/>
-<polygon fill="#666666" stroke="#666666" points="307.38,-1808 307.38,-1808 481.12,-1808 481.12,-1808 307.38,-1808"/>
-<polygon fill="none" stroke="#666666" points="307.38,-1766 307.38,-1854 481.12,-1854 481.12,-1766 307.38,-1766"/>
+<polygon fill="white" stroke="none" points="456.12,-1854 282.38,-1854 282.38,-1766 456.12,-1766 456.12,-1854"/>
+<text text-anchor="start" x="286.38" y="-1840.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.common.interfaces.</text>
+<text text-anchor="start" x="346.38" y="-1828.5" font-family="Helvetica,sans-Serif" font-size="10.00">IMainView</text>
+<text text-anchor="start" x="367.75" y="-1812.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="286.69" y="-1796.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="297" y="-1796.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openingMainStage</text>
+<text text-anchor="start" x="297" y="-1784.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ISplashScreenView iSplashScreen</text>
+<text text-anchor="start" x="297" y="-1772.5" font-family="Helvetica,sans-Serif" font-size="10.00">View)</text>
+<polygon fill="#666666" stroke="#666666" points="282.38,-1824 282.38,-1824 456.12,-1824 456.12,-1824 282.38,-1824"/>
+<polygon fill="#666666" stroke="#666666" points="282.38,-1808 282.38,-1808 456.12,-1808 456.12,-1808 282.38,-1808"/>
+<polygon fill="none" stroke="#666666" points="282.38,-1766 282.38,-1854 456.12,-1854 456.12,-1766 282.38,-1766"/>
 </a>
 </g>
 </g>
@@ -176,8 +176,8 @@
 <g id="edge1_Node000001_Node000002" class="edge">
 <title>Node2&#45;&gt;Node1</title>
 <g id="a_edge1_Node000001_Node000002"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M392.79,-1755.05C393.21,-1650.27 410.68,-1419.91 548.25,-1310 964.63,-977.32 1571.02,-788.76 1909.58,-703.36"/>
-<polygon fill="none" stroke="#63b8ff" points="389.29,-1754.78 392.81,-1764.77 396.29,-1754.77 389.29,-1754.78"/>
+<path fill="none" stroke="#63b8ff" d="M372.47,-1754.94C379.35,-1672.44 400.6,-1512.24 465.25,-1394 490.28,-1348.22 504,-1339.18 547.25,-1310 986.17,-1013.89 1578.07,-813.18 1909.8,-715.55"/>
+<polygon fill="none" stroke="#63b8ff" points="368.99,-1754.54 371.69,-1764.78 375.96,-1755.09 368.99,-1754.54"/>
 </a>
 </g>
 </g>
@@ -345,73 +345,75 @@
 <g id="Node000004" class="node">
 <title>Node4</title>
 <g id="a_Node000004"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html" target="_top" xlink:title="Coordinator is a Spring&#45;managed component handling navigation and UI logic in a JavaFX application (M...">
-<polygon fill="white" stroke="none" points="657.62,-3766 476.88,-3766 476.88,-3198 657.62,-3198 657.62,-3766"/>
-<text text-anchor="start" x="503.88" y="-3752.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.navigation.</text>
-<text text-anchor="start" x="542.12" y="-3740.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator</text>
-<text text-anchor="start" x="482.38" y="-3724.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="490.88" y="-3724.5" font-family="Helvetica,sans-Serif" font-size="10.00">ApplicationContext</text>
-<text text-anchor="start" x="490.88" y="-3712.5" font-family="Helvetica,sans-Serif" font-size="10.00"> applicationContext</text>
-<text text-anchor="start" x="482.38" y="-3696.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="490.88" y="-3696.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene defaultScene</text>
-<text text-anchor="start" x="482.38" y="-3680.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="490.88" y="-3680.5" font-family="Helvetica,sans-Serif" font-size="10.00">final FXMLLoader fxmlLoader</text>
-<text text-anchor="start" x="482.38" y="-3664.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="490.88" y="-3664.5" font-family="Helvetica,sans-Serif" font-size="10.00">HostServices hostServices</text>
-<text text-anchor="start" x="482.38" y="-3648.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="490.88" y="-3648.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="480.88" y="-3632.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3632.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator(FXMLLoader</text>
-<text text-anchor="start" x="490.88" y="-3620.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
-<text text-anchor="start" x="480.88" y="-3604.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3604.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getCurrentPlayerLanguage</text>
-<text text-anchor="start" x="490.88" y="-3592.5" font-family="Helvetica,sans-Serif" font-size="10.00">Iso()</text>
-<text text-anchor="start" x="480.88" y="-3576.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3576.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene getDefaultScene()</text>
-<text text-anchor="start" x="480.88" y="-3560.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3560.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openGitHubRepository</text>
-<text text-anchor="start" x="490.88" y="-3548.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReleaseUrl()</text>
-<text text-anchor="start" x="480.88" y="-3532.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3532.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openLocalFile</text>
-<text text-anchor="start" x="490.88" y="-3520.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
-<text text-anchor="start" x="480.88" y="-3504.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3504.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openMyWebsiteUrl()</text>
-<text text-anchor="start" x="480.88" y="-3488.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3488.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDefaultScene</text>
-<text text-anchor="start" x="490.88" y="-3476.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Scene scene)</text>
-<text text-anchor="start" x="480.88" y="-3460.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3460.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDynamicFontSize</text>
-<text text-anchor="start" x="490.88" y="-3448.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DynamicFontSize dynamicFontSize)</text>
-<text text-anchor="start" x="480.88" y="-3432.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3432.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHostServices</text>
-<text text-anchor="start" x="490.88" y="-3420.5" font-family="Helvetica,sans-Serif" font-size="10.00">(HostServices hostServices)</text>
-<text text-anchor="start" x="480.88" y="-3404.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3404.5" font-family="Helvetica,sans-Serif" font-size="10.00">void toggleLanguage()</text>
-<text text-anchor="start" x="480.88" y="-3388.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="490.88" y="-3388.5" font-family="Helvetica,sans-Serif" font-size="10.00">void validateConfiguration()</text>
-<text text-anchor="start" x="480.88" y="-3372.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="490.88" y="-3372.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
-<text text-anchor="start" x="480.88" y="-3356.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="490.88" y="-3356.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPlayerLanguageService</text>
-<text text-anchor="start" x="490.88" y="-3344.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerLanguageService service)</text>
-<text text-anchor="start" x="480.88" y="-3328.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="490.88" y="-3328.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPlayerService</text>
-<text text-anchor="start" x="490.88" y="-3316.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerService playerService)</text>
-<text text-anchor="start" x="480.88" y="-3300.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="490.88" y="-3300.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPlayerStateHolder</text>
-<text text-anchor="start" x="490.88" y="-3288.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerStateHolder holder)</text>
-<text text-anchor="start" x="480.88" y="-3272.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="490.88" y="-3272.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T setRootByFXMLName</text>
-<text text-anchor="start" x="490.88" y="-3260.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
-<text text-anchor="start" x="480.88" y="-3244.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="490.88" y="-3244.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setToasterService</text>
-<text text-anchor="start" x="490.88" y="-3232.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ToasterService toasterService)</text>
-<text text-anchor="start" x="482.38" y="-3216.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="490.88" y="-3216.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updatePlayerLanguage</text>
-<text text-anchor="start" x="490.88" y="-3204.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String iso)</text>
-<polygon fill="#666666" stroke="#666666" points="476.88,-3736 476.88,-3736 657.62,-3736 657.62,-3736 476.88,-3736"/>
-<polygon fill="#666666" stroke="#666666" points="476.88,-3644 476.88,-3644 488.88,-3644 488.88,-3644 476.88,-3644"/>
-<polygon fill="#666666" stroke="#666666" points="488.88,-3644 488.88,-3644 657.62,-3644 657.62,-3644 488.88,-3644"/>
-<polygon fill="none" stroke="#666666" points="476.88,-3198 476.88,-3766 657.62,-3766 657.62,-3198 476.88,-3198"/>
+<polygon fill="white" stroke="none" points="645.62,-3774 464.88,-3774 464.88,-3190 645.62,-3190 645.62,-3774"/>
+<text text-anchor="start" x="491.88" y="-3760.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.navigation.</text>
+<text text-anchor="start" x="530.12" y="-3748.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator</text>
+<text text-anchor="start" x="470.38" y="-3732.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="478.88" y="-3732.5" font-family="Helvetica,sans-Serif" font-size="10.00">ApplicationContext</text>
+<text text-anchor="start" x="478.88" y="-3720.5" font-family="Helvetica,sans-Serif" font-size="10.00"> applicationContext</text>
+<text text-anchor="start" x="470.38" y="-3704.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="478.88" y="-3704.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene defaultScene</text>
+<text text-anchor="start" x="470.38" y="-3688.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="478.88" y="-3688.5" font-family="Helvetica,sans-Serif" font-size="10.00">final FXMLLoader fxmlLoader</text>
+<text text-anchor="start" x="470.38" y="-3672.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="478.88" y="-3672.5" font-family="Helvetica,sans-Serif" font-size="10.00">HostServices hostServices</text>
+<text text-anchor="start" x="470.38" y="-3656.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="478.88" y="-3656.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="468.88" y="-3640.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3640.5" font-family="Helvetica,sans-Serif" font-size="10.00">Coordinator(FXMLLoader</text>
+<text text-anchor="start" x="478.88" y="-3628.5" font-family="Helvetica,sans-Serif" font-size="10.00"> fxmlLoader)</text>
+<text text-anchor="start" x="468.88" y="-3612.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3612.5" font-family="Helvetica,sans-Serif" font-size="10.00">String getCurrentPlayerLanguage</text>
+<text text-anchor="start" x="478.88" y="-3600.5" font-family="Helvetica,sans-Serif" font-size="10.00">Iso()</text>
+<text text-anchor="start" x="468.88" y="-3584.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3584.5" font-family="Helvetica,sans-Serif" font-size="10.00">Scene getDefaultScene()</text>
+<text text-anchor="start" x="468.88" y="-3568.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3568.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openChangelogUrl()</text>
+<text text-anchor="start" x="468.88" y="-3552.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3552.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openGitHubRepository</text>
+<text text-anchor="start" x="478.88" y="-3540.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReleaseUrl()</text>
+<text text-anchor="start" x="468.88" y="-3524.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3524.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openLocalFile</text>
+<text text-anchor="start" x="478.88" y="-3512.5" font-family="Helvetica,sans-Serif" font-size="10.00">(File file)</text>
+<text text-anchor="start" x="468.88" y="-3496.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3496.5" font-family="Helvetica,sans-Serif" font-size="10.00">void openMyWebsiteUrl()</text>
+<text text-anchor="start" x="468.88" y="-3480.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3480.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDefaultScene</text>
+<text text-anchor="start" x="478.88" y="-3468.5" font-family="Helvetica,sans-Serif" font-size="10.00">(Scene scene)</text>
+<text text-anchor="start" x="468.88" y="-3452.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3452.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setDynamicFontSize</text>
+<text text-anchor="start" x="478.88" y="-3440.5" font-family="Helvetica,sans-Serif" font-size="10.00">(DynamicFontSize dynamicFontSize)</text>
+<text text-anchor="start" x="468.88" y="-3424.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3424.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setHostServices</text>
+<text text-anchor="start" x="478.88" y="-3412.5" font-family="Helvetica,sans-Serif" font-size="10.00">(HostServices hostServices)</text>
+<text text-anchor="start" x="468.88" y="-3396.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3396.5" font-family="Helvetica,sans-Serif" font-size="10.00">void toggleLanguage()</text>
+<text text-anchor="start" x="468.88" y="-3380.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="478.88" y="-3380.5" font-family="Helvetica,sans-Serif" font-size="10.00">void validateConfiguration()</text>
+<text text-anchor="start" x="468.88" y="-3364.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="478.88" y="-3364.5" font-family="Helvetica,sans-Serif" font-size="10.00">void exitPlatform()</text>
+<text text-anchor="start" x="468.88" y="-3348.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="478.88" y="-3348.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPlayerLanguageService</text>
+<text text-anchor="start" x="478.88" y="-3336.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerLanguageService service)</text>
+<text text-anchor="start" x="468.88" y="-3320.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="478.88" y="-3320.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPlayerService</text>
+<text text-anchor="start" x="478.88" y="-3308.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerService playerService)</text>
+<text text-anchor="start" x="468.88" y="-3292.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="478.88" y="-3292.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setPlayerStateHolder</text>
+<text text-anchor="start" x="478.88" y="-3280.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerStateHolder holder)</text>
+<text text-anchor="start" x="468.88" y="-3264.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="478.88" y="-3264.5" font-family="Helvetica,sans-Serif" font-size="10.00">public&lt; T &gt; T setRootByFXMLName</text>
+<text text-anchor="start" x="478.88" y="-3252.5" font-family="Helvetica,sans-Serif" font-size="10.00">(final String fxml)</text>
+<text text-anchor="start" x="468.88" y="-3236.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="478.88" y="-3236.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setToasterService</text>
+<text text-anchor="start" x="478.88" y="-3224.5" font-family="Helvetica,sans-Serif" font-size="10.00">(ToasterService toasterService)</text>
+<text text-anchor="start" x="470.38" y="-3208.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="478.88" y="-3208.5" font-family="Helvetica,sans-Serif" font-size="10.00">void updatePlayerLanguage</text>
+<text text-anchor="start" x="478.88" y="-3196.5" font-family="Helvetica,sans-Serif" font-size="10.00">(String iso)</text>
+<polygon fill="#666666" stroke="#666666" points="464.88,-3744 464.88,-3744 645.62,-3744 645.62,-3744 464.88,-3744"/>
+<polygon fill="#666666" stroke="#666666" points="464.88,-3652 464.88,-3652 476.88,-3652 476.88,-3652 464.88,-3652"/>
+<polygon fill="#666666" stroke="#666666" points="476.88,-3652 476.88,-3652 645.62,-3652 645.62,-3652 476.88,-3652"/>
+<polygon fill="none" stroke="#666666" points="464.88,-3190 464.88,-3774 645.62,-3774 645.62,-3190 464.88,-3190"/>
 </a>
 </g>
 </g>
@@ -419,45 +421,52 @@
 <g id="edge3_Node000001_Node000004" class="edge">
 <title>Node4&#45;&gt;Node1</title>
 <g id="a_edge3_Node000001_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M595.33,-3198.08C607.03,-3071.51 619.83,-2920.39 628.25,-2784 629.44,-2764.72 669.95,-1411.45 678.25,-1394 899.25,-929.35 1532.82,-749.54 1896.68,-683.23"/>
-<polygon fill="none" stroke="#63b8ff" points="1896.81,-683.2 1902,-678.2 1908.62,-681.07 1903.42,-686.07 1896.81,-683.2"/>
+<path fill="none" stroke="#63b8ff" d="M582.82,-3190.37C594.12,-3065.38 606.76,-2917.58 616.25,-2784 616.94,-2774.36 687.85,-1402.61 692.25,-1394 923.6,-941.93 1540.19,-757.69 1897.03,-687.17"/>
+<polygon fill="none" stroke="#63b8ff" points="1896.95,-687.18 1902.07,-682.1 1908.73,-684.88 1903.6,-689.96 1896.95,-687.18"/>
 </a>
 </g>
-<text text-anchor="start" x="681.25" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;coordinator</text>
+<text text-anchor="start" x="695.25" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;coordinator</text>
 </g>
 <!-- Node32 -->
 <g id="Node000032" class="node">
 <title>Node32</title>
 <g id="a_Node000032"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_help_view_model.html" target="_top" xlink:title="ViewModel responsible for displaying the help dialog.">
-<polygon fill="white" stroke="none" points="635.75,-1926 498.75,-1926 498.75,-1694 635.75,-1694 635.75,-1926"/>
-<text text-anchor="start" x="502.75" y="-1912.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="533.12" y="-1900.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel</text>
-<text text-anchor="start" x="505.5" y="-1884.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="515.25" y="-1884.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolder iOsFolder</text>
-<text text-anchor="start" x="505.5" y="-1868.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="515.25" y="-1868.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
-<text text-anchor="start" x="515.25" y="-1856.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALERT_SIZE_RATIO</text>
-<text text-anchor="start" x="505.5" y="-1840.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="515.25" y="-1840.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="504" y="-1824.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="515.25" y="-1824.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel(IOsFolder</text>
-<text text-anchor="start" x="515.25" y="-1812.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolder, Coordinator</text>
-<text text-anchor="start" x="515.25" y="-1800.5" font-family="Helvetica,sans-Serif" font-size="10.00"> coordinator)</text>
-<text text-anchor="start" x="504" y="-1784.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="515.25" y="-1784.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showHelp()</text>
-<text text-anchor="start" x="504" y="-1768.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
-<text text-anchor="start" x="515.25" y="-1768.5" font-family="Helvetica,sans-Serif" font-size="10.00">void displayAlert(MyAlert</text>
-<text text-anchor="start" x="515.25" y="-1756.5" font-family="Helvetica,sans-Serif" font-size="10.00"> alert)</text>
-<text text-anchor="start" x="505.5" y="-1740.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="515.25" y="-1740.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addLogFileButton</text>
-<text text-anchor="start" x="515.25" y="-1728.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
-<text text-anchor="start" x="505.5" y="-1712.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="515.25" y="-1712.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addWebsiteButton</text>
-<text text-anchor="start" x="515.25" y="-1700.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
-<polygon fill="#666666" stroke="#666666" points="498.75,-1896 498.75,-1896 635.75,-1896 635.75,-1896 498.75,-1896"/>
-<polygon fill="#666666" stroke="#666666" points="498.75,-1836 498.75,-1836 513.25,-1836 513.25,-1836 498.75,-1836"/>
-<polygon fill="#666666" stroke="#666666" points="513.25,-1836 513.25,-1836 635.75,-1836 635.75,-1836 513.25,-1836"/>
-<polygon fill="none" stroke="#666666" points="498.75,-1694 498.75,-1926 635.75,-1926 635.75,-1694 498.75,-1694"/>
+<polygon fill="white" stroke="none" points="635.88,-1960 474.62,-1960 474.62,-1660 635.88,-1660 635.88,-1960"/>
+<text text-anchor="start" x="490.75" y="-1946.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="521.12" y="-1934.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel</text>
+<text text-anchor="start" x="478.62" y="-1918.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="488.62" y="-1918.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="488.62" y="-1906.5" font-family="Helvetica,sans-Serif" font-size="10.00"> INFORMATION_ALERT_MUST</text>
+<text text-anchor="start" x="488.62" y="-1894.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NOT_BE_NULL</text>
+<text text-anchor="start" x="480.12" y="-1878.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="488.62" y="-1878.5" font-family="Helvetica,sans-Serif" font-size="10.00">final IOsFolder iOsFolder</text>
+<text text-anchor="start" x="480.12" y="-1862.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="488.62" y="-1862.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final double</text>
+<text text-anchor="start" x="488.62" y="-1850.5" font-family="Helvetica,sans-Serif" font-size="10.00"> ALERT_SIZE_RATIO</text>
+<text text-anchor="start" x="480.12" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="488.62" y="-1834.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="478.62" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="488.62" y="-1818.5" font-family="Helvetica,sans-Serif" font-size="10.00">HelpViewModel(IOsFolder</text>
+<text text-anchor="start" x="488.62" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00"> iOsFolder, Coordinator</text>
+<text text-anchor="start" x="488.62" y="-1794.5" font-family="Helvetica,sans-Serif" font-size="10.00"> coordinator)</text>
+<text text-anchor="start" x="478.62" y="-1778.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="488.62" y="-1778.5" font-family="Helvetica,sans-Serif" font-size="10.00">void showHelp()</text>
+<text text-anchor="start" x="478.62" y="-1762.5" font-family="Helvetica,sans-Serif" font-size="10.00">~</text>
+<text text-anchor="start" x="488.62" y="-1762.5" font-family="Helvetica,sans-Serif" font-size="10.00">void displayAlert(MyAlert</text>
+<text text-anchor="start" x="488.62" y="-1750.5" font-family="Helvetica,sans-Serif" font-size="10.00"> alert)</text>
+<text text-anchor="start" x="480.12" y="-1734.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="488.62" y="-1734.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addChangelogButton</text>
+<text text-anchor="start" x="488.62" y="-1722.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
+<text text-anchor="start" x="480.12" y="-1706.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="488.62" y="-1706.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addLogFileButton</text>
+<text text-anchor="start" x="488.62" y="-1694.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
+<text text-anchor="start" x="480.12" y="-1678.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="488.62" y="-1678.5" font-family="Helvetica,sans-Serif" font-size="10.00">void addWebsiteButton</text>
+<text text-anchor="start" x="488.62" y="-1666.5" font-family="Helvetica,sans-Serif" font-size="10.00">(MyAlert informationAlert)</text>
+<polygon fill="#666666" stroke="#666666" points="474.62,-1930 474.62,-1930 635.88,-1930 635.88,-1930 474.62,-1930"/>
+<polygon fill="#666666" stroke="#666666" points="474.62,-1830 474.62,-1830 486.62,-1830 486.62,-1830 474.62,-1830"/>
+<polygon fill="#666666" stroke="#666666" points="486.62,-1830 486.62,-1830 635.88,-1830 635.88,-1830 486.62,-1830"/>
+<polygon fill="none" stroke="#666666" points="474.62,-1660 474.62,-1960 635.88,-1960 635.88,-1660 474.62,-1660"/>
 </a>
 </g>
 </g>
@@ -465,11 +474,11 @@
 <g id="edge21_Node000032_Node000004" class="edge">
 <title>Node4&#45;&gt;Node32</title>
 <g id="a_edge21_Node000032_Node000004"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M567.25,-3198.18C567.25,-2831.13 567.25,-2206.06 567.25,-1938.58"/>
-<polygon fill="none" stroke="#63b8ff" points="567.25,-1938.62 563.25,-1932.62 567.25,-1926.62 571.25,-1932.62 567.25,-1938.62"/>
+<path fill="none" stroke="#63b8ff" d="M555.25,-3190.11C555.25,-2836.92 555.25,-2253.69 555.25,-1972.49"/>
+<polygon fill="none" stroke="#63b8ff" points="555.25,-1972.64 551.25,-1966.64 555.25,-1960.64 559.25,-1966.64 555.25,-1972.64"/>
 </a>
 </g>
-<text text-anchor="start" x="570.25" y="-2510.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;coordinator</text>
+<text text-anchor="start" x="558.25" y="-2510.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;coordinator</text>
 </g>
 <!-- Node5 -->
 <g id="Node000005" class="node">
@@ -527,8 +536,8 @@
 <g id="edge4_Node000004_Node000005" class="edge">
 <title>Node5&#45;&gt;Node4</title>
 <g id="a_edge4_Node000004_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M813.03,-5338.91C715.41,-5272.64 594.05,-5170.42 538,-5044 488.34,-4931.99 523.42,-4199.47 548.31,-3778.86"/>
-<polygon fill="none" stroke="#63b8ff" points="548.32,-3778.77 544.68,-3772.54 549.03,-3766.79 552.67,-3773.02 548.32,-3778.77"/>
+<path fill="none" stroke="#63b8ff" d="M813.03,-5338.91C715.41,-5272.64 594.05,-5170.42 538,-5044 488.65,-4932.69 517.08,-4208.48 538.42,-3786.67"/>
+<polygon fill="none" stroke="#63b8ff" points="538.42,-3786.55 534.73,-3780.35 539.03,-3774.56 542.72,-3780.76 538.42,-3786.55"/>
 </a>
 </g>
 <text text-anchor="start" x="541" y="-4634.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerService</text>
@@ -580,129 +589,129 @@
 <g id="Node000037" class="node">
 <title>Node37</title>
 <g id="a_Node000037"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_player_view_model.html" target="_top" xlink:title="ViewModel managing player menu UI state and localized accessibility texts.">
-<polygon fill="white" stroke="none" points="1059.12,-4050 869.38,-4050 869.38,-2914 1059.12,-2914 1059.12,-4050"/>
-<text text-anchor="start" x="899.75" y="-4036.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="914.38" y="-4024.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
-<text text-anchor="start" x="873.38" y="-4008.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-4008.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="883.38" y="-3996.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_PLAYER_BUTTON</text>
-<text text-anchor="start" x="883.38" y="-3984.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NEW_PLAYER_TEXT</text>
-<text text-anchor="start" x="874.88" y="-3968.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3968.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="883.38" y="-3956.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellButtonAccessibleText</text>
-<text text-anchor="start" x="874.88" y="-3940.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3940.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="883.38" y="-3928.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellConfirmationMessage</text>
-<text text-anchor="start" x="874.88" y="-3912.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3912.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="883.38" y="-3900.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellConfirmationTitle</text>
-<text text-anchor="start" x="874.88" y="-3884.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3884.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
-<text text-anchor="start" x="883.38" y="-3872.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; PlayerSaveMode &gt; currentSaveMode</text>
-<text text-anchor="start" x="874.88" y="-3856.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3856.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="883.38" y="-3844.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editAccessibleText</text>
-<text text-anchor="start" x="874.88" y="-3828.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3828.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyBooleanWrapper</text>
-<text text-anchor="start" x="883.38" y="-3816.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editing</text>
-<text text-anchor="start" x="874.88" y="-3800.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3800.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="883.38" y="-3788.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editRoleDescription</text>
-<text text-anchor="start" x="874.88" y="-3772.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3772.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="883.38" y="-3760.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editTooltip</text>
-<text text-anchor="start" x="874.88" y="-3744.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3744.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isLockedWhileUpdating</text>
-<text text-anchor="start" x="874.88" y="-3728.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3728.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="883.38" y="-3716.5" font-family="Helvetica,sans-Serif" font-size="10.00"> maxiPlayerRoleDescription</text>
-<text text-anchor="start" x="883.38" y="-3700.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 15 more...</text>
-<text text-anchor="start" x="874.88" y="-3684.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3684.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
-<text text-anchor="start" x="874.88" y="-3668.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3668.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAX</text>
-<text text-anchor="start" x="883.38" y="-3656.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NAME_LENGTH</text>
-<text text-anchor="start" x="874.88" y="-3640.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3640.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="883.38" y="-3628.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
-<text text-anchor="start" x="883.38" y="-3616.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_CLOSED</text>
-<text text-anchor="start" x="874.88" y="-3600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3600.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="883.38" y="-3588.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
-<text text-anchor="start" x="883.38" y="-3576.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_OPENED</text>
-<text text-anchor="start" x="874.88" y="-3560.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3560.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="883.38" y="-3548.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
-<text text-anchor="start" x="883.38" y="-3536.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_SUBMENU</text>
-<text text-anchor="start" x="883.38" y="-3524.5" font-family="Helvetica,sans-Serif" font-size="10.00">_OPTION</text>
-<text text-anchor="start" x="874.88" y="-3508.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3508.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="883.38" y="-3496.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_PLAYER_BUTTON</text>
-<text text-anchor="start" x="883.38" y="-3484.5" font-family="Helvetica,sans-Serif" font-size="10.00">_PLAYER_ACCESSIBILITY</text>
-<text text-anchor="start" x="873.38" y="-3468.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3468.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
-<text text-anchor="start" x="883.38" y="-3456.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerStateHolder playerState</text>
-<text text-anchor="start" x="883.38" y="-3444.5" font-family="Helvetica,sans-Serif" font-size="10.00">Holder, PlayerService playerService)</text>
-<text text-anchor="start" x="873.38" y="-3428.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3428.5" font-family="Helvetica,sans-Serif" font-size="10.00">void cancelNewPlayer()</text>
-<text text-anchor="start" x="873.38" y="-3412.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3412.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellButton</text>
-<text text-anchor="start" x="883.38" y="-3400.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
-<text text-anchor="start" x="873.38" y="-3384.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3384.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellConfirmation</text>
-<text text-anchor="start" x="883.38" y="-3372.5" font-family="Helvetica,sans-Serif" font-size="10.00">MessageProperty()</text>
-<text text-anchor="start" x="873.38" y="-3356.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3356.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellConfirmation</text>
-<text text-anchor="start" x="883.38" y="-3344.5" font-family="Helvetica,sans-Serif" font-size="10.00">TitleProperty()</text>
-<text text-anchor="start" x="873.38" y="-3328.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3328.5" font-family="Helvetica,sans-Serif" font-size="10.00">void deletePlayer(Player</text>
-<text text-anchor="start" x="883.38" y="-3316.5" font-family="Helvetica,sans-Serif" font-size="10.00">Dto playerDto)</text>
-<text text-anchor="start" x="873.38" y="-3300.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3300.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding editAccessible</text>
-<text text-anchor="start" x="883.38" y="-3288.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
-<text text-anchor="start" x="873.38" y="-3272.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3272.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyBooleanProperty</text>
-<text text-anchor="start" x="883.38" y="-3260.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editingProperty()</text>
-<text text-anchor="start" x="873.38" y="-3244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3244.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding editRoleDescription</text>
-<text text-anchor="start" x="883.38" y="-3232.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
-<text text-anchor="start" x="873.38" y="-3216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="883.38" y="-3216.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding editTooltip</text>
-<text text-anchor="start" x="883.38" y="-3204.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
-<text text-anchor="start" x="883.38" y="-3188.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
-<text text-anchor="start" x="874.88" y="-3172.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3172.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createAppended</text>
-<text text-anchor="start" x="883.38" y="-3160.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding()</text>
-<text text-anchor="start" x="874.88" y="-3144.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3144.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
-<text text-anchor="start" x="883.38" y="-3132.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndConcatenatedBinding(String</text>
-<text text-anchor="start" x="883.38" y="-3120.5" font-family="Helvetica,sans-Serif" font-size="10.00"> key, String suffixKey)</text>
-<text text-anchor="start" x="874.88" y="-3104.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3104.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
-<text text-anchor="start" x="883.38" y="-3092.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key, Supplier</text>
-<text text-anchor="start" x="883.38" y="-3080.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; String &gt; argSupplier)</text>
-<text text-anchor="start" x="874.88" y="-3064.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3064.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>
-<text text-anchor="start" x="883.38" y="-3052.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key)</text>
-<text text-anchor="start" x="874.88" y="-3036.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-3036.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initPlayerNameField</text>
-<text text-anchor="start" x="883.38" y="-3024.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerSaveMode mode, String</text>
-<text text-anchor="start" x="883.38" y="-3012.5" font-family="Helvetica,sans-Serif" font-size="10.00"> initialValue)</text>
-<text text-anchor="start" x="874.88" y="-2996.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-2996.5" font-family="Helvetica,sans-Serif" font-size="10.00">void loadPlayers()</text>
-<text text-anchor="start" x="874.88" y="-2980.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-2980.5" font-family="Helvetica,sans-Serif" font-size="10.00">String playerName()</text>
-<text text-anchor="start" x="874.88" y="-2964.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-2964.5" font-family="Helvetica,sans-Serif" font-size="10.00">void refreshUI()</text>
-<text text-anchor="start" x="874.88" y="-2948.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-2948.5" font-family="Helvetica,sans-Serif" font-size="10.00">void runGuarded(Runnable</text>
-<text text-anchor="start" x="883.38" y="-2936.5" font-family="Helvetica,sans-Serif" font-size="10.00"> action)</text>
-<text text-anchor="start" x="874.88" y="-2920.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="883.38" y="-2920.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setSelectedPlayer()</text>
-<polygon fill="#666666" stroke="#666666" points="869.38,-4020 869.38,-4020 1059.12,-4020 1059.12,-4020 869.38,-4020"/>
-<polygon fill="#666666" stroke="#666666" points="869.38,-3480 869.38,-3480 881.38,-3480 881.38,-3480 869.38,-3480"/>
-<polygon fill="#666666" stroke="#666666" points="881.38,-3480 881.38,-3480 1059.12,-3480 1059.12,-3480 881.38,-3480"/>
-<polygon fill="none" stroke="#666666" points="869.38,-2914 869.38,-4050 1059.12,-4050 1059.12,-2914 869.38,-2914"/>
+<polygon fill="white" stroke="none" points="1053.12,-4050 863.38,-4050 863.38,-2914 1053.12,-2914 1053.12,-4050"/>
+<text text-anchor="start" x="893.75" y="-4036.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="908.38" y="-4024.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
+<text text-anchor="start" x="867.38" y="-4008.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-4008.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="877.38" y="-3996.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_PLAYER_BUTTON</text>
+<text text-anchor="start" x="877.38" y="-3984.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NEW_PLAYER_TEXT</text>
+<text text-anchor="start" x="868.88" y="-3968.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3968.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="877.38" y="-3956.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellButtonAccessibleText</text>
+<text text-anchor="start" x="868.88" y="-3940.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3940.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="877.38" y="-3928.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellConfirmationMessage</text>
+<text text-anchor="start" x="868.88" y="-3912.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3912.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="877.38" y="-3900.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellConfirmationTitle</text>
+<text text-anchor="start" x="868.88" y="-3884.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3884.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObjectProperty</text>
+<text text-anchor="start" x="877.38" y="-3872.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; PlayerSaveMode &gt; currentSaveMode</text>
+<text text-anchor="start" x="868.88" y="-3856.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3856.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="877.38" y="-3844.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editAccessibleText</text>
+<text text-anchor="start" x="868.88" y="-3828.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3828.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ReadOnlyBooleanWrapper</text>
+<text text-anchor="start" x="877.38" y="-3816.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editing</text>
+<text text-anchor="start" x="868.88" y="-3800.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3800.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="877.38" y="-3788.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editRoleDescription</text>
+<text text-anchor="start" x="868.88" y="-3772.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3772.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="877.38" y="-3760.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editTooltip</text>
+<text text-anchor="start" x="868.88" y="-3744.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3744.5" font-family="Helvetica,sans-Serif" font-size="10.00">boolean isLockedWhileUpdating</text>
+<text text-anchor="start" x="868.88" y="-3728.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3728.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="877.38" y="-3716.5" font-family="Helvetica,sans-Serif" font-size="10.00"> maxiPlayerRoleDescription</text>
+<text text-anchor="start" x="877.38" y="-3700.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 15 more...</text>
+<text text-anchor="start" x="868.88" y="-3684.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3684.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final Logger LOG</text>
+<text text-anchor="start" x="868.88" y="-3668.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3668.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final int MAX</text>
+<text text-anchor="start" x="877.38" y="-3656.5" font-family="Helvetica,sans-Serif" font-size="10.00">_NAME_LENGTH</text>
+<text text-anchor="start" x="868.88" y="-3640.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3640.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="877.38" y="-3628.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
+<text text-anchor="start" x="877.38" y="-3616.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_CLOSED</text>
+<text text-anchor="start" x="868.88" y="-3600.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3600.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="877.38" y="-3588.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
+<text text-anchor="start" x="877.38" y="-3576.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_OPENED</text>
+<text text-anchor="start" x="868.88" y="-3560.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3560.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="877.38" y="-3548.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
+<text text-anchor="start" x="877.38" y="-3536.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_SUBMENU</text>
+<text text-anchor="start" x="877.38" y="-3524.5" font-family="Helvetica,sans-Serif" font-size="10.00">_OPTION</text>
+<text text-anchor="start" x="868.88" y="-3508.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3508.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="877.38" y="-3496.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_PLAYER_BUTTON</text>
+<text text-anchor="start" x="877.38" y="-3484.5" font-family="Helvetica,sans-Serif" font-size="10.00">_PLAYER_ACCESSIBILITY</text>
+<text text-anchor="start" x="867.38" y="-3468.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3468.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuPlayerViewModel</text>
+<text text-anchor="start" x="877.38" y="-3456.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerStateHolder playerState</text>
+<text text-anchor="start" x="877.38" y="-3444.5" font-family="Helvetica,sans-Serif" font-size="10.00">Holder, PlayerService playerService)</text>
+<text text-anchor="start" x="867.38" y="-3428.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3428.5" font-family="Helvetica,sans-Serif" font-size="10.00">void cancelNewPlayer()</text>
+<text text-anchor="start" x="867.38" y="-3412.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3412.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellButton</text>
+<text text-anchor="start" x="877.38" y="-3400.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
+<text text-anchor="start" x="867.38" y="-3384.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3384.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellConfirmation</text>
+<text text-anchor="start" x="877.38" y="-3372.5" font-family="Helvetica,sans-Serif" font-size="10.00">MessageProperty()</text>
+<text text-anchor="start" x="867.38" y="-3356.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3356.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellConfirmation</text>
+<text text-anchor="start" x="877.38" y="-3344.5" font-family="Helvetica,sans-Serif" font-size="10.00">TitleProperty()</text>
+<text text-anchor="start" x="867.38" y="-3328.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3328.5" font-family="Helvetica,sans-Serif" font-size="10.00">void deletePlayer(Player</text>
+<text text-anchor="start" x="877.38" y="-3316.5" font-family="Helvetica,sans-Serif" font-size="10.00">Dto playerDto)</text>
+<text text-anchor="start" x="867.38" y="-3300.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3300.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding editAccessible</text>
+<text text-anchor="start" x="877.38" y="-3288.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
+<text text-anchor="start" x="867.38" y="-3272.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3272.5" font-family="Helvetica,sans-Serif" font-size="10.00">ReadOnlyBooleanProperty</text>
+<text text-anchor="start" x="877.38" y="-3260.5" font-family="Helvetica,sans-Serif" font-size="10.00"> editingProperty()</text>
+<text text-anchor="start" x="867.38" y="-3244.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3244.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding editRoleDescription</text>
+<text text-anchor="start" x="877.38" y="-3232.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="867.38" y="-3216.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="877.38" y="-3216.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding editTooltip</text>
+<text text-anchor="start" x="877.38" y="-3204.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="877.38" y="-3188.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 22 more...</text>
+<text text-anchor="start" x="868.88" y="-3172.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3172.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createAppended</text>
+<text text-anchor="start" x="877.38" y="-3160.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding()</text>
+<text text-anchor="start" x="868.88" y="-3144.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3144.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
+<text text-anchor="start" x="877.38" y="-3132.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndConcatenatedBinding(String</text>
+<text text-anchor="start" x="877.38" y="-3120.5" font-family="Helvetica,sans-Serif" font-size="10.00"> key, String suffixKey)</text>
+<text text-anchor="start" x="868.88" y="-3104.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3104.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
+<text text-anchor="start" x="877.38" y="-3092.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key, Supplier</text>
+<text text-anchor="start" x="877.38" y="-3080.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; String &gt; argSupplier)</text>
+<text text-anchor="start" x="868.88" y="-3064.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3064.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>
+<text text-anchor="start" x="877.38" y="-3052.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key)</text>
+<text text-anchor="start" x="868.88" y="-3036.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-3036.5" font-family="Helvetica,sans-Serif" font-size="10.00">void initPlayerNameField</text>
+<text text-anchor="start" x="877.38" y="-3024.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerSaveMode mode, String</text>
+<text text-anchor="start" x="877.38" y="-3012.5" font-family="Helvetica,sans-Serif" font-size="10.00"> initialValue)</text>
+<text text-anchor="start" x="868.88" y="-2996.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-2996.5" font-family="Helvetica,sans-Serif" font-size="10.00">void loadPlayers()</text>
+<text text-anchor="start" x="868.88" y="-2980.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-2980.5" font-family="Helvetica,sans-Serif" font-size="10.00">String playerName()</text>
+<text text-anchor="start" x="868.88" y="-2964.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-2964.5" font-family="Helvetica,sans-Serif" font-size="10.00">void refreshUI()</text>
+<text text-anchor="start" x="868.88" y="-2948.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-2948.5" font-family="Helvetica,sans-Serif" font-size="10.00">void runGuarded(Runnable</text>
+<text text-anchor="start" x="877.38" y="-2936.5" font-family="Helvetica,sans-Serif" font-size="10.00"> action)</text>
+<text text-anchor="start" x="868.88" y="-2920.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="877.38" y="-2920.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setSelectedPlayer()</text>
+<polygon fill="#666666" stroke="#666666" points="863.38,-4020 863.38,-4020 1053.12,-4020 1053.12,-4020 863.38,-4020"/>
+<polygon fill="#666666" stroke="#666666" points="863.38,-3480 863.38,-3480 875.38,-3480 875.38,-3480 863.38,-3480"/>
+<polygon fill="#666666" stroke="#666666" points="875.38,-3480 875.38,-3480 1053.12,-3480 1053.12,-3480 875.38,-3480"/>
+<polygon fill="none" stroke="#666666" points="863.38,-2914 863.38,-4050 1053.12,-4050 1053.12,-2914 863.38,-2914"/>
 </a>
 </g>
 </g>
@@ -710,8 +719,8 @@
 <g id="edge28_Node000037_Node000005" class="edge">
 <title>Node5&#45;&gt;Node37</title>
 <g id="a_edge28_Node000037_Node000005"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M818.49,-5220.09C788.29,-5165.26 760.68,-5104.33 745,-5044 720.85,-4951.08 684.49,-4249.94 750.25,-4180 784.18,-4143.91 825.4,-4197.21 860.25,-4162 889.52,-4132.43 912.75,-4098.3 931.03,-4061.42"/>
-<polygon fill="none" stroke="#63b8ff" points="930.98,-4061.52 929.96,-4054.38 936.16,-4050.7 937.18,-4057.84 930.98,-4061.52"/>
+<path fill="none" stroke="#63b8ff" d="M818.49,-5220.09C788.29,-5165.26 760.68,-5104.33 745,-5044 720.85,-4951.08 684.81,-4250.24 750.25,-4180 782.23,-4145.68 821.4,-4195.49 854.25,-4162 883.29,-4132.39 906.36,-4098.29 924.55,-4061.48"/>
+<polygon fill="none" stroke="#63b8ff" points="924.48,-4061.61 923.45,-4054.47 929.65,-4050.78 930.67,-4057.92 924.48,-4061.61"/>
 </a>
 </g>
 <text text-anchor="start" x="748" y="-4634.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerService</text>
@@ -1255,8 +1264,8 @@
 <g id="edge14_Node000004_Node000027" class="edge">
 <title>Node27&#45;&gt;Node4</title>
 <g id="a_edge14_Node000004_Node000027"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M104.07,-5062.22C79.63,-4909.44 33.74,-4531.63 117,-4232 185.38,-3985.92 358.51,-3739.61 469.07,-3599.77"/>
-<polygon fill="none" stroke="#63b8ff" points="468.9,-3599.99 469.49,-3592.81 476.36,-3590.6 475.76,-3597.78 468.9,-3599.99"/>
+<path fill="none" stroke="#63b8ff" d="M104.29,-5062.01C80.36,-4909.18 35.57,-4531.93 117,-4232 182.97,-3989.02 349.56,-3744.1 457.3,-3603.31"/>
+<polygon fill="none" stroke="#63b8ff" points="457.09,-3603.58 457.57,-3596.39 464.4,-3594.07 463.92,-3601.26 457.09,-3603.58"/>
 </a>
 </g>
 <text text-anchor="start" x="120" y="-4634.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerLanguageService</text>
@@ -1265,8 +1274,8 @@
 <g id="edge16_Node000004_Node000029" class="edge">
 <title>Node29&#45;&gt;Node4</title>
 <g id="a_edge16_Node000004_Node000029"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M904.28,-4540.25C900.23,-4450.66 880.9,-4318.58 808.25,-4232 795.2,-4216.44 784.57,-4222.77 766.25,-4214 721.77,-4192.71 696.71,-4202.26 668.25,-4162 590.44,-4051.92 561.67,-3906.57 553.8,-3778.59"/>
-<polygon fill="none" stroke="#63b8ff" points="553.81,-3778.75 549.47,-3772.98 553.13,-3766.77 557.46,-3772.53 553.81,-3778.75"/>
+<path fill="none" stroke="#63b8ff" d="M904.28,-4540.25C900.23,-4450.66 880.9,-4318.58 808.25,-4232 795.2,-4216.44 784.67,-4222.54 766.25,-4214 719.37,-4192.26 692.77,-4203.7 662.25,-4162 583.98,-4055.04 553.49,-3913.09 544.04,-3786.64"/>
+<polygon fill="none" stroke="#63b8ff" points="544.04,-3786.54 539.63,-3780.83 543.21,-3774.57 547.61,-3780.28 544.04,-3786.54"/>
 </a>
 </g>
 <text text-anchor="start" x="769.25" y="-4193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerStateHolder</text>
@@ -1275,104 +1284,104 @@
 <g id="edge27_Node000037_Node000029" class="edge">
 <title>Node29&#45;&gt;Node37</title>
 <g id="a_edge27_Node000037_Node000029"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M922.16,-4540.03C937.81,-4454.59 958.78,-4326.58 967.25,-4214 970.95,-4164.85 973.45,-4113.8 975.04,-4062.54"/>
-<polygon fill="none" stroke="#63b8ff" points="975.05,-4062.4 971.23,-4056.29 975.4,-4050.41 979.22,-4056.52 975.05,-4062.4"/>
+<path fill="none" stroke="#63b8ff" d="M922.16,-4540.03C937.81,-4454.59 958.78,-4326.58 967.25,-4214 970.94,-4165 973.3,-4114.1 974.66,-4062.99"/>
+<polygon fill="none" stroke="#63b8ff" points="974.66,-4062.89 970.81,-4056.79 974.96,-4050.89 978.81,-4056.99 974.66,-4062.89"/>
 </a>
 </g>
-<text text-anchor="start" x="971.65" y="-4193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerStateHolder</text>
+<text text-anchor="start" x="971.64" y="-4193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerStateHolder</text>
 </g>
 <!-- Node38 -->
 <g id="Node000038" class="node">
 <title>Node38</title>
 <g id="a_Node000038"><a xlink:href="classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1_menu_save_view_model.html" target="_top" xlink:title="ViewModel for managing backup menu UI state and accessibility texts.">
-<polygon fill="white" stroke="none" points="851.62,-3884 676.88,-3884 676.88,-3080 851.62,-3080 851.62,-3884"/>
-<text text-anchor="start" x="699.75" y="-3870.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
-<text text-anchor="start" x="717" y="-3858.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel</text>
-<text text-anchor="start" x="682.38" y="-3842.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3842.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3830.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupAccessibleText</text>
-<text text-anchor="start" x="682.38" y="-3814.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3814.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3802.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupRoleDescription</text>
-<text text-anchor="start" x="682.38" y="-3786.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3786.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3774.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupText</text>
-<text text-anchor="start" x="682.38" y="-3758.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3758.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3746.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupTooltip</text>
-<text text-anchor="start" x="682.38" y="-3730.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3730.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3718.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellConfirmationMessage</text>
-<text text-anchor="start" x="682.38" y="-3702.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3702.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellConfirmationTitle</text>
-<text text-anchor="start" x="682.38" y="-3674.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3674.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3662.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellDeleteAccessibleText</text>
-<text text-anchor="start" x="682.38" y="-3646.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3646.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObservableList</text>
-<text text-anchor="start" x="690.88" y="-3634.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; GameDto &gt; games</text>
-<text text-anchor="start" x="682.38" y="-3618.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3618.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> maxiBackupAccessibleText</text>
-<text text-anchor="start" x="682.38" y="-3590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3590.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
-<text text-anchor="start" x="690.88" y="-3578.5" font-family="Helvetica,sans-Serif" font-size="10.00"> maxiBackupRoleDescription</text>
-<text text-anchor="start" x="690.88" y="-3562.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
-<text text-anchor="start" x="682.38" y="-3546.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3546.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="690.88" y="-3534.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
-<text text-anchor="start" x="690.88" y="-3522.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_CLOSED</text>
-<text text-anchor="start" x="682.38" y="-3506.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3506.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
-<text text-anchor="start" x="690.88" y="-3494.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
-<text text-anchor="start" x="690.88" y="-3482.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_OPENED</text>
-<text text-anchor="start" x="680.88" y="-3466.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3466.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel</text>
-<text text-anchor="start" x="690.88" y="-3454.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerStateHolder playerState</text>
-<text text-anchor="start" x="690.88" y="-3442.5" font-family="Helvetica,sans-Serif" font-size="10.00">Holder, GameService gameService)</text>
-<text text-anchor="start" x="680.88" y="-3426.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3426.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupAccessible</text>
-<text text-anchor="start" x="690.88" y="-3414.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
-<text text-anchor="start" x="680.88" y="-3398.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3398.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupRole</text>
-<text text-anchor="start" x="690.88" y="-3386.5" font-family="Helvetica,sans-Serif" font-size="10.00">DescriptionProperty()</text>
-<text text-anchor="start" x="680.88" y="-3370.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3370.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupText</text>
-<text text-anchor="start" x="690.88" y="-3358.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
-<text text-anchor="start" x="680.88" y="-3342.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3342.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupTooltip</text>
-<text text-anchor="start" x="690.88" y="-3330.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
-<text text-anchor="start" x="680.88" y="-3314.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3314.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellConfirmation</text>
-<text text-anchor="start" x="690.88" y="-3302.5" font-family="Helvetica,sans-Serif" font-size="10.00">MessageProperty()</text>
-<text text-anchor="start" x="680.88" y="-3286.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3286.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellConfirmation</text>
-<text text-anchor="start" x="690.88" y="-3274.5" font-family="Helvetica,sans-Serif" font-size="10.00">TitleProperty()</text>
-<text text-anchor="start" x="680.88" y="-3258.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3258.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellDelete</text>
-<text text-anchor="start" x="690.88" y="-3246.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
-<text text-anchor="start" x="680.88" y="-3230.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3230.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createABackup()</text>
-<text text-anchor="start" x="680.88" y="-3214.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
-<text text-anchor="start" x="690.88" y="-3214.5" font-family="Helvetica,sans-Serif" font-size="10.00">void deleteABackup</text>
-<text text-anchor="start" x="690.88" y="-3202.5" font-family="Helvetica,sans-Serif" font-size="10.00">(GameDto gameToDelete)</text>
-<text text-anchor="start" x="690.88" y="-3186.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 16 more...</text>
-<text text-anchor="start" x="682.38" y="-3170.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3170.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
-<text text-anchor="start" x="690.88" y="-3158.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndConcatenatedBinding(String</text>
-<text text-anchor="start" x="690.88" y="-3146.5" font-family="Helvetica,sans-Serif" font-size="10.00"> key, String suffixKey)</text>
-<text text-anchor="start" x="682.38" y="-3130.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3130.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>
-<text text-anchor="start" x="690.88" y="-3118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key)</text>
-<text text-anchor="start" x="682.38" y="-3102.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3102.5" font-family="Helvetica,sans-Serif" font-size="10.00">void loadGames()</text>
-<text text-anchor="start" x="682.38" y="-3086.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
-<text text-anchor="start" x="690.88" y="-3086.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setSelectedBackup()</text>
-<polygon fill="#666666" stroke="#666666" points="676.88,-3854 676.88,-3854 851.62,-3854 851.62,-3854 676.88,-3854"/>
-<polygon fill="#666666" stroke="#666666" points="676.88,-3478 676.88,-3478 688.88,-3478 688.88,-3478 676.88,-3478"/>
-<polygon fill="#666666" stroke="#666666" points="688.88,-3478 688.88,-3478 851.62,-3478 851.62,-3478 688.88,-3478"/>
-<polygon fill="none" stroke="#666666" points="676.88,-3080 676.88,-3884 851.62,-3884 851.62,-3080 676.88,-3080"/>
+<polygon fill="white" stroke="none" points="845.62,-3884 670.88,-3884 670.88,-3080 845.62,-3080 845.62,-3884"/>
+<text text-anchor="start" x="693.75" y="-3870.5" font-family="Helvetica,sans-Serif" font-size="10.00">fr.softsf.sudokufx.viewmodel.</text>
+<text text-anchor="start" x="711" y="-3858.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel</text>
+<text text-anchor="start" x="676.38" y="-3842.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3842.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3830.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupAccessibleText</text>
+<text text-anchor="start" x="676.38" y="-3814.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3814.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3802.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupRoleDescription</text>
+<text text-anchor="start" x="676.38" y="-3786.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3786.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3774.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupText</text>
+<text text-anchor="start" x="676.38" y="-3758.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3758.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3746.5" font-family="Helvetica,sans-Serif" font-size="10.00"> backupTooltip</text>
+<text text-anchor="start" x="676.38" y="-3730.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3730.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3718.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellConfirmationMessage</text>
+<text text-anchor="start" x="676.38" y="-3702.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3702.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3690.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellConfirmationTitle</text>
+<text text-anchor="start" x="676.38" y="-3674.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3674.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3662.5" font-family="Helvetica,sans-Serif" font-size="10.00"> cellDeleteAccessibleText</text>
+<text text-anchor="start" x="676.38" y="-3646.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3646.5" font-family="Helvetica,sans-Serif" font-size="10.00">final ObservableList</text>
+<text text-anchor="start" x="684.88" y="-3634.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; GameDto &gt; games</text>
+<text text-anchor="start" x="676.38" y="-3618.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3618.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3606.5" font-family="Helvetica,sans-Serif" font-size="10.00"> maxiBackupAccessibleText</text>
+<text text-anchor="start" x="676.38" y="-3590.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3590.5" font-family="Helvetica,sans-Serif" font-size="10.00">final StringBinding</text>
+<text text-anchor="start" x="684.88" y="-3578.5" font-family="Helvetica,sans-Serif" font-size="10.00"> maxiBackupRoleDescription</text>
+<text text-anchor="start" x="684.88" y="-3562.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 10 more...</text>
+<text text-anchor="start" x="676.38" y="-3546.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3546.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="684.88" y="-3534.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
+<text text-anchor="start" x="684.88" y="-3522.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_CLOSED</text>
+<text text-anchor="start" x="676.38" y="-3506.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3506.5" font-family="Helvetica,sans-Serif" font-size="10.00">static final String</text>
+<text text-anchor="start" x="684.88" y="-3494.5" font-family="Helvetica,sans-Serif" font-size="10.00"> MENU_ACCESSIBILITY</text>
+<text text-anchor="start" x="684.88" y="-3482.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ROLE_DESCRIPTION_OPENED</text>
+<text text-anchor="start" x="674.88" y="-3466.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3466.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuSaveViewModel</text>
+<text text-anchor="start" x="684.88" y="-3454.5" font-family="Helvetica,sans-Serif" font-size="10.00">(PlayerStateHolder playerState</text>
+<text text-anchor="start" x="684.88" y="-3442.5" font-family="Helvetica,sans-Serif" font-size="10.00">Holder, GameService gameService)</text>
+<text text-anchor="start" x="674.88" y="-3426.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3426.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupAccessible</text>
+<text text-anchor="start" x="684.88" y="-3414.5" font-family="Helvetica,sans-Serif" font-size="10.00">TextProperty()</text>
+<text text-anchor="start" x="674.88" y="-3398.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3398.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupRole</text>
+<text text-anchor="start" x="684.88" y="-3386.5" font-family="Helvetica,sans-Serif" font-size="10.00">DescriptionProperty()</text>
+<text text-anchor="start" x="674.88" y="-3370.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3370.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupText</text>
+<text text-anchor="start" x="684.88" y="-3358.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="674.88" y="-3342.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3342.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding backupTooltip</text>
+<text text-anchor="start" x="684.88" y="-3330.5" font-family="Helvetica,sans-Serif" font-size="10.00">Property()</text>
+<text text-anchor="start" x="674.88" y="-3314.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3314.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellConfirmation</text>
+<text text-anchor="start" x="684.88" y="-3302.5" font-family="Helvetica,sans-Serif" font-size="10.00">MessageProperty()</text>
+<text text-anchor="start" x="674.88" y="-3286.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3286.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellConfirmation</text>
+<text text-anchor="start" x="684.88" y="-3274.5" font-family="Helvetica,sans-Serif" font-size="10.00">TitleProperty()</text>
+<text text-anchor="start" x="674.88" y="-3258.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3258.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding cellDelete</text>
+<text text-anchor="start" x="684.88" y="-3246.5" font-family="Helvetica,sans-Serif" font-size="10.00">AccessibleTextProperty()</text>
+<text text-anchor="start" x="674.88" y="-3230.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3230.5" font-family="Helvetica,sans-Serif" font-size="10.00">void createABackup()</text>
+<text text-anchor="start" x="674.88" y="-3214.5" font-family="Helvetica,sans-Serif" font-size="10.00">+</text>
+<text text-anchor="start" x="684.88" y="-3214.5" font-family="Helvetica,sans-Serif" font-size="10.00">void deleteABackup</text>
+<text text-anchor="start" x="684.88" y="-3202.5" font-family="Helvetica,sans-Serif" font-size="10.00">(GameDto gameToDelete)</text>
+<text text-anchor="start" x="684.88" y="-3186.5" font-family="Helvetica,sans-Serif" font-size="10.00">and 16 more...</text>
+<text text-anchor="start" x="676.38" y="-3170.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3170.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createFormatted</text>
+<text text-anchor="start" x="684.88" y="-3158.5" font-family="Helvetica,sans-Serif" font-size="10.00">AndConcatenatedBinding(String</text>
+<text text-anchor="start" x="684.88" y="-3146.5" font-family="Helvetica,sans-Serif" font-size="10.00"> key, String suffixKey)</text>
+<text text-anchor="start" x="676.38" y="-3130.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3130.5" font-family="Helvetica,sans-Serif" font-size="10.00">StringBinding createString</text>
+<text text-anchor="start" x="684.88" y="-3118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Binding(String key)</text>
+<text text-anchor="start" x="676.38" y="-3102.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3102.5" font-family="Helvetica,sans-Serif" font-size="10.00">void loadGames()</text>
+<text text-anchor="start" x="676.38" y="-3086.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;</text>
+<text text-anchor="start" x="684.88" y="-3086.5" font-family="Helvetica,sans-Serif" font-size="10.00">void setSelectedBackup()</text>
+<polygon fill="#666666" stroke="#666666" points="670.88,-3854 670.88,-3854 845.62,-3854 845.62,-3854 670.88,-3854"/>
+<polygon fill="#666666" stroke="#666666" points="670.88,-3478 670.88,-3478 682.88,-3478 682.88,-3478 670.88,-3478"/>
+<polygon fill="#666666" stroke="#666666" points="682.88,-3478 682.88,-3478 845.62,-3478 845.62,-3478 682.88,-3478"/>
+<polygon fill="none" stroke="#666666" points="670.88,-3080 670.88,-3884 845.62,-3884 845.62,-3080 670.88,-3080"/>
 </a>
 </g>
 </g>
@@ -1380,11 +1389,11 @@
 <g id="edge30_Node000038_Node000029" class="edge">
 <title>Node29&#45;&gt;Node38</title>
 <g id="a_edge30_Node000038_Node000029"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M894.42,-4540.17C885.76,-4447.6 871.78,-4304.15 857.25,-4180 846.5,-4088.13 833.97,-3989.59 821.65,-3896.37"/>
-<polygon fill="none" stroke="#63b8ff" points="821.64,-3896.34 816.89,-3890.91 820.07,-3884.44 824.82,-3889.86 821.64,-3896.34"/>
+<path fill="none" stroke="#63b8ff" d="M895.33,-4540.06C887.32,-4447.4 873.79,-4303.89 857.25,-4180 856.18,-4171.96 855.48,-4170.02 854.25,-4162 841.04,-4076.2 827.56,-3984.2 815.05,-3896.48"/>
+<polygon fill="none" stroke="#63b8ff" points="815.03,-3896.34 810.22,-3890.97 813.34,-3884.46 818.14,-3889.84 815.03,-3896.34"/>
 </a>
 </g>
-<text text-anchor="start" x="863.09" y="-4193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerStateHolder</text>
+<text text-anchor="start" x="863.45" y="-4193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;playerStateHolder</text>
 </g>
 <!-- Node29&#45;&gt;Node42 -->
 <g id="edge44_Node000042_Node000029" class="edge">
@@ -1464,8 +1473,8 @@
 <g id="edge18_Node000004_Node000030" class="edge">
 <title>Node30&#45;&gt;Node4</title>
 <g id="a_edge18_Node000004_Node000030"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M1895.13,-5384.71C1688.13,-5299.37 1190.5,-5098.19 1013.25,-5062 972.27,-5053.63 666.68,-5073.72 637.25,-5044 605.48,-5011.92 608.28,-4277.1 606.25,-4232 599.51,-4082.52 590.96,-3916.32 583.58,-3778.53"/>
-<polygon fill="none" stroke="#63b8ff" points="583.59,-3778.59 579.27,-3772.82 582.95,-3766.61 587.26,-3772.39 583.59,-3778.59"/>
+<path fill="none" stroke="#63b8ff" d="M1895.13,-5384.71C1688.13,-5299.37 1190.5,-5098.19 1013.25,-5062 972.27,-5053.63 666.68,-5073.72 637.25,-5044 605.48,-5011.92 608.64,-4277.08 606.25,-4232 598.46,-4085.28 587.64,-3922.54 577.97,-3786.33"/>
+<polygon fill="none" stroke="#63b8ff" points="577.98,-3786.52 573.57,-3780.82 577.13,-3774.55 581.55,-3780.26 577.98,-3786.52"/>
 </a>
 </g>
 <text text-anchor="start" x="640.25" y="-4634.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;toasterService</text>
@@ -1578,18 +1587,18 @@
 <g id="edge19_Node000004_Node000031" class="edge">
 <title>Node31&#45;&gt;Node4</title>
 <g id="a_edge19_Node000004_Node000031"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M339.91,-4506.11C357.3,-4426.78 379.98,-4323.55 400.25,-4232 433.37,-4082.37 470.44,-3915.99 501.23,-3778.12"/>
-<polygon fill="none" stroke="#63b8ff" points="501.19,-3778.3 498.59,-3771.57 503.8,-3766.59 506.4,-3773.32 501.19,-3778.3"/>
+<path fill="none" stroke="#63b8ff" d="M338.94,-4506.03C375.69,-4332.23 441.68,-4020.13 491.14,-3786.2"/>
+<polygon fill="none" stroke="#63b8ff" points="491.11,-3786.34 488.44,-3779.64 493.6,-3774.6 496.27,-3781.29 491.11,-3786.34"/>
 </a>
 </g>
-<text text-anchor="start" x="412.18" y="-4193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;dynamicFontSize</text>
+<text text-anchor="start" x="407.22" y="-4193.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;dynamicFontSize</text>
 </g>
 <!-- Node32&#45;&gt;Node1 -->
 <g id="edge20_Node000001_Node000032" class="edge">
 <title>Node32&#45;&gt;Node1</title>
 <g id="a_edge20_Node000001_Node000032"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M538.17,-1694.18C517.65,-1585.42 505.87,-1422.47 583.25,-1310 883.67,-873.37 1531.33,-723.34 1896.97,-672.49"/>
-<polygon fill="none" stroke="#63b8ff" points="1897.08,-672.48 1902.48,-667.7 1908.97,-670.85 1903.57,-675.63 1897.08,-672.48"/>
+<path fill="none" stroke="#63b8ff" d="M524.69,-1660.15C511.35,-1553.18 512.2,-1410.66 583.25,-1310 888.47,-877.61 1532.71,-725.97 1896.9,-673.71"/>
+<polygon fill="none" stroke="#63b8ff" points="1896.97,-673.71 1902.35,-668.9 1908.85,-672.02 1903.47,-676.83 1896.97,-673.71"/>
 </a>
 </g>
 <text text-anchor="start" x="586.25" y="-1339.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;helpViewModel</text>
@@ -1962,7 +1971,7 @@
 <g id="edge26_Node000001_Node000037" class="edge">
 <title>Node37&#45;&gt;Node1</title>
 <g id="a_edge26_Node000001_Node000037"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M920.76,-2914.24C881.55,-2341.54 840.28,-1523.11 913.5,-1394 1123.29,-1024.04 1597.21,-817.61 1897.13,-719.63"/>
+<path fill="none" stroke="#63b8ff" d="M931.85,-2914.13C906.28,-2318.81 876.38,-1459.46 913.5,-1394 1123.29,-1024.04 1597.21,-817.61 1897.13,-719.63"/>
 <polygon fill="none" stroke="#63b8ff" points="1897.23,-719.6 1901.7,-713.94 1908.64,-715.89 1904.17,-721.55 1897.23,-719.6"/>
 </a>
 </g>
@@ -1972,18 +1981,18 @@
 <g id="edge29_Node000001_Node000038" class="edge">
 <title>Node38&#45;&gt;Node1</title>
 <g id="a_edge29_Node000001_Node000038"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M754.07,-3080.04C740.69,-2494.02 723.51,-1464.98 765.75,-1394 1009.93,-983.65 1565.49,-786.28 1897.59,-701.77"/>
-<polygon fill="none" stroke="#63b8ff" points="1897.29,-701.84 1902.12,-696.49 1908.92,-698.9 1904.08,-704.25 1897.29,-701.84"/>
+<path fill="none" stroke="#63b8ff" d="M754.39,-3080.03C750.14,-2494.34 748.54,-1466.14 788.75,-1394 1017.89,-982.88 1566.75,-785.98 1897.09,-701.72"/>
+<polygon fill="none" stroke="#63b8ff" points="1897.22,-701.69 1902.05,-696.34 1908.85,-698.75 1904.02,-704.1 1897.22,-701.69"/>
 </a>
 </g>
-<text text-anchor="start" x="768.75" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;menuSaveViewModel</text>
+<text text-anchor="start" x="791.75" y="-1806.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;menuSaveViewModel</text>
 </g>
 <!-- Node39&#45;&gt;Node38 -->
 <g id="edge31_Node000038_Node000039" class="edge">
 <title>Node39&#45;&gt;Node38</title>
 <g id="a_edge31_Node000038_Node000039"><a xlink:title=" ">
-<path fill="none" stroke="#63b8ff" d="M413.86,-5266.03C399.05,-4961.28 375.24,-4312.25 436.25,-4232 453.61,-4209.16 470.77,-4222.24 498.25,-4214 573.12,-4191.55 615.48,-4221.43 666.25,-4162 729.34,-4088.15 762.18,-3992.45 777.64,-3896.31"/>
-<polygon fill="none" stroke="#63b8ff" points="777.62,-3896.42 774.57,-3889.88 779.44,-3884.56 782.48,-3891.09 777.62,-3896.42"/>
+<path fill="none" stroke="#63b8ff" d="M414.02,-5266.15C399.5,-4961.62 376.18,-4312.96 436.25,-4232 452.08,-4210.66 467.94,-4222.08 493.25,-4214 564.88,-4191.12 605.51,-4219.26 654.25,-4162 717.2,-4088.05 750.62,-3992.44 766.93,-3896.44"/>
+<polygon fill="none" stroke="#63b8ff" points="766.92,-3896.55 763.93,-3889.99 768.84,-3884.71 771.82,-3891.27 766.92,-3896.55"/>
 </a>
 </g>
 <text text-anchor="start" x="439.25" y="-4634.5" font-family="Helvetica,sans-Serif" font-size="10.00" fill="grey">&#45;gameService</text>

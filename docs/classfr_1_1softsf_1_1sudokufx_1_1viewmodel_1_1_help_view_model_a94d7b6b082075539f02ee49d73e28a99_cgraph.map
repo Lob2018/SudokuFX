@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.viewmodel.HelpViewModel.addChangelogButton" name="fr.softsf.sudokufx.viewmodel.HelpViewModel.addChangelogButton">
+<area shape="rect" id="Node000001" title="Adds a &quot;Changelog&quot; button to the given alert." alt="" coords="5,5,243,48"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1navigation_1_1_coordinator.html#a421268572847ce81efeee19df1bbf282" title="Opens the changelog&#39;s page in the user&#39;s default web browser." alt="" coords="291,5,490,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,24,275,24,275,29,243,29"/>
+</map>
