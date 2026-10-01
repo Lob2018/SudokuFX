@@ -4,6 +4,14 @@
 ## Unreleased -
 
 
+🔧 chore setup-java, codeql-action, osv-scanner-action: Bumps the actions-dependencies
+
+([b2066d457b99c17](https://github.com/Lob2018/SudokuFX/commit/b2066d457b99c17c5e35c970dbf4867f5a90295a))
+
+📚 docs Doxygen
+
+([c06a2ee29c8987c](https://github.com/Lob2018/SudokuFX/commit/c06a2ee29c8987cb2dfdc9dbf581a674e698e2ff))
+
 ✨ feat src/*, LICENSE.txt, pom.xml, README.md: Update license from GPLv3 to AGPLv3
 - Update license headers and project metadata to AGPLv3.
 - Tests pass.
