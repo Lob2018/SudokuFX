@@ -1,3 +1,16 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.business.OptionsServiceUTest" name="fr.softsf.sudokufx.testing.unit.service.business.OptionsServiceUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,324,372"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="332,677,648,992"/>
+<area shape="rect" id="Node000002" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1OptionsRepository.html" title="Repository interface for Options entities." alt="" coords="5,183,199,273"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="89,275,78,340,70,426,71,472,77,517,88,561,107,603,126,631,148,658,200,704,258,743,319,775,314,776,255,747,196,709,144,662,121,635,102,605,83,563,71,518,65,472,65,426,73,340,90,270"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1OptionsService.html" title="Service for managing Options entities." alt="" coords="247,385,507,604"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="147,270,255,373,250,375,147,275"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="17,5,187,95"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,107,105,184,100,183,102,112"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IOptionsMapper.html" title="This interface defines methods for mapping objects of type Options to objects of type OptionsDto and ..." alt="" coords="565,155,874,301"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="721,298,719,367,710,444,693,526,667,605,636,665,632,661,662,603,688,525,704,444,713,366,718,303"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="625,303,522,385,518,381,629,299"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1JakartaValidator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="266,144,520,312"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="490,309,510,335,519,359,522,385,543,519,546,578,539,653,538,662,534,659,534,653,540,578,538,519,517,385,514,360,505,337,490,314"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="389,309,387,369,382,368,387,314"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="412,601,430,652,433,662,428,661,425,654,411,606"/>
 </map>

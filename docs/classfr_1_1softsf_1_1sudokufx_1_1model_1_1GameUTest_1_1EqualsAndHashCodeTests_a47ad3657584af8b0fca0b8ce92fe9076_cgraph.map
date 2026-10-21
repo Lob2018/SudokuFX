@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.model.GameUTest.EqualsAndHashCodeTests.givenSameGameObjects_whenComparing_thenTheyAreEqual" name="fr.softsf.sudokufx.model.GameUTest.EqualsAndHashCodeTests.givenSameGameObjects_whenComparing_thenTheyAreEqual">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,392,60"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a1fa26095322324f412ff22213e27b14f" title="Computes the hash code based on all fields." alt="" coords="440,13,623,53"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="392,30,426,30,426,35,392,35"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,391,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="134,28,136,19,148,10,168,5,198,3,233,6,256,15,251,16,232,11,198,8,169,10,150,15,140,21,139,31"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a1fa26095322324f412ff22213e27b14f" title="Computes the hash code based on all fields." alt="" coords="439,38,620,82"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="391,58,426,60,421,60,391,63"/>
 </map>

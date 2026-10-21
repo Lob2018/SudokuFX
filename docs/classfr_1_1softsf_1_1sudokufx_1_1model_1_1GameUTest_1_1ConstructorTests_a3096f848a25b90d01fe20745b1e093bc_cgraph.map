@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.model.GameUTest.ConstructorTests.givenNullGrid_whenCreatingGame_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.GameUTest.ConstructorTests.givenNullGrid_whenCreatingGame_thenNullPointerExceptionIsThrown">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,324,108"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="103,28,106,18,119,10,138,5,165,3,197,6,219,16,214,16,196,11,164,8,139,10,121,15,111,21,107,31"/>
+</map>

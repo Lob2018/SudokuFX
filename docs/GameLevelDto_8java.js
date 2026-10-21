@@ -1,4 +1,4 @@
 var GameLevelDto_8java =
 [
-    [ "GameLevelDto", "GameLevelDto_8java.html#a0218c64c4488c809ab03588009d721aa", null ]
+    [ "fr.softsf.sudokufx.dto.GameLevelDto", "namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa", null ]
 ];

@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.view.SplashScreenView.getSplashScreenScene" name="fr.softsf.sudokufx.view.SplashScreenView.getSplashScreenScene">
+<area shape="rect" id="Node000001" title="Returns the JavaFX scene used by the splash screen." alt="" coords="5,29,296,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="96,28,94,19,103,10,122,5,151,3,181,5,202,14,196,14,180,10,150,8,123,10,106,15,99,21,101,30"/>
+</map>

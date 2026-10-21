@@ -44,6 +44,6 @@ var namespacefr_1_1softsf_1_1sudokufx =
     ] ],
     [ "view", "namespacefr_1_1softsf_1_1sudokufx_1_1view.html", "namespacefr_1_1softsf_1_1sudokufx_1_1view" ],
     [ "viewmodel", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel.html", "namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel" ],
-    [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1_launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1_launcher" ],
-    [ "SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main.html", "classfr_1_1softsf_1_1sudokufx_1_1_sudo_main" ]
+    [ "Launcher", "classfr_1_1softsf_1_1sudokufx_1_1Launcher.html", "classfr_1_1softsf_1_1sudokufx_1_1Launcher" ],
+    [ "SudoMain", "classfr_1_1softsf_1_1sudokufx_1_1SudoMain.html", "classfr_1_1softsf_1_1sudokufx_1_1SudoMain" ]
 ];

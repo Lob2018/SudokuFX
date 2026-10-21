@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty" name="fr.softsf.sudokufx.viewmodel.MenuHiddenViewModel.menuHiddenButtonShowAccessibilityTextProperty">
+<area shape="rect" id="Node000001" title="Returns the reactive StringBinding for the accessibility text of the &quot;Show Menu&quot; button when the menu..." alt="" coords="5,29,311,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="99,28,100,19,111,10,131,5,158,3,190,5,211,15,206,15,189,11,158,8,131,10,114,15,105,21,104,30"/>
+</map>

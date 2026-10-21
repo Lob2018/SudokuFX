@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuMiniViewModel.playerAccessibleTextProperty" name="fr.softsf.sudokufx.viewmodel.MenuMiniViewModel.playerAccessibleTextProperty">
+<area shape="rect" id="Node000001" title="Returns the reactive binding for the player button&#39;s accessible text." alt="" coords="5,29,277,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="88,28,89,19,99,10,116,5,141,3,169,5,188,15,183,15,168,11,141,8,117,10,102,15,94,21,93,30"/>
+</map>

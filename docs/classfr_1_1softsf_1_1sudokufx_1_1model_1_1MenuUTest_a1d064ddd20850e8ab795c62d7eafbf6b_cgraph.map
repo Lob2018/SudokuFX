@@ -1,7 +1,8 @@
 <map id="fr.softsf.sudokufx.model.MenuUTest.givenBoundaryValues_whenCreateMenu_thenBoundaryValuesAreAccepted" name="fr.softsf.sudokufx.model.MenuUTest.givenBoundaryValues_whenCreateMenu_thenBoundaryValuesAreAccepted">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,312,92"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#a97b1b5e5c4fa3898ddc4ef431238ae5e" title="Creates a new MenuBuilder for fluent construction of Menu instances." alt="" coords="360,5,543,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="312,38,346,34,347,39,313,43"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" title="Returns the mode of the menu." alt="" coords="360,69,543,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="313,71,347,75,346,81,312,77"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,311,108"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="101,28,105,18,116,10,134,5,158,3,188,6,208,16,203,17,187,11,158,8,135,10,118,15,109,21,106,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#a97b1b5e5c4fa3898ddc4ef431238ae5e" title="Creates a new MenuBuilder for fluent construction of Menu instances." alt="" coords="359,12,540,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,48,346,46,341,47,312,53"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" title="Returns the mode of the menu." alt="" coords="359,81,540,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,84,346,91,341,91,311,90"/>
 </map>

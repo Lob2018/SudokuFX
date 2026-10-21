@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.cacherLesCases" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.cacherLesCases">
+<area shape="rect" id="Node000001" title="Cache un nombre spécifié de cases dans la grille en les remplaçant par zéro." alt="" coords="5,29,278,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="90,28,88,19,97,10,115,5,142,3,170,5,190,14,184,14,169,10,141,8,116,10,100,15,93,21,95,30"/>
+</map>

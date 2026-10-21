@@ -1,5 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/IOptionsMapper.java" name="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/IOptionsMapper.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="29,108,196,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,60,115,94,110,94,110,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="205,5,419,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,124,171,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,68,132,119,130,115,241,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="195,124,429,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="314,66,314,109,310,106,310,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="453,115,635,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="383,65,482,108,477,109,382,70"/>
 </map>

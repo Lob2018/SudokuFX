@@ -1,3 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSolveViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSolveViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,315,288"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1219,313,1500"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html" title="ViewModel for managing &quot;solve&quot; menu UI state and accessibility texts." alt="" coords="39,5,279,1146"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,1143,162,1203,157,1202,159,1148"/>
 </map>

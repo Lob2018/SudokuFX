@@ -1,5 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/IGridMapper.java" name="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/IGridMapper.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="29,108,196,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,60,115,94,110,94,110,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="193,5,407,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,171,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,67,133,111,131,106,227,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="194,115,406,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="302,66,302,101,298,98,298,69"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="429,115,638,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="378,65,488,109,483,109,377,70"/>
 </map>

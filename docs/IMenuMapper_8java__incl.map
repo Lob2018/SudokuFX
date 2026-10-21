@@ -1,5 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/IMenuMapper.java" name="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/IMenuMapper.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="29,108,196,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,60,115,94,110,94,110,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="198,5,412,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,171,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,67,135,111,133,106,230,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="195,115,416,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="307,66,308,101,303,98,303,69"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="439,115,657,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="387,65,502,109,496,109,386,70"/>
 </map>

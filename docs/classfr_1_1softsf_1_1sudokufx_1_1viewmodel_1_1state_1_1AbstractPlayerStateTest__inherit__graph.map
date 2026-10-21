@@ -1,5 +1,13 @@
 <map id="fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest" name="fr.softsf.sudokufx.viewmodel.state.AbstractPlayerStateTest">
-<area shape="rect" id="Node000001" title="Abstract base test class that provides:" alt="" coords="14,5,259,235"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolderUTest.html" title=" " alt="" coords="5,283,268,669"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,249,139,282,134,282,134,249"/>
+<area shape="rect" id="Node000001" title="Abstract base test class that provides:" alt="" coords="689,5,933,263"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1sudoku_1_1GridViewModelUTest.html" title=" " alt="" coords="5,311,278,1104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="673,151,581,170,479,202,429,223,380,248,334,278,293,313,280,326,276,323,289,309,331,273,377,243,427,218,478,197,580,165,677,147"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuPlayerViewModelUTest.html" title=" " alt="" coords="303,347,629,1067"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="681,258,643,312,619,349,615,346,638,309,678,262"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuSaveViewModelUTest.html" title=" " alt="" coords="653,446,970,968"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="812,275,814,447,809,445,810,280"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModelUTest.html" title=" " alt="" coords="993,418,1322,996"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="943,258,984,309,1017,362,1047,419,1042,418,1012,364,980,312,942,263"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolderUTest.html" title=" " alt="" coords="1346,488,1607,926"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="948,146,1044,164,1147,196,1198,217,1247,243,1294,273,1336,309,1370,348,1398,392,1421,439,1439,489,1434,487,1416,441,1393,395,1365,351,1332,313,1291,277,1245,247,1196,222,1145,201,1042,169,949,151"/>
 </map>

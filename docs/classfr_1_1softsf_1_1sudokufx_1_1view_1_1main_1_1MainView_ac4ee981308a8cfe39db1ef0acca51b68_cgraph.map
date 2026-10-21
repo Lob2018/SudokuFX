@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.handleFileImageChooser" name="fr.softsf.sudokufx.view.main.MainView.handleFileImageChooser">
+<area shape="rect" id="Node000001" title="Opens a file chooser for a background image and passes the selected file to the ViewModel for asynchr..." alt="" coords="5,29,255,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="83,28,81,19,89,10,106,5,130,3,157,5,175,14,169,14,156,10,130,8,107,10,92,15,86,21,88,30"/>
+</map>

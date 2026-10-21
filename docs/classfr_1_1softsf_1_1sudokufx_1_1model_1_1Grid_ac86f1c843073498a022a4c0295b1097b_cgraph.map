@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.Grid.setDefaultgridvalue" name="fr.softsf.sudokufx.model.Grid.setDefaultgridvalue">
+<area shape="rect" id="Node000001" title="Sets the default grid values." alt="" coords="5,5,187,50"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Grid.html#af49e1b436868180644535afda35cd5cd" title="Validates that the default grid value is not null." alt="" coords="235,5,449,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,25,222,27,216,28,187,30"/>
+</map>

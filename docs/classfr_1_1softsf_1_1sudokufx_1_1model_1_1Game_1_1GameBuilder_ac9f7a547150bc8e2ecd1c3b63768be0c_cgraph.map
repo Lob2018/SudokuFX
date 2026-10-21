@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.Game.GameBuilder.build" name="fr.softsf.sudokufx.model.Game.GameBuilder.build">
+<area shape="rect" id="Node000001" title="Builds a validated Game instance." alt="" coords="5,29,190,74"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a57f50a18e9881291b85343844af5586c" title="Protected default constructor for JPA." alt="" coords="238,29,419,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,49,225,51,220,52,190,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="285,27,283,19,290,10,306,5,328,3,353,5,370,14,364,14,352,10,328,8,307,10,293,15,288,21,289,30"/>
+</map>

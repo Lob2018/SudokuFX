@@ -1,0 +1,19 @@
+<map id="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigureGameListView_thenThrowsNullPointerException" name="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigureGameListView_thenThrowsNullPointerException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,248,444,310"/>
+<area shape="poly" id="edge9_Node000001_Node000001" title=" " alt="" coords="144,247,147,237,161,229,187,223,225,221,269,224,297,234,292,235,268,230,224,227,188,229,163,234,151,240,149,249"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#ae8fd54720d3bf9eed7e6818910574eb0" title="Returns the reactive binding for the cell confirmation message property." alt="" coords="506,29,778,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,246,363,173,425,135,491,100,507,96,503,98,493,105,428,139,366,178,266,250"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#a5ab4585818714dcc320d52514c418a23" title="Returns the reactive binding for the cell delete accessible text property." alt="" coords="506,139,778,200"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="344,245,509,203,504,206,346,250"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#a0ff146482b5bc658c0f2d6525ebc793a" title="Returns the reactive binding for the cell delete accessible text property." alt="" coords="492,248,792,310"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="444,276,479,278,474,280,445,281"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#af227c1d499f693ab59c4c80ac7a5b4d1" title="Returns the observable list of games." alt="" coords="526,358,758,402"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="354,308,535,353,530,355,354,313"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#a7943ef327bf3140fe8094b4866a47223" title="Returns the property for the currently selected backup." alt="" coords="508,451,776,512"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="286,308,493,412,557,444,552,444,491,417,284,313"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="562,28,564,18,579,10,605,5,642,3,687,6,715,15,710,16,686,11,642,8,605,10,581,15,568,22,567,30"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="562,137,564,128,579,119,605,114,642,112,687,115,715,125,710,126,686,120,642,117,605,119,581,124,568,131,567,140"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="562,246,564,237,579,229,605,223,642,221,687,224,715,234,710,235,686,230,642,227,605,229,581,234,568,240,566,249"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="564,356,562,347,575,338,602,333,642,331,687,334,715,343,710,343,686,339,642,336,602,338,577,343,567,349,569,359"/>
+<area shape="poly" id="edge11_Node000006_Node000006" title=" " alt="" coords="562,449,564,440,579,431,605,426,642,424,687,427,715,437,710,437,686,432,642,429,605,431,581,436,568,443,566,452"/>
+</map>

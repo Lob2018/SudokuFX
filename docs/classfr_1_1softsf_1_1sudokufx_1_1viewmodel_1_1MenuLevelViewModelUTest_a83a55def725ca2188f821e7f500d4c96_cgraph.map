@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenStarsBoxAndKey_whenAccessibleTextBinding_thenReturnFormattedText" name="fr.softsf.sudokufx.viewmodel.MenuLevelViewModelUTest.givenStarsBoxAndKey_whenAccessibleTextBinding_thenReturnFormattedText">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,288,75"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuLevelViewModel.html#a2534445f2247fda713a1b90d2e194d91" title="Creates a StringBinding for the accessibility text of the stars UI component associated with a diffic..." alt="" coords="336,13,600,67"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,37,323,37,323,43,288,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,12,288,91"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1PossibilityStarsHBox.html#a7746116cfca8394695053b9c60c076fd" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="336,29,590,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="288,49,322,51,317,52,288,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="404,27,402,19,412,10,432,5,463,3,497,5,519,14,513,14,496,10,463,8,433,10,414,15,407,21,408,30"/>
 </map>

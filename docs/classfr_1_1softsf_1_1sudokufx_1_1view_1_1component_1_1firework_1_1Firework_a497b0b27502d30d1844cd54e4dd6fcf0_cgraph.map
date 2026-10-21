@@ -1,8 +1,19 @@
 <map id="fr.softsf.sudokufx.view.component.firework.Firework.ignite" name="fr.softsf.sudokufx.view.component.firework.Firework.ignite">
-<area shape="rect" id="Node000001" title="Generates a circular particle burst at a random screen location." alt="" coords="5,5,311,45"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#adc1e8659376adaf0c3bdc4a8742cd87c" title="Snapshot of the rendering environment including scaling metrics." alt="" coords="712,5,1017,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,19,359,19,664,19,698,19,698,24,664,24,359,24,311,25"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#a238e975882b916d63349843dd54fbd33" title="Captures the current scene metrics and the firework instance." alt="" coords="359,33,664,73"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="311,35,345,38,345,43,311,40"/>
-<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="664,39,698,36,699,41,665,44"/>
+<area shape="rect" id="Node000001" title="Generates a circular particle burst at a random screen location." alt="" coords="5,89,310,134"/>
+<area shape="poly" id="edge11_Node000001_Node000001" title=" " alt="" coords="92,88,90,79,101,70,123,65,158,63,195,65,219,74,214,75,194,70,157,68,124,70,103,75,95,81,97,89"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#adc1e8659376adaf0c3bdc4a8742cd87c" title="Snapshot of the rendering environment including scaling metrics." alt="" coords="358,89,662,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="310,109,345,111,340,112,310,114"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#a238e975882b916d63349843dd54fbd33" title="Captures the current scene metrics and the firework instance." alt="" coords="1415,143,1719,187"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="273,132,358,144,644,163,930,172,1190,172,1397,171,1402,171,1190,177,930,177,644,169,357,149,272,137"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#ac6cc6c251a94b02e939acfbce3009d5a" title="Initializes the component and its reusable animation loop." alt="" coords="710,29,1014,74"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="644,86,710,78,715,77,645,91"/>
+<area shape="poly" id="edge4_Node000003_Node000001" title=" " alt="" coords="707,55,540,65,358,80,291,89,290,84,357,74,540,59,712,54"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="797,27,794,19,805,10,828,5,862,3,900,5,924,14,919,14,899,10,862,8,829,10,808,15,799,21,801,30"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1Firework.html#ab989e17fd615336c73186f7f80b6c976" title="Updates positions for all active particles and prunes expired ones." alt="" coords="1062,76,1367,121"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="1015,69,1050,76,1044,76,1015,75"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="1059,102,678,111,678,106,1065,101"/>
+<area shape="poly" id="edge7_Node000004_Node000005" title=" " alt="" coords="1336,119,1433,139,1427,139,1336,124"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1firework_1_1FireworkParticle.html#ada8ac44a5ea749dd30023ad11ce7d49e" title="Updates physics, position, and opacity." alt="" coords="1415,73,1719,118"/>
+<area shape="poly" id="edge9_Node000004_Node000006" title=" " alt="" coords="1367,95,1402,97,1397,97,1367,100"/>
+<area shape="poly" id="edge8_Node000005_Node000002" title=" " alt="" coords="1413,160,677,123,677,117,1416,155"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.saveMenuInitialization" name="fr.softsf.sudokufx.view.main.MainView.saveMenuInitialization">
+<area shape="rect" id="Node000001" title="Initializes bindings and event listeners for the save menu components." alt="" coords="5,14,242,58"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1MainView.html#a805ba50257c2565844220d96b618c2c9" title="Synchronizes the menu UI with the current game model state." alt="" coords="290,5,534,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,34,277,36,272,36,242,39"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1MainView.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="582,14,792,58"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="534,34,569,36,564,36,534,39"/>
+</map>

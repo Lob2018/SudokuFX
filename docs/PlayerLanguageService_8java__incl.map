@@ -1,5 +1,19 @@
 <map id="src/main/java/fr/softsf/sudokufx/service/business/PlayerLanguageService.java" name="src/main/java/fr/softsf/sudokufx/service/business/PlayerLanguageService.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="18,5,229,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,108,241,148"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,60,126,94,121,94,121,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1076,5,1285,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,241,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1073,44,717,72,489,92,256,117,256,112,489,87,716,67,1078,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="264,115,576,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1078,51,592,116,592,111,1072,51"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="601,115,866,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1078,60,847,114,846,109,1072,61"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="890,115,1156,160"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1135,67,1071,109,1069,104,1130,68"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="1179,115,1499,160"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1230,65,1294,107,1289,106,1228,70"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1523,115,1726,160"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1286,58,1514,111,1509,111,1285,63"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1750,115,1931,160"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1286,47,1490,74,1737,115,1732,114,1489,80,1285,53"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1956,115,2160,160"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1286,43,1576,69,1943,115,1937,115,1576,74,1285,48"/>
 </map>

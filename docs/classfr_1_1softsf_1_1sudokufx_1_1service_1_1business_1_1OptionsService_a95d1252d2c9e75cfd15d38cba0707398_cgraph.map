@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.service.business.OptionsService.updateOptions" name="fr.softsf.sudokufx.service.business.OptionsService.updateOptions">
+<area shape="rect" id="Node000001" title="Updates an existing Options entity with the values from the given OptionsDto." alt="" coords="5,144,254,189"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a65e4a7ebacda96b9714e3304b1428d44" title="Sets the ARGB hex color after validation." alt="" coords="302,5,483,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,141,226,101,300,60,316,55,312,58,303,65,229,106,166,145"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#aa67cb5a4cf0752e3788b1eab3c747288" title="Sets the background image path after validation." alt="" coords="302,75,483,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="216,141,292,122,288,125,218,146"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a3a3e5476d5d472fabb5eebf4c4401180" title="Sets whether the background song is muted." alt="" coords="302,144,483,189"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="253,164,289,165,283,167,255,169"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a8bdb160c34a5be54951f894adc330a5e" title="Sets whether the background image is opaque." alt="" coords="302,213,483,258"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="217,187,293,208,288,210,217,192"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a3ebfc05d23131bff9114c961a5330766" title="Sets the background song path after validation." alt="" coords="302,283,483,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="165,187,229,227,303,268,317,277,312,276,300,273,226,231,164,192"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format." alt="" coords="531,5,717,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,25,518,27,513,28,484,30"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a771e507dc7b5e3256b5a2e38753ab0c9" title="Validates a file path for non&#45;null and maximum length." alt="" coords="534,179,715,223"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="455,117,484,129,568,171,563,171,482,134,455,123"/>
+<area shape="poly" id="edge8_Node000008_Node000005" title=" " alt="" coords="454,279,482,268,563,231,568,230,484,273,456,285"/>
+</map>

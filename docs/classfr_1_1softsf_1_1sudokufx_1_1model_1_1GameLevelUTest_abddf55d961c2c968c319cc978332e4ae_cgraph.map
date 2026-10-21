@@ -1,7 +1,8 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenDefaultConstructor_whenCreatingGameLevel_thenShouldHaveDefaultValues" name="fr.softsf.sudokufx.model.GameLevelUTest.givenDefaultConstructor_whenCreatingGameLevel_thenShouldHaveDefaultValues">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,30,404,85"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#ad70081f09c712d4f3b5836894c2ff15c" title="Returns the difficulty value of this game level." alt="" coords="452,5,635,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="404,36,438,33,439,38,405,41"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#ae96ae3832695c27c80bbd4be0604e8f5" title="Returns the unique identifier of this game level." alt="" coords="452,69,635,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="405,74,439,77,438,82,404,79"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,403,93"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="139,30,141,21,153,12,174,7,204,5,240,8,263,17,258,18,239,13,204,10,175,12,155,17,145,24,144,33"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#ad70081f09c712d4f3b5836894c2ff15c" title="Returns the difficulty value of this game level." alt="" coords="451,5,632,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="403,39,438,38,433,39,403,45"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#ae96ae3832695c27c80bbd4be0604e8f5" title="Returns the unique identifier of this game level." alt="" coords="451,75,632,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="403,80,438,86,433,86,403,85"/>
 </map>

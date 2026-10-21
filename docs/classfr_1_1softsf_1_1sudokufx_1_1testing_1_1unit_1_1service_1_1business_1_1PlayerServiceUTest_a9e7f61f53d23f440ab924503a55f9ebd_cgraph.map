@@ -1,0 +1,25 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenInvalidDto_whenUpdatePlayer_thenThrowsConstraintViolationException" name="fr.softsf.sudokufx.testing.unit.service.business.PlayerServiceUTest.givenInvalidDto_whenUpdatePlayer_thenThrowsConstraintViolationException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,93,365,172"/>
+<area shape="rect" id="Node000002" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a5ce2a48c45e6d7c67df2cfb0bced67e9" title="Data Transfer Object representing a menu entity." alt="" coords="693,5,913,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="365,97,710,34,707,38,366,102"/>
+<area shape="rect" id="Node000003" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#af3351529e3efa22019c4fe7fcd841d3f" title="Data Transfer Object representing an Options entity." alt="" coords="686,81,920,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="365,119,673,102,668,105,365,124"/>
+<area shape="rect" id="Node000004" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1946024ef99efea4b043ed98388fdc94" title="Data Transfer Object representing a player." alt="" coords="413,156,638,184"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="365,150,400,156,394,156,365,155"/>
+<area shape="rect" id="Node000008" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#aef56b61038752e56cf2b168708082565" title="Data Transfer Object representing a player&#39;s language." alt="" coords="702,209,904,254"/>
+<area shape="poly" id="edge15_Node000001_Node000008" title=" " alt="" coords="315,170,413,193,555,212,689,226,684,226,554,218,412,198,315,175"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="757,80,750,72,756,63,774,57,803,55,835,57,853,66,848,66,834,62,803,60,775,62,759,67,755,72,762,82"/>
+<area shape="poly" id="edge11_Node000004_Node000002" title=" " alt="" coords="539,153,599,100,640,69,685,43,702,39,707,37,687,48,643,74,602,104,542,158"/>
+<area shape="poly" id="edge12_Node000004_Node000003" title=" " alt="" coords="571,153,685,119,718,114,723,113,687,124,572,158"/>
+<area shape="poly" id="edge13_Node000004_Node000004" title=" " alt="" coords="478,155,471,147,477,137,495,131,525,129,558,132,577,141,572,141,557,137,525,135,496,137,480,142,476,147,483,156"/>
+<area shape="rect" id="Node000005" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#ae38935c6457d95aaad3c079efbf428a1" title="Data Transfer Object representing a game entity." alt="" coords="692,157,915,185"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="638,168,678,170,673,171,639,173"/>
+<area shape="poly" id="edge14_Node000004_Node000008" title=" " alt="" coords="592,182,689,206,684,205,591,187"/>
+<area shape="poly" id="edge6_Node000005_Node000005" title=" " alt="" coords="757,156,750,148,756,139,774,133,803,131,835,133,853,142,848,142,834,138,803,136,775,138,759,143,755,148,762,158"/>
+<area shape="rect" id="Node000006" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a0218c64c4488c809ab03588009d721aa" title="Data Transfer Object representing a game level entity." alt="" coords="974,108,1174,152"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="898,154,956,148,961,147,899,159"/>
+<area shape="rect" id="Node000007" href="$namespacefr_1_1softsf_1_1sudokufx_1_1dto.html#a1d1f24319f3fea4ea795946c4be7803a" title="Data Transfer Object representing a grid entity." alt="" coords="968,200,1180,228"/>
+<area shape="poly" id="edge9_Node000005_Node000007" title=" " alt="" coords="895,183,970,197,964,197,895,188"/>
+<area shape="poly" id="edge8_Node000006_Node000006" title=" " alt="" coords="1023,105,1021,97,1030,88,1048,83,1074,81,1103,83,1122,92,1117,92,1102,88,1074,86,1049,88,1033,93,1026,99,1027,108"/>
+<area shape="poly" id="edge10_Node000007_Node000007" title=" " alt="" coords="1028,198,1021,191,1027,181,1045,175,1074,173,1106,176,1124,185,1119,184,1104,181,1074,179,1046,181,1030,186,1026,191,1033,201"/>
+</map>

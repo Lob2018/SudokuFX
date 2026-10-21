@@ -1,3 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest" name="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,272,347"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="26,574,288,945"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory.html" title="Factory responsible for configuring ListView components with custom cells and bindings." alt="" coords="5,5,308,501"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,498,159,557,154,557,156,503"/>
 </map>

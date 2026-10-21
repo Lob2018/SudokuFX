@@ -1,7 +1,10 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullMenu_whenSettingMenuid_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullMenu_whenSettingMenuid_thenNullPointerExceptionIsThrown">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,308,92"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="356,5,539,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="308,38,342,34,343,39,309,43"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a0c578d68480f93172709babb1224f573" title="Sets the menu after validation." alt="" coords="356,69,539,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="309,71,343,75,342,80,308,77"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,307,108"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="99,28,103,18,114,10,132,5,156,3,185,6,205,15,200,16,184,11,156,8,133,10,117,15,107,21,104,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="355,12,536,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,48,342,46,337,47,307,53"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a0c578d68480f93172709babb1224f573" title="Sets the menu after validation." alt="" coords="355,81,536,126"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="307,84,342,91,336,91,307,89"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a7262425d3a1c07b5ffdafba0a6aa51de" title="Validates that the menu is not null." alt="" coords="584,81,765,126"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="536,101,571,103,566,103,536,106"/>
 </map>

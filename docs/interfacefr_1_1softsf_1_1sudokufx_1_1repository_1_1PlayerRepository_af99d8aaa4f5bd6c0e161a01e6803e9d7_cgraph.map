@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.repository.PlayerRepository.findSelectedPlayerWithSelectedGame" name="fr.softsf.sudokufx.repository.PlayerRepository.findSelectedPlayerWithSelectedGame">
+<area shape="rect" id="Node000001" title="Finds the currently selected player along with their selected game and all related associations." alt="" coords="5,29,261,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="83,28,84,19,94,10,110,5,133,3,160,5,178,15,172,15,158,11,133,8,111,10,96,15,89,21,88,30"/>
+</map>

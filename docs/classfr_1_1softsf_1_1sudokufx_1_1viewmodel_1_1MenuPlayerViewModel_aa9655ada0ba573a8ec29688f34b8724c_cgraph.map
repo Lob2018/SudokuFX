@@ -1,22 +1,23 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MenuPlayerViewModel" name="fr.softsf.sudokufx.viewmodel.MenuPlayerViewModel.MenuPlayerViewModel">
-<area shape="rect" id="Node000001" title="Initializes the MenuPlayerViewModel with necessary infrastructure and reactive bindings." alt="" coords="5,282,329,322"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#ab85707b9c1970d47449a515c65882ba9" title="Creates a localized binding by concatenating two keys." alt="" coords="383,5,664,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,280,209,236,253,179,310,120,342,93,376,69,386,64,388,68,379,74,345,97,314,124,257,183,213,239,183,283"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a74c09c6a0ee599311a4d665b4e86488b" title="Creates a localized binding combining a formatted message and suffix." alt="" coords="382,84,665,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,280,268,215,320,179,376,148,391,141,393,146,379,152,323,183,271,219,192,284"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#af4331b2f8f2bcf2558e9d281688015f2" title="Creates a formatted localized binding with player name argument." alt="" coords="382,163,665,217"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="221,279,377,226,402,219,403,224,378,231,223,284"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#ad991246df2f102a8432071881b5fd5a7" title="Creates a simple localized binding for a given key." alt="" coords="396,241,651,296"/>
-<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="330,284,382,279,382,285,330,289"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#ae780866cb629a7b3fb902530ee8b4098" title="Loads players into the observable list." alt="" coords="719,342,970,382"/>
-<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="330,314,706,347,706,352,329,319"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a6e8fa34df63047e169ef52d3168a5de7" title="Refreshes the UI state by synchronizing the current player, toggling the switched signal,..." alt="" coords="406,371,641,411"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="249,319,430,365,428,370,247,325"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a8f8c1ded5be3fc82046472ea3fca63bb" title="Executes the provided action within a guarded block to prevent reentrant updates and state corruption..." alt="" coords="398,435,649,475"/>
-<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="198,320,277,371,327,398,378,421,402,429,400,434,376,426,324,402,275,375,195,325"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#add46cd4d4ea1ec7cb88a67a5f54f0a71" title="Sets the selected player to the one marked as selected or first in the list." alt="" coords="377,499,669,539"/>
-<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="187,321,219,357,264,401,318,447,379,485,394,492,392,497,376,490,315,451,260,405,215,360,183,324"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a062c453d8d6794a32f0f8246057d0604" title="Returns the name of the currently selected player." alt="" coords="717,91,972,131"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="665,109,704,109,704,114,665,114"/>
-<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="641,378,706,372,706,377,641,383"/>
+<area shape="rect" id="Node000001" title="Initializes the MenuPlayerViewModel with necessary infrastructure and reactive bindings." alt="" coords="5,304,329,349"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="100,304,99,294,110,285,133,280,167,278,205,280,229,288,224,290,204,286,167,283,133,285,112,290,104,296,106,304"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#ab85707b9c1970d47449a515c65882ba9" title="Creates a localized binding by concatenating two keys." alt="" coords="382,5,662,67"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="179,303,208,256,252,194,309,131,341,102,375,77,385,73,381,77,378,81,344,106,313,135,257,198,213,258,183,306"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a74c09c6a0ee599311a4d665b4e86488b" title="Creates a localized binding combining a formatted message and suffix." alt="" coords="381,91,664,152"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="189,302,268,233,320,195,375,162,390,157,386,160,378,167,323,200,271,238,193,306"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#af4331b2f8f2bcf2558e9d281688015f2" title="Creates a formatted localized binding with player name argument." alt="" coords="381,176,664,238"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="226,302,376,247,400,241,395,244,378,252,228,306"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#ad991246df2f102a8432071881b5fd5a7" title="Creates a simple localized binding for a given key." alt="" coords="396,261,649,323"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="328,309,382,305,378,307,330,314"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#ae780866cb629a7b3fb902530ee8b4098" title="Loads players into the observable list." alt="" coords="718,367,968,412"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="329,339,704,375,701,378,329,344"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a6e8fa34df63047e169ef52d3168a5de7" title="Refreshes the UI state by synchronizing the current player, toggling the switched signal,..." alt="" coords="405,398,640,442"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="255,347,422,392,418,395,255,352"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a8f8c1ded5be3fc82046472ea3fca63bb" title="Executes the provided action within a guarded block to prevent reentrant updates and state corruption..." alt="" coords="397,467,648,512"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="199,347,278,400,327,428,378,452,398,462,393,462,376,457,324,433,275,405,198,352"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#add46cd4d4ea1ec7cb88a67a5f54f0a71" title="Sets the selected player to the one marked as selected or first in the list." alt="" coords="377,536,668,581"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="186,347,219,386,264,434,318,482,378,522,392,531,386,530,375,526,314,486,260,437,215,390,185,352"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a062c453d8d6794a32f0f8246057d0604" title="Returns the name of the currently selected player." alt="" coords="716,99,970,144"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="663,119,703,121,698,122,665,124"/>
+<area shape="poly" id="edge9_Node000008_Node000007" title=" " alt="" coords="639,406,705,402,700,403,640,412"/>
 </map>

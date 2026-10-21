@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguage.PlayerLanguageBuilder.build" name="fr.softsf.sudokufx.model.PlayerLanguage.PlayerLanguageBuilder.build">
+<area shape="rect" id="Node000001" title="Builds a validated PlayerLanguage instance." alt="" coords="5,29,320,74"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#abb2cd634e710dbff3cbbbe61f587c86e" title="Protected default constructor for JPA." alt="" coords="368,29,601,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="320,49,355,52,349,52,320,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="424,27,422,19,432,10,453,5,484,3,519,5,541,14,536,14,518,10,484,8,454,10,435,15,427,21,429,30"/>
+</map>

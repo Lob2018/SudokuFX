@@ -1,5 +1,8 @@
 <map id="fr.softsf.sudokufx.model.MenuUTest.givenTwoMenus_whenCompareWithEquals_thenEqualsWorksCorrectly" name="fr.softsf.sudokufx.model.MenuUTest.givenTwoMenus_whenCompareWithEquals_thenEqualsWorksCorrectly">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,280,75"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#a4f57e5b1e480916c615cff552ab80a46" title="Compares this menu with another object for equality based on all fields." alt="" coords="328,20,511,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,37,314,37,314,43,280,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,12,280,91"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#a4f57e5b1e480916c615cff552ab80a46" title="Compares this menu with another object for equality based on all fields." alt="" coords="328,29,509,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="280,49,315,51,309,52,280,54"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ade1fbedef71a431fdbdef9b66e285867" title="Protected default constructor for JPA." alt="" coords="557,29,738,74"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="509,49,544,52,539,52,509,54"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="604,27,603,19,610,10,625,5,648,3,673,5,689,15,684,14,671,10,648,8,626,10,613,15,608,21,609,30"/>
 </map>

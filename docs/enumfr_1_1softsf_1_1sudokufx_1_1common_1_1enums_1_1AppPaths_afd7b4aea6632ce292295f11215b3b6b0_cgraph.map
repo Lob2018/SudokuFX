@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.common.enums.AppPaths.resolveXdgDataHome" name="fr.softsf.sudokufx.common.enums.AppPaths.resolveXdgDataHome">
+<area shape="rect" id="Node000001" title="Resolves the user&#45;specific data directory according to the XDG Base Directory Specification." alt="" coords="5,5,251,50"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1AppPaths.html#ae12b9a4db4164f328d03d7e778068d45" title="Returns the user&#39;s home directory with forward slashes, for consistent path concatenation." alt="" coords="299,5,544,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,25,286,28,281,28,251,30"/>
+</map>

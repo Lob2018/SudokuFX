@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.Player.PlayerBuilder.playerlanguageid" name="fr.softsf.sudokufx.model.Player.PlayerBuilder.playerlanguageid">
+<area shape="rect" id="Node000001" title="Sets the language of the player." alt="" coords="5,5,274,50"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a67f9d00af3ba036ed39f639a271ee9f0" title="Validates that the player language is not null." alt="" coords="322,5,544,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="274,25,309,28,303,28,274,30"/>
+</map>

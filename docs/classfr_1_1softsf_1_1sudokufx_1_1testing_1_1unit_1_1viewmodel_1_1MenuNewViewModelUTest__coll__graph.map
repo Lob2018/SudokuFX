@@ -1,3 +1,10 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuNewViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,288,244"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1628,285,1852"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1external_1_1VersionService.html" title="Service for checking if the application version is up to date by querying the GitHub API." alt="" coords="28,286,262,724"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,721,138,797,133,1176,138,1555,140,1611,135,1610,133,1555,128,1176,133,797,137,726"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuNewViewModel.html" title="ViewModel for managing the &quot;New&quot; menu UI state, accessibility labels, and update status." alt="" coords="256,797,514,1555"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="223,721,253,799,248,799,223,726"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1SpinnerService.html" title="A centralized service for managing the global loading state through a thread&#45;safe reference counter." alt="" coords="30,5,260,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="145,210,148,269,143,268,145,215"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="258,1509,240,1556,212,1614,208,1611,235,1554,255,1513"/>
 </map>

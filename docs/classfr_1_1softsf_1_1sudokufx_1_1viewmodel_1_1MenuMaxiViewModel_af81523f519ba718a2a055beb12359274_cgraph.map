@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel.helpTextProperty" name="fr.softsf.sudokufx.viewmodel.MenuMaxiViewModel.helpTextProperty">
+<area shape="rect" id="Node000001" title="Returns the reactive binding for the help button&#39;s label text." alt="" coords="5,29,281,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="91,28,89,19,98,10,116,5,143,3,172,5,192,14,186,14,171,10,143,8,117,10,101,15,94,21,96,30"/>
+</map>

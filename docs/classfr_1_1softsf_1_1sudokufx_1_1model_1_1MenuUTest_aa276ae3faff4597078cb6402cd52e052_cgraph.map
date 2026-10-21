@@ -1,7 +1,8 @@
 <map id="fr.softsf.sudokufx.model.MenuUTest.givenNothing_whenCreateMenuWithDefaultConstructor_thenMenuHasDefaultValues" name="fr.softsf.sudokufx.model.MenuUTest.givenNothing_whenCreateMenuWithDefaultConstructor_thenMenuHasDefaultValues">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,301,92"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ab1ff57d1d8f24d28f42af214053d7025" title="Returns the unique identifier of the menu." alt="" coords="349,5,532,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,38,335,34,336,40,302,43"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" title="Returns the mode of the menu." alt="" coords="349,69,532,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="302,71,336,75,335,80,301,76"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,301,108"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="97,28,101,18,112,10,129,5,153,3,182,6,202,15,196,16,181,11,153,8,130,10,114,15,105,21,102,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ab1ff57d1d8f24d28f42af214053d7025" title="Returns the unique identifier of the menu." alt="" coords="349,12,530,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,48,336,46,331,47,302,53"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Menu.html#ae7c92e7ed1d4f7ef7bce31a3fa919812" title="Returns the mode of the menu." alt="" coords="349,81,530,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,84,336,90,331,91,301,89"/>
 </map>

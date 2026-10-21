@@ -1,25 +1,26 @@
 <map id="fr.softsf.sudokufx.view.SplashScreenView.SplashScreenView" name="fr.softsf.sudokufx.view.SplashScreenView.SplashScreenView">
-<area shape="rect" id="Node000001" title="Constructor for SplashScreenView." alt="" coords="5,124,268,164"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#abe063bf7b79bce818e0d42c0c9b9d229" title="Sets up the basic structure and properties of the UI components, similar to what would be defined in ..." alt="" coords="322,28,581,68"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,121,315,77,346,69,347,74,317,83,190,127"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a0af4ab414c9c917edc9975bfd5c63fbd" title="Nests the UI components in their parent containers." alt="" coords="327,92,575,132"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="268,128,314,123,314,129,268,133"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#acddefac20ee4e90165233cb342d56fe0" title="Configures the properties and styles of the UI nodes." alt="" coords="316,156,587,196"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="268,155,303,158,302,164,268,160"/>
-<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a202e9727891bebc7d520ec588134a0a7" title=" " alt="" coords="319,220,584,260"/>
-<area shape="poly" id="edge12_Node000001_Node000011" title=" " alt="" coords="190,161,317,205,347,214,346,219,315,211,188,167"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a05ceacbaf9b2149100b85aa1915a98a2" title="Animates the SVG flower." alt="" coords="643,5,909,45"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="566,153,585,142,602,122,608,100,615,77,633,55,641,50,644,54,636,59,620,80,613,101,606,124,588,146,569,158"/>
-<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#ad126ac2f2a90b2422490ca0d896fa398" title="Retrieves a message indicating the current loading or optimizing state." alt="" coords="661,70,891,125"/>
-<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="536,153,586,141,651,125,652,131,587,147,538,159"/>
-<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#aafe300850c83d75b03d338a68d19c892" title="Sets up the SVG for the Soft64 text logo in the center of the splash screen." alt="" coords="635,149,917,203"/>
-<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="587,173,621,173,621,179,587,179"/>
-<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a762ac1d676ca1be22b521cd731b8d9ba" title="Sets up the SVG for the flower logo in the center of the splash screen." alt="" coords="635,227,917,282"/>
-<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="538,193,587,205,652,221,651,227,586,211,536,199"/>
-<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a53ead1ea80a08e06c15ae42ae101fcdf" title="Sets up the SVG for the &quot;sudo.svg&quot; text logo in the center of the splash screen." alt="" coords="635,306,917,361"/>
-<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="568,194,588,206,606,227,613,250,620,271,637,291,644,297,641,301,633,295,615,274,608,251,602,230,585,210,565,198"/>
-<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a5d7017836e704c8e6db24f7d677041ba" title="Creates an SVG shape and applies it to a Region." alt="" coords="965,235,1177,275"/>
-<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="880,201,983,228,981,234,879,206"/>
-<area shape="poly" id="edge9_Node000009_Node000008" title=" " alt="" coords="918,252,952,252,952,257,918,257"/>
-<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="879,303,981,276,983,281,880,309"/>
+<area shape="rect" id="Node000001" title="Constructor for SplashScreenView." alt="" coords="5,133,268,178"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="77,133,76,123,86,114,106,109,137,107,170,109,192,117,187,119,169,114,136,112,107,114,88,119,81,125,83,133"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#abe063bf7b79bce818e0d42c0c9b9d229" title="Sets up the basic structure and properties of the UI components, similar to what would be defined in ..." alt="" coords="321,29,580,74"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="190,130,315,84,343,77,338,80,317,89,193,135"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a0af4ab414c9c917edc9975bfd5c63fbd" title="Nests the UI components in their parent containers." alt="" coords="327,99,574,143"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="267,139,314,135,309,138,269,144"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#acddefac20ee4e90165233cb342d56fe0" title="Configures the properties and styles of the UI nodes." alt="" coords="316,168,585,213"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="267,168,303,173,298,175,269,173"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a202e9727891bebc7d520ec588134a0a7" title="Displays the splash screen." alt="" coords="318,237,582,282"/>
+<area shape="poly" id="edge13_Node000001_Node000011" title=" " alt="" coords="192,176,317,222,343,232,338,233,315,228,192,181"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a05ceacbaf9b2149100b85aa1915a98a2" title="Animates the SVG flower." alt="" coords="641,5,906,50"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="566,165,583,154,594,143,600,132,606,108,613,84,620,72,631,60,636,60,641,57,635,64,624,75,618,86,612,110,605,134,598,146,587,158,568,170"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#ad126ac2f2a90b2422490ca0d896fa398" title="Retrieves a message indicating the current loading or optimizing state." alt="" coords="658,74,889,136"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="539,165,584,153,646,139,641,141,586,158,541,170"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#aafe300850c83d75b03d338a68d19c892" title="Sets up the SVG for the Soft64 text logo in the center of the splash screen." alt="" coords="633,160,914,221"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="585,188,620,190,615,191,586,193"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a762ac1d676ca1be22b521cd731b8d9ba" title="Sets up the SVG for the flower logo in the center of the splash screen." alt="" coords="633,245,914,306"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="540,211,586,222,645,240,640,240,584,228,540,216"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a53ead1ea80a08e06c15ae42ae101fcdf" title="Sets up the SVG for the &quot;sudo.svg&quot; text logo in the center of the splash screen." alt="" coords="633,330,914,392"/>
+<area shape="poly" id="edge11_Node000004_Node000010" title=" " alt="" coords="567,211,587,223,605,246,612,271,618,294,635,316,639,322,634,321,631,320,613,296,607,272,600,249,583,227,566,216"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1SplashScreenView.html#a5d7017836e704c8e6db24f7d677041ba" title="Creates an SVG shape and applies it to a Region." alt="" coords="962,253,1174,298"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="883,219,976,249,971,248,882,224"/>
+<area shape="poly" id="edge10_Node000009_Node000008" title=" " alt="" coords="915,273,949,275,944,276,915,278"/>
+<area shape="poly" id="edge12_Node000010_Node000008" title=" " alt="" coords="882,327,971,303,976,302,883,332"/>
 </map>

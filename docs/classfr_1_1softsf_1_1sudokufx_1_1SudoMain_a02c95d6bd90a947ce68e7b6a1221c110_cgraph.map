@@ -1,0 +1,21 @@
+<map id="fr.softsf.sudokufx.SudoMain.start" name="fr.softsf.sudokufx.SudoMain.start">
+<area shape="rect" id="Node000001" title="Initializes the application by:" alt="" coords="5,118,240,146"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html#aec80b2c8add2ad3519eeac6c1e8c05cf" title="Returns a JavaFX Task that initializes the Spring application context using the specified Spring Boot..." alt="" coords="288,5,616,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,115,213,87,287,60,317,53,313,56,289,65,215,92,154,120"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1SudoMain.html#a5f0246399e65a32405abe1ed415219ee" title="Handles failure of the Spring context initialization task." alt="" coords="328,144,576,189"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="240,141,314,151,309,152,240,147"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1SudoMain.html#afa5bb361c3c4da3cef227f656f09c3e3" title="Handles the success of the Spring context initialization task." alt="" coords="328,75,576,119"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="239,117,314,111,309,113,241,122"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html#a7185e1ba2b9219e85f8308a3425fb26e" title="Starts the given JavaFX Task in a new background thread." alt="" coords="298,213,606,258"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="153,143,215,171,289,198,318,209,312,209,287,204,213,176,153,149"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1SudoMain.html#a704995783c20421c9b428d357752c06b" title="Creates a pause before loading the specified FXML view." alt="" coords="672,144,917,189"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="576,164,659,166,654,167,576,169"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1SudoMain.html#a82b89e0e97248236a98e8bd95f897c20" title="Ensures the Coordinator is initialized if not already (e.g., if Spring injection failed)." alt="" coords="664,75,924,119"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="565,141,668,122,663,124,566,146"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1SudoMain.html#aec160d5f2d8dc866edebccc8f89710f6" title="Logs a critical database exception." alt="" coords="682,213,906,258"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="566,187,669,210,664,210,566,192"/>
+<area shape="rect" id="Node000005" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1IMainView.html#af5213ac1409a8e916a73f929188c28ad" title="Opens the main stage." alt="" coords="972,144,1239,189"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="917,164,959,166,954,166,918,169"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="566,117,668,140,663,141,566,123"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="576,94,651,97,646,97,577,100"/>
+</map>

@@ -1,9 +1,9 @@
 var dir_bb79fc5e06e1609a2469797c2c6dfa34 =
 [
-    [ "AsyncFileProcessorService.java", "_async_file_processor_service_8java.html", "_async_file_processor_service_8java" ],
-    [ "AudioService.java", "_audio_service_8java.html", "_audio_service_8java" ],
-    [ "FileChooserService.java", "_file_chooser_service_8java.html", "_file_chooser_service_8java" ],
+    [ "AsyncFileProcessorService.java", "AsyncFileProcessorService_8java.html", "AsyncFileProcessorService_8java" ],
+    [ "AudioService.java", "AudioService_8java.html", "AudioService_8java" ],
+    [ "FileChooserService.java", "FileChooserService_8java.html", "FileChooserService_8java" ],
     [ "package-info.java", "service_2ui_2package-info_8java.html", null ],
-    [ "SpinnerService.java", "_spinner_service_8java.html", "_spinner_service_8java" ],
-    [ "ToasterService.java", "_toaster_service_8java.html", "_toaster_service_8java" ]
+    [ "SpinnerService.java", "SpinnerService_8java.html", "SpinnerService_8java" ],
+    [ "ToasterService.java", "ToasterService_8java.html", "ToasterService_8java" ]
 ];

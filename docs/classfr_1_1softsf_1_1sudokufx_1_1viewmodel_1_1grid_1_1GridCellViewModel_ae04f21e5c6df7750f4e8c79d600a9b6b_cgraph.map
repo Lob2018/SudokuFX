@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.rawTextProperty" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.rawTextProperty">
+<area shape="rect" id="Node000001" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="5,29,261,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="85,28,83,19,91,10,108,5,133,3,161,5,179,14,173,14,159,10,133,8,109,10,94,15,88,21,90,30"/>
+</map>

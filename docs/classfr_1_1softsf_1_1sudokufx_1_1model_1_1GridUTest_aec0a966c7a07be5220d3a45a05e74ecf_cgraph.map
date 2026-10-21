@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.model.GridUTest.givenBoundaryValues_whenCreateGrid_thenBoundaryValuesAreAccepted" name="fr.softsf.sudokufx.model.GridUTest.givenBoundaryValues_whenCreateGrid_thenBoundaryValuesAreAccepted">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,302,108"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="96,28,99,18,111,10,129,5,154,3,184,6,205,16,199,16,183,11,153,8,130,10,113,15,104,21,100,31"/>
+</map>

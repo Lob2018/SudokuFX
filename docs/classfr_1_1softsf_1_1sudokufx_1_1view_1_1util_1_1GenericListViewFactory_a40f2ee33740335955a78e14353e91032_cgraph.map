@@ -1,7 +1,21 @@
 <map id="fr.softsf.sudokufx.view.util.GenericListViewFactory.configurePlayerListView" name="fr.softsf.sudokufx.view.util.GenericListViewFactory.configurePlayerListView">
-<area shape="rect" id="Node000001" title="Configures the ListView used in the player menu." alt="" coords="5,45,241,100"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory.html#a649020523675d71d2bdf3040a1aa0c13" title="Configures a ListView to update the provided Property only upon explicit user confirmation." alt="" coords="289,5,584,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="241,55,275,51,276,56,242,60"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="319,84,554,139"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="242,85,306,92,305,98,241,90"/>
+<area shape="rect" id="Node000001" title="Configures the ListView used in the player menu." alt="" coords="5,349,241,411"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#acc1ffae6b7e4a182e7e7a1eca17481a3" title="Returns the reactive binding for the cell button accessible text property." alt="" coords="289,29,598,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,348,152,294,184,228,229,159,256,128,287,101,295,97,292,101,290,105,260,132,233,162,189,230,157,297,136,350"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#aca9b0ca160159d7c96f67d5a19062e99" title="Returns the reactive binding for the cell confirmation message property." alt="" coords="303,139,584,200"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="144,347,204,278,243,241,287,210,299,206,295,209,290,214,247,245,208,282,149,351"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a3eafd2b6fcea2b1e01fb6691993d0f64" title="Returns the reactive binding for the cell button accessible text property." alt="" coords="303,248,584,310"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="207,346,288,319,313,313,309,316,289,324,210,351"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#aae474a3cd1a79843b3162b9ac692ac90" title="Returns the observable list of players." alt="" coords="322,358,565,402"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="240,378,309,379,304,381,242,383"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a71605f1cde24d333d9e5cb4b445c274c" title="Returns the property for the currently selected player." alt="" coords="308,427,578,488"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="241,406,301,422,296,424,242,411"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory.html#a649020523675d71d2bdf3040a1aa0c13" title="Configures a ListView to update the provided Property only upon explicit user confirmation." alt="" coords="297,512,590,574"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="159,409,219,455,290,498,304,506,299,506,287,503,216,459,159,414"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="326,597,560,659"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="141,409,167,450,201,497,242,544,290,583,314,599,309,598,287,588,238,547,196,500,163,453,140,414"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="381,28,383,19,394,10,415,5,443,3,477,6,499,15,494,16,476,11,443,8,415,10,397,15,387,21,386,30"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="381,137,383,128,394,119,415,114,443,112,477,115,499,124,494,126,476,120,443,117,415,119,397,124,387,131,386,139"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="381,247,383,237,394,229,415,223,443,221,477,224,499,234,494,235,476,229,443,227,415,229,397,233,387,240,386,249"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="383,356,381,348,392,339,412,333,443,331,478,334,500,342,494,343,477,339,443,336,413,338,394,343,386,349,388,358"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.common.util.AudioUtilsUTest" name="fr.softsf.sudokufx.testing.unit.common.util.AudioUtilsUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,299,184"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,185,295,387"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1AudioUtils.html" title="Utility class providing helper methods for common audio&#45;related operations." alt="" coords="44,5,256,112"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,109,153,168,148,167,149,114"/>
 </map>

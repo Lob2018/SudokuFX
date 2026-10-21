@@ -1,0 +1,9 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.handleRestoreGridAndMenuMiniShow" name="fr.softsf.sudokufx.view.main.MainView.handleRestoreGridAndMenuMiniShow">
+<area shape="rect" id="Node000001" title="Restores the grid and shows the MINI menu." alt="" coords="5,36,276,97"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1MainView.html#a903f6d90ee4f2958cea06a59514ec696" title="Activates the MINI menu and starts a timer to auto&#45;hide it after N seconds if it remains active and t..." alt="" coords="330,5,562,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="275,47,317,44,312,45,276,52"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1MainView.html#a805ba50257c2565844220d96b618c2c9" title="Synchronizes the menu UI with the current game model state." alt="" coords="324,74,568,136"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="276,81,311,87,306,88,276,86"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1MainView.html#a16c95b9af64c251644c1a8ed1c83e875" title="Applies opaque or transparent styling to the sudoku grid and its cells by setting the OPAQUE_MODE_PSE..." alt="" coords="616,83,826,127"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="568,102,603,105,598,105,568,108"/>
+</map>

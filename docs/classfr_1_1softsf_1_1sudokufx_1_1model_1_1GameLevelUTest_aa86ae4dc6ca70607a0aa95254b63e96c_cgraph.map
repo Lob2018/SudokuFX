@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.model.GameLevelUTest.givenValidBoundaryValues_whenCreatingGameLevel_thenShouldNotThrowException" name="fr.softsf.sudokufx.model.GameLevelUTest.givenValidBoundaryValues_whenCreatingGameLevel_thenShouldNotThrowException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,271,108"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="86,28,89,18,99,10,116,5,138,3,165,6,183,15,178,16,164,11,138,8,117,10,102,15,94,21,91,30"/>
+</map>
