@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.view.main.MainView.handleFileSongChooser" name="fr.softsf.sudokufx.view.main.MainView.handleFileSongChooser">
+<area shape="rect" id="Node000001" title="Opens a file chooser for a song and passes the selected file to the ViewModel for saving the path." alt="" coords="5,29,246,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="80,28,78,19,86,10,102,5,126,3,151,5,169,14,163,14,150,10,125,8,103,10,89,15,83,21,85,30"/>
+</map>

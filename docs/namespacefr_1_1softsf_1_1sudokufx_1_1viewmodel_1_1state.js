@@ -1,6 +1,6 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state =
 [
-    [ "AbstractPlayerStateTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_abstract_player_state_test" ],
-    [ "PlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder" ],
-    [ "PlayerStateHolderUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1_player_state_holder_u_test" ]
+    [ "AbstractPlayerStateTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1AbstractPlayerStateTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1AbstractPlayerStateTest" ],
+    [ "PlayerStateHolder", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolder.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolder" ],
+    [ "PlayerStateHolderUTest", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolderUTest.html", "classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolderUTest" ]
 ];

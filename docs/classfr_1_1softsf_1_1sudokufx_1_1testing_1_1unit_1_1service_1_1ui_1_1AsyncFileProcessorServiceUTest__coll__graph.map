@@ -1,3 +1,15 @@
 <map id="fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest" name="fr.softsf.sudokufx.testing.unit.service.ui.AsyncFileProcessorServiceUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,280,496"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="261,993,532,1443"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1component_1_1SpinnerGridPane.html" title="A custom JavaFX GridPane that displays a two&#45;phase animated spinner using Unicode icons." alt="" coords="5,528,272,920"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,917,206,968,254,1048,248,1049,201,971,183,922"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,194,173,266"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="139,279,141,528,136,528,139,284"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1ToasterService.html" title="A centralized service for sending toast notifications to the UI." alt="" coords="255,5,532,455"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="344,452,336,528,326,638,322,724,326,810,336,920,343,977,338,976,331,921,320,810,317,724,321,638,331,528,342,458"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1AsyncFileProcessorService.html" title="Service to execute file&#45;processing tasks asynchronously with JavaFX UI feedback." alt="" coords="452,561,709,887"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="479,452,515,545,510,545,478,458"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1SpinnerService.html" title="A centralized service for managing the global loading state through a thread&#45;safe reference counter." alt="" coords="598,126,828,334"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="741,331,766,457,774,530,778,607,777,687,768,768,751,847,723,921,688,980,645,1034,597,1082,547,1124,543,1119,593,1078,641,1030,684,977,718,919,745,845,763,767,772,687,773,608,769,530,761,458,740,336"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="676,331,631,480,615,546,610,544,626,478,674,336"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="521,885,488,979,483,976,518,889"/>
 </map>

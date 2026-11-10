@@ -1,5 +1,21 @@
 <map id="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/MapperUtils.java" name="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/MapperUtils.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,220,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="49,108,177,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,60,115,94,110,94,110,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="591,5,806,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,124,133,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="588,49,384,77,264,96,146,118,128,122,127,117,144,112,263,90,383,72,593,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="157,124,256,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="588,53,438,81,270,118,258,121,256,116,268,112,437,76,593,52"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="281,124,444,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="598,67,422,121,421,116,593,68"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="468,124,590,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="649,67,565,118,563,113,644,68"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="614,124,783,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="700,66,700,109,696,106,696,69"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="806,115,993,160"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="760,65,845,108,839,107,759,70"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1016,115,1282,160"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="806,58,1038,111,1033,111,805,64"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1306,124,1526,151"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="806,47,1031,76,1295,112,1330,120,1325,120,1294,118,1031,81,806,53"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1550,115,1732,160"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="806,41,1128,65,1330,86,1538,115,1532,115,1329,91,1128,71,805,46"/>
 </map>

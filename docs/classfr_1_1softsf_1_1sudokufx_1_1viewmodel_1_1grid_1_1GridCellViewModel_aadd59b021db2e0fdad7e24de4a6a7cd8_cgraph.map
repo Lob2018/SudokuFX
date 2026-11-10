@@ -1,5 +1,9 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setLabelAccessibleText" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.setLabelAccessibleText">
-<area shape="rect" id="Node000001" title="Binds the label&#39;s accessible text to a localized, formatted string reflecting the cell&#39;s value and 1&#45;..." alt="" coords="5,5,307,45"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a0d1630abe71ae622f3522fbed9855750" title="Formats a raw digit string (1–9) into a 3&#45;line spaced grid display." alt="" coords="355,5,597,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="307,23,341,23,341,28,307,28"/>
+<area shape="rect" id="Node000001" title="Binds the label&#39;s accessible text to a localized, formatted string reflecting the cell&#39;s value and 1&#45;..." alt="" coords="5,40,306,85"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a0d1630abe71ae622f3522fbed9855750" title="Formats a raw digit string (1–9) into a 3&#45;line spaced grid display." alt="" coords="354,40,595,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="306,60,341,62,335,63,306,65"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae0d01b28db4394dc49b5f5a0c1a3f2ec" title="Inserts line breaks every 3 digits in the filtered string, with a maximum of two line breaks,..." alt="" coords="643,5,893,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="595,45,630,44,625,45,596,51"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#aac96cce43da018085f8e390d31aeeb33" title="Filters the input string to digits 1–9, removes duplicates, sorts ascending, and limits to 9 characte..." alt="" coords="644,75,892,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="595,74,631,81,626,81,595,79"/>
 </map>

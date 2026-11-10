@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.editableProperty" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.editableProperty">
+<area shape="rect" id="Node000001" title="Returns the property representing the editable state of the cell." alt="" coords="5,29,263,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="85,28,84,19,92,10,109,5,134,3,162,5,180,14,175,14,161,10,134,8,110,10,95,15,89,21,90,30"/>
+</map>

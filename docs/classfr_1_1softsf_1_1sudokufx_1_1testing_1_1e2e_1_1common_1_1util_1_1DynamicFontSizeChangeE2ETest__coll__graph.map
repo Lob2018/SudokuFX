@@ -1,3 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.e2e.common.util.DynamicFontSizeChangeE2ETest" name="fr.softsf.sudokufx.testing.e2e.common.util.DynamicFontSizeChangeE2ETest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,297,224"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,448,294,673"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1DynamicFontSize.html" title="Dynamically adjusts the root font size of a JavaFX Scene based on its dimensions." alt="" coords="38,5,261,375"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="151,372,152,432,147,431,149,377"/>
 </map>

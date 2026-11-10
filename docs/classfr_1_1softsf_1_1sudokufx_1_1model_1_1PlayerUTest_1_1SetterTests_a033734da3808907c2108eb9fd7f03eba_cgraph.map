@@ -1,7 +1,10 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullName_whenSettingName_thenNullPointerExceptionIsThrown" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenNullName_whenSettingName_thenNullPointerExceptionIsThrown">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,365,92"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="413,5,596,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="365,37,399,33,400,38,366,42"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#af201d3417316b81311308e888df147ac" title="Sets the name after validation." alt="" coords="413,69,596,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="366,73,400,76,399,82,365,78"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,365,108"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="123,28,127,18,139,10,158,5,185,3,218,6,240,16,234,17,216,11,185,8,159,10,141,15,131,21,127,31"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="413,12,594,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="365,46,400,45,395,46,365,52"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#af201d3417316b81311308e888df147ac" title="Sets the name after validation." alt="" coords="413,81,594,126"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="365,86,400,92,395,92,365,91"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" title="Validates that the name is not null." alt="" coords="642,81,823,126"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="594,101,629,103,624,103,594,106"/>
 </map>

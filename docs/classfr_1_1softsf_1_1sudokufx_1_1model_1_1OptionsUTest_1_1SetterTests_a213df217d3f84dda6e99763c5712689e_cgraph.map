@@ -1,5 +1,7 @@
 <map id="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenInvalidHexColor_whenSettingHexColor_thenIllegalArgumentExceptionIsThrown" name="fr.softsf.sudokufx.model.OptionsUTest.SetterTests.givenInvalidHexColor_whenSettingHexColor_thenIllegalArgumentExceptionIsThrown">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,291,75"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a65e4a7ebacda96b9714e3304b1428d44" title="Sets the ARGB hex color after validation." alt="" coords="339,20,521,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="291,37,325,37,325,43,291,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,290,84"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a65e4a7ebacda96b9714e3304b1428d44" title="Sets the ARGB hex color after validation." alt="" coords="338,22,519,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,42,325,44,319,45,290,47"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#a775885a0e9448ee0eaf4a7938c678def" title="Validates that the hex color is non&#45;blank and conforms to ARGB 8&#45;character hex format." alt="" coords="567,22,753,67"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="519,42,554,45,549,45,520,47"/>
 </map>

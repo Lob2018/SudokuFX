@@ -1,5 +1,9 @@
 <map id="fr.softsf.sudokufx.model.GameLevelUTest.givenDifferentTypeObject_whenComparingWithEquals_thenShouldReturnFalse" name="fr.softsf.sudokufx.model.GameLevelUTest.givenDifferentTypeObject_whenComparingWithEquals_thenShouldReturnFalse">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,264,75"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#a3d507e4525d0d37323a6afc077e37a4d" title="Compares this game level with another object for equality based on all fields." alt="" coords="312,20,495,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,37,298,37,298,43,264,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,264,108"/>
+<area shape="poly" id="edge4_Node000001_Node000001" title=" " alt="" coords="82,28,85,18,96,10,112,5,135,3,162,6,180,15,175,16,160,11,134,8,113,10,98,15,90,21,87,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#a3d507e4525d0d37323a6afc077e37a4d" title="Compares this game level with another object for equality based on all fields." alt="" coords="312,46,493,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,66,299,68,293,69,264,71"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1GameLevel.html#abb25b8080161c86b7034a8699aafb75d" title="Protected default constructor for JPA." alt="" coords="541,46,722,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="493,66,528,69,523,69,493,71"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="588,44,587,36,594,27,609,22,632,20,657,22,673,32,668,31,655,27,632,25,610,27,597,32,592,38,593,47"/>
 </map>

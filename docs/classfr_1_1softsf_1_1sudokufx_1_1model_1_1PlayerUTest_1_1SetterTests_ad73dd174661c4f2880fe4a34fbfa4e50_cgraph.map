@@ -1,11 +1,15 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenValidOptions_whenSettingOptionsid_thenFieldIsUpdated" name="fr.softsf.sudokufx.model.PlayerUTest.SetterTests.givenValidOptions_whenSettingOptionsid_thenFieldIsUpdated">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,87,252,156"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="300,5,483,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,84,299,55,319,48,321,53,301,60,222,89"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#ab95e23590badb3ae2d313fc255e5aebc" title="Returns the unique ID of this Options instance." alt="" coords="300,69,483,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,104,286,99,287,105,252,109"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a65efec07abcd028acf378e1585a5fc12" title="Returns the options associated with the player." alt="" coords="300,133,483,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,134,287,138,286,143,252,139"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a8d02e23fa141f2d1b08d12d150145112" title="Sets the options after validation." alt="" coords="300,197,483,237"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="222,154,301,183,321,190,319,195,299,188,220,159"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,104,252,183"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="77,103,80,93,90,85,106,80,129,78,155,81,173,90,168,92,154,86,128,83,108,85,93,90,85,96,82,105"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="300,5,481,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,101,299,60,317,55,312,58,301,65,211,106"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Options.html#ab95e23590badb3ae2d313fc255e5aebc" title="Returns the unique ID of this Options instance." alt="" coords="300,75,481,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,119,287,115,282,117,253,124"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a65efec07abcd028acf378e1585a5fc12" title="Returns the options associated with the player." alt="" coords="300,168,481,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,163,287,171,282,172,252,168"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a8d02e23fa141f2d1b08d12d150145112" title="Sets the options after validation." alt="" coords="300,237,481,282"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="211,181,301,223,317,231,312,231,299,227,210,186"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="347,166,345,158,353,149,368,143,390,141,415,144,432,153,426,153,414,149,390,147,369,149,356,153,350,159,351,169"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#aa248bf09324098ddbaedfb58fc6d73ba" title="Validates that the options are not null." alt="" coords="529,237,710,282"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="481,257,516,260,511,260,481,262"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.service.business.GameLevelService.findByLevelOrThrow" name="fr.softsf.sudokufx.service.business.GameLevelService.findByLevelOrThrow">
+<area shape="rect" id="Node000001" title="Retrieves the GameLevel entity by its business level value." alt="" coords="5,29,284,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="92,28,90,19,99,10,117,5,145,3,174,5,194,14,188,14,173,10,144,8,118,10,102,15,95,21,97,30"/>
+</map>

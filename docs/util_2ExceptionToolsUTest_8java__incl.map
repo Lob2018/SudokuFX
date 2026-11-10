@@ -1,5 +1,11 @@
 <map id="src/test/java/fr/softsf/sudokufx/testing/unit/common/util/ExceptionToolsUTest.java" name="src/test/java/fr/softsf/sudokufx/testing/unit/common/util/ExceptionToolsUTest.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,283,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="27,108,261,148"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,60,147,94,141,94,141,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="333,5,609,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,238,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="367,67,214,113,212,108,362,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="262,124,437,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="436,67,378,116,376,111,431,68"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="461,115,726,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="509,65,557,105,552,104,507,70"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="750,124,978,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="591,65,800,119,794,119,591,70"/>
 </map>

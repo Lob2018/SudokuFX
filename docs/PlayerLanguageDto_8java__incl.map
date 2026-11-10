@@ -1,5 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/dto/PlayerLanguageDto.java" name="src/main/java/fr/softsf/sudokufx/dto/PlayerLanguageDto.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,224,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="17,108,212,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,60,117,94,112,94,112,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="223,5,440,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,124,200,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,67,148,119,146,115,259,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="224,115,440,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="334,66,334,101,330,98,330,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="464,115,680,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="406,65,508,109,503,109,405,70"/>
 </map>

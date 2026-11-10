@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.model.GridUTest.givenNullDefaultgridvalue_whenCreateGrid_thenThrowsNullPointerException" name="fr.softsf.sudokufx.model.GridUTest.givenNullDefaultgridvalue_whenCreateGrid_thenThrowsNullPointerException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,358,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="114,28,115,19,128,10,150,5,182,3,219,6,243,15,238,16,218,11,181,8,151,10,130,15,120,21,118,31"/>
+</map>

@@ -1,7 +1,11 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.EqualsAndHashCodeTests.givenPlayerAndNonPlayerObject_whenComparing_thenTheyAreNotEqual" name="fr.softsf.sudokufx.model.PlayerUTest.EqualsAndHashCodeTests.givenPlayerAndNonPlayerObject_whenComparing_thenTheyAreNotEqual">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,316,92"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="364,5,547,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="316,38,350,34,351,39,316,43"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#abbe67fb60b057a2f1f153606bbfff685" title="Compares two Player objects for equality based on all fields." alt="" coords="364,69,547,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,72,351,75,350,81,316,77"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,315,108"/>
+<area shape="poly" id="edge5_Node000001_Node000001" title=" " alt="" coords="103,28,106,18,118,10,135,5,160,3,190,6,211,16,205,17,189,11,160,8,136,10,120,15,111,21,107,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="363,12,544,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="315,48,350,46,345,47,316,53"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#abbe67fb60b057a2f1f153606bbfff685" title="Compares two Player objects for equality based on all fields." alt="" coords="363,81,544,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="315,84,350,91,344,91,315,90"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#ab62e3636232e225aeb3e6e1f16f91e84" title="Protected default constructor for JPA." alt="" coords="592,81,773,126"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="544,101,579,103,574,103,544,106"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="639,79,638,71,645,62,660,56,683,54,708,57,724,66,719,65,706,62,683,60,661,62,648,66,643,72,644,82"/>
 </map>

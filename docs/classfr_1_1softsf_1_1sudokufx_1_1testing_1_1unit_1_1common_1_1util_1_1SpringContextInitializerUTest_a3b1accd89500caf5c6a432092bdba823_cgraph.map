@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.testing.unit.common.util.SpringContextInitializerUTest.givenMockedSpringContext_whenRunInitializationTask_thenInitIsCalled" name="fr.softsf.sudokufx.testing.unit.common.util.SpringContextInitializerUTest.givenMockedSpringContext_whenRunInitializationTask_thenInitIsCalled">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,364,93"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html#aec80b2c8add2ad3519eeac6c1e8c05cf" title="Returns a JavaFX Task that initializes the Spring application context using the specified Spring Boot..." alt="" coords="412,5,740,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="364,44,399,43,394,44,365,49"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1SpringContextInitializer.html#a7185e1ba2b9219e85f8308a3425fb26e" title="Starts the given JavaFX Task in a new background thread." alt="" coords="422,75,730,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="364,76,409,82,404,82,364,81"/>
+</map>

@@ -1,5 +1,31 @@
 <map id="src/main/java/fr/softsf/sudokufx/view/util/BindingConfigurator.java" name="src/main/java/fr/softsf/sudokufx/view/util/BindingConfigurator.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,315,45"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="96,93,224,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,46,163,79,157,79,157,46"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="1343,5,1651,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,106,133,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1340,34,715,57,385,76,249,88,145,101,125,105,124,100,145,95,249,82,385,71,714,52,1345,32"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="156,98,371,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1340,33,916,56,653,74,386,101,386,95,653,69,916,50,1345,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="395,98,615,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1340,37,1019,62,826,79,630,100,629,95,825,73,1018,56,1345,37"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="638,106,860,134"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1345,43,1120,70,872,101,837,106,836,101,871,95,1119,64,1340,44"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="884,98,1107,143"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1380,50,1123,99,1122,94,1374,51"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1132,106,1305,134"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1433,50,1274,104,1273,99,1428,51"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1328,106,1471,134"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1476,49,1426,98,1424,93,1471,51"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1496,106,1696,134"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1521,48,1573,96,1567,95,1519,53"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1720,98,1911,143"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1574,48,1728,94,1722,93,1573,53"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1936,106,2128,134"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="1638,48,1924,95,1954,103,1948,103,1923,101,1638,53"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="2152,98,2336,143"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="1651,39,1877,61,2139,98,2134,97,1876,67,1651,44"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="2360,106,2525,134"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="1652,32,1973,53,2161,71,2348,95,2377,103,2372,103,2347,101,2161,77,1973,59,1652,38"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="2549,98,2784,143"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="1652,32,2047,53,2288,71,2536,98,2530,98,2288,76,2047,58,1652,37"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="2808,106,3007,134"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="1651,28,1875,33,2161,45,2478,65,2796,95,2833,103,2828,103,2795,101,2477,70,2161,50,1875,39,1652,33"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuMiniViewModelUTest" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuMiniViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,320,209"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1247,318,1454"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuMiniViewModel.html" title="ViewModel for the mini menu." alt="" coords="38,5,285,1174"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,1171,164,1230,159,1229,161,1176"/>
 </map>

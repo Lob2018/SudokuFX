@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlayEffectTests.givenNullEffectFile_whenPlayEffect_thenThrowsNullPointerException" name="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.PlayEffectTests.givenNullEffectFile_whenPlayEffect_thenThrowsNullPointerException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,413,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="131,28,133,18,147,10,173,5,209,3,252,6,280,16,275,16,251,11,209,8,173,10,149,15,137,22,135,31"/>
+</map>

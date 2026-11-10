@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridMaster.remplirPremiereLigneAleatoirement" name="fr.softsf.sudokufx.common.util.sudoku.GridMaster.remplirPremiereLigneAleatoirement">
+<area shape="rect" id="Node000001" title="Remplit aléatoirement la première ligne de la grille avec les chiffres de 1 à 9." alt="" coords="5,29,336,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="109,28,107,19,117,10,138,5,171,3,206,5,229,14,223,14,205,10,170,8,139,10,120,15,112,21,114,30"/>
+</map>

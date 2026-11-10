@@ -1,0 +1,41 @@
+<map id="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSolveViewModelUTest.bindingsShouldReturnCorrectValues_beforeAndAfterLocaleChange" name="fr.softsf.sudokufx.testing.unit.viewmodel.MenuSolveViewModelUTest.bindingsShouldReturnCorrectValues_beforeAndAfterLocaleChange">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,631,353,692"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1testing_1_1unit_1_1viewmodel_1_1MenuSolveViewModelUTest.html#aa7dab141825b1aeb6719741d4a6ec847" title=" " alt="" coords="401,639,785,684"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="352,659,387,660,383,663,354,664"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#ae48034c1b5565cc3afd8b338ee9f76ff" title="Returns the reactive binding for the solve clear accessible text property." alt="" coords="840,29,1147,91"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="594,638,611,540,628,471,651,395,682,315,722,237,771,164,800,131,831,101,838,98,834,102,835,105,804,135,775,167,726,240,687,317,656,397,633,472,617,541,599,640"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#abc77bfbb1db5def8a7084796bc0348b9" title="Returns the reactive binding for the solve clear role description property." alt="" coords="860,139,1127,200"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="597,637,620,557,665,441,697,378,734,317,779,259,831,210,848,201,844,205,835,214,783,263,739,320,701,381,670,443,625,558,602,640"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a7e8f4d8c1391ac081300b9cc21771cd1" title="Returns the reactive binding for the solve clear tooltip property." alt="" coords="853,248,1134,310"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="601,637,631,574,680,488,711,442,747,397,787,355,831,319,841,315,837,319,835,324,791,359,751,400,715,445,684,491,635,577,606,640"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a0d2913780cf90612d34d6b2304670609" title="Returns the reactive binding for the solve menu maxi accessible text property." alt="" coords="858,357,1130,419"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="609,637,645,593,697,536,760,478,832,429,845,424,841,427,834,433,764,482,700,540,649,596,613,640"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a62d0a338055b023523e967123676352b" title="Returns the reactive binding for the solve menu maxi role description property." alt="" coords="858,467,1130,528"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="631,637,722,588,832,538,853,532,849,535,834,543,724,592,634,641"/>
+<area shape="rect" id="Node000008" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a2bea1d273cba2904bfc7631fe78fb882" title="Returns the reactive binding for the solve menu maxi text property." alt="" coords="858,576,1130,638"/>
+<area shape="poly" id="edge12_Node000002_Node000008" title=" " alt="" coords="760,636,845,626,840,629,762,641"/>
+<area shape="rect" id="Node000009" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#aad2a6cea94a081a27ec5815558f6f2fa" title="Returns the reactive binding for the solve menu maxi tooltip property." alt="" coords="858,685,1130,747"/>
+<area shape="poly" id="edge14_Node000002_Node000009" title=" " alt="" coords="761,682,845,695,840,696,762,687"/>
+<area shape="rect" id="Node000010" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a9c090f51f85e2b592a3406e35a5ba810" title="Returns the reactive binding for the solve reduce accessible text property." alt="" coords="833,795,1154,856"/>
+<area shape="poly" id="edge16_Node000002_Node000010" title=" " alt="" coords="650,682,905,787,900,789,650,687"/>
+<area shape="rect" id="Node000011" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#ac55bbce1266f95be0283786289266b34" title="Returns the reactive binding for the solve reduce text property." alt="" coords="854,904,1133,966"/>
+<area shape="poly" id="edge18_Node000002_Node000011" title=" " alt="" coords="616,681,707,769,769,820,834,866,892,897,887,898,832,870,765,824,704,773,615,687"/>
+<area shape="rect" id="Node000012" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#af00eec56891007110fb789e20c80311c" title="Returns the reactive binding for the solve reduce tooltip property." alt="" coords="846,1013,1141,1075"/>
+<area shape="poly" id="edge20_Node000002_Node000012" title=" " alt="" coords="606,682,641,741,691,818,757,902,794,941,835,975,883,1007,878,1006,831,980,791,944,753,905,687,821,636,743,605,687"/>
+<area shape="rect" id="Node000013" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a83bcf4a5c8f152652fc8af977249aecd" title="Returns the reactive binding for the solve role description property." alt="" coords="840,1123,1147,1184"/>
+<area shape="poly" id="edge22_Node000002_Node000013" title=" " alt="" coords="602,682,630,759,677,866,709,924,745,982,787,1036,835,1085,878,1116,873,1115,831,1089,783,1040,741,985,704,927,673,868,625,761,600,687"/>
+<area shape="rect" id="Node000014" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSolveViewModel.html#a4000e922b751d35e050aa225eac8d6aa" title="Returns the reactive binding for the solve text property." alt="" coords="850,1232,1137,1277"/>
+<area shape="poly" id="edge24_Node000002_Node000014" title=" " alt="" coords="599,682,621,777,639,842,663,913,694,988,733,1063,779,1133,835,1194,856,1211,881,1226,876,1225,853,1215,831,1198,775,1136,728,1065,689,991,658,915,634,843,615,778,597,687"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="917,28,919,18,933,10,958,5,994,3,1036,6,1063,15,1058,17,1035,11,994,8,959,10,935,15,923,22,922,30"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="917,137,919,128,933,119,958,114,994,112,1036,115,1063,124,1058,126,1035,120,994,117,959,119,935,124,923,131,922,140"/>
+<area shape="poly" id="edge7_Node000005_Node000005" title=" " alt="" coords="917,247,919,237,933,229,958,223,994,221,1036,224,1063,234,1058,235,1035,229,994,227,959,229,935,234,923,240,922,249"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="917,356,919,346,933,338,958,333,994,331,1036,334,1063,343,1058,344,1035,339,994,336,959,338,935,343,923,350,922,358"/>
+<area shape="poly" id="edge11_Node000007_Node000007" title=" " alt="" coords="917,465,919,456,933,447,958,442,994,440,1036,443,1063,453,1058,454,1035,448,994,445,959,447,935,452,923,459,921,468"/>
+<area shape="poly" id="edge13_Node000008_Node000008" title=" " alt="" coords="917,574,919,565,933,557,958,551,994,549,1036,552,1064,562,1058,563,1035,557,994,555,959,557,935,562,923,568,921,577"/>
+<area shape="poly" id="edge15_Node000009_Node000009" title=" " alt="" coords="917,684,919,674,933,666,958,661,994,659,1036,662,1064,671,1058,672,1035,667,994,664,959,666,935,671,923,678,921,687"/>
+<area shape="poly" id="edge17_Node000010_Node000010" title=" " alt="" coords="917,793,919,784,933,775,958,770,994,768,1036,771,1064,781,1058,781,1035,776,994,773,959,775,935,780,923,787,921,796"/>
+<area shape="poly" id="edge19_Node000011_Node000011" title=" " alt="" coords="917,902,919,893,933,885,958,879,994,877,1036,880,1064,890,1058,891,1035,885,994,883,959,885,935,890,923,896,921,906"/>
+<area shape="poly" id="edge21_Node000012_Node000012" title=" " alt="" coords="917,1011,919,1002,933,994,958,989,994,987,1036,990,1064,1000,1058,1000,1035,995,994,992,959,994,935,999,923,1006,921,1015"/>
+<area shape="poly" id="edge23_Node000013_Node000013" title=" " alt="" coords="917,1121,919,1112,933,1103,958,1098,994,1096,1036,1099,1064,1109,1058,1109,1035,1104,994,1101,959,1103,935,1108,923,1115,921,1124"/>
+<area shape="poly" id="edge25_Node000014_Node000014" title=" " alt="" coords="919,1230,917,1222,929,1213,955,1208,994,1206,1037,1208,1064,1218,1059,1217,1036,1214,994,1211,956,1213,931,1218,922,1224,924,1233"/>
+</map>

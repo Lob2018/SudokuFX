@@ -1,11 +1,15 @@
 <map id="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetCellToEditable" name="fr.softsf.sudokufx.viewmodel.grid.GridViewModel.resetCellToEditable">
-<area shape="rect" id="Node000001" title="Resets a cell to its default editable state and clears content." alt="" coords="5,101,256,141"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="304,5,563,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,99,303,55,332,46,334,51,305,60,182,104"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="312,69,555,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="256,105,298,101,299,106,256,111"/>
-<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="312,133,555,173"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,132,299,136,298,142,256,137"/>
-<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="305,197,561,237"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="182,139,305,183,334,191,332,196,303,188,181,144"/>
+<area shape="rect" id="Node000001" title="Resets a cell to its default editable state and clears content." alt="" coords="5,169,255,214"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a1b2f5aa3c798e4aaf3e845aa59cde94c" title="Returns the property representing the editable state of the cell." alt="" coords="303,29,560,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,167,224,125,302,84,322,78,317,81,304,89,227,130,164,171"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="311,123,552,167"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="254,170,298,165,293,167,256,175"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="311,216,552,261"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="255,208,298,217,293,218,255,214"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ae04f21e5c6df7750f4e8c79d600a9b6b" title="Returns the property representing the raw unformatted text of the cell." alt="" coords="304,309,559,354"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="180,212,304,271,369,302,363,302,302,275,179,217"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="375,28,373,19,383,10,402,5,431,3,464,5,485,14,479,15,463,10,431,8,403,10,385,15,378,21,380,30"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="375,121,373,112,383,103,402,98,431,96,464,98,485,107,479,108,463,104,431,101,403,103,385,108,378,114,380,123"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="375,214,373,206,383,197,402,191,431,189,464,192,485,201,479,201,463,197,431,195,403,197,385,201,378,207,380,217"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="375,307,373,299,383,290,402,285,431,283,464,285,485,294,479,294,463,290,431,288,403,290,385,295,378,301,379,310"/>
 </map>

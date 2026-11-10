@@ -1,5 +1,17 @@
 <map id="fr.softsf.sudokufx.view.util.GenericListViewFactory.configureGameListView" name="fr.softsf.sudokufx.view.util.GenericListViewFactory.configureGameListView">
-<area shape="rect" id="Node000001" title="Configures the ListView used in the save menu." alt="" coords="5,5,241,60"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="289,5,524,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="242,30,275,30,275,35,242,35"/>
+<area shape="rect" id="Node000001" title="Configures the ListView used in the save menu." alt="" coords="5,248,241,310"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#ae8fd54720d3bf9eed7e6818910574eb0" title="Returns the reactive binding for the cell confirmation message property." alt="" coords="303,29,575,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,246,202,173,242,134,287,101,298,97,294,100,290,105,246,138,206,176,147,249"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#a5ab4585818714dcc320d52514c418a23" title="Returns the reactive binding for the cell delete accessible text property." alt="" coords="303,139,575,200"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="196,245,288,210,311,204,307,207,290,215,198,250"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#a0ff146482b5bc658c0f2d6525ebc793a" title="Returns the reactive binding for the cell delete accessible text property." alt="" coords="289,248,589,310"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="240,276,276,278,271,280,242,281"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuSaveViewModel.html#af227c1d499f693ab59c4c80ac7a5b4d1" title="Returns the observable list of games." alt="" coords="323,358,555,402"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="221,308,355,351,350,354,221,313"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1util_1_1GenericListViewFactory.html#acae6d879cc76140491e38a8f889fe790" title="Applies rounded clipping to the given ListView using the provided Rectangle." alt="" coords="322,427,556,488"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="155,308,215,362,251,389,290,412,310,424,304,423,287,417,248,393,212,366,154,313"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="378,28,379,19,391,10,410,5,439,3,472,5,494,15,489,16,471,11,439,8,411,10,393,15,384,21,383,30"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="378,137,379,128,391,119,410,114,439,112,472,115,494,124,488,125,471,120,439,117,411,119,393,124,384,131,383,140"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="378,246,379,237,391,229,410,223,439,221,472,224,494,234,488,234,471,229,439,227,411,229,393,233,384,240,382,249"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="380,356,378,348,388,339,408,333,439,331,473,334,495,343,489,343,472,339,439,336,409,338,390,343,383,349,384,359"/>
 </map>

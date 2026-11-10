@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.VolumeControlTests.givenNullKey_whenSetEffectVolume_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.testing.unit.service.ui.AudioServiceUTest.VolumeControlTests.givenNullKey_whenSetEffectVolume_thenThrowsIllegalArgumentException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,477,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="151,28,153,18,170,10,199,5,241,3,292,6,324,16,318,16,291,11,241,8,200,10,172,15,158,22,156,31"/>
+</map>

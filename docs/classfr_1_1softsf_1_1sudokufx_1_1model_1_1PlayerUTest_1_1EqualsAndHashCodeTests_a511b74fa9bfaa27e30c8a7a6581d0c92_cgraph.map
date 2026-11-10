@@ -1,7 +1,6 @@
 <map id="fr.softsf.sudokufx.model.PlayerUTest.EqualsAndHashCodeTests.givenTwoPlayersWithSameId_whenComparing_thenTheyAreEqual" name="fr.softsf.sudokufx.model.PlayerUTest.EqualsAndHashCodeTests.givenTwoPlayersWithSameId_whenComparing_thenTheyAreEqual">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,316,92"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="364,5,547,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="316,38,350,34,351,39,316,43"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a882192d49d3852838665233a2e4d4fe2" title="Computes the hash code based on all fields." alt="" coords="364,69,547,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,72,351,75,350,81,316,77"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,315,108"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="103,28,106,18,118,10,135,5,160,3,190,6,211,16,205,16,189,11,160,8,136,10,120,15,111,21,107,31"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a4574ded97fea4146b554c57260f9b140" title="Returns a new PlayerBuilder instance for fluent construction." alt="" coords="363,46,544,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="315,66,350,68,344,69,315,71"/>
 </map>

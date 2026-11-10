@@ -1,0 +1,15 @@
+<map id="fr.softsf.sudokufx.model.Player.Player" name="fr.softsf.sudokufx.model.Player.Player">
+<area shape="rect" id="Node000001" title="Full constructor to initialize all fields of Player." alt="" coords="5,179,187,223"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a2020292ec34525b22c04bc80ec18b08f" title="Validates that the creation date is not null." alt="" coords="254,5,438,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,177,162,119,196,87,233,60,247,55,243,59,236,65,199,91,166,123,116,180"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a7262425d3a1c07b5ffdafba0a6aa51de" title="Validates that the menu is not null." alt="" coords="255,75,436,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="136,176,234,129,255,123,250,126,236,134,140,180"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" title="Validates that the name is not null." alt="" coords="255,144,436,189"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="186,186,242,180,237,182,188,191"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#aa248bf09324098ddbaedfb58fc6d73ba" title="Validates that the options are not null." alt="" coords="255,213,436,258"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="187,211,242,220,237,222,188,216"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a67f9d00af3ba036ed39f639a271ee9f0" title="Validates that the player language is not null." alt="" coords="235,283,457,327"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="138,221,236,268,255,277,250,277,234,273,138,226"/>
+<area shape="rect" id="Node000007" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="252,352,440,397"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="115,221,166,279,199,311,236,337,247,346,242,345,233,342,196,315,162,283,113,226"/>
+</map>

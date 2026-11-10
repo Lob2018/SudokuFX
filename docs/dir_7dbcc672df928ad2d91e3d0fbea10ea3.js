@@ -1,12 +1,12 @@
 var dir_7dbcc672df928ad2d91e3d0fbea10ea3 =
 [
-    [ "IGameLevelMapper.java", "_i_game_level_mapper_8java.html", "_i_game_level_mapper_8java" ],
-    [ "IGameMapper.java", "_i_game_mapper_8java.html", "_i_game_mapper_8java" ],
-    [ "IGridMapper.java", "_i_grid_mapper_8java.html", "_i_grid_mapper_8java" ],
-    [ "IMenuMapper.java", "_i_menu_mapper_8java.html", "_i_menu_mapper_8java" ],
-    [ "IOptionsMapper.java", "_i_options_mapper_8java.html", "_i_options_mapper_8java" ],
-    [ "IPlayerLanguageMapper.java", "_i_player_language_mapper_8java.html", "_i_player_language_mapper_8java" ],
-    [ "IPlayerMapper.java", "_i_player_mapper_8java.html", "_i_player_mapper_8java" ],
-    [ "MapperUtils.java", "_mapper_utils_8java.html", "_mapper_utils_8java" ],
+    [ "IGameLevelMapper.java", "IGameLevelMapper_8java.html", "IGameLevelMapper_8java" ],
+    [ "IGameMapper.java", "IGameMapper_8java.html", "IGameMapper_8java" ],
+    [ "IGridMapper.java", "IGridMapper_8java.html", "IGridMapper_8java" ],
+    [ "IMenuMapper.java", "IMenuMapper_8java.html", "IMenuMapper_8java" ],
+    [ "IOptionsMapper.java", "IOptionsMapper_8java.html", "IOptionsMapper_8java" ],
+    [ "IPlayerLanguageMapper.java", "IPlayerLanguageMapper_8java.html", "IPlayerLanguageMapper_8java" ],
+    [ "IPlayerMapper.java", "IPlayerMapper_8java.html", "IPlayerMapper_8java" ],
+    [ "MapperUtils.java", "MapperUtils_8java.html", "MapperUtils_8java" ],
     [ "package-info.java", "common_2interfaces_2mapper_2package-info_8java.html", null ]
 ];

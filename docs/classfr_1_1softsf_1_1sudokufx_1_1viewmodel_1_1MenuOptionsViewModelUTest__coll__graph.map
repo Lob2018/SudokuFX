@@ -1,7 +1,78 @@
 <map id="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest" name="fr.softsf.sudokufx.viewmodel.MenuOptionsViewModelUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="62,1721,393,2197"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,799,175,865"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="98,878,190,1658,198,1721,193,1721,185,1659,92,878"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="199,5,533,1659"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="267,1659,261,1705,256,1705,262,1658"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="2462,3993,2791,4425"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1AbstractPlayerStateTest.html" title="Abstract base test class that provides:" alt="" coords="1466,2886,1704,3042"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1645,3052,1767,3228,1936,3460,2138,3718,2245,3845,2355,3967,2464,4074,2459,4073,2351,3971,2241,3849,2133,3721,1932,3464,1763,3231,1643,3057"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1PlayerService.html" title="Service for managing Player entities." alt="" coords="1299,677,1727,1251"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="1514,1248,1520,1579,1528,1935,1554,2463,1581,2869,1575,2868,1549,2464,1523,1935,1514,1579,1513,1253"/>
+<area shape="rect" id="Node000025" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1state_1_1PlayerStateHolder.html" title="Holds the current PlayerDto for the application." alt="" coords="1680,1492,1919,1767"/>
+<area shape="poly" id="edge30_Node000025_Node000003" title=" " alt="" coords="1637,1248,1737,1477,1731,1477,1636,1253"/>
+<area shape="rect" id="Node000004" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1PlayerRepository.html" title="Repository interface for Player entities." alt="" coords="773,402,1012,587"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="1001,584,1025,602,1288,799,1283,801,1022,606,1003,589"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="812,183,973,273"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="893,285,895,402,890,402,893,290"/>
+<area shape="rect" id="Node000006" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1PlayerLanguageRepository.html" title="Repository interface for PlayerLanguage entities." alt="" coords="1368,441,1569,548"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="1434,550,1418,599,1413,626,1414,653,1415,660,1410,660,1409,653,1408,625,1413,597,1436,545"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="1180,183,1403,273"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="1329,282,1437,441,1432,442,1329,287"/>
+<area shape="rect" id="Node000008" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1OptionsRepository.html" title="Repository interface for Options entities." alt="" coords="2256,183,2450,273"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="2303,275,2245,338,2227,360,2214,386,2204,418,2200,447,2201,499,2201,524,2197,550,2188,576,2171,606,2129,657,2080,703,2028,746,1972,784,1857,848,1744,896,1741,892,1854,843,1970,779,2025,741,2077,699,2125,653,2167,602,2183,574,2192,548,2195,524,2195,499,2194,447,2198,417,2209,384,2223,358,2242,334,2306,270"/>
+<area shape="rect" id="Node000020" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1OptionsService.html" title="Service for managing Options entities." alt="" coords="2354,385,2614,604"/>
+<area shape="poly" id="edge20_Node000020_Node000008" title=" " alt="" coords="2374,270,2425,370,2420,370,2374,275"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="2268,5,2438,95"/>
+<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="2354,107,2355,184,2350,183,2352,112"/>
+<area shape="rect" id="Node000010" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1MenuRepository.html" title="Repository interface for Menu entities." alt="" coords="5,450,199,539"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="135,536,172,571,213,602,346,671,486,731,630,783,774,826,915,862,1049,892,1284,934,1279,937,1048,897,913,867,772,831,628,788,484,736,343,676,210,606,169,575,137,541"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="24,183,180,273"/>
+<area shape="poly" id="edge10_Node000010_Node000011" title=" " alt="" coords="102,285,105,450,100,450,102,290"/>
+<area shape="rect" id="Node000012" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GameRepository.html" title="Repository interface for Game entities." alt="" coords="495,433,749,556"/>
+<area shape="poly" id="edge11_Node000003_Node000012" title=" " alt="" coords="692,553,762,602,893,677,1029,748,1162,812,1286,868,1281,870,1160,817,1027,753,891,682,759,606,694,558"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="543,183,702,273"/>
+<area shape="poly" id="edge12_Node000012_Node000013" title=" " alt="" coords="622,285,625,433,620,433,622,290"/>
+<area shape="rect" id="Node000014" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GridRepository.html" title="Repository interface for Grid entities." alt="" coords="1428,183,1622,273"/>
+<area shape="poly" id="edge13_Node000003_Node000014" title=" " alt="" coords="1544,269,1567,324,1583,384,1599,459,1607,518,1608,578,1601,653,1600,661,1595,659,1596,653,1603,578,1602,519,1594,460,1578,386,1561,326,1544,275"/>
+<area shape="rect" id="Node000023" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GridService.html" title="Service for managing Grid entities." alt="" coords="1749,405,1986,584"/>
+<area shape="poly" id="edge24_Node000023_Node000014" title=" " alt="" coords="1570,270,1624,315,1684,359,1707,371,1731,383,1748,394,1743,396,1729,387,1705,375,1681,363,1621,319,1571,275"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1452,5,1598,95"/>
+<area shape="poly" id="edge14_Node000014_Node000015" title=" " alt="" coords="1525,107,1527,184,1522,183,1524,112"/>
+<area shape="rect" id="Node000016" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameLevelService.html" title="Service managing fr.softsf.sudokufx.model.GameLevel entities." alt="" coords="224,422,472,567"/>
+<area shape="poly" id="edge28_Node000002_Node000016" title=" " alt="" coords="354,564,364,609,375,652,437,825,504,999,578,1173,656,1345,821,1679,990,1993,1154,2279,1304,2526,1431,2726,1526,2872,1520,2872,1426,2729,1299,2529,1149,2282,985,1996,816,1681,651,1347,573,1175,500,1001,432,827,370,654,359,611,354,570"/>
+<area shape="poly" id="edge15_Node000003_Node000016" title=" " alt="" coords="423,565,454,585,485,602,519,613,547,617,577,618,614,625,648,637,681,651,1285,876,1281,879,679,655,646,642,612,631,576,624,547,622,518,618,482,606,452,590,425,570"/>
+<area shape="rect" id="Node000017" href="$interfacefr_1_1softsf_1_1sudokufx_1_1repository_1_1GameLevelRepository.html" title="Repository interface for GameLevel entities." alt="" coords="251,175,444,281"/>
+<area shape="poly" id="edge16_Node000016_Node000017" title=" " alt="" coords="348,278,350,405,345,405,347,283"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="251,5,444,95"/>
+<area shape="poly" id="edge17_Node000017_Node000018" title=" " alt="" coords="348,106,350,175,345,175,347,112"/>
+<area shape="rect" id="Node000019" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IPlayerMapper.html" title="Mapper interface for converting between Player entity and PlayerDto data transfer object." alt="" coords="1036,422,1344,567"/>
+<area shape="poly" id="edge18_Node000003_Node000019" title=" " alt="" coords="1239,565,1308,663,1303,663,1240,570"/>
+<area shape="poly" id="edge43_Node000001_Node000020" title=" " alt="" coords="2443,602,2420,683,2398,772,2381,867,2374,963,2374,2965,2379,3101,2391,3239,2411,3377,2435,3512,2493,3764,2552,3978,2547,3975,2487,3765,2430,3513,2405,3378,2386,3240,2373,3102,2369,2965,2369,963,2375,866,2392,771,2415,681,2441,606"/>
+<area shape="poly" id="edge19_Node000003_Node000020" title=" " alt="" coords="2352,596,2335,606,2310,615,2289,618,2269,621,2245,630,2230,642,2214,655,2097,721,1976,782,1856,835,1745,881,1741,877,1853,830,1973,777,2095,716,2211,651,2226,638,2243,626,2268,616,2288,613,2309,610,2333,602,2356,592"/>
+<area shape="rect" id="Node000026" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuOptionsViewModel.html" title="ViewModel managing menu options UI state and accessibility strings." alt="" coords="2872,2008,3204,3920"/>
+<area shape="poly" id="edge39_Node000026_Node000020" title=" " alt="" coords="2612,518,2687,540,2764,573,2836,617,2869,645,2898,675,2930,725,2958,785,2981,856,3000,935,3015,1021,3027,1113,3043,1306,3050,1502,3052,1689,3049,1984,3049,1993,3044,1990,3044,1984,3046,1689,3045,1502,3038,1306,3022,1113,3010,1022,2995,936,2976,857,2953,787,2925,727,2893,679,2865,648,2833,622,2761,578,2685,545,2614,523"/>
+<area shape="rect" id="Node000021" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IOptionsMapper.html" title="This interface defines methods for mapping objects of type Options to objects of type OptionsDto and ..." alt="" coords="2473,155,2782,301"/>
+<area shape="poly" id="edge21_Node000020_Node000021" title=" " alt="" coords="2590,298,2553,371,2548,369,2587,303"/>
+<area shape="rect" id="Node000022" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1exception_1_1JakartaValidator.html" title="Spring component for validating objects using Jakarta Bean Validation." alt="" coords="1978,144,2232,312"/>
+<area shape="poly" id="edge27_Node000003_Node000022" title=" " alt="" coords="2077,309,2055,386,2043,448,2039,500,2029,549,2018,576,2000,606,1946,675,1882,739,1812,795,1743,843,1739,840,1809,790,1878,735,1942,672,1996,602,2013,573,2024,547,2033,499,2038,448,2050,384,2075,314"/>
+<area shape="poly" id="edge22_Node000020_Node000022" title=" " alt="" coords="2211,309,2286,359,2335,383,2342,387,2336,389,2333,387,2284,363,2212,315"/>
+<area shape="poly" id="edge26_Node000023_Node000022" title=" " alt="" coords="1976,308,1967,314,1941,324,1931,328,1920,338,1903,362,1891,390,1886,388,1899,360,1916,334,1928,324,1939,319,1965,310,1980,304"/>
+<area shape="poly" id="edge23_Node000003_Node000023" title=" " alt="" coords="1799,586,1739,669,1734,667,1802,582"/>
+<area shape="rect" id="Node000024" href="$interfacefr_1_1softsf_1_1sudokufx_1_1common_1_1interfaces_1_1mapper_1_1IGridMapper.html" title="This interface defines methods for mapping objects of type Grid to objects of type GridDto and vice v..." alt="" coords="1645,155,1954,301"/>
+<area shape="poly" id="edge25_Node000023_Node000024" title=" " alt="" coords="1795,298,1803,360,1812,389,1807,389,1798,362,1794,303"/>
+<area shape="poly" id="edge29_Node000002_Node000025" title=" " alt="" coords="1779,1765,1602,2870,1597,2868,1776,1769"/>
+<area shape="poly" id="edge38_Node000026_Node000025" title=" " alt="" coords="1918,1710,2009,1767,2114,1827,2227,1884,2343,1933,2414,1955,2470,1966,2602,1982,2653,1984,2719,1984,2784,1989,2810,1995,2829,2006,2863,2041,2858,2041,2826,2010,2808,2000,2783,1994,2719,1989,2653,1989,2602,1987,2469,1971,2412,1960,2341,1938,2225,1889,2111,1831,2006,1771,1919,1715"/>
+<area shape="poly" id="edge31_Node000001_Node000026" title=" " alt="" coords="2874,3804,2830,3921,2800,3980,2796,3976,2825,3919,2870,3808"/>
+<area shape="rect" id="Node000027" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1AudioService.html" title="Service managing audio playback for the application." alt="" coords="2504,1324,2742,1935"/>
+<area shape="poly" id="edge42_Node000001_Node000027" title=" " alt="" coords="2591,1933,2588,2008,2561,2546,2553,2763,2549,2964,2550,3166,2556,3383,2569,3629,2588,3919,2592,3978,2588,3975,2583,3920,2564,3629,2551,3383,2545,3166,2544,2964,2548,2762,2556,2546,2583,2008,2589,1937"/>
+<area shape="poly" id="edge32_Node000026_Node000027" title=" " alt="" coords="2718,1932,2760,1982,2777,1992,2794,1993,2812,1995,2829,2006,2865,2052,2860,2051,2826,2010,2810,2000,2793,1998,2775,1997,2757,1986,2718,1938"/>
+<area shape="rect" id="Node000028" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1AsyncFileProcessorService.html" title="Service to execute file&#45;processing tasks asynchronously with JavaFX UI feedback." alt="" coords="2767,1466,3024,1793"/>
+<area shape="poly" id="edge41_Node000001_Node000028" title=" " alt="" coords="2833,1790,2798,1866,2756,1937,2745,1949,2735,1961,2730,1983,2729,2008,2710,2299,2699,2545,2693,2964,2688,3383,2679,3629,2661,3920,2655,3977,2651,3974,2656,3919,2674,3629,2683,3382,2688,2964,2694,2545,2705,2299,2724,2008,2724,1983,2730,1958,2741,1945,2752,1934,2793,1864,2830,1795"/>
+<area shape="poly" id="edge33_Node000026_Node000028" title=" " alt="" coords="2876,1790,2864,1959,2863,2096,2873,2236,2868,2234,2858,2096,2859,1959,2874,1795"/>
+<area shape="rect" id="Node000029" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1ToasterService.html" title="A centralized service for sending toast notifications to the UI." alt="" coords="3084,739,3361,1189"/>
+<area shape="poly" id="edge44_Node000001_Node000029" title=" " alt="" coords="3360,1010,3469,1059,3526,1090,3583,1126,3637,1167,3688,1214,3733,1266,3770,1323,3809,1407,3830,1482,3837,1551,3832,1619,3820,1687,3804,1760,3786,1842,3770,1936,3750,2100,3735,2252,3714,2529,3696,2776,3684,2892,3668,3004,3647,3114,3618,3222,3582,3331,3535,3441,3477,3554,3406,3671,3320,3793,3219,3921,3176,3967,3129,4007,3077,4043,3023,4075,2913,4127,2807,4165,2806,4160,2911,4122,3021,4071,3074,4039,3125,4003,3173,3963,3215,3918,3316,3790,3401,3668,3472,3552,3530,3439,3577,3329,3613,3221,3641,3113,3663,3003,3679,2891,3691,2776,3709,2529,3730,2252,3745,2099,3765,1935,3781,1841,3798,1759,3815,1686,3827,1618,3831,1552,3824,1483,3804,1409,3765,1325,3729,1269,3684,1218,3634,1172,3580,1131,3523,1095,3466,1063,3361,1015"/>
+<area shape="poly" id="edge40_Node000026_Node000029" title=" " alt="" coords="3198,1186,3183,1247,3159,1301,3147,1314,3136,1325,3129,1388,3118,1536,3091,1993,3086,1991,3113,1536,3123,1387,3131,1323,3143,1310,3155,1299,3178,1245,3196,1191"/>
+<area shape="poly" id="edge34_Node000028_Node000029" title=" " alt="" coords="3082,1065,3036,1109,2988,1159,2946,1215,2912,1276,2897,1318,2888,1361,2880,1450,2875,1448,2882,1360,2892,1316,2907,1274,2941,1212,2984,1156,3033,1105,3086,1061"/>
+<area shape="rect" id="Node000030" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1ui_1_1SpinnerService.html" title="A centralized service for managing the global loading state through a thread&#45;safe reference counter." alt="" coords="2654,860,2884,1068"/>
+<area shape="poly" id="edge35_Node000028_Node000030" title=" " alt="" coords="2761,1065,2761,1180,2765,1240,2773,1299,2792,1375,2817,1451,2812,1450,2787,1377,2768,1301,2760,1241,2756,1180,2759,1070"/>
+<area shape="rect" id="Node000031" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1ImageUtils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="3253,1419,3520,1840"/>
+<area shape="poly" id="edge36_Node000026_Node000031" title=" " alt="" coords="3333,1838,3211,2313,3206,2310,3330,1842"/>
+<area shape="rect" id="Node000032" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1AudioUtils.html" title="Utility class providing helper methods for common audio&#45;related operations." alt="" coords="3544,1576,3756,1683"/>
+<area shape="poly" id="edge37_Node000026_Node000032" title=" " alt="" coords="3633,1681,3590,1800,3534,1936,3373,2290,3214,2620,3210,2617,3368,2288,3529,1934,3585,1798,3630,1685"/>
 </map>

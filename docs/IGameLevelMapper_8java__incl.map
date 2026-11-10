@@ -1,5 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/IGameLevelMapper.java" name="src/main/java/fr/softsf/sudokufx/common/interfaces/mapper/IGameLevelMapper.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,244,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="41,108,208,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,60,127,94,122,94,122,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="176,5,413,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,124,171,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,67,130,119,128,114,229,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="194,115,395,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="296,66,297,101,292,98,293,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="419,115,600,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="361,65,451,108,446,108,360,70"/>
 </map>

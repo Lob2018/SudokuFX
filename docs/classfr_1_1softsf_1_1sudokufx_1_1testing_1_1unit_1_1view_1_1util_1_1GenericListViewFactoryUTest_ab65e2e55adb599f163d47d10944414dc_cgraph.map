@@ -1,0 +1,18 @@
+<map id="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigurePlayerListView_thenThrowsNullPointerException" name="fr.softsf.sudokufx.testing.unit.view.util.GenericListViewFactoryUTest.givenNullArguments_whenConfigurePlayerListView_thenThrowsNullPointerException">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,248,446,310"/>
+<area shape="poly" id="edge9_Node000001_Node000001" title=" " alt="" coords="144,247,147,237,162,229,188,223,226,221,271,224,299,234,294,235,270,230,225,227,188,229,163,234,151,240,149,249"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#acc1ffae6b7e4a182e7e7a1eca17481a3" title="Returns the reactive binding for the cell button accessible text property." alt="" coords="494,29,803,91"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="264,245,364,173,427,134,493,100,510,96,505,98,495,105,430,139,367,178,267,250"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#aca9b0ca160159d7c96f67d5a19062e99" title="Returns the reactive binding for the cell confirmation message property." alt="" coords="508,139,789,200"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="347,245,514,203,509,206,349,250"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a3eafd2b6fcea2b1e01fb6691993d0f64" title="Returns the reactive binding for the cell button accessible text property." alt="" coords="508,248,789,310"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="446,276,495,278,490,279,447,281"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#aae474a3cd1a79843b3162b9ac692ac90" title="Returns the observable list of players." alt="" coords="527,358,770,402"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="357,308,540,353,535,355,357,313"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1MenuPlayerViewModel.html#a71605f1cde24d333d9e5cb4b445c274c" title="Returns the property for the currently selected player." alt="" coords="513,427,784,488"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="281,308,379,360,495,412,514,422,509,421,493,417,377,365,280,313"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="567,28,569,18,584,10,611,5,648,3,694,6,722,15,717,16,693,11,648,8,611,10,586,15,574,22,572,31"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="568,137,569,128,584,119,611,114,648,112,694,115,722,125,717,126,693,120,648,117,611,119,586,124,574,131,572,140"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="568,246,569,237,584,229,611,223,648,221,694,224,722,234,717,235,693,230,648,227,611,229,586,234,574,240,572,249"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="570,356,567,347,581,338,607,333,648,331,694,334,722,343,717,343,693,339,648,336,608,338,583,343,572,349,575,359"/>
+</map>

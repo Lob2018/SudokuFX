@@ -1,3 +1,5 @@
 <map id="fr.softsf.sudokufx.config.os.OsFoldersConfig" name="fr.softsf.sudokufx.config.os.OsFoldersConfig">
-<area shape="rect" id="Node000001" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="5,5,296,525"/>
+<area shape="rect" id="Node000001" title="Configuration class for managing OS&#45;specific dynamically." alt="" coords="5,324,294,892"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1OsName.html" title="Utility enum for operating system names." alt="" coords="32,5,267,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,248,152,307,147,307,149,253"/>
 </map>

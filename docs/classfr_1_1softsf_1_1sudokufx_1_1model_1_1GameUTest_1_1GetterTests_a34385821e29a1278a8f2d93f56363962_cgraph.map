@@ -1,5 +1,4 @@
 <map id="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingGameLevel_thenGameLevelIsReturned" name="fr.softsf.sudokufx.model.GameUTest.GetterTests.givenGameExists_whenGettingGameLevel_thenGameLevelIsReturned">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,260,75"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a492a381272a23baea55d28d154fa8080" title="Returns the GameLevel of this game." alt="" coords="308,20,491,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="260,37,294,37,294,43,260,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,259,108"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="82,28,85,18,95,10,111,5,132,3,158,6,175,15,170,16,156,11,132,8,112,10,98,15,90,21,87,30"/>
 </map>

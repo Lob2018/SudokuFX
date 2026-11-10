@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.model.GridUTest.givenGridsWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent" name="fr.softsf.sudokufx.model.GridUTest.givenGridsWithSameAndDifferentValues_whenGetHashCode_thenHashCodeIsConsistent">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,259,75"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Grid.html#a752e8ac9817b7166ffad474e5e2efcfa" title="Computes the hash code based on all fields." alt="" coords="307,20,489,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,37,293,37,293,43,259,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,258,108"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="80,28,83,18,93,10,109,5,132,3,158,6,177,15,172,16,157,11,131,8,110,10,96,15,87,21,84,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Grid.html#a752e8ac9817b7166ffad474e5e2efcfa" title="Computes the hash code based on all fields." alt="" coords="306,46,487,91"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="258,66,293,68,287,69,258,71"/>
 </map>

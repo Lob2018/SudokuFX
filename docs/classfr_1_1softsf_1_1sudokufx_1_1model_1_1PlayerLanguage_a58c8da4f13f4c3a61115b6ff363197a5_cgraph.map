@@ -1,0 +1,6 @@
+<map id="fr.softsf.sudokufx.model.PlayerLanguage.equals" name="fr.softsf.sudokufx.model.PlayerLanguage.equals">
+<area shape="rect" id="Node000001" title="Compares two PlayerLanguage objects for equality based on all fields." alt="" coords="5,29,187,74"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#abb2cd634e710dbff3cbbbe61f587c86e" title="Protected default constructor for JPA." alt="" coords="235,29,468,74"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,49,222,51,216,52,187,54"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="303,27,301,19,310,10,326,5,351,3,379,5,397,14,392,14,378,10,351,8,327,10,312,15,306,21,308,30"/>
+</map>

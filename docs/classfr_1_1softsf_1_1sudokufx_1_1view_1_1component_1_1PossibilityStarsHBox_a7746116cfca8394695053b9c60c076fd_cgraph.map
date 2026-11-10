@@ -1,0 +1,4 @@
+<map id="fr.softsf.sudokufx.view.component.PossibilityStarsHBox.getPercentage" name="fr.softsf.sudokufx.view.component.PossibilityStarsHBox.getPercentage">
+<area shape="rect" id="Node000001" title="Returns the percentage property (0–100) used to calculate the star rating display." alt="" coords="5,29,260,74"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="84,28,83,19,91,10,108,5,133,3,160,5,178,14,173,14,159,10,132,8,109,10,94,15,88,21,89,30"/>
+</map>

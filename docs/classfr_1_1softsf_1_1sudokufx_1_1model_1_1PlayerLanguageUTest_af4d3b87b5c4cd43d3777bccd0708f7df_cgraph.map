@@ -1,7 +1,8 @@
 <map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithValidIsos_whenBuild_thenBothFRAndENAreAccepted" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenBuilderWithValidIsos_whenBuild_thenBothFRAndENAreAccepted">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,23,299,92"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#ad803d89c720e8857feac54f62ae5b614" title="Returns a new PlayerLanguageBuilder instance for fluent construction." alt="" coords="347,5,529,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,38,333,34,333,40,299,44"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a70c763e120718f9286c4d476b6b7c968" title="Returns the ISO code of this PlayerLanguage." alt="" coords="347,69,529,109"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="299,71,333,75,333,80,298,76"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,298,108"/>
+<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="96,28,99,18,110,10,128,5,152,3,180,6,200,15,195,16,179,11,151,8,129,10,113,15,104,21,100,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#ad803d89c720e8857feac54f62ae5b614" title="Returns a new PlayerLanguageBuilder instance for fluent construction." alt="" coords="346,12,527,56"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="298,48,333,46,327,47,299,53"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a70c763e120718f9286c4d476b6b7c968" title="Returns the ISO code of this PlayerLanguage." alt="" coords="346,81,527,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="298,84,333,90,327,90,298,89"/>
 </map>

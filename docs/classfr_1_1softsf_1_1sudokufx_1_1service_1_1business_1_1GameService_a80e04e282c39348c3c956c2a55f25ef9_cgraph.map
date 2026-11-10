@@ -1,7 +1,9 @@
 <map id="fr.softsf.sudokufx.service.business.GameService.switchAndSelectNewGame" name="fr.softsf.sudokufx.service.business.GameService.switchAndSelectNewGame">
-<area shape="rect" id="Node000001" title="Atomically switches the selected game status." alt="" coords="5,5,293,45"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameService.html#ad86439cdff7ea56a7b630cd3b25aae15" title="Internal utility to update game selection state and persist changes." alt="" coords="341,5,599,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,23,327,23,327,28,293,28"/>
-<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameService.html#a2005d65aacae89774f20f99dfb29b2cd" title="Internal utility to retrieve a game entity by its identifier." alt="" coords="647,5,896,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="599,23,633,23,633,28,599,28"/>
+<area shape="rect" id="Node000001" title="Atomically switches the selected game status." alt="" coords="5,40,293,85"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameService.html#ad86439cdff7ea56a7b630cd3b25aae15" title="Internal utility to update game selection state and persist changes." alt="" coords="341,40,597,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,60,327,62,322,63,293,65"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1service_1_1business_1_1GameService.html#a2005d65aacae89774f20f99dfb29b2cd" title="Internal utility to retrieve a game entity by its identifier." alt="" coords="645,5,893,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="597,45,632,43,627,44,598,50"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a60d86d25fb2cffb5acccc81e107561e6" title="Sets the selection state of this game." alt="" coords="678,75,860,119"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="597,74,666,85,660,85,597,80"/>
 </map>

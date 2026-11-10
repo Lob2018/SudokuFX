@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.view.main.LevelInteractionHandler.LevelInteractionHandler" name="fr.softsf.sudokufx.view.main.LevelInteractionHandler.LevelInteractionHandler">
-<area shape="rect" id="Node000001" title="Initializes the handler with required reactive view models and notification services." alt="" coords="5,5,292,60"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler.html#ac14e8afed6bf5c0b770de7e5022ac671" title="Configures the cyclical Timeline for periodic desired possibilities increments." alt="" coords="340,13,615,53"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,30,326,30,326,35,292,35"/>
+<area shape="rect" id="Node000001" title="Initializes the handler with required reactive view models and notification services." alt="" coords="5,29,291,91"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="85,28,86,19,98,10,119,5,148,3,183,6,205,15,200,16,182,11,148,8,119,10,100,15,91,21,90,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1view_1_1main_1_1LevelInteractionHandler.html#ac14e8afed6bf5c0b770de7e5022ac671" title="Configures the cyclical Timeline for periodic desired possibilities increments." alt="" coords="339,38,612,82"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="291,58,325,60,320,60,291,63"/>
 </map>

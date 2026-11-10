@@ -1,17 +1,17 @@
 var dir_12779a24be85975a4455f90e90173dd6 =
 [
-    [ "AppIcons.java", "_app_icons_8java.html", "_app_icons_8java" ],
-    [ "AppPaths.java", "_app_paths_8java.html", "_app_paths_8java" ],
-    [ "DifficultyLevel.java", "_difficulty_level_8java.html", "_difficulty_level_8java" ],
-    [ "FxmlView.java", "_fxml_view_8java.html", "_fxml_view_8java" ],
-    [ "I18n.java", "_i18n_8java.html", "_i18n_8java" ],
-    [ "LogBackTxt.java", "_log_back_txt_8java.html", "_log_back_txt_8java" ],
-    [ "OsName.java", "_os_name_8java.html", "_os_name_8java" ],
+    [ "AppIcons.java", "AppIcons_8java.html", "AppIcons_8java" ],
+    [ "AppPaths.java", "AppPaths_8java.html", "AppPaths_8java" ],
+    [ "DifficultyLevel.java", "DifficultyLevel_8java.html", "DifficultyLevel_8java" ],
+    [ "FxmlView.java", "FxmlView_8java.html", "FxmlView_8java" ],
+    [ "I18n.java", "I18n_8java.html", "I18n_8java" ],
+    [ "LogBackTxt.java", "LogBackTxt_8java.html", "LogBackTxt_8java" ],
+    [ "OsName.java", "OsName_8java.html", "OsName_8java" ],
     [ "package-info.java", "common_2enums_2package-info_8java.html", null ],
-    [ "PlayerConstants.java", "_player_constants_8java.html", "_player_constants_8java" ],
-    [ "PlayerNameStatus.java", "_player_name_status_8java.html", "_player_name_status_8java" ],
-    [ "PlayerSaveMode.java", "_player_save_mode_8java.html", "_player_save_mode_8java" ],
-    [ "ScreenSize.java", "_screen_size_8java.html", "_screen_size_8java" ],
-    [ "ToastLevels.java", "_toast_levels_8java.html", "_toast_levels_8java" ],
-    [ "Urls.java", "_urls_8java.html", "_urls_8java" ]
+    [ "PlayerConstants.java", "PlayerConstants_8java.html", "PlayerConstants_8java" ],
+    [ "PlayerNameStatus.java", "PlayerNameStatus_8java.html", "PlayerNameStatus_8java" ],
+    [ "PlayerSaveMode.java", "PlayerSaveMode_8java.html", "PlayerSaveMode_8java" ],
+    [ "ScreenSize.java", "ScreenSize_8java.html", "ScreenSize_8java" ],
+    [ "ToastLevels.java", "ToastLevels_8java.html", "ToastLevels_8java" ],
+    [ "Urls.java", "Urls_8java.html", "Urls_8java" ]
 ];

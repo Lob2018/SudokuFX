@@ -1,5 +1,8 @@
 <map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenExistingPlayerLanguage_whenSetInvalidIso_thenThrowsIllegalArgumentException" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenExistingPlayerLanguage_whenSetInvalidIso_thenThrowsIllegalArgumentException">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,279,75"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a551c772e482e524f1f4bb7928760fd07" title="Sets the ISO code after validation." alt="" coords="327,20,509,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="279,37,313,37,313,43,279,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,278,108"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="88,28,91,18,102,10,118,5,142,3,169,6,188,15,183,16,168,11,141,8,119,10,104,15,95,21,92,30"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a551c772e482e524f1f4bb7928760fd07" title="Sets the ISO code after validation." alt="" coords="326,46,507,91"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="278,66,313,68,307,69,278,71"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a218e0d9e32e6ec85c2267e54e4bec21f" title="Validates that the iso is not null and matches allowed values (FR or EN)." alt="" coords="555,46,756,91"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="507,66,542,69,537,69,508,71"/>
 </map>

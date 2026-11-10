@@ -1,5 +1,9 @@
 <map id="src/main/java/fr/softsf/sudokufx/view/component/firework/FireworkParticle.java" name="src/main/java/fr/softsf/sudokufx/view/component/firework/FireworkParticle.java">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,224,60"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="16,108,213,148"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,60,117,94,112,94,112,60"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="206,5,425,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,115,202,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="253,67,165,111,162,106,248,68"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="226,124,405,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,66,318,109,313,106,314,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="429,124,618,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="380,65,485,117,480,117,378,70"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.updateLabelFontSizeAndBorderOnTextChange" name="fr.softsf.sudokufx.viewmodel.grid.GridCellViewModel.updateLabelFontSizeAndBorderOnTextChange">
+<area shape="rect" id="Node000001" title="Updates the label&#39;s font size CSS class and border style based on the current text content." alt="" coords="5,5,290,67"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a38d783156f2f2ad694cfbec5062de472" title="Applies a computed border style to a JavaFX node, based on content length, focus state,..." alt="" coords="338,14,599,58"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="290,34,324,36,319,36,290,39"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a02837ccd8bb4343e172b8fe4d7854b25" title="Builds the CSS style for a Sudoku grid cell." alt="" coords="647,14,893,58"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="600,34,634,36,629,36,600,39"/>
+</map>

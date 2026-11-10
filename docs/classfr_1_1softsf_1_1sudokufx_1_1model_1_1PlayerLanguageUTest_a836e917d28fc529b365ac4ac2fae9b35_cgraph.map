@@ -1,5 +1,6 @@
 <map id="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenPlayerLanguageWithValidValues_whenCallToString_thenCorrectStringRepresentationIsReturned" name="fr.softsf.sudokufx.model.PlayerLanguageUTest.givenPlayerLanguageWithValidValues_whenCallToString_thenCorrectStringRepresentationIsReturned">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,317,75"/>
-<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a411e4ad4b3b7e244697e7dd912d24c02" title="Returns a string representation of the PlayerLanguage object." alt="" coords="365,20,548,60"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="318,37,352,37,352,43,318,43"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,29,317,108"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="104,28,107,18,118,10,136,5,161,3,191,6,212,16,206,16,190,11,161,8,137,10,121,15,111,21,108,31"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1PlayerLanguage.html#a411e4ad4b3b7e244697e7dd912d24c02" title="Returns a string representation of the PlayerLanguage object." alt="" coords="365,46,546,91"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="317,66,352,68,346,69,317,71"/>
 </map>

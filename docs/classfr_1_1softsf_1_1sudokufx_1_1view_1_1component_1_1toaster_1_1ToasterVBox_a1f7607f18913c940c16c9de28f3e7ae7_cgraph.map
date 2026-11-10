@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.setToastStyle" name="fr.softsf.sudokufx.view.component.toaster.ToasterVBox.setToastStyle">
+<area shape="rect" id="Node000001" title="Sets the style of the toast based on its level." alt="" coords="5,5,302,50"/>
+<area shape="rect" id="Node000002" href="$enumfr_1_1softsf_1_1sudokufx_1_1common_1_1enums_1_1ToastLevels.html#a43cd66f6e8b04c4873f35e51fd57a36d" title=" " alt="" coords="350,5,595,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="302,25,337,28,331,28,302,30"/>
+</map>

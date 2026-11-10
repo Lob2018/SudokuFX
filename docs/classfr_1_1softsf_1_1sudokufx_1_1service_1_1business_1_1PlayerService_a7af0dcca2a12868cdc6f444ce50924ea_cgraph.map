@@ -1,0 +1,11 @@
+<map id="fr.softsf.sudokufx.service.business.PlayerService.updateCurrentPlayerName" name="fr.softsf.sudokufx.service.business.PlayerService.updateCurrentPlayerName">
+<area shape="rect" id="Node000001" title="Updates the current player name and persists the change." alt="" coords="5,40,293,85"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#af201d3417316b81311308e888df147ac" title="Sets the name after validation." alt="" coords="341,5,522,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="293,42,328,40,322,41,294,47"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#a33aa6abba56c524b516fe11cde122739" title="Sets the update timestamp after validation." alt="" coords="341,75,522,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="293,77,328,84,322,84,293,83"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#ac7bbd9636074d8e4f6cc3f8ee5f75ab8" title="Validates that the name is not null." alt="" coords="573,5,754,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="522,25,560,27,554,28,522,30"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Player.html#aeb37d6a41a17c7c3762f30a68b29ca54" title="Validates that the update date is not null." alt="" coords="570,75,757,119"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="522,94,557,97,552,97,522,100"/>
+</map>

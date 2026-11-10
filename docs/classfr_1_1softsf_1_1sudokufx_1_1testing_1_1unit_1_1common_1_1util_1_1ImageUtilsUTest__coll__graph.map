@@ -1,3 +1,5 @@
 <map id="fr.softsf.sudokufx.testing.unit.common.util.ImageUtilsUTest" name="fr.softsf.sudokufx.testing.unit.common.util.ImageUtilsUTest">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,300,500"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,499,298,1062"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1common_1_1util_1_1ImageUtils.html" title="Utility class providing helper methods for common image&#45;related operations in JavaFX." alt="" coords="18,5,285,426"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,423,154,483,149,483,151,429"/>
 </map>

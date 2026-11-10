@@ -1,0 +1,15 @@
+<map id="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues" name="fr.softsf.sudokufx.common.util.sudoku.GridViewModelUTest.givenGridCellViewModel_whenAccessorsCalled_thenReturnExpectedValues">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,160,357,221"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#ac72224355686637ba51642da36977f30" title="Returns the column index of the cell." alt="" coords="405,5,646,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="228,157,308,108,404,60,425,54,420,57,406,65,311,112,231,161"/>
+<area shape="rect" id="Node000003" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#acf79518ead769fe5c4e43d481bec2057" title="Returns the unique identifier of the cell." alt="" coords="405,75,646,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="297,156,428,122,423,125,299,161"/>
+<area shape="rect" id="Node000004" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a206f89cb24905ebf71e7ddbb27998a7d" title="Returns the label control representing the cell in display mode." alt="" coords="405,168,646,213"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="357,188,392,190,386,191,358,193"/>
+<area shape="rect" id="Node000005" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a7979457170088291407aa39b10908cae" title="Returns the row index of the cell." alt="" coords="405,237,646,282"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="337,219,399,233,394,234,337,224"/>
+<area shape="rect" id="Node000006" href="$classfr_1_1softsf_1_1sudokufx_1_1viewmodel_1_1grid_1_1GridCellViewModel.html#a25813c6885f49b2be4c3dafa6e9878c8" title="Returns the text area control used for editing the cell." alt="" coords="405,331,646,375"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="249,219,465,322,460,325,248,224"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="461,166,459,158,470,149,492,143,525,141,562,144,586,153,580,153,561,149,525,147,493,149,472,154,464,160,466,169"/>
+<area shape="poly" id="edge7_Node000006_Node000006" title=" " alt="" coords="461,329,459,320,470,311,492,306,525,304,562,306,586,316,580,315,561,312,525,309,493,311,472,316,464,322,466,332"/>
+</map>

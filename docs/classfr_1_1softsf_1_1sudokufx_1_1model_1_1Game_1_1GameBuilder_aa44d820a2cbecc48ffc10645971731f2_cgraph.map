@@ -1,0 +1,5 @@
+<map id="fr.softsf.sudokufx.model.Game.GameBuilder.gridid" name="fr.softsf.sudokufx.model.Game.GameBuilder.gridid">
+<area shape="rect" id="Node000001" title="Sets the grid." alt="" coords="5,5,195,50"/>
+<area shape="rect" id="Node000002" href="$classfr_1_1softsf_1_1sudokufx_1_1model_1_1Game.html#a94213340195cfb0959046c999196aee1" title="Ensures that the Grid is not null." alt="" coords="243,5,424,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,25,230,27,225,28,195,30"/>
+</map>
