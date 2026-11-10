@@ -1,12 +1,12 @@
 var dir_13f5623da1adebc733daf34fff753157 =
 [
     [ "util", "dir_9d23882abe01d49adb520c8b51eb2862.html", "dir_9d23882abe01d49adb520c8b51eb2862" ],
-    [ "GameLevelRepository.java", "GameLevelRepository_8java.html", "GameLevelRepository_8java" ],
-    [ "GameRepository.java", "GameRepository_8java.html", "GameRepository_8java" ],
-    [ "GridRepository.java", "GridRepository_8java.html", "GridRepository_8java" ],
-    [ "MenuRepository.java", "MenuRepository_8java.html", "MenuRepository_8java" ],
-    [ "OptionsRepository.java", "OptionsRepository_8java.html", "OptionsRepository_8java" ],
+    [ "GameLevelRepository.java", "_game_level_repository_8java.html", "_game_level_repository_8java" ],
+    [ "GameRepository.java", "_game_repository_8java.html", "_game_repository_8java" ],
+    [ "GridRepository.java", "_grid_repository_8java.html", "_grid_repository_8java" ],
+    [ "MenuRepository.java", "_menu_repository_8java.html", "_menu_repository_8java" ],
+    [ "OptionsRepository.java", "_options_repository_8java.html", "_options_repository_8java" ],
     [ "package-info.java", "repository_2package-info_8java.html", null ],
-    [ "PlayerLanguageRepository.java", "PlayerLanguageRepository_8java.html", "PlayerLanguageRepository_8java" ],
-    [ "PlayerRepository.java", "PlayerRepository_8java.html", "PlayerRepository_8java" ]
+    [ "PlayerLanguageRepository.java", "_player_language_repository_8java.html", "_player_language_repository_8java" ],
+    [ "PlayerRepository.java", "_player_repository_8java.html", "_player_repository_8java" ]
 ];

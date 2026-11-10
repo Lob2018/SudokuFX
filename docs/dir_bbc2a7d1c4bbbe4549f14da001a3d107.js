@@ -1,8 +1,8 @@
 var dir_bbc2a7d1c4bbbe4549f14da001a3d107 =
 [
-    [ "AppIconsUTest.java", "AppIconsUTest_8java.html", "AppIconsUTest_8java" ],
-    [ "DifficultyLevelTest.java", "DifficultyLevelTest_8java.html", "DifficultyLevelTest_8java" ],
-    [ "FxmlViewUTest.java", "FxmlViewUTest_8java.html", "FxmlViewUTest_8java" ],
-    [ "OsNameUTest.java", "OsNameUTest_8java.html", "OsNameUTest_8java" ],
-    [ "SecureRandomGeneratorUTest.java", "SecureRandomGeneratorUTest_8java.html", "SecureRandomGeneratorUTest_8java" ]
+    [ "AppIconsUTest.java", "_app_icons_u_test_8java.html", "_app_icons_u_test_8java" ],
+    [ "DifficultyLevelTest.java", "_difficulty_level_test_8java.html", "_difficulty_level_test_8java" ],
+    [ "FxmlViewUTest.java", "_fxml_view_u_test_8java.html", "_fxml_view_u_test_8java" ],
+    [ "OsNameUTest.java", "_os_name_u_test_8java.html", "_os_name_u_test_8java" ],
+    [ "SecureRandomGeneratorUTest.java", "_secure_random_generator_u_test_8java.html", "_secure_random_generator_u_test_8java" ]
 ];

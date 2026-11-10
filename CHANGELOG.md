@@ -4,6 +4,14 @@
 ## Unreleased - 2026-11-10
 
 
+🔧 chore pom.xml: Bump project version to 1.11.5
+
+([cfaad4230040cca](https://github.com/Lob2018/SudokuFX/commit/cfaad4230040cca37e169ad8ecdda843a3fa0dbc))
+
+🔧 chore spring-boot-starter-parent, javafx, logback-classic, logback-core, spotbugs-annotations, commons-lang3, flyway-database-hsqldb, jackson-core, jackson-databind, spotless-maven-plugin, spotbugs, checkstyle, maven-enforcer-plugin, maven-surefire-plugin, jacoco-maven-plugin, jakarta.validation-api : Bump the maven-dependencies
+
+([51aefda2bb55984](https://github.com/Lob2018/SudokuFX/commit/51aefda2bb55984e1fb96116e342bdbbce189a50))
+
 🔧 chore harden-runner, setup-java, codeql-action,scorecard-action, upload-artifact, osv-scanner-action, setup-python, qodana-action, download-artifact: Bump the actions-dependencies
 
 ([e46d3915792e0bd](https://github.com/Lob2018/SudokuFX/commit/e46d3915792e0bd066bf03c059f1e632be5a3a22))
