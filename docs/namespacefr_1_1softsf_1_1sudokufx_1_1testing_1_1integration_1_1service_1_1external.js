@@ -1,6 +1,6 @@
 var namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external =
 [
-    [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1_version_service_i_test.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1_version_service_i_test" ],
+    [ "VersionServiceITest", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1VersionServiceITest.html", "classfr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external_1_1VersionServiceITest" ],
     [ "[instance initializer]", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a9ac0b8c60706a61685430f3c12086b96", null ],
     [ "cleanup", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#af47ba9e0d8410ef2ca7c414381da7d9e", null ],
     [ "eachSetup", "namespacefr_1_1softsf_1_1sudokufx_1_1testing_1_1integration_1_1service_1_1external.html#a50ee706a9e5f07c3c5ecb856c80160bd", null ],
