@@ -1,8 +1,24 @@
 # Changelog
 
 
-## Unreleased - 2026-11-10
+## Unreleased - 2026-11-18
 
+
+🐛 fix linuxRelease.sh, macosRelease-x86_64.sh, macosRelease.sh, windowsRelease.bat: Mitigate CVE-2026-114938 vulnerability
+- linuxRelease.sh: Inject -XX:-UseBASE64Intrinsics into jpackage options and launcher script commands.
+- macosRelease-x86_64.sh: Inject -XX:-UseBASE64Intrinsics into jpackage options and launcher script commands.
+- macosRelease.sh: Inject -XX:-UseBASE64Intrinsics into jpackage options and launcher script commands.
+- windowsRelease.bat: Inject -XX:-UseBASE64Intrinsics into jpackage options and batch launcher commands.
+- Tests pass.
+
+([5e16a8a23b3bdb0](https://github.com/Lob2018/SudokuFX/commit/5e16a8a23b3bdb01da925d68bcea91a8f38ec5e6))
+
+## v1.11.5 - 2026-11-10
+
+
+📚 docs Doxygen
+
+([e7a31b38af4f107](https://github.com/Lob2018/SudokuFX/commit/e7a31b38af4f107db1795c712fed5f5035bc16e2))
 
 🔧 chore pom.xml: Bump project version to 1.11.5
 
