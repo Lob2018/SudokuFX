@@ -4,6 +4,14 @@
 ## Unreleased - 2026-11-18
 
 
+🔧 chore pom.xml: Bump project version to 1.11.6
+
+([ed8e2ce8a348f90](https://github.com/Lob2018/SudokuFX/commit/ed8e2ce8a348f90f99d25f2ae49e117b2b2f7723))
+
+🔧 chore maven-wrapper, commons-lang3, flyway-database-hsqldb, spotless-maven-plugin, checkstyle, git-changelog-maven-plugin, exec-maven-plugin, logback-classic, logback-core: Bump the maven-dependencies
+
+([e8cac5adc2bcb20](https://github.com/Lob2018/SudokuFX/commit/e8cac5adc2bcb20d3f4b31da2ed8c7b16b910da0))
+
 🔧 chore harden-runner, setup-java, codeql-action, osv-scanner-reusable: Bump action-dependencies
 
 ([b9127fe9a7dd607](https://github.com/Lob2018/SudokuFX/commit/b9127fe9a7dd607fbbb5a3dc377a528f467604c1))
@@ -5013,12 +5021,12 @@ This refactoring improves code readability, reduces error-prone array usage, and
 
 ([284015163f4ad81](https://github.com/Lob2018/SudokuFX/commit/284015163f4ad812fe727144e7fe0413100d0df3))
 
-## v2.0.0 - 2025-07-09
-
-
 🐛 fix pom.xml: remove macOS-x86_64 useless argument &lt;argument&gt;x86_64&lt;/argument&gt;
 
 ([0f130a330acaa5d](https://github.com/Lob2018/SudokuFX/commit/0f130a330acaa5dd4d02b20b0a63e4f824b5a4b3))
+
+## v2.0.0 - 2025-07-08
+
 
 📚 docs DOXYGEN
 
@@ -6280,6 +6288,9 @@ This refactoring improves code readability, reduces error-prone array usage, and
 - Enhance &#x60;getController&#x60; documentation for UI interaction handling.
 
 ([9d7d587120a14c2](https://github.com/Lob2018/SudokuFX/commit/9d7d587120a14c23fb058110533086df892f3d9d))
+
+## v3.0.0 - 2025-05-12
+
 
 ♻️ refactor pom.xml(Jacoco exclude) : Exclude internal classes of VersionService from JaCoCo coverage report
 
@@ -7668,9 +7679,6 @@ Chore flyway-database-hsqldb : Update
 
 ([095a81c6486dbdf](https://github.com/Lob2018/SudokuFX/commit/095a81c6486dbdff01df3cd1aa258764dd5cda10))
 
-## v1.0.0 - 2025-02-18
-
-
 Chore pom.xml : Rename arch to aarch64
 
 ([9dac4a2b1442577](https://github.com/Lob2018/SudokuFX/commit/9dac4a2b1442577cd04ba1a537114863b6d5b51c))
@@ -8281,6 +8289,9 @@ Feat CDS: Add CDS profile to prevent interactions with remote services during st
 - Update script commands to include -Dspring.profiles.active&#x3D;cds to activate the CDS profile during application training.
 
 ([e99d679a868b980](https://github.com/Lob2018/SudokuFX/commit/e99d679a868b980d4fd976a56ef218d5b1608e0f))
+
+## v1.0.0 - 2025-01-28
+
 
 Chore codeql-action : Updated
 
