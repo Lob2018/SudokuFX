@@ -55,7 +55,7 @@ cp "$jarName" "input/$jarName"
 
 echo "# OUTPUT   : CREATING THE DEB FROM TARGET/INPUT..."
 cd ..
-jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --resource-dir "$METADATA_DIR" --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$7 -Dapp.license=$8" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
+jpackage --input ./target/input --dest "$6" --name "$appNameWithTheJVM" --type deb --resource-dir "$METADATA_DIR" --main-jar "$jarName" --main-class org.springframework.boot.loader.launch.JarLauncher --linux-shortcut --linux-menu-group "$1" --java-options "-Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -XX:-UseBASE64Intrinsics -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name=$1 -Dapp.version=$2 -Dapp.organization=$7 -Dapp.license=$8" --vendor "$3" --copyright "Copyright © $year $3" --icon src/main/resources/fr/softsf/sudokufx/images/Sudoku.png --app-version "$2" --description "$1 $year" --license-file LICENSE.txt --verbose
 
 echo "# TARGET   : THE SHELL SCRIPT TO LAUNCH THE UBERJAR"
 cd ./target || exit
@@ -119,15 +119,15 @@ if [[ ! -f "$1/$1-$2.jar" ]]; then
     mv "$1-$2.jar" "$1/"
     cd "$1" || exit
     echo "Training the SudokuFX application..."
-    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -Xshare:off -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1
+    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -XX:-UseBASE64Intrinsics -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -Xshare:off -XX:ArchiveClassesAtExit="$1.jsa" -Dspring.profiles.active=cds -Dspring.context.exit=onRefresh -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1
     echo "Waiting for database release..."
     sleep 2
     echo "Running the SudokuFX application..."
-    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1 &
+    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -XX:-UseBASE64Intrinsics -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1 &
 else
     echo "Running the SudokuFX application..."
     cd "$1" || exit
-    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1 &
+    java -Xms512m -Xmx1g -XX:+UseG1GC -XX:MaxMetaspaceSize=192m -XX:-UseBASE64Intrinsics -Dprism.order=d3d,es2,sw -Dprism.vsync=true -XX:+HeapDumpOnOutOfMemoryError -XX:SharedArchiveFile="$1.jsa" -Dfile.encoding=UTF-8 --enable-native-access=ALL-UNNAMED -Dapp.name="$1" -Dapp.version="$2" -Dapp.organization="$7" -Dapp.license="$8" -jar "$1-$2.jar" > /dev/null 2>&1 &
 fi
 EOF
 
