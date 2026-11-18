@@ -4,6 +4,20 @@
 ## Unreleased - 2026-11-18
 
 
+🔧 chore harden-runner, setup-java, codeql-action, osv-scanner-reusable: Bump action-dependencies
+
+([b9127fe9a7dd607](https://github.com/Lob2018/SudokuFX/commit/b9127fe9a7dd607fbbb5a3dc377a528f467604c1))
+
+🔧 chore requirements.txt: Bump the python-dependencies
+
+([b4c335ed5a2ba68](https://github.com/Lob2018/SudokuFX/commit/b4c335ed5a2ba686c93ea14c65e4c82dac40fb57))
+
+🐛 fix pom.xml: Mitigate CVE-2026-114938 vulnerability
+- pom.xml : Add -XX:-UseBASE64Intrinsics to jvm.args property to secure test and build executions.
+- Tests pass.
+
+([1fb084610384c71](https://github.com/Lob2018/SudokuFX/commit/1fb084610384c71765ef82b8c8608b208ed12e8e))
+
 🐛 fix linuxRelease.sh, macosRelease-x86_64.sh, macosRelease.sh, windowsRelease.bat: Mitigate CVE-2026-114938 vulnerability
 - linuxRelease.sh: Inject -XX:-UseBASE64Intrinsics into jpackage options and launcher script commands.
 - macosRelease-x86_64.sh: Inject -XX:-UseBASE64Intrinsics into jpackage options and launcher script commands.
