@@ -1,8 +1,18 @@
 # Changelog
 
 
-## Unreleased - 2026-11-18
+## Unreleased - 2026-11-20
 
+
+🔧 chore pom.xml: Bump project version to 1.11.7
+
+([8ce3cc718badff5](https://github.com/Lob2018/SudokuFX/commit/8ce3cc718badff51053cdef23a10b87a6ad51e8c))
+
+🐛 fix pom.xml: Restore JavaFX 26.0.2 to fix macOS x86_64 Prism SW fallback
+- pom.xml : Update javafx.version property from 27.0.1 to 26.0.2.
+- Tests pass.
+
+([6fcd303dacb3fb2](https://github.com/Lob2018/SudokuFX/commit/6fcd303dacb3fb261e86b04e74f4e626dd190e7a))
 
 # Standard commit message template
 #
