@@ -4,6 +4,67 @@
 ## Unreleased - 2026-11-18
 
 
+# Standard commit message template
+#
+# Uncomment the appropriate line and add your commit description.
+#
+# To use this template, run:
+# git config --local commit.template .gitmessage
+#
+# To verify the template is applied, run:
+# git config --get commit.template
+
+# A new feature is introduced with the changes.
+# Clear pull request message templates :
+#✨ feat addition: Add [feature name]
+# ☑ Implement [functionality]
+# ☑ Any breaking change
+# ☑ Update or add tests
+#✨ feat:
+
+# A bug fix has occurred.
+# Clear pull request message templates :
+#🐛 fix [bug description]
+# ☑ Root cause [explanation]
+# ☑ Fix [changes]
+# ☑ Update or add tests
+#🐛 fix:
+
+# Changes that do not relate to a fix or feature and don&#x27;t modify src or test files
+# (for example updating dependencies)
+#🔧 chore:
+
+# Refactored code that neither fixes a bug nor adds a feature.
+# Clear pull request message templates :
+#♻️ refactor [feature name]
+# ☑ Any functionality changes
+# ☑ Verify tests pass
+#♻️ refactor:
+
+# Updates to documentation such as the README or other markdown.
+📚 docs Doxygen
+
+# Changes that do not affect the meaning of the code, likely related to code
+# formatting such as white-space, missing semi-colons, and so on.
+#📝 style:
+
+# Including new or correcting previous tests.
+#✅ test:
+
+# Performance improvements.
+#⚡ perf:
+
+# Continuous integration related.
+#👷 ci:
+
+# Changes that affect the build system or external dependencies.
+#🛠️ build:
+
+# Reverts a previous commit.
+#⏪ revert:
+
+([bcafad8b2f7d99e](https://github.com/Lob2018/SudokuFX/commit/bcafad8b2f7d99e24e94284ec90e14cb940f5afa))
+
 🔧 chore pom.xml: Bump project version to 1.11.6
 
 ([ed8e2ce8a348f90](https://github.com/Lob2018/SudokuFX/commit/ed8e2ce8a348f90f99d25f2ae49e117b2b2f7723))
