@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>4.1.2</version>
+    <version>4.2.0</version>
     <relativePath/>
     <!-- lookup parent from repository -->
   </parent>
@@ -38,7 +38,7 @@
   <properties>
     <deployment-folder>output</deployment-folder>
     <java.version>25</java.version>
-    <javafx.version>26.0.2</javafx.version>
+    <javafx.version>27.0.1.1</javafx.version>
     <jvm.args>-XX:-UseBASE64Intrinsics -Dfile.encoding=UTF-8 -Dprism.order=d3d,es2,sw -Dprism.vsync=true --enable-native-access=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</jvm.args>
     <license.name>AGPLv3.0</license.name>
     <macos-package-id>fr.soft64.sudokufx</macos-package-id>
@@ -56,13 +56,13 @@
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-classic</artifactId>
-      <version>1.6.7</version>
+      <version>1.6.8</version>
     </dependency>
     <!-- Temporary override for Spring Boot Starter's transitive dependency to fix CVE (logback-core 1.5.38 -> 1.6.7) -->
     <dependency>
       <groupId>ch.qos.logback</groupId>
       <artifactId>logback-core</artifactId>
-      <version>1.6.7</version>
+      <version>1.6.8</version>
     </dependency>
     <!-- SpotBugs Annotations -->
     <dependency>
@@ -111,7 +111,7 @@
     <dependency>
       <groupId>org.flywaydb</groupId>
       <artifactId>flyway-database-hsqldb</artifactId>
-      <version>13.12.2</version>
+      <version>13.13.0</version>
     </dependency>
     <!-- HSQLDB database dependency -->
     <dependency>
@@ -195,13 +195,13 @@
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-core</artifactId>
-      <version>3.1.8</version>
+      <version>3.3.0</version>
     </dependency>
     <!-- Temporary override for Flyway's transitive dependency to fix CVE (jackson-databind 3.1.5 -> 3.1.8) -->
     <dependency>
       <groupId>tools.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>3.1.8</version>
+      <version>3.3.0</version>
     </dependency>
   </dependencies>
   <!-- Build configuration -->
@@ -627,7 +627,7 @@
         <dependency>
           <groupId>com.github.gavlyukovskiy</groupId>
           <artifactId>datasource-proxy-spring-boot-starter</artifactId>
-          <version>2.0.1</version>
+          <version>2.1.0</version>
           <scope>runtime</scope>
         </dependency>
       </dependencies>
